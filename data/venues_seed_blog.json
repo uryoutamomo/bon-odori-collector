@@ -36,6 +36,15 @@
     "needs_review": true
   },
   {
+    "venue": "奉讃会・築地本願寺",
+    "region_hint": "中央区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "日本橋小学校",
     "region_hint": "中央区",
     "in_tsukiji_30min_guess": true,
@@ -72,6 +81,15 @@
     "needs_review": true
   },
   {
+    "venue": "築地本願寺",
+    "region_hint": "中央区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "築地社会教育会館",
     "region_hint": "中央区",
     "in_tsukiji_30min_guess": true,
@@ -95,15 +113,6 @@
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
     "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "空の広場",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2025年1月より [Chiyoda-p]",
     "method": "blog_body",
     "needs_review": true
   },
@@ -181,6 +190,15 @@
   },
   {
     "venue": "内ヘリポート広場",
+    "region_hint": "品川区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "前広場",
     "region_hint": "品川区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -270,7 +288,25 @@
     "needs_review": true
   },
   {
+    "venue": "江東橋竪川親水公園",
+    "region_hint": "墨田区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "錦糸公園",
+    "region_hint": "墨田区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "錦糸町商店街",
     "region_hint": "墨田区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -333,15 +369,6 @@
     "needs_review": true
   },
   {
-    "venue": "アーク・カラヤン広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "サカス広場",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
@@ -351,83 +378,29 @@
     "needs_review": true
   },
   {
-    "venue": "ハマサイト前広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "・8月商店街",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "三田松坂児童遊園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "六本木天祖神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "区民まつり芸能部会ステージ前広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "区立青葉公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "埠頭公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "増上寺",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "天祖神社",
+    "venue": "大本山増上寺",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "大殿前広場",
+    "region_hint": "港区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
     "method": "blog_body",
     "needs_review": true
   },
@@ -450,15 +423,6 @@
     "needs_review": true
   },
   {
-    "venue": "泉岳寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "浄土寺",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
@@ -468,92 +432,11 @@
     "needs_review": true
   },
   {
-    "venue": "猿町公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "白金児童遊園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "白金台どんぐり児童遊園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "網代公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "芝公園",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "芝新堀町児童遊園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西久保八幡神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西麻布長谷寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "赤坂サカス広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "赤坂氷川神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
     "method": "blog_body",
     "needs_review": true
   },
@@ -563,42 +446,6 @@
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
     "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "青山善光寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "青山熊野神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "麻布上笄町会・麻布氷川神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "麻布氷川神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
     "method": "blog_body",
     "needs_review": true
   },
@@ -1503,6 +1350,15 @@
     "needs_review": true
   },
   {
+    "venue": "北野小学校",
+    "region_hint": "板橋区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "板橋区の盆おどり情報 2026年1月より [Itabashi-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "大原第二公園",
     "region_hint": "板橋区",
     "in_tsukiji_30min_guess": false,
@@ -2197,24 +2053,6 @@
   },
   {
     "venue": "住吉子供第二広場",
-    "region_hint": "葛飾区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "葛飾区の盆おどり情報 2026年1月より [Katsusika-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "前広場",
-    "region_hint": "葛飾区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "葛飾区の盆おどり情報 2026年1月より [Katsusika-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "北野小学校",
     "region_hint": "葛飾区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
