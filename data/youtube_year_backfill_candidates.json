@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-07-28T21:07:12.368114+00:00",
+  "generated_at": "2026-07-30T21:09:18.590660+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 3,
+  "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 575,
+    "candidate_count": 576,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 344
+      "weak": 345
     },
     "strong_count": 183,
     "review_count": 48
@@ -28809,6 +28809,28 @@
       "venue": "五反野コミュニティ公園",
       "area": "足立区",
       "detected_event_date": "",
+      "video_id": "LCaOSJeaZFY",
+      "video_url": "https://www.youtube.com/watch?v=LCaOSJeaZFY",
+      "title": "【保育】子どもたちの「できた！」　#バルーン #保育 #保育士 #保育園",
+      "channel_id": "UCru879GWNC93N-TplXwWfgg",
+      "channel_title": "こどもを楽しませるアイディアたくさん ふじおか幼稚園TV",
+      "published_at": "2024-11-15T06:24:27Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/LCaOSJeaZFY/maxresdefault.jpg",
+      "query": "西綾瀬町会 夏祭り盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:804cab8073565d95",
+      "target_year": 2024,
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "detected_event_date": "",
       "video_id": "IE_SSif6zNA",
       "video_url": "https://www.youtube.com/watch?v=IE_SSif6zNA",
       "title": "㊗️150万再生!!日本で1番ダサい中学校の制服TOP12 #制服 #ダサい #中学 #ランキング",
@@ -28866,5 +28888,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-07-28T21:07:11.816335+00:00"
+  "merged_from": "2026-07-30T21:09:18.142208+00:00"
 }
