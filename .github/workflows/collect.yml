@@ -117,7 +117,7 @@ jobs:
 
     - name: Transition ended confirmed occurrences
       id: ended_occurrences
-      if: ${{ vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      if: ${{ vars.ENDED_TRANSITION_ENABLED == 'true' && vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
       env:
         MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
         MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}

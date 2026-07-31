@@ -34,6 +34,7 @@ class CollectEventStateAxesWiringTest(unittest.TestCase):
         end = self.source.index("- name: Upload event-state axes evidence")
         step = self.source[start:end]
         self.assertIn("transition_ended_occurrences.py", step)
+        self.assertIn("vars.ENDED_TRANSITION_ENABLED == 'true'", step)
         self.assertIn("--as-of-date \"$TODAY\"", step)
         self.assertIn("--confirm 'TRANSITION ENDED OCCURRENCES'", step)
         self.assertIn('"count"', step)
