@@ -163,6 +163,15 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(reviewed["summary"]["status_counts"], {"already_synced": 1})
         self.assertEqual(reviewed["summary"]["failure_count"], 0)
 
+    def test_exact_addition_approval_is_already_applied_when_site_value_changes(self):
+        collector_event = {"name": "新規盆踊り", "venue": "商店街", "public_status": "ended_2026"}
+        site_event = {**collector_event, "public_status": "upcoming_confirmed"}
+        payload = {"schema": "public_sync_exact_approvals_v1", "approvals": [{"id": "addition-1", "kind": "addition", "event_key": "新規盆踊り||商店街", "collector_sha256": canonical_event_sha256(site_event)}]}
+        reviewed = apply_reviewed_exact_approvals([collector_event], [site_event], payload)
+        self.assertEqual(reviewed["summary"]["status_counts"], {"already_applied": 1})
+        self.assertEqual(reviewed["summary"]["failure_count"], 0)
+        self.assertEqual(reviewed["site_rows"], [site_event])
+
     def test_exact_removal_approval_drops_site_only_event_at_pinned_hash(self):
         site_event = {"name": "旧イベント", "venue": "公園", "public_status": "expected_medium"}
         other_site_event = {"name": "残るイベント", "venue": "別会場"}

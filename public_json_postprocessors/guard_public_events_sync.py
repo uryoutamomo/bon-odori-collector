@@ -143,7 +143,7 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
                 site_hash = canonical_event_sha256(approved_site_rows[site_index])
                 result["actual_site_sha256"] = site_hash
                 result["status"] = (
-                    "already_synced" if site_hash == collector_hash else "hash_mismatch"
+                    "already_synced" if site_hash == collector_hash else "already_applied"
                 )
                 results.append(result)
                 continue
