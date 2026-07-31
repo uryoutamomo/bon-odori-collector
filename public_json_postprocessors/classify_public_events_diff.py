@@ -8,7 +8,7 @@ families into safe action buckets.
 import argparse
 import json
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 
@@ -372,7 +372,40 @@ def expired_historical_slide_downgrade(records):
     return collector_tier == "historical_reference" and site_tier == "historical_slide"
 
 
-def recommended_event_action(actions, records):
+def ended_transition_downgrade(records, collector_event, site_event, today):
+    """Allow only a completed occurrence's one-way tier downgrade."""
+    allowed_fields = {"display_tier", "historical_display_tier"}
+    high_risk_changes = set(changed_fields(collector_event, site_event)) & HIGH_RISK_FIELDS
+    if not high_risk_changes or not high_risk_changes.issubset(allowed_fields):
+        return False
+    if "display_tier" not in high_risk_changes:
+        return False
+    if collector_event.get("display_tier") != "ended":
+        return False
+    if site_event.get("display_tier") == "ended":
+        return False
+    if collector_event.get("public_category") is not None and collector_event.get("public_category") != "ended":
+        return False
+    if any(collector_event.get(field) != site_event.get(field) for field in ("date", "date_end")):
+        return False
+
+    end_value = collector_event.get("date_end") or collector_event.get("date")
+    if not isinstance(end_value, str) or not end_value:
+        return False
+    try:
+        end_date = date.fromisoformat(end_value)
+    except ValueError:
+        return False
+    return end_date < today
+
+
+def recommended_event_action(actions, records, collector_event=None, site_event=None, today=None):
+    if (
+        collector_event is not None
+        and site_event is not None
+        and ended_transition_downgrade(records, collector_event, site_event, today or date.today())
+    ):
+        return "ended_transition_downgrade"
     if rule_prediction_replaces_matching_historical_slide(records):
         return "rule_prediction_replaces_matching_historical_slide"
     if fixed_date_rule_basis_refresh(records):
@@ -424,7 +457,7 @@ def compact_value(value):
     return value
 
 
-def build_classification(collector_path, site_path):
+def build_classification(collector_path, site_path, today=None):
     collector_rows = load_json(collector_path, [])
     site_rows = load_json(site_path, [])
     collector = index_events(collector_rows)
@@ -465,7 +498,9 @@ def build_classification(collector_path, site_path):
     event_rows = []
     for key, item in event_actions.items():
         actions = item["actions"]
-        event_action = recommended_event_action(actions, item["records"])
+        event_action = recommended_event_action(
+            actions, item["records"], collector[key], site[key], today or date.today()
+        )
         sample = next(record for record in records if record["event_key"] == key)
         event_rows.append(
             {
@@ -500,7 +535,7 @@ def build_classification(collector_path, site_path):
 
 
 def build(args):
-    classified = build_classification(args.collector_events, args.site_events)
+    classified = build_classification(args.collector_events, args.site_events, today=datetime.now(timezone.utc).date())
     data = {
         "generated_by": "classify_public_events_diff.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -517,6 +552,7 @@ def build(args):
             "rule_prediction_replaces_matching_historical_slide": "collector rule prediction keeps the same displayed date as the legacy historical slide",
             "fixed_date_rule_basis_refresh": "collector fixed-date postprocessor keeps the same displayed date while refreshing the public basis text",
             "expired_historical_slide_downgrade": "required postprocessor removes an expired historical slide and keeps it as reference-only",
+            "ended_transition_downgrade": "a past occurrence changes only from a non-ended display tier to ended",
         },
         **classified,
     }
@@ -553,6 +589,7 @@ def render_markdown(data):
         "rule_prediction_replaces_matching_historical_slide",
         "fixed_date_rule_basis_refresh",
         "expired_historical_slide_downgrade",
+        "ended_transition_downgrade",
         "low_priority_or_unclassified",
     ]:
         rows = [row for row in data["event_rows"] if row["recommended_action"] == action]
