@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-07-30T21:09:18.590660+00:00",
+  "generated_at": "2026-07-31T21:03:23.155196+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 576,
+    "candidate_count": 577,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 345
+      "weak": 346
     },
     "strong_count": 183,
     "review_count": 48
@@ -28237,6 +28237,28 @@
       "venue": "宮前小学校",
       "area": "品川区",
       "detected_event_date": "",
+      "video_id": "0w6kqr-Pzcg",
+      "video_url": "https://www.youtube.com/watch?v=0w6kqr-Pzcg",
+      "title": "小学校生徒数ランキングTop 15",
+      "channel_id": "UCPoEVGmS9ezdgmUpFPnGjVQ",
+      "channel_title": "そるくれ(まとも)",
+      "published_at": "2023-10-17T22:00:00Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/0w6kqr-Pzcg/maxresdefault.jpg",
+      "query": "戸越宮前盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:3d5a8517fb197ecb",
+      "target_year": 2023,
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "detected_event_date": "",
       "video_id": "Xc-3-aYA1Qc",
       "video_url": "https://www.youtube.com/watch?v=Xc-3-aYA1Qc",
       "title": "🇯🇵4K｜東京の西尾久のお散歩　～宮の前駅の宮前商店会～",
@@ -28888,5 +28910,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-07-30T21:09:18.142208+00:00"
+  "merged_from": "2026-07-31T21:03:22.655006+00:00"
 }
