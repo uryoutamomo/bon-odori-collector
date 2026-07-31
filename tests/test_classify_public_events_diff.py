@@ -16,6 +16,11 @@ class ClassifyPublicEventsDiffTest(unittest.TestCase):
         self.assertEqual(field_family("detail"), "detail")
         self.assertEqual(field_family("fixed_date_rule"), "fixed_date_rule")
         self.assertEqual(field_family("source_urls"), "source")
+        self.assertEqual(field_family("date"), "schedule")
+        self.assertEqual(
+            classify_diff("date_end", "2026-08-02", "2026-08-01"),
+            "individual_review",
+        )
         self.assertEqual(
             classify_diff("fixed_date_rule", {"rule_type": "fixed_mmdd"}, None),
             "collector_only_postprocess_rule",

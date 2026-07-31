@@ -51,6 +51,7 @@ DATE_PREDICTION_FIELDS = {
     "recurrence_score",
     "recurrence_reasons",
 }
+SCHEDULE_FIELDS = {"date", "date_end"}
 DETAIL_FIELDS = {
     "detail",
 }
@@ -66,6 +67,7 @@ HIGH_RISK_FIELDS = (
     | HISTORICAL_SLIDE_FIELDS
     | SEASON_FIELDS
     | DATE_PREDICTION_FIELDS
+    | SCHEDULE_FIELDS
     | DETAIL_FIELDS
     | SOURCE_FIELDS
     | POSTPROCESSOR_RULE_FIELDS
@@ -103,6 +105,8 @@ def field_family(field):
         return "season_hint"
     if field in DATE_PREDICTION_FIELDS:
         return "date_prediction"
+    if field in SCHEDULE_FIELDS:
+        return "schedule"
     if field in DETAIL_FIELDS:
         return "detail"
     if field in SOURCE_FIELDS:
@@ -160,6 +164,9 @@ def classify_diff(field, collector_value, site_value):
     if field == "recurrence_score" and side == "both_different":
         if recurrence_score_bucket(collector_value) == recurrence_score_bucket(site_value):
             return "low_priority_or_unclassified"
+        return "individual_review"
+
+    if family == "schedule":
         return "individual_review"
 
     if family in {"historical_reference", "historical_slide", "season_hint"}:
