@@ -375,11 +375,16 @@ def expired_historical_slide_downgrade(records):
 def ended_transition_downgrade(records, collector_event, site_event, today):
     """Allow only a completed occurrence's one-way tier downgrade."""
     allowed_fields = {"display_tier", "historical_display_tier"}
-    if set(changed_fields(collector_event, site_event)) != allowed_fields:
+    high_risk_changes = set(changed_fields(collector_event, site_event)) & HIGH_RISK_FIELDS
+    if not high_risk_changes or not high_risk_changes.issubset(allowed_fields):
+        return False
+    if "display_tier" not in high_risk_changes:
         return False
     if collector_event.get("display_tier") != "ended":
         return False
     if site_event.get("display_tier") == "ended":
+        return False
+    if collector_event.get("public_category") is not None and collector_event.get("public_category") != "ended":
         return False
     if any(collector_event.get(field) != site_event.get(field) for field in ("date", "date_end")):
         return False

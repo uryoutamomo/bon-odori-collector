@@ -414,10 +414,15 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             "venue": "テスト公園",
             "date": "2026-07-28",
             "date_end": "2026-07-29",
-            "display_tier": "upcoming",
-            "historical_display_tier": "upcoming",
+            "display_tier": "confirmed",
         }
-        collector = {**site, "display_tier": "ended", "historical_display_tier": "ended"}
+        collector = {
+            **site,
+            "display_tier": "ended",
+            "public_category": "ended",
+            "current_event_state": "ended",
+            "time_text": "公式開催概要で17時30分から",
+        }
 
         classified = classify_rows([collector], [site], today=date(2026, 7, 31))
 
@@ -493,6 +498,21 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             "display_tier": "ended",
             "historical_display_tier": "ended",
         }
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(classified["event_rows"][0]["recommended_action"], "individual_review")
+
+    def test_ended_transition_requires_ended_public_category_when_present(self):
+        site = {
+            "name": "公開区分が不整合な盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-29",
+            "date_end": "2026-07-29",
+            "display_tier": "confirmed",
+            "public_category": "upcoming",
+        }
+        collector = {**site, "display_tier": "ended"}
 
         classified = classify_rows([collector], [site], today=date(2026, 7, 31))
 
