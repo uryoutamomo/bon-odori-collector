@@ -1,7 +1,8 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-07-30T09:06:49.028979+00:00",
+  "generated_at": "2026-07-31T09:33:56.336700+00:00",
   "limit": 30,
+  "official_new_event_limit": 5,
   "candidate_count": 3,
   "archived_count": 0,
   "candidates": [

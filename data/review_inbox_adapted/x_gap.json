@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_gap_candidates.json",
-  "input_sha256": "c234ca03fd5a741d3ded6907f17d2b7861caaae980aceb83395c836b8d1e1327",
-  "input_size_bytes": 8718,
+  "input_sha256": "3dae1bde166ca25fd22feec664cee03eefea79cf5ede07a20a8f013b6949b91f",
+  "input_size_bytes": 8751,
   "item_count": 3,
   "items": [
     {
