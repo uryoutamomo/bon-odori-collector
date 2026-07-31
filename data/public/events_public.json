@@ -11785,6 +11785,460 @@
     "season_confidence": "lowest"
   },
   {
+    "name": "扇橋三丁目町会 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "つばめ幼稚園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区扇橋3-20-13-101",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-09",
+    "date_end": "2026-08-10",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "18:00〜21:00。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-09〜2026-08-10",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-09",
+      "2026-08-10"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "亀戸四丁目 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "ふれあい公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区亀戸4-21-19",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "19:00〜21:00。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "とよす夏祭り",
+    "name_confirmed": true,
+    "venue": "アーバンドック ららぽーと豊洲",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区豊洲2-4-9",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-16",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "jun": {
+      "8": "中旬"
+    },
+    "description": null,
+    "detail": "2026年は第2回。盆踊りは8月8日・9日・11日・15日・16日に実施と明記され、その他の日は実施記載なし。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-16"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "東陽六・七丁目町会 夏まつり",
+    "name_confirmed": true,
+    "venue": "イーストプラザ広場",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区東陽6-3-3",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "元の告知表記は「夏まつり2026」。17:00〜21:30。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "江東区民まつり 亀戸地区夏まつり大会",
+    "name_confirmed": true,
+    "venue": "亀戸中央公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区亀戸8-22-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-29"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "亀戸二丁目団地 ここがふるさと夏まつり",
+    "name_confirmed": true,
+    "venue": "亀戸二丁目団地 一号棟前広場",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区亀戸2",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "18:00〜20:30。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "亀戸六丁目東町会 ふるさとまつり",
+    "name_confirmed": true,
+    "venue": "亀戸平岩公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区亀戸6-47-12",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "18:00〜。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "八名川地区連合町会 納涼音頭大会",
     "name_confirmed": true,
     "venue": "八名川公園",
@@ -11944,6 +12398,196 @@
     "season_confidence": "lowest"
   },
   {
+    "name": "南砂一・二丁目町会 盆踊り",
+    "name_confirmed": true,
+    "venue": "南砂一丁目北公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区南砂1-8-4",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "18:00〜。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "南砂住宅 団地祭り",
+    "name_confirmed": true,
+    "venue": "南砂住宅",
+    "area": "江東区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区南砂2-3-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-20",
+    "date_end": "2026-09-20",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        20
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "15:00〜19:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-20",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-20",
+      "2026-09-20"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "塩浜一丁目団地自治会 夏まつり",
+    "name_confirmed": true,
+    "venue": "塩浜一丁目団地中央公園内",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区塩浜1-5",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "9:30〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "大島スカイハイツ 夏まつり",
     "name_confirmed": true,
     "venue": "大島スカイハイツ",
@@ -12002,6 +12646,192 @@
     "last_seen_dates": [
       "2026-08-01",
       "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "大島三丁目団地自治会 夕涼み会",
+    "name_confirmed": true,
+    "venue": "大島三丁目団地",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区大島3-26-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "16:00〜18:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "大島三丁目町会 お祭り広場",
+    "name_confirmed": true,
+    "venue": "大島三丁目緑道公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区大島3",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "17:00〜。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "大島五丁目町会 ぼんおどり",
+    "name_confirmed": true,
+    "venue": "大島五丁目公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区大島5-27-16",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "17:00〜。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-29"
     ],
     "display_tier": "confirmed"
   },
@@ -12397,6 +13227,134 @@
     "display_tier": "confirmed"
   },
   {
+    "name": "東砂一丁目団地 ふれあい祭り",
+    "name_confirmed": true,
+    "venue": "東砂一丁目団地",
+    "area": "江東区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区東砂1-2",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-26",
+    "date_end": "2026-09-26",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        26
+      ]
+    ],
+    "jun": {
+      "9": "下旬"
+    },
+    "description": null,
+    "detail": "11:00〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-26",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-26",
+      "2026-09-26"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "東砂三丁目町会 盆踊大会",
+    "name_confirmed": true,
+    "venue": "東砂第二公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区東砂3-17-17",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "18:30〜。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "枝川二・三丁目町会 枝川の夏まつり",
     "name_confirmed": true,
     "venue": "枝川小学校",
@@ -12528,6 +13486,204 @@
       "2026-07-19"
     ],
     "display_tier": "ended"
+  },
+  {
+    "name": "亀戸五丁目町会 夏まつり",
+    "name_confirmed": true,
+    "venue": "水神小学校校庭",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区亀戸5-22-22",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "17:00〜。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "千田町会 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "江東公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区千田16-5",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "19:00〜21:00。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "扇橋二丁目町会 納涼大会",
+    "name_confirmed": true,
+    "venue": "江東公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区千田16-5",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-28",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        28
+      ],
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "18:00〜21:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-28",
+      "2026-08-29"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "江東天祖神社の盆踊り（名称推定）",
@@ -12816,6 +13972,130 @@
     "last_seen_dates": [
       "2026-08-01",
       "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "猿江一丁目町会 納涼まつり",
+    "name_confirmed": true,
+    "venue": "猿江一丁目公園",
+    "area": "江東区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区猿江1-11-5",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-05",
+    "date_end": "2026-09-05",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        5
+      ]
+    ],
+    "jun": {
+      "9": "上旬"
+    },
+    "description": null,
+    "detail": "16:00〜20:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-05",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-05",
+      "2026-09-05"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "石島町会 夏祭り",
+    "name_confirmed": true,
+    "venue": "石島町会会館前",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "江東区石島17-14",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-14",
+    "date_end": "2026-08-14",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        14
+      ]
+    ],
+    "jun": {
+      "8": "中旬"
+    },
+    "description": null,
+    "detail": "16:30〜19:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-14",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-14",
+      "2026-08-14"
     ],
     "display_tier": "confirmed"
   },

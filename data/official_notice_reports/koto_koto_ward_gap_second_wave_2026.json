@@ -1,0 +1,39 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-01T00:00:00+09:00",
+  "source": {
+    "report_id": "koto_koto_ward_gap_second_wave_2026",
+    "title": "2026年 江東区 盆踊り・夏祭り開催情報（第2弾）",
+    "account_key": "江東区の情報サイト（minamisuna1.com）",
+    "url": "https://minamisuna1.com/37573/",
+    "raw_text": "江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」から、8月〜9月開催の20件を収録。とよす夏祭りは8月8日〜16日のうち、盆踊り実施日が8月8日・9日・11日・15日・16日と明記されている。豊洲町会盆踊り大会は「今年はお休み」と記載。"
+  },
+  "events": [
+    {"action":"register_new","event_name_hint":"亀戸二丁目団地 ここがふるさと夏まつり","series_name":"亀戸二丁目団地 ここがふるさと夏まつり","event_year":2026,"venue":{"name":"亀戸二丁目団地 一号棟前広場","area":"江東区","address":"江東区亀戸2"},"date_start":"2026-08-07","date_end":"2026-08-08","detail_addendum":"18:00〜20:30。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"南砂一・二丁目町会 盆踊り","series_name":"南砂一・二丁目町会 盆踊り","event_year":2026,"venue":{"name":"南砂一丁目北公園","area":"江東区","address":"江東区南砂1-8-4"},"date_start":"2026-08-07","date_end":"2026-08-08","detail_addendum":"18:00〜。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"千田町会 納涼盆踊り大会","series_name":"千田町会 納涼盆踊り大会","event_year":2026,"venue":{"name":"江東公園","area":"江東区","address":"江東区千田16-5"},"date_start":"2026-08-07","date_end":"2026-08-08","detail_addendum":"19:00〜21:00。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"亀戸六丁目東町会 ふるさとまつり","series_name":"亀戸六丁目東町会 ふるさとまつり","event_year":2026,"venue":{"name":"亀戸平岩公園","area":"江東区","address":"江東区亀戸6-47-12"},"date_start":"2026-08-08","detail_addendum":"18:00〜。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"亀戸四丁目 納涼盆踊り大会","series_name":"亀戸四丁目 納涼盆踊り大会","event_year":2026,"venue":{"name":"ふれあい公園","area":"江東区","address":"江東区亀戸4-21-19"},"date_start":"2026-08-08","date_end":"2026-08-09","detail_addendum":"19:00〜21:00。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"亀戸五丁目町会 夏まつり","series_name":"亀戸五丁目町会 夏まつり","event_year":2026,"venue":{"name":"水神小学校校庭","area":"江東区","address":"江東区亀戸5-22-22"},"date_start":"2026-08-08","date_end":"2026-08-09","detail_addendum":"17:00〜。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"大島三丁目町会 お祭り広場","series_name":"大島三丁目町会 お祭り広場","event_year":2026,"venue":{"name":"大島三丁目緑道公園","area":"江東区","address":"江東区大島3"},"date_start":"2026-08-08","detail_addendum":"17:00〜。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"とよす夏祭り","series_name":"とよす夏祭り","event_year":2026,"venue":{"name":"アーバンドック ららぽーと豊洲","area":"江東区","address":"江東区豊洲2-4-9"},"date_start":"2026-08-08","date_end":"2026-08-16","detail_addendum":"2026年は第2回。盆踊りは8月8日・9日・11日・15日・16日に実施と明記され、その他の日は実施記載なし。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"扇橋三丁目町会 納涼盆踊り大会","series_name":"扇橋三丁目町会 納涼盆踊り大会","event_year":2026,"venue":{"name":"つばめ幼稚園","area":"江東区","address":"江東区扇橋3-20-13-101"},"date_start":"2026-08-09","date_end":"2026-08-10","detail_addendum":"18:00〜21:00。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"石島町会 夏祭り","series_name":"石島町会 夏祭り","event_year":2026,"venue":{"name":"石島町会会館前","area":"江東区","address":"江東区石島17-14"},"date_start":"2026-08-14","detail_addendum":"16:30〜19:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"東砂三丁目町会 盆踊大会","series_name":"東砂三丁目町会 盆踊大会","event_year":2026,"venue":{"name":"東砂第二公園","area":"江東区","address":"江東区東砂3-17-17"},"date_start":"2026-08-21","date_end":"2026-08-22","detail_addendum":"18:30〜。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"大島三丁目団地自治会 夕涼み会","series_name":"大島三丁目団地自治会 夕涼み会","event_year":2026,"venue":{"name":"大島三丁目団地","area":"江東区","address":"江東区大島3-26-1"},"date_start":"2026-08-22","detail_addendum":"16:00〜18:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"東陽六・七丁目町会 夏まつり","series_name":"東陽六・七丁目町会 夏まつり","event_year":2026,"venue":{"name":"イーストプラザ広場","area":"江東区","address":"江東区東陽6-3-3"},"date_start":"2026-08-22","date_end":"2026-08-23","detail_addendum":"元の告知表記は「夏まつり2026」。17:00〜21:30。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"塩浜一丁目団地自治会 夏まつり","series_name":"塩浜一丁目団地自治会 夏まつり","event_year":2026,"venue":{"name":"塩浜一丁目団地中央公園内","area":"江東区","address":"江東区塩浜1-5"},"date_start":"2026-08-22","detail_addendum":"9:30〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"扇橋二丁目町会 納涼大会","series_name":"扇橋二丁目町会 納涼大会","event_year":2026,"venue":{"name":"江東公園（北側）","area":"江東区","address":"江東区扇橋2-22-2"},"date_start":"2026-08-28","date_end":"2026-08-29","detail_addendum":"18:00〜21:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"江東区民まつり 亀戸地区夏まつり大会","series_name":"江東区民まつり 亀戸地区夏まつり大会","event_year":2026,"venue":{"name":"亀戸中央公園","area":"江東区","address":"江東区亀戸8-22-1"},"date_start":"2026-08-29","detail_addendum":"盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"大島五丁目町会 ぼんおどり","series_name":"大島五丁目町会 ぼんおどり","event_year":2026,"venue":{"name":"大島五丁目公園","area":"江東区","address":"江東区大島5-27-16"},"date_start":"2026-08-29","detail_addendum":"17:00〜。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"猿江一丁目町会 納涼まつり","series_name":"猿江一丁目町会 納涼まつり","event_year":2026,"venue":{"name":"猿江一丁目公園","area":"江東区","address":"江東区猿江1-11-5"},"date_start":"2026-09-05","detail_addendum":"16:00〜20:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"南砂住宅 団地祭り","series_name":"南砂住宅 団地祭り","event_year":2026,"venue":{"name":"南砂住宅","area":"江東区","address":"江東区南砂2-3-1"},"date_start":"2026-09-20","detail_addendum":"15:00〜19:00。盆踊りの実施有無は未確認。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"},
+    {"action":"register_new","event_name_hint":"東砂一丁目団地 ふれあい祭り","series_name":"東砂一丁目団地 ふれあい祭り","event_year":2026,"venue":{"name":"東砂一丁目団地","area":"江東区","address":"江東区東砂1-2"},"date_start":"2026-09-26","detail_addendum":"11:00〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。江東区の情報サイト（minamisuna1.com）の「2026年 江東区 盆踊り・夏祭り開催情報」より（https://minamisuna1.com/37573/）。"}
+  ],
+  "skipped_events": [
+    {"name":"毛利町会 納涼こども花火まつり","reason":"花火イベントで盆踊り実施の根拠なし。"},
+    {"name":"砂町銀座 七夕まつり","reason":"七夕・商店街イベントで盆踊り実施の根拠なし。"},
+    {"name":"富岡八幡宮例祭（深川八幡祭り）","reason":"神輿の水掛け祭りで盆踊り実施の根拠なし。"},
+    {"name":"深川十五夜まつり","reason":"十五夜イベントで盆踊り実施の根拠なし。"}
+  ]
+}

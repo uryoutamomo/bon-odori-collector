@@ -804,6 +804,146 @@
       "site_sha256": "c8944fccad98866efd3e910a3d6c8b27a2495241564a8d6472abcd7455f2f7c8",
       "collector_sha256": "0eac7c870dd1f705d987069261742438e7172360f1af94e0fb64b27ffa7d0acd",
       "reason": "2026-08-01: 既存シリーズへ2026年8月1〜2日の開催回を追加。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-35680126e17a",
+      "kind": "addition",
+      "event_key": "扇橋三丁目町会 納涼盆踊り大会||つばめ幼稚園",
+      "collector_sha256": "35680126e17acba2f91580544ab29176c5e7bf660c1a76fd03c37acc656266a7",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-ae1a1504f543",
+      "kind": "addition",
+      "event_key": "亀戸四丁目 納涼盆踊り大会||ふれあい公園",
+      "collector_sha256": "ae1a1504f54346c117e7cb60df4d046e670cdbbbf51866816b93acafc87034e3",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-c875eebb5958",
+      "kind": "addition",
+      "event_key": "とよす夏祭り||アーバンドック ららぽーと豊洲",
+      "collector_sha256": "c875eebb59589d72b68febcf682330e9dd2328337a5c79560e3ca40e9e8500e2",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-497700536843",
+      "kind": "addition",
+      "event_key": "東陽六・七丁目町会 夏まつり||イーストプラザ広場",
+      "collector_sha256": "497700536843a79d7d9b440222ffaf68a207a2dbb378b4be48e84abe6b5380ad",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-10dc3b908209",
+      "kind": "addition",
+      "event_key": "江東区民まつり 亀戸地区夏まつり大会||亀戸中央公園",
+      "collector_sha256": "10dc3b908209cd7348f91a4f39c6d20bceb296dc48a54f4230f9f6750d428de7",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-55ceae350630",
+      "kind": "addition",
+      "event_key": "亀戸二丁目団地 ここがふるさと夏まつり||亀戸二丁目団地 一号棟前広場",
+      "collector_sha256": "55ceae3506304a90ab968cfdf40e2d27f894466d1140b00ee0739c7bc0ef5786",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-4da12b4ec494",
+      "kind": "addition",
+      "event_key": "亀戸六丁目東町会 ふるさとまつり||亀戸平岩公園",
+      "collector_sha256": "4da12b4ec49415352fd837887db8e569b44789bf7286469c9260b187bcf0671f",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-db6b9d517ca6",
+      "kind": "addition",
+      "event_key": "南砂一・二丁目町会 盆踊り||南砂一丁目北公園",
+      "collector_sha256": "db6b9d517ca6485606568570f0ce38d6343b7070c7ba743a021be45afd816629",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-893b76cc8adf",
+      "kind": "addition",
+      "event_key": "南砂住宅 団地祭り||南砂住宅",
+      "collector_sha256": "893b76cc8adf1de067501a34806ad6d65bc065bbc0a326373b27064a156795fc",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-2e361821885f",
+      "kind": "addition",
+      "event_key": "塩浜一丁目団地自治会 夏まつり||塩浜一丁目団地中央公園内",
+      "collector_sha256": "2e361821885f10b217f6dc81136cef7269e9b01a97c43f6ff2ad1b8b95823752",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-1f5e9250b054",
+      "kind": "addition",
+      "event_key": "大島三丁目団地自治会 夕涼み会||大島三丁目団地",
+      "collector_sha256": "1f5e9250b05497690fa33d3c87fc4b5bd5a284bdf65bccf19022d0f489719a72",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-4aebf91f66df",
+      "kind": "addition",
+      "event_key": "大島三丁目町会 お祭り広場||大島三丁目緑道公園",
+      "collector_sha256": "4aebf91f66df39a70a35fe11d2eb402b26c457fe45a72e05cb204817fda97987",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-d52634b26237",
+      "kind": "addition",
+      "event_key": "大島五丁目町会 ぼんおどり||大島五丁目公園",
+      "collector_sha256": "d52634b26237d93340d13257a8f3193450ae9de480b3438522f86aff6c69be11",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-2b9fa11945b6",
+      "kind": "addition",
+      "event_key": "東砂一丁目団地 ふれあい祭り||東砂一丁目団地",
+      "collector_sha256": "2b9fa11945b673c881788789aece065d81218ea9808bd9f72385b803a3bda065",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-cd92ba2218eb",
+      "kind": "addition",
+      "event_key": "東砂三丁目町会 盆踊大会||東砂第二公園",
+      "collector_sha256": "cd92ba2218eb9792c224202d32287103c711e8f5866582e12d86c400ad0cd96c",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-4fa830a6247f",
+      "kind": "addition",
+      "event_key": "亀戸五丁目町会 夏まつり||水神小学校校庭",
+      "collector_sha256": "4fa830a6247fce9ff6174824294e3217b9a086c514c96d331ad50b65feb9d967",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-787da07b26bb",
+      "kind": "addition",
+      "event_key": "千田町会 納涼盆踊り大会||江東公園",
+      "collector_sha256": "787da07b26bb4bd4eb8eb0c607240935207aa299697dc91714707730248d580a",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-3a6e37765765",
+      "kind": "addition",
+      "event_key": "扇橋二丁目町会 納涼大会||江東公園",
+      "collector_sha256": "3a6e377657655554278a57f0e051f2a2caec1036835a52623853362e94246d16",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-5a9b91935ebd",
+      "kind": "addition",
+      "event_key": "猿江一丁目町会 納涼まつり||猿江一丁目公園",
+      "collector_sha256": "5a9b91935ebdab8a757a7de48359c4f57cbc4c30faaca5de73de7d585349f2b6",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-second-wave-9b77e0b862e7",
+      "kind": "addition",
+      "event_key": "石島町会 夏祭り||石島町会会館前",
+      "collector_sha256": "9b77e0b862e76fb778c2132c0d40b3fa0fe60b9b201e121fe79def0cb806bb0f",
+      "reason": "2026-08-01: 江東区第2弾の当年開催情報。ことレビューおよび内田さん明示GO。"
     }
   ]
 }

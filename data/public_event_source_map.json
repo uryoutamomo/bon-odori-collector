@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 231,
-  "mapped_count": 231,
+  "public_event_count": 251,
+  "mapped_count": 251,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -1253,6 +1253,90 @@
       "venue_id": "ven_4d0cbe21989ac7e8"
     },
     {
+      "public_event_key": "扇橋三丁目町会 納涼盆踊り大会|つばめ幼稚園|2026-08-09|2026-08-10",
+      "name": "扇橋三丁目町会 納涼盆踊り大会",
+      "venue": "つばめ幼稚園",
+      "date": "2026-08-09",
+      "date_end": "2026-08-10",
+      "source": "master_rdb",
+      "occurrence_id": "occ_251ebd5fe04d4d38",
+      "series_id": "series_4cf0dd1854ebb9a4",
+      "event_year": 2026,
+      "venue_id": "venue_ee57aca026810bc3"
+    },
+    {
+      "public_event_key": "亀戸四丁目 納涼盆踊り大会|ふれあい公園|2026-08-08|2026-08-09",
+      "name": "亀戸四丁目 納涼盆踊り大会",
+      "venue": "ふれあい公園",
+      "date": "2026-08-08",
+      "date_end": "2026-08-09",
+      "source": "master_rdb",
+      "occurrence_id": "occ_9a6845c9eef189a2",
+      "series_id": "series_be61292bb43f07ca",
+      "event_year": 2026,
+      "venue_id": "venue_41f212205dc93540"
+    },
+    {
+      "public_event_key": "とよす夏祭り|アーバンドック ららぽーと豊洲|2026-08-08|2026-08-16",
+      "name": "とよす夏祭り",
+      "venue": "アーバンドック ららぽーと豊洲",
+      "date": "2026-08-08",
+      "date_end": "2026-08-16",
+      "source": "master_rdb",
+      "occurrence_id": "occ_fd1c503d3f6538d5",
+      "series_id": "series_46dd6622b7a24183",
+      "event_year": 2026,
+      "venue_id": "venue_a21e0c3606a6a282"
+    },
+    {
+      "public_event_key": "東陽六・七丁目町会 夏まつり|イーストプラザ広場|2026-08-22|2026-08-23",
+      "name": "東陽六・七丁目町会 夏まつり",
+      "venue": "イーストプラザ広場",
+      "date": "2026-08-22",
+      "date_end": "2026-08-23",
+      "source": "master_rdb",
+      "occurrence_id": "occ_c144b96d770e3b9e",
+      "series_id": "series_bcfa4fbdea67eb42",
+      "event_year": 2026,
+      "venue_id": "venue_ba22a6edb38c79f1"
+    },
+    {
+      "public_event_key": "江東区民まつり 亀戸地区夏まつり大会|亀戸中央公園|2026-08-29|2026-08-29",
+      "name": "江東区民まつり 亀戸地区夏まつり大会",
+      "venue": "亀戸中央公園",
+      "date": "2026-08-29",
+      "date_end": "2026-08-29",
+      "source": "master_rdb",
+      "occurrence_id": "occ_fbbf1f3dcb7ae7c3",
+      "series_id": "series_30c44ed3c6bfcc52",
+      "event_year": 2026,
+      "venue_id": "venue_2550ebe169b1e3c1"
+    },
+    {
+      "public_event_key": "亀戸二丁目団地 ここがふるさと夏まつり|亀戸二丁目団地 一号棟前広場|2026-08-07|2026-08-08",
+      "name": "亀戸二丁目団地 ここがふるさと夏まつり",
+      "venue": "亀戸二丁目団地 一号棟前広場",
+      "date": "2026-08-07",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_67944b1715f8aaa4",
+      "series_id": "series_138675a9108acc30",
+      "event_year": 2026,
+      "venue_id": "venue_43f3765cb0cdb037"
+    },
+    {
+      "public_event_key": "亀戸六丁目東町会 ふるさとまつり|亀戸平岩公園|2026-08-08|2026-08-08",
+      "name": "亀戸六丁目東町会 ふるさとまつり",
+      "venue": "亀戸平岩公園",
+      "date": "2026-08-08",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_4c6f06222bd906ac",
+      "series_id": "series_f073dad51e2a612e",
+      "event_year": 2026,
+      "venue_id": "venue_3a2fabe1dbaac943"
+    },
+    {
       "public_event_key": "八名川地区連合町会 納涼音頭大会|八名川公園|2026-07-30|2026-08-01",
       "name": "八名川地区連合町会 納涼音頭大会",
       "venue": "八名川公園",
@@ -1277,6 +1361,42 @@
       "venue_id": "ven_0f5603e901c5e3f4"
     },
     {
+      "public_event_key": "南砂一・二丁目町会 盆踊り|南砂一丁目北公園|2026-08-07|2026-08-08",
+      "name": "南砂一・二丁目町会 盆踊り",
+      "venue": "南砂一丁目北公園",
+      "date": "2026-08-07",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_4fcc747c2d490ae4",
+      "series_id": "series_8805551b56c57750",
+      "event_year": 2026,
+      "venue_id": "venue_663c75e75b458322"
+    },
+    {
+      "public_event_key": "南砂住宅 団地祭り|南砂住宅|2026-09-20|2026-09-20",
+      "name": "南砂住宅 団地祭り",
+      "venue": "南砂住宅",
+      "date": "2026-09-20",
+      "date_end": "2026-09-20",
+      "source": "master_rdb",
+      "occurrence_id": "occ_144344004e460a1a",
+      "series_id": "series_a5e73c6c264b42a1",
+      "event_year": 2026,
+      "venue_id": "venue_cce3bca8c0eb76ea"
+    },
+    {
+      "public_event_key": "塩浜一丁目団地自治会 夏まつり|塩浜一丁目団地中央公園内|2026-08-22|2026-08-22",
+      "name": "塩浜一丁目団地自治会 夏まつり",
+      "venue": "塩浜一丁目団地中央公園内",
+      "date": "2026-08-22",
+      "date_end": "2026-08-22",
+      "source": "master_rdb",
+      "occurrence_id": "occ_d4f2f14192a4ef64",
+      "series_id": "series_4b403ea9d0f31beb",
+      "event_year": 2026,
+      "venue_id": "venue_55a979e196f1d8e9"
+    },
+    {
       "public_event_key": "大島スカイハイツ 夏まつり|大島スカイハイツ|2026-08-01|2026-08-01",
       "name": "大島スカイハイツ 夏まつり",
       "venue": "大島スカイハイツ",
@@ -1287,6 +1407,42 @@
       "series_id": "series_49d65583de396d88",
       "event_year": 2026,
       "venue_id": "venue_57111dc4ab7ce691"
+    },
+    {
+      "public_event_key": "大島三丁目団地自治会 夕涼み会|大島三丁目団地|2026-08-22|2026-08-22",
+      "name": "大島三丁目団地自治会 夕涼み会",
+      "venue": "大島三丁目団地",
+      "date": "2026-08-22",
+      "date_end": "2026-08-22",
+      "source": "master_rdb",
+      "occurrence_id": "occ_5df32308eae3f789",
+      "series_id": "series_8d27933790b4ff0a",
+      "event_year": 2026,
+      "venue_id": "venue_e896a65850b1d621"
+    },
+    {
+      "public_event_key": "大島三丁目町会 お祭り広場|大島三丁目緑道公園|2026-08-08|2026-08-08",
+      "name": "大島三丁目町会 お祭り広場",
+      "venue": "大島三丁目緑道公園",
+      "date": "2026-08-08",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_e2b9ec2298ec4f32",
+      "series_id": "series_36abaed7511bace4",
+      "event_year": 2026,
+      "venue_id": "venue_2511640c2496a46d"
+    },
+    {
+      "public_event_key": "大島五丁目町会 ぼんおどり|大島五丁目公園|2026-08-29|2026-08-29",
+      "name": "大島五丁目町会 ぼんおどり",
+      "venue": "大島五丁目公園",
+      "date": "2026-08-29",
+      "date_end": "2026-08-29",
+      "source": "master_rdb",
+      "occurrence_id": "occ_64e9d25c0c48cc6b",
+      "series_id": "series_21c35b5027acafbb",
+      "event_year": 2026,
+      "venue_id": "venue_3cdd1d156a691658"
     },
     {
       "public_event_key": "海辺町会 納涼盆踊り大会|川南海辺公園|2026-08-01|2026-08-02",
@@ -1361,6 +1517,30 @@
       "venue_id": "venue_37f7036453c2fd96"
     },
     {
+      "public_event_key": "東砂一丁目団地 ふれあい祭り|東砂一丁目団地|2026-09-26|2026-09-26",
+      "name": "東砂一丁目団地 ふれあい祭り",
+      "venue": "東砂一丁目団地",
+      "date": "2026-09-26",
+      "date_end": "2026-09-26",
+      "source": "master_rdb",
+      "occurrence_id": "occ_4ed149af2fc84735",
+      "series_id": "series_acc42959d06b0b8c",
+      "event_year": 2026,
+      "venue_id": "venue_48440630d284e7be"
+    },
+    {
+      "public_event_key": "東砂三丁目町会 盆踊大会|東砂第二公園|2026-08-21|2026-08-22",
+      "name": "東砂三丁目町会 盆踊大会",
+      "venue": "東砂第二公園",
+      "date": "2026-08-21",
+      "date_end": "2026-08-22",
+      "source": "master_rdb",
+      "occurrence_id": "occ_cf0544b3561983b8",
+      "series_id": "series_7481b2698085ef0b",
+      "event_year": 2026,
+      "venue_id": "venue_be359b4f4ad12812"
+    },
+    {
       "public_event_key": "枝川二・三丁目町会 枝川の夏まつり|枝川小学校|2026-07-31|2026-08-01",
       "name": "枝川二・三丁目町会 枝川の夏まつり",
       "venue": "枝川小学校",
@@ -1383,6 +1563,42 @@
       "series_id": "ser_1a3ab17f2d87fd89",
       "event_year": 2026,
       "venue_id": "ven_db5e8909ac6a87a5"
+    },
+    {
+      "public_event_key": "亀戸五丁目町会 夏まつり|水神小学校校庭|2026-08-08|2026-08-09",
+      "name": "亀戸五丁目町会 夏まつり",
+      "venue": "水神小学校校庭",
+      "date": "2026-08-08",
+      "date_end": "2026-08-09",
+      "source": "master_rdb",
+      "occurrence_id": "occ_22f885022cdf1584",
+      "series_id": "series_0ea1e65e2cac1624",
+      "event_year": 2026,
+      "venue_id": "venue_6b6b05a57bea3192"
+    },
+    {
+      "public_event_key": "千田町会 納涼盆踊り大会|江東公園|2026-08-07|2026-08-08",
+      "name": "千田町会 納涼盆踊り大会",
+      "venue": "江東公園",
+      "date": "2026-08-07",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_472f2827e41b676b",
+      "series_id": "series_bac5098ed8499aa5",
+      "event_year": 2026,
+      "venue_id": "venue_587b34835a4c6686"
+    },
+    {
+      "public_event_key": "扇橋二丁目町会 納涼大会|江東公園|2026-08-28|2026-08-29",
+      "name": "扇橋二丁目町会 納涼大会",
+      "venue": "江東公園",
+      "date": "2026-08-28",
+      "date_end": "2026-08-29",
+      "source": "master_rdb",
+      "occurrence_id": "occ_ef53e510c8842afb",
+      "series_id": "series_ad97cab2944e5330",
+      "event_year": 2026,
+      "venue_id": "venue_587b34835a4c6686"
     },
     {
       "public_event_key": "江東天祖神社の盆踊り（名称推定）|江東天祖神社（亀戸天祖神社）||",
@@ -1431,6 +1647,30 @@
       "series_id": "series_6b7e474e8f3f3d62",
       "event_year": 2026,
       "venue_id": "venue_200ff4b10dd9aa88"
+    },
+    {
+      "public_event_key": "猿江一丁目町会 納涼まつり|猿江一丁目公園|2026-09-05|2026-09-05",
+      "name": "猿江一丁目町会 納涼まつり",
+      "venue": "猿江一丁目公園",
+      "date": "2026-09-05",
+      "date_end": "2026-09-05",
+      "source": "master_rdb",
+      "occurrence_id": "occ_b223cacd3b0c84eb",
+      "series_id": "series_634b8927954cef24",
+      "event_year": 2026,
+      "venue_id": "venue_a360d4fe92f6e5df"
+    },
+    {
+      "public_event_key": "石島町会 夏祭り|石島町会会館前|2026-08-14|2026-08-14",
+      "name": "石島町会 夏祭り",
+      "venue": "石島町会会館前",
+      "date": "2026-08-14",
+      "date_end": "2026-08-14",
+      "source": "master_rdb",
+      "occurrence_id": "occ_12e9728c0a384d1b",
+      "series_id": "series_6cfb9e4fd5bc9291",
+      "event_year": 2026,
+      "venue_id": "venue_9ce07f0c3c14195c"
     },
     {
       "public_event_key": "大島一・二丁目町会 納涼盆踊り大会|第一大島小学校|2026-07-31|2026-08-01",
