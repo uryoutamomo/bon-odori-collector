@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 import os
+from datetime import date
 from pathlib import Path
 
 from public_json_postprocessors.guard_public_events_sync import (
@@ -406,6 +407,96 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             classified["summary"]["events_by_action"],
             {"expired_historical_slide_downgrade": 1},
         )
+
+    def test_past_ended_transition_is_automatically_allowed(self):
+        site = {
+            "name": "完了した盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-28",
+            "date_end": "2026-07-29",
+            "display_tier": "upcoming",
+            "historical_display_tier": "upcoming",
+        }
+        collector = {**site, "display_tier": "ended", "historical_display_tier": "ended"}
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(
+            classified["summary"]["events_by_action"], {"ended_transition_downgrade": 1}
+        )
+        self.assertEqual(classified["event_rows"][0]["ended_transition_end_date"], "2026-07-29")
+
+    def test_ended_transition_on_today_still_requires_review(self):
+        site = {
+            "name": "本日最終日の盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-30",
+            "date_end": "2026-07-31",
+            "display_tier": "upcoming",
+            "historical_display_tier": "upcoming",
+        }
+        collector = {**site, "display_tier": "ended", "historical_display_tier": "ended"}
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(classified["event_rows"][0]["recommended_action"], "individual_review")
+
+    def test_reverse_ended_transition_still_requires_review(self):
+        collector = {
+            "name": "再開した盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-29",
+            "date_end": "2026-07-29",
+            "display_tier": "upcoming",
+            "historical_display_tier": "upcoming",
+        }
+        site = {**collector, "display_tier": "ended", "historical_display_tier": "ended"}
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(classified["event_rows"][0]["recommended_action"], "individual_review")
+
+    def test_ended_transition_with_detail_change_still_requires_review(self):
+        site = {
+            "name": "詳細も変わった盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-29",
+            "date_end": "2026-07-29",
+            "detail": "旧詳細",
+            "display_tier": "upcoming",
+            "historical_display_tier": "upcoming",
+        }
+        collector = {
+            **site,
+            "detail": "新詳細",
+            "display_tier": "ended",
+            "historical_display_tier": "ended",
+        }
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(classified["event_rows"][0]["recommended_action"], "individual_review")
+
+    def test_ended_transition_with_date_change_still_requires_review(self):
+        site = {
+            "name": "日付も変わった盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-28",
+            "date_end": "2026-07-28",
+            "display_tier": "upcoming",
+            "historical_display_tier": "upcoming",
+        }
+        collector = {
+            **site,
+            "date": "2026-07-29",
+            "date_end": "2026-07-29",
+            "display_tier": "ended",
+            "historical_display_tier": "ended",
+        }
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(classified["event_rows"][0]["recommended_action"], "individual_review")
 
 
 if __name__ == "__main__":

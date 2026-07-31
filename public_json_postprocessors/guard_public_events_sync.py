@@ -303,7 +303,7 @@ def flow_artifact_warnings(master_db, publication_gap_review, collector_events):
     return warnings
 
 
-def classify_rows(collector_rows, site_rows):
+def classify_rows(collector_rows, site_rows, today=None):
     collector = index_events(collector_rows)
     site = index_events(site_rows)
     records = []
@@ -338,8 +338,9 @@ def classify_rows(collector_rows, site_rows):
     event_rows = []
     for key, item in event_actions.items():
         actions = item["actions"]
-        action = recommended_event_action(actions, item["records"])
+        action = recommended_event_action(actions, item["records"], collector[key], site[key], today)
         sample = next(record for record in records if record["event_key"] == key)
+        end_date = collector[key].get("date_end") or collector[key].get("date")
         event_rows.append(
             {
                 "event_key": key,
@@ -350,6 +351,7 @@ def classify_rows(collector_rows, site_rows):
                 "field_count": len(item["fields"]),
                 "fields": sorted(item["fields"]),
                 "actions": dict(actions),
+                "ended_transition_end_date": end_date if action == "ended_transition_downgrade" else None,
             }
         )
 
@@ -434,21 +436,21 @@ def build(args):
     if not today:
         raise SystemExit(f"invalid --today: {args.today}")
 
-    raw = classify_rows(collector_events, site_events)
+    raw = classify_rows(collector_events, site_events, today=today)
     postprocessed_events = apply_required_postprocessors(
         collector_events,
         args.target_year,
         today,
         args.fixed_date_rules,
     )
-    postprocessed = classify_rows(postprocessed_events, site_events)
+    postprocessed = classify_rows(postprocessed_events, site_events, today=today)
     reviewed_approvals_payload = load_json(args.reviewed_approvals, {})
     reviewed = apply_reviewed_exact_approvals(
         postprocessed_events,
         site_events,
         reviewed_approvals_payload,
     )
-    approved = classify_rows(postprocessed_events, reviewed["site_rows"])
+    approved = classify_rows(postprocessed_events, reviewed["site_rows"], today=today)
     decision = guard_decision(
         raw,
         approved,
@@ -485,6 +487,15 @@ def build(args):
         "postprocessed_classification": postprocessed["summary"],
         "reviewed_exact_approvals": reviewed["summary"],
         "approved_classification": approved["summary"],
+        "ended_transition_downgrades": [
+            {
+                "event_name": row["event_name"],
+                "venue": row["venue"],
+                "ended_on": row["ended_transition_end_date"],
+            }
+            for row in approved["event_rows"]
+            if row["recommended_action"] == "ended_transition_downgrade"
+        ],
         "blocking_examples": [
             row
             for row in approved["event_rows"]
@@ -546,6 +557,13 @@ def render_markdown(data):
     lines.extend(["", "## After Reviewed Exact Approvals", ""])
     for key, value in data["approved_classification"].items():
         lines.append(f"- {key}: {value}")
+    lines.extend(["", "## Automatically Allowed Ended Transitions", ""])
+    ended_transitions = data["ended_transition_downgrades"]
+    lines.append(f"- count: {len(ended_transitions)}")
+    if ended_transitions:
+        lines.extend(["", "| event | venue | ended on |", "| --- | --- | --- |"])
+        for row in ended_transitions:
+            lines.append(f"| {row['event_name']} | {row['venue']} | {row['ended_on']} |")
     lines.extend(
         [
             "",
