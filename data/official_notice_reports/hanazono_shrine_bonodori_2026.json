@@ -1,0 +1,28 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-01T00:00:00+09:00",
+  "source": {
+    "report_id": "hanazono_shrine_bonodori_2026",
+    "title": "花園神社 盆踊り 2026年開催情報",
+    "account_key": "複数の地域・イベント案内サイト",
+    "raw_text": "レッツエンジョイ東京、yokoso-shinjuku、jk-tokyoほかの2026年開催案内が一致。花園神社 盆踊りは2026年8月1日（土）〜2日（日）18:45〜21:15、花園神社境内（新宿区新宿5-17-3）で開催。雨天時は8月4日まで順延。曜日は2026年の暦と一致する。"
+  },
+  "events": [
+    {
+      "action": "add_occurrence_to_existing_series",
+      "source_occurrence_id": "occ_59180208dc287804",
+      "event_name_hint": "花園神社 盆踊り",
+      "series_name": "花園神社 盆踊り",
+      "event_year": 2026,
+      "venue": {
+        "name": "花園神社",
+        "area": "新宿区",
+        "address": "新宿区新宿5-17-3"
+      },
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "detail_addendum": "2026年8月1日（土）〜2日（日）18:45〜21:15。雨天時は8月4日まで順延。複数の地域・イベント案内サイトの当年情報が一致。"
+    }
+  ],
+  "skipped_events": []
+}

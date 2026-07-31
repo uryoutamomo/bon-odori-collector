@@ -555,23 +555,26 @@
     },
     {
       "id": "reviewed-addition-20260729-2eabdec53304",
-      "kind": "addition",
+      "kind": "same_key_update",
       "event_key": "御徒町公園の盆踊り大会||御徒町公園",
-      "collector_sha256": "2eabdec53304b153b08b9f6cfa0885d65a9cb55d2b314e5947bb51cb75430532",
+      "site_sha256": "2eabdec53304b153b08b9f6cfa0885d65a9cb55d2b314e5947bb51cb75430532",
+      "collector_sha256": "232bc65a4135300af5390e997210bd32b9e55a2bd1e1a92ea88028d4dc098aa9",
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。投稿本文に正式名称が無く、会場名を冠した暫定名。"
     },
     {
       "id": "reviewed-addition-20260729-357d2226528e",
-      "kind": "addition",
+      "kind": "same_key_update",
       "event_key": "道塚盆踊り||道塚小学校校庭",
-      "collector_sha256": "357d2226528ef6606dceedb53cf98ee0c35f160fba68c8f95a6dae30b41567c1",
+      "site_sha256": "357d2226528ef6606dceedb53cf98ee0c35f160fba68c8f95a6dae30b41567c1",
+      "collector_sha256": "6fc09125307e406c75af44ac9aa85675929bf9418e3cbf204aa221e7342854ce",
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
       "id": "reviewed-addition-20260729-f11ea4329a72",
-      "kind": "addition",
+      "kind": "same_key_update",
       "event_key": "盆踊りフェス||ゆうぽうと世田谷レクセンター 駐車場",
-      "collector_sha256": "f11ea4329a72ece8010408bd9c7b2b785fb00b0e82eba4ddc357b0e6d074ea84",
+      "site_sha256": "f11ea4329a72ece8010408bd9c7b2b785fb00b0e82eba4ddc357b0e6d074ea84",
+      "collector_sha256": "403155c7f4e65c12b041a10b7e5c662e8ae1ee11b60cc7218fe552029e6280b6",
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
@@ -583,9 +586,10 @@
     },
     {
       "id": "reviewed-addition-20260729-098fda38f766",
-      "kind": "addition",
+      "kind": "same_key_update",
       "event_key": "大松氷川神社 納涼盆踊り大会||大松氷川神社",
-      "collector_sha256": "098fda38f766e61d3b31d4009691ca9547507b528dae8689053d11799ea0b9d6",
+      "site_sha256": "098fda38f766e61d3b31d4009691ca9547507b528dae8689053d11799ea0b9d6",
+      "collector_sha256": "a2db00af91fef0f2559f75e75147ad33b3f5bb73eb2805a37aa0c425b44ac944",
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
@@ -597,9 +601,10 @@
     },
     {
       "id": "reviewed-addition-20260729-3e63c4350175",
-      "kind": "addition",
+      "kind": "same_key_update",
       "event_key": "旭町一丁目町会 盆踊り||本覚寺",
-      "collector_sha256": "3e63c43501753fa815b741c313b166abaa9bbb95965db782caa93c103a5f327a",
+      "site_sha256": "3e63c43501753fa815b741c313b166abaa9bbb95965db782caa93c103a5f327a",
+      "collector_sha256": "89a633e66fd25fc8bbc2915da320b9561df8ba786518ce6168c620df3a2875af",
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
@@ -721,6 +726,84 @@
       "site_sha256": "2e7cb90e9c18f2b5005c489f3fcb357bd81b0d6d238df25b69d4915720122e1a",
       "collector_sha256": "a086686d5ac3d8b03acc59938479abe753efb424951277f0f79356425d534725",
       "reason": "2026-07-31: 2026-07-18〜19の開催日・時刻を当年根拠で確定。終了済み表示を含む。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-dc59bb57c4f0",
+      "kind": "addition",
+      "event_key": "八名川地区連合町会 納涼音頭大会||八名川公園",
+      "collector_sha256": "dc59bb57c4f01e856716f8af17cfdec703cfd56a92c40ed8245a801a4ebb2dc9",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-9fc6b21425c2",
+      "kind": "addition",
+      "event_key": "大島一・二丁目町会 納涼盆踊り大会||第一大島小学校",
+      "collector_sha256": "9fc6b21425c2b04650424043d7a5da5a2802149cfd211b95a5db5c4e52974325",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-973717192f96",
+      "kind": "addition",
+      "event_key": "枝川二・三丁目町会 枝川の夏まつり||枝川小学校",
+      "collector_sha256": "973717192f96db46e15dddcf308d18779feb0dc44107be7d840e0e8a0326d94e",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-a86d22063e4e",
+      "kind": "addition",
+      "event_key": "深川一丁目 盆踊り大会||深川一丁目児童遊園",
+      "collector_sha256": "a86d22063e4ecac1b515a6557ebc0b16506ba320b73bae289d605989d09ad9ed",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-acf6bb59d38a",
+      "kind": "addition",
+      "event_key": "大島スカイハイツ 夏まつり||大島スカイハイツ",
+      "collector_sha256": "acf6bb59d38a27b06eb622945cdc07a190e583d3e3320887820cd8fb6637dbe3",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-495cbad4da3c",
+      "kind": "addition",
+      "event_key": "東大島神社 納涼祭||東大島神社",
+      "collector_sha256": "495cbad4da3ceeab1e2ef0d455dc1e58d367ec990ec529f2e07f4a1a1d529b40",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-36e86a927e27",
+      "kind": "addition",
+      "event_key": "盆踊り東陽四丁目連合||文化センターコミュニティ中庭",
+      "collector_sha256": "36e86a927e2752de5401c7d9b2bc710898f5c9b2e7bb2f57592149a5195615dc",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-57ac874dd309",
+      "kind": "addition",
+      "event_key": "洲崎神社祭礼||洲崎神社",
+      "collector_sha256": "57ac874dd30960cdc360a3d691d411a3b53f7dd6333c47b332a2874f80d1f7a6",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-6620c8715e11",
+      "kind": "addition",
+      "event_key": "豊洲123丁目連合会 豊洲ふれあい納涼祭||豊洲三丁目公園",
+      "collector_sha256": "6620c8715e11a2b7ae4c847fd431285009d25fda6a3a5adcad69fe5bea3ea989",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-koto-first-wave-723425acba84",
+      "kind": "addition",
+      "event_key": "海辺町会 納涼盆踊り大会||川南海辺公園",
+      "collector_sha256": "723425acba841389b0eecdbb51ad14c8330f87991ba5e55d61b19f64a9b7d37e",
+      "reason": "2026-08-01: 江東区の当年開催情報として登録。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-hanazono-2026-0eac7c870dd1",
+      "kind": "same_key_update",
+      "event_key": "花園神社 盆踊り||花園神社",
+      "site_sha256": "c8944fccad98866efd3e910a3d6c8b27a2495241564a8d6472abcd7455f2f7c8",
+      "collector_sha256": "0eac7c870dd1f705d987069261742438e7172360f1af94e0fb64b27ffa7d0acd",
+      "reason": "2026-08-01: 既存シリーズへ2026年8月1〜2日の開催回を追加。ことレビューおよび内田さん明示GO。"
     }
   ]
 }

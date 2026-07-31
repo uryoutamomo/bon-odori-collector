@@ -2084,132 +2084,133 @@
     "name": "花園神社 盆踊り",
     "venue": "花園神社",
     "area": "新宿区",
-    "date": "2025-08-01",
+    "date": "2026-08-01",
     "songs": [
       {
         "name": "八木節",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "DESIRE -情熱",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "きよしのズンドコ節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "りんご節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ズンパ音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ドンパン節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "宝っこ音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭1",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭2",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭コンクール 予選決勝",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "浪花節だよ人生は",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ]
   },

@@ -1,0 +1,17 @@
+{
+  "report_type":"official_notice",
+  "reported_at":"2026-08-01T00:10:00+09:00",
+  "source":{"report_id":"koto_koto_ward_gap_first_wave_2026","title":"2026年 江東区 盆踊り・夏祭り開催情報","account_key":"minamisuna1.com","raw_text":"江東区の2026年盆踊り・夏祭り一覧から、本日〜明日開催の10件を登録する。名称に盆踊り・ぼんおどり・音頭を含む5件は盆踊りを明示。夏まつり・納涼祭・神社祭礼の5件は盆踊り実施有無を未確認として記録する。","url":"https://minamisuna1.com/37573/","notice_kind":"third_party_current_year"},
+  "events":[
+    {"action":"register_new","event_name_hint":"八名川地区連合町会 納涼音頭大会","event_year":2026,"date_start":"2026-07-30","date_end":"2026-08-01","venue":{"name":"八名川公園","area":"江東区","address":"東京都江東区新大橋3-1-1"},"detail_addendum":"2026年7月30日〜8月1日 18:30〜21:00。名称から盆踊り・音頭行事と確認。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"大島一・二丁目町会 納涼盆踊り大会","event_year":2026,"date_start":"2026-07-31","date_end":"2026-08-01","venue":{"name":"第一大島小学校","area":"江東区","address":"東京都江東区大島2-41-4"},"detail_addendum":"2026年7月31日〜8月1日 18:00〜20:30。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"枝川二・三丁目町会 枝川の夏まつり","event_year":2026,"date_start":"2026-07-31","date_end":"2026-08-01","venue":{"name":"枝川小学校","area":"江東区","address":"東京都江東区枝川3-5-3"},"detail_addendum":"2026年7月31日〜8月1日 17:30〜、枝川小学校校庭。盆踊りの実施有無は未確認。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"深川一丁目 盆踊り大会","event_year":2026,"date_start":"2026-08-01","date_end":"2026-08-02","venue":{"name":"深川一丁目児童遊園","area":"江東区","address":"東京都江東区深川1-3"},"detail_addendum":"2026年8月1日〜2日 18:00〜21:00。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"大島スカイハイツ 夏まつり","event_year":2026,"date_start":"2026-08-01","venue":{"name":"大島スカイハイツ","area":"江東区","address":"東京都江東区東砂1-3-2"},"detail_addendum":"2026年8月1日 10:00〜16:00。盆踊りの実施有無は未確認。昼開催のため盆踊り実施の可能性は低い。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"東大島神社 納涼祭","event_year":2026,"date_start":"2026-08-01","date_end":"2026-08-02","venue":{"name":"東大島神社","area":"江東区","address":"東京都江東区大島7-24-1"},"detail_addendum":"令和8年（2026年）開催。2026年8月1日〜2日 18:30〜21:00。盆踊りの実施有無は未確認。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"盆踊り東陽四丁目連合","event_year":2026,"date_start":"2026-08-01","date_end":"2026-08-02","venue":{"name":"文化センターコミュニティ中庭","area":"江東区","address":"東京都江東区東陽4-11-3"},"detail_addendum":"2026年8月1日〜2日 18:30〜20:30。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"洲崎神社祭礼","event_year":2026,"date_start":"2026-08-01","date_end":"2026-08-02","venue":{"name":"洲崎神社","area":"江東区","address":"東京都江東区木場6-13-13"},"detail_addendum":"2026年8月1日〜2日 17:30〜。盆踊りの実施有無は未確認。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"豊洲123丁目連合会 豊洲ふれあい納涼祭","event_year":2026,"date_start":"2026-08-01","venue":{"name":"豊洲三丁目公園","area":"江東区","address":"東京都江東区豊洲3-5-11"},"detail_addendum":"2026年は第14回。2026年8月1日 17:30〜21:00。盆踊りの実施有無は未確認。根拠：https://minamisuna1.com/37573/"},
+    {"action":"register_new","event_name_hint":"海辺町会 納涼盆踊り大会","event_year":2026,"date_start":"2026-08-01","date_end":"2026-08-02","venue":{"name":"川南海辺公園","area":"江東区","address":"東京都江東区海辺1-3"},"detail_addendum":"2026年8月1日〜2日 19:00〜21:00。根拠：https://minamisuna1.com/37573/"}
+  ]
+}

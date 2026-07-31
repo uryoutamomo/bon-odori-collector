@@ -1,0 +1,111 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-31T15:19:38.387496+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/hanazono_shrine_bonodori_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260731T151938.387496+0000.sqlite.bak",
+    "json": "data/hanazono_shrine_bonodori_2026_apply_report.json",
+    "markdown": "data/hanazono_shrine_bonodori_2026_apply_report.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 285,
+      "event_series": 269,
+      "event_series_aliases": 24,
+      "evidence_items": 31316,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 338,
+      "occurrence_evidence_links": 143,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 466,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 329,
+      "venues": 269,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-08-01T00:00:00+09:00",
+    "source": {
+      "report_id": "hanazono_shrine_bonodori_2026",
+      "title": "花園神社 盆踊り 2026年開催情報",
+      "account_key": "複数の地域・イベント案内サイト",
+      "raw_text": "レッツエンジョイ東京、yokoso-shinjuku、jk-tokyoほかの2026年開催案内が一致。花園神社 盆踊りは2026年8月1日（土）〜2日（日）18:45〜21:15、花園神社境内（新宿区新宿5-17-3）で開催。雨天時は8月4日まで順延。曜日は2026年の暦と一致する。"
+    },
+    "events": [
+      {
+        "action": "add_occurrence_to_existing_series",
+        "source_occurrence_id": "occ_59180208dc287804",
+        "event_name_hint": "花園神社 盆踊り",
+        "series_name": "花園神社 盆踊り",
+        "event_year": 2026,
+        "venue": {
+          "name": "花園神社",
+          "area": "新宿区",
+          "address": "新宿区新宿5-17-3"
+        },
+        "date_start": "2026-08-01",
+        "date_end": "2026-08-02",
+        "detail_addendum": "2026年8月1日（土）〜2日（日）18:45〜21:15。雨天時は8月4日まで順延。複数の地域・イベント案内サイトの当年情報が一致。"
+      }
+    ],
+    "skipped_events": []
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_fc1bc4ad90937461",
+    "events_applied": [
+      {
+        "action": "add_occurrence_to_existing_series",
+        "series_id": "ser_c6ad4b5bbf84069a",
+        "series_created": false,
+        "occurrence_id": "occ_f7aa108e5de9aa8c",
+        "venue_id": "ven_bc3b9994db9abfeb",
+        "venue_status": "reused",
+        "occurrence_created": true,
+        "songs_applied": [],
+        "source_occurrence_id": "occ_59180208dc287804"
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

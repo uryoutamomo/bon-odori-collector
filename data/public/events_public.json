@@ -6874,8 +6874,8 @@
     "address": "東京都新宿区新宿5-17-3",
     "lat": null,
     "lng": null,
-    "date": "2025-08-01",
-    "date_end": "2025-08-02",
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -6897,224 +6897,155 @@
       "8": "上旬"
     },
     "description": "",
-    "detail": "",
-    "source_urls": [
-      {
-        "label": "告知HPあり",
-        "url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/",
-        "kind": "web",
-        "count": 1
-      }
-    ],
+    "detail": "2026年8月1日（土）〜2日（日）18:45〜21:15。雨天時は8月4日まで順延。複数の地域・イベント案内サイトの当年情報が一致。",
+    "source_urls": [],
     "songs": [
       {
         "name": "八木節",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "DESIRE -情熱",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "きよしのズンドコ節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "りんご節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ズンパ音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ドンパン節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "宝っこ音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭1",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭2",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭コンクール 予選決勝",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "浪花節だよ人生は",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新宿音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-01〜2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.55,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:神社"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-01",
-      "2025-08-02"
+      "2026-08-01",
+      "2026-08-02"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-01",
-        "2025-08-02"
-      ],
-      "label": "2025-08-01〜2025-08-02実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.55,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:神社"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-01",
-        "date_end": "2026-08-02",
-        "method": "fixed_date",
-        "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
-        "source_date": "2025-08-01",
-        "source_date_end": "2025-08-02",
-        "duration_days": 2,
-        "rule_type": "fixed_date_range",
-        "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-01",
-      "2025-08-02"
-    ],
-    "historical_reference_label": "2025-08-01〜2025-08-02実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.55,
-    "historical_slide": {
-      "date": "2026-08-01",
-      "date_end": "2026-08-02",
-      "method": "fixed_date",
-      "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
-      "source_date": "2025-08-01",
-      "source_date_end": "2025-08-02",
-      "duration_days": 2,
-      "rule_type": "fixed_date_range",
-      "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
-    },
-    "historical_slide_date": "2026-08-01",
-    "historical_slide_date_end": "2026-08-02",
-    "historical_slide_method": "fixed_date",
-    "historical_slide_basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
-    "predicted_date": "2026-08-01",
-    "predicted_date_end": "2026-08-02",
-    "prediction_basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
@@ -8913,14 +8844,14 @@
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-29〜2026-07-31",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-29〜2026-07-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -11854,6 +11785,73 @@
     "season_confidence": "lowest"
   },
   {
+    "name": "八名川地区連合町会 納涼音頭大会",
+    "name_confirmed": true,
+    "venue": "八名川公園",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区新大橋3-1-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-30",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        30
+      ],
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "7": "下旬",
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年7月30日〜8月1日 18:30〜21:00。名称から盆踊り・音頭行事と確認。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-30〜2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-30",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "辰巳で盆踊り",
     "name_confirmed": true,
     "venue": "区立第二辰巳小学校",
@@ -11944,6 +11942,200 @@
     },
     "season_hint_label": "5月中旬",
     "season_confidence": "lowest"
+  },
+  {
+    "name": "大島スカイハイツ 夏まつり",
+    "name_confirmed": true,
+    "venue": "大島スカイハイツ",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区東砂1-3-2",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日 10:00〜16:00。盆踊りの実施有無は未確認。昼開催のため盆踊り実施の可能性は低い。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "海辺町会 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "川南海辺公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区海辺1-3",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日〜2日 19:00〜21:00。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "盆踊り東陽四丁目連合",
+    "name_confirmed": true,
+    "venue": "文化センターコミュニティ中庭",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区東陽4-11-3",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日〜2日 18:30〜20:30。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "東陽一丁目町会 盆踊り大会",
@@ -12139,6 +12331,139 @@
     "display_tier": "ended"
   },
   {
+    "name": "東大島神社 納涼祭",
+    "name_confirmed": true,
+    "venue": "東大島神社",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区大島7-24-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "令和8年（2026年）開催。2026年8月1日〜2日 18:30〜21:00。盆踊りの実施有無は未確認。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "枝川二・三丁目町会 枝川の夏まつり",
+    "name_confirmed": true,
+    "venue": "枝川小学校",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区枝川3-5-3",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-31",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        31
+      ],
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "7": "下旬",
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年7月31日〜8月1日 17:30〜、枝川小学校校庭。盆踊りの実施有無は未確認。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-31〜2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-31",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "森下二丁目盆踊り",
     "name_confirmed": true,
     "venue": "森下公園",
@@ -12297,6 +12622,72 @@
     "season_confidence": "lowest"
   },
   {
+    "name": "洲崎神社祭礼",
+    "name_confirmed": true,
+    "venue": "洲崎神社",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区木場6-13-13",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日〜2日 17:30〜。盆踊りの実施有無は未確認。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "木場一・六町会 盆踊り大会",
     "name_confirmed": true,
     "venue": "深川ギャザリアセンタープラザ",
@@ -12363,6 +12754,139 @@
     "display_tier": "ended"
   },
   {
+    "name": "深川一丁目 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "深川一丁目児童遊園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区深川1-3",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日〜2日 18:00〜21:00。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "大島一・二丁目町会 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "第一大島小学校",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区大島2-41-4",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-31",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        31
+      ],
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "7": "下旬",
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年7月31日〜8月1日 18:00〜20:30。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-31〜2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-31",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "都の辰巳深川 臨海ぼんおどり",
     "name_confirmed": true,
     "venue": "臨海小学校",
@@ -12427,6 +12951,68 @@
       "2026-07-19"
     ],
     "display_tier": "ended"
+  },
+  {
+    "name": "豊洲123丁目連合会 豊洲ふれあい納涼祭",
+    "name_confirmed": true,
+    "venue": "豊洲三丁目公園",
+    "area": "江東区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江東区豊洲3-5-11",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年は第14回。2026年8月1日 17:30〜21:00。盆踊りの実施有無は未確認。根拠：",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "盆踊 〜BONDO〜",
@@ -16849,14 +17435,14 @@
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-30〜2026-07-31",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-30〜2026-07-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -17010,14 +17596,14 @@
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-31",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -22540,14 +23126,14 @@
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-30〜2026-07-31",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-30〜2026-07-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -22672,14 +23258,14 @@
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-30〜2026-07-31",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-30〜2026-07-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
