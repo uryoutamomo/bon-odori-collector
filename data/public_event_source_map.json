@@ -233,11 +233,11 @@
       "venue_id": "ven_995ac6aca5a8b2f9"
     },
     {
-      "public_event_key": "濱町音頭盆踊り大会|浜町公園|2025-09-27|",
+      "public_event_key": "濱町音頭盆踊り大会|浜町公園|2026-09-26|2026-09-26",
       "name": "濱町音頭盆踊り大会",
       "venue": "浜町公園",
-      "date": "2025-09-27",
-      "date_end": "",
+      "date": "2026-09-26",
+      "date_end": "2026-09-26",
       "source": "master_rdb",
       "occurrence_id": "occ_1a4d1fa95a29cc39",
       "series_id": "ser_94b2c41e84fad260",
@@ -1301,11 +1301,11 @@
       "venue_id": "ven_4841416eec0bedc4"
     },
     {
-      "public_event_key": "森下二丁目盆踊り|森下公園|2025-07-19|2025-07-20",
+      "public_event_key": "森下二丁目盆踊り|森下公園|2026-07-18|2026-07-19",
       "name": "森下二丁目盆踊り",
       "venue": "森下公園",
-      "date": "2025-07-19",
-      "date_end": "2025-07-20",
+      "date": "2026-07-18",
+      "date_end": "2026-07-19",
       "source": "master_rdb",
       "occurrence_id": "occ_69ee7abd5466f5fd",
       "series_id": "ser_1a3ab17f2d87fd89",
@@ -1337,11 +1337,11 @@
       "venue_id": "ven_2985baea4a511ed8"
     },
     {
-      "public_event_key": "都の辰巳深川 臨海ぼんおどり|臨海小学校|2025-07-19|",
+      "public_event_key": "都の辰巳深川 臨海ぼんおどり|臨海小学校|2026-07-18|2026-07-19",
       "name": "都の辰巳深川 臨海ぼんおどり",
       "venue": "臨海小学校",
-      "date": "2025-07-19",
-      "date_end": "",
+      "date": "2026-07-18",
+      "date_end": "2026-07-19",
       "source": "master_rdb",
       "occurrence_id": "occ_56b5ccafaa074788",
       "series_id": "ser_d4cf73876d270a29",

@@ -697,6 +697,30 @@
       "site_sha256": "c18e6e064ecfcd5feb24229d6832cd0d4b3d4993c1c29e8c2f5fff2038541e5c",
       "collector_sha256": "ffc9d39df3bb5fa2961b3e523c647c69479c5b06ebeaad5de5405f3db8d491d6",
       "reason": "2026-07-31: 2026-07-30の終了後、日次ended遷移により表示区分をupcoming/confirmedからendedへ更新。イベント名・会場・日程は不変。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-hamacho-date-confirmation-ec77577ae243",
+      "kind": "same_key_update",
+      "event_key": "濱町音頭盆踊り大会||浜町公園",
+      "site_sha256": "aaece7d2a65fd1fe1176c7c118570457bd7498eedc664aa4258fe9927263b000",
+      "collector_sha256": "ec77577ae243c48e0784ecdbf635e96d7c6d37a0fed6a6a23c70547ba896a76a",
+      "reason": "2026-07-31: 2026-09-26の開催日を当年根拠で確定。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-morishita-date-confirmation-addddaf12ee9",
+      "kind": "same_key_update",
+      "event_key": "森下二丁目盆踊り||森下公園",
+      "site_sha256": "9bb2e11e89f68cc84bacaceff1f3313db5c28d7ebe7b0e997eaf1742cc73073b",
+      "collector_sha256": "addddaf12ee9cd3478badb9cf26766d1f82409991c382b798ace27bff275842c",
+      "reason": "2026-07-31: 2026-07-18〜19の開催日・時刻を当年根拠で確定。終了済み表示を含む。ことレビューおよび内田さん明示GO。"
+    },
+    {
+      "id": "reviewed-rinkai-date-confirmation-a086686d5ac3",
+      "kind": "same_key_update",
+      "event_key": "都の辰巳深川 臨海ぼんおどり||臨海小学校",
+      "site_sha256": "2e7cb90e9c18f2b5005c489f3fcb357bd81b0d6d238df25b69d4915720122e1a",
+      "collector_sha256": "a086686d5ac3d8b03acc59938479abe753efb424951277f0f79356425d534725",
+      "reason": "2026-07-31: 2026-07-18〜19の開催日・時刻を当年根拠で確定。終了済み表示を含む。ことレビューおよび内田さん明示GO。"
     }
   ]
 }

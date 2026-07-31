@@ -1,0 +1,154 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-31T14:51:19.803999+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/koto_date_fill_hamacho_morishita_rinkai_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260731T145119.803999+0000.sqlite.bak",
+    "json": "data/koto_date_fill_hamacho_morishita_rinkai_2026_apply_report.json",
+    "markdown": "data/koto_date_fill_hamacho_morishita_rinkai_2026_apply_report.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 274,
+      "event_series": 259,
+      "event_series_aliases": 24,
+      "evidence_items": 31314,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 327,
+      "occurrence_evidence_links": 132,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 466,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 319,
+      "venues": 259,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-07-31T23:20:00+09:00",
+    "source": {
+      "report_id": "koto_date_fill_hamacho_morishita_rinkai_2026",
+      "title": "2026年開催情報の確認（濱町音頭・森下二丁目・臨海ぼんおどり）",
+      "account_key": "こと（Claude Code）による当年Web調査",
+      "raw_text": "濱町音頭盆踊り大会：2026年9月26日（土）、浜町公園（中央区日本橋浜町2-59）、主催は浜町音頭保存会、予備日9月27日。港区盆踊りブログの2026年度一覧（出典表記：日本橋経済新聞）で確認。時刻は未確認。森下二丁目盆踊り：2026年7月18日（土）〜19日（日）18:30〜21:00、森下公園（江東区森下2-5-16）。都の辰巳深川 臨海ぼんおどり：2026年7月18日（土）〜19日（日）18:00〜20:00、臨海小学校校庭（江東区門前仲町1-1-6）。後二者は江東区の2026年盆踊り・夏祭り開催情報で確認。",
+      "url": "https://minamisuna1.com/37573/",
+      "notice_kind": "third_party_current_year"
+    },
+    "events": [
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_1a4d1fa95a29cc39",
+        "date_start": "2026-09-26",
+        "venue": {
+          "name": "浜町公園",
+          "area": "中央区",
+          "address": "東京都中央区日本橋浜町2丁目59"
+        },
+        "detail_addendum": "2026年9月26日（土）開催、予備日9月27日。主催：浜町音頭保存会。時刻は未確認のため未登録。根拠：https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html （2026年度一覧・出典表記は日本橋経済新聞）。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_69ee7abd5466f5fd",
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-19",
+        "venue": {
+          "name": "森下公園",
+          "area": "江東区",
+          "address": "東京都江東区森下2-5-16"
+        },
+        "detail_addendum": "2026年7月18日（土）〜19日（日）18:30〜21:00。根拠：https://minamisuna1.com/37573/"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_56b5ccafaa074788",
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-19",
+        "venue": {
+          "name": "臨海小学校",
+          "area": "江東区",
+          "address": "東京都江東区門前仲町一丁目1番6号"
+        },
+        "detail_addendum": "2026年7月18日（土）〜19日（日）18:00〜20:00、臨海小学校校庭。根拠：https://minamisuna1.com/37573/"
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_e6afdb858d5177fa",
+    "events_applied": [
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_1a4d1fa95a29cc39",
+        "changed_fields": [
+          "current_event_state",
+          "venue_id",
+          "date_start",
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_69ee7abd5466f5fd",
+        "changed_fields": [
+          "current_event_state",
+          "venue_id",
+          "date_start",
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_56b5ccafaa074788",
+        "changed_fields": [
+          "current_event_state",
+          "venue_id",
+          "date_start",
+          "detail"
+        ],
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

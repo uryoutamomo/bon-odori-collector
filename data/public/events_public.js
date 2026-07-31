@@ -1948,31 +1948,31 @@ const EVENTS = [
     "address": "東京都中央区日本橋浜町2丁目59",
     "lat": null,
     "lng": null,
-    "date": "2025-09-27",
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-09-26",
+    "date_end": "2026-09-26",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         9,
-        27
+        26
       ]
     ],
     "jun": {
       "9": "下旬"
     },
     "description": "浜町音頭保存会が主催する、地元ゆかりの「濱町音頭」を踊り継ぐ大会。浜町公園の秋の風物詩。",
-    "detail": "",
+    "detail": "2026年9月26日（土）開催、予備日9月27日。主催：浜町音頭保存会。時刻は未確認のため未登録。根拠： （2026年度一覧・出典表記は日本橋経済新聞）。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "告知投稿あり",
         "url": "https://tokyofesta.com/23ku/25652/",
-        "kind": "web",
+        "kind": "post",
         "count": 1
       }
     ],
@@ -1982,81 +1982,25 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-09-27。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.55,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-26",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:盆踊り大会"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-09-27"
+      "2026-09-26",
+      "2026-09-26"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-09-27"
-      ],
-      "label": "2025-09-27実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.55,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:盆踊り大会"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-09-26",
-        "date_end": "2026-09-26",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-09-27",
-        "source_date_end": null,
-        "duration_days": 1
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-09-27"
-    ],
-    "historical_reference_label": "2025-09-27実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.55,
-    "historical_slide": {
-      "date": "2026-09-26",
-      "date_end": "2026-09-26",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-09-27",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-09-26",
-    "historical_slide_date_end": "2026-09-26",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-09-26",
-    "predicted_date_end": "2026-09-26",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "築地本願寺納涼盆踊り大会",
@@ -12208,30 +12152,30 @@ const EVENTS = [
     "address": "東京都江東区森下2-5-16",
     "lat": null,
     "lng": null,
-    "date": "2025-07-19",
-    "date_end": "2025-07-20",
-    "status": "未確認",
+    "date": "2026-07-18",
+    "date_end": "2026-07-19",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         7,
-        19
+        18
       ],
       [
         7,
-        20
+        19
       ]
     ],
     "jun": {
       "7": "中旬"
     },
     "description": "森下公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-19 開催実績。2025 7/19 - 20。森下二丁目町会 「森下二丁目盆踊り」 7/19(土)-20(日) 18:30-21:00。",
+    "detail": "2025-07-19 開催実績。2025 7/19 - 20。森下二丁目町会 「森下二丁目盆踊り」 7/19(土)-20(日) 18:30-21:00。 2026年7月18日（土）〜19日（日）18:30〜21:00。根拠：",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -12241,61 +12185,25 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-07-19〜2025-07-20。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.6,
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-18〜2026-07-19",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:町会"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-07-19",
-      "2025-07-20"
+      "2026-07-18",
+      "2026-07-19"
     ],
-    "display_tier": "historical_reference",
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19",
-        "2025-07-20"
-      ],
-      "label": "2025-07-19〜2025-07-20実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.6,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:町会"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-07-19",
-      "2025-07-20"
-    ],
-    "historical_reference_label": "2025-07-19〜2025-07-20実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6
+    "display_tier": "ended"
   },
   {
     "name": "江東天祖神社の盆踊り（名称推定）",
@@ -12468,16 +12376,20 @@ const EVENTS = [
     "address": "東京都江東区門前仲町一丁目1番6号",
     "lat": null,
     "lng": null,
-    "date": "2025-07-19",
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-18",
+    "date_end": "2026-07-19",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
+      [
+        7,
+        18
+      ],
       [
         7,
         19
@@ -12487,7 +12399,7 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "臨海小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-19 開催実績。2025 7/19 - 20。臨海ぼんおどり実行委員会 「都の辰巳深川 臨海ぼんおどり」 7月19日(土)-20日(日) 。 (2024年は 18:00-20:00)",
+    "detail": "2025-07-19 開催実績。2025 7/19 - 20。臨海ぼんおどり実行委員会 「都の辰巳深川 臨海ぼんおどり」 7月19日(土)-20日(日) 。 (2024年は 18:00-20:00) 2026年7月18日（土）〜19日（日）18:00〜20:00、臨海小学校校庭。根拠：",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -12497,56 +12409,25 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.56,
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-18〜2026-07-19",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-07-19"
+      "2026-07-18",
+      "2026-07-19"
     ],
-    "display_tier": "historical_reference",
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19"
-      ],
-      "label": "2025-07-19実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.56,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-07-19"
-    ],
-    "historical_reference_label": "2025-07-19実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.56
+    "display_tier": "ended"
   },
   {
     "name": "盆踊 〜BONDO〜",
