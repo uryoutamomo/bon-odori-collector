@@ -8842,10 +8842,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-07-29〜2026-07-31",
     "recurrence_label": "2026年開催終了",
@@ -8860,7 +8860,7 @@
       "2026-07-29",
       "2026-07-31"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "東本願寺盆踊り",
@@ -18713,10 +18713,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-07-30〜2026-07-31",
     "recurrence_label": "2026年開催終了",
@@ -18731,7 +18731,7 @@
       "2026-07-30",
       "2026-07-31"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
@@ -18874,10 +18874,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-07-31",
     "recurrence_label": "2026年開催終了",
@@ -18892,7 +18892,7 @@
       "2026-07-31",
       "2026-07-31"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "砧町町会「納涼夏祭り大会」",
@@ -24590,10 +24590,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-07-30〜2026-07-31",
     "recurrence_label": "2026年開催終了",
@@ -24608,7 +24608,7 @@
       "2026-07-30",
       "2026-07-31"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "緑町会 夏祭り盆踊り大会",
@@ -24920,10 +24920,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-07-30〜2026-07-31",
     "recurrence_label": "2026年開催終了",
@@ -24938,7 +24938,7 @@
       "2026-07-30",
       "2026-07-31"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "諏訪神社盆踊り",

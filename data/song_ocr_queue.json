@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 45,
+  "count": 46,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -711,6 +711,24 @@
         "https://pbs.twimg.com/media/HOZfmGxbkAAF6Vw.jpg"
       ],
       "text": "埼玉県戸田市の鍛冶屋町会の盆踊りへ行って来ました\n埼京線・戸田公園駅で下車\n徒歩10分鍛冶屋公園\n［曲目］\n戸田音頭､東京音頭､炭坑節\n仲良しシャンシャン\nきよしのズンドコ節\n火の国太鼓\n日光和楽踊り､八木節\nとても楽しかったです。 https://t.co/A0sSWIZfGw",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "e1a9a75120641420",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2083209227037036882",
+      "tweet_id": "2083209227037036882",
+      "date": "2026-07-31T15:12:38+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2083175446699716608/img/3KAVISv-LvLpc69v.jpg",
+        "https://t.co/5LLrs6LC47",
+        "pic.x.com/5LLrs6LC47",
+        "https://pbs.twimg.com/amplify_video_thumb/2083178781821501440/img/-41fyLjZJSQE0o26.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2083180036744683520/img/mQZ5e4A44_X9tCoR.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2083200450854359040/img/XShBQvdEsl3KjV_F.jpg"
+      ],
+      "text": "2026年7月31日(金)\n千葉県白井市\n白井市立白井第二小学校\nみどりの里 納涼盆踊り大会\n\n昨年は雨\n2024年「真似して踊ってみたら踊れたわ。ありがとう」と言ってくださった80代位の方と再会を願いましたが会えず。\n\n【曲目】\n白井音頭\n日光和楽おどり\nはるみの花笠ばやし\nバハマ・ママ\n炭坑節\n大東京音頭 https://t.co/5LLrs6LC47",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
