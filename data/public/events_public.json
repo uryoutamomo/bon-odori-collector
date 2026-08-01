@@ -24359,6 +24359,192 @@
     "display_tier": "ended"
   },
   {
+    "name": "カデンツァゆかた祭り",
+    "name_confirmed": true,
+    "venue": "ホテルカデンツァ東京",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区高松5-8",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-02",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "元の告知表記は『カデンツァゆかた祭り2026』。開催時間：11:00〜16:30。主催：ホテルカデンツァ東京。屋内の縁日、ワークショップ、屋台、ねり丸グリーティング。縁日会場は前売300円・当日500円、3歳以下無料。盆踊りの実施有無は未確認。時間帯と内容からして盆踊りの可能性は低い。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-02",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "上石神井地区祭",
+    "name_confirmed": true,
+    "venue": "上石神井小学校",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区上石神井4-10-9",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "開催時間：16:00〜20:30。主催：上石神井地区委員会。雨天時は8月23日（日）の同時間に順延。盆踊りの実施有無は未確認。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "大泉西地区祭",
+    "name_confirmed": true,
+    "venue": "四面塔稲荷神社",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区西大泉5丁目",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "開催時間：16:00〜21:00。雨天時は8月30日（日）の同時間に順延。主催団体は記事に記載なし。盆踊りの実施有無は未確認。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-29"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "大松氷川神社 納涼盆踊り大会",
     "name_confirmed": true,
     "venue": "大松氷川神社",
@@ -24421,6 +24607,204 @@
     "last_seen_dates": [
       "2026-07-30",
       "2026-07-31"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "緑町会 夏祭り盆踊り大会",
+    "name_confirmed": true,
+    "venue": "大泉公園",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区大泉学園町6-26-26",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "開催時間：17:30〜20:30。主催：緑町会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "北大泉商栄会 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "大泉第一小学校",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区大泉町3-16-23",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "開催時間：18:00〜。主催：北大泉商栄会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "銀河の夜の盆踊り大会",
+    "name_confirmed": true,
+    "venue": "妙延寺",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区東大泉3-16-5",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "開催時間：8月7日16:00〜20:30、8月8日15:00〜20:00。主催：東大泉商栄会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
     ],
     "display_tier": "confirmed"
   },
@@ -24553,6 +24937,72 @@
     "last_seen_dates": [
       "2026-07-30",
       "2026-07-31"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "諏訪神社盆踊り",
+    "name_confirmed": true,
+    "venue": "諏訪神社",
+    "area": "練馬区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都練馬区氷川台2-3-12",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-30",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ],
+      [
+        8,
+        30
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "開催時間：18:00〜20:30。主催：仲一自治会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-30"
     ],
     "display_tier": "confirmed"
   },

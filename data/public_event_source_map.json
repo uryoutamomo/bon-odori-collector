@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 251,
-  "mapped_count": 251,
+  "public_event_count": 258,
+  "mapped_count": 258,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -2861,6 +2861,42 @@
       "venue_id": "ven_9c821f578bc45705"
     },
     {
+      "public_event_key": "カデンツァゆかた祭り|ホテルカデンツァ東京|2026-08-02|2026-08-02",
+      "name": "カデンツァゆかた祭り",
+      "venue": "ホテルカデンツァ東京",
+      "date": "2026-08-02",
+      "date_end": "2026-08-02",
+      "source": "master_rdb",
+      "occurrence_id": "occ_fb7e3ca703163fed",
+      "series_id": "series_86cd1e0c9f545a5e",
+      "event_year": 2026,
+      "venue_id": "venue_c2c9675b00ed64ff"
+    },
+    {
+      "public_event_key": "上石神井地区祭|上石神井小学校|2026-08-22|2026-08-22",
+      "name": "上石神井地区祭",
+      "venue": "上石神井小学校",
+      "date": "2026-08-22",
+      "date_end": "2026-08-22",
+      "source": "master_rdb",
+      "occurrence_id": "occ_87e5370ab1521e66",
+      "series_id": "series_9ec4d7d31c58a66e",
+      "event_year": 2026,
+      "venue_id": "venue_fc7d2b5087c6be16"
+    },
+    {
+      "public_event_key": "大泉西地区祭|四面塔稲荷神社|2026-08-29|2026-08-29",
+      "name": "大泉西地区祭",
+      "venue": "四面塔稲荷神社",
+      "date": "2026-08-29",
+      "date_end": "2026-08-29",
+      "source": "master_rdb",
+      "occurrence_id": "occ_6da8ac3466c3051a",
+      "series_id": "series_f9330b5e5369c897",
+      "event_year": 2026,
+      "venue_id": "venue_82340fba0375f219"
+    },
+    {
       "public_event_key": "大松氷川神社 納涼盆踊り大会|大松氷川神社|2026-07-30|2026-07-31",
       "name": "大松氷川神社 納涼盆踊り大会",
       "venue": "大松氷川神社",
@@ -2871,6 +2907,42 @@
       "series_id": "series_63efe485680d4700",
       "event_year": 2026,
       "venue_id": "venue_42e4657158c37155"
+    },
+    {
+      "public_event_key": "緑町会 夏祭り盆踊り大会|大泉公園|2026-08-21|2026-08-22",
+      "name": "緑町会 夏祭り盆踊り大会",
+      "venue": "大泉公園",
+      "date": "2026-08-21",
+      "date_end": "2026-08-22",
+      "source": "master_rdb",
+      "occurrence_id": "occ_8f33de55bc5484d1",
+      "series_id": "series_2b0e80c4c8398277",
+      "event_year": 2026,
+      "venue_id": "venue_e479a4401ea6f99a"
+    },
+    {
+      "public_event_key": "北大泉商栄会 納涼盆踊り大会|大泉第一小学校|2026-08-07|2026-08-08",
+      "name": "北大泉商栄会 納涼盆踊り大会",
+      "venue": "大泉第一小学校",
+      "date": "2026-08-07",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_833412c94433491f",
+      "series_id": "series_293113a7c228a493",
+      "event_year": 2026,
+      "venue_id": "venue_a80330d04bfb4569"
+    },
+    {
+      "public_event_key": "銀河の夜の盆踊り大会|妙延寺|2026-08-07|2026-08-08",
+      "name": "銀河の夜の盆踊り大会",
+      "venue": "妙延寺",
+      "date": "2026-08-07",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_d761cd6a2e37d826",
+      "series_id": "series_0821390013e0097f",
+      "event_year": 2026,
+      "venue_id": "venue_9a42416952b82050"
     },
     {
       "public_event_key": "春日町盆踊り大会|春日神社|2026-08-01|2026-08-02",
@@ -2895,6 +2967,18 @@
       "series_id": "series_c79cce1f4d22de5e",
       "event_year": 2026,
       "venue_id": "venue_9820ad549973172b"
+    },
+    {
+      "public_event_key": "諏訪神社盆踊り|諏訪神社|2026-08-29|2026-08-30",
+      "name": "諏訪神社盆踊り",
+      "venue": "諏訪神社",
+      "date": "2026-08-29",
+      "date_end": "2026-08-30",
+      "source": "master_rdb",
+      "occurrence_id": "occ_dbfeeb7ead962df0",
+      "series_id": "series_0b95ee92bcc1a0fd",
+      "event_year": 2026,
+      "venue_id": "venue_0e200b994254f600"
     },
     {
       "public_event_key": "西綾瀬町会 夏祭り盆踊り大会|五反野コミュニティ公園|2025-06-21|",

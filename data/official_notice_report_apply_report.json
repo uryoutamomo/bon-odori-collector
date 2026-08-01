@@ -1,15 +1,15 @@
 {
   "generated_by": "apply_official_notice_report.py",
-  "generated_at": "2026-07-30T12:54:04.403646+00:00",
+  "generated_at": "2026-08-01T01:24:14.102396+00:00",
   "mode": "apply",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "report": "data/official_notice_reports/x_poster_nakarokugo_noryokai_2026.json"
+    "report": "data/official_notice_reports/nerima_august_first_wave_2026.json"
   },
   "outputs": {
     "target_db": "data/bon_odori_master.sqlite",
     "dry_run_db": "",
-    "backup_db": "data/backups/bon_odori_master.20260730T125404.403646+0000.sqlite.bak",
+    "backup_db": "data/backups/bon_odori_master.20260801T012414.102396+0000.sqlite.bak",
     "json": "data/official_notice_report_apply_report.json",
     "markdown": "data/official_notice_report_apply_report.md"
   },
@@ -24,73 +24,207 @@
   "summary": {
     "issues_count": 0,
     "issues_by_severity": {},
-    "audit_issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
     "table_counts": {
       "event_investigation_tasks": 79,
-      "event_occurrences": 274,
-      "event_series": 259,
+      "event_occurrences": 312,
+      "event_series": 296,
       "event_series_aliases": 24,
-      "evidence_items": 31312,
+      "evidence_items": 31318,
       "external_record_links": 2654,
       "historical_promotion_candidates": 16,
       "master_meta": 0,
       "notion_sync_jobs": 0,
       "observed_occurrence_songs": 30883,
       "observed_occurrences": 2164,
-      "occurrence_dates": 324,
-      "occurrence_evidence_links": 128,
+      "occurrence_dates": 365,
+      "occurrence_evidence_links": 170,
       "occurrence_song_evidence_links": 1008,
       "occurrence_songs": 820,
       "predicted_occurrence_dates": 14,
-      "review_inbox_items": 455,
+      "review_inbox_items": 466,
       "schema_migrations": 4,
       "song_aliases": 141,
       "songs": 394,
-      "venue_aliases": 318,
-      "venues": 258,
+      "venue_aliases": 355,
+      "venues": 295,
       "write_batches": 0
     }
   },
   "report": {
     "report_type": "official_notice",
-    "reported_at": "2026-07-30T19:30:00+09:00",
+    "reported_at": "2026-08-01T10:15:00+09:00",
     "source": {
-      "report_id": "x_poster_nakarokugo_noryokai_2026",
-      "title": "仲六郷一丁目町会 納涼会（2026年）案内",
-      "account_key": "おーたふる 大田区商店街ナビ",
-      "raw_text": "仲六郷一丁目町会「納涼会」。日時：2026年8月1日(土) 17:00〜20:00、雨天中止。会場：大田区シルバー人材センター前。所在地：東京都大田区仲六郷1-6-9-125。交通：JR京浜東北線ほか蒲田駅から徒歩15分。焼きそば、フランクフルト、飲み物など模擬店が多数。主催者名：仲六郷一丁目町会。",
-      "url": "https://otakushoren.com/event/153027",
-      "notice_kind": "official_current_year"
+      "report_id": "nerima_august_first_wave_2026",
+      "title": "練馬区議会議員 佐藤力 公式サイト『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』",
+      "account_key": "練馬区議会議員 佐藤力 公式サイト",
+      "url": "https://satoriki.net/blog/8424/",
+      "notice_kind": "third_party_current_year",
+      "raw_text": "2026年7月21日更新。北大泉商栄会：納涼盆踊り大会／大泉第一小学校（練馬区大泉町3-16-23）／8月7日・8日 18:00〜。東大泉商栄会：銀河の夜の盆踊り大会／妙延寺（練馬区東大泉3-16-5）／8月7日 16:00〜20:30、8月8日 15:00〜20:00。緑町会：夏祭り盆踊り大会／大泉公園（練馬区大泉学園町6-26-26）／8月21日・22日 17:30〜20:30。上石神井地区委員会：上石神井地区祭／上石神井小学校（練馬区上石神井4-10-9）／8月22日 16:00〜20:30、雨天時は8月23日の同時間に順延。大泉西地区祭（西大泉）／四面塔稲荷神社（練馬区西大泉5丁目）／8月29日 16:00〜21:00、雨天時は8月30日の同時間に順延、主催者情報は公式案内を確認。仲一自治会：諏訪神社盆踊り／諏訪神社（練馬区氷川台2-3-12）／8月29日・30日 18:00〜20:30。ホテルカデンツァ東京：カデンツァゆかた祭り2026／ホテルカデンツァ東京（練馬区高松5-8）／8月2日 11:00〜16:30、屋内の縁日・ワークショップ・屋台・ねり丸グリーティング、縁日会場は前売300円・当日500円、3歳以下無料。"
     },
     "events": [
       {
         "action": "register_new",
-        "event_name_hint": "仲六郷一丁目町会 納涼会",
-        "series_name": "仲六郷一丁目町会 納涼会",
+        "event_name_hint": "北大泉商栄会 納涼盆踊り大会",
         "event_year": 2026,
-        "date_start": "2026-08-01",
-        "date_end": "2026-08-01",
+        "date_start": "2026-08-07",
+        "date_end": "2026-08-08",
         "venue": {
-          "name": "大田区シルバー人材センター前",
-          "area": "大田区",
-          "address": "東京都大田区仲六郷1-6-9-125",
-          "access": "蒲田駅から徒歩15分"
+          "name": "大泉第一小学校",
+          "area": "練馬区",
+          "address": "東京都練馬区大泉町3-16-23"
         },
-        "detail_addendum": "2026年8月1日17:00〜20:00、雨天中止。仲六郷一丁目町会主催。焼きそば、フランクフルト、飲み物などの模擬店あり。大田区商店街連合会の告知より。",
-        "songs": []
+        "detail_addendum": "開催時間：18:00〜。主催：北大泉商栄会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "銀河の夜の盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-08-07",
+        "date_end": "2026-08-08",
+        "venue": {
+          "name": "妙延寺",
+          "area": "練馬区",
+          "address": "東京都練馬区東大泉3-16-5"
+        },
+        "detail_addendum": "開催時間：8月7日16:00〜20:30、8月8日15:00〜20:00。主催：東大泉商栄会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "緑町会 夏祭り盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-08-21",
+        "date_end": "2026-08-22",
+        "venue": {
+          "name": "大泉公園",
+          "area": "練馬区",
+          "address": "東京都練馬区大泉学園町6-26-26"
+        },
+        "detail_addendum": "開催時間：17:30〜20:30。主催：緑町会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "上石神井地区祭",
+        "event_year": 2026,
+        "date_start": "2026-08-22",
+        "venue": {
+          "name": "上石神井小学校",
+          "area": "練馬区",
+          "address": "東京都練馬区上石神井4-10-9"
+        },
+        "detail_addendum": "開催時間：16:00〜20:30。主催：上石神井地区委員会。雨天時は8月23日（日）の同時間に順延。盆踊りの実施有無は未確認。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "大泉西地区祭",
+        "event_year": 2026,
+        "date_start": "2026-08-29",
+        "venue": {
+          "name": "四面塔稲荷神社",
+          "area": "練馬区",
+          "address": "東京都練馬区西大泉5丁目"
+        },
+        "detail_addendum": "開催時間：16:00〜21:00。雨天時は8月30日（日）の同時間に順延。主催団体は記事に記載なし。盆踊りの実施有無は未確認。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "諏訪神社盆踊り",
+        "event_year": 2026,
+        "date_start": "2026-08-29",
+        "date_end": "2026-08-30",
+        "venue": {
+          "name": "諏訪神社",
+          "area": "練馬区",
+          "address": "東京都練馬区氷川台2-3-12"
+        },
+        "detail_addendum": "開催時間：18:00〜20:30。主催：仲一自治会。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "カデンツァゆかた祭り",
+        "event_year": 2026,
+        "date_start": "2026-08-02",
+        "venue": {
+          "name": "ホテルカデンツァ東京",
+          "area": "練馬区",
+          "address": "東京都練馬区高松5-8"
+        },
+        "detail_addendum": "元の告知表記は『カデンツァゆかた祭り2026』。開催時間：11:00〜16:30。主催：ホテルカデンツァ東京。屋内の縁日、ワークショップ、屋台、ねり丸グリーティング。縁日会場は前売300円・当日500円、3歳以下無料。盆踊りの実施有無は未確認。時間帯と内容からして盆踊りの可能性は低い。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（https://satoriki.net/blog/8424/）。"
       }
     ]
   },
   "applied": {
     "resolved": true,
-    "evidence_id": "ev_b8b204fe293afe44",
+    "evidence_id": "ev_4c8a6937e5e426a3",
     "events_applied": [
       {
         "action": "register_new",
-        "series_id": "series_62fc7a282c40f31b",
+        "series_id": "series_293113a7c228a493",
         "series_created": true,
-        "occurrence_id": "occ_17eabcbe2b6ba4ea",
-        "venue_id": "venue_b79698d26e45ac8d",
+        "occurrence_id": "occ_833412c94433491f",
+        "venue_id": "venue_a80330d04bfb4569",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_0821390013e0097f",
+        "series_created": true,
+        "occurrence_id": "occ_d761cd6a2e37d826",
+        "venue_id": "venue_9a42416952b82050",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_2b0e80c4c8398277",
+        "series_created": true,
+        "occurrence_id": "occ_8f33de55bc5484d1",
+        "venue_id": "venue_e479a4401ea6f99a",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_9ec4d7d31c58a66e",
+        "series_created": true,
+        "occurrence_id": "occ_87e5370ab1521e66",
+        "venue_id": "venue_fc7d2b5087c6be16",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_f9330b5e5369c897",
+        "series_created": true,
+        "occurrence_id": "occ_6da8ac3466c3051a",
+        "venue_id": "venue_82340fba0375f219",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_0b95ee92bcc1a0fd",
+        "series_created": true,
+        "occurrence_id": "occ_dbfeeb7ead962df0",
+        "venue_id": "venue_0e200b994254f600",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_86cd1e0c9f545a5e",
+        "series_created": true,
+        "occurrence_id": "occ_fb7e3ca703163fed",
+        "venue_id": "venue_c2c9675b00ed64ff",
         "venue_status": "created",
         "occurrence_created": true,
         "songs_applied": []
@@ -101,9 +235,13 @@
   },
   "issues": [],
   "audit": {
-    "issue_count": 0,
-    "issues_by_severity": {},
-    "issues_by_type": {}
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
   },
   "public_json_write": {
     "enabled": false,
