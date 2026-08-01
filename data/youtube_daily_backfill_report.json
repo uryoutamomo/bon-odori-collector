@@ -1,14 +1,14 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-07-31T21:02:56.132635+00:00",
+  "generated_at": "2026-08-01T20:51:19.378345+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 49,
+  "selected_rows": 51,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 45,
-  "estimated_search_calls": 98,
-  "candidates_before": 576,
+  "remaining_rows_after": 43,
+  "estimated_search_calls": 102,
+  "candidates_before": 577,
   "selected": [
     {
       "queue_id": "youtube-year-backfill:2bb32005a3f74bc3",
@@ -335,37 +335,6 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:3d5a8517fb197ecb",
-      "target_year": 2023,
-      "priority_score": 15,
-      "priority": "low",
-      "event_name": "戸越宮前盆踊り",
-      "venue": "宮前小学校",
-      "area": "品川区",
-      "series_key": "6c95b3cfb74d",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2026-06-07",
-      "public_date_end": "",
-      "last_seen_year": null,
-      "last_seen_dates": [
-        "2026-06-07"
-      ],
-      "recurrence_label": "2026年開催終了",
-      "recurrence_score": 0.98,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "high_recurrence_score"
-      ],
-      "search_queries": [
-        "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
-        "戸越宮前盆踊り 2023 YouTube 盆踊り",
-        "宮前小学校 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
       "queue_id": "youtube-year-backfill:804cab8073565d95",
       "target_year": 2024,
       "priority_score": 8,
@@ -393,6 +362,37 @@
         "西綾瀬町会 夏祭り盆踊り大会 五反野コミュニティ公園 足立区 2024 盆踊り",
         "西綾瀬町会 夏祭り盆踊り大会 2024 YouTube 盆踊り",
         "五反野コミュニティ公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:3d5a8517fb197ecb",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "series_key": "6c95b3cfb74d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-07",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-07"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
+        "戸越宮前盆踊り 2023 YouTube 盆踊り",
+        "宮前小学校 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -1562,9 +1562,71 @@
         "羽田神社 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f5f2d06d4bbfaeeb",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
+      "venue": "下代田児童遊園",
+      "area": "世田谷区",
+      "series_key": "9224bbb8cead",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "下代田東町会 「下代田東子供祭り・納涼祭り」 下代田児童遊園 世田谷区 2024 盆踊り",
+        "下代田東町会 「下代田東子供祭り・納涼祭り」 2024 YouTube 盆踊り",
+        "下代田児童遊園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e074329eacdbdc5e",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "下落合四丁目町会 盆踊り大会",
+      "venue": "下落合公園",
+      "area": "新宿区",
+      "series_key": "76ad35a78278",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "下落合四丁目町会 盆踊り大会 下落合公園 新宿区 2024 盆踊り",
+        "下落合四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
+        "下落合公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 48,
+  "completed_batches": 50,
   "batches": [
     {
       "batch": 1,
@@ -1579,7 +1641,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1596,7 +1658,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1613,7 +1675,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1630,7 +1692,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1647,7 +1709,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1664,7 +1726,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1681,7 +1743,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1700,7 +1762,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1719,7 +1781,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1738,7 +1800,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 576,
+      "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1747,7 +1809,7 @@
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:3d5a8517fb197ecb"
+        "youtube-year-backfill:804cab8073565d95"
       ],
       "fresh_summary": {
         "candidate_count": 5,
@@ -1766,7 +1828,7 @@
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:804cab8073565d95"
+        "youtube-year-backfill:3d5a8517fb197ecb"
       ],
       "fresh_summary": {
         "candidate_count": 5,
@@ -2395,6 +2457,44 @@
       "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
+    },
+    {
+      "batch": 49,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:2ab649320f07944c"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 577,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 50,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:f5f2d06d4bbfaeeb"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 577,
+      "strong_count": 183,
+      "review_count": 48
     }
   ],
   "error": "HTTP Error 429: Too Many Requests (rateLimitExceeded)",
@@ -2404,8 +2504,8 @@
     "event occurrence backfill applied: added=0 updated=29 observations=53 series_3year=4",
     "event schedule rules: target_year=2026 rules=13 axes={'date': 1, 'near_date': 2, 'weekday': 6, 'weekday_near_date': 2, 'weekend_near_date': 2}",
     "event date predictions: target_year=2026 predictions=13 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 4, 'weekend_near_day': 2}",
-    "曲 occurrence 生成完了: occurrences=472 relations=2959 -> data/song_occurrences.json",
-    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 251 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 251 件（240 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 61 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
+    "曲 occurrence 生成完了: occurrences=479 relations=2959 -> data/song_occurrences.json",
+    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 258 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 258 件（247 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 61 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
   "candidates_after": 577,
@@ -2424,5 +2524,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-01 youtube_candidates=577 review=48 history_rows=36"
+  "ops_metrics": "ops metrics: date=2026-08-02 youtube_candidates=577 review=48 history_rows=37"
 }
