@@ -1,14 +1,17 @@
+import json
+import os
 import tempfile
 import unittest
-import os
 from datetime import date
 from pathlib import Path
+from types import SimpleNamespace
 
 from public_json_postprocessors.guard_public_events_sync import (
     DATA,
     REVIEWED_APPROVALS,
     apply_reviewed_exact_approvals,
     append_github_summary,
+    build,
     canonical_event_sha256,
     classify_rows,
     flow_artifact_warnings,
@@ -17,6 +20,71 @@ from public_json_postprocessors.guard_public_events_sync import (
 
 
 class PublicEventsSyncGuardTest(unittest.TestCase):
+    def run_build(self, collector_rows, site_rows, approvals, *, today="2026-07-31"):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            collector_events = tmp / "collector.json"
+            site_events = tmp / "site.json"
+            fixed_date_rules = tmp / "fixed-date-rules.json"
+            reviewed_approvals = tmp / "approvals.json"
+            collector_events.write_text(
+                json.dumps(collector_rows, ensure_ascii=False), encoding="utf-8"
+            )
+            site_events.write_text(
+                json.dumps(site_rows, ensure_ascii=False), encoding="utf-8"
+            )
+            fixed_date_rules.write_text('{"rules": []}', encoding="utf-8")
+            reviewed_approvals.write_text(
+                json.dumps(
+                    {
+                        "schema": "public_sync_exact_approvals_v1",
+                        "approvals": approvals,
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            return build(
+                SimpleNamespace(
+                    collector_events=collector_events,
+                    site_events=site_events,
+                    fixed_date_rules=fixed_date_rules,
+                    reviewed_approvals=reviewed_approvals,
+                    target_year=2026,
+                    today=today,
+                    allow_individual_review=False,
+                    master_db=tmp / "missing-master.sqlite",
+                    publication_gap_review=tmp / "missing-gap-review.json",
+                    out_json=tmp / "guard.json",
+                    out_md=tmp / "guard.md",
+                )
+            )
+
+    def same_key_approval(self, reviewed_site, reviewed_collector):
+        return {
+            "id": "review-1",
+            "kind": "same_key_update",
+            "event_key": f"{reviewed_site['name']}||{reviewed_site['venue']}",
+            "site_sha256": canonical_event_sha256(reviewed_site),
+            "collector_sha256": canonical_event_sha256(reviewed_collector),
+        }
+
+    def published_event(self):
+        return {
+            "name": "承認済み盆踊り",
+            "venue": "確認公園",
+            "date": "2026-07-28",
+            "date_end": "2026-07-29",
+            "public_category": "upcoming",
+            "display_tier": "confirmed",
+            "current_event_state": "confirmed",
+            "date_certainty_tier": "confirmed",
+        }
+
+    def consumed_same_key_approval(self, published_event):
+        reviewed_site = {**published_event, "detail": "承認前の値"}
+        return self.same_key_approval(reviewed_site, published_event)
+
     def test_default_data_paths_are_relative_to_the_guard_script(self):
         expected_data = Path(__file__).resolve().parents[1] / "data"
 
@@ -50,6 +118,45 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(rejected["summary"]["status"], "block")
         self.assertEqual(rejected["summary"]["status_counts"], {"hash_mismatch": 1})
         self.assertEqual(rejected["site_rows"], [drifted_site])
+
+    def test_same_key_approval_is_consumed_when_approved_value_is_already_on_site(self):
+        published = self.published_event()
+        collector = {
+            **published,
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [self.consumed_same_key_approval(published)],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([collector], [published], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "pass")
+        self.assertEqual(
+            reviewed["summary"]["status_counts"], {"consumed_at_site": 1}
+        )
+        self.assertEqual(reviewed["summary"]["failure_count"], 0)
+        self.assertEqual(reviewed["site_rows"], [published])
+
+    def test_same_key_approval_rejects_an_unrecognized_third_site_value(self):
+        published = self.published_event()
+        collector = {**published, "date_end": "2026-07-30"}
+        third_site_value = {**published, "detail": "承認後の別変更"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [self.consumed_same_key_approval(published)],
+        }
+
+        reviewed = apply_reviewed_exact_approvals(
+            [collector], [third_site_value], payload
+        )
+
+        self.assertEqual(reviewed["summary"]["status"], "block")
+        self.assertEqual(reviewed["summary"]["status_counts"], {"hash_mismatch": 1})
+        self.assertEqual(reviewed["site_rows"], [third_site_value])
 
     def test_exact_key_replacement_preserves_event_count_and_resolves_keys(self):
         site = {"name": "第15回 盆踊り", "venue": "大学", "display_tier": "rule_predicted"}
@@ -439,6 +546,206 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             classified["summary"]["events_by_action"], {"ended_transition_downgrade": 1}
         )
         self.assertEqual(classified["event_rows"][0]["ended_transition_end_date"], "2026-07-29")
+
+    def test_build_allows_consumed_approval_to_flow_into_ended_transition(self):
+        published = self.published_event()
+        collector = {
+            **published,
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+
+        result = self.run_build(
+            [collector],
+            [published],
+            [self.consumed_same_key_approval(published)],
+        )
+
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"consumed_at_site": 1},
+        )
+        self.assertEqual(
+            result["approved_classification"]["events_by_action"],
+            {"ended_transition_downgrade": 1},
+        )
+        self.assertEqual(result["ended_transition_downgrades"][0]["ended_on"], "2026-07-29")
+        self.assertEqual(result["blocking_examples"], [])
+
+    def test_build_allows_same_recurrence_score_bucket_after_consumed_approval(self):
+        published = {**self.published_event(), "recurrence_score": 0.76}
+        collector = {**published, "recurrence_score": 0.78}
+
+        result = self.run_build(
+            [collector],
+            [published],
+            [self.consumed_same_key_approval(published)],
+        )
+
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"consumed_at_site": 1},
+        )
+        self.assertEqual(
+            result["approved_classification"]["events_by_action"],
+            {"low_priority_or_unclassified": 1},
+        )
+
+    def test_build_blocks_recurrence_score_bucket_crossing_after_consumed_approval(self):
+        published = {**self.published_event(), "recurrence_score": 0.76}
+        collector = {**published, "recurrence_score": 0.80}
+
+        result = self.run_build(
+            [collector],
+            [published],
+            [self.consumed_same_key_approval(published)],
+        )
+
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn("individual_review_diffs_remain", result["decision"]["failures"])
+        self.assertEqual(
+            result["approved_classification"]["events_by_action"],
+            {"individual_review": 1},
+        )
+
+    def test_build_blocks_date_or_date_end_drift_after_consumed_approval(self):
+        published = self.published_event()
+        cases = {
+            "date": {**published, "date": "2026-07-29"},
+            "date_end": {**published, "date_end": "2026-07-30"},
+        }
+
+        for field, collector in cases.items():
+            with self.subTest(field=field):
+                result = self.run_build(
+                    [collector],
+                    [published],
+                    [self.consumed_same_key_approval(published)],
+                )
+
+                self.assertEqual(result["decision"]["status"], "block")
+                self.assertIn(
+                    "individual_review_diffs_remain", result["decision"]["failures"]
+                )
+                self.assertEqual(
+                    result["approved_classification"]["events_by_action"],
+                    {"individual_review": 1},
+                )
+
+    def test_build_blocks_detail_and_source_drift_after_consumed_approval(self):
+        published = {
+            **self.published_event(),
+            "detail": "承認済み詳細",
+            "source_urls": [{"url": "https://example.com/reviewed"}],
+        }
+        collector = {
+            **published,
+            "detail": "未承認の詳細",
+            "source_urls": [{"url": "https://example.com/drifted"}],
+        }
+
+        result = self.run_build(
+            [collector],
+            [published],
+            [self.consumed_same_key_approval(published)],
+        )
+
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn("individual_review_diffs_remain", result["decision"]["failures"])
+        blocking = result["blocking_examples"][0]
+        self.assertEqual(blocking["recommended_action"], "individual_review")
+        self.assertEqual(set(blocking["families"]), {"detail", "source"})
+
+    def test_build_blocks_unsafe_ended_transition_variants(self):
+        published = self.published_event()
+        cases = {
+            "ending_today": (
+                {**published, "date_end": "2026-07-31"},
+                {
+                    **published,
+                    "date_end": "2026-07-31",
+                    "public_category": "ended",
+                    "display_tier": "ended",
+                    "current_event_state": "ended",
+                },
+            ),
+            "reverse_transition": (
+                {
+                    **published,
+                    "public_category": "ended",
+                    "display_tier": "ended",
+                    "current_event_state": "ended",
+                },
+                published,
+            ),
+            "invalid_public_category": (
+                published,
+                {
+                    **published,
+                    "public_category": "date_unknown",
+                    "display_tier": "season_hint",
+                    "current_event_state": "predicted",
+                    "date_certainty_tier": "season_hint",
+                },
+            ),
+        }
+
+        for case, (site, collector) in cases.items():
+            with self.subTest(case=case):
+                result = self.run_build(
+                    [collector],
+                    [site],
+                    [self.consumed_same_key_approval(site)],
+                )
+
+                self.assertEqual(result["decision"]["status"], "block")
+                self.assertIn(
+                    "individual_review_diffs_remain", result["decision"]["failures"]
+                )
+                self.assertEqual(
+                    result["approved_classification"]["events_by_action"],
+                    {"individual_review": 1},
+                )
+
+    def test_build_reports_already_synced_after_site_catches_up(self):
+        published = self.published_event()
+        collector = {
+            **published,
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+
+        result = self.run_build(
+            [collector],
+            [collector],
+            [self.consumed_same_key_approval(published)],
+        )
+
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"already_synced": 1},
+        )
+        self.assertEqual(result["approved_classification"]["events_by_action"], {})
+
+    def test_build_rejects_drift_before_the_reviewed_value_was_published(self):
+        published = self.published_event()
+        original_site = {**published, "detail": "承認前の値"}
+        collector = {**published, "date_end": "2026-07-30"}
+        approval = self.same_key_approval(original_site, published)
+
+        result = self.run_build([collector], [original_site], [approval])
+
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"hash_mismatch": 1},
+        )
 
     def test_ended_transition_on_today_still_requires_review(self):
         site = {

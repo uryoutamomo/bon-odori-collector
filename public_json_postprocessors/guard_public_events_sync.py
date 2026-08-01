@@ -211,6 +211,14 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
                     result["status"] = "applied"
                     results.append(result)
                     continue
+                if site_hash == approval.get("collector_sha256"):
+                    # The previously approved collector value is already live.
+                    # Keep that site snapshot so any later collector drift is
+                    # evaluated by the normal diff classifier instead of being
+                    # hidden by reapplying a stale approval.
+                    result["status"] = "consumed_at_site"
+                    results.append(result)
+                    continue
             result["status"] = "hash_mismatch"
             results.append(result)
             continue
