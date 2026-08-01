@@ -1,8 +1,8 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-07-31",
-  "reviewed_by": "おと（Codex）・内田さんGO（過去改名24件の現行内容を再承認、佃島の盆踊り公開反映）",
-  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと）",
+  "reviewed_at": "2026-08-01",
+  "reviewed_by": "こと（Claude Code）・内田さんGO（7/31終了イベント5件の消費済み承認を除去）",
+  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと） / 2026-08-01: 7/31に開催終了した5件（御徒町公園の盆踊り大会・道塚盆踊り・盆踊りフェス・大松氷川神社 納涼盆踊り大会・旭町一丁目町会 盆踊り）の same_key_update 承認を除去。7/29の登録時点から site・collector 双方が更新済みで承認は消費済みになっており、残置すると upcoming→ended の表示変更が reviewed_exact_approval_mismatch で公開同期を止め続けるため（2026-08-01の sync-public-data 失敗の直接原因）。差分は表示区分3フィールドのみで日付は不変、guard 側は ended_transition_downgrade として自動許可済み。内田さん明示GO。",
   "site_base_commit": "472d6b931991e66df6d18753d0f83e63a25328a3",
   "collector_data_commit": "164d952",
   "approvals": [
@@ -554,30 +554,6 @@
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
-      "id": "reviewed-addition-20260729-2eabdec53304",
-      "kind": "same_key_update",
-      "event_key": "御徒町公園の盆踊り大会||御徒町公園",
-      "site_sha256": "2eabdec53304b153b08b9f6cfa0885d65a9cb55d2b314e5947bb51cb75430532",
-      "collector_sha256": "232bc65a4135300af5390e997210bd32b9e55a2bd1e1a92ea88028d4dc098aa9",
-      "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。投稿本文に正式名称が無く、会場名を冠した暫定名。"
-    },
-    {
-      "id": "reviewed-addition-20260729-357d2226528e",
-      "kind": "same_key_update",
-      "event_key": "道塚盆踊り||道塚小学校校庭",
-      "site_sha256": "357d2226528ef6606dceedb53cf98ee0c35f160fba68c8f95a6dae30b41567c1",
-      "collector_sha256": "6fc09125307e406c75af44ac9aa85675929bf9418e3cbf204aa221e7342854ce",
-      "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
-    },
-    {
-      "id": "reviewed-addition-20260729-f11ea4329a72",
-      "kind": "same_key_update",
-      "event_key": "盆踊りフェス||ゆうぽうと世田谷レクセンター 駐車場",
-      "site_sha256": "f11ea4329a72ece8010408bd9c7b2b785fb00b0e82eba4ddc357b0e6d074ea84",
-      "collector_sha256": "403155c7f4e65c12b041a10b7e5c662e8ae1ee11b60cc7218fe552029e6280b6",
-      "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
-    },
-    {
       "id": "reviewed-addition-20260729-59d9e3a9685d",
       "kind": "addition",
       "event_key": "からすやま夏まつり 盆踊り大会||烏山区民センター前広場",
@@ -585,26 +561,10 @@
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
-      "id": "reviewed-addition-20260729-098fda38f766",
-      "kind": "same_key_update",
-      "event_key": "大松氷川神社 納涼盆踊り大会||大松氷川神社",
-      "site_sha256": "098fda38f766e61d3b31d4009691ca9547507b528dae8689053d11799ea0b9d6",
-      "collector_sha256": "a2db00af91fef0f2559f75e75147ad33b3f5bb73eb2805a37aa0c425b44ac944",
-      "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
-    },
-    {
       "id": "reviewed-addition-20260729-093a155c3fec",
       "kind": "addition",
       "event_key": "春日町盆踊り大会||春日神社",
       "collector_sha256": "093a155c3fec9e2fc211ab5d66a2df521caff40d60ebfceae3299e930ee33dae",
-      "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
-    },
-    {
-      "id": "reviewed-addition-20260729-3e63c4350175",
-      "kind": "same_key_update",
-      "event_key": "旭町一丁目町会 盆踊り||本覚寺",
-      "site_sha256": "3e63c43501753fa815b741c313b166abaa9bbb95965db782caa93c103a5f327a",
-      "collector_sha256": "89a633e66fd25fc8bbc2915da320b9561df8ba786518ce6168c620df3a2875af",
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
