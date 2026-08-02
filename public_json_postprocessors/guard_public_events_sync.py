@@ -245,6 +245,15 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
                 result["status"] = "already_synced"
                 results.append(result)
                 continue
+            if new_site_hash == approval.get("collector_sha256"):
+                # The reviewed rename has already reached the site: the old
+                # key is absent and the replacement still equals the exact
+                # approved collector snapshot.  Keep it for normal diff
+                # classification so a later collector transition is never
+                # hidden by replaying the stale approval.
+                result["status"] = "consumed_at_site"
+                results.append(result)
+                continue
         if collector_event is not None and old_site_event is not None and new_site_event is None:
             collector_hash = canonical_event_sha256(collector_event)
             old_site_hash = canonical_event_sha256(old_site_event)

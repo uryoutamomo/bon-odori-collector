@@ -381,7 +381,16 @@ def expired_historical_slide_downgrade(records):
 
 def ended_transition_downgrade(records, collector_event, site_event, today):
     """Allow only a completed occurrence's one-way tier downgrade."""
-    allowed_fields = {"display_tier", "historical_display_tier"}
+    # These recurrence fields are generated from the same observed occurrence
+    # state as ``ended``.  They may change on the day an occurrence is marked
+    # complete, but do not carry a new schedule.  Date/date_end deliberately
+    # remain outside this allow-list and are checked for exact equality below.
+    allowed_fields = {
+        "display_tier",
+        "historical_display_tier",
+        "recurrence_score",
+        "recurrence_reasons",
+    }
     high_risk_changes = set(changed_fields(collector_event, site_event)) & HIGH_RISK_FIELDS
     if not high_risk_changes or not high_risk_changes.issubset(allowed_fields):
         return False
@@ -395,6 +404,15 @@ def ended_transition_downgrade(records, collector_event, site_event, today):
         return False
     if any(collector_event.get(field) != site_event.get(field) for field in ("date", "date_end")):
         return False
+
+    if "recurrence_score" in high_risk_changes:
+        try:
+            # A completed occurrence can strengthen recurrence evidence, but
+            # an unexplained weakening still needs individual review.
+            if float(collector_event["recurrence_score"]) < float(site_event["recurrence_score"]):
+                return False
+        except (KeyError, TypeError, ValueError):
+            return False
 
     end_value = collector_event.get("date_end") or collector_event.get("date")
     if not isinstance(end_value, str) or not end_value:
