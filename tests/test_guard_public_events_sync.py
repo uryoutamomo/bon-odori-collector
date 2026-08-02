@@ -184,6 +184,53 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(classified["summary"]["collector_only_count"], 0)
         self.assertEqual(classified["summary"]["site_only_count"], 0)
 
+    def test_key_replacement_approval_is_consumed_when_renamed_value_is_already_on_site(self):
+        old_site = {"name": "第15回 盆踊り", "venue": "大学", "display_tier": "confirmed"}
+        published = {"name": "盆踊り", "venue": "大学", "display_tier": "confirmed"}
+        collector = {**published, "display_tier": "ended"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "replacement-1",
+                    "kind": "key_replacement",
+                    "site_event_key": "第15回 盆踊り||大学",
+                    "collector_event_key": "盆踊り||大学",
+                    "site_sha256": canonical_event_sha256(old_site),
+                    "collector_sha256": canonical_event_sha256(published),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([collector], [published], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "pass")
+        self.assertEqual(reviewed["summary"]["status_counts"], {"consumed_at_site": 1})
+        self.assertEqual(reviewed["site_rows"], [published])
+
+    def test_key_replacement_consumed_path_rejects_when_old_key_still_exists(self):
+        old_site = {"name": "第15回 盆踊り", "venue": "大学", "display_tier": "confirmed"}
+        published = {"name": "盆踊り", "venue": "大学", "display_tier": "confirmed"}
+        collector = {**published, "display_tier": "ended"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "replacement-1",
+                    "kind": "key_replacement",
+                    "site_event_key": "第15回 盆踊り||大学",
+                    "collector_event_key": "盆踊り||大学",
+                    "site_sha256": canonical_event_sha256(old_site),
+                    "collector_sha256": canonical_event_sha256(published),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([collector], [old_site, published], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "block")
+        self.assertEqual(reviewed["summary"]["status_counts"], {"hash_mismatch": 1})
+
     def test_exact_addition_approval_adds_collector_only_event_at_pinned_hash(self):
         collector_event = {"name": "新規盆踊り", "venue": "商店街", "display_tier": "confirmed"}
         existing = {"name": "既存イベント", "venue": "別会場"}
@@ -546,6 +593,33 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             classified["summary"]["events_by_action"], {"ended_transition_downgrade": 1}
         )
         self.assertEqual(classified["event_rows"][0]["ended_transition_end_date"], "2026-07-29")
+
+    def test_ended_transition_allows_only_non_decreasing_recurrence_update(self):
+        site = {
+            "name": "完了した盆踊り",
+            "venue": "テスト公園",
+            "date": "2026-07-28",
+            "date_end": "2026-07-29",
+            "display_tier": "confirmed",
+            "public_category": "upcoming",
+            "recurrence_score": 0.95,
+            "recurrence_reasons": ["2026年日付確認済み"],
+        }
+        collector = {
+            **site,
+            "display_tier": "ended",
+            "public_category": "ended",
+            "recurrence_score": 0.98,
+            "recurrence_reasons": ["2026年開催済み"],
+        }
+
+        classified = classify_rows([collector], [site], today=date(2026, 7, 31))
+
+        self.assertEqual(classified["event_rows"][0]["recommended_action"], "ended_transition_downgrade")
+
+        downgraded = {**collector, "recurrence_score": 0.90}
+        rejected = classify_rows([downgraded], [site], today=date(2026, 7, 31))
+        self.assertEqual(rejected["event_rows"][0]["recommended_action"], "individual_review")
 
     def test_build_allows_consumed_approval_to_flow_into_ended_transition(self):
         published = self.published_event()
