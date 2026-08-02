@@ -1,9 +1,9 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_gap_candidates.json",
-  "input_sha256": "26d0137c6f5bf11350317b024ffaa96fa55e00fa2da39da89c6d3302a59292f5",
-  "input_size_bytes": 8460,
-  "item_count": 3,
+  "input_sha256": "eabcbbb2ddfb4d9d1624fd68dfff627f6f8a4e61811ba2cc575564e96599e027",
+  "input_size_bytes": 10586,
+  "item_count": 4,
   "items": [
     {
       "kind": "x_gap",
@@ -139,6 +139,71 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_357f444a4e92f9d1"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 300,
+      "title": "第7回 渋谷盆踊り",
+      "event_name": "第7回 渋谷盆踊り",
+      "venue": "渋谷109前",
+      "event_year": 2026,
+      "source_key": "x:2083718943743922375",
+      "source_url": "https://x.com/nikuku_119/status/2083718943743922375",
+      "recommended_action": "review_schedule_change",
+      "payload": {
+        "candidate_id": "xgap_cbec4c1a66712811",
+        "source_key": "x:2083718943743922375",
+        "lane_hint": "lane2",
+        "candidate_kind": "schedule_change",
+        "priority_score": 300,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_ce162e8dbe6cdf52",
+          "event_name": "第7回 渋谷盆踊り",
+          "venue": "渋谷109前",
+          "matched_aliases": [
+            "渋谷盆踊り",
+            "渋谷盆踊り"
+          ]
+        },
+        "source_url": "https://x.com/nikuku_119/status/2083718943743922375",
+        "source_text": "\n次回のゴミ拾い活動は、8月8日土曜日のPM17:00〜PM21:00に渋谷駅周辺(渋谷盆踊り2026会場周辺)にて行う予定です。なお、予備日がないため、ゲリラ雷雨などの悪天候時や、渋谷盆踊り2026が中止の場合はゴミ拾い活動についても中止となります。",
+        "source_author": "@nikuku_119",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@nikuku_119",
+          "account_name": "にくく消防119",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月8日"
+        ],
+        "voice": {
+          "source": "x",
+          "account": "@nikuku_119",
+          "name": "にくく消防119",
+          "title": "",
+          "text": "次回のゴミ拾い活動は、8月8日土曜日のPM17:00〜PM21:00に渋谷駅周辺(渋谷盆踊り2026会場周辺)にて行う予定です。なお、予備日がないため、ゲリラ雷雨などの悪天候時や、渋谷盆踊り2026が中止の場合はゴミ拾い活動についても中止となります。",
+          "url": "https://x.com/nikuku_119/status/2083718943743922375",
+          "date": "2026-08-02T00:58:04+00:00",
+          "tweet_id": "2083718943743922375",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ]
+        }
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_22cd0235807f513d"
     },
     {
       "kind": "x_gap",

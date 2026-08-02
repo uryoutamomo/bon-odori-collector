@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 46,
+  "count": 50,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -729,6 +729,72 @@
         "https://pbs.twimg.com/amplify_video_thumb/2083200450854359040/img/XShBQvdEsl3KjV_F.jpg"
       ],
       "text": "2026年7月31日(金)\n千葉県白井市\n白井市立白井第二小学校\nみどりの里 納涼盆踊り大会\n\n昨年は雨\n2024年「真似して踊ってみたら踊れたわ。ありがとう」と言ってくださった80代位の方と再会を願いましたが会えず。\n\n【曲目】\n白井音頭\n日光和楽おどり\nはるみの花笠ばやし\nバハマ・ママ\n炭坑節\n大東京音頭 https://t.co/5LLrs6LC47",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "a2e0d16ba4d2e6a1",
+      "status": "needs_ocr",
+      "account": "@mukaibunkaharu",
+      "url": "https://x.com/mukaibunkaharu/status/2083545417355010159",
+      "tweet_id": "2083545417355010159",
+      "date": "2026-08-01T13:28:32+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOo9XoabwAAHVl_.jpg",
+        "https://t.co/SyIh7PbyVC",
+        "pic.x.com/SyIh7PbyVC",
+        "https://pbs.twimg.com/media/HOo9XqPaUAAAQHA.jpg",
+        "https://pbs.twimg.com/ext_tw_video_thumb/2083545345963995136/pu/img/bAxFsXkaH5KqwNWb.jpg"
+      ],
+      "text": "２日目の龍雲寺盆踊り\n駐車場お借りしての開催\n曲が１週した頃に小雨が降り、\n８時まで中止\nその後雨が止み\n後半開始\n１日目に本番で流さなかった\n大東京音頭でアンコール起きて\n２曲目突入!\n太鼓のリズムが善き音色となった\n鉦を夢中で鳴らしてしまい\n踊るタイミングを逃してしまった\n鉦の長老様、レクチャーして下さり\n誠に有り難う御座いました\n来年忘れていなければよろしくお願いします",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "3059ecf96fd73f4c",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2083723176295743561",
+      "tweet_id": "2083723176295743561",
+      "date": "2026-08-02T01:14:53+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOrfLnNbUAAzVdh.jpg",
+        "https://t.co/N4T2znjBUr",
+        "pic.x.com/N4T2znjBUr"
+      ],
+      "text": "2026年8月1日(土)\n東京都荒川区／石濱神社\n石濱神社納涼大会\n\n【曲目】\n東京音頭\n大東京音頭\nたいとう音頭\n防災音頭\n炭坑節\n北海盆唄\n荒川音頭\n火の国太鼓\nふるさと音頭\nチャンチキおけさ\nご祝儀音頭\n燃えろ日本の夏祭り\n波乗りジョニー\n\n⬇会場へのアクセスメモ\n白髭橋周辺の素敵なロケーション✨ https://t.co/N4T2znjBUr",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "b22f2267c34fe6d0",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2083784504246964256",
+      "tweet_id": "2083784504246964256",
+      "date": "2026-08-02T05:18:35+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2083761857001893888/img/GNzHw_PK2Yq9pqAO.jpg",
+        "https://t.co/5iREO2xFWq",
+        "pic.x.com/5iREO2xFWq",
+        "https://pbs.twimg.com/amplify_video_thumb/2083762186158301184/img/Zct9b5viRGO5RceT.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2083779340018589696/img/3y4t9X_8er4wTk5c.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2083779521241911296/img/tiMQumteAHb2pF3D.jpg"
+      ],
+      "text": "2026年8月1日(土)\n東京都墨田区／両国駅前通り\n「両国町会夏祭り 盆踊り大会」\n\n★の曲で「フフー‼️フフー‼️」と🎤で合いの手が入るのが、密かな楽しみ🤗\n\n【曲目】\nきよしのズンドコ節\n炭坑節\n東京音頭\n花笠音頭\n東京スカイツリー音頭\nバハマママ★\nダンシングヒーロー★\n恋するフォーチュンクッキー https://t.co/5iREO2xFWq",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "4e9ddeb41663892e",
+      "status": "needs_ocr",
+      "account": "@tomony_op",
+      "url": "https://x.com/tomony_op/status/2083827081675473027",
+      "tweet_id": "2083827081675473027",
+      "date": "2026-08-02T08:07:46+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOs9eUXaQAAWuhc.jpg",
+        "https://t.co/0M3pJ3TAoH",
+        "pic.x.com/0M3pJ3TAoH",
+        "https://pbs.twimg.com/amplify_video_thumb/2083826843640270848/img/IBal7dDQsW25Jei_.jpg"
+      ],
+      "text": "毎年恒例中野の盆踊り、着いたらちょうどバンもんちゃんで、1曲目オトナノススメだったので歓喜♡踊りまくってたら撮るの忘れてたの巻😇 https://t.co/0M3pJ3TAoH",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

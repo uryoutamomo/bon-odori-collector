@@ -1,9 +1,9 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-01T08:51:39.010065+00:00",
+  "generated_at": "2026-08-02T08:54:30.241528+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
-  "candidate_count": 3,
+  "candidate_count": 4,
   "archived_count": 0,
   "candidates": [
     {
@@ -103,6 +103,55 @@
         "url": "https://x.com/tokyudoraemon/status/2083420860904521836",
         "date": "2026-08-01T05:13:35+00:00",
         "tweet_id": "2083420860904521836",
+        "tags": [
+          "🟡関心",
+          "q-cancel-change"
+        ]
+      }
+    },
+    {
+      "candidate_id": "xgap_cbec4c1a66712811",
+      "source_key": "x:2083718943743922375",
+      "lane_hint": "lane2",
+      "candidate_kind": "schedule_change",
+      "priority_score": 300,
+      "event_year": 2026,
+      "matched_occurrence": {
+        "occurrence_id": "occ_ce162e8dbe6cdf52",
+        "event_name": "第7回 渋谷盆踊り",
+        "venue": "渋谷109前",
+        "matched_aliases": [
+          "渋谷盆踊り",
+          "渋谷盆踊り"
+        ]
+      },
+      "source_url": "https://x.com/nikuku_119/status/2083718943743922375",
+      "source_text": "\n次回のゴミ拾い活動は、8月8日土曜日のPM17:00〜PM21:00に渋谷駅周辺(渋谷盆踊り2026会場周辺)にて行う予定です。なお、予備日がないため、ゲリラ雷雨などの悪天候時や、渋谷盆踊り2026が中止の場合はゴミ拾い活動についても中止となります。",
+      "source_author": "@nikuku_119",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@nikuku_119",
+        "account_name": "にくく消防119",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月8日"
+      ],
+      "voice": {
+        "source": "x",
+        "account": "@nikuku_119",
+        "name": "にくく消防119",
+        "title": "",
+        "text": "次回のゴミ拾い活動は、8月8日土曜日のPM17:00〜PM21:00に渋谷駅周辺(渋谷盆踊り2026会場周辺)にて行う予定です。なお、予備日がないため、ゲリラ雷雨などの悪天候時や、渋谷盆踊り2026が中止の場合はゴミ拾い活動についても中止となります。",
+        "url": "https://x.com/nikuku_119/status/2083718943743922375",
+        "date": "2026-08-02T00:58:04+00:00",
+        "tweet_id": "2083718943743922375",
         "tags": [
           "🟡関心",
           "q-cancel-change"
