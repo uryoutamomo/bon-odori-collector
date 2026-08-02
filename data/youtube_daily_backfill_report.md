@@ -1,13 +1,13 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-08-01T20:51:19.378345+00:00
+- generated_at: 2026-08-02T20:54:42.182328+00:00
 - status: harvested_until_quota_limited
 - month: 6
-- selected_rows: 51
-- completed_batches: 50
+- selected_rows: 54
+- completed_batches: 53
 - remaining_rows_before: 93
-- remaining_rows_after: 43
-- estimated_search_calls: 102
+- remaining_rows_after: 40
+- estimated_search_calls: 108
 - candidates_before: 577
 - candidates_after: 577
 - strong_after: 183
@@ -75,6 +75,9 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | low | 8 | 2024 | 羽田青年連合会 | 羽田神社 | 2025-07-13 |
 | low | 8 | 2024 | 下代田東町会 「下代田東子供祭り・納涼祭り」 | 下代田児童遊園 | 2025-07-19 |
 | low | 8 | 2024 | 下落合四丁目町会 盆踊り大会 | 下落合公園 | 2025-07-19 |
+| low | 8 | 2024 | 下落合町会知久会 第9回盆踊り | 清水川橋公園 | 2025-07-19 |
+| low | 8 | 2024 | 砧町町会「納涼夏祭り大会」 | 三峰公園 | 2025-07-19 |
+| low | 8 | 2024 | 西糀谷四丁目町会 盆踊り大会 | 西仲天祖神社 | 2025-07-21 |
 
 ## batches
 
@@ -130,3 +133,6 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | 48 | 1 | 577 | 183 | 48 |
 | 49 | 1 | 577 | 183 | 48 |
 | 50 | 1 | 577 | 183 | 48 |
+| 51 | 1 | 577 | 183 | 48 |
+| 52 | 1 | 577 | 183 | 48 |
+| 53 | 1 | 577 | 183 | 48 |

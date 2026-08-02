@@ -1,13 +1,13 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-01T20:51:19.378345+00:00",
+  "generated_at": "2026-08-02T20:54:42.182328+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 51,
+  "selected_rows": 54,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 43,
-  "estimated_search_calls": 102,
+  "remaining_rows_after": 40,
+  "estimated_search_calls": 108,
   "candidates_before": 577,
   "selected": [
     {
@@ -1624,9 +1624,102 @@
         "下落合公園 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:b1a933f8eb9d1f5f",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "下落合町会知久会 第9回盆踊り",
+      "venue": "清水川橋公園",
+      "area": "新宿区",
+      "series_key": "486dd42b8892",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.7,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "下落合町会知久会 第9回盆踊り 清水川橋公園 新宿区 2024 盆踊り",
+        "下落合町会知久会 第9回盆踊り 2024 YouTube 盆踊り",
+        "清水川橋公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:3e266855f01bbc54",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "砧町町会「納涼夏祭り大会」",
+      "venue": "三峰公園",
+      "area": "世田谷区",
+      "series_key": "01028eb70f59",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "砧町町会「納涼夏祭り大会」 三峰公園 世田谷区 2024 盆踊り",
+        "砧町町会「納涼夏祭り大会」 2024 YouTube 盆踊り",
+        "三峰公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5bb0e328527d5408",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西糀谷四丁目町会 盆踊り大会",
+      "venue": "西仲天祖神社",
+      "area": "大田区",
+      "series_key": "ccf1a2f8f2bb",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2024 盆踊り",
+        "西糀谷四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
+        "西仲天祖神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 50,
+  "completed_batches": 53,
   "batches": [
     {
       "batch": 1,
@@ -1831,9 +1924,9 @@
         "youtube-year-backfill:3d5a8517fb197ecb"
       ],
       "fresh_summary": {
-        "candidate_count": 5,
+        "candidate_count": 4,
         "status_counts": {
-          "weak": 5
+          "weak": 4
         },
         "strong_count": 0,
         "review_count": 0
@@ -2495,6 +2588,59 @@
       "candidate_count": 577,
       "strong_count": 183,
       "review_count": 48
+    },
+    {
+      "batch": 51,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:e074329eacdbdc5e"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 577,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 52,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:b1a933f8eb9d1f5f"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 577,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 53,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:3e266855f01bbc54"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 577,
+      "strong_count": 183,
+      "review_count": 48
     }
   ],
   "error": "HTTP Error 429: Too Many Requests (rateLimitExceeded)",
@@ -2524,5 +2670,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-02 youtube_candidates=577 review=48 history_rows=37"
+  "ops_metrics": "ops metrics: date=2026-08-03 youtube_candidates=577 review=48 history_rows=38"
 }
