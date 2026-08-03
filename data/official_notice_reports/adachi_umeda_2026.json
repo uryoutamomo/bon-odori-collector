@@ -1,0 +1,48 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-03T23:10:00+09:00",
+  "source": {
+    "report_id": "adachi_umeda_2026",
+    "title": "足立区 梅田区民事務所管内 町会・自治会行事案内（2026年）",
+    "account_key": "足立区（梅田区民事務所）",
+    "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html",
+    "notice_kind": "official_current_year",
+    "raw_text": "梅田正和町会：納涼盆踊り／関原中央公園／7月17日・18日（17日は雨天中止）。梅田本町自治会：納涼盆踊り／梅田南公園／7月31日・8月1日。コープ野村梅島自治会：盆踊り大会／梅田七丁目児童遊園／8月22日。梅田神明町自治会：盆踊り／梅田公園／9月5日。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "梅田正和町会 納涼盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-17",
+      "date_end": "2026-07-18",
+      "venue": {"name": "関原中央公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：梅田正和町会。17日は雨天中止。7月開催のため登録時点で終了済み。出典：足立区 梅田区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "梅田本町自治会 納涼盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-01",
+      "venue": {"name": "梅田南公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：梅田本町自治会。7月31日〜8月1日開催のため登録時点で終了済み。出典：足立区 梅田区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "コープ野村梅島自治会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "venue": {"name": "梅田七丁目児童遊園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：コープ野村梅島自治会。出典：足立区 梅田区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "梅田神明町自治会 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-09-05",
+      "venue": {"name": "梅田公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：梅田神明町自治会。出典：足立区 梅田区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html）。"
+    }
+  ]
+}

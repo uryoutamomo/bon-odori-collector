@@ -1,0 +1,121 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-03T23:05:00+09:00",
+  "source": {
+    "report_id": "adachi_higashiayase_2026",
+    "title": "足立区 東綾瀬区民事務所管内 町会・自治会行事案内（2026年）",
+    "account_key": "足立区（東綾瀬区民事務所）",
+    "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html",
+    "notice_kind": "official_current_year",
+    "raw_text": "東淵江自治会：納涼盆踊り大会／稗田公園／7月10日・11日。東和一丁目自治会：納涼盆踊り大会／西沼公園／7月18日・19日。綾瀬五・六丁目自治会：納涼盆踊り大会／東綾瀬公園（綾瀬5-3）／7月18日・19日。普賢寺自治会：納涼盆踊り大会／北野公園／7月25日のみ実施（7月24日は中止）。蒲原自治会：納涼盆踊り大会／宮元公園／7月25日・26日。綾瀬自治会：納涼盆踊り大会／伊藤谷公園／7月25日・26日。綾瀬東町会：納涼盆踊り大会／蛭沼公園／7月31日・8月1日。上谷中町自治会：納涼盆踊り大会／しょうぶ沼公園／8月2日・3日。東綾瀬自治会：納涼盆踊り大会／東綾瀬公園（東綾瀬2-10）／8月6日・7日。加平町会：納涼盆踊り大会／加平第二公園／8月7日・8日。蒲谷自治会：納涼盆踊り大会／東綾瀬公園（東綾瀬3-4）／8月8日・9日。綾瀬三丁目自治会：納涼盆踊り大会／東綾瀬公園 はと広場／8月21日・22日。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "東淵江自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-10",
+      "date_end": "2026-07-11",
+      "venue": {"name": "稗田公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：東淵江自治会。7月開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "東和一丁目自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "venue": {"name": "西沼公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：東和一丁目自治会。7月開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "綾瀬五・六丁目自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "venue": {"name": "東綾瀬公園", "area": "足立区", "address": "東京都足立区綾瀬5-3"},
+      "detail_addendum": "主催：綾瀬五・六丁目自治会。会場は東綾瀬公園（綾瀬5-3側）。7月開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "普賢寺自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "venue": {"name": "北野公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：普賢寺自治会。7月25日のみ実施（7月24日は中止）。7月開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "蒲原自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "宮元公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：蒲原自治会。7月開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "綾瀬自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "伊藤谷公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：綾瀬自治会。7月開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "綾瀬東町会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-01",
+      "venue": {"name": "蛭沼公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：綾瀬東町会。7月31日〜8月1日開催のため登録時点で終了済み。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "上谷中町自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-02",
+      "date_end": "2026-08-03",
+      "venue": {"name": "しょうぶ沼公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：上谷中町自治会。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "東綾瀬自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-06",
+      "date_end": "2026-08-07",
+      "venue": {"name": "東綾瀬公園", "area": "足立区", "address": "東京都足立区東綾瀬2-10"},
+      "detail_addendum": "主催：東綾瀬自治会。会場は東綾瀬公園（東綾瀬2-10側）。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "加平町会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-07",
+      "date_end": "2026-08-08",
+      "venue": {"name": "加平第二公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：加平町会。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "蒲谷自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-08",
+      "date_end": "2026-08-09",
+      "venue": {"name": "東綾瀬公園", "area": "足立区", "address": "東京都足立区東綾瀬3-4"},
+      "detail_addendum": "主催：蒲谷自治会。会場は東綾瀬公園（東綾瀬3-4側）。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "綾瀬三丁目自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-22",
+      "venue": {"name": "東綾瀬公園 はと広場", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：綾瀬三丁目自治会。会場は東綾瀬公園のはと広場。出典：足立区 東綾瀬区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html）。"
+    }
+  ]
+}

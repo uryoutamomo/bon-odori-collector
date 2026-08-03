@@ -1,0 +1,32 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-03T23:15:00+09:00",
+  "source": {
+    "report_id": "adachi_nakagawa_2026",
+    "title": "足立区 中川区民事務所管内 町会・自治会行事案内（2026年）",
+    "account_key": "足立区（中川区民事務所）",
+    "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/chokai-nakagawa.html",
+    "notice_kind": "official_current_year",
+    "raw_text": "東和二丁目自治会・東和二丁目西自治会：納涼盆踊り大会／第六天公園／7月25日・26日。中川納涼大盆踊り大会（主催：足立区大谷田東自治会、隅田自治会、長門北部自治会、ファミール亀有壱番館自治会）／都立中川公園ふれあい広場／8月1日・2日。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "東和二丁目自治会・東和二丁目西自治会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "第六天公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：東和二丁目自治会・東和二丁目西自治会。7月開催のため登録時点で終了済み。出典：足立区 中川区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/chokai-nakagawa.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "中川納涼大盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "venue": {"name": "都立中川公園ふれあい広場", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：足立区大谷田東自治会、隅田自治会、長門北部自治会、ファミール亀有壱番館自治会。出典：足立区 中川区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/chokai-nakagawa.html）。"
+    }
+  ]
+}
