@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-02T20:55:11.772326+00:00",
+  "generated_at": "2026-08-03T21:01:48.464144+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 2,
+  "api_request_count_estimate": 3,
   "summary": {
-    "candidate_count": 577,
+    "candidate_count": 578,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 346
+      "weak": 347
     },
     "strong_count": 183,
     "review_count": 48
@@ -26853,6 +26853,30 @@
       "reasons": [
         "target_year_in_video"
       ],
+      "queue_id": "youtube-year-backfill:ba7db0101bcfc143",
+      "target_year": 2024,
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "ZXu3IODh-0U",
+      "video_url": "https://www.youtube.com/watch?v=ZXu3IODh-0U",
+      "title": "親分通りまーす！丸金 五代目浅草高橋組 #shorts #三社祭 #住吉会 #ヤクザ #暴力団 #yakuza",
+      "channel_id": "UCuCxyMbm9bEy-V850TZuAuw",
+      "channel_title": "攻めろおじさん",
+      "published_at": "2024-05-19T12:40:33Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZXu3IODh-0U/maxresdefault.jpg",
+      "query": "森ヶ崎自治会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "★関連動画★ 三社祭 2024【西浅三北】中村会 YAKUZA https://youtu.be/bei5T9AGhK4 暴力団事務所巡り https://youtube.com/playlist?list=PLFKGkZnk7TNvnmpYQljRVkHpU7N_2E8_U おすすめヤクザ映画 日本統一 ▼チャンネル登録＆いいね宜しくお願いします https://www.youtube.com/c/semeroojisan/videos?sub_confirmation=1 ※反社会的勢力を肯定、助長するものではありません。 #浅草 #三社祭 #ヤクザ #西浅三北 #和彫 #刺青 #暴力団 #住吉会 #yakuza"
+    },
+    {
+      "status": "weak",
+      "score": 21,
+      "reasons": [
+        "target_year_in_video"
+      ],
       "queue_id": "youtube-year-backfill:804cab8073565d95",
       "target_year": 2024,
       "event_name": "西綾瀬町会 夏祭り盆踊り大会",
@@ -28910,5 +28934,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-02T20:55:11.250367+00:00"
+  "merged_from": "2026-08-03T21:01:47.929899+00:00"
 }

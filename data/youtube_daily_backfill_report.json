@@ -1,13 +1,13 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-02T20:54:42.182328+00:00",
+  "generated_at": "2026-08-03T21:01:21.713014+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 54,
+  "selected_rows": 53,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 40,
-  "estimated_search_calls": 108,
+  "remaining_rows_after": 41,
+  "estimated_search_calls": 106,
   "candidates_before": 577,
   "selected": [
     {
@@ -1686,40 +1686,9 @@
         "三峰公園 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:5bb0e328527d5408",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷四丁目町会 盆踊り大会",
-      "venue": "西仲天祖神社",
-      "area": "大田区",
-      "series_key": "ccf1a2f8f2bb",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-21",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-21"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2024 盆踊り",
-        "西糀谷四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
-        "西仲天祖神社 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 53,
+  "completed_batches": 52,
   "batches": [
     {
       "batch": 1,
@@ -2436,12 +2405,14 @@
         "youtube-year-backfill:ba7db0101bcfc143"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2458,7 +2429,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2475,7 +2446,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2492,7 +2463,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2511,7 +2482,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2530,7 +2501,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2547,7 +2518,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2566,7 +2537,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2585,7 +2556,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2602,7 +2573,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2621,24 +2592,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 577,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 53,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:3e266855f01bbc54"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 577,
+      "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
     }
@@ -2650,11 +2604,11 @@
     "event occurrence backfill applied: added=0 updated=29 observations=53 series_3year=4",
     "event schedule rules: target_year=2026 rules=13 axes={'date': 1, 'near_date': 2, 'weekday': 6, 'weekday_near_date': 2, 'weekend_near_date': 2}",
     "event date predictions: target_year=2026 predictions=13 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 4, 'weekend_near_day': 2}",
-    "曲 occurrence 生成完了: occurrences=479 relations=2959 -> data/song_occurrences.json",
-    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 258 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 258 件（247 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 61 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
+    "曲 occurrence 生成完了: occurrences=529 relations=2970 -> data/song_occurrences.json",
+    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 308 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 308 件（294 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 62 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
-  "candidates_after": 577,
+  "candidates_after": 578,
   "strong_after": 183,
   "review_after": 48,
   "schedule_rule_count": 13,
@@ -2670,5 +2624,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-03 youtube_candidates=577 review=48 history_rows=38"
+  "ops_metrics": "ops metrics: date=2026-08-04 youtube_candidates=578 review=48 history_rows=39"
 }

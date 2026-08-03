@@ -1,15 +1,15 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-08-02T20:54:42.182328+00:00
+- generated_at: 2026-08-03T21:01:21.713014+00:00
 - status: harvested_until_quota_limited
 - month: 6
-- selected_rows: 54
-- completed_batches: 53
+- selected_rows: 53
+- completed_batches: 52
 - remaining_rows_before: 93
-- remaining_rows_after: 40
-- estimated_search_calls: 108
+- remaining_rows_after: 41
+- estimated_search_calls: 106
 - candidates_before: 577
-- candidates_after: 577
+- candidates_after: 578
 - strong_after: 183
 - review_after: 48
 - schedule_rule_count: 13
@@ -77,7 +77,6 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | low | 8 | 2024 | 下落合四丁目町会 盆踊り大会 | 下落合公園 | 2025-07-19 |
 | low | 8 | 2024 | 下落合町会知久会 第9回盆踊り | 清水川橋公園 | 2025-07-19 |
 | low | 8 | 2024 | 砧町町会「納涼夏祭り大会」 | 三峰公園 | 2025-07-19 |
-| low | 8 | 2024 | 西糀谷四丁目町会 盆踊り大会 | 西仲天祖神社 | 2025-07-21 |
 
 ## batches
 
@@ -124,15 +123,14 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | 39 | 1 | 577 | 183 | 48 |
 | 40 | 1 | 577 | 183 | 48 |
 | 41 | 1 | 577 | 183 | 48 |
-| 42 | 1 | 577 | 183 | 48 |
-| 43 | 1 | 577 | 183 | 48 |
-| 44 | 1 | 577 | 183 | 48 |
-| 45 | 1 | 577 | 183 | 48 |
-| 46 | 1 | 577 | 183 | 48 |
-| 47 | 1 | 577 | 183 | 48 |
-| 48 | 1 | 577 | 183 | 48 |
-| 49 | 1 | 577 | 183 | 48 |
-| 50 | 1 | 577 | 183 | 48 |
-| 51 | 1 | 577 | 183 | 48 |
-| 52 | 1 | 577 | 183 | 48 |
-| 53 | 1 | 577 | 183 | 48 |
+| 42 | 1 | 578 | 183 | 48 |
+| 43 | 1 | 578 | 183 | 48 |
+| 44 | 1 | 578 | 183 | 48 |
+| 45 | 1 | 578 | 183 | 48 |
+| 46 | 1 | 578 | 183 | 48 |
+| 47 | 1 | 578 | 183 | 48 |
+| 48 | 1 | 578 | 183 | 48 |
+| 49 | 1 | 578 | 183 | 48 |
+| 50 | 1 | 578 | 183 | 48 |
+| 51 | 1 | 578 | 183 | 48 |
+| 52 | 1 | 578 | 183 | 48 |
