@@ -41,7 +41,7 @@ class XGapAdapter:
         officiality=row.get("source_officiality") or {}
         official=officiality.get("classification") == "registered_official_social"
         kind=str(row.get("candidate_kind") or "")
-        action=("confirm_current_year_date" if kind == "missing_date" else "review_schedule_change")
+        action={"missing_date":"confirm_current_year_date", "date_range_conflict":"review_date_range_conflict", "informal_new_event":"review_new_event"}.get(kind, "review_schedule_change")
         payload=copy.deepcopy(row)
         # The existing change-request bridge consumes this compact date text
         # format.  Keep the original X text alongside it as evidence.
