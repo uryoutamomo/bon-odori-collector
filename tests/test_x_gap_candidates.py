@@ -125,3 +125,29 @@ def test_date_range_conflicts_are_grouped_with_corroborating_sources(tmp_path):
     assert conflicts[0]['source_count']==14
     assert len(conflicts[0]['source_urls'])==14
     assert conflicts[0]['matched_occurrence']['occurrence_id']=='occ1'
+
+
+def test_past_event_reports_are_bounded_and_reject_same_named_outside_wards(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    voices=[{'source':'x','tweet_id':str(i),'date':'2026-08-03',
+             'text':f'板橋区 北野小学校の盆踊りに行ってきた 7/{i+1} 楽しかった'} for i in range(12)]
+    voices.extend([
+        {'source':'x','tweet_id':'yokohama','date':'2026-08-03','text':'横浜市港北区 大曽根小学校の盆踊りに行ってきた 8/2'},
+        {'source':'x','tweet_id':'nagoya','date':'2026-08-03','text':'名古屋市北区 東志賀小学校の盆踊りに行ってきた 8/1'},
+        {'source':'x','tweet_id':'kyoto','date':'2026-08-03','text':'京都市上京区 桃薗ふれあい夏まつりに参加した 8/2 会場は広場'},
+        {'source':'x','tweet_id':'hamamatsu','date':'2026-08-03','text':'横山小学校の盆踊りにお邪魔した 7/18 東京音頭が楽しかった'},
+    ])
+    payload=build(voices,db,year=2026,today=date(2026,8,4))
+    reports=[row for row in payload['candidates'] if row['candidate_kind']=='past_event_report']
+    assert len(reports)==10
+    assert all('北野小学校' in row['source_text'] for row in reports)
+    assert any(row.get('archive_reason')=='past_event_report_daily_cap' for row in payload['archived_candidates'])
+
+
+def test_multi_venue_past_report_is_archived_for_manual_expansion(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    voice={'source':'x','tweet_id':'list','date':'2026-07-27',
+           'text':'板橋区で7/26に参加しました。蓮根みなみ公園、志村第5小学校、赤塚氷川神社の盆踊り'}
+    payload=build([voice],db,year=2026,today=date(2026,8,4))
+    assert payload['candidates']==[]
+    assert payload['archived_candidates'][0]['archive_reason']=='multiple_venues_requires_manual_expansion'
