@@ -12,12 +12,12 @@ def make_db(path):
     conn.executescript('''
       CREATE TABLE event_series(series_id TEXT, canonical_name TEXT, area TEXT);
       CREATE TABLE venues(venue_id TEXT, canonical_name TEXT);
-      CREATE TABLE event_occurrences(occurrence_id TEXT, series_id TEXT, event_year INTEGER, display_name TEXT, venue_id TEXT, date_start TEXT);
+      CREATE TABLE event_occurrences(occurrence_id TEXT, series_id TEXT, event_year INTEGER, display_name TEXT, venue_id TEXT, date_start TEXT, date_end TEXT);
       CREATE TABLE event_series_aliases(series_id TEXT, alias TEXT);
     ''')
     conn.execute("INSERT INTO event_series VALUES ('s1','盆助祭','江東区')")
     conn.execute("INSERT INTO venues VALUES ('v1','音頭公園')")
-    conn.execute("INSERT INTO event_occurrences VALUES ('occ1','s1',2026,'盆助祭','v1','')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ1','s1',2026,'盆助祭','v1','','')")
     conn.execute("INSERT INTO event_series_aliases VALUES ('s1','Bonsuke Bon')")
     conn.commit(); conn.close()
 
@@ -55,7 +55,7 @@ def test_generic_event_name_and_conditional_cancellation_do_not_consume_queue(tm
     # unrelated post merely because both contain "盆踊り大会".
     conn=sqlite3.connect(db)
     conn.execute("INSERT INTO event_series VALUES ('s2','盆踊り大会','江東区')")
-    conn.execute("INSERT INTO event_occurrences VALUES ('occ_2','s2',2026,'盆踊り大会','v1','')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ_2','s2',2026,'盆踊り大会','v1','','')")
     conn.commit();conn.close()
     voices=[{"source":"x","tweet_id":"1","date":"2026-07-20","text":"巣鴨盆踊り大会。雨天決行、順延はございません。"}]
     assert build(voices,db,year=2026)['candidates']==[]
@@ -88,3 +88,40 @@ def test_official_new_event_is_capped_and_requires_venue_signal(tmp_path, monkey
     assert payload['archived_count']==3
     no_venue=build([{'source':'x','tweet_id':'x','date':'2026-07-20','text':'夏まつり 7月30日開催'}],db,year=2026)
     assert no_venue['candidates']==[]
+
+
+def test_informal_new_events_require_future_date_positive_23_scope_and_are_capped(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    voices=[{'source':'x','tweet_id':str(i),'date':'2026-08-01',
+             'text':f'北区 十条駅前広場 夏まつり 8/{8+i} 開催'} for i in range(12)]
+    # Times, ambiguous locations, and known out-of-scope cities must not open
+    # the informal discovery lane.
+    voices.extend([
+        {'source':'x','tweet_id':'time','date':'2026-08-01','text':'盆踊り 十条駅前広場 18時から'},
+        {'source':'x','tweet_id':'unknown','date':'2026-08-01','text':'盆踊り 会場は駅前広場 8/20'},
+        {'source':'x','tweet_id':'outside','date':'2026-08-01','text':'大阪北御堂 夏まつり 駅前広場 8/20'},
+    ])
+    payload=build(voices,db,year=2026,today=date(2026,8,1))
+    informal=[row for row in payload['candidates'] if row['candidate_kind']=='informal_new_event']
+    assert len(informal)==10
+    assert all(row['corroboration_count']==1 for row in informal)
+    assert all('大阪' not in row['source_text'] for row in informal)
+    assert any(row.get('archive_reason')=='informal_new_event_daily_cap' for row in payload['archived_candidates'])
+
+
+def test_date_range_conflicts_are_grouped_with_corroborating_sources(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.execute("UPDATE event_series SET canonical_name='上野ゐの市盆踊り' WHERE series_id='s1'")
+    conn.execute("UPDATE event_occurrences SET display_name='上野ゐの市盆踊り', date_start='2026-08-07', date_end='2026-08-09' WHERE occurrence_id='occ1'")
+    conn.commit(); conn.close()
+    voices=[{'source':'x','tweet_id':str(i),'account':f'@performer{i}','date':'2026-08-01',
+             'url':f'https://x.example/{i}',
+             'text':'上野ゐの市盆踊り 上野恩賜公園 袴腰広場 2026年8月7日〜8月16日 開催'} for i in range(14)]
+    payload=build(voices,db,year=2026,today=date(2026,8,1))
+    conflicts=[row for row in payload['candidates'] if row['candidate_kind']=='date_range_conflict']
+    assert len(conflicts)==1
+    assert conflicts[0]['corroboration_count']==14
+    assert conflicts[0]['source_count']==14
+    assert len(conflicts[0]['source_urls'])==14
+    assert conflicts[0]['matched_occurrence']['occurrence_id']=='occ1'
