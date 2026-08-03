@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 50,
+  "count": 54,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -795,6 +795,69 @@
         "https://pbs.twimg.com/amplify_video_thumb/2083826843640270848/img/IBal7dDQsW25Jei_.jpg"
       ],
       "text": "毎年恒例中野の盆踊り、着いたらちょうどバンもんちゃんで、1曲目オトナノススメだったので歓喜♡踊りまくってたら撮るの忘れてたの巻😇 https://t.co/0M3pJ3TAoH",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ac4449cb3e079ede",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2083884369136271799",
+      "tweet_id": "2083884369136271799",
+      "date": "2026-08-02T11:55:24+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2083883718272487424/img/qM6PKU11fY55nQ1K.jpg",
+        "https://t.co/pwpveYcUJJ",
+        "pic.x.com/pwpveYcUJJ",
+        "https://pbs.twimg.com/amplify_video_thumb/2083883881745543168/img/72YJWZRaRRYBLEUo.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2083884079280537600/img/DWav6YCvEU9-5sk5.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2083884267982209024/img/RYOQH3_BGNdznGyv.jpg"
+      ],
+      "text": "2026年8月2日(日)\n埼玉県草加市／高砂小学校\n「第14回 草加っ子なかよし盆踊り大会」\nお手本の皆様が、わかりやすく踊ってくださり、1年ぶりに草加のご当地音頭を楽しく踊りました🤗✨\n\n【曲目】\n草加音頭\n新草加音頭\n想い出はいつも\n緑のロマンス草加\n東京音頭\n大東京音頭\n炭坑節\n令和音頭\nさくら音頭 https://t.co/pwpveYcUJJ",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "69800cb2913160f4",
+      "status": "needs_ocr",
+      "account": "@mukaibunkaharu",
+      "url": "https://x.com/mukaibunkaharu/status/2083891382683582486",
+      "tweet_id": "2083891382683582486",
+      "date": "2026-08-02T12:23:17+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOt4KZnbYAA-TTs.jpg",
+        "https://t.co/HpVswKshNc",
+        "pic.x.com/HpVswKshNc"
+      ],
+      "text": "涼しい夜であった\n西小山駅前１日限りの\n盆踊り　曲目は去年と違う\n現地オリジナルうちわも手に入れた\n躍りをレクチャーしてくれたお姉さんはいなかった為、えびかにニクスとUSAはありませんでした。\nまた来年 https://t.co/HpVswKshNc",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "9b86f99ee46eb32b",
+      "status": "needs_ocr",
+      "account": "@odori2024minato",
+      "url": "https://x.com/odori2024minato/status/2084122994214060167",
+      "tweet_id": "2084122994214060167",
+      "date": "2026-08-03T03:43:37+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOxKzxWbcAA1mT6.jpg",
+        "https://t.co/vW7akdfwhN",
+        "pic.x.com/vW7akdfwhN"
+      ],
+      "text": "【告知】８月11日(火・祝)12時半〜\n鶴見区制100周年と、港北区の新曲「もろおか音頭」完成を記念した特別回です。\n地域の皆様から直接手解きを受けられる貴重な機会です✨ \n\n曲目\n鶴見音頭、獅子ヶ谷音頭\n港北音頭、もろおか音頭\n\n協力\n獅子ヶ谷自治会婦人部（鶴見区）\n師岡粋の会（港北区） https://t.co/vW7akdfwhN",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "c8ec998c5f46b82f",
+      "status": "needs_ocr",
+      "account": "@noriko_kato_",
+      "url": "https://x.com/noriko_kato_/status/2084195825723564329",
+      "tweet_id": "2084195825723564329",
+      "date": "2026-08-03T08:33:01+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOyNDmYacAAyi_I.jpg",
+        "https://t.co/AIXSx9X7Oo",
+        "pic.x.com/AIXSx9X7Oo"
+      ],
+      "text": "8/3(月)#エフエムななみ　アフバラ\n⁡\nhttps://t.co/ojgyoqexrC\n⁡\n津島市女性の会\n毎年恒例「盆踊り大会」PR\n宇藤久子様と松永和子様\nにお話をうかがいました！\n⁡\n盆踊りの魅力♡や曲目など♪\n幹遼太鼓もSpecial guestでご出演です！\n⁡\n#ななみアフバラ https://t.co/AIXSx9X7Oo",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2026-07-19T08:45:36.749495+00:00",
-  "window_end": "2026-08-02T08:45:36.749495+00:00",
+  "window_start": "2026-07-20T10:14:43.668970+00:00",
+  "window_end": "2026-08-03T10:14:43.668970+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -55,19 +55,19 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 1,
+  "batch_index": 2,
   "batch_cursors": {},
   "completed_batches": [
     0,
     1,
     2
   ],
-  "pages_completed": 115,
-  "tweets_scanned": 2228,
-  "evidence_detected": 389,
+  "pages_completed": 113,
+  "tweets_scanned": 2162,
+  "evidence_detected": 378,
   "pending_evidence": [],
-  "started_at": "2026-08-02T08:45:36.749495+00:00",
-  "updated_at": "2026-08-02T08:52:17.387628+00:00",
+  "started_at": "2026-08-03T10:14:43.668970+00:00",
+  "updated_at": "2026-08-03T10:21:32.831296+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -695,10 +695,21 @@
       "pages_completed": 119,
       "tweets_scanned": 2310,
       "evidence_detected": 387
+    },
+    {
+      "window_start": "2026-07-19T08:45:36.749495+00:00",
+      "window_end": "2026-08-02T08:45:36.749495+00:00",
+      "covered_until": "2026-08-02T08:45:36.749495+00:00",
+      "completed_at": "2026-08-02T08:52:17.402604+00:00",
+      "reviewed_at": "2026-08-03T10:14:43.668970+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 115,
+      "tweets_scanned": 2228,
+      "evidence_detected": 389
     }
   ],
-  "previous_covered_until": "2026-08-01T08:42:56.848896+00:00",
-  "completed_at": "2026-08-02T08:52:17.402604+00:00",
-  "covered_until": "2026-08-02T08:45:36.749495+00:00",
-  "pending_cleared_at": "2026-08-02T08:52:22.997027+00:00"
+  "previous_covered_until": "2026-08-02T08:45:36.749495+00:00",
+  "completed_at": "2026-08-03T10:21:32.841059+00:00",
+  "covered_until": "2026-08-03T10:14:43.668970+00:00",
+  "pending_cleared_at": "2026-08-03T10:21:36.808520+00:00"
 }

@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1347,
+  "count": 1357,
   "public_event_count": 656,
-  "review_count": 691,
+  "review_count": 701,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -12324,6 +12324,28 @@
       "evidence_count": 1
     },
     {
+      "id": "4112f42f9a81fce3",
+      "song_name": "阿澄さんは音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yakinasu9/status/2084150127313482141",
+          "date": "2026-08-03T05:31:26+00:00",
+          "text": "やきなす\nラジオネーム やきなす\n阿澄さん 今晩は。\nお手元にお納めください『お祭りの写真』\n薮用で築地に行ったら、まだ10時なのに、築地本願寺の盆踊り準備が終わってました。屋台などは夕方からだそうです。参加できなくて残念。阿澄さんは音頭と言えば何を思いつきますか？クックロビン音頭は踊れますか？ https://t.co/QStyTc9urL"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "2ca1dc3796677423",
       "song_name": "おしりたんてい音頭",
       "event_name": "中野駅前大盆踊り大会",
@@ -12478,7 +12500,7 @@
       "evidence_count": 1
     },
     {
-      "id": "4831e6b071c5deda",
+      "id": "bedc77e0408c4369",
       "song_name": "ガリガリ君音頭",
       "event_name": "中野駅前大盆踊り大会",
       "venue": "中野セントラルパーク",
@@ -12489,6 +12511,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/sonbinyuusuke/status/2084194317598695554",
+          "date": "2026-08-03T08:27:02+00:00",
+          "text": "ゆうすけ\n昨日は\n#中野駅前大盆踊り大会 \n#ナカボン𝟮𝟬𝟮𝟲 \nに行って来ました🎶🏮ガリガリ君音頭と純烈さん。 https://t.co/H3zKjg05LD"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/misa82chandeath/status/2083828876569162008",
@@ -12509,7 +12537,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "id": "c6a686abb8615e08",
@@ -12534,7 +12562,29 @@
       "evidence_count": 1
     },
     {
-      "id": "b99421414c7ad822",
+      "id": "eff445ef8276703b",
+      "song_name": "中学生の踊り",
+      "event_name": "中野駅前大盆踊り大会",
+      "venue": "中野セントラルパーク",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=bFIhcstWkxQ",
+          "date": "2026-08-03T09:00:19+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 会場を魅了する圧巻の美しさ！日本一の津軽手踊り名人たちが魅せる！ 千葉勝弘社中 ナカボン 中野 黒石よされ / The Beauty of Japanese Dance. 🇯🇵\n8月1日2日で「中野駅前大盆踊り大会2026」が開催！！\n初日のステージには、青森県黒石市から千葉勝弘社中の皆さんが登場し、素晴らしい津軽民踊の演奏と踊りを披露してくださいました！\n名人の千葉勝弘先生と黒石市観光協会専務理事でもある野呂淳一さんの力強い津軽三味線演奏や、第51代手踊り名人位の山本祐華さん、第55代手踊り名人位の北山美芽莉さんの踊りは、まさに圧巻の美しさ！\nメンバーには小学生、中学生の踊り手さんもおり、紹介の際にはその凛とした美しい踊りからは想像できない年齢に、驚嘆の声があがっておりました。本当に素晴らしい時間でした！！ありがとうございました！\n\nThe “Nakano Ekimae Bon"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "7edec21efd8e7a9c",
       "song_name": "中野甚句",
       "event_name": "中野駅前大盆踊り大会",
       "venue": "中野セントラルパーク",
@@ -12545,6 +12595,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/ichicopy_/status/2084120158076027068",
+          "date": "2026-08-03T03:32:21+00:00",
+          "text": "いちこ🍎\n中野駅前大盆踊り大会 会長賞・中野区民謡連盟 理事長賞・ナカボンフォロワー賞をいただいた #中野甚句 を生演奏で聴き、踊ってきました✨\n\n自分の詞が歌われるという一生に一度あるかないかの経験に思わず涙しました…\n\n素敵な企画と素晴らしい賞をありがとうございました！また来年！\n\n#ナカボン2026"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/nakano_bonodori/status/2082711948043706388",
@@ -12559,7 +12615,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "id": "3478a64d793362c3",
@@ -12628,6 +12684,28 @@
           "url": "https://x.com/blazer1212/status/2083831824934174972",
           "date": "2026-08-02T08:26:37+00:00",
           "text": "家田 和明(a.k.a本と和服の人📖🌌)\n#中野駅前大盆踊り大会 3ステージ構成ってすごいな！\n\n今年できたらしい中野甚句や、定番郡上おどりのかわさきなども生演奏で！\n\nガリガリ君さんも配布してて神イベ…！ https://t.co/qXjuc2AwHz"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "5f9f7511fd06e392",
+      "song_name": "日本一の津軽手踊り",
+      "event_name": "中野駅前大盆踊り大会",
+      "venue": "中野セントラルパーク",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=bFIhcstWkxQ",
+          "date": "2026-08-03T09:00:19+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 会場を魅了する圧巻の美しさ！日本一の津軽手踊り名人たちが魅せる！ 千葉勝弘社中 ナカボン 中野 黒石よされ / The Beauty of Japanese Dance. 🇯🇵\n8月1日2日で「中野駅前大盆踊り大会2026」が開催！！\n初日のステージには、青森県黒石市から千葉勝弘社中の皆さんが登場し、素晴らしい津軽民踊の演奏と踊りを披露してくださいました！\n名人の千葉勝弘先生と黒石市観光協会専務理事でもある野呂淳一さんの力強い津軽三味線演奏や、第51代手踊り名人位の山本祐華さん、第55代手踊り名人位の北山美芽莉さんの踊りは、まさに圧巻の美しさ！\nメンバーには小学生、中学生の踊り手さんもおり、紹介の際にはその凛とした美しい踊りからは想像できない年齢に、驚嘆の声があがっておりました。本当に素晴らしい時間でした！！ありがとうございました！\n\nThe “Nakano Ekimae Bon"
         }
       ],
       "already_public": false,
@@ -16312,6 +16390,28 @@
       "evidence_count": 1
     },
     {
+      "id": "a03745256a48aac5",
+      "song_name": "良かったらふらっと踊り",
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tomi_sa010/status/2084189330906780062",
+          "date": "2026-08-03T08:07:13+00:00",
+          "text": "さとみ（さーとん）\n🏮上野ゐの市盆踊り🏮\n彩之會で踊らせていただきます\n\n📍上野恩賜公園 袴腰広場\n🌸彩之會の盆踊り\n　8/10-13 19:00〜\n　8/16       12:00〜\n\n来週は上野公園で盆踊り👘🏮\n曲は日替わりなので、毎日来ても楽しめます♪ 良かったらふらっと踊りに来てください😌\n\nhttps://t.co/P0VO1WYIJG https://t.co/rKTGPjX3ri"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "a1fd0f5547a906c3",
       "song_name": "予定曲をみっちり踊り",
       "event_name": "佐竹ゲバゲバ盆踊り",
@@ -19971,7 +20071,7 @@
       "evidence_count": 1
     },
     {
-      "id": "900ecaa9c81e2b42",
+      "id": "3295ceb8951f967e",
       "song_name": "泉州音頭",
       "event_name": "すみだ錦糸町河内音頭大盆踊り",
       "venue": "江東橋竪川親水公園",
@@ -19982,6 +20082,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Lftfi3I1nyU",
+          "date": "2026-08-02T11:30:13+00:00",
+          "text": "和太鼓お祭りCH\n雲竜左枝菊（泉州音頭）　『すみだ錦糸町河内音頭大盆踊り』12　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3WY"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/irodonob_suki/status/2082840625851060694",
@@ -20008,7 +20114,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "d6cd82155692fd63",
@@ -20055,7 +20161,7 @@
       "evidence_count": 1
     },
     {
-      "id": "66597d36bbd9b5f8",
+      "id": "57aaf531f5d12c12",
       "song_name": "錦糸町河内音頭",
       "event_name": "すみだ錦糸町河内音頭大盆踊り",
       "venue": "江東橋竪川親水公園",
@@ -20066,6 +20172,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Vx0O_d0eSds",
+          "date": "2026-08-02T12:00:01+00:00",
+          "text": "和太鼓お祭りCH\n瑞姫（河内音頭）　『すみだ錦糸町河内音頭大盆踊り』13終　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3WY\n４"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Lftfi3I1nyU",
+          "date": "2026-08-02T11:30:13+00:00",
+          "text": "和太鼓お祭りCH\n雲竜左枝菊（泉州音頭）　『すみだ錦糸町河内音頭大盆踊り』12　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3WY"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2GhmaqojKk8",
+          "date": "2026-08-02T11:00:04+00:00",
+          "text": "和太鼓お祭りCH\n堺家小利貴丸（河内音頭）　『すみだ錦糸町河内音頭大盆踊り』11　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3W"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=VK6E6XzYclA",
@@ -20266,7 +20390,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 33
+      "evidence_count": 36
     },
     {
       "id": "006d386844f6693d",
@@ -22349,6 +22473,50 @@
       "evidence_count": 1
     },
     {
+      "id": "2b1bfdbe3059f0a3",
+      "song_name": "リードで楽しい踊り",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/mamimami298/status/2084085673964016129",
+          "date": "2026-08-03T01:15:19+00:00",
+          "text": "まみまみ\n昨日は、退勤20時になったので、21時過ぎまでやっていそうな花園神社へ。\n魂舞会さんのリードで楽しい踊り場。\nすごく混んでたんだけど、踊りにくさはなかった。\nDESIREで「ムズイ！ムズイ！」を連発していた近くにいた兄さん、「ハァ、ドッコイ！！」の合いの手完璧でしたわ😁\n#盆踊り https://t.co/MwNhx8Gyim"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "b6499896c021f348",
+      "song_name": "上手な方の踊り",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Atutakamama7034/status/2083896465391566907",
+          "date": "2026-08-02T12:43:28+00:00",
+          "text": "B.D　NAO\nリード役で行くはずのところが、雨予報で中止を決定してしまい、花園神社に！以前、コンテスト決勝に上がった事があるので、密かに狙っていましたが、残念。でも、上手な方の踊りが見れて幸せ。生歌の新宿音頭や八木節、最高⤴️⤴️⤴️ #盆踊り #花園神社 https://t.co/NLk1HkKNYB"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "e85e3513db26f5bc",
       "song_name": "横浜アラメヤ音頭",
       "event_name": "花園神社 盆踊り",
@@ -22425,6 +22593,78 @@
       ],
       "already_public": false,
       "evidence_count": 1
+    },
+    {
+      "id": "9088ab2beaad63c8",
+      "song_name": "生歌の新宿音頭や八木節",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Atutakamama7034/status/2083896465391566907",
+          "date": "2026-08-02T12:43:28+00:00",
+          "text": "B.D　NAO\nリード役で行くはずのところが、雨予報で中止を決定してしまい、花園神社に！以前、コンテスト決勝に上がった事があるので、密かに狙っていましたが、残念。でも、上手な方の踊りが見れて幸せ。生歌の新宿音頭や八木節、最高⤴️⤴️⤴️ #盆踊り #花園神社 https://t.co/NLk1HkKNYB"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "462b8789941cf703",
+      "song_name": "生歌コーナーの八木節",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/panda_dapan11/status/2084139028753093054",
+          "date": "2026-08-03T04:47:20+00:00",
+          "text": "パンダ子(パンちゃん)\n2026/08/02\n🏮花園神社\n\n楽しかったー🥰\nやっぱり魂舞会の会場は楽しい😃\n生歌コーナーの八木節、英語の炭坑節ドンパン等も素晴らしかった\n魂舞会の新曲は緑黄色社会のMela!\n途中に変なおじさん！入ってたよね？🤣\nそうゆう遊び心がらしくて大好き\nそして雨が降らなかったー\nありがとうございました🐼 https://t.co/nNe1lHhpu6"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "8c4120b6dda2fa30",
+      "song_name": "英語の炭坑節",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/oson_kimono/status/2083959527104487862",
+          "date": "2026-08-02T16:54:04+00:00",
+          "text": "おそん\n花園神社　ぼんおどり\n生歌、生演奏の盆踊り、贅沢で最高でした✨✨英語の炭坑節もオシャレ😆\n八木節、何曲踊ったか分からないくらい、いっぱい踊れて楽しかった💕\n今日は涼しかった〜❣️ https://t.co/NFkHOrmJCA"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/panda_dapan11/status/2084139028753093054",
+          "date": "2026-08-03T04:47:20+00:00",
+          "text": "パンダ子(パンちゃん)\n2026/08/02\n🏮花園神社\n\n楽しかったー🥰\nやっぱり魂舞会の会場は楽しい😃\n生歌コーナーの八木節、英語の炭坑節ドンパン等も素晴らしかった\n魂舞会の新曲は緑黄色社会のMela!\n途中に変なおじさん！入ってたよね？🤣\nそうゆう遊び心がらしくて大好き\nそして雨が降らなかったー\nありがとうございました🐼 https://t.co/nNe1lHhpu6"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
     },
     {
       "id": "653da7a7a0ff3ab0",
@@ -22925,6 +23165,28 @@
           "url": "https://x.com/sakainatsumi724/status/2083193738252485026",
           "date": "2026-07-31T14:11:05+00:00",
           "text": "酒井なつみ 前衆議院議員(東京15区/江東区)中道\n令和8年熊本地震で被災された皆さまに、心よりお見舞い申し上げます。\n被災地の皆さまの安全が確保され、一日も早く日常を取り戻せるよう願っています。\nまた、復旧・復興に尽力されているすべての皆さまに、深く敬意を表します。\n\n本日も江東区内の夏祭り・盆踊り大会を回り、地域の皆さんと交流させていただきました。\n\nお声がけくださった皆さま、温かく迎えてくださった皆さま、ありがとうございました。\n\n本日お伺いしたのは、以下3か所です。\n\n① 枝川二・三丁目町会盆踊り\n② 大島一・二町会盆踊り大会\n③ 八名川地区連合町会納涼音頭大会\n\nそれぞれの会場で、子どもたちの笑顔や久しぶりの再会を楽しむ地域の皆さんの姿があふれ、夏ならではの温かな雰囲気に包まれていました。\n\nこうした地域のお祭りは、世代を超えた交流の場であるとともに、人と人とのつながりを育む大切な機会です。日頃から準備・運営にご尽力く"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "95a5e82196b03b22",
+      "song_name": "休憩中に川南小学校音頭",
+      "event_name": "海辺町会 納涼盆踊り大会",
+      "venue": "川南海辺公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kaz0045/status/2084142178474098803",
+          "date": "2026-08-03T04:59:51+00:00",
+          "text": "オレンジ（Mishima Kazuhiro）\n8/2（日）③ #海辺町会納涼盆踊り大会 \n#江東区\n 昨年に引き続きこちらへ🙂\nここは大人も子供も踊る人が多くて楽しい❗️\n休憩中に川南小学校音頭を踊り、ダンヒロ、バハママで大盛り⤴️\nアンコールの河内おとこは最後🙇‍♀️もw\n来年は大祭の為お休みです🫡 https://t.co/GRJdbBf7AM"
         }
       ],
       "already_public": false,
@@ -27937,6 +28199,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=61yQ2BhWWw4",
+          "date": "2026-08-03T08:00:06+00:00",
+          "text": "和太鼓お祭りCH\n【炭坑節】（鈴木正夫）　晴海ふ頭公園盆踊り大会19　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=N0h5s1xODR8",
           "date": "2026-08-02T08:00:26+00:00",
           "text": "和太鼓お祭りCH\n【東京音頭】（原田直之）　晴海ふ頭公園盆踊り大会18　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.b"
@@ -28039,7 +28307,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 17
+      "evidence_count": 18
     },
     {
       "id": "eaabaa9393f0cb26",
@@ -28554,6 +28822,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=61yQ2BhWWw4",
+          "date": "2026-08-03T08:00:06+00:00",
+          "text": "和太鼓お祭りCH\n【炭坑節】（鈴木正夫）　晴海ふ頭公園盆踊り大会19　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=SYgAwLdKYIs",
           "date": "2025-07-20T11:30:30Z",
           "text": "和太鼓お祭りチャンネル\n【炭坑節】　2025年第1回晴海ふ頭公園盆踊り大会19　HARUMI FLAG\n2025年7月12日に行われました、\n「第1回晴海ふ頭公園盆踊り大会」の様子です。\n\n\n晴海ふ頭公園盆踊り\n１東京音頭　https://youtu.be/Eb6gDVJQb3w\n２これがお江戸の盆ダンス　https://youtu.be/xP2nOKVO89w\n３炭坑節　https://youtu.be/gVtZl-54Lnk\n４ﾀﾞﾝｼﾝｸﾞﾋｰﾛｰ　https://youtu.be/nFXtj9abEe4\n５バハマ・ママ　https://youtu.be/Bpc69KmfTq0\n６きよしのズンドコ節　https://youtu.be/jA7McwUYOf8\n７令和音頭　https://youtu.be/mTDY33BkiTA\n８ジャンボリミッキー　https://youtu.be/49zeNSFXB5Y\n９東京音頭　htt"
@@ -28578,7 +28852,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "9ccb729f8db3523e",
@@ -28800,6 +29074,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/yukica1213/status/2084211788191817920",
+          "date": "2026-08-03T09:36:27+00:00",
+          "text": "幸加\nバボちゃんの提案で築地本願寺の盆踊りに。\n\n明るいうちに着いて、夕暮れ時を堪能。\n\n盆踊りは「ホームラン音頭」ほか一曲で参加。見よう見まねで踊っても楽しい！来年はお稽古してから行きます。\n\n和太鼓の演奏もカッコよくて、盆踊りの楽しさを初めて体験しました。 https://t.co/0qI7zWWmKm"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/majorque/status/2083700669740183669",
           "date": "2026-08-01T23:45:27+00:00",
           "text": "マヨ\n築地本願寺の盆踊り最終日へ\n\n大江戸助六音頭をはじめとした素晴らしい踊りを楽しみました\n日本晴れだよ、あやめ踊りも踊れたし、ホームラン音頭は頑張った😘\n\nそろそろフィナーレに向かうかなという辺りでポツポツ来始めたので、一足お先に帰宅\n\nまた来年よろしくお願いします！ https://t.co/BTF6s9aryM"
@@ -28878,7 +29158,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 13
+      "evidence_count": 14
     },
     {
       "id": "819a61c5034ff39c",
@@ -39739,6 +40019,24 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Vx0O_d0eSds",
+          "date": "2026-08-02T12:00:01+00:00",
+          "text": "和太鼓お祭りCH\n瑞姫（河内音頭）　『すみだ錦糸町河内音頭大盆踊り』13終　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3WY\n４"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Lftfi3I1nyU",
+          "date": "2026-08-02T11:30:13+00:00",
+          "text": "和太鼓お祭りCH\n雲竜左枝菊（泉州音頭）　『すみだ錦糸町河内音頭大盆踊り』12　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3WY"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2GhmaqojKk8",
+          "date": "2026-08-02T11:00:04+00:00",
+          "text": "和太鼓お祭りCH\n堺家小利貴丸（河内音頭）　『すみだ錦糸町河内音頭大盆踊り』11　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3W"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=VK6E6XzYclA",
           "date": "2026-08-02T07:15:31+00:00",
           "text": "和太鼓お祭りCH\n山中一平（河内音頭）　『すみだ錦糸町河内音頭大盆踊り』10　2026年7月29日\n2026年7月29日に開催された\n『第44回 すみだ錦糸町河内音頭大盆踊り』の様子をお届けします。\n\n錦糸町の夏の風物詩、河内音頭。 \n本場・大阪の熱気をそのままに、踊り子たちの熱気と、和太鼓の響きが一体となった最高のステージをぜひご覧ください。\n\n【詳細】 \n■イベント：すみだ錦糸町河内音頭大盆踊り（1日目）\n ■開催日：2026年7月29日（水） \n■場所：錦糸町・竪川親水公園特設会場\n\n#和太鼓 #盆踊り #河内音頭  #錦糸町 #すみだ錦糸町河内音頭大盆踊り #伝統芸能 #夏祭り\n\n\n錦糸町河内音頭1日目\n１炎上寺ルイコ　https://youtu.be/J2jQXPtpjLA\n２宇宙軒梅ぼし　https://youtu.be/NvH3kGMZct0\n３山中一若丸　https://youtu.be/jhIfNFmM3WY\n"
@@ -40405,7 +40703,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 111
+      "evidence_count": 114
     },
     {
       "id": "7a7fb49d90eeab18",
@@ -42160,6 +42458,18 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/oson_kimono/status/2083959527104487862",
+          "date": "2026-08-02T16:54:04+00:00",
+          "text": "おそん\n花園神社　ぼんおどり\n生歌、生演奏の盆踊り、贅沢で最高でした✨✨英語の炭坑節もオシャレ😆\n八木節、何曲踊ったか分からないくらい、いっぱい踊れて楽しかった💕\n今日は涼しかった〜❣️ https://t.co/NFkHOrmJCA"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/M125M8qgyhWueHS/status/2084170342071955570",
+          "date": "2026-08-03T06:51:46+00:00",
+          "text": "みそみそ3\n花園神社盆踊り\n毎年この日は青森にいるので今年は初参加。生歌コーナーとかもあってすごい✨\n八木節は選ばれると櫓に上がるとかでめっちゃ目を逸らして踊ってた👀（大丈夫選ばれない😂)\n盛り上がりました。\nさすがの魂舞会さんでした✨\nありがとうございました✨\n#デザイアがたくさん踊れて嬉しい https://t.co/tvslLIMkC2"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=PXHvX5qe4gE",
           "date": "2026-08-01T15:30:49+00:00",
           "text": "Urban Walk\n生歌「八木節」を踊らずには帰れない!? ゲリラ豪雨で中断も再開後は人であふれる!! ドンパン節そしてアンコール八木節!! 【新宿 花園神社 盆踊り 2026】 盆踊り Hanazono  Shrine\n#花園神社 #八木節 #新宿 #盆踊り\n\n00:00　八木節\n05:26　ドンパン節\n08:13　八木節 アンコール\n\n【新宿 花園神社 盆踊り】\n開催日時：2026年8月1日(土)～2日(日)\n開催場所 ：新宿 花園神社\nhttps://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2"
@@ -42196,7 +42506,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 6
+      "evidence_count": 8
     },
     {
       "id": "042b49433195f7b6",
@@ -42470,6 +42780,18 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/oson_kimono/status/2083959527104487862",
+          "date": "2026-08-02T16:54:04+00:00",
+          "text": "おそん\n花園神社　ぼんおどり\n生歌、生演奏の盆踊り、贅沢で最高でした✨✨英語の炭坑節もオシャレ😆\n八木節、何曲踊ったか分からないくらい、いっぱい踊れて楽しかった💕\n今日は涼しかった〜❣️ https://t.co/NFkHOrmJCA"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/panda_dapan11/status/2084139028753093054",
+          "date": "2026-08-03T04:47:20+00:00",
+          "text": "パンダ子(パンちゃん)\n2026/08/02\n🏮花園神社\n\n楽しかったー🥰\nやっぱり魂舞会の会場は楽しい😃\n生歌コーナーの八木節、英語の炭坑節ドンパン等も素晴らしかった\n魂舞会の新曲は緑黄色社会のMela!\n途中に変なおじさん！入ってたよね？🤣\nそうゆう遊び心がらしくて大好き\nそして雨が降らなかったー\nありがとうございました🐼 https://t.co/nNe1lHhpu6"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
           "date": "2025-08-05T11:15:04Z",
           "text": "祭のきせき　盆踊り\n炭坑節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be/"
@@ -42488,7 +42810,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 3
+      "evidence_count": 5
     },
     {
       "id": "65eb6161037ed142",
