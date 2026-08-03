@@ -4877,6 +4877,58 @@
     ]
   },
   {
+    "name": "舟渡町会 盆踊り大会",
+    "venue": "舟渡小学校 校庭",
+    "area": "板橋区",
+    "date": "2026-07-25",
+    "songs": [
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint"
+      },
+      {
+        "name": "スカイツリー音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "ホームラン音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "東京スカイツリー音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "板橋二輪草音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "板橋区町会連合会音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "板橋音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "河内おとこ節",
+        "confidence": "hint"
+      },
+      {
+        "name": "炭鉱節",
+        "confidence": "hint"
+      },
+      {
+        "name": "舟渡ひろがり音頭",
+        "confidence": "hint"
+      }
+    ]
+  },
+  {
     "name": "あ〜夏休み！納涼盆踊り大会",
     "venue": "亀有ゆうろーど（亀有銀座商店街）",
     "area": "葛飾区",

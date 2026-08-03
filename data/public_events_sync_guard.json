@@ -1,18 +1,18 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-08-03T14:43:54.644574+00:00",
+  "generated_at": "2026-08-03T15:49:55.022455+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "data/public/events_public.json",
-    "site_events": "/private/tmp/bon-odori-site-adachi-check/data/events_public.json",
-    "fixed_date_rules": "/private/tmp/bon-odori-adachi-ward-gap/data/public_fixed_date_rules.json",
-    "master_db": "/private/tmp/bon-odori-adachi-ward-gap/data/bon_odori_master.sqlite",
-    "publication_gap_review": "/private/tmp/bon-odori-adachi-ward-gap/data/publication_gap_review.json",
-    "reviewed_approvals": "/private/tmp/bon-odori-adachi-ward-gap/data/public_sync_exact_approvals.json"
+    "site_events": "/private/tmp/bon-odori-site-itabashi-20260804/data/events_public.json",
+    "fixed_date_rules": "/private/tmp/bon-odori-itabashi-20260804/data/public_fixed_date_rules.json",
+    "master_db": "data/bon_odori_master.sqlite",
+    "publication_gap_review": "/private/tmp/bon-odori-itabashi-20260804/data/publication_gap_review.json",
+    "reviewed_approvals": "data/public_sync_exact_approvals.json"
   },
   "parameters": {
     "target_year": 2026,
-    "today": "2026-08-03",
+    "today": "2026-08-04",
     "allow_individual_review": false
   },
   "decision": {
@@ -29,35 +29,52 @@
     "master_rdb_newer_than_publication_gap_review"
   ],
   "raw_classification": {
-    "collector_event_count": 288,
-    "site_event_count": 284,
-    "collector_only_count": 4,
+    "collector_event_count": 308,
+    "site_event_count": 288,
+    "collector_only_count": 20,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "high_risk_diff_record_count": 29,
+    "high_risk_event_count": 23,
+    "records_by_family": {
+      "historical_slide": 23,
+      "date_prediction": 6
+    },
+    "records_by_action": {
+      "individual_review": 23,
+      "low_priority_or_unclassified": 6
+    },
+    "events_by_action": {
+      "ended_transition_downgrade": 23
+    }
   },
   "postprocessed_classification": {
-    "collector_event_count": 288,
-    "site_event_count": 284,
-    "collector_only_count": 4,
+    "collector_event_count": 308,
+    "site_event_count": 288,
+    "collector_only_count": 20,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "high_risk_diff_record_count": 29,
+    "high_risk_event_count": 23,
+    "records_by_family": {
+      "historical_slide": 23,
+      "date_prediction": 6
+    },
+    "records_by_action": {
+      "individual_review": 23,
+      "low_priority_or_unclassified": 6
+    },
+    "events_by_action": {
+      "ended_transition_downgrade": 23
+    }
   },
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
     "status": "pass",
-    "approval_count": 147,
+    "approval_count": 167,
     "status_counts": {
-      "already_synced": 136,
+      "already_synced": 118,
       "inactive": 7,
-      "applied": 4
+      "already_applied": 22,
+      "applied": 20
     },
     "failure_count": 0,
     "results": [
@@ -638,9 +655,9 @@
         "id": "reviewed-addition-20260729-ebd403f59d96",
         "kind": "addition",
         "event_key": "お花茶屋ふるさとまつり||お花茶屋公園",
-        "actual_collector_sha256": "ebd403f59d9637a6afc594ca5cb9447cf667a340f3d33e6869d40cd79562f93a",
+        "actual_collector_sha256": "cdbfce54d641319d8b0fa79736e63a329ddf125bd5e1c770e213058843f5fdd0",
         "actual_site_sha256": "ebd403f59d9637a6afc594ca5cb9447cf667a340f3d33e6869d40cd79562f93a",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-20260729-32fce5a58852",
@@ -1013,9 +1030,9 @@
         "id": "reviewed-addition-adachi-20260803-7903ea5161a4",
         "kind": "addition",
         "event_key": "中央本町若松町会 盆踊り大会||若松公園",
-        "actual_collector_sha256": "7903ea5161a4458ddf7fce4bcfc06f127e054b2f6788596cfc93a39b704fecb5",
+        "actual_collector_sha256": "80b9b53ae717f55855d5119be9caeeb83feef026d26d0a051743c166271d0ef7",
         "actual_site_sha256": "7903ea5161a4458ddf7fce4bcfc06f127e054b2f6788596cfc93a39b704fecb5",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-42bbd988f428",
@@ -1037,65 +1054,65 @@
         "id": "reviewed-addition-adachi-20260803-3e20a727e78a",
         "kind": "addition",
         "event_key": "東淵江自治会 納涼盆踊り大会||稗田公園",
-        "actual_collector_sha256": "3e20a727e78ac302871cbcd0c631fa8c09b4b9f88a3d1a4b1f1a4895c2a05011",
+        "actual_collector_sha256": "3acb6f3848125e048190a4f4f90b129e7baa083415e9adc1221bbc16a37e753f",
         "actual_site_sha256": "3e20a727e78ac302871cbcd0c631fa8c09b4b9f88a3d1a4b1f1a4895c2a05011",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-999ebb7cda6b",
         "kind": "addition",
         "event_key": "東和一丁目自治会 納涼盆踊り大会||西沼公園",
-        "actual_collector_sha256": "999ebb7cda6beab70f787c496b0c27f4b5ac7338cdd73944a13f69acb0b63e06",
+        "actual_collector_sha256": "71bfacf3a612c3a560c2942fc95949e16df5f75afa9745eda35b35ef3dd4b02f",
         "actual_site_sha256": "999ebb7cda6beab70f787c496b0c27f4b5ac7338cdd73944a13f69acb0b63e06",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-bcbecc517b67",
         "kind": "addition",
         "event_key": "綾瀬五・六丁目自治会 納涼盆踊り大会||東綾瀬公園",
-        "actual_collector_sha256": "bcbecc517b67e23c51d5bafc744e71f88329fb7677e9a01e030a9d5e64b88d5b",
+        "actual_collector_sha256": "f857510e25a59637464ea63c8ed026c458f6f283541db02142d3f1c36bb8b136",
         "actual_site_sha256": "bcbecc517b67e23c51d5bafc744e71f88329fb7677e9a01e030a9d5e64b88d5b",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-e38978f55302",
         "kind": "addition",
         "event_key": "普賢寺自治会 納涼盆踊り大会||北野公園",
-        "actual_collector_sha256": "e38978f553023af91ba4031090a0fac846ee62e572dad1a22a8d7e08d2c73d57",
+        "actual_collector_sha256": "7c4e975fb4bc42d2afe8bdcbb7b9295cc64d57f461a56022b0cc898de0e53a63",
         "actual_site_sha256": "e38978f553023af91ba4031090a0fac846ee62e572dad1a22a8d7e08d2c73d57",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-672184996e88",
         "kind": "addition",
         "event_key": "蒲原自治会 納涼盆踊り大会||宮元公園",
-        "actual_collector_sha256": "672184996e8846abf9723f2ea5dc9368270fe4f707d855f45b7658e95cdd5071",
+        "actual_collector_sha256": "20363aa811f53c34d66d06478c6a645286df07ed16c56e296bdff2a4d078b451",
         "actual_site_sha256": "672184996e8846abf9723f2ea5dc9368270fe4f707d855f45b7658e95cdd5071",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-29a37cb5be1e",
         "kind": "addition",
         "event_key": "綾瀬自治会 納涼盆踊り大会||伊藤谷公園",
-        "actual_collector_sha256": "29a37cb5be1e2e256975ec76a8aea18ffe5b0b050cf1777c776600c998274938",
+        "actual_collector_sha256": "d36a1eb672da4e4d43774630d7f3654274b9a5603fd5c051c7473538d9d5f3ee",
         "actual_site_sha256": "29a37cb5be1e2e256975ec76a8aea18ffe5b0b050cf1777c776600c998274938",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-42feb7824b93",
         "kind": "addition",
         "event_key": "綾瀬東町会 納涼盆踊り大会||蛭沼公園",
-        "actual_collector_sha256": "42feb7824b93a2c7b9d5adbc2fd0b425d7d0fb1d1cf5467e6f812026dd3ff3e8",
+        "actual_collector_sha256": "0689c292cd3bb2411caf081208cd121ffff4d759a05111a8abc97cb1bca8e3a6",
         "actual_site_sha256": "42feb7824b93a2c7b9d5adbc2fd0b425d7d0fb1d1cf5467e6f812026dd3ff3e8",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-b4cc59457fe0",
         "kind": "addition",
         "event_key": "上谷中町自治会 納涼盆踊り大会||しょうぶ沼公園",
-        "actual_collector_sha256": "b4cc59457fe089d310a196720ac214b734c0d0581c1e76678b90914250555f58",
+        "actual_collector_sha256": "a64fd61a0d0d37f6c6a5c3df9b88425ee8a0f5b86c1c0425335e9b4400a91b27",
         "actual_site_sha256": "b4cc59457fe089d310a196720ac214b734c0d0581c1e76678b90914250555f58",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-4c90def9fd7e",
@@ -1133,17 +1150,17 @@
         "id": "reviewed-addition-adachi-20260803-ae7274b4f2df",
         "kind": "addition",
         "event_key": "梅田正和町会 納涼盆踊り||関原中央公園",
-        "actual_collector_sha256": "ae7274b4f2df28a2fa04453a08e59c23d1cad9b3ae68fda67de858e0ae6c6806",
+        "actual_collector_sha256": "d5811133afd5be667255c53efeda6286d1275d58628ba139f6eea0670b1d4d5c",
         "actual_site_sha256": "ae7274b4f2df28a2fa04453a08e59c23d1cad9b3ae68fda67de858e0ae6c6806",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-cb83a779ac79",
         "kind": "addition",
         "event_key": "梅田本町自治会 納涼盆踊り||梅田南公園",
-        "actual_collector_sha256": "cb83a779ac7982abfc11e5af30444e7636a5494faa0b7222380dbae027c2d0ae",
+        "actual_collector_sha256": "0fd596105ac8137b5b05ec0569791dc2d2cb45f4bd5a5a0d8f1768a0cfe0d413",
         "actual_site_sha256": "cb83a779ac7982abfc11e5af30444e7636a5494faa0b7222380dbae027c2d0ae",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-9b32f8ebca95",
@@ -1165,49 +1182,49 @@
         "id": "reviewed-addition-adachi-20260803-81be26cd078a",
         "kind": "addition",
         "event_key": "東和二丁目自治会・東和二丁目西自治会 納涼盆踊り大会||第六天公園",
-        "actual_collector_sha256": "81be26cd078aa5e6f0cd9284fa531131e5d2e61c10aedf4e734e28862acc135e",
+        "actual_collector_sha256": "51c41385f832aa1c2e51d107294a3c7b9295817bd1074298f213cae9ab35a721",
         "actual_site_sha256": "81be26cd078aa5e6f0cd9284fa531131e5d2e61c10aedf4e734e28862acc135e",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-c74b933312c6",
         "kind": "addition",
         "event_key": "中川納涼大盆踊り大会||都立中川公園ふれあい広場",
-        "actual_collector_sha256": "c74b933312c607bf2d040b5570edb08742965a064c8b6d85b954bcd6352d0228",
+        "actual_collector_sha256": "f4841a2b9315dab0b811018e0fc3796e317b741cd7ec36151ba50c44f937f6e2",
         "actual_site_sha256": "c74b933312c607bf2d040b5570edb08742965a064c8b6d85b954bcd6352d0228",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-20cd9985016e",
         "kind": "addition",
         "event_key": "本木北町みのり町会 盆踊り||田中稲荷神社",
-        "actual_collector_sha256": "20cd9985016ebd5031468463ac054cef5606b371feca0e5ebe61a99849a5a4e6",
+        "actual_collector_sha256": "24703a56f8e16dcb7765fd60b911d69c03b7b041f2818ca9728d06ed47d94ac0",
         "actual_site_sha256": "20cd9985016ebd5031468463ac054cef5606b371feca0e5ebe61a99849a5a4e6",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-7b868b7eb89f",
         "kind": "addition",
         "event_key": "扇一丁目寺地明和会 盆踊り||扇南公園",
-        "actual_collector_sha256": "7b868b7eb89f88b8146b29f0c45e2fd4a868d77b5a7105caca223650923b1435",
+        "actual_collector_sha256": "762008c9066cb82459a2787c978e97a8fa7d354092854f41cd777542931063d3",
         "actual_site_sha256": "7b868b7eb89f88b8146b29f0c45e2fd4a868d77b5a7105caca223650923b1435",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-0878c8037111",
         "kind": "addition",
         "event_key": "扇南町会 盆踊り||三嶋神社",
-        "actual_collector_sha256": "0878c803711151971acba3f674801d5dccc18467add2e37bd4a7581aaf18c998",
+        "actual_collector_sha256": "b37d1ac35d08179d0da2df5e1b7347c0f57e5b09d7ec3d6c50738b6fb2b98033",
         "actual_site_sha256": "0878c803711151971acba3f674801d5dccc18467add2e37bd4a7581aaf18c998",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-f842f74def53",
         "kind": "addition",
         "event_key": "興野町会 盆踊り||興野神社",
-        "actual_collector_sha256": "f842f74def5361957ca01df7f2f9e962a6cb743dcbcc29eb8e9abc2182a46631",
+        "actual_collector_sha256": "27b46ec10d31bc70f9c5050250972726e0a9ac5083f8ce0f89eed6f62793be8c",
         "actual_site_sha256": "f842f74def5361957ca01df7f2f9e962a6cb743dcbcc29eb8e9abc2182a46631",
-        "status": "already_synced"
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-adachi-20260803-a19ea9c18793",
@@ -1221,43 +1238,311 @@
         "id": "reviewed-addition-suginami-20260803-4e6fd88e67ec",
         "kind": "addition",
         "event_key": "高井戸ちびっ子ぼんおどり||高井戸地域区民センター広場",
-        "actual_collector_sha256": "4e6fd88e67ec0847f222a8cc9e95ebb645dd283a6946d1ceada13c2c251a1393",
-        "status": "applied"
+        "actual_collector_sha256": "f55445c94cc2fb1e21d6c0edd7c57f7024dbf5c0cf9761eeb11cdcd6b688e256",
+        "actual_site_sha256": "4e6fd88e67ec0847f222a8cc9e95ebb645dd283a6946d1ceada13c2c251a1393",
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-suginami-20260803-fdf954c2e5b7",
         "kind": "addition",
         "event_key": "西武井荻商店街 納涼盆踊り大会||第一生命向い駐車場",
-        "actual_collector_sha256": "fdf954c2e5b75dc11253218b3e1d43a8a286d1b0ed3547db1a530347e84049ab",
-        "status": "applied"
+        "actual_collector_sha256": "a963fcfb85b8893ea5b1c320e2c68d6209e15c913efb2e87214c28deea8c78f9",
+        "actual_site_sha256": "fdf954c2e5b75dc11253218b3e1d43a8a286d1b0ed3547db1a530347e84049ab",
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-suginami-20260803-85e4f6eae69a",
         "kind": "addition",
         "event_key": "梅里中央公園盆おどり||梅里中央公園",
-        "actual_collector_sha256": "85e4f6eae69aefcdfad87efad88ac78b28cab5864597cb7344ce3b926163c866",
-        "status": "applied"
+        "actual_collector_sha256": "a21ddbb7e5a2d1ebde49a4374509c725dcb31cc1fa7e7b345df52b5f9937663e",
+        "actual_site_sha256": "85e4f6eae69aefcdfad87efad88ac78b28cab5864597cb7344ce3b926163c866",
+        "status": "already_applied"
       },
       {
         "id": "reviewed-addition-suginami-20260803-17b97cfde1c4",
         "kind": "addition",
         "event_key": "ふるさと和泉 みんなの夏祭り||杉並和泉学園校庭",
-        "actual_collector_sha256": "17b97cfde1c4270efa353f0f4743fd2c26585c8c105ab65df96a7280137bba02",
+        "actual_collector_sha256": "ba0fcfac4194bef0cabd0d32b80e0e4a58d6eb934843dc8086d703b9fc3fb259",
+        "actual_site_sha256": "17b97cfde1c4270efa353f0f4743fd2c26585c8c105ab65df96a7280137bba02",
+        "status": "already_applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-f90b185c000c",
+        "kind": "addition",
+        "event_key": "上板橋二丁目町会 盆踊り大会||七軒家公園",
+        "actual_collector_sha256": "f90b185c000c17377d1522b5ffea317d129cc0697988dd7019d6599970468d05",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-6a9c10abe825",
+        "kind": "addition",
+        "event_key": "上谷津町会 盆踊り会||下赤塚小学校 校庭",
+        "actual_collector_sha256": "6a9c10abe8252483187aa4cf88c6b945b81501d737119ab4803f6c36cf52d488",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-4afc36892883",
+        "kind": "addition",
+        "event_key": "徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会||北野小学校",
+        "actual_collector_sha256": "4afc36892883244ec03886d8d15664addcf456abd9e8875a073f0d4a38441b50",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-debd789e550a",
+        "kind": "addition",
+        "event_key": "坂下一丁目南町会 盆踊り大会||志村公園 特設会場",
+        "actual_collector_sha256": "debd789e550aa37cbf17a4bf0941608c8b695c52ab9d0150395258a4b3f47ba7",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-7b5217d0fc10",
+        "kind": "addition",
+        "event_key": "小豆沢商友会 納涼盆踊り大会||志村第二中学校 校庭",
+        "actual_collector_sha256": "7b5217d0fc10e15b08b1569f528c1e651d41816ead04264e9c3fcf79c5245f01",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-754208b36a18",
+        "kind": "addition",
+        "event_key": "西台町会 盆踊り大会||志村第五小学校 校庭",
+        "actual_collector_sha256": "754208b36a18e8d8d7168477375174b3c372c84e7220890630cbe25e90232fb8",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-a3f5835afcfc",
+        "kind": "addition",
+        "event_key": "番匠免町会 盆踊り大会||松月院 駐車場",
+        "actual_collector_sha256": "a3f5835afcfc544016a5eba813b9e22b3d7866f2b70a7bf03077ed74572d6a53",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-809d7ef38d72",
+        "kind": "addition",
+        "event_key": "わくわく盆踊り||板橋フレンドセンター 校庭",
+        "actual_collector_sha256": "809d7ef38d72b6ef36ac3915346565202b209e8e1dbcf1bd7ce4e7ec9694e187",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-e4f6e4a23129",
+        "kind": "addition",
+        "event_key": "大谷口一丁目町会 納涼盆踊り大会||板橋第十小学校",
+        "actual_collector_sha256": "e4f6e4a231291de3fa13f07e48a378adb1f13b386adb8a6c256f200274fd8082",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-6965d796ee99",
+        "kind": "addition",
+        "event_key": "板橋仲町会・金沢自治会共催 盆踊り||板谷公園",
+        "actual_collector_sha256": "6965d796ee9906f3ff29594df0e20502169f3cc4c0177d1452687469c376d134",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-a36598246976",
+        "kind": "addition",
+        "event_key": "徳丸三ツ和会・徳丸平和会 合同盆踊り||紅梅小学校 校庭",
+        "actual_collector_sha256": "a36598246976418f239082dd9fbeed18921d227cbb03cff9cdf78d0490a51836",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-7118ac749163",
+        "kind": "addition",
+        "event_key": "舟渡町会 盆踊り大会||舟渡小学校 校庭",
+        "actual_collector_sha256": "7118ac749163dcdfdd352c49d3034573edfef8c30eef3070a40b582711490511",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-2d1b7a093708",
+        "kind": "addition",
+        "event_key": "中台若木町会 盆踊りフェス||若木小学校 校庭",
+        "actual_collector_sha256": "2d1b7a0937081697ed444f9e907f087af58caf8e62b03e677546830f6cbbc9c5",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-95709909a720",
+        "kind": "addition",
+        "event_key": "蓮根南町会 納涼盆踊り||蓮根みなみ公園",
+        "actual_collector_sha256": "95709909a720aa94cba1f53d30436afba3e0c87fa25ee06f133adebe65c690ff",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-1aa105e187a2",
+        "kind": "addition",
+        "event_key": "蓮根仲町会 盆踊り大会||蓮根中央商店街通り",
+        "actual_collector_sha256": "1aa105e187a2db443b624b14bb3e232493738cf24731a7c884641ab332ead952",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-f001a66af529",
+        "kind": "addition",
+        "event_key": "蓮沼東町会 盆踊り大会||蓮沼児童遊園",
+        "actual_collector_sha256": "f001a66af529476d862e1fcfe9104913fcd7f061652da2d8f1de8eedd18a0ed1",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-fa64700829f5",
+        "kind": "addition",
+        "event_key": "上赤塚町会 納涼盆踊り||赤塚氷川神社",
+        "actual_collector_sha256": "fa64700829f59948e6766312565480847c2950d842e5aa386c1f0d5b8bf0e812",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-a253a4d117ee",
+        "kind": "addition",
+        "event_key": "高島平七丁目町会 納涼盆踊り大会||高島平七丁目第二公園",
+        "actual_collector_sha256": "a253a4d117eec0199edaf3a15c82f2f4d2711184a95fab5f30b599c041c3acf6",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-9df063e5cd55",
+        "kind": "addition",
+        "event_key": "西台北町会 納涼盆踊り大会||高島平九丁目第二公園",
+        "actual_collector_sha256": "9df063e5cd55bb7fbec1440b86db60bfc24baf5e9080c8178b7570fb03ee4ac6",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-20260804-1322d8af3656",
+        "kind": "addition",
+        "event_key": "高島町会 納涼盆踊り大会||高島平五丁目第二公園",
+        "actual_collector_sha256": "1322d8af3656954ca6fd4c9b30b4d632d656bbe960fc1b86a635b53767989a3a",
         "status": "applied"
       }
     ]
   },
   "approved_classification": {
-    "collector_event_count": 288,
-    "site_event_count": 288,
+    "collector_event_count": 308,
+    "site_event_count": 308,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "high_risk_diff_record_count": 29,
+    "high_risk_event_count": 23,
+    "records_by_family": {
+      "historical_slide": 23,
+      "date_prediction": 6
+    },
+    "records_by_action": {
+      "individual_review": 23,
+      "low_priority_or_unclassified": 6
+    },
+    "events_by_action": {
+      "ended_transition_downgrade": 23
+    }
   },
-  "ended_transition_downgrades": [],
+  "ended_transition_downgrades": [
+    {
+      "event_name": "お花茶屋ふるさとまつり",
+      "venue": "お花茶屋公園",
+      "ended_on": "2026-08-03"
+    },
+    {
+      "event_name": "ふるさと和泉 みんなの夏祭り",
+      "venue": "杉並和泉学園校庭",
+      "ended_on": "2026-08-01"
+    },
+    {
+      "event_name": "上谷中町自治会 納涼盆踊り大会",
+      "venue": "しょうぶ沼公園",
+      "ended_on": "2026-08-03"
+    },
+    {
+      "event_name": "中央本町若松町会 盆踊り大会",
+      "venue": "若松公園",
+      "ended_on": "2026-08-01"
+    },
+    {
+      "event_name": "中川納涼大盆踊り大会",
+      "venue": "都立中川公園ふれあい広場",
+      "ended_on": "2026-08-02"
+    },
+    {
+      "event_name": "扇一丁目寺地明和会 盆踊り",
+      "venue": "扇南公園",
+      "ended_on": "2026-08-02"
+    },
+    {
+      "event_name": "扇南町会 盆踊り",
+      "venue": "三嶋神社",
+      "ended_on": "2026-08-02"
+    },
+    {
+      "event_name": "普賢寺自治会 納涼盆踊り大会",
+      "venue": "北野公園",
+      "ended_on": "2026-07-25"
+    },
+    {
+      "event_name": "本木北町みのり町会 盆踊り",
+      "venue": "田中稲荷神社",
+      "ended_on": "2026-07-26"
+    },
+    {
+      "event_name": "東京ソラマチ夏まつり・墨田区民納涼民踊大会",
+      "venue": "東京スカイツリータウン ソラマチひろば",
+      "ended_on": "2026-08-03"
+    },
+    {
+      "event_name": "東和一丁目自治会 納涼盆踊り大会",
+      "venue": "西沼公園",
+      "ended_on": "2026-07-19"
+    },
+    {
+      "event_name": "東和二丁目自治会・東和二丁目西自治会 納涼盆踊り大会",
+      "venue": "第六天公園",
+      "ended_on": "2026-07-26"
+    },
+    {
+      "event_name": "東淵江自治会 納涼盆踊り大会",
+      "venue": "稗田公園",
+      "ended_on": "2026-07-11"
+    },
+    {
+      "event_name": "梅田本町自治会 納涼盆踊り",
+      "venue": "梅田南公園",
+      "ended_on": "2026-08-01"
+    },
+    {
+      "event_name": "梅田正和町会 納涼盆踊り",
+      "venue": "関原中央公園",
+      "ended_on": "2026-07-18"
+    },
+    {
+      "event_name": "梅里中央公園盆おどり",
+      "venue": "梅里中央公園",
+      "ended_on": "2026-08-01"
+    },
+    {
+      "event_name": "綾瀬五・六丁目自治会 納涼盆踊り大会",
+      "venue": "東綾瀬公園",
+      "ended_on": "2026-07-19"
+    },
+    {
+      "event_name": "綾瀬東町会 納涼盆踊り大会",
+      "venue": "蛭沼公園",
+      "ended_on": "2026-08-01"
+    },
+    {
+      "event_name": "綾瀬自治会 納涼盆踊り大会",
+      "venue": "伊藤谷公園",
+      "ended_on": "2026-07-26"
+    },
+    {
+      "event_name": "興野町会 盆踊り",
+      "venue": "興野神社",
+      "ended_on": "2026-08-02"
+    },
+    {
+      "event_name": "蒲原自治会 納涼盆踊り大会",
+      "venue": "宮元公園",
+      "ended_on": "2026-07-26"
+    },
+    {
+      "event_name": "西武井荻商店街 納涼盆踊り大会",
+      "venue": "第一生命向い駐車場",
+      "ended_on": "2026-07-24"
+    },
+    {
+      "event_name": "高井戸ちびっ子ぼんおどり",
+      "venue": "高井戸地域区民センター広場",
+      "ended_on": "2026-07-30"
+    }
+  ],
   "blocking_examples": []
 }

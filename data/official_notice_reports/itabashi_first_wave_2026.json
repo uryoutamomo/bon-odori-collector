@@ -1,0 +1,162 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-04T00:45:00+09:00",
+  "source": {
+    "report_id": "itabashi_first_wave_2026",
+    "title": "板橋区 地域メディア集約＋X参加報告による盆踊り情報（2026年）",
+    "account_key": "いたばしTIMES（地元タイムズ株式会社）",
+    "url": "https://itabashi-times.com/archives/matsuri2026.html",
+    "notice_kind": "third_party_current_year",
+    "raw_text": "いたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（運営：地元タイムズ株式会社 https://itabashi-times.com/company ）に掲載された板橋区内の盆踊り。読者提供ポスターを集約した地域メディアのため、X上の参加報告（実際に会場を訪れた第三者の観測）で開催実績を裏取りしたうえで登録する。裏取りの中心は、2026年7月25日に区内20会場を巡回して会場ごとに主催町会名を記録した @nakayamashizu の一連の投稿。高島町会 納涼盆踊り大会／高島平五丁目第二公園／7月24日・25日。西台北町会 納涼盆踊り大会／高島平九丁目第二公園／7月24日・25日。板橋仲町会・金沢自治会共催 盆踊り／板谷公園／7月25日。中台若木町会 盆踊りフェス／若木小学校校庭／7月25日。上板橋二丁目町会 盆踊り大会／七軒家公園／7月25日。蓮根仲町会 盆踊り大会／蓮根中央商店街通り／7月25日。蓮根南町会 納涼盆踊り／蓮根みなみ公園／7月25日・26日。番匠免町会 盆踊り大会／松月院駐車場／7月25日・26日。上谷津町会 盆踊り会／下赤塚小学校校庭／7月25日・26日。西台町会 盆踊り大会／志村第五小学校校庭／7月25日・26日。蓮沼東町会 盆踊り大会／蓮沼児童遊園／7月25日・26日。高島平七丁目町会 納涼盆踊り大会／高島平七丁目第二公園／7月27日・28日。徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会／北野小学校／8月1日・2日。わくわく盆踊り／板橋フレンドセンター校庭／8月8日。徳丸三ツ和会・徳丸平和会 合同盆踊り／紅梅小学校校庭／8月8日・9日。小豆沢商友会 納涼盆踊り大会／志村第二中学校校庭／8月15日・16日。坂下一丁目南町会 盆踊り大会／志村公園特設会場／8月22日・23日。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "高島町会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-25",
+      "venue": {"name": "高島平五丁目第二公園", "area": "板橋区", "address": "東京都板橋区高島平5-24-1"},
+      "detail_addendum": "開催時間：7月24日16:00〜、7月25日18:00〜。主催：高島町会。出典：いたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績はX上の参加報告で裏取り済み（@nakayamashizu『高島平五丁目第二公園にて高島町会が開催している納涼盆踊り大会』 https://x.com/nakayamashizu/status/2080973374944354531 ／ @_OnoYuriko『高島町会さん、西台北町会さんの納涼盆踊り大会にお邪魔してまいりました』 https://x.com/_OnoYuriko/status/2081402922731188351 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "西台北町会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-25",
+      "venue": {"name": "高島平九丁目第二公園", "area": "板橋区", "address": "東京都板橋区高島平9丁目"},
+      "detail_addendum": "開催時間：16:30〜20:00（25日は20:30まで）。主催：西台北町会。出典のいたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）では『西台北町会 納涼祭』として掲載され盆踊りの明記がなかったが、X上の参加報告2件で盆踊りの実施を確認したため登録した（@nakayamashizu『高島平九丁目第二公園にて西台北町会の納涼盆踊り大会』 https://x.com/nakayamashizu/status/2080966585922236498 ／ @_OnoYuriko https://x.com/_OnoYuriko/status/2081402922731188351 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "板橋仲町会・金沢自治会共催 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "venue": {"name": "板谷公園", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：18:00〜20:00。主催：板橋仲町会・金沢自治会（共催）。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績はX上の参加報告で裏取り済み（@rollingasahi『板谷公園盆踊り大会 無事終了』 https://x.com/rollingasahi/status/2080976593368002868 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "中台若木町会 盆踊りフェス",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "venue": {"name": "若木小学校 校庭", "area": "板橋区", "address": "東京都板橋区若木1-14-1"},
+      "detail_addendum": "元の告知表記は『中台若木町会 盆踊りフェス 2026』。開催時間：16:00〜20:00。主催：中台若木町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績はX上の複数報告で裏取り済み（出店者 @TRENTE2022 の事前告知『7/25(土)は若木小学校で盆踊りです。16:00〜20:00』 https://x.com/TRENTE2022/status/2079083315664146561 ／ @takazawa1 が総合型地域スポーツクラブのダンスサークル出演を報告 https://x.com/takazawa1/status/2080997057008140487 ／ @yamada_takayuki https://x.com/yamada_takayuki/status/2081001253908426947 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "上板橋二丁目町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "venue": {"name": "七軒家公園", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：17:00〜20:30。主催：上板橋二丁目町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績はX上の参加報告で裏取り済み（@takazawa1 が7月25日に上板橋二丁目・上板橋サンライトマンションほか6町会を巡回 https://x.com/takazawa1/status/2080991919329742997 ）。なお @terada164 は『サンライト自治会・上板橋2丁目町会合同の納涼盆踊り』と記しており（ https://x.com/terada164/status/2080962234558341602 ）、サンライト自治会との合同開催の可能性があるが、いたばしTIMESの表記は上板橋二丁目町会単独のため主催表記は据え置いた。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "蓮根仲町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "venue": {"name": "蓮根中央商店街通り", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：17:00〜20:30。主催：蓮根仲町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。この1件のみ、X上の個別の参加報告は確認できておらず、根拠は地域メディアの集約のみ。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "蓮根南町会 納涼盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "蓮根みなみ公園", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：18:30〜20:30。主催：蓮根南町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。7月25日の開催実績はX上の参加報告で裏取り済み（@nakayamashizu『蓮根みなみ公園にて蓮根南町会が開催している納涼盆踊り大会』 https://x.com/nakayamashizu/status/2080959277175607767 ）。7月26日はポスター由来の予定で、@takasho06130613 の同日の会場リストにも挙がっている（ https://x.com/takasho06130613/status/2081236099570245939 ）が、実施の確認は取れていない。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "番匠免町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "松月院 駐車場", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：7月25日17:00〜21:00、7月26日17:00〜20:30。主催：番匠免町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績は両日ともX上の参加報告で裏取り済み（7月25日＝@nakayamashizu『20箇所目は松月院にて番匠免町会が開催している納涼盆踊り大会』 https://x.com/nakayamashizu/status/2080982355498734040 ／ 7月26日＝@jissyo_itabashi https://x.com/jissyo_itabashi/status/2081405524961272224 、@bakushin339711『7/26(日) オススメされた板橋区の松月院の盆踊りへお伺い。1時間前倒しで開催の報せが入り…無事20時まで雨の様子見ながら中断しつつ』 https://x.com/bakushin339711/status/2082355203135930443 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "上谷津町会 盆踊り会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "下赤塚小学校 校庭", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：7月25日17:00〜21:00、7月26日17:00〜20:30。主催：上谷津町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績は両日ともX上の参加報告で裏取り済み（7月25日＝@nakayamashizu『下赤塚小学校にて上谷津町会の納涼盆踊り大会』 https://x.com/nakayamashizu/status/2080978372805726256 ／ 7月26日＝@jissyo_itabashi『下赤塚小学校校庭で開催の上谷津町会・盆踊り大会』 https://x.com/jissyo_itabashi/status/2081405524961272224 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "西台町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "志村第五小学校 校庭", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：18:30〜20:30。主催：西台町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績は両日ともX上の参加報告で裏取り済み（7月25日＝@nakayamashizu『志村第五小学校にて西台町会が開催している納涼盆踊り大会』 https://x.com/nakayamashizu/status/2080963272103342270 、@rollingasahi https://x.com/rollingasahi/status/2081151984053469532 ／ 7月26日＝@rollingasahi『志村第五小学校よ！私は帰って来た！』 https://x.com/rollingasahi/status/2081297728991273031 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "蓮沼東町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "蓮沼児童遊園", "area": "板橋区", "address": "東京都板橋区蓮沼町1"},
+      "detail_addendum": "開催時間：7月25日19:00〜21:00、7月26日18:00〜20:00。主催：蓮沼東町会。出典のいたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）ではイベント名が町会名のみで盆踊りの明記がなかったが、X上の参加報告で盆踊りの実施を確認したため登録した（@nakayamashizu『蓮沼児童遊園にて蓮沼東町会が開催している盆踊り大会』 https://x.com/nakayamashizu/status/2080947897949094352 ）。7月26日はポスター由来の予定で、@takasho06130613 の同日の会場リストにも挙がっている（ https://x.com/takasho06130613/status/2081236099570245939 ）が、実施の確認は取れていない。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "高島平七丁目町会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-27",
+      "date_end": "2026-07-28",
+      "venue": {"name": "高島平七丁目第二公園", "area": "板橋区", "address": "東京都板橋区高島平7丁目"},
+      "detail_addendum": "開催時間：19:00〜21:00。主催：高島平七丁目町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績は両日ともX上の参加報告で裏取り済み（7月27日＝@bakushin339711『7/27(月) 高島平7丁目第2公園盆踊りへお伺い』 https://x.com/bakushin339711/status/2082355282072756386 ／ 7月28日＝@nakayamashizu『高島平七丁目第二公園にて高島平七丁目町会の納涼盆踊り大会にお邪魔して』 https://x.com/nakayamashizu/status/2082035282380210564 、@takasho06130613『7/28(火)高島平七丁目第二公園盆踊り』 https://x.com/takasho06130613/status/2082088776441164086 ）。7月開催のため登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "venue": {"name": "北野小学校", "area": "板橋区", "address": "東京都板橋区徳丸3-23-1"},
+      "detail_addendum": "元の告知表記はいたばしTIMESでは『3町会合同 盆踊り大会』。開催時間：17:00〜20:00。主催団体名は、現地を訪れた @nakayamashizu が『北野小学校にて徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォートの盆踊り大会』と記録しており（ https://x.com/nakayamashizu/status/2083495756858814743 ）、集約記事の『3町会』より1団体多い4団体だったため、こちらを採用した。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。開催実績は両日ともX上の参加報告で裏取り済み（8月1日＝上記 @nakayamashizu、@rollingasahi『北野小学校よ！私は帰って来た！』 https://x.com/rollingasahi/status/2083473960088592630 ／ 8月2日＝@TodaBon『8/2は板橋区北野小学校盆踊り大会にお邪魔しました。日曜に初めて踊った曲が気になっていたところ、ここでかかりました！「おどりの輪」でしたね』 https://x.com/TodaBon/status/2084144299776868613 ）。登録時点で終了済み。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "わくわく盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-08",
+      "venue": {"name": "板橋フレンドセンター 校庭", "area": "板橋区", "address": "東京都板橋区富士見町3-1"},
+      "detail_addendum": "開催時間：18:00〜20:30。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。主催団体はページ本文に記載がなく未確認。X上の個別の参加報告も現時点では確認できていない。登録時点では開催予定。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "徳丸三ツ和会・徳丸平和会 合同盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-08",
+      "date_end": "2026-08-09",
+      "venue": {"name": "紅梅小学校 校庭", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "元の告知表記は『合同盆踊り』。開催時間：17:00〜20:30。主催：徳丸三ツ和会・徳丸平和会の合同。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。X上の個別の参加報告は現時点では確認できていない。登録時点では開催予定。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "小豆沢商友会 納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-15",
+      "date_end": "2026-08-16",
+      "venue": {"name": "志村第二中学校 校庭", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：18:30〜20:30。主催：小豆沢商友会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。X上の個別の参加報告は現時点では確認できていない。登録時点では開催予定。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "坂下一丁目南町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {"name": "志村公園 特設会場", "area": "板橋区", "address": "東京都板橋区"},
+      "detail_addendum": "開催時間：8月22日18:00〜21:00、8月23日17:30〜20:30。主催：坂下一丁目南町会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。X上の個別の参加報告は現時点では確認できていない。登録時点では開催予定。"
+    }
+  ]
+}

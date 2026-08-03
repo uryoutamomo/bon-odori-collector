@@ -1,0 +1,152 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-08-03T15:44:51.671392+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/itabashi_x_reports_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260803T154451.671392+0000.sqlite.bak",
+    "json": "data/itabashi_x_reports_apply.json",
+    "markdown": "data/itabashi_x_reports_apply.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 362,
+      "event_series": 346,
+      "event_series_aliases": 24,
+      "evidence_items": 31326,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 415,
+      "occurrence_evidence_links": 220,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 508,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 402,
+      "venues": 342,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-08-04T00:55:00+09:00",
+    "source": {
+      "report_id": "itabashi_x_reports_2026",
+      "title": "板橋区 X参加報告のみを根拠とする盆踊り情報（2026年）",
+      "account_key": "X（複数の参加者・地域関係者による現地報告）",
+      "url": "https://x.com/nakayamashizu/status/2080955546291839306",
+      "notice_kind": "third_party_current_year",
+      "raw_text": "いたばしTIMESの夏祭りまとめ（https://itabashi-times.com/archives/matsuri2026.html ）には掲載がないが、X上の現地参加報告で開催が確認できた板橋区内の盆踊り3件。いずれも会場と主催団体が投稿本文で対になって記録されている。舟渡町会 盆踊り大会／舟渡小学校校庭／7月25日（26日は中止）。上赤塚町会 納涼盆踊り／赤塚氷川神社／7月25日。大谷口一丁目町会 納涼盆踊り大会／板橋第十小学校／8月1日。"
+    },
+    "events": [
+      {
+        "action": "register_new",
+        "event_name_hint": "舟渡町会 盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-07-25",
+        "venue": {
+          "name": "舟渡小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        },
+        "detail_addendum": "主催：舟渡町会。地域メディアの夏祭りまとめには掲載がなく、X上の現地報告のみを根拠に登録した。5つの独立したアカウントが同日の開催を報告している（@nakayamashizu『舟渡小学校にて舟渡町会が開催している板橋盆踊り大会』 https://x.com/nakayamashizu/status/2080955546291839306 ／ @w__kazumi『#舟渡町会 の #盆踊り へ。雨予報で開催が心配されましたが、無事にスタート』 https://x.com/w__kazumi/status/2081030405210468787 ／ @bakushin339711『7/25(土) 板橋区舟渡小の盆踊りへ。貴重な板橋5大+舟渡ひろがり音頭踊れて満足』 https://x.com/bakushin339711/status/2082355056104673669 ／ @BagPacker2023『板橋week 第三弾、舟渡小学校。板橋のご当地曲が殆ど』 https://x.com/BagPacker2023/status/2081035200172380402 ／ @takasho06130613 https://x.com/takasho06130613/status/2081016072388427826 ）。当日の曲目は @takasho06130613 の記録によると、東京音頭／炭鉱節／東京スカイツリー音頭／ホームラン音頭／河内おとこ節／板橋音頭(輪)／一番はじめは／板橋二輪草音頭／板橋区町会連合会音頭／舞い上がれITABASHI／きよしのズンドコ節／ごちそう讃／毬と殿様／舟渡ひろがり音頭。会場では7月16日に舟渡ホールで事前の練習会も開かれている（ https://x.com/takasho06130613/status/2077683131529007526 ）。翌7月26日は中止となった（@takasho06130613『【お知らせ】7/26(日) 舟渡小学校盆踊りは中止となりました』 https://x.com/takasho06130613/status/2081268762037059620 ）ため、開催日は7月25日のみとして登録している。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "上赤塚町会 納涼盆踊り",
+        "event_year": 2026,
+        "date_start": "2026-07-25",
+        "venue": {
+          "name": "赤塚氷川神社",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        },
+        "detail_addendum": "主催：上赤塚町会。地域メディアの夏祭りまとめには掲載がなく、X上の現地報告のみを根拠に登録した。2つの独立したアカウントが報告している（@nakayamashizu『赤塚氷川神社にて上赤塚町会が開催している納涼盆踊り』 https://x.com/nakayamashizu/status/2080975143577555057 ／ @jissyo_itabashi『私も地元で所属している、上赤塚町会の盆踊り大会へ。会場の氷川神社は、大変多くの家族連れなどで盛り上がっておりました』 https://x.com/jissyo_itabashi/status/2081046660621459614 ）。@takasho06130613 の7月26日の会場リストにも赤塚氷川神社が挙がっている（ https://x.com/takasho06130613/status/2081236099570245939 ）が、26日の実施確認は取れていないため、開催日は7月25日のみとして登録している。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "大谷口一丁目町会 納涼盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-08-01",
+        "venue": {
+          "name": "板橋第十小学校",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        },
+        "detail_addendum": "主催：大谷口一丁目町会。地域メディアの夏祭りまとめには掲載がなく、X上の現地報告のみを根拠に登録した（@nakayamashizu『板橋第十小学校にて大谷口一丁目町会の納涼盆踊り大会』 https://x.com/nakayamashizu/status/2083481702018785397 ）。根拠が1件のみのため、開催日は報告のあった8月1日のみとしている。複数日開催の可能性は否定できない。登録時点で終了済み。"
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_90e7daea68b4496c",
+    "events_applied": [
+      {
+        "action": "register_new",
+        "series_id": "series_58adc2001f54172a",
+        "series_created": true,
+        "occurrence_id": "occ_8d8a4036f11c5874",
+        "venue_id": "venue_56a17524f0402611",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_e2b53a04e8b2585b",
+        "series_created": true,
+        "occurrence_id": "occ_fc74cc7f0868ba17",
+        "venue_id": "venue_7885849a67434a90",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_90b68944c641d05e",
+        "series_created": true,
+        "occurrence_id": "occ_c0077e9258ce2e98",
+        "venue_id": "venue_e315217a84e99002",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}
