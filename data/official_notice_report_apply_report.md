@@ -1,27 +1,26 @@
 # Official notice report apply result
 
-- generated_at: 2026-08-03T14:28:34.955151+00:00
+- generated_at: 2026-08-03T14:42:52.791991+00:00
 - mode: apply
 - resolved: True
-- events_applied: 5
+- events_applied: 4
 - events_unresolved: 0
 - target_db: `data/bon_odori_master.sqlite`
 - dry_run_db: ``
-- backup_db: `data/backups/bon_odori_master.20260803T142834.955151+0000.sqlite.bak`
+- backup_db: `data/backups/bon_odori_master.20260803T144252.791991+0000.sqlite.bak`
 - db_committed: True
 - rolled_back: False
 - issues_by_severity: {}
 - audit_issues_by_severity: {}
 
-- evidence_id: `ev_7f38fb1278a33e7c`
+- evidence_id: `ev_1cbac5578ee3b766`
 
 ## Applied events
 
-- register_new occ_19a7483ef6395dfb (songs: 0; series_id: `series_d54b932297444e06`, series_created: True, venue_status: created)
-- register_new occ_b5da8301aae875f0 (songs: 0; series_id: `series_bccfd9d9a08b64ed`, series_created: True, venue_status: created)
-- register_new occ_22bfe7f4f6dd54cb (songs: 0; series_id: `series_9771037530f84ec2`, series_created: True, venue_status: created)
-- register_new occ_ee34fb3bfe68aad1 (songs: 0; series_id: `series_1cb17d5ce3dc2940`, series_created: True, venue_status: created)
-- register_new occ_2ce79fad1bbb4348 (songs: 0; series_id: `series_8a1be62d95f59220`, series_created: True, venue_status: created)
+- register_new occ_a748cf862474971b (songs: 0; series_id: `series_246d180b3e771796`, series_created: True, venue_status: created)
+- register_new occ_eaaff144ec744dd6 (songs: 0; series_id: `series_3fc45d6317c8bee7`, series_created: True, venue_status: created)
+- register_new occ_a6a07e16b806b14c (songs: 0; series_id: `series_38f3f0382a8105af`, series_created: True, venue_status: created)
+- register_new occ_5c0b8546b2496353 (songs: 0; series_id: `series_666ce9a284230fed`, series_created: True, venue_status: created)
 
 ## Next step
 

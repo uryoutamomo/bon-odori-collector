@@ -2,7 +2,7 @@
 
 **Note**: This guard checks for blocking diffs only. Guard status `pass` means no blocking issues remain, but is NOT a deploy approval. Deploy decisions require explicit confirmation from the operator.
 
-- generated_at: 2026-08-03T14:34:39.760766+00:00
+- generated_at: 2026-08-03T14:43:54.644574+00:00
 - scope: read_only_public_sync_guard_no_writes
 - status: pass
 - safe_to_wholesale_sync: True
@@ -20,9 +20,9 @@ These warnings mean the public-event publication flow may have skipped a review 
 
 ## Raw Collector vs Site
 
-- collector_event_count: 284
-- site_event_count: 258
-- collector_only_count: 26
+- collector_event_count: 288
+- site_event_count: 284
+- collector_only_count: 4
 - site_only_count: 0
 - high_risk_diff_record_count: 0
 - high_risk_event_count: 0
@@ -32,9 +32,9 @@ These warnings mean the public-event publication flow may have skipped a review 
 
 ## After Required Public Postprocessors
 
-- collector_event_count: 284
-- site_event_count: 258
-- collector_only_count: 26
+- collector_event_count: 288
+- site_event_count: 284
+- collector_only_count: 4
 - site_only_count: 0
 - high_risk_diff_record_count: 0
 - high_risk_event_count: 0
@@ -46,14 +46,14 @@ These warnings mean the public-event publication flow may have skipped a review 
 
 - schema: public_sync_exact_approvals_v1
 - status: pass
-- approval_count: 143
-- status_counts: {'already_synced': 110, 'inactive': 7, 'applied': 26}
+- approval_count: 147
+- status_counts: {'already_synced': 136, 'inactive': 7, 'applied': 4}
 - failure_count: 0
 
 ## After Reviewed Exact Approvals
 
-- collector_event_count: 284
-- site_event_count: 284
+- collector_event_count: 288
+- site_event_count: 288
 - collector_only_count: 0
 - site_only_count: 0
 - high_risk_diff_record_count: 0

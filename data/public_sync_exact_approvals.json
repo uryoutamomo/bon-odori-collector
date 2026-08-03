@@ -1,6 +1,6 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-08-03T14:34:32Z",
+  "reviewed_at": "2026-08-03T14:43:38Z",
   "reviewed_by": "koto",
   "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと） / 2026-08-01: 7/31に開催終了した5件（御徒町公園の盆踊り大会・道塚盆踊り・盆踊りフェス・大松氷川神社 納涼盆踊り大会・旭町一丁目町会 盆踊り）の same_key_update 承認を除去。7/29の登録時点から site・collector 双方が更新済みで承認は消費済みになっており、残置すると upcoming→ended の表示変更が reviewed_exact_approval_mismatch で公開同期を止め続けるため（2026-08-01の sync-public-data 失敗の直接原因）。差分は表示区分3フィールドのみで日付は不変、guard 側は ended_transition_downgrade として自動許可済み。内田さん明示GO。",
   "site_base_commit": "472d6b931991e66df6d18753d0f83e63a25328a3",
@@ -1086,6 +1086,34 @@
       "event_key": "本木東町会 盆踊り||御嶽神社",
       "collector_sha256": "a19ea9c18793ec79da3794a54a610aed6bf886723a107a008dfeb8d4a1c3ae67",
       "reason": "2026-08-03 内田さん承認のうえ master RDB へ新規登録した足立区の盆踊り（足立区公式・各区民事務所ページより）。区別の穴埋め（足立26件のうち中央本町3/東綾瀬12/梅田4/中川2/興本5=計26件）"
+    },
+    {
+      "id": "reviewed-addition-suginami-20260803-4e6fd88e67ec",
+      "kind": "addition",
+      "event_key": "高井戸ちびっ子ぼんおどり||高井戸地域区民センター広場",
+      "collector_sha256": "4e6fd88e67ec0847f222a8cc9e95ebb645dd283a6946d1ceada13c2c251a1393",
+      "reason": "2026-08-03 内田さん承認のうえ master RDB へ新規登録した杉並区の盆踊り4件（地域団体・商店街ページ由来）。区別の穴埋め"
+    },
+    {
+      "id": "reviewed-addition-suginami-20260803-fdf954c2e5b7",
+      "kind": "addition",
+      "event_key": "西武井荻商店街 納涼盆踊り大会||第一生命向い駐車場",
+      "collector_sha256": "fdf954c2e5b75dc11253218b3e1d43a8a286d1b0ed3547db1a530347e84049ab",
+      "reason": "2026-08-03 内田さん承認のうえ master RDB へ新規登録した杉並区の盆踊り4件（地域団体・商店街ページ由来）。区別の穴埋め"
+    },
+    {
+      "id": "reviewed-addition-suginami-20260803-85e4f6eae69a",
+      "kind": "addition",
+      "event_key": "梅里中央公園盆おどり||梅里中央公園",
+      "collector_sha256": "85e4f6eae69aefcdfad87efad88ac78b28cab5864597cb7344ce3b926163c866",
+      "reason": "2026-08-03 内田さん承認のうえ master RDB へ新規登録した杉並区の盆踊り4件（地域団体・商店街ページ由来）。区別の穴埋め"
+    },
+    {
+      "id": "reviewed-addition-suginami-20260803-17b97cfde1c4",
+      "kind": "addition",
+      "event_key": "ふるさと和泉 みんなの夏祭り||杉並和泉学園校庭",
+      "collector_sha256": "17b97cfde1c4270efa353f0f4743fd2c26585c8c105ab65df96a7280137bba02",
+      "reason": "2026-08-03 内田さん承認のうえ master RDB へ新規登録した杉並区の盆踊り4件（地域団体・商店街ページ由来）。区別の穴埋め"
     }
   ]
 }
