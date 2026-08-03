@@ -1,0 +1,360 @@
+{
+  "mode": "apply",
+  "as_of_date": "2026-08-04",
+  "count": 39,
+  "targets": [
+    {
+      "occurrence_id": "occ_d19e0b5cbc714b37",
+      "event_name": "東淵江自治会 納涼盆踊り大会",
+      "date_start": "2026-07-10",
+      "date_end": "2026-07-11",
+      "schedule_end": "2026-07-11",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_4f1d73d88107bd3b",
+      "event_name": "梅田正和町会 納涼盆踊り",
+      "date_start": "2026-07-17",
+      "date_end": "2026-07-18",
+      "schedule_end": "2026-07-18",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_9a03d5f3c4364fc1",
+      "event_name": "東和一丁目自治会 納涼盆踊り大会",
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "schedule_end": "2026-07-19",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_e9c9ae8725fcb43b",
+      "event_name": "綾瀬五・六丁目自治会 納涼盆踊り大会",
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "schedule_end": "2026-07-19",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_eaaff144ec744dd6",
+      "event_name": "西武井荻商店街 納涼盆踊り大会",
+      "date_start": "2026-07-23",
+      "date_end": "2026-07-24",
+      "schedule_end": "2026-07-24",
+      "area": "杉並区"
+    },
+    {
+      "occurrence_id": "occ_704e02ef8a303789",
+      "event_name": "上板橋二丁目町会 盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_fc74cc7f0868ba17",
+      "event_name": "上赤塚町会 納涼盆踊り",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_5c45e92cefe80416",
+      "event_name": "中台若木町会 盆踊りフェス",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_951471887b6accfc",
+      "event_name": "普賢寺自治会 納涼盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_9504af8dd208ca10",
+      "event_name": "板橋仲町会・金沢自治会共催 盆踊り",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_8d8a4036f11c5874",
+      "event_name": "舟渡町会 盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_d5fe44f35a4c6208",
+      "event_name": "蓮根仲町会 盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_f6616b661a481009",
+      "event_name": "西台北町会 納涼盆踊り大会",
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_ad6ed05fa96c3735",
+      "event_name": "高島町会 納涼盆踊り大会",
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-25",
+      "schedule_end": "2026-07-25",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_c1d14ab9991f5c74",
+      "event_name": "上谷津町会 盆踊り会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_19a7483ef6395dfb",
+      "event_name": "本木北町みのり町会 盆踊り",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_994dbbf22781f684",
+      "event_name": "東和二丁目自治会・東和二丁目西自治会 納涼盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_210070a96556cbd1",
+      "event_name": "番匠免町会 盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_aa858509eb6b29da",
+      "event_name": "綾瀬自治会 納涼盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_cad96715922a3a5e",
+      "event_name": "蒲原自治会 納涼盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_30f0498f563b2112",
+      "event_name": "蓮根南町会 納涼盆踊り",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_f8047d46e100b5a1",
+      "event_name": "蓮沼東町会 盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_9451ac100f1d2458",
+      "event_name": "西台町会 盆踊り大会",
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "schedule_end": "2026-07-26",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_fa48ecbc1a691232",
+      "event_name": "高島平七丁目町会 納涼盆踊り大会",
+      "date_start": "2026-07-27",
+      "date_end": "2026-07-28",
+      "schedule_end": "2026-07-28",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_a748cf862474971b",
+      "event_name": "高井戸ちびっ子ぼんおどり",
+      "date_start": "2026-07-29",
+      "date_end": "2026-07-30",
+      "schedule_end": "2026-07-30",
+      "area": "杉並区"
+    },
+    {
+      "occurrence_id": "occ_5c0b8546b2496353",
+      "event_name": "ふるさと和泉 みんなの夏祭り",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-01",
+      "schedule_end": "2026-08-01",
+      "area": "杉並区"
+    },
+    {
+      "occurrence_id": "occ_7ef2b19a4c05d36c",
+      "event_name": "中央本町若松町会 盆踊り大会",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-01",
+      "schedule_end": "2026-08-01",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_c0077e9258ce2e98",
+      "event_name": "大谷口一丁目町会 納涼盆踊り大会",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-01",
+      "schedule_end": "2026-08-01",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_348009214ac2af4d",
+      "event_name": "梅田本町自治会 納涼盆踊り",
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-01",
+      "schedule_end": "2026-08-01",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_a6a07e16b806b14c",
+      "event_name": "梅里中央公園盆おどり",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-01",
+      "schedule_end": "2026-08-01",
+      "area": "杉並区"
+    },
+    {
+      "occurrence_id": "occ_a7fc1ef10e6525c6",
+      "event_name": "綾瀬東町会 納涼盆踊り大会",
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-01",
+      "schedule_end": "2026-08-01",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_58cfdf114346a3f2",
+      "event_name": "中川納涼大盆踊り大会",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "schedule_end": "2026-08-02",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_d3250992e775db8a",
+      "event_name": "徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "schedule_end": "2026-08-02",
+      "area": "板橋区"
+    },
+    {
+      "occurrence_id": "occ_b5da8301aae875f0",
+      "event_name": "扇一丁目寺地明和会 盆踊り",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "schedule_end": "2026-08-02",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_22bfe7f4f6dd54cb",
+      "event_name": "扇南町会 盆踊り",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "schedule_end": "2026-08-02",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_ee34fb3bfe68aad1",
+      "event_name": "興野町会 盆踊り",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "schedule_end": "2026-08-02",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_9183bc6314ad617f",
+      "event_name": "お花茶屋ふるさとまつり",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-03",
+      "schedule_end": "2026-08-03",
+      "area": "葛飾区"
+    },
+    {
+      "occurrence_id": "occ_443985bc0d58b78d",
+      "event_name": "上谷中町自治会 納涼盆踊り大会",
+      "date_start": "2026-08-02",
+      "date_end": "2026-08-03",
+      "schedule_end": "2026-08-03",
+      "area": "足立区"
+    },
+    {
+      "occurrence_id": "occ_566b5bc51399124e",
+      "event_name": "東京ソラマチ夏まつり・墨田区民納涼民踊大会",
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-03",
+      "schedule_end": "2026-08-03",
+      "area": "墨田区"
+    }
+  ],
+  "transitioned_occurrence_ids": [
+    "occ_d19e0b5cbc714b37",
+    "occ_4f1d73d88107bd3b",
+    "occ_9a03d5f3c4364fc1",
+    "occ_e9c9ae8725fcb43b",
+    "occ_eaaff144ec744dd6",
+    "occ_704e02ef8a303789",
+    "occ_fc74cc7f0868ba17",
+    "occ_5c45e92cefe80416",
+    "occ_951471887b6accfc",
+    "occ_9504af8dd208ca10",
+    "occ_8d8a4036f11c5874",
+    "occ_d5fe44f35a4c6208",
+    "occ_f6616b661a481009",
+    "occ_ad6ed05fa96c3735",
+    "occ_c1d14ab9991f5c74",
+    "occ_19a7483ef6395dfb",
+    "occ_994dbbf22781f684",
+    "occ_210070a96556cbd1",
+    "occ_aa858509eb6b29da",
+    "occ_cad96715922a3a5e",
+    "occ_30f0498f563b2112",
+    "occ_f8047d46e100b5a1",
+    "occ_9451ac100f1d2458",
+    "occ_fa48ecbc1a691232",
+    "occ_a748cf862474971b",
+    "occ_5c0b8546b2496353",
+    "occ_7ef2b19a4c05d36c",
+    "occ_c0077e9258ce2e98",
+    "occ_348009214ac2af4d",
+    "occ_a6a07e16b806b14c",
+    "occ_a7fc1ef10e6525c6",
+    "occ_58cfdf114346a3f2",
+    "occ_d3250992e775db8a",
+    "occ_b5da8301aae875f0",
+    "occ_22bfe7f4f6dd54cb",
+    "occ_ee34fb3bfe68aad1",
+    "occ_9183bc6314ad617f",
+    "occ_443985bc0d58b78d",
+    "occ_566b5bc51399124e"
+  ]
+}

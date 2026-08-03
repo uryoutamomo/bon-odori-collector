@@ -1114,6 +1114,146 @@
       "event_key": "ふるさと和泉 みんなの夏祭り||杉並和泉学園校庭",
       "collector_sha256": "17b97cfde1c4270efa353f0f4743fd2c26585c8c105ab65df96a7280137bba02",
       "reason": "2026-08-03 内田さん承認のうえ master RDB へ新規登録した杉並区の盆踊り4件（地域団体・商店街ページ由来）。区別の穴埋め"
+    },
+    {
+      "id": "reviewed-addition-20260804-f90b185c000c",
+      "kind": "addition",
+      "event_key": "上板橋二丁目町会 盆踊り大会||七軒家公園",
+      "collector_sha256": "f90b185c000c17377d1522b5ffea317d129cc0697988dd7019d6599970468d05",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-6a9c10abe825",
+      "kind": "addition",
+      "event_key": "上谷津町会 盆踊り会||下赤塚小学校 校庭",
+      "collector_sha256": "6a9c10abe8252483187aa4cf88c6b945b81501d737119ab4803f6c36cf52d488",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-4afc36892883",
+      "kind": "addition",
+      "event_key": "徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会||北野小学校",
+      "collector_sha256": "4afc36892883244ec03886d8d15664addcf456abd9e8875a073f0d4a38441b50",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-debd789e550a",
+      "kind": "addition",
+      "event_key": "坂下一丁目南町会 盆踊り大会||志村公園 特設会場",
+      "collector_sha256": "debd789e550aa37cbf17a4bf0941608c8b695c52ab9d0150395258a4b3f47ba7",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-7b5217d0fc10",
+      "kind": "addition",
+      "event_key": "小豆沢商友会 納涼盆踊り大会||志村第二中学校 校庭",
+      "collector_sha256": "7b5217d0fc10e15b08b1569f528c1e651d41816ead04264e9c3fcf79c5245f01",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-754208b36a18",
+      "kind": "addition",
+      "event_key": "西台町会 盆踊り大会||志村第五小学校 校庭",
+      "collector_sha256": "754208b36a18e8d8d7168477375174b3c372c84e7220890630cbe25e90232fb8",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-a3f5835afcfc",
+      "kind": "addition",
+      "event_key": "番匠免町会 盆踊り大会||松月院 駐車場",
+      "collector_sha256": "a3f5835afcfc544016a5eba813b9e22b3d7866f2b70a7bf03077ed74572d6a53",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-809d7ef38d72",
+      "kind": "addition",
+      "event_key": "わくわく盆踊り||板橋フレンドセンター 校庭",
+      "collector_sha256": "809d7ef38d72b6ef36ac3915346565202b209e8e1dbcf1bd7ce4e7ec9694e187",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-e4f6e4a23129",
+      "kind": "addition",
+      "event_key": "大谷口一丁目町会 納涼盆踊り大会||板橋第十小学校",
+      "collector_sha256": "e4f6e4a231291de3fa13f07e48a378adb1f13b386adb8a6c256f200274fd8082",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。地域メディアの夏祭りまとめには掲載がなく、X上の複数の現地参加報告のみを根拠とする。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-6965d796ee99",
+      "kind": "addition",
+      "event_key": "板橋仲町会・金沢自治会共催 盆踊り||板谷公園",
+      "collector_sha256": "6965d796ee9906f3ff29594df0e20502169f3cc4c0177d1452687469c376d134",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-a36598246976",
+      "kind": "addition",
+      "event_key": "徳丸三ツ和会・徳丸平和会 合同盆踊り||紅梅小学校 校庭",
+      "collector_sha256": "a36598246976418f239082dd9fbeed18921d227cbb03cff9cdf78d0490a51836",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-7118ac749163",
+      "kind": "addition",
+      "event_key": "舟渡町会 盆踊り大会||舟渡小学校 校庭",
+      "collector_sha256": "7118ac749163dcdfdd352c49d3034573edfef8c30eef3070a40b582711490511",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。地域メディアの夏祭りまとめには掲載がなく、X上の複数の現地参加報告のみを根拠とする。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-2d1b7a093708",
+      "kind": "addition",
+      "event_key": "中台若木町会 盆踊りフェス||若木小学校 校庭",
+      "collector_sha256": "2d1b7a0937081697ed444f9e907f087af58caf8e62b03e677546830f6cbbc9c5",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-95709909a720",
+      "kind": "addition",
+      "event_key": "蓮根南町会 納涼盆踊り||蓮根みなみ公園",
+      "collector_sha256": "95709909a720aa94cba1f53d30436afba3e0c87fa25ee06f133adebe65c690ff",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-1aa105e187a2",
+      "kind": "addition",
+      "event_key": "蓮根仲町会 盆踊り大会||蓮根中央商店街通り",
+      "collector_sha256": "1aa105e187a2db443b624b14bb3e232493738cf24731a7c884641ab332ead952",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-f001a66af529",
+      "kind": "addition",
+      "event_key": "蓮沼東町会 盆踊り大会||蓮沼児童遊園",
+      "collector_sha256": "f001a66af529476d862e1fcfe9104913fcd7f061652da2d8f1de8eedd18a0ed1",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-fa64700829f5",
+      "kind": "addition",
+      "event_key": "上赤塚町会 納涼盆踊り||赤塚氷川神社",
+      "collector_sha256": "fa64700829f59948e6766312565480847c2950d842e5aa386c1f0d5b8bf0e812",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。地域メディアの夏祭りまとめには掲載がなく、X上の複数の現地参加報告のみを根拠とする。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-a253a4d117ee",
+      "kind": "addition",
+      "event_key": "高島平七丁目町会 納涼盆踊り大会||高島平七丁目第二公園",
+      "collector_sha256": "a253a4d117eec0199edaf3a15c82f2f4d2711184a95fab5f30b599c041c3acf6",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-9df063e5cd55",
+      "kind": "addition",
+      "event_key": "西台北町会 納涼盆踊り大会||高島平九丁目第二公園",
+      "collector_sha256": "9df063e5cd55bb7fbec1440b86db60bfc24baf5e9080c8178b7570fb03ee4ac6",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
+    },
+    {
+      "id": "reviewed-addition-20260804-1322d8af3656",
+      "kind": "addition",
+      "event_key": "高島町会 納涼盆踊り大会||高島平五丁目第二公園",
+      "collector_sha256": "1322d8af3656954ca6fd4c9b30b4d632d656bbe960fc1b86a635b53767989a3a",
+      "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録した板橋区のイベント。出典はいたばしTIMES『【板橋区】夏祭り情報まとめ【2026年7月〜】』（https://itabashi-times.com/archives/matsuri2026.html ）と、X上の現地参加報告。板橋区はこれまで公開0件だった。"
     }
   ]
 }
