@@ -1,0 +1,59 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-03T23:20:00+09:00",
+  "source": {
+    "report_id": "adachi_okimoto_2026",
+    "title": "足立区 興本区民事務所管内 町会・自治会行事案内（2026年）",
+    "account_key": "足立区（興本区民事務所）",
+    "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html",
+    "notice_kind": "official_current_year",
+    "raw_text": "本木北町みのり町会：盆踊り／田中稲荷神社／7月25日・26日。扇一丁目寺地明和会：盆踊り／扇南公園／8月1日・2日。扇南町会：盆踊り／三嶋神社／8月1日・2日。興野町会：盆踊り／興野神社／8月1日・2日。本木東町会：盆踊り／御嶽神社／8月8日・9日。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "本木北町みのり町会 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {"name": "田中稲荷神社", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：本木北町みのり町会。7月開催のため登録時点で終了済み。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "扇一丁目寺地明和会 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "venue": {"name": "扇南公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：扇一丁目寺地明和会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "扇南町会 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "venue": {"name": "三嶋神社", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：扇南町会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "興野町会 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "venue": {"name": "興野神社", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：興野町会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "本木東町会 盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-08",
+      "date_end": "2026-08-09",
+      "venue": {"name": "御嶽神社", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "主催：本木東町会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+    }
+  ]
+}

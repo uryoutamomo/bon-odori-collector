@@ -1,30 +1,27 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-08-01T01:30:12.685358+00:00",
+  "generated_at": "2026-08-03T14:34:39.760766+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
-    "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
-    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
-    "fixed_date_rules": "/Users/ryotauchida/bon-odori-collector/data/public_fixed_date_rules.json",
-    "master_db": "/Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite",
-    "publication_gap_review": "/Users/ryotauchida/bon-odori-collector/data/publication_gap_review.json",
-    "reviewed_approvals": "/Users/ryotauchida/bon-odori-collector/data/public_sync_exact_approvals.json"
+    "collector_events": "data/public/events_public.json",
+    "site_events": "/private/tmp/bon-odori-site-adachi-check/data/events_public.json",
+    "fixed_date_rules": "/private/tmp/bon-odori-adachi-ward-gap/data/public_fixed_date_rules.json",
+    "master_db": "/private/tmp/bon-odori-adachi-ward-gap/data/bon_odori_master.sqlite",
+    "publication_gap_review": "/private/tmp/bon-odori-adachi-ward-gap/data/publication_gap_review.json",
+    "reviewed_approvals": "/private/tmp/bon-odori-adachi-ward-gap/data/public_sync_exact_approvals.json"
   },
   "parameters": {
     "target_year": 2026,
-    "today": "2026-08-01",
+    "today": "2026-08-03",
     "allow_individual_review": false
   },
   "decision": {
-    "status": "block",
-    "failures": [
-      "event_count_mismatch",
-      "event_key_mismatch"
-    ],
+    "status": "pass",
+    "failures": [],
     "warnings": [
       "master_rdb_newer_than_publication_gap_review"
     ],
-    "safe_to_wholesale_sync": false,
+    "safe_to_wholesale_sync": true,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
@@ -32,9 +29,9 @@
     "master_rdb_newer_than_publication_gap_review"
   ],
   "raw_classification": {
-    "collector_event_count": 258,
-    "site_event_count": 251,
-    "collector_only_count": 7,
+    "collector_event_count": 284,
+    "site_event_count": 258,
+    "collector_only_count": 26,
     "site_only_count": 0,
     "high_risk_diff_record_count": 0,
     "high_risk_event_count": 0,
@@ -43,9 +40,9 @@
     "events_by_action": {}
   },
   "postprocessed_classification": {
-    "collector_event_count": 258,
-    "site_event_count": 251,
-    "collector_only_count": 7,
+    "collector_event_count": 284,
+    "site_event_count": 258,
+    "collector_only_count": 26,
     "site_only_count": 0,
     "high_risk_diff_record_count": 0,
     "high_risk_event_count": 0,
@@ -56,10 +53,11 @@
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
     "status": "pass",
-    "approval_count": 56,
+    "approval_count": 143,
     "status_counts": {
-      "already_synced": 49,
-      "inactive": 7
+      "already_synced": 110,
+      "inactive": 7,
+      "applied": 26
     },
     "failure_count": 0,
     "results": [
@@ -142,12 +140,6 @@
         "actual_site_sha256": "ddd983b0993c76a286aaac244b35eb5866336db9cfea148a979c3f21988d7fbc",
         "actual_collector_sha256": "ddd983b0993c76a286aaac244b35eb5866336db9cfea148a979c3f21988d7fbc",
         "status": "already_synced"
-      },
-      {
-        "id": "reviewed-update-c30598087340",
-        "kind": "same_key_update",
-        "event_key": "木場二丁目 盆踊り大会||木場二丁目公園",
-        "status": "inactive"
       },
       {
         "id": "reviewed-update-515679e44cb3",
@@ -290,7 +282,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-b2b32e18b385",
+        "id": "reviewed-update-renamed-b2b32e18b385",
         "kind": "key_replacement",
         "site_event_key": "下落合町会知久会 第9回盆踊り||清水川橋公園",
         "collector_event_key": "下落合町会知久会 盆踊り||清水川橋公園",
@@ -299,7 +291,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-4f3969a60710",
+        "id": "reviewed-update-renamed-4f3969a60710",
         "kind": "key_replacement",
         "site_event_key": "地域のふれあい第37回盆踊り大会||JR目黒駅西口前",
         "collector_event_key": "地域のふれあい盆踊り大会||JR目黒駅西口前",
@@ -308,7 +300,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-179bb04cd1c7",
+        "id": "reviewed-update-renamed-179bb04cd1c7",
         "kind": "key_replacement",
         "site_event_key": "好踊会「第4回 好踊会フェア」||鹿骨中学校",
         "collector_event_key": "好踊会「好踊会フェア」||鹿骨中学校",
@@ -317,7 +309,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-15445cf21d6e",
+        "id": "reviewed-update-renamed-15445cf21d6e",
         "kind": "key_replacement",
         "site_event_key": "砧小学校「第38回砧っ子夏祭り」||砧小学校",
         "collector_event_key": "砧小学校「砧っ子夏祭り」||砧小学校",
@@ -326,7 +318,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-dc1d09b06132",
+        "id": "reviewed-update-renamed-dc1d09b06132",
         "kind": "key_replacement",
         "site_event_key": "第10回 すみだ輪おどり区民感謝デー||すみだ産業会館サンライズホール",
         "collector_event_key": "すみだ輪おどり区民感謝デー||すみだ産業会館サンライズホール",
@@ -335,7 +327,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-607b86d8a716",
+        "id": "reviewed-update-renamed-607b86d8a716",
         "kind": "key_replacement",
         "site_event_key": "第10回白金台どんぐり児童遊園 納涼盆踊り大会||白金台どんぐり児童遊園",
         "collector_event_key": "白金台どんぐり児童遊園 納涼盆踊り大会||白金台どんぐり児童遊園",
@@ -344,7 +336,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-7cff4c6ffafd",
+        "id": "reviewed-update-renamed-7cff4c6ffafd",
         "kind": "key_replacement",
         "site_event_key": "第11回 にっぽり炭坑節まつり||JR日暮里駅前広場",
         "collector_event_key": "にっぽり炭坑節まつり||JR日暮里駅前広場",
@@ -353,7 +345,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-03fa34478fc8",
+        "id": "reviewed-update-renamed-03fa34478fc8",
         "kind": "key_replacement",
         "site_event_key": "第16回 鴨台盆踊り||大正大学",
         "collector_event_key": "鴨台盆踊り||大正大学",
@@ -362,7 +354,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-3b6aaf995347",
+        "id": "reviewed-update-renamed-3b6aaf995347",
         "kind": "key_replacement",
         "site_event_key": "第16回ハマサイトの夏祭り||ハマサイト前広場・汐留ビルディング外構",
         "collector_event_key": "ハマサイトの夏祭り||ハマサイト前広場・汐留ビルディング外構",
@@ -371,7 +363,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-a35653c0b5ec",
+        "id": "reviewed-update-renamed-a35653c0b5ec",
         "kind": "key_replacement",
         "site_event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
         "collector_event_key": "四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
@@ -380,7 +372,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-48167b6c30cd",
+        "id": "reviewed-update-renamed-48167b6c30cd",
         "kind": "key_replacement",
         "site_event_key": "第2回 大盆踊り祭 with 坂崎守寛||日本橋社会教育会館",
         "collector_event_key": "大盆踊り祭 with 坂崎守寛||日本橋社会教育会館",
@@ -389,7 +381,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-1ce490905bc0",
+        "id": "reviewed-update-renamed-1ce490905bc0",
         "kind": "key_replacement",
         "site_event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
         "collector_event_key": "晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
@@ -398,7 +390,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-88cca613b113",
+        "id": "reviewed-update-renamed-88cca613b113",
         "kind": "key_replacement",
         "site_event_key": "第2回 辰巳で盆踊り||区立第二辰巳小学校",
         "collector_event_key": "辰巳で盆踊り||区立第二辰巳小学校",
@@ -407,7 +399,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-18245fad956e",
+        "id": "reviewed-update-renamed-18245fad956e",
         "kind": "key_replacement",
         "site_event_key": "第2回田原de盆踊り||田原小学校",
         "collector_event_key": "田原de盆踊り||田原小学校",
@@ -416,7 +408,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-910f62e28d10",
+        "id": "reviewed-update-renamed-910f62e28d10",
         "kind": "key_replacement",
         "site_event_key": "第34回ふるさと千川 まつり||ふるさと千川ひろば(千川小学校校庭跡地)",
         "collector_event_key": "ふるさと千川 まつり||ふるさと千川ひろば(千川小学校校庭跡地)",
@@ -425,7 +417,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-349ebfa67dca",
+        "id": "reviewed-update-renamed-349ebfa67dca",
         "kind": "key_replacement",
         "site_event_key": "第3回 延七昇竜太鼓盆踊り大会||第二延山小学校",
         "collector_event_key": "延七昇竜太鼓盆踊り大会||第二延山小学校",
@@ -434,7 +426,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-a6d0a708f5f6",
+        "id": "reviewed-update-renamed-a6d0a708f5f6",
         "kind": "key_replacement",
         "site_event_key": "第42回大久保まつり パレード 百人町民民謡おどり||JR新大久保駅北側から東方向",
         "collector_event_key": "大久保まつり パレード 百人町民民謡おどり||JR新大久保駅北側から東方向",
@@ -443,7 +435,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-3ec2781c1c59",
+        "id": "reviewed-update-renamed-3ec2781c1c59",
         "kind": "key_replacement",
         "site_event_key": "第46回 巣鴨盆踊り大会||巣鴨駅南口ロータリー",
         "collector_event_key": "巣鴨盆踊り大会||巣鴨駅南口ロータリー",
@@ -452,7 +444,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-f955fd57d97b",
+        "id": "reviewed-update-renamed-f955fd57d97b",
         "kind": "key_replacement",
         "site_event_key": "第51回 浄土寺盆踊り大会||浄土寺",
         "collector_event_key": "浄土寺盆踊り大会||浄土寺",
@@ -461,7 +453,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-a91cc3759dde",
+        "id": "reviewed-update-renamed-a91cc3759dde",
         "kind": "key_replacement",
         "site_event_key": "第60回あらかわ青年大会 アリストック||あらかわ遊園アリスの広場",
         "collector_event_key": "あらかわ青年大会 アリストック||あらかわ遊園アリスの広場",
@@ -470,16 +462,16 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-207862647023",
+        "id": "reviewed-update-renamed-207862647023",
         "kind": "key_replacement",
         "site_event_key": "第71回 恵比寿駅前盆踊り大会||JR恵比寿駅西口広場",
         "collector_event_key": "恵比寿駅前盆踊り大会||JR恵比寿駅西口広場",
-        "actual_site_sha256": "5ff4e7f3efb24cecf2d8b4e1b3a0d1d9dbb6e202532973402219eae892713bb8",
-        "actual_collector_sha256": "5ff4e7f3efb24cecf2d8b4e1b3a0d1d9dbb6e202532973402219eae892713bb8",
+        "actual_site_sha256": "d82277d35da21ca895588b53fbd09c6a1e5041ae35005a49b2cdd2f511621fb7",
+        "actual_collector_sha256": "d82277d35da21ca895588b53fbd09c6a1e5041ae35005a49b2cdd2f511621fb7",
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-9099e5dbff30",
+        "id": "reviewed-update-renamed-9099e5dbff30",
         "kind": "key_replacement",
         "site_event_key": "第71回大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
         "collector_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
@@ -488,7 +480,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-fcf8b31ae77b",
+        "id": "reviewed-update-renamed-fcf8b31ae77b",
         "kind": "key_replacement",
         "site_event_key": "第7回 渋谷盆踊り||渋谷109前",
         "collector_event_key": "渋谷盆踊り||渋谷109前",
@@ -497,7 +489,7 @@
         "status": "already_synced"
       },
       {
-        "id": "reviewed-replacement-edition-e4e7dba4a225",
+        "id": "reviewed-update-renamed-e4e7dba4a225",
         "kind": "key_replacement",
         "site_event_key": "第90回 祐天寺み魂まつり こども盆踊り大会||祐天寺境内",
         "collector_event_key": "祐天寺み魂まつり こども盆踊り大会||祐天寺境内",
@@ -506,11 +498,83 @@
         "status": "already_synced"
       },
       {
+        "id": "reviewed-update-20260728-e2054b05bdfb",
+        "kind": "same_key_update",
+        "event_key": "ゐの市盆踊り～不忍夢～||上野恩賜公園",
+        "actual_site_sha256": "e2054b05bdfbacf09b3b848f86adfbee94a8ff1ccb8e58bba7eae7dc3c4be64d",
+        "actual_collector_sha256": "e2054b05bdfbacf09b3b848f86adfbee94a8ff1ccb8e58bba7eae7dc3c4be64d",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-1a70233934b5",
+        "kind": "same_key_update",
+        "event_key": "下北沢盆踊り||下北沢駅東口",
+        "actual_site_sha256": "1a70233934b5afee3f7e206d1f3829d50c5d5128389a57f3c07997d49524d1e6",
+        "actual_collector_sha256": "1a70233934b5afee3f7e206d1f3829d50c5d5128389a57f3c07997d49524d1e6",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-699e9388724f",
+        "kind": "same_key_update",
+        "event_key": "京橋盆踊り||京橋エドグラン 京橋中央ひろば",
+        "actual_site_sha256": "699e9388724f7e279be498ec8efd08ffc05fd64b19554fb7bcf3f0d561fcccec",
+        "actual_collector_sha256": "699e9388724f7e279be498ec8efd08ffc05fd64b19554fb7bcf3f0d561fcccec",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-d9ec5519cfe3",
+        "kind": "same_key_update",
+        "event_key": "品川区民まつり 品川第二地区||天妙国寺",
+        "actual_site_sha256": "d9ec5519cfe392a8306eb5a35c6982937555b8e97f1cab79ceef9ddf38d243b7",
+        "actual_collector_sha256": "d9ec5519cfe392a8306eb5a35c6982937555b8e97f1cab79ceef9ddf38d243b7",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-3538aa0cf3a0",
+        "kind": "same_key_update",
+        "event_key": "品川区民まつり 大崎第一地区||第四日野小学校",
+        "actual_site_sha256": "3538aa0cf3a0ef91965567a280a6e5b2a93b195c0f03d442f8dae5f94ddb9af9",
+        "actual_collector_sha256": "3538aa0cf3a0ef91965567a280a6e5b2a93b195c0f03d442f8dae5f94ddb9af9",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-8d6e470cac33",
+        "kind": "same_key_update",
+        "event_key": "新小岩納涼盆踊り大会||葛飾区立小松南小学校",
+        "actual_site_sha256": "8d6e470cac333dba6f39fe05a2bfe7d1c29ccc7d8c90051ebc1fdef1df7b162e",
+        "actual_collector_sha256": "8d6e470cac333dba6f39fe05a2bfe7d1c29ccc7d8c90051ebc1fdef1df7b162e",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-224cf648841a",
+        "kind": "same_key_update",
+        "event_key": "日本橋小学校の盆踊り（名称推定）||日本橋小学校",
+        "actual_site_sha256": "224cf648841a719e34404971a73213396e1d56fde760eea265bfbc8b2c4a2308",
+        "actual_collector_sha256": "224cf648841a719e34404971a73213396e1d56fde760eea265bfbc8b2c4a2308",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-update-20260728-030cbe9e61be",
+        "kind": "same_key_update",
+        "event_key": "東陽一丁目町会 盆踊り大会||旧子供広場",
+        "actual_site_sha256": "030cbe9e61be9ba30a1aa24d92d01a88e8e29655cc247b616b09abc861535514",
+        "actual_collector_sha256": "030cbe9e61be9ba30a1aa24d92d01a88e8e29655cc247b616b09abc861535514",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260728-2d235e5c507d",
+        "kind": "addition",
+        "event_key": "あ〜夏休み！納涼盆踊り大会||亀有ゆうろーど（亀有銀座商店街）",
+        "actual_collector_sha256": "2d235e5c507d9d3eb77b629a5c95abb8ca617f22a24c5cc0b941b0850756b412",
+        "actual_site_sha256": "2d235e5c507d9d3eb77b629a5c95abb8ca617f22a24c5cc0b941b0850756b412",
+        "status": "already_synced"
+      },
+      {
         "id": "reviewed-update-20260729-minato-3b7807d4f6ea",
         "kind": "same_key_update",
         "event_key": "海岸まつり||埠頭公園（港区芝浦港南）",
-        "actual_site_sha256": "3b7807d4f6ea158db254062a5f515c4a1b3d6a0579df6e3593c4f4aa6a168cf2",
-        "actual_collector_sha256": "3b7807d4f6ea158db254062a5f515c4a1b3d6a0579df6e3593c4f4aa6a168cf2",
+        "actual_site_sha256": "9b27648598e7c2666b8cf8daabc9f17162807589aa4dd7069d7421cb0a72e764",
+        "actual_collector_sha256": "9b27648598e7c2666b8cf8daabc9f17162807589aa4dd7069d7421cb0a72e764",
         "status": "already_synced"
       },
       {
@@ -520,13 +584,619 @@
         "actual_site_sha256": "6ff90834303087a4bc34df63f93b1a7d1372538fe2c63097b330a8e155f8434f",
         "actual_collector_sha256": "6ff90834303087a4bc34df63f93b1a7d1372538fe2c63097b330a8e155f8434f",
         "status": "already_synced"
+      },
+      {
+        "id": "reviewed-rename-20260729-01",
+        "kind": "key_replacement",
+        "site_event_key": "木場二丁目 盆踊り大会||木場二丁目公園",
+        "collector_event_key": "木場二丁目町会 盆踊り大会||木場二丁目公園",
+        "actual_site_sha256": "ead9b25d5ab94beafe79e94a0c83f059240d958bdc9a0d7ca428891362c80208",
+        "actual_collector_sha256": "ead9b25d5ab94beafe79e94a0c83f059240d958bdc9a0d7ca428891362c80208",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-e67a3f093be7",
+        "kind": "addition",
+        "event_key": "秋葉原東部納涼大会||和泉小学校校庭・和泉公園",
+        "actual_collector_sha256": "1eecf780059a3130dd4c7b40f14e4647811d719e30b4628d340718418e0f35fa",
+        "actual_site_sha256": "1eecf780059a3130dd4c7b40f14e4647811d719e30b4628d340718418e0f35fa",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-81def7c1c6a8",
+        "kind": "addition",
+        "event_key": "日本テレビ通り振興会 納涼盆踊り大会||番町の森",
+        "actual_collector_sha256": "c605c20d08748f04dea47bde5ca5f0eab1dbab72e76f6cf77ed0363542515e6a",
+        "actual_site_sha256": "c605c20d08748f04dea47bde5ca5f0eab1dbab72e76f6cf77ed0363542515e6a",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-90738bf53289",
+        "kind": "addition",
+        "event_key": "駒込富士神社 納涼盆踊り大会||駒込富士神社",
+        "actual_collector_sha256": "3220fd1a15e5935b24de0860f4df7fe8e401ba4f33ca3e0012b52ae5a4baac32",
+        "actual_site_sha256": "3220fd1a15e5935b24de0860f4df7fe8e401ba4f33ca3e0012b52ae5a4baac32",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-59d9e3a9685d",
+        "kind": "addition",
+        "event_key": "からすやま夏まつり 盆踊り大会||烏山区民センター前広場",
+        "actual_collector_sha256": "23be9c71a3c0c6ca725eb1aefa6d7551ba07d8681b85438d7e59175966bd39e8",
+        "actual_site_sha256": "23be9c71a3c0c6ca725eb1aefa6d7551ba07d8681b85438d7e59175966bd39e8",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-093a155c3fec",
+        "kind": "addition",
+        "event_key": "春日町盆踊り大会||春日神社",
+        "actual_collector_sha256": "9cfc50421c6cb3f9bda8297d64be74c30256a21c8405c985150fc13309182b07",
+        "actual_site_sha256": "9cfc50421c6cb3f9bda8297d64be74c30256a21c8405c985150fc13309182b07",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-ebd403f59d96",
+        "kind": "addition",
+        "event_key": "お花茶屋ふるさとまつり||お花茶屋公園",
+        "actual_collector_sha256": "ebd403f59d9637a6afc594ca5cb9447cf667a340f3d33e6869d40cd79562f93a",
+        "actual_site_sha256": "ebd403f59d9637a6afc594ca5cb9447cf667a340f3d33e6869d40cd79562f93a",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-32fce5a58852",
+        "kind": "addition",
+        "event_key": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会||密蔵院",
+        "actual_collector_sha256": "a6ad6ac84ba3f06e360dc255db3f851aaa070bb282af593630db6d04b351b43a",
+        "actual_site_sha256": "a6ad6ac84ba3f06e360dc255db3f851aaa070bb282af593630db6d04b351b43a",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-20260729-f8fddff7e228",
+        "kind": "addition",
+        "event_key": "木根川町会ふれあい盆踊り||木根川中央公園",
+        "actual_collector_sha256": "65d7610070c9bac391ff748e0c6ce9df969da99511753f8f0257ce1883f56d49",
+        "actual_site_sha256": "65d7610070c9bac391ff748e0c6ce9df969da99511753f8f0257ce1883f56d49",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-removal-20260729-01",
+        "kind": "removal",
+        "event_key": "盆踊り大会||木場二丁目公園",
+        "status": "inactive"
+      },
+      {
+        "id": "reviewed-second-wave-update-fd4b7631719f",
+        "kind": "same_key_update",
+        "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+        "actual_site_sha256": "6e1348bdb6739ad755b947535faf146783042b84abce2865da64963846604a58",
+        "actual_collector_sha256": "6e1348bdb6739ad755b947535faf146783042b84abce2865da64963846604a58",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-second-wave-update-e3b858f99305",
+        "kind": "same_key_update",
+        "event_key": "中目黒盆踊り大会||フナイリバ（目黒川船入場広場）",
+        "actual_site_sha256": "fb2ca71af76c0c884d07fd0af367c4db63775d853f5c6d8e4aa637cbff551d44",
+        "actual_collector_sha256": "fb2ca71af76c0c884d07fd0af367c4db63775d853f5c6d8e4aa637cbff551d44",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-second-wave-komazawa-rename",
+        "kind": "key_replacement",
+        "site_event_key": "駒澤大学同窓会東京都支部・営友会||駒澤大学 駒沢キャンパス",
+        "collector_event_key": "駒沢ふれあい広場夏祭り||駒澤大学 駒沢キャンパス",
+        "actual_site_sha256": "a4cdc5fe9fa01fbcea5ae2cfcfa9697597bdc811ff7a4b1d8ca49de82fdd0753",
+        "actual_collector_sha256": "a4cdc5fe9fa01fbcea5ae2cfcfa9697597bdc811ff7a4b1d8ca49de82fdd0753",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-second-wave-addition-87578ec937e2",
+        "kind": "addition",
+        "event_key": "あそビバ まなビバ FUNFUNスクール||港区立産業振興センター ホール小",
+        "actual_collector_sha256": "ee77e4ebc2ef1fb73e7ceb1a4f1eb56897e13dae746251982161d7c5ad352f7c",
+        "actual_site_sha256": "ee77e4ebc2ef1fb73e7ceb1a4f1eb56897e13dae746251982161d7c5ad352f7c",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-second-wave-addition-4ebc2fd3a8e6",
+        "kind": "addition",
+        "event_key": "かがやき納涼会＆盆踊り||かがやきプラザ1階ひだまりホール",
+        "actual_collector_sha256": "fcdb5cc136fed0cdcf2bb2052b5a8ca2d3719eeeac69e5b509221e5785785ce6",
+        "actual_site_sha256": "fcdb5cc136fed0cdcf2bb2052b5a8ca2d3719eeeac69e5b509221e5785785ce6",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-third-wave-addition-ce6637454351",
+        "kind": "addition",
+        "event_key": "あけぼのばし商店街 盆踊り大会||あけぼのばし通り",
+        "actual_collector_sha256": "1ac90ad9d9cc7ceb60f7fd5369ecf55042d751ae48723c031ea2b172ea28f782",
+        "actual_site_sha256": "1ac90ad9d9cc7ceb60f7fd5369ecf55042d751ae48723c031ea2b172ea28f782",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-third-wave-addition-7e39e72dc7d",
+        "kind": "addition",
+        "event_key": "仲六郷一丁目町会 納涼会||大田区シルバー人材センター前",
+        "actual_collector_sha256": "b06b2c3233c60bc42c297f5cb12f6c95e0f83df3c03d4f1c66c36a2d43afeaed",
+        "actual_site_sha256": "b06b2c3233c60bc42c297f5cb12f6c95e0f83df3c03d4f1c66c36a2d43afeaed",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-tsukudajima-addition-f22c32bdbff8",
+        "kind": "addition",
+        "event_key": "佃島の盆踊り||佃まちかど展示館前",
+        "actual_collector_sha256": "f22c32bdbff815aa9190410924e08ed512181cb528c1e6f21bc11bbb7a93c1e5",
+        "actual_site_sha256": "f22c32bdbff815aa9190410924e08ed512181cb528c1e6f21bc11bbb7a93c1e5",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-ended-transition-ffc9d39df3bb",
+        "kind": "same_key_update",
+        "event_key": "すみだ錦糸町河内音頭大盆踊り||江東橋竪川親水公園",
+        "actual_site_sha256": "ffc9d39df3bb5fa2961b3e523c647c69479c5b06ebeaad5de5405f3db8d491d6",
+        "actual_collector_sha256": "ffc9d39df3bb5fa2961b3e523c647c69479c5b06ebeaad5de5405f3db8d491d6",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-hamacho-date-confirmation-ec77577ae243",
+        "kind": "same_key_update",
+        "event_key": "濱町音頭盆踊り大会||浜町公園",
+        "actual_site_sha256": "ec77577ae243c48e0784ecdbf635e96d7c6d37a0fed6a6a23c70547ba896a76a",
+        "actual_collector_sha256": "ec77577ae243c48e0784ecdbf635e96d7c6d37a0fed6a6a23c70547ba896a76a",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-morishita-date-confirmation-addddaf12ee9",
+        "kind": "same_key_update",
+        "event_key": "森下二丁目盆踊り||森下公園",
+        "actual_site_sha256": "addddaf12ee9cd3478badb9cf26766d1f82409991c382b798ace27bff275842c",
+        "actual_collector_sha256": "addddaf12ee9cd3478badb9cf26766d1f82409991c382b798ace27bff275842c",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-rinkai-date-confirmation-a086686d5ac3",
+        "kind": "same_key_update",
+        "event_key": "都の辰巳深川 臨海ぼんおどり||臨海小学校",
+        "actual_site_sha256": "a086686d5ac3d8b03acc59938479abe753efb424951277f0f79356425d534725",
+        "actual_collector_sha256": "a086686d5ac3d8b03acc59938479abe753efb424951277f0f79356425d534725",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-dc59bb57c4f0",
+        "kind": "addition",
+        "event_key": "八名川地区連合町会 納涼音頭大会||八名川公園",
+        "actual_collector_sha256": "85821707c3771277fc9b4b5e94872edcf96e73bea95d7be78f0f07454ad60383",
+        "actual_site_sha256": "85821707c3771277fc9b4b5e94872edcf96e73bea95d7be78f0f07454ad60383",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-9fc6b21425c2",
+        "kind": "addition",
+        "event_key": "大島一・二丁目町会 納涼盆踊り大会||第一大島小学校",
+        "actual_collector_sha256": "d1967d850afd82d24cca66ef3321366797d3a31642f50d663254ee39fc1e1d5f",
+        "actual_site_sha256": "d1967d850afd82d24cca66ef3321366797d3a31642f50d663254ee39fc1e1d5f",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-973717192f96",
+        "kind": "addition",
+        "event_key": "枝川二・三丁目町会 枝川の夏まつり||枝川小学校",
+        "actual_collector_sha256": "fc00a1b7f922e50528790fc45481db5a46db0395a3e0ba47a0a79244fdd4e7cb",
+        "actual_site_sha256": "fc00a1b7f922e50528790fc45481db5a46db0395a3e0ba47a0a79244fdd4e7cb",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-a86d22063e4e",
+        "kind": "addition",
+        "event_key": "深川一丁目 盆踊り大会||深川一丁目児童遊園",
+        "actual_collector_sha256": "2ba90ef2f2b0c99daa0f95cf7e9c39dda9e1f7a1df5f00e9049f9f71945f4051",
+        "actual_site_sha256": "2ba90ef2f2b0c99daa0f95cf7e9c39dda9e1f7a1df5f00e9049f9f71945f4051",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-acf6bb59d38a",
+        "kind": "addition",
+        "event_key": "大島スカイハイツ 夏まつり||大島スカイハイツ",
+        "actual_collector_sha256": "0d8bbd1688026477e99d1444d60871ef5c5611ee006ed321d52364ce790107e8",
+        "actual_site_sha256": "0d8bbd1688026477e99d1444d60871ef5c5611ee006ed321d52364ce790107e8",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-495cbad4da3c",
+        "kind": "addition",
+        "event_key": "東大島神社 納涼祭||東大島神社",
+        "actual_collector_sha256": "f7440130710b65bd74dd9141f87f4eed3d1eb663b41c38a3337a87112fb49d25",
+        "actual_site_sha256": "f7440130710b65bd74dd9141f87f4eed3d1eb663b41c38a3337a87112fb49d25",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-36e86a927e27",
+        "kind": "addition",
+        "event_key": "盆踊り東陽四丁目連合||文化センターコミュニティ中庭",
+        "actual_collector_sha256": "525756b6abf05a58095c1c1a88420767b0dce5b64194587b7c95062465e9f098",
+        "actual_site_sha256": "525756b6abf05a58095c1c1a88420767b0dce5b64194587b7c95062465e9f098",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-57ac874dd309",
+        "kind": "addition",
+        "event_key": "洲崎神社祭礼||洲崎神社",
+        "actual_collector_sha256": "293fe3af96deac1f398ad1763aeedc575eb59e53440f52cad81eae0b08045a67",
+        "actual_site_sha256": "293fe3af96deac1f398ad1763aeedc575eb59e53440f52cad81eae0b08045a67",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-6620c8715e11",
+        "kind": "addition",
+        "event_key": "豊洲123丁目連合会 豊洲ふれあい納涼祭||豊洲三丁目公園",
+        "actual_collector_sha256": "4c2341398749e01473d9c7b48839ec8dd3f0c2e2d2e1ddfd6a593f82ebe8b623",
+        "actual_site_sha256": "4c2341398749e01473d9c7b48839ec8dd3f0c2e2d2e1ddfd6a593f82ebe8b623",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-first-wave-723425acba84",
+        "kind": "addition",
+        "event_key": "海辺町会 納涼盆踊り大会||川南海辺公園",
+        "actual_collector_sha256": "842f11975f46fca9049c4d7ba99cc5203ff5b5c45909525a9d4bb571393e8701",
+        "actual_site_sha256": "842f11975f46fca9049c4d7ba99cc5203ff5b5c45909525a9d4bb571393e8701",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-hanazono-2026-0eac7c870dd1",
+        "kind": "same_key_update",
+        "event_key": "花園神社 盆踊り||花園神社",
+        "actual_site_sha256": "f4724d43cbd90b0b25c0d08f41ba3470478f0f095b052ad2377e27ea636b4257",
+        "actual_collector_sha256": "f4724d43cbd90b0b25c0d08f41ba3470478f0f095b052ad2377e27ea636b4257",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-35680126e17a",
+        "kind": "addition",
+        "event_key": "扇橋三丁目町会 納涼盆踊り大会||つばめ幼稚園",
+        "actual_collector_sha256": "35680126e17acba2f91580544ab29176c5e7bf660c1a76fd03c37acc656266a7",
+        "actual_site_sha256": "35680126e17acba2f91580544ab29176c5e7bf660c1a76fd03c37acc656266a7",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-ae1a1504f543",
+        "kind": "addition",
+        "event_key": "亀戸四丁目 納涼盆踊り大会||ふれあい公園",
+        "actual_collector_sha256": "ae1a1504f54346c117e7cb60df4d046e670cdbbbf51866816b93acafc87034e3",
+        "actual_site_sha256": "ae1a1504f54346c117e7cb60df4d046e670cdbbbf51866816b93acafc87034e3",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-c875eebb5958",
+        "kind": "addition",
+        "event_key": "とよす夏祭り||アーバンドック ららぽーと豊洲",
+        "actual_collector_sha256": "c875eebb59589d72b68febcf682330e9dd2328337a5c79560e3ca40e9e8500e2",
+        "actual_site_sha256": "c875eebb59589d72b68febcf682330e9dd2328337a5c79560e3ca40e9e8500e2",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-497700536843",
+        "kind": "addition",
+        "event_key": "東陽六・七丁目町会 夏まつり||イーストプラザ広場",
+        "actual_collector_sha256": "497700536843a79d7d9b440222ffaf68a207a2dbb378b4be48e84abe6b5380ad",
+        "actual_site_sha256": "497700536843a79d7d9b440222ffaf68a207a2dbb378b4be48e84abe6b5380ad",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-10dc3b908209",
+        "kind": "addition",
+        "event_key": "江東区民まつり 亀戸地区夏まつり大会||亀戸中央公園",
+        "actual_collector_sha256": "10dc3b908209cd7348f91a4f39c6d20bceb296dc48a54f4230f9f6750d428de7",
+        "actual_site_sha256": "10dc3b908209cd7348f91a4f39c6d20bceb296dc48a54f4230f9f6750d428de7",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-55ceae350630",
+        "kind": "addition",
+        "event_key": "亀戸二丁目団地 ここがふるさと夏まつり||亀戸二丁目団地 一号棟前広場",
+        "actual_collector_sha256": "55ceae3506304a90ab968cfdf40e2d27f894466d1140b00ee0739c7bc0ef5786",
+        "actual_site_sha256": "55ceae3506304a90ab968cfdf40e2d27f894466d1140b00ee0739c7bc0ef5786",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-4da12b4ec494",
+        "kind": "addition",
+        "event_key": "亀戸六丁目東町会 ふるさとまつり||亀戸平岩公園",
+        "actual_collector_sha256": "4da12b4ec49415352fd837887db8e569b44789bf7286469c9260b187bcf0671f",
+        "actual_site_sha256": "4da12b4ec49415352fd837887db8e569b44789bf7286469c9260b187bcf0671f",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-db6b9d517ca6",
+        "kind": "addition",
+        "event_key": "南砂一・二丁目町会 盆踊り||南砂一丁目北公園",
+        "actual_collector_sha256": "db6b9d517ca6485606568570f0ce38d6343b7070c7ba743a021be45afd816629",
+        "actual_site_sha256": "db6b9d517ca6485606568570f0ce38d6343b7070c7ba743a021be45afd816629",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-893b76cc8adf",
+        "kind": "addition",
+        "event_key": "南砂住宅 団地祭り||南砂住宅",
+        "actual_collector_sha256": "893b76cc8adf1de067501a34806ad6d65bc065bbc0a326373b27064a156795fc",
+        "actual_site_sha256": "893b76cc8adf1de067501a34806ad6d65bc065bbc0a326373b27064a156795fc",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-2e361821885f",
+        "kind": "addition",
+        "event_key": "塩浜一丁目団地自治会 夏まつり||塩浜一丁目団地中央公園内",
+        "actual_collector_sha256": "2e361821885f10b217f6dc81136cef7269e9b01a97c43f6ff2ad1b8b95823752",
+        "actual_site_sha256": "2e361821885f10b217f6dc81136cef7269e9b01a97c43f6ff2ad1b8b95823752",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-1f5e9250b054",
+        "kind": "addition",
+        "event_key": "大島三丁目団地自治会 夕涼み会||大島三丁目団地",
+        "actual_collector_sha256": "1f5e9250b05497690fa33d3c87fc4b5bd5a284bdf65bccf19022d0f489719a72",
+        "actual_site_sha256": "1f5e9250b05497690fa33d3c87fc4b5bd5a284bdf65bccf19022d0f489719a72",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-4aebf91f66df",
+        "kind": "addition",
+        "event_key": "大島三丁目町会 お祭り広場||大島三丁目緑道公園",
+        "actual_collector_sha256": "4aebf91f66df39a70a35fe11d2eb402b26c457fe45a72e05cb204817fda97987",
+        "actual_site_sha256": "4aebf91f66df39a70a35fe11d2eb402b26c457fe45a72e05cb204817fda97987",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-d52634b26237",
+        "kind": "addition",
+        "event_key": "大島五丁目町会 ぼんおどり||大島五丁目公園",
+        "actual_collector_sha256": "d52634b26237d93340d13257a8f3193450ae9de480b3438522f86aff6c69be11",
+        "actual_site_sha256": "d52634b26237d93340d13257a8f3193450ae9de480b3438522f86aff6c69be11",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-2b9fa11945b6",
+        "kind": "addition",
+        "event_key": "東砂一丁目団地 ふれあい祭り||東砂一丁目団地",
+        "actual_collector_sha256": "2b9fa11945b673c881788789aece065d81218ea9808bd9f72385b803a3bda065",
+        "actual_site_sha256": "2b9fa11945b673c881788789aece065d81218ea9808bd9f72385b803a3bda065",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-cd92ba2218eb",
+        "kind": "addition",
+        "event_key": "東砂三丁目町会 盆踊大会||東砂第二公園",
+        "actual_collector_sha256": "cd92ba2218eb9792c224202d32287103c711e8f5866582e12d86c400ad0cd96c",
+        "actual_site_sha256": "cd92ba2218eb9792c224202d32287103c711e8f5866582e12d86c400ad0cd96c",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-4fa830a6247f",
+        "kind": "addition",
+        "event_key": "亀戸五丁目町会 夏まつり||水神小学校校庭",
+        "actual_collector_sha256": "4fa830a6247fce9ff6174824294e3217b9a086c514c96d331ad50b65feb9d967",
+        "actual_site_sha256": "4fa830a6247fce9ff6174824294e3217b9a086c514c96d331ad50b65feb9d967",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-787da07b26bb",
+        "kind": "addition",
+        "event_key": "千田町会 納涼盆踊り大会||江東公園",
+        "actual_collector_sha256": "787da07b26bb4bd4eb8eb0c607240935207aa299697dc91714707730248d580a",
+        "actual_site_sha256": "787da07b26bb4bd4eb8eb0c607240935207aa299697dc91714707730248d580a",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-3a6e37765765",
+        "kind": "addition",
+        "event_key": "扇橋二丁目町会 納涼大会||江東公園",
+        "actual_collector_sha256": "3a6e377657655554278a57f0e051f2a2caec1036835a52623853362e94246d16",
+        "actual_site_sha256": "3a6e377657655554278a57f0e051f2a2caec1036835a52623853362e94246d16",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-5a9b91935ebd",
+        "kind": "addition",
+        "event_key": "猿江一丁目町会 納涼まつり||猿江一丁目公園",
+        "actual_collector_sha256": "5a9b91935ebdab8a757a7de48359c4f57cbc4c30faaca5de73de7d585349f2b6",
+        "actual_site_sha256": "5a9b91935ebdab8a757a7de48359c4f57cbc4c30faaca5de73de7d585349f2b6",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-koto-second-wave-9b77e0b862e7",
+        "kind": "addition",
+        "event_key": "石島町会 夏祭り||石島町会会館前",
+        "actual_collector_sha256": "9b77e0b862e76fb778c2132c0d40b3fa0fe60b9b201e121fe79def0cb806bb0f",
+        "actual_site_sha256": "9b77e0b862e76fb778c2132c0d40b3fa0fe60b9b201e121fe79def0cb806bb0f",
+        "status": "already_synced"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-7903ea5161a4",
+        "kind": "addition",
+        "event_key": "中央本町若松町会 盆踊り大会||若松公園",
+        "actual_collector_sha256": "7903ea5161a4458ddf7fce4bcfc06f127e054b2f6788596cfc93a39b704fecb5",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-42bbd988f428",
+        "kind": "addition",
+        "event_key": "島根町会 納涼盆踊り||鷲神社",
+        "actual_collector_sha256": "42bbd988f42896ba1ff673e17e6e43a49d4eea6a3d6b68d36148d71edfe56800",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-7a4b205bb8bb",
+        "kind": "addition",
+        "event_key": "梅島町会 盆踊り大会||梅島天満宮",
+        "actual_collector_sha256": "7a4b205bb8bb3fb2e8bef88c686cf8ec08d4a40b51592aba4da4cf0a214f1dd6",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-3e20a727e78a",
+        "kind": "addition",
+        "event_key": "東淵江自治会 納涼盆踊り大会||稗田公園",
+        "actual_collector_sha256": "3e20a727e78ac302871cbcd0c631fa8c09b4b9f88a3d1a4b1f1a4895c2a05011",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-999ebb7cda6b",
+        "kind": "addition",
+        "event_key": "東和一丁目自治会 納涼盆踊り大会||西沼公園",
+        "actual_collector_sha256": "999ebb7cda6beab70f787c496b0c27f4b5ac7338cdd73944a13f69acb0b63e06",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-bcbecc517b67",
+        "kind": "addition",
+        "event_key": "綾瀬五・六丁目自治会 納涼盆踊り大会||東綾瀬公園",
+        "actual_collector_sha256": "bcbecc517b67e23c51d5bafc744e71f88329fb7677e9a01e030a9d5e64b88d5b",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-e38978f55302",
+        "kind": "addition",
+        "event_key": "普賢寺自治会 納涼盆踊り大会||北野公園",
+        "actual_collector_sha256": "e38978f553023af91ba4031090a0fac846ee62e572dad1a22a8d7e08d2c73d57",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-672184996e88",
+        "kind": "addition",
+        "event_key": "蒲原自治会 納涼盆踊り大会||宮元公園",
+        "actual_collector_sha256": "672184996e8846abf9723f2ea5dc9368270fe4f707d855f45b7658e95cdd5071",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-29a37cb5be1e",
+        "kind": "addition",
+        "event_key": "綾瀬自治会 納涼盆踊り大会||伊藤谷公園",
+        "actual_collector_sha256": "29a37cb5be1e2e256975ec76a8aea18ffe5b0b050cf1777c776600c998274938",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-42feb7824b93",
+        "kind": "addition",
+        "event_key": "綾瀬東町会 納涼盆踊り大会||蛭沼公園",
+        "actual_collector_sha256": "42feb7824b93a2c7b9d5adbc2fd0b425d7d0fb1d1cf5467e6f812026dd3ff3e8",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-b4cc59457fe0",
+        "kind": "addition",
+        "event_key": "上谷中町自治会 納涼盆踊り大会||しょうぶ沼公園",
+        "actual_collector_sha256": "b4cc59457fe089d310a196720ac214b734c0d0581c1e76678b90914250555f58",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-4c90def9fd7e",
+        "kind": "addition",
+        "event_key": "東綾瀬自治会 納涼盆踊り大会||東綾瀬公園",
+        "actual_collector_sha256": "4c90def9fd7ef606846de42897f8b9cde3132763536f714bd7e04416d47ceb98",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-1e755f75800f",
+        "kind": "addition",
+        "event_key": "加平町会 納涼盆踊り大会||加平第二公園",
+        "actual_collector_sha256": "1e755f75800f130043d6f65c8d851f35e95224495308a2581b53b582dda3ec37",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-26df457d73e1",
+        "kind": "addition",
+        "event_key": "蒲谷自治会 納涼盆踊り大会||東綾瀬公園",
+        "actual_collector_sha256": "26df457d73e1c7ca34d05d0488dd7bb4debd824280e809a4163014b2dd88ec80",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-490a31942482",
+        "kind": "addition",
+        "event_key": "綾瀬三丁目自治会 納涼盆踊り大会||東綾瀬公園",
+        "actual_collector_sha256": "490a319424822f9aa3b77173e63035045976f9c82f4c580026de014cd070f005",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-ae7274b4f2df",
+        "kind": "addition",
+        "event_key": "梅田正和町会 納涼盆踊り||関原中央公園",
+        "actual_collector_sha256": "ae7274b4f2df28a2fa04453a08e59c23d1cad9b3ae68fda67de858e0ae6c6806",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-cb83a779ac79",
+        "kind": "addition",
+        "event_key": "梅田本町自治会 納涼盆踊り||梅田南公園",
+        "actual_collector_sha256": "cb83a779ac7982abfc11e5af30444e7636a5494faa0b7222380dbae027c2d0ae",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-9b32f8ebca95",
+        "kind": "addition",
+        "event_key": "コープ野村梅島自治会 盆踊り大会||梅田七丁目児童遊園",
+        "actual_collector_sha256": "9b32f8ebca95b864d0c01965594e1c5bc0784c39311bb1dbec5c4b4ced71dd16",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-754b10c574a9",
+        "kind": "addition",
+        "event_key": "梅田神明町自治会 盆踊り||梅田公園",
+        "actual_collector_sha256": "754b10c574a9451a02f1890a6fb27f4255ee9f22d11dc25a2152fdba54f84400",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-81be26cd078a",
+        "kind": "addition",
+        "event_key": "東和二丁目自治会・東和二丁目西自治会 納涼盆踊り大会||第六天公園",
+        "actual_collector_sha256": "81be26cd078aa5e6f0cd9284fa531131e5d2e61c10aedf4e734e28862acc135e",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-c74b933312c6",
+        "kind": "addition",
+        "event_key": "中川納涼大盆踊り大会||都立中川公園ふれあい広場",
+        "actual_collector_sha256": "c74b933312c607bf2d040b5570edb08742965a064c8b6d85b954bcd6352d0228",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-20cd9985016e",
+        "kind": "addition",
+        "event_key": "本木北町みのり町会 盆踊り||田中稲荷神社",
+        "actual_collector_sha256": "20cd9985016ebd5031468463ac054cef5606b371feca0e5ebe61a99849a5a4e6",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-7b868b7eb89f",
+        "kind": "addition",
+        "event_key": "扇一丁目寺地明和会 盆踊り||扇南公園",
+        "actual_collector_sha256": "7b868b7eb89f88b8146b29f0c45e2fd4a868d77b5a7105caca223650923b1435",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-0878c8037111",
+        "kind": "addition",
+        "event_key": "扇南町会 盆踊り||三嶋神社",
+        "actual_collector_sha256": "0878c803711151971acba3f674801d5dccc18467add2e37bd4a7581aaf18c998",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-f842f74def53",
+        "kind": "addition",
+        "event_key": "興野町会 盆踊り||興野神社",
+        "actual_collector_sha256": "f842f74def5361957ca01df7f2f9e962a6cb743dcbcc29eb8e9abc2182a46631",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-addition-adachi-20260803-a19ea9c18793",
+        "kind": "addition",
+        "event_key": "本木東町会 盆踊り||御嶽神社",
+        "actual_collector_sha256": "a19ea9c18793ec79da3794a54a610aed6bf886723a107a008dfeb8d4a1c3ae67",
+        "status": "applied"
       }
     ]
   },
   "approved_classification": {
-    "collector_event_count": 258,
-    "site_event_count": 251,
-    "collector_only_count": 7,
+    "collector_event_count": 284,
+    "site_event_count": 284,
+    "collector_only_count": 0,
     "site_only_count": 0,
     "high_risk_diff_record_count": 0,
     "high_risk_event_count": 0,
@@ -534,5 +1204,6 @@
     "records_by_action": {},
     "events_by_action": {}
   },
+  "ended_transition_downgrades": [],
   "blocking_examples": []
 }

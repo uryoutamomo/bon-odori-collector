@@ -1,0 +1,40 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-03T23:00:00+09:00",
+  "source": {
+    "report_id": "adachi_chuohoncho_2026",
+    "title": "足立区 中央本町区民事務所管内 町会・自治会行事案内（2026年）",
+    "account_key": "足立区（中央本町区民事務所）",
+    "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/tyuuouhonntyou.html",
+    "notice_kind": "official_current_year",
+    "raw_text": "中央本町若松町会：盆踊り大会／若松公園／8月1日 19:00〜。島根町会：納涼盆踊り／鷲神社／8月7日・8日 18:00〜。梅島町会：盆踊り大会／梅島天満宮／8月22日・23日 19:00〜。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "中央本町若松町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "venue": {"name": "若松公園", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "開催時間：19:00〜。主催：中央本町若松町会。出典：足立区 中央本町区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/tyuuouhonntyou.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "島根町会 納涼盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-07",
+      "date_end": "2026-08-08",
+      "venue": {"name": "鷲神社", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "開催時間：18:00〜。主催：島根町会。出典：足立区 中央本町区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/tyuuouhonntyou.html）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "梅島町会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {"name": "梅島天満宮", "area": "足立区", "address": "東京都足立区"},
+      "detail_addendum": "開催時間：19:00〜。主催：梅島町会。出典：足立区 中央本町区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/tyuuouhonntyou.html）。"
+    }
+  ]
+}
