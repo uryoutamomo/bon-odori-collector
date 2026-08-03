@@ -1,15 +1,15 @@
 {
   "generated_by": "apply_official_notice_report.py",
-  "generated_at": "2026-08-03T14:28:34.955151+00:00",
+  "generated_at": "2026-08-03T14:42:52.791991+00:00",
   "mode": "apply",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "report": "data/official_notice_reports/adachi_okimoto_2026.json"
+    "report": "data/official_notice_reports/suginami_first_wave_2026.json"
   },
   "outputs": {
     "target_db": "data/bon_odori_master.sqlite",
     "dry_run_db": "",
-    "backup_db": "data/backups/bon_odori_master.20260803T142834.955151+0000.sqlite.bak",
+    "backup_db": "data/backups/bon_odori_master.20260803T144252.791991+0000.sqlite.bak",
     "json": "data/official_notice_report_apply_report.json",
     "markdown": "data/official_notice_report_apply_report.md"
   },
@@ -27,18 +27,18 @@
     "audit_issues_by_severity": {},
     "table_counts": {
       "event_investigation_tasks": 79,
-      "event_occurrences": 338,
-      "event_series": 322,
+      "event_occurrences": 342,
+      "event_series": 326,
       "event_series_aliases": 24,
-      "evidence_items": 31323,
+      "evidence_items": 31324,
       "external_record_links": 2654,
       "historical_promotion_candidates": 16,
       "master_meta": 0,
       "notion_sync_jobs": 0,
       "observed_occurrence_songs": 30883,
       "observed_occurrences": 2164,
-      "occurrence_dates": 391,
-      "occurrence_evidence_links": 196,
+      "occurrence_dates": 395,
+      "occurrence_evidence_links": 200,
       "occurrence_song_evidence_links": 1008,
       "occurrence_songs": 820,
       "predicted_occurrence_dates": 14,
@@ -46,140 +46,118 @@
       "schema_migrations": 4,
       "song_aliases": 141,
       "songs": 394,
-      "venue_aliases": 378,
-      "venues": 318,
+      "venue_aliases": 382,
+      "venues": 322,
       "write_batches": 0
     }
   },
   "report": {
     "report_type": "official_notice",
-    "reported_at": "2026-08-03T23:20:00+09:00",
+    "reported_at": "2026-08-03T23:50:00+09:00",
     "source": {
-      "report_id": "adachi_okimoto_2026",
-      "title": "足立区 興本区民事務所管内 町会・自治会行事案内（2026年）",
-      "account_key": "足立区（興本区民事務所）",
-      "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html",
-      "notice_kind": "official_current_year",
-      "raw_text": "本木北町みのり町会：盆踊り／田中稲荷神社／7月25日・26日。扇一丁目寺地明和会：盆踊り／扇南公園／8月1日・2日。扇南町会：盆踊り／三嶋神社／8月1日・2日。興野町会：盆踊り／興野神社／8月1日・2日。本木東町会：盆踊り／御嶽神社／8月8日・9日。"
+      "report_id": "suginami_first_wave_2026",
+      "title": "杉並区 地域団体・商店街ページ由来の盆踊り情報（2026年）",
+      "account_key": "杉並区（各地域団体・商店街）",
+      "url": "https://suginami.mypl.net/article/summer-fes_suginami/",
+      "notice_kind": "third_party_current_year",
+      "raw_text": "第40回高井戸ちびっ子ぼんおどり／高井戸地域区民センター広場／7月29日・30日 18:00〜20:00（雨天代替7月31日）。主体：高井戸地域区民センター協議会。西武井荻商店街（ポンテイオギ）納涼盆踊り大会／下井草5-23-8 第一生命向い駐車場／7月23日・24日 17:00〜21:00。主催：西武井荻商店街振興組合。2026梅里中央公園盆おどり／梅里中央公園／8月1日 17:00〜20:00（盆おどり17:30〜20:00）。主催：梅里中央公園盆おどり実行委員会（構成団体：梅里二丁目町会、東一会、東二会、杉成商店会、東京土建杉並支部中央分会、阿佐谷地域区民センター協議会）。ふるさと和泉 みんなの夏祭り／杉並和泉学園校庭／8月1日。和泉第三町会だよりで2026年開催確認。"
     },
     "events": [
       {
         "action": "register_new",
-        "event_name_hint": "本木北町みのり町会 盆踊り",
+        "event_name_hint": "高井戸ちびっ子ぼんおどり",
         "event_year": 2026,
-        "date_start": "2026-07-25",
-        "date_end": "2026-07-26",
+        "date_start": "2026-07-29",
+        "date_end": "2026-07-30",
         "venue": {
-          "name": "田中稲荷神社",
-          "area": "足立区",
-          "address": "東京都足立区"
+          "name": "高井戸地域区民センター広場",
+          "area": "杉並区",
+          "address": "東京都杉並区"
         },
-        "detail_addendum": "主催：本木北町みのり町会。7月開催のため登録時点で終了済み。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+        "notice_kind_override": "official_current_year",
+        "detail_addendum": "元の告知表記は『第40回高井戸ちびっ子ぼんおどり』。開催時間：18:00〜20:00。雨天代替日7月31日。主体：高井戸地域区民センター協議会。出典：高井戸地域区民センター協議会（https://www.takaido-kyogikai.org/news/bbs/index.cgi?s_type=EVENT）およびまいぷれ杉並『杉並区 夏祭り』（https://suginami.mypl.net/article/summer-fes_suginami/）。"
       },
       {
         "action": "register_new",
-        "event_name_hint": "扇一丁目寺地明和会 盆踊り",
+        "event_name_hint": "西武井荻商店街 納涼盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-24",
+        "venue": {
+          "name": "第一生命向い駐車場",
+          "area": "杉並区",
+          "address": "東京都杉並区下井草5-23-8"
+        },
+        "detail_addendum": "元の告知表記は『西武井荻商店街（ポンテイオギ）納涼盆踊り大会』。開催時間：17:00〜21:00。主催：西武井荻商店街振興組合。出典：地域情報サイト ネイバーズグッド（https://neighboursgood.com/4379/）およびまいぷれ杉並『杉並区 夏祭り』（https://suginami.mypl.net/article/summer-fes_suginami/）。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "梅里中央公園盆おどり",
         "event_year": 2026,
         "date_start": "2026-08-01",
-        "date_end": "2026-08-02",
         "venue": {
-          "name": "扇南公園",
-          "area": "足立区",
-          "address": "東京都足立区"
+          "name": "梅里中央公園",
+          "area": "杉並区",
+          "address": "東京都杉並区"
         },
-        "detail_addendum": "主催：扇一丁目寺地明和会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+        "notice_kind_override": "official_current_year",
+        "detail_addendum": "元の告知表記は『2026梅里中央公園盆おどり』。開催時間：17:00〜20:00（盆おどりは17:30〜20:00）。主催：梅里中央公園盆おどり実行委員会（構成団体：梅里二丁目町会、東一会、東二会、杉成商店会、東京土建杉並支部中央分会、阿佐谷地域区民センター協議会）。出典：阿佐谷地域区民センター協議会（https://www.asagaya-kyogikai.org/news/bbs/index.cgi?datano=..%2F..%2Foh_bbsrec%2F2031072113044201.dat&mode=openfile&thispage=）およびまいぷれ杉並『杉並区 夏祭り』（https://suginami.mypl.net/article/summer-fes_suginami/）。"
       },
       {
         "action": "register_new",
-        "event_name_hint": "扇南町会 盆踊り",
+        "event_name_hint": "ふるさと和泉 みんなの夏祭り",
         "event_year": 2026,
         "date_start": "2026-08-01",
-        "date_end": "2026-08-02",
         "venue": {
-          "name": "三嶋神社",
-          "area": "足立区",
-          "address": "東京都足立区"
+          "name": "杉並和泉学園校庭",
+          "area": "杉並区",
+          "address": "東京都杉並区"
         },
-        "detail_addendum": "主催：扇南町会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
-      },
-      {
-        "action": "register_new",
-        "event_name_hint": "興野町会 盆踊り",
-        "event_year": 2026,
-        "date_start": "2026-08-01",
-        "date_end": "2026-08-02",
-        "venue": {
-          "name": "興野神社",
-          "area": "足立区",
-          "address": "東京都足立区"
-        },
-        "detail_addendum": "主催：興野町会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
-      },
-      {
-        "action": "register_new",
-        "event_name_hint": "本木東町会 盆踊り",
-        "event_year": 2026,
-        "date_start": "2026-08-08",
-        "date_end": "2026-08-09",
-        "venue": {
-          "name": "御嶽神社",
-          "area": "足立区",
-          "address": "東京都足立区"
-        },
-        "detail_addendum": "主催：本木東町会。出典：足立区 興本区民事務所ページ（https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/okimoto2014.html）。"
+        "notice_kind_override": "official_current_year",
+        "detail_addendum": "和泉第三町会だよりで2026年開催を確認。盆踊り・模擬店・花火あり（まいぷれ本文）。出典：和泉第三町会（https://member.sugi-chiiki.com/izumidai3/%E5%92%8C%E6%B3%89%E7%AC%AC%E4%B8%89%E7%94%BA%E4%BC%9A%E3%81%A0%E3%82%88%E3%82%8A-2026%E5%B9%B46%E6%9C%88%E5%8F%B7/）およびまいぷれ杉並『杉並区 夏祭り』（https://suginami.mypl.net/article/summer-fes_suginami/）。"
       }
     ]
   },
   "applied": {
     "resolved": true,
-    "evidence_id": "ev_7f38fb1278a33e7c",
+    "evidence_id": "ev_1cbac5578ee3b766",
     "events_applied": [
       {
         "action": "register_new",
-        "series_id": "series_d54b932297444e06",
+        "series_id": "series_246d180b3e771796",
         "series_created": true,
-        "occurrence_id": "occ_19a7483ef6395dfb",
-        "venue_id": "venue_7fe133ed4d25fb23",
+        "occurrence_id": "occ_a748cf862474971b",
+        "venue_id": "venue_963dc1ca7e0b4aa9",
         "venue_status": "created",
         "occurrence_created": true,
         "songs_applied": []
       },
       {
         "action": "register_new",
-        "series_id": "series_bccfd9d9a08b64ed",
+        "series_id": "series_3fc45d6317c8bee7",
         "series_created": true,
-        "occurrence_id": "occ_b5da8301aae875f0",
-        "venue_id": "venue_9f09b255f5fc9c6a",
+        "occurrence_id": "occ_eaaff144ec744dd6",
+        "venue_id": "venue_97cc1215b050c057",
         "venue_status": "created",
         "occurrence_created": true,
         "songs_applied": []
       },
       {
         "action": "register_new",
-        "series_id": "series_9771037530f84ec2",
+        "series_id": "series_38f3f0382a8105af",
         "series_created": true,
-        "occurrence_id": "occ_22bfe7f4f6dd54cb",
-        "venue_id": "venue_246ffeb7ada3ca94",
+        "occurrence_id": "occ_a6a07e16b806b14c",
+        "venue_id": "venue_435a05ba561af408",
         "venue_status": "created",
         "occurrence_created": true,
         "songs_applied": []
       },
       {
         "action": "register_new",
-        "series_id": "series_1cb17d5ce3dc2940",
+        "series_id": "series_666ce9a284230fed",
         "series_created": true,
-        "occurrence_id": "occ_ee34fb3bfe68aad1",
-        "venue_id": "venue_5a79ca8eae528e3f",
-        "venue_status": "created",
-        "occurrence_created": true,
-        "songs_applied": []
-      },
-      {
-        "action": "register_new",
-        "series_id": "series_8a1be62d95f59220",
-        "series_created": true,
-        "occurrence_id": "occ_2ce79fad1bbb4348",
-        "venue_id": "venue_4cbcfd40fe93ff80",
+        "occurrence_id": "occ_5c0b8546b2496353",
+        "venue_id": "venue_4b6aa0b6c6102039",
         "venue_status": "created",
         "occurrence_created": true,
         "songs_applied": []

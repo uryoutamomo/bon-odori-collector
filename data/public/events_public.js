@@ -23017,6 +23017,262 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
+    "name": "ふるさと和泉 みんなの夏祭り",
+    "name_confirmed": true,
+    "venue": "杉並和泉学園校庭",
+    "area": "杉並区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都杉並区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "和泉第三町会だよりで2026年開催を確認。盆踊り・模擬店・花火あり（まいぷれ本文）。出典：和泉第三町会（ 夏祭り』（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 2
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "upcoming",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-01",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "梅里中央公園盆おどり",
+    "name_confirmed": true,
+    "venue": "梅里中央公園",
+    "area": "杉並区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都杉並区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "元の告知表記は『2026梅里中央公園盆おどり』。開催時間：17:00〜20:00（盆おどりは17:30〜20:00）。主催：梅里中央公園盆おどり実行委員会（構成団体：梅里二丁目町会、東一会、東二会、杉成商店会、東京土建杉並支部中央分会、阿佐谷地域区民センター協議会）。出典：阿佐谷地域区民センター協議会（ 夏祭り』（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 2
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "upcoming",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-01",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "西武井荻商店街 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "第一生命向い駐車場",
+    "area": "杉並区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都杉並区下井草5-23-8",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-23",
+    "date_end": "2026-07-24",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        23
+      ],
+      [
+        7,
+        24
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": null,
+    "detail": "元の告知表記は『西武井荻商店街（ポンテイオギ）納涼盆踊り大会』。開催時間：17:00〜21:00。主催：西武井荻商店街振興組合。出典：地域情報サイト ネイバーズグッド（ 夏祭り』（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 2
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "upcoming",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-23〜2026-07-24",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-23",
+      "2026-07-24"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "高井戸ちびっ子ぼんおどり",
+    "name_confirmed": true,
+    "venue": "高井戸地域区民センター広場",
+    "area": "杉並区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都杉並区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-29",
+    "date_end": "2026-07-30",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        29
+      ],
+      [
+        7,
+        30
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": null,
+    "detail": "元の告知表記は『第40回高井戸ちびっ子ぼんおどり』。開催時間：18:00〜20:00。雨天代替日7月31日。主体：高井戸地域区民センター協議会。出典：高井戸地域区民センター協議会（ 夏祭り』（",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 2
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "upcoming",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-29〜2026-07-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-29",
+      "2026-07-30"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "ふるさと千川 まつり",
     "name_confirmed": true,
     "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",

@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 284,
-  "mapped_count": 284,
+  "public_event_count": 288,
+  "mapped_count": 288,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -2739,6 +2739,54 @@
       "series_id": "ser_1807349b32af2593",
       "event_year": 2026,
       "venue_id": "ven_da6978c48f778dc7"
+    },
+    {
+      "public_event_key": "ふるさと和泉 みんなの夏祭り|杉並和泉学園校庭|2026-08-01|2026-08-01",
+      "name": "ふるさと和泉 みんなの夏祭り",
+      "venue": "杉並和泉学園校庭",
+      "date": "2026-08-01",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_5c0b8546b2496353",
+      "series_id": "series_666ce9a284230fed",
+      "event_year": 2026,
+      "venue_id": "venue_4b6aa0b6c6102039"
+    },
+    {
+      "public_event_key": "梅里中央公園盆おどり|梅里中央公園|2026-08-01|2026-08-01",
+      "name": "梅里中央公園盆おどり",
+      "venue": "梅里中央公園",
+      "date": "2026-08-01",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_a6a07e16b806b14c",
+      "series_id": "series_38f3f0382a8105af",
+      "event_year": 2026,
+      "venue_id": "venue_435a05ba561af408"
+    },
+    {
+      "public_event_key": "西武井荻商店街 納涼盆踊り大会|第一生命向い駐車場|2026-07-23|2026-07-24",
+      "name": "西武井荻商店街 納涼盆踊り大会",
+      "venue": "第一生命向い駐車場",
+      "date": "2026-07-23",
+      "date_end": "2026-07-24",
+      "source": "master_rdb",
+      "occurrence_id": "occ_eaaff144ec744dd6",
+      "series_id": "series_3fc45d6317c8bee7",
+      "event_year": 2026,
+      "venue_id": "venue_97cc1215b050c057"
+    },
+    {
+      "public_event_key": "高井戸ちびっ子ぼんおどり|高井戸地域区民センター広場|2026-07-29|2026-07-30",
+      "name": "高井戸ちびっ子ぼんおどり",
+      "venue": "高井戸地域区民センター広場",
+      "date": "2026-07-29",
+      "date_end": "2026-07-30",
+      "source": "master_rdb",
+      "occurrence_id": "occ_a748cf862474971b",
+      "series_id": "series_246d180b3e771796",
+      "event_year": 2026,
+      "venue_id": "venue_963dc1ca7e0b4aa9"
     },
     {
       "public_event_key": "ふるさと千川 まつり|ふるさと千川ひろば(千川小学校校庭跡地)|2026-06-05|2026-06-06",
