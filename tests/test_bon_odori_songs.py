@@ -47,6 +47,20 @@ class BonOdoriSongsTest(unittest.TestCase):
         )
         self.assertEqual(rows, [])
 
+    def test_hints_rejects_sentence_fragments_from_context_match(self):
+        self.assertEqual(
+            extract_song_hints("8月10日以降も同じ会場で盆踊りが行われることは、出店者や踊り手の告知から確認できています。"),
+            [],
+        )
+        self.assertEqual(
+            extract_song_hints("踊り好きの有志が季節を問わず集う、飛鳥山公園の檜舞台での踊りの会"),
+            [],
+        )
+
+    def test_hints_keeps_explicit_setlist_song(self):
+        rows = extract_song_hints("セットリスト：郡上おどり かわさき、春駒、まつさか。")
+        self.assertIn("郡上おどり", names(rows))
+
     def test_hints_strip_terminal_marker_from_explicit_song_list(self):
         rows = extract_song_hints("曲目：終 炭坑節、終 津軽甚句")
         self.assertIn("炭坑節", names(rows))

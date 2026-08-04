@@ -13,7 +13,7 @@ RDB_SONG_REVIEW_SOURCE = DATA_DIR / "rdb_song_review_source.json"
 
 
 SONG_CONTEXT_RE = re.compile(
-    r"(?:曲目表|曲目|曲順|曲|踊る曲|踊り|選曲|流れる曲|セットリスト|セトリ|演目|プログラム)"
+    r"(?:曲目表|曲目|曲順|踊る曲|選曲|流れる曲|セットリスト|セトリ|演目|プログラム)"
     r"(?:は|：|:|として|に)?\s*([^。\n]{2,140})"
 )
 SONG_NAME_RE = re.compile(
@@ -158,7 +158,9 @@ def extract_song_hints(*texts):
         for context in SONG_CONTEXT_RE.finditer(text):
             segment = context.group(1)
             for match in SONG_NAME_RE.finditer(segment):
-                _add(found, match.group(1), source, explicit_list=True)
+                name = match.group(1)
+                if not SENTENCE_FRAGMENT_RE.search(name):
+                    _add(found, name, source, explicit_list=True)
         for match in SONG_NAME_RE.finditer(text):
             name = match.group(1)
             if SENTENCE_FRAGMENT_RE.search(name):
