@@ -61,6 +61,14 @@ class BonOdoriSongsTest(unittest.TestCase):
         rows = extract_song_hints("セットリスト：郡上おどり かわさき、春駒、まつさか。")
         self.assertIn("郡上おどり", names(rows))
 
+    def test_hints_keeps_local_songs_when_context_is_bare_song_or_dance(self):
+        rows = extract_song_hints("新ご当地曲『佐竹音頭』から定番曲まで踊る。品川音頭も披露。")
+        self.assertIn("佐竹音頭", names(rows))
+        self.assertIn("品川音頭", names(rows))
+
+    def test_hints_rejects_particle_immediately_before_song_suffix(self):
+        self.assertEqual(extract_song_hints("出店者や踊り、周辺で開かれる街なかの踊り"), [])
+
     def test_hints_strip_terminal_marker_from_explicit_song_list(self):
         rows = extract_song_hints("曲目：終 炭坑節、終 津軽甚句")
         self.assertIn("炭坑節", names(rows))

@@ -13,7 +13,7 @@ RDB_SONG_REVIEW_SOURCE = DATA_DIR / "rdb_song_review_source.json"
 
 
 SONG_CONTEXT_RE = re.compile(
-    r"(?:曲目表|曲目|曲順|踊る曲|選曲|流れる曲|セットリスト|セトリ|演目|プログラム)"
+    r"(?:曲目表|曲目|曲順|曲|踊る曲|踊り|選曲|流れる曲|セットリスト|セトリ|演目|プログラム)"
     r"(?:は|：|:|として|に)?\s*([^。\n]{2,140})"
 )
 SONG_NAME_RE = re.compile(
@@ -24,7 +24,9 @@ KNOWN_SONG_RE = re.compile(
     r"(東京音頭|炭坑節|河内音頭|江州音頭|郡上おどり|郡上踊り|"
     r"花笠音頭|ソーラン節|大東京音頭|東京五輪音頭|ドラえもん音頭|"
     r"アンパンマン音頭|ダンシングヒーロー|ビューティフルサンデー|"
-    r"おはら節|Beat It|盆ジョビ)"
+    r"おはら節|Beat It|盆ジョビ|濱町音頭|佐竹音頭|品川甚句|品川音頭|"
+    r"大井どんたく音頭|戸越銀座音頭|すみだ輪おどり|赤坂夏おどり|"
+    r"百人町民民謡おどり|スカイツリー踊り|ハラハラ音頭|大正大学音頭)"
 )
 CANDIDATE_CONTEXT_RE = re.compile(
     r"(?:曲目表|曲目|曲順|曲|踊る曲|踊り|踊った|選曲|流れる曲|流れ|セットリスト|セトリ|演目|"
@@ -40,6 +42,7 @@ FALLBACK_SONG_CONTEXT_RE = re.compile(
 SENTENCE_FRAGMENT_RE = re.compile(
     r"(?:周辺で開かれる|で行われる|会場で|路上で|外国人も|出店者や|好きの有志|大人の部)"
 )
+PARTICLE_BEFORE_SONG_SUFFIX_RE = re.compile(r"(?:や|の|で|も|と|は|が)(?:おどり|踊り|小唄|甚句|節)$")
 
 STOPWORDS = {
     "盆踊り",
@@ -110,6 +113,10 @@ def _clean_song(value):
     return value.strip()
 
 
+def _is_sentence_fragment(value):
+    return bool(SENTENCE_FRAGMENT_RE.search(value) or PARTICLE_BEFORE_SONG_SUFFIX_RE.search(value))
+
+
 def _add(out, value, source, explicit_list=False):
     song = _clean_song(value)
     if not song or song in STOPWORDS:
@@ -159,11 +166,11 @@ def extract_song_hints(*texts):
             segment = context.group(1)
             for match in SONG_NAME_RE.finditer(segment):
                 name = match.group(1)
-                if not SENTENCE_FRAGMENT_RE.search(name):
+                if not _is_sentence_fragment(name):
                     _add(found, name, source, explicit_list=True)
         for match in SONG_NAME_RE.finditer(text):
             name = match.group(1)
-            if SENTENCE_FRAGMENT_RE.search(name):
+            if _is_sentence_fragment(name):
                 continue
             start = max(0, match.start() - 40)
             end = min(len(text), match.end() + 18)
