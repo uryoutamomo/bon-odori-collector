@@ -7314,13 +7314,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       },
       {
-        "name": "周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 80,
@@ -10083,15 +10076,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "路上で行われる踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      }
-    ],
+    "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
@@ -14713,13 +14698,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       },
       {
-        "name": "大井町駅前中央通り周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
@@ -17427,15 +17405,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "都立大学駅西口緑道周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      }
-    ],
+    "songs": [],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -19601,12 +19571,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "周辺で開かれる街なかの踊り",
-        "confidence": "hint"
-      }
-    ],
+    "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
@@ -19808,15 +19773,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "円光院駐車場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      }
-    ],
+    "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
@@ -19919,12 +19876,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "千歳船橋駅前広場周辺で開かれる街なかの踊り",
-        "confidence": "hint"
-      }
-    ],
+    "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
@@ -20349,12 +20301,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "南口広場周辺で開かれる街なかの踊り",
-        "confidence": "hint"
-      }
-    ],
+    "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
@@ -21579,12 +21526,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "祖師谷神明社周辺で開かれる街なかの踊り",
-        "confidence": "hint"
-      }
-    ],
+    "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
@@ -22585,13 +22527,6 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "渋谷で盆ジョヴィ 2025 ダンシングヒーロー",
-        "confidence": "hint",
-        "probability": 57,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 48,
@@ -22599,21 +22534,7 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
-        "name": "外国人も一緒になって阿波踊り",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
         "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "激混み会場で外国人も踊り",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -23831,20 +23752,6 @@ const EVENTS = [
         "probability": 95,
         "basis": "current_observed",
         "basis_label": "実測"
-      },
-      {
-        "name": "好きの有志が季節",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "飛鳥山公園の檜舞台での踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
       }
     ],
     "current_event_state": "predicted",
@@ -28611,12 +28518,7 @@ const EVENTS = [
     "description": "亀有駅南口側の亀有銀座商店街・ゆうろーど周辺で開かれる街なかの盆踊り会場。",
     "detail": "2026年7月17日(金)〜20日(月)の4日連続開催。子供の部18:00-18:50、大人の部19:00-21:00。17日・18日と19日・20日で踊りの曲目が異なる。模擬店多数。7月20日(月)は打ち水エコ作戦「水かけまつり」（11:45集合・12:00開始、三菱UFJ銀行横ゆうろーど入口）。主催はあ〜夏休み実行委員会（亀有中央町会・亀有三和町会）。同じ亀有ゆうろーどで8月下旬に開催される「亀有銀座商店街納涼盆踊り大会」とは主催町会が異なる別イベント。（公式ポスター画像より）",
     "source_urls": [],
-    "songs": [
-      {
-        "name": "大人の部",
-        "confidence": "hint"
-      }
-    ],
+    "songs": [],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",

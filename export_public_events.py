@@ -19,7 +19,7 @@ import unicodedata
 import urllib.error
 import urllib.request
 
-from song_processing.bon_odori_songs import extract_song_hints
+from song_processing.bon_odori_songs import extract_song_hints, is_suppressed_song
 from event_model.event_series_normalization import public_series_name
 from event_model.year_context import normalize_target_year
 from master_rdb.master_db import MASTER_DB, connect_existing
@@ -619,7 +619,7 @@ def load_rdb_occurrence_songs(conn):
 def merge_song_occurrence_hints(existing_songs, occurrence):
     songs = {}
     for song in existing_songs or []:
-        if not song.get("name"):
+        if not song.get("name") or is_suppressed_song(song.get("name")):
             continue
         key = _song_dedupe_key(song.get("name", ""))
         if not key:
@@ -629,6 +629,8 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
         if current is None or _song_score(candidate) > _song_score(current):
             songs[key] = candidate
     for song in (occurrence or {}).get("songs", []):
+        if is_suppressed_song(song.get("name")):
+            continue
         key = _song_dedupe_key(song.get("name", ""))
         if not key:
             continue

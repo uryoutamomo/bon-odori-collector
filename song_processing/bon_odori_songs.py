@@ -48,6 +48,40 @@ STOPWORDS = {
     "盆おどり",
 }
 
+# Sentence fragments that reached bonsuke.jp as song titles.
+#
+# The extractor is deliberately coarse: weekly_harvest.yml was built around
+# "machine proposes roughly, a human rewrites it into the canonical title"
+# (see the song master memos, e.g. ユリが咲いてる中にっぽん花咲か音頭 ->
+# にっぽん花咲か音頭).  That review step has not run since 2026-06-25, so raw
+# candidates have been reaching the public export unreviewed.
+#
+# Tightening the regexes was tried and rejected on 2026-08-04: every variant
+# took a real local song down with it (佐竹音頭, 濱町音頭, 舟渡ひろがり音頭 …).
+# Until the weekly review is restored, suppress the known-bad strings by exact
+# match only — no pattern may be inferred from this list.
+SUPPRESSED_SONG_NAMES = {
+    "周辺で開かれる街なかの踊り",
+    "大井町駅前中央通り周辺で開かれる街なかの踊り",
+    "都立大学駅西口緑道周辺で開かれる街なかの踊り",
+    "円光院駐車場周辺で開かれる街なかの踊り",
+    "千歳船橋駅前広場周辺で開かれる街なかの踊り",
+    "南口広場周辺で開かれる街なかの踊り",
+    "祖師谷神明社周辺で開かれる街なかの踊り",
+    "路上で行われる踊り",
+    "飛鳥山公園の檜舞台での踊り",
+    "好きの有志が季節",
+    "外国人も一緒になって阿波踊り",
+    "激混み会場で外国人も踊り",
+    "渋谷で盆ジョヴィ 2025 ダンシングヒーロー",
+    "大人の部",
+}
+
+
+def is_suppressed_song(value):
+    """True for strings confirmed to be prose, not song titles."""
+    return re.sub(r"\s+", " ", str(value or "")).strip() in SUPPRESSED_SONG_NAMES
+
 
 def _norm_song(value):
     return re.sub(r"\s+", "", str(value or "")).casefold()
@@ -105,7 +139,7 @@ def _clean_song(value):
 
 def _add(out, value, source, explicit_list=False):
     song = _clean_song(value)
-    if not song or song in STOPWORDS:
+    if not song or song in STOPWORDS or is_suppressed_song(song):
         return
     master_song = is_master_song(song)
     if re.search(r"[0-9０-９]|盆踊り|盆おどり|奉納|祭礼|例大祭", song):
