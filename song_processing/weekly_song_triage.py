@@ -5,6 +5,7 @@ import argparse
 import json
 import os
 import re
+import sqlite3
 import urllib.request
 from pathlib import Path
 
@@ -14,7 +15,7 @@ from notion_support.notion_config import (
     VENUE_DATABASE_ID,
     load_local_env,
 )
-from song_processing.bon_odori_songs import is_master_song
+from song_processing.song_catalog import SongCatalog, SongMatchType, SongReviewState
 from song_processing.song_master_registration import classify_song
 
 
@@ -27,6 +28,7 @@ SONG_DB_ID = os.environ.get("SONG_MASTER_DB_ID") or SONG_MASTER_DATABASE_ID
 SOURCE = Path("data/weekly_harvest_candidates.json")
 OUT = Path("data/weekly_song_triage_result.json")
 REVIEW_OUT = Path("data/weekly_song_candidates_review.json")
+DEFAULT_MASTER_DB = Path("data/bon_odori_master.sqlite")
 
 TITLE_PROPS = {
     EVENT_DATABASE_ID: "イベント名",
@@ -324,6 +326,20 @@ SONG_SUFFIX_RE = (
 SUFFIX_PARTICLE_CHARS = "のとやもがをにへで"
 
 
+def build_song_catalog(db_path):
+    """Open the master DB read-only and build a SongCatalog from it.
+
+    Deliberately does not catch sqlite3 errors: a missing DB file or a
+    missing songs/song_aliases table (schema drift) must fail the run
+    loudly rather than silently falling back to an unsafe static source.
+    """
+    conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+    try:
+        return SongCatalog.from_connection(conn)
+    finally:
+        conn.close()
+
+
 def is_song_like(term):
     if len(term) < 2 or len(term) > 18:
         return False
@@ -344,7 +360,7 @@ def is_song_like(term):
     return bool(re.search(SONG_SUFFIX_RE + r"$", term))
 
 
-def classify_candidate(row):
+def classify_candidate(row, catalog):
     term = row["term"]
     if term in CANONICAL_MAP:
         return "direct", CANONICAL_MAP[term], "既知曲を含む文章候補を正規曲名へ寄せた"
@@ -352,24 +368,41 @@ def classify_candidate(row):
         return "reject", term, "曲名ではなく文章断片または一般語"
     if term in AMBIGUOUS_TERMS:
         return "review", term, "多義語・イベント名・ジャンル名の可能性がある"
-    # The accumulated song master outranks the shape heuristics: titles such as
-    # ふるさと音頭 look like prose to is_song_like() (と before the suffix) but
-    # are already confirmed songs. Check the accumulation before guessing.
-    #
-    # PROVISIONAL (2026-08-04): is_master_song() currently reads a static
-    # "known song" provider that includes all 743 rows of
-    # data/rdb_song_review_source.json, every one of which carries
-    # status=needs_song_master_review -- i.e. unreviewed. That provider is
-    # not a safe "verified" signal on its own; it happened not to promote a
-    # sentence fragment here only because AMBIGUOUS_TERMS/NOISE_EXACT already
-    # catch the known bad cases checked above. Do not extend this priority
-    # to any new caller, and do not treat it as a template for other checks.
-    # Replace with song_processing.song_catalog.SongCatalog.is_verified(),
-    # which distinguishes verified/candidate/rejected/unknown by RDB status,
-    # once the P2 runtime switch lands (see
-    # bon-odori-song-pipeline-design-20260804 thread).
-    if is_master_song(term):
-        return "direct", term, "曲マスタに登録済みの曲名"
+
+    # The accumulated song master outranks the shape heuristics: titles such
+    # as ふるさと音頭 look like prose to is_song_like() (と before the suffix)
+    # but are already confirmed songs. SongCatalog (RDB-backed) is the
+    # source of truth here, not the static provider replaced in P1/P2 --
+    # see bon-odori-song-pipeline-design-20260804.
+    resolution = catalog.resolve(term)
+    has_rdb_match = resolution.match_type in (SongMatchType.CANONICAL, SongMatchType.ALIAS)
+
+    if resolution.match_type == SongMatchType.AMBIGUOUS_ALIAS:
+        return "review", term, "SongCatalog: 複数曲が同じ別名を登録しており一意に解決できない"
+
+    if has_rdb_match:
+        if resolution.review_state == SongReviewState.VERIFIED:
+            if resolution.match_type == SongMatchType.ALIAS:
+                return (
+                    "direct",
+                    resolution.canonical_title,
+                    "SongCatalog: RDB検証済み別名を正規曲名へ解決",
+                )
+            return "direct", resolution.canonical_title, "SongCatalog: RDB検証済み曲として解決"
+        if resolution.review_state == SongReviewState.CANDIDATE:
+            # Song-like shape is not a promotion signal here: an RDB row
+            # that is still 候補 (unreviewed) must go to review even if it
+            # looks exactly like a title, per the 大人の部 incident.
+            return "review", term, "SongCatalog: RDB未レビュー候補のためレビューへ"
+        if resolution.review_state == SongReviewState.REJECTED:
+            # Likewise, shape must not override an explicit RDB rejection.
+            return "reject", term, "SongCatalog: RDBで無効と判定済み"
+        # RDB matched (canonical/alias) but the stored status string is not
+        # one we recognize. Fail closed to review rather than guessing.
+        return "review", term, "SongCatalog: RDB一致はあるが状態不明のためレビューへ(fail closed)"
+
+    # No RDB match at all (neither canonical nor alias): fall back to the
+    # existing shape heuristic, unchanged from pre-P2 behavior.
     if is_song_like(term):
         return "direct", term, "曲名として明白な接尾辞/既知パターン"
     return "reject", term, "曲名としての形が弱い"
@@ -420,12 +453,17 @@ def write_review_output(source, review_rows):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--db", type=Path, default=DEFAULT_MASTER_DB)
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
     if not SONG_DB_ID:
         raise SystemExit("SONG_MASTER_DB_ID is not set")
+
+    # Opened once and reused for every candidate below; classify_candidate()
+    # never opens a connection of its own.
+    catalog = build_song_catalog(args.db)
 
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     song_rows = [row for row in data.get("rows", []) if row.get("category") == "曲候補"]
@@ -437,7 +475,7 @@ def main():
     rejected = []
     review = []
     for row in song_rows:
-        decision, canonical, reason = classify_candidate(row)
+        decision, canonical, reason = classify_candidate(row, catalog)
         row = dict(row)
         row["canonical_song_name"] = canonical
         row["triage_reason"] = reason

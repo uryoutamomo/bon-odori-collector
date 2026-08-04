@@ -10,6 +10,7 @@ from pathlib import Path
 from triage_weekly_song_candidates import (
     CANONICAL_MAP,
     NOISE_EXACT,
+    build_song_catalog,
     classify_candidate,
     is_song_like,
     norm,
@@ -20,6 +21,7 @@ SOURCE = Path("data/retrospective_harvest_candidates.json")
 SONG_MASTER = Path("data/song_master_initial_registration.json")
 OUT = Path("data/retrospective_song_triage.json")
 OUT_MD = Path("data/retrospective_song_triage.md")
+DEFAULT_MASTER_DB = Path("data/bon_odori_master.sqlite")
 
 
 EXTRA_CANONICAL = {
@@ -103,11 +105,11 @@ def is_event_like_song_name(name):
     return any(re.fullmatch(pattern, name) for pattern in EVENT_LIKE_PATTERNS)
 
 
-def classify_retrospective(candidate, existing_index):
+def classify_retrospective(candidate, existing_index, catalog):
     raw_name = candidate.get("display_name") or ""
     canonical = clean_candidate_name(raw_name)
     row = {"term": raw_name}
-    decision, weekly_canonical, weekly_reason = classify_candidate(row)
+    decision, weekly_canonical, weekly_reason = classify_candidate(row, catalog)
     if weekly_canonical != raw_name:
         canonical = clean_candidate_name(weekly_canonical)
 
@@ -143,14 +145,14 @@ def classify_retrospective(candidate, existing_index):
     return "reject_noise", canonical, "曲名としての形が弱い"
 
 
-def triage(data, master):
+def triage(data, master, catalog):
     existing = existing_song_names(master)
     existing_index = {norm(name): name for name in existing}
     rows = []
     for candidate in data.get("candidates") or []:
         if candidate.get("kind") != "song":
             continue
-        bucket, canonical, reason = classify_retrospective(candidate, existing_index)
+        bucket, canonical, reason = classify_retrospective(candidate, existing_index, catalog)
         rows.append({
             "bucket": bucket,
             "raw_name": candidate.get("display_name") or "",
@@ -241,9 +243,13 @@ def main():
     parser.add_argument("--song-master", type=Path, default=SONG_MASTER)
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--md-out", type=Path, default=OUT_MD)
+    parser.add_argument("--db", type=Path, default=DEFAULT_MASTER_DB)
     args = parser.parse_args()
 
-    result = triage(load_json(args.source, {}), load_json(args.song_master, {}))
+    # Opened once, read-only, and reused for every candidate below -- same
+    # contract as song_processing.weekly_song_triage.build_song_catalog().
+    catalog = build_song_catalog(args.db)
+    result = triage(load_json(args.source, {}), load_json(args.song_master, {}), catalog)
     write_json(args.out, result)
     args.md_out.write_text(markdown(result), encoding="utf-8")
     print(
