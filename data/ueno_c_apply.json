@@ -1,0 +1,123 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-08-04T00:51:37.983835+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/ueno_inoichi_umbrella_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260804T005137.983835+0000.sqlite.bak",
+    "json": "data/ueno_c_apply.json",
+    "markdown": "data/ueno_c_apply.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 363,
+      "event_series": 347,
+      "event_series_aliases": 24,
+      "evidence_items": 31327,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 416,
+      "occurrence_evidence_links": 222,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 508,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 402,
+      "venues": 342,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-08-04T01:45:00+09:00",
+    "source": {
+      "report_id": "ueno_inoichi_umbrella_2026",
+      "title": "上野ゐの市盆踊り（10日間の催し）の新規登録と、ゐの市盆踊り～不忍夢～との関係の明記",
+      "account_key": "上野公園イベント＆フェス情報（uenopark.info）",
+      "url": "https://www.uenopark.info/2026/ueno-inoichi-bon-odori-2026/",
+      "notice_kind": "third_party_current_year",
+      "raw_text": "上野ゐの市盆踊り／2026年8月7日（金）〜16日（日）／全日12:00〜21:00／上野恩賜公園 袴腰広場／主催 上野中通商店街振興組合／観覧無料。既存の『ゐの市盆踊り～不忍夢～』（8月7〜9日）は、この10日間の催しのうち前半3日にあたる学生団体との共創企画とみられるため、別の開催回として新規登録したうえで、両者の関係を双方の本文に記載する。"
+    },
+    "events": [
+      {
+        "action": "register_new",
+        "event_name_hint": "上野ゐの市盆踊り",
+        "event_year": 2026,
+        "date_start": "2026-08-07",
+        "date_end": "2026-08-16",
+        "venue": {
+          "name": "上野恩賜公園",
+          "area": "台東区",
+          "address": "東京都台東区上野公園"
+        },
+        "detail_addendum": "2026年8月7日（金）〜16日（日）の10日間、全日12:00〜21:00。会場は上野恩賜公園の袴腰広場、主催は上野中通商店街振興組合、観覧無料。盆踊りのほか祭りグルメとステージ企画があり、曲目は日替わり。出典は上野公園のイベント情報サイト『上野ゐの市盆踊り｜2026年8月7日（金）〜16日（日）に上野恩賜公園・袴腰広場で開催！』（https://www.uenopark.info/2026/ueno-inoichi-bon-odori-2026/ ）。\n\n【同じ会場の「ゐの市盆踊り～不忍夢～」との関係】盆助には同じ上野恩賜公園で8月7〜9日開催の「ゐの市盆踊り～不忍夢～」も登録されています。こちらは学生団体おりがみが企画する3日間で、10日間の催し全体のうち前半にあたるものとみられます。前年2025年は「ゐの市盆踊り～不忍夢～」として8月9〜11日の3日間、上野中通商店街振興組合が主催・おりがみが共催という形でした。\n\n【情報源が食い違っている点を明記します】開催期間について、情報源が2つに分かれています。主催に近い上野倶楽部（@ueno_club・学生団体おりがみ系）は7月11日に「ゐの市盆踊り〜不忍夢〜2026の日程が決定しました！日時 2026年8月7（金）.8（土）.9（日）日」と3日間で告知しており（ https://x.com/ueno_club/status/2075900963446251935 ）、上野黒門町の投稿も「上野公園袴腰広場8/7~9」としています（ https://x.com/uenokuromon/status/2081577351893438824 ）。一方、7月30日以降は出演者10アカウント以上が「2026年8月7日(金)〜8月16日(日) 全日12:00〜21:00 上野恩賜公園 袴腰広場」と10日間で一斉に告知しています（@hitonyan_info https://x.com/hitonyan_info/status/2082671853307596975 ／ @yukarimaeda https://x.com/yukarimaeda/status/2082709210240819616 ／ @StaffLast https://x.com/StaffLast/status/2082722979365179681 ／ @hidejitokani https://x.com/hidejitokani/status/2083667430073860198 ほか）。\n\n【8月10日以降にも盆踊りが行われる根拠】出店予定として「8/7〜16 ゐの市盆踊り」の10日間が挙げられており（ https://x.com/hustler818181/status/2082288487349567822 ）、出演する連からも「彩之會の盆踊り 8/10-13 19:00〜、8/16 12:00〜」と8月10日以降の日程が告知されています（ https://x.com/tomi_sa010/status/2084189330906780062 ）。したがって、8月10日から16日にも踊れる場が用意されていると判断しました。\n\n【まだ確認できていないこと】主催者である上野中通商店街振興組合自身が10日間と明記した一次ページは、現時点では確認できていません。3日間の企画と10日間の催しの正確な関係（前半3日が特別企画なのか、別々の主催による並行開催なのか）も確定していません。お出かけの際は現地の掲示や主催者の最新の告知もあわせてご確認ください。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_0ee14ffbf15fd0cf",
+        "event_year": 2026,
+        "detail_addendum": "【同じ会場の「上野ゐの市盆踊り」との関係】盆助には同じ上野恩賜公園で8月7日〜16日開催の「上野ゐの市盆踊り」も登録されています。上野中通商店街振興組合が主催する10日間の催しで、こちらの「ゐの市盆踊り～不忍夢～」はそのうち前半3日にあたる、学生団体おりがみとの共創企画とみられます。8月10日以降も同じ会場で盆踊りが行われることは、出店予定と出演者の告知から確認できています。両者の正確な関係は確定していないため、期間の異なる2件として掲載しています。"
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_c06e2ce3c5a62136",
+    "events_applied": [
+      {
+        "action": "register_new",
+        "series_id": "series_237003fb0cfa2577",
+        "series_created": true,
+        "occurrence_id": "occ_c269edeedf7a5b71",
+        "venue_id": "ven_2c7e944e2b1af336",
+        "venue_status": "reused",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_0ee14ffbf15fd0cf",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 308,
-  "mapped_count": 308,
+  "public_event_count": 309,
+  "mapped_count": 309,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -865,6 +865,18 @@
       "source": "master_rdb",
       "occurrence_id": "occ_0ee14ffbf15fd0cf",
       "series_id": "ser_59e508928cfca640",
+      "event_year": 2026,
+      "venue_id": "ven_2c7e944e2b1af336"
+    },
+    {
+      "public_event_key": "上野ゐの市盆踊り|上野恩賜公園|2026-08-07|2026-08-16",
+      "name": "上野ゐの市盆踊り",
+      "venue": "上野恩賜公園",
+      "date": "2026-08-07",
+      "date_end": "2026-08-16",
+      "source": "master_rdb",
+      "occurrence_id": "occ_c269edeedf7a5b71",
+      "series_id": "series_237003fb0cfa2577",
       "event_year": 2026,
       "venue_id": "ven_2c7e944e2b1af336"
     },
