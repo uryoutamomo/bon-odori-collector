@@ -355,6 +355,19 @@ def classify_candidate(row):
     # The accumulated song master outranks the shape heuristics: titles such as
     # ふるさと音頭 look like prose to is_song_like() (と before the suffix) but
     # are already confirmed songs. Check the accumulation before guessing.
+    #
+    # PROVISIONAL (2026-08-04): is_master_song() currently reads a static
+    # "known song" provider that includes all 743 rows of
+    # data/rdb_song_review_source.json, every one of which carries
+    # status=needs_song_master_review -- i.e. unreviewed. That provider is
+    # not a safe "verified" signal on its own; it happened not to promote a
+    # sentence fragment here only because AMBIGUOUS_TERMS/NOISE_EXACT already
+    # catch the known bad cases checked above. Do not extend this priority
+    # to any new caller, and do not treat it as a template for other checks.
+    # Replace with song_processing.song_catalog.SongCatalog.is_verified(),
+    # which distinguishes verified/candidate/rejected/unknown by RDB status,
+    # once the P2 runtime switch lands (see
+    # bon-odori-song-pipeline-design-20260804 thread).
     if is_master_song(term):
         return "direct", term, "曲マスタに登録済みの曲名"
     if is_song_like(term):
