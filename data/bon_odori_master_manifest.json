@@ -12,7 +12,7 @@
     "storage": "s3"
   },
   "artifact_fetch": {
-    "fetched_at": "2026-08-04T00:16:26.515887+00:00",
+    "fetched_at": "2026-08-04T01:35:09.687222+00:00",
     "local_database_path": "data/bon_odori_master.sqlite",
     "source": "s3://bon-odori-master-rdb-169805602203/master-rdb/latest/bon_odori_master.sqlite"
   },
