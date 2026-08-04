@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-03T10:23:10.050429+00:00",
+  "generated_at": "2026-08-04T09:25:03.800958+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-03T10:23:01.149325+00:00",
+  "source_generated_at": "2026-08-04T09:24:56.494919+00:00",
   "days": 3,
-  "voice_count": 3865,
-  "candidate_count": 288,
+  "voice_count": 3660,
+  "candidate_count": 282,
   "category_counts": {
-    "曲×会場共起": 31,
-    "曲候補": 246,
-    "用語候補": 11
+    "曲×会場共起": 24,
+    "曲候補": 249,
+    "用語候補": 9
   },
-  "non_song_review_count": 42,
-  "song_candidate_count": 246,
-  "song_direct_dry_run_count": 205,
-  "song_review_count": 2,
-  "song_rejected_noise_count": 39,
+  "non_song_review_count": 33,
+  "song_candidate_count": 249,
+  "song_direct_dry_run_count": 125,
+  "song_review_count": 6,
+  "song_rejected_noise_count": 118,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -29,21 +29,25 @@
   "samples": {
     "non_song_review": [
       "ホームラン音頭 × 築地本願寺",
-      "大江戸助六音頭 × 築地本願寺",
-      "斎太郎節 × 築地本願寺",
-      "法輪音頭 × 築地本願寺",
       "おしりたんてい音頭 × 晴海ふ頭公園",
       "八木節 × 花園神社",
+      "斎太郎節 × 築地本願寺",
       "炭坑節 × 築地本願寺",
       "炭坑節 × 花園神社",
       "英語の炭坑節 × 花園神社",
+      "9日は浜町音頭 × 西久保八幡神社",
       "あやめ踊り × 築地本願寺",
-      "それでも冷めない踊り × 築地本願寺",
-      "という程お腹一杯踊り × 築地本願寺"
+      "アンコールは築地音頭 × 築地本願寺",
+      "ドンパン節 × 花園神社",
+      "フィナーレの築地音頭 × 築地本願寺"
     ],
     "song_review": [
       "盆ジョビ",
-      "郡上おどり"
+      "BON踊り",
+      "郡上おどり",
+      "ドン踊り",
+      "防災神神音頭",
+      "風流踊り"
     ]
   }
 }
