@@ -34,6 +34,12 @@ CANDIDATE_SEGMENT_RE = re.compile(
     r"(?:曲目表|曲目|曲順|踊る曲|選曲|流れる曲|セットリスト|セトリ|演目|プログラム|リクエスト)"
     r"(?:は|：|:|として|に)?\s*([^。\n]{2,140})"
 )
+FALLBACK_SONG_CONTEXT_RE = re.compile(
+    r"(?:曲目表|曲目|曲順|選曲|流れる曲|セットリスト|セトリ|演目|踊る曲)"
+)
+SENTENCE_FRAGMENT_RE = re.compile(
+    r"(?:周辺で開かれる|で行われる|会場で|路上で|外国人も|出店者や|好きの有志|大人の部)"
+)
 
 STOPWORDS = {
     "盆踊り",
@@ -96,6 +102,7 @@ def _clean_song(value):
     value = re.sub(r"^回(?=[一-龥ぁ-んァ-ヶーA-Za-z0-9])", "", value)
     value = re.sub(r"^.*さん(?:の|による)", "", value)
     value = re.sub(r"^初の", "", value)
+    value = re.sub(r"^終\s*", "", value)
     value = re.sub(r"(?:など|ほか|他|って言う|という|と民謡|を|で)?踊り$", lambda m: "" if m.group(0) != "踊り" else m.group(0), value)
     value = value.strip(" 「」『』（）()[]【】")
     if value.endswith("など"):
@@ -154,10 +161,16 @@ def extract_song_hints(*texts):
                 _add(found, match.group(1), source, explicit_list=True)
         for match in SONG_NAME_RE.finditer(text):
             name = match.group(1)
+            if SENTENCE_FRAGMENT_RE.search(name):
+                continue
             start = max(0, match.start() - 40)
             end = min(len(text), match.end() + 18)
             window = text[start:end]
-            if re.search(r"(曲目|曲|踊|選曲|流れ|披露|レクチャー|練習)", window):
+            # This fallback is the only path that admits an unknown suffix
+            # match.  A bare "曲" or "踊" is ubiquitous in event prose and
+            # turns sentence fragments into fake songs, so require an
+            # explicitly list-like song context here.
+            if FALLBACK_SONG_CONTEXT_RE.search(window):
                 _add(found, name, source)
 
     return [

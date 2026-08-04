@@ -1,0 +1,31 @@
+{
+  "generated_from": "data/public/events_public.json",
+  "review_required": true,
+  "removal_not_applied": true,
+  "candidates": [
+    {"event_name":"シタマチ.ふるさと盆踊り大会","song_name":"周辺で開かれる街なかの踊り"},
+    {"event_name":"東本願寺盆踊り","song_name":"終 ガット・トゥ・ビー・リアル"},
+    {"event_name":"押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り","song_name":"路上で行われる踊り"},
+    {"event_name":"大井どんたく夏まつり 初日 盆踊り","song_name":"大井町駅前中央通り周辺で開かれる街なかの踊り"},
+    {"event_name":"Min-Yoi's盆踊り","song_name":"終 繁昌ぶし"},
+    {"event_name":"Min-Yoi's盆踊り","song_name":"終 メガヒッツ盆踊り"},
+    {"event_name":"Min-Yoi's盆踊り","song_name":"終 夏祭り"},
+    {"event_name":"Min-Yoi's盆踊り","song_name":"終 池袋盆BAND"},
+    {"event_name":"Min-Yoi's盆踊り","song_name":"終 津軽甚句"},
+    {"event_name":"Min-Yoi's盆踊り","song_name":"終 炭坑節"},
+    {"event_name":"自由が丘納涼盆踊り大会","song_name":"特設会場周辺で開かれる街なかの踊り"},
+    {"event_name":"桜フェスタ商店街 みんなで盆踊り","song_name":"都立大学駅西口緑道周辺で開かれる街なかの踊り"},
+    {"event_name":"下北沢盆踊り","song_name":"下北沢駅東口周辺で開かれる街なかの踊り"},
+    {"event_name":"芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」","song_name":"周辺で開かれる街なかの踊り"},
+    {"event_name":"世田谷駅前商店街振興組合「納涼盆踊り大会」","song_name":"円光院駐車場周辺で開かれる街なかの踊り"},
+    {"event_name":"船橋会 盆踊り","song_name":"千歳船橋駅前広場周辺で開かれる街なかの踊り"},
+    {"event_name":"喜多見盆踊り大会","song_name":"南口広場周辺で開かれる街なかの踊り"},
+    {"event_name":"祖師谷昇進会商店街(振)盆踊り","song_name":"祖師谷神明社周辺で開かれる街なかの踊り"},
+    {"event_name":"SHIBUYA MIYASHITA PARK BON DANCE","song_name":"渋谷で盆ジョヴィ 2025 ダンシングヒーロー"},
+    {"event_name":"SHIBUYA MIYASHITA PARK BON DANCE","song_name":"外国人も一緒になって阿波踊り"},
+    {"event_name":"SHIBUYA MIYASHITA PARK BON DANCE","song_name":"激混み会場で外国人も踊り"},
+    {"event_name":"飛鳥山公園盆踊り会（有志サークル）","song_name":"好きの有志が季節"},
+    {"event_name":"飛鳥山公園盆踊り会（有志サークル）","song_name":"飛鳥山公園の檜舞台での踊り"},
+    {"event_name":"あ〜夏休み！納涼盆踊り大会","song_name":"大人の部"}
+  ]
+}

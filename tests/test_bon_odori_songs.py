@@ -17,7 +17,7 @@ class BonOdoriSongsTest(unittest.TestCase):
 
     def test_extracts_local_ondo_in_dance_context(self):
         rows = extract_song_hints(
-            "2025-08-23（土）18:00から盆踊り。大井どんたく音頭、品川音頭、東京音頭、品川甚句など。"
+            "2025-08-23（土）18:00から盆踊り。曲目は大井どんたく音頭、品川音頭、東京音頭、品川甚句など。"
         )
 
         self.assertIn("大井どんたく音頭", names(rows))
@@ -40,6 +40,18 @@ class BonOdoriSongsTest(unittest.TestCase):
         rows = extract_song_hints("納涼盆踊り大会。踊り大会は18時開始。")
 
         self.assertEqual(rows, [])
+
+    def test_hints_reject_sentence_fragments_without_explicit_song_context(self):
+        rows = extract_song_hints(
+            "下北沢駅東口周辺で開かれる街なかの踊り。出店者や踊り手も参加。路上で行われる踊り。"
+        )
+        self.assertEqual(rows, [])
+
+    def test_hints_strip_terminal_marker_from_explicit_song_list(self):
+        rows = extract_song_hints("曲目：終 炭坑節、終 津軽甚句")
+        self.assertIn("炭坑節", names(rows))
+        self.assertIn("津軽甚句", names(rows))
+        self.assertNotIn("終 炭坑節", names(rows))
 
     def test_review_candidates_include_known_songs_in_context(self):
         rows = extract_song_candidates(
