@@ -14,6 +14,7 @@ from notion_support.notion_config import (
     VENUE_DATABASE_ID,
     load_local_env,
 )
+from song_processing.bon_odori_songs import is_master_song
 from song_processing.song_master_registration import classify_song
 
 
@@ -63,6 +64,14 @@ AMBIGUOUS_TERMS = {
     "馬鹿おどり",
     "よさこい踊り",
     "夜の踊り",
+    # 2026-08-04 追加。曲名かイベント名かジャンル名か判断がつかず、
+    # 自動登録も自動棄却もすべきでないもの。
+    "BON踊り",
+    "ドン踊り",
+    "ボン・ジョヴィ踊り",
+    "酒クズ音頭",
+    "防災神神音頭",
+    "風流踊り",
 }
 
 NOISE_EXACT = {
@@ -132,6 +141,102 @@ NOISE_EXACT = {
     "誰もどなたも踊り",
     "踊り",
     "隅田公園そよ風ひろばに踊り",
+    # 2026-08-04 追加。日次 triage の created 177件を1件ずつ確認して分類した分。
+    # 判定基準は内田さんの承認済み（入れたくない例＝多くの踊り／まだまだ踊り／
+    # 楽しく歌って踊り／1日目踊り／3日間楽しく踊り／東京音頭と炭坑節）。
+    "多くの踊り",
+    "まだまだ踊り",
+    "楽しく歌って踊り",
+    "1日目踊り",
+    "3日間楽しく踊り",
+    "東京音頭と炭坑節",
+    "3人の音頭",
+    "いいね暑気払いの踊り",
+    "いっぱい踊り",
+    "いつかまたあの踊り",
+    "こちらの踊り",
+    "こちらは踊り",
+    "しっかり踊り",
+    "ぜひ踊り",
+    "ぜーーんぜん踊り",
+    "そしたら踊り",
+    "ちょうど踊り",
+    "つの踊り",
+    "てwww踊り",
+    "という程お腹一杯踊り",
+    "といったご当地踊り",
+    "といった復興支援の踊り",
+    "とは言え踊り",
+    "と地元の踊り",
+    "と夜の踊り",
+    "どーしても踊り",
+    "なんなら踊り",
+    "の変な踊り",
+    "の風流踊り",
+    "はらりはられ今踊り",
+    "ひらすら踊り",
+    "ほとんどはじめての踊り",
+    "みんなと踊り",
+    "みんな踊り",
+    "もっと踊り",
+    "やスカイツリーおどり",
+    "ゆったりとした踊り",
+    "わたしもまだまだ踊り",
+    "アンコールは築地音頭",
+    "テンポの早い音頭",
+    "ド下手くその踊り",
+    "フィナーレの築地音頭",
+    "マジ踊り",
+    "一番踊り",
+    "上手な方の踊り",
+    "下手な踊り",
+    "中学生の踊り",
+    "例年ゆかた音頭",
+    "別名盆ジョビ",
+    "唄も覚えた踊り",
+    "唄も踊り",
+    "夏まつりの季節",
+    "夏祭りの季節",
+    "太鼓の踊り",
+    "子どもたちの太鼓や踊り",
+    "定番郡上おどり",
+    "市の音頭",
+    "所変われば踊り",
+    "手拭い八木節等楽しく踊り",
+    "日本の伝統的な踊り",
+    "昭和3年頃よされ節",
+    "最後は淀川音頭",
+    "最後ウチの町会の踊り",
+    "最後踊り",
+    "本日はシン煙草音頭",
+    "東京音頭など大きな踊り",
+    "東京音頭も大東京音頭も盆ジョビ",
+    "歌と踊り",
+    "水買って来て踊り",
+    "港おどりよりもいか踊り",
+    "炭坑節とか踊り",
+    "皆さんと踊る炭鉱節",
+    "知らない踊り",
+    "知らない音頭",
+    "祭りの季節",
+    "私は地元の踊り",
+    "良かったらふらっと踊り",
+    "諏訪分校跡は踊り",
+    "軽くひと踊り",
+    "阿澄さんは音頭",
+    "雨の中踊り",
+    "面白い踊り",
+    "高円寺阿波踊りの踊り",
+    "生歌の新宿音頭や八木節",
+    "生歌コーナーの八木節",
+    "獅子ヶ谷音頭 港北音頭",
+    "酒田音頭・花笠音頭",
+    "英語の炭坑節",
+    "Golden・トンカカさん踊り",
+    "ハワイ音頭踊り",
+    "ちゃっきり節初踊り",
+    "本物の津軽手踊り",
+    "岐阜の郡上踊り",
 }
 
 
@@ -208,6 +313,17 @@ def matched_page_ids(text, index, limit=8):
     return matches
 
 
+SONG_SUFFIX_RE = (
+    r"(?:音頭|おどり|踊り|小唄|甚句|節|盆唄|盆ジョビ|ソーラン|"
+    r"ダンシングヒーロー|ビューティフルサンデー)"
+)
+# Particles that end a phrase right before the suffix in running prose
+# (多くの踊り / みんなと踊り / 唄も踊り).  か and ら are deliberately absent:
+# they occur inside real titles (いか踊り, ふるさと音頭, らら音頭, 越中おわら節,
+# 秦野ささら踊り, 鹿児島おはら節) and cost us those if treated as particles.
+SUFFIX_PARTICLE_CHARS = "のとやもがをにへで"
+
+
 def is_song_like(term):
     if len(term) < 2 or len(term) > 18:
         return False
@@ -215,13 +331,17 @@ def is_song_like(term):
         return False
     if re.search(r"(が|を|に|へ|で|から|まで|でも|ながら|みたい|らしき|っぽい|今日は|昨日|今回|先日|週末)", term):
         return False
-    return bool(
-        re.search(
-            r"(音頭|おどり|踊り|小唄|甚句|節|盆唄|盆ジョビ|ソーラン|"
-            r"ダンシングヒーロー|ビューティフルサンデー)$",
-            term,
-        )
-    )
+    # A date or a count never belongs to a title here (1日目踊り, 3人の音頭).
+    if re.search(r"[0-9０-９]", term):
+        return False
+    # Two titles joined by prose (東京音頭と炭坑節) must be reviewed, not split
+    # blindly, so reject rather than guess which half is meant.
+    if len(re.findall(SONG_SUFFIX_RE, term)) >= 2:
+        return False
+    match = re.search(SONG_SUFFIX_RE + r"$", term)
+    if match and match.start() > 0 and term[match.start() - 1] in SUFFIX_PARTICLE_CHARS:
+        return False
+    return bool(re.search(SONG_SUFFIX_RE + r"$", term))
 
 
 def classify_candidate(row):
@@ -232,6 +352,11 @@ def classify_candidate(row):
         return "reject", term, "曲名ではなく文章断片または一般語"
     if term in AMBIGUOUS_TERMS:
         return "review", term, "多義語・イベント名・ジャンル名の可能性がある"
+    # The accumulated song master outranks the shape heuristics: titles such as
+    # ふるさと音頭 look like prose to is_song_like() (と before the suffix) but
+    # are already confirmed songs. Check the accumulation before guessing.
+    if is_master_song(term):
+        return "direct", term, "曲マスタに登録済みの曲名"
     if is_song_like(term):
         return "direct", term, "曲名として明白な接尾辞/既知パターン"
     return "reject", term, "曲名としての形が弱い"
