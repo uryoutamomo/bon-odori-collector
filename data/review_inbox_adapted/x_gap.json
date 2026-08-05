@@ -1,10 +1,109 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_gap_candidates.json",
-  "input_sha256": "1b8707a77116356f01e657e58ef3946efecc210d962024496c214a851197d1c5",
-  "input_size_bytes": 238974,
+  "input_sha256": "56f29a461d551ac06fffebbf40db2f7d9473f59afd45d9926e5468ffd442cea7",
+  "input_size_bytes": 263370,
   "item_count": 30,
   "items": [
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 310,
+      "title": "ゐの市盆踊り～不忍夢～",
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "venue": "上野恩賜公園",
+      "event_year": 2026,
+      "source_key": "x:2082662969792688156",
+      "source_url": "https://x.com/ebisawa_akane/status/2082662969792688156",
+      "recommended_action": "review_date_range_conflict",
+      "payload": {
+        "candidate_id": "xgap_4bf8b18a1cec1b8c",
+        "source_key": "x:2082662969792688156",
+        "lane_hint": "lane2",
+        "candidate_kind": "date_range_conflict",
+        "priority_score": 310,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_0ee14ffbf15fd0cf",
+          "event_name": "ゐの市盆踊り～不忍夢～",
+          "venue": "上野恩賜公園",
+          "matched_aliases": [
+            "ゐの市盆踊り～不忍夢～",
+            "ゐの市盆踊り～不忍夢～"
+          ]
+        },
+        "source_url": "https://x.com/ebisawa_akane/status/2082662969792688156",
+        "source_text": "\n／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻",
+        "source_author": "@ebisawa_akane",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@ebisawa_akane",
+          "account_name": "海老沢茜✊🏻",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月7日",
+          "8月16日",
+          "8月12日",
+          "8月15日"
+        ],
+        "observed_dates": [
+          "2026-08-07",
+          "2026-08-12",
+          "2026-08-15",
+          "2026-08-16"
+        ],
+        "event_group_key": "",
+        "voice": {
+          "source": "x",
+          "account": "@ebisawa_akane",
+          "name": "海老沢茜✊🏻",
+          "title": "",
+          "text": "／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻",
+          "url": "https://x.com/ebisawa_akane/status/2082662969792688156",
+          "date": "2026-07-30T03:02:00+00:00",
+          "tweet_id": "2082662969792688156",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOcarr1bUAAaf-y.jpg",
+            "https://t.co/yhS1nHIVaK",
+            "pic.x.com/yhS1nHIVaK",
+            "https://pbs.twimg.com/media/HOcarr1aEAAdQl5.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/ebisawa_akane/status/2082662969792688156",
+          "https://x.com/mayu_singer/status/2082667576501686746",
+          "https://x.com/hitonyan_info/status/2082671853307596975",
+          "https://x.com/akiichiko/status/2082674971940409499",
+          "https://x.com/onoarisastaff/status/2082678931405291714",
+          "https://x.com/harunomai/status/2082706517447618923",
+          "https://x.com/yukarimaeda/status/2082709210240819616",
+          "https://x.com/StaffLast/status/2082722979365179681",
+          "https://x.com/LUCK_A_SAY/status/2082762648303911000",
+          "https://x.com/LUCK_A_SAY/status/2082763418138997008",
+          "https://x.com/LUCK_A_SAY/status/2082763582958420121",
+          "https://x.com/_mari_desu_/status/2083825824944488452",
+          "https://x.com/tomi_sa010/status/2084189330906780062",
+          "https://x.com/yurubon_off/status/2084770560077389919"
+        ],
+        "corroboration_count": 12,
+        "source_count": 14
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_e3d71b6a7b549739"
+    },
     {
       "kind": "x_gap",
       "domain": "X",
@@ -85,104 +184,6 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_44ffdb2d52dd0f87"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 305,
-      "title": "ゐの市盆踊り～不忍夢～",
-      "event_name": "ゐの市盆踊り～不忍夢～",
-      "venue": "上野恩賜公園",
-      "event_year": 2026,
-      "source_key": "x:2082662969792688156",
-      "source_url": "https://x.com/ebisawa_akane/status/2082662969792688156",
-      "recommended_action": "review_date_range_conflict",
-      "payload": {
-        "candidate_id": "xgap_4bf8b18a1cec1b8c",
-        "source_key": "x:2082662969792688156",
-        "lane_hint": "lane2",
-        "candidate_kind": "date_range_conflict",
-        "priority_score": 305,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue": "上野恩賜公園",
-          "matched_aliases": [
-            "ゐの市盆踊り～不忍夢～",
-            "ゐの市盆踊り～不忍夢～"
-          ]
-        },
-        "source_url": "https://x.com/ebisawa_akane/status/2082662969792688156",
-        "source_text": "\n／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻",
-        "source_author": "@ebisawa_akane",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@ebisawa_akane",
-          "account_name": "海老沢茜✊🏻",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8月7日",
-          "8月16日",
-          "8月12日",
-          "8月15日"
-        ],
-        "observed_dates": [
-          "2026-08-07",
-          "2026-08-12",
-          "2026-08-15",
-          "2026-08-16"
-        ],
-        "event_group_key": "",
-        "voice": {
-          "source": "x",
-          "account": "@ebisawa_akane",
-          "name": "海老沢茜✊🏻",
-          "title": "",
-          "text": "／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻",
-          "url": "https://x.com/ebisawa_akane/status/2082662969792688156",
-          "date": "2026-07-30T03:02:00+00:00",
-          "tweet_id": "2082662969792688156",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOcarr1bUAAaf-y.jpg",
-            "https://t.co/yhS1nHIVaK",
-            "pic.x.com/yhS1nHIVaK",
-            "https://pbs.twimg.com/media/HOcarr1aEAAdQl5.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/ebisawa_akane/status/2082662969792688156",
-          "https://x.com/mayu_singer/status/2082667576501686746",
-          "https://x.com/hitonyan_info/status/2082671853307596975",
-          "https://x.com/akiichiko/status/2082674971940409499",
-          "https://x.com/onoarisastaff/status/2082678931405291714",
-          "https://x.com/harunomai/status/2082706517447618923",
-          "https://x.com/yukarimaeda/status/2082709210240819616",
-          "https://x.com/StaffLast/status/2082722979365179681",
-          "https://x.com/LUCK_A_SAY/status/2082762648303911000",
-          "https://x.com/LUCK_A_SAY/status/2082763418138997008",
-          "https://x.com/LUCK_A_SAY/status/2082763582958420121",
-          "https://x.com/_mari_desu_/status/2083825824944488452",
-          "https://x.com/tomi_sa010/status/2084189330906780062"
-        ],
-        "corroboration_count": 11,
-        "source_count": 13
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_e3d71b6a7b549739"
     },
     {
       "kind": "x_gap",
@@ -333,7 +334,7 @@
       "domain": "X",
       "time_scope": "future",
       "priority_label": "P1",
-      "priority_score": 275,
+      "priority_score": 280,
       "title": "神田明神納涼祭り",
       "event_name": "神田明神納涼祭り",
       "venue": "神田明神境内",
@@ -346,7 +347,7 @@
         "source_key": "x:2062386225651269673",
         "lane_hint": "lane2",
         "candidate_kind": "date_range_conflict",
-        "priority_score": 275,
+        "priority_score": 280,
         "event_year": 2026,
         "matched_occurrence": {
           "occurrence_id": "occ_35179c5efe3db323",
@@ -403,13 +404,103 @@
           "https://x.com/kaztsu/status/2082242707670569368",
           "https://x.com/akiba_guide/status/2082455888066216253",
           "https://x.com/myojinnouryo/status/2083092981423423890",
-          "https://x.com/pandorobo_anime/status/2083834591241195987"
+          "https://x.com/pandorobo_anime/status/2083834591241195987",
+          "https://x.com/nihonsakeshokai/status/2084795889072390613"
         ],
-        "corroboration_count": 5,
-        "source_count": 7
+        "corroboration_count": 6,
+        "source_count": 8
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_a93213295b549a82"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 265,
+      "title": "笠間納涼盆踊り花火大会2026",
+      "event_name": "笠間納涼盆踊り花火大会2026",
+      "venue": "笠間大池公園（笠間ポレポレシティ前）",
+      "event_year": 2026,
+      "source_key": "x:2076457766894604632",
+      "source_url": "https://x.com/adachihouse/status/2076457766894604632",
+      "recommended_action": "review_date_range_conflict",
+      "payload": {
+        "candidate_id": "xgap_f8053fc8e2378081",
+        "source_key": "x:2076457766894604632",
+        "lane_hint": "lane2",
+        "candidate_kind": "date_range_conflict",
+        "priority_score": 265,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_8e8f8c2c35a150bf",
+          "event_name": "笠間納涼盆踊り花火大会2026",
+          "venue": "笠間大池公園（笠間ポレポレシティ前）",
+          "matched_aliases": [
+            "笠間納涼盆踊り花火大会2026",
+            "笠間納涼盆踊り花火大会2026"
+          ]
+        },
+        "source_url": "https://x.com/adachihouse/status/2076457766894604632",
+        "source_text": "\n╭━━━━━━━━━━━━━━━╮\n8/8(土)、8/10(月)笠間納涼盆踊り花火大会2026初の2days開催決定‼️🎉\n╰━━━━━━━ｖ━━━━━━━╯\n\n🎆✨今年の夏も開催決定✨🎆\n第5回 笠間納涼盆踊り大会 2026🏮\n\n今年はなんと… \n🎉祭りも花火も2Days！🎉\n子どもから大人まで楽しめる縁日や飲食マーケット、豪華ステージイベント、そして夜空を彩る花火🎇 夏の思い出を笠間で一緒につくりませんか？\n\n📅 開催日 8月8日（土）・8月10日（月・祝） ※雨天決行・荒天中止\n\n📍 会場 笠間大池公園（笠間ポレポレシティ前） 入場無料\n\n🎤 8月8日（土）エンタメ祭 ダンス・DJ・ライブ・花火打ち上げ\n\n🏮 8月10日（月・祝）納涼祭 盆踊り・DJ・MV撮影・ライブ・神輿渡御・花火打ち上げ\n\n🍧縁日・キッチンカー・飲食マーケットも大集合！🎉 ご家族、お友達とぜひ遊びにお越しください😊\n\n📸 最新情報は公式Instagram @kasama_noryo_hanabi https://t.co/MLJI2N2Scu\n ✨協賛企業様も現在絶賛募集中です！https://t.co/L",
+        "source_author": "@adachihouse",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@adachihouse",
+          "account_name": "ADACHI HOUSE【公式】",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/8",
+          "8/10",
+          "8月8日",
+          "8月10日",
+          "8月8日",
+          "8月10日"
+        ],
+        "observed_dates": [
+          "2026-08-08",
+          "2026-08-10"
+        ],
+        "event_group_key": "",
+        "voice": {
+          "source": "x_proactive",
+          "account": "@adachihouse",
+          "name": "ADACHI HOUSE【公式】",
+          "title": "",
+          "text": "╭━━━━━━━━━━━━━━━╮\n8/8(土)、8/10(月)笠間納涼盆踊り花火大会2026初の2days開催決定‼️🎉\n╰━━━━━━━ｖ━━━━━━━╯\n\n🎆✨今年の夏も開催決定✨🎆\n第5回 笠間納涼盆踊り大会 2026🏮\n\n今年はなんと… \n🎉祭りも花火も2Days！🎉\n子どもから大人まで楽しめる縁日や飲食マーケット、豪華ステージイベント、そして夜空を彩る花火🎇 夏の思い出を笠間で一緒につくりませんか？\n\n📅 開催日 8月8日（土）・8月10日（月・祝） ※雨天決行・荒天中止\n\n📍 会場 笠間大池公園（笠間ポレポレシティ前） 入場無料\n\n🎤 8月8日（土）エンタメ祭 ダンス・DJ・ライブ・花火打ち上げ\n\n🏮 8月10日（月・祝）納涼祭 盆踊り・DJ・MV撮影・ライブ・神輿渡御・花火打ち上げ\n\n🍧縁日・キッチンカー・飲食マーケットも大集合！🎉 ご家族、お友達とぜひ遊びにお越しください😊\n\n📸 最新情報は公式Instagram @kasama_noryo_hanabi https://t.co/MLJI2N2Scu\n ✨協賛企業様も現在絶賛募集中です！https://t.co/Lw",
+          "url": "https://x.com/adachihouse/status/2076457766894604632",
+          "date": "2026-07-13T00:04:45+00:00",
+          "tweet_id": "2076457766894604632",
+          "tags": [
+            "🔎能動検索",
+            "笠間大池公園（笠間ポレポレシティ前）"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNEPUKAaYAAxEjW.jpg",
+            "https://t.co/vfgubTic1p",
+            "pic.x.com/vfgubTic1p",
+            "https://pbs.twimg.com/media/HNEPUJ-a0AAfR9d.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/adachihouse/status/2076457766894604632",
+          "https://x.com/ohimeno_asyu/status/2083389118709694833",
+          "https://x.com/adachihouse/status/2084471819994599452",
+          "https://x.com/iko_yo_trip/status/2084889641514352810"
+        ],
+        "corroboration_count": 3,
+        "source_count": 4
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_b6120c9e300de915"
     },
     {
       "kind": "x_gap",
@@ -516,94 +607,6 @@
       "domain": "X",
       "time_scope": "future",
       "priority_label": "P1",
-      "priority_score": 260,
-      "title": "笠間納涼盆踊り花火大会2026",
-      "event_name": "笠間納涼盆踊り花火大会2026",
-      "venue": "笠間大池公園（笠間ポレポレシティ前）",
-      "event_year": 2026,
-      "source_key": "x:2076457766894604632",
-      "source_url": "https://x.com/adachihouse/status/2076457766894604632",
-      "recommended_action": "review_date_range_conflict",
-      "payload": {
-        "candidate_id": "xgap_f8053fc8e2378081",
-        "source_key": "x:2076457766894604632",
-        "lane_hint": "lane2",
-        "candidate_kind": "date_range_conflict",
-        "priority_score": 260,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_8e8f8c2c35a150bf",
-          "event_name": "笠間納涼盆踊り花火大会2026",
-          "venue": "笠間大池公園（笠間ポレポレシティ前）",
-          "matched_aliases": [
-            "笠間納涼盆踊り花火大会2026",
-            "笠間納涼盆踊り花火大会2026"
-          ]
-        },
-        "source_url": "https://x.com/adachihouse/status/2076457766894604632",
-        "source_text": "\n╭━━━━━━━━━━━━━━━╮\n8/8(土)、8/10(月)笠間納涼盆踊り花火大会2026初の2days開催決定‼️🎉\n╰━━━━━━━ｖ━━━━━━━╯\n\n🎆✨今年の夏も開催決定✨🎆\n第5回 笠間納涼盆踊り大会 2026🏮\n\n今年はなんと… \n🎉祭りも花火も2Days！🎉\n子どもから大人まで楽しめる縁日や飲食マーケット、豪華ステージイベント、そして夜空を彩る花火🎇 夏の思い出を笠間で一緒につくりませんか？\n\n📅 開催日 8月8日（土）・8月10日（月・祝） ※雨天決行・荒天中止\n\n📍 会場 笠間大池公園（笠間ポレポレシティ前） 入場無料\n\n🎤 8月8日（土）エンタメ祭 ダンス・DJ・ライブ・花火打ち上げ\n\n🏮 8月10日（月・祝）納涼祭 盆踊り・DJ・MV撮影・ライブ・神輿渡御・花火打ち上げ\n\n🍧縁日・キッチンカー・飲食マーケットも大集合！🎉 ご家族、お友達とぜひ遊びにお越しください😊\n\n📸 最新情報は公式Instagram @kasama_noryo_hanabi https://t.co/MLJI2N2Scu\n ✨協賛企業様も現在絶賛募集中です！https://t.co/L",
-        "source_author": "@adachihouse",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@adachihouse",
-          "account_name": "ADACHI HOUSE【公式】",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/8",
-          "8/10",
-          "8月8日",
-          "8月10日",
-          "8月8日",
-          "8月10日"
-        ],
-        "observed_dates": [
-          "2026-08-08",
-          "2026-08-10"
-        ],
-        "event_group_key": "",
-        "voice": {
-          "source": "x_proactive",
-          "account": "@adachihouse",
-          "name": "ADACHI HOUSE【公式】",
-          "title": "",
-          "text": "╭━━━━━━━━━━━━━━━╮\n8/8(土)、8/10(月)笠間納涼盆踊り花火大会2026初の2days開催決定‼️🎉\n╰━━━━━━━ｖ━━━━━━━╯\n\n🎆✨今年の夏も開催決定✨🎆\n第5回 笠間納涼盆踊り大会 2026🏮\n\n今年はなんと… \n🎉祭りも花火も2Days！🎉\n子どもから大人まで楽しめる縁日や飲食マーケット、豪華ステージイベント、そして夜空を彩る花火🎇 夏の思い出を笠間で一緒につくりませんか？\n\n📅 開催日 8月8日（土）・8月10日（月・祝） ※雨天決行・荒天中止\n\n📍 会場 笠間大池公園（笠間ポレポレシティ前） 入場無料\n\n🎤 8月8日（土）エンタメ祭 ダンス・DJ・ライブ・花火打ち上げ\n\n🏮 8月10日（月・祝）納涼祭 盆踊り・DJ・MV撮影・ライブ・神輿渡御・花火打ち上げ\n\n🍧縁日・キッチンカー・飲食マーケットも大集合！🎉 ご家族、お友達とぜひ遊びにお越しください😊\n\n📸 最新情報は公式Instagram @kasama_noryo_hanabi https://t.co/MLJI2N2Scu\n ✨協賛企業様も現在絶賛募集中です！https://t.co/Lw",
-          "url": "https://x.com/adachihouse/status/2076457766894604632",
-          "date": "2026-07-13T00:04:45+00:00",
-          "tweet_id": "2076457766894604632",
-          "tags": [
-            "🔎能動検索",
-            "笠間大池公園（笠間ポレポレシティ前）"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HNEPUKAaYAAxEjW.jpg",
-            "https://t.co/vfgubTic1p",
-            "pic.x.com/vfgubTic1p",
-            "https://pbs.twimg.com/media/HNEPUJ-a0AAfR9d.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/adachihouse/status/2076457766894604632",
-          "https://x.com/ohimeno_asyu/status/2083389118709694833",
-          "https://x.com/adachihouse/status/2084471819994599452"
-        ],
-        "corroboration_count": 2,
-        "source_count": 3
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_b6120c9e300de915"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
       "priority_score": 255,
       "title": "銀河の夜の盆踊り大会",
       "event_name": "銀河の夜の盆踊り大会",
@@ -676,6 +679,91 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_64f5567abc80aa37"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 255,
+      "title": "小豆沢商友会 納涼盆踊り大会",
+      "event_name": "小豆沢商友会 納涼盆踊り大会",
+      "venue": "志村第二中学校 校庭",
+      "event_year": 2026,
+      "source_key": "x:2084920870146060638",
+      "source_url": "https://x.com/ita_pro/status/2084920870146060638",
+      "recommended_action": "review_date_range_conflict",
+      "payload": {
+        "candidate_id": "xgap_d78e768be57ee2ac",
+        "source_key": "x:2084920870146060638",
+        "lane_hint": "lane2",
+        "candidate_kind": "date_range_conflict",
+        "priority_score": 255,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_950d73869e1a34de",
+          "event_name": "小豆沢商友会 納涼盆踊り大会",
+          "venue": "志村第二中学校 校庭",
+          "matched_aliases": [
+            "小豆沢商友会 納涼盆踊り大会",
+            "小豆沢商友会 納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/ita_pro/status/2084920870146060638",
+        "source_text": "\n🌻8月もいたプロで夏を楽しもう！🌻\n\n8月は2大会開催！\n\n8月15日（土）\n小豆沢商友会 納涼盆踊り大会\n志村第二中学校 特設リング\n16:30試合開始\n🎟️観戦無料\n\n8月23日（日）\nいたばしルチャフィエスタ2026\nハイライフプラザいたばし\n13:00試合開始\n🎟️チケット発売中！\n\n8月15日は観戦無料で気軽にプロレスを！\nそして8月23日は真夏だけの特別なルチャ・リブレを！\n**この夏は、ぜひ2大会とも会場でお楽しみください！**💪✨\n\n#いたプロ #地域活性化プロレス #小豆沢商友会 #盆踊り #観戦無料 #ルチャリブレ #ItabashiLuchaFiesta #板橋 #プロレス #夏休み #にぎわい創出プロレス",
+        "source_author": "@ita_pro",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@ita_pro",
+          "account_name": "【公式】いたばしプロレスリング",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月15日",
+          "8月23日",
+          "8月15日",
+          "8月23日"
+        ],
+        "observed_dates": [
+          "2026-08-15",
+          "2026-08-23"
+        ],
+        "event_group_key": "",
+        "voice": {
+          "source": "x",
+          "account": "@ita_pro",
+          "name": "【公式】いたばしプロレスリング",
+          "title": "",
+          "text": "🌻8月もいたプロで夏を楽しもう！🌻\n\n8月は2大会開催！\n\n8月15日（土）\n小豆沢商友会 納涼盆踊り大会\n志村第二中学校 特設リング\n16:30試合開始\n🎟️観戦無料\n\n8月23日（日）\nいたばしルチャフィエスタ2026\nハイライフプラザいたばし\n13:00試合開始\n🎟️チケット発売中！\n\n8月15日は観戦無料で気軽にプロレスを！\nそして8月23日は真夏だけの特別なルチャ・リブレを！\n**この夏は、ぜひ2大会とも会場でお楽しみください！**💪✨\n\n#いたプロ #地域活性化プロレス #小豆沢商友会 #盆踊り #観戦無料 #ルチャリブレ #ItabashiLuchaFiesta #板橋 #プロレス #夏休み #にぎわい創出プロレス",
+          "url": "https://x.com/ita_pro/status/2084920870146060638",
+          "date": "2026-08-05T08:34:06+00:00",
+          "tweet_id": "2084920870146060638",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO8gewJbMAAJZdc.jpg",
+            "https://t.co/Z2MrjUi3FZ",
+            "pic.x.com/Z2MrjUi3FZ",
+            "https://pbs.twimg.com/media/HO8gewBbwAAl2R1.jpg",
+            "https://pbs.twimg.com/media/HO8gewKaIAAwP7F.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/ita_pro/status/2084920870146060638"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_99fdb8efa2284cde"
     },
     {
       "kind": "x_gap",
@@ -1927,139 +2015,6 @@
       "time_scope": "future",
       "priority_label": "P1",
       "priority_score": 85,
-      "title": "【池上本門寺み魂まつり 納涼盆踊り大会】\n🏮8/4(火)5(水)🕓19:00～21:00📍池上本門寺(大田区)\n\nみ魂まつり法要に合わせ毎年8月4日、5日に行わ",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2067189089909277085",
-      "source_url": "https://x.com/natsutr_bon/status/2067189089909277085",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_c4cb32e365b3ce8a",
-        "source_key": "x:2067189089909277085",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/natsutr_bon/status/2067189089909277085",
-        "source_text": "\n【池上本門寺み魂まつり 納涼盆踊り大会】\n🏮8/4(火)5(水)🕓19:00～21:00📍池上本門寺(大田区)\n\nみ魂まつり法要に合わせ毎年8月4日、5日に行われる盆踊り大会🪷\n境内大堂前の櫓で踊る、ご当地の池上音頭や池上本門寺に由来する本門寺音頭は格別✨\n\nhttps://t.co/sPSQW3666C\n\nhttps://t.co/bBSeCnRa9A",
-        "source_author": "@natsutr_bon",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@natsutr_bon",
-          "account_name": "奈津大郎〘ナツタロ〙",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/4",
-          "8月4日"
-        ],
-        "observed_dates": [
-          "2026-08-04"
-        ],
-        "event_group_key": "informal:5dd3cddc06cb1b72",
-        "voice": {
-          "source": "x",
-          "account": "@natsutr_bon",
-          "name": "奈津大郎〘ナツタロ〙",
-          "title": "",
-          "text": "【池上本門寺み魂まつり 納涼盆踊り大会】\n🏮8/4(火)5(水)🕓19:00～21:00📍池上本門寺(大田区)\n\nみ魂まつり法要に合わせ毎年8月4日、5日に行われる盆踊り大会🪷\n境内大堂前の櫓で踊る、ご当地の池上音頭や池上本門寺に由来する本門寺音頭は格別✨\n\nhttps://t.co/sPSQW3666C\n\nhttps://t.co/bBSeCnRa9A",
-          "url": "https://x.com/natsutr_bon/status/2067189089909277085",
-          "date": "2026-06-17T10:14:20+00:00",
-          "tweet_id": "2067189089909277085",
-          "tags": [
-            "🟡関心",
-            "q-report"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/natsutr_bon/status/2067189089909277085"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_6ec26758ceec4604"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
-      "title": "【盆踊り情報2026】【池上】8/4(火)、5(水)池上本門寺「みたま祭り・納涼盆踊り大会」 https://t.co/gLwTYQ02Sj",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2067282666807001396",
-      "source_url": "https://x.com/panda_dapan11/status/2067282666807001396",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_12c117df8420b885",
-        "source_key": "x:2067282666807001396",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/panda_dapan11/status/2067282666807001396",
-        "source_text": "\n【盆踊り情報2026】【池上】8/4(火)、5(水)池上本門寺「みたま祭り・納涼盆踊り大会」 https://t.co/gLwTYQ02Sj",
-        "source_author": "@panda_dapan11",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@panda_dapan11",
-          "account_name": "パンダ子(パンちゃん)",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/4"
-        ],
-        "observed_dates": [
-          "2026-08-04"
-        ],
-        "event_group_key": "informal:814f5bc2ed4c64ae",
-        "voice": {
-          "source": "x",
-          "account": "@panda_dapan11",
-          "name": "パンダ子(パンちゃん)",
-          "title": "",
-          "text": "【盆踊り情報2026】【池上】8/4(火)、5(水)池上本門寺「みたま祭り・納涼盆踊り大会」 https://t.co/gLwTYQ02Sj",
-          "url": "https://x.com/panda_dapan11/status/2067282666807001396",
-          "date": "2026-06-17T16:26:10+00:00",
-          "tweet_id": "2067282666807001396",
-          "tags": [
-            "🟡関心",
-            "q-base"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/panda_dapan11/status/2067282666807001396"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_9b98c3642ab8eee3"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
       "title": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東",
       "event_name": "",
       "venue": "",
@@ -2274,6 +2229,79 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_8c76fe09a1be2eb7"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "太鼓の音、踊りの熱気、会場を包む一体感。\n\n「MATSURI JAPAN 2026」のMATSURI STAGEでは、\n日本各地の祭りパフォーマーたちが高輪ゲー",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2070475775716065343",
+      "source_url": "https://x.com/happoenPR/status/2070475775716065343",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_194db3fe895e75b2",
+        "source_key": "x:2070475775716065343",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/happoenPR/status/2070475775716065343",
+        "source_text": "\n太鼓の音、踊りの熱気、会場を包む一体感。\n\n「MATSURI JAPAN 2026」のMATSURI STAGEでは、\n日本各地の祭りパフォーマーたちが高輪ゲートウェイシティに集結し、地域に受け継がれてきた祭り文化を間近で体感できます。\n\nYOSAKOIソーラン、ながい黒獅子まつり、石見神楽東京社中、エイサー、けん玉パフォーマンスをはじめ、\n8月8日(土)には、しゃんしゃん傘踊りや龍踊り、\n8月9日(日)には、高円寺阿波おどりや東京盆踊りも登場。\n\n見て、聴いて、心まで熱くなる、圧巻のライブ体験をお楽しみください。\n\n今後は各祭りの見どころも順次ご紹介していきます。\n続報もどうぞお楽しみに。\n\n🏮詳細はこちら\nhttps://t.co/xALE5WqD3C\n\n#八芳園 #MATSURIJAPAN #親子でおでかけ\n#夏休みイベント #高輪ゲートウェイシティ",
+        "source_author": "@happoenPR",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@happoenpr",
+          "account_name": "八芳園グループ",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月8日",
+          "8月9日"
+        ],
+        "observed_dates": [
+          "2026-08-08",
+          "2026-08-09"
+        ],
+        "event_group_key": "informal:e763e44240d4342c",
+        "voice": {
+          "source": "x_proactive",
+          "account": "@happoenPR",
+          "name": "八芳園グループ",
+          "title": "",
+          "text": "太鼓の音、踊りの熱気、会場を包む一体感。\n\n「MATSURI JAPAN 2026」のMATSURI STAGEでは、\n日本各地の祭りパフォーマーたちが高輪ゲートウェイシティに集結し、地域に受け継がれてきた祭り文化を間近で体感できます。\n\nYOSAKOIソーラン、ながい黒獅子まつり、石見神楽東京社中、エイサー、けん玉パフォーマンスをはじめ、\n8月8日(土)には、しゃんしゃん傘踊りや龍踊り、\n8月9日(日)には、高円寺阿波おどりや東京盆踊りも登場。\n\n見て、聴いて、心まで熱くなる、圧巻のライブ体験をお楽しみください。\n\n今後は各祭りの見どころも順次ご紹介していきます。\n続報もどうぞお楽しみに。\n\n🏮詳細はこちら\nhttps://t.co/xALE5WqD3C\n\n#八芳園 #MATSURIJAPAN #親子でおでかけ\n#夏休みイベント #高輪ゲートウェイシティ",
+          "url": "https://x.com/happoenPR/status/2070475775716065343",
+          "date": "2026-06-26T11:54:27+00:00",
+          "tweet_id": "2070475775716065343",
+          "tags": [
+            "🔎能動検索",
+            "横根稲荷神社"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLvNQFRa4AA2Zd-.jpg",
+            "https://t.co/fLVdo0saO1",
+            "pic.twitter.com/fLVdo0saO1"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/happoenPR/status/2070475775716065343"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_6397d6dbf1c36dc1"
     }
   ],
   "write_mode": "snapshot_only_default_off",

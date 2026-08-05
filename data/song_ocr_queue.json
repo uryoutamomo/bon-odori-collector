@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 54,
+  "count": 55,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -858,6 +858,21 @@
         "pic.x.com/AIXSx9X7Oo"
       ],
       "text": "8/3(月)#エフエムななみ　アフバラ\n⁡\nhttps://t.co/ojgyoqexrC\n⁡\n津島市女性の会\n毎年恒例「盆踊り大会」PR\n宇藤久子様と松永和子様\nにお話をうかがいました！\n⁡\n盆踊りの魅力♡や曲目など♪\n幹遼太鼓もSpecial guestでご出演です！\n⁡\n#ななみアフバラ https://t.co/AIXSx9X7Oo",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "e8bd063dc66b3348",
+      "status": "needs_ocr",
+      "account": "@charizon",
+      "url": "https://x.com/charizon/status/2084790228620054557",
+      "tweet_id": "2084790228620054557",
+      "date": "2026-08-04T23:54:58+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HO6plMHbIAAXVO6.jpg",
+        "https://t.co/WzZbuS3dOu",
+        "pic.x.com/WzZbuS3dOu"
+      ],
+      "text": "郵便受けに少し離れた地域の公園で行われる盆踊りのチラシが投函されていた。子どもで大賑わいになっているのを過去通りかかった際に見たことがある。\n盆踊りの曲目、令和の子どもたちのハートを掴むリストなのかどうかがわからない。 https://t.co/WzZbuS3dOu",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
