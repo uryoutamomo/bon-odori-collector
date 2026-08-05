@@ -3,9 +3,57 @@ import pytest
 from review_inbox_adapters.source_writer import SourceWriterError
 from song_candidate_finite_actions import (
     GENERATOR_NAME,
+    build_reviewed_payload_from_decision_stage,
     build_reviewed_payload_from_domain_stage,
     validate_reviewed_payload,
 )
+
+
+def staged_song_row(action="register_song", **overrides):
+    expected = {
+        "register_song": ("accepted", "domain_stage"),
+        "add_song_alias": ("accepted", "domain_stage"),
+        "reject_song": ("rejected", "no_apply"),
+        "hold": ("hold", "no_apply"),
+    }[action]
+    candidate = {
+        "source_inbox_id": f"inbox_{action}",
+        "source_id": "daily_song_candidate",
+        "source_key": f"song:{action}",
+        "source_url": f"https://example.com/{action}",
+        "kind": "song",
+        "finite_action": action,
+        "target_song_id": "song_existing" if action == "add_song_alias" else None,
+        "payload": {"canonical_song_name": f"{action}曲"},
+        "write_mode": "reviewed_finite_action",
+    }
+    candidate.update(overrides.pop("candidate_overrides", {}))
+    row = {
+        "domain_stage_type": "song_candidate",
+        "note": "画面で確認",
+        "inbox_update": {
+            "inbox_id": candidate["source_inbox_id"],
+            "decision": expected[0],
+            "decided_by": "内田さん",
+            "decided_at": "2026-08-05T09:00:00+09:00",
+            "decision_route": expected[1],
+        },
+        "domain_candidate": candidate,
+    }
+    row.update(overrides)
+    return row
+
+
+def staged_payload(*rows, generated_by="review_inbox_decision_stage.py", write_mode="reviewed_song_finite_actions"):
+    values = list(rows) or [staged_song_row()]
+    return {
+        "schema_version": 1,
+        "generated_by": generated_by,
+        "source_id": "review_inbox",
+        "write_mode": write_mode,
+        "decision_count": len(values),
+        "rows": values,
+    }
 
 
 def decision(**overrides):
@@ -241,3 +289,46 @@ def test_builder_skips_rows_that_are_not_song_candidate_domain_stage():
     assert built["decision_count"] == 1
     assert built["decisions"][0]["source_inbox_id"] == "inbox_song_c"
     assert built["decisions"][0]["candidate_title"] == "阿波踊り"
+
+
+def test_decision_stage_builder_preserves_four_explicit_actions_and_lifecycle():
+    built = build_reviewed_payload_from_decision_stage(
+        staged_payload(
+            staged_song_row("register_song"),
+            staged_song_row("add_song_alias"),
+            staged_song_row("reject_song"),
+            staged_song_row("hold"),
+        )
+    )
+
+    assert [row["action"] for row in built["decisions"]] == [
+        "register_song",
+        "add_song_alias",
+        "reject_song",
+        "hold",
+    ]
+    assert built["decisions"][1]["target_song_id"] == "song_existing"
+    assert built["decisions"][0]["reviewed_by"] == "内田さん"
+    assert built["decisions"][0]["source_url"] == "https://example.com/register_song"
+    assert built["decisions"][0]["note"] == "画面で確認"
+
+
+def test_decision_stage_builder_rejects_lifecycle_mismatch():
+    row = staged_song_row("reject_song")
+    row["inbox_update"]["decision"] = "accepted"
+    with pytest.raises(SourceWriterError, match="lifecycle mismatch"):
+        build_reviewed_payload_from_decision_stage(staged_payload(row))
+
+
+@pytest.mark.parametrize(
+    "overrides,match",
+    [
+        ({"generated_by": "manual.json"}, "generated_by"),
+        ({"write_mode": "staged_only"}, "write_mode"),
+    ],
+)
+def test_decision_stage_builder_rejects_untrusted_envelopes(overrides, match):
+    stage = staged_payload()
+    stage.update(overrides)
+    with pytest.raises(SourceWriterError, match=match):
+        build_reviewed_payload_from_decision_stage(stage)

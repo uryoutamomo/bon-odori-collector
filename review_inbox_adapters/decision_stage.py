@@ -30,10 +30,15 @@ RARE_SIGNAL_DOMAIN_STAGE_TYPE = "rare_signal_registration_candidate"
 YOUTUBE_ACCEPT_ACTION = "add_song_evidence"
 YOUTUBE_DOMAIN_STAGE_TYPE = "youtube_song_evidence"
 B4_ACCEPT_ACTIONS = {
-    "song": ("stage_song_candidate", "song_candidate", "daily_song_candidate"),
     "term": ("stage_term_candidate", "term_candidate", "daily_term_candidate"),
     "song_research": ("stage_song_venue_evidence", "song_venue_evidence", "daily_term_candidate"),
     "venue_candidate": ("stage_venue_candidate", "venue_candidate", "accepted_venue_song_missing_venue"),
+}
+SONG_FINITE_DECISIONS = {
+    "register_song": "accepted",
+    "add_song_alias": "accepted",
+    "reject_song": "rejected",
+    "hold": "hold",
 }
 URL_RE = re.compile(r"https?://[^\s、，。)）\]}＞>\"']+")
 X_HOSTS = {"x.com", "www.x.com", "twitter.com", "www.twitter.com", "t.co"}
@@ -104,6 +109,15 @@ def rare_signal_confirmation_urls(row: dict[str, Any], raw: dict[str, Any]) -> l
 
 
 def canonical_route(decision: str, apply_value: str, raw: dict[str, Any]) -> str:
+    if str(raw.get("kind") or "") == "song":
+        expected_decision = SONG_FINITE_DECISIONS.get(apply_value)
+        if expected_decision is None:
+            raise ValueError("song decision must use one explicit finite action")
+        if decision != expected_decision:
+            raise ValueError(
+                f"song action {apply_value} requires decision={expected_decision}"
+            )
+        return "domain_stage" if decision == "accepted" else "no_apply"
     if decision in {"rejected", "hold"}:
         return "no_apply"
     if decision == "needs_research":
@@ -216,6 +230,32 @@ def stage_row(row: dict[str, Any]) -> dict[str, Any]:
             "write_mode": "staged_only",
         }
     kind = str(raw.get("kind") or "")
+    if kind == "song":
+        if str(raw.get("source_id") or "") != "daily_song_candidate":
+            raise ValueError("song finite action requires daily_song_candidate source_id")
+        source_key = str(raw.get("source_key") or "").strip()
+        if not source_key:
+            raise ValueError("song finite action requires source_key")
+        payload = raw.get("payload") if isinstance(raw.get("payload"), dict) else {}
+        if not any(str(payload.get(field) or "").strip() for field in ("canonical_song_name", "term")):
+            raise ValueError("song finite action requires a song name")
+        target_song_id = str(row.get("target_song_id") or "").strip()
+        if apply_value == "add_song_alias" and not target_song_id:
+            raise ValueError("add_song_alias requires target_song_id")
+        if apply_value != "add_song_alias" and target_song_id:
+            raise ValueError("target_song_id is only valid for add_song_alias")
+        staged["domain_stage_type"] = "song_candidate"
+        staged["domain_candidate"] = {
+            "source_inbox_id": inbox_id,
+            "source_id": "daily_song_candidate",
+            "source_key": source_key,
+            "source_url": str(raw.get("source_url") or ""),
+            "kind": "song",
+            "finite_action": apply_value,
+            "target_song_id": target_song_id or None,
+            "payload": payload,
+            "write_mode": "reviewed_finite_action",
+        }
     if kind in B4_ACCEPT_ACTIONS and decision == "accepted":
         expected_action, stage_type, expected_source = B4_ACCEPT_ACTIONS[kind]
         if apply_value != expected_action or str(raw.get("source_id") or "") != expected_source:
@@ -304,6 +344,48 @@ def write_decision_stage(stage: dict[str, Any], staged_dir: Path) -> list[dict[s
                 "path": str(path),
                 "decision_count": len(rows),
                 "decision_route": route,
+            }
+        )
+    song_rows = [
+        row
+        for route_rows in stage["by_route"].values()
+        for row in route_rows
+        if row.get("domain_stage_type") == "song_candidate"
+    ]
+    if song_rows:
+        update_payload = {
+            "schema_version": 1,
+            "generated_by": "review_inbox_decision_stage.py",
+            "write_mode": "staged_only",
+            "decision_count": len(song_rows),
+            "inbox_decision_updates": [row["inbox_update"] for row in song_rows],
+        }
+        update_path = staged_dir / "review_inbox_song_candidate_decision_updates.json"
+        write_json_atomic(update_path, update_payload)
+        staged_files.append(
+            {
+                "source_id": "review_inbox:song_candidate_decision_updates",
+                "path": str(update_path),
+                "decision_count": len(song_rows),
+                "decision_route": "mixed_finite_actions",
+            }
+        )
+        payload = {
+            "schema_version": 1,
+            "generated_by": "review_inbox_decision_stage.py",
+            "source_id": "review_inbox",
+            "write_mode": "reviewed_song_finite_actions",
+            "decision_count": len(song_rows),
+            "rows": song_rows,
+        }
+        path = staged_dir / "review_inbox_song_candidate_actions.json"
+        write_json_atomic(path, payload)
+        staged_files.append(
+            {
+                "source_id": "review_inbox:song_candidate_actions",
+                "path": str(path),
+                "decision_count": len(song_rows),
+                "decision_route": "mixed_finite_actions",
             }
         )
     return staged_files

@@ -876,6 +876,7 @@ function renderItem(item) {
       ${decisionButtonsHtml(item, decision.decision)}
       ${applyOptionsHtml(item, decision.apply_value || "")}
       ${youtubeManualFieldsHtml(item, decision)}
+      ${songFiniteFieldsHtml(item, decision)}
       <p class="decision-error" hidden></p>
       <textarea class="note" placeholder="メモ (n)">${escapeHtml(decision.note || "")}</textarea>
       <div class="decision-actions">
@@ -1022,6 +1023,23 @@ function youtubeManualFieldsHtml(item, decision) {
   `;
 }
 
+function songFiniteFieldsHtml(item, decision) {
+  if (item.source_id !== "review_inbox" || item.kind !== "song") return "";
+  return `
+    <div class="manual-fields song-finite-fields">
+      <label>
+        別名の統合先 song_id
+        <input
+          type="text"
+          class="target-song-id"
+          value="${escapeAttr(decision.target_song_id || "")}"
+          placeholder="song_...（「既存曲の別名として統合」の場合だけ必須）"
+        >
+      </label>
+    </div>
+  `;
+}
+
 function applyOptionsHtml(item, selectedValue) {
   const options = item.apply_options || [];
   if (!options.length) return "";
@@ -1092,6 +1110,7 @@ async function saveDecision(article, itemId, values = {}) {
         apply_value: applyValue,
         target_event_name: article.querySelector(".target-event-name")?.value || "",
         target_song_names: article.querySelector(".target-song-names")?.value || "",
+        target_song_id: article.querySelector(".target-song-id")?.value || "",
       }),
     });
   } catch (error) {

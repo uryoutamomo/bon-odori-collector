@@ -94,16 +94,25 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
     def test_b4_inbox_ui_exposes_kind_specific_finite_actions(self):
         source = next(source for source in data.SOURCES if source.id == "review_inbox")
         expected = {
-            "song":"stage_song_candidate", "term":"stage_term_candidate",
+            "term":"stage_term_candidate",
             "song_research":"stage_song_venue_evidence", "venue_candidate":"stage_venue_candidate",
         }
+        song_options = data.apply_options(source, {"kind": "song"})
+        self.assertEqual(
+            [option["value"] for option in song_options],
+            ["register_song", "add_song_alias", "reject_song", "hold"],
+        )
+        self.assertEqual(
+            [option["decision"] for option in song_options],
+            ["accept", "accept", "reject", "hold"],
+        )
         for kind, first in expected.items():
             options = data.apply_options(source, {"kind":kind})
             self.assertEqual([option["value"] for option in options], [first,"needs_research","reject","hold"])
 
     def test_b4_accepts_stage_only_finite_domain_packets(self):
         rows = [
-            b4_row("song","daily_song_candidate","stage_song_candidate",{"canonical_song_name":"盆ジョビ"}),
+            b4_row("song","daily_song_candidate","register_song",{"canonical_song_name":"盆ジョビ"}),
             b4_row("term","daily_term_candidate","stage_term_candidate",{"term":"やぐら"}),
             b4_row("song_research","daily_term_candidate","stage_song_venue_evidence",{"song_name":"東京音頭","venue":"靖国神社"}),
             b4_row("venue_candidate","accepted_venue_song_missing_venue","stage_venue_candidate",{"suggested_venue":"日枝神社"}),
@@ -115,11 +124,14 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
             [row["domain_stage_type"] for row in stage["by_route"]["domain_stage"]],
             ["song_candidate","term_candidate","song_venue_evidence","venue_candidate"],
         )
-        self.assertTrue(all(row["domain_candidate"]["write_mode"] == "staged_only" for row in stage["by_route"]["domain_stage"]))
+        self.assertEqual(
+            [row["domain_candidate"]["write_mode"] for row in stage["by_route"]["domain_stage"]],
+            ["reviewed_finite_action", "staged_only", "staged_only", "staged_only"],
+        )
 
     def test_b4_accept_fails_closed_on_wrong_action_source_or_identity(self):
         unsafe = b4_row("song","daily_song_candidate","confirm_current_date",{"canonical_song_name":"曲"})
-        with self.assertRaisesRegex(ValueError,"must use stage_song_candidate"):
+        with self.assertRaisesRegex(ValueError,"explicit finite action"):
             build_decision_stage({"rows":[unsafe]})
         wrong_source = b4_row("term","other","stage_term_candidate",{"term":"用語"})
         with self.assertRaisesRegex(ValueError,"invalid action or source"):
@@ -286,7 +298,7 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
                     console_row(decision="needs_research", apply_value="needs_research"),
                     console_row(decision="hold", apply_value="hold", inbox_id="inbox_hold"),
                     console_row(
-                        apply_value="stage_song_candidate",
+                        apply_value="register_song",
                         inbox_id="inbox_song",
                         kind="song",
                         source_id="daily_song_candidate",
@@ -300,6 +312,54 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
         self.assertEqual(stage["route_counts"]["no_apply"], 1)
         self.assertEqual(stage["route_counts"]["domain_stage"], 1)
         self.assertNotIn("change_type", stage["by_route"]["domain_stage"][0])
+
+    def test_song_finite_actions_keep_exact_lifecycle_and_alias_target(self):
+        register = b4_row(
+            "song", "daily_song_candidate", "register_song", {"canonical_song_name": "新曲"}
+        )
+        alias = b4_row(
+            "song", "daily_song_candidate", "add_song_alias", {"canonical_song_name": "別表記"}
+        )
+        alias["raw"]["inbox_id"] = "inbox_song_alias"
+        alias["target_song_id"] = "song_existing"
+        reject = b4_row(
+            "song", "daily_song_candidate", "reject_song", {"canonical_song_name": "文断片"}, decision="reject"
+        )
+        reject["raw"]["inbox_id"] = "inbox_song_reject"
+        hold = b4_row(
+            "song", "daily_song_candidate", "hold", {"canonical_song_name": "要確認"}, decision="hold"
+        )
+        hold["raw"]["inbox_id"] = "inbox_song_hold"
+
+        stage = build_decision_stage({"rows": [register, alias, reject, hold]})
+
+        self.assertEqual(stage["route_counts"]["domain_stage"], 2)
+        self.assertEqual(stage["route_counts"]["no_apply"], 2)
+        song_rows = [
+            row
+            for route_rows in stage["by_route"].values()
+            for row in route_rows
+            if row.get("domain_stage_type") == "song_candidate"
+        ]
+        self.assertEqual(
+            [row["domain_candidate"]["finite_action"] for row in song_rows],
+            ["register_song", "add_song_alias", "reject_song", "hold"],
+        )
+        self.assertEqual(song_rows[1]["domain_candidate"]["target_song_id"], "song_existing")
+
+    def test_song_alias_requires_target_and_other_actions_forbid_it(self):
+        missing = b4_row(
+            "song", "daily_song_candidate", "add_song_alias", {"canonical_song_name": "別表記"}
+        )
+        with self.assertRaisesRegex(ValueError, "requires target_song_id"):
+            build_decision_stage({"rows": [missing]})
+
+        unexpected = b4_row(
+            "song", "daily_song_candidate", "register_song", {"canonical_song_name": "新曲"}
+        )
+        unexpected["target_song_id"] = "song_existing"
+        with self.assertRaisesRegex(ValueError, "only valid"):
+            build_decision_stage({"rows": [unexpected]})
 
     def test_unknown_accepted_route_fails_closed(self):
         with self.assertRaisesRegex(ValueError, "no safe route"):
@@ -325,6 +385,40 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
         self.assertEqual(updates["inbox_decision_updates"][0]["inbox_id"], "inbox_future")
         self.assertEqual(route["decision_route"], "change_request")
         self.assertEqual(route["write_mode"], "staged_only")
+
+    def test_write_creates_dedicated_song_action_artifact_across_routes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            register = b4_row(
+                "song", "daily_song_candidate", "register_song", {"canonical_song_name": "新曲"}
+            )
+            reject = b4_row(
+                "song", "daily_song_candidate", "reject_song", {"canonical_song_name": "文断片"}, decision="reject"
+            )
+            reject["raw"]["inbox_id"] = "inbox_song_reject"
+            stage = build_decision_stage({"rows": [register, reject]})
+            files = write_decision_stage(stage, root)
+            actions = json.loads((root / "review_inbox_song_candidate_actions.json").read_text())
+            updates = json.loads(
+                (root / "review_inbox_song_candidate_decision_updates.json").read_text()
+            )
+
+        self.assertEqual(actions["write_mode"], "reviewed_song_finite_actions")
+        self.assertEqual(actions["decision_count"], 2)
+        self.assertEqual(updates["decision_count"], 2)
+        self.assertEqual(
+            [row["inbox_id"] for row in updates["inbox_decision_updates"]],
+            ["inbox_song", "inbox_song_reject"],
+        )
+        self.assertEqual(
+            [row["domain_candidate"]["finite_action"] for row in actions["rows"]],
+            ["register_song", "reject_song"],
+        )
+        self.assertIn("review_inbox:song_candidate_actions", [row["source_id"] for row in files])
+        self.assertIn(
+            "review_inbox:song_candidate_decision_updates",
+            [row["source_id"] for row in files],
+        )
 
     def test_review_console_stage_apply_splits_review_inbox_by_route(self):
         with tempfile.TemporaryDirectory() as tmp:
