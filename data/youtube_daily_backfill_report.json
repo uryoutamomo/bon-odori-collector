@@ -1,13 +1,13 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-04T21:12:00.976886+00:00",
+  "generated_at": "2026-08-05T21:07:06.972563+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 51,
+  "selected_rows": 57,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 43,
-  "estimated_search_calls": 102,
+  "remaining_rows_after": 37,
+  "estimated_search_calls": 114,
   "candidates_before": 578,
   "selected": [
     {
@@ -1624,9 +1624,195 @@
         "清水川橋公園 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:3e266855f01bbc54",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "砧町町会「納涼夏祭り大会」",
+      "venue": "三峰公園",
+      "area": "世田谷区",
+      "series_key": "01028eb70f59",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "砧町町会「納涼夏祭り大会」 三峰公園 世田谷区 2024 盆踊り",
+        "砧町町会「納涼夏祭り大会」 2024 YouTube 盆踊り",
+        "三峰公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5bb0e328527d5408",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西糀谷四丁目町会 盆踊り大会",
+      "venue": "西仲天祖神社",
+      "area": "大田区",
+      "series_key": "ccf1a2f8f2bb",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2024 盆踊り",
+        "西糀谷四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
+        "西仲天祖神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:356f859bb68abc08",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "series_key": "f02251822d5b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "大森南一丁目自治会「納涼盆踊り大会」 大森南一丁目公園 大田区 2023 盆踊り",
+        "大森南一丁目自治会「納涼盆踊り大会」 2023 YouTube 盆踊り",
+        "大森南一丁目公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e281db4d7322a660",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "玉川町会盆おどり大会",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "area": "世田谷区",
+      "series_key": "5544ac3c9cfb",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-25",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "玉川町会盆おどり大会 二子玉川西地区ふれあい広場(246高架下) 世田谷区 2024 盆踊り",
+        "玉川町会盆おどり大会 2024 YouTube 盆踊り",
+        "二子玉川西地区ふれあい広場(246高架下) 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:595b91e72f1262b1",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "成城学園 盆踊り大会",
+      "venue": "成城大学9号館前広場",
+      "area": "世田谷区",
+      "series_key": "56202bd98582",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "成城学園 盆踊り大会 成城大学9号館前広場 世田谷区 2024 盆踊り",
+        "成城学園 盆踊り大会 2024 YouTube 盆踊り",
+        "成城大学9号館前広場 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:61e093145f5535f2",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "祖師谷商店街振興組合",
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "area": "世田谷区",
+      "series_key": "22537f11f9e3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "祖師谷商店街振興組合 小田急線祖師ヶ谷大蔵駅前広場 世田谷区 2024 盆踊り",
+        "祖師谷商店街振興組合 2024 YouTube 盆踊り",
+        "小田急線祖師ヶ谷大蔵駅前広場 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 50,
+  "completed_batches": 56,
   "batches": [
     {
       "batch": 1,
@@ -2495,6 +2681,112 @@
       "candidate_count": 578,
       "strong_count": 183,
       "review_count": 48
+    },
+    {
+      "batch": 51,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:b1a933f8eb9d1f5f"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 578,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 52,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:3e266855f01bbc54"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 578,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 53,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:5bb0e328527d5408"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 578,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 54,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:356f859bb68abc08"
+      ],
+      "fresh_summary": {
+        "candidate_count": 2,
+        "status_counts": {
+          "weak": 2
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 579,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 55,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:e281db4d7322a660"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 579,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 56,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:595b91e72f1262b1"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 579,
+      "strong_count": 183,
+      "review_count": 48
     }
   ],
   "error": "HTTP Error 429: Too Many Requests (rateLimitExceeded)",
@@ -2508,7 +2800,7 @@
     "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 309 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 309 件（294 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 54 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
-  "candidates_after": 578,
+  "candidates_after": 579,
   "strong_after": 183,
   "review_after": 48,
   "schedule_rule_count": 13,
@@ -2524,5 +2816,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-05 youtube_candidates=578 review=48 history_rows=40"
+  "ops_metrics": "ops metrics: date=2026-08-06 youtube_candidates=579 review=48 history_rows=41"
 }

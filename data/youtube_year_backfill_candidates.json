@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-04T21:12:31.610794+00:00",
+  "generated_at": "2026-08-05T21:07:34.139951+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 578,
+    "candidate_count": 579,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 347
+      "weak": 348
     },
     "strong_count": 183,
     "review_count": 48
@@ -28129,6 +28129,28 @@
       "venue": "大森南一丁目公園",
       "area": "大田区",
       "detected_event_date": "",
+      "video_id": "2O-Rtg-lp9Q",
+      "video_url": "https://www.youtube.com/watch?v=2O-Rtg-lp9Q",
+      "title": "みんなが見てる前だもの、張り切ってます！ #祭り #神輿 #japaneseculture",
+      "channel_id": "UCnZCRDus2zf05F6BHlDxDhQ",
+      "channel_title": "宮田宣也【日本の祭を未来へ】",
+      "published_at": "2023-04-03T11:08:59Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/2O-Rtg-lp9Q/maxresdefault.jpg",
+      "query": "大森南一丁目自治会「納涼盆踊り大会」 大森南一丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:356f859bb68abc08",
+      "target_year": 2023,
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
       "video_id": "PdKU8yWVIEE",
       "video_url": "https://www.youtube.com/watch?v=PdKU8yWVIEE",
       "title": "令和5年稗田神社例大祭",
@@ -28934,5 +28956,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-04T21:12:31.030644+00:00"
+  "merged_from": "2026-08-05T21:07:33.721130+00:00"
 }
