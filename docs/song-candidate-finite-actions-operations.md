@@ -13,7 +13,7 @@ Master RDBの `songs` / `song_aliases` へ反映する。
 - `register_song`: 新規登録、または既存の候補曲をactiveへ昇格
 - `add_song_alias`: 指定した既存 `song_id` の別名として登録
 - `reject_song`: 曲ではない文字列として無効化
-- `hold`: 判断を保留し、曲マスタは変更しない
+- `hold`: 判断を保留する。P4専用packetには入れず、受信箱をpendingのまま残す
 
 自由記述からactionを推測しない。`add_song_alias` だけは対象 `song_id` を必須とし、
 ほかのactionで `song_id` が指定されていたら停止する。
@@ -36,12 +36,15 @@ workflowにはまだ配線しない。本番実行は、内田さんが対象bat
 review consoleをinbox readerで開き、曲候補ごとに4actionのどれかを選ぶ。
 別名統合の場合は対象 `song_id` も入力する。
 
-consoleのexport/stage後、少なくとも次の2ファイルが生成される。
+consoleのexport/stage後、`hold` 以外の曲候補が1件以上あれば次の2ファイルが生成される。
 
 - `data/review_console/staged/review_inbox_song_candidate_decision_updates.json`
 - `data/review_console/staged/review_inbox_song_candidate_actions.json`
 
-後者はaccepted/rejected/holdのrouteをまたいで、曲候補だけを1つの凍結packetにまとめる。
+後者はaccepted/rejectedのrouteをまたいで、実行対象の曲候補だけを1つの凍結packetにまとめる。
+`hold` は通常のconsole stageには記録されるが、この2つのP4専用packetからは除外される。
+そのため本番受信箱はpendingのままで、後日 `register_song` / `add_song_alias` /
+`reject_song` のいずれかへ再判断できる。
 
 ## 2. Build the trusted P4 payload
 
@@ -59,15 +62,15 @@ python3 -m scripts.build_song_candidate_finite_payload \
 cron帯外で、4環境ゲートを明示して実行する。
 
 ```bash
-REVIEW_INBOX_DECISION_WRITE_MODE=bulk \
+REVIEW_INBOX_DECISION_WRITE_MODE=canary \
 REVIEW_INBOX_CAS_PUBLISH_ENABLED=true \
 REVIEW_INBOX_READER_MODE=legacy \
 REVIEW_INBOX_LEGACY_WRITER_ENABLED=true \
 python3 -m scripts.run_song_candidate_decision_write \
   --staged-decisions data/review_console/staged/review_inbox_song_candidate_decision_updates.json \
   --staged-actions data/review_console/staged/review_inbox_song_candidate_actions.json \
-  --frozen-evidence-dir data/song_candidate_decision_evidence/<batch-id> \
-  --report-out data/song_candidate_decision_evidence/<batch-id>-decision-report.json \
+  --frozen-evidence-dir data/song_candidate_decision_evidence/<batch-id>-attempt-1 \
+  --report-out data/song_candidate_decision_evidence/<batch-id>-attempt-1-decision-report.json \
   --expect-rstart-checksum <64hex-Rstart> \
   --public-target-year 2026 \
   --public-today <YYYY-MM-DD> \
@@ -79,6 +82,13 @@ python3 -m scripts.run_song_candidate_decision_write \
 
 reportの `rend.checksum` を次の工程のRstartに使う。途中で別writerがRDBを変更した場合は
 古いchecksumを使わず、差分を再確認して最初からやり直す。
+
+初回は `canary` で1件だけを含むstage packetを使う。結果確認後、残りを別batchとして
+`bulk` で実行する。`canary` はdecision writer側でも1件だけに制限される。
+
+phase 1がCAS conflictなどで失敗しても、凍結証跡は失敗attemptの監査記録として削除・上書き
+しない。最新Rstartと差分を再確認し、`<batch-id>-attempt-2` のように新しい証跡ディレクトリと
+report名を指定して再実行する。各attemptの名前は必ず一意にする。
 
 ## 4. Dry-run and apply the finite actions
 

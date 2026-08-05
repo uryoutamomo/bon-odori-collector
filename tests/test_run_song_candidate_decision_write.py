@@ -11,7 +11,11 @@ import pytest
 from master_rdb.master_db import init_db
 from review_inbox import inbox_rows, upsert_inbox_items
 from review_inbox_adapters.source_writer import ArtifactState, SourceWriterError
-from scripts.run_song_candidate_decision_write import run_batch, validate_pair
+from scripts.run_song_candidate_decision_write import (
+    require_explicit_environment,
+    run_batch,
+    validate_pair,
+)
 
 
 INBOX_ID = "inbox_song_one"
@@ -117,6 +121,19 @@ def test_validate_pair_rejects_lifecycle_or_target_mismatch():
     decisions["inbox_decision_updates"][0]["decision_route"] = "no_apply"
     with pytest.raises(SourceWriterError, match="lifecycle"):
         validate_pair(decisions, actions)
+
+
+@pytest.mark.parametrize("mode", ["canary", "bulk"])
+def test_environment_allows_explicit_canary_or_bulk(mode):
+    flags = require_explicit_environment(
+        {
+            "REVIEW_INBOX_DECISION_WRITE_MODE": mode,
+            "REVIEW_INBOX_CAS_PUBLISH_ENABLED": "true",
+            "REVIEW_INBOX_READER_MODE": "legacy",
+            "REVIEW_INBOX_LEGACY_WRITER_ENABLED": "true",
+        }
+    )
+    assert flags.decision_write_mode == mode
 
 
 def test_batch_is_default_off_and_then_writes_only_review_lifecycle():

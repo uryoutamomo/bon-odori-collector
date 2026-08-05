@@ -65,8 +65,10 @@ def require_explicit_environment(environ: Mapping[str, str]) -> DecisionWriterFl
             "song decision write requires explicit environment gates: " + ", ".join(missing)
         )
     flags = DecisionWriterFlags.from_env(environ)
-    if flags.decision_write_mode != "bulk":
-        raise SourceWriterError("song decision write mode must be explicitly set to bulk")
+    if flags.decision_write_mode not in {"canary", "bulk"}:
+        raise SourceWriterError(
+            "song decision write mode must be explicitly set to canary or bulk"
+        )
     return flags
 
 

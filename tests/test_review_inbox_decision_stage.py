@@ -396,7 +396,15 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
                 "song", "daily_song_candidate", "reject_song", {"canonical_song_name": "文断片"}, decision="reject"
             )
             reject["raw"]["inbox_id"] = "inbox_song_reject"
-            stage = build_decision_stage({"rows": [register, reject]})
+            hold = b4_row(
+                "song",
+                "daily_song_candidate",
+                "hold",
+                {"canonical_song_name": "要確認"},
+                decision="hold",
+            )
+            hold["raw"]["inbox_id"] = "inbox_song_hold"
+            stage = build_decision_stage({"rows": [register, reject, hold]})
             files = write_decision_stage(stage, root)
             actions = json.loads((root / "review_inbox_song_candidate_actions.json").read_text())
             updates = json.loads(
@@ -414,11 +422,37 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
             [row["domain_candidate"]["finite_action"] for row in actions["rows"]],
             ["register_song", "reject_song"],
         )
+        self.assertEqual(
+            [row["inbox_id"] for row in stage["inbox_decision_updates"]],
+            ["inbox_song", "inbox_song_reject", "inbox_song_hold"],
+        )
         self.assertIn("review_inbox:song_candidate_actions", [row["source_id"] for row in files])
         self.assertIn(
             "review_inbox:song_candidate_decision_updates",
             [row["source_id"] for row in files],
         )
+
+    def test_write_does_not_create_p4_artifacts_for_hold_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            hold = b4_row(
+                "song",
+                "daily_song_candidate",
+                "hold",
+                {"canonical_song_name": "要確認"},
+                decision="hold",
+            )
+            stage = build_decision_stage({"rows": [hold]})
+            files = write_decision_stage(stage, root)
+
+            self.assertFalse((root / "review_inbox_song_candidate_actions.json").exists())
+            self.assertFalse(
+                (root / "review_inbox_song_candidate_decision_updates.json").exists()
+            )
+            self.assertNotIn(
+                "review_inbox:song_candidate_actions",
+                [row["source_id"] for row in files],
+            )
 
     def test_review_console_stage_apply_splits_review_inbox_by_route(self):
         with tempfile.TemporaryDirectory() as tmp:

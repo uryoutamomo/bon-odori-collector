@@ -213,10 +213,10 @@ def build_reviewed_payload_from_domain_stage(
     (review_inbox_adapters/low_priority_adapters.py common_item()) puts the
     evidence link on the payload as ``evidence_url`` (falling back to
     ``source_url`` only for older/other rows), not on the top-level
-    domain_candidate. ``evidence_url`` is checked first so a reviewed row's
-    source_url keeps matching what apply_song_candidate_finite_actions.py's
-    lifecycle guard reads from the staged review_inbox_items.source_url
-    column (which low_priority_adapters.common_item() derives the same way).
+    domain_candidate. For legacy rows where ``domain_candidate.source_url``
+    is absent, that payload evidence is used. For canonical decision-stage
+    rows, the key is always present and its value is preserved even when
+    empty, so the P4 lifecycle guard compares the exact inbox source_url.
     """
 
     actions_by_source_inbox_id = actions_by_source_inbox_id or {}
@@ -248,6 +248,10 @@ def build_reviewed_payload_from_domain_stage(
             raise SourceWriterError(
                 f"song finite action lifecycle mismatch for {source_inbox_id}"
             )
+        if "source_url" in candidate:
+            source_url = candidate.get("source_url")
+        else:
+            source_url = payload.get("evidence_url") or payload.get("source_url") or ""
         decision_row: dict[str, Any] = {
             "source_inbox_id": source_inbox_id,
             "source_id": str(candidate.get("source_id") or EXPECTED_SOURCE_ID),
@@ -256,12 +260,7 @@ def build_reviewed_payload_from_domain_stage(
             "action": action,
             "reviewed_by": row_reviewed_by,
             "reviewed_at": row_reviewed_at,
-            "source_url": str(
-                candidate.get("source_url")
-                or payload.get("evidence_url")
-                or payload.get("source_url")
-                or ""
-            ),
+            "source_url": str(source_url or ""),
             "note": str(row.get("note") or payload.get("note") or ""),
         }
         target_song_id = (
@@ -308,4 +307,12 @@ def build_reviewed_payload_from_decision_stage(
         raise SourceWriterError("song decision stage must contain at least one row")
     if stage_payload.get("decision_count") != len(rows):
         raise SourceWriterError("song decision stage decision_count mismatch")
+    if any(
+        (row.get("domain_candidate") or {}).get("finite_action") == "hold"
+        for row in rows
+        if isinstance(row, dict)
+    ):
+        raise SourceWriterError(
+            "hold is review-only and must remain pending; it cannot enter the P4 action packet"
+        )
     return build_reviewed_payload_from_domain_stage(rows)

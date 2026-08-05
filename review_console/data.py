@@ -3316,6 +3316,7 @@ def stage_apply(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH, write:
                 for route_rows in inbox_stage["by_route"].values()
                 for row in route_rows
                 if row.get("domain_stage_type") == "song_candidate"
+                and row.get("domain_candidate", {}).get("finite_action") != "hold"
             )
             if song_count:
                 inbox_files.extend(

@@ -352,13 +352,18 @@ def write_decision_stage(stage: dict[str, Any], staged_dir: Path) -> list[dict[s
         for row in route_rows
         if row.get("domain_stage_type") == "song_candidate"
     ]
-    if song_rows:
+    actionable_song_rows = [
+        row
+        for row in song_rows
+        if row.get("domain_candidate", {}).get("finite_action") != "hold"
+    ]
+    if actionable_song_rows:
         update_payload = {
             "schema_version": 1,
             "generated_by": "review_inbox_decision_stage.py",
             "write_mode": "staged_only",
-            "decision_count": len(song_rows),
-            "inbox_decision_updates": [row["inbox_update"] for row in song_rows],
+            "decision_count": len(actionable_song_rows),
+            "inbox_decision_updates": [row["inbox_update"] for row in actionable_song_rows],
         }
         update_path = staged_dir / "review_inbox_song_candidate_decision_updates.json"
         write_json_atomic(update_path, update_payload)
@@ -366,7 +371,7 @@ def write_decision_stage(stage: dict[str, Any], staged_dir: Path) -> list[dict[s
             {
                 "source_id": "review_inbox:song_candidate_decision_updates",
                 "path": str(update_path),
-                "decision_count": len(song_rows),
+                "decision_count": len(actionable_song_rows),
                 "decision_route": "mixed_finite_actions",
             }
         )
@@ -375,8 +380,8 @@ def write_decision_stage(stage: dict[str, Any], staged_dir: Path) -> list[dict[s
             "generated_by": "review_inbox_decision_stage.py",
             "source_id": "review_inbox",
             "write_mode": "reviewed_song_finite_actions",
-            "decision_count": len(song_rows),
-            "rows": song_rows,
+            "decision_count": len(actionable_song_rows),
+            "rows": actionable_song_rows,
         }
         path = staged_dir / "review_inbox_song_candidate_actions.json"
         write_json_atomic(path, payload)
@@ -384,7 +389,7 @@ def write_decision_stage(stage: dict[str, Any], staged_dir: Path) -> list[dict[s
             {
                 "source_id": "review_inbox:song_candidate_actions",
                 "path": str(path),
-                "decision_count": len(song_rows),
+                "decision_count": len(actionable_song_rows),
                 "decision_route": "mixed_finite_actions",
             }
         )

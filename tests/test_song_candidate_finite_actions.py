@@ -245,6 +245,31 @@ def test_builder_prefers_evidence_url_over_source_url_field():
     assert built["decisions"][0]["source_url"] == "https://example.com/evidence"
 
 
+def test_builder_preserves_explicit_empty_candidate_source_url():
+    rows = [
+        {
+            "domain_stage_type": "song_candidate",
+            "domain_candidate": {
+                "source_inbox_id": "inbox_song_empty_url",
+                "source_id": "daily_song_candidate",
+                "source_key": "song_candidate|empty-url",
+                "source_url": "",
+                "kind": "song",
+                "payload": {
+                    "canonical_song_name": "秋田音頭",
+                    "evidence_url": "https://example.com/evidence",
+                },
+            },
+        }
+    ]
+    built = build_reviewed_payload_from_domain_stage(
+        rows,
+        reviewed_by="内田さん",
+        reviewed_at="2026-08-05T09:00:00+09:00",
+    )
+    assert built["decisions"][0]["source_url"] == ""
+
+
 def test_builder_only_applies_explicitly_supplied_actions():
     rows = [
         {
@@ -291,13 +316,12 @@ def test_builder_skips_rows_that_are_not_song_candidate_domain_stage():
     assert built["decisions"][0]["candidate_title"] == "阿波踊り"
 
 
-def test_decision_stage_builder_preserves_four_explicit_actions_and_lifecycle():
+def test_decision_stage_builder_preserves_actionable_actions_and_lifecycle():
     built = build_reviewed_payload_from_decision_stage(
         staged_payload(
             staged_song_row("register_song"),
             staged_song_row("add_song_alias"),
             staged_song_row("reject_song"),
-            staged_song_row("hold"),
         )
     )
 
@@ -305,12 +329,18 @@ def test_decision_stage_builder_preserves_four_explicit_actions_and_lifecycle():
         "register_song",
         "add_song_alias",
         "reject_song",
-        "hold",
     ]
     assert built["decisions"][1]["target_song_id"] == "song_existing"
     assert built["decisions"][0]["reviewed_by"] == "内田さん"
     assert built["decisions"][0]["source_url"] == "https://example.com/register_song"
     assert built["decisions"][0]["note"] == "画面で確認"
+
+
+def test_decision_stage_builder_rejects_hold_in_p4_action_packet():
+    with pytest.raises(SourceWriterError, match="must remain pending"):
+        build_reviewed_payload_from_decision_stage(
+            staged_payload(staged_song_row("hold"))
+        )
 
 
 def test_decision_stage_builder_rejects_lifecycle_mismatch():
