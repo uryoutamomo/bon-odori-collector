@@ -1,0 +1,76 @@
+{
+  "artifact": {
+    "bucket": "bon-odori-master-rdb-169805602203",
+    "database_checksum": "cf1861b7d0dd5ef4a79e738715936871b5554c74fc4ebf082cc7632e0e4edcd3",
+    "latest_database_key": "master-rdb/latest/bon_odori_master.sqlite",
+    "published_at": "2026-08-05T17:22:54.189667+00:00",
+    "snapshot_id": "20260805T172254Z"
+  },
+  "closeout_at": "2026-08-06T02:39:31+09:00",
+  "generated_by": "おと（Codex）",
+  "public_projection": {
+    "guard_status": "pass",
+    "guard_warnings": [
+      "master_rdb_newer_than_publication_gap_review"
+    ],
+    "safe_to_wholesale_sync": true,
+    "song_projection_changed": false,
+    "time_based_changes": [
+      {
+        "name": "鉄砲洲納涼盆踊り",
+        "new_public_status": "ended_2026",
+        "note": "2026年開催終了: 2026-08-03〜2026-08-05"
+      }
+    ]
+  },
+  "review_inbox_results": [
+    {
+      "canonical_title": "BON踊り",
+      "decision": "rejected",
+      "inbox_id": "inbox_675177050e6cb942",
+      "song_id": "song_073dee2dba2653f3",
+      "song_status": "無効"
+    },
+    {
+      "canonical_title": "ドン踊り",
+      "decision": "rejected",
+      "inbox_id": "inbox_3ae38feccaeb0592",
+      "song_id": "song_c17c0530e42931cf",
+      "song_status": "無効"
+    },
+    {
+      "canonical_title": "盆ジョビ",
+      "decision": "rejected",
+      "inbox_id": "inbox_17fe85f1bcfa7dd2",
+      "song_id": "song_0bae1f6609c2a33b",
+      "song_status": "無効"
+    },
+    {
+      "canonical_title": "防災神神音頭",
+      "decision": "accepted",
+      "inbox_id": "inbox_d4e619d16d18f4be",
+      "song_id": "song_c9b55a2306c16e1c",
+      "song_status": "active"
+    },
+    {
+      "canonical_title": "風流踊り",
+      "decision": "rejected",
+      "inbox_id": "inbox_ba760db4c9ebe011",
+      "song_id": "song_ee4d105124a37b23",
+      "song_status": "無効"
+    }
+  ],
+  "table_counts": {
+    "review_inbox_items": 542,
+    "song_aliases": 142,
+    "songs": 399
+  },
+  "verification": {
+    "github_actions_conclusion": "success",
+    "github_actions_run_id": 31030943237,
+    "github_actions_url": "https://github.com/uryoutamomo/bon-odori-collector/actions/runs/31030943237",
+    "local_database_matches_manifest": true,
+    "master_rdb_audit_issue_count": 0,
+    "review_inbox_schema_version": 2
+  }
+}
