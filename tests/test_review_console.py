@@ -1514,6 +1514,62 @@ class ReviewConsoleTests(unittest.TestCase):
             self.assertEqual(staged["decision_count"], 1)
             self.assertEqual(staged["staged_files"][0]["source_id"], "missing_source_url")
 
+    def test_song_finite_action_requires_and_exports_alias_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / "data/review_inbox.json").write_text(
+                json.dumps(
+                    {
+                        "items": [
+                            {
+                                "inbox_id": "inbox_song",
+                                "kind": "song",
+                                "title": "別表記",
+                                "source_id": "daily_song_candidate",
+                                "source_key": "song:別表記",
+                                "source_url": "https://example.com/song",
+                                "payload": {"canonical_song_name": "別表記"},
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            decisions_path = root / "data/review_console/decisions.json"
+            item_id = "review_inbox:inbox_song|daily_song_candidate|song:別表記"
+            with patch.dict("os.environ", {data.REVIEW_CONSOLE_READER_MODE_ENV: "inbox"}):
+                with self.assertRaisesRegex(ValueError, "song_id"):
+                    data.save_decision(
+                        item_id,
+                        "accept",
+                        apply_value="add_song_alias",
+                        decisions_path=decisions_path,
+                        root=root,
+                    )
+                with self.assertRaisesRegex(ValueError, "decision=reject"):
+                    data.save_decision(
+                        item_id,
+                        "accept",
+                        apply_value="reject_song",
+                        decisions_path=decisions_path,
+                        root=root,
+                    )
+                saved = data.save_decision(
+                    item_id,
+                    "accept",
+                    apply_value="add_song_alias",
+                    target_song_id="song_existing",
+                    decisions_path=decisions_path,
+                    root=root,
+                )
+                exported = data.build_export_payload(root=root, decisions_path=decisions_path)
+
+        self.assertEqual(saved["target_song_id"], "song_existing")
+        self.assertEqual(exported["rows"][0]["target_song_id"], "song_existing")
+        self.assertEqual(exported["rows"][0]["apply_value"], "add_song_alias")
+
     def test_undo_restores_previous_decision_states(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

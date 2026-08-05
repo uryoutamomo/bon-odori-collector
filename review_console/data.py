@@ -111,6 +111,9 @@ APPLY_VALUE_LABELS = {
     "stage_registration_candidate": "登録候補へ送る",
     "add_song_evidence": "動画・曲証拠を追加候補へ送る",
     "stage_song_candidate": "曲候補stagingへ送る",
+    "register_song": "曲として登録",
+    "add_song_alias": "既存曲の別名として統合",
+    "reject_song": "曲ではない",
     "stage_term_candidate": "用語候補stagingへ送る",
     "stage_song_venue_evidence": "曲×会場証拠stagingへ送る",
     "stage_venue_candidate": "会場候補stagingへ送る",
@@ -130,12 +133,18 @@ APPLY_VALUE_HELP = {
     "append_existing_event": "イベントを新規作成せず、YouTube動画URLと曲名を既存イベントの証拠として残します。",
     "add_song_evidence": "動画URL・曲候補・対象年をdomain stagingへ送り、この操作だけではMaster RDBや公開データを変更しません。",
     "stage_song_candidate": "曲候補packetを作るだけで、曲マスタへ直接登録しません。",
+    "register_song": "レビュー済み有限actionとして曲マスタへの新規登録または候補昇格をstagingします。この操作だけでは本番RDBを変更しません。",
+    "add_song_alias": "入力した曲IDの別名としてstagingします。対象曲IDが無い場合は保存できません。この操作だけでは本番RDBを変更しません。",
+    "reject_song": "曲ではない判断を有限actionとしてstagingします。この操作だけでは本番RDBを変更しません。",
     "stage_term_candidate": "用語候補packetを作るだけで、用語集へ直接登録しません。",
     "stage_song_venue_evidence": "曲と会場の共起証拠packetを作るだけで、関連を直接登録しません。",
     "stage_venue_candidate": "会場候補packetを作るだけで、会場マスタへ直接登録しません。",
 }
 
 APPLY_VALUE_DECISIONS = {
+    "register_song": "accept",
+    "add_song_alias": "accept",
+    "reject_song": "reject",
     "reject": "reject",
     "reject_candidate": "reject",
     "reject_prediction": "reject",
@@ -2031,7 +2040,7 @@ def apply_options(source: ReviewSource, row: dict[str, Any]) -> list[dict[str, A
         option_values = ("add_song_evidence", "needs_research", "reject", "hold")
     elif source.id == "review_inbox":
         option_values = {
-            "song": ("stage_song_candidate", "needs_research", "reject", "hold"),
+            "song": ("register_song", "add_song_alias", "reject_song", "hold"),
             "term": ("stage_term_candidate", "needs_research", "reject", "hold"),
             "song_research": ("stage_song_venue_evidence", "needs_research", "reject", "hold"),
             "venue_candidate": ("stage_venue_candidate", "needs_research", "reject", "hold"),
@@ -2064,6 +2073,8 @@ def route_note(
         return "X由来の発見候補です。採用時も登録候補packetを作るだけで、非X確認URLがなければ安全側に停止します。"
     if source.id == "review_inbox" and as_text(row.get("kind")) == "youtube_evidence":
         return "過去年のYouTube証拠候補です。採用時もdomain stagingへ送るだけで、Master RDBや公開データには直接反映しません。"
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "song":
+        return "曲候補は新規登録・既存曲の別名・曲ではない・保留の4つから選びます。ここでは有限actionを保存するだけで、Master RDBへの反映は別のCAS保護CLIで行います。"
     if source.id == "x_candidate_post":
         return "X/RSSの情報源候補です。ここは2段式ではありません。押した判断を候補JSONの registration_decision に直接保存します。"
     if source.id == "rare_signal_backcheck":
@@ -2542,6 +2553,35 @@ def validate_decision(
             raise ValueError("追加先イベント名を入力してください。既存イベント名が分からない場合は、公式確認待ちまたは保留にしてください。")
 
 
+def validate_song_finite_action(
+    item_id: str,
+    decision: str,
+    apply_value: str,
+    target_song_id: str,
+    root: Path,
+    decisions_path: Path,
+) -> None:
+    source_id, _, _key = item_id.partition(":")
+    if source_id != "review_inbox":
+        return
+    detail = load_item(item_id, root=root, decisions_path=decisions_path)
+    row = detail.get("raw", {}) if detail else {}
+    if as_text(row.get("kind")) != "song":
+        return
+    allowed = {"register_song", "add_song_alias", "reject_song", "hold"}
+    if apply_value not in allowed:
+        raise ValueError("曲候補は、新規登録・既存曲の別名・曲ではない・保留のいずれかを選んでください。")
+    expected_decision = decision_for_apply_value(apply_value)
+    if decision != expected_decision:
+        raise ValueError(
+            f"曲候補action {apply_value} には decision={expected_decision} が必要です。"
+        )
+    if apply_value == "add_song_alias" and not target_song_id:
+        raise ValueError("既存曲の別名として統合する場合は、対象のsong_idを入力してください。")
+    if apply_value != "add_song_alias" and target_song_id:
+        raise ValueError("対象song_idは、既存曲の別名として統合する場合だけ指定できます。")
+
+
 def save_decision(
     item_id: str,
     decision: str,
@@ -2549,6 +2589,7 @@ def save_decision(
     apply_value: str = "",
     target_event_name: str = "",
     target_song_names: str | list[str] = "",
+    target_song_id: str = "",
     reviewer: str = "内田さん",
     decisions_path: Path = DECISIONS_PATH,
     root: Path = ROOT,
@@ -2589,6 +2630,15 @@ def save_decision(
         source_id, _, key = item_id.partition(":")
         validate_decision(item_id, decision, apply_value, root, decisions_path, target_event_name=target_event_name)
         apply_value = apply_value.strip()
+        target_song_id = as_text(target_song_id).strip()
+        validate_song_finite_action(
+            item_id,
+            decision,
+            apply_value,
+            target_song_id,
+            root,
+            decisions_path,
+        )
         target_event_name = as_text(target_event_name).strip()
         manual_target_event_match: dict[str, Any] | None = None
         if source_id == "youtube_active_video" and apply_value == "append_existing_event" and target_event_name:
@@ -2643,6 +2693,8 @@ def save_decision(
             saved["manual_target_event_match"] = manual_target_event_match
         if source_id == "youtube_active_video" and song_names:
             saved["manual_song_names"] = list(dict.fromkeys(song_names))
+        if target_song_id:
+            saved["target_song_id"] = target_song_id
         decisions[item_id] = saved
         write_json_atomic(decisions_path, payload)
         clear_inventory_cache()
@@ -2738,6 +2790,7 @@ def normalize_item(
         "id": item_id,
         "source_id": source.id,
         "origin_source_id": as_text(row.get("source_id")) if source.id == "review_inbox" else source.id,
+        "kind": as_text(row.get("kind")),
         "source_title": source.title,
         "source_path": source.path,
         "domain": source.domain,
@@ -3092,6 +3145,7 @@ def build_export_payload(root: Path = ROOT, decisions_path: Path = DECISIONS_PAT
             "decision_route": decision.get("decision_route", ""),
             "manual_target_event_name": decision.get("manual_target_event_name", ""),
             "manual_song_names": decision.get("manual_song_names", []),
+            "target_song_id": decision.get("target_song_id", ""),
             "research_advice": detail.get("research_advice", {}),
             "research_advice_status": detail.get("research_advice_status", ""),
             "research_advice_priority": detail.get("research_advice_priority", ""),
@@ -3214,6 +3268,13 @@ def stage_apply(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH, write:
         updates_path = staged_dir / UPDATES_FILE
         if updates_path.exists():
             updates_path.unlink()
+        for generated_name in (
+            "review_inbox_song_candidate_actions.json",
+            "review_inbox_song_candidate_decision_updates.json",
+        ):
+            generated_path = staged_dir / generated_name
+            if generated_path.exists():
+                generated_path.unlink()
         ack_path = staged_dir / "stage_apply_ack.json"
         if ack_path.exists():
             ack_path.unlink()
@@ -3250,6 +3311,36 @@ def stage_apply(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH, write:
                 for route, count in inbox_stage["route_counts"].items()
                 if count
             ]
+            song_count = sum(
+                1
+                for route_rows in inbox_stage["by_route"].values()
+                for row in route_rows
+                if row.get("domain_stage_type") == "song_candidate"
+                and row.get("domain_candidate", {}).get("finite_action") != "hold"
+            )
+            if song_count:
+                inbox_files.extend(
+                    [
+                        {
+                            "source_id": "review_inbox:song_candidate_decision_updates",
+                            "path": rel_path(
+                                staged_dir / "review_inbox_song_candidate_decision_updates.json",
+                                root,
+                            ),
+                            "decision_count": song_count,
+                            "decision_route": "mixed_finite_actions",
+                        },
+                        {
+                            "source_id": "review_inbox:song_candidate_actions",
+                            "path": rel_path(
+                                staged_dir / "review_inbox_song_candidate_actions.json",
+                                root,
+                            ),
+                            "decision_count": song_count,
+                            "decision_route": "mixed_finite_actions",
+                        },
+                    ]
+                )
         staged_files.extend(inbox_files)
     result = {
         "generated_at": now_iso(),
@@ -3272,7 +3363,16 @@ def stage_status(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) -> di
     ack = read_json(ack_path, {})
     staged_files: list[dict[str, Any]] = []
     if staged_dir.exists():
-        for path in sorted(staged_dir.glob("*_decisions.json")):
+        staged_paths = set(staged_dir.glob("*_decisions.json"))
+        staged_paths.update(
+            path
+            for path in (
+                staged_dir / "review_inbox_song_candidate_actions.json",
+                staged_dir / "review_inbox_song_candidate_decision_updates.json",
+            )
+            if path.exists()
+        )
+        for path in sorted(staged_paths):
             payload = read_json(path, {})
             staged_files.append(
                 {

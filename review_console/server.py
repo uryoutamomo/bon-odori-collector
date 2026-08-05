@@ -108,6 +108,7 @@ class ReviewConsoleHandler(BaseHTTPRequestHandler):
                     apply_value=payload.get("apply_value", ""),
                     target_event_name=payload.get("target_event_name", ""),
                     target_song_names=payload.get("target_song_names", ""),
+                    target_song_id=payload.get("target_song_id", ""),
                     reviewer=payload.get("reviewer", "内田さん"),
                 )
                 return self.send_json({"ok": True, "decision": saved})
