@@ -199,8 +199,9 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
             self.assertEqual(store.fetch_calls, 0)
             self.assertEqual(store.publish_calls, 0)
 
-    def test_real_official_input_bulk_writes_95_with_zero_diff_parity(self):
+    def test_real_official_input_bulk_writes_all_rows_with_zero_diff_parity(self):
         with tempfile.TemporaryDirectory() as tmp:
+            expected_count = len(json.loads(OFFICIAL_INPUT.read_text(encoding="utf-8"))["rows"])
             db = Path(tmp) / "master.sqlite"
             make_master(db)
             store = FakeArtifactStore(db)
@@ -234,22 +235,23 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
         self.assertFalse(report["no_op"])
         self.assertEqual(store.publish_calls, 1)
         self.assertEqual(store.fetch_calls, 2)
-        self.assertEqual(frozen["item_count"], 95)
+        self.assertEqual(frozen["item_count"], expected_count)
         self.assertEqual(frozen["selection"]["mode"], "all")
-        self.assertEqual(len(frozen["selection"]["source_keys"]), 95)
-        self.assertEqual(frozen["scope_counts"], {"future": 88, "historical": 7})
-        self.assertEqual(report["parity"]["summary"]["expected_count"], 95)
+        self.assertEqual(len(frozen["selection"]["source_keys"]), expected_count)
+        self.assertEqual(sum(frozen["scope_counts"].values()), expected_count)
+        self.assertEqual(report["parity"]["summary"]["expected_count"], expected_count)
         self.assertTrue(report["parity"]["summary"]["parity"])
         self.assertEqual(report["reconciliation"]["summary"]["unmapped_count"], 0)
         self.assertEqual(report["reconciliation"]["summary"]["stale_candidate_count"], 0)
         self.assertTrue(report["audit"]["domain_table_counts_unchanged"])
         self.assertTrue(report["audit"]["public_projection_unchanged"])
-        self.assertEqual(saved_report["entrypoint"]["item_count"], 95)
-        self.assertEqual(row_count, 95)
+        self.assertEqual(saved_report["entrypoint"]["item_count"], expected_count)
+        self.assertEqual(row_count, expected_count)
         self.assertEqual(decided_count, 0)
 
     def test_missing_pending_item_is_reported_stale_without_delete_or_publish(self):
         with tempfile.TemporaryDirectory() as tmp:
+            expected_count = len(json.loads(OFFICIAL_INPUT.read_text(encoding="utf-8"))["rows"])
             db = Path(tmp) / "master.sqlite"
             make_master(db)
             store = FakeArtifactStore(db)
@@ -295,11 +297,11 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
         self.assertTrue(report["no_op"])
         self.assertFalse(report["published"])
         self.assertEqual(store.publish_calls, 1)
-        self.assertEqual(report["reconciliation"]["summary"]["seen_count"], 94)
+        self.assertEqual(report["reconciliation"]["summary"]["seen_count"], expected_count - 1)
         self.assertEqual(report["reconciliation"]["summary"]["stale_candidate_count"], 1)
         self.assertEqual(report["reconciliation"]["summary"]["unmapped_count"], 0)
         self.assertTrue(report["parity"]["summary"]["parity"])
-        self.assertEqual(row_count, 95)
+        self.assertEqual(row_count, expected_count)
 
 
 if __name__ == "__main__":

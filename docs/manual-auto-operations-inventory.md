@@ -50,6 +50,7 @@ flowchart TD
 | 手動維持 | X candidate / social graph workflows | 継続して手動。X API課金とNotion同期が絡むため、定期自動化しない。実行時は確認文字列必須。方針は `docs/x-candidate-workflows-operations.md`。 |
 | 手動維持 | Local review console | `review_console_ops/run_review_console.py` で必要時だけ起動。`127.0.0.1` 専用。レビュー決定は `data/review_console/decisions.json` に保存し、ステージ適用も `data/review_console/staged/` まで。Master RDB/Notion/公開JSONは直接変更しない。方針は `docs/review-console-operations.md`。 |
 | 手動維持 | AWS / S3 / DynamoDB verify workflows | 継続して手動。検証系なので必要時に叩く。方針は `docs/manual-infra-workflows.md`。 |
+| 手動維持 | `archive_event_candidate_backlog.py` | DynamoDBイベント候補のレビュー済み低優先度行だけを条件付き更新でarchiveする手動復旧可能スクリプト。dry-run既定を維持し、実行時は `--apply --confirm "ARCHIVE REVIEWED EVENT CANDIDATE BACKLOG"` と復元planを必須にする。 |
 | 手動維持 | domain / WAF / contact-form configure workflows | 継続して手動。`apply=false` defaultを維持し、`apply=true` は確認文字列必須。方針は `docs/manual-infra-workflows.md`。 |
 | 手動維持 | Notion queue migration | legacy one-off。通常運用では実行しない。`apply=false` dry-runのみ軽く実行可能、`apply=true` は確認文字列必須。方針は `docs/notion-queue-migration-operations.md`。 |
 | 手動維持 | Master RDB -> Notion sync scripts | legacy write-back。通常運用では実行しない。dry-run/reportのみ通常可、Notion実更新は明示 `--apply` と確認文字列必須。方針は `docs/legacy-notion-writeback-operations.md`。 |

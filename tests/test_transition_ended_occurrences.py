@@ -4,7 +4,7 @@ from datetime import date
 from pathlib import Path
 
 from master_rdb.master_db import init_db, now_utc, stable_id
-from transition_ended_occurrences import apply_transitions, transition_candidates
+from transition_ended_occurrences import apply_transitions, main, transition_candidates
 
 
 class TransitionEndedOccurrencesTest(unittest.TestCase):
@@ -54,6 +54,12 @@ class TransitionEndedOccurrencesTest(unittest.TestCase):
     def test_empty_date_end_falls_back_to_date_start(self):
         occurrence_id = self.add_occurrence(name="終了日なし", state="confirmed", start="2026-07-30", end="")
         self.assertEqual([row["occurrence_id"] for row in self.candidates()], [occurrence_id])
+
+    def test_main_refuses_to_create_a_missing_database(self):
+        missing = Path(self.tmp.name) / "missing.sqlite"
+        with self.assertRaisesRegex(SystemExit, "Master DB is missing"):
+            main(["--db", str(missing), "--as-of-date", "2026-07-31"])
+        self.assertFalse(missing.exists())
 
 
 if __name__ == "__main__":
