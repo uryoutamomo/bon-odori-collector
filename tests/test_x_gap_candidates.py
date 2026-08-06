@@ -1,10 +1,15 @@
 import sqlite3
+import json
 
 from datetime import date
+from pathlib import Path
 from build_x_gap_candidates import build
 from review_inbox_adapters.source_adapter import adapt_source_payload
 from review_inbox_adapters.x_gap_adapter import XGapAdapter
 from review_inbox_adapters.build_change_requests_from_review_inbox import build_requests
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def make_db(path):
@@ -125,6 +130,90 @@ def test_date_range_conflicts_are_grouped_with_corroborating_sources(tmp_path):
     assert conflicts[0]['source_count']==14
     assert len(conflicts[0]['source_urls'])==14
     assert conflicts[0]['matched_occurrence']['occurrence_id']=='occ1'
+
+
+def test_multi_venue_listing_uses_only_dates_near_the_matched_event(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.execute("UPDATE event_series SET canonical_name='第7回 渋谷盆踊り' WHERE series_id='s1'")
+    conn.execute("UPDATE event_occurrences SET display_name='第7回 渋谷盆踊り', date_start='2026-08-08', date_end='2026-08-08' WHERE occurrence_id='occ1'")
+    conn.commit(); conn.close()
+    listing={'source':'x','tweet_id':'listing','date':'2026-08-01','text':(
+        '8/1 手賀沼花火大会 道の駅しょうなん\n'
+        '8/2 江戸川スポーツランド\n'
+        '8/8 第7回 渋谷盆踊り 渋谷109前\n'
+        '8/16 横浜市孝道山本仏殿 盆踊り'
+    )}
+    payload=build([listing],db,year=2026,today=date(2026,8,1))
+    assert payload['candidates']==[]
+
+
+def test_other_same_structured_venue_occurrence_explains_range_but_not_other_wards(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.execute("UPDATE event_series SET canonical_name='ゐの市盆踊り～不忍夢～', area='台東区' WHERE series_id='s1'")
+    conn.execute("UPDATE event_occurrences SET display_name='ゐの市盆踊り～不忍夢～', date_start='2026-08-07', date_end='2026-08-09' WHERE occurrence_id='occ1'")
+    conn.execute("INSERT INTO event_series VALUES ('s2','上野ゐの市盆踊り','台東区')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ2','s2',2026,'上野ゐの市盆踊り','v1','2026-08-07','2026-08-16','')")
+    conn.commit(); conn.close()
+    voice={'source':'x','tweet_id':'ueno','date':'2026-08-01',
+           'text':'ゐの市盆踊り～不忍夢～ 音頭公園 2026年8月7日〜8月16日 開催'}
+    assert build([voice],db,year=2026,today=date(2026,8,1))['candidates']==[]
+
+    conn=sqlite3.connect(db)
+    conn.execute("INSERT INTO venues VALUES ('v2','音頭公園','千代田区','東京都千代田区')")
+    conn.execute("UPDATE event_occurrences SET venue_id='v2' WHERE occurrence_id='occ2'")
+    conn.commit(); conn.close()
+    conflicts=[row for row in build([voice],db,year=2026,today=date(2026,8,1))['candidates']
+               if row['candidate_kind']=='date_range_conflict']
+    assert len(conflicts)==1
+
+
+def test_kanda_prefestival_range_conflict_survives_suppression_guards(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.execute("UPDATE event_series SET canonical_name='神田明神納涼祭り', area='千代田区' WHERE series_id='s1'")
+    conn.execute("UPDATE venues SET canonical_name='神田明神境内', area='千代田区', address='東京都千代田区' WHERE venue_id='v1'")
+    conn.execute("UPDATE event_occurrences SET display_name='神田明神納涼祭り', date_start='2026-08-07', date_end='2026-08-09' WHERE occurrence_id='occ1'")
+    conn.commit(); conn.close()
+    voice={'source':'x','tweet_id':'kanda','date':'2026-06-04',
+           'text':'神田明神納涼祭り 神田明神境内 8月7日〜9日。8月6日の夜には前夜祭も実施'}
+    conflicts=[row for row in build([voice],db,year=2026,today=date(2026,6,4))['candidates']
+               if row['candidate_kind']=='date_range_conflict']
+    assert len(conflicts)==1
+    assert conflicts[0]['observed_dates']==['2026-08-06','2026-08-07']
+
+
+def test_checked_in_2026_x_gap_sources_keep_only_kanda_date_range_conflict(tmp_path):
+    """Regression against the three live 2026 source rows that prompted the fix."""
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.execute("UPDATE event_series SET canonical_name='ゐの市盆踊り～不忍夢～', area='台東区' WHERE series_id='s1'")
+    conn.execute("UPDATE venues SET canonical_name='上野恩賜公園', area='台東区', address='東京都台東区' WHERE venue_id='v1'")
+    conn.execute("UPDATE event_occurrences SET display_name='ゐの市盆踊り～不忍夢～', date_start='2026-08-07', date_end='2026-08-09' WHERE occurrence_id='occ1'")
+    conn.executemany("INSERT INTO event_series VALUES (?,?,?)", [
+        ('s2','上野ゐの市盆踊り','台東区'),
+        ('s3','第7回 渋谷盆踊り','渋谷区'),
+        ('s4','神田明神納涼祭り','千代田区'),
+    ])
+    conn.executemany("INSERT INTO venues VALUES (?,?,?,?)", [
+        ('v2','渋谷109前','渋谷区','東京都渋谷区'),
+        ('v3','神田明神境内','千代田区','東京都千代田区'),
+    ])
+    conn.executemany("INSERT INTO event_occurrences VALUES (?,?,?,?,?,?,?,?)", [
+        ('occ2','s2',2026,'上野ゐの市盆踊り','v1','2026-08-07','2026-08-16',''),
+        ('occ3','s3',2026,'第7回 渋谷盆踊り','v2','2026-08-08','2026-08-08',''),
+        ('occ4','s4',2026,'神田明神納涼祭り','v3','2026-08-07','2026-08-09',''),
+    ])
+    conn.commit(); conn.close()
+    source_keys={'x:2083138983836672409','x:2082662969792688156','x:2062386225651269673'}
+    checked_in=json.loads((ROOT/'data'/'x_gap_candidates.json').read_text(encoding='utf-8'))
+    voices=[row['voice'] for row in checked_in['candidates'] if row['source_key'] in source_keys]
+    assert len(voices)==3
+    payload=build(voices,db,year=2026,today=date(2026,6,4))
+    conflicts=[row['matched_occurrence']['event_name'] for row in payload['candidates']
+               if row['candidate_kind']=='date_range_conflict']
+    assert conflicts==['神田明神納涼祭り']
 
 
 def test_past_event_reports_are_bounded_and_reject_same_named_outside_wards(tmp_path):
