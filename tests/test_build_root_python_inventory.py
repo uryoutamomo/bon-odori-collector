@@ -32,6 +32,12 @@ class BuildRootPythonInventoryTest(unittest.TestCase):
             self.by_path["build_song_catalog_shadow_report.py"]["classification"],
         )
 
+    def test_song_evidence_adapter_shadow_is_test_supported_manual(self):
+        self.assertEqual(
+            "test_supported_manual",
+            self.by_path["build_song_evidence_adapter_shadow.py"]["classification"],
+        )
+
     def test_all_root_files_have_a_safety_classification(self):
         candidates = [
             item
