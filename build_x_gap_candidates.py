@@ -57,6 +57,9 @@ TOKYO23_LANDMARK_RE = re.compile(
 )
 CALENDAR_DATE_RE = re.compile(r"(?:(20\d{2})[年/-])?(\d{1,2})月(\d{1,2})日?|(?:(20\d{2})[/-])?(\d{1,2})/(\d{1,2})(?!\d)")
 PAST_REPORT_RE = re.compile(r"行(?:ってきた|った|きました)|お伺い|伺(?:い|わせ)|お邪魔|参加(?:した|しました)|楽しかった|ありがとうございました|帰ってきた")
+DATE_LIST_LINE_RE = re.compile(
+    r"(?:^|\n)\s*(?:(?:20\d{2}[/-])?\d{1,2}[/-]\d{1,2}|(?:20\d{2}年)?\d{1,2}月\d{1,2}日?)"
+)
 # `北区` is shared by several cities.  These are deliberately concrete
 # positive clues, rather than treating a ward token alone as enough.
 TOKYO23_PAST_LANDMARK_RE = re.compile(r"板橋|上野|不忍|十条|王子|赤羽|船堀|葛西|芝公園|池上本門寺|浅草|亀戸|錦糸町|豊洲|月島|高円寺|阿佐ヶ谷|荻窪|巣鴨|北千住|綾瀬|新小岩|小岩")
@@ -76,7 +79,7 @@ def catalog(db: Path, year: int) -> list[dict[str, str]]:
         rows = conn.execute("""
           SELECT o.occurrence_id, o.display_name, o.date_start, o.date_end, o.detail,
                  e.canonical_name, e.area, v.canonical_name AS venue,
-                 v.area AS venue_area, v.address AS venue_address
+                 v.venue_id, v.area AS venue_area, v.address AS venue_address
           FROM event_occurrences o JOIN event_series e ON e.series_id=o.series_id
           LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.event_year=?
         """, (year,)).fetchall()
@@ -99,6 +102,7 @@ def catalog(db: Path, year: int) -> list[dict[str, str]]:
                        "venue":row["venue"] or "", "date_start":row["date_start"] or "",
                        "date_end":row["date_end"] or "",
                        "detail":row["detail"] or "", "area":row["area"] or "",
+                       "venue_id":row["venue_id"] or "",
                        "venue_area":row["venue_area"] or "",
                        "venue_address":row["venue_address"] or "",
                        "aliases":[n for n in names if n]})
@@ -265,6 +269,95 @@ def is_multi_venue_listing(text: str) -> bool:
     return len(VENUEISH_RE.findall(text)) >= 2
 
 
+def is_date_list_itinerary(text: str) -> bool:
+    """Detect a multi-stop itinerary without assuming venue-name vocabulary.
+
+    Vendor and performer schedules commonly put one dated stop per line, but
+    commercial venue names need not contain our park/shrine/school keywords.
+    Three dated lines is deliberately the minimum: a normal two-day event is
+    not treated as a listing.
+    """
+    return len(DATE_LIST_LINE_RE.findall(text)) >= 3
+
+
+def dates_near_matched_event(
+    text: str, names: list[str], *, year: int, today: date, distance: int = 120
+) -> list[date]:
+    """Return future dates close to the matched event label in a listing post.
+
+    A vendor's itinerary can mention one matched event alongside many unrelated
+    date/venue pairs.  This deliberately does *not* replace normal date
+    extraction: callers use it only for multi-venue text and fall back when
+    there is no nearby date, so an unusual but genuine announcement stays
+    reviewable.
+    """
+    name_spans = [
+        match.span()
+        for name in names
+        if name
+        for match in re.finditer(re.escape(name), text)
+    ]
+    if not name_spans:
+        return []
+    found: set[date] = set()
+    for match in FUTURE_DATE_RE.finditer(text):
+        groups = match.groups()
+        value_year = int(groups[0] or groups[3] or year)
+        month = int(groups[1] or groups[4])
+        day = int(groups[2] or groups[5])
+        try:
+            value = date(value_year, month, day)
+        except ValueError:
+            continue
+        if value.year != year or value < today:
+            continue
+        start, end = match.span()
+        if any(start <= name_end + distance and end >= name_start - distance for name_start, name_end in name_spans):
+            found.add(value)
+    return sorted(found)
+
+
+def local_area(row: dict[str, Any]) -> str:
+    """Use structured venue geography first; blank geography is not a match."""
+    value = str(row.get("venue_area") or row.get("area") or "").strip()
+    return normalize_text(value.replace("東京都", ""))
+
+
+def same_structured_venue(left: dict[str, Any], right: dict[str, Any]) -> bool:
+    """Match a venue only when its structured locality cannot contradict."""
+    left_area, right_area = local_area(left), local_area(right)
+    if not left_area or not right_area or left_area != right_area:
+        return False
+    left_id, right_id = str(left.get("venue_id") or ""), str(right.get("venue_id") or "")
+    if left_id and right_id:
+        return left_id == right_id
+    left_name = normalize_text(str(left.get("venue") or ""))
+    right_name = normalize_text(str(right.get("venue") or ""))
+    return bool(left_name and left_name == right_name)
+
+
+def range_is_explained_by_other_occurrence(
+    gap: dict[str, Any], gaps: list[dict[str, Any]], observed_dates: list[date]
+) -> bool:
+    """Whether another same-place occurrence fully accounts for this range."""
+    if not observed_dates:
+        return False
+    observed_start, observed_end = observed_dates[0], observed_dates[-1]
+    for other in gaps:
+        if other.get("occurrence_id") == gap.get("occurrence_id"):
+            continue
+        if not same_structured_venue(gap, other):
+            continue
+        try:
+            other_start = date.fromisoformat(str(other.get("date_start") or ""))
+            other_end = date.fromisoformat(str(other.get("date_end") or other.get("date_start") or ""))
+        except ValueError:
+            continue
+        if other_start <= observed_start and observed_end <= other_end:
+            return True
+    return False
+
+
 def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, today: date | None=None) -> dict[str, Any]:
     gaps=catalog(db, year)
     today=today or date.today()
@@ -318,11 +411,24 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
             elif official and not found and DATE_RE.search(text) and EVENTISH_RE.search(text) and VENUEISH_RE.search(text): kind="official_new_event"; priority=100
             elif found and observed_dates:
                 candidate_gap, candidate_names = found[0]
+                itinerary = is_date_list_itinerary(text)
+                if itinerary or is_multi_venue_listing(text):
+                    nearby_dates = dates_near_matched_event(
+                        text,
+                        candidate_names,
+                        year=year,
+                        today=today,
+                        distance=40 if itinerary else 120,
+                    )
+                    if nearby_dates:
+                        observed_dates = nearby_dates
                 start = candidate_gap.get("date_start") or ""
                 end = candidate_gap.get("date_end") or start
                 observed_start = observed_dates[0].isoformat()
                 observed_end = observed_dates[-1].isoformat()
                 if not start or observed_start < start or observed_end > end:
+                    if range_is_explained_by_other_occurrence(candidate_gap, gaps, observed_dates):
+                        continue
                     kind="date_range_conflict"; priority=250; gap,names=candidate_gap,candidate_names
                 else: continue
             elif (not found and not official and observed_dates and EVENTISH_RE.search(text)
