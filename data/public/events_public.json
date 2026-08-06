@@ -2265,10 +2265,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-08-03〜2026-08-05",
     "recurrence_label": "2026年開催終了",
@@ -2283,7 +2283,7 @@
       "2026-08-03",
       "2026-08-05"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大銀座盆踊り（ゆかたで銀ぶら）",

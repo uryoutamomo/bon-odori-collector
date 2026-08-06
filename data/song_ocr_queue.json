@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 55,
+  "count": 56,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -873,6 +873,21 @@
         "pic.x.com/WzZbuS3dOu"
       ],
       "text": "郵便受けに少し離れた地域の公園で行われる盆踊りのチラシが投函されていた。子どもで大賑わいになっているのを過去通りかかった際に見たことがある。\n盆踊りの曲目、令和の子どもたちのハートを掴むリストなのかどうかがわからない。 https://t.co/WzZbuS3dOu",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "44f04e0a70b4f0de",
+      "status": "needs_ocr",
+      "account": "@hippies21th",
+      "url": "https://x.com/hippies21th/status/2084980725301055796",
+      "tweet_id": "2084980725301055796",
+      "date": "2026-08-05T12:31:56+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HO9WU1ua0AACnpa.jpg",
+        "https://t.co/3T2wM9TEhJ",
+        "pic.x.com/3T2wM9TEhJ"
+      ],
+      "text": "【近日刊行 無償頒布】藤原武作品集\n音楽科教員として、また教頭・校長として愛媛県西条の音楽教育に生涯を捧げた藤原武の作品集。小学校・中学校の校歌、地区の盆踊りなど全18曲の楽譜と歌詞、曲目解説を収録。\nISBN978-4-9914023-5-7 C0073\n発行者：株式会社獅子道／発行所：TRASHBOOKS https://t.co/3T2wM9TEhJ",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
