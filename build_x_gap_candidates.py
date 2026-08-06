@@ -57,6 +57,9 @@ TOKYO23_LANDMARK_RE = re.compile(
 )
 CALENDAR_DATE_RE = re.compile(r"(?:(20\d{2})[年/-])?(\d{1,2})月(\d{1,2})日?|(?:(20\d{2})[/-])?(\d{1,2})/(\d{1,2})(?!\d)")
 PAST_REPORT_RE = re.compile(r"行(?:ってきた|った|きました)|お伺い|伺(?:い|わせ)|お邪魔|参加(?:した|しました)|楽しかった|ありがとうございました|帰ってきた")
+DATE_LIST_LINE_RE = re.compile(
+    r"(?:^|\n)\s*(?:(?:20\d{2}[/-])?\d{1,2}[/-]\d{1,2}|(?:20\d{2}年)?\d{1,2}月\d{1,2}日?)"
+)
 # `北区` is shared by several cities.  These are deliberately concrete
 # positive clues, rather than treating a ward token alone as enough.
 TOKYO23_PAST_LANDMARK_RE = re.compile(r"板橋|上野|不忍|十条|王子|赤羽|船堀|葛西|芝公園|池上本門寺|浅草|亀戸|錦糸町|豊洲|月島|高円寺|阿佐ヶ谷|荻窪|巣鴨|北千住|綾瀬|新小岩|小岩")
@@ -266,6 +269,17 @@ def is_multi_venue_listing(text: str) -> bool:
     return len(VENUEISH_RE.findall(text)) >= 2
 
 
+def is_date_list_itinerary(text: str) -> bool:
+    """Detect a multi-stop itinerary without assuming venue-name vocabulary.
+
+    Vendor and performer schedules commonly put one dated stop per line, but
+    commercial venue names need not contain our park/shrine/school keywords.
+    Three dated lines is deliberately the minimum: a normal two-day event is
+    not treated as a listing.
+    """
+    return len(DATE_LIST_LINE_RE.findall(text)) >= 3
+
+
 def dates_near_matched_event(
     text: str, names: list[str], *, year: int, today: date, distance: int = 120
 ) -> list[date]:
@@ -397,9 +411,14 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
             elif official and not found and DATE_RE.search(text) and EVENTISH_RE.search(text) and VENUEISH_RE.search(text): kind="official_new_event"; priority=100
             elif found and observed_dates:
                 candidate_gap, candidate_names = found[0]
-                if is_multi_venue_listing(text):
+                itinerary = is_date_list_itinerary(text)
+                if itinerary or is_multi_venue_listing(text):
                     nearby_dates = dates_near_matched_event(
-                        text, candidate_names, year=year, today=today
+                        text,
+                        candidate_names,
+                        year=year,
+                        today=today,
+                        distance=40 if itinerary else 120,
                     )
                     if nearby_dates:
                         observed_dates = nearby_dates

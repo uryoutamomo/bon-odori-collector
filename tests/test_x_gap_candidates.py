@@ -205,6 +205,9 @@ def test_checked_in_2026_x_gap_sources_keep_only_kanda_date_range_conflict(tmp_p
         ('occ3','s3',2026,'第7回 渋谷盆踊り','v2','2026-08-08','2026-08-08',''),
         ('occ4','s4',2026,'神田明神納涼祭り','v3','2026-08-07','2026-08-09',''),
     ])
+    # Production has this alias, and the real itinerary says
+    # ``渋谷盆踊り2026`` rather than the display name with the ordinal.
+    conn.execute("INSERT INTO event_series_aliases VALUES ('s3','渋谷盆踊り')")
     conn.commit(); conn.close()
     source_keys={'x:2083138983836672409','x:2082662969792688156','x:2062386225651269673'}
     checked_in=json.loads((ROOT/'data'/'x_gap_candidates.json').read_text(encoding='utf-8'))
