@@ -351,18 +351,38 @@ def confirm_occurrence_schedule_venue(
         if date_start is not None:
             changed_fields.append("date_start")
             effective_date_end = date_end or date_start
-            # A confirmed date is the current-year schedule cache, not a
-            # history table.  Replacing a previously confirmed range must
-            # therefore remove that stale cache row before adding the new
-            # stable-id row; otherwise audit_master_rdb correctly reports a
-            # date_cache_mismatch.  Historical references intentionally use a
-            # different date_type and are left untouched.
-            if date_status == "confirmed":
-                conn.execute(
-                    "DELETE FROM occurrence_dates WHERE occurrence_id = ? AND date_type = 'confirmed'",
-                    (occurrence_id,),
-                )
-            date_id = stable_id("date", occurrence_id, date_start, effective_date_end)
+            # confirmed/ended are two lifecycle states of the one current-year
+            # schedule cache. Reuse an exact legacy row so an ended transition
+            # does not duplicate it, and remove only stale current-year rows.
+            # Historical references intentionally use another date_type and
+            # must survive schedule corrections.
+            existing_date = conn.execute(
+                """
+                SELECT occurrence_date_id
+                FROM occurrence_dates
+                WHERE occurrence_id = ?
+                  AND date_start = ?
+                  AND date_end = ?
+                  AND date_type IN ('confirmed', 'ended')
+                ORDER BY occurrence_date_id
+                LIMIT 1
+                """,
+                (occurrence_id, date_start, effective_date_end),
+            ).fetchone()
+            date_id = (
+                existing_date[0]
+                if existing_date
+                else stable_id("date", occurrence_id, date_start, effective_date_end)
+            )
+            conn.execute(
+                """
+                DELETE FROM occurrence_dates
+                WHERE occurrence_id = ?
+                  AND date_type IN ('confirmed', 'ended')
+                  AND occurrence_date_id <> ?
+                """,
+                (occurrence_id, date_id),
+            )
             conn.execute(
                 """
                 INSERT INTO occurrence_dates (

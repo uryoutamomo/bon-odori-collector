@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 from event_model.event_state_axes import update_occurrence_state_axes
-from master_rdb.master_db import now_utc
+from master_rdb.master_db import connect_existing, now_utc
 
 
 DEFAULT_DB = Path("data/bon_odori_master.sqlite")
@@ -85,14 +85,11 @@ def main(argv=None):
     if args.apply and args.confirm != APPLY_CONFIRMATION:
         raise SystemExit(f"--apply requires --confirm {APPLY_CONFIRMATION!r}")
 
-    conn = sqlite3.connect(args.db)
-    conn.row_factory = sqlite3.Row
-    try:
+    with connect_existing(args.db) as conn:
+        conn.row_factory = sqlite3.Row
         report = build_report(conn, args.as_of_date, apply=args.apply)
         if args.apply:
             conn.commit()
-    finally:
-        conn.close()
 
     payload = json.dumps(report, ensure_ascii=False, indent=2)
     if args.report_out:

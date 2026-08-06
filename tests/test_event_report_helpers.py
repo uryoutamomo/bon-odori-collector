@@ -162,6 +162,50 @@ class EventReportHelpersTest(unittest.TestCase):
             ("2025-08-09", "2025-08-11", "historical_reference"),
         ])
 
+    def test_ended_schedule_correction_replaces_only_current_year_cache(self):
+        confirm_occurrence_schedule_venue(
+            self.conn,
+            self.occurrence_id,
+            date_start="2026-07-01",
+            date_end="2026-07-02",
+            date_status="ended",
+            source_kind="official_current_year",
+            as_of_date="2026-08-01",
+        )
+        historical_id = master_db.stable_id(
+            "date", self.occurrence_id, "2025-07-01", "2025-07-02", "historical_reference"
+        )
+        self.conn.execute(
+            """INSERT INTO occurrence_dates(
+                occurrence_date_id, occurrence_id, date_start, date_end, date_type,
+                confidence, basis, created_at
+            ) VALUES (?, ?, '2025-07-01', '2025-07-02', 'historical_reference', 'medium', '', ?)""",
+            (historical_id, self.occurrence_id, master_db.now_utc()),
+        )
+
+        confirm_occurrence_schedule_venue(
+            self.conn,
+            self.occurrence_id,
+            date_start="2026-07-03",
+            date_end="2026-07-04",
+            date_status="ended",
+            source_kind="official_current_year",
+            as_of_date="2026-08-01",
+        )
+
+        rows = self.conn.execute(
+            """SELECT date_start, date_end, date_type FROM occurrence_dates
+               WHERE occurrence_id = ? ORDER BY date_type, date_start""",
+            (self.occurrence_id,),
+        ).fetchall()
+        self.assertEqual(
+            [tuple(row) for row in rows],
+            [
+                ("2026-07-03", "2026-07-04", "ended"),
+                ("2025-07-01", "2025-07-02", "historical_reference"),
+            ],
+        )
+
     def test_confirm_occurrence_schedule_venue_uses_existing_date_for_venue_only_update(self):
         self.conn.execute(
             "UPDATE event_occurrences SET date_start='2026-07-13', date_end='2026-07-15' WHERE occurrence_id=?", (self.occurrence_id,)
