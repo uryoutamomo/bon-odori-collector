@@ -11,13 +11,13 @@ def make_db(path):
     conn=sqlite3.connect(path)
     conn.executescript('''
       CREATE TABLE event_series(series_id TEXT, canonical_name TEXT, area TEXT);
-      CREATE TABLE venues(venue_id TEXT, canonical_name TEXT);
-      CREATE TABLE event_occurrences(occurrence_id TEXT, series_id TEXT, event_year INTEGER, display_name TEXT, venue_id TEXT, date_start TEXT, date_end TEXT);
+      CREATE TABLE venues(venue_id TEXT, canonical_name TEXT, area TEXT, address TEXT);
+      CREATE TABLE event_occurrences(occurrence_id TEXT, series_id TEXT, event_year INTEGER, display_name TEXT, venue_id TEXT, date_start TEXT, date_end TEXT, detail TEXT);
       CREATE TABLE event_series_aliases(series_id TEXT, alias TEXT);
     ''')
     conn.execute("INSERT INTO event_series VALUES ('s1','盆助祭','江東区')")
-    conn.execute("INSERT INTO venues VALUES ('v1','音頭公園')")
-    conn.execute("INSERT INTO event_occurrences VALUES ('occ1','s1',2026,'盆助祭','v1','','')")
+    conn.execute("INSERT INTO venues VALUES ('v1','音頭公園','江東区','東京都江東区')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ1','s1',2026,'盆助祭','v1','','','')")
     conn.execute("INSERT INTO event_series_aliases VALUES ('s1','Bonsuke Bon')")
     conn.commit(); conn.close()
 
@@ -55,7 +55,7 @@ def test_generic_event_name_and_conditional_cancellation_do_not_consume_queue(tm
     # unrelated post merely because both contain "盆踊り大会".
     conn=sqlite3.connect(db)
     conn.execute("INSERT INTO event_series VALUES ('s2','盆踊り大会','江東区')")
-    conn.execute("INSERT INTO event_occurrences VALUES ('occ_2','s2',2026,'盆踊り大会','v1','','')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ_2','s2',2026,'盆踊り大会','v1','','','')")
     conn.commit();conn.close()
     voices=[{"source":"x","tweet_id":"1","date":"2026-07-20","text":"巣鴨盆踊り大会。雨天決行、順延はございません。"}]
     assert build(voices,db,year=2026)['candidates']==[]
@@ -151,3 +151,26 @@ def test_multi_venue_past_report_is_archived_for_manual_expansion(tmp_path):
     payload=build([voice],db,year=2026,today=date(2026,8,4))
     assert payload['candidates']==[]
     assert payload['archived_candidates'][0]['archive_reason']=='multiple_venues_requires_manual_expansion'
+
+
+def test_matched_master_venues_outside_tokyo_23_are_rejected(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.executemany("INSERT INTO event_series VALUES (?,?,?)",[
+        ('s2','十九観音盆踊り＆夜の苅田えきらく大市',''),
+        ('s3','札幌中島公園大盆踊り大会',''),
+    ])
+    conn.executemany("INSERT INTO venues VALUES (?,?,?,?)",[
+        ('v2','JR苅田駅前広場','福岡県京都郡苅田町','福岡県京都郡苅田町'),
+        ('v3','中島公園','札幌市中央区','北海道札幌市中央区'),
+    ])
+    conn.executemany("INSERT INTO event_occurrences VALUES (?,?,?,?,?,?,?,?)",[
+        ('occ2','s2',2026,'十九観音盆踊り＆夜の苅田えきらく大市','v2','','',''),
+        ('occ3','s3',2026,'札幌中島公園大盆踊り大会','v3','','',''),
+    ])
+    conn.commit();conn.close()
+    voices=[
+        {'source':'x','tweet_id':'kanda','date':'2026-08-01','text':'十九観音盆踊り＆夜の苅田えきらく大市 8月19日'},
+        {'source':'x','tweet_id':'sapporo','date':'2026-08-01','text':'札幌中島公園大盆踊り大会 8月13日～15日'},
+    ]
+    assert build(voices,db,year=2026,today=date(2026,8,1))['candidates']==[]

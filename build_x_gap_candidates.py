@@ -19,7 +19,12 @@ from typing import Any
 
 from master_rdb.master_db import MASTER_DB, normalize_text
 from collection_support.x_source_officiality import assess_source_officiality
-from collection_support.tokyo23_scope import TOKYO_23_RE, is_outside_tokyo_23_scope
+from collection_support.tokyo23_scope import (
+    NON_TOKYO_PREF_RE,
+    TOKYO_23_RE,
+    TOKYO_23_WARDS,
+    is_outside_tokyo_23_scope,
+)
 
 DATA = Path("data")
 VOICES = DATA / "voices.json"
@@ -69,8 +74,9 @@ def catalog(db: Path, year: int) -> list[dict[str, str]]:
     with sqlite3.connect(uri, uri=True) as conn:
         conn.row_factory = sqlite3.Row
         rows = conn.execute("""
-          SELECT o.occurrence_id, o.display_name, o.date_start, o.date_end, e.canonical_name, e.area,
-                 v.canonical_name AS venue
+          SELECT o.occurrence_id, o.display_name, o.date_start, o.date_end, o.detail,
+                 e.canonical_name, e.area, v.canonical_name AS venue,
+                 v.area AS venue_area, v.address AS venue_address
           FROM event_occurrences o JOIN event_series e ON e.series_id=o.series_id
           LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.event_year=?
         """, (year,)).fetchall()
@@ -92,7 +98,10 @@ def catalog(db: Path, year: int) -> list[dict[str, str]]:
         result.append({"occurrence_id":row["occurrence_id"], "event_name":row["display_name"],
                        "venue":row["venue"] or "", "date_start":row["date_start"] or "",
                        "date_end":row["date_end"] or "",
-                       "area":row["area"] or "", "aliases":[n for n in names if n]})
+                       "detail":row["detail"] or "", "area":row["area"] or "",
+                       "venue_area":row["venue_area"] or "",
+                       "venue_address":row["venue_address"] or "",
+                       "aliases":[n for n in names if n]})
     return result
 
 
@@ -120,6 +129,44 @@ def discriminative_alias(name: str) -> bool:
 
 def actual_schedule_change(text: str) -> bool:
     return bool(CHANGE_RE.search(text) and not NON_CHANGE_RE.search(text) and ACTUAL_CHANGE_RE.search(text))
+
+
+def master_occurrence_is_in_scope(row: dict[str, Any]) -> bool:
+    """Fail closed when explicit master venue metadata is outside Tokyo 23.
+
+    A bare ward suffix is not enough: ``札幌市中央区`` must not be treated as
+    Tokyo's ``中央区``.  Venue metadata takes precedence over a stale or empty
+    series area because it identifies the actual matched occurrence location.
+    """
+    series_area = str(row.get("area") or "").strip()
+    venue_area = str(row.get("venue_area") or "").strip()
+    venue_address = str(row.get("venue_address") or "").strip()
+
+    if NON_TOKYO_PREF_RE.search(f"{venue_area} {venue_address}"):
+        return False
+
+    exact_ward = series_area in TOKYO_23_WARDS or venue_area in TOKYO_23_WARDS
+    tokyo_address = "東京都" in venue_address and bool(TOKYO_23_RE.search(venue_address))
+    tokyo_venue_area = "東京都" in venue_area and bool(TOKYO_23_RE.search(venue_area))
+
+    # An explicit venue area such as 札幌市中央区 or 京都郡苅田町 is outside
+    # unless it is an exact Tokyo ward (or explicitly prefixed with 東京都).
+    if venue_area and not (venue_area in TOKYO_23_WARDS or tokyo_venue_area):
+        return False
+    if venue_address and is_outside_tokyo_23_scope(venue_address) and not tokyo_address:
+        return False
+    if exact_ward or tokyo_address or tokyo_venue_area:
+        return True
+
+    # Preserve legacy rows with no structured venue geography unless their
+    # existing series/name/venue text carries a concrete outside-scope signal.
+    return not is_outside_tokyo_23_scope(
+        series_area,
+        row.get("event_name"),
+        row.get("venue"),
+    ) and not EXTRA_OUTSIDE_SCOPE_RE.search(
+        f"{series_area} {row.get('event_name', '')} {row.get('venue', '')}"
+    )
 
 
 def source_key(voice: dict[str, Any]) -> str:
@@ -245,7 +292,7 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
         found=list(all_found)
         kind=""; priority=0; gap=None; names=[]
         # A matched master row can itself reveal a non-23-ward legacy entry.
-        found=[(g,n) for g,n in found if not is_outside_tokyo_23_scope(g.get("area"),g.get("venue")) and not EXTRA_OUTSIDE_SCOPE_RE.search(f"{g.get('area','')} {g.get('venue','')}")]
+        found=[(g,n) for g,n in found if master_occurrence_is_in_scope(g)]
         # Never surface a cancellation/update for an occurrence already in
         # the past.  Its evidence remains in the corpus but cannot correct a
         # current public schedule.
@@ -287,7 +334,10 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
         candidates.append({"candidate_id":"xgap_"+hashlib.sha1(key.encode()).hexdigest()[:16], "source_key":key,
           "lane_hint":"lane1" if official and kind in {"missing_date","schedule_change"} else "lane2",
           "candidate_kind":kind, "priority_score":priority + (20 if official else 0), "event_year":year,
-          "matched_occurrence": ({"occurrence_id":gap["occurrence_id"],"event_name":gap["event_name"],"venue":gap["venue"],"matched_aliases":names} if gap else None),
+          "matched_occurrence": ({"occurrence_id":gap["occurrence_id"],"event_name":gap["event_name"],"venue":gap["venue"],
+                                  "area":gap["area"],"venue_area":gap["venue_area"],"venue_address":gap["venue_address"],
+                                  "date_start":gap["date_start"],"date_end":gap["date_end"],"detail":gap["detail"],
+                                  "matched_aliases":names} if gap else None),
           "source_url":voice.get("url") or "", "source_text":text[:500], "source_author":voice.get("account") or voice.get("author") or "",
           "source_officiality":officiality, "date_hints":DATE_RE.findall(text),
           "observed_dates":([value.isoformat() for value in report_dates] if kind == "past_event_report" else [value.isoformat() for value in observed_dates]),
