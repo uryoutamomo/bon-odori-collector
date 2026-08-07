@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-05T21:07:34.139951+00:00",
+  "generated_at": "2026-08-07T00:53:04.760393+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 579,
+    "candidate_count": 580,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 348
+      "weak": 349
     },
     "strong_count": 183,
     "review_count": 48
@@ -28717,6 +28717,28 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:dfc7318f89a3808b",
+      "target_year": 2024,
+      "event_name": "堤方東町会「盆踊り大会」",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "DQWd98ThVC0",
+      "video_url": "https://www.youtube.com/watch?v=DQWd98ThVC0",
+      "title": "㊗️100万再生!!制服が可愛すぎる小学校TOP18 #制服 #可愛い #小学校 #ランキング",
+      "channel_id": "UCA3F-FW88QNJvzEmhbIogYA",
+      "channel_title": "御体リョウ, Ryo Okarada",
+      "published_at": "2025-06-13T12:00:20Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/DQWd98ThVC0/maxresdefault.jpg",
+      "query": "堤方東町会「盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:595b91e72f1262b1",
       "target_year": 2024,
       "event_name": "成城学園 盆踊り大会",
@@ -28956,5 +28978,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-05T21:07:33.721130+00:00"
+  "merged_from": "2026-08-07T00:53:04.279191+00:00"
 }
