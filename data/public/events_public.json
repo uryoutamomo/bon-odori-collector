@@ -6224,6 +6224,72 @@
     "display_tier": "ended"
   },
   {
+    "name": "大京町商店会納涼おどり大会",
+    "name_confirmed": true,
+    "venue": "大京公園",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都新宿区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-08-22・2026-08-23・18:00〜21:00・会場「大京公園」・主催「大京町商店会」として掲載されている（ ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "新宿二丁目太宗寺盆踊り大会",
     "name_confirmed": true,
     "venue": "太宗寺",
@@ -6584,6 +6650,68 @@
     "display_tier": "ended"
   },
   {
+    "name": "杉大門通り盆踊り大会",
+    "name_confirmed": true,
+    "venue": "杉大門通り",
+    "area": "新宿区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都新宿区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-13",
+    "date_end": "2026-09-13",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        13
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-09-13・17:00〜20:00・会場「杉大門通り」・主催「杉大門通り商店街振興組合」として掲載されている（ ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-13",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-13",
+      "2026-09-13"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "歌舞伎町BON ODORI",
     "name_confirmed": true,
     "venue": "歌舞伎町シネシティ広場",
@@ -6837,6 +6965,72 @@
     "historical_reference_score": 0.6
   },
   {
+    "name": "花園町会納涼踊り大会",
+    "name_confirmed": true,
+    "venue": "花園小学校",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都新宿区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-27",
+    "date_end": "2026-08-28",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        27
+      ],
+      [
+        8,
+        28
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-08-27・2026-08-28・18:00〜20:00・会場「花園小学校」・主催「花園町町会」として掲載されている（ ）。 会場は花園小学校と花園公園の2か所として案内されている。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-27〜2026-08-28",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-27",
+      "2026-08-28"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "花園神社 盆踊り",
     "name_confirmed": true,
     "venue": "花園神社",
@@ -7021,6 +7215,72 @@
       "2026-08-02"
     ],
     "display_tier": "ended"
+  },
+  {
+    "name": "踊ろう！in荒木町の秋",
+    "name_confirmed": true,
+    "venue": "荒木公園",
+    "area": "新宿区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都新宿区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-10",
+    "date_end": "2026-10-11",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "jun": {
+      "10": "中旬"
+    },
+    "description": null,
+    "detail": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-10-10・2026-10-11・17:00〜20:30・会場「荒木公園」・主催「荒木町青年会」として掲載されている（ ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-10〜2026-10-11",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-10",
+      "2026-10-11"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
@@ -28844,6 +29104,911 @@
     "display_tier": "ended"
   },
   {
+    "name": "五仲自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "くじら児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「くじら児童遊園」・実施団体「五仲自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「五仲自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "ハイラーク船堀自治会秋まつり",
+    "name_confirmed": true,
+    "venue": "しらさぎ児童遊園",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-11",
+    "date_end": "2026-10-11",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        11
+      ]
+    ],
+    "jun": {
+      "10": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-10-11・会場「しらさぎ児童遊園」・実施団体「ハイラーク船堀自治会」として掲載されている（ ）。 【名称について】区公式一覧では「秋まつり」とだけ記載。実施団体「ハイラーク船堀自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-11",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-11",
+      "2026-10-11"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "なぎさ納涼祭",
+    "name_confirmed": true,
+    "venue": "なぎさニュータウン内中央広場",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-15",
+    "date_end": "2026-08-16",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        15
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "jun": {
+      "8": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-15〜2026-08-16・会場「なぎさニュータウン内中央広場」・実施団体「なぎさニュータウン自治会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-15",
+      "2026-08-16"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "LP26まつり",
+    "name_confirmed": true,
+    "venue": "ライオンズプラザ西葛西マンション内公園",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-03",
+    "date_end": "2026-10-03",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        3
+      ]
+    ],
+    "jun": {
+      "10": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-10-03・会場「ライオンズプラザ西葛西マンション内公園」・実施団体「ライオンズプラザ西葛西自治会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [
+      {
+        "name": "ライオン",
+        "confidence": "hint"
+      }
+    ],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-03",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-03",
+      "2026-10-03"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "D館夏まつり",
+    "name_confirmed": true,
+    "venue": "リバーウエストD館 駐車スペース",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-23",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-08-23・会場「D館駐車スペース」・実施団体「リバーウエストD館自治会」として掲載されている（ ）。 【名称について】会場は区公式一覧では「D館駐車スペース」とだけ書かれており、実施団体「リバーウエストD館自治会」から場所を補って表記した。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-23",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "上小岩六東自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "上小岩天祖神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「上小岩天祖神社」・実施団体「上小岩六東自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「上小岩六東自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "宿和会納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "下鎌田東小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-08-22・会場「下鎌田東小学校」・実施団体「下鎌田町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "仲町町会納涼盆踊り",
+    "name_confirmed": true,
+    "venue": "中割天祖神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-14",
+    "date_end": "2026-08-15",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        14
+      ],
+      [
+        8,
+        15
+      ]
+    ],
+    "jun": {
+      "8": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-14〜2026-08-15・会場「中割天祖神社」・実施団体「仲町町会」として掲載されている（ ）。 【名称について】区公式一覧では「納涼盆踊り」とだけ記載。実施団体「仲町町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-14〜2026-08-15",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-14",
+      "2026-08-15"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "一南自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "中曽根天祖神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「中曽根天祖神社」・実施団体「一南自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「一南自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "今井町会納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "八雲神社前広場",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-08-29・会場「八雲神社前広場」・実施団体「今井町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-29"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "公社東葛西第一住宅自治会住宅祭",
+    "name_confirmed": true,
+    "venue": "公社東葛西第一住宅団地内公園",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-04",
+    "date_end": "2026-10-04",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        4
+      ]
+    ],
+    "jun": {
+      "10": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-10-04・会場「公社東葛西第一住宅団地内公園」・実施団体「公社東葛西第一住宅自治会」として掲載されている（ ）。 【名称について】区公式一覧では「住宅祭」とだけ記載。実施団体「公社東葛西第一住宅自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-04",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-04",
+      "2026-10-04"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "北小岩五丁目自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "北小岩五丁目天祖神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「北小岩五丁目天祖神社」・実施団体「北小岩五丁目自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「北小岩五丁目自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "六中自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "北小岩小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「北小岩小学校」・実施団体「六中自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「六中自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "北篠崎二丁目自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "北篠崎二丁目公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-21〜2026-08-22・会場「北篠崎二丁目公園」・実施団体「北篠崎二丁目自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「北篠崎二丁目自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。 会場を江戸川区公式一覧の「北篠崎二丁目公園」へ照合補正。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "倉雀会(くらすずめかい)",
     "name_confirmed": true,
     "venue": "北葛西コミュニティ会館",
@@ -28905,6 +30070,2682 @@
     "display_tier": "ended"
   },
   {
+    "name": "南小岩司町会盆踊り",
+    "name_confirmed": true,
+    "venue": "南小岩三丁目第二児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「南小岩三丁目第二児童遊園」・実施団体「南小岩司町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「南小岩司町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "扇子田自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "南小岩会館",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-15",
+    "date_end": "2026-08-16",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        15
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "jun": {
+      "8": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-15〜2026-08-16・会場「南小岩会館」・実施団体「扇子田自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「扇子田自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-15",
+      "2026-08-16"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "南小岩神明町会盆踊り",
+    "name_confirmed": true,
+    "venue": "南小岩六丁目児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-30",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ],
+      [
+        8,
+        30
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-29〜2026-08-30・会場「南小岩六丁目児童遊園」・実施団体「南小岩神明町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「南小岩神明町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-30"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "小岩駅前町会盆踊り",
+    "name_confirmed": true,
+    "venue": "南小岩六丁目児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-30",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ],
+      [
+        8,
+        30
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-29〜2026-08-30・会場「南小岩六丁目児童遊園」・実施団体「小岩駅前町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「小岩駅前町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-30"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "河原田町会盆踊り",
+    "name_confirmed": true,
+    "venue": "南小岩第二小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「南小岩第二小学校」・実施団体「河原田町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「河原田町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "南篠崎天祖神社例大祭",
+    "name_confirmed": true,
+    "venue": "南篠崎天祖神社",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-24",
+    "date_end": "2026-10-25",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        24
+      ],
+      [
+        10,
+        25
+      ]
+    ],
+    "jun": {
+      "10": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-10-24〜2026-10-25・会場「南篠崎天祖神社」・実施団体「南篠崎町会他」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-24〜2026-10-25",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-24",
+      "2026-10-25"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "南葛西町会納涼夏祭り",
+    "name_confirmed": true,
+    "venue": "南葛西小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「南葛西小学校」・実施団体「南葛西町会」として掲載されている（ ）。 【名称について】区公式一覧では「納涼夏祭り」とだけ記載。実施団体「南葛西町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "小松川四丁目親交会ふるさと小松川夏祭り",
+    "name_confirmed": true,
+    "venue": "善通寺駐車場",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-12",
+    "date_end": "2026-09-12",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        12
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-09-12・会場「善通寺駐車場」・実施団体「小松川四丁目親交会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-12",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-12",
+      "2026-09-12"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "巽親和会盆踊り",
+    "name_confirmed": true,
+    "venue": "善養寺",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「善養寺」・実施団体「巽親和会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「巽親和会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "四南自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "四南公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「四南公園」・実施団体「四南自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「四南自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "小岩田自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "小岩田天祖神社",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-03",
+    "date_end": "2026-10-04",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        3
+      ],
+      [
+        10,
+        4
+      ]
+    ],
+    "jun": {
+      "10": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-10-03〜2026-10-04・会場「小岩田天祖神社」・実施団体「小岩田自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「小岩田自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-03〜2026-10-04",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-03",
+      "2026-10-04"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "平井一丁目南親会夏祭り",
+    "name_confirmed": true,
+    "venue": "平井一丁目児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-08-22・会場「平井一丁目児童遊園」・実施団体「平井一丁目南親会」として掲載されている（ ）。 【名称について】区公式一覧では「夏祭り」とだけ記載。実施団体「平井一丁目南親会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "平井6丁目23号棟自治会納涼大会",
+    "name_confirmed": true,
+    "venue": "平井六丁目23号棟 団地敷地内",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-08-22・会場「団地敷地内」・実施団体「平井6丁目23号棟自治会」として掲載されている（ ）。 【名称について】区公式一覧では「納涼大会」とだけ記載。実施団体「平井6丁目23号棟自治会」を冠して区別できる名前にした。 会場は区公式一覧では「団地敷地内」とだけ書かれており、実施団体「平井6丁目23号棟自治会」から場所を補って表記した。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "平井六丁目東町会納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "平井小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-08-07〜2026-08-08・会場「平井小学校」・実施団体「平井六丁目東町会」として掲載されている（ ）。 【名称について】区公式一覧では「納涼盆踊り大会」とだけ記載。実施団体「平井六丁目東町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "平井西町会納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "平井西小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-08-21〜2026-08-22・会場「平井西小学校」・実施団体「地縁法人平井西町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "椿ふるさとまつり",
+    "name_confirmed": true,
+    "venue": "弥生公園",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-26",
+    "date_end": "2026-09-27",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        26
+      ],
+      [
+        9,
+        27
+      ]
+    ],
+    "jun": {
+      "9": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-09-26〜2026-09-27・会場「弥生公園」・実施団体「椿親和会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-26〜2026-09-27",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-26",
+      "2026-09-27"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "船堀七丁目町会盆踊り大会",
+    "name_confirmed": true,
+    "venue": "新川さくら館広場",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-07〜2026-08-08・会場「新川さくら館広場」・実施団体「船堀七丁目町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り大会」とだけ記載。実施団体「船堀七丁目町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "新田町会盆踊り大会",
+    "name_confirmed": true,
+    "venue": "新田公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-08・会場「新田公園」・実施団体「新田町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り大会」とだけ記載。実施団体「新田町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "まつりだワッショイ小松川",
+    "name_confirmed": true,
+    "venue": "東大島駅前大島小松川公園季節の広場",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-19",
+    "date_end": "2026-09-20",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        19
+      ],
+      [
+        9,
+        20
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小松川地区 盆踊り日程一覧（令和8年度）に、2026-09-19〜2026-09-20・会場「東大島駅前大島小松川公園季節の広場」・実施団体「まつりだワッショイ小松川実行委員会」として掲載されている（ ）。 【名称について】区公式一覧の表記は「まつりだワッショイ小松川2026」。シリーズ名に年号を入れない方針に合わせて年号を外した。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [
+      {
+        "name": "東大島駅前大島小松川公園季節",
+        "confidence": "hint"
+      }
+    ],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-19〜2026-09-20",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-19",
+      "2026-09-20"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "江戸川北東自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "東小岩天祖神社",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-12",
+    "date_end": "2026-09-13",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        12
+      ],
+      [
+        9,
+        13
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-09-12〜2026-09-13・会場「東小岩天祖神社」・実施団体「江戸川北東自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「江戸川北東自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-12〜2026-09-13",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-12",
+      "2026-09-13"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "小岩二東町会盆踊り",
+    "name_confirmed": true,
+    "venue": "東小岩小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「東小岩小学校」・実施団体「小岩二東町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「小岩二東町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "東小岩中央自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "東小岩滝児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「東小岩滝児童遊園」・実施団体「東小岩中央自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「東小岩中央自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "雷町会夏まつり",
+    "name_confirmed": true,
+    "venue": "東葛西さくら公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「東葛西さくら公園」・実施団体「雷町会」として掲載されている（ ）。 【名称について】区公式一覧では「夏まつり」とだけ記載。実施団体「雷町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。 会場を江戸川区公式一覧の「東葛西さくら公園」へ照合補正。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [
+      {
+        "name": "さくら",
+        "confidence": "hint"
+      }
+    ],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "松本町会盆踊り",
+    "name_confirmed": true,
+    "venue": "松本天祖神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「松本天祖神社」・実施団体「松本町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「松本町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "西小岩六西自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "江戸川区立福祉作業所",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-21〜2026-08-22・会場「江戸川区立福祉作業所」・実施団体「西小岩六西自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「西小岩六西自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "片山自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "片山公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「片山公園」・実施団体「片山自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「片山自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "椿フェスティバル",
+    "name_confirmed": true,
+    "venue": "瑞江葬儀所裏こどもの広場",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-04",
+    "date_end": "2026-10-04",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        4
+      ]
+    ],
+    "jun": {
+      "10": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-10-04・会場「瑞江葬儀所裏こどもの広場」・実施団体「椿町会」として掲載されている（ ）。 【名称について】区公式一覧では「（仮称）椿フェスティバル」と仮称表記。名称は確定していない可能性がある。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-04",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-04",
+      "2026-10-04"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "椿祭り",
+    "name_confirmed": true,
+    "venue": "第二椿児童遊園",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-12",
+    "date_end": "2026-09-12",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        12
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-09-12・会場「第二椿児童遊園」・実施団体「椿住宅自治会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-12",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-12",
+      "2026-09-12"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "篠崎本郷町会盆踊り",
+    "name_confirmed": true,
+    "venue": "篠崎二丁目公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-07〜2026-08-08・会場「篠崎二丁目公園」・実施団体「篠崎本郷町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「篠崎本郷町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "下篠崎町会盆踊り大会",
+    "name_confirmed": true,
+    "venue": "篠崎六丁目第二広場",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-09",
+    "date_end": "2026-08-10",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-08-09〜2026-08-10・会場「篠崎六丁目第二広場」・実施団体「下篠崎町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-09〜2026-08-10",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-09",
+      "2026-08-10"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "篠崎七丁目町会盆踊り",
+    "name_confirmed": true,
+    "venue": "篠崎第四小学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-28",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        28
+      ],
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-28〜2026-08-29・会場「篠崎第四小学校」・実施団体「篠崎七丁目町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「篠崎七丁目町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-28",
+      "2026-08-29"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "興宮自治会盆踊り",
+    "name_confirmed": true,
+    "venue": "興宮神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-22〜2026-08-23・会場「興宮神社」・実施団体「興宮自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「興宮自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "船堀三丁目町会盆踊り大会",
+    "name_confirmed": true,
+    "venue": "船堀三丁目公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「船堀三丁目公園」・実施団体「船堀三丁目町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り大会」とだけ記載。実施団体「船堀三丁目町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "自治会コミニティー5秋まつり",
+    "name_confirmed": true,
+    "venue": "葛西東公園",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-20",
+    "date_end": "2026-09-20",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        20
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-09-20・会場「葛西東公園」・実施団体「自治会コミニティー5」として掲載されている（ ）。 【名称について】区公式一覧では「秋まつり」とだけ記載。実施団体「自治会コミニティー5」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-20",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-20",
+      "2026-09-20"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "西小岩中央町会盆踊り",
+    "name_confirmed": true,
+    "venue": "西小岩公園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「西小岩公園」・実施団体「西小岩中央町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「西小岩中央町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "子どもふれあいまつり",
+    "name_confirmed": true,
+    "venue": "西瑞江三丁目第三児童遊園",
+    "area": "江戸川区",
+    "months": [
+      9
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-27",
+    "date_end": "2026-09-27",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        27
+      ]
+    ],
+    "jun": {
+      "9": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-09-27・会場「西瑞江三丁目第三児童遊園」・実施団体「西瑞江三丁目町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-27",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-09-27",
+      "2026-09-27"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "シティコープ西葛西自治会夏祭り",
+    "name_confirmed": true,
+    "venue": "西葛西五丁目児童遊園",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-29・会場「西葛西五丁目児童遊園」・実施団体「シティコープ西葛西自治会」として掲載されている（ ）。 【名称について】区公式一覧では「夏祭り」とだけ記載。実施団体「シティコープ西葛西自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-29"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "谷河内南町会盆踊り大会",
+    "name_confirmed": true,
+    "venue": "谷河内みなみ公園",
+    "area": "江戸川区",
+    "months": [
+      10
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-03",
+    "date_end": "2026-10-03",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        10,
+        3
+      ]
+    ],
+    "jun": {
+      "10": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-10-03・会場「谷河内みなみ公園」・実施団体「谷河内南町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-03",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-03",
+      "2026-10-03"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "豊田神社奉納盆踊り大会",
+    "name_confirmed": true,
+    "venue": "豊田神社",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「豊田神社」・実施団体「下鎌田町会」として掲載されている（ ）。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "都営船堀団地自治会納涼祭",
+    "name_confirmed": true,
+    "venue": "都営船堀団地内広場",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-21〜2026-08-22・会場「都営船堀団地内広場」・実施団体「都営船堀団地自治会」として掲載されている（ ）。 【名称について】区公式一覧では「納涼祭」とだけ記載。実施団体「都営船堀団地自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "長島町会納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "長島香取神宮境内",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-08",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「長島香取神宮境内」・実施団体「長島町会」として掲載されている（ ）。 【名称について】区公式一覧では「納涼盆踊り大会」とだけ記載。実施団体「長島町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-08",
+      "2026-08-09"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "好踊会「好踊会フェア」",
     "name_confirmed": true,
     "venue": "鹿骨中学校",
@@ -28964,5 +32805,71 @@
       "2026-03-29"
     ],
     "display_tier": "ended"
+  },
+  {
+    "name": "鹿骨二丁目町会盆踊り",
+    "name_confirmed": true,
+    "venue": "鹿骨中学校",
+    "area": "江戸川区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "江戸川区内。詳細アクセスは出典URLを参照",
+    "address": "東京都江戸川区鹿骨2-12-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-09",
+    "date_end": "2026-08-10",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": "鹿骨中学校は、地域の夏祭りや盆踊りで使われる江戸川区の学校会場。 規模は「中」として整理しています、所在地は東京都江戸川区鹿骨2-12-1。",
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-09〜2026-08-10・会場「鹿骨中学校」・実施団体「鹿骨二丁目町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「鹿骨二丁目町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-09〜2026-08-10",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-09",
+      "2026-08-10"
+    ],
+    "display_tier": "confirmed"
   }
 ]

@@ -1,0 +1,26 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-07T22:45:00+09:00",
+  "source": {
+    "report_id": "edogawa_venue_corrections_2026",
+    "title": "江戸川区公式一覧に基づく会場照合補正（2026年）",
+    "account_key": "江戸川区（区公式サイト）",
+    "raw_text": "江戸川区公式の令和8年度盆踊り日程一覧の会場名を再照合。雷町会夏まつりは東葛西さくら公園、北篠崎二丁目自治会盆踊りは北篠崎二丁目公園であり、部分一致による別会場への誤結合を補正する。",
+    "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+    "notice_kind": "official_current_year"
+  },
+  "events": [
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_a9fa9c73d44ea6bc",
+      "venue": {"name": "東葛西さくら公園", "area": "江戸川区", "address": "東京都江戸川区"},
+      "detail_addendum": "会場を江戸川区公式一覧の「東葛西さくら公園」へ照合補正。"
+    },
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_68084b443aa2d328",
+      "venue": {"name": "北篠崎二丁目公園", "area": "江戸川区", "address": "東京都江戸川区"},
+      "detail_addendum": "会場を江戸川区公式一覧の「北篠崎二丁目公園」へ照合補正。"
+    }
+  ]
+}
