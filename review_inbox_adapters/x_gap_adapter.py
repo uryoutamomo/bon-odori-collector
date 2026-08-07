@@ -28,6 +28,16 @@ DEFAULT_INPUT=ROOT / "data" / "x_gap_candidates.json"
 DEFAULT_OUTPUT=ROOT / "data" / "review_inbox_adapted" / "x_gap.json"
 DEFAULT_LANES_INPUT=ROOT / "data" / "x_review_lanes.json"
 CANARY_LANES=("lane2_operator_review","lane3_user_review")
+EVENT_NAME_GUESS_RE=re.compile(r"【\s*([^【】\n]{1,80}?)\s*】")
+EVENTISH_GUESS_RE=re.compile(r"盆|踊|祭|まつり|納涼")
+
+def event_name_guess(source_text: Any) -> str:
+    """Return an explicitly non-canonical event name inferred from a post."""
+    for match in EVENT_NAME_GUESS_RE.finditer(str(source_text or "")):
+        guess=match.group(1).strip()
+        if EVENTISH_GUESS_RE.search(guess):
+            return guess
+    return ""
 
 class XGapAdapter:
     source_id="x_gap"
@@ -43,7 +53,8 @@ class XGapAdapter:
         if not isinstance(row,dict): raise TypeError("x gap candidate must be an object")
         match=row.get("matched_occurrence") or {}
         event_name=str(match.get("event_name") or "").strip()
-        title=event_name or str(row.get("source_text") or "").strip()[:80]
+        guessed_name=event_name_guess(row.get("source_text")) if not event_name else ""
+        title=event_name or guessed_name or str(row.get("source_text") or "").strip()[:80]
         source_key=str(row.get("source_key") or "").strip()
         if not source_key: raise ValueError("x gap candidate requires stable source_key")
         officiality=row.get("source_officiality") or {}
@@ -51,6 +62,8 @@ class XGapAdapter:
         kind=str(row.get("candidate_kind") or "")
         action={"missing_date":"confirm_current_year_date", "date_range_conflict":"review_date_range_conflict", "informal_new_event":"review_new_event"}.get(kind, "review_schedule_change")
         payload=copy.deepcopy(row)
+        if guessed_name:
+            payload["event_name_guess"]=guessed_name
         # The existing change-request bridge consumes this compact date text
         # format.  Keep the original X text alongside it as evidence.
         if action == "confirm_current_year_date":
@@ -62,6 +75,7 @@ class XGapAdapter:
                 payload["observed_candidate"]={"candidate_key":occurrence_id}
         return {"kind":"x_gap", "domain":"X", "time_scope":"future", "priority_label":"P0" if official else "P1",
                 "priority_score":row.get("priority_score"), "title":title, "event_name":event_name,
+                "event_name_guess":guessed_name,
                 "venue":str(match.get("venue") or ""), "event_year":row.get("event_year"),
                 "source_key":source_key, "source_url":str(row.get("source_url") or ""),
                 "recommended_action":action, "payload":payload}

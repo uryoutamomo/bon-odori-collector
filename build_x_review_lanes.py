@@ -14,7 +14,7 @@ from typing import Any
 
 from master_rdb.master_db import normalize_text
 
-DATA=Path('data'); INPUT=DATA/'x_gap_candidates.json'; OUT=DATA/'x_review_lanes.json'
+DATA=Path('data'); INPUT=DATA/'x_gap_candidates.json'; OUT=DATA/'x_review_lanes.json'; MARKDOWN_OUT=DATA/'x_review_lanes.md'
 TIME_RE=re.compile(r'(?<!\d)([0-2]?\d)[:：]([0-5]\d)')
 NON_ASSERTED_CHANGE_RE=re.compile(
     r'(?:中止|延期|順延).{0,24}(?:場合|可能性|かも|かもしれ|と思|予報|心配)'
@@ -81,11 +81,76 @@ def build(payload:dict[str,Any])->dict[str,Any]:
     # changes in the future.
     lanes['lane3_user_review'].sort(key=lambda r:(-float(r.get('priority_score') or 0),str(r.get('source_key') or '')))
     overflow=lanes['lane3_user_review'][3:]; lanes['lane3_user_review']=lanes['lane3_user_review'][:3]
+    # The lane recorded on a row is part of the canary-selection contract.
+    # Keep it synchronized when the lane3 display cap moves work to lane2.
+    for row in overflow:
+        row['lane']='lane2_operator_review'
     lanes['lane2_operator_review'].extend(overflow)
     return {'generated_by':'build_x_review_lanes.py','generated_at':datetime.now(timezone.utc).isoformat(),
       'contract':{'daily_input_max':30,'lane3_user_review_max':3,'lane1_no_new_event':True,'lane1_no_overwrite':True,
                   'lane3_existing_value_matches_archived':True},'lanes':lanes,'archived_candidates':archived}
 
+LANE_HEADINGS={
+    'lane1_auto_plan':'レーン1: 自動計画',
+    'lane2_operator_review':'レーン2: 運用者レビュー',
+    'lane3_user_review':'レーン3: 利用者レビュー',
+}
+
+def text(value:Any)->str:
+    return str(value or '').strip()
+
+def bullet_value(label:str, value:Any)->str:
+    value=text(value)
+    return f'- {label}: {value or "（なし）"}'
+
+def render_row(row:dict[str,Any])->list[str]:
+    match=row.get('matched_occurrence') or {}
+    observed=', '.join(str(value) for value in row.get('observed_dates') or []) or '（なし）'
+    hints=', '.join(str(value) for value in row.get('date_hints') or []) or '（なし）'
+    urls=[str(value) for value in row.get('source_urls') or [] if value]
+    source_url=text(row.get('source_url'))
+    if source_url and source_url not in urls: urls.insert(0,source_url)
+    lines=[
+        f"### {text(row.get('candidate_kind')) or 'unknown'} / score {row.get('priority_score') if row.get('priority_score') is not None else '（なし）'}",
+        bullet_value('候補ID', row.get('candidate_id')),
+        bullet_value('既存イベント名', match.get('event_name')),
+        bullet_value('既存会場', match.get('venue')),
+        bullet_value('既存エリア', match.get('area') or match.get('venue_area')),
+        bullet_value('既存開催日', f"{text(match.get('date_start')) or '（なし）'} 〜 {text(match.get('date_end')) or text(match.get('date_start')) or '（なし）'}"),
+        bullet_value('投稿から読み取った日付', observed),
+        bullet_value('投稿の日付ヒント', hints),
+        bullet_value('投稿者', row.get('source_author')),
+        bullet_value('投稿URL', source_url),
+        bullet_value('裏取り数', row.get('corroboration_count')),
+    ]
+    if len(urls)>1:
+        lines.append(bullet_value('裏取りURL', ' / '.join(urls)))
+    source_text=text(row.get('source_text'))
+    quoted='\n'.join(f'> {line}' if line else '>' for line in source_text.split('\n'))
+    lines.extend(['', quoted, ''])
+    return lines
+
+def render_markdown(payload:dict[str,Any])->str:
+    lines=['# X レビュー・レーン', '', f"生成時刻: {text(payload.get('generated_at')) or '（なし）'}", '']
+    lanes=payload.get('lanes') or {}
+    for name in ('lane1_auto_plan','lane2_operator_review','lane3_user_review'):
+        rows=lanes.get(name) or []
+        lines.extend([f"## {LANE_HEADINGS[name]} ({len(rows)}件)", ''])
+        for row in rows:
+            if isinstance(row,dict): lines.extend(render_row(row))
+        if not rows: lines.extend(['（該当なし）',''])
+    archived=payload.get('archived_candidates') or []
+    reasons={}
+    for row in archived:
+        if isinstance(row,dict):
+            reason=text(row.get('archive_reason')) or '（理由なし）'
+            reasons[reason]=reasons.get(reason,0)+1
+    lines.extend([f"## アーカイブ済み候補 ({len(archived)}件)", ''])
+    if reasons:
+        lines.extend(f'- {reason}: {count}件' for reason,count in sorted(reasons.items()))
+    else: lines.append('（該当なし）')
+    return '\n'.join(lines)+'\n'
+
 def main()->None:
- p=argparse.ArgumentParser();p.add_argument('--input',type=Path,default=INPUT);p.add_argument('--out',type=Path,default=OUT);a=p.parse_args();data=build(json.loads(a.input.read_text(encoding='utf-8')));a.out.parent.mkdir(parents=True,exist_ok=True);a.out.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('x review lanes:',{k:len(v) for k,v in data['lanes'].items()})
+ p=argparse.ArgumentParser();p.add_argument('--input',type=Path,default=INPUT);p.add_argument('--out',type=Path,default=OUT);p.add_argument('--markdown-out',type=Path,default=MARKDOWN_OUT);a=p.parse_args();data=build(json.loads(a.input.read_text(encoding='utf-8')));a.out.parent.mkdir(parents=True,exist_ok=True);a.out.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');a.markdown_out.parent.mkdir(parents=True,exist_ok=True);a.markdown_out.write_text(render_markdown(data),encoding='utf-8');print('x review lanes:',{k:len(v) for k,v in data['lanes'].items()})
 if __name__=='__main__':main()

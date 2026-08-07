@@ -1,4 +1,4 @@
-from build_x_review_lanes import build
+from build_x_review_lanes import build, render_markdown
 
 def row(key, *, official=False, kind='missing_date', known=True):
     return {'source_key':key,'priority_score':10,'candidate_kind':kind,'date_hints':['7月30日'],'matched_occurrence':{'occurrence_id':'occ_x'} if known else None,'source_officiality':{'classification':'registered_official_social' if official else 'unknown'}}
@@ -13,6 +13,17 @@ def test_lane3_is_capped_at_three():
     data=build({'candidates':[row(str(i),kind='schedule_change') for i in range(4)]})
     assert len(data['lanes']['lane3_user_review'])==3
     assert len(data['lanes']['lane2_operator_review'])==1
+    assert data['lanes']['lane2_operator_review'][0]['lane']=='lane2_operator_review'
+
+def test_markdown_shows_existing_and_observed_values_with_full_source_text():
+    candidate=row('conflict',kind='date_range_conflict')
+    candidate.update({'source_text':'一行目\n二行目','source_author':'@tester','source_url':'https://x.com/test/status/1',
+                      'observed_dates':['2026-08-08'],'corroboration_count':2,
+                      'matched_occurrence':{'event_name':'既存盆踊り','venue':'既存公園','area':'テスト区','date_start':'2026-08-07','date_end':'2026-08-08'}})
+    markdown=render_markdown(build({'candidates':[candidate]}))
+    assert '既存開催日: 2026-08-07 〜 2026-08-08' in markdown
+    assert '投稿から読み取った日付: 2026-08-08' in markdown
+    assert '> 一行目\n> 二行目' in markdown
 
 def shibuya_schedule_change(key, text, observed_dates):
     candidate=row(key,kind='schedule_change')
