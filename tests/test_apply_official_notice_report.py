@@ -307,7 +307,6 @@ class ApplyOfficialNoticeReportTest(unittest.TestCase):
         self.assertEqual(applied["action"], "add_occurrence_to_existing_series")
         self.assertEqual(applied["series_id"], self.series_a_id)
         self.assertFalse(applied["series_created"])
-
         conn = sqlite3.connect(self.tmp_path / "dry_run.sqlite")
         occurrences = conn.execute(
             "SELECT event_year FROM event_occurrences WHERE series_id = ? ORDER BY event_year", (self.series_a_id,)
@@ -317,6 +316,48 @@ class ApplyOfficialNoticeReportTest(unittest.TestCase):
         self.assertEqual(occurrences, [(2025,), (2026,)])
         self.assertEqual(series_count, 1)
 
+    def test_merge_existing_series_moves_current_occurrence_and_deletes_split_series(self):
+        conn = sqlite3.connect(self.db_path)
+        conn.execute("PRAGMA foreign_keys = ON")
+        now = master_db.now_utc()
+        prior_occurrence_id = master_db.stable_id("occ", self.series_a_id, 2025, 1)
+        conn.execute(
+            "UPDATE event_occurrences SET occurrence_id = ?, event_year = 2025 WHERE occurrence_id = ?",
+            (prior_occurrence_id, self.occurrence_a_id),
+        )
+        split_series_id = master_db.stable_id("series", master_db.normalize_text("新富夏祭り"))
+        split_occurrence_id = master_db.stable_id("occ", split_series_id, 2026, 1)
+        conn.execute(
+            """INSERT INTO event_series(series_id, origin, series_key, canonical_name, normalized_name, usual_venue_id, area, program_type, annual_months_json, status, created_at, updated_at)
+               VALUES (?, 'curated', ?, '新富夏祭り', ?, ?, '中央区', 'bon_odori', '[8]', 'active', ?, ?)""",
+            (split_series_id, master_db.normalize_text("新富夏祭り"), master_db.normalize_text("新富夏祭り"), self.venue_a_id, now, now),
+        )
+        conn.execute(
+            """INSERT INTO event_occurrences(occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_status, lifecycle_status, confidence, source_kind, created_at, updated_at)
+               VALUES (?, 'curated', ?, 2026, 1, '新富夏祭り', ?, 'unknown', '未確認', 'unknown', 'notion_events', ?, ?)""",
+            (split_occurrence_id, split_series_id, self.venue_a_id, now, now),
+        )
+        conn.commit()
+        conn.close()
+        report = self._base_report(
+            [{
+                "action": "merge_existing_series",
+                "source_occurrence_id": prior_occurrence_id,
+                "target_occurrence_id": split_occurrence_id,
+                "event_name_hint": "新富夏祭り",
+                "songs": [],
+            }]
+        )
+        result = script.run(self._args(self._write_report(report)))
+        self.assertEqual(result["applied"]["events_applied"][0]["action"], "merge_existing_series")
+        conn = sqlite3.connect(self.tmp_path / "dry_run.sqlite")
+        series = conn.execute("SELECT canonical_name FROM event_series WHERE series_id = ?", (self.series_a_id,)).fetchone()
+        deleted = conn.execute("SELECT COUNT(*) FROM event_series WHERE series_id = ?", (split_series_id,)).fetchone()[0]
+        occurrences = conn.execute("SELECT event_year, display_name FROM event_occurrences WHERE series_id = ? ORDER BY event_year", (self.series_a_id,)).fetchall()
+        conn.close()
+        self.assertEqual(series, ("新富夏祭り",))
+        self.assertEqual(deleted, 0)
+        self.assertEqual(occurrences, [(2025, "新富夏祭り"), (2026, "新富夏祭り")])
 
 if __name__ == "__main__":
     unittest.main()

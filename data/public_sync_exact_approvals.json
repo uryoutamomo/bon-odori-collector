@@ -412,11 +412,11 @@
     {
       "id": "reviewed-update-renamed-9099e5dbff30",
       "kind": "key_replacement",
-      "site_event_key": "第71回大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
-      "collector_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
-      "site_sha256": "43b435759739ff76f2af2e1f2ae2cb7e3be29d2910f59846f941c190f6beda89",
-      "collector_sha256": "4fad94c4020282f32355690c7e4f4d9a7f238afda28678beaa10b21c577335d6",
-      "reason": "2026-07-29: 内田さん明示GOにより、過去改名24件を現行collector内容で再承認（おと）"
+      "site_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
+      "collector_event_key": "大井どんたく夏まつり||大井町駅前中央通り",
+      "site_sha256": "6366985cb348b1aa564aaa3a8a54d89b7625a96e8bd6521ddad8d08c44b0787b",
+      "collector_sha256": "af431118eaf8037fea0aeaed00a16107c631dee7d6e63c81913d07d1137a251f",
+      "reason": "2026-08-07: 内田さん承認のシリーズ統合により、2025年の『第71回大井どんたく夏まつり 初日 盆踊り』を既存seriesへ保持したまま『大井どんたく夏まつり』へ正規化し、公式確認済み2026年回を同シリーズへ統合。旧2025公開行から統合後2026公開行への exact key replacement として更新（おと）。"
     },
     {
       "id": "reviewed-update-renamed-fcf8b31ae77b",

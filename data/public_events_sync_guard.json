@@ -1,64 +1,71 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-08-04T01:35:58.889528+00:00",
+  "generated_at": "2026-08-07T10:17:16.254511+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
-    "collector_events": "data/public/events_public.json",
-    "site_events": "/private/tmp/bon-odori-site-itabashi-20260804/data/events_public.json",
-    "fixed_date_rules": "/private/tmp/bon-odori-itabashi-20260804/data/public_fixed_date_rules.json",
-    "master_db": "data/bon_odori_master.sqlite",
-    "publication_gap_review": "/private/tmp/bon-odori-itabashi-20260804/data/publication_gap_review.json",
-    "reviewed_approvals": "data/public_sync_exact_approvals.json"
+    "collector_events": "/Users/ryotauchida/bon-odori-x-gap-canary-exec2-20260807/data/public/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "fixed_date_rules": "/Users/ryotauchida/bon-odori-x-gap-canary-exec2-20260807/data/public_fixed_date_rules.json",
+    "master_db": "/Users/ryotauchida/bon-odori-x-gap-canary-exec2-20260807/data/bon_odori_master.sqlite",
+    "publication_gap_review": "/Users/ryotauchida/bon-odori-x-gap-canary-exec2-20260807/data/publication_gap_review.json",
+    "reviewed_approvals": "/Users/ryotauchida/bon-odori-x-gap-canary-exec2-20260807/data/public_sync_exact_approvals.json"
   },
   "parameters": {
     "target_year": 2026,
-    "today": "2026-08-04",
+    "today": "2026-08-07",
     "allow_individual_review": false
   },
   "decision": {
     "status": "pass",
     "failures": [],
-    "warnings": [
-      "master_rdb_newer_than_publication_gap_review"
-    ],
+    "warnings": [],
     "safe_to_wholesale_sync": true,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
-  "procedure_warnings": [
-    "master_rdb_newer_than_publication_gap_review"
-  ],
+  "procedure_warnings": [],
   "raw_classification": {
     "collector_event_count": 309,
     "site_event_count": 309,
-    "collector_only_count": 0,
-    "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "collector_only_count": 1,
+    "site_only_count": 1,
+    "high_risk_diff_record_count": 1,
+    "high_risk_event_count": 1,
+    "records_by_family": {
+      "historical_slide": 1
+    },
+    "records_by_action": {
+      "individual_review": 1
+    },
+    "events_by_action": {
+      "ended_transition_downgrade": 1
+    }
   },
   "postprocessed_classification": {
     "collector_event_count": 309,
     "site_event_count": 309,
-    "collector_only_count": 0,
-    "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "collector_only_count": 1,
+    "site_only_count": 1,
+    "high_risk_diff_record_count": 1,
+    "high_risk_event_count": 1,
+    "records_by_family": {
+      "historical_slide": 1
+    },
+    "records_by_action": {
+      "individual_review": 1
+    },
+    "events_by_action": {
+      "ended_transition_downgrade": 1
+    }
   },
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
     "status": "pass",
     "approval_count": 169,
     "status_counts": {
-      "already_synced": 159,
+      "already_synced": 161,
       "inactive": 7,
-      "consumed_at_site": 2,
-      "already_applied": 1
+      "applied": 1
     },
     "failure_count": 0,
     "results": [
@@ -262,9 +269,9 @@
         "id": "reviewed-update-20260724-07",
         "kind": "same_key_update",
         "event_key": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」||京王線芦花公園駅前ロータリー(南口)",
-        "actual_site_sha256": "ec70a266f5a74dddeb04315464111e7d39fce9cb0a278f3e5abf9de2c4f9ad19",
+        "actual_site_sha256": "3683b23b215fcb928a2139c4e8f29644fdcfddada6928baa6d38451fca18c326",
         "actual_collector_sha256": "3683b23b215fcb928a2139c4e8f29644fdcfddada6928baa6d38451fca18c326",
-        "status": "consumed_at_site"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260726-01",
@@ -474,11 +481,11 @@
       {
         "id": "reviewed-update-renamed-9099e5dbff30",
         "kind": "key_replacement",
-        "site_event_key": "第71回大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
-        "collector_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
-        "actual_site_sha256": "4fad94c4020282f32355690c7e4f4d9a7f238afda28678beaa10b21c577335d6",
-        "actual_collector_sha256": "6366985cb348b1aa564aaa3a8a54d89b7625a96e8bd6521ddad8d08c44b0787b",
-        "status": "consumed_at_site"
+        "site_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
+        "collector_event_key": "大井どんたく夏まつり||大井町駅前中央通り",
+        "actual_site_sha256": "6366985cb348b1aa564aaa3a8a54d89b7625a96e8bd6521ddad8d08c44b0787b",
+        "actual_collector_sha256": "af431118eaf8037fea0aeaed00a16107c631dee7d6e63c81913d07d1137a251f",
+        "status": "applied"
       },
       {
         "id": "reviewed-update-renamed-fcf8b31ae77b",
@@ -567,8 +574,8 @@
         "kind": "addition",
         "event_key": "あ〜夏休み！納涼盆踊り大会||亀有ゆうろーど（亀有銀座商店街）",
         "actual_collector_sha256": "de121bcac0c6011f3aa4e7d2dee46dfb11a7f065407d294eb31ea6216f2a5563",
-        "actual_site_sha256": "2d235e5c507d9d3eb77b629a5c95abb8ca617f22a24c5cc0b941b0850756b412",
-        "status": "already_applied"
+        "actual_site_sha256": "de121bcac0c6011f3aa4e7d2dee46dfb11a7f065407d294eb31ea6216f2a5563",
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260729-minato-3b7807d4f6ea",
@@ -1433,12 +1440,24 @@
     "site_event_count": 309,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "high_risk_diff_record_count": 1,
+    "high_risk_event_count": 1,
+    "records_by_family": {
+      "historical_slide": 1
+    },
+    "records_by_action": {
+      "individual_review": 1
+    },
+    "events_by_action": {
+      "ended_transition_downgrade": 1
+    }
   },
-  "ended_transition_downgrades": [],
+  "ended_transition_downgrades": [
+    {
+      "event_name": "鉄砲洲納涼盆踊り",
+      "venue": "鉄砲洲公園",
+      "ended_on": "2026-08-05"
+    }
+  ],
   "blocking_examples": []
 }

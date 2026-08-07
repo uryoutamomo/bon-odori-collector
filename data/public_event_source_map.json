@@ -1781,15 +1781,15 @@
       "venue_id": "ven_011d2f1555d9d0bc"
     },
     {
-      "public_event_key": "大井どんたく夏まつり 初日 盆踊り|大井町駅前中央通り|2025-08-23|",
-      "name": "大井どんたく夏まつり 初日 盆踊り",
+      "public_event_key": "大井どんたく夏まつり|大井町駅前中央通り|2026-08-22|2026-08-23",
+      "name": "大井どんたく夏まつり",
       "venue": "大井町駅前中央通り",
-      "date": "2025-08-23",
-      "date_end": "",
+      "date": "2026-08-22",
+      "date_end": "2026-08-23",
       "source": "master_rdb",
-      "occurrence_id": "occ_df9d3c24ba313881",
+      "occurrence_id": "occ_aa32ae8f8807778d",
       "series_id": "ser_8169a85a79d78758",
-      "event_year": 2025,
+      "event_year": 2026,
       "venue_id": "ven_188e54c74dcd005f"
     },
     {

@@ -1,0 +1,21 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-07T19:00:00+09:00",
+  "source": {
+    "report_id": "x_gap_ooi_dontaku_series_merge_2026",
+    "title": "第71回・第72回 大井どんたく夏まつりの同一シリーズ統合",
+    "account_key": "大井町どんたく実行委員会（公式サイト ooimachi.tokyo）",
+    "raw_text": "2025年の既存レコード『第71回大井どんたく夏まつり 初日 盆踊り』と、公式サイト https://ooimachi.tokyo/dontaku/ が告知する2026年8月22日〜23日の『第72回 大井どんたく夏まつり』は、同じ大井町駅前中央通りを会場とする連続回次の同一イベントである。2026年登録時に別seriesとなったため、既存2025 seriesを保持し、名称を『大井どんたく夏まつり』へ正規化して2026 occurrenceを移す。"
+  },
+  "events": [
+    {
+      "action": "merge_existing_series",
+      "source_occurrence_id": "occ_df9d3c24ba313881",
+      "target_occurrence_id": "occ_aa32ae8f8807778d",
+      "event_name_hint": "大井どんたく夏まつり",
+      "detail_addendum": "第71回（2025年）と第72回（2026年）は、同じ大井町駅前中央通りを会場とする連続回次の同一イベントとして統合。2025年の予測・履歴情報と2026年の公式確認済み日程は保持する。",
+      "songs": []
+    }
+  ],
+  "skipped_events": []
+}
