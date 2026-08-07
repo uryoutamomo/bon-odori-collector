@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T04:31:06.104694+00:00",
+  "generated_at": "2026-08-07T10:15:10.266309+00:00",
   "generated_by": "build_publication_gap_review.py",
   "summary": {
     "accepted_glossary_v2_count": 88,
@@ -17,10 +17,9 @@
     "weekly_updated_songs_missing_public": 4,
     "public_occurrence_songs_not_in_master": 147,
     "song_priors_not_public_ready": 14,
-    "event_publication_blocked_count": 42,
+    "event_publication_blocked_count": 38,
     "event_publication_blocked_by_reason": {
-      "missing_date_start": 41,
-      "missing_venue_id": 1
+      "missing_date_start": 38
     }
   },
   "rows": [
@@ -2095,34 +2094,6 @@
       "master_file": "data/youtube_song_master.json"
     },
     {
-      "gap_id": "event_publication_blocked:occ_b0ac40639f5d2d5c",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "佃島の盆踊り",
-      "event_name": "佃島の盆踊り",
-      "series_name": "佃島の盆踊り",
-      "occurrence_id": "occ_b0ac40639f5d2d5c",
-      "event_year": 2026,
-      "venue": "",
-      "area": "",
-      "date_start": "2026-07-13",
-      "date_end": "2026-07-15",
-      "date_status": "predicted",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
-      "public_name_present": false,
-      "reason_codes": [
-        "missing_venue_id"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P0",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
       "gap_id": "event_publication_blocked:occ_2eb9d3179e731fbe",
       "gap_type": "根拠ありイベントが公開整備待ち",
       "domain": "イベント",
@@ -2795,34 +2766,6 @@
       "public_file": "bon-odori-site/data/events_public.json"
     },
     {
-      "gap_id": "event_publication_blocked:occ_69ee7abd5466f5fd",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "森下二丁目盆踊り",
-      "event_name": "森下二丁目盆踊り",
-      "series_name": "森下二丁目盆踊り",
-      "occurrence_id": "occ_69ee7abd5466f5fd",
-      "event_year": 2026,
-      "venue": "森下公園",
-      "area": "江東区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://minamisuna1.com/26743/#google_vignette",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
       "gap_id": "event_publication_blocked:occ_7cf4363078dba915",
       "gap_type": "根拠ありイベントが公開整備待ち",
       "domain": "イベント",
@@ -2868,34 +2811,6 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://ameblo.jp/newmackn/entry-12929910203.html",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
-      "gap_id": "event_publication_blocked:occ_1a4d1fa95a29cc39",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "濱町音頭盆踊り大会",
-      "event_name": "濱町音頭盆踊り大会",
-      "series_name": "濱町音頭盆踊り大会",
-      "occurrence_id": "occ_1a4d1fa95a29cc39",
-      "event_year": 2026,
-      "venue": "浜町公園",
-      "area": "中央区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://tokyofesta.com/23ku/25652/",
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"
@@ -3008,7 +2923,7 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://x.com/mosukedance51/status/1911961610299822105?t=BjX2YyHByPrnqff1k0UgrQ&s=19",
-      "public_name_present": true,
+      "public_name_present": false,
       "reason_codes": [
         "missing_date_start"
       ],
@@ -3036,7 +2951,7 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://drive.google.com/file/d/1VC-1M9-KplP2FQUT387YkMeu5olASeLM/view?usp=drive_link",
-      "public_name_present": true,
+      "public_name_present": false,
       "reason_codes": [
         "missing_date_start"
       ],
@@ -3064,7 +2979,7 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://drive.google.com/file/d/17whgSC2R2Zp2wbEkwA1U_VJJGZ3bDucd/view?usp=drive_link",
-      "public_name_present": true,
+      "public_name_present": false,
       "reason_codes": [
         "missing_date_start"
       ],
@@ -3120,34 +3035,6 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://www.akasakahikawa.or.jp/hikawasai-r07/",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
-      "gap_id": "event_publication_blocked:occ_56b5ccafaa074788",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "都の辰巳深川 臨海ぼんおどり",
-      "event_name": "都の辰巳深川 臨海ぼんおどり",
-      "series_name": "都の辰巳深川 臨海ぼんおどり",
-      "occurrence_id": "occ_56b5ccafaa074788",
-      "event_year": 2026,
-      "venue": "臨海小学校",
-      "area": "江東区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://minamisuna1.com/26743/#google_vignette",
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"

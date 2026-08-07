@@ -3287,45 +3287,42 @@
     ]
   },
   {
-    "name": "大井どんたく夏まつり 初日 盆踊り",
+    "name": "大井どんたく夏まつり",
     "venue": "大井町駅前中央通り",
     "area": "品川区",
-    "date": "2025-08-23",
+    "date": "2026-08-22",
     "songs": [
       {
         "name": "品川甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "大井どんたく音頭",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "大井どんたく音頭",
+        "confidence": "hint"
       }
     ]
   },

@@ -68,7 +68,7 @@ def validate_report(report):
         errors.append("events must be a non-empty list")
     for index, event in enumerate(events):
         action = event.get("action")
-        if action not in ("confirm_existing", "register_new", "add_occurrence_to_existing_series", "rename_series_and_register_new"):
+        if action not in ("confirm_existing", "register_new", "add_occurrence_to_existing_series", "rename_series_and_register_new", "merge_existing_series"):
             errors.append(f"event[{index}]: invalid action {action!r}")
             continue
         if action == "confirm_existing":
@@ -80,12 +80,16 @@ def validate_report(report):
                     errors.append(f"event[{index}]: register_new missing required field: {field}")
             if not (event.get("venue") or {}).get("name"):
                 errors.append(f"event[{index}]: register_new requires venue.name")
-        else:
+        elif action in ("add_occurrence_to_existing_series", "rename_series_and_register_new"):
             for field in ("source_occurrence_id", "event_name_hint", "event_year", "date_start"):
                 if not event.get(field):
                     errors.append(f"event[{index}]: {action} missing required field: {field}")
             if not (event.get("venue") or {}).get("name"):
                 errors.append(f"event[{index}]: {action} requires venue.name")
+        else:
+            for field in ("source_occurrence_id", "target_occurrence_id", "event_name_hint"):
+                if not event.get(field):
+                    errors.append(f"event[{index}]: merge_existing_series missing required field: {field}")
         songs = event.get("songs", [])
         if not isinstance(songs, list) or any(not isinstance(s, dict) or not s.get("title") for s in songs):
             errors.append(f"event[{index}]: songs must be a list of {{title: str, uncertain?: bool}}")
@@ -179,6 +183,95 @@ def _rename_series(conn, index, event, now):
     return {"series_id": series_id, "former_name": former_name, "new_name": new_name}, []
 
 
+def _merge_existing_series(conn, index, event, evidence_id, now):
+    """Merge a current occurrence into its confirmed prior-year series.
+
+    This is deliberately ID-directed: it is for a reviewed series split, not
+    fuzzy duplicate resolution.  The source occurrence identifies the series
+    to retain and target_occurrence_id identifies the already-created current
+    occurrence to move.  It refuses a same-year collision in the retained
+    series, carries over aliases and series-level derived rows, and only then
+    deletes the empty split series.
+    """
+    source_series, issues = _resolve_source_series(conn, index, event)
+    if source_series is None:
+        return None, issues
+    target_rows = rows(
+        conn,
+        """
+        SELECT o.occurrence_id, o.series_id, o.event_year, o.occurrence_sequence,
+               s.canonical_name, s.normalized_name
+        FROM event_occurrences o
+        JOIN event_series s ON s.series_id = o.series_id
+        WHERE o.occurrence_id = ?
+        """,
+        (event["target_occurrence_id"],),
+    )
+    if not target_rows:
+        return None, [{"severity": "medium", "issue_type": "target_occurrence_id_not_found", "event_index": index, "occurrence_id": event["target_occurrence_id"]}]
+    target = target_rows[0]
+    source_series_id = source_series["series_id"]
+    target_series_id = target["series_id"]
+    new_name = event["event_name_hint"]
+    new_normalized = normalize_text(new_name)
+    if source_series_id == target_series_id:
+        return None, [{"severity": "medium", "issue_type": "merge_source_and_target_series_identical", "event_index": index, "series_id": source_series_id}]
+    if target["normalized_name"] != new_normalized:
+        return None, [{"severity": "medium", "issue_type": "merge_target_series_name_mismatch", "event_index": index, "target_series_id": target_series_id, "target_series_name": target["canonical_name"]}]
+    same_year = rows(
+        conn,
+        "SELECT occurrence_id FROM event_occurrences WHERE series_id = ? AND event_year = ? AND occurrence_id != ?",
+        (source_series_id, target["event_year"], target["occurrence_id"]),
+    )
+    if same_year:
+        return None, [{"severity": "medium", "issue_type": "merge_conflicts_with_existing_series_year", "event_index": index, "candidates": same_year}]
+
+    former_name = source_series["canonical_name"]
+    conn.execute(
+        "UPDATE event_series SET canonical_name = ?, normalized_name = ?, updated_at = ? WHERE series_id = ?",
+        (new_name, new_normalized, now, source_series_id),
+    )
+    conn.execute(
+        """
+        INSERT OR IGNORE INTO event_series_aliases (series_id, alias, normalized_alias, source, confidence)
+        VALUES (?, ?, ?, 'canonical_rename', 'manual')
+        """,
+        (source_series_id, former_name, normalize_text(former_name)),
+    )
+    conn.execute(
+        """
+        INSERT OR IGNORE INTO event_series_aliases (series_id, alias, normalized_alias, source, confidence)
+        SELECT ?, alias, normalized_alias, source, confidence
+        FROM event_series_aliases WHERE series_id = ?
+        """,
+        (source_series_id, target_series_id),
+    )
+    conn.execute("UPDATE historical_promotion_candidates SET target_series_id = ?, updated_at = ? WHERE target_series_id = ?", (source_series_id, now, target_series_id))
+    conn.execute("UPDATE predicted_occurrence_dates SET target_series_id = ?, updated_at = ? WHERE target_series_id = ?", (source_series_id, now, target_series_id))
+    conn.execute(
+        "UPDATE event_occurrences SET series_id = ?, display_name = ?, updated_at = ? WHERE occurrence_id = ?",
+        (source_series_id, new_name, now, target["occurrence_id"]),
+    )
+    conn.execute(
+        "UPDATE event_occurrences SET display_name = ?, updated_at = ? WHERE series_id = ?",
+        (new_name, now, source_series_id),
+    )
+    remaining = scalar(conn, "SELECT COUNT(*) FROM event_occurrences WHERE series_id = ?", (target_series_id,))
+    if remaining:
+        return None, [{"severity": "high", "issue_type": "merge_target_series_not_empty_after_move", "event_index": index, "target_series_id": target_series_id, "remaining_occurrences": remaining}]
+    conn.execute("DELETE FROM event_series_aliases WHERE series_id = ?", (target_series_id,))
+    conn.execute("DELETE FROM event_series WHERE series_id = ?", (target_series_id,))
+    link_notice_evidence(conn, target["occurrence_id"], evidence_id, notes=event.get("detail_addendum") or "既存シリーズの統合・名称正規化の根拠。")
+    return {
+        "action": "merge_existing_series",
+        "occurrence_id": target["occurrence_id"],
+        "retained_series_id": source_series_id,
+        "deleted_series_id": target_series_id,
+        "former_name": former_name,
+        "new_name": new_name,
+    }, []
+
+
 def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind, now):
     """Returns (applied_dict_or_None, issues). issues use severity="medium" for
     unresolved matches (skippable, doesn't block other events) and "high" only
@@ -241,6 +334,9 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
             applied_event["action"] = "rename_series_and_register_new"
             applied_event["rename"] = rename_result
         return applied_event, registration_issues
+
+    if action == "merge_existing_series":
+        return _merge_existing_series(conn, index, event, shared_evidence_id, now)
 
     if action == "add_occurrence_to_existing_series":
         source_series, issues = _resolve_source_series(conn, index, event)

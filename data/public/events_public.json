@@ -14634,7 +14634,7 @@
     "display_tier": "confirmed"
   },
   {
-    "name": "大井どんたく夏まつり 初日 盆踊り",
+    "name": "大井どんたく夏まつり",
     "name_confirmed": true,
     "venue": "大井町駅前中央通り",
     "area": "品川区",
@@ -14646,8 +14646,8 @@
     "address": "東京都品川区大井1丁目付近",
     "lat": null,
     "lng": null,
-    "date": "2025-08-23",
-    "date_end": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -14658,6 +14658,10 @@
     "hints": [
       [
         8,
+        22
+      ],
+      [
+        8,
         23
       ]
     ],
@@ -14665,12 +14669,18 @@
       "8": "下旬"
     },
     "description": "第71回大井どんたく夏まつり 初日 盆踊りは、大井町駅前中央通り周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-08-23（土）18:00から盆踊り。大井どんたく音頭、品川音頭、東京音頭、品川甚句など。",
+    "detail": "2026年8月22日（土）・23日（日）14:00〜20:00開催、第72回。会場は大井駅前中央通りを中心に、阪急ホテル前・大井光学通りを含む一帯。主催は大井町どんたく実行委員会。日程・時間・会場は公式サイト（ ）と天王洲ナビの告知で確認。前年の第71回は2025年8月23日・24日の11:00〜20:00で、品川区商店街連合会の案内では大井銀座商店街振興組合・大井駅前中央通り商店会・大井光学通り商店街が主催として記載されていた。 【盆踊りについて】22日にご当地曲『大井どんたく音頭』を用いた催しが行われる。開始時刻は主催者の一次情報では確認できていないが、盆踊りの情報を発信するXアカウント（ ）は22日18:00〜20:00（予定）としている。23日は音楽ステージが中心で、踊る時間の有無は確認できていない。 【まだ確認できていないこと】複数会場のどこで踊るのかは主催者の告知からは特定できていない。会場マップは公式サイトで「公開までおまちください」とされている。お出かけの際は主催者の最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
+        "url": "",
         "kind": "web",
+        "count": 1
+      },
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
         "count": 1
       }
     ],
@@ -14679,115 +14689,54 @@
         "name": "品川甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "大井どんたく音頭",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "大井どんたく音頭",
+        "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-23。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.6,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:まつり"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-23"
+      "2026-08-22",
+      "2026-08-23"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-23"
-      ],
-      "label": "2025-08-23実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.6,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:まつり"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-22",
-        "date_end": "2026-08-22",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-08-23",
-        "source_date_end": null,
-        "duration_days": 1
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-23"
-    ],
-    "historical_reference_label": "2025-08-23実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-08-22",
-      "date_end": "2026-08-22",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-08-23",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-22",
-    "historical_slide_date_end": "2026-08-22",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-08-22",
-    "predicted_date_end": "2026-08-22",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "大井蔵王権現神社の盆踊り（名称推定）",
