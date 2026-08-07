@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 56,
+  "count": 57,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -888,6 +888,21 @@
         "pic.x.com/3T2wM9TEhJ"
       ],
       "text": "【近日刊行 無償頒布】藤原武作品集\n音楽科教員として、また教頭・校長として愛媛県西条の音楽教育に生涯を捧げた藤原武の作品集。小学校・中学校の校歌、地区の盆踊りなど全18曲の楽譜と歌詞、曲目解説を収録。\nISBN978-4-9914023-5-7 C0073\n発行者：株式会社獅子道／発行所：TRASHBOOKS https://t.co/3T2wM9TEhJ",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "3c13cd3d7d67e98e",
+      "status": "needs_ocr",
+      "account": "@Pw9SKrdCfYJfxfv",
+      "url": "https://x.com/Pw9SKrdCfYJfxfv/status/2085567946265604187",
+      "tweet_id": "2085567946265604187",
+      "date": "2026-08-07T03:25:21+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2085567918788747264/img/OXzWx2FtCUD21oVb.jpg",
+        "https://t.co/Yd1fEWiCkX",
+        "pic.x.com/Yd1fEWiCkX"
+      ],
+      "text": "今回の柏まつり\nこんな事やります🥳\n\n東口の盆踊りも復活します\n曲目に柏踊りと京北音頭以外も入る予定です\n引用リポストよろしくお願いします🙇 https://t.co/Yd1fEWiCkX",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

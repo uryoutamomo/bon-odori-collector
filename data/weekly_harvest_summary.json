@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-06T09:24:45.395437+00:00",
+  "generated_at": "2026-08-07T07:59:27.520760+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-06T09:24:37.386124+00:00",
+  "source_generated_at": "2026-08-07T07:59:21.023457+00:00",
   "days": 3,
-  "voice_count": 3433,
-  "candidate_count": 232,
+  "voice_count": 3502,
+  "candidate_count": 209,
   "category_counts": {
-    "曲×会場共起": 14,
-    "曲候補": 210,
-    "用語候補": 8
+    "曲×会場共起": 15,
+    "曲候補": 185,
+    "用語候補": 9
   },
-  "non_song_review_count": 22,
-  "song_candidate_count": 210,
-  "song_direct_dry_run_count": 129,
+  "non_song_review_count": 24,
+  "song_candidate_count": 185,
+  "song_direct_dry_run_count": 120,
   "song_review_count": 9,
-  "song_rejected_noise_count": 72,
+  "song_rejected_noise_count": 56,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -29,28 +29,28 @@
   "samples": {
     "non_song_review": [
       "おしりたんてい音頭 × 晴海ふ頭公園",
-      "9日は浜町音頭 × 西久保八幡神社",
-      "りんご節 × 花園神社",
-      "ホームラン音頭 × 築地本願寺",
+      "ユタゴン音頭 × 上野恩賜公園",
       "八木節 × 花園神社",
-      "地元の人が踊り × 原町天祖神社",
-      "定番曲に世田谷音頭 × 駒沢緑泉公園",
       "新宿音頭 × 花園神社",
-      "是非踊り × 上野恩賜公園",
       "東京音頭 × 青山善光寺",
-      "松の木小唄 × 花園神社",
-      "活気あふれる踊り × 青山善光寺"
+      "活気あふれる踊り × 青山善光寺",
+      "炭坑節 × 青山善光寺",
+      "みんなでユタゴン音頭 × 上野恩賜公園",
+      "りんご節 × 花園神社",
+      "ズンバ音頭 × 花園神社",
+      "定番曲に世田谷音頭 × 駒沢緑泉公園",
+      "是非踊り × 上野恩賜公園"
     ],
     "song_review": [
+      "新宿音頭",
       "盆ジョビ",
       "たいとう音頭",
       "らんまん踊り",
       "りんご節",
-      "新宿音頭",
       "白浜音頭",
       "神田明神音頭",
       "能登島さし音頭",
-      "風流踊り"
+      "郡上おどり"
     ]
   }
 }
