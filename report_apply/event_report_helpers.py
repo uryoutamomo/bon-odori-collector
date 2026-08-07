@@ -28,8 +28,6 @@ def _fuzzy_score(normalized_hint, normalized_candidate):
     if not normalized_hint or not normalized_candidate:
         return 0.0
     score = SequenceMatcher(None, normalized_hint, normalized_candidate).ratio()
-    if normalized_hint in normalized_candidate or normalized_candidate in normalized_hint:
-        score = max(score, FUZZY_SUBSTRING_SCORE_FLOOR)
     return score
 
 
@@ -128,12 +126,9 @@ def ensure_venue(conn, name, *, area=None, address=None, access=None, source_url
     if len(exact) > 1:
         return {"status": "ambiguous", "venue_id": None, "candidates": exact}
 
-    candidates = find_venue_candidates(conn, name, area_hint=area)
-    high_confidence = [c for c in candidates if c["match_score"] >= FUZZY_SUBSTRING_SCORE_FLOOR]
-    if len(high_confidence) > 1:
-        return {"status": "ambiguous", "venue_id": None, "candidates": high_confidence}
-    if len(high_confidence) == 1:
-        return {"status": "reused", "venue_id": high_confidence[0]["venue_id"], "candidates": []}
+    # Venue identity must be exact.  Similar names are common (e.g. parks with
+    # a district prefix); automatically reusing a fuzzy candidate can attach an
+    # occurrence to a different physical place.
 
     venue_id = stable_id("venue", name, address or "")
     conn.execute(

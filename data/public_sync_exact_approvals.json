@@ -1,8 +1,8 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-08-03T14:43:38Z",
+  "reviewed_at": "2026-08-07T14:20:00Z",
   "reviewed_by": "koto",
-  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと） / 2026-08-01: 7/31に開催終了した5件（御徒町公園の盆踊り大会・道塚盆踊り・盆踊りフェス・大松氷川神社 納涼盆踊り大会・旭町一丁目町会 盆踊り）の same_key_update 承認を除去。7/29の登録時点から site・collector 双方が更新済みで承認は消費済みになっており、残置すると upcoming→ended の表示変更が reviewed_exact_approval_mismatch で公開同期を止め続けるため（2026-08-01の sync-public-data 失敗の直接原因）。差分は表示区分3フィールドのみで日付は不変、guard 側は ended_transition_downgrade として自動許可済み。内田さん明示GO。",
+  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと） / 2026-08-01: 7/31に開催終了した5件（御徒町公園の盆踊り大会・道塚盆踊り・盆踊りフェス・大松氷川神社 納涼盆踊り大会・旭町一丁目町会 盆踊り）の same_key_update 承認を除去。7/29の登録時点から site・collector 双方が更新済みで承認は消費済みになっており、残置すると upcoming→ended の表示変更が reviewed_exact_approval_mismatch で公開同期を止め続けるため（2026-08-01の sync-public-data 失敗の直接原因）。差分は表示区分3フィールドのみで日付は不変、guard 側は ended_transition_downgrade として自動許可済み。内田さん明示GO。 / 2026-08-07: 江戸川区公式サイト（東部・鹿骨・小岩・小松川・葛西の5地区）の令和8年度 盆踊り日程一覧から、2026-08-07以降に開催される56件を addition として登録。あわせて四谷地域（新宿区）の令和8年度一覧から4件。江戸川区はこれから開催の公開が0件だった空白区で、これで58件になる。区公式一覧の「盆踊り」等の一般名詞は実施団体名を冠して改名済み（42件）。会場照合の過一致で2件（雷町会夏まつり／北篠崎二丁目自治会盆踊り）が別会場へ紐付いていたのを補正済み。内田さん明示GO（approval 042573a9）。おとの実行停止によりことが公開工程を引き継いだ。",
   "site_base_commit": "472d6b931991e66df6d18753d0f83e63a25328a3",
   "collector_data_commit": "164d952",
   "approvals": [
@@ -1269,6 +1269,366 @@
       "site_sha256": "e2054b05bdfbacf09b3b848f86adfbee94a8ff1ccb8e58bba7eae7dc3c4be64d",
       "collector_sha256": "d80e7fd8f4601e0c25e9f1f6c077379163dbe571f3adf503d95258b4a62a86b5",
       "reason": "2026-08-04 に内田さん承認のうえ detail のみ更新。同会場に新規登録した『上野ゐの市盆踊り』（10日間）との関係を相互参照として追記したもの。開催日・会場・名称は変更していない。"
+    },
+    {
+      "id": "reviewed-addition-8da9445cb8f0",
+      "kind": "addition",
+      "event_key": "大京町商店会納涼おどり大会||大京公園",
+      "collector_sha256": "43508d85f443859a44bdbee5d8448b1b973ad3781746078eb6d507ee5489b500"
+    },
+    {
+      "id": "reviewed-addition-661e1f7f3520",
+      "kind": "addition",
+      "event_key": "杉大門通り盆踊り大会||杉大門通り",
+      "collector_sha256": "dfe9c9fd96b6c3e4e39b9fe540cfa16a1b855229c4cd8f434b8cf2bb3b33954f"
+    },
+    {
+      "id": "reviewed-addition-987f09748d4b",
+      "kind": "addition",
+      "event_key": "花園町会納涼踊り大会||花園小学校",
+      "collector_sha256": "2a7e2d9a1ac0d9f99f141d956f88edb4f5e2f8c0cdddad076b677aaf8b8a7ddc"
+    },
+    {
+      "id": "reviewed-addition-afab541061e5",
+      "kind": "addition",
+      "event_key": "踊ろう！in荒木町の秋||荒木公園",
+      "collector_sha256": "7bf8ce6b353d098934b976d65877885623871a7a522d0634ec9f4479f1769d16"
+    },
+    {
+      "id": "reviewed-addition-b64b2c1ee923",
+      "kind": "addition",
+      "event_key": "五仲自治会盆踊り||くじら児童遊園",
+      "collector_sha256": "9321dc91fd807df7c0ffb6d4a6c2331096c561c0d141c5caaf309a09b9cf5fdf"
+    },
+    {
+      "id": "reviewed-addition-8093b77a1829",
+      "kind": "addition",
+      "event_key": "ハイラーク船堀自治会秋まつり||しらさぎ児童遊園",
+      "collector_sha256": "c289c3fbc6b7b7edfce12e96cc753638aab5967ba755b0196234a4e1ebe13702"
+    },
+    {
+      "id": "reviewed-addition-a2574b24d449",
+      "kind": "addition",
+      "event_key": "なぎさ納涼祭||なぎさニュータウン内中央広場",
+      "collector_sha256": "048f2f1ab42de8ac154cb0d3d79066760a9894e82f67ac3f6c752088f332dc60"
+    },
+    {
+      "id": "reviewed-addition-fe53294695f2",
+      "kind": "addition",
+      "event_key": "LP26まつり||ライオンズプラザ西葛西マンション内公園",
+      "collector_sha256": "13e972093caa93b656b253e40b31eca6c37b89d0779f05202c61e56f4b222c05"
+    },
+    {
+      "id": "reviewed-addition-215dacb91e5a",
+      "kind": "addition",
+      "event_key": "D館夏まつり||リバーウエストD館 駐車スペース",
+      "collector_sha256": "12baa8136b7f34320ebb49f5039e8cd34838941e2e77a7c7d4445bf973fdd778"
+    },
+    {
+      "id": "reviewed-addition-1f6c08a1e795",
+      "kind": "addition",
+      "event_key": "上小岩六東自治会盆踊り||上小岩天祖神社",
+      "collector_sha256": "c2d97b646e342c7c33ce827db963fb29effc143be3a3769b668c7757d4452e59"
+    },
+    {
+      "id": "reviewed-addition-fe72bfb8a167",
+      "kind": "addition",
+      "event_key": "宿和会納涼盆踊り大会||下鎌田東小学校",
+      "collector_sha256": "fec3b5fe0b48536bec0c1586acc32d91475b190868346517e84d05a0bcb42ca2"
+    },
+    {
+      "id": "reviewed-addition-0b8405528c68",
+      "kind": "addition",
+      "event_key": "仲町町会納涼盆踊り||中割天祖神社",
+      "collector_sha256": "2a12cf9baa3172404d06c04e81a219fd7a4d76e2ef3aba562e2554bb4ce90a91"
+    },
+    {
+      "id": "reviewed-addition-6d3d687252ec",
+      "kind": "addition",
+      "event_key": "一南自治会盆踊り||中曽根天祖神社",
+      "collector_sha256": "7c13a1c772273e25f866155e4ae3726ab1f102be50e55278d89e3bed4d60c9de"
+    },
+    {
+      "id": "reviewed-addition-cdc4871dd6a6",
+      "kind": "addition",
+      "event_key": "今井町会納涼盆踊り大会||八雲神社前広場",
+      "collector_sha256": "e0f1ba1933484201f77a9e9f8cf4135bbbfce22c6e4291cc15feb2e4c2180e3f"
+    },
+    {
+      "id": "reviewed-addition-c9f328c2f56d",
+      "kind": "addition",
+      "event_key": "公社東葛西第一住宅自治会住宅祭||公社東葛西第一住宅団地内公園",
+      "collector_sha256": "2570dd34348cc23145a7cd6e990b351c107368f426948bcfdab220546da7d009"
+    },
+    {
+      "id": "reviewed-addition-0cf019b59056",
+      "kind": "addition",
+      "event_key": "北小岩五丁目自治会盆踊り||北小岩五丁目天祖神社",
+      "collector_sha256": "6410b95f7f611e76fc77354a262197f9e543036e7228c84bf613191211c379d2"
+    },
+    {
+      "id": "reviewed-addition-537aa311a58d",
+      "kind": "addition",
+      "event_key": "六中自治会盆踊り||北小岩小学校",
+      "collector_sha256": "79cbdf3ae11fe4852c1f8d92668f61781d625d0602d8a0bdc0eaa1aff9b884a4"
+    },
+    {
+      "id": "reviewed-addition-b6d90ef43478",
+      "kind": "addition",
+      "event_key": "北篠崎二丁目自治会盆踊り||北篠崎二丁目公園",
+      "collector_sha256": "c759009e1dacebd4303fc4a9bed917931b86338dcd89f74efc4a72018a9aac27"
+    },
+    {
+      "id": "reviewed-addition-384c974f2a17",
+      "kind": "addition",
+      "event_key": "南小岩司町会盆踊り||南小岩三丁目第二児童遊園",
+      "collector_sha256": "6ec719b61d8f0df73dd84d7732087347fa8c4168766c784cf8c5d562584be109"
+    },
+    {
+      "id": "reviewed-addition-b9974a15f5f6",
+      "kind": "addition",
+      "event_key": "扇子田自治会盆踊り||南小岩会館",
+      "collector_sha256": "daa8cd4b92c074ce49b1898e5826e2dd0876dd2e18ed69e37b467c736f6e390a"
+    },
+    {
+      "id": "reviewed-addition-bb9021839e2f",
+      "kind": "addition",
+      "event_key": "南小岩神明町会盆踊り||南小岩六丁目児童遊園",
+      "collector_sha256": "cfb9a0b9b29400109a952a431c18ebadc79c220c0997013407ea3c6eaa5b3166"
+    },
+    {
+      "id": "reviewed-addition-9b9c7d208182",
+      "kind": "addition",
+      "event_key": "小岩駅前町会盆踊り||南小岩六丁目児童遊園",
+      "collector_sha256": "70a2369ae099cb4f56d66116e1f23224b82518bd6df82805decb93d615883d02"
+    },
+    {
+      "id": "reviewed-addition-512814ff12a2",
+      "kind": "addition",
+      "event_key": "河原田町会盆踊り||南小岩第二小学校",
+      "collector_sha256": "8410748b34db92cb5ccf8b368f0b280d6dab5911268ad455c4f70cd58942b612"
+    },
+    {
+      "id": "reviewed-addition-16ae3d6744c3",
+      "kind": "addition",
+      "event_key": "南篠崎天祖神社例大祭||南篠崎天祖神社",
+      "collector_sha256": "babd1041912db0847882129278e098d36ec29243e531e444e770171b26310c6b"
+    },
+    {
+      "id": "reviewed-addition-25ae1562884f",
+      "kind": "addition",
+      "event_key": "南葛西町会納涼夏祭り||南葛西小学校",
+      "collector_sha256": "6c3fef93e11cfe1e4755bcba125f3a2834942392bd6fbef4e10b1de9fd6015bb"
+    },
+    {
+      "id": "reviewed-addition-09a487543dac",
+      "kind": "addition",
+      "event_key": "小松川四丁目親交会ふるさと小松川夏祭り||善通寺駐車場",
+      "collector_sha256": "c77163cc5bf23455510cddb7a2ce8ee701df8bdd173756374d7bd720b0342501"
+    },
+    {
+      "id": "reviewed-addition-dd54e1e2301b",
+      "kind": "addition",
+      "event_key": "巽親和会盆踊り||善養寺",
+      "collector_sha256": "5c612e5581d47bdf732205117f73189b78513cab711f431e5128e1e024ec80f5"
+    },
+    {
+      "id": "reviewed-addition-dd6399cdc9f9",
+      "kind": "addition",
+      "event_key": "四南自治会盆踊り||四南公園",
+      "collector_sha256": "20cdfbf6f875945c8044d79a7377d7ec37a49dd40d104b7dc37931b472ada46d"
+    },
+    {
+      "id": "reviewed-addition-20d7efbebfef",
+      "kind": "addition",
+      "event_key": "小岩田自治会盆踊り||小岩田天祖神社",
+      "collector_sha256": "6d0b5c3c5eb29e732311233938883fdcffcddaead496025d49cab6340779db7f"
+    },
+    {
+      "id": "reviewed-addition-4efbd5454e1f",
+      "kind": "addition",
+      "event_key": "平井一丁目南親会夏祭り||平井一丁目児童遊園",
+      "collector_sha256": "37c79a77208a22407b453610fc92ef4447ccb48268b8bafd95e0e47d973063de"
+    },
+    {
+      "id": "reviewed-addition-b30fe6694295",
+      "kind": "addition",
+      "event_key": "平井6丁目23号棟自治会納涼大会||平井六丁目23号棟 団地敷地内",
+      "collector_sha256": "8c737d2e617cdc85ff4e5eba44272f1669868b0f2761bd6a88302208d9512ae8"
+    },
+    {
+      "id": "reviewed-addition-303451f5e09e",
+      "kind": "addition",
+      "event_key": "平井六丁目東町会納涼盆踊り大会||平井小学校",
+      "collector_sha256": "11a561f518d9b5c784058fea11ec1fbf4c3ebaf7030fc11200a6cc3082a97ee9"
+    },
+    {
+      "id": "reviewed-addition-f03c613f00fb",
+      "kind": "addition",
+      "event_key": "平井西町会納涼盆踊り大会||平井西小学校",
+      "collector_sha256": "6935a0a6c4c48d2378332db7f137b66bfeac49780a266c75809feac5c928b2ee"
+    },
+    {
+      "id": "reviewed-addition-52d18d260087",
+      "kind": "addition",
+      "event_key": "椿ふるさとまつり||弥生公園",
+      "collector_sha256": "e7cae63ad5097c02b53db7eb020f83d4b85eb3ca794bf50cccf2dbcd4cf3abb0"
+    },
+    {
+      "id": "reviewed-addition-f1404f858921",
+      "kind": "addition",
+      "event_key": "船堀七丁目町会盆踊り大会||新川さくら館広場",
+      "collector_sha256": "210472f935c77e78521a59d0ee5b3f36c3d1608f07be1229dcc8396a63d54813"
+    },
+    {
+      "id": "reviewed-addition-e0550892221b",
+      "kind": "addition",
+      "event_key": "新田町会盆踊り大会||新田公園",
+      "collector_sha256": "e47b7258a6b2c3873a2635214d0d0b17b4bb5ffc3d7342fc0a15f8a4f8aefc05"
+    },
+    {
+      "id": "reviewed-addition-25ef86d4dd32",
+      "kind": "addition",
+      "event_key": "まつりだワッショイ小松川||東大島駅前大島小松川公園季節の広場",
+      "collector_sha256": "197d74abf75de15c2fdbf1175c12083b06a05774ec5b6f919647e0ea04d8307b"
+    },
+    {
+      "id": "reviewed-addition-395ae0dc2291",
+      "kind": "addition",
+      "event_key": "江戸川北東自治会盆踊り||東小岩天祖神社",
+      "collector_sha256": "071f09cbac7fd3367b8bdc7acdbeac630255f98d449643a9ee80503a425b7b98"
+    },
+    {
+      "id": "reviewed-addition-0d5a7339a27b",
+      "kind": "addition",
+      "event_key": "小岩二東町会盆踊り||東小岩小学校",
+      "collector_sha256": "a1c1ea803d24546d2193b95115a1704aa6ec8f47f372890cfff0d758d1e5a30f"
+    },
+    {
+      "id": "reviewed-addition-d10f3b2df5e3",
+      "kind": "addition",
+      "event_key": "東小岩中央自治会盆踊り||東小岩滝児童遊園",
+      "collector_sha256": "e4f0de966fbfc50b102e73452c724b31aaff1511a94c789c198fa3674bf5a75f"
+    },
+    {
+      "id": "reviewed-addition-56027506073f",
+      "kind": "addition",
+      "event_key": "雷町会夏まつり||東葛西さくら公園",
+      "collector_sha256": "ff7242a94cf19c538abd989fc8327cc45d406a094cb70269a140922d51aeb2fd"
+    },
+    {
+      "id": "reviewed-addition-9ba38b8bb11e",
+      "kind": "addition",
+      "event_key": "松本町会盆踊り||松本天祖神社",
+      "collector_sha256": "7c1da3b464ff987421d5a3cf09e5735bc76b11c0b3e8de4ea7db9598d28f16be"
+    },
+    {
+      "id": "reviewed-addition-aef929c4f68f",
+      "kind": "addition",
+      "event_key": "西小岩六西自治会盆踊り||江戸川区立福祉作業所",
+      "collector_sha256": "d438097bf073dababa4873ed6b0c2d26b8b2e9a8485e8aee9abbe8159613b41e"
+    },
+    {
+      "id": "reviewed-addition-e863d46c03ae",
+      "kind": "addition",
+      "event_key": "片山自治会盆踊り||片山公園",
+      "collector_sha256": "e3dd08d59abbf0023600dc5e46ad582cfbbd716aa3bfb91017e610a11779d41d"
+    },
+    {
+      "id": "reviewed-addition-3a720969c558",
+      "kind": "addition",
+      "event_key": "椿フェスティバル||瑞江葬儀所裏こどもの広場",
+      "collector_sha256": "9b59d8dacf9ae7669a23bee866a8987c27e543284ac1bbb4b5da0a2e5599d191"
+    },
+    {
+      "id": "reviewed-addition-35049e748f7f",
+      "kind": "addition",
+      "event_key": "椿祭り||第二椿児童遊園",
+      "collector_sha256": "e9b73b58891362eaea9c230e3e2623c6e8a684642810347adb3e50fdba49b0c6"
+    },
+    {
+      "id": "reviewed-addition-4ed9d715c771",
+      "kind": "addition",
+      "event_key": "篠崎本郷町会盆踊り||篠崎二丁目公園",
+      "collector_sha256": "4e131ec7602060329cb2e34e53880f23d27e97feac4036073a9c58e42bf35de0"
+    },
+    {
+      "id": "reviewed-addition-2845cd007bbb",
+      "kind": "addition",
+      "event_key": "下篠崎町会盆踊り大会||篠崎六丁目第二広場",
+      "collector_sha256": "ad511292c308d215a359f68fe7ccaafa78b862577358a9971f46761e3c9b83a8"
+    },
+    {
+      "id": "reviewed-addition-9881e0d5b737",
+      "kind": "addition",
+      "event_key": "篠崎七丁目町会盆踊り||篠崎第四小学校",
+      "collector_sha256": "03c4c7479cd1b33ef56df31d4a1cba2183fba7f0eb17d4093efca95ed45e23d2"
+    },
+    {
+      "id": "reviewed-addition-f2ffb901baa0",
+      "kind": "addition",
+      "event_key": "興宮自治会盆踊り||興宮神社",
+      "collector_sha256": "4ec2747a878effd6167127b490d56eb69cb700d1d77bca9121e6ff89612a7052"
+    },
+    {
+      "id": "reviewed-addition-3d83fa1ffc43",
+      "kind": "addition",
+      "event_key": "船堀三丁目町会盆踊り大会||船堀三丁目公園",
+      "collector_sha256": "5fcd54b4bbbcb66b21ad67cdd770577b9c123f03c6bbaf0b72d141d0c9900912"
+    },
+    {
+      "id": "reviewed-addition-be834ca540c8",
+      "kind": "addition",
+      "event_key": "自治会コミニティー5秋まつり||葛西東公園",
+      "collector_sha256": "f2028b8cbdf0f0149f1c56b893f6b1d70befdc4cd57efba93f3e540f923d8715"
+    },
+    {
+      "id": "reviewed-addition-cd767b236d9d",
+      "kind": "addition",
+      "event_key": "西小岩中央町会盆踊り||西小岩公園",
+      "collector_sha256": "f96cd1d605e7ba7c5c52b894931d3e2c38ff4c3b2ce11f528ea6aaafda60469c"
+    },
+    {
+      "id": "reviewed-addition-138ec0b1d205",
+      "kind": "addition",
+      "event_key": "子どもふれあいまつり||西瑞江三丁目第三児童遊園",
+      "collector_sha256": "35cdcee81e2c7909cb8bf88c6adba2be0275e9358d911ae1c67fa4ffef592113"
+    },
+    {
+      "id": "reviewed-addition-d0508867a8ed",
+      "kind": "addition",
+      "event_key": "シティコープ西葛西自治会夏祭り||西葛西五丁目児童遊園",
+      "collector_sha256": "6a6d092821c90453d833378ba5398897b81ac24446c6ce5272c416664f378dd3"
+    },
+    {
+      "id": "reviewed-addition-526e3c78794c",
+      "kind": "addition",
+      "event_key": "谷河内南町会盆踊り大会||谷河内みなみ公園",
+      "collector_sha256": "cd4066228325e12c5bc36bd746af3cdc88c97d657ca1a062d8dab54860c5d621"
+    },
+    {
+      "id": "reviewed-addition-732c225748c5",
+      "kind": "addition",
+      "event_key": "豊田神社奉納盆踊り大会||豊田神社",
+      "collector_sha256": "3be75082d0db008478b24730bd2261b01d7718672222fbfe8420f705a484a788"
+    },
+    {
+      "id": "reviewed-addition-2a819a428e2b",
+      "kind": "addition",
+      "event_key": "都営船堀団地自治会納涼祭||都営船堀団地内広場",
+      "collector_sha256": "d24247323cb0c6f2497a9d6be2e34430e92abcaf642a12648f5ffa095df259fc"
+    },
+    {
+      "id": "reviewed-addition-8b63d5f0da14",
+      "kind": "addition",
+      "event_key": "長島町会納涼盆踊り大会||長島香取神宮境内",
+      "collector_sha256": "03002208a6fe0b51f5dccfde0280216a5c9b2520ac4a2a085be162b6b0eb84ec"
+    },
+    {
+      "id": "reviewed-addition-22702a2f0a81",
+      "kind": "addition",
+      "event_key": "鹿骨二丁目町会盆踊り||鹿骨中学校",
+      "collector_sha256": "6207a6ac64074afb4c1de1ce3888c820dc6e97fff49f83f923a00290afe6b4df"
     }
   ]
 }

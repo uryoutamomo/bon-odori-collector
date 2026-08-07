@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T10:15:10.266309+00:00",
+  "generated_at": "2026-08-07T13:36:41.876329+00:00",
   "generated_by": "build_publication_gap_review.py",
   "summary": {
     "accepted_glossary_v2_count": 88,
@@ -17,9 +17,10 @@
     "weekly_updated_songs_missing_public": 4,
     "public_occurrence_songs_not_in_master": 147,
     "song_priors_not_public_ready": 14,
-    "event_publication_blocked_count": 38,
+    "event_publication_blocked_count": 39,
     "event_publication_blocked_by_reason": {
-      "missing_date_start": 38
+      "missing_date_start": 38,
+      "venue_missing_area": 1
     }
   },
   "rows": [
@@ -3066,6 +3067,34 @@
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"
+      ],
+      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
+      "priority_label": "P1",
+      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
+      "source_file": "data/bon_odori_master.sqlite",
+      "public_file": "bon-odori-site/data/events_public.json"
+    },
+    {
+      "gap_id": "event_publication_blocked:occ_a9fa9c73d44ea6bc",
+      "gap_type": "根拠ありイベントが公開整備待ち",
+      "domain": "イベント",
+      "term": "雷町会夏まつり",
+      "event_name": "雷町会夏まつり",
+      "series_name": "雷町会夏まつり",
+      "occurrence_id": "occ_a9fa9c73d44ea6bc",
+      "event_year": 2026,
+      "venue": "さくら公園",
+      "area": "",
+      "date_start": "2026-08-08",
+      "date_end": "2026-08-09",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "confidence": "confirmed",
+      "source_kind": "official_current_year",
+      "source_url": "",
+      "public_name_present": false,
+      "reason_codes": [
+        "venue_missing_area"
       ],
       "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
       "priority_label": "P1",
