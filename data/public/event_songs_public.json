@@ -4781,62 +4781,6 @@
     ]
   },
   {
-    "name": "亀有銀座商店街納涼盆踊り大会",
-    "venue": "亀有ゆうろーど（亀有銀座商店街）",
-    "area": "葛飾区",
-    "date": "2025-08-31",
-    "songs": [
-      {
-        "name": "アンパンマン音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "亀有音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "南州おどり",
-        "confidence": "hint"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "妖怪横丁ゲゲゲ節",
-        "confidence": "hint"
-      },
-      {
-        "name": "春駒",
-        "confidence": "hint"
-      },
-      {
-        "name": "春駒ばやし",
-        "confidence": "hint"
-      },
-      {
-        "name": "河内おとこ節",
-        "confidence": "hint"
-      },
-      {
-        "name": "葛飾ラプソディ音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "葛飾音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "野球拳おどり",
-        "confidence": "hint"
-      },
-      {
-        "name": "鹿児島小原節",
-        "confidence": "hint"
-      }
-    ]
-  },
-  {
     "name": "LP26まつり",
     "venue": "ライオンズプラザ西葛西マンション内公園",
     "area": "江戸川区",

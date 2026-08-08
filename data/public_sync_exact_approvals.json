@@ -1,6 +1,6 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-08-07T14:20:00Z",
+  "reviewed_at": "2026-08-08T19:00:00+09:00",
   "reviewed_by": "koto",
   "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと） / 2026-08-01: 7/31に開催終了した5件（御徒町公園の盆踊り大会・道塚盆踊り・盆踊りフェス・大松氷川神社 納涼盆踊り大会・旭町一丁目町会 盆踊り）の same_key_update 承認を除去。7/29の登録時点から site・collector 双方が更新済みで承認は消費済みになっており、残置すると upcoming→ended の表示変更が reviewed_exact_approval_mismatch で公開同期を止め続けるため（2026-08-01の sync-public-data 失敗の直接原因）。差分は表示区分3フィールドのみで日付は不変、guard 側は ended_transition_downgrade として自動許可済み。内田さん明示GO。 / 2026-08-07: 江戸川区公式サイト（東部・鹿骨・小岩・小松川・葛西の5地区）の令和8年度 盆踊り日程一覧から、2026-08-07以降に開催される56件を addition として登録。あわせて四谷地域（新宿区）の令和8年度一覧から4件。江戸川区はこれから開催の公開が0件だった空白区で、これで58件になる。区公式一覧の「盆踊り」等の一般名詞は実施団体名を冠して改名済み（42件）。会場照合の過一致で2件（雷町会夏まつり／北篠崎二丁目自治会盆踊り）が別会場へ紐付いていたのを補正済み。内田さん明示GO（approval 042573a9）。おとの実行停止によりことが公開工程を引き継いだ。",
   "site_base_commit": "472d6b931991e66df6d18753d0f83e63a25328a3",
@@ -435,14 +435,6 @@
       "site_sha256": "13fae23c7f160c690dc6abac5c85c3b4e3268cb9c482028da3b9b3778096e802",
       "collector_sha256": "da6fd6972f2ecce989634dbb7999f5a26a8c95dd313f657011c5ad5812200bfa",
       "reason": "2026-07-29: 内田さん明示GOにより、過去改名24件を現行collector内容で再承認（おと）"
-    },
-    {
-      "id": "reviewed-update-20260728-e2054b05bdfb",
-      "kind": "same_key_update",
-      "event_key": "ゐの市盆踊り～不忍夢～||上野恩賜公園",
-      "site_sha256": "2a8c46db21a2ed2b003362ec04403e7df60b5ff4211d4bed8ab2c85e9b5967d9",
-      "collector_sha256": "e2054b05bdfbacf09b3b848f86adfbee94a8ff1ccb8e58bba7eae7dc3c4be64d",
-      "reason": "公式ポスター画像（主催 @ueno_club）から第7回の2026年日程 8/7-9 を確定。未確認→確認済み"
     },
     {
       "id": "reviewed-update-20260728-1a70233934b5",
@@ -1263,12 +1255,12 @@
       "reason": "2026-08-04 に内田さん承認のうえ master RDB へ新規登録。上野中通商店街振興組合による10日間の催し（2026-08-07〜08-16）。同会場の『ゐの市盆踊り～不忍夢～』（08-07〜08-09）は、この催しの前半3日にあたる学生団体おりがみとの共創企画とみられるため、期間の異なる2件として掲載する。情報源が3日間（主催に近い @ueno_club の公式ポスター）と10日間（出演者10アカウント以上・出店予定・上野公園のイベント情報サイト）で分かれている点は、双方の detail に明記済み。"
     },
     {
-      "id": "reviewed-update-20260804-d80e7fd8f460",
+      "id": "reviewed-update-20260808b-a1f60435d5c0",
       "kind": "same_key_update",
       "event_key": "ゐの市盆踊り～不忍夢～||上野恩賜公園",
-      "site_sha256": "e2054b05bdfbacf09b3b848f86adfbee94a8ff1ccb8e58bba7eae7dc3c4be64d",
-      "collector_sha256": "d80e7fd8f4601e0c25e9f1f6c077379163dbe571f3adf503d95258b4a62a86b5",
-      "reason": "2026-08-04 に内田さん承認のうえ detail のみ更新。同会場に新規登録した『上野ゐの市盆踊り』（10日間）との関係を相互参照として追記したもの。開催日・会場・名称は変更していない。"
+      "site_sha256": "d80e7fd8f4601e0c25e9f1f6c077379163dbe571f3adf503d95258b4a62a86b5",
+      "collector_sha256": "a1f60435d5c0df97b29b7ef879b51e67a07475885cef7897e8fbb8f8b9111548",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
     },
     {
       "id": "reviewed-addition-8da9445cb8f0",
@@ -1638,28 +1630,996 @@
       "reason": "2026-08-08 に内田さんの緊急依頼で新規登録。千代田区・神田公園地区連合町会が運営する「大好き神田」の告知ページ（https://daisuki-kanda.com/information/notice/?cno=6 ）に、司町二丁目町会主催・神田児童公園・2026-08-07〜08・17:00〜21:00 と掲載。本日2日目の開催で未掲載だったため緊急追加した"
     },
     {
-      "id": "reviewed-update-20260808-a7297346e27b",
+      "id": "reviewed-update-20260808b-f998e208cd9e",
       "kind": "same_key_update",
       "event_key": "六本木ヒルズ盆踊り||六本木ヒルズアリーナ",
-      "site_sha256": "57e4fb1f7b45f153c9aafa0bebd2bf6021366f44c1a32a6f4cdbb76f2c79c585",
-      "collector_sha256": "a7297346e27b630dcb7c8ad4d1cfaae43c45366e11a20d85fd6a9faf3d430d06",
-      "reason": "2026年開催回（2026-08-21〜23・六本木ヒルズ公式告知由来・confirmed）がRDBに入っていたのに公開へ出ていなかったものを反映する。2026-08-07 の江戸川区復旧作業の際、apply までは済んでいたが publish から先が止まったまま忘れられていた。サイト側の2025-08-22〜24（昨年開催表示）が2026年の確定日程へ置き換わる。日付が動く変更だが、公式告知に基づく正しい更新"
+      "site_sha256": "a7297346e27b630dcb7c8ad4d1cfaae43c45366e11a20d85fd6a9faf3d430d06",
+      "collector_sha256": "f998e208cd9e69ddd7fd88c40e608faa50b55d24caa37b2d4adc85220521ab94",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
     },
     {
-      "id": "reviewed-update-20260808-9c48063216a2",
+      "id": "reviewed-update-20260808b-6ce442f3432d",
       "kind": "same_key_update",
       "event_key": "北篠崎二丁目自治会盆踊り||北篠崎二丁目公園",
-      "site_sha256": "c759009e1dacebd4303fc4a9bed917931b86338dcd89f74efc4a72018a9aac27",
-      "collector_sha256": "9c48063216a2d181dcf23e12817960670ac2477d2277a47a536c8433e26943c3",
-      "reason": "detail 末尾の「会場を江戸川区公式一覧の〜へ照合補正。」の一文が、2026-08-07 の復旧でRDB側から失われたことによる差分。内部の作業メモに近い一文で読者への情報価値がなく、日付・名前・会場・その他の本文はすべて不変のため collector 側を採用する"
+      "site_sha256": "9c48063216a2d181dcf23e12817960670ac2477d2277a47a536c8433e26943c3",
+      "collector_sha256": "6ce442f3432d4a571227ce98f432caae56c9f14dec962fa5b6eea61ad6a22c1a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
     },
     {
-      "id": "reviewed-update-20260808-e3dfe8a2a7dd",
+      "id": "reviewed-update-20260808b-3367853c2589",
       "kind": "same_key_update",
       "event_key": "雷町会夏まつり||東葛西さくら公園",
-      "site_sha256": "ff7242a94cf19c538abd989fc8327cc45d406a094cb70269a140922d51aeb2fd",
-      "collector_sha256": "e3dfe8a2a7ddbb4959bc4e805a31a94d9320c4255d8687a26f0a3c02d7c774fc",
-      "reason": "同上の一文に加えて、曲目ヒント「さくら」が消える差分。この曲目は会場名「東葛西さくら公園」からの誤抽出とみられ、落ちるほうが正しい。日付（2026-08-08〜09）・名前・会場は不変のため collector 側を採用する"
+      "site_sha256": "e3dfe8a2a7ddbb4959bc4e805a31a94d9320c4255d8687a26f0a3c02d7c774fc",
+      "collector_sha256": "3367853c258933e4f72c922b22c6de924f8fa0d13931cc7df3d9570e5689a720",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c606ae4316e0",
+      "kind": "same_key_update",
+      "event_key": "秋葉原東部納涼大会||和泉小学校校庭・和泉公園",
+      "site_sha256": "1eecf780059a3130dd4c7b40f14e4647811d719e30b4628d340718418e0f35fa",
+      "collector_sha256": "c606ae4316e05b334dab2562d509d0175711a9e354a95c00664b0c70152d6af7",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-7c13edec0864",
+      "kind": "same_key_update",
+      "event_key": "日本テレビ通り振興会 納涼盆踊り大会||番町の森",
+      "site_sha256": "c605c20d08748f04dea47bde5ca5f0eab1dbab72e76f6cf77ed0363542515e6a",
+      "collector_sha256": "7c13edec0864bfff4365dbf5e903477cab9548da5cf177795664f9d34f8fd53c",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-cecff1d819ae",
+      "kind": "same_key_update",
+      "event_key": "司町二丁目町会 納涼盆踊り大会||神田児童公園",
+      "site_sha256": "b4e332bfcaa73ca987ba1dd43f8b2c3b6668840f1b90621648cb09b3de46e937",
+      "collector_sha256": "cecff1d819ae516855ad11acbd76f9c16f8d94433683c255f7993387e8441448",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-f702b506f3ab",
+      "kind": "same_key_update",
+      "event_key": "明石町会 納涼盆踊り||明石小学校",
+      "site_sha256": "dc18415bb468d2eae829eb296d3b856192f91c99d0dc67c14c1530f5e4f8ba03",
+      "collector_sha256": "f702b506f3ab1f66e08dc784b21c0bfc076bab9ac1cc20c89fcc04edd2eee875",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-d8b13d30901e",
+      "kind": "same_key_update",
+      "event_key": "大京町商店会納涼おどり大会||大京公園",
+      "site_sha256": "f9ed3e5bc35902a630e24377d28330d5b4290bab2b020327807f300d8df5b4b7",
+      "collector_sha256": "d8b13d30901e73717ec1e43a7093f76ed7a05e9dc917f122c16f0f21e6c48510",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-181ebe4ade3a",
+      "kind": "same_key_update",
+      "event_key": "杉大門通り盆踊り大会||杉大門通り",
+      "site_sha256": "e2e3a6f1ead008db0c616f10003fd4bbec2b4ed3576076d0bca3db849ccf1928",
+      "collector_sha256": "181ebe4ade3a6e421a202fa3ba32223532ef7910a2a13c32ac171044b18220a1",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c041d4ec261b",
+      "kind": "same_key_update",
+      "event_key": "花園町会納涼踊り大会||花園小学校",
+      "site_sha256": "ec68c933ed39b1bae02b54b51021c1d545991f34c61348a2be59caebcc9e4fc0",
+      "collector_sha256": "c041d4ec261bf4c1958708e459d37184add41c393bff77594a7f2c4c581d7a5e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-55df2854f0de",
+      "kind": "same_key_update",
+      "event_key": "踊ろう！in荒木町の秋||荒木公園",
+      "site_sha256": "e9d3ec6276976b3a91ab3c5a28d2ad5ac31283ecdf1693abb92f0eeb85087233",
+      "collector_sha256": "55df2854f0de09308a5e6fca839cfbb09dc2c575b8a39cdf22a6b15e795c089a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-6e0ed2345610",
+      "kind": "same_key_update",
+      "event_key": "駒込富士神社 納涼盆踊り大会||駒込富士神社",
+      "site_sha256": "3220fd1a15e5935b24de0860f4df7fe8e401ba4f33ca3e0012b52ae5a4baac32",
+      "collector_sha256": "6e0ed23456105a74c42096d3c1ee14b51aaeb02c06e6b018a28aeb3673b2982e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-6d84f81cf0e5",
+      "kind": "same_key_update",
+      "event_key": "上野ゐの市盆踊り||上野恩賜公園",
+      "site_sha256": "7ccf948c6e70a4d4a9104e985946aa81a1ea7a774002e1f535fdc9e779c3baa8",
+      "collector_sha256": "6d84f81cf0e562716987c1d7d572e9f4a9fabe3e39ae40d797dc6f02a951485e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-d144a3d9ac16",
+      "kind": "same_key_update",
+      "event_key": "御徒町公園の盆踊り大会||御徒町公園",
+      "site_sha256": "0316d949ec28d5ac267d6575e49c266008f71e0c332e4404e1bb4f9577e4babb",
+      "collector_sha256": "d144a3d9ac167c8147397780e5c99997322b30bfd291c9b72df61ec5d34fccaa",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c6a65f18ca6b",
+      "kind": "same_key_update",
+      "event_key": "扇橋三丁目町会 納涼盆踊り大会||つばめ幼稚園",
+      "site_sha256": "35680126e17acba2f91580544ab29176c5e7bf660c1a76fd03c37acc656266a7",
+      "collector_sha256": "c6a65f18ca6b6c88e7530de28400b5fa88b4d0633b115bf0dce2c768eb27cfdc",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-0a0716ae3710",
+      "kind": "same_key_update",
+      "event_key": "亀戸四丁目 納涼盆踊り大会||ふれあい公園",
+      "site_sha256": "ae1a1504f54346c117e7cb60df4d046e670cdbbbf51866816b93acafc87034e3",
+      "collector_sha256": "0a0716ae37100db476e5d4123990f26f724535c948476cba3913de181e9cc65d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-6ed77a187122",
+      "kind": "same_key_update",
+      "event_key": "とよす夏祭り||アーバンドック ららぽーと豊洲",
+      "site_sha256": "c875eebb59589d72b68febcf682330e9dd2328337a5c79560e3ca40e9e8500e2",
+      "collector_sha256": "6ed77a1871229015e0118e57fd4db65b07cb9243a96a3660164eaaa7d9ab63bb",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1e843d630db8",
+      "kind": "same_key_update",
+      "event_key": "東陽六・七丁目町会 夏まつり||イーストプラザ広場",
+      "site_sha256": "497700536843a79d7d9b440222ffaf68a207a2dbb378b4be48e84abe6b5380ad",
+      "collector_sha256": "1e843d630db8ab6510a1fedb742f92ad9d0b9095569a0b63e4838a774d1041b2",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-69be9a41fbd3",
+      "kind": "same_key_update",
+      "event_key": "江東区民まつり 亀戸地区夏まつり大会||亀戸中央公園",
+      "site_sha256": "10dc3b908209cd7348f91a4f39c6d20bceb296dc48a54f4230f9f6750d428de7",
+      "collector_sha256": "69be9a41fbd3d37ad3c8c6f36dd4343bd6638d5ec79161286f0b8b6faad37b06",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c1f485fa3cb7",
+      "kind": "same_key_update",
+      "event_key": "亀戸二丁目団地 ここがふるさと夏まつり||亀戸二丁目団地 一号棟前広場",
+      "site_sha256": "55ceae3506304a90ab968cfdf40e2d27f894466d1140b00ee0739c7bc0ef5786",
+      "collector_sha256": "c1f485fa3cb73af30852e8f469837ab0df896ab9ede031214e1794360dabfce2",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-dfc4de7c3283",
+      "kind": "same_key_update",
+      "event_key": "亀戸六丁目東町会 ふるさとまつり||亀戸平岩公園",
+      "site_sha256": "4da12b4ec49415352fd837887db8e569b44789bf7286469c9260b187bcf0671f",
+      "collector_sha256": "dfc4de7c3283c249d744a4268dc36ab8554d632634fd569acc0a0caa362ffc96",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-feb8ff4fe559",
+      "kind": "same_key_update",
+      "event_key": "南砂一・二丁目町会 盆踊り||南砂一丁目北公園",
+      "site_sha256": "db6b9d517ca6485606568570f0ce38d6343b7070c7ba743a021be45afd816629",
+      "collector_sha256": "feb8ff4fe55903556c6756d0bccd584dbc80083703551de97ce0ea8d1a4fea87",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-802be3c76f94",
+      "kind": "same_key_update",
+      "event_key": "南砂住宅 団地祭り||南砂住宅",
+      "site_sha256": "893b76cc8adf1de067501a34806ad6d65bc065bbc0a326373b27064a156795fc",
+      "collector_sha256": "802be3c76f9432be2c1af79cb9aafc763d919be321d9610f68ca3418c2311719",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-6dc7b409ebdc",
+      "kind": "same_key_update",
+      "event_key": "塩浜一丁目団地自治会 夏まつり||塩浜一丁目団地中央公園内",
+      "site_sha256": "2e361821885f10b217f6dc81136cef7269e9b01a97c43f6ff2ad1b8b95823752",
+      "collector_sha256": "6dc7b409ebdce0b52cac9cbd62a2627436a9ed1a559aa3c32f43a7cb9f5d2f9a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-d684f0c0ca8d",
+      "kind": "same_key_update",
+      "event_key": "大島三丁目団地自治会 夕涼み会||大島三丁目団地",
+      "site_sha256": "1f5e9250b05497690fa33d3c87fc4b5bd5a284bdf65bccf19022d0f489719a72",
+      "collector_sha256": "d684f0c0ca8dcab167b4feb1076ead23a82d756f215d7d467702559162903986",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-eac91df86f33",
+      "kind": "same_key_update",
+      "event_key": "大島三丁目町会 お祭り広場||大島三丁目緑道公園",
+      "site_sha256": "4aebf91f66df39a70a35fe11d2eb402b26c457fe45a72e05cb204817fda97987",
+      "collector_sha256": "eac91df86f339b6fe8f384f21ff75dc5821af3c0fd7f59cda12fa5318c25b4df",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-ca8c9290e798",
+      "kind": "same_key_update",
+      "event_key": "大島五丁目町会 ぼんおどり||大島五丁目公園",
+      "site_sha256": "d52634b26237d93340d13257a8f3193450ae9de480b3438522f86aff6c69be11",
+      "collector_sha256": "ca8c9290e798b7368801226d532b0a4296d14e852901f6c02713fc610b8573ec",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-bb361d2f7e05",
+      "kind": "same_key_update",
+      "event_key": "木場二丁目町会 盆踊り大会||木場二丁目公園",
+      "site_sha256": "ead9b25d5ab94beafe79e94a0c83f059240d958bdc9a0d7ca428891362c80208",
+      "collector_sha256": "bb361d2f7e0566c3bffaec3cea6ed63e0a4ca6530c9f6d6fa03585e911422a29",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-af6f555a7bb3",
+      "kind": "same_key_update",
+      "event_key": "東砂一丁目団地 ふれあい祭り||東砂一丁目団地",
+      "site_sha256": "2b9fa11945b673c881788789aece065d81218ea9808bd9f72385b803a3bda065",
+      "collector_sha256": "af6f555a7bb30ac787dbd1670567b098a38e0ba5ff18e84835afa57eb7d3cd95",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-881dceba5425",
+      "kind": "same_key_update",
+      "event_key": "東砂三丁目町会 盆踊大会||東砂第二公園",
+      "site_sha256": "cd92ba2218eb9792c224202d32287103c711e8f5866582e12d86c400ad0cd96c",
+      "collector_sha256": "881dceba5425e18ac581feb85d91eaa693a587e0125a94c01665f97b88c8babf",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c306c4a04aae",
+      "kind": "same_key_update",
+      "event_key": "亀戸五丁目町会 夏まつり||水神小学校校庭",
+      "site_sha256": "4fa830a6247fce9ff6174824294e3217b9a086c514c96d331ad50b65feb9d967",
+      "collector_sha256": "c306c4a04aaeab2ffffc6a06c856dcadfc2f6010226f3bbc4bbab5a1dffe6923",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-007a75f61151",
+      "kind": "same_key_update",
+      "event_key": "千田町会 納涼盆踊り大会||江東公園",
+      "site_sha256": "787da07b26bb4bd4eb8eb0c607240935207aa299697dc91714707730248d580a",
+      "collector_sha256": "007a75f61151548b0b88e3a68e3bbdae7dfba331550a1c40f75ee08cd534caaf",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-2dd9d9b74abc",
+      "kind": "same_key_update",
+      "event_key": "扇橋二丁目町会 納涼大会||江東公園",
+      "site_sha256": "3a6e377657655554278a57f0e051f2a2caec1036835a52623853362e94246d16",
+      "collector_sha256": "2dd9d9b74abc676f2d74eeb68af8ed3ad04ef2ab3b8f53ebcff0795a9a56dc2d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-b83acf37e8b9",
+      "kind": "same_key_update",
+      "event_key": "猿江一丁目町会 納涼まつり||猿江一丁目公園",
+      "site_sha256": "5a9b91935ebdab8a757a7de48359c4f57cbc4c30faaca5de73de7d585349f2b6",
+      "collector_sha256": "b83acf37e8b956e5ccd2700cfdd4f7deb9494c9098bd456ede6cdf1dc77b8ca5",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-5d2eee282ab1",
+      "kind": "same_key_update",
+      "event_key": "石島町会 夏祭り||石島町会会館前",
+      "site_sha256": "9b77e0b862e76fb778c2132c0d40b3fa0fe60b9b201e121fe79def0cb806bb0f",
+      "collector_sha256": "5d2eee282ab14de4d412318be4e81913d4acff06f015be85876f56ed535217d2",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-44ab6b52e790",
+      "kind": "same_key_update",
+      "event_key": "大井どんたく夏まつり||大井町駅前中央通り",
+      "site_sha256": "af431118eaf8037fea0aeaed00a16107c631dee7d6e63c81913d07d1137a251f",
+      "collector_sha256": "44ab6b52e790bad1dfc3d75b611aec190b9d8c15293c6ca2bd4d823d47b7ba64",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-8dbdee439693",
+      "kind": "same_key_update",
+      "event_key": "道塚盆踊り||道塚小学校校庭",
+      "site_sha256": "8f48f9f63fea949f4ae76d5f5ccb25fef87853e5ced8419d999535456e6ebee2",
+      "collector_sha256": "8dbdee439693cfbb3488abf17f50ed4681ce74675c364084d44526ea1f96301f",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-325b6a32bf46",
+      "kind": "same_key_update",
+      "event_key": "盆踊りフェス||ゆうぽうと世田谷レクセンター 駐車場",
+      "site_sha256": "3d72b291befcd191d249371f0da85a4440065e31304de1503f35d954d356c70b",
+      "collector_sha256": "325b6a32bf46097c5574448a2811b4dafdbfe6600386194a11130bf6c855be1b",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1ff3e083e327",
+      "kind": "same_key_update",
+      "event_key": "盆踊り(池尻地区)||池尻稲荷神社",
+      "site_sha256": "b1e4dfa0792e6a4af920fe04c6c171410d3b6a83aa8a6ce935ce377601d99870",
+      "collector_sha256": "1ff3e083e3272384cb8589ad6e355bc0df37aefdf61a55ddf64c9f1760ef264d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-37739267ba33",
+      "kind": "same_key_update",
+      "event_key": "からすやま夏まつり 盆踊り大会||烏山区民センター前広場",
+      "site_sha256": "23be9c71a3c0c6ca725eb1aefa6d7551ba07d8681b85438d7e59175966bd39e8",
+      "collector_sha256": "37739267ba33da396356bb855232153f11a59f58b02924e6cb69cfef018c431d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-cdff24179486",
+      "kind": "same_key_update",
+      "event_key": "法人格砧町自治会「納涼盆踊り大会」||砧八丁目児童遊園",
+      "site_sha256": "3ab02f7a5822c0c2fda8d422b8cab73cc66594e8e79f45cc6b0d1441d9a25ff3",
+      "collector_sha256": "cdff24179486983194a32ed1bf42a030a90f02174389dd4a75e69a7b4b5b7264",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-7931423d86ae",
+      "kind": "same_key_update",
+      "event_key": "ふるさと和泉 みんなの夏祭り||杉並和泉学園校庭",
+      "site_sha256": "ba0fcfac4194bef0cabd0d32b80e0e4a58d6eb934843dc8086d703b9fc3fb259",
+      "collector_sha256": "7931423d86aea8f2b21bc744f100d01fb8950a61aa1ffa54a0c1f49824864aa8",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1bfbbb5af1aa",
+      "kind": "same_key_update",
+      "event_key": "西武井荻商店街 納涼盆踊り大会||第一生命向い駐車場",
+      "site_sha256": "a963fcfb85b8893ea5b1c320e2c68d6209e15c913efb2e87214c28deea8c78f9",
+      "collector_sha256": "1bfbbb5af1aa759e469082f99d03b2aa192b046829423f167477007cb205e97b",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-44709e9c5ff6",
+      "kind": "same_key_update",
+      "event_key": "上板橋二丁目町会 盆踊り大会||七軒家公園",
+      "site_sha256": "f90b185c000c17377d1522b5ffea317d129cc0697988dd7019d6599970468d05",
+      "collector_sha256": "44709e9c5ff63c707e7b03fd4106c35ae303b22250bff9dbb56f2db13482bd2d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-9a6781ae43a8",
+      "kind": "same_key_update",
+      "event_key": "上谷津町会 盆踊り会||下赤塚小学校 校庭",
+      "site_sha256": "6a9c10abe8252483187aa4cf88c6b945b81501d737119ab4803f6c36cf52d488",
+      "collector_sha256": "9a6781ae43a83f48355b3d626d8d98d9a98b671d5c132e43791acc2096c49c10",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-6981a194963d",
+      "kind": "same_key_update",
+      "event_key": "徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会||北野小学校",
+      "site_sha256": "4afc36892883244ec03886d8d15664addcf456abd9e8875a073f0d4a38441b50",
+      "collector_sha256": "6981a194963d50e233acd630c0efb15ca64c7711fdf55ebe1cb03b07464973d8",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-2ce87c67aa9f",
+      "kind": "same_key_update",
+      "event_key": "坂下一丁目南町会 盆踊り大会||志村公園 特設会場",
+      "site_sha256": "debd789e550aa37cbf17a4bf0941608c8b695c52ab9d0150395258a4b3f47ba7",
+      "collector_sha256": "2ce87c67aa9f86ae9a247dccea6a84db9ea23fcfc144be99109550a4093052b1",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-531c14bf52e8",
+      "kind": "same_key_update",
+      "event_key": "小豆沢商友会 納涼盆踊り大会||志村第二中学校 校庭",
+      "site_sha256": "7b5217d0fc10e15b08b1569f528c1e651d41816ead04264e9c3fcf79c5245f01",
+      "collector_sha256": "531c14bf52e878d723ae5e98a2acd95e74f84fa8bb329af1259444455d75a76f",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-dd5ddcbe7f7d",
+      "kind": "same_key_update",
+      "event_key": "西台町会 盆踊り大会||志村第五小学校 校庭",
+      "site_sha256": "754208b36a18e8d8d7168477375174b3c372c84e7220890630cbe25e90232fb8",
+      "collector_sha256": "dd5ddcbe7f7d806e4383a88d99c9dac183d27af3028e6b4cfeaa7e4827231764",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-005f2a954284",
+      "kind": "same_key_update",
+      "event_key": "番匠免町会 盆踊り大会||松月院 駐車場",
+      "site_sha256": "a3f5835afcfc544016a5eba813b9e22b3d7866f2b70a7bf03077ed74572d6a53",
+      "collector_sha256": "005f2a95428484920eb7becd6e9774332d99935a903414428455ead357ec549d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-cb7795abafd2",
+      "kind": "same_key_update",
+      "event_key": "わくわく盆踊り||板橋フレンドセンター 校庭",
+      "site_sha256": "809d7ef38d72b6ef36ac3915346565202b209e8e1dbcf1bd7ce4e7ec9694e187",
+      "collector_sha256": "cb7795abafd2dc4b82dd949766ea8580da71c72b4b62884af78d7beabcf67937",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-741dc7f4c5d5",
+      "kind": "same_key_update",
+      "event_key": "大谷口一丁目町会 納涼盆踊り大会||板橋第十小学校",
+      "site_sha256": "e4f6e4a231291de3fa13f07e48a378adb1f13b386adb8a6c256f200274fd8082",
+      "collector_sha256": "741dc7f4c5d5d9fcd6594d509b42d3ab2edc271cc689b042294d983a4b2e637e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-6235ecb8b62c",
+      "kind": "same_key_update",
+      "event_key": "板橋仲町会・金沢自治会共催 盆踊り||板谷公園",
+      "site_sha256": "6965d796ee9906f3ff29594df0e20502169f3cc4c0177d1452687469c376d134",
+      "collector_sha256": "6235ecb8b62c5fe50fcce516f76016aa924f4bcb122cc8fc854f6f62f104c33c",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-f6ef43c9510c",
+      "kind": "same_key_update",
+      "event_key": "徳丸三ツ和会・徳丸平和会 合同盆踊り||紅梅小学校 校庭",
+      "site_sha256": "a36598246976418f239082dd9fbeed18921d227cbb03cff9cdf78d0490a51836",
+      "collector_sha256": "f6ef43c9510c87136b79459173fa03734baa4ebd43dad167f2a07d032cdb85c5",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-44ca3c1c7b4a",
+      "kind": "same_key_update",
+      "event_key": "舟渡町会 盆踊り大会||舟渡小学校 校庭",
+      "site_sha256": "7118ac749163dcdfdd352c49d3034573edfef8c30eef3070a40b582711490511",
+      "collector_sha256": "44ca3c1c7b4af0c411f64d75d0305244afa90a7f4ccc4b0004d0b7b43702e25e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c6ecccdfea16",
+      "kind": "same_key_update",
+      "event_key": "中台若木町会 盆踊りフェス||若木小学校 校庭",
+      "site_sha256": "2d1b7a0937081697ed444f9e907f087af58caf8e62b03e677546830f6cbbc9c5",
+      "collector_sha256": "c6ecccdfea16b7dd8496f0a3f64c0d438a3912155988ddf3ea9511f45520bfa4",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-fcfe16cfde1c",
+      "kind": "same_key_update",
+      "event_key": "蓮根南町会 納涼盆踊り||蓮根みなみ公園",
+      "site_sha256": "95709909a720aa94cba1f53d30436afba3e0c87fa25ee06f133adebe65c690ff",
+      "collector_sha256": "fcfe16cfde1cbc131bda629c5f38bdb8de56dc2de122e8860ff5be497814e4fb",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-47ff440c8e45",
+      "kind": "same_key_update",
+      "event_key": "蓮根仲町会 盆踊り大会||蓮根中央商店街通り",
+      "site_sha256": "1aa105e187a2db443b624b14bb3e232493738cf24731a7c884641ab332ead952",
+      "collector_sha256": "47ff440c8e45417cd9699da12b3dd588f6aee01cf55c6adc1bf316c7e70e44ca",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-9da8156cb6de",
+      "kind": "same_key_update",
+      "event_key": "蓮沼東町会 盆踊り大会||蓮沼児童遊園",
+      "site_sha256": "f001a66af529476d862e1fcfe9104913fcd7f061652da2d8f1de8eedd18a0ed1",
+      "collector_sha256": "9da8156cb6de3447fc2f22f206df9616ddb9b729d158ed23a93ef90f9059d6b8",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-62e89f3e6c3e",
+      "kind": "same_key_update",
+      "event_key": "上赤塚町会 納涼盆踊り||赤塚氷川神社",
+      "site_sha256": "fa64700829f59948e6766312565480847c2950d842e5aa386c1f0d5b8bf0e812",
+      "collector_sha256": "62e89f3e6c3e4651d772847a37713f1c486f4e998eee2efeeba2b8f6ddc22fd7",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-4d093be6760e",
+      "kind": "same_key_update",
+      "event_key": "高島平七丁目町会 納涼盆踊り大会||高島平七丁目第二公園",
+      "site_sha256": "a253a4d117eec0199edaf3a15c82f2f4d2711184a95fab5f30b599c041c3acf6",
+      "collector_sha256": "4d093be6760edb648416f48a78fb038b8c30de63de9c76a73921bcf9ad88a0ef",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-b998df6a8ebe",
+      "kind": "same_key_update",
+      "event_key": "西台北町会 納涼盆踊り大会||高島平九丁目第二公園",
+      "site_sha256": "9df063e5cd55bb7fbec1440b86db60bfc24baf5e9080c8178b7570fb03ee4ac6",
+      "collector_sha256": "b998df6a8ebe2031fcb3e99e4132452700af492ae375e64a976edd13d6338854",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-a3afa6a6996f",
+      "kind": "same_key_update",
+      "event_key": "高島町会 納涼盆踊り大会||高島平五丁目第二公園",
+      "site_sha256": "1322d8af3656954ca6fd4c9b30b4d632d656bbe960fc1b86a635b53767989a3a",
+      "collector_sha256": "a3afa6a6996f257f0191511402ef379e0a4c94e92f3bd160a0772aaff0fdd025",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-2c6bc144c8ba",
+      "kind": "same_key_update",
+      "event_key": "大松氷川神社 納涼盆踊り大会||大松氷川神社",
+      "site_sha256": "e7807d79e688138cf3e511016156f3384197f7e7a13655bde0c891e4640b1e94",
+      "collector_sha256": "2c6bc144c8ba1218d2664f02226c43ed9119b5674cc32174b3a48128eb156bc9",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1422ec193bda",
+      "kind": "same_key_update",
+      "event_key": "春日町盆踊り大会||春日神社",
+      "site_sha256": "9cfc50421c6cb3f9bda8297d64be74c30256a21c8405c985150fc13309182b07",
+      "collector_sha256": "1422ec193bdae508f317cca13798c812235e564bcfa8998a0b02fe10a718d784",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-7bc605b5aaca",
+      "kind": "same_key_update",
+      "event_key": "旭町一丁目町会 盆踊り||本覚寺",
+      "site_sha256": "417baee4f771cb2f8995e2e5519620da9b82edb9b1bcb039ef63e6166f1cfe82",
+      "collector_sha256": "7bc605b5aaca8c41f32fb3b0d635f187152e038d807d8ab5418c21e79681088e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-9f253cb528e8",
+      "kind": "same_key_update",
+      "event_key": "東綾瀬自治会 納涼盆踊り大会||東綾瀬公園",
+      "site_sha256": "389314a652b47619150bcf8633314aa08feae62bd410eb6fced13791669249b6",
+      "collector_sha256": "9f253cb528e88cfa358379fda809c12db96d2ee0a12bf02104ae24ceee715180",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1253552706a2",
+      "kind": "same_key_update",
+      "event_key": "お花茶屋ふるさとまつり||お花茶屋公園",
+      "site_sha256": "cdbfce54d641319d8b0fa79736e63a329ddf125bd5e1c770e213058843f5fdd0",
+      "collector_sha256": "1253552706a29adf333404339ec4b0263f1d66411598bfc1ef51f2bb0c5c6bb2",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-f288488eafbc",
+      "kind": "same_key_update",
+      "event_key": "亀有銀座商店街納涼盆踊り大会||亀有ゆうろーど（亀有銀座商店街）",
+      "site_sha256": "80d00610e7a1a81e97cbb150d165b63211ae1d3d3ce1228c1a6a598f15675823",
+      "collector_sha256": "f288488eafbc20149f31799aea02ccd53e96e62c489ad1983f2271355fb0babe",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1292acb47de0",
+      "kind": "same_key_update",
+      "event_key": "木根川町会ふれあい盆踊り||木根川中央公園",
+      "site_sha256": "65d7610070c9bac391ff748e0c6ce9df969da99511753f8f0257ce1883f56d49",
+      "collector_sha256": "1292acb47de06a75b02f0fd05d246f1b22e67ef87f75cbb27f408d16f5d106b0",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-3914476bc785",
+      "kind": "same_key_update",
+      "event_key": "五仲自治会盆踊り||くじら児童遊園",
+      "site_sha256": "9321dc91fd807df7c0ffb6d4a6c2331096c561c0d141c5caaf309a09b9cf5fdf",
+      "collector_sha256": "3914476bc78573bb9313a4c076c55a9ea2e319d2c5f680e2c48c4d402aa25528",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1193c9f57ef8",
+      "kind": "same_key_update",
+      "event_key": "ハイラーク船堀自治会秋まつり||しらさぎ児童遊園",
+      "site_sha256": "c289c3fbc6b7b7edfce12e96cc753638aab5967ba755b0196234a4e1ebe13702",
+      "collector_sha256": "1193c9f57ef84c4451da136471ddfa6f8e9863d744f99185ed00f995f4a85b0d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-770eb5e59510",
+      "kind": "same_key_update",
+      "event_key": "なぎさ納涼祭||なぎさニュータウン内中央広場",
+      "site_sha256": "048f2f1ab42de8ac154cb0d3d79066760a9894e82f67ac3f6c752088f332dc60",
+      "collector_sha256": "770eb5e59510a304590ee57f143309fc9521c1f41c6ceb48140c418f14f8499a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-48ec358fef1f",
+      "kind": "same_key_update",
+      "event_key": "LP26まつり||ライオンズプラザ西葛西マンション内公園",
+      "site_sha256": "13e972093caa93b656b253e40b31eca6c37b89d0779f05202c61e56f4b222c05",
+      "collector_sha256": "48ec358fef1f1bfac8da24a15d2f451c258213110e5d97f0004764f6e2c2db71",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-577c4b6671aa",
+      "kind": "same_key_update",
+      "event_key": "D館夏まつり||リバーウエストD館 駐車スペース",
+      "site_sha256": "12baa8136b7f34320ebb49f5039e8cd34838941e2e77a7c7d4445bf973fdd778",
+      "collector_sha256": "577c4b6671aa3bb54017f5cd526e66fbc9c2dc98dc3b3ce220c53d4c05a6058f",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-0990dd2359d6",
+      "kind": "same_key_update",
+      "event_key": "上小岩六東自治会盆踊り||上小岩天祖神社",
+      "site_sha256": "c2d97b646e342c7c33ce827db963fb29effc143be3a3769b668c7757d4452e59",
+      "collector_sha256": "0990dd2359d644b4403d6435c6c1c35ff890e2063e04e7ca28720541541e6d09",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-bd6ee5cb8193",
+      "kind": "same_key_update",
+      "event_key": "宿和会納涼盆踊り大会||下鎌田東小学校",
+      "site_sha256": "fec3b5fe0b48536bec0c1586acc32d91475b190868346517e84d05a0bcb42ca2",
+      "collector_sha256": "bd6ee5cb8193a89a3bfc8aaa2ea7bc79e894ddb58fc8f33b05dfd7d28f5be56b",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-3cfd23a527a1",
+      "kind": "same_key_update",
+      "event_key": "仲町町会納涼盆踊り||中割天祖神社",
+      "site_sha256": "2a12cf9baa3172404d06c04e81a219fd7a4d76e2ef3aba562e2554bb4ce90a91",
+      "collector_sha256": "3cfd23a527a11d6a0ea3c04b0f6c6d8a7b2681f78ae5af7ec6bdc9b251e1ee00",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-95cd8bb6ae1a",
+      "kind": "same_key_update",
+      "event_key": "一南自治会盆踊り||中曽根天祖神社",
+      "site_sha256": "7c13a1c772273e25f866155e4ae3726ab1f102be50e55278d89e3bed4d60c9de",
+      "collector_sha256": "95cd8bb6ae1a29ce6757ceb329448a96a7bc1ae213673f892859f5087bed1b1a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-700d527f000a",
+      "kind": "same_key_update",
+      "event_key": "今井町会納涼盆踊り大会||八雲神社前広場",
+      "site_sha256": "e0f1ba1933484201f77a9e9f8cf4135bbbfce22c6e4291cc15feb2e4c2180e3f",
+      "collector_sha256": "700d527f000aab46ab034d7cabd1ef37e72b4bb66beb4a8c9f1c7800591dc2e2",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-3b20dc807184",
+      "kind": "same_key_update",
+      "event_key": "公社東葛西第一住宅自治会住宅祭||公社東葛西第一住宅団地内公園",
+      "site_sha256": "2570dd34348cc23145a7cd6e990b351c107368f426948bcfdab220546da7d009",
+      "collector_sha256": "3b20dc80718494e56f9c374e33820222d036d85d5c529746edf7c3aefe41d365",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-5b8cc2c50329",
+      "kind": "same_key_update",
+      "event_key": "北小岩五丁目自治会盆踊り||北小岩五丁目天祖神社",
+      "site_sha256": "6410b95f7f611e76fc77354a262197f9e543036e7228c84bf613191211c379d2",
+      "collector_sha256": "5b8cc2c50329fc76629d829fee638bd677c36986d0e907c9e02a528f8bf65dd4",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-e44b99f88cdf",
+      "kind": "same_key_update",
+      "event_key": "六中自治会盆踊り||北小岩小学校",
+      "site_sha256": "79cbdf3ae11fe4852c1f8d92668f61781d625d0602d8a0bdc0eaa1aff9b884a4",
+      "collector_sha256": "e44b99f88cdfd5788d5a7bcff6b581bbd26f8d40fc68cc1290944ae117a6f6cf",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-cca85bfad996",
+      "kind": "same_key_update",
+      "event_key": "南小岩司町会盆踊り||南小岩三丁目第二児童遊園",
+      "site_sha256": "6ec719b61d8f0df73dd84d7732087347fa8c4168766c784cf8c5d562584be109",
+      "collector_sha256": "cca85bfad996a6a6033c283176ac5c7507090664b3defa2d6c5431f58af0d7e9",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1cd5d964e0f6",
+      "kind": "same_key_update",
+      "event_key": "扇子田自治会盆踊り||南小岩会館",
+      "site_sha256": "daa8cd4b92c074ce49b1898e5826e2dd0876dd2e18ed69e37b467c736f6e390a",
+      "collector_sha256": "1cd5d964e0f6b21588a50ffd91da7c078ad082e93af97b252cac3cf77d07bf7d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-38c596d52ab8",
+      "kind": "same_key_update",
+      "event_key": "南小岩神明町会盆踊り||南小岩六丁目児童遊園",
+      "site_sha256": "cfb9a0b9b29400109a952a431c18ebadc79c220c0997013407ea3c6eaa5b3166",
+      "collector_sha256": "38c596d52ab8d1d581f6798688739d4a13eb9bd61f8cb58c775d6d3d9299c6bb",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-5cd57e5560a5",
+      "kind": "same_key_update",
+      "event_key": "小岩駅前町会盆踊り||南小岩六丁目児童遊園",
+      "site_sha256": "70a2369ae099cb4f56d66116e1f23224b82518bd6df82805decb93d615883d02",
+      "collector_sha256": "5cd57e5560a5c4b45f260865be8562bdf4904cb1a1179dda52c7905f9ddbb8ab",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-13154aaa54b9",
+      "kind": "same_key_update",
+      "event_key": "河原田町会盆踊り||南小岩第二小学校",
+      "site_sha256": "8410748b34db92cb5ccf8b368f0b280d6dab5911268ad455c4f70cd58942b612",
+      "collector_sha256": "13154aaa54b92e19445bd96e2f4dd7d1b4eb344438d685b8f65da9ab6148d127",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-b86a92917193",
+      "kind": "same_key_update",
+      "event_key": "南篠崎天祖神社例大祭||南篠崎天祖神社",
+      "site_sha256": "babd1041912db0847882129278e098d36ec29243e531e444e770171b26310c6b",
+      "collector_sha256": "b86a929171931419998255368ad4c005e61b4d66fbb82580c1ac61f62c8390f5",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-e93a9d64dd7e",
+      "kind": "same_key_update",
+      "event_key": "南葛西町会納涼夏祭り||南葛西小学校",
+      "site_sha256": "6c3fef93e11cfe1e4755bcba125f3a2834942392bd6fbef4e10b1de9fd6015bb",
+      "collector_sha256": "e93a9d64dd7ea0849e5695342c06645dca00f55523a6119b65d99c142f79ca5f",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-d5cb17fce5d5",
+      "kind": "same_key_update",
+      "event_key": "小松川四丁目親交会ふるさと小松川夏祭り||善通寺駐車場",
+      "site_sha256": "c77163cc5bf23455510cddb7a2ce8ee701df8bdd173756374d7bd720b0342501",
+      "collector_sha256": "d5cb17fce5d512fbd7112ec4bfe17003cfa94c9fb047192ff492bfb89c2175e1",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-2d14ae970279",
+      "kind": "same_key_update",
+      "event_key": "巽親和会盆踊り||善養寺",
+      "site_sha256": "5c612e5581d47bdf732205117f73189b78513cab711f431e5128e1e024ec80f5",
+      "collector_sha256": "2d14ae970279eb3146599c955f140055b983b9c9126cc1eac16cb4162482e949",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-01e7981cd6af",
+      "kind": "same_key_update",
+      "event_key": "四南自治会盆踊り||四南公園",
+      "site_sha256": "20cdfbf6f875945c8044d79a7377d7ec37a49dd40d104b7dc37931b472ada46d",
+      "collector_sha256": "01e7981cd6af25d7b36a86beb18cb4d190708985e27cd7c3f1894a7dc15ce82d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-f29365af8ed2",
+      "kind": "same_key_update",
+      "event_key": "小岩田自治会盆踊り||小岩田天祖神社",
+      "site_sha256": "6d0b5c3c5eb29e732311233938883fdcffcddaead496025d49cab6340779db7f",
+      "collector_sha256": "f29365af8ed2f659ab38ccc3f4da4b941be54d0141ab6fb9c21801ca3da80385",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c7f7891c2535",
+      "kind": "same_key_update",
+      "event_key": "平井一丁目南親会夏祭り||平井一丁目児童遊園",
+      "site_sha256": "37c79a77208a22407b453610fc92ef4447ccb48268b8bafd95e0e47d973063de",
+      "collector_sha256": "c7f7891c253524555169297f69028c4979762ed8d460797ade07c13425c69596",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-af17de48bb03",
+      "kind": "same_key_update",
+      "event_key": "平井6丁目23号棟自治会納涼大会||平井六丁目23号棟 団地敷地内",
+      "site_sha256": "8c737d2e617cdc85ff4e5eba44272f1669868b0f2761bd6a88302208d9512ae8",
+      "collector_sha256": "af17de48bb0311725d0f3ac7ed2a186244cd8107f8ee9fa6aadb05b8c699a368",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-e40ecc5d21f0",
+      "kind": "same_key_update",
+      "event_key": "平井六丁目東町会納涼盆踊り大会||平井小学校",
+      "site_sha256": "11a561f518d9b5c784058fea11ec1fbf4c3ebaf7030fc11200a6cc3082a97ee9",
+      "collector_sha256": "e40ecc5d21f0d40f3593034759c796b8bb0e51a0014c1691ed868e9544ee617b",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-c2ae2b0e9797",
+      "kind": "same_key_update",
+      "event_key": "平井西町会納涼盆踊り大会||平井西小学校",
+      "site_sha256": "6935a0a6c4c48d2378332db7f137b66bfeac49780a266c75809feac5c928b2ee",
+      "collector_sha256": "c2ae2b0e9797a7af281ce2649959d2c4b50752c277cc762073b5336daa1f7153",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-2e1d861fed41",
+      "kind": "same_key_update",
+      "event_key": "椿ふるさとまつり||弥生公園",
+      "site_sha256": "e7cae63ad5097c02b53db7eb020f83d4b85eb3ca794bf50cccf2dbcd4cf3abb0",
+      "collector_sha256": "2e1d861fed41e235938e4047ddf13d504fbe10afa429c97bb94a2528ae4f1a6e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-9e4d3e3479c5",
+      "kind": "same_key_update",
+      "event_key": "船堀七丁目町会盆踊り大会||新川さくら館広場",
+      "site_sha256": "210472f935c77e78521a59d0ee5b3f36c3d1608f07be1229dcc8396a63d54813",
+      "collector_sha256": "9e4d3e3479c5434cb563985d8d1017ab460e93e1cf53ac338c19b6a0a667857e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-1dc248146d7e",
+      "kind": "same_key_update",
+      "event_key": "新田町会盆踊り大会||新田公園",
+      "site_sha256": "e47b7258a6b2c3873a2635214d0d0b17b4bb5ffc3d7342fc0a15f8a4f8aefc05",
+      "collector_sha256": "1dc248146d7e640d1e2a30f7e68acaaf771392749d8217e303a3e3d2399426c9",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-8961693f5c07",
+      "kind": "same_key_update",
+      "event_key": "まつりだワッショイ小松川||東大島駅前大島小松川公園季節の広場",
+      "site_sha256": "197d74abf75de15c2fdbf1175c12083b06a05774ec5b6f919647e0ea04d8307b",
+      "collector_sha256": "8961693f5c07a961c93897137d75d5203202a28fd94dbb0e7a9399dd56bc8b01",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-019577e86af9",
+      "kind": "same_key_update",
+      "event_key": "江戸川北東自治会盆踊り||東小岩天祖神社",
+      "site_sha256": "071f09cbac7fd3367b8bdc7acdbeac630255f98d449643a9ee80503a425b7b98",
+      "collector_sha256": "019577e86af954433912fbc4246c0a7eae355fdcc44a9a2abfbf1aa163c23b1d",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-0ee8036965c1",
+      "kind": "same_key_update",
+      "event_key": "小岩二東町会盆踊り||東小岩小学校",
+      "site_sha256": "a1c1ea803d24546d2193b95115a1704aa6ec8f47f372890cfff0d758d1e5a30f",
+      "collector_sha256": "0ee8036965c1ac123e6d624915a0ddd226dc3f3c4b007f9e47f856f92f6e8d08",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-584299493e04",
+      "kind": "same_key_update",
+      "event_key": "東小岩中央自治会盆踊り||東小岩滝児童遊園",
+      "site_sha256": "e4f0de966fbfc50b102e73452c724b31aaff1511a94c789c198fa3674bf5a75f",
+      "collector_sha256": "584299493e044c01947dbee8105b0ce5cff4b5959d0d2ca9c4a0c023b9fb371c",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-04835085d50e",
+      "kind": "same_key_update",
+      "event_key": "松本町会盆踊り||松本天祖神社",
+      "site_sha256": "7c1da3b464ff987421d5a3cf09e5735bc76b11c0b3e8de4ea7db9598d28f16be",
+      "collector_sha256": "04835085d50e98071aefc9f77557cb6d0cc2e83511cee85164f8acf785e2f2c7",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-58f687cf1a1d",
+      "kind": "same_key_update",
+      "event_key": "西小岩六西自治会盆踊り||江戸川区立福祉作業所",
+      "site_sha256": "d438097bf073dababa4873ed6b0c2d26b8b2e9a8485e8aee9abbe8159613b41e",
+      "collector_sha256": "58f687cf1a1d1139269985ab646c3cf89786cc93733724ae36dd7b561101a719",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-eba68e34776a",
+      "kind": "same_key_update",
+      "event_key": "片山自治会盆踊り||片山公園",
+      "site_sha256": "e3dd08d59abbf0023600dc5e46ad582cfbbd716aa3bfb91017e610a11779d41d",
+      "collector_sha256": "eba68e34776a348105e6ff3546ed0169c49e952932787ab0fcc7169955733295",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-156d48af4f87",
+      "kind": "same_key_update",
+      "event_key": "椿フェスティバル||瑞江葬儀所裏こどもの広場",
+      "site_sha256": "9b59d8dacf9ae7669a23bee866a8987c27e543284ac1bbb4b5da0a2e5599d191",
+      "collector_sha256": "156d48af4f8768e7b4b50606104bb33d45bc99ba198619d443271611adf7bdb3",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-cee9bee1403d",
+      "kind": "same_key_update",
+      "event_key": "椿祭り||第二椿児童遊園",
+      "site_sha256": "e9b73b58891362eaea9c230e3e2623c6e8a684642810347adb3e50fdba49b0c6",
+      "collector_sha256": "cee9bee1403de5bed89a1509fed798c936659514a76946572ef7212095df36c6",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-70b3c66de443",
+      "kind": "same_key_update",
+      "event_key": "篠崎本郷町会盆踊り||篠崎二丁目公園",
+      "site_sha256": "4e131ec7602060329cb2e34e53880f23d27e97feac4036073a9c58e42bf35de0",
+      "collector_sha256": "70b3c66de4434bb7afab800f00c0852977a0e017ece596efba0ef6a9a1265d1e",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-02c70c8a4fe7",
+      "kind": "same_key_update",
+      "event_key": "下篠崎町会盆踊り大会||篠崎六丁目第二広場",
+      "site_sha256": "ad511292c308d215a359f68fe7ccaafa78b862577358a9971f46761e3c9b83a8",
+      "collector_sha256": "02c70c8a4fe7396e86c6aedb41c159ed8cb266f8d2f45f700dbe813d70e7f5b0",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-5911e6dd18e8",
+      "kind": "same_key_update",
+      "event_key": "篠崎七丁目町会盆踊り||篠崎第四小学校",
+      "site_sha256": "03c4c7479cd1b33ef56df31d4a1cba2183fba7f0eb17d4093efca95ed45e23d2",
+      "collector_sha256": "5911e6dd18e806e049d7a363ac1a23fc98da8925b599f8be0afe7133a339837a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-e99d96e739e1",
+      "kind": "same_key_update",
+      "event_key": "興宮自治会盆踊り||興宮神社",
+      "site_sha256": "4ec2747a878effd6167127b490d56eb69cb700d1d77bca9121e6ff89612a7052",
+      "collector_sha256": "e99d96e739e1b3efdbaec60cca8415b10dbe1edd2d9994a422dfa5a20c2516af",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-2e608aede0c2",
+      "kind": "same_key_update",
+      "event_key": "船堀三丁目町会盆踊り大会||船堀三丁目公園",
+      "site_sha256": "5fcd54b4bbbcb66b21ad67cdd770577b9c123f03c6bbaf0b72d141d0c9900912",
+      "collector_sha256": "2e608aede0c2cd9c3d0a7e18ae45b01f415cdcb43cdd36abb0b6c35bb8209d7a",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-a03a57de2765",
+      "kind": "same_key_update",
+      "event_key": "自治会コミニティー5秋まつり||葛西東公園",
+      "site_sha256": "f2028b8cbdf0f0149f1c56b893f6b1d70befdc4cd57efba93f3e540f923d8715",
+      "collector_sha256": "a03a57de27659b9b9352e5110f8b36bd53042d715d019c6ad17709e7bcf4ed78",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-9c3507774b7f",
+      "kind": "same_key_update",
+      "event_key": "西小岩中央町会盆踊り||西小岩公園",
+      "site_sha256": "f96cd1d605e7ba7c5c52b894931d3e2c38ff4c3b2ce11f528ea6aaafda60469c",
+      "collector_sha256": "9c3507774b7fe7422aba8bd3f6a0a67476f959ce3aff144e10961d8468ee7c96",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-05eb260fc1d6",
+      "kind": "same_key_update",
+      "event_key": "子どもふれあいまつり||西瑞江三丁目第三児童遊園",
+      "site_sha256": "35cdcee81e2c7909cb8bf88c6adba2be0275e9358d911ae1c67fa4ffef592113",
+      "collector_sha256": "05eb260fc1d6d330be4d88d8eec3e511f70e18bf6b34d299f20af5cc024a5cf1",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-0a42d58ada61",
+      "kind": "same_key_update",
+      "event_key": "シティコープ西葛西自治会夏祭り||西葛西五丁目児童遊園",
+      "site_sha256": "6a6d092821c90453d833378ba5398897b81ac24446c6ce5272c416664f378dd3",
+      "collector_sha256": "0a42d58ada61cfed974e31c7f861c01fac9adb54cc7f14c0b0911ba8145807c3",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-9dce2c892cc3",
+      "kind": "same_key_update",
+      "event_key": "谷河内南町会盆踊り大会||谷河内みなみ公園",
+      "site_sha256": "cd4066228325e12c5bc36bd746af3cdc88c97d657ca1a062d8dab54860c5d621",
+      "collector_sha256": "9dce2c892cc3970a9a1eb72452262f77f9796b3d689d00e76f8cdeaa08767627",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-a6af200793ef",
+      "kind": "same_key_update",
+      "event_key": "豊田神社奉納盆踊り大会||豊田神社",
+      "site_sha256": "3be75082d0db008478b24730bd2261b01d7718672222fbfe8420f705a484a788",
+      "collector_sha256": "a6af200793efd8d0c8a972a27abe3b44c9f1e045c40e1d818b3bfdaab19fcd3c",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-22d39e39c2ee",
+      "kind": "same_key_update",
+      "event_key": "都営船堀団地自治会納涼祭||都営船堀団地内広場",
+      "site_sha256": "d24247323cb0c6f2497a9d6be2e34430e92abcaf642a12648f5ffa095df259fc",
+      "collector_sha256": "22d39e39c2eebf99660a4be284e24797b225ca5bf820aca3e6199454cf049f09",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-0dfef914acf3",
+      "kind": "same_key_update",
+      "event_key": "長島町会納涼盆踊り大会||長島香取神宮境内",
+      "site_sha256": "03002208a6fe0b51f5dccfde0280216a5c9b2520ac4a2a085be162b6b0eb84ec",
+      "collector_sha256": "0dfef914acf3aaca7acc3f7ac8d07048fee6e9150431a1777a288c5557d6aeb1",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-update-20260808b-044f79fe381f",
+      "kind": "same_key_update",
+      "event_key": "鹿骨二丁目町会盆踊り||鹿骨中学校",
+      "site_sha256": "ba75309b623a5dd3ee204cebf8ebb9d20d0df5900f0ce60a5b911e0f0039dc76",
+      "collector_sha256": "044f79fe381f399f55fc0df1a0bc4bf98a52e91bd753c10aadc8ce0924e1b051",
+      "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
     }
   ]
 }

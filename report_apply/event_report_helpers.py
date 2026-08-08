@@ -281,19 +281,28 @@ def confirm_occurrence_schedule_venue(
     confidence="high",
     source_kind=None,
     detail_addendum=None,
+    detail_replacement=None,
     date_basis_note=None,
     as_of_date=None,
     now=None,
 ):
-    """Confirm venue/date for an existing occurrence, or just append a detail note.
+    """Confirm venue/date for an existing occurrence, or just edit the detail note.
 
     venue_id and date_start are independently optional -- pass neither to only
-    append detail_addendum (the "already confirmed, just add a note" case),
+    edit the detail (the "already confirmed, just fix the wording" case),
     pass either to also confirm date_status/lifecycle_status/confidence/source_kind
     and (if date_start is given) upsert an occurrence_dates row.
-    detail_addendum is appended to the existing detail with a newline, idempotently
-    (skipped if the exact text is already present).
+
+    detail は2通りの編集ができる。
+    - detail_addendum: 既存の detail の末尾へ改行区切りで足す。同じ文が既にあれば
+      何もしない（冪等）。事実を「付け足す」ためのもの。
+    - detail_replacement: 既存の detail を丸ごと置き換える。公開文面の書き直しや、
+      載せてはいけない記述の削除に使う。既に同じ文面なら何もしない（冪等）。
+
+    両方を同時に渡すことはできない（どちらが最終形か決まらないため）。
     """
+    if detail_addendum and detail_replacement:
+        raise ValueError("detail_addendum と detail_replacement は同時に指定できない")
     now = now or now_utc()
     row = _rows(
         conn,
@@ -307,6 +316,8 @@ def confirm_occurrence_schedule_venue(
     new_detail = prior_detail
     if detail_addendum and detail_addendum not in prior_detail:
         new_detail = f"{prior_detail}\n{detail_addendum}".strip() if prior_detail else detail_addendum
+    elif detail_replacement is not None:
+        new_detail = detail_replacement.strip()
 
     changed_fields = []
     if venue_id is not None or date_start is not None:

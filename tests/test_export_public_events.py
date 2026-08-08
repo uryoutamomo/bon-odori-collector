@@ -418,6 +418,38 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertNotIn("おと（Codex）", public)
         self.assertNotIn("固定日ルール記録", public)
 
+    def test_public_detail_text_removes_brackets_left_empty_by_url_removal(self):
+        """URL を消したあとに「（ ）」だけが残って読者に見えないようにする。
+
+        本文中に「（ https://... ）」と書かれた出典は URL が削除されるため、
+        対策がないと「掲載されている（ ）。」という壊れた文が公開される。
+        2026-08-08 時点で公開370件のうち83件がこの状態だった。
+        """
+        detail = (
+            "千代田区・神田公園地区連合町会が運営する「大好き神田」の告知ページに、"
+            "2026-08-07・2026-08-08・17:00〜21:00 と掲載されている"
+            "（ https://daisuki-kanda.com/information/notice/?cno=6 ）。"
+            "補助出典＝おどったー（ https://odottar.com/event/6874701c0e 、"
+            "上記ページを出典として引く第三者集約サイト）。"
+        )
+
+        public = public_detail_text(detail)
+
+        self.assertNotIn("https://", public)
+        self.assertNotIn("（ ）", public)
+        self.assertNotIn("（）", public)
+        self.assertIn("と掲載されている。", public)
+        # 説明が続くカッコは中身を残したまま、先頭の宙に浮いた読点だけを落とす
+        self.assertIn("おどったー（上記ページを出典として引く第三者集約サイト）。", public)
+
+    def test_public_detail_text_removes_dangling_source_label(self):
+        """末尾が「出典:」だけで終わる文を残さない（2026-08-08 時点で11件）。"""
+        detail = "7/31は18:30、8/1は18:00開始。出典: https://example.com/a"
+
+        public = public_detail_text(detail)
+
+        self.assertEqual(public, "7/31は18:30、8/1は18:00開始。")
+
     def test_sanitize_public_event_details_hides_existing_internal_evidence(self):
         rows = sanitize_public_event_details([{
             "name": "郡上おどり in 青山 2026",

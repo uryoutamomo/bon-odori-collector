@@ -307,6 +307,7 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
             date_end=event.get("date_end"),
             source_kind=notice_kind,
             detail_addendum=event.get("detail_addendum"),
+            detail_replacement=event.get("detail_replacement"),
             date_basis_note="公式掲示物・チラシで確認。",
             now=now,
         )

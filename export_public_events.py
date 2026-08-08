@@ -324,7 +324,13 @@ def public_detail_text(text):
     public = re.sub(r"\[[A-Z]\d+\]\s*", "", public)
     public = re.sub(r"\[[a-z_]+\]\s*", "", public)
     public = re.sub(r"https?://\S+", "", public)
-    public = re.sub(r"(?:公式URL|根拠URL|参照URL|出典URL)[:：]\s*(?=$|[。．])", "", public)
+    # URL を消した跡に残る記号を片付ける。本文中に「（ https://... ）」と書かれた
+    # 出典は URL だけが消えるので、放っておくと「掲載されている（ ）。」という
+    # 壊れた文がそのまま公開される。
+    public = re.sub(r"[（(]\s*[)）]", "", public)
+    public = re.sub(r"[（(]\s*[、,]\s*", "（", public)
+    public = re.sub(r"\s*[、,]\s*[)）]", "）", public)
+    public = re.sub(r"(?:公式URL|根拠URL|参照URL|出典URL|出典)[:：]\s*(?=$|[。．])", "", public)
     public = re.sub(r"\s+", " ", public).strip()
     return public
 
