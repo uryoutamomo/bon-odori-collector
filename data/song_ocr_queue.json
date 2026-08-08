@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 57,
+  "count": 59,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -903,6 +903,36 @@
         "pic.x.com/Yd1fEWiCkX"
       ],
       "text": "今回の柏まつり\nこんな事やります🥳\n\n東口の盆踊りも復活します\n曲目に柏踊りと京北音頭以外も入る予定です\n引用リポストよろしくお願いします🙇 https://t.co/Yd1fEWiCkX",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "e6164196a1ac8a5d",
+      "status": "needs_ocr",
+      "account": "@hikachanenikki",
+      "url": "https://x.com/hikachanenikki/status/2085675828067844438",
+      "tweet_id": "2085675828067844438",
+      "date": "2026-08-07T10:34:02+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPHPG6XaQAEe9Zg.jpg",
+        "https://t.co/f2CIF79qfw",
+        "pic.x.com/f2CIF79qfw"
+      ],
+      "text": "今年も神田明神のアニソン盆踊り\nにやってきました\nもう７年ぐらい連続で来てるな俺\n曲目に関しては\nYOASOBIのアイドル以外は\n毎年同じ楽曲ですね\n奥にいけばいくほど\n屋台に並ばなくて済みます https://t.co/f2CIF79qfw",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "f510ca811adc8a8c",
+      "status": "needs_ocr",
+      "account": "@onehandredten",
+      "url": "https://x.com/onehandredten/status/2085750575933841870",
+      "tweet_id": "2085750575933841870",
+      "date": "2026-08-07T15:31:03+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPITFo6aAAE2u4Y.jpg",
+        "https://t.co/n7w6hJI6Q6",
+        "pic.x.com/n7w6hJI6Q6"
+      ],
+      "text": "今どきの盆踊りはほんま華やか！\n昭和も平成も所詮は場に溶け込んだもん勝ち!?\nとゆう事を初めて知ったかも…\n\n曲目 ♪GOLDFINGER'99→♪きよしのズンドコ節→♪アゲ♂️アゲ♂EVERY☆騎士etc. https://t.co/n7w6hJI6Q6",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_review_lanes.py",
-  "generated_at": "2026-08-07T07:59:07.618150+00:00",
+  "generated_at": "2026-08-08T07:34:42.400314+00:00",
   "contract": {
     "daily_input_max": 30,
     "lane3_user_review_max": 3,
@@ -135,7 +135,6 @@
           "8月2"
         ],
         "observed_dates": [
-          "2026-08-07",
           "2026-08-08",
           "2026-08-12",
           "2026-08-15",
@@ -779,57 +778,6 @@
         "lane": "lane3_user_review"
       },
       {
-        "candidate_id": "xgap_0099958c03723e69",
-        "source_key": "x:2067121332190683529",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/natsutr_bon/status/2067121332190683529",
-        "source_text": "\n【第72回大井どんたく夏まつり】\n🏮8/22(土)23(日)🕓14:00-20:00📍大井町駅周辺(品川区)\n\n大井町駅前中央通りを会場に開かれる、大井町の夏の一大イベント✨\nご当地曲大井どんたく音頭を踊る盆踊りタイムは22日(土)18:00-20:00(予定)\nほかにも和太鼓やダンス、LIVEなど♪\nhttps://t.co/Bft4W7hrzR",
-        "source_author": "@natsutr_bon",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@natsutr_bon",
-          "account_name": "奈津大郎〘ナツタロ〙",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/22"
-        ],
-        "observed_dates": [
-          "2026-08-22"
-        ],
-        "event_group_key": "informal:38268dfe4f56149a",
-        "voice": {
-          "source": "x",
-          "account": "@natsutr_bon",
-          "name": "奈津大郎〘ナツタロ〙",
-          "title": "",
-          "text": "【第72回大井どんたく夏まつり】\n🏮8/22(土)23(日)🕓14:00-20:00📍大井町駅周辺(品川区)\n\n大井町駅前中央通りを会場に開かれる、大井町の夏の一大イベント✨\nご当地曲大井どんたく音頭を踊る盆踊りタイムは22日(土)18:00-20:00(予定)\nほかにも和太鼓やダンス、LIVEなど♪\nhttps://t.co/Bft4W7hrzR",
-          "url": "https://x.com/natsutr_bon/status/2067121332190683529",
-          "date": "2026-06-17T05:45:05+00:00",
-          "tweet_id": "2067121332190683529",
-          "tags": [
-            "🟡関心",
-            "q-report"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/natsutr_bon/status/2067121332190683529"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "lane": "lane3_user_review"
-      },
-      {
         "candidate_id": "xgap_218371cdb07ae22d",
         "source_key": "x:2067765707643949227",
         "lane_hint": "lane2",
@@ -1064,7 +1012,7 @@
         "lane": "lane3_user_review"
       },
       {
-        "candidate_id": "xgap_4144705cb2478e19",
+        "candidate_id": "xgap_d4cfc1a9576b9a8a",
         "source_key": "x:2071528030485594126",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
@@ -1094,11 +1042,10 @@
           "8/24"
         ],
         "observed_dates": [
-          "2026-08-07",
           "2026-08-24",
           "2026-09-17"
         ],
-        "event_group_key": "informal:2f012d1c5256f53b",
+        "event_group_key": "informal:ad1a6e041369f2ef",
         "voice": {
           "source": "x",
           "account": "@jujonakahara1",
@@ -1261,6 +1208,62 @@
         },
         "source_urls": [
           "https://x.com/shinagawakanko/status/2075061948228800554"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "lane": "lane3_user_review"
+      },
+      {
+        "candidate_id": "xgap_f171527d5ebd712a",
+        "source_key": "x:2075152227652829682",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/toyo_app/status/2075152227652829682",
+        "source_text": "\n✨イチオシdiscover✨\n\n今回紹介するのは”盆踊りのボランティア”\n赤羽台の桐ヶ丘地区で9月12日に開催されるよ〜！\n\n会場運営や誘導などを行うみたい！\n実は昨年復刻した盆踊り大会🍧\n\nぜひみんなの力で盛り上げてほしいな〜〜〜！\nDiscoverのポスターに詳細も書いてあるから\nぜひ見てみてね💌 https://t.co/OgKwaRnYaD",
+        "source_author": "@toyo_app",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@toyo_app",
+          "account_name": "東洋大学公式アプリPR隊【公式】",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "9月12日"
+        ],
+        "observed_dates": [
+          "2026-09-12"
+        ],
+        "event_group_key": "informal:1729f44445bc57c3",
+        "voice": {
+          "source": "x",
+          "account": "@toyo_app",
+          "name": "東洋大学公式アプリPR隊【公式】",
+          "title": "",
+          "text": "✨イチオシdiscover✨\n\n今回紹介するのは”盆踊りのボランティア”\n赤羽台の桐ヶ丘地区で9月12日に開催されるよ〜！\n\n会場運営や誘導などを行うみたい！\n実は昨年復刻した盆踊り大会🍧\n\nぜひみんなの力で盛り上げてほしいな〜〜〜！\nDiscoverのポスターに詳細も書いてあるから\nぜひ見てみてね💌 https://t.co/OgKwaRnYaD",
+          "url": "https://x.com/toyo_app/status/2075152227652829682",
+          "date": "2026-07-09T09:37:00+00:00",
+          "tweet_id": "2075152227652829682",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HMxQyFob0AAttks.jpg",
+            "https://t.co/OgKwaRnYaD",
+            "pic.x.com/OgKwaRnYaD"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/toyo_app/status/2075152227652829682"
         ],
         "corroboration_count": 1,
         "source_count": 1,

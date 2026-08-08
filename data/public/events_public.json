@@ -1615,10 +1615,10 @@
     "detail": "18:00-21:00。屋台軽食類、飲み物生ビール・ジュース等、イベント子ども盆踊り大会(お菓子付)。（令和8年納涼マップ京橋五の部より）",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-08-06〜2026-08-07",
     "recurrence_label": "2026年開催終了",
@@ -1633,7 +1633,7 @@
       "2026-08-06",
       "2026-08-07"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "晴海ふ頭公園盆踊り大会",
@@ -21135,7 +21135,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21156,7 +21156,7 @@
     "last_seen_dates": [
       "2025-08-01"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -21522,7 +21522,7 @@
     "source_urls": [],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21545,7 +21545,7 @@
     "last_seen_dates": [
       "2025-08-01"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -27405,10 +27405,10 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-08-06〜2026-08-07",
     "recurrence_label": "2026年開催終了",
@@ -27423,7 +27423,7 @@
       "2026-08-06",
       "2026-08-07"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "綾瀬三丁目自治会 納涼盆踊り大会",
