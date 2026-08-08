@@ -1,15 +1,15 @@
 {
   "generated_by": "apply_official_notice_report.py",
-  "generated_at": "2026-08-08T02:13:10.885023+00:00",
+  "generated_at": "2026-08-08T08:25:05.766756+00:00",
   "mode": "apply",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "report": "data/official_notice_reports/shinjuku_yotsuya_restore_2026.json"
+    "report": "data/official_notice_reports/detail_cleanup_report.json"
   },
   "outputs": {
     "target_db": "data/bon_odori_master.sqlite",
     "dry_run_db": "",
-    "backup_db": "data/backups/bon_odori_master.20260808T021310.885023+0000.sqlite.bak",
+    "backup_db": "data/backups/bon_odori_master.20260808T082505.766756+0000.sqlite.bak",
     "json": "data/official_notice_report_apply_report.json",
     "markdown": "data/official_notice_report_apply_report.md"
   },
@@ -30,7 +30,7 @@
       "event_occurrences": 426,
       "event_series": 408,
       "event_series_aliases": 25,
-      "evidence_items": 31334,
+      "evidence_items": 31335,
       "external_record_links": 2654,
       "historical_promotion_candidates": 16,
       "master_meta": 0,
@@ -38,11 +38,11 @@
       "observed_occurrence_songs": 30883,
       "observed_occurrences": 2164,
       "occurrence_dates": 479,
-      "occurrence_evidence_links": 287,
+      "occurrence_evidence_links": 335,
       "occurrence_song_evidence_links": 1011,
       "occurrence_songs": 823,
       "predicted_occurrence_dates": 14,
-      "review_inbox_items": 576,
+      "review_inbox_items": 592,
       "schema_migrations": 4,
       "song_aliases": 142,
       "songs": 399,
@@ -53,120 +53,692 @@
   },
   "report": {
     "report_type": "official_notice",
-    "reported_at": "2026-08-08T10:40:00+09:00",
+    "reported_at": "2026-08-08T18:00:00+09:00",
     "source": {
-      "report_id": "shinjuku_yotsuya_restore_2026",
-      "title": "四谷地域の盆踊り情報（令和8年度）— 公開済み4件のマスタRDB再登録",
-      "account_key": "荒木町町会（四谷地域の盆踊り情報 令和8年度）",
-      "raw_text": "荒木町町会サイトの「続々更新！四谷地域の盆踊り情報を公開【令和８年度（2026年）】」に掲載されている四谷地域の盆踊りのうち、bonsuke.jp では公開済みなのにマスタRDBに存在しない4件を再登録する。2026-08-07 の江戸川区復旧作業で新宿区分が取り残されたため、公開JSONを再生成するとこの4件が消える状態になっていた。ページには大京町商店会納涼おどり大会（8/22-23・18:00〜21:00・大京公園・新宿区大京町14）、花園町会納涼踊り大会（8/27-28・18:00〜20:00・花園小学校および花園公園・新宿区新宿1-21）、杉大門通り盆踊り大会（9/13・17:00〜20:00・杉大門通り・新宿区四谷3-3周辺）、踊ろう！in 荒木町の秋（10/10-11・17:00〜20:30・荒木公園・新宿区荒木町10）が掲載されている。なお同ページは四谷地域センターのボランティアが各地域の関係者から集めた情報のまとめであり、主催団体自身の告知ではない。",
-      "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
+      "report_id": "public_detail_private_source_cleanup_20260808",
+      "title": "公開detailから私人由来の情報源表記を除去する（方針対応）",
+      "account_key": "内田さん方針決定（2026-08-08）",
+      "raw_text": "公開する情報源は公式を基本とし、準公式（区議など公人、町会・自治会、主催者本人のX）までは出してよいが、私人（地域情報サイト、第三者集約サイト、第三者の参加報告アカウント）の名前は出さない、という方針が2026-08-08に決まった。公開370件のうち48件の detail に私人由来の表記が出ていたため、事実関係と不確かさの説明は残したまま、情報源の固有名とXの個人アカウント名を取り除く。あわせて上野ゐの市の2件は説明が長すぎたため簡潔にし、会場名の表記ゆれ（袴越広場→袴腰広場）も揃える。",
+      "url": "",
       "notice_kind": "official_current_year"
     },
     "events": [
       {
-        "action": "register_new",
-        "event_name_hint": "大京町商店会納涼おどり大会",
-        "series_name": "大京町商店会納涼おどり大会",
-        "event_year": 2026,
-        "date_start": "2026-08-22",
-        "date_end": "2026-08-23",
-        "venue": {
-          "name": "大京公園",
-          "area": "新宿区",
-          "address": "東京都新宿区大京町14"
-        },
-        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-08-22・2026-08-23・18:00〜21:00・会場「大京公園」・主催「大京町商店会」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
-        "songs": []
+        "action": "confirm_existing",
+        "occurrence_id": "occ_0c9c275ac96c14b8",
+        "event_name_hint": "司町二丁目町会 納涼盆踊り大会",
+        "detail_replacement": "千代田区・神田公園地区連合町会が運営する「大好き神田」の告知ページに、2026年8月7日・8日、17:00〜21:00、会場「神田児童公園」、主催「司町二丁目町会」として掲載されている。連合町会自身の発信のため一次情報として扱う。登録名は「納涼盆踊り大会」だけだと同名の行事と区別がつかないため、主催団体名で修飾した。"
       },
       {
-        "action": "register_new",
-        "event_name_hint": "花園町会納涼踊り大会",
-        "series_name": "花園町会納涼踊り大会",
-        "event_year": 2026,
-        "date_start": "2026-08-27",
-        "date_end": "2026-08-28",
-        "venue": {
-          "name": "花園小学校",
-          "area": "新宿区",
-          "address": "東京都新宿区新宿1-21"
-        },
-        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-08-27・2026-08-28・18:00〜20:00・会場「花園小学校」・主催「花園町町会」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 会場は花園小学校と花園公園の2か所として案内されている。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
-        "songs": []
+        "action": "confirm_existing",
+        "occurrence_id": "occ_0ee14ffbf15fd0cf",
+        "event_name_hint": "ゐの市盆踊り～不忍夢～",
+        "detail_replacement": "第7回。2026年8月7日(金)〜9日(日)開催。会場は上野恩賜公園の袴腰広場。主催アカウント @ueno_club の公式ポスターより。同じ会場では上野中通商店街振興組合による「上野ゐの市盆踊り」（8月7〜16日）も行われており、こちらはその前半3日にあたる企画とみられます。両者の正確な関係は確定していないため、期間の異なる2件として掲載しています。"
       },
       {
-        "action": "register_new",
-        "event_name_hint": "杉大門通り盆踊り大会",
-        "series_name": "杉大門通り盆踊り大会",
-        "event_year": 2026,
-        "date_start": "2026-09-13",
-        "date_end": "2026-09-13",
-        "venue": {
-          "name": "杉大門通り",
-          "area": "新宿区",
-          "address": "東京都新宿区四谷3-3周辺"
-        },
-        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-09-13・17:00〜20:00・会場「杉大門通り」・主催「杉大門通り商店街振興組合」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
-        "songs": []
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c269edeedf7a5b71",
+        "event_name_hint": "上野ゐの市盆踊り",
+        "detail_replacement": "2026年8月7日（金）〜16日（日）の10日間、全日12:00〜21:00。会場は上野恩賜公園の袴腰広場、主催は上野中通商店街振興組合、観覧無料。盆踊りのほか祭りグルメとステージ企画があり、曲目は日替わり。同じ会場の前半3日には「ゐの市盆踊り～不忍夢～」も行われます（別に掲載）。開催期間は情報源によって3日間と10日間に分かれており、主催者自身が10日間と明記した告知はまだ確認できていません。お出かけの際は最新の告知もあわせてご確認ください。"
       },
       {
-        "action": "register_new",
-        "event_name_hint": "踊ろう！in荒木町の秋",
-        "series_name": "踊ろう！in荒木町の秋",
-        "event_year": 2026,
-        "date_start": "2026-10-10",
-        "date_end": "2026-10-11",
-        "venue": {
-          "name": "荒木公園",
-          "area": "新宿区",
-          "address": "東京都新宿区荒木町10"
-        },
-        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-10-10・2026-10-11・17:00〜20:30・会場「荒木公園」・主催「荒木町青年会」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
-        "songs": []
+        "action": "confirm_existing",
+        "occurrence_id": "occ_251ebd5fe04d4d38",
+        "event_name_hint": "扇橋三丁目町会 納涼盆踊り大会",
+        "detail_replacement": "18:00〜21:00。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_9a6845c9eef189a2",
+        "event_name_hint": "亀戸四丁目 納涼盆踊り大会",
+        "detail_replacement": "19:00〜21:00。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fd1c503d3f6538d5",
+        "event_name_hint": "とよす夏祭り",
+        "detail_replacement": "2026年は第2回。盆踊りは8月8日・9日・11日・15日・16日に実施と明記され、その他の日は実施記載なし。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c144b96d770e3b9e",
+        "event_name_hint": "東陽六・七丁目町会 夏まつり",
+        "detail_replacement": "元の告知表記は「夏まつり2026」。17:00〜21:30。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fbbf1f3dcb7ae7c3",
+        "event_name_hint": "江東区民まつり 亀戸地区夏まつり大会",
+        "detail_replacement": "盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_67944b1715f8aaa4",
+        "event_name_hint": "亀戸二丁目団地 ここがふるさと夏まつり",
+        "detail_replacement": "18:00〜20:30。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4c6f06222bd906ac",
+        "event_name_hint": "亀戸六丁目東町会 ふるさとまつり",
+        "detail_replacement": "18:00〜。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4fcc747c2d490ae4",
+        "event_name_hint": "南砂一・二丁目町会 盆踊り",
+        "detail_replacement": "18:00〜。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_144344004e460a1a",
+        "event_name_hint": "南砂住宅 団地祭り",
+        "detail_replacement": "15:00〜19:00。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_d4f2f14192a4ef64",
+        "event_name_hint": "塩浜一丁目団地自治会 夏まつり",
+        "detail_replacement": "9:30〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_5df32308eae3f789",
+        "event_name_hint": "大島三丁目団地自治会 夕涼み会",
+        "detail_replacement": "16:00〜18:00。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_e2b9ec2298ec4f32",
+        "event_name_hint": "大島三丁目町会 お祭り広場",
+        "detail_replacement": "17:00〜。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_64e9d25c0c48cc6b",
+        "event_name_hint": "大島五丁目町会 ぼんおどり",
+        "detail_replacement": "17:00〜。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_31f1726dde1f04b9",
+        "event_name_hint": "木場二丁目町会 盆踊り大会",
+        "detail_replacement": "2026年告知確認。Instagram投稿本文で、会場: 木場二丁目公園、日時: 7月17日(金)18:00-21:00、7月18日(土)18:00-20:30を確認。 2025年は7月18日(金)-19日(土)に開催(18:00~21:00、19日は20:30まで)。主催は木場二丁目町会。(地域の情報サイト の2025年江東区盆踊り一覧より。統合前の予測エントリから引き継ぎ) 江東区「令和8年度 盆踊り・夏まつり開催情報」(令和8年7月7日現在)では、イベント名称「盆踊り」・実施団体「木場２丁目町会」として7月17日(金)-18日(土)18:00～21:00・木場二丁目公園と記載。区内には木場一・六町会・木場五丁目町会の同種イベントもあるため、当サイトでは実施団体名を冠して表記している。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4ed149af2fc84735",
+        "event_name_hint": "東砂一丁目団地 ふれあい祭り",
+        "detail_replacement": "11:00〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_cf0544b3561983b8",
+        "event_name_hint": "東砂三丁目町会 盆踊大会",
+        "detail_replacement": "18:30〜。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_22f885022cdf1584",
+        "event_name_hint": "亀戸五丁目町会 夏まつり",
+        "detail_replacement": "17:00〜。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_472f2827e41b676b",
+        "event_name_hint": "千田町会 納涼盆踊り大会",
+        "detail_replacement": "19:00〜21:00。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_ef53e510c8842afb",
+        "event_name_hint": "扇橋二丁目町会 納涼大会",
+        "detail_replacement": "18:00〜21:00。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_b223cacd3b0c84eb",
+        "event_name_hint": "猿江一丁目町会 納涼まつり",
+        "detail_replacement": "16:00〜20:00。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_12e9728c0a384d1b",
+        "event_name_hint": "石島町会 夏祭り",
+        "detail_replacement": "16:30〜19:00。盆踊りの実施有無は未確認。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_5c0b8546b2496353",
+        "event_name_hint": "ふるさと和泉 みんなの夏祭り",
+        "detail_replacement": "和泉第三町会だよりで2026年開催を確認。盆踊り・模擬店・花火あり。主催：和泉第三町会。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_eaaff144ec744dd6",
+        "event_name_hint": "西武井荻商店街 納涼盆踊り大会",
+        "detail_replacement": "元の告知表記は『西武井荻商店街（ポンテイオギ）納涼盆踊り大会』。開催時間：17:00〜21:00。主催：西武井荻商店街振興組合。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_704e02ef8a303789",
+        "event_name_hint": "上板橋二丁目町会 盆踊り大会",
+        "detail_replacement": "開催時間：17:00〜20:30。主催：上板橋二丁目町会。現地の参加報告で開催を確認済み。なお報告のなかにはサンライト自治会との合同開催と記すものもあり合同の可能性があるが、告知の表記は上板橋二丁目町会単独のため主催表記は据え置いた。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c1d14ab9991f5c74",
+        "event_name_hint": "上谷津町会 盆踊り会",
+        "detail_replacement": "開催時間：7月25日17:00〜21:00、7月26日17:00〜20:30。主催：上谷津町会。両日とも現地の参加報告で開催を確認済み。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_d3250992e775db8a",
+        "event_name_hint": "徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォート 合同盆踊り大会",
+        "detail_replacement": "元の告知表記は『3町会合同 盆踊り大会』。開催時間：17:00〜20:00。主催団体名は、現地の参加報告に徳丸親和会・徳丸原町会・徳丸美徳会・マナーズフォートの4団体と記録されており、告知の『3町会』より1団体多かったため、こちらを採用した。両日とも現地の参加報告で開催を確認済み。登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_96854e6c02eba84d",
+        "event_name_hint": "坂下一丁目南町会 盆踊り大会",
+        "detail_replacement": "開催時間：8月22日18:00〜21:00、8月23日17:30〜20:30。主催：坂下一丁目南町会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_950d73869e1a34de",
+        "event_name_hint": "小豆沢商友会 納涼盆踊り大会",
+        "detail_replacement": "開催時間：18:30〜20:30。主催：小豆沢商友会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_9451ac100f1d2458",
+        "event_name_hint": "西台町会 盆踊り大会",
+        "detail_replacement": "開催時間：18:30〜20:30。主催：西台町会。両日とも現地の参加報告で開催を確認済み。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_210070a96556cbd1",
+        "event_name_hint": "番匠免町会 盆踊り大会",
+        "detail_replacement": "開催時間：7月25日17:00〜21:00、7月26日17:00〜20:30。主催：番匠免町会。両日とも現地の参加報告で開催を確認済み。7月26日は雨の様子を見ながら一時中断しつつ20時まで実施されたとの報告がある。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_3513df648eddf5bb",
+        "event_name_hint": "わくわく盆踊り",
+        "detail_replacement": "開催時間：18:00〜20:30。主催団体は告知本文に記載がなく未確認。現地の参加報告も現時点では確認できていない。登録時点では開催予定。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c0077e9258ce2e98",
+        "event_name_hint": "大谷口一丁目町会 納涼盆踊り大会",
+        "detail_replacement": "主催：大谷口一丁目町会。地域の情報サイトの夏祭りまとめには掲載がなく、現地の参加報告のみを根拠に登録した。根拠が1件のみのため、開催日は報告のあった8月1日のみとしている。複数日開催の可能性は否定できない。登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_9504af8dd208ca10",
+        "event_name_hint": "板橋仲町会・金沢自治会共催 盆踊り",
+        "detail_replacement": "開催時間：18:00〜20:00。主催：板橋仲町会・金沢自治会（共催）。現地の参加報告で開催を確認済み。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_39a8a80f2b3c2449",
+        "event_name_hint": "徳丸三ツ和会・徳丸平和会 合同盆踊り",
+        "detail_replacement": "元の告知表記は『合同盆踊り』。開催時間：17:00〜20:30。主催：徳丸三ツ和会・徳丸平和会の合同。現地の参加報告は現時点では確認できていない。登録時点では開催予定。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_8d8a4036f11c5874",
+        "event_name_hint": "舟渡町会 盆踊り大会",
+        "detail_replacement": "主催：舟渡町会。地域の情報サイトの夏祭りまとめには掲載がなく、現地の参加報告のみを根拠に登録した。5つの独立した報告が同日の開催を伝えている。当日の曲目は参加者の記録によると、東京音頭／炭鉱節／東京スカイツリー音頭／ホームラン音頭／河内おとこ節／板橋音頭(輪)／一番はじめは／板橋二輪草音頭／板橋区町会連合会音頭／舞い上がれITABASHI／きよしのズンドコ節／ごちそう讃／毬と殿様／舟渡ひろがり音頭。会場では7月16日に舟渡ホールで事前の練習会も開かれている。翌7月26日は中止となったため、開催日は7月25日のみとして登録している。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_5c45e92cefe80416",
+        "event_name_hint": "中台若木町会 盆踊りフェス",
+        "detail_replacement": "元の告知表記は『中台若木町会 盆踊りフェス 2026』。開催時間：16:00〜20:00。主催：中台若木町会。出店者の事前告知と現地の参加報告の複数件で開催を確認済み。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_30f0498f563b2112",
+        "event_name_hint": "蓮根南町会 納涼盆踊り",
+        "detail_replacement": "開催時間：18:30〜20:30。主催：蓮根南町会。7月25日は現地の参加報告で開催を確認済み。7月26日はポスター由来の予定で、実施の確認は取れていない。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_d5fe44f35a4c6208",
+        "event_name_hint": "蓮根仲町会 盆踊り大会",
+        "detail_replacement": "開催時間：17:00〜20:30。主催：蓮根仲町会。この1件のみ現地の参加報告が確認できておらず、根拠は地域の情報サイトの集約のみ。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_f8047d46e100b5a1",
+        "event_name_hint": "蓮沼東町会 盆踊り大会",
+        "detail_replacement": "開催時間：7月25日19:00〜21:00、7月26日18:00〜20:00。主催：蓮沼東町会。告知ではイベント名が町会名のみで盆踊りの明記がなかったが、現地の参加報告で盆踊りの実施を確認したため登録した。7月26日はポスター由来の予定で、実施の確認は取れていない。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fc74cc7f0868ba17",
+        "event_name_hint": "上赤塚町会 納涼盆踊り",
+        "detail_replacement": "主催：上赤塚町会。地域の情報サイトの夏祭りまとめには掲載がなく、現地の参加報告のみを根拠に登録した。2つの独立した報告がある。7月26日の会場リストにも赤塚氷川神社が挙がっているが、26日の実施確認は取れていないため、開催日は7月25日のみとして登録している。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fa48ecbc1a691232",
+        "event_name_hint": "高島平七丁目町会 納涼盆踊り大会",
+        "detail_replacement": "開催時間：19:00〜21:00。主催：高島平七丁目町会。両日とも現地の参加報告で開催を確認済み。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_f6616b661a481009",
+        "event_name_hint": "西台北町会 納涼盆踊り大会",
+        "detail_replacement": "開催時間：16:30〜20:00（25日は20:30まで）。主催：西台北町会。告知では『西台北町会 納涼祭』として掲載され盆踊りの明記がなかったが、現地の参加報告2件で盆踊りの実施を確認したため登録した。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_ad6ed05fa96c3735",
+        "event_name_hint": "高島町会 納涼盆踊り大会",
+        "detail_replacement": "開催時間：7月24日16:00〜、7月25日18:00〜。主催：高島町会。現地の参加報告で開催を確認済み。7月開催のため登録時点で終了済み。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_1df0a276422a54b5",
+        "event_name_hint": "亀有銀座商店街納涼盆踊り大会",
+        "detail_replacement": "亀有ゆうろーど（亀有銀座商店街）の納涼盆踊り。動画の記録で2024年・2025年の開催実績を確認。2025年は8月31日（日）に開催。2026年の開催日は未確認のため、過去実績の候補として扱う。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4708707c25bc756e",
+        "event_name_hint": "木根川町会ふれあい盆踊り",
+        "detail_replacement": "現地で設営している方の投稿では7月31日・8月1日の2日間開催。地域の情報サイトでは7月31日のみの記載。画像のテントに「木根川町会」とあり、イベント名を確認した。"
       }
     ]
   },
   "applied": {
     "resolved": true,
-    "evidence_id": "ev_9dcb2843c782fb3d",
+    "evidence_id": "ev_6c548bc34b8aeb75",
     "events_applied": [
       {
-        "action": "register_new",
-        "series_id": "series_c227322c3ca620e0",
-        "series_created": true,
-        "occurrence_id": "occ_eaec6c8c64246bdd",
-        "venue_id": "venue_6b176a190cf6c6be",
-        "venue_status": "created",
-        "occurrence_created": true,
+        "action": "confirm_existing",
+        "occurrence_id": "occ_0c9c275ac96c14b8",
+        "changed_fields": [
+          "detail"
+        ],
         "songs_applied": []
       },
       {
-        "action": "register_new",
-        "series_id": "series_0020eb7abb971952",
-        "series_created": true,
-        "occurrence_id": "occ_6c73b39fde75ee48",
-        "venue_id": "venue_3b40ab410732c303",
-        "venue_status": "created",
-        "occurrence_created": true,
+        "action": "confirm_existing",
+        "occurrence_id": "occ_0ee14ffbf15fd0cf",
+        "changed_fields": [
+          "detail"
+        ],
         "songs_applied": []
       },
       {
-        "action": "register_new",
-        "series_id": "series_ee434210627c7a1f",
-        "series_created": true,
-        "occurrence_id": "occ_e107e712299c6c98",
-        "venue_id": "venue_1cdb6d638fcd5309",
-        "venue_status": "created",
-        "occurrence_created": true,
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c269edeedf7a5b71",
+        "changed_fields": [
+          "detail"
+        ],
         "songs_applied": []
       },
       {
-        "action": "register_new",
-        "series_id": "series_e908b6142809a020",
-        "series_created": true,
-        "occurrence_id": "occ_7dd5908e2fc8e6f7",
-        "venue_id": "venue_c7066aaa0507c7f8",
-        "venue_status": "created",
-        "occurrence_created": true,
+        "action": "confirm_existing",
+        "occurrence_id": "occ_251ebd5fe04d4d38",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_9a6845c9eef189a2",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fd1c503d3f6538d5",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c144b96d770e3b9e",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fbbf1f3dcb7ae7c3",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_67944b1715f8aaa4",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4c6f06222bd906ac",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4fcc747c2d490ae4",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_144344004e460a1a",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_d4f2f14192a4ef64",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_5df32308eae3f789",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_e2b9ec2298ec4f32",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_64e9d25c0c48cc6b",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_31f1726dde1f04b9",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4ed149af2fc84735",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_cf0544b3561983b8",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_22f885022cdf1584",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_472f2827e41b676b",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_ef53e510c8842afb",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_b223cacd3b0c84eb",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_12e9728c0a384d1b",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_5c0b8546b2496353",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_eaaff144ec744dd6",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_704e02ef8a303789",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c1d14ab9991f5c74",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_d3250992e775db8a",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_96854e6c02eba84d",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_950d73869e1a34de",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_9451ac100f1d2458",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_210070a96556cbd1",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_3513df648eddf5bb",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_c0077e9258ce2e98",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_9504af8dd208ca10",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_39a8a80f2b3c2449",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_8d8a4036f11c5874",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_5c45e92cefe80416",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_30f0498f563b2112",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_d5fe44f35a4c6208",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_f8047d46e100b5a1",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fc74cc7f0868ba17",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_fa48ecbc1a691232",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_f6616b661a481009",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_ad6ed05fa96c3735",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_1df0a276422a54b5",
+        "changed_fields": [
+          "detail"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_4708707c25bc756e",
+        "changed_fields": [
+          "detail"
+        ],
         "songs_applied": []
       }
     ],

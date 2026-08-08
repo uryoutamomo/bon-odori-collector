@@ -101,6 +101,39 @@ class EventReportHelpersTest(unittest.TestCase):
         detail = self.conn.execute("SELECT detail FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_id,)).fetchone()[0]
         self.assertEqual(detail.count("順延あり。"), 1)
 
+    def test_confirm_occurrence_schedule_venue_detail_replacement_overwrites(self):
+        """detail_replacement は既存の文面を丸ごと置き換える。
+
+        追記しかできないと、公開してはいけない記述（私人の情報源名やXの個人
+        アカウント名）を後から取り除けない。2026-08-08 の方針決定で必要になった。
+        """
+        confirm_occurrence_schedule_venue(
+            self.conn, self.occurrence_id,
+            detail_addendum="出典：地域情報サイト。@someone の報告で確認。",
+            source_kind="official_current_year",
+        )
+        confirm_occurrence_schedule_venue(
+            self.conn, self.occurrence_id,
+            detail_replacement="現地の参加報告で開催を確認済み。",
+            source_kind="official_current_year",
+        )
+        detail = self.conn.execute(
+            "SELECT detail FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_id,)
+        ).fetchone()[0]
+        self.assertEqual(detail, "現地の参加報告で開催を確認済み。")
+        self.assertNotIn("@someone", detail)
+        self.assertNotIn("地域情報サイト", detail)
+
+    def test_confirm_occurrence_schedule_venue_rejects_addendum_and_replacement_together(self):
+        """どちらが最終形か決まらないので、同時指定は拒否する。"""
+        with self.assertRaises(ValueError):
+            confirm_occurrence_schedule_venue(
+                self.conn, self.occurrence_id,
+                detail_addendum="足す文。",
+                detail_replacement="置き換える文。",
+                source_kind="official_current_year",
+            )
+
     def test_confirm_occurrence_schedule_venue_updates_venue_and_date(self):
         result = confirm_occurrence_schedule_venue(
             self.conn,
