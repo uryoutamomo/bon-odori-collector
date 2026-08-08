@@ -6,4 +6,5 @@ def test_collect_builds_only_bounded_gap_driven_x_inbox_input():
     assert 'python build_x_gap_candidates.py --limit 30' in workflow
     assert 'python review_inbox_adapters/x_gap_adapter.py' in workflow
     assert 'python build_x_review_lanes.py --input data/x_gap_candidates.json' in workflow
+    assert "[ -f data/x_review_lanes.md ] && git add -f data/x_review_lanes.md" in workflow
     assert 'data/review_inbox_adapted/x_gap.json' in workflow
