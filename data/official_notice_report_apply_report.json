@@ -1,15 +1,15 @@
 {
   "generated_by": "apply_official_notice_report.py",
-  "generated_at": "2026-08-07T13:45:51.232016+00:00",
+  "generated_at": "2026-08-08T02:13:10.885023+00:00",
   "mode": "apply",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "report": "data/official_notice_reports/edogawa_venue_corrections_2026.json"
+    "report": "data/official_notice_reports/shinjuku_yotsuya_restore_2026.json"
   },
   "outputs": {
     "target_db": "data/bon_odori_master.sqlite",
     "dry_run_db": "",
-    "backup_db": "data/backups/bon_odori_master.20260807T134551.232016+0000.sqlite.bak",
+    "backup_db": "data/backups/bon_odori_master.20260808T021310.885023+0000.sqlite.bak",
     "json": "data/official_notice_report_apply_report.json",
     "markdown": "data/official_notice_report_apply_report.md"
   },
@@ -27,82 +27,146 @@
     "audit_issues_by_severity": {},
     "table_counts": {
       "event_investigation_tasks": 79,
-      "event_occurrences": 424,
-      "event_series": 407,
+      "event_occurrences": 426,
+      "event_series": 408,
       "event_series_aliases": 25,
-      "evidence_items": 31332,
+      "evidence_items": 31334,
       "external_record_links": 2654,
       "historical_promotion_candidates": 16,
       "master_meta": 0,
       "notion_sync_jobs": 0,
       "observed_occurrence_songs": 30883,
       "observed_occurrences": 2164,
-      "occurrence_dates": 477,
-      "occurrence_evidence_links": 286,
-      "occurrence_song_evidence_links": 1007,
-      "occurrence_songs": 819,
+      "occurrence_dates": 479,
+      "occurrence_evidence_links": 287,
+      "occurrence_song_evidence_links": 1011,
+      "occurrence_songs": 823,
       "predicted_occurrence_dates": 14,
       "review_inbox_items": 576,
       "schema_migrations": 4,
       "song_aliases": 142,
       "songs": 399,
-      "venue_aliases": 460,
-      "venues": 400,
+      "venue_aliases": 462,
+      "venues": 402,
       "write_batches": 0
     }
   },
   "report": {
     "report_type": "official_notice",
-    "reported_at": "2026-08-07T22:45:00+09:00",
+    "reported_at": "2026-08-08T10:40:00+09:00",
     "source": {
-      "report_id": "edogawa_venue_corrections_2026",
-      "title": "江戸川区公式一覧に基づく会場照合補正（2026年）",
-      "account_key": "江戸川区（区公式サイト）",
-      "raw_text": "江戸川区公式の令和8年度盆踊り日程一覧の会場名を再照合。雷町会夏まつりは東葛西さくら公園、北篠崎二丁目自治会盆踊りは北篠崎二丁目公園であり、部分一致による別会場への誤結合を補正する。",
-      "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+      "report_id": "shinjuku_yotsuya_restore_2026",
+      "title": "四谷地域の盆踊り情報（令和8年度）— 公開済み4件のマスタRDB再登録",
+      "account_key": "荒木町町会（四谷地域の盆踊り情報 令和8年度）",
+      "raw_text": "荒木町町会サイトの「続々更新！四谷地域の盆踊り情報を公開【令和８年度（2026年）】」に掲載されている四谷地域の盆踊りのうち、bonsuke.jp では公開済みなのにマスタRDBに存在しない4件を再登録する。2026-08-07 の江戸川区復旧作業で新宿区分が取り残されたため、公開JSONを再生成するとこの4件が消える状態になっていた。ページには大京町商店会納涼おどり大会（8/22-23・18:00〜21:00・大京公園・新宿区大京町14）、花園町会納涼踊り大会（8/27-28・18:00〜20:00・花園小学校および花園公園・新宿区新宿1-21）、杉大門通り盆踊り大会（9/13・17:00〜20:00・杉大門通り・新宿区四谷3-3周辺）、踊ろう！in 荒木町の秋（10/10-11・17:00〜20:30・荒木公園・新宿区荒木町10）が掲載されている。なお同ページは四谷地域センターのボランティアが各地域の関係者から集めた情報のまとめであり、主催団体自身の告知ではない。",
+      "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
       "notice_kind": "official_current_year"
     },
     "events": [
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_a9fa9c73d44ea6bc",
+        "action": "register_new",
+        "event_name_hint": "大京町商店会納涼おどり大会",
+        "series_name": "大京町商店会納涼おどり大会",
+        "event_year": 2026,
+        "date_start": "2026-08-22",
+        "date_end": "2026-08-23",
         "venue": {
-          "name": "東葛西さくら公園",
-          "area": "江戸川区",
-          "address": "東京都江戸川区"
+          "name": "大京公園",
+          "area": "新宿区",
+          "address": "東京都新宿区大京町14"
         },
-        "detail_addendum": "会場を江戸川区公式一覧の「東葛西さくら公園」へ照合補正。"
+        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-08-22・2026-08-23・18:00〜21:00・会場「大京公園」・主催「大京町商店会」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+        "songs": []
       },
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_68084b443aa2d328",
+        "action": "register_new",
+        "event_name_hint": "花園町会納涼踊り大会",
+        "series_name": "花園町会納涼踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-08-27",
+        "date_end": "2026-08-28",
         "venue": {
-          "name": "北篠崎二丁目公園",
-          "area": "江戸川区",
-          "address": "東京都江戸川区"
+          "name": "花園小学校",
+          "area": "新宿区",
+          "address": "東京都新宿区新宿1-21"
         },
-        "detail_addendum": "会場を江戸川区公式一覧の「北篠崎二丁目公園」へ照合補正。"
+        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-08-27・2026-08-28・18:00〜20:00・会場「花園小学校」・主催「花園町町会」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 会場は花園小学校と花園公園の2か所として案内されている。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+        "songs": []
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "杉大門通り盆踊り大会",
+        "series_name": "杉大門通り盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-09-13",
+        "date_end": "2026-09-13",
+        "venue": {
+          "name": "杉大門通り",
+          "area": "新宿区",
+          "address": "東京都新宿区四谷3-3周辺"
+        },
+        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-09-13・17:00〜20:00・会場「杉大門通り」・主催「杉大門通り商店街振興組合」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+        "songs": []
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "踊ろう！in荒木町の秋",
+        "series_name": "踊ろう！in荒木町の秋",
+        "event_year": 2026,
+        "date_start": "2026-10-10",
+        "date_end": "2026-10-11",
+        "venue": {
+          "name": "荒木公園",
+          "area": "新宿区",
+          "address": "東京都新宿区荒木町10"
+        },
+        "detail_addendum": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-10-10・2026-10-11・17:00〜20:30・会場「荒木公園」・主催「荒木町青年会」として掲載されている（ https://www.arakicho-chokai.com/post/bon-yotsuya2026 ）。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
+        "songs": []
       }
     ]
   },
   "applied": {
     "resolved": true,
-    "evidence_id": "ev_246403aa347118fc",
+    "evidence_id": "ev_9dcb2843c782fb3d",
     "events_applied": [
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_a9fa9c73d44ea6bc",
-        "changed_fields": [
-          "venue_id"
-        ],
+        "action": "register_new",
+        "series_id": "series_c227322c3ca620e0",
+        "series_created": true,
+        "occurrence_id": "occ_eaec6c8c64246bdd",
+        "venue_id": "venue_6b176a190cf6c6be",
+        "venue_status": "created",
+        "occurrence_created": true,
         "songs_applied": []
       },
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_68084b443aa2d328",
-        "changed_fields": [
-          "venue_id"
-        ],
+        "action": "register_new",
+        "series_id": "series_0020eb7abb971952",
+        "series_created": true,
+        "occurrence_id": "occ_6c73b39fde75ee48",
+        "venue_id": "venue_3b40ab410732c303",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_ee434210627c7a1f",
+        "series_created": true,
+        "occurrence_id": "occ_e107e712299c6c98",
+        "venue_id": "venue_1cdb6d638fcd5309",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "series_id": "series_e908b6142809a020",
+        "series_created": true,
+        "occurrence_id": "occ_7dd5908e2fc8e6f7",
+        "venue_id": "venue_c7066aaa0507c7f8",
+        "venue_status": "created",
+        "occurrence_created": true,
         "songs_applied": []
       }
     ],

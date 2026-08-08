@@ -1629,6 +1629,37 @@
       "kind": "addition",
       "event_key": "鹿骨二丁目町会盆踊り||鹿骨中学校",
       "collector_sha256": "6207a6ac64074afb4c1de1ce3888c820dc6e97fff49f83f923a00290afe6b4df"
+    },
+    {
+      "id": "reviewed-addition-20260808-b4e332bfcaa7",
+      "kind": "addition",
+      "event_key": "司町二丁目町会 納涼盆踊り大会||神田児童公園",
+      "collector_sha256": "b4e332bfcaa73ca987ba1dd43f8b2c3b6668840f1b90621648cb09b3de46e937",
+      "reason": "2026-08-08 に内田さんの緊急依頼で新規登録。千代田区・神田公園地区連合町会が運営する「大好き神田」の告知ページ（https://daisuki-kanda.com/information/notice/?cno=6 ）に、司町二丁目町会主催・神田児童公園・2026-08-07〜08・17:00〜21:00 と掲載。本日2日目の開催で未掲載だったため緊急追加した"
+    },
+    {
+      "id": "reviewed-update-20260808-a7297346e27b",
+      "kind": "same_key_update",
+      "event_key": "六本木ヒルズ盆踊り||六本木ヒルズアリーナ",
+      "site_sha256": "57e4fb1f7b45f153c9aafa0bebd2bf6021366f44c1a32a6f4cdbb76f2c79c585",
+      "collector_sha256": "a7297346e27b630dcb7c8ad4d1cfaae43c45366e11a20d85fd6a9faf3d430d06",
+      "reason": "2026年開催回（2026-08-21〜23・六本木ヒルズ公式告知由来・confirmed）がRDBに入っていたのに公開へ出ていなかったものを反映する。2026-08-07 の江戸川区復旧作業の際、apply までは済んでいたが publish から先が止まったまま忘れられていた。サイト側の2025-08-22〜24（昨年開催表示）が2026年の確定日程へ置き換わる。日付が動く変更だが、公式告知に基づく正しい更新"
+    },
+    {
+      "id": "reviewed-update-20260808-9c48063216a2",
+      "kind": "same_key_update",
+      "event_key": "北篠崎二丁目自治会盆踊り||北篠崎二丁目公園",
+      "site_sha256": "c759009e1dacebd4303fc4a9bed917931b86338dcd89f74efc4a72018a9aac27",
+      "collector_sha256": "9c48063216a2d181dcf23e12817960670ac2477d2277a47a536c8433e26943c3",
+      "reason": "detail 末尾の「会場を江戸川区公式一覧の〜へ照合補正。」の一文が、2026-08-07 の復旧でRDB側から失われたことによる差分。内部の作業メモに近い一文で読者への情報価値がなく、日付・名前・会場・その他の本文はすべて不変のため collector 側を採用する"
+    },
+    {
+      "id": "reviewed-update-20260808-e3dfe8a2a7dd",
+      "kind": "same_key_update",
+      "event_key": "雷町会夏まつり||東葛西さくら公園",
+      "site_sha256": "ff7242a94cf19c538abd989fc8327cc45d406a094cb70269a140922d51aeb2fd",
+      "collector_sha256": "e3dfe8a2a7ddbb4959bc4e805a31a94d9320c4255d8687a26f0a3c02d7c774fc",
+      "reason": "同上の一文に加えて、曲目ヒント「さくら」が消える差分。この曲目は会場名「東葛西さくら公園」からの誤抽出とみられ、落ちるほうが正しい。日付（2026-08-08〜09）・名前・会場は不変のため collector 側を採用する"
     }
   ]
 }

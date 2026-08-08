@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 369,
-  "mapped_count": 369,
+  "public_event_count": 370,
+  "mapped_count": 370,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -51,6 +51,18 @@
       "series_id": "series_a32f01d6bdb9bbd1",
       "event_year": 2026,
       "venue_id": "venue_2922f35ef053ab3d"
+    },
+    {
+      "public_event_key": "司町二丁目町会 納涼盆踊り大会|神田児童公園|2026-08-07|2026-08-08",
+      "name": "司町二丁目町会 納涼盆踊り大会",
+      "venue": "神田児童公園",
+      "date": "2026-08-07",
+      "date_end": "2026-08-08",
+      "source": "master_rdb",
+      "occurrence_id": "occ_0c9c275ac96c14b8",
+      "series_id": "series_b2a46725eb119ca8",
+      "event_year": 2026,
+      "venue_id": "venue_fef39d66a41ab617"
     },
     {
       "public_event_key": "神田明神納涼祭り|神田明神境内|2026-08-07|2026-08-09",
@@ -329,15 +341,15 @@
       "venue_id": "ven_5da9aa6fb2ddd4e2"
     },
     {
-      "public_event_key": "六本木ヒルズ盆踊り|六本木ヒルズアリーナ|2025-08-22|2025-08-24",
+      "public_event_key": "六本木ヒルズ盆踊り|六本木ヒルズアリーナ|2026-08-21|2026-08-23",
       "name": "六本木ヒルズ盆踊り",
       "venue": "六本木ヒルズアリーナ",
-      "date": "2025-08-22",
-      "date_end": "2025-08-24",
+      "date": "2026-08-21",
+      "date_end": "2026-08-23",
       "source": "master_rdb",
-      "occurrence_id": "occ_f50ea02c13ee9d07",
+      "occurrence_id": "occ_2718d1bde62e9a57",
       "series_id": "ser_519cc51db9e40748",
-      "event_year": 2025,
+      "event_year": 2026,
       "venue_id": "ven_9498f5900a872ee2"
     },
     {
@@ -674,7 +686,7 @@
       "occurrence_id": "occ_eaec6c8c64246bdd",
       "series_id": "series_c227322c3ca620e0",
       "event_year": 2026,
-      "venue_id": "venue_4195eceb2e34828e"
+      "venue_id": "venue_6b176a190cf6c6be"
     },
     {
       "public_event_key": "新宿二丁目太宗寺盆踊り大会|太宗寺|2026-07-13|2026-07-15",
@@ -722,7 +734,7 @@
       "occurrence_id": "occ_e107e712299c6c98",
       "series_id": "series_ee434210627c7a1f",
       "event_year": 2026,
-      "venue_id": "venue_593a4fb1eed0649d"
+      "venue_id": "venue_1cdb6d638fcd5309"
     },
     {
       "public_event_key": "歌舞伎町BON ODORI|歌舞伎町シネシティ広場|2026-08-14|2026-08-15",
@@ -758,7 +770,7 @@
       "occurrence_id": "occ_6c73b39fde75ee48",
       "series_id": "series_0020eb7abb971952",
       "event_year": 2026,
-      "venue_id": "venue_414d76991f7d3e10"
+      "venue_id": "venue_3b40ab410732c303"
     },
     {
       "public_event_key": "花園神社 盆踊り|花園神社|2026-08-01|2026-08-02",
@@ -782,7 +794,7 @@
       "occurrence_id": "occ_7dd5908e2fc8e6f7",
       "series_id": "series_e908b6142809a020",
       "event_year": 2026,
-      "venue_id": "venue_1772be9c56e71d3f"
+      "venue_id": "venue_c7066aaa0507c7f8"
     },
     {
       "public_event_key": "鶴巻小学校 納涼盆踊り大会＆子ども祭り|鶴巻小学校|2025-07-12|",
@@ -4430,7 +4442,7 @@
       "occurrence_id": "occ_b12475f5c46108d2",
       "series_id": "series_7d7cf54aa0a224ca",
       "event_year": 2026,
-      "venue_id": "ven_6dd18392b744bc78"
+      "venue_id": "venue_f68f842201dd5407"
     }
   ]
 }

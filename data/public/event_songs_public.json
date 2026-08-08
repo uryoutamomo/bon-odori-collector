@@ -799,76 +799,73 @@
     "name": "六本木ヒルズ盆踊り",
     "venue": "六本木ヒルズアリーナ",
     "area": "港区",
-    "date": "2025-08-22",
+    "date": "2026-08-21",
     "songs": [
       {
         "name": "夏祭り",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "踊れ・どれ・ドラ ドラえもん音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
-        "name": "ドラえもん音頭",
+        "name": "ドラえもん音頭 Doraemon ondo",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "六本人音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "六本木音頭",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "河内おとこ節",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "六本人音頭",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
       },
       {
         "name": "花火音頭",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "ドラえもん音頭 Doraemon ondo",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
       }
     ]
   },
@@ -4859,18 +4856,6 @@
     "songs": [
       {
         "name": "東大島駅前大島小松川公園季節",
-        "confidence": "hint"
-      }
-    ]
-  },
-  {
-    "name": "雷町会夏まつり",
-    "venue": "東葛西さくら公園",
-    "area": "江戸川区",
-    "date": "2026-08-08",
-    "songs": [
-      {
-        "name": "さくら",
         "confidence": "hint"
       }
     ]

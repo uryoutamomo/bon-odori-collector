@@ -418,6 +418,72 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
+    "name": "司町二丁目町会 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "神田児童公園",
+    "area": "千代田区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都千代田区神田司町2-2",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-07",
+    "date_end": "2026-08-08",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "千代田区・神田公園地区連合町会が運営する「大好き神田」の告知ページに、2026-08-07・2026-08-08・17:00〜21:00・会場「神田児童公園」・主催「司町二丁目町会」として掲載されている（ ）。連合町会自身の発信のため一次情報として扱う。補助出典＝おどったー（ 、上記ページを出典として引く第三者集約サイト）。登録名は「納涼盆踊り大会」単体だと公開データ内の同名系（54件）と区別がつかないため、主催団体名で修飾した。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 2
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-07",
+      "2026-08-08"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "神田明神納涼祭り",
     "name_confirmed": true,
     "venue": "神田明神境内",
@@ -1552,14 +1618,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-06〜2026-08-07",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-06〜2026-08-07",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -2675,8 +2741,8 @@ const EVENTS = [
     "address": "東京都港区六本木6-10-1",
     "lat": null,
     "lng": null,
-    "date": "2025-08-22",
-    "date_end": "2025-08-24",
+    "date": "2026-08-21",
+    "date_end": "2026-08-23",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -2687,22 +2753,22 @@ const EVENTS = [
     "hints": [
       [
         8,
-        22
+        21
       ],
       [
         8,
-        24
+        23
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "",
-    "detail": "",
+    "detail": "2026年8月21日(金)〜23日(日)開催。主催は六本木ヒルズ自治会、森ビル株式会社。8月21日(金)は前夜祭（縁日屋台17:00〜21:00、楽劇 六本木楽19:00〜20:00）で、盆踊りは実施されない。盆踊りは8月22日(土)・23日(日)の各17:00〜20:00。六本木けやき坂通りでのフードマーケットは8月22日・23日のみ。雨天決行、荒天時は時間変更または中止の場合あり。六本木ヒルズ公式告知より。 出典は六本木ヒルズ公式サイト（ ）。",
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "https://www.roppongihills.com/events/2025/08/0478.html",
+        "url": "",
         "kind": "web",
         "count": 1
       }
@@ -2712,123 +2778,88 @@ const EVENTS = [
         "name": "夏祭り",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "踊れ・どれ・ドラ ドラえもん音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
-        "name": "ドラえもん音頭",
+        "name": "ドラえもん音頭 Doraemon ondo",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "六本人音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "六本木音頭",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "河内おとこ節",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "六本人音頭",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
       },
       {
         "name": "花火音頭",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "ドラえもん音頭 Doraemon ondo",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
-    "public_status": "expected_low",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-22〜2025-08-24。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 低",
-    "recurrence_score": 0.51,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "venue_present",
-      "tokyo_23ward"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-22",
-      "2025-08-24"
+      "2026-08-21",
+      "2026-08-23"
     ],
-    "display_tier": "historical_reference",
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-22",
-        "2025-08-24"
-      ],
-      "label": "2025-08-22〜2025-08-24実績・今年未確認",
-      "confidence": "low",
-      "score": 0.51,
-      "status": "expected_low",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 低",
-      "reasons": [
-        "venue_present",
-        "tokyo_23ward"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-22",
-      "2025-08-24"
-    ],
-    "historical_reference_label": "2025-08-22〜2025-08-24実績・今年未確認",
-    "historical_reference_confidence": "low",
-    "historical_reference_score": 0.51
+    "display_tier": "confirmed"
   },
   {
     "name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
@@ -6234,7 +6265,7 @@ const EVENTS = [
     ],
     "scale": null,
     "access": null,
-    "address": "東京都新宿区",
+    "address": "東京都新宿区大京町14",
     "lat": null,
     "lng": null,
     "date": "2026-08-22",
@@ -6660,7 +6691,7 @@ const EVENTS = [
     ],
     "scale": null,
     "access": null,
-    "address": "東京都新宿区",
+    "address": "東京都新宿区四谷3-3周辺",
     "lat": null,
     "lng": null,
     "date": "2026-09-13",
@@ -6975,7 +7006,7 @@ const EVENTS = [
     ],
     "scale": null,
     "access": null,
-    "address": "東京都新宿区",
+    "address": "東京都新宿区新宿1-21",
     "lat": null,
     "lng": null,
     "date": "2026-08-27",
@@ -7227,7 +7258,7 @@ const EVENTS = [
     ],
     "scale": null,
     "access": null,
-    "address": "東京都新宿区",
+    "address": "東京都新宿区荒木町10",
     "lat": null,
     "lng": null,
     "date": "2026-10-10",
@@ -21128,7 +21159,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-01"
@@ -21150,41 +21181,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-07",
-        "date_end": "2026-08-07",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第1金曜を2026年へスライド",
-        "source_date": "2025-08-01",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-01"
     ],
     "historical_reference_label": "2025-08-01実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-08-07",
-      "date_end": "2026-08-07",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第1金曜を2026年へスライド",
-      "source_date": "2025-08-01",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-07",
-    "historical_slide_date_end": "2026-08-07",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第1金曜を2026年へスライド",
-    "predicted_date": "2026-08-07",
-    "predicted_date_end": "2026-08-07",
-    "prediction_basis": "2025年実績の同月第1金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "瀬田商店会 瀬田納涼盆踊り",
@@ -21542,7 +21548,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-01"
@@ -21566,41 +21572,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-07",
-        "date_end": "2026-08-07",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第1金曜を2026年へスライド",
-        "source_date": "2025-08-01",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-01"
     ],
     "historical_reference_label": "2025-08-01実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-08-07",
-      "date_end": "2026-08-07",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第1金曜を2026年へスライド",
-      "source_date": "2025-08-01",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-07",
-    "historical_slide_date_end": "2026-08-07",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第1金曜を2026年へスライド",
-    "predicted_date": "2026-08-07",
-    "predicted_date_end": "2026-08-07",
-    "prediction_basis": "2025年実績の同月第1金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "砧小学校「砧っ子夏祭り」",
@@ -27427,14 +27408,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-06〜2026-08-07",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-06〜2026-08-07",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29979,7 +29960,7 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": null,
-    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-21〜2026-08-22・会場「北篠崎二丁目公園」・実施団体「北篠崎二丁目自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「北篠崎二丁目自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。 会場を江戸川区公式一覧の「北篠崎二丁目公園」へ照合補正。",
+    "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-21〜2026-08-22・会場「北篠崎二丁目公園」・実施団体「北篠崎二丁目自治会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「北篠崎二丁目自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -31547,7 +31528,7 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": null,
-    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「東葛西さくら公園」・実施団体「雷町会」として掲載されている（ ）。 【名称について】区公式一覧では「夏まつり」とだけ記載。実施団体「雷町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。 会場を江戸川区公式一覧の「東葛西さくら公園」へ照合補正。",
+    "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-08-08〜2026-08-09・会場「東葛西さくら公園」・実施団体「雷町会」として掲載されている（ ）。 【名称について】区公式一覧では「夏まつり」とだけ記載。実施団体「雷町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -31556,12 +31537,7 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [
-      {
-        "name": "さくら",
-        "confidence": "hint"
-      }
-    ],
+    "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
@@ -32815,9 +32791,9 @@ const EVENTS = [
     "months": [
       8
     ],
-    "scale": "中",
-    "access": "江戸川区内。詳細アクセスは出典URLを参照",
-    "address": "東京都江戸川区鹿骨2-12-1",
+    "scale": null,
+    "access": null,
+    "address": "東京都江戸川区",
     "lat": null,
     "lng": null,
     "date": "2026-08-09",
@@ -32842,7 +32818,7 @@ const EVENTS = [
     "jun": {
       "8": "上旬"
     },
-    "description": "鹿骨中学校は、地域の夏祭りや盆踊りで使われる江戸川区の学校会場。 規模は「中」として整理しています、所在地は東京都江戸川区鹿骨2-12-1。",
+    "description": null,
     "detail": "江戸川区公式サイトの鹿骨地区 盆踊り日程一覧（令和8年度）に、2026-08-09〜2026-08-10・会場「鹿骨中学校」・実施団体「鹿骨二丁目町会」として掲載されている（ ）。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「鹿骨二丁目町会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
