@@ -1,6 +1,6 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-07T20:39:29.590989+00:00",
+  "generated_at": "2026-08-08T20:28:29.478211+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
@@ -2598,8 +2598,8 @@
     "event occurrence backfill applied: added=0 updated=29 observations=53 series_3year=4",
     "event schedule rules: target_year=2026 rules=13 axes={'date': 1, 'near_date': 2, 'weekday': 6, 'weekday_near_date': 2, 'weekend_near_date': 2}",
     "event date predictions: target_year=2026 predictions=13 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 4, 'weekend_near_day': 2}",
-    "曲 occurrence 生成完了: occurrences=590 relations=2956 -> data/song_occurrences.json",
-    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 365 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 365 件（349 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 57 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
+    "曲 occurrence 生成完了: occurrences=592 relations=2957 -> data/song_occurrences.json",
+    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 370 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 370 件（354 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 55 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
   "candidates_after": 580,
@@ -2618,5 +2618,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-08 youtube_candidates=580 review=48 history_rows=43"
+  "ops_metrics": "ops metrics: date=2026-08-09 youtube_candidates=580 review=48 history_rows=44"
 }

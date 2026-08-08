@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_schedule_rules.py",
-  "generated_at": "2026-08-07T20:39:57.988237+00:00",
+  "generated_at": "2026-08-08T20:28:55.324983+00:00",
   "target_year": 2026,
   "source": "data/event_occurrence_observations.json",
   "summary": {

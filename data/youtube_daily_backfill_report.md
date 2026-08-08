@@ -1,6 +1,6 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-08-07T20:39:29.590989+00:00
+- generated_at: 2026-08-08T20:28:29.478211+00:00
 - status: harvested_until_quota_limited
 - month: 6
 - selected_rows: 53
