@@ -7,6 +7,8 @@ token.json
 
 # ローカルのテスト出力（X収集の実験ダンプ）
 data/x_voices_experiment.json
+data/voices.json
+data/voices_s3_manifest.json
 
 # ローカル再生成のRDB/証拠スナップショット
 data/*.sqlite

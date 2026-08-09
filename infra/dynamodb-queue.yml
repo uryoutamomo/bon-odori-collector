@@ -32,6 +32,12 @@ Parameters:
   RawXPostsPrefix:
     Type: String
     Default: x-raw
+  VoicesArchiveBucketName:
+    Type: String
+    Default: bon-odori-voices-169805602203
+  VoicesArchivePrefix:
+    Type: String
+    Default: voices
 
 Resources:
   GitHubOidcProvider:
@@ -177,6 +183,48 @@ Resources:
               Bool:
                 aws:SecureTransport: "false"
 
+  VoicesArchiveBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref VoicesArchiveBucketName
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      VersioningConfiguration:
+        Status: Enabled
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+        - Key: DataClass
+          Value: voices-archive
+
+  VoicesArchiveBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref VoicesArchiveBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: DenyInsecureTransport
+            Effect: Deny
+            Principal: "*"
+            Action: s3:*
+            Resource:
+              - !GetAtt VoicesArchiveBucket.Arn
+              - !Sub "${VoicesArchiveBucket.Arn}/*"
+            Condition:
+              Bool:
+                aws:SecureTransport: "false"
+
   GitHubActionsQueueRole:
     Type: AWS::IAM::Role
     Properties:
@@ -272,6 +320,20 @@ Resources:
                 Effect: Allow
                 Action: s3:PutObject
                 Resource: !Sub "${RawXPostsBucket.Arn}/${RawXPostsPrefix}/*"
+        - PolicyName: VoicesArchiveAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: GetVoicesArchiveBucketLocation
+                Effect: Allow
+                Action: s3:GetBucketLocation
+                Resource: !GetAtt VoicesArchiveBucket.Arn
+              - Sid: ReadWriteVoicesArchive
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: !Sub "${VoicesArchiveBucket.Arn}/${VoicesArchivePrefix}/*"
         - PolicyName: StaticSiteCustomDomainAccess
           PolicyDocument:
             Version: "2012-10-17"
@@ -401,5 +463,9 @@ Outputs:
     Value: !Ref RawXPostsBucket
   RawXPostsS3Prefix:
     Value: !Ref RawXPostsPrefix
+  VoicesArchiveS3BucketName:
+    Value: !Ref VoicesArchiveBucket
+  VoicesArchiveS3Prefix:
+    Value: !Ref VoicesArchivePrefix
   GitHubActionsRoleArn:
     Value: !GetAtt GitHubActionsQueueRole.Arn
