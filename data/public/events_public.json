@@ -455,16 +455,16 @@
     "detail": "千代田区・神田公園地区連合町会が運営する「大好き神田」の告知ページに、2026年8月7日・8日、17:00〜21:00、会場「神田児童公園」、主催「司町二丁目町会」として掲載されている。連合町会自身の発信のため一次情報として扱う。登録名は「納涼盆踊り大会」だけだと同名の行事と区別がつかないため、主催団体名で修飾した。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -473,7 +473,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "神田明神納涼祭り",
@@ -12417,16 +12417,16 @@
     "detail": "18:00〜20:30。盆踊りの実施有無は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12435,7 +12435,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "亀戸六丁目東町会 ふるさとまつり",
@@ -12472,16 +12472,16 @@
     "detail": "18:00〜。盆踊りの実施有無は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12490,7 +12490,7 @@
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "八名川地区連合町会 納涼音頭大会",
@@ -12690,16 +12690,16 @@
     "detail": "18:00〜。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12708,7 +12708,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "南砂住宅 団地祭り",
@@ -12972,16 +12972,16 @@
     "detail": "17:00〜。盆踊りの実施有無は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12990,7 +12990,7 @@
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大島五丁目町会 ぼんおどり",
@@ -13783,16 +13783,16 @@
     "detail": "19:00〜21:00。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -13801,7 +13801,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "扇橋二丁目町会 納涼大会",
@@ -22675,17 +22675,17 @@
         "basis_label": "2025年実測"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "display_name": "渋谷盆踊り（渋谷109前）",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -22694,7 +22694,7 @@
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "道盆 DOUBON III",
@@ -22738,16 +22738,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -22756,7 +22756,7 @@
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "中野駅前大盆踊り大会",
@@ -24953,16 +24953,16 @@
     "detail": "開催時間：18:00〜20:30。主催団体は告知本文に記載がなく未確認。現地の参加報告も現時点では確認できていない。登録時点では開催予定。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -24971,7 +24971,7 @@
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大谷口一丁目町会 納涼盆踊り大会",
@@ -26066,16 +26066,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26084,7 +26084,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "銀河の夜の盆踊り大会",
@@ -26132,16 +26132,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26150,7 +26150,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "春日町盆踊り大会",
@@ -26693,16 +26693,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26711,7 +26711,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "普賢寺自治会 納涼盆踊り大会",
@@ -28131,16 +28131,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -28149,7 +28149,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "新小岩北口盆踊りフェスタ",
@@ -30507,16 +30507,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30525,7 +30525,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "平井西町会納涼盆踊り大会",
@@ -30705,16 +30705,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30723,7 +30723,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "新田町会盆踊り大会",
@@ -30767,16 +30767,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30785,7 +30785,7 @@
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "まつりだワッショイ小松川",
@@ -31490,16 +31490,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-08",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31508,7 +31508,7 @@
       "2026-08-07",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "下篠崎町会盆踊り大会",

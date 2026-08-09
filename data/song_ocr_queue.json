@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 59,
+  "count": 64,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -933,6 +933,87 @@
         "pic.x.com/n7w6hJI6Q6"
       ],
       "text": "今どきの盆踊りはほんま華やか！\n昭和も平成も所詮は場に溶け込んだもん勝ち!?\nとゆう事を初めて知ったかも…\n\n曲目 ♪GOLDFINGER'99→♪きよしのズンドコ節→♪アゲ♂️アゲ♂EVERY☆騎士etc. https://t.co/n7w6hJI6Q6",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "72f7be579e8ad20c",
+      "status": "needs_ocr",
+      "account": "@highlandrail",
+      "url": "https://x.com/highlandrail/status/2086063141885214963",
+      "tweet_id": "2086063141885214963",
+      "date": "2026-08-08T12:13:04+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPMvXdGa4AAh0mo.jpg",
+        "https://t.co/NbJSRna9Uv",
+        "pic.x.com/NbJSRna9Uv"
+      ],
+      "text": "カラオケタイム突入。今回はサザンオールスターズ「盆ギリ恋歌」を歌わせていただきました。最近の盆踊りでよく流れる曲目ですね。また、誕生日を祝っていただけて、ありがとうございました。 https://t.co/NbJSRna9Uv",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "936c47a73e9ef4e5",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2086080784730034453",
+      "tweet_id": "2086080784730034453",
+      "date": "2026-08-08T13:23:11+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2086078580451385344/img/rlTVC7Z-XV4p-A_1.jpg",
+        "https://t.co/kGEbWvqgGP",
+        "pic.x.com/kGEbWvqgGP",
+        "https://pbs.twimg.com/amplify_video_thumb/2086079460344995840/img/2KlxJTEknfJwWzT2.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2086079803401359360/img/WArScXI0R-P_sr9p.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2086080085631856640/img/mfw4ZYswn6-vgIQM.jpg"
+      ],
+      "text": "2026年8月8日(土)\n埼玉県吉川市\n／吉川美南駅前公園\n「第4回 吉川美南駅前 盆おどり」\n\n小さなお子様連れが、櫓周りを歩いて楽しんでいました🥰\n\n【曲目】\n吉川なまず音頭\nアンパンマン音頭\n踊れどれドラ\nエビカニクス\nパプリカ\nジャンボリーミッキー\n東京音頭\n花笠音頭\n炭坑節\nマツケンサンバII 他 https://t.co/kGEbWvqgGP",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "698e54954544ef9c",
+      "status": "needs_ocr",
+      "account": "@IID_PSV",
+      "url": "https://x.com/IID_PSV/status/2086082121001775495",
+      "tweet_id": "2086082121001775495",
+      "date": "2026-08-08T13:28:29+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPNAoauawAACi37.jpg",
+        "https://t.co/vScZn2Cz3U",
+        "pic.x.com/vScZn2Cz3U"
+      ],
+      "text": "本日は安城七夕まつりの盆踊りに参加してきました\n今日は盆踊連隊マツリンジャーさんのリードで安城の定番曲からJ-POP等のラインナップでとても盛り上がりました（＾∇＾）\n\nここの会場の特徴としてマツリンジャーさんの元気な掛け声で、今日の曲目全部に独自の掛け声があって面白かったですwなんとソーラン節にも掛け声があるのが驚きですね( ＾∀＾)\n\nあと、本日の太鼓はフェスタでも担当していただいているHくん1人で全て担当されていて本当にお疲れ様でした！\n後半から太鼓近くで踊ってましたが踊りやすくて良かったです（＾∇＾）",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "8cf834a979bc45d9",
+      "status": "needs_ocr",
+      "account": "@yamashita99",
+      "url": "https://x.com/yamashita99/status/2086099853675827652",
+      "tweet_id": "2086099853675827652",
+      "date": "2026-08-08T14:38:57+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPNQWepbsAAJUMV.jpg",
+        "https://t.co/mlkSFCt1a4",
+        "pic.x.com/mlkSFCt1a4",
+        "https://pbs.twimg.com/media/HPNQXDfbMAAzy_n.jpg",
+        "https://pbs.twimg.com/media/HPNQXqobUAEew5l.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2086099474133495808/img/ccw8ncQVGRGHw3uY.jpg"
+      ],
+      "text": "@Recon_surgeon 神田明神の盆踊り大会は 3日間行われ、アニメソングで踊るのは１日目だけです。\n２日目と３日目は、伝統曲の出番です。\nまた、１日目の曲目にも、20世紀の子供に親しまれた ドラえもん音頭などが有ります。\n振付指導をしているのは、東京大学の非常勤講師の先生と、【東大盆踊りサークル】の皆さん。\nこの先生、外国にも日本の盆踊りを広める活動をしています。",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "1a20c875ec4bf1a4",
+      "status": "needs_ocr",
+      "account": "@kanesueofficial",
+      "url": "https://x.com/kanesueofficial/status/2086286633620717961",
+      "tweet_id": "2086286633620717961",
+      "date": "2026-08-09T03:01:09+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPP6og8aUAANa9q.jpg",
+        "https://t.co/RzdrTacRbj",
+        "pic.x.com/RzdrTacRbj"
+      ],
+      "text": "こんにちは、本日も暑いですね🥵\n地域によっては急な雷雨の可能性も🌩️\n台風15号は🌀どうなる？\n天気予報に夢中のだーです☕️\n\n🏮盆踊り盛り上がる曲アンケート🏮\nご回答ありがとうございました🙇\n🎙️結果発表ーーー🎙️\n#ダンシングヒーロー がダントツ💃\n強すぎるー😱昨年も盛り上がってました😎\n\n地域ごとに曲目は変わりますので\n楽しみ方も変わりますね😊\n予定の合う方は全制覇、目指してくださいね🤭\n\n毎年、うちわを配っていますが今年も制作中💨\n今年はレアとのウワサが🤫\n果たして期限に間に合うのか…お楽しみに😊\n\n本日も水分補給に無理せず\n#カネスエいこっ　#フェルナいこっ\n素敵な1日になりますように！",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

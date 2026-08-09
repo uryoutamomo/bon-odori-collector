@@ -1,7 +1,7 @@
 {
-  "status": "awaiting_review",
-  "window_start": "2026-07-25T07:23:49.788748+00:00",
-  "window_end": "2026-08-08T07:23:49.788748+00:00",
+  "status": "in_progress",
+  "window_start": "2026-07-26T07:21:46.685599+00:00",
+  "window_end": "2026-08-09T07:21:46.685599+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -55,19 +55,15 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 1,
+  "batch_index": 0,
   "batch_cursors": {},
-  "completed_batches": [
-    0,
-    1,
-    2
-  ],
-  "pages_completed": 119,
-  "tweets_scanned": 2283,
-  "evidence_detected": 375,
+  "completed_batches": [],
+  "pages_completed": 0,
+  "tweets_scanned": 0,
+  "evidence_detected": 0,
   "pending_evidence": [],
-  "started_at": "2026-08-08T07:23:49.788748+00:00",
-  "updated_at": "2026-08-08T07:31:03.018116+00:00",
+  "started_at": "2026-08-09T07:21:46.685599+00:00",
+  "updated_at": "2026-08-09T07:21:46.836511+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -761,10 +757,19 @@
       "pages_completed": 118,
       "tweets_scanned": 2290,
       "evidence_detected": 370
+    },
+    {
+      "window_start": "2026-07-25T07:23:49.788748+00:00",
+      "window_end": "2026-08-08T07:23:49.788748+00:00",
+      "covered_until": "2026-08-08T07:23:49.788748+00:00",
+      "completed_at": "2026-08-08T07:31:03.032858+00:00",
+      "reviewed_at": "2026-08-09T07:21:46.685599+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 119,
+      "tweets_scanned": 2283,
+      "evidence_detected": 375
     }
   ],
-  "previous_covered_until": "2026-08-07T07:49:27.455397+00:00",
-  "completed_at": "2026-08-08T07:31:03.032858+00:00",
-  "covered_until": "2026-08-08T07:23:49.788748+00:00",
-  "pending_cleared_at": "2026-08-08T07:31:06.570009+00:00"
+  "previous_covered_until": "2026-08-08T07:23:49.788748+00:00",
+  "last_error": "HTTP Error 402: Payment Required"
 }

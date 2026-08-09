@@ -1,24 +1,16 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 199,
-  "direct_count": 129,
-  "created_count": 113,
-  "updated_count": 16,
-  "rejected_noise_count": 61,
-  "review_count": 9,
+  "song_candidate_count": 194,
+  "direct_count": 121,
+  "created_count": 104,
+  "updated_count": 17,
+  "rejected_noise_count": 66,
+  "review_count": 7,
   "created": [
     {
       "song_name": "クックロビン音頭",
       "source_term": "クックロビン音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "中央学園音頭",
-      "source_term": "中央学園音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -33,11 +25,11 @@
       "dry_run": true
     },
     {
-      "song_name": "おしりたんてい音頭",
-      "source_term": "おしりたんてい音頭",
+      "song_name": "中央学園音頭",
+      "source_term": "中央学園音頭",
       "target": "create",
-      "venue_relations": 1,
-      "event_relations": 1,
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     },
     {
@@ -49,16 +41,24 @@
       "dry_run": true
     },
     {
-      "song_name": "日光和楽踊り",
-      "source_term": "日光和楽踊り",
+      "song_name": "おしりたんてい音頭",
+      "source_term": "おしりたんてい音頭",
+      "target": "create",
+      "venue_relations": 1,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "メリーアン音頭",
+      "source_term": "メリーアン音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "なりませぬ節",
-      "source_term": "なりませぬ節",
+      "song_name": "光市民音頭",
+      "source_term": "光市民音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -73,24 +73,16 @@
       "dry_run": true
     },
     {
-      "song_name": "東山芸妓踊り",
-      "source_term": "東山芸妓踊り",
+      "song_name": "アンパンマン音頭",
+      "source_term": "アンパンマン音頭",
       "target": "create",
-      "venue_relations": 0,
+      "venue_relations": 1,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "みやたん音頭",
-      "source_term": "みやたん音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "ダンスや伝統音頭",
-      "source_term": "ダンスや伝統音頭",
+      "song_name": "シン・所沢音頭",
+      "source_term": "シン・所沢音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -101,14 +93,6 @@
       "source_term": "ユタゴン音頭",
       "target": "create",
       "venue_relations": 1,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "光市民音頭",
-      "source_term": "光市民音頭",
-      "target": "create",
-      "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
@@ -129,19 +113,11 @@
       "dry_run": true
     },
     {
-      "song_name": "念仏踊り",
-      "source_term": "念仏踊り",
+      "song_name": "日光和楽踊り",
+      "source_term": "日光和楽踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "恵比寿音頭",
-      "source_term": "恵比寿音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -201,16 +177,16 @@
       "dry_run": true
     },
     {
-      "song_name": "きよしズンドコ節",
-      "source_term": "きよしズンドコ節",
+      "song_name": "ここは踊り",
+      "source_term": "ここは踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "ここは踊り",
-      "source_term": "ここは踊り",
+      "song_name": "この地区の人連日踊り",
+      "source_term": "この地区の人連日踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -257,40 +233,32 @@
       "dry_run": true
     },
     {
-      "song_name": "なるこ踊り",
-      "source_term": "なるこ踊り",
+      "song_name": "なりませぬ節",
+      "source_term": "なりませぬ節",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "ほうき踊り",
-      "source_term": "ほうき踊り",
+      "song_name": "ひたすら踊り",
+      "source_term": "ひたすら踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "ほぼ手踊り",
-      "source_term": "ほぼ手踊り",
+      "song_name": "みやたん音頭",
+      "source_term": "みやたん音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "みなさま踊り",
-      "source_term": "みなさま踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "みんなde和楽踊り",
-      "source_term": "みんなde和楽踊り",
+      "song_name": "やっぱ板橋音頭",
+      "source_term": "やっぱ板橋音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -299,6 +267,14 @@
     {
       "song_name": "ゆったり踊り",
       "source_term": "ゆったり踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "よかったら踊り",
+      "source_term": "よかったら踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -321,8 +297,24 @@
       "dry_run": true
     },
     {
-      "song_name": "ガリガリくん音頭",
-      "source_term": "ガリガリくん音頭",
+      "song_name": "アラビアン踊り",
+      "source_term": "アラビアン踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "オットット音頭",
+      "source_term": "オットット音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "オバQ音頭",
+      "source_term": "オバQ音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -345,6 +337,14 @@
       "dry_run": true
     },
     {
+      "song_name": "ショメ節",
+      "source_term": "ショメ節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "ズンバ音頭",
       "source_term": "ズンバ音頭",
       "target": "create",
@@ -353,16 +353,16 @@
       "dry_run": true
     },
     {
-      "song_name": "テクノ八木節",
-      "source_term": "テクノ八木節",
+      "song_name": "テントラ音頭",
+      "source_term": "テントラ音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
       "dry_run": true
     },
     {
-      "song_name": "テントラ音頭",
-      "source_term": "テントラ音頭",
+      "song_name": "バス降りたら東京音頭",
+      "source_term": "バス降りたら東京音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -385,27 +385,19 @@
       "dry_run": true
     },
     {
+      "song_name": "一休さん音頭",
+      "source_term": "一休さん音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "七夕踊り",
       "source_term": "七夕踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "三夜音頭",
-      "source_term": "三夜音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "中野甚句",
-      "source_term": "中野甚句",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 2,
       "dry_run": true
     },
     {
@@ -417,8 +409,8 @@
       "dry_run": true
     },
     {
-      "song_name": "佐渡甚句",
-      "source_term": "佐渡甚句",
+      "song_name": "八丈音頭",
+      "source_term": "八丈音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -481,6 +473,14 @@
       "dry_run": true
     },
     {
+      "song_name": "吉川なまず音頭",
+      "source_term": "吉川なまず音頭",
+      "target": "create",
+      "venue_relations": 1,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "和楽踊り",
       "source_term": "和楽踊り",
       "target": "create",
@@ -497,19 +497,19 @@
       "dry_run": true
     },
     {
-      "song_name": "地元曲中野音頭",
-      "source_term": "地元曲中野音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 2,
-      "dry_run": true
-    },
-    {
-      "song_name": "大好きな音頭",
-      "source_term": "大好きな音頭",
+      "song_name": "大宮音頭",
+      "source_term": "大宮音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "大江戸助六音頭",
+      "source_term": "大江戸助六音頭",
+      "target": "create",
+      "venue_relations": 1,
+      "event_relations": 2,
       "dry_run": true
     },
     {
@@ -529,16 +529,16 @@
       "dry_run": true
     },
     {
-      "song_name": "天神踊り",
-      "source_term": "天神踊り",
+      "song_name": "太陽おどり",
+      "source_term": "太陽おどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "太陽おどり",
-      "source_term": "太陽おどり",
+      "song_name": "太鼓と石投げ踊り",
+      "source_term": "太鼓と石投げ踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -561,16 +561,16 @@
       "dry_run": true
     },
     {
-      "song_name": "富士山すその阿波おどり",
-      "source_term": "富士山すその阿波おどり",
+      "song_name": "実家は播州音頭",
+      "source_term": "実家は播州音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "小見川千明さんら踊り",
-      "source_term": "小見川千明さんら踊り",
+      "song_name": "山ノ内音頭",
+      "source_term": "山ノ内音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -601,6 +601,14 @@
       "dry_run": true
     },
     {
+      "song_name": "恵比寿音頭",
+      "source_term": "恵比寿音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "我上州の八木節",
       "source_term": "我上州の八木節",
       "target": "create",
@@ -625,22 +633,6 @@
       "dry_run": true
     },
     {
-      "song_name": "拝殿踊り",
-      "source_term": "拝殿踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "新宮音頭",
-      "source_term": "新宮音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "新年初踊り",
       "source_term": "新年初踊り",
       "target": "create",
@@ -657,8 +649,16 @@
       "dry_run": true
     },
     {
-      "song_name": "新美唄音頭",
-      "source_term": "新美唄音頭",
+      "song_name": "方南ぼんおどり",
+      "source_term": "方南ぼんおどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "日目は浜町音頭",
+      "source_term": "日目は浜町音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -689,14 +689,6 @@
       "dry_run": true
     },
     {
-      "song_name": "本門寺音頭",
-      "source_term": "本門寺音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
       "song_name": "東京スカイツリー音頭",
       "source_term": "東京スカイツリー音頭",
       "target": "create",
@@ -705,16 +697,8 @@
       "dry_run": true
     },
     {
-      "song_name": "松の木小唄",
-      "source_term": "松の木小唄",
-      "target": "create",
-      "venue_relations": 1,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "横丁音頭",
-      "source_term": "横丁音頭",
+      "song_name": "東山芸妓踊り",
+      "source_term": "東山芸妓踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -723,14 +707,6 @@
     {
       "song_name": "民謡流しは踊り",
       "source_term": "民謡流しは踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "気仙沼音頭",
-      "source_term": "気仙沼音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -753,8 +729,16 @@
       "dry_run": true
     },
     {
-      "song_name": "牛深ハイヤ節",
-      "source_term": "牛深ハイヤ節",
+      "song_name": "渋谷百年総踊り",
+      "source_term": "渋谷百年総踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "熱気あふれる踊り",
+      "source_term": "熱気あふれる踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -763,30 +747,6 @@
     {
       "song_name": "皆さん踊り",
       "source_term": "皆さん踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "盆女さんは踊り",
-      "source_term": "盆女さんは踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "相川音頭",
-      "source_term": "相川音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "相模のささら踊り",
-      "source_term": "相模のささら踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -809,11 +769,19 @@
       "dry_run": true
     },
     {
-      "song_name": "縁日踊り",
-      "source_term": "縁日踊り",
+      "song_name": "緑区音頭",
+      "source_term": "緑区音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "練馬音頭",
+      "source_term": "練馬音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -825,14 +793,6 @@
       "dry_run": true
     },
     {
-      "song_name": "自衛隊員のよさこい踊り",
-      "source_term": "自衛隊員のよさこい踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "花魁艶音頭",
       "source_term": "花魁艶音頭",
       "target": "create",
@@ -841,8 +801,8 @@
       "dry_run": true
     },
     {
-      "song_name": "親子三代千葉おどり",
-      "source_term": "親子三代千葉おどり",
+      "song_name": "覚えたはずの東京音頭",
+      "source_term": "覚えたはずの東京音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -857,11 +817,11 @@
       "dry_run": true
     },
     {
-      "song_name": "越中おわら節",
-      "source_term": "越中おわら節",
+      "song_name": "起源は時宗の念仏踊り",
+      "source_term": "起源は時宗の念仏踊り",
       "target": "create",
-      "venue_relations": 1,
-      "event_relations": 1,
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     },
     {
@@ -869,38 +829,6 @@
       "source_term": "錦糸町高架下河内音頭",
       "target": "create",
       "venue_relations": 1,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "阿波おどり",
-      "source_term": "阿波おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "音頭",
-      "source_term": "音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "颯ちゃんの国富音頭",
-      "source_term": "颯ちゃんの国富音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "鶴見音頭",
-      "source_term": "鶴見音頭",
-      "target": "create",
-      "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
@@ -943,12 +871,36 @@
       "source_term": "河内音頭",
       "target": "update",
       "venue_relations": 0,
-      "event_relations": 1,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "ドラえもん音頭",
+      "source_term": "ドラえもん音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     },
     {
       "song_name": "大東京音頭",
       "source_term": "大東京音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "浜町音頭",
+      "source_term": "浜町音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "江州音頭",
+      "source_term": "江州音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -963,48 +915,16 @@
       "dry_run": true
     },
     {
-      "song_name": "ドラえもん音頭",
-      "source_term": "ドラえもん音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "江州音頭",
-      "source_term": "江州音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "浜町音頭",
-      "source_term": "浜町音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "花笠音頭",
       "source_term": "花笠音頭",
       "target": "update",
       "venue_relations": 1,
-      "event_relations": 2,
+      "event_relations": 1,
       "dry_run": true
     },
     {
       "song_name": "錦糸町河内音頭",
       "source_term": "錦糸町河内音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "さくら音頭",
-      "source_term": "さくら音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 1,
@@ -1019,6 +939,22 @@
       "dry_run": true
     },
     {
+      "song_name": "炭坑節",
+      "source_term": "炭鉱節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "さくら音頭",
+      "source_term": "さくら音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
       "song_name": "河内おとこ節",
       "source_term": "河内おとこ節",
       "target": "update",
@@ -1027,19 +963,19 @@
       "dry_run": true
     },
     {
+      "song_name": "法輪音頭",
+      "source_term": "法輪音頭",
+      "target": "update",
+      "venue_relations": 1,
+      "event_relations": 2,
+      "dry_run": true
+    },
+    {
       "song_name": "深川音頭",
       "source_term": "深川音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "炭坑節",
-      "source_term": "炭鉱節",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 1,
       "dry_run": true
     }
   ],
@@ -1053,27 +989,15 @@
       "reason": "曲名ではなく文章断片または一般語"
     },
     {
-      "term": "ぜひ踊り",
-      "reason": "曲名ではなく文章断片または一般語"
-    },
-    {
-      "term": "今日も踊り",
+      "term": "一緒に踊り",
       "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "前夜祭で太鼓や踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "阿波踊り",
-      "reason": "SongCatalog: RDBで無効と判定済み"
     },
     {
       "term": "9に向けて踊り",
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "あんなふうに踊り",
+      "term": "sweetも踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1085,16 +1009,20 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "から踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
       "term": "しっかり踊り",
       "reason": "曲名ではなく文章断片または一般語"
     },
     {
+      "term": "ぜひお気軽に踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "ぜひ一緒に踊り",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "ぜひ踊り",
+      "reason": "曲名ではなく文章断片または一般語"
     },
     {
       "term": "そこに踊り",
@@ -1109,7 +1037,11 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "で江州音頭",
+      "term": "ただ曲も踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "で皆で楽しく踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1125,10 +1057,6 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "な格好や表情の踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
       "term": "に柏踊りと京北音頭",
       "reason": "曲名としての形が弱い"
     },
@@ -1137,11 +1065,7 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "また皆さんでおどり",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "みなさんで楽しく踊り",
+      "term": "また一緒に踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1157,11 +1081,11 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "カフェ店主が炭坑節",
+      "term": "アラレちゃん音頭もドラえもん音頭",
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "クックロビン音頭踊り",
+      "term": "カフェ店主が炭坑節",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1177,10 +1101,6 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "一緒に踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
       "term": "三郷の地元の踊り",
       "reason": "曲名としての形が弱い"
     },
@@ -1189,15 +1109,11 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "中区みなと音頭",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "今日の踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
       "term": "今日も神田へ踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "今日も踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1205,7 +1121,19 @@
       "reason": "曲名としての形が弱い"
     },
     {
+      "term": "先生と踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "先生の踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "先輩から教わった踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "前夜祭で太鼓や踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1217,11 +1145,11 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "好きな推しと踊り",
+      "term": "女性の踊り",
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "学校では長岡甚句",
+      "term": "好きな推しと踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1229,11 +1157,19 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "屋台や音頭",
+      "term": "山口咲子さんと踊り",
       "reason": "曲名としての形が弱い"
     },
     {
       "term": "昨日の夜の踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "昨日踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "時にはおばちゃんに踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1245,15 +1181,19 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "江州音頭・伊勢音頭・河内音頭",
-      "reason": "曲名としての形が弱い"
-    },
-    {
       "term": "河内音頭でも手踊り",
       "reason": "曲名としての形が弱い"
     },
     {
+      "term": "演奏は手拍子や踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "現地の踊り七夕おどり",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "町会ごとに踊り",
       "reason": "曲名としての形が弱い"
     },
     {
@@ -1273,12 +1213,28 @@
       "reason": "曲名としての形が弱い"
     },
     {
+      "term": "笑顔と踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "細かいところに節",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "花火も踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "足に豆ができるほど踊り",
       "reason": "曲名としての形が弱い"
     },
     {
       "term": "酒田の甚句",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "阿波踊り",
+      "reason": "SongCatalog: RDBで無効と判定済み"
     },
     {
       "term": "音頭は河内音頭",
@@ -1292,9 +1248,9 @@
   "review": [
     {
       "term": "盆ジョビ",
-      "evidence_count": 4,
+      "evidence_count": 3,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://x.com/nora_zakura/status/2085982209560002811"
+      "evidence_url": "https://x.com/Kumakuma9/status/2086340035369148590"
     },
     {
       "term": "らんまん踊り",
@@ -1303,40 +1259,28 @@
       "evidence_url": "https://x.com/2tsuo_g/status/2085937084502851952"
     },
     {
-      "term": "新宿音頭",
-      "evidence_count": 2,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=3F12IW-FiTY"
-    },
-    {
-      "term": "神田明神音頭",
-      "evidence_count": 2,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=HuRyRcvLQzI"
-    },
-    {
       "term": "たいとう音頭",
       "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://x.com/kuromon_reunion/status/2085290261828305317"
     },
     {
-      "term": "りんご節",
+      "term": "新宿音頭",
       "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://x.com/_masakari/status/2085196334920003801"
+      "evidence_url": "https://www.youtube.com/watch?v=3F12IW-FiTY"
     },
     {
-      "term": "白浜音頭",
+      "term": "神田明神音頭",
       "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://x.com/tanoshiki_kana/status/2084981293247504678"
+      "evidence_url": "https://www.youtube.com/watch?v=HuRyRcvLQzI"
     },
     {
-      "term": "能登島さし音頭",
+      "term": "築地音頭",
       "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://x.com/_masakari/status/2085195932153553271"
+      "evidence_url": "https://x.com/bakushin339711/status/2086118831031042297"
     },
     {
       "term": "郡上おどり",
