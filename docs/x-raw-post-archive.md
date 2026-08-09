@@ -1,7 +1,7 @@
 # X 生投稿アーカイブ運用
 
 X API から初めて取得した投稿は、意味判定・`voices_seen.json` 更新より前に、専用の非公開 S3 バケットへ gzip 圧縮 JSONL と manifest を保存する。
-`text` は `voices.json` の 500 文字上限を適用しない原文、`media_urls`、投稿 ID、URL、API payload の SHA-256、取得経路・検索バッチ・取得時刻を含む。判定・要約・ランキングはこの保存処理に含めない。
+`text` は `voices.json` 側の文字数上限を適用しない原文、`media_urls`、投稿 ID、URL、API payload の SHA-256、取得経路・検索バッチ・取得時刻を含む。判定・要約・ランキングはこの保存処理に含めない。
 
 ## 必ず守る適用順序
 
