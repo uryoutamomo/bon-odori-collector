@@ -3,9 +3,15 @@
 X API から初めて取得した投稿は、意味判定・`voices_seen.json` 更新より前に、専用の非公開 S3 バケットへ gzip 圧縮 JSONL と manifest を保存する。
 `text` は `voices.json` の 500 文字上限を適用しない原文、`media_urls`、投稿 ID、URL、API payload の SHA-256、取得経路・検索バッチ・取得時刻を含む。判定・要約・ランキングはこの保存処理に含めない。
 
+## 必ず守る適用順序
+
+**① CloudFormation スタック更新 → ② GitHub Actions variable 設定 → ③ PR を merge** の順で適用する。逆順にしない。
+
+`X_RAW_POSTS_S3_BUCKET` が未設定、または S3 保存が最終リトライ後も失敗した状態で新規 X 投稿を取得すると、原文を失わないために collector は非ゼロ終了する。これは意図した fail-closed 動作であり、X 収集だけでは止まらない。同じ日次ジョブ内の公式サイト監視、公開 JSON 再生成、収集結果の commit も実行されない。したがって、merge 前に必ずバケットと variable を準備する。
+
 ## 初回設定 / スタック更新
 
-この変更を main に入れる前後で、AWS 認証済みの端末から既存スタックを更新する。これにより専用バケット、TLS 強制ポリシー、GitHub Actions OIDC ロールの `PutObject` 権限が作成される。
+merge 前に、AWS 認証済みの端末から既存スタックを更新する。これにより専用バケット、TLS 強制ポリシー、GitHub Actions OIDC ロールの `PutObject` 権限が作成される。
 
 ```bash
 aws cloudformation deploy \
