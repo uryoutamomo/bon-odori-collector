@@ -6,6 +6,8 @@
 
 **① CloudFormation更新 → ② PRブランチでseed → ③GitHub Actions variables設定 → ④PR merge** の順で実施する。seed前にmergeすると、追跡から外れた `data/voices.json` を日次workflowが復元できない。
 
+`Fetch voices artifact` は `VOICES_S3_BUCKET` 未設定時も条件付きでスキップしない。S3が未設定・未seed・取得失敗なら、日次workflowは収集処理より前に必ず停止する。空の作業ファイルで続行して全投稿を新規扱いする、または既存本文を失う事故を防ぐための fail-closed 動作である。
+
 1. AWS認証済み端末でスタックを更新する。
 
 ```bash
