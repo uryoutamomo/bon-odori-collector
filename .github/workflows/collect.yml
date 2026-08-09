@@ -167,6 +167,10 @@ jobs:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
         # X(twitterapi.io)収集用。未設定でも collect.py 側で fail-safe スキップする
         TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+        # Xの未判定生データは公開物と分離したS3へ先に保存する。キー未設定時は
+        # 新規X投稿を見つけた段階で停止し、voices_seen を進めない。
+        X_RAW_POSTS_S3_BUCKET: ${{ vars.X_RAW_POSTS_S3_BUCKET }}
+        X_RAW_POSTS_S3_PREFIX: ${{ vars.X_RAW_POSTS_S3_PREFIX || 'x-raw' }}
         # 📖 盆踊ラー用語集 DB（速報・確度シグナル検知に使用）。未設定でも fail-safe スキップ
         GLOSSARY_DB_ID: ${{ secrets.GLOSSARY_DB_ID }}
         # 通常の日次収集はNotionへ書かない。手動実行時だけ明示的にtrueへできる。

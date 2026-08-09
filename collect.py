@@ -30,6 +30,7 @@ from collection_support.event_evidence import (
     classify_event_evidence,
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
+from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 
 try:
     import feedparser
@@ -693,6 +694,25 @@ def _x_map_to_voice(tw):
     return voice
 
 
+def _prepare_new_x_posts(tweets, seen_urls, new_seen, context):
+    """Map and durably preserve unseen X posts before any meaning judgement.
+
+    ``new_seen`` is intentionally not modified here.  Callers may advance it
+    only after ``capture_raw_x_posts`` returns successfully.
+    """
+    prepared = []
+    prepared_urls = set()
+    for tweet in tweets:
+        voice = _x_map_to_voice(tweet)
+        url = voice.get("url") or ""
+        if not url or url in seen_urls or url in new_seen or url in prepared_urls:
+            continue
+        prepared.append((tweet, voice))
+        prepared_urls.add(url)
+    capture_raw_x_posts([tweet for tweet, _ in prepared], context)
+    return prepared
+
+
 def _append_x_log_row(voice, query_id, judgement, cost):
     """旧X収集ログDBに1行追記。Notion未設定なら静かにスキップ。"""
     if not collect_notion_writes_enabled() or not NOTION_TOKEN or not X_LOG_DB_ID:
@@ -788,10 +808,13 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
             run_cost += len(tweets) * cost_per_tweet
 
             count = 0
-            for tw in tweets:
-                v = _x_map_to_voice(tw)
-                if not v["url"] or v["url"] in seen_urls or v["url"] in new_seen:
-                    continue
+            prepared = _prepare_new_x_posts(tweets, seen_urls, new_seen, {
+                "route": "query",
+                "query_id": qid,
+                "batch_id": f"{qid}-page-{page + 1}",
+                "estimated_cost_usd": cost_per_tweet,
+            })
+            for _, v in prepared:
                 judgement = _score_voice(v["text"], cfg)
                 v["tags"] = [judgement, qid]
                 _append_x_log_row(v, qid, judgement, cost_per_tweet)
@@ -852,10 +875,13 @@ def collect_proactive_x(targets, seen_urls, config):
         tweets = data.get("tweets") or data.get("data") or []
         run_cost += max(len(tweets), 1) * cost_per_tweet
         count = 0
-        for tweet in tweets:
-            voice = _x_map_to_voice(tweet)
-            if not voice["url"] or voice["url"] in seen_urls or voice["url"] in new_seen:
-                continue
+        prepared = _prepare_new_x_posts(tweets, seen_urls, new_seen, {
+            "route": "proactive",
+            "query_id": target.get("venue") or "venue",
+            "batch_id": f"venue-{target.get('venue') or 'unknown'}",
+            "estimated_cost_usd": cost_per_tweet,
+        })
+        for _, voice in prepared:
             voice["source"] = "x_proactive"
             voice["tags"] = ["🔎能動検索", target["venue"]]
             new_items.append(voice)
@@ -1978,11 +2004,14 @@ def collect_x_whitelist(seen_urls):
 
             tweets = data.get("tweets") or data.get("data") or []
             run_cost += max(len(tweets), 1) * cost_per_tweet  # 空振りも1件課金
-            for tw in tweets:
-                v = _x_map_to_voice(tw)
+            prepared = _prepare_new_x_posts(tweets, seen_urls, new_seen, {
+                "route": "whitelist",
+                "query_id": "q-whitelist",
+                "batch_id": f"batch-{batch_index}-page-{page}",
+                "estimated_cost_usd": cost_per_tweet,
+            })
+            for _, v in prepared:
                 v["source"] = "x_whitelist"
-                if not v["url"] or v["url"] in seen_urls or v["url"] in new_seen:
-                    continue
                 judgement = _score_voice(v["text"], cfg) if cfg else "🟡関心"
                 value_score, value_reasons = _x_post_value_score(v, cfg, known_venues)
                 tags = ["⭐盆踊ラー", judgement]
@@ -3339,6 +3368,8 @@ def main():
         try:
             x_items, updated_voices_seen = collect_x_voices(set(updated_voices_seen))
             voice_items = voice_items + x_items
+        except RawXArchiveError:
+            raise
         except Exception as e:
             print(f"[x] 予期せぬエラー（他収集には影響なし）: {e}")
 
@@ -3350,6 +3381,8 @@ def main():
                 proactive_config,
             )
             voice_items = proactive_x + voice_items
+        except RawXArchiveError:
+            raise
         except Exception as e:
             print(f"[proactive/x] 予期せぬエラー（他収集には影響なし）: {e}")
 
@@ -3357,6 +3390,8 @@ def main():
         try:
             wl_items, updated_voices_seen = collect_x_whitelist(set(updated_voices_seen))
             voice_items = wl_items + voice_items  # 盆踊ラーを先頭に
+        except RawXArchiveError:
+            raise
         except Exception as e:
             print(f"[whitelist] 予期せぬエラー（他収集には影響なし）: {e}")
 
@@ -3389,6 +3424,9 @@ def main():
         _save_x_account_scores(deduped_voices, _load_x_config() or {})
 
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
+    except RawXArchiveError:
+        print("[x] 生データ保存に失敗したため、voices_seen は更新せず収集を停止します")
+        raise
     except Exception as e:
         print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
 
