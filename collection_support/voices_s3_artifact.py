@@ -213,7 +213,7 @@ def publish(args, client: Any | None = None, *, allow_empty_remote: bool = False
         pass
     latest_keys = artifact_keys(prefix)
     remote = get_json(client, bucket, latest_keys["latest_manifest"])
-    expected = args.expect_remote_checksum or provenance.get("content_sha256") or ""
+    expected = getattr(args, "expect_remote_checksum", "") or provenance.get("content_sha256") or ""
     remote_checksum = (remote or {}).get("content_sha256") or ""
     if remote and remote_checksum != expected:
         raise SystemExit(f"voices remote checksum changed: expected={expected} actual={remote_checksum}")
@@ -249,6 +249,9 @@ def seed(args, client: Any | None = None) -> dict[str, Any]:
         raise SystemExit(f"seed source checksum mismatch: expected={args.expect_source_sha256} actual={source_checksum}")
     if len(rows) != args.expect_item_count:
         raise SystemExit(f"seed item count mismatch: expected={args.expect_item_count} actual={len(rows)}")
+    # ``seed`` does not accept a remote checksum: it is valid only when no
+    # remote manifest exists. ``publish`` still shares its implementation.
+    args.expect_remote_checksum = ""
     args.snapshot_id = args.snapshot_id or f"seed-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
     return publish(args, client=client, allow_empty_remote=True)
 

@@ -81,6 +81,22 @@ class VoicesS3ArtifactTest(unittest.TestCase):
             with self.assertRaisesRegex(SystemExit, "checksum mismatch"):
                 artifact.fetch(self.args(root, command_name="fetch"), client=client)
 
+    def test_seed_cli_parse_has_all_publish_attributes(self):
+        client = FakeS3()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "voices.json"
+            source.write_text(json.dumps([{"source": "x", "url": "https://x.example/1"}]), encoding="utf-8")
+            parsed = artifact.build_parser().parse_args([
+                "--bucket", "voices-test", "--voices", str(source),
+                "--provenance", str(root / "voices_s3_manifest.json"),
+                "seed", "--snapshot-id", "cli-seed",
+                "--expect-source-sha256", artifact.sha256_bytes(source.read_bytes()),
+                "--expect-item-count", "1",
+            ])
+            manifest = artifact.seed(parsed, client=client)
+        self.assertEqual(manifest["snapshot_id"], "cli-seed")
+
     def test_private_bucket_and_workflow_hydration_are_wired(self):
         template = Path("infra/dynamodb-queue.yml").read_text(encoding="utf-8")
         workflow = Path(".github/workflows/collect.yml").read_text(encoding="utf-8")
@@ -93,7 +109,7 @@ class VoicesS3ArtifactTest(unittest.TestCase):
         self.assertNotIn("git add data/latest.json data/seen.json data/voices.json", workflow)
 
     def test_run_wrapper_fetches_then_publishes(self):
-        args = Namespace(command=["--", "python", "writer.py"])
+        args = artifact.build_parser().parse_args(["run", "--", "python", "writer.py"])
         with (
             patch.object(artifact, "fetch") as fetch,
             patch.object(artifact, "publish") as publish,
