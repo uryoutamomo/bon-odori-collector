@@ -26,6 +26,12 @@ Parameters:
   MasterRdbPrefix:
     Type: String
     Default: master-rdb
+  RawXPostsBucketName:
+    Type: String
+    Default: bon-odori-x-raw-posts-169805602203
+  RawXPostsPrefix:
+    Type: String
+    Default: x-raw
 
 Resources:
   GitHubOidcProvider:
@@ -119,6 +125,58 @@ Resources:
         - Key: Project
           Value: bon-odori-collector
 
+  RawXPostsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref RawXPostsBucketName
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: ExpireRawXPosts
+            Status: Enabled
+            Prefix: !Sub "${RawXPostsPrefix}/"
+            ExpirationInDays: 180
+            NoncurrentVersionExpiration:
+              NoncurrentDays: 30
+            AbortIncompleteMultipartUpload:
+              DaysAfterInitiation: 7
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+        - Key: DataClass
+          Value: x-raw-posts
+
+  RawXPostsBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref RawXPostsBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: DenyInsecureTransport
+            Effect: Deny
+            Principal: "*"
+            Action: s3:*
+            Resource:
+              - !GetAtt RawXPostsBucket.Arn
+              - !Sub "${RawXPostsBucket.Arn}/*"
+            Condition:
+              Bool:
+                aws:SecureTransport: "false"
+
   GitHubActionsQueueRole:
     Type: AWS::IAM::Role
     Properties:
@@ -202,6 +260,18 @@ Resources:
                   - s3:GetObject
                   - s3:PutObject
                 Resource: !Sub "${MasterRdbArtifactBucket.Arn}/${MasterRdbPrefix}/*"
+        - PolicyName: RawXPostsArchiveAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: GetRawXPostsBucketLocation
+                Effect: Allow
+                Action: s3:GetBucketLocation
+                Resource: !GetAtt RawXPostsBucket.Arn
+              - Sid: WriteRawXPosts
+                Effect: Allow
+                Action: s3:PutObject
+                Resource: !Sub "${RawXPostsBucket.Arn}/${RawXPostsPrefix}/*"
         - PolicyName: StaticSiteCustomDomainAccess
           PolicyDocument:
             Version: "2012-10-17"
@@ -327,5 +397,9 @@ Outputs:
     Value: !Ref MasterRdbArtifactBucket
   MasterRdbS3Prefix:
     Value: !Ref MasterRdbPrefix
+  RawXPostsS3BucketName:
+    Value: !Ref RawXPostsBucket
+  RawXPostsS3Prefix:
+    Value: !Ref RawXPostsPrefix
   GitHubActionsRoleArn:
     Value: !GetAtt GitHubActionsQueueRole.Arn
