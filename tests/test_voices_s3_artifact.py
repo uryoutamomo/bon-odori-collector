@@ -35,7 +35,7 @@ class VoicesS3ArtifactTest(unittest.TestCase):
             "bucket": "voices-test", "prefix": "voices", "voices": str(root / "voices.json"),
             "provenance": str(root / "voices_s3_manifest.json"), "snapshot_id": "run-1",
             "expect_remote_checksum": "", "expect_source_sha256": "", "expect_item_count": 0,
-            "overwrite": True, "command_name": command_name,
+            "allow_item_count_decrease": False, "overwrite": True, "command_name": command_name,
         }
         values.update(extra)
         return Namespace(**values)
@@ -96,6 +96,67 @@ class VoicesS3ArtifactTest(unittest.TestCase):
             ])
             manifest = artifact.seed(parsed, client=client)
         self.assertEqual(manifest["snapshot_id"], "cli-seed")
+        self.assertFalse(parsed.allow_item_count_decrease)
+
+    def test_publish_rejects_item_count_decrease_unless_explicitly_allowed(self):
+        for new_count in (0, 99):
+            with self.subTest(new_count=new_count), tempfile.TemporaryDirectory() as temp:
+                client = FakeS3()
+                root = Path(temp)
+                original = [{"source": "x", "url": f"https://x.example/{i}"} for i in range(100)]
+                source = root / "voices.json"
+                source.write_text(json.dumps(original), encoding="utf-8")
+                artifact.seed(
+                    self.args(
+                        root,
+                        expect_source_sha256=artifact.sha256_bytes(source.read_bytes()),
+                        expect_item_count=100,
+                    ),
+                    client=client,
+                )
+                source.write_text(json.dumps(original[:new_count]), encoding="utf-8")
+                with self.assertRaisesRegex(SystemExit, rf"remote=100 new={new_count}"):
+                    artifact.publish(self.args(root, command_name="publish"), client=client)
+                allowed = artifact.publish(
+                    self.args(
+                        root,
+                        command_name="publish",
+                        allow_item_count_decrease=True,
+                        snapshot_id=f"allowed-{new_count}",
+                    ),
+                    client=client,
+                )
+                self.assertEqual(allowed["item_count"], new_count)
+
+    def test_publish_allows_same_or_increased_item_count(self):
+        for new_count in (100, 101):
+            with self.subTest(new_count=new_count), tempfile.TemporaryDirectory() as temp:
+                client = FakeS3()
+                root = Path(temp)
+                original = [{"source": "x", "url": f"https://x.example/{i}"} for i in range(100)]
+                source = root / "voices.json"
+                source.write_text(json.dumps(original), encoding="utf-8")
+                artifact.seed(
+                    self.args(
+                        root,
+                        expect_source_sha256=artifact.sha256_bytes(source.read_bytes()),
+                        expect_item_count=100,
+                    ),
+                    client=client,
+                )
+                source.write_text(json.dumps(original + original[:new_count - 100]), encoding="utf-8")
+                published = artifact.publish(
+                    self.args(root, command_name="publish", snapshot_id=f"count-{new_count}"), client=client
+                )
+                self.assertEqual(published["item_count"], new_count)
+
+    def test_publish_and_run_cli_parse_allow_item_count_decrease(self):
+        publish_args = artifact.build_parser().parse_args(["publish", "--allow-item-count-decrease"])
+        run_args = artifact.build_parser().parse_args([
+            "run", "--allow-item-count-decrease", "--", "python", "writer.py"
+        ])
+        self.assertTrue(publish_args.allow_item_count_decrease)
+        self.assertTrue(run_args.allow_item_count_decrease)
 
     def test_private_bucket_and_workflow_hydration_are_wired(self):
         template = Path("infra/dynamodb-queue.yml").read_text(encoding="utf-8")
