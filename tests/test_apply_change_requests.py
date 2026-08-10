@@ -66,6 +66,68 @@ class ApplyChangeRequestsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "confirm_current_year_date requires kind"):
             validate_payload(payload)
 
+    def test_existing_target_change_types_require_occurrence_id(self):
+        request_details = {
+            "confirm_current_year_date": {
+                "event_year": 2026,
+                "date_start": "2026-07-20",
+                "source": {"url": "https://example.com", "kind": "official_current_year"},
+            },
+            "add_historical_reference": {
+                "event_year": 2026,
+                "historical_year": 2025,
+                "source": {"url": "https://example.com/history", "kind": "historical_occurrence_page"},
+            },
+            "update_venue": {
+                "venue": {"name": "新会場"},
+                "source": {"url": "https://example.com/venue", "kind": "official_current_year"},
+            },
+            "add_song_evidence": {
+                "evidence_mode": "historical_youtube",
+                "songs": [{"title": "東京音頭"}],
+                "source": {"url": "https://example.com/song", "kind": "historical_occurrence_video"},
+            },
+        }
+
+        for change_type, details in request_details.items():
+            with self.subTest(change_type=change_type):
+                payload = {
+                    "request_type": "rdb_change_requests",
+                    "requests": [
+                        {
+                            "request_id": f"missing_id_{change_type}",
+                            "change_type": change_type,
+                            "match_hint": {
+                                "event_name_hint": "サンプル盆踊り",
+                                "event_year": 2026,
+                            },
+                            **details,
+                        }
+                    ],
+                }
+
+                with self.assertRaisesRegex(ValueError, "requires occurrence_id"):
+                    validate_payload(payload)
+
+    def test_apply_payload_does_not_resolve_existing_target_from_match_hint(self):
+        request = {
+            "request_id": "hint_only",
+            "change_type": "update_venue",
+            "match_hint": {"event_name_hint": "サンプル盆踊り", "event_year": 2026},
+            "venue": {"name": "新会場"},
+            "source": {"url": "https://example.com/venue", "kind": "official_current_year"},
+        }
+
+        applied, issues = apply_payload(
+            self.conn,
+            {"request_type": "rdb_change_requests", "requests": [request]},
+            "2026-07-21T00:00:00+00:00",
+        )
+
+        self.assertEqual(applied["requests_applied"], [])
+        self.assertEqual(applied["requests_unresolved"], ["hint_only"])
+        self.assertEqual(issues[0]["issue_type"], "occurrence_id_required")
+
     def test_validates_create_current_year_occurrence_contract(self):
         payload = {
             "request_type": "rdb_change_requests",

@@ -14,8 +14,8 @@ itself; its output is meant to be passed to
 `python3 -m report_apply.apply_change_requests --requests <out>` which
 already has its own dry-run/backup/confirmation safeguards.
 
-Scope: only requests that target an existing occurrence (via occurrence_id
-or a fuzzy match_hint) are built. New-event registration
+Scope: only requests that target an existing occurrence via an explicit
+occurrence_id are built. New-event registration
 (create_current_year_occurrence) is intentionally out of scope -- items that
 cannot be matched to an existing occurrence are left for a human to decide
 new-registration separately, and are reported in the unresolved list instead
@@ -108,16 +108,6 @@ def _occurrence_id_hint(source_item: dict[str, Any]) -> str | None:
     return first if first.startswith("occ_") else None
 
 
-def _match_hint(source_item: dict[str, Any], *, current_year: int) -> dict[str, Any]:
-    clean_name = clean_event_name_for_match(source_item.get("event_name") or "")
-    venue = (source_item.get("venue") or "").strip()
-    return {
-        "event_name_hint": clean_name,
-        "venue_name_hint": venue or None,
-        "event_year": current_year,
-    }
-
-
 def _source_block(source_item: dict[str, Any], *, kind: str) -> dict[str, Any]:
     payload = source_item.get("payload") or {}
     url = source_item.get("source_url") or payload.get("source_url") or ""
@@ -151,7 +141,6 @@ def build_confirm_current_year_date_request(
         # Venue changes should only happen through the explicit
         # "fill_venue"/update_venue route where a human chose that action.
         "source": _source_block(source_item, kind="official_current_year"),
-        "match_hint": _match_hint(source_item, current_year=current_year),
     }
     # Always set date_end explicitly, even for single-day events. Omitting it
     # leaves event_occurrences.date_end defaulted to date_start while
@@ -181,7 +170,6 @@ def build_add_historical_reference_request(
         "event_year": current_year,
         "historical_year": int(historical_year),
         "source": _source_block(source_item, kind="official_historical_reference"),
-        "match_hint": _match_hint(source_item, current_year=current_year),
     }
     if historical_date:
         request["historical_date"] = historical_date
@@ -203,7 +191,6 @@ def build_update_venue_request(
         "change_type": "update_venue",
         "venue": {"name": venue},
         "source": _source_block(source_item, kind="official_current_year"),
-        "match_hint": _match_hint(source_item, current_year=current_year),
     }
     note = staged_row.get("note") or ""
     if note:
@@ -238,6 +225,16 @@ def build_requests(
                 }
             )
             continue
+        occurrence_id = _occurrence_id_hint(source_item)
+        if not occurrence_id:
+            unresolved.append(
+                {
+                    "inbox_id": inbox_id,
+                    "event_name": source_item.get("event_name"),
+                    "reason": "missing_occurrence_id",
+                }
+            )
+            continue
         request, reason = builder(staged_row, current_year=current_year)
         if request is None:
             unresolved.append(
@@ -258,9 +255,7 @@ def build_requests(
             )
             continue
         seen_ids.add(request["request_id"])
-        occurrence_id = _occurrence_id_hint(source_item)
-        if occurrence_id:
-            request["occurrence_id"] = occurrence_id
+        request["occurrence_id"] = occurrence_id
         requests.append(request)
     return requests, unresolved
 
