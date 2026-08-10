@@ -16,20 +16,28 @@ TABLES = {
 
 DDL = """
 CREATE TABLE IF NOT EXISTS canonical_decision_ledger (
-  decision_id TEXT PRIMARY KEY, inbox_id TEXT NOT NULL, source_id TEXT NOT NULL,
-  source_key TEXT NOT NULL, action TEXT NOT NULL, actor_type TEXT NOT NULL,
+  decision_id TEXT PRIMARY KEY, inbox_id TEXT NOT NULL, source_id TEXT NOT NULL, domain TEXT NOT NULL,
+  source_key TEXT NOT NULL, source_payload_hash TEXT NOT NULL, packet_sha256 TEXT NOT NULL, decided_at TEXT NOT NULL,
+  action TEXT NOT NULL, actor_type TEXT NOT NULL,
   actor_id TEXT NOT NULL, decision_channel TEXT NOT NULL, queue_state_before TEXT NOT NULL,
   queue_state_after TEXT NOT NULL, reason_code TEXT, hold_mode TEXT,
-  next_eligible_at TEXT, packet_json TEXT NOT NULL, created_at TEXT NOT NULL
+  next_eligible_at TEXT, prior_agent_attempt_id TEXT, supersedes_hold_id TEXT, adjudication_batch_id TEXT,
+  packet_json TEXT NOT NULL, created_at TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS review_queue_state_ledger (
-  inbox_id TEXT PRIMARY KEY, queue_state TEXT NOT NULL, decision_id TEXT NOT NULL,
+  inbox_id TEXT PRIMARY KEY, domain TEXT NOT NULL, lane TEXT NOT NULL, queue_state TEXT NOT NULL, decision_id TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS review_hold_ledger (
   hold_id TEXT PRIMARY KEY, decision_id TEXT NOT NULL UNIQUE, inbox_id TEXT NOT NULL,
-  reason_code TEXT NOT NULL, hold_mode TEXT NOT NULL, status TEXT NOT NULL,
-  next_eligible_at TEXT, hold_packet_json TEXT, opened_at TEXT NOT NULL, closed_at TEXT
+  source_id TEXT NOT NULL, source_key TEXT NOT NULL, source_payload_hash TEXT NOT NULL,
+  packet_sha256 TEXT NOT NULL, domain TEXT NOT NULL,
+  lane TEXT NOT NULL, reason_code TEXT NOT NULL, hold_mode TEXT NOT NULL, status TEXT NOT NULL,
+  allowed_actions_json TEXT NOT NULL, required_resolution_type TEXT NOT NULL,
+  candidate_ids_json TEXT, candidate_set_sha256 TEXT, next_eligible_at TEXT, expires_at TEXT,
+  prior_agent_attempt_id TEXT, resolved_by_decision_id TEXT, grouping_fingerprint TEXT NOT NULL,
+  adjudication_batch_id TEXT NOT NULL,
+  hold_packet_json TEXT, opened_at TEXT NOT NULL, closed_at TEXT
 );
 CREATE TABLE IF NOT EXISTS local_judgment_schema_migrations (
   version INTEGER PRIMARY KEY, name TEXT NOT NULL, applied_at TEXT NOT NULL
