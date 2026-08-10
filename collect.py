@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 import json
 import hashlib
 import html
@@ -32,6 +33,20 @@ from collection_support.event_evidence import (
 from collection_support.x_official_source_accounts import load_official_source_accounts
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
+from collection_support.x_collection_health import (
+    check_health_report,
+    finalize_health_report,
+    mark_lane_skipped,
+    mark_unit_complete,
+    mark_unit_incomplete,
+    new_health_report,
+    record_accepted,
+    record_attempt,
+    record_failure,
+    record_success,
+    set_planned_units,
+    write_health_report,
+)
 
 try:
     import feedparser
@@ -68,6 +83,10 @@ X_LOG_DB_ID = _env_or_default("X_LOG_DB_ID", "ef2f627d-3ac5-4133-9abd-f5d6d655af
 TWITTERAPI_IO_BASE = "https://api.twitterapi.io/twitter/tweet/advanced_search"
 X_QUERIES_FILE = "x_queries.json"
 X_BUDGET_FILE = "data/x_budget.json"
+X_COLLECTION_HEALTH_REPORT = os.environ.get(
+    "X_COLLECTION_HEALTH_REPORT",
+    "data/x_collection_health_report.json",
+)
 GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
@@ -742,15 +761,17 @@ def _append_x_log_row(voice, query_id, judgement, cost):
         print(f"[x] ログDB追記エラー（収集は継続）: {e}")
 
 
-def collect_x_voices(seen_urls: set) -> tuple[list, list]:
+def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
     """X(twitterapi.io)から「人の言葉」を収集。
     戻り値: (new_items, all_seen_urls_updated) — collect_voices と同じ形。
     キー未設定・設定欠如・予算超過のいずれも空で返す fail-safe。"""
     if not TWITTERAPI_IO_KEY:
         print("[x] TWITTERAPI_IO_KEY 未設定のため X 収集をスキップ")
+        mark_lane_skipped(health, "keyword", "api_key_missing")
         return [], list(seen_urls)
     cfg = _load_x_config()
     if not cfg:
+        mark_lane_skipped(health, "keyword", "config_missing")
         return [], list(seen_urls)
 
     budget = cfg.get("budget", {})
@@ -766,6 +787,7 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
     monthly_spent = sum(v for k, v in state.items() if k.startswith(month))
     if daily_spent >= daily_cap or monthly_spent >= monthly_cap:
         print(f"[x] 予算上限に到達のためスキップ（日 ${daily_spent:.4f}/{daily_cap} 月 ${monthly_spent:.4f}/{monthly_cap}）")
+        mark_lane_skipped(health, "keyword", "budget_limit_reached")
         return [], list(seen_urls)
 
     max_pages = cfg.get("max_pages_per_query", 2)
@@ -774,41 +796,70 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
     new_seen = list(seen_urls)
     run_cost = 0.0
 
-    for q in cfg.get("queries", []):
+    queries = [q for q in cfg.get("queries", []) if q.get("query")]
+    set_planned_units(health, "keyword", len(queries))
+    for q in queries:
         qid, query = q.get("id", "q-?"), q.get("query", "")
-        if not query:
-            continue
         print(f"[x] {qid}: {query}")
         cursor = ""
+        unit_completed = False
         for page in range(max_pages):
             # 予算の最終ガード（クエリ途中でも止まる）
             if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
                 print("[x] 走行中に予算上限到達。以降のページを打ち切り")
+                mark_unit_incomplete(health, "keyword", qid, "budget_limit_reached")
                 break
+            record_attempt(health, "keyword", qid)
             try:
                 data = _x_search(query, cursor)
             except urllib.error.HTTPError as e:
+                record_failure(
+                    health,
+                    "keyword",
+                    qid,
+                    error=f"HTTP {e.code}",
+                    http_status=e.code,
+                )
                 if e.code == 429:
                     print("[x] 429（QPS制限）。5秒待って1回だけ再試行")
                     _time.sleep(5)
+                    record_attempt(health, "keyword", qid)
                     try:
                         data = _x_search(query, cursor)
                     except Exception as e2:
+                        record_failure(
+                            health,
+                            "keyword",
+                            qid,
+                            error=e2,
+                            http_status=getattr(e2, "code", None),
+                        )
                         print(f"[x] 再試行も失敗、このクエリを打ち切り: {e2}")
                         break
                 else:
                     print(f"[x] HTTPエラー {e.code}、このクエリを打ち切り")
                     break
             except Exception as e:
+                record_failure(health, "keyword", qid, error=e)
                 print(f"[x] 取得エラー、このクエリを打ち切り: {e}")
                 break
 
             tweets = data.get("tweets") or data.get("data") or []
+            page_cost = len(tweets) * cost_per_tweet
+            record_success(
+                health,
+                "keyword",
+                qid,
+                tweets_fetched=len(tweets),
+                estimated_cost_usd=page_cost,
+            )
             if not tweets:
+                unit_completed = True
                 break
-            run_cost += len(tweets) * cost_per_tweet
+            run_cost += page_cost
 
             count = 0
+            accepted_before = len(new_items)
             prepared = _prepare_new_x_posts(tweets, seen_urls, new_seen, {
                 "route": "query",
                 "query_id": qid,
@@ -824,12 +875,18 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
                     new_items.append(v)
                 new_seen.append(v["url"])
                 count += 1
+            record_accepted(health, "keyword", qid, len(new_items) - accepted_before)
             print(f"[x] {qid}: {count} 件処理（うち voices 採用 {sum(1 for x in new_items if qid in x.get('tags', []))} 件累計）")
 
             cursor = data.get("next_cursor") or data.get("cursor") or ""
             if not (data.get("has_next_page", bool(cursor)) and cursor):
+                unit_completed = True
                 break
             _time.sleep(page_sleep)
+        if unit_completed:
+            mark_unit_complete(health, "keyword", qid)
+        else:
+            mark_unit_incomplete(health, "keyword", qid, "query_incomplete")
 
     # 予算消費を記録
     if run_cost > 0:
@@ -845,9 +902,13 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
     return new_items, new_seen
 
 
-def collect_proactive_x(targets, seen_urls, config):
+def collect_proactive_x(targets, seen_urls, config, health=None):
     """開催月が近い定番イベントを会場名で能動検索する。予算は通常X収集と共有。"""
-    if not TWITTERAPI_IO_KEY or not targets:
+    if not TWITTERAPI_IO_KEY:
+        mark_lane_skipped(health, "proactive", "api_key_missing")
+        return [], list(seen_urls)
+    if not targets:
+        mark_lane_skipped(health, "proactive", "no_targets")
         return [], list(seen_urls)
     x_cfg = _load_x_config() or {}
     budget = x_cfg.get("budget", {})
@@ -863,18 +924,38 @@ def collect_proactive_x(targets, seen_urls, config):
     year = datetime.now(timezone(timedelta(hours=9))).year
     new_items, new_seen, run_cost = [], list(seen_urls), 0.0
 
-    for target in targets[:limit]:
+    selected_targets = targets[:limit]
+    set_planned_units(health, "proactive", len(selected_targets))
+    for target_index, target in enumerate(selected_targets, start=1):
+        unit_id = f"{target_index}:{target.get('venue') or 'unknown'}"
         if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
             print("[proactive/x] 予算上限到達。以降の能動検索を打ち切り")
+            mark_unit_incomplete(health, "proactive", unit_id, "budget_limit_reached")
             break
         query = build_queries(target, year)["x"]
+        record_attempt(health, "proactive", unit_id)
         try:
             data = _x_search(query)
         except Exception as exc:
+            record_failure(
+                health,
+                "proactive",
+                unit_id,
+                error=exc,
+                http_status=getattr(exc, "code", None),
+            )
             print(f"[proactive/x] {target['venue']} 検索失敗: {exc}")
             continue
         tweets = data.get("tweets") or data.get("data") or []
-        run_cost += max(len(tweets), 1) * cost_per_tweet
+        request_cost = max(len(tweets), 1) * cost_per_tweet
+        run_cost += request_cost
+        record_success(
+            health,
+            "proactive",
+            unit_id,
+            tweets_fetched=len(tweets),
+            estimated_cost_usd=request_cost,
+        )
         count = 0
         prepared = _prepare_new_x_posts(tweets, seen_urls, new_seen, {
             "route": "proactive",
@@ -888,6 +969,8 @@ def collect_proactive_x(targets, seen_urls, config):
             new_items.append(voice)
             new_seen.append(voice["url"])
             count += 1
+        record_accepted(health, "proactive", unit_id, count)
+        mark_unit_complete(health, "proactive", unit_id)
         print(f"[proactive/x] {target['venue']}: {count} 件追加")
 
     if run_cost:
@@ -1921,17 +2004,19 @@ def _save_whitelist_since(ts):
         print(f"[whitelist] since_time 保存エラー: {e}")
 
 
-def collect_x_whitelist(seen_urls):
+def collect_x_whitelist(seen_urls, health=None):
     """A. ホワイトリスト(from:)をバッチ収集（since_timeで新規のみ）。
     戻り値: (new_items, new_seen)。source=x_whitelist / tag ⭐盆踊ラー。
     ノイズ仕分けされても voices には残す（重視ソースのため）。fail-safe。"""
     if not TWITTERAPI_IO_KEY:
         print("[whitelist] TWITTERAPI_IO_KEY 未設定のためスキップ")
+        mark_lane_skipped(health, "whitelist", "api_key_missing")
         return [], list(seen_urls)
     cfg = _load_x_config() or {}
     accounts = load_whitelist_accounts(cfg)
     if not accounts:
         print("[whitelist] ホワイトリストが空のためスキップ")
+        mark_lane_skipped(health, "whitelist", "no_accounts")
         return [], list(seen_urls)
 
     budget = cfg.get("budget", {})
@@ -1947,6 +2032,7 @@ def collect_x_whitelist(seen_urls):
     monthly_spent = sum(v for k, v in state.items() if k.startswith(month))
     if daily_spent >= daily_cap or monthly_spent >= monthly_cap:
         print(f"[whitelist] 予算上限到達のためスキップ（日 ${daily_spent:.4f} 月 ${monthly_spent:.4f}）")
+        mark_lane_skipped(health, "whitelist", "budget_limit_reached")
         return [], list(seen_urls)
 
     batch_size = cfg.get("whitelist_batch_size", 20)
@@ -1967,9 +2053,15 @@ def collect_x_whitelist(seen_urls):
     if current:
         search_batches.append(current)
 
+    set_planned_units(health, "whitelist", len(search_batches))
+    run_started_at = datetime.now(timezone.utc).timestamp()
+    all_batches_completed = True
     for batch_index, batch_items in enumerate(search_batches, start=1):
+        unit_id = f"batch-{batch_index}"
         if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
             print("[whitelist] 走行中に予算上限到達。以降のバッチを打ち切り")
+            all_batches_completed = False
+            mark_unit_incomplete(health, "whitelist", unit_id, "budget_limit_reached")
             break
         batch = [item["handle"] for item in batch_items]
         since_ts = min(item["since"] for item in batch_items)
@@ -1984,33 +2076,60 @@ def collect_x_whitelist(seen_urls):
         max_pages = cfg.get("whitelist_max_pages_per_batch", 3)
         cursor = ""
         count = 0
+        batch_completed = False
         for page in range(1, max_pages + 1):
+            record_attempt(health, "whitelist", unit_id)
             try:
                 data = _x_search(query, cursor)
             except urllib.error.HTTPError as e:
+                record_failure(
+                    health,
+                    "whitelist",
+                    unit_id,
+                    error=f"HTTP {e.code}",
+                    http_status=e.code,
+                )
                 if e.code == 429:
                     print("[whitelist] 429。5秒待って1回だけ再試行")
                     _time.sleep(5)
+                    record_attempt(health, "whitelist", unit_id)
                     try:
                         data = _x_search(query, cursor)
                     except Exception as e2:
+                        record_failure(
+                            health,
+                            "whitelist",
+                            unit_id,
+                            error=e2,
+                            http_status=getattr(e2, "code", None),
+                        )
                         print(f"[whitelist] 再試行も失敗、このバッチを飛ばす: {e2}")
                         break
                 else:
                     print(f"[whitelist] HTTPエラー {e.code}、このバッチを飛ばす")
                     break
             except Exception as e:
+                record_failure(health, "whitelist", unit_id, error=e)
                 print(f"[whitelist] 取得エラー、このバッチを飛ばす: {e}")
                 break
 
             tweets = data.get("tweets") or data.get("data") or []
-            run_cost += max(len(tweets), 1) * cost_per_tweet  # 空振りも1件課金
+            request_cost = max(len(tweets), 1) * cost_per_tweet
+            run_cost += request_cost  # 空振りも1件課金
+            record_success(
+                health,
+                "whitelist",
+                unit_id,
+                tweets_fetched=len(tweets),
+                estimated_cost_usd=request_cost,
+            )
             prepared = _prepare_new_x_posts(tweets, seen_urls, new_seen, {
                 "route": "whitelist",
                 "query_id": "q-whitelist",
                 "batch_id": f"batch-{batch_index}-page-{page}",
                 "estimated_cost_usd": cost_per_tweet,
             })
+            accepted_before = len(new_items)
             for _, v in prepared:
                 v["source"] = "x_whitelist"
                 judgement = _score_voice(v["text"], cfg) if cfg else "🟡関心"
@@ -2029,14 +2148,22 @@ def collect_x_whitelist(seen_urls):
                     new_items.append(v)
                 new_seen.append(v["url"])
                 count += 1
+            record_accepted(health, "whitelist", unit_id, len(new_items) - accepted_before)
 
             cursor = data.get("next_cursor") or data.get("cursor") or ""
             if not tweets or not (data.get("has_next_page", bool(cursor)) and cursor):
+                batch_completed = True
                 break
             if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
                 print("[whitelist] ページ取得中に予算上限到達。このバッチを打ち切り")
+                mark_unit_incomplete(health, "whitelist", unit_id, "budget_limit_reached")
                 break
             _time.sleep(cfg.get("page_sleep_sec", 2))
+        if batch_completed:
+            mark_unit_complete(health, "whitelist", unit_id)
+        else:
+            all_batches_completed = False
+            mark_unit_incomplete(health, "whitelist", unit_id, "batch_incomplete")
         print(f"[whitelist] バッチ{batch_index}: {count} 件処理")
         _time.sleep(cfg.get("page_sleep_sec", 2))
 
@@ -2048,7 +2175,10 @@ def collect_x_whitelist(seen_urls):
                 json.dump(state, f, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"[whitelist] 予算記録の保存エラー: {e}")
-    _save_whitelist_since(datetime.now(timezone.utc).timestamp())
+    if all_batches_completed and search_batches:
+        _save_whitelist_since(run_started_at)
+    else:
+        print("[whitelist] 未完了バッチがあるため since_time を維持")
     print(f"[whitelist] 完了: {len(new_items)} 件採用、今回コスト 約${run_cost:.5f}")
     return new_items, new_seen
 
@@ -3256,6 +3386,13 @@ def main():
     proactive_targets = []
     proactive_config = {}
     proactive_report = []
+    x_health = new_health_report(
+        collection_enabled=bool(TWITTERAPI_IO_KEY and _load_x_config()),
+        collection_required=(
+            os.environ.get("X_COLLECTION_REQUIRED", "").strip().lower()
+            in _TRUE_ENV_VALUES
+        ),
+    )
 
     try:
         with open(VENUE_MASTER_FILE, "r", encoding="utf-8") as f:
@@ -3367,11 +3504,16 @@ def main():
 
         # X(twitterapi.io) からの「人の言葉」も同じ voices_seen を共有して収集（fail-safe）
         try:
-            x_items, updated_voices_seen = collect_x_voices(set(updated_voices_seen))
+            x_items, updated_voices_seen = collect_x_voices(
+                set(updated_voices_seen),
+                health=x_health,
+            )
             voice_items = voice_items + x_items
         except RawXArchiveError:
             raise
         except Exception as e:
+            record_attempt(x_health, "keyword", "collector-unexpected-error")
+            record_failure(x_health, "keyword", "collector-unexpected-error", error=e)
             print(f"[x] 予期せぬエラー（他収集には影響なし）: {e}")
 
         # 定番イベントを会場名＋年で能動検索（fail-safe）
@@ -3380,20 +3522,28 @@ def main():
                 proactive_targets,
                 set(updated_voices_seen),
                 proactive_config,
+                health=x_health,
             )
             voice_items = proactive_x + voice_items
         except RawXArchiveError:
             raise
         except Exception as e:
+            record_attempt(x_health, "proactive", "collector-unexpected-error")
+            record_failure(x_health, "proactive", "collector-unexpected-error", error=e)
             print(f"[proactive/x] 予期せぬエラー（他収集には影響なし）: {e}")
 
         # A. ホワイトリスト（X メンバーリスト）収集。⭐盆踊ラーを最優先ソースとして追加（fail-safe）
         try:
-            wl_items, updated_voices_seen = collect_x_whitelist(set(updated_voices_seen))
+            wl_items, updated_voices_seen = collect_x_whitelist(
+                set(updated_voices_seen),
+                health=x_health,
+            )
             voice_items = wl_items + voice_items  # 盆踊ラーを先頭に
         except RawXArchiveError:
             raise
         except Exception as e:
+            record_attempt(x_health, "whitelist", "collector-unexpected-error")
+            record_failure(x_health, "whitelist", "collector-unexpected-error", error=e)
             print(f"[whitelist] 予期せぬエラー（他収集には影響なし）: {e}")
 
         # voices.json: 全件スナップショット（seen に入っていない新規のみ追加）
@@ -3431,6 +3581,22 @@ def main():
         raise
     except Exception as e:
         print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
+
+    finalize_health_report(x_health)
+    try:
+        write_health_report(
+            x_health,
+            X_COLLECTION_HEALTH_REPORT,
+            github_summary_path=os.environ.get("GITHUB_STEP_SUMMARY"),
+        )
+        print(
+            f"[x/health] {x_health['status']}: "
+            f"accepted={x_health['totals']['items_accepted']} "
+            f"http_402={x_health['totals']['http_402_count']} "
+            f"report={X_COLLECTION_HEALTH_REPORT}"
+        )
+    except Exception as e:
+        print(f"[x/health] report保存失敗（job末尾のhealth gateで検知）: {e}")
 
     # --- イベント断片の履歴パイロット → 裏取りキュー ---
     try:
@@ -3575,5 +3741,19 @@ def main():
                    x_voices_recent, x_cost, sokuho_list, event_signal_list,
                    proactive_report)
 
-if __name__ == '__main__':
+def _run_cli(argv=None):
+    argv = list(argv or sys.argv)
+    if len(argv) > 1 and argv[1] == "--check-x-health":
+        if len(argv) != 3:
+            print(
+                "usage: python collect.py --check-x-health REPORT_PATH",
+                file=sys.stderr,
+            )
+            return 2
+        return check_health_report(argv[2])
     main()
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(_run_cli())
