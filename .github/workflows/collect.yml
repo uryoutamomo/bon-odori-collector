@@ -187,6 +187,7 @@ jobs:
         EVENT_CANDIDATE_QUEUE_TABLE: ${{ vars.EVENT_CANDIDATE_QUEUE_TABLE }}
         QUEUE_STORAGE_MODE: ${{ vars.QUEUE_STORAGE_MODE || 'dynamodb' }}
         EVENT_QUEUE_STORAGE_MODE: ${{ vars.EVENT_QUEUE_STORAGE_MODE || vars.QUEUE_STORAGE_MODE || 'dynamodb' }}
+        X_COLLECTION_HEALTH_REPORT: ${{ runner.temp }}/x-collection-health.json
       run: python collect.py
 
     - name: Collect official venue sites (direct monitoring)
@@ -490,3 +491,11 @@ jobs:
         path: ${{ runner.temp }}/low-priority-inbox
         if-no-files-found: warn
         retention-days: 30
+
+    # Keep this as the final job step: X outages must not prevent the current
+    # run's exports, artifact publishes, and guarded commits from completing.
+    - name: Enforce X collection health
+      if: ${{ always() }}
+      env:
+        X_COLLECTION_HEALTH_REPORT: ${{ runner.temp }}/x-collection-health.json
+      run: python collect.py --check-x-health "$X_COLLECTION_HEALTH_REPORT"

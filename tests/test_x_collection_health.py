@@ -8,8 +8,14 @@ import collect
 from collection_support.x_collection_health import (
     check_health_report,
     finalize_health_report,
+    mark_unit_complete,
     new_health_report,
+    record_accepted,
+    record_attempt,
+    record_failure,
+    record_success,
     render_github_summary,
+    set_planned_units,
     write_health_report,
 )
 
@@ -91,6 +97,53 @@ class XCollectionHealthTest(unittest.TestCase):
 
         self.assertEqual(health["status"], "unhealthy")
         self.assertIn("x_collection_required_but_disabled", health["failure_reasons"])
+
+    def test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items(self):
+        health = new_health_report(collection_enabled=True)
+        set_planned_units(health, "keyword", 27)
+        for index in range(27):
+            unit_id = f"query-{index + 1}"
+            record_attempt(health, "keyword", unit_id)
+            record_failure(
+                health,
+                "keyword",
+                unit_id,
+                error="HTTP 402",
+                http_status=402,
+            )
+
+        finalize_health_report(health)
+
+        self.assertEqual(health["status"], "unhealthy")
+        self.assertEqual(health["totals"]["http_402_count"], 27)
+        self.assertIn("http_402_threshold:27>=1", health["failure_reasons"])
+        self.assertIn("x_items_accepted_zero", health["failure_reasons"])
+
+    def test_measured_manual_recovery_is_healthy(self):
+        health = new_health_report(collection_enabled=True)
+        measured_lanes = (
+            ("keyword", "queries", 772, 0.264),
+            ("whitelist", "batches", 511, 0.118),
+        )
+        for lane_name, unit_id, accepted, cost in measured_lanes:
+            set_planned_units(health, lane_name, 1)
+            record_attempt(health, lane_name, unit_id)
+            record_success(
+                health,
+                lane_name,
+                unit_id,
+                tweets_fetched=accepted,
+                estimated_cost_usd=cost,
+            )
+            record_accepted(health, lane_name, unit_id, accepted)
+            mark_unit_complete(health, lane_name, unit_id)
+
+        finalize_health_report(health)
+
+        self.assertEqual(health["status"], "healthy")
+        self.assertEqual(health["totals"]["http_402_count"], 0)
+        self.assertEqual(health["totals"]["items_accepted"], 1283)
+        self.assertAlmostEqual(health["totals"]["estimated_cost_usd"], 0.382)
 
     def test_whitelist_402_after_partial_success_does_not_advance_since_time(self):
         health = new_health_report(collection_enabled=True)
