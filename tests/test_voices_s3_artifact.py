@@ -99,14 +99,39 @@ class VoicesS3ArtifactTest(unittest.TestCase):
 
     def test_private_bucket_and_workflow_hydration_are_wired(self):
         template = Path("infra/dynamodb-queue.yml").read_text(encoding="utf-8")
-        workflow = Path(".github/workflows/collect.yml").read_text(encoding="utf-8")
         self.assertIn("VoicesArchiveBucket:", template)
         self.assertIn("VoicesArchiveBucketPolicy:", template)
         self.assertIn("PolicyName: VoicesArchiveAccess", template)
         self.assertIn("${VoicesArchiveBucket.Arn}/${VoicesArchivePrefix}/*", template)
-        self.assertIn("Fetch voices artifact", workflow)
-        self.assertIn("Publish voices artifact", workflow)
-        self.assertNotIn("git add data/latest.json data/seen.json data/voices.json", workflow)
+
+        fetch_step = """    - name: Fetch voices artifact
+      env:
+        VOICES_S3_BUCKET: ${{ vars.VOICES_S3_BUCKET }}
+        VOICES_S3_PREFIX: ${{ vars.VOICES_S3_PREFIX || 'voices' }}
+        AWS_REGION: ap-northeast-1
+      run: python voices_s3_artifact.py fetch --overwrite
+"""
+        workflow_paths = [
+            Path(".github/workflows/collect.yml"),
+            Path(".github/workflows/youtube_daily_backfill.yml"),
+            Path(".github/workflows/weekly_harvest.yml"),
+        ]
+        workflows = {
+            path: path.read_text(encoding="utf-8")
+            for path in workflow_paths
+        }
+        for path, workflow in workflows.items():
+            with self.subTest(workflow=str(path)):
+                self.assertIn(fetch_step, workflow)
+
+        collect_workflow = workflows[Path(".github/workflows/collect.yml")]
+        self.assertIn("Publish voices artifact", collect_workflow)
+        self.assertNotIn("git add data/latest.json data/seen.json data/voices.json", collect_workflow)
+
+        for path in workflow_paths[1:]:
+            with self.subTest(read_only_workflow=str(path)):
+                self.assertNotIn("Publish voices artifact", workflows[path])
+                self.assertNotIn("voices_s3_artifact.py publish", workflows[path])
 
     def test_run_wrapper_fetches_then_publishes(self):
         args = artifact.build_parser().parse_args(["run", "--", "python", "writer.py"])
