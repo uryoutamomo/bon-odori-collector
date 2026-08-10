@@ -3741,7 +3741,19 @@ def main():
                    x_voices_recent, x_cost, sokuho_list, event_signal_list,
                    proactive_report)
 
-if __name__ == '__main__':
-    if len(sys.argv) == 3 and sys.argv[1] == "--check-x-health":
-        raise SystemExit(check_health_report(sys.argv[2]))
+def _run_cli(argv=None):
+    argv = list(argv or sys.argv)
+    if len(argv) > 1 and argv[1] == "--check-x-health":
+        if len(argv) != 3:
+            print(
+                "usage: python collect.py --check-x-health REPORT_PATH",
+                file=sys.stderr,
+            )
+            return 2
+        return check_health_report(argv[2])
     main()
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(_run_cli())

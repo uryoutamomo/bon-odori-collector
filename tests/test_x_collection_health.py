@@ -1,6 +1,8 @@
 import tempfile
 import unittest
 import urllib.error
+from contextlib import redirect_stderr
+from io import StringIO
 from pathlib import Path
 from unittest.mock import patch
 
@@ -97,6 +99,23 @@ class XCollectionHealthTest(unittest.TestCase):
 
         self.assertEqual(health["status"], "unhealthy")
         self.assertIn("x_collection_required_but_disabled", health["failure_reasons"])
+
+    def test_health_check_flag_with_wrong_arity_fails_without_running_collector(self):
+        for argv in (
+            ["collect.py", "--check-x-health"],
+            ["collect.py", "--check-x-health", "report.json", "--verbose"],
+        ):
+            with self.subTest(argv=argv):
+                stderr = StringIO()
+                with (
+                    patch.object(collect, "main") as collector_main,
+                    redirect_stderr(stderr),
+                ):
+                    exit_code = collect._run_cli(argv)
+
+                self.assertEqual(exit_code, 2)
+                self.assertIn("usage:", stderr.getvalue())
+                collector_main.assert_not_called()
 
     def test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items(self):
         health = new_health_report(collection_enabled=True)

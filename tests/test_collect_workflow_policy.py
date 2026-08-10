@@ -35,6 +35,10 @@ class CollectWorkflowPolicyTest(unittest.TestCase):
             'python collect.py --check-x-health "$X_COLLECTION_HEALTH_REPORT"',
             workflow[gate:],
         )
+        self.assertEqual(
+            workflow.rstrip().splitlines()[-1].strip(),
+            'run: python collect.py --check-x-health "$X_COLLECTION_HEALTH_REPORT"',
+        )
 
 
 if __name__ == "__main__":
