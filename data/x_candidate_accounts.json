@@ -1,12 +1,4058 @@
 {
-  "generated_at": "2026-08-03T22:11:07.330576+00:00",
+  "generated_at": "2026-08-10T21:44:05.396350+00:00",
   "cost_estimate": {
-    "credits": 600,
-    "usd": 0.006,
+    "credits": 1501,
+    "usd": 0.01501,
     "calls": 10,
-    "returned_users": 0
+    "returned_users": 1379
   },
   "seed_count": 10,
-  "candidate_count": 0,
-  "candidates": []
+  "candidate_count": 189,
+  "candidates": [
+    {
+      "handle": "@jxxuq6vvad4gzom",
+      "name": "盆女ひろみ",
+      "description": "2児のママ。\n日本舞踊経験のある女性アーティストグループ「盆女」所属。伝統を崩さず、「魅せる盆踊り」「踊る盆踊り」をテーマに活動しています！\n身体も心も健康に楽しく踊っています。\n藤間派名取。\n師匠は大正生まれ。\n母方祖母は奄美の大島紬の機織。\n書道活動中。\n千葉県木更津出身。木更津甚句を踊りたい👘",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 8.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り,踊る"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kita1013yuu",
+      "name": "ｸ ﾛ ﾉ ｽ🦊",
+      "description": "黒衣(こくい)の盆オドラー 見た目は怪しい\n            盆踊り好きの盆踊り垢 黒い着物にロン毛ハット🕴激しい振りは苦手 鍵垢の無言フォローお断り",
+      "location": "盆踊り櫓周辺",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/wBJziKGxLP",
+      "candidate_score": 8.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り,櫓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mmmjasminehhh",
+      "name": "眞智子",
+      "description": "今年(2024年夏)盆踊りデビュー🙌\n春駒とジンギスカンを踊ると口から心臓出そうになりますが、まだまだがんばります💃",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 8.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り,踊る"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@sacbb10",
+      "name": "sachisa",
+      "description": "盆踊りを世界の人と踊る⭐︎Japanese folkdance in the world    https://t.co/cXMp9CRPzz ★https://t.co/EC2npp0TJm",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 8.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り,踊る"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@siroian333",
+      "name": "白井杏",
+      "description": "群馬県で歌う人🎤🌳 「ティータイム」 vo. （J POP中心）＆民謡盆踊り🔰日本歌手協会プロレベル認定🙏R7.POPS民謡自主イベントスタート✨R7.桐生八木節教室歌部門修了😊🎤🌸POPS民謡盆踊りフェス開催in群馬🌈無言フォロー失礼します🙇‍♀️",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 8.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,民謡,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@daibonjp",
+      "name": "DAIBON",
+      "description": "中野区大和町八幡神社\n例大祭🏮大盆踊り会🏮\n\\また来年/",
+      "location": "東京都中野区大和町2-30-3",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/O5Gg5jkZrF",
+      "candidate_score": 7.241,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,祭,神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@arejvjete0nflcb",
+      "name": "大和家勝若 8/13-16 ハーベストの丘夏祭り",
+      "description": "八尾本場河内音頭連盟所属🏮🎸♪✨️　大和家会/ 師:大和家 石勝 /人と人の繋がりを大切に、地域活性化で社会貢献へ♪( 'ω' و(و　₍₍ (ง ›ω‹ )ว ⁾⁾/ギター、お酒、スイーツ、🐈‍⬛🐕️好き/地域の盆踊りの話•異文化コミュニケーション•ご依頼等お気軽にお話しましょう😊🙌",
+      "location": "大阪　八尾",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,音頭,踊り,祭,夏祭り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@boncha_4141",
+      "name": "まんまる@盆",
+      "description": "元々好きだった盆踊りをもう少しちゃんと楽しみたくて作った初心者アカウント🔰マイペースにいろんな櫓をまわります",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,櫓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@dnklsra9kaapmyu",
+      "name": "nohara",
+      "description": "子供の頃から歌と踊りが大好きでした🎶盆踊りは地元のお寺の境内でしか知らなかったので凄い世界との出逢いに感動💖どんな曲が流れても踊れる皆様を尊敬👘皆さんどうやって覚えるのですか？♪😆",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ikomakazuya83",
+      "name": "H.KAWAKAMI",
+      "description": "河内音頭 生駒会 生駒一八‼️一般社団法人 日本伝統文化河内音頭保存会 理事‼️伝統文化を後世に残し地域の繋がり活性化を応援しています❗️全国に河内音頭❗️自治体企業様の盆踊りイベント一式を企画請負い致します気軽にご相談下さい❗️河内音頭好きな方生駒会練習生も募集しています❗️フォローリツイートDMお待ちしています‼️",
+      "location": "東大阪市",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,音頭,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ino_mee",
+      "name": "いの",
+      "description": "盆踊り2.5年生\n土日はあわおどりと東北のおまつりをみて生きているので\nあまり出没しませんがぐじょうとすみゆめが好きです",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kasiraotowayou",
+      "name": "頭 音輪踊",
+      "description": "民謡や盆踊りの歌詞を適当に呟きますことを宜しく御願い致します。",
+      "location": "櫓の上",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,民謡,踊り,櫓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kazgk0358",
+      "name": "GK",
+      "description": "盆太鼓 民踊 盆踊り\n和歌山をメインに活動しています。\n⚫︎実績(太鼓・踊り)\n 和歌山、大阪、尼崎、名古屋、一宮\n※太鼓はこちらからお願いし、叩かせていただいております。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@m7777777m8",
+      "name": "M♡",
+      "description": "盆踊りが大好きで盆踊りシーズンを毎年楽しみにしています。音楽（洋楽、a-ha 、浜崎あゆみさんetc）・動物（特に🐈♡猫を飼っています）・自然（海、空、花）、神社仏閣が好き。宜しくお願いいたします✨",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mikinooogi",
+      "name": "おぎ",
+      "description": "趣味 \n#民謡、#三味線、#民舞 、#盆踊り、#たま〜にゴルフ、#旅行 同じ趣味の人、宜しくお願いします\n無言フォローすみません🙇‍♂️",
+      "location": "東京都",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,民謡,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@motoeka_ageha",
+      "name": "鳳蝶素檜香（あげはもとえか）",
+      "description": "鳳蝶素橧香(あげはもとえか）と申します。 日本の文化と伝統芸能の伝承にお役に立てれば幸いです。母、弟（鳳蝶流家元師範【鳳蝶美成】あげはびじょう)とともに、日本各地、その他、海外公演を経て、現在は、弟の流派である鳳蝶流に所属する。 【盆踊り和太鼓】https://t.co/3R5pjJG8lp",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/wDm2vycmkA",
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@nebuta_tokyo",
+      "name": "東京ねぶた連合會【公式】（囃子方創設29周年・連合會創設20周年）",
+      "description": "東京ねぶた連合會は、運行・跳人・囃子方の3団体が集まり、2006年4月に発足。以降、東京近郊で開催されるねぶた祭への参加や、各種施設への慰問や商業イベントへの協力、靖國神社「みたままつり」に青森ねぶたの奉納を行う等の活動をしています。 2013年1月、当會は団体として初めて「青森市観光大使」の任を委嘱されました。",
+      "location": "日本 東京",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/IqnBOwoY0H",
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,まつり,神社,観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@rkvtjywomupyeir",
+      "name": "杉本悠紀",
+      "description": "私は、フラダンス、ベリーグッドマン、セレっソ、だんじり、盆踊り、民揺、太鼓が、好きです。で、セレサポです。よろしくお願いします。柴山応援してます。",
+      "location": "兵庫 近畿地方",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@suzuran_139",
+      "name": "鈴蘭の日🎐",
+      "description": "和裁・和装・民謡・盆踊り好きアラフィフ51❤︎OL兼和裁📍🧵",
+      "location": "関東在住",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,民謡,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tawarade",
+      "name": "田原de盆踊り",
+      "description": "田原っ子に盆踊りを届けたい！田原小学校で盆踊り大会を開催したい。そんな想いから企画し、2024年の初めての開催は大成功でした。今年も勿論開催します！学区地域町会と協力して、何十年も続く地域行事にしていきたいと思います。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,町会"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@xiaolinhon56939",
+      "name": "鼓次郎",
+      "description": "盆踊りと盆踊りのための太鼓が好き。流浪の太鼓打ち\n盆踊りのための太鼓と踊り\n、新井宿太鼓",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@jhf6giih6918081",
+      "name": "卯ケン",
+      "description": "盆踊りと新舞踊が好きだった母親の血を引く盆踊ラー　好きな踊りベスト15は \n① 河内酒　亀有v②男おけさ③美子の三味線ドンパン④おけさ恋唄 　北区v⑤板橋音頭　 流しv⑥ソーラン北海⑦百年桜⑧平成新宿音頭⑨川口小唄⑩大江戸八丁堀音頭⑪チャンチキ恋唄⑫江戸川ふるさと音頭⑬すみだ音頭⑭月島音頭⑮日本一だよ",
+      "location": "東京 板橋区",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.095,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,音頭,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kameopinku49130",
+      "name": "カメオピンク",
+      "description": "ピンクカメオ（牝馬）が好きな競馬と盆踊り踊るんが大好きな会社員のおっちゃんです👍維新を支持してます🙌つまらんことつぶやきますが宜しくです。",
+      "location": "大阪 大阪市 ",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.095,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,踊る"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pedal2411",
+      "name": "祭囃子🏮🍧🎆🍻",
+      "description": "踊れる曲はまだ少ない初心者盆踊らー🏮今年はたくさんの盆踊りに参加したいです😄街歩きや美味しいもの巡りも☕️",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 7.095,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@bsszpiverz5ukxa",
+      "name": "鈴木めの字",
+      "description": "お母さんです。/盆踊り/ピノキオピー/よろしくお願いします",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 6.833,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@cottoncand75102",
+      "name": "ユin 🧸 uの",
+      "description": "盆踊りが好き♡ 4年目🏮 夏から秋まで？参加👘🎀 ユin🧠👩🏻 #ILLIT 好き uの(9)👧🏻 反抗期の為お休み中 冬は推し活⟡.·🐱🍎*. ﾟ #サンリオ好き #hellokitty 銭湯♨️",
+      "location": "サンリオピューロランド",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/SheEWLY1bA",
+      "candidate_score": 6.833,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ftatsumidaiko",
+      "name": "深川辰巳太鼓",
+      "description": "深川辰巳太鼓の公式Xです。 東京江東区を中心に活動する和太鼓集団。深川の街、祭りを愛し、下町を盛り上げる為に発足。男女約20名で深川の粋と威勢の良さで各所夏祭り、イベントに華を添えます。 気軽にご連絡ください！！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/GYvm2SRaRp",
+      "candidate_score": 6.833,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:祭,夏祭り,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@fukuchanmannnn",
+      "name": "ふくちゃん＠兵庫",
+      "description": "・民踊、盆踊り愛好者です🏮\n・よろしくお願いします🙇",
+      "location": "兵庫県民",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 6.833,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@junt_koto",
+      "name": "JUNT",
+      "description": "江東/盆踊り/野球/ディズニー/📷/B'z/Mr.Children",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 6.833,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@reonarudopon",
+      "name": "れお",
+      "description": "昇舞 /盆踊りはじめたてほやほや/小学生の感想文すぎます",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 6.833,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kaminarimonbon",
+      "name": "【公式】雷門盆踊り～夢灯篭～",
+      "description": "令和8年9月4日、5日(土)に実施予定の雷門盆踊り～夢灯篭～の公式アカウントです。\n※盆踊りは9月5日(土)17:30、18:30、19:30の各30分\n\nイベントに関する情報や天候による当日の中断・中止などの情報を発信いたします。原則フォローリプライは行いませんのでご了承ください。",
+      "location": "並木通り(浅草雷門前)",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/979OGWJ6XC",
+      "candidate_score": 5.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@198562761224",
+      "name": "〽︎茶色の小瓶",
+      "description": "ローカル文化（もちろん都市部にもある）、盆踊り、白鳥おどり。地理、都市計画、境界線、パラドックス的なものが好き。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@bon_in_aihall",
+      "name": "いたみ盆踊り大会inアイホール",
+      "description": "2022年2月20日（日曜）アイホールで盆踊り大会を開催しました。たくさんのご来場ありがとうございました！ #盆踊りよいとこ #いたぼん",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/QKdWhj6Hbc",
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@bon_odori0930",
+      "name": "けんじ",
+      "description": "盆踊り好きな愛知県民のサラリーマンです\n( ´∀`)たまに関東や関西へも出没してます\nインスタもやってます( ´∀`)\n→\nhttps://t.co/3iQByHo3Pk",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@hashyneige",
+      "name": "はっし❄️",
+      "description": "いつもどこかにいきたい いつもねむい会社員。盆踊りがすき。夜間SDお勉強中。🍃",
+      "location": "シティ",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ikebukubon",
+      "name": "池袋盆BAND・盆ダンサーズ",
+      "description": "プロジェクトFUKUSHIMA!の盆踊りが大好きで、池袋を拠点に日本各地で演奏し踊っています。",
+      "location": "日本",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mimi33_yuyu26",
+      "name": "みみ&ゆゆ",
+      "description": "前のアカウントが急に使えなくなりました。。どうやっても戻れないので新しく作りました！悲しすぎる。 盆踊り大好き姉妹🦊🦊 (時々末っ子)地元〜都内、横浜あたりによく踊りに行きます♪ ただただ盆踊りが好きな娘たちと母の記録用アカです。",
+      "location": "日本",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mtauaijlzfh1wvf",
+      "name": "オリオン",
+      "description": "趣味　☆美術館や画廊巡り　☆釣り　☆サイクリング　☆YOSAKOIソーラン　　　　　☆盆踊り（見学）",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@nekopuriko",
+      "name": "武蔵丸の飼っているペンギンは五刀流",
+      "description": "2025.夏～盆踊りデビューしました🔰\n盆踊りとＸ初心者です🔰 \n 幼少期からクラシックピアノ弾いていましたが、今は全然弾いていません(*ˊ˘ˋ*)\n 昭和レトロ、朽ち果てた団地、横浜DeNAベイスターズ、宇都宮ブレックスをこよなく愛しております٩(ˊᗜˋ*)و\n 神奈川県に生息中、よろしくお願いします。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pondedonguri",
+      "name": "マナ",
+      "description": "盆踊り歴1年になりました(^^♪  よろしくね💛",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ringonabe",
+      "name": "林檎牌_或る舞民",
+      "description": "「林檎牌」は「アップルパイ」と読みます。ジャンルは、鉄むす、ガルパン、盆踊り、ゆるキャラ。地域は津軽、大洗、上田、朝日町。「或る舞民」は「アルブミン」と発音します。こちらは踊り用～♪",
+      "location": "東京都",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@sabondo515",
+      "name": "サ盆道",
+      "description": "サ盆道（盆踊らーへの道♬群雄割拠の盆踊り〜🎶まずは品川区から🎼♩",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@shokoodori08",
+      "name": "shoko_Bonodori",
+      "description": "盆踊りアカ作りました✨ 東京近郊行きます！ あまり踊れませんが、よろしくお願いします😍無言フォロー失礼します🙇‍♀盆踊りで繋がりたいな👘",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@sui_so_sui",
+      "name": "sui so sui",
+      "description": "盆踊りと民俗芸能が好き 書・竹・茶・写真も好きです〜✌︎ https://t.co/FArFkS09fd",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@suitas47658300",
+      "name": "江頭ゆかり",
+      "description": "盆踊りが好きです♪( ´θ｀)ノ 夏はあちこち踊りに行きます。高島おどりの踊り担当。夏以外はぼんやりしている。イラストレーター。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@takashi89132",
+      "name": "たかし@赤っぽい人🚭禁煙中☺",
+      "description": "カープとUVERworldと盆踊りが好き",
+      "location": "浅草",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ueno_bonodori",
+      "name": "上野盆踊り会(厚澄会)",
+      "description": "盆踊りのオフシーズンに上野恩賜公園で盆踊り会を不定期開催しております。季節や天候によって変わりますが10時～17時ごろまで。都内盆踊り会場の定番曲からご当地曲、盆踊りから姿を消してしまった曲まで、多種多様な曲をご用意しております。どなたでもご参加頂けますので、古来より続く日本の伝統文化に触れてみてはいかがでしょうか。",
+      "location": "東京都台東区上野恩賜公園",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/cZlzNufOMQ",
+      "candidate_score": 5.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@akki___",
+      "name": "あっきー",
+      "description": "ラー歴10年目です。\n日本舞踊(坂東流)歴4年目です。　　\n中央区自分結い大江戸和髪学会員　2年目です。　\n現在の趣味:盆踊り、着物、ジョギング、日本髪",
+      "location": "Tokyo,Japan",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@heart_shio_",
+      "name": "こまき",
+      "description": "TYO / NGO ∥ 昇舞 ∥ 盆踊り好きな方仲良くしてください！@hit_u_bonodori DM見れません",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@hoso_yane",
+      "name": "年末年始無休！！",
+      "description": "江東区在住。 \nやっと盆踊り人ぽい感じに\n\nみんなと、同じじゃつまらないがモットー",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kantoyamato",
+      "name": "関東やまと太鼓",
+      "description": "1973年発足し、関東を中心に活動中です！\n祭りシーズンでは20ヶ所の櫓にて #盆太鼓 主とし、#創作太鼓 #津軽三味線 #篠笛 #お囃子 #獅子舞 等のパフォーマンスも得意としています。\n\n【演奏のご依頼はこちら】\n https://t.co/nFl0lBJtQZ 公式HP「関東やまと太鼓」で🔍",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/xUJXfsKwuE",
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,櫓,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kuronekonodang0",
+      "name": "黒猫の団子(NORA)",
+      "description": "盆踊りが好きです。(盆踊り専用アカ作りました。うまく使い分けできるかな？)",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kyeong27",
+      "name": "京姫",
+      "description": "盆踊り、お神輿を楽しんでいます。\n最近は、キャンプにも行ってます～",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@maki_nin",
+      "name": "まきにん",
+      "description": "盆踊り・銭湯・キャンプ・朝ドラ・ネコ・仮面ライダー・M！ＬＫ💙🧂💛",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mjmj830mj",
+      "name": "MJようこ",
+      "description": "盆踊り・松本潤さんMJM会員",
+      "location": "東京盆踊り会場",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@qjenxyq7st8435",
+      "name": "ゆーたろー",
+      "description": "盆踊り/着物 /古典 民踊 新舞踊/美智芳会",
+      "location": "東京 ",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@shiodaifuku0209",
+      "name": "しおだいふく",
+      "description": "映画ドラマ大好き。ストレス発散はヒトカラ、盆踊り、オンラインレッスン（ZUMBA、ヨガ）\n永遠の憧れの人は安室奈美恵。\n令和元年夏～盆踊り遠征デビューしました。",
+      "location": "東京",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tais_odoriduki",
+      "name": "大正盆踊りサークル　踊月🌙",
+      "description": "大正大学の盆踊り好きが集まったサークルです！ 🔸メンバー募集中！初心者大歓迎🔸 入会希望、質問はDMにお願いします！ 一緒に盆踊りを楽しみましょう👘",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/zhSyzjjqb9",
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tenten_yr1",
+      "name": "TENTEN",
+      "description": "週末出かけています。（ライブ、映画、盆踊り等）",
+      "location": "東京右半分",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tsubonodori",
+      "name": "つぼん",
+      "description": "盆踊り＆ソロ即興(踊り舞い)大好きな５姉妹の母。着物も好き。篠笛も始めました！ 無言フォロー＆フォロバします🙏",
+      "location": "愛知県",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@wfujgpr01ajkbsb",
+      "name": "睦子",
+      "description": "盆踊り大好き‼️しかし振りがまったく入らない🎵(笑)皆さんどうやって覚えてるのでしょう⁉️練習あるのみですね🎵",
+      "location": "日本 千葉四街道市",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@yuuuuu874",
+      "name": "ribbon_ユ",
+      "description": "👧🏻(8Y)と盆踊り♪♪ 乗っ取りにあい 戻れたけどこちら〆",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 5.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@asabayuki",
+      "name": "浅羽由紀🌈🌿8/16藤色の風クワイア♪練習★10/10-11藤枝音楽祭！🎂12/5東京バースデー",
+      "description": "🌈満ちた自分の響きで、人生を動かす\nライフコーチ・シンガーソングライター🌈\n～音楽と言葉で人と場の“本来の力”をひらく～\n🌿地域×音楽🌿講演会ライブ\n教育・行政連携実績\n🎪藤枝音楽祭 主宰\n🦑北海道松前町観光大使🦑\n▶︎ご予約・ご依頼 asabayuki1205@gmail.com",
+      "location": "静岡",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/zShqpv2phv",
+      "candidate_score": 4.274,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mikiwakabayashi",
+      "name": "若林美樹🍜💖食いしん坊😋人や街を元気にするシンガーソングライター地方新聞記者",
+      "description": "奈良県産♬橿原市観光大使🌈作詞作曲家/たくさん歌ってたまに司会者/東大阪八尾柏原地方紙（株）河内新聞社・運営・ライター✏️楽曲🎹防犯協議会🚨安全安心のために防犯のうた/ラグビー/たまご/イキイキウエキ/ラーメン食べたい/ひょこタン音頭/ハイタッチ☆ひょうたクン/イラスト・油絵描き/ゴルフ初心者⛳️",
+      "location": "出演依頼→http://marble-market.net/",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/KGqaOm5swv",
+      "candidate_score": 4.274,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:音頭,観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@asagaomatsuri",
+      "name": "入谷朝顔まつり実行委員会",
+      "description": "江戸の夏の風物詩・#入谷朝顔まつり （朝顔市）は毎年７月の６・７・８日の３日間開催。 入谷鬼子母神を中心として言問通りに毎年多くの人々で賑わいます。 #入谷 #鶯谷 #鴬谷 #下谷 #台東区 #台東 #朝顔 #祭り #まつり #朝顔まつり 個人宛のリプライやDMは行っておりません。",
+      "location": "東京都台東区下谷1-12-16",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/Wq3IqDvnnd",
+      "candidate_score": 4.241,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@omatsurirokku",
+      "name": "#おまつりろっく",
+      "description": "今も昔も、浅草と言えばエンターテインメント。\n浅草六区ブロードウェイを中心に「おまつり」という最高のエンターテインメントで、この街を、日本を、世界を盛り上げたい！\nそんな思いで発足されたプロジェクトです。\n浅草夜祭開催中！詳細はリンクから↓↓",
+      "location": "浅草六区ブロードウェイ",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/c2AT8EQPMs",
+      "candidate_score": 4.241,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@taiwan_yatai",
+      "name": "【公式】超級台湾屋台祭2026",
+      "description": "【公式】超級台湾屋台祭2026\n\n🗓️2026/08/08(土)〜11(火)\n📍幕張会場\n🗓️2026/09/19(土)〜23(水)\n📍御徒町会場",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/xVVSq9j2wn",
+      "candidate_score": 4.241,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,町会"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@zokunatsu",
+      "name": "上野ゾク夏祭り",
+      "description": "たっくー全面プロデュース 大型ホラーフェス開催\n📅9/19(土)〜9/23(水・祝)\n📍上野恩賜公園・噴水公園",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/xePCXkrwzZ",
+      "candidate_score": 4.241,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,夏祭り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@chuo_machi_info",
+      "name": "中央区町会・自治会ネット",
+      "description": "東京都中央区区民部地域振興課が運営するアカウントです。区内の町会・自治会や地域に関する情報を主にツイートします。当アカウントは情報発信専用ですので、リプライ、ダイレクトメッセージ等には対応しません。ご質問等は当課へ直接お問い合せください（リンク先に連絡先記載あります）。",
+      "location": "東京都中央区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/kBYRBsOMpo",
+      "candidate_score": 4.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:町会,自治会"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@echinichoukai",
+      "name": "新川２丁目越二町会",
+      "description": "東京都中央区新川二丁目の町内会です。\n防災・防犯・地域の親睦イベントなどに取り組んでいます。\n今年は　＃富岡八幡宮例大祭二ノ宮神輿渡御　が行われ当町会でも渡御に参加します。以後来年の本祭までは町内の活動についてつぶやきます。",
+      "location": "東京都中央区新川２丁目",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/5T3sJoaxEc",
+      "candidate_score": 4.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,町会"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@onnayoukai888",
+      "name": "大場連の女妖怪",
+      "description": "納涼太鼓 大場連  @obaren00",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 4.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:納涼,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@warasse",
+      "name": "ねぶたの家ワ・ラッセ",
+      "description": "青森市文化観光交流施設　ねぶたの家　ワ・ラッセ　2011年1月5日オープン！！　大迫力！4台の大型ねぶたや制作過程がわかるタッチねぶたの展示など、青森ねぶた祭の軌跡がまるごとわかる施設です。皆さまのご来館を職員一同お待ちしております。ご家族、ご友人も是非ご一緒にお越し下さい！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/6KboscJpl7",
+      "candidate_score": 4.238,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kashima_tourism",
+      "name": "南相馬市かしま観光協会【公式】🐎",
+      "description": "南相馬市かしま観光協会の公式アカウントです。南相馬市の情報をお届けします。キャンペーン等も行っていきます🎯✨【 #相馬野馬追 】〜1日目🐴総大将お迎え #北郷本陣祭 〜",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/0PPHOhMJwk",
+      "candidate_score": 4.222,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭,観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mindengei",
+      "name": "みんなの伝芸",
+      "description": "#みん伝芸 ▶︎伝芸をポップにディグるyoutubeチャンネル💪🏻【あらゆるみんなに伝芸を。DENGEI for All】❣️#伝統芸能 #郷土芸能 #民俗芸能 #獅子舞 #民謡 #お囃子 #狂言 #三味線 #尺八 #箏 #太鼓 #万歳※基本的にDM返信出来ません。問合せはメールへお願いいたします🙇🏼‍♂️",
+      "location": "日本",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/pO2d8x2Kww",
+      "candidate_score": 4.095,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡,太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@minyomirai",
+      "name": "民謡未来ネットワーク",
+      "description": "民謡は全ての手習いに繋がる教養の入り口と定義し、未来への投資として子ども達に民謡と遭遇する機会を創出して参ります。#民謡こども食堂｜子ども第三の居場所 #ふれあい寺子屋｜民謡愛好家の研鑽と交流の場 #民謡もくもく会 （民謡サロン）を運営しています。#民謡 #墨田区 #子育て支援",
+      "location": "東京都",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/aOM5N9aPbr",
+      "candidate_score": 4.095,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡,寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@akabakamatsuri",
+      "name": "赤羽馬鹿祭り公式",
+      "description": "赤羽馬鹿祭りは、東京都北区赤羽を拠点に60年以上の歴史を誇る伝統のお祭りです。「第68回赤羽馬鹿祭り」は2026年4月25日（土）26日（日）開催予定！https://t.co/2RL0nyehoy",
+      "location": "東京都北区赤羽",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/2RL0nyehoy",
+      "candidate_score": 3.836,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ayane_seino",
+      "name": "清野あやね🦕",
+      "description": "シンガーソングライター。Sayのあやね🦕やまがた特命観光・つや姫大使🌾さくらんぼTV「やまがたチョイす」ED曲🌈おらんだラジオ「 #清野あやねのせーので山形！」絢音/清野あやね名義でサブスク配信中💿セットリストはインスタ📷Live動画まとめ▶️@ayane_info",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/DrOjMI9UpB",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@daiki_y0507",
+      "name": "山口大貴 -Yamaguchi Daiki -",
+      "description": "愛知県春日井市高蔵寺出身。少林寺拳法3段-2014年.2015年愛知県代表 全国大会出場。名古屋市公認アーティスト。株式会社 Lit 代表取締役/CEO 音楽レーベル@HMRecords_2020 アパレルブランド@GaLaCouleuR Liveスペース@LOCUS_Nagoya 飲食店@CafeBarREAL 経営",
+      "location": "名古屋",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/8nB5i26PST",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@hisaeecholove",
+      "name": "ヒサ絵",
+      "description": "唄い手。全国に手作りの作品をお届け中。認知症の曲や、おぞましい曲など、光る言葉を織り混ぜて癒しを手渡し。ある時はキャバレー、ある時はお寺でライブを。アナタの心を色んな場所に連れていきます。今年もステージに立たせて頂きありがとうございます。2022.3ユニット23℃喫茶結成。スケジュールはアメブロをご覧下さい。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/TBGdRAZNZS",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kazusa1011",
+      "name": "いけだ 一紗(いけだ かずさ)",
+      "description": "堺出身のピアノシンガーソングライター(時々ノコギリ)&行政書士・著作権相談員/各種CD好評発売中/猫と十津川村を愛する。星好き。元十津川郷観光大使、動物法務士®、星空案内人®/連絡先→kazusa@et.lovepop.jp/行政書士→@ikeda_kazusa",
+      "location": "大阪・堺",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/44QlLTZ0Ku",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kbo_office",
+      "name": "京橋音楽祭",
+      "description": "京橋音楽祭2017 開催決定！\n2017年05月21日(日) \n11:00開演予定☆\n無料サーキットフェス！\nhttps://t.co/6awFuxEipu",
+      "location": "大阪府 大阪市 都島区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/6awFuxEipu",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@marinatterstaff",
+      "name": "marina",
+      "description": "ギター弾き語りSSW さいたま市観光大使　オンラインショップ→shop https://t.co/3bSs3pXpay アメブロ→https://t.co/B7z8YeMhHK FC→https://t.co/IfUzwref03 youtube→https://t.co/FBsvbFjRxu",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@sarayamegumi",
+      "name": "皿屋恵",
+      "description": "作詞作曲してハンドマイクで歌います/大阪藤井寺出身/うお座B型/夢は大阪城ホール/来世は桜になって散りたい/新譜｢揺れるビーチグラス｣配信中➠https://t.co/1pftMjYeSZ ｲﾝｽﾀ➠https://t.co/v2YuSDS8ry",
+      "location": "東京都",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/uXpVT2pxMY",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@seinasama0523",
+      "name": "SEINA@あけおめ！Wi-Fiアカウントになりました",
+      "description": "魔法少女です。Dining Bar Roa.にいつもいます。稼いで神社建てて奉られるのが目標に生きてます。歌ったり脱いだりもします。【オオカミの口の中へ】【死んでるねんガールズ】最近の夢はマイホーム、マイホース。",
+      "location": "せいな帝国",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/3b3RL5quOK",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@smjmarianne",
+      "name": "齋明寺麻里愛🌕12/24knaveBDバンドワンマン",
+      "description": "『太陽よりも、月をあなたへ。』／表現者／SSW／不器用な愛と人生がテーマ／歌・舞台・ラジオ・バラエティ／活動情報(@smjmaria_staff)／※DMご予約専用返信不可",
+      "location": "演奏中の撮影/動画UP禁止❗️フリーライブは写真のみ可",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/F3gl2e0O36",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@sunroadhyota",
+      "name": "【公式】サンロード瓢箪山",
+      "description": "瓢箪山駅北側の商店街です。地域密着型の商店街なのでよろしくお願いします。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:商店街"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@takahashiryoko_",
+      "name": "高橋涼子🐬💛｜8/15(土)昼coromボイトレLive💕8/16(日)北参道GRAPES💕",
+      "description": "41歳【夢】をあきらめない！音楽で人生を大逆転✨／私らしくあなたらしく🌈／温もりと安心をプレゼント🎁／HSS型HSP💕／ピアノ弾き語りシンガーソングライター ／北海道 安平町観光PR雪だるま大使☃️💗／corom💚／珈琲大好き☕♡",
+      "location": "千葉船橋(気持ちは山奥で静かに生きてます…😌)",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/5GZRNvlKMi",
+      "candidate_score": 2.774,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@luck_a_say",
+          "seed_score": 26.2,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@3ipi5wfslry0z9t",
+      "name": "katsu",
+      "description": "ロゲットカードを通じて観光地を盛り上げたいです!🎉\n主にロゲットカード中心ですが、観光地（出来ればロゲットカードに参加して欲しい、または過去に行った場所・世界遺産）の紹介とそれ以外の趣味（囲碁・動物・昔話等）や面白いと思ったものもポストします😊フォロー上限の為、後ほどフォローバックします。\n宜しくお願い致します🤗",
+      "location": "群馬県",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/XQeFfUiIxw",
+      "candidate_score": 2.761,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@mormogtarou",
+          "seed_score": 25.533,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@keiko2015xxx",
+      "name": "白河恵子💖",
+      "description": "カラオケ大好きな小柄で明るい女装っ子です👧\n普段は土日祝日に東京国分寺で歌ってます\n上野、新宿、横浜、東高円寺などでも\nカラオケや飲みに行きましょう🎤🍻\n男性女性女装さんお誘いをお持ちしています💖　　　\n\n過去に投稿した歌は「白河恵子」のプロフページ上で\n「歌手名」などで検索してみてね🎵\n高知/福島白河出身",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.761,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@mormogtarou",
+          "seed_score": 25.533,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@akane_akasaka",
+      "name": "赤坂 茜まつり",
+      "description": "今年で5回目（オンライン企画含めると7回目）を迎える茜まつり。赤坂が大好きな面々が様々な組織などの垣根を超えて、純粋に街を盛り上げるためのイベントです。それぞれの思いを胸に、共に創り上げていきましょう！",
+      "location": "東京都港区赤坂・TBS前サカス広場",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/yVUq7B5ZJk",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@asagayabali",
+      "name": "阿佐ヶ谷バリ舞踊祭",
+      "description": "阿佐ヶ谷神明宮境内で毎夏開催されるインドネシア・バリ島の祭典。",
+      "location": "東京都杉並区阿佐ヶ谷 ",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/EzY3JyH43H",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@banhmi_fes",
+      "name": "ベドナム・バインミーフェスティバル",
+      "description": "今年度初開催❗️\n『ベドナム・バインミーフェスティバル\n〜ベトナムを感じる秋のお月見祭り〜』\n　\n最新情報を更新していきます🥪✨\n　\n🗓️2026年9月26日（土）〜9月27日（日）\n📍新宿中央公園ファンモアタイムひろば\n　\n主催:ベトナム・バインミーフェスティバル実行委員会",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@biraku1",
+      "name": "深川美楽市 次回は10月4日@深川資料館通り",
+      "description": "美しいもの、楽しいもの、なんでも市「深川美楽市」の公式アカウントです。★大道芸、ハンドメイド雑貨、おいしいものなど様々なものが集います。清澄白河/深川資料館通り商店街 森下/深川高橋のらくろード",
+      "location": "清澄白河・資料館通り",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/STVs4P869i",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:商店街"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@daisaiten",
+      "name": "なかの東北絆まつり実行委員会【公式】",
+      "description": "【2026なかの東北絆まつり】\n中野駅から徒歩6分、中野区役所周辺で10/24(土)、25(日)に開催します！\n東北各地の物産展やステージイベント、パレードを行います。\n東北六県の特産品やグルメの販売、東北各地の伝統芸能を\n中野の地でぜひお楽しみ下さい💫\n※DM、コメントの返信対応は行っておりません。",
+      "location": "東京 中野区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/APmuhBKb1P",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ebisusanma",
+      "name": "恵比寿ビール坂商店会",
+      "description": "恵比寿ビール坂商店会主催 「恵比寿ビール坂祭り」公式",
+      "location": "東京都渋谷区恵比寿",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/1dJD6Ye8rE",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@gyokarafes",
+      "name": "餃子からあげ祭〜炒飯と中華そばも食べられる最高の宴〜",
+      "description": "毎年恒例！秋の新宿・大久保公園でのグルメイベント第1弾！\n「餃子からあげ祭〜炒飯と中華そばも食べられる最高の宴〜」\n2025年9月12日から開催します！\n餃子・からあげ・半炒飯：1食700円\n炒飯・ラーメン：1食1100円\n生ビール1杯450円！",
+      "location": "大久保公園",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@haisai_festa",
+      "name": "はいさいFESTA🌺",
+      "description": "OKINAWA FESTIVAL IN KAWASAKI🍻 川崎駅徒歩5分にある商業施設「ラ チッタデッラ」を中心に、毎年開催しているイベント『 #はいさいFESTA 』の公式アカウント🍍 沖縄グルメ・音楽・伝統芸能などが楽しめる大沖縄文化祭🏝第23回 2026年5月2〜6日開催🌺ご来場ありがとうございました！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/Wq4VqWyWO5",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@hitotomugitooto",
+      "name": "人と麦と音〜品川音楽祭〜",
+      "description": "",
+      "location": "東京 品川区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/noNrJIU6XO",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@hongofestival",
+      "name": "本郷まつり実行委員会",
+      "description": "文京区立本郷小学校で開催される本郷まつりの公式アカウントです。イベント情報を随時アップしていきます。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ikbwest_gourmet",
+      "name": "【公式】池袋ウエストグルメパーク",
+      "description": "🏮2025年11月29日.30日開催予定🏮 池袋西口公園に “食と光”の祭典がやってきます！ 地元飲食店50店舗が“本気の味” で挑む 2日間限りの【食の祭典】 「池袋ってちょっと怖いし、汚いよね」というこの街のイメージを変える。 街と未来を作る。 その”はじまりの2日間”をぜひお楽しみください！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/rdC70K6eTx",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kagurazaka_6",
+      "name": "【公式】神楽坂商店街振興組合",
+      "description": "神楽坂商店街振興組合公式Twitterです。\nお店紹介、イベント紹介、商店街の活動などを発信していきます。※情報発信専用です。個別のDMやリプライにはお返事できませんのでご了承ください。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/jpCLlwkWGm",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:商店街"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kawasaki_yoichi",
+      "name": "川崎夜市_公式🏮2025.11/2-11/6、11/8-11/13開催🏮",
+      "description": "◆◇◆食🍜飲🍺音🎸遊◆◇◆ 川崎の夜の魅力を全国に発信。市内最大級の夜遊び企画！ 川崎夜市の公式アカウントです。 --------- 第4回「川崎夜市」 2025年11月2日(日)～11月6日(木)、11月8日(土)～11月13日(木)　 JR川崎駅東口一帯 🍜川崎ソウルフード屋台 🍺川崎バル祭り",
+      "location": "神奈 川崎市 川崎区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/AZWHIicHDd",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kotokanko",
+      "name": "江東おでかけ情報局（江東区観光協会）",
+      "description": "一般社団法人江東区観光協会の公式アカウントです。\r\n江東区の観光スポットやイベント情報など旬な情報を発信していきます。\r\n当アカウントは、情報発信専用ですので、フォロワーからのつぶやきに対し、個々の対応は行いませんので、ご了承ください。",
+      "location": "江東区",
+      "followers": null,
+      "following": null,
+      "url": "http://t.co/b5frOKS3L8",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@love_chichibu",
+      "name": "（一社）秩父地域おもてなし観光公社",
+      "description": "秩父地域の旬な観光情報をはじめとした、様々な情報を発信する秩父地域おもてなし観光公社公式アカウントです｜Facebook ☞https://t.co/dwcQKbs8ba…｜Instagram☞https://t.co/CqOD5ideH1\nフォロー・いいね・リポスト✖",
+      "location": "埼玉県 秩父地域",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/4rh29N7vkX",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@matsudo_kankou",
+      "name": "松戸市　観光推進課・文化芸術創造課",
+      "description": "松戸市観光推進課と文化芸術創造課の公式twitterアカウントです。 松戸市の観光やイベントに関する情報を配信します。",
+      "location": "千葉 松戸市",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/gowWQcxXJF",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mizukakefes",
+      "name": "GMO水かけまつり2026 in けやきひろば-Keyaki Water Splash-",
+      "description": "GMO水かけまつり2026 in けやきひろば 公式アカウント #けやき水かけ\n開催日時：2026年7月18日(土)～20日(月祝)",
+      "location": "けやきひろば（埼玉県さいたま市）",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/7aP9GJZ57S",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@nakano_chample",
+      "name": "中野チャンプルーフェスタ&関東沖縄エイサーまつり",
+      "description": "「中野のオキナワを語り継ぐ」中野チャンプルーフェスタ、「関東最大級のエイサーまつり」関東沖縄エイサーまつり公式アカウントです。",
+      "location": "東京 中野区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/a6hd90n8WF",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ntv_rd",
+      "name": "日テレR&Dラボ",
+      "description": "心踊るテクノロジーや表現をリサーチ&動画でポスト。日本テレビのR&Dチームです。TOKYO PROTOTYPE主催。TOKYO NODE LABメンバー。XRバスツアーSORATABI, 動くMRアクスタINITIME BOX, メディアチェアPIXTERIOR, フィジカルメディア研究(KMD・シカゴ大共同研究)等",
+      "location": "Shiodome, Tokyo",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/IjAx2n2PnJ",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:踊る"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@odaiba_net",
+      "name": "東京お台場.net",
+      "description": "東京臨海副都心のポータルサイト「東京お台場.net」公式アカウントです。\n公式観光大使\"メガマウっさん\"が、最新イベントや観光情報、おすすめスポットなど、臨海副都心の魅力をお届け！",
+      "location": "東京臨海副都心",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/w6T4VHDMCG",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@oedobeerfest",
+      "name": "大江戸ビール祭り",
+      "description": "お酒を嗜みます",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/kRiGYUVDJS",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pandaexpo1028",
+      "name": "ウエノデパンダ春節祭中秋節",
+      "description": "ウエノデ. パンダ春節祭2026開催決定！🐼 公式サイト⏩ https://t.co/vJxUEmY9hn 「#上野」だってパンダの故郷。本気（マジ）で本場（ガチ）なグルメやパンダとカルチャーをギュッと詰め込んだお祭りです。上野熊猫家族：四川で暮らすシンシン・リーリー・シャンシャンの元気な姿もお楽しみに❗️",
+      "location": "日本 東京",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/tCs59sD8uN",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@panmatsuri",
+      "name": "世田谷パン祭り2026",
+      "description": "世田谷パン祭り2026 DATE →2026.10.31 SAT -11.1 SUN 11:00～16:00 VENUE →世田谷公園、HOME/WORK VILLAGE、三宿四二〇商店会加盟店etc FEE →FREE",
+      "location": "東京都世田谷区三宿エリア",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@saitama_unagi",
+      "name": "【公式】さいたま市浦和うなぎまつり",
+      "description": "🎉浦和の初夏の風物詩「うなぎまつり」公式アカウント\n📍第23回は2026/5/23(土)＠さいたま市役所\n🎫弁当チケット事前販売は→5/7(木) コルソホールで販売！\n💬うなぎ情報や見どころ紹介中！\n#うなぎまつり #浦和 #さいたま市",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@setagaya_fkm",
+      "name": "せたがやふるさと区民まつり",
+      "description": "47回を迎える今年の区民まつりは、JRA馬事公苑が第20回アジア競技大会の馬術競技会場として使用されるため、開催時期を変更して開催いたします！\n日時：6月6日（土）、7日（日）11時～21時\n会場：JRA馬事公苑（世田谷区上用賀2-1）、けやき広場（世田谷区上用賀2-3と4の間）",
+      "location": "JRA馬事公苑、けやき広場",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/jJnFvNzgSi",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@shibuharafes",
+      "name": "シブハラフェス公式",
+      "description": "渋谷・原宿エリアのファッションのお祭り「シブヤハラジュクファッションフェスティバル」（#シブハラフェス）デザイナーズブランドによるインスタレーションやファッションショー、渋谷・原宿エリアのファッションビル、セレクトショップがスペシャル企画を実施。参加ショップは100店舗以上2023.3.18-19開催★詳細公式サイトで",
+      "location": "渋谷区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/gEIWh9B6tu",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@super_highball_",
+      "name": "超ハイボール祭",
+      "description": "🎊超ハイボール祭inけやきひろば🎊\n2026年2/20(金)～2/23(月)4日間開催！\n「なななべ」同時開催💨",
+      "location": "さいたまスーパーアリーナ けやきひろば",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/evRrMDRoU9",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@taito_kun",
+      "name": "台東くん",
+      "description": "台東区観光課の公式アカウントです。  台東区観光PRキャラクターの「台東くん」の仲間たちが、台東区の観光情報をお知らせするパゴッ！ リプライには対応いたしませんので、ご了承くださいパゴッ！ 台東区公式観光情報サイト「TAITOおでかけナビ」もよろしくパゴッ！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/QglTqCdabg",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tokyocurryexpo",
+      "name": "東京カレー万博2026",
+      "description": "日本最大級のカレーの祭典 『東京カレー万博』が今年も開催🍛\n全国から48店舗が参加し大久保公園を盛り上げます！\n\n異なるお店のルーを掛け合わせて、\nオリジナルの“あいがけカレー”\nをお作りいただけます！\n\n全国から集まる絶品カレーの情報や、\nイベント最新情報をお届けします。 \nハッシュタグは #東京カレー万博",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@uchinafes",
+      "name": "【公式】鶴見ウチナー祭",
+      "description": "2026年10月31日11月1日 開催。横浜市鶴見区でちむどんどんする沖縄の祭りです。 最新情報はこちらから発信しますのでチェックお願いします",
+      "location": "神奈 横浜市 鶴見区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/IWHOEDtxjF",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@uenodefoodfes",
+      "name": "ウエノデ.コリアンフェスタ",
+      "description": "🇯🇵ウエノデ.コリアンフェス2026🇰🇷 〜日韓文化交流祭〜 2026年5/29〜5/31 会場:上野公園噴水前広場 入場無料🆓",
+      "location": "上野公園噴水前広場",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/JN1SUKflfN",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@umeshu_matsuri",
+      "name": "全国梅酒まつり",
+      "description": "全国梅酒まつりin船橋2026 開催決定！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/8zCrx7Kqwc",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:まつり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@visit_sumida",
+      "name": "墨田区観光協会",
+      "description": "東京スカイツリーのあるまち墨田区の観光スポットやイベント情報など、墨田区の魅力を発信していきます！\r\n\r\nFacebookページhttp://t.co/AYRlrnRzja",
+      "location": "東京 墨田区",
+      "followers": null,
+      "following": null,
+      "url": "http://t.co/o1sEXPa7tc",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@xinchaovf",
+      "name": "シンチャオ！ふなばし Vietnam Fes 2026公式",
+      "description": "シンチャオ！ふなばし Vietnam Fes 2026公式X。今夏開催『シンチャオ！ふなばし』など、ベトナム文化のお祭り情報をリアルタイムでお届け！美味しい料理、音楽、イベントの最新情報をフォローしてね。#シンチャオふなばし",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/wtO8ESWzNE",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@yaki_imofes",
+      "name": "やきいもフェス®️",
+      "description": "やきいもフェスの公式アカウント。ノンストップやきいも🍠 \n 公式キャラクターのヤッキー（弟）&モッキー（兄）がお届けしてるで👀👀\n\nやきいもフェス IN HANSHIN 開催中✌️✌️\n📍大阪・阪神梅田本店 1F食祭テラス\n1月3日（土）〜1月12日（月・祝）",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/mQh3fHIV1x",
+      "candidate_score": 2.741,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@tokyo_eventinfo",
+          "seed_score": 24.549,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@komoshika",
+      "name": "一般社団法人菰野町観光協会【公式】",
+      "description": "菰野町の旬な観光情報をお届けします☆",
+      "location": "三重県・菰野町観光協会",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/Xhnnuy7Pe4",
+      "candidate_score": 2.74,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@shakyo_komono",
+          "seed_score": 24.52,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@orangetanakades",
+      "name": "オレンジ田中　防災士、いじめ防止講演講師 、マラソン、高齢者施設体操、ディレクター芸人",
+      "description": "三重県警津警察署一日署長！いじめ防止講演講師、サロマ湖100キロマラソン完走！タイムは9時間46分26秒です。フルマラソン3時間25分。 三重県大台町観光協会アンバサダー、菰野町PRパートナー、小型船舶2級操縦士、笑いヨガリーダー資格習得！レクレーション介護士2級！映像編集ディレクター芸人、整理収納アドバイザー2級",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/yYXa2u4tPi",
+      "candidate_score": 2.74,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@shakyo_komono",
+          "seed_score": 24.52,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@aspmkanko",
+      "name": "アスパム△【公式】",
+      "description": "高さ76ｍの正三角形のビルで、青森県の観光・物産の情報発信基地です。お土産コーナーは県内最大級！営業時間は公式サイトでご確認ください。",
+      "location": "青森県青森市安方一丁目1番40号",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/IsMz5bYQ2C",
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@gosyuinolderman",
+      "name": "探訪older man",
+      "description": "忙しさも落ち着き、神社仏閣、史跡巡りを再開しました。月1.2程ですがちょっとずつ投稿出来ればと思います😊\n※DMには返信しません。ご了承下さい🙇",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@nebuta_official",
+      "name": "青森ねぶた祭Official",
+      "description": "🏮毎年8月2日～7日開催\n「青森ねぶた祭」公式アカウントです。最新情報をお届けします。\n※個別の返信・DM対応は行っておりません。お問合せは公式サイトまで。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/kfM8oOKAPx",
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@oimooooochann",
+      "name": "おいもちゃん",
+      "description": "第44回横浜開港祭親善大使🚢 ／横浜美少女図鑑／ミスいちごアソシエイツ🍓／月1撮影会📸／ポートモデル",
+      "location": "SNSをがんばる2026年",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/PksuZdUWby",
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pg2cqg8hbq58447",
+      "name": "ゆき💚さくれお🐱🐱",
+      "description": "金爆💚喜矢武さん大好き🫶神奈川住み 超厄年祭9/15.16愛知🫶浜中文一町内会👍猫推し🐱",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pgpyqb9700rrbcg",
+      "name": "慶泉",
+      "description": "親鸞様が大好きでお坊さんになりました。岐阜県垂井町のお寺の住職しながら、書や仏画を描いてます。色紙が欲しい方はDMを🍀お寺の行事や副住職猫さんの事をその時々に呟きます🙂\n広がれ仏縁の輪🎶\n#願林寺　#真宗大谷派",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pizachan888",
+      "name": "ピザちゃん🍕👘",
+      "description": "着物4年生です🔰\n着物や浴衣を着て美術館、お花見、カフェ巡りとかしています\n着物以外にも香水、sidem麗さんなどについても呟きます",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:浴衣"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@risaminyo",
+      "name": "Risa Koike",
+      "description": "ワンテンポ早いビジョンとワンテンポ遅い行動を埋め合わせる日々の記録｜徳島生まれ大阪育ち｜民謡こども食堂｜親子で水瓶座｜人生年中無休｜HR障害者雇用ご相談はDMで（経営者限定）",
+      "location": "埼玉県草加市",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/OeQkCOuEls",
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@shinjuku_minyo",
+      "name": "民謡新宿区連盟",
+      "description": "民謡新宿区連盟は、新宿区を拠点に、民謡や和楽器の楽しさを地域に広めながら、次の世代へとつなぐ活動を続けています。初心者の方も、区外の方も、誰でも気軽に楽しめる民謡の世界へ、ぜひ一歩踏み出してみませんか？",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/KdE924vEMs",
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@skw01ck",
+      "name": "新川二丁目霊一町会",
+      "description": "中央区新川=霊岸島にある町会です。隅田川、亀島川、日本橋川に囲まれた霊岸島は江戸の海の玄関口。町がより賑やかになっていくように、地域の公的機関や他の町会等と協力し、イベントや地域清掃、防犯防災関連等の活動を行っています。",
+      "location": "東京都中央区新川2丁目1-12",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/cxj5k4VQpp",
+      "candidate_score": 2.738,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:町会"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@asakusabashi_",
+      "name": "「浅草橋を歩く。」編集部",
+      "description": "🐾東京主要観光エリアの架け橋・浅草橋の情報を発信するWebサイトの編集部✒️歩いて🥾食べて🍽見て📷聞いて🎤 呑んで🍻語って☺️人つなぎ……🤝取材OK店はDMプリーズ🚶‍♂️浅草橋FANBOOK発売中📚",
+      "location": "東京 台東区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/fivtsgMvZu",
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@gr4sa",
+      "name": "さぐら坂𝕏",
+      "description": "酒とラーメンと🚴‍♂️とサウナに本気\nGRヤリス→R2・bZ4X touring・LBXモリゾー・R25（予定\n🟣 #中西アルノ #森平麗心 ☀️ #山口陽世 #片山紗希 #天王寺璃奈 #ミア・テイラー #葛城リーリヤ #夕霧綴理　#郁田はるき\nケータイの買い過ぎ\nJGC✈️🇯🇵🇲🇾🇺🇸🇹🇼🇸🇬",
+      "location": "彩の国",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@machio_garob",
+      "name": "🍋ガロン🍈-ℂ𝕙𝕖𝕤𝕟𝕒𝕦𝕘𝕙𝕥-🦔/inL くまねこ",
+      "description": "ITエンジニアしている #筋トレ 垢です😊 💪BIG3を中心にやってます。#ゴールドジム 会員🥇\nゲームやグルメなど楽しむ趣味垢でもあります。アロマ、動物、神社等…但し、ゲスや外道は大嫌いです👊\nベンチプレス:80kg スクワット:110kg デッドリフト:125kg",
+      "location": "惑星パンディウス",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@mannernavigator",
+      "name": "@マミー",
+      "description": "企業秘書室に勤務の後、マナー&プロトコール講師として活動。パーソナルカラーリスト。ビジネス、国際儀礼の場面だけではなく、冠婚葬祭を軸とする日本の伝統文化と、その先に繋がる神道の精神を大切にしたいと考えています。背景写真は「迎賓館赤坂離宮」ですが見学できます。天皇陛下主催の晩餐会も催されます。",
+      "location": "日本　東京",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pandatower",
+      "name": "ぱんだたわー",
+      "description": "パンダとぬいぐるみ、ご当地・企業キャラ・着ぐるみなら何でも大好きです。有名よりマイナー好き。博愛主義。休日は着ぐるみ活！他に歴史、神社仏閣、民俗学系など。ゲーム、特撮、ガンダム。ドールオーナー。土偶部名：パニータ",
+      "location": "東京",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@pearllakncljudr",
+      "name": "🧚‍♀️GのりえY🏍",
+      "description": "岩橋玄樹ｻﾝ🩷神宮寺勇太ｻﾝ🩵Prince⚜️fairy🧚‍♂️名所民🏠Number_i iLYs🐐King&Prince Tiara👑 \n相馬理ｻﾝ🐈‍⬛MAZZEL⚾️田村直美ｻﾝ\nダンスはスロージャズが好き🕺",
+      "location": "Fairytales",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/LVIo5dxjma",
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@sashg_ram",
+      "name": "ﾁｬﾝｻｴ@15.16岩崎40祭4️⃣🤗0️⃣",
+      "description": "ｶﾒﾗﾏﾝです✨🤗📸✨私のﾕｰｻﾞｰ名で検索すると作例が出ます📱👈素敵な皆様が沢山投稿してくれてます🧡🙏🧡私のﾂｲｰﾄは9割独り言。ﾋﾌﾟ/舞浜/ﾗ!ｼﾘｰｽﾞ/enst!! 等雑多。撮影依頼はｲﾝｽﾀのお知らせ見てネ🌈ﾓｯﾄｰは『写真は鮮度が命📸みんな仲良くウルトラポジティブ謙虚』💪😆ぱわ！",
+      "location": "ﾂｲｯﾀｰﾃﾞｨﾋﾞｼﾞｮﾝ",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/gZiMoK6cVx",
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@terahara_kiyomi",
+      "name": "🌻寺原きよみ🌻",
+      "description": "研修業界20年以上。「硬派人材教育」一筋に企業研修、人事コンサルティングの仕事を続けてきました。 最近では、若手講師の育成、「一発屋で終わらないための大人の礼法」のセミナーが人気です。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ue0su0ke",
+      "name": "ゆうすけ",
+      "description": "💜星野夢空ちゃん・ゆあた🐈💜AsIs\n\n歴史・神社仏閣・城跡・史跡・名勝地・絶景地・美術館・博物館・食・酒・温泉巡り・舞台観劇  愛機LUMIX S1RⅡ📷\n\n🤍金澤有希💜レジェンド💛\n\nHey!Mommy! 延松舞佳❤️🐈 佐々木ひまわり💛🌻",
+      "location": "神奈川県 ",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@yutanpo2671",
+      "name": "ゆたんぽ-Yoshi🦒",
+      "description": "踊り手さん・アイドルさん・メイドさんを応援しています。踊ってみた＆歌 営業DM× I like dance&song. Supporting dancers, idol singers and maids.",
+      "location": "Yokohama, Japan",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/opYULJV119",
+      "candidate_score": 2.737,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@party_animalsjp",
+          "seed_score": 24.36,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@demi0528",
+      "name": "でみCafe",
+      "description": "○2015年5月鷹の台→7月国分寺→2019年2月武蔵小金井2023年8月閉店まで8年間の実店舗営業を経て現在は出張でみCafeとして活動中。おからドーナツとスープが得意です。\n○精神保健福祉士のお仕事。\n○アールブリュット立川の実行委員\n○音楽、アート、福祉をテーマに活動展開しています。あとベイベです。",
+      "location": "東京都",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.731,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@musako_higako",
+          "seed_score": 24.053,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@7104kankokyokai",
+      "name": "五箇山NANTO観光機構",
+      "description": "南砺市の観光情報を発信します❗️",
+      "location": "富山県南砺市",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/oKwNhwtua9",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@chinatown_soma",
+      "name": "小高神社ブルースバンド",
+      "description": "今必要なのは、放射線リスクのコンセンサス。\r\n震災前の基準に立ち返り考えましょう。\r\nさらば、L'Île à hélice.",
+      "location": "浮世という旅の途中",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:神社"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@chitakanko",
+      "name": "知多市観光協会",
+      "description": "愛知県知多市の観光協会公式アカウントです。 知多市の観光やイベント情報をお伝えします。 フォローお願いします🙂",
+      "location": "愛知 知多市",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/XS8MRbh00g",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@fukushimatai",
+      "name": "HAPPYふくしま隊【公式】",
+      "description": "福島県観光PR隊／ふくしまDCメインアンバサダー🚩／\"オールふくしま\"の様々な魅力をメンバー6人でつぶやいていきます🌸🍜♨️🍶🏯🌳／インスタはこちら→ https://t.co/A0MTliZnSA",
+      "location": "福島県",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/MzhvPdbidF",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@fukushimatweet",
+      "name": "福島県観光物産交流協会",
+      "description": "(公財)福島県観光物産交流協会【観光部】公式アカウントです。福島県の観光に関する小ネタを発信しています✨ 王道の観光情報は福島観光情報サイト『ふくしまの旅』をご覧ください。 #ふくしまの旅 ※掲載画像の無断転載はお断りいたします。",
+      "location": "福島県",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/Wc5nM4r0mR",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@guruttososo",
+      "name": "ぐるっと相双【公式】",
+      "description": "相双地区の観光、求人、グルメ、イベントなどの情報を集めたポータルサイトを運営しています♪公式Twitter始めました！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/CnfC29pINo",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@hamatsutomoaki",
+      "name": "なすび",
+      "description": "なすびのX。福島県出身。2016年5月19日に4度目の挑戦でエベレスト登頂に成功。 福島県あったかふくしま観光交流大使/山の日アンバサダー/安達太良山観光大使/福島環境・未来アンバサダー第1号/NARAHAアンバサダー/広野夢大使/会津美里町観光大使/石川県観光大使/普代村観光大使/ホテルリステル猪苗代めいよ支配人",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@imokurisatarou",
+      "name": "福島銘菓いもくり佐太郎【公式】🍠🌰（株式会社ダイオー）",
+      "description": "福島県福島市で1960年創業の【株式会社ダイオー】公式Twitterアカウントになります。\n事業としては、レストランや菓子製造販売を営んでおります。\n福島の元気や魅力を日々発信していけるように頑張ります！！！",
+      "location": "福島県福島市下野寺字薬師堂後４",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/u1b0TPxXB1",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@inawashirokanko",
+      "name": "猪苗代観光協会",
+      "description": "猪苗代駅前にて観光案内所やレンタサイクル&キックボードレンタルなどやってます どうぞお気軽にお立ち寄りくださいませ！(窓口営業時間8:30〜17:30年中無休)",
+      "location": "JR猪苗代駅から徒歩90歩",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/ayjX3zWCKn",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@iwakiyumoto972",
+      "name": "いわき湯本温泉観光協会",
+      "description": "奈良時代より1300年以上愛される温泉郷。 源泉かけ流しで【美人の湯】【心臓の湯】【熱の湯】など様々な効能を併せ持つ湯の名所として愛されてきました。 JR常磐線沿いでは唯一の温泉地。 今話題のJ2いわきFCのホームタウンで、選手達も愛湯♨ #いわき湯本温泉 投稿をリポストします🙏",
+      "location": "福島県いわき市常磐湯本町",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/pLfCpflymi",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@iwate_amakyo",
+      "name": "北三陸「あまちゃん」観光推進協議会",
+      "description": "【続編は北三陸にある～つづきはここにある～】ドラマ「あまちゃん」の舞台となった 岩手県北三陸エリアから、地域の魅力・イベントなどをお知らせします＼('jjj')／（※こちらのアカウントではリプライ・DMにおこたえできませんのでお問合せは各市町村役場へお願い致します）",
+      "location": "岩手県 洋野町・久慈市・野田村・普代村・田野畑村",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kankohanawa",
+      "name": "塙町観光協会＠福島県",
+      "description": "福島県の南に位置する「塙町」。「山・水・花のまち、はなわ」の観光イベント情報や日常を綴ってまいります。気軽にフォロー、リプくださいね(*´∀`*)",
+      "location": "福島県東白川郡塙町大字塙字桜木町388‐１「道の駅はなわ」内",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/KDciIQ5E98",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kankoshinchi",
+      "name": "新地町観光協会",
+      "description": "海・里・山のたくさんの自然に囲まれた福島県北の玄関口、新地町。なにより人があたたかい(*´▽｀*)何気ない新地町の日常、イベント情報などなど随時更新していきます！ 【Instagram】→ https://t.co/GH2yBdvk5c",
+      "location": "福島県新地町",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/xC3GSmt9Mn",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@kashimadc2015",
+      "name": "南相馬市かしま観光協会",
+      "description": "公式ですが非公式です。南相馬市鹿島区の観光情報や特産品情報などをゆる～く発信していきます。面白いTwitterになれば幸いです。",
+      "location": "福島　南相馬市　鹿島区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/HbYKi0tB34",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@m_mima522",
+      "name": "未馬",
+      "description": "南相馬観光協会（＠H_KANKO）公式キャラクター ＃未馬（みま） 僕、未馬！ 馬主のおじいちゃんが過ごした大好きな南相馬に憧れて、人になって未来から来たんだ。みんな仲良くしてね！",
+      "location": "福島 南相馬市",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@samuraifespr",
+      "name": "サムライフェスin南相馬🐎",
+      "description": "サムライフェスin南相馬公式アカウントです！ 2026年で記念すべき第１０回を迎えます！いざ決戦‼️ ★コスプレのお知らせも本アカウントで行います。 〈Instagram〉https://t.co/h4tGVcM0ww",
+      "location": "南相馬市雲雀ヶ原祭場地",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/gWecn08d0L",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@showakanko",
+      "name": "昭和村観光協会（福島県）",
+      "description": "【発信専用アカウントです】\n昭和村の旬な情報をポスト（ツイート）します。\nお問い合わせやご質問等はホームページのフォームからお願いいたします。",
+      "location": "福島県大沼郡昭和村",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/FQmOjuTx1d",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@soma_tokyo2022",
+      "name": "実況！相馬野馬追2024｜殿ナイト",
+      "description": "旧相馬藩&野馬追を愛してやまないファン仲間によるアカウント ▶ 団体名が「殿ナイト」に決まりました！！▶次回は 2026年7月12日（日）に殿ナイト東京イベントを開催予定！🐎 詳しくはwebをどうぞ。",
+      "location": "雲雀ヶ原祭場地",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/WbXDoBVN05",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@somayaki_kumiai",
+      "name": "大堀相馬焼協同組合【公式】",
+      "description": "大堀相馬焼協同組合の公式Twitter。大堀相馬焼は福島県浪江町の伝統的工芸品です。\n(TEL)0240-35-4917（毎週火・水曜休）\n\n【営業時間】10時～17時\n\n【HP👉https://t.co/jL1TTLhfpY】\nインスタもやってます！\n大堀相馬焼ウーマン@somayaki_woman",
+      "location": "福島県浪江町大字幾世橋字知命寺40",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/ICPY0qvAo5",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tomioka_tourism",
+      "name": "富岡町観光協会",
+      "description": "福島県富岡町観光協会です。みんな富岡に来てね！",
+      "location": "979-1123　福島県双葉郡富岡町駅前15",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/usnIRpyrd4",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tona_kan",
+      "name": "砺波市観光協会",
+      "description": "富山県 砺波市観光協会のツイッターです。\n道の駅砺波の観光案内所から「花香り、水清く、風さわやかなまち」砺波の情報を発信しています。砺波で待っとっちゃー。\nインスタもフォローしてね。\nhttps://t.co/JVlyrCwBFl\n#おいでよとなみ",
+      "location": "富山県砺波市",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/hF8Tf4rIXn",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@watanabeshouten",
+      "name": "渡部商店(なべちゃん)",
+      "description": "福島県南相馬市鹿島区の食堂です。       営業時間 昼 11:00～14:30(14:00L.O.)  夜 17:30～22:00(21:30L.O.)\n月曜日定休になります🙇\nよろしくお願いします。\nInstagramもやってます❗\nYouTubeも始めました❗\nなべちゃんねる🔍",
+      "location": "福島県南相馬市鹿島区寺内字大谷地145-2",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/cRJKQn15u3",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@yanaizu_kankou",
+      "name": "一般社団法人会津柳津観光物産協会【公式】🐄",
+      "description": "2025/4/1会津柳津観光物産協会として新しく生まれ変わりました！\n知る人ぞ知る小さな観光地「会津柳津」を紹介しています。何でも頷いてくれる赤べこ、癒しの風景が皆様を待っています。ひと息つきたくなったら、ぜひ柳津町へ。",
+      "location": "福島　会津柳津",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/DxpuxMUgpN",
+      "candidate_score": 2.722,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:観光"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@_f4b3c",
+      "name": "೬ױ₺₺",
+      "description": "お唄にはまっています￤松山踊り￤お茶盆@Ocha_bon",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@asami888daiten",
+      "name": "大天麻未",
+      "description": "舞踊集団宮坂流♡宮坂麻未♡民謡アンバサダー♡岡山県津山市出身♡花柳糸之社中♡一般社団法人全日本舞踊振付家協会♡2拠点生活",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@bonshizka",
+      "name": "しずか♡踊り",
+      "description": "恋する街角アンバサダー",
+      "location": "Tokyo-to, Japan",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:踊り"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@dancingkei",
+      "name": "すへひろ亭",
+      "description": "盆おどり＆古美術＆民俗　好き。　\n振り付けおぼえられないヒト",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆おどり"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@derisyasweets",
+      "name": "デリシャスウィートス",
+      "description": "＊日本の雑芸レヴュー団◆公演情報やトピックをお届け◆祭・銭湯・見世物小屋など様々な場所で活動中 ＊音盤「女ハレホレ天国」発売 ＊レコード「銭湯へ行こう！」発売・カラオケDAMで唄えます お問合せ◎info@derisya.com◆https://t.co/PSKwzR4vCz",
+      "location": "東京都",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/sat2VoolOE",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@dj610",
+      "name": "dj610",
+      "description": "BOSSA・JAZZ・SAMBA・歌謡曲を中心に、日々新しい音を探すのに精進。 民謡のレコードを生き甲斐にしております。1960年代、70年代、80年代を飛ばして90年代の音源をこよなく愛します。 8cmCDとレコードの二刀流DJとして心に響く選曲を考えます。",
+      "location": "Tokyo  JAPAN",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/C24LYgQ0y0",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@dorlis_kmk",
+      "name": "dorlis（どーりす）",
+      "description": "色々ゲームしてます。\nフロム&デモンズこそ至高！\nチンチラ飼ってます🐭(ちぃ、めぃ)\nどこかの海で釣りしてます。\n郡上おどり、白鳥おどり、民謡好き！\n津汲の民謡(津汲おどり)を継承しました。唄い踊ってます。保存、継承活動してます！\n時々トーマス(？)",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@gontashoukai",
+      "name": "ゴンタ商会",
+      "description": "リラックマと ソフトクリームと ラーメンと 焼肉と寿司と吹奏楽が好きです！ 仕事はダンプカーに乗ってる！GJ8マン音頭歌ってます♬覚えてね♡あと令和6年9月8日付で郡上おどり保存会辞めました！！！わーい🙌 郡上おどりのお囃子のことなら何でも聞いてくれ！！https://t.co/TsyJdhRYTZ",
+      "location": "郡上はちまん",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/6H7Vn4av5G",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:音頭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@shami_blossom",
+      "name": "ふ菓子",
+      "description": "津軽三味線奮闘中！\n和楽器バンド /和楽器 /音楽 /着物 /寺社仏閣 /御朱印 /日本酒 /ハンドメイド /パン作り /ゲーム  /キャンプ🔰　/野球(埼玉西武ライオンズ)など…何でもかんでもこのアカウントでつぶやきます。ほぼ日記。フォローはお気軽に～＾＾",
+      "location": "日本 東京",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@shibamata_shami",
+      "name": "二代目 照井貢洋",
+      "description": "神奈川県藤沢市生まれ、柴又在住|公益財団法人日本民謡協会三味線教授|小平市棒打ち唄保存会会長\n|学校、福祉施設など年間100箇所以上で演奏|教室→柴又、小平、藤沢|お問い合わせはDM📩をお願い致します。\n\nInstagram→https://t.co/a6MmqB92Mv",
+      "location": "東京 葛飾区",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/cj8CK36caP",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:民謡"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@toxy0731",
+      "name": "Tohru Takase",
+      "description": "映像制作他、しております。ゴルフなどのスポーツ各種、バンドではドラムス、阿波おどりでは「しらいし連」@shiraishi_renで大太鼓叩いてます。2022年からは東京牛深ハイヤの会https://t.co/CNxIQ6Gd6C で踊っています。 最近は象さんにハマってる。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/hAD0OpjjKP",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:太鼓"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tpfsm8nuu4uedhm",
+      "name": "東京夏祭",
+      "description": "山本です。\nスマホ機種変更したので宜しくお願いします。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@tpsrp39o3",
+      "name": "友光彩子",
+      "description": "#浅草夜祭 出演中！右近屋所属日本舞踊ダンサー 花魁変身・出演依頼・被写体依頼受付中 japanese traditional dance performance team",
+      "location": "日本",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/UoGbExuR2F",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:祭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@yumi_tateishi",
+      "name": "立石有美／宇宙軒梅ぼし",
+      "description": "2011年から線維筋痛症。痛みの日々が続くが「からだの立て直し」をわくわくと行うことに。上州にて畑を育てつつ、江州音頭の稽古の日々。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:音頭"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@zenkohjikaikan",
+      "name": "善光寺会館|お寺に泊まれる民宿•寺カフェ",
+      "description": "郡上八幡の民宿、善光寺会館公式アカウントです。 2024年8月20日にアカウント開設しました。 郡上八幡の様子を写真などで共有できればと思っています。郡上おどりオフシーズンは寺カフェもやってます☕️",
+      "location": "岐阜県郡上市八幡町370",
+      "followers": null,
+      "following": null,
+      "url": "https://t.co/Hx8r7Rn151",
+      "candidate_score": 2.595,
+      "reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:寺"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@iwsyf323",
+      "name": "糸 -ɪᴛᴏ-",
+      "description": "",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@littlerito8",
+      "name": "リトルリト",
+      "description": "",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@yozukiyo",
+      "name": "よづきよ 《踊月夜》",
+      "description": "岐阜 奥美濃｢郡上おどり｣｢白鳥おどり｣のお囃子演奏グループ(コピバン)／現在は可児市と美濃加茂市で週1練習中／Xは演奏機会の案内や活動記録も兼ねて／演奏のご依頼いただければ調整いたします ／遠方への出張演奏も可能な範囲で対応します／一緒に演奏したい 唄いたい方声かけてね！",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": null,
+      "candidate_score": 2.333,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@gpveqead9u10257",
+          "seed_score": 24.419,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        }
+      ]
+    },
+    {
+      "handle": "@ohkumawataru",
+      "name": "大熊　ワタル",
+      "description": "CICALA-MVTA（シカラムータ）・ジンタらムータ（Jinta-la-Mvta）のクラリネット奏者、大熊ワタルです。",
+      "location": "",
+      "followers": null,
+      "following": null,
+      "url": "http://t.co/vwPik6moWE",
+      "candidate_score": 2.317,
+      "reasons": [
+        "graph_hint_followed_by_seeds:2"
+      ],
+      "discovered_by": [
+        {
+          "seed": "@natsutr_bon",
+          "seed_score": 17.246,
+          "seed_status": "trusted"
+        },
+        {
+          "seed": "@odakakankou",
+          "seed_score": 23.6,
+          "seed_status": "trusted"
+        }
+      ]
+    }
+  ]
 }
