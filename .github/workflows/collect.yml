@@ -47,6 +47,13 @@ jobs:
         role-to-assume: ${{ vars.AWS_ROLE_ARN }}
         aws-region: ap-northeast-1
 
+    - name: Fetch voices artifact
+      env:
+        VOICES_S3_BUCKET: ${{ vars.VOICES_S3_BUCKET }}
+        VOICES_S3_PREFIX: ${{ vars.VOICES_S3_PREFIX || 'voices' }}
+        AWS_REGION: ap-northeast-1
+      run: python voices_s3_artifact.py fetch --overwrite
+
     - name: Fetch master RDB artifact
       if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
       env:
@@ -236,11 +243,18 @@ jobs:
         python triage_weekly_song_candidates.py --dry-run
         python prepare_weekly_harvest_review.py
 
+    - name: Publish voices artifact
+      env:
+        VOICES_S3_BUCKET: ${{ vars.VOICES_S3_BUCKET }}
+        VOICES_S3_PREFIX: ${{ vars.VOICES_S3_PREFIX || 'voices' }}
+        AWS_REGION: ap-northeast-1
+      run: python voices_s3_artifact.py publish
+
     - name: Commit and Push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/latest.json data/seen.json data/voices.json data/voices_seen.json
+        git add data/latest.json data/seen.json data/voices_seen.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/event_date_update_candidates.json ] && git add data/event_date_update_candidates.json
         [ -f data/event_song_candidates.json ] && git add data/event_song_candidates.json

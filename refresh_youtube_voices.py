@@ -3,6 +3,7 @@ import os
 import tempfile
 
 import collect
+from collection_support.voices_s3_artifact import require_writable_local_voices
 
 
 VOICES_FILE = "data/voices.json"
@@ -54,6 +55,7 @@ def refresh_youtube_voices(path=VOICES_FILE):
         updated = added + updated
 
     if updated_count or added:
+        require_writable_local_voices(path)
         _atomic_write_json(path, updated)
 
     return {

@@ -15,6 +15,7 @@ from pathlib import Path
 
 from youtube_channels.backfill_youtube_descriptions import best_thumbnail_url, load_env_value
 from youtube_channels.extract_youtube_setlists import compact_url
+from collection_support.voices_s3_artifact import require_writable_local_voices
 
 
 DATA = Path("data")
@@ -283,6 +284,7 @@ def main():
     if args.apply:
         voices_path = Path(args.voices)
         merged, added, updated = merge_voices(load_json(voices_path, []), additions)
+        require_writable_local_voices(voices_path)
         atomic_write_json(voices_path, merged)
     report = build_report(channel_reports, additions, request_count, not args.apply, added=added, updated=updated)
     atomic_write_json(args.report, report)

@@ -31,6 +31,7 @@ from collection_support.event_evidence import (
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
+from collection_support.voices_s3_artifact import require_writable_local_voices
 
 try:
     import feedparser
@@ -3415,6 +3416,7 @@ def main():
                 deduped_voices.append(v)
                 seen_in_merge.add(v["url"])
 
+        require_writable_local_voices(voices_file)
         with open(voices_file, 'w', encoding='utf-8') as f:
             json.dump(deduped_voices, f, ensure_ascii=False, indent=2)
 

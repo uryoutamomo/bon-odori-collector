@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from youtube_channels.extract_youtube_setlists import compact_url
+from collection_support.voices_s3_artifact import require_writable_local_voices
 
 
 VOICES = Path("data/voices.json")
@@ -223,6 +224,7 @@ def main():
     for batch in chunks([row["video_id"] for row in plan], 50):
         snippets.update(fetch_video_snippets(batch, api_key))
     result = apply_snippets(voices, snippets)
+    require_writable_local_voices(voices_path)
     atomic_write_json(voices_path, voices)
     report = build_report(plan, result=result, fetched_count=len(snippets), dry_run=False)
     atomic_write_json(args.report, report)
