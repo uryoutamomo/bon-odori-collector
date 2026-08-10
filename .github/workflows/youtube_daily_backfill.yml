@@ -58,6 +58,13 @@ jobs:
         role-to-assume: ${{ vars.AWS_ROLE_ARN }}
         aws-region: ap-northeast-1
 
+    - name: Fetch voices artifact
+      env:
+        VOICES_S3_BUCKET: ${{ vars.VOICES_S3_BUCKET }}
+        VOICES_S3_PREFIX: ${{ vars.VOICES_S3_PREFIX || 'voices' }}
+        AWS_REGION: ap-northeast-1
+      run: python voices_s3_artifact.py fetch --overwrite
+
     - name: Fetch master RDB artifact
       if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
       env:
