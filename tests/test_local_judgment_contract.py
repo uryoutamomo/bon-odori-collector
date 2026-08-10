@@ -279,3 +279,19 @@ def test_n28_migration_preserves_legacy_review_inbox_rows_and_columns():
     assert len(hold_columns) == 22
     assert set(build_hold_ledger_entry(build_canonical_hold(raw(), reason_code="requires_policy_judgment"), hold_id="h")) == hold_columns
     assert CANONICAL_FIELDS <= set(build_agent_terminal_decision(raw("accept")))
+
+
+def test_n29_validator_alone_rejects_early_requeue_packet():
+    packet = build_requeue(requeue_raw(), open_hold=retry_hold())
+    packet["payload"]["released_at"] = "2026-01-01T00:00:00+09:00"
+    with pytest.raises(ContractError, match="before payload.next_eligible_at"):
+        validate_canonical_decision(packet)
+
+
+def test_n30_awaiting_user_hold_freezes_all_presented_candidates():
+    decision = build_canonical_hold(raw(), reason_code="ambiguous_event_series")
+    entry = build_hold_ledger_entry(
+        decision, hold_id="hold-candidates", candidate_ids=["series-b", "series-a", "series-c"]
+    )
+    assert entry["candidate_ids"] == ["series-a", "series-b", "series-c"]
+    assert entry["candidate_set_sha256"] is not None

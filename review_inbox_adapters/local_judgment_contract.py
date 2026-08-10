@@ -372,12 +372,17 @@ def validate_canonical_decision(packet: Mapping[str, Any]) -> dict[str, Any]:
         _text(packet.get("open_hold_id"), "open_hold_id")
     elif packet.get("prior_agent_attempt_id") is not None or packet.get("open_hold_id") is not None:
         raise ContractError("non-user decision requires null user lineage fields")
+    if action == "requeue":
+        released_at = _iso(packet["payload"].get("released_at"), "payload.released_at")
+        payload_next = _iso(packet["payload"].get("next_eligible_at"), "payload.next_eligible_at")
+        if datetime.fromisoformat(released_at.replace("Z", "+00:00")) < datetime.fromisoformat(payload_next.replace("Z", "+00:00")):
+            raise ContractError("released_at is before payload.next_eligible_at")
     return dict(packet)
 
 
 def build_hold_ledger_entry(
     decision: Mapping[str, Any], *, hold_id: str, reason_detail: str | None = None,
-    expires_at: str | None = None,
+    expires_at: str | None = None, candidate_ids: list[str] | None = None,
 ) -> dict[str, Any]:
     decision = validate_canonical_decision(decision)
     if decision["action"] != "hold":
@@ -386,8 +391,13 @@ def build_hold_ledger_entry(
     mode = decision["hold_mode"]
     allowed_actions = ["requeue"] if mode == "deferred_retry" else ["accept", "reject"]
     hold_packet = decision.get("hold_packet") or {}
-    candidate_ids = [hold_packet["candidate_id"]] if hold_packet.get("candidate_id") else []
-    candidate_set_sha256 = sha256_hex(candidate_ids) if candidate_ids else None
+    if candidate_ids is None:
+        frozen_candidates = [hold_packet["candidate_id"]] if hold_packet.get("candidate_id") else []
+    else:
+        frozen_candidates = sorted(_text(candidate_id, "candidate_id") for candidate_id in candidate_ids)
+        if len(set(frozen_candidates)) != len(frozen_candidates):
+            raise ContractError("candidate_ids must not contain duplicates")
+    candidate_set_sha256 = sha256_hex(frozen_candidates) if frozen_candidates else None
     evidence_class = str(decision["payload"].get("evidence_class") or "") or None
     grouping_fingerprint = sha256_hex({
         "domain": decision["domain"], "lane": decision["lane"],
@@ -407,7 +417,7 @@ def build_hold_ledger_entry(
         "reason_detail": reason_detail,
         "required_resolution_type": "scheduled_requeue" if mode == "deferred_retry" else "user_terminal_decision",
         "allowed_actions": sorted(allowed_actions),
-        "candidate_ids": candidate_ids or None,
+        "candidate_ids": frozen_candidates or None,
         "candidate_set_sha256": candidate_set_sha256,
         "prior_agent_attempt_id": decision["decision_id"],
         "grouping_fingerprint": grouping_fingerprint,

@@ -1,6 +1,6 @@
 # local judgment contract v1（PR-J0-contract の正本仕様）
 
-決定者: こと（Claude Code） / 2026-08-10
+決定者: こと（Claude Code） / 2026-08-10（v1.1 追記 同日）
 根拠: 内田さんの決定3件（2026-08-10）と、おと・こと間で合意した設計（スレッド `20260810-local-judgment-unification`）
 
 この文書が J0-contract の**正本**です。過去のメッセージ本文と食い違う場合はこちらが優先します。
@@ -61,6 +61,18 @@ decision_channel: llm | console | scheduler
 対応は固定で、`(agent, llm)` `(user, console)` `(system, scheduler)` の3組だけを許可する。`system` レーンができる action は `requeue` **のみ**。逆に `requeue` は `system` にしかできない。
 
 復帰を実際に走らせる scheduler の実装は J1 で構わない。**J0 の担当は「その遷移が正当かどうかを判定できること」。**
+
+### validator と builder の責任分界（v1.1 で追記）
+
+`requeue` の検査は2か所に分かれる。どちらが持つかを明示しておく。
+
+- **validator が単独で持つもの**（packet だけで判定できるので、builder を通らない手作り packet も弾けなければならない）
+  - `payload.released_at >= payload.next_eligible_at`
+- **builder が持つもの**（open hold を参照しないと判定できない）
+  - `payload.hold_id` が実在し、`status = "open"` かつ `hold_mode = "deferred_retry"` であること
+  - `payload.next_eligible_at` が、その hold の `next_eligible_at` と一致すること
+
+**「packet だけで判定できる検査は必ず validator にも置く」** を原則とする。validator が最後の関門である以上、builder にしか無い検査は迂回できる。
 
 ---
 
@@ -186,6 +198,15 @@ LLM が返す raw action も単一の `hold` ではなく `defer_for_retry` / `h
 
 履歴が足りず候補を作れないときは、**推測の日付を作らない。** `insufficient_announcement_history` で `awaiting_user` へ送る。
 
+### awaiting_user の候補集合も凍結する（v1.1 で追記）
+
+これは v1 で書き漏らしていた。`deferred_retry` の再試行日候補だけでなく、**`awaiting_user` の hold が内田さんへ提示する候補集合（曖昧なシリーズ・開催回・会場の一覧）も凍結する。**
+
+- `candidate_ids` : 提示した候補の **全件**。選ばれた1件だけではない
+- `candidate_set_sha256` : その全件集合に対する SHA-256
+
+理由は、J0-read で作る対象IDの picker が「裁定しようとしている今、候補集合が当時と変わっていないか」を照合できるようにするため。選択済みの1件しか残っていないと、新しい候補が現れたことを検知できず、古い前提のまま裁定が通る。提示すべき候補が無い hold（方針判断だけを問うものなど）は空配列と null で構わない。
+
 ---
 
 ## 8. hold ledger の列
@@ -274,6 +295,10 @@ registry と payload
 migration
 27. 冪等（2回流して差分なし）
 28. 既存 `review_inbox_items` の行と列が変わらない
+
+v1.1 で追加
+29. **builder を通さず組んだ `requeue` packet で `released_at < payload.next_eligible_at` のものを、`validate_canonical_decision` **単独で** 拒否する**（builder 側の N10 とは別に、validator だけを呼んで確認すること）
+30. `awaiting_user` の hold ledger に、提示した候補の全件と `candidate_set_sha256` が凍結される（1件だけ・null にならない）
 
 ---
 
