@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-09T07:25:14.171959+00:00",
+  "generated_at": "2026-08-10T08:08:57.108996+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-09T07:25:08.408143+00:00",
+  "source_generated_at": "2026-08-10T08:08:50.671442+00:00",
   "days": 3,
-  "voice_count": 3518,
-  "candidate_count": 219,
+  "voice_count": 2034,
+  "candidate_count": 153,
   "category_counts": {
-    "曲×会場共起": 18,
-    "曲候補": 194,
-    "用語候補": 7
+    "曲×会場共起": 11,
+    "曲候補": 136,
+    "用語候補": 6
   },
-  "non_song_review_count": 25,
-  "song_candidate_count": 194,
-  "song_direct_dry_run_count": 121,
-  "song_review_count": 7,
-  "song_rejected_noise_count": 66,
+  "non_song_review_count": 17,
+  "song_candidate_count": 136,
+  "song_direct_dry_run_count": 85,
+  "song_review_count": 4,
+  "song_rejected_noise_count": 47,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -31,24 +31,21 @@
       "東京音頭 × 青山善光寺",
       "活気あふれる踊り × 青山善光寺",
       "炭坑節 × 青山善光寺",
-      "おしりたんてい音頭 × 晴海ふ頭公園",
-      "ユタゴン音頭 × 上野恩賜公園",
-      "みんなでユタゴン音頭 × 上野恩賜公園",
       "クックロビン音頭 × 神田明神境内",
-      "ズンバ音頭 × 花園神社",
-      "八木節 × 花園神社",
       "大江戸助六音頭 × 築地本願寺",
-      "新宿音頭 × 花園神社",
-      "河内音頭 × 築地本願寺"
+      "河内音頭 × 築地本願寺",
+      "法輪音頭 × 築地本願寺",
+      "盆ジョビ × 築地本願寺",
+      "神田明神音頭 × 神田明神境内",
+      "築地音頭 × 築地本願寺",
+      "錦糸町高架下河内音頭 × 築地本願寺",
+      "練習会"
     ],
     "song_review": [
       "盆ジョビ",
       "らんまん踊り",
-      "たいとう音頭",
-      "新宿音頭",
       "神田明神音頭",
-      "築地音頭",
-      "郡上おどり"
+      "築地音頭"
     ]
   }
 }
