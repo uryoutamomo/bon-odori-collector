@@ -21,7 +21,6 @@ import operation_safety.manual_apply_guards as manual_apply_guards
 from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,
     ensure_venue,
-    find_occurrence_candidates,
     link_occurrence_evidence,
     upsert_evidence_item,
     upsert_occurrence_song,
@@ -73,7 +72,6 @@ SONG_EVIDENCE_MODES = {
         "confidence": 0.95,
     },
 }
-STRONG_MATCH_SCORE = 0.92
 
 
 def _required(obj, field, errors, prefix):
@@ -100,12 +98,8 @@ def validate_payload(payload):
         if change_type not in CHANGE_TYPES:
             errors.append(f"{prefix}: invalid change_type: {change_type!r}")
             continue
-        if (
-            change_type != "create_current_year_occurrence"
-            and not request.get("occurrence_id")
-            and not request.get("match_hint")
-        ):
-            errors.append(f"{prefix}: requires occurrence_id or match_hint")
+        if change_type != "create_current_year_occurrence" and not request.get("occurrence_id"):
+            errors.append(f"{prefix}: requires occurrence_id")
         source = request.get("source") or {}
         if change_type == "create_current_year_occurrence":
             _required(request, "series_id", errors, prefix)
@@ -175,33 +169,26 @@ def validate_apply_allowed(payload):
 
 def _resolve_occurrence(conn, request, index):
     occurrence_id = request.get("occurrence_id")
-    if occurrence_id:
-        found = rows(conn, "SELECT occurrence_id FROM event_occurrences WHERE occurrence_id = ?", (occurrence_id,))
-        if found:
-            return occurrence_id, []
+    if not occurrence_id:
         return None, [
             {
                 "severity": "medium",
-                "issue_type": "occurrence_id_not_found",
+                "issue_type": "occurrence_id_required",
                 "request_index": index,
                 "request_id": request.get("request_id"),
-                "occurrence_id": occurrence_id,
             }
         ]
 
-    hint = request.get("match_hint") or {}
-    candidates = find_occurrence_candidates(conn, hint.get("event_name_hint"), hint.get("venue_name_hint"), hint.get("event_year"))
-    strong = [candidate for candidate in candidates if candidate["match_score"] >= STRONG_MATCH_SCORE]
-    if len(strong) == 1:
-        return strong[0]["occurrence_id"], []
-    issue_type = "ambiguous_occurrence" if candidates else "no_occurrence_candidates"
+    found = rows(conn, "SELECT occurrence_id FROM event_occurrences WHERE occurrence_id = ?", (occurrence_id,))
+    if found:
+        return occurrence_id, []
     return None, [
         {
             "severity": "medium",
-            "issue_type": issue_type,
+            "issue_type": "occurrence_id_not_found",
             "request_index": index,
             "request_id": request.get("request_id"),
-            "candidates": candidates,
+            "occurrence_id": occurrence_id,
         }
     ]
 

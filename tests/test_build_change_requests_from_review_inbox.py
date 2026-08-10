@@ -15,8 +15,9 @@ def official_source_item(
     event_year=2026,
     event_date_text="2026 [X1]\n7/19",
     source_url="https://example.city.lg.jp/event",
+    occurrence_id="occ_test",
 ):
-    return {
+    item = {
         "inbox_id": inbox_id,
         "kind": "official_source",
         "title": event_name,
@@ -30,6 +31,11 @@ def official_source_item(
             "memo": event_name,
         },
     }
+    if occurrence_id:
+        item["payload"]["observed_candidate"] = {
+            "candidate_key": f"{occurrence_id}|{event_date_text}||",
+        }
+    return item
 
 
 def staged_row(source_item, change_type, note=""):
@@ -97,8 +103,8 @@ class BuildRequestsTests(unittest.TestCase):
         self.assertEqual(request["change_type"], "confirm_current_year_date")
         self.assertEqual(request["date_start"], "2026-07-19")
         self.assertEqual(request["date_end"], "2026-07-19")
-        self.assertEqual(request["match_hint"]["event_name_hint"], "イベント名")
-        self.assertEqual(request["match_hint"]["venue_name_hint"], "テスト会場")
+        self.assertEqual(request["occurrence_id"], "occ_test")
+        self.assertNotIn("match_hint", request)
         self.assertNotIn("venue", request)
 
     def test_confirm_current_year_date_range_keeps_distinct_end(self):
@@ -189,6 +195,16 @@ class BuildRequestsTests(unittest.TestCase):
         )
         self.assertEqual(requests[0]["occurrence_id"], "occ_abc123")
 
+    def test_missing_occurrence_id_is_unresolved_without_match_hint_fallback(self):
+        item = official_source_item(occurrence_id=None)
+
+        requests, unresolved = build_requests(
+            [staged_row(item, "confirm_current_year_date")], current_year=2026
+        )
+
+        self.assertEqual(requests, [])
+        self.assertEqual(unresolved[0]["reason"], "missing_occurrence_id")
+
     def test_built_requests_pass_apply_change_requests_schema_validation(self):
         confirm_item = official_source_item(inbox_id="inbox_confirm")
         historical_item = official_source_item(
@@ -205,6 +221,7 @@ class BuildRequestsTests(unittest.TestCase):
         )
         self.assertEqual(unresolved, [])
         payload = {"request_type": "rdb_change_requests", "requests": requests}
+        self.assertTrue(all("match_hint" not in request for request in requests))
         # Raises ValueError on failure; a clean return means the schema is valid.
         validate_payload(payload)
 
