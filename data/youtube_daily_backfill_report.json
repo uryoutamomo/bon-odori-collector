@@ -1,13 +1,13 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-09T20:30:51.412961+00:00",
+  "generated_at": "2026-08-10T20:41:06.810280+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 44,
+  "selected_rows": 42,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 50,
-  "estimated_search_calls": 88,
+  "remaining_rows_after": 52,
+  "estimated_search_calls": 84,
   "candidates_before": 580,
   "selected": [
     {
@@ -1339,77 +1339,9 @@
         "-両国-江戸NOREN 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:d43527b17167e51e",
-      "target_year": 2024,
-      "priority_score": 86,
-      "priority": "high",
-      "event_name": "第25回 四谷納涼踊り大会",
-      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
-      "area": "新宿区",
-      "series_key": "1b921428ffd8",
-      "observed_years": [
-        2025
-      ],
-      "observed_source_video_count": 1,
-      "public_date": "2025-07-19",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19"
-      ],
-      "recurrence_label": "昨年開催・継続性 高",
-      "recurrence_score": 0.78,
-      "source_url_count": 0,
-      "song_count": 2,
-      "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "第25回 四谷納涼踊り大会 四谷ひろばグラウンド（旧四谷第四小学校） 新宿区 2024 盆踊り",
-        "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
-        "四谷ひろばグラウンド（旧四谷第四小学校） 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:698c95125ef6dd96",
-      "target_year": 2023,
-      "priority_score": 16,
-      "priority": "low",
-      "event_name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」",
-      "venue": "京王線芦花公園駅前ロータリー(南口)",
-      "area": "世田谷区",
-      "series_key": "92579e0f5c57",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-25",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-25"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.64,
-      "source_url_count": 0,
-      "song_count": 1,
-      "priority_reasons": [
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 京王線芦花公園駅前ロータリー(南口) 世田谷区 2023 盆踊り",
-        "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 2023 YouTube 盆踊り",
-        "京王線芦花公園駅前ロータリー(南口) 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 43,
+  "completed_batches": 41,
   "batches": [
     {
       "batch": 1,
@@ -2117,40 +2049,6 @@
       "candidate_count": 580,
       "strong_count": 183,
       "review_count": 48
-    },
-    {
-      "batch": 42,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:699a870d93f11789"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 580,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 43,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:d43527b17167e51e"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 580,
-      "strong_count": 183,
-      "review_count": 48
     }
   ],
   "error": "HTTP Error 429: Too Many Requests (rateLimitExceeded)",
@@ -2180,5 +2078,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-10 youtube_candidates=580 review=48 history_rows=45"
+  "ops_metrics": "ops metrics: date=2026-08-11 youtube_candidates=580 review=48 history_rows=46"
 }

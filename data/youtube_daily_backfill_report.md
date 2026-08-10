@@ -1,13 +1,13 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-08-09T20:30:51.412961+00:00
+- generated_at: 2026-08-10T20:41:06.810280+00:00
 - status: harvested_until_quota_limited
 - month: 6
-- selected_rows: 44
-- completed_batches: 43
+- selected_rows: 42
+- completed_batches: 41
 - remaining_rows_before: 93
-- remaining_rows_after: 50
-- estimated_search_calls: 88
+- remaining_rows_after: 52
+- estimated_search_calls: 84
 - candidates_before: 580
 - candidates_after: 580
 - strong_after: 183
@@ -66,8 +66,6 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | low | 8 | 2024 | 西糀谷三丁目町会「納涼盆踊り大会」 | 西糀谷さざんか公園 | 2025-07-28 |
 | low | 0 | 2024 | -両国- 江戸NOREN 妖怪BON DANCE | -両国-江戸NOREN | 2025-07-13 |
 | low | 0 | 2023 | -両国- 江戸NOREN 妖怪BON DANCE | -両国-江戸NOREN | 2025-07-13 |
-| high | 86 | 2024 | 第25回 四谷納涼踊り大会 | 四谷ひろばグラウンド（旧四谷第四小学校） | 2025-07-19 |
-| low | 16 | 2023 | 芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 | 京王線芦花公園駅前ロータリー(南口) | 2025-07-25 |
 
 ## batches
 
@@ -114,5 +112,3 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | 39 | 1 | 580 | 183 | 48 |
 | 40 | 1 | 580 | 183 | 48 |
 | 41 | 1 | 580 | 183 | 48 |
-| 42 | 1 | 580 | 183 | 48 |
-| 43 | 1 | 580 | 183 | 48 |
