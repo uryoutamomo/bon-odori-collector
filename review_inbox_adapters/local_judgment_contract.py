@@ -1,7 +1,7 @@
-"""Pure contracts for local judgment packets; this module never writes a domain table.
+"""Pure local-judgment v1 packet, transition, registry, and hold contracts.
 
-The legacy review inbox remains the runtime projection in J0.  These contracts
-make the future decision/hold ledger explicit without changing that runtime.
+This module has no database or domain writer.  Existing CAS/source identity
+checks remain the responsibility of the established decision writer.
 """
 
 from __future__ import annotations
@@ -13,38 +13,99 @@ from typing import Any, Mapping
 
 
 SCHEMA_VERSION = 1
+REGISTRY_VERSION = "local-judgment-lifecycle/v1"
 QUEUE_STATES = {"eligible", "deferred_retry", "awaiting_user", "closed"}
-ACTOR_TYPES = {"agent", "user", "system"}
-DECISION_CHANNELS = {"llm", "console", "scheduler"}
-DOMAINS = {"event", "song", "term"}
-FINAL_ACTIONS = {"accept", "reject"}
-HOLD_ACTION = "hold"
-
-# Persisted values are deliberately English.  A console can use the Japanese
-# labels without making its presentation strings part of the durable protocol.
-ACTIVE_ACTION_REGISTRY = {
-    "accept": {"label_ja": "採用", "terminal": True, "domains": DOMAINS, "lanes": {"agent", "user"}},
-    "reject": {"label_ja": "却下", "terminal": True, "domains": DOMAINS, "lanes": {"agent", "user"}},
-    "hold": {"label_ja": "保留", "terminal": False, "domains": DOMAINS, "lanes": {"agent"}},
-    "retry_eligible": {"label_ja": "再判定可能", "terminal": False, "domains": DOMAINS, "lanes": {"system"}},
-}
+ACTOR_CHANNELS = {"agent": "llm", "user": "console", "system": "scheduler"}
 REASON_CODE_HOLD_MODE = {
     "awaiting_official_announcement": "deferred_retry",
+    "source_temporarily_unavailable": "deferred_retry",
+    "packet_stale": "deferred_retry",
     "insufficient_announcement_history": "awaiting_user",
     "requires_policy_judgment": "awaiting_user",
-    "ambiguous_semantic_meaning": "awaiting_user",
+    "ambiguous_event_series": "awaiting_user",
+    "ambiguous_occurrence": "awaiting_user",
+    "ambiguous_venue": "awaiting_user",
+    "missing_target_id": "awaiting_user",
+    "conflicting_sources": "awaiting_user",
+    "insufficient_evidence": "awaiting_user",
+    "distinct_event_uncertain": "awaiting_user",
+    "publication_scope_needed": "awaiting_user",
 }
+LANES = {
+    ("event", "event_create"): "series",
+    ("event", "event_update"): "occurrence",
+    ("song", "song"): "song",
+    ("term", "term"): "term",
+}
+ACTION_DEFINITIONS = {
+    "accept": ("採用", True, {"agent", "user"}),
+    "reject": ("却下", True, {"agent", "user"}),
+    "hold": ("保留", False, {"agent"}),
+    "requeue": ("再投入", False, {"system"}),
+}
+COMMON_PAYLOAD_FIELDS = {"target_id", "reason_detail", "evidence_class"}
+REQUEUE_PAYLOAD_FIELDS = {"hold_id", "released_at", "next_eligible_at"}
+
+# Tuple-keyed data registry. E2a/T2 can append domain actions without changing
+# transition validation code.
+ACTION_REGISTRY = {
+    (domain, lane, action): {
+        "label_ja": label,
+        "terminal": terminal,
+        "allowed_actor_types": frozenset(actors),
+        "required_target_type": target_type,
+        "allowed_payload_fields": frozenset(
+            REQUEUE_PAYLOAD_FIELDS if action == "requeue" else COMMON_PAYLOAD_FIELDS
+        ),
+    }
+    for (domain, lane), target_type in LANES.items()
+    for action, (label, terminal, actors) in ACTION_DEFINITIONS.items()
+}
+
+TRANSITIONS = frozenset({
+    ("eligible", "closed", "agent", "accept"),
+    ("eligible", "closed", "agent", "reject"),
+    ("eligible", "deferred_retry", "agent", "hold"),
+    ("eligible", "awaiting_user", "agent", "hold"),
+    ("deferred_retry", "eligible", "system", "requeue"),
+    ("awaiting_user", "closed", "user", "accept"),
+    ("awaiting_user", "closed", "user", "reject"),
+})
+
+CANONICAL_FIELDS = frozenset({
+    "schema_version", "packet_type", "decision_id", "packet_id", "packet_sha256",
+    "inbox_id", "domain", "lane", "source_id", "source_key", "source_payload_hash",
+    "action", "queue_state_before", "queue_state_after", "reason_code", "hold_mode",
+    "next_eligible_at", "hold_packet", "payload", "actor_type", "actor_id",
+    "decision_channel", "decided_at", "prior_agent_attempt_id", "open_hold_id",
+    "adjudication_batch_id",
+})
 
 
 class ContractError(ValueError):
-    """A packet is invalid before any writer is allowed to see it."""
+    """Raised before an invalid packet can reach a writer."""
+
+
+def canonical_json(value: Any) -> str:
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def sha256_hex(value: Any) -> str:
+    return hashlib.sha256(canonical_json(value).encode("utf-8")).hexdigest()
 
 
 def _text(value: Any, field: str) -> str:
-    value = str(value or "").strip()
-    if not value:
+    text = str(value or "").strip()
+    if not text:
         raise ContractError(f"{field} is required")
-    return value
+    return text
+
+
+def _sha(value: Any, field: str) -> str:
+    text = _text(value, field)
+    if len(text) != 64 or any(char not in "0123456789abcdef" for char in text.casefold()):
+        raise ContractError(f"{field} must be SHA-256")
+    return text.casefold()
 
 
 def _iso(value: Any, field: str) -> str:
@@ -61,69 +122,125 @@ def _iso(value: Any, field: str) -> str:
 def _trusted_actor(actor: Mapping[str, Any]) -> dict[str, str]:
     actor_type = _text(actor.get("actor_type"), "trusted actor_type")
     channel = _text(actor.get("decision_channel"), "trusted decision_channel")
-    if actor_type not in ACTOR_TYPES or channel not in DECISION_CHANNELS:
-        raise ContractError("trusted actor has unsupported type or channel")
-    if (actor_type, channel) not in {("agent", "llm"), ("user", "console"), ("system", "scheduler")}:
+    if ACTOR_CHANNELS.get(actor_type) != channel:
         raise ContractError("trusted actor_type and decision_channel do not match")
-    return {"actor_type": actor_type, "actor_id": _text(actor.get("actor_id"), "trusted actor_id"), "decision_channel": channel, "decided_at": _iso(actor.get("decided_at"), "trusted decided_at")}
+    return {
+        "actor_type": actor_type,
+        "actor_id": _text(actor.get("actor_id"), "trusted actor_id"),
+        "decision_channel": channel,
+        "decided_at": _iso(actor.get("decided_at"), "trusted decided_at"),
+    }
 
 
-def canonicalize_raw_judgment(raw: Mapping[str, Any], *, trusted_actor: Mapping[str, Any]) -> dict[str, Any]:
-    """Build the UI-independent raw packet, ignoring actor self-claims in JSON."""
+def registry_entry(domain: str, lane: str, action: str) -> Mapping[str, Any]:
+    try:
+        return ACTION_REGISTRY[(domain, lane, action)]
+    except KeyError as exc:
+        raise ContractError(f"unregistered action tuple: {(domain, lane, action)!r}") from exc
+
+
+def canonicalize_raw_judgment(
+    raw: Mapping[str, Any], *, trusted_actor: Mapping[str, Any]
+) -> dict[str, Any]:
+    """Normalize untrusted JSON while stamping lineage from the local entrypoint."""
     actor = _trusted_actor(trusted_actor)
-    requested_action = _text(raw.get("requested_action"), "requested_action")
     domain = _text(raw.get("domain"), "domain")
-    if domain not in DOMAINS:
-        raise ContractError("unsupported domain")
-    if requested_action not in ACTIVE_ACTION_REGISTRY:
-        raise ContractError("requested_action is not in the active finite registry")
+    lane = _text(raw.get("lane"), "lane")
+    action = _text(raw.get("requested_action"), "requested_action")
+    entry = registry_entry(domain, lane, action)
+    if actor["actor_type"] not in entry["allowed_actor_types"]:
+        raise ContractError("action is not allowed for the trusted actor")
     payload = raw.get("payload")
     if not isinstance(payload, dict):
         raise ContractError("payload must be an object")
-    source_payload_hash = _text(raw.get("source_payload_hash"), "source_payload_hash")
-    if len(source_payload_hash) != 64:
-        raise ContractError("source_payload_hash must be SHA-256")
+    extra = set(payload) - set(entry["allowed_payload_fields"])
+    if extra:
+        raise ContractError(f"payload fields are not allowed: {sorted(extra)}")
     packet = {
         "schema_version": SCHEMA_VERSION,
         "packet_type": "raw_judgment",
         "packet_id": _text(raw.get("packet_id"), "packet_id"),
         "inbox_id": _text(raw.get("inbox_id"), "inbox_id"),
+        "domain": domain,
+        "lane": lane,
         "source_id": _text(raw.get("source_id"), "source_id"),
         "source_key": _text(raw.get("source_key"), "source_key"),
-        "domain": domain,
-        "source_payload_hash": source_payload_hash,
-        "requested_action": requested_action,
-        "payload": payload,
+        "source_payload_hash": _sha(raw.get("source_payload_hash"), "source_payload_hash"),
+        "requested_action": action,
+        "payload": dict(payload),
         **actor,
     }
-    packet["packet_sha256"] = hashlib.sha256(json.dumps(packet, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    packet["packet_sha256"] = sha256_hex(packet)
     return packet
 
 
-def _base(raw_packet: Mapping[str, Any], *, action: str, before: str, after: str) -> dict[str, Any]:
-    actor_type = raw_packet["actor_type"]
+def decision_id_for(packet: Mapping[str, Any], action: str) -> str:
+    identity = {
+        "schema_version": packet["schema_version"],
+        "domain": packet["domain"],
+        "inbox_id": packet["inbox_id"],
+        "packet_id": packet["packet_id"],
+        "actor_type": packet["actor_type"],
+        "action": action,
+        "source_payload_hash": packet["source_payload_hash"],
+    }
+    return "decision:" + sha256_hex(identity)
+
+
+def _base(raw: Mapping[str, Any], *, before: str, after: str) -> dict[str, Any]:
+    action = raw["requested_action"]
     return {
-        "schema_version": SCHEMA_VERSION, "packet_type": "canonical_decision",
-        "decision_id": f"decision:{raw_packet['packet_id']}:{actor_type}",
-        "inbox_id": raw_packet["inbox_id"], "source_id": raw_packet["source_id"],
-        "source_key": raw_packet["source_key"], "domain": raw_packet["domain"],
-        "source_payload_hash": raw_packet["source_payload_hash"], "packet_sha256": raw_packet["packet_sha256"],
-        "decided_at": raw_packet["decided_at"], "queue_state_before": before, "queue_state_after": after,
-        "action": action, "actor_type": actor_type, "actor_id": raw_packet["actor_id"],
-        "decision_channel": raw_packet["decision_channel"], "prior_agent_attempt_id": None,
-        "supersedes_hold_id": None, "adjudication_batch_id": None,
+        "schema_version": SCHEMA_VERSION,
+        "packet_type": "canonical_decision",
+        "decision_id": decision_id_for(raw, action),
+        "packet_id": raw["packet_id"],
+        "packet_sha256": raw["packet_sha256"],
+        "inbox_id": raw["inbox_id"],
+        "domain": raw["domain"],
+        "lane": raw["lane"],
+        "source_id": raw["source_id"],
+        "source_key": raw["source_key"],
+        "source_payload_hash": raw["source_payload_hash"],
+        "action": action,
+        "queue_state_before": before,
+        "queue_state_after": after,
+        "reason_code": None,
+        "hold_mode": None,
+        "next_eligible_at": None,
+        "hold_packet": None,
+        "payload": dict(raw["payload"]),
+        "actor_type": raw["actor_type"],
+        "actor_id": raw["actor_id"],
+        "decision_channel": raw["decision_channel"],
+        "decided_at": raw["decided_at"],
+        "prior_agent_attempt_id": None,
+        "open_hold_id": None,
+        "adjudication_batch_id": None,
     }
 
 
-def _retry_hold_packet(retry_candidates: list[Mapping[str, Any]], selected_candidate_id: str) -> tuple[str, dict[str, Any]]:
-    selected = next((row for row in retry_candidates if str(row.get("candidate_id") or "") == selected_candidate_id), None)
+def build_agent_terminal_decision(raw: Mapping[str, Any]) -> dict[str, Any]:
+    if raw.get("actor_type") != "agent" or raw.get("requested_action") not in {"accept", "reject"}:
+        raise ContractError("agent terminal decision requires agent accept or reject")
+    packet = _base(raw, before="eligible", after="closed")
+    return validate_canonical_decision(packet)
+
+
+def _retry_hold_packet(
+    retry_candidates: list[Mapping[str, Any]], selected_candidate_id: str
+) -> tuple[str, dict[str, Any]]:
+    selected = next(
+        (row for row in retry_candidates if str(row.get("candidate_id") or "") == selected_candidate_id),
+        None,
+    )
     if selected is None:
         raise ContractError("selected retry candidate is not machine-provided")
-    eligible = _iso(selected.get("eligible_at"), "candidate eligible_at")
+    eligible = _iso(selected.get("next_eligible_at"), "candidate next_eligible_at")
     start = _iso(selected.get("window_start"), "candidate window_start")
     end = _iso(selected.get("window_end"), "candidate window_end")
-    if not (datetime.fromisoformat(start.replace("Z", "+00:00")) <= datetime.fromisoformat(eligible.replace("Z", "+00:00")) <= datetime.fromisoformat(end.replace("Z", "+00:00"))):
-        raise ContractError("candidate eligible_at is outside its machine-calculated window")
+    parsed = lambda value: datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if not parsed(start) <= parsed(eligible) <= parsed(end):
+        raise ContractError("candidate next_eligible_at is outside its machine-calculated window")
     frozen = {
         "candidate_id": selected_candidate_id,
         "next_eligible_at": eligible,
@@ -133,7 +250,7 @@ def _retry_hold_packet(retry_candidates: list[Mapping[str, Any]], selected_candi
         "evidence_ids": list(selected.get("evidence_ids") or []),
         "retrieved_at": _iso(selected.get("retrieved_at"), "candidate retrieved_at"),
         "calculation_version": _text(selected.get("calculation_version"), "candidate calculation_version"),
-        "input_hash": _text(selected.get("input_hash"), "candidate input_hash"),
+        "input_hash": _sha(selected.get("input_hash"), "candidate input_hash"),
     }
     if not frozen["occurrence_ids"] or not frozen["evidence_ids"]:
         raise ContractError("retry candidate must freeze occurrence and evidence IDs")
@@ -141,176 +258,165 @@ def _retry_hold_packet(retry_candidates: list[Mapping[str, Any]], selected_candi
 
 
 def build_canonical_hold(
-    raw_packet: Mapping[str, Any], *, reason_code: str,
+    raw: Mapping[str, Any], *, reason_code: str,
     retry_candidates: list[Mapping[str, Any]] | None = None,
     selected_candidate_id: str | None = None,
 ) -> dict[str, Any]:
-    """Convert an agent raw judgment into the only legal open-hold transition."""
-    reason_code = _text(reason_code, "reason_code")
-    hold_mode = REASON_CODE_HOLD_MODE.get(reason_code)
-    if hold_mode is None:
+    if raw.get("actor_type") != "agent" or raw.get("requested_action") != "hold":
+        raise ContractError("only agent hold may open a hold")
+    mode = REASON_CODE_HOLD_MODE.get(reason_code)
+    if mode is None:
         raise ContractError(f"unknown reason_code: {reason_code}")
-    if raw_packet.get("actor_type") != "agent" or raw_packet.get("decision_channel") != "llm":
-        raise ContractError("only the trusted agent lane can create an agent hold")
-    if raw_packet.get("requested_action") != HOLD_ACTION:
-        raise ContractError("canonical hold requires requested_action=hold")
-    hold_packet: dict[str, Any] | None = None
-    next_eligible_at: str | None = None
-    if hold_mode == "deferred_retry":
+    packet = _base(raw, before="eligible", after=mode)
+    packet["reason_code"] = reason_code
+    packet["hold_mode"] = mode
+    if mode == "deferred_retry":
         if not selected_candidate_id:
-            raise ContractError("deferred_retry requires a selected machine retry candidate")
-        next_eligible_at, hold_packet = _retry_hold_packet(retry_candidates or [], selected_candidate_id)
-    packet = _base(raw_packet, action=HOLD_ACTION, before="eligible", after=hold_mode)
-    packet.update({
-        "reason_code": reason_code,
-        "hold_mode": hold_mode,
-        "next_eligible_at": next_eligible_at,
-        "hold_packet": hold_packet,
-    })
-    return packet
+            raise ContractError("deferred_retry requires a selected machine candidate")
+        packet["next_eligible_at"], packet["hold_packet"] = _retry_hold_packet(
+            retry_candidates or [], selected_candidate_id
+        )
+    return validate_canonical_decision(packet)
 
 
-def build_agent_terminal_decision(raw_packet: Mapping[str, Any], *, action: str) -> dict[str, Any]:
-    """An agent may close an eligible item it can decide without human adjudication."""
-    if raw_packet.get("actor_type") != "agent" or raw_packet.get("decision_channel") != "llm":
-        raise ContractError("only the trusted agent lane can create an agent terminal decision")
-    if action not in FINAL_ACTIONS:
-        raise ContractError("agent terminal action must be finite accept or reject")
-    if raw_packet.get("requested_action") != action:
-        raise ContractError("agent terminal action differs from the raw judgment")
-    packet = _base(raw_packet, action=action, before="eligible", after="closed")
-    packet.update({"reason_code": None, "hold_mode": None, "next_eligible_at": None, "hold_packet": None})
-    return packet
-
-
-def build_retry_eligibility_transition(hold: Mapping[str, Any], *, trusted_actor: Mapping[str, Any]) -> dict[str, Any]:
-    """J1 may schedule this later; J0 owns the validation contract for the return edge."""
-    actor = _trusted_actor(trusted_actor)
-    if hold.get("status") != "open" or hold.get("hold_mode") != "deferred_retry":
-        raise ContractError("retry eligibility requires an open deferred_retry hold")
-    next_at = _iso(hold.get("next_eligible_at"), "hold next_eligible_at")
-    return {
-        "schema_version": SCHEMA_VERSION, "packet_type": "canonical_decision",
-        "decision_id": f"decision:{_text(hold.get('hold_id'), 'hold_id')}:system:retry_eligible",
-        "inbox_id": _text(hold.get("inbox_id"), "hold inbox_id"), "source_id": _text(hold.get("source_id"), "hold source_id"),
-        "source_key": _text(hold.get("source_key"), "hold source_key"), "domain": _text(hold.get("domain"), "hold domain"),
-        "source_payload_hash": _text(hold.get("source_payload_hash"), "hold source_payload_hash"), "packet_sha256": _text(hold.get("packet_sha256"), "hold packet_sha256"),
-        "decided_at": actor["decided_at"], "queue_state_before": "deferred_retry", "queue_state_after": "eligible",
-        "action": "retry_eligible", "reason_code": hold.get("reason_code"), "hold_mode": "deferred_retry",
-        "next_eligible_at": next_at, "hold_packet": hold.get("hold_packet"), **actor,
-        "prior_agent_attempt_id": _text(hold.get("decision_id"), "hold decision_id"), "supersedes_hold_id": _text(hold.get("hold_id"), "hold_id"), "adjudication_batch_id": None,
-    }
-
-
-def build_user_decision(raw_packet: Mapping[str, Any], *, action: str, open_hold: Mapping[str, Any]) -> dict[str, Any]:
-    """A console decision is possible only from an existing awaiting-user hold."""
-    if raw_packet.get("actor_type") != "user" or raw_packet.get("decision_channel") != "console":
-        raise ContractError("only the trusted console lane can create a user decision")
-    if action not in FINAL_ACTIONS:
-        raise ContractError("user decision action must be finite accept or reject")
-    if raw_packet.get("requested_action") != action:
-        raise ContractError("user action differs from the raw judgment")
-    if open_hold.get("status") != "open" or open_hold.get("hold_mode") != "awaiting_user":
-        raise ContractError("console decision requires an open awaiting_user hold")
-    if open_hold.get("inbox_id") != raw_packet.get("inbox_id"):
-        raise ContractError("open hold belongs to another inbox item")
-    for field in ("source_id", "source_key", "domain", "source_payload_hash"):
-        if open_hold.get(field) != raw_packet.get(field):
+def build_user_decision(
+    raw: Mapping[str, Any], *, open_hold: Mapping[str, Any]
+) -> dict[str, Any]:
+    if raw.get("actor_type") != "user" or raw.get("requested_action") not in {"accept", "reject"}:
+        raise ContractError("user terminal decision requires user accept or reject")
+    if open_hold.get("status") != "open":
+        raise ContractError("console decision requires status=open hold")
+    if open_hold.get("hold_mode") != "awaiting_user":
+        raise ContractError("console decision requires an awaiting_user hold")
+    for field in ("inbox_id", "domain", "lane"):
+        if open_hold.get(field) != raw.get(field):
             raise ContractError(f"open hold {field} differs from the decision target")
-    packet = _base(raw_packet, action=action, before="awaiting_user", after="closed")
-    packet.update({
-        "reason_code": open_hold.get("reason_code"), "hold_mode": "awaiting_user",
-        "next_eligible_at": None, "hold_packet": None,
-        "open_hold_id": _text(open_hold.get("hold_id"), "open hold_id"),
-        "prior_agent_attempt_id": _text(open_hold.get("decision_id"), "open hold decision_id"),
-        "supersedes_hold_id": _text(open_hold.get("hold_id"), "open hold_id"),
-        "adjudication_batch_id": _text(open_hold.get("adjudication_batch_id"), "open hold adjudication_batch_id"),
-    })
-    return packet
+    packet = _base(raw, before="awaiting_user", after="closed")
+    packet["prior_agent_attempt_id"] = _text(
+        open_hold.get("prior_agent_attempt_id"), "prior_agent_attempt_id"
+    )
+    packet["open_hold_id"] = _text(open_hold.get("hold_id"), "open_hold_id")
+    packet["adjudication_batch_id"] = open_hold.get("adjudication_batch_id")
+    return validate_canonical_decision(packet)
 
 
-def build_hold_ledger_entry(canonical_hold: Mapping[str, Any], *, hold_id: str, expires_at: str) -> dict[str, Any]:
-    """Create the frozen open-hold record and its safe bulk-grouping fingerprint."""
-    validated = validate_canonical_decision(canonical_hold)
-    if validated["actor_type"] != "agent" or validated["action"] != HOLD_ACTION:
-        raise ContractError("hold ledger entry requires an agent hold decision")
-    mode = validated["hold_mode"]
-    lane = "scheduled_retry" if mode == "deferred_retry" else "user_adjudication"
-    allowed_actions = ["retry_eligible"] if mode == "deferred_retry" else sorted(FINAL_ACTIONS)
-    hold_packet = validated.get("hold_packet") or {}
-    candidate_ids = [hold_packet["candidate_id"]] if hold_packet.get("candidate_id") else []
-    candidate_set_sha256 = hashlib.sha256(json.dumps(candidate_ids, separators=(",", ":")).encode()).hexdigest()
-    grouping_basis = {
-        "domain": validated["domain"], "lane": lane, "reason_code": validated["reason_code"],
-        "hold_mode": mode, "allowed_actions": allowed_actions,
-        "required_resolution_type": lane, "candidate_set_sha256": candidate_set_sha256,
-        "source_id": validated["source_id"],
-    }
-    grouping_fingerprint = hashlib.sha256(json.dumps(grouping_basis, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-    hold_id = _text(hold_id, "hold_id")
-    return {
-        "hold_id": hold_id, "decision_id": validated["decision_id"], "inbox_id": validated["inbox_id"],
-        "source_id": validated["source_id"], "source_key": validated["source_key"],
-        "source_payload_hash": validated["source_payload_hash"], "packet_sha256": validated["packet_sha256"],
-        "domain": validated["domain"], "lane": lane, "reason_code": validated["reason_code"],
-        "hold_mode": mode, "status": "open", "allowed_actions": allowed_actions,
-        "required_resolution_type": lane, "candidate_ids": candidate_ids,
-        "candidate_set_sha256": candidate_set_sha256, "next_eligible_at": validated["next_eligible_at"],
-        "expires_at": _iso(expires_at, "expires_at"), "prior_agent_attempt_id": validated["decision_id"],
-        "resolved_by_decision_id": None, "grouping_fingerprint": grouping_fingerprint,
-        "adjudication_batch_id": f"batch:{grouping_fingerprint}", "hold_packet": validated.get("hold_packet"),
-        "opened_at": validated["decided_at"], "closed_at": None,
-    }
+def build_requeue(raw: Mapping[str, Any], *, open_hold: Mapping[str, Any]) -> dict[str, Any]:
+    if raw.get("actor_type") != "system" or raw.get("requested_action") != "requeue":
+        raise ContractError("requeue requires the system scheduler lane")
+    if open_hold.get("status") != "open" or open_hold.get("hold_mode") != "deferred_retry":
+        raise ContractError("requeue requires an open deferred_retry hold")
+    payload = raw.get("payload") or {}
+    if payload.get("hold_id") != open_hold.get("hold_id"):
+        raise ContractError("requeue targets another hold")
+    released_at = _iso(payload.get("released_at"), "released_at")
+    next_at = _iso(open_hold.get("next_eligible_at"), "next_eligible_at")
+    if datetime.fromisoformat(released_at.replace("Z", "+00:00")) < datetime.fromisoformat(next_at.replace("Z", "+00:00")):
+        raise ContractError("released_at is before next_eligible_at")
+    if payload.get("next_eligible_at") != next_at:
+        raise ContractError("requeue next_eligible_at differs from the open hold")
+    packet = _base(raw, before="deferred_retry", after="eligible")
+    return validate_canonical_decision(packet)
 
 
 def validate_canonical_decision(packet: Mapping[str, Any]) -> dict[str, Any]:
-    """Validate only; intentionally has no database or domain-write dependency."""
+    missing = CANONICAL_FIELDS - set(packet)
+    if missing:
+        raise ContractError(f"canonical decision fields are missing: {sorted(missing)}")
     if packet.get("schema_version") != SCHEMA_VERSION or packet.get("packet_type") != "canonical_decision":
         raise ContractError("unsupported canonical decision schema")
-    for field in ("decision_id", "inbox_id", "source_id", "source_key", "domain", "actor_id", "source_payload_hash", "packet_sha256"):
+    for field in ("decision_id", "packet_id", "inbox_id", "domain", "lane", "source_id", "source_key", "actor_id"):
         _text(packet.get(field), field)
+    _sha(packet.get("packet_sha256"), "packet_sha256")
+    _sha(packet.get("source_payload_hash"), "source_payload_hash")
     _iso(packet.get("decided_at"), "decided_at")
-    if packet.get("domain") not in DOMAINS:
-        raise ContractError("unsupported domain")
-    before, after = packet.get("queue_state_before"), packet.get("queue_state_after")
-    if before not in QUEUE_STATES or after not in QUEUE_STATES:
-        raise ContractError("unsupported queue state")
+    if not isinstance(packet.get("payload"), dict):
+        raise ContractError("payload must be an object")
     action = packet.get("action")
-    if action not in ACTIVE_ACTION_REGISTRY:
-        raise ContractError("action is not in the active finite registry")
-    actor_type, channel = packet.get("actor_type"), packet.get("decision_channel")
-    if (actor_type, channel) not in {("agent", "llm"), ("user", "console"), ("system", "scheduler")}:
+    entry = registry_entry(packet["domain"], packet["lane"], action)
+    actor_type = packet.get("actor_type")
+    if ACTOR_CHANNELS.get(actor_type) != packet.get("decision_channel"):
         raise ContractError("actor lineage is invalid")
-    definition = ACTIVE_ACTION_REGISTRY[action]
-    if packet["domain"] not in definition["domains"] or actor_type not in definition["lanes"]:
-        raise ContractError("action is not allowed for this domain and actor lane")
-    if actor_type == "agent":
-        if before != "eligible":
-            raise ContractError("agent may only decide an eligible item")
-        if action == HOLD_ACTION:
-            if after not in {"deferred_retry", "awaiting_user"}:
-                raise ContractError("agent hold must enter a hold queue state")
-            reason = packet.get("reason_code")
-            if REASON_CODE_HOLD_MODE.get(reason) != after or packet.get("hold_mode") != after:
-                raise ContractError("reason_code and hold_mode do not match")
-        elif action not in FINAL_ACTIONS or after != "closed":
-            raise ContractError("agent terminal decision must close the eligible item")
-    else:
-        if actor_type == "user" and (action not in FINAL_ACTIONS or before != "awaiting_user" or after != "closed"):
-            raise ContractError("user decision requires an awaiting_user hold and closes it")
-        if actor_type == "user":
-            _text(packet.get("open_hold_id"), "open_hold_id")
-            _text(packet.get("prior_agent_attempt_id"), "prior_agent_attempt_id")
-            _text(packet.get("supersedes_hold_id"), "supersedes_hold_id")
-            _text(packet.get("adjudication_batch_id"), "adjudication_batch_id")
-        if actor_type == "system" and not (action == "retry_eligible" and before == "deferred_retry" and after == "eligible"):
-            raise ContractError("system may only return deferred_retry to eligible")
-    next_at, hold_packet = packet.get("next_eligible_at"), packet.get("hold_packet")
-    if after == "deferred_retry":
-        if not next_at or not isinstance(hold_packet, dict) or hold_packet.get("next_eligible_at") != next_at:
-            raise ContractError("deferred_retry requires a frozen machine retry packet")
-    elif next_at is not None and not (actor_type == "system" and before == "deferred_retry" and after == "eligible"):
-        raise ContractError("only deferred_retry may have next_eligible_at")
-    if after == "awaiting_user" and next_at is not None:
-        raise ContractError("awaiting_user requires next_eligible_at = null")
+    if actor_type not in entry["allowed_actor_types"]:
+        raise ContractError("action is not allowed for actor_type")
+    extra = set(packet["payload"]) - set(entry["allowed_payload_fields"])
+    if extra:
+        raise ContractError(f"payload fields are not allowed: {sorted(extra)}")
+    transition = (
+        packet.get("queue_state_before"), packet.get("queue_state_after"), actor_type, action
+    )
+    if transition not in TRANSITIONS:
+        raise ContractError(f"transition is not allowed: {transition!r}")
+    if packet["decision_id"] != decision_id_for(packet, action):
+        raise ContractError("decision_id does not match canonical identity")
+
+    is_hold = action == "hold"
+    if is_hold:
+        expected_mode = REASON_CODE_HOLD_MODE.get(packet.get("reason_code"))
+        if expected_mode is None:
+            raise ContractError("unknown reason_code")
+        if packet.get("hold_mode") != expected_mode or packet.get("queue_state_after") != expected_mode:
+            raise ContractError("reason_code and hold_mode do not match")
+        if expected_mode == "deferred_retry":
+            hold_packet = packet.get("hold_packet")
+            if not packet.get("next_eligible_at") or not isinstance(hold_packet, dict):
+                raise ContractError("deferred_retry requires next_eligible_at and hold_packet")
+            if hold_packet.get("next_eligible_at") != packet["next_eligible_at"]:
+                raise ContractError("hold packet next_eligible_at mismatch")
+        elif packet.get("next_eligible_at") is not None or packet.get("hold_packet") is not None:
+            raise ContractError("awaiting_user requires null retry fields")
+    elif any(packet.get(field) is not None for field in ("reason_code", "hold_mode", "next_eligible_at", "hold_packet")):
+        raise ContractError("non-hold decision requires null hold fields")
+
+    if actor_type == "user":
+        _text(packet.get("prior_agent_attempt_id"), "prior_agent_attempt_id")
+        _text(packet.get("open_hold_id"), "open_hold_id")
+    elif packet.get("prior_agent_attempt_id") is not None or packet.get("open_hold_id") is not None:
+        raise ContractError("non-user decision requires null user lineage fields")
     return dict(packet)
+
+
+def build_hold_ledger_entry(
+    decision: Mapping[str, Any], *, hold_id: str, reason_detail: str | None = None,
+    expires_at: str | None = None,
+) -> dict[str, Any]:
+    decision = validate_canonical_decision(decision)
+    if decision["action"] != "hold":
+        raise ContractError("hold ledger entry requires a hold decision")
+    entry = registry_entry(decision["domain"], decision["lane"], "accept")
+    mode = decision["hold_mode"]
+    allowed_actions = ["requeue"] if mode == "deferred_retry" else ["accept", "reject"]
+    hold_packet = decision.get("hold_packet") or {}
+    candidate_ids = [hold_packet["candidate_id"]] if hold_packet.get("candidate_id") else []
+    candidate_set_sha256 = sha256_hex(candidate_ids) if candidate_ids else None
+    evidence_class = str(decision["payload"].get("evidence_class") or "") or None
+    grouping_fingerprint = sha256_hex({
+        "domain": decision["domain"], "lane": decision["lane"],
+        "reason_code": decision["reason_code"], "registry_version": REGISTRY_VERSION,
+        "allowed_actions": sorted(allowed_actions),
+        "required_target_type": entry["required_target_type"],
+        "evidence_class": evidence_class,
+    })
+    return {
+        "hold_id": _text(hold_id, "hold_id"),
+        "decision_id": decision["decision_id"],
+        "inbox_id": decision["inbox_id"],
+        "domain": decision["domain"],
+        "lane": decision["lane"],
+        "hold_mode": mode,
+        "reason_code": decision["reason_code"],
+        "reason_detail": reason_detail,
+        "required_resolution_type": "scheduled_requeue" if mode == "deferred_retry" else "user_terminal_decision",
+        "allowed_actions": sorted(allowed_actions),
+        "candidate_ids": candidate_ids or None,
+        "candidate_set_sha256": candidate_set_sha256,
+        "prior_agent_attempt_id": decision["decision_id"],
+        "grouping_fingerprint": grouping_fingerprint,
+        "status": "open",
+        "queue_state": mode,
+        "next_eligible_at": decision["next_eligible_at"],
+        "hold_packet_json": decision["hold_packet"],
+        "opened_at": decision["decided_at"],
+        "expires_at": _iso(expires_at, "expires_at") if expires_at else None,
+        "closed_at": None,
+        "resolved_by_decision_id": None,
+    }
