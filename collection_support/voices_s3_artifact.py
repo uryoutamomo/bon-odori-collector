@@ -219,6 +219,16 @@ def publish(args, client: Any | None = None, *, allow_empty_remote: bool = False
         raise SystemExit(f"voices remote checksum changed: expected={expected} actual={remote_checksum}")
     if not remote and not allow_empty_remote:
         raise SystemExit("voices remote artifact is absent; use seed exactly once")
+    if remote:
+        remote_item_count = remote.get("item_count")
+        if not isinstance(remote_item_count, int) or remote_item_count < 0:
+            raise SystemExit("voices remote artifact manifest has no valid item_count")
+        if len(rows) < remote_item_count and not getattr(args, "allow_item_count_decrease", False):
+            raise SystemExit(
+                "voices item count would decrease: "
+                f"remote={remote_item_count} new={len(rows)}; "
+                "rerun with --allow-item-count-decrease only for an intentional deletion"
+            )
     snapshot_id = safe_key_part(args.snapshot_id or os.environ.get("GITHUB_RUN_ID") or now_iso(), "manual")
     keys = artifact_keys(prefix, snapshot_id)
     run_id = safe_key_part(os.environ.get("GITHUB_RUN_ID") or "manual", "manual")
@@ -270,6 +280,9 @@ def run(args):
 
 def build_parser():
     parser = argparse.ArgumentParser(description=__doc__)
+    # Keep this attribute present on every subcommand: seed and run also call
+    # publish(), and must not depend on a publish-only argparse attribute.
+    parser.set_defaults(allow_item_count_decrease=False)
     parser.add_argument("--bucket", default="")
     parser.add_argument("--prefix", default="")
     parser.add_argument("--voices", default=str(DEFAULT_VOICES_PATH))
@@ -280,11 +293,13 @@ def build_parser():
     publish_p = sub.add_parser("publish")
     publish_p.add_argument("--expect-remote-checksum", default="")
     publish_p.add_argument("--snapshot-id", default="")
+    publish_p.add_argument("--allow-item-count-decrease", action="store_true")
     seed_p = sub.add_parser("seed")
     seed_p.add_argument("--snapshot-id", default="")
     seed_p.add_argument("--expect-source-sha256", required=True)
     seed_p.add_argument("--expect-item-count", type=int, required=True)
     run_p = sub.add_parser("run")
+    run_p.add_argument("--allow-item-count-decrease", action="store_true")
     run_p.add_argument("command", nargs=argparse.REMAINDER)
     return parser
 
