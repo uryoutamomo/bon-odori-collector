@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-10T08:08:57.108996+00:00",
+  "generated_at": "2026-08-10T09:27:15.297355+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-10T08:08:50.671442+00:00",
+  "source_generated_at": "2026-08-10T09:27:08.856904+00:00",
   "days": 3,
-  "voice_count": 2034,
-  "candidate_count": 153,
+  "voice_count": 3304,
+  "candidate_count": 242,
   "category_counts": {
-    "曲×会場共起": 11,
-    "曲候補": 136,
-    "用語候補": 6
+    "曲×会場共起": 13,
+    "曲候補": 222,
+    "用語候補": 7
   },
-  "non_song_review_count": 17,
-  "song_candidate_count": 136,
-  "song_direct_dry_run_count": 85,
-  "song_review_count": 4,
-  "song_rejected_noise_count": 47,
+  "non_song_review_count": 20,
+  "song_candidate_count": 222,
+  "song_direct_dry_run_count": 140,
+  "song_review_count": 9,
+  "song_rejected_noise_count": 73,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -31,19 +31,24 @@
       "東京音頭 × 青山善光寺",
       "活気あふれる踊り × 青山善光寺",
       "炭坑節 × 青山善光寺",
+      "おこさ節 × 隅田公園",
+      "も連日東京音頭や炭坑節 × 隅田公園",
       "クックロビン音頭 × 神田明神境内",
       "大江戸助六音頭 × 築地本願寺",
       "河内音頭 × 築地本願寺",
       "法輪音頭 × 築地本願寺",
       "盆ジョビ × 築地本願寺",
       "神田明神音頭 × 神田明神境内",
-      "築地音頭 × 築地本願寺",
-      "錦糸町高架下河内音頭 × 築地本願寺",
-      "練習会"
+      "築地音頭 × 築地本願寺"
     ],
     "song_review": [
       "盆ジョビ",
+      "ゆかた音頭",
       "らんまん踊り",
+      "郡上おどり",
+      "おこさ節",
+      "ひろしのさくら音頭",
+      "濱町音頭",
       "神田明神音頭",
       "築地音頭"
     ]

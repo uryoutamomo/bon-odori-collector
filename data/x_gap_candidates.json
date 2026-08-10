@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-10T08:08:35.584331+00:00",
+  "generated_at": "2026-08-10T09:26:52.403988+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 24,
-  "archived_count": 43,
+  "archived_count": 48,
   "candidates": [
     {
       "candidate_id": "xgap_d78e768be57ee2ac",
@@ -3708,6 +3708,65 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
+      "candidate_id": "xgap_58868fa997355d2b",
+      "source_key": "x:2086010595867033717",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/ysb_/status/2086010595867033717",
+      "source_text": "\n第1回弦小Bon！踊り～\n\n2026年8月29日開催だそうで～\n\n関係ない人は入場できない模様～\n\n20260808～\n\n #世田谷区 #世田谷 #setagaya #弦巻小学校 #弦小 #盆踊り https://t.co/5r4A1IB7pW",
+      "source_author": "@ysb_",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@ysb_",
+        "account_name": "ＹＳＢ（わいえすび～）",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月29日"
+      ],
+      "observed_dates": [
+        "2026-08-29"
+      ],
+      "event_group_key": "informal:7a5536f1242b1eeb",
+      "voice": {
+        "source": "x",
+        "account": "@ysb_",
+        "name": "ＹＳＢ（わいえすび～）",
+        "title": "",
+        "text": "第1回弦小Bon！踊り～\n\n2026年8月29日開催だそうで～\n\n関係ない人は入場できない模様～\n\n20260808～\n\n #世田谷区 #世田谷 #setagaya #弦巻小学校 #弦小 #盆踊り https://t.co/5r4A1IB7pW",
+        "url": "https://x.com/ysb_/status/2086010595867033717",
+        "date": "2026-08-08T08:44:16+00:00",
+        "tweet_id": "2086010595867033717",
+        "tags": [
+          "🟡関心",
+          "q-venue-tokyo-wards"
+        ],
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPL_cJyboAEukVS.jpg",
+          "https://t.co/5r4A1IB7pW",
+          "pic.x.com/5r4A1IB7pW",
+          "https://pbs.twimg.com/media/HPL_d1vaoAAlq3M.jpg",
+          "https://pbs.twimg.com/media/HPL_ewMaQAAko6x.jpg",
+          "https://pbs.twimg.com/media/HPL_fnCacAAwnAN.jpg"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/ysb_/status/2086010595867033717"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
       "candidate_id": "xgap_3cd8be65d8e28368",
       "source_key": "x:2086027257915781461",
       "lane_hint": "lane2",
@@ -3880,6 +3939,228 @@
       },
       "source_urls": [
         "https://x.com/kyopla_koiwa/status/2086333746874331146"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_d69ac558e9654385",
+      "source_key": "x:2086588333879423328",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/otafull/status/2086588333879423328",
+      "source_text": "\n【盆踊り情報2026】【鵜の木】8/19(水)、20(木)に「銀嶺会 子供盆踊り大会」開催\n🥁19日：多摩川鵜の木太鼓の演舞 \n💃20日：レディック キッズダンス \n🎁両日：お楽しみ抽選会＆踊った方への景品も！\nお子さまにはアイスやお菓子もありますよ～❤️\nhttps://t.co/HKVAMmpjDQ\n#大田区　#商店街　#鵜の木　#盆踊り",
+      "source_author": "@otafull",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@otafull",
+        "account_name": "おーたふる／大田区商店街連合会",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/19"
+      ],
+      "observed_dates": [
+        "2026-08-19"
+      ],
+      "event_group_key": "informal:6e1aff2dec6a6c0c",
+      "voice": {
+        "source": "x",
+        "account": "@otafull",
+        "name": "おーたふる／大田区商店街連合会",
+        "title": "",
+        "text": "【盆踊り情報2026】【鵜の木】8/19(水)、20(木)に「銀嶺会 子供盆踊り大会」開催\n🥁19日：多摩川鵜の木太鼓の演舞 \n💃20日：レディック キッズダンス \n🎁両日：お楽しみ抽選会＆踊った方への景品も！\nお子さまにはアイスやお菓子もありますよ～❤️\nhttps://t.co/HKVAMmpjDQ\n#大田区　#商店街　#鵜の木　#盆踊り",
+        "url": "https://x.com/otafull/status/2086588333879423328",
+        "date": "2026-08-09T23:00:00+00:00",
+        "tweet_id": "2086588333879423328",
+        "tags": [
+          "🟢一次レポ",
+          "q-venue-tokyo-wards"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/otafull/status/2086588333879423328"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_6796b6bc5446b525",
+      "source_key": "x:2086616808719810646",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/y_kana620/status/2086616808719810646",
+      "source_text": "\n📰 【北区ニュース8月10日号を発行✨】\n今号の表紙特集は✒️\n「町会・自治会に入りませんか \n　～みんなでつくる、つながるみらい～」🤝\n\n夏休み、区内各地では盆踊りや夏祭りなどのイベントをはじめ、防災・防犯といった地域の安全を守る活動が盛りだくさん☀️\nこれらを陰で支えているのが、町会・自治会をはじめとする地域団体の皆さんです✨\n\n🔸 世代を超えて楽しむお祭りや運動会\n🔸 いざという時に役立つ防災訓練・防犯パトロール\n🔸 まちを綺麗に保つ美化活動・資源回収\n🔸 地域の最新情報が届く掲示板の活用\n\n日常の楽しいイベントも、災害時の備えも、日頃からの「顔の見える関係」が大きな力になります🙌\nお住まいの地域の町会活動やボランティアに、ぜひ参加してみませんか？（検索やWEB申込も簡単にできますお気軽にご確認ください！）\n\n🌟 今月の「かなこらむ」の一文字：『仲』😄\nAIやデジタル化が進む現代だからこそ、人と人が顔を合わせ、助け合う「仲」の価値が高まっています🤝\nそして町会自治会や商店街、PTA、ボランティア、企業など、多くの仲間が支え合う\"地域コミュニティ\"が北区の大きな魅力です💫\n北区を",
+      "source_author": "@y_kana620",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@y_kana620",
+        "account_name": "やまだ加奈子【東京都北区長】",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月10日"
+      ],
+      "observed_dates": [
+        "2026-08-10"
+      ],
+      "event_group_key": "informal:42a799b9e840a258",
+      "voice": {
+        "source": "x",
+        "account": "@y_kana620",
+        "name": "やまだ加奈子【東京都北区長】",
+        "title": "",
+        "text": "📰 【北区ニュース8月10日号を発行✨】\n今号の表紙特集は✒️\n「町会・自治会に入りませんか \n　～みんなでつくる、つながるみらい～」🤝\n\n夏休み、区内各地では盆踊りや夏祭りなどのイベントをはじめ、防災・防犯といった地域の安全を守る活動が盛りだくさん☀️\nこれらを陰で支えているのが、町会・自治会をはじめとする地域団体の皆さんです✨\n\n🔸 世代を超えて楽しむお祭りや運動会\n🔸 いざという時に役立つ防災訓練・防犯パトロール\n🔸 まちを綺麗に保つ美化活動・資源回収\n🔸 地域の最新情報が届く掲示板の活用\n\n日常の楽しいイベントも、災害時の備えも、日頃からの「顔の見える関係」が大きな力になります🙌\nお住まいの地域の町会活動やボランティアに、ぜひ参加してみませんか？（検索やWEB申込も簡単にできますお気軽にご確認ください！）\n\n🌟 今月の「かなこらむ」の一文字：『仲』😄\nAIやデジタル化が進む現代だからこそ、人と人が顔を合わせ、助け合う「仲」の価値が高まっています🤝\nそして町会自治会や商店街、PTA、ボランティア、企業など、多くの仲間が支え合う\"地域コミュニティ\"が北区の大きな魅力です💫\n北区を支",
+        "url": "https://x.com/y_kana620/status/2086616808719810646",
+        "date": "2026-08-10T00:53:09+00:00",
+        "tweet_id": "2086616808719810646",
+        "tags": [
+          "🟢一次レポ",
+          "q-poster-flyer"
+        ],
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPUm66tbYAEmySl.jpg",
+          "https://t.co/XUsfHa7XCw",
+          "pic.x.com/XUsfHa7XCw"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/y_kana620/status/2086616808719810646"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_9cdb9eea52813000",
+      "source_key": "x:2086720879099359337",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/Shimane_CC_1968/status/2086720879099359337",
+      "source_text": "\nおでかけ県民会館 \n＼盆踊り大作戦 in 飯南町　実施中！／\n\n【コンドルズメンバー紹介】\n\n安田有吾さん\n\n12 年コンドルズ参画。\n日本大学卒。\n\n書楽家として、映画、舞台、商品の題字などの仕事で活躍中。\n『キリンビール一番搾り』『新春浅草歌舞伎』『神田伯山 寛永宮本武蔵伝』などを手がける。\n\n子どもから高齢者、障がい者に向けたワークショップ「書楽家時間」を開催中。\n\n神楽坂で生まれ育ち、幼き頃より茶道を嗜む。\n\n少林寺拳法二段。\n\n*7/11,8/14,15参加*\n\n*********************\n東京・池袋での「にゅ～盆踊り」など、日本中の盆踊りに新しい風を巻き起こしてきた実績を持つ日本を代表する『ダンスカンパニー・コンドルズ』が飯南町の魅力・伝統に触れながら、地域のみなさんと一緒に新しい盆踊りをつくっています。\n\nそしていよいよ新作盆踊り初披露！\n8月15日（土）19：00～\n赤名盆踊り大会\n\n「しめ縄」「りんご」「神楽」「お米」など飯南町らしさがつまった楽しい盆踊りができました🔥\n飯南町の方も、飯南町以外にお住いの方も赤名農村環境改善センター（赤名公民館）に集",
+      "source_author": "@Shimane_CC_1968",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@shimane_cc_1968",
+        "account_name": "島根県民会館",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "7/11",
+        "8/14",
+        "8月15日"
+      ],
+      "observed_dates": [
+        "2026-08-14",
+        "2026-08-15"
+      ],
+      "event_group_key": "informal:34f9653500f180f3",
+      "voice": {
+        "source": "x",
+        "account": "@Shimane_CC_1968",
+        "name": "島根県民会館",
+        "title": "",
+        "text": "おでかけ県民会館 \n＼盆踊り大作戦 in 飯南町　実施中！／\n\n【コンドルズメンバー紹介】\n\n安田有吾さん\n\n12 年コンドルズ参画。\n日本大学卒。\n\n書楽家として、映画、舞台、商品の題字などの仕事で活躍中。\n『キリンビール一番搾り』『新春浅草歌舞伎』『神田伯山 寛永宮本武蔵伝』などを手がける。\n\n子どもから高齢者、障がい者に向けたワークショップ「書楽家時間」を開催中。\n\n神楽坂で生まれ育ち、幼き頃より茶道を嗜む。\n\n少林寺拳法二段。\n\n*7/11,8/14,15参加*\n\n*********************\n東京・池袋での「にゅ～盆踊り」など、日本中の盆踊りに新しい風を巻き起こしてきた実績を持つ日本を代表する『ダンスカンパニー・コンドルズ』が飯南町の魅力・伝統に触れながら、地域のみなさんと一緒に新しい盆踊りをつくっています。\n\nそしていよいよ新作盆踊り初披露！\n8月15日（土）19：00～\n赤名盆踊り大会\n\n「しめ縄」「りんご」「神楽」「お米」など飯南町らしさがつまった楽しい盆踊りができました🔥\n飯南町の方も、飯南町以外にお住いの方も赤名農村環境改善センター（赤名公民館）に集合",
+        "url": "https://x.com/Shimane_CC_1968/status/2086720879099359337",
+        "date": "2026-08-10T07:46:41+00:00",
+        "tweet_id": "2086720879099359337",
+        "tags": [
+          "🟡関心",
+          "q-report"
+        ],
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPWFi3CbcAADtF_.jpg",
+          "https://t.co/kpVUv3Petf",
+          "pic.x.com/kpVUv3Petf"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/Shimane_CC_1968/status/2086720879099359337"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_5e12c4a7ae6137ef",
+      "source_key": "x:2086739878616977843",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/tantanmen_oisiy/status/2086739878616977843",
+      "source_text": "\nイベント名 第75回 江戸趣味納涼大会 うえの夏祭り\n会場 上野公園 不忍池周辺 弁天堂前広場\n日程 2026年8月10日\n\n琴宮あいり【I'Rink】@airi_irink\n\n#琴宮あいり\n#あいりとあいりんく\n#あいりんく https://t.co/NDKqqDk7eM",
+      "source_author": "@tantanmen_oisiy",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@tantanmen_oisiy",
+        "account_name": "たんたんめん　撮れる屋さん✌️🤩📷",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月10日"
+      ],
+      "observed_dates": [
+        "2026-08-10"
+      ],
+      "event_group_key": "informal:30a39a182e514e13",
+      "voice": {
+        "source": "x",
+        "account": "@tantanmen_oisiy",
+        "name": "たんたんめん　撮れる屋さん✌️🤩📷",
+        "title": "",
+        "text": "イベント名 第75回 江戸趣味納涼大会 うえの夏祭り\n会場 上野公園 不忍池周辺 弁天堂前広場\n日程 2026年8月10日\n\n琴宮あいり【I'Rink】@airi_irink\n\n#琴宮あいり\n#あいりとあいりんく\n#あいりんく https://t.co/NDKqqDk7eM",
+        "url": "https://x.com/tantanmen_oisiy/status/2086739878616977843",
+        "date": "2026-08-10T09:02:11+00:00",
+        "tweet_id": "2086739878616977843",
+        "tags": [
+          "🟡関心",
+          "q-poster-images"
+        ],
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPWW1i5bwAAurhA.jpg",
+          "https://t.co/NDKqqDk7eM",
+          "pic.x.com/NDKqqDk7eM"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/tantanmen_oisiy/status/2086739878616977843"
       ],
       "corroboration_count": 1,
       "source_count": 1,

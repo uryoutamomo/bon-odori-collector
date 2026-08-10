@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 64,
+  "count": 67,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1014,6 +1014,55 @@
         "pic.x.com/RzdrTacRbj"
       ],
       "text": "こんにちは、本日も暑いですね🥵\n地域によっては急な雷雨の可能性も🌩️\n台風15号は🌀どうなる？\n天気予報に夢中のだーです☕️\n\n🏮盆踊り盛り上がる曲アンケート🏮\nご回答ありがとうございました🙇\n🎙️結果発表ーーー🎙️\n#ダンシングヒーロー がダントツ💃\n強すぎるー😱昨年も盛り上がってました😎\n\n地域ごとに曲目は変わりますので\n楽しみ方も変わりますね😊\n予定の合う方は全制覇、目指してくださいね🤭\n\n毎年、うちわを配っていますが今年も制作中💨\n今年はレアとのウワサが🤫\n果たして期限に間に合うのか…お楽しみに😊\n\n本日も水分補給に無理せず\n#カネスエいこっ　#フェルナいこっ\n素敵な1日になりますように！",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "875785402d8eb442",
+      "status": "needs_ocr",
+      "account": "@sb_curry",
+      "url": "https://x.com/sb_curry/status/2086399226528010657",
+      "tweet_id": "2086399226528010657",
+      "date": "2026-08-09T10:28:33+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPRhCCrbgAAMCZa.jpg",
+        "https://t.co/QEIqe61x8E",
+        "pic.x.com/QEIqe61x8E"
+      ],
+      "text": "家から歩いていけるところで済ます盆踊り🥳曲目多くてひと通り踊れる感じ https://t.co/QEIqe61x8E",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "0bd2af1d7e67fee9",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2086443859035423085",
+      "tweet_id": "2086443859035423085",
+      "date": "2026-08-09T13:25:54+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2086443081042370560/img/_KAEAdfoP57gtuBA.jpg",
+        "https://t.co/o0BghSxshp",
+        "pic.x.com/o0BghSxshp",
+        "https://pbs.twimg.com/amplify_video_thumb/2086443333690494976/img/KTCMP_GMH_skt-u-.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2086443529618997248/img/KJ5UQ4hh4_XgDpPi.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2086443727044943872/img/tlcuuYsup7jqntgW.jpg"
+      ],
+      "text": "2026年8月9日(日)\n千葉県富津市／マザー牧場\n\n8/9～12迄の限定イベント\n「マザー牧場 de 盆踊り」\n\n8/9(日)は、シンガポール ナショナルデーの特別盆踊りでした。\n(他の日の予定曲は、炭坑節、ドラえもん音頭、マツケンサンバⅡ)\n\n【曲目】\nシンガポール音頭\nチャン・マリ・チャン\nマツケンサンバⅡ https://t.co/o0BghSxshp",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "2ad690a18c37a189",
+      "status": "needs_ocr",
+      "account": "@_satokoto",
+      "url": "https://x.com/_satokoto/status/2086477597861626101",
+      "tweet_id": "2086477597861626101",
+      "date": "2026-08-09T15:39:58+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPSoT-JawAAeg2f.jpg",
+        "https://t.co/ICJaLQDicN",
+        "pic.x.com/ICJaLQDicN",
+        "https://pbs.twimg.com/media/HPSoT-Ib0AE8ghU.jpg"
+      ],
+      "text": "涼しくなってきた夕方から十条駅前盆踊りへ。\n\n生の盆太鼓はテンションが上がりますね〜！\n他ではあまり聞かない珍しい曲目をたくさんやるんだな〜と思ったのですが、3日目ともなるとみなさん踊り慣れているのかどの曲も大盛り上がり‼️\n\n帰りに十条銀座の「てこや」でたこ焼き、「あい菜家」で鴨わさと焼き鳥、「酒の大林」で帰山Extra Edition（長野）を買っておうちでもお祭り気分を味わいました。",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
