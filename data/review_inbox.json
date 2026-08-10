@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-10T08:17:04.379031+00:00",
+  "generated_at": "2026-08-10T09:32:54.750159+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -219,6 +219,53 @@
           "url": "https://www.youtube.com/watch?v=lnNRMFZtwDw"
         },
         "video_id": "lnNRMFZtwDw"
+      }
+    },
+    {
+      "inbox_id": "inbox_feab4c9534341bbc",
+      "kind": "youtube_evidence",
+      "domain": "YouTube",
+      "priority_label": "P2",
+      "priority_score": null,
+      "title": "牛深ハイヤ節　笹塚サマーフェスティバル盆踊り10　2026年7月24日",
+      "event_name": "牛深ハイヤ節 笹塚サマーフェスティバル盆踊り10",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "youtube_evidence",
+      "source_key": "video:OWwnMJfgjLc|year:2026",
+      "source_url": "https://www.youtube.com/watch?v=OWwnMJfgjLc",
+      "recommended_action": "add_song_evidence",
+      "status": "pending",
+      "time_scope": "historical",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5985fc3c073ed871fbeec9b8a0cb00476fbda7e225fe03dbc8f0c52cf925e123",
+      "last_seen_at": "github-31372904419-1",
+      "created_at": "2026-08-10T09:32:12.853060+00:00",
+      "updated_at": "2026-08-10T09:32:12.853060+00:00",
+      "payload": {
+        "action": "review_video_evidence",
+        "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+        "channel_title": "和太鼓お祭りCH",
+        "description_excerpt": "2026年7月24日に開催された\n「笹塚サマーフェスティバル」盆踊りの様子をお届けします！\n\n都会の真ん中に響き渡る和太鼓の勇壮な音色と、\n笹塚の街が一体となって盛り上がる熱気あふれる一夜。 \n地元の皆さんの笑顔と、\n伝統的な盆踊りが織りなす夏の風景をぜひお楽しみください。\n\n和太鼓の響きが、心躍るお祭りの雰囲気を感じさせてくれます。\n\n\n笹塚サマーフェスティバル盆踊り\n１東京音頭　https://youtu.be/B1D_UzuJrE0\n２アンパンマンのマーチ　https:",
+        "detected_event_date": "2026-07-24",
+        "has_bon_context": true,
+        "matched_public_event": null,
+        "official_urls": [],
+        "out_of_scope": false,
+        "parent_event_component": null,
+        "priority": "normal",
+        "published_at": "2026-08-10T08:30:15+00:00",
+        "setlist_occurrences": [],
+        "source_url": "https://www.youtube.com/watch?v=OWwnMJfgjLc",
+        "title": "牛深ハイヤ節　笹塚サマーフェスティバル盆踊り10　2026年7月24日",
+        "title_event_name_candidate": "牛深ハイヤ節 笹塚サマーフェスティバル盆踊り10",
+        "title_song_candidates": [],
+        "video_id": "OWwnMJfgjLc",
+        "video_url": "https://www.youtube.com/watch?v=OWwnMJfgjLc"
       }
     },
     {
