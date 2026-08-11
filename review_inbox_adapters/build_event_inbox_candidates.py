@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sqlite3
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -122,6 +123,7 @@ def run(args):
         copy_db(db, target)
     issues, changes = [], []
     with connect_existing(target) as conn:
+        conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA foreign_keys = ON"); ensure_inbox_schema(conn)
         if not args.apply and not args.no_auto_migrate:
             migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); applied = ["local_judgment_contract_v1", "event_inbox_candidate_v1"]
@@ -142,7 +144,9 @@ def run(args):
                 if action == "rename_series_and_register_new": variants = [(action, "event_update", ":rename"), (action, "event_create", ":create")]
                 for act,lane,suffix in variants:
                     proposal = _proposal(base, entry, act, suffix)
-                    if suffix == ":create": proposal["depends_on_family_key"] = None
+                    if suffix == ":create":
+                        source_id = ("official_notice:" if base["report_type"] == "official_notice" else "firsthand:") + base["report_id"]
+                        proposal["depends_on_family_key"] = f"{source_id}#{_entry_key(entry, proposal)}:rename"
                     try: key = _entry_key(entry, proposal) + suffix
                     except Exception: _issue(issues,"high","invalid_entry",report=str(path)); continue
                     family_key = (("official_notice:" if base["report_type"] == "official_notice" else "firsthand:") + base["report_id"] + "#" + key)
@@ -156,9 +160,16 @@ def run(args):
                 if datetime.now(timezone.utc) > expires.astimezone(timezone.utc): changes.append({"outcome":"expired","source_key":family_key}); continue
                 fam = _family(conn, family_key); _validate_family(fam)
                 revision = len(fam)
-                candidate = _candidate(conn, base, entry, proposal, lane, fam, revision, datetime.now(timezone.utc))
+                dependency = proposal.get("depends_on_family_key")
+                depends_on = _family(conn, dependency)[-1]["inbox_id"] if dependency and _family(conn, dependency) else None
+                candidate = _candidate(conn, base, entry, proposal, lane, fam, revision, datetime.now(timezone.utc), depends=depends_on)
                 latest = fam[-1] if fam else None
                 if latest and latest["source_payload_hash"] == candidate["source_payload_hash"]:
+                    if dependency and latest["depends_on_inbox_id"] != depends_on:
+                        if _has_decision(conn, latest["inbox_id"]):
+                            _issue(issues, "medium", "dependency_superseded_after_decision", inbox_id=latest["inbox_id"])
+                        else:
+                            conn.execute("UPDATE review_inbox_items SET depends_on_inbox_id = ? WHERE inbox_id = ?", (depends_on, latest["inbox_id"]))
                     update_candidate(conn, {**candidate, "inbox_id": latest["inbox_id"]}, last_seen_only=True); changes.append({"outcome":"noop","inbox_id":latest["inbox_id"]}); continue
                 if latest and not _has_decision(conn, latest["inbox_id"]):
                     candidate.update({"inbox_id":latest["inbox_id"], "source_key":latest["source_key"], "revision":latest["revision"]}); update_candidate(conn,candidate); changes.append({"outcome":"updated","inbox_id":latest["inbox_id"]}); continue

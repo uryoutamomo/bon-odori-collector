@@ -39,3 +39,17 @@ class EventInboxE0Test(unittest.TestCase):
             report=root/"notice.json"; report.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text"},"events":[]}),encoding="utf-8")
             args=type("Args",(),{"report":[report],"report_dir":[],"db":db,"out_db":root/"dry.sqlite","out_json":root/"report.json","out_md":root/"report.md","max_candidates":200,"apply":False,"confirm":"","no_auto_migrate":True})()
             self.assertTrue(any(x["issue_type"]=="canonical_decision_ledger_missing" for x in run(args)["issues"]))
+
+    def test_decided_revision_is_idempotent_on_third_run(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=root/"master.sqlite"; conn=init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); conn.commit(); conn.close()
+            report=root/"notice.json"
+            def invoke(name):
+                report.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text"},"events":[{"action":"register_new","event_name_hint":name,"event_year":2099,"date_start":"2099-08-01","venue":{"name":"試験公園"}}]},ensure_ascii=False),encoding="utf-8")
+                return run(type("Args",(),{"report":[report],"report_dir":[],"db":db,"out_db":db,"out_json":root/"report.json","out_md":root/"report.md","max_candidates":200,"apply":True,"confirm":"APPLY EVENT INBOX CANDIDATES","no_auto_migrate":False})())
+            invoke("試験盆踊り")
+            conn=sqlite3.connect(db); old=conn.execute("SELECT inbox_id FROM review_inbox_items").fetchone()[0]
+            conn.execute("INSERT INTO canonical_decision_ledger(decision_id,schema_version,packet_id,packet_sha256,inbox_id,domain,lane,source_id,source_key,source_payload_hash,action,queue_state_before,queue_state_after,payload_json,actor_type,actor_id,decision_channel,decided_at,created_at) VALUES ('d',1,'p','x',?,'event','event_create','s','k','h','accept','eligible','closed','{}','agent','a','llm','2026-01-01T00:00:00+00:00','2026-01-01T00:00:00+00:00')",(old,)); conn.commit(); conn.close()
+            invoke("改名試験盆踊り"); third=invoke("改名試験盆踊り")
+            conn=sqlite3.connect(db); self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_inbox_items").fetchone()[0],2)
+            self.assertEqual(third["summary"]["noop"],1)
