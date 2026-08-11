@@ -17,11 +17,13 @@ class EventInboxE0Test(unittest.TestCase):
         for name in ("ensure_venue", "ensure_series_and_occurrence", "confirm_occurrence_schedule_venue", "upsert_occurrence_song", "link_occurrence_evidence"):
             self.assertNotIn(name, source)
 
-    def test_main_parses_real_argv(self):
-        with patch("sys.argv", ["build_event_inbox_candidates.py", "--help"]):
-            with self.assertRaises(SystemExit) as raised:
-                cli_main()
-        self.assertEqual(raised.exception.code, 0)
+    def test_main_parses_real_argv_and_runs(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=root/"master.sqlite"; init_db(db).close()
+            report=root/"notice.json"; report.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text"},"events":[{"action":"register_new","event_name_hint":"試験盆踊り","event_year":2099,"date_start":"2099-08-01","venue":{"name":"試験公園"}}]},ensure_ascii=False),encoding="utf-8")
+            argv=["build_event_inbox_candidates.py","--report",str(report),"--db",str(db),"--out-db",str(root/"dry.sqlite"),"--out-json",str(root/"report.json"),"--out-md",str(root/"report.md")]
+            with patch("sys.argv", argv): self.assertEqual(cli_main(),0)
+            self.assertEqual(json.loads((root/"report.json").read_text())["summary"]["created"],1)
 
     def test_apply_requires_confirmation(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -40,7 +42,7 @@ class EventInboxE0Test(unittest.TestCase):
 
     def test_dry_run_creates_candidate_and_keeps_source_db_unmodified(self):
         with tempfile.TemporaryDirectory() as temp:
-            root = Path(temp); db=root/"master.sqlite"; init_db(db).close()
+            root = Path(temp); db=root/"master.sqlite"; source=init_db(db); migrate_local_judgment_contract(source); migrate_event_inbox_candidate(source); source.commit(); source.close()
             report=root/"notice.json"; report.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text","source_url":"https://example.test"},"events":[{"action":"register_new","event_name_hint":"試験盆踊り","event_year":2099,"date_start":"2099-08-01","venue":{"name":"試験公園"}}]},ensure_ascii=False),encoding="utf-8")
             args=type("Args",(),{"report":[report],"report_dir":[],"db":db,"out_db":root/"dry.sqlite","out_json":root/"report.json","out_md":root/"report.md","max_candidates":200,"apply":False,"confirm":"","no_auto_migrate":False,"include_expired":False})()
             result=run(args)
@@ -50,7 +52,9 @@ class EventInboxE0Test(unittest.TestCase):
             self.assertEqual(original.execute("SELECT COUNT(*) FROM review_inbox_items").fetchone()[0],0)
             row=dry.execute("SELECT domain, contract_domain, status, revision FROM review_inbox_items").fetchone()
             self.assertEqual(row,("イベント","event","candidate",0))
-            self.assertEqual(original.execute("SELECT COUNT(*) FROM event_occurrences").fetchone()[0], dry.execute("SELECT COUNT(*) FROM event_occurrences").fetchone()[0])
+            from review_inbox_adapters.build_event_inbox_candidates import CANONICAL_TABLES
+            for table in CANONICAL_TABLES:
+                self.assertEqual(original.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0], dry.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0], table)
 
     def test_no_auto_migrate_refuses_missing_ledger(self):
         with tempfile.TemporaryDirectory() as temp:
