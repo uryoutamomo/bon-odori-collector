@@ -7,6 +7,8 @@ from datetime import datetime, timezone
 
 MIGRATION_VERSION = 1
 MIGRATION_NAME = "local_judgment_contract_v1"
+EVENT_INBOX_MIGRATION_VERSION = 2
+EVENT_INBOX_MIGRATION_NAME = "event_inbox_candidate_v1"
 TABLES = {
     "canonical_decision_ledger", "review_queue_state_ledger",
     "review_hold_ledger", "local_judgment_schema_migrations",
@@ -84,6 +86,17 @@ CREATE INDEX IF NOT EXISTS idx_local_judgment_hold_open
 ON review_hold_ledger(inbox_id, status);
 """
 
+EVENT_INBOX_COLUMNS = {
+    "contract_domain": "TEXT",
+    "contract_lane": "TEXT",
+    "first_eligible_at": "TEXT",
+    "expires_at": "TEXT",
+    "superseded_by_inbox_id": "TEXT",
+    "depends_on_inbox_id": "TEXT",
+    "revision_family_key": "TEXT",
+    "revision": "INTEGER",
+}
+
 
 def migrate_local_judgment_contract(conn):
     """Create J0 tables only; never alter review_inbox_items or domain rows."""
@@ -103,3 +116,24 @@ def migrate_local_judgment_contract(conn):
         "tables_added": sorted(TABLES - before),
         "tables_present": sorted(TABLES & after),
     }
+
+
+def migrate_event_inbox_candidate(conn):
+    """Add E0 columns without changing any pre-existing inbox values."""
+    columns = {row[1] for row in conn.execute("PRAGMA table_info(review_inbox_items)")}
+    if not columns:
+        raise ValueError("review_inbox_items is required before event inbox migration")
+    added = []
+    for name, declaration in EVENT_INBOX_COLUMNS.items():
+        if name not in columns:
+            conn.execute(f"ALTER TABLE review_inbox_items ADD COLUMN {name} {declaration}")
+            added.append(name)
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_review_inbox_contract_lane "
+        "ON review_inbox_items(contract_domain, contract_lane, status, expires_at)"
+    )
+    conn.execute(
+        "INSERT OR IGNORE INTO local_judgment_schema_migrations(version, name, applied_at) VALUES (?, ?, ?)",
+        (EVENT_INBOX_MIGRATION_VERSION, EVENT_INBOX_MIGRATION_NAME, datetime.now(timezone.utc).isoformat()),
+    )
+    return {"migration_version": EVENT_INBOX_MIGRATION_VERSION, "migration_name": EVENT_INBOX_MIGRATION_NAME, "columns_added": added}
