@@ -167,7 +167,7 @@ def run(args):
                     if family_key in seen: _issue(issues,"high","entry_key_collision",family_key=family_key); continue
                     seen.add(family_key); jobs.append((base,entry,proposal,lane,family_key))
         now = datetime.now(timezone.utc)
-        new_needed = sum(not _family(conn, fam) and (getattr(args, "include_expired", False) or now <= _expires(proposal, now).astimezone(timezone.utc)) for _,_,proposal,_,fam in jobs)
+        new_needed = sum(not _family(conn, fam) and (args.include_expired or now <= _expires(proposal, now).astimezone(timezone.utc)) for _,_,proposal,_,fam in jobs)
         if new_needed > args.max_candidates: _issue(issues,"high","max_candidates_exceeded",needed=new_needed)
         if not any(i["severity"] == "high" for i in issues):
             for base,entry,proposal,lane,family_key in jobs:
@@ -175,8 +175,9 @@ def run(args):
                     _issue(issues, "medium", "occurrence_id_not_found", occurrence_id=proposal["explicit_occurrence_id"], source_key=family_key)
                     continue
                 expires = _expires(proposal, datetime.now(timezone.utc))
-                if datetime.now(timezone.utc) > expires.astimezone(timezone.utc) and not getattr(args, "include_expired", False):
-                    changes.append({"outcome":"expired", "source_key":family_key, "event_name":proposal.get("event_name_hint"), "date_start":proposal.get("date_start")}); continue
+                if datetime.now(timezone.utc) > expires.astimezone(timezone.utc) and not args.include_expired:
+                    resolved = conn.execute("SELECT display_name, date_start FROM event_occurrences WHERE occurrence_id=?", (proposal.get("explicit_occurrence_id"),)).fetchone() if proposal.get("explicit_occurrence_id") else None
+                    changes.append({"outcome":"expired", "source_key":family_key, "event_name":proposal.get("event_name_hint") or (resolved["display_name"] if resolved else None), "date_start":proposal.get("date_start") or (resolved["date_start"] if resolved else None)}); continue
                 fam = _family(conn, family_key); _validate_family(fam)
                 revision = len(fam)
                 dependency = proposal.get("depends_on_family_key")
