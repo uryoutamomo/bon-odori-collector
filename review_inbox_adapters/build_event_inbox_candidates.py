@@ -171,7 +171,8 @@ def run(args):
         if not any(i["severity"] == "high" for i in issues):
             for base,entry,proposal,lane,family_key in jobs:
                 expires = _expires(proposal, datetime.now(timezone.utc))
-                if datetime.now(timezone.utc) > expires.astimezone(timezone.utc): changes.append({"outcome":"expired","source_key":family_key}); continue
+                if datetime.now(timezone.utc) > expires.astimezone(timezone.utc) and not getattr(args, "include_expired", False):
+                    changes.append({"outcome":"expired", "source_key":family_key, "event_name":proposal.get("event_name_hint"), "date_start":proposal.get("date_start")}); continue
                 fam = _family(conn, family_key); _validate_family(fam)
                 revision = len(fam)
                 dependency = proposal.get("depends_on_family_key")
@@ -202,7 +203,7 @@ def run(args):
 
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument("--report",type=Path,action="append"); p.add_argument("--report-dir",type=Path,action="append"); p.add_argument("--db",type=Path,default=MASTER_DB); p.add_argument("--out-db",type=Path,default=OUT_DB); p.add_argument("--out-json",type=Path,default=OUT_JSON); p.add_argument("--out-md",type=Path,default=OUT_MD); p.add_argument("--max-candidates",type=int,default=200); p.add_argument("--apply",action="store_true"); p.add_argument("--confirm",default=""); p.add_argument("--no-auto-migrate",action="store_true")
+    p=argparse.ArgumentParser(); p.add_argument("--report",type=Path,action="append"); p.add_argument("--report-dir",type=Path,action="append"); p.add_argument("--db",type=Path,default=MASTER_DB); p.add_argument("--out-db",type=Path,default=OUT_DB); p.add_argument("--out-json",type=Path,default=OUT_JSON); p.add_argument("--out-md",type=Path,default=OUT_MD); p.add_argument("--max-candidates",type=int,default=200); p.add_argument("--apply",action="store_true"); p.add_argument("--confirm",default=""); p.add_argument("--no-auto-migrate",action="store_true"); p.add_argument("--include-expired",action="store_true")
     args=p.parse_args()
     try: result=run(args)
     except ValueError as e: p.error(str(e))
