@@ -1402,7 +1402,17 @@ def _build_x_account_scores(voices, cfg=None):
     recent_cutoff = datetime.now(timezone.utc) - timedelta(days=recent_days)
     accounts = {}
     text_metrics = {}
-    experience_keywords = [str(term).lower() for term in cfg.get("experience_keywords", []) if term]
+    # `experience_keywords` remains the established quality signal used by
+    # _x_post_value_score.  This narrower list is only for estimating whether
+    # a writer is describing first-hand experience rather than publishing a
+    # program or song list.
+    experience_style_keywords = cfg.get("experience_style_keywords")
+    if experience_style_keywords is None:
+        non_experience_terms = {"曲目表", "曲順", "プログラム", "演目", "曲目発表"}
+        experience_style_keywords = [
+            term for term in cfg.get("experience_keywords", []) if term not in non_experience_terms
+        ]
+    experience_style_keywords = [str(term).lower() for term in experience_style_keywords if term]
     for v in voices:
         if v.get("source") not in ("x", "x_whitelist"):
             continue
@@ -1446,7 +1456,9 @@ def _build_x_account_scores(voices, cfg=None):
                 sum(1 for line in lines if _X_LIST_DATE_RE.match(line.strip())) >= 3 or len(lines) >= 8
             )
             metrics["opinion_count"] += int(bool(_X_OPINION_RE.search(text)))
-            metrics["experience_count"] += int(any(keyword in text.lower() for keyword in experience_keywords))
+            metrics["experience_count"] += int(
+                any(keyword in text.lower() for keyword in experience_style_keywords)
+            )
             metrics["detail_count"] += int(bool(_X_DETAIL_RE.search(text)))
             metrics["media_count"] += int(bool(v.get("media_urls")))
         row["posts_seen"] += 1

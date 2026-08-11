@@ -40,6 +40,16 @@ class XBonodorerReevaluationTest(unittest.TestCase):
         self.assertFalse(scores["accounts"]["person"]["is_area_bot"])
         self.assertGreater(scores["accounts"]["person"]["experience_ratio"], 0.15)
 
+    def test_song_list_terms_remain_legacy_quality_signals_but_not_experience_style(self):
+        scores = collect._build_x_account_scores(
+            [voice("program", "盆踊りの曲目表を公開しました", day) for day in range(1, 4)],
+            {"experience_keywords": ["曲目表"]},
+        )
+
+        row = scores["accounts"]["program"]
+        self.assertEqual(row["top_reasons"]["experience"], 3)
+        self.assertEqual(row["experience_count"], 0)
+
     def test_gap_credits_are_written_and_do_not_change_whitelist_selection(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             credits = Path(tmpdir) / "credits.json"
