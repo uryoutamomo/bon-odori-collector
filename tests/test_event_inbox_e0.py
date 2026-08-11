@@ -78,3 +78,44 @@ class EventInboxE0Test(unittest.TestCase):
             self.assertEqual(conn.execute("SELECT COUNT(DISTINCT revision_family_key), MAX(revision) FROM review_inbox_items").fetchone(),(1,1))
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_inbox_items WHERE superseded_by_inbox_id IS NOT NULL").fetchone()[0],1)
             self.assertEqual(third["summary"]["noop"],1)
+
+    @staticmethod
+    def _seed_occurrence(conn, *, occurrence_id="occ_probe", display_name="試験盆踊り", year=2099, date_start="2099-08-01"):
+        """会場・系列・開催回を1件だけ置く最小 fixture。E0 の候補検索が当たる状態を作る。"""
+        stamp = "2026-01-01T00:00:00+00:00"
+        conn.execute("INSERT INTO venues (venue_id, origin, canonical_name, normalized_name, area, address, review_status, created_at, updated_at) VALUES ('ven_probe','curated','試験公園','試験公園','千代田区','',?,?,?)", ("active", stamp, stamp))
+        conn.execute("INSERT INTO event_series (series_id, origin, series_key, canonical_name, normalized_name, usual_venue_id, status, created_at, updated_at) VALUES ('ser_probe','curated',?,?,?, 'ven_probe','active',?,?)", (display_name, display_name, display_name, stamp, stamp))
+        conn.execute("INSERT INTO event_occurrences (occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_start, date_status, lifecycle_status, created_at, updated_at) VALUES (?, 'curated','ser_probe',?,1,?, 'ven_probe',?, 'confirmed','published',?,?)", (occurrence_id, year, display_name, date_start, stamp, stamp))
+        conn.commit()
+
+    def test_strong_fuzzy_match_is_not_promoted_to_explicit_id(self):
+        """既存と完全同名でも、レポートがIDを書いていない限り対象は確定しない（仕様 §6 / §11-1）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=root/"master.sqlite"
+            conn=init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); self._seed_occurrence(conn); conn.close()
+            report=root/"notice.json"; report.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text"},"events":[{"action":"register_new","event_name_hint":"試験盆踊り","event_year":2099,"date_start":"2099-08-01","venue":{"name":"試験公園"}}]},ensure_ascii=False),encoding="utf-8")
+            args=type("Args",(),{"report":[report],"report_dir":[],"db":db,"out_db":root/"dry.sqlite","out_json":root/"report.json","out_md":root/"report.md","max_candidates":200,"apply":False,"confirm":"","no_auto_migrate":False,"include_expired":False})()
+            self.assertEqual(run(args)["summary"]["created"],1)
+            dry=sqlite3.connect(root/"dry.sqlite")
+            payload=json.loads(dry.execute("SELECT payload_json FROM review_inbox_items WHERE kind='event_candidate'").fetchone()[0])
+            best=max(row["match_score"] for row in payload["targets"]["occurrence_candidates"])
+            self.assertGreaterEqual(best,0.92,"完全同名の候補が検索に出ていないと、この検査は無意味になる")
+            self.assertIsNone(payload["proposal"]["explicit_occurrence_id"],"閾値超えの候補があってもIDを確定してはいけない")
+            self.assertIsNone(payload["resolved_target"],"名寄せ結果を resolved_target に書いてはいけない")
+
+    def test_display_name_change_does_not_create_revision(self):
+        """DB側の表示名が変わっても、レポートが同じなら hash も revision も動かない（仕様 §3.4 / §11-39）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=root/"master.sqlite"
+            conn=init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); self._seed_occurrence(conn); conn.close()
+            report=root/"notice.json"; report.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text"},"events":[{"action":"confirm_existing","occurrence_id":"occ_probe","detail_addendum":"掲示物で確認"}]},ensure_ascii=False),encoding="utf-8")
+            def invoke():
+                return run(type("Args",(),{"report":[report],"report_dir":[],"db":db,"out_db":db,"out_json":root/"report.json","out_md":root/"report.md","max_candidates":200,"apply":True,"confirm":"APPLY EVENT INBOX CANDIDATES","no_auto_migrate":False,"include_expired":False})())
+            self.assertEqual(invoke()["summary"]["created"],1)
+            conn=sqlite3.connect(db)
+            before=conn.execute("SELECT source_payload_hash, revision FROM review_inbox_items WHERE kind='event_candidate'").fetchone()
+            conn.execute("UPDATE event_occurrences SET display_name = '書き換えた表示名' WHERE occurrence_id = 'occ_probe'"); conn.commit(); conn.close()
+            self.assertEqual(invoke()["summary"]["noop"],1,"レポートが同じなら再実行は no-op でなければならない")
+            conn=sqlite3.connect(db)
+            self.assertEqual(conn.execute("SELECT source_payload_hash, revision FROM review_inbox_items WHERE kind='event_candidate'").fetchone(),before)
+            self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_inbox_items WHERE kind='event_candidate'").fetchone()[0],1)
