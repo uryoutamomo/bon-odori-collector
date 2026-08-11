@@ -2,6 +2,7 @@ import json
 import sqlite3
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from event_model.local_judgment_migration import migrate_event_inbox_candidate, migrate_local_judgment_contract
@@ -11,6 +12,23 @@ from review_inbox_adapters.event_inbox_writer import insert_candidate
 
 
 class EventInboxE0Test(unittest.TestCase):
+    def test_structure_does_not_import_canonical_writers(self):
+        source = Path("review_inbox_adapters/build_event_inbox_candidates.py").read_text()
+        for name in ("ensure_venue", "ensure_series_and_occurrence", "confirm_occurrence_schedule_venue", "upsert_occurrence_song", "link_occurrence_evidence"):
+            self.assertNotIn(name, source)
+
+    def test_main_parses_real_argv(self):
+        with patch("sys.argv", ["build_event_inbox_candidates.py", "--help"]):
+            with self.assertRaises(SystemExit) as raised:
+                cli_main()
+        self.assertEqual(raised.exception.code, 0)
+
+    def test_apply_requires_confirmation(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=root/"master.sqlite"; init_db(db).close()
+            args=type("Args",(),{"report":[root/"missing.json"],"report_dir":[],"db":db,"out_db":root/"out.sqlite","out_json":root/"x.json","out_md":root/"x.md","max_candidates":200,"apply":True,"confirm":"","no_auto_migrate":False,"include_expired":False})()
+            with self.assertRaises(ValueError, msg="confirmation guard must run before report IO"):
+                run(args)
     def test_migration_is_additive_and_idempotent(self):
         conn = init_db(":memory:")
         migrate_local_judgment_contract(conn)
@@ -32,6 +50,7 @@ class EventInboxE0Test(unittest.TestCase):
             self.assertEqual(original.execute("SELECT COUNT(*) FROM review_inbox_items").fetchone()[0],0)
             row=dry.execute("SELECT domain, contract_domain, status, revision FROM review_inbox_items").fetchone()
             self.assertEqual(row,("イベント","event","candidate",0))
+            self.assertEqual(original.execute("SELECT COUNT(*) FROM event_occurrences").fetchone()[0], dry.execute("SELECT COUNT(*) FROM event_occurrences").fetchone()[0])
 
     def test_no_auto_migrate_refuses_missing_ledger(self):
         with tempfile.TemporaryDirectory() as temp:
