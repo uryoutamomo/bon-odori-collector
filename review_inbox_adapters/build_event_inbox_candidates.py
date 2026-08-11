@@ -66,7 +66,14 @@ def _proposal(base, entry, action, suffix=""):
 
 
 def _entry_key(entry, proposal):
-    return entry.get("entry_id") or stable_id("entry", normalize_text(proposal["event_name_hint"]), str(proposal["event_year"]), length=12)
+    if entry.get("entry_id"): return entry["entry_id"]
+    if entry.get("occurrence_id"): return stable_id("entry", entry["occurrence_id"], length=12)
+    if proposal.get("event_name_hint") and proposal.get("event_year"):
+        return stable_id("entry", normalize_text(proposal["event_name_hint"]), str(proposal["event_year"]), length=12)
+    hint = entry.get("match_hint") or {}
+    if hint.get("event_name_hint") and hint.get("event_year"):
+        return stable_id("entry", normalize_text(hint["event_name_hint"]), str(hint["event_year"]), hint.get("venue_name_hint") or "", length=12)
+    raise ValueError("entry identity requires entry_id, occurrence_id, name/year, or complete match_hint")
 
 
 def _expires(proposal, now):
@@ -107,9 +114,16 @@ def _candidate(conn, base, entry, proposal, lane, family, revision, now, depends
     payload_hash = sha256_hex(proposal)
     raw = (base["source"].get("raw_text") or base["source"].get("raw_note") or "")[:1000]
     report = {"report_type": "official_notice" if base["report_type"] == "official_notice" else "firsthand_new_event", "report_id": base["report_id"], "report_path": base["path"], "reported_at": None, "notice_kind": base["source"].get("notice_kind"), "source_title": base["source"].get("title"), "source_url": base["source"].get("source_url") or base["source"].get("url")}
-    payload = {"candidate_version": 1, "report": report, "proposal": proposal, "targets": _targets(conn, proposal, lane, now), "evidence_ids": [stable_id("evidence", source_id)], "raw_excerpt": raw}
+    resolved_target = None
+    display = {"event_name_hint": proposal.get("event_name_hint"), "event_year": proposal.get("event_year"), "date_start": proposal.get("date_start"), "venue": proposal.get("venue")}
+    if proposal.get("explicit_occurrence_id"):
+        row = conn.execute("SELECT o.occurrence_id, o.display_name, o.event_year, o.date_start, v.canonical_name AS venue_name FROM event_occurrences o LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.occurrence_id=?", (proposal["explicit_occurrence_id"],)).fetchone()
+        if row:
+            resolved_target = dict(row)
+            display.update({"event_name_hint": display["event_name_hint"] or row["display_name"], "event_year": display["event_year"] or row["event_year"], "date_start": display["date_start"] or row["date_start"], "venue": display["venue"] or {"name": row["venue_name"]}})
+    payload = {"candidate_version": 1, "report": report, "proposal": proposal, "resolved_target": resolved_target, "targets": _targets(conn, proposal, lane, now), "evidence_ids": [stable_id("evidence", source_id)], "raw_excerpt": raw}
     expires = _expires(proposal, now)
-    return {"inbox_id": stable_id("inbox", "event_candidate", source_id, source_key), "kind": "event_candidate", "domain": "イベント", "contract_domain": "event", "contract_lane": lane, "time_scope": "future" if proposal.get("date_start") and datetime.fromisoformat(proposal["date_start"]).date() >= now.date() else ("historical" if proposal.get("date_start") else "reference"), "priority_label": None, "priority_score": None, "title": f"{proposal['event_name_hint']}（{(proposal.get('venue') or {}).get('name')}／{proposal.get('date_start')}）", "event_name": proposal["event_name_hint"], "venue": (proposal.get("venue") or {}).get("name"), "event_year": proposal["event_year"], "source_id": source_id, "source_key": source_key, "source_url": report["source_url"], "recommended_action": None, "status": "candidate", "source_payload_hash": payload_hash, "last_seen_at": now.isoformat(), "payload_json": payload, "created_at": now.isoformat(), "updated_at": now.isoformat(), "first_eligible_at": now.isoformat(), "expires_at": expires.isoformat(), "superseded_by_inbox_id": None, "depends_on_inbox_id": depends, "revision_family_key": family_key, "revision": revision}
+    return {"inbox_id": stable_id("inbox", "event_candidate", source_id, source_key), "kind": "event_candidate", "domain": "イベント", "contract_domain": "event", "contract_lane": lane, "time_scope": "future" if display.get("date_start") and datetime.fromisoformat(display["date_start"]).date() >= now.date() else ("historical" if display.get("date_start") else "reference"), "priority_label": None, "priority_score": None, "title": f"{display['event_name_hint']}（{(display.get('venue') or {}).get('name')}／{display.get('date_start')}）", "event_name": display["event_name_hint"], "venue": (display.get("venue") or {}).get("name"), "event_year": display["event_year"], "source_id": source_id, "source_key": source_key, "source_url": report["source_url"], "recommended_action": None, "status": "candidate", "source_payload_hash": payload_hash, "last_seen_at": now.isoformat(), "payload_json": payload, "created_at": now.isoformat(), "updated_at": now.isoformat(), "first_eligible_at": now.isoformat(), "expires_at": expires.isoformat(), "superseded_by_inbox_id": None, "depends_on_inbox_id": depends, "revision_family_key": family_key, "revision": revision}
 
 
 def run(args):
