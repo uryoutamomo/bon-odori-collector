@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1487,
+  "count": 1492,
   "public_event_count": 642,
-  "review_count": 845,
+  "review_count": 850,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -6829,59 +6829,6 @@
       "evidence_count": 1
     },
     {
-      "id": "9ecff9489abb6d9b",
-      "song_name": "炭坑節",
-      "event_name": "渋谷盆踊り",
-      "venue": "渋谷109前",
-      "area": "渋谷区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "known_song_context",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/tamachan_ota/status/2086290677588255051",
-          "date": "2026-08-09T03:17:13+00:00",
-          "text": "玉川英俊｜東京都｜大田区｜防災士\n「渋谷盆踊り」に６万７千人　１０９前を交通規制して多国籍な「東京音頭」や「炭坑節」 https://t.co/IiFzYs60sN\n#盆踊り\n#渋谷"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=giMeVQxY56g",
-          "date": "2026-08-09T05:00:51+00:00",
-          "text": "Urban Walk\n【渋谷盆踊り2026】7万人が来場!! 渋谷109前で1日限りの盆踊り!!  /  Shibuya Bon Dance Festival\n#渋谷盆踊り #渋谷 #ダンシングヒーロー #盆踊り #荻野目洋子\n\n00:00　渋谷盆踊り\n01:12　炭坑節\n04:45　エガちゃん\n11:40　渋谷百年総踊り\n15:30　ダンシングヒーロー\n19:34　東京音頭\n23:14　河内おとこ節\n27:43　夢みる渋谷\n33:13　東京音頭\n\n\n【渋谷盆踊り 2026】\n開催日程：2026年8月8日(土)\n開催場所：渋谷109前 \nhttps://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://x.com/yumTK/status/2086339544010629314",
-          "date": "2026-08-09T06:31:24+00:00",
-          "text": "やむ(Yum) a.k.a. TK Yummy\n「渋谷盆踊り」に６万７千人　１０９前を交通規制して多国籍な「東京音頭」や「炭坑節」 https://t.co/0rjx8bDSIq\n所用で行けなかったけど、そもそもこんなお知らせ来てたかなー？！😭"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://x.com/kamome_www/status/2086341197308862738",
-          "date": "2026-08-09T06:37:58+00:00",
-          "text": "kamome\n「渋谷盆踊り」に６万７千人　１０９前を交通規制して多国籍な「東京音頭」や「炭坑節」 https://t.co/hgwBNXsReW @YouTubeより"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://x.com/yoshinew25/status/2084821251546292556",
-          "date": "2026-08-05T01:58:15+00:00",
-          "text": "旅飯 agogo！\n渋谷・道玄坂もホコ天に！「第7回 渋谷盆踊り」今年も開催！ 8月8日（土）\n\n109渋谷店前に櫓が設置され、文化村通りや道玄坂は歩行者天国に！櫓を囲んで「渋谷音頭」や「オリンピック渋谷音頭」、「炭坑節」などに合わせて盆踊りを楽しめるほか、渋谷ゆかりのゲストも登場！\nhttps://t.co/imVncXuWPj https://t.co/kYoMFfExp5"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=w8vDoRHU_74",
-          "date": "2025-11-01T10:01:38Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 晴盆 盆踊り フィリピン エキスポ 蒲田  / Dancing Bon Odori at the Philippine EXPO in Kamata.\n東京の蒲田駅前で「Philippine EXPO in 蒲田 日比友好 歌と踊りの祭典」が開催されました。\n日本とフィリピンの市民レベルの交流を深める国際交流イベントで、歌とダンス、飲食・物販・企業出展などを通じて“日比友好”を体感できる4日間となっています。\n土曜日のこの日は、品川区を中心に活動されている晴盆さんの盆踊りがあり、国籍問わず皆さん踊りで盛り上がっておりました！！\n11月3日（月祝）まで開催中です！\n\nThe Philippine EXPO in Kamata was held in front of Kamata Station in Tokyo. This international exchange eve"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 6
-    },
-    {
       "id": "383aa8db5038eb9a",
       "song_name": "アンパンマン音頭",
       "event_name": "ハマサイトの夏祭り",
@@ -8475,6 +8422,28 @@
       "evidence_count": 3
     },
     {
+      "id": "bf4ff3907db18032",
+      "song_name": "おしりたんてい音頭",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+          "date": "2026-08-10T12:00:17+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　青山表参道商店会謝恩納涼盆踊り14　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9US"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "528b8367c7a32450",
       "song_name": "おとぼけ音頭",
       "event_name": "納涼盆踊り大会",
@@ -8683,6 +8652,28 @@
           "url": "https://x.com/Makoto_Tojo/status/2082674118621798554",
           "date": "2026-07-30T03:46:18+00:00",
           "text": "東條　誠　からだ＆開運・右脳派鍼灸\n第79回 #築地本願寺 #納涼盆踊り大会 初日 ②\n\n初日から盛り上がっております\n\n卵焼きの #松露 さんや鰹節の #和田久 さんを始め\n今年の #屋台 はこんな感じです♪\n\nhttps://t.co/qzVTrXtBhQ\n#盆踊り #築地 #美味しい #グルメ #築地場外市場 https://t.co/W2TvGz0aI8"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "2aec9ee4e74f1aa1",
+      "song_name": "しゃこしゃこ踊り",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/choro912/status/2087024292890656784",
+          "date": "2026-08-11T03:52:21+00:00",
+          "text": "旅マリオ\n夏のフェスティバル納涼盆踊り大会盛り上がってますよ！\n\n駐車場いっぱし、暑いし、呼び出した人は帰ったのでまた夕方の仮装盆踊りにマリオで出動します🤣\n\nしゃこしゃこ踊り出来んけどww https://t.co/lxLCglmPaH"
         }
       ],
       "already_public": false,
@@ -9985,6 +9976,28 @@
       "evidence_count": 1
     },
     {
+      "id": "018979d30c794ef0",
+      "song_name": "手拍子音頭が踊り",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Atutakamama7034/status/2086806389310325102",
+          "date": "2026-08-10T13:26:28+00:00",
+          "text": "B.D　NAO\n世田谷区、給田納涼盆踊り大会。毎年、手拍子音頭が踊りたくて、来ています。狭い境内に千人ほどの人が集まっています。途中で全員にアイスが配られ、クールダウン。有難や！一緒に配られる抽選券。なんと、今年は5等の花火🎆が当たりました。 #盆踊り #給田 #給田観音堂  #給田納涼盆踊り大会 https://t.co/IvMm9BxsFu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "6a43c4bee43c0094",
       "song_name": "押せ押せ音頭",
       "event_name": "納涼盆踊り大会",
@@ -10227,7 +10240,7 @@
       "evidence_count": 1
     },
     {
-      "id": "20122be3ef1f7503",
+      "id": "3c5b881d9da8697b",
       "song_name": "東京音頭",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -10239,6 +10252,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+          "date": "2026-08-10T12:00:17+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　青山表参道商店会謝恩納涼盆踊り14　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9US"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=TOgVSKgsboE",
+          "date": "2026-08-10T11:30:03+00:00",
+          "text": "和太鼓お祭りCH\n【バハマ・ママ】　青山表参道商店会謝恩納涼盆踊り13　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9USl"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3wrAtvX9Ouo",
+          "date": "2026-08-10T11:00:08+00:00",
+          "text": "和太鼓お祭りCH\n好きになった人　青山表参道商店会謝恩納涼盆踊り12　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9USlU"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
@@ -10661,7 +10692,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 70
+      "evidence_count": 73
     },
     {
       "id": "ee754685fed0f9da",
@@ -11014,7 +11045,7 @@
       "evidence_count": 1
     },
     {
-      "id": "df399648909bc9f2",
+      "id": "5a6f9a6aa9732639",
       "song_name": "活気あふれる踊り",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -11025,6 +11056,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+          "date": "2026-08-10T12:00:17+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　青山表参道商店会謝恩納涼盆踊り14　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9US"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=TOgVSKgsboE",
+          "date": "2026-08-10T11:30:03+00:00",
+          "text": "和太鼓お祭りCH\n【バハマ・ママ】　青山表参道商店会謝恩納涼盆踊り13　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9USl"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3wrAtvX9Ouo",
+          "date": "2026-08-10T11:00:08+00:00",
+          "text": "和太鼓お祭りCH\n好きになった人　青山表参道商店会謝恩納涼盆踊り12　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9USlU"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
@@ -11093,7 +11142,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 11
+      "evidence_count": 14
     },
     {
       "id": "f65d069731d10865",
@@ -11118,7 +11167,7 @@
       "evidence_count": 1
     },
     {
-      "id": "73f9c34b6260115c",
+      "id": "9f8686cc917086aa",
       "song_name": "炭坑節",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -11130,6 +11179,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+          "date": "2026-08-10T12:00:17+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　青山表参道商店会謝恩納涼盆踊り14　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9US"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=TOgVSKgsboE",
+          "date": "2026-08-10T11:30:03+00:00",
+          "text": "和太鼓お祭りCH\n【バハマ・ママ】　青山表参道商店会謝恩納涼盆踊り13　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9USl"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3wrAtvX9Ouo",
+          "date": "2026-08-10T11:00:08+00:00",
+          "text": "和太鼓お祭りCH\n好きになった人　青山表参道商店会謝恩納涼盆踊り12　青山善光寺境内　2026年7月27日\n2026年7月27日に東京都港区の青山善光寺境内で行われた「\n青山表参道商店会 謝恩納涼盆踊り大会」の様子です。\n\n都会の真ん中、表参道からもほど近い善光寺の境内で、\n夜風を感じながら踊る特別な夏のひととき。 \n地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！\n\n【開催詳細】 \n■日時：2026年7月27日 \n■場所：青山善光寺 境内（東京都港区北青山） \n■主催：青山表参道商店会\n\n#盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル\n\n\n青山善光寺盆踊り\n１東京音頭　https://youtu.be/seZHSLMkIOU\n２炭坑節　https://youtu.be/4gssbW1M5uI\n３大東京音頭　https://youtu.be/OM4F9USlU"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
@@ -11456,7 +11523,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 54
+      "evidence_count": 57
     },
     {
       "id": "4c59ab31d6c8dea4",
@@ -14884,7 +14951,7 @@
       "evidence_count": 1
     },
     {
-      "id": "8fee90343d9b004c",
+      "id": "535cdbb89fc7e16b",
       "song_name": "そして皆様の踊り",
       "event_name": "鉄砲洲納涼盆踊り",
       "venue": "鉄砲洲公園",
@@ -14895,6 +14962,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=FiOUXzpVbSA",
+          "date": "2026-08-10T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n「チャンチキおけさ」　鉄砲洲納涼盆踊り17　2026年8月4日　鉄砲洲児童公園\n2026年8月4日に東京都中央区の鉄砲洲児童公園で開催された\n「鉄砲洲納涼盆踊り」の様子です。 \n\n会場の熱気と素晴らしい太鼓の響き、そして皆様の踊りをお楽しみください！\n\n\n鉄砲洲公園盆踊り\n１中央学園音頭　https://youtu.be/e6w7kNZpp80\n２令和音頭　https://youtu.be/imibNg8GQS0\n３恋日和　https://youtu.be/csDr1g9lFAM\n４ベイサイドブギ　https://youtu.be/RcxmIkYXmTc\n５きよしの数え唄　https://youtu.be/n46uVBrjiQ4\n６バハマ・ママ　https://youtu.be/kmsSyTCNfBw\n７これがお江戸の盆ダンス　https://youtu.be/2kXUeJnfT5k\n８ダンシング・ヒーロー　h"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=SeGwbBSlgPE",
+          "date": "2026-08-10T10:30:27+00:00",
+          "text": "和太鼓お祭りCH\nどだればちサンバ　鉄砲洲納涼盆踊り18　2026年8月4日　鉄砲洲児童公園\n2026年8月4日に東京都中央区の鉄砲洲児童公園で開催された\n「鉄砲洲納涼盆踊り」の様子です。 \n\n会場の熱気と素晴らしい太鼓の響き、そして皆様の踊りをお楽しみください！\n\n\n鉄砲洲公園盆踊り\n１中央学園音頭　https://youtu.be/e6w7kNZpp80\n２令和音頭　https://youtu.be/imibNg8GQS0\n３恋日和　https://youtu.be/csDr1g9lFAM\n４ベイサイドブギ　https://youtu.be/RcxmIkYXmTc\n５きよしの数え唄　https://youtu.be/n46uVBrjiQ4\n６バハマ・ママ　https://youtu.be/kmsSyTCNfBw\n７これがお江戸の盆ダンス　https://youtu.be/2kXUeJnfT5k\n８ダンシング・ヒーロー　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=zepNen44Z_I",
@@ -14993,7 +15072,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 16
+      "evidence_count": 18
     },
     {
       "id": "d40aa92f05586247",
@@ -15018,7 +15097,7 @@
       "evidence_count": 1
     },
     {
-      "id": "bc319df1dff4d4b3",
+      "id": "8167d80338166fc9",
       "song_name": "中央学園音頭",
       "event_name": "鉄砲洲納涼盆踊り",
       "venue": "鉄砲洲公園",
@@ -15029,6 +15108,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=FiOUXzpVbSA",
+          "date": "2026-08-10T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n「チャンチキおけさ」　鉄砲洲納涼盆踊り17　2026年8月4日　鉄砲洲児童公園\n2026年8月4日に東京都中央区の鉄砲洲児童公園で開催された\n「鉄砲洲納涼盆踊り」の様子です。 \n\n会場の熱気と素晴らしい太鼓の響き、そして皆様の踊りをお楽しみください！\n\n\n鉄砲洲公園盆踊り\n１中央学園音頭　https://youtu.be/e6w7kNZpp80\n２令和音頭　https://youtu.be/imibNg8GQS0\n３恋日和　https://youtu.be/csDr1g9lFAM\n４ベイサイドブギ　https://youtu.be/RcxmIkYXmTc\n５きよしの数え唄　https://youtu.be/n46uVBrjiQ4\n６バハマ・ママ　https://youtu.be/kmsSyTCNfBw\n７これがお江戸の盆ダンス　https://youtu.be/2kXUeJnfT5k\n８ダンシング・ヒーロー　h"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=SeGwbBSlgPE",
+          "date": "2026-08-10T10:30:27+00:00",
+          "text": "和太鼓お祭りCH\nどだればちサンバ　鉄砲洲納涼盆踊り18　2026年8月4日　鉄砲洲児童公園\n2026年8月4日に東京都中央区の鉄砲洲児童公園で開催された\n「鉄砲洲納涼盆踊り」の様子です。 \n\n会場の熱気と素晴らしい太鼓の響き、そして皆様の踊りをお楽しみください！\n\n\n鉄砲洲公園盆踊り\n１中央学園音頭　https://youtu.be/e6w7kNZpp80\n２令和音頭　https://youtu.be/imibNg8GQS0\n３恋日和　https://youtu.be/csDr1g9lFAM\n４ベイサイドブギ　https://youtu.be/RcxmIkYXmTc\n５きよしの数え唄　https://youtu.be/n46uVBrjiQ4\n６バハマ・ママ　https://youtu.be/kmsSyTCNfBw\n７これがお江戸の盆ダンス　https://youtu.be/2kXUeJnfT5k\n８ダンシング・ヒーロー　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=zepNen44Z_I",
@@ -15127,7 +15218,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 16
+      "evidence_count": 18
     },
     {
       "id": "c06d5fc338c7b5f4",
@@ -28444,6 +28535,50 @@
       "evidence_count": 1
     },
     {
+      "id": "26c4361a0eb0a754",
+      "song_name": "江戸川ふるさと音頭",
+      "event_name": "鹿骨二丁目町会盆踊り",
+      "venue": "鹿骨中学校",
+      "area": "江戸川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/gPVEQeAD9U10257/status/2086914968142987606",
+          "date": "2026-08-10T20:37:56+00:00",
+          "text": "卯ケン\n鹿骨二丁目町会盆踊り🏮\n　　✨続編✨\n⭐御当地ソングの\n江戸川ふるさと音頭や\n江戸川の定番恋の屋形船が良い☺️\n\n⭐今日はいじられて小岩の\n美濃屋マチコさんにもまた会えた💫\n#盆踊り\n#東京都江戸川区\n#鹿骨中学校\n#好踊会\n#美濃屋マチコ https://t.co/ANZGCewuz3"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ae26bf53942178e6",
+      "song_name": "元気に声を出して踊り",
+      "event_name": "扇橋三丁目町会 納涼盆踊り大会",
+      "venue": "つばめ幼稚園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kaz0045/status/2086832886439969229",
+          "date": "2026-08-10T15:11:46+00:00",
+          "text": "オレンジ（Mishima Kazuhiro）\n8/10（月）#扇橋三丁目町会 \n#つばめ幼稚園 #盆踊り\n 昨日に引き続きこちらへ💁\n来ないかと思ったよーとか言われつつ、元気に声を出して踊りました😆\nそして今日もオレンジエプロンの出店スタッフの皆さん、元気なお子様達と一緒に踊れて楽しかったです♪ https://t.co/DQa1BHoTfv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "843583c3769ef504",
       "song_name": "川南小学校音頭",
       "event_name": "扇橋三丁目町会 納涼盆踊り大会",
@@ -30014,7 +30149,7 @@
       "evidence_count": 2
     },
     {
-      "id": "3e6e4f4fd0f4f041",
+      "id": "33f9b4b1892916e2",
       "song_name": "ミニ音頭",
       "event_name": "渋谷盆踊り",
       "venue": "渋谷109前",
@@ -30027,13 +30162,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fZgzboRUq8Q",
+          "date": "2026-08-10T09:00:06+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 渋谷盆踊り 2026｜6万7千人来場！江頭2:50やLiSAも登場！ダンシングヒーロー｜東京音頭 他 / Japanese Bon dance in Shibuya, Tokyo.  🇯🇵\n渋谷109前で盛大に行われた「第7回 渋谷盆踊り2026 Shibuya Bon Odori」\n今年は6万7千人の参加者で賑わい、人気観光地の渋谷ということもあり海外からの観光客も大変多かったです！\n年齢や国籍関係なく誰もが踊りに夢中になりました！\n櫓とは別のステージでは、スペシャルゲストとしてエガちゃんが登場し盛り上げ、歌手のLiSAさんは映画「ミニオンズ&モンスターズ」のPRで、ミニ音頭を踊り会場を沸かせました！\n\nThe “7th Shibuya Bon Odori 2026” was held in grand style in front of Shibuya 109. This y"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/shorts/8YiDouLV-2Q",
           "date": "2026-08-09T08:29:44+00:00",
           "text": "Tokyo Lonely Walker\n渋谷盆踊りにLiSAが登場！ミニ音頭を軽やかに踊る！！ミニオンズ＆モンスターズ\nPlease Subscribe to my channe\nよろしければ登録お願いします \nhttps://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA \n\n東京の街やイベントの様子を記録しています\nDocumenting the city of Tokyo and its events"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "26740b4a8063de5b",
@@ -30080,7 +30221,7 @@
       "evidence_count": 1
     },
     {
-      "id": "2279f6b731945f2c",
+      "id": "9cf5add4ce2f936d",
       "song_name": "外国人観光客も踊り",
       "event_name": "渋谷盆踊り",
       "venue": "渋谷109前",
@@ -30093,19 +30234,13 @@
       "evidence": [
         {
           "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1RRGlGNVV1anFZNDdERTBIdlhaai1WM2dfYjM1czdEWnFUMENzeGZiRURTZ0RnTXJJcUZGNUlpSjNUczJzY2RRZTUwWUNhem9ROXlld0tncDhrWHRoLTc2dnA5SThjbndLZ01vUDBpYVpDS2FLQmhSN3k3azk0cXc?oc=5",
-          "date": "Sun, 09 Aug 2026 10:11:50 GMT",
-          "text": "「渋谷盆踊り」に6万7000人 109前に櫓、外国人観光客も踊りの輪に（みんなの経済新聞ネットワーク） - Yahoo!ニュース"
-        },
-        {
-          "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTWtTOG13eEhIejA4bmhtQTJhV3cyOS1sZWY0dmRkUWppUGRuSGRIQjJjZXVFS0hYQXAxbXd1X2VRcTlzM2ZfQlpjanpFOHZjUUdqZlduVk84TWg2N0dCdDNyT1N0b3REbmxFWVZnM0xnOVdTSUllNlA3QlJmTmktNm15WFA4SFkyMUJHTkNB?oc=5",
-          "date": "Sun, 09 Aug 2026 10:11:50 GMT",
-          "text": "「渋谷盆踊り」に6万7000人 109前に櫓、外国人観光客も踊りの輪に (みんなの経済新聞ネットワーク) - Yahoo!ニュース"
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GZllFQldFQTFHZHBMLTBWQmxxX3c0SlZUQnQ3X3J1ZXh3cFdHTlJOWW55WUo3RElGZTRqd2dWVnVlV2pfT0JpbWJSenA4eEk3aVE?oc=5",
+          "date": "Sun, 09 Aug 2026 10:55:45 GMT",
+          "text": "「渋谷盆踊り」に6万7000人 109前に櫓、外国人観光客も踊りの輪に - シブヤ経済新聞"
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 1
     },
     {
       "id": "015ce4547f974831",
@@ -30218,7 +30353,7 @@
       "evidence_count": 1
     },
     {
-      "id": "3289f272859ae65a",
+      "id": "e8924456bf32be90",
       "song_name": "渋谷百年総踊り",
       "event_name": "渋谷盆踊り",
       "venue": "渋谷109前",
@@ -30229,6 +30364,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fZgzboRUq8Q",
+          "date": "2026-08-10T09:00:06+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 渋谷盆踊り 2026｜6万7千人来場！江頭2:50やLiSAも登場！ダンシングヒーロー｜東京音頭 他 / Japanese Bon dance in Shibuya, Tokyo.  🇯🇵\n渋谷109前で盛大に行われた「第7回 渋谷盆踊り2026 Shibuya Bon Odori」\n今年は6万7千人の参加者で賑わい、人気観光地の渋谷ということもあり海外からの観光客も大変多かったです！\n年齢や国籍関係なく誰もが踊りに夢中になりました！\n櫓とは別のステージでは、スペシャルゲストとしてエガちゃんが登場し盛り上げ、歌手のLiSAさんは映画「ミニオンズ&モンスターズ」のPRで、ミニ音頭を踊り会場を沸かせました！\n\nThe “7th Shibuya Bon Odori 2026” was held in grand style in front of Shibuya 109. This y"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/natsutr_bon/status/2086460438750089259",
@@ -30321,7 +30462,66 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 15
+      "evidence_count": 16
+    },
+    {
+      "id": "9ecff9489abb6d9b",
+      "song_name": "炭坑節",
+      "event_name": "渋谷盆踊り",
+      "venue": "渋谷109前",
+      "area": "渋谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tamachan_ota/status/2086290677588255051",
+          "date": "2026-08-09T03:17:13+00:00",
+          "text": "玉川英俊｜東京都｜大田区｜防災士\n「渋谷盆踊り」に６万７千人　１０９前を交通規制して多国籍な「東京音頭」や「炭坑節」 https://t.co/IiFzYs60sN\n#盆踊り\n#渋谷"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=giMeVQxY56g",
+          "date": "2026-08-09T05:00:51+00:00",
+          "text": "Urban Walk\n【渋谷盆踊り2026】7万人が来場!! 渋谷109前で1日限りの盆踊り!!  /  Shibuya Bon Dance Festival\n#渋谷盆踊り #渋谷 #ダンシングヒーロー #盆踊り #荻野目洋子\n\n00:00　渋谷盆踊り\n01:12　炭坑節\n04:45　エガちゃん\n11:40　渋谷百年総踊り\n15:30　ダンシングヒーロー\n19:34　東京音頭\n23:14　河内おとこ節\n27:43　夢みる渋谷\n33:13　東京音頭\n\n\n【渋谷盆踊り 2026】\n開催日程：2026年8月8日(土)\n開催場所：渋谷109前 \nhttps://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yumTK/status/2086339544010629314",
+          "date": "2026-08-09T06:31:24+00:00",
+          "text": "やむ(Yum) a.k.a. TK Yummy\n「渋谷盆踊り」に６万７千人　１０９前を交通規制して多国籍な「東京音頭」や「炭坑節」 https://t.co/0rjx8bDSIq\n所用で行けなかったけど、そもそもこんなお知らせ来てたかなー？！😭"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kamome_www/status/2086341197308862738",
+          "date": "2026-08-09T06:37:58+00:00",
+          "text": "kamome\n「渋谷盆踊り」に６万７千人　１０９前を交通規制して多国籍な「東京音頭」や「炭坑節」 https://t.co/hgwBNXsReW @YouTubeより"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yoshinew25/status/2084821251546292556",
+          "date": "2026-08-05T01:58:15+00:00",
+          "text": "旅飯 agogo！\n渋谷・道玄坂もホコ天に！「第7回 渋谷盆踊り」今年も開催！ 8月8日（土）\n\n109渋谷店前に櫓が設置され、文化村通りや道玄坂は歩行者天国に！櫓を囲んで「渋谷音頭」や「オリンピック渋谷音頭」、「炭坑節」などに合わせて盆踊りを楽しめるほか、渋谷ゆかりのゲストも登場！\nhttps://t.co/imVncXuWPj https://t.co/kYoMFfExp5"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w8vDoRHU_74",
+          "date": "2025-11-01T10:01:38Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 晴盆 盆踊り フィリピン エキスポ 蒲田  / Dancing Bon Odori at the Philippine EXPO in Kamata.\n東京の蒲田駅前で「Philippine EXPO in 蒲田 日比友好 歌と踊りの祭典」が開催されました。\n日本とフィリピンの市民レベルの交流を深める国際交流イベントで、歌とダンス、飲食・物販・企業出展などを通じて“日比友好”を体感できる4日間となっています。\n土曜日のこの日は、品川区を中心に活動されている晴盆さんの盆踊りがあり、国籍問わず皆さん踊りで盛り上がっておりました！！\n11月3日（月祝）まで開催中です！\n\nThe Philippine EXPO in Kamata was held in front of Kamata Station in Tokyo. This international exchange eve"
+        },
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjYmRNLTRidHo1T3lPenFWRGJ6MEQyUUVxZ2JzaGxoZHNyY3BPRkViUG5iQjAydFliSlFyWm9FWGYya2dYNlpOcHlSbDV2Z1kzbXNzdHV3eEpKUDdXM1AybWFMd2V6R0hKVm5nYno5RWZrQ1FSRUE?oc=5",
+          "date": "Sun, 09 Aug 2026 00:00:00 GMT",
+          "text": "「渋谷盆踊り」に6万7千人 109前を交通規制して多国籍な「東京音頭」や「炭坑節」 - 産経ニュース"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 7
     },
     {
       "id": "b302e0f7a3ad374c",
@@ -40104,6 +40304,18 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/kazukichi_0914/status/2086794664699646236",
+          "date": "2026-08-10T12:39:53+00:00",
+          "text": "かずきち。(kazukichi)\n行きたかったなぁーhttps://t.co/DTM6UkY2QM “神田明神納涼祭り2026開催、オタクの夏の風物詩「アニソン盆踊り」で「クックロビン音頭」や「おジャ魔女カーニバル!!」ほか様々な演目で大盛況” (70 users) https://t.co/RB1bQSU1N1 #twitter #これはすごい"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yan_negimabeya/status/2086783694312984605",
+          "date": "2026-08-10T11:56:17+00:00",
+          "text": "楊（やん）\n神田明神納涼祭り2026開催、オタクの夏の風物詩「アニソン盆踊り」で「クックロビン音頭」や「おジャ魔女カーニバル!!」ほか様々な演目で大盛況 https://t.co/oDhu7O0RG3 #Togetter"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/haireriah/status/2086439012794052859",
           "date": "2026-08-09T13:06:39+00:00",
           "text": "haireriah\nこれにアレしたアレがいたみたいだけど、そっちは別件なので流す。10周年だっけ？\n\n神田明神納涼祭り2026開催、オタクの夏の風物詩「アニソン盆踊り」で「クックロビン音頭」や「おジャ魔女カーニバル!!」ほか様々な演目で大盛況 https://t.co/Q6MMortbgQ #Togetter"
@@ -40158,7 +40370,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 9
+      "evidence_count": 11
     },
     {
       "id": "bc77cbcdd647ee19",
@@ -49856,10 +50068,16 @@
           "url": "https://www.youtube.com/watch?v=hiM0LbsWIhQ",
           "date": "2025-08-13T11:01:13Z",
           "text": "Urban Walk\n【渋谷盆踊り 2025】「東京音頭」盆踊り /  Shibuya Bon Dance Festival\n#渋谷盆踊り #渋谷 #東京音頭 #盆踊り\n\n【渋谷盆踊り 2025】\n開催日程：2025年8月2日(土)\n開催場所：渋谷109前 \nhttps://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+        },
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjYmRNLTRidHo1T3lPenFWRGJ6MEQyUUVxZ2JzaGxoZHNyY3BPRkViUG5iQjAydFliSlFyWm9FWGYya2dYNlpOcHlSbDV2Z1kzbXNzdHV3eEpKUDdXM1AybWFMd2V6R0hKVm5nYno5RWZrQ1FSRUE?oc=5",
+          "date": "Sun, 09 Aug 2026 00:00:00 GMT",
+          "text": "「渋谷盆踊り」に6万7千人 109前を交通規制して多国籍な「東京音頭」や「炭坑節」 - 産経ニュース"
         }
       ],
       "already_public": true,
-      "evidence_count": 7
+      "evidence_count": 8
     },
     {
       "id": "1cd1386642f88c0d",
