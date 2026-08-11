@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-11T08:04:32.501294+00:00",
+  "generated_at": "2026-08-11T08:07:55.953571+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -219,6 +219,748 @@
           "url": "https://www.youtube.com/watch?v=lnNRMFZtwDw"
         },
         "video_id": "lnNRMFZtwDw"
+      }
+    },
+    {
+      "inbox_id": "inbox_15b3c16802f80bbf",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "炭坑節 × 青山善光寺",
+      "event_name": "",
+      "venue": "青山善光寺",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:炭坑節|venue:青山善光寺",
+      "source_url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "dc9db423898bf2336baec8f912da79f6be512bf1e90aae7a8031989bf06fb8bc",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-08-06T09:30:15.146107+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "納涼盆踊り大会"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T12:00:17+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T11:30:03+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=TOgVSKgsboE"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T11:00:08+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=3wrAtvX9Ouo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-09T12:00:20+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=d6nfuN3L2po"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-09T11:30:32+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=q55xshaNG2g"
+          }
+        ],
+        "evidence_count": 9,
+        "evidence_text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+        "evidence_url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+        "interpretation": "青山善光寺で炭坑節が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "炭坑節",
+        "term": "炭坑節 × 青山善光寺",
+        "type": "共起",
+        "venue": "青山善光寺"
+      }
+    },
+    {
+      "inbox_id": "inbox_32c49053b858d501",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ハシゴ",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:行動語|value:ハシゴ",
+      "source_url": "https://x.com/amethyst_cat_08/status/2086736878603288917",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "7ea502688cac5687922713757fc4118948911bb7b980671a3a12b0620e795037",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@amethyst_cat_08",
+            "date": "2026-08-10T08:50:16+00:00",
+            "text": "中学3年の夏休みに戻りたい。 昼は区民プールで泳ぎまくり、夜は あちこちの盆踊りをハシゴして踊りまくり、ミサでは暴れまくって最高に楽しかった。 両親も元気だったし戻りたいなあ。 まあ単純に働きたくないのもある。 それが大きいのかも。 病んでるなあ。",
+            "url": "https://x.com/amethyst_cat_08/status/2086736878603288917"
+          },
+          {
+            "account": "@HirohitoKondo",
+            "date": "2026-08-09T13:15:01+00:00",
+            "text": "先週、雷雨で延期となった東郷町春木台盆踊り大会、今日は無事に盛大に開催…私もたっぷり踊って汗だくになりました。自治会役員の皆様、準備から本日の運営まで、また東郷音頭保存会の皆様は日中２時間の催しからのハシゴだったそうで、本当にお疲れ様でした。 https://t.co/Obeyzj8Twa",
+            "url": "https://x.com/HirohitoKondo/status/2086441118552805806"
+          },
+          {
+            "account": "@Minami025VRC",
+            "date": "2026-08-09T06:28:34+00:00",
+            "text": "#寝転ん盆踊り2026 #居酒屋和み 寝転ん盆踊り·居酒屋和みインスタンス Part2.来場された皆さまと😆 ①TokoTakuさん、この後会場をハシゴしたとか。 ②バランタインさんと。会うのは久し振りでした！ ③fcodeさんといつものメガネ外しツーショ👓 ④biggieさんとのツーショは顔カブリ(笑) https://t.co/3nR4KISyb9",
+            "url": "https://x.com/Minami025VRC/status/2086338833818279936"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "中学3年の夏休みに戻りたい。 昼は区民プールで泳ぎまくり、夜は あちこちの盆踊りをハシゴして踊りまくり、ミサでは暴れまくって最高に楽しかった。 両親も元気だったし戻りたいなあ。 まあ単純に働きたくないのもある。 それが大きいのかも。 病んでるなあ。\n---\n先週、雷雨で延期となった東郷町春木台盆踊り大会、今日は無事に盛大に開催…私もたっぷり踊って汗だくになりました。自治会役員の皆様、準備から本日の運営まで、また東郷音頭保存会の皆様は日中２時間の催しからのハシゴだったそうで、本当にお疲れ様でした。 https://t.co/Obeyzj8Twa\n---\n#寝転ん盆踊り2026 #居酒屋和み 寝転ん盆踊り·居酒屋和みインスタンス Part2.来場された皆さまと😆 ①TokoTakuさん、この後会場をハシゴしたとか。 ②バランタインさんと。会うのは久し振りでした！ ③fcodeさんといつものメガネ外しツーショ👓 ④biggieさんとのツーショは顔カブリ(笑) https://t.co/3nR4KISyb9",
+        "evidence_url": "https://x.com/amethyst_cat_08/status/2086736878603288917",
+        "interpretation": "複数会場を同日または連続して巡る行動",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "ハシゴ",
+        "type": "行動語"
+      }
+    },
+    {
+      "inbox_id": "inbox_5d36172ff819ce1a",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "江戸川ふるさと音頭 × 鹿骨中学校",
+      "event_name": "",
+      "venue": "鹿骨中学校",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:江戸川ふるさと音頭|venue:鹿骨中学校",
+      "source_url": "https://x.com/gPVEQeAD9U10257/status/2086914968142987606",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "3df4a445b40f649a3b2746520ca19be689291764183d53e2b2c00e11c37655d5",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-08-11T08:05:47.174884+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "鹿骨二丁目町会盆踊り"
+        ],
+        "evidence": [
+          {
+            "account": "@gPVEQeAD9U10257",
+            "date": "2026-08-10T20:37:56+00:00",
+            "text": "鹿骨二丁目町会盆踊り🏮 ✨続編✨ ⭐御当地ソングの 江戸川ふるさと音頭や 江戸川の定番恋の屋形船が良い☺️ ⭐今日はいじられて小岩の 美濃屋マチコさんにもまた会えた💫 #盆踊り #東京都江戸川区 #鹿骨中学校 #好踊会 #美濃屋マチコ https://t.co/ANZGCewuz3",
+            "url": "https://x.com/gPVEQeAD9U10257/status/2086914968142987606"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "鹿骨二丁目町会盆踊り🏮 ✨続編✨ ⭐御当地ソングの 江戸川ふるさと音頭や 江戸川の定番恋の屋形船が良い☺️ ⭐今日はいじられて小岩の 美濃屋マチコさんにもまた会えた💫 #盆踊り #東京都江戸川区 #鹿骨中学校 #好踊会 #美濃屋マチコ https://t.co/ANZGCewuz3",
+        "evidence_url": "https://x.com/gPVEQeAD9U10257/status/2086914968142987606",
+        "interpretation": "鹿骨中学校で江戸川ふるさと音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "江戸川ふるさと音頭",
+        "term": "江戸川ふるさと音頭 × 鹿骨中学校",
+        "type": "共起",
+        "venue": "鹿骨中学校"
+      }
+    },
+    {
+      "inbox_id": "inbox_7760bab1628bb1d3",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "東京音頭 × 青山善光寺",
+      "event_name": "",
+      "venue": "青山善光寺",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:東京音頭|venue:青山善光寺",
+      "source_url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6060885fac7a1a1502217ce8f07839d8a53c58d464b45ad77a600d66780099ae",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-08-06T09:30:15.146107+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "納涼盆踊り大会"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T12:00:17+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T11:30:03+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=TOgVSKgsboE"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T11:00:08+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=3wrAtvX9Ouo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-09T12:00:20+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=d6nfuN3L2po"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-09T11:30:32+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=q55xshaNG2g"
+          }
+        ],
+        "evidence_count": 9,
+        "evidence_text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+        "evidence_url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+        "interpretation": "青山善光寺で東京音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "東京音頭",
+        "term": "東京音頭 × 青山善光寺",
+        "type": "共起",
+        "venue": "青山善光寺"
+      }
+    },
+    {
+      "inbox_id": "inbox_9e8813a0631729c3",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "踊り会",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
+      "source_url": "https://x.com/manamana04115/status/2087028196747382985",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2ffe8b50a7f69499def919c00cc6f4cf250ba0909ba433269fbbe630d5e01c44",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@manamana04115",
+            "date": "2026-08-11T04:07:51+00:00",
+            "text": "「アンコール！」「アンコール！」 慌ててその声を拾おうと カメラを向けたのに 何べん聞き返しても、 「そーりゃそーりゃ(秋祭りの掛け声)」しか聞こえへん💦 市内のほとんどの盆踊り会場では 青年団が下支えしていて、 本部、屋台、音響、太鼓、掛け声 頼りになるよ。 どこもええ人ばっかり https://t.co/k9TUo0KrM1",
+            "url": "https://x.com/manamana04115/status/2087028196747382985"
+          },
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-08-10T09:00:06+00:00",
+            "text": "渋谷109前で盛大に行われた「第7回 渋谷盆踊り2026 Shibuya Bon Odori」 今年は6万7千人の参加者で賑わい、人気観光地の渋谷ということもあり海外からの観光客も大変多かったです！ 年齢や国籍関係なく誰もが踊りに夢中になりました！ 櫓とは別のステージでは、スペシャルゲストとしてエガちゃんが登場し盛り上げ、歌手のLiSAさんは映画「ミニオンズ&モンスターズ」のPRで、ミニ音頭を踊り会場を沸かせました！ The “7th Shibuya Bon Odori 2026” was held in grand style in front of Shibuya 109. This year’s event drew a crowd of 67,000 participants, and since Shibuya is such a popular tourist destination, there were also a lot of international visitors! Everyone, regardless of age or nationality, wa",
+            "url": "https://www.youtube.com/watch?v=fZgzboRUq8Q"
+          },
+          {
+            "account": "@vrcudrone",
+            "date": "2026-08-11T07:34:05+00:00",
+            "text": "今日は #どろーん部 あります!! 8月コース2回目の開催になります🏮👘 屋台には気をつけて飛ばして下さいね 本日、21時より盆踊り会場で皆様をお待ちしておりますஐ⋆* https://t.co/7izUHcYwpM",
+            "url": "https://x.com/vrcudrone/status/2087080094296952899"
+          },
+          {
+            "account": "@yukimi_fox",
+            "date": "2026-08-11T06:32:57+00:00",
+            "text": "こやっす〜🦊 夕張の盆踊り会場で食ったお祭りメニュー‼️ 黒ダイヤばやしを聴きながら食べるのがエモすぎて涙出たよ #ゆきみのごちそう https://t.co/G8dJD3QcRX",
+            "url": "https://x.com/yukimi_fox/status/2087064708943958047"
+          },
+          {
+            "account": "@kikutsukimomiji",
+            "date": "2026-08-11T05:32:10+00:00",
+            "text": "だいぶん遅くなっちゃったけど、寝転ん盆踊り会場遊びに行ってました！すごくきれいだった！！ https://t.co/UUgsnHBOf1",
+            "url": "https://x.com/kikutsukimomiji/status/2087049413512552855"
+          }
+        ],
+        "evidence_count": 36,
+        "evidence_text": "「アンコール！」「アンコール！」 慌ててその声を拾おうと カメラを向けたのに 何べん聞き返しても、 「そーりゃそーりゃ(秋祭りの掛け声)」しか聞こえへん💦 市内のほとんどの盆踊り会場では 青年団が下支えしていて、 本部、屋台、音響、太鼓、掛け声 頼りになるよ。 どこもええ人ばっかり https://t.co/k9TUo0KrM1\n---\n渋谷109前で盛大に行われた「第7回 渋谷盆踊り2026 Shibuya Bon Odori」 今年は6万7千人の参加者で賑わい、人気観光地の渋谷ということもあり海外からの観光客も大変多かったです！ 年齢や国籍関係なく誰もが踊りに夢中になりました！ 櫓とは別のステージでは、スペシャルゲストとしてエガちゃんが登場し盛り上げ、歌手のLiSAさんは映画「ミニオンズ&モンスターズ」のPRで、ミニ音頭を踊り会場を沸かせました！ The “7th Shibuya Bon Odori 2026” was held in grand style in front of Shibuya 109. This year’s event drew a crowd of 67,000 participants, and since Shibuya is such a popular tourist destination, there were also a lot of international visitors! Everyone, regardless of age or nationality, wa\n---\n今日は #どろーん部 あります!! 8月コース2回目の開催になります🏮👘 屋台には気をつけて飛ばして下さいね 本日、21時より盆踊り会場で皆様をお待ちしておりますஐ⋆* https://t.co/7izUHcYwpM",
+        "evidence_url": "https://x.com/manamana04115/status/2087028196747382985",
+        "interpretation": "盆踊りや輪踊りの会",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "踊り会",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_eae6fb91a1865c29",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "練習会",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:練習会",
+      "source_url": "https://x.com/takasho06130613/status/2087042756585959471",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2372979f1af4dddc70bedf387beeec3b4c2a29b75a97e48aeba07e6a8bc7e6fe",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@takasho06130613",
+            "date": "2026-08-11T05:05:43+00:00",
+            "text": "今日はバーミヤンか王将でガソリン注入してから練習会行くかな🥰",
+            "url": "https://x.com/takasho06130613/status/2087042756585959471"
+          },
+          {
+            "account": "@takasho06130613",
+            "date": "2026-08-11T02:36:17+00:00",
+            "text": "8/11(火)神宮のチケットあるが行かな～い 中止になれば払い戻し 今日は屋内の練習会に行く",
+            "url": "https://x.com/takasho06130613/status/2087005153715265991"
+          },
+          {
+            "account": "@harebon_odori",
+            "date": "2026-08-11T00:55:39+00:00",
+            "text": "あまりレクチャーをしっかりやり過ぎると、もはや公開晴盆練習会と化すわね😂 （かまたえんは若干しっかりやりすぎた感あり反省。）",
+            "url": "https://x.com/harebon_odori/status/2086979825995219449"
+          },
+          {
+            "account": "@kanamenyan1125",
+            "date": "2026-08-10T23:57:08+00:00",
+            "text": "あのこに会いたくてラインするの巻… 🐱「明日〇〇公園に行くんだけど、会えない？」 盆友👧「□□公園行く、会えないね」 そっかー😭このやり取りを3回目😭 お互い行きたい櫓が一致せず😭 練習会ではしょっちゅう会えたのに🥹 そういう時季か",
+            "url": "https://x.com/kanamenyan1125/status/2086965101203190224"
+          },
+          {
+            "account": "@sakaiyukako",
+            "date": "2026-08-11T06:00:14+00:00",
+            "text": "近隣町会とのふれあい、そして消防団は都大会へ！ この週末から今朝にかけて、近隣町会の皆さんとの交流、そして消防団活動が続きました。 まずは、近隣町会の盆踊り練習会に、助っ人兼指導役として参加。 この町会には、かつて踊り好きのご婦人方によるサークルがあり、私も10年以上、月に一度通わせていただいていました。この日も、その頃ご一緒していた先輩方のお顔がちらほら。懐かしい再会となりました。 そして面白いのが、この町会には長年受け継がれてきた「ここではこう踊る」という、いわばローカルルールがあること。 他から参加した人は最初こそ「あれ？いつもと違う！」と右往左往（笑）。それでも、郷に入れば郷に従え。最後にはみんな町会流の踊り方で揃って踊ることができました。 同じ曲でも、町によって少しずつ踊り方が違う。それもまた地域の盆踊りの面白さです。 そして、近隣町会の防災訓練にもお邪魔しました。 事前に訓練計画を伺っていましたが、今回は、東日本大震災の現場で取材・リポートにあたられた元アナウンサーから、災害時に「何をすべきか」「何が必要で、何が不要なのか」といった実体験に基づくお話を伺った",
+            "url": "https://x.com/sakaiyukako/status/2087056478297624940"
+          }
+        ],
+        "evidence_count": 40,
+        "evidence_text": "今日はバーミヤンか王将でガソリン注入してから練習会行くかな🥰\n---\n8/11(火)神宮のチケットあるが行かな～い 中止になれば払い戻し 今日は屋内の練習会に行く\n---\nあまりレクチャーをしっかりやり過ぎると、もはや公開晴盆練習会と化すわね😂 （かまたえんは若干しっかりやりすぎた感あり反省。）",
+        "evidence_url": "https://x.com/takasho06130613/status/2087042756585959471",
+        "interpretation": "盆踊りの曲や振りを練習する会",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "練習会",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_f372fc1afdc69e6d",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "参戦",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:参加スタイル語|value:参戦",
+      "source_url": "https://x.com/elegelacom/status/2087059753587679611",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0e090d75b2d4daba56d74cc3ac94dea4bc84984f4cd1f1697e1ca37c4a2b17ff",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@elegelacom",
+            "date": "2026-08-11T06:13:15+00:00",
+            "text": "ISLAND GAMES 2026開催決定！沖縄サントリーアリーナで琉球ゴールデンキングス対千葉ジェッツ戦が9月7日(月)よりスタートします 日本代表クラスの渡邊雄太選手や富樫勇樹選手らが参戦し、アドリアン・コヴァーチ新ヘッドコーチ指揮のもと、かつて... 詳細はこちら👇 https://t.co/LjKsoEiQMj https://t.co/Y72V2JrMGx",
+            "url": "https://x.com/elegelacom/status/2087059753587679611"
+          },
+          {
+            "account": "@Miku_34490",
+            "date": "2026-08-11T07:37:09+00:00",
+            "text": "@myojinnouryo 今年も本当に最高の盆踊りでした！！！ 未だに余韻が抜けません！！！wwwwww 来年も絶対参戦します！！！ ありがとうございました！お疲れ様でした！",
+            "url": "https://x.com/Miku_34490/status/2087080869181935983"
+          },
+          {
+            "account": "@ruru___0327",
+            "date": "2026-08-11T06:56:19+00:00",
+            "text": "今日はこちらの痛バで映画村の名探偵プリキュア！ 星見やぐらプリキュア盆踊り！に参戦させていただきますのでよろしくお願いいたします！ アイドルちゃんを目に焼き付けてきます！ https://t.co/4ryofAHOY7",
+            "url": "https://x.com/ruru___0327/status/2087070591715266951"
+          },
+          {
+            "account": "@yamabuki1920",
+            "date": "2026-08-11T06:08:25+00:00",
+            "text": "ヨシ👉 映画村行くぞー 盆踊りだぁ♪ ぷいきゅあだぁ！ スカイちゃんだぁ〜！！ 参戦される皆様！ 当局、スカイモードで突入するのでよろしくです👍 スカイ連番とかできたらしたいなぁ～🩵 https://t.co/T6sicpr0sH",
+            "url": "https://x.com/yamabuki1920/status/2087058538216522146"
+          },
+          {
+            "account": "@Tarareba_Towa",
+            "date": "2026-08-11T03:10:40+00:00",
+            "text": "星置盆踊りに推しの子アイちゃんとルビィちゃんで参戦中🎤💖 みんなと一緒に盆踊り踊っちゃうぞ〜🔥 #星置盆踊り #推しの子コスプレ https://t.co/IUVZ5wDfiI",
+            "url": "https://x.com/Tarareba_Towa/status/2087013805989785979"
+          }
+        ],
+        "evidence_count": 13,
+        "evidence_text": "ISLAND GAMES 2026開催決定！沖縄サントリーアリーナで琉球ゴールデンキングス対千葉ジェッツ戦が9月7日(月)よりスタートします 日本代表クラスの渡邊雄太選手や富樫勇樹選手らが参戦し、アドリアン・コヴァーチ新ヘッドコーチ指揮のもと、かつて... 詳細はこちら👇 https://t.co/LjKsoEiQMj https://t.co/Y72V2JrMGx\n---\n@myojinnouryo 今年も本当に最高の盆踊りでした！！！ 未だに余韻が抜けません！！！wwwwww 来年も絶対参戦します！！！ ありがとうございました！お疲れ様でした！\n---\n今日はこちらの痛バで映画村の名探偵プリキュア！ 星見やぐらプリキュア盆踊り！に参戦させていただきますのでよろしくお願いいたします！ アイドルちゃんを目に焼き付けてきます！ https://t.co/4ryofAHOY7",
+        "evidence_url": "https://x.com/elegelacom/status/2087059753587679611",
+        "interpretation": "盆踊りイベントへ参加すること",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "参戦",
+        "type": "参加スタイル語"
+      }
+    },
+    {
+      "inbox_id": "inbox_fdd1554059de688b",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "活気あふれる踊り × 青山善光寺",
+      "event_name": "",
+      "venue": "青山善光寺",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:活気あふれる踊り|venue:青山善光寺",
+      "source_url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1cc43f8fff0b5dc875fe3d32aec2bad3e0b7559a7fecaf6b7b6cab5975a6f294",
+      "last_seen_at": "github-31469590497-1-daily_term_candidate",
+      "created_at": "2026-08-06T09:30:15.146107+00:00",
+      "updated_at": "2026-08-11T08:05:47.174884+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "納涼盆踊り大会"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T12:00:17+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T11:30:03+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=TOgVSKgsboE"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-10T11:00:08+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=3wrAtvX9Ouo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-09T12:00:20+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=d6nfuN3L2po"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-09T11:30:32+00:00",
+            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+            "url": "https://www.youtube.com/watch?v=q55xshaNG2g"
+          }
+        ],
+        "evidence_count": 9,
+        "evidence_text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
+        "evidence_url": "https://www.youtube.com/watch?v=JUH9xK_5fxQ",
+        "interpretation": "青山善光寺で活気あふれる踊りが言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "活気あふれる踊り",
+        "term": "活気あふれる踊り × 青山善光寺",
+        "type": "共起",
+        "venue": "青山善光寺"
+      }
+    },
+    {
+      "inbox_id": "inbox_01bb7cc038021f36",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "郡上おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:郡上おどり",
+      "source_url": "https://x.com/agehabijo/status/2087024069938180096",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9edab69c9a9a09918d8c2e69abd4d7470d51026eaa4fa97e21537df10e0304f5",
+      "last_seen_at": "github-31469590497-1-daily_song_candidate",
+      "created_at": "2026-07-25T15:31:52.165690+00:00",
+      "updated_at": "2026-08-11T08:04:51.717363+00:00",
+      "payload": {
+        "canonical_song_name": "郡上おどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@agehabijo",
+            "date": "2026-08-11T03:51:27+00:00",
+            "text": "今週末は13北海道三笠、14.15歌舞伎町、16は岐阜各務原で盆踊り。 三笠は北海盆唄発祥の地なので、楽しみ！歌舞伎町は渾身の選曲をしているので、めちゃくちゃ楽しいと思います！岐阜は盆ジョヴィ初上陸！郡上おどりで盆踊りに開花したので、今から楽しみです！ https://t.co/dWC6pH3IAp",
+            "url": "https://x.com/agehabijo/status/2087024069938180096"
+          },
+          {
+            "account": "@NemottyNeronero",
+            "date": "2026-08-11T02:19:44+00:00",
+            "text": "今年も #川崎 の麻生区にある五重塔の #盆踊り のチラシがうちに郵送されて来ました。 川崎市内で #郡上おどり に特化した盆踊り会場は、おそらくここだけだと思います。 また今年は事前申し込みすれば、無料で茶会にも参加出来るそうです。 https://t.co/KaZQD1YM7w",
+            "url": "https://x.com/NemottyNeronero/status/2087000985474605211"
+          },
+          {
+            "account": "@kuma_jiro99",
+            "date": "2026-08-10T05:15:55+00:00",
+            "text": "2026.8.9 #郡上おどり #秋葉祭 行って来ました！ 岐阜DE盆踊りから郡上へ移動 赤ちょうちんがかわいい今町の会場は、踊り子さんでギュウギュウ💦 まぁ自分もその一人なので、皆さんごめんなさい🙇🏻‍♂️ 空いてきたタイミングでサクッと踊って帰りました 皆様ありがとうございました！ #盆踊り https://t.co/yhXzLDF1fr",
+            "url": "https://x.com/kuma_jiro99/status/2086682935063613927"
+          },
+          {
+            "account": "@madsmin",
+            "date": "2026-08-10T06:13:38+00:00",
+            "text": "【徹夜で盆踊り】日本三大盆踊りの一つ / 郡上おどり「徹夜おどり」生中継【岐阜県郡上市】2026年8月13日 / ニコ生番組(2026/8/13 17:30開始) https://t.co/YvZvqp54vx ニコ生毎年これやってくれるから好き いつか行ってみたいんだよな",
+            "url": "https://x.com/madsmin/status/2086697460626551284"
+          }
+        ],
+        "evidence_count": 4,
+        "evidence_text": "今週末は13北海道三笠、14.15歌舞伎町、16は岐阜各務原で盆踊り。 三笠は北海盆唄発祥の地なので、楽しみ！歌舞伎町は渾身の選曲をしているので、めちゃくちゃ楽しいと思います！岐阜は盆ジョヴィ初上陸！郡上おどりで盆踊りに開花したので、今から楽しみです！ https://t.co/dWC6pH3IAp\n---\n今年も #川崎 の麻生区にある五重塔の #盆踊り のチラシがうちに郵送されて来ました。 川崎市内で #郡上おどり に特化した盆踊り会場は、おそらくここだけだと思います。 また今年は事前申し込みすれば、無料で茶会にも参加出来るそうです。 https://t.co/KaZQD1YM7w\n---\n2026.8.9 #郡上おどり #秋葉祭 行って来ました！ 岐阜DE盆踊りから郡上へ移動 赤ちょうちんがかわいい今町の会場は、踊り子さんでギュウギュウ💦 まぁ自分もその一人なので、皆さんごめんなさい🙇🏻‍♂️ 空いてきたタイミングでサクッと踊って帰りました 皆様ありがとうございました！ #盆踊り https://t.co/yhXzLDF1fr",
+        "evidence_url": "https://x.com/agehabijo/status/2087024069938180096",
+        "interpretation": "郡上おどり",
+        "reason": "曲名抽出器で検出: known_song_context",
+        "term": "郡上おどり",
+        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
+        "type": "曲名"
+      }
+    },
+    {
+      "inbox_id": "inbox_0f3b70d40a53a2d8",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ズンパ音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:ズンパ音頭",
+      "source_url": "https://x.com/029dai/status/2087049837820981290",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a6185e1f85dcbbd41b4a3453de80a3a07e98b5f65468b91f938d3e1bfc4bfb99",
+      "last_seen_at": "github-31469590497-1-daily_song_candidate",
+      "created_at": "2026-08-11T08:04:51.717363+00:00",
+      "updated_at": "2026-08-11T08:04:51.717363+00:00",
+      "payload": {
+        "canonical_song_name": "ズンパ音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@029dai",
+            "date": "2026-08-11T05:33:51+00:00",
+            "text": "🐼が盆踊りに参加して以降、 色んな踊りに夢中になっている… 防府踊りしか知らなかったけど、 世の中には色々な踊りがあるんやね。 あんなに沢山の踊りを踊る盆踊りには 初めて参加したけど、🐼がめちゃくちゃ 楽しそうで良かった😊 🐼「ズンパ音頭」が気に入ったらしいw https://t.co/FlhsMJBR1T",
+            "url": "https://x.com/029dai/status/2087049837820981290"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "🐼が盆踊りに参加して以降、 色んな踊りに夢中になっている… 防府踊りしか知らなかったけど、 世の中には色々な踊りがあるんやね。 あんなに沢山の踊りを踊る盆踊りには 初めて参加したけど、🐼がめちゃくちゃ 楽しそうで良かった😊 🐼「ズンパ音頭」が気に入ったらしいw https://t.co/FlhsMJBR1T",
+        "evidence_url": "https://x.com/029dai/status/2087049837820981290",
+        "interpretation": "ズンパ音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "ズンパ音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
+      "inbox_id": "inbox_63e08c680984b4d3",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "らんまん踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:らんまん踊り",
+      "source_url": "https://x.com/bjvbiMpM0SQWrmy/status/2086684402571182561",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "3edc4fe0081f04d732952c7adc2fd2bc4d606983f8038966656d6986ba1d9670",
+      "last_seen_at": "github-31469590497-1-daily_song_candidate",
+      "created_at": "2026-08-06T09:29:28.322473+00:00",
+      "updated_at": "2026-08-11T08:04:51.717363+00:00",
+      "payload": {
+        "canonical_song_name": "らんまん踊り",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@bjvbiMpM0SQWrmy",
+            "date": "2026-08-10T05:21:44+00:00",
+            "text": "江戸川区鹿骨２丁目盆踊りですが、昨日予備曲として篠崎音頭を予定していましたが、踊ることが出来ませんでしたので、本日は「らんまん踊り」の後にかけて行こうと思います。 皆さん 是非広い会場で楽しく踊りましょう。 お待ちしております。 https://t.co/vbGt72tvvd",
+            "url": "https://x.com/bjvbiMpM0SQWrmy/status/2086684402571182561"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "江戸川区鹿骨２丁目盆踊りですが、昨日予備曲として篠崎音頭を予定していましたが、踊ることが出来ませんでしたので、本日は「らんまん踊り」の後にかけて行こうと思います。 皆さん 是非広い会場で楽しく踊りましょう。 お待ちしております。 https://t.co/vbGt72tvvd",
+        "evidence_url": "https://x.com/bjvbiMpM0SQWrmy/status/2086684402571182561",
+        "interpretation": "らんまん踊り",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "らんまん踊り",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
+      "inbox_id": "inbox_788a1c99d5c2e30e",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "神田明神音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:神田明神音頭",
+      "source_url": "https://www.youtube.com/watch?v=RlEeCvcVlck",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "eab7a0d20f20a89d34d52452e364b800606789229f7b9862a5a60dcf20da3db6",
+      "last_seen_at": "github-31469590497-1-daily_song_candidate",
+      "created_at": "2026-08-06T09:29:28.322473+00:00",
+      "updated_at": "2026-08-11T08:04:51.717363+00:00",
+      "payload": {
+        "canonical_song_name": "神田明神音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+            "date": "2026-08-10T16:53:43+00:00",
+            "text": "#ダンシングヒーロー #神田明神アニソン盆踊り #アニソン盆踊り #祭り #秋葉原 #ヲタ芸 神田明神 アニソン盆踊りは秋葉原に近い神田明神の境内で毎年8月上旬に開催される大人気の夏祭りイベント。新旧のアニメソングに合わせて、子どもから大人までみんなで一緒にやぐらを囲んで踊る、活気あふれるお祭り。 00:00 ハイライト 03:22 しぐれうい 03:43 ドラえもん音頭 07:39 ほっぺちゃん音頭 10:55 MC 11:49 邪神ちゃん音頭 16:16 アラレちゃん音頭 19:31 茶風林さん登場 25:34 クックロビン音頭 28:28 おジャ魔女カーニバル 32:29 ダンシングヒーロー 36:31 アイドル踊り子一言 39:59 生唄 神田明神音頭 【神田明神アニソン盆踊り 2026】 開催日程：2026年8月7日(金) 開催場所：神田明神 https://www.google.com/maps/place/%E7%A5%9E%E7%94%B0%E7%A5%9E%E7%A4%BE%EF%BC%88%E7%A5%9E%E7%94%B0%E6%98%8E%E7%A5%9E%EF",
+            "url": "https://www.youtube.com/watch?v=RlEeCvcVlck"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "#ダンシングヒーロー #神田明神アニソン盆踊り #アニソン盆踊り #祭り #秋葉原 #ヲタ芸 神田明神 アニソン盆踊りは秋葉原に近い神田明神の境内で毎年8月上旬に開催される大人気の夏祭りイベント。新旧のアニメソングに合わせて、子どもから大人までみんなで一緒にやぐらを囲んで踊る、活気あふれるお祭り。 00:00 ハイライト 03:22 しぐれうい 03:43 ドラえもん音頭 07:39 ほっぺちゃん音頭 10:55 MC 11:49 邪神ちゃん音頭 16:16 アラレちゃん音頭 19:31 茶風林さん登場 25:34 クックロビン音頭 28:28 おジャ魔女カーニバル 32:29 ダンシングヒーロー 36:31 アイドル踊り子一言 39:59 生唄 神田明神音頭 【神田明神アニソン盆踊り 2026】 開催日程：2026年8月7日(金) 開催場所：神田明神 https://www.google.com/maps/place/%E7%A5%9E%E7%94%B0%E7%A5%9E%E7%A4%BE%EF%BC%88%E7%A5%9E%E7%94%B0%E6%98%8E%E7%A5%9E%EF",
+        "evidence_url": "https://www.youtube.com/watch?v=RlEeCvcVlck",
+        "interpretation": "神田明神音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "神田明神音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
       }
     },
     {
@@ -557,75 +1299,6 @@
       }
     },
     {
-      "inbox_id": "inbox_32c49053b858d501",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "ハシゴ",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:行動語|value:ハシゴ",
-      "source_url": "https://x.com/amethyst_cat_08/status/2086736878603288917",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "ea11364f1d0851fc0244d55d7192474999a51bc4562ecceb4cfeec4b5e83ce4f",
-      "last_seen_at": "github-31372904419-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-08-10T09:34:07.291952+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@amethyst_cat_08",
-            "date": "2026-08-10T08:50:16+00:00",
-            "text": "中学3年の夏休みに戻りたい。 昼は区民プールで泳ぎまくり、夜は あちこちの盆踊りをハシゴして踊りまくり、ミサでは暴れまくって最高に楽しかった。 両親も元気だったし戻りたいなあ。 まあ単純に働きたくないのもある。 それが大きいのかも。 病んでるなあ。",
-            "url": "https://x.com/amethyst_cat_08/status/2086736878603288917"
-          },
-          {
-            "account": "@HirohitoKondo",
-            "date": "2026-08-09T13:15:01+00:00",
-            "text": "先週、雷雨で延期となった東郷町春木台盆踊り大会、今日は無事に盛大に開催…私もたっぷり踊って汗だくになりました。自治会役員の皆様、準備から本日の運営まで、また東郷音頭保存会の皆様は日中２時間の催しからのハシゴだったそうで、本当にお疲れ様でした。 https://t.co/Obeyzj8Twa",
-            "url": "https://x.com/HirohitoKondo/status/2086441118552805806"
-          },
-          {
-            "account": "@Minami025VRC",
-            "date": "2026-08-09T06:28:34+00:00",
-            "text": "#寝転ん盆踊り2026 #居酒屋和み 寝転ん盆踊り·居酒屋和みインスタンス Part2.来場された皆さまと😆 ①TokoTakuさん、この後会場をハシゴしたとか。 ②バランタインさんと。会うのは久し振りでした！ ③fcodeさんといつものメガネ外しツーショ👓 ④biggieさんとのツーショは顔カブリ(笑) https://t.co/3nR4KISyb9",
-            "url": "https://x.com/Minami025VRC/status/2086338833818279936"
-          },
-          {
-            "account": "@nana__kitchen",
-            "date": "2026-08-08T05:26:40+00:00",
-            "text": "今日はこれから球場のハシゴです！何故こうなったかは…空いてる時間に予定を詰め込むからです。（）まずはここから。それでは行ってきます！ https://t.co/hC5dbLwHC7",
-            "url": "https://x.com/nana__kitchen/status/2085960864784613552"
-          },
-          {
-            "account": "@Minami025VRC",
-            "date": "2026-08-08T03:41:00+00:00",
-            "text": "#寝転ん盆踊り2026 #居酒屋和み 寝転ん盆踊りはいよいよ今夜22時からスタート❗ 和みスタッフもGroup+インスタンスで皆さまをお待ちしております🎵 他にもたくさんのインスタンスが建ちますので、ハシゴするのも良いかも🍻 皆さまで思い切り楽しみましょう❗ https://t.co/Lkcesq6Evy",
-            "url": "https://x.com/Minami025VRC/status/2085934273761280218"
-          }
-        ],
-        "evidence_count": 5,
-        "evidence_text": "中学3年の夏休みに戻りたい。 昼は区民プールで泳ぎまくり、夜は あちこちの盆踊りをハシゴして踊りまくり、ミサでは暴れまくって最高に楽しかった。 両親も元気だったし戻りたいなあ。 まあ単純に働きたくないのもある。 それが大きいのかも。 病んでるなあ。\n---\n先週、雷雨で延期となった東郷町春木台盆踊り大会、今日は無事に盛大に開催…私もたっぷり踊って汗だくになりました。自治会役員の皆様、準備から本日の運営まで、また東郷音頭保存会の皆様は日中２時間の催しからのハシゴだったそうで、本当にお疲れ様でした。 https://t.co/Obeyzj8Twa\n---\n#寝転ん盆踊り2026 #居酒屋和み 寝転ん盆踊り·居酒屋和みインスタンス Part2.来場された皆さまと😆 ①TokoTakuさん、この後会場をハシゴしたとか。 ②バランタインさんと。会うのは久し振りでした！ ③fcodeさんといつものメガネ外しツーショ👓 ④biggieさんとのツーショは顔カブリ(笑) https://t.co/3nR4KISyb9",
-        "evidence_url": "https://x.com/amethyst_cat_08/status/2086736878603288917",
-        "interpretation": "複数会場を同日または連続して巡る行動",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "ハシゴ",
-        "type": "行動語"
-      }
-    },
-    {
       "inbox_id": "inbox_46d0327e3934ced6",
       "kind": "song_research",
       "domain": "曲・用語・低緊急度",
@@ -776,75 +1449,6 @@
       }
     },
     {
-      "inbox_id": "inbox_9e8813a0631729c3",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "踊り会",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
-      "source_url": "https://x.com/agehabijo/status/2086629896965718018",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "6a42ea5766b0b0f0a9a19aa3af5c94aa10c0c288ed1adfd3bb32ec717e3f0d61",
-      "last_seen_at": "github-31372904419-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-08-10T09:34:07.291952+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@agehabijo",
-            "date": "2026-08-10T01:45:09+00:00",
-            "text": "そして嬉しかったのが、 鳳蝶美成手拭いやナカボングッズを身に付けてくださっている方や、各地の盆踊り会場でお会いする方々も踊りに来てくださっていたこと。 京都の地でも、こうしていつもの皆様と再会できるのは本当に嬉しいですね😊 ご参加いただいた皆様、ありがとうございました！",
-            "url": "https://x.com/agehabijo/status/2086629896965718018"
-          },
-          {
-            "account": "@WagtaiI",
-            "date": "2026-08-10T09:05:52+00:00",
-            "text": "ちょっと仕事でグッタリ煮詰まってたら、近所で盆踊り始まって、キッチンカーも来てるらしいって聞いてもう財布持って外出た🤣盆踊り会場楽しい🤗明日の私に全て丸投げだぜ！😌",
-            "url": "https://x.com/WagtaiI/status/2086740804199203250"
-          },
-          {
-            "account": "@WinkyNoel",
-            "date": "2026-08-10T08:51:47+00:00",
-            "text": "この盆踊り会場セットを5分のアイテムCAMPで踊りながら近くのお店を物色しつつLBチェックを終えてPyoちゃんのヘリコプターに乗り込みちゅ🚁 （ｲﾏｾﾝ！ https://t.co/YnmmF02C82 https://t.co/ZtE20O3UZG",
-            "url": "https://x.com/WinkyNoel/status/2086737260754690202"
-          },
-          {
-            "account": "@tsukurukunn",
-            "date": "2026-08-10T08:32:07+00:00",
-            "text": "8/10（月）20:00〜放送！ 「夏祭り特集PART1」 7月に行われたエリア内の夏祭りの模様をダイジェストでご紹介します! ・上志津一区「盆踊り会」 ・江原台夏祭り ・千代田2・4・5丁目合同夏祭り など計8つのお祭りをご紹介🍧 https://t.co/VZHZn2j2uJ",
-            "url": "https://x.com/tsukurukunn/status/2086732312159666405"
-          },
-          {
-            "account": "@aako728",
-            "date": "2026-08-10T07:02:26+00:00",
-            "text": "どの盆踊り会場に行っても最前列で踊り狂ってるリーマンのおっちゃんがいたなあ…いつも汗だくでおどってた もちろんうまい あのおっちゃん、元気なんだろうか…あーこが子供の頃だから、まあいいお年…いや、亡くなってるかな？？？ 結構なお年のおっちゃんだった気がする(が、子供の感覚なので…)",
-            "url": "https://x.com/aako728/status/2086709743553597715"
-          }
-        ],
-        "evidence_count": 34,
-        "evidence_text": "そして嬉しかったのが、 鳳蝶美成手拭いやナカボングッズを身に付けてくださっている方や、各地の盆踊り会場でお会いする方々も踊りに来てくださっていたこと。 京都の地でも、こうしていつもの皆様と再会できるのは本当に嬉しいですね😊 ご参加いただいた皆様、ありがとうございました！\n---\nちょっと仕事でグッタリ煮詰まってたら、近所で盆踊り始まって、キッチンカーも来てるらしいって聞いてもう財布持って外出た🤣盆踊り会場楽しい🤗明日の私に全て丸投げだぜ！😌\n---\nこの盆踊り会場セットを5分のアイテムCAMPで踊りながら近くのお店を物色しつつLBチェックを終えてPyoちゃんのヘリコプターに乗り込みちゅ🚁 （ｲﾏｾﾝ！ https://t.co/YnmmF02C82 https://t.co/ZtE20O3UZG",
-        "evidence_url": "https://x.com/agehabijo/status/2086629896965718018",
-        "interpretation": "盆踊りや輪踊りの会",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "踊り会",
-        "type": "準公式用語"
-      }
-    },
-    {
       "inbox_id": "inbox_de94b6473ec44af9",
       "kind": "song_research",
       "domain": "曲・用語・低緊急度",
@@ -890,197 +1494,6 @@
         "term": "おこさ節 × 隅田公園",
         "type": "共起",
         "venue": "隅田公園"
-      }
-    },
-    {
-      "inbox_id": "inbox_eae6fb91a1865c29",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "練習会",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:練習会",
-      "source_url": "https://x.com/2tsuo_g/status/2086597969059668458",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "54cc2359c26a490a509003a642597628d360f9241d93409a2303b6e7824e5194",
-      "last_seen_at": "github-31372904419-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-08-10T09:34:07.291952+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@2tsuo_g",
-            "date": "2026-08-09T23:38:17+00:00",
-            "text": "8/17の練習会見つけちゃった😏",
-            "url": "https://x.com/2tsuo_g/status/2086597969059668458"
-          },
-          {
-            "account": "@takasho06130613",
-            "date": "2026-08-09T23:07:09+00:00",
-            "text": "明日は雨予報なのか… 雨ならいつもの練習会にでも行こうかな",
-            "url": "https://x.com/takasho06130613/status/2086590131709091961"
-          },
-          {
-            "account": "@bon_odorer",
-            "date": "2026-08-09T21:24:31+00:00",
-            "text": "補足 地域や自治大企画の公式盆踊り情報を中心に集めるようにAIに指示してました。私営企画の盆踊りはもしかしたらうまく拾えてないかもしれません。（練習会とかオフ会は避けるように指示していたため） PS ちなみにXだけの告知情報のイベントは拾えません。 XのソースはAI学習禁止にされているため",
-            "url": "https://x.com/bon_odorer/status/2086564304397218169"
-          },
-          {
-            "account": "@natsutr_bon",
-            "date": "2026-08-10T04:18:57+00:00",
-            "text": "【北仲キャナルパーク盆踊り】 🏮8/22(土)📍北仲通北第二公園(横浜市) 横浜のシンボル、ランドマークタワーを眺めながら北仲キャナルパークを会場に踊る🎶 高千代会によるオリジナリティ豊かな踊りが楽しめる💃 盆踊りは18:30~/20:15~の2部制 ★練習会は8/15-16(パンフ参照) https://t.co/1NGsUBaetN",
-            "url": "https://x.com/natsutr_bon/status/2086668600056877409"
-          },
-          {
-            "account": "@minkei",
-            "date": "2026-08-09T23:08:58+00:00",
-            "text": "恒例「横田大盆踊り」に向けて3日間の練習会 世代間交流も https://t.co/d33Ou38EDv #みんなの経済新聞 #ローカルニュース",
-            "url": "https://x.com/minkei/status/2086590592788877461"
-          }
-        ],
-        "evidence_count": 48,
-        "evidence_text": "8/17の練習会見つけちゃった😏\n---\n明日は雨予報なのか… 雨ならいつもの練習会にでも行こうかな\n---\n補足 地域や自治大企画の公式盆踊り情報を中心に集めるようにAIに指示してました。私営企画の盆踊りはもしかしたらうまく拾えてないかもしれません。（練習会とかオフ会は避けるように指示していたため） PS ちなみにXだけの告知情報のイベントは拾えません。 XのソースはAI学習禁止にされているため",
-        "evidence_url": "https://x.com/2tsuo_g/status/2086597969059668458",
-        "interpretation": "盆踊りの曲や振りを練習する会",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "練習会",
-        "type": "準公式用語"
-      }
-    },
-    {
-      "inbox_id": "inbox_f372fc1afdc69e6d",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "参戦",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:参加スタイル語|value:参戦",
-      "source_url": "https://x.com/churuchuruHappy/status/2086692489927573686",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "f24bda57b6e87e6ade1ee3849be29114c7f43014d7106a45c65a2c74d4ca2641",
-      "last_seen_at": "github-31372904419-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-08-10T09:34:07.291952+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@churuchuruHappy",
-            "date": "2026-08-10T05:53:53+00:00",
-            "text": "ｱﾜｰｯｯｯ 盆踊りちゃーんこちゃんこの音源じゃないっぽくて急に不安！！！！しかもなんか二人で踊るような振り付けて草！！！！ ボッチ参戦の人見知りは無事に情緒死んだのでイベント終わったら大人しく帰るかもしれない",
-            "url": "https://x.com/churuchuruHappy/status/2086692489927573686"
-          },
-          {
-            "account": "@coco69_cha69",
-            "date": "2026-08-09T23:14:42+00:00",
-            "text": "たくさんの夢烏がラキフェス参戦の中、MUCCのバンＴにマフラータオルを身に纏い、盆踊り参戦🏮の暑い週末になりました🫠 今年は踊らず👘に裏方手伝いの２日間でしたが、町会のお母さん達手作りの仲間の証し頂きましたw 梟の鈴付き👍ザ・昭和がなんとも言えない♡ https://t.co/31ge1ef2HD",
-            "url": "https://x.com/coco69_cha69/status/2086592034593481010"
-          },
-          {
-            "account": "@t6N0WbBIYkfoVqk",
-            "date": "2026-08-10T00:50:36+00:00",
-            "text": "イオンタウン釜石の超！盆BON踊りに東北LINE参戦！遠野市のじんぎすかん あんべ様の紹介動画も配信してます！ #ジンギスカン #イオンタウン釜石 #盆踊り https://t.co/JQ8S6Xxlo2 本日、イオンタウン釜石様で盆踊りイベント開催！キッチンカーも来ますので、皆様ぜひお越しください！ ↓釜石集結中 https://t.co/xN46TDlUlA",
-            "url": "https://x.com/t6N0WbBIYkfoVqk/status/2086616166718738652"
-          },
-          {
-            "account": "@gaki_nyaaan",
-            "date": "2026-08-09T07:13:34+00:00",
-            "text": "まずは盆踊り参戦( ´ ▽ ` )❣️❣️ #大正商工夏祭り https://t.co/lWjnDxYU0X",
-            "url": "https://x.com/gaki_nyaaan/status/2086350156916772893"
-          },
-          {
-            "account": "@fjmtkm710",
-            "date": "2026-08-08T15:50:40+00:00",
-            "text": "地域の盆踊り大会に初参戦したのだけど、お子たちが思いのほか盆踊ってて、結局最後まで滞在。老若男女入り混じる中で楽しそうに踊ってて、時にはおばちゃんに踊りを教えてもらったりもしつつ、大変良き時間だった。そんな場を作ってくれている自治会のみなさん、やっぱりご高齢の方たちばかりで…。頭が下がるし、こりゃ我々の世代がしっかりと後世に受け継がなきゃいけないんじゃないかって思ったよね。",
-            "url": "https://x.com/fjmtkm710/status/2086117902043017551"
-          }
-        ],
-        "evidence_count": 9,
-        "evidence_text": "ｱﾜｰｯｯｯ 盆踊りちゃーんこちゃんこの音源じゃないっぽくて急に不安！！！！しかもなんか二人で踊るような振り付けて草！！！！ ボッチ参戦の人見知りは無事に情緒死んだのでイベント終わったら大人しく帰るかもしれない\n---\nたくさんの夢烏がラキフェス参戦の中、MUCCのバンＴにマフラータオルを身に纏い、盆踊り参戦🏮の暑い週末になりました🫠 今年は踊らず👘に裏方手伝いの２日間でしたが、町会のお母さん達手作りの仲間の証し頂きましたw 梟の鈴付き👍ザ・昭和がなんとも言えない♡ https://t.co/31ge1ef2HD\n---\nイオンタウン釜石の超！盆BON踊りに東北LINE参戦！遠野市のじんぎすかん あんべ様の紹介動画も配信してます！ #ジンギスカン #イオンタウン釜石 #盆踊り https://t.co/JQ8S6Xxlo2 本日、イオンタウン釜石様で盆踊りイベント開催！キッチンカーも来ますので、皆様ぜひお越しください！ ↓釜石集結中 https://t.co/xN46TDlUlA",
-        "evidence_url": "https://x.com/churuchuruHappy/status/2086692489927573686",
-        "interpretation": "盆踊りイベントへ参加すること",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "参戦",
-        "type": "参加スタイル語"
-      }
-    },
-    {
-      "inbox_id": "inbox_01bb7cc038021f36",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "郡上おどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:郡上おどり",
-      "source_url": "https://x.com/kuma_jiro99/status/2086682935063613927",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "584bfc7b83fded9026264aeea6d99d2c27f0a0f7167b46e49882473470da5db6",
-      "last_seen_at": "github-31372904419-1-daily_song_candidate",
-      "created_at": "2026-07-25T15:31:52.165690+00:00",
-      "updated_at": "2026-08-10T09:33:14.602009+00:00",
-      "payload": {
-        "canonical_song_name": "郡上おどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@kuma_jiro99",
-            "date": "2026-08-10T05:15:55+00:00",
-            "text": "2026.8.9 #郡上おどり #秋葉祭 行って来ました！ 岐阜DE盆踊りから郡上へ移動 赤ちょうちんがかわいい今町の会場は、踊り子さんでギュウギュウ💦 まぁ自分もその一人なので、皆さんごめんなさい🙇🏻‍♂️ 空いてきたタイミングでサクッと踊って帰りました 皆様ありがとうございました！ #盆踊り https://t.co/yhXzLDF1fr",
-            "url": "https://x.com/kuma_jiro99/status/2086682935063613927"
-          },
-          {
-            "account": "@madsmin",
-            "date": "2026-08-10T06:13:38+00:00",
-            "text": "【徹夜で盆踊り】日本三大盆踊りの一つ / 郡上おどり「徹夜おどり」生中継【岐阜県郡上市】2026年8月13日 / ニコ生番組(2026/8/13 17:30開始) https://t.co/YvZvqp54vx ニコ生毎年これやってくれるから好き いつか行ってみたいんだよな",
-            "url": "https://x.com/madsmin/status/2086697460626551284"
-          }
-        ],
-        "evidence_count": 2,
-        "evidence_text": "2026.8.9 #郡上おどり #秋葉祭 行って来ました！ 岐阜DE盆踊りから郡上へ移動 赤ちょうちんがかわいい今町の会場は、踊り子さんでギュウギュウ💦 まぁ自分もその一人なので、皆さんごめんなさい🙇🏻‍♂️ 空いてきたタイミングでサクッと踊って帰りました 皆様ありがとうございました！ #盆踊り https://t.co/yhXzLDF1fr\n---\n【徹夜で盆踊り】日本三大盆踊りの一つ / 郡上おどり「徹夜おどり」生中継【岐阜県郡上市】2026年8月13日 / ニコ生番組(2026/8/13 17:30開始) https://t.co/YvZvqp54vx ニコ生毎年これやってくれるから好き いつか行ってみたいんだよな",
-        "evidence_url": "https://x.com/kuma_jiro99/status/2086682935063613927",
-        "interpretation": "郡上おどり",
-        "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-        "term": "郡上おどり",
-        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
-        "type": "曲名"
       }
     },
     {
@@ -1225,59 +1638,6 @@
       }
     },
     {
-      "inbox_id": "inbox_63e08c680984b4d3",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "らんまん踊り",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:らんまん踊り",
-      "source_url": "https://x.com/bjvbiMpM0SQWrmy/status/2086684402571182561",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "496130464301e839ad4f2ee2e642de861866607e292bca8315578cdd0a95f209",
-      "last_seen_at": "github-31372904419-1-daily_song_candidate",
-      "created_at": "2026-08-06T09:29:28.322473+00:00",
-      "updated_at": "2026-08-10T09:33:14.602009+00:00",
-      "payload": {
-        "canonical_song_name": "らんまん踊り",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@bjvbiMpM0SQWrmy",
-            "date": "2026-08-10T05:21:44+00:00",
-            "text": "江戸川区鹿骨２丁目盆踊りですが、昨日予備曲として篠崎音頭を予定していましたが、踊ることが出来ませんでしたので、本日は「らんまん踊り」の後にかけて行こうと思います。 皆さん 是非広い会場で楽しく踊りましょう。 お待ちしております。 https://t.co/vbGt72tvvd",
-            "url": "https://x.com/bjvbiMpM0SQWrmy/status/2086684402571182561"
-          },
-          {
-            "account": "@2tsuo_g",
-            "date": "2026-08-08T03:52:10+00:00",
-            "text": "@myojinnouryo 第3部の「らんらん踊り」は 「らんまん踊り」の間違いですか？",
-            "url": "https://x.com/2tsuo_g/status/2085937084502851952"
-          }
-        ],
-        "evidence_count": 2,
-        "evidence_text": "江戸川区鹿骨２丁目盆踊りですが、昨日予備曲として篠崎音頭を予定していましたが、踊ることが出来ませんでしたので、本日は「らんまん踊り」の後にかけて行こうと思います。 皆さん 是非広い会場で楽しく踊りましょう。 お待ちしております。 https://t.co/vbGt72tvvd\n---\n@myojinnouryo 第3部の「らんらん踊り」は 「らんまん踊り」の間違いですか？",
-        "evidence_url": "https://x.com/bjvbiMpM0SQWrmy/status/2086684402571182561",
-        "interpretation": "らんまん踊り",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "らんまん踊り",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
-      }
-    },
-    {
       "inbox_id": "inbox_cce43bdfeb8f677e",
       "kind": "song",
       "domain": "曲・用語・低緊急度",
@@ -1375,228 +1735,6 @@
         "title_song_candidates": [],
         "video_id": "OWwnMJfgjLc",
         "video_url": "https://www.youtube.com/watch?v=OWwnMJfgjLc"
-      }
-    },
-    {
-      "inbox_id": "inbox_15b3c16802f80bbf",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "炭坑節 × 青山善光寺",
-      "event_name": "",
-      "venue": "青山善光寺",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:炭坑節|venue:青山善光寺",
-      "source_url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "76d032375176fd473a9dbddcb67a226b02ee26d5e44104d0aa167affcc2562a4",
-      "last_seen_at": "github-31368356687-1-daily_term_candidate",
-      "created_at": "2026-08-06T09:30:15.146107+00:00",
-      "updated_at": "2026-08-10T08:15:16.031522+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "納涼盆踊り大会"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T12:00:20+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=d6nfuN3L2po"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T11:30:32+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=q55xshaNG2g"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T11:00:27+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=OU1LpKVlw8E"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-08T12:00:05+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=QI1fWjXIh0g"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-08T11:30:37+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=woOfIXse--c"
-          }
-        ],
-        "evidence_count": 9,
-        "evidence_text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-        "evidence_url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
-        "interpretation": "青山善光寺で炭坑節が言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "炭坑節",
-        "term": "炭坑節 × 青山善光寺",
-        "type": "共起",
-        "venue": "青山善光寺"
-      }
-    },
-    {
-      "inbox_id": "inbox_7760bab1628bb1d3",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "東京音頭 × 青山善光寺",
-      "event_name": "",
-      "venue": "青山善光寺",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:東京音頭|venue:青山善光寺",
-      "source_url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "41d177d2fdfbe3086c9afab4f86f4730b5ed14840c1e60e9549a992b986fd86c",
-      "last_seen_at": "github-31368356687-1-daily_term_candidate",
-      "created_at": "2026-08-06T09:30:15.146107+00:00",
-      "updated_at": "2026-08-10T08:15:16.031522+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "納涼盆踊り大会"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T12:00:20+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=d6nfuN3L2po"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T11:30:32+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=q55xshaNG2g"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T11:00:27+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=OU1LpKVlw8E"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-08T12:00:05+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=QI1fWjXIh0g"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-08T11:30:37+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=woOfIXse--c"
-          }
-        ],
-        "evidence_count": 9,
-        "evidence_text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-        "evidence_url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
-        "interpretation": "青山善光寺で東京音頭が言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "東京音頭",
-        "term": "東京音頭 × 青山善光寺",
-        "type": "共起",
-        "venue": "青山善光寺"
-      }
-    },
-    {
-      "inbox_id": "inbox_fdd1554059de688b",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "活気あふれる踊り × 青山善光寺",
-      "event_name": "",
-      "venue": "青山善光寺",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:活気あふれる踊り|venue:青山善光寺",
-      "source_url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "74e8df143742e8c63cd8161ba202e917e61d93cdb730209b459dda6ebcf11bd7",
-      "last_seen_at": "github-31368356687-1-daily_term_candidate",
-      "created_at": "2026-08-06T09:30:15.146107+00:00",
-      "updated_at": "2026-08-10T08:15:16.031522+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "納涼盆踊り大会"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T12:00:20+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=d6nfuN3L2po"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T11:30:32+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=q55xshaNG2g"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-09T11:00:27+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=OU1LpKVlw8E"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-08T12:00:05+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=QI1fWjXIh0g"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-08T11:30:37+00:00",
-            "text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-            "url": "https://www.youtube.com/watch?v=woOfIXse--c"
-          }
-        ],
-        "evidence_count": 9,
-        "evidence_text": "2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-\n---\n2026年7月27日に東京都港区の青山善光寺境内で行われた「 青山表参道商店会 謝恩納涼盆踊り大会」の様子です。 都会の真ん中、表参道からもほど近い善光寺の境内で、 夜風を感じながら踊る特別な夏のひととき。 地域の方々や商店会のみなさんの活気あふれる踊りをお楽しみください！ 【開催詳細】 ■日時：2026年7月27日 ■場所：青山善光寺 境内（東京都港区北青山） ■主催：青山表参道商店会 #盆踊り #青山善光寺 #青山表参道商店会 #港区 #夏祭り #伝統行事 #和太鼓お祭りチャンネル 青山善光寺盆踊り １東京音頭 https://youtu.be/seZHSLMkIOU ２炭坑節 https://youtu.be/4gssbW1M5uI ３大東京音頭 https://youtu.be/OM4F9USlUq8 ４八木節 https://youtu.be/5A2iJnj_P18 ５東京みなと音頭 https://youtu.be/3ET6WOVQ4pc ６ハワイ音頭 https://youtu.be/k-csKz1vBQo ７相馬盆唄 https://youtu.be/woOfIXse-",
-        "evidence_url": "https://www.youtube.com/watch?v=d6nfuN3L2po",
-        "interpretation": "青山善光寺で活気あふれる踊りが言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "活気あふれる踊り",
-        "term": "活気あふれる踊り × 青山善光寺",
-        "type": "共起",
-        "venue": "青山善光寺"
       }
     },
     {
@@ -2485,53 +2623,6 @@
         "interpretation": "新宿音頭",
         "reason": "曲名抽出器で検出: song_suffix_near_context",
         "term": "新宿音頭",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
-      }
-    },
-    {
-      "inbox_id": "inbox_788a1c99d5c2e30e",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "神田明神音頭",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:神田明神音頭",
-      "source_url": "https://www.youtube.com/watch?v=HuRyRcvLQzI",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "36bf82328c912cd996f4353383572895f62e538a03a6e28ca494c41e5956b852",
-      "last_seen_at": "github-31300698732-1-daily_song_candidate",
-      "created_at": "2026-08-06T09:29:28.322473+00:00",
-      "updated_at": "2026-08-09T07:29:47.462061+00:00",
-      "payload": {
-        "canonical_song_name": "神田明神音頭",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "UCEYq2_O_Sai0j9chJOmcKtQ",
-            "date": "2026-08-07T15:30:58+00:00",
-            "text": "【神田明神納涼祭り アニソン盆踊り】『神田明神音頭／小坂井祐莉絵』 ■開催期間：2026年8月7日（金） ■開催時間：19時20分～20時30分 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：青山なぎさ：https://www.instagram.com/aoyamanagisa_official 尾崎明日香：https://www.instagram.com/ozaki_asuka/ 小見川千明：https://www.instagram.com/chiaki_omigawa/ 小坂井祐莉絵：https://www.instagram.com/yurie_kozakai0706/ 長谷川玲奈：https://www.instagram.com/bbg_rena0315/ ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 【チャンネル内関連動画】 https://youtu.b",
-            "url": "https://www.youtube.com/watch?v=HuRyRcvLQzI"
-          }
-        ],
-        "evidence_count": 1,
-        "evidence_text": "【神田明神納涼祭り アニソン盆踊り】『神田明神音頭／小坂井祐莉絵』 ■開催期間：2026年8月7日（金） ■開催時間：19時20分～20時30分 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：青山なぎさ：https://www.instagram.com/aoyamanagisa_official 尾崎明日香：https://www.instagram.com/ozaki_asuka/ 小見川千明：https://www.instagram.com/chiaki_omigawa/ 小坂井祐莉絵：https://www.instagram.com/yurie_kozakai0706/ 長谷川玲奈：https://www.instagram.com/bbg_rena0315/ ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 【チャンネル内関連動画】 https://youtu.b",
-        "evidence_url": "https://www.youtube.com/watch?v=HuRyRcvLQzI",
-        "interpretation": "神田明神音頭",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "神田明神音頭",
         "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
         "type": "曲名"
       }
