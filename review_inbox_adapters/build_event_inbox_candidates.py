@@ -67,9 +67,9 @@ def _proposal(base, entry, action, suffix=""):
 
 def _entry_key(entry, proposal):
     if entry.get("entry_id"): return entry["entry_id"]
-    if entry.get("occurrence_id"): return stable_id("entry", entry["occurrence_id"], length=12)
-    if proposal.get("event_name_hint") and proposal.get("event_year"):
-        return stable_id("entry", normalize_text(proposal["event_name_hint"]), str(proposal["event_year"]), length=12)
+    if entry.get("occurrence_id"): return stable_id("entry", "occ", entry["occurrence_id"], length=12)
+    if proposal.get("event_name_hint") or (proposal.get("venue") or {}).get("name"):
+        return stable_id("entry", normalize_text(proposal.get("event_name_hint") or ""), str(proposal.get("event_year") or ""), (proposal.get("venue") or {}).get("name") or "", length=12)
     hint = entry.get("match_hint") or {}
     if hint.get("event_name_hint") and hint.get("event_year"):
         return stable_id("entry", normalize_text(hint["event_name_hint"]), str(hint["event_year"]), hint.get("venue_name_hint") or "", length=12)
@@ -166,10 +166,14 @@ def run(args):
                     family_key = (("official_notice:" if base["report_type"] == "official_notice" else "firsthand:") + base["report_id"] + "#" + key)
                     if family_key in seen: _issue(issues,"high","entry_key_collision",family_key=family_key); continue
                     seen.add(family_key); jobs.append((base,entry,proposal,lane,family_key))
-        new_needed = sum(not _family(conn, fam) for *_, fam in jobs)
+        now = datetime.now(timezone.utc)
+        new_needed = sum(not _family(conn, fam) and (getattr(args, "include_expired", False) or now <= _expires(proposal, now).astimezone(timezone.utc)) for _,_,proposal,_,fam in jobs)
         if new_needed > args.max_candidates: _issue(issues,"high","max_candidates_exceeded",needed=new_needed)
         if not any(i["severity"] == "high" for i in issues):
             for base,entry,proposal,lane,family_key in jobs:
+                if proposal.get("explicit_occurrence_id") and not conn.execute("SELECT 1 FROM event_occurrences WHERE occurrence_id=?", (proposal["explicit_occurrence_id"],)).fetchone():
+                    _issue(issues, "medium", "occurrence_id_not_found", occurrence_id=proposal["explicit_occurrence_id"], source_key=family_key)
+                    continue
                 expires = _expires(proposal, datetime.now(timezone.utc))
                 if datetime.now(timezone.utc) > expires.astimezone(timezone.utc) and not getattr(args, "include_expired", False):
                     changes.append({"outcome":"expired", "source_key":family_key, "event_name":proposal.get("event_name_hint"), "date_start":proposal.get("date_start")}); continue
