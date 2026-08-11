@@ -161,7 +161,7 @@ posts_with_text >= 4
 `@santama_genjin`・`@ilias0322`・`@bondbont` ほか）。
 
 **他県の盆踊りにも行く個人は bot ではない。** 例えば `@5khfya5pjksggov` は他県の櫓の
-組み方まで論評する良質な書き手で、`first_person_ratio` と `bon_ratio` が高いので
+組み方まで論評する良質な書き手で、`experience_ratio` と `bon_ratio` が高いので
 上の条件に当たらない。内田さんの「人は残し、地域botだけ外す」はこの条件で表現している。
 
 ### 2-4. 手動名簿の判断は機械が覆さない
