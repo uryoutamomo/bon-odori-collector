@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 import json
+import sqlite3
 from pathlib import Path
 from unittest.mock import patch
 
@@ -16,6 +17,28 @@ def voice(handle, text, day, *, media=False):
 
 
 class XBonodorerReevaluationTest(unittest.TestCase):
+    def test_master_runtime_keeps_entity_ids_and_area_evidence(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            db_path = Path(tmpdir) / "master.sqlite"
+            with sqlite3.connect(db_path) as conn:
+                conn.executescript("""
+                    CREATE TABLE venues (venue_id TEXT, canonical_name TEXT, area TEXT, address TEXT);
+                    CREATE TABLE venue_aliases (venue_id TEXT, alias TEXT);
+                    CREATE TABLE event_series (series_id TEXT, canonical_name TEXT, area TEXT);
+                    CREATE TABLE event_series_aliases (series_id TEXT, alias TEXT);
+                    CREATE TABLE songs (canonical_title TEXT);
+                    CREATE TABLE song_aliases (alias TEXT);
+                """)
+                conn.execute("INSERT INTO venues VALUES ('ven_23', '会場A', '新宿区', '')")
+                conn.execute("INSERT INTO venue_aliases VALUES ('ven_23', '会場A通称')")
+                conn.execute("INSERT INTO event_series VALUES ('ser_out', '行事B', '横浜市')")
+                conn.execute("INSERT INTO event_series_aliases VALUES ('ser_out', '行事B通称')")
+            runtime = collect._load_x_bonodorer_master_runtime(db_path=db_path)
+        self.assertEqual(runtime["venue_entities"]["会場A通称"]["entity_id"], "ven_23")
+        self.assertTrue(runtime["venue_entities"]["会場A"]["is_tokyo23"])
+        self.assertEqual(runtime["event_entities"]["行事B通称"]["entity_id"], "ser_out")
+        self.assertFalse(runtime["event_entities"]["行事B"]["is_tokyo23"])
+
     def test_same_named_ordinance_city_ward_is_not_bon23_but_bare_ward_is(self):
         scores = collect._build_x_account_scores([
             voice("nagoya", "名古屋市北区の盆踊りのお知らせ", 1),
@@ -47,6 +70,63 @@ class XBonodorerReevaluationTest(unittest.TestCase):
 
         self.assertEqual(scores["accounts"]["teppo"]["bon23_count"], 1)
         self.assertEqual(scores["accounts"]["oi"]["bon23_count"], 1)
+
+    def test_typed_glossary_aliases_resolve_to_master_entity_area(self):
+        aliases = [
+            {"term": "神楽坂", "canonical": "神楽坂会場", "entity_type": "venue"},
+            {"term": "木場一・六町会", "canonical": "木場会場", "entity_type": "venue"},
+            {"term": "曙橋通り商店街", "canonical": "曙橋会場", "entity_type": "venue"},
+            {"term": "DAIBON", "canonical": "大盆踊り会", "entity_type": "event"},
+        ]
+        runtime = {
+            "songs": [], "places": [], "events": [],
+            "venue_entities": {
+                "神楽坂会場": {"entity_id": "ven_kagura", "is_tokyo23": True},
+                "木場会場": {"entity_id": "ven_kiba", "is_tokyo23": True},
+                "曙橋会場": {"entity_id": "ven_akebono", "is_tokyo23": True},
+            },
+            "event_entities": {
+                "大盆踊り会": {"entity_id": "ser_daibon", "is_tokyo23": True},
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            runtime_path = Path(tmpdir) / "runtime.json"
+            runtime_path.write_text(json.dumps(runtime), encoding="utf-8")
+            scores = collect._build_x_account_scores([
+                voice("kagura", "神楽坂の盆踊りへ", 1),
+                voice("kiba", "木場一・六町会盆踊り大会", 1),
+                voice("akebono", "曙橋通り商店街盆踊り", 1),
+                voice("daibon", "DAIBON、大盆踊り会", 1),
+            ], {
+                "x_bonodorer_master_runtime_file": str(runtime_path),
+                "glossary_entity_aliases": aliases,
+            })
+        for handle in ("kagura", "kiba", "akebono", "daibon"):
+            self.assertEqual(scores["accounts"][handle]["bon23_count"], 1)
+
+    def test_unresolved_or_outside_typed_alias_is_neutral(self):
+        runtime = {
+            "songs": [], "places": [], "events": [],
+            "venue_entities": {
+                "市外会場": {"entity_id": "ven_out", "is_tokyo23": False},
+            },
+            "event_entities": {},
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            runtime_path = Path(tmpdir) / "runtime.json"
+            runtime_path.write_text(json.dumps(runtime), encoding="utf-8")
+            scores = collect._build_x_account_scores([
+                voice("outside", "市外町会盆踊り", 1),
+                voice("unknown", "未解決町会盆踊り", 1),
+            ], {
+                "x_bonodorer_master_runtime_file": str(runtime_path),
+                "glossary_entity_aliases": [
+                    {"term": "市外町会", "canonical": "市外会場", "entity_type": "venue"},
+                    {"term": "未解決町会", "canonical": "存在しない会場", "entity_type": "venue"},
+                ],
+            })
+        self.assertEqual(scores["accounts"]["outside"]["bon23_count"], 0)
+        self.assertEqual(scores["accounts"]["unknown"]["bon23_count"], 0)
 
     def test_announce_score_is_not_capped_by_missing_tokyo23_evidence(self):
         account = {"release": {

@@ -17,7 +17,10 @@ def main():
     parser.add_argument("--out", type=Path, default=ROOT / "data/x_bonodorer_master_runtime.json")
     args = parser.parse_args()
     runtime = collect._load_x_bonodorer_master_runtime(db_path=args.master_db)
-    payload = {key: sorted(values) for key, values in runtime.items()}
+    payload = {
+        key: (sorted(values) if isinstance(values, set) else values)
+        for key, values in runtime.items()
+    }
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"x bonodorer master runtime: songs={len(payload['songs'])} places={len(payload['places'])} events={len(payload['events'])}")

@@ -614,9 +614,14 @@ def _apply_glossary_runtime_to_x_config(cfg):
         cfg.get("experience_keywords", []),
         runtime.get("experience_keywords", []),
     )
+    # Entity aliases are deliberately kept separate from the generic alias
+    # map: only a typed venue/event alias may become geographic evidence after
+    # it resolves against the local master snapshot.
+    cfg["glossary_entity_aliases"] = list(runtime.get("entity_aliases", []))
     cfg["glossary_runtime"] = {
         "source": runtime.get("generated_by", ""),
         "alias_count": len(runtime.get("alias_map", {})),
+        "entity_alias_count": len(runtime.get("entity_aliases", [])),
         "exclude_count": len(runtime.get("exclude_keywords", [])),
         "experience_count": len(runtime.get("experience_keywords", [])),
         "song_count": len(runtime.get("song_terms", [])),
@@ -1368,13 +1373,17 @@ def _load_x_bonodorer_master_runtime(path=None, db_path=None):
     path = Path(path or X_MASTER_RUNTIME_FILE)
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
-        return {key: set(payload.get(key) or []) for key in ("songs", "places", "events")}
+        return {
+            **{key: set(payload.get(key) or []) for key in ("songs", "places", "events")},
+            "venue_entities": dict(payload.get("venue_entities") or {}),
+            "event_entities": dict(payload.get("event_entities") or {}),
+        }
     except Exception:
         pass
     db = Path(db_path or "data/bon_odori_master.sqlite")
     if not db.exists():
-        return {"songs": set(), "places": set(), "events": set()}
-    runtime = {"songs": set(), "places": set(), "events": set()}
+        return {"songs": set(), "places": set(), "events": set(), "venue_entities": {}, "event_entities": {}}
+    runtime = {"songs": set(), "places": set(), "events": set(), "venue_entities": {}, "event_entities": {}}
     try:
         with sqlite3.connect(f"file:{db.resolve().as_posix()}?mode=ro", uri=True) as conn:
             runtime["songs"].update(row[0] for row in conn.execute("SELECT canonical_title FROM songs") if len(row[0] or "") >= 3)
@@ -1383,13 +1392,70 @@ def _load_x_bonodorer_master_runtime(path=None, db_path=None):
             runtime["places"].update(row[0] for row in conn.execute("SELECT va.alias FROM venue_aliases va JOIN venues v ON v.venue_id=va.venue_id WHERE v.area LIKE '%区%' OR v.address LIKE '%区%'") if len(row[0] or "") >= 3)
             runtime["events"].update(row[0] for row in conn.execute("SELECT canonical_name FROM event_series") if len(row[0] or "") >= 4)
             runtime["events"].update(row[0] for row in conn.execute("SELECT alias FROM event_series_aliases") if len(row[0] or "") >= 4)
+            for venue_id, name, area, address in conn.execute(
+                "SELECT venue_id, canonical_name, area, address FROM venues"
+            ):
+                if name:
+                    runtime["venue_entities"][name] = {
+                        "entity_id": venue_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(f"{area or ''} {address or ''}")),
+                    }
+            for venue_id, alias, area, address in conn.execute(
+                "SELECT v.venue_id, va.alias, v.area, v.address FROM venue_aliases va JOIN venues v ON v.venue_id=va.venue_id"
+            ):
+                if alias:
+                    runtime["venue_entities"][alias] = {
+                        "entity_id": venue_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(f"{area or ''} {address or ''}")),
+                    }
+            for series_id, name, area in conn.execute("SELECT series_id, canonical_name, area FROM event_series"):
+                if name:
+                    runtime["event_entities"][name] = {
+                        "entity_id": series_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(area or "")),
+                    }
+            for series_id, alias, area in conn.execute(
+                "SELECT e.series_id, ea.alias, e.area FROM event_series_aliases ea JOIN event_series e ON e.series_id=ea.series_id"
+            ):
+                if alias:
+                    runtime["event_entities"][alias] = {
+                        "entity_id": series_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(area or "")),
+                    }
     except sqlite3.Error:
-        return {"songs": set(), "places": set(), "events": set()}
+        return {"songs": set(), "places": set(), "events": set(), "venue_entities": {}, "event_entities": {}}
     return runtime
 
 
 def _x_runtime_match(text, values):
     return any(value and value in text for value in values)
+
+
+def _x_glossary_entity_has_tokyo23_evidence(text, aliases, master_runtime):
+    """Resolve a typed glossary alias to a local master entity's area.
+
+    Unresolved aliases are intentionally neutral.  A generic glossary alias is
+    never sufficient: it must identify a venue/event whose master record is in
+    the 23 wards.
+    """
+    for row in aliases or []:
+        if not isinstance(row, dict):
+            continue
+        term = str(row.get("term") or "")
+        canonical = str(row.get("canonical") or "")
+        entity_type = row.get("entity_type")
+        if not term or not canonical or term not in text:
+            continue
+        entity_maps = []
+        if entity_type in ("venue", "place", "region"):
+            entity_maps.append(master_runtime.get("venue_entities", {}))
+        if entity_type in ("event", "place", "region"):
+            entity_maps.append(master_runtime.get("event_entities", {}))
+        for entities in entity_maps:
+            entity = entities.get(canonical)
+            if entity and entity.get("is_tokyo23"):
+                return True
+    return False
 
 
 def _x_has_tokyo23_evidence(text, *, has_place=False, has_event=False):
@@ -1607,8 +1673,11 @@ def _build_x_account_scores(voices, cfg=None):
             has_place = _x_runtime_match(text, master_runtime["places"])
             has_event = _x_runtime_match(text, master_runtime["events"])
             has_song = _x_runtime_match(text, master_runtime["songs"]) or bool(_X_DETAIL_RE.search(text))
+            has_glossary_entity = _x_glossary_entity_has_tokyo23_evidence(
+                text, cfg.get("glossary_entity_aliases"), master_runtime
+            )
             has_tokyo23_evidence = _x_has_tokyo23_evidence(
-                text, has_place=has_place, has_event=has_event
+                text, has_place=has_place or has_glossary_entity, has_event=has_event
             )
             has_outside_evidence = _x_is_outside_tokyo23_text(text)
             # Persist independent post-level evidence so a mixed post remains
@@ -3471,6 +3540,7 @@ def load_glossary_v2():
     - experience_keywords: 参加報告語として使う語
     - role_terms: {シグナル役割: [使用語]}
     - song_terms: 曲名候補として使う語
+    - entity_aliases: 型付き会場・イベント別名（master地理解決用）
     """
     empty = {
         "alias_map": {},
@@ -3478,6 +3548,7 @@ def load_glossary_v2():
         "experience_keywords": [],
         "role_terms": {},
         "song_terms": [],
+        "entity_aliases": [],
     }
     if not NOTION_TOKEN or not GLOSSARY_V2_DB_ID:
         return empty
@@ -3488,6 +3559,7 @@ def load_glossary_v2():
             "experience_keywords": set(),
             "role_terms": {},
             "song_terms": set(),
+            "entity_aliases": [],
         }
         cursor = None
         while True:
@@ -3519,6 +3591,17 @@ def load_glossary_v2():
 
                 if kind in ("会場別名", "イベント別名", "地域語", "団体語"):
                     runtime["alias_map"][term] = interpretation
+                entity_type = {
+                    "会場別名": "venue",
+                    "イベント別名": "event",
+                    "地域語": "region",
+                }.get(kind)
+                if entity_type:
+                    runtime["entity_aliases"].append({
+                        "term": term,
+                        "canonical": interpretation,
+                        "entity_type": entity_type,
+                    })
                 if kind == "除外語" or "除外語" in roles or confidence == "除外確定":
                     runtime["exclude_keywords"].add(term)
                 if "参加報告" in roles:
@@ -3541,13 +3624,17 @@ def load_glossary_v2():
                 for role, values in sorted(runtime["role_terms"].items())
             },
             "song_terms": sorted(runtime["song_terms"]),
+            "entity_aliases": sorted(
+                runtime["entity_aliases"],
+                key=lambda row: (row["term"], row["entity_type"], row["canonical"]),
+            ),
         }
         print(
             "[glossary-v2] runtime読込: "
             f"alias {len(out['alias_map'])} / "
             f"exclude {len(out['exclude_keywords'])} / "
             f"experience {len(out['experience_keywords'])} / "
-            f"songs {len(out['song_terms'])}"
+            f"songs {len(out['song_terms'])} / entities {len(out['entity_aliases'])}"
         )
         return out
     except Exception as e:

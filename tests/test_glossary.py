@@ -131,6 +131,9 @@ class GlossaryV2RuntimeTest(unittest.TestCase):
             runtime = collect.load_glossary_v2()
 
         self.assertEqual(runtime["alias_map"]["晴盆"], "晴海ふ頭公園の盆踊り")
+        self.assertEqual(runtime["entity_aliases"], [{
+            "term": "晴盆", "canonical": "晴海ふ頭公園の盆踊り", "entity_type": "event",
+        }])
         self.assertIn("悪口盆踊り", runtime["exclude_keywords"])
         self.assertIn("行ってきた", runtime["experience_keywords"])
         self.assertIn("ボラちゃん音頭", runtime["song_terms"])
@@ -147,6 +150,9 @@ class GlossaryV2RuntimeTest(unittest.TestCase):
                     "exclude_keywords": ["悪口盆踊り", "ライブ"],
                     "experience_keywords": ["行ってきた", "踊った"],
                     "song_terms": ["ボラちゃん音頭"],
+                    "entity_aliases": [{
+                        "term": "晴盆", "canonical": "晴海ふ頭公園の盆踊り", "entity_type": "event",
+                    }],
                 }, f)
             with patch.object(collect, "GLOSSARY_RUNTIME_FILE", runtime_path):
                 cfg = collect._apply_glossary_runtime_to_x_config({
@@ -158,6 +164,8 @@ class GlossaryV2RuntimeTest(unittest.TestCase):
         self.assertEqual(cfg["experience_keywords"], ["踊った", "行ってきた"])
         self.assertEqual(cfg["glossary_runtime"]["alias_count"], 1)
         self.assertEqual(cfg["glossary_runtime"]["song_count"], 1)
+        self.assertEqual(cfg["glossary_runtime"]["entity_alias_count"], 1)
+        self.assertEqual(cfg["glossary_entity_aliases"][0]["entity_type"], "event")
 
 
 if __name__ == "__main__":
