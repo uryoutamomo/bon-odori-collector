@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "generated_by": "こと（Claude Code）",
+  "generated_at": "2026-08-12T16:38:10.706447+09:00",
+  "purpose": "会場名の表記ゆれについて、『その表記が本当は何を指すのか』を確率つきで保持する。裏取りキュー由来の観測から作成。",
+  "probability_semantics": "P(venue | surface_form)。その表記だけを文脈なしで見たときに、当該会場を指している条件付き確率。1.0に近いほど自動解決してよく、0.5前後は文脈（区名・公園名・記事本文）が揃って初めて解ける。0.1未満は表記ゆれではなく抽出の失敗であり、別名として登録してはいけない。",
+  "confidence_bands": {
+    "0.90-1.00": "自動解決してよい。venue_aliases へ登録する。",
+    "0.50-0.89": "文脈条件つき。曖昧さを残したまま持ち、解決には周辺情報を要求する。",
+    "0.10-0.49": "一般名詞・取り違えの疑いが強い。人のレビューを通す。",
+    "0.00-0.09": "会場名ではない。別名として登録すると誤った吸い寄せを起こす。"
+  },
+  "variation_types": {
+    "kyujitai": "旧字体と新字体の違い（靖國／靖国）",
+    "kana_variant": "仮名表記の違い（ケ／ヶ）",
+    "particle_bleed": "助詞ごと切り出してしまったもの（〜の／〜も／〜から）",
+    "modifier_bleed": "修飾句ごと切り出してしまったもの（〜駅近くの／〜横にある）",
+    "enumeration_bleed": "並列された複数会場をまとめて切り出してしまったもの",
+    "partial_name": "正式名の一部だけを切り出したもの（晴海ふ頭公園→埠頭公園）",
+    "colloquial": "行事名などに由来する通称",
+    "generic_noun": "どこにでもある一般名詞（芝生広場・駅前広場）",
+    "headline_fragment": "記事見出しの一部で、そもそも会場名ではない",
+    "organizer_venue_confusion": "主催者名を会場名として拾ったもの",
+    "informal_place": "正式な施設名が存在しない場所の通称",
+    "no_venue_name": "記事が会場名を書いていない"
+  },
+  "resolved_observations": [
+    {
+      "surface_form": "靖國神社",
+      "resolves_to": {
+        "venue_id": "ven_6de8544815288937",
+        "canonical_name": "靖国神社",
+        "address": "〒102-8246 東京都千代田区靖国2-3-1"
+      },
+      "probability": 0.99,
+      "variation_type": "kyujitai",
+      "basis": "「靖國」の旧字表記は靖国神社以外にほぼ用いられない。会場マスタは新字「靖国神社」で登録済みのため、旧字で来ると素通りする。",
+      "recommended_action": "register_alias",
+      "competing_entities": [],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "0ea9ca187c8e904a0f6c510515e24c3a3415cc204cb7827f9b578ce2e85237de",
+        "queue_source": "news",
+        "source_url": "https://bonmaru.zenmin-odori.jp/archives/85",
+        "source_text": "みたままつり 納涼民踊のつどい(靖國神社)",
+        "detected_at": "2026-07-14"
+      }
+    },
+    {
+      "surface_form": "目の北柏木公園",
+      "resolves_to": {
+        "venue_id": "ven_92ce5fb83ea922ea",
+        "canonical_name": "北柏木公園",
+        "address": "東京都新宿区北新宿4-12"
+      },
+      "probability": 0.95,
+      "variation_type": "particle_bleed",
+      "basis": "「〜丁目の北柏木公園」から助詞ごと切り出した結果。北柏木公園は新宿区北新宿4-12の1件のみで競合しない。",
+      "recommended_action": "register_alias",
+      "competing_entities": [],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "db385702c8fde2a68b8cdf123b2629729a507cb263872db9489bb671d6e7a437",
+        "queue_source": "news",
+        "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXNnpwSDNxRF92U3pPS083VGR5cmdTQ1ppd3Z6R2xxOGl5LTEtNGZ5YzFGQkZETUVwdTBIMzdyS3NPdUEwMHg3NmZhNHhpaTFHWU5zcDdCbVJBSkJWQkpN?oc=5",
+        "source_text": "かなくぼ🌷です＼北柏木公園・盆おどり7/26／1週間前になりますが、2回目の北柏木公園の盆おど... - go2senkyo.com",
+        "detected_at": "2026-08-04"
+      }
+    },
+    {
+      "surface_form": "山谷堀広場",
+      "resolves_to": {
+        "venue_id": "ven_918cee224c6b19f7",
+        "canonical_name": "隅田公園",
+        "address": "〒111-0033 東京都台東区浅衉7-1-22（山谷堀広場付近）"
+      },
+      "probability": 0.9,
+      "variation_type": "partial_name",
+      "basis": "隅田公園（台東区側）の中の広場名。奥浅草盆踊りの会場として実在する呼称で、将来は独立した会場として立てる余地もある。",
+      "recommended_action": "register_alias",
+      "competing_entities": [],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "80d3fde985379283462d7ce4fb4cee8388ff22e4288de1427b910d6905669ea2",
+        "queue_source": "news",
+        "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oV1BZVW03OWpwV0x6SHY4aF9mS183SzdzZTBBUl9xNkd5bDJpelJSQmJnR2NUY1Vnam5MZVFWQTQ1MGRiY1drOUhodDMyVFJKM2FneXhCUFpwX3hZSlZTUEt5ek4wX1g3ZGJZVlM0NmlWc0tEOWxzV3pnSUM0T0U?oc=5",
+        "source_text": "隅田公園・山谷堀広場で「奥浅草盆踊り」 サザンの曲も交え参加しやすく（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "detected_at": "2026-06-19"
+      }
+    },
+    {
+      "surface_form": "駒沢ふれあい広場",
+      "resolves_to": {
+        "venue_id": "ven_bd7a6261894a6b33",
+        "canonical_name": "駒澤大学 駒沢キャンパス",
+        "address": "東京都世田谷区駒沢1-23-1"
+      },
+      "probability": 0.9,
+      "variation_type": "colloquial",
+      "basis": "イベント名「駒沢ふれあい広場夏祭り」由来の通称。実際の会場は駒澤大学構内で、会場マスタは大学名で登録されている。",
+      "recommended_action": "register_alias",
+      "competing_entities": [],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "ff3ab0576d48eca94840c7f6bcfb8002b74c8ce395f470a8e06acb51b1d6deba",
+        "queue_source": "news",
+        "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE92RWNtd240eEdhQnphWTFJT1BZcnBCdDY5emVOVEdQZk5FaU5mM1Y1RjlBa0pjTy04dmxjMXFpeVk5WTduTGNfX2d4UzI?oc=5",
+        "source_text": "【2026年】駒沢ふれあい広場「第24回 夏祭り」見どころ3選！盆踊り・ステージ完全ガイド - 今日の駒沢",
+        "detected_at": "2026-07-26"
+      }
+    },
+    {
+      "surface_form": "両国3丁目や秋葉神社",
+      "resolves_to": {
+        "venue_id": "venue_3dc601b0967799f7",
+        "canonical_name": "秋葉神社",
+        "address": "東京都墨田区向島4丁目"
+      },
+      "probability": 0.6,
+      "variation_type": "enumeration_bleed",
+      "basis": "「墨田区で盆踊りシーズン開幕 両国3丁目や秋葉神社で」という見出しから、列挙された2会場をまとめて切り出したもの。両国3丁目の盆踊りは別会場の別行事。",
+      "recommended_action": "context_required",
+      "competing_entities": [
+        "両国3丁目（町会会場・未登録）"
+      ],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "fb5ed67cabcf3887f0c2e5a79d5c67c7f72a8f7291ed2157cbda3076889c410a",
+        "queue_source": "news",
+        "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xSTlkcjNhb3hLQ1hSTThPeTlzaXhIdWlOeUt6RFlZS25tSTZqUENpQzhJNjFCbzM2YzlMUThUcTliNFNHdmhDb20tZ1FtWGpyWFE?oc=5",
+        "source_text": "墨田区で盆踊りシーズン開幕 両国3丁目や秋葉神社で夏のにぎわい - すみだ経済新聞",
+        "detected_at": "2026-07-19"
+      }
+    },
+    {
+      "surface_form": "埠頭公園",
+      "resolves_to": {
+        "venue_id": "ven_81bb363c51d52347",
+        "canonical_name": "晴海ふ頭公園",
+        "address": "東京都中央区晴海五丁目"
+      },
+      "probability": 0.5,
+      "variation_type": "partial_name",
+      "basis": "元のX投稿は「晴海埠頭公園」。ただし港区海岸3-14-34に港区立「埠頭公園」が別に実在するため、裸の「埠頭公園」だけでは決められない。",
+      "recommended_action": "context_required",
+      "competing_entities": [
+        "埠頭公園（東京都港区海岸3-14-34・未登録）"
+      ],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "20c3be34a5ff3c2c2848e63bd45c9b725ffa51d030f2fe4cf4705aac7f1ad45d",
+        "queue_source": "x",
+        "source_url": "https://x.com/kaz0045/status/2006343358877413565",
+        "source_text": "大晦日のうちに2025年盆踊り総括（の一部）😌\n🍊骨折しなかった\n🍊白鳥、八幡の徹夜踊りに行った\n*監視映像がバズった\n🍊第1回晴海埠頭公園で子供らを組織化した\n🍊押上西和町会で子供らと右往左往した\n🍊ラゾーナ川崎のダンヒロで伝言ゲーム\n来年も引き続き元気で楽しく踊りましょう👍🏻\n#盆踊り https://t.co/b9893YuSqC",
+        "detected_at": "2026-06-06"
+      }
+    },
+    {
+      "surface_form": "日枝神社",
+      "resolves_to": {
+        "venue_id": "ven_f46fb3630adf9c72",
+        "canonical_name": "山王パークタワー公開空地",
+        "address": "〒100-0014 東京都千代田区永田町2-10-5"
+      },
+      "probability": 0.4,
+      "variation_type": "organizer_venue_confusion",
+      "basis": "山王祭の「山王音頭と民踊大会」は日枝神社の行事だが、踊りの会場は境内ではなく隣接する山王パークタワーの公開空地。主催者名を会場として拾っている。日枝神社境内を指す用法も別途ありうる。",
+      "recommended_action": "context_required",
+      "competing_entities": [
+        "日枝神社（千代田区永田町2-10-5・会場としては未登録）"
+      ],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "76712d53d302e07bbbfe5c455129386aba77dd141fa21e87706369dc760175f8",
+        "queue_source": "news",
+        "source_url": "https://bonmaru.zenmin-odori.jp/archives/108",
+        "source_text": "山王祭 山王音頭と民踊大会(日枝神社)",
+        "detected_at": "2026-06-13"
+      }
+    },
+    {
+      "surface_form": "芝生広場",
+      "resolves_to": {
+        "venue_id": "ven_918cee224c6b19f7",
+        "canonical_name": "隅田公園",
+        "address": "〒111-0033 東京都台東区浅衉7-1-22（山谷堀広場付近）"
+      },
+      "probability": 0.3,
+      "variation_type": "generic_noun",
+      "basis": "「隅田公園で七夕夜会 芝生広場で盆踊りも」から切り出したもの。「芝生広場」はどの公園にもある一般名詞で、公園名の文脈なしには解けない。",
+      "recommended_action": "context_required",
+      "competing_entities": [],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "79fcf24e3265f02de49e62e77c04d4def7d494d6872010d94a9dbb99d0455ea1",
+        "queue_source": "news",
+        "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOeXNjb3lTVUNGOGpwaG13b185Nk9YeE1Ia183RWhZTTZXZE1ucGNqdVprZm5lTkR3Nl9vRHB1MFh0QjV1eUtXc3NwOUNiZDlGcVQ0blBCNXRRZDQwOEpjWTZhSUFpUW5Sa0hzeWhfaEx2dGNZOGRZTnpjaFhVMUU?oc=5",
+        "source_text": "隅田公園で「七夕夜会」 短冊に願い、芝生広場で盆踊りも（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+        "detected_at": "2026-07-08"
+      }
+    },
+    {
+      "surface_form": "苦境の商店街",
+      "resolves_to": {
+        "venue_id": "venue_add9be34dd5f6129",
+        "canonical_name": "佐竹商店街アーケード下",
+        "address": "東京都台東区台東3-4丁目 佐竹商店街"
+      },
+      "probability": 0.05,
+      "variation_type": "headline_fragment",
+      "basis": "「苦境の商店街を盆踊りで盛り上げろ」という記事見出しの一部。会場名ではないので別名として登録すると、以後あらゆる商店街の記事を誤って佐竹へ吸い寄せる。",
+      "recommended_action": "do_not_register",
+      "competing_entities": [],
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "62bdadb12e9064aaa009f49bcec2aaa1201ddba31811c7b81d320cd38a9a4d6f",
+        "queue_source": "news",
+        "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5QdV91ODdmMlFhYXlfWEg2a0pFUm1IaE4zcGc3bFpuaVdGNEZTYmdJMXA0cG16Y05CZGx5MDlldmVtQS1vUkMtc0VGZU9yZXMwdjg2V1VkWWhaYkRuQmRtM1FDMFVscXFpdWtSWFAwa09NcndGeENHbVpwek9DVTA?oc=5",
+        "source_text": "苦境の商店街を盆踊りで盛り上げろ 東京下町・佐竹で40年ぶりに、地元芸人が企画（産経新聞） - Yahoo!ニュース",
+        "detected_at": "2026-07-04"
+      }
+    }
+  ],
+  "normalization_observations": [
+    {
+      "surface_form": "今年も石橋駅前公園",
+      "corrected_surface_form": "石橋駅前公園",
+      "probability": 0.97,
+      "variation_type": "particle_bleed",
+      "note": "大阪府池田市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "a3c1e560d6683fda3abc78316834ab612c138c445d88c09d9bfc89ce959596fb",
+        "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ZTDZ0Vkoxb2lqZG0xWHBSVW1tZGpRaUxscHJaazJwMnBpSFU2TGxjWXFpWjRpMTRncUM3U0xwbmUtNE5QajBSSVpRSUVMdVQyME1SWFp0dDE5Tk11ckJMWDhkMDc?oc=5",
+        "detected_at": "2026-07-22"
+      }
+    },
+    {
+      "surface_form": "人材センター横にある松山公園",
+      "corrected_surface_form": "松山公園",
+      "probability": 0.97,
+      "variation_type": "modifier_bleed",
+      "note": "東京都清瀬市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "669641294d762441e09a1e7578131821d4519f877204c3926c88aff2d71bf7ee",
+        "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVGZFSWt4UHA0bnNwSHdNSnpyZVdyemptcHFMNi1XUjJxazc5bHhyVnhpZE1Pa1Z6Z29OVEMwQkNDYVRscFpHV2dfbkM0SzMwbDNjajQ4LTNuLWtUa2MxcXBaZkQ3c0VJMjdHMmRpemlkR19zRjA0a1VPa1dRemx2YWZfWGU?oc=5",
+        "detected_at": "2026-07-28"
+      }
+    },
+    {
+      "surface_form": "昨日から總産土阿邪訶根神社",
+      "corrected_surface_form": "總産土阿邪訶根神社",
+      "probability": 0.97,
+      "variation_type": "particle_bleed",
+      "note": "福島県郡山市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "8f62d2d4bae114f05f8bd8c4f69f0244a1f33369ff327ce4f96d03fd5f709d37",
+        "source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxYUZUU2QwTUlRYXBHeEl0aWFDN1RZWHAybHRZcVN3MzZpVTJ1ZmloV2RzWUJ0TTE0MzNiR2cydE5OUHZBYlA3VGE2Y2dScF9zMm9ZNXdnTk1aQzhPdUJZ?oc=5",
+        "detected_at": "2026-07-22"
+      }
+    },
+    {
+      "surface_form": "月1日に上大岡公園",
+      "corrected_surface_form": "上大岡公園",
+      "probability": 0.97,
+      "variation_type": "particle_bleed",
+      "note": "神奈川県横浜市港南区",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "ca3316e2ba48ca081ef9543be1593f895daa44218bb6010a77435b80dca9e41b",
+        "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ISjMyd1RlYUg0cS1DY2EzVC1KTkplQ19wUlpMRkdRNUVkS3M4d0tleDFRTi10OU83a1ltR3hZZE1NRV9VLVp1Nm9wTE9SWDM2aGFtUWFBNW82RnR3b210YmZPdEdqZ3ZWYlppY19EWU5LSGlNbWZ0WXd2c0poSmM?oc=5",
+        "detected_at": "2026-07-04"
+      }
+    },
+    {
+      "surface_form": "北国分駅近く堀之内公園",
+      "corrected_surface_form": "堀之内公園",
+      "probability": 0.95,
+      "variation_type": "modifier_bleed",
+      "note": "千葉県市川市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "097d6ea82af83ed9558972b7484b80ddf1fe61dcb066d6a231c6a3801311ff0d",
+        "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1lT1ROb0k0ZzFtc0tEYk5CVDJwanVTbHJNQVRXV0trYzZwWXVPdGgzeFJsYTYzTnJLNlBfMXRnZ0ZSSlh6TXY3SUE0Wm5nMkE?oc=5",
+        "detected_at": "2026-07-19"
+      }
+    },
+    {
+      "surface_form": "八柱駅近く白髭神社",
+      "corrected_surface_form": "白髭神社",
+      "probability": 0.95,
+      "variation_type": "modifier_bleed",
+      "note": "千葉県松戸市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "619b7269bfbb246f849b64e8b20e4bf160fefb6521eea78f9e9fc2265e9a351c",
+        "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9qMmlEMm5lQ0ZBaGFEc2dJWWRrYjA5c1RfRzNINHZMd3paT3dBZ2o3bmhGTkgxRmh2MUhkMERvSDNPUEI3R2FnQXdnSC1mZW8?oc=5",
+        "detected_at": "2026-08-07"
+      }
+    },
+    {
+      "surface_form": "新長田駅すぐの鉄人広場",
+      "corrected_surface_form": "鉄人広場",
+      "probability": 0.95,
+      "variation_type": "modifier_bleed",
+      "note": "兵庫県神戸市長田区",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "aee4302da262ca42efd71f401fc7d007af14222d538ede5b05a02f2e9726b42e",
+        "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBpcW1zS3UyS2FWaVozdVQzUWJtWVVaTndibUo1dElfV3g4X0xUa1lBQm9ESFRHSy1LNlpGdjEyUzNyQTA0QVQ0R3Q5a1RfU2R1cXR3d1p2eTNyOU5SWWc?oc=5",
+        "detected_at": "2026-07-25"
+      }
+    },
+    {
+      "surface_form": "岡本の長子公園",
+      "corrected_surface_form": "長子公園",
+      "probability": 0.95,
+      "variation_type": "particle_bleed",
+      "note": "兵庫県神戸市東灘区",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "a047878d9dbc220b86f136e90d0e69084c52a496765f1cb42d5cd1265cc50400",
+        "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WYkxtOWd5SWoxSHFhX1gtQkhoSHRaRFVCbmQ5dnhxMHFDbWd1MmdiTG5fajBONFJmemEtdU1nUFNpUzU0YnBZb2RzdlVoeDdDLVBIaXBFT1o?oc=5",
+        "detected_at": "2026-07-25"
+      }
+    },
+    {
+      "surface_form": "新逆井の南部公園さくら広場",
+      "corrected_surface_form": "南部公園さくら広場",
+      "probability": 0.95,
+      "variation_type": "particle_bleed",
+      "note": "千葉県柏市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "df4702109aa72be62342e707c6a64ced65f6b7caa0796bf462e6a37356730eb6",
+        "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTRGVVSDdQNGxURkVwYmFZcEFMcC1nOFlWSjlSS0ZDVUJucC1wU2tpN0czdXA2dzh0dW1uTGhOZkJYQkdkYkJVYXJBNmxjeUU?oc=5",
+        "detected_at": "2026-07-16"
+      }
+    },
+    {
+      "surface_form": "佐世保市の島瀬公園",
+      "corrected_surface_form": "島瀬公園",
+      "probability": 0.97,
+      "variation_type": "particle_bleed",
+      "note": "長崎県佐世保市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "8ac159bd907a85496c7cf6b88f26d02b560831de344698e5c3246c60c992d256",
+        "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjV1BhZmJZZWZKWU0zbmpqWER6Wm9jQ0NSdUJLeXZ3Vk5rY1d6UE9WTEJsWGRYZjZnb01PZGNWNWhxSXlDRXppaFB0NmZ2U0pJbVVLMWJB?oc=5",
+        "detected_at": "2026-08-07"
+      }
+    },
+    {
+      "surface_form": "大阪市の長居公園",
+      "corrected_surface_form": "長居公園",
+      "probability": 0.97,
+      "variation_type": "particle_bleed",
+      "note": "大阪府大阪市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "f9410c09509a905c771afafbca0d358056725684391f151b31bf131379cf71bd",
+        "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sODNvU2JyU2lJMmpzNHVWYlp3NUMtbHU1RG11QXNXOUZuNUstLU1zRkh5QUxZMWFpOWtpNGZnVVNXb0JrVXdDRFl1cFlESXdwN1E?oc=5",
+        "detected_at": "2026-07-02"
+      }
+    },
+    {
+      "surface_form": "岐阜市の岐阜公園",
+      "corrected_surface_form": "岐阜公園",
+      "probability": 0.97,
+      "variation_type": "particle_bleed",
+      "note": "岐阜県岐阜市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "6f2b63954c53ab04c83cfeb47f0e86908718e29f6ceeba3f77f28a9640d309e7",
+        "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01czY3MmJUMktubXV1OVNMZlhLOUdtYlk4c2x0Wk5UUTFHRUhpX2twVUFqTThWZ2luWXFRdXhNU2ZQV09WY0ZlSzAySFBzbXB2bTZMbER3?oc=5",
+        "detected_at": "2026-07-18"
+      }
+    },
+    {
+      "surface_form": "京都市上京区の公園",
+      "corrected_surface_form": "（会場名なし・所在地のみ）",
+      "probability": 0.9,
+      "variation_type": "no_venue_name",
+      "note": "京都府京都市上京区／記事が会場名を書いていない",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "d1089c9732afda34a206fecf310eaa2668b5d6657b876349f9775689fab71445",
+        "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE52ZTJvTHJqVHFHQXAxSkUxSXRDY0twOV9adEl4UzVNdnZFeldSY3VIV0RzM3pndVhEaGhYcmRjem01MnR6c04zcmRWOW1oTDQycl96ZXpZbWk?oc=5",
+        "detected_at": "2026-08-05"
+      }
+    },
+    {
+      "surface_form": "被害あった長者山新羅神社",
+      "corrected_surface_form": "長者山新羅神社",
+      "probability": 0.95,
+      "variation_type": "modifier_bleed",
+      "note": "青森県八戸市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "b27e03928671da140b471726e09ae2f84807e72a8a2da9d092d606db04df0565",
+        "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wdFBlM09tak1zNHRRVjE1eVhvY0hNOGtYYXEyZHVrSnN5UjhWUG1PekVaMG8yRFRGcUR1YldEQVFaRS05QmF6TnVpWjMtR3NIeVRlTXNVZU9lSjl1RXVEa1B6cmhDWFE?oc=5",
+        "detected_at": "2026-07-15"
+      }
+    },
+    {
+      "surface_form": "名鉄レジャック跡地の広場",
+      "corrected_surface_form": "名鉄レジャック跡地の広場",
+      "probability": 0.8,
+      "variation_type": "informal_place",
+      "note": "愛知県名古屋市",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "30f13d3e7679374ddd0ff551c1cb441a73f6151ddceb5291905ca538fde29b64",
+        "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE01blV0VkhNNWRuUkxQVTZvQk8yNHMzUXM3MEpfTGlJN0dCQkVWYzBvVWoyRVMxMHJpTFZIYi1QMmtWbFYxYlFVZjU3SmJqbk9GYUdkaHBKWEN2QTQyRVVFRDVyYWxjTnk1akNZUjlNaHhvZXlxVW9rTERMeWdGMU0?oc=5",
+        "detected_at": "2026-06-30"
+      }
+    },
+    {
+      "surface_form": "楢葉の清之神社",
+      "corrected_surface_form": "清之神社",
+      "probability": 0.95,
+      "variation_type": "particle_bleed",
+      "note": "福島県楢葉町",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "aac2d4664a9f7141bd7ba0e20ed22e93fb9297bad76b6e155698f4b7a58616df",
+        "source_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1iWWQ1QjdMQ1d0bC1ybUtGTHVjdktER3VLZ1J1aXNnOGR5YzVJQV95a05DZHROSXlFVlNlU1JFTG83bGZncUxNNWRQMA?oc=5",
+        "detected_at": "2026-07-20"
+      }
+    },
+    {
+      "surface_form": "吉野ケ里歴史公園",
+      "corrected_surface_form": "吉野ヶ里歴史公園",
+      "probability": 0.99,
+      "variation_type": "kana_variant",
+      "note": "佐賀県吉野ヶ里町／「ケ」と「ヶ」の揺れ",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "1d0b90eaf675bd615c66d115da8130e29a10951dfe5d5ff95dd559ebda4e9561",
+        "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QUlduMEx2S0hnN3NDQWVEM2NJU0xwU3AtaUVNRGhvZFpIU1NQbWRBVzVteTh5ZjF2czRhamJyRUJZS1FLUVhuajRpdnE1TXVMSXpUU0ln?oc=5",
+        "detected_at": "2026-07-28"
+      }
+    },
+    {
+      "surface_form": "子ども広場",
+      "corrected_surface_form": "クラッセンス武蔵小杉 子ども広場",
+      "probability": 0.35,
+      "variation_type": "generic_noun",
+      "note": "神奈川県川崎市中原区",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "a0bb0a7bee152a913b903921a14a50f5dfd53df2d617dc37dc861ab037123b68",
+        "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZSEtVNV92dTF5Mnptc3hKaGVpWGJVWVpHNkRvc1NsaGw1SmpFNnBTdEJxbmJhVzZldGEydUVlR0tmZlRfVkF5anNULW1VdldwY0s5WE5YaEZraEE2eFE?oc=5",
+        "detected_at": "2026-08-09"
+      }
+    },
+    {
+      "surface_form": "中央商店街",
+      "corrected_surface_form": "中央商店街（佐世保）",
+      "probability": 0.3,
+      "variation_type": "generic_noun",
+      "note": "長崎県佐世保市／全国に同名多数",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "f2f509b41f0c2792ecc038308a3b3e1a6a7066eadfab3e9164d8218dd0c93d0b",
+        "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92cmtzcFVTR3dvT1BHTS1LU3czMnNnM2cybmVlaklmeTd3ZVZaYWJXR0Z3dVo1TGxvejNud3RwWTBwRXMtRlVtSVhKNV85d0NpLVdrS2VJbDItYVRDWm83VTBsWlVfREdvVHR6U2tUb2czZ1VTSXFfUnJNc0hwZU0?oc=5",
+        "detected_at": "2026-08-01"
+      }
+    },
+    {
+      "surface_form": "駅前広場",
+      "corrected_surface_form": "京都駅ビル 駅前広場",
+      "probability": 0.2,
+      "variation_type": "generic_noun",
+      "note": "京都府京都市／全国に同名多数",
+      "out_of_publication_scope": true,
+      "observed_in": {
+        "source": "torimochi_queue",
+        "queue_venue_key": "42930a69d670b0cb08c386ecb881841e68a064692214421ffe0e5fb83a9b3a32",
+        "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VaXVyZ0NsRzM3aU54MVdvUXBDaTNncXVxSEV3SUZmMDR5S2hkMUZJQS1lYm9WenFmVVhxaWZmd1dlTTJSMFVjYUZOTWJvVEJnS3duVmozZTJENzJiREJiNlpsV2xXdHky?oc=5",
+        "detected_at": "2026-07-28"
+      }
+    }
+  ],
+  "storage_note": "master RDB の venue_aliases.confidence は TEXT で 'manual'/'auto' という出所ラベルしか入らず、確率を保持できない。また rdb_builders/build_master_rdb.py が 'INSERT OR IGNORE INTO venue_aliases VALUES (?,?,?,?,?)' と列数を位置で決め打ちしているため、venue_aliases に列を足すと日次ビルドが壊れる。よって確率つき別名は独立したテーブルへ置く必要がある。このファイルはそのテーブルへ投入する元データであり、テーブルができるまでの正本でもある。"
+}
