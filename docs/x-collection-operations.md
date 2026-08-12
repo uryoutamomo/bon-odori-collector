@@ -94,3 +94,16 @@ python3 apply_poster_ocr_decisions.py --apply                          # 読み�
 `x_queries.json` の `budget`。日次$3.0（据え置き）/ 月次$25.0（2026-07-26に15から引き上げ）。
 月次を上げたのは、探索深度とクエリ本数を増やした結果、月内に上限へ当たって収集が
 全停止する事故を避けるため。実効的な安全弁は日次の方。
+
+予算停止の正本は従来どおり `data/x_budget.json` である。日別合計だけを持つこの形式は
+既存のguardとの互換性のため変えない。改善前後の費用と成果を比較する詳細台帳は
+`data/x_cost_ledger.json` に追記する。
+
+- 経路: `search`（query ID別）/ `whitelist` / `cohort_evidence` /
+  `candidate_probe` / `social_graph`（加えて能動検索が動いた場合は `proactive`）
+- 成果: API request数、取得件数、新規URL数、voices採用件数、証拠断片数、候補発見・昇格数
+- 同じ日・同じ経路の再実行も別エントリとして残す。台帳を上書き集計しないので、後から
+  失敗・再実行を含めて費用を検証できる。
+
+2026-08-11以前に経路別の機械記録はなかったため、同日Actionsログの手計測を初期行として
+登録している。内訳合計と共有予算台帳との差額は `unattributed` として明示し、推測で配分しない。

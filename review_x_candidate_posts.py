@@ -20,6 +20,7 @@ from pathlib import Path
 
 import collect
 from collection_support import x_budget_guard as budget_guard
+from collection_support import x_cost_ledger
 
 
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
@@ -237,6 +238,16 @@ def main():
     print(f"[review] recommendations: {output['recommendation_counts']}")
     print(f"[review] estimated cost: {total_credits} credits / ${output['cost_estimate']['usd']:.6f}")
     budget_guard.record_spend(output["cost_estimate"]["usd"])
+    x_cost_ledger.record_run(
+        "candidate_probe",
+        cost_usd=output["cost_estimate"]["usd"],
+        requests=total_calls,
+        tweets_fetched=sum(r.get("tweets_checked", 0) for r in results),
+        voices_accepted=sum(r.get("valuable_posts", 0) for r in results),
+        candidates_found=len(results),
+        candidates_promoted=output["recommendation_counts"]["promote"],
+        source="review_x_candidate_posts.py",
+    )
     print(f"[review] notion member sync skipped: {output['notion_member_sync']}")
     for r in results[:10]:
         print(
