@@ -81,6 +81,30 @@ DynamoDB の裏取りキュー `bon-odori-torimochi-queue` に溜まっていた
 - **隅田公園 芝生広場（台東区）** — 「隅田公園 七夕夜会」の盆踊りは実在するが開催日が
   裏取りできていない。会場自体は登録済み。
 
+## 登録時にやらかした取りこぼし（2026-08-12 当日中に修正済み）
+
+初回の適用で `venue.area` を「東京都品川区」のように**都名込み**で書いたため、
+9件とも公開exportから静かに落ちていた。
+
+`export_public_events.py` は
+
+```
+WHERE v.area IN ({ward_placeholders})
+```
+
+で会場を絞り、この `WARD_ORDER` の元になる `TOKYO_WARDS` は「品川区」のような
+**裸の区名**である。既存402会場も全て裸の区名で、都名つきは今回の9件だけだった。
+一致しないので除外されるが、**エラーもwarningも出ない**。RDBには正しく入っている
+のに公開JSONだけ件数が増えない、という形で現れる。
+
+同日の日次バッチ後に気づいて `area` を区名へ直し、S3へ再publishした。9件とも
+export条件を満たすことを確認済み。
+
+**教訓**：会場を新規登録したら、RDBに入ったことだけで満足せず
+`WHERE v.area IN (...) AND v.review_status='active' AND o.origin='curated'
+AND s.status='active' AND o.lifecycle_status NOT IN (...)` の5条件を実際に
+当てはめて、公開exportに乗るかまで確かめること。
+
 ## 精査中に見つかった会場マスタの誤り（別途要修正）
 
 - `ven_6de8544815288937`「靖国神社」の住所が **「東京都千代田区靖国2-3-1」** になっている。

@@ -6,7 +6,7 @@
     "title": "裏取りキュー由来・東京23区の未登録会場 一括精査（2026-08-12）",
     "account_key": "torimochi_queue_backfill",
     "notice_kind": "third_party_current_year",
-    "raw_text": "DynamoDB裏取りキュー（bon-odori-torimochi-queue）の candidate_type=会場 / status=要裏取り 189件のうち、会場マスタに未登録だった112件を「こと」がWeb裏取りし、東京23区内かつ盆踊り開催が確認できたものを新規登録候補としてまとめたもの。各イベントの一次・準一次出典URLは events[].detail_addendum に個別に記載している。区外・誤検知・既登録の判定内訳は data/queue_venue_backfill_20260812_triage.md を参照。",
+    "raw_text": "DynamoDB裏取りキュー（bon-odori-torimochi-queue）の candidate_type=会場 / status=要裏取り 189件のうち、会場マスタに未登録だった112件を「こと」がWeb裏取りし、東京23区内かつ盆踊り開催が確認できたものを新規登録候補としてまとめたもの。各イベントの一次・準一次出典URLは events[].detail_addendum に個別に記載している。区外・誤検知・既登録の判定内訳は data/queue_venue_backfill_20260812_triage.md を参照。【2026-08-12 追記】当初 venue.area を「東京都品川区」のように都名込みで書いたため、export_public_events.py の WHERE v.area IN (TOKYO_WARDS) に一致せず9件とも公開exportから弾かれた。TOKYO_WARDS は「品川区」のような裸の区名なので、area は区名だけにする。",
     "url": "https://github.com/uryoutamomo/bon-odori-collector/blob/main/data/queue_venue_backfill_20260812_triage.md"
   },
   "events": [
@@ -19,7 +19,7 @@
       "date_end": "2026-07-12",
       "venue": {
         "name": "蛇窪神社",
-        "area": "東京都品川区",
+        "area": "品川区",
         "address": "東京都品川区二葉4-4-12",
         "access": "都営浅草線 中延駅から徒歩5分／東急大井町線 中延駅から徒歩6分／JR横須賀線 西大井駅から徒歩8分"
       },
@@ -35,7 +35,7 @@
       "date_end": "2026-07-05",
       "venue": {
         "name": "浅草神社",
-        "area": "東京都台東区",
+        "area": "台東区",
         "address": "東京都台東区浅草2-3-1"
       },
       "notice_kind_override": "official_current_year",
@@ -49,7 +49,7 @@
       "date_start": "2026-07-26",
       "venue": {
         "name": "権之助坂商店街",
-        "area": "東京都目黒区",
+        "area": "目黒区",
         "address": "東京都目黒区下目黒1丁目 JR目黒駅西口前道路",
         "access": "JR・東京メトロ・東急 目黒駅 西口すぐ"
       },
@@ -64,7 +64,7 @@
       "date_end": "2026-07-25",
       "venue": {
         "name": "碑文谷公園",
-        "area": "東京都目黒区",
+        "area": "目黒区",
         "address": "東京都目黒区碑文谷6-9-11"
       },
       "detail_addendum": "18:00〜21:00（最終日は20:30まで）。会場は園内の池の北側。キッチンカーは17:00から、模擬店は17:30から。出典: 碑文谷６丁目自治会 https://himonya6.jp/?p=2416"
@@ -78,7 +78,7 @@
       "date_end": "2026-07-19",
       "venue": {
         "name": "北新井公園",
-        "area": "東京都練馬区",
+        "area": "練馬区",
         "address": "東京都練馬区豊玉上1-23-4"
       },
       "notice_kind_override": "official_current_year",
@@ -93,7 +93,7 @@
       "date_end": "2026-07-26",
       "venue": {
         "name": "三原台公園",
-        "area": "東京都練馬区",
+        "area": "練馬区",
         "address": "東京都練馬区三原台3-7-38"
       },
       "detail_addendum": "18:00〜20:00。主催は三原台町会。出典: 盆踊りまるごと情報「盆まる」（全日本民踊指導者連盟） https://bonmaru.zenmin-odori.jp/archives/202802"
@@ -107,7 +107,7 @@
       "date_end": "2026-07-24",
       "venue": {
         "name": "浦守稲荷神社",
-        "area": "東京都大田区",
+        "area": "大田区",
         "address": "東京都大田区大森南"
       },
       "detail_addendum": "主催は大森南自治会。会場住所は町名までしか裏取りできておらず、番地は未確定。出典: おーたふる／大田区商店街連合会（準公式） https://otakushoren.com/event/163825"
@@ -120,7 +120,7 @@
       "date_start": "2026-07-18",
       "venue": {
         "name": "中原八幡神社",
-        "area": "東京都葛飾区",
+        "area": "葛飾区",
         "address": "東京都葛飾区青戸2-2-2",
         "access": "京成本線 青砥駅 東口から徒歩1分"
       },
@@ -134,7 +134,7 @@
       "date_start": "2026-07-18",
       "venue": {
         "name": "秋葉神社",
-        "area": "東京都墨田区",
+        "area": "墨田区",
         "address": "東京都墨田区向島4丁目"
       },
       "detail_addendum": "境内のやぐらを囲む町会主体の盆踊り。会場住所は町名までしか一次資料で裏取りできておらず、番地は未確定。出典: すみだ経済新聞 https://sumida.keizai.biz/headline/1861 ／神社公式 https://mukojimaakiba.jp/"
