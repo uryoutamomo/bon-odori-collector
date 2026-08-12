@@ -93,6 +93,7 @@ X_COLLECTION_HEALTH_REPORT = os.environ.get(
 )
 GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
 X_GAP_CREDITS_FILE = "data/x_gap_credits.json"
+X_ROSTER_EXCLUSIONS_FILE = "data/x_roster_exclusions.json"
 X_MASTER_RUNTIME_FILE = "data/x_bonodorer_master_runtime.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
@@ -1332,6 +1333,9 @@ _X_TOKYO23_PLACE_RE = re.compile(
     r"両国|浜町|高島平|千住|谷中|根津|白金|世田谷|杉並|豊島|荒川|足立|葛飾|江戸川|"
     r"板橋|練馬|中野|品川|墨田|江東|台東|文京"
 )
+# Do not treat "東京音頭" as geographic evidence, but retain an explicit
+# Tokyo-side mention in a post that also names another region (e.g. 東京と大阪).
+_X_TOKYO23_CONTEXT_RE = re.compile(r"東京(?:都|23区|の|と|、|・|及び|および)")
 _X_OPINION_RE = re.compile(
     r"と思|感じ|好き|嬉し|楽し|良かっ|よかっ|最高|素晴らし|残念|寂し|懐かし|"
     r"なぜ|理由|文化|歴史|伝統|変わ|続け|工夫|課題|問題|意味|べき|かもしれ|気がする|印象|"
@@ -1388,12 +1392,26 @@ def _x_runtime_match(text, values):
     return any(value and value in text for value in values)
 
 
+def _x_has_tokyo23_evidence(text, *, has_place=False, has_event=False):
+    """Return Tokyo-23 evidence without discarding evidence from mixed posts.
+
+    A post can explicitly name both Tokyo and another area.  That is useful
+    evidence for both dimensions, rather than a reason to erase the Tokyo
+    match as the former exclusive classifier did.
+    """
+    explicit_ward = bool(TOKYO_23_RE.search(text) and not _X_OTHER_WARD_CITY_RE.search(text))
+    return bool(
+        explicit_ward
+        or _X_TOKYO23_CONTEXT_RE.search(text)
+        or _X_TOKYO23_PLACE_RE.search(text)
+        or has_place
+        or has_event
+    )
+
+
 def _x_is_tokyo23_text(text):
-    """Whether post text names Tokyo's 23 wards, guarding same-named city wards."""
-    if (_X_OTHER_WARD_CITY_RE.search(text) or NON_TOKYO_PREF_RE.search(text)
-            or KNOWN_OUTSIDE_TOKYO_23_RE.search(text)):
-        return False
-    return bool(TOKYO_23_RE.search(text) or _X_TOKYO23_PLACE_RE.search(text))
+    """Backward-compatible text-only Tokyo-23 evidence helper."""
+    return _x_has_tokyo23_evidence(text)
 
 
 def _x_is_outside_tokyo23_text(text):
@@ -1414,6 +1432,29 @@ def _load_x_gap_credits(path=None):
         for handle, value in raw.items()
         if _norm_handle(handle) and isinstance(value, (int, float))
     }
+
+
+def _load_x_roster_exclusions(path=None):
+    """Load reviewed X-account exclusions, accepting the shelf export shape too."""
+    try:
+        with open(path or X_ROSTER_EXCLUSIONS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    rows = payload.get("exclusions", payload.get("excluded", [])) if isinstance(payload, dict) else []
+    result = {}
+    for row in rows if isinstance(rows, list) else []:
+        if not isinstance(row, dict):
+            continue
+        handle = _norm_handle(row.get("handle"))
+        if not handle:
+            continue
+        result[handle] = {
+            **row,
+            "handle": f"@{handle}",
+            "reason": row.get("reason") or row.get("why") or "その他",
+        }
+    return result
 
 
 def _x_smoothed_ratio(count, total, base):
@@ -1469,8 +1510,6 @@ def _add_x_bonodorer_scores(accounts, text_metrics, gap_credits):
         announce = min(10.0, 10 * math.log1p(row.get("recent_future_schedule_posts", 0)) / math.log1p(20))
         announce += 14 * row["bon23_ratio"]
         announce -= 5 * max(0.0, row["listy_ratio"] - 0.30)
-        if row["bon23_count"] <= 1 and posts >= 5:
-            announce = min(announce, 8.0)
         announce += min(5.0, 1.2 * row.get("change_count", 0))
         announce += 5 * min(row["gap_credits"], 3)
         if row["is_area_bot"]:
@@ -1568,10 +1607,18 @@ def _build_x_account_scores(voices, cfg=None):
             has_place = _x_runtime_match(text, master_runtime["places"])
             has_event = _x_runtime_match(text, master_runtime["events"])
             has_song = _x_runtime_match(text, master_runtime["songs"]) or bool(_X_DETAIL_RE.search(text))
-            is23 = _x_is_tokyo23_text(text) or has_place
+            has_tokyo23_evidence = _x_has_tokyo23_evidence(
+                text, has_place=has_place, has_event=has_event
+            )
+            has_outside_evidence = _x_is_outside_tokyo23_text(text)
+            # Persist independent post-level evidence so a mixed post remains
+            # visible to later inspection instead of being forced into one
+            # exclusive geographic bucket.
+            v["has_tokyo23_evidence"] = has_tokyo23_evidence
+            v["has_outside_evidence"] = has_outside_evidence
             metrics["bon_count"] += int(is_bon)
-            metrics["bon23_count"] += int(is_bon and is23)
-            metrics["outside_count"] += int(_x_is_outside_tokyo23_text(text))
+            metrics["bon23_count"] += int(is_bon and has_tokyo23_evidence)
+            metrics["outside_count"] += int(has_outside_evidence)
             metrics["url_count"] += int("http" in text.lower() or "t.co/" in text.lower())
             lines = [line for line in text.splitlines() if line.strip()]
             metrics["listy_count"] += int(
@@ -1583,11 +1630,11 @@ def _build_x_account_scores(voices, cfg=None):
             )
             metrics["detail_count"] += int(bool(_X_DETAIL_RE.search(text)))
             metrics["media_count"] += int(bool(v.get("media_urls")))
-            onsite = is_bon and is23 and (
+            onsite = is_bon and has_tokyo23_evidence and (
                 any(keyword in text.lower() for keyword in experience_style_keywords)
                 or bool(_X_ONSITE_RE.search(text))
             )
-            metrics["change_count"] += int(is_bon and is23 and bool(_X_CHANGE_RE.search(text)))
+            metrics["change_count"] += int(is_bon and has_tokyo23_evidence and bool(_X_CHANGE_RE.search(text)))
             metrics["onsite23_count"] += int(onsite)
             metrics["photo23_count"] += int(onsite and bool(v.get("media_urls")))
             metrics["song_count"] += int(has_song)

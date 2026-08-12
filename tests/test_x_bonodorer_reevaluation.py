@@ -1,9 +1,11 @@
 import tempfile
 import unittest
+import json
 from pathlib import Path
 from unittest.mock import patch
 
 import collect
+from scripts.check_x_bonodorer_gold import build_rosters
 
 
 def voice(handle, text, day, *, media=False):
@@ -22,6 +24,74 @@ class XBonodorerReevaluationTest(unittest.TestCase):
 
         self.assertEqual(scores["accounts"]["nagoya"]["bon23_count"], 0)
         self.assertEqual(scores["accounts"]["setagaya"]["bon23_count"], 1)
+
+    def test_mixed_post_keeps_tokyo23_and_outside_evidence_independently(self):
+        post = voice("mixed", "東京の盆踊りと大阪市の盆踊りを紹介します", 1)
+        scores = collect._build_x_account_scores([post])
+
+        self.assertTrue(post["has_tokyo23_evidence"])
+        self.assertTrue(post["has_outside_evidence"])
+        self.assertEqual(scores["accounts"]["mixed"]["bon23_count"], 1)
+        self.assertEqual(scores["accounts"]["mixed"]["outside_count"], 1)
+
+    def test_master_event_name_is_tokyo23_evidence(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            runtime = Path(tmpdir) / "runtime.json"
+            runtime.write_text(json.dumps({
+                "songs": [], "places": [], "events": ["鉄砲洲納涼盆踊り", "大井どんたく夏まつり"],
+            }), encoding="utf-8")
+            scores = collect._build_x_account_scores([
+                voice("teppo", "鉄砲洲納涼盆踊りへ行きました", 1),
+                voice("oi", "大井どんたく夏まつりの盆踊りを開催します", 1),
+            ], {"x_bonodorer_master_runtime_file": str(runtime)})
+
+        self.assertEqual(scores["accounts"]["teppo"]["bon23_count"], 1)
+        self.assertEqual(scores["accounts"]["oi"]["bon23_count"], 1)
+
+    def test_announce_score_is_not_capped_by_missing_tokyo23_evidence(self):
+        account = {"release": {
+            "handle": "@release", "recent_future_schedule_posts": 20,
+            "profile_description": "", "recent_posts_seen": 1,
+        }}
+        metrics = {"release": {
+            "posts_with_text": 20, "bon_count": 20, "bon23_count": 0,
+            "outside_count": 0, "url_count": 0, "listy_count": 0,
+            "opinion_count": 0, "experience_count": 0, "detail_count": 0,
+            "media_count": 0, "text_length": 100, "post_days": {"2026-08-01"},
+            "change_count": 0, "onsite23_count": 0, "photo23_count": 0,
+            "song_count": 0, "place_count": 0,
+        }}
+        collect._add_x_bonodorer_scores(account, metrics, {})
+        self.assertGreater(account["release"]["announce_score"], 8.0)
+
+    def test_roster_keeps_unknown_evidence_account_unless_a_final_exclusion_applies(self):
+        accounts = {
+            "unknown": {"announce_score": 9, "record_score": 9, "is_area_bot": False},
+            "bot": {"announce_score": 99, "record_score": 99, "is_area_bot": True},
+            "reviewed": {"announce_score": 99, "record_score": 99, "is_area_bot": False},
+            "paused": {"announce_score": 99, "record_score": 99, "is_area_bot": False},
+            "manual": {"announce_score": -99, "record_score": -99, "is_area_bot": False},
+        }
+        rosters = build_rosters(
+            accounts,
+            {"paused": "休止", "manual": "優先"},
+            {"reviewed": {"reason": "東京以外が中心"}},
+        )
+        self.assertIn("unknown", rosters["announce"])
+        self.assertNotIn("bot", rosters["announce"])
+        self.assertNotIn("reviewed", rosters["record"])
+        self.assertNotIn("paused", rosters["record"])
+        self.assertIn("manual", rosters["announce"])
+        self.assertEqual(rosters["eligibility"]["reviewed"], "reviewed_exclusion")
+
+    def test_shelf_exclusion_export_uses_why_as_reason(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            path = Path(tmpdir) / "shelf.json"
+            path.write_text(json.dumps({"excluded": [{
+                "handle": "@reviewed", "why": "東京以外が中心", "memo": "棚卸し済み",
+            }]}), encoding="utf-8")
+            exclusions = collect._load_x_roster_exclusions(path)
+        self.assertEqual(exclusions["reviewed"]["reason"], "東京以外が中心")
 
     def test_small_sample_ratio_is_shrunk_toward_the_base_rate(self):
         self.assertLess(collect._x_smoothed_ratio(3, 3, 0.35), 1.0)
