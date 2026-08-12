@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from collection_support import x_budget_guard as budget_guard
+from collection_support import x_cost_ledger
 
 
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
@@ -273,6 +274,14 @@ def main():
     print(f"[social] candidates: {len(out_candidates)}")
     print(f"[social] estimated cost: {graph['cost_estimate']['credits']} credits / ${graph['cost_estimate']['usd']:.6f}")
     budget_guard.record_spend(graph["cost_estimate"]["usd"])
+    x_cost_ledger.record_run(
+        "social_graph",
+        cost_usd=graph["cost_estimate"]["usd"],
+        requests=graph["cost_estimate"]["calls"],
+        tweets_fetched=graph["cost_estimate"]["returned_users"],
+        candidates_found=len(out_candidates),
+        source="discover_x_social_graph.py",
+    )
     for cand in out_candidates[:10]:
         print(f"[social] candidate {cand['handle']} score={cand['candidate_score']} by={len(cand['discovered_by'])} {cand['reasons'][:2]}")
     return 0

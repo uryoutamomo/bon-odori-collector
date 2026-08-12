@@ -34,6 +34,7 @@ from collection_support.event_evidence import (
 from collection_support.x_official_source_accounts import load_official_source_accounts
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
+from collection_support import x_cost_ledger
 from collection_support.x_collection_health import (
     check_health_report,
     finalize_health_report,
@@ -642,6 +643,12 @@ def _x_budget_state():
         return {}
 
 
+def _record_x_cost(route, **kwargs):
+    """Write route detail beside the shared budget file without changing it."""
+    ledger_path = Path(X_BUDGET_FILE).with_name("x_cost_ledger.json")
+    return x_cost_ledger.record_run(route, path=ledger_path, **kwargs)
+
+
 def _x_search(query, cursor=""):
     """twitterapi.io advanced_search を1ページ取得。429は呼び出し側で扱う。"""
     params = {"query": query, "queryType": "Latest"}
@@ -806,6 +813,11 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
         print(f"[x] {qid}: {query}")
         cursor = ""
         unit_completed = False
+        query_cost = 0.0
+        query_requests = 0
+        query_tweets = 0
+        query_new_urls = 0
+        query_accepted = 0
         for page in range(max_pages):
             # 予算の最終ガード（クエリ途中でも止まる）
             if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
@@ -849,6 +861,9 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
 
             tweets = data.get("tweets") or data.get("data") or []
             page_cost = len(tweets) * cost_per_tweet
+            query_requests += 1
+            query_tweets += len(tweets)
+            query_cost += page_cost
             record_success(
                 health,
                 "keyword",
@@ -869,6 +884,7 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
                 "batch_id": f"{qid}-page-{page + 1}",
                 "estimated_cost_usd": cost_per_tweet,
             })
+            query_new_urls += len(prepared)
             for _, v in prepared:
                 judgement = _score_voice(v["text"], cfg)
                 v["tags"] = [judgement, qid]
@@ -879,6 +895,7 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
                 new_seen.append(v["url"])
                 count += 1
             record_accepted(health, "keyword", qid, len(new_items) - accepted_before)
+            query_accepted += len(new_items) - accepted_before
             print(f"[x] {qid}: {count} 件処理（うち voices 採用 {sum(1 for x in new_items if qid in x.get('tags', []))} 件累計）")
 
             cursor = data.get("next_cursor") or data.get("cursor") or ""
@@ -890,6 +907,16 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
             mark_unit_complete(health, "keyword", qid)
         else:
             mark_unit_incomplete(health, "keyword", qid, "query_incomplete")
+        if query_cost > 0:
+            _record_x_cost(
+                "search",
+                query_id=qid,
+                cost_usd=query_cost,
+                requests=query_requests,
+                tweets_fetched=query_tweets,
+                new_urls=query_new_urls,
+                voices_accepted=query_accepted,
+            )
 
     # 予算消費を記録
     if run_cost > 0:
@@ -926,6 +953,9 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
     limit = int(config.get("max_x_queries_per_run", 6))
     year = datetime.now(timezone(timedelta(hours=9))).year
     new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+    ledger_requests = 0
+    ledger_tweets = 0
+    ledger_new_urls = 0
 
     selected_targets = targets[:limit]
     set_planned_units(health, "proactive", len(selected_targets))
@@ -952,6 +982,8 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
         tweets = data.get("tweets") or data.get("data") or []
         request_cost = max(len(tweets), 1) * cost_per_tweet
         run_cost += request_cost
+        ledger_requests += 1
+        ledger_tweets += len(tweets)
         record_success(
             health,
             "proactive",
@@ -966,6 +998,7 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
             "batch_id": f"venue-{target.get('venue') or 'unknown'}",
             "estimated_cost_usd": cost_per_tweet,
         })
+        ledger_new_urls += len(prepared)
         for _, voice in prepared:
             voice["source"] = "x_proactive"
             voice["tags"] = ["🔎能動検索", target["venue"]]
@@ -983,6 +1016,15 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
                 json.dump(state, f, ensure_ascii=False, indent=2)
         except Exception as exc:
             print(f"[proactive/x] 予算記録の保存エラー: {exc}")
+    if run_cost > 0:
+        _record_x_cost(
+            "proactive",
+            cost_usd=run_cost,
+            requests=ledger_requests,
+            tweets_fetched=ledger_tweets,
+            new_urls=ledger_new_urls,
+            voices_accepted=len(new_items),
+        )
     return new_items, new_seen
 
 
@@ -2204,6 +2246,9 @@ def collect_x_whitelist(seen_urls, health=None):
     _sync_x_account_scores_to_notion(accounts, cfg)
     ranked_handles = _rank_whitelist_accounts(accounts, cfg)
     new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+    ledger_requests = 0
+    ledger_tweets = 0
+    ledger_new_urls = 0
     known_venues = _load_known_venues()
 
     search_batches = []
@@ -2281,6 +2326,8 @@ def collect_x_whitelist(seen_urls, health=None):
             tweets = data.get("tweets") or data.get("data") or []
             request_cost = max(len(tweets), 1) * cost_per_tweet
             run_cost += request_cost  # 空振りも1件課金
+            ledger_requests += 1
+            ledger_tweets += len(tweets)
             record_success(
                 health,
                 "whitelist",
@@ -2294,6 +2341,7 @@ def collect_x_whitelist(seen_urls, health=None):
                 "batch_id": f"batch-{batch_index}-page-{page}",
                 "estimated_cost_usd": cost_per_tweet,
             })
+            ledger_new_urls += len(prepared)
             accepted_before = len(new_items)
             for _, v in prepared:
                 v["source"] = "x_whitelist"
@@ -2340,6 +2388,15 @@ def collect_x_whitelist(seen_urls, health=None):
                 json.dump(state, f, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"[whitelist] 予算記録の保存エラー: {e}")
+    if run_cost > 0:
+        _record_x_cost(
+            "whitelist",
+            cost_usd=run_cost,
+            requests=ledger_requests,
+            tweets_fetched=ledger_tweets,
+            new_urls=ledger_new_urls,
+            voices_accepted=len(new_items),
+        )
     if all_batches_completed and search_batches:
         _save_whitelist_since(run_started_at)
     else:
@@ -2554,6 +2611,7 @@ def collect_event_evidence_history():
     detected = []
     run_cost = 0.0
     pages = 0
+    ledger_tweets = 0
     batch_index = int(state.get("batch_index", 0))
     batch_cursors = state.get("batch_cursors") or {}
     completed_batches = set(state.get("completed_batches") or [])
@@ -2578,6 +2636,7 @@ def collect_event_evidence_history():
 
         tweets = data.get("tweets") or data.get("data") or []
         run_cost += max(len(tweets), 1) * cost_per_tweet
+        ledger_tweets += len(tweets)
         state["tweets_scanned"] = int(state.get("tweets_scanned", 0)) + len(tweets)
         page_evidence = []
         for tweet in tweets:
@@ -2612,6 +2671,14 @@ def collect_event_evidence_history():
         budget_state[today] = daily_spent + run_cost
         with open(X_BUDGET_FILE, "w", encoding="utf-8") as f:
             json.dump(budget_state, f, ensure_ascii=False, indent=2)
+    if run_cost > 0:
+        _record_x_cost(
+            "cohort_evidence",
+            cost_usd=run_cost,
+            requests=pages,
+            tweets_fetched=ledger_tweets,
+            evidence_detected=len(detected),
+        )
     if len(completed_batches) >= len(batches):
         state["status"] = "awaiting_review"
         state["completed_at"] = datetime.now(timezone.utc).isoformat()
