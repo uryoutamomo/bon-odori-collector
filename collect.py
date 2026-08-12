@@ -4,6 +4,7 @@ import sys
 import json
 import hashlib
 import html
+import math
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -47,6 +48,7 @@ from collection_support.x_collection_health import (
     set_planned_units,
     write_health_report,
 )
+from collection_support.tokyo23_scope import TOKYO_23_RE, NON_TOKYO_PREF_RE, KNOWN_OUTSIDE_TOKYO_23_RE
 
 try:
     import feedparser
@@ -88,6 +90,7 @@ X_COLLECTION_HEALTH_REPORT = os.environ.get(
     "data/x_collection_health_report.json",
 )
 GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
+X_GAP_CREDITS_FILE = "data/x_gap_credits.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
 HOME_KEYWORDS = []
@@ -1268,6 +1271,128 @@ def _x_account_role_tags(top_reasons):
     return tags
 
 
+# These signals deliberately use the post body, rather than the existing
+# usefulness score.  The latter is retained for backwards compatibility and
+# continues to be the only score used by the current whitelist selection.
+_X_BONODORI_RE = re.compile(r"盆踊|盆おどり|ぼんおどり|納涼|音頭|やぐら|櫓|民踊")
+_X_OTHER_WARD_CITY_RE = re.compile(
+    r"札幌市|仙台市|さいたま市|千葉市|横浜市|川崎市|相模原市|新潟市|静岡市|浜松市|"
+    r"名古屋市|京都市|大阪市|堺市|神戸市|岡山市|広島市|北九州市|福岡市|熊本市"
+)
+_X_TOKYO23_PLACE_RE = re.compile(
+    r"浅草|上野|銀座|新宿|渋谷|池袋|麻布|六本木|築地|月島|佃|勝どき|晴海|日本橋|神田|秋葉原|"
+    r"錦糸町|押上|亀戸|北千住|巣鴨|高円寺|阿佐ヶ谷|下北沢|三軒茶屋|自由が丘|蒲田|大井町|"
+    r"五反田|目黒|恵比寿|代々木|荻窪|王子|十条|赤羽|葛西|小岩|清澄|門前仲町|深川|"
+    r"両国|浜町|高島平|千住|谷中|根津|白金|世田谷|杉並|豊島|荒川|足立|葛飾|江戸川|"
+    r"板橋|練馬|中野|品川|墨田|江東|台東|文京"
+)
+_X_OPINION_RE = re.compile(
+    r"と思|感じ|好き|嬉し|楽し|良かっ|よかっ|最高|素晴らし|残念|寂し|懐かし|"
+    r"なぜ|理由|文化|歴史|伝統|変わ|続け|工夫|課題|問題|意味|べき|かもしれ|気がする|印象|"
+    r"初めて|久しぶり|来年|また行|おすすめ"
+)
+_X_DETAIL_RE = re.compile(
+    r"炭坑節|東京音頭|ダンシング|きよし|花笠|河内音頭|八木節|大東京音頭|三宅|曲目|曲順|"
+    r"演目|生演奏|櫓|やぐら|太鼓|浴衣|屋台|盆唄|音頭取り|振り付け|練習会|講習会"
+)
+_X_LIST_DATE_RE = re.compile(r"\d{1,2}\s*[/月]\s*\d{1,2}")
+
+
+def _x_is_tokyo23_text(text):
+    """Whether post text names Tokyo's 23 wards, guarding same-named city wards."""
+    if (_X_OTHER_WARD_CITY_RE.search(text) or NON_TOKYO_PREF_RE.search(text)
+            or KNOWN_OUTSIDE_TOKYO_23_RE.search(text)):
+        return False
+    return bool(TOKYO_23_RE.search(text) or _X_TOKYO23_PLACE_RE.search(text))
+
+
+def _x_is_outside_tokyo23_text(text):
+    return bool(_X_OTHER_WARD_CITY_RE.search(text) or NON_TOKYO_PREF_RE.search(text)
+                or KNOWN_OUTSIDE_TOKYO_23_RE.search(text))
+
+
+def _load_x_gap_credits(path=None):
+    """Read the small cumulative ledger maintained alongside account scores."""
+    try:
+        with open(path or X_GAP_CREDITS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    raw = payload.get("credits", payload) if isinstance(payload, dict) else {}
+    return {
+        _norm_handle(handle): int(value)
+        for handle, value in raw.items()
+        if _norm_handle(handle) and isinstance(value, (int, float))
+    }
+
+
+def _x_smoothed_ratio(count, total, base):
+    return (count + 5 * base) / (total + 5)
+
+
+def _x_area_bot(row):
+    posts = row.get("posts_with_text", 0)
+    if posts < 4:
+        return False
+    return (
+        row.get("url_ratio", 0) >= 0.8
+        and row.get("experience_ratio", 0) <= 0.15
+        and row.get("bon23_count", 0) == 0
+        and (row.get("outside_ratio", 0) >= 0.4 or row.get("bon_ratio", 0) < 0.5)
+    )
+
+
+def _add_x_bonodorer_scores(accounts, text_metrics, gap_credits):
+    for handle, row in accounts.items():
+        metrics = text_metrics.get(handle, {})
+        posts = metrics.get("posts_with_text", 0)
+        if posts:
+            row.update({key: value for key, value in metrics.items() if key != "post_days"})
+            row["bon23_ratio"] = round(_x_smoothed_ratio(row["bon23_count"], posts, 0.10), 4)
+            row["listy_ratio"] = round(_x_smoothed_ratio(row["listy_count"], posts, 0.15), 4)
+            row["opinion_ratio"] = round(_x_smoothed_ratio(row["opinion_count"], posts, 0.35), 4)
+            row["experience_ratio"] = round(_x_smoothed_ratio(row["experience_count"], posts, 0.20), 4)
+            row["detail_ratio"] = round(_x_smoothed_ratio(row["detail_count"], posts, 0.30), 4)
+            row["media_ratio"] = round(_x_smoothed_ratio(row["media_count"], posts, 0.30), 4)
+            row["url_ratio"] = round(row["url_count"] / posts, 4)
+            row["bon_ratio"] = round(row["bon_count"] / posts, 4)
+            row["outside_ratio"] = round(row["outside_count"] / posts, 4)
+            row["avg_len"] = round(row["text_length"] / posts, 2)
+            row["distinct_post_days"] = len(metrics["post_days"])
+        else:
+            row.update({
+                "posts_with_text": 0, "bon23_count": 0, "bon23_ratio": 0.1,
+                "listy_ratio": 0.15, "opinion_ratio": 0.35, "experience_ratio": 0.2,
+                "detail_ratio": 0.3, "media_ratio": 0.3, "avg_len": 0.0,
+                "distinct_post_days": 0, "url_ratio": 0.0, "bon_ratio": 0.0,
+                "outside_ratio": 0.0,
+            })
+        row["gap_credits"] = gap_credits.get(handle, 0)
+        row["is_area_bot"] = _x_area_bot(row)
+        announce = min(10.0, 10 * math.log1p(row.get("recent_future_schedule_posts", 0)) / math.log1p(20))
+        announce += 14 * row["bon23_ratio"]
+        announce -= 5 * max(0.0, row["listy_ratio"] - 0.30)
+        if row["bon23_count"] == 0 and posts >= 5:
+            announce = min(announce, 8.0)
+        announce += 5 * min(row["gap_credits"], 3)
+        if row["is_area_bot"]:
+            announce -= 15
+        row["announce_score"] = round(announce, 2)
+
+        voice = 0.0
+        if posts >= 3:
+            voice = 10 * row["opinion_ratio"] * (0.5 + 0.5 * row["experience_ratio"])
+            voice += 6 * row["detail_ratio"] + 3 * row["media_ratio"]
+            voice += 4 * min(row["avg_len"] / 150, 1.0)
+            voice += 8 * row["bon23_ratio"] - 8 * row["listy_ratio"]
+            voice += 3 * min(row["distinct_post_days"] / 10, 1.0)
+            if row.get("recent_posts_seen", 0) == 0:
+                voice -= 3
+            if row["is_area_bot"]:
+                voice -= 10
+        row["voice_score"] = round(voice, 2)
+
+
 def _build_x_account_scores(voices, cfg=None):
     """voices.json などの過去投稿からアカウント価値スコアを作る。"""
     cfg = cfg or {}
@@ -1276,6 +1401,18 @@ def _build_x_account_scores(voices, cfg=None):
     recent_days = ranking_cfg.get("recent_days", 30)
     recent_cutoff = datetime.now(timezone.utc) - timedelta(days=recent_days)
     accounts = {}
+    text_metrics = {}
+    # `experience_keywords` remains the established quality signal used by
+    # _x_post_value_score.  This narrower list is only for estimating whether
+    # a writer is describing first-hand experience rather than publishing a
+    # program or song list.
+    experience_style_keywords = cfg.get("experience_style_keywords")
+    if experience_style_keywords is None:
+        non_experience_terms = {"曲目表", "曲順", "プログラム", "演目", "曲目発表"}
+        experience_style_keywords = [
+            term for term in cfg.get("experience_keywords", []) if term not in non_experience_terms
+        ]
+    experience_style_keywords = [str(term).lower() for term in experience_style_keywords if term]
     for v in voices:
         if v.get("source") not in ("x", "x_whitelist"):
             continue
@@ -1297,6 +1434,33 @@ def _build_x_account_scores(voices, cfg=None):
             "recent_noise_posts": 0,
             "recent_value_points": 0.0,
         })
+        text = str(v.get("text") or "")
+        if text:
+            metrics = text_metrics.setdefault(handle, {
+                "posts_with_text": 0, "bon_count": 0, "bon23_count": 0, "outside_count": 0,
+                "url_count": 0, "listy_count": 0, "opinion_count": 0, "experience_count": 0,
+                "detail_count": 0, "media_count": 0, "text_length": 0, "post_days": set(),
+            })
+            metrics["posts_with_text"] += 1
+            metrics["text_length"] += len(text)
+            date_text = str(v.get("date") or "")[:10]
+            if date_text:
+                metrics["post_days"].add(date_text)
+            is_bon = bool(_X_BONODORI_RE.search(text))
+            metrics["bon_count"] += int(is_bon)
+            metrics["bon23_count"] += int(is_bon and _x_is_tokyo23_text(text))
+            metrics["outside_count"] += int(_x_is_outside_tokyo23_text(text))
+            metrics["url_count"] += int("http" in text.lower() or "t.co/" in text.lower())
+            lines = [line for line in text.splitlines() if line.strip()]
+            metrics["listy_count"] += int(
+                sum(1 for line in lines if _X_LIST_DATE_RE.match(line.strip())) >= 3 or len(lines) >= 8
+            )
+            metrics["opinion_count"] += int(bool(_X_OPINION_RE.search(text)))
+            metrics["experience_count"] += int(
+                any(keyword in text.lower() for keyword in experience_style_keywords)
+            )
+            metrics["detail_count"] += int(bool(_X_DETAIL_RE.search(text)))
+            metrics["media_count"] += int(bool(v.get("media_urls")))
         row["posts_seen"] += 1
         value, reasons = _x_post_value_score(v, cfg, known)
         row["value_points"] += value
@@ -1371,6 +1535,7 @@ def _build_x_account_scores(voices, cfg=None):
         row["usefulness_score"] = _x_account_usefulness_score(row)
         row["role_tags"] = _x_account_role_tags(row.get("top_reasons", {}))
 
+    _add_x_bonodorer_scores(accounts, text_metrics, _load_x_gap_credits())
     _annotate_important_informants(accounts)
 
     return {
