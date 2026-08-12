@@ -20,6 +20,12 @@ CREATE INDEX idx_songs_title ON songs(normalized_title)
 
 CREATE INDEX idx_venues_name ON venues(normalized_name)
 
+CREATE INDEX idx_place_nodes_parent ON place_nodes(parent_place_id)
+
+CREATE INDEX idx_place_nodes_name ON place_nodes(normalized_name)
+
+CREATE INDEX idx_place_aliases_name ON place_aliases(normalized_alias)
+
 CREATE TABLE event_investigation_tasks (
   task_id TEXT PRIMARY KEY,
   occurrence_id TEXT,
@@ -335,6 +341,34 @@ CREATE TABLE venue_aliases (
   confidence TEXT NOT NULL DEFAULT 'manual',
   PRIMARY KEY (venue_id, normalized_alias),
   FOREIGN KEY (venue_id) REFERENCES venues(venue_id)
+)
+
+CREATE TABLE place_nodes (
+  place_id TEXT PRIMARY KEY,
+  place_type TEXT NOT NULL CHECK(place_type IN ('prefecture', 'municipality', 'locality', 'site')),
+  canonical_name TEXT NOT NULL,
+  normalized_name TEXT NOT NULL,
+  parent_place_id TEXT,
+  latitude REAL,
+  longitude REAL,
+  memo TEXT,
+  source TEXT NOT NULL,
+  confidence TEXT NOT NULL DEFAULT 'official',
+  review_status TEXT NOT NULL DEFAULT 'active',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  UNIQUE(parent_place_id, normalized_name),
+  FOREIGN KEY (parent_place_id) REFERENCES place_nodes(place_id)
+)
+
+CREATE TABLE place_aliases (
+  place_id TEXT NOT NULL,
+  alias TEXT NOT NULL,
+  normalized_alias TEXT NOT NULL,
+  source TEXT NOT NULL,
+  confidence TEXT NOT NULL DEFAULT 'manual',
+  PRIMARY KEY (place_id, normalized_alias),
+  FOREIGN KEY (place_id) REFERENCES place_nodes(place_id)
 )
 
 CREATE TABLE venues (
