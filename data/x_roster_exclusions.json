@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "note": "人が棚卸しで外したアカウント。機械はここにあるものを復活させない。",
+  "exclusions": [
+    {
+      "handle": "@prtimes_etm",
+      "reason": "企業・団体の宣伝",
+      "memo": "企業リリースの転載が中心",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@bot87bi",
+      "reason": "情報の転載・botで一次情報がない",
+      "memo": "リンクを貼らない定型投稿bot。定型度の自動判定はS3dで検討する",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@mau3_141592",
+      "reason": "東京以外が中心",
+      "memo": "盆踊り好きの個人だが関西中心で23区の投稿がない",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@ichikawa_news",
+      "reason": "東京以外が中心",
+      "memo": "市川市の地域ニュース。盆踊りの記事も出すが都外率0.95。機械のbot条件では体験表現がわずかに閾値を超えて捕まらない",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@shonanjincom",
+      "reason": "東京以外が中心",
+      "memo": "湘南エリアの総合情報。同上でbot条件を僅差で外れる",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    }
+  ]
+}

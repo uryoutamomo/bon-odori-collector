@@ -93,6 +93,7 @@ X_COLLECTION_HEALTH_REPORT = os.environ.get(
 )
 GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
 X_GAP_CREDITS_FILE = "data/x_gap_credits.json"
+X_ROSTER_EXCLUSIONS_FILE = "data/x_roster_exclusions.json"
 X_MASTER_RUNTIME_FILE = "data/x_bonodorer_master_runtime.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
@@ -1431,6 +1432,29 @@ def _load_x_gap_credits(path=None):
         for handle, value in raw.items()
         if _norm_handle(handle) and isinstance(value, (int, float))
     }
+
+
+def _load_x_roster_exclusions(path=None):
+    """Load reviewed X-account exclusions, accepting the shelf export shape too."""
+    try:
+        with open(path or X_ROSTER_EXCLUSIONS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    rows = payload.get("exclusions", payload.get("excluded", [])) if isinstance(payload, dict) else []
+    result = {}
+    for row in rows if isinstance(rows, list) else []:
+        if not isinstance(row, dict):
+            continue
+        handle = _norm_handle(row.get("handle"))
+        if not handle:
+            continue
+        result[handle] = {
+            **row,
+            "handle": f"@{handle}",
+            "reason": row.get("reason") or row.get("why") or "その他",
+        }
+    return result
 
 
 def _x_smoothed_ratio(count, total, base):

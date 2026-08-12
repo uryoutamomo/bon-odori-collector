@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import collect
-from scripts.check_x_bonodorer_gold import rank
+from scripts.check_x_bonodorer_gold import build_rosters
 
 
 def voice(handle, text, day, *, media=False):
@@ -64,11 +64,34 @@ class XBonodorerReevaluationTest(unittest.TestCase):
         collect._add_x_bonodorer_scores(account, metrics, {})
         self.assertGreater(account["release"]["announce_score"], 8.0)
 
-    def test_gold_ranking_keeps_accounts_without_tokyo23_evidence(self):
-        self.assertEqual(
-            rank({"unknown": {"bon23_count": 0, "announce_score": 9}}, "announce_score"),
-            {"unknown": 1},
+    def test_roster_keeps_unknown_evidence_account_unless_a_final_exclusion_applies(self):
+        accounts = {
+            "unknown": {"announce_score": 9, "record_score": 9, "is_area_bot": False},
+            "bot": {"announce_score": 99, "record_score": 99, "is_area_bot": True},
+            "reviewed": {"announce_score": 99, "record_score": 99, "is_area_bot": False},
+            "paused": {"announce_score": 99, "record_score": 99, "is_area_bot": False},
+            "manual": {"announce_score": -99, "record_score": -99, "is_area_bot": False},
+        }
+        rosters = build_rosters(
+            accounts,
+            {"paused": "休止", "manual": "優先"},
+            {"reviewed": {"reason": "東京以外が中心"}},
         )
+        self.assertIn("unknown", rosters["announce"])
+        self.assertNotIn("bot", rosters["announce"])
+        self.assertNotIn("reviewed", rosters["record"])
+        self.assertNotIn("paused", rosters["record"])
+        self.assertIn("manual", rosters["announce"])
+        self.assertEqual(rosters["eligibility"]["reviewed"], "reviewed_exclusion")
+
+    def test_shelf_exclusion_export_uses_why_as_reason(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            path = Path(tmpdir) / "shelf.json"
+            path.write_text(json.dumps({"excluded": [{
+                "handle": "@reviewed", "why": "東京以外が中心", "memo": "棚卸し済み",
+            }]}), encoding="utf-8")
+            exclusions = collect._load_x_roster_exclusions(path)
+        self.assertEqual(exclusions["reviewed"]["reason"], "東京以外が中心")
 
     def test_small_sample_ratio_is_shrunk_toward_the_base_rate(self):
         self.assertLess(collect._x_smoothed_ratio(3, 3, 0.35), 1.0)
