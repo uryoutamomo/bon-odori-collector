@@ -7,6 +7,38 @@
     "新野の盆踊り": "新野の盆踊り",
     "飛鳥山公園盆踊り": "飛鳥山公園"
   },
+  "entity_aliases": [
+    {
+      "canonical": "Min-Yoi's盆踊り",
+      "entity_type": "event",
+      "term": "Min-Yoi's盆踊り"
+    },
+    {
+      "canonical": "ぼーんとぅ盆踊り",
+      "entity_type": "event",
+      "term": "ぼーんとぅ盆踊り"
+    },
+    {
+      "canonical": "Min-Yoi's盆踊り",
+      "entity_type": "event",
+      "term": "ミンヨイズ盆踊り"
+    },
+    {
+      "canonical": "一宮盆踊り",
+      "entity_type": "event",
+      "term": "一宮盆踊り"
+    },
+    {
+      "canonical": "新野の盆踊り",
+      "entity_type": "event",
+      "term": "新野の盆踊り"
+    },
+    {
+      "canonical": "飛鳥山公園",
+      "entity_type": "event",
+      "term": "飛鳥山公園盆踊り"
+    }
+  ],
   "exclude_keywords": [
     "郡上踊り"
   ],

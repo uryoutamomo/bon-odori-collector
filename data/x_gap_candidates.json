@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-11T07:58:29.031664+00:00",
+  "generated_at": "2026-08-12T08:08:46.117366+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 24,
-  "archived_count": 51,
+  "archived_count": 53,
   "candidates": [
     {
       "candidate_id": "xgap_d78e768be57ee2ac",
@@ -1393,7 +1393,7 @@
       "source_count": 1
     },
     {
-      "candidate_id": "xgap_3262f019bf9af830",
+      "candidate_id": "xgap_b06e69e1f232eac3",
       "source_key": "x:2076792900260974804",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -1422,12 +1422,11 @@
         "2026/8/11"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-12",
         "2026-09-30",
         "2026-10-12"
       ],
-      "event_group_key": "informal:d9584dc221bc0fb2",
+      "event_group_key": "informal:699e08c129c6205b",
       "voice": {
         "source": "x",
         "account": "@SNS66524341",
@@ -1793,60 +1792,6 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_470aa2a8abe6da0b",
-      "source_key": "x:2082249297916281097",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/tokyo_eventinfo/status/2082249297916281097",
-      "source_text": "\n開催中です(7/10-8/11)「第75回江戸趣味納涼大会・うえの夏まつり」上野公園\nhttps://t.co/DkjquQM9G9",
-      "source_author": "@tokyo_eventinfo",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@tokyo_eventinfo",
-        "account_name": "東京フェスタ・イベント情報",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "7/10",
-        "8/11"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:1c88bde6c95dd867",
-      "voice": {
-        "source": "x_whitelist",
-        "account": "@tokyo_eventinfo",
-        "name": "東京フェスタ・イベント情報",
-        "title": "",
-        "text": "開催中です(7/10-8/11)「第75回江戸趣味納涼大会・うえの夏まつり」上野公園\nhttps://t.co/DkjquQM9G9",
-        "url": "https://x.com/tokyo_eventinfo/status/2082249297916281097",
-        "date": "2026-07-28T23:38:13+00:00",
-        "tweet_id": "2082249297916281097",
-        "tags": [
-          "⭐盆踊ラー",
-          "📅未来予定",
-          "🟡関心"
-        ],
-        "value_score": 16.0
-      },
-      "source_urls": [
-        "https://x.com/tokyo_eventinfo/status/2082249297916281097"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
       "candidate_id": "xgap_93e50c9a1ef51306",
       "source_key": "x:2082613391282045394",
       "lane_hint": "lane2",
@@ -1968,7 +1913,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_54d2edc2cf5d3870",
+      "candidate_id": "xgap_111eea68d8210c4e",
       "source_key": "x:2082667576501686746",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -1997,11 +1942,10 @@
         "8/14"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-14",
         "2026-08-16"
       ],
-      "event_group_key": "informal:fb15a39a7a1c08ad",
+      "event_group_key": "informal:479dc1f98c479373",
       "voice": {
         "source": "x",
         "account": "@mayu_singer",
@@ -2091,7 +2035,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_da44b8a7a9328984",
+      "candidate_id": "xgap_575fea8f856ac55c",
       "source_key": "x:2082674971940409499",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -2119,10 +2063,9 @@
         "8月16日"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-16"
       ],
-      "event_group_key": "informal:859f6f128bfe9785",
+      "event_group_key": "informal:b8a9fe05314da01a",
       "voice": {
         "source": "x",
         "account": "@akiichiko",
@@ -2210,7 +2153,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_7dbc119da5de9d17",
+      "candidate_id": "xgap_a6fd68f9639ac34d",
       "source_key": "x:2082706517447618923",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -2239,11 +2182,10 @@
         "8月13日"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-13",
         "2026-08-16"
       ],
-      "event_group_key": "informal:5bd987099dbbf144",
+      "event_group_key": "informal:9342bcc42c6c2047",
       "voice": {
         "source": "x",
         "account": "@harunomai",
@@ -2451,7 +2393,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_f899327ff3b1bf98",
+      "candidate_id": "xgap_5f98f778f652db39",
       "source_key": "x:2082762648303911000",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -2478,10 +2420,9 @@
         "8/12"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-12"
       ],
-      "event_group_key": "informal:9d4e56dde88f40a3",
+      "event_group_key": "informal:e9e9e38419124ebf",
       "voice": {
         "source": "x",
         "account": "@LUCK_A_SAY",
@@ -2503,62 +2444,6 @@
       },
       "source_urls": [
         "https://x.com/LUCK_A_SAY/status/2082762648303911000"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_2d4c43d59e659756",
-      "source_key": "x:2082763418138997008",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/LUCK_A_SAY/status/2082763418138997008",
-      "source_text": "\n8/11(火祝) 上野恩賜公園 [東京]\n\n[無料イベント / ツイキャス配信予定有]\n\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n共演：ひいらぎ繭 / はるのまい / 長澤明日香 / ほか\n\n※西村加奈は18:00〜出演予定\n※19:00〜盆踊り https://t.co/AlElgRVZlf",
-      "source_author": "@LUCK_A_SAY",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@luck_a_say",
-        "account_name": "Office L.A.S 公式アカウント",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/11"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:956b7d282ed96f4c",
-      "voice": {
-        "source": "x",
-        "account": "@LUCK_A_SAY",
-        "name": "Office L.A.S 公式アカウント",
-        "title": "",
-        "text": "8/11(火祝) 上野恩賜公園 [東京]\n\n[無料イベント / ツイキャス配信予定有]\n\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n共演：ひいらぎ繭 / はるのまい / 長澤明日香 / ほか\n\n※西村加奈は18:00〜出演予定\n※19:00〜盆踊り https://t.co/AlElgRVZlf",
-        "url": "https://x.com/LUCK_A_SAY/status/2082763418138997008",
-        "date": "2026-07-30T09:41:09+00:00",
-        "tweet_id": "2082763418138997008",
-        "tags": [
-          "🟡関心",
-          "q-cancel-change"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HOd2NyzbMAAjsIw.jpg",
-          "https://t.co/AlElgRVZlf",
-          "pic.x.com/AlElgRVZlf"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/LUCK_A_SAY/status/2082763418138997008"
       ],
       "corroboration_count": 1,
       "source_count": 1,
@@ -2621,7 +2506,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_cd0c08e10021d978",
+      "candidate_id": "xgap_f8e040cfdca8a274",
       "source_key": "x:2083391779257414139",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -2651,11 +2536,10 @@
         "8/20"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-17",
         "2026-08-20"
       ],
-      "event_group_key": "informal:0686656daaf9e460",
+      "event_group_key": "informal:bbad920092b9215f",
       "voice": {
         "source": "x",
         "account": "@TIN_COOKIES_",
@@ -2852,7 +2736,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_f7e7c2a5c2f0cd2d",
+      "candidate_id": "xgap_1e412382b2bc1ba8",
       "source_key": "x:2083825824944488452",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -2882,11 +2766,10 @@
         "8/13"
       ],
       "observed_dates": [
-        "2026-08-11",
         "2026-08-13",
         "2026-08-16"
       ],
-      "event_group_key": "informal:154b89c550754cf0",
+      "event_group_key": "informal:725da6fca9a7ff0d",
       "voice": {
         "source": "x",
         "account": "@_mari_desu_",
@@ -3758,73 +3641,6 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_cc2820e0d8c21595",
-      "source_key": "x:2086255423632646378",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/assetformer/status/2086255423632646378",
-      "source_text": "\n／\n葛西臨海水族園｜8/8(土)〜8/11(火・祝)\n【水族園で夕涼み】開園時間を20時まで3時間延長！海と空を感じる夏の夜の葛西臨海水族園へ出かけよう！！🐬🏮✨\n＼\n\n​🐟️ イベント概要\n開園時間を20時まで延長し、夜の生き物観察、日替わりトーク、和太鼓演奏＆盆踊り、ひんやり氷柱など夏限定プログラムが満載！（※入園は19時まで）\n​📅 開催日時\n2026年8月8日(土)〜 8月11日(火・祝)\n開園延長：〜20:00まで（最終入園 19:00）\n​✅ 注目ポイント・見どころ\n① 夕暮れ時のペンギン観察ガイド＆日替わりの特別夕涼みトークを開催！\n② 本館「空の広場」での迫力満点な和太鼓演奏＆みんなで踊れる盆踊り！\n③ さわれるひんやり氷柱や氷の彫刻実演（8/10限定）、お祭り屋台スタンドも登場！\n\n​17時以降は資料室も明かりを落とした暗闇仕様に大変身！スタッフ特製マグロ風鈴のフォトスポットや紙芝居など、潮風を感じながら家族や友達と最高の夏の夕涼みを満喫しよう！！🐬🎆❤️‍🔥",
-      "source_author": "@assetformer",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@assetformer",
-        "account_name": "Kong | お得×ライフハック",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/8",
-        "8/11",
-        "20時",
-        "3時",
-        "20時",
-        "19時",
-        "8月8日",
-        "8月11日",
-        "8/10",
-        "17時"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:4e23f5f50ad7e9a9",
-      "voice": {
-        "source": "x",
-        "account": "@assetformer",
-        "name": "Kong | お得×ライフハック",
-        "title": "",
-        "text": "／\n葛西臨海水族園｜8/8(土)〜8/11(火・祝)\n【水族園で夕涼み】開園時間を20時まで3時間延長！海と空を感じる夏の夜の葛西臨海水族園へ出かけよう！！🐬🏮✨\n＼\n\n​🐟️ イベント概要\n開園時間を20時まで延長し、夜の生き物観察、日替わりトーク、和太鼓演奏＆盆踊り、ひんやり氷柱など夏限定プログラムが満載！（※入園は19時まで）\n​📅 開催日時\n2026年8月8日(土)〜 8月11日(火・祝)\n開園延長：〜20:00まで（最終入園 19:00）\n​✅ 注目ポイント・見どころ\n① 夕暮れ時のペンギン観察ガイド＆日替わりの特別夕涼みトークを開催！\n② 本館「空の広場」での迫力満点な和太鼓演奏＆みんなで踊れる盆踊り！\n③ さわれるひんやり氷柱や氷の彫刻実演（8/10限定）、お祭り屋台スタンドも登場！\n\n​17時以降は資料室も明かりを落とした暗闇仕様に大変身！スタッフ特製マグロ風鈴のフォトスポットや紙芝居など、潮風を感じながら家族や友達と最高の夏の夕涼みを満喫しよう！！🐬🎆❤️‍🔥",
-        "url": "https://x.com/assetformer/status/2086255423632646378",
-        "date": "2026-08-09T00:57:08+00:00",
-        "tweet_id": "2086255423632646378",
-        "tags": [
-          "🟢一次レポ",
-          "q-song-program"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HPPePdpaQAA5IwP.jpg",
-          "https://t.co/IVkQAX11XN",
-          "pic.x.com/IVkQAX11XN",
-          "https://pbs.twimg.com/media/HPPePvJbEAA68ND.jpg",
-          "https://pbs.twimg.com/media/HPPeQA3bAAASlg9.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/assetformer/status/2086255423632646378"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
       "candidate_id": "xgap_ecb87bd1ab39c33b",
       "source_key": "x:2086333746874331146",
       "lane_hint": "lane2",
@@ -4049,229 +3865,6 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_af24240c4c58dba6",
-      "source_key": "x:2086842615128023205",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/harunomai/status/2086842615128023205",
-      "source_text": "\n👘本日のイベントに関しまして👘\n\n◾️8月11日（火）上野ゐの市盆踊り\n【会場】上野恩賜公園　袴腰広場\n【はるのまい出演時間】16:00〜\n\n台風15号が近づいている影響により\n「ゐの市盆踊り」の開催が微妙な状況です。\n\n天気予報は夕方から雨の可能性が出ておりますが、降雨の状況ではなく風の影響がある場合は晴天でも中止になる場合があります。\n(あくまで風の状況での開催の中断もしくは中止の判断になります。)\n\nステージプログラムに関しては臨機応変に対応させて頂く形になります。\n\nどうぞ宜しくお願い致します🙇‍♀️",
-      "source_author": "@harunomai",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@harunomai",
-        "account_name": "はるのまい",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月11日"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:77382ac3a66355f0",
-      "voice": {
-        "source": "x",
-        "account": "@harunomai",
-        "name": "はるのまい",
-        "title": "",
-        "text": "👘本日のイベントに関しまして👘\n\n◾️8月11日（火）上野ゐの市盆踊り\n【会場】上野恩賜公園　袴腰広場\n【はるのまい出演時間】16:00〜\n\n台風15号が近づいている影響により\n「ゐの市盆踊り」の開催が微妙な状況です。\n\n天気予報は夕方から雨の可能性が出ておりますが、降雨の状況ではなく風の影響がある場合は晴天でも中止になる場合があります。\n(あくまで風の状況での開催の中断もしくは中止の判断になります。)\n\nステージプログラムに関しては臨機応変に対応させて頂く形になります。\n\nどうぞ宜しくお願い致します🙇‍♀️",
-        "url": "https://x.com/harunomai/status/2086842615128023205",
-        "date": "2026-08-10T15:50:25+00:00",
-        "tweet_id": "2086842615128023205",
-        "tags": [
-          "🟢一次レポ",
-          "q-song-program"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HPX0S-UbkAAf38f.jpg",
-          "https://t.co/MluqHokcNd",
-          "pic.x.com/MluqHokcNd",
-          "https://pbs.twimg.com/media/HPX0S-VaAAAc4nS.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/harunomai/status/2086842615128023205"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_d5cb8691adbff9ab",
-      "source_key": "x:2086843246442144028",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/nagasawa_asuka/status/2086843246442144028",
-      "source_text": "\n明けて本日\n8/11(火)15:00〜\n上野恩賜公園 袴腰広場\n上野ゐの市盆踊り出演予定ですが、\n\n⚠️ 台風15号が近づいている影響により「ゐの市盆踊り」の開催が微妙な状況です。\n\n天気予報は夕方から雨の可能性が出ておりますが、降雨の状況ではなく風の影響がある場合は晴天でも中止になる場合があります。\nあくまで風の状況での開催の中断もしくは中止の判断になります。\n\nステージプログラムに関しては臨機応変に対応させて頂く形になります。\n\n何卒宜しくお願いいたします。",
-      "source_author": "@nagasawa_asuka",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@nagasawa_asuka",
-        "account_name": "長澤明日香",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/11"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:39369b8ad59feedc",
-      "voice": {
-        "source": "x",
-        "account": "@nagasawa_asuka",
-        "name": "長澤明日香",
-        "title": "",
-        "text": "明けて本日\n8/11(火)15:00〜\n上野恩賜公園 袴腰広場\n上野ゐの市盆踊り出演予定ですが、\n\n⚠️ 台風15号が近づいている影響により「ゐの市盆踊り」の開催が微妙な状況です。\n\n天気予報は夕方から雨の可能性が出ておりますが、降雨の状況ではなく風の影響がある場合は晴天でも中止になる場合があります。\nあくまで風の状況での開催の中断もしくは中止の判断になります。\n\nステージプログラムに関しては臨機応変に対応させて頂く形になります。\n\n何卒宜しくお願いいたします。",
-        "url": "https://x.com/nagasawa_asuka/status/2086843246442144028",
-        "date": "2026-08-10T15:52:56+00:00",
-        "tweet_id": "2086843246442144028",
-        "tags": [
-          "🟢一次レポ",
-          "q-song-program"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/nagasawa_asuka/status/2086843246442144028"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_4bf34a31c0ce7d44",
-      "source_key": "x:2086933168817676312",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/hakanakikana/status/2086933168817676312",
-      "source_text": "\n本日‼️\n\n8/11(火祝) 上野恩賜公園 [東京]\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n※西村加奈は18:00〜出演予定\n\n⚠️台風15号が近づいている影響により開催が微妙な状況です。風の状況で中断or中止になります。 https://t.co/a0DazOExip",
-      "source_author": "@hakanakikana",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@hakanakikana",
-        "account_name": "西村加奈",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/11"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:75ed279507e67b7b",
-      "voice": {
-        "source": "x",
-        "account": "@hakanakikana",
-        "name": "西村加奈",
-        "title": "",
-        "text": "本日‼️\n\n8/11(火祝) 上野恩賜公園 [東京]\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n※西村加奈は18:00〜出演予定\n\n⚠️台風15号が近づいている影響により開催が微妙な状況です。風の状況で中断or中止になります。 https://t.co/a0DazOExip",
-        "url": "https://x.com/hakanakikana/status/2086933168817676312",
-        "date": "2026-08-10T21:50:15+00:00",
-        "tweet_id": "2086933168817676312",
-        "tags": [
-          "🟡関心",
-          "q-cancel-change"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HPZGpy3bUAAHrIU.jpg",
-          "https://t.co/a0DazOExip",
-          "pic.x.com/a0DazOExip",
-          "https://pbs.twimg.com/media/HPZGpy2boAA7ov6.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/hakanakikana/status/2086933168817676312"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_1854a140476bd7d2",
-      "source_key": "x:2086989257777008873",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/Daisen1989/status/2086989257777008873",
-      "source_text": "\n【8/10(月) 幌西子ども盆踊り大会】\n\n8/10(月)、札幌市中央区の幌西自転車公園（南14条西18丁目）で開催された「幌西子ども盆踊り大会」に参加させて頂きました。\n\nキッチンカーの出店もあり、突然青色の恐竜が登場する等、多くの子ども達で賑わっていました。\n\n本日8/11(火)も18:30〜20:00まで開催されます。",
-      "source_author": "@Daisen1989",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@daisen1989",
-        "account_name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/10",
-        "8/10",
-        "8/11"
-      ],
-      "observed_dates": [
-        "2026-08-11"
-      ],
-      "event_group_key": "informal:6b5eea3fc07e81dc",
-      "voice": {
-        "source": "x",
-        "account": "@Daisen1989",
-        "name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
-        "title": "",
-        "text": "【8/10(月) 幌西子ども盆踊り大会】\n\n8/10(月)、札幌市中央区の幌西自転車公園（南14条西18丁目）で開催された「幌西子ども盆踊り大会」に参加させて頂きました。\n\nキッチンカーの出店もあり、突然青色の恐竜が登場する等、多くの子ども達で賑わっていました。\n\n本日8/11(火)も18:30〜20:00まで開催されます。",
-        "url": "https://x.com/Daisen1989/status/2086989257777008873",
-        "date": "2026-08-11T01:33:08+00:00",
-        "tweet_id": "2086989257777008873",
-        "tags": [
-          "🟡関心",
-          "q-imminent"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HPZ5quqaMAAOjU1.jpg",
-          "https://t.co/mbihd7aCjE",
-          "pic.x.com/mbihd7aCjE"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/Daisen1989/status/2086989257777008873"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
       "candidate_id": "xgap_0aaba74cfc35f715",
       "source_key": "x:2087046647222350180",
       "lane_hint": "lane2",
@@ -4325,6 +3918,523 @@
       },
       "source_urls": [
         "https://x.com/CUTIEPAI_/status/2087046647222350180"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_f27fc965d836f1b1",
+      "source_key": "x:2087128629339984231",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/kanakiryu2024/status/2087128629339984231",
+      "source_text": "\n明日は「上野ゐの市盆踊り」のステージに出演致します！\n\n8月12日(水) 14:00〜\n上野ゐの市盆踊り\n上野恩賜公園 袴腰広場\n※雨天決行・荒天中止\n\n台風の影響による天候状況によっては、開催について当日の判断となる場合がございます。ご来場予定の皆さまは、最新情報をご確認のうえお越しください🙇‍♀️ https://t.co/q4e5uM6RHi",
+      "source_author": "@kanakiryu2024",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@kanakiryu2024",
+        "account_name": "桐生華名スタッフ",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月12日"
+      ],
+      "observed_dates": [
+        "2026-08-12"
+      ],
+      "event_group_key": "informal:0d7c1999443b711d",
+      "voice": {
+        "source": "x",
+        "account": "@kanakiryu2024",
+        "name": "桐生華名スタッフ",
+        "profile_description": "",
+        "title": "",
+        "text": "明日は「上野ゐの市盆踊り」のステージに出演致します！\n\n8月12日(水) 14:00〜\n上野ゐの市盆踊り\n上野恩賜公園 袴腰広場\n※雨天決行・荒天中止\n\n台風の影響による天候状況によっては、開催について当日の判断となる場合がございます。ご来場予定の皆さまは、最新情報をご確認のうえお越しください🙇‍♀️ https://t.co/q4e5uM6RHi",
+        "url": "https://x.com/kanakiryu2024/status/2087128629339984231",
+        "date": "2026-08-11T10:46:56+00:00",
+        "tweet_id": "2087128629339984231",
+        "tags": [
+          "🟡関心",
+          "q-cancel-change"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPb4bEZakAAu1Ct.jpg",
+          "https://t.co/q4e5uM6RHi",
+          "pic.x.com/q4e5uM6RHi",
+          "https://pbs.twimg.com/media/HPb4bEbbQAAIDiP.jpg"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/kanakiryu2024/status/2087128629339984231"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_87c36c2cdad89480",
+      "source_key": "x:2087132223162163640",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/nao_okuzawa/status/2087132223162163640",
+      "source_text": "\n明日はこちら💁‍♀️\n\n🏮出演致情報🏮\n\n8月12日(水) 13:00〜\n「上野ゐの市盆踊り」\n上野恩賜公園 袴腰広場\n※雨天決行・荒天中止\n\n台風の影響による天候状況によっては、開催について当日の判断となる場合がございます。ご来場予定の皆さまは、最新情報をご確認のうえお越しください🙇‍♀️ https://t.co/RBXETgZpoJ",
+      "source_author": "@nao_okuzawa",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@nao_okuzawa",
+        "account_name": "奥沢奈央",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月12日"
+      ],
+      "observed_dates": [
+        "2026-08-12"
+      ],
+      "event_group_key": "informal:dca721920ccb99a4",
+      "voice": {
+        "source": "x",
+        "account": "@nao_okuzawa",
+        "name": "奥沢奈央",
+        "profile_description": "",
+        "title": "",
+        "text": "明日はこちら💁‍♀️\n\n🏮出演致情報🏮\n\n8月12日(水) 13:00〜\n「上野ゐの市盆踊り」\n上野恩賜公園 袴腰広場\n※雨天決行・荒天中止\n\n台風の影響による天候状況によっては、開催について当日の判断となる場合がございます。ご来場予定の皆さまは、最新情報をご確認のうえお越しください🙇‍♀️ https://t.co/RBXETgZpoJ",
+        "url": "https://x.com/nao_okuzawa/status/2087132223162163640",
+        "date": "2026-08-11T11:01:13+00:00",
+        "tweet_id": "2087132223162163640",
+        "tags": [
+          "🟡関心",
+          "q-cancel-change"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPb7sesb0AAMOMX.jpg",
+          "https://t.co/RBXETgZpoJ",
+          "pic.x.com/RBXETgZpoJ"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/nao_okuzawa/status/2087132223162163640"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_8bc93080b184032b",
+      "source_key": "x:2087325693583745227",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/BonDanceRadio/status/2087325693583745227",
+      "source_text": "\n今日から3週に渡り、#盆ラジ は、#東京高円寺阿波踊り 大特集！\n#胡蝶蓮 #志留波阿連 #葵新連 #和樂連 連長にお集まりいただき、#阿波踊り の舞台裏を伺いました。\n高円寺阿波踊りは、8月29（土）、30（日）。\n盆ラジは、水曜22:00から。\nhttps://t.co/3GuGBEE5SD\n#池袋FM  #日本盆踊り協会",
+      "source_author": "@BonDanceRadio",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@bondanceradio",
+        "account_name": "踊る♪ラジオ 「盆踊りですから」～ 公式 池袋FM",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月29"
+      ],
+      "observed_dates": [
+        "2026-08-29"
+      ],
+      "event_group_key": "informal:7ef47d11d98e6396",
+      "voice": {
+        "source": "x",
+        "account": "@BonDanceRadio",
+        "name": "踊る♪ラジオ 「盆踊りですから」～ 公式 池袋FM",
+        "profile_description": "",
+        "title": "",
+        "text": "今日から3週に渡り、#盆ラジ は、#東京高円寺阿波踊り 大特集！\n#胡蝶蓮 #志留波阿連 #葵新連 #和樂連 連長にお集まりいただき、#阿波踊り の舞台裏を伺いました。\n高円寺阿波踊りは、8月29（土）、30（日）。\n盆ラジは、水曜22:00から。\nhttps://t.co/3GuGBEE5SD\n#池袋FM  #日本盆踊り協会",
+        "url": "https://x.com/BonDanceRadio/status/2087325693583745227",
+        "date": "2026-08-11T23:50:00+00:00",
+        "tweet_id": "2087325693583745227",
+        "tags": [
+          "🟡関心",
+          "q-imminent"
+        ],
+        "critique_post": false
+      },
+      "source_urls": [
+        "https://x.com/BonDanceRadio/status/2087325693583745227"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_f57b542297e9704b",
+      "source_key": "x:2087347380152856962",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/yukarimaeda/status/2087347380152856962",
+      "source_text": "\n本日はこちら💁‍♀️✨\n今日と14日に出演させていただきます🎶\n雨でもなんとか決行してくださると思うので皆さまぜひお集まりください🥹\n\n上野ゐの市盆踊り\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜21:00（全日）\n📍会場\n上野恩賜公園 袴腰広場\n\n🎤前田有加里出演\n8月12日(水) 17:00〜\n8月14日(金) 13:00〜",
+      "source_author": "@yukarimaeda",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@yukarimaeda",
+        "account_name": "前田有加里@261123シアターマーキュリー新宿BDワンマン昼夜2公演",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月7日",
+        "8月16日",
+        "8月12日",
+        "8月14日"
+      ],
+      "observed_dates": [
+        "2026-08-12",
+        "2026-08-14",
+        "2026-08-16"
+      ],
+      "event_group_key": "informal:59103f346be676fe",
+      "voice": {
+        "source": "x",
+        "account": "@yukarimaeda",
+        "name": "前田有加里@261123シアターマーキュリー新宿BDワンマン昼夜2公演",
+        "profile_description": "",
+        "title": "",
+        "text": "本日はこちら💁‍♀️✨\n今日と14日に出演させていただきます🎶\n雨でもなんとか決行してくださると思うので皆さまぜひお集まりください🥹\n\n上野ゐの市盆踊り\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜21:00（全日）\n📍会場\n上野恩賜公園 袴腰広場\n\n🎤前田有加里出演\n8月12日(水) 17:00〜\n8月14日(金) 13:00〜",
+        "url": "https://x.com/yukarimaeda/status/2087347380152856962",
+        "date": "2026-08-12T01:16:11+00:00",
+        "tweet_id": "2087347380152856962",
+        "tags": [
+          "🟡関心",
+          "q-future-schedule"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPe_YPYbYAAFwl4.jpg",
+          "https://t.co/8eSItC0uxQ",
+          "pic.x.com/8eSItC0uxQ",
+          "https://pbs.twimg.com/media/HPe_YPia8AAiT45.jpg"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/yukarimaeda/status/2087347380152856962"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_fc2483fbdc338b97",
+      "source_key": "x:2087369768806625404",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/tamuro_hnakano/status/2087369768806625404",
+      "source_text": "\n8/22(土)17〜20時、東中野のおかのうえ公園で開催される夏祭り「おかBON」に出店します！(雨天決行)\nhttps://t.co/9KvCNCHDaU\n当日はお祭りの定番【焼きそば】と【フランクフルト】を販売します🌭🥢 東京音頭からエビカニクスまで盆踊りも盛りだくさん！ぜひ遊びにいらしてください🏮✨\n#おかBON #夏祭 https://t.co/1wpJ3cnFX1",
+      "source_author": "@tamuro_hnakano",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@tamuro_hnakano",
+        "account_name": "Curation Bar 屯 東中野",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/22",
+        "20時"
+      ],
+      "observed_dates": [
+        "2026-08-22"
+      ],
+      "event_group_key": "informal:aeaf35848eb8c864",
+      "voice": {
+        "source": "x",
+        "account": "@tamuro_hnakano",
+        "name": "Curation Bar 屯 東中野",
+        "profile_description": "",
+        "title": "",
+        "text": "8/22(土)17〜20時、東中野のおかのうえ公園で開催される夏祭り「おかBON」に出店します！(雨天決行)\nhttps://t.co/9KvCNCHDaU\n当日はお祭りの定番【焼きそば】と【フランクフルト】を販売します🌭🥢 東京音頭からエビカニクスまで盆踊りも盛りだくさん！ぜひ遊びにいらしてください🏮✨\n#おかBON #夏祭 https://t.co/1wpJ3cnFX1",
+        "url": "https://x.com/tamuro_hnakano/status/2087369768806625404",
+        "date": "2026-08-12T02:45:08+00:00",
+        "tweet_id": "2087369768806625404",
+        "tags": [
+          "🟡関心",
+          "q-future-schedule"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPfTLs1bsAAoCSe.jpg",
+          "https://t.co/1wpJ3cnFX1",
+          "pic.x.com/1wpJ3cnFX1"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/tamuro_hnakano/status/2087369768806625404"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_b50d07752551648d",
+      "source_key": "x:2087376864721698995",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/fujitatakeshi77/status/2087376864721698995",
+      "source_text": "\n加奈ちゃん❗️今日8/12(水) 上野恩賜公園\n「上野ゐの市盆踊り」で歌います。加奈ちゃんは18:00〜出演予定です😊\nお天気に恵まれますように😄\nお近くのみなさん、ぜひ駆けつけ応援宜しくお願いします🙇\n自分も加奈ちゃん❗️の配信で見ます。\n加奈ちゃん❗️いつも、ありがとう。がんばってね👍😄",
+      "source_author": "@fujitatakeshi77",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@fujitatakeshi77",
+        "account_name": "藤田武士",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/12"
+      ],
+      "observed_dates": [
+        "2026-08-12"
+      ],
+      "event_group_key": "informal:3630b0ff859156db",
+      "voice": {
+        "source": "x",
+        "account": "@fujitatakeshi77",
+        "name": "藤田武士",
+        "profile_description": "",
+        "title": "",
+        "text": "加奈ちゃん❗️今日8/12(水) 上野恩賜公園\n「上野ゐの市盆踊り」で歌います。加奈ちゃんは18:00〜出演予定です😊\nお天気に恵まれますように😄\nお近くのみなさん、ぜひ駆けつけ応援宜しくお願いします🙇\n自分も加奈ちゃん❗️の配信で見ます。\n加奈ちゃん❗️いつも、ありがとう。がんばってね👍😄",
+        "url": "https://x.com/fujitatakeshi77/status/2087376864721698995",
+        "date": "2026-08-12T03:13:20+00:00",
+        "tweet_id": "2087376864721698995",
+        "tags": [
+          "🟡関心",
+          "q-future-schedule"
+        ],
+        "critique_post": false
+      },
+      "source_urls": [
+        "https://x.com/fujitatakeshi77/status/2087376864721698995"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_e35926235f82dc0e",
+      "source_key": "x:2087383604653625410",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/kaki00121/status/2087383604653625410",
+      "source_text": "\n【🎐Party Info🎐】\n『Hisuiと茶箱の盆踊り』\n\n🗓2026/8/13(Thu.)18:00~23:00 \n📌東京・新高円寺 Loca★Kitchen\n💴¥2,500-+1drink order(ヴィーガンビュッフェ付き)\n\nHisuiさんにお誘い頂き新高円寺　LOCA★KITCHENでの盆のパーティにてDJします！\nヴィーガンビュッフェも楽しみ！ぜひお越しください🙌 https://t.co/ZoAPTnECHl",
+      "source_author": "@kaki00121",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@kaki00121",
+        "account_name": "kaki0121",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "2026/8/13"
+      ],
+      "observed_dates": [
+        "2026-08-13"
+      ],
+      "event_group_key": "informal:ea13795cf4c0641b",
+      "voice": {
+        "source": "x",
+        "account": "@kaki00121",
+        "name": "kaki0121",
+        "profile_description": "",
+        "title": "",
+        "text": "【🎐Party Info🎐】\n『Hisuiと茶箱の盆踊り』\n\n🗓2026/8/13(Thu.)18:00~23:00 \n📌東京・新高円寺 Loca★Kitchen\n💴¥2,500-+1drink order(ヴィーガンビュッフェ付き)\n\nHisuiさんにお誘い頂き新高円寺　LOCA★KITCHENでの盆のパーティにてDJします！\nヴィーガンビュッフェも楽しみ！ぜひお越しください🙌 https://t.co/ZoAPTnECHl",
+        "url": "https://x.com/kaki00121/status/2087383604653625410",
+        "date": "2026-08-12T03:40:07+00:00",
+        "tweet_id": "2087383604653625410",
+        "tags": [
+          "🟡関心",
+          "q-future-schedule"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPfgUrFbAAE0euT.jpg",
+          "https://t.co/ZoAPTnECHl",
+          "pic.x.com/ZoAPTnECHl"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/kaki00121/status/2087383604653625410"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_99df295f7c77881d",
+      "source_key": "x:2087398772427128950",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/hakanakikana/status/2087398772427128950",
+      "source_text": "\n東京🗼晴れた✨🌞✨\n\nお仕事、無事に終わりました☺️🙏\n\nさあ！！このあとは\n\n8/12(水) 上野恩賜公園 [東京]\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n共演：前田有加里 / 海老沢茜 / ほか\n\n※西村加奈は18:00〜出演予定\n※19:00〜盆踊り\n\n感謝を込めて🙏 https://t.co/FVhykgeIn4",
+      "source_author": "@hakanakikana",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@hakanakikana",
+        "account_name": "西村加奈",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/12"
+      ],
+      "observed_dates": [
+        "2026-08-12"
+      ],
+      "event_group_key": "informal:25049b2d5b491d2e",
+      "voice": {
+        "source": "x",
+        "account": "@hakanakikana",
+        "name": "西村加奈",
+        "profile_description": "",
+        "title": "",
+        "text": "東京🗼晴れた✨🌞✨\n\nお仕事、無事に終わりました☺️🙏\n\nさあ！！このあとは\n\n8/12(水) 上野恩賜公園 [東京]\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n共演：前田有加里 / 海老沢茜 / ほか\n\n※西村加奈は18:00〜出演予定\n※19:00〜盆踊り\n\n感謝を込めて🙏 https://t.co/FVhykgeIn4",
+        "url": "https://x.com/hakanakikana/status/2087398772427128950",
+        "date": "2026-08-12T04:40:23+00:00",
+        "tweet_id": "2087398772427128950",
+        "tags": [
+          "🟡関心",
+          "q-future-schedule"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HPfuHW0aAAAAtdz.jpg",
+          "https://t.co/FVhykgeIn4",
+          "pic.x.com/FVhykgeIn4",
+          "https://pbs.twimg.com/media/HPfuHXKa8AArtSB.jpg",
+          "https://pbs.twimg.com/media/HPfuHW6aQAAg_eT.jpg"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/hakanakikana/status/2087398772427128950"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_9d07e72f00810b39",
+      "source_key": "x:2087405618068074576",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/fujitatakeshi77/status/2087405618068074576",
+      "source_text": "\n加奈ちゃん❣️東京お天気晴れて良かったね😄\n加奈ちゃん❗️今日8/12(水) 上野恩賜公園 [東京]\n「上野ゐの市盆踊り」で歌います。お近くのみなさん、ぜひ駆けつけ応援宜しくお願いします🙇\n自分も加奈ちゃん❗️の配信で見ます😄いつも、加奈ちゃん❗️ありがとう╰(*´︶`*)╯♡がんばってね👍応援してます😄",
+      "source_author": "@fujitatakeshi77",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@fujitatakeshi77",
+        "account_name": "藤田武士",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/12"
+      ],
+      "observed_dates": [
+        "2026-08-12"
+      ],
+      "event_group_key": "informal:40207745d83a0603",
+      "voice": {
+        "source": "x",
+        "account": "@fujitatakeshi77",
+        "name": "藤田武士",
+        "profile_description": "",
+        "title": "",
+        "text": "加奈ちゃん❣️東京お天気晴れて良かったね😄\n加奈ちゃん❗️今日8/12(水) 上野恩賜公園 [東京]\n「上野ゐの市盆踊り」で歌います。お近くのみなさん、ぜひ駆けつけ応援宜しくお願いします🙇\n自分も加奈ちゃん❗️の配信で見ます😄いつも、加奈ちゃん❗️ありがとう╰(*´︶`*)╯♡がんばってね👍応援してます😄",
+        "url": "https://x.com/fujitatakeshi77/status/2087405618068074576",
+        "date": "2026-08-12T05:07:36+00:00",
+        "tweet_id": "2087405618068074576",
+        "tags": [
+          "🟡関心",
+          "q-imminent"
+        ],
+        "critique_post": false
+      },
+      "source_urls": [
+        "https://x.com/fujitatakeshi77/status/2087405618068074576"
       ],
       "corroboration_count": 1,
       "source_count": 1,

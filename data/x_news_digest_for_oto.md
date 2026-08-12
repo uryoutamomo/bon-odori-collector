@@ -1,7 +1,7 @@
 # X News Digest For Oto
 
-- generated_at: 2026-08-11T07:55:53+00:00
-- digest_count: 15456
+- generated_at: 2026-08-12T08:06:00+00:00
+- digest_count: 15942
 - status: machine prefilter; Oto interpretation pending
 
 | confidence | type | machine novelty | target | machine summary | machine reason | backcheck | source |
@@ -35,15 +35,19 @@
 | high | event_update_candidate | update | event | イベント候補「miyukimimisato 【第44回すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | miyukimimisato 【第44回すみだ錦糸町河内音頭大盆踊り 盆踊り; すみだ錦糸町河内音頭大盆踊り 盆踊り; 河内音頭 盆踊り | https://x.com/agatha_2222/status/2082695821028684146 |
 | high | event_update_candidate | update | event | イベント候補「「2026旭町一丁目町会盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 「2026旭町一丁目町会盆踊り 盆踊り | https://x.com/nerimajmpy/status/2082315869598994924 |
 | high | event_update_candidate | update | event | イベント候補「『第44回すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 『第44回すみだ錦糸町河内音頭大盆踊り 盆踊り; すみだ錦糸町河内音頭大盆踊り 盆踊り; 竪川親水公園特設会場 (首都高速7号線高架下 盆踊り; てテント出店 盆踊り | https://x.com/ryougokumotsuni/status/2082023120857415922 |
+| high | event_update_candidate | update | event | イベント候補「】 六本木の夏の風物詩「六本木ヒルズ盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 】 六本木の夏の風物詩「六本木ヒルズ盆踊り 盆踊り; 六本木ヒルズ盆踊り 盆踊り | https://x.com/GrandHyattTokyo/status/2087415195278991412 |
 | high | event_update_candidate | update | event | イベント候補「うえのはら盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | うえのはら盆踊り 盆踊り; アキコス×うえのはら盆踊り 盆踊り | https://x.com/itsu22mem/status/2075554106052342004 |
 | high | event_update_candidate | update | event | イベント候補「すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | すみだ錦糸町河内音頭大盆踊り 盆踊り; 河内音頭 盆踊り | https://x.com/090_jp/status/2083038177317798249 |
 | high | event_update_candidate | update | event | イベント候補「すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | すみだ錦糸町河内音頭大盆踊り 盆踊り; 撮ったもの 盆踊り; 河内音頭 盆踊り | https://x.com/keloyama/status/2082687404939571668 |
 | high | event_update_candidate | update | event | イベント候補「すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | すみだ錦糸町河内音頭大盆踊り 盆踊り; 竪川親水公園特設会場（首都高速7号線高架下 盆踊り; 河内音頭 盆踊り | https://x.com/tarteriealbert/status/2082299256770375822 |
 | high | event_update_candidate | update | event | イベント候補「すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | すみだ錦糸町河内音頭大盆踊り 盆踊り; 今年のモノガタリ宇宙の会の出演枠は 盆踊り; 河内音頭 盆踊り; よろしければ踊り 盆踊り | https://x.com/monogatari_univ/status/2082123983902970164 |
 | high | event_update_candidate | update | event | イベント候補「すみだ錦糸町河内音頭大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | すみだ錦糸町河内音頭大盆踊り 盆踊り; 河内音頭 盆踊り; 江州音頭 盆踊り | https://x.com/agatha_2222/status/2082078421472178645 |
+| high | event_update_candidate | update | event | イベント候補「ふるさと盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと盆踊り 盆踊り; シタマチ.ふるさと盆踊り大会 盆踊り | https://x.com/uguisuhotel/status/2087342580203995533 |
 | high | event_update_candidate | update | event | イベント候補「ふるさと盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと盆踊り 盆踊り; おかちまちパンダ広場 盆踊り | https://x.com/UENO_Info/status/2085214331290223065 |
 | high | event_update_candidate | update | event | イベント候補「わくわく盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | わくわく盆踊り 盆踊り | https://x.com/akekazashi32/status/2084928747346726918 |
 | high | event_update_candidate | update | event | イベント候補「三角広場まつり 居酒屋盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 三角広場まつり 居酒屋盆踊り 盆踊り | https://x.com/sankakuhiroba/status/2070046845678809389 |
+| high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り 天候の関係で盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 天候の関係で盆踊り 盆踊り | https://x.com/mayu_singer/status/2087124979716698352 |
+| high | event_update_candidate | update | event | イベント候補「中央区大江戸まつり盆おどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中央区大江戸まつり盆おどり 盆踊り; 中央区大江戸まつり盆おどり大会 盆踊り | https://x.com/Tnaka_info/status/2087386162218541178 |
 | high | event_update_candidate | update | event | イベント候補「中央区大江戸まつり盆おどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中央区大江戸まつり盆おどり 盆踊り | https://x.com/yamarie0324/status/1953671055899255137 |
 | high | event_update_candidate | update | event | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前セントラルパーク 盆踊り | https://x.com/tantanmen_oisiy/status/2084129969555546530 |
 | high | event_update_candidate | update | event | イベント候補「中野駅前大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前大盆踊り 盆踊り; 中野駅前大盆踊り大会にご来場いただき、ありがとうございました 盆踊り | https://x.com/agehabijo/status/2084159000590061600 |
@@ -135,9 +139,14 @@
 | high | event_update_candidate | update | event | 既存イベント「神田明神納涼祭り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 湯呑がみられるの 千代田区 盆踊り; 境内特設大型ビジョン 千代田区 盆踊り | https://x.com/yunomi_nomu/status/2085955727835701425 |
 | high | event_update_candidate | update | event | 既存イベント「柳ばし納涼盆おどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/shimojima_jp/status/2076917107833385391 |
 | high | event_update_candidate | update | event | 既存イベント「TOKYO盆ダンス×STEAM FESTIVAL2026」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/bhodhitMGZN/status/2067121813235409089 |
+| high | event_update_candidate | update | event | イベント候補「「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 「上野ゐの市盆踊り 台東区 盆踊り | https://x.com/kanakiryu2024/status/2087128629339984231 |
 | high | event_update_candidate | update | event | イベント候補「ふるさと東京応援祭 第三回 ビールと浴衣de盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと東京応援祭 第三回 ビールと浴衣de盆踊り 台東区 盆踊り; 会場：上野恩賜公園 竹の台広場（噴水広場 台東区 盆踊り | https://x.com/furusato_tokyo/status/2068997422164971858 |
 | high | event_update_candidate | update | event | イベント候補「ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ゐの市盆踊り 台東区 盆踊り; 上野恩賜公園 袴腰広場 台東区 盆踊り | https://x.com/ueno_club/status/2076922518175375724 |
 | high | event_update_candidate | update | event | イベント候補「上野ゐの市 盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市 盆踊り 台東区 盆踊り; 上野恩賜公園 袴腰広場 台東区 盆踊り | https://x.com/onoarisastaff/status/2082678931405291714 |
+| high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/dunzhi/status/2087420568777933251 |
+| high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/hakanakikana/status/2087398772427128950 |
+| high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/yukarimaeda/status/2087347380152856962 |
+| high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/nao_okuzawa/status/2087132223162163640 |
 | high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/itani1005/status/2087073491464192461 |
 | high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/hakanakikana/status/2086933168817676312 |
 | high | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/LUCK_A_SAY/status/2082763582958420121 |
@@ -161,6 +170,9 @@
 | high | event_update_candidate | update | event | イベント候補「花園神社 盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 花園神社 盆踊り 新宿区 盆踊り | https://x.com/_masakari/status/2085196198835830990 |
 | high | event_update_candidate | update | event | イベント候補「花園神社盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 花園神社盆踊り 新宿区 盆踊り | https://x.com/0717maconchi/status/2084094521349116012 |
 | high | event_update_candidate | update | event | イベント候補「梅里中央公園盆おどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 梅里中央公園盆おどり 杉並区 盆踊り; 梅里中央公園（杉並区梅里2-34-20 杉並区 盆踊り | https://x.com/maimai53303640/status/2083465960439353479 |
+| high | event_update_candidate | update | event | 既存イベント「浅草神社 夏詣盆をどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/natsumoude/status/2073421683122393144 |
+| high | event_update_candidate | update | event | 既存イベント「浅草神社 夏詣盆をどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/natsumoude/status/2072696055154766219 |
+| high | event_update_candidate | update | event | 既存イベント「浅草神社 夏詣盆をどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/natsumoude/status/2066166500478890380 |
 | high | event_update_candidate | update | event | 既存イベント「鹿骨二丁目町会盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/gPVEQeAD9U10257/status/2086819484816601266 |
 | high | event_update_candidate | update | event | 既存イベント「東大島神社 納涼祭」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/natsutr_bon/status/2083803907126419951 |
 | high | event_update_candidate | update | event | 既存イベント「八名川地区連合町会 納涼音頭大会」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/kaz0045/status/2083720211728040165 |
@@ -214,6 +226,8 @@
 | medium | event_update_candidate | update | event | イベント候補「ふるさと盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと盆踊り 盆踊り; おかちまちパンダ広場 盆踊り | https://x.com/tomi_sa010/status/2085639032680386606 |
 | medium | event_update_candidate | update | event | イベント候補「ふるさと盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと盆踊り 盆踊り | https://x.com/kumikotantan/status/2085151831513325908 |
 | medium | event_update_candidate | update | event | イベント候補「・8月15日(土) 歌舞伎町BON ODORI」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ・8月15日(土) 歌舞伎町BON ODORI 盆踊り | https://x.com/DCT_BABYS/status/2085223666229657786 |
+| medium | event_update_candidate | update | event | イベント候補「中野駅前大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前大盆踊り 盆踊り | https://x.com/JacobCyclist/status/2087428162959605876 |
+| medium | event_update_candidate | update | event | イベント候補「中野駅前大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前大盆踊り 盆踊り | https://x.com/ZUBAT3JYOU/status/2087326952868938149 |
 | medium | event_update_candidate | update | event | イベント候補「中野駅前大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前大盆踊り 盆踊り | https://x.com/on5onsentrip/status/2085978656032407900 |
 | medium | event_update_candidate | update | event | イベント候補「中野駅前大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前大盆踊り 盆踊り; ボン・ジョヴィ踊り 盆踊り | https://x.com/TOKYO_Shuto634/status/2083452212714639470 |
 | medium | event_update_candidate | update | event | イベント候補「中野駅前大盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 中野駅前大盆踊り 盆踊り | https://x.com/IshinoSuke_999/status/2082360056889188829 |
@@ -232,6 +246,9 @@
 | medium | event_update_candidate | update | event | イベント候補「打ち水・大銀座盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 打ち水・大銀座盆踊り 盆踊り | https://x.com/PRTIMES_BIZ/status/2064560215601938598 |
 | medium | event_update_candidate | update | event | イベント候補「東水元公園にて「東水元二丁目仲町町会 納涼盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 東水元公園にて「東水元二丁目仲町町会 納涼盆踊り 盆踊り; 東水元二丁目仲町町会 納涼盆踊り大会 盆踊り | https://x.com/katsushika2shin/status/2077726315499663575 |
 | medium | event_update_candidate | update | event | イベント候補「森ヶ崎自治会納涼盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 森ヶ崎自治会納涼盆踊り 盆踊り | https://x.com/TakahiroShojima/status/2083523109567803775 |
+| medium | event_update_candidate | update | event | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2087403427743863103 |
+| medium | event_update_candidate | update | event | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2087388735617065273 |
+| medium | event_update_candidate | update | event | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2087388754495553970 |
 | medium | event_update_candidate | update | event | イベント候補「盆踊りフェス２０２６」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 盆踊りフェス２０２６ 盆踊り | https://x.com/tn_eza/status/2083047328819143010 |
 | medium | event_update_candidate | update | event | イベント候補「盆踊りフェス２０２６」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 盆踊りフェス２０２６ 盆踊り | https://x.com/tn_eza/status/2082268370515153343 |
 | medium | event_update_candidate | update | event | イベント候補「祝)上野ゐの市盆踊り 夜の盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 祝)上野ゐの市盆踊り 夜の盆踊り 盆踊り | https://x.com/tomi_sa010/status/2087020347887628519 |
@@ -282,9 +299,12 @@
 | medium | event_update_candidate | update | event | イベント候補「00「第4回奥浅草盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 00「第4回奥浅草盆踊り 台東区 盆踊り; 奥浅草盆踊り 台東区 盆踊り | https://x.com/goguynet_tokyo/status/2065572237655048299 |
 | medium | event_update_candidate | update | event | イベント候補「ふるさと東京応援祭 第三回 ビールと浴衣de盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと東京応援祭 第三回 ビールと浴衣de盆踊り 台東区 盆踊り | https://x.com/indexebni/status/2070013558247796754 |
 | medium | event_update_candidate | update | event | イベント候補「ふるさと東京応援祭 第三回ビールと浴衣de盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ふるさと東京応援祭 第三回ビールと浴衣de盆踊り 台東区 盆踊り; 東京都 台東区 上野恩賜公園 竹の台広場 台東区 盆踊り | https://x.com/Mogupick_x/status/2069969516269027763 |
+| medium | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/event_fes/status/2087388618684080169 |
+| medium | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/fujitatakeshi77/status/2087405618068074576 |
 | medium | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/event_fes/status/2086956289360580663 |
 | medium | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/event_fes/status/2085158208587657570 |
 | medium | event_update_candidate | update | event | イベント候補「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/hidejitokani/status/2083667430073860198 |
+| medium | event_update_candidate | update | event | イベント候補「上野恩賜公園 「上野ゐの市盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 上野恩賜公園 「上野ゐの市盆踊り 台東区 盆踊り; 上野ゐの市盆踊り 台東区 盆踊り | https://x.com/fujitatakeshi77/status/2087376864721698995 |
 | medium | event_update_candidate | update | event | イベント候補「佐竹ゲバゲバ盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 佐竹ゲバゲバ盆踊り 台東区 盆踊り | https://x.com/_masakari/status/2067588421468754222 |
 | medium | event_update_candidate | update | event | イベント候補「戸越宮前盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 戸越宮前盆踊り 品川区 盆踊り | https://x.com/togoshi4/status/2055674267757658128 |
 | medium | event_update_candidate | update | event | 既存イベント「花園神社 盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/BonDanceRadio/status/2085223292349358367 |
@@ -293,6 +313,7 @@
 | medium | event_update_candidate | update | event | イベント候補「花園神社 盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 花園神社 盆踊り 新宿区 盆踊り; りんご節 新宿区 盆踊り; 松の木小唄 新宿区 盆踊り | https://x.com/_masakari/status/2085196334920003801 |
 | medium | event_update_candidate | update | event | イベント候補「札幌中島公園) ・8月14日(金) 歌舞伎町BON ODORI」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 札幌中島公園) ・8月14日(金) 歌舞伎町BON ODORI 札幌市中央区 盆踊り | https://x.com/DCT_BABYS/status/2085223135704748073 |
 | medium | event_update_candidate | update | event | イベント候補「札幌中島公園) ・8月14日(金) 歌舞伎町BON ODORI」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 札幌中島公園) ・8月14日(金) 歌舞伎町BON ODORI 札幌市中央区 盆踊り | https://x.com/MICA_POD/status/2085204295008604601 |
+| medium | event_update_candidate | update | event | イベント候補「大森南自治会納涼盆おどり」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 大森南自治会納涼盆おどり 東京都大田区 盆踊り | https://x.com/TakahiroShojima/status/2080530796486738291 |
 | medium | event_update_candidate | update | event | 既存イベント「とよす夏祭り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/event_fes/status/2085167219269611967 |
 | medium | event_update_candidate | update | event | 既存イベント「とよす夏祭り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 |  | https://x.com/event_fes/status/2084802214632313213 |
 | medium | event_update_candidate | update | event | イベント候補「・大島一・二丁目町会 納涼盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | ・大島一・二丁目町会 納涼盆踊り 江東区 盆踊り; ・南砂一・二丁目町会盆踊り 江東区 盆踊り | https://x.com/kotokeizai/status/2082677569087021428 |
@@ -323,6 +344,22 @@
 | medium | event_update_candidate | update | event | イベント候補「新小岩納涼盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 新小岩納涼盆踊り 葛飾区 盆踊り | https://x.com/DbopcuFWh53OmyG/status/2070438044403212413 |
 | medium | event_update_candidate | update | event | イベント候補「新小岩納涼盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 新小岩納涼盆踊り 葛飾区 盆踊り | https://x.com/value_press/status/2070069783794753685 |
 | medium | event_update_candidate | update | event | イベント候補「木根川町会ふれあい盆踊り」に関するX由来情報。開催日・開催有無・場所などの更新情報の可能性がある。 | 既存イベントに関連する日付・開催情報の可能性 | 木根川町会ふれあい盆踊り 葛飾区 盆踊り; ］木根川中央公園 葛飾区 盆踊り | https://x.com/aaayaka0602/status/2083151117731647561 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/_masakari/status/2087350019594883574 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/ichiran_satsuki/status/2087433337258590588 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/soundmate_pro/status/2087442900426846562 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/FightersPR/status/2087426361686458788 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Ku0N_VRC/status/2087388606339928167 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/yoshimoto_me/status/2087374193839296944 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/sagami_bon/status/2087354024819654985 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/horo86horo/status/2087343310214140226 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/taririn_148/status/2087337691176431854 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/hiro935579421/status/2087376276814229874 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/osaruna7741/status/2087115780769095936 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/misakajinja/status/2087390492120244255 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/TomKamoshida/status/2087331966425419926 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/engekido/status/2087321179166326967 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/nagoya2020GO/status/2087319828793381007 |
+| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kotobukiettou/status/2087300090830741702 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/TAKARAYAanan/status/2087080421448462408 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/ioio_vr/status/2087068323943243962 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/behoimi_vrc/status/2087064866783990040 |
@@ -756,15 +793,11 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/t_kurihara110/status/2075908389067178288 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/terasakiyusuke/status/2075875333623128076 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kumagaya69billy/status/2075852016098955659 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/tanoshiki_kana/status/2075850391644954711 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/gosyuondomarl/status/2075802833027584185 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/akihiko_taka/status/2075797552793047391 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/hagepoliceman/status/2075780809215402453 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/GrimGachaOnline/status/2075760761880863109 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/suieibu_/status/2074993114025283772 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/natsumoude/status/2073421683122393144 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/natsumoude/status/2072696055154766219 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/natsumoude/status/2072633669450453094 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/nakanohiroshi02/status/2075766886462353622 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/gokuraku_15/status/2075766555510775906 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/ninohekanko/status/2075756982376751143 |
@@ -772,7 +805,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kotogahamabon/status/2075505317849579886 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kinkado1905/status/2075401976192565556 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/TYOparaathlete/status/2075505312107548891 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/nerimajmpy/status/2075436397067120941 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Todoke4Minna2/status/2075214286440587619 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/furoucyo_cp/status/2075128876628639994 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/dreadyarou/status/2071555112921964950 |
@@ -837,7 +869,8 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/nagoyabushotai/status/2066808195713278274 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/karinchanchanko/status/2066536193454702775 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Rabbit_san777/status/2066109126036582885 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/natsumoude/status/2066166500478890380 |
+| high | new_song_candidate | new | song | 曲候補「さんと一之森音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: さんと一之森音頭 | さんと一之森音頭 盆踊り | https://x.com/yucca_licca/status/2087403066681360675 |
+| high | new_song_candidate | new | song | 曲候補「最後の踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 最後の踊り | 最後の踊り 盆踊り | https://x.com/abechan1959/status/2087397557261750394 |
 | high | new_song_candidate | new | song | 曲候補「そんな季節」に関するX由来情報。 | 既存曲マスタにない曲名候補: そんな季節 | そんな季節 盆踊り | https://x.com/dateyuki1/status/2086944666688401497 |
 | high | new_song_candidate | new | song | 曲候補「炭坑節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 炭坑節, 東京音頭 | 炭坑節 盆踊り; 東京音頭 盆踊り | https://x.com/uchikoshichokai/status/2086927148191973707 |
 | high | new_song_candidate | new | song | 曲候補「BORN踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: BORN踊り, 茨城いやどうも音頭 | BORN踊り 盆踊り; 茨城いやどうも音頭 盆踊り | https://x.com/yutoadachi/status/2086631382978314574 |
@@ -975,6 +1008,12 @@
 | medium | new_song_candidate | new | song | 既存イベント「新橋こいち祭」に関するX由来情報。 | 既存曲マスタにない曲名候補: こいち祭はご当地新橋音頭 | こいち祭はご当地新橋音頭 港区 盆踊り | https://x.com/fried_wakame/status/2080541769658409267 |
 | medium | new_song_candidate | new | song | 既存イベント「巣鴨盆踊り大会」に関するX由来情報。 | 既存曲マスタにない曲名候補: 巣鴨花咲き音頭 | 巣鴨花咲き音頭 豊島区 盆踊り | https://x.com/Oyjl5HlUz0dsiu3/status/2078744988549324968 |
 | medium | new_song_candidate | new | song | 既存イベント「巣鴨盆踊り大会」に関するX由来情報。 | 既存曲マスタにない曲名候補: 巣鴨花咲き音頭 | 巣鴨花咲き音頭 豊島区 盆踊り | https://x.com/Oyjl5HlUz0dsiu3/status/2078365554944164330 |
+| low | new_song_candidate | new | song | 曲候補「人で始まった踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 人で始まった踊り | 人で始まった踊り 盆踊り | https://x.com/2896fumiko/status/2087180326586188259 |
+| low | new_song_candidate | new | song | 曲候補「近年は録音された音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: 近年は録音された音頭 | 近年は録音された音頭 盆踊り | https://x.com/hatu850/status/2087335291413463108 |
+| low | new_song_candidate | new | song | 曲候補「例年よりかなり広く踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 例年よりかなり広く踊り, 始まってみれば踊り | 例年よりかなり広く踊り 盆踊り; 始まってみれば踊り 盆踊り | https://x.com/sayokai/status/2087437855052476853 |
+| low | new_song_candidate | new | song | 曲候補「よさこい鳴子踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: よさこい鳴子踊り | よさこい鳴子踊り 盆踊り | https://x.com/emi75596899/status/2087442993628451182 |
+| low | new_song_candidate | new | song | 曲候補「うちの町の先輩が音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: うちの町の先輩が音頭 | うちの町の先輩が音頭 盆踊り | https://x.com/m_m_i_m0826/status/2087376633816809502 |
+| low | new_song_candidate | new | song | 曲候補「歌い踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 歌い踊り | 歌い踊り 盆踊り | https://x.com/k4AcPDPpA4x7UMG/status/2087353009642840399 |
 | low | new_song_candidate | new | song | 曲候補「歌える踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 歌える踊り | 歌える踊り 盆踊り | https://x.com/kame_matsuri/status/2086941437611147746 |
 | low | new_song_candidate | new | song | 曲候補「東京音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: つばめ音頭, 松の木小唄 | 東京音頭 盆踊り; 深川音頭 盆踊り | https://x.com/kaz0045/status/2086835673370329168 |
 | low | new_song_candidate | new | song | 曲候補「さくら音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: にっぽん花咲音頭 | さくら音頭 盆踊り; 八木節 盆踊り | https://x.com/kaz0045/status/2086834445504639451 |
@@ -1214,6 +1253,7 @@
 | low | new_song_candidate | new | song | 曲候補「学校では長岡甚句」に関するX由来情報。 | 既存曲マスタにない曲名候補: 学校では長岡甚句 | どうか知ってほしい 盆踊り; 学校では長岡甚句 盆踊り | https://x.com/leesia6860/status/2085210354255323367 |
 | low | new_song_candidate | new | song | 曲候補「鶴見音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: 鶴見音頭 | はしごして少しだけ踊りました😄 盆踊り; 鶴見音頭 盆踊り; 鶴見ふるさと音頭 盆踊り | https://x.com/NemottyNeronero/status/2079081145241838014 |
 | low | new_song_candidate | new | song | 曲候補「みんなで音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: みんなで音頭 | 一覧更新🎇 盆踊り; チェックしてみてね🥰 盆踊り; みんなで音頭 盆踊り | https://x.com/o_tantei/status/2069269208236761215 |
+| low | new_song_candidate | new | song | 曲候補「阿波おどり」に関するX由来情報。 | 既存曲マスタにない曲名候補: 阿波おどり | 中継🎤 盆踊り; 阿波おどり 盆踊り | https://x.com/kantele_runner/status/2087446487735111726 |
 | low | new_song_candidate | new | song | 曲候補「河内ことこ節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 河内ことこ節 | 出会えず💦ヨイショ！はいつも言ってます🫣千葉 盆踊り; 知ってらしたら行きたい 盆踊り; 河内ことこ節 盆踊り | https://x.com/happysmile_kaho/status/2081626469839896992 |
 | low | new_song_candidate | new | song | 曲候補「聞いたところ太鼓も踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 聞いたところ太鼓も踊り | 垣間見える花火を楽しんだりと 盆踊り; 太鼓も踊りも練習されていたとの事… 盆踊り; 聞いたところ太鼓も踊り 盆踊り | https://x.com/sachi60581991/status/2076112359257788819 |
 | low | new_song_candidate | new | song | 曲候補「笹塚音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: 笹塚音頭 | 学生時代住ん 盆踊り; 笹塚音頭 盆踊り | https://x.com/fried_wakame/status/2080695902449320190 |
@@ -1324,6 +1364,7 @@
 | low | song_usage_candidate | update | song | イベント候補「土曜日からは山王音頭と民踊大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 土曜日からは山王音頭と民踊大会 盆踊り | https://x.com/fried_wakame/status/2066447118848729435 |
 | low | song_usage_candidate | update | song | イベント候補「奥浅草盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 奥浅草盆踊り 盆踊り | https://x.com/STBA_Bonodori/status/2055458018914091157 |
 | low | song_usage_candidate | update | song | イベント候補「山王音頭と民踊大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 山王音頭と民踊大会 盆踊り | https://x.com/hisbow2/status/2066532492031803893 |
+| low | song_usage_candidate | update | song | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2087403393233068258 |
 | low | song_usage_candidate | update | song | イベント候補「笠間納涼盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 笠間納涼盆踊り 盆踊り | https://x.com/yutoadachi/status/2086828657688096866 |
 | low | song_usage_candidate | update | song | 既存イベント「駒沢ふれあい広場夏祭り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/mana_setagaya/status/2086237515137356237 |
 | low | song_usage_candidate | update | song | 既存イベント「下北沢盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/lock_the_super/status/2081284106185552273 |
@@ -1363,6 +1404,7 @@
 | high | new_venue_candidate | new | venue | 会場候補「JR内郷駅前広場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: JR内郷駅前広場 | JR内郷駅前広場 盆踊り | https://x.com/BiscatsStaff/status/2081644454256197938 |
 | high | new_venue_candidate | new | venue | 会場候補「JR内郷駅前広場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: JR内郷駅前広場 | JR内郷駅前広場 盆踊り | https://x.com/BiscatsStaff/status/2069014604693594327 |
 | high | new_venue_candidate | new | venue | 会場候補「MEGAドン・キホーテ新川店」に関するX由来情報。 | 既存会場に完全一致しない会場候補: MEGAドン・キホーテ新川店 | MEGAドン・キホーテ新川店 盆踊り | https://x.com/KebabHosse/status/2084417334111039971 |
+| high | new_venue_candidate | new | venue | 会場候補「STADIUM 3F 北広場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: STADIUM 3F 北広場 | STADIUM 3F 北広場 盆踊り | https://x.com/nscproject/status/2087448250278351291 |
 | high | new_venue_candidate | new | venue | 会場候補「●夏まつりメイン会場 田園ホール前広場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: ●夏まつりメイン会場 田園ホール前広場, 田園ホール駐車場 | ●夏まつりメイン会場 田園ホール前広場 盆踊り; 田園ホール駐車場 盆踊り | https://x.com/kawatabi_hok/status/2079436902860763198 |
 | high | new_venue_candidate | new | venue | 会場候補「「余丁町児童遊園」は少し狭くなりましたが」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 「余丁町児童遊園」は少し狭くなりましたが | 「余丁町児童遊園」は少し狭くなりましたが 盆踊り | https://x.com/misawa_hideko/status/2081254681679179782 |
 | high | new_venue_candidate | new | venue | 会場候補「あと4回」に関するX由来情報。 | 既存会場に完全一致しない会場候補: あと4回 | あと4回 盆踊り | https://x.com/VRC_Rouge/status/2075833516311617658 |
@@ -1396,6 +1438,7 @@
 | high | new_venue_candidate | new | venue | 会場候補「マルシェ」に関するX由来情報。 | 既存会場に完全一致しない会場候補: マルシェ | マルシェ 盆踊り | https://x.com/NakaTetsu0719/status/2079709977338671532 |
 | high | new_venue_candidate | new | venue | 会場候補「中心に」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 中心に | 中心に 盆踊り | https://x.com/satoryotasibaya/status/2076568840411246613 |
 | high | new_venue_candidate | new | venue | 会場候補「仙台市宮城野区田子西3集会所駐車場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 仙台市宮城野区田子西3集会所駐車場, 盛り上げます🔥, 清風園グラウンド | 仙台市宮城野区田子西3集会所駐車場 盆踊り; 盛り上げます🔥 盆踊り | https://x.com/ORIHIMETAI/status/2082637965755555970 |
+| high | new_venue_candidate | new | venue | 会場候補「休むなど体調には十分お気をつけてご旅行を楽しん」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 休むなど体調には十分お気をつけてご旅行を楽しん | 休むなど体調には十分お気をつけてご旅行を楽しん 盆踊り | https://x.com/a_hitsujigaoka/status/2087351157442429265 |
 | high | new_venue_candidate | new | venue | 会場候補「作りはじまりました」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 作りはじまりました | 作りはじまりました 盆踊り | https://x.com/MINEZO14/status/2081165292051534058 |
 | high | new_venue_candidate | new | venue | 会場候補「到着したら が櫓の上に😆」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 到着したら が櫓の上に😆 | 到着したら が櫓の上に😆 盆踊り | https://x.com/kaz0045/status/2081079781232418965 |
 | high | new_venue_candidate | new | venue | 会場候補「創価学会調布平和会館駐車場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 創価学会調布平和会館駐車場 | 創価学会調布平和会館駐車場 盆踊り | https://x.com/mitsuefujikawa/status/2080398668818170224 |
@@ -1434,6 +1477,7 @@
 | high | new_venue_candidate | new | venue | 会場候補「東急プラザ蒲田 屋上「かまたえん」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 東急プラザ蒲田 屋上「かまたえん | 東急プラザ蒲田 屋上「かまたえん 盆踊り | https://x.com/otakanko2/status/2084836806629937153 |
 | high | new_venue_candidate | new | venue | 会場候補「松代小学校 校庭」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 松代小学校 校庭 | 松代小学校 校庭 盆踊り | https://x.com/matsushirooyaji/status/2068702239796162621 |
 | high | new_venue_candidate | new | venue | 会場候補「標茶町開発センター・うぃず前特設会場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 標茶町開発センター・うぃず前特設会場 | 標茶町開発センター・うぃず前特設会場 盆踊り | https://x.com/kawatabi_hok/status/2082285577416974633 |
+| high | new_venue_candidate | new | venue | 会場候補「横浜サムズアップ（問）045-314-870」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 横浜サムズアップ（問）045-314-870 | 横浜サムズアップ（問）045-314-870 盆踊り | https://x.com/SUPER_Goooooood/status/2087434482987241544 |
 | high | new_venue_candidate | new | venue | 会場候補「歌ってくれるらしいよと情報が入り慌てて神社に💦」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 歌ってくれるらしいよと情報が入り慌てて神社に💦 | 歌ってくれるらしいよと情報が入り慌てて神社に💦 盆踊り | https://x.com/panda_dapan11/status/2083735653972623623 |
 | high | new_venue_candidate | new | venue | 会場候補「津島神社周辺」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 津島神社周辺, お待ちしてます🙌 | 津島神社周辺 盆踊り; お待ちしてます🙌 盆踊り | https://x.com/LoveledgeNagoya/status/2075792946281279641 |
 | high | new_venue_candidate | new | venue | 会場候補「熱気に包まれていました」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 熱気に包まれていました, は大きな歓声が上がりました | 熱気に包まれていました 盆踊り; は大きな歓声が上がりました 盆踊り | https://x.com/hekotaremasen1/status/2082351915115913397 |
@@ -1474,6 +1518,7 @@
 | high | new_venue_candidate | new | venue | 会場候補「館林城ゆめひろば」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 館林城ゆめひろば | 館林城ゆめひろば 盆踊り | https://x.com/AKB48mkia/status/2067139857223471559 |
 | high | new_venue_candidate | new | venue | 会場候補「高島平二丁目公園」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 高島平二丁目公園, 周辺は駐輪禁止のため徒歩 | 高島平二丁目公園 盆踊り; 周辺は駐輪禁止のため徒歩 盆踊り | https://x.com/tomo39504/status/2076264625671442617 |
 | high | new_venue_candidate | new | venue | 会場候補「麻生市民館大会議室」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 麻生市民館大会議室 | 麻生市民館大会議室 盆踊り | https://x.com/shinyuriart/status/2070824468222525588 |
+| high | new_venue_candidate | new | venue | 会場候補「︰白河関の森公園(白河市旗宿白河内7-2」に関するX由来情報。 | 既存会場に完全一致しない会場候補: ︰白河関の森公園(白河市旗宿白河内7-2, 内をグリーティング | ︰白河関の森公園(白河市旗宿白河内7-2 盆踊り; 内をグリーティング 盆踊り | https://x.com/DharuriserMovie/status/2087444936606241138 |
 | high | new_venue_candidate | new | venue | イベント候補「上野ゐの市盆踊り」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 出店中の | 上野ゐの市盆踊り 台東区 盆踊り; 出店中の 台東区 盆踊り | https://x.com/akiichiko/status/2087049111703064999 |
 | high | new_venue_candidate | new | venue | 会場候補「羽田まつり（独特のヨコタ神輿が迫力満点」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 羽田まつり（独特のヨコタ神輿が迫力満点, 神奈川大和阿波おどり（大和駅周辺, 茂原七夕まつり最終日（華やかな七夕飾りとフィナーレ | 羽田まつり（独特のヨコタ神輿が迫力満点 大田区 盆踊り; 神奈川大和阿波おどり（大和駅周辺 大田区 盆踊り | https://x.com/mormogtarou/status/2081221280804864312 |
 | high | new_venue_candidate | new | venue | 会場候補「代々木公園 野外ステージ」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 代々木公園 ケヤキ並木通り・やぐらステージ | 代々木公園 野外ステージ 渋谷区 盆踊り; 代々木公園 ケヤキ並木通り・やぐらステージ 渋谷区 盆踊り | https://x.com/kouki_yamagajo/status/2075786573862646106 |
@@ -1501,6 +1546,7 @@
 | medium | new_venue_candidate | new | venue | 会場候補「居ますの」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 居ますの | 居ますの 盆踊り | https://x.com/oniguma_chiharu/status/2075744399615750188 |
 | medium | new_venue_candidate | new | venue | イベント候補「戸越宮前盆踊り」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 小学校の校庭 | 戸越宮前盆踊り 盆踊り; 小学校の校庭 盆踊り | https://x.com/hitomizuki1/status/2063588618137182529 |
 | medium | new_venue_candidate | new | venue | 会場候補「東館B1F ゆらぎの広場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 東館B1F ゆらぎの広場 | 東館B1F ゆらぎの広場 盆踊り | https://x.com/7376GgBw1gwxUM3/status/2083108105123246211 |
+| medium | new_venue_candidate | new | venue | 会場候補「沼津市内（沿岸部会場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 沼津市内（沿岸部会場 | 沼津市内（沿岸部会場 盆踊り | https://x.com/weloveshizuoka/status/2087373517410935193 |
 | medium | new_venue_candidate | new | venue | 会場候補「流れちゃうかも」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 流れちゃうかも | 流れちゃうかも 盆踊り | https://x.com/CryptoNinja_NFT/status/2070708593872318483 |
 | medium | new_venue_candidate | new | venue | 会場候補「浅貝地区」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 浅貝地区 | 浅貝地区 盆踊り | https://x.com/guchi_on/status/2079099032434262149 |
 | medium | new_venue_candidate | new | venue | 会場候補「淨元寺 境内・駐車場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 淨元寺 境内・駐車場 | 淨元寺 境内・駐車場 盆踊り | https://x.com/Kuji1Sns/status/2083011103198728641 |
@@ -1509,6 +1555,7 @@
 | medium | new_venue_candidate | new | venue | イベント候補「笠間納涼盆踊り」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 笠間大池公園 | 笠間納涼盆踊り 盆踊り; 笠間大池公園 盆踊り | https://x.com/miryutan38/status/2087067496532914555 |
 | medium | new_venue_candidate | new | venue | イベント候補「笠間納涼盆踊り」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 行くところ温かいお言葉をかけていただいてます | 笠間納涼盆踊り 盆踊り; 行くところ温かいお言葉をかけていただいてます 盆踊り | https://x.com/yutoadachi/status/2077601676119425282 |
 | medium | new_venue_candidate | new | venue | 会場候補「銀座1〜8丁目」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 銀座1〜8丁目, 熊谷駅 ニットーモール | 銀座1〜8丁目 盆踊り; 熊谷駅 ニットーモール 盆踊り | https://x.com/sing_spn/status/2081629127589908939 |
+| medium | new_venue_candidate | new | venue | 会場候補「長野縣護國神社」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 長野縣護國神社 | 長野縣護國神社 盆踊り | https://x.com/matsumoto2026/status/2087446737061572918 |
 | medium | new_venue_candidate | new | venue | 会場候補「駐車場はありません」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 駐車場はありません | 駐車場はありません 盆踊り | https://x.com/ichikawa_news/status/2082400235821973840 |
 | medium | new_venue_candidate | new | venue | イベント候補「下北沢盆踊り」に関するX由来情報。 | 既存会場に完全一致しない会場候補: なりました | 下北沢盆踊り 世田谷区 盆踊り; なりました 世田谷区 盆踊り | https://x.com/ititityouko320/status/2081281636159860873 |
 | medium | new_venue_candidate | new | venue | イベント候補「今のところ下北沢盆踊り」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 下北沢盆踊りは予定通り | 今のところ下北沢盆踊り 世田谷区 盆踊り; 下北沢盆踊りは予定通り 世田谷区 盆踊り | https://x.com/Atutakamama7034/status/2081265950884605982 |
@@ -1528,9 +1575,11 @@
 | low | new_venue_candidate | new | venue | 会場候補「2010年W杯のオランダ戦」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 2010年W杯のオランダ戦 | 2010年W杯のオランダ戦 盆踊り | https://x.com/bon_odoroo/status/2066539628866511089 |
 | low | new_venue_candidate | new | venue | 会場候補「3ヶ月待ちだった」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 3ヶ月待ちだった | 3ヶ月待ちだった 盆踊り | https://x.com/tsukasa72/status/2081922714047275485 |
 | low | new_venue_candidate | new | venue | 会場候補「4階広場」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 4階広場 | 4階広場 盆踊り | https://x.com/highlandrail/status/2083164912373940630 |
+| low | new_venue_candidate | new | venue | 会場候補「5色にキラキラしていてその風景」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 5色にキラキラしていてその風景 | 5色にキラキラしていてその風景 盆踊り | https://x.com/kitty8686mass/status/2087362439985979533 |
 | low | new_venue_candidate | new | venue | 会場候補「「一日目の方がオススメ」とアドバイスをもらった」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 「一日目の方がオススメ」とアドバイスをもらった | 「一日目の方がオススメ」とアドバイスをもらった 盆踊り | https://x.com/hidedon78/status/2084917113266053624 |
 | low | new_venue_candidate | new | venue | 会場候補「「今」をシェアしてね」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 「今」をシェアしてね | 「今」をシェアしてね 盆踊り | https://x.com/sober987/status/2086464597905797121 |
 | low | new_venue_candidate | new | venue | 会場候補「ああいった踊りの人がいるの新鮮」に関するX由来情報。 | 既存会場に完全一致しない会場候補: ああいった踊りの人がいるの新鮮 | ああいった踊りの人がいるの新鮮 盆踊り | https://x.com/ruikozuka/status/2081886888957448487 |
+| low | new_venue_candidate | new | venue | 会場候補「あったみたい」に関するX由来情報。 | 既存会場に完全一致しない会場候補: あったみたい | あったみたい 盆踊り | https://x.com/asattetanosiku/status/2087183390454006079 |
 | low | new_venue_candidate | new | venue | 会場候補「あったら教えてください…！（忘れられない」に関するX由来情報。 | 既存会場に完全一致しない会場候補: あったら教えてください…！（忘れられない | あったら教えてください…！（忘れられない 盆踊り | https://x.com/_yumemigati/status/2083107387846905993 |
 | low | new_venue_candidate | new | venue | 会場候補「あと数日」に関するX由来情報。 | 既存会場に完全一致しない会場候補: あと数日 | あと数日 盆踊り | https://x.com/sissyo40/status/2084837547247558789 |
 | low | new_venue_candidate | new | venue | 会場候補「あると聞いた」に関するX由来情報。 | 既存会場に完全一致しない会場候補: あると聞いた, 子どもたちだけ | あると聞いた 盆踊り; 子どもたちだけ 盆踊り | https://x.com/kuzunavi/status/2064531359306301683 |
@@ -1544,6 +1593,7 @@
 | low | new_venue_candidate | new | venue | 会場候補「いてはジンギスカンは盆踊りの曲目」に関するX由来情報。 | 既存会場に完全一致しない会場候補: いてはジンギスカンは盆踊りの曲目 | いてはジンギスカンは盆踊りの曲目 盆踊り | https://x.com/aconitine_NEO/status/2075528406041846184 |
 | low | new_venue_candidate | new | venue | 会場候補「います😊」に関するX由来情報。 | 既存会場に完全一致しない会場候補: います😊 | います😊 盆踊り | https://x.com/ZERO98048735/status/2082858372827939318 |
 | low | new_venue_candidate | new | venue | 会場候補「いるアイドルの詳細は夕方に発表❣」に関するX由来情報。 | 既存会場に完全一致しない会場候補: いるアイドルの詳細は夕方に発表❣ | いるアイドルの詳細は夕方に発表❣ 盆踊り | https://x.com/VRCXV/status/2085951683713175591 |
+| low | new_venue_candidate | new | venue | 会場候補「お医者さん？」に関するX由来情報。 | 既存会場に完全一致しない会場候補: お医者さん？ | お医者さん？ 盆踊り | https://x.com/sunQ2024MEGA/status/2087387428692893975 |
 | low | new_venue_candidate | new | venue | 会場候補「お待ちしています」に関するX由来情報。 | 既存会場に完全一致しない会場候補: お待ちしています | お待ちしています 盆踊り | https://x.com/yumemarukun/status/2076215865234825277 |
 | low | new_venue_candidate | new | venue | 会場候補「お待ちしています」に関するX由来情報。 | 既存会場に完全一致しない会場候補: お待ちしています | お待ちしています 盆踊り | https://x.com/yumemarukun/status/2075852254343754066 |
 | low | new_venue_candidate | new | venue | 会場候補「お待ちしてます🌊」に関するX由来情報。 | 既存会場に完全一致しない会場候補: お待ちしてます🌊 | お待ちしてます🌊 盆踊り | https://x.com/ichigoichie182/status/2067067883969200181 |
@@ -1582,9 +1632,11 @@
 | low | new_venue_candidate | new | venue | 会場候補「はありますが」に関するX由来情報。 | 既存会場に完全一致しない会場候補: はありますが, す（＾∇＾ | はありますが 盆踊り; す（＾∇＾ 盆踊り | https://x.com/IID_PSV/status/2081030011713425463 |
 | low | new_venue_candidate | new | venue | 会場候補「はありません」に関するX由来情報。 | 既存会場に完全一致しない会場候補: はありません | はありません 盆踊り | https://x.com/Furugiya11/status/2083767238176510033 |
 | low | new_venue_candidate | new | venue | 会場候補「はこの会場しかかかりませんね」に関するX由来情報。 | 既存会場に完全一致しない会場候補: はこの会場しかかかりませんね | はこの会場しかかかりませんね 盆踊り | https://x.com/bjvbiMpM0SQWrmy/status/2082865311666319486 |
+| low | new_venue_candidate | new | venue | 会場候補「は取り払われて」に関するX由来情報。 | 既存会場に完全一致しない会場候補: は取り払われて | は取り払われて 盆踊り | https://x.com/KishinoYUICHI/status/2087336970125259172 |
 | low | new_venue_candidate | new | venue | 会場候補「は屋台グルメや子ども」に関するX由来情報。 | 既存会場に完全一致しない会場候補: は屋台グルメや子ども | は屋台グルメや子ども 盆踊り | https://x.com/shin31202290/status/2085943519731224974 |
 | low | new_venue_candidate | new | venue | 会場候補「は盆踊り🕺」に関するX由来情報。 | 既存会場に完全一致しない会場候補: は盆踊り🕺 | は盆踊り🕺 盆踊り | https://x.com/P1OTih0kqEa4Dkl/status/2076220482698072504 |
 | low | new_venue_candidate | new | venue | 会場候補「は行きます！」に関するX由来情報。 | 既存会場に完全一致しない会場候補: は行きます！ | は行きます！ 盆踊り | https://x.com/MonotoneVivids/status/2065431400325730369 |
+| low | new_venue_candidate | new | venue | 会場候補「ぶち壊してシナリオクリアしました」に関するX由来情報。 | 既存会場に完全一致しない会場候補: ぶち壊してシナリオクリアしました | ぶち壊してシナリオクリアしました 盆踊り | https://x.com/gira_fumbler/status/2087386126172766213 |
 | low | new_venue_candidate | new | venue | 会場候補「へジャケ写のユッコちゃんをお連れする事が今年は無理」に関するX由来情報。 | 既存会場に完全一致しない会場候補: へジャケ写のユッコちゃんをお連れする事が今年は無理 | へジャケ写のユッコちゃんをお連れする事が今年は無理 盆踊り | https://x.com/TOKIHARU2020/status/2079042867818082413 |
 | low | new_venue_candidate | new | venue | 会場候補「へ向かうBGMとしていいかも(/・ω・)/」に関するX由来情報。 | 既存会場に完全一致しない会場候補: へ向かうBGMとしていいかも(/・ω・)/ | へ向かうBGMとしていいかも(/・ω・)/ 盆踊り | https://x.com/nijigame_taiko/status/2083399717829136442 |
 | low | new_venue_candidate | new | venue | 会場候補「へ向かっているけどす」に関するX由来情報。 | 既存会場に完全一致しない会場候補: へ向かっているけどす | へ向かっているけどす 盆踊り | https://x.com/chaos_hassy_bt/status/2083470048728142271 |
@@ -1638,6 +1690,7 @@
 | low | new_venue_candidate | new | venue | 会場候補「取りのためにシート貼りに行ったけど灼熱」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 取りのためにシート貼りに行ったけど灼熱 | 取りのためにシート貼りに行ったけど灼熱 盆踊り | https://x.com/dragon_trance/status/2083434320119918951 |
 | low | new_venue_candidate | new | venue | 会場候補「向かってみたが」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 向かってみたが, 行ってみる | 向かってみたが 盆踊り; 行ってみる 盆踊り | https://x.com/ZnafG/status/2081328073275002880 |
 | low | new_venue_candidate | new | venue | 会場候補「呑気におる」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 呑気におる | 呑気におる 盆踊り | https://x.com/BJGbhJ6V5zu6Ykf/status/2083115745148608649 |
+| low | new_venue_candidate | new | venue | 会場候補「回ります」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 回ります, ごとに曲が違ったり楽しい | 回ります 盆踊り; ごとに曲が違ったり楽しい 盆踊り | https://x.com/shizuoka_neko/status/2087402650027606420 |
 | low | new_venue_candidate | new | venue | 会場候補「回るも良し」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 回るも良し | 回るも良し 盆踊り | https://x.com/rifa_kitsune/status/2085976975886495774 |
 | low | new_venue_candidate | new | venue | 会場候補「図・ステージプログラム」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 図・ステージプログラム | 図・ステージプログラム 盆踊り | https://x.com/kitahirotourism/status/2082946396773327256 |
 | low | new_venue_candidate | new | venue | 会場候補「地域の皆さまとたくさん交流させていただきました😃」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 地域の皆さまとたくさん交流させていただきました😃 | 地域の皆さまとたくさん交流させていただきました😃 盆踊り | https://x.com/310shigeyuki/status/2083929082031661295 |
@@ -1672,6 +1725,7 @@
 | low | new_venue_candidate | new | venue | 会場候補「数は20年」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 数は20年 | 数は20年 盆踊り | https://x.com/rise_t/status/2085580094408679459 |
 | low | new_venue_candidate | new | venue | 会場候補「旭正農業構造改善センター」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 旭正農業構造改善センター | 旭正農業構造改善センター 盆踊り | https://x.com/NingyoYoshida/status/2083820620228300948 |
 | low | new_venue_candidate | new | venue | 会場候補「暗黒盆踊りとかが見たい」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 暗黒盆踊りとかが見たい | 暗黒盆踊りとかが見たい 盆踊り | https://x.com/futtora/status/2064363129325400311 |
+| low | new_venue_candidate | new | venue | 会場候補「有名な古い神社だったの」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 有名な古い神社だったの | 有名な古い神社だったの 盆踊り | https://x.com/chaichai_nannan/status/2087430245662208500 |
 | low | new_venue_candidate | new | venue | 会場候補「本当嬉しいし」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 本当嬉しいし, 歌いたいなって思ったのと | 本当嬉しいし 盆踊り; 歌いたいなって思ったのと 盆踊り | https://x.com/masaki_shiota17/status/2075929382343024827 |
 | low | new_venue_candidate | new | venue | 会場候補「来ました」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 来ました | 来ました 盆踊り | https://x.com/mikotoindex/status/2086341579674157551 |
 | low | new_venue_candidate | new | venue | 会場候補「来るのは不自然」に関するX由来情報。 | 既存会場に完全一致しない会場候補: 来るのは不自然 | 来るのは不自然 盆踊り | https://x.com/YOS44160844/status/2065464434768961825 |
@@ -1731,6 +1785,7 @@
 | high | new_event_candidate | new | event | イベント候補「00からののど自慢大会と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からののど自慢大会と盆踊り | 00からののど自慢大会と盆踊り 盆踊り | https://x.com/kotobukiettou/status/2086984182019051728 |
 | high | new_event_candidate | new | event | イベント候補「00からの寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からの寝転ん盆踊り | 00からの寝転ん盆踊り 盆踊り | https://x.com/Rekka_Nicoco/status/2085978793064505489 |
 | high | new_event_candidate | new | event | イベント候補「00からの寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からの寝転ん盆踊り, まさかの初出勤が寝転ん盆踊り | 00からの寝転ん盆踊り 盆踊り; まさかの初出勤が寝転ん盆踊り 盆踊り | https://x.com/SugarSugar2580/status/2085939863384444938 |
+| high | new_event_candidate | new | event | イベント候補「00からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からの盆踊り | 00からの盆踊り 盆踊り | https://x.com/parsley1963/status/2087105838087627021 |
 | high | new_event_candidate | new | event | イベント候補「00からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からの盆踊り | 00からの盆踊り 盆踊り | https://x.com/elmo08151027/status/2085972199631147195 |
 | high | new_event_candidate | new | event | イベント候補「00からは大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からは大盆踊り | 00からは大盆踊り 盆踊り | https://x.com/sweet_aholic/status/2086335340990861483 |
 | high | new_event_candidate | new | event | イベント候補「00からは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 00からは盆踊り | 00からは盆踊り 盆踊り | https://x.com/hashimomoh/status/2078370032426549709 |
@@ -1751,6 +1806,7 @@
 | high | new_event_candidate | new | event | イベント候補「1 最後の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1 最後の盆踊り | 1 最後の盆踊り 盆踊り | https://x.com/Su14taka/status/2083467844097089947 |
 | high | new_event_candidate | new | event | イベント候補「10 ・映画村盆踊りレポ(乱雑) ・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10 ・映画村盆踊りレポ(乱雑) ・盆踊り | 10 ・映画村盆踊りレポ(乱雑) ・盆踊り 盆踊り | https://x.com/mocchi_mochiii/status/2087031169787507194 |
 | high | new_event_candidate | new | event | イベント候補「100件目 入新井盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 100件目 入新井盆踊り | 100件目 入新井盆踊り 盆踊り; 去年より狭くて窮屈だった 盆踊り | https://x.com/2tsuo_g/status/2075351769652375828 |
+| high | new_event_candidate | new | event | イベント候補「100円 事前予約制 主に東京都内でかかる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 100円 事前予約制 主に東京都内でかかる盆踊り | 100円 事前予約制 主に東京都内でかかる盆踊り 盆踊り | https://x.com/7CC_Ayase/status/2087328209700556944 |
 | high | new_event_candidate | new | event | イベント候補「10の2days開催の笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10の2days開催の笠間納涼盆踊り | 10の2days開催の笠間納涼盆踊り 盆踊り; 笠間市箱田867-1 盆踊り | https://x.com/adachihouse/status/2084471819994599452 |
 | high | new_event_candidate | new | event | イベント候補「10日 横浜八時間耐久盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10日 横浜八時間耐久盆踊り | 10日 横浜八時間耐久盆踊り 盆踊り | https://x.com/bonbonharuru/status/2086330947881058391 |
 | high | new_event_candidate | new | event | イベント候補「10日(月) 笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10日(月) 笠間納涼盆踊り | 10日(月) 笠間納涼盆踊り 盆踊り; 笠間大池公園 盆踊り | https://x.com/ohimeno_asyu/status/2083389118709694833 |
@@ -1766,6 +1822,7 @@
 | high | new_event_candidate | new | event | イベント候補「12日(土)もいわ山盆踊り2026にやべーべやも参加するべや みんなで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 12日(土)もいわ山盆踊り2026にやべーべやも参加するべや みんなで盆踊り | 12日(土)もいわ山盆踊り2026にやべーべやも参加するべや みんなで盆踊り 盆踊り | https://x.com/YabeeBear/status/2079836080589939097 |
 | high | new_event_candidate | new | event | イベント候補「12日は晴海ふ頭で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 12日は晴海ふ頭で盆踊り | 12日は晴海ふ頭で盆踊り 盆踊り | https://x.com/event_finderjp/status/2075844539995308512 |
 | high | new_event_candidate | new | event | イベント候補「12時から15時まで上野公園袴腰広場の「ゐの市盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 12時から15時まで上野公園袴腰広場の「ゐの市盆踊り, ゐの市盆踊り | 12時から15時まで上野公園袴腰広場の「ゐの市盆踊り 盆踊り; ふるさと盆踊り 盆踊り | https://x.com/natsutr_bon/status/2085935046666641731 |
+| high | new_event_candidate | new | event | イベント候補「12時から21時 旭川裏盆踊り 場所 神楽岡公園 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 12時から21時 旭川裏盆踊り 場所 神楽岡公園 盆踊り | 12時から21時 旭川裏盆踊り 場所 神楽岡公園 盆踊り 盆踊り; 神楽岡公園 盆踊り | https://x.com/ms06ss2_ms06ss/status/2087417420759904402 |
 | high | new_event_candidate | new | event | イベント候補「134件目 下前町会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 134件目 下前町会 納涼盆踊り, 戸田音頭, お米ありがとう音頭 | 134件目 下前町会 納涼盆踊り 盆踊り; 戸田音頭 盆踊り | https://x.com/2tsuo_g/status/2085341241626280239 |
 | high | new_event_candidate | new | event | イベント候補「13「水泳部のぴちゃぴちゃ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 13「水泳部のぴちゃぴちゃ盆踊り, 楽屋A盆踊り, 水泳部のぴちゃぴちゃ盆踊り大会2026 in楽屋A | 13「水泳部のぴちゃぴちゃ盆踊り 盆踊り; 楽屋A盆踊り 盆踊り | https://x.com/gakuyasode/status/2085968844489691402 |
 | high | new_event_candidate | new | event | イベント候補「13「水泳部のぴちゃぴちゃ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 13「水泳部のぴちゃぴちゃ盆踊り, 楽屋A盆踊り, 水泳部のぴちゃぴちゃ盆踊り大会2026 in楽屋A | 13「水泳部のぴちゃぴちゃ盆踊り 盆踊り; 楽屋A盆踊り 盆踊り | https://x.com/gakuyasode/status/2084898814545080547 |
@@ -1780,11 +1837,13 @@
 | high | new_event_candidate | new | event | イベント候補「14開催】むつみふれあい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 14開催】むつみふれあい盆踊り | 14開催】むつみふれあい盆踊り 盆踊り | https://x.com/travelhub_jp/status/2084307219320012831 |
 | high | new_event_candidate | new | event | イベント候補「15 (土) 柳ヶ瀬 ants パンク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15 (土) 柳ヶ瀬 ants パンク盆踊り | 15 (土) 柳ヶ瀬 ants パンク盆踊り 盆踊り; お越しください 盆踊り | https://x.com/bEERPiGs_Dr/status/2085273034265673731 |
 | high | new_event_candidate | new | event | イベント候補「15 「豊競de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15 「豊競de盆踊り, 17時30分 豊橋ゆかりの盆踊り, 20時 DJ Celly・鳳蝶会による盆踊り | 15 「豊競de盆踊り 盆踊り; 17時30分 豊橋ゆかりの盆踊り 盆踊り | https://x.com/sponichikeirin/status/2087020764952510762 |
+| high | new_event_candidate | new | event | イベント候補「15からは300年以上続く伝統の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15からは300年以上続く伝統の盆踊り, 300年以上の伝統ある親しみやすい盆踊り | 15からは300年以上続く伝統の盆踊り 盆踊り; 300年以上の伝統ある親しみやすい盆踊り 盆踊り; 岡山県新庄村（新庄川河川公園周辺・がいせん桜通り 盆踊り | https://x.com/iko_yo_trip/status/2087411257150492723 |
 | high | new_event_candidate | new | event | イベント候補「15からはtupera tupera とプランクトンによる大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15からはtupera tupera とプランクトンによる大盆踊り, tupera tupera とプランクトンによる大盆踊り, 他 盆踊り | 15からはtupera tupera とプランクトンによる大盆踊り 盆踊り; tupera tupera とプランクトンによる大盆踊り 盆踊り; 会場：ノースホール 盆踊り | https://x.com/RT_Kyoto/status/2085917931142287857 |
 | high | new_event_candidate | new | event | イベント候補「15も日枝神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15も日枝神社の盆踊り | 15も日枝神社の盆踊り 盆踊り | https://x.com/Izo7m/status/2067121284740456816 |
 | high | new_event_candidate | new | event | イベント候補「15日(土) ビアガーデン(ちょっとだけ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15日(土) ビアガーデン(ちょっとだけ盆踊り | 15日(土) ビアガーデン(ちょっとだけ盆踊り 盆踊り | https://x.com/sapporo_L3/status/2083031589878153615 |
 | high | new_event_candidate | new | event | イベント候補「15日の「勝山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15日の「勝山盆踊り, 勝山盆踊り | 15日の「勝山盆踊り 盆踊り; 勝山盆踊り 盆踊り | https://x.com/otodama_radio/status/2079347176099254703 |
 | high | new_event_candidate | new | event | イベント候補「15日は美川地区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15日は美川地区盆踊り | 15日は美川地区盆踊り 盆踊り | https://x.com/mikawakouminkan/status/2081624116340367806 |
+| high | new_event_candidate | new | event | イベント候補「15日北町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15日北町盆踊り | 15日北町盆踊り 盆踊り | https://x.com/fukaikita/status/2087352886963658984 |
 | high | new_event_candidate | new | event | イベント候補「15日足寄町 両国花火大会にて 仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15日足寄町 両国花火大会にて 仮装盆踊り | 15日足寄町 両国花火大会にて 仮装盆踊り 盆踊り | https://x.com/reu2155/status/2086733570572190113 |
 | high | new_event_candidate | new | event | イベント候補「15日（土） 小豆沢商友会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15日（土） 小豆沢商友会 納涼盆踊り | 15日（土） 小豆沢商友会 納涼盆踊り 盆踊り | https://x.com/ita_pro/status/2084920870146060638 |
 | high | new_event_candidate | new | event | イベント候補「15開催】三笠北海盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 15開催】三笠北海盆おどり | 15開催】三笠北海盆おどり 盆踊り; 三笠市民会館前 盆踊り | https://x.com/travelhub_jp/status/2084327689767498200 |
@@ -1813,6 +1872,7 @@
 | high | new_event_candidate | new | event | イベント候補「19(日) 西徳第一公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19(日) 西徳第一公園盆踊り | 19(日) 西徳第一公園盆踊り 盆踊り | https://x.com/takasho06130613/status/2077308347905388856 |
 | high | new_event_candidate | new | event | イベント候補「19(日)井田神社にて「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19(日)井田神社にて「納涼盆踊り, 納涼盆踊り大会 | 19(日)井田神社にて「納涼盆踊り 盆踊り; 納涼盆踊り大会 盆踊り | https://x.com/motosumisumiyoi/status/2075783096520307157 |
 | high | new_event_candidate | new | event | イベント候補「1954年から続く北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1954年から続く北海盆踊り, 参加自由】子供盆踊り | 1954年から続く北海盆踊り 盆踊り; 参加自由】子供盆踊り 盆踊り; 大通公園西2丁目（札幌市 盆踊り | https://x.com/iko_yo_trip/status/2086686480965992596 |
+| high | new_event_candidate | new | event | イベント候補「19のくめくめ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19のくめくめ盆踊り, 花笠音頭 | 19のくめくめ盆踊り 盆踊り; 花笠音頭 盆踊り; 花笠音頭 盆踊り | https://x.com/8XxmomoxX8/status/2087356732993679758 |
 | high | new_event_candidate | new | event | イベント候補「19日・20日は九条南納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19日・20日は九条南納涼盆踊り, 九条南納涼盆踊り | 19日・20日は九条南納涼盆踊り 盆踊り; 九条南納涼盆踊り 盆踊り; 九条南小学校（大阪市西区九条南2-13-17 盆踊り | https://x.com/osaka_nisiku/status/2087033769366868213 |
 | high | new_event_candidate | new | event | イベント候補「19日・20日は高台納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19日・20日は高台納涼盆踊り, 高台納涼盆踊り | 19日・20日は高台納涼盆踊り 盆踊り; 高台納涼盆踊り 盆踊り; 南堀江公園（大阪市西区南堀江2-8 盆踊り | https://x.com/osaka_nisiku/status/2086725487376679311 |
 | high | new_event_candidate | new | event | イベント候補「19日（水） みうらビーチ商店会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19日（水） みうらビーチ商店会 盆踊り | 19日（水） みうらビーチ商店会 盆踊り 盆踊り; 京急三浦海岸駅 チェルSeaみうら広場 盆踊り | https://x.com/anisondisco/status/2084991933798297691 |
@@ -1824,7 +1884,6 @@
 | high | new_event_candidate | new | event | イベント候補「1「祭」では多国のお菓子と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1「祭」では多国のお菓子と盆踊り | 1「祭」では多国のお菓子と盆踊り 盆踊り | https://x.com/StreamerPress/status/2067874370522132709 |
 | high | new_event_candidate | new | event | イベント候補「1の花咲納涼盆踊り大会に向けての盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1の花咲納涼盆踊り大会に向けての盆踊り | 1の花咲納涼盆踊り大会に向けての盆踊り 盆踊り | https://x.com/kane_tomo_nara/status/2079020889954504776 |
 | high | new_event_candidate | new | event | イベント候補「1は「追悼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1は「追悼盆踊り, 追悼盆踊り | 1は「追悼盆踊り 盆踊り; 追悼盆踊り 盆踊り; 地元保存会の踊り 盆踊り | https://x.com/strada_snow/status/2082239719317135706 |
-| high | new_event_candidate | new | event | イベント候補「1ヶ月以上振りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1ヶ月以上振りの盆踊り | 1ヶ月以上振りの盆踊り 盆踊り | https://x.com/sakaeya_h/status/2076572834504257672 |
 | high | new_event_candidate | new | event | イベント候補「1・2(土日)に開催される「三鷹台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1・2(土日)に開催される「三鷹台盆踊り, 三鷹台盆踊り大会 | 1・2(土日)に開催される「三鷹台盆踊り 盆踊り; 三鷹台盆踊り大会 盆踊り | https://x.com/Santama_Genjin/status/2081676713684324604 |
 | high | new_event_candidate | new | event | イベント候補「1日(土)上小松町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1日(土)上小松町会盆踊り, 楽しい盆踊り | 1日(土)上小松町会盆踊り 盆踊り; 楽しい盆踊り 盆踊り | https://x.com/toshiaki_____/status/2083915497129779398 |
 | high | new_event_candidate | new | event | イベント候補「1日(土)松本浩一の活動報告 本日17時からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1日(土)松本浩一の活動報告 本日17時からの盆踊り | 1日(土)松本浩一の活動報告 本日17時からの盆踊り 盆踊り; 準備中！立派な櫓が組み上がり 盆踊り; お待ちしています😊 盆踊り | https://x.com/Matsumoto_501/status/2083458035482313131 |
@@ -1858,6 +1917,8 @@
 | high | new_event_candidate | new | event | イベント候補「2026年盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2026年盆踊り | 2026年盆踊り 盆踊り; ズンパ踊り 盆踊り | https://x.com/uja31/status/2075932859962098042 |
 | high | new_event_candidate | new | event | イベント候補「2026年盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2026年盆踊り | 2026年盆踊り 盆踊り; 山王音頭 盆踊り; やっぱり踊り 盆踊り | https://x.com/uja31/status/2066500349377343859 |
 | high | new_event_candidate | new | event | イベント候補「2026年菊浜盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2026年菊浜盆踊り, 菊浜盆踊り | 2026年菊浜盆踊り 盆踊り; 菊浜盆踊り 盆踊り | https://x.com/akarishoten/status/2066857078233469051 |
+| high | new_event_candidate | new | event | イベント候補「2026納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2026納涼盆踊り, フェスティバルFUKUSHIMA!2026納涼盆踊り | 2026納涼盆踊り 盆踊り; フェスティバルFUKUSHIMA!2026納涼盆踊り 盆踊り | https://x.com/masawataslumber/status/2087426184565149862 |
+| high | new_event_candidate | new | event | イベント候補「2026納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2026納涼盆踊り, フェスティバルFUKUSHIMA!2026納涼盆踊り | 2026納涼盆踊り 盆踊り; フェスティバルFUKUSHIMA!2026納涼盆踊り 盆踊り | https://x.com/masawataslumber/status/2087424978849558979 |
 | high | new_event_candidate | new | event | イベント候補「20からアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 20からアニソン盆踊り | 20からアニソン盆踊り 盆踊り | https://x.com/station_nsb/status/2087057446414303711 |
 | high | new_event_candidate | new | event | イベント候補「20日(月)です 昨夜も近くの自治体盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 20日(月)です 昨夜も近くの自治体盆踊り | 20日(月)です 昨夜も近くの自治体盆踊り 盆踊り | https://x.com/kitunemahoroba/status/2078991134110732404 |
 | high | new_event_candidate | new | event | イベント候補「20日(月)です 昨夜も近くの自治体盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 20日(月)です 昨夜も近くの自治体盆踊り | 20日(月)です 昨夜も近くの自治体盆踊り 盆踊り | https://x.com/hikaru_mikaduki/status/2078990150936469734 |
@@ -1873,6 +1934,7 @@
 | high | new_event_candidate | new | event | イベント候補「20箇所目は松月院にて番匠免町会が開催している納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 20箇所目は松月院にて番匠免町会が開催している納涼盆踊り | 20箇所目は松月院にて番匠免町会が開催している納涼盆踊り 盆踊り | https://x.com/nakayamashizu/status/2080982355498734040 |
 | high | new_event_candidate | new | event | イベント候補「20開催 おやまの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 20開催 おやまの盆踊り | 20開催 おやまの盆踊り 盆踊り | https://x.com/yamabon_zaimoku/status/2069374915233632464 |
 | high | new_event_candidate | new | event | イベント候補「20開催 おやまの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 20開催 おやまの盆踊り, おやまの盆踊り | 20開催 おやまの盆踊り 盆踊り; おやまの盆踊り 盆踊り | https://x.com/yamabon_zaimoku/status/2067200588316622899 |
+| high | new_event_candidate | new | event | イベント候補「21は 天美小鉄師匠のお招きで松原市人権交流センター『更池納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 21は 天美小鉄師匠のお招きで松原市人権交流センター『更池納涼盆踊り, 更池納涼盆踊り大会 | 21は 天美小鉄師匠のお招きで松原市人権交流センター『更池納涼盆踊り 盆踊り; 更池納涼盆踊り大会 盆踊り | https://x.com/gosyuondomarl/status/2087399396606619796 |
 | high | new_event_candidate | new | event | イベント候補「21時まで夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 21時まで夏祭り盆踊り | 21時まで夏祭り盆踊り 盆踊り; 両国国技館駅前大通り 盆踊り | https://x.com/70sNostalgia/status/2083796103703548098 |
 | high | new_event_candidate | new | event | イベント候補「22はきくち盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 22はきくち盆踊り | 22はきくち盆踊り 盆踊り | https://x.com/thinking_cafe/status/2083795101890027715 |
 | high | new_event_candidate | new | event | イベント候補「22・23(土日)は「久我山納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 22・23(土日)は「久我山納涼盆踊り, 久我山納涼盆踊り大会 | 22・23(土日)は「久我山納涼盆踊り 盆踊り; 久我山納涼盆踊り大会 盆踊り | https://x.com/Santama_Genjin/status/2084846150910439628 |
@@ -1883,6 +1945,7 @@
 | high | new_event_candidate | new | event | イベント候補「23】 昨年17年ぶりに復活した水戸の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 23】 昨年17年ぶりに復活した水戸の盆踊り, 今年も盆踊り | 23】 昨年17年ぶりに復活した水戸の盆踊り 盆踊り; 今年も盆踊り 盆踊り; リリーアリーナMITO 盆踊り | https://x.com/mitomatsuri/status/2077657499319279965 |
 | high | new_event_candidate | new | event | イベント候補「23日(木) 世田谷区砧社会福祉法人友愛十字会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 23日(木) 世田谷区砧社会福祉法人友愛十字会盆踊り | 23日(木) 世田谷区砧社会福祉法人友愛十字会盆踊り 盆踊り | https://x.com/MvFteXpSUUi8WCd/status/2077287433339871510 |
 | high | new_event_candidate | new | event | イベント候補「23日24日『一心寺地蔵盆フェスティバル』 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 23日24日『一心寺地蔵盆フェスティバル』 盆踊り | 23日24日『一心寺地蔵盆フェスティバル』 盆踊り 盆踊り | https://x.com/deadlyhangover/status/2077317208083255501 |
+| high | new_event_candidate | new | event | イベント候補「23日（日）はサザンビーチで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 23日（日）はサザンビーチで盆踊り, 茅ヶ崎市の後援を得てサザンビーチで初の砂浜での盆踊り, サザンオールスターズの曲でも盆踊り | 23日（日）はサザンビーチで盆踊り 盆踊り; 茅ヶ崎市の後援を得てサザンビーチで初の砂浜での盆踊り 盆踊り | https://x.com/dagasiya69/status/2087393761861247029 |
 | high | new_event_candidate | new | event | イベント候補「23日（木）・24日（金）に行われる「上町町会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 23日（木）・24日（金）に行われる「上町町会納涼盆踊り, 上町町会納涼盆踊り大会 | 23日（木）・24日（金）に行われる「上町町会納涼盆踊り 盆踊り; 上町町会納涼盆踊り大会 盆踊り | https://x.com/todasitomato/status/2069329613642215586 |
 | high | new_event_candidate | new | event | イベント候補「23開催】安堵町ふれあい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 23開催】安堵町ふれあい盆踊り | 23開催】安堵町ふれあい盆踊り 盆踊り | https://x.com/travelhub_jp/status/2086435966424949048 |
 | high | new_event_candidate | new | event | イベント候補「24「丸の内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 24「丸の内盆踊り, 丸の内盆踊り2026 | 24「丸の内盆踊り 盆踊り; 丸の内盆踊り2026 盆踊り | https://x.com/Marunouchi_com/status/2077619235858059480 |
@@ -1943,7 +2006,9 @@
 | high | new_event_candidate | new | event | イベント候補「30から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30から盆踊り | 30から盆踊り 盆踊り | https://x.com/kishiyatsuka11/status/2083822072627863982 |
 | high | new_event_candidate | new | event | イベント候補「30から西淀川区民ホールで『盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30から西淀川区民ホールで『盆踊り, 盆踊り講習会 | 30から西淀川区民ホールで『盆踊り 盆踊り; 盆踊り講習会 盆踊り | https://x.com/nishiyodohallka/status/2077283770651250764 |
 | high | new_event_candidate | new | event | イベント候補「30すみだ 大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30すみだ 大盆踊り | 30すみだ 大盆踊り 盆踊り; 河内音頭 盆踊り; 錦糸町河内音頭 盆踊り | https://x.com/natsutr_bon/status/2083048397666504762 |
+| high | new_event_candidate | new | event | イベント候補「30に向けておじさんも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30に向けておじさんも盆踊り | 30に向けておじさんも盆踊り 盆踊り | https://x.com/chika344430/status/2087344227101610121 |
 | high | new_event_candidate | new | event | イベント候補「30の 『復活 おけがわ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30の 『復活 おけがわ盆踊り, 復活 おけがわ盆踊り | 30の 『復活 おけがわ盆踊り 盆踊り; 復活 おけがわ盆踊り 盆踊り | https://x.com/torutoru_1230/status/2076986292743946677 |
+| high | new_event_candidate | new | event | イベント候補「30の「北コミde盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30の「北コミde盆踊り, 北コミde盆踊り祭 | 30の「北コミde盆踊り 盆踊り; 北コミde盆踊り祭 盆踊り; 北コミュニティセンターISTAはばたき 盆踊り; みんなで楽しく踊り 盆踊り | https://x.com/istahabataki/status/2087424148352192727 |
 | high | new_event_candidate | new | event | イベント候補「30の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30の盆踊り | 30の盆踊り 盆踊り | https://x.com/KOHEI_sing2001/status/2075928497713971235 |
 | high | new_event_candidate | new | event | イベント候補「30は『北清水地区 こども夏祭り・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30は『北清水地区 こども夏祭り・盆踊り, 北清水地区 こども夏祭り・盆踊り大会 | 30は『北清水地区 こども夏祭り・盆踊り 盆踊り; 北清水地区 こども夏祭り・盆踊り大会 盆踊り | https://x.com/Yuki_Matsugami/status/2084925881022390482 |
 | high | new_event_candidate | new | event | イベント候補「30より 【夏越大祓・夏季例祭】 有志会によるお振舞いや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30より 【夏越大祓・夏季例祭】 有志会によるお振舞いや盆踊り | 30より 【夏越大祓・夏季例祭】 有志会によるお振舞いや盆踊り 盆踊り | https://x.com/hitaka_jinja/status/2084840940964098095 |
@@ -1952,6 +2017,7 @@
 | high | new_event_candidate | new | event | イベント候補「30日(木) 盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30日(木) 盆おどり | 30日(木) 盆おどり 盆踊り | https://x.com/oyabun1/status/2081820822214463888 |
 | high | new_event_candidate | new | event | イベント候補「30日・31日開催の 本願寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30日・31日開催の 本願寺納涼盆踊り | 30日・31日開催の 本願寺納涼盆踊り 盆踊り | https://x.com/yhs_yoshimoto/status/2082737512909619313 |
 | high | new_event_candidate | new | event | イベント候補「30日（木）に開催される3箇所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30日（木）に開催される3箇所の盆踊り, 鍛冶谷町会 盆踊り, 中町会 納涼盆踊り | 30日（木）に開催される3箇所の盆踊り 盆踊り; 鍛冶谷町会 盆踊り 盆踊り | https://x.com/todapiinfo/status/2082686541982466247 |
+| high | new_event_candidate | new | event | イベント候補「30頃は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30頃は盆踊り | 30頃は盆踊り 盆踊り; なります🏮縁日のお店屋さんごっこ 盆踊り | https://x.com/hoppe_toyonaka/status/2087338894090195314 |
 | high | new_event_candidate | new | event | イベント候補「31】 今日も夕方より地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 31】 今日も夕方より地域の盆踊り | 31】 今日も夕方より地域の盆踊り 盆踊り; へ伺いご挨拶させて頂きました 盆踊り | https://x.com/takakunorio/status/2083174826186002579 |
 | high | new_event_candidate | new | event | イベント候補「31は京都は西本願寺『本願寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 31は京都は西本願寺『本願寺納涼盆踊り, 本願寺納涼盆踊り | 31は京都は西本願寺『本願寺納涼盆踊り 盆踊り; 本願寺納涼盆踊り 盆踊り | https://x.com/banbanbanyama/status/2082382029287800949 |
 | high | new_event_candidate | new | event | イベント候補「31は日本テレビ通りの納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 31は日本テレビ通りの納涼盆踊り, さまざまな曲に合わせて踊る盆踊り | 31は日本テレビ通りの納涼盆踊り 盆踊り; さまざまな曲に合わせて踊る盆踊り 盆踊り | https://x.com/egoshi_yuuichi/status/2083787243420856485 |
@@ -2007,6 +2073,8 @@
 | high | new_event_candidate | new | event | イベント候補「7関の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 7関の盆踊り | 7関の盆踊り 盆踊り | https://x.com/kanamenyan1125/status/2085745756099813698 |
 | high | new_event_candidate | new | event | イベント候補「8 コクーンシティの夏祭り 1回目の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8 コクーンシティの夏祭り 1回目の盆踊り, 進行は綺麗なお姉さん達(コクーン盆踊り | 8 コクーンシティの夏祭り 1回目の盆踊り 盆踊り; 進行は綺麗なお姉さん達(コクーン盆踊り 盆踊り; 大宮音頭 盆踊り | https://x.com/nyoritael/status/2086347841166045197 |
 | high | new_event_candidate | new | event | イベント候補「8 夜は ・西区五味貝戸自治会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8 夜は ・西区五味貝戸自治会盆踊り, 最後に与野で地元の同級生に 「上町でも盆踊り, 上町でも盆踊りを復活させたいから見に来てるんだ | 8 夜は ・西区五味貝戸自治会盆踊り 盆踊り; 最後に与野で地元の同級生に 「上町でも盆踊り 盆踊り | https://x.com/iharayutaka1983/status/2086085684511818117 |
+| high | new_event_candidate | new | event | イベント候補「8 寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8 寝転ん盆踊り | 8 寝転ん盆踊り 盆踊り | https://x.com/Kruo_aeuo/status/2087381056567882173 |
+| high | new_event_candidate | new | event | イベント候補「8 寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8 寝転ん盆踊り | 8 寝転ん盆踊り 盆踊り | https://x.com/Kruo_aeuo/status/2087384831671898395 |
 | high | new_event_candidate | new | event | イベント候補「8 超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8 超寝転ん盆踊り | 8 超寝転ん盆踊り 盆踊り | https://x.com/Ren_VRCMode/status/2086693925570711923 |
 | high | new_event_candidate | new | event | イベント候補「8 超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8 超寝転ん盆踊り | 8 超寝転ん盆踊り 盆踊り | https://x.com/sisui_rei/status/2086331459380605266 |
 | high | new_event_candidate | new | event | イベント候補「81件目 荘七昇龍太鼓盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 81件目 荘七昇龍太鼓盆踊り | 81件目 荘七昇龍太鼓盆踊り 盆踊り | https://x.com/2tsuo_g/status/2069027823839543439 |
@@ -2034,6 +2102,8 @@
 | high | new_event_candidate | new | event | イベント候補「8日開催の 第50回 鷺宮盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8日開催の 第50回 鷺宮盆踊り | 8日開催の 第50回 鷺宮盆踊り 盆踊り | https://x.com/saginomiyan/status/2086329223070052433 |
 | high | new_event_candidate | new | event | イベント候補「8日（土） 我が板橋区 板橋フレンドセンター盆踊り 開場は17時ですが 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8日（土） 我が板橋区 板橋フレンドセンター盆踊り 開場は17時ですが 盆踊り | 8日（土） 我が板橋区 板橋フレンドセンター盆踊り 開場は17時ですが 盆踊り 盆踊り | https://x.com/rollingasahi/status/2085319057268744418 |
 | high | new_event_candidate | new | event | イベント候補「8日（金） 此花町公民館主催の「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8日（金） 此花町公民館主催の「納涼盆踊り, 2026 ・しんたて盆踊りDE夏まつり, 納涼盆踊り大会 | 8日（金） 此花町公民館主催の「納涼盆踊り 盆踊り; 2026 ・しんたて盆踊りDE夏まつり 盆踊り; 移したり 盆踊り; 対応が取られていました 盆踊り | https://x.com/takuokomori_1/status/2086731899410722886 |
+| high | new_event_candidate | new | event | イベント候補「8月13日は奈良の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8月13日は奈良の盆踊り | 8月13日は奈良の盆踊り 盆踊り | https://x.com/tadokoroshinya/status/2087431683884916988 |
+| high | new_event_candidate | new | event | イベント候補「8月13日は奈良の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8月13日は奈良の盆踊り | 8月13日は奈良の盆踊り 盆踊り | https://x.com/NoSP20050701/status/2087431605640114390 |
 | high | new_event_candidate | new | event | イベント候補「8月1日(土)納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8月1日(土)納涼盆踊り, 6時から盆踊り | 8月1日(土)納涼盆踊り 盆踊り; 6時から盆踊り 盆踊り | https://x.com/arajyuku5/status/2083379300133405027 |
 | high | new_event_candidate | new | event | イベント候補「8月1日（土） 新宿町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8月1日（土） 新宿町盆踊り | 8月1日（土） 新宿町盆踊り 盆踊り | https://x.com/bundbakery/status/2081935252008865863 |
 | high | new_event_candidate | new | event | イベント候補「8月2日（日）は鶴巻温泉納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 8月2日（日）は鶴巻温泉納涼盆踊り | 8月2日（日）は鶴巻温泉納涼盆踊り 盆踊り; 駅前南口ロータリー 盆踊り | https://x.com/vE8e9lcGzpnovpF/status/2083435977897583028 |
@@ -2071,6 +2141,7 @@
 | high | new_event_candidate | new | event | イベント候補「Dz4演奏と盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Dz4演奏と盆おどり | Dz4演奏と盆おどり 盆踊り | https://x.com/chinaname2013/status/2083432077371072751 |
 | high | new_event_candidate | new | event | イベント候補「FE名古屋チアダンスチーム 第16回 セントレア盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: FE名古屋チアダンスチーム 第16回 セントレア盆踊り, セントレア盆踊り, 19(日)に開催される「第16回 セントレア盆踊り | FE名古屋チアダンスチーム 第16回 セントレア盆踊り 盆踊り; セントレア盆踊り 盆踊り | https://x.com/fegirls758/status/2076922831624102399 |
 | high | new_event_candidate | new | event | イベント候補「GINZA SIX ガーデン（屋上庭園）でも「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: GINZA SIX ガーデン（屋上庭園）でも「盆踊り, 盆踊り×銀座銘店屋台 | GINZA SIX ガーデン（屋上庭園）でも「盆踊り 盆踊り; 盆踊り×銀座銘店屋台 盆踊り | https://x.com/GT_jpculture/status/2083113871490105615 |
+| high | new_event_candidate | new | event | イベント候補「Hisuiと茶箱の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Hisuiと茶箱の盆踊り | Hisuiと茶箱の盆踊り 盆踊り | https://x.com/kaki00121/status/2087383604653625410 |
 | high | new_event_candidate | new | event | イベント候補「J-POP盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: J-POP盆踊り | J-POP盆踊り 盆踊り | https://x.com/osetzusanichiru/status/2084516701710995635 |
 | high | new_event_candidate | new | event | イベント候補「JPOPだらけの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: JPOPだらけの盆踊り | JPOPだらけの盆踊り 盆踊り | https://x.com/GENGOevents/status/2069664473489813789 |
 | high | new_event_candidate | new | event | イベント候補「JPOPだらけの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: JPOPだらけの盆踊り | JPOPだらけの盆踊り 盆踊り | https://x.com/GENGOevents/status/2069578705010336101 |
@@ -2084,7 +2155,9 @@
 | high | new_event_candidate | new | event | イベント候補「NETAGOYAで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: NETAGOYAで盆踊り | NETAGOYAで盆踊り 盆踊り | https://x.com/k14540399/status/2082003128963248247 |
 | high | new_event_candidate | new | event | イベント候補「Night Tempo Remix）」 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Night Tempo Remix）」 盆踊り, Night Tempo Remix）」の盆踊り | Night Tempo Remix）」 盆踊り 盆踊り; Night Tempo Remix）」の盆踊り 盆踊り | https://x.com/dcte_staff/status/2077254171984814477 |
 | high | new_event_candidate | new | event | イベント候補「POPの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: POPの盆踊り | POPの盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/mokkedanosakata/status/2082370182023163924 |
+| high | new_event_candidate | new | event | イベント候補「S ONDO AGAIN 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: S ONDO AGAIN 納涼盆踊り, れじぇらー音頭, LET’S ONDO AGAIN 納涼盆踊り大会！2026 | S ONDO AGAIN 納涼盆踊り 盆踊り; れじぇらー音頭 盆踊り; れじぇらー音頭 盆踊り | https://x.com/Tnaka_info/status/2087385087512076420 |
 | high | new_event_candidate | new | event | イベント候補「THE団地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: THE団地盆踊り, 夏の盆踊り | THE団地盆踊り 盆踊り; 夏の盆踊り 盆踊り | https://x.com/natsutr_bon/status/2081269975030149202 |
+| high | new_event_candidate | new | event | イベント候補「THU) 『煉瓦の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: THU) 『煉瓦の盆踊り, 煉瓦の盆踊り | THU) 『煉瓦の盆踊り 盆踊り; 煉瓦の盆踊り 盆踊り | https://x.com/this_arsyura/status/2087445708857372853 |
 | high | new_event_candidate | new | event | イベント候補「VRC )の共同で寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: VRC )の共同で寝転ん盆踊り | VRC )の共同で寝転ん盆踊り 盆踊り | https://x.com/VARIE_VRC/status/2084896940484112818 |
 | high | new_event_candidate | new | event | イベント候補「iPad GarageBandで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: iPad GarageBandで盆踊り | iPad GarageBandで盆踊り 盆踊り | https://x.com/elegelacom/status/2069334924306657782 |
 | high | new_event_candidate | new | event | イベント候補「in LaLaportで開催される「Bon Odori」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: in LaLaportで開催される「Bon Odori, Bon Odori | in LaLaportで開催される「Bon Odori 盆踊り; Bon Odori 盆踊り | https://x.com/happydoraemon59/status/2078357177451106583 |
@@ -2138,6 +2211,8 @@
 | high | new_event_candidate | new | event | イベント候補「いよいよ最後の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いよいよ最後の盆踊り | いよいよ最後の盆踊り 盆踊り | https://x.com/yoursuitcase/status/2083459108687225322 |
 | high | new_event_candidate | new | event | イベント候補「いよいよ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いよいよ盆踊り, 千早の盆踊り, 千早3丁目の小学校で盆踊り | いよいよ盆踊り 盆踊り; 千早の盆踊り 盆踊り | https://x.com/maho830201/status/2079343359479672871 |
 | high | new_event_candidate | new | event | イベント候補「いろんな街で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いろんな街で盆踊り | いろんな街で盆踊り 盆踊り | https://x.com/idiom_ash/status/2086984340068765877 |
+| high | new_event_candidate | new | event | イベント候補「いわき回転やぐら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いわき回転やぐら盆踊り | いわき回転やぐら盆踊り 盆踊り | https://x.com/haburashimin/status/2087385236195942769 |
+| high | new_event_candidate | new | event | イベント候補「いわき回転やぐら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いわき回転やぐら盆踊り, 14・15日は盆踊り | いわき回転やぐら盆踊り 盆踊り; 14・15日は盆踊り 盆踊り | https://x.com/gurutto_iwaki/status/2087379833554878733 |
 | high | new_event_candidate | new | event | イベント候補「いわき回転やぐら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いわき回転やぐら盆踊り, 遠野町じゃんがら念仏盆踊り, 日本一の回転やぐら | いわき回転やぐら盆踊り 盆踊り; 遠野町じゃんがら念仏盆踊り 盆踊り; 日本一の回転やぐら 盆踊り; じゃんがら念仏踊り 盆踊り | https://x.com/kankouiwaki/status/2086664523780690388 |
 | high | new_event_candidate | new | event | イベント候補「いわ山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いわ山盆踊り | いわ山盆踊り 盆踊り | https://x.com/PKW_staff/status/2081551715636326685 |
 | high | new_event_candidate | new | event | イベント候補「う1ヶ所は田島町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: う1ヶ所は田島町盆踊り, 田島町盆踊り | う1ヶ所は田島町盆踊り 盆踊り; 田島町盆踊り 盆踊り; 雨の中踊り 盆踊り | https://x.com/musicstreet_05/status/2083564021366788341 |
@@ -2215,6 +2290,7 @@
 | high | new_event_candidate | new | event | イベント候補「しのがやと町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しのがやと町会の盆踊り | しのがやと町会の盆踊り 盆踊り | https://x.com/ishikawasumie/status/2078619844023652654 |
 | high | new_event_candidate | new | event | イベント候補「しまの絆】 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しまの絆】 盆踊り | しまの絆】 盆踊り 盆踊り | https://x.com/toshimakumincsw/status/2083134069119094812 |
 | high | new_event_candidate | new | event | イベント候補「すこやか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: すこやか盆踊り, すこやか盆踊り大会 | すこやか盆踊り 盆踊り; すこやか盆踊り大会 盆踊り | https://x.com/dongurimomozono/status/2083058197464838552 |
+| high | new_event_candidate | new | event | イベント候補「すごく雰囲気のいい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: すごく雰囲気のいい盆踊り | すごく雰囲気のいい盆踊り 盆踊り | https://x.com/gosyuondomarl/status/2087400055431119113 |
 | high | new_event_candidate | new | event | イベント候補「すっかり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: すっかり盆踊り, 戸山公園やくどうの広場と四谷ひろばの盆踊り, 戸山公園の盆踊り | すっかり盆踊り 盆踊り; 戸山公園やくどうの広場と四谷ひろばの盆踊り 盆踊り; 盛り上げていました 盆踊り; 阿波踊り 盆踊り | https://x.com/SachieDaimon/status/2078726539357847633 |
 | high | new_event_candidate | new | event | イベント候補「せっかく作ったので期間限定でありますが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: せっかく作ったので期間限定でありますが盆踊り | せっかく作ったので期間限定でありますが盆踊り 盆踊り; 全員公開します～まだハウジングやり始めたばかり 盆踊り | https://x.com/peiho_game/status/2076153791414677848 |
 | high | new_event_candidate | new | event | イベント候補「ぜんっっっぜん知らない町の自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぜんっっっぜん知らない町の自治会の盆踊り | ぜんっっっぜん知らない町の自治会の盆踊り 盆踊り | https://x.com/kierulun/status/2078081966893912539 |
@@ -2263,15 +2339,18 @@
 | high | new_event_candidate | new | event | イベント候補「つの町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: つの町会の盆踊り | つの町会の盆踊り 盆踊り | https://x.com/kakuo_seiichi/status/2079076163113357479 |
 | high | new_event_candidate | new | event | イベント候補「ても涼しく訓練が受けられました つづいて江南市の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ても涼しく訓練が受けられました つづいて江南市の盆踊り, アリーナでありました 多くの皆さまと楽しく盆踊り, も子ちゃん音頭 | ても涼しく訓練が受けられました つづいて江南市の盆踊り 盆踊り; アリーナでありました 多くの皆さまと楽しく盆踊り 盆踊り; もも子ちゃん音頭 盆踊り | https://x.com/oyabun1/status/2068773349527036123 |
 | high | new_event_candidate | new | event | イベント候補「て芝下町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: て芝下町会の盆踊り | て芝下町会の盆踊り 盆踊り | https://x.com/shibashimo/status/2079411041684119811 |
+| high | new_event_candidate | new | event | イベント候補「どうぶつ仮装盆踊りコンテスト(こども仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: どうぶつ仮装盆踊りコンテスト(こども仮装盆踊り | どうぶつ仮装盆踊りコンテスト(こども仮装盆踊り 盆踊り | https://x.com/chocobana11/status/2087359888108507204 |
 | high | new_event_candidate | new | event | イベント候補「なかぼんからの鍋横からの夕方は町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なかぼんからの鍋横からの夕方は町会盆踊り | なかぼんからの鍋横からの夕方は町会盆踊り 盆踊り | https://x.com/reichi53/status/2083767049965433257 |
 | high | new_event_candidate | new | event | イベント候補「なった盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なった盆踊り | なった盆踊り 盆踊り | https://x.com/w__kazumi/status/2081030405210468787 |
 | high | new_event_candidate | new | event | イベント候補「などで盛り上がる 名物アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: などで盛り上がる 名物アニソン盆踊り | などで盛り上がる 名物アニソン盆踊り 盆踊り | https://x.com/event_checker/status/2085535165493776488 |
 | high | new_event_candidate | new | event | イベント候補「などで盛り上がる 名物アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: などで盛り上がる 名物アニソン盆踊り | などで盛り上がる 名物アニソン盆踊り 盆踊り | https://x.com/event_checker/status/2084927472437502455 |
+| high | new_event_candidate | new | event | イベント候補「などの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: などの盆踊り | などの盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/bonnodoriegao/status/2087305989808939193 |
 | high | new_event_candidate | new | event | イベント候補「なんと35年振りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんと35年振りの盆踊り | なんと35年振りの盆踊り 盆踊り | https://x.com/heartfulshinobu/status/2086637996221329705 |
 | high | new_event_candidate | new | event | イベント候補「なんとDJ KOOによるDJ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんとDJ KOOによるDJ盆踊り | なんとDJ KOOによるDJ盆踊り 盆踊り | https://x.com/hihillstyle/status/2081521788417437915 |
 | high | new_event_candidate | new | event | イベント候補「なんば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんば盆踊り | なんば盆踊り 盆踊り | https://x.com/tonbori_wolfen/status/2070033377542197676 |
 | high | new_event_candidate | new | event | イベント候補「な朝の五目天 今日も安定の美味しさ 昨夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: な朝の五目天 今日も安定の美味しさ 昨夜は盆踊り | な朝の五目天 今日も安定の美味しさ 昨夜は盆踊り 盆踊り | https://x.com/ogazz/status/2075385150842798546 |
 | high | new_event_candidate | new | event | イベント候補「ねころん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねころん盆踊り | ねころん盆踊り 盆踊り | https://x.com/_nyunnyu/status/2086736526696919470 |
+| high | new_event_candidate | new | event | イベント候補「は「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: は「盆踊り, 盆踊り大会 | は「盆踊り 盆踊り; 盆踊り大会 盆踊り | https://x.com/kankouoita/status/2087396398446899364 |
 | high | new_event_candidate | new | event | イベント候補「はあやべ盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: はあやべ盆おどり | はあやべ盆おどり 盆踊り; あやべ夏あかり 盆踊り | https://x.com/umikyo_ayabe/status/2086684803752133113 |
 | high | new_event_candidate | new | event | イベント候補「は初の大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: は初の大盆踊り | は初の大盆踊り 盆踊り | https://x.com/kochibank0578/status/2078012019404632466 |
 | high | new_event_candidate | new | event | イベント候補「は寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: は寝転ん盆踊り | は寝転ん盆踊り 盆踊り | https://x.com/adolove_VRC2/status/2082334060941344986 |
@@ -2309,6 +2388,7 @@
 | high | new_event_candidate | new | event | イベント候補「ようやく本番を迎えた近隣町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ようやく本番を迎えた近隣町会盆踊り | ようやく本番を迎えた近隣町会盆踊り 盆踊り; お店も全て行列 盆踊り | https://x.com/ooks_katu/status/2083525143280882033 |
 | high | new_event_candidate | new | event | イベント候補「よさこい・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よさこい・盆踊り | よさこい・盆踊り 盆踊り; 大西公園（長野県大鹿村 盆踊り | https://x.com/iko_yo_trip/status/2086720454082039951 |
 | high | new_event_candidate | new | event | イベント候補「よその盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よその盆踊り | よその盆踊り 盆踊り; 良くする事が重要なの 盆踊り | https://x.com/KishinoYUICHI/status/2077954918254788896 |
+| high | new_event_candidate | new | event | イベント候補「りよし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: りよし盆踊り | りよし盆踊り 盆踊り | https://x.com/kitaakitakankou/status/2087424408906612873 |
 | high | new_event_candidate | new | event | イベント候補「ろおか音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ろおか音頭 | ろおか音頭 盆踊り; 鶴見音頭 盆踊り; 獅子ヶ谷音頭 盆踊り | https://x.com/odori2024minato/status/2084122994214060167 |
 | high | new_event_candidate | new | event | イベント候補「ろみちょ初盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ろみちょ初盆踊り | ろみちょ初盆踊り 盆踊り; 郡上踊り 盆踊り; 2人は郡上踊り 盆踊り | https://x.com/nikopocket/status/2079476196639920632 |
 | high | new_event_candidate | new | event | イベント候補「わたし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わたし盆踊り, 大塚愛が脳内で「隣どおし蒲田とわたし盆踊り, 隣どおし蒲田とわたし盆踊り | わたし盆踊り 盆踊り; 大塚愛が脳内で「隣どおし蒲田とわたし盆踊り 盆踊り | https://x.com/eloah_va_daath/status/2082734591320953130 |
@@ -2353,6 +2433,7 @@
 | high | new_event_candidate | new | event | イベント候補「ガンバ大阪ならではの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ガンバ大阪ならではの盆踊り | ガンバ大阪ならではの盆踊り 盆踊り | https://x.com/chiaki6v6CT/status/2085287018121363486 |
 | high | new_event_candidate | new | event | イベント候補「キキカイカイ的盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キキカイカイ的盆踊り | キキカイカイ的盆踊り 盆踊り; 北加賀屋のカレー屋さん🍛 盆踊り | https://x.com/tong_myan/status/2081994756956250166 |
 | high | new_event_candidate | new | event | イベント候補「キツネの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キツネの盆踊り | キツネの盆踊り 盆踊り | https://x.com/gekidan_kirari/status/2067015704449339501 |
+| high | new_event_candidate | new | event | イベント候補「キプかわ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キプかわ盆踊り, いろんな盆踊り | キプかわ盆踊り 盆踊り; いろんな盆踊り 盆踊り | https://x.com/vrcren_jp/status/2087375771773919642 |
 | high | new_event_candidate | new | event | イベント候補「キャンプ座間 日米友好盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キャンプ座間 日米友好盆踊り, キャンプ座間で60年以上続く伝統行事である盆踊り, そして盆踊り | キャンプ座間 日米友好盆踊り 盆踊り; キャンプ座間で60年以上続く伝統行事である盆踊り 盆踊り | https://x.com/USFJ_J/status/2084857651629056038 |
 | high | new_event_candidate | new | event | イベント候補「キャンプ座間 日米親善 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キャンプ座間 日米親善 盆踊り | キャンプ座間 日米親善 盆踊り 盆踊り | https://x.com/nagix/status/2083433402179723372 |
 | high | new_event_candidate | new | event | イベント候補「クアラルンプール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クアラルンプール盆踊り, ぐらを囲んで盆踊り, 7月12日（日）も開催！第50回クアラルンプール盆踊り大会🏮 | クアラルンプール盆踊り 盆踊り; ぐらを囲んで盆踊り 盆踊り; は色鮮やかな浴衣姿の来場者が集まり 盆踊り; 大盛況 盆踊り | https://x.com/weeklymtown/status/2075918618693439663 |
@@ -2403,6 +2484,7 @@
 | high | new_event_candidate | new | event | イベント候補「パフォーマンスや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: パフォーマンスや盆踊り | パフォーマンスや盆踊り 盆踊り | https://x.com/miromiro999/status/2082685911524118660 |
 | high | new_event_candidate | new | event | イベント候補「パンク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: パンク盆踊り | パンク盆踊り 盆踊り | https://x.com/drowned_tsuka/status/2084845631651324160 |
 | high | new_event_candidate | new | event | イベント候補「パンク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: パンク盆踊り | パンク盆踊り 盆踊り | https://x.com/punkcatdrunker/status/2084551220983910741 |
+| high | new_event_candidate | new | event | イベント候補「ビアガーデン 旭川駅前広場にて初の盆踊り 場所 旭川駅前北口広場」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ビアガーデン 旭川駅前広場にて初の盆踊り 場所 旭川駅前北口広場 | ビアガーデン 旭川駅前広場にて初の盆踊り 場所 旭川駅前北口広場 盆踊り; 旭川駅前北口広場 盆踊り | https://x.com/ms06ss2_ms06ss/status/2087334734934483306 |
 | high | new_event_candidate | new | event | イベント候補「ビールと浴衣で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ビールと浴衣で盆踊り | ビールと浴衣で盆踊り 盆踊り | https://x.com/euph__sapi/status/2068919302519226713 |
 | high | new_event_candidate | new | event | イベント候補「ファイヤーXと写真を撮りました カッコよかったです 夜には盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファイヤーXと写真を撮りました カッコよかったです 夜には盆踊り | ファイヤーXと写真を撮りました カッコよかったです 夜には盆踊り 盆踊り; 炭坑節 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/rz7ePwurOn29773/status/2084554896930697693 |
 | high | new_event_candidate | new | event | イベント候補「フェスティバルFUKUSHIMA! 2026 納涼！盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フェスティバルFUKUSHIMA! 2026 納涼！盆踊り | フェスティバルFUKUSHIMA! 2026 納涼！盆踊り 盆踊り | https://x.com/outline1/status/2086305199698989137 |
@@ -2444,6 +2526,7 @@
 | high | new_event_candidate | new | event | イベント候補「・26（日）開催】 本八幡ターミナルプラザで「大芝原自治会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・26（日）開催】 本八幡ターミナルプラザで「大芝原自治会 盆踊り, 大芝原自治会 盆踊り大会2026 | ・26（日）開催】 本八幡ターミナルプラザで「大芝原自治会 盆踊り 盆踊り; 大芝原自治会 盆踊り大会2026 盆踊り | https://x.com/ichikawa_news/status/2079486128483389609 |
 | high | new_event_candidate | new | event | イベント候補「・26（日）開催】 鶴指小学校校庭で「大和田自治会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・26（日）開催】 鶴指小学校校庭で「大和田自治会 盆踊り, 大和田自治会 盆踊り大会 | ・26（日）開催】 鶴指小学校校庭で「大和田自治会 盆踊り 盆踊り; 大和田自治会 盆踊り大会 盆踊り | https://x.com/ichikawa_news/status/2079420002952974772 |
 | high | new_event_candidate | new | event | イベント候補「・たきかわ納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・たきかわ納涼盆踊り, ・三笠北海盆おどり | ・たきかわ納涼盆踊り 盆踊り; ・三笠北海盆おどり 盆踊り | https://x.com/cosupa_tabi/status/1687435114857504768 |
+| high | new_event_candidate | new | event | イベント候補「・地域の盆踊り 吉田夏まつり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・地域の盆踊り 吉田夏まつり | ・地域の盆踊り 吉田夏まつり 盆踊り | https://x.com/Medias12ch/status/2087445337086837003 |
 | high | new_event_candidate | new | event | イベント候補「・夏まつり盆おどり大会 ・八幡コミュニティ盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・夏まつり盆おどり大会 ・八幡コミュニティ盆おどり | ・夏まつり盆おどり大会 ・八幡コミュニティ盆おどり 盆踊り | https://x.com/Medias12ch/status/2081642197053813169 |
 | high | new_event_candidate | new | event | イベント候補「・多田町会役員納涼会 ・鷺ノ宮盆踊り ・栄町公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・多田町会役員納涼会 ・鷺ノ宮盆踊り ・栄町公園盆踊り, 大会 ・弥一向台町会納涼盆踊り ・松が丘片山町会盆踊り, ・沼袋町会防災セミナー 各地の盆踊り | ・多田町会役員納涼会 ・鷺ノ宮盆踊り ・栄町公園盆踊り 盆踊り; 大会 ・弥一向台町会納涼盆踊り ・松が丘片山町会盆踊り 盆踊り; 大いに賑わっていました 盆踊り | https://x.com/kuro1_jp/status/2086075556597256228 |
 | high | new_event_candidate | new | event | イベント候補「・明日は河内家菊水丸さんを迎えての大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ・明日は河内家菊水丸さんを迎えての大盆踊り | ・明日は河内家菊水丸さんを迎えての大盆踊り 盆踊り | https://x.com/souin16/status/2087042669193433208 |
@@ -2463,6 +2546,7 @@
 | high | new_event_candidate | new | event | イベント候補「丁目町会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会 納涼盆踊り | 丁目町会 納涼盆踊り 盆踊り | https://x.com/yoritaka11/status/2082035517852688470 |
 | high | new_event_candidate | new | event | イベント候補「丁目町会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会 納涼盆踊り, 楽しく盛大な盆踊り | 丁目町会 納涼盆踊り 盆踊り; 楽しく盛大な盆踊り 盆踊り | https://x.com/yoritaka11/status/2082034973629120853 |
 | high | new_event_candidate | new | event | イベント候補「丁目町会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会 納涼盆踊り | 丁目町会 納涼盆踊り 盆踊り | https://x.com/yoritaka11/status/2081936071697519001 |
+| high | new_event_candidate | new | event | イベント候補「丁目町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会の盆踊り, 中尾生町の盆踊り | 丁目町会の盆踊り 盆踊り; 中尾生町の盆踊り 盆踊り; 後にして 盆踊り; お邪魔しました 盆踊り | https://x.com/yonedatakashi/status/2087418479070830830 |
 | high | new_event_candidate | new | event | イベント候補「丁目町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会の盆踊り | 丁目町会の盆踊り 盆踊り | https://x.com/keiji_matsui/status/2082062624146211183 |
 | high | new_event_candidate | new | event | イベント候補「丁目町会の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会の納涼盆踊り | 丁目町会の納涼盆踊り 盆踊り | https://x.com/keiji_matsui/status/2081699067588190677 |
 | high | new_event_candidate | new | event | イベント候補「丁目町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目町会盆踊り | 丁目町会盆踊り 盆踊り | https://x.com/bjvbiMpM0SQWrmy/status/2086328885034291542 |
@@ -2534,6 +2618,7 @@
 | high | new_event_candidate | new | event | イベント候補「中台若木町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中台若木町会の盆踊り | 中台若木町会の盆踊り 盆踊り | https://x.com/takazawa1/status/2080997057008140487 |
 | high | new_event_candidate | new | event | イベント候補「中垣内自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中垣内自治会の盆踊り | 中垣内自治会の盆踊り 盆踊り; は子ども 盆踊り; は地域の皆さま 盆踊り | https://x.com/goodjobkomei/status/2083574322636230890 |
 | high | new_event_candidate | new | event | イベント候補「中垣内自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中垣内自治会の盆踊り | 中垣内自治会の盆踊り 盆踊り; は子ども 盆踊り; は地域の皆さま 盆踊り | https://x.com/goodjobkomei/status/2083565524626415684 |
+| high | new_event_candidate | new | event | イベント候補「中央公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中央公園盆踊り | 中央公園盆踊り 盆踊り | https://x.com/sagaraguke/status/2087124753903763766 |
 | high | new_event_candidate | new | event | イベント候補「中央区大江戸まつり盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大きなやぐらを囲む盆踊り | 中央区大江戸まつり盆おどり 盆踊り; 大きなやぐらを囲む盆踊り 盆踊り; 各地域でおどり 盆踊り | https://x.com/yamarie0324/status/1929758542325862624 |
 | high | new_event_candidate | new | event | イベント候補「中山法華経寺の中山町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中山法華経寺の中山町会盆踊り | 中山法華経寺の中山町会盆踊り 盆踊り | https://x.com/taisai_2023/status/2086634858164723722 |
 | high | new_event_candidate | new | event | イベント候補「中嶋神社 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中嶋神社 納涼盆踊り | 中嶋神社 納涼盆踊り 盆踊り | https://x.com/ds_fan/status/2078372073605599429 |
@@ -2581,6 +2666,8 @@
 | high | new_event_candidate | new | event | イベント候補「五月家は藤井寺市野中の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 五月家は藤井寺市野中の盆踊り | 五月家は藤井寺市野中の盆踊り 盆踊り; 河内音頭 盆踊り | https://x.com/ichiran_satsuki/status/2082255771472130376 |
 | high | new_event_candidate | new | event | イベント候補「井田観音盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 井田観音盆踊り | 井田観音盆踊り 盆踊り; ほうき踊り 盆踊り | https://x.com/ibeco_app/status/2085246313365725222 |
 | high | new_event_candidate | new | event | イベント候補「人大祭・金魚まつり・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人大祭・金魚まつり・盆踊り, 今回の盆踊り, 人大祭・金魚まつり・盆踊り。いろんなことを考えました② | 人大祭・金魚まつり・盆踊り 盆踊り; 今回の盆踊り 盆踊り; 全体がうっとり 盆踊り | https://x.com/mamiyayumi/status/2081965585542582597 |
+| high | new_event_candidate | new | event | イベント候補「人形劇やら花火やら「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人形劇やら花火やら「盆踊り | 人形劇やら花火やら「盆踊り 盆踊り | https://x.com/deadlyhangover/status/2087436319991709875 |
+| high | new_event_candidate | new | event | イベント候補「人形劇やら花火やら「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人形劇やら花火やら「盆踊り | 人形劇やら花火やら「盆踊り 盆踊り | https://x.com/theaterkura/status/2087436148591493598 |
 | high | new_event_candidate | new | event | イベント候補「人形町の町会の子供まつり・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人形町の町会の子供まつり・盆踊り | 人形町の町会の子供まつり・盆踊り 盆踊り | https://x.com/musashinokotaro/status/2081159081281413148 |
 | high | new_event_candidate | new | event | イベント候補「人形町二丁目二之部町会 子供祭り・納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人形町二丁目二之部町会 子供祭り・納涼盆踊り, 人形町二丁目三之部町会 納涼盆踊り | 人形町二丁目二之部町会 子供祭り・納涼盆踊り 盆踊り; 人形町二丁目三之部町会 納涼盆踊り 盆踊り | https://x.com/ishijimahideki/status/2083821775390138410 |
 | high | new_event_candidate | new | event | イベント候補「人形町二丁目二之部町会子供祭り納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人形町二丁目二之部町会子供祭り納涼盆踊り | 人形町二丁目二之部町会子供祭り納涼盆踊り 盆踊り | https://x.com/FFleurs/status/2076661577429012850 |
@@ -2602,6 +2689,7 @@
 | high | new_event_candidate | new | event | イベント候補「今年の夏は島の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の夏は島の盆踊り, 老若男女が輪になって熱く飛び跳ねる大迫力の盆踊り, 今年の夏は島の盆踊りへ行こう🚢✈️ | 今年の夏は島の盆踊り 盆踊り; 老若男女が輪になって熱く飛び跳ねる大迫力の盆踊り 盆踊り | https://x.com/ebisuya_smile/status/2068272898385879051 |
 | high | new_event_candidate | new | event | イベント候補「今年の夏も上野で「亥の市盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の夏も上野で「亥の市盆踊り, それに先立ちまして盆踊り, 亥の市盆踊り不忍夢 | 今年の夏も上野で「亥の市盆踊り 盆踊り; それに先立ちまして盆踊り 盆踊り | https://x.com/bonDsuzuki/status/2077570124530565259 |
 | high | new_event_candidate | new | event | イベント候補「今年の曙橋 住吉町の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の曙橋 住吉町の盆踊り | 今年の曙橋 住吉町の盆踊り 盆踊り | https://x.com/bluepig74/status/2080177603999392247 |
+| high | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/harumiflag_sun/status/2087368880905929025 |
 | high | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/kiyo0813/status/2086007096139804799 |
 | high | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/4869wolf4869/status/2083043072720683272 |
 | high | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り, 赤名盆踊り | 今年の盆踊り 盆踊り; 赤名盆踊り 盆踊り; 赤名農村環境改善センター 盆踊り | https://x.com/Shimane_CC_1968/status/2080174146517192980 |
@@ -2726,7 +2814,6 @@
 | high | new_event_candidate | new | event | イベント候補「八月祭の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八月祭の盆踊り | 八月祭の盆踊り 盆踊り | https://x.com/terracekeikaku/status/2082677791628398648 |
 | high | new_event_candidate | new | event | イベント候補「八月祭オフィシャルの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八月祭オフィシャルの盆踊り | 八月祭オフィシャルの盆踊り 盆踊り | https://x.com/sapporo8fes/status/2070090210478887029 |
 | high | new_event_candidate | new | event | イベント候補「八王子まつり 民踊流し参加団体を募集」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八王子まつり 民踊流し参加団体を募集 | 八王子まつり 民踊流し参加団体を募集 盆踊り | https://x.com/hachioji_koho/status/2067906762884464671 |
-| high | new_event_candidate | new | event | イベント候補「八雲小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八雲小学校の盆踊り, 24・25開催の碑文谷公園盆踊り | 八雲小学校の盆踊り 盆踊り; 24・25開催の碑文谷公園盆踊り 盆踊り | https://x.com/hama_yoko_/status/2078662722259177484 |
 | high | new_event_candidate | new | event | イベント候補「公団王子五丁目団地での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 公団王子五丁目団地での盆踊り | 公団王子五丁目団地での盆踊り 盆踊り | https://x.com/heartfulshinobu/status/2081874577597296994 |
 | high | new_event_candidate | new | event | イベント候補「公園に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 公園に盆踊り | 公園に盆踊り 盆踊り | https://x.com/koshigayaweb/status/2078738873828659450 |
 | high | new_event_candidate | new | event | イベント候補「公開ゲストとして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 公開ゲストとして盆踊り, switch2を目玉に豪華景品が用意されている盆踊り | 公開ゲストとして盆踊り 盆踊り; switch2を目玉に豪華景品が用意されている盆踊り 盆踊り | https://x.com/BWm7LDaUhfW1TPC/status/2083343252724527338 |
@@ -2743,10 +2830,12 @@
 | high | new_event_candidate | new | event | イベント候補「出店は野見自治区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 出店は野見自治区盆踊り | 出店は野見自治区盆踊り 盆踊り; 三ツ塚公園 盆踊り | https://x.com/87EightySeven87/status/2082627092836127199 |
 | high | new_event_candidate | new | event | イベント候補「出石御城下盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 出石御城下盆踊り | 出石御城下盆踊り 盆踊り | https://x.com/chocobana11/status/2087011025849893351 |
 | high | new_event_candidate | new | event | イベント候補「出雲神話まつり 出雲盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 出雲神話まつり 出雲盆踊り | 出雲神話まつり 出雲盆踊り 盆踊り | https://x.com/ibeco_app/status/2085253706216624429 |
+| high | new_event_candidate | new | event | イベント候補「分 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 分 盆踊り | 分 盆踊り 盆踊り | https://x.com/kensuke1712/status/2087267732635234496 |
 | high | new_event_candidate | new | event | イベント候補「分から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 分から盆踊り | 分から盆踊り 盆踊り; 涼しい部屋で楽しく踊り 盆踊り | https://x.com/arajyuku5/status/2082341650844856387 |
 | high | new_event_candidate | new | event | イベント候補「刈田音頭を伝え隊」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 刈田音頭を伝え隊, 戦災供養盆踊り大会, 苅田音頭 | 刈田音頭を伝え隊 盆踊り; 戦災供養盆踊り大会 盆踊り; 青少年センター 対象：15－30歳 盆踊り; 苅田音頭 盆踊り | https://x.com/hiroshimacenter/status/2078322329692836313 |
 | high | new_event_candidate | new | event | イベント候補「初めに地元町会の須賀連合町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 初めに地元町会の須賀連合町会の盆踊り | 初めに地元町会の須賀連合町会の盆踊り 盆踊り | https://x.com/rie_murayama/status/2081028809793720730 |
 | high | new_event_candidate | new | event | イベント候補「別府の商店街で見つけた手作り感満載の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 別府の商店街で見つけた手作り感満載の盆踊り | 別府の商店街で見つけた手作り感満載の盆踊り 盆踊り | https://x.com/Rio_oita/status/2085311304643056079 |
+| high | new_event_candidate | new | event | イベント候補「別府・杉乃井ホテルで南立石10町の合同盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 別府・杉乃井ホテルで南立石10町の合同盆踊り, 長く親しまれてきた盆踊り | 別府・杉乃井ホテルで南立石10町の合同盆踊り 盆踊り; 長く親しまれてきた盆踊り 盆踊り | https://x.com/CoCoRo_Japan_PR/status/2087436313654145092 |
 | high | new_event_candidate | new | event | イベント候補「利根川治水同盟治水大会・柴又北野町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 利根川治水同盟治水大会・柴又北野町会盆踊り | 利根川治水同盟治水大会・柴又北野町会盆踊り 盆踊り | https://x.com/shimizu_komei/status/2085895031609762056 |
 | high | new_event_candidate | new | event | イベント候補「制作実績】 仙台七夕盆踊り2026 A1ポスター・A4チラシ両面」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 制作実績】 仙台七夕盆踊り2026 A1ポスター・A4チラシ両面, 仙台七夕盆踊り | 制作実績】 仙台七夕盆踊り2026 A1ポスター・A4チラシ両面 盆踊り; 仙台七夕盆踊り 盆踊り; 盆ジョビ 盆踊り | https://x.com/Kayo_notes02/status/2084913720229298383 |
 | high | new_event_candidate | new | event | イベント候補「制作実績】 仙台七夕盆踊り2026 A1ポスター・A4チラシ両面」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 制作実績】 仙台七夕盆踊り2026 A1ポスター・A4チラシ両面, 仙台七夕盆踊り | 制作実績】 仙台七夕盆踊り2026 A1ポスター・A4チラシ両面 盆踊り; 仙台七夕盆踊り 盆踊り; 盆ジョビ 盆踊り | https://x.com/kayo_notes02/status/2084913720229298383 |
@@ -2756,6 +2845,7 @@
 | high | new_event_candidate | new | event | イベント候補「加守町1丁目納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 加守町1丁目納涼盆踊り, 音頭取りさんにお越し頂いての盆踊り | 加守町1丁目納涼盆踊り 盆踊り; 音頭取りさんにお越し頂いての盆踊り 盆踊り | https://x.com/yonedatakashi/status/2086349752942399660 |
 | high | new_event_candidate | new | event | イベント候補「加守町1丁目納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 加守町1丁目納涼盆踊り, 音頭取りさんにお越し頂いての盆踊り | 加守町1丁目納涼盆踊り 盆踊り; 音頭取りさんにお越し頂いての盆踊り 盆踊り | https://x.com/yonedatakashi/status/2086226533648347359 |
 | high | new_event_candidate | new | event | イベント候補「加納東ふれあい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 加納東ふれあい盆踊り | 加納東ふれあい盆踊り 盆踊り | https://x.com/shibahashi_m/status/2086442737679921200 |
+| high | new_event_candidate | new | event | イベント候補「助松公園で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 助松公園で盆踊り | 助松公園で盆踊り 盆踊り | https://x.com/izumiotsu_fan/status/2087361995242946715 |
 | high | new_event_candidate | new | event | イベント候補「助松公園で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 助松公園で盆踊り | 助松公園で盆踊り 盆踊り; 江州音頭・伊勢音頭・河内音頭 盆踊り | https://x.com/MbwVN5ov2gIwzwF/status/2085237288150487440 |
 | high | new_event_candidate | new | event | イベント候補「北3条広場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北3条広場で盆踊り, 生バンドの演奏に合わせて踊る特別な盆踊り, 北海道の盆踊り | 北3条広場で盆踊り 盆踊り; 生バンドの演奏に合わせて踊る特別な盆踊り 盆踊り | https://x.com/babyish_guide/status/2083168823688237479 |
 | high | new_event_candidate | new | event | イベント候補「北3条広場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北3条広場で盆踊り | 北3条広場で盆踊り 盆踊り; ぜひ踊り 盆踊り | https://x.com/mika_po/status/2082684281730826654 |
@@ -2771,6 +2861,7 @@
 | high | new_event_candidate | new | event | イベント候補「北山村の夏祭り 精霊送りの伝統行事「柱松」と「北山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北山村の夏祭り 精霊送りの伝統行事「柱松」と「北山盆踊り, 夜空に飛び交う火の玉と独特な生歌で送る盆踊り, 北山盆踊り | 北山村の夏祭り 精霊送りの伝統行事「柱松」と「北山盆踊り 盆踊り; 夜空に飛び交う火の玉と独特な生歌で送る盆踊り 盆踊り | https://x.com/kitayamamura/status/2084217693843112100 |
 | high | new_event_candidate | new | event | イベント候補「北御堂盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北御堂盆おどり, 北御堂盆踊り | 北御堂盆おどり 盆踊り; 北御堂盆踊り 盆踊り; 北御堂（本願寺津村別院）（大阪市中央区本町4丁目1-3 盆踊り | https://x.com/osakachushin/status/2082613391282045394 |
 | high | new_event_candidate | new | event | イベント候補「北新宿と中落合で行われた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北新宿と中落合で行われた盆踊り, 子どもから大人まで多くの皆さまが盆踊り | 北新宿と中落合で行われた盆踊り 盆踊り; 子どもから大人まで多くの皆さまが盆踊り 盆踊り | https://x.com/SachieDaimon/status/2083930018493956312 |
+| high | new_event_candidate | new | event | イベント候補「北海盆踊り開催時間は子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海盆踊り開催時間は子供盆踊り, 北海盆踊り | 北海盆踊り開催時間は子供盆踊り 盆踊り; 北海盆踊り 盆踊り | https://x.com/nets_sapporo/status/2087365475915411514 |
 | high | new_event_candidate | new | event | イベント候補「北海道のアイドルたちが 三笠北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道のアイドルたちが 三笠北海盆踊り, 東京・中野駅前盆踊り, アイドルたちも DJ盆踊り | 北海道のアイドルたちが 三笠北海盆踊り 盆踊り; 東京・中野駅前盆踊り 盆踊り | https://x.com/bondoll_mikasa/status/2083103897137353116 |
 | high | new_event_candidate | new | event | イベント候補「北町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北町盆踊り | 北町盆踊り 盆踊り; 辻公園 北町の山のある公園 盆踊り | https://x.com/Shokusai_Daisin/status/2082779739966812203 |
 | high | new_event_candidate | new | event | イベント候補「北見方町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北見方町会盆踊り, テントラ音頭 | 北見方町会盆踊り 盆踊り; テントラ音頭 盆踊り; テントラ音頭 盆踊り; いっしょに踊り 盆踊り | https://x.com/ta_shinichiro/status/2085268260661170284 |
@@ -2780,12 +2871,14 @@
 | high | new_event_candidate | new | event | イベント候補「北鶴橋世代間交流盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北鶴橋世代間交流盆踊り | 北鶴橋世代間交流盆踊り 盆踊り | https://x.com/yamadamasakazu7/status/2081005238061068684 |
 | high | new_event_candidate | new | event | イベント候補「区内の盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 区内の盆踊りや夏祭り | 区内の盆踊りや夏祭り 盆踊り | https://x.com/ozorakoki/status/2079132194237563328 |
 | high | new_event_candidate | new | event | イベント候補「区内各地では盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 区内各地では盆踊りや夏祭り | 区内各地では盆踊りや夏祭り 盆踊り | https://x.com/y_kana620/status/2086616808719810646 |
+| high | new_event_candidate | new | event | イベント候補「区内各地域の縁日や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 区内各地域の縁日や盆踊り | 区内各地域の縁日や盆踊り 盆踊り | https://x.com/komazakimiki/status/2087100758680608858 |
 | high | new_event_candidate | new | event | イベント候補「区内夏祭り・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 区内夏祭り・盆踊り, 西淀川区民ホールで盆踊り, 区内夏祭り・盆踊り情報🏮 | 区内夏祭り・盆踊り 盆踊り; 西淀川区民ホールで盆踊り 盆踊り | https://x.com/nishiyodo_ku/status/2075059892658872329 |
 | high | new_event_candidate | new | event | イベント候補「十条銀座などを巡行します 夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 十条銀座などを巡行します 夜は盆踊り | 十条銀座などを巡行します 夜は盆踊り 盆踊り | https://x.com/jujonakahara1/status/2086215368415326464 |
 | high | new_event_candidate | new | event | イベント候補「十条駅前での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 十条駅前での盆踊り | 十条駅前での盆踊り 盆踊り; 流れる音頭 盆踊り | https://x.com/dacky4/status/2086356001905942694 |
 | high | new_event_candidate | new | event | イベント候補「十条駅前では盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 十条駅前では盆踊り | 十条駅前では盆踊り 盆踊り | https://x.com/zakka_conoji/status/2085618417810460925 |
 | high | new_event_candidate | new | event | イベント候補「十津川飛香さん浴衣盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 十津川飛香さん浴衣盆踊り | 十津川飛香さん浴衣盆踊り 盆踊り; この季節 盆踊り | https://x.com/hotelsubaru1/status/2079044632940597302 |
 | high | new_event_candidate | new | event | イベント候補「千住旭町会では盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 千住旭町会では盆踊り | 千住旭町会では盆踊り 盆踊り | https://x.com/adachi_city/status/2081912476934021192 |
+| high | new_event_candidate | new | event | イベント候補「千客万来「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 千客万来「盆踊り | 千客万来「盆踊り 盆踊り; 2階 時の鐘 [… 盆踊り | https://x.com/kotoLINK_2020/status/2087359051680399386 |
 | high | new_event_candidate | new | event | イベント候補「千束盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 千束盆踊り, 素晴らしい太鼓演奏で盆踊り | 千束盆踊り 盆踊り; 素晴らしい太鼓演奏で盆踊り 盆踊り | https://x.com/hosakamasahiro/status/2079736336349819181 |
 | high | new_event_candidate | new | event | イベント候補「千歳船橋参商会商店街振興組合主催の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 千歳船橋参商会商店街振興組合主催の納涼盆踊り, 絶好の納涼盆踊り | 千歳船橋参商会商店街振興組合主催の納涼盆踊り 盆踊り; 絶好の納涼盆踊り 盆踊り | https://x.com/nobuko20160913/status/2079014979609723058 |
 | high | new_event_candidate | new | event | イベント候補「千歳船橋参商会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 千歳船橋参商会納涼盆踊り | 千歳船橋参商会納涼盆踊り 盆踊り | https://x.com/nobuko20160913/status/2079008815799005350 |
@@ -2828,6 +2921,7 @@
 | high | new_event_candidate | new | event | イベント候補「各地で夏祭り・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地で夏祭り・盆踊り, 各地で夏祭り・盆踊り 8/1 | 各地で夏祭り・盆踊り 盆踊り; 各地で夏祭り・盆踊り 8/1 盆踊り; 中心にお伺いしていますが 盆踊り | https://x.com/MORIYAMAhiro/status/2084174084251001157 |
 | high | new_event_candidate | new | event | イベント候補「各地で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地で盆踊り, 子どもたちの元気な声や盆踊り | 各地で盆踊り 盆踊り; 子どもたちの元気な声や盆踊り 盆踊り | https://x.com/takagi_kaori_/status/2083846938923790781 |
 | high | new_event_candidate | new | event | イベント候補「各地で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地で盆踊り | 各地で盆踊り 盆踊り | https://x.com/ufo_higa/status/2082550219695370242 |
+| high | new_event_candidate | new | event | イベント候補「各地で盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地で盆踊りや夏祭り, 地元自治会の盆踊り | 各地で盆踊りや夏祭り 盆踊り; 地元自治会の盆踊り 盆踊り | https://x.com/ozaki_futoshi/status/2087293540128968853 |
 | high | new_event_candidate | new | event | イベント候補「各地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地の盆踊り, 新城の盆踊り, 1の盆踊り | 各地の盆踊り 盆踊り; 新城の盆踊り 盆踊り | https://x.com/Sohno_Hajime/status/2080634653988499910 |
 | high | new_event_candidate | new | event | イベント候補「各地の盆踊り・夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地の盆踊り・夏祭り | 各地の盆踊り・夏祭り 盆踊り | https://x.com/baba_ishin/status/2086467094154186929 |
 | high | new_event_candidate | new | event | イベント候補「各地区で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地区で盆踊り, 相模地区盆踊り, 大寺地区盆踊り | 各地区で盆踊り 盆踊り; 相模地区盆踊り 盆踊り | https://x.com/yamanobe_town/status/2085199194428428711 |
@@ -2864,6 +2958,7 @@
 | high | new_event_candidate | new | event | イベント候補「嘉兵衛まつり音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 嘉兵衛まつり音頭 | 嘉兵衛まつり音頭 盆踊り; 嘉兵衛まつり音頭 盆踊り | https://x.com/yumiya_pon/status/2085588333108085200 |
 | high | new_event_candidate | new | event | イベント候補「噴水広場で「第三回ふるさと東京応援ビールと浴衣de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 噴水広場で「第三回ふるさと東京応援ビールと浴衣de盆踊り, 日本中で愛されるクラフトビールと浴衣での盆踊り, 第三回ふるさと東京応援ビールと浴衣de盆踊り | 噴水広場で「第三回ふるさと東京応援ビールと浴衣de盆踊り 盆踊り; 日本中で愛されるクラフトビールと浴衣での盆踊り 盆踊り | https://x.com/UENO_Info/status/2071131156918280508 |
 | high | new_event_candidate | new | event | イベント候補「四天王寺さんの今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺さんの今年の盆踊り | 四天王寺さんの今年の盆踊り 盆踊り | https://x.com/fastivaroom/status/2086727026606739867 |
+| high | new_event_candidate | new | event | イベント候補「回 深北緑地 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 回 深北緑地 納涼盆踊り | 回 深北緑地 納涼盆踊り 盆踊り | https://x.com/eetoko_park/status/2087346642387369992 |
 | high | new_event_candidate | new | event | イベント候補「回 深北緑地 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 回 深北緑地 納涼盆踊り | 回 深北緑地 納涼盆踊り 盆踊り; 深北緑地 球技広場 盆踊り | https://x.com/eetoko_park/status/2069306127205200316 |
 | high | new_event_candidate | new | event | イベント候補「回 雀宮地区納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 回 雀宮地区納涼盆踊り, 雀宮地区納涼盆踊り大会 | 回 雀宮地区納涼盆踊り 盆踊り; 雀宮地区納涼盆踊り大会 盆踊り | https://x.com/tochigi_pco/status/2084913616973861048 |
 | high | new_event_candidate | new | event | イベント候補「回 雀宮地区納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 回 雀宮地区納涼盆踊り, 雀宮地区納涼盆踊り大会 | 回 雀宮地区納涼盆踊り 盆踊り; 雀宮地区納涼盆踊り大会 盆踊り | https://x.com/tochigi_pco/status/2083022336068903070 |
@@ -2892,9 +2987,11 @@
 | high | new_event_candidate | new | event | イベント候補「在日米陸軍キャンプ座間 日米親善 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 在日米陸軍キャンプ座間 日米親善 盆踊り | 在日米陸軍キャンプ座間 日米親善 盆踊り 盆踊り; 在日米陸軍 キャンプ座間 盆踊り | https://x.com/gunsou_bouei64/status/2068681205248360584 |
 | high | new_event_candidate | new | event | イベント候補「地元で長く愛されてきた「常盤平団地夏まつり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で長く愛されてきた「常盤平団地夏まつり盆踊り, 望のひろばでの盆踊り, 30頃から盆踊り | 地元で長く愛されてきた「常盤平団地夏まつり盆踊り 盆踊り; 望のひろばでの盆踊り 盆踊り; けやき通り（常盤平駅前～望のひろば 盆踊り; 変更となる場合があります 盆踊り | https://x.com/matsudokankou1/status/2085961718275232157 |
 | high | new_event_candidate | new | event | イベント候補「地元のちぃさい町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元のちぃさい町会の盆踊り | 地元のちぃさい町会の盆踊り 盆踊り | https://x.com/gma6m/status/2083756353362055438 |
+| high | new_event_candidate | new | event | イベント候補「地元の塩生自治会主催の第53回塩生盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の塩生自治会主催の第53回塩生盆踊り | 地元の塩生自治会主催の第53回塩生盆踊り 盆踊り | https://x.com/k_takamitsu72/status/2087190776543633446 |
 | high | new_event_candidate | new | event | イベント候補「地元の小学校が改修工事となり数年盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の小学校が改修工事となり数年盆踊り | 地元の小学校が改修工事となり数年盆踊り 盆踊り; 梅雨の季節 盆踊り | https://x.com/macha780/status/2071408277452357992 |
 | high | new_event_candidate | new | event | イベント候補「地元の日本舞踊「吉野流」の皆さんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の日本舞踊「吉野流」の皆さんが盆踊り | 地元の日本舞踊「吉野流」の皆さんが盆踊り 盆踊り | https://x.com/UedaIsamuMP/status/2078695289695900044 |
 | high | new_event_candidate | new | event | イベント候補「地元の町会で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の町会で盆踊り | 地元の町会で盆踊り 盆踊り; 良かったら踊り 盆踊り | https://x.com/ebeSfFx0RGuet74/status/2077626680672416159 |
+| high | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り | 地元の盆踊り 盆踊り | https://x.com/LoveiWaku/status/2087092075208798302 |
 | high | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り, マツケンサンバと並んでチャンカパーナ盆踊り | 地元の盆踊り 盆踊り; マツケンサンバと並んでチャンカパーナ盆踊り 盆踊り | https://x.com/news7473taka/status/2086080570413711729 |
 | high | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り | 地元の盆踊り 盆踊り | https://x.com/_aki_com_onnna/status/2085923793953075639 |
 | high | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り | 地元の盆踊り 盆踊り | https://x.com/h_tanabe1212/status/2083517360959558106 |
@@ -2962,6 +3059,7 @@
 | high | new_event_candidate | new | event | イベント候補「堀江納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 堀江納涼盆踊り | 堀江納涼盆踊り 盆踊り; 堀江小学校東学舎（大阪市西区北堀江3-2-16 盆踊り | https://x.com/osaka_nisiku/status/2084859441459929562 |
 | high | new_event_candidate | new | event | イベント候補「堀留公園納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 堀留公園納涼盆踊り | 堀留公園納涼盆踊り 盆踊り | https://x.com/HarumiTerrace/status/2081338754405659122 |
 | high | new_event_candidate | new | event | イベント候補「堀留公園納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 堀留公園納涼盆踊り | 堀留公園納涼盆踊り 盆踊り | https://x.com/HarumiTerrace/status/2081016298193277127 |
+| high | new_event_candidate | new | event | イベント候補「場合により渡御 【盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 場合により渡御 【盆踊り | 場合により渡御 【盆踊り 盆踊り; 原宿区公会堂および前庭 盆踊り | https://x.com/hidaka0884/status/2087227191465791675 |
 | high | new_event_candidate | new | event | イベント候補「場合により渡御 【盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 場合により渡御 【盆踊り | 場合により渡御 【盆踊り 盆踊り; 原宿区公会堂および前庭 盆踊り | https://x.com/hidaka0884/status/2085405664999071949 |
 | high | new_event_candidate | new | event | イベント候補「堺市各地で夏祭りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 堺市各地で夏祭りや盆踊り | 堺市各地で夏祭りや盆踊り 盆踊り | https://x.com/ishinkuroda/status/2079410579736059948 |
 | high | new_event_candidate | new | event | イベント候補「塩ノ山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 塩ノ山盆踊り | 塩ノ山盆踊り 盆踊り | https://x.com/sanucker/status/2079472814671991113 |
@@ -3012,6 +3110,7 @@
 | high | new_event_candidate | new | event | イベント候補「多摩市聖蹟桜ヶ丘の小野神社で行われる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 多摩市聖蹟桜ヶ丘の小野神社で行われる盆踊り | 多摩市聖蹟桜ヶ丘の小野神社で行われる盆踊り 盆踊り | https://x.com/chokosara1708/status/2083317496208400735 |
 | high | new_event_candidate | new | event | イベント候補「多摩平第7公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 多摩平第7公園盆踊り | 多摩平第7公園盆踊り 盆踊り | https://x.com/Buster_Flash/status/2082081357854036463 |
 | high | new_event_candidate | new | event | イベント候補「多摩美術大学 上野毛キャンパス 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 多摩美術大学 上野毛キャンパス 盆踊り | 多摩美術大学 上野毛キャンパス 盆踊り 盆踊り | https://x.com/setagayakanko/status/2083085253632299493 |
+| high | new_event_candidate | new | event | イベント候補「多文化盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 多文化盆踊り | 多文化盆踊り 盆踊り; 琉球GLOCALキッズ(58号沿い 盆踊り | https://x.com/Yoshinooyama/status/2087141534886138088 |
 | high | new_event_candidate | new | event | イベント候補「夜から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜から盆踊り | 夜から盆踊り 盆踊り | https://x.com/midouyamaseiren/status/2068633274583581120 |
 | high | new_event_candidate | new | event | イベント候補「夜には「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜には「盆踊り | 夜には「盆踊り 盆踊り | https://x.com/omigyu_8man/status/2084444210938155023 |
 | high | new_event_candidate | new | event | イベント候補「夜にはスカイランタンと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜にはスカイランタンと盆踊り | 夜にはスカイランタンと盆踊り 盆踊り; 全体があたたかな光に包まれます 盆踊り | https://x.com/skylanternassoc/status/2069301544886186095 |
@@ -3027,7 +3126,6 @@
 | high | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り; へお越しください🙌 盆踊り; Minaさかい(市役所前 盆踊り | https://x.com/sakaikucho/status/2083024865511023058 |
 | high | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り | https://x.com/sanoto_moko/status/2081390535542296998 |
 | high | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り | https://x.com/minnanonakama/status/2081299132254462326 |
-| high | new_event_candidate | new | event | イベント候補「夜は豊玉第一町会の北新井公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は豊玉第一町会の北新井公園盆踊り | 夜は豊玉第一町会の北新井公園盆踊り 盆踊り | https://x.com/satojun1974/status/2078629473822642606 |
 | high | new_event_candidate | new | event | イベント候補「夜亀港で開催される盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜亀港で開催される盆踊り | 夜亀港で開催される盆踊り 盆踊り; 屋台や音頭 盆踊り | https://x.com/gnirpsspri18024/status/2085028388063109290 |
 | high | new_event_candidate | new | event | イベント候補「夜遅くまで榎校区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜遅くまで榎校区盆踊り, 今年初めての盆踊り, こうした盆踊り | 夜遅くまで榎校区盆踊り 盆踊り; 今年初めての盆踊り 盆踊り | https://x.com/Yamamotokanae/status/2078831500397846882 |
 | high | new_event_candidate | new | event | イベント候補「大きく広がった盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大きく広がった盆踊り | 大きく広がった盆踊り 盆踊り | https://x.com/hideaki2784/status/2083191728291672466 |
@@ -3070,6 +3168,7 @@
 | high | new_event_candidate | new | event | イベント候補「大風呂敷の上でビッグバンドの生演奏に合わせて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大風呂敷の上でビッグバンドの生演奏に合わせて盆踊り | 大風呂敷の上でビッグバンドの生演奏に合わせて盆踊り 盆踊り | https://x.com/nonokoyoshida/status/2081971641442316580 |
 | high | new_event_candidate | new | event | イベント候補「天候の様子により大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 天候の様子により大盆踊り | 天候の様子により大盆踊り 盆踊り | https://x.com/zenkojiofficial/status/2087068778773541321 |
 | high | new_event_candidate | new | event | イベント候補「天城湯ヶ島 大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 天城湯ヶ島 大盆踊り | 天城湯ヶ島 大盆踊り 盆踊り | https://x.com/naiyo01/status/2086690695801139340 |
+| high | new_event_candidate | new | event | イベント候補「天白公園 盆踊り選手権 りこ「ぼんおどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 天白公園 盆踊り選手権 りこ「ぼんおどり, ぼんおどり, ぼんおどりって漢字書けない。悠姫ちゃんは書けそう | 天白公園 盆踊り選手権 りこ「ぼんおどり 盆踊り; ぼんおどり 盆踊り | https://x.com/myblu2liquid/status/2087393149102809109 |
 | high | new_event_candidate | new | event | イベント候補「太一さんが行かれた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 太一さんが行かれた盆踊り | 太一さんが行かれた盆踊り 盆踊り; 向かう途中にポスターがあって 盆踊り | https://x.com/bibi_siro/status/2083897744633245877 |
 | high | new_event_candidate | new | event | イベント候補「太尾中町会・太尾南町会・大倉山明和会 合同盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 太尾中町会・太尾南町会・大倉山明和会 合同盆踊り | 太尾中町会・太尾南町会・大倉山明和会 合同盆踊り 盆踊り | https://x.com/n_fururin/status/2081038967001264292 |
 | high | new_event_candidate | new | event | イベント候補「太田神社で市野倉北町会「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 太田神社で市野倉北町会「納涼盆踊り, 盆踊り情報2026, 納涼盆踊り大会 | 太田神社で市野倉北町会「納涼盆踊り 盆踊り; 盆踊り情報2026 盆踊り | https://x.com/otafull/status/2086286349787664649 |
@@ -3082,6 +3181,7 @@
 | high | new_event_candidate | new | event | イベント候補「妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 妖怪盆踊り | 妖怪盆踊り 盆踊り | https://x.com/yokaibonodori/status/2085181835043336200 |
 | high | new_event_candidate | new | event | イベント候補「始まりは午後6時半からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 始まりは午後6時半からの盆踊り | 始まりは午後6時半からの盆踊り 盆踊り; 河内音頭 盆踊り; こどもの部踊り 盆踊り | https://x.com/nijigame_taiko/status/2086588253445275957 |
 | high | new_event_candidate | new | event | イベント候補「始まりました】 今年100周年を迎えた の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 始まりました】 今年100周年を迎えた の盆踊り, 上池袋さくら公園の盆踊り, それぞれの地域で受け継がれてきた盆踊り | 始まりました】 今年100周年を迎えた の盆踊り 盆踊り; 上池袋さくら公園の盆踊り 盆踊り; 人と地域がつながる季節 盆踊り | https://x.com/takagiwa_miyuki/status/2075904666077110652 |
+| high | new_event_candidate | new | event | イベント候補「姫島で心躍る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 姫島で心躍る盆踊り | 姫島で心躍る盆踊り 盆踊り; 大分県姫島村 中央広場（フェリー広場）ほか各坪 盆踊り; 伝統踊り 盆踊り; 創作踊り 盆踊り | https://x.com/iko_yo_trip/status/2087445229842362377 |
 | high | new_event_candidate | new | event | イベント候補「嬉し過ぎる葛飾の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 嬉し過ぎる葛飾の盆踊り | 嬉し過ぎる葛飾の盆踊り 盆踊り; 葛飾音頭 盆踊り; 葛飾小唄 盆踊り | https://x.com/yumiya_pon/status/2076282519901933967 |
 | high | new_event_candidate | new | event | イベント候補「子どもから大人までたくさんの方が輪になって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子どもから大人までたくさんの方が輪になって盆踊り | 子どもから大人までたくさんの方が輪になって盆踊り 盆踊り | https://x.com/k_kana_tsuchiya/status/2086094937859482029 |
 | high | new_event_candidate | new | event | イベント候補「子どもの頃に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子どもの頃に盆踊り, 実は盆踊り | 子どもの頃に盆踊り 盆踊り; 実は盆踊り 盆踊り; かなり盛り上がっていて 盆踊り; 和泉公園は天然芝なの 盆踊り | https://x.com/hiroc_takaki/status/2083161026674208831 |
@@ -3104,8 +3204,11 @@
 | high | new_event_candidate | new | event | イベント候補「学内のサークルなど多くの皆様のご協力で開催される盆踊り・夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 学内のサークルなど多くの皆様のご協力で開催される盆踊り・夏祭り | 学内のサークルなど多くの皆様のご協力で開催される盆踊り・夏祭り 盆踊り | https://x.com/mana_setagaya/status/2079103280173744255 |
 | high | new_event_candidate | new | event | イベント候補「宇喜田六軒町自治会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宇喜田六軒町自治会盆踊り | 宇喜田六軒町自治会盆踊り 盆踊り | https://x.com/0024youhei/status/2083848611360858133 |
 | high | new_event_candidate | new | event | イベント候補「宇山昭和会主催の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宇山昭和会主催の納涼盆踊り, 50回目の納涼盆踊り | 宇山昭和会主催の納涼盆踊り 盆踊り; 50回目の納涼盆踊り 盆踊り; 楽しく踊り 盆踊り | https://x.com/nobuko20160913/status/2081739957840875856 |
+| high | new_event_candidate | new | event | イベント候補「安井 校区ふれあい喫茶 っこまつり 校区花火大会 中学盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 安井 校区ふれあい喫茶 っこまつり 校区花火大会 中学盆踊り | 安井 校区ふれあい喫茶 っこまつり 校区花火大会 中学盆踊り 盆踊り | https://x.com/MORIYAMAhiro/status/2087161311951978681 |
 | high | new_event_candidate | new | event | イベント候補「安行慈林町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 安行慈林町会盆踊り | 安行慈林町会盆踊り 盆踊り | https://x.com/dh997eMUSCbxFNc/status/2081260964159303740 |
+| high | new_event_candidate | new | event | イベント候補「実は今年から「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実は今年から「盆踊り, 盆踊りは本気で踊る | 実は今年から「盆踊り 盆踊り; 盆踊りは本気で踊る 盆踊り; 壇上では踊り 盆踊り | https://x.com/10tarou0923/status/2087162887504826376 |
 | high | new_event_candidate | new | event | イベント候補「実は昨年復刻した盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実は昨年復刻した盆踊り | 実は昨年復刻した盆踊り 盆踊り; 運営や誘導などを行うみたい 盆踊り | https://x.com/toyo_app/status/2075152227652829682 |
+| high | new_event_candidate | new | event | イベント候補「実は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実は盆踊り | 実は盆踊り 盆踊り | https://x.com/miyuki__okubo/status/2087152602282930226 |
 | high | new_event_candidate | new | event | イベント候補「実際は団地の自治会が主体となりお祭りと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実際は団地の自治会が主体となりお祭りと盆踊り, 笠原寺と東野公園で盆踊り, 初めて盆踊り | 実際は団地の自治会が主体となりお祭りと盆踊り 盆踊り; 笠原寺と東野公園で盆踊り 盆踊り; あった 盆踊り | https://x.com/hidedon78/status/2066784252717662614 |
 | high | new_event_candidate | new | event | イベント候補「宮の前自治会の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮の前自治会の納涼盆踊り | 宮の前自治会の納涼盆踊り 盆踊り; 炭鉱節 盆踊り; 七夕踊り 盆踊り | https://x.com/hitoshiueno0923/status/2085711907550605694 |
 | high | new_event_candidate | new | event | イベント候補「宮の盆唄は宇都宮の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮の盆唄は宇都宮の盆踊り | 宮の盆唄は宇都宮の盆踊り 盆踊り; 日光和楽踊り 盆踊り | https://x.com/hamadasensho/status/2077662083353833540 |
@@ -3151,6 +3254,7 @@
 | high | new_event_candidate | new | event | イベント候補「寺山町の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寺山町の盆踊り | 寺山町の盆踊り 盆踊り | https://x.com/terayama_town/status/2086341166262521910 |
 | high | new_event_candidate | new | event | イベント候補「寺川自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寺川自治会の盆踊り | 寺川自治会の盆踊り 盆踊り; て地域のことや日々の暮らしのことなど 盆踊り | https://x.com/goodjobkomei/status/2086101600792428990 |
 | high | new_event_candidate | new | event | イベント候補「寺川自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寺川自治会の盆踊り | 寺川自治会の盆踊り 盆踊り; て地域のことや日々の暮らしのことなど 盆踊り | https://x.com/goodjobkomei/status/2086097159523549592 |
+| high | new_event_candidate | new | event | イベント候補「射的も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 射的も盆踊り | 射的も盆踊り 盆踊り | https://x.com/sana_nasa/status/2087340585309131139 |
 | high | new_event_candidate | new | event | イベント候補「小中高の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小中高の盆踊り, お囃子は盆踊り | 小中高の盆踊り 盆踊り; お囃子は盆踊り 盆踊り | https://x.com/AGITOYY/status/2082018783993250160 |
 | high | new_event_candidate | new | event | イベント候補「小山六丁目町会・原町一丁目町会主催】 「西小山駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小山六丁目町会・原町一丁目町会主催】 「西小山駅前盆踊り, 西小山駅前盆踊り大会 | 小山六丁目町会・原町一丁目町会主催】 「西小山駅前盆踊り 盆踊り; 西小山駅前盆踊り大会 盆踊り; ・西小山駅前広場 盆踊り; 新目黒音頭 盆踊り | https://x.com/Yu_Kanmiya/status/2082434757812695256 |
 | high | new_event_candidate | new | event | イベント候補「小山田町納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小山田町納涼盆踊り, 喜志町盆踊り, 伏山盆踊り | 小山田町納涼盆踊り 盆踊り; 喜志町盆踊り 盆踊り; 河内音頭 盆踊り; 富田林市河内音頭 盆踊り | https://x.com/TomoakiShimada/status/2081677221471883358 |
@@ -3175,6 +3279,7 @@
 | high | new_event_candidate | new | event | イベント候補「山ちゃん 二日間に渡っての盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山ちゃん 二日間に渡っての盆踊り | 山ちゃん 二日間に渡っての盆踊り 盆踊り | https://x.com/ogazz/status/2071028626720784667 |
 | high | new_event_candidate | new | event | イベント候補「山ノ内自治会連合会等各種団体が共催した盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山ノ内自治会連合会等各種団体が共催した盆踊り | 山ノ内自治会連合会等各種団体が共催した盆踊り 盆踊り; 河内音頭 盆踊り; 江州音頭 盆踊り | https://x.com/Ax5BduVSTX18155/status/2086073075301585051 |
 | high | new_event_candidate | new | event | イベント候補「山車が出たり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山車が出たり盆踊り | 山車が出たり盆踊り 盆踊り | https://x.com/kame_matsuri/status/2083701467186373039 |
+| high | new_event_candidate | new | event | イベント候補「山辺地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山辺地区の盆踊り | 山辺地区の盆踊り 盆踊り; 盛り上げてくださった関係者の皆様の熱意に 盆踊り; 沢山の方とお話しさせていただき 盆踊り | https://x.com/endohiroaki1121/status/2087376907402961166 |
 | high | new_event_candidate | new | event | イベント候補「山辺町各地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山辺町各地区の盆踊り, 近江地区盆踊り, 作谷沢地区盆踊り | 山辺町各地区の盆踊り 盆踊り; 近江地区盆踊り 盆踊り | https://x.com/yamanobekanko/status/2086647793943535762 |
 | high | new_event_candidate | new | event | イベント候補「山辺町各地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山辺町各地区の盆踊り, まのべ盆踊り, 大寺地区盆踊り | 山辺町各地区の盆踊り 盆踊り; まのべ盆踊り 盆踊り | https://x.com/yamanobekanko/status/2086647457145098725 |
 | high | new_event_candidate | new | event | イベント候補「岐阜de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岐阜de盆踊り | 岐阜de盆踊り 盆踊り | https://x.com/gifu_jc/status/2066394138413760760 |
@@ -3220,6 +3325,7 @@
 | high | new_event_candidate | new | event | イベント候補「市川市の新井自治会納涼盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市川市の新井自治会納涼盆おどり, 行徳音頭 | 市川市の新井自治会納涼盆おどり 盆踊り; 行徳音頭 盆踊り; 狭いがいい雰囲気の神社 盆踊り | https://x.com/jim6900/status/2086085536360599754 |
 | high | new_event_candidate | new | event | イベント候補「市民盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市民盆おどり | 市民盆おどり 盆踊り; 秋田県横手市（蛇の崎川原ほか 盆踊り | https://x.com/iko_yo_trip/status/2085633290518601897 |
 | high | new_event_candidate | new | event | イベント候補「市民盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市民盆おどり, 市民盆おどり・屋形舟鑑賞会 | 市民盆おどり 盆踊り; 市民盆おどり・屋形舟鑑賞会 盆踊り | https://x.com/Yokote_city/status/2084836804004319612 |
+| high | new_event_candidate | new | event | イベント候補「市民盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市民盆踊り | 市民盆踊り 盆踊り | https://x.com/HitsFM765/status/2087376109612781879 |
 | high | new_event_candidate | new | event | イベント候補「市民盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市民盆踊り | 市民盆踊り 盆踊り; 3曲踊り 盆踊り | https://x.com/HitsFM765/status/2084861826488320003 |
 | high | new_event_candidate | new | event | イベント候補「市野倉北町会「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市野倉北町会「納涼盆踊り, 納涼盆踊り大会 | 市野倉北町会「納涼盆踊り 盆踊り; 納涼盆踊り大会 盆踊り; 🥰感謝🙏 盆踊り | https://x.com/panda_dapan11/status/2086807897602936846 |
 | high | new_event_candidate | new | event | イベント候補「帝釈天での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 帝釈天での盆踊り, 柴又青友会 納涼盆踊り, 帝釋天境内にて 盆踊り | 帝釈天での盆踊り 盆踊り; 柴又青友会 納涼盆踊り 盆踊り; 帝釋天境内 盆踊り | https://x.com/katorangerZZ/status/2086105365691936787 |
@@ -3228,6 +3334,7 @@
 | high | new_event_candidate | new | event | イベント候補「帰りは 今北ふれあい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 帰りは 今北ふれあい盆踊り | 帰りは 今北ふれあい盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2082377095058243817 |
 | high | new_event_candidate | new | event | イベント候補「常盤町内会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 常盤町内会 納涼盆踊り, 常盤町内会館 【第63回 常盤町内会 納涼盆踊り, 常盤町内会 納涼盆踊り大会 | 常盤町内会 納涼盆踊り 盆踊り; 常盤町内会館 【第63回 常盤町内会 納涼盆踊り 盆踊り; 町内会館広場 盆踊り | https://x.com/gaku24h/status/2071353336360792159 |
 | high | new_event_candidate | new | event | イベント候補「幌西子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 幌西子ども盆踊り, (月) 幌西子ども盆踊り大会, 幌西子ども盆踊り大会 | 幌西子ども盆踊り 盆踊り; (月) 幌西子ども盆踊り大会 盆踊り | https://x.com/Daisen1989/status/2086989257777008873 |
+| high | new_event_candidate | new | event | イベント候補「幕別町夏まつり「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 幕別町夏まつり「盆踊り, 月17日（月）の盆踊り, 幕別町夏まつり「盆踊り大会 | 幕別町夏まつり「盆踊り 盆踊り; 月17日（月）の盆踊り 盆踊り; 幕別町民会館前 盆踊り | https://x.com/tokachi_fire_B/status/2087361541738037523 |
 | high | new_event_candidate | new | event | イベント候補「平井六丁目東町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 平井六丁目東町会盆踊り | 平井六丁目東町会盆踊り 盆踊り | https://x.com/M8nLHhkSlQmm4HB/status/2083878453045317905 |
 | high | new_event_candidate | new | event | イベント候補「平和盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 平和盆踊り, 平和盆踊りでお待ちしています | 平和盆踊り 盆踊り; 平和盆踊りでお待ちしています 盆踊り | https://x.com/You6me17st/status/2082692627741487477 |
 | high | new_event_candidate | new | event | イベント候補「平和祈念盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 平和祈念盆踊り | 平和祈念盆踊り 盆踊り | https://x.com/ougo_tw/status/2084586053009350795 |
@@ -3278,6 +3385,7 @@
 | high | new_event_candidate | new | event | イベント候補「扇南町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 扇南町会の盆踊り | 扇南町会の盆踊り 盆踊り | https://x.com/ishige_kazuaki/status/2083521891705487787 |
 | high | new_event_candidate | new | event | イベント候補「扇橋三丁目町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 扇橋三丁目町会盆踊り | 扇橋三丁目町会盆踊り 盆踊り | https://x.com/sakainatsumi724/status/2086425503037313321 |
 | high | new_event_candidate | new | event | イベント候補「手賀の楽しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 手賀の楽しい盆踊り, 永楽台町会の納涼盆踊り | 手賀の楽しい盆踊り 盆踊り; 永楽台町会の納涼盆踊り 盆踊り | https://x.com/izumi_kashiwa/status/2083904523748192446 |
+| high | new_event_candidate | new | event | イベント候補「手足を交互に力強く出すだけのその動きは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 手足を交互に力強く出すだけのその動きは盆踊り | 手足を交互に力強く出すだけのその動きは盆踊り 盆踊り; の源流である念仏踊り 盆踊り | https://x.com/matsbox/status/2087306717516460083 |
 | high | new_event_candidate | new | event | イベント候補「打ち上げ花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 打ち上げ花火や盆踊り | 打ち上げ花火や盆踊り 盆踊り; /大江駅周辺 盆踊り | https://x.com/oeeki_baiten/status/2076899370453377405 |
 | high | new_event_candidate | new | event | イベント候補「打ち上げ花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 打ち上げ花火や盆踊り | 打ち上げ花火や盆踊り 盆踊り; へお越しください😊 盆踊り | https://x.com/asahikawa_jp/status/2076884763957501973 |
 | high | new_event_candidate | new | event | イベント候補「押上西和町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 押上西和町会盆踊り | 押上西和町会盆踊り 盆踊り; した♪ 盆踊り | https://x.com/FFleurs/status/2077758999064400217 |
@@ -3326,6 +3434,7 @@
 | high | new_event_candidate | new | event | イベント候補「日日曜日豊川おいてん夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日日曜日豊川おいてん夏祭り盆踊り | 日日曜日豊川おいてん夏祭り盆踊り 盆踊り | https://x.com/SuO4fZsWsres2Bz/status/2082730329576783907 |
 | high | new_event_candidate | new | event | イベント候補「日曜日に行われた町会の子供まつり・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日曜日に行われた町会の子供まつり・盆踊り | 日曜日に行われた町会の子供まつり・盆踊り 盆踊り | https://x.com/musashinokotaro/status/2082019272407322849 |
 | high | new_event_candidate | new | event | イベント候補「日本の夏」 花火・祭り・浴衣・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の夏」 花火・祭り・浴衣・盆踊り | 日本の夏」 花火・祭り・浴衣・盆踊り 盆踊り | https://x.com/InjectiveJPN/status/2087011126651277419 |
+| high | new_event_candidate | new | event | イベント候補「日本を代表する伝統的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本を代表する伝統的な盆踊り | 日本を代表する伝統的な盆踊り 盆踊り; 阿波踊り 盆踊り | https://x.com/mapple_editor/status/2087328328818761855 |
 | high | new_event_candidate | new | event | イベント候補「日本三大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本三大盆踊り | 日本三大盆踊り 盆踊り; 寶船が阿波踊り 盆踊り | https://x.com/takarabune_info/status/2083072860688712134 |
 | high | new_event_candidate | new | event | イベント候補「日本中の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本中の盆踊り, 地域のみなさんと一緒に新しい盆踊り, そしていよいよ新作盆踊り | 日本中の盆踊り 盆踊り; 地域のみなさんと一緒に新しい盆踊り 盆踊り | https://x.com/Shimane_CC_1968/status/2086721057382351005 |
 | high | new_event_candidate | new | event | イベント候補「日本中の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本中の盆踊り, 地域のみなさんと一緒に新しい盆踊り, そしていよいよ新作盆踊り | 日本中の盆踊り 盆踊り; 地域のみなさんと一緒に新しい盆踊り 盆踊り | https://x.com/Shimane_CC_1968/status/2086720879099359337 |
@@ -3336,6 +3445,7 @@
 | high | new_event_candidate | new | event | イベント候補「日本女子体育大学の学生がキレッキレの 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本女子体育大学の学生がキレッキレの 盆踊り | 日本女子体育大学の学生がキレッキレの 盆踊り 盆踊り | https://x.com/naonao773703/status/2084483193282212276 |
 | high | new_event_candidate | new | event | イベント候補「日本最大の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本最大の盆踊り | 日本最大の盆踊り 盆踊り; 徳島市阿波おどり 盆踊り | https://x.com/osaka_orion/status/2079041102603018510 |
 | high | new_event_candidate | new | event | イベント候補「日本最大の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本最大の盆踊り | 日本最大の盆踊り 盆踊り; 徳島市阿波おどり 盆踊り | https://x.com/osaka_orion/status/2071551250097897977 |
+| high | new_event_candidate | new | event | イベント候補「日本最大級の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本最大級の盆踊り | 日本最大級の盆踊り 盆踊り; 徳島阿波おどり 盆踊り | https://x.com/tarotaro_mgm/status/2087300074888151143 |
 | high | new_event_candidate | new | event | イベント候補「日本橋久松町・富沢町合同2026夏の輪納涼祭盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本橋久松町・富沢町合同2026夏の輪納涼祭盆踊り, 久松小学校 日本橋エリアの盆踊り | 日本橋久松町・富沢町合同2026夏の輪納涼祭盆踊り 盆踊り; 久松小学校 日本橋エリアの盆踊り 盆踊り | https://x.com/FFleurs/status/2075943193686991156 |
 | high | new_event_candidate | new | event | イベント候補「日本民謡協会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本民謡協会 盆踊り | 日本民謡協会 盆踊り 盆踊り; 岐阜音頭 盆踊り; 伊勢音頭 盆踊り | https://x.com/natsutr_bon/status/2066365372690043031 |
 | high | new_event_candidate | new | event | イベント候補「日枝神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日枝神社の盆踊り | 日枝神社の盆踊り 盆踊り | https://x.com/Izo7m/status/2067118367484608780 |
@@ -3353,6 +3463,7 @@
 | high | new_event_candidate | new | event | イベント候補「旧町会調理部の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 旧町会調理部の盆踊り | 旧町会調理部の盆踊り 盆踊り | https://x.com/TUTINOKO_PROG/status/2084995203740639427 |
 | high | new_event_candidate | new | event | イベント候補「早朝より地元三原台町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 早朝より地元三原台町会の盆踊り | 早朝より地元三原台町会の盆踊り 盆踊り | https://x.com/kobaken_komei/status/2081029558304960666 |
 | high | new_event_candidate | new | event | イベント候補「明後日の二日間開催される 下篠崎町会主催 納涼盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日の二日間開催される 下篠崎町会主催 納涼盆おどり | 明後日の二日間開催される 下篠崎町会主催 納涼盆おどり 盆踊り | https://x.com/babycas_randm/status/2086097539011670331 |
+| high | new_event_candidate | new | event | イベント候補「明日の新南の口公園（新タコ公園）の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日の新南の口公園（新タコ公園）の盆踊り | 明日の新南の口公園（新タコ公園）の盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2087415698914185267 |
 | high | new_event_candidate | new | event | イベント候補「明日は近くの公園で 近隣最大規模の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は近くの公園で 近隣最大規模の盆踊り | 明日は近くの公園で 近隣最大規模の盆踊り 盆踊り | https://x.com/DJ_community/status/2082734823924519330 |
 | high | new_event_candidate | new | event | イベント候補「明日まで 東京都中央区佃の民謡「佃島盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日まで 東京都中央区佃の民謡「佃島盆踊り, 佃島盆踊り | 明日まで 東京都中央区佃の民謡「佃島盆踊り 盆踊り; 佃島盆踊り 盆踊り | https://x.com/kame_matsuri/status/2076784824262811871 |
 | high | new_event_candidate | new | event | イベント候補「明日まで 東京都中央区佃の民謡「佃島盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日まで 東京都中央区佃の民謡「佃島盆踊り, 佃島盆踊り | 明日まで 東京都中央区佃の民謡「佃島盆踊り 盆踊り; 佃島盆踊り 盆踊り | https://x.com/kame_matsuri/status/2076782312088547427 |
@@ -3415,6 +3526,7 @@
 | high | new_event_candidate | new | event | イベント候補「月曜日に開催された三原台町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月曜日に開催された三原台町会の盆踊り, 櫓の上でわたしが盆踊り | 月曜日に開催された三原台町会の盆踊り 盆踊り; 櫓の上でわたしが盆踊り 盆踊り | https://x.com/IshimoriAi/status/2082389568905752910 |
 | high | new_event_candidate | new | event | イベント候補「月替わりで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月替わりで盆踊り | 月替わりで盆踊り 盆踊り; 東京都台東区浅草２丁目２２−５ 盆踊り | https://x.com/minyo_eisui/status/2085351271557636147 |
 | high | new_event_candidate | new | event | イベント候補「月次祭と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月次祭と盆踊り, また夕方からは東金町三和自治会による盆踊り | 月次祭と盆踊り 盆踊り; また夕方からは東金町三和自治会による盆踊り 盆踊り | https://x.com/handa_inari/status/2083561443082022932 |
+| high | new_event_candidate | new | event | イベント候補「朝から地域の皆様と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から地域の皆様と盆踊り | 朝から地域の皆様と盆踊り 盆踊り | https://x.com/haruka_1023/status/2087265934260187331 |
 | high | new_event_candidate | new | event | イベント候補「朝から東糀谷三町会合同盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から東糀谷三町会合同盆踊り | 朝から東糀谷三町会合同盆踊り 盆踊り; 準備へ 盆踊り; 大盛況😊 盆踊り | https://x.com/KakishimaKohei/status/2078140815747293242 |
 | high | new_event_candidate | new | event | イベント候補「朝から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から盆踊り | 朝から盆踊り 盆踊り; 後片付けをお手伝いしました 盆踊り | https://x.com/NobuyukiGoing/status/2081722871270035880 |
 | high | new_event_candidate | new | event | イベント候補「朝早く鵜の木三丁目町会のみなさんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝早く鵜の木三丁目町会のみなさんが盆踊り | 朝早く鵜の木三丁目町会のみなさんが盆踊り 盆踊り | https://x.com/unokky_otaku/status/2078637428345368711 |
@@ -3428,9 +3540,11 @@
 | high | new_event_candidate | new | event | イベント候補「本年の奥浅草盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊りは下町台東盆踊り | 本年の奥浅草盆踊り 盆踊り; 踊りは下町台東盆踊り 盆踊り | https://x.com/Okuasakusa_bon/status/2056618828893917663 |
 | high | new_event_candidate | new | event | イベント候補「本年も駐屯地を一般開放して盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本年も駐屯地を一般開放して盆踊り | 本年も駐屯地を一般開放して盆踊り 盆踊り | https://x.com/CAMP_TAKIGAHARA/status/2069616513666208200 |
 | high | new_event_candidate | new | event | イベント候補「本庄南公園大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本庄南公園大盆踊り, 18日(土)・19(日)に開催の『本庄南公園大盆踊り, 本庄南公園大盆踊り大会 | 本庄南公園大盆踊り 盆踊り; 18日(土)・19(日)に開催の『本庄南公園大盆踊り 盆踊り | https://x.com/9JoFZSBtpklWJqB/status/2082067368877121588 |
+| high | new_event_candidate | new | event | イベント候補「本日8月12日(水) 四天王寺さんの大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本日8月12日(水) 四天王寺さんの大盆踊り | 本日8月12日(水) 四天王寺さんの大盆踊り 盆踊り; 河内音頭 盆踊り | https://x.com/creatorbjork/status/2087445323027296762 |
 | high | new_event_candidate | new | event | イベント候補「本来であれば地元の町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本来であれば地元の町会盆踊り | 本来であれば地元の町会盆踊り 盆踊り | https://x.com/KishinoYUICHI/status/2079066014688715024 |
 | high | new_event_candidate | new | event | イベント候補「本牧神社で開催された盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本牧神社で開催された盆踊り | 本牧神社で開催された盆踊り 盆踊り | https://x.com/Canon_Eagles/status/2084216025164497121 |
 | high | new_event_candidate | new | event | イベント候補「本番の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本番の盆踊り | 本番の盆踊り 盆踊り | https://x.com/kirin_daiko/status/2076588257845076045 |
+| high | new_event_candidate | new | event | イベント候補「本郷台駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本郷台駅前盆踊り | 本郷台駅前盆踊り 盆踊り; 栄区民音頭 盆踊り | https://x.com/_masakari/status/2087350103266959734 |
 | high | new_event_candidate | new | event | イベント候補「本門寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本門寺の盆踊り, 本門寺盆踊り | 本門寺の盆踊り 盆踊り; 本門寺盆踊り 盆踊り | https://x.com/ikegamibiyori/status/2084770263087055077 |
 | high | new_event_candidate | new | event | イベント候補「本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本願寺の盆踊り | 本願寺の盆踊り 盆踊り | https://x.com/HMLP0JiiJ4bu0NB/status/2077214360016175265 |
 | high | new_event_candidate | new | event | イベント候補「札幌南区澄川第六町内会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 札幌南区澄川第六町内会盆踊り | 札幌南区澄川第六町内会盆踊り 盆踊り | https://x.com/marufukudo_tama/status/2084855635611652528 |
@@ -3464,6 +3578,7 @@
 | high | new_event_candidate | new | event | イベント候補「東京芸術大学 取手キャンパスで 「小文間の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東京芸術大学 取手キャンパスで 「小文間の盆踊り, 取手市小文間の盆踊り, 小文間の盆踊り | 東京芸術大学 取手キャンパスで 「小文間の盆踊り 盆踊り; 取手市小文間の盆踊り 盆踊り | https://x.com/chiikishinbun/status/2071428442982330708 |
 | high | new_event_candidate | new | event | イベント候補「東京蚤の市 夏祭り」「一ノ宮自治会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東京蚤の市 夏祭り」「一ノ宮自治会納涼盆踊り, 一ノ宮自治会納涼盆踊り大会 | 東京蚤の市 夏祭り」「一ノ宮自治会納涼盆踊り 盆踊り; 一ノ宮自治会納涼盆踊り大会 盆踊り | https://x.com/ttvcomu/status/2086609166224040049 |
 | high | new_event_candidate | new | event | イベント候補「東京都民踊連盟 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東京都民踊連盟 盆踊り | 東京都民踊連盟 盆踊り 盆踊り; 中野駅前大盆踊り 盆踊り | https://x.com/tominren58/status/2070832521139691985 |
+| high | new_event_candidate | new | event | イベント候補「東京音頭からエビカニクスまで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東京音頭からエビカニクスまで盆踊り | 東京音頭からエビカニクスまで盆踊り 盆踊り; 東京音頭 盆踊り | https://x.com/tamuro_hnakano/status/2087369768806625404 |
 | high | new_event_candidate | new | event | イベント候補「東大寺二月堂十七夜盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東大寺二月堂十七夜盆踊り | 東大寺二月堂十七夜盆踊り 盆踊り | https://x.com/nakatabuncho/status/2083145387645534386 |
 | high | new_event_candidate | new | event | イベント候補「東太田町内会様盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東太田町内会様盆踊り, 清見台東三丁目町内会様盆踊り | 東太田町内会様盆踊り 盆踊り; 清見台東三丁目町内会様盆踊り 盆踊り | https://x.com/ogukin/status/2085159826607448482 |
 | high | new_event_candidate | new | event | イベント候補「東太田町内会様盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東太田町内会様盆踊り, 清見台東三丁目町内会様盆踊り | 東太田町内会様盆踊り 盆踊り; 清見台東三丁目町内会様盆踊り 盆踊り | https://x.com/ogukin/status/2084395645335683096 |
@@ -3498,6 +3613,7 @@
 | high | new_event_candidate | new | event | イベント候補「松戸コスプレ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松戸コスプレ盆踊り | 松戸コスプレ盆踊り 盆踊り | https://x.com/FurryFenrirxoxo/status/2083076489889853878 |
 | high | new_event_candidate | new | event | イベント候補「松戸寄ったらラストサマー盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松戸寄ったらラストサマー盆おどり | 松戸寄ったらラストサマー盆おどり 盆踊り | https://x.com/kasui21/status/2083567258631311460 |
 | high | new_event_candidate | new | event | イベント候補「松戸駐屯地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松戸駐屯地盆踊り, Xに投稿されている注意事項を確認して盆踊り | 松戸駐屯地盆踊り 盆踊り; Xに投稿されている注意事項を確認して盆踊り 盆踊り; 松戸駅西口デッキ 盆踊り; 松戸駐屯地 盆踊り | https://x.com/matsudokankou1/status/2079017221758783958 |
+| high | new_event_candidate | new | event | イベント候補「松本城 第78回お城盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松本城 第78回お城盆踊り | 松本城 第78回お城盆踊り 盆踊り | https://x.com/aurora_dawn_BK/status/2087417351138431354 |
 | high | new_event_candidate | new | event | イベント候補「松江2丁目町会と貞明町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松江2丁目町会と貞明町会の盆踊り | 松江2丁目町会と貞明町会の盆踊り 盆踊り | https://x.com/sekine_komei/status/2079315143956234582 |
 | high | new_event_candidate | new | event | イベント候補「板橋区中のあちこちで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 板橋区中のあちこちで盆踊り | 板橋区中のあちこちで盆踊り 盆踊り | https://x.com/KumadaTomoko/status/2081253913618186497 |
 | high | new_event_candidate | new | event | イベント候補「板橋区舟渡小の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 板橋区舟渡小の盆踊り | 板橋区舟渡小の盆踊り 盆踊り; 舟渡ひろがり音頭 盆踊り | https://x.com/bakushin339711/status/2082355056104673669 |
@@ -3533,6 +3649,7 @@
 | high | new_event_candidate | new | event | イベント候補「模擬店や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 模擬店や盆踊り | 模擬店や盆踊り 盆踊り | https://x.com/hidamari_tdk/status/2076110424190431573 |
 | high | new_event_candidate | new | event | イベント候補「横山小学校 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横山小学校 盆踊り | 横山小学校 盆踊り 盆踊り | https://x.com/calamus390/status/2078957233996788096 |
 | high | new_event_candidate | new | event | イベント候補「横浜モアーズ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜モアーズ盆踊り, 横浜モアーズ盆踊り 盆DANCE 2026 | 横浜モアーズ盆踊り 盆踊り; 横浜モアーズ盆踊り 盆DANCE 2026 盆踊り | https://x.com/Hama_Seikatsu/status/2077304912329748592 |
+| high | new_event_candidate | new | event | イベント候補「檜原盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 檜原盆踊り | 檜原盆踊り 盆踊り | https://x.com/nose_anna1110/status/2087390182375121220 |
 | high | new_event_candidate | new | event | イベント候補「櫓が建って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 櫓が建って盆踊り | 櫓が建って盆踊り 盆踊り; 座席はなく 盆踊り | https://x.com/Riru2Green/status/2081012465325007145 |
 | high | new_event_candidate | new | event | イベント候補「櫓に盆踊り初めて見たけど郡山では盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 櫓に盆踊り初めて見たけど郡山では盆踊り | 櫓に盆踊り初めて見たけど郡山では盆踊り 盆踊り | https://x.com/izayohituki/status/2083521135917076799 |
 | high | new_event_candidate | new | event | イベント候補「櫓の上で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 櫓の上で盆踊り | 櫓の上で盆踊り 盆踊り | https://x.com/hinotakashi0407/status/2080987086111527216 |
@@ -3587,6 +3704,7 @@
 | high | new_event_candidate | new | event | イベント候補「津島市女性の会 毎年恒例「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 津島市女性の会 毎年恒例「盆踊り, 盆踊り大会 | 津島市女性の会 毎年恒例「盆踊り 盆踊り; 盆踊り大会 盆踊り | https://x.com/noriko_kato_/status/2084195825723564329 |
 | high | new_event_candidate | new | event | イベント候補「津田の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 津田の盆踊り, 盆踊り唄 | 津田の盆踊り 盆踊り; 盆踊り唄 盆踊り; 徳島市の阿波おどり 盆踊り; 阿波踊り 盆踊り | https://x.com/nhk_tokushima/status/2085632091182846209 |
 | high | new_event_candidate | new | event | イベント候補「津軽伊勢音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 津軽伊勢音頭 | 津軽伊勢音頭 盆踊り | https://x.com/kame_matsuri/status/2084407471893098560 |
+| high | new_event_candidate | new | event | イベント候補「活動レポート】2026年8月2日（日）リバスポ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 活動レポート】2026年8月2日（日）リバスポ盆踊り, 空模様を気にしながら迎えたリバスポ盆踊り | 活動レポート】2026年8月2日（日）リバスポ盆踊り 盆踊り; 空模様を気にしながら迎えたリバスポ盆踊り 盆踊り; 金山リバーサイドスポーツセンター 盆踊り | https://x.com/sayokai/status/2087437849385976200 |
 | high | new_event_candidate | new | event | イベント候補「流してほしい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流してほしい盆踊り | 流してほしい盆踊り 盆踊り; COOL JAPAN PARK OSAKA TTホール 盆踊り | https://x.com/shumatsu_y/status/2071084927580594230 |
 | high | new_event_candidate | new | event | イベント候補「流してほしい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流してほしい盆踊り | 流してほしい盆踊り 盆踊り; COOL JAPAN PARK OSAKA TTホール 盆踊り | https://x.com/shumatsu_y/status/2070721281054699858 |
 | high | new_event_candidate | new | event | イベント候補「流れると 一斉に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流れると 一斉に盆踊り | 流れると 一斉に盆踊り 盆踊り | https://x.com/nishimuro_maki/status/2079680594867601666 |
@@ -3641,6 +3759,7 @@
 | high | new_event_candidate | new | event | イベント候補「珍しい生演奏でロックな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 珍しい生演奏でロックな盆踊り | 珍しい生演奏でロックな盆踊り 盆踊り | https://x.com/tunagate/status/2069196384440570037 |
 | high | new_event_candidate | new | event | イベント候補「現場の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 現場の盆踊り | 現場の盆踊り 盆踊り; 河内音頭 盆踊り; 昨日の錦糸町河内音頭 盆踊り | https://x.com/blue_sky_blue_j/status/2082836945156325397 |
 | high | new_event_candidate | new | event | イベント候補「生バンドの音色に合わせて踊る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生バンドの音色に合わせて踊る盆踊り | 生バンドの音色に合わせて踊る盆踊り 盆踊り | https://x.com/cfm_domingo/status/2081532750335750216 |
+| high | new_event_candidate | new | event | イベント候補「生地町内で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生地町内で盆踊り | 生地町内で盆踊り 盆踊り | https://x.com/hamadasensho/status/2087089160326881596 |
 | high | new_event_candidate | new | event | イベント候補「生歌・生演奏のお囃子会による盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生歌・生演奏のお囃子会による盆踊り, 皆で盆踊り | 生歌・生演奏のお囃子会による盆踊り 盆踊り; 皆で盆踊り 盆踊り; 広見公民センター 盆踊り; 岐阜県関市広見811-1 盆踊り | https://x.com/maniadocosplay/status/2076149918750875985 |
 | high | new_event_candidate | new | event | イベント候補「生演奏で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生演奏で盆踊り | 生演奏で盆踊り 盆踊り; ソーラン節 盆踊り | https://x.com/sakae_yokohama/status/2086721717632974952 |
 | high | new_event_candidate | new | event | イベント候補「生演奏の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生演奏の盆踊り | 生演奏の盆踊り 盆踊り; 中継お送りしました 盆踊り; 空気を体感 盆踊り | https://x.com/AIRG_kinapa/status/2083085666964156803 |
@@ -3718,6 +3837,7 @@
 | high | new_event_candidate | new | event | イベント候補「盆踊り練習会を開催しました」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊り練習会を開催しました, 五社音頭 | 盆踊り練習会を開催しました 盆踊り; 五社音頭 盆踊り; 佐野踊り 盆踊り; 五社音頭 盆踊り | https://x.com/m_sh_30171/status/2069642686064402768 |
 | high | new_event_candidate | new | event | イベント候補「盆踊り＆花火体験」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊り＆花火体験 | 盆踊り＆花火体験 盆踊り | https://x.com/a_hitsujigaoka/status/2086632221184848293 |
 | high | new_event_candidate | new | event | イベント候補「目の 盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 目の 盆おどり | 目の 盆おどり 盆踊り | https://x.com/sodegauradanchi/status/2082031974076891261 |
+| high | new_event_candidate | new | event | イベント候補「目の前の富士見大通りでは「市民盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 目の前の富士見大通りでは「市民盆おどり, 市民盆おどり | 目の前の富士見大通りでは「市民盆おどり 盆踊り; 市民盆おどり 盆踊り; 秋田県横手市中央町8-12 盆踊り | https://x.com/yokote_kanko/status/2087408431456244180 |
 | high | new_event_candidate | new | event | イベント候補「目黒区の明顕山祐天寺で開催される夏の風物詩「み魂まつり子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 目黒区の明顕山祐天寺で開催される夏の風物詩「み魂まつり子ども盆踊り, み魂まつり子ども盆踊り大会 | 目黒区の明顕山祐天寺で開催される夏の風物詩「み魂まつり子ども盆踊り 盆踊り; み魂まつり子ども盆踊り大会 盆踊り | https://x.com/m2tokyo3p/status/2078032447418306954 |
 | high | new_event_candidate | new | event | イベント候補「直ぐに本願寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 直ぐに本願寺納涼盆踊り | 直ぐに本願寺納涼盆踊り 盆踊り | https://x.com/Komakikumi93/status/2084563644730523755 |
 | high | new_event_candidate | new | event | イベント候補「相之川自治会さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 相之川自治会さんの盆踊り | 相之川自治会さんの盆踊り 盆踊り | https://x.com/le_messianique/status/2083893146887598215 |
@@ -3734,9 +3854,9 @@
 | high | new_event_candidate | new | event | イベント候補「石神井公園での灯篭流しの夕べや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 石神井公園での灯篭流しの夕べや盆踊り | 石神井公園での灯篭流しの夕べや盆踊り 盆踊り | https://x.com/reikakurata/status/2083725029108527136 |
 | high | new_event_candidate | new | event | イベント候補「砧町町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 砧町町会の盆踊り, いよいよ今週末が砧町町会の盆踊り | 砧町町会の盆踊り 盆踊り; いよいよ今週末が砧町町会の盆踊り 盆踊り | https://x.com/yuaitiiki/status/2077175625778114927 |
 | high | new_event_candidate | new | event | イベント候補「砧社会福祉法人友愛十字会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 砧社会福祉法人友愛十字会 盆踊り | 砧社会福祉法人友愛十字会 盆踊り 盆踊り | https://x.com/MvFteXpSUUi8WCd/status/2067181604464898277 |
-| high | new_event_candidate | new | event | イベント候補「碑文谷公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 碑文谷公園盆踊り, 今年も碑文谷公園盆踊り, -25 碑文谷公園盆踊り大会 | 碑文谷公園盆踊り 盆踊り; 今年も碑文谷公園盆踊り 盆踊り | https://x.com/take_a_chance23/status/2081322111566856246 |
 | high | new_event_candidate | new | event | イベント候補「祈りとにぎわいが響き合う 石手寺 大施餓鬼会 奉納盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祈りとにぎわいが響き合う 石手寺 大施餓鬼会 奉納盆踊り, 献灯や盆踊り | 祈りとにぎわいが響き合う 石手寺 大施餓鬼会 奉納盆踊り 盆踊り; 献灯や盆踊り 盆踊り; 石手寺 境内（松山市石手2丁目 盆踊り | https://x.com/ishitejitemple/status/2075836657262330005 |
 | high | new_event_candidate | new | event | イベント候補「祐天寺みたま祭り 子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祐天寺みたま祭り 子ども盆踊り | 祐天寺みたま祭り 子ども盆踊り 盆踊り; 東京音頭 盆踊り; 3年前は東京音頭 盆踊り | https://x.com/bon__juu/status/2077993662198559001 |
+| high | new_event_candidate | new | event | イベント候補「神代団地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神代団地盆踊り | 神代団地盆踊り 盆踊り | https://x.com/ShirotaKOUBO/status/2087413323432378765 |
 | high | new_event_candidate | new | event | イベント候補「神戸市で開催の「第12回トア公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神戸市で開催の「第12回トア公園盆踊り, トア公園盆踊り大会 | 神戸市で開催の「第12回トア公園盆踊り 盆踊り; トア公園盆踊り大会 盆踊り; 中央区下山手通3丁目トア公園周辺 盆踊り | https://x.com/jp501st/status/2079038801876521183 |
 | high | new_event_candidate | new | event | イベント候補「神楽坂と下落合の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神楽坂と下落合の盆踊り | 神楽坂と下落合の盆踊り 盆踊り | https://x.com/OkumotoYuri/status/2078871128966402320 |
 | high | new_event_candidate | new | event | イベント候補「神田公園と神田明神で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田公園と神田明神で盆踊り | 神田公園と神田明神で盆踊り 盆踊り | https://x.com/inariyu_kanda/status/2085975523050832091 |
@@ -3775,11 +3895,13 @@
 | high | new_event_candidate | new | event | イベント候補「箱根湯本納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 箱根湯本納涼盆踊り | 箱根湯本納涼盆踊り 盆踊り | https://x.com/EMIKO_REDROSE/status/2078712620799131701 |
 | high | new_event_candidate | new | event | イベント候補「築地の松島橋公園の 築地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地の松島橋公園の 築地盆踊り | 築地の松島橋公園の 築地盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2067309207481974800 |
 | high | new_event_candidate | new | event | イベント候補「築地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地の盆踊り | 築地の盆踊り 盆踊り | https://x.com/naoko_onoue/status/2079103050388733980 |
+| high | new_event_candidate | new | event | イベント候補「築地六丁目南町会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地六丁目南町会納涼盆踊り | 築地六丁目南町会納涼盆踊り 盆踊り; 築地魚河岸 海幸橋棟前 波除神社側 盆踊り | https://x.com/tsukijichousei/status/2087420354759458994 |
 | high | new_event_candidate | new | event | イベント候補「築地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地盆踊り | 築地盆踊り 盆踊り | https://x.com/kagayaki1ban/status/2079079454777966593 |
 | high | new_event_candidate | new | event | イベント候補「篠崎浅間神社 「上篠崎自治会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 篠崎浅間神社 「上篠崎自治会盆踊り, 上篠崎自治会盆踊り | 篠崎浅間神社 「上篠崎自治会盆踊り 盆踊り; 上篠崎自治会盆踊り 盆踊り | https://x.com/wadaikoCH/status/2079548919630143714 |
 | high | new_event_candidate | new | event | イベント候補「篠崎浅間神社 「上篠崎自治会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 篠崎浅間神社 「上篠崎自治会盆踊り, 上篠崎自治会盆踊り | 篠崎浅間神社 「上篠崎自治会盆踊り 盆踊り; 上篠崎自治会盆踊り 盆踊り | https://x.com/wadaikoCH/status/2079503225284403708 |
 | high | new_event_candidate | new | event | イベント候補「米沢駅前仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 米沢駅前仮装盆踊り, キャラや芸能人などに仮装をして盆踊り | 米沢駅前仮装盆踊り 盆踊り; キャラや芸能人などに仮装をして盆踊り 盆踊り | https://x.com/kyoutai_seisaku/status/2086727748358467679 |
 | high | new_event_candidate | new | event | イベント候補「約2時間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 約2時間盆踊り | 約2時間盆踊り 盆踊り; 片付けをやりましたところ 盆踊り | https://x.com/nun_lily/status/2087004878220730798 |
+| high | new_event_candidate | new | event | イベント候補「約40年ぶりに佐竹商店街の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 約40年ぶりに佐竹商店街の盆踊り | 約40年ぶりに佐竹商店街の盆踊り 盆踊り | https://x.com/ohmuland/status/2087358387034177834 |
 | high | new_event_candidate | new | event | イベント候補「紅梅小学校にて徳丸三ツ和会・徳丸平和会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 紅梅小学校にて徳丸三ツ和会・徳丸平和会の盆踊り, 徳丸地域から各町会の皆さんが浴衣を来て盆踊り | 紅梅小学校にて徳丸三ツ和会・徳丸平和会の盆踊り 盆踊り; 徳丸地域から各町会の皆さんが浴衣を来て盆踊り 盆踊り | https://x.com/nakayamashizu/status/2086055048791077267 |
 | high | new_event_candidate | new | event | イベント候補「納涼 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼 盆踊り, さやか公園で開催される「納涼 盆踊り, 納涼 盆踊り大会 | 納涼 盆踊り 盆踊り; さやか公園で開催される「納涼 盆踊り 盆踊り | https://x.com/sayamabico/status/2085307137920762334 |
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り | 納涼盆踊り 盆踊り; 区立西坂公園 盆踊り | https://x.com/Naxako75/status/2086471147936510172 |
@@ -3806,7 +3928,6 @@
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, あやめ第二公園や有馬小で開催されていた近隣町会さんの盆踊り | 納涼盆踊り 盆踊り; あやめ第二公園や有馬小で開催されていた近隣町会さんの盆踊り 盆踊り | https://x.com/kamiya_chuo/status/2081025818067951698 |
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, 納涼盆踊り大会 | 納涼盆踊り 盆踊り; 納涼盆踊り大会 盆踊り; どんな踊り 盆踊り | https://x.com/hitomi_wachi/status/2080982824396664894 |
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, 当日は皆様と一緒に盆踊り | 納涼盆踊り 盆踊り; 当日は皆様と一緒に盆踊り 盆踊り; お会い出来ることを楽しみにしております 盆踊り; 砧8丁目児童遊園 盆踊り | https://x.com/sfidafc/status/2079491697403482590 |
-| high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, せっかく盆踊り | 納涼盆踊り 盆踊り; せっかく盆踊り 盆踊り | https://x.com/koguchiyoko/status/2079388610655318093 |
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り | 納涼盆踊り 盆踊り | https://x.com/ohno_discovery/status/2079217947558776972 |
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り | 納涼盆踊り 盆踊り | https://x.com/yukitatematsu/status/2078856389666230547 |
 | high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り | 納涼盆踊り 盆踊り; 佃一丁目中央通り 盆踊り | https://x.com/tukishimanagaya/status/2078418393661833301 |
@@ -3826,10 +3947,12 @@
 | high | new_event_candidate | new | event | イベント候補「綾瀬東町会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 綾瀬東町会の納涼盆踊り, 最後まで盆踊り | 綾瀬東町会 納涼盆踊り 盆踊り; 綾瀬東町会の納涼盆踊り 盆踊り | https://x.com/hasegawa_takako/status/2083182115617923141 |
 | high | new_event_candidate | new | event | イベント候補「緑区盆踊り大会・夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 緑区盆踊り大会・夏祭り, 緑区盆踊り大会・夏祭りのご紹介 | 緑区盆踊り大会・夏祭り 盆踊り; 緑区盆踊り大会・夏祭りのご紹介 盆踊り | https://x.com/MidoriNagoya/status/2082994660465914205 |
 | high | new_event_candidate | new | event | イベント候補「緑幸盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 緑幸盆踊り, 緑幸盆踊りの夕べ | 緑幸盆踊り 盆踊り; 緑幸盆踊りの夕べ 盆踊り | https://x.com/KouhouRyokkou/status/2081704049339204094 |
+| high | new_event_candidate | new | event | イベント候補「緑道盆踊り大会 18時から20時 7条買物公園 前半こども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 緑道盆踊り大会 18時から20時 7条買物公園 前半こども盆踊り, 後半大人盆踊り | 緑道盆踊り大会 18時から20時 7条買物公園 前半こども盆踊り 盆踊り; 後半大人盆踊り 盆踊り | https://x.com/ms06ss2_ms06ss/status/2087403502272430495 |
 | high | new_event_candidate | new | event | イベント候補「練馬区お祭り】 江古田斎場での栄町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練馬区お祭り】 江古田斎場での栄町盆踊り, 練馬音頭 | 練馬区お祭り】 江古田斎場での栄町盆踊り 盆踊り; 練馬音頭 盆踊り; 練馬音頭 盆踊り | https://x.com/koguchiyoko/status/2086310806770307259 |
 | high | new_event_candidate | new | event | イベント候補「縁日まつりの中で開催される「酒田の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 縁日まつりの中で開催される「酒田の盆踊り, 今年は甚句流しの前に酒田の盆踊り, 酒田の盆踊り2026 | 縁日まつりの中で開催される「酒田の盆踊り 盆踊り; 今年は甚句流しの前に酒田の盆踊り 盆踊り; 花笠音頭 盆踊り; 酒田音頭・花笠音頭 盆踊り | https://x.com/mokkedanosakata/status/2083463097659097105 |
 | high | new_event_candidate | new | event | イベント候補「縁日や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 縁日や盆踊り | 縁日や盆踊り 盆踊り | https://x.com/akiraoomatsu/status/2085696879225082054 |
 | high | new_event_candidate | new | event | イベント候補「縁日チケット500円 十条駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 縁日チケット500円 十条駅前盆踊り | 縁日チケット500円 十条駅前盆踊り 盆踊り | https://x.com/jujonakahara1/status/2081691162432450562 |
+| high | new_event_candidate | new | event | イベント候補「縁日マルシェや伝統の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 縁日マルシェや伝統の盆踊り, 伝統の盆踊り | 縁日マルシェや伝統の盆踊り 盆踊り; 伝統の盆踊り 盆踊り; すぐそば 盆踊り; 岡山県真庭市 久世 打上花火 20:30頃〜 盆踊り | https://x.com/iko_yo_trip/status/2087388611486560314 |
 | high | new_event_candidate | new | event | イベント候補「美和音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 美和音頭 | 美和音頭 盆踊り; 美和運動公園 盆踊り; 美和音頭 盆踊り | https://x.com/kenpoku_2/status/2085616544315531379 |
 | high | new_event_candidate | new | event | イベント候補「群馬県伊勢崎駅前でアニメソング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 群馬県伊勢崎駅前でアニメソング盆踊り | 群馬県伊勢崎駅前でアニメソング盆踊り 盆踊り | https://x.com/isesakipop/status/2077243619422122040 |
 | high | new_event_candidate | new | event | イベント候補「群馬県伊勢崎駅前でアニメソング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 群馬県伊勢崎駅前でアニメソング盆踊り | 群馬県伊勢崎駅前でアニメソング盆踊り 盆踊り | https://x.com/isesakipop/status/2075175584330879258 |
@@ -3864,6 +3987,7 @@
 | high | new_event_candidate | new | event | イベント候補「自治会組長の仕事で地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会組長の仕事で地元の盆踊り | 自治会組長の仕事で地元の盆踊り 盆踊り | https://x.com/aomurapants/status/2086023620846035379 |
 | high | new_event_candidate | new | event | イベント候補「自衛隊十条駐屯地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自衛隊十条駐屯地盆踊り | 自衛隊十条駐屯地盆踊り 盆踊り | https://x.com/jujonakahara1/status/2071528030485594126 |
 | high | new_event_candidate | new | event | イベント候補「舞台挨拶からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舞台挨拶からの盆踊り | 舞台挨拶からの盆踊り 盆踊り | https://x.com/Ya7951Y/status/2081606556173652038 |
+| high | new_event_candidate | new | event | イベント候補「舟渡ホール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舟渡ホール盆踊り | 舟渡ホール盆踊り 盆踊り | https://x.com/takasho06130613/status/2087174045645119510 |
 | high | new_event_candidate | new | event | イベント候補「舟渡ホール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舟渡ホール盆踊り | 舟渡ホール盆踊り 盆踊り | https://x.com/takasho06130613/status/2071156744643039572 |
 | high | new_event_candidate | new | event | イベント候補「舟渡ホール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舟渡ホール盆踊り | 舟渡ホール盆踊り 盆踊り | https://x.com/takasho06130613/status/2070620211750031704 |
 | high | new_event_candidate | new | event | イベント候補「舟渡小学校にて舟渡町会が開催している板橋盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舟渡小学校にて舟渡町会が開催している板橋盆踊り | 舟渡小学校にて舟渡町会が開催している板橋盆踊り 盆踊り | https://x.com/nakayamashizu/status/2080955546291839306 |
@@ -3882,6 +4006,7 @@
 | high | new_event_candidate | new | event | イベント候補「花畑地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花畑地区の盆踊り, 日(土)花畑公園で花畑地区納涼盆踊り, 子ども盆踊り | 花畑地区の盆踊り 盆踊り; 日(土)花畑公園で花畑地区納涼盆踊り 盆踊り | https://x.com/adachi_city/status/2083063419033583664 |
 | high | new_event_candidate | new | event | イベント候補「花畑地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花畑地区の盆踊り, 日(土)に花畑公園で花畑地区納涼盆踊り, 子ども盆踊り | 花畑地区の盆踊り 盆踊り; 日(土)に花畑公園で花畑地区納涼盆踊り 盆踊り | https://x.com/adachi_city/status/2081961083590586446 |
 | high | new_event_candidate | new | event | イベント候補「花畑地区納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花畑地区納涼盆踊り, 地域の夏の風物詩である盆踊り | 花畑地区納涼盆踊り 盆踊り; 地域の夏の風物詩である盆踊り 盆踊り; 花畑公園 盆踊り | https://x.com/AAA_senju/status/2082424648336093297 |
+| high | new_event_candidate | new | event | イベント候補「芽室町納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 芽室町納涼盆踊り | 芽室町納涼盆踊り 盆踊り; 一覧も更新🎇 盆踊り | https://x.com/o_tantei/status/2087423022366138594 |
 | high | new_event_candidate | new | event | イベント候補「苅田駅前 善立寺十九観音ご開帳 提区自治会 十九観音盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 苅田駅前 善立寺十九観音ご開帳 提区自治会 十九観音盆踊り | 苅田駅前 善立寺十九観音ご開帳 提区自治会 十九観音盆踊り 盆踊り | https://x.com/kandakankou/status/2077545681250931167 |
 | high | new_event_candidate | new | event | イベント候補「若宮二丁目町会（吉岡光好会長）の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 若宮二丁目町会（吉岡光好会長）の納涼盆踊り | 若宮二丁目町会（吉岡光好会長）の納涼盆踊り 盆踊り | https://x.com/onokatsunori/status/2084617581542232228 |
 | high | new_event_candidate | new | event | イベント候補「茂田井武によると「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 茂田井武によると「盆踊り | 茂田井武によると「盆踊り 盆踊り | https://x.com/83gocco/status/2076946613701054695 |
@@ -3910,7 +4035,9 @@
 | high | new_event_candidate | new | event | イベント候補「虹の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 虹の盆踊り | 虹の盆踊り 盆踊り | https://x.com/miisansongs/status/2086223825621135628 |
 | high | new_event_candidate | new | event | イベント候補「蚤の市・屋台・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蚤の市・屋台・盆踊り | 蚤の市・屋台・盆踊り 盆踊り | https://x.com/ishitejitemple/status/2079133153332228439 |
 | high | new_event_candidate | new | event | イベント候補「蛍池盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蛍池盆踊り | 蛍池盆踊り 盆踊り | https://x.com/KIYOKA_rose1130/status/2079486480054161510 |
+| high | new_event_candidate | new | event | イベント候補「行啓通ふれあい盆踊りまつり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行啓通ふれあい盆踊りまつり, 行啓通商店街で開催された「2026 行啓通ふれあい盆踊りまつり, 子供盆踊りと北海盆踊り | 行啓通ふれあい盆踊りまつり 盆踊り; 行啓通商店街で開催された「2026 行啓通ふれあい盆踊りまつり 盆踊り | https://x.com/Daisen1989/status/2087376327133601967 |
 | high | new_event_candidate | new | event | イベント候補「街のあちこちで太鼓の威勢良い音や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 街のあちこちで太鼓の威勢良い音や盆踊り | 街のあちこちで太鼓の威勢良い音や盆踊り 盆踊り | https://x.com/sagayama_tomoe/status/2085892834281058690 |
+| high | new_event_candidate | new | event | イベント候補「街の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 街の盆踊り | 街の盆踊り 盆踊り | https://x.com/riehas/status/2087411201651478866 |
 | high | new_event_candidate | new | event | イベント候補「衣装も来ました 二枚目 近所のお友達と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 衣装も来ました 二枚目 近所のお友達と盆踊り | 衣装も来ました 二枚目 近所のお友達と盆踊り 盆踊り | https://x.com/mediasfm/status/2084108471759446452 |
 | high | new_event_candidate | new | event | イベント候補「西台北町会さんの納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西台北町会さんの納涼盆踊り | 西台北町会さんの納涼盆踊り 盆踊り; 〜♪と 盆踊り | https://x.com/_OnoYuriko/status/2081402922731188351 |
 | high | new_event_candidate | new | event | イベント候補「西台北町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西台北町会の盆踊り | 西台北町会の盆踊り 盆踊り | https://x.com/shibakayoko/status/2082702555810001236 |
@@ -3957,6 +4084,7 @@
 | high | new_event_candidate | new | event | イベント候補「貫井けやき公園で「貫井坂下納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 貫井けやき公園で「貫井坂下納涼盆踊り, 貫井坂下納涼盆踊り, 貫井坂下納涼盆踊り大会 | 貫井けやき公園で「貫井坂下納涼盆踊り 盆踊り; 貫井坂下納涼盆踊り 盆踊り; 貫井けやき公園 盆踊り | https://x.com/musako_higako/status/2085687685629317426 |
 | high | new_event_candidate | new | event | イベント候補「貫井けやき公園で開催された「貫井坂下納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 貫井けやき公園で開催された「貫井坂下納涼盆踊り, 今年で53回目の開催となるようです メインとなる盆踊り, 多くの人が盆踊り | 貫井けやき公園で開催された「貫井坂下納涼盆踊り 盆踊り; 今年で53回目の開催となるようです メインとなる盆踊り 盆踊り | https://x.com/musako_higako/status/2086381976441749552 |
 | high | new_event_candidate | new | event | イベント候補「貫井坂下納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 貫井坂下納涼盆踊り | 貫井坂下納涼盆踊り 盆踊り | https://x.com/musako_higako/status/2085973961612095756 |
+| high | new_event_candidate | new | event | イベント候補「貫井坂下自治会連合会の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 貫井坂下自治会連合会の納涼盆踊り | 貫井坂下自治会連合会の納涼盆踊り 盆踊り | https://x.com/ohta_hironori/status/2087127404724834573 |
 | high | new_event_candidate | new | event | イベント候補「賑やかな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 賑やかな盆踊り | 賑やかな盆踊り 盆踊り; どまり場」さんの揚げ餅やワッフル 盆踊り | https://x.com/gotou_masami/status/2081218429080789199 |
 | high | new_event_candidate | new | event | イベント候補「赤堤盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 赤堤盆踊り, 赤堤盆踊り2日目 7／19 | 赤堤盆踊り 盆踊り; 赤堤盆踊り2日目 7／19 盆踊り | https://x.com/akihiko_taka/status/2079015045191889385 |
 | high | new_event_candidate | new | event | イベント候補「超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 超寝転ん盆踊り | 超寝転ん盆踊り 盆踊り | https://x.com/tanukinoponcafe/status/2087037853146714459 |
@@ -4022,6 +4150,7 @@
 | high | new_event_candidate | new | event | イベント候補「野沢龍雲寺 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 野沢龍雲寺 納涼盆踊り | 野沢龍雲寺 納涼盆踊り 盆踊り; は屋台も始まり 盆踊り | https://x.com/tsurumikengo/status/2083131530453627266 |
 | high | new_event_candidate | new | event | イベント候補「野見自治区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 野見自治区盆踊り | 野見自治区盆踊り 盆踊り | https://x.com/87EightySeven87/status/2083459602398502950 |
 | high | new_event_candidate | new | event | イベント候補「金 武将隊盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金 武将隊盆踊り | 金 武将隊盆踊り 盆踊り | https://x.com/midouyamaseiren/status/2071211874704929216 |
+| high | new_event_candidate | new | event | イベント候補「金・土に行われるトレッサ横浜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金・土に行われるトレッサ横浜の盆踊り | 金・土に行われるトレッサ横浜の盆踊り 盆踊り | https://x.com/odori2024minato/status/2087142514751082975 |
 | high | new_event_candidate | new | event | イベント候補「金沢エムザ3階屋上ではむさし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金沢エムザ3階屋上ではむさし盆踊り, ふれあい盆踊り | 金沢エムザ3階屋上ではむさし盆踊り 盆踊り; ふれあい盆踊り 盆踊り | https://x.com/kanazawayado/status/2083454828693553231 |
 | high | new_event_candidate | new | event | イベント候補「金沢エムザ屋上で開催された「むさし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金沢エムザ屋上で開催された「むさし盆踊り, むさし盆踊り | 金沢エムザ屋上で開催された「むさし盆踊り 盆踊り; むさし盆踊り 盆踊り | https://x.com/odake_kokumin/status/2083560006923030903 |
 | high | new_event_candidate | new | event | イベント候補「金沢エムザ） 石引ゲバゲバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金沢エムザ） 石引ゲバゲバ盆踊り | 金沢エムザ） 石引ゲバゲバ盆踊り 盆踊り | https://x.com/kanazawayado/status/2082662462718189910 |
@@ -4055,8 +4184,10 @@
 | high | new_event_candidate | new | event | イベント候補「開催の元刈谷地区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催の元刈谷地区盆踊り | 開催の元刈谷地区盆踊り 盆踊り | https://x.com/SADAchansan007/status/2086253590843449454 |
 | high | new_event_candidate | new | event | イベント候補「開催の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催の盆踊り | 開催の盆踊り 盆踊り | https://x.com/irohanishichiba/status/2079772533671489676 |
 | high | new_event_candidate | new | event | イベント候補「開催メタル盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催メタル盆踊り | 開催メタル盆踊り 盆踊り | https://x.com/Dr_snaxx_Gessy/status/2087038479129784634 |
+| high | new_event_candidate | new | event | イベント候補「開催予定だった高田熊野神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催予定だった高田熊野神社の盆踊り | 開催予定だった高田熊野神社の盆踊り 盆踊り | https://x.com/FujikoKawaguchi/status/2087362137635393772 |
 | high | new_event_candidate | new | event | イベント候補「開成山公園で初めての盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開成山公園で初めての盆踊り, 涼しくなった夕方から夜にかけて開成山公園が盆踊り, 開成山公園・夏！BONおどり-盆踊り- | 開成山公園で初めての盆踊り 盆踊り; 涼しくなった夕方から夜にかけて開成山公園が盆踊り 盆踊り; BONおどり 盆踊り | https://x.com/visit_koriyama/status/2081296281256022131 |
 | high | new_event_candidate | new | event | イベント候補「関町鶴寿会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 関町鶴寿会盆踊り | 関町鶴寿会盆踊り 盆踊り | https://x.com/sekikita45/status/2079081792104284591 |
+| high | new_event_candidate | new | event | イベント候補「関西テレビ「newsランナー」の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 関西テレビ「newsランナー」の盆踊り | 関西テレビ「newsランナー」の盆踊り 盆踊り | https://x.com/stardustkawachi/status/2087379404146282544 |
 | high | new_event_candidate | new | event | イベント候補「阿佐ヶ谷バリ舞踊と同じ日程で北新宿盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 阿佐ヶ谷バリ舞踊と同じ日程で北新宿盆踊り | 阿佐ヶ谷バリ舞踊と同じ日程で北新宿盆踊り 盆踊り | https://x.com/pantaloon/status/2075376570013999362 |
 | high | new_event_candidate | new | event | イベント候補「隅田川花火大会 近隣町会さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 隅田川花火大会 近隣町会さんの盆踊り | 隅田川花火大会 近隣町会さんの盆踊り 盆踊り | https://x.com/kamiya_chuo/status/2081027762471793100 |
 | high | new_event_candidate | new | event | イベント候補「隣の人が自治会の顧問で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 隣の人が自治会の顧問で盆踊り | 隣の人が自治会の顧問で盆踊り 盆踊り | https://x.com/_ya0ji1ma27/status/2084549631887950095 |
@@ -4071,6 +4202,7 @@
 | high | new_event_candidate | new | event | イベント候補「青年会にて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青年会にて盆踊り | 青年会にて盆踊り 盆踊り; 楽しく踊り 盆踊り | https://x.com/furuyama4486/status/2086369645007929391 |
 | high | new_event_candidate | new | event | イベント候補「青柳は途中豪雨にあいながらも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青柳は途中豪雨にあいながらも盆踊り, 親和町会は先週の稲荷盆踊り | 青柳は途中豪雨にあいながらも盆踊り 盆踊り; 親和町会は先週の稲荷盆踊り 盆踊り | https://x.com/n_mika_1125/status/2083382644742750580 |
 | high | new_event_candidate | new | event | イベント候補「音頭しばりヽ(=´▽`=)ﾉﾄﾞﾄﾞﾄﾞﾝ」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音頭しばりヽ(=´▽`=)ﾉﾄﾞﾄﾞﾄﾞﾝ | 音頭しばりヽ(=´▽`=)ﾉﾄﾞﾄﾞﾄﾞﾝ 盆踊り; 大好きな音頭 盆踊り | https://x.com/bibimoku/status/2085254246124106107 |
+| high | new_event_candidate | new | event | イベント候補「風街こども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 風街こども盆踊り | 風街こども盆踊り 盆踊り | https://x.com/rina_fan731/status/2087379477676626334 |
 | high | new_event_candidate | new | event | イベント候補「風街こども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 風街こども盆踊り | 風街こども盆踊り 盆踊り | https://x.com/rina_fan731/status/2086309053765222543 |
 | high | new_event_candidate | new | event | イベント候補「飛鳥山自治会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飛鳥山自治会 盆踊り, 醸造試験場跡地公園で開催された盆踊り | 飛鳥山自治会 盆踊り 盆踊り; 醸造試験場跡地公園で開催された盆踊り 盆踊り | https://x.com/y_kana620/status/2081018876645761156 |
 | high | new_event_candidate | new | event | イベント候補「飛鳥山自治会と西ヶ原東部自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飛鳥山自治会と西ヶ原東部自治会の盆踊り, 皆さんと一緒に盆踊り | 飛鳥山自治会と西ヶ原東部自治会の盆踊り 盆踊り; 皆さんと一緒に盆踊り 盆踊り | https://x.com/SILMAwmflM8llnG/status/2081159613194625262 |
@@ -4292,7 +4424,6 @@
 | high | new_event_candidate | new | event | イベント候補「立川三丁目町会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 立川三丁目町会 盆踊り | 立川三丁目町会 盆踊り 墨田区 盆踊り | https://x.com/ryougokumotsuni/status/2083922423272112482 |
 | high | new_event_candidate | new | event | イベント候補「緑小学校地区連合盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 緑小学校地区連合盆踊り, 墨田区では学校単位の連合子ども会などが主催する盆踊り, 同じ日にお邪魔した二つの「学校地区連合盆踊り | 緑小学校地区連合盆踊り 墨田区 盆踊り; 墨田区では学校単位の連合子ども会などが主催する盆踊り 墨田区 盆踊り; 皆さんが踊ります 墨田区 盆踊り | https://x.com/sakaiyukako/status/2079472103699665187 |
 | high | new_event_candidate | new | event | イベント候補「1件目 萩中神社盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1件目 萩中神社盆踊り, 去年の盆踊り | 1件目 萩中神社盆踊り 大田区 盆踊り; 去年の盆踊り 大田区 盆踊り | https://x.com/mimi33yuyu26na/status/2071111526120112263 |
-| high | new_event_candidate | new | event | イベント候補「これまで現地へ行った盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これまで現地へ行った盆踊り | これまで現地へ行った盆踊り 大田区 盆踊り | https://x.com/Itiriamehogose/status/2083797874421481888 |
 | high | new_event_candidate | new | event | イベント候補「夜活動は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜活動は盆踊り, 馬込の北野神社青年会の盆踊り | 夜活動は盆踊り 大田区 盆踊り; 馬込の北野神社青年会の盆踊り 大田区 盆踊り | https://x.com/idomasae/status/2075911677233803562 |
 | high | new_event_candidate | new | event | イベント候補「沼部駅密蔵院 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 沼部駅密蔵院 盆踊り | 沼部駅密蔵院 盆踊り 大田区 盆踊り | https://x.com/sakura__miyavi/status/2083553742767657286 |
 | high | new_event_candidate | new | event | イベント候補「羽田神社 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 羽田神社 納涼盆踊り, 月で盆踊り | 羽田神社 納涼盆踊り 大田区 盆踊り; 月で盆踊り 大田区 盆踊り; ダンシングヒーロー 大田区 盆踊り; スッキリ音頭 大田区 盆踊り | https://x.com/MrApple_ByCandy/status/2076941856408236202 |
@@ -4344,6 +4475,12 @@
 | high | new_event_candidate | new | event | イベント候補「ちろんメインは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちろんメインは盆踊り | ちろんメインは盆踊り 杉並区 盆踊り; お会いしましょう😊 杉並区 盆踊り | https://x.com/Matsumoto_501/status/2081999337375371775 |
 | high | new_event_candidate | new | event | イベント候補「梅里中央公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 梅里中央公園の盆踊り | 梅里中央公園の盆踊り 杉並区 盆踊り | https://x.com/Matsumoto_501/status/2083587747047252104 |
 | high | new_event_candidate | new | event | イベント候補「梅里中央公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 梅里中央公園の盆踊り | 梅里中央公園の盆踊り 杉並区 盆踊り; 見かけたらぜひお気軽にお声掛けください 杉並区 盆踊り | https://x.com/Matsumoto_501/status/2083178673646227499 |
+| high | new_event_candidate | new | event | イベント候補「1ヶ月以上振りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1ヶ月以上振りの盆踊り | 1ヶ月以上振りの盆踊り 東京都品川区 盆踊り | https://x.com/sakaeya_h/status/2076572834504257672 |
+| high | new_event_candidate | new | event | イベント候補「これまで現地へ行った盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これまで現地へ行った盆踊り | これまで現地へ行った盆踊り 東京都目黒区 盆踊り | https://x.com/Itiriamehogose/status/2083797874421481888 |
+| high | new_event_candidate | new | event | イベント候補「八雲小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八雲小学校の盆踊り, 24・25開催の碑文谷公園盆踊り | 八雲小学校の盆踊り 東京都目黒区 盆踊り; 24・25開催の碑文谷公園盆踊り 東京都目黒区 盆踊り | https://x.com/hama_yoko_/status/2078662722259177484 |
+| high | new_event_candidate | new | event | イベント候補「碑文谷公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も碑文谷公園盆踊り | 碑文谷公園盆踊り 東京都目黒区 盆踊り; 今年も碑文谷公園盆踊り 東京都目黒区 盆踊り | https://x.com/take_a_chance23/status/2081322111566856246 |
+| high | new_event_candidate | new | event | イベント候補「夜は豊玉第一町会の北新井公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は豊玉第一町会の北新井公園盆踊り | 夜は豊玉第一町会の北新井公園盆踊り 東京都練馬区 盆踊り | https://x.com/satojun1974/status/2078629473822642606 |
+| high | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, せっかく盆踊り | 納涼盆踊り 東京都練馬区 盆踊り; せっかく盆踊り 東京都練馬区 盆踊り | https://x.com/koguchiyoko/status/2079388610655318093 |
 | high | new_event_candidate | new | event | イベント候補「そして19時からは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして19時からは盆踊り | そして19時からは盆踊り 松戸市 盆踊り | https://x.com/matsudokankou1/status/2078734577397551112 |
 | high | new_event_candidate | new | event | イベント候補「松戸駅（千葉県）に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松戸駅（千葉県）に 盆踊り, ラストサマーフェス盆おどり | 松戸駅（千葉県）に 盆踊り 松戸市 盆踊り; ラストサマーフェス盆おどり 松戸市 盆踊り | https://x.com/masako0327/status/2083091511160496535 |
 | high | new_event_candidate | new | event | イベント候補「2(日) 北野小学校盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2(日) 北野小学校盆踊り | 2(日) 北野小学校盆踊り 板橋区 盆踊り | https://x.com/takasho06130613/status/2077305138872779158 |
@@ -4456,6 +4593,7 @@
 | medium | new_event_candidate | new | event | イベント候補「10の名古屋駅前の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10の名古屋駅前の盆踊り | 10の名古屋駅前の盆踊り 盆踊り | https://x.com/takemura_1993/status/2079103088275984566 |
 | medium | new_event_candidate | new | event | イベント候補「10まで】 来月15日に初開催される「旭川DJ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10まで】 来月15日に初開催される「旭川DJ盆踊り, 北海道の子供盆おどり, 旭川DJ盆踊り | 10まで】 来月15日に初開催される「旭川DJ盆踊り 盆踊り; 北海道の子供盆おどり 盆踊り | https://x.com/actnowjp/status/2081937699762520100 |
 | medium | new_event_candidate | new | event | イベント候補「10元気もらえる鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10元気もらえる鴨台盆踊り | 10元気もらえる鴨台盆踊り 盆踊り | https://x.com/hideshanbonbon/status/2075773675757081087 |
+| medium | new_event_candidate | new | event | イベント候補「10日に駒林会館で開催された 駒林自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 10日に駒林会館で開催された 駒林自治会の盆踊り | 10日に駒林会館で開催された 駒林自治会の盆踊り 盆踊り | https://x.com/bonnodoriegao/status/2087120760997597386 |
 | medium | new_event_candidate | new | event | イベント候補「11は大河ドラマ館に秀吉様と家康様と十吾さん 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 11は大河ドラマ館に秀吉様と家康様と十吾さん 盆踊り | 11は大河ドラマ館に秀吉様と家康様と十吾さん 盆踊り 盆踊り | https://x.com/midouyamaseiren/status/2063918743848382782 |
 | medium | new_event_candidate | new | event | イベント候補「11南光台の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 11南光台の盆踊り, 南光台の盆踊り大会は台風で中止です | 11南光台の盆踊り 盆踊り; 南光台の盆踊り大会は台風で中止です 盆踊り | https://x.com/N1SpKRAVTuly5GD/status/2087004251646226775 |
 | medium | new_event_candidate | new | event | イベント候補「11日(土)・7月12日(日)に栄町の『南部公園』で「南部納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 11日(土)・7月12日(日)に栄町の『南部公園』で「南部納涼盆踊り, 南部納涼盆踊り大会 | 11日(土)・7月12日(日)に栄町の『南部公園』で「南部納涼盆踊り 盆踊り; 南部納涼盆踊り大会 盆踊り | https://x.com/TOKYO_Shuto634/status/2075734205552840857 |
@@ -4558,9 +4696,11 @@
 | medium | new_event_candidate | new | event | イベント候補「2（日）には大曽根小学校校庭で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2（日）には大曽根小学校校庭で盆踊り, 大曽根盆踊り, 日は盆踊り | 2（日）には大曽根小学校校庭で盆踊り 盆踊り; 大曽根盆踊り 盆踊り | https://x.com/hatohuruoosone8/status/2070710638478037336 |
 | medium | new_event_candidate | new | event | イベント候補「2（日）東水元みどり公園にて「東水元一丁目町会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2（日）東水元みどり公園にて「東水元一丁目町会 納涼盆踊り, 東水元一丁目町会 納涼盆踊り | 2（日）東水元みどり公園にて「東水元一丁目町会 納涼盆踊り 盆踊り; 東水元一丁目町会 納涼盆踊り 盆踊り | https://x.com/katsushika2shin/status/2083416439579455515 |
 | medium | new_event_candidate | new | event | イベント候補「30 【場所】淀川河川公園(西中島南方) 入場無料 日本の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30 【場所】淀川河川公園(西中島南方) 入場無料 日本の盆踊り | 30 【場所】淀川河川公園(西中島南方) 入場無料 日本の盆踊り 盆踊り; 淀川河川公園(西中島南方 盆踊り | https://x.com/Rabbit_san777/status/2064944112873455870 |
+| medium | new_event_candidate | new | event | イベント候補「300発の花火と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 300発の花火と盆踊り | 300発の花火と盆踊り 盆踊り | https://x.com/saitamafes/status/2087397598995104006 |
 | medium | new_event_candidate | new | event | イベント候補「300発の花火と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 300発の花火と盆踊り | 300発の花火と盆踊り 盆踊り | https://x.com/saitamafes/status/2086957622348124609 |
 | medium | new_event_candidate | new | event | イベント候補「30から 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30から 盆踊り | 30から 盆踊り 盆踊り | https://x.com/81YKAJIPev20591/status/2078391952341606436 |
 | medium | new_event_candidate | new | event | イベント候補「30から子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30から子ども盆踊り | 30から子ども盆踊り 盆踊り; 空知川河川運動公園 盆踊り | https://x.com/mlit_hkd_as/status/2085199192172253665 |
+| medium | new_event_candidate | new | event | イベント候補「30から木古内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30から木古内盆踊り | 30から木古内盆踊り 盆踊り; みそぎ公園 盆踊り; 鹿部漁港敷地内 盆踊り | https://x.com/mypl_hakodate/status/2087325010625237314 |
 | medium | new_event_candidate | new | event | イベント候補「30の「北コミde盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30の「北コミde盆踊り, 北コミde盆踊り祭 | 30の「北コミde盆踊り 盆踊り; 北コミde盆踊り祭 盆踊り; 生駒市北コミュニティセンターISTAはばたき 盆踊り; みんなで楽しく踊り 盆踊り | https://x.com/yama_circus/status/2086962095325933836 |
 | medium | new_event_candidate | new | event | イベント候補「30日（木）・31日（金） 西本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30日（木）・31日（金） 西本願寺の盆踊り, 20時40分 これが私には今年のシーズン初盆踊り | 30日（木）・31日（金） 西本願寺の盆踊り 盆踊り; 20時40分 これが私には今年のシーズン初盆踊り 盆踊り | https://x.com/okakeisan/status/2064371772783464881 |
 | medium | new_event_candidate | new | event | イベント候補「30自衛隊の盆踊り 自衛隊の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 30自衛隊の盆踊り 自衛隊の盆踊り | 30自衛隊の盆踊り 自衛隊の盆踊り 盆踊り | https://x.com/p_namafoot/status/2082039988435472682 |
@@ -4707,6 +4847,7 @@
 | medium | new_event_candidate | new | event | イベント候補「きっかけは東京の中野駅前大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: きっかけは東京の中野駅前大盆踊り | きっかけは東京の中野駅前大盆踊り 盆踊り | https://x.com/ichicopy_/status/2075846079363592362 |
 | medium | new_event_candidate | new | event | イベント候補「くしろ市民北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くしろ市民北海盆踊り | くしろ市民北海盆踊り 盆踊り; 8月19日（水）に 盆踊り; ・会場 北大通6丁目～13丁目 盆踊り | https://x.com/fm946/status/2072261083830923629 |
 | medium | new_event_candidate | new | event | イベント候補「くめくめ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くめくめ盆踊り | くめくめ盆踊り 盆踊り | https://x.com/mamimami298/status/2082360368769486893 |
+| medium | new_event_candidate | new | event | イベント候補「こうべ海の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こうべ海の盆踊り, 生唄・生演奏の盆踊り | こうべ海の盆踊り 盆踊り; 生唄・生演奏の盆踊り 盆踊り | https://x.com/merikenpark_fes/status/2087399303711199614 |
 | medium | new_event_candidate | new | event | イベント候補「こうべ海の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こうべ海の盆踊り, 生唄・生演奏の盆踊り | こうべ海の盆踊り 盆踊り; 生唄・生演奏の盆踊り 盆踊り | https://x.com/merikenpark_fes/status/2086959700013453805 |
 | medium | new_event_candidate | new | event | イベント候補「こうべ海の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こうべ海の盆踊り | こうべ海の盆踊り 盆踊り; メリケンパーク 盆踊り | https://x.com/satomachikobe/status/2081010207115853945 |
 | medium | new_event_candidate | new | event | イベント候補「こちら 京都 西本願寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こちら 京都 西本願寺納涼盆踊り | こちら 京都 西本願寺納涼盆踊り 盆踊り | https://x.com/anisondisco/status/2083028894475825232 |
@@ -4755,6 +4896,7 @@
 | medium | new_event_candidate | new | event | イベント候補「ふるさと東京応援祭 第三回ビールと浴衣de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: in上野2026が開催 上野でビールと盆踊り | ふるさと東京応援祭 第三回ビールと浴衣de盆踊り 盆踊り; in上野2026が開催 上野でビールと盆踊り 盆踊り | https://x.com/event_fes/status/2071387826495815955 |
 | medium | new_event_candidate | new | event | イベント候補「ぶぜん商店街盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぶぜん商店街盆踊り | ぶぜん商店街盆踊り 盆踊り | https://x.com/Bot87bi/status/2082621454127149440 |
 | medium | new_event_candidate | new | event | イベント候補「ぼっけぇ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぼっけぇ盆踊り, ぼっけぇ盆踊り in 問屋町 | ぼっけぇ盆踊り 盆踊り; ぼっけぇ盆踊り in 問屋町 盆踊り; 岡山県岡山市北区問屋町10-10周辺 盆踊り | https://x.com/sukitoruao/status/2079846409268805762 |
+| medium | new_event_candidate | new | event | イベント候補「ぼーんとぅ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぼーんとぅ盆踊り | ぼーんとぅ盆踊り 盆踊り | https://x.com/giri_trhk/status/2087426179347464556 |
 | medium | new_event_candidate | new | event | イベント候補「ぼーんとぅ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぼーんとぅ盆踊り | ぼーんとぅ盆踊り 盆踊り | https://x.com/giri_trhk/status/2086943743106814076 |
 | medium | new_event_candidate | new | event | イベント候補「ぼーんとぅ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぼーんとぅ盆踊り | ぼーんとぅ盆踊り 盆踊り | https://x.com/syvn12/status/2087055695636292064 |
 | medium | new_event_candidate | new | event | イベント候補「ぼーんとぅ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぼーんとぅ盆踊り | ぼーんとぅ盆踊り 盆踊り | https://x.com/giri_trhk/status/2086586093735199062 |
@@ -4800,6 +4942,7 @@
 | medium | new_event_candidate | new | event | イベント候補「よす夏祭り2026 明日の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よす夏祭り2026 明日の盆踊り | よす夏祭り2026 明日の盆踊り 盆踊り | https://x.com/SKYZandBAYZ/status/2086589292357591469 |
 | medium | new_event_candidate | new | event | イベント候補「より一般発売開始 見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: より一般発売開始 見取り図盆踊り | より一般発売開始 見取り図盆踊り 盆踊り; 堂島リバーフォーラム（大阪府 盆踊り | https://x.com/kaerutei_info/status/2075771950102897120 |
 | medium | new_event_candidate | new | event | イベント候補「ららぽの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ららぽの盆踊り | ららぽの盆踊り 盆踊り; そんな季節 盆踊り | https://x.com/mykatsu7/status/2062178719146582430 |
+| medium | new_event_candidate | new | event | イベント候補「わがまち海西盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わがまち海西盆おどり | わがまち海西盆おどり 盆踊り | https://x.com/BONAES2030/status/2087182810113331303 |
 | medium | new_event_candidate | new | event | イベント候補「わんこと一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わんこと一緒に盆踊り, 佐倉城址公園で「佐倉Wanパーク盆踊り, 佐倉Wanパーク盆踊り Bow-wowナイト | わんこと一緒に盆踊り 盆踊り; 佐倉城址公園で「佐倉Wanパーク盆踊り 盆踊り | https://x.com/sakuragoyomi/status/2084161089420366317 |
 | medium | new_event_candidate | new | event | イベント候補「ゑびす夏まつり（盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ゑびす夏まつり（盆踊り | ゑびす夏まつり（盆踊り 盆踊り | https://x.com/midorimushi54/status/2066514702142964178 |
 | medium | new_event_candidate | new | event | イベント候補「んなで盆踊りを踊る」というワイワイ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: んなで盆踊りを踊る」というワイワイ盆踊り, 同じ空間でみ～んなで盆踊りを踊る | んなで盆踊りを踊る」というワイワイ盆踊り 盆踊り; 同じ空間でみ～んなで盆踊りを踊る 盆踊り; サンシティホール(とんがり帽子)1Fホール 盆踊り | https://x.com/Mau3_141592/status/2061961199039008870 |
@@ -4817,6 +4960,7 @@
 | medium | new_event_candidate | new | event | イベント候補「アルカイック広場での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アルカイック広場での盆踊り | アルカイック広場での盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2066920705372147774 |
 | medium | new_event_candidate | new | event | イベント候補「イマジン盆踊り部」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イマジン盆踊り部 | イマジン盆踊り部 盆踊り; 江の島・湘南港北緑地広場(藤沢市 盆踊り | https://x.com/natsutr_bon/status/2068544228775649655 |
 | medium | new_event_candidate | new | event | イベント候補「ウシさん(ぬいぐるみ)を連れて西本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ウシさん(ぬいぐるみ)を連れて西本願寺の盆踊り | ウシさん(ぬいぐるみ)を連れて西本願寺の盆踊り 盆踊り; 雰囲気だけ 盆踊り | https://x.com/minamikxxx/status/2083105621726089534 |
+| medium | new_event_candidate | new | event | イベント候補「エイミーさんが磐梯町のばんだい納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エイミーさんが磐梯町のばんだい納涼盆踊り | エイミーさんが磐梯町のばんだい納涼盆踊り 盆踊り | https://x.com/hirokimura15/status/2087435016716562665 |
 | medium | new_event_candidate | new | event | イベント候補「エクストリームなコーナーと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エクストリームなコーナーと盆踊り | エクストリームなコーナーと盆踊り 盆踊り; COOL JAPAN PARK OSAKA TTホール 盆踊り | https://x.com/shumatsu_y/status/2063057029640683794 |
 | medium | new_event_candidate | new | event | イベント候補「オイラの出身地である中野区で中野駅前大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: オイラの出身地である中野区で中野駅前大盆踊り, 無料配布のガリガリ君食べながら盆踊り | オイラの出身地である中野区で中野駅前大盆踊り 盆踊り; 無料配布のガリガリ君食べながら盆踊り 盆踊り | https://x.com/skybluemusic001/status/2083822178999648275 |
 | medium | new_event_candidate | new | event | イベント候補「オススメの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: オススメの盆踊り | オススメの盆踊り 盆踊り | https://x.com/TokyoSandal/status/2075771625350578270 |
@@ -4824,6 +4968,7 @@
 | medium | new_event_candidate | new | event | イベント候補「キャンプ座間で 日米親善盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キャンプ座間で 日米親善盆踊り, ちなみに英字表記はBon Odori | キャンプ座間で 日米親善盆踊り 盆踊り; ちなみに英字表記はBon Odori 盆踊り | https://x.com/SL_U_odasaga/status/2083119090051539432 |
 | medium | new_event_candidate | new | event | イベント候補「キャンプ座間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: キャンプ座間盆踊り | キャンプ座間盆踊り 盆踊り | https://x.com/Kunimatsu_y/status/2083829953666470024 |
 | medium | new_event_candidate | new | event | イベント候補「クアラルンプール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クアラルンプール盆踊り | クアラルンプール盆踊り 盆踊り | https://x.com/KohnoSiouxsie/status/2065403086315876711 |
+| medium | new_event_candidate | new | event | イベント候補「グランドニッコー東京ベイ舞浜 夏フェス2026の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: グランドニッコー東京ベイ舞浜 夏フェス2026の盆踊り, 舞浜のホテルの盆踊り | グランドニッコー東京ベイ舞浜 夏フェス2026の盆踊り 盆踊り; 舞浜のホテルの盆踊り 盆踊り; 是非ひと踊り 盆踊り | https://x.com/nyoritael/status/2087197062735733075 |
 | medium | new_event_candidate | new | event | イベント候補「グローバル教育センター駒場支部より】「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: グローバル教育センター駒場支部より】「盆踊り, 盆踊り&amp;七夕交流会 | グローバル教育センター駒場支部より】「盆踊り 盆踊り; 盆踊り&amp;七夕交流会 盆踊り | https://x.com/dubly_ut/status/2069998631827161566 |
 | medium | new_event_candidate | new | event | イベント候補「ゲームや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ゲームや盆踊り | ゲームや盆踊り 盆踊り | https://x.com/toko_toko_s/status/2083083893008470135 |
 | medium | new_event_candidate | new | event | イベント候補「コミュニティプラザで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: コミュニティプラザで盆踊り | コミュニティプラザで盆踊り 盆踊り | https://x.com/settsumatsuri/status/2075180718280646846 |
@@ -4838,6 +4983,7 @@
 | medium | new_event_candidate | new | event | イベント候補「ザ・リーサルウェポンズ【ノーカット】第14回 中野駅前大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ザ・リーサルウェポンズ【ノーカット】第14回 中野駅前大盆踊り | ザ・リーサルウェポンズ【ノーカット】第14回 中野駅前大盆踊り 盆踊り | https://x.com/Albert_JPN/status/2085266636081418477 |
 | medium | new_event_candidate | new | event | イベント候補「シオン 「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シオン 「盆踊り, 盆踊りの練習だワン💢 | シオン 「盆踊り 盆踊り; 盆踊りの練習だワン💢 盆踊り | https://x.com/sakuranoitiniti/status/2063455152590262596 |
 | medium | new_event_candidate | new | event | イベント候補「ショーテン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ショーテン盆踊り | ショーテン盆踊り 盆踊り; 水沢地区センター前ロータリー 盆踊り | https://x.com/ian_caussant/status/2083378492822167956 |
+| medium | new_event_candidate | new | event | イベント候補「シン・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シン・盆踊り, こんな曲で踊りたい！シン・盆踊りナンバー | シン・盆踊り 盆踊り; こんな曲で踊りたい！シン・盆踊りナンバー 盆踊り | https://x.com/riehas/status/2087358408097767738 |
 | medium | new_event_candidate | new | event | イベント候補「スタジアムぼんおどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: スタジアムぼんおどり, 天然芝の盆踊り | スタジアムぼんおどり 盆踊り; 天然芝の盆踊り 盆踊り | https://x.com/osaka_fes/status/2086959289919590818 |
 | medium | new_event_candidate | new | event | イベント候補「スタッフ渡邊は泉崎村の豊年盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: スタッフ渡邊は泉崎村の豊年盆踊り | スタッフ渡邊は泉崎村の豊年盆踊り 盆踊り | https://x.com/PEAKACTION2011/status/2085590266095022555 |
 | medium | new_event_candidate | new | event | イベント候補「ソラトス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ソラトス盆踊り, ソラトス盆踊り2026 | ソラトス盆踊り 盆踊り; ソラトス盆踊り2026 盆踊り | https://x.com/ymgok_soratos/status/2087059229463159138 |
@@ -4898,6 +5044,7 @@
 | medium | new_event_candidate | new | event | イベント候補「丁目夏祭り納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 丁目夏祭り納涼盆踊り, 2026習志野台８丁目夏祭り納涼盆踊り | 丁目夏祭り納涼盆踊り 盆踊り; 2026習志野台８丁目夏祭り納涼盆踊り 盆踊り; 設営の櫓はじめ資機材や電気工事の予約を完了 盆踊り | https://x.com/8_chokai/status/2056637018248229108 |
 | medium | new_event_candidate | new | event | イベント候補「三味線・和太鼓・DJ・ドラムによる 全編生演奏のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三味線・和太鼓・DJ・ドラムによる 全編生演奏のアニソン盆踊り | 三味線・和太鼓・DJ・ドラムによる 全編生演奏のアニソン盆踊り 盆踊り | https://x.com/Licht_Creative/status/2063552931220382123 |
 | medium | new_event_candidate | new | event | イベント候補「三角広場まつり 居酒屋盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: リーマン盆踊り | 三角広場まつり 居酒屋盆踊り 盆踊り; リーマン盆踊り 盆踊り | https://x.com/MatsuriNoKiseki/status/2071523567595061488 |
+| medium | new_event_candidate | new | event | イベント候補「三部二区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三部二区盆踊り, 三部二区盆踊り2026🏮 | 三部二区盆踊り 盆踊り; 三部二区盆踊り2026🏮 盆踊り | https://x.com/rie_houki/status/2087330872043372963 |
 | medium | new_event_candidate | new | event | イベント候補「上ノ原小学校校庭で「上ノ原地域 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上ノ原小学校校庭で「上ノ原地域 盆踊り, 上ノ原地域 盆踊り大会 | 上ノ原小学校校庭で「上ノ原地域 盆踊り 盆踊り; 上ノ原地域 盆踊り大会 盆踊り | https://x.com/goguynet_tokyo/status/2065083476492030199 |
 | medium | new_event_candidate | new | event | イベント候補「上野で開催される「ビールと浴衣 de 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野で開催される「ビールと浴衣 de 盆踊り, ビールと浴衣 de 盆踊り | 上野で開催される「ビールと浴衣 de 盆踊り 盆踊り; ビールと浴衣 de 盆踊り 盆踊り | https://x.com/Chu_Z_futaba/status/2070832330273599946 |
 | medium | new_event_candidate | new | event | イベント候補「上野公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野公園の盆踊り | 上野公園の盆踊り 盆踊り | https://x.com/pirateofniku24/status/2076200237207818609 |
@@ -4914,6 +5061,7 @@
 | medium | new_event_candidate | new | event | イベント候補「中丸子神明大神（中丸子神社）境内 玉川町会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中丸子神明大神（中丸子神社）境内 玉川町会盆踊り | 中丸子神明大神（中丸子神社）境内 玉川町会盆踊り 盆踊り; 中丸子神明大神（中丸子神社）境内 盆踊り | https://x.com/cos9n/status/2078096680663372191 |
 | medium | new_event_candidate | new | event | イベント候補「中区みなと音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中区みなと音頭 | 中区みなと音頭 盆踊り; 中区みなと音頭 盆踊り | https://x.com/_masakari/status/2085195791938015370 |
 | medium | new_event_candidate | new | event | イベント候補「中町会合同 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中町会合同 盆踊り | 中町会合同 盆踊り 盆踊り; 葛飾区四つ⽊1-6 周辺 盆踊り | https://x.com/ograrchhardware/status/2083353035997323279 |
+| medium | new_event_candidate | new | event | イベント候補「中西レモンさんが紹介する盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中西レモンさんが紹介する盆踊り, 西馬音内盆踊り, 豊島の盆踊り | 中西レモンさんが紹介する盆踊り 盆踊り; 西馬音内盆踊り 盆踊り | https://x.com/onaka_yowazo/status/2087431828026404908 |
 | medium | new_event_candidate | new | event | イベント候補「中部すこやか福祉センターの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中部すこやか福祉センターの盆踊り | 中部すこやか福祉センターの盆踊り 盆踊り; 中野駅前大盆踊り 盆踊り | https://x.com/suyama_takashi/status/2083910942656725101 |
 | medium | new_event_candidate | new | event | イベント候補「中野の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中野の盆踊り | 中野の盆踊り 盆踊り | https://x.com/xara_k/status/2078011485490713065 |
 | medium | new_event_candidate | new | event | イベント候補「中野区のとある盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 中野区のとある盆踊り | 中野区のとある盆踊り 盆踊り | https://x.com/takasho06130613/status/2083642266384797770 |
@@ -4984,8 +5132,10 @@
 | medium | new_event_candidate | new | event | イベント候補「佃島の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そっとじんわり踊る素敵な盆踊り | 佃島の盆踊り 盆踊り; そっとじんわり踊る素敵な盆踊り 盆踊り | https://x.com/fujieday_chuo/status/2076635007200944518 |
 | medium | new_event_candidate | new | event | イベント候補「住吉子供第二広場にて「住吉・高砂北合同盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 住吉子供第二広場にて「住吉・高砂北合同盆踊り, 住吉・高砂北合同盆踊り大会 | 住吉子供第二広場にて「住吉・高砂北合同盆踊り 盆踊り; 住吉・高砂北合同盆踊り大会 盆踊り | https://x.com/katsushika2shin/status/2082383246973612463 |
 | medium | new_event_candidate | new | event | イベント候補「佐倉Wanパーク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 佐倉Wanパーク盆踊り, 佐倉Wanパーク盆踊りBow-wowナイト | 佐倉Wanパーク盆踊り 盆踊り; 佐倉Wanパーク盆踊りBow-wowナイト 盆踊り | https://x.com/hot_wonder_/status/2084836837470969960 |
+| medium | new_event_candidate | new | event | イベント候補「信号制御機が「御神体」 なぜか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 信号制御機が「御神体」 なぜか盆踊り | 信号制御機が「御神体」 なぜか盆踊り 盆踊り; 郡上おどり 盆踊り; たぶん郡上おどり 盆踊り | https://x.com/sasurai_3/status/2087447617773211784 |
 | medium | new_event_candidate | new | event | イベント候補「元住吉周辺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 元住吉周辺の盆踊り | 元住吉周辺の盆踊り 盆踊り | https://x.com/iwasa1101/status/2067461436008517683 |
 | medium | new_event_candidate | new | event | イベント候補「元公園 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 元公園 盆踊り | 元公園 盆踊り 盆踊り; ⽔元公園 ⽯庭広場 盆踊り | https://x.com/ograrchhardware/status/2083352701673599095 |
+| medium | new_event_candidate | new | event | イベント候補「先日のTBS「Nスタ」で使われたアニメソング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日のTBS「Nスタ」で使われたアニメソング盆踊り | 先日のTBS「Nスタ」で使われたアニメソング盆踊り 盆踊り | https://x.com/isesakipop/status/2087367137442808094 |
 | medium | new_event_candidate | new | event | イベント候補「先週末の中野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先週末の中野盆踊り | 先週末の中野盆踊り 盆踊り | https://x.com/Kinshicho_Music/status/2085282327454982371 |
 | medium | new_event_candidate | new | event | イベント候補「光市周辺の主な盆踊り・夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 光市周辺の主な盆踊り・夏祭り, 万地区ふれあい盆踊り, 光市の盆踊り | 光市周辺の主な盆踊り・夏祭り 盆踊り; 万地区ふれあい盆踊り 盆踊り; 虹ケ浜なぎさ公園周辺（光市虹ケ浜2 盆踊り; 沼城小学校グラウンド（周南市須々万本郷514 盆踊り | https://x.com/market_truster/status/2084280768176799874 |
 | medium | new_event_candidate | new | event | イベント候補「光市民音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 光市民音頭 | 光市民音頭 盆踊り; 情報をまとめました 盆踊り; 虹ケ浜なぎさ公園周辺（光市虹ケ浜2丁目18 盆踊り; 光市民音頭 盆踊り | https://x.com/market_truster/status/2086083774337671515 |
@@ -5017,6 +5167,7 @@
 | medium | new_event_candidate | new | event | イベント候補「北コミde盆踊りまつり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北コミde盆踊りまつり | 北コミde盆踊りまつり 盆踊り | https://x.com/yama_circus/status/2078672485525139684 |
 | medium | new_event_candidate | new | event | イベント候補「北仲キャナルパーク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北仲キャナルパーク盆踊り | 北仲キャナルパーク盆踊り 盆踊り; 北仲通北第二公園(横浜市 盆踊り; 踊る🎶 盆踊り | https://x.com/natsutr_bon/status/2086668600056877409 |
 | medium | new_event_candidate | new | event | イベント候補「北初富盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北初富盆踊り | 北初富盆踊り 盆踊り | https://x.com/city_kamatan/status/2067082234704867480 |
+| medium | new_event_candidate | new | event | イベント候補「北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海盆踊り | 北海盆踊り 盆踊り | https://x.com/SapporoStay/status/2087293468892889376 |
 | medium | new_event_candidate | new | event | イベント候補「北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海盆踊り | 北海盆踊り 盆踊り | https://x.com/Kat2chi/status/2079447529268408351 |
 | medium | new_event_candidate | new | event | イベント候補「北海道の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道の盆踊り, 北海道の盆踊りは面白い～炭坑が育てた北海盆唄～ | 北海道の盆踊り 盆踊り; 北海道の盆踊りは面白い～炭坑が育てた北海盆唄～ 盆踊り; 三笠市民会館1階会議室 盆踊り | https://x.com/onitoge/status/2069385967614746710 |
 | medium | new_event_candidate | new | event | イベント候補「北海道の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道の盆踊り | 北海道の盆踊り 盆踊り | https://x.com/onitoge/status/2068291818438164697 |
@@ -5038,11 +5189,13 @@
 | medium | new_event_candidate | new | event | イベント候補「名大祭の盆踊り 元気な若者の力を強く感じる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 名大祭の盆踊り 元気な若者の力を強く感じる盆踊り | 名大祭の盆踊り 元気な若者の力を強く感じる盆踊り 盆踊り | https://x.com/bon0813MKW480/status/2065449258040566062 |
 | medium | new_event_candidate | new | event | イベント候補「名物「わたし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 名物「わたし盆踊り, わたし盆踊り, 盆踊り情報2026 | 名物「わたし盆踊り 盆踊り; わたし盆踊り 盆踊り | https://x.com/otafull/status/2083357041700286626 |
 | medium | new_event_candidate | new | event | イベント候補「名鉄布袋駅に開催される 現役高校生主催盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 名鉄布袋駅に開催される 現役高校生主催盆踊り | 名鉄布袋駅に開催される 現役高校生主催盆踊り 盆踊り | https://x.com/tashiro_kai/status/2069654585128767918 |
+| medium | new_event_candidate | new | event | イベント候補「向山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 向山盆踊り | 向山盆踊り 盆踊り | https://x.com/33Norina/status/2087430674169118882 |
 | medium | new_event_candidate | new | event | イベント候補「告知】北海道の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 告知】北海道の盆踊り | 告知】北海道の盆踊り 盆踊り | https://x.com/spr_mousou_yuki/status/2078032582395204051 |
 | medium | new_event_candidate | new | event | イベント候補「和太鼓USAGIの太鼓に合わせて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓USAGIの太鼓に合わせて盆踊り | 和太鼓USAGIの太鼓に合わせて盆踊り 盆踊り | https://x.com/ichi_bakun/status/2083398423118823923 |
 | medium | new_event_candidate | new | event | イベント候補「和太鼓の演奏と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓の演奏と盆踊り | 和太鼓の演奏と盆踊り 盆踊り; 変更・中止します 盆踊り | https://x.com/KasaiSuizokuen/status/2087056419107356907 |
 | medium | new_event_candidate | new | event | イベント候補「和太鼓の演奏と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓の演奏と盆踊り | 和太鼓の演奏と盆踊り 盆踊り; 変更・中止します 盆踊り | https://x.com/KasaiSuizokuen/status/2086694035880616404 |
 | medium | new_event_candidate | new | event | イベント候補「品川区】盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 品川区】盆踊り | 品川区】盆踊り 盆踊り | https://x.com/TOKYO_Shuto634/status/2065579561673457734 |
+| medium | new_event_candidate | new | event | イベント候補「商店街で盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 商店街で盆おどり | 商店街で盆おどり 盆踊り | https://x.com/shikokunews/status/2087331812129517633 |
 | medium | new_event_candidate | new | event | イベント候補「商店街の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 商店街の盆踊り | 商店街の盆踊り 盆踊り | https://x.com/shigeoriori/status/2063430820770279566 |
 | medium | new_event_candidate | new | event | イベント候補「善光寺 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 善光寺 盆踊り, 27開催 東京 青山表参道で盆踊り, 謝恩納涼盆踊り | 善光寺 盆踊り 盆踊り; 27開催 東京 青山表参道で盆踊り 盆踊り | https://x.com/Very_JAPAN/status/2081314834713625026 |
 | medium | new_event_candidate | new | event | イベント候補「喜多見盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 喜多見盆踊り, 喜多見駅前南北口広場で開催される喜多見盆踊り | 喜多見盆踊り 盆踊り; 喜多見駅前南北口広場で開催される喜多見盆踊り 盆踊り | https://x.com/hoppechan_pj/status/2076584936954564974 |
@@ -5103,7 +5256,6 @@
 | medium | new_event_candidate | new | event | イベント候補「大曽根地区「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大曽根地区「盆踊り, 盆踊り大会 | 大曽根地区「盆踊り 盆踊り; 盆踊り大会 盆踊り | https://x.com/hatohuruoosone8/status/2083391148211757389 |
 | medium | new_event_candidate | new | event | イベント候補「大森三丁目連合町会「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大森三丁目連合町会「盆踊り, 盆踊り情報2026, 盆踊り大会 | 大森三丁目連合町会「盆踊り 盆踊り; 盆踊り情報2026 盆踊り | https://x.com/otafull/status/2082375582260797828 |
 | medium | new_event_candidate | new | event | イベント候補「大森中八幡自治会が八幡神社で「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大森中八幡自治会が八幡神社で「盆踊り, 盆踊り情報2026 | 大森中八幡自治会が八幡神社で「盆踊り 盆踊り; 盆踊り情報2026 盆踊り; みんなで楽しく踊り 盆踊り | https://x.com/otafull/status/2082013193598058889 |
-| medium | new_event_candidate | new | event | イベント候補「大森南自治会納涼盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大森南自治会納涼盆おどり | 大森南自治会納涼盆おどり 盆踊り | https://x.com/TakahiroShojima/status/2080530796486738291 |
 | medium | new_event_candidate | new | event | イベント候補「大正大学の鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大正大学の鴨台盆踊り | 大正大学の鴨台盆踊り 盆踊り | https://x.com/bremen_ohshima/status/2075598772521128232 |
 | medium | new_event_candidate | new | event | イベント候補「大田文化の森夏祭り盆踊り練習会 実行委員として盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大田文化の森夏祭り盆踊り練習会 実行委員として盆踊り, 大田文化の森多目的室 日本一涼しい盆踊り | 大田文化の森夏祭り盆踊り練習会 実行委員として盆踊り 盆踊り; 大田文化の森多目的室 日本一涼しい盆踊り 盆踊り; アンパンマン音頭 盆踊り | https://x.com/TakahiroShojima/status/2078281510256300422 |
 | medium | new_event_candidate | new | event | イベント候補「大迫力の「水掛け祭」と伝統的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大迫力の「水掛け祭」と伝統的な盆踊り | 大迫力の「水掛け祭」と伝統的な盆踊り 盆踊り | https://x.com/takano_koutouku/status/2079025635989840034 |
@@ -5141,8 +5293,10 @@
 | medium | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り, 超！寝転ん盆踊り2026 | 寝転ん盆踊り 盆踊り; 超！寝転ん盆踊り2026 盆踊り | https://x.com/moisture_vrc/status/2071549469330669623 |
 | medium | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/VRChatBuzzNews/status/2071479570080190482 |
 | medium | new_event_candidate | new | event | イベント候補「寺ケ池 WITH なごみまるしぇが8月11日に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寺ケ池 WITH なごみまるしぇが8月11日に盆踊り, 楽しいステージに加えて盆踊り | 寺ケ池 WITH なごみまるしぇが8月11日に盆踊り 盆踊り; 楽しいステージに加えて盆踊り 盆踊り | https://x.com/FdfwSPdEZXn3I3G/status/2086211369192640734 |
+| medium | new_event_candidate | new | event | イベント候補「小夜会 2026 夏 演奏・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小夜会 2026 夏 演奏・盆踊り | 小夜会 2026 夏 演奏・盆踊り 盆踊り; 盛り上げてくださった皆さま 盆踊り | https://x.com/sayokai/status/2087437860786069956 |
 | medium | new_event_candidate | new | event | イベント候補「小学校夏休み開始 五南町会は来月8月21日22日に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小学校夏休み開始 五南町会は来月8月21日22日に盆踊り | 小学校夏休み開始 五南町会は来月8月21日22日に盆踊り 盆踊り | https://x.com/tetotetoti/status/2079432569595240820 |
 | medium | new_event_candidate | new | event | イベント候補「小学校盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小学校盆踊り | 小学校盆踊り 盆踊り | https://x.com/hoshino2501/status/2075913034384691432 |
+| medium | new_event_candidate | new | event | イベント候補「小島よしお さん 日本盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小島よしお さん 日本盆踊り, ええじゃないか盆踊り, よしおと爆風の、ええじゃないか盆踊り～武道館で編 | 小島よしお さん 日本盆踊り 盆踊り; ええじゃないか盆踊り 盆踊り | https://x.com/info_piiya/status/2087362703937647102 |
 | medium | new_event_candidate | new | event | イベント候補「小島よしおさんと八丈太鼓との盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小島よしおさんと八丈太鼓との盆踊り, ええじゃないか盆踊り, よしおと爆風の、ええじゃないか盆踊り～武道館で編 | 小島よしおさんと八丈太鼓との盆踊り 盆踊り; ええじゃないか盆踊り 盆踊り | https://x.com/ypuf82k_3BSb/status/2086926272949821801 |
 | medium | new_event_candidate | new | event | イベント候補「小島よしおさんと八丈太鼓との盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小島よしおさんと八丈太鼓との盆踊り, ええじゃないか盆踊り, よしおと爆風の、ええじゃないか盆踊り～武道館で編 | 小島よしおさんと八丈太鼓との盆踊り 盆踊り; ええじゃないか盆踊り 盆踊り | https://x.com/ypuf82k_3BSb/status/2086587976432439621 |
 | medium | new_event_candidate | new | event | イベント候補「小島よしおさんと八丈太鼓との盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小島よしおさんと八丈太鼓との盆踊り, ええじゃないか盆踊り, よしおと爆風の、ええじゃないか盆踊り～武道館で編 | 小島よしおさんと八丈太鼓との盆踊り 盆踊り; ええじゃないか盆踊り 盆踊り | https://x.com/ypuf82k_3BSb/status/2085121022844710940 |
@@ -5169,6 +5323,7 @@
 | medium | new_event_candidate | new | event | イベント候補「左派活動家どもが主催した偽盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 左派活動家どもが主催した偽盆踊り | 左派活動家どもが主催した偽盆踊り 盆踊り | https://x.com/YamatoType24/status/2084915199174397971 |
 | medium | new_event_candidate | new | event | イベント候補「差木地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 差木地盆踊り | 差木地盆踊り 盆踊り | https://x.com/oshimatown/status/2078028880812871719 |
 | medium | new_event_candidate | new | event | イベント候補「市内に受け継がれる郷土芸能や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市内に受け継がれる郷土芸能や盆踊り | 市内に受け継がれる郷土芸能や盆踊り 盆踊り; お楽しみください 盆踊り; あさひ賃貸りんくうステージ・りんくうアイスパーク 盆踊り | https://x.com/m_sh_30171/status/2069269177093996734 |
+| medium | new_event_candidate | new | event | イベント候補「市野倉北町会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市野倉北町会納涼盆踊り | 市野倉北町会納涼盆踊り 盆踊り | https://x.com/TakahiroShojima/status/2087137404281053420 |
 | medium | new_event_candidate | new | event | イベント候補「平沼集会所の【盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 平沼集会所の【盆踊り, 盆踊り練習会 | 平沼集会所の【盆踊り 盆踊り; 盆踊り練習会 盆踊り | https://x.com/hiranuma_nkrsk/status/2065005633301250488 |
 | medium | new_event_candidate | new | event | イベント候補「年以上前に生まれた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年以上前に生まれた盆踊り, 水島音頭 | 年以上前に生まれた盆踊り 盆踊り; 水島音頭 盆踊り; 水島音頭 盆踊り | https://x.com/kctnews/status/2082400342487224809 |
 | medium | new_event_candidate | new | event | イベント候補「年度『大曽根盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年度『大曽根盆踊り, 大曽根盆踊り大会 | 年度『大曽根盆踊り 盆踊り; 大曽根盆踊り大会 盆踊り | https://x.com/hatohuruoosone8/status/2083771366659207251 |
@@ -5197,6 +5352,7 @@
 | medium | new_event_candidate | new | event | イベント候補「打上花火・屋台・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 打上花火・屋台・盆踊り | 打上花火・屋台・盆踊り 盆踊り | https://x.com/ThanksKyoto/status/2067778085395849690 |
 | medium | new_event_candidate | new | event | イベント候補「摂津市】夏の風物詩「第52回ダイキン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 摂津市】夏の風物詩「第52回ダイキン盆踊り, ダイキン盆踊り大会 | 摂津市】夏の風物詩「第52回ダイキン盆踊り 盆踊り; ダイキン盆踊り大会 盆踊り | https://x.com/goguynet_osaka/status/2085940981392720242 |
 | medium | new_event_candidate | new | event | イベント候補「政府のヒモ付き企画は町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 政府のヒモ付き企画は町内会の盆踊り | 政府のヒモ付き企画は町内会の盆踊り 盆踊り | https://x.com/T_HasuMu/status/2070684138445963488 |
+| medium | new_event_candidate | new | event | イベント候補「新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新しい盆踊り, 今回は年内最後の盆踊り, 近所の盆踊り | 新しい盆踊り 盆踊り; 今回は年内最後の盆踊り 盆踊り | https://x.com/osaruna7741/status/2087179233621950657 |
 | medium | new_event_candidate | new | event | イベント候補「新井1・2丁目自治会による盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新井1・2丁目自治会による盆踊り | 新井1・2丁目自治会による盆踊り 盆踊り | https://x.com/ichikawa_news/status/2085887718702317661 |
 | medium | new_event_candidate | new | event | イベント候補「新堀通り(台東区) 新たな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新堀通り(台東区) 新たな盆踊り | 新堀通り(台東区) 新たな盆踊り 盆踊り; 新堀通り(台東区 盆踊り | https://x.com/natsutr_bon/status/2067765707643949227 |
 | medium | new_event_candidate | new | event | イベント候補「新宿区公式 8月盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新宿区公式 8月盆踊り, 新宿中央公園夏まつり納涼盆踊り | 新宿区公式 8月盆踊り 盆踊り; 新宿中央公園夏まつり納涼盆踊り 盆踊り | https://x.com/natsutr_bon/status/2079441657993613335 |
@@ -5210,6 +5366,7 @@
 | medium | new_event_candidate | new | event | イベント候補「日 サンシャインシティ納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日 サンシャインシティ納涼盆踊り | 日 サンシャインシティ納涼盆踊り 盆踊り | https://x.com/sunshinechoukai/status/2059593299376365966 |
 | medium | new_event_candidate | new | event | イベント候補「日 昨日の鉄砲洲盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日 昨日の鉄砲洲盆踊り | 日 昨日の鉄砲洲盆踊り 盆踊り; を再び踊り 盆踊り | https://x.com/gPVEQeAD9U10257/status/2084469884352860577 |
 | medium | new_event_candidate | new | event | イベント候補「日 本日は青柳中央会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日 本日は青柳中央会盆踊り | 日 本日は青柳中央会盆踊り 盆踊り | https://x.com/ishiinobuyuki/status/2082646219546071324 |
+| medium | new_event_candidate | new | event | イベント候補「日 本日は青柳稲荷神社盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日 本日は青柳稲荷神社盆踊り | 日 本日は青柳稲荷神社盆踊り 盆踊り | https://x.com/ishiinobuyuki/status/2087386208125210872 |
 | medium | new_event_candidate | new | event | イベント候補「日 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日 盆踊り | 日 盆踊り 盆踊り; 大銀座盆踊り 盆踊り; 銀座通り 盆踊り | https://x.com/OrangerieFlower/status/2065630752054906912 |
 | medium | new_event_candidate | new | event | イベント候補「日 練習会（盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日 練習会（盆踊り, 月第一日曜 盆踊り | 日 練習会（盆踊り 盆踊り; 月第一日曜 盆踊り 盆踊り | https://x.com/L6F1cZMkJyOyPFd/status/2069212601930961396 |
 | medium | new_event_candidate | new | event | イベント候補「日ごとに異なる曲の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日ごとに異なる曲の盆踊り, これがジャパニーズ盆踊り | 日ごとに異なる曲の盆踊り 盆踊り; これがジャパニーズ盆踊り 盆踊り | https://x.com/toyosu_tokyo/status/2084918663766057131 |
@@ -5400,8 +5557,10 @@
 | medium | new_event_candidate | new | event | イベント候補「盛れミ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盛れミ盆踊り, Juice） 「第2回田町駅前夏まつり」盆踊り | 盛れミ盆踊り 盆踊り; Juice） 「第2回田町駅前夏まつり」盆踊り 盆踊り | https://x.com/blackmipola/status/2075930204904776086 |
 | medium | new_event_candidate | new | event | イベント候補「目】盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 目】盆踊り | 目】盆踊り 盆踊り | https://x.com/totsukawa_vill/status/2076964167114735952 |
 | medium | new_event_candidate | new | event | イベント候補「目は盆踊り・2日目は映画まつり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 目は盆踊り・2日目は映画まつり | 目は盆踊り・2日目は映画まつり 盆踊り | https://x.com/akashijournal/status/2087056771516887064 |
+| medium | new_event_candidate | new | event | イベント候補「県劇盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 県劇盆踊り, 14開催予定の「県劇盆踊り | 県劇盆踊り 盆踊り; 14開催予定の「県劇盆踊り 盆踊り | https://x.com/kumamotokengeki/status/2087334243093631067 |
 | medium | new_event_candidate | new | event | イベント候補「社会教育部】「夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 社会教育部】「夏祭り盆踊り, 夏祭り盆踊り大会 | 社会教育部】「夏祭り盆踊り 盆踊り; 夏祭り盆踊り大会 盆踊り | https://x.com/hinode_machi/status/2081597405024465200 |
 | medium | new_event_candidate | new | event | イベント候補「社会教育部】夏祭り盆踊り大会を前に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 社会教育部】夏祭り盆踊り大会を前に盆踊り | 社会教育部】夏祭り盆踊り大会を前に盆踊り 盆踊り | https://x.com/hinode_machi/status/2079450059775816171 |
+| medium | new_event_candidate | new | event | イベント候補「祖師野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祖師野盆踊り, 神渕盆踊り, 岐阜県加茂郡七宗町 本格的な盆踊り | 祖師野盆踊り 盆踊り; 神渕盆踊り 盆踊り; ありましたら 盆踊り; ぜひ一緒に踊り 盆踊り | https://x.com/sayokai/status/2087437863785050197 |
 | medium | new_event_candidate | new | event | イベント候補「祝）の妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祝）の妖怪盆踊り | 祝）の妖怪盆踊り 盆踊り | https://x.com/unidenki/status/2077655026634469462 |
 | medium | new_event_candidate | new | event | イベント候補「祝）上野ゐの市盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜の盆踊り | 祝）上野ゐの市盆踊り 盆踊り; 夜の盆踊り 盆踊り | https://x.com/harunomai/status/2087020263502401617 |
 | medium | new_event_candidate | new | event | イベント候補「神戸ハーバーランドで「2026ハーバーランドの日 ハーバー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神戸ハーバーランドで「2026ハーバーランドの日 ハーバー盆踊り, 2026ハーバーランドの日 ハーバー盆踊り | 神戸ハーバーランドで「2026ハーバーランドの日 ハーバー盆踊り 盆踊り; 2026ハーバーランドの日 ハーバー盆踊り 盆踊り | https://x.com/SKaHG6QvUJEI16P/status/2084120306806100218 |
@@ -5445,11 +5604,11 @@
 | medium | new_event_candidate | new | event | イベント候補「筋肉盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 筋肉盆踊り | 筋肉盆踊り 盆踊り | https://x.com/PRTIMES_ETM/status/2082742247028863055 |
 | medium | new_event_candidate | new | event | イベント候補「築地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地の盆踊り | 築地の盆踊り 盆踊り | https://x.com/naoko_onoue/status/2078320403693596950 |
 | medium | new_event_candidate | new | event | イベント候補「築地口商店街振興組合による盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地口商店街振興組合による盆踊り | 築地口商店街振興組合による盆踊り 盆踊り; 金城ふ頭80・81号岸壁 盆踊り | https://x.com/cruisenews_jp/status/2082858281136255334 |
+| medium | new_event_candidate | new | event | イベント候補「約1万人が集まった「笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 約1万人が集まった「笠間納涼盆踊り | 約1万人が集まった「笠間納涼盆踊り 盆踊り; 笠間納涼盆踊り花火大会2026 盆踊り | https://x.com/toyokeizai_book/status/2087374776038031795 |
 | medium | new_event_candidate | new | event | イベント候補「納涼夏祭り（盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼夏祭り（盆おどり | 納涼夏祭り（盆おどり 盆踊り; 関市文化会館 盆踊り | https://x.com/seki_bousai/status/2084836878612865358 |
 | medium | new_event_candidate | new | event | イベント候補「納涼夏祭り（盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼夏祭り（盆おどり | 納涼夏祭り（盆おどり 盆踊り; 関市文化会館 盆踊り | https://x.com/seki_bousai/status/1950390986401861785 |
 | medium | new_event_candidate | new | event | イベント候補「納涼大会 山王音頭と民踊大会」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の山王祭は神幸祭や神輿渡御とともに盆踊り | 納涼大会 山王音頭と民踊大会 盆踊り; 今年の山王祭は神幸祭や神輿渡御とともに盆踊り 盆踊り; 山王音頭 盆踊り | https://x.com/Very_JAPAN/status/2066446866208989546 |
 | medium | new_event_candidate | new | event | イベント候補「納涼民踊大会」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼民踊大会 | 納涼民踊大会 盆踊り | https://x.com/iflyertv/status/2068174499661414603 |
-| medium | new_event_candidate | new | event | イベント候補「納涼盆おどり大会」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆おどり大会, 盆踊り情報2026 | 納涼盆おどり大会 盆踊り; 盆踊り情報2026 盆踊り | https://x.com/otafull/status/2079038594434629919 |
 | medium | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り | 納涼盆踊り 盆踊り | https://x.com/Pattsuan8284/status/2086720513028583768 |
 | medium | new_event_candidate | new | event | イベント候補「結局大銀座盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: GINZA SIX屋上でやる盆踊り | 結局大銀座盆踊り 盆踊り; GINZA SIX屋上でやる盆踊り 盆踊り | https://x.com/okihcim4317/status/2083030035053895817 |
 | medium | new_event_candidate | new | event | イベント候補「絶讃盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 絶讃盆踊り | 絶讃盆踊り 盆踊り | https://x.com/ichikawa_mami/status/2081741016206573601 |
@@ -5479,6 +5638,7 @@
 | medium | new_event_candidate | new | event | イベント候補「花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花火や盆踊り | 花火や盆踊り 盆踊り | https://x.com/niizashikicity/status/2076089684896424117 |
 | medium | new_event_candidate | new | event | イベント候補「花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花火や盆踊り | 花火や盆踊り 盆踊り | https://x.com/TOKYO_Shuto634/status/2076077676679602608 |
 | medium | new_event_candidate | new | event | イベント候補「花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花火や盆踊り | 花火や盆踊り 盆踊り | https://x.com/goguy_saitama/status/2076066871086879208 |
+| medium | new_event_candidate | new | event | イベント候補「花火大会や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花火大会や盆踊り | 花火大会や盆踊り 盆踊り | https://x.com/fm_gifu_tm/status/2087446768653140167 |
 | medium | new_event_candidate | new | event | イベント候補「花火（香川）5000発 ・たきかわ納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花火（香川）5000発 ・たきかわ納涼盆踊り, たきかわ納涼盆踊り | 花火（香川）5000発 ・たきかわ納涼盆踊り 盆踊り; たきかわ納涼盆踊り 盆踊り | https://x.com/karugamo_travel/status/2087011874655097196 |
 | medium | new_event_candidate | new | event | イベント候補「花畑公園 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 花畑公園 納涼盆踊り | 花畑公園 納涼盆踊り 盆踊り; 花畑公園 盆踊り | https://x.com/ograrchhardware/status/2083353275408298268 |
 | medium | new_event_candidate | new | event | イベント候補「芸人さんたちと一緒に舞台と客席で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 芸人さんたちと一緒に舞台と客席で盆踊り | 芸人さんたちと一緒に舞台と客席で盆踊り 盆踊り | https://x.com/stardustkawachi/status/2086997435130515561 |
@@ -5513,6 +5673,7 @@
 | medium | new_event_candidate | new | event | イベント候補「西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆踊り | 西馬音内盆踊り 盆踊り | https://x.com/handmade_ugo/status/2063450525182677267 |
 | medium | new_event_candidate | new | event | イベント候補「西馬音内盆踊りの日本三大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆踊りの日本三大盆踊り | 西馬音内盆踊りの日本三大盆踊り 盆踊り; 藤沢駅・遊行寺・ふじさわ宿交流館(藤沢市 盆踊り; 郡上おどり 盆踊り; に阿波踊り 盆踊り | https://x.com/natsutr_bon/status/2057268806536589483 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図の盆踊り | 見取り図の盆踊り 盆踊り | https://x.com/xo19313xo/status/2082022666786259425 |
+| medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り | 見取り図盆踊り 盆踊り | https://x.com/giri_trhk/status/2087426092286271975 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り | 見取り図盆踊り 盆踊り | https://x.com/giri_trhk/status/2086943836618850779 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り | 見取り図盆踊り 盆踊り | https://x.com/japtmpjt/status/2087062348066636056 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り, 見取り図盆踊り2026 | 見取り図盆踊り 盆踊り; 見取り図盆踊り2026 盆踊り | https://x.com/rnaaaaj0/status/2087008547343319118 |
@@ -5578,6 +5739,8 @@
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り | 見取り図盆踊り 盆踊り | https://x.com/tu7trhk/status/2065048600774939116 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り | 見取り図盆踊り 盆踊り | https://x.com/yurika_mayu/status/2064024929838973415 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り | 見取り図盆踊り 盆踊り | https://x.com/juliet85295490/status/2063996598196265001 |
+| medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り2026 見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り2026 見取り図盆踊り | 見取り図盆踊り2026 見取り図盆踊り 盆踊り | https://x.com/bkabeko44/status/2087419184238219491 |
+| medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り2026 見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り2026 見取り図盆踊り | 見取り図盆踊り2026 見取り図盆踊り 盆踊り | https://x.com/1102lcd/status/2087374361720451097 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り2026 見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り2026 見取り図盆踊り | 見取り図盆踊り2026 見取り図盆踊り 盆踊り | https://x.com/k4racay/status/2082366211996684292 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り2026 見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り2026 見取り図盆踊り | 見取り図盆踊り2026 見取り図盆踊り 盆踊り | https://x.com/rnqw5xne/status/2082365639545835963 |
 | medium | new_event_candidate | new | event | イベント候補「見取り図盆踊り2026 見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 見取り図盆踊り2026 見取り図盆踊り | 見取り図盆踊り2026 見取り図盆踊り 盆踊り | https://x.com/rnqw5xne/status/2078354977207337227 |
@@ -5603,6 +5766,7 @@
 | medium | new_event_candidate | new | event | イベント候補「足立区の盆踊りで最も早い盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 足立区の盆踊りで最も早い盆踊り, 遊びにいらして下さい 西綾瀬町会盆踊り | 足立区の盆踊りで最も早い盆踊り 盆踊り; 遊びにいらして下さい 西綾瀬町会盆踊り 盆踊り; 五反野コミュニティセンター横の公園 盆踊り | https://x.com/Dk725aNpscBwpEa/status/2065082668396827008 |
 | medium | new_event_candidate | new | event | イベント候補「身体が疲れる 毎日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 身体が疲れる 毎日盆踊り | 身体が疲れる 毎日盆踊り 盆踊り | https://x.com/Mau3_141592/status/2083405287923609890 |
 | medium | new_event_candidate | new | event | イベント候補「軸馬【S】 盆踊り（ぼんおどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 軸馬【S】 盆踊り（ぼんおどり | 軸馬【S】 盆踊り（ぼんおどり 盆踊り | https://x.com/keiba____/status/2085622136492921248 |
+| medium | new_event_candidate | new | event | イベント候補「軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り, 追分盆踊り | 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り 盆踊り; 追分盆踊り 盆踊り; 前夜祭で太鼓や踊り 盆踊り | https://x.com/TomKamoshida/status/2087373528127644112 |
 | medium | new_event_candidate | new | event | イベント候補「軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り, 追分盆踊り | 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り 盆踊り; 追分盆踊り 盆踊り | https://x.com/TomKamoshida/status/2087005272837607730 |
 | medium | new_event_candidate | new | event | イベント候補「軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り, 追分盆踊り | 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り 盆踊り; 追分盆踊り 盆踊り; 前夜祭で太鼓や踊り 盆踊り | https://x.com/TomKamoshida/status/2085967486793777362 |
 | medium | new_event_candidate | new | event | イベント候補「軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り, 追分盆踊り | 軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り 盆踊り; 追分盆踊り 盆踊り | https://x.com/TomKamoshida/status/2085570292018250102 |
@@ -5637,6 +5801,7 @@
 | medium | new_event_candidate | new | event | イベント候補「近所で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所で盆踊り, 一歩目音頭 | 近所で盆踊り 盆踊り; 一歩目音頭 盆踊り; 一歩目音頭 盆踊り | https://x.com/nanya_yao/status/2084750682633150971 |
 | medium | new_event_candidate | new | event | イベント候補「近隣の藤森神社で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近隣の藤森神社で盆踊り | 近隣の藤森神社で盆踊り 盆踊り | https://x.com/kyoto_reha/status/2084057619728302155 |
 | medium | new_event_candidate | new | event | イベント候補「近隣地域で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近隣地域で盆踊り, 光市民音頭, 万（すすま）ふれあい盆踊り | 近隣地域で盆踊り 盆踊り; 光市民音頭 盆踊り; などの詳細は以下の通り 盆踊り; 虹ケ浜なぎさ公園 周辺（光市虹ケ浜2丁目 盆踊り | https://x.com/market_truster/status/2085692183789924373 |
+| medium | new_event_candidate | new | event | イベント候補「追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 追分盆踊り | 追分盆踊り 盆踊り | https://x.com/TomKamoshida/status/2087332639745437714 |
 | medium | new_event_candidate | new | event | イベント候補「追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 追分盆踊り | 追分盆踊り 盆踊り; 平和音頭 盆踊り | https://x.com/TomKamoshida/status/2084442354329825388 |
 | medium | new_event_candidate | new | event | イベント候補「追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 追分盆踊り | 追分盆踊り 盆踊り | https://x.com/TomKamoshida/status/2082282976306774267 |
 | medium | new_event_candidate | new | event | イベント候補「追分盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 追分盆踊り | 追分盆踊り 盆踊り; 軽井沢音頭 盆踊り | https://x.com/TomKamoshida/status/2081531584206041190 |
@@ -5669,6 +5834,8 @@
 | medium | new_event_candidate | new | event | イベント候補「開催のみどりまち盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催のみどりまち盆踊り | 開催のみどりまち盆踊り 盆踊り | https://x.com/youpeace4869/status/2077627345566056543 |
 | medium | new_event_candidate | new | event | イベント候補「開催の喜多見盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催の喜多見盆踊り, （土）-26（日）開催の喜多見盆踊り大会にて「ほっぺちゃん音頭 | 開催の喜多見盆踊り 盆踊り; （土）-26（日）開催の喜多見盆踊り大会にて「ほっぺちゃん音頭 盆踊り; ほっぺちゃん音頭 盆踊り | https://x.com/harunoto/status/2081964837270433813 |
 | medium | new_event_candidate | new | event | イベント候補「開催予定】 南行徳小学校で「欠真間自治会 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 開催予定】 南行徳小学校で「欠真間自治会 納涼盆踊り, 200円の商品も多数予定 自治会青年部による屋台と盆踊り, 欠真間自治会 納涼盆踊り大会 | 開催予定】 南行徳小学校で「欠真間自治会 納涼盆踊り 盆踊り; 200円の商品も多数予定 自治会青年部による屋台と盆踊り 盆踊り; 南行徳小学校 校庭 盆踊り | https://x.com/ichikawa_news/status/2081187871294459929 |
+| medium | new_event_candidate | new | event | イベント候補「間の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 間の盆踊り | 間の盆踊り 盆踊り | https://x.com/tenjin_fes/status/2087400920653210027 |
+| medium | new_event_candidate | new | event | イベント候補「間伏地区納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 間伏地区納涼盆踊り, 間伏納涼盆踊り | 間伏地区納涼盆踊り 盆踊り; 間伏納涼盆踊り 盆踊り | https://x.com/oshimatown/status/2087090926460309753 |
 | medium | new_event_candidate | new | event | イベント候補「関門海峡花火大会と周防大島花火大会・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 関門海峡花火大会と周防大島花火大会・盆踊り, 周防大島花火大会・盆踊り, 灯籠流しや盆踊り | 関門海峡花火大会と周防大島花火大会・盆踊り 盆踊り; 周防大島花火大会・盆踊り 盆踊り | https://x.com/market_truster/status/2087015814721667212 |
 | medium | new_event_candidate | new | event | イベント候補「阿寒湖温泉まりむ館にて仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 阿寒湖温泉まりむ館にて仮装盆踊り | 阿寒湖温泉まりむ館にて仮装盆踊り 盆踊り | https://x.com/Toka_cos_akanko/status/2085935039880286398 |
 | medium | new_event_candidate | new | event | イベント候補「雑司ヶ谷鬼子母神盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雑司ヶ谷鬼子母神盆踊り | 雑司ヶ谷鬼子母神盆踊り 盆踊り | https://x.com/toshimamirai/status/2081606955123261500 |
@@ -5676,8 +5843,10 @@
 | medium | new_event_candidate | new | event | イベント候補「雨上がりましたが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨上がりましたが盆踊り | 雨上がりましたが盆踊り 盆踊り | https://x.com/k_oasis2nd_dash/status/2083872975141671208 |
 | medium | new_event_candidate | new | event | イベント候補「雨天で延期となった「雑司が谷鬼子母神盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨天で延期となった「雑司が谷鬼子母神盆踊り, 雑司が谷鬼子母神盆踊り | 雨天で延期となった「雑司が谷鬼子母神盆踊り 盆踊り; 雑司が谷鬼子母神盆踊り 盆踊り; 雑司が谷鬼子母神堂 盆踊り | https://x.com/ikebukuro_times/status/2082753064105300215 |
 | medium | new_event_candidate | new | event | イベント候補「雪谷商店街「雪谷盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雪谷商店街「雪谷盆踊り, 盆踊り情報2026, 雪谷盆踊り | 雪谷商店街「雪谷盆踊り 盆踊り; 盆踊り情報2026 盆踊り | https://x.com/otafull/status/2076577375526244515 |
+| medium | new_event_candidate | new | event | イベント候補「電磁盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 電磁盆踊り | 電磁盆踊り 盆踊り | https://x.com/kimamaMan2005/status/2087356429342789998 |
 | medium | new_event_candidate | new | event | イベント候補「電通大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 電通大盆踊り, ついて 電通大盆踊り, 2026は電気通信大学の大学院入試と日程が被っていることから盆踊り | 電通大盆踊り 盆踊り; ついて 電通大盆踊り 盆踊り | https://x.com/kyonmelon/status/2085691220073005099 |
 | medium | new_event_candidate | new | event | イベント候補「青山 表参道 善光寺 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青山 表参道 善光寺 盆踊り | 青山 表参道 善光寺 盆踊り 盆踊り; 河内音頭 盆踊り; 相川音頭 盆踊り | https://x.com/_masakari/status/2085195502879146329 |
+| medium | new_event_candidate | new | event | イベント候補「音楽・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音楽・盆踊り | 音楽・盆踊り 盆踊り | https://x.com/sapporo_fes/status/2087399713415024720 |
 | medium | new_event_candidate | new | event | イベント候補「音楽・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音楽・盆踊り | 音楽・盆踊り 盆踊り | https://x.com/sapporo_fes/status/2086960707837497513 |
 | medium | new_event_candidate | new | event | イベント候補「音楽・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音楽・盆踊り | 音楽・盆踊り 盆踊り | https://x.com/etb_news/status/2084490294423417107 |
 | medium | new_event_candidate | new | event | イベント候補「音楽・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音楽・盆踊り | 音楽・盆踊り 盆踊り | https://x.com/sapporo_fes/status/2082255733345980895 |
@@ -5916,6 +6085,7 @@
 | medium | new_event_candidate | new | event | イベント候補「築地本願寺で祈る 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺で祈る 盆踊り | 築地本願寺で祈る 盆踊り 中央区 盆踊り | https://x.com/yametageteyooo/status/2083064393970094091 |
 | medium | new_event_candidate | new | event | イベント候補「築地本願寺にて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺にて盆踊り, 築地場外の名店が出店していて『日本一美味しい盆踊り, 日本一美味しい盆踊り | 築地本願寺にて盆踊り 中央区 盆踊り; 築地場外の名店が出店していて『日本一美味しい盆踊り 中央区 盆踊り; しゃけこも踊り 中央区 盆踊り | https://x.com/tsukijiyumi/status/2081966455017677045 |
 | medium | new_event_candidate | new | event | イベント候補「築地本願寺の日本一美味しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺の日本一美味しい盆踊り, 銀座でも盆踊り | 築地本願寺の日本一美味しい盆踊り 中央区 盆踊り; 銀座でも盆踊り 中央区 盆踊り | https://x.com/wCf8aXMdcoGkHOy/status/2083325575129899514 |
+| medium | new_event_candidate | new | event | イベント候補「築地本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺の盆踊り | 築地本願寺の盆踊り 中央区 盆踊り | https://x.com/suzusuzune7/status/2087129604972753051 |
 | medium | new_event_candidate | new | event | イベント候補「築地本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺の盆踊り | 築地本願寺の盆踊り 中央区 盆踊り | https://x.com/sasurai_3/status/2086266701805744607 |
 | medium | new_event_candidate | new | event | イベント候補「築地本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺の盆踊り | 築地本願寺の盆踊り 中央区 盆踊り | https://x.com/riku_xx/status/2084988079300092042 |
 | medium | new_event_candidate | new | event | イベント候補「築地本願寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地本願寺の盆踊り | 築地本願寺の盆踊り 中央区 盆踊り | https://x.com/MitsugiYurika/status/2084197472856142047 |
@@ -6167,6 +6337,7 @@
 | medium | new_event_candidate | new | event | イベント候補「上野恩賜公園で「第三回ふるさと東京応援祭 ビールと浴衣de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野恩賜公園で「第三回ふるさと東京応援祭 ビールと浴衣de盆踊り, アニソン盆踊り, 第三回ふるさと東京応援祭 ビールと浴衣de盆踊り | 上野恩賜公園で「第三回ふるさと東京応援祭 ビールと浴衣de盆踊り 台東区 盆踊り; アニソン盆踊り 台東区 盆踊り | https://x.com/elegelacom/status/2061731909416415240 |
 | medium | new_event_candidate | new | event | イベント候補「上野恩賜公園で「第三回ふるさと東京応援祭 ビールと浴衣de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野恩賜公園で「第三回ふるさと東京応援祭 ビールと浴衣de盆踊り, アニソン盆踊り, 第三回ふるさと東京応援祭 ビールと浴衣de盆踊り | 上野恩賜公園で「第三回ふるさと東京応援祭 ビールと浴衣de盆踊り 台東区 盆踊り; アニソン盆踊り 台東区 盆踊り | https://x.com/StreamerPress/status/2061732294810067411 |
 | medium | new_event_candidate | new | event | イベント候補「上野恩賜公園でレッツ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野恩賜公園でレッツ盆踊り | 上野恩賜公園でレッツ盆踊り 台東区 盆踊り; みんなでユタゴン音頭 台東区 盆踊り; ユタゴン音頭 台東区 盆踊り | https://x.com/atamikaiju1027/status/2085575921994789162 |
+| medium | new_event_candidate | new | event | イベント候補「上野恩賜公園で行われてます『ゐの市盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野恩賜公園で行われてます『ゐの市盆踊り, ゐの市盆踊り | 上野恩賜公園で行われてます『ゐの市盆踊り 台東区 盆踊り; ゐの市盆踊り 台東区 盆踊り | https://x.com/komaiumeno/status/2087443577999863931 |
 | medium | new_event_candidate | new | event | イベント候補「上野恩賜公園で開催される 『第三回 ビールと浴衣de盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上野恩賜公園で開催される 『第三回 ビールと浴衣de盆踊り, 麻布きもの」さんから浴衣をお借りして盆踊り, 第三回 ビールと浴衣de盆踊りin上野2026 | 上野恩賜公園で開催される 『第三回 ビールと浴衣de盆踊り 台東区 盆踊り; 麻布きもの」さんから浴衣をお借りして盆踊り 台東区 盆踊り | https://x.com/TCC_mirei/status/2070838788847444069 |
 | medium | new_event_candidate | new | event | イベント候補「下町情緒ある盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 下町情緒ある盆踊り | 下町情緒ある盆踊り 台東区 盆踊り | https://x.com/tomohikos/status/2063410620381495667 |
 | medium | new_event_candidate | new | event | イベント候補「学べる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 学べる盆踊り | 学べる盆踊り 台東区 盆踊り | https://x.com/tommy__tokyo/status/2068665233510674491 |
@@ -6270,6 +6441,27 @@
 | medium | new_event_candidate | new | event | イベント候補「杉七小学校や梅里中央公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 杉七小学校や梅里中央公園の盆踊り | 杉七小学校や梅里中央公園の盆踊り 杉並区 盆踊り | https://x.com/shouwakai/status/2077241055716745331 |
 | medium | new_event_candidate | new | event | イベント候補「杉並区梅里中央公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 杉並区梅里中央公園の盆踊り | 杉並区梅里中央公園の盆踊り 杉並区 盆踊り | https://x.com/1949oyaji/status/2083687163796025730 |
 | medium | new_event_candidate | new | event | イベント候補「梅里中央公園恒例の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 梅里中央公園恒例の盆踊り | 梅里中央公園恒例の盆踊り 杉並区 盆踊り | https://x.com/smile_omoiyari/status/2084066122018824411 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087021924262244804 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087013341185310939 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一番楽しか 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087012708747194677 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一番楽しかったと 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087012297843859820 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一番楽しかったと言 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087011957555806392 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一番楽しかったと言 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087011700432421027 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087008891834175943 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り | https://x.com/saiga0130/status/2087008542532436253 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一番楽しかったと 東京都台東区 盆踊り | https://x.com/saiga0130/status/2086799023621669162 |
+| medium | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 東京都台東区 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 東京都台東区 盆踊り; 提供いただき 東京都台東区 盆踊り; 1本の花火が一番楽しかったと言 東京都台東区 盆踊り | https://x.com/saiga0130/status/2086791023079092249 |
+| medium | new_event_candidate | new | event | イベント候補「夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏フェス盆踊り | 夏フェス盆踊り 東京都品川区 盆踊り | https://x.com/Ma_umojh/status/2077269864708968727 |
+| medium | new_event_candidate | new | event | イベント候補「夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏フェス盆踊り | 夏フェス盆踊り 東京都品川区 盆踊り | https://x.com/dreadyarou/status/2076214268383662433 |
+| medium | new_event_candidate | new | event | イベント候補「夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏フェス盆踊り | 夏フェス盆踊り 東京都品川区 盆踊り | https://x.com/dreadyarou/status/2075850262019981316 |
+| medium | new_event_candidate | new | event | イベント候補「蛇窪神社 夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蛇窪神社 夏フェス盆踊り, 有名盆踊り | 蛇窪神社 夏フェス盆踊り 東京都品川区 盆踊り; 有名盆踊り 東京都品川区 盆踊り | https://x.com/ToshiYamato/status/2075922612799393980 |
+| medium | new_event_candidate | new | event | イベント候補「墨田区で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墨田区で盆踊り | 墨田区で盆踊り 東京都墨田区 盆踊り | https://x.com/ghggf453541891/status/2079136953237483665 |
+| medium | new_event_candidate | new | event | イベント候補「納涼盆おどり大会」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊り情報2026 | 納涼盆おどり大会 東京都大田区 盆踊り; 盆踊り情報2026 東京都大田区 盆踊り | https://x.com/otafull/status/2079038594434629919 |
+| medium | new_event_candidate | new | event | イベント候補「地域の皆様と交流」碑文谷公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の皆様と交流」碑文谷公園盆踊り | 地域の皆様と交流」碑文谷公園盆踊り 東京都目黒区 盆踊り | https://x.com/y_hiroshi_1209/status/2081297278929871304 |
+| medium | new_event_candidate | new | event | イベント候補「地域の皆様と交流」碑文谷公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の皆様と交流」碑文谷公園盆踊り | 地域の皆様と交流」碑文谷公園盆踊り 東京都目黒区 盆踊り | https://x.com/y_hiroshi_1209/status/2081296539662884881 |
+| medium | new_event_candidate | new | event | イベント候補「来週の北新井公園で行われる 納涼盆踊り大会に向けて町内で 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の北新井公園で行われる 納涼盆踊り大会に向けて町内で 盆踊り | 来週の北新井公園で行われる 納涼盆踊り大会に向けて町内で 盆踊り 東京都練馬区 盆踊り | https://x.com/studioakira/status/2075907514076700766 |
+| medium | new_event_candidate | new | event | イベント候補「練馬区にある三原台公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練馬区にある三原台公園の盆踊り, 日中は娘の合唱発表で近所のお祭りに夜は練馬区の盆踊り | 練馬区にある三原台公園の盆踊り 東京都練馬区 盆踊り; 日中は娘の合唱発表で近所のお祭りに夜は練馬区の盆踊り 東京都練馬区 盆踊り | https://x.com/kajix_japan/status/2081010715658469541 |
+| medium | new_event_candidate | new | event | イベント候補「豊玉第一町会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豊玉第一町会納涼盆踊り, 練馬区盆踊り | 豊玉第一町会納涼盆踊り 東京都練馬区 盆踊り; 練馬区盆踊り 東京都練馬区 盆踊り | https://x.com/komaikai/status/2086254697544081781 |
 | medium | new_event_candidate | new | event | イベント候補「富浜三丁目納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 富浜三丁目納涼盆踊り, 本塩自治会 盆踊り, 香取自治会 盆踊り | 富浜三丁目納涼盆踊り 松戸市 盆踊り; 本塩自治会 盆踊り 松戸市 盆踊り | https://x.com/luxidea/status/2071104732387852483 |
 | medium | new_event_candidate | new | event | イベント候補「松戸中央公園で「ラストサマーフェス」 コスプレイヤーも一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松戸中央公園で「ラストサマーフェス」 コスプレイヤーも一緒に盆踊り | 松戸中央公園で「ラストサマーフェス」 コスプレイヤーも一緒に盆踊り 松戸市 盆踊り | https://x.com/eiko_kamijo/status/2087049531561320676 |
 | medium | new_event_candidate | new | event | イベント候補「松戸中央公園で「ラストサマーフェス」 コスプレイヤーも一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 松戸中央公園で「ラストサマーフェス」 コスプレイヤーも一緒に盆踊り | 松戸中央公園で「ラストサマーフェス」 コスプレイヤーも一緒に盆踊り 松戸市 盆踊り | https://x.com/matsu_traveller/status/2086731297616175418 |
@@ -6326,6 +6518,7 @@
 | medium | new_event_candidate | new | event | イベント候補「渋谷盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 輪になり盆踊り | 渋谷盆踊り 渋谷区 盆踊り; 輪になり盆踊り 渋谷区 盆踊り | https://x.com/pZGorcaNBEERVyr/status/2084832622858146064 |
 | medium | new_event_candidate | new | event | イベント候補「渋谷駅前が大きな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 渋谷駅前が大きな盆踊り | 渋谷駅前が大きな盆踊り 渋谷区 盆踊り; 渋谷盆踊り 渋谷区 盆踊り; 渋谷盆踊り2026 渋谷区 盆踊り; 渋谷ならではの踊り 渋谷区 盆踊り | https://x.com/shibuya_bunka/status/2083033591525908565 |
 | medium | new_event_candidate | new | event | イベント候補「高輪ゲートウェイの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高輪ゲートウェイの盆踊り, あとは歌舞伎町の盆踊り | 高輪ゲートウェイの盆踊り 渋谷区 盆踊り; 渋谷盆踊り 渋谷区 盆踊り | https://x.com/yamajajan/status/2087037166199382434 |
+| medium | new_event_candidate | new | event | イベント候補「11日の西久保八幡神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 11日の西久保八幡神社の盆踊り | 11日の西久保八幡神社の盆踊り 港区 盆踊り | https://x.com/mayu05146350890/status/2087092680342032578 |
 | medium | new_event_candidate | new | event | イベント候補「24日（水）第51回浄土寺盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 24日（水）第51回浄土寺盆踊り | 24日（水）第51回浄土寺盆踊り 港区 盆踊り | https://x.com/shin5tw99/status/2069932544456573345 |
 | medium | new_event_candidate | new | event | イベント候補「ただいま青山善光寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ただいま青山善光寺の盆踊り | ただいま青山善光寺の盆踊り 港区 盆踊り | https://x.com/walkingfilmlove/status/2081682521939476543 |
 | medium | new_event_candidate | new | event | イベント候補「人と地域を元気にする盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人と地域を元気にする盆踊り | 人と地域を元気にする盆踊り 港区 盆踊り | https://x.com/Minato_Marathon/status/1983513991298371610 |
@@ -6351,6 +6544,7 @@
 | medium | new_event_candidate | new | event | イベント候補「青山表参道商店会 「青山善光寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青山表参道商店会 「青山善光寺納涼盆踊り, 青山善光寺納涼盆踊り大会 | 青山表参道商店会 「青山善光寺納涼盆踊り 港区 盆踊り; 青山善光寺納涼盆踊り大会 港区 盆踊り | https://x.com/wadaikoCH/status/2081675745181782271 |
 | medium | new_event_candidate | new | event | イベント候補「青山表参道商店街納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青山表参道商店街納涼盆踊り, 青山善光寺 盆踊り | 青山表参道商店街納涼盆踊り 港区 盆踊り; 青山善光寺 盆踊り 港区 盆踊り | https://x.com/FFleurs/status/2081744973846978615 |
 | medium | new_event_candidate | new | event | イベント候補「飯食べてから へ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飯食べてから へ盆踊り | 飯食べてから へ盆踊り 港区 盆踊り | https://x.com/Oyjl5HlUz0dsiu3/status/2081623922999775278 |
+| medium | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, 熊谷市レクリエーション協会主催「第41回納涼盆踊り, 納涼盆踊りの夕べ | 納涼盆踊り 町田市 盆踊り; 熊谷市レクリエーション協会主催「第41回納涼盆踊り 町田市 盆踊り | https://x.com/kumagayacity/status/2087373574260789328 |
 | medium | new_event_candidate | new | event | イベント候補「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼盆踊り, 熊谷市レクリエーション協会第41回納涼盆踊り | 納涼盆踊り 町田市 盆踊り; 熊谷市レクリエーション協会第41回納涼盆踊り 町田市 盆踊り | https://x.com/kumagayacity/status/2082662515239264299 |
 | medium | new_event_candidate | new | event | イベント候補「自由が丘納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自由が丘駅前ロータリー(目黒区) 自由が丘の夏の象徴的盆踊り, ホイップるん音頭 | 自由が丘納涼盆踊り 目黒区 盆踊り; 自由が丘駅前ロータリー(目黒区) 自由が丘の夏の象徴的盆踊り 目黒区 盆踊り; 自由が丘駅前ロータリー(目黒区 目黒区 盆踊り; ホイップるん音頭 目黒区 盆踊り | https://x.com/natsutr_bon/status/2070035390611038433 |
 | medium | new_event_candidate | new | event | イベント候補「東灘・福井池公園グラウンドで「西青木 盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東灘・福井池公園グラウンドで「西青木 盆おどり, 西青木 盆おどり | 東灘・福井池公園グラウンドで「西青木 盆おどり 神戸市東灘区 盆踊り; 西青木 盆おどり 神戸市東灘区 盆踊り | https://x.com/higashinada_jou/status/2079795822003409307 |
@@ -6378,6 +6572,7 @@
 | medium | new_event_candidate | new | event | イベント候補「大学創立100周年の記念の年に開催された特別な鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大学創立100周年の記念の年に開催された特別な鴨台盆踊り | 大学創立100周年の記念の年に開催された特別な鴨台盆踊り 豊島区 盆踊り; 仏像音頭 豊島区 盆踊り | https://x.com/usagitv/status/2075934174276706543 |
 | medium | new_event_candidate | new | event | イベント候補「大学盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大学盆踊り | 大学盆踊り 豊島区 盆踊り | https://x.com/Ocha_bon/status/2075854465404744089 |
 | medium | new_event_candidate | new | event | イベント候補「大正大学 「第16回鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大正大学 「第16回鴨台盆踊り, 日中盆踊り, 鴨台盆踊り | 大正大学 「第16回鴨台盆踊り 豊島区 盆踊り; 日中盆踊り 豊島区 盆踊り | https://x.com/wadaikoCH/status/2075818566549713061 |
+| medium | new_event_candidate | new | event | イベント候補「大正大学の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大正大学の盆踊り | 大正大学の盆踊り 豊島区 盆踊り | https://x.com/xxxnabekoxxx/status/2087409232715104367 |
 | medium | new_event_candidate | new | event | イベント候補「大正大学の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大正大学の盆踊り | 大正大学の盆踊り 豊島区 盆踊り; よさこいまた踊り 豊島区 盆踊り | https://x.com/bangqiu1094/status/2075851425931042960 |
 | medium | new_event_candidate | new | event | イベント候補「大正大学の鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大正大学の鴨台盆踊り, 今シーズン初の盆踊り, 久しぶりの盆踊り | 大正大学の鴨台盆踊り 豊島区 盆踊り; 今シーズン初の盆踊り 豊島区 盆踊り; 良かった 豊島区 盆踊り; 万博音頭 豊島区 盆踊り | https://x.com/fuyukapi/status/2075926434401677598 |
 | medium | new_event_candidate | new | event | イベント候補「定番の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 定番の盆踊り, 情熱的なタンゴや地域の盆踊り | 定番の盆踊り 豊島区 盆踊り; 情熱的なタンゴや地域の盆踊り 豊島区 盆踊り | https://x.com/usagitv/status/2076084226039108045 |
@@ -6447,6 +6642,7 @@
 | low | new_event_candidate | new | event | イベント候補「18時より自由が丘駅前 ロータリーで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 18時より自由が丘駅前 ロータリーで盆踊り | 18時より自由が丘駅前 ロータリーで盆踊り 盆踊り | https://x.com/misogen_online/status/2078349171648807253 |
 | low | new_event_candidate | new | event | イベント候補「18時半からはIRIAMにて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 18時半からはIRIAMにて盆踊り | 18時半からはIRIAMにて盆踊り 盆踊り; の飲み雑を配信します 盆踊り | https://x.com/Keito_Yasakaa/status/2084559903277064698 |
 | low | new_event_candidate | new | event | イベント候補「18時半から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 18時半から盆踊り | 18時半から盆踊り 盆踊り | https://x.com/kame_matsuri/status/2083827982603571276 |
+| low | new_event_candidate | new | event | イベント候補「1977年頃から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1977年頃から盆踊り | 1977年頃から盆踊り 盆踊り | https://x.com/ktanaka1999/status/2087331985966674013 |
 | low | new_event_candidate | new | event | イベント候補「1989より前に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1989より前に盆踊り | 1989より前に盆踊り 盆踊り | https://x.com/7376GgBw1gwxUM3/status/2071536800653611118 |
 | low | new_event_candidate | new | event | イベント候補「19時から2回目の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19時から2回目の盆踊り | 19時から2回目の盆踊り 盆踊り | https://x.com/nakamebonodori/status/2084932629980463316 |
 | low | new_event_candidate | new | event | イベント候補「19時から谷中銀座で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 19時から谷中銀座で盆踊り | 19時から谷中銀座で盆踊り 盆踊り | https://x.com/sendagi2w/status/2083439614979891466 |
@@ -6454,6 +6650,7 @@
 | low | new_event_candidate | new | event | イベント候補「1人だけ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1人だけ盆踊り | 1人だけ盆踊り 盆踊り | https://x.com/Mao_motionactor/status/2076216508850774431 |
 | low | new_event_candidate | new | event | イベント候補「1人踊ってる 三つ子の魂100まで やはり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1人踊ってる 三つ子の魂100まで やはり盆踊り | 1人踊ってる 三つ子の魂100まで やはり盆踊り 盆踊り | https://x.com/aoianemone1016/status/2083824383358058715 |
 | low | new_event_candidate | new | event | イベント候補「1件目の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1件目の盆踊り | 1件目の盆踊り 盆踊り | https://x.com/dec_kawasaki/status/2081322068277408060 |
+| low | new_event_candidate | new | event | イベント候補「1公演完全に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1公演完全に盆踊り | 1公演完全に盆踊り 盆踊り | https://x.com/kawanyanko171/status/2087423511019278338 |
 | low | new_event_candidate | new | event | イベント候補「1周続く大屋根リングの上で万博期間中に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1周続く大屋根リングの上で万博期間中に盆踊り | 1周続く大屋根リングの上で万博期間中に盆踊り 盆踊り | https://x.com/YKpv_381/status/2081955955424772368 |
 | low | new_event_candidate | new | event | イベント候補「1年前の今日は 「大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1年前の今日は 「大屋根リング盆踊り, 大屋根リング盆踊り | 1年前の今日は 「大屋根リング盆踊り 盆踊り; 大屋根リング盆踊り 盆踊り | https://x.com/circularchan/status/2081869547607556277 |
 | low | new_event_candidate | new | event | イベント候補「1年前の今日は「大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 1年前の今日は「大屋根リング盆踊り, 大屋根リング盆踊り | 1年前の今日は「大屋根リング盆踊り 盆踊り; 大屋根リング盆踊り 盆踊り | https://x.com/nanami_twintail/status/2081876978924482902 |
@@ -6519,10 +6716,12 @@
 | low | new_event_candidate | new | event | イベント候補「2回目開催嬉しいです 今回も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2回目開催嬉しいです 今回も盆踊り | 2回目開催嬉しいです 今回も盆踊り 盆踊り | https://x.com/mirimiri529/status/2069686109890859020 |
 | low | new_event_candidate | new | event | イベント候補「2幕始まりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2幕始まりの盆踊り | 2幕始まりの盆踊り 盆踊り | https://x.com/GennoHollywood/status/2085192534343729229 |
 | low | new_event_candidate | new | event | イベント候補「2年ぶり『見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2年ぶり『見取り図盆踊り, 見取り図盆踊り | 2年ぶり『見取り図盆踊り 盆踊り; 見取り図盆踊り 盆踊り | https://x.com/Imtmynrkrmxy28/status/2061844976183787791 |
+| low | new_event_candidate | new | event | イベント候補「2年連続 みんなと楽しめたのも奇跡 各地方でDJや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2年連続 みんなと楽しめたのも奇跡 各地方でDJや盆踊り | 2年連続 みんなと楽しめたのも奇跡 各地方でDJや盆踊り 盆踊り | https://x.com/sasakichi_akiba/status/2087204749221446136 |
 | low | new_event_candidate | new | event | イベント候補「2時間くらい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2時間くらい盆踊り | 2時間くらい盆踊り 盆踊り | https://x.com/ina_chan9211/status/2084546056017346843 |
 | low | new_event_candidate | new | event | イベント候補「2時間みっちり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2時間みっちり盆踊り | 2時間みっちり盆踊り 盆踊り | https://x.com/kyosignbrnyo/status/2076222139397746947 |
 | low | new_event_candidate | new | event | イベント候補「2時間半盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2時間半盆踊り | 2時間半盆踊り 盆踊り | https://x.com/Shibatomo_chan/status/2083079305559728487 |
 | low | new_event_candidate | new | event | イベント候補「2時間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2時間盆踊り | 2時間盆踊り 盆踊り | https://x.com/kuroka49093059/status/2063193674335617291 |
+| low | new_event_candidate | new | event | イベント候補「2時間繰り上げ 善光寺盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2時間繰り上げ 善光寺盆踊り | 2時間繰り上げ 善光寺盆踊り 盆踊り | https://x.com/kenta_1964/status/2087358477324767456 |
 | low | new_event_candidate | new | event | イベント候補「2曲目に「女川町のシーパルちゃん（盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 2曲目に「女川町のシーパルちゃん（盆踊り, おながわ盆踊り, 女川町のシーパルちゃん（盆踊りヴァージョン | 2曲目に「女川町のシーパルちゃん（盆踊り 盆踊り; おながわ盆踊り 盆踊り; いっしょに踊ろるパル〜 盆踊り | https://x.com/seapalchan_info/status/2085604512405086293 |
 | low | new_event_candidate | new | event | イベント候補「3 もともと盂蘭盆会という仏教行事の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 3 もともと盂蘭盆会という仏教行事の盆踊り | 3 もともと盂蘭盆会という仏教行事の盆踊り 盆踊り | https://x.com/Mau3_141592/status/2084284232621535488 |
 | low | new_event_candidate | new | event | イベント候補「3 柏盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 3 柏盆踊り | 3 柏盆踊り 盆踊り | https://x.com/POfGDZCmmrLpile/status/2082434402584527160 |
@@ -6550,6 +6749,7 @@
 | low | new_event_candidate | new | event | イベント候補「40年前から変わらない町内会夏祭りの催しと子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 40年前から変わらない町内会夏祭りの催しと子ども盆踊り, アニソン盆踊り | 40年前から変わらない町内会夏祭りの催しと子ども盆踊り 盆踊り; アニソン盆踊り 盆踊り | https://x.com/TamadaHiro33261/status/2085986459761426930 |
 | low | new_event_candidate | new | event | イベント候補「40年近く前に死んでいますが（ぉ 近所の自治会広場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 40年近く前に死んでいますが（ぉ 近所の自治会広場で盆踊り, 外じゃ盆踊り | 40年近く前に死んでいますが（ぉ 近所の自治会広場で盆踊り 盆踊り; 外じゃ盆踊り 盆踊り | https://x.com/magarishippo/status/2086048731842097585 |
 | low | new_event_candidate | new | event | イベント候補「4K撮影】 第34回 夢トピア星置 夏のフェスティバル納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 4K撮影】 第34回 夢トピア星置 夏のフェスティバル納涼盆踊り | 4K撮影】 第34回 夢トピア星置 夏のフェスティバル納涼盆踊り 盆踊り | https://x.com/TDDHQ/status/2087073567582388700 |
+| low | new_event_candidate | new | event | イベント候補「4チャンテレビの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 4チャンテレビの盆踊り | 4チャンテレビの盆踊り 盆踊り | https://x.com/tanaka_you1/status/2087441930414358941 |
 | low | new_event_candidate | new | event | イベント候補「4人で振りコピとして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 4人で振りコピとして盆踊り | 4人で振りコピとして盆踊り 盆踊り | https://x.com/komi_D/status/2066484890842038711 |
 | low | new_event_candidate | new | event | イベント候補「4回 夢トピア星置 夏のフェスティバル 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 4回 夢トピア星置 夏のフェスティバル 納涼盆踊り | 4回 夢トピア星置 夏のフェスティバル 納涼盆踊り 盆踊り | https://x.com/yokkotanrt/status/2087073216846291090 |
 | low | new_event_candidate | new | event | イベント候補「4年でズブズブと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 4年でズブズブと盆踊り | 4年でズブズブと盆踊り 盆踊り | https://x.com/yumiya_pon/status/2086974692485984641 |
@@ -6578,6 +6778,7 @@
 | low | new_event_candidate | new | event | イベント候補「7号に浅草の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 7号に浅草の盆踊り | 7号に浅草の盆踊り 盆踊り | https://x.com/Katze_tanzen/status/2069700588124995951 |
 | low | new_event_candidate | new | event | イベント候補「7日のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 7日のアニソン盆踊り | 7日のアニソン盆踊り 盆踊り | https://x.com/kutame9725/status/2064357025405145311 |
 | low | new_event_candidate | new | event | イベント候補「7時前から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 7時前から盆踊り | 7時前から盆踊り 盆踊り | https://x.com/rokonyan23/status/2084439909511922019 |
+| low | new_event_candidate | new | event | イベント候補「7月に開催した盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 7月に開催した盆踊り | 7月に開催した盆踊り 盆踊り | https://x.com/yuaitiiki/status/2087320835090780226 |
 | low | new_event_candidate | new | event | イベント候補「84件目 大江戸まつり盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 84件目 大江戸まつり盆おどり, 2000年音頭 | 84件目 大江戸まつり盆おどり 盆踊り; 2000年音頭 盆踊り | https://x.com/2tsuo_g/status/2069738015002693957 |
 | low | new_event_candidate | new | event | イベント候補「9尺 3投目らへんから水面盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 9尺 3投目らへんから水面盆踊り | 9尺 3投目らへんから水面盆踊り 盆踊り | https://x.com/kohoku58/status/2079118837447029228 |
 | low | new_event_candidate | new | event | イベント候補「9時まで地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 9時まで地域の盆踊り | 9時まで地域の盆踊り 盆踊り | https://x.com/q7lypw/status/2084452360085295520 |
@@ -6676,6 +6877,7 @@
 | low | new_event_candidate | new | event | イベント候補「Matsuriで地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Matsuriで地元の盆踊り | Matsuriで地元の盆踊り 盆踊り | https://x.com/Komyaku0413/status/2082106674077470769 |
 | low | new_event_candidate | new | event | イベント候補「Meieki Parklet】名駅のど真ん中で一夜限りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Meieki Parklet】名駅のど真ん中で一夜限りの盆踊り | Meieki Parklet】名駅のど真ん中で一夜限りの盆踊り 盆踊り | https://x.com/tecchan_nagoyan/status/2082084192775750135 |
 | low | new_event_candidate | new | event | イベント候補「Mステで『BrandNew』の 初披露なんだけど 本腰を入れて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Mステで『BrandNew』の 初披露なんだけど 本腰を入れて盆踊り | Mステで『BrandNew』の 初披露なんだけど 本腰を入れて盆踊り 盆踊り | https://x.com/dondon_MGA/status/2078015217188163870 |
+| low | new_event_candidate | new | event | イベント候補「NHKでやってた海外での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: NHKでやってた海外での盆踊り | NHKでやってた海外での盆踊り 盆踊り | https://x.com/pakii_san/status/2087445878898659579 |
 | low | new_event_candidate | new | event | イベント候補「NIGHT DANCERで 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: NIGHT DANCERで 盆踊り | NIGHT DANCERで 盆踊り 盆踊り; アカペラ音頭 盆踊り | https://x.com/md4luv_luv/status/2079056783382139055 |
 | low | new_event_candidate | new | event | イベント候補「NIGHTと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: NIGHTと盆踊り | NIGHTと盆踊り 盆踊り | https://x.com/_zzwo/status/2070776590058115174 |
 | low | new_event_candidate | new | event | イベント候補「NIGHTの歌詞読んでるけどこれで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: NIGHTの歌詞読んでるけどこれで盆踊り | NIGHTの歌詞読んでるけどこれで盆踊り 盆踊り | https://x.com/sudaco4869/status/2070790073642303982 |
@@ -6704,9 +6906,11 @@
 | low | new_event_candidate | new | event | イベント候補「ROMEOキャストとして寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ROMEOキャストとして寝転ん盆踊り | ROMEOキャストとして寝転ん盆踊り 盆踊り | https://x.com/RakuV777/status/2085955937064628469 |
 | low | new_event_candidate | new | event | イベント候補「Re】隣町のアグレッシブ過ぎる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Re】隣町のアグレッシブ過ぎる盆踊り | Re】隣町のアグレッシブ過ぎる盆踊り 盆踊り | https://x.com/syun_ten/status/2069408265587589507 |
 | low | new_event_candidate | new | event | イベント候補「Rougeも超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Rougeも超寝転ん盆踊り | Rougeも超寝転ん盆踊り 盆踊り | https://x.com/mizyooon_/status/2085587190575427861 |
+| low | new_event_candidate | new | event | イベント候補「SAYOKOさん 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SAYOKOさん 盆踊り | SAYOKOさん 盆踊り 盆踊り | https://x.com/mediataka/status/2087317121353322721 |
 | low | new_event_candidate | new | event | イベント候補「SIMIと踊ってた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SIMIと踊ってた盆踊り | SIMIと踊ってた盆踊り 盆踊り | https://x.com/kyoiku_TV2/status/2071450515272261649 |
 | low | new_event_candidate | new | event | イベント候補「SOYの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SOYの盆踊り | SOYの盆踊り 盆踊り | https://x.com/vinawylasmi/status/2086734570074808639 |
 | low | new_event_candidate | new | event | イベント候補「SOYの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SOYの盆踊り | SOYの盆踊り 盆踊り | https://x.com/japansheerio/status/2084474824383189217 |
+| low | new_event_candidate | new | event | イベント候補「SSはゆりさんとみすなさんホームで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SSはゆりさんとみすなさんホームで盆踊り | SSはゆりさんとみすなさんホームで盆踊り 盆踊り | https://x.com/SIRO_BProtocol/status/2087299490776850622 |
 | low | new_event_candidate | new | event | イベント候補「SUMMER TIMEの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SUMMER TIMEの盆踊り | SUMMER TIMEの盆踊り 盆踊り | https://x.com/ily_fki3/status/2083112632031306104 |
 | low | new_event_candidate | new | event | イベント候補「Snow Man「カリスマックス」で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Snow Man「カリスマックス」で盆踊り | Snow Man「カリスマックス」で盆踊り 盆踊り; 八木節 盆踊り | https://x.com/Ricky72643659/status/2070697500613419085 |
 | low | new_event_candidate | new | event | イベント候補「SnowManのカリスマックで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: SnowManのカリスマックで盆踊り | SnowManのカリスマックで盆踊り 盆踊り | https://x.com/asadalechan/status/2070852791250427920 |
@@ -6715,6 +6919,7 @@
 | low | new_event_candidate | new | event | イベント候補「THE 虎舞竜の新曲をリリース「日本武道館で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: THE 虎舞竜の新曲をリリース「日本武道館で盆踊り, 日本武道館で盆踊り大会とかもありかな | THE 虎舞竜の新曲をリリース「日本武道館で盆踊り 盆踊り; 日本武道館で盆踊り大会とかもありかな 盆踊り | https://x.com/BonOdoriJapan/status/2064532734832525425 |
 | low | new_event_candidate | new | event | イベント候補「THE人生ズ 今週末は地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: THE人生ズ 今週末は地域の盆踊り | THE人生ズ 今週末は地域の盆踊り 盆踊り | https://x.com/milano_the/status/2082041819685359924 |
 | low | new_event_candidate | new | event | イベント候補「TLで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: TLで盆踊り | TLで盆踊り 盆踊り | https://x.com/parukomatsuri/status/2065621641883685226 |
+| low | new_event_candidate | new | event | イベント候補「TV「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: TV「盆踊り, 盆踊り の起源･ルーツは | TV「盆踊り 盆踊り; 盆踊り の起源･ルーツは 盆踊り | https://x.com/mazoi_sui/status/2087442159406387404 |
 | low | new_event_candidate | new | event | イベント候補「TakenoRuri LIVEと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: TakenoRuri LIVEと盆踊り | TakenoRuri LIVEと盆踊り 盆踊り | https://x.com/tothefuture2017/status/2075928163100819874 |
 | low | new_event_candidate | new | event | イベント候補「Traditional Bon Odori」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Traditional Bon Odori | Traditional Bon Odori 盆踊り | https://x.com/iiwi_hirano/status/2085987648292954464 |
 | low | new_event_candidate | new | event | イベント候補「Tsutsui0524 「国歌を歌う」「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: Tsutsui0524 「国歌を歌う」「盆踊り, 盆踊りを踊る | Tsutsui0524 「国歌を歌う」「盆踊り 盆踊り; 盆踊りを踊る 盆踊り | https://x.com/bigdrumsletspl1/status/2063987427086402031 |
@@ -6844,6 +7049,7 @@
 | low | new_event_candidate | new | event | イベント候補「あと今週はねころん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと今週はねころん盆踊り | あと今週はねころん盆踊り 盆踊り | https://x.com/araisara/status/2084826497890881933 |
 | low | new_event_candidate | new | event | イベント候補「あと別件で松戸サマー今年もあったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと別件で松戸サマー今年もあったら盆踊り | あと別件で松戸サマー今年もあったら盆踊り 盆踊り | https://x.com/cos_sirokumaru/status/2067995808381993255 |
 | low | new_event_candidate | new | event | イベント候補「あと半月ほどしたら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと半月ほどしたら盆踊り, 近所の掲示板にはこどもが描いたであろう盆踊り | あと半月ほどしたら盆踊り 盆踊り; 近所の掲示板にはこどもが描いたであろう盆踊り 盆踊り; どこにも書いてなかった 盆踊り | https://x.com/hinakostoria/status/2070844696927355115 |
+| low | new_event_candidate | new | event | イベント候補「あと地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと地元の盆踊り | あと地元の盆踊り 盆踊り | https://x.com/shizukifujisawa/status/2087394076824059976 |
 | low | new_event_candidate | new | event | イベント候補「あと妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと妖怪盆踊り | あと妖怪盆踊り 盆踊り | https://x.com/Masked_gainer/status/2070419851865477158 |
 | low | new_event_candidate | new | event | イベント候補「あと明日から土日と 中野で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと明日から土日と 中野で盆踊り | あと明日から土日と 中野で盆踊り 盆踊り | https://x.com/seika_moroyasu/status/2083045925304639706 |
 | low | new_event_candidate | new | event | イベント候補「あと来月の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: あと来月の盆踊り | あと来月の盆踊り 盆踊り | https://x.com/ienari10/status/2076436564306190475 |
@@ -6903,6 +7109,7 @@
 | low | new_event_candidate | new | event | イベント候補「いうストレスからも解放されるであろう それと 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いうストレスからも解放されるであろう それと 盆踊り | いうストレスからも解放されるであろう それと 盆踊り 盆踊り | https://x.com/kuma_bot999/status/2062787754988322968 |
 | low | new_event_candidate | new | event | イベント候補「いう訳で本日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いう訳で本日盆踊り | いう訳で本日盆踊り 盆踊り | https://x.com/sakurakoji042/status/2081545055924584461 |
 | low | new_event_candidate | new | event | イベント候補「いう話になり 私「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いう話になり 私「盆踊り, 盆踊り、踊れるかな…(都内のやつムズくない | いう話になり 私「盆踊り 盆踊り; 盆踊り、踊れるかな…(都内のやつムズくない 盆踊り | https://x.com/asamixjuice/status/2064348375168991405 |
+| low | new_event_candidate | new | event | イベント候補「いえば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いえば盆踊り | いえば盆踊り 盆踊り | https://x.com/589saito/status/2087313020167082377 |
 | low | new_event_candidate | new | event | イベント候補「いかにラクをするかしか考えていません 今日も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いかにラクをするかしか考えていません 今日も盆踊り | いかにラクをするかしか考えていません 今日も盆踊り 盆踊り | https://x.com/s_y_Singer/status/2083774670730678593 |
 | low | new_event_candidate | new | event | イベント候補「いか踊りの次は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いか踊りの次は盆踊り | いか踊りの次は盆踊り 盆踊り | https://x.com/0m0Ay/status/2063933560512503921 |
 | low | new_event_candidate | new | event | イベント候補「いきたいんだが 狂った「有識者の群れ」や 「野党の反政府盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いきたいんだが 狂った「有識者の群れ」や 「野党の反政府盆踊り, 野党の反政府盆踊り | いきたいんだが 狂った「有識者の群れ」や 「野党の反政府盆踊り 盆踊り; 野党の反政府盆踊り 盆踊り; …といきたいんだが 盆踊り | https://x.com/setomaki/status/2076220741641806244 |
@@ -6940,6 +7147,7 @@
 | low | new_event_candidate | new | event | イベント候補「いまだに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いまだに盆踊り | いまだに盆踊り 盆踊り; LKが音頭 盆踊り; 全国民が踊り 盆踊り | https://x.com/duca_sgmn/status/2081292677363204130 |
 | low | new_event_candidate | new | event | イベント候補「いまでも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いまでも盆踊り | いまでも盆踊り 盆踊り | https://x.com/Cyber_G_1224/status/2066825810334650506 |
 | low | new_event_candidate | new | event | イベント候補「いま流行している盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いま流行している盆踊り, 町会の盆踊り | いま流行している盆踊り 盆踊り; 町会の盆踊り 盆踊り | https://x.com/vivanon_iemoto/status/2075173628266922218 |
+| low | new_event_candidate | new | event | イベント候補「いま盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いま盆踊り, 大阪 道頓堀 インターナショナル盆踊り | いま盆踊り 盆踊り; 大阪 道頓堀 インターナショナル盆踊り 盆踊り | https://x.com/Empire_Yamato/status/2087408550272471292 |
 | low | new_event_candidate | new | event | イベント候補「いや、お盆やん⋯盆踊りやから⋯」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いや、お盆やん⋯盆踊りやから⋯ | いや、お盆やん⋯盆踊りやから⋯ 盆踊り | https://x.com/Senpai_kuriman/status/2085982559503278510 |
 | low | new_event_candidate | new | event | イベント候補「いや戦後まで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いや戦後まで盆踊り | いや戦後まで盆踊り 盆踊り | https://x.com/DerGefreiter/status/2078756091094282470 |
 | low | new_event_candidate | new | event | イベント候補「いよいよ中野駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いよいよ中野駅前盆踊り | いよいよ中野駅前盆踊り 盆踊り | https://x.com/Furugiya11/status/2082682231383007351 |
@@ -6955,6 +7163,7 @@
 | low | new_event_candidate | new | event | イベント候補「いよいよ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いよいよ盆踊り | いよいよ盆踊り 盆踊り | https://x.com/TShibata_1997/status/2067200107800604674 |
 | low | new_event_candidate | new | event | イベント候補「いりゃあせ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いりゃあせ盆踊り | いりゃあせ盆踊り 盆踊り | https://x.com/entrust_dream/status/2064729521899860039 |
 | low | new_event_candidate | new | event | イベント候補「いろはにODORYANSEはタオル曲じゃなくてサビで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いろはにODORYANSEはタオル曲じゃなくてサビで盆踊り | いろはにODORYANSEはタオル曲じゃなくてサビで盆踊り 盆踊り | https://x.com/EBC_TANTO/status/2086734590396489956 |
+| low | new_event_candidate | new | event | イベント候補「いろんなところで夏祭りの提灯や 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いろんなところで夏祭りの提灯や 盆踊り | いろんなところで夏祭りの提灯や 盆踊り 盆踊り; 夏祭りの提灯や 盆踊り | https://x.com/Abby_Citron/status/2087422185413681411 |
 | low | new_event_candidate | new | event | イベント候補「いろんなスーパーの駐車場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いろんなスーパーの駐車場で盆踊り | いろんなスーパーの駐車場で盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/swind_prv/status/2082343855593320471 |
 | low | new_event_candidate | new | event | イベント候補「いろんなリズムを盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いろんなリズムを盆踊り | いろんなリズムを盆踊り 盆踊り | https://x.com/cult2344/status/2075881803005706327 |
 | low | new_event_candidate | new | event | イベント候補「いろんな場所で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: いろんな場所で盆踊り | いろんな場所で盆踊り 盆踊り; 東京音頭 盆踊り; 四十年ぶり位に東京音頭 盆踊り | https://x.com/Momi0226/status/2079002892233814403 |
@@ -7001,6 +7210,7 @@
 | low | new_event_candidate | new | event | イベント候補「うたプリ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うたプリ盆踊り | うたプリ盆踊り 盆踊り | https://x.com/taito_/status/2069441117188391090 |
 | low | new_event_candidate | new | event | イベント候補「うたプリ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うたプリ盆踊り | うたプリ盆踊り 盆踊り | https://x.com/yamanoSIROKUMA/status/2062123817791795328 |
 | low | new_event_candidate | new | event | イベント候補「うたプリ音頭（新曲）で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うたプリ音頭（新曲）で盆踊り | うたプリ音頭（新曲）で盆踊り 盆踊り; うたプリ音頭 盆踊り | https://x.com/sio_sb/status/2069443757116989554 |
+| low | new_event_candidate | new | event | イベント候補「うちのギリ近所エリアで何個か盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちのギリ近所エリアで何個か盆踊り | うちのギリ近所エリアで何個か盆踊り 盆踊り | https://x.com/naru1986yayoi/status/2087411442601627766 |
 | low | new_event_candidate | new | event | イベント候補「うちの先代トイプーおばあちゃん最期の年に行った盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの先代トイプーおばあちゃん最期の年に行った盆踊り, バギー片手に盆踊り | うちの先代トイプーおばあちゃん最期の年に行った盆踊り 盆踊り; バギー片手に盆踊り 盆踊り | https://x.com/anri_Goofy/status/2081652602882932968 |
 | low | new_event_candidate | new | event | イベント候補「うちの地域の人達は老いも若きもみんな踊るタイプの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの地域の人達は老いも若きもみんな踊るタイプの盆踊り | うちの地域の人達は老いも若きもみんな踊るタイプの盆踊り 盆踊り | https://x.com/VnuVp/status/2086418971541303646 |
 | low | new_event_candidate | new | event | イベント候補「うちの地域めっちゃ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの地域めっちゃ盆踊り | うちの地域めっちゃ盆踊り 盆踊り | https://x.com/jeju_mikan/status/2081968627902042498 |
@@ -7009,6 +7219,7 @@
 | low | new_event_candidate | new | event | イベント候補「うちの幼稚園は卒園後一年くらいは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの幼稚園は卒園後一年くらいは盆踊り | うちの幼稚園は卒園後一年くらいは盆踊り 盆踊り | https://x.com/MuscleTrainQ1/status/2076915113291120724 |
 | low | new_event_candidate | new | event | イベント候補「うちの方は明日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの方は明日盆踊り | うちの方は明日盆踊り 盆踊り | https://x.com/SQOvUfNHoEknbNX/status/2083100642818621524 |
 | low | new_event_candidate | new | event | イベント候補「うちの方は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの方は盆踊り | うちの方は盆踊り 盆踊り | https://x.com/kuro_neko_genki/status/2083463179536089254 |
+| low | new_event_candidate | new | event | イベント候補「うちの田舎は初盆の家は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの田舎は初盆の家は盆踊り | うちの田舎は初盆の家は盆踊り 盆踊り | https://x.com/ToKotok19182179/status/2087428646990660069 |
 | low | new_event_candidate | new | event | イベント候補「うちの町では盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの町では盆踊り | うちの町では盆踊り 盆踊り | https://x.com/lcy3j56sEaD4WGP/status/2086249024521449891 |
 | low | new_event_candidate | new | event | イベント候補「うちの町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの町会の盆踊り | うちの町会の盆踊り 盆踊り | https://x.com/boukokudb/status/2084289453007454561 |
 | low | new_event_candidate | new | event | イベント候補「うちの町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: うちの町会の盆踊り, 来年もダンスの先生と一緒に振り付けを練って懐かしい曲を盆踊り | うちの町会の盆踊り 盆踊り; 来年もダンスの先生と一緒に振り付けを練って懐かしい曲を盆踊り 盆踊り | https://x.com/wasabizake1/status/2081735746113937545 |
@@ -7110,6 +7321,7 @@
 | low | new_event_candidate | new | event | イベント候補「おちびさんが初めて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おちびさんが初めて盆踊り | おちびさんが初めて盆踊り 盆踊り | https://x.com/oyomechan_fight/status/2081659776120013238 |
 | low | new_event_candidate | new | event | イベント候補「おっきい規模の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おっきい規模の盆踊り | おっきい規模の盆踊り 盆踊り | https://x.com/QSx5m/status/2071488745875136772 |
 | low | new_event_candidate | new | event | イベント候補「おっ前の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おっ前の盆踊り | おっ前の盆踊り 盆踊り | https://x.com/kae_m00n/status/2076591210601578600 |
+| low | new_event_candidate | new | event | イベント候補「おつかれさまです そちらは逆に空いているのですよね 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おつかれさまです そちらは逆に空いているのですよね 盆踊り | おつかれさまです そちらは逆に空いているのですよね 盆踊り 盆踊り | https://x.com/ina_murasan/status/2087432936119517562 |
 | low | new_event_candidate | new | event | イベント候補「おつまみは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おつまみは盆踊り | おつまみは盆踊り 盆踊り | https://x.com/kazato_maki/status/2081037032223350978 |
 | low | new_event_candidate | new | event | イベント候補「おながわ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おながわ盆踊り | おながわ盆踊り 盆踊り | https://x.com/rap_wanyu/status/2086313459176927690 |
 | low | new_event_candidate | new | event | イベント候補「おながわ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: おながわ盆踊り, 女川町のシーパルちゃん（盆踊り, 女川町のシーパルちゃん（盆踊りヴァージョン | おながわ盆踊り 盆踊り; 女川町のシーパルちゃん（盆踊り 盆踊り | https://x.com/seapalchan_info/status/2076178719547539520 |
@@ -7162,11 +7374,13 @@
 | low | new_event_candidate | new | event | イベント候補「お休みしようかと思ってたらソラマチの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お休みしようかと思ってたらソラマチの盆踊り | お休みしようかと思ってたらソラマチの盆踊り 盆踊り | https://x.com/MrApple_ByCandy/status/2084115588058857664 |
 | low | new_event_candidate | new | event | イベント候補「お伺いした幾つかの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お伺いした幾つかの盆踊り, うちの盆踊り | お伺いした幾つかの盆踊り 盆踊り; うちの盆踊り 盆踊り | https://x.com/ture987654321/status/2081398949429305612 |
 | low | new_event_candidate | new | event | イベント候補「お兄ちゃんとママにあんよを掴まれている盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お兄ちゃんとママにあんよを掴まれている盆踊り | お兄ちゃんとママにあんよを掴まれている盆踊り 盆踊り | https://x.com/ar11adne/status/2087052665201320280 |
+| low | new_event_candidate | new | event | イベント候補「お出掛けするが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お出掛けするが盆踊り | お出掛けするが盆踊り 盆踊り | https://x.com/takasho06130613/status/2087416850493903031 |
 | low | new_event_candidate | new | event | イベント候補「お前は大虐殺の最中に大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お前は大虐殺の最中に大盆踊り | お前は大虐殺の最中に大盆踊り 盆踊り | https://x.com/SINATRA_BASIE/status/2070435419192451216 |
 | low | new_event_candidate | new | event | イベント候補「お化け屋敷や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お化け屋敷や盆踊り | お化け屋敷や盆踊り 盆踊り | https://x.com/ka31_13/status/2086730561088102511 |
 | low | new_event_candidate | new | event | イベント候補「お参り 明日は 神社で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お参り 明日は 神社で盆踊り | お参り 明日は 神社で盆踊り 盆踊り | https://x.com/kabu131969j/status/2083070481478160544 |
 | low | new_event_candidate | new | event | イベント候補「お友達と楽しく遊んだり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お友達と楽しく遊んだり盆踊り | お友達と楽しく遊んだり盆踊り 盆踊り | https://x.com/mchan_223/status/2067951700238024803 |
 | low | new_event_candidate | new | event | イベント候補「お囃子と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お囃子と盆踊り | お囃子と盆踊り 盆踊り | https://x.com/u_kyo_u/status/2084920685923840304 |
+| low | new_event_candidate | new | event | イベント候補「お城盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お城盆踊り | お城盆踊り 盆踊り | https://x.com/sankichi48/status/2087394809074143403 |
 | low | new_event_candidate | new | event | イベント候補「お墓参りのあととか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お墓参りのあととか盆踊り | お墓参りのあととか盆踊り 盆踊り | https://x.com/x24m_10m/status/2082086076995523034 |
 | low | new_event_candidate | new | event | イベント候補「お天気悪いので盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お天気悪いので盆踊り | お天気悪いので盆踊り 盆踊り | https://x.com/RgQ6T9a1KZVrcHt/status/2084188684325368287 |
 | low | new_event_candidate | new | event | イベント候補「お子さんと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お子さんと盆踊り | お子さんと盆踊り 盆踊り | https://x.com/papabookletter/status/2084071162695614904 |
@@ -7186,12 +7400,15 @@
 | low | new_event_candidate | new | event | イベント候補「お昼は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お昼は盆踊り | お昼は盆踊り 盆踊り | https://x.com/_mackn/status/2065625733482131776 |
 | low | new_event_candidate | new | event | イベント候補「お昼寝や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お昼寝や盆踊り | お昼寝や盆踊り 盆踊り | https://x.com/mangaland_kin1/status/2085216194127151319 |
 | low | new_event_candidate | new | event | イベント候補「お殿様との盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お殿様との盆踊り | お殿様との盆踊り 盆踊り | https://x.com/myotoo/status/2075936976671477937 |
+| low | new_event_candidate | new | event | イベント候補「お気に入りのイヤーカフを盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お気に入りのイヤーカフを盆踊り | お気に入りのイヤーカフを盆踊り 盆踊り | https://x.com/2896fumiko/status/2087183620209582411 |
 | low | new_event_candidate | new | event | イベント候補「お泊まり行くから昨日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お泊まり行くから昨日盆踊り | お泊まり行くから昨日盆踊り 盆踊り | https://x.com/_nnzato/status/2086621032195264825 |
 | low | new_event_candidate | new | event | イベント候補「お湯掛け盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お湯掛け盆踊り | お湯掛け盆踊り 盆踊り | https://x.com/DanceStarry/status/2084149774585135418 |
 | low | new_event_candidate | new | event | イベント候補「お父さんのお誕生日はまだ今月末なんですが その頃はこの町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お父さんのお誕生日はまだ今月末なんですが その頃はこの町内の盆踊り | お父さんのお誕生日はまだ今月末なんですが その頃はこの町内の盆踊り 盆踊り | https://x.com/momoko30860938/status/2078353857990832342 |
 | low | new_event_candidate | new | event | イベント候補「お爺とみんなで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お爺とみんなで盆踊り | お爺とみんなで盆踊り 盆踊り | https://x.com/oivr535133/status/2081030123093205390 |
 | low | new_event_candidate | new | event | イベント候補「お疲れ様でしたー 次回は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お疲れ様でしたー 次回は盆踊り | お疲れ様でしたー 次回は盆踊り 盆踊り | https://x.com/einbild104/status/2086472012588044453 |
+| low | new_event_candidate | new | event | イベント候補「お盆でTLに本場のすごい阿波おどり動画とか各地の特色ある盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お盆でTLに本場のすごい阿波おどり動画とか各地の特色ある盆踊り | お盆でTLに本場のすごい阿波おどり動画とか各地の特色ある盆踊り 盆踊り; こっちの方だと踊り 盆踊り | https://x.com/igarababook/status/2087393818505359547 |
 | low | new_event_candidate | new | event | イベント候補「お盆ですね盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お盆ですね盆踊り | お盆ですね盆踊り 盆踊り | https://x.com/3511maata/status/2086686106138050583 |
+| low | new_event_candidate | new | event | イベント候補「お盆といえば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お盆といえば盆踊り, 北海盆踊り | お盆といえば盆踊り 盆踊り; 北海盆踊り 盆踊り; の周りを輪になって踊り 盆踊り | https://x.com/yushikokumin/status/2087334246117777736 |
 | low | new_event_candidate | new | event | イベント候補「お盆といえば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お盆といえば盆踊り | お盆といえば盆踊り 盆踊り; 日光和楽踊り 盆踊り | https://x.com/nikko_citypro/status/2085624131475902579 |
 | low | new_event_candidate | new | event | イベント候補「お盆にJR内郷駅前にて いわき回転盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お盆にJR内郷駅前にて いわき回転盆踊り | お盆にJR内郷駅前にて いわき回転盆踊り 盆踊り | https://x.com/kaiten_yagura/status/2084181994473472380 |
 | low | new_event_candidate | new | event | イベント候補「お盆に映画村でプリキュア盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お盆に映画村でプリキュア盆踊り | お盆に映画村でプリキュア盆踊り 盆踊り | https://x.com/T_nodoka_grace/status/2071144548324266012 |
@@ -7215,6 +7432,7 @@
 | low | new_event_candidate | new | event | イベント候補「お祭りと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りと盆踊り | お祭りと盆踊り 盆踊り | https://x.com/gude_hina/status/2084776906407465203 |
 | low | new_event_candidate | new | event | イベント候補「お祭りに向けた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りに向けた盆踊り | お祭りに向けた盆踊り 盆踊り | https://x.com/HITOMI_1024_/status/2075590076223090732 |
 | low | new_event_candidate | new | event | イベント候補「お祭りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りの盆踊り | お祭りの盆踊り 盆踊り | https://x.com/Lazulite_pomeoj/status/2082272630586175742 |
+| low | new_event_candidate | new | event | イベント候補「お祭りは神輿担いで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りは神輿担いで盆踊り | お祭りは神輿担いで盆踊り 盆踊り | https://x.com/3ySBwfrmi4gcf5N/status/2087361640627064863 |
 | low | new_event_candidate | new | event | イベント候補「お祭りも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りも盆踊り | お祭りも盆踊り 盆踊り | https://x.com/dpdjhlT58Brff6C/status/2084084731700978111 |
 | low | new_event_candidate | new | event | イベント候補「お祭りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りや盆踊り | お祭りや盆踊り 盆踊り | https://x.com/x3_yfu/status/2086064314646196415 |
 | low | new_event_candidate | new | event | イベント候補「お祭りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りや盆踊り | お祭りや盆踊り 盆踊り; 子供会の活動がすごく盛ん 盆踊り | https://x.com/korokke_dossari/status/2085978448451744094 |
@@ -7224,12 +7442,14 @@
 | low | new_event_candidate | new | event | イベント候補「お祭りを見に来たが太鼓叩く人が遅刻してて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭りを見に来たが太鼓叩く人が遅刻してて盆踊り | お祭りを見に来たが太鼓叩く人が遅刻してて盆踊り 盆踊り; 立ち尽くしてる気分 盆踊り | https://x.com/penlabo/status/2065460516139724936 |
 | low | new_event_candidate | new | event | イベント候補「お祭り（盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お祭り（盆踊り, お祭り（盆踊り）あるからおいでよ | お祭り（盆踊り 盆踊り; お祭り（盆踊り）あるからおいでよ 盆踊り | https://x.com/YUI_0717/status/2079484852655771954 |
 | low | new_event_candidate | new | event | イベント候補「お笑い見に渋谷来たけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お笑い見に渋谷来たけど盆踊り | お笑い見に渋谷来たけど盆踊り 盆踊り | https://x.com/na________se/status/2085985362535710749 |
+| low | new_event_candidate | new | event | イベント候補「お茶して髪切って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お茶して髪切って盆踊り | お茶して髪切って盆踊り 盆踊り | https://x.com/_kudamonosuki/status/2087359272590159923 |
 | low | new_event_candidate | new | event | イベント候補「お話も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お話も盆踊り | お話も盆踊り 盆踊り | https://x.com/etoile_mignon/status/2075934500891332859 |
 | low | new_event_candidate | new | event | イベント候補「お近くの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お近くの盆踊り, 鹿骨事務所管内の盆踊り | お近くの盆踊り 盆踊り; 鹿骨事務所管内の盆踊り 盆踊り; 是非お出かけ下さい 盆踊り | https://x.com/kometokoro/status/2079472824167866439 |
 | low | new_event_candidate | new | event | イベント候補「お邪魔した ドラゴン屋台横丁 プログラムで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お邪魔した ドラゴン屋台横丁 プログラムで盆踊り, あったけど ダンシングヒーロー の振り付け 神田明神の盆踊り | お邪魔した ドラゴン屋台横丁 プログラムで盆踊り 盆踊り; あったけど ダンシングヒーロー の振り付け 神田明神の盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/MUkqJEYcne5523/status/2081527902907375911 |
 | low | new_event_candidate | new | event | イベント候補「お部屋で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お部屋で盆踊り | お部屋で盆踊り 盆踊り | https://x.com/MidokuLobha/status/2064346320274698244 |
 | low | new_event_candidate | new | event | イベント候補「お陰様で楽しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お陰様で楽しい盆踊り | お陰様で楽しい盆踊り 盆踊り | https://x.com/tukishimanagaya/status/2078456287478878222 |
 | low | new_event_candidate | new | event | イベント候補「お題「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お題「盆踊り, 盆踊りみたいなポーズ | お題「盆踊り 盆踊り; 盆踊りみたいなポーズ 盆踊り; アリオ亀有 盆踊り | https://x.com/onlyyou_4nchan/status/2071145927302426640 |
+| low | new_event_candidate | new | event | イベント候補「お鯉さんや津田の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: お鯉さんや津田の盆踊り | お鯉さんや津田の盆踊り 盆踊り; 南越谷阿波踊り 盆踊り; ぼにおどり 盆踊り | https://x.com/cinnamochan/status/2087359538777485455 |
 | low | new_event_candidate | new | event | イベント候補「か2日でもいいです そのまま中野の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: か2日でもいいです そのまま中野の盆踊り | か2日でもいいです そのまま中野の盆踊り 盆踊り | https://x.com/nougaokinai/status/2076906529249448164 |
 | low | new_event_candidate | new | event | イベント候補「かき氷の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: かき氷の盆踊り | かき氷の盆踊り 盆踊り | https://x.com/KKstudio_design/status/2077662511843905732 |
 | low | new_event_candidate | new | event | イベント候補「かけまして 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: かけまして 盆踊り | かけまして 盆踊り 盆踊り | https://x.com/ukulelesennin/status/2063213913056129513 |
@@ -7258,12 +7478,14 @@
 | low | new_event_candidate | new | event | イベント候補「きれば築地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: きれば築地の盆踊り | きれば築地の盆踊り 盆踊り; ないの🥺 盆踊り | https://x.com/exAikachandesu/status/2077979893925917005 |
 | low | new_event_candidate | new | event | イベント候補「ぎやかな屋台や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぎやかな屋台や盆踊り | ぎやかな屋台や盆踊り 盆踊り | https://x.com/saitamakanko/status/2083100515253240208 |
 | low | new_event_candidate | new | event | イベント候補「ぎりぎり寝転ん盆踊り見に行った 夏やね」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぎりぎり寝転ん盆踊り見に行った 夏やね | ぎりぎり寝転ん盆踊り見に行った 夏やね 盆踊り | https://x.com/kumakumkumaaaa/status/2087032723752075413 |
+| low | new_event_candidate | new | event | イベント候補「くっそ寒い「ニコニコ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くっそ寒い「ニコニコ盆踊り, ニコニコ盆踊り | くっそ寒い「ニコニコ盆踊り 盆踊り; ニコニコ盆踊り 盆踊り | https://x.com/hiwai_rs/status/2087442176364224961 |
 | low | new_event_candidate | new | event | イベント候補「くに今夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くに今夜の盆踊り | くに今夜の盆踊り 盆踊り | https://x.com/TomatoOsaka/status/2075844698267345285 |
 | low | new_event_candidate | new | event | イベント候補「くまレタ募集】 今回は真夏の大喜利大会 お題 『盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くまレタ募集】 今回は真夏の大喜利大会 お題 『盆踊り, 盆踊り。クライマックスはこの曲だ！運営まさかの選曲は | くまレタ募集】 今回は真夏の大喜利大会 お題 『盆踊り 盆踊り; 盆踊り。クライマックスはこの曲だ！運営まさかの選曲は 盆踊り | https://x.com/kumaomao_900/status/2083829076381614208 |
 | low | new_event_candidate | new | event | イベント候補「くらいだったのになんか結構メディアにもでるし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くらいだったのになんか結構メディアにもでるし盆踊り | くらいだったのになんか結構メディアにもでるし盆踊り 盆踊り | https://x.com/inukagosuki/status/2085142626509128033 |
 | low | new_event_candidate | new | event | イベント候補「くるのんの告知がいつも 町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くるのんの告知がいつも 町内会の盆踊り | くるのんの告知がいつも 町内会の盆踊り 盆踊り | https://x.com/kurunon_non/status/2067026632209219759 |
 | low | new_event_candidate | new | event | イベント候補「くんと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: くんと盆踊り | くんと盆踊り 盆踊り | https://x.com/AyanoMickey/status/2082389269704835129 |
 | low | new_event_candidate | new | event | イベント候補「ぐみさんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぐみさんが盆踊り | ぐみさんが盆踊り 盆踊り; 特に切なくなる 盆踊り | https://x.com/Su_27ZE/status/2064707126581498151 |
+| low | new_event_candidate | new | event | イベント候補「ぐらで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぐらで盆踊り, 土日の夜は、やぐらで盆踊りできるかも | ぐらで盆踊り 盆踊り; 土日の夜は、やぐらで盆踊りできるかも 盆踊り | https://x.com/774NO32/status/2087425514830995713 |
 | low | new_event_candidate | new | event | イベント候補「ぐらで祭り太鼓やったなぁと最近盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぐらで祭り太鼓やったなぁと最近盆踊り | ぐらで祭り太鼓やったなぁと最近盆踊り 盆踊り | https://x.com/lucasuke/status/2081940898037027173 |
 | low | new_event_candidate | new | event | イベント候補「ぐらの上で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぐらの上で盆踊り | ぐらの上で盆踊り 盆踊り | https://x.com/yuki_towa2/status/2076175824500474031 |
 | low | new_event_candidate | new | event | イベント候補「ぐらまでダッシュして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぐらまでダッシュして盆踊り | ぐらまでダッシュして盆踊り 盆踊り | https://x.com/titigermaruru/status/2083107024360137186 |
@@ -7282,6 +7504,7 @@
 | low | new_event_candidate | new | event | イベント候補「こういうしっとりとした雰囲気の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こういうしっとりとした雰囲気の盆踊り | こういうしっとりとした雰囲気の盆踊り 盆踊り | https://x.com/ZnafG/status/2076665563456422175 |
 | low | new_event_candidate | new | event | イベント候補「こういうの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こういうの盆踊り | こういうの盆踊り 盆踊り | https://x.com/shizuoka_neko/status/2065031335736156557 |
 | low | new_event_candidate | new | event | イベント候補「こういう柔軟性のある盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こういう柔軟性のある盆踊り | こういう柔軟性のある盆踊り 盆踊り | https://x.com/rBTEhVcTVz49978/status/2083806465316581407 |
+| low | new_event_candidate | new | event | イベント候補「こういう盆踊りをやりたい」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こういう盆踊りをやりたい | こういう盆踊りをやりたい 盆踊り | https://x.com/Yu_Kanmiya/status/2087190079756460334 |
 | low | new_event_candidate | new | event | イベント候補「こうして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こうして盆踊り | こうして盆踊り 盆踊り | https://x.com/pDqHzjWenJf8Lg2/status/2086347287698313617 |
 | low | new_event_candidate | new | event | イベント候補「こうして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こうして盆踊り | こうして盆踊り 盆踊り; 設営や準備をして下さったきよかわ町内会の皆さん 盆踊り; 歌わせていただけたことも 盆踊り | https://x.com/matsumotokana/status/2079016557993504982 |
 | low | new_event_candidate | new | event | イベント候補「こうべ海の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こうべ海の盆踊り | こうべ海の盆踊り 盆踊り | https://x.com/kobeaishin/status/2087046424311873610 |
@@ -7317,6 +7540,7 @@
 | low | new_event_candidate | new | event | イベント候補「こっちは同じ方を向いてるけどね なんせ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こっちは同じ方を向いてるけどね なんせ盆踊り | こっちは同じ方を向いてるけどね なんせ盆踊り 盆踊り | https://x.com/MIHO_m2lab1/status/2081907494927098076 |
 | low | new_event_candidate | new | event | イベント候補「こっちは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こっちは盆踊り | こっちは盆踊り 盆踊り | https://x.com/panchos1414/status/2085275084508565966 |
 | low | new_event_candidate | new | event | イベント候補「こっちは踊りと言えば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こっちは踊りと言えば盆踊り | こっちは踊りと言えば盆踊り 盆踊り | https://x.com/maruzamechari/status/2067238389003485359 |
+| low | new_event_candidate | new | event | イベント候補「こっちゃんとサイファー対決しながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こっちゃんとサイファー対決しながら盆踊り | こっちゃんとサイファー対決しながら盆踊り 盆踊り | https://x.com/Rose_yukirisa/status/2087441285066215752 |
 | low | new_event_candidate | new | event | イベント候補「ことし近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ことし近所の盆踊り | ことし近所の盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/natsumelan24/status/2079796664420966690 |
 | low | new_event_candidate | new | event | イベント候補「こどもと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こどもと盆踊り | こどもと盆踊り 盆踊り | https://x.com/miyumos/status/2083556708098728184 |
 | low | new_event_candidate | new | event | イベント候補「こども園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こども園の盆踊り | こども園の盆踊り 盆踊り | https://x.com/magician_lupin/status/2070713924312580438 |
@@ -7328,12 +7552,14 @@
 | low | new_event_candidate | new | event | イベント候補「こないだ地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ地元の盆踊り | こないだ地元の盆踊り 盆踊り | https://x.com/kanjisuru/status/2083056712983163272 |
 | low | new_event_candidate | new | event | イベント候補「こないだ家の近くのお祭りでダンシングヒーローで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ家の近くのお祭りでダンシングヒーローで盆踊り | こないだ家の近くのお祭りでダンシングヒーローで盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/0131_07132023/status/2085590075862393181 |
 | low | new_event_candidate | new | event | イベント候補「こないだ店行った時近くの公園で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ店行った時近くの公園で盆踊り | こないだ店行った時近くの公園で盆踊り 盆踊り | https://x.com/iMp95/status/2077600864186126738 |
+| low | new_event_candidate | new | event | イベント候補「こないだ湊人さんが令和の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ湊人さんが令和の盆踊り | こないだ湊人さんが令和の盆踊り 盆踊り | https://x.com/0412sfh/status/2087441964782563768 |
 | low | new_event_candidate | new | event | イベント候補「こないだ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ盆踊り | こないだ盆踊り 盆踊り | https://x.com/Gulico_H/status/2084524518513746055 |
 | low | new_event_candidate | new | event | イベント候補「こないだ近所の公園で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ近所の公園で盆踊り | こないだ近所の公園で盆踊り 盆踊り | https://x.com/OreoWorcester/status/2085246447092666619 |
 | low | new_event_candidate | new | event | イベント候補「こないだ近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こないだ近所の盆踊り | こないだ近所の盆踊り 盆踊り | https://x.com/kurobika/status/2085191195983294566 |
 | low | new_event_candidate | new | event | イベント候補「こりゃ神奈川予選決勝も近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こりゃ神奈川予選決勝も近所の盆踊り | こりゃ神奈川予選決勝も近所の盆踊り 盆踊り | https://x.com/jinainosuke/status/2081227924083224639 |
 | low | new_event_candidate | new | event | イベント候補「これ とにかく七夕で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これ とにかく七夕で盆踊り | これ とにかく七夕で盆踊り 盆踊り | https://x.com/waaaaaasan/status/2085974501922349436 |
 | low | new_event_candidate | new | event | イベント候補「これあたるんか 当たったら今から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これあたるんか 当たったら今から盆踊り | これあたるんか 当たったら今から盆踊り 盆踊り | https://x.com/neamitsu/status/2064539674509762813 |
+| low | new_event_candidate | new | event | イベント候補「これからの夏 各地で夏の定番盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これからの夏 各地で夏の定番盆踊り | これからの夏 各地で夏の定番盆踊り 盆踊り | https://x.com/KozMqw/status/2087400093502615743 |
 | low | new_event_candidate | new | event | イベント候補「これからの方向けに言えば「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これからの方向けに言えば「盆踊り, 盆踊りの雰囲気を出して欲しい | これからの方向けに言えば「盆踊り 盆踊り; 盆踊りの雰囲気を出して欲しい 盆踊り | https://x.com/osaruna7741/status/2084534541260304882 |
 | low | new_event_candidate | new | event | イベント候補「これからの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これからの盆踊り | これからの盆踊り 盆踊り | https://x.com/NemottyNeronero/status/2070777122755592282 |
 | low | new_event_candidate | new | event | イベント候補「これからキタコス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: これからキタコス盆踊り | これからキタコス盆踊り 盆踊り | https://x.com/aru_mi_kan/status/2085613108991791313 |
@@ -7407,6 +7633,7 @@
 | low | new_event_candidate | new | event | イベント候補「こんなに素敵な子が 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんなに素敵な子が 盆踊り | こんなに素敵な子が 盆踊り 盆踊り | https://x.com/SodemakuAkari/status/2083828007899381994 |
 | low | new_event_candidate | new | event | イベント候補「こんなイケてるインスト曲をよくわからん高BPM盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんなイケてるインスト曲をよくわからん高BPM盆踊り | こんなイケてるインスト曲をよくわからん高BPM盆踊り 盆踊り | https://x.com/lCafe_au_laitl/status/2065611770182647908 |
 | low | new_event_candidate | new | event | イベント候補「こんな可愛い曲で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんな可愛い曲で盆踊り | こんな可愛い曲で盆踊り 盆踊り | https://x.com/momoten322/status/2083430420784480429 |
+| low | new_event_candidate | new | event | イベント候補「こんな幸せで豪華な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんな幸せで豪華な盆踊り, jazzyな盆踊りも もちろん盆踊り | こんな幸せで豪華な盆踊り 盆踊り; jazzyな盆踊りも もちろん盆踊り 盆踊り | https://x.com/showaheiseir/status/2087403031407309145 |
 | low | new_event_candidate | new | event | イベント候補「こんな日こそ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんな日こそ盆踊り | こんな日こそ盆踊り 盆踊り | https://x.com/fukiteasobiki/status/2082393303379820836 |
 | low | new_event_candidate | new | event | イベント候補「こんな時間なのに人たくさんいて何事かと思ったけど今日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんな時間なのに人たくさんいて何事かと思ったけど今日盆踊り | こんな時間なのに人たくさんいて何事かと思ったけど今日盆踊り 盆踊り | https://x.com/momomolmol/status/2086439874811629577 |
 | low | new_event_candidate | new | event | イベント候補「こんな暑いのに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: こんな暑いのに盆踊り | こんな暑いのに盆踊り 盆踊り | https://x.com/otobokekun/status/2083828986518577602 |
@@ -7493,6 +7720,7 @@
 | low | new_event_candidate | new | event | イベント候補「しぐれういなつまつり 神田明神 アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しぐれういなつまつり 神田明神 アニソン盆踊り | しぐれういなつまつり 神田明神 アニソン盆踊り 盆踊り | https://x.com/aristocrats_tea/status/2085629556472574016 |
 | low | new_event_candidate | new | event | イベント候補「しぐれういの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しぐれういの盆踊り | しぐれういの盆踊り 盆踊り | https://x.com/atarime42/status/2083075956173115859 |
 | low | new_event_candidate | new | event | イベント候補「しぐれうい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しぐれうい盆踊り | しぐれうい盆踊り 盆踊り | https://x.com/choko_53/status/2085276002314567895 |
+| low | new_event_candidate | new | event | イベント候補「しごおわのたみです これはこないだの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しごおわのたみです これはこないだの盆踊り | しごおわのたみです これはこないだの盆踊り 盆踊り | https://x.com/nabevrc/status/2087423127290884332 |
 | low | new_event_candidate | new | event | イベント候補「しごして今日の目的のゆかた祭の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しごして今日の目的のゆかた祭の盆踊り | しごして今日の目的のゆかた祭の盆踊り 盆踊り | https://x.com/Oh_kometsubu/status/2075929861437452400 |
 | low | new_event_candidate | new | event | イベント候補「したのであちこちの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: したのであちこちの盆踊り | したのであちこちの盆踊り 盆踊り | https://x.com/sirnonyanko/status/2079045811900731876 |
 | low | new_event_candidate | new | event | イベント候補「しっかり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: しっかり盆踊り | しっかり盆踊り 盆踊り; どうぞ踊り 盆踊り | https://x.com/yumiya_pon/status/2062559775955751392 |
@@ -7525,10 +7753,12 @@
 | low | new_event_candidate | new | event | イベント候補「じゃあ次の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃあ次の盆踊り | じゃあ次の盆踊り 盆踊り | https://x.com/RoseFrosti/status/2068156192782975125 |
 | low | new_event_candidate | new | event | イベント候補「じゃあ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃあ盆踊り | じゃあ盆踊り 盆踊り | https://x.com/vrc_nanashi_no/status/2085967677512921371 |
 | low | new_event_candidate | new | event | イベント候補「じゃあ私は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃあ私は盆踊り | じゃあ私は盆踊り 盆踊り | https://x.com/makomanai_arena/status/2081035172661911586 |
+| low | new_event_candidate | new | event | イベント候補「じゃがペコさんの誇張した盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃがペコさんの誇張した盆踊り | じゃがペコさんの誇張した盆踊り 盆踊り | https://x.com/kelodesuyo/status/2087433952298663952 |
 | low | new_event_candidate | new | event | イベント候補「じゃが我らの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃが我らの盆踊り, 返礼品のうちわも届いておるとのこと 儂のが来た方は盆踊り | じゃが我らの盆踊り 盆踊り; 返礼品のうちわも届いておるとのこと 儂のが来た方は盆踊り 盆踊り | https://x.com/nagoyabushotai/status/2077663945603907692 |
 | low | new_event_candidate | new | event | イベント候補「じゃこの楽しい気持ちで地元盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃこの楽しい気持ちで地元盆踊り | じゃこの楽しい気持ちで地元盆踊り 盆踊り | https://x.com/jitensha_kogi/status/2078379753950916660 |
 | low | new_event_candidate | new | event | イベント候補「じゃなくて この盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃなくて この盆踊り | じゃなくて この盆踊り 盆踊り | https://x.com/yoyou0519/status/2085962657962885562 |
 | low | new_event_candidate | new | event | イベント候補「じゃなくて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: じゃなくて盆踊り | じゃなくて盆踊り 盆踊り | https://x.com/iidenmania6916/status/2063197669905121461 |
+| low | new_event_candidate | new | event | イベント候補「す 昨晩は名古屋城での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: す 昨晩は名古屋城での盆踊り | す 昨晩は名古屋城での盆踊り 盆踊り | https://x.com/TgGODIg9md3MNai/status/2087358253307204010 |
 | low | new_event_candidate | new | event | イベント候補「す 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: す 盆踊り | す 盆踊り 盆踊り | https://x.com/mitsukonsui/status/2085942522703143029 |
 | low | new_event_candidate | new | event | イベント候補「すが 日泰寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: すが 日泰寺納涼盆踊り | すが 日泰寺納涼盆踊り 盆踊り | https://x.com/2FOX_b_w/status/2085575425858867295 |
 | low | new_event_candidate | new | event | イベント候補「すぐ冷笑すんのやめろ 地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: すぐ冷笑すんのやめろ 地元の盆踊り | すぐ冷笑すんのやめろ 地元の盆踊り 盆踊り | https://x.com/danaabana/status/2087059732599386450 |
@@ -7550,10 +7780,12 @@
 | low | new_event_candidate | new | event | イベント候補「する予定の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: する予定の盆踊り | する予定の盆踊り 盆踊り | https://x.com/kh_185/status/2075913185014808828 |
 | low | new_event_candidate | new | event | イベント候補「すーさん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: すーさん盆踊り | すーさん盆踊り 盆踊り | https://x.com/rinka_natume/status/2067261751297765683 |
 | low | new_event_candidate | new | event | イベント候補「ずっと参加したかったんだよね 来年は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ずっと参加したかったんだよね 来年は盆踊り | ずっと参加したかったんだよね 来年は盆踊り 盆踊り | https://x.com/Bi_zi_n/status/2063602267228688388 |
+| low | new_event_candidate | new | event | イベント候補「ずっと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ずっと盆踊り | ずっと盆踊り 盆踊り | https://x.com/S_Sakurano_VRC/status/2087376694621716489 |
 | low | new_event_candidate | new | event | イベント候補「ずっと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ずっと盆踊り | ずっと盆踊り 盆踊り | https://x.com/genkai5saiji/status/2083448385156354208 |
 | low | new_event_candidate | new | event | イベント候補「ずっと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ずっと盆踊り | ずっと盆踊り 盆踊り | https://x.com/hyper_omochi/status/2063209397439070697 |
 | low | new_event_candidate | new | event | イベント候補「ずっと頭の中で 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ずっと頭の中で 盆踊り | ずっと頭の中で 盆踊り 盆踊り | https://x.com/mami_tenuki/status/2083811165550088317 |
 | low | new_event_candidate | new | event | イベント候補「ずーっと昔から続く 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ずーっと昔から続く 盆踊り | ずーっと昔から続く 盆踊り 盆踊り | https://x.com/8jokamakura/status/2084815998318981440 |
+| low | new_event_candidate | new | event | イベント候補「せさんからいいねもらえて今朝からずっと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: せさんからいいねもらえて今朝からずっと盆踊り | せさんからいいねもらえて今朝からずっと盆踊り 盆踊り | https://x.com/NECOM_mtt/status/2087443620572135837 |
 | low | new_event_candidate | new | event | イベント候補「せっかくだから俺はこの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: せっかくだから俺はこの盆踊り | せっかくだから俺はこの盆踊り 盆踊り | https://x.com/tatsunami/status/2082085274172166640 |
 | low | new_event_candidate | new | event | イベント候補「せっかくのDJ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: せっかくのDJ盆踊り | せっかくのDJ盆踊り 盆踊り | https://x.com/yukari_mantani/status/2086365980708790428 |
 | low | new_event_candidate | new | event | イベント候補「せっかくのぬい撮りチャンスの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: せっかくのぬい撮りチャンスの盆踊り | せっかくのぬい撮りチャンスの盆踊り 盆踊り | https://x.com/ubutomo_poke/status/2086956253285322875 |
@@ -7621,6 +7853,7 @@
 | low | new_event_candidate | new | event | イベント候補「そして今週土曜日は寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして今週土曜日は寝転ん盆踊り | そして今週土曜日は寝転ん盆踊り 盆踊り | https://x.com/amemya_vr/status/2084414006643536318 |
 | low | new_event_candidate | new | event | イベント候補「そして今週末の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして今週末の盆踊り | そして今週末の盆踊り 盆踊り | https://x.com/sakurai_take/status/2078638768530378877 |
 | low | new_event_candidate | new | event | イベント候補「そして今週末も皆さんが盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして今週末も皆さんが盆踊りや夏祭り | そして今週末も皆さんが盆踊りや夏祭り 盆踊り | https://x.com/okubo_tomoka/status/2086465282986656092 |
+| low | new_event_candidate | new | event | イベント候補「そして会場のみんなで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして会場のみんなで盆踊り | そして会場のみんなで盆踊り 盆踊り | https://x.com/muzta7chi/status/2087446290032656405 |
 | low | new_event_candidate | new | event | イベント候補「そして商店街結婚式と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして商店街結婚式と盆踊り | そして商店街結婚式と盆踊り 盆踊り | https://x.com/jamechakana/status/2078353592055185782 |
 | low | new_event_candidate | new | event | イベント候補「そして土曜日の地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして土曜日の地域の盆踊り | そして土曜日の地域の盆踊り 盆踊り | https://x.com/Icemintblueblue/status/2084119930006602092 |
 | low | new_event_candidate | new | event | イベント候補「そして夕方からは地元世田谷区内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして夕方からは地元世田谷区内の盆踊り | そして夕方からは地元世田谷区内の盆踊り 盆踊り | https://x.com/wakamiya7788/status/2083198173791838293 |
@@ -7644,6 +7877,7 @@
 | low | new_event_candidate | new | event | イベント候補「そして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして盆踊り | そして盆踊り 盆踊り | https://x.com/djmikado/status/2069001864939704465 |
 | low | new_event_candidate | new | event | イベント候補「そして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして盆踊り | そして盆踊り 盆踊り | https://x.com/hokuro_okashi/status/2066531457141764222 |
 | low | new_event_candidate | new | event | イベント候補「そして神田明神のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして神田明神のアニソン盆踊り | そして神田明神のアニソン盆踊り 盆踊り | https://x.com/takinohara/status/2085653716288610368 |
+| low | new_event_candidate | new | event | イベント候補「そして私の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして私の盆踊り, いや原点は幼少の頃の町内のお祭りだけど盆踊り | そして私の盆踊り 盆踊り; いや原点は幼少の頃の町内のお祭りだけど盆踊り 盆踊り | https://x.com/kasui21/status/2087185804246581658 |
 | low | new_event_candidate | new | event | イベント候補「そして秋田の夏のお祭りや 西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして秋田の夏のお祭りや 西馬音内盆踊り | そして秋田の夏のお祭りや 西馬音内盆踊り 盆踊り; 掲載中 盆踊り | https://x.com/nogi6kiseitan01/status/2081596951284617291 |
 | low | new_event_candidate | new | event | イベント候補「そして竹駒神社のコラボ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そして竹駒神社のコラボ盆踊り | そして竹駒神社のコラボ盆踊り 盆踊り | https://x.com/ankoomori/status/2083761152023298503 |
 | low | new_event_candidate | new | event | イベント候補「そちらの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そちらの盆踊り | そちらの盆踊り 盆踊り | https://x.com/miraclehoshi/status/2084547061194907917 |
@@ -7684,7 +7918,9 @@
 | low | new_event_candidate | new | event | イベント候補「それに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それに盆踊り | それに盆踊り 盆踊り | https://x.com/2119funk/status/2084166185071874355 |
 | low | new_event_candidate | new | event | イベント候補「それに続く盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それに続く盆踊り | それに続く盆踊り 盆踊り; 実は日本は古来から踊り 盆踊り; そこに踊り 盆踊り | https://x.com/harumi_fourcats/status/2085977153796186441 |
 | low | new_event_candidate | new | event | イベント候補「それはそうとまだ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それはそうとまだ盆踊り | それはそうとまだ盆踊り 盆踊り | https://x.com/aa_wmg/status/2069443390371180757 |
+| low | new_event_candidate | new | event | イベント候補「それはそれとしてこんな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それはそれとしてこんな盆踊り | それはそれとしてこんな盆踊り 盆踊り | https://x.com/pentola_kenny/status/2087424001593544857 |
 | low | new_event_candidate | new | event | イベント候補「それはまるで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それはまるで盆踊り | それはまるで盆踊り 盆踊り | https://x.com/ToiroWorks/status/2075366342614745369 |
+| low | new_event_candidate | new | event | イベント候補「それも大勢参加の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それも大勢参加の盆踊り, 河内おとこ節がかかったのは意外やったわ オイラ盆踊り | それも大勢参加の盆踊り 盆踊り; 河内おとこ節がかかったのは意外やったわ オイラ盆踊り 盆踊り; 炭坑節 盆踊り; 東京音頭 盆踊り | https://x.com/1887Take/status/2087389168997642359 |
 | low | new_event_candidate | new | event | イベント候補「それより盆踊り中止やサイレント盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それより盆踊り中止やサイレント盆踊り | それより盆踊り中止やサイレント盆踊り 盆踊り | https://x.com/40341700a995431/status/2086340879803936835 |
 | low | new_event_candidate | new | event | イベント候補「それらを全て飛ばして一方的にクレーマーの意見を通し盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それらを全て飛ばして一方的にクレーマーの意見を通し盆踊り | それらを全て飛ばして一方的にクレーマーの意見を通し盆踊り 盆踊り | https://x.com/kode25264477/status/2086655927508418832 |
 | low | new_event_candidate | new | event | イベント候補「それを盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: それを盆踊り | それを盆踊り 盆踊り | https://x.com/goooooooo1154/status/2071163613641859299 |
@@ -7702,6 +7938,7 @@
 | low | new_event_candidate | new | event | イベント候補「そんな暑い夏を彩る「夏の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そんな暑い夏を彩る「夏の盆踊り, 夏の盆踊り大会 | そんな暑い夏を彩る「夏の盆踊り 盆踊り; 夏の盆踊り大会 盆踊り | https://x.com/GihuHashimawo/status/2075781672566710706 |
 | low | new_event_candidate | new | event | イベント候補「そーいえば神田明神の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そーいえば神田明神の盆踊り | そーいえば神田明神の盆踊り 盆踊り; パタリロ・クックロビン音頭 盆踊り | https://x.com/6PX7UKDn5a57413/status/2086740952467607699 |
 | low | new_event_candidate | new | event | イベント候補「そーいや今年は地元の公園でやる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そーいや今年は地元の公園でやる盆踊り | そーいや今年は地元の公園でやる盆踊り 盆踊り | https://x.com/tkurkr0714sub/status/2079071265718235421 |
+| low | new_event_candidate | new | event | イベント候補「そーゆー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そーゆー盆踊り | そーゆー盆踊り 盆踊り | https://x.com/tukushi030/status/2087386660623598037 |
 | low | new_event_candidate | new | event | イベント候補「そーれ 三途の畔で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: そーれ 三途の畔で盆踊り | そーれ 三途の畔で盆踊り 盆踊り | https://x.com/TABINEKOnoNORA/status/2069123282562142473 |
 | low | new_event_candidate | new | event | イベント候補「たぃも同時配信もなにもかもが押し寄せてきてユーロービート盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たぃも同時配信もなにもかもが押し寄せてきてユーロービート盆踊り | たぃも同時配信もなにもかもが押し寄せてきてユーロービート盆踊り 盆踊り | https://x.com/liebnajn/status/2065041404154515820 |
 | low | new_event_candidate | new | event | イベント候補「たいぴのあの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たいぴのあの盆踊り | たいぴのあの盆踊り 盆踊り | https://x.com/madocanxxx625/status/2086715827160744077 |
@@ -7731,6 +7968,7 @@
 | low | new_event_candidate | new | event | イベント候補「たまには重労働させろ町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たまには重労働させろ町会の盆踊り | たまには重労働させろ町会の盆踊り 盆踊り | https://x.com/yosiyosi1229/status/2084631067290722362 |
 | low | new_event_candidate | new | event | イベント候補「たまに一歩先で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たまに一歩先で盆踊り | たまに一歩先で盆踊り 盆踊り | https://x.com/kyoshiro_to_A/status/2063947936372003090 |
 | low | new_event_candidate | new | event | イベント候補「たまに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たまに盆踊り | たまに盆踊り 盆踊り | https://x.com/fomaindish/status/2075423624367165816 |
+| low | new_event_candidate | new | event | イベント候補「たまに踊れるかもしれないとCORTISのダンスを踊るけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たまに踊れるかもしれないとCORTISのダンスを踊るけど盆踊り | たまに踊れるかもしれないとCORTISのダンスを踊るけど盆踊り 盆踊り | https://x.com/G1012Z/status/2087375668791460274 |
 | low | new_event_candidate | new | event | イベント候補「たズさん来てくれる地元盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たズさん来てくれる地元盆踊り | たズさん来てくれる地元盆踊り 盆踊り | https://x.com/kamitana/status/2078750555141447718 |
 | low | new_event_candidate | new | event | イベント候補「たー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: たー盆踊り | たー盆踊り 盆踊り; 季節 盆踊り | https://x.com/meme_mika_meme/status/2063051243124400622 |
 | low | new_event_candidate | new | event | イベント候補「だいてぃーん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: だいてぃーん盆踊り | だいてぃーん盆踊り 盆踊り | https://x.com/koji_usiko21/status/2062924647218495910 |
@@ -7755,6 +7993,7 @@
 | low | new_event_candidate | new | event | イベント候補「だるまとぬいぐるみたちが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: だるまとぬいぐるみたちが盆踊り | だるまとぬいぐるみたちが盆踊り 盆踊り | https://x.com/fronco_16/status/2079112936287830061 |
 | low | new_event_candidate | new | event | イベント候補「だれか下北の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: だれか下北の盆踊り | だれか下北の盆踊り 盆踊り | https://x.com/upwbhs2/status/2079774664461791515 |
 | low | new_event_candidate | new | event | イベント候補「だれか日曜日の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: だれか日曜日の盆踊り | だれか日曜日の盆踊り 盆踊り | https://x.com/Ai_Tsuki_Maccho/status/2070387772871823579 |
+| low | new_event_candidate | new | event | イベント候補「だんじりも曳いてない上野町西で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: だんじりも曳いてない上野町西で盆踊り, 朝陽小学校の盆踊り, 浜は殆んどの町が盆踊り | だんじりも曳いてない上野町西で盆踊り 盆踊り; 朝陽小学校の盆踊り 盆踊り; 探すも 盆踊り | https://x.com/m_m_i_m0826/status/2087408961330757733 |
 | low | new_event_candidate | new | event | イベント候補「ちぐさで踊ろう 幼児たちにレクチャーする丈くん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちぐさで踊ろう 幼児たちにレクチャーする丈くん盆踊り | ちぐさで踊ろう 幼児たちにレクチャーする丈くん盆踊り 盆踊り | https://x.com/mi_run_ST/status/2063589649172594778 |
 | low | new_event_candidate | new | event | イベント候補「ちなみに3年前に恵比寿盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちなみに3年前に恵比寿盆踊り | ちなみに3年前に恵比寿盆踊り 盆踊り | https://x.com/mu4324/status/2083702067320037476 |
 | low | new_event_candidate | new | event | イベント候補「ちなみにこの本丸の夏祭りは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちなみにこの本丸の夏祭りは盆踊り | ちなみにこの本丸の夏祭りは盆踊り 盆踊り | https://x.com/s_dlsk/status/2065579980550246597 |
@@ -7799,6 +8038,7 @@
 | low | new_event_candidate | new | event | イベント候補「ちょっと眠かったけど目が覚めました(笑) 先週ウチの町会でも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちょっと眠かったけど目が覚めました(笑) 先週ウチの町会でも盆踊り | ちょっと眠かったけど目が覚めました(笑) 先週ウチの町会でも盆踊り 盆踊り | https://x.com/kinmugi_lager/status/2082665819507699840 |
 | low | new_event_candidate | new | event | イベント候補「ちょっと私の求めてるのとは 違う盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちょっと私の求めてるのとは 違う盆踊り, 盆踊り大会 | ちょっと私の求めてるのとは 違う盆踊り 盆踊り; 盆踊り大会 盆踊り | https://x.com/manamana04115/status/2087037527970447754 |
 | low | new_event_candidate | new | event | イベント候補「ちょっと話してチラシ見せただけなのに 秦野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちょっと話してチラシ見せただけなのに 秦野盆踊り | ちょっと話してチラシ見せただけなのに 秦野盆踊り 盆踊り | https://x.com/kuzunavi/status/2083003991638864164 |
+| low | new_event_candidate | new | event | イベント候補「ちょっと高台のイオン駐車場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちょっと高台のイオン駐車場で盆踊り | ちょっと高台のイオン駐車場で盆踊り 盆踊り | https://x.com/1209Kazuko/status/2087433071196811362 |
 | low | new_event_candidate | new | event | イベント候補「ちょみっと更新（活動レポート）】 飛田給自治会主催「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちょみっと更新（活動レポート）】 飛田給自治会主催「納涼盆踊り, 誰でも参加可能な盆踊り, 納涼盆踊り大会 | ちょみっと更新（活動レポート）】 飛田給自治会主催「納涼盆踊り 盆踊り; 誰でも参加可能な盆踊り 盆踊り; 五中ソーラン 盆踊り | https://x.com/chofu_chommit/status/2084791493873508585 |
 | low | new_event_candidate | new | event | イベント候補「ちょんがれ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちょんがれ盆踊り | ちょんがれ盆踊り 盆踊り | https://x.com/KatsuoOkuhara/status/2081999870584578168 |
 | low | new_event_candidate | new | event | イベント候補「ちよのちゃんによる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ちよのちゃんによる盆踊り | ちよのちゃんによる盆踊り 盆踊り | https://x.com/sweatsheep/status/2085227831605498056 |
@@ -7865,8 +8105,10 @@
 | low | new_event_candidate | new | event | イベント候補「ついでに本門寺に寄ったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついでに本門寺に寄ったら盆踊り | ついでに本門寺に寄ったら盆踊り 盆踊り | https://x.com/kurai1211/status/2082682027141403061 |
 | low | new_event_candidate | new | event | イベント候補「ついでに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついでに盆踊り | ついでに盆踊り 盆踊り | https://x.com/LicoLico5/status/2085271897164628183 |
 | low | new_event_candidate | new | event | イベント候補「ついに別の自治会からも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに別の自治会からも盆踊り | ついに別の自治会からも盆踊り 盆踊り | https://x.com/brandy_kei/status/2083377324561670151 |
+| low | new_event_candidate | new | event | イベント候補「ついに大阪の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに大阪の盆踊り | ついに大阪の盆踊り 盆踊り | https://x.com/bonchan_mile/status/2087368862602047839 |
 | low | new_event_candidate | new | event | イベント候補「ついに日泰寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに日泰寺納涼盆踊り | ついに日泰寺納涼盆踊り 盆踊り | https://x.com/SyoRock165575/status/2084770758262403472 |
 | low | new_event_candidate | new | event | イベント候補「ついに日泰寺納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに日泰寺納涼盆踊り | ついに日泰寺納涼盆踊り 盆踊り | https://x.com/SyoRock165575/status/2084517366210482446 |
+| low | new_event_candidate | new | event | イベント候補「ついに明日から三笠北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに明日から三笠北海盆踊り | ついに明日から三笠北海盆踊り 盆踊り | https://x.com/fruity_komi/status/2087437628790710333 |
 | low | new_event_candidate | new | event | イベント候補「ついに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに盆踊り | ついに盆踊り 盆踊り | https://x.com/haruru_VRC/status/2084746200667025431 |
 | low | new_event_candidate | new | event | イベント候補「ついに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに盆踊り | ついに盆踊り 盆踊り | https://x.com/gaku24h/status/2083461173408903461 |
 | low | new_event_candidate | new | event | イベント候補「ついに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ついに盆踊り | ついに盆踊り 盆踊り | https://x.com/ytzrtn1219/status/2075850440584085966 |
@@ -7946,6 +8188,7 @@
 | low | new_event_candidate | new | event | イベント候補「なお夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なお夜の盆踊り, アニソン盆踊り | なお夜の盆踊り 盆踊り; アニソン盆踊り 盆踊り | https://x.com/porpor0730/status/2085194753138942165 |
 | low | new_event_candidate | new | event | イベント候補「なお盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なお盆踊り | なお盆踊り 盆踊り | https://x.com/phantomeria2025/status/2067187508665012301 |
 | low | new_event_candidate | new | event | イベント候補「なかなかすごかったからね ただ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なかなかすごかったからね ただ盆踊り, ずっと盆踊り | なかなかすごかったからね ただ盆踊り 盆踊り; ずっと盆踊り 盆踊り; 見ると 盆踊り; あらかじめ見つけておくといいかもしれない 盆踊り | https://x.com/B_O_R_O_vrc/status/2086336310135095626 |
+| low | new_event_candidate | new | event | イベント候補「なかなか楽しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なかなか楽しい盆踊り | なかなか楽しい盆踊り 盆踊り | https://x.com/osaruna7741/status/2087180601606709489 |
 | low | new_event_candidate | new | event | イベント候補「なかよしでサッパリ夏らしい昼ごはん 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なかよしでサッパリ夏らしい昼ごはん 盆踊り | なかよしでサッパリ夏らしい昼ごはん 盆踊り 盆踊り | https://x.com/sa_taimo/status/2083442459577925733 |
 | low | new_event_candidate | new | event | イベント候補「なかよし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なかよし盆踊り | なかよし盆踊り 盆踊り | https://x.com/icchomechokai/status/2083817477100933374 |
 | low | new_event_candidate | new | event | イベント候補「なぎちゃんと一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なぎちゃんと一緒に盆踊り | なぎちゃんと一緒に盆踊り 盆踊り | https://x.com/lovelivematocha/status/2085976804528136253 |
@@ -7979,6 +8222,7 @@
 | low | new_event_candidate | new | event | イベント候補「なんかすごい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんかすごい盆踊り | なんかすごい盆踊り 盆踊り | https://x.com/miztan2/status/2075346053801611378 |
 | low | new_event_candidate | new | event | イベント候補「なんか右膝痛いんだけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんか右膝痛いんだけど盆踊り | なんか右膝痛いんだけど盆踊り 盆踊り | https://x.com/10tkzwtig10/status/2085622433487441934 |
 | low | new_event_candidate | new | event | イベント候補「なんか急に忙しくなったから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんか急に忙しくなったから盆踊り | なんか急に忙しくなったから盆踊り 盆踊り | https://x.com/harebon_odori/status/2083128876939526237 |
+| low | new_event_candidate | new | event | イベント候補「なんか日本で台風がオフ会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんか日本で台風がオフ会盆踊り | なんか日本で台風がオフ会盆踊り 盆踊り | https://x.com/azeelrin/status/2087314816067412390 |
 | low | new_event_candidate | new | event | イベント候補「なんか旭川ナントカっていう初めて聞く盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんか旭川ナントカっていう初めて聞く盆踊り | なんか旭川ナントカっていう初めて聞く盆踊り 盆踊り | https://x.com/abenao7070/status/2086739442191261731 |
 | low | new_event_candidate | new | event | イベント候補「なんか洋物の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんか洋物の盆踊り | なんか洋物の盆踊り 盆踊り | https://x.com/umemaru_annex/status/2085879549490085912 |
 | low | new_event_candidate | new | event | イベント候補「なんか発表あるといいなあ 何もないことないしなあ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: なんか発表あるといいなあ 何もないことないしなあ 盆踊り | なんか発表あるといいなあ 何もないことないしなあ 盆踊り 盆踊り | https://x.com/kagakuro965/status/2064321107562512795 |
@@ -8026,8 +8270,10 @@
 | low | new_event_candidate | new | event | イベント候補「ねころん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねころん盆踊り | ねころん盆踊り 盆踊り | https://x.com/ks99916/status/2085981524554555832 |
 | low | new_event_candidate | new | event | イベント候補「ねころん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねころん盆踊り | ねころん盆踊り 盆踊り | https://x.com/icchiy/status/2081298087944040933 |
 | low | new_event_candidate | new | event | イベント候補「ねころ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねころ盆踊り | ねころ盆踊り 盆踊り | https://x.com/Tsukishima_K_VR/status/2085571193525186618 |
+| low | new_event_candidate | new | event | イベント候補「ねっちさんが歌う時間には 行けないですけど 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねっちさんが歌う時間には 行けないですけど 盆踊り | ねっちさんが歌う時間には 行けないですけど 盆踊り 盆踊り | https://x.com/kazutan_0228/status/2087384622292484132 |
 | low | new_event_candidate | new | event | イベント候補「ねぼすけ犬の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねぼすけ犬の盆踊り | ねぼすけ犬の盆踊り 盆踊り | https://x.com/r6ku_ryu/status/2087072755112083547 |
 | low | new_event_candidate | new | event | イベント候補「ねーうちの近所今日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ねーうちの近所今日盆踊り | ねーうちの近所今日盆踊り 盆踊り | https://x.com/33Ytm/status/2063215257276096886 |
+| low | new_event_candidate | new | event | イベント候補「ね転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ね転ん盆踊り | ね転ん盆踊り 盆踊り | https://x.com/Rekka_Nicoco/status/2087400828953117039 |
 | low | new_event_candidate | new | event | イベント候補「の2日連続の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: の2日連続の盆踊り | の2日連続の盆踊り 盆踊り | https://x.com/freedomkoutei/status/2086371301602754981 |
 | low | new_event_candidate | new | event | イベント候補「の小学生達に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: の小学生達に盆踊り | の小学生達に盆踊り 盆踊り | https://x.com/inousa_com/status/2082382033406640528 |
 | low | new_event_candidate | new | event | イベント候補「の阿佐ヶ谷の七夕祭りは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: の阿佐ヶ谷の七夕祭りは盆踊り | の阿佐ヶ谷の七夕祭りは盆踊り 盆踊り | https://x.com/kanmiy2025/status/2084757537099063422 |
@@ -8075,10 +8321,14 @@
 | low | new_event_candidate | new | event | イベント候補「ぴんくなあたまの私達と一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぴんくなあたまの私達と一緒に盆踊り | ぴんくなあたまの私達と一緒に盆踊り 盆踊り | https://x.com/Fairy3710VRC/status/2085968140874494303 |
 | low | new_event_candidate | new | event | イベント候補「ふっさ妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふっさ妖怪盆踊り | ふっさ妖怪盆踊り 盆踊り | https://x.com/akixtu8/status/2071148891429593299 |
 | low | new_event_candidate | new | event | イベント候補「ふつおた」夏ならではの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふつおた」夏ならではの盆踊り | ふつおた」夏ならではの盆踊り 盆踊り | https://x.com/moonsaltowizard/status/2083102910234431652 |
+| low | new_event_candidate | new | event | イベント候補「ふと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふと盆踊り, 地元から離れた数年して夏祭りに行ったら盆踊り | ふと盆踊り 盆踊り; 地元から離れた数年して夏祭りに行ったら盆踊り 盆踊り | https://x.com/ht_gtg/status/2087140807157682496 |
+| low | new_event_candidate | new | event | イベント候補「ふるさと大師盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふるさと大師盆おどり | ふるさと大師盆おどり 盆踊り | https://x.com/gotou_masami/status/2087367001836863773 |
 | low | new_event_candidate | new | event | イベント候補「ふるさと川崎・大師盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふるさと川崎・大師盆おどり, 故郷を想う灯りをつないで60年🏮「ふるさと川崎・大師盆おどり, 盆踊りに合わせて実家に帰ってきたよ | ふるさと川崎・大師盆おどり 盆踊り; 故郷を想う灯りをつないで60年🏮「ふるさと川崎・大師盆おどり 盆踊り; 」と始めたのが 盆踊り | https://x.com/gotou_masami/status/2084459657100177626 |
 | low | new_event_candidate | new | event | イベント候補「ふるてぃは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふるてぃは盆踊り | ふるてぃは盆踊り 盆踊り; な🤣ふるてぃは盆踊り踊らせるし 盆踊り | https://x.com/nekomitainamimi/status/2082378138965950612 |
 | low | new_event_candidate | new | event | イベント候補「ふれあい広場だけでした 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふれあい広場だけでした 盆踊り | ふれあい広場だけでした 盆踊り 盆踊り | https://x.com/34_tsugumi/status/2083802929572843759 |
 | low | new_event_candidate | new | event | イベント候補「ふれあい音頭をお願いします」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ふれあい音頭をお願いします | ふれあい音頭をお願いします 盆踊り; ふれあい音頭 盆踊り; 羽田節 盆踊り | https://x.com/bon__juu/status/2076917933490766209 |
+| low | new_event_candidate | new | event | イベント候補「ぶいちゃの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぶいちゃの盆踊り | ぶいちゃの盆踊り 盆踊り | https://x.com/et0cha_/status/2087313668669428024 |
+| low | new_event_candidate | new | event | イベント候補「ぶいちゃの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぶいちゃの盆踊り | ぶいちゃの盆踊り 盆踊り | https://x.com/yu_yuVRc/status/2087309856747470879 |
 | low | new_event_candidate | new | event | イベント候補「ぶっちゃけ私がやってる なんば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぶっちゃけ私がやってる なんば盆踊り | ぶっちゃけ私がやってる なんば盆踊り 盆踊り | https://x.com/tonbori_wolfen/status/2075918585093087676 |
 | low | new_event_candidate | new | event | イベント候補「ぷぷちゃん 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぷぷちゃん 盆踊り | ぷぷちゃん 盆踊り 盆踊り | https://x.com/rokonyan23/status/2085178968463024213 |
 | low | new_event_candidate | new | event | イベント候補「ぷると歌いながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ぷると歌いながら盆踊り | ぷると歌いながら盆踊り 盆踊り | https://x.com/simamura/status/2082003677532037547 |
@@ -8165,6 +8415,8 @@
 | low | new_event_candidate | new | event | イベント候補「また普通に自我で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また普通に自我で盆踊り | また普通に自我で盆踊り 盆踊り; いつも同行者おいて1人踊り 盆踊り | https://x.com/maika_132/status/2069363734502686794 |
 | low | new_event_candidate | new | event | イベント候補「また来年も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また来年も盆踊り | また来年も盆踊り 盆踊り | https://x.com/ruruko_gb/status/2079050988653298031 |
 | low | new_event_candidate | new | event | イベント候補「また皆様にお会いできるように盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また皆様にお会いできるように盆踊り | また皆様にお会いできるように盆踊り 盆踊り | https://x.com/takatsuki_miho/status/2086737631371825255 |
+| low | new_event_candidate | new | event | イベント候補「また盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また盆踊り | また盆踊り 盆踊り | https://x.com/Rose_yukirisa/status/2087361955799699704 |
+| low | new_event_candidate | new | event | イベント候補「また盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また盆踊り | また盆踊り 盆踊り | https://x.com/Rose_yukirisa/status/2087361437392150778 |
 | low | new_event_candidate | new | event | イベント候補「また盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また盆踊り | また盆踊り 盆踊り | https://x.com/agehabijo/status/2086630049995006008 |
 | low | new_event_candidate | new | event | イベント候補「また盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また盆踊り | また盆踊り 盆踊り | https://x.com/mn4hix2/status/2086419451214446710 |
 | low | new_event_candidate | new | event | イベント候補「また盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: また盆踊り | また盆踊り 盆踊り | https://x.com/mangaland_kin1/status/2084912956756631904 |
@@ -8192,11 +8444,14 @@
 | low | new_event_candidate | new | event | イベント候補「まで恵比寿で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まで恵比寿で盆踊り | まで恵比寿で盆踊り 盆踊り | https://x.com/aya_tamanokoshi/status/2083442331064381844 |
 | low | new_event_candidate | new | event | イベント候補「まで神田明神の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まで神田明神の盆踊り | まで神田明神の盆踊り 盆踊り | https://x.com/nihonbashidc/status/2086304889026789529 |
 | low | new_event_candidate | new | event | イベント候補「まとめ】 ・型抜き ・神崎のアディオス寺 ・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まとめ】 ・型抜き ・神崎のアディオス寺 ・盆踊り | まとめ】 ・型抜き ・神崎のアディオス寺 ・盆踊り 盆踊り | https://x.com/chabutoofficial/status/2085280867770101920 |
+| low | new_event_candidate | new | event | イベント候補「まとミュージックヨイショ！盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まとミュージックヨイショ！盆踊り | まとミュージックヨイショ！盆踊り 盆踊り | https://x.com/spicetakomi/status/2087350063316226311 |
+| low | new_event_candidate | new | event | イベント候補「まよちは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まよちは盆踊り | まよちは盆踊り 盆踊り | https://x.com/LR_mayoi/status/2087445112175628665 |
 | low | new_event_candidate | new | event | イベント候補「まりこもー大学の頃()ダンスかっこいいなって入ったけど一生盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まりこもー大学の頃()ダンスかっこいいなって入ったけど一生盆踊り | まりこもー大学の頃()ダンスかっこいいなって入ったけど一生盆踊り 盆踊り | https://x.com/kochirakosomari/status/2063021327985049692 |
 | low | new_event_candidate | new | event | イベント候補「まるで町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まるで町内会の盆踊り | まるで町内会の盆踊り 盆踊り | https://x.com/PI93IcV2dx66317/status/2068852336299241825 |
 | low | new_event_candidate | new | event | イベント候補「まれ おふざけ心電図 西陽盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まれ おふざけ心電図 西陽盆踊り | まれ おふざけ心電図 西陽盆踊り 盆踊り | https://x.com/shatorai125/status/2068702236109402254 |
 | low | new_event_candidate | new | event | イベント候補「まーちゃんごめんね まりのちゃんもそれいけカープで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: まーちゃんごめんね まりのちゃんもそれいけカープで盆踊り, しましょう 会場の近くでやってる盆踊り | まーちゃんごめんね まりのちゃんもそれいけカープで盆踊り 盆踊り; しましょう 会場の近くでやってる盆踊り 盆踊り | https://x.com/ssss_kaz/status/2086347655979180515 |
 | low | new_event_candidate | new | event | イベント候補「みさわさんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: みさわさんが盆踊り | みさわさんが盆踊り 盆踊り | https://x.com/yamakitikiti/status/2086093683678753140 |
+| low | new_event_candidate | new | event | イベント候補「みずき地区の植え込みに「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: みずき地区の植え込みに「盆踊り | みずき地区の植え込みに「盆踊り 盆踊り | https://x.com/sagae_tokuhain/status/2087427665435488702 |
 | low | new_event_candidate | new | event | イベント候補「みたいなのがあることすら知らず 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: みたいなのがあることすら知らず 盆踊り | みたいなのがあることすら知らず 盆踊り 盆踊り | https://x.com/exemplaryTB/status/2080967245099077796 |
 | low | new_event_candidate | new | event | イベント候補「みたいな気持ちでうっきうきで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: みたいな気持ちでうっきうきで盆踊り | みたいな気持ちでうっきうきで盆踊り 盆踊り | https://x.com/5stBBA/status/2082904586176844174 |
 | low | new_event_candidate | new | event | イベント候補「みたいにaikoの曲も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: みたいにaikoの曲も盆踊り | みたいにaikoの曲も盆踊り 盆踊り | https://x.com/Me_Rock369/status/2063925728945860904 |
@@ -8235,6 +8490,7 @@
 | low | new_event_candidate | new | event | イベント候補「もだちといく盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: もだちといく盆踊り | もだちといく盆踊り 盆踊り | https://x.com/observer0807/status/2081603972536893860 |
 | low | new_event_candidate | new | event | イベント候補「もよく考えたら札幌の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: もよく考えたら札幌の盆踊り, 函館の盆踊り | もよく考えたら札幌の盆踊り 盆踊り; 函館の盆踊り 盆踊り | https://x.com/taru_chan42/status/2068004378225877321 |
 | low | new_event_candidate | new | event | イベント候補「も伊勢崎アニメソング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: も伊勢崎アニメソング盆踊り | も伊勢崎アニメソング盆踊り 盆踊り | https://x.com/wannyantanookan/status/2079032573821587608 |
+| low | new_event_candidate | new | event | イベント候補「も大きな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: も大きな盆踊り | も大きな盆踊り 盆踊り | https://x.com/babaoshi_kiyo/status/2087308515765543123 |
 | low | new_event_candidate | new | event | イベント候補「も屋台あって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: も屋台あって盆踊り | も屋台あって盆踊り 盆踊り | https://x.com/cos_sirokumaru/status/2069430811896742083 |
 | low | new_event_candidate | new | event | イベント候補「も未だにチャリ乗って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: も未だにチャリ乗って盆踊り | も未だにチャリ乗って盆踊り 盆踊り | https://x.com/pechan_ko1006/status/2070052168640643574 |
 | low | new_event_candidate | new | event | イベント候補「も残念なことにゲリラ豪雨のせいで夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: も残念なことにゲリラ豪雨のせいで夜の盆踊り | も残念なことにゲリラ豪雨のせいで夜の盆踊り 盆踊り | https://x.com/komaki_tsubasa/status/2081385690139640310 |
@@ -8260,6 +8516,7 @@
 | low | new_event_candidate | new | event | イベント候補「ゆる盆や赤坂の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ゆる盆や赤坂の盆踊り | ゆる盆や赤坂の盆踊り 盆踊り; 河内音頭 盆踊り | https://x.com/yumiya_pon/status/2005444991657927032 |
 | low | new_event_candidate | new | event | イベント候補「よ8月こい ハスコス キタコス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よ8月こい ハスコス キタコス盆踊り | よ8月こい ハスコス キタコス盆踊り 盆踊り | https://x.com/Z_YO_TO18/status/2082006069690478796 |
 | low | new_event_candidate | new | event | イベント候補「よいとこまつりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よいとこまつりの盆踊り | よいとこまつりの盆踊り 盆踊り; その先生方に踊り 盆踊り | https://x.com/tanakatakeshi/status/2079904079019679764 |
+| low | new_event_candidate | new | event | イベント候補「ようやくお盆休みになります でも地区の役員とかやってるので盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ようやくお盆休みになります でも地区の役員とかやってるので盆踊り | ようやくお盆休みになります でも地区の役員とかやってるので盆踊り 盆踊り | https://x.com/alacbal/status/2087340790813180231 |
 | low | new_event_candidate | new | event | イベント候補「ようやく盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ようやく盆踊り | ようやく盆踊り 盆踊り | https://x.com/ikana0403/status/2077292147544609094 |
 | low | new_event_candidate | new | event | イベント候補「よく盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よく盆踊り | よく盆踊り 盆踊り; 気仙沼音頭 盆踊り | https://x.com/0kazzzz0/status/2085143449700118685 |
 | low | new_event_candidate | new | event | イベント候補「よく考えたらその日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: よく考えたらその日は盆踊り | よく考えたらその日は盆踊り 盆踊り; 戻ろうとしたら 盆踊り | https://x.com/moka_meshiuma/status/2081648102952611948 |
@@ -8306,10 +8563,12 @@
 | low | new_event_candidate | new | event | イベント候補「れんうぇー部全員で明日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: れんうぇー部全員で明日盆踊り | れんうぇー部全員で明日盆踊り 盆踊り | https://x.com/dstui_hhr/status/2062217124291264977 |
 | low | new_event_candidate | new | event | イベント候補「ろぼあひるもお祭りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ろぼあひるもお祭りで盆踊り | ろぼあひるもお祭りで盆踊り 盆踊り; よさこい総踊り 盆踊り | https://x.com/pikapika_pro/status/2079782532237963537 |
 | low | new_event_candidate | new | event | イベント候補「ろみちゃん 夕方に 今日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ろみちゃん 夕方に 今日は盆踊り | ろみちゃん 夕方に 今日は盆踊り 盆踊り | https://x.com/rokonyan23/status/2084926476441538572 |
+| low | new_event_candidate | new | event | イベント候補「わぁ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わぁ盆踊り | わぁ盆踊り 盆踊り | https://x.com/molmolpoly/status/2087378648928231803 |
 | low | new_event_candidate | new | event | イベント候補「わいは帯買ったので浴衣本体を買って痩せて推しと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わいは帯買ったので浴衣本体を買って痩せて推しと盆踊り | わいは帯買ったので浴衣本体を買って痩せて推しと盆踊り 盆踊り | https://x.com/karen_naomi3465/status/2069439539484250527 |
 | low | new_event_candidate | new | event | イベント候補「わいらが参入した盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わいらが参入した盆踊り | わいらが参入した盆踊り 盆踊り | https://x.com/marango_rejiko/status/2063603298607985058 |
 | low | new_event_candidate | new | event | イベント候補「わい墓参りゲーム映画鑑賞甥っ子と遊ぶ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わい墓参りゲーム映画鑑賞甥っ子と遊ぶ盆踊り | わい墓参りゲーム映画鑑賞甥っ子と遊ぶ盆踊り 盆踊り | https://x.com/zuki_marudasi/status/2086286093016768850 |
 | low | new_event_candidate | new | event | イベント候補「わかりにくい曲は来年は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わかりにくい曲は来年は盆踊り | わかりにくい曲は来年は盆踊り 盆踊り | https://x.com/Momotosumomo123/status/2076300439658897780 |
+| low | new_event_candidate | new | event | イベント候補「わかるww 明日は休みだけど 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わかるww 明日は休みだけど 盆踊り | わかるww 明日は休みだけど 盆踊り 盆踊り | https://x.com/NorthNine1292/status/2087322454142390703 |
 | low | new_event_candidate | new | event | イベント候補「わが市川市の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わが市川市の盆踊り | わが市川市の盆踊り 盆踊り | https://x.com/hitofudegaki10/status/2079793773769634122 |
 | low | new_event_candidate | new | event | イベント候補「わざと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わざと盆踊り | わざと盆踊り 盆踊り | https://x.com/KakukoKathyOk/status/2085626167948890240 |
 | low | new_event_candidate | new | event | イベント候補「わざわざ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: わざわざ 盆踊り, そして まだ 盆踊り | わざわざ 盆踊り 盆踊り; そして まだ 盆踊り 盆踊り; 行くかしら 盆踊り | https://x.com/usi_yuka/status/2065413433085087781 |
@@ -8337,6 +8596,7 @@
 | low | new_event_candidate | new | event | イベント候補「アイロンかけなきゃ日曜シワシワで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アイロンかけなきゃ日曜シワシワで盆踊り | アイロンかけなきゃ日曜シワシワで盆踊り 盆踊り | https://x.com/arnsmn_331/status/2082055168892494181 |
 | low | new_event_candidate | new | event | イベント候補「アカプラ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アカプラ盆踊り | アカプラ盆踊り 盆踊り | https://x.com/mufumihana73/status/2083118378211053741 |
 | low | new_event_candidate | new | event | イベント候補「アカペラ音頭盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アカペラ音頭盆踊り | アカペラ音頭盆踊り 盆踊り | https://x.com/MIKA_S324/status/2070388458028466631 |
+| low | new_event_candidate | new | event | イベント候補「アキバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アキバ盆踊り | アキバ盆踊り 盆踊り | https://x.com/sasakichi_akiba/status/2087198919931642335 |
 | low | new_event_candidate | new | event | イベント候補「アキバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アキバ盆踊り | アキバ盆踊り 盆踊り | https://x.com/sasakichi_akiba/status/2082702700790387094 |
 | low | new_event_candidate | new | event | イベント候補「アキバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アキバ盆踊り | アキバ盆踊り 盆踊り | https://x.com/yuuto0411gaoo/status/2070899192843894885 |
 | low | new_event_candidate | new | event | イベント候補「アキバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アキバ盆踊り | アキバ盆踊り 盆踊り | https://x.com/Straight__2525/status/2070770838157369362 |
@@ -8355,6 +8615,7 @@
 | low | new_event_candidate | new | event | イベント候補「アップテンポな曲だけどいきなり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アップテンポな曲だけどいきなり盆踊り | アップテンポな曲だけどいきなり盆踊り 盆踊り | https://x.com/syuuhei0/status/2084824387539308829 |
 | low | new_event_candidate | new | event | イベント候補「アツいよね川崎区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アツいよね川崎区の盆踊り | アツいよね川崎区の盆踊り 盆踊り | https://x.com/5kHfYa5PjKsGGoV/status/2068295766318412073 |
 | low | new_event_candidate | new | event | イベント候補「アニソンじゃないけれど近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アニソンじゃないけれど近所の盆踊り | アニソンじゃないけれど近所の盆踊り 盆踊り | https://x.com/douusan/status/2084921844914946401 |
+| low | new_event_candidate | new | event | イベント候補「アニソンで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アニソンで盆踊り | アニソンで盆踊り 盆踊り | https://x.com/mizuno_mori/status/2087122409555972561 |
 | low | new_event_candidate | new | event | イベント候補「アニソンで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アニソンで盆踊り | アニソンで盆踊り 盆踊り | https://x.com/pixeladd9/status/2086664877113061867 |
 | low | new_event_candidate | new | event | イベント候補「アニソンで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アニソンで盆踊り | アニソンで盆踊り 盆踊り; 代官ばやし踊り 盆踊り | https://x.com/mycoro/status/2085977230510096490 |
 | low | new_event_candidate | new | event | イベント候補「アニソンの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: アニソンの盆踊り | アニソンの盆踊り 盆踊り | https://x.com/ugui93776117855/status/2086740239209648577 |
@@ -8460,11 +8721,13 @@
 | low | new_event_candidate | new | event | イベント候補「イデ音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イデ音頭 | イデ音頭 盆踊り; イデ音頭 盆踊り | https://x.com/yomogihirachi/status/2026678588246995436 |
 | low | new_event_candidate | new | event | イベント候補「イパネマの娘も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イパネマの娘も盆踊り | イパネマの娘も盆踊り 盆踊り | https://x.com/g_yuyamada_g/status/2082084157472329862 |
 | low | new_event_candidate | new | event | イベント候補「イビルジョーの暗黒盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イビルジョーの暗黒盆踊り | イビルジョーの暗黒盆踊り 盆踊り | https://x.com/ugo_vrc/status/2062162515786891283 |
+| low | new_event_candidate | new | event | イベント候補「イマドキの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イマドキの盆踊り | イマドキの盆踊り 盆踊り | https://x.com/mbs_4chanTV/status/2087358527757332745 |
 | low | new_event_candidate | new | event | イベント候補「イマドキの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イマドキの盆踊り | イマドキの盆踊り 盆踊り; 郡上踊り 盆踊り | https://x.com/bruellender/status/2083556731880382809 |
 | low | new_event_candidate | new | event | イベント候補「イヤフォンをして周りに音を流さない盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イヤフォンをして周りに音を流さない盆踊り | イヤフォンをして周りに音を流さない盆踊り 盆踊り | https://x.com/ancient48/status/2086285964172038554 |
 | low | new_event_candidate | new | event | イベント候補「イヤホンして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イヤホンして盆踊り | イヤホンして盆踊り 盆踊り | https://x.com/jichikaihi/status/2082724110841586018 |
 | low | new_event_candidate | new | event | イベント候補「イヤホンをつけて踊る「無音盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イヤホンをつけて踊る「無音盆踊り, 無音盆踊り | イヤホンをつけて踊る「無音盆踊り 盆踊り; 無音盆踊り 盆踊り | https://x.com/sachiyoehime118/status/2086614534958276784 |
 | low | new_event_candidate | new | event | イベント候補「イヨのリーチの踊りみると盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イヨのリーチの踊りみると盆踊り | イヨのリーチの踊りみると盆踊り 盆踊り | https://x.com/k_sanniang/status/2081883873789821038 |
+| low | new_event_candidate | new | event | イベント候補「イラッとしたので盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: イラッとしたので盆踊り | イラッとしたので盆踊り 盆踊り | https://x.com/Rirurirurirury/status/2087406993380425787 |
 | low | new_event_candidate | new | event | イベント候補「インスタに上がってる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: インスタに上がってる盆踊り | インスタに上がってる盆踊り 盆踊り | https://x.com/nyantokonyan_2/status/2086669074785092048 |
 | low | new_event_candidate | new | event | イベント候補「インド風盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: インド風盆踊り | インド風盆踊り 盆踊り | https://x.com/kachinoishichi/status/2062915929131135401 |
 | low | new_event_candidate | new | event | イベント候補「インビテの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: インビテの盆踊り | インビテの盆踊り 盆踊り; どうにもこうにも出来ないな 盆踊り | https://x.com/BBCF_Yanshu/status/2063442951364321427 |
@@ -8485,6 +8748,7 @@
 | low | new_event_candidate | new | event | イベント候補「エスコンの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エスコンの盆踊り | エスコンの盆踊り 盆踊り | https://x.com/toneontone01/status/2079092020002611603 |
 | low | new_event_candidate | new | event | イベント候補「エスコンの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エスコンの盆踊り | エスコンの盆踊り 盆踊り | https://x.com/okamon_31031/status/2064410952049836287 |
 | low | new_event_candidate | new | event | イベント候補「エスコンフィールド北海道で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エスコンフィールド北海道で盆踊り | エスコンフィールド北海道で盆踊り 盆踊り | https://x.com/cozy_shogoki/status/2063888417717727498 |
+| low | new_event_candidate | new | event | イベント候補「エスコンフィールド盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エスコンフィールド盆踊り | エスコンフィールド盆踊り 盆踊り | https://x.com/yajiumaumazura/status/2087391848331641045 |
 | low | new_event_candidate | new | event | イベント候補「エドが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エドが盆踊り | エドが盆踊り 盆踊り | https://x.com/tonchiki_howaaa/status/2083833542283542683 |
 | low | new_event_candidate | new | event | イベント候補「エドシーランめちゃくちゃ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エドシーランめちゃくちゃ盆踊り | エドシーランめちゃくちゃ盆踊り 盆踊り; 小さい子でも踊り 盆踊り | https://x.com/wataru_tsuki/status/2084147789647482942 |
 | low | new_event_candidate | new | event | イベント候補「エド・シーランで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: エド・シーランで盆踊り | エド・シーランで盆踊り 盆踊り | https://x.com/o_harusan/status/2083794469300957558 |
@@ -8592,6 +8856,7 @@
 | low | new_event_candidate | new | event | イベント候補「クソ暑いなか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クソ暑いなか盆踊り | クソ暑いなか盆踊り 盆踊り | https://x.com/cgms_s2/status/2079132638649188541 |
 | low | new_event_candidate | new | event | イベント候補「クックロビン音頭を実際に踊る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クックロビン音頭を実際に踊る盆踊り | クックロビン音頭を実際に踊る盆踊り 盆踊り | https://x.com/cielo_blu_/status/2085962275106820319 |
 | low | new_event_candidate | new | event | イベント候補「クックロビン音頭を盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クックロビン音頭を盆踊り | クックロビン音頭を盆踊り 盆踊り | https://x.com/bluebird7312/status/2086332539053207891 |
+| low | new_event_candidate | new | event | イベント候補「クックロビン音頭盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クックロビン音頭盆踊り | クックロビン音頭盆踊り 盆踊り | https://x.com/RUsaginee3/status/2087387243048763717 |
 | low | new_event_candidate | new | event | イベント候補「クライシス 田舎の村の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クライシス 田舎の村の盆踊り | クライシス 田舎の村の盆踊り 盆踊り | https://x.com/FooQuChan/status/2069713519604572443 |
 | low | new_event_candidate | new | event | イベント候補「クライハイフライは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クライハイフライは盆踊り | クライハイフライは盆踊り 盆踊り | https://x.com/__akn15/status/2063612680976617939 |
 | low | new_event_candidate | new | event | イベント候補「クライハイフライ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: クライハイフライ盆踊り | クライハイフライ盆踊り 盆踊り | https://x.com/__akn15/status/2063618083990962225 |
@@ -8665,6 +8930,7 @@
 | low | new_event_candidate | new | event | イベント候補「サイレント盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サイレント盆踊り | サイレント盆踊り 盆踊り | https://x.com/Hiroh00m/status/2084926130235289907 |
 | low | new_event_candidate | new | event | イベント候補「サイレント盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サイレント盆踊り | サイレント盆踊り 盆踊り | https://x.com/utpsr/status/2081643010820087813 |
 | low | new_event_candidate | new | event | イベント候補「サイレント盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サイレント盆踊り | サイレント盆踊り 盆踊り | https://x.com/ONOJI13_b_donor/status/2068659315603546522 |
+| low | new_event_candidate | new | event | イベント候補「サイレント盆踊りが開催されてましたよね 参加者全員イヤホンして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サイレント盆踊りが開催されてましたよね 参加者全員イヤホンして盆踊り | サイレント盆踊りが開催されてましたよね 参加者全員イヤホンして盆踊り 盆踊り | https://x.com/lanfa0036/status/2087377554441392626 |
 | low | new_event_candidate | new | event | イベント候補「サカナクションでもエド・シーランでもポンジョビでも踊れる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サカナクションでもエド・シーランでもポンジョビでも踊れる盆踊り | サカナクションでもエド・シーランでもポンジョビでも踊れる盆踊り 盆踊り | https://x.com/fuminnn/status/2083739310822658480 |
 | low | new_event_candidate | new | event | イベント候補「サカナクションの夜の踊り子が 早速盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サカナクションの夜の踊り子が 早速盆踊り | サカナクションの夜の踊り子が 早速盆踊り 盆踊り | https://x.com/hero_yasukun/status/2078475974812053953 |
 | low | new_event_candidate | new | event | イベント候補「サキュバス酒場の寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: サキュバス酒場の寝転ん盆踊り, しちゃったんだけどずっと盆踊り | サキュバス酒場の寝転ん盆踊り 盆踊り; しちゃったんだけどずっと盆踊り 盆踊り | https://x.com/DeltaPremalius/status/2086345733465416005 |
@@ -8720,11 +8986,13 @@
 | low | new_event_candidate | new | event | イベント候補「シンプルに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シンプルに盆踊り | シンプルに盆踊り 盆踊り; 先頭で教えながら踊り 盆踊り | https://x.com/mgrnenchi_mkt/status/2067236927007522897 |
 | low | new_event_candidate | new | event | イベント候補「シンヘンくんに入れたら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シンヘンくんに入れたら盆踊り | シンヘンくんに入れたら盆踊り 盆踊り | https://x.com/taya_no1_v/status/2062555289724113189 |
 | low | new_event_candidate | new | event | イベント候補「シンヨコの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シンヨコの盆踊り | シンヨコの盆踊り 盆踊り | https://x.com/355a6d1/status/2081029613829214252 |
+| low | new_event_candidate | new | event | イベント候補「シン・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シン・盆踊り, こんな曲で踊りたい！シン・盆踊りナンバー | シン・盆踊り 盆踊り; こんな曲で踊りたい！シン・盆踊りナンバー 盆踊り | https://x.com/riehas/status/2087394310694346771 |
 | low | new_event_candidate | new | event | イベント候補「シーズン初めての盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シーズン初めての盆踊り | シーズン初めての盆踊り 盆踊り; どの踊り 盆踊り | https://x.com/subbyhi/status/2062832180536258727 |
 | low | new_event_candidate | new | event | イベント候補「シーホースは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シーホースは盆踊り | シーホースは盆踊り 盆踊り | https://x.com/ezoCwGiZ3W9aM26/status/2076589584725774528 |
 | low | new_event_candidate | new | event | イベント候補「シーランで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シーランで盆踊り | シーランで盆踊り 盆踊り | https://x.com/Nora91578684140/status/2083833664719462685 |
 | low | new_event_candidate | new | event | イベント候補「シールは銀がいずれちゃんと作るとか 21日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: シールは銀がいずれちゃんと作るとか 21日は盆踊り | シールは銀がいずれちゃんと作るとか 21日は盆踊り 盆踊り | https://x.com/MJSbsorNnoc0FDF/status/2068123296391221366 |
 | low | new_event_candidate | new | event | イベント候補「ジェラシー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ジェラシー盆踊り | ジェラシー盆踊り 盆踊り | https://x.com/amigo424/status/2063602253379092837 |
+| low | new_event_candidate | new | event | イベント候補「ジムも休館日だしお天気悪そうだから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ジムも休館日だしお天気悪そうだから盆踊り | ジムも休館日だしお天気悪そうだから盆踊り 盆踊り | https://x.com/N4cTk5VnaBArqKA/status/2087432297993895988 |
 | low | new_event_candidate | new | event | イベント候補「ジャイアンツタウンに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ジャイアンツタウンに盆踊り | ジャイアンツタウンに盆踊り 盆踊り | https://x.com/fichxia9/status/2081642852652847501 |
 | low | new_event_candidate | new | event | イベント候補「ジャズかと思ったら急に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ジャズかと思ったら急に盆踊り | ジャズかと思ったら急に盆踊り 盆踊り | https://x.com/doumoichiro/status/2084917504175194279 |
 | low | new_event_candidate | new | event | イベント候補「ジャズで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ジャズで盆踊り, スティーパンで盆踊り, ついにはレゲエで盆踊り | ジャズで盆踊り 盆踊り; スティーパンで盆踊り 盆踊り | https://x.com/Sea_Style/status/2063926052167331845 |
@@ -8764,6 +9032,7 @@
 | low | new_event_candidate | new | event | イベント候補「スーパーヒーロー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: スーパーヒーロー盆踊り | スーパーヒーロー盆踊り 盆踊り | https://x.com/megmoe7/status/2070420244297076925 |
 | low | new_event_candidate | new | event | イベント候補「スーパー耐久オートポリス大会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: スーパー耐久オートポリス大会 盆踊り, S耐メンバーさん達も盆踊り | スーパー耐久オートポリス大会 盆踊り 盆踊り; S耐メンバーさん達も盆踊り 盆踊り; ウッキウキに踊る☺ 盆踊り | https://x.com/yukisakihayato/status/2082004223181615598 |
 | low | new_event_candidate | new | event | イベント候補「スーパー耐久オートポリス大会 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: スーパー耐久オートポリス大会 盆踊り | スーパー耐久オートポリス大会 盆踊り 盆踊り | https://x.com/yukisakihayato/status/2082003242033238459 |
+| low | new_event_candidate | new | event | イベント候補「ズンバは「素早い盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ズンバは「素早い盆踊り, 素早い盆踊り | ズンバは「素早い盆踊り 盆踊り; 素早い盆踊り 盆踊り | https://x.com/kenta221B/status/2087428172354896360 |
 | low | new_event_candidate | new | event | イベント候補「セダーレのみんなで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: セダーレのみんなで盆踊り | セダーレのみんなで盆踊り 盆踊り | https://x.com/Limecafe_sedare/status/2086739331834638634 |
 | low | new_event_candidate | new | event | イベント候補「セフィロスさんは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: セフィロスさんは盆踊り | セフィロスさんは盆踊り 盆踊り | https://x.com/fffnde/status/2084215463731757276 |
 | low | new_event_candidate | new | event | イベント候補「セミ取って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: セミ取って盆踊り | セミ取って盆踊り 盆踊り | https://x.com/MELSWA_rinon/status/2082266652054565282 |
@@ -8814,6 +9083,7 @@
 | low | new_event_candidate | new | event | イベント候補「ダンスとか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダンスとか盆踊り | ダンスとか盆踊り 盆踊り; なんす 盆踊り | https://x.com/KAYO_1212_1007/status/2085585939863412781 |
 | low | new_event_candidate | new | event | イベント候補「ダンスはからっきしですwww盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダンスはからっきしですwww盆踊り | ダンスはからっきしですwww盆踊り 盆踊り | https://x.com/noukin_AIgori/status/2069287217047261537 |
 | low | new_event_candidate | new | event | イベント候補「ダンスアラウンドを老人ホームに置いて欲しい 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダンスアラウンドを老人ホームに置いて欲しい 盆踊り | ダンスアラウンドを老人ホームに置いて欲しい 盆踊り 盆踊り | https://x.com/mechanicalsweet/status/2063537910616572194 |
+| low | new_event_candidate | new | event | イベント候補「ダンス後は今年の寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダンス後は今年の寝転ん盆踊り | ダンス後は今年の寝転ん盆踊り 盆踊り; 見てました 盆踊り | https://x.com/yabrik_/status/2087337448296915261 |
 | low | new_event_candidate | new | event | イベント候補「ダンス経験は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダンス経験は盆踊り | ダンス経験は盆踊り 盆踊り | https://x.com/masa_kon_no/status/2086311006662467873 |
 | low | new_event_candidate | new | event | イベント候補「ダンダリは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダンダリは盆踊り | ダンダリは盆踊り 盆踊り | https://x.com/watasuge_myu/status/2079775133645091048 |
 | low | new_event_candidate | new | event | イベント候補「ダークな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ダークな盆踊り | ダークな盆踊り 盆踊り | https://x.com/Xion_sukisuki/status/2071543066750808156 |
@@ -8939,6 +9209,7 @@
 | low | new_event_candidate | new | event | イベント候補「パートで教えると盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: パートで教えると盆踊り | パートで教えると盆踊り 盆踊り | https://x.com/roku_pota/status/2069264630724342052 |
 | low | new_event_candidate | new | event | イベント候補「パートもあり地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: パートもあり地区の盆踊り | パートもあり地区の盆踊り 盆踊り | https://x.com/AyanoMickey/status/2082244273756647652 |
 | low | new_event_candidate | new | event | イベント候補「ヒップホップでも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヒップホップでも盆踊り | ヒップホップでも盆踊り 盆踊り | https://x.com/tann2009/status/2071037148363661718 |
+| low | new_event_candidate | new | event | イベント候補「ヒルズの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヒルズの盆踊り | ヒルズの盆踊り 盆踊り | https://x.com/aqubi_chang/status/2087406072344523003 |
 | low | new_event_candidate | new | event | イベント候補「ヒンメルの像を囲んでみんな楽しく盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヒンメルの像を囲んでみんな楽しく盆踊り | ヒンメルの像を囲んでみんな楽しく盆踊り 盆踊り | https://x.com/iamonlythathim/status/2081674849617891631 |
 | low | new_event_candidate | new | event | イベント候補「ビアガーデンって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ビアガーデンって盆踊り | ビアガーデンって盆踊り 盆踊り | https://x.com/o6_om_q_p/status/2082377647125041398 |
 | low | new_event_candidate | new | event | イベント候補「ビアガーデンや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ビアガーデンや盆踊り | ビアガーデンや盆踊り 盆踊り; ざわサクラタウン夏まつり2026」が 盆踊り | https://x.com/yoshirin0150739/status/2083024762612412904 |
@@ -8967,6 +9238,7 @@
 | low | new_event_candidate | new | event | イベント候補「ピンク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ピンク盆踊り | ピンク盆踊り 盆踊り | https://x.com/JourneyCutiecat/status/2063322253375504430 |
 | low | new_event_candidate | new | event | イベント候補「ファイティングイーグルスの人たちが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファイティングイーグルスの人たちが盆踊り | ファイティングイーグルスの人たちが盆踊り 盆踊り | https://x.com/non_tanisu/status/2079132890181579208 |
 | low | new_event_candidate | new | event | イベント候補「ファンキーな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファンキーな盆踊り | ファンキーな盆踊り 盆踊り | https://x.com/mkmkdeeedenaide/status/2062150487160623390 |
+| low | new_event_candidate | new | event | イベント候補「ファンキー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファンキー盆踊り | ファンキー盆踊り 盆踊り | https://x.com/3JrUB3YrnC89116/status/2087351790006313447 |
 | low | new_event_candidate | new | event | イベント候補「ファンファーレDE 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファンファーレDE 盆踊り | ファンファーレDE 盆踊り 盆踊り | https://x.com/kjump_st0214/status/2077280834185572453 |
 | low | new_event_candidate | new | event | イベント候補「ファンファーレ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファンファーレ盆踊り | ファンファーレ盆踊り 盆踊り | https://x.com/nyancoramune/status/2076600694757548458 |
 | low | new_event_candidate | new | event | イベント候補「ファンファーレ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ファンファーレ盆踊り | ファンファーレ盆踊り 盆踊り | https://x.com/Sn__tj/status/2071148266595688483 |
@@ -8981,6 +9253,7 @@
 | low | new_event_candidate | new | event | イベント候補「フェードアウトするだけで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フェードアウトするだけで盆踊り, はより接近していく 界隈からフェードアウトしないと盆踊り, ラーマインド)は実はそれほど盆踊り | フェードアウトするだけで盆踊り 盆踊り; はより接近していく 界隈からフェードアウトしないと盆踊り 盆踊り | https://x.com/kuma_bot999/status/2081885595618713734 |
 | low | new_event_candidate | new | event | イベント候補「フォトスポットにて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フォトスポットにて盆踊り | フォトスポットにて盆踊り 盆踊り | https://x.com/ToshyChen_1028/status/2081293537812128125 |
 | low | new_event_candidate | new | event | イベント候補「フォークダンス・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フォークダンス・盆踊り | フォークダンス・盆踊り 盆踊り | https://x.com/eiga_specials/status/2084836793170747547 |
+| low | new_event_candidate | new | event | イベント候補「フジテレビが 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フジテレビが 盆踊り | フジテレビが 盆踊り 盆踊り | https://x.com/Toshihisa1041/status/2087124112888283222 |
 | low | new_event_candidate | new | event | イベント候補「フジテレビは日本の文化盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フジテレビは日本の文化盆踊り | フジテレビは日本の文化盆踊り 盆踊り | https://x.com/dreadyarou/status/2085292316814876715 |
 | low | new_event_candidate | new | event | イベント候補「フジロックに花火大会に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フジロックに花火大会に盆踊り | フジロックに花火大会に盆踊り 盆踊り | https://x.com/pzism_musashino/status/2081683488982675536 |
 | low | new_event_candidate | new | event | イベント候補「フラしてるのか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フラしてるのか盆踊り | フラしてるのか盆踊り 盆踊り | https://x.com/mikawa_321/status/2065046119596646691 |
@@ -8989,6 +9262,7 @@
 | low | new_event_candidate | new | event | イベント候補「フリはスタイリッシュなので終始盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フリはスタイリッシュなので終始盆踊り | フリはスタイリッシュなので終始盆踊り 盆踊り | https://x.com/nana3j/status/2078372366804287894 |
 | low | new_event_candidate | new | event | イベント候補「フレンチ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フレンチ盆踊り | フレンチ盆踊り 盆踊り; うまい棒音頭 盆踊り | https://x.com/fried_wakame/status/2074713203335192881 |
 | low | new_event_candidate | new | event | イベント候補「フレンドさん達と寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フレンドさん達と寝転ん盆踊り | フレンドさん達と寝転ん盆踊り 盆踊り | https://x.com/wasyu_y/status/2086344627427393909 |
+| low | new_event_candidate | new | event | イベント候補「フレンドと行った寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フレンドと行った寝転ん盆踊り | フレンドと行った寝転ん盆踊り 盆踊り | https://x.com/vrnousagi/status/2087385986208862262 |
 | low | new_event_candidate | new | event | イベント候補「フロントボタン全開きタイプ 五部袖なもんで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: フロントボタン全開きタイプ 五部袖なもんで盆踊り | フロントボタン全開きタイプ 五部袖なもんで盆踊り 盆踊り | https://x.com/YYYichirou/status/2087026340667199539 |
 | low | new_event_candidate | new | event | イベント候補「ブラザーズで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ブラザーズで盆踊り | ブラザーズで盆踊り 盆踊り | https://x.com/misstomatosan11/status/2081869043850764728 |
 | low | new_event_candidate | new | event | イベント候補「ブラジルとか日本祭りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ブラジルとか日本祭りや盆踊り | ブラジルとか日本祭りや盆踊り 盆踊り | https://x.com/heiwanikenkouni/status/2068291848263929972 |
@@ -9022,6 +9296,7 @@
 | low | new_event_candidate | new | event | イベント候補「プールで水着 運動会で体操着 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: プールで水着 運動会で体操着 盆踊り | プールで水着 運動会で体操着 盆踊り 盆踊り | https://x.com/AVRxuCpOdT67556/status/2063958253449650593 |
 | low | new_event_candidate | new | event | イベント候補「プールの帰り辻堂海浜公園での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: プールの帰り辻堂海浜公園での盆踊り, こんな大規模な日本の盆踊り | プールの帰り辻堂海浜公園での盆踊り 盆踊り; こんな大規模な日本の盆踊り 盆踊り | https://x.com/LazyKozy/status/2079034310729121993 |
 | low | new_event_candidate | new | event | イベント候補「ヘドバンできるくらいには回復してるといいなぁ笑 どんな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヘドバンできるくらいには回復してるといいなぁ笑 どんな盆踊り | ヘドバンできるくらいには回復してるといいなぁ笑 どんな盆踊り 盆踊り | https://x.com/Tdkig5555/status/2069264318005461316 |
+| low | new_event_candidate | new | event | イベント候補「ヘビメタで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヘビメタで盆踊り | ヘビメタで盆踊り 盆踊り | https://x.com/showaheiseir/status/2087405429781663959 |
 | low | new_event_candidate | new | event | イベント候補「ヘロヘロに酔っ払って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヘロヘロに酔っ払って盆踊り | ヘロヘロに酔っ払って盆踊り 盆踊り | https://x.com/JUNP0K0/status/2079101180324823160 |
 | low | new_event_candidate | new | event | イベント候補「ベンチに座ってる写真は後ろで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ベンチに座ってる写真は後ろで盆踊り | ベンチに座ってる写真は後ろで盆踊り 盆踊り | https://x.com/opukusan913/status/2064362842757927037 |
 | low | new_event_candidate | new | event | イベント候補「ベースは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ベースは盆踊り | ベースは盆踊り 盆踊り | https://x.com/ninomaekiki/status/2066918621683863768 |
@@ -9036,6 +9311,8 @@
 | low | new_event_candidate | new | event | イベント候補「ホントは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ホントは盆踊り | ホントは盆踊り 盆踊り | https://x.com/bababansan/status/2083489592099938500 |
 | low | new_event_candidate | new | event | イベント候補「ホントは神田明神アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ホントは神田明神アニソン盆踊り | ホントは神田明神アニソン盆踊り 盆踊り | https://x.com/poyopoyoakio/status/2085622382010724773 |
 | low | new_event_candidate | new | event | イベント候補「ホークスとコラボの天神祭り 祭りはやってるけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ホークスとコラボの天神祭り 祭りはやってるけど盆踊り | ホークスとコラボの天神祭り 祭りはやってるけど盆踊り 盆踊り | https://x.com/OAtZEGkZvuhznJV/status/2084917507006378243 |
+| low | new_event_candidate | new | event | イベント候補「ホームグラウンドの 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ホームグラウンドの 盆踊り | ホームグラウンドの 盆踊り 盆踊り | https://x.com/hyusaka1973/status/2087163271350730992 |
+| low | new_event_candidate | new | event | イベント候補「ホームグラウンドの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ホームグラウンドの盆踊り | ホームグラウンドの盆踊り 盆踊り | https://x.com/cutedevil_rider/status/2087162335534227565 |
 | low | new_event_candidate | new | event | イベント候補「ボクのとこの地区は盆踊りすることなかったけど小学校の運動会で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ボクのとこの地区は盆踊りすることなかったけど小学校の運動会で盆踊り | ボクのとこの地区は盆踊りすることなかったけど小学校の運動会で盆踊り 盆踊り | https://x.com/murasaki_moji/status/2085726756364067023 |
 | low | new_event_candidate | new | event | イベント候補「ボバの曲聴くとタスケン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ボバの曲聴くとタスケン盆踊り | ボバの曲聴くとタスケン盆踊り 盆踊り | https://x.com/kei733/status/2068006133311422706 |
 | low | new_event_candidate | new | event | イベント候補「ボラちゃん音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ボラちゃん音頭 | ボラちゃん音頭 盆踊り; ボラちゃん音頭 盆踊り | https://x.com/2tsuo_g/status/2063258988750532664 |
@@ -9108,12 +9385,14 @@
 | low | new_event_candidate | new | event | イベント候補「メインである盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メインである盆踊り, 駅近の盆踊り, 地元の方が頑張って毎年開催されてる盆踊り | メインである盆踊り 盆踊り; 駅近の盆踊り 盆踊り; 色々なお店に囲まれたとこにある公園 盆踊り | https://x.com/nijigame_taiko/status/2085915459099246812 |
 | low | new_event_candidate | new | event | イベント候補「メインの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メインの盆踊り | メインの盆踊り 盆踊り | https://x.com/Infinty777/status/2081188548280250755 |
 | low | new_event_candidate | new | event | イベント候補「メインポスター解禁とともに 今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メインポスター解禁とともに 今年の盆踊り | メインポスター解禁とともに 今年の盆踊り 盆踊り | https://x.com/hyougen_ai/status/2063261780907016311 |
+| low | new_event_candidate | new | event | イベント候補「メイン会場でオタク盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メイン会場でオタク盆踊り | メイン会場でオタク盆踊り 盆踊り | https://x.com/adachi_imaru2/status/2087337286837162124 |
 | low | new_event_candidate | new | event | イベント候補「メイン楽曲公開】 本作で観客とともに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メイン楽曲公開】 本作で観客とともに盆踊り, 江戸妖怪音頭 | メイン楽曲公開】 本作で観客とともに盆踊り 盆踊り; 江戸妖怪音頭 盆踊り; 江戸妖怪音頭 盆踊り | https://x.com/phantomeria2025/status/2066519067604013548 |
 | low | new_event_candidate | new | event | イベント候補「メガほしの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メガほしの盆踊り | メガほしの盆踊り 盆踊り; とぐねぐね踊り 盆踊り | https://x.com/sakuracorpo373/status/2069450842814775607 |
 | low | new_event_candidate | new | event | イベント候補「メガヒッツ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メガヒッツ盆踊り | メガヒッツ盆踊り 盆踊り | https://x.com/giantpanda99/status/2078390927396356373 |
 | low | new_event_candidate | new | event | イベント候補「メガヒッツ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メガヒッツ盆踊り | メガヒッツ盆踊り 盆踊り | https://x.com/giantpanda99/status/2078389844267704633 |
 | low | new_event_candidate | new | event | イベント候補「メガヒッツ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メガヒッツ盆踊り | メガヒッツ盆踊り 盆踊り | https://x.com/giantpanda99/status/2078386001287041325 |
 | low | new_event_candidate | new | event | イベント候補「メタルマン 尻怪獣アスラ エイリアンvsアバター 死霊の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メタルマン 尻怪獣アスラ エイリアンvsアバター 死霊の盆踊り | メタルマン 尻怪獣アスラ エイリアンvsアバター 死霊の盆踊り 盆踊り | https://x.com/sakuracorpo373/status/2069309370752786502 |
+| low | new_event_candidate | new | event | イベント候補「メタル盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メタル盆踊り | メタル盆踊り 盆踊り | https://x.com/gswrhryk/status/2087446265533751545 |
 | low | new_event_candidate | new | event | イベント候補「メッカでムスリム締め出しての大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メッカでムスリム締め出しての大盆踊り | メッカでムスリム締め出しての大盆踊り 盆踊り | https://x.com/kaji01nift30441/status/2068008576384471534 |
 | low | new_event_candidate | new | event | イベント候補「メリケンパークで『盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メリケンパークで『盆踊り, 盆踊り大会 | メリケンパークで『盆踊り 盆踊り; 盆踊り大会 盆踊り | https://x.com/hi_ro_34/status/2079475809941938278 |
 | low | new_event_candidate | new | event | イベント候補「メリケンパークで『盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: メリケンパークで『盆踊り, 盆踊り大会 | メリケンパークで『盆踊り 盆踊り; 盆踊り大会 盆踊り | https://x.com/SKaHG6QvUJEI16P/status/2077284528390029449 |
@@ -9139,6 +9418,7 @@
 | low | new_event_candidate | new | event | イベント候補「ユメキにやって欲しいことは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ユメキにやって欲しいことは盆踊り | ユメキにやって欲しいことは盆踊り 盆踊り | https://x.com/youmake1t/status/2062564245863329803 |
 | low | new_event_candidate | new | event | イベント候補「ヨイドンって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヨイドンって盆踊り | ヨイドンって盆踊り 盆踊り | https://x.com/MU23710/status/2075843831254438289 |
 | low | new_event_candidate | new | event | イベント候補「ヨガプログラムや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヨガプログラムや盆踊り | ヨガプログラムや盆踊り 盆踊り | https://x.com/rh1011_/status/2037365892657635731 |
+| low | new_event_candidate | new | event | イベント候補「ヨッメとおそろのお手製浴衣を着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヨッメとおそろのお手製浴衣を着て盆踊り | ヨッメとおそろのお手製浴衣を着て盆踊り 盆踊り; そろそろ踊り 盆踊り | https://x.com/hozizo_san/status/2087411822815326715 |
 | low | new_event_candidate | new | event | イベント候補「ヨーホイ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ヨーホイ盆踊り, Hoi Bon odori | ヨーホイ盆踊り 盆踊り; Hoi Bon odori 盆踊り | https://x.com/840_gnpp_jp/status/2085578157239984144 |
 | low | new_event_candidate | new | event | イベント候補「ライ2024の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ライ2024の盆踊り | ライ2024の盆踊り 盆踊り | https://x.com/o_kuroko_o/status/2077663460713013471 |
 | low | new_event_candidate | new | event | イベント候補「ライムちゃんがとっても楽しそうに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ライムちゃんがとっても楽しそうに盆踊り | ライムちゃんがとっても楽しそうに盆踊り 盆踊り | https://x.com/WlqdK1G9BTF6SfD/status/2083028048535015652 |
@@ -9178,6 +9458,7 @@
 | low | new_event_candidate | new | event | イベント候補「ロイヤル 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ロイヤル 盆踊り | ロイヤル 盆踊り 盆踊り | https://x.com/awinkq/status/2086586354377564379 |
 | low | new_event_candidate | new | event | イベント候補「ロクエレ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ロクエレ盆踊り | ロクエレ盆踊り 盆踊り | https://x.com/Mayoi_Truth/status/2063450134416150829 |
 | low | new_event_candidate | new | event | イベント候補「ログ本と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ログ本と盆踊り | ログ本と盆踊り 盆踊り | https://x.com/tao___k/status/2069445282253914434 |
+| low | new_event_candidate | new | event | イベント候補「ロコドルパーティーからの地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ロコドルパーティーからの地元の盆踊り | ロコドルパーティーからの地元の盆踊り 盆踊り | https://x.com/CHAROTAN___/status/2087329861983699159 |
 | low | new_event_candidate | new | event | イベント候補「ロックから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ロックから盆踊り | ロックから盆踊り 盆踊り | https://x.com/CaneStarGruidae/status/2068300814238785729 |
 | low | new_event_candidate | new | event | イベント候補「ロックバンドのLIVEで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ロックバンドのLIVEで盆踊り | ロックバンドのLIVEで盆踊り 盆踊り | https://x.com/makoakabebana/status/2071120142965391806 |
 | low | new_event_candidate | new | event | イベント候補「ローカル盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: ローカル盆踊り | ローカル盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/SetuInTheWall/status/2078745287263494453 |
@@ -9213,6 +9494,7 @@
 | low | new_event_candidate | new | event | イベント候補「一) なんか台風が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一) なんか台風が盆踊り | 一) なんか台風が盆踊り 盆踊り | https://x.com/shikamaota/status/2086738983061746071 |
 | low | new_event_candidate | new | event | イベント候補「一つは来月も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一つは来月も盆踊り | 一つは来月も盆踊り 盆踊り | https://x.com/nayu1291/status/2067590533070164274 |
 | low | new_event_candidate | new | event | イベント候補「一万人の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一万人の盆踊り | 一万人の盆踊り 盆踊り | https://x.com/35_numa/status/2077663240797241657 |
+| low | new_event_candidate | new | event | イベント候補「一人で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一人で盆踊り | 一人で盆踊り 盆踊り | https://x.com/kaori28254180/status/2087430645379404061 |
 | low | new_event_candidate | new | event | イベント候補「一人で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一人で盆踊り | 一人で盆踊り 盆踊り | https://x.com/Nuigurui_meizhi/status/2070779479182696532 |
 | low | new_event_candidate | new | event | イベント候補「一人二人の騒音の苦情に除夜の鐘や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一人二人の騒音の苦情に除夜の鐘や盆踊り | 一人二人の騒音の苦情に除夜の鐘や盆踊り 盆踊り | https://x.com/RH4S62R2QhVRqlV/status/2086264272016073027 |
 | low | new_event_candidate | new | event | イベント候補「一休さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 一休さんの盆踊り | 一休さんの盆踊り 盆踊り | https://x.com/misa_33ki/status/2064348993795350918 |
@@ -9271,6 +9553,7 @@
 | low | new_event_candidate | new | event | イベント候補「七夕盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 七夕盆おどり, 七夕盆おどり祭り | 七夕盆おどり 盆踊り; 七夕盆おどり祭り 盆踊り | https://x.com/wayo_unv/status/2081549556928700566 |
 | low | new_event_candidate | new | event | イベント候補「七夕祭盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 七夕祭盆踊り, 館の間にある櫓で盆踊り, 特に1日目の夜に開催する盆踊り | 七夕祭盆踊り 盆踊り; 館の間にある櫓で盆踊り 盆踊り; 幅広い曲に合わせて踊り 盆踊り | https://x.com/tanabata_fes/status/2071534641031368948 |
 | low | new_event_candidate | new | event | イベント候補「万人規模の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 万人規模の盆踊り | 万人規模の盆踊り 盆踊り | https://x.com/doller98TAKA/status/2084490983568494828 |
+| low | new_event_candidate | new | event | イベント候補「万博の吉本カラオケ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 万博の吉本カラオケ盆踊り | 万博の吉本カラオケ盆踊り 盆踊り | https://x.com/muu2_spoon/status/2087436653401137300 |
 | low | new_event_candidate | new | event | イベント候補「万博の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 万博の盆踊り | 万博の盆踊り 盆踊り | https://x.com/gashikashi1567/status/2062586253795803418 |
 | low | new_event_candidate | new | event | イベント候補「万博夏祭り良いなぁ 調和がある 太陽の塔と一緒に櫓を囲んで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 万博夏祭り良いなぁ 調和がある 太陽の塔と一緒に櫓を囲んで盆踊り | 万博夏祭り良いなぁ 調和がある 太陽の塔と一緒に櫓を囲んで盆踊り 盆踊り | https://x.com/rakudakuda/status/2082748268736552977 |
 | low | new_event_candidate | new | event | イベント候補「万博盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 万博盆踊り | 万博盆踊り 盆踊り | https://x.com/tatoeba_tatoeba/status/2086349339308519892 |
@@ -9279,6 +9562,7 @@
 | low | new_event_candidate | new | event | イベント候補「三大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三大盆踊り | 三大盆踊り 盆踊り | https://x.com/q597Vw9N8he0DCs/status/2070821207604346943 |
 | low | new_event_candidate | new | event | イベント候補「三島で行われた 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三島で行われた 盆踊り | 三島で行われた 盆踊り 盆踊り | https://x.com/no____la_r/status/2062006847461306378 |
 | low | new_event_candidate | new | event | イベント候補「三平さんがセントレアの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三平さんがセントレアの盆踊り | 三平さんがセントレアの盆踊り 盆踊り | https://x.com/sorairo__note/status/2078756881825477059 |
+| low | new_event_candidate | new | event | イベント候補「三年前に ナイアガラ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三年前に ナイアガラ盆踊り | 三年前に ナイアガラ盆踊り 盆踊り | https://x.com/45BYzE1QQJvGdzB/status/2087402877316907305 |
 | low | new_event_candidate | new | event | イベント候補「三戸町の 町内会の 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三戸町の 町内会の 盆踊り | 三戸町の 町内会の 盆踊り 盆踊り | https://x.com/yakitorikaneta/status/2086341191344222333 |
 | low | new_event_candidate | new | event | イベント候補「三条夏祭りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三条夏祭りの盆踊り | 三条夏祭りの盆踊り 盆踊り | https://x.com/chillfull_haga/status/2083087214314139886 |
 | low | new_event_candidate | new | event | イベント候補「三町内会 合同 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 三町内会 合同 盆踊り | 三町内会 合同 盆踊り 盆踊り | https://x.com/OOBISHI/status/2083436501078315442 |
@@ -9296,6 +9580,7 @@
 | low | new_event_candidate | new | event | イベント候補「上原の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上原の盆踊り | 上原の盆踊り 盆踊り | https://x.com/dan_pipo/status/2083826652057067631 |
 | low | new_event_candidate | new | event | イベント候補「上小田井の地域盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上小田井の地域盆踊り | 上小田井の地域盆踊り 盆踊り; もーやっこ音頭 盆踊り | https://x.com/miztan2/status/2064212335733125570 |
 | low | new_event_candidate | new | event | イベント候補「上池ではもう盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上池ではもう盆踊り, うちの町会の盆踊り | 上池ではもう盆踊り 盆踊り; うちの町会の盆踊り 盆踊り | https://x.com/Higa_Ike_Ohya/status/2076118831047774300 |
+| low | new_event_candidate | new | event | イベント候補「上田マユミ 上野公園袴腰広場ゐの市盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上田マユミ 上野公園袴腰広場ゐの市盆踊り | 上田マユミ 上野公園袴腰広場ゐの市盆踊り 盆踊り | https://x.com/tokyokyoudaiani/status/2087393248192901612 |
 | low | new_event_candidate | new | event | イベント候補「上福島小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上福島小学校の盆踊り | 上福島小学校の盆踊り 盆踊り; 初参加 盆踊り | https://x.com/BONAES2030/status/2085583971161874817 |
 | low | new_event_candidate | new | event | イベント候補「上篠崎盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上篠崎盆踊り, 篠崎音頭 | 上篠崎盆踊り 盆踊り; 篠崎音頭 盆踊り | https://x.com/Ma_umojh/status/2081179977786253635 |
 | low | new_event_candidate | new | event | イベント候補「上篠崎自治会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 上篠崎自治会盆踊り | 上篠崎自治会盆踊り 盆踊り; あります 盆踊り | https://x.com/bjvbiMpM0SQWrmy/status/2079937561095795080 |
@@ -9498,11 +9783,13 @@
 | low | new_event_candidate | new | event | イベント候補「久し振りに花ボランティアのリーダーさんにとも会えて来週ある盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 久し振りに花ボランティアのリーダーさんにとも会えて来週ある盆踊り | 久し振りに花ボランティアのリーダーさんにとも会えて来週ある盆踊り 盆踊り | https://x.com/lEtgo1asNKztVlm/status/2084783916796510642 |
 | low | new_event_candidate | new | event | イベント候補「久し振りの野外フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 久し振りの野外フェス盆踊り | 久し振りの野外フェス盆踊り 盆踊り | https://x.com/akiko4547/status/2084102402291232916 |
 | low | new_event_candidate | new | event | イベント候補「九州からのこのこ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 九州からのこのこ盆踊り | 九州からのこのこ盆踊り 盆踊り | https://x.com/angelheart_0811/status/2069341831918399929 |
+| low | new_event_candidate | new | event | イベント候補「九戸村盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 九戸村盆踊り | 九戸村盆踊り 盆踊り | https://x.com/curota6/status/2087390544091808216 |
 | low | new_event_candidate | new | event | イベント候補「予報よ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予報よ 盆踊り | 予報よ 盆踊り 盆踊り | https://x.com/minmin12731302/status/2087068519561302104 |
 | low | new_event_candidate | new | event | イベント候補「予定 1(土) 本牧盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予定 1(土) 本牧盆踊り, 本牧盆踊り | 予定 1(土) 本牧盆踊り 盆踊り; 本牧盆踊り 盆踊り | https://x.com/9th_de/status/2082266186180690174 |
 | low | new_event_candidate | new | event | イベント候補「予定 2恵庭ワクワクフェスティバル 4小樽 5ロケ 15三笠盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予定 2恵庭ワクワクフェスティバル 4小樽 5ロケ 15三笠盆踊り | 予定 2恵庭ワクワクフェスティバル 4小樽 5ロケ 15三笠盆踊り 盆踊り | https://x.com/Siro_0109_/status/2081537314078290323 |
 | low | new_event_candidate | new | event | イベント候補「予定あって帰りに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予定あって帰りに盆踊り | 予定あって帰りに盆踊り 盆踊り | https://x.com/mi___jj01/status/2075840515560570886 |
 | low | new_event_candidate | new | event | イベント候補「予定されていた 校区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予定されていた 校区の盆踊り | 予定されていた 校区の盆踊り 盆踊り | https://x.com/racco2006/status/2086974759334748572 |
+| low | new_event_candidate | new | event | イベント候補「予定しておりました 校区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予定しておりました 校区の盆踊り | 予定しておりました 校区の盆踊り 盆踊り | https://x.com/racco2006/status/2087349453850284461 |
 | low | new_event_candidate | new | event | イベント候補「予定立てるために何気なく映画村のページみたんだけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 予定立てるために何気なく映画村のページみたんだけど盆踊り | 予定立てるために何気なく映画村のページみたんだけど盆踊り 盆踊り | https://x.com/natume3150/status/2077285074874335284 |
 | low | new_event_candidate | new | event | イベント候補「事は荒立てず後日やんわり行動を探ると「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 事は荒立てず後日やんわり行動を探ると「盆踊り, 盆踊りやってるのを見つけて友達がいたから2時間踊っていた | 事は荒立てず後日やんわり行動を探ると「盆踊り 盆踊り; 盆踊りやってるのを見つけて友達がいたから2時間踊っていた 盆踊り | https://x.com/babaoshi_kiyo/status/2084787377915261254 |
 | low | new_event_candidate | new | event | イベント候補「事前の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 事前の盆踊り, 地域のお祭りや盆踊り | 事前の盆踊り 盆踊り; 地域のお祭りや盆踊り 盆踊り; 温かく迎えていただき 盆踊り; 伺いたい気持ち 盆踊り | https://x.com/kanazawa_yui/status/2079178024591962414 |
@@ -9527,6 +9814,7 @@
 | low | new_event_candidate | new | event | イベント候補「人が集まったら混みすぎるでしょw 渋滞する盆踊りって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人が集まったら混みすぎるでしょw 渋滞する盆踊りって盆踊り, ある意味自分は盆踊り | 人が集まったら混みすぎるでしょw 渋滞する盆踊りって盆踊り 盆踊り; ある意味自分は盆踊り 盆踊り | https://x.com/kuma_bot999/status/2081998842031944168 |
 | low | new_event_candidate | new | event | イベント候補「人くらいに話しかけられて日曜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人くらいに話しかけられて日曜の盆踊り | 人くらいに話しかけられて日曜の盆踊り 盆踊り | https://x.com/723natsubon/status/2084530633154658464 |
 | low | new_event_candidate | new | event | イベント候補「人とやるモンハン楽しすぎて空中で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人とやるモンハン楽しすぎて空中で盆踊り | 人とやるモンハン楽しすぎて空中で盆踊り 盆踊り | https://x.com/nekotohimazin/status/2065421430255476779 |
+| low | new_event_candidate | new | event | イベント候補「人のいないオフィスで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人のいないオフィスで盆踊り | 人のいないオフィスで盆踊り 盆踊り | https://x.com/1x1x1/status/2087432464793006507 |
 | low | new_event_candidate | new | event | イベント候補「人を僕の田舎の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人を僕の田舎の盆踊り | 人を僕の田舎の盆踊り 盆踊り | https://x.com/CRb1p9RGDvE8RDb/status/2084860856584847770 |
 | low | new_event_candidate | new | event | イベント候補「人喰い大統領アミンとプルトニウム人間と地獄の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人喰い大統領アミンとプルトニウム人間と地獄の盆踊り | 人喰い大統領アミンとプルトニウム人間と地獄の盆踊り 盆踊り | https://x.com/Momonga0357/status/2078029985240293579 |
 | low | new_event_candidate | new | event | イベント候補「人気のDJが回す大盛り上がり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 人気のDJが回す大盛り上がり盆踊り | 人気のDJが回す大盛り上がり盆踊り 盆踊り; それに合わせて踊り 盆踊り | https://x.com/sa_to_junkyanpu/status/2083104961043578966 |
@@ -9580,6 +9868,7 @@
 | low | new_event_candidate | new | event | イベント候補「今回の震災で北海道の駐屯地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今回の震災で北海道の駐屯地の盆踊り | 今回の震災で北海道の駐屯地の盆踊り 盆踊り | https://x.com/_498645415067/status/2083886645812842938 |
 | low | new_event_candidate | new | event | イベント候補「今回は特に北海道の代表的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今回は特に北海道の代表的な盆踊り, 地元盆踊り | 今回は特に北海道の代表的な盆踊り 盆踊り; 地元盆踊り 盆踊り | https://x.com/agehabijo/status/2067101717574107225 |
 | low | new_event_candidate | new | event | イベント候補「今回は特に北海道の代表的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今回は特に北海道の代表的な盆踊り, 地元盆踊り | 今回は特に北海道の代表的な盆踊り 盆踊り; 地元盆踊り 盆踊り | https://x.com/agehabijo/status/2064248714831757592 |
+| low | new_event_candidate | new | event | イベント候補「今回は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今回は盆踊り, 昔ながらの伝統に見える盆踊り | 今回は盆踊り 盆踊り; 昔ながらの伝統に見える盆踊り 盆踊り | https://x.com/bugcast_radio/status/2087373513820709259 |
 | low | new_event_candidate | new | event | イベント候補「今夏の初盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夏の初盆踊り | 今夏の初盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/waseda_yuki/status/2076219656822739247 |
 | low | new_event_candidate | new | event | イベント候補「今夏の柏市内の町内お祭り情報です 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夏の柏市内の町内お祭り情報です 盆踊り | 今夏の柏市内の町内お祭り情報です 盆踊り 盆踊り | https://x.com/Pw9SKrdCfYJfxfv/status/2068911088050258395 |
 | low | new_event_candidate | new | event | イベント候補「今夏の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夏の盆踊り | 今夏の盆踊り 盆踊り | https://x.com/Oya_komei/status/2084043500107321594 |
@@ -9588,6 +9877,8 @@
 | low | new_event_candidate | new | event | イベント候補「今夜の今季初の尼崎の1番早くの開催の築地の松島橋公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の今季初の尼崎の1番早くの開催の築地の松島橋公園の盆踊り, 夜は松島橋公園の築地盆踊り | 今夜の今季初の尼崎の1番早くの開催の築地の松島橋公園の盆踊り 盆踊り; 夜は松島橋公園の築地盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2078459328600916009 |
 | low | new_event_candidate | new | event | イベント候補「今夜の地元の神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の地元の神社の盆踊り | 今夜の地元の神社の盆踊り 盆踊り | https://x.com/Plananako1107/status/2086977638753808725 |
 | low | new_event_candidate | new | event | イベント候補「今夜の天王祭の前に香久山区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の天王祭の前に香久山区の盆踊り | 今夜の天王祭の前に香久山区の盆踊り 盆踊り; ハシゴすることになるの 盆踊り; も含めて2曲踊り 盆踊り | https://x.com/HirohitoKondo/status/2081371037502239123 |
+| low | new_event_candidate | new | event | イベント候補「今夜の新南の口公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の新南の口公園の盆踊り | 今夜の新南の口公園の盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2087439052341653890 |
+| low | new_event_candidate | new | event | イベント候補「今夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の盆踊り | 今夜の盆踊り 盆踊り | https://x.com/jHdbnQbAFz69470/status/2087376035075764461 |
 | low | new_event_candidate | new | event | イベント候補「今夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の盆踊り | 今夜の盆踊り 盆踊り | https://x.com/nanya757/status/2087029125169258741 |
 | low | new_event_candidate | new | event | イベント候補「今夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の盆踊り | 今夜の盆踊り 盆踊り | https://x.com/Muroi_sanseitou/status/2085623642147389678 |
 | low | new_event_candidate | new | event | イベント候補「今夜の練習会に参加させて頂く前に見た 西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜の練習会に参加させて頂く前に見た 西馬音内盆踊り | 今夜の練習会に参加させて頂く前に見た 西馬音内盆踊り 盆踊り; 観覧席などの準備が進められていました 盆踊り | https://x.com/imokichi_oimo/status/2086451162681884923 |
@@ -9624,6 +9915,7 @@
 | low | new_event_candidate | new | event | イベント候補「今夜盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今夜盆踊り | 今夜盆踊り 盆踊り | https://x.com/issyme06/status/2083406281898099136 |
 | low | new_event_candidate | new | event | イベント候補「今季のサムライトルーパーのOPに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今季のサムライトルーパーのOPに盆踊り | 今季のサムライトルーパーのOPに盆踊り 盆踊り | https://x.com/RosSoMax/status/2075931562118725761 |
 | low | new_event_candidate | new | event | イベント候補「今宵 自由が丘の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今宵 自由が丘の盆踊り | 今宵 自由が丘の盆踊り 盆踊り | https://x.com/nana20090623/status/2079050067764551885 |
+| low | new_event_candidate | new | event | イベント候補「今宵は地元で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今宵は地元で盆踊り, っぱり盆踊り | 今宵は地元で盆踊り 盆踊り; っぱり盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/Romancing_NaHa/status/2087147839252287696 |
 | low | new_event_candidate | new | event | イベント候補「今宵は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今宵は盆踊り | 今宵は盆踊り 盆踊り | https://x.com/nagoyabushotai/status/2081672223094702472 |
 | low | new_event_candidate | new | event | イベント候補「今宵も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今宵も盆踊り, 前半は西中町内会さんの盆踊り, 後半は地元八ツ田町内会の盆踊り | 今宵も盆踊り 盆踊り; 前半は西中町内会さんの盆踊り 盆踊り | https://x.com/tanakatakeshi/status/2082817313792041235 |
 | low | new_event_candidate | new | event | イベント候補「今年1月から始めた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年1月から始めた盆踊り | 今年1月から始めた盆踊り 盆踊り | https://x.com/Mau3_141592/status/2064999578882248714 |
@@ -9637,12 +9929,14 @@
 | low | new_event_candidate | new | event | イベント候補「今年の8月には一緒に鷺ノ宮の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の8月には一緒に鷺ノ宮の盆踊り | 今年の8月には一緒に鷺ノ宮の盆踊り 盆踊り | https://x.com/Morlly666/status/2069811854315274426 |
 | low | new_event_candidate | new | event | イベント候補「今年のお祭りは雨で中止だったから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年のお祭りは雨で中止だったから盆踊り | 今年のお祭りは雨で中止だったから盆踊り 盆踊り | https://x.com/torotoro_kaikei/status/2085736968726704250 |
 | low | new_event_candidate | new | event | イベント候補「今年のぶいちゃ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年のぶいちゃ盆踊り | 今年のぶいちゃ盆踊り 盆踊り | https://x.com/UchisukeFreedom/status/2085615050203484222 |
+| low | new_event_candidate | new | event | イベント候補「今年のコスサミの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年のコスサミの盆踊り | 今年のコスサミの盆踊り 盆踊り | https://x.com/Hu_HarukaGAO/status/2087447338310918256 |
 | low | new_event_candidate | new | event | イベント候補「今年のソロコンは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年のソロコンは盆踊り | 今年のソロコンは盆踊り 盆踊り | https://x.com/peace02peach/status/2063938216248717743 |
 | low | new_event_candidate | new | event | イベント候補「今年のニコニコ超会議から感じていたけど 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年のニコニコ超会議から感じていたけど 盆踊り | 今年のニコニコ超会議から感じていたけど 盆踊り 盆踊り; 自分が踊り 盆踊り | https://x.com/amuamu_peanuts/status/2087029513045893583 |
 | low | new_event_candidate | new | event | イベント候補「今年のプリンセスは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年のプリンセスは盆踊り | 今年のプリンセスは盆踊り 盆踊り | https://x.com/Iriya_idol/status/2069439851586637973 |
 | low | new_event_candidate | new | event | イベント候補「今年の三笠盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の三笠盆踊り | 今年の三笠盆踊り 盆踊り | https://x.com/co20913/status/2087064610713260232 |
 | low | new_event_candidate | new | event | イベント候補「今年の中野の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の中野の盆踊り | 今年の中野の盆踊り 盆踊り | https://x.com/nb_rady/status/2063169685097730496 |
 | low | new_event_candidate | new | event | イベント候補「今年の八戸納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の八戸納涼盆踊り, 全国の盆踊り | 今年の八戸納涼盆踊り 盆踊り; 全国の盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/lalamidori/status/2082734107113734308 |
+| low | new_event_candidate | new | event | イベント候補「今年の北山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の北山盆踊り | 今年の北山盆踊り 盆踊り | https://x.com/kitayamamura/status/2087428222854332524 |
 | low | new_event_candidate | new | event | イベント候補「今年の名古屋の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の名古屋の盆踊り, イエロー・サブマリン音頭 | 今年の名古屋の盆踊り 盆踊り; イエロー・サブマリン音頭 盆踊り; イエロー・サブマリン音頭 盆踊り; でも踊り 盆踊り | https://x.com/miztan2/status/2075756089044517010 |
 | low | new_event_candidate | new | event | イベント候補「今年の地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の地区の盆踊り | 今年の地区の盆踊り 盆踊り | https://x.com/dHc4sjUvQ0l97VB/status/2082071742848417999 |
 | low | new_event_candidate | new | event | イベント候補「今年の地蔵盆の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の地蔵盆の盆踊り | 今年の地蔵盆の盆踊り 盆踊り | https://x.com/bonodorihozon/status/2084925766014546170 |
@@ -9660,6 +9954,9 @@
 | low | new_event_candidate | new | event | イベント候補「今年の幼稚園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の幼稚園盆踊り | 今年の幼稚園盆踊り 盆踊り | https://x.com/0414_kura_hapi/status/2083032747552256100 |
 | low | new_event_candidate | new | event | イベント候補「今年の武将隊盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の武将隊盆踊り | 今年の武将隊盆踊り 盆踊り | https://x.com/midouyamaseiren/status/2063909727663481312 |
 | low | new_event_candidate | new | event | イベント候補「今年の町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の町会の盆踊り | 今年の町会の盆踊り 盆踊り | https://x.com/dakoutai/status/2081307830708253017 |
+| low | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/go6ppei/status/2087400966601822273 |
+| low | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/6940keiko/status/2087280968185119107 |
+| low | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/076ReO095827511/status/2087399263043199169 |
 | low | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り, 盆踊り終了のご報告 | 今年の盆踊り 盆踊り; 盆踊り終了のご報告 盆踊り; 笑顔と踊り 盆踊り | https://x.com/hiraojichikai/status/2086349646214189111 |
 | low | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/tokyoland555/status/2086063781327896890 |
 | low | new_event_candidate | new | event | イベント候補「今年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の盆踊り | 今年の盆踊り 盆踊り | https://x.com/nitsumari_dyam/status/2086342136660914438 |
@@ -9688,10 +9985,12 @@
 | low | new_event_candidate | new | event | イベント候補「今年の鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年の鴨台盆踊り | 今年の鴨台盆踊り 盆踊り | https://x.com/schwarze_lolo/status/2075851222339522905 |
 | low | new_event_candidate | new | event | イベント候補「今年はたくさん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年はたくさん盆踊り | 今年はたくさん盆踊り 盆踊り | https://x.com/azuki_minpaku/status/2079843156401836369 |
 | low | new_event_candidate | new | event | イベント候補「今年はどこかの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年はどこかの盆踊り | 今年はどこかの盆踊り 盆踊り | https://x.com/kiefer_0428/status/2085957355918053729 |
+| low | new_event_candidate | new | event | イベント候補「今年はまさに追悼の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年はまさに追悼の盆踊り | 今年はまさに追悼の盆踊り 盆踊り | https://x.com/link_vision2025/status/2087355185941389657 |
 | low | new_event_candidate | new | event | イベント候補「今年はイエローサブマリン（ビートルズなのにめちゃ日本語発音の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年はイエローサブマリン（ビートルズなのにめちゃ日本語発音の盆踊り | 今年はイエローサブマリン（ビートルズなのにめちゃ日本語発音の盆踊り 盆踊り | https://x.com/ettsuetsuetsu/status/2081969964182090055 |
 | low | new_event_candidate | new | event | イベント候補「今年はダンシング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年はダンシング盆踊り | 今年はダンシング盆踊り 盆踊り | https://x.com/typhoonyukky22/status/2082363108715303058 |
 | low | new_event_candidate | new | event | イベント候補「今年はナッキーと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年はナッキーと盆踊り | 今年はナッキーと盆踊り 盆踊り | https://x.com/cha73/status/2064378943009181722 |
 | low | new_event_candidate | new | event | イベント候補「今年は久しぶりに西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年は久しぶりに西馬音内盆踊り | 今年は久しぶりに西馬音内盆踊り 盆踊り | https://x.com/narisan62916202/status/2084902449236877465 |
+| low | new_event_candidate | new | event | イベント候補「今年は予定が重なり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年は予定が重なり盆踊り | 今年は予定が重なり盆踊り 盆踊り | https://x.com/TAKI714/status/2087444457826447663 |
 | low | new_event_candidate | new | event | イベント候補「今年は二年振りに見取り図盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年は二年振りに見取り図盆踊り | 今年は二年振りに見取り図盆踊り 盆踊り | https://x.com/_vvarin_/status/2062173429030441008 |
 | low | new_event_candidate | new | event | イベント候補「今年は何故か盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年は何故か盆踊り | 今年は何故か盆踊り 盆踊り | https://x.com/dot_86/status/2083708255738740751 |
 | low | new_event_candidate | new | event | イベント候補「今年は厚木の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年は厚木の盆踊り | 今年は厚木の盆踊り 盆踊り | https://x.com/Tunamayo_ea18g/status/2075797731852136659 |
@@ -9742,6 +10041,7 @@
 | low | new_event_candidate | new | event | イベント候補「今年も夏のインスパイアトーキョーで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も夏のインスパイアトーキョーで盆踊り | 今年も夏のインスパイアトーキョーで盆踊り 盆踊り; でも踊り 盆踊り | https://x.com/howaitoririi/status/2064706239498703005 |
 | low | new_event_candidate | new | event | イベント候補「今年も大岡山北口商店街の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も大岡山北口商店街の盆踊り | 今年も大岡山北口商店街の盆踊り 盆踊り; への募金箱を設置しますの 盆踊り; 炭坑節 盆踊り | https://x.com/takamza/status/2084786257771864097 |
 | low | new_event_candidate | new | event | イベント候補「今年も大崎ニューシティ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も大崎ニューシティ盆踊り | 今年も大崎ニューシティ盆踊り 盆踊り | https://x.com/MaasanPeace/status/2084865208263311715 |
+| low | new_event_candidate | new | event | イベント候補「今年も妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も妖怪盆踊り | 今年も妖怪盆踊り 盆踊り | https://x.com/LicoLico5/status/2087360702222868800 |
 | low | new_event_candidate | new | event | イベント候補「今年も妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も妖怪盆踊り | 今年も妖怪盆踊り 盆踊り | https://x.com/maru_nft_/status/2077641940259233892 |
 | low | new_event_candidate | new | event | イベント候補「今年も寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も寝転ん盆踊り | 今年も寝転ん盆踊り 盆踊り | https://x.com/nzkn_/status/2086333566942937580 |
 | low | new_event_candidate | new | event | イベント候補「今年も寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年も寝転ん盆踊り | 今年も寝転ん盆踊り 盆踊り | https://x.com/shan2525vrc/status/2068680901446467644 |
@@ -9780,6 +10080,7 @@
 | low | new_event_candidate | new | event | イベント候補「今年最後の「音で楽しむ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年最後の「音で楽しむ盆踊り, 音で楽しむ盆踊り | 今年最後の「音で楽しむ盆踊り 盆踊り; 音で楽しむ盆踊り 盆踊り | https://x.com/osaruna7741/status/2083085334515253417 |
 | low | new_event_candidate | new | event | イベント候補「今年最後の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年最後の盆踊り | 今年最後の盆踊り 盆踊り | https://x.com/uta_whats_NFT/status/2084772100825551016 |
 | low | new_event_candidate | new | event | イベント候補「今年流行った曲をDJが爆音で流してくれる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年流行った曲をDJが爆音で流してくれる盆踊り | 今年流行った曲をDJが爆音で流してくれる盆踊り 盆踊り | https://x.com/suetumu_0/status/2083433446286975017 |
+| low | new_event_candidate | new | event | イベント候補「今年祭や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年祭や盆踊り | 今年祭や盆踊り 盆踊り | https://x.com/Akatsuki_Nita/status/2087380707169673624 |
 | low | new_event_candidate | new | event | イベント候補「今年自治会の役職やってるから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年自治会の役職やってるから盆踊り | 今年自治会の役職やってるから盆踊り 盆踊り | https://x.com/lein_mana/status/2080130789870797117 |
 | low | new_event_candidate | new | event | イベント候補「今年近場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今年近場で盆踊り | 今年近場で盆踊り 盆踊り | https://x.com/ZEROmofu/status/2065436814383763820 |
 | low | new_event_candidate | new | event | イベント候補「今度こそ脱盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今度こそ脱盆踊り | 今度こそ脱盆踊り 盆踊り | https://x.com/maa_poke_mega/status/2071546729644908553 |
@@ -9796,6 +10097,7 @@
 | low | new_event_candidate | new | event | イベント候補「今後盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今後盆踊り | 今後盆踊り 盆踊り; 令和石巻音頭 盆踊り | https://x.com/COPIRU2025/status/2076940881043833325 |
 | low | new_event_candidate | new | event | イベント候補「今後運動会とか太鼓とか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今後運動会とか太鼓とか盆踊り | 今後運動会とか太鼓とか盆踊り 盆踊り | https://x.com/chi416zn/status/2078436879444345128 |
 | low | new_event_candidate | new | event | イベント候補「今日から怒涛のお祭り（盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今日から怒涛のお祭り（盆踊り | 今日から怒涛のお祭り（盆踊り 盆踊り | https://x.com/momomo168momomo/status/2083454702902280549 |
+| low | new_event_candidate | new | event | イベント候補「今日と明日の夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今日と明日の夜は盆踊り | 今日と明日の夜は盆踊り 盆踊り | https://x.com/nekorojp/status/2087122896011268176 |
 | low | new_event_candidate | new | event | イベント候補「今日と明日はどこの地域でもお祭りとか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今日と明日はどこの地域でもお祭りとか盆踊り | 今日と明日はどこの地域でもお祭りとか盆踊り 盆踊り | https://x.com/yorisou_kimochi/status/2083456231549935726 |
 | low | new_event_candidate | new | event | イベント候補「今日の渋谷109周辺は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今日の渋谷109周辺は盆踊り | 今日の渋谷109周辺は盆踊り 盆踊り | https://x.com/taak_u/status/2085957654699188662 |
 | low | new_event_candidate | new | event | イベント候補「今日はデイサービスに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今日はデイサービスに盆踊り | 今日はデイサービスに盆踊り 盆踊り | https://x.com/emipochi/status/2084526100768796824 |
@@ -9813,6 +10115,7 @@
 | low | new_event_candidate | new | event | イベント候補「今日笠間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今日笠間盆踊り | 今日笠間盆踊り 盆踊り | https://x.com/mayumi3728/status/2086608670952128804 |
 | low | new_event_candidate | new | event | イベント候補「今映画村のプリキュア盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今映画村のプリキュア盆踊り | 今映画村のプリキュア盆踊り 盆踊り | https://x.com/monyaca___/status/2084891331839803829 |
 | low | new_event_candidate | new | event | イベント候補「今時の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今時の盆踊り | 今時の盆踊り 盆踊り | https://x.com/RALPH_0201/status/2083464280322744433 |
+| low | new_event_candidate | new | event | イベント候補「今晩 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今晩 盆踊り | 今晩 盆踊り 盆踊り | https://x.com/kanemale/status/2087445403260325948 |
 | low | new_event_candidate | new | event | イベント候補「今晩の新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今晩の新しい盆踊り | 今晩の新しい盆踊り 盆踊り | https://x.com/momuandteasteam/status/2079132618906538453 |
 | low | new_event_candidate | new | event | イベント候補「今晩の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今晩の盆踊り | 今晩の盆踊り 盆踊り | https://x.com/hirofumi_ryu/status/2081347427332997231 |
 | low | new_event_candidate | new | event | イベント候補「今晩は北野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今晩は北野盆踊り | 今晩は北野盆踊り 盆踊り | https://x.com/ac_knight/status/2083463318472478744 |
@@ -9820,6 +10123,7 @@
 | low | new_event_candidate | new | event | イベント候補「今晩は本式の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今晩は本式の盆踊り, 片付けをしながらの音頭 | 今晩は本式の盆踊り 盆踊り; 片付けをしながらの音頭 盆踊り; 片付けをしながらの音頭 盆踊り | https://x.com/CpOLOXVwf4JAXqv/status/2084506663005172155 |
 | low | new_event_candidate | new | event | イベント候補「今月の盆踊り「夏の盆行事になぜナメクジか」 柳田尚也 （湘南盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今月の盆踊り「夏の盆行事になぜナメクジか」 柳田尚也 （湘南盆踊り | 今月の盆踊り「夏の盆行事になぜナメクジか」 柳田尚也 （湘南盆踊り 盆踊り | https://x.com/GEKKANJUSHOKU/status/2061981963079364946 |
 | low | new_event_candidate | new | event | イベント候補「今月中盤から墨田区はお盆に突入しているので毎週どこかで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今月中盤から墨田区はお盆に突入しているので毎週どこかで盆踊り | 今月中盤から墨田区はお盆に突入しているので毎週どこかで盆踊り 盆踊り; の爆音が響き踊り 盆踊り | https://x.com/ukechi/status/2081247718597632029 |
+| low | new_event_candidate | new | event | イベント候補「今朝の夢は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今朝の夢は盆踊り | 今朝の夢は盆踊り 盆踊り | https://x.com/_ezop/status/2087288899253284926 |
 | low | new_event_candidate | new | event | イベント候補「今朝は55年ぶりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今朝は55年ぶりの盆踊り, 多摩川河川敷で盆踊り | 今朝は55年ぶりの盆踊り 盆踊り; 多摩川河川敷で盆踊り 盆踊り | https://x.com/RW17END/status/2084191902518198445 |
 | low | new_event_candidate | new | event | イベント候補「今朝は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今朝は盆踊り | 今朝は盆踊り 盆踊り | https://x.com/matk_59/status/2084215141575614927 |
 | low | new_event_candidate | new | event | イベント候補「今朝子どもに「今日は夏祭り行こうね」って話してて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今朝子どもに「今日は夏祭り行こうね」って話してて盆踊り | 今朝子どもに「今日は夏祭り行こうね」って話してて盆踊り 盆踊り | https://x.com/sakura_yuki115/status/2077979920467390604 |
@@ -9837,8 +10141,10 @@
 | low | new_event_candidate | new | event | イベント候補「今週の土曜寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週の土曜寝転ん盆踊り | 今週の土曜寝転ん盆踊り 盆踊り | https://x.com/Komotiii_VRC/status/2084884576141467854 |
 | low | new_event_candidate | new | event | イベント候補「今週の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週の盆踊り | 今週の盆踊り 盆踊り | https://x.com/16sea84/status/2081219761116221711 |
 | low | new_event_candidate | new | event | イベント候補「今週の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週の盆踊り | 今週の盆踊り 盆踊り | https://x.com/t7hiro/status/2081178203973189949 |
+| low | new_event_candidate | new | event | イベント候補「今週は3日連続盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は3日連続盆踊り | 今週は3日連続盆踊り 盆踊り | https://x.com/maidoman1969/status/2087324197169311834 |
 | low | new_event_candidate | new | event | イベント候補「今週は仕事ないけど海2回もお祭り1回盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は仕事ないけど海2回もお祭り1回盆踊り | 今週は仕事ないけど海2回もお祭り1回盆踊り 盆踊り | https://x.com/Tiffany22420/status/2082040056139899292 |
 | low | new_event_candidate | new | event | イベント候補「今週は市内の高屋・木賀の盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は市内の高屋・木賀の盆おどり | 今週は市内の高屋・木賀の盆おどり 盆踊り; 徹夜おどり 盆踊り; 郡上八幡では私も踊り 盆踊り | https://x.com/oyabun1/status/2087010721439871141 |
+| low | new_event_candidate | new | event | イベント候補「今週は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は盆踊り | 今週は盆踊り 盆踊り | https://x.com/Omusubiya_JAP/status/2087291769205714955 |
 | low | new_event_candidate | new | event | イベント候補「今週は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は盆踊り | 今週は盆踊り 盆踊り | https://x.com/loveangel_style/status/2086968407325589636 |
 | low | new_event_candidate | new | event | イベント候補「今週は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は盆踊り | 今週は盆踊り 盆踊り | https://x.com/norikae_next/status/2078029597858517449 |
 | low | new_event_candidate | new | event | イベント候補「今週は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 今週は盆踊り | 今週は盆踊り 盆踊り | https://x.com/shuiro/status/2076456799419637958 |
@@ -9864,10 +10170,13 @@
 | low | new_event_candidate | new | event | イベント候補「仕事と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事と盆踊り | 仕事と盆踊り 盆踊り | https://x.com/eightlovtotoku/status/2086708381256233276 |
 | low | new_event_candidate | new | event | イベント候補「仕事に膿んで現実逃避してる) 3776の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事に膿んで現実逃避してる) 3776の盆踊り, BibJ3yCEZF 3776の盆踊り | 仕事に膿んで現実逃避してる) 3776の盆踊り 盆踊り; BibJ3yCEZF 3776の盆踊り 盆踊り | https://x.com/mmkpjp/status/2077300857373356096 |
 | low | new_event_candidate | new | event | イベント候補「仕事バタバタすぎて死 明日夜勤してそのまま盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事バタバタすぎて死 明日夜勤してそのまま盆踊り | 仕事バタバタすぎて死 明日夜勤してそのまま盆踊り 盆踊り | https://x.com/RyNe1s5k7nsomKT/status/2084196976892244413 |
+| low | new_event_candidate | new | event | イベント候補「仕事ブッチしてちょっとプリキュア盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事ブッチしてちょっとプリキュア盆踊り | 仕事ブッチしてちょっとプリキュア盆踊り 盆踊り | https://x.com/tenjo_precure/status/2087357596785316070 |
 | low | new_event_candidate | new | event | イベント候補「仕事中の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事中の盆踊り | 仕事中の盆踊り 盆踊り | https://x.com/yukio_nakajima/status/2081663179676057663 |
 | low | new_event_candidate | new | event | イベント候補「仕事後に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事後に盆踊り, 娘は盆踊り | 仕事後に盆踊り 盆踊り; 娘は盆踊り 盆踊り; 昨日は踊り 盆踊り | https://x.com/CavpuakkSgLRjWZ/status/2082112866115809497 |
+| low | new_event_candidate | new | event | イベント候補「仕事終わりで根子の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりで根子の盆踊り | 仕事終わりで根子の盆踊り 盆踊り | https://x.com/maenomeri_1203/status/2087398267730698594 |
 | low | new_event_candidate | new | event | イベント候補「仕事終わりにずっとやぐらで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりにずっとやぐらで盆踊り | 仕事終わりにずっとやぐらで盆踊り 盆踊り | https://x.com/Lia621vrc/status/2086303748503302445 |
 | low | new_event_candidate | new | event | イベント候補「仕事終わりにファントム座さんの新作舞台の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりにファントム座さんの新作舞台の盆踊り | 仕事終わりにファントム座さんの新作舞台の盆踊り 盆踊り | https://x.com/leoknnc/status/2078237128140746963 |
+| low | new_event_candidate | new | event | イベント候補「仕事終わりに仕事の一環で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりに仕事の一環で盆踊り | 仕事終わりに仕事の一環で盆踊り 盆踊り | https://x.com/Suzuto_fan_vb/status/2087418905568694432 |
 | low | new_event_candidate | new | event | イベント候補「仕事終わりに外出たらめっちゃ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりに外出たらめっちゃ盆踊り | 仕事終わりに外出たらめっちゃ盆踊り 盆踊り | https://x.com/yama_guma38/status/2083831570331541824 |
 | low | new_event_candidate | new | event | イベント候補「仕事終わりに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりに盆踊り | 仕事終わりに盆踊り 盆踊り; お初の打越音頭 盆踊り | https://x.com/pompelmo_pesco/status/2085329834167914856 |
 | low | new_event_candidate | new | event | イベント候補「仕事終わりに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仕事終わりに盆踊り | 仕事終わりに盆踊り 盆踊り | https://x.com/xSimEVQrnkg8xUv/status/2078447408166674890 |
@@ -9888,6 +10197,7 @@
 | low | new_event_candidate | new | event | イベント候補「令和8年アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 令和8年アニソン盆踊り | 令和8年アニソン盆踊り 盆踊り | https://x.com/Take240984532/status/2069003036106887362 |
 | low | new_event_candidate | new | event | イベント候補「令和8年度「島松納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 令和8年度「島松納涼盆踊り, 島松納涼盆踊り | 令和8年度「島松納涼盆踊り 盆踊り; 島松納涼盆踊り 盆踊り | https://x.com/EniwaKousiki/status/2085538192565162467 |
 | low | new_event_candidate | new | event | イベント候補「令和8年度千住地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 令和8年度千住地区の盆踊り | 令和8年度千住地区の盆踊り 盆踊り | https://x.com/MSGnio/status/2081926305373921476 |
+| low | new_event_candidate | new | event | イベント候補「令和の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 令和の盆踊り | 令和の盆踊り 盆踊り | https://x.com/nGIZ2XknjwzTGTf/status/2087435306224247280 |
 | low | new_event_candidate | new | event | イベント候補「令和音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 令和音頭 | 令和音頭 盆踊り; 令和おどり 盆踊り; 令和音頭 盆踊り | https://x.com/BaK_ao52/status/2083102179553075492 |
 | low | new_event_candidate | new | event | イベント候補「以前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 以前盆踊り | 以前盆踊り 盆踊り | https://x.com/elevator_p/status/2081547406072791322 |
 | low | new_event_candidate | new | event | イベント候補「仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮装盆踊り | 仮装盆踊り 盆踊り | https://x.com/hiroo_kanko/status/2084884224092618997 |
@@ -9904,8 +10214,10 @@
 | low | new_event_candidate | new | event | イベント候補「仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮装盆踊り, 通常の盆踊り | 仮装盆踊り 盆踊り; 通常の盆踊り 盆踊り | https://x.com/kanumakibou/status/2081906630887895193 |
 | low | new_event_candidate | new | event | イベント候補「仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮装盆踊り | 仮装盆踊り 盆踊り | https://x.com/soranodebone/status/2080985850226348048 |
 | low | new_event_candidate | new | event | イベント候補「仮装盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮装盆踊り | 仮装盆踊り 盆踊り | https://x.com/xUf7TqO87q4JIxi/status/2062508000972325125 |
+| low | new_event_candidate | new | event | イベント候補「仮面ライダー スーパーヒーロー 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮面ライダー スーパーヒーロー 盆踊り | 仮面ライダー スーパーヒーロー 盆踊り 盆踊り | https://x.com/achapin80s/status/2087417155956662348 |
 | low | new_event_candidate | new | event | イベント候補「仮面ライダースーパーヒーロー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮面ライダースーパーヒーロー盆踊り, スーパー戦隊×仮面ライダースーパーヒーロー盆踊り2026 | 仮面ライダースーパーヒーロー盆踊り 盆踊り; スーパー戦隊×仮面ライダースーパーヒーロー盆踊り2026 盆踊り | https://x.com/achapin80s/status/2086641598834872379 |
 | low | new_event_candidate | new | event | イベント候補「仮面ライダースーパーヒーロー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮面ライダースーパーヒーロー盆踊り | 仮面ライダースーパーヒーロー盆踊り 盆踊り | https://x.com/sebo1223/status/2083809996761170102 |
+| low | new_event_candidate | new | event | イベント候補「仮面ライダー音頭聞いてるとこの前の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮面ライダー音頭聞いてるとこの前の盆踊り | 仮面ライダー音頭聞いてるとこの前の盆踊り 盆踊り | https://x.com/pocketZIGA/status/2087444288699523235 |
 | low | new_event_candidate | new | event | イベント候補「仮面女子のファンファーレで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮面女子のファンファーレで盆踊り, 大会とか なんなら盆踊り | 仮面女子のファンファーレで盆踊り 盆踊り; 大会とか なんなら盆踊り 盆踊り | https://x.com/B4PoOe3ZdUqVuNI/status/2063944376511029288 |
 | low | new_event_candidate | new | event | イベント候補「仮面女子のファンファーレを全国の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仮面女子のファンファーレを全国の盆踊り | 仮面女子のファンファーレを全国の盆踊り 盆踊り | https://x.com/B4PoOe3ZdUqVuNI/status/2063940137046900823 |
 | low | new_event_candidate | new | event | イベント候補「仲良く盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 仲良く盆踊り | 仲良く盆踊り 盆踊り | https://x.com/chibikuropanch/status/2083110189042139136 |
@@ -9982,6 +10294,7 @@
 | low | new_event_candidate | new | event | イベント候補「何やってんのかなって思ったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何やってんのかなって思ったら盆踊り | 何やってんのかなって思ったら盆踊り 盆踊り | https://x.com/x23RBc8sLO55105/status/2087021594787078246 |
 | low | new_event_candidate | new | event | イベント候補「何やるのかな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何やるのかな盆踊り | 何やるのかな盆踊り 盆踊り | https://x.com/hina_sm0/status/2065067419249623286 |
 | low | new_event_candidate | new | event | イベント候補「何よりも歌詞が全く浮かばない 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何よりも歌詞が全く浮かばない 盆踊り | 何よりも歌詞が全く浮かばない 盆踊り 盆踊り | https://x.com/77Lunablack77/status/2062036343753187486 |
+| low | new_event_candidate | new | event | イベント候補「何より最新のアリーナで伝統の地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何より最新のアリーナで伝統の地域の盆踊り | 何より最新のアリーナで伝統の地域の盆踊り 盆踊り | https://x.com/SxSxBxExTx/status/2087416464492122301 |
 | low | new_event_candidate | new | event | イベント候補「何ら世の中の役に立たないし 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何ら世の中の役に立たないし 盆踊り | 何ら世の中の役に立たないし 盆踊り 盆踊り | https://x.com/kuma_bot999/status/2064542064818233679 |
 | low | new_event_candidate | new | event | イベント候補「何ヵ所かで夜の踊り子を盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何ヵ所かで夜の踊り子を盆踊り | 何ヵ所かで夜の踊り子を盆踊り 盆踊り | https://x.com/spelling_be/status/2083800367201165591 |
 | low | new_event_candidate | new | event | イベント候補「何処かの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 何処かの盆踊り | 何処かの盆踊り 盆踊り | https://x.com/Sandra8aMayumi8/status/2085984782463488172 |
@@ -9996,6 +10309,7 @@
 | low | new_event_candidate | new | event | イベント候補「例えば 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 例えば 盆踊り | 例えば 盆踊り 盆踊り | https://x.com/manamana04115/status/2062903749929218282 |
 | low | new_event_candidate | new | event | イベント候補「例えば市内のある小学校では体育館で「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 例えば市内のある小学校では体育館で「盆踊り, 盆踊り大会の練習会 | 例えば市内のある小学校では体育館で「盆踊り 盆踊り; 盆踊り大会の練習会 盆踊り | https://x.com/GuuOne/status/2075903486898864527 |
 | low | new_event_candidate | new | event | イベント候補「例の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 例の盆踊り | 例の盆踊り 盆踊り | https://x.com/34_com/status/2063620488015048782 |
+| low | new_event_candidate | new | event | イベント候補「例年浴衣で盆踊りでしたが先日ねころん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 例年浴衣で盆踊りでしたが先日ねころん盆踊り | 例年浴衣で盆踊りでしたが先日ねころん盆踊り 盆踊り | https://x.com/tsubaki812/status/2087405083046883366 |
 | low | new_event_candidate | new | event | イベント候補「例年通り錦糸町河内音頭大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 例年通り錦糸町河内音頭大盆踊り | 例年通り錦糸町河内音頭大盆踊り 盆踊り; 河内音頭 盆踊り; 錦糸町河内音頭 盆踊り | https://x.com/nakibotaru/status/2082597854426923042 |
 | low | new_event_candidate | new | event | イベント候補「保土ケ谷区の宮田町公園でおこなわれる宮田町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 保土ケ谷区の宮田町公園でおこなわれる宮田町盆踊り | 保土ケ谷区の宮田町公園でおこなわれる宮田町盆踊り 盆踊り | https://x.com/fc_fulimaru/status/2083049026589806715 |
 | low | new_event_candidate | new | event | イベント候補「保土ヶ谷区で11月に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 保土ヶ谷区で11月に盆踊り, モネのほどがや 「盆踊り | 保土ヶ谷区で11月に盆踊り 盆踊り; モネのほどがや 「盆踊り 盆踊り | https://x.com/5kHfYa5PjKsGGoV/status/2085210752693199012 |
@@ -10054,6 +10368,7 @@
 | low | new_event_candidate | new | event | イベント候補「先日地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日地域の盆踊り | 先日地域の盆踊り 盆踊り | https://x.com/event_daikichi/status/2084437882329317602 |
 | low | new_event_candidate | new | event | イベント候補「先日娘の園の納涼祭があって 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日娘の園の納涼祭があって 盆踊り | 先日娘の園の納涼祭があって 盆踊り 盆踊り | https://x.com/ash_sein/status/2079477876836241586 |
 | low | new_event_candidate | new | event | イベント候補「先日晴海の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日晴海の盆踊り | 先日晴海の盆踊り 盆踊り | https://x.com/muffindechu27/status/2076534077608628374 |
+| low | new_event_candidate | new | event | イベント候補「先日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日盆踊り | 先日盆踊り 盆踊り | https://x.com/yukiji_vt/status/2087431607905104102 |
 | low | new_event_candidate | new | event | イベント候補「先日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日盆踊り | 先日盆踊り 盆踊り; 会えたら嬉しいな🥰 盆踊り; ソーラン節 盆踊り; 伺うたびに踊り 盆踊り | https://x.com/fried_wakame/status/2086682818567123031 |
 | low | new_event_candidate | new | event | イベント候補「先日調査のため恵比寿へ行ったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日調査のため恵比寿へ行ったら盆踊り | 先日調査のため恵比寿へ行ったら盆踊り 盆踊り | https://x.com/acc_det/status/2084927408445260255 |
 | low | new_event_candidate | new | event | イベント候補「先日近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 先日近所の盆踊り, 小学生のガキンチョ達が盆踊り | 先日近所の盆踊り 盆踊り; 小学生のガキンチョ達が盆踊り 盆踊り | https://x.com/kkmyminato_b927/status/2084207587457999242 |
@@ -10101,6 +10416,7 @@
 | low | new_event_candidate | new | event | イベント候補「全国の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国の盆踊り, 仮面ライダー音頭, 最高です！ 全国の盆踊りに呼んでください | 全国の盆踊り 盆踊り; 仮面ライダー音頭 盆踊り; 仮面ライダー音頭 盆踊り | https://x.com/ginga_enka/status/2084176660996476985 |
 | low | new_event_candidate | new | event | イベント候補「全国の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国の盆踊り, 神田明神アニソン盆踊り | 全国の盆踊り 盆踊り; 神田明神アニソン盆踊り 盆踊り | https://x.com/QmgQpdg/status/2081911105249853519 |
 | low | new_event_candidate | new | event | イベント候補「全国の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国の盆踊り | 全国の盆踊り 盆踊り | https://x.com/bonDbonT/status/2063927025887486058 |
+| low | new_event_candidate | new | event | イベント候補「全国の盆踊り大会を駆け巡って盆踊りをしている「プロ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国の盆踊り大会を駆け巡って盆踊りをしている「プロ盆踊り, 地元の盆踊り, プロ盆踊りダンサー | 全国の盆踊り大会を駆け巡って盆踊りをしている「プロ盆踊り 盆踊り; 地元の盆踊り 盆踊り | https://x.com/morimoringo0701/status/2087419869180649809 |
 | low | new_event_candidate | new | event | イベント候補「全国の競馬場での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国の競馬場での盆踊り | 全国の競馬場での盆踊り 盆踊り; スタートは踊り 盆踊り | https://x.com/Oyjl5HlUz0dsiu3/status/2084276393110847943 |
 | low | new_event_candidate | new | event | イベント候補「全国の藝能を追い研究している人から未知の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国の藝能を追い研究している人から未知の盆踊り | 全国の藝能を追い研究している人から未知の盆踊り 盆踊り | https://x.com/ruikozuka/status/2046384921758064992 |
 | low | new_event_candidate | new | event | イベント候補「全国各地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全国各地の盆踊り | 全国各地の盆踊り 盆踊り; 踊ってくださいね 盆踊り | https://x.com/nakano_bonodori/status/2085221522588020818 |
@@ -10113,11 +10429,13 @@
 | low | new_event_candidate | new | event | イベント候補「全部出し切って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全部出し切って盆踊り | 全部出し切って盆踊り 盆踊り | https://x.com/Karakara_Ice/status/2085213806859563122 |
 | low | new_event_candidate | new | event | イベント候補「全部通ってるときの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 全部通ってるときの盆踊り | 全部通ってるときの盆踊り 盆踊り | https://x.com/sterasdvx77/status/2077667878871109920 |
 | low | new_event_candidate | new | event | イベント候補「八尾グランドホテルの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八尾グランドホテルの盆踊り, 京セラドームの盆踊り | 八尾グランドホテルの盆踊り 盆踊り; 京セラドームの盆踊り 盆踊り; あるけどね 盆踊り | https://x.com/fukiteasobiki/status/2064190432159146392 |
+| low | new_event_candidate | new | event | イベント候補「八尾・太田八幡宮での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八尾・太田八幡宮での盆踊り | 八尾・太田八幡宮での盆踊り 盆踊り; 育ったらどんな未来があったんだろうなあ 盆踊り; 音頭 盆踊り | https://x.com/ichiran_satsuki/status/2087430576110461189 |
 | low | new_event_candidate | new | event | イベント候補「八尾市】自衛隊八尾駐屯地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八尾市】自衛隊八尾駐屯地の盆踊り | 八尾市】自衛隊八尾駐屯地の盆踊り 盆踊り | https://x.com/4gmsREqgha15862/status/2082694812382490879 |
 | low | new_event_candidate | new | event | イベント候補「八尾市】自衛隊八尾駐屯地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八尾市】自衛隊八尾駐屯地の盆踊り | 八尾市】自衛隊八尾駐屯地の盆踊り 盆踊り | https://x.com/goguytopic/status/2082305361617326218 |
 | low | new_event_candidate | new | event | イベント候補「八尾市】自衛隊八尾駐屯地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八尾市】自衛隊八尾駐屯地の盆踊り | 八尾市】自衛隊八尾駐屯地の盆踊り 盆踊り | https://x.com/goguynet_osaka/status/2081877724851843352 |
 | low | new_event_candidate | new | event | イベント候補「八幡町会納涼盆踊り大会では「ダンシング・ヒーロー」に合わせた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八幡町会納涼盆踊り大会では「ダンシング・ヒーロー」に合わせた盆踊り | 八幡町会納涼盆踊り大会では「ダンシング・ヒーロー」に合わせた盆踊り 盆踊り | https://x.com/Mayor_of_Soka/status/2081670174449504702 |
 | low | new_event_candidate | new | event | イベント候補「八幡神社の大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八幡神社の大盆踊り | 八幡神社の大盆踊り 盆踊り | https://x.com/saclaima/status/2078360143113408993 |
+| low | new_event_candidate | new | event | イベント候補「八幡神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八幡神社の盆踊り | 八幡神社の盆踊り 盆踊り | https://x.com/liraliruko28106/status/2087391896410935670 |
 | low | new_event_candidate | new | event | イベント候補「八広西八町会で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八広西八町会で盆踊り | 八広西八町会で盆踊り 盆踊り | https://x.com/uyzdfhh/status/2084341880096198822 |
 | low | new_event_candidate | new | event | イベント候補「八広西八町会で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八広西八町会で盆踊り | 八広西八町会で盆踊り 盆踊り | https://x.com/cQ2nKjChW710G68/status/2084039998119309398 |
 | low | new_event_candidate | new | event | イベント候補「八広西八町会で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 八広西八町会で盆踊り | 八広西八町会で盆踊り 盆踊り | https://x.com/sumidakeizai/status/2084021418967343105 |
@@ -10157,6 +10475,7 @@
 | low | new_event_candidate | new | event | イベント候補「六湛寺公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 六湛寺公園の盆踊り, みやたん音頭 | 六湛寺公園の盆踊り 盆踊り; みやたん音頭 盆踊り; みやたん音頭 盆踊り | https://x.com/Cafe_Tom_Tom/status/2085166246186877236 |
 | low | new_event_candidate | new | event | イベント候補「内容が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 内容が盆踊り | 内容が盆踊り 盆踊り; でもアラレちゃん音頭 盆踊り | https://x.com/Misakodiet/status/2083821952557617501 |
 | low | new_event_candidate | new | event | イベント候補「再会した時にちょうど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 再会した時にちょうど盆踊り | 再会した時にちょうど盆踊り 盆踊り | https://x.com/aotn0322/status/2079011534198767700 |
+| low | new_event_candidate | new | event | イベント候補「再放送時は自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 再放送時は自治会の盆踊り | 再放送時は自治会の盆踊り 盆踊り | https://x.com/pondaring1989/status/2087217229750468875 |
 | low | new_event_candidate | new | event | イベント候補「再来週から毎年恒例の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 再来週から毎年恒例の盆踊り | 再来週から毎年恒例の盆踊り 盆踊り | https://x.com/elmo08151027/status/2075785110939730286 |
 | low | new_event_candidate | new | event | イベント候補「再来週は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 再来週は盆踊り | 再来週は盆踊り 盆踊り | https://x.com/Ambasa_overtop5/status/2069280920197292444 |
 | low | new_event_candidate | new | event | イベント候補「再現 懐かしい光景・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 再現 懐かしい光景・盆踊り | 再現 懐かしい光景・盆踊り 盆踊り | https://x.com/hokutosei48/status/2065083217292763376 |
@@ -10176,6 +10495,7 @@
 | low | new_event_candidate | new | event | イベント候補「出来なくなってしまう盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 出来なくなってしまう盆踊り | 出来なくなってしまう盆踊り 盆踊り | https://x.com/osaruna7741/status/2082319972605514144 |
 | low | new_event_candidate | new | event | イベント候補「函館は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 函館は盆踊り, 札幌の盆踊り | 函館は盆踊り 盆踊り; 札幌の盆踊り 盆踊り; 花火の前に踊り 盆踊り | https://x.com/uho_uho_goriira/status/2079015377955373462 |
 | low | new_event_candidate | new | event | イベント候補「刀剣がサルサdeソウル踊るんだからうたぷちゃんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 刀剣がサルサdeソウル踊るんだからうたぷちゃんが盆踊り | 刀剣がサルサdeソウル踊るんだからうたぷちゃんが盆踊り 盆踊り | https://x.com/miel_0308a/status/2071034981774959103 |
+| low | new_event_candidate | new | event | イベント候補「分やムスリムが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 分やムスリムが盆踊り | 分やムスリムが盆踊り 盆踊り | https://x.com/higonohirokun/status/2087440740532305964 |
 | low | new_event_candidate | new | event | イベント候補「刈谷の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 刈谷の盆踊り | 刈谷の盆踊り 盆踊り | https://x.com/Gh3w79sAGC80210/status/2086630768449917390 |
 | low | new_event_candidate | new | event | イベント候補「初めから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 初めから盆踊り | 初めから盆踊り 盆踊り | https://x.com/aL8EF0nVYi32255/status/2083901272726585484 |
 | low | new_event_candidate | new | event | イベント候補「初めての夏に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 初めての夏に盆踊り | 初めての夏に盆踊り 盆踊り | https://x.com/narumikaeru/status/2084209407978840412 |
@@ -10267,6 +10587,7 @@
 | low | new_event_candidate | new | event | イベント候補「北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海盆踊り | 北海盆踊り 盆踊り | https://x.com/large_n/status/2085271479533617481 |
 | low | new_event_candidate | new | event | イベント候補「北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海盆踊り | 北海盆踊り 盆踊り | https://x.com/minmin12731302/status/2071143213994553552 |
 | low | new_event_candidate | new | event | イベント候補「北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海盆踊り | 北海盆踊り 盆踊り | https://x.com/mgrnenchi_mkt/status/2067232895711027204 |
+| low | new_event_candidate | new | event | イベント候補「北海道こども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道こども盆踊り | 北海道こども盆踊り 盆踊り | https://x.com/garahoooo/status/2087382494253646143 |
 | low | new_event_candidate | new | event | イベント候補「北海道では定番の「子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道では定番の「子供盆踊り, 子供盆踊り唄 | 北海道では定番の「子供盆踊り 盆踊り; 子供盆踊り唄 盆踊り; そんな季節 盆踊り | https://x.com/yoshizakirecord/status/2085622645656285427 |
 | low | new_event_candidate | new | event | イベント候補「北海道の子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道の子ども盆踊り | 北海道の子ども盆踊り 盆踊り | https://x.com/ezo_tanuko23/status/2083826659741024358 |
 | low | new_event_candidate | new | event | イベント候補「北海道の子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 北海道の子供盆踊り | 北海道の子供盆踊り 盆踊り | https://x.com/sakkonaction/status/2082745944072999374 |
@@ -10344,11 +10665,13 @@
 | low | new_event_candidate | new | event | イベント候補「厚木基地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 厚木基地の盆踊り | 厚木基地の盆踊り 盆踊り | https://x.com/syounanntetudo/status/2082020122273980828 |
 | low | new_event_candidate | new | event | イベント候補「厚木基地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 厚木基地盆踊り | 厚木基地盆踊り 盆踊り | https://x.com/hTZ0U9CKaocYZEl/status/2066916146218225718 |
 | low | new_event_candidate | new | event | イベント候補「原ちゃんと一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 原ちゃんと一緒に盆踊り | 原ちゃんと一緒に盆踊り 盆踊り; ダンシングヒーロー 盆踊り; きよしズンドコ節 盆踊り | https://x.com/halavechan/status/2085187626676658236 |
+| low | new_event_candidate | new | event | イベント候補「原因の方が 『寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 原因の方が 『寝転ん盆踊り | 原因の方が 『寝転ん盆踊り 盆踊り; 出て行かれましたね…はい… 盆踊り | https://x.com/DddHLMroBa85033/status/2087435808806735970 |
 | low | new_event_candidate | new | event | イベント候補「去年 友達と出かけた先で夏祭りやってて飛び入りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年 友達と出かけた先で夏祭りやってて飛び入りで盆踊り | 去年 友達と出かけた先で夏祭りやってて飛び入りで盆踊り 盆踊り | https://x.com/_pukakurage_/status/2063980706188173425 |
 | low | new_event_candidate | new | event | イベント候補「去年6年ぶりに開催された駅前での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年6年ぶりに開催された駅前での盆踊り | 去年6年ぶりに開催された駅前での盆踊り 盆踊り | https://x.com/ragnarok_yep/status/2082380069562102195 |
 | low | new_event_candidate | new | event | イベント候補「去年から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年から盆踊り, 東京音頭覚えたので 来年は都内各所盆踊り | 去年から盆踊り 盆踊り; 東京音頭覚えたので 来年は都内各所盆踊り 盆踊り; 東京音頭 盆踊り | https://x.com/pandamama911/status/2082620679921537465 |
 | low | new_event_candidate | new | event | イベント候補「去年から行きたかった盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年から行きたかった盆踊り | 去年から行きたかった盆踊り 盆踊り | https://x.com/jitensha_kogi/status/2079922389291597893 |
 | low | new_event_candidate | new | event | イベント候補「去年ちこちゃんと行った築地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年ちこちゃんと行った築地の盆踊り | 去年ちこちゃんと行った築地の盆踊り 盆踊り | https://x.com/29_____16/status/2082408070077104220 |
+| low | new_event_candidate | new | event | イベント候補「去年のNiagara盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年のNiagara盆踊り | 去年のNiagara盆踊り 盆踊り; イエローサブマリン音頭 盆踊り | https://x.com/shikki_g/status/2087443779154505808 |
 | low | new_event_candidate | new | event | イベント候補「去年のこの日は大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年のこの日は大屋根リング盆踊り | 去年のこの日は大屋根リング盆踊り 盆踊り; 相席になった別の踊り 盆踊り | https://x.com/whoooooojean/status/2082109710023766491 |
 | low | new_event_candidate | new | event | イベント候補「去年のせんとれあの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年のせんとれあの盆踊り | 去年のせんとれあの盆踊り 盆踊り | https://x.com/kinouchiaotetsu/status/2078006143075618955 |
 | low | new_event_candidate | new | event | イベント候補「去年の中野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年の中野盆踊り, スモーキーズ音頭 | 去年の中野盆踊り 盆踊り; スモーキーズ音頭 盆踊り; スモーキーズ音頭 盆踊り | https://x.com/Smokys_KAZU/status/2082019485276606491 |
@@ -10376,6 +10699,7 @@
 | low | new_event_candidate | new | event | イベント候補「去年青葉公園の帰りにこちらでアイスを食べながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 去年青葉公園の帰りにこちらでアイスを食べながら盆踊り, きそうな場所だなとぼんやり思っていたので実際に盆踊り | 去年青葉公園の帰りにこちらでアイスを食べながら盆踊り 盆踊り; きそうな場所だなとぼんやり思っていたので実際に盆踊り 盆踊り; だなとぼんやり思っていたの 盆踊り; 初見のあっぱれ音頭 盆踊り | https://x.com/fried_wakame/status/2085908654570820007 |
 | low | new_event_candidate | new | event | イベント候補「参加した 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 参加した 盆踊り | 参加した 盆踊り 盆踊り | https://x.com/pokotaku396/status/2082451087081325053 |
 | low | new_event_candidate | new | event | イベント候補「参加してた実績ある） おそらく駐在員が日本人向けに開催してた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 参加してた実績ある） おそらく駐在員が日本人向けに開催してた盆踊り | 参加してた実績ある） おそらく駐在員が日本人向けに開催してた盆踊り 盆踊り | https://x.com/mikura0614/status/2065427424201048251 |
+| low | new_event_candidate | new | event | イベント候補「参加しましたよー 盆踊りナイトもちろん浴衣で 本気の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 参加しましたよー 盆踊りナイトもちろん浴衣で 本気の盆踊り | 参加しましたよー 盆踊りナイトもちろん浴衣で 本気の盆踊り 盆踊り | https://x.com/sirnonyanko/status/2087376239170551946 |
 | low | new_event_candidate | new | event | イベント候補「参加型盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 参加型盆踊り, 2023年より継続する盆踊り, しての盆踊り | 参加型盆踊り 盆踊り; 2023年より継続する盆踊り 盆踊り; 誰もどなたも踊り 盆踊り | https://x.com/bodyartslab/status/2063178522278150411 |
 | low | new_event_candidate | new | event | イベント候補「友だちと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 友だちと盆踊り | 友だちと盆踊り 盆踊り | https://x.com/Yukimineko0521/status/2078387867437637735 |
 | low | new_event_candidate | new | event | イベント候補「友人たちと地元の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 友人たちと地元の納涼盆踊り | 友人たちと地元の納涼盆踊り 盆踊り | https://x.com/ikki_0910/status/2081029003008221541 |
@@ -10414,9 +10738,14 @@
 | low | new_event_candidate | new | event | イベント候補「台風「俺も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風「俺も盆踊り | 台風「俺も盆踊り 盆踊り | https://x.com/choko_53/status/2082393503980818897 |
 | low | new_event_candidate | new | event | イベント候補「台風こないで 金土は神田明神盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風こないで 金土は神田明神盆踊り | 台風こないで 金土は神田明神盆踊り 盆踊り | https://x.com/megtakabubb/status/2081990437796274374 |
 | low | new_event_candidate | new | event | イベント候補「台風っぽいから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風っぽいから盆踊り, そうすると明日仕事後に新宿の盆踊り | 台風っぽいから盆踊り 盆踊り; そうすると明日仕事後に新宿の盆踊り 盆踊り | https://x.com/kasui21/status/2069688899300192285 |
+| low | new_event_candidate | new | event | イベント候補「台風で各地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風で各地の盆踊り | 台風で各地の盆踊り 盆踊り | https://x.com/irodonob_suki/status/2087098311920787868 |
+| low | new_event_candidate | new | event | イベント候補「台風で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風で盆踊り | 台風で盆踊り 盆踊り | https://x.com/kawasaki_noMasa/status/2087381699437191577 |
+| low | new_event_candidate | new | event | イベント候補「台風で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風で盆踊り | 台風で盆踊り 盆踊り | https://x.com/55Mikako33/status/2087125887745704407 |
 | low | new_event_candidate | new | event | イベント候補「台風で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風で盆踊り | 台風で盆踊り 盆踊り | https://x.com/wa_nami_hq/status/2086953908535206380 |
+| low | new_event_candidate | new | event | イベント候補「台風のオフ会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風のオフ会盆踊り | 台風のオフ会盆踊り 盆踊り | https://x.com/Hinosaku_cheri/status/2087321958849679818 |
 | low | new_event_candidate | new | event | イベント候補「台風の接近で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風の接近で盆踊り | 台風の接近で盆踊り 盆踊り | https://x.com/pfm1208/status/2087051289549209856 |
 | low | new_event_candidate | new | event | イベント候補「台風の日に裸で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風の日に裸で盆踊り | 台風の日に裸で盆踊り 盆踊り | https://x.com/grenade_htn/status/2061851539141189788 |
+| low | new_event_candidate | new | event | イベント候補「台風の雨で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 台風の雨で盆踊り | 台風の雨で盆踊り 盆踊り | https://x.com/UR3yjkT2qG30884/status/2087306960509309409 |
 | low | new_event_candidate | new | event | イベント候補「右から左に受け流す盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 右から左に受け流す盆踊り | 右から左に受け流す盆踊り 盆踊り | https://x.com/mamachan322/status/2087080197682352569 |
 | low | new_event_candidate | new | event | イベント候補「右の方を盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 右の方を盆踊り | 右の方を盆踊り 盆踊り | https://x.com/akalemOOOn/status/2070774133378732214 |
 | low | new_event_candidate | new | event | イベント候補「各公園とかで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各公園とかで盆踊り | 各公園とかで盆踊り 盆踊り | https://x.com/kimagure_neko13/status/2083074418692260085 |
@@ -10440,6 +10769,7 @@
 | low | new_event_candidate | new | event | イベント候補「各地域で開催された盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各地域で開催された盆踊り, どの会場も多くの皆さまで活気にあふれる素晴らしい盆踊り, 素晴らしい盆踊り | 各地域で開催された盆踊り 盆踊り; どの会場も多くの皆さまで活気にあふれる素晴らしい盆踊り 盆踊り; 多くの皆さ 盆踊り | https://x.com/maikana5155/status/2086080993690337569 |
 | low | new_event_candidate | new | event | イベント候補「各所で盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各所で盆踊りや夏祭り | 各所で盆踊りや夏祭り 盆踊り; 顔を出すことが出来ました 盆踊り | https://x.com/hirofumi_ryu/status/2081012030342119449 |
 | low | new_event_candidate | new | event | イベント候補「各所盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各所盆踊り | 各所盆踊り 盆踊り | https://x.com/inogure0125/status/2083490487470891028 |
+| low | new_event_candidate | new | event | イベント候補「各日2回の打ち上げ花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各日2回の打ち上げ花火や盆踊り | 各日2回の打ち上げ花火や盆踊り 盆踊り | https://x.com/ats_event/status/2087375092762238980 |
 | low | new_event_candidate | new | event | イベント候補「各町会・自治会による納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 各町会・自治会による納涼盆踊り | 各町会・自治会による納涼盆踊り 盆踊り | https://x.com/chiiki_itabashi/status/2076844492012036501 |
 | low | new_event_candidate | new | event | イベント候補「合間をぬって少しでも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 合間をぬって少しでも盆踊り | 合間をぬって少しでも盆踊り 盆踊り | https://x.com/machida_wakasio/status/2082023242525720897 |
 | low | new_event_candidate | new | event | イベント候補「吉川美南駅前で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 吉川美南駅前で盆踊り, 皆さんの地域はどんな盆踊り | 吉川美南駅前で盆踊り 盆踊り; 皆さんの地域はどんな盆踊り 盆踊り | https://x.com/maimon_sushi/status/2084788976700002566 |
@@ -10447,10 +10777,12 @@
 | low | new_event_candidate | new | event | イベント候補「吉本興業は季節関係なく 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 吉本興業は季節関係なく 盆踊り | 吉本興業は季節関係なく 盆踊り 盆踊り; 吉本興業は季節 盆踊り | https://x.com/EminoEmily/status/2062146465569583233 |
 | low | new_event_candidate | new | event | イベント候補「吉浜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 吉浜の盆踊り | 吉浜の盆踊り 盆踊り | https://x.com/uchikikaku/status/2086316799524786548 |
 | low | new_event_candidate | new | event | イベント候補「吉祥寺ふれあい夏まつり音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 吉祥寺ふれあい夏まつり音頭 | 吉祥寺ふれあい夏まつり音頭 盆踊り; 吉祥寺ふれあい夏まつり音頭 盆踊り | https://x.com/Atutakamama7034/status/2079031523244998807 |
+| low | new_event_candidate | new | event | イベント候補「吉祥寺プラKで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 吉祥寺プラKで盆踊り | 吉祥寺プラKで盆踊り 盆踊り | https://x.com/bulldog_mar/status/2087327707545907648 |
 | low | new_event_candidate | new | event | イベント候補「同じく来年は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同じく来年は盆踊り | 同じく来年は盆踊り 盆踊り | https://x.com/Harvey_skyduo/status/2076312899640033614 |
 | low | new_event_candidate | new | event | イベント候補「同じ日程でやる町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同じ日程でやる町内の盆踊り | 同じ日程でやる町内の盆踊り 盆踊り; 密かに踊り 盆踊り | https://x.com/hullsato/status/2082371368612720775 |
 | low | new_event_candidate | new | event | イベント候補「同じ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同じ盆踊り | 同じ盆踊り 盆踊り | https://x.com/hidedon78/status/2065420255976206553 |
 | low | new_event_candidate | new | event | イベント候補「同僚に 先日 派手な浴衣着た男性が綺麗に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同僚に 先日 派手な浴衣着た男性が綺麗に盆踊り | 同僚に 先日 派手な浴衣着た男性が綺麗に盆踊り 盆踊り | https://x.com/tashiro_kai/status/2084512930180260183 |
+| low | new_event_candidate | new | event | イベント候補「同日の夜には盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同日の夜には盆踊り | 同日の夜には盆踊り 盆踊り | https://x.com/yonedatakashi/status/2087406330328076611 |
 | low | new_event_candidate | new | event | イベント候補「同日開催された河内長野小山田納涼盆踊り2026の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同日開催された河内長野小山田納涼盆踊り2026の盆踊り | 同日開催された河内長野小山田納涼盆踊り2026の盆踊り 盆踊り | https://x.com/FdfwSPdEZXn3I3G/status/2081028804613636475 |
 | low | new_event_candidate | new | event | イベント候補「同時に北海盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 同時に北海盆踊り | 同時に北海盆踊り 盆踊り | https://x.com/sumiryu1/status/2063591108777791887 |
 | low | new_event_candidate | new | event | イベント候補「名前は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 名前は盆踊り | 名前は盆踊り 盆踊り | https://x.com/suamachandesu/status/2068641116220789143 |
@@ -10489,6 +10821,7 @@
 | low | new_event_candidate | new | event | イベント候補「和太鼓の演奏と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓の演奏と盆踊り, 江戸川区発！和太鼓の演奏と盆踊り | 和太鼓の演奏と盆踊り 盆踊り; 江戸川区発！和太鼓の演奏と盆踊り 盆踊り | https://x.com/KasaiSuizokuen/status/2085593322220126528 |
 | low | new_event_candidate | new | event | イベント候補「和太鼓の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓の盆踊り | 和太鼓の盆踊り 盆踊り | https://x.com/kanna_yurikago/status/2084557911251190056 |
 | low | new_event_candidate | new | event | イベント候補「和太鼓を囲んで 子どもも大人も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓を囲んで 子どもも大人も盆踊り | 和太鼓を囲んで 子どもも大人も盆踊り 盆踊り | https://x.com/phantom_80106/status/2083065745911787658 |
+| low | new_event_candidate | new | event | イベント候補「和太鼓・盆踊り・花火など濃いぃ夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和太鼓・盆踊り・花火など濃いぃ夏祭り | 和太鼓・盆踊り・花火など濃いぃ夏祭り 盆踊り | https://x.com/takitate_raisu/status/2087396768044773453 |
 | low | new_event_candidate | new | event | イベント候補「和服着てるスタッフは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和服着てるスタッフは盆踊り | 和服着てるスタッフは盆踊り 盆踊り | https://x.com/GokokuHoujyou86/status/2085202012619284631 |
 | low | new_event_candidate | new | event | イベント候補「和装で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和装で盆踊り | 和装で盆踊り 盆踊り | https://x.com/tea_peya/status/2076604190043074914 |
 | low | new_event_candidate | new | event | イベント候補「和風エリアは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 和風エリアは盆踊り | 和風エリアは盆踊り 盆踊り; まわりを走ると月が出た出たのメロディが奏 盆踊り | https://x.com/vegeta7015/status/2082005589375557804 |
@@ -10514,12 +10847,21 @@
 | low | new_event_candidate | new | event | イベント候補「喜びに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 喜びに盆踊り | 喜びに盆踊り 盆踊り | https://x.com/sasimi1412/status/2075773252706971762 |
 | low | new_event_candidate | new | event | イベント候補「喜久ちゃんラブラブルミ子さんの北海子ども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 喜久ちゃんラブラブルミ子さんの北海子ども盆踊り | 喜久ちゃんラブラブルミ子さんの北海子ども盆踊り 盆踊り | https://x.com/NAOTOSAKAKEN/status/2086227365240398070 |
 | low | new_event_candidate | new | event | イベント候補「喜志町青年会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 喜志町青年会の盆踊り | 喜志町青年会の盆踊り 盆踊り | https://x.com/ichiran_satsuki/status/2081637239910727850 |
+| low | new_event_candidate | new | event | イベント候補「喧嘩もなくみんな仲良く盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 喧嘩もなくみんな仲良く盆踊り | 喧嘩もなくみんな仲良く盆踊り 盆踊り | https://x.com/Pgame0d/status/2087297114309361956 |
 | low | new_event_candidate | new | event | イベント候補「囃子連と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 囃子連と盆踊り | 囃子連と盆踊り 盆踊り | https://x.com/dessincro_teiki/status/2062195021135429916 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺さんの盆踊り | 四天王寺さんの盆踊り 盆踊り | https://x.com/oroorooroa/status/2087384424048676998 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺さんの盆踊り, 今年は休みの日がことごとく雨で盆踊り | 四天王寺さんの盆踊り 盆踊り; 今年は休みの日がことごとく雨で盆踊り 盆踊り | https://x.com/GON_69/status/2087149745131372861 |
 | low | new_event_candidate | new | event | イベント候補「四天王寺さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺さんの盆踊り, 銅駝の盆踊り | 四天王寺さんの盆踊り 盆踊り; 銅駝の盆踊り 盆踊り | https://x.com/okakeisan/status/2086974804008325316 |
 | low | new_event_candidate | new | event | イベント候補「四天王寺さんも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺さんも盆踊り | 四天王寺さんも盆踊り 盆踊り | https://x.com/fudeyaksk/status/2087080841520542206 |
 | low | new_event_candidate | new | event | イベント候補「四天王寺でも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺でも盆踊り | 四天王寺でも盆踊り 盆踊り | https://x.com/sherry0813bon/status/2083467695820095679 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺で盆踊り | 四天王寺で盆踊り 盆踊り | https://x.com/IGiFmiLwYgcaaQ9/status/2087289600272449723 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺の盆踊り | 四天王寺の盆踊り 盆踊り | https://x.com/mitthutter/status/2087413414859800754 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺の盆踊り | 四天王寺の盆踊り 盆踊り | https://x.com/CASPOMPEI00/status/2087411171129438602 |
 | low | new_event_candidate | new | event | イベント候補「四天王寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺の盆踊り | 四天王寺の盆踊り 盆踊り | https://x.com/qhXDUbcrHV82530/status/2087044967286137008 |
 | low | new_event_candidate | new | event | イベント候補「四天王寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺の盆踊り | 四天王寺の盆踊り 盆踊り | https://x.com/ososkun/status/2085271908426412506 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺大盆踊り | 四天王寺大盆踊り 盆踊り | https://x.com/NLVqzCsYUS76562/status/2087306426884698121 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺盆踊り | 四天王寺盆踊り 盆踊り | https://x.com/acceptallcookie/status/2087437764967194762 |
+| low | new_event_candidate | new | event | イベント候補「四天王寺盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四天王寺盆踊り | 四天王寺盆踊り 盆踊り | https://x.com/tom_nish/status/2087379821731131656 |
 | low | new_event_candidate | new | event | イベント候補「四季の森公園で 2026（大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四季の森公園で 2026（大盆踊り | 四季の森公園で 2026（大盆踊り 盆踊り | https://x.com/166summit/status/2083756791444500957 |
 | low | new_event_candidate | new | event | イベント候補「四日市の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四日市の盆踊り | 四日市の盆踊り 盆踊り | https://x.com/ObakaAki/status/2067964000290345400 |
 | low | new_event_candidate | new | event | イベント候補「四町会の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 四町会の納涼盆踊り | 四町会の納涼盆踊り 盆踊り | https://x.com/musashinokotaro/status/2078283208962224345 |
@@ -10532,6 +10874,7 @@
 | low | new_event_candidate | new | event | イベント候補「回覧板に入ってる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 回覧板に入ってる盆踊り | 回覧板に入ってる盆踊り 盆踊り | https://x.com/nakataka/status/2078740006294925337 |
 | low | new_event_candidate | new | event | イベント候補「回足寄ふるさと盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 回足寄ふるさと盆おどり | 回足寄ふるさと盆おどり 盆踊り | https://x.com/ashorojuku/status/2077265948147667214 |
 | low | new_event_candidate | new | event | イベント候補「団体教室】 ・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 団体教室】 ・盆踊り, 盆踊り教室は夏の盆踊り | 団体教室】 ・盆踊り 盆踊り; 盆踊り教室は夏の盆踊り 盆踊り | https://x.com/sakura__miyavi/status/2066832178923835548 |
+| low | new_event_candidate | new | event | イベント候補「団地まつりは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 団地まつりは盆踊り | 団地まつりは盆踊り 盆踊り | https://x.com/yasugaichonchon/status/2087386953557950758 |
 | low | new_event_candidate | new | event | イベント候補「団子担当ですよwww 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 団子担当ですよwww 盆踊り | 団子担当ですよwww 盆踊り 盆踊り | https://x.com/miyamipo/status/2076185454752522603 |
 | low | new_event_candidate | new | event | イベント候補「困った時に踊るための盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 困った時に踊るための盆踊り | 困った時に踊るための盆踊り 盆踊り | https://x.com/saba_daigakuyou/status/2067254457004687710 |
 | low | new_event_candidate | new | event | イベント候補「図らずも明日が休みになり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 図らずも明日が休みになり盆踊り | 図らずも明日が休みになり盆踊り 盆踊り | https://x.com/KARUMEkaihen/status/2086721336160944190 |
@@ -10540,6 +10883,7 @@
 | low | new_event_candidate | new | event | イベント候補「国会議員（衆議院・参議院）がXで「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 国会議員（衆議院・参議院）がXで「盆踊り, 千葉2区） 2025年8月に地元の盆踊り, 地元の盆踊り | 国会議員（衆議院・参議院）がXで「盆踊り 盆踊り; 千葉2区） 2025年8月に地元の盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/JiraiyaJapan/status/2084223603818807641 |
 | low | new_event_candidate | new | event | イベント候補「国本地区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 国本地区盆踊り | 国本地区盆踊り 盆踊り; 国本ソーラン 盆踊り | https://x.com/lnk_chii/status/2083461915511234584 |
 | low | new_event_candidate | new | event | イベント候補「国本地区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 国本地区盆踊り, 国本地区盆踊り大会観戦記 | 国本地区盆踊り 盆踊り; 国本地区盆踊り大会観戦記 盆踊り | https://x.com/ayanao68624486/status/2081028274285936891 |
+| low | new_event_candidate | new | event | イベント候補「国立REBORNで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 国立REBORNで盆踊り | 国立REBORNで盆踊り 盆踊り | https://x.com/bonbandbass/status/2087422557016432864 |
 | low | new_event_candidate | new | event | イベント候補「国立市が各自治体の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 国立市が各自治体の盆踊り | 国立市が各自治体の盆踊り 盆踊り | https://x.com/kuninyan1/status/2082084660633637288 |
 | low | new_event_candidate | new | event | イベント候補「国立市の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 国立市の盆踊り, 府中市の盆踊り, 今年は国分寺市の盆踊り | 国立市の盆踊り 盆踊り; 府中市の盆踊り 盆踊り | https://x.com/jun_b_h_2022/status/2069368785161826647 |
 | low | new_event_candidate | new | event | イベント候補「園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 園の盆踊り | 園の盆踊り 盆踊り | https://x.com/purinouentai/status/2078390457353240898 |
@@ -10571,6 +10915,7 @@
 | low | new_event_candidate | new | event | イベント候補「土曜日は夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は夏祭り盆踊り | 土曜日は夏祭り盆踊り 盆踊り | https://x.com/TDenkibran/status/2079108336302399703 |
 | low | new_event_candidate | new | event | イベント候補「土曜日は多摩平第七公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は多摩平第七公園盆踊り | 土曜日は多摩平第七公園盆踊り 盆踊り | https://x.com/syumi_hero_yell/status/2084566083193934262 |
 | low | new_event_candidate | new | event | イベント候補「土曜日は東伏見の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は東伏見の盆踊り | 土曜日は東伏見の盆踊り 盆踊り | https://x.com/tohjin_dommie/status/2081529057292980541 |
+| low | new_event_candidate | new | event | イベント候補「土曜日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は盆踊り | 土曜日は盆踊り 盆踊り | https://x.com/PiyokoB/status/2087358033601142833 |
 | low | new_event_candidate | new | event | イベント候補「土曜日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は盆踊り | 土曜日は盆踊り 盆踊り | https://x.com/ZJmRt2nZzuAyCMm/status/2086290618918330849 |
 | low | new_event_candidate | new | event | イベント候補「土曜日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は盆踊り | 土曜日は盆踊り 盆踊り | https://x.com/taku_ymd/status/2085986779426091427 |
 | low | new_event_candidate | new | event | イベント候補「土曜日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 土曜日は盆踊り | 土曜日は盆踊り 盆踊り | https://x.com/mLlJ3CyJptRIrjQ/status/2081533346946142549 |
@@ -10586,6 +10931,7 @@
 | low | new_event_candidate | new | event | イベント候補「地元では納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元では納涼盆踊り | 地元では納涼盆踊り 盆踊り | https://x.com/ooks_katu/status/2082390837573673441 |
 | low | new_event_candidate | new | event | イベント候補「地元で打ち上げ花火上がって 今日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で打ち上げ花火上がって 今日は盆踊り | 地元で打ち上げ花火上がって 今日は盆踊り 盆踊り | https://x.com/fumamochisan/status/2085982625483874735 |
 | low | new_event_candidate | new | event | イベント候補「地元で普通に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で普通に盆踊り | 地元で普通に盆踊り 盆踊り | https://x.com/love_xg_yuki/status/2081158663528738995 |
+| low | new_event_candidate | new | event | イベント候補「地元で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で盆踊り | 地元で盆踊り 盆踊り | https://x.com/khronos442/status/2087370847770341701 |
 | low | new_event_candidate | new | event | イベント候補「地元で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で盆踊り | 地元で盆踊り 盆踊り | https://x.com/caffeinism1013/status/2085954813108551757 |
 | low | new_event_candidate | new | event | イベント候補「地元で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で盆踊り | 地元で盆踊り 盆踊り | https://x.com/o3jp1psOMgsII53/status/2085122089137414337 |
 | low | new_event_candidate | new | event | イベント候補「地元で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元で盆踊り | 地元で盆踊り 盆踊り; あったの 盆踊り | https://x.com/himeyuunachan/status/2081709457596420138 |
@@ -10605,6 +10951,7 @@
 | low | new_event_candidate | new | event | イベント候補「地元の公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の公園の盆踊り | 地元の公園の盆踊り 盆踊り | https://x.com/yohkohlocal/status/2080954104663457926 |
 | low | new_event_candidate | new | event | イベント候補「地元の南六郷一丁目町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の南六郷一丁目町会の盆踊り | 地元の南六郷一丁目町会の盆踊り 盆踊り; 太平湯 盆踊り | https://x.com/taiheiyu/status/2078318025376477249 |
 | low | new_event_candidate | new | event | イベント候補「地元の友達とマネージャーさんと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の友達とマネージャーさんと盆踊り | 地元の友達とマネージャーさんと盆踊り 盆踊り | https://x.com/kyukyumy/status/2084845423093854237 |
+| low | new_event_candidate | new | event | イベント候補「地元の夏祭り(盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の夏祭り(盆踊り | 地元の夏祭り(盆踊り 盆踊り; 移転しての試み！毎年台風 盆踊り | https://x.com/miwa02151021k/status/2087127286189572129 |
 | low | new_event_candidate | new | event | イベント候補「地元の夏祭りに全力で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の夏祭りに全力で盆踊り, 花火より盆踊り | 地元の夏祭りに全力で盆踊り 盆踊り; 花火より盆踊り 盆踊り | https://x.com/Sakigaoka_Misak/status/2081025289023631756 |
 | low | new_event_candidate | new | event | イベント候補「地元の夏祭りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の夏祭りの盆踊り | 地元の夏祭りの盆踊り 盆踊り; ホームビデオ 盆踊り | https://x.com/chinniisan/status/2075854386513985954 |
 | low | new_event_candidate | new | event | イベント候補「地元の夏祭りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の夏祭りや盆踊り | 地元の夏祭りや盆踊り 盆踊り | https://x.com/mimi_111739/status/2077287692082323535 |
@@ -10617,6 +10964,7 @@
 | low | new_event_candidate | new | event | イベント候補「地元の町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の町会の盆踊り | 地元の町会の盆踊り 盆踊り | https://x.com/klazy_/status/2086740882783646111 |
 | low | new_event_candidate | new | event | イベント候補「地元の町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の町会の盆踊り, 東京音頭, アラレちゃん音頭 | 地元の町会の盆踊り 盆踊り; 東京音頭 盆踊り; は「ダンシングヒーロー」とかもやってましたw 盆踊り; 炭坑節 盆踊り | https://x.com/himagurashi/status/2086585531291640246 |
 | low | new_event_candidate | new | event | イベント候補「地元の盆ダンス【盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆ダンス【盆踊り | 地元の盆ダンス【盆踊り 盆踊り | https://x.com/oisina18/status/2085291900987470281 |
+| low | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り | 地元の盆踊り 盆踊り | https://x.com/Iuvnyqn/status/2087380697225011353 |
 | low | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り | 地元の盆踊り 盆踊り | https://x.com/ATJaTveKRAE7B9U/status/2087070893902365171 |
 | low | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り, そう言えば盆踊り | 地元の盆踊り 盆踊り; そう言えば盆踊り 盆踊り | https://x.com/zen9taikey/status/2087060724929687613 |
 | low | new_event_candidate | new | event | イベント候補「地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の盆踊り | 地元の盆踊り 盆踊り | https://x.com/tikyuusimin/status/2086730706806563052 |
@@ -10683,9 +11031,11 @@
 | low | new_event_candidate | new | event | イベント候補「地元の行事に出て皆の話を聞くのも大切です 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の行事に出て皆の話を聞くのも大切です 盆踊り | 地元の行事に出て皆の話を聞くのも大切です 盆踊り 盆踊り | https://x.com/eFdBAsn7RH12357/status/2077306048181149786 |
 | low | new_event_candidate | new | event | イベント候補「地元の観音堂の縁日(盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の観音堂の縁日(盆踊り | 地元の観音堂の縁日(盆踊り 盆踊り | https://x.com/genzyuminMk2/status/2086657560430645330 |
 | low | new_event_candidate | new | event | イベント候補「地元の議員さんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元の議員さんが盆踊り | 地元の議員さんが盆踊り 盆踊り | https://x.com/masasiiwasa/status/2081295812924211439 |
+| low | new_event_candidate | new | event | イベント候補「地元は広島なので盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元は広島なので盆踊り | 地元は広島なので盆踊り 盆踊り | https://x.com/shizukifujisawa/status/2087395799420571676 |
 | low | new_event_candidate | new | event | イベント候補「地元は明日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元は明日盆踊り | 地元は明日盆踊り 盆踊り | https://x.com/aqua3254/status/2083462319120720149 |
 | low | new_event_candidate | new | event | イベント候補「地元は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元は盆踊り | 地元は盆踊り 盆踊り | https://x.com/WtUx5f5xvmJLdBH/status/2082761579674644681 |
 | low | new_event_candidate | new | event | イベント候補「地元は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元は盆踊り | 地元は盆踊り 盆踊り | https://x.com/kimupisan/status/2067984281490890858 |
+| low | new_event_candidate | new | event | イベント候補「地元は神社とかは無いので公園で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元は神社とかは無いので公園で盆踊り | 地元は神社とかは無いので公園で盆踊り 盆踊り | https://x.com/suzuranniko/status/2087312272633073947 |
 | low | new_event_candidate | new | event | イベント候補「地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り | 地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り 盆踊り; 名曲月島音頭 盆踊り; 深川音頭 盆踊り | https://x.com/kuma_bot999/status/2020130935044223465 |
 | low | new_event_candidate | new | event | イベント候補「地元・千秋町の馬場盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元・千秋町の馬場盆踊り | 地元・千秋町の馬場盆踊り 盆踊り; 守る「新しい地域の助け合い」が必要だと考えてい 盆踊り | https://x.com/uqgx7TrdLt38182/status/2082266863657189479 |
 | low | new_event_candidate | new | event | イベント候補「地元・埼玉県北の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地元・埼玉県北の盆踊り | 地元・埼玉県北の盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/banganji8643/status/2087026503666278837 |
@@ -10726,6 +11076,7 @@
 | low | new_event_candidate | new | event | イベント候補「地域で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域で盆踊り | 地域で盆踊り 盆踊り; 住むと厄介なことになる 盆踊り | https://x.com/Cabin_House7th/status/2067131525049770325 |
 | low | new_event_candidate | new | event | イベント候補「地域ならではの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域ならではの盆踊り | 地域ならではの盆踊り 盆踊り | https://x.com/warusere/status/2069052631243530268 |
 | low | new_event_candidate | new | event | イベント候補「地域によって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域によって盆踊り | 地域によって盆踊り 盆踊り | https://x.com/yhmm1222/status/2082006501762470199 |
+| low | new_event_candidate | new | event | イベント候補「地域に根付いていた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域に根付いていた盆踊り | 地域に根付いていた盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/shino_otokonoko/status/2087378721653260564 |
 | low | new_event_candidate | new | event | イベント候補「地域のあちこちで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域のあちこちで盆踊り | 地域のあちこちで盆踊り 盆踊り | https://x.com/machiview/status/2078359159427518888 |
 | low | new_event_candidate | new | event | イベント候補「地域のおじいちゃんおばあちゃんが踊ってる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域のおじいちゃんおばあちゃんが踊ってる盆踊り | 地域のおじいちゃんおばあちゃんが踊ってる盆踊り 盆踊り | https://x.com/motmot_5da/status/2078381159650939302 |
 | low | new_event_candidate | new | event | イベント候補「地域のお祭りと言う名のカラオケ大会だか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域のお祭りと言う名のカラオケ大会だか盆踊り | 地域のお祭りと言う名のカラオケ大会だか盆踊り 盆踊り | https://x.com/Ckulo2/status/2083848079850303541 |
@@ -10734,8 +11085,7 @@
 | low | new_event_candidate | new | event | イベント候補「地域の小学校で行われる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の小学校で行われる盆踊り | 地域の小学校で行われる盆踊り 盆踊り | https://x.com/tugumi_omoikata/status/2064308849709121920 |
 | low | new_event_candidate | new | event | イベント候補「地域の方が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の方が盆踊り | 地域の方が盆踊り 盆踊り | https://x.com/maki_nami18/status/2086329352569184607 |
 | low | new_event_candidate | new | event | イベント候補「地域の皆様が楽しそうに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の皆様が楽しそうに盆踊り | 地域の皆様が楽しそうに盆踊り 盆踊り | https://x.com/suzuki_hideshi/status/2083764537136934972 |
-| low | new_event_candidate | new | event | イベント候補「地域の皆様と交流」碑文谷公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の皆様と交流」碑文谷公園盆踊り | 地域の皆様と交流」碑文谷公園盆踊り 盆踊り | https://x.com/y_hiroshi_1209/status/2081297278929871304 |
-| low | new_event_candidate | new | event | イベント候補「地域の皆様と交流」碑文谷公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の皆様と交流」碑文谷公園盆踊り | 地域の皆様と交流」碑文谷公園盆踊り 盆踊り | https://x.com/y_hiroshi_1209/status/2081296539662884881 |
+| low | new_event_candidate | new | event | イベント候補「地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の盆踊り | 地域の盆踊り 盆踊り | https://x.com/girl_honne_labo/status/2087397939488718931 |
 | low | new_event_candidate | new | event | イベント候補「地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の盆踊り | 地域の盆踊り 盆踊り | https://x.com/azxx2828/status/2086727509207548014 |
 | low | new_event_candidate | new | event | イベント候補「地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の盆踊り | 地域の盆踊り 盆踊り; 港北音頭 盆踊り; 鶴見音頭 盆踊り | https://x.com/sima_hasi/status/2086691132076110088 |
 | low | new_event_candidate | new | event | イベント候補「地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域の盆踊り | 地域の盆踊り 盆踊り | https://x.com/REIRA17903208/status/2086663766381613158 |
@@ -10780,6 +11130,7 @@
 | low | new_event_candidate | new | event | イベント候補「地域交流の一環で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域交流の一環で盆踊り | 地域交流の一環で盆踊り 盆踊り | https://x.com/roanday0/status/2083134753839186271 |
 | low | new_event_candidate | new | event | イベント候補「地域住民らは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域住民らは盆踊り | 地域住民らは盆踊り 盆踊り | https://x.com/chibanippo/status/2084202623935091024 |
 | low | new_event_candidate | new | event | イベント候補「地域全体か 去年の記憶が無いのだが 今年は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域全体か 去年の記憶が無いのだが 今年は盆踊り | 地域全体か 去年の記憶が無いのだが 今年は盆踊り 盆踊り | https://x.com/1528char/status/2086802130359521357 |
+| low | new_event_candidate | new | event | イベント候補「地域各所で盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域各所で盆踊りや夏祭り | 地域各所で盆踊りや夏祭り 盆踊り | https://x.com/takagi_hirohisa/status/2087384929005138180 |
 | low | new_event_candidate | new | event | イベント候補「地域型盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域型盆踊り | 地域型盆踊り 盆踊り | https://x.com/7376GgBw1gwxUM3/status/2082725377668252070 |
 | low | new_event_candidate | new | event | イベント候補「地域盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域盆踊り, 都市では本質的盆踊り, かといって学術的エリアの盆踊り人は盆踊り | 地域盆踊り 盆踊り; 都市では本質的盆踊り 盆踊り | https://x.com/LifeKanako/status/2082711221619532281 |
 | low | new_event_candidate | new | event | イベント候補「地域盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 地域盆踊り | 地域盆踊り 盆踊り | https://x.com/aoi_153cm/status/2077269930966413555 |
@@ -10808,9 +11159,9 @@
 | low | new_event_candidate | new | event | イベント候補「堺市 鎌倉時代から続く伝統行事「堺大魚夜市」内での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 堺市 鎌倉時代から続く伝統行事「堺大魚夜市」内での盆踊り, 金岡神社を中心に各町会の大太鼓が練り歩くダイナミックな「金岡町盆踊り, 金岡町盆踊り大会 | 堺市 鎌倉時代から続く伝統行事「堺大魚夜市」内での盆踊り 盆踊り; 金岡神社を中心に各町会の大太鼓が練り歩くダイナミックな「金岡町盆踊り 盆踊り | https://x.com/ganchan_chan/status/2079553061648031806 |
 | low | new_event_candidate | new | event | イベント候補「塩鯖 お好み焼き 今日出会った 年中盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 塩鯖 お好み焼き 今日出会った 年中盆踊り | 塩鯖 お好み焼き 今日出会った 年中盆踊り 盆踊り | https://x.com/kouri_en/status/2079779429375733999 |
 | low | new_event_candidate | new | event | イベント候補「境内には盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 境内には盆踊り | 境内には盆踊り 盆踊り | https://x.com/moonflower321/status/2086397722957930836 |
+| low | new_event_candidate | new | event | イベント候補「墓参りやら実家帰省やら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墓参りやら実家帰省やら盆踊り | 墓参りやら実家帰省やら盆踊り 盆踊り | https://x.com/chio_chio_horse/status/2087433027656065301 |
 | low | new_event_candidate | new | event | イベント候補「墓参りプール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墓参りプール盆踊り | 墓参りプール盆踊り 盆踊り | https://x.com/aquao5o5/status/2085631826769629693 |
 | low | new_event_candidate | new | event | イベント候補「増上寺で地蔵尊奉賛盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 増上寺で地蔵尊奉賛盆踊り | 増上寺で地蔵尊奉賛盆踊り 盆踊り; 3年前はペア踊り 盆踊り | https://x.com/M125M8qgyhWueHS/status/2081212782876426637 |
-| low | new_event_candidate | new | event | イベント候補「墨田区で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墨田区で盆踊り | 墨田区で盆踊り 盆踊り | https://x.com/ghggf453541891/status/2079136953237483665 |
 | low | new_event_candidate | new | event | イベント候補「墨田区で踊らせてもらい23区盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墨田区で踊らせてもらい23区盆踊り | 墨田区で踊らせてもらい23区盆踊り 盆踊り; やスカイツリーおどり 盆踊り | https://x.com/yumibe/status/2083549801577427419 |
 | low | new_event_candidate | new | event | イベント候補「墨田区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墨田区の盆踊り | 墨田区の盆踊り 盆踊り | https://x.com/NCY2525/status/2082819340378988723 |
 | low | new_event_candidate | new | event | イベント候補「墨田区内で同時開催されている町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 墨田区内で同時開催されている町会の盆踊り, 河内音頭 | 墨田区内で同時開催されている町会の盆踊り 盆踊り; 河内音頭 盆踊り; 何ともイイ 盆踊り; 河内音頭 盆踊り | https://x.com/sanullim/status/2082263861529637296 |
@@ -10857,6 +11208,7 @@
 | low | new_event_candidate | new | event | イベント候補「夏の音 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏の音 盆踊り | 夏の音 盆踊り 盆踊り | https://x.com/AyumiKudo2/status/2085282758407164164 |
 | low | new_event_candidate | new | event | イベント候補「夏の風物詩 花火や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏の風物詩 花火や盆踊り | 夏の風物詩 花火や盆踊り 盆踊り | https://x.com/HIMAWARI202103/status/2085960347979276630 |
 | low | new_event_candidate | new | event | イベント候補「夏の風物詩「善光寺お盆縁日」 今年で17回目 境内には盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏の風物詩「善光寺お盆縁日」 今年で17回目 境内には盆踊り | 夏の風物詩「善光寺お盆縁日」 今年で17回目 境内には盆踊り 盆踊り | https://x.com/bonDbonT/status/2086909138207138271 |
+| low | new_event_candidate | new | event | イベント候補「夏の風物詩「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏の風物詩「盆踊り | 夏の風物詩「盆踊り 盆踊り | https://x.com/bremen_ohshima/status/2087421544779968672 |
 | low | new_event_candidate | new | event | イベント候補「夏の風物詩ー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏の風物詩ー盆踊り | 夏の風物詩ー盆踊り 盆踊り | https://x.com/mewn0212/status/2079043825448984633 |
 | low | new_event_candidate | new | event | イベント候補「夏は 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏は 盆踊り | 夏は 盆踊り 盆踊り | https://x.com/Yuapan_info/status/2084843593383166264 |
 | low | new_event_candidate | new | event | イベント候補「夏はほぼ毎日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏はほぼ毎日盆踊り | 夏はほぼ毎日盆踊り 盆踊り | https://x.com/Umomo196/status/2070783885336805581 |
@@ -10881,9 +11233,6 @@
 | low | new_event_candidate | new | event | イベント候補「夏まつり屋内開催で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏まつり屋内開催で盆踊り | 夏まつり屋内開催で盆踊り 盆踊り | https://x.com/mamimami298/status/2081264799221223494 |
 | low | new_event_candidate | new | event | イベント候補「夏らしくて楽しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏らしくて楽しい盆踊り | 夏らしくて楽しい盆踊り 盆踊り | https://x.com/a9VAAcUlC4kkoXj/status/2084859176258621678 |
 | low | new_event_candidate | new | event | イベント候補「夏を盛り上げる各地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏を盛り上げる各地区の盆踊り | 夏を盛り上げる各地区の盆踊り 盆踊り | https://x.com/izuoshimalife/status/2065388895567835632 |
-| low | new_event_candidate | new | event | イベント候補「夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏フェス盆踊り | 夏フェス盆踊り 盆踊り | https://x.com/Ma_umojh/status/2077269864708968727 |
-| low | new_event_candidate | new | event | イベント候補「夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏フェス盆踊り | 夏フェス盆踊り 盆踊り | https://x.com/dreadyarou/status/2076214268383662433 |
-| low | new_event_candidate | new | event | イベント候補「夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏フェス盆踊り | 夏フェス盆踊り 盆踊り | https://x.com/dreadyarou/status/2075850262019981316 |
 | low | new_event_candidate | new | event | イベント候補「夏休みだからなのか学校で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏休みだからなのか学校で盆踊り | 夏休みだからなのか学校で盆踊り 盆踊り | https://x.com/2No01117945/status/2083832342205133091 |
 | low | new_event_candidate | new | event | イベント候補「夏休みだし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏休みだし盆踊り | 夏休みだし盆踊り 盆踊り | https://x.com/kshimoyama/status/2085280519391150394 |
 | low | new_event_candidate | new | event | イベント候補「夏休みに入ると子供会でラジオ体操の後 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏休みに入ると子供会でラジオ体操の後 盆踊り | 夏休みに入ると子供会でラジオ体操の後 盆踊り 盆踊り | https://x.com/a_akiraworld/status/2080969824898056296 |
@@ -10896,11 +11245,13 @@
 | low | new_event_candidate | new | event | イベント候補「夏休み楽しく過ごすガチ勢なので都内の気になる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏休み楽しく過ごすガチ勢なので都内の気になる盆踊り | 夏休み楽しく過ごすガチ勢なので都内の気になる盆踊り 盆踊り | https://x.com/wanwan_ZENGIMAN/status/2086333608906870813 |
 | low | new_event_candidate | new | event | イベント候補「夏休み盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏休み盆踊り | 夏休み盆踊り 盆踊り | https://x.com/eSm0eWsMO7sUK88/status/2081295600474083759 |
 | low | new_event_candidate | new | event | イベント候補「夏季のEDでは（4クール連続放送）SDキャラが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏季のEDでは（4クール連続放送）SDキャラが盆踊り, アラレちゃん音頭 | 夏季のEDでは（4クール連続放送）SDキャラが盆踊り 盆踊り; アラレちゃん音頭 盆踊り; アラレちゃん音頭 盆踊り | https://x.com/oshiroiyoriki/status/2066835573999108209 |
+| low | new_event_candidate | new | event | イベント候補「夏季休業と池田盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏季休業と池田盆踊り | 夏季休業と池田盆踊り 盆踊り | https://x.com/ajidokoro_haru/status/2087365606131851670 |
 | low | new_event_candidate | new | event | イベント候補「夏祭り(盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り(盆踊り | 夏祭り(盆踊り 盆踊り | https://x.com/toritori_chan00/status/2086331590972768364 |
 | low | new_event_candidate | new | event | イベント候補「夏祭り(盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り(盆踊り | 夏祭り(盆踊り 盆踊り | https://x.com/SEIGO981048/status/2086303746708115682 |
 | low | new_event_candidate | new | event | イベント候補「夏祭りが終わると盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りが終わると盆踊り | 夏祭りが終わると盆踊り 盆踊り | https://x.com/noh_zoh/status/2083471365315961287 |
 | low | new_event_candidate | new | event | イベント候補「夏祭りでは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りでは盆踊り | 夏祭りでは盆踊り 盆踊り | https://x.com/boiaauuhkmtntu/status/2069708852388643260 |
 | low | new_event_candidate | new | event | イベント候補「夏祭りでパシスタのかわいい子達と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りでパシスタのかわいい子達と盆踊り | 夏祭りでパシスタのかわいい子達と盆踊り 盆踊り | https://x.com/__si2mo/status/2081590206172717296 |
+| low | new_event_candidate | new | event | イベント候補「夏祭りで当たり前のように見る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りで当たり前のように見る盆踊り, ともとお盆はご先祖の霊を迎えて供養する行事で盆踊り, ただし最初から今のような盆踊り | 夏祭りで当たり前のように見る盆踊り 盆踊り; ともとお盆はご先祖の霊を迎えて供養する行事で盆踊り 盆踊り | https://x.com/sorakuma_blog/status/2087373965224468926 |
 | low | new_event_candidate | new | event | イベント候補「夏祭りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りで盆踊り | 夏祭りで盆踊り 盆踊り | https://x.com/oisiiohagi/status/2083095920108081434 |
 | low | new_event_candidate | new | event | イベント候補「夏祭りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りで盆踊り | 夏祭りで盆踊り 盆踊り | https://x.com/55ro_emi/status/2069453394671239496 |
 | low | new_event_candidate | new | event | イベント候補「夏祭りで着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭りで着て盆踊り | 夏祭りで着て盆踊り 盆踊り | https://x.com/KyoukaFlare/status/2069450057968123987 |
@@ -10938,9 +11289,11 @@
 | low | new_event_candidate | new | event | イベント候補「夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り盆踊り, 夏祭り盆踊り大会 | 夏祭り盆踊り 盆踊り; 夏祭り盆踊り大会 盆踊り | https://x.com/TOKYO_Shuto634/status/2078986626110513276 |
 | low | new_event_candidate | new | event | イベント候補「夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り盆踊り, 夏祭り盆踊り大会 | 夏祭り盆踊り 盆踊り; 夏祭り盆踊り大会 盆踊り | https://x.com/YsSeikotsuin/status/2078980554276700490 |
 | low | new_event_candidate | new | event | イベント候補「夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り盆踊り, 夏祭り盆踊り大会 | 夏祭り盆踊り 盆踊り; 夏祭り盆踊り大会 盆踊り | https://x.com/goguy_saitama/status/2078966253910118445 |
+| low | new_event_candidate | new | event | イベント候補「夏祭り等で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り等で盆踊り | 夏祭り等で盆踊り 盆踊り | https://x.com/gallery1970/status/2087432319460360638 |
 | low | new_event_candidate | new | event | イベント候補「夏祭り行けてないですね 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り行けてないですね 盆踊り | 夏祭り行けてないですね 盆踊り 盆踊り | https://x.com/KUROLOVE323/status/2081997873777131914 |
 | low | new_event_candidate | new | event | イベント候補「夏祭り（盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夏祭り（盆踊り | 夏祭り（盆踊り 盆踊り | https://x.com/xll_nyafu_llx/status/2078390385123213422 |
 | low | new_event_candidate | new | event | イベント候補「夕張の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夕張の盆踊り | 夕張の盆踊り 盆踊り | https://x.com/yukimi_fox/status/2087064708943958047 |
+| low | new_event_candidate | new | event | イベント候補「夕方から 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夕方から 盆踊り | 夕方から 盆踊り 盆踊り | https://x.com/Tosiniyan/status/2087301341039468800 |
 | low | new_event_candidate | new | event | イベント候補「夕方から109周辺で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夕方から109周辺で盆踊り | 夕方から109周辺で盆踊り 盆踊り | https://x.com/oimai/status/2084524412645327124 |
 | low | new_event_candidate | new | event | イベント候補「夕方からお祭りいって屋台も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夕方からお祭りいって屋台も盆踊り | 夕方からお祭りいって屋台も盆踊り 盆踊り | https://x.com/racco_2023/status/2075933770352591217 |
 | low | new_event_candidate | new | event | イベント候補「夕方からの地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夕方からの地域の盆踊り | 夕方からの地域の盆踊り 盆踊り | https://x.com/keijihaneda/status/2081344097995063546 |
@@ -11032,6 +11385,7 @@
 | low | new_event_candidate | new | event | イベント候補「夜は増上寺の盆踊りや芝浦まつり2日目の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は増上寺の盆踊りや芝浦まつり2日目の盆踊り | 夜は増上寺の盆踊りや芝浦まつり2日目の盆踊り 盆踊り | https://x.com/juntsuchiy/status/2081063166440878319 |
 | low | new_event_candidate | new | event | イベント候補「夜は御霊祭りの練習とお盆の時期は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は御霊祭りの練習とお盆の時期は盆踊り | 夜は御霊祭りの練習とお盆の時期は盆踊り 盆踊り | https://x.com/nika2_k2/status/2078400866282012977 |
 | low | new_event_candidate | new | event | イベント候補「夜は浴衣着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は浴衣着て盆踊り | 夜は浴衣着て盆踊り 盆踊り | https://x.com/taomyo/status/2075817469378527319 |
+| low | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り | https://x.com/soraemontd/status/2087437931510431806 |
 | low | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り | https://x.com/ojorupj/status/2086708488307458160 |
 | low | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り | https://x.com/sugoikusuri/status/2086333642385871052 |
 | low | new_event_candidate | new | event | イベント候補「夜は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜は盆踊り | 夜は盆踊り 盆踊り | https://x.com/Misuzu_Ohla/status/2084921402449408165 |
@@ -11059,6 +11413,7 @@
 | low | new_event_candidate | new | event | イベント候補「夜行性の生き物は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜行性の生き物は盆踊り | 夜行性の生き物は盆踊り 盆踊り | https://x.com/muge/status/2064360587929473359 |
 | low | new_event_candidate | new | event | イベント候補「夜通し踊り続ける盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夜通し踊り続ける盆踊り | 夜通し踊り続ける盆踊り 盆踊り | https://x.com/pudding_my_life/status/2069718186367549890 |
 | low | new_event_candidate | new | event | イベント候補「夢に出てくる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夢に出てくる盆踊り, 桑取谷の昔ながらの盆踊りを楽しむ「夢に出てくる盆踊り | 夢に出てくる盆踊り 盆踊り; 桑取谷の昔ながらの盆踊りを楽しむ「夢に出てくる盆踊り 盆踊り | https://x.com/joetsumassage/status/2084854021849022783 |
+| low | new_event_candidate | new | event | イベント候補「夢のハワイで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夢のハワイで盆踊り | 夢のハワイで盆踊り 盆踊り; 輪になって踊り 盆踊り | https://x.com/ho7714962/status/2087441279340965948 |
 | low | new_event_candidate | new | event | イベント候補「夢のハワイで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夢のハワイで盆踊り | 夢のハワイで盆踊り 盆踊り | https://x.com/GiveKan/status/2078758829177888995 |
 | low | new_event_candidate | new | event | イベント候補「夢のハワイで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夢のハワイで盆踊り | 夢のハワイで盆踊り 盆踊り | https://x.com/VxkHRY3rIQ2940/status/2065465627004010768 |
 | low | new_event_candidate | new | event | イベント候補「夢のハワイで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 夢のハワイで盆踊り | 夢のハワイで盆踊り 盆踊り | https://x.com/VxkHRY3rIQ2940/status/2065464960495607850 |
@@ -11092,10 +11447,12 @@
 | low | new_event_candidate | new | event | イベント候補「大典太さんが浴衣の合わせを逆にしてしまったまま盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大典太さんが浴衣の合わせを逆にしてしまったまま盆踊り | 大典太さんが浴衣の合わせを逆にしてしまったまま盆踊り 盆踊り | https://x.com/Greatest5_Sword/status/2081590400289214712 |
 | low | new_event_candidate | new | event | イベント候補「大和町山幡神社の大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大和町山幡神社の大盆踊り | 大和町山幡神社の大盆踊り 盆踊り | https://x.com/petsounds99/status/2076198511113285851 |
 | low | new_event_candidate | new | event | イベント候補「大学2年生にもなって家族もなく地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大学2年生にもなって家族もなく地域の盆踊り | 大学2年生にもなって家族もなく地域の盆踊り 盆踊り | https://x.com/stkt_K_To_K/status/2087070106832802224 |
+| low | new_event_candidate | new | event | イベント候補「大学の後輩たちとも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大学の後輩たちとも盆踊り | 大学の後輩たちとも盆踊り 盆踊り | https://x.com/shizukifujisawa/status/2087394891299209448 |
 | low | new_event_candidate | new | event | イベント候補「大学の駐車場でやってるBONJOVI盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大学の駐車場でやってるBONJOVI盆踊り | 大学の駐車場でやってるBONJOVI盆踊り 盆踊り | https://x.com/koyatsuji_zyayo/status/2063215699657654551 |
 | low | new_event_candidate | new | event | イベント候補「大学盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大学盆踊り | 大学盆踊り 盆踊り | https://x.com/Ocha_bon/status/2076109801533374975 |
 | low | new_event_candidate | new | event | イベント候補「大宮社青年会さんと一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大宮社青年会さんと一緒に盆踊り | 大宮社青年会さんと一緒に盆踊り 盆踊り | https://x.com/minami_online/status/2077694733082624376 |
 | low | new_event_candidate | new | event | イベント候補「大屋根リングで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大屋根リングで盆踊り | 大屋根リングで盆踊り 盆踊り | https://x.com/sameko0121/status/2082093770028531764 |
+| low | new_event_candidate | new | event | イベント候補「大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大屋根リング盆踊り | 大屋根リング盆踊り 盆踊り | https://x.com/oyegqYIza6pdUrV/status/2087362845654819173 |
 | low | new_event_candidate | new | event | イベント候補「大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大屋根リング盆踊り | 大屋根リング盆踊り 盆踊り | https://x.com/kaoru884/status/2082117627049328985 |
 | low | new_event_candidate | new | event | イベント候補「大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大屋根リング盆踊り | 大屋根リング盆踊り 盆踊り | https://x.com/k_expo25/status/2081946440100913299 |
 | low | new_event_candidate | new | event | イベント候補「大屋根リング盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大屋根リング盆踊り, 大屋根リング盆踊り～大阪から世界をつなぐ～ | 大屋根リング盆踊り 盆踊り; 大屋根リング盆踊り～大阪から世界をつなぐ～ 盆踊り | https://x.com/EnjoyExpo2025/status/2081899699590889728 |
@@ -11114,11 +11471,13 @@
 | low | new_event_candidate | new | event | イベント候補「大泉の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大泉の盆踊り | 大泉の盆踊り 盆踊り | https://x.com/motosan17007242/status/2085969662970564697 |
 | low | new_event_candidate | new | event | イベント候補「大田区の幼稚園の夏祭りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大田区の幼稚園の夏祭りで盆踊り | 大田区の幼稚園の夏祭りで盆踊り 盆踊り; はなんとな～く絡んだことはあるものの 盆踊り | https://x.com/harebon_odori/status/2082009018235813907 |
 | low | new_event_candidate | new | event | イベント候補「大田区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大田区の盆踊り | 大田区の盆踊り 盆踊り | https://x.com/rindayo621/status/2085248894058082635 |
+| low | new_event_candidate | new | event | イベント候補「大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大盆踊り | 大盆踊り 盆踊り | https://x.com/ArB8rr/status/2087364711222546598 |
 | low | new_event_candidate | new | event | イベント候補「大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大盆踊り | 大盆踊り 盆踊り | https://x.com/kita_cos_/status/2085623384969478534 |
 | low | new_event_candidate | new | event | イベント候補「大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大盆踊り, 着て盆踊り | 大盆踊り 盆踊り; 着て盆踊り 盆踊り | https://x.com/hg7y228junchiha/status/2079115294765879753 |
 | low | new_event_candidate | new | event | イベント候補「大盛り上がりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大盛り上がりの盆踊り | 大盛り上がりの盆踊り 盆踊り | https://x.com/civet2314/status/2085981638350250313 |
 | low | new_event_candidate | new | event | イベント候補「大盛況のおやじ夏祭と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大盛況のおやじ夏祭と盆踊り | 大盛況のおやじ夏祭と盆踊り 盆踊り | https://x.com/minowacho/status/2086593087741251628 |
 | low | new_event_candidate | new | event | イベント候補「大真面目に「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大真面目に「盆踊り, 盆踊り開催します！！みんな楽しんで下さいね | 大真面目に「盆踊り 盆踊り; 盆踊り開催します！！みんな楽しんで下さいね 盆踊り | https://x.com/anqoo/status/2070405735977271376 |
+| low | new_event_candidate | new | event | イベント候補「大磯・二宮町内で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大磯・二宮町内で盆踊り | 大磯・二宮町内で盆踊り 盆踊り | https://x.com/morihiroaki1107/status/2087385335525253629 |
 | low | new_event_candidate | new | event | イベント候補「大磯町内・二宮町内各地で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大磯町内・二宮町内各地で盆踊り | 大磯町内・二宮町内各地で盆踊り 盆踊り | https://x.com/morihiroaki1107/status/2086618880957616187 |
 | low | new_event_candidate | new | event | イベント候補「大規模な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大規模な盆踊り | 大規模な盆踊り 盆踊り | https://x.com/prometheus1966/status/2038006961585938733 |
 | low | new_event_candidate | new | event | イベント候補「大谷本郷サロンは「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 大谷本郷サロンは「盆踊り, 盆踊り練習会 | 大谷本郷サロンは「盆踊り 盆踊り; 盆踊り練習会 盆踊り | https://x.com/shinohara_235/status/2078760372476256608 |
@@ -11299,17 +11658,20 @@
 | low | new_event_candidate | new | event | イベント候補「子供の頃は近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供の頃は近所の盆踊り | 子供の頃は近所の盆踊り 盆踊り | https://x.com/Nakachantowa1/status/2082103647505355153 |
 | low | new_event_candidate | new | event | イベント候補「子供の頃盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供の頃盆踊り, 親が日本舞踊やってた影響もあって今でも盆踊り | 子供の頃盆踊り 盆踊り; 親が日本舞踊やってた影響もあって今でも盆踊り 盆踊り | https://x.com/sora_a020ra/status/2086033778171068456 |
 | low | new_event_candidate | new | event | イベント候補「子供は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供は盆踊り | 子供は盆踊り 盆踊り | https://x.com/ninja_yasuke/status/2066534208403919109 |
+| low | new_event_candidate | new | event | イベント候補「子供会とか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供会とか盆踊り | 子供会とか盆踊り 盆踊り | https://x.com/MtLmUH3LSGwxNSS/status/2087103329922920874 |
 | low | new_event_candidate | new | event | イベント候補「子供会の役員やった時 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供会の役員やった時 盆踊り | 子供会の役員やった時 盆踊り 盆踊り | https://x.com/dsOMXA6ujPY7PGX/status/2084894988425740423 |
 | low | new_event_candidate | new | event | イベント候補「子供会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供会の盆踊り | 子供会の盆踊り 盆踊り | https://x.com/Dar50508787/status/2086036992006164785 |
 | low | new_event_candidate | new | event | イベント候補「子供会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供会の盆踊り | 子供会の盆踊り 盆踊り | https://x.com/eri323192632521/status/2080805397175415000 |
 | low | new_event_candidate | new | event | イベント候補「子供会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供会の盆踊り | 子供会の盆踊り 盆踊り; 先生はやはり炭鉱節 盆踊り | https://x.com/WYIOTcmSwXT4dtl/status/2064301300301611435 |
 | low | new_event_candidate | new | event | イベント候補「子供会（町会）の子供たちが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供会（町会）の子供たちが盆踊り | 子供会（町会）の子供たちが盆踊り 盆踊り; 数が少なくなり 盆踊り | https://x.com/engeimajin/status/2083542383623557512 |
 | low | new_event_candidate | new | event | イベント候補「子供参加者向けに半分くらいはアニメの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供参加者向けに半分くらいはアニメの盆踊り | 子供参加者向けに半分くらいはアニメの盆踊り 盆踊り | https://x.com/ssblab/status/2086702309325885798 |
+| low | new_event_candidate | new | event | イベント候補「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆おどり | 子供盆おどり 盆踊り | https://x.com/Seian_2nd_/status/2087445837882470404 |
 | low | new_event_candidate | new | event | イベント候補「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆おどり, 子供盆おどり唄 | 子供盆おどり 盆踊り; 子供盆おどり唄 盆踊り | https://x.com/kamillekoji007/status/2087070087513850038 |
 | low | new_event_candidate | new | event | イベント候補「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆おどり, 持田ヨシ子 (子供盆おどり | 子供盆おどり 盆踊り; 持田ヨシ子 (子供盆おどり 盆踊り | https://x.com/ieyasukoshigaya/status/2087055120576188900 |
 | low | new_event_candidate | new | event | イベント候補「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆おどり, って盆踊り | 子供盆おどり 盆踊り; って盆踊り 盆踊り | https://x.com/chomu_cruise/status/2082709828410220547 |
 | low | new_event_candidate | new | event | イベント候補「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆おどり, 大人だけど子供盆おどり, むしろ大人の盆踊り | 子供盆おどり 盆踊り; 大人だけど子供盆おどり 盆踊り | https://x.com/Love_T_2014/status/2067984764884451822 |
 | low | new_event_candidate | new | event | イベント候補「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆おどり | 子供盆おどり 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/cheerupf1_mH/status/2066806615693791702 |
+| low | new_event_candidate | new | event | イベント候補「子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆踊り | 子供盆踊り 盆踊り | https://x.com/LaPeace88/status/2087437735154040843 |
 | low | new_event_candidate | new | event | イベント候補「子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆踊り | 子供盆踊り 盆踊り | https://x.com/kemedine/status/2086732607547711665 |
 | low | new_event_candidate | new | event | イベント候補「子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆踊り | 子供盆踊り 盆踊り | https://x.com/hH47hMJZmq81743/status/2086347111420002577 |
 | low | new_event_candidate | new | event | イベント候補「子供盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供盆踊り | 子供盆踊り 盆踊り | https://x.com/dust_surrealism/status/2085988029270003988 |
@@ -11327,6 +11689,7 @@
 | low | new_event_candidate | new | event | イベント候補「子供相手だと些細なことで怒られても大人だと全裸で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供相手だと些細なことで怒られても大人だと全裸で盆踊り | 子供相手だと些細なことで怒られても大人だと全裸で盆踊り 盆踊り | https://x.com/brokenstarbow/status/2067988876854227405 |
 | low | new_event_candidate | new | event | イベント候補「子供達がポカンとしてて『最近の子はダンスは踊れても盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供達がポカンとしてて『最近の子はダンスは踊れても盆踊り | 子供達がポカンとしてて『最近の子はダンスは踊れても盆踊り 盆踊り | https://x.com/cesap4/status/2069718685586247736 |
 | low | new_event_candidate | new | event | イベント候補「子供達が公園で走り回り 笑い声話し声当たり前 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供達が公園で走り回り 笑い声話し声当たり前 盆踊り | 子供達が公園で走り回り 笑い声話し声当たり前 盆踊り 盆踊り | https://x.com/kaoru14499/status/2061976352170119388 |
+| low | new_event_candidate | new | event | イベント候補「子供達とプライベートでスーツを着ないで近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供達とプライベートでスーツを着ないで近所の盆踊り | 子供達とプライベートでスーツを着ないで近所の盆踊り 盆踊り | https://x.com/NorihiroUehata/status/2087381373187473810 |
 | low | new_event_candidate | new | event | イベント候補「子供達と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供達と盆踊り | 子供達と盆踊り 盆踊り | https://x.com/LALALILI0101/status/2085273965065568510 |
 | low | new_event_candidate | new | event | イベント候補「子供達の小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供達の小学校の盆踊り | 子供達の小学校の盆踊り 盆踊り | https://x.com/shotapan0216/status/2085566726457143744 |
 | low | new_event_candidate | new | event | イベント候補「子供頃に地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 子供頃に地元の盆踊り, 昭和のアニメなら当たり前のように夏は盆踊り | 子供頃に地元の盆踊り 盆踊り; 昭和のアニメなら当たり前のように夏は盆踊り 盆踊り | https://x.com/TAKE715/status/2086596262355439700 |
@@ -11356,6 +11719,7 @@
 | low | new_event_candidate | new | event | イベント候補「実は東京に住んでいても商店街とか町内会に入ってないと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実は東京に住んでいても商店街とか町内会に入ってないと盆踊り | 実は東京に住んでいても商店街とか町内会に入ってないと盆踊り 盆踊り | https://x.com/ironnamikata/status/2078360126067818935 |
 | low | new_event_candidate | new | event | イベント候補「実家から急遽盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実家から急遽盆踊り | 実家から急遽盆踊り 盆踊り | https://x.com/adessr24k/status/2082276782573854805 |
 | low | new_event_candidate | new | event | イベント候補「実家が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実家が盆踊り | 実家が盆踊り 盆踊り; 真向かいにあります 盆踊り | https://x.com/xVhmFzY93z62765/status/2085973221778874709 |
+| low | new_event_candidate | new | event | イベント候補「実家に帰省して彼女と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実家に帰省して彼女と盆踊り | 実家に帰省して彼女と盆踊り 盆踊り | https://x.com/Benesse_KS/status/2087436648703504841 |
 | low | new_event_candidate | new | event | イベント候補「実家の両親の様子見ついでに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実家の両親の様子見ついでに盆踊り | 実家の両親の様子見ついでに盆踊り 盆踊り | https://x.com/pink_daiamond_/status/2062407959066681384 |
 | low | new_event_candidate | new | event | イベント候補「実家の墓まいりから こちらのお寺では盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実家の墓まいりから こちらのお寺では盆踊り | 実家の墓まいりから こちらのお寺では盆踊り 盆踊り | https://x.com/Atsuko_nonohana/status/2086700943803076967 |
 | low | new_event_candidate | new | event | イベント候補「実家の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 実家の盆踊り | 実家の盆踊り 盆踊り | https://x.com/MKSQYv433aELTF0/status/2085953123710124421 |
@@ -11370,7 +11734,9 @@
 | low | new_event_candidate | new | event | イベント候補「室内開催の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 室内開催の盆踊り | 室内開催の盆踊り 盆踊り | https://x.com/nyoritael/status/2078991042532257994 |
 | low | new_event_candidate | new | event | イベント候補「宮の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮の盆踊り | 宮の盆踊り 盆踊り | https://x.com/tokoyotokei/status/2079029583802974274 |
 | low | new_event_candidate | new | event | イベント候補「宮前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮前盆踊り | 宮前盆踊り 盆踊り | https://x.com/YukaItazu/status/2063610819141914640 |
+| low | new_event_candidate | new | event | イベント候補「宮城県内や周辺県の隠れた 西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮城県内や周辺県の隠れた 西馬音内盆踊り | 宮城県内や周辺県の隠れた 西馬音内盆踊り 盆踊り | https://x.com/Muracchi2323/status/2087352270786842645 |
 | low | new_event_candidate | new | event | イベント候補「宮山・石瀬区の宮石の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮山・石瀬区の宮石の盆踊り, 樽水区の盆踊り | 宮山・石瀬区の宮石の盆踊り 盆踊り; 樽水区の盆踊り 盆踊り | https://x.com/s_sigeki/status/2086420305665470670 |
+| low | new_event_candidate | new | event | イベント候補「宮崎小学校盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮崎小学校盆踊り | 宮崎小学校盆踊り 盆踊り | https://x.com/bmvyttAS5yjbcEn/status/2087339296487604337 |
 | low | new_event_candidate | new | event | イベント候補「宮崎県国富町の 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮崎県国富町の 盆踊り | 宮崎県国富町の 盆踊り 盆踊り; 颯ちゃんの国富音頭 盆踊り | https://x.com/sumire_flower08/status/2085205043721216082 |
 | low | new_event_candidate | new | event | イベント候補「宮本町町会と浜川戸町内会の合同盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮本町町会と浜川戸町内会の合同盆踊り, そして春日部サンバや長生きサンバ等も盆踊り | 宮本町町会と浜川戸町内会の合同盆踊り 盆踊り; そして春日部サンバや長生きサンバ等も盆踊り 盆踊り; 炭坑節 盆踊り; 東京音頭 盆踊り | https://x.com/abemasakazu1/status/2086842689568584047 |
 | low | new_event_candidate | new | event | イベント候補「宮津へ 京都・宮津の夏祭りが岐路 運営費をCF 個人の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 宮津へ 京都・宮津の夏祭りが岐路 運営費をCF 個人の盆踊り | 宮津へ 京都・宮津の夏祭りが岐路 運営費をCF 個人の盆踊り 盆踊り | https://x.com/2896fumiko/status/2069926348525814076 |
@@ -11405,6 +11771,12 @@
 | low | new_event_candidate | new | event | イベント候補「寝屋盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝屋盆踊り | 寝屋盆踊り 盆踊り | https://x.com/2TTI1Y6coODuvBJ/status/2083825972067828085 |
 | low | new_event_candidate | new | event | イベント候補「寝屋盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝屋盆踊り | 寝屋盆踊り 盆踊り | https://x.com/ZMEw7O74tAJuWev/status/2083779653534388334 |
 | low | new_event_candidate | new | event | イベント候補「寝転んでタオルなし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転んでタオルなし盆踊り | 寝転んでタオルなし盆踊り 盆踊り; 押さえといてよかった🥰 盆踊り | https://x.com/rin_sauna/status/2067882846237450513 |
+| low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/amauiui/status/2087382487198830958 |
+| low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/yuactvr/status/2087363762038985208 |
+| low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/lIlT_VRC/status/2087344251936080029 |
+| low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/lIlT_VRC/status/2087343927452168498 |
+| low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/chiiusagi256/status/2087330255501722016 |
+| low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/behoimi_vrc/status/2087324433392513373 |
 | low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/_kanikama/status/2087064235188920558 |
 | low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り; 遊びに行ってました！すごくきれいだった 盆踊り | https://x.com/kikutsukimomiji/status/2087049413512552855 |
 | low | new_event_candidate | new | event | イベント候補「寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寝転ん盆踊り | 寝転ん盆踊り 盆踊り | https://x.com/hakobekobe/status/2087048990777053256 |
@@ -11546,6 +11918,7 @@
 | low | new_event_candidate | new | event | イベント候補「寿オタクやったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 寿オタクやったら盆踊り | 寿オタクやったら盆踊り 盆踊り | https://x.com/4I7ch/status/2069077326349144185 |
 | low | new_event_candidate | new | event | イベント候補「将来川崎区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 将来川崎区の盆踊り | 将来川崎区の盆踊り 盆踊り | https://x.com/SSqq47356585/status/2067985830283759649 |
 | low | new_event_candidate | new | event | イベント候補「小さい町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小さい町内会の盆踊り | 小さい町内会の盆踊り 盆踊り | https://x.com/akoj6z/status/2081025915283448000 |
+| low | new_event_candidate | new | event | イベント候補「小さな町の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小さな町の盆踊り | 小さな町の盆踊り 盆踊り | https://x.com/oyakatachabo/status/2087426030386721121 |
 | low | new_event_candidate | new | event | イベント候補「小さな町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小さな町会の盆踊り | 小さな町会の盆踊り 盆踊り | https://x.com/Nyudo_Seigan/status/2084972258867740730 |
 | low | new_event_candidate | new | event | イベント候補「小さな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小さな盆踊り | 小さな盆踊り 盆踊り | https://x.com/pwsmi474nT56357/status/2086303988283293767 |
 | low | new_event_candidate | new | event | イベント候補「小ネタ】 アフターの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小ネタ】 アフターの盆踊り | 小ネタ】 アフターの盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/konoha_252/status/2077591715121344783 |
@@ -11575,6 +11948,7 @@
 | low | new_event_candidate | new | event | イベント候補「小石川の傳通院 橋幸夫新盆供養盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小石川の傳通院 橋幸夫新盆供養盆踊り | 小石川の傳通院 橋幸夫新盆供養盆踊り 盆踊り | https://x.com/mu4324/status/2080986457200828620 |
 | low | new_event_candidate | new | event | イベント候補「小足立八幡の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小足立八幡の盆踊り | 小足立八幡の盆踊り 盆踊り | https://x.com/mint_koma_miya/status/2085662740941775268 |
 | low | new_event_candidate | new | event | イベント候補「小野川温泉「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 小野川温泉「盆踊り | 小野川温泉「盆踊り 盆踊り | https://x.com/hgsn_fishing/status/2079135027145871412 |
+| low | new_event_candidate | new | event | イベント候補「少しぎこち無い盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 少しぎこち無い盆踊り | 少しぎこち無い盆踊り 盆踊り | https://x.com/jimjim85562/status/2087434060926947356 |
 | low | new_event_candidate | new | event | イベント候補「少しだけ築地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 少しだけ築地の盆踊り | 少しだけ築地の盆踊り 盆踊り | https://x.com/kakuresaitama/status/2083324960932843957 |
 | low | new_event_candidate | new | event | イベント候補「少しテンポ早めのおしゃれ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 少しテンポ早めのおしゃれ盆踊り | 少しテンポ早めのおしゃれ盆踊り 盆踊り | https://x.com/hanna_mogan/status/2066926576080662669 |
 | low | new_event_candidate | new | event | イベント候補「少し早い盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 少し早い盆踊り | 少し早い盆踊り 盆踊り | https://x.com/GunValley/status/2066559701685543249 |
@@ -11620,6 +11994,7 @@
 | low | new_event_candidate | new | event | イベント候補「屋台目的の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 屋台目的の盆踊り | 屋台目的の盆踊り 盆踊り | https://x.com/Yk5cVb/status/2062952590527299864 |
 | low | new_event_candidate | new | event | イベント候補「屋台飯と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 屋台飯と盆踊り | 屋台飯と盆踊り 盆踊り | https://x.com/nono_same/status/2084562972060606504 |
 | low | new_event_candidate | new | event | イベント候補「屋外中庭広場） ・5日(日)『盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 屋外中庭広場） ・5日(日)『盆踊り | 屋外中庭広場） ・5日(日)『盆踊り 盆踊り; 屋外中庭広場 盆踊り | https://x.com/highway_mapple/status/2072923397278126286 |
+| low | new_event_candidate | new | event | イベント候補「山の日」の締めくくりは山国で花火と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山の日」の締めくくりは山国で花火と盆踊り, 山国音頭, 丹波音頭 | 山の日」の締めくくりは山国で花火と盆踊り 盆踊り; 山国音頭 盆踊り; 山国音頭 盆踊り; 丹波音頭 盆踊り | https://x.com/akikoukyo/status/2087364020554854603 |
 | low | new_event_candidate | new | event | イベント候補「山代八咫ちゃんうちわで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山代八咫ちゃんうちわで盆踊り | 山代八咫ちゃんうちわで盆踊り 盆踊り; 炭坑節 盆踊り; 山代音頭 盆踊り | https://x.com/bonDbonT/status/2062933260288897465 |
 | low | new_event_candidate | new | event | イベント候補「山奥にある集落の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山奥にある集落の盆踊り | 山奥にある集落の盆踊り 盆踊り | https://x.com/sakurazaka_hero/status/2078033613854318643 |
 | low | new_event_candidate | new | event | イベント候補「山奥の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山奥の盆踊り, 地域の方の演奏と歌で踊る盆踊り | 山奥の盆踊り 盆踊り; 地域の方の演奏と歌で踊る盆踊り 盆踊り | https://x.com/2896fumiko/status/2077382034184675681 |
@@ -11634,6 +12009,7 @@
 | low | new_event_candidate | new | event | イベント候補「山王音頭と民謡大会」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山王音頭と民謡大会 | 山王音頭と民謡大会 盆踊り; 山王音頭 盆踊り; 東京踊り 盆踊り | https://x.com/masakiimpulse/status/2066739697578279232 |
 | low | new_event_candidate | new | event | イベント候補「山町区さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山町区さんの盆踊り, 盆踊り練習会 | 山町区さんの盆踊り 盆踊り; 盆踊り練習会 盆踊り | https://x.com/tanakatakeshi/status/2081726678301368436 |
 | low | new_event_candidate | new | event | イベント候補「山車や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山車や盆踊り | 山車や盆踊り 盆踊り | https://x.com/trynext/status/2078013656563068955 |
+| low | new_event_candidate | new | event | イベント候補「山辺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 山辺の盆踊り | 山辺の盆踊り 盆踊り | https://x.com/NIGHT71T/status/2087102863705264418 |
 | low | new_event_candidate | new | event | イベント候補「岐阜DE盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岐阜DE盆踊り | 岐阜DE盆踊り 盆踊り; 郡上おどり 盆踊り | https://x.com/kuma_jiro99/status/2086682935063613927 |
 | low | new_event_candidate | new | event | イベント候補「岐阜と名古屋ではダンシングヒーローが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岐阜と名古屋ではダンシングヒーローが盆踊り | 岐阜と名古屋ではダンシングヒーローが盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/_yoshi_muu_/status/2077990985519501574 |
 | low | new_event_candidate | new | event | イベント候補「岐阜の徹夜盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岐阜の徹夜盆踊り | 岐阜の徹夜盆踊り 盆踊り | https://x.com/dollsaki_mayuka/status/2069452408103883100 |
@@ -11644,6 +12020,7 @@
 | low | new_event_candidate | new | event | イベント候補「岐阜県郡上八幡へ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岐阜県郡上八幡へ盆踊り | 岐阜県郡上八幡へ盆踊り 盆踊り | https://x.com/YukemuriONSEN/status/2079033559080481009 |
 | low | new_event_candidate | new | event | イベント候補「岡山で女装さんたちの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岡山で女装さんたちの盆踊り | 岡山で女装さんたちの盆踊り 盆踊り | https://x.com/IchinaYotsuha17/status/2081990666008305763 |
 | low | new_event_candidate | new | event | イベント候補「岩のモニュメントが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岩のモニュメントが盆踊り | 岩のモニュメントが盆踊り 盆踊り | https://x.com/kasayan77/status/2087042992393818270 |
+| low | new_event_candidate | new | event | イベント候補「岩寿荘さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岩寿荘さんの盆踊り | 岩寿荘さんの盆踊り 盆踊り | https://x.com/nyakatsugawa/status/2087376048774357098 |
 | low | new_event_candidate | new | event | イベント候補「岬ちゃんハーバー盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岬ちゃんハーバー盆踊り | 岬ちゃんハーバー盆踊り 盆踊り | https://x.com/2Ystoratoratora/status/2086658045673951650 |
 | low | new_event_candidate | new | event | イベント候補「岳温泉の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 岳温泉の盆踊り | 岳温泉の盆踊り 盆踊り | https://x.com/21sakon/status/2084197821499228251 |
 | low | new_event_candidate | new | event | イベント候補「島倉千代子 宮城の夏に欠かせない盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 島倉千代子 宮城の夏に欠かせない盆踊り | 島倉千代子 宮城の夏に欠かせない盆踊り 盆踊り | https://x.com/n3AeV3WXfYU89yg/status/2085676236916097360 |
@@ -11682,6 +12059,7 @@
 | low | new_event_candidate | new | event | イベント候補「巣鴨盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 巣鴨盆踊り | 巣鴨盆踊り 盆踊り | https://x.com/mongot_luv64/status/2077664109060145404 |
 | low | new_event_candidate | new | event | イベント候補「巣鴨納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 巣鴨納涼盆踊り | 巣鴨納涼盆踊り 盆踊り; は初めて踊りましたが 盆踊り; 好みの曲が多くまた踊り 盆踊り | https://x.com/Ma_umojh/status/2081722912420364725 |
 | low | new_event_candidate | new | event | イベント候補「左手にペンラ持って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 左手にペンラ持って盆踊り | 左手にペンラ持って盆踊り 盆踊り | https://x.com/asaka____/status/2075927330443469307 |
+| low | new_event_candidate | new | event | イベント候補「左門殿の今福東盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 左門殿の今福東盆踊り, 純粋に盆踊り | 左門殿の今福東盆踊り 盆踊り; 純粋に盆踊り 盆踊り | https://x.com/hiroshi_takatan/status/2087388529341219239 |
 | low | new_event_candidate | new | event | イベント候補「差別と言われて取りやめるような盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 差別と言われて取りやめるような盆踊り | 差別と言われて取りやめるような盆踊り 盆踊り | https://x.com/ryu402/status/2078756037755379880 |
 | low | new_event_candidate | new | event | イベント候補「市内で開催される盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市内で開催される盆踊り | 市内で開催される盆踊り 盆踊り | https://x.com/kamogawano_naga/status/2079805239637778585 |
 | low | new_event_candidate | new | event | イベント候補「市内のいろんな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 市内のいろんな盆踊り, たぶんそうかな～盆踊り荒らしやから～私だけじゃないけどね | 市内のいろんな盆踊り 盆踊り; たぶんそうかな～盆踊り荒らしやから～私だけじゃないけどね 盆踊り | https://x.com/Mau3_141592/status/2083379929375514720 |
@@ -11726,6 +12104,7 @@
 | low | new_event_candidate | new | event | イベント候補「年に一度の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年に一度の盆踊り | 年に一度の盆踊り 盆踊り | https://x.com/reins141eiji/status/2086755682473374152 |
 | low | new_event_candidate | new | event | イベント候補「年に一度御社が開催される盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年に一度御社が開催される盆踊り, 働きながら盆踊り | 年に一度御社が開催される盆踊り 盆踊り; 働きながら盆踊り 盆踊り | https://x.com/elevator_p/status/2083447817587355832 |
 | low | new_event_candidate | new | event | イベント候補「年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年の盆踊り | 年の盆踊り 盆踊り | https://x.com/apmc_aichi/status/2084449636262318104 |
+| low | new_event_candidate | new | event | イベント候補「年ぶりに地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年ぶりに地区の盆踊り | 年ぶりに地区の盆踊り 盆踊り | https://x.com/orekun_kenchi/status/2087280278964425101 |
 | low | new_event_candidate | new | event | イベント候補「年中盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年中盆踊り | 年中盆踊り 盆踊り | https://x.com/uchinogaku/status/2084564163310043475 |
 | low | new_event_candidate | new | event | イベント候補「年中盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年中盆踊り | 年中盆踊り 盆踊り | https://x.com/pon_uramen/status/2065043970116419995 |
 | low | new_event_candidate | new | event | イベント候補「年前にはヒジャブ浴衣で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 年前にはヒジャブ浴衣で盆踊り | 年前にはヒジャブ浴衣で盆踊り 盆踊り | https://x.com/moai_yoi/status/2068992971668856951 |
@@ -11824,6 +12203,7 @@
 | low | new_event_candidate | new | event | イベント候補「忠類盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 忠類盆踊り | 忠類盆踊り 盆踊り | https://x.com/makubetsuokoshi/status/2084878468865814954 |
 | low | new_event_candidate | new | event | イベント候補「念のためだけどこの「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 念のためだけどこの「盆踊り | 念のためだけどこの「盆踊り 盆踊り | https://x.com/Pinball19732/status/2077008381500670397 |
 | low | new_event_candidate | new | event | イベント候補「念願の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 念願の盆踊り | 念願の盆踊り 盆踊り | https://x.com/misa_ava_01/status/2064005618353246607 |
+| low | new_event_candidate | new | event | イベント候補「怒りを暴力にしないことに加えて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 怒りを暴力にしないことに加えて盆踊り | 怒りを暴力にしないことに加えて盆踊り 盆踊り | https://x.com/mitsuiro_/status/2087392541402349808 |
 | low | new_event_candidate | new | event | イベント候補「怒涛の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 怒涛の盆踊り | 怒涛の盆踊り 盆踊り | https://x.com/yuaitiiki/status/2082972814290862463 |
 | low | new_event_candidate | new | event | イベント候補「思いましたが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 思いましたが盆踊り | 思いましたが盆踊り 盆踊り; 東京音頭 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/C3zw5cUr7dXkMgS/status/2081002659025420711 |
 | low | new_event_candidate | new | event | イベント候補「思い切って薬売りとか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 思い切って薬売りとか盆踊り | 思い切って薬売りとか盆踊り 盆踊り | https://x.com/avant_sabro/status/2082086331178693098 |
@@ -11902,6 +12282,7 @@
 | low | new_event_candidate | new | event | イベント候補「成田市の郷部・美郷台町内会の納涼祭盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 成田市の郷部・美郷台町内会の納涼祭盆踊り | 成田市の郷部・美郷台町内会の納涼祭盆踊り 盆踊り | https://x.com/koikemasaaki/status/2083574515507056801 |
 | low | new_event_candidate | new | event | イベント候補「我が実家の地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 我が実家の地区の盆踊り | 我が実家の地区の盆踊り 盆踊り | https://x.com/dabidejapan4/status/2083450174777749626 |
 | low | new_event_candidate | new | event | イベント候補「我が市に昔からある伝統的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 我が市に昔からある伝統的な盆踊り | 我が市に昔からある伝統的な盆踊り 盆踊り | https://x.com/AYA_TRIFORCE/status/2069338003844280531 |
+| low | new_event_candidate | new | event | イベント候補「我が母校の中学校の校庭で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 我が母校の中学校の校庭で盆踊り | 我が母校の中学校の校庭で盆踊り 盆踊り | https://x.com/hide_ichi/status/2087402598903275938 |
 | low | new_event_candidate | new | event | イベント候補「我が町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 我が町会の盆踊り | 我が町会の盆踊り 盆踊り | https://x.com/mariand2467/status/2079548893793038466 |
 | low | new_event_candidate | new | event | イベント候補「我が町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 我が町内会の盆踊り | 我が町内会の盆踊り 盆踊り | https://x.com/Sacchin_luvnpvv/status/2084244684222960045 |
 | low | new_event_candidate | new | event | イベント候補「我が町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 我が町内会の盆踊り | 我が町内会の盆踊り 盆踊り | https://x.com/Sacchin_luvnpvv/status/2075519803121623218 |
@@ -11915,6 +12296,7 @@
 | low | new_event_candidate | new | event | イベント候補「所で小山が一瞬盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 所で小山が一瞬盆踊り | 所で小山が一瞬盆踊り 盆踊り | https://x.com/uEuYu8MHYs37275/status/2077599617076838710 |
 | low | new_event_candidate | new | event | イベント候補「扇風琴みたいなデザインの電磁盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 扇風琴みたいなデザインの電磁盆踊り | 扇風琴みたいなデザインの電磁盆踊り 盆踊り | https://x.com/13eeesan/status/2085608004272214076 |
 | low | new_event_candidate | new | event | イベント候補「手の動きが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 手の動きが盆踊り | 手の動きが盆踊り 盆踊り | https://x.com/ei910doTRPG/status/2084928659291550102 |
+| low | new_event_candidate | new | event | イベント候補「手を上げる振付は全て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 手を上げる振付は全て盆踊り | 手を上げる振付は全て盆踊り 盆踊り | https://x.com/takakenken11/status/2087088097897136244 |
 | low | new_event_candidate | new | event | イベント候補「打越まつり』盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 打越まつり』盆踊り | 打越まつり』盆踊り 盆踊り | https://x.com/uchikoshichokai/status/2086726835468226988 |
 | low | new_event_candidate | new | event | イベント候補「打越まつり』盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 打越まつり』盆踊り | 打越まつり』盆踊り 盆踊り | https://x.com/802dabe/status/2086714452599283890 |
 | low | new_event_candidate | new | event | イベント候補「打越まつりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 打越まつりの盆踊り, 中野の盆踊り | 打越まつりの盆踊り 盆踊り; 中野の盆踊り 盆踊り | https://x.com/uchikoshichokai/status/2085839306200097151 |
@@ -11955,6 +12337,7 @@
 | low | new_event_candidate | new | event | イベント候補「散歩したり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 散歩したり盆踊り | 散歩したり盆踊り 盆踊り | https://x.com/a_s_u_k_aaa/status/2068253472093581684 |
 | low | new_event_candidate | new | event | イベント候補「散歩してたら知らん地域の町内会館で声をかけられる ゲリラ豪雨で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 散歩してたら知らん地域の町内会館で声をかけられる ゲリラ豪雨で盆踊り | 散歩してたら知らん地域の町内会館で声をかけられる ゲリラ豪雨で盆踊り 盆踊り | https://x.com/Ohki/status/2081349772573868287 |
 | low | new_event_candidate | new | event | イベント候補「散歩先で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 散歩先で盆踊り | 散歩先で盆踊り 盆踊り | https://x.com/7511Ryo/status/2079132957684711460 |
+| low | new_event_candidate | new | event | イベント候補「数多有る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 数多有る盆踊り, 大阪盆踊り | 数多有る盆踊り 盆踊り; 大阪盆踊り 盆踊り | https://x.com/horyu_hiromaru/status/2087334768476385782 |
 | low | new_event_candidate | new | event | イベント候補「数年に一度赤坂で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 数年に一度赤坂で盆踊り | 数年に一度赤坂で盆踊り 盆踊り; 支所と図書館があるの 盆踊り | https://x.com/kuma_bot999/status/2069778887207436462 |
 | low | new_event_candidate | new | event | イベント候補「数年前の増上寺盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 数年前の増上寺盆踊り | 数年前の増上寺盆踊り 盆踊り | https://x.com/wadaikoCH/status/2081024767663202546 |
 | low | new_event_candidate | new | event | イベント候補「数年前途絶えた「猿沢池盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 数年前途絶えた「猿沢池盆踊り, 猿沢池盆踊り | 数年前途絶えた「猿沢池盆踊り 盆踊り; 猿沢池盆踊り 盆踊り | https://x.com/marimo4510/status/2079007463748354283 |
@@ -11965,6 +12348,7 @@
 | low | new_event_candidate | new | event | イベント候補「文句言いたやつの氏名公開して「この方達のクレームにより盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 文句言いたやつの氏名公開して「この方達のクレームにより盆踊り, てか盆踊り | 文句言いたやつの氏名公開して「この方達のクレームにより盆踊り 盆踊り; てか盆踊り 盆踊り | https://x.com/og3ys/status/2086062297831899558 |
 | low | new_event_candidate | new | event | イベント候補「斬新な曲フリすぎて（大横転）（大横転） 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 斬新な曲フリすぎて（大横転）（大横転） 盆踊り | 斬新な曲フリすぎて（大横転）（大横転） 盆踊り 盆踊り | https://x.com/rnrzh___ifrg/status/2065076706873167925 |
 | low | new_event_candidate | new | event | イベント候補「新」が作られると「旧」が踊られなくなる【盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新」が作られると「旧」が踊られなくなる【盆踊り, 盆踊りあるある | 新」が作られると「旧」が踊られなくなる【盆踊り 盆踊り; 盆踊りあるある 盆踊り; でもそれを憂える踊り 盆踊り | https://x.com/Mau3_141592/status/2086643270923460619 |
+| low | new_event_candidate | new | event | イベント候補「新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新しい盆踊り | 新しい盆踊り 盆踊り | https://x.com/RYU_GiN_EDM/status/2087428994321043887 |
 | low | new_event_candidate | new | event | イベント候補「新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新しい盆踊り | 新しい盆踊り 盆踊り | https://x.com/Ark_Lucifead/status/2081315341897232720 |
 | low | new_event_candidate | new | event | イベント候補「新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新しい盆踊り | 新しい盆踊り 盆踊り | https://x.com/MG4224/status/2077303519250710560 |
 | low | new_event_candidate | new | event | イベント候補「新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新しい盆踊り, パヨク音頭 | 新しい盆踊り 盆踊り; パヨク音頭 盆踊り; パヨク音頭 盆踊り | https://x.com/T_Kumagai2480/status/2065052721884078439 |
@@ -11972,6 +12356,7 @@
 | low | new_event_candidate | new | event | イベント候補「新井薬師の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新井薬師の盆踊り | 新井薬師の盆踊り 盆踊り | https://x.com/vote_usagi/status/2079023469350764983 |
 | low | new_event_candidate | new | event | イベント候補「新人猫達の新聞トレーニングとNEW盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新人猫達の新聞トレーニングとNEW盆踊り | 新人猫達の新聞トレーニングとNEW盆踊り 盆踊り | https://x.com/MicKub12/status/2084881787151700277 |
 | low | new_event_candidate | new | event | イベント候補「新北島納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新北島納涼盆踊り | 新北島納涼盆踊り 盆踊り | https://x.com/housenka_pr/status/2083469733467414812 |
+| low | new_event_candidate | new | event | イベント候補「新南の口公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新南の口公園の盆踊り | 新南の口公園の盆踊り 盆踊り | https://x.com/13HyDAGU1vdT1GQ/status/2087416285454118983 |
 | low | new_event_candidate | new | event | イベント候補「新参者には盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新参者には盆踊り | 新参者には盆踊り 盆踊り | https://x.com/Uuo6g11/status/2085944999368429802 |
 | low | new_event_candidate | new | event | イベント候補「新城神社盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新城神社盆踊り | 新城神社盆踊り 盆踊り | https://x.com/bontulijdtgjwe/status/2083541792042168603 |
 | low | new_event_candidate | new | event | イベント候補「新宝島の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 新宝島の盆踊り, 思ったら去年山口さん本人歌唱で盆踊り, aikoもどこかの盆踊り | 新宝島の盆踊り 盆踊り; 思ったら去年山口さん本人歌唱で盆踊り 盆踊り | https://x.com/pokke_15/status/2063621518308119027 |
@@ -12014,14 +12399,17 @@
 | low | new_event_candidate | new | event | イベント候補「日が暮れたら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日が暮れたら盆踊り | 日が暮れたら盆踊り 盆踊り | https://x.com/Be19ki84nd/status/2078390884010508744 |
 | low | new_event_candidate | new | event | イベント候補「日が自治会連合会の支会の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日が自治会連合会の支会の納涼盆踊り | 日が自治会連合会の支会の納涼盆踊り 盆踊り | https://x.com/dock_nn/status/2077916421586317312 |
 | low | new_event_candidate | new | event | イベント候補「日が長くなってきて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日が長くなってきて盆踊り | 日が長くなってきて盆踊り 盆踊り | https://x.com/at0ri_e/status/2065070744942637185 |
+| low | new_event_candidate | new | event | イベント候補「日に「男鹿盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日に「男鹿盆踊り, 仮装盆踊り, 男鹿盆踊り | 日に「男鹿盆踊り 盆踊り; 仮装盆踊り 盆踊り | https://x.com/Sakigake__Tokyo/status/2087442544439562537 |
 | low | new_event_candidate | new | event | イベント候補「日にある盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日にある盆踊り, 山口県では盆踊り | 日にある盆踊り 盆踊り; 山口県では盆踊り 盆踊り | https://x.com/lEtgo1asNKztVlm/status/2084814666753253560 |
 | low | new_event_candidate | new | event | イベント候補「日に寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日に寝転ん盆踊り | 日に寝転ん盆踊り 盆踊り | https://x.com/PiyoSuke_VRC/status/2081882635975139726 |
+| low | new_event_candidate | new | event | イベント候補「日に神奈川の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日に神奈川の盆踊り | 日に神奈川の盆踊り 盆踊り | https://x.com/lEtgo1asNKztVlm/status/2087319389842673705 |
 | low | new_event_candidate | new | event | イベント候補「日は奈良でダッシュ選手権に参加してから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日は奈良でダッシュ選手権に参加してから盆踊り | 日は奈良でダッシュ選手権に参加してから盆踊り 盆踊り | https://x.com/Ev7Cw_swim/status/2086288859470655817 |
 | low | new_event_candidate | new | event | イベント候補「日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日は盆踊り | 日は盆踊り 盆踊り | https://x.com/Natsu_vermillio/status/2084303751570239695 |
 | low | new_event_candidate | new | event | イベント候補「日ハムにアバと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日ハムにアバと盆踊り | 日ハムにアバと盆踊り 盆踊り | https://x.com/hovjv3cEkOAmeba/status/2063960484513227096 |
 | low | new_event_candidate | new | event | イベント候補「日中2時間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日中2時間盆踊り | 日中2時間盆踊り 盆踊り | https://x.com/fukiteasobiki/status/2085972605291598186 |
 | low | new_event_candidate | new | event | イベント候補「日前の「神田明神納涼祭 アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日前の「神田明神納涼祭 アニソン盆踊り, 神田明神納涼祭 アニソン盆踊り | 日前の「神田明神納涼祭 アニソン盆踊り 盆踊り; 神田明神納涼祭 アニソン盆踊り 盆踊り | https://x.com/Gunchar269/status/2075821315769122993 |
 | low | new_event_candidate | new | event | イベント候補「日吉・綱島の周辺エリアで開かれる「盆踊り・夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日吉・綱島の周辺エリアで開かれる「盆踊り・夏祭り, 盆踊り・夏祭り | 日吉・綱島の周辺エリアで開かれる「盆踊り・夏祭り 盆踊り; 盆踊り・夏祭り 盆踊り; の季節 盆踊り | https://x.com/hiyosi_net/status/2077989338592534630 |
+| low | new_event_candidate | new | event | イベント候補「日吉津の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日吉津の盆踊り | 日吉津の盆踊り 盆踊り | https://x.com/QdKvh/status/2087430988234453374 |
 | low | new_event_candidate | new | event | イベント候補「日山盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日山盆踊り, まつばらだんち祭り/日山盆踊り | 日山盆踊り 盆踊り; まつばらだんち祭り/日山盆踊り 盆踊り | https://x.com/koguchirongai/status/2084503843535225026 |
 | low | new_event_candidate | new | event | イベント候補「日暮里盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日暮里盆踊り, 日暮里盆踊りの会 | 日暮里盆踊り 盆踊り; 日暮里盆踊りの会 盆踊り | https://x.com/aD2Ejx0zgR35218/status/2080929079315083524 |
 | low | new_event_candidate | new | event | イベント候補「日曜の埼玉いきます 土曜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日曜の埼玉いきます 土曜の盆踊り | 日曜の埼玉いきます 土曜の盆踊り 盆踊り | https://x.com/ainacchi_708/status/2082383557893423162 |
@@ -12036,6 +12424,7 @@
 | low | new_event_candidate | new | event | イベント候補「日本だけでなく海外にも秋葉原文化・アニソン・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本だけでなく海外にも秋葉原文化・アニソン・盆踊り | 日本だけでなく海外にも秋葉原文化・アニソン・盆踊り 盆踊り | https://x.com/sasakichi_akiba/status/2084828836991238516 |
 | low | new_event_candidate | new | event | イベント候補「日本だとラジオ体操とか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本だとラジオ体操とか盆踊り | 日本だとラジオ体操とか盆踊り 盆踊り | https://x.com/NOMON_and_Co/status/2081933914336035156 |
 | low | new_event_candidate | new | event | イベント候補「日本での『盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本での『盆踊り | 日本での『盆踊り 盆踊り | https://x.com/Catsuzuchan_02/status/2066560516823359999 |
+| low | new_event_candidate | new | event | イベント候補「日本では盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本では盆踊り | 日本では盆踊り 盆踊り | https://x.com/UI7NBHaln1PSfg8/status/2087096199191076971 |
 | low | new_event_candidate | new | event | イベント候補「日本で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本で盆踊り | 日本で盆踊り 盆踊り | https://x.com/KentaShiraishi8/status/2065433673022025961 |
 | low | new_event_candidate | new | event | イベント候補「日本なら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本なら盆踊り | 日本なら盆踊り 盆踊り | https://x.com/yama_me_do_ob/status/2076940021471514954 |
 | low | new_event_candidate | new | event | イベント候補「日本に勝手にやって来て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本に勝手にやって来て盆踊り | 日本に勝手にやって来て盆踊り 盆踊り | https://x.com/XBKoX50jp374830/status/2065504192601755935 |
@@ -12043,7 +12432,9 @@
 | low | new_event_candidate | new | event | イベント候補「日本のお祭りの囃子や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本のお祭りの囃子や盆踊り | 日本のお祭りの囃子や盆踊り 盆踊り | https://x.com/Miho341414/status/2085245541848690760 |
 | low | new_event_candidate | new | event | イベント候補「日本のモダン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本のモダン盆踊り, ボンジョビ盆踊り, ヒーローの盆踊り | 日本のモダン盆踊り 盆踊り; ボンジョビ盆踊り 盆踊り | https://x.com/takinohara/status/2082016523015852270 |
 | low | new_event_candidate | new | event | イベント候補「日本の伝統の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の伝統の盆踊り | 日本の伝統の盆踊り 盆踊り | https://x.com/rainasu/status/2065454834523009142 |
+| low | new_event_candidate | new | event | イベント候補「日本の伝統の除夜の鐘や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の伝統の除夜の鐘や盆踊り | 日本の伝統の除夜の鐘や盆踊り 盆踊り | https://x.com/JEDIKni03825427/status/2087437581156045259 |
 | low | new_event_candidate | new | event | イベント候補「日本の伝統文化である盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の伝統文化である盆踊り, 少しでも多くの方に想いが伝わるといいなと思い「 盆踊り, 花火大会や盆踊り | 日本の伝統文化である盆踊り 盆踊り; 少しでも多くの方に想いが伝わるといいなと思い「 盆踊り 盆踊り | https://x.com/kanesueofficial/status/2083387621796094038 |
+| low | new_event_candidate | new | event | イベント候補「日本の周りで台風の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の周りで台風の盆踊り | 日本の周りで台風の盆踊り 盆踊り | https://x.com/kiriko_jasmin/status/2087420668078129175 |
 | low | new_event_candidate | new | event | イベント候補「日本の夏」 忍者が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の夏」 忍者が盆踊り | 日本の夏」 忍者が盆踊り 盆踊り | https://x.com/dragon_coco3939/status/2087080423184900509 |
 | low | new_event_candidate | new | event | イベント候補「日本の夏って言うたらわい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の夏って言うたらわい盆踊り | 日本の夏って言うたらわい盆踊り 盆踊り | https://x.com/Mitose1614/status/2064699041745879549 |
 | low | new_event_candidate | new | event | イベント候補「日本の夏の風物詩 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本の夏の風物詩 盆踊り | 日本の夏の風物詩 盆踊り 盆踊り | https://x.com/winningtickets2/status/2086423019078262867 |
@@ -12090,6 +12481,7 @@
 | low | new_event_candidate | new | event | イベント候補「日本人ジャズでもラテンでも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本人ジャズでもラテンでも盆踊り | 日本人ジャズでもラテンでも盆踊り 盆踊り | https://x.com/mmmm_musical/status/2067244388347175250 |
 | low | new_event_candidate | new | event | イベント候補「日本人以外の者が三味線弾いたり忍者の格好した外国人が日本舞踊や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本人以外の者が三味線弾いたり忍者の格好した外国人が日本舞踊や盆踊り | 日本人以外の者が三味線弾いたり忍者の格好した外国人が日本舞踊や盆踊り 盆踊り; が混ざった日本ぽい踊り 盆踊り | https://x.com/princessbea1215/status/2063617509371302133 |
 | low | new_event_candidate | new | event | イベント候補「日本人会」の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本人会」の盆踊り | 日本人会」の盆踊り 盆踊り | https://x.com/fandee/status/2084451109196980528 |
+| low | new_event_candidate | new | event | イベント候補「日本代表は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本代表は盆踊り, 日本代表は盆踊りだろｗ | 日本代表は盆踊り 盆踊り; 日本代表は盆踊りだろｗ 盆踊り | https://x.com/hiroiroiro/status/2087433925161349587 |
 | low | new_event_candidate | new | event | イベント候補「日本全国の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本全国の盆踊り, 生演奏が体験できる 今回も日本各地で伝わる盆踊り | 日本全国の盆踊り 盆踊り; 生演奏が体験できる 今回も日本各地で伝わる盆踊り 盆踊り | https://x.com/minyo_eisui/status/2085742018551328791 |
 | low | new_event_candidate | new | event | イベント候補「日本各地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本各地の盆踊り | 日本各地の盆踊り 盆踊り | https://x.com/hatu850/status/2084899246214373854 |
 | low | new_event_candidate | new | event | イベント候補「日本各地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本各地の盆踊り | 日本各地の盆踊り 盆踊り | https://x.com/hatu850/status/2084468903825015289 |
@@ -12098,6 +12490,7 @@
 | low | new_event_candidate | new | event | イベント候補「日本文化としての盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本文化としての盆踊り, 土地柄アニソンの曲目が多い(別に子供向けに盆踊り | 日本文化としての盆踊り 盆踊り; 土地柄アニソンの曲目が多い(別に子供向けに盆踊り 盆踊り; だと思う 盆踊り | https://x.com/akitahayabusa19/status/2086009838689988980 |
 | low | new_event_candidate | new | event | イベント候補「日本民謡 炭坑節 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本民謡 炭坑節 盆踊り | 日本民謡 炭坑節 盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/kaorupia/status/2084310920155848868 |
 | low | new_event_candidate | new | event | イベント候補「日本盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本盆踊り, これは本当に日本のどこかの盆踊り | 日本盆踊り 盆踊り; これは本当に日本のどこかの盆踊り 盆踊り | https://x.com/xtowa_gosx/status/2070437543565472047 |
+| low | new_event_candidate | new | event | イベント候補「日本舞踊に通じる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日本舞踊に通じる盆踊り, 見直されて欲しいですね 盆踊り | 日本舞踊に通じる盆踊り 盆踊り; 見直されて欲しいですね 盆踊り 盆踊り | https://x.com/6940keiko/status/2087403616688820611 |
 | low | new_event_candidate | new | event | イベント候補「日枝神社3日間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日枝神社3日間盆踊り, もね盆踊り | 日枝神社3日間盆踊り 盆踊り; もね盆踊り 盆踊り | https://x.com/wakafu73/status/2065604922679402562 |
 | low | new_event_candidate | new | event | イベント候補「日枝神社山王祭の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日枝神社山王祭の盆踊り | 日枝神社山王祭の盆踊り 盆踊り | https://x.com/kajix_japan/status/2066531517543944407 |
 | low | new_event_candidate | new | event | イベント候補「日比谷の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 日比谷の盆踊り | 日比谷の盆踊り 盆踊り | https://x.com/chiduru86_912/status/2077663206974398687 |
@@ -12138,6 +12531,7 @@
 | low | new_event_candidate | new | event | イベント候補「明後日は超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日は超寝転ん盆踊り | 明後日は超寝転ん盆踊り 盆踊り | https://x.com/vrc_rena02/status/2085193620311941464 |
 | low | new_event_candidate | new | event | イベント候補「明後日は駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日は駅前盆踊り | 明後日は駅前盆踊り 盆踊り | https://x.com/ka2_design/status/2084527733573619780 |
 | low | new_event_candidate | new | event | イベント候補「明後日は麗沢の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日は麗沢の盆踊り | 明後日は麗沢の盆踊り 盆踊り | https://x.com/hikaibe/status/2083088937376194693 |
+| low | new_event_candidate | new | event | イベント候補「明後日も午前半休取るつもりだけど雨で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日も午前半休取るつもりだけど雨で盆踊り | 明後日も午前半休取るつもりだけど雨で盆踊り 盆踊り | https://x.com/remons_09/status/2087311457079947730 |
 | low | new_event_candidate | new | event | イベント候補「明後日も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日も盆踊り | 明後日も盆踊り 盆踊り | https://x.com/nahc_rre/status/2085591372917264428 |
 | low | new_event_candidate | new | event | イベント候補「明後日シトロンが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日シトロンが盆踊り | 明後日シトロンが盆踊り 盆踊り | https://x.com/A_tapitapi2018/status/2084840435915325692 |
 | low | new_event_candidate | new | event | イベント候補「明後日幼稚園で甚平着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明後日幼稚園で甚平着て盆踊り | 明後日幼稚園で甚平着て盆踊り 盆踊り | https://x.com/20wYume/status/2067220439886393604 |
@@ -12156,6 +12550,7 @@
 | low | new_event_candidate | new | event | イベント候補「明日は恵比寿駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は恵比寿駅前盆踊り | 明日は恵比寿駅前盆踊り 盆踊り | https://x.com/johnnyjumpuptwt/status/2083068106675794060 |
 | low | new_event_candidate | new | event | イベント候補「明日は東八幡神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は東八幡神社の盆踊り | 明日は東八幡神社の盆踊り 盆踊り | https://x.com/TSUND3RE_CAT/status/2085606980308345251 |
 | low | new_event_candidate | new | event | イベント候補「明日は松島で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は松島で盆踊り | 明日は松島で盆踊り 盆踊り | https://x.com/Gun_072/status/2070771987983876539 |
+| low | new_event_candidate | new | event | イベント候補「明日は町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は町内の盆踊り | 明日は町内の盆踊り 盆踊り | https://x.com/kara_yomogi/status/2087345561896972373 |
 | low | new_event_candidate | new | event | イベント候補「明日は自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は自治会の盆踊り | 明日は自治会の盆踊り 盆踊り | https://x.com/j3note/status/2083555362956083376 |
 | low | new_event_candidate | new | event | イベント候補「明日は駅前で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は駅前で盆踊り | 明日は駅前で盆踊り 盆踊り | https://x.com/ishinshimizu/status/2083497411662721088 |
 | low | new_event_candidate | new | event | イベント候補「明日は高幡不動で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 明日は高幡不動で盆踊り | 明日は高幡不動で盆踊り 盆踊り | https://x.com/marimu737/status/2081542345947038158 |
@@ -12178,6 +12573,7 @@
 | low | new_event_candidate | new | event | イベント候補「昔ながらの祭りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔ながらの祭りや盆踊り | 昔ながらの祭りや盆踊り 盆踊り | https://x.com/ikeryuufukkatsu/status/2081944260077834242 |
 | low | new_event_candidate | new | event | イベント候補「昔のお巡りさんは町と一体化してました 当然盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔のお巡りさんは町と一体化してました 当然盆踊り | 昔のお巡りさんは町と一体化してました 当然盆踊り 盆踊り | https://x.com/hide_watashi/status/2086350216631062966 |
 | low | new_event_candidate | new | event | イベント候補「昔の動画にあった名古屋別院の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔の動画にあった名古屋別院の盆踊り | 昔の動画にあった名古屋別院の盆踊り 盆踊り; 郡上踊り 盆踊り; 私は郡上踊り 盆踊り | https://x.com/89franny/status/2075786864834085101 |
+| low | new_event_candidate | new | event | イベント候補「昔の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔の盆踊り | 昔の盆踊り 盆踊り | https://x.com/Monkeykuu/status/2087373053298983057 |
 | low | new_event_candidate | new | event | イベント候補「昔の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔の盆踊り, 男女の出会いのない時代 盆踊り | 昔の盆踊り 盆踊り; 男女の出会いのない時代 盆踊り 盆踊り | https://x.com/Ishikazun_Cl_75/status/2064348336904380772 |
 | low | new_event_candidate | new | event | イベント候補「昔はこーやって地域で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔はこーやって地域で盆踊り | 昔はこーやって地域で盆踊り 盆踊り | https://x.com/junjunjunbou2/status/2063589581862359052 |
 | low | new_event_candidate | new | event | イベント候補「昔は浴衣着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昔は浴衣着て盆踊り | 昔は浴衣着て盆踊り 盆踊り | https://x.com/6dx6GR7M9A3B948/status/2084555772768207182 |
@@ -12195,6 +12591,7 @@
 | low | new_event_candidate | new | event | イベント候補「星見やぐらプリキュア盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 星見やぐらプリキュア盆踊り, 憧れのプリキュアと一緒に盆踊り | 星見やぐらプリキュア盆踊り 盆踊り; 憧れのプリキュアと一緒に盆踊り 盆踊り | https://x.com/kachinta/status/2086992019474481340 |
 | low | new_event_candidate | new | event | イベント候補「映画ちいかわの「島のうた」に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画ちいかわの「島のうた」に盆踊り | 映画ちいかわの「島のうた」に盆踊り 盆踊り | https://x.com/jhMd9p808R76363/status/2084560740254634418 |
 | low | new_event_candidate | new | event | イベント候補「映画村 おジャ魔女盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村 おジャ魔女盆踊り | 映画村 おジャ魔女盆踊り 盆踊り | https://x.com/ou_sato_show/status/2081656792736800790 |
+| low | new_event_candidate | new | event | イベント候補「映画村 今日が最終日の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村 今日が最終日の盆踊り | 映画村 今日が最終日の盆踊り 盆踊り | https://x.com/otankonasu810/status/2087443162738663732 |
 | low | new_event_candidate | new | event | イベント候補「映画村でおジャ魔女どれみと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村でおジャ魔女どれみと盆踊り, 星見やぐら盆踊りカーニバル‼︎ | 映画村でおジャ魔女どれみと盆踊り 盆踊り; 星見やぐら盆踊りカーニバル‼︎ 盆踊り | https://x.com/kachinta/status/2083414567925797200 |
 | low | new_event_candidate | new | event | イベント候補「映画村でおジャ魔女どれみと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村でおジャ魔女どれみと盆踊り, 星見やぐら盆踊りカーニバル‼︎ | 映画村でおジャ魔女どれみと盆踊り 盆踊り; 星見やぐら盆踊りカーニバル‼︎ 盆踊り | https://x.com/kachinta/status/2083024190278353233 |
 | low | new_event_candidate | new | event | イベント候補「映画村でおジャ魔女どれみと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村でおジャ魔女どれみと盆踊り, 星見やぐら盆踊りカーニバル‼︎ | 映画村でおジャ魔女どれみと盆踊り 盆踊り; 星見やぐら盆踊りカーニバル‼︎ 盆踊り | https://x.com/kachinta/status/2081676534176485569 |
@@ -12207,6 +12604,7 @@
 | low | new_event_candidate | new | event | イベント候補「映画村の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村の盆踊り | 映画村の盆踊り 盆踊り | https://x.com/T_nodoka_grace/status/2081037231574385040 |
 | low | new_event_candidate | new | event | イベント候補「映画村の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村の盆踊り | 映画村の盆踊り 盆踊り | https://x.com/pan__noki/status/2070437962958118996 |
 | low | new_event_candidate | new | event | イベント候補「映画村は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村は盆踊り | 映画村は盆踊り 盆踊り | https://x.com/Hana___meerkat/status/2069702418275951069 |
+| low | new_event_candidate | new | event | イベント候補「映画村盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村盆踊り | 映画村盆踊り 盆踊り | https://x.com/morimori80s/status/2087342106100838902 |
 | low | new_event_candidate | new | event | イベント候補「映画村盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村盆踊り | 映画村盆踊り 盆踊り | https://x.com/heyhey_aoki/status/2087037379588882747 |
 | low | new_event_candidate | new | event | イベント候補「映画村盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村盆踊り | 映画村盆踊り 盆踊り | https://x.com/kusaru_nikuhen/status/2084101127390564584 |
 | low | new_event_candidate | new | event | イベント候補「映画村行くぞー 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 映画村行くぞー 盆踊り | 映画村行くぞー 盆踊り 盆踊り | https://x.com/yamabuki1920/status/2087058538216522146 |
@@ -12224,7 +12622,9 @@
 | low | new_event_candidate | new | event | イベント候補「昨夜の今北グラウンドでの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜の今北グラウンドでの盆踊り, 以前渡したCDからの抜粋もあり普通の盆踊り | 昨夜の今北グラウンドでの盆踊り 盆踊り; 以前渡したCDからの抜粋もあり普通の盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2085585722841665638 |
 | low | new_event_candidate | new | event | イベント候補「昨夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜の盆踊り | 昨夜の盆踊り 盆踊り | https://x.com/syowuketu/status/2084440761190482180 |
 | low | new_event_candidate | new | event | イベント候補「昨夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜の盆踊り | 昨夜の盆踊り 盆踊り | https://x.com/gubigubi3150/status/2081278678181572700 |
+| low | new_event_candidate | new | event | イベント候補「昨夜の鹿追町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜の鹿追町盆踊り | 昨夜の鹿追町盆踊り 盆踊り; コスプレ踊り 盆踊り | https://x.com/kikulove1449/status/2087357753526550867 |
 | low | new_event_candidate | new | event | イベント候補「昨夜は の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜は の盆踊り | 昨夜は の盆踊り 盆踊り | https://x.com/yuki_ryo45511/status/2083337164121878720 |
+| low | new_event_candidate | new | event | イベント候補「昨夜は 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜は 盆踊り | 昨夜は 盆踊り 盆踊り | https://x.com/kikulove1449/status/2087260778848219220 |
 | low | new_event_candidate | new | event | イベント候補「昨夜はおもてなし武将隊監修会社の友人と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜はおもてなし武将隊監修会社の友人と盆踊り | 昨夜はおもてなし武将隊監修会社の友人と盆踊り 盆踊り | https://x.com/kaosucataaaaaaR/status/2083447528847196489 |
 | low | new_event_candidate | new | event | イベント候補「昨夜はゲリラ豪雨でどうなるかと思いましたが会社近くで恒例の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜はゲリラ豪雨でどうなるかと思いましたが会社近くで恒例の盆踊り | 昨夜はゲリラ豪雨でどうなるかと思いましたが会社近くで恒例の盆踊り 盆踊り | https://x.com/_gsystem_/status/2084453327098806311 |
 | low | new_event_candidate | new | event | イベント候補「昨夜はドラクエTVが延期からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨夜はドラクエTVが延期からの盆踊り | 昨夜はドラクエTVが延期からの盆踊り 盆踊り | https://x.com/shilvia0801/status/2082360050295926902 |
@@ -12262,6 +12662,7 @@
 | low | new_event_candidate | new | event | イベント候補「昨晩はみんなで花火を見たりギルメンのホームで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昨晩はみんなで花火を見たりギルメンのホームで盆踊り | 昨晩はみんなで花火を見たりギルメンのホームで盆踊り 盆踊り | https://x.com/Numao_Burn/status/2084214875417641330 |
 | low | new_event_candidate | new | event | イベント候補「昭和のお盆を過ごした方に聞きたいんですけど 昔って町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昭和のお盆を過ごした方に聞きたいんですけど 昔って町内の盆踊り | 昭和のお盆を過ごした方に聞きたいんですけど 昔って町内の盆踊り 盆踊り | https://x.com/maimai_ahaha/status/2086047519612837964 |
 | low | new_event_candidate | new | event | イベント候補「昭和のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昭和のアニソン盆踊り | 昭和のアニソン盆踊り 盆踊り | https://x.com/rockstar_haro/status/2085961016547144113 |
+| low | new_event_candidate | new | event | イベント候補「昭和の時代は町会ごとに盆踊りや夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昭和の時代は町会ごとに盆踊りや夏祭り | 昭和の時代は町会ごとに盆踊りや夏祭り 盆踊り | https://x.com/JmoTAKE/status/2087132327805899133 |
 | low | new_event_candidate | new | event | イベント候補「昭和後期に成立した盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昭和後期に成立した盆踊り | 昭和後期に成立した盆踊り 盆踊り | https://x.com/yitk1022/status/2081682454784671841 |
 | low | new_event_candidate | new | event | イベント候補「昭和飯能盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 昭和飯能盆踊り | 昭和飯能盆踊り 盆踊り | https://x.com/heiwa_nippontou/status/2084417395607974152 |
 | low | new_event_candidate | new | event | イベント候補「是非ともGet Wild盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 是非ともGet Wild盆踊り | 是非ともGet Wild盆踊り 盆踊り | https://x.com/wayura6/status/2086703532699500817 |
@@ -12287,6 +12688,7 @@
 | low | new_event_candidate | new | event | イベント候補「時間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 時間盆踊り | 時間盆踊り 盆踊り; 東京音頭 盆踊り; 炭坑節 盆踊り | https://x.com/W8nc98s31bmiXlA/status/2084217143550447859 |
 | low | new_event_candidate | new | event | イベント候補「時間盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 時間盆踊り | 時間盆踊り 盆踊り | https://x.com/MzciiG/status/2069619669766635994 |
 | low | new_event_candidate | new | event | イベント候補「晩飯盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 晩飯盆踊り | 晩飯盆踊り 盆踊り | https://x.com/ToshyChen_1028/status/2083437925048713660 |
+| low | new_event_candidate | new | event | イベント候補「普代盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 普代盆踊り | 普代盆踊り 盆踊り | https://x.com/koi_dou/status/2087443971572379926 |
 | low | new_event_candidate | new | event | イベント候補「普段ダンスでは使われない盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 普段ダンスでは使われない盆踊り | 普段ダンスでは使われない盆踊り 盆踊り | https://x.com/dandan_tabacchi/status/2065605488805581270 |
 | low | new_event_candidate | new | event | イベント候補「普段盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 普段盆踊り | 普段盆踊り 盆踊り | https://x.com/_no_honya/status/2078824201491026405 |
 | low | new_event_candidate | new | event | イベント候補「普段触れ合いの無い世代が関わったり一緒に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 普段触れ合いの無い世代が関わったり一緒に盆踊り | 普段触れ合いの無い世代が関わったり一緒に盆踊り 盆踊り | https://x.com/cNI5rMy2En89813/status/2068285312233807992 |
@@ -12444,16 +12846,19 @@
 | low | new_event_candidate | new | event | イベント候補「月一の目黒不動縁日 今日は隣の不動公園も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月一の目黒不動縁日 今日は隣の不動公園も盆踊り | 月一の目黒不動縁日 今日は隣の不動公園も盆踊り 盆踊り | https://x.com/wanchaijapan/status/2082046104615698632 |
 | low | new_event_candidate | new | event | イベント候補「月号 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月号 盆踊り | 月号 盆踊り 盆踊り | https://x.com/hamanoseinenbu/status/2082657190461227112 |
 | low | new_event_candidate | new | event | イベント候補「月島第一小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月島第一小学校の盆踊り | 月島第一小学校の盆踊り 盆踊り | https://x.com/megurukarada/status/2077990771303829785 |
+| low | new_event_candidate | new | event | イベント候補「月曜日にダルウィニー組で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月曜日にダルウィニー組で盆踊り | 月曜日にダルウィニー組で盆踊り 盆踊り; 行ったらカオスなことになりました 盆踊り | https://x.com/tatuinu_vrc/status/2087441078752530871 |
 | low | new_event_candidate | new | event | イベント候補「月曜日の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月曜日の盆踊り | 月曜日の盆踊り 盆踊り | https://x.com/sakuma_Jessica/status/2082297473176150336 |
 | low | new_event_candidate | new | event | イベント候補「月曜日よりも木曜日寄りな話題ですがwゲッドワイルドで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月曜日よりも木曜日寄りな話題ですがwゲッドワイルドで盆踊り | 月曜日よりも木曜日寄りな話題ですがwゲッドワイルドで盆踊り 盆踊り | https://x.com/mmlionsfunky/status/2084208053428383787 |
 | low | new_event_candidate | new | event | イベント候補「月末に予定している地元盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月末に予定している地元盆踊り | 月末に予定している地元盆踊り 盆踊り | https://x.com/arimataikoteam/status/2076286543879422057 |
 | low | new_event_candidate | new | event | イベント候補「月末の中目黒船入場盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月末の中目黒船入場盆踊り | 月末の中目黒船入場盆踊り 盆踊り | https://x.com/onose_meguro/status/2081775625241866394 |
 | low | new_event_candidate | new | event | イベント候補「月結晶は3つの月籠りで相手を囲んで踊るデス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 月結晶は3つの月籠りで相手を囲んで踊るデス盆踊り | 月結晶は3つの月籠りで相手を囲んで踊るデス盆踊り 盆踊り | https://x.com/aka_no_ragunaru/status/2062491979733483755 |
+| low | new_event_candidate | new | event | イベント候補「有名な曲に合わせて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 有名な曲に合わせて盆踊り | 有名な曲に合わせて盆踊り 盆踊り | https://x.com/kz_0622/status/2087388548521714125 |
 | low | new_event_candidate | new | event | イベント候補「有給取ってて何するかっていうと 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 有給取ってて何するかっていうと 盆踊り, 今年は3年ぶりに盆踊り | 有給取ってて何するかっていうと 盆踊り 盆踊り; 今年は3年ぶりに盆踊り 盆踊り | https://x.com/mikihugtk/status/2066300929595551968 |
 | low | new_event_candidate | new | event | イベント候補「有難い 数年前に地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 有難い 数年前に地域の盆踊り | 有難い 数年前に地域の盆踊り 盆踊り | https://x.com/kuma_bot999/status/2063296484481888636 |
 | low | new_event_candidate | new | event | イベント候補「朝からLiSAっ子さんに教えて貰って と の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝からLiSAっ子さんに教えて貰って と の盆踊り | 朝からLiSAっ子さんに教えて貰って と の盆踊り 盆踊り | https://x.com/smile119masa/status/2084770859814932907 |
 | low | new_event_candidate | new | event | イベント候補「朝から北原小で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から北原小で盆踊り | 朝から北原小で盆踊り 盆踊り | https://x.com/nogataenishi/status/2081663485365440665 |
 | low | new_event_candidate | new | event | イベント候補「朝から洗濯 今日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から洗濯 今日は盆踊り | 朝から洗濯 今日は盆踊り 盆踊り | https://x.com/fd3s_m_y_t/status/2082602838979723297 |
+| low | new_event_candidate | new | event | イベント候補「朝から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から盆踊り | 朝から盆踊り 盆踊り | https://x.com/_mikoshi/status/2087380347818529046 |
 | low | new_event_candidate | new | event | イベント候補「朝から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から盆踊り | 朝から盆踊り 盆踊り | https://x.com/yaenagi_ch/status/2084920436543172969 |
 | low | new_event_candidate | new | event | イベント候補「朝から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から盆踊り | 朝から盆踊り 盆踊り | https://x.com/yasklandmuimui/status/2083764312565600266 |
 | low | new_event_candidate | new | event | イベント候補「朝から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 朝から盆踊り | 朝から盆踊り 盆踊り | https://x.com/Zekeami08180929/status/2065564265193640417 |
@@ -12482,6 +12887,7 @@
 | low | new_event_candidate | new | event | イベント候補「未だにアパート近くの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 未だにアパート近くの盆踊り | 未だにアパート近くの盆踊り 盆踊り; ドラえもん音頭 盆踊り | https://x.com/ikajiojisan001/status/2085987576528417209 |
 | low | new_event_candidate | new | event | イベント候補「未だに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 未だに盆踊り | 未だに盆踊り 盆踊り | https://x.com/oyaji1973/status/2063619182303027286 |
 | low | new_event_candidate | new | event | イベント候補「末で閉校する従兄弟の小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 末で閉校する従兄弟の小学校の盆踊り | 末で閉校する従兄弟の小学校の盆踊り 盆踊り | https://x.com/GoGoAkutsu1984/status/2081584693456359703 |
+| low | new_event_candidate | new | event | イベント候補「末に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 末に盆踊り | 末に盆踊り 盆踊り | https://x.com/sNNFoY6iHJhPJHX/status/2087401696209375378 |
 | low | new_event_candidate | new | event | イベント候補「本の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本の盆踊り, 楽などの現代カルチャーが融合する新感覚の夏祭り「おしゃれ盆踊り, おしゃれ盆踊り | 本の盆踊り 盆踊り; 楽などの現代カルチャーが融合する新感覚の夏祭り「おしゃれ盆踊り 盆踊り | https://x.com/NumeroTOKYO/status/2082320121977028657 |
 | low | new_event_candidate | new | event | イベント候補「本中山地区 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本中山地区 納涼盆踊り, っぱり夏は盆踊り | 本中山地区 納涼盆踊り 盆踊り; っぱり夏は盆踊り 盆踊り | https://x.com/taisai_2023/status/2068628393294446649 |
 | low | new_event_candidate | new | event | イベント候補「本中山地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 本中山地区の盆踊り | 本中山地区の盆踊り 盆踊り | https://x.com/taisai_2023/status/2083089741315203261 |
@@ -12525,11 +12931,13 @@
 | low | new_event_candidate | new | event | イベント候補「材木座』 おやまの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 材木座』 おやまの盆踊り | 材木座』 おやまの盆踊り 盆踊り; 当日も踊り 盆踊り | https://x.com/yamabon_zaimoku/status/2075925099912565029 |
 | low | new_event_candidate | new | event | イベント候補「材木座の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 材木座の盆踊り | 材木座の盆踊り 盆踊り | https://x.com/otukisan_cos/status/2079136906034782557 |
 | low | new_event_candidate | new | event | イベント候補「村の盆踊りばかりだったので都市型盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 村の盆踊りばかりだったので都市型盆踊り | 村の盆踊りばかりだったので都市型盆踊り 盆踊り | https://x.com/elevator_p/status/2084662871280226740 |
+| low | new_event_candidate | new | event | イベント候補「村全体で迎えるなら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 村全体で迎えるなら盆踊り, 祖霊を迎える際に盆踊り, 送り出す際は盆踊り | 村全体で迎えるなら盆踊り 盆踊り; 祖霊を迎える際に盆踊り 盆踊り | https://x.com/safefield/status/2087385543483248769 |
 | low | new_event_candidate | new | event | イベント候補「来ず地方の祭りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来ず地方の祭りで盆踊り | 来ず地方の祭りで盆踊り 盆踊り | https://x.com/marulikeapple1/status/2062570697533300992 |
 | low | new_event_candidate | new | event | イベント候補「来年のつくばキッズ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年のつくばキッズ盆踊り | 来年のつくばキッズ盆踊り 盆踊り; 溢れる沢山の笑顔が 盆踊り | https://x.com/yutoadachi/status/2083689661826990163 |
 | low | new_event_candidate | new | event | イベント候補「来年の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年の盆踊り | 来年の盆踊り 盆踊り | https://x.com/Z_YO_TO18/status/2085833483663081672 |
 | low | new_event_candidate | new | event | イベント候補「来年はもっと上手に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年はもっと上手に盆踊り | 来年はもっと上手に盆踊り 盆踊り | https://x.com/0kameko0/status/2084899501559673197 |
 | low | new_event_candidate | new | event | イベント候補「来年は下北沢の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年は下北沢の盆踊り | 来年は下北沢の盆踊り 盆踊り | https://x.com/Laririwon_Ura/status/2081022160945254908 |
+| low | new_event_candidate | new | event | イベント候補「来年は京都の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年は京都の盆踊り | 来年は京都の盆踊り 盆踊り | https://x.com/Kinako_love0/status/2087369211400339889 |
 | low | new_event_candidate | new | event | イベント候補「来年は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年は盆踊り | 来年は盆踊り 盆踊り; 錦糸町河内音頭 盆踊り | https://x.com/reji_zilla/status/2082809698445910058 |
 | low | new_event_candidate | new | event | イベント候補「来年もぼーんとぅ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年もぼーんとぅ盆踊り | 来年もぼーんとぅ盆踊り 盆踊り | https://x.com/soushi_jack/status/2078033372925059368 |
 | low | new_event_candidate | new | event | イベント候補「来年盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来年盆踊り | 来年盆踊り 盆踊り | https://x.com/qu_youmu/status/2086339994764120463 |
@@ -12548,12 +12956,12 @@
 | low | new_event_candidate | new | event | イベント候補「来週から盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週から盆踊り, さあ❗来週から盆踊り本番よ❗ | 来週から盆踊り 盆踊り; さあ❗来週から盆踊り本番よ❗ 盆踊り | https://x.com/kanahokirekire/status/2084482669434601652 |
 | low | new_event_candidate | new | event | イベント候補「来週のパンダ広場での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週のパンダ広場での盆踊り, パンダ広場の盆踊り | 来週のパンダ広場での盆踊り 盆踊り; パンダ広場の盆踊り 盆踊り | https://x.com/kugiyamaguchi/status/2085693052887380138 |
 | low | new_event_candidate | new | event | イベント候補「来週の今頃は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の今頃は盆踊り | 来週の今頃は盆踊り 盆踊り | https://x.com/akashachi/status/2075852695127417281 |
-| low | new_event_candidate | new | event | イベント候補「来週の北新井公園で行われる 納涼盆踊り大会に向けて町内で 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の北新井公園で行われる 納涼盆踊り大会に向けて町内で 盆踊り | 来週の北新井公園で行われる 納涼盆踊り大会に向けて町内で 盆踊り 盆踊り | https://x.com/studioakira/status/2075907514076700766 |
 | low | new_event_candidate | new | event | イベント候補「来週の寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の寝転ん盆踊り | 来週の寝転ん盆踊り 盆踊り | https://x.com/shaberu_mugi/status/2083467754288583062 |
 | low | new_event_candidate | new | event | イベント候補「来週の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の盆踊り | 来週の盆踊り 盆踊り | https://x.com/hyusaka1973/status/2084877030278242304 |
 | low | new_event_candidate | new | event | イベント候補「来週の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の盆踊り | 来週の盆踊り 盆踊り; 炭坑節 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/mikihugtk/status/2078094896565784905 |
 | low | new_event_candidate | new | event | イベント候補「来週の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週の盆踊り | 来週の盆踊り 盆踊り | https://x.com/05bT0aKatGrysa8/status/2071093678282788968 |
 | low | new_event_candidate | new | event | イベント候補「来週はもう盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週はもう盆踊り | 来週はもう盆踊り 盆踊り | https://x.com/fukiteasobiki/status/2082015894499410359 |
+| low | new_event_candidate | new | event | イベント候補「来週は本放送時は自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週は本放送時は自治会の盆踊り | 来週は本放送時は自治会の盆踊り 盆踊り | https://x.com/pondaring1989/status/2087219363757838496 |
 | low | new_event_candidate | new | event | イベント候補「来週は神田明神の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週は神田明神の盆踊り | 来週は神田明神の盆踊り 盆踊り | https://x.com/akimizu/status/2083834075526410438 |
 | low | new_event_candidate | new | event | イベント候補「来週も神田明神の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週も神田明神の盆踊り | 来週も神田明神の盆踊り 盆踊り | https://x.com/KnutSweynson/status/2083462539829264420 |
 | low | new_event_candidate | new | event | イベント候補「来週アキバで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 来週アキバで盆踊り | 来週アキバで盆踊り 盆踊り | https://x.com/LunaWlateM/status/2083031193000509873 |
@@ -12600,6 +13008,7 @@
 | low | new_event_candidate | new | event | イベント候補「東北コミセン文化部会主催 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東北コミセン文化部会主催 盆踊り, 実は盆踊り | 東北コミセン文化部会主催 盆踊り 盆踊り; 実は盆踊り 盆踊り; 河内音頭 盆踊り; 江州音頭 盆踊り | https://x.com/yumioka55/status/2075843965497266521 |
 | low | new_event_candidate | new | event | イベント候補「東北人ってキリストの墓で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東北人ってキリストの墓で盆踊り | 東北人ってキリストの墓で盆踊り 盆踊り | https://x.com/megashki/status/2065421405194469519 |
 | low | new_event_candidate | new | event | イベント候補「東口の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東口の盆踊り | 東口の盆踊り 盆踊り; 柏踊りと京北音頭 盆踊り; に柏踊りと京北音頭 盆踊り | https://x.com/Pw9SKrdCfYJfxfv/status/2085567946265604187 |
+| low | new_event_candidate | new | event | イベント候補「東和町)の 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東和町)の 盆踊り | 東和町)の 盆踊り 盆踊り | https://x.com/Knobby_jp/status/2087384036809593029 |
 | low | new_event_candidate | new | event | イベント候補「東大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東大盆踊り | 東大盆踊り 盆踊り | https://x.com/yamashita99/status/2086341255521558599 |
 | low | new_event_candidate | new | event | イベント候補「東大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東大盆踊り | 東大盆踊り 盆踊り | https://x.com/mariya_ukonya/status/2067595143801381103 |
 | low | new_event_candidate | new | event | イベント候補「東大盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東大盆踊り | 東大盆踊り 盆踊り | https://x.com/Ocha_bon/status/2057456902519554551 |
@@ -12611,16 +13020,7 @@
 | low | new_event_candidate | new | event | イベント候補「東急プラザ蒲田屋上「かまたえん空祭り」の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東急プラザ蒲田屋上「かまたえん空祭り」の盆踊り, 地元の大岡山北口商店街の納涼盆踊り | 東急プラザ蒲田屋上「かまたえん空祭り」の盆踊り 盆踊り; 地元の大岡山北口商店街の納涼盆踊り 盆踊り | https://x.com/tamachan_ota/status/2086042106150502703 |
 | low | new_event_candidate | new | event | イベント候補「東成区の中本盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東成区の中本盆踊り | 東成区の中本盆踊り 盆踊り | https://x.com/onishijimusho/status/2081588878578983376 |
 | low | new_event_candidate | new | event | イベント候補「東映キャラクターとの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東映キャラクターとの盆踊り | 東映キャラクターとの盆踊り 盆踊り | https://x.com/oricon/status/2070384397598281752 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り | https://x.com/saiga0130/status/2087021924262244804 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一 盆踊り | https://x.com/saiga0130/status/2087013341185310939 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一番楽しか 盆踊り | https://x.com/saiga0130/status/2087012708747194677 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一番楽しかったと 盆踊り | https://x.com/saiga0130/status/2087012297843859820 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一番楽しかったと言 盆踊り | https://x.com/saiga0130/status/2087011957555806392 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一番楽しかったと言 盆踊り | https://x.com/saiga0130/status/2087011700432421027 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花 盆踊り | https://x.com/saiga0130/status/2087008891834175943 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り | https://x.com/saiga0130/status/2087008542532436253 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一番楽しかったと 盆踊り | https://x.com/saiga0130/status/2086799023621669162 |
-| low | new_event_candidate | new | event | イベント候補「東本願寺の盆踊りに子供達と出かけた時に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東本願寺の盆踊りに子供達と出かけた時に 盆踊り, 最後に花火を1本だけさせていただきました 子供達に盆踊り | 東本願寺の盆踊りに子供達と出かけた時に 盆踊り 盆踊り; 最後に花火を1本だけさせていただきました 子供達に盆踊り 盆踊り; 提供いただき 盆踊り; 1本の花火が一番楽しかったと言 盆踊り | https://x.com/saiga0130/status/2086791023079092249 |
+| low | new_event_candidate | new | event | イベント候補「東板持町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東板持町盆踊り | 東板持町盆踊り 盆踊り | https://x.com/FdfwSPdEZXn3I3G/status/2087433429923353080 |
 | low | new_event_candidate | new | event | イベント候補「東栄会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東栄会盆踊り | 東栄会盆踊り 盆踊り | https://x.com/watanabe_chuji/status/2077305081691816337 |
 | low | new_event_candidate | new | event | イベント候補「東根小学校の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東根小学校の盆踊り | 東根小学校の盆踊り 盆踊り | https://x.com/mu4324/status/2068197006385054206 |
 | low | new_event_candidate | new | event | イベント候補「東浦町でも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 東浦町でも盆踊り | 東浦町でも盆踊り 盆踊り | https://x.com/kanahokirekire/status/2081026171253453053 |
@@ -12672,6 +13072,7 @@
 | low | new_event_candidate | new | event | イベント候補「桜井中学校体育館にて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 桜井中学校体育館にて盆踊り | 桜井中学校体育館にて盆踊り 盆踊り | https://x.com/zqQzZXwSipi4Qi8/status/2081554236601753816 |
 | low | new_event_candidate | new | event | イベント候補「桜花月の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 桜花月の盆踊り | 桜花月の盆踊り 盆踊り; 摂津おどり 盆踊り; 摂津音頭 盆踊り | https://x.com/skagetsu2025/status/2078140616651997558 |
 | low | new_event_candidate | new | event | イベント候補「桜雅の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 桜雅の盆踊り | 桜雅の盆踊り 盆踊り | https://x.com/sakura__miyavi/status/2083937075469201774 |
+| low | new_event_candidate | new | event | イベント候補「桧原盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 桧原盆踊り | 桧原盆踊り 盆踊り | https://x.com/sas_chugaku/status/2087432335402889245 |
 | low | new_event_candidate | new | event | イベント候補「桶川市】 若宮二丁目盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 桶川市】 若宮二丁目盆踊り | 桶川市】 若宮二丁目盆踊り 盆踊り | https://x.com/OkanoChieko/status/2083933811713397012 |
 | low | new_event_candidate | new | event | イベント候補「梅田で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 梅田で盆踊り | 梅田で盆踊り 盆踊り | https://x.com/753ryuya__/status/2076200591727214953 |
 | low | new_event_candidate | new | event | イベント候補「梅田に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 梅田に盆踊り | 梅田に盆踊り 盆踊り | https://x.com/gao_fairchild/status/2078719550787616828 |
@@ -12712,6 +13113,7 @@
 | low | new_event_candidate | new | event | イベント候補「横手の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横手の盆踊り | 横手の盆踊り 盆踊り | https://x.com/koich1020/status/2084555182659309773 |
 | low | new_event_candidate | new | event | イベント候補「横浜の色に包まれた思い出に残る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜の色に包まれた思い出に残る盆踊り | 横浜の色に包まれた思い出に残る盆踊り 盆踊り; アラメヤ音頭 盆踊り; 浜っ娘音頭 盆踊り | https://x.com/hisa910615533/status/2062923742205075919 |
 | low | new_event_candidate | new | event | イベント候補「横浜モアーズ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜モアーズ盆踊り | 横浜モアーズ盆踊り 盆踊り | https://x.com/asoboyokohama/status/2077310250655551791 |
+| low | new_event_candidate | new | event | イベント候補「横浜市民ではないけれど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜市民ではないけれど盆踊り | 横浜市民ではないけれど盆踊り 盆踊り | https://x.com/ganaganaa/status/2087131387707248861 |
 | low | new_event_candidate | new | event | イベント候補「横浜開港祭 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜開港祭 盆踊り | 横浜開港祭 盆踊り 盆踊り | https://x.com/25momomomo/status/2061985450445979819 |
 | low | new_event_candidate | new | event | イベント候補「横浜開港祭BON-ODORI」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜開港祭BON-ODORI | 横浜開港祭BON-ODORI 盆踊り | https://x.com/BonOdoriJapan/status/2062026935929323794 |
 | low | new_event_candidate | new | event | イベント候補「横浜開港祭BON-ODORI」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 横浜開港祭BON-ODORI | 横浜開港祭BON-ODORI 盆踊り; よこはまアラメヤ音頭 盆踊り | https://x.com/bonDbonT/status/2061854929556472126 |
@@ -12722,6 +13124,7 @@
 | low | new_event_candidate | new | event | イベント候補「橋本の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 橋本の盆踊り | 橋本の盆踊り 盆踊り | https://x.com/hijoguchi999_fm/status/2083470442267029813 |
 | low | new_event_candidate | new | event | イベント候補「橘ふるさと祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 橘ふるさと祭り盆踊り | 橘ふるさと祭り盆踊り 盆踊り; ついに我慢出来ず踊り 盆踊り | https://x.com/QJNNsHRSBQ39722/status/2083806064567533629 |
 | low | new_event_candidate | new | event | イベント候補「機神暗黒盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 機神暗黒盆踊り | 機神暗黒盆踊り 盆踊り | https://x.com/16DGZTE/status/2062183082380415057 |
+| low | new_event_candidate | new | event | イベント候補「檜原盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 檜原盆踊り | 檜原盆踊り 盆踊り | https://x.com/Geek_SC1003/status/2087398579082301664 |
 | low | new_event_candidate | new | event | イベント候補「櫓があるから何かと思ったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 櫓があるから何かと思ったら盆踊り | 櫓があるから何かと思ったら盆踊り 盆踊り | https://x.com/kamugara/status/2086348957068713989 |
 | low | new_event_candidate | new | event | イベント候補「櫓ごとに違う多様性こそ地域に息づく盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 櫓ごとに違う多様性こそ地域に息づく盆踊り | 櫓ごとに違う多様性こそ地域に息づく盆踊り 盆踊り | https://x.com/MatsuriNoKiseki/status/2077025799597948972 |
 | low | new_event_candidate | new | event | イベント候補「櫓のまわりをうろうろ歩きながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 櫓のまわりをうろうろ歩きながら盆踊り, 盆踊り参加賞のお菓子たくさんあげるよ | 櫓のまわりをうろうろ歩きながら盆踊り 盆踊り; 盆踊り参加賞のお菓子たくさんあげるよ 盆踊り | https://x.com/mashiro828/status/2081020620557697222 |
@@ -12783,6 +13186,7 @@
 | low | new_event_candidate | new | event | イベント候補「死霊の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 死霊の盆踊り | 死霊の盆踊り 盆踊り | https://x.com/gonzo_tw/status/2061986294537064845 |
 | low | new_event_candidate | new | event | イベント候補「死霊の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 死霊の盆踊り | 死霊の盆踊り 盆踊り | https://x.com/nyam60670864/status/2061829516184752234 |
 | low | new_event_candidate | new | event | イベント候補「殆ど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 殆ど盆踊り | 殆ど盆踊り 盆踊り | https://x.com/undinereika/status/2077267790239801808 |
+| low | new_event_candidate | new | event | イベント候補「残って小夜会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 残って小夜会の盆踊り, 昼間の縁日からそのまま盆踊り | 残って小夜会の盆踊り 盆踊り; 昼間の縁日からそのまま盆踊り 盆踊り | https://x.com/sayokai/status/2087437852829511846 |
 | low | new_event_candidate | new | event | イベント候補「残りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 残りの盆踊り | 残りの盆踊り 盆踊り; もっと踊り 盆踊り | https://x.com/megumegu627/status/2083863837162582299 |
 | low | new_event_candidate | new | event | イベント候補「残念ながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 残念ながら盆踊り | 残念ながら盆踊り 盆踊り | https://x.com/mtea_03/status/2085984696895480039 |
 | low | new_event_candidate | new | event | イベント候補「残念ながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 残念ながら盆踊り | 残念ながら盆踊り 盆踊り | https://x.com/ZERO98048735/status/2083118548948508977 |
@@ -12800,6 +13204,7 @@
 | low | new_event_candidate | new | event | イベント候補「毎日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 毎日盆踊り | 毎日盆踊り 盆踊り | https://x.com/yononaka2000/status/2082372565977427994 |
 | low | new_event_candidate | new | event | イベント候補「毎日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 毎日盆踊り | 毎日盆踊り 盆踊り | https://x.com/umekokoo/status/2069610204531208531 |
 | low | new_event_candidate | new | event | イベント候補「比奈穂さん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 比奈穂さん盆踊り | 比奈穂さん盆踊り 盆踊り | https://x.com/PP7uu6/status/2079114607961243654 |
+| low | new_event_candidate | new | event | イベント候補「毛虫音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 毛虫音頭 | 毛虫音頭 盆踊り; 毛虫音頭 盆踊り | https://x.com/nick_muster/status/2087196866756895083 |
 | low | new_event_candidate | new | event | イベント候補「氏子青年会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 氏子青年会盆踊り | 氏子青年会盆踊り 盆踊り | https://x.com/ISAJIGO_1345/status/2078758670746444172 |
 | low | new_event_candidate | new | event | イベント候補「民謡(盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 民謡(盆踊り | 民謡(盆踊り 盆踊り | https://x.com/Aonocycle/status/2076600790647705720 |
 | low | new_event_candidate | new | event | イベント候補「民謡とか定番盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 民謡とか定番盆踊り | 民謡とか定番盆踊り 盆踊り; 炭坑節 盆踊り; 炭坑節とか踊り 盆踊り | https://x.com/naka85ryo/status/2084122950299717778 |
@@ -12828,8 +13233,10 @@
 | low | new_event_candidate | new | event | イベント候補「汗ガンガンかきながら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 汗ガンガンかきながら盆踊り | 汗ガンガンかきながら盆踊り 盆踊り | https://x.com/abikoshinonkai/status/2081951462943555620 |
 | low | new_event_candidate | new | event | イベント候補「江別市「大麻こども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江別市「大麻こども盆踊り, 大麻こども盆踊り | 江別市「大麻こども盆踊り 盆踊り; 大麻こども盆踊り 盆踊り | https://x.com/Ebetsuliker/status/2081008813159952745 |
 | low | new_event_candidate | new | event | イベント候補「江別市「大麻こども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江別市「大麻こども盆踊り, 大麻こども盆踊り | 江別市「大麻こども盆踊り 盆踊り; 大麻こども盆踊り 盆踊り | https://x.com/Ebetsuliker/status/2081008809556820468 |
+| low | new_event_candidate | new | event | イベント候補「江別市発祥】初CD化から1年「子供盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江別市発祥】初CD化から1年「子供盆おどり, 子供盆おどり唄 | 江別市発祥】初CD化から1年「子供盆おどり 盆踊り; 子供盆おどり唄 盆踊り | https://x.com/EbetsuNopporo/status/2087426371589165524 |
 | low | new_event_candidate | new | event | イベント候補「江古田の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江古田の盆踊り | 江古田の盆踊り 盆踊り | https://x.com/picsetsu/status/2085988107015672011 |
 | low | new_event_candidate | new | event | イベント候補「江州音頭フェスタinしが」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江州音頭フェスタinしが | 江州音頭フェスタinしが 盆踊り; 江州音頭 盆踊り; 大原の道念音頭 盆踊り | https://x.com/hidedon78/status/2084553896941515014 |
+| low | new_event_candidate | new | event | イベント候補「江州音頭フェスティバル 京都会場」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江州音頭フェスティバル 京都会場 | 江州音頭フェスティバル 京都会場 盆踊り; 江州音頭 盆踊り | https://x.com/haru11nc39/status/2087441686003912750 |
 | low | new_event_candidate | new | event | イベント候補「江戸や明治期には一揆に繋がるとか風紀を乱すとの理由で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江戸や明治期には一揆に繋がるとか風紀を乱すとの理由で盆踊り, 都内の盆踊りオススメは中野のナカボンと神田明神のアニソン盆踊り | 江戸や明治期には一揆に繋がるとか風紀を乱すとの理由で盆踊り 盆踊り; 都内の盆踊りオススメは中野のナカボンと神田明神のアニソン盆踊り 盆踊り | https://x.com/rakkofx/status/2086243132199576009 |
 | low | new_event_candidate | new | event | イベント候補「江戸シーラン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江戸シーラン盆踊り | 江戸シーラン盆踊り 盆踊り | https://x.com/kuncyan/status/2083781820815139102 |
 | low | new_event_candidate | new | event | イベント候補「江戸川べりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 江戸川べりの盆踊り | 江戸川べりの盆踊り 盆踊り | https://x.com/goro_edogawa/status/2086298131348729926 |
@@ -12846,6 +13253,7 @@
 | low | new_event_candidate | new | event | イベント候補「池上本門寺みたま祭り納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池上本門寺みたま祭り納涼盆踊り | 池上本門寺みたま祭り納涼盆踊り 盆踊り | https://x.com/highlandrail/status/2085187364331360607 |
 | low | new_event_candidate | new | event | イベント候補「池上本門寺みたま祭り納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池上本門寺みたま祭り納涼盆踊り | 池上本門寺みたま祭り納涼盆踊り 盆踊り | https://x.com/highlandrail/status/2085181264248889682 |
 | low | new_event_candidate | new | event | イベント候補「池上盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池上盆踊り | 池上盆踊り 盆踊り | https://x.com/oto323232/status/2084541997696843918 |
+| low | new_event_candidate | new | event | イベント候補「池上養源寺では 「精霊送り 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池上養源寺では 「精霊送り 盆踊り, 精霊送り 盆踊り大会 | 池上養源寺では 「精霊送り 盆踊り 盆踊り; 精霊送り 盆踊り大会 盆踊り | https://x.com/kamataBANKA/status/2087336040050933765 |
 | low | new_event_candidate | new | event | イベント候補「池之上小学校での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池之上小学校での盆踊り, マツノッキー音頭 | 池之上小学校での盆踊り 盆踊り; マツノッキー音頭 盆踊り; マツノッキー音頭 盆踊り | https://x.com/Atutakamama7034/status/2083540162697646347 |
 | low | new_event_candidate | new | event | イベント候補「池田公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池田公園の盆踊り | 池田公園の盆踊り 盆踊り | https://x.com/pirokero4/status/2079515586649031079 |
 | low | new_event_candidate | new | event | イベント候補「池田地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 池田地区の盆踊り | 池田地区の盆踊り 盆踊り | https://x.com/hajimarinosaito/status/2078386152969773119 |
@@ -12860,6 +13268,7 @@
 | low | new_event_candidate | new | event | イベント候補「沖縄エイサー踊りはこちら 本州 四国 九州 の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 沖縄エイサー踊りはこちら 本州 四国 九州 の盆踊り | 沖縄エイサー踊りはこちら 本州 四国 九州 の盆踊り 盆踊り; 沖縄エイサー踊り 盆踊り; 阿波踊り 盆踊り | https://x.com/RlQ9YBKciGbUrsD/status/2068241190114463752 |
 | low | new_event_candidate | new | event | イベント候補「沖縄音頭」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 沖縄音頭 | 沖縄音頭 盆踊り; 沖縄音頭 盆踊り | https://x.com/ayasugimoto/status/2084616093298307118 |
 | low | new_event_candidate | new | event | イベント候補「沢山のブースと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 沢山のブースと盆踊り | 沢山のブースと盆踊り 盆踊り | https://x.com/dmh_kobe/status/2085964697774551098 |
+| low | new_event_candidate | new | event | イベント候補「河内家菊水丸さんが河地音頭取りの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 河内家菊水丸さんが河地音頭取りの盆踊り | 河内家菊水丸さんが河地音頭取りの盆踊り 盆踊り | https://x.com/bird3flower/status/2087347348620116252 |
 | low | new_event_candidate | new | event | イベント候補「河内家菊水丸さんご登場の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 河内家菊水丸さんご登場の盆踊り | 河内家菊水丸さんご登場の盆踊り 盆踊り | https://x.com/cherryb0wie/status/2084927714184802683 |
 | low | new_event_candidate | new | event | イベント候補「河内町盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 河内町盆踊り | 河内町盆踊り 盆踊り | https://x.com/aizumajorgenera/status/2065042765843763479 |
 | low | new_event_candidate | new | event | イベント候補「河内花園で「かわち花園フェス」 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 河内花園で「かわち花園フェス」 盆踊り | 河内花園で「かわち花園フェス」 盆踊り 盆踊り | https://x.com/Osaka_headlines/status/2079822630107160773 |
@@ -12882,6 +13291,7 @@
 | low | new_event_candidate | new | event | イベント候補「流し踊りや太鼓の音色や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流し踊りや太鼓の音色や盆踊り | 流し踊りや太鼓の音色や盆踊り 盆踊り | https://x.com/kosukouba/status/2084485000418795934 |
 | low | new_event_candidate | new | event | イベント候補「流れる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流れる盆踊り | 流れる盆踊り 盆踊り | https://x.com/syunya9318/status/2084206864599019686 |
 | low | new_event_candidate | new | event | イベント候補「流石に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流石に盆踊り | 流石に盆踊り 盆踊り | https://x.com/Mercus001_alpha/status/2086740791519740258 |
+| low | new_event_candidate | new | event | イベント候補「流行りのセットログ入れることになった 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流行りのセットログ入れることになった 盆踊り | 流行りのセットログ入れることになった 盆踊り 盆踊り | https://x.com/LnnP4SjZKj/status/2087423531365913053 |
 | low | new_event_candidate | new | event | イベント候補「流行歌で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 流行歌で盆踊り | 流行歌で盆踊り 盆踊り | https://x.com/Osato_land/status/2086731807542976692 |
 | low | new_event_candidate | new | event | イベント候補「浅井さんが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浅井さんが盆踊り | 浅井さんが盆踊り 盆踊り | https://x.com/Amemiya_kko/status/2086325251890409794 |
 | low | new_event_candidate | new | event | イベント候補「浅草つれづれ「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浅草つれづれ「盆踊り, 盆踊り、行きますか | 浅草つれづれ「盆踊り 盆踊り; 盆踊り、行きますか 盆踊り | https://x.com/tsujiyahonten/status/2084889367957721339 |
@@ -12912,6 +13322,7 @@
 | low | new_event_candidate | new | event | イベント候補「浴衣だと雰囲気違いますなぁと言われた(笑) 楽しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣だと雰囲気違いますなぁと言われた(笑) 楽しい盆踊り | 浴衣だと雰囲気違いますなぁと言われた(笑) 楽しい盆踊り 盆踊り | https://x.com/MJSbsorNnoc0FDF/status/2083337390777827610 |
 | low | new_event_candidate | new | event | イベント候補「浴衣で楽しむ盆踊りと夏祭りのひととき 「学園夏まつり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣で楽しむ盆踊りと夏祭りのひととき 「学園夏まつり | 浴衣で楽しむ盆踊りと夏祭りのひととき 「学園夏まつり 盆踊り | https://x.com/AkashiKomei/status/2070641393677238492 |
 | low | new_event_candidate | new | event | イベント候補「浴衣で炭坑節に合わせて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣で炭坑節に合わせて盆踊り | 浴衣で炭坑節に合わせて盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/tanakapy/status/2081917627262242891 |
+| low | new_event_candidate | new | event | イベント候補「浴衣で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣で盆踊り | 浴衣で盆踊り 盆踊り | https://x.com/07tamamama/status/2087379076315238830 |
 | low | new_event_candidate | new | event | イベント候補「浴衣で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣で盆踊り | 浴衣で盆踊り 盆踊り | https://x.com/masateru_noda/status/2084200905172521133 |
 | low | new_event_candidate | new | event | イベント候補「浴衣で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣で盆踊り | 浴衣で盆踊り 盆踊り | https://x.com/Ren_Kun0513/status/2084023479196844444 |
 | low | new_event_candidate | new | event | イベント候補「浴衣で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣で盆踊り | 浴衣で盆踊り 盆踊り | https://x.com/haruka_bunny06/status/2082750216726528041 |
@@ -12945,6 +13356,7 @@
 | low | new_event_candidate | new | event | イベント候補「浴衣着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 浴衣着て盆踊り | 浴衣着て盆踊り 盆踊り | https://x.com/UUpuupu/status/2068296844128714925 |
 | low | new_event_candidate | new | event | イベント候補「海の祭りに行きそうな感じありそうですが 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 海の祭りに行きそうな感じありそうですが 盆踊り | 海の祭りに行きそうな感じありそうですが 盆踊り 盆踊り | https://x.com/IETATETAIJIN/status/2084194443637448766 |
 | low | new_event_candidate | new | event | イベント候補「海も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 海も盆踊り | 海も盆踊り 盆踊り | https://x.com/sakura017acnh/status/2083114422902587405 |
+| low | new_event_candidate | new | event | イベント候補「海も花火も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 海も花火も盆踊り | 海も花火も盆踊り 盆踊り | https://x.com/tocotoco2022/status/2087364009670660588 |
 | low | new_event_candidate | new | event | イベント候補「海デビューとかシュノーケリングとかピューロランドとか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 海デビューとかシュノーケリングとかピューロランドとか盆踊り | 海デビューとかシュノーケリングとかピューロランドとか盆踊り 盆踊り | https://x.com/tamago_hunter/status/2070770783581024578 |
 | low | new_event_candidate | new | event | イベント候補「海外でも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 海外でも盆踊り | 海外でも盆踊り 盆踊り; あるのにね 盆踊り | https://x.com/manta308/status/2069121494857441467 |
 | low | new_event_candidate | new | event | イベント候補「海岸盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 海岸盆踊り | 海岸盆踊り 盆踊り | https://x.com/cos9n/status/2083133061970141506 |
@@ -12955,7 +13367,9 @@
 | low | new_event_candidate | new | event | イベント候補「涼しいCLUBの中で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 涼しいCLUBの中で盆踊り | 涼しいCLUBの中で盆踊り 盆踊り | https://x.com/fuujinten/status/2087023646351245420 |
 | low | new_event_candidate | new | event | イベント候補「涼しい屋内で縁日・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 涼しい屋内で縁日・盆踊り | 涼しい屋内で縁日・盆踊り 盆踊り | https://x.com/bonDbonT/status/2084755912359862314 |
 | low | new_event_candidate | new | event | イベント候補「涼しい風と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 涼しい風と盆踊り | 涼しい風と盆踊り 盆踊り | https://x.com/w_dpn/status/2083831341439979580 |
+| low | new_event_candidate | new | event | イベント候補「涼しくて最高の 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 涼しくて最高の 盆踊り | 涼しくて最高の 盆踊り 盆踊り | https://x.com/chiyeah417/status/2087427506341396652 |
 | low | new_event_candidate | new | event | イベント候補「涼しくなってきた夕方から十条駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 涼しくなってきた夕方から十条駅前盆踊り | 涼しくなってきた夕方から十条駅前盆踊り 盆踊り | https://x.com/_satokoto/status/2086477597861626101 |
+| low | new_event_candidate | new | event | イベント候補「涼しそうだし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 涼しそうだし盆踊り | 涼しそうだし盆踊り 盆踊り | https://x.com/xiang_zi_bang/status/2087382754052952117 |
 | low | new_event_candidate | new | event | イベント候補「淋しい熱帯魚を盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 淋しい熱帯魚を盆踊り | 淋しい熱帯魚を盆踊り 盆踊り | https://x.com/BilllyVrc/status/2083502814622589249 |
 | low | new_event_candidate | new | event | イベント候補「深大寺 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 深大寺 盆踊り | 深大寺 盆踊り 盆踊り; 下北沢のシモキタ音頭 盆踊り | https://x.com/Atutakamama7034/status/2082073749873177069 |
 | low | new_event_candidate | new | event | イベント候補「深大寺では今日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 深大寺では今日盆踊り | 深大寺では今日盆踊り 盆踊り | https://x.com/moekichi_tantan/status/2081680086395392301 |
@@ -12990,6 +13404,7 @@
 | low | new_event_candidate | new | event | イベント候補「渋谷も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 渋谷も盆踊り | 渋谷も盆踊り 盆踊り | https://x.com/futamifull/status/2085983420375798227 |
 | low | new_event_candidate | new | event | イベント候補「渋谷エンタメ祭 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 渋谷エンタメ祭 盆踊り | 渋谷エンタメ祭 盆踊り 盆踊り | https://x.com/siiii000_x/status/2085962128897515717 |
 | low | new_event_candidate | new | event | イベント候補「渋谷到着 今日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 渋谷到着 今日は盆踊り | 渋谷到着 今日は盆踊り 盆踊り | https://x.com/rockguitar73/status/2085975615258444134 |
+| low | new_event_candidate | new | event | イベント候補「温根湯の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 温根湯の盆踊り | 温根湯の盆踊り 盆踊り | https://x.com/hi_tagashira/status/2087367222910201871 |
 | low | new_event_candidate | new | event | イベント候補「温泉の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 温泉の盆踊り, 夏に大盆踊り | 温泉の盆踊り 盆踊り; 夏に大盆踊り 盆踊り | https://x.com/be_ko_fu_ku/status/2065634828381266367 |
 | low | new_event_candidate | new | event | イベント候補「温泉街で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 温泉街で盆踊り | 温泉街で盆踊り 盆踊り; 花笠音頭 盆踊り; 本場の花笠音頭 盆踊り | https://x.com/GITANES954/status/2085755793501213041 |
 | low | new_event_candidate | new | event | イベント候補「港区メンバーでお寿司のあと だいきのお部屋で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 港区メンバーでお寿司のあと だいきのお部屋で盆踊り | 港区メンバーでお寿司のあと だいきのお部屋で盆踊り 盆踊り | https://x.com/YOCOminpaku/status/2086690495343063345 |
@@ -13001,6 +13416,7 @@
 | low | new_event_candidate | new | event | イベント候補「溝口朋瑛『BON』 タイトルは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 溝口朋瑛『BON』 タイトルは盆踊り | 溝口朋瑛『BON』 タイトルは盆踊り 盆踊り | https://x.com/mukashikan/status/2063879835081204218 |
 | low | new_event_candidate | new | event | イベント候補「滋賀県 マキノ追坂峠(道の駅) 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 滋賀県 マキノ追坂峠(道の駅) 盆踊り | 滋賀県 マキノ追坂峠(道の駅) 盆踊り 盆踊り | https://x.com/DeiveOwn70595/status/2085910039668342795 |
 | low | new_event_candidate | new | event | イベント候補「滋賀県に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 滋賀県に盆踊り | 滋賀県に盆踊り 盆踊り; 江州音頭 盆踊り | https://x.com/CpOLOXVwf4JAXqv/status/2066483939108401219 |
+| low | new_event_candidate | new | event | イベント候補「滑り込みで花火見に寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 滑り込みで花火見に寝転ん盆踊り | 滑り込みで花火見に寝転ん盆踊り 盆踊り | https://x.com/vrc_elel/status/2087403318540918922 |
 | low | new_event_candidate | new | event | イベント候補「滝川駐屯地のこども盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 滝川駐屯地のこども盆踊り, 盆踊りも中止になるかもしれない | 滝川駐屯地のこども盆踊り 盆踊り; 盆踊りも中止になるかもしれない 盆踊り | https://x.com/EmikoT14/status/2082103207191622012 |
 | low | new_event_candidate | new | event | イベント候補「演歌とか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 演歌とか盆踊り | 演歌とか盆踊り 盆踊り | https://x.com/SUKEstagram/status/2085143376488493242 |
 | low | new_event_candidate | new | event | イベント候補「演歌の時はゆったり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 演歌の時はゆったり盆踊り | 演歌の時はゆったり盆踊り 盆踊り | https://x.com/__sleep/status/2084530483036393517 |
@@ -13014,6 +13430,7 @@
 | low | new_event_candidate | new | event | イベント候補「灯籠フェスや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 灯籠フェスや盆踊り | 灯籠フェスや盆踊り 盆踊り | https://x.com/Yusuke_k0305/status/2070780224791629881 |
 | low | new_event_candidate | new | event | イベント候補「灼熱の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 灼熱の盆踊り | 灼熱の盆踊り 盆踊り; やってきました🌞 盆踊り | https://x.com/okaka00711/status/2085570307784630560 |
 | low | new_event_candidate | new | event | イベント候補「炭坑節と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 炭坑節と盆踊り | 炭坑節と盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/pekemaru13/status/2086347308770459877 |
+| low | new_event_candidate | new | event | イベント候補「炭坑節などの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 炭坑節などの盆踊り | 炭坑節などの盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/autosandroads1/status/2087369812204995071 |
 | low | new_event_candidate | new | event | イベント候補「炭坑節の振り付けで踊れる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 炭坑節の振り付けで踊れる盆踊り | 炭坑節の振り付けで踊れる盆踊り 盆踊り; 炭坑節 盆踊り | https://x.com/tukishimanagaya/status/2083793259961397281 |
 | low | new_event_candidate | new | event | イベント候補「炭坑節盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 炭坑節盆踊り | 炭坑節盆踊り 盆踊り; 炭坑節 盆踊り; 良く踊り 盆踊り | https://x.com/Norisan69094744/status/2070431954592227599 |
 | low | new_event_candidate | new | event | イベント候補「無事にりんご飴2個手に入れたので両手に持って盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 無事にりんご飴2個手に入れたので両手に持って盆踊り | 無事にりんご飴2個手に入れたので両手に持って盆踊り 盆踊り | https://x.com/kannnnnchi/status/2081664661053947956 |
@@ -13053,6 +13470,7 @@
 | low | new_event_candidate | new | event | イベント候補「猟牙さんは今頃アゲアゲ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 猟牙さんは今頃アゲアゲ盆踊り, いつも緊張感を胸に宿して盆踊り | 猟牙さんは今頃アゲアゲ盆踊り 盆踊り; いつも緊張感を胸に宿して盆踊り 盆踊り | https://x.com/Akane_withD/status/2069543202416476582 |
 | low | new_event_candidate | new | event | イベント候補「猫ろん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 猫ろん盆踊り | 猫ろん盆踊り 盆踊り | https://x.com/tomo12106sub/status/2086663261852966990 |
 | low | new_event_candidate | new | event | イベント候補「猫ろん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 猫ろん盆踊り | 猫ろん盆踊り 盆踊り | https://x.com/vanishcele/status/2076516314865401881 |
+| low | new_event_candidate | new | event | イベント候補「猿海道町内会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 猿海道町内会の盆踊り, 多くの皆さんに踊って頂ける盆踊り | 猿海道町内会の盆踊り 盆踊り; 多くの皆さんに踊って頂ける盆踊り 盆踊り | https://x.com/hiromichi_ito/status/2087411309956739236 |
 | low | new_event_candidate | new | event | イベント候補「獄ストの浴衣と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 獄ストの浴衣と盆踊り | 獄ストの浴衣と盆踊り 盆踊り | https://x.com/yuma_blackopal/status/2082068763101597985 |
 | low | new_event_candidate | new | event | イベント候補「玉川温泉着 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 玉川温泉着 盆踊り | 玉川温泉着 盆踊り 盆踊り | https://x.com/zigzag_bee/status/2085987282654515676 |
 | low | new_event_candidate | new | event | イベント候補「玉野の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 玉野の盆踊り | 玉野の盆踊り 盆踊り | https://x.com/9_hiropon/status/2043047422629417150 |
@@ -13066,6 +13484,7 @@
 | low | new_event_candidate | new | event | イベント候補「現在では失われている毛馬内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 現在では失われている毛馬内盆踊り | 現在では失われている毛馬内盆踊り 盆踊り; 大の坂踊り 盆踊り | https://x.com/masumi_in_akita/status/2040737460351823983 |
 | low | new_event_candidate | new | event | イベント候補「現在ツアー中】協会滞在中のみんなで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 現在ツアー中】協会滞在中のみんなで盆踊り | 現在ツアー中】協会滞在中のみんなで盆踊り 盆踊り | https://x.com/NPOnuigurumi/status/2086722365959147929 |
 | low | new_event_candidate | new | event | イベント候補「現地録音の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 現地録音の盆踊り | 現地録音の盆踊り 盆踊り | https://x.com/koi_dou/status/2037829608859730073 |
+| low | new_event_candidate | new | event | イベント候補「琴似駅前で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 琴似駅前で盆踊り | 琴似駅前で盆踊り 盆踊り | https://x.com/sirokuma96jp/status/2087446989063774689 |
 | low | new_event_candidate | new | event | イベント候補「瓜生野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 瓜生野盆踊り | 瓜生野盆踊り 盆踊り | https://x.com/koi_dou/status/2083069564049555601 |
 | low | new_event_candidate | new | event | イベント候補「生で みたかったけど地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生で みたかったけど地元の盆踊り | 生で みたかったけど地元の盆踊り 盆踊り | https://x.com/naomin_0818_/status/2083443464587583768 |
 | low | new_event_candidate | new | event | イベント候補「生と死の境界が曖昧になる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生と死の境界が曖昧になる盆踊り | 生と死の境界が曖昧になる盆踊り 盆踊り | https://x.com/nyantokonyan/status/2084885529146147120 |
@@ -13079,6 +13498,7 @@
 | low | new_event_candidate | new | event | イベント候補「生演奏盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生演奏盆踊り, これからも盆踊り | 生演奏盆踊り 盆踊り; これからも盆踊り 盆踊り | https://x.com/nakano_bonodori/status/2084118186082152818 |
 | low | new_event_candidate | new | event | イベント候補「生演奏盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生演奏盆踊り | 生演奏盆踊り 盆踊り; 中野音頭 盆踊り | https://x.com/nakano_bonodori/status/2083471241953030474 |
 | low | new_event_candidate | new | event | イベント候補「生演奏盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生演奏盆踊り | 生演奏盆踊り 盆踊り | https://x.com/nakano_bonodori/status/2083471616844136508 |
+| low | new_event_candidate | new | event | イベント候補「生穂地区の納涼祭へ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生穂地区の納涼祭へ 盆踊り | 生穂地区の納涼祭へ 盆踊り 盆踊り | https://x.com/kksswwkk/status/2087361753831391267 |
 | low | new_event_candidate | new | event | イベント候補「生者と死者のかよい路 新野の盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生者と死者のかよい路 新野の盆おどり, 間かけて夜通し行われる盆踊り, 生者と死者のかよい路 新野の盆おどり 神送りの行事 | 生者と死者のかよい路 新野の盆おどり 盆踊り; 間かけて夜通し行われる盆踊り 盆踊り | https://x.com/l_ifeisaparty/status/2048039375863501139 |
 | low | new_event_candidate | new | event | イベント候補「生者と死者のかよい路 新野の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生者と死者のかよい路 新野の盆踊り, 生者と死者のかよい路 新野の盆踊り 神送りの行事 | 生者と死者のかよい路 新野の盆踊り 盆踊り; 生者と死者のかよい路 新野の盆踊り 神送りの行事 盆踊り | https://x.com/griot_sakamoto/status/2062786841972183536 |
 | low | new_event_candidate | new | event | イベント候補「生誕の練習を盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 生誕の練習を盆踊り, 実際盆踊り | 生誕の練習を盆踊り 盆踊り; 実際盆踊り 盆踊り | https://x.com/weaponpeso/status/2061999211378586091 |
@@ -13112,6 +13532,7 @@
 | low | new_event_candidate | new | event | イベント候補「町会さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会さんの盆踊り, ○○町会さんの盆踊りにうかがいました | 町会さんの盆踊り 盆踊り; ○○町会さんの盆踊りにうかがいました 盆踊り | https://x.com/7376GgBw1gwxUM3/status/2065569911125258260 |
 | low | new_event_candidate | new | event | イベント候補「町会で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会で盆踊り | 町会で盆踊り 盆踊り | https://x.com/doamo7423/status/2077700057617633667 |
 | low | new_event_candidate | new | event | イベント候補「町会のおばあちゃんたちに混じって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会のおばあちゃんたちに混じって盆踊り | 町会のおばあちゃんたちに混じって盆踊り 盆踊り | https://x.com/yuyucm/status/2076187878351327266 |
+| low | new_event_candidate | new | event | イベント候補「町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会の盆踊り | 町会の盆踊り 盆踊り | https://x.com/slehama/status/2087331178324070767 |
 | low | new_event_candidate | new | event | イベント候補「町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会の盆踊り, 今シーズンの盆踊り | 町会の盆踊り 盆踊り; 今シーズンの盆踊り 盆踊り | https://x.com/wasabizake1/status/2086792675416739935 |
 | low | new_event_candidate | new | event | イベント候補「町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会の盆踊り | 町会の盆踊り 盆踊り | https://x.com/wasabizake1/status/2086110936335884612 |
 | low | new_event_candidate | new | event | イベント候補「町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会の盆踊り | 町会の盆踊り 盆踊り | https://x.com/moekichi_tantan/status/2084934378136928288 |
@@ -13134,6 +13555,7 @@
 | low | new_event_candidate | new | event | イベント候補「町会連合会の講習会課題曲に選ばれないと町内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会連合会の講習会課題曲に選ばれないと町内盆踊り | 町会連合会の講習会課題曲に選ばれないと町内盆踊り 盆踊り | https://x.com/vivanon_iemoto/status/2075172604093345931 |
 | low | new_event_candidate | new | event | イベント候補「町会長犬を預かる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町会長犬を預かる盆踊り | 町会長犬を預かる盆踊り 盆踊り | https://x.com/sainouari575/status/2081763758452752406 |
 | low | new_event_candidate | new | event | イベント候補「町内の区長さんに頼まれたから暑いけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町内の区長さんに頼まれたから暑いけど盆踊り | 町内の区長さんに頼まれたから暑いけど盆踊り 盆踊り | https://x.com/kotaro5im9/status/2081279921675186200 |
+| low | new_event_candidate | new | event | イベント候補「町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町内の盆踊り | 町内の盆踊り 盆踊り | https://x.com/yahihoma/status/2087164817232859458 |
 | low | new_event_candidate | new | event | イベント候補「町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町内の盆踊り | 町内の盆踊り 盆踊り | https://x.com/Kid50S/status/2086737301863010763 |
 | low | new_event_candidate | new | event | イベント候補「町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町内の盆踊り | 町内の盆踊り 盆踊り | https://x.com/pinboko0309/status/2086733348706418982 |
 | low | new_event_candidate | new | event | イベント候補「町内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 町内の盆踊り | 町内の盆踊り 盆踊り; サミアどん音頭 盆踊り | https://x.com/ViolinNoMusume/status/2085870586019110950 |
@@ -13191,6 +13613,7 @@
 | low | new_event_candidate | new | event | イベント候補「画像だけでも涼みましょう キャンベルちゃんと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 画像だけでも涼みましょう キャンベルちゃんと盆踊り | 画像だけでも涼みましょう キャンベルちゃんと盆踊り 盆踊り | https://x.com/Slot_viernes/status/2081647796499739102 |
 | low | new_event_candidate | new | event | イベント候補「画像は日曜日に開催されていた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 画像は日曜日に開催されていた盆踊り | 画像は日曜日に開催されていた盆踊り 盆踊り | https://x.com/PyO3mbXaIvzB3LD/status/2082226542567191024 |
 | low | new_event_candidate | new | event | イベント候補「留学先で出会った盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 留学先で出会った盆踊り | 留学先で出会った盆踊り 盆踊り; 夏の夜は毎夜踊り 盆踊り | https://x.com/numa_huka1/status/2082310706804982227 |
+| low | new_event_candidate | new | event | イベント候補「畝部地区納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 畝部地区納涼盆踊り | 畝部地区納涼盆踊り 盆踊り | https://x.com/Dereareyanradio/status/2087391172893573417 |
 | low | new_event_candidate | new | event | イベント候補「番楽しみなのは盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 番楽しみなのは盆踊り | 番楽しみなのは盆踊り 盆踊り | https://x.com/Miyabi_mango/status/2069439556869669251 |
 | low | new_event_candidate | new | event | イベント候補「番目の栗橋宿の昔より 踊られていたという 「栗橋音頭の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 番目の栗橋宿の昔より 踊られていたという 「栗橋音頭の盆踊り, 栗橋音頭の盆踊り | 番目の栗橋宿の昔より 踊られていたという 「栗橋音頭の盆踊り 盆踊り; 栗橋音頭の盆踊り 盆踊り | https://x.com/N2ICsv0UCLMZ6Wl/status/2062559522049389041 |
 | low | new_event_candidate | new | event | イベント候補「番組テーマ「夏の楽しみ」福島はこれからわらじ祭り・各地での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 番組テーマ「夏の楽しみ」福島はこれからわらじ祭り・各地での盆踊り | 番組テーマ「夏の楽しみ」福島はこれからわらじ祭り・各地での盆踊り 盆踊り | https://x.com/FMPOCO/status/2082212013376459075 |
@@ -13239,6 +13662,8 @@
 | low | new_event_candidate | new | event | イベント候補「盆踊りがうるさい」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りがうるさい | 盆踊りがうるさい 盆踊り | https://x.com/yoshino3ren/status/2086154917656539400 |
 | low | new_event_candidate | new | event | イベント候補「盆踊りがうるさい」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りがうるさい | 盆踊りがうるさい 盆踊り | https://x.com/sstu_no_tmpr/status/2085290992207544831 |
 | low | new_event_candidate | new | event | イベント候補「盆踊りがウルサイ」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りがウルサイ | 盆踊りがウルサイ 盆踊り | https://x.com/Freesia1421545/status/2086612322337108073 |
+| low | new_event_candidate | new | event | イベント候補「盆踊りが中止になった」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りが中止になった | 盆踊りが中止になった 盆踊り | https://x.com/kumipon2016/status/2087381708891132366 |
+| low | new_event_candidate | new | event | イベント候補「盆踊りが合コンになった事あるなんて 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りが合コンになった事あるなんて 盆踊り | 盆踊りが合コンになった事あるなんて 盆踊り 盆踊り | https://x.com/kyotoloversclub/status/2087443641426137390 |
 | low | new_event_candidate | new | event | イベント候補「盆踊りが始まる直前ぐらいに降り始めて多くの関係者と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りが始まる直前ぐらいに降り始めて多くの関係者と盆踊り | 盆踊りが始まる直前ぐらいに降り始めて多くの関係者と盆踊り 盆踊り | https://x.com/kuma_bot999/status/2081062695906988044 |
 | low | new_event_candidate | new | event | イベント候補「盆踊りが楽しくないとはもちろん言ってないw 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りが楽しくないとはもちろん言ってないw 盆踊り | 盆踊りが楽しくないとはもちろん言ってないw 盆踊り 盆踊り; あともう一つは民謡踊り 盆踊り | https://x.com/kuma_bot999/status/2079056142370767329 |
 | low | new_event_candidate | new | event | イベント候補「盆踊りが開催され屋台も出て賑わっています 是非お越し下さい」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 盆踊りが開催され屋台も出て賑わっています 是非お越し下さい | 盆踊りが開催され屋台も出て賑わっています 是非お越し下さい 盆踊り | https://x.com/I60sI80002/status/2084835964401357080 |
@@ -13358,6 +13783,7 @@
 | low | new_event_candidate | new | event | イベント候補「知らないタイプの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 知らないタイプの盆踊り | 知らないタイプの盆踊り 盆踊り | https://x.com/oru_btype/status/2079038709471875409 |
 | low | new_event_candidate | new | event | イベント候補「知らん人を盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 知らん人を盆踊り | 知らん人を盆踊り 盆踊り | https://x.com/hhtm_2k/status/2061982014669218154 |
 | low | new_event_candidate | new | event | イベント候補「知らん単語しか出てこないwww 何故か盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 知らん単語しか出てこないwww 何故か盆踊り | 知らん単語しか出てこないwww 何故か盆踊り 盆踊り; 河内音頭 盆踊り; をねじ込む河内音頭 盆踊り | https://x.com/HIBARUno2/status/2065608246375977164 |
+| low | new_event_candidate | new | event | イベント候補「短歌 盆踊り 夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 短歌 盆踊り 夏祭り | 短歌 盆踊り 夏祭り 盆踊り | https://x.com/tetsuwanamano/status/2087447977938034697 |
 | low | new_event_candidate | new | event | イベント候補「石が欲しいので今日はex塩を進めるわけですが4ね4ね盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 石が欲しいので今日はex塩を進めるわけですが4ね4ね盆踊り | 石が欲しいので今日はex塩を進めるわけですが4ね4ね盆踊り 盆踊り | https://x.com/okayuuuuu00/status/2064556643501924841 |
 | low | new_event_candidate | new | event | イベント候補「石引ゲバゲバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 石引ゲバゲバ盆踊り | 石引ゲバゲバ盆踊り 盆踊り; なんてあってもなくても 盆踊り | https://x.com/mato_knao/status/2084144017621835920 |
 | low | new_event_candidate | new | event | イベント候補「石引町の石引ゲバゲバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 石引町の石引ゲバゲバ盆踊り | 石引町の石引ゲバゲバ盆踊り 盆踊り | https://x.com/joullyn/status/2083471153532895462 |
@@ -13382,8 +13808,10 @@
 | low | new_event_candidate | new | event | イベント候補「祐天寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祐天寺の盆踊り | 祐天寺の盆踊り 盆踊り | https://x.com/yukie_gokigen/status/2077670829706621235 |
 | low | new_event_candidate | new | event | イベント候補「祐天寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祐天寺の盆踊り | 祐天寺の盆踊り 盆踊り | https://x.com/_yumemigati/status/2077665967438782975 |
 | low | new_event_candidate | new | event | イベント候補「祖師谷観世音堂祭礼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祖師谷観世音堂祭礼盆踊り, 給田納涼盆踊り | 祖師谷観世音堂祭礼盆踊り 盆踊り; 給田納涼盆踊り 盆踊り | https://x.com/ochiaitakayuki/status/2086422735513928026 |
+| low | new_event_candidate | new | event | イベント候補「祖母に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祖母に盆踊り | 祖母に盆踊り 盆踊り | https://x.com/R1864450832/status/2087373184203141189 |
 | low | new_event_candidate | new | event | イベント候補「祖父母宅の方の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 祖父母宅の方の盆踊り | 祖父母宅の方の盆踊り 盆踊り | https://x.com/Boo_Tamu_Game/status/2086320237742633200 |
 | low | new_event_candidate | new | event | イベント候補「神宮寺くんの地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神宮寺くんの地元の盆踊り | 神宮寺くんの地元の盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/timid_H/status/2085988794650808674 |
+| low | new_event_candidate | new | event | イベント候補「神州そば切り音頭を踊りに松本市浅間温泉の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神州そば切り音頭を踊りに松本市浅間温泉の盆踊り, 青山様終わったらいよいよ盆踊り | 神州そば切り音頭を踊りに松本市浅間温泉の盆踊り 盆踊り; 青山様終わったらいよいよ盆踊り 盆踊り | https://x.com/nobu_harapeko/status/2087121246014345505 |
 | low | new_event_candidate | new | event | イベント候補「神戸は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神戸は盆踊り | 神戸は盆踊り 盆踊り | https://x.com/skydolphin_M_/status/2083081851711930442 |
 | low | new_event_candidate | new | event | イベント候補「神戸や東京の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神戸や東京の盆踊り | 神戸や東京の盆踊り 盆踊り | https://x.com/hoshibana_/status/2084914424150900751 |
 | low | new_event_candidate | new | event | イベント候補「神戸ハーバーランドで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神戸ハーバーランドで盆踊り | 神戸ハーバーランドで盆踊り 盆踊り | https://x.com/x8LLcjcKleg56fq/status/2086955885356785908 |
@@ -13392,6 +13820,7 @@
 | low | new_event_candidate | new | event | イベント候補「神楽坂夏まつり】多くの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神楽坂夏まつり】多くの盆踊り, 国際色豊かな盆踊り | 神楽坂夏まつり】多くの盆踊り 盆踊り; 国際色豊かな盆踊り 盆踊り | https://x.com/ototake_field/status/2079114085921382775 |
 | low | new_event_candidate | new | event | イベント候補「神様の掌でクルクル盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神様の掌でクルクル盆踊り | 神様の掌でクルクル盆踊り 盆踊り | https://x.com/hinachico/status/2087067664846069946 |
 | low | new_event_candidate | new | event | イベント候補「神田アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田アニソン盆踊り, クックロビン音頭 | 神田アニソン盆踊り 盆踊り; クックロビン音頭 盆踊り; クックロビン音頭 盆踊り | https://x.com/dare_ef/status/2086335416668672090 |
+| low | new_event_candidate | new | event | イベント候補「神田明神 アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神 アニソン盆踊り | 神田明神 アニソン盆踊り 盆踊り | https://x.com/ZUBAT3JYOU/status/2087327825909170662 |
 | low | new_event_candidate | new | event | イベント候補「神田明神 アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神 アニソン盆踊り | 神田明神 アニソン盆踊り 盆踊り | https://x.com/takachonb/status/2085949382235701315 |
 | low | new_event_candidate | new | event | イベント候補「神田明神いったとき盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神いったとき盆踊り | 神田明神いったとき盆踊り 盆踊り | https://x.com/m_t_r66244/status/2085984381038960877 |
 | low | new_event_candidate | new | event | イベント候補「神田明神でアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神でアニソン盆踊り | 神田明神でアニソン盆踊り 盆踊り | https://x.com/hangyaku777/status/2085626646758141969 |
@@ -13399,6 +13828,7 @@
 | low | new_event_candidate | new | event | イベント候補「神田明神で明日にアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神で明日にアニソン盆踊り | 神田明神で明日にアニソン盆踊り 盆踊り | https://x.com/hirarinkira/status/2085261176263639422 |
 | low | new_event_candidate | new | event | イベント候補「神田明神の7日のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神の7日のアニソン盆踊り, 因みに動画は数年前に神田明神で開催されたアニソン盆踊り | 神田明神の7日のアニソン盆踊り 盆踊り; 因みに動画は数年前に神田明神で開催されたアニソン盆踊り 盆踊り | https://x.com/ikaros_P/status/2086329232586895701 |
 | low | new_event_candidate | new | event | イベント候補「神田明神のお祭り行こうかな アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神のお祭り行こうかな アニソン盆踊り | 神田明神のお祭り行こうかな アニソン盆踊り 盆踊り | https://x.com/reoreogames/status/2085611223337627899 |
+| low | new_event_candidate | new | event | イベント候補「神田明神のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神のアニソン盆踊り | 神田明神のアニソン盆踊り 盆踊り | https://x.com/lov_iori/status/2087375158243917933 |
 | low | new_event_candidate | new | event | イベント候補「神田明神のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神のアニソン盆踊り, 昔は地元町会のそばにある公園で盆踊り, 唯一見たのは深大寺の盆踊り | 神田明神のアニソン盆踊り 盆踊り; 昔は地元町会のそばにある公園で盆踊り 盆踊り | https://x.com/SkyCrater1/status/2086208704110874682 |
 | low | new_event_candidate | new | event | イベント候補「神田明神のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神のアニソン盆踊り | 神田明神のアニソン盆踊り 盆踊り | https://x.com/1126Kazumax/status/2085987322915631545 |
 | low | new_event_candidate | new | event | イベント候補「神田明神のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 神田明神のアニソン盆踊り | 神田明神のアニソン盆踊り 盆踊り | https://x.com/kangarucon/status/2085986766230864112 |
@@ -13480,6 +13910,7 @@
 | low | new_event_candidate | new | event | イベント候補「秋田県の西馬音内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 秋田県の西馬音内の盆踊り | 秋田県の西馬音内の盆踊り 盆踊り | https://x.com/SjKhmFaWEZhDVsg/status/2079114956428161173 |
 | low | new_event_candidate | new | event | イベント候補「秋葉も近いしアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 秋葉も近いしアニソン盆踊り | 秋葉も近いしアニソン盆踊り 盆踊り | https://x.com/Yasmin_JPN/status/2085955690456367271 |
 | low | new_event_candidate | new | event | イベント候補「秋葉原っぱフェスティバル巡り 27日アキバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 秋葉原っぱフェスティバル巡り 27日アキバ盆踊り | 秋葉原っぱフェスティバル巡り 27日アキバ盆踊り 盆踊り | https://x.com/t_h___jinba9/status/2066531431485178298 |
+| low | new_event_candidate | new | event | イベント候補「秘匿4PL何年ぶりかに誘われて嬉しくて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 秘匿4PL何年ぶりかに誘われて嬉しくて盆踊り | 秘匿4PL何年ぶりかに誘われて嬉しくて盆踊り 盆踊り | https://x.com/IamUesama4649/status/2087440566229561419 |
 | low | new_event_candidate | new | event | イベント候補「移住先のでかい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 移住先のでかい盆踊り | 移住先のでかい盆踊り 盆踊り | https://x.com/tsukasa72/status/2081652252402668009 |
 | low | new_event_candidate | new | event | イベント候補「移動して十条駅前盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 移動して十条駅前盆踊り | 移動して十条駅前盆踊り 盆踊り | https://x.com/fried_wakame/status/2086683471829983557 |
 | low | new_event_candidate | new | event | イベント候補「移民が浴衣着て盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 移民が浴衣着て盆踊り | 移民が浴衣着て盆踊り 盆踊り | https://x.com/miy_0913/status/2069235005235269806 |
@@ -13513,6 +13944,7 @@
 | low | new_event_candidate | new | event | イベント候補「立川妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 立川妖怪盆踊り | 立川妖怪盆踊り 盆踊り | https://x.com/UnOMKiqwkr52927/status/2081670924575879475 |
 | low | new_event_candidate | new | event | イベント候補「立川妖怪盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 立川妖怪盆踊り | 立川妖怪盆踊り 盆踊り | https://x.com/mafuyuko1/status/2079130355613995486 |
 | low | new_event_candidate | new | event | イベント候補「竹駒神社のトークショーも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 竹駒神社のトークショーも盆踊り | 竹駒神社のトークショーも盆踊り 盆踊り | https://x.com/U_kiyakonkon/status/2086724923435995297 |
+| low | new_event_candidate | new | event | イベント候補「竹駒神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 竹駒神社の盆踊り | 竹駒神社の盆踊り 盆踊り | https://x.com/ankoomori/status/2087373704733090175 |
 | low | new_event_candidate | new | event | イベント候補「竹駒神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 竹駒神社の盆踊り | 竹駒神社の盆踊り 盆踊り | https://x.com/mosashimi/status/2086303587710484691 |
 | low | new_event_candidate | new | event | イベント候補「竹駒神社の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 竹駒神社の盆踊り | 竹駒神社の盆踊り 盆踊り | https://x.com/ankoomori/status/2079108758542958626 |
 | low | new_event_candidate | new | event | イベント候補「竹駒神社コラボ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 竹駒神社コラボ盆踊り, 生誕祭と盆踊り | 竹駒神社コラボ盆踊り 盆踊り; 生誕祭と盆踊り 盆踊り | https://x.com/ankoomori/status/2086656286813548556 |
@@ -13536,6 +13968,7 @@
 | low | new_event_candidate | new | event | イベント候補「笠間の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間の盆踊り | 笠間の盆踊り 盆踊り | https://x.com/sayaka5124488/status/2077620563653402771 |
 | low | new_event_candidate | new | event | イベント候補「笠間・大池公園で「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間・大池公園で「納涼盆踊り, 納涼盆踊り花火大会 | 笠間・大池公園で「納涼盆踊り 盆踊り; 納涼盆踊り花火大会 盆踊り | https://x.com/hinumamaekawa/status/2085251588688625740 |
 | low | new_event_candidate | new | event | イベント候補「笠間・大池公園で「納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間・大池公園で「納涼盆踊り, 納涼盆踊り花火大会 | 笠間・大池公園で「納涼盆踊り 盆踊り; 納涼盆踊り花火大会 盆踊り | https://x.com/CU4gVf8X6RDgpHC/status/2084843000501530869 |
+| low | new_event_candidate | new | event | イベント候補「笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間納涼盆踊り | 笠間納涼盆踊り 盆踊り | https://x.com/balloon_MIHARU/status/2087359516585423019 |
 | low | new_event_candidate | new | event | イベント候補「笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間納涼盆踊り | 笠間納涼盆踊り 盆踊り | https://x.com/smile_n703/status/2087018296868806675 |
 | low | new_event_candidate | new | event | イベント候補「笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間納涼盆踊り | 笠間納涼盆踊り 盆踊り | https://x.com/yutoadachi/status/2086664703145922893 |
 | low | new_event_candidate | new | event | イベント候補「笠間納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 笠間納涼盆踊り | 笠間納涼盆踊り 盆踊り; 盛り上がっております- ̗̀📣 盆踊り | https://x.com/AYHDRIVEIN/status/2086724185540448411 |
@@ -13599,6 +14032,7 @@
 | low | new_event_candidate | new | event | イベント候補「築地納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地納涼盆踊り | 築地納涼盆踊り 盆踊り | https://x.com/ojPcf04MQq73610/status/2083534835919049150 |
 | low | new_event_candidate | new | event | イベント候補「築地納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 築地納涼盆踊り | 築地納涼盆踊り 盆踊り; ホームラン音頭 盆踊り | https://x.com/GINGA2019/status/2083472860711170059 |
 | low | new_event_candidate | new | event | イベント候補「紅梅小の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 紅梅小の盆踊り | 紅梅小の盆踊り 盆踊り | https://x.com/myu_sucre/status/2086346011820105978 |
+| low | new_event_candidate | new | event | イベント候補「紅葉山駅前の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 紅葉山駅前の盆踊り | 紅葉山駅前の盆踊り 盆踊り | https://x.com/pbxw6K6sYhE3nKN/status/2087368641134362891 |
 | low | new_event_candidate | new | event | イベント候補「紅蓮祭ボトルレターもよかったんだけどそろそろ過去にあった盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 紅蓮祭ボトルレターもよかったんだけどそろそろ過去にあった盆踊り | 紅蓮祭ボトルレターもよかったんだけどそろそろ過去にあった盆踊り 盆踊り | https://x.com/yuuya_sj_/status/2084923659857297434 |
 | low | new_event_candidate | new | event | イベント候補「納涼まつりを更に盛り上げる為に 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼まつりを更に盛り上げる為に 盆踊り | 納涼まつりを更に盛り上げる為に 盆踊り 盆踊り | https://x.com/shimadacomm/status/2069878767288541501 |
 | low | new_event_candidate | new | event | イベント候補「納涼大会的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼大会的な盆踊り | 納涼大会的な盆踊り 盆踊り; 念仏踊り 盆踊り | https://x.com/uriumasataka/status/2076857667293970879 |
@@ -13621,12 +14055,14 @@
 | low | new_event_candidate | new | event | イベント候補「納涼祭からの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼祭からの盆踊り | 納涼祭からの盆踊り 盆踊り | https://x.com/sakana_1968/status/2081972724784844875 |
 | low | new_event_candidate | new | event | イベント候補「納涼祭の解禁方法わからなくて詰んだ かき氷食べて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 納涼祭の解禁方法わからなくて詰んだ かき氷食べて盆踊り | 納涼祭の解禁方法わからなくて詰んだ かき氷食べて盆踊り 盆踊り | https://x.com/viola11k/status/2068259314276655575 |
 | low | new_event_candidate | new | event | イベント候補「紙すばいじゃないwww 北海道はこの曲で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 紙すばいじゃないwww 北海道はこの曲で盆踊り | 紙すばいじゃないwww 北海道はこの曲で盆踊り 盆踊り | https://x.com/okn98/status/2063046467720519788 |
+| low | new_event_candidate | new | event | イベント候補「素敵な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 素敵な盆踊り | 素敵な盆踊り 盆踊り; 行ってきました♪ 盆踊り | https://x.com/AMEKAdesu/status/2087333960846381277 |
 | low | new_event_candidate | new | event | イベント候補「素敵な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 素敵な盆踊り | 素敵な盆踊り 盆踊り | https://x.com/Shakuo_Fujikawa/status/2073380682643235144 |
 | low | new_event_candidate | new | event | イベント候補「素敵可愛い水着 カッコイイ「ぽいとん海賊団」 マイルでの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 素敵可愛い水着 カッコイイ「ぽいとん海賊団」 マイルでの盆踊り | 素敵可愛い水着 カッコイイ「ぽいとん海賊団」 マイルでの盆踊り 盆踊り | https://x.com/shiru_toram/status/2086716712427335698 |
 | low | new_event_candidate | new | event | イベント候補「素麺をもらったんだが帰りに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 素麺をもらったんだが帰りに盆踊り | 素麺をもらったんだが帰りに盆踊り 盆踊り | https://x.com/waterdragon1110/status/2086711358847119631 |
 | low | new_event_candidate | new | event | イベント候補「細胞から踊り倒す盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 細胞から踊り倒す盆踊り | 細胞から踊り倒す盆踊り 盆踊り | https://x.com/tsingtaooo/status/2063582367537885194 |
 | low | new_event_candidate | new | event | イベント候補「終わりにみんなで中野盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 終わりにみんなで中野盆踊り | 終わりにみんなで中野盆踊り 盆踊り | https://x.com/sugusen_uraaka/status/2083769327678001316 |
 | low | new_event_candidate | new | event | イベント候補「終わりは納涼だよなあ 納涼といえば盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 終わりは納涼だよなあ 納涼といえば盆踊り | 終わりは納涼だよなあ 納涼といえば盆踊り 盆踊り | https://x.com/Judah_sing/status/2075790041209794853 |
+| low | new_event_candidate | new | event | イベント候補「終了後も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 終了後も盆踊り | 終了後も盆踊り 盆踊り | https://x.com/sako_abuddy/status/2087365771236446403 |
 | low | new_event_candidate | new | event | イベント候補「組の板橋区の踊らーさんから 関わっている盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 組の板橋区の踊らーさんから 関わっている盆踊り | 組の板橋区の踊らーさんから 関わっている盆踊り 盆踊り | https://x.com/rollingasahi/status/2075916489757192552 |
 | low | new_event_candidate | new | event | イベント候補「結構ヒロアカきたコスで好評だったので盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 結構ヒロアカきたコスで好評だったので盆踊り | 結構ヒロアカきたコスで好評だったので盆踊り 盆踊り | https://x.com/Z_YO_TO18/status/2063154184850223451 |
 | low | new_event_candidate | new | event | イベント候補「結構気をつけてることあるんですよ 自由に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 結構気をつけてることあるんですよ 自由に盆踊り | 結構気をつけてることあるんですよ 自由に盆踊り 盆踊り; 被りすぎて他人 盆踊り; 狙ったりしてる 盆踊り | https://x.com/SSqq47356585/status/2086329471318347810 |
@@ -13642,6 +14078,7 @@
 | low | new_event_candidate | new | event | イベント候補「続いて『死霊の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続いて『死霊の盆踊り, 死霊の盆踊り | 続いて『死霊の盆踊り 盆踊り; 死霊の盆踊り 盆踊り | https://x.com/takuyaz/status/2064015218641088799 |
 | low | new_event_candidate | new | event | イベント候補「続いて伺ったのは東郷町春木台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続いて伺ったのは東郷町春木台盆踊り | 続いて伺ったのは東郷町春木台盆踊り 盆踊り | https://x.com/HirohitoKondo/status/2083885113109295491 |
 | low | new_event_candidate | new | event | イベント候補「続いて増上寺盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続いて増上寺盆踊り | 続いて増上寺盆踊り 盆踊り | https://x.com/wadaikoCH/status/2080973015693840883 |
+| low | new_event_candidate | new | event | イベント候補「続いて始まった盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続いて始まった盆踊り | 続いて始まった盆踊り 盆踊り | https://x.com/kofu_kanko/status/2087385725667057810 |
 | low | new_event_candidate | new | event | イベント候補「続きましてエコパークで行われている堀向自治連合会主催の納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続きましてエコパークで行われている堀向自治連合会主催の納涼盆踊り | 続きましてエコパークで行われている堀向自治連合会主催の納涼盆踊り 盆踊り | https://x.com/boxer_shingo/status/2078387895837298926 |
 | low | new_event_candidate | new | event | イベント候補「続き見れて発狂 一人で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続き見れて発狂 一人で盆踊り | 続き見れて発狂 一人で盆踊り 盆踊り | https://x.com/Bocchi_one_of/status/2066508469432381478 |
 | low | new_event_candidate | new | event | イベント候補「続き） 25日(土)・26日(日)は毎年恒例の「みどりまち盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 続き） 25日(土)・26日(日)は毎年恒例の「みどりまち盆踊り, みどりまち盆踊り | 続き） 25日(土)・26日(日)は毎年恒例の「みどりまち盆踊り 盆踊り; みどりまち盆踊り 盆踊り | https://x.com/mikenekozakka/status/2075780176315891948 |
@@ -13662,7 +14099,6 @@
 | low | new_event_candidate | new | event | イベント候補「練習会に向けての練習中 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練習会に向けての練習中 盆踊り | 練習会に向けての練習中 盆踊り 盆踊り | https://x.com/yui_shinkuu/status/2070702762032353389 |
 | low | new_event_candidate | new | event | イベント候補「練習会は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練習会は盆踊り | 練習会は盆踊り 盆踊り | https://x.com/nori19732/status/2086085964120850440 |
 | low | new_event_candidate | new | event | イベント候補「練習会行った後盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練習会行った後盆踊り | 練習会行った後盆踊り 盆踊り | https://x.com/R_Third_rupus/status/2085987732908835005 |
-| low | new_event_candidate | new | event | イベント候補「練馬区にある三原台公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練馬区にある三原台公園の盆踊り, 日中は娘の合唱発表で近所のお祭りに夜は練馬区の盆踊り | 練馬区にある三原台公園の盆踊り 盆踊り; 日中は娘の合唱発表で近所のお祭りに夜は練馬区の盆踊り 盆踊り | https://x.com/kajix_japan/status/2081010715658469541 |
 | low | new_event_candidate | new | event | イベント候補「練馬区・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練馬区・盆踊り | 練馬区・盆踊り 盆踊り | https://x.com/komaikai/status/2071438479612104934 |
 | low | new_event_candidate | new | event | イベント候補「練馬区内で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練馬区内で盆踊り | 練馬区内で盆踊り 盆踊り | https://x.com/Kt19980201/status/2084557798642455010 |
 | low | new_event_candidate | new | event | イベント候補「練馬区春日町の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 練馬区春日町の盆踊り | 練馬区春日町の盆踊り 盆踊り | https://x.com/bonDsuzuki/status/2083780900962365813 |
@@ -13686,6 +14122,7 @@
 | low | new_event_candidate | new | event | イベント候補「群馬・伊勢崎にお邪魔して 駅前のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 群馬・伊勢崎にお邪魔して 駅前のアニソン盆踊り | 群馬・伊勢崎にお邪魔して 駅前のアニソン盆踊り 盆踊り | https://x.com/kariki81/status/2078843155458507255 |
 | low | new_event_candidate | new | event | イベント候補「羽根さん家」で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 羽根さん家」で盆踊り, 広くて涼しい「羽根さん家」で盆踊り, 東京音頭 | 羽根さん家」で盆踊り 盆踊り; 広くて涼しい「羽根さん家」で盆踊り 盆踊り; 東京音頭 盆踊り | https://x.com/hanesanchi55/status/2082364664609186119 |
 | low | new_event_candidate | new | event | イベント候補「羽津地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 羽津地区の盆踊り | 羽津地区の盆踊り 盆踊り | https://x.com/13silvia_180sx/status/2081350689822011635 |
+| low | new_event_candidate | new | event | イベント候補「羽須美地域の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 羽須美地域の盆踊り, 羽須美地域の盆踊り&amp;夏まつり情報🏮✨ | 羽須美地域の盆踊り 盆踊り; 羽須美地域の盆踊り&amp;夏まつり情報🏮✨ 盆踊り | https://x.com/hasumisinkoukai/status/2087414366031532417 |
 | low | new_event_candidate | new | event | イベント候補「翌日 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 翌日 盆踊り | 翌日 盆踊り 盆踊り | https://x.com/HbkdxqrjSkLMKk4/status/2061970482489172096 |
 | low | new_event_candidate | new | event | イベント候補「習志野市役所の依頼である老人施設の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 習志野市役所の依頼である老人施設の盆踊り | 習志野市役所の依頼である老人施設の盆踊り 盆踊り | https://x.com/sunshine2475/status/2069284474584744432 |
 | low | new_event_candidate | new | event | イベント候補「翔ちゃんこんばんわ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 翔ちゃんこんばんわ 盆踊り | 翔ちゃんこんばんわ 盆踊り 盆踊り | https://x.com/michan131313/status/2081681104818573491 |
@@ -13741,6 +14178,7 @@
 | low | new_event_candidate | new | event | イベント候補「自治会の夏祭り 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の夏祭り 盆踊り | 自治会の夏祭り 盆踊り 盆踊り | https://x.com/YUYAs621203/status/2065624514432733390 |
 | low | new_event_candidate | new | event | イベント候補「自治会の夏祭り兼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の夏祭り兼盆踊り | 自治会の夏祭り兼盆踊り 盆踊り | https://x.com/watabieni/status/2075901528423243949 |
 | low | new_event_candidate | new | event | イベント候補「自治会の役員だから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の役員だから盆踊り | 自治会の役員だから盆踊り 盆踊り | https://x.com/335osprey/status/2086969764333944917 |
+| low | new_event_candidate | new | event | イベント候補「自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の盆踊り | 自治会の盆踊り 盆踊り | https://x.com/1koXALSOrawKkff/status/2087177653614997508 |
 | low | new_event_candidate | new | event | イベント候補「自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の盆踊り | 自治会の盆踊り 盆踊り | https://x.com/miracle_norton/status/2086031391633166602 |
 | low | new_event_candidate | new | event | イベント候補「自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の盆踊り | 自治会の盆踊り 盆踊り | https://x.com/4AEm7i2Vmv2Bpd3/status/2086020797341315325 |
 | low | new_event_candidate | new | event | イベント候補「自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の盆踊り | 自治会の盆踊り 盆踊り | https://x.com/1koXALSOrawKkff/status/2085845174899630375 |
@@ -13759,9 +14197,11 @@
 | low | new_event_candidate | new | event | イベント候補「自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の盆踊り, 6年勤めたPTAで子供会の盆踊り | 自治会の盆踊り 盆踊り; 6年勤めたPTAで子供会の盆踊り 盆踊り | https://x.com/hilowmy_/status/2064859744398147584 |
 | low | new_event_candidate | new | event | イベント候補「自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会の盆踊り | 自治会の盆踊り 盆踊り | https://x.com/cqtl_s/status/2064197857805205900 |
 | low | new_event_candidate | new | event | イベント候補「自治会は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会は盆踊り | 自治会は盆踊り 盆踊り | https://x.com/BdALCrM7jm50726/status/2078444028048318612 |
+| low | new_event_candidate | new | event | イベント候補「自治会・町内会・子ども会の夏祭り司会台本 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会・町内会・子ども会の夏祭り司会台本 盆踊り | 自治会・町内会・子ども会の夏祭り司会台本 盆踊り 盆踊り | https://x.com/kazuhanote/status/2087405263884271986 |
 | low | new_event_candidate | new | event | イベント候補「自治会主催の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会主催の盆踊り | 自治会主催の盆踊り 盆踊り | https://x.com/tokyojoshua/status/2081844390386176169 |
 | low | new_event_candidate | new | event | イベント候補「自治会会員として地域の祭りの裏方をやるから他の地区の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会会員として地域の祭りの裏方をやるから他の地区の盆踊り, いう前置きをすっとばして「盆踊り, 盆踊りに行く | 自治会会員として地域の祭りの裏方をやるから他の地区の盆踊り 盆踊り; いう前置きをすっとばして「盆踊り 盆踊り | https://x.com/itaru1964/status/2078328290386092275 |
 | low | new_event_candidate | new | event | イベント候補「自治会盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治会盆踊り | 自治会盆踊り 盆踊り | https://x.com/hikeshiya/status/2085920880442642530 |
+| low | new_event_candidate | new | event | イベント候補「自治体が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自治体が盆踊り | 自治体が盆踊り 盆踊り | https://x.com/hemuhemugogo/status/2087110437406122441 |
 | low | new_event_candidate | new | event | イベント候補「自由が丘に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自由が丘に盆踊り | 自由が丘に盆踊り 盆踊り | https://x.com/Orcinus_orcas/status/2079110507915866328 |
 | low | new_event_candidate | new | event | イベント候補「自由が丘は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自由が丘は盆踊り | 自由が丘は盆踊り 盆踊り; パタリロ音頭 盆踊り | https://x.com/douran/status/2078388224180072953 |
 | low | new_event_candidate | new | event | イベント候補「自由が丘盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自由が丘盆踊り | 自由が丘盆踊り 盆踊り | https://x.com/Himayuchang/status/2079435290394104079 |
@@ -13786,6 +14226,7 @@
 | low | new_event_candidate | new | event | イベント候補「自転車屋さんへのアケチコさんの自己紹介が今日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 自転車屋さんへのアケチコさんの自己紹介が今日盆踊り | 自転車屋さんへのアケチコさんの自己紹介が今日盆踊り 盆踊り | https://x.com/71nana___t/status/2081672391340835327 |
 | low | new_event_candidate | new | event | イベント候補「至る所で大量のヤリラが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 至る所で大量のヤリラが盆踊り | 至る所で大量のヤリラが盆踊り 盆踊り | https://x.com/nzm_abracadabra/status/2083450163725746282 |
 | low | new_event_candidate | new | event | イベント候補「舞鶴城公園にて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舞鶴城公園にて盆踊り | 舞鶴城公園にて盆踊り 盆踊り | https://x.com/xxxvvvERIvvvxxx/status/2087071214905024980 |
+| low | new_event_candidate | new | event | イベント候補「舟渡ホール盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舟渡ホール盆踊り | 舟渡ホール盆踊り 盆踊り | https://x.com/takasho06130613/status/2087166712835875243 |
 | low | new_event_candidate | new | event | イベント候補「舟渡小学校盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 舟渡小学校盆踊り | 舟渡小学校盆踊り 盆踊り | https://x.com/takasho06130613/status/2077683131529007526 |
 | low | new_event_candidate | new | event | イベント候補「船上は花火に合わせて縁日やっててわたあめ食べたり射的やったり盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 船上は花火に合わせて縁日やっててわたあめ食べたり射的やったり盆踊り | 船上は花火に合わせて縁日やっててわたあめ食べたり射的やったり盆踊り 盆踊り | https://x.com/tamaminori/status/2087066888719548467 |
 | low | new_event_candidate | new | event | イベント候補「船越の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 船越の盆踊り | 船越の盆踊り 盆踊り; 的には西矢部 盆踊り | https://x.com/Tamax0/status/2085272997741695288 |
@@ -13839,6 +14280,7 @@
 | low | new_event_candidate | new | event | イベント候補「若松地域センターの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 若松地域センターの盆踊り, 神楽坂の盆踊り, 二十一世紀音頭 | 若松地域センターの盆踊り 盆踊り; 神楽坂の盆踊り 盆踊り; 二十一世紀音頭 盆踊り | https://x.com/kimoto_komei/status/2082461666672025662 |
 | low | new_event_candidate | new | event | イベント候補「若林小学校盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 若林小学校盆踊り, 世田谷駅前盆踊り | 若林小学校盆踊り 盆踊り; 世田谷駅前盆踊り 盆踊り | https://x.com/mana_setagaya/status/2080945633482207538 |
 | low | new_event_candidate | new | event | イベント候補「若者の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 若者の盆踊り | 若者の盆踊り 盆踊り | https://x.com/pumps67551/status/2085967617282691312 |
+| low | new_event_candidate | new | event | イベント候補「苦情あってもお盆の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 苦情あってもお盆の盆踊り | 苦情あってもお盆の盆踊り 盆踊り | https://x.com/akirat396502/status/2087366531999314398 |
 | low | new_event_candidate | new | event | イベント候補「英哲さんの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 英哲さんの盆踊り | 英哲さんの盆踊り 盆踊り; mapokoさんは手踊り 盆踊り | https://x.com/kix3oka/status/2065056348866515133 |
 | low | new_event_candidate | new | event | イベント候補「茨城の笠間での 納涼盆踊りに DJダイノジ 出ます 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 茨城の笠間での 納涼盆踊りに DJダイノジ 出ます 盆踊り | 茨城の笠間での 納涼盆踊りに DJダイノジ 出ます 盆踊り 盆踊り | https://x.com/dnjbig/status/2077598999306277362 |
 | low | new_event_candidate | new | event | イベント候補「茨城県桜川市岩瀬の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 茨城県桜川市岩瀬の盆踊り | 茨城県桜川市岩瀬の盆踊り 盆踊り; 石投げ踊り 盆踊り; 八木節 盆踊り | https://x.com/kame_matsuri/status/2084882067293405612 |
@@ -13877,7 +14319,6 @@
 | low | new_event_candidate | new | event | イベント候補「蘇我公園の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蘇我公園の盆踊り | 蘇我公園の盆踊り 盆踊り; は同級生のお兄さんR君と28年ぶりに再会 盆踊り | https://x.com/moriyama_chiba/status/2083807141148905541 |
 | low | new_event_candidate | new | event | イベント候補「虫の声とか近くの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 虫の声とか近くの盆踊り | 虫の声とか近くの盆踊り 盆踊り | https://x.com/sora_ShojiOtkg/status/2079045576256323650 |
 | low | new_event_candidate | new | event | イベント候補「虫取りや近所の夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 虫取りや近所の夏祭り盆踊り | 虫取りや近所の夏祭り盆踊り 盆踊り | https://x.com/yoppyama/status/2078367119654387930 |
-| low | new_event_candidate | new | event | イベント候補「蛇窪神社 夏フェス盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蛇窪神社 夏フェス盆踊り, 有名盆踊り | 蛇窪神社 夏フェス盆踊り 盆踊り; 有名盆踊り 盆踊り | https://x.com/ToshiYamato/status/2075922612799393980 |
 | low | new_event_candidate | new | event | イベント候補「蛇行みたいな感じで運べるらしいけどそももそもフルで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蛇行みたいな感じで運べるらしいけどそももそもフルで盆踊り | 蛇行みたいな感じで運べるらしいけどそももそもフルで盆踊り 盆踊り | https://x.com/PUNI_2/status/2071539719020933484 |
 | low | new_event_candidate | new | event | イベント候補「蝉の声も聞こえるし遠くの方で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 蝉の声も聞こえるし遠くの方で盆踊り | 蝉の声も聞こえるし遠くの方で盆踊り 盆踊り | https://x.com/CbqvPy/status/2081294071990284691 |
 | low | new_event_candidate | new | event | イベント候補「血液ガッタガタ 2022年第2回石神井公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 血液ガッタガタ 2022年第2回石神井公園盆踊り | 血液ガッタガタ 2022年第2回石神井公園盆踊り 盆踊り | https://x.com/Z0c1Ww/status/2082693013680382327 |
@@ -13885,6 +14326,7 @@
 | low | new_event_candidate | new | event | イベント候補「行きたかった忍野八海には行けたけど夜の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行きたかった忍野八海には行けたけど夜の盆踊り | 行きたかった忍野八海には行けたけど夜の盆踊り 盆踊り | https://x.com/if_tsukuyomi/status/2078757337461104711 |
 | low | new_event_candidate | new | event | イベント候補「行きたかった盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行きたかった盆踊り | 行きたかった盆踊り 盆踊り | https://x.com/elevator_p/status/2085201491045056915 |
 | low | new_event_candidate | new | event | イベント候補「行きました 和風な街アズランで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行きました 和風な街アズランで盆踊り | 行きました 和風な街アズランで盆踊り 盆踊り | https://x.com/macapuku/status/2082695767060517185 |
+| low | new_event_candidate | new | event | イベント候補「行き今日は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行き今日は盆踊り | 行き今日は盆踊り 盆踊り | https://x.com/NobuhikoOoishi/status/2087356833854063059 |
 | low | new_event_candidate | new | event | イベント候補「行くから盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行くから盆踊り | 行くから盆踊り 盆踊り; ヨロシクね🤟 盆踊り | https://x.com/ike_p_/status/2084505665679298603 |
 | low | new_event_candidate | new | event | イベント候補「行くか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行くか盆踊り | 行くか盆踊り 盆踊り | https://x.com/ya50do/status/2083465790079324432 |
 | low | new_event_candidate | new | event | イベント候補「行くぞ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 行くぞ盆踊り | 行くぞ盆踊り 盆踊り | https://x.com/porpor0730/status/2082015715339690169 |
@@ -13902,6 +14344,7 @@
 | low | new_event_candidate | new | event | イベント候補「街中に浴衣の人が多くて不思議に思ってたら色んなところで花火と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 街中に浴衣の人が多くて不思議に思ってたら色んなところで花火と盆踊り | 街中に浴衣の人が多くて不思議に思ってたら色んなところで花火と盆踊り 盆踊り; 花火と盆踊りがあるんだね 盆踊り | https://x.com/aateriko/status/2083462628891041842 |
 | low | new_event_candidate | new | event | イベント候補「衣装のまま盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 衣装のまま盆踊り | 衣装のまま盆踊り 盆踊り | https://x.com/okachuchu/status/2079031043588510132 |
 | low | new_event_candidate | new | event | イベント候補「表参道善光寺の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 表参道善光寺の盆踊り | 表参道善光寺の盆踊り 盆踊り | https://x.com/dreadyarou/status/2081732420152516990 |
+| low | new_event_candidate | new | event | イベント候補「被爆翌年に開催の「戦災供養盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 被爆翌年に開催の「戦災供養盆踊り, 戦災供養盆踊り | 被爆翌年に開催の「戦災供養盆踊り 盆踊り; 戦災供養盆踊り 盆踊り | https://x.com/DreamChronicle7/status/2087328605835862154 |
 | low | new_event_candidate | new | event | イベント候補「袴腰広場で行われているゐの市盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 袴腰広場で行われているゐの市盆踊り, どこが違うのかと思ったら奉拝の後ろに押されてる朱印がゐの市盆踊り | 袴腰広場で行われているゐの市盆踊り 盆踊り; どこが違うのかと思ったら奉拝の後ろに押されてる朱印がゐの市盆踊り 盆踊り | https://x.com/kikurin0323/status/2086738018015355286 |
 | low | new_event_candidate | new | event | イベント候補「袴越し広場の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 袴越し広場の盆踊り, 日本の盆踊り | 袴越し広場の盆踊り 盆踊り; 日本の盆踊り 盆踊り | https://x.com/kugiyamaguchi/status/2086774755181670750 |
 | low | new_event_candidate | new | event | イベント候補「裏で毎年やってっる盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 裏で毎年やってっる盆踊り | 裏で毎年やってっる盆踊り 盆踊り | https://x.com/netalo/status/2083432194870255710 |
@@ -13932,6 +14375,7 @@
 | low | new_event_candidate | new | event | イベント候補「西菅田団地盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西菅田団地盆踊り, 菅田南町盆踊り | 西菅田団地盆踊り 盆踊り; 菅田南町盆踊り 盆踊り | https://x.com/naru_tk/status/2083397941348413790 |
 | low | new_event_candidate | new | event | イベント候補「西馬音内の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内の盆踊り | 西馬音内の盆踊り 盆踊り | https://x.com/Aki_Yadome/status/2082329520728584203 |
 | low | new_event_candidate | new | event | イベント候補「西馬音内盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆おどり | 西馬音内盆おどり 盆踊り; 移動ー🫡 盆踊り; どの踊り 盆踊り | https://x.com/M125M8qgyhWueHS/status/2081006449367670972 |
+| low | new_event_candidate | new | event | イベント候補「西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆踊り | 西馬音内盆踊り 盆踊り | https://x.com/Shosukeishiidon/status/2087345045334839792 |
 | low | new_event_candidate | new | event | イベント候補「西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆踊り | 西馬音内盆踊り 盆踊り | https://x.com/omatsurijapan/status/2084912481042923995 |
 | low | new_event_candidate | new | event | イベント候補「西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆踊り | 西馬音内盆踊り 盆踊り | https://x.com/takajoh_enl/status/2084891081301524664 |
 | low | new_event_candidate | new | event | イベント候補「西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 西馬音内盆踊り | 西馬音内盆踊り 盆踊り | https://x.com/bisiseiakita/status/2084460011246522418 |
@@ -14063,7 +14507,6 @@
 | low | new_event_candidate | new | event | イベント候補「豊島の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豊島の盆踊り | 豊島の盆踊り 盆踊り | https://x.com/onaka_yowazo/status/2065485918740656571 |
 | low | new_event_candidate | new | event | イベント候補「豊島区のあちこちで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豊島区のあちこちで盆踊り | 豊島区のあちこちで盆踊り 盆踊り | https://x.com/machiview/status/2083492987406004227 |
 | low | new_event_candidate | new | event | イベント候補「豊新盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豊新盆踊り | 豊新盆踊り 盆踊り | https://x.com/keigomori0503/status/2083463676816679132 |
-| low | new_event_candidate | new | event | イベント候補「豊玉第一町会納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豊玉第一町会納涼盆踊り, 練馬区盆踊り | 豊玉第一町会納涼盆踊り 盆踊り; 練馬区盆踊り 盆踊り | https://x.com/komaikai/status/2086254697544081781 |
 | low | new_event_candidate | new | event | イベント候補「豪華でfunnyな盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豪華でfunnyな盆踊り | 豪華でfunnyな盆踊り 盆踊り | https://x.com/kamino_aiko/status/2063616891021889877 |
 | low | new_event_candidate | new | event | イベント候補「豪雨で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豪雨で盆踊り | 豪雨で盆踊り 盆踊り | https://x.com/issey_netan/status/2083503834111058093 |
 | low | new_event_candidate | new | event | イベント候補「豪雨予報で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 豪雨予報で盆踊り | 豪雨予報で盆踊り 盆踊り | https://x.com/aoi_yamirami/status/2081219263730426137 |
@@ -14078,6 +14521,7 @@
 | low | new_event_candidate | new | event | イベント候補「贅沢な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 贅沢な盆踊り | 贅沢な盆踊り 盆踊り | https://x.com/iedecat/status/2079022330978992384 |
 | low | new_event_candidate | new | event | イベント候補「赤門盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 赤門盆踊り | 赤門盆踊り 盆踊り | https://x.com/kubocchi_mn/status/2086708705886887998 |
 | low | new_event_candidate | new | event | イベント候補「超ニコニコ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 超ニコニコ盆踊り | 超ニコニコ盆踊り 盆踊り | https://x.com/sasakichi_akiba/status/2082544610598081015 |
+| low | new_event_candidate | new | event | イベント候補「超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 超寝転ん盆踊り | 超寝転ん盆踊り 盆踊り | https://x.com/sakuya_shami/status/2087400736175092115 |
 | low | new_event_candidate | new | event | イベント候補「超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 超寝転ん盆踊り | 超寝転ん盆踊り 盆踊り | https://x.com/ZIKroid/status/2086680993109602803 |
 | low | new_event_candidate | new | event | イベント候補「超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 超寝転ん盆踊り | 超寝転ん盆踊り 盆踊り | https://x.com/mgsie39/status/2086348491161554995 |
 | low | new_event_candidate | new | event | イベント候補「超寝転ん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 超寝転ん盆踊り | 超寝転ん盆踊り 盆踊り | https://x.com/kazu0o2/status/2086340214499557842 |
@@ -14117,9 +14561,11 @@
 | low | new_event_candidate | new | event | イベント候補「踊り踊って10時間「もうへろへろ」 一宮で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊り踊って10時間「もうへろへろ」 一宮で盆踊り | 踊り踊って10時間「もうへろへろ」 一宮で盆踊り 盆踊り | https://x.com/co_jit/status/2064489660299268283 |
 | low | new_event_candidate | new | event | イベント候補「踊り踊って10時間「もうへろへろ」 一宮で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊り踊って10時間「もうへろへろ」 一宮で盆踊り | 踊り踊って10時間「もうへろへろ」 一宮で盆踊り 盆踊り | https://x.com/fukubi_138/status/2064223900914090002 |
 | low | new_event_candidate | new | event | イベント候補「踊る21世紀の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊る21世紀の盆踊り | 踊る21世紀の盆踊り 盆踊り | https://x.com/alkalischaft/status/2081633397416624368 |
+| low | new_event_candidate | new | event | イベント候補「踊るって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊るって盆踊り | 踊るって盆踊り 盆踊り | https://x.com/2aaDt8Eed428888/status/2087387393024475230 |
 | low | new_event_candidate | new | event | イベント候補「踊るとしたら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊るとしたら盆踊り | 踊るとしたら盆踊り 盆踊り | https://x.com/nevia__0/status/2083833587510677719 |
 | low | new_event_candidate | new | event | イベント候補「踊るのが夢だったんですー爆笑 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊るのが夢だったんですー爆笑 盆踊り | 踊るのが夢だったんですー爆笑 盆踊り 盆踊り; いか踊り 盆踊り | https://x.com/Miyukin_NYC/status/2084177198941139144 |
 | low | new_event_candidate | new | event | イベント候補「踊るのはほんと1年の内でその盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊るのはほんと1年の内でその盆踊り | 踊るのはほんと1年の内でその盆踊り 盆踊り | https://x.com/want_blondhair/status/2065095036455543035 |
+| low | new_event_candidate | new | event | イベント候補「踊るんだと思うんだよ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊るんだと思うんだよ盆踊り | 踊るんだと思うんだよ盆踊り 盆踊り | https://x.com/Qmmd/status/2087435811017150505 |
 | low | new_event_candidate | new | event | イベント候補「踊る人がいなくなって全然盛り上がらず 近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊る人がいなくなって全然盛り上がらず 近所の盆踊り | 踊る人がいなくなって全然盛り上がらず 近所の盆踊り 盆踊り | https://x.com/meeeesamu/status/2086332849171661182 |
 | low | new_event_candidate | new | event | イベント候補「踊る歌じゃなこれは（新しい盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊る歌じゃなこれは（新しい盆踊り | 踊る歌じゃなこれは（新しい盆踊り 盆踊り | https://x.com/IUIUIUIU2026/status/2071161039190901095 |
 | low | new_event_candidate | new | event | イベント候補「踊る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 踊る盆踊り | 踊る盆踊り 盆踊り | https://x.com/zoe_limitless/status/2079121717893730661 |
@@ -14153,6 +14599,7 @@
 | low | new_event_candidate | new | event | イベント候補「近くの小学校でやってた盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの小学校でやってた盆踊り | 近くの小学校でやってた盆踊り 盆踊り | https://x.com/chimi_kon_mom/status/2081037453394157941 |
 | low | new_event_candidate | new | event | イベント候補「近くの小学校もアニソンみたいなので盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの小学校もアニソンみたいなので盆踊り, うほとんどの盆踊り | 近くの小学校もアニソンみたいなので盆踊り 盆踊り; うほとんどの盆踊り 盆踊り; 河内音頭 盆踊り; 音頭は河内音頭 盆踊り | https://x.com/pom_pom_pee/status/2085987713187217748 |
 | low | new_event_candidate | new | event | イベント候補「近くの幼稚園の庭で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの幼稚園の庭で盆踊り | 近くの幼稚園の庭で盆踊り 盆踊り | https://x.com/dq6er/status/2080960510623981825 |
+| low | new_event_candidate | new | event | イベント候補「近くの深志神社で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの深志神社で盆踊り | 近くの深志神社で盆踊り 盆踊り | https://x.com/fujinoyuhonjo/status/2087416811507859952 |
 | low | new_event_candidate | new | event | イベント候補「近くの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの盆踊り | 近くの盆踊り 盆踊り | https://x.com/nijigame_taiko/status/2083392641857998863 |
 | low | new_event_candidate | new | event | イベント候補「近くの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの盆踊り | 近くの盆踊り 盆踊り; あーられ音頭 盆踊り | https://x.com/renkanouta/status/2081955666936447487 |
 | low | new_event_candidate | new | event | イベント候補「近くの神社は今日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近くの神社は今日盆踊り | 近くの神社は今日盆踊り 盆踊り | https://x.com/shun0122erich/status/2083464831840202917 |
@@ -14189,6 +14636,7 @@
 | low | new_event_candidate | new | event | イベント候補「近所の公園で自治会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の公園で自治会の盆踊り | 近所の公園で自治会の盆踊り 盆踊り | https://x.com/sunrise_horizon/status/2083849381481165030 |
 | low | new_event_candidate | new | event | イベント候補「近所の公園とは思えない映像設備の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の公園とは思えない映像設備の盆踊り | 近所の公園とは思えない映像設備の盆踊り 盆踊り | https://x.com/sasayan0315/status/2081028821353144748 |
 | low | new_event_candidate | new | event | イベント候補「近所の公園の盆踊り夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の公園の盆踊り夏祭り | 近所の公園の盆踊り夏祭り 盆踊り | https://x.com/alice40939/status/2083464448879337894 |
+| low | new_event_candidate | new | event | イベント候補「近所の公民館で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の公民館で盆踊り | 近所の公民館で盆踊り 盆踊り; 肝心の踊り 盆踊り | https://x.com/ri_trpg/status/2087421421161263468 |
 | low | new_event_candidate | new | event | イベント候補「近所の商店へのちょっとした買い物や虫捕りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の商店へのちょっとした買い物や虫捕りや盆踊り | 近所の商店へのちょっとした買い物や虫捕りや盆踊り 盆踊り | https://x.com/ehonyomitai/status/2079483133813248191 |
 | low | new_event_candidate | new | event | イベント候補「近所の夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の夏祭り盆踊り | 近所の夏祭り盆踊り 盆踊り | https://x.com/mokzfb/status/2076493688772194376 |
 | low | new_event_candidate | new | event | イベント候補「近所の小学校でデカめのお祭りがあって盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 近所の小学校でデカめのお祭りがあって盆踊り, 中野の盆踊り | 近所の小学校でデカめのお祭りがあって盆踊り 盆踊り; 中野の盆踊り 盆踊り | https://x.com/YBYTjet_250109/status/2083039886572245245 |
@@ -14291,6 +14739,7 @@
 | low | new_event_candidate | new | event | イベント候補「週末は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 週末は盆踊り | 週末は盆踊り 盆踊り | https://x.com/kaiei_vrc/status/2085164024858390997 |
 | low | new_event_candidate | new | event | イベント候補「週末は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 週末は盆踊り | 週末は盆踊り 盆踊り | https://x.com/YamaguchiKaoru_/status/2084666013891879114 |
 | low | new_event_candidate | new | event | イベント候補「週末は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 週末は盆踊り | 週末は盆踊り 盆踊り | https://x.com/hirokoyamamoto8/status/2081546553144258957 |
+| low | new_event_candidate | new | event | イベント候補「進化系盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 進化系盆踊り | 進化系盆踊り 盆踊り | https://x.com/yoshidandyism/status/2087396363319624104 |
 | low | new_event_candidate | new | event | イベント候補「進化系盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 進化系盆踊り | 進化系盆踊り 盆踊り | https://x.com/SIRO_A_/status/2071437063174672737 |
 | low | new_event_candidate | new | event | イベント候補「進次郎が地元の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 進次郎が地元の盆踊り | 進次郎が地元の盆踊り 盆踊り | https://x.com/moon358s/status/2062197011554914399 |
 | low | new_event_candidate | new | event | イベント候補「逸 思い出したら 一曲終わる お久しぶりの 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 逸 思い出したら 一曲終わる お久しぶりの 盆踊り | 逸 思い出したら 一曲終わる お久しぶりの 盆踊り 盆踊り | https://x.com/odorururu_com/status/2067246453718970424 |
@@ -14298,6 +14747,7 @@
 | low | new_event_candidate | new | event | イベント候補「遅ければ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 遅ければ盆踊り | 遅ければ盆踊り 盆踊り | https://x.com/teal06/status/2064968327710245159 |
 | low | new_event_candidate | new | event | イベント候補「遅めに行ったり早めに帰ってきたりでまったく神輿・山車にも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 遅めに行ったり早めに帰ってきたりでまったく神輿・山車にも盆踊り | 遅めに行ったり早めに帰ってきたりでまったく神輿・山車にも盆踊り 盆踊り | https://x.com/ShuMizukiMR/status/2086089313545294010 |
 | low | new_event_candidate | new | event | イベント候補「遅れて入ったからLIVEも盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 遅れて入ったからLIVEも盆踊り | 遅れて入ったからLIVEも盆踊り 盆踊り | https://x.com/AtsukoAkiyama1/status/2083679758160904676 |
+| low | new_event_candidate | new | event | イベント候補「遅ればせ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 遅ればせ盆踊り | 遅ればせ盆踊り 盆踊り | https://x.com/MEAkurusu_xo/status/2087360149606531471 |
 | low | new_event_candidate | new | event | イベント候補「遊びとして盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 遊びとして盆踊り | 遊びとして盆踊り 盆踊り | https://x.com/qucDGpGcZ0ydZQC/status/2084191659680825679 |
 | low | new_event_candidate | new | event | イベント候補「遊行寺での西馬音内盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 遊行寺での西馬音内盆踊り | 遊行寺での西馬音内盆踊り 盆踊り | https://x.com/ri5mi2/status/2087059305128411180 |
 | low | new_event_candidate | new | event | イベント候補「運動会なんだな頑張って位 種類が違う 除夜の鐘とか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 運動会なんだな頑張って位 種類が違う 除夜の鐘とか盆踊り | 運動会なんだな頑張って位 種類が違う 除夜の鐘とか盆踊り 盆踊り | https://x.com/akk07131230/status/2086713534218698772 |
@@ -14368,6 +14818,7 @@
 | low | new_event_candidate | new | event | イベント候補「金曜日の神田明神のアニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金曜日の神田明神のアニソン盆踊り | 金曜日の神田明神のアニソン盆踊り 盆踊り | https://x.com/aiase/status/2084850450931896747 |
 | low | new_event_candidate | new | event | イベント候補「金曜日ー町内会役員会 土曜日ー町内会役員会 日曜日ー夏祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金曜日ー町内会役員会 土曜日ー町内会役員会 日曜日ー夏祭り盆踊り | 金曜日ー町内会役員会 土曜日ー町内会役員会 日曜日ー夏祭り盆踊り 盆踊り | https://x.com/YurieHitotubasi/status/2076799066420473873 |
 | low | new_event_candidate | new | event | イベント候補「金曜日友達と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金曜日友達と盆踊り | 金曜日友達と盆踊り 盆踊り | https://x.com/mimi_kotoluv/status/2082344065300128199 |
+| low | new_event_candidate | new | event | イベント候補「金曜日夜から三日間 町内が元気で子供が多い時代に盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金曜日夜から三日間 町内が元気で子供が多い時代に盆踊り | 金曜日夜から三日間 町内が元気で子供が多い時代に盆踊り 盆踊り | https://x.com/bionic_a/status/2087309951580741980 |
 | low | new_event_candidate | new | event | イベント候補「金沢の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金沢の盆踊り | 金沢の盆踊り 盆踊り | https://x.com/KatsuoOkuhara/status/2082015394798387281 |
 | low | new_event_candidate | new | event | イベント候補「金沢エムザ屋上で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 金沢エムザ屋上で盆踊り | 金沢エムザ屋上で盆踊り 盆踊り | https://x.com/blue_Demi/status/2083756948680479019 |
 | low | new_event_candidate | new | event | イベント候補「鈴コミ盆おどり」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鈴コミ盆おどり, 西日野町盆踊り | 鈴コミ盆おどり 盆踊り; 西日野町盆踊り 盆踊り | https://x.com/tunagu_1001/status/2085552400778285151 |
@@ -14439,11 +14890,14 @@
 | low | new_event_candidate | new | event | イベント候補「関西でもオタ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 関西でもオタ盆踊り, オタ盆踊り | 関西でもオタ盆踊り 盆踊り; オタ盆踊り 盆踊り | https://x.com/DerGefreiter/status/2085623707612139937 |
 | low | new_event_candidate | new | event | イベント候補「関西には「六甲おろし」という特定団体の宗教讃歌に振りをつけ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 関西には「六甲おろし」という特定団体の宗教讃歌に振りをつけ盆踊り | 関西には「六甲おろし」という特定団体の宗教讃歌に振りをつけ盆踊り 盆踊り | https://x.com/waterdragon1110/status/2079776456671166613 |
 | low | new_event_candidate | new | event | イベント候補「防犯カメラ・物価高対策・地域防災・電子クーポン・盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 防犯カメラ・物価高対策・地域防災・電子クーポン・盆踊り | 防犯カメラ・物価高対策・地域防災・電子クーポン・盆踊り 盆踊り | https://x.com/someya7010/status/2083430551181263249 |
+| low | new_event_candidate | new | event | イベント候補「阿波踊りや盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 阿波踊りや盆踊り | 阿波踊りや盆踊り 盆踊り | https://x.com/uen0a02/status/2087447262117187787 |
 | low | new_event_candidate | new | event | イベント候補「阿田和 14日 百八松と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 阿田和 14日 百八松と盆踊り, 神木 盆踊り, 志原 蔵国寺 15日 盆供養花火大会・盆踊り | 阿田和 14日 百八松と盆踊り 盆踊り; 神木 盆踊り 盆踊り | https://x.com/MihamaTown_Mie/status/2086724232864583847 |
 | low | new_event_candidate | new | event | イベント候補「降りで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 降りで盆踊り | 降りで盆踊り 盆踊り | https://x.com/RgQ6T9a1KZVrcHt/status/2084212919773098425 |
 | low | new_event_candidate | new | event | イベント候補「除夜の鐘も中止とか盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘も中止とか盆踊り | 除夜の鐘も中止とか盆踊り 盆踊り | https://x.com/good_nights/status/2086787617119420481 |
+| low | new_event_candidate | new | event | イベント候補「除夜の鐘も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘も盆踊り | 除夜の鐘も盆踊り 盆踊り | https://x.com/shima18740677/status/2087427775124938872 |
 | low | new_event_candidate | new | event | イベント候補「除夜の鐘も盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘も盆踊り | 除夜の鐘も盆踊り 盆踊り | https://x.com/Ariri_bp/status/2087005634294394909 |
 | low | new_event_candidate | new | event | イベント候補「除夜の鐘も盆踊りも夏祭り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘も盆踊りも夏祭り | 除夜の鐘も盆踊りも夏祭り 盆踊り | https://x.com/windicalclub/status/2081675699124117896 |
+| low | new_event_candidate | new | event | イベント候補「除夜の鐘や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘や盆踊り | 除夜の鐘や盆踊り 盆踊り | https://x.com/sorapiyo1111111/status/2087362803753795711 |
 | low | new_event_candidate | new | event | イベント候補「除夜の鐘や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘や盆踊り | 除夜の鐘や盆踊り 盆踊り | https://x.com/apasan1976/status/2082364991618027759 |
 | low | new_event_candidate | new | event | イベント候補「除夜の鐘煩い止めろ 運動会煩い止めろ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 除夜の鐘煩い止めろ 運動会煩い止めろ 盆踊り | 除夜の鐘煩い止めろ 運動会煩い止めろ 盆踊り 盆踊り | https://x.com/Sunrise_Return/status/2079137277264224454 |
 | low | new_event_candidate | new | event | イベント候補「陸上自衛隊八戸駐屯地様 納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 陸上自衛隊八戸駐屯地様 納涼盆踊り | 陸上自衛隊八戸駐屯地様 納涼盆踊り 盆踊り | https://x.com/Twinkle_model/status/2081027095480954908 |
@@ -14467,6 +14921,7 @@
 | low | new_event_candidate | new | event | イベント候補「雨がスゴいなぁ 黒磯盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨がスゴいなぁ 黒磯盆踊り | 雨がスゴいなぁ 黒磯盆踊り 盆踊り | https://x.com/hisafromrocks/status/2086355386605707313 |
 | low | new_event_candidate | new | event | イベント候補「雨が降ってきた 町会の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨が降ってきた 町会の盆踊り | 雨が降ってきた 町会の盆踊り 盆踊り | https://x.com/P_Redzweigen/status/2086010483631620442 |
 | low | new_event_candidate | new | event | イベント候補「雨が降るかもと盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨が降るかもと盆踊り | 雨が降るかもと盆踊り 盆踊り | https://x.com/yukky_ys/status/2083876744507883583 |
+| low | new_event_candidate | new | event | イベント候補「雨だけど盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨だけど盆踊り | 雨だけど盆踊り 盆踊り | https://x.com/tokiwa10q32/status/2087414508075782396 |
 | low | new_event_candidate | new | event | イベント候補「雨だったらササキチさんのカフェで屋内アキバ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨だったらササキチさんのカフェで屋内アキバ盆踊り | 雨だったらササキチさんのカフェで屋内アキバ盆踊り 盆踊り | https://x.com/Straight__2525/status/2070075687848051011 |
 | low | new_event_candidate | new | event | イベント候補「雨だったら盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨だったら盆踊り | 雨だったら盆踊り 盆踊り | https://x.com/donapiii89/status/2086682108748321140 |
 | low | new_event_candidate | new | event | イベント候補「雨で中止だったサンシャインの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 雨で中止だったサンシャインの盆踊り | 雨で中止だったサンシャインの盆踊り 盆踊り; 東京音頭も大東京音頭も盆ジョビ 盆踊り | https://x.com/chi_doumeki/status/2083162821521809914 |
@@ -14506,12 +14961,14 @@
 | low | new_event_candidate | new | event | イベント候補「青空や盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青空や盆踊り, 入新井盆踊り, 今年も当施設のスタッフは盆踊り | 青空や盆踊り 盆踊り; 入新井盆踊り 盆踊り | https://x.com/smile_omori/status/2077590254476009513 |
 | low | new_event_candidate | new | event | イベント候補「青組盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青組盆踊り | 青組盆踊り 盆踊り | https://x.com/Lionel_M72/status/2075805921255772336 |
 | low | new_event_candidate | new | event | イベント候補「青葉山公園では仙台七夕祭り盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青葉山公園では仙台七夕祭り盆踊り | 青葉山公園では仙台七夕祭り盆踊り 盆踊り | https://x.com/cgmio6/status/2085241473516351763 |
+| low | new_event_candidate | new | event | イベント候補「青雲の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 青雲の盆踊り | 青雲の盆踊り 盆踊り | https://x.com/no____la_r/status/2087231896807956893 |
 | low | new_event_candidate | new | event | イベント候補「靖国がみたままつりで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 靖国がみたままつりで盆踊り | 靖国がみたままつりで盆踊り 盆踊り | https://x.com/KTJ_HRI/status/2076599104214651285 |
 | low | new_event_candidate | new | event | イベント候補「靖國神社 みたままつり ダンシングヒーローで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 靖國神社 みたままつり ダンシングヒーローで盆踊り | 靖國神社 みたままつり ダンシングヒーローで盆踊り 盆踊り; ダンシングヒーロー 盆踊り | https://x.com/keisukebot/status/2084484621929234669 |
 | low | new_event_candidate | new | event | イベント候補「靖國神社みたままつりの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 靖國神社みたままつりの盆踊り, 今年の盆踊り | 靖國神社みたままつりの盆踊り 盆踊り; 今年の盆踊り 盆踊り | https://x.com/kajix_japan/status/2077743438926336261 |
 | low | new_event_candidate | new | event | イベント候補「静岡市で開催された盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 静岡市で開催された盆踊り, 盆踊り研究者として盆踊り, 創作盆踊り | 静岡市で開催された盆踊り 盆踊り; 盆踊り研究者として盆踊り 盆踊り | https://x.com/LifeKanako/status/2083901206712492083 |
 | low | new_event_candidate | new | event | イベント候補「静岡市研屋町にある「貫徹家」さんの「ばんばん盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 静岡市研屋町にある「貫徹家」さんの「ばんばん盆踊り, ばんばん盆踊り限定 豚骨ラーメン | 静岡市研屋町にある「貫徹家」さんの「ばんばん盆踊り 盆踊り; ばんばん盆踊り限定 豚骨ラーメン 盆踊り | https://x.com/kuwatoro_1965/status/2083470868769128850 |
 | low | new_event_candidate | new | event | イベント候補「面白い テイラースウィフトだ パプリカは結構完璧に踊れるぜ 盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 面白い テイラースウィフトだ パプリカは結構完璧に踊れるぜ 盆踊り | 面白い テイラースウィフトだ パプリカは結構完璧に踊れるぜ 盆踊り 盆踊り | https://x.com/KPAUEjNThcPggCV/status/2076197177198788854 |
+| low | new_event_candidate | new | event | イベント候補「面白いものに出会うと心の中で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 面白いものに出会うと心の中で盆踊り, 振り付けは完全にモンキーダンスで盆踊り | 面白いものに出会うと心の中で盆踊り 盆踊り; 振り付けは完全にモンキーダンスで盆踊り 盆踊り | https://x.com/duplo/status/2087422405241380980 |
 | low | new_event_candidate | new | event | イベント候補「音に驚いて鳥が飛んでいきました笑 リングの上で大規模な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音に驚いて鳥が飛んでいきました笑 リングの上で大規模な盆踊り | 音に驚いて鳥が飛んでいきました笑 リングの上で大規模な盆踊り 盆踊り | https://x.com/SYR2025_/status/2082055182414995952 |
 | low | new_event_candidate | new | event | イベント候補「音楽と融合 新感覚「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音楽と融合 新感覚「盆踊り | 音楽と融合 新感覚「盆踊り 盆踊り | https://x.com/Tokyonp_kawasa/status/2069933185421738361 |
 | low | new_event_candidate | new | event | イベント候補「音楽と融合 新感覚「盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音楽と融合 新感覚「盆踊り | 音楽と融合 新感覚「盆踊り 盆踊り | https://x.com/tokyo_shimbun/status/2069911255301935140 |
@@ -14519,6 +14976,7 @@
 | low | new_event_candidate | new | event | イベント候補「音源盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音源盆踊り, チンバ踊りも佃島盆踊り, どれも盆踊り | 音源盆踊り 盆踊り; チンバ踊りも佃島盆踊り 盆踊り; 江州音頭 盆踊り; ゴウシ音頭 盆踊り | https://x.com/miztan2/status/2075147347366228082 |
 | low | new_event_candidate | new | event | イベント候補「音速の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音速の盆踊り | 音速の盆踊り 盆踊り | https://x.com/magumagu_blue/status/2079042808258949159 |
 | low | new_event_candidate | new | event | イベント候補「音頭でないアニソンで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音頭でないアニソンで盆踊り, そうは言いつつもサインはBに盆踊り, アニソン自体の～～音頭というのは絶滅した | 音頭でないアニソンで盆踊り 盆踊り; そうは言いつつもサインはBに盆踊り 盆踊り | https://x.com/Yuuki_Mk2/status/2081618079541612820 |
+| low | new_event_candidate | new | event | イベント候補「音頭の手拍子に合わせてのアンコールからの盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音頭の手拍子に合わせてのアンコールからの盆踊り | 音頭の手拍子に合わせてのアンコールからの盆踊り 盆踊り | https://x.com/agpymd/status/2087353017456832884 |
 | low | new_event_candidate | new | event | イベント候補「音頭座がらく 河内音頭セミナー〜盆踊り体験会〜」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 音頭座がらく 河内音頭セミナー〜盆踊り体験会〜 | 音頭座がらく 河内音頭セミナー〜盆踊り体験会〜 盆踊り; 河内音頭 盆踊り | https://x.com/yoshitaka_1008/status/2064023816804942198 |
 | low | new_event_candidate | new | event | イベント候補「頃まで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 頃まで盆踊り | 頃まで盆踊り 盆踊り | https://x.com/TABOOK_kakeru/status/2077257708374573476 |
 | low | new_event_candidate | new | event | イベント候補「頃まで盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 頃まで盆踊り | 頃まで盆踊り 盆踊り | https://x.com/TABOOK_kakeru/status/2076844791686672647 |
@@ -14541,6 +14999,7 @@
 | low | new_event_candidate | new | event | イベント候補「飯能は本日飯能信用金庫前駐車場で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飯能は本日飯能信用金庫前駐車場で盆踊り | 飯能は本日飯能信用金庫前駐車場で盆踊り 盆踊り | https://x.com/PASTAYA5810/status/2085979552984228216 |
 | low | new_event_candidate | new | event | イベント候補「飯能市での盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飯能市での盆踊り | 飯能市での盆踊り 盆踊り | https://x.com/FunatsuKatvlt/status/2069388216827003048 |
 | low | new_event_candidate | new | event | イベント候補「飲み会が中止になったので急遽盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飲み会が中止になったので急遽盆踊り | 飲み会が中止になったので急遽盆踊り 盆踊り | https://x.com/jijilovetrinita/status/2083498629210493393 |
+| low | new_event_candidate | new | event | イベント候補「飲み過ぎて顔パンパンで挑んだ盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 飲み過ぎて顔パンパンで挑んだ盆踊り | 飲み過ぎて顔パンパンで挑んだ盆踊り 盆踊り | https://x.com/josuke1340/status/2087435429431976443 |
 | low | new_event_candidate | new | event | イベント候補「養老公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 養老公園盆踊り | 養老公園盆踊り 盆踊り | https://x.com/bluegardevoir01/status/2083106560268816572 |
 | low | new_event_candidate | new | event | イベント候補「館の間にある櫓で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 館の間にある櫓で盆踊り, 特に1日目の夜に開催する盆踊り | 館の間にある櫓で盆踊り 盆踊り; 特に1日目の夜に開催する盆踊り 盆踊り | https://x.com/tanabata_fes/status/2064293582627111387 |
 | low | new_event_candidate | new | event | イベント候補「首傾げながら踊る盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 首傾げながら踊る盆踊り | 首傾げながら踊る盆踊り 盆踊り | https://x.com/ng_sngk/status/2085910613621080312 |
@@ -14563,6 +15022,7 @@
 | low | new_event_candidate | new | event | イベント候補「騒音で盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 騒音で盆踊り, マイケルジャクソン氏スリラー盆踊り | 騒音で盆踊り 盆踊り; マイケルジャクソン氏スリラー盆踊り 盆踊り | https://x.com/heidi_saori/status/2085917205204812130 |
 | low | new_event_candidate | new | event | イベント候補「高倉盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高倉盆踊り | 高倉盆踊り 盆踊り | https://x.com/tkkrtaxpayers/status/2083372697514541476 |
 | low | new_event_candidate | new | event | イベント候補「高円寺が真っ当だと思わないが盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高円寺が真っ当だと思わないが盆踊り | 高円寺が真っ当だと思わないが盆踊り 盆踊り | https://x.com/atou_susako/status/2066835185350697249 |
+| low | new_event_candidate | new | event | イベント候補「高山市内のホテルで毎日盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高山市内のホテルで毎日盆踊り | 高山市内のホテルで毎日盆踊り 盆踊り | https://x.com/Monkeykuu/status/2087405605971738889 |
 | low | new_event_candidate | new | event | イベント候補「高島平の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高島平の盆踊り | 高島平の盆踊り 盆踊り | https://x.com/suwayahikari_nu/status/2082121815242203351 |
 | low | new_event_candidate | new | event | イベント候補「高島平七丁目の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高島平七丁目の盆踊り | 高島平七丁目の盆踊り 盆踊り; 今夏の初踊り 盆踊り | https://x.com/myu_sucre/status/2082057451629871432 |
 | low | new_event_candidate | new | event | イベント候補「高島平七丁目の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高島平七丁目の盆踊り | 高島平七丁目の盆踊り 盆踊り | https://x.com/WaS7dBtYrFBRciB/status/2081994686345199728 |
@@ -14583,6 +15043,7 @@
 | low | new_event_candidate | new | event | イベント候補「高校生のときに盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高校生のときに盆踊り | 高校生のときに盆踊り 盆踊り | https://x.com/f_ntm622/status/2075930178266759514 |
 | low | new_event_candidate | new | event | イベント候補「高樹沙耶 「日本は品格落ちた」アニソン盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高樹沙耶 「日本は品格落ちた」アニソン盆踊り | 高樹沙耶 「日本は品格落ちた」アニソン盆踊り 盆踊り | https://x.com/fuziharusibata/status/2086732281822228758 |
 | low | new_event_candidate | new | event | イベント候補「高橋が各地の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高橋が各地の盆踊り | 高橋が各地の盆踊り 盆踊り; 昭和昭和音頭 盆踊り | https://x.com/kyodo_tv/status/2064178587587293500 |
+| low | new_event_candidate | new | event | イベント候補「高田エージさんの 毎年やってきた夏の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高田エージさんの 毎年やってきた夏の盆踊り | 高田エージさんの 毎年やってきた夏の盆踊り 盆踊り | https://x.com/takukikima/status/2087343596999745555 |
 | low | new_event_candidate | new | event | イベント候補「高田甚句」が盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高田甚句」が盆踊り | 高田甚句」が盆踊り 盆踊り; 高田甚句 盆踊り | https://x.com/k8929y1/status/2086688719583813992 |
 | low | new_event_candidate | new | event | イベント候補「高知県香美市物部町 奥物部湖湖水祭 伝統的な盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高知県香美市物部町 奥物部湖湖水祭 伝統的な盆踊り | 高知県香美市物部町 奥物部湖湖水祭 伝統的な盆踊り 盆踊り | https://x.com/ecotto8/status/2084873528705511777 |
 | low | new_event_candidate | new | event | イベント候補「高砂小での草加っ子なかよし盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 高砂小での草加っ子なかよし盆踊り | 高砂小での草加っ子なかよし盆踊り 盆踊り | https://x.com/n_mika_1125/status/2084485070229016864 |
@@ -14609,6 +15070,7 @@
 | low | new_event_candidate | new | event | イベント候補「鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鴨台盆踊り | 鴨台盆踊り 盆踊り | https://x.com/iWzPxDCCCP30Jb4/status/2075912672059801817 |
 | low | new_event_candidate | new | event | イベント候補「鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鴨台盆踊り | 鴨台盆踊り 盆踊り | https://x.com/shunholo__gram/status/2075855145804632373 |
 | low | new_event_candidate | new | event | イベント候補「鴨台盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鴨台盆踊り | 鴨台盆踊り 盆踊り | https://x.com/walkingfilmlove/status/2075827358398120421 |
+| low | new_event_candidate | new | event | イベント候補「鶴居村の週末は盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鶴居村の週末は盆踊り | 鶴居村の週末は盆踊り 盆踊り; しょうか🎐 盆踊り | https://x.com/miraclekoubou/status/2087416461698683022 |
 | low | new_event_candidate | new | event | イベント候補「鶴岡慎也解説員が初めて近所の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鶴岡慎也解説員が初めて近所の盆踊り | 鶴岡慎也解説員が初めて近所の盆踊り 盆踊り | https://x.com/asasoudesuwa/status/2086723823521710402 |
 | low | new_event_candidate | new | event | イベント候補「鶴巻温泉納涼盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鶴巻温泉納涼盆踊り | 鶴巻温泉納涼盆踊り 盆踊り | https://x.com/amenitybot/status/2083785378545406263 |
 | low | new_event_candidate | new | event | イベント候補「鶴舞公園盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鶴舞公園盆踊り, T DANCE Tシャツを着て盆踊り | 鶴舞公園盆踊り 盆踊り; T DANCE Tシャツを着て盆踊り 盆踊り | https://x.com/michihiraw/status/2079013712984502412 |
@@ -14619,6 +15081,7 @@
 | low | new_event_candidate | new | event | イベント候補「鹿折復興盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鹿折復興盆踊り, 復興盆踊り | 鹿折復興盆踊り 盆踊り; 復興盆踊り 盆踊り | https://x.com/maegitanbo/status/2086812684910239919 |
 | low | new_event_candidate | new | event | イベント候補「鹿教湯温泉交流センターにて盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鹿教湯温泉交流センターにて盆踊り | 鹿教湯温泉交流センターにて盆踊り 盆踊り | https://x.com/PizzaCafe_BOSCO/status/2084214787786109099 |
 | low | new_event_candidate | new | event | イベント候補「鹿追町の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鹿追町の盆踊り | 鹿追町の盆踊り 盆踊り | https://x.com/kikulove1449/status/2086909306776244491 |
+| low | new_event_candidate | new | event | イベント候補「鹿骨二丁目盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 鹿骨二丁目盆踊り | 鹿骨二丁目盆踊り 盆踊り; に踊った平井音頭 盆踊り | https://x.com/Ma_umojh/status/2087404330517500130 |
 | low | new_event_candidate | new | event | イベント候補「麦食音祭の合間に梅田の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 麦食音祭の合間に梅田の盆踊り, 都会のど真ん中で盆踊り | 麦食音祭の合間に梅田の盆踊り 盆踊り; 都会のど真ん中で盆踊り 盆踊り | https://x.com/taka_akcy0430/status/2075914600395239669 |
 | low | new_event_candidate | new | event | イベント候補「麻布台ヒルズの納涼祭と盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 麻布台ヒルズの納涼祭と盆踊り | 麻布台ヒルズの納涼祭と盆踊り 盆踊り | https://x.com/poko796/status/2087059749191717025 |
 | low | new_event_candidate | new | event | イベント候補「黄金の盆踊り」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 黄金の盆踊り | 黄金の盆踊り 盆踊り | https://x.com/Sammy1477331/status/2063429805799068072 |
@@ -14637,6 +15100,10 @@
 | low | new_event_candidate | new | event | イベント候補「📣盆踊りレクチャー動画🆙」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 📣盆踊りレクチャー動画🆙 | 📣盆踊りレクチャー動画🆙 盆踊り | https://x.com/stardustkawachi/status/2084450667956253059 |
 | low | new_event_candidate | new | event | イベント候補「📣盆踊りレクチャー動画🆙」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 📣盆踊りレクチャー動画🆙 | 📣盆踊りレクチャー動画🆙 盆踊り | https://x.com/stardustkawachi/status/2081648231273165072 |
 | low | new_event_candidate | new | event | イベント候補「📣盆踊りレクチャー動画🆙」に関するX由来情報。 | 既存イベントに完全一致しないイベント名候補: 📣盆踊りレクチャー動画🆙 | 📣盆踊りレクチャー動画🆙 盆踊り; 宮津おどり 盆踊り; 宮津節 盆踊り | https://x.com/stardustkawachi/status/2063938623226212768 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Team_SadoOkesa/status/2087388832958431348 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/asada_hisami/status/2087102579969007688 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fumie232323/status/2087310899979886608 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/nobuko20160913/status/2087146766705803483 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Jasmine10Cos/status/2087072121906495594 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/onikoube/status/2087068001288024300 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/a_cupapa/status/2086739149844095370 |
@@ -14797,6 +15264,25 @@
 | medium | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「築地音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 築地音頭 中央区 盆踊り | https://x.com/Atutakamama7034/status/2082447478859894821 |
 | medium | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「山王音頭と千代田踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 山王音頭と千代田踊り 北区 盆踊り; あさがお踊り 北区 盆踊り | https://x.com/xxxnabekoxxx/status/2063607767861195209 |
 | medium | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「花笠音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 花笠音頭 千代田区 盆踊り | https://x.com/esutoru26/status/1637363584186609667 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/5kHfYa5PjKsGGoV/status/2087305165192020073 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「炭坑節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 炭坑節 盆踊り; 東京音頭 盆踊り | https://x.com/autosandroads1/status/2087374289968509023 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hideshanbonbon/status/2087359681161519154 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/k_oasis2nd_dash/status/2087127436735754349 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fried_wakame/status/2087183181447626845 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tackntaihendayo/status/2087440487494115810 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/achapin80s/status/2087432737254936819 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kimaguresnufkin/status/2087391334772744338 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tshirtstrinity/status/2087381067754049978 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「息子が阿波踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 息子が阿波踊り 盆踊り | https://x.com/Wakame_melt12/status/2087380302205481270 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ryotinabc/status/2087378950310002876 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「その阿波踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | その阿波踊り 盆踊り | https://x.com/shit_a_clay/status/2087367513277616433 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kobetoku/status/2087383363179118999 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/dynam_00265/status/2087358487944708197 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Muracchi2323/status/2087353739397275755 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/douka_tasukete/status/2087398541480304826 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/dBsF6iFENY3q6FD/status/2087321476408250775 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「東京高円寺阿波踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 東京高円寺阿波踊り 盆踊り; 阿波踊り 盆踊り | https://x.com/BonDanceRadio/status/2087325693583745227 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「徳島市の阿波踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 徳島市の阿波踊り 盆踊り | https://x.com/tokkurin_/status/2087287929911882134 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/rollingasahi/status/2087079100179710284 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/TakahashiHajime/status/2087072160120766573 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/onomakaber/status/2087066439081754767 |
