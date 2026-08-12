@@ -5,6 +5,7 @@ import json
 import hashlib
 import html
 import math
+import sqlite3
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -91,6 +92,7 @@ X_COLLECTION_HEALTH_REPORT = os.environ.get(
 )
 GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
 X_GAP_CREDITS_FILE = "data/x_gap_credits.json"
+X_MASTER_RUNTIME_FILE = "data/x_bonodorer_master_runtime.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
 HOME_KEYWORDS = []
@@ -704,6 +706,7 @@ def _x_map_to_voice(tw):
         "source": "x",
         "account": f"@{username}" if username else "",
         "name": name,
+        "profile_description": str(author.get("description") or ""),
         "title": "",
         "text": (tw.get("text") or tw.get("full_text") or "").strip()[:500],
         "url": url,
@@ -711,6 +714,7 @@ def _x_map_to_voice(tw):
         "tweet_id": str(tw_id),
         "tags": [],
     }
+    voice["critique_post"] = _x_is_critique_post(voice["text"])
     media_urls = _x_media_urls(tw)
     if media_urls:
         voice["media_urls"] = media_urls
@@ -1296,6 +1300,50 @@ _X_DETAIL_RE = re.compile(
     r"演目|生演奏|櫓|やぐら|太鼓|浴衣|屋台|盆唄|音頭取り|振り付け|練習会|講習会"
 )
 _X_LIST_DATE_RE = re.compile(r"\d{1,2}\s*[/月]\s*\d{1,2}")
+_X_CHANGE_RE = re.compile(r"中止|順延|延期|荒天|規模縮小|時間変更|取り止め|とりやめ|見合わせ")
+_X_ONSITE_RE = re.compile(r"今日の盆踊り|本日は|始まりました|まもなく|終わりました|なう|開催中|到着|出番|演奏中|ただいま")
+_X_PROFILE_BON_RE = re.compile(r"盆踊|盆おどり|盆オドリ|ぼんおどり|ボンオドリ|盆オドラー|盆踊ラー|盆踊らー|盆おどらー|ボンオドラー|ぼんおどらー|盆ドラー|盆らー|bon[- _]?odor(?:i|er|a)|音頭|民踊|民舞|やぐら|櫓|盆唄|盆太鼓", re.I)
+_X_PROFILE_ORG_RE = re.compile(r"町会|自治会|商店会|商店街|振興組合|神社|寺|観光協会|青年部|婦人部|実行委員|保存会|連合会|公式|区役所|市役所|まちづくり|協議会")
+_X_CRITIQUE_RE = re.compile(r"盆踊.*(?:文化|歴史|伝統|課題|問題|意味|変わ|続け|べき|なぜ|理由)")
+_X_CRITIQUE_EXCLUDE_RE = re.compile(r"議員|選挙|外国人|宗教|移民|差別")
+
+
+def _x_is_critique_post(text):
+    """Tag sparse editorial material without turning it into an account axis."""
+    return bool(_X_CRITIQUE_RE.search(text or "") and not _X_CRITIQUE_EXCLUDE_RE.search(text or ""))
+
+
+def _load_x_bonodorer_master_runtime(path=None, db_path=None):
+    """Load a small vocabulary snapshot, or derive it from a local master DB.
+
+    Missing data is deliberately harmless: collection must never need an S3
+    fetch merely to score an account.
+    """
+    path = Path(path or X_MASTER_RUNTIME_FILE)
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return {key: set(payload.get(key) or []) for key in ("songs", "places", "events")}
+    except Exception:
+        pass
+    db = Path(db_path or "data/bon_odori_master.sqlite")
+    if not db.exists():
+        return {"songs": set(), "places": set(), "events": set()}
+    runtime = {"songs": set(), "places": set(), "events": set()}
+    try:
+        with sqlite3.connect(f"file:{db.resolve().as_posix()}?mode=ro", uri=True) as conn:
+            runtime["songs"].update(row[0] for row in conn.execute("SELECT canonical_title FROM songs") if len(row[0] or "") >= 3)
+            runtime["songs"].update(row[0] for row in conn.execute("SELECT alias FROM song_aliases") if len(row[0] or "") >= 3)
+            runtime["places"].update(row[0] for row in conn.execute("SELECT canonical_name FROM venues WHERE area LIKE '%区%' OR address LIKE '%区%'") if len(row[0] or "") >= 3)
+            runtime["places"].update(row[0] for row in conn.execute("SELECT va.alias FROM venue_aliases va JOIN venues v ON v.venue_id=va.venue_id WHERE v.area LIKE '%区%' OR v.address LIKE '%区%'") if len(row[0] or "") >= 3)
+            runtime["events"].update(row[0] for row in conn.execute("SELECT canonical_name FROM event_series") if len(row[0] or "") >= 4)
+            runtime["events"].update(row[0] for row in conn.execute("SELECT alias FROM event_series_aliases") if len(row[0] or "") >= 4)
+    except sqlite3.Error:
+        return {"songs": set(), "places": set(), "events": set()}
+    return runtime
+
+
+def _x_runtime_match(text, values):
+    return any(value and value in text for value in values)
 
 
 def _x_is_tokyo23_text(text):
@@ -1354,6 +1402,10 @@ def _add_x_bonodorer_scores(accounts, text_metrics, gap_credits):
             row["experience_ratio"] = round(_x_smoothed_ratio(row["experience_count"], posts, 0.20), 4)
             row["detail_ratio"] = round(_x_smoothed_ratio(row["detail_count"], posts, 0.30), 4)
             row["media_ratio"] = round(_x_smoothed_ratio(row["media_count"], posts, 0.30), 4)
+            row["onsite23_ratio"] = round(_x_smoothed_ratio(row["onsite23_count"], posts, 0.08), 4)
+            row["photo23_ratio"] = round(_x_smoothed_ratio(row["photo23_count"], posts, 0.10), 4)
+            row["song_ratio"] = round(_x_smoothed_ratio(row["song_count"], posts, 0.15), 4)
+            row["place_ratio"] = round(_x_smoothed_ratio(row["place_count"], posts, 0.15), 4)
             row["url_ratio"] = round(row["url_count"] / posts, 4)
             row["bon_ratio"] = round(row["bon_count"] / posts, 4)
             row["outside_ratio"] = round(row["outside_count"] / posts, 4)
@@ -1364,6 +1416,9 @@ def _add_x_bonodorer_scores(accounts, text_metrics, gap_credits):
                 "posts_with_text": 0, "bon23_count": 0, "bon23_ratio": 0.1,
                 "listy_ratio": 0.15, "opinion_ratio": 0.35, "experience_ratio": 0.2,
                 "detail_ratio": 0.3, "media_ratio": 0.3, "avg_len": 0.0,
+                "change_count": 0, "onsite23_count": 0, "photo23_count": 0, "song_count": 0,
+                "place_count": 0, "onsite23_ratio": 0.08, "photo23_ratio": 0.1,
+                "song_ratio": 0.15, "place_ratio": 0.15,
                 "distinct_post_days": 0, "url_ratio": 0.0, "bon_ratio": 0.0,
                 "outside_ratio": 0.0,
             })
@@ -1372,25 +1427,38 @@ def _add_x_bonodorer_scores(accounts, text_metrics, gap_credits):
         announce = min(10.0, 10 * math.log1p(row.get("recent_future_schedule_posts", 0)) / math.log1p(20))
         announce += 14 * row["bon23_ratio"]
         announce -= 5 * max(0.0, row["listy_ratio"] - 0.30)
-        if row["bon23_count"] == 0 and posts >= 5:
+        if row["bon23_count"] <= 1 and posts >= 5:
             announce = min(announce, 8.0)
+        announce += min(5.0, 1.2 * row.get("change_count", 0))
         announce += 5 * min(row["gap_credits"], 3)
         if row["is_area_bot"]:
             announce -= 15
+        profile = row.get("profile_description")
+        if profile:
+            if _X_PROFILE_BON_RE.search(profile):
+                announce += 2
+            elif not _X_PROFILE_ORG_RE.search(profile):
+                announce -= 3
         row["announce_score"] = round(announce, 2)
 
-        voice = 0.0
+        record = 0.0
         if posts >= 3:
-            voice = 10 * row["opinion_ratio"] * (0.5 + 0.5 * row["experience_ratio"])
-            voice += 6 * row["detail_ratio"] + 3 * row["media_ratio"]
-            voice += 4 * min(row["avg_len"] / 150, 1.0)
-            voice += 8 * row["bon23_ratio"] - 8 * row["listy_ratio"]
-            voice += 3 * min(row["distinct_post_days"] / 10, 1.0)
+            record = 7 * row["onsite23_ratio"] + 4 * row["photo23_ratio"]
+            record += 4 * row["song_ratio"] + 3 * row["place_ratio"]
+            record += 7 * min(math.log1p(row["onsite23_count"]) / math.log1p(20), 1.0)
+            record += 4 * min(math.log1p(row["song_count"]) / math.log1p(20), 1.0)
+            record += 3 * min(row["distinct_post_days"] / 15, 1.0)
+            record -= 8 * row["listy_ratio"]
             if row.get("recent_posts_seen", 0) == 0:
-                voice -= 3
+                record -= 3
             if row["is_area_bot"]:
-                voice -= 10
-        row["voice_score"] = round(voice, 2)
+                record -= 10
+        if profile:
+            if _X_PROFILE_BON_RE.search(profile):
+                record += 3
+            elif not _X_PROFILE_ORG_RE.search(profile):
+                record -= 4
+        row["record_score"] = round(record, 2)
 
 
 def _build_x_account_scores(voices, cfg=None):
@@ -1402,6 +1470,9 @@ def _build_x_account_scores(voices, cfg=None):
     recent_cutoff = datetime.now(timezone.utc) - timedelta(days=recent_days)
     accounts = {}
     text_metrics = {}
+    master_runtime = _load_x_bonodorer_master_runtime(
+        cfg.get("x_bonodorer_master_runtime_file"), cfg.get("master_db_path")
+    )
     # `experience_keywords` remains the established quality signal used by
     # _x_post_value_score.  This narrower list is only for estimating whether
     # a writer is describing first-hand experience rather than publishing a
@@ -1433,13 +1504,18 @@ def _build_x_account_scores(voices, cfg=None):
             "recent_future_schedule_posts": 0,
             "recent_noise_posts": 0,
             "recent_value_points": 0.0,
+            "profile_description": "",
         })
         text = str(v.get("text") or "")
+        if v.get("profile_description"):
+            row["profile_description"] = str(v["profile_description"])
         if text:
             metrics = text_metrics.setdefault(handle, {
                 "posts_with_text": 0, "bon_count": 0, "bon23_count": 0, "outside_count": 0,
                 "url_count": 0, "listy_count": 0, "opinion_count": 0, "experience_count": 0,
                 "detail_count": 0, "media_count": 0, "text_length": 0, "post_days": set(),
+                "change_count": 0, "onsite23_count": 0, "photo23_count": 0, "song_count": 0,
+                "place_count": 0,
             })
             metrics["posts_with_text"] += 1
             metrics["text_length"] += len(text)
@@ -1447,8 +1523,12 @@ def _build_x_account_scores(voices, cfg=None):
             if date_text:
                 metrics["post_days"].add(date_text)
             is_bon = bool(_X_BONODORI_RE.search(text))
+            has_place = _x_runtime_match(text, master_runtime["places"])
+            has_event = _x_runtime_match(text, master_runtime["events"])
+            has_song = _x_runtime_match(text, master_runtime["songs"]) or bool(_X_DETAIL_RE.search(text))
+            is23 = _x_is_tokyo23_text(text) or has_place
             metrics["bon_count"] += int(is_bon)
-            metrics["bon23_count"] += int(is_bon and _x_is_tokyo23_text(text))
+            metrics["bon23_count"] += int(is_bon and is23)
             metrics["outside_count"] += int(_x_is_outside_tokyo23_text(text))
             metrics["url_count"] += int("http" in text.lower() or "t.co/" in text.lower())
             lines = [line for line in text.splitlines() if line.strip()]
@@ -1461,6 +1541,16 @@ def _build_x_account_scores(voices, cfg=None):
             )
             metrics["detail_count"] += int(bool(_X_DETAIL_RE.search(text)))
             metrics["media_count"] += int(bool(v.get("media_urls")))
+            onsite = is_bon and is23 and (
+                any(keyword in text.lower() for keyword in experience_style_keywords)
+                or bool(_X_ONSITE_RE.search(text))
+            )
+            metrics["change_count"] += int(is_bon and is23 and bool(_X_CHANGE_RE.search(text)))
+            metrics["onsite23_count"] += int(onsite)
+            metrics["photo23_count"] += int(onsite and bool(v.get("media_urls")))
+            metrics["song_count"] += int(has_song)
+            metrics["place_count"] += int(has_place or has_event)
+            v["critique_post"] = _x_is_critique_post(text)
         row["posts_seen"] += 1
         value, reasons = _x_post_value_score(v, cfg, known)
         row["value_points"] += value

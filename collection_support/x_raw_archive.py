@@ -108,6 +108,7 @@ def _record(tweet: dict[str, Any], context: dict[str, Any], captured_at: str) ->
         "url": url,
         "account": f"@{handle}" if handle else "",
         "account_name": str(author.get("name") or ""),
+        "profile_description": str(author.get("description") or ""),
         "created_at_raw": raw_created_at,
         "captured_at": captured_at,
         "text": _tweet_text(tweet),

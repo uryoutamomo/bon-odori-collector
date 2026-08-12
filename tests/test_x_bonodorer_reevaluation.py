@@ -50,6 +50,29 @@ class XBonodorerReevaluationTest(unittest.TestCase):
         self.assertEqual(row["top_reasons"]["experience"], 3)
         self.assertEqual(row["experience_count"], 0)
 
+    def test_change_notice_and_onsite_record_are_scored_separately(self):
+        scores = collect._build_x_account_scores([
+            voice("change", "世田谷区の盆踊りは荒天で中止です", 1),
+            voice("change", "世田谷区の盆踊りは順延です", 2),
+            voice("onsite", "今日の盆踊り、墨田区で始まりました", 1, media=True),
+            voice("onsite", "本日は墨田区の盆踊りを開催中", 2, media=True),
+            voice("onsite", "墨田区の盆踊り、ただいま演奏中", 3),
+        ])
+        self.assertEqual(scores["accounts"]["change"]["change_count"], 2)
+        self.assertGreater(scores["accounts"]["change"]["announce_score"], 0)
+        self.assertGreater(scores["accounts"]["onsite"]["record_score"], 0)
+        self.assertNotIn("voice_score", scores["accounts"]["onsite"])
+
+    def test_profile_is_neutral_when_missing_and_organizations_are_not_penalized(self):
+        rows = [voice("missing", "世田谷の盆踊りを開催中", day) for day in range(1, 6)]
+        rows += [{**voice("org", "世田谷の盆踊りを開催中", day), "profile_description": "地域の町会公式です"} for day in range(1, 6)]
+        scores = collect._build_x_account_scores(rows)
+        self.assertEqual(scores["accounts"]["missing"]["announce_score"], scores["accounts"]["org"]["announce_score"])
+
+    def test_critique_is_a_post_tag_not_an_account_score(self):
+        self.assertTrue(collect._x_is_critique_post("盆踊り文化を続ける意味と課題を考える"))
+        self.assertFalse(collect._x_is_critique_post("盆踊りをめぐる外国人の政治論争"))
+
     def test_gap_credits_are_written_and_do_not_change_whitelist_selection(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             credits = Path(tmpdir) / "credits.json"
