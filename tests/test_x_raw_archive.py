@@ -63,6 +63,15 @@ class RawXArchiveTest(unittest.TestCase):
         manifest = json.loads(client.objects[1]["Body"].decode("utf-8"))
         self.assertEqual(manifest["post_keys"], ["tweet:123"])
 
+    def test_preserves_author_description(self):
+        client = FakeS3()
+        tweet = self._tweet()
+        tweet["author"]["description"] = "盆踊りの記録"
+        with patch.dict(os.environ, {"X_RAW_POSTS_S3_BUCKET": "private-test"}, clear=False):
+            capture_raw_x_posts([tweet], {}, client=client, captured_at="2026-08-10T01:02:03+00:00")
+        archived = json.loads(gzip.decompress(client.objects[0]["Body"]).decode("utf-8"))
+        self.assertEqual(archived["profile_description"], "盆踊りの記録")
+
     def test_requires_archive_bucket_and_wraps_write_failure(self):
         with patch.dict(os.environ, {}, clear=True):
             with self.assertRaisesRegex(RawXArchiveError, "X_RAW_POSTS_S3_BUCKET"):
