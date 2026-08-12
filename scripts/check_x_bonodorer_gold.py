@@ -12,16 +12,8 @@ import collect
 
 
 def rank(accounts, field):
-    # A non-23-ward source cannot form either future-notice or local-record
-    # roster. Gap credits retain the manual escape hatch for small official
-    # accounts whose historic output has already reached the review lane.
-    eligible = (
-        (lambda row: row.get("bon23_count", 0) > 1 or row.get("gap_credits", 0) > 0)
-        if field == "announce_score"
-        else (lambda row: row.get("bon23_count", 0) > 1)
-    )
     return {handle: index + 1 for index, (handle, _row) in enumerate(sorted(
-        ((handle, row) for handle, row in accounts.items() if eligible(row)),
+        accounts.items(),
         key=lambda item: (-item[1].get(field, 0), item[0])
     ))}
 
