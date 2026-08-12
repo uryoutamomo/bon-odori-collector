@@ -33,12 +33,12 @@
     "muted_max_score": 1.5
   },
   "event_evidence": {
-    "_comment": "イベントらしき発言断片を、固定コホートの過去発言から継続的に掘る。各窓の完了後は advance_event_evidence_window.py で次窓へ進める。",
+    "_comment": "イベントらしき発言断片を、固定コホートの過去発言から継続的に掘る。lookback_window_days は初回と連続収集の窓幅。旧 initial_window_days はコード側で後方互換として読み取る。",
     "enabled": true,
     "pilot_only": false,
     "cohort_file": "data/x_event_evidence_cohort.json",
     "min_account_score": -0.6,
-    "initial_window_days": 14,
+    "lookback_window_days": 3,
     "batch_size": 20,
     "max_pages_per_run": 120,
     "max_evidence_per_run": 900

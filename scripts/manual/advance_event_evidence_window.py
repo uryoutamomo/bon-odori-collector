@@ -101,7 +101,10 @@ def main():
 
     config = load_json(args.config, {})
     evidence_cfg = config.get("event_evidence", {})
-    days = args.days or int(evidence_cfg.get("initial_window_days", 14))
+    days = args.days or int(evidence_cfg.get(
+        "lookback_window_days",
+        evidence_cfg.get("initial_window_days", 14),
+    ))
     next_state = build_next_state(state, days, args.note)
     result = {
         "dry_run": not args.apply,

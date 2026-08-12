@@ -2625,6 +2625,14 @@ def _save_event_evidence_state(state):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
+def _event_evidence_window_days(evidence_cfg):
+    """Return the rolling lookback, preserving the legacy config key."""
+    return int(evidence_cfg.get(
+        "lookback_window_days",
+        evidence_cfg.get("initial_window_days", 14),
+    ))
+
+
 def _advance_event_evidence_state(state, days, note, now=None):
     """Advance the evidence window without ever querying a future period.
 
@@ -2723,11 +2731,12 @@ def _event_evidence_accounts(accounts, cfg):
 
 
 def collect_event_evidence_history():
-    """前年同日から2週間分を全対象アカウントで収集する再開可能なパイロット。"""
+    """設定された窓を全対象アカウントで収集する再開可能なパイロット。"""
     cfg = _load_x_config() or {}
     evidence_cfg = cfg.get("event_evidence", {})
     if not evidence_cfg.get("enabled", False):
         return []
+    window_days = _event_evidence_window_days(evidence_cfg)
     if not TWITTERAPI_IO_KEY:
         print("[evidence] TWITTERAPI_IO_KEY 未設定のためスキップ")
         return []
@@ -2754,7 +2763,7 @@ def collect_event_evidence_history():
             return []
         state = _advance_event_evidence_state(
             state,
-            days=int(evidence_cfg.get("initial_window_days", 14)),
+            days=window_days,
             note="auto-advance continuous event evidence window",
         )
         if not state:
@@ -2771,7 +2780,7 @@ def collect_event_evidence_history():
             print("[evidence] 対象アカウントなし")
             return []
         start, end = build_initial_window(
-            days=int(evidence_cfg.get("initial_window_days", 14))
+            days=window_days
         )
         state = {
             "status": "in_progress",
