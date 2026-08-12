@@ -1,0 +1,161 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-12T16:30:00+09:00",
+  "source": {
+    "report_id": "queue_venue_backfill_20260812",
+    "title": "裏取りキュー由来・東京23区の未登録会場 一括精査（2026-08-12）",
+    "account_key": "torimochi_queue_backfill",
+    "notice_kind": "third_party_current_year",
+    "raw_text": "DynamoDB裏取りキュー（bon-odori-torimochi-queue）の candidate_type=会場 / status=要裏取り 189件のうち、会場マスタに未登録だった112件を「こと」がWeb裏取りし、東京23区内かつ盆踊り開催が確認できたものを新規登録候補としてまとめたもの。各イベントの一次・準一次出典URLは events[].detail_addendum に個別に記載している。区外・誤検知・既登録の判定内訳は data/queue_venue_backfill_20260812_triage.md を参照。【2026-08-12 追記】当初 venue.area を「東京都品川区」のように都名込みで書いたため、export_public_events.py の WHERE v.area IN (TOKYO_WARDS) に一致せず9件とも公開exportから弾かれた。TOKYO_WARDS は「品川区」のような裸の区名なので、area は区名だけにする。",
+    "url": "https://github.com/uryoutamomo/bon-odori-collector/blob/main/data/queue_venue_backfill_20260812_triage.md"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "しながわスネークタウン 夏フェス盆踊り",
+      "series_name": "しながわスネークタウン 夏フェス盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-11",
+      "date_end": "2026-07-12",
+      "venue": {
+        "name": "蛇窪神社",
+        "area": "品川区",
+        "address": "東京都品川区二葉4-4-12",
+        "access": "都営浅草線 中延駅から徒歩5分／東急大井町線 中延駅から徒歩6分／JR横須賀線 西大井駅から徒歩8分"
+      },
+      "notice_kind_override": "official_current_year",
+      "detail_addendum": "12:00〜21:00・雨天決行。DJ盆踊りと伝統の盆踊りを組み合わせた形式。出典: しながわ観光協会（準公式） https://shinagawa-kanko.or.jp/event/snake-summerfes2026/"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "浅草神社 夏詣盆をどり",
+      "series_name": "浅草神社 夏詣盆をどり",
+      "event_year": 2026,
+      "date_start": "2026-07-03",
+      "date_end": "2026-07-05",
+      "venue": {
+        "name": "浅草神社",
+        "area": "台東区",
+        "address": "東京都台東区浅草2-3-1"
+      },
+      "notice_kind_override": "official_current_year",
+      "detail_addendum": "神楽殿前が会場。18:00〜。開催は7月3日と7月5日の2日のみで、7月4日は開催されない（date_start〜date_endは連続開催ではない点に注意）。参加無料だが人数把握のため事前エントリーが必要。夏詣期間は7月1日〜7日。出典: 浅草神社「夏詣」公式 https://natsumoude.jp/"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "目黒駅前 地域のふれあい盆踊り大会",
+      "series_name": "目黒駅前 地域のふれあい盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-26",
+      "venue": {
+        "name": "権之助坂商店街",
+        "area": "目黒区",
+        "address": "東京都目黒区下目黒1丁目 JR目黒駅西口前道路",
+        "access": "JR・東京メトロ・東急 目黒駅 西口すぐ"
+      },
+      "detail_addendum": "2026年で第40回。主催は権之助坂商店街振興組合。10:00〜模擬店、16:00〜開会宣言、17:00〜盆踊り開始、20:00〜櫓上にて大抽選会。出典: 号外NET目黒区 https://meguro.goguynet.jp/2026/07/23/meguro_gonnosukezaka_bonodori2026/"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "碑文谷公園盆踊り大会",
+      "series_name": "碑文谷公園盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-25",
+      "venue": {
+        "name": "碑文谷公園",
+        "area": "目黒区",
+        "address": "東京都目黒区碑文谷6-9-11"
+      },
+      "detail_addendum": "18:00〜21:00（最終日は20:30まで）。会場は園内の池の北側。キッチンカーは17:00から、模擬店は17:30から。出典: 碑文谷６丁目自治会 https://himonya6.jp/?p=2416"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "北新井公園 納涼盆踊大会",
+      "series_name": "北新井公園 納涼盆踊大会",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "venue": {
+        "name": "北新井公園",
+        "area": "練馬区",
+        "address": "東京都練馬区豊玉上1-23-4"
+      },
+      "notice_kind_override": "official_current_year",
+      "detail_addendum": "2026年で第39回。主催は豊玉第一町会。7月18日(土)17:00〜20:30、7月19日(日)17:00〜20:00。練馬区の「令和8年度 地区祭開催日程」では第一地区祭（北新井公園）として同じ7月18日・19日に掲載されている。出典: 練馬区公式 https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "三原台町会納涼盆踊大会",
+      "series_name": "三原台町会納涼盆踊大会",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "venue": {
+        "name": "三原台公園",
+        "area": "練馬区",
+        "address": "東京都練馬区三原台3-7-38"
+      },
+      "detail_addendum": "18:00〜20:00。主催は三原台町会。出典: 盆踊りまるごと情報「盆まる」（全日本民踊指導者連盟） https://bonmaru.zenmin-odori.jp/archives/202802"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "大森南自治会 納涼盆おどり大会",
+      "series_name": "大森南自治会 納涼盆おどり大会",
+      "event_year": 2026,
+      "date_start": "2026-07-23",
+      "date_end": "2026-07-24",
+      "venue": {
+        "name": "浦守稲荷神社",
+        "area": "大田区",
+        "address": "東京都大田区大森南"
+      },
+      "detail_addendum": "主催は大森南自治会。会場住所は町名までしか裏取りできておらず、番地は未確定。出典: おーたふる／大田区商店街連合会（準公式） https://otakushoren.com/event/163825"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "中原八幡神社盆踊り大会",
+      "series_name": "中原八幡神社盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "venue": {
+        "name": "中原八幡神社",
+        "area": "葛飾区",
+        "address": "東京都葛飾区青戸2-2-2",
+        "access": "京成本線 青砥駅 東口から徒歩1分"
+      },
+      "detail_addendum": "2026年は7月18日の開催を南葛SCの参加報告で確認。2025年は7月19日・20日の2日間開催だったため、2026年も2日目がある可能性が高いが未確認のため初日のみ登録している。出典: 南葛SC公式 https://www.nankatsu-sc.com/74959.html ／2025年実績は葛飾つうしん https://katsushika-tsushin.com/24721.html"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "秋葉神社納涼盆踊り",
+      "series_name": "秋葉神社納涼盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "venue": {
+        "name": "秋葉神社",
+        "area": "墨田区",
+        "address": "東京都墨田区向島4丁目"
+      },
+      "detail_addendum": "境内のやぐらを囲む町会主体の盆踊り。会場住所は町名までしか一次資料で裏取りできておらず、番地は未確定。出典: すみだ経済新聞 https://sumida.keizai.biz/headline/1861 ／神社公式 https://mukojimaakiba.jp/"
+    }
+  ],
+  "skipped_events": [
+    {
+      "name": "沼袋氷川神社（中野区）",
+      "reason": "検知元記事の本文に沼袋氷川神社の盆踊りの記載がなく、載っているのは例大祭（2026年6月6日・7日）のみ。記事タイトルに『盆踊り』が含まれていたための誤検知。キューは『該当なし』が妥当。"
+    },
+    {
+      "name": "練馬一丁目公園（練馬区）",
+      "reason": "検知元記事で練馬一丁目公園に紐づく行事は『スイカ割り大会』であり盆踊りではない。同記事内の盆踊りは別会場の旭町小学校。キューは『該当なし』が妥当。旭町小学校は別途の会場候補になりうる。"
+    },
+    {
+      "name": "氷川児童遊園（練馬区）",
+      "reason": "盆踊り開催自体は区議の記事で確認できるが、正式な所在地も2026年の開催日も一次資料で裏取りできなかったため保留。"
+    },
+    {
+      "name": "隅田公園 芝生広場（台東区）",
+      "reason": "『隅田公園 七夕夜会』の盆踊りは実在するが開催日を裏取りできず保留。会場自体は ven_918cee224c6b19f7『隅田公園』として登録済み。"
+    }
+  ]
+}

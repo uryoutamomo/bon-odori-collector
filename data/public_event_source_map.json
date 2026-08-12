@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 370,
-  "mapped_count": 370,
+  "public_event_count": 379,
+  "mapped_count": 379,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -1001,6 +1001,18 @@
       "venue_id": "ven_e2b01e369e09ba9c"
     },
     {
+      "public_event_key": "浅草神社 夏詣盆をどり|浅草神社|2026-07-03|2026-07-05",
+      "name": "浅草神社 夏詣盆をどり",
+      "venue": "浅草神社",
+      "date": "2026-07-03",
+      "date_end": "2026-07-05",
+      "source": "master_rdb",
+      "occurrence_id": "occ_c8c19bd836c97d08",
+      "series_id": "series_95e45ad2e43db1f3",
+      "event_year": 2026,
+      "venue_id": "venue_b683c77c07bb6bb7"
+    },
+    {
       "public_event_key": "雷門盆踊り|浅草雷門前 並木通り|2026-09-05|2026-09-05",
       "name": "雷門盆踊り",
       "venue": "浅草雷門前 並木通り",
@@ -1263,6 +1275,18 @@
       "series_id": "ser_bc99f3be5f10c19a",
       "event_year": 2025,
       "venue_id": "ven_42b90ce6dc10fc76"
+    },
+    {
+      "public_event_key": "秋葉神社納涼盆踊り|秋葉神社|2026-07-18|2026-07-18",
+      "name": "秋葉神社納涼盆踊り",
+      "venue": "秋葉神社",
+      "date": "2026-07-18",
+      "date_end": "2026-07-18",
+      "source": "master_rdb",
+      "occurrence_id": "occ_9b3ba0cd2a041649",
+      "series_id": "series_b5c58ce70595183b",
+      "event_year": 2026,
+      "venue_id": "venue_3dc601b0967799f7"
     },
     {
       "public_event_key": "亀沢1、2丁目合同 牛嶋神社 奉納踊り|緑町公園||",
@@ -2021,6 +2045,18 @@
       "venue_id": "ven_1fc3f4a281206478"
     },
     {
+      "public_event_key": "しながわスネークタウン 夏フェス盆踊り|蛇窪神社|2026-07-11|2026-07-12",
+      "name": "しながわスネークタウン 夏フェス盆踊り",
+      "venue": "蛇窪神社",
+      "date": "2026-07-11",
+      "date_end": "2026-07-12",
+      "source": "master_rdb",
+      "occurrence_id": "occ_be696a6eddc87312",
+      "series_id": "series_1e9c1cc5f1669747",
+      "event_year": 2026,
+      "venue_id": "venue_5681724d075b0d21"
+    },
+    {
       "public_event_key": "品川区民まつり 西大井広場公園 盆踊り|西大井広場公園|2025-09-27|",
       "name": "品川区民まつり 西大井広場公園 盆踊り",
       "venue": "西大井広場公園",
@@ -2091,6 +2127,30 @@
       "series_id": "ser_21c30c0ec3f29087",
       "event_year": 2025,
       "venue_id": "ven_a987a8a4292df43d"
+    },
+    {
+      "public_event_key": "目黒駅前 地域のふれあい盆踊り大会|権之助坂商店街|2026-07-26|2026-07-26",
+      "name": "目黒駅前 地域のふれあい盆踊り大会",
+      "venue": "権之助坂商店街",
+      "date": "2026-07-26",
+      "date_end": "2026-07-26",
+      "source": "master_rdb",
+      "occurrence_id": "occ_2165bfd718be8378",
+      "series_id": "series_501b0a7477437107",
+      "event_year": 2026,
+      "venue_id": "venue_ca3d433ddad0d5c2"
+    },
+    {
+      "public_event_key": "碑文谷公園盆踊り大会|碑文谷公園|2026-07-24|2026-07-25",
+      "name": "碑文谷公園盆踊り大会",
+      "venue": "碑文谷公園",
+      "date": "2026-07-24",
+      "date_end": "2026-07-25",
+      "source": "master_rdb",
+      "occurrence_id": "occ_8b3890f083a577fa",
+      "series_id": "series_23613bb6b4ada0df",
+      "event_year": 2026,
+      "venue_id": "venue_b281745305459e76"
     },
     {
       "public_event_key": "祐天寺み魂まつり こども盆踊り大会|祐天寺境内|2025-07-16|",
@@ -2235,6 +2295,18 @@
       "series_id": "ser_bd9d67e94c11f978",
       "event_year": 2025,
       "venue_id": "ven_c8b1a87955e3d92e"
+    },
+    {
+      "public_event_key": "大森南自治会 納涼盆おどり大会|浦守稲荷神社|2026-07-23|2026-07-24",
+      "name": "大森南自治会 納涼盆おどり大会",
+      "venue": "浦守稲荷神社",
+      "date": "2026-07-23",
+      "date_end": "2026-07-24",
+      "source": "master_rdb",
+      "occurrence_id": "occ_cf117f60531ba1c1",
+      "series_id": "series_ce930fb670df5b97",
+      "event_year": 2026,
+      "venue_id": "venue_c6afcc0d52eed8ba"
     },
     {
       "public_event_key": "羽田青年連合会|羽田神社|2025-07-13|",
@@ -3233,6 +3305,18 @@
       "venue_id": "venue_c2c9675b00ed64ff"
     },
     {
+      "public_event_key": "三原台町会納涼盆踊大会|三原台公園|2026-07-25|2026-07-26",
+      "name": "三原台町会納涼盆踊大会",
+      "venue": "三原台公園",
+      "date": "2026-07-25",
+      "date_end": "2026-07-26",
+      "source": "master_rdb",
+      "occurrence_id": "occ_267aec464639de14",
+      "series_id": "series_83c38f12a6e2693b",
+      "event_year": 2026,
+      "venue_id": "venue_768b9de4b6fc921d"
+    },
+    {
       "public_event_key": "上石神井地区祭|上石神井小学校|2026-08-22|2026-08-22",
       "name": "上石神井地区祭",
       "venue": "上石神井小学校",
@@ -3243,6 +3327,18 @@
       "series_id": "series_9ec4d7d31c58a66e",
       "event_year": 2026,
       "venue_id": "venue_fc7d2b5087c6be16"
+    },
+    {
+      "public_event_key": "北新井公園 納涼盆踊大会|北新井公園|2026-07-18|2026-07-19",
+      "name": "北新井公園 納涼盆踊大会",
+      "venue": "北新井公園",
+      "date": "2026-07-18",
+      "date_end": "2026-07-19",
+      "source": "master_rdb",
+      "occurrence_id": "occ_95e067e34d5e632c",
+      "series_id": "series_6a65eb23f2f48fbd",
+      "event_year": 2026,
+      "venue_id": "venue_2512e0528ddbdbe8"
     },
     {
       "public_event_key": "大泉西地区祭|四面塔稲荷神社|2026-08-29|2026-08-29",
@@ -3687,6 +3783,18 @@
       "series_id": "series_df7e9db427663a30",
       "event_year": 2026,
       "venue_id": "venue_99d5fa802d81e347"
+    },
+    {
+      "public_event_key": "中原八幡神社盆踊り大会|中原八幡神社|2026-07-18|2026-07-18",
+      "name": "中原八幡神社盆踊り大会",
+      "venue": "中原八幡神社",
+      "date": "2026-07-18",
+      "date_end": "2026-07-18",
+      "source": "master_rdb",
+      "occurrence_id": "occ_d921b723d4531bc6",
+      "series_id": "series_faae6fc7efd2528e",
+      "event_year": 2026,
+      "venue_id": "venue_cafefc5f7e30f344"
     },
     {
       "public_event_key": "あ〜夏休み！納涼盆踊り大会|亀有ゆうろーど（亀有銀座商店街）|2026-07-17|2026-07-20",
