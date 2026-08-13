@@ -19,6 +19,7 @@ class XOfficialSourceAccountsTest(unittest.TestCase):
         iri2 = [row for row in accounts if row["handle"] == "@iri2choukai"][0]
 
         self.assertEqual(iri2["manual_status"], "優先")
+        self.assertEqual(iri2["tier"], "active")
         self.assertEqual(iri2["source_type"], "official_or_organizer_social")
 
     def test_matches_registered_social_url(self):

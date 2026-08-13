@@ -11,6 +11,24 @@
       "source_type": "official_or_organizer_social",
       "trust_level": "organizer_official",
       "manual_status": "優先",
+      "tier": "active",
+      "linked_events": [
+        {
+          "series_id": "ser_tetsupozu_noryo_bonodori",
+          "series_name": "鉄砲洲納涼盆踊り",
+          "ward": "中央区",
+          "confidence": "confirmed",
+          "first_seen": "2026-07-14",
+          "last_seen": "2026-08-02",
+          "evidence_urls": [],
+          "latest_occurrence_end": "2026-08-02",
+          "expected_month": 8
+        }
+      ],
+      "wake_after": "2027-06-03",
+      "sleep_after": "2026-08-16",
+      "decided_by": "user",
+      "decided_at": "2026-08-13",
       "evidence_url": "https://x.com/iri2choukai",
       "related_event_keywords": [
         "鉄砲洲納涼盆踊り",
