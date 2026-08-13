@@ -1,0 +1,672 @@
+<title>盆助 仕様書</title>
+<script>document.documentElement.className += " js";</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --ground:#FAF8F4; --surface:#FFFFFF; --surface-2:#F2EEE7;
+  --ink:#16202B; --ink-soft:#3D4A57; --muted:#68727E;
+  --rule:#E0D9CE; --rule-soft:#EDE7DC;
+  --accent:#1D4E6B; --accent-soft:#E4EDF3; --accent-ink:#123549;
+  --warn:#9C5B14; --warn-soft:#F7EDDF;
+  --ok:#2F6B4F; --ok-soft:#E6F0E9;
+  --shadow:0 1px 2px rgba(22,32,43,.06),0 8px 24px rgba(22,32,43,.05);
+  --serif:"Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif JP",serif;
+  --sans:"Hiragino Kaku Gothic ProN","Yu Gothic",YuGothic,"Noto Sans JP",system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F151B; --surface:#161E26; --surface-2:#1D2831;
+    --ink:#E7ECF1; --ink-soft:#C2CCD6; --muted:#8A97A4;
+    --rule:#2A3742; --rule-soft:#212C36;
+    --accent:#79ADCC; --accent-soft:#17303F; --accent-ink:#A8CDE3;
+    --warn:#D8973C; --warn-soft:#2E2415;
+    --ok:#6FB48F; --ok-soft:#14251C;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F151B; --surface:#161E26; --surface-2:#1D2831;
+  --ink:#E7ECF1; --ink-soft:#C2CCD6; --muted:#8A97A4;
+  --rule:#2A3742; --rule-soft:#212C36;
+  --accent:#79ADCC; --accent-soft:#17303F; --accent-ink:#A8CDE3;
+  --warn:#D8973C; --warn-soft:#2E2415;
+  --ok:#6FB48F; --ok-soft:#14251C;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--sans);font-size:15.5px;line-height:1.85;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent);text-underline-offset:2px;text-decoration-thickness:.5px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+
+.shell{display:grid;grid-template-columns:270px minmax(0,1fr);gap:0;min-height:100vh}
+.rail{border-right:1px solid var(--rule);background:var(--surface);
+  position:sticky;top:0;height:100vh;overflow-y:auto;padding:26px 20px 40px}
+.brand{font-family:var(--serif);font-size:23px;letter-spacing:.04em;margin:0 0 2px;color:var(--ink)}
+.brand small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);margin-top:7px;font-weight:600}
+.stat{margin:20px 0 22px;padding:13px 14px;background:var(--surface-2);border-radius:3px;
+  border-left:2px solid var(--accent)}
+.stat b{font-family:var(--serif);font-size:21px;font-variant-numeric:tabular-nums;display:block;line-height:1.3}
+.stat span{font-size:11.5px;color:var(--muted);letter-spacing:.03em}
+.group{margin:0 0 18px}
+.group>h2{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  margin:0 0 7px;font-weight:700}
+.navlink{display:block;padding:6px 9px;border-radius:3px;color:var(--ink-soft);
+  text-decoration:none;font-size:13.5px;line-height:1.5;border-left:2px solid transparent}
+.navlink:hover{background:var(--surface-2);color:var(--ink)}
+.navlink.on{background:var(--accent-soft);color:var(--accent-ink);border-left-color:var(--accent);font-weight:600}
+.navlink .tag{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.04em}
+
+.main{min-width:0;display:flex;flex-direction:column}
+.topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);padding:12px 34px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.search{flex:1;min-width:240px;position:relative}
+.search input{width:100%;padding:9px 12px;font:inherit;font-size:14px;font-family:var(--mono);
+  background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:3px}
+.search input::placeholder{color:var(--muted);font-family:var(--sans)}
+.hint{font-size:12px;color:var(--muted)}
+.results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);
+  border:1px solid var(--rule);border-radius:3px;box-shadow:var(--shadow);max-height:340px;
+  overflow-y:auto;display:none;z-index:30}
+.results.show{display:block}
+.results button{display:block;width:100%;text-align:left;background:none;border:0;
+  padding:9px 12px;font:inherit;cursor:pointer;color:var(--ink);border-bottom:1px solid var(--rule-soft)}
+.results button:last-child{border-bottom:0}
+.results button:hover{background:var(--accent-soft)}
+.results .f{font-family:var(--mono);font-size:12.5px}
+.results .s{font-size:11.5px;color:var(--muted)}
+.results .none{padding:11px 12px;font-size:12.5px;color:var(--muted)}
+
+.page{padding:34px 34px 90px;max-width:860px}
+/* JSが動く環境だけ1ページずつ表示する。動かない環境（iOSのファイルプレビュー等）では
+   全ページが縦に並ぶだけで、真っ白にはならない。 */
+.js .page{display:none}
+.js .page.on{display:block}
+.js .nojs-note{display:none}
+.nojs-note{margin:0 0 24px;padding:11px 14px;background:var(--surface-2);
+  border-left:2px solid var(--accent);border-radius:0 3px 3px 0;font-size:13.5px;color:var(--ink-soft)}
+.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  font-weight:700;margin:0 0 6px}
+.page h1{font-family:var(--serif);font-size:33px;line-height:1.35;margin:0 0 6px;
+  font-weight:600;text-wrap:balance;letter-spacing:.01em}
+.page h2{font-family:var(--serif);font-size:22px;margin:38px 0 10px;font-weight:600;
+  text-wrap:balance;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.page h3{font-size:16.5px;margin:26px 0 8px;font-weight:700;text-wrap:balance}
+.page h4{font-size:14.5px;margin:20px 0 6px;font-weight:700;color:var(--ink-soft)}
+.page p{margin:0 0 15px}
+.page ul,.page ol{margin:0 0 15px;padding-left:1.35em}
+.page li{margin:0 0 6px}
+.page hr{border:0;border-top:1px solid var(--rule);margin:34px 0}
+blockquote{margin:0 0 17px;padding:12px 16px;background:var(--surface-2);
+  border-left:2px solid var(--accent);border-radius:0 3px 3px 0;color:var(--ink-soft)}
+code{font-family:var(--mono);font-size:.855em;background:var(--surface-2);
+  padding:.12em .38em;border-radius:2px;word-break:break-word}
+pre.code{background:var(--surface-2);border:1px solid var(--rule);border-radius:3px;
+  padding:14px 16px;margin:0;line-height:1.6}
+pre.code code{background:none;padding:0;font-size:12.8px}
+pre.mermaid{background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+  padding:18px;margin:0 0 17px;text-align:center;overflow-x:auto}
+.scroll-x{overflow-x:auto;margin:0 0 17px}
+table{border-collapse:collapse;width:100%;font-size:13.8px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+  border-bottom:1px solid var(--rule);font-weight:700;white-space:nowrap}
+td:has(code){font-variant-numeric:tabular-nums}
+
+.inv-head{display:flex;flex-direction:column;gap:3px;margin:30px 0 10px;
+  padding:11px 14px;background:var(--surface-2);border-radius:3px;
+  border-left:3px solid var(--accent)}
+.inv-id{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--accent);font-weight:700}
+.inv-title{font-size:16px;font-weight:700;line-height:1.55}
+
+.invtable td.st{white-space:nowrap}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;
+  letter-spacing:.03em;white-space:nowrap}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+tr.risk td{background:color-mix(in srgb,var(--warn-soft) 55%,transparent)}
+.lead{font-size:16.5px;color:var(--ink-soft);margin:0 0 24px;max-width:62ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:0 0 30px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:15px 16px}
+.card b{font-family:var(--serif);font-size:27px;display:block;line-height:1.2;
+  font-variant-numeric:tabular-nums}
+.card span{font-size:12px;color:var(--muted);display:block;margin-top:3px}
+.card.warn{border-left:3px solid var(--warn)}
+.card.warn b{color:var(--warn)}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);
+  font-size:12.5px;color:var(--muted)}
+
+@media (max-width:880px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--rule)}
+  .page,.topbar{padding-left:20px;padding-right:20px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+<div class="shell">
+<nav class="rail">
+  <h1 class="brand">盆助 仕様書<small>Bonsuke Specification</small></h1>
+  <div class="stat">
+    <b>105 / 328</b>
+    <span>説明のあるファイル（残り 223 件は未記述）</span>
+  </div>
+  <div class="group"><h2>全体地図</h2><a class="navlink" href="#L0" data-target="L0">盆助 全体地図<span class="tag">L0</span></a></div><div class="group"><h2>サブシステム</h2><a class="navlink" href="#L1-collection" data-target="L1-collection">収集サブシステム<span class="tag">L1-collection</span></a><a class="navlink" href="#L1-judgment" data-target="L1-judgment">自動判断サブシステム<span class="tag">L1-judgment</span></a><a class="navlink" href="#L1-review" data-target="L1-review">人のレビュー運用サブシステム<span class="tag">L1-review</span></a><a class="navlink" href="#L1-master" data-target="L1-master">マスタ（Master RDB）サブシステム<span class="tag">L1-master</span></a><a class="navlink" href="#L1-publication" data-target="L1-publication">公開サブシステム<span class="tag">L1-publication</span></a><a class="navlink" href="#L1-delivery" data-target="L1-delivery">配信サブシステム（メール）<span class="tag">L1-delivery</span></a><a class="navlink" href="#L1-platform" data-target="L1-platform">実行基盤・安全弁<span class="tag">L1-platform</span></a></div><div class="group"><h2>データ契約</h2><a class="navlink" href="#L2-master-schema" data-target="L2-master-schema">マスタRDBスキーマ契約<span class="tag">L2-master-schema</span></a><a class="navlink" href="#L2-public-json" data-target="L2-public-json">公開JSONのフィールド契約<span class="tag">L2-public-json</span></a></div><div class="group"><h2>仕様書の書き方</h2><a class="navlink" href="#SPEC-GUIDE" data-target="SPEC-GUIDE">仕様書の仕様<span class="tag">SPEC-GUIDE</span></a></div><div class="group"><h2>横断で見る</h2><a class="navlink" href="#invariants" data-target="invariants">不変条件の一覧<span class="tag">33 件 / 未検査 9</span></a></div>
+</nav>
+<div class="main">
+  <div class="topbar">
+    <div class="search">
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="ファイル名から逆引き（例: collect.py）" aria-label="ファイル名から逆引き" />
+      <div class="results" id="res" role="listbox"></div>
+    </div>
+    <span class="hint">触るファイルが決まっているときは、ここから引く</span>
+  </div>
+  <p class="nojs-note">この環境ではページ切り替えと逆引き検索が使えないため、
+  すべての仕様を続けて表示しています。上から順に読むか、端末の検索機能で探してください。</p>
+  <article class="page" id="L0"><p class="eyebrow">L0 ・ 6537e7f 時点で確認済み／以降 1 ファイルが変更</p><h1>盆助 全体地図</h1>
+<p>盆助（ぼんすけ、https://bonsuke.jp ）は、東京23区の盆踊りの開催情報を自動で集めて公開する仕組みである。 Claude や Codex が動いていない時間も GitHub Actions が自律的に走り、収集・判断・公開までが毎日回る。</p>
+<p>このページは<strong>最初に開く1枚</strong>で、目的は「いまどこの話をしているのか」を決めることだけ。 詳しいことは何も書かない。当たりをつけたら L1 へ降りる。</p>
+<ul><li>仕様書そのものの読み方・書き方は <a href="#SPEC-GUIDE">SPEC-GUIDE</a> にある。<strong>仕様書を書き足す前に必ず読む。</strong></li><li>ファイルを触るのが先に決まっているなら、このページではなく <code>index.json</code> の逆引きを使う。</li></ul>
+<h2>何を解いている仕組みか</h2>
+<p>盆踊りの開催情報は、驚くほど<strong>どこにもまとまっていない</strong>。町会の掲示板、神社の貼り紙、区の広報、 主催者のX投稿にばらばらに存在し、多くは開催の数週間前にならないと出てこない。しかも毎年ほぼ同じ時期に、 ほぼ同じ場所で開かれるのに、その「例年こうだ」という知識もどこにも書かれていない。</p>
+<p>盆助は、この散らばった断片を機械が集め、確からしさを判断し、 <strong>確定した情報と、まだ推測でしかない情報を区別したまま</strong>公開する。区別を保つことが設計の中心にある。 「たぶん去年と同じ日だろう」を確定情報として出してしまえば、人を存在しない盆踊りへ歩かせることになるからだ。</p>
+<h2>全体の流れ</h2>
+<pre class="mermaid">flowchart TD
+    subgraph 収集["① 収集 (L1-collection)"]
+        X[X / twitterapi.io]
+        RSS[ニュースRSS]
+        SITE[公式サイト監視]
+        YT[YouTube]
+    end
+
+    subgraph 判断["② 判断・仕分け (L1-judgment)"]
+        CLS[ノイズ / 一次レポ / 関心の仕分け]
+        EXT[イベント名・会場・日付・曲目の抽出]
+    end
+
+    subgraph レビュー["③ 人のレビュー (L1-review)"]
+        INBOX[レビュー受信箱]
+        CONSOLE[レビューコンソール]
+    end
+
+    subgraph マスタ["④ マスタ (L1-master)"]
+        RDB[(Master RDB&lt;br/&gt;SQLite on S3)]
+    end
+
+    subgraph 公開["⑤ 公開 (L1-publication)"]
+        PJSON[events_public.json]
+        SITE2[bonsuke.jp]
+    end
+
+    subgraph 配信["⑥ 配信 (L1-delivery)"]
+        MAIL[日刊メール / 金曜週報]
+    end
+
+    X --&gt; CLS
+    RSS --&gt; CLS
+    SITE --&gt; EXT
+    YT --&gt; EXT
+    CLS --&gt; EXT
+    EXT --&gt; INBOX
+    INBOX --&gt; CONSOLE
+    CONSOLE --&gt;|人の裁定| RDB
+    EXT --&gt;|自動で確定できるもの| RDB
+    RDB --&gt; PJSON
+    PJSON --&gt; SITE2
+    RDB --&gt; MAIL</pre>
+<p>矢印のうち <strong><code>CONSOLE --&gt;|人の裁定| RDB</code> が律速</strong>である。集めることでも判断することでもなく、 人が裁定を下す速度が全体の速度を決めている。機械の精度を上げる前に、まずこの工程が詰まっていないかを見るのが正しい。</p>
+<h2>サブシステム一覧</h2>
+<div class="scroll-x"><table><thead><tr><th>L1</th><th>担当</th><th>いちばんの関心事</th><th>詳細</th></tr></thead><tbody><tr><td>① 収集</td><td>X・RSS・公式サイト・YouTube から断片を集める</td><td>取りこぼした原文は復元できないこと</td><td><a href="#L1-collection">01-collection</a></td></tr><tr><td>② 判断・仕分け</td><td>断片からイベント・会場・日付を取り出す</td><td>採点の理由を説明できる形で残すこと</td><td><a href="#L1-judgment">02-judgment</a></td></tr><tr><td>③ 人のレビュー</td><td>機械が決められないものを人が裁定する</td><td>詰まらせないこと（ここが律速）</td><td><a href="#L1-review">03-review</a></td></tr><tr><td>④ マスタ</td><td>確定した事実の正本を保つ</td><td>確定と推測を混ぜないこと</td><td><a href="#L1-master">04-master</a></td></tr><tr><td>⑤ 公開</td><td>公開JSONを作り、サイトへ届ける</td><td>危ないときに止まれること</td><td><a href="#L1-publication">05-publication</a></td></tr><tr><td>⑥ 配信</td><td>日刊メール・金曜週報</td><td>送ってしまうと取り消せないこと</td><td><a href="#L1-delivery">06-delivery</a></td></tr><tr><td>⑦ 基盤</td><td>GitHub Actions・AWS・認証・成果物の受け渡し</td><td>誤った経路での実行を止めること</td><td><a href="#L1-platform">07-platform</a></td></tr></tbody></table></div>
+<h2>L2（データの正確な形）</h2>
+<p>L1が「何に責任を持ち、何を壊してはいけないか」なのに対し、L2は<strong>データそのものの形</strong>を扱う。 工程どうしが受け渡すものの契約なので、実装するときはこちらを見る。</p>
+<div class="scroll-x"><table><thead><tr><th>L2</th><th>何の契約か</th><th>なぜ要るか</th></tr></thead><tbody><tr><td><a href="#L2-master-schema">master-schema</a></td><td>Master RDB のテーブル構造</td><td>系列と年次開催回の関係、確定/予測/観測の境界がソースからしか読めなかった</td></tr><tr><td><a href="#L2-public-json">public-json</a></td><td>公開JSONのフィールド</td><td><code>bon-odori-site</code> との事実上の外部API。契約が暗黙のままだった</td></tr></tbody></table></div>
+<blockquote><strong>いまの状態</strong>: L1は7本、L2は2本。正確な網羅率とテストの付いていない不変条件は <code>index.json</code> が持つ（この表は手書きなので遅れることがある）。</blockquote>
+<h2>実物の規模（<code>6537e7f</code> 時点）</h2>
+<div class="scroll-x"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Python</td><td>668ファイル / 約139,000行</td></tr><tr><td>日次パイプライン</td><td><code>collect.yml</code> の1本に約40工程</td></tr><tr><td>Master RDB</td><td>イベント系列347・開催回364・根拠31,329件</td></tr><tr><td>公開イベント</td><td>379件</td></tr></tbody></table></div>
+<p>数字を載せているのは自慢のためではなく、<strong>「ソースを読めば分かる」が成り立たない規模だと示すため</strong>である。 14万行を毎回読み直すことは人にもAIにもできない。だから中間情報がいる。</p>
+<h2>壊れたときにまずここを見る</h2>
+<p>事故は毎回ちがう顔で来るが、入口はだいたい決まっている。症状から当たりをつけるための対応表を置く。</p>
+<div class="scroll-x"><table><thead><tr><th>見えている症状</th><th>疑う場所</th></tr></thead><tbody><tr><td>公開件数が急に減った／増えた</td><td>⑤ 公開の同期ガード</td></tr><tr><td>終わった行事が「開催予定」のまま残っている</td><td>⑤ 公開、④ の開催回の状態遷移</td></tr><tr><td>X由来の情報が丸ごと集まっていない</td><td>① 収集（APIの課金切れ・認証・cron窓）</td></tr><tr><td>特定の区だけ情報が薄い</td><td>① 収集（読んでいる相手の偏り）</td></tr><tr><td>曲名でないものが曲目に出ている</td><td>② 判断（曲目抽出）</td></tr><tr><td>メールが来ない</td><td>⑥ 配信</td></tr><tr><td>何日も何も更新されていない</td><td>⑦ 基盤（日次workflowが落ちている）</td></tr></tbody></table></div>
+<p><strong>日次が止まっても誰も気づかない</strong>というのが、この仕組みの最大の弱点である。 実際に2日止まって、終わった行事38件が「開催予定」のまま公開され続けたことがある。 朝に日次の成否を見る習慣が、いまのところ唯一の検出手段になっている。</p>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>docs/spec/README.md</code></td></tr></tbody></table></div></article><article class="page" id="L1-collection"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>収集サブシステム</h1>
+<blockquote>上位は<a href="#L0">全体地図</a>。収集は候補と観測を集める工程であり、採否を決める工程ではない。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を失わず集める。外部APIは欠損や失敗が普通に起きるため、失敗を「情報なし」と取り違えず、次の判断工程へ根拠と状態を渡すことが責務である。</p>
+<h2>入力と出力</h2>
+<p>入力は各サービスの取得結果、既読URL、X設定、予算状態である。出力は <code>data/voices.json</code>、生X投稿のアーカイブ、収集状態・コスト台帳、および候補キューである。</p>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-COL-001"><span class="inv-id">INV-COL-001</span><span class="inv-title">Xの生投稿は意味判定より先に保存する</span></h3>
+<ul><li><strong>内容</strong>: 未見のX投稿は <code>_prepare_new_x_posts()</code> が <code>capture_raw_x_posts()</code> で保存に成功してから後続の仕分けへ渡す。保存失敗時は既読を進めない。</li><li><strong>なぜ</strong>: 分類ルールは後で直せるが、取りこぼした原文は復元できないから。</li><li><strong>破れたときの症状</strong>: 判定規則を直しても過去投稿を再評価できず、候補が静かに欠落する。</li><li><strong>守っているコード</strong>: <code>collect.py</code> の <code>_prepare_new_x_posts()</code>、<code>collection_support/x_raw_archive.py</code></li><li><strong>守っているテスト</strong>: <code>tests/test_x_raw_archive.py::test_archive_failure_propagates_without_seen_advance</code></li></ul>
+<h3 class="inv-head" id="INV-COL-002"><span class="inv-id">INV-COL-002</span><span class="inv-title">同じURLを1回の収集で重複して取り込まない</span></h3>
+<ul><li><strong>内容</strong>: <code>_prepare_new_x_posts()</code> は既読集合・今回の既読予定集合・今回の準備済みURLを照合して重複を除く。</li><li><strong>なぜ</strong>: 同じ投稿の重複は候補の件数と重要度を水増しし、後段の人の判断を歪めるから。</li><li><strong>破れたときの症状</strong>: 同一投稿が複数の候補として並び、レビュー件数とXコストの説明が合わなくなる。</li><li><strong>守っているコード</strong>: <code>collect.py</code> の <code>_prepare_new_x_posts()</code></li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h3 class="inv-head" id="INV-COL-003"><span class="inv-id">INV-COL-003</span><span class="inv-title">収集不能・受理0件を正常な「投稿なし」として扱わない</span></h3>
+<ul><li><strong>内容</strong>: <code>collect_x_voices()</code> はキー・設定・予算が欠けると理由つきで安全にスキップする。さらに <code>finalize_health_report()</code> は、収集が必要なのに無効だった場合と、成功扱いでも受理0件だった場合を <code>unhealthy</code> にする。</li><li><strong>なぜ</strong>: 2026-08-10のtwitterapi.io課金切れでは、HTTP上は成功しても取得が空だった。止めるだけでは障害を「投稿なし」と取り違えるため、空を異常として見える化しなければならない。</li><li><strong>破れたときの症状</strong>: API費用が予想外に増える、または収集停止・受理0件が正常終了に見えて探索の穴が何日も続く。</li><li><strong>守っているコード</strong>: <code>collect.py</code> の <code>collect_x_voices()</code>、<code>collection_support/x_budget_guard.py</code>、<code>collection_support/x_collection_health.py</code> の <code>finalize_health_report()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_x_collection_health.py::test_successful_but_zero_item_run_is_unhealthy</code>、<code>tests/test_x_collection_health.py::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items</code></li></ul>
+<h3 class="inv-head" id="INV-COL-004"><span class="inv-id">INV-COL-004</span><span class="inv-title">未完了のホワイトリスト収集では since_time を進めない</span></h3>
+<ul><li><strong>内容</strong>: <code>collect_whitelist_voices()</code> は、全バッチが完了したときだけ次回検索の <code>since_time</code> を保存する。402などで一部でも未完了なら従来の時刻を維持する。</li><li><strong>なぜ</strong>: <code>since_time</code> を先に進めると、その時間窓の投稿は次回以降の検索対象から外れ、取りこぼしが恒久化するから。</li><li><strong>破れたときの症状</strong>: 課金・通信障害の時間帯だけ候補が永久に消え、復旧後も再収集されない。</li><li><strong>守っているコード</strong>: <code>collect.py</code> のホワイトリスト収集と <code>since_time</code> 保存経路</li><li><strong>守っているテスト</strong>: <code>tests/test_x_collection_health.py::test_whitelist_402_after_partial_success_does_not_advance_since_time</code>、<code>tests/test_x_collection_health.py::test_whitelist_advances_since_time_only_after_every_batch_completes</code></li></ul>
+<h2>主要な流れ</h2>
+<ol><li><code>collect.py</code> がRSS・動画・Xを取得し、既読情報と照合する。</li><li>Xは生投稿をアーカイブしてから、候補・声・収集状態へ分ける。</li><li>コストと健全性を記録し、候補は判断工程へ渡す。</li></ol>
+<h2>依存と影響</h2>
+<p>下流の判断とレビューは、収集の重複除去・生原文・失敗理由を前提にする。収集を「候補なし」と誤ると、下流は何も直せない。</p>
+<h2>壊れたときの症状</h2>
+<p>候補が急減したらAPIキー・予算・収集健全性を、同じ投稿が並ぶなら既読・URL正規化を、再評価できないならアーカイブを確認する。</p>
+<h2>未解決・注意点</h2>
+<p>外部サービスの応答品質はこの工程だけでは保証できない。取得なしと障害を区別する観測は引き続き強化が必要である。</p>
+<hr />
+<p>おと（Codex）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>collect.py</code></td></tr><tr><td><code>collection_support/voices_s3_artifact.py</code></td></tr><tr><td><code>collection_support/x_author_profile.py</code></td></tr><tr><td><code>collection_support/x_budget_guard.py</code></td></tr><tr><td><code>collection_support/x_collection_health.py</code></td></tr><tr><td><code>collection_support/x_cost_ledger.py</code></td></tr><tr><td><code>collection_support/x_official_source_accounts.py</code></td></tr><tr><td><code>collection_support/x_raw_archive.py</code></td></tr><tr><td><code>collection_support/x_source_registry.py</code></td></tr></tbody></table></div></article><article class="page" id="L1-judgment"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>自動判断サブシステム</h1>
+<blockquote>上位は<a href="#L0">全体地図</a>。これは自動採用器ではなく、観測を説明可能な優先候補へ整える工程である。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>収集された文章から日付・場所・イベント名などの根拠を取り出し、人が確認すべき候補を優先付けする。弱い断片を消して「なかったこと」にするより、弱い理由を残して人が判断できるようにする。</p>
+<h2>入力と出力</h2>
+<p>入力は収集済みの投稿と除外語・地理・公式性の設定。出力はイベント候補の本文、根拠、スコア、推定日付・会場・関連キーである。</p>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-JDG-001"><span class="inv-id">INV-JDG-001</span><span class="inv-title">判定には盆踊り文脈と説明可能な採点理由を残す</span></h3>
+<ul><li><strong>内容</strong>: <code>classify_event_evidence()</code> はA〜Eのパターン、日付・場所等の根拠からスコアと <code>score_reasons</code> を作り、盆踊り文脈が弱ければ減点する。</li><li><strong>なぜ</strong>: 点数だけでは人が誤判定を発見できず、一般的な夏祭り情報を盆踊り候補として増幅してしまうから。</li><li><strong>破れたときの症状</strong>: 根拠のない高優先候補が増え、レビュー担当者が採否の理由を追えない。</li><li><strong>守っているコード</strong>: <code>collection_support/event_evidence.py</code> の <code>classify_event_evidence()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_event_evidence.py::test_classifies_patterns_and_explainable_score</code></li></ul>
+<h3 class="inv-head" id="INV-JDG-002"><span class="inv-id">INV-JDG-002</span><span class="inv-title">一般名詞・断片をイベント名として確定候補にしない</span></h3>
+<ul><li><strong>内容</strong>: イベント名らしい文字列でも、一般名詞・除外対象・文断片なら抑制し、場所や月を含む弱い候補として扱う。</li><li><strong>なぜ</strong>: 曖昧な単語を固有イベントとして採用すると、異なる行事の根拠が混ざるから。</li><li><strong>破れたときの症状</strong>: 存在しないイベント名の候補が増え、別会場の情報が誤結合される。</li><li><strong>守っているコード</strong>: <code>collection_support/event_evidence.py</code> の <code>is_generic_event_hint()</code> と <code>classify_event_evidence()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_event_evidence.py::test_generic_event_name_is_suppressed_and_uses_venue_month</code></li></ul>
+<h2>主要な流れ</h2>
+<ol><li>文面から時期・地域・会場・曲・団体を抽出する。</li><li>除外語と盆踊り文脈を評価し、理由つきの点数を計算する。</li><li>同一候補を関連キーでまとめ、優先候補としてレビューへ渡す。</li></ol>
+<h2>依存と影響</h2>
+<p>上流の原文が無ければ判断の再現性はない。下流のレビューは、ここで残す根拠と「未確認」という状態を前提に採否を決める。</p>
+<h2>壊れたときの症状</h2>
+<p>無関係候補が増えたら除外語・文脈減点を、候補が結合し過ぎるなら関連キーと固有名の抑制を確認する。</p>
+<h2>未解決・注意点</h2>
+<p>スコアは真実性の証明ではない。公式確認や人の承認を省略する根拠にはならない。</p>
+<hr />
+<p>おと（Codex）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>collection_support/event_evidence.py</code></td></tr><tr><td><code>collection_support/suppression_rules.py</code></td></tr><tr><td><code>collection_support/tokyo23_scope.py</code></td></tr><tr><td><code>collection_support/x_source_officiality.py</code></td></tr></tbody></table></div></article><article class="page" id="L1-review"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>人のレビュー運用サブシステム</h1>
+<blockquote>上位は<a href="#L0">全体地図</a>。下流は<a href="#L1-master">マスタ</a>。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>機械が決められないものを、人が裁定する工程である。 断片から「この投稿はこのイベントの告知だ」「この会場はここだ」と決めきれないものが必ず残るので、 それを受信箱に積み、レビューコンソールで人が判断し、決定をマスタへ渡す。</p>
+<p><strong>盆助全体の律速はここにある。</strong> 集めることでも判断することでもなく、 人が裁定を下す速度が全体の速度を決めている。実際、精度が悪いように見える場面を追いかけると、 判定アルゴリズムではなく<strong>人のレビューが詰まっている</strong>ことのほうが多い。 「精度が悪い」と感じたら、まず止まっている工程を探すのが正しい順序になる。</p>
+<p>もうひとつ、この工程には性質上の難しさがある。人の判断は繰り返せない。 同じ画面をもう一度開いて同じ操作をしたときに、決定が二重に適用されたり、 裁定した相手が別のイベントにすり替わっていたりすると、人は自分の判断を信用できなくなる。 だから設計の重心は「詰まらせないこと」と「決定を取り違えないこと」の2つに置かれている。</p>
+<h2>入力と出力</h2>
+<p><strong>入力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこから</th></tr></thead><tbody><tr><td>各種の要レビュー項目</td><td><code>review_inbox_adapters/</code> 配下の各アダプタ経由（X由来の穴、公式ソース、会場欠落、過去実績、YouTube など）</td></tr><tr><td>現在のマスタ状態</td><td>Master RDB の <code>review_inbox_items</code> テーブル</td></tr></tbody></table></div>
+<p><strong>出力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこへ</th></tr></thead><tbody><tr><td>受信箱の投影</td><td><code>data/review_inbox.json</code></td></tr><tr><td>人の決定</td><td><code>review_inbox_items</code> の状態更新</td></tr><tr><td>適用可能な変更リクエスト</td><td>昇格済みの reviewed JSON → <a href="#L1-master">マスタ</a></td></tr></tbody></table></div>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-RVW-001"><span class="inv-id">INV-RVW-001</span><span class="inv-title">同じ決定を二度書いても、二重に適用されない</span></h3>
+<ul><li><strong>内容</strong>: 決定の書き込みは1項目につき1つのライフサイクルだけを発行する。 まったく同じ決定を再送した場合は noop として扱い、何も起きない。</li><li><strong>なぜ</strong>: 人はブラウザを再読み込みするし、通信は失敗する。 再試行が二重適用になる設計だと、人が安心して操作できない。</li><li><strong>破れたときの症状</strong>: 1回の裁定が2件の変更として適用される。件数が合わなくなる。</li><li><strong>守っているコード</strong>: <code>review_inbox_adapters/decision_writer.py</code></li><li><strong>守っているテスト</strong>: <code>tests/test_review_inbox_decision_writer.py::test_decision_write_publishes_one_lifecycle_only_then_exact_retry_is_noop</code>、 <code>tests/test_review_inbox_decision_writer.py::test_existing_decision_requires_exact_lifecycle_for_noop</code></li></ul>
+<h3 class="inv-head" id="INV-RVW-002"><span class="inv-id">INV-RVW-002</span><span class="inv-title">対象の取り違えと競合は、通さずに止める（fail-closed）</span></h3>
+<ul><li><strong>内容</strong>: 決定を書くとき、対象の同一性が一致しない場合と、 比較対象の状態が変わっていた場合（CAS衝突）は、書き込まずに失敗させる。</li><li><strong>なぜ</strong>: 人が見た画面と、実際に書き込まれる対象がズレていると、 <strong>裁定そのものが別のイベントに適用される</strong>。これはデータが壊れるより悪い。 人が「自分は正しく判断した」と思っているのに結果が違う、という形で信頼を壊すからだ。 迷ったら書かない側に倒すのが正しい。</li><li><strong>破れたときの症状</strong>: レビューした覚えのないイベントの情報が変わっている。</li><li><strong>守っているコード</strong>: <code>review_inbox_adapters/decision_writer.py</code></li><li><strong>守っているテスト</strong>: <code>tests/test_review_inbox_decision_writer.py::test_target_identity_and_cas_conflict_fail_closed</code></li></ul>
+<h3 class="inv-head" id="INV-RVW-003"><span class="inv-id">INV-RVW-003</span><span class="inv-title">決定の書き込みが、勝手にスキーマを移行しない</span></h3>
+<ul><li><strong>内容</strong>: 決定writerは、受信箱スキーマが古い版だった場合に自動で移行しない。</li><li><strong>なぜ</strong>: 移行は専用のworkflow（<code>migrate_review_inbox_v2.yml</code>）の仕事で、 日常の書き込み経路が副作用としてスキーマを変えると、いつ変わったのか誰も追えなくなる。 マスタ側で起きた <a href="#L1-master">INV-MST-005</a> の事故と同じ構図で、 「動いているように見えて、別の工程が壊れる」種類の問題につながる。</li><li><strong>破れたときの症状</strong>: 意図しないタイミングでスキーマが変わり、他の工程が失敗し始める。</li><li><strong>守っているコード</strong>: <code>review_inbox_adapters/decision_writer.py</code></li><li><strong>守っているテスト</strong>: <code>tests/test_review_inbox_decision_writer.py::test_writer_never_migrates_v1_schema</code></li></ul>
+<h3 class="inv-head" id="INV-RVW-004"><span class="inv-id">INV-RVW-004</span><span class="inv-title">実適用に使う reviewed JSON は、人の昇格を経たものだけ</span></h3>
+<ul><li><strong>内容</strong>: 自動生成された reviewed JSON は機械検査専用で、人レビュー済みとして扱わない。 実際に適用する JSON は <code>scripts/promote_change_requests_for_review.py</code> を人が実行して作り、 レビュー担当者と経緯を記録する。承認IDが未知のもの、<code>dry_run_only</code> が付いていない選択は拒否される。</li><li><strong>なぜ</strong>: 「レビュー済み」という印は、人が見たことの証明でなければ意味がない。 機械が付けた印を人の印と同じ扱いにすると、レビュー工程そのものが形骸化する。</li><li><strong>破れたときの症状</strong>: 誰も見ていない変更が「レビュー済み」としてマスタへ入る。</li><li><strong>守っているコード</strong>: <code>scripts/promote_change_requests_for_review.py</code></li><li><strong>守っているテスト</strong>: <code>tests/test_promote_change_requests_for_review.py::test_refuses_unknown_approved_id</code>、 <code>tests/test_promote_change_requests_for_review.py::test_refuses_selected_request_without_dry_run_only</code></li></ul>
+<h2>主要な流れ</h2>
+<ol><li><strong>各アダプタが受信箱へ積む</strong> — <code>review_inbox_adapters/</code> 配下。X由来の穴、公式ソース、 会場欠落、過去実績、YouTube など、種類ごとに別アダプタになっている。</li><li><strong>受信箱を投影する</strong> — <code>review_inbox.py --out-json data/review_inbox.json --status pending</code>。</li><li><strong>人が裁定する</strong> — <code>review_console_ops/run_review_console.py</code> でローカルサーバを立て、 <code>review_console/</code> のUIで判断する。</li><li><strong>決定を書く</strong> — <code>review_inbox_adapters/decision_writer.py</code>（INV-RVW-001〜003）。</li><li><strong>昇格させる</strong> — <code>scripts/promote_change_requests_for_review.py</code> を人が実行（INV-RVW-004）。</li><li><strong>マスタへ適用</strong> — <a href="#L1-master">L1-master</a> の dry-run → apply 経路へ。</li></ol>
+<h2>依存と影響</h2>
+<p><strong>上流</strong>: 各収集・判断工程。積まれる項目の質が悪いと、人の時間が浪費される。 受信箱に積む基準が緩すぎると、<strong>詰まりの原因そのものになる</strong>。</p>
+<p><strong>下流</strong>: <a href="#L1-master">マスタ</a>。ここでの裁定がRDBの確定情報になる。</p>
+<h2>壊れたときの症状</h2>
+<div class="scroll-x"><table><thead><tr><th>症状</th><th>まず見る場所</th></tr></thead><tbody><tr><td>レビュー待ちが減らない・増え続ける</td><td>積む基準が緩すぎないか。人の処理速度と釣り合っているか</td></tr><tr><td>裁定したのに反映されない</td><td>昇格（INV-RVW-004）を実行したか</td></tr><tr><td>1回の裁定が2件になっている</td><td>INV-RVW-001</td></tr><tr><td>見覚えのないイベントが変わっている</td><td>INV-RVW-002</td></tr></tbody></table></div>
+<h2>未解決・注意点</h2>
+<ul><li><strong>受信箱に積む選別基準の作り直しが未着手。</strong> いまは積まれる量が人の処理量を上回りうる。 律速工程に対して入口を絞らないままなので、根本的にはここが宿題になっている。</li><li>レビューコンソールの「次に何をすべきか」の提示が弱く、優先順位が人の記憶に依存している。</li><li>アダプタが種類ごとに増える構造なので、共通の契約（L2）を切り出したい。</li></ul>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>review_console/__init__.py</code></td></tr><tr><td><code>review_console/data.py</code></td></tr><tr><td><code>review_console/server.py</code></td></tr><tr><td><code>review_console/static/app.js</code></td></tr><tr><td><code>review_console/static/index.html</code></td></tr><tr><td><code>review_console/static/styles.css</code></td></tr><tr><td><code>review_console_ops/__init__.py</code></td></tr><tr><td><code>review_console_ops/apply_review_console_decisions.py</code></td></tr><tr><td><code>review_console_ops/collect_ops_metrics.py</code></td></tr><tr><td><code>review_console_ops/run_review_console.py</code></td></tr><tr><td><code>review_inbox.py</code></td></tr><tr><td><code>review_inbox_adapters/__init__.py</code></td></tr><tr><td><code>review_inbox_adapters/build_change_requests_from_review_inbox.py</code></td></tr><tr><td><code>review_inbox_adapters/build_event_inbox_candidates.py</code></td></tr><tr><td><code>review_inbox_adapters/decision_stage.py</code></td></tr><tr><td><code>review_inbox_adapters/decision_writer.py</code></td></tr><tr><td><code>review_inbox_adapters/event_inbox_writer.py</code></td></tr><tr><td><code>review_inbox_adapters/historical_reference_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/local_judgment_contract.py</code></td></tr><tr><td><code>review_inbox_adapters/low_priority_adapters.py</code></td></tr><tr><td><code>review_inbox_adapters/missing_source_url_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/missing_venue_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/official_source_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/parity.py</code></td></tr><tr><td><code>review_inbox_adapters/predicted_occurrence_date_review_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/predicted_occurrence_research_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/production_wiring.py</code></td></tr><tr><td><code>review_inbox_adapters/rare_signal_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/registered_event_investigation_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/shadow_execution_gate.py</code></td></tr><tr><td><code>review_inbox_adapters/source_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/source_writer.py</code></td></tr><tr><td><code>review_inbox_adapters/x_gap_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/youtube_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/youtube_aggregate.py</code></td></tr><tr><td><code>review_inbox_adapters/youtube_user_confirmation_adapter.py</code></td></tr><tr><td><code>review_inbox_adapters/youtube_year_backfill_adapter.py</code></td></tr><tr><td><code>scripts/promote_change_requests_for_review.py</code></td></tr></tbody></table></div></article><article class="page" id="L1-master"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>マスタ（Master RDB）サブシステム</h1>
+<blockquote>上位は<a href="#L0">全体地図</a>。下流は<a href="#L1-publication">公開サブシステム</a>。書き方の決まりは <a href="#SPEC-GUIDE">SPEC-GUIDE</a>。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>「確定した事実」の正本を持つ工程である。イベント系列、開催回、会場、曲目、そして それぞれの根拠が SQLite（<code>data/bon_odori_master.sqlite</code>）に入っていて、公開もメールもここから作られる。</p>
+<p>この工程の難しさは、保存することではなく <strong>確定と推測を混ぜないこと</strong>にある。 盆踊りは毎年ほぼ同じ時期・同じ場所で開かれるので、「去年8月第2土曜だったから今年もそうだろう」は だいたい当たる。だが当たることと確定していることは違う。過去実績をそのまま今年の開催日として 書き込んでしまえば、RDBは「確定情報」の顔をしたまま推測を抱え込み、下流のどこにもそれを見分ける手段が無くなる。</p>
+<p>したがってこの工程の設計は、<strong>書き込み口を絞ることに集中している。</strong> 何でも書ける汎用の更新機能をあえて持たず、変更の種類を有限にし、種類ごとに必要な根拠を強制する。</p>
+<h2>入力と出力</h2>
+<p><strong>入力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこから</th></tr></thead><tbody><tr><td>変更リクエスト（有限種別のJSON）</td><td>レビュー工程・現地レポート・掲示物レポート</td></tr><tr><td>過去実績・YouTube由来の観測</td><td>収集/判断工程</td></tr><tr><td>S3上の最新DB成果物</td><td><code>MASTER_DB_S3_BUCKET</code> / <code>MASTER_DB_S3_PREFIX</code></td></tr></tbody></table></div>
+<p><strong>出力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこへ</th></tr></thead><tbody><tr><td>正本DB</td><td><code>data/bon_odori_master.sqlite</code>（<code>6537e7f</code> 時点で系列347・開催回364・根拠31,329件）</td></tr><tr><td>DB成果物とマニフェスト</td><td>S3（<code>latest</code> と スナップショット）</td></tr><tr><td>監査結果</td><td><code>audit_master_rdb.py</code> の出力</td></tr><tr><td>dry-run結果</td><td><code>data/change_requests_apply_dry_run.sqlite</code></td></tr></tbody></table></div>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-MST-001"><span class="inv-id">INV-MST-001</span><span class="inv-title">RDBへの反映は有限の変更種別だけを通す</span></h3>
+<ul><li><strong>内容</strong>: <code>report_apply/apply_change_requests.py</code> が受け付ける変更は <code>create_current_year_occurrence</code> / <code>confirm_current_year_date</code> / <code>add_historical_reference</code> / <code>update_venue</code> / <code>add_song_evidence</code> に限られる（<code>CHANGE_TYPES</code>）。 未知の種別は検証で弾かれ、自由記述のパッチは受け付けない。</li><li><strong>なぜ</strong>: 「何でも書ける口」を1つ用意すると、種別ごとに必要な根拠を強制できなくなるから。 種別を絞ることで、たとえば「今年の開催日を確定する」には今年のソースが要る、という規則を機械が守れる。</li><li><strong>破れたときの症状</strong>: 根拠のない値がRDBへ入り、どの情報が確定でどれが推測か区別できなくなる。 イベント個別の <code>apply_*.py</code> が増殖し、それぞれ違う検証をするようになる。</li><li><strong>守っているコード</strong>: <code>report_apply/apply_change_requests.py</code> の <code>CHANGE_TYPES</code> と検証処理</li><li><strong>守っているテスト</strong>: <code>tests/test_apply_change_requests.py::test_applies_four_finite_change_types</code></li></ul>
+<h3 class="inv-head" id="INV-MST-002"><span class="inv-id">INV-MST-002</span><span class="inv-title">今年の開催日の確定には、今年のソースを要求する</span></h3>
+<ul><li><strong>内容</strong>: <code>confirm_current_year_date</code> は、根拠の種別が <code>official_current_year</code> / <code>organizer_current_year</code> / <code>trusted_x_current_year</code> の いずれかでなければ検証で落ちる（<code>CURRENT_YEAR_SOURCE_KINDS</code>）。</li><li><strong>なぜ</strong>: <strong>これがこの仕組みの一番大事な約束である。</strong> 過去年のYouTube動画や去年の開催実績は、 「例年この時期」というヒントにはなるが、今年開かれる証拠にはならない。 過去実績だけで開催日を確定できてしまうと、中止になった盆踊りへ人を歩かせることになる。</li><li><strong>破れたときの症状</strong>: 実際には開催されない日程が「確定」として公開される。 一度確定として入ると、下流からは推測だったことが分からない。</li><li><strong>守っているコード</strong>: <code>report_apply/apply_change_requests.py</code> の <code>CURRENT_YEAR_SOURCE_KINDS</code> と <code>apply_confirm_current_year_date()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_apply_change_requests.py::test_validates_current_year_confirmation_requires_current_year_source</code></li></ul>
+<h3 class="inv-head" id="INV-MST-003"><span class="inv-id">INV-MST-003</span><span class="inv-title">既定は dry-run。実DBへの書き込みには確認句が要る</span></h3>
+<ul><li><strong>内容</strong>: <code>apply_change_requests.py</code> は既定でコピーDB（<code>data/change_requests_apply_dry_run.sqlite</code>）にだけ書く。 実DBへ反映するには <code>--apply</code> と、<code>manual_apply_guards.CHANGE_REQUESTS_CONFIRMATION</code> の確認句が要る。 さらに <code>dry_run_only</code> が付いたリクエストが1件でも含まれていれば、<code>--apply</code> を拒否する。</li><li><strong>なぜ</strong>: RDBは公開・メール・レビューすべての土台なので、壊れたときの影響範囲が最も広い。 「試すつもりが本番に入った」を構造的に起こせなくしてある。</li><li><strong>破れたときの症状</strong>: 検証目的の実行が本番RDBを書き換える。</li><li><strong>守っているコード</strong>: <code>report_apply/apply_change_requests.py</code> の <code>main()</code> と <code>require_confirmation()</code> 呼び出し</li><li><strong>守っているテスト</strong>: <code>tests/test_apply_change_requests.py::test_apply_refuses_dry_run_only_requests</code></li></ul>
+<h3 class="inv-head" id="INV-MST-004"><span class="inv-id">INV-MST-004</span><span class="inv-title">S3の latest を上書きするときは、期待するチェックサムと一致させる</span></h3>
+<ul><li><strong>内容</strong>: <code>master_db_s3_artifact.py</code> の publish は、リモートに manifest が既にある場合、 <code>--expect-remote-checksum</code> が実際のリモート値と一致しない限り <code>SystemExit</code> で止まる。 一致確認を省くには <code>--force</code> が要る。</li><li><strong>なぜ</strong>: DBは複数の実行主体（日次workflow・手元の適用・おとの作業）が触る。 取得してから publish するまでの間に別の実行が新しい成果を上げていた場合、 素直に上書きすると<strong>他人の書き込みが黙って消える</strong>。いわゆる compare-and-swap をここで担保している。</li><li><strong>破れたときの症状</strong>: 反映したはずの変更が次の日には消えている。誰の作業が消えたのか追跡できない。</li><li><strong>守っているコード</strong>: <code>master_rdb/s3_artifact.py</code> の publish 経路（<code>--expect-remote-checksum</code> の照合）</li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong> — <code>expect_remote_checksum</code> は既存テストで 引数として渡されてはいるが、<strong>不一致で止まること自体を検査するテストが無い。</strong> CASはこの工程で最も重い守りなので、ここが素通しなのは負債として明示しておく。</li></ul>
+<h3 class="inv-head" id="INV-MST-005"><span class="inv-id">INV-MST-005</span><span class="inv-title">スキーマが退行したDBで latest を上書きしない</span></h3>
+<ul><li><strong>内容</strong>: publish 前に <code>enforce_inbox_schema_not_downgraded()</code> が、ローカルの review inbox スキーマ版が リモートより古い場合に publish 自体を止める。意図的な巻き戻しには <code>--force</code> が要る。 リモート manifest にキーが無い移行期の場合は、通したうえでその旨を出力に残す。</li><li><strong>なぜ</strong>: <strong>2026-07-24 に実際に起きた事故の再発防止である。</strong> v1系統のDBが本番を上書きし、 v2を要求する dual-write が5日間毎日失敗し続けた。CASはチェックサムしか見ないので、 「新しいが中身が古い」DBを止められなかった。</li><li><strong>破れたときの症状</strong>: publish は成功するのに、翌日から下流の定期処理が毎日失敗する。 しかも失敗しているのが別の工程なので、原因がここだと気づくまで時間がかかる。</li><li><strong>守っているコード</strong>: <code>master_rdb/s3_artifact.py</code> の <code>enforce_inbox_schema_not_downgraded()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_master_db_s3_artifact.py::test_publish_blocks_inbox_schema_downgrade</code>、 <code>tests/test_master_db_s3_artifact.py::test_force_allows_intentional_inbox_schema_downgrade</code></li></ul>
+<h3 class="inv-head" id="INV-MST-006"><span class="inv-id">INV-MST-006</span><span class="inv-title">取得したDBは、必ずチェックサムを検証してから使う</span></h3>
+<ul><li><strong>内容</strong>: <code>fetch</code> はリモート manifest の <code>database_checksum</code> を必須とし、 ダウンロードしたファイルのハッシュが一致しなければ <code>SystemExit</code> で止まる。 検証に通ったものだけを <code>atomic_replace()</code> で所定の位置へ置く。</li><li><strong>なぜ</strong>: 壊れたDBや途中までのDBで日次パイプラインが走ると、 「データが少ないだけ」に見えて全工程が静かに劣化する。</li><li><strong>破れたときの症状</strong>: 公開件数が理由なく減る。監査だけが異常を示す。</li><li><strong>守っているコード</strong>: <code>master_rdb/s3_artifact.py</code> の <code>verify_checksum()</code> と fetch 経路</li><li><strong>守っているテスト</strong>: <code>tests/test_master_db_s3_artifact.py::test_fetch_verifies_checksum_and_writes_local_manifest</code></li></ul>
+<h2>主要な流れ</h2>
+<p>日次では、S3から取得 → 監査 → 各種同期 → 変更があれば publish、という順に進む。</p>
+<ol><li><strong>取得</strong> — <code>master_db_s3_artifact.py fetch --overwrite</code>。チェックサム検証つき（INV-MST-006）。</li><li><strong>監査</strong> — <code>audit_master_rdb.py</code>。取得直後に一度、書き込み後にもう一度走る。</li><li><strong>状態軸の同期</strong> — <code>event_model/state_axes_migration.py</code> 系。開催回の状態を正規化する。</li><li><strong>終了した開催回の遷移</strong> — <code>transition_ended_occurrences.py</code>。過ぎた開催回を「終了」へ落とす。 これが動かないと、終わった行事が公開面に「開催予定」として残る。</li><li><strong>変更リクエストの適用</strong> — <code>report_apply/apply_change_requests.py</code>。dry-run → レビュー → apply → 再検証（INV-MST-003）。</li><li><strong>publish</strong> — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。</li></ol>
+<p><strong>凍結という仕組みもある。</strong> <code>master_rdb_freeze_policy.py</code> は、移行中の生成物を一時的に止めるための スイッチで、日次workflowが <code>is-frozen &lt;group&gt;</code> の終了コードで分岐している。 凍結されたグループの生成物は作られないので、「出力が消えた」と思ったらまずここを疑う。</p>
+<h2>依存と影響</h2>
+<p><strong>上流</strong>: 実行基盤（<a href="#L1-platform">L1-platform</a>）。S3認証とworkflowの実行順に依存する。 取得に失敗したのに後続が走ると、古いDBを正本として扱ってしまう。</p>
+<p><strong>下流</strong>: <a href="#L1-publication">公開サブシステム</a>、メール配信、レビュー工程。 特に公開はRDBの素直な射影ではなく後処理が重なるため、<strong>RDBを直しても公開が変わらないことがある</strong>。 公開側の不具合を調べるとき、RDBが正しいことは十分条件にならない。</p>
+<h2>壊れたときの症状</h2>
+<div class="scroll-x"><table><thead><tr><th>症状</th><th>まず見る場所</th></tr></thead><tbody><tr><td>反映したはずの変更が消えている</td><td>INV-MST-004。別の実行と競合していないか</td></tr><tr><td>publish後、翌日から別の工程が毎日失敗する</td><td>INV-MST-005。スキーマ退行</td></tr><tr><td>終わった行事が「開催予定」のまま</td><td><code>transition_ended_occurrences.py</code> が走ったか</td></tr><tr><td>ある生成物が丸ごと出ていない</td><td>凍結ポリシー（<code>master_rdb_freeze_policy.py</code>）を確認</td></tr><tr><td>手で直したはずの値が元に戻る</td><td>再取り込みで上書きされている。生成元を直す必要がある</td></tr></tbody></table></div>
+<p>最後の行は繰り返し起きている問題である。<strong>RDBを直接UPDATEしても、生成元を直さない限り再取り込みで戻る。</strong> 直すべきは値ではなく、その値を作っている工程のほうであることが多い。</p>
+<h2>未解決・注意点</h2>
+<ul><li><strong>INV-MST-004（CAS）にテストが無い。</strong> この工程で最も重い守りなので、優先して埋めたい。</li><li>テーブルのスキーマそのものを説明するL2が未執筆。<code>event_series</code> と <code>event_occurrences</code> の関係、 <code>evidence_items</code> の使われ方は、いまソースを読むしかない。</li><li><code>report_apply</code> には既知のバグが残っている領域がある（詳細は別途）。</li><li>予測日（<code>predicted_occurrence_dates</code>）は14件と少なく、器はあるが実質的に使われていない。</li></ul>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>audit_master_rdb.py</code></td></tr><tr><td><code>event_model/__init__.py</code></td></tr><tr><td><code>event_model/event_series_normalization.py</code></td></tr><tr><td><code>event_model/event_state_axes.py</code></td></tr><tr><td><code>event_model/local_judgment_migration.py</code></td></tr><tr><td><code>event_model/place_dictionary.py</code></td></tr><tr><td><code>event_model/series_alias_migration.py</code></td></tr><tr><td><code>event_model/state_axes_migration.py</code></td></tr><tr><td><code>event_model/year_context.py</code></td></tr><tr><td><code>master_db_s3_artifact.py</code></td></tr><tr><td><code>master_rdb/__init__.py</code></td></tr><tr><td><code>master_rdb/audit.py</code></td></tr><tr><td><code>master_rdb/freeze_policy.py</code></td></tr><tr><td><code>master_rdb/s3_artifact.py</code></td></tr><tr><td><code>master_rdb/unified_model_audit.py</code></td></tr><tr><td><code>master_rdb_freeze_policy.py</code></td></tr><tr><td><code>rdb_builders/__init__.py</code></td></tr><tr><td><code>rdb_builders/build_bon_odori_rdb.py</code></td></tr><tr><td><code>rdb_builders/build_evidence_rdb.py</code></td></tr><tr><td><code>rdb_builders/build_master_rdb.py</code></td></tr><tr><td><code>rdb_builders/build_notion_rdb.py</code></td></tr><tr><td><code>rdb_builders/build_youtube_rdb.py</code></td></tr><tr><td><code>rdb_builders/export_rdb_apply_plans.py</code></td></tr><tr><td><code>rdb_builders/export_rdb_review_report.py</code></td></tr><tr><td><code>report_apply/__init__.py</code></td></tr><tr><td><code>report_apply/apply_change_requests.py</code></td></tr><tr><td><code>report_apply/apply_firsthand_field_report.py</code></td></tr><tr><td><code>report_apply/apply_official_notice_report.py</code></td></tr><tr><td><code>report_apply/event_report_helpers.py</code></td></tr><tr><td><code>report_apply/firsthand_report_helpers.py</code></td></tr><tr><td><code>report_apply/official_notice_report_helpers.py</code></td></tr><tr><td><code>report_apply/rdb_apply_support.py</code></td></tr><tr><td><code>transition_ended_occurrences.py</code></td></tr></tbody></table></div></article><article class="page" id="L1-publication"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>公開サブシステム</h1>
+<blockquote>上位は <a href="#L0">全体地図</a>。書き方の決まりは <a href="#SPEC-GUIDE">SPEC-GUIDE</a>。 <code>depends_on</code> が空なのは、上流にあたるマスタのL1がまだ未執筆のため。書けたら繋ぐ。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（<code>events_public.json</code>）へ変換して届ける工程である。</p>
+<p>一見ただの書き出しに見えるが、実際にはここが<strong>いちばん事故が起きる場所</strong>になっている。理由は2つある。</p>
+<p>ひとつは、公開が「外に出てしまうと取り消せない」種類の操作だからだ。内部データがおかしくても直せばいいが、 終わった盆踊りを「開催予定」として出してしまえば、それを見た人が実際に会場へ足を運んでしまう。</p>
+<p>もうひとつは、公開JSONが <strong>RDBの素直な射影ではない</strong>ことだ。RDBから出した生データに対して、 過去実績の付与・表示段の決定・季節ヒント・日付予測といった後処理が何段も重なる。 つまり「RDBを直したのに公開が変わらない」「RDBは正しいのに公開だけ壊れる」が普通に起きる構造になっている。 公開の不具合を調べるとき、RDBだけ見て納得してはいけないのはこのためである。</p>
+<h2>入力と出力</h2>
+<p><strong>入力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこから</th></tr></thead><tbody><tr><td>イベント・会場・曲目の確定情報</td><td>Master RDB（<code>data/bon_odori_master.sqlite</code>）</td></tr><tr><td>日付予測</td><td>Master RDB の <code>predicted_occurrence_dates</code></td></tr><tr><td>固定日ルール</td><td><code>data/public_fixed_date_rules.json</code></td></tr><tr><td>同期の個別承認台帳</td><td><code>data/public_sync_exact_approvals.json</code></td></tr><tr><td>「今日」</td><td>引数 <code>--today</code> または環境変数 <code>BON_ODORI_PUBLIC_TODAY</code>（<strong>既定値は無い</strong>）</td></tr></tbody></table></div>
+<p><strong>出力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこへ</th></tr></thead><tbody><tr><td>公開イベント本体</td><td><code>data/public/events_public.json</code>（<code>6537e7f</code> 時点で379件）</td></tr><tr><td>同上のJS版</td><td><code>data/public/events_public.js</code></td></tr><tr><td>曲目の確認用</td><td><code>data/public/event_songs_public.json</code></td></tr><tr><td>同期ガードの判定</td><td><code>data/public_events_sync_guard.json</code> / <code>.md</code></td></tr><tr><td>追加ガードの判定</td><td><code>data/site_public_event_additions_guard.json</code> / <code>.md</code></td></tr></tbody></table></div>
+<p>公開サイトへの実際の反映は、このリポジトリではなく <code>bon-odori-site</code> 側の <code>Sync public data</code> workflow が行う。 <strong>この工程の責任は「正しいJSONを作り、危ないときに止めること」までで、デプロイそのものは含まない。</strong></p>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-PUB-001"><span class="inv-id">INV-PUB-001</span><span class="inv-title">公開イベントの同一性は「名前 + 会場」で決まる</span></h3>
+<ul><li><strong>内容</strong>: 公開JSON上のイベントの同一性は <code>f"{name}||{venue}"</code> で判定される（<code>public_json_postprocessors/classify_public_events_diff.py</code> の <code>event_key()</code>）。 したがって<strong>イベント名か会場名を変えると、機械には「古いイベントが消えて、別の新しいイベントが増えた」と見える。</strong></li><li><strong>なぜ</strong>: 公開JSONには安定したIDが無く、名前と会場だけが同一性の手がかりだから。</li><li><strong>破れたときの症状</strong>: イベント名を整える修正をしただけなのに、同期ガードが「既存イベントの削除」として止まる。 止まらずに通ってしまった場合は、公開サイト上で同じ盆踊りが2件に増えるか、1件消える。</li><li><strong>守っているコード</strong>: <code>public_json_postprocessors/classify_public_events_diff.py</code> の <code>event_key()</code>、 および改名を明示的に扱う <code>key_replacement</code> 承認の経路</li><li><strong>守っているテスト</strong>: <code>tests/test_guard_public_events_sync.py::test_exact_key_replacement_preserves_event_count_and_resolves_keys</code></li></ul>
+<blockquote>この設計は弱点でもある。名前を1文字直すだけで別イベント扱いになるので、 表記ゆれの修正には必ず <code>key_replacement</code> の承認が要る。<strong>名前を直す修正を「小さい修正」だと思ってはいけない。</strong></blockquote>
+<h3 class="inv-head" id="INV-PUB-002"><span class="inv-id">INV-PUB-002</span><span class="inv-title">既存の公開イベントを消す・書き換えるのは、承認済みの名前と一致するときだけ</span></h3>
+<ul><li><strong>内容</strong>: <code>guard_site_public_event_additions.py</code> は、サイト側に既にあるイベントの削除・改変を既定で <code>block</code> する。 通せるのは、削除するイベント名が <code>expected_removed_names</code> と<strong>個数まで含めて一致</strong>するときか、 変更が <code>source_urls</code> だけで、かつ明示的に許可されたときに限る。</li><li><strong>なぜ</strong>: 日次の自動処理が既存の公開情報を静かに書き換えてしまうと、誰も気づかないまま公開面が劣化するから。 追加は取り返しがつくが、消失と改変は気づきにくい。</li><li><strong>破れたときの症状</strong>: 公開されていたイベントが理由なく消える。開催日や詳細が勝手に書き換わる。</li><li><strong>守っているコード</strong>: <code>guard_site_public_event_additions.py</code> の <code>guard_decision()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_public_event_site_addition_tools.py::test_existing_event_field_modification_blocks</code>、 <code>tests/test_public_event_site_addition_tools.py::test_existing_event_date_change_blocks_as_removal</code></li></ul>
+<h3 class="inv-head" id="INV-PUB-003"><span class="inv-id">INV-PUB-003</span><span class="inv-title">collector と site で件数とキー集合が一致しないと、一括同期しない</span></h3>
+<ul><li><strong>内容</strong>: <code>public_json_postprocessors/guard_public_events_sync.py</code> の <code>guard_decision()</code> は、 collector 側と site 側でイベント件数が違えば <code>event_count_mismatch</code>、 片側にしか無いキーがあれば <code>event_key_mismatch</code> として <code>block</code> する。</li><li><strong>なぜ</strong>: 件数のズレは、後処理のどれかが動かなかったか、想定外の削除が起きたことの最も分かりやすい兆候だから。 個々の差分を見る前に、まず総数で異常を捕まえる。</li><li><strong>破れたときの症状</strong>: 公開件数が急に減る・増える。過去に、日次が止まったまま同期だけ進んで 終了済み38件が「開催予定」のまま残り続けた事故がある。</li><li><strong>守っているコード</strong>: <code>public_json_postprocessors/guard_public_events_sync.py</code> の <code>guard_decision()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync</code></li></ul>
+<h3 class="inv-head" id="INV-PUB-004"><span class="inv-id">INV-PUB-004</span><span class="inv-title">ガードが pass してもデプロイ承認にはならない</span></h3>
+<ul><li><strong>内容</strong>: 2つのガードはどちらも、<code>pass</code> を「差分が危険でない」ことの表明に留め、 <code>public_deploy_requires_separate_approval: True</code> / <code>deploy_requires_operator_approval: True</code> を必ず返す。</li><li><strong>なぜ</strong>: 機械が見ているのは差分の形だけで、「いま公開してよい時期か」は判断していないから。 ガードの pass を承認とみなす運用にすると、機械が公開の可否を決めていることになってしまう。</li><li><strong>破れたときの症状</strong>: 人が意図していないタイミングで公開が更新される。</li><li><strong>守っているコード</strong>: 両ガードの <code>guard_decision()</code> が返す <code>deploy_approval_note</code></li><li><strong>守っているテスト</strong>: <code>tests/test_guard_public_events_sync.py::test_pass_still_requires_separate_public_deploy_approval</code></li></ul>
+<h3 class="inv-head" id="INV-PUB-005"><span class="inv-id">INV-PUB-005</span><span class="inv-title">公開の「今日」は必ず外から与える。既定値に落ちない</span></h3>
+<ul><li><strong>内容</strong>: <code>export_public_events.py</code> の <code>public_export_today()</code> は、引数か環境変数 <code>BON_ODORI_PUBLIC_TODAY</code> から 日付を取り、<strong>どちらも無ければ <code>ValueError</code> を投げる</strong>。<code>date.today()</code> のような暗黙の既定値を持たない。</li><li><strong>なぜ</strong>: 「今日」は、開催済みかどうかの判定と、過去実績の表示期限（スライド）に効く。 実行環境のタイムゾーンや、再実行した日によって公開内容が変わってしまうと、結果が再現できなくなる。</li><li><strong>破れたときの症状</strong>: 同じRDBから出したはずの公開JSONが、実行した日によって違う。 終了済み判定がずれて、終わった行事が残るか、まだの行事が消える。</li><li><strong>守っているコード</strong>: <code>export_public_events.py</code> の <code>public_export_today()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_export_public_events.py::test_public_export_today_rejects_missing_context</code>、 <code>tests/test_export_public_events.py::test_site_postprocessors_use_export_today_for_historical_slide_expiry</code></li></ul>
+<h3 class="inv-head" id="INV-PUB-006"><span class="inv-id">INV-PUB-006</span><span class="inv-title">日付予測をJSONフォールバックで補ったら、成功させずに落とす</span></h3>
+<ul><li><strong>内容</strong>: 日付予測は Master RDB の <code>predicted_occurrence_dates</code> を正とする。 ローカルJSON側にしか無い予測が1件でも使われた場合、<code>require_no_prediction_json_fallback()</code> が <code>RuntimeError</code> を投げて処理を止める。 フォールバック0件のときだけ通る。</li><li><strong>なぜ</strong>: RDBと手元JSONの二重管理を許すと、どちらが正しいのか分からなくなる。 黙って古いJSONを使うくらいなら、止まって気づいたほうが安全だという判断。</li><li><strong>破れたときの症状</strong>: RDBを直したのに公開の予測日が変わらない。古い予測が残り続ける。</li><li><strong>守っているコード</strong>: <code>export_public_events.py</code> の <code>require_no_prediction_json_fallback()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_export_public_events.py::test_json_prediction_fallback_is_a_hard_failure</code>、 <code>tests/test_export_public_events.py::test_zero_json_prediction_fallback_is_accepted</code></li></ul>
+<h2>主要な流れ</h2>
+<ol><li><strong>RDBから素の公開イベントを組み立てる</strong> — <code>export_public_events.py</code>。<code>--target-year</code> と <code>--today</code> が必須。</li><li><strong>後処理を重ねる</strong> — <code>public_json_postprocessors/</code> 配下。順序に意味がある。 <code>apply_public_historical_references</code>（過去実績）→ <code>apply_public_display_tiers</code>（表示段）→ <code>apply_public_season_hints</code>（季節ヒント）→ 再度 <code>apply_public_display_tiers</code>。 最後にもう一度表示段を計算し直すのは、季節ヒントが表示段の判断材料になるため。</li><li><strong>差分を分類する</strong> — <code>classify_public_events_diff.py</code>。全フィールドではなく <code>HIGH_RISK_FIELDS</code> （過去実績・季節・日付予測・日程・詳細・出典・固定日ルール）に絞って見る。</li><li><strong>2つのガードで止める</strong> — 一括同期の可否は <code>guard_public_events_sync.py</code>、 追加だけの差分かどうかは <code>guard_site_public_event_additions.py</code>。</li><li><strong>人が承認してデプロイ</strong> — <code>bon-odori-site</code> 側へJSONを同期し、あちらの <code>Sync public data</code> workflow が公開する。</li></ol>
+<h2>依存と影響</h2>
+<p><strong>上流</strong>: Master RDB。RDBのS3成果物の取得に失敗すると、この工程は古いRDBを見たまま走りうる。 日次では取得→監査→書き出しの順に並んでいるが、<strong>RDBが更新されていないこと自体はこの工程では検出できない</strong>。</p>
+<p><strong>下流</strong>: <code>bon-odori-site</code> リポジトリ。公開JSONの形を変えると、あちらの表示側が壊れる。 公開JSONのフィールド構成は事実上の外部契約になっている（L2として切り出すべきだが未執筆）。</p>
+<h2>壊れたときの症状</h2>
+<div class="scroll-x"><table><thead><tr><th>症状</th><th>まず見る場所</th></tr></thead><tbody><tr><td>公開件数が急に減った・増えた</td><td><code>data/public_events_sync_guard.md</code> の <code>failures</code></td></tr><tr><td>終わった行事が「開催予定」のまま</td><td>日次が止まっていないか。次に開催回の状態遷移</td></tr><tr><td>イベントが二重に出ている</td><td>INV-PUB-001。名前か会場を変えていないか</td></tr><tr><td>RDBを直したのに公開が変わらない</td><td>後処理のどれかが上書きしている。または INV-PUB-006 で止まっている</td></tr><tr><td>実行するたび結果が違う</td><td>INV-PUB-005。<code>--today</code> を渡しているか</td></tr></tbody></table></div>
+<h2>未解決・注意点</h2>
+<ul><li><strong>公開JSONのフィールド契約がどこにも書かれていない。</strong> <code>bon-odori-site</code> との間の暗黙の合意になっている。L2として切り出したい。</li><li><strong><code>event_key</code> が名前依存</strong>（INV-PUB-001）。安定IDへの移行は設計上の宿題として残っている。</li><li><strong>公開JSONの <code>display_name</code> が薄く、同名イベントが区別なく並ぶ</strong>問題が未解決。</li><li>ガード出力の <code>data/*.json</code> は成果物としてコミットされるため、差分レビュー時にノイズになりやすい。</li></ul>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>export_public_events.py</code></td></tr><tr><td><code>guard_site_public_event_additions.py</code></td></tr><tr><td><code>public_export_support/__init__.py</code></td></tr><tr><td><code>public_export_support/build_public_historical_reference_change_requests.py</code></td></tr><tr><td><code>public_export_support/build_publication_gap_review.py</code></td></tr><tr><td><code>public_export_support/score_event_recurrence.py</code></td></tr><tr><td><code>public_json_postprocessors/__init__.py</code></td></tr><tr><td><code>public_json_postprocessors/apply_public_date_predictions.py</code></td></tr><tr><td><code>public_json_postprocessors/apply_public_display_tiers.py</code></td></tr><tr><td><code>public_json_postprocessors/apply_public_historical_references.py</code></td></tr><tr><td><code>public_json_postprocessors/apply_public_season_hints.py</code></td></tr><tr><td><code>public_json_postprocessors/classify_public_events_diff.py</code></td></tr><tr><td><code>public_json_postprocessors/compare_event_state_axes.py</code></td></tr><tr><td><code>public_json_postprocessors/compare_public_projection_sources.py</code></td></tr><tr><td><code>public_json_postprocessors/guard_public_events_sync.py</code></td></tr><tr><td><code>public_json_postprocessors/review_missing_occurrence_venues.py</code></td></tr><tr><td><code>venues/export_public_venues.py</code></td></tr></tbody></table></div></article><article class="page" id="L1-delivery"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>配信サブシステム（メール）</h1>
+<blockquote>上位は<a href="#L0">全体地図</a>。日刊メールと金曜週報を内田さんへ届ける工程。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>集めた情報を、毎日メールとして届ける工程である。盆助のサイトは「調べに行く」ものだが、 メールは「向こうから来る」ので、日々の変化に気づくための主要な経路になっている。</p>
+<p>この工程が他と決定的に違うのは、<strong>送ってしまうと取り消せない</strong>ことだ。 RDBが壊れても直せるし、公開JSONが変でも作り直せる。だがメールは配送された時点で終わりで、 間違いに気づいてから止める手段が無い。したがって設計は、内容の正しさより先に <strong>「二重に送らない」「黙って送り損ねない」</strong>の2点に寄っている。</p>
+<p>構造としては、本文を作る側（こと）と送る側（GitHub Actions）を分けてある。 ことが <code>data/pending_mail.json</code> を書いてコミットし、Actions がそれを見つけて送る。 ローカルから直接SMTPを叩かないのは、送信の記録がリポジトリの履歴に必ず残るようにするためである。</p>
+<h2>入力と出力</h2>
+<p><strong>入力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこから</th></tr></thead><tbody><tr><td>送信すべき本文</td><td><code>data/pending_mail.json</code>（こと が書いてコミットする）</td></tr><tr><td>宛先・認証情報</td><td>GitHub Secrets（SMTP 設定）</td></tr></tbody></table></div>
+<p><strong>出力</strong></p>
+<div class="scroll-x"><table><thead><tr><th>何を</th><th>どこへ</th></tr></thead><tbody><tr><td>メール本体</td><td>Gmail SMTP 経由で宛先へ</td></tr><tr><td>送信済みの証跡</td><td><code>pending_mail.json</code> の削除コミット</td></tr></tbody></table></div>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-DLV-001"><span class="inv-id">INV-DLV-001</span><span class="inv-title"><code>pending_mail.json</code> が無いときは、何もせず正常終了する</span></h3>
+<ul><li><strong>内容</strong>: <code>send_mail.py</code> は <code>data/pending_mail.json</code> が存在するときだけ送信する。 無ければ「送信対象なし」と出力して正常終了する。</li><li><strong>なぜ</strong>: 送信workflowは1日に3回（18:23 / 19:23 / 20:23 JST）起動し、 さらに push でも起動する。「無ければ何もしない」が守られていないと、 起動のたびに何かを送ろうとすることになる。</li><li><strong>破れたときの症状</strong>: 空メールが届く。あるいは起動のたびに失敗通知が出る。</li><li><strong>守っているコード</strong>: <code>send_mail.py</code> の <code>main()</code></li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h3 class="inv-head" id="INV-DLV-002"><span class="inv-id">INV-DLV-002</span><span class="inv-title">送れないときは、黙って成功にせず、本文を残して失敗させる</span></h3>
+<ul><li><strong>内容</strong>: <code>pending_mail.json</code> があるのに設定不足・本文が空などで送れない場合、 <code>send_mail.py</code> は非ゼロ終了し、<strong>ファイルを削除しない</strong>。</li><li><strong>なぜ</strong>: ここが「黙って送り損ねない」の要になっている。 送れなかったのに正常終了してファイルを消してしまうと、本文が失われたうえに、 誰も送られなかったことに気づけない。<strong>メールが来ないことは、気づきにくい形の障害である。</strong></li><li><strong>破れたときの症状</strong>: メールが来ないのに、workflowは緑のまま。本文も失われる。</li><li><strong>守っているコード</strong>: <code>send_mail.py</code> の <code>main()</code>（設定不足・本文空で <code>return 1</code>）</li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h3 class="inv-head" id="INV-DLV-003"><span class="inv-id">INV-DLV-003</span><span class="inv-title">送信に成功したときだけ本文を消し、それをもって二重送信を防ぐ</span></h3>
+<ul><li><strong>内容</strong>: <code>send_mail.yml</code> は <code>send_mail.py</code> が成功した後にだけ <code>pending_mail.json</code> を <code>git rm</code> してコミット・プッシュする。以降の起動は INV-DLV-001 により何もしない。 <code>send_mail_watchdog.yml</code> が 19:07 JST に、ファイルが残っていないかを確認し、 残っていれば送信workflowを起動し直す。</li><li><strong>なぜ</strong>: 送信済みかどうかの状態を、外部のフラグではなく<strong>リポジトリ上のファイルの有無</strong>で持たせている。 こうすると「送ったのに記録が無い」状態が原理的に作れない。 リトライを3回に分けているのも、一時的なSMTP障害で1日ぶんが欠けるのを避けるためである。</li><li><strong>破れたときの症状</strong>: 同じメールが複数回届く。または障害後に再送されない。</li><li><strong>守っているコード</strong>: <code>.github/workflows/send_mail.yml</code> の削除ステップ、 <code>.github/workflows/send_mail_watchdog.yml</code></li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h2>主要な流れ</h2>
+<ol><li><strong>こと が本文を書く</strong> — <code>data/pending_mail.json</code> を作ってコミット・プッシュ。</li><li><strong>送信workflowが起動</strong> — push、または 18:23 / 19:23 / 20:23 JST の定時。</li><li><strong>送る</strong> — <code>send_mail.py</code>。無ければ何もしない（INV-DLV-001）、送れなければ落とす（INV-DLV-002）。</li><li><strong>証跡を残す</strong> — 成功時のみ <code>pending_mail.json</code> を削除してコミット（INV-DLV-003）。</li><li><strong>見張る</strong> — 19:07 JST の watchdog が残留を確認し、必要なら再起動。</li></ol>
+<h2>依存と影響</h2>
+<p><strong>上流</strong>: <a href="#L1-master">マスタ</a>と各収集工程。本文の中身はこれらから作られる。 ただしこの工程自体は本文の正しさを検査しない。<strong>中身が空でないことしか見ていない。</strong></p>
+<p><strong>下流</strong>: 無し。ここが終端で、外へ出る。</p>
+<h2>壊れたときの症状</h2>
+<div class="scroll-x"><table><thead><tr><th>症状</th><th>まず見る場所</th></tr></thead><tbody><tr><td>メールが来ない</td><td><code>data/pending_mail.json</code> が残っていないか。残っていれば送信が失敗している</td></tr><tr><td>メールが来ないのにworkflowは緑</td><td>INV-DLV-002 が破れている可能性。最優先で調べる</td></tr><tr><td>同じメールが複数回届く</td><td>INV-DLV-003。削除コミットが失敗していないか</td></tr><tr><td>本文が空で届く</td><td>本文生成側の問題。この工程は空を弾くだけ</td></tr></tbody></table></div>
+<h2>未解決・注意点</h2>
+<ul><li><strong>この工程にはテストが1件も無い。</strong> <code>tests/</code> にメール関連のテストファイルが存在しない。 外向きで取り消せない操作を扱う工程としては、ここが最も薄い。 上の3つの不変条件はいずれもコードを読んで確認したものだが、 <strong>壊しても誰も気づかない状態</strong>にある。優先して埋めるべき負債だと考えている。</li><li>宛先の管理が GitHub Secrets に閉じており、誰に送っているかがリポジトリから読み取れない。</li><li>週報の分量（声37〜62件・ニュース30〜50件）は運用上の合意だが、機械的な検査は無い。</li></ul>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>.github/workflows/send_mail.yml</code></td></tr><tr><td><code>.github/workflows/send_mail_watchdog.yml</code></td></tr><tr><td><code>send_mail.py</code></td></tr></tbody></table></div></article><article class="page" id="L1-platform"><p class="eyebrow">L1 ・ 6537e7f 時点で確認済み</p><h1>実行基盤・安全弁</h1>
+<blockquote>上位は<a href="#L0">全体地図</a>。基盤はデータを判断しないが、誤った経路での実行を止める。</blockquote>
+<h2>この工程は何のためにあるか</h2>
+<p>GitHub Actions、インフラ定義、手動実行の確認句、リポジトリの容量ガードを通じて、日次処理が再現可能な経路で動き、危険な変更を静かに通さないようにする。</p>
+<h2>入力と出力</h2>
+<p>入力はworkflowイベント、環境変数、手動コマンドの <code>--apply</code> と確認句、ステージ済みファイル。出力は実行結果、失敗理由、またはブロックである。</p>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-PLT-001"><span class="inv-id">INV-PLT-001</span><span class="inv-title">手動の実変更には操作ごとの確認句が必要である</span></h3>
+<ul><li><strong>内容</strong>: <code>require_confirmation()</code> は <code>--apply</code> が指定されたときだけ、操作に対応する完全一致の確認句を要求する。</li><li><strong>なぜ</strong>: dry-run と実反映を同じ見た目で実行すると、コピーペーストや引数漏れで本番データを変える危険があるから。</li><li><strong>破れたときの症状</strong>: 調査のつもりのコマンドが実データや外部サービスを書き換える。</li><li><strong>守っているコード</strong>: <code>operation_safety/manual_apply_guards.py</code> の <code>require_confirmation()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_public_json_postprocessor_policy.py::test_manual_public_json_one_off_scripts_require_confirmation</code>、<code>tests/test_public_json_postprocessor_policy.py::test_master_rdb_one_off_scripts_keep_specific_confirmations</code></li></ul>
+<h3 class="inv-head" id="INV-PLT-002"><span class="inv-id">INV-PLT-002</span><span class="inv-title">GitHubの上限に近い大容量ファイルをコミットしない</span></h3>
+<ul><li><strong>内容</strong>: <code>guard_git_large_files.py</code> は追跡対象を検査し、95MiB以上をブロック、50MiB以上を警告する。</li><li><strong>なぜ</strong>: GitHubの上限を越えるコミットはpush時に失敗し、日次workflowの成果物更新全体を止めるから。</li><li><strong>破れたときの症状</strong>: 更新が最後のpushで失敗し、次回以降の差分も積み残される。</li><li><strong>守っているコード</strong>: <code>guard_git_large_files.py</code> の <code>classify_files()</code> と <code>run()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_guard_git_large_files.py::test_classifies_warn_and_block_files</code></li></ul>
+<h2>主要な流れ</h2>
+<ol><li>workflowがイベントに応じて検証・収集・成果物更新を実行する。</li><li>手動実反映は確認句を通す。</li><li>コミット前に容量ガードが追跡ファイルを検査する。</li></ol>
+<h2>依存と影響</h2>
+<p>すべてのL1は実行基盤に依存する。基盤が止まると収集や公開は古い状態のままになり、基盤が緩むと安全弁を迂回した変更が残る。</p>
+<h2>壊れたときの症状</h2>
+<p>Actionsが失敗したら該当workflowのログ、手動処理が拒否されたら確認句、push失敗なら大容量ガードの出力をまず確認する。</p>
+<h2>未解決・注意点</h2>
+<p>workflowの環境変数・秘密情報の契約は散在している。実行条件と所有者をL2として整理する余地がある。</p>
+<hr />
+<p>おと（Codex）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>guard_git_large_files.py</code></td></tr><tr><td><code>infra/dynamodb-queue.yml</code></td></tr><tr><td><code>infra/github-actions-static-site-deploy-policy.json</code></td></tr><tr><td><code>infra/static-site.yml</code></td></tr><tr><td><code>infra/waf-cloudfront-managed-rules.json</code></td></tr><tr><td><code>operation_safety/__init__.py</code></td></tr><tr><td><code>operation_safety/manual_apply_guards.py</code></td></tr></tbody></table></div></article><article class="page" id="L2-master-schema"><p class="eyebrow">L2 ・ 6537e7f 時点で確認済み</p><h1>マスタRDBスキーマ契約</h1>
+<blockquote>責務と運用は<a href="#L1-master">マスタL1</a>。ここではSQLiteのテーブル、キー、観測と確定の境界を定義する。</blockquote>
+<h2>何を表すか</h2>
+<p>RDBは「同名の行事」ではなく、繰り返される<strong>イベント系列</strong>と、その年ごとの<strong>開催回</strong>を分けて保持する。さらに外部から得た観測を、確定レコードと混同しないまま保存する。<code>master_rdb/master_db.py</code> の <code>SCHEMA</code> が正本であり、アプリ側のJSONはこの契約を置き換えない。</p>
+<h2>中心エンティティと関係</h2>
+<div class="scroll-x"><pre class="code"><code>venues ──&lt; event_series ──&lt; event_occurrences ──&lt; occurrence_dates
+                    │                 ├──&lt; occurrence_songs ──&lt; occurrence_song_evidence_links &gt;── evidence_items
+                    │                 └──&lt; occurrence_evidence_links ─────────────────────────────&gt; evidence_items
+                    └──&lt; event_series_aliases
+
+observed_occurrences ──&lt; observed_occurrence_songs
+       └─ matched_occurrence_id ──&gt; event_occurrences</code></pre></div>
+<div class="scroll-x"><table><thead><tr><th>テーブル</th><th>役割</th><th><code>6537e7f</code>時点の行数</th></tr></thead><tbody><tr><td><code>event_series</code> / <code>event_occurrences</code></td><td>年をまたぐ系列 / 年ごとの開催回</td><td>347 / 364</td></tr><tr><td><code>venues</code> / <code>venue_aliases</code></td><td>会場の正規名 / 同定用別名</td><td>342 / 402</td></tr><tr><td><code>songs</code> / <code>occurrence_songs</code></td><td>曲の正規名 / 開催回での確定・予測曲</td><td>399 / 819</td></tr><tr><td><code>evidence_items</code></td><td>URL・本文・時刻等を持つ原根拠</td><td>31,329</td></tr><tr><td><code>observed_occurrences</code> / <code>observed_occurrence_songs</code></td><td>外部入力の観測（未確定可）</td><td>2,164 / 30,883</td></tr><tr><td><code>occurrence_dates</code> / <code>predicted_occurrence_dates</code></td><td>根拠付き日付 / 推測日付</td><td>417 / 14</td></tr><tr><td><code>review_inbox_items</code></td><td>人へ渡す判断待ち項目</td><td>576</td></tr></tbody></table></div>
+<p>観測曲が30,883件で確定側が819件なのは意図した差である。観測は原文から広く集め、同定・根拠確認を経たものだけを <code>occurrence_songs</code> に置く。</p>
+<h2>年次と同定</h2>
+<p><code>event_series.series_key</code> は年を含まない系列の一意キーで、表示名も年を原則含めない。<code>event_occurrences</code> は <code>series_id</code>、<code>event_year</code>、<code>occurrence_sequence</code> の一意組で年ごとの開催回を表す。複数回開催にも <code>occurrence_sequence</code> で対応する。会場は系列の通常会場と開催回の実会場を別々に持つ。</p>
+<p><code>inherited_from_occurrence_id</code> は過去年との由来を記録する外部キーで、過去年情報を今年の確定情報へコピーする印ではない。<code>event_series_aliases</code>（25行）は別名を少数の明示的な同定規則として持つ表であり、名称の曖昧な自動併合をする表ではない。</p>
+<h2>確定・推測・観測の境界</h2>
+<p><code>occurrence_dates</code> は特定の <code>occurrence_id</code> に結び、日付・根拠種別・確信度・根拠IDを持つ。対して <code>predicted_occurrence_dates</code> は <code>historical_promotion_candidates</code> を起点に、予測年、根拠方式、スコア、適用状態を保持する候補である。予測の <code>target_occurrence_id</code> は任意で、系列だけに結び付く候補を許す。</p>
+<p>開催回の <code>current_event_state</code> と <code>date_certainty_tier</code> も別軸である。前者は predicted/announced/confirmed/ended/cancelled、後者は confirmed/rule_predicted/historical_slide/season_hint/historical_reference を表す。したがって過去年の根拠は将来開催の確定日へ昇格しない。これはL1-masterの「今年の確定には今年の根拠」のデータ上の受け皿である。</p>
+<h2>根拠の参照方法</h2>
+<p><code>evidence_items</code> はプラットフォーム、種別、URL、公開・観測時刻、原文抜粋、原payloadを一度保存する。根拠は開催回へ <code>occurrence_evidence_links</code>（対象とリンク状態・信頼度付き）、曲へ <code>occurrence_song_evidence_links</code> を通して多対多で結ぶ。同じ根拠を複数の開催回・曲へ引用でき、根拠本文をコピーしない。</p>
+<p>未同定の外部入力は <code>observed_occurrences</code> と <code>observed_occurrence_songs</code> に残し、<code>matched_*</code> と <code>match_status</code> で確定側への対応の有無を明示する。観測を消して確定表へ直接入れると、後で同定規則を直せず、根拠の出所も失われる。</p>
+<h2>スキーマ不変条件</h2>
+<h3 class="inv-head" id="INV-SCH-001"><span class="inv-id">INV-SCH-001</span><span class="inv-title">系列内の開催回は年・回数で一意である</span></h3>
+<ul><li><strong>内容</strong>: <code>event_occurrences</code> は <code>UNIQUE(series_id, event_year, occurrence_sequence)</code> を持つ。</li><li><strong>なぜ</strong>: 同じ年次開催回が二重に作られると日付・曲・根拠が別々の行へ分裂するから。</li><li><strong>破れたときの症状</strong>: 同じ行事が公開・レビューで二重に見え、片方だけ更新される。</li><li><strong>守っているコード</strong>: <code>master_rdb/master_db.py</code> の <code>event_occurrences</code> 定義</li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h3 class="inv-head" id="INV-SCH-002"><span class="inv-id">INV-SCH-002</span><span class="inv-title">確定・終了の開催回は confirmed の日付確実性だけを持つ</span></h3>
+<ul><li><strong>内容</strong>: insert/update trigger は <code>confirmed</code> / <code>ended</code> と非<code>confirmed</code>の <code>date_certainty_tier</code> の組合せを拒否し、予測・告知状態に <code>confirmed</code> を付けることも拒否する。</li><li><strong>なぜ</strong>: 状態と日付の確からしさを一つの曖昧な列にすると、過去年や規則予測を今年の確定として公開するから。</li><li><strong>破れたときの症状</strong>: 未確認の日程が確定表示される、または確定済み開催の状態が下流で解釈できない。</li><li><strong>守っているコード</strong>: <code>master_rdb/master_db.py</code> の <code>validate_event_state_axes_insert</code> / <code>validate_event_state_axes_update</code></li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h3 class="inv-head" id="INV-SCH-003"><span class="inv-id">INV-SCH-003</span><span class="inv-title">スキーマ変更は適用済みmigrationとして記録する</span></h3>
+<ul><li><strong>内容</strong>: <code>schema_migrations.version</code> は主キーで、初期化・migration適用は版と名称、適用時刻を保存する。接続時は <code>PRAGMA foreign_keys = ON</code> を設定する。</li><li><strong>なぜ</strong>: DBファイルだけを差し替えて構造を退行させると、下流が期待する列・外部キーを失い、原因が追えないから。</li><li><strong>破れたときの症状</strong>: 昨日まで通った処理が列不足や孤立参照で失敗し、どのDB世代か分からない。</li><li><strong>守っているコード</strong>: <code>master_rdb/master_db.py</code> の <code>schema_migrations</code>、<code>apply_migration()</code>、<code>connect_existing()</code></li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong></li></ul>
+<h2>変更時の確認</h2>
+<p>テーブル追加・列名変更はmigration、RDB artifactのスキーマ版、readerを同時に確認する。外部根拠を確定表へ直接コピーせず、まず観測または <code>evidence_items</code> とリンクを作る。年次修正では <code>series_key</code> を変える前に、対象が系列の名称修正か特定年の開催回修正かを分ける。</p>
+<hr />
+<p>おと（Codex）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>master_rdb/master_db.py</code></td></tr></tbody></table></div></article><article class="page" id="L2-public-json"><p class="eyebrow">L2 ・ 6537e7f 時点で確認済み</p><h1>公開JSONのフィールド契約</h1>
+<blockquote>上位は<a href="#L1-publication">公開サブシステム</a>。書き方の決まりは <a href="#SPEC-GUIDE">SPEC-GUIDE</a>。</blockquote>
+<h2>なぜこの文書が要るか</h2>
+<p><code>data/public/events_public.json</code> は、collector と公開サイト <code>bon-odori-site</code> をつなぐ<strong>唯一の受け渡し口</strong>である。 にもかかわらず、どのフィールドが何を意味し、どれを消すと表示が壊れるかは、これまでどこにも書かれていなかった。</p>
+<p>両側は別リポジトリなので、collector 側でフィールドを消しても、サイト側のコードは何も言わずに <code>undefined</code> を掴む。 テストも通る。気づくのは公開面が壊れたあとになる。<strong>これは事実上の外部APIでありながら、契約が暗黙のままだった。</strong></p>
+<p>この文書は、<code>6537e7f</code> 時点の実データ（379件）と <code>bon-odori-site</code> の <code>app.js</code> / <code>updates.js</code> を 突き合わせて確かめた結果である。推測ではなく、実際に数えた。</p>
+<h2>全体像</h2>
+<div class="scroll-x"><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>イベント件数</td><td>379件</td></tr><tr><td>フィールド総数</td><td>59種類（イベントごとに欠けるものがある）</td></tr><tr><td>サイトが識別子として参照</td><td>43種類</td></tr><tr><td>サイトに参照が見当たらない</td><td>16種類</td></tr></tbody></table></div>
+<p><strong>フィールドはイベントごとに揃っていない。</strong> 59種類は全イベントの和集合であって、 どのイベントも59個持っているわけではない。読む側は常に欠損を前提にする必要がある。</p>
+<h2>サイトが参照しているフィールド（43種類）</h2>
+<p>消すと公開サイトの表示が壊れる。変更する場合は <code>bon-odori-site</code> 側も同時に直す必要がある。</p>
+<p><strong>同一性と基本情報</strong> <code>name</code>, <code>display_name</code>, <code>venue</code>, <code>address</code>, <code>access</code>, <code>area</code>, <code>lat</code>, <code>lng</code>, <code>description</code>, <code>detail</code>, <code>scale</code>, <code>edition_number</code>, <code>name_confirmed</code></p>
+<p><strong>日程</strong> <code>date</code>, <code>date_end</code>, <code>date_candidates</code>, <code>date_certainty_tier</code>, <code>months</code>, <code>jun</code>, <code>hints</code></p>
+<p><strong>状態と表示制御</strong> <code>status</code>, <code>current_event_state</code>, <code>public_status</code>, <code>public_category</code>, <code>display_tier</code></p>
+<p><strong>過去実績（去年こうだった、を見せる）</strong> <code>historical_reference</code>, <code>historical_reference_label</code>, <code>last_seen_dates</code>, <code>last_seen_year</code>, <code>historical_slide</code>, <code>historical_slide_basis</code>, <code>historical_slide_date</code>, <code>historical_slide_date_end</code>, <code>historical_slide_method</code></p>
+<p><strong>予測（たぶん今年はこうだろう、を見せる）</strong> <code>date_prediction</code>, <code>predicted_date</code>, <code>predicted_date_end</code>, <code>prediction_basis</code>, <code>recurrence_score</code>, <code>recurrence_label</code>, <code>season_hint</code></p>
+<p><strong>その他</strong> <code>songs</code>, <code>source_urls</code></p>
+<h2>サイトが参照していないフィールド（16種類）</h2>
+<p><code>app.js</code> と <code>updates.js</code> に、識別子としての参照が1つも見つからなかったものである。 部分一致ではなく、前後が識別子文字でない完全一致で数えた。</p>
+<div class="scroll-x"><table><thead><tr><th>フィールド</th><th>値がある件数</th><th>性質</th></tr></thead><tbody><tr><td><code>public_note</code></td><td>379/379</td><td>判断の補足</td></tr><tr><td><code>public_status_label</code></td><td>379/379</td><td>状態の日本語表示</td></tr><tr><td><code>recurrence_reasons</code></td><td>379/379</td><td><strong>なぜ今年も開かれると考えたかの理由</strong></td></tr><tr><td><code>date_confidence</code></td><td>379/379</td><td>日付の確からしさ</td></tr><tr><td><code>recurrence_cautions</code></td><td>80/379</td><td>開催可能性についての注意</td></tr><tr><td><code>historical_reference_confidence</code></td><td>75/379</td><td>過去実績の確からしさ</td></tr><tr><td><code>historical_reference_score</code></td><td>75/379</td><td>同スコア</td></tr><tr><td><code>historical_display_tier</code></td><td>75/379</td><td>過去実績の表示段</td></tr><tr><td><code>historical_last_seen_dates</code></td><td>75/379</td><td>過去に見た日付</td></tr><tr><td><code>historical_last_seen_year</code></td><td>75/379</td><td>過去に見た年</td></tr><tr><td><code>season_hint_label</code></td><td>35/379</td><td>季節ヒントの表示名</td></tr><tr><td><code>season_confidence</code></td><td>35/379</td><td>季節ヒントの確からしさ</td></tr><tr><td><code>season_months</code></td><td>35/379</td><td>同・月</td></tr><tr><td><code>season_jun</code></td><td>35/379</td><td>同・旬</td></tr><tr><td><code>prediction_confidence</code></td><td>24/379</td><td>予測の確からしさ</td></tr><tr><td><code>prediction_evidence_years</code></td><td>3/379</td><td>予測の根拠年</td></tr></tbody></table></div>
+<h3>この一覧が示していること</h3>
+<p>並べてみると、<strong>参照されていない16種類のうち11種類が「確からしさ」と「そう判断した理由」である。</strong> <code>recurrence_reasons</code>（なぜ今年も開かれると考えたか）と <code>public_note</code>（判断の補足）は <strong>全379件に値が入っているのに、公開サイトはこれを一度も表示していない。</strong></p>
+<p>盆助の方針は「AIが何を集め、どう判断したかを見せること」に強みを置くというものだった。 その判断理由は、RDBから公開JSONまでちゃんと運ばれている。<strong>運ばれた先で使われていないだけである。</strong></p>
+<p>つまりこれは「不要なフィールドが残っている」のではなく、<strong>作ったのに見せていない</strong>状態と読むのが正しい。 消す方向ではなく、サイト側で活かす方向の宿題として扱いたい。 （判断していないので、ここでは事実の記録に留める。方針は内田さんの判断領域。）</p>
+<p><code>fixed_date_rule</code> は差分分類器が監視対象に含めているが、<code>6537e7f</code> 時点の実データでは 保持しているイベントが0件だった。将来使う想定の枠と思われる。</p>
+<h2>不変条件</h2>
+<h3 class="inv-head" id="INV-PJS-001"><span class="inv-id">INV-PJS-001</span><span class="inv-title">同一性は <code>name</code> と <code>venue</code> の組で決まり、それ以外にIDは無い</span></h3>
+<ul><li><strong>内容</strong>: 公開JSONにはイベントの安定IDが無い。差分の突き合わせは <code>f"{name}||{venue}"</code> で行う。 したがって <code>name</code> か <code>venue</code> を変えると、機械には別イベントに見える。</li><li><strong>なぜ</strong>: 公開JSONはRDBの主キーを外へ出していない。外向けの識別子を持たない設計のまま運用が進んだため、 表示名がそのまま同一性を担っている。</li><li><strong>破れたときの症状</strong>: 表記ゆれを直しただけで、同期ガードが「既存イベントの削除と新規追加」として止まる。 止まらず通れば、公開面で同じ盆踊りが2件に増えるか1件消える。</li><li><strong>守っているコード</strong>: <code>public_json_postprocessors/classify_public_events_diff.py</code> の <code>event_key()</code></li><li><strong>守っているテスト</strong>: <code>tests/test_guard_public_events_sync.py::test_exact_key_replacement_preserves_event_count_and_resolves_keys</code></li><li><strong>関連</strong>: <a href="#L1-publication">INV-PUB-001</a></li></ul>
+<h3 class="inv-head" id="INV-PJS-002"><span class="inv-id">INV-PJS-002</span><span class="inv-title">高リスクフィールドの変化は、無検査で公開へ流さない</span></h3>
+<ul><li><strong>内容</strong>: 差分分類器は全59フィールドではなく、次の7群だけを「高リスク」として監視する。 過去実績群、過去実績スライド群、季節群、日付予測群、日程（<code>date</code> / <code>date_end</code>）、詳細（<code>detail</code>）、出典（<code>source_urls</code>）、 そして後処理ルール（<code>fixed_date_rule</code>）。これらに差が出た場合は分類され、危険なものはガードが <code>block</code> する。</li><li><strong>なぜ</strong>: 全フィールドを等しく監視すると、表示上どうでもいい揺れでも止まってしまい、 ガードが「いつも赤いもの」になって読まれなくなる。<strong>止めるべきものだけを止めるために、監視対象を絞っている。</strong></li><li><strong>破れたときの症状</strong>: 監視対象から外したフィールドが静かに壊れる。逆に広げすぎるとガードが常時 block になり形骸化する。</li><li><strong>守っているコード</strong>: <code>public_json_postprocessors/classify_public_events_diff.py</code> の <code>HIGH_RISK_FIELDS</code></li><li><strong>守っているテスト</strong>: <code>tests/test_classify_public_events_diff.py::test_source_url_removal_is_high_risk_individual_review</code>、 <code>tests/test_classify_public_events_diff.py::test_source_url_metadata_difference_with_same_urls_is_not_high_risk</code></li></ul>
+<blockquote><strong>注意</strong>: 高リスク群には、サイトが表示していないフィールドも含まれている （<code>historical_reference_confidence</code>、<code>season_confidence</code>、<code>recurrence_reasons</code> など）。 つまり<strong>画面に出ないフィールドの差分でも同期は止まる。</strong> これは無駄ではなく、 それらが表示されていないのは現時点の実装の都合であって、値としては意味を持つため。</blockquote>
+<h3 class="inv-head" id="INV-PJS-003"><span class="inv-id">INV-PJS-003</span><span class="inv-title">読む側は、フィールドが欠けている前提で書く</span></h3>
+<ul><li><strong>内容</strong>: 59フィールドは全イベントの和集合であり、個々のイベントには欠けるものがある。 たとえば季節ヒント群は35件、予測の根拠年は3件にしか存在しない。</li><li><strong>なぜ</strong>: 情報の確からしさに応じて、付く情報と付かない情報が変わるため。 「確定した日付が無いイベント」には予測が付き、「予測もできないイベント」には季節ヒントだけが付く、という具合に、 <strong>欠けていること自体が情報になっている。</strong></li><li><strong>破れたときの症状</strong>: サイト側が欠損を想定していないと <code>undefined</code> を表示するか、描画が落ちる。 collector 側が「必ず埋める」ようにすると、今度は推測値で穴埋めすることになり、確定と推測の区別が失われる。</li><li><strong>守っているコード</strong>: <code>export_public_events.py</code> の各フィールド付与処理</li><li><strong>守っているテスト</strong>: <strong>なし（要追加）</strong> — 「欠損が正常である」ことを明示的に検査するテストは見当たらなかった。</li></ul>
+<h2>気づいた食い違い（<code>6537e7f</code> 時点）</h2>
+<p>collector 側の <code>data/public/events_public.json</code> は379件、 <code>bon-odori-site</code> 側の <code>data/events_public.json</code> は370件で、<strong>9件の差がある。</strong></p>
+<p>同期ガードは件数不一致を <code>event_count_mismatch</code> として <code>block</code> するので（<a href="#L1-publication">INV-PUB-003</a>）、 この状態で一括同期をかけると止まる。サイト側が未同期なだけと思われるが、<strong>確認していない。</strong> 放置すると差が広がるので、公開反映の前に確かめる必要がある。</p>
+<h2>未解決・注意点</h2>
+<ul><li><strong>この仕様が公開JSONそのものを <code>owns</code> しているのは意図的である。</strong> 生成物なので一見すると <a href="#SPEC-GUIDE">SPEC-GUIDE</a> の「純粋な生成物は owns しない」に反して見えるが、 公開JSONは<strong>人も直接手を入れるファイル</strong>で（直近8コミットのうち人が4件）、 手で触るときにこそ INV-PJS-001 を届けたい。鮮度指標は自動コミットを数えないので汚れない。 外さないこと。</li><li><strong>判断理由を公開面で使っていない</strong>（上述）。作ったものが届いていない状態。</li><li><strong>安定IDが無い</strong>（INV-PJS-001）。名前を直すだけで別イベント扱いになる構造は、根本的には設計の宿題。</li><li><strong>欠損が正常であることを検査するテストが無い</strong>（INV-PJS-003）。</li><li><code>events_public.js</code> は JSON と同内容のJS版だが、両者がずれないことを保証する仕組みを確認していない。</li><li>曲目の <code>data/public/event_songs_public.json</code> は本文書で扱えていない。別途必要。</li></ul>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>data/public/event_songs_public.json</code></td></tr><tr><td><code>data/public/events_public.js</code></td></tr><tr><td><code>data/public/events_public.json</code></td></tr></tbody></table></div></article><article class="page" id="SPEC-GUIDE"><p class="eyebrow">meta ・ 1b69359 時点で確認済み／以降 4 ファイルが変更</p><h1>仕様書の仕様（このフォルダの読み方・書き方）</h1>
+<p>盆助はソースだけで約14万行あり、日次パイプラインは40近い工程が数珠つなぎになっている。 この規模になると「ソースを読めば分かる」は成り立たない。読めば分かるのは*その1ファイルが何をしているか*だけで、 <strong>それを変えると他のどこが壊れるか</strong>は、どこにも書いていないからだ。</p>
+<p>実際にこれまで、小さな修正が全体を壊す事故が何度も起きている。原因はほぼ常に同じで、 直した本人（人でもAIでも）が「この値が下流でこう使われている」という前提を知らないまま触ってしまう、というものだった。</p>
+<p>この <code>docs/spec/</code> は、その前提を書き留めておく場所である。目的は2つ。</p>
+<ol><li><strong>内田さんが全体を見渡しながら、細かい修正の指示を出せるようにする。</strong> どこを触る話なのか、それは何に影響するのかを、ソースを読まずに把握できる状態にする。</li><li><strong>AIが修正前に「壊してはいけないもの」を知れるようにする。</strong> 触るファイルから逆引きして、関係する仕様と不変条件に必ず行き着けるようにする。</li></ol>
+<h2>階層の考え方</h2>
+<p>仕様書は4段。上ほど「なぜ・何を」、下ほど「どうやって」に寄る。 <strong>上の層は下の層の要約ではない。</strong>層ごとに答える問いが違う。ここを混ぜると、どの層も中途半端になる。</p>
+<div class="scroll-x"><table><thead><tr><th>層</th><th>場所</th><th>答える問い</th><th>読む人</th><th>分量の目安</th></tr></thead><tbody><tr><td><strong>L0</strong></td><td><code>docs/spec/README.md</code></td><td>盆助とは何をする仕組みか。どこを見ればいいか</td><td>内田さん・初見のAI</td><td>1画面</td></tr><tr><td><strong>L1</strong></td><td><code>docs/spec/L1/*.md</code></td><td>このサブシステムは何に責任を持ち、何を壊してはいけないか</td><td>修正の方針を決める人</td><td>各200〜400行</td></tr><tr><td><strong>L2</strong></td><td><code>docs/spec/L2/*.md</code></td><td>工程どうしが受け渡すデータの正確な形は何か</td><td>実装するAI</td><td>契約ごと</td></tr><tr><td><strong>L3</strong></td><td>ソースコード</td><td>実際にどう動くか</td><td>実装するAI</td><td>—</td></tr></tbody></table></div>
+<p>L3（ソース）は仕様書に写さない。写した瞬間に必ず古くなるからだ。 代わりに L1・L2 から<strong>ファイルパスと関数名で名指しする</strong>。仕様書の役割は説明の複製ではなく、 「この話の実物はここにある」という道案内と、「ここは動かすな」という警告の2つに絞る。</p>
+<h3>縦に降りる道と、横に辿る道</h3>
+<p>読み方は2通りある。</p>
+<ul><li><strong>縦に降りる（分からないことを調べる）</strong>: L0 の地図でどのサブシステムの話か当たりをつけ、L1 でその責務と不変条件を読み、 L2 でデータの形を確認し、L1/L2 が名指ししているソースへ飛ぶ。</li><li><strong>横から入る（触るファイルが先に決まっている）</strong>: <code>docs/spec/index.json</code> の逆引きで、 そのファイルを <code>owns</code> している仕様セクションと、紐づく不変条件を引く。<strong>修正前に必ずこちらを通る。</strong></li></ul>
+<p>後者があることが、この仕組みの肝である。「ファイルを触る → 関係する不変条件が出てくる」経路が無いと、 仕様書は書かれるだけで参照されない資料になる。</p>
+<h2>ファイルの書式</h2>
+<p>すべての仕様ファイルは YAML front matter で始める。ここが機械可読部分で、<code>index.json</code> の生成元になる。</p>
+<div class="scroll-x"><pre class="code"><code>---
+id: L1-collection            # 一意。層のプレフィクス + 短い名前
+layer: L1                    # L0 / L1 / L2 / meta
+title: 収集サブシステム
+owns:                        # このセクションが仕様として責任を持つソース（glob可）
+  - collect.py
+  - collection_support/**
+depends_on:                  # 上流として依存する仕様セクションのid
+  - L1-platform
+invariants:                  # このセクションが定める不変条件のid
+  - INV-COL-001
+verified_by:                 # 記述が生きている証拠となるテスト
+  - tests/test_x_collection.py
+updated_for: 6537e7f         # この記述が実態と合っていることを確認したコミット
+---</code></pre></div>
+<p><code>owns</code> は排他にする。1つのソースファイルを2つの仕様セクションが <code>owns</code> してはいけない。 どちらを直せばいいのか分からなくなるからだ（<code>index.json</code> の生成時に検査して落とす）。 複数から参照したいだけなら <code>depends_on</code> を使う。 <code>owns</code> は、人が直接変更することがあるソース・成果物を指す。<code>index.json</code> や生成HTMLなど、誰も直接編集しない純粋な生成物は <code>owns</code> しない。 一方で公開JSONのように機械も人も変更しうる成果物は、逆引きで不変条件を示す価値があるため <code>owns</code> してよい。 鮮度指標は自動コミットを数えず、人による変更だけを数える。これにより、成果物の自動更新で見直し時期を誤って示さない。</p>
+<p><code>updated_for</code> は「この記述を最後に実態と突き合わせたコミット」を書く。 更新した日付ではなく<strong>コミットハッシュ</strong>にしているのは、そこから <code>owns</code> 配下の差分を機械的に数えて、 「この仕様は何コミット分の変更を見ていないか」＝鮮度を測れるようにするため。</p>
+<h2>本文の型</h2>
+<p>L1 の本文は次の見出しを必ずこの順で持つ。順番を揃えるのは、AIが部分読みしても迷子にならないようにするため。</p>
+<ol><li><strong>この工程は何のためにあるか</strong> — 1〜3段落。目的と、無かったら何が困るか。</li><li><strong>入力と出力</strong> — 何を受け取り、何を出すか。ファイルパス／テーブル名／外部APIを具体名で。</li><li><strong>不変条件</strong> — 後述の書式。<strong>ここがこの仕様書の中心</strong>。</li><li><strong>主要な流れ</strong> — 実際の処理順。各段でどのファイルが動くかを名指しする。</li><li><strong>依存と影響</strong> — 上流が壊れたとき何が起きるか、下流に何を渡しているか。</li><li><strong>壊れたときの症状</strong> — 「公開件数が急に減る」「区ごとの偏りが出る」など、外から見える形で書く。 これは事故ったときの逆引きに効く。症状から原因の当たりをつけられる。</li><li><strong>未解決・注意点</strong> — 分かっているが直っていないこと。</li></ol>
+<h2>不変条件（INV）の書き方</h2>
+<p>不変条件は「常に成り立っていなければならないこと」で、破ると全体が壊れる約束を指す。 仕様書の中で最も重要な部分なので、書式を固定する。</p>
+<div class="scroll-x"><pre class="code"><code>### INV-COL-001 ノイズ判定の投稿は voices.json に入れない
+
+- **内容**: X収集で除外語にヒットした投稿は、`data/voices.json` へ書き出さない。
+- **なぜ**: voices は公開サイトの「声」欄と週報の入力を兼ねている。ノイズが混ざると
+  公開面に無関係な投稿が出るうえ、週報の分量設定も崩れる。
+- **破れたときの症状**: 公開サイトの声欄に盆踊りと無関係な投稿が並ぶ／週報が異常に長くなる。
+- **守っているコード**: `collect.py` の仕分け処理
+- **守っているテスト**: `tests/test_x_collection.py::test_noise_excluded_from_voices`</code></pre></div>
+<p>ルールは3つ。</p>
+<ul><li><strong>IDは <code>INV-&lt;サブシステム3文字&gt;-&lt;連番&gt;</code>。</strong> 一度振ったIDは意味を変えない。不要になったら本文に「廃止」と書いて残す。 IDが使い回されると、過去のPRコメントやメモが別のことを指すようになってしまう。</li><li><strong>必ずテストを1件以上紐づける。</strong> テストの無い不変条件は、破れても誰も気づかないので守られていないのと同じ。 紐づけるテストは「修正を外したら落ちる」ものであること（テストが全部通ることは合格の根拠にならない）。 まだテストが無い場合は <code>守っているテスト: **なし（要追加）**</code> と正直に書く。これは負債として可視化する。</li><li><strong>症状は外から見える形で書く。</strong> 「内部状態が不整合になる」ではなく「公開件数が減る」「終わった行事が開催予定のまま残る」。 内田さんが異変に気づいたとき、症状から仕様を引けるようにするため。</li></ul>
+<blockquote><strong>検査の限界を知っておくこと。</strong> <code>spec_index.py check</code> が見るのは、 引用されたテスト関数が<strong>実在するかどうかだけ</strong>である。 そのテストがその不変条件を本当に守っているかは、機械には判定できない。 実際に、無関係なテストを引いた不変条件が check を素通りした事例がある（INV-SCH-003、2026-08-13）。 <strong>引用テストの妥当性は、レビューする人が中身を読んで確かめるしかない。</strong> 逆に言えば、check が緑であることは「テストが実在する」以上の意味を持たない。</blockquote>
+<h2>更新のタイミング</h2>
+<p>仕様書は書いた瞬間から古くなる。放っておくと必ず腐るので、更新を人の善意に頼らない。 まず大原則をひとつ置き、そのうえで4つの契機を、自動化の強さを変えて設ける。</p>
+<h3>0. コードを変えたら、同じPRで仕様書も直す（大原則・2026-08-13 内田さん指示）</h3>
+<p><strong>追加・修正・削除のどれであっても、<code>docs/spec/</code> を同じPRの中で直す。</strong> 別PRに切り出さない。 後回しにすると必ず忘れられ、仕様書は現実を写さない飾りになる。そうなった仕様書は、 無いよりも危ない。読んだ人が「確認済みの情報だ」と信じてしまうぶんだけ害が大きいからだ。</p>
+<p>具体的にすることは4つ。</p>
+<ul><li>作業を<strong>始める前</strong>に <code>spec_index.py impact --files &lt;path&gt;...</code> を引き、 触るファイルがどの仕様に属し、どの不変条件に関わるのかを見る。</li><li>挙動を変えたら、その仕様の本文と <code>updated_for</code> を更新する。</li><li>守るべき約束が増えた・変わった・不要になったなら <code>### INV-xxx</code> を追加・修正・廃止する。</li><li><strong>ファイルを消す・移動する・分割するときは <code>owns</code> を必ず直す。</strong> 減らしたら、その場で <code>impact</code> を引いて意図どおりか確かめる。</li></ul>
+<p>最後のひとつは実際に事故った。2026-08-13、<code>owns</code> を縮める調整の巻き添えで <code>master_rdb/s3_artifact.py</code> が抜け落ち、<strong>スキーマ退行事故の再発防止が書いてあるファイルを 触っても警告が出ない状態</strong>になった。仕様書があるのに逆引きから消えるのは、 「未記述だから気にしなくていい」と誤解される点で、最初から無いより悪い。</p>
+<h3>1. PR を作る・更新するとき — 影響範囲を知らせる（自動・情報提供）</h3>
+<p>変更されたファイルから <code>index.json</code> を逆引きし、 <strong>関係する仕様セクションと不変条件をPRにコメントする。</strong></p>
+<p>これがこの仕組みの主目的である。「小さい修正のつもりが全体を壊す」は、 触っている本人が影響範囲を知らないから起きる。PRの時点で 「この変更は INV-PUB-002（公開件数の急減を防ぐ）に触れます」と出れば、その場で気づける。</p>
+<p><strong>影響コメントではCIを落とさない。</strong> 落とすと「仕様も直しました」と形式的に埋めるだけの作業になり、 肝心の警告が読まれなくなる。情報を出して、直すかどうかの判断は人とAIに委ねる。</p>
+<p>ただし同じPRの中で、次に述べる<strong>機械的な整合性検査は落とす</strong>。こちらは判断の余地が無い事実だけを見るので、 埋め作業になりようがない。</p>
+<h3>2. 同じくPRのとき — 機械的な整合性を守る（自動・失敗させる）</h3>
+<ul><li><code>owns</code> が指すファイルが実在するか（消えたファイルを指したままになっていないか）</li><li>1ファイルを2つの仕様が <code>owns</code> していないか</li><li>INV が指すテストが実在するか</li><li>front matter の <code>invariants</code> と本文の INV 見出しが一致しているか</li><li>仕様ファイル間のリンク切れ</li></ul>
+<p>いずれも人の判断が要らない事実なので、自動で守れる。逆に「記述の内容が実態と合っているか」はここでは見ない。 機械には見られないからで、それは4番目の契機で人とAIが担う。</p>
+<p>検査を merge 後ではなくPR時に置くのは、merge してから落ちても直す先が main になってしまい、手戻りが大きいため。</p>
+<h3>2-b. main へ push されたとき — 索引を作り直す（自動）</h3>
+<p><code>index.json</code> と、閲覧用の <code>docs/spec/site/index.html</code> を再生成して自動コミットする。鮮度指標（<code>updated_for</code> からの差分）はこのとき更新される。 再生成を main 側に寄せるのは、PRごとに索引が競合して無駄な衝突が起きるのを避けるため。 HTMLは <code>scripts/spec_html.py</code> が索引とMarkdownから生成する。手書きで直してはいけない。</p>
+<h3>3. 本番リリース（公開サイトへの反映）のとき — 稼働している姿を刻む（自動）</h3>
+<p>L0 の「いま動いている姿」の節に、その時点の公開件数・稼働workflow・最終デプロイを記録する。 仕様書と実際に動いているものが同じ世代であることを示すため。</p>
+<h3>4. 一区切りついたとき — 記述の中身を見直す（AIが実施）</h3>
+<p>上の3つはどれも<strong>形式</strong>しか守れない。「書いてあることが実態と合っているか」は読んで確かめるしかない。 そこで、次のどれかに当たったら、こと（Claude Code）が該当L1を実態と突き合わせて本文を直し、<code>updated_for</code> を更新する。</p>
+<ul><li>あるテーマのPR群が終わったとき（例：X盆踊ラー再評価の一連が main に入り切った）</li><li>事故が起きて原因が判明したとき（<strong>症状と不変条件を必ず追記する</strong>。同じ事故を二度繰り返さないための蓄積）</li><li><code>index.json</code> の鮮度指標で、<code>updated_for</code> から一定以上の差分が積もった仕様が出たとき</li></ul>
+<p>3番目を数値で持つことで、「そろそろ見直しどき」を人が覚えていなくてよくなる。</p>
+<h3>5. ずれを見つけたとき — その場で直す（発見次第・2026-08-13 内田さん指示）</h3>
+<p>上の0〜4をすべて守っても、仕様書と実態はずれる。人もAIも見落とすし、急ぎの修正では手が回らないこともある。 だから<strong>ずれを「あってはならないもの」として扱わない。</strong> 前提として織り込み、見つけ次第直す運用にする。</p>
+<p><strong>ずれていること自体は失敗ではない。見つけたのに直さず素通りすることが失敗である。</strong></p>
+<ul><li>作業中に「記述が実態と違う」と気づいたら、その場で直す。 別タスクへ切り出したり、内田さんへ確認を求めたりしなくてよい。</li><li>直すのは<strong>気づいた範囲だけでよい。</strong> ついでに周辺を全部点検し直す必要はない。 完璧を求めると誰も手をつけなくなり、かえってずれが残る。</li><li>実装を読んでも正解が分からない場合は、<strong>推測で書き換えない。</strong> 該当箇所に「未確認」と明記して残す。間違った記述より、確認していないと分かる記述のほうがよい。</li></ul>
+<p>この5番目があることで、0〜4を厳密に運用しきれなくても仕組みが壊れない。 完璧な同期ではなく、<strong>ずれが見つかるたびに縮む</strong>状態を目指している。</p>
+<h2>網羅していないことを隠さない</h2>
+<p>最初から全ソースを仕様化することはできない。668ファイルあるので当然そうなる。 なので <code>index.json</code> は、<strong>どの仕様にも <code>owns</code> されていないファイル</strong>を「未記述」として数え、L0 に出す。</p>
+<p>網羅率が低いこと自体は問題ではない。問題なのは、網羅していないのに網羅しているように見えることだ。 「この領域はまだ仕様書が無いので、ソースを直接読む必要がある」と分かれば、AIも人も正しく振る舞える。</p>
+<h2>この仕様書を書くときの姿勢</h2>
+<ul><li><strong>ソースを見て書く。記憶で書かない。</strong> 実装を確認せずに書いた仕様は、実態と違ううえに、 読んだ人が確認済みだと信じてしまうぶん害が大きい。</li><li><strong>確認していないことは「未確認」と書く。</strong> 埋めるために推測を書かない。</li><li><strong>なぜそうなっているかを残す。</strong> 「何をしているか」はソースを読めば分かるが、 「なぜその判断をしたか」はソースから復元できない。仕様書が本当に価値を持つのはここ。</li><li><strong>失敗の記録を消さない。</strong> 一度壊れた箇所は、また壊れる。事故は不変条件として残す。</li></ul>
+<hr />
+<p>こと（Claude Code）</p><h2>この仕様が責任を持つファイル</h2><div class="scroll-x"><table><tbody><tr><td><code>.github/workflows/spec_check.yml</code></td></tr><tr><td><code>.github/workflows/spec_index_refresh.yml</code></td></tr><tr><td><code>docs/spec/SPEC-GUIDE.md</code></td></tr><tr><td><code>scripts/spec_html.py</code></td></tr><tr><td><code>scripts/spec_index.py</code></td></tr><tr><td><code>tests/test_spec_index.py</code></td></tr></tbody></table></div></article>
+  <article class="page" id="invariants">
+<p class="eyebrow">横断ビュー</p>
+<h1>不変条件の一覧</h1>
+<p class="lead">「破ると全体が壊れる約束」を一覧にしたもの。<strong>テストなし</strong>の行は、
+仕様書には書いてあるが、実際に壊れても誰も気づかない状態を意味する。</p>
+<div class="cards">
+<div class="card"><b>33</b><span>不変条件</span></div>
+<div class="card"><b>24</b><span>テストで守られている</span></div>
+<div class="card warn"><b>9</b><span>守られていない</span></div>
+<div class="card"><b>105 / 328</b><span>説明のあるファイル</span></div>
+</div>
+<div class="scroll-x"><table class="invtable"><thead><tr>
+<th>ID</th><th>内容</th><th>どの仕様か</th><th>状態</th>
+</tr></thead><tbody><tr class=""><td><a href="#INV-COL-001"><code>INV-COL-001</code></a></td><td>Xの生投稿は意味判定より先に保存する</td><td><a href="#L1-collection">L1-collection</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class="risk"><td><a href="#INV-COL-002"><code>INV-COL-002</code></a></td><td>同じURLを1回の収集で重複して取り込まない</td><td><a href="#L1-collection">L1-collection</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class=""><td><a href="#INV-COL-003"><code>INV-COL-003</code></a></td><td>収集不能・受理0件を正常な「投稿なし」として扱わない</td><td><a href="#L1-collection">L1-collection</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-COL-004"><code>INV-COL-004</code></a></td><td>未完了のホワイトリスト収集では since_time を進めない</td><td><a href="#L1-collection">L1-collection</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class="risk"><td><a href="#INV-DLV-001"><code>INV-DLV-001</code></a></td><td>`pending_mail.json` が無いときは、何もせず正常終了する</td><td><a href="#L1-delivery">L1-delivery</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class="risk"><td><a href="#INV-DLV-002"><code>INV-DLV-002</code></a></td><td>送れないときは、黙って成功にせず、本文を残して失敗させる</td><td><a href="#L1-delivery">L1-delivery</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class="risk"><td><a href="#INV-DLV-003"><code>INV-DLV-003</code></a></td><td>送信に成功したときだけ本文を消し、それをもって二重送信を防ぐ</td><td><a href="#L1-delivery">L1-delivery</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class=""><td><a href="#INV-JDG-001"><code>INV-JDG-001</code></a></td><td>判定には盆踊り文脈と説明可能な採点理由を残す</td><td><a href="#L1-judgment">L1-judgment</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-JDG-002"><code>INV-JDG-002</code></a></td><td>一般名詞・断片をイベント名として確定候補にしない</td><td><a href="#L1-judgment">L1-judgment</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-MST-001"><code>INV-MST-001</code></a></td><td>RDBへの反映は有限の変更種別だけを通す</td><td><a href="#L1-master">L1-master</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-MST-002"><code>INV-MST-002</code></a></td><td>今年の開催日の確定には、今年のソースを要求する</td><td><a href="#L1-master">L1-master</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-MST-003"><code>INV-MST-003</code></a></td><td>既定は dry-run。実DBへの書き込みには確認句が要る</td><td><a href="#L1-master">L1-master</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class="risk"><td><a href="#INV-MST-004"><code>INV-MST-004</code></a></td><td>S3の latest を上書きするときは、期待するチェックサムと一致させる</td><td><a href="#L1-master">L1-master</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class=""><td><a href="#INV-MST-005"><code>INV-MST-005</code></a></td><td>スキーマが退行したDBで latest を上書きしない</td><td><a href="#L1-master">L1-master</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-MST-006"><code>INV-MST-006</code></a></td><td>取得したDBは、必ずチェックサムを検証してから使う</td><td><a href="#L1-master">L1-master</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PJS-001"><code>INV-PJS-001</code></a></td><td>同一性は `name` と `venue` の組で決まり、それ以外にIDは無い</td><td><a href="#L2-public-json">L2-public-json</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PJS-002"><code>INV-PJS-002</code></a></td><td>高リスクフィールドの変化は、無検査で公開へ流さない</td><td><a href="#L2-public-json">L2-public-json</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class="risk"><td><a href="#INV-PJS-003"><code>INV-PJS-003</code></a></td><td>読む側は、フィールドが欠けている前提で書く</td><td><a href="#L2-public-json">L2-public-json</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class=""><td><a href="#INV-PLT-001"><code>INV-PLT-001</code></a></td><td>手動の実変更には操作ごとの確認句が必要である</td><td><a href="#L1-platform">L1-platform</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PLT-002"><code>INV-PLT-002</code></a></td><td>GitHubの上限に近い大容量ファイルをコミットしない</td><td><a href="#L1-platform">L1-platform</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PUB-001"><code>INV-PUB-001</code></a></td><td>公開イベントの同一性は「名前 + 会場」で決まる</td><td><a href="#L1-publication">L1-publication</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PUB-002"><code>INV-PUB-002</code></a></td><td>既存の公開イベントを消す・書き換えるのは、承認済みの名前と一致するときだけ</td><td><a href="#L1-publication">L1-publication</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PUB-003"><code>INV-PUB-003</code></a></td><td>collector と site で件数とキー集合が一致しないと、一括同期しない</td><td><a href="#L1-publication">L1-publication</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PUB-004"><code>INV-PUB-004</code></a></td><td>ガードが pass してもデプロイ承認にはならない</td><td><a href="#L1-publication">L1-publication</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PUB-005"><code>INV-PUB-005</code></a></td><td>公開の「今日」は必ず外から与える。既定値に落ちない</td><td><a href="#L1-publication">L1-publication</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-PUB-006"><code>INV-PUB-006</code></a></td><td>日付予測をJSONフォールバックで補ったら、成功させずに落とす</td><td><a href="#L1-publication">L1-publication</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-RVW-001"><code>INV-RVW-001</code></a></td><td>同じ決定を二度書いても、二重に適用されない</td><td><a href="#L1-review">L1-review</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-RVW-002"><code>INV-RVW-002</code></a></td><td>対象の取り違えと競合は、通さずに止める（fail-closed）</td><td><a href="#L1-review">L1-review</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-RVW-003"><code>INV-RVW-003</code></a></td><td>決定の書き込みが、勝手にスキーマを移行しない</td><td><a href="#L1-review">L1-review</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class=""><td><a href="#INV-RVW-004"><code>INV-RVW-004</code></a></td><td>実適用に使う reviewed JSON は、人の昇格を経たものだけ</td><td><a href="#L1-review">L1-review</a></td><td class="st"><span class="pill ok">テストあり</span></td></tr><tr class="risk"><td><a href="#INV-SCH-001"><code>INV-SCH-001</code></a></td><td>系列内の開催回は年・回数で一意である</td><td><a href="#L2-master-schema">L2-master-schema</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class="risk"><td><a href="#INV-SCH-002"><code>INV-SCH-002</code></a></td><td>確定・終了の開催回は confirmed の日付確実性だけを持つ</td><td><a href="#L2-master-schema">L2-master-schema</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr><tr class="risk"><td><a href="#INV-SCH-003"><code>INV-SCH-003</code></a></td><td>スキーマ変更は適用済みmigrationとして記録する</td><td><a href="#L2-master-schema">L2-master-schema</a></td><td class="st"><span class="pill warn">テストなし</span></td></tr></tbody></table></div>
+<p class="foot">生成元: <code>docs/spec/index.json</code>（<code>e9a598f</code> 時点）。
+この表は手書きではなく、仕様書の本文から機械的に集めている。</p>
+</article>
+</div>
+</div>
+<script>
+const DATA = {"file_to_spec": {"collect.py": "L1-collection", "collection_support/voices_s3_artifact.py": "L1-collection", "collection_support/x_author_profile.py": "L1-collection", "collection_support/x_budget_guard.py": "L1-collection", "collection_support/x_collection_health.py": "L1-collection", "collection_support/x_cost_ledger.py": "L1-collection", "collection_support/x_official_source_accounts.py": "L1-collection", "collection_support/x_raw_archive.py": "L1-collection", "collection_support/x_source_registry.py": "L1-collection", "collection_support/event_evidence.py": "L1-judgment", "collection_support/suppression_rules.py": "L1-judgment", "collection_support/tokyo23_scope.py": "L1-judgment", "collection_support/x_source_officiality.py": "L1-judgment", "review_console/__init__.py": "L1-review", "review_console/data.py": "L1-review", "review_console/server.py": "L1-review", "review_console/static/app.js": "L1-review", "review_console/static/index.html": "L1-review", "review_console/static/styles.css": "L1-review", "review_console_ops/__init__.py": "L1-review", "review_console_ops/apply_review_console_decisions.py": "L1-review", "review_console_ops/collect_ops_metrics.py": "L1-review", "review_console_ops/run_review_console.py": "L1-review", "review_inbox.py": "L1-review", "review_inbox_adapters/__init__.py": "L1-review", "review_inbox_adapters/build_change_requests_from_review_inbox.py": "L1-review", "review_inbox_adapters/build_event_inbox_candidates.py": "L1-review", "review_inbox_adapters/decision_stage.py": "L1-review", "review_inbox_adapters/decision_writer.py": "L1-review", "review_inbox_adapters/event_inbox_writer.py": "L1-review", "review_inbox_adapters/historical_reference_adapter.py": "L1-review", "review_inbox_adapters/local_judgment_contract.py": "L1-review", "review_inbox_adapters/low_priority_adapters.py": "L1-review", "review_inbox_adapters/missing_source_url_adapter.py": "L1-review", "review_inbox_adapters/missing_venue_adapter.py": "L1-review", "review_inbox_adapters/official_source_adapter.py": "L1-review", "review_inbox_adapters/parity.py": "L1-review", "review_inbox_adapters/predicted_occurrence_date_review_adapter.py": "L1-review", "review_inbox_adapters/predicted_occurrence_research_adapter.py": "L1-review", "review_inbox_adapters/production_wiring.py": "L1-review", "review_inbox_adapters/rare_signal_adapter.py": "L1-review", "review_inbox_adapters/registered_event_investigation_adapter.py": "L1-review", "review_inbox_adapters/shadow_execution_gate.py": "L1-review", "review_inbox_adapters/source_adapter.py": "L1-review", "review_inbox_adapters/source_writer.py": "L1-review", "review_inbox_adapters/x_gap_adapter.py": "L1-review", "review_inbox_adapters/youtube_adapter.py": "L1-review", "review_inbox_adapters/youtube_aggregate.py": "L1-review", "review_inbox_adapters/youtube_user_confirmation_adapter.py": "L1-review", "review_inbox_adapters/youtube_year_backfill_adapter.py": "L1-review", "scripts/promote_change_requests_for_review.py": "L1-review", "audit_master_rdb.py": "L1-master", "event_model/__init__.py": "L1-master", "event_model/event_series_normalization.py": "L1-master", "event_model/event_state_axes.py": "L1-master", "event_model/local_judgment_migration.py": "L1-master", "event_model/place_dictionary.py": "L1-master", "event_model/series_alias_migration.py": "L1-master", "event_model/state_axes_migration.py": "L1-master", "event_model/year_context.py": "L1-master", "master_db_s3_artifact.py": "L1-master", "master_rdb/__init__.py": "L1-master", "master_rdb/audit.py": "L1-master", "master_rdb/freeze_policy.py": "L1-master", "master_rdb/s3_artifact.py": "L1-master", "master_rdb/unified_model_audit.py": "L1-master", "master_rdb_freeze_policy.py": "L1-master", "rdb_builders/__init__.py": "L1-master", "rdb_builders/build_bon_odori_rdb.py": "L1-master", "rdb_builders/build_evidence_rdb.py": "L1-master", "rdb_builders/build_master_rdb.py": "L1-master", "rdb_builders/build_notion_rdb.py": "L1-master", "rdb_builders/build_youtube_rdb.py": "L1-master", "rdb_builders/export_rdb_apply_plans.py": "L1-master", "rdb_builders/export_rdb_review_report.py": "L1-master", "report_apply/__init__.py": "L1-master", "report_apply/apply_change_requests.py": "L1-master", "report_apply/apply_firsthand_field_report.py": "L1-master", "report_apply/apply_official_notice_report.py": "L1-master", "report_apply/event_report_helpers.py": "L1-master", "report_apply/firsthand_report_helpers.py": "L1-master", "report_apply/official_notice_report_helpers.py": "L1-master", "report_apply/rdb_apply_support.py": "L1-master", "transition_ended_occurrences.py": "L1-master", "export_public_events.py": "L1-publication", "guard_site_public_event_additions.py": "L1-publication", "public_export_support/__init__.py": "L1-publication", "public_export_support/build_public_historical_reference_change_requests.py": "L1-publication", "public_export_support/build_publication_gap_review.py": "L1-publication", "public_export_support/score_event_recurrence.py": "L1-publication", "public_json_postprocessors/__init__.py": "L1-publication", "public_json_postprocessors/apply_public_date_predictions.py": "L1-publication", "public_json_postprocessors/apply_public_display_tiers.py": "L1-publication", "public_json_postprocessors/apply_public_historical_references.py": "L1-publication", "public_json_postprocessors/apply_public_season_hints.py": "L1-publication", "public_json_postprocessors/classify_public_events_diff.py": "L1-publication", "public_json_postprocessors/compare_event_state_axes.py": "L1-publication", "public_json_postprocessors/compare_public_projection_sources.py": "L1-publication", "public_json_postprocessors/guard_public_events_sync.py": "L1-publication", "public_json_postprocessors/review_missing_occurrence_venues.py": "L1-publication", "venues/export_public_venues.py": "L1-publication", ".github/workflows/send_mail.yml": "L1-delivery", ".github/workflows/send_mail_watchdog.yml": "L1-delivery", "send_mail.py": "L1-delivery", "guard_git_large_files.py": "L1-platform", "infra/dynamodb-queue.yml": "L1-platform", "infra/github-actions-static-site-deploy-policy.json": "L1-platform", "infra/static-site.yml": "L1-platform", "infra/waf-cloudfront-managed-rules.json": "L1-platform", "operation_safety/__init__.py": "L1-platform", "operation_safety/manual_apply_guards.py": "L1-platform", "master_rdb/master_db.py": "L2-master-schema", "data/public/event_songs_public.json": "L2-public-json", "data/public/events_public.js": "L2-public-json", "data/public/events_public.json": "L2-public-json", "docs/spec/README.md": "L0", ".github/workflows/spec_check.yml": "SPEC-GUIDE", ".github/workflows/spec_index_refresh.yml": "SPEC-GUIDE", "docs/spec/SPEC-GUIDE.md": "SPEC-GUIDE", "scripts/spec_html.py": "SPEC-GUIDE", "scripts/spec_index.py": "SPEC-GUIDE", "tests/test_spec_index.py": "SPEC-GUIDE"}, "titles": {"L0": "盆助 全体地図", "L1-collection": "収集サブシステム", "L1-judgment": "自動判断サブシステム", "L1-review": "人のレビュー運用サブシステム", "L1-master": "マスタ（Master RDB）サブシステム", "L1-publication": "公開サブシステム", "L1-delivery": "配信サブシステム（メール）", "L1-platform": "実行基盤・安全弁", "L2-master-schema": "マスタRDBスキーマ契約", "L2-public-json": "公開JSONのフィールド契約", "SPEC-GUIDE": "仕様書の仕様"}, "invariants": {"L0": [], "L1-collection": ["INV-COL-001", "INV-COL-002", "INV-COL-003", "INV-COL-004"], "L1-judgment": ["INV-JDG-001", "INV-JDG-002"], "L1-review": ["INV-RVW-001", "INV-RVW-002", "INV-RVW-003", "INV-RVW-004"], "L1-master": ["INV-MST-001", "INV-MST-002", "INV-MST-003", "INV-MST-004", "INV-MST-005", "INV-MST-006"], "L1-publication": ["INV-PUB-001", "INV-PUB-002", "INV-PUB-003", "INV-PUB-004", "INV-PUB-005", "INV-PUB-006"], "L1-delivery": ["INV-DLV-001", "INV-DLV-002", "INV-DLV-003"], "L1-platform": ["INV-PLT-001", "INV-PLT-002"], "L2-master-schema": ["INV-SCH-001", "INV-SCH-002", "INV-SCH-003"], "L2-public-json": ["INV-PJS-001", "INV-PJS-002", "INV-PJS-003"], "SPEC-GUIDE": []}};
+const pages = [...document.querySelectorAll('.page')];
+const links = [...document.querySelectorAll('.navlink')];
+
+function show(id) {
+  const target = document.getElementById(id) ? id : pages[0].id;
+  pages.forEach(p => { p.classList.toggle('on', p.id === target); });
+  links.forEach(a => a.classList.toggle('on', a.dataset.target === target));
+  document.querySelector('.main').scrollTo?.({top: 0});
+  window.scrollTo({top: 0, behavior: 'auto'});
+}
+
+function route() {
+  const hash = decodeURIComponent(location.hash.slice(1));
+  if (!hash) return show(pages[0].id);
+  if (document.getElementById(hash) && document.getElementById(hash).classList.contains('page')) {
+    return show(hash);
+  }
+  // 不変条件など、ページ内の見出しを指している場合
+  const el = document.getElementById(hash);
+  if (el) {
+    const page = el.closest('.page');
+    if (page) { show(page.id); el.scrollIntoView({block: 'center'}); }
+    return;
+  }
+  show(pages[0].id);
+}
+window.addEventListener('hashchange', route);
+
+const q = document.getElementById('q');
+const res = document.getElementById('res');
+const files = Object.keys(DATA.file_to_spec);
+
+q.addEventListener('input', () => {
+  const term = q.value.trim().toLowerCase();
+  if (!term) { res.classList.remove('show'); res.innerHTML = ''; return; }
+  const hits = files.filter(f => f.toLowerCase().includes(term)).slice(0, 40);
+  if (!hits.length) {
+    res.innerHTML = '<div class="none">どの仕様も担当していないファイルです。未記述領域なので、ソースを直接読む必要があります。</div>';
+    res.classList.add('show');
+    return;
+  }
+  res.innerHTML = hits.map(f => {
+    const sid = DATA.file_to_spec[f];
+    const invs = (DATA.invariants[sid] || []).join(', ') || '不変条件なし';
+    return `<button data-go="${sid}"><span class="f">${f}</span>` +
+           `<span class="s">${DATA.titles[sid] || sid} ・ ${invs}</span></button>`;
+  }).join('');
+  res.classList.add('show');
+});
+
+res.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-go]');
+  if (!btn) return;
+  location.hash = btn.dataset.go;
+  res.classList.remove('show');
+  q.value = '';
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.search')) res.classList.remove('show');
+});
+
+route();
+</script>
