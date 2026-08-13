@@ -64,3 +64,10 @@ def test_root_owned_file_does_not_capture_same_basename_in_subdirectory(tmp_path
 def test_external_links_and_code_fences_are_not_checked_as_relative_links(tmp_path):
     base(tmp_path); p=tmp_path/'docs/spec/one.md'; p.write_text(p.read_text()+'[site](https://bonsuke.jp)\n```\n[fake](gone.md)\n```')
     assert run(tmp_path, 'check').returncode == 0
+
+def test_staleness_excludes_automated_commit_authors(tmp_path):
+    base(tmp_path); base_commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=tmp_path, text=True).strip()
+    (tmp_path / "app.py").write_text("def changed_by_bot(): pass\n")
+    git(tmp_path, "add", "app.py")
+    git(tmp_path, "commit", "--author=GitHub Action <action@github.com>", "-m", "automated update")
+    assert spec_index.staleness(tmp_path, base_commit, ["app.py"]) == {"commits_since": 0, "files_changed_since": 0}

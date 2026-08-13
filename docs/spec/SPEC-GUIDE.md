@@ -6,13 +6,14 @@ owns:
   - docs/spec/SPEC-GUIDE.md
   - scripts/spec_index.py
   - scripts/spec_html.py
+  - tests/test_spec_index.py
   - .github/workflows/spec_check.yml
   - .github/workflows/spec_index_refresh.yml
 depends_on: []
 invariants: []
 verified_by:
   - tests/test_spec_index.py
-updated_for: 8320170
+updated_for: 1b69359
 ---
 
 # 仕様書の仕様（このフォルダの読み方・書き方）
@@ -84,8 +85,9 @@ updated_for: 6537e7f         # この記述が実態と合っていることを�
 `owns` は排他にする。1つのソースファイルを2つの仕様セクションが `owns` してはいけない。
 どちらを直せばいいのか分からなくなるからだ（`index.json` の生成時に検査して落とす）。
 複数から参照したいだけなら `depends_on` を使う。
-`owns` は人が書くソースを指す。`index.json` や生成HTMLなどの生成物は `owns` しない。
-生成物の更新で鮮度指標が増え、実態の見直し時期を誤って示すためである。
+`owns` は、人が直接変更することがあるソース・成果物を指す。`index.json` や生成HTMLなど、誰も直接編集しない純粋な生成物は `owns` しない。
+一方で公開JSONのように機械も人も変更しうる成果物は、逆引きで不変条件を示す価値があるため `owns` してよい。
+鮮度指標は自動コミットを数えず、人による変更だけを数える。これにより、成果物の自動更新で見直し時期を誤って示さない。
 
 `updated_for` は「この記述を最後に実態と突き合わせたコミット」を書く。
 更新した日付ではなく**コミットハッシュ**にしているのは、そこから `owns` 配下の差分を機械的に数えて、

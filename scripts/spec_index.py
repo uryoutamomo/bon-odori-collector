@@ -14,6 +14,10 @@ REQUIRED = ("id", "layer", "title", "owns", "depends_on", "invariants", "verifie
 INV_HEADING = re.compile(r"^### (INV-[A-Za-z0-9]+-\d+)\s+(.+?)\s*$", re.M)
 TEST_LINE = re.compile(r"^- \*\*守っているテスト\*\*:\s*(.+?)\s*$", re.M)
 MD_LINK = re.compile(r"(?<!\!)\[[^]]+\]\(([^)#]+)(?:#[^)]+)?\)")
+BOT_AUTHORS = {
+    ("GitHub Action", "action@github.com"),
+    ("github-actions[bot]", "41898282+github-actions[bot]@users.noreply.github.com"),
+}
 
 
 def git(root, *args, check=True):
@@ -125,9 +129,16 @@ def validate(root, rows):
 def staleness(root, base, files):
     if not base or subprocess.run(["git", "cat-file", "-e", base + "^{commit}"], cwd=root).returncode:
         return None
-    log = git(root, "log", "--format=%H", base + "..HEAD", "--", *files) if files else ""
-    changed = git(root, "diff", "--name-only", base + "..HEAD", "--", *files).splitlines() if files else []
-    return {"commits_since": len([x for x in log.splitlines() if x]), "files_changed_since": len(set(changed))}
+    log = git(root, "log", "--format=%H%x1f%an%x1f%ae", base + "..HEAD", "--", *files) if files else ""
+    human_commits = []
+    for row in log.splitlines():
+        commit, name, email = row.split("\x1f", 2)
+        if (name, email) not in BOT_AUTHORS:
+            human_commits.append(commit)
+    changed = set()
+    for commit in human_commits:
+        changed.update(git(root, "show", "--format=", "--name-only", commit, "--", *files).splitlines())
+    return {"commits_since": len(human_commits), "files_changed_since": len(changed)}
 
 
 def build(root):
