@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T22:47:35Z",
-  "generated_for_commit": "dae4079",
+  "generated_at": "2026-08-13T22:48:12Z",
+  "generated_for_commit": "2c93cc1",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -665,6 +665,57 @@
         "files_changed_since": 0
       }
     },
+    "L1-glossary": {
+      "layer": "L1",
+      "title": "用語集・別名サブシステム",
+      "owns": [
+        "build_glossary_runtime.py",
+        "build_event_alias_runtime.py",
+        "build_glossary_review_ui.py",
+        "build_glossary_v2_seed_candidates.py",
+        "export_public_glossary.py",
+        "run_manual_glossary_review.py",
+        "run_series_alias_migration.py",
+        "collection_support/merge_glossary_v2_oto_reports.py",
+        "scripts/manual/fill_glossary_readings.py",
+        "docs/local-glossary-manual-operations.md"
+      ],
+      "depends_on": [
+        "L1-judgment",
+        "L1-review",
+        "L1-master",
+        "L1-publication"
+      ],
+      "invariants": [
+        "INV-GLS-001",
+        "INV-GLS-002",
+        "INV-GLS-003"
+      ],
+      "verified_by": [
+        "tests/test_glossary.py",
+        "tests/test_event_alias_runtime.py",
+        "tests/test_series_alias_migration.py",
+        "tests/test_local_glossary_manual_policy.py"
+      ],
+      "updated_for": "83bf7d0",
+      "path": "docs/spec/L1/11-glossary.md",
+      "owned_files": [
+        "build_event_alias_runtime.py",
+        "build_glossary_review_ui.py",
+        "build_glossary_runtime.py",
+        "build_glossary_v2_seed_candidates.py",
+        "collection_support/merge_glossary_v2_oto_reports.py",
+        "docs/local-glossary-manual-operations.md",
+        "export_public_glossary.py",
+        "run_manual_glossary_review.py",
+        "run_series_alias_migration.py",
+        "scripts/manual/fill_glossary_readings.py"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
     "L2-master-schema": {
       "layer": "L2",
       "title": "マスタRDBスキーマ契約",
@@ -1113,6 +1164,35 @@
       ],
       "has_test": true
     },
+    "INV-GLS-001": {
+      "spec": "L1-glossary",
+      "title": "未レビュー・低確度・手動専用の用語を日次runtimeへ入れない",
+      "tests": [
+        "tests/test_glossary.py::GlossaryV2RuntimeTest::test_loads_only_active_auto_apply_v2_rows",
+        "tests/test_glossary.py::GlossaryV2RuntimeTest::test_x_config_merges_runtime_terms_without_duplicates"
+      ],
+      "has_test": true
+    },
+    "INV-GLS-002": {
+      "spec": "L1-glossary",
+      "title": "RDBの別名表が空・欠落しても、既存runtimeを空で上書きしない",
+      "tests": [
+        "tests/test_event_alias_runtime.py::EventAliasRuntimeBuilderTest::test_missing_alias_table_keeps_the_previous_section",
+        "tests/test_event_alias_runtime.py::EventAliasRuntimeBuilderTest::test_empty_alias_table_keeps_the_previous_section",
+        "tests/test_event_alias_runtime.py::EventAliasRuntimeBuilderTest::test_main_keeps_the_existing_file_when_the_rdb_is_absent"
+      ],
+      "has_test": true
+    },
+    "INV-GLS-003": {
+      "spec": "L1-glossary",
+      "title": "系列別名テーブルの移行はdry-run既定で、実行には確認句を要する",
+      "tests": [
+        "tests/test_series_alias_migration.py::SeriesAliasMigrationRunnerTest::test_dry_run_leaves_the_database_untouched",
+        "tests/test_series_alias_migration.py::SeriesAliasMigrationRunnerTest::test_execute_requires_the_confirm_phrase",
+        "tests/test_series_alias_migration.py::SeriesAliasMigrationRunnerTest::test_execute_creates_the_table"
+      ],
+      "has_test": true
+    },
     "INV-SCH-001": {
       "spec": "L2-master-schema",
       "title": "系列内の開催回は年・回数で一意である",
@@ -1434,6 +1514,16 @@
     "triage_blog_venue_candidates.py": "L1-venues",
     "venues/__init__.py": "L1-venues",
     "venues/extract_venues.py": "L1-venues",
+    "build_event_alias_runtime.py": "L1-glossary",
+    "build_glossary_review_ui.py": "L1-glossary",
+    "build_glossary_runtime.py": "L1-glossary",
+    "build_glossary_v2_seed_candidates.py": "L1-glossary",
+    "collection_support/merge_glossary_v2_oto_reports.py": "L1-glossary",
+    "docs/local-glossary-manual-operations.md": "L1-glossary",
+    "export_public_glossary.py": "L1-glossary",
+    "run_manual_glossary_review.py": "L1-glossary",
+    "run_series_alias_migration.py": "L1-glossary",
+    "scripts/manual/fill_glossary_readings.py": "L1-glossary",
     "master_rdb/master_db.py": "L2-master-schema",
     "data/public/event_songs_public.json": "L2-public-json",
     "data/public/events_public.js": "L2-public-json",
@@ -1448,8 +1538,8 @@
   },
   "coverage": {
     "tracked_source_files": 328,
-    "owned": 229,
-    "unowned": 99,
+    "owned": 238,
+    "unowned": 90,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
@@ -1468,9 +1558,9 @@
       "apply_x_roster_decisions.py",
       "archive_event_candidate_backlog.py",
       "build_all_rdb.py",
-      "build_event_alias_runtime.py",
-      "build_glossary_review_ui.py",
-      "build_glossary_runtime.py"
+      "build_historical_reference_shadow_input.py",
+      "build_notion_snapshot_drift_decisions.py",
+      "build_official_social_source_review.py"
     ]
   }
 }
