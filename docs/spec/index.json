@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T12:08:27Z",
-  "generated_for_commit": "e9a598f",
+  "generated_at": "2026-08-13T12:09:31Z",
+  "generated_for_commit": "1d2d00d",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -409,7 +409,7 @@
         "docs/spec/README.md"
       ],
       "staleness": {
-        "commits_since": 3,
+        "commits_since": 1,
         "files_changed_since": 1
       }
     },
@@ -440,8 +440,8 @@
         "tests/test_spec_index.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 4
+        "commits_since": 1,
+        "files_changed_since": 6
       }
     }
   },
