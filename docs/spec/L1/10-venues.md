@@ -9,6 +9,7 @@ owns:
   - extract_venues_blog.py
   - extract_blog_venue_rows.py
   - triage_blog_venue_candidates.py
+  - build_blog_registration_candidates.py
   - build_missing_venue_review_from_song_associations.py
   - apply_reviewed_missing_occurrence_venues.py
   - apply_reviewed_venue_field_fixes.py
@@ -50,6 +51,7 @@ updated_for: 83bf7d0
 | Blogspot 抽出 | 東京盆踊りマップの Atom feed | `data/venues_seed_blog.json` | `refresh_official_source_review.yml` から実行 |
 | Blogspot 行抽出 | 同 feed のHTML表 | `data/blog_venue_rows.json` | 同 workflow から実行 |
 | Blogspot 仕分け | `venues_seed_blog.json`、旧 `data/venue_master.json`、任意の `blog_source_urls.json` | `data/venue_candidate_triage.json` | 同 workflow から実行 |
+| Blogspot 登録候補化 | `venue_candidate_triage.json` と `blog_venue_rows.json` | `data/blog_registration_candidates.json` | 同 workflow から実行 |
 | 曲の会場欠落 | 採用済み会場×曲の apply 結果と根拠 | `accepted_venue_song_missing_venue_review.{json,md}` | `collect.yml` の低優先レーンから実行 |
 | RDB適用 | 人レビュー済み会場候補、Master RDB | venue / alias / occurrence の更新、dry-run/report | 手動の one-off apply |
 | 手動レビュー | ローカル review console の pending venue items | decision API への決定 | 手動 |
@@ -76,13 +78,15 @@ updated_for: 83bf7d0
 - **守っているコード**: `apply_reviewed_missing_occurrence_venues.py` の `ensure_new_venue()`、`build_plan()`、`apply_plan()`。
 - **守っているテスト**: `tests/test_apply_reviewed_missing_occurrence_venues.py::ApplyReviewedMissingOccurrenceVenuesTest::test_creates_reviewed_new_venue_and_fills_occurrence`。
 
-### INV-VEN-002 品川第二地区の会場修正はRDBだけを変え、Notion同期を起こさない
+### INV-VEN-002 会場のRDB one-off適用はNotion同期と公開JSONを書かない
 
-- **内容**: `apply_ph2_shinagawa_second_venue_review.py --apply` は天妙国寺の住所・根拠URL・別名を Master RDB に反映するが、Notion API を呼ばず、`notion_sync_jobs` も作らず、公開JSONも書かない。
-- **なぜ**: この one-off 修正を旧Notion経路へ漏らすと、RDBを正本とする現在の設計に逆向きの書き込みが生じる。公開投影まで同時に変えると、修正対象と公開差分を分けて検証できない。
+- **内容**: `apply_reviewed_missing_occurrence_venues.py`、`apply_reviewed_venue_field_fixes.py`、`apply_ph2_shinagawa_second_venue_review.py` の会場 one-off apply は Master RDB だけを変える。Notion API / `notion_sync_jobs` を使わず、公開JSONも書かない。
+- **なぜ**: 会場修正を旧Notion経路へ漏らすと、RDBを正本とする現在の設計に逆向きの書き込みが生じる。公開投影まで同時に変えると、修正対象と公開差分を分けて検証できず、意図しない公開差分の原因も追えない。
 - **破れたときの症状**: 会場の局所修正後に、意図しないNotion同期ジョブや公開データの差分が発生する。
-- **守っているコード**: `apply_ph2_shinagawa_second_venue_review.py` の `apply_review()` と `run()`。
+- **守っているコード**: 上記3本の apply 経路。前2本は report に `*_no_notion_no_public_json` の mode を残し、Ph2 は `apply_review()` と `run()` でRDBだけを更新する。
 - **守っているテスト**: `tests/test_apply_ph2_shinagawa_second_venue_review.py::ApplyPh2ShinagawaSecondVenueReviewTest::test_apply_is_rdb_only_and_does_not_queue_notion_sync_job`。
+
+このテストが実際に検査しているのは Ph2 の1本だけである。`apply_reviewed_missing_occurrence_venues.py` と `apply_reviewed_venue_field_fixes.py` の「Notion同期なし／公開JSONなし」には、現時点で対応するテストがない。広い約束に見合うテストを追加することは、この仕様追加ではなく別変更として扱う。
 
 会場の「同じものを再利用してよい条件」はこの仕様のINVではない。`report_apply/event_report_helpers.py` の `ensure_venue()` を変える場合は、必ず[INV-MST-007](04-master.md#inv-mst-007-会場は正規化名と住所の完全一致でのみ再利用する)を先に読む。似た名称の部分一致へ広げることは禁じられている。
 
@@ -104,7 +108,9 @@ HTML表の構造が残っていれば `extract_blog_venue_rows.py` は `cLoc`、
 表として取れない場合はテキスト行へフォールバックする。
 このフォールバックは原文の形式変更に耐えるためのものだが、列の意味まで保証するものではない。
 
-この三本は workflow から呼ばれる**生きている経路**である。ただし `triage_blog_venue_candidates.py` が参照する `venue_master.json` の生成元 `sync_venue_master.py` は休眠なので、入力ファイルの鮮度は別途確認が必要である。
+4. `build_blog_registration_candidates.py` は高優先度の `research` 候補を構造化行へ突き合わせ、住所・根拠URL・開催月を含む `blog_registration_candidates.json` にする。`triage_blog_venue_candidates.normalize()` を import しており、前段の仕分けと同じ正規化で重複を抑える。
+
+この四本は workflow から呼ばれる**生きている経路**である。ただし `triage_blog_venue_candidates.py` が参照する `venue_master.json` の生成元 `sync_venue_master.py` は休眠なので、入力ファイルの鮮度は別途確認が必要である。つまり workflow が成功しても、既登録判定に使ったマスタがRDBの現在状態を表す保証はない。
 
 ### 2. 曲の根拠から会場欠落をレビューへ出す（稼働中）
 
@@ -147,7 +153,7 @@ one-off apply は通常の収集・レビュー・公開を置き換えない。
 
 ### 5. 公開用の地理データは別経路である
 
-`scripts/manual/geocode_venues.py` は `data/public/venues_public.json` を国土地理院住所検索へ送り `venues_geo.json` を作る手動ツールである。2026-08-14 の検索ではworkflow・Python importが見つからない。入力パスは `scripts/manual/data/...` を組み立てる実装なので、現状どおりではリポジトリ直下の `data/public/...` を読まない可能性がある。**休眠または要修正の可能性（未確認）**として、公開経路に含めない。
+`scripts/manual/geocode_venues.py` は `data/public/venues_public.json` を国土地理院住所検索へ送り `venues_geo.json` を作る意図の手動ツールである。2026-08-14 の検索ではworkflow・Python importが見つからない。実装は `scripts/manual/data/public/venues_public.json` を組み立てるが、その `scripts/manual/data` ディレクトリは存在しない。したがって**現状では入力ファイルが見つからず動かない**。公開経路に含めず、修正は別変更で扱う。
 
 会場公開の `venues/export_public_venues.py` と、公開JSONの欠落会場後処理 `public_json_postprocessors/review_missing_occurrence_venues.py` は、この仕様の所有物ではない。前者は[公開](05-publication.md)、後者も公開側の責務である。公式サイトを直接監視する `collect_venue_sites.py` は[収集](01-collection.md)、レビュー受信箱アダプタ `review_inbox_adapters/missing_venue_adapter.py` は[レビュー](03-review.md)を読む。
 
@@ -180,7 +186,7 @@ RDBから公開JSONへの投影、公開側の欠落会場レビュー、サイ�
 | Blogspot候補が急に空、または少ない | `refresh_official_source_review.yml` のfeed取得、HTML形式変更、接尾辞抽出 |
 | Blogspot候補の既登録判定が古い | `venue_master.json` は休眠 `sync_venue_master.py` 由来で、鮮度を保証できない |
 | 局所会場修正の後にNotion同期や公開差分が出た | INV-VEN-002。RDB-only one-off の経路から漏れていないか |
-| geocode結果が作られない／入力が読めない | `scripts/manual/geocode_venues.py` の相対パス構築。現行経路として扱わない |
+| geocode結果が作られない／入力が読めない | `scripts/manual/data` が存在しないため、`geocode_venues.py` は現状必ず入力を開けない |
 
 ## 未解決・注意点
 
@@ -189,7 +195,7 @@ RDBから公開JSONへの投影、公開側の欠落会場レビュー、サイ�
 - **Blogspotの抽出と構造化行の二経路は統合されていない。** 前者は候補名中心、後者は住所・日付文を含む。どちらをレビュー入力の正本にするかは未確認である。
 - **`venues/extract_venues.py` は2026-05-31のStep0のまま休眠している。** テストや抽出規則を整えても、workflowへ繋がるまで公開件数は増えない。
 - **RDB適用スクリプトは one-off である。** `apply_reviewed_missing_occurrence_venues.py`、`apply_reviewed_venue_field_fixes.py`、`apply_ph2_shinagawa_second_venue_review.py` を日次へ足すには、レビュー済み入力の由来、dry-run、backup、再検証を含む設計が必要である。
-- **地理座標の生成は未接続の可能性がある。** `geocode_venues.py` の入力相対パスと実際の公開会場データの位置を、再稼働前に検証する。
+- **地理座標の生成は現状壊れている。** `geocode_venues.py` のdocstringはリポジトリ直下の `data/public/venues_public.json` を指すが、実装は存在しない `scripts/manual/data/public/...` を読む。修正と公開経路への接続は別変更で扱う。
 - **会場の同一性をこの仕様に複製しない。** 変更時は必ず INV-MST-007 を確認し、正規化名と住所の完全一致以外での自動再利用を追加しない。
 
 レビュー対象が多いときも、会場名だけで一括acceptしない。
