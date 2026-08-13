@@ -63,6 +63,28 @@ class LedgerDoesNotMuteRosterTest(unittest.TestCase):
         ])
         self.assertEqual(rows["iri2choukai"]["manual_status"], "優先")
 
+    def test_probe_rechecks_machine_muted_accounts_but_never_a_persons_choice(self):
+        """休止のためし読みは、点数で黙らせた相手だけを対象にする。
+
+        台帳の行が休止プールを数百件に膨らませていたあいだは、人が休止に
+        した相手まで順番が回ってこなかった。プールが小さくなると毎回当たる。
+        """
+        accounts = [
+            {"handle": "@byhand", "manual_status": "休止"},
+            {"handle": "@bylowscore", "manual_status": ""},
+        ]
+        scores = {"accounts": {
+            "byhand": {"handle": "@byhand", "usefulness_score": 90},
+            "bylowscore": {"handle": "@bylowscore", "usefulness_score": 1, "status": "muted"},
+        }}
+        with patch.object(collect, "_load_x_account_scores", lambda cfg=None: scores):
+            ranked = collect._rank_whitelist_accounts(
+                accounts, {"account_ranking": {"probe_muted_accounts_per_run": 5}}
+            )
+        handles = {collect._norm_handle(row["handle"]) for row in ranked}
+        self.assertIn("bylowscore", handles)
+        self.assertNotIn("byhand", handles)
+
     def test_a_hand_written_row_without_a_tier_keeps_its_own_status(self):
         """v1 の行は tier を持たない。人が書いた休止はそのまま尊重する。"""
         rows = whitelist_with_ledger([

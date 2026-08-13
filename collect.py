@@ -2116,11 +2116,20 @@ def _rank_whitelist_accounts(accounts, cfg=None):
         -x.get("score", 0),
         x["handle"].lower()
     ))
+    probed = []
     if include_muted_probe:
-        muted.sort(key=lambda x: (-x.get("score", 0), x["handle"].lower()))
-        ranked.extend(muted[:include_muted_probe])
+        # The probe re-checks accounts the scoring muted, in case the score was
+        # wrong.  A person's 休止 is a decision rather than a low score, so it
+        # is never probed: doing so would read someone they told us to stop
+        # reading.  This only became visible once the ledger stopped padding
+        # the muted pool with hundreds of rows.
+        probed = sorted(
+            (row for row in muted if row["reason"] == "muted"),
+            key=lambda x: (-x.get("score", 0), x["handle"].lower()),
+        )[:include_muted_probe]
+        ranked.extend(probed)
 
-    skipped = len(muted) - min(len(muted), include_muted_probe)
+    skipped = len(muted) - len(probed)
     if skipped:
         print(f"[rank] 低スコアのためホワイトリスト収集を休止: {skipped} アカウント")
     print(f"[rank] ホワイトリスト収集対象: {len(ranked)} / 元リスト {len(accounts)}")
