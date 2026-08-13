@@ -3,7 +3,9 @@ id: L1-master
 layer: L1
 title: マスタ（Master RDB）サブシステム
 owns:
-  - master_rdb/**
+  - master_rdb/audit.py
+  - master_rdb/freeze_policy.py
+  - master_rdb/unified_model_audit.py
   - rdb_builders/**
   - report_apply/**
   - event_model/**
