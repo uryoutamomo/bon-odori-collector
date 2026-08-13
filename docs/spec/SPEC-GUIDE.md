@@ -4,6 +4,7 @@ layer: meta
 title: 仕様書の仕様
 owns:
   - docs/spec/SPEC-GUIDE.md
+  - docs/spec/site/index.html
   - scripts/spec_index.py
   - scripts/spec_html.py
   - .github/workflows/spec_check.yml
