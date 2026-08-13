@@ -5,13 +5,14 @@ title: 仕様書の仕様
 owns:
   - docs/spec/SPEC-GUIDE.md
   - scripts/spec_index.py
+  - scripts/spec_html.py
   - .github/workflows/spec_check.yml
   - .github/workflows/spec_index_refresh.yml
 depends_on: []
 invariants: []
 verified_by:
   - tests/test_spec_index.py
-updated_for: 6537e7f
+updated_for: 8320170
 ---
 
 # 仕様書の仕様（このフォルダの読み方・書き方）
@@ -189,8 +190,9 @@ L1 の本文は次の見出しを必ずこの順で持つ。順番を揃える�
 
 ### 2-b. main へ push されたとき — 索引を作り直す（自動）
 
-`index.json` を再生成して自動コミットする。鮮度指標（`updated_for` からの差分）はこのとき更新される。
+`index.json` と、閲覧用の `docs/spec/site/index.html` を再生成して自動コミットする。鮮度指標（`updated_for` からの差分）はこのとき更新される。
 再生成を main 側に寄せるのは、PRごとに索引が競合して無駄な衝突が起きるのを避けるため。
+HTMLは `scripts/spec_html.py` が索引とMarkdownから生成する。手書きで直してはいけない。
 
 ### 3. 本番リリース（公開サイトへの反映）のとき — 稼働している姿を刻む（自動）
 

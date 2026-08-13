@@ -13,8 +13,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python scripts/spec_index.py build --out docs/spec/index.json
-      - name: Commit refreshed index
+      - run: python scripts/spec_html.py --out docs/spec/site/index.html
+      - name: Commit refreshed specification views
         run: |
-          git add docs/spec/index.json
+          git add docs/spec/index.json docs/spec/site/index.html
           python guard_git_large_files.py
-          git diff --cached --quiet || (git config user.name github-actions[bot] && git config user.email 41898282+github-actions[bot]@users.noreply.github.com && git commit -m "Refresh specification index" && git push)
+          git diff --cached --quiet || (git config user.name github-actions[bot] && git config user.email 41898282+github-actions[bot]@users.noreply.github.com && git commit -m "Refresh specification views" && git push)
