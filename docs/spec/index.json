@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T22:46:17Z",
-  "generated_for_commit": "a855a9a",
+  "generated_at": "2026-08-13T22:47:35Z",
+  "generated_for_commit": "dae4079",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -609,6 +609,62 @@
         "files_changed_since": 0
       }
     },
+    "L1-venues": {
+      "layer": "L1",
+      "title": "会場サブシステム",
+      "owns": [
+        "venues/__init__.py",
+        "venues/extract_venues.py",
+        "sync_venue_master.py",
+        "extract_venues_blog.py",
+        "extract_blog_venue_rows.py",
+        "triage_blog_venue_candidates.py",
+        "build_blog_registration_candidates.py",
+        "build_missing_venue_review_from_song_associations.py",
+        "apply_reviewed_missing_occurrence_venues.py",
+        "apply_reviewed_venue_field_fixes.py",
+        "apply_retrospective_ready_venue_events.py",
+        "apply_ph2_shinagawa_second_venue_review.py",
+        "scripts/manual/review_venue_batch.py",
+        "scripts/manual/geocode_venues.py"
+      ],
+      "depends_on": [
+        "L1-collection",
+        "L1-review",
+        "L1-master",
+        "L1-publication"
+      ],
+      "invariants": [
+        "INV-VEN-001",
+        "INV-VEN-002"
+      ],
+      "verified_by": [
+        "tests/test_apply_reviewed_missing_occurrence_venues.py",
+        "tests/test_apply_ph2_shinagawa_second_venue_review.py"
+      ],
+      "updated_for": "83bf7d0",
+      "path": "docs/spec/L1/10-venues.md",
+      "owned_files": [
+        "apply_ph2_shinagawa_second_venue_review.py",
+        "apply_retrospective_ready_venue_events.py",
+        "apply_reviewed_missing_occurrence_venues.py",
+        "apply_reviewed_venue_field_fixes.py",
+        "build_blog_registration_candidates.py",
+        "build_missing_venue_review_from_song_associations.py",
+        "extract_blog_venue_rows.py",
+        "extract_venues_blog.py",
+        "scripts/manual/geocode_venues.py",
+        "scripts/manual/review_venue_batch.py",
+        "sync_venue_master.py",
+        "triage_blog_venue_candidates.py",
+        "venues/__init__.py",
+        "venues/extract_venues.py"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
     "L2-master-schema": {
       "layer": "L2",
       "title": "マスタRDBスキーマ契約",
@@ -1041,6 +1097,22 @@
       ],
       "has_test": true
     },
+    "INV-VEN-001": {
+      "spec": "L1-venues",
+      "title": "レビュー済みの新規会場は開催回と系列へ一貫して結ぶ",
+      "tests": [
+        "tests/test_apply_reviewed_missing_occurrence_venues.py::ApplyReviewedMissingOccurrenceVenuesTest::test_creates_reviewed_new_venue_and_fills_occurrence"
+      ],
+      "has_test": true
+    },
+    "INV-VEN-002": {
+      "spec": "L1-venues",
+      "title": "会場のRDB one-off適用はNotion同期と公開JSONを書かない",
+      "tests": [
+        "tests/test_apply_ph2_shinagawa_second_venue_review.py::ApplyPh2ShinagawaSecondVenueReviewTest::test_apply_is_rdb_only_and_does_not_queue_notion_sync_job"
+      ],
+      "has_test": true
+    },
     "INV-SCH-001": {
       "spec": "L2-master-schema",
       "title": "系列内の開催回は年・回数で一意である",
@@ -1348,6 +1420,20 @@
     "youtube_channels/backfill_youtube_descriptions.py": "L1-youtube",
     "youtube_channels/discover_youtube_channels.py": "L1-youtube",
     "youtube_channels/extract_youtube_setlists.py": "L1-youtube",
+    "apply_ph2_shinagawa_second_venue_review.py": "L1-venues",
+    "apply_retrospective_ready_venue_events.py": "L1-venues",
+    "apply_reviewed_missing_occurrence_venues.py": "L1-venues",
+    "apply_reviewed_venue_field_fixes.py": "L1-venues",
+    "build_blog_registration_candidates.py": "L1-venues",
+    "build_missing_venue_review_from_song_associations.py": "L1-venues",
+    "extract_blog_venue_rows.py": "L1-venues",
+    "extract_venues_blog.py": "L1-venues",
+    "scripts/manual/geocode_venues.py": "L1-venues",
+    "scripts/manual/review_venue_batch.py": "L1-venues",
+    "sync_venue_master.py": "L1-venues",
+    "triage_blog_venue_candidates.py": "L1-venues",
+    "venues/__init__.py": "L1-venues",
+    "venues/extract_venues.py": "L1-venues",
     "master_rdb/master_db.py": "L2-master-schema",
     "data/public/event_songs_public.json": "L2-public-json",
     "data/public/events_public.js": "L2-public-json",
@@ -1362,29 +1448,29 @@
   },
   "coverage": {
     "tracked_source_files": 328,
-    "owned": 215,
-    "unowned": 113,
+    "owned": 229,
+    "unowned": 99,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
       "apply_official_source_review_decisions.py",
-      "apply_ph2_shinagawa_second_venue_review.py",
       "apply_poster_ocr_decisions.py",
       "apply_pre_cutover_p0_historical_references.py",
       "apply_predicted_occurrence_source_rechecks.py",
       "apply_public_event_name_cleanup.py",
       "apply_public_official_source_urls.py",
-      "apply_retrospective_ready_venue_events.py",
       "apply_reviewed_historical_references.py",
-      "apply_reviewed_missing_occurrence_venues.py",
       "apply_reviewed_missing_source_urls.py",
       "apply_reviewed_official_wait_events.py",
       "apply_reviewed_shinagawa_date_fills.py",
-      "apply_reviewed_venue_field_fixes.py",
       "apply_series_source_url_inheritance.py",
       "apply_weekly_harvest_human13_decisions.py",
       "apply_x_roster_decisions.py",
-      "archive_event_candidate_backlog.py"
+      "archive_event_candidate_backlog.py",
+      "build_all_rdb.py",
+      "build_event_alias_runtime.py",
+      "build_glossary_review_ui.py",
+      "build_glossary_runtime.py"
     ]
   }
 }
