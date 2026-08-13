@@ -33,7 +33,11 @@ from collection_support.event_evidence import (
     classify_event_evidence,
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
-from collection_support.x_source_registry import load_events_from_master_db, registry_candidates
+from collection_support.x_source_registry import (
+    REJECTED,
+    load_events_from_master_db,
+    registry_candidates,
+)
 from collection_support.x_author_profile import PROBE as X_PROFILE_PROBE, author_profile_description
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
@@ -1869,21 +1873,43 @@ def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sql
             payload = json.load(f)
     except Exception:
         payload = {"accounts": []}
+    today = datetime.now(timezone.utc).date().isoformat()
     existing = {_norm_handle(row.get("handle")): row for row in payload.get("accounts", []) if isinstance(row, dict)}
+    rejected = 0
     for row in candidates:
-        prior = existing.get(_norm_handle(row.get("handle")))
+        key = _norm_handle(row.get("handle"))
+        prior = existing.get(key)
+        # A person already ruled this account out.  Re-deriving it would put it
+        # back in the review queue tomorrow, which is exactly what recording
+        # the decision is meant to prevent.
+        if prior and prior.get("tier") == REJECTED:
+            rejected += 1
+            continue
         # The pre-v2 registry was manually curated and had no decided_by.
         # Only a row explicitly produced by this machine may be replaced.
         if not (prior and prior.get("decided_by") != "machine"):
-            existing[_norm_handle(row.get("handle"))] = {**(prior or {}), **row}
+            merged = {**(prior or {}), **row}
+            # Keep the date the account first needed a person, so a queue that
+            # nobody works through shows its age instead of looking fresh.
+            if merged.get("tier") == "pending_review":
+                merged["pending_since"] = (prior or {}).get("pending_since") or today
+            else:
+                merged.pop("pending_since", None)
+            existing[key] = merged
     payload.update({
         "accounts": [existing[key] for key in sorted(existing)],
-        "updated_at": datetime.now(timezone.utc).date().isoformat(),
+        "updated_at": today,
         "updated_by": "machine:x_source_registry_v2",
     })
     with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+    pending = [row for row in existing.values() if row.get("tier") == "pending_review"]
+    fresh = sum(1 for row in pending if row.get("pending_since") == today)
     print(f"[official-registry] linked source candidates: {len(candidates)}")
+    print(
+        f"[official-registry] 要確認 {len(pending)}件（本日新規 {fresh}件 / 継続 {len(pending) - fresh}件）"
+        f" / 人が対象外と決めたので再提示しなかった {rejected}件"
+    )
     return candidates
 
 

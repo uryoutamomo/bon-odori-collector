@@ -13,6 +13,12 @@ import re
 from collection_support.tokyo23_scope import is_outside_tokyo_23_scope
 from collection_support.x_official_source_accounts import norm_handle
 
+# A person's "this account is not an official source" decision.  It lives in
+# this registry rather than in data/x_roster_exclusions.json because the two
+# answer different questions: an account can be a poor official source and
+# still be a bonodorer worth reading.
+REJECTED = "rejected"
+
 BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|納涼|民踊|音頭|やぐら|櫓", re.I)
 ORG_RE = re.compile(r"町会|自治会|商店(?:街|会)|振興組合|実行委員|保存会|神社|寺|観光協会|商工会|連合会|奉賛会|睦|八幡|氷川|稲荷|区議|都議|議員|区役所")
 STRONG_ORG_RE = re.compile(r"町会|自治会|商店(?:街|会)|振興組合|実行委員|保存会|観光協会|商工会|連合会|奉賛会|区議|都議|議員|区役所")
@@ -53,6 +59,13 @@ def classify_link_confidence(voices):
 def tier_for_account(account, today=None):
     """Apply the ordered active/dormant lifecycle without overriding users."""
     today = today or date.today()
+    # A rejection is only ever written by a person, so it holds even when the
+    # row carries no ``decided_by``.  Requiring the marker is what demoted the
+    # hand-registered @iri2choukai row once already, and a rejection that the
+    # daily run can undo would put the same account back in front of the
+    # reviewer tomorrow -- the whole point of recording it is that it does not.
+    if account.get("tier") == REJECTED:
+        return REJECTED
     if account.get("decided_by") == "user" and account.get("tier"):
         return account["tier"]
     linked = account.get("linked_events") or []
