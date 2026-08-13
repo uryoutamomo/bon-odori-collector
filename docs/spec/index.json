@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-08-13T03:55:58Z",
+  "generated_for_commit": "f6a53ed",
+  "specs": {
+    "L1-publication": {
+      "layer": "L1",
+      "title": "公開サブシステム",
+      "owns": [
+        "export_public_events.py",
+        "public_json_postprocessors/**",
+        "public_export_support/**",
+        "guard_site_public_event_additions.py",
+        "venues/export_public_venues.py"
+      ],
+      "depends_on": [],
+      "invariants": [
+        "INV-PUB-001",
+        "INV-PUB-002",
+        "INV-PUB-003",
+        "INV-PUB-004",
+        "INV-PUB-005",
+        "INV-PUB-006"
+      ],
+      "verified_by": [
+        "tests/test_export_public_events.py",
+        "tests/test_guard_public_events_sync.py",
+        "tests/test_public_event_site_addition_tools.py",
+        "tests/test_classify_public_events_diff.py"
+      ],
+      "updated_for": "6537e7f",
+      "path": "docs/spec/L1/05-publication.md",
+      "owned_files": [
+        "export_public_events.py",
+        "guard_site_public_event_additions.py",
+        "public_export_support/__init__.py",
+        "public_export_support/build_public_historical_reference_change_requests.py",
+        "public_export_support/build_publication_gap_review.py",
+        "public_export_support/score_event_recurrence.py",
+        "public_json_postprocessors/__init__.py",
+        "public_json_postprocessors/apply_public_date_predictions.py",
+        "public_json_postprocessors/apply_public_display_tiers.py",
+        "public_json_postprocessors/apply_public_historical_references.py",
+        "public_json_postprocessors/apply_public_season_hints.py",
+        "public_json_postprocessors/classify_public_events_diff.py",
+        "public_json_postprocessors/compare_event_state_axes.py",
+        "public_json_postprocessors/compare_public_projection_sources.py",
+        "public_json_postprocessors/guard_public_events_sync.py",
+        "public_json_postprocessors/review_missing_occurrence_venues.py",
+        "venues/export_public_venues.py"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
+    "L0": {
+      "layer": "L0",
+      "title": "盆助 全体地図",
+      "owns": [
+        "docs/spec/README.md"
+      ],
+      "depends_on": [],
+      "invariants": [],
+      "verified_by": [],
+      "updated_for": "6537e7f",
+      "path": "docs/spec/README.md",
+      "owned_files": [
+        "docs/spec/README.md"
+      ],
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 1
+      }
+    },
+    "SPEC-GUIDE": {
+      "layer": "meta",
+      "title": "仕様書の仕様",
+      "owns": [
+        "docs/spec/SPEC-GUIDE.md",
+        "scripts/spec_index.py",
+        ".github/workflows/spec_check.yml",
+        ".github/workflows/spec_index_refresh.yml"
+      ],
+      "depends_on": [],
+      "invariants": [],
+      "verified_by": [
+        "tests/test_spec_index.py"
+      ],
+      "updated_for": "6537e7f",
+      "path": "docs/spec/SPEC-GUIDE.md",
+      "owned_files": [
+        ".github/workflows/spec_check.yml",
+        ".github/workflows/spec_index_refresh.yml",
+        "docs/spec/SPEC-GUIDE.md",
+        "scripts/spec_index.py"
+      ],
+      "staleness": {
+        "commits_since": 5,
+        "files_changed_since": 4
+      }
+    }
+  },
+  "invariants": {
+    "INV-PUB-001": {
+      "spec": "L1-publication",
+      "title": "公開イベントの同一性は「名前 + 会場」で決まる",
+      "tests": [
+        "tests/test_guard_public_events_sync.py::test_exact_key_replacement_preserves_event_count_and_resolves_keys"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-002": {
+      "spec": "L1-publication",
+      "title": "既存の公開イベントを消す・書き換えるのは、承認済みの名前と一致するときだけ",
+      "tests": [
+        "tests/test_public_event_site_addition_tools.py::test_existing_event_field_modification_blocks"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-003": {
+      "spec": "L1-publication",
+      "title": "collector と site で件数とキー集合が一致しないと、一括同期しない",
+      "tests": [
+        "tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-004": {
+      "spec": "L1-publication",
+      "title": "ガードが pass してもデプロイ承認にはならない",
+      "tests": [
+        "tests/test_guard_public_events_sync.py::test_pass_still_requires_separate_public_deploy_approval"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-005": {
+      "spec": "L1-publication",
+      "title": "公開の「今日」は必ず外から与える。既定値に落ちない",
+      "tests": [
+        "tests/test_export_public_events.py::test_public_export_today_rejects_missing_context"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-006": {
+      "spec": "L1-publication",
+      "title": "日付予測をJSONフォールバックで補ったら、成功させずに落とす",
+      "tests": [
+        "tests/test_export_public_events.py::test_json_prediction_fallback_is_a_hard_failure"
+      ],
+      "has_test": true
+    }
+  },
+  "file_to_spec": {
+    "export_public_events.py": "L1-publication",
+    "guard_site_public_event_additions.py": "L1-publication",
+    "public_export_support/__init__.py": "L1-publication",
+    "public_export_support/build_public_historical_reference_change_requests.py": "L1-publication",
+    "public_export_support/build_publication_gap_review.py": "L1-publication",
+    "public_export_support/score_event_recurrence.py": "L1-publication",
+    "public_json_postprocessors/__init__.py": "L1-publication",
+    "public_json_postprocessors/apply_public_date_predictions.py": "L1-publication",
+    "public_json_postprocessors/apply_public_display_tiers.py": "L1-publication",
+    "public_json_postprocessors/apply_public_historical_references.py": "L1-publication",
+    "public_json_postprocessors/apply_public_season_hints.py": "L1-publication",
+    "public_json_postprocessors/classify_public_events_diff.py": "L1-publication",
+    "public_json_postprocessors/compare_event_state_axes.py": "L1-publication",
+    "public_json_postprocessors/compare_public_projection_sources.py": "L1-publication",
+    "public_json_postprocessors/guard_public_events_sync.py": "L1-publication",
+    "public_json_postprocessors/review_missing_occurrence_venues.py": "L1-publication",
+    "venues/export_public_venues.py": "L1-publication",
+    "docs/spec/README.md": "L0",
+    ".github/workflows/spec_check.yml": "SPEC-GUIDE",
+    ".github/workflows/spec_index_refresh.yml": "SPEC-GUIDE",
+    "docs/spec/SPEC-GUIDE.md": "SPEC-GUIDE",
+    "scripts/spec_index.py": "SPEC-GUIDE"
+  },
+  "coverage": {
+    "tracked_source_files": 327,
+    "owned": 18,
+    "unowned": 309,
+    "unowned_samples": [
+      "apply_curated_youtube_aliases.py",
+      "apply_notion_drift_public_intro.py",
+      "apply_notion_drift_source_url_resolutions.py",
+      "apply_official_source_review_decisions.py",
+      "apply_ph2_shinagawa_second_venue_review.py",
+      "apply_poster_ocr_decisions.py",
+      "apply_pre_cutover_p0_historical_references.py",
+      "apply_predicted_occurrence_source_rechecks.py",
+      "apply_public_event_name_cleanup.py",
+      "apply_public_official_source_urls.py",
+      "apply_retrospective_ready_venue_events.py",
+      "apply_reviewed_historical_references.py",
+      "apply_reviewed_missing_occurrence_venues.py",
+      "apply_reviewed_missing_source_urls.py",
+      "apply_reviewed_official_wait_events.py",
+      "apply_reviewed_shinagawa_date_fills.py",
+      "apply_reviewed_venue_field_fixes.py",
+      "apply_series_source_url_inheritance.py",
+      "apply_song_candidate_finite_actions.py",
+      "apply_song_content_research_batch.py"
+    ]
+  }
+}
