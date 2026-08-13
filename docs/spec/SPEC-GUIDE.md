@@ -4,7 +4,6 @@ layer: meta
 title: 仕様書の仕様
 owns:
   - docs/spec/SPEC-GUIDE.md
-  - docs/spec/site/index.html
   - scripts/spec_index.py
   - scripts/spec_html.py
   - .github/workflows/spec_check.yml
@@ -85,6 +84,8 @@ updated_for: 6537e7f         # この記述が実態と合っていることを�
 `owns` は排他にする。1つのソースファイルを2つの仕様セクションが `owns` してはいけない。
 どちらを直せばいいのか分からなくなるからだ（`index.json` の生成時に検査して落とす）。
 複数から参照したいだけなら `depends_on` を使う。
+`owns` は人が書くソースを指す。`index.json` や生成HTMLなどの生成物は `owns` しない。
+生成物の更新で鮮度指標が増え、実態の見直し時期を誤って示すためである。
 
 `updated_for` は「この記述を最後に実態と突き合わせたコミット」を書く。
 更新した日付ではなく**コミットハッシュ**にしているのは、そこから `owns` 配下の差分を機械的に数えて、
