@@ -12,6 +12,8 @@ owns:
   - collection_support/x_author_profile.py
   - collection_support/x_official_source_accounts.py
   - collection_support/voices_s3_artifact.py
+  - collect_venue_sites.py
+  - venue_sites.json
 depends_on: []
 invariants:
   - INV-COL-001
@@ -34,7 +36,7 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 
 ## 入力と出力
 
-入力は各サービスの取得結果、既読URL、X設定、予算状態である。出力は `data/voices.json`、生X投稿のアーカイブ、収集状態・コスト台帳、および候補キューである。
+入力は各サービスの取得結果、既読URL、X設定、予算状態、および会場公式サイトの監視設定（`venue_sites.json`）である。出力は `data/voices.json`、`data/latest.json`、生X投稿のアーカイブ、収集状態・コスト台帳、および候補キューである。
 
 ## 不変条件
 
@@ -74,7 +76,11 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 
 1. `collect.py` がRSS・動画・Xを取得し、既読情報と照合する。
 2. Xは生投稿をアーカイブしてから、候補・声・収集状態へ分ける。
-3. コストと健全性を記録し、候補は判断工程へ渡す。
+3. `collect_venue_sites.py` が会場公式サイトを直接見に行き、`venue_sites.json` に登録されたRSS/HTMLから
+   お知らせを取る。ニュースメディア経由では拾えない告知がここでしか取れないためで、
+   取れたものは `source: "official_venue"` / `confirmed: true` を付けて `latest.json` へ合流する。
+   1サイトの失敗が他サイトを止めない作りにしてある。
+4. コストと健全性を記録し、候補は判断工程へ渡す。
 
 ## 依存と影響
 

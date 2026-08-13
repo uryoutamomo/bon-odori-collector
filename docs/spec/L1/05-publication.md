@@ -8,7 +8,8 @@ owns:
   - public_export_support/**
   - guard_site_public_event_additions.py
   - venues/export_public_venues.py
-depends_on: []
+depends_on:
+  - L1-master
 invariants:
   - INV-PUB-001
   - INV-PUB-002
@@ -26,8 +27,7 @@ updated_for: 6537e7f
 
 # 公開サブシステム
 
-> 上位は [全体地図](../README.md)。書き方の決まりは [SPEC-GUIDE](../SPEC-GUIDE.md)。
-> `depends_on` が空なのは、上流にあたるマスタのL1がまだ未執筆のため。書けたら繋ぐ。
+> 上位は [全体地図](../README.md)。上流は[マスタ](04-master.md)。書き方の決まりは [SPEC-GUIDE](../SPEC-GUIDE.md)。
 
 ## この工程は何のためにあるか
 
@@ -161,7 +161,12 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 日次では取得→監査→書き出しの順に並んでいるが、**RDBが更新されていないこと自体はこの工程では検出できない**。
 
 **下流**: `bon-odori-site` リポジトリ。公開JSONの形を変えると、あちらの表示側が壊れる。
-公開JSONのフィールド構成は事実上の外部契約になっている（L2として切り出すべきだが未執筆）。
+公開JSONのフィールド構成は事実上の外部契約なので、[公開JSONのフィールド契約](../L2/public-json.md)へ切り出してある。
+
+**曲目まわりだけ、約束の置き場所がここではない。** `export_public_events.py` はこの仕様が `owns` しているが、
+その中の `merge_song_occurrence_hints()` と `_song_from_rdb()`（曲の抑制・重複整理・根拠ラベル）が守っているのは
+[曲目サブシステム](08-songs.md)の INV-SNG-001 と INV-SNG-002 である。曲は収集から公開まで縦に貫くドメインなので、
+約束をそちらへ集めてある。**この2つの関数を触るときは、逆引きに出てこなくても 08-songs を開くこと。**
 
 ## 壊れたときの症状
 
