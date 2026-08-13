@@ -1,14 +1,14 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-12T20:42:13.593585+00:00",
+  "generated_at": "2026-08-13T20:41:03.500529+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 53,
+  "selected_rows": 50,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 41,
-  "estimated_search_calls": 106,
-  "candidates_before": 580,
+  "remaining_rows_after": 44,
+  "estimated_search_calls": 100,
+  "candidates_before": 581,
   "selected": [
     {
       "queue_id": "youtube-year-backfill:2bb32005a3f74bc3",
@@ -236,6 +236,36 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:cc538ba4c649ec02",
+      "target_year": 2024,
+      "priority_score": 0,
+      "priority": "low",
+      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "series_key": "672eeba3240a",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-05-31",
+      "public_date_end": "2025-06-01",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-05-31",
+        "2025-06-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.46,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [],
+      "search_queries": [
+        "GMOシブヤエンタメ祭 × JAME盆踊り 宮下公園 渋谷区 2024 盆踊り",
+        "GMOシブヤエンタメ祭 × JAME盆踊り 2024 YouTube 盆踊り",
+        "宮下公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:ce6e8b57634e97ed",
       "target_year": 2023,
       "priority_score": 15,
@@ -264,36 +294,6 @@
         "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2023 盆踊り",
         "第34回ふるさと千川 まつり 2023 YouTube 盆踊り",
         "ふるさと千川ひろば(千川小学校校庭跡地) 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:cc538ba4c649ec02",
-      "target_year": 2024,
-      "priority_score": 0,
-      "priority": "low",
-      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
-      "venue": "宮下公園",
-      "area": "渋谷区",
-      "series_key": "672eeba3240a",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-05-31",
-      "public_date_end": "2025-06-01",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-05-31",
-        "2025-06-01"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.46,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [],
-      "search_queries": [
-        "GMOシブヤエンタメ祭 × JAME盆踊り 宮下公園 渋谷区 2024 盆踊り",
-        "GMOシブヤエンタメ祭 × JAME盆踊り 2024 YouTube 盆踊り",
-        "宮下公園 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -1593,102 +1593,9 @@
         "清水川橋公園 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:3e266855f01bbc54",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "砧町町会「納涼夏祭り大会」",
-      "venue": "三峰公園",
-      "area": "世田谷区",
-      "series_key": "01028eb70f59",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-19",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "砧町町会「納涼夏祭り大会」 三峰公園 世田谷区 2024 盆踊り",
-        "砧町町会「納涼夏祭り大会」 2024 YouTube 盆踊り",
-        "三峰公園 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:5bb0e328527d5408",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷四丁目町会 盆踊り大会",
-      "venue": "西仲天祖神社",
-      "area": "大田区",
-      "series_key": "ccf1a2f8f2bb",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-21",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-21"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2024 盆踊り",
-        "西糀谷四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
-        "西仲天祖神社 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:e281db4d7322a660",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "玉川町会盆おどり大会",
-      "venue": "二子玉川西地区ふれあい広場(246高架下)",
-      "area": "世田谷区",
-      "series_key": "5544ac3c9cfb",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-25",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-25"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "玉川町会盆おどり大会 二子玉川西地区ふれあい広場(246高架下) 世田谷区 2024 盆踊り",
-        "玉川町会盆おどり大会 2024 YouTube 盆踊り",
-        "二子玉川西地区ふれあい広場(246高架下) 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 52,
+  "completed_batches": 49,
   "batches": [
     {
       "batch": 1,
@@ -1703,7 +1610,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1720,7 +1627,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1737,7 +1644,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1754,7 +1661,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1771,7 +1678,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1788,7 +1695,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1805,7 +1712,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 580,
+      "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1814,12 +1721,12 @@
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:ce6e8b57634e97ed"
+        "youtube-year-backfill:cc538ba4c649ec02"
       ],
       "fresh_summary": {
-        "candidate_count": 2,
+        "candidate_count": 1,
         "status_counts": {
-          "weak": 2
+          "weak": 1
         },
         "strong_count": 0,
         "review_count": 0
@@ -1833,12 +1740,12 @@
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:cc538ba4c649ec02"
+        "youtube-year-backfill:ce6e8b57634e97ed"
       ],
       "fresh_summary": {
-        "candidate_count": 1,
+        "candidate_count": 2,
         "status_counts": {
-          "weak": 1
+          "weak": 2
         },
         "strong_count": 0,
         "review_count": 0
@@ -2540,59 +2447,6 @@
       "candidate_count": 581,
       "strong_count": 183,
       "review_count": 48
-    },
-    {
-      "batch": 50,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:b1a933f8eb9d1f5f"
-      ],
-      "fresh_summary": {
-        "candidate_count": 1,
-        "status_counts": {
-          "weak": 1
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 581,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 51,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:3e266855f01bbc54"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 581,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 52,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:5bb0e328527d5408"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 581,
-      "strong_count": 183,
-      "review_count": 48
     }
   ],
   "error": "HTTP Error 429: Too Many Requests (rateLimitExceeded)",
@@ -2622,5 +2476,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-13 youtube_candidates=581 review=48 history_rows=48"
+  "ops_metrics": "ops metrics: date=2026-08-14 youtube_candidates=581 review=48 history_rows=49"
 }
