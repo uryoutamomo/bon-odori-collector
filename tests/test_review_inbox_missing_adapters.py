@@ -101,14 +101,15 @@ class ReviewInboxMissingAdaptersTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unsupported missing source URL action"):
             adapt_source_payload(MissingSourceUrlAdapter(), source_payload)
 
-        venue_payload = json.loads(VENUE_INPUT.read_text(encoding="utf-8"))
-        venue_payload["review"][0]["review_action"] = "update_venue"
+        venue_payload = {"review": [{"occurrence_id": "venue_one", "event_name": "Venue", "review_action": "update_venue"}]}
         with self.assertRaisesRegex(ValueError, "unsupported missing venue action"):
             adapt_source_payload(MissingVenueAdapter(), venue_payload)
 
     def test_duplicate_occurrence_ids_fail_stable_id_validation(self):
-        payload = json.loads(VENUE_INPUT.read_text(encoding="utf-8"))
-        payload["review"].append(dict(payload["review"][0]))
+        payload = {"review": [
+            {"occurrence_id": "duplicate", "event_name": "One", "review_action": "manual_venue_research_required"},
+            {"occurrence_id": "duplicate", "event_name": "Two", "review_action": "manual_venue_research_required"},
+        ]}
         with self.assertRaisesRegex(ValueError, "duplicate stable ids"):
             adapt_source_payload(MissingVenueAdapter(), payload)
 
