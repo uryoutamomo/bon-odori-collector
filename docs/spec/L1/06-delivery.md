@@ -12,7 +12,8 @@ invariants:
   - INV-DLV-001
   - INV-DLV-002
   - INV-DLV-003
-verified_by: []
+verified_by:
+  - tests/test_send_mail_delivery_guards.py
 updated_for: 6537e7f
 ---
 
@@ -61,7 +62,7 @@ RDBが壊れても直せるし、公開JSONが変でも作り直せる。だが�
   起動のたびに何かを送ろうとすることになる。
 - **破れたときの症状**: 空メールが届く。あるいは起動のたびに失敗通知が出る。
 - **守っているコード**: `send_mail.py` の `main()`
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_send_mail_delivery_guards.py::SendMailDraftPresenceTest::test_missing_pending_file_returns_zero_without_sending`
 
 ### INV-DLV-002 送れないときは、黙って成功にせず、本文を残して失敗させる
 
@@ -72,7 +73,11 @@ RDBが壊れても直せるし、公開JSONが変でも作り直せる。だが�
   誰も送られなかったことに気づけない。**メールが来ないことは、気づきにくい形の障害である。**
 - **破れたときの症状**: メールが来ないのに、workflowは緑のまま。本文も失われる。
 - **守っているコード**: `send_mail.py` の `main()`（設定不足・本文空で `return 1`）
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_send_mail_delivery_guards.py::SendMailFailureKeepsDraftTest::test_missing_credentials_returns_nonzero_and_keeps_draft`、
+  `tests/test_send_mail_delivery_guards.py::SendMailFailureKeepsDraftTest::test_empty_body_returns_nonzero_and_keeps_draft`、
+  `tests/test_send_mail_delivery_guards.py::SendMailFailureKeepsDraftTest::test_smtp_failure_does_not_become_success_and_keeps_draft`。
+  いずれも「非ゼロで終わること」と「`pending_mail.json` が残っていること」の両方を見る。
+  片方だけだと、本文が消える壊れ方を見逃す。
 
 ### INV-DLV-003 送信に成功したときだけ本文を消し、それをもって二重送信を防ぐ
 
@@ -86,7 +91,13 @@ RDBが壊れても直せるし、公開JSONが変でも作り直せる。だが�
 - **破れたときの症状**: 同じメールが複数回届く。または障害後に再送されない。
 - **守っているコード**: `.github/workflows/send_mail.yml` の削除ステップ、
   `.github/workflows/send_mail_watchdog.yml`
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_send_mail_delivery_guards.py::SendMailWorkflowRemovalOrderTest::test_removal_step_does_not_run_when_send_fails`、
+  `tests/test_send_mail_delivery_guards.py::SendMailWorkflowRemovalOrderTest::test_workflow_sends_before_removing_the_draft`、
+  `tests/test_send_mail_delivery_guards.py::SendMailWorkflowRemovalOrderTest::test_send_step_failure_is_not_swallowed`、
+  `tests/test_send_mail_delivery_guards.py::SendMailWatchdogTest::test_watchdog_retriggers_the_send_workflow`。
+  削除は workflow 側で起きるため、テストは `send_mail.yml` を YAML として読んで構造を見る。
+  **`if: always()` を1行足すだけで、送れなかった本文が消える壊れ方になる**ので、
+  順序だけでなく「失敗時にも走る書き方になっていないこと」まで検査している。
 
 ## 主要な流れ
 

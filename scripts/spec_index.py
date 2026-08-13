@@ -89,9 +89,13 @@ def parse_invariants(body):
 
 
 def test_exists(root, test):
-    file_name, sep, function = test.partition("::")
+    # 引用は tests/x.py::test_y も tests/x.py::Class::test_y も許す。
+    # unittest.TestCase で書かれたテストはクラス名まで書かないと pytest から選べないため。
+    file_name, *names = test.split("::")
     path = root / file_name
-    return path.is_file() and (not sep or function in path.read_text(encoding="utf-8"))
+    if not path.is_file(): return False
+    text = path.read_text(encoding="utf-8")
+    return all(name in text for name in names)
 
 
 def validate(root, rows):

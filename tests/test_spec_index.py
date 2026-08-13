@@ -50,6 +50,19 @@ def test_invariant_set_mismatch(tmp_path):
 def test_missing_invariant_test(tmp_path):
     base(tmp_path); p=tmp_path/'docs/spec/one.md'; p.write_text(p.read_text().replace('invariants: []','invariants:\n  - INV-ONE-001')+'\n### INV-ONE-001 title\n- **守っているテスト**: `tests/no.py::test_no`\n'); assert run(tmp_path,'check').returncode
 
+def cite(root, citation):
+    """INV に1件だけテストを引用した仕様書へ書き換える。"""
+    p=root/'docs/spec/one.md'; p.write_text(p.read_text().replace('invariants: []','invariants:\n  - INV-ONE-001')+'\n### INV-ONE-001 title\n- **守っているテスト**: `'+citation+'`\n')
+
+def test_invariant_test_citation_may_name_the_test_class(tmp_path):
+    # unittest.TestCase のテストは Class::method まで書かないと pytest から選べない。
+    base(tmp_path); t=tmp_path/'tests'; t.mkdir(); (t/'guard.py').write_text("class GuardTest:\n    def test_ok(self): pass\n")
+    cite(tmp_path,'tests/guard.py::GuardTest::test_ok'); assert run(tmp_path,'check').returncode == 0
+
+def test_invariant_test_citation_rejects_unknown_class(tmp_path):
+    base(tmp_path); t=tmp_path/'tests'; t.mkdir(); (t/'guard.py').write_text("class GuardTest:\n    def test_ok(self): pass\n")
+    cite(tmp_path,'tests/guard.py::MissingTest::test_ok'); assert run(tmp_path,'check').returncode
+
 def test_broken_relative_link(tmp_path):
     base(tmp_path); p=tmp_path/'docs/spec/one.md'; p.write_text(p.read_text()+'[broken](missing.md)'); assert run(tmp_path,'check').returncode
 

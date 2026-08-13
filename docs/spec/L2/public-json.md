@@ -15,6 +15,7 @@ invariants:
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_classify_public_events_diff.py
+  - tests/test_public_json_field_sparsity.py
 updated_for: 6537e7f
 ---
 
@@ -149,7 +150,13 @@ updated_for: 6537e7f
 - **破れたときの症状**: サイト側が欠損を想定していないと `undefined` を表示するか、描画が落ちる。
   collector 側が「必ず埋める」ようにすると、今度は推測値で穴埋めすることになり、確定と推測の区別が失われる。
 - **守っているコード**: `export_public_events.py` の各フィールド付与処理
-- **守っているテスト**: **なし（要追加）** — 「欠損が正常である」ことを明示的に検査するテストは見当たらなかった。
+- **守っているテスト**: `tests/test_public_json_field_sparsity.py::BareOccurrenceKeepsFieldsAbsentTest::test_bare_occurrence_omits_every_optional_field`、
+  `tests/test_public_json_field_sparsity.py::PublishedPublicJsonIsSparseTest::test_no_single_event_carries_every_field`、
+  `tests/test_public_json_field_sparsity.py::PublishedPublicJsonIsSparseTest::test_each_optional_family_is_absent_from_some_event`。
+  2方向から見ている。生成の入口では、根拠の無い開催回に任意フィールドが**付かない**こと
+  （`None` や空文字で埋めるのも「埋めた」に入れて弾く）。公開されている実物では、
+  いまも疎であること。**全イベントが同じキー集合を持つようになったら、それは入口が壊れた結果**なので、
+  「1件が全フィールドを持つことは無い」「任意フィールドは必ずどこかで欠けている」を検査する。
 
 ## 気づいた食い違い（`6537e7f` 時点）
 
