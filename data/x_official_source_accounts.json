@@ -11,7 +11,7 @@
       "source_type": "official_or_organizer_social",
       "trust_level": "organizer_official",
       "manual_status": "優先",
-      "tier": "dormant",
+      "tier": "active",
       "linked_events": [
         {
           "series_id": "ser_tetsupozu_noryo_bonodori",
@@ -27,7 +27,7 @@
       ],
       "wake_after": "2027-06-03",
       "sleep_after": "2026-08-16",
-      "decided_by": "machine",
+      "decided_by": "user",
       "decided_at": "2026-08-13",
       "evidence_url": "https://x.com/iri2choukai",
       "related_event_keywords": [

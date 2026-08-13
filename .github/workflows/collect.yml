@@ -256,6 +256,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/latest.json data/seen.json data/voices_seen.json
+        [ -f data/x_official_source_accounts.json ] && git add -f data/x_official_source_accounts.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/event_date_update_candidates.json ] && git add data/event_date_update_candidates.json
         [ -f data/event_song_candidates.json ] && git add data/event_song_candidates.json

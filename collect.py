@@ -1875,7 +1875,11 @@ def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sql
         # Only a row explicitly produced by this machine may be replaced.
         if not (prior and prior.get("decided_by") != "machine"):
             existing[_norm_handle(row.get("handle"))] = {**(prior or {}), **row}
-    payload.update({"accounts": list(existing.values()), "updated_at": datetime.now(timezone.utc).date().isoformat(), "updated_by": "machine:x_source_registry_v2"})
+    payload.update({
+        "accounts": [existing[key] for key in sorted(existing)],
+        "updated_at": datetime.now(timezone.utc).date().isoformat(),
+        "updated_by": "machine:x_source_registry_v2",
+    })
     with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     print(f"[official-registry] linked source candidates: {len(candidates)}")
