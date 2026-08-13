@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T12:09:31Z",
-  "generated_for_commit": "1d2d00d",
+  "generated_at": "2026-08-13T13:21:56Z",
+  "generated_for_commit": "c0f3ad8",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -289,7 +289,9 @@
         "INV-DLV-002",
         "INV-DLV-003"
       ],
-      "verified_by": [],
+      "verified_by": [
+        "tests/test_send_mail_delivery_guards.py"
+      ],
       "updated_for": "6537e7f",
       "path": "docs/spec/L1/06-delivery.md",
       "owned_files": [
@@ -350,7 +352,8 @@
         "INV-SCH-003"
       ],
       "verified_by": [
-        "tests/test_master_db_connection_guards.py"
+        "tests/test_master_db_connection_guards.py",
+        "tests/test_master_db_schema_invariants.py"
       ],
       "updated_for": "6537e7f",
       "path": "docs/spec/L2/master-schema.md",
@@ -358,8 +361,8 @@
         "master_rdb/master_db.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       }
     },
     "L2-public-json": {
@@ -380,7 +383,8 @@
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
-        "tests/test_classify_public_events_diff.py"
+        "tests/test_classify_public_events_diff.py",
+        "tests/test_public_json_field_sparsity.py"
       ],
       "updated_for": "6537e7f",
       "path": "docs/spec/L2/public-json.md",
@@ -440,7 +444,7 @@
         "tests/test_spec_index.py"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 6
       }
     }
@@ -457,8 +461,10 @@
     "INV-COL-002": {
       "spec": "L1-collection",
       "title": "同じURLを1回の収集で重複して取り込まない",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_collect_duplicate_urls.py::test_prepare_new_x_posts_excludes_duplicate_seen_new_seen_and_empty_urls"
+      ],
+      "has_test": true
     },
     "INV-COL-003": {
       "spec": "L1-collection",
@@ -553,8 +559,12 @@
     "INV-MST-004": {
       "spec": "L1-master",
       "title": "S3の latest を上書きするときは、期待するチェックサムと一致させる",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_master_db_s3_artifact.py::test_publish_cas_requires_matching_checksum_before_any_upload",
+        "tests/test_master_db_s3_artifact.py::test_publish_cas_requires_expectation_unless_forced",
+        "tests/test_master_db_s3_artifact.py::test_publish_cas_accepts_match_and_force_override"
+      ],
+      "has_test": true
     },
     "INV-MST-005": {
       "spec": "L1-master",
@@ -623,20 +633,26 @@
     "INV-DLV-001": {
       "spec": "L1-delivery",
       "title": "`pending_mail.json` が無いときは、何もせず正常終了する",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_send_mail_delivery_guards.py::SendMailDraftPresenceTest::test_missing_pending_file_returns_zero_without_sending"
+      ],
+      "has_test": true
     },
     "INV-DLV-002": {
       "spec": "L1-delivery",
       "title": "送れないときは、黙って成功にせず、本文を残して失敗させる",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_send_mail_delivery_guards.py::SendMailFailureKeepsDraftTest::test_missing_credentials_returns_nonzero_and_keeps_draft"
+      ],
+      "has_test": true
     },
     "INV-DLV-003": {
       "spec": "L1-delivery",
       "title": "送信に成功したときだけ本文を消し、それをもって二重送信を防ぐ",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_send_mail_delivery_guards.py::SendMailWorkflowRemovalOrderTest::test_removal_step_does_not_run_when_send_fails"
+      ],
+      "has_test": true
     },
     "INV-PLT-001": {
       "spec": "L1-platform",
@@ -658,20 +674,26 @@
     "INV-SCH-001": {
       "spec": "L2-master-schema",
       "title": "系列内の開催回は年・回数で一意である",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_master_db_schema_invariants.py::test_occurrence_unique_allows_distinct_sequence_and_rejects_duplicate"
+      ],
+      "has_test": true
     },
     "INV-SCH-002": {
       "spec": "L2-master-schema",
       "title": "確定・終了の開催回は confirmed の日付確実性だけを持つ",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_master_db_schema_invariants.py::test_event_state_axes_reject_invalid_inserts_and_updates"
+      ],
+      "has_test": true
     },
     "INV-SCH-003": {
       "spec": "L2-master-schema",
       "title": "スキーマ変更は適用済みmigrationとして記録する",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_master_db_schema_invariants.py::test_migrations_are_recorded_unique_and_connections_enable_foreign_keys"
+      ],
+      "has_test": true
     },
     "INV-PJS-001": {
       "spec": "L2-public-json",
@@ -692,8 +714,10 @@
     "INV-PJS-003": {
       "spec": "L2-public-json",
       "title": "読む側は、フィールドが欠けている前提で書く",
-      "tests": [],
-      "has_test": false
+      "tests": [
+        "tests/test_public_json_field_sparsity.py::BareOccurrenceKeepsFieldsAbsentTest::test_bare_occurrence_omits_every_optional_field"
+      ],
+      "has_test": true
     }
   },
   "file_to_spec": {
