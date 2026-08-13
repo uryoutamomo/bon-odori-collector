@@ -34,6 +34,7 @@ from collection_support.event_evidence import (
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
 from collection_support.x_source_registry import load_events_from_master_db, registry_candidates
+from collection_support.x_author_profile import PROBE as X_PROFILE_PROBE, author_profile_description
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
 from collection_support import x_cost_ledger
@@ -720,7 +721,7 @@ def _x_map_to_voice(tw):
         "source": "x",
         "account": f"@{username}" if username else "",
         "name": name,
-        "profile_description": str(author.get("description") or ""),
+        "profile_description": author_profile_description(author),
         "title": "",
         "text": (tw.get("text") or tw.get("full_text") or "").strip()[:500],
         "url": url,
@@ -4087,6 +4088,10 @@ def main():
 
         with open(voices_seen_file, 'w', encoding='utf-8') as f:
             json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
+
+        # Where the bio came from, printed before the scores are rebuilt.  An
+        # all-empty run is a real finding here, not an absence of output.
+        print(X_PROFILE_PROBE.report())
 
         _save_x_account_scores(deduped_voices, _load_x_config() or {})
         _refresh_official_source_registry(deduped_voices)

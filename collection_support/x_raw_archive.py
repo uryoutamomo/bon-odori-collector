@@ -15,6 +15,8 @@ import time
 from datetime import datetime, timezone
 from typing import Any
 
+from collection_support.x_author_profile import author_profile_description
+
 
 SCHEMA_VERSION = "x_raw_post/v1"
 DEFAULT_PREFIX = "x-raw"
@@ -108,7 +110,9 @@ def _record(tweet: dict[str, Any], context: dict[str, Any], captured_at: str) ->
         "url": url,
         "account": f"@{handle}" if handle else "",
         "account_name": str(author.get("name") or ""),
-        "profile_description": str(author.get("description") or ""),
+        # Preserved without the shared probe: the archive re-reads the same
+        # authors the mapper already counted, so probing here would double it.
+        "profile_description": author_profile_description(author, probe=None),
         "created_at_raw": raw_created_at,
         "captured_at": captured_at,
         "text": _tweet_text(tweet),
