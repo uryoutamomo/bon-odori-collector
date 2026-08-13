@@ -33,6 +33,7 @@ from collection_support.event_evidence import (
     classify_event_evidence,
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
+from collection_support.x_source_registry import load_events_from_master_db, registry_candidates
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
 from collection_support import x_cost_ledger
@@ -1855,6 +1856,36 @@ def _save_x_account_scores(voices, cfg=None):
         print(f"[rank] Xアカウントスコア保存エラー（継続）: {e}")
 
 
+def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sqlite"):
+    """Refresh candidates from stored voices only; this never calls the X API."""
+    events = load_events_from_master_db(db_path)
+    if not events:
+        print("[official-registry] master RDB unavailable; refresh skipped")
+        return []
+    candidates = registry_candidates([v for v in voices if v.get("source") in ("x", "x_whitelist")], events)
+    try:
+        with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        payload = {"accounts": []}
+    existing = {_norm_handle(row.get("handle")): row for row in payload.get("accounts", []) if isinstance(row, dict)}
+    for row in candidates:
+        prior = existing.get(_norm_handle(row.get("handle")))
+        # The pre-v2 registry was manually curated and had no decided_by.
+        # Only a row explicitly produced by this machine may be replaced.
+        if not (prior and prior.get("decided_by") != "machine"):
+            existing[_norm_handle(row.get("handle"))] = {**(prior or {}), **row}
+    payload.update({
+        "accounts": [existing[key] for key in sorted(existing)],
+        "updated_at": datetime.now(timezone.utc).date().isoformat(),
+        "updated_by": "machine:x_source_registry_v2",
+    })
+    with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"[official-registry] linked source candidates: {len(candidates)}")
+    return candidates
+
+
 def _ensure_x_member_score_props():
     """XメンバーリストDBにスコア確認・手動調整用のプロパティを用意する。fail-safe。"""
     if not NOTION_TOKEN:
@@ -2305,12 +2336,11 @@ def _load_notion_member_list():
     return accounts
 
 
-def _load_trusted_score_accounts(cfg=None):
-    """スコア台帳で trusted 判定されたアカウントを収集対象に自動編入する。
+def _auto_trusted_roster_accounts(cfg=None):
+    """Build the daily roster from independent announce/record axes.
 
-    これが無いと、投稿の質から「良い情報源」と判定済みのアカウントでも、Notion
-    メンバーリストに手で登録されるまで一度もタイムラインを読みに行かなかった。
-    2026-07-26時点で trusted 383件に対し実際の収集名簿は69件だった。
+    usefulness_score remains an evidence/review metric.  A saturated score
+    must never make alphabetical handle ordering the effective primary key.
     """
     cfg = cfg or _load_x_config() or {}
     roster_cfg = cfg.get("auto_trusted_roster", {}) or {}
@@ -2319,27 +2349,45 @@ def _load_trusted_score_accounts(cfg=None):
     scores = _load_x_account_scores(cfg).get("accounts", {})
     if not scores:
         return []
-    min_score = roster_cfg.get("min_score", 6.0)
     min_posts = roster_cfg.get("min_posts_seen", 3)
-    max_accounts = roster_cfg.get("max_accounts", 250)
+    per_axis = roster_cfg.get("per_axis_accounts", 150)
+    exclusions = _load_x_roster_exclusions()
     candidates = []
     for key, row in scores.items():
-        if row.get("status") != "trusted":
+        handle = row.get("handle") or f"@{key}"
+        if _norm_handle(handle) in exclusions or row.get("manual_status") == "休止":
             continue
         if (row.get("posts_seen") or 0) < min_posts:
             continue
-        score = row.get("usefulness_score", row.get("score", 0)) or 0
-        if score < min_score:
+        if row.get("is_area_bot"):
             continue
-        candidates.append((score, row.get("handle") or f"@{key}"))
-    candidates.sort(key=lambda item: (-item[0], item[1].lower()))
+        candidates.append(row)
+
+    def rank(axis):
+        return sorted(candidates, key=lambda row: (
+            -float(row.get(axis) or 0),
+            -int(row.get("bon23_count") or 0),
+            -int(row.get("distinct_post_days") or 0),
+            _norm_handle(row.get("handle")),
+        ))[:per_axis]
+
+    selected_by_handle = {}
+    for axis in ("announce_score", "record_score"):
+        for row in rank(axis):
+            handle = row.get("handle") or ""
+            selected_by_handle.setdefault(_norm_handle(handle), {
+                "handle": handle, "page_id": "", "manual_status": "",
+                "source_type": "auto_two_axis", "selection_axes": [],
+            })["selection_axes"].append(axis)
     selected = [
-        {"handle": handle, "page_id": "", "manual_status": "", "source_type": "auto_trusted"}
-        for _, handle in candidates[:max_accounts]
+        selected_by_handle[key] for key in sorted(selected_by_handle)
     ]
     if selected:
-        print(f"[whitelist] スコアtrustedから自動編入: {len(selected)} アカウント")
+        print(f"[whitelist] 2軸名簿から自動編入: {len(selected)} アカウント")
     return selected
+
+
+_load_trusted_score_accounts = _auto_trusted_roster_accounts
 
 
 def load_whitelist_accounts(cfg=None):
@@ -2357,8 +2405,10 @@ def load_whitelist_accounts(cfg=None):
         *_load_collection_roster(),
     ]
     accounts.extend(_load_notion_member_list())
-    accounts.extend(_load_trusted_score_accounts(cfg))
-    out = _dedupe_whitelist_accounts(accounts)
+    accounts.extend(_auto_trusted_roster_accounts(cfg))
+    excluded = _load_x_roster_exclusions()
+    out = [row for row in _dedupe_whitelist_accounts(accounts)
+           if _norm_handle(row.get("handle")) not in excluded]
     print(f"[whitelist] 収集対象 {len(out)} アカウント（ローカル名簿＋自動編入＋Notion）")
     return out
 
@@ -4039,6 +4089,7 @@ def main():
             json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
 
         _save_x_account_scores(deduped_voices, _load_x_config() or {})
+        _refresh_official_source_registry(deduped_voices)
 
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
     except RawXArchiveError:
