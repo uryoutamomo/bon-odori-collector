@@ -89,7 +89,7 @@ observed_occurrences ──< observed_occurrence_songs
 - **なぜ**: DBファイルだけを差し替えて構造を退行させると、下流が期待する列・外部キーを失い、原因が追えないから。
 - **破れたときの症状**: 昨日まで通った処理が列不足や孤立参照で失敗し、どのDB世代か分からない。
 - **守っているコード**: `master_rdb/master_db.py` の `schema_migrations`、`apply_migration()`、`connect_existing()`
-- **守っているテスト**: `tests/test_master_db_connection_guards.py::test_master_db_paths_use_non_creating_connection_helper`
+- **守っているテスト**: **なし（要追加）**
 
 ## 変更時の確認
 
