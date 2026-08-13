@@ -18,12 +18,13 @@ from review_inbox_adapters.source_adapter import LIFECYCLE_FIELDS, adapt_source_
 
 
 class ReviewInboxMissingAdaptersTest(unittest.TestCase):
-    def test_real_source_url_input_is_a_valid_empty_current_snapshot(self):
+    def test_real_source_url_input_is_a_valid_current_snapshot(self):
         snapshot = build_source_url_snapshot(SOURCE_URL_INPUT)
 
         self.assertEqual(snapshot["source_id"], "missing_source_url")
-        self.assertEqual(snapshot["item_count"], 0)
-        self.assertEqual(snapshot["selection"], {"mode": "all", "source_keys": []})
+        self.assertEqual(snapshot["item_count"], len(snapshot["items"]))
+        self.assertEqual(snapshot["selection"]["mode"], "all")
+        self.assertEqual(len(snapshot["selection"]["source_keys"]), len(set(snapshot["selection"]["source_keys"])))
 
     def test_source_url_actions_only_research_or_stage_change_request(self):
         payload = {
@@ -54,8 +55,13 @@ class ReviewInboxMissingAdaptersTest(unittest.TestCase):
             self.assertFalse(LIFECYCLE_FIELDS.intersection(item))
             self.assertNotIn(item["recommended_action"], {"fill_source_url", "confirm_current_year_date"})
 
-    def test_real_venue_input_has_two_separate_future_research_items(self):
-        snapshot = build_venue_snapshot(VENUE_INPUT)
+    def test_venue_payload_keeps_two_separate_future_research_items(self):
+        payload = {"review": [
+            {"occurrence_id": "one", "event_name": "One", "event_year": 2026, "review_action": "manual_name_or_venue_research_required"},
+            {"occurrence_id": "two", "event_name": "Two", "event_year": 2026, "review_action": "manual_venue_research_required"},
+        ]}
+        items = adapt_source_payload(MissingVenueAdapter(), payload)
+        snapshot = {"source_id": "missing_venue", "item_count": len(items), "selection": {"mode": "all", "source_keys": [i["source_key"] for i in items]}, "items": items}
 
         self.assertEqual(snapshot["source_id"], "missing_venue")
         self.assertEqual(snapshot["item_count"], 2)

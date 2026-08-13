@@ -24,6 +24,7 @@ invariants:
   - INV-MST-004
   - INV-MST-005
   - INV-MST-006
+  - INV-MST-007
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -143,6 +144,14 @@ updated_for: 6537e7f
 - **破れたときの症状**: 公開件数が理由なく減る。監査だけが異常を示す。
 - **守っているコード**: `master_rdb/s3_artifact.py` の `verify_checksum()` と fetch 経路
 - **守っているテスト**: `tests/test_master_db_s3_artifact.py::test_fetch_verifies_checksum_and_writes_local_manifest`
+
+### INV-MST-007 会場は正規化名と住所の完全一致でのみ再利用する
+
+- **内容**: `ensure_venue()` は正規化名と住所が完全一致する会場だけを再利用し、似た名称を自動で束ねない。
+- **なぜ**: 部分一致は別の物理会場を同じ会場として結びつける。2026-08-07には「さくら公園」が「東葛西さくら公園」へ誤照合した。
+- **破れたときの症状**: 別会場の行事が一つの会場にまとめて表示され、会場・日程の根拠が混ざる。
+- **守っているコード**: `report_apply/event_report_helpers.py` の `ensure_venue()`
+- **守っているテスト**: `tests/test_firsthand_report_helpers.py::FirsthandReportHelpersTest::test_ensure_venue_creates_instead_of_absorbing_a_similar_name`
 
 ## 主要な流れ
 

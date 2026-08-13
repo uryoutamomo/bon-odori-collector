@@ -16,7 +16,6 @@ from master_rdb.master_db import json_text, normalize_text, now_utc, stable_id
 
 
 FUZZY_MATCH_MIN_SCORE = 0.45
-FUZZY_SUBSTRING_SCORE_FLOOR = 0.92
 
 
 def _rows(conn, query, params=()):
@@ -109,10 +108,10 @@ def find_occurrence_candidates(conn, event_name_hint, venue_name_hint=None, even
 
 
 def ensure_venue(conn, name, *, area=None, address=None, access=None, source_url=None, now=None):
-    """Reuse an exact-match venue, refuse to guess on ambiguous matches, else create one.
+    """Reuse one exact name/address match, else create a venue.
 
     Returns {"status": "reused"|"created"|"ambiguous", "venue_id": str|None, "candidates": [...]}.
-    Never auto-creates a venue when multiple fuzzy candidates exist, to avoid duplicate venues.
+    Multiple exact rows are ambiguous (possible for duplicate NULL addresses in SQLite).
     """
     now = now or now_utc()
     normalized = normalize_text(name)

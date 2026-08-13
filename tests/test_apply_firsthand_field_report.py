@@ -122,12 +122,12 @@ class ApplyFirsthandFieldReportTest(unittest.TestCase):
         dry_run_conn.close()
         self.assertEqual(dry_count, 1)
 
-    def test_ambiguous_occurrence_without_id_blocks_write(self):
-        # a second, similarly-named occurrence makes name-only matching ambiguous
+    def test_same_named_occurrences_without_id_block_write(self):
+        # Two exact names are a real ambiguity; a merely longer similar name is not.
         conn = sqlite3.connect(self.db_path)
         conn.execute("PRAGMA foreign_keys = ON")
         now = master_db.now_utc()
-        other_series_id = master_db.stable_id("series", master_db.normalize_text("品川第一盆踊り大会"))
+        other_series_id = master_db.stable_id("series", master_db.normalize_text("品川第一盆踊り duplicate"))
         conn.execute(
             """
             INSERT INTO event_series(
@@ -137,9 +137,9 @@ class ApplyFirsthandFieldReportTest(unittest.TestCase):
             """,
             (
                 other_series_id,
-                master_db.normalize_text("品川第一盆踊り大会"),
-                "品川第一盆踊り大会",
-                master_db.normalize_text("品川第一盆踊り大会"),
+                master_db.normalize_text("品川第一盆踊り duplicate"),
+                "品川第一盆踊り duplicate",
+                master_db.normalize_text("品川第一盆踊り duplicate"),
                 self.venue_id,
                 now,
                 now,
@@ -155,7 +155,7 @@ class ApplyFirsthandFieldReportTest(unittest.TestCase):
             ) VALUES (?, 'curated', ?, 2026, 1, ?, ?, '2026-07-26', '2026-07-26', 'confirmed',
               'published', 'confirmed', 'official_current_year', ?, ?)
             """,
-            (other_occurrence_id, other_series_id, "品川第一盆踊り大会", self.venue_id, now, now),
+            (other_occurrence_id, other_series_id, "品川第一盆踊り", self.venue_id, now, now),
         )
         conn.commit()
         conn.close()

@@ -209,10 +209,12 @@ def test_checked_in_2026_x_gap_sources_keep_only_kanda_date_range_conflict(tmp_p
     # ``渋谷盆踊り2026`` rather than the display name with the ordinal.
     conn.execute("INSERT INTO event_series_aliases VALUES ('s3','渋谷盆踊り')")
     conn.commit(); conn.close()
-    source_keys={'x:2083138983836672409','x:2082662969792688156','x:2062386225651269673'}
-    checked_in=json.loads((ROOT/'data'/'x_gap_candidates.json').read_text(encoding='utf-8'))
-    voices=[row['voice'] for row in checked_in['candidates'] if row['source_key'] in source_keys]
-    assert len(voices)==3
+    # Only fields read by build() are retained; checked-in daily candidates rotate.
+    voices=[
+        {'source':'x','tweet_id':'2082662969792688156','date':'2026-07-30','text':'上野ゐの市盆踊り 上野恩賜公園 2026年8月7日-8月16日'},
+        {'source':'x','tweet_id':'2083138983836672409','date':'2026-07-31','text':'渋谷盆踊り2026 東京都渋谷区道玄坂 8/8'},
+        {'source':'x','tweet_id':'2062386225651269673','date':'2026-06-04','text':'神田明神納涼祭り 神田明神 2026年8月7日～9日 8月6日 前夜祭'},
+    ]
     payload=build(voices,db,year=2026,today=date(2026,6,4))
     conflicts=[row['matched_occurrence']['event_name'] for row in payload['candidates']
                if row['candidate_kind']=='date_range_conflict']
