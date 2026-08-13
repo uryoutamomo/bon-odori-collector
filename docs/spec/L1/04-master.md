@@ -117,9 +117,7 @@ updated_for: 6537e7f
   素直に上書きすると**他人の書き込みが黙って消える**。いわゆる compare-and-swap をここで担保している。
 - **破れたときの症状**: 反映したはずの変更が次の日には消えている。誰の作業が消えたのか追跡できない。
 - **守っているコード**: `master_rdb/s3_artifact.py` の publish 経路（`--expect-remote-checksum` の照合）
-- **守っているテスト**: **なし（要追加）** — `expect_remote_checksum` は既存テストで
-  引数として渡されてはいるが、**不一致で止まること自体を検査するテストが無い。**
-  CASはこの工程で最も重い守りなので、ここが素通しなのは負債として明示しておく。
+- **守っているテスト**: `tests/test_master_db_s3_artifact.py::test_publish_cas_requires_matching_checksum_before_any_upload`、`tests/test_master_db_s3_artifact.py::test_publish_cas_requires_expectation_unless_forced`、`tests/test_master_db_s3_artifact.py::test_publish_cas_accepts_match_and_force_override`
 
 ### INV-MST-005 スキーマが退行したDBで latest を上書きしない
 
@@ -186,7 +184,6 @@ updated_for: 6537e7f
 
 ## 未解決・注意点
 
-- **INV-MST-004（CAS）にテストが無い。** この工程で最も重い守りなので、優先して埋めたい。
 - テーブルのスキーマそのものを説明するL2が未執筆。`event_series` と `event_occurrences` の関係、
   `evidence_items` の使われ方は、いまソースを読むしかない。
 - `report_apply` には既知のバグが残っている領域がある（詳細は別途）。

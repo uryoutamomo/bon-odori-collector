@@ -12,6 +12,7 @@ invariants:
   - INV-SCH-003
 verified_by:
   - tests/test_master_db_connection_guards.py
+  - tests/test_master_db_schema_invariants.py
 updated_for: 6537e7f
 ---
 
@@ -73,7 +74,7 @@ observed_occurrences ──< observed_occurrence_songs
 - **なぜ**: 同じ年次開催回が二重に作られると日付・曲・根拠が別々の行へ分裂するから。
 - **破れたときの症状**: 同じ行事が公開・レビューで二重に見え、片方だけ更新される。
 - **守っているコード**: `master_rdb/master_db.py` の `event_occurrences` 定義
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_master_db_schema_invariants.py::test_occurrence_unique_allows_distinct_sequence_and_rejects_duplicate`
 
 ### INV-SCH-002 確定・終了の開催回は confirmed の日付確実性だけを持つ
 
@@ -81,7 +82,7 @@ observed_occurrences ──< observed_occurrence_songs
 - **なぜ**: 状態と日付の確からしさを一つの曖昧な列にすると、過去年や規則予測を今年の確定として公開するから。
 - **破れたときの症状**: 未確認の日程が確定表示される、または確定済み開催の状態が下流で解釈できない。
 - **守っているコード**: `master_rdb/master_db.py` の `validate_event_state_axes_insert` / `validate_event_state_axes_update`
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_master_db_schema_invariants.py::test_event_state_axes_reject_invalid_inserts_and_updates`
 
 ### INV-SCH-003 スキーマ変更は適用済みmigrationとして記録する
 
@@ -89,7 +90,7 @@ observed_occurrences ──< observed_occurrence_songs
 - **なぜ**: DBファイルだけを差し替えて構造を退行させると、下流が期待する列・外部キーを失い、原因が追えないから。
 - **破れたときの症状**: 昨日まで通った処理が列不足や孤立参照で失敗し、どのDB世代か分からない。
 - **守っているコード**: `master_rdb/master_db.py` の `schema_migrations`、`apply_migration()`、`connect_existing()`
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_master_db_schema_invariants.py::test_migrations_are_recorded_unique_and_connections_enable_foreign_keys`
 
 ## 変更時の確認
 

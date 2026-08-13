@@ -505,7 +505,9 @@ def connect_existing(path=MASTER_DB, **kwargs):
     path = require_existing_db(path)
     uri = f"file:{path.as_posix()}?mode=rw"
     kwargs.setdefault("factory", _ClosingConnection)
-    return sqlite3.connect(uri, uri=True, **kwargs)
+    conn = sqlite3.connect(uri, uri=True, **kwargs)
+    conn.execute("PRAGMA foreign_keys = ON")
+    return conn
 
 
 def json_text(value):
@@ -542,6 +544,16 @@ def init_db(path=MASTER_DB, force_rebuild_from_snapshot=False):
         (1, "initial_master_rdb_ph0", now_utc()),
     )
     return conn
+
+
+def apply_migration(conn, version, name, sql):
+    """Apply one schema migration once and record the applied version."""
+    with conn:
+        conn.executescript(sql)
+        conn.execute(
+            "INSERT INTO schema_migrations(version, name, applied_at) VALUES (?, ?, ?)",
+            (version, name, now_utc()),
+        )
 
 
 def write_schema_dump(conn, path=MASTER_SCHEMA):
