@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T07:24:24Z",
-  "generated_for_commit": "0f8cc8c",
+  "generated_at": "2026-08-13T09:12:39Z",
+  "generated_for_commit": "1aa86a1",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -419,6 +419,7 @@
       "owns": [
         "docs/spec/SPEC-GUIDE.md",
         "scripts/spec_index.py",
+        "scripts/spec_html.py",
         ".github/workflows/spec_check.yml",
         ".github/workflows/spec_index_refresh.yml"
       ],
@@ -427,17 +428,18 @@
       "verified_by": [
         "tests/test_spec_index.py"
       ],
-      "updated_for": "6537e7f",
+      "updated_for": "8320170",
       "path": "docs/spec/SPEC-GUIDE.md",
       "owned_files": [
         ".github/workflows/spec_check.yml",
         ".github/workflows/spec_index_refresh.yml",
         "docs/spec/SPEC-GUIDE.md",
+        "scripts/spec_html.py",
         "scripts/spec_index.py"
       ],
       "staleness": {
-        "commits_since": 6,
-        "files_changed_since": 4
+        "commits_since": 3,
+        "files_changed_since": 2
       }
     }
   },
@@ -812,12 +814,13 @@
     ".github/workflows/spec_check.yml": "SPEC-GUIDE",
     ".github/workflows/spec_index_refresh.yml": "SPEC-GUIDE",
     "docs/spec/SPEC-GUIDE.md": "SPEC-GUIDE",
+    "scripts/spec_html.py": "SPEC-GUIDE",
     "scripts/spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
     "tracked_source_files": 328,
-    "owned": 104,
-    "unowned": 224,
+    "owned": 105,
+    "unowned": 223,
     "unowned_samples": [
       "apply_curated_youtube_aliases.py",
       "apply_notion_drift_public_intro.py",
