@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T22:48:12Z",
-  "generated_for_commit": "2c93cc1",
+  "generated_at": "2026-08-13T22:50:52Z",
+  "generated_for_commit": "8fb30c8",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -812,13 +812,13 @@
       "depends_on": [],
       "invariants": [],
       "verified_by": [],
-      "updated_for": "83bf7d0",
+      "updated_for": "2c93cc1",
       "path": "docs/spec/README.md",
       "owned_files": [
         "docs/spec/README.md"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 1,
         "files_changed_since": 1
       }
     },
