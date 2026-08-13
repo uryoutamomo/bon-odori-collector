@@ -6,6 +6,8 @@ owns:
   - operation_safety/**
   - guard_git_large_files.py
   - infra/**
+  - verify_aws_queues.py
+  - migrate_notion_queue_to_dynamodb.py
 depends_on: []
 invariants:
   - INV-PLT-001
@@ -13,7 +15,7 @@ invariants:
 verified_by:
   - tests/test_guard_git_large_files.py
   - tests/test_manual_infra_workflows_policy.py
-updated_for: 6537e7f
+updated_for: 83bf7d0
 ---
 
 # 実行基盤・安全弁
@@ -51,6 +53,16 @@ GitHub Actions、インフラ定義、手動実行の確認句、リポジトリ
 1. workflowがイベントに応じて検証・収集・成果物更新を実行する。
 2. 手動実反映は確認句を通す。
 3. コミット前に容量ガードが追跡ファイルを検査する。
+
+外部の置き場（AWS）についても、基盤側に確認の入口がある。
+`verify_aws_queues.py` は `verify-aws-queue.yml` から動き、DynamoDBのキューテーブルが
+期待どおりの名前とキーで存在するかを見る。**キューが無いことと、キューが空であることは違う**が、
+下流からは同じ「候補が来ない」に見えるので、ここで先に切り分けられるようにしてある。
+
+`migrate_notion_queue_to_dynamodb.py` は、Notionにあった旧キューをDynamoDBへ移した一回きりの移行で、
+専用workflowから手動で起動する。いまの日次経路では使わないが、
+**移行の経緯を残す意味で仕様の持ち物にしてある**（誰も呼んでいないコードを未記述のまま放置すると、
+次に見た人が現役だと誤解する）。
 
 ## 依存と影響
 

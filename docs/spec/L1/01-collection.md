@@ -12,8 +12,13 @@ owns:
   - collection_support/x_author_profile.py
   - collection_support/x_official_source_accounts.py
   - collection_support/voices_s3_artifact.py
+  - voices_s3_artifact.py
   - collect_venue_sites.py
   - venue_sites.json
+  - build_x_gap_candidates.py
+  - discover_x_social_graph.py
+  - sync_x_promoted_members.py
+  - sync_weekly_costs.py
 depends_on: []
 invariants:
   - INV-COL-001
@@ -23,7 +28,7 @@ invariants:
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
-updated_for: 6537e7f
+updated_for: 83bf7d0
 ---
 
 # 収集サブシステム
@@ -81,6 +86,31 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
    取れたものは `source: "official_venue"` / `confirmed: true` を付けて `latest.json` へ合流する。
    1サイトの失敗が他サイトを止めない作りにしてある。
 4. コストと健全性を記録し、候補は判断工程へ渡す。
+5. `voices_s3_artifact.py`（中身は `collection_support/voices_s3_artifact.py` を呼ぶだけの互換入口）で、
+   声をS3の成果物として受け渡す。日次の各workflowは処理の最初に `fetch --overwrite`、
+   最後に `publish` を実行する。リポジトリに巨大なJSONを置かずに、複数のworkflowが同じ声を見るための仕組みである。
+
+### 収集の穴と、読む相手を広げる経路（日次）
+
+集めることと並んで、**集められていないものを見つける**のもこの工程の仕事である。
+以下は日次で動いているが、2026-08-14まで仕様のどこにも属していなかった。
+
+- `build_x_gap_candidates.py --limit 30` — 収集済みの投稿の中から、
+  **公開データに無いイベントの話をしていそうなもの**を選ぶ。「穴」とはこの取りこぼしのことである。
+  選んだ候補は[レビュー](03-review.md)側のアダプタとレーン分けへ渡る。取り出す件数を30に絞ってあるのは、
+  人が裁定できる量を超えて積むと律速工程が詰まるためで、絞りの意味はレビュー側に書いてある。
+- `discover_x_social_graph.py` — いま読んでいるアカウントの周辺から、新しく読むべき相手を探す。
+  日次の `collect.yml` ではなく専用の workflow から動く。
+- `sync_x_promoted_members.py` — 人が承認した「読む相手に加える」判断を、Xのメンバー台帳へ反映する。
+  `review_x_candidate_posts.yml` から、候補の投稿を人が見る補助（`review_x_candidate_posts.py`、[レビュー](03-review.md)の持ち物）と対で動く。
+
+読む相手が偏ると、特定の区だけ情報が薄くなるという形で症状が出る。
+これは判定の精度の問題に見えるが、原因は入口の偏りであることが多い。
+
+費用の記録は `sync_weekly_costs.py` が担う。`data/x_budget.json` を読んでNotionの費用DBへ週次で書き出すもので、
+`weekly_harvest.yml` から動く。X収集は使った分だけ課金される仕組みなので、
+**使いすぎだけでなく「払えていない」こともここに現れる**。2026-08-10の課金切れでは、
+HTTP上は成功しているのに取得が0件という形で障害が出た（INV-COL-003）。
 
 ## 依存と影響
 

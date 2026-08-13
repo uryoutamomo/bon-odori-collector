@@ -350,9 +350,9 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 - **チャンネル台帳も2026-06-29から止まっている。** 読む相手が7チャンネルのままなので、
   掘り起こしの入力そのものが増えない。[X盆踊ラーの再評価](../../x-bonodorer-reevaluation-20260811.md)と
   同じ「誰を読むか」の問題だが、YouTube側は手つかずである。
-- **`run_post_batch_maintenance.py` は未記述のままにしてある。** 呼んでいるのはこの工程のworkflowだけだが、
-  中身はマスタRDB全体の点検レポートで、YouTube固有ではない。
-  ここが `owns` すると逆引きが誤った案内をするので、基盤かマスタへ寄せるのが筋だと判断した。
+- **`run_post_batch_maintenance.py` はこの仕様の持ち物ではない。** 呼んでいるのはこの工程のworkflowだけだが、
+  中身はマスタRDB全体の点検レポートでYouTube固有ではないため、[マスタ](04-master.md)へ寄せた。
+  ここが `owns` すると、触った人に「YouTubeの話だ」と誤った案内をしてしまうからである。
 - **`data/youtube_user_confirmation_queue.json` は2026-06-16におとが手で書いた4件のままである。**
   掲載基準の判断を内田さんに仰ぐための待ち行列だが、その後は更新されていない。
 - **APIキーが無いときの挙動は未確認。** workflowは `--dry-run` でない限りキーの存在を検査して落とすが、
