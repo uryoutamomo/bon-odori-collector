@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T06:38:01Z",
-  "generated_for_commit": "5e52162",
+  "generated_at": "2026-08-13T07:24:24Z",
+  "generated_for_commit": "0f8cc8c",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -409,7 +409,7 @@
         "docs/spec/README.md"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 3,
         "files_changed_since": 1
       }
     },
@@ -436,7 +436,7 @@
         "scripts/spec_index.py"
       ],
       "staleness": {
-        "commits_since": 5,
+        "commits_since": 6,
         "files_changed_since": 4
       }
     }
@@ -815,9 +815,9 @@
     "scripts/spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 327,
+    "tracked_source_files": 328,
     "owned": 104,
-    "unowned": 223,
+    "unowned": 224,
     "unowned_samples": [
       "apply_curated_youtube_aliases.py",
       "apply_notion_drift_public_intro.py",
