@@ -227,25 +227,48 @@ class MasterDbS3ArtifactTest(unittest.TestCase):
 class PublishInboxSchemaGuardTest(unittest.TestCase):
     def test_publish_cas_requires_matching_checksum_before_any_upload(self):
         with tempfile.TemporaryDirectory() as tmp:
-            tmp = Path(tmp); db = tmp / "master.sqlite"; manifest = tmp / "manifest.json"
-            make_db(db); manifest.write_text("{}", encoding="utf-8"); client = FakeS3(); seed_remote(client, "remote")
-            with self.assertRaises(SystemExit): artifact.publish(publish_args(db, manifest, expect_remote_checksum="wrong"), client=client)
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db(db)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+            seed_remote(client, "remote")
+
+            with self.assertRaises(SystemExit):
+                artifact.publish(publish_args(db, manifest, expect_remote_checksum="wrong"), client=client)
+
             self.assertEqual(client.uploads, [])
 
     def test_publish_cas_requires_expectation_unless_forced(self):
         with tempfile.TemporaryDirectory() as tmp:
-            tmp = Path(tmp); db = tmp / "master.sqlite"; manifest = tmp / "manifest.json"
-            make_db(db); manifest.write_text("{}", encoding="utf-8"); client = FakeS3(); seed_remote(client, "remote")
-            with self.assertRaises(SystemExit): artifact.publish(publish_args(db, manifest), client=client)
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db(db)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+            seed_remote(client, "remote")
+
+            with self.assertRaises(SystemExit):
+                artifact.publish(publish_args(db, manifest), client=client)
+
             self.assertEqual(client.uploads, [])
 
     def test_publish_cas_accepts_match_and_force_override(self):
         with tempfile.TemporaryDirectory() as tmp:
-            tmp = Path(tmp); db = tmp / "master.sqlite"; manifest = tmp / "manifest.json"
-            make_db(db); manifest.write_text("{}", encoding="utf-8")
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db(db)
+            manifest.write_text("{}", encoding="utf-8")
+
             for args in (dict(expect_remote_checksum="remote"), dict(expect_remote_checksum="wrong", force=True)):
-                client = FakeS3(); seed_remote(client, "remote"); artifact.publish(publish_args(db, manifest, **args), client=client)
+                client = FakeS3()
+                seed_remote(client, "remote")
+                artifact.publish(publish_args(db, manifest, **args), client=client)
                 self.assertIn(("bucket", "master-rdb/latest/bon_odori_master.sqlite"), client.uploads)
+
     def test_publish_records_inbox_schema_version_in_manifest(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
