@@ -2427,7 +2427,14 @@ def load_whitelist_accounts(cfg=None):
     manual_status: 優先 / 通常 / 休止
     """
     accounts = [
-        *load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE)),
+        # The ledger records what a source is; it does not get to decide
+        # against reading someone.  A dormant/unlinked/pending_review row is
+        # simply not contributed here, so the bonodorer roster keeps its own
+        # say.  Supplying it as 休止 muted 25 accounts the two-axis roster had
+        # selected -- including 神田観光協会 -- because this list is assembled
+        # first and then deduplicated by handle.
+        *[row for row in load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE))
+          if row.get("tier") in (None, "active")],
         *_load_important_informants(),
         *_load_collection_roster(),
     ]
