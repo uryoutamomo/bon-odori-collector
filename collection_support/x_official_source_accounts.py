@@ -37,7 +37,16 @@ def load_official_source_accounts(path: Path | str = DEFAULT_REGISTRY) -> list[d
         seen.add(handle_key)
         account = dict(row)
         account["handle"] = f"@{handle_key}"
-        account.setdefault("manual_status", "優先")
+        # v2 registry rows are retained even while dormant.  Only active rows
+        # are daily readers; legacy rows without a tier retain their old,
+        # explicit-priority behaviour.
+        if "tier" in account:
+            # Import lazily: the registry matcher also imports norm_handle.
+            from collection_support.x_source_registry import tier_for_account
+            account["tier"] = tier_for_account(account)
+            account["manual_status"] = "優先" if account["tier"] == "active" else "休止"
+        elif "manual_status" not in account:
+            account["manual_status"] = "優先" if account.get("tier", "active") == "active" else "休止"
         account.setdefault("source_type", "official_or_organizer_social")
         account.setdefault("trust_level", "organizer_official")
         account.setdefault("page_id", "")
