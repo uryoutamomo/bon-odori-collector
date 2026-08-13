@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T13:21:56Z",
-  "generated_for_commit": "c0f3ad8",
+  "generated_at": "2026-08-13T14:43:54Z",
+  "generated_for_commit": "ba928cd",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -173,7 +173,8 @@
         "INV-MST-003",
         "INV-MST-004",
         "INV-MST-005",
-        "INV-MST-006"
+        "INV-MST-006",
+        "INV-MST-007"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
@@ -218,8 +219,8 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       }
     },
     "L1-publication": {
@@ -444,7 +445,7 @@
         "tests/test_spec_index.py"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 3,
         "files_changed_since": 6
       }
     }
@@ -579,6 +580,14 @@
       "title": "取得したDBは、必ずチェックサムを検証してから使う",
       "tests": [
         "tests/test_master_db_s3_artifact.py::test_fetch_verifies_checksum_and_writes_local_manifest"
+      ],
+      "has_test": true
+    },
+    "INV-MST-007": {
+      "spec": "L1-master",
+      "title": "会場は正規化名と住所の完全一致でのみ再利用する",
+      "tests": [
+        "tests/test_firsthand_report_helpers.py::FirsthandReportHelpersTest::test_ensure_venue_creates_instead_of_absorbing_a_similar_name"
       ],
       "has_test": true
     },
