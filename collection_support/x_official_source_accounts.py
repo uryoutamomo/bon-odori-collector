@@ -37,6 +37,13 @@ def load_official_source_accounts(path: Path | str = DEFAULT_REGISTRY) -> list[d
         seen.add(handle_key)
         account = dict(row)
         account["handle"] = f"@{handle_key}"
+        # A rejected row is a record of a decision, not a source.  It is
+        # dropped rather than returned as 休止 because this list is assembled
+        # ahead of the bonodorer roster and shadows it by handle: returning a
+        # muted row here would quietly stop reading an account that the person
+        # only ruled out as an *official* source.
+        if account.get("tier") == "rejected":
+            continue
         # v2 registry rows are retained even while dormant.  Only active rows
         # are daily readers; legacy rows without a tier retain their old,
         # explicit-priority behaviour.
