@@ -52,3 +52,15 @@ def test_missing_invariant_test(tmp_path):
 
 def test_broken_relative_link(tmp_path):
     base(tmp_path); p=tmp_path/'docs/spec/one.md'; p.write_text(p.read_text()+'[broken](missing.md)'); assert run(tmp_path,'check').returncode
+
+def test_root_owned_file_does_not_capture_same_basename_in_subdirectory(tmp_path):
+    base(tmp_path)
+    nested = tmp_path / 'collection_support'; nested.mkdir(); (nested / 'voices_s3_artifact.py').write_text('')
+    (tmp_path / 'voices_s3_artifact.py').write_text('')
+    git(tmp_path, 'add', 'voices_s3_artifact.py', 'collection_support/voices_s3_artifact.py')
+    p = tmp_path / 'docs/spec/one.md'; p.write_text(p.read_text().replace('app.py', 'voices_s3_artifact.py'))
+    assert spec_index.expand(tmp_path, ['voices_s3_artifact.py']) == ['voices_s3_artifact.py']
+
+def test_external_links_and_code_fences_are_not_checked_as_relative_links(tmp_path):
+    base(tmp_path); p=tmp_path/'docs/spec/one.md'; p.write_text(p.read_text()+'[site](https://bonsuke.jp)\n```\n[fake](gone.md)\n```')
+    assert run(tmp_path, 'check').returncode == 0

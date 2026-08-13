@@ -2,7 +2,6 @@ name: Refresh specification index
 on:
   push:
     branches: [main]
-    paths: ["docs/spec/**", "scripts/spec_index.py"]
 permissions:
   contents: write
 jobs:
@@ -10,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python scripts/spec_index.py build --out docs/spec/index.json

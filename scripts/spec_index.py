@@ -2,10 +2,12 @@
 """Build and check the machine-readable index for docs/spec."""
 import argparse
 import datetime as dt
+import fnmatch
 import json
 import re
 import subprocess
 import sys
+from urllib.parse import urlparse
 from pathlib import Path
 
 REQUIRED = ("id", "layer", "title", "owns", "depends_on", "invariants", "verified_by", "updated_for")
@@ -64,8 +66,8 @@ def expand(root, patterns):
     files = set()
     tracked = git(root, "ls-files").splitlines()
     for pattern in patterns if isinstance(patterns, list) else []:
-        # Path.match correctly handles both foo/** and ordinary glob patterns.
-        files.update(p for p in tracked if Path(p).match(pattern) or (pattern.endswith("/**") and p.startswith(pattern[:-2])))
+        # Match the repository-relative name, not only its basename (Path.match).
+        files.update(p for p in tracked if fnmatch.fnmatchcase(p, pattern))
     return sorted(files)
 
 
@@ -109,7 +111,10 @@ def validate(root, rows):
         for inv in parsed.values():
             for test in inv["tests"]:
                 if not test_exists(root, test): errors.append(f"{path}: invariant test not found: {test}")
-        for target in MD_LINK.findall(body):
+        prose = re.sub(r"```.*?```", "", body, flags=re.S)
+        for target in MD_LINK.findall(prose):
+            if urlparse(target).scheme:
+                continue
             if not (root / path).parent.joinpath(target).resolve().is_file(): errors.append(f"{path}: broken relative link: {target}")
     for path, fm, _ in rows:
         for dep in fm.get("depends_on", []) if isinstance(fm.get("depends_on"), list) else []:
@@ -126,7 +131,9 @@ def staleness(root, base, files):
 
 
 def build(root):
-    rows = specs(root); _, _, owners = validate(root, rows)
+    rows = specs(root); errors, _, owners = validate(root, rows)
+    if errors:
+        raise ValueError("invalid specification tree:\n" + "\n".join(errors))
     source = [p for p in git(root, "ls-files", "*.py").splitlines() if not p.startswith(("legacy/", "tests/"))]
     output = {"generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "generated_for_commit": git(root, "rev-parse", "--short", "HEAD"), "specs": {}, "invariants": {}, "file_to_spec": owners, "coverage": {"tracked_source_files": len(source), "owned": len(set(source) & set(owners)), "unowned": len(set(source) - set(owners)), "unowned_samples": sorted(set(source) - set(owners))[:20]}}
     for path, fm, body in rows:
