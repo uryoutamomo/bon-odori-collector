@@ -15,6 +15,8 @@ owns:
   - audit_master_rdb.py
   - master_rdb_freeze_policy.py
   - transition_ended_occurrences.py
+  - run_event_state_axes_migration.py
+  - run_post_batch_maintenance.py
 depends_on:
   - L1-platform
 invariants:
@@ -29,7 +31,7 @@ verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
   - tests/test_audit_master_rdb.py
-updated_for: 6537e7f
+updated_for: 83bf7d0
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -160,10 +162,19 @@ updated_for: 6537e7f
 1. **取得** — `master_db_s3_artifact.py fetch --overwrite`。チェックサム検証つき（INV-MST-006）。
 2. **監査** — `audit_master_rdb.py`。取得直後に一度、書き込み後にもう一度走る。
 3. **状態軸の同期** — `event_model/state_axes_migration.py` 系。開催回の状態を正規化する。
+   日次の実行入口は `run_event_state_axes_migration.py` で、**既定は dry-run**、
+   実際に書くには `--execute` が要る（INV-MST-003と同じ作法）。
+   `vars.EVENT_STATE_AXES_ENABLED` が `true` のときだけ動き、書き込む前に
+   マニフェストのチェックサムを控えてCASの比較対象にする（INV-MST-004）。
 4. **終了した開催回の遷移** — `transition_ended_occurrences.py`。過ぎた開催回を「終了」へ落とす。
    これが動かないと、終わった行事が公開面に「開催予定」として残る。
 5. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
 6. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
+
+日次のほかに、**バッチの後始末を読むだけのレポート**がある。`run_post_batch_maintenance.py` は
+RDBとローカルのJSON出力を読み、件数と気になる点をまとめたJSON/Markdownを出す。書き込みはしない。
+呼んでいるのは[YouTube取り込み](09-youtube.md)の日次workflowだけだが、
+中身はRDB全体の点検なのでこの仕様の持ち物にしてある。
 
 **凍結という仕組みもある。** `master_rdb_freeze_policy.py` は、移行中の生成物を一時的に止めるための
 スイッチで、日次workflowが `is-frozen <group>` の終了コードで分岐している。

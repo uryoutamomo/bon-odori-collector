@@ -8,6 +8,26 @@ owns:
   - review_console/**
   - review_console_ops/**
   - scripts/promote_change_requests_for_review.py
+  - run_review_inbox_rare_signal_scheduled.py
+  - run_review_inbox_rare_signal_canary.py
+  - run_review_inbox_rare_signal_decision_canary.py
+  - run_review_inbox_low_priority_scheduled.py
+  - build_rare_signal_backcheck_queue.py
+  - search_rare_signal_backcheck_sources.py
+  - export_rare_signal_backcheck_reviews.py
+  - stage_rare_signal_backcheck_reviews.py
+  - build_historical_reference_quality_review.py
+  - build_x_review_lanes.py
+  - build_x_account_console.py
+  - build_x_news_digest_for_oto.py
+  - promote_x_news_digest_reviews.py
+  - review_x_candidate_posts.py
+  - build_event_poster_ocr_queue.py
+  - build_retrospective_harvest.py
+  - build_weekly_harvest_candidates.py
+  - prepare_weekly_harvest_review.py
+  - build_official_source_review.py
+  - review_inbox_migration_runner.py
 depends_on:
   - L1-master
 invariants:
@@ -18,7 +38,7 @@ invariants:
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
-updated_for: 6537e7f
+updated_for: 83bf7d0
 ---
 
 # 人のレビュー運用サブシステム
@@ -110,12 +130,65 @@ updated_for: 6537e7f
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
    会場欠落、過去実績、YouTube など、種類ごとに別アダプタになっている。
+   **アダプタが守る形と禁止事項は[受信箱アダプタの契約](../L2/review-inbox-adapter.md)にある**
+   （`source_adapter.py` と `parity.py` を触るときは、このL1ではなくそちらのINV-ADPを読む。
+   ファイルの持ち主はこのL1のままなので、逆引きからは片道にしか繋がらない）。
 2. **受信箱を投影する** — `review_inbox.py --out-json data/review_inbox.json --status pending`。
 3. **人が裁定する** — `review_console_ops/run_review_console.py` でローカルサーバを立て、
    `review_console/` のUIで判断する。
 4. **決定を書く** — `review_inbox_adapters/decision_writer.py`（INV-RVW-001〜003）。
 5. **昇格させる** — `scripts/promote_change_requests_for_review.py` を人が実行（INV-RVW-004）。
 6. **マスタへ適用** — [L1-master](04-master.md) の dry-run → apply 経路へ。
+
+### 日次で積んでいるのは、いくつの入口か
+
+1番の「積む」を、日次の `collect.yml` が実際にどう動かしているかを書いておく。
+ここが長らく仕様に書かれておらず、**毎日動いているのに触っても逆引きに出てこない状態だった**
+（2026-08-14に配分。それまで `collect.yml` が呼ぶ38本のうち23本がどの仕様にも属していなかった）。
+
+積む入口は4つのレーンに分かれていて、それぞれ独立に有効・無効を切り替えられる。
+**スクリプト側の既定はどれも off** で、動かすにはリポジトリ変数のガードと確認句の両方が要る
+（たとえば `--confirm 'RUN SCHEDULED YOUTUBE AGGREGATE DUAL WRITE'` のような句を workflow が渡す）。
+`83bf7d0` 時点で有効なのは稀少シグナル・YouTube集約・低優先の3つで、
+`REVIEW_INBOX_YOUTUBE_ACTIVE_DUAL_WRITE_ENABLED` だけ `false` のままである。
+既定を off にしてあるのは、新しい積み方を本番へ繋いだ瞬間に全件が静かに流れ込むのを防ぐためで、
+**入口の量が人の処理量を超えることがこの工程の最大の失敗だから**である。
+
+| レーン | 積む前に作るもの | 受信箱へ流す実行 |
+|---|---|---|
+| 稀少シグナル | `build_rare_signal_backcheck_queue.py` → `export_rare_signal_backcheck_reviews.py` → `stage_rare_signal_backcheck_reviews.py` | `run_review_inbox_rare_signal_scheduled.py` |
+| YouTube集約 | [YouTube取り込み](09-youtube.md)側で用意 | `run_review_inbox_youtube_scheduled.py`（同じくあちら） |
+| 低優先 | `build_missing_venue_review_from_song_associations.py`（会場側）、`build_historical_reference_quality_review.py` | `run_review_inbox_low_priority_scheduled.py` |
+| X由来 | `build_x_gap_candidates.py`（収集側）→ `review_inbox_adapters/x_gap_adapter.py` → `build_x_review_lanes.py` | 定期の二重書き込みは持たず、整形したJSONを置くところで止まる |
+
+X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つの運用レーンへ切り分ける**のが役目で、
+1番目のレーンは意図的に厳しくしてある（登録済みの公式ソースだけを通す）。
+機械が拾った穴をそのまま人へ渡すと、レビュー待ちが人の処理速度を超えて詰まるためである。
+
+このほかに、日次で回っている周辺の入口が3種類ある。
+
+- **おと向けのニュース要約** — `build_x_news_digest_for_oto.py` が、収集済みの投稿から要約を作る
+  （X・Notion・LLMのいずれも呼ばない）。おとが読んで裁定した結果は
+  `promote_x_news_digest_reviews.py` が稀少シグナル候補へ昇格させる。
+  機械が用意した要約を最終解釈として信用しない、という前提でこの2段になっている。
+- **収穫（harvest）** — `build_retrospective_harvest.py` と `build_weekly_harvest_candidates.py --days 3`、
+  `prepare_weekly_harvest_review.py` が、用語候補と曲・会場の共起をレビュー用のキューにする。
+  名前は「週次」だが**日次で動いている**ので、名前から実行間隔を推測しないこと。
+- **掲示物のOCR** — `build_event_poster_ocr_queue.py` が、チラシ・貼り紙の写真が付いた投稿を
+  優先度の高いOCRの列にする。曲目表のOCR（`build_song_ocr_queue.py`）は[曲目](08-songs.md)側の別経路である。
+
+`build_x_account_console.py` は積む入口ではなく、**読んでいる相手を人が見られるようにする画面**を作る。
+2026-07-26まで「誰を読んでいるのか」を見る手立てが無かったために作られたもので、
+`review_x_candidate_posts.py` はその候補アカウントを直近の投稿から人が判断するための補助である。
+
+日次とは別に、**公式ソースURLのレビュー列**を作る `build_official_source_review.py` が
+`refresh_official_source_review.yml` から動く。毎年開かれる行事の公式URLが古くなっていないかを人が見るための列で、
+公開面で出典を示せるかどうかに直結する（出典を出してよい情報源の線引きは運用側の判断である）。
+
+受信箱のスキーマ移行は `review_inbox_migration_runner.py` が `migrate_review_inbox_v2.yml` から実行する。
+**移行の入口をここに1本だけ置いてあるのは、日常の書き込み経路が副作用でスキーマを変えないようにするため**で、
+その約束が INV-RVW-003 である。この runner はマスタDBを publish しない作りになっていて、
+移行とS3への公開を必ず別の操作に保っている。
 
 ## 依存と影響
 
@@ -138,7 +211,10 @@ updated_for: 6537e7f
 - **受信箱に積む選別基準の作り直しが未着手。** いまは積まれる量が人の処理量を上回りうる。
   律速工程に対して入口を絞らないままなので、根本的にはここが宿題になっている。
 - レビューコンソールの「次に何をすべきか」の提示が弱く、優先順位が人の記憶に依存している。
-- アダプタが種類ごとに増える構造なので、共通の契約（L2）を切り出したい。
+- ~~アダプタが種類ごとに増える構造なので、共通の契約（L2）を切り出したい。~~
+  **2026-08-14に[受信箱アダプタの契約](../L2/review-inbox-adapter.md)として切り出した。**
+  ただし切り出したのは共通部分（項目の形・禁止事項・突き合わせ）だけで、
+  種類ごとの `payload` の中身は各アダプタの実装にしか書かれていない。
 
 ---
 
