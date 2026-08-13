@@ -546,14 +546,6 @@ def init_db(path=MASTER_DB, force_rebuild_from_snapshot=False):
     return conn
 
 
-def apply_migration(conn, version, name, sql):
-    """Apply one schema migration once and record the applied version."""
-    with conn:
-        conn.executescript(sql)
-        conn.execute(
-            "INSERT INTO schema_migrations(version, name, applied_at) VALUES (?, ?, ?)",
-            (version, name, now_utc()),
-        )
 
 
 def write_schema_dump(conn, path=MASTER_SCHEMA):

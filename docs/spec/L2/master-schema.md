@@ -86,10 +86,10 @@ observed_occurrences ──< observed_occurrence_songs
 
 ### INV-SCH-003 スキーマ変更は適用済みmigrationとして記録する
 
-- **内容**: `schema_migrations.version` は主キーで、初期化・migration適用は版と名称、適用時刻を保存する。接続時は `PRAGMA foreign_keys = ON` を設定する。
+- **内容**: `schema_migrations.version` は主キーで、初期化と `review_inbox.py` のv2 migration記録は版と名称、適用時刻を保存する。`connect_existing()` は2026-08-13から接続時に `PRAGMA foreign_keys = ON` を設定する。
 - **なぜ**: DBファイルだけを差し替えて構造を退行させると、下流が期待する列・外部キーを失い、原因が追えないから。
 - **破れたときの症状**: 昨日まで通った処理が列不足や孤立参照で失敗し、どのDB世代か分からない。
-- **守っているコード**: `master_rdb/master_db.py` の `schema_migrations`、`apply_migration()`、`connect_existing()`
+- **守っているコード**: `master_rdb/master_db.py` の `schema_migrations`・`init_db()`・`connect_existing()`、`review_inbox.py` の `migrate_inbox_schema_v2()`
 - **守っているテスト**: `tests/test_master_db_schema_invariants.py::test_migrations_are_recorded_unique_and_connections_enable_foreign_keys`
 
 ## 変更時の確認
