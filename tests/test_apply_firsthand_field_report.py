@@ -180,6 +180,23 @@ class ApplyFirsthandFieldReportTest(unittest.TestCase):
         conn.close()
         self.assertEqual(count, 0)
 
+    def test_exact_occurrence_wins_over_similar_longer_name(self):
+        # Exact score is 1.000; "品川第一盆踊り大会" is 0.875, below the 0.92 strong threshold.
+        conn = sqlite3.connect(self.db_path)
+        now = master_db.now_utc()
+        series_id = master_db.stable_id("series", "品川第一盆踊り大会")
+        conn.execute("INSERT INTO event_series(series_id,origin,series_key,canonical_name,normalized_name,usual_venue_id,annual_months_json,created_at,updated_at) VALUES (?, 'curated', ?, ?, ?, ?, '[]', ?, ?)", (series_id, "longer", "品川第一盆踊り大会", master_db.normalize_text("品川第一盆踊り大会"), self.venue_id, now, now))
+        other_id = master_db.stable_id("occ", series_id, 2026, 1)
+        conn.execute("INSERT INTO event_occurrences(occurrence_id,series_id,event_year,display_name,current_event_state,date_certainty_tier,created_at,updated_at) VALUES (?, ?, 2026, '品川第一盆踊り大会', 'confirmed', 'confirmed', ?, ?)", (other_id, series_id, now, now))
+        conn.commit(); conn.close()
+        report = self._write_report({"report_type":"existing_event_songs", "raw_note":"exact name", "event_name_hint":"品川第一盆踊り", "event_year":2026, "event_date":"2026-07-25", "songs":[{"title":"東京音頭"}]})
+        result = script.run(self._args(report))
+        self.assertTrue(result["applied"]["resolved"])
+        self.assertEqual(result["applied"]["occurrence_id"], self.occurrence_id)
+        conn = sqlite3.connect(self.tmp_path / "dry_run.sqlite")
+        self.assertEqual(conn.execute("SELECT COUNT(*) FROM occurrence_songs WHERE occurrence_id=?", (other_id,)).fetchone()[0], 0)
+        conn.close()
+
     def test_apply_new_event_requires_confirm_phrase(self):
         report_path = self._write_report(
             {

@@ -81,6 +81,14 @@ class ReviewInboxMissingAdaptersTest(unittest.TestCase):
             self.assertFalse(LIFECYCLE_FIELDS.intersection(item))
             self.assertNotIn(item["recommended_action"], {"update_venue", "confirm_current_year_date"})
 
+    def test_real_venue_input_is_a_valid_current_snapshot(self):
+        snapshot = build_venue_snapshot(VENUE_INPUT)
+        self.assertEqual(snapshot["source_id"], "missing_venue")
+        self.assertEqual(snapshot["item_count"], len(snapshot["items"]))
+        self.assertEqual(len(snapshot["selection"]["source_keys"]), len(set(snapshot["selection"]["source_keys"])))
+        for item in snapshot["items"]:
+            self.assertFalse(LIFECYCLE_FIELDS.intersection(item))
+
     def test_unknown_actions_fail_closed(self):
         source_payload = {
             "review": [{
