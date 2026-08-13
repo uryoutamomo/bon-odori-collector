@@ -1,5 +1,8 @@
+import json
+import tempfile
 import unittest
 from datetime import date, timedelta
+from pathlib import Path
 
 import collect
 from collection_support.x_source_registry import link_voice_to_events, registry_candidates, tier_for_account
@@ -45,6 +48,41 @@ class SourceRegistryV2Test(unittest.TestCase):
         prior = date.today().replace(year=date.today().year - 1)
         # sixty days before this year's same-day recurrence is already due.
         self.assertEqual(tier_for_account({"linked_events":[{"confidence":"confirmed", "latest_occurrence_end":str(prior)}]}), "active")
+
+
+    def test_daily_refresh_never_demotes_a_curated_row(self):
+        """検査17。人が手で登録した行を日次更新が降格させない。
+
+        v1 の台帳には decided_by が無い。それを「機械のもの」と見なすと、
+        鉄砲洲納涼盆踊りの公式（@iri2choukai）が dormant へ落ち、
+        load_official_source_accounts() が manual_status を「休止」に
+        書き換えるため、直読み名簿から静かに消える。実際に一度起きた。
+        """
+        curated = {"accounts": [{
+            "handle": "@iri2choukai", "name": "入船二丁目町会", "tier": "active",
+            "manual_status": "優先", "related_event_keywords": ["鉄砲洲納涼盆踊り"],
+            "notes": "人が確認して登録した行",
+        }]}
+        events = [{"series_id": "s1", "series_name": "鉄砲洲納涼盆踊り",
+                   "venue": "鉄砲洲公園", "ward": "中央区",
+                   "latest_occurrence_end": str(date.today() - timedelta(days=400))}]
+        # 同じアカウントを機械側も候補として拾う状況を作る（紐付け1件・過去開催）
+        voices = [{"source": "x", "account": "@iri2choukai", "name": "入船二丁目町会",
+                   "text": "鉄砲洲公園で盆踊りを開催しました", "url": "https://x.com/iri2choukai/status/1"}]
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "x_official_source_accounts.json"
+            path.write_text(json.dumps(curated, ensure_ascii=False), encoding="utf-8")
+            with patch.object(collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", str(path)), \
+                 patch.object(collect, "load_events_from_master_db", lambda db_path: events):
+                collect._refresh_official_source_registry(voices)
+            saved = json.loads(path.read_text(encoding="utf-8"))["accounts"]
+
+        row = [r for r in saved if r["handle"] == "@iri2choukai"][0]
+        self.assertEqual(row["tier"], "active")
+        self.assertEqual(row["manual_status"], "優先")
+        self.assertEqual(row["related_event_keywords"], ["鉄砲洲納涼盆踊り"])
+        self.assertNotEqual(row.get("decided_by"), "machine")
 
 
 if __name__ == "__main__":
