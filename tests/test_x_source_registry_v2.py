@@ -31,6 +31,7 @@ class SourceRegistryV2Test(unittest.TestCase):
         events = [{"series_id":"s1", "series_name":"浜町盆踊り", "venue":"浜町公園", "ward":"中央区"}]
         self.assertEqual(registry_candidates([{"account":"@shop", "name":"シモジマ【公式】", "text":"新商品です"}], events), [])
         self.assertEqual(link_voice_to_events({"text":"川崎市の浜町公園で盆踊り"}, events), [])
+        self.assertEqual(link_voice_to_events({"text":"札幌の中島公園で盆踊り"}, [{"venue":"中島公園", "ward":"中野区"}]), [])
 
     def test_venue_only_link_and_lifecycle(self):
         events = [{"series_id":"s1", "series_name":"鉄砲洲", "venue":"鉄砲洲公園", "ward":"中央区"}]
@@ -39,6 +40,11 @@ class SourceRegistryV2Test(unittest.TestCase):
         self.assertEqual(tier_for_account({"linked_events":[{"confidence":"confirmed", "latest_occurrence_end":str(date.today()-timedelta(days=15))}]}), "dormant")
         self.assertEqual(tier_for_account({"linked_events":[{"confidence":"confirmed"}, {"confidence":"probable"}]}), "active")
         self.assertEqual(tier_for_account({"tier":"dormant", "decided_by":"user", "linked_events":[{}, {}]}), "dormant")
+
+    def test_next_year_wake_is_derived_without_prediction(self):
+        prior = date.today().replace(year=date.today().year - 1)
+        # sixty days before this year's same-day recurrence is already due.
+        self.assertEqual(tier_for_account({"linked_events":[{"confidence":"confirmed", "latest_occurrence_end":str(prior)}]}), "active")
 
 
 if __name__ == "__main__":

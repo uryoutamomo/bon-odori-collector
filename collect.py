@@ -33,6 +33,7 @@ from collection_support.event_evidence import (
     classify_event_evidence,
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
+from collection_support.x_source_registry import load_events_from_master_db, registry_candidates
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
 from collection_support import x_cost_ledger
@@ -1853,6 +1854,30 @@ def _save_x_account_scores(voices, cfg=None):
         print(f"[rank] Xアカウントスコア更新: {len(stats)}件（trusted {trusted} / muted {muted}）")
     except Exception as e:
         print(f"[rank] Xアカウントスコア保存エラー（継続）: {e}")
+
+
+def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sqlite"):
+    """Refresh candidates from stored voices only; this never calls the X API."""
+    events = load_events_from_master_db(db_path)
+    if not events:
+        print("[official-registry] master RDB unavailable; refresh skipped")
+        return []
+    candidates = registry_candidates([v for v in voices if v.get("source") in ("x", "x_whitelist")], events)
+    try:
+        with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        payload = {"accounts": []}
+    existing = {_norm_handle(row.get("handle")): row for row in payload.get("accounts", []) if isinstance(row, dict)}
+    for row in candidates:
+        prior = existing.get(_norm_handle(row.get("handle")))
+        if not (prior and prior.get("decided_by") == "user"):
+            existing[_norm_handle(row.get("handle"))] = {**(prior or {}), **row}
+    payload.update({"accounts": list(existing.values()), "updated_at": datetime.now(timezone.utc).date().isoformat(), "updated_by": "machine:x_source_registry_v2"})
+    with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"[official-registry] linked source candidates: {len(candidates)}")
+    return candidates
 
 
 def _ensure_x_member_score_props():
@@ -4058,6 +4083,7 @@ def main():
             json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
 
         _save_x_account_scores(deduped_voices, _load_x_config() or {})
+        _refresh_official_source_registry(deduped_voices)
 
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
     except RawXArchiveError:
