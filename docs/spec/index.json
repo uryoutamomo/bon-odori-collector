@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T16:05:32Z",
-  "generated_for_commit": "958c6db",
+  "generated_at": "2026-08-13T22:45:08Z",
+  "generated_for_commit": "3b43069",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -433,6 +433,124 @@
         "files_changed_since": 0
       }
     },
+    "L1-youtube": {
+      "layer": "L1",
+      "title": "YouTube取り込みサブシステム",
+      "owns": [
+        "youtube_backfill/**",
+        "youtube_channels/**",
+        "run_daily_youtube_backfill.py",
+        "run_review_inbox_youtube_scheduled.py",
+        "run_review_inbox_youtube_active_scheduled.py",
+        "build_youtube_active_video_review.py",
+        "build_youtube_year_backfill_queue.py",
+        "build_youtube_year_backfill_review_queue.py",
+        "build_youtube_channels.py",
+        "build_youtube_channel_review.py",
+        "build_youtube_song_master.py",
+        "build_youtube_event_song_candidates.py",
+        "build_youtube_nationwide_hold.py",
+        "apply_youtube_setlist_occurrences_rdb.py",
+        "apply_curated_youtube_aliases.py",
+        "apply_youtube_year_backfill_review_decisions.py",
+        "apply_youtube_2025_koto_decisions.py",
+        "dry_run_youtube_existing_event_updates.py",
+        "dry_run_youtube_active_existing_event_updates.py",
+        "export_youtube_2025_date_backfill_plan.py",
+        "export_youtube_2025_official_candidate_validation.py",
+        "export_youtube_2025_second_pass_event_groups.py",
+        "fetch_youtube_2025_backfill.py",
+        "promote_youtube_channel_registry.py",
+        "refresh_youtube_voices.py",
+        "update_youtube_notion_progress.py",
+        "update_youtube_followup_progress.py",
+        "close_youtube_notion_task_checkboxes.py",
+        "scripts/manual/audit_youtube_song_clip_fragments.py",
+        "scripts/manual/render_youtube_candidate_report.py",
+        ".github/workflows/youtube_daily_backfill.yml",
+        "ops/com.ryotauchida.bon-odori.youtube-daily.plist",
+        "docs/youtube-daily-operations.md"
+      ],
+      "depends_on": [
+        "L1-collection",
+        "L1-review",
+        "L1-master",
+        "L1-publication",
+        "L1-songs"
+      ],
+      "invariants": [
+        "INV-YTB-001",
+        "INV-YTB-002",
+        "INV-YTB-003",
+        "INV-YTB-004",
+        "INV-YTB-005"
+      ],
+      "verified_by": [
+        "tests/test_run_daily_youtube_backfill.py",
+        "tests/test_youtube_daily_operations_policy.py",
+        "tests/test_apply_youtube_setlist_occurrences_rdb.py",
+        "tests/test_extract_youtube_setlists.py"
+      ],
+      "updated_for": "83bf7d0",
+      "path": "docs/spec/L1/09-youtube.md",
+      "owned_files": [
+        ".github/workflows/youtube_daily_backfill.yml",
+        "apply_curated_youtube_aliases.py",
+        "apply_youtube_2025_koto_decisions.py",
+        "apply_youtube_setlist_occurrences_rdb.py",
+        "apply_youtube_year_backfill_review_decisions.py",
+        "build_youtube_active_video_review.py",
+        "build_youtube_channel_review.py",
+        "build_youtube_channels.py",
+        "build_youtube_event_song_candidates.py",
+        "build_youtube_nationwide_hold.py",
+        "build_youtube_song_master.py",
+        "build_youtube_year_backfill_queue.py",
+        "build_youtube_year_backfill_review_queue.py",
+        "close_youtube_notion_task_checkboxes.py",
+        "docs/youtube-daily-operations.md",
+        "dry_run_youtube_active_existing_event_updates.py",
+        "dry_run_youtube_existing_event_updates.py",
+        "export_youtube_2025_date_backfill_plan.py",
+        "export_youtube_2025_official_candidate_validation.py",
+        "export_youtube_2025_second_pass_event_groups.py",
+        "fetch_youtube_2025_backfill.py",
+        "ops/com.ryotauchida.bon-odori.youtube-daily.plist",
+        "promote_youtube_channel_registry.py",
+        "refresh_youtube_voices.py",
+        "run_daily_youtube_backfill.py",
+        "run_review_inbox_youtube_active_scheduled.py",
+        "run_review_inbox_youtube_scheduled.py",
+        "scripts/manual/audit_youtube_song_clip_fragments.py",
+        "scripts/manual/render_youtube_candidate_report.py",
+        "update_youtube_followup_progress.py",
+        "update_youtube_notion_progress.py",
+        "youtube_backfill/__init__.py",
+        "youtube_backfill/apply_event_occurrence_backfill_plan.py",
+        "youtube_backfill/build_event_date_predictions.py",
+        "youtube_backfill/build_event_occurrence_backfill_plan.py",
+        "youtube_backfill/build_event_occurrence_observations.py",
+        "youtube_backfill/build_event_schedule_rules.py",
+        "youtube_backfill/build_low_confidence_backfill_review.py",
+        "youtube_backfill/build_month_youtube_backfill_queue.py",
+        "youtube_backfill/build_youtube_event_review.py",
+        "youtube_backfill/event_aliases.py",
+        "youtube_backfill/evidence_dates.py",
+        "youtube_backfill/export_youtube_2025_manual_confirmation_queue.py",
+        "youtube_backfill/harvest_youtube_year_backfill.py",
+        "youtube_backfill/plan_youtube_event_updates.py",
+        "youtube_backfill/youtube_title_parts.py",
+        "youtube_channels/__init__.py",
+        "youtube_channels/active_video_review.py",
+        "youtube_channels/backfill_youtube_descriptions.py",
+        "youtube_channels/discover_youtube_channels.py",
+        "youtube_channels/extract_youtube_setlists.py"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
     "L2-master-schema": {
       "layer": "L2",
       "title": "マスタRDBスキーマ契約",
@@ -503,13 +621,13 @@
       "depends_on": [],
       "invariants": [],
       "verified_by": [],
-      "updated_for": "6537e7f",
+      "updated_for": "83bf7d0",
       "path": "docs/spec/README.md",
       "owned_files": [
         "docs/spec/README.md"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 1,
         "files_changed_since": 1
       }
     },
@@ -799,6 +917,46 @@
       ],
       "has_test": true
     },
+    "INV-YTB-001": {
+      "spec": "L1-youtube",
+      "title": "日次バックフィルの出力を、公開JSONとして main へ載せない",
+      "tests": [
+        "tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_workflow_does_not_stage_public_event_json"
+      ],
+      "has_test": true
+    },
+    "INV-YTB-002": {
+      "spec": "L1-youtube",
+      "title": "日次の再生成は、公開exportを基準日つきで一度だけ通す",
+      "tests": [
+        "tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_regenerate_outputs_uses_single_public_export_path"
+      ],
+      "has_test": true
+    },
+    "INV-YTB-003": {
+      "spec": "L1-youtube",
+      "title": "クォータ上限に当たったら、失敗させずにその時点で止める",
+      "tests": [
+        "tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_run_harvest_batches_stops_cleanly_on_quota_limit"
+      ],
+      "has_test": true
+    },
+    "INV-YTB-004": {
+      "spec": "L1-youtube",
+      "title": "セットリスト由来の曲名は、曲マスタの検査を通ったものだけを開催回の曲にする",
+      "tests": [
+        "tests/test_apply_youtube_setlist_occurrences_rdb.py::ResolveSongTest::test_rejects_a_title_whose_master_row_was_deactivated"
+      ],
+      "has_test": true
+    },
+    "INV-YTB-005": {
+      "spec": "L1-youtube",
+      "title": "日次バックフィルの自動実行元は、GitHub Actions ひとつだけである",
+      "tests": [
+        "tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_local_launchagent_template_is_manual_only"
+      ],
+      "has_test": true
+    },
     "INV-SCH-001": {
       "spec": "L2-master-schema",
       "title": "系列内の開催回は年・回数で一意である",
@@ -994,6 +1152,57 @@
     "song_processing/song_occurrences.py": "L1-songs",
     "song_processing/weekly_song_triage.py": "L1-songs",
     "triage_weekly_song_candidates.py": "L1-songs",
+    ".github/workflows/youtube_daily_backfill.yml": "L1-youtube",
+    "apply_curated_youtube_aliases.py": "L1-youtube",
+    "apply_youtube_2025_koto_decisions.py": "L1-youtube",
+    "apply_youtube_setlist_occurrences_rdb.py": "L1-youtube",
+    "apply_youtube_year_backfill_review_decisions.py": "L1-youtube",
+    "build_youtube_active_video_review.py": "L1-youtube",
+    "build_youtube_channel_review.py": "L1-youtube",
+    "build_youtube_channels.py": "L1-youtube",
+    "build_youtube_event_song_candidates.py": "L1-youtube",
+    "build_youtube_nationwide_hold.py": "L1-youtube",
+    "build_youtube_song_master.py": "L1-youtube",
+    "build_youtube_year_backfill_queue.py": "L1-youtube",
+    "build_youtube_year_backfill_review_queue.py": "L1-youtube",
+    "close_youtube_notion_task_checkboxes.py": "L1-youtube",
+    "docs/youtube-daily-operations.md": "L1-youtube",
+    "dry_run_youtube_active_existing_event_updates.py": "L1-youtube",
+    "dry_run_youtube_existing_event_updates.py": "L1-youtube",
+    "export_youtube_2025_date_backfill_plan.py": "L1-youtube",
+    "export_youtube_2025_official_candidate_validation.py": "L1-youtube",
+    "export_youtube_2025_second_pass_event_groups.py": "L1-youtube",
+    "fetch_youtube_2025_backfill.py": "L1-youtube",
+    "ops/com.ryotauchida.bon-odori.youtube-daily.plist": "L1-youtube",
+    "promote_youtube_channel_registry.py": "L1-youtube",
+    "refresh_youtube_voices.py": "L1-youtube",
+    "run_daily_youtube_backfill.py": "L1-youtube",
+    "run_review_inbox_youtube_active_scheduled.py": "L1-youtube",
+    "run_review_inbox_youtube_scheduled.py": "L1-youtube",
+    "scripts/manual/audit_youtube_song_clip_fragments.py": "L1-youtube",
+    "scripts/manual/render_youtube_candidate_report.py": "L1-youtube",
+    "update_youtube_followup_progress.py": "L1-youtube",
+    "update_youtube_notion_progress.py": "L1-youtube",
+    "youtube_backfill/__init__.py": "L1-youtube",
+    "youtube_backfill/apply_event_occurrence_backfill_plan.py": "L1-youtube",
+    "youtube_backfill/build_event_date_predictions.py": "L1-youtube",
+    "youtube_backfill/build_event_occurrence_backfill_plan.py": "L1-youtube",
+    "youtube_backfill/build_event_occurrence_observations.py": "L1-youtube",
+    "youtube_backfill/build_event_schedule_rules.py": "L1-youtube",
+    "youtube_backfill/build_low_confidence_backfill_review.py": "L1-youtube",
+    "youtube_backfill/build_month_youtube_backfill_queue.py": "L1-youtube",
+    "youtube_backfill/build_youtube_event_review.py": "L1-youtube",
+    "youtube_backfill/event_aliases.py": "L1-youtube",
+    "youtube_backfill/evidence_dates.py": "L1-youtube",
+    "youtube_backfill/export_youtube_2025_manual_confirmation_queue.py": "L1-youtube",
+    "youtube_backfill/harvest_youtube_year_backfill.py": "L1-youtube",
+    "youtube_backfill/plan_youtube_event_updates.py": "L1-youtube",
+    "youtube_backfill/youtube_title_parts.py": "L1-youtube",
+    "youtube_channels/__init__.py": "L1-youtube",
+    "youtube_channels/active_video_review.py": "L1-youtube",
+    "youtube_channels/backfill_youtube_descriptions.py": "L1-youtube",
+    "youtube_channels/discover_youtube_channels.py": "L1-youtube",
+    "youtube_channels/extract_youtube_setlists.py": "L1-youtube",
     "master_rdb/master_db.py": "L2-master-schema",
     "data/public/event_songs_public.json": "L2-public-json",
     "data/public/events_public.js": "L2-public-json",
@@ -1008,10 +1217,9 @@
   },
   "coverage": {
     "tracked_source_files": 328,
-    "owned": 138,
-    "unowned": 190,
+    "owned": 186,
+    "unowned": 142,
     "unowned_samples": [
-      "apply_curated_youtube_aliases.py",
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
       "apply_official_source_review_decisions.py",
@@ -1030,7 +1238,8 @@
       "apply_reviewed_venue_field_fixes.py",
       "apply_series_source_url_inheritance.py",
       "apply_weekly_harvest_human13_decisions.py",
-      "apply_x_roster_decisions.py"
+      "apply_x_roster_decisions.py",
+      "archive_event_candidate_backlog.py"
     ]
   }
 }
