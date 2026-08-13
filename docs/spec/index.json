@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T14:43:54Z",
-  "generated_for_commit": "ba928cd",
+  "generated_at": "2026-08-13T16:05:32Z",
+  "generated_for_commit": "958c6db",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -14,7 +14,9 @@
         "collection_support/x_source_registry.py",
         "collection_support/x_author_profile.py",
         "collection_support/x_official_source_accounts.py",
-        "collection_support/voices_s3_artifact.py"
+        "collection_support/voices_s3_artifact.py",
+        "collect_venue_sites.py",
+        "venue_sites.json"
       ],
       "depends_on": [],
       "invariants": [
@@ -31,6 +33,7 @@
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         "collect.py",
+        "collect_venue_sites.py",
         "collection_support/voices_s3_artifact.py",
         "collection_support/x_author_profile.py",
         "collection_support/x_budget_guard.py",
@@ -38,7 +41,8 @@
         "collection_support/x_cost_ledger.py",
         "collection_support/x_official_source_accounts.py",
         "collection_support/x_raw_archive.py",
-        "collection_support/x_source_registry.py"
+        "collection_support/x_source_registry.py",
+        "venue_sites.json"
       ],
       "staleness": {
         "commits_since": 0,
@@ -233,7 +237,9 @@
         "guard_site_public_event_additions.py",
         "venues/export_public_venues.py"
       ],
-      "depends_on": [],
+      "depends_on": [
+        "L1-master"
+      ],
       "invariants": [
         "INV-PUB-001",
         "INV-PUB-002",
@@ -338,6 +344,95 @@
         "files_changed_since": 0
       }
     },
+    "L1-songs": {
+      "layer": "L1",
+      "title": "曲目サブシステム",
+      "owns": [
+        "song_processing/**",
+        "build_event_song_candidates.py",
+        "build_song_occurrences.py",
+        "build_song_ocr_queue.py",
+        "build_song_catalog_shadow_report.py",
+        "build_song_content_research_queue.py",
+        "build_song_evidence_adapter_shadow.py",
+        "build_song_occurrence_matching_candidates.py",
+        "build_song_publication_review.py",
+        "calibrate_song_predictions.py",
+        "calibrate_song_probabilities_rdb.py",
+        "inherit_song_probabilities_rdb.py",
+        "export_master_rdb_song_occurrences.py",
+        "triage_weekly_song_candidates.py",
+        "register_song_master_initial.py",
+        "song_candidate_finite_actions.py",
+        "apply_song_candidate_finite_actions.py",
+        "apply_song_content_research_batch.py",
+        "apply_song_ocr_review.py",
+        "apply_song_official_sources_batch.py",
+        "apply_song_publication_review_decisions.py",
+        "apply_weekly_song_final_corrections.py",
+        "apply_weekly_song_review_decisions.py",
+        "scripts/build_song_candidate_finite_payload.py",
+        "scripts/run_song_candidate_decision_write.py",
+        "scripts/manual/render_song_calibration_report.py"
+      ],
+      "depends_on": [
+        "L1-judgment",
+        "L1-review",
+        "L1-master",
+        "L2-master-schema"
+      ],
+      "invariants": [
+        "INV-SNG-001",
+        "INV-SNG-002",
+        "INV-SNG-003"
+      ],
+      "verified_by": [
+        "tests/test_bon_odori_songs.py",
+        "tests/test_song_catalog.py",
+        "tests/test_weekly_song_triage.py",
+        "tests/test_export_public_events.py"
+      ],
+      "updated_for": "f517fa8",
+      "path": "docs/spec/L1/08-songs.md",
+      "owned_files": [
+        "apply_song_candidate_finite_actions.py",
+        "apply_song_content_research_batch.py",
+        "apply_song_ocr_review.py",
+        "apply_song_official_sources_batch.py",
+        "apply_song_publication_review_decisions.py",
+        "apply_weekly_song_final_corrections.py",
+        "apply_weekly_song_review_decisions.py",
+        "build_event_song_candidates.py",
+        "build_song_catalog_shadow_report.py",
+        "build_song_content_research_queue.py",
+        "build_song_evidence_adapter_shadow.py",
+        "build_song_occurrence_matching_candidates.py",
+        "build_song_occurrences.py",
+        "build_song_ocr_queue.py",
+        "build_song_publication_review.py",
+        "calibrate_song_predictions.py",
+        "calibrate_song_probabilities_rdb.py",
+        "export_master_rdb_song_occurrences.py",
+        "inherit_song_probabilities_rdb.py",
+        "register_song_master_initial.py",
+        "scripts/build_song_candidate_finite_payload.py",
+        "scripts/manual/render_song_calibration_report.py",
+        "scripts/run_song_candidate_decision_write.py",
+        "song_candidate_finite_actions.py",
+        "song_processing/__init__.py",
+        "song_processing/bon_odori_songs.py",
+        "song_processing/song_catalog.py",
+        "song_processing/song_evidence_adapters.py",
+        "song_processing/song_master_registration.py",
+        "song_processing/song_occurrences.py",
+        "song_processing/weekly_song_triage.py",
+        "triage_weekly_song_candidates.py"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
     "L2-master-schema": {
       "layer": "L2",
       "title": "マスタRDBスキーマ契約",
@@ -414,7 +509,7 @@
         "docs/spec/README.md"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 1
       }
     },
@@ -445,7 +540,7 @@
         "tests/test_spec_index.py"
       ],
       "staleness": {
-        "commits_since": 3,
+        "commits_since": 4,
         "files_changed_since": 6
       }
     }
@@ -680,6 +775,30 @@
       ],
       "has_test": true
     },
+    "INV-SNG-001": {
+      "spec": "L1-songs",
+      "title": "曲名でないと確認された文字列は公開曲目に出さない",
+      "tests": [
+        "tests/test_export_public_events.py::ExportPublicEventsTest::test_suppressed_prose_never_reaches_public_songs"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-002": {
+      "spec": "L1-songs",
+      "title": "公開する曲には、その確からしさの出どころを必ず添える",
+      "tests": [
+        "tests/test_export_public_events.py::ExportPublicEventsTest::test_song_from_rdb_labels_basis_by_evidence_status"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-003": {
+      "spec": "L1-songs",
+      "title": "レビュー未了・無効・状態不明の曲を「確認済み」として扱わない",
+      "tests": [
+        "tests/test_song_catalog.py::TestSongCatalog::test_candidate_is_not_verified"
+      ],
+      "has_test": true
+    },
     "INV-SCH-001": {
       "spec": "L2-master-schema",
       "title": "系列内の開催回は年・回数で一意である",
@@ -731,6 +850,7 @@
   },
   "file_to_spec": {
     "collect.py": "L1-collection",
+    "collect_venue_sites.py": "L1-collection",
     "collection_support/voices_s3_artifact.py": "L1-collection",
     "collection_support/x_author_profile.py": "L1-collection",
     "collection_support/x_budget_guard.py": "L1-collection",
@@ -739,6 +859,7 @@
     "collection_support/x_official_source_accounts.py": "L1-collection",
     "collection_support/x_raw_archive.py": "L1-collection",
     "collection_support/x_source_registry.py": "L1-collection",
+    "venue_sites.json": "L1-collection",
     "collection_support/event_evidence.py": "L1-judgment",
     "collection_support/suppression_rules.py": "L1-judgment",
     "collection_support/tokyo23_scope.py": "L1-judgment",
@@ -841,6 +962,38 @@
     "infra/waf-cloudfront-managed-rules.json": "L1-platform",
     "operation_safety/__init__.py": "L1-platform",
     "operation_safety/manual_apply_guards.py": "L1-platform",
+    "apply_song_candidate_finite_actions.py": "L1-songs",
+    "apply_song_content_research_batch.py": "L1-songs",
+    "apply_song_ocr_review.py": "L1-songs",
+    "apply_song_official_sources_batch.py": "L1-songs",
+    "apply_song_publication_review_decisions.py": "L1-songs",
+    "apply_weekly_song_final_corrections.py": "L1-songs",
+    "apply_weekly_song_review_decisions.py": "L1-songs",
+    "build_event_song_candidates.py": "L1-songs",
+    "build_song_catalog_shadow_report.py": "L1-songs",
+    "build_song_content_research_queue.py": "L1-songs",
+    "build_song_evidence_adapter_shadow.py": "L1-songs",
+    "build_song_occurrence_matching_candidates.py": "L1-songs",
+    "build_song_occurrences.py": "L1-songs",
+    "build_song_ocr_queue.py": "L1-songs",
+    "build_song_publication_review.py": "L1-songs",
+    "calibrate_song_predictions.py": "L1-songs",
+    "calibrate_song_probabilities_rdb.py": "L1-songs",
+    "export_master_rdb_song_occurrences.py": "L1-songs",
+    "inherit_song_probabilities_rdb.py": "L1-songs",
+    "register_song_master_initial.py": "L1-songs",
+    "scripts/build_song_candidate_finite_payload.py": "L1-songs",
+    "scripts/manual/render_song_calibration_report.py": "L1-songs",
+    "scripts/run_song_candidate_decision_write.py": "L1-songs",
+    "song_candidate_finite_actions.py": "L1-songs",
+    "song_processing/__init__.py": "L1-songs",
+    "song_processing/bon_odori_songs.py": "L1-songs",
+    "song_processing/song_catalog.py": "L1-songs",
+    "song_processing/song_evidence_adapters.py": "L1-songs",
+    "song_processing/song_master_registration.py": "L1-songs",
+    "song_processing/song_occurrences.py": "L1-songs",
+    "song_processing/weekly_song_triage.py": "L1-songs",
+    "triage_weekly_song_candidates.py": "L1-songs",
     "master_rdb/master_db.py": "L2-master-schema",
     "data/public/event_songs_public.json": "L2-public-json",
     "data/public/events_public.js": "L2-public-json",
@@ -855,8 +1008,8 @@
   },
   "coverage": {
     "tracked_source_files": 328,
-    "owned": 105,
-    "unowned": 223,
+    "owned": 138,
+    "unowned": 190,
     "unowned_samples": [
       "apply_curated_youtube_aliases.py",
       "apply_notion_drift_public_intro.py",
@@ -876,8 +1029,8 @@
       "apply_reviewed_shinagawa_date_fills.py",
       "apply_reviewed_venue_field_fixes.py",
       "apply_series_source_url_inheritance.py",
-      "apply_song_candidate_finite_actions.py",
-      "apply_song_content_research_batch.py"
+      "apply_weekly_harvest_human13_decisions.py",
+      "apply_x_roster_decisions.py"
     ]
   }
 }
