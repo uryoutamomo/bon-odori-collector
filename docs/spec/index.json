@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T04:07:48Z",
-  "generated_for_commit": "eedc5c2",
+  "generated_at": "2026-08-13T06:38:01Z",
+  "generated_for_commit": "5e52162",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -151,7 +151,11 @@
       "layer": "L1",
       "title": "マスタ（Master RDB）サブシステム",
       "owns": [
-        "master_rdb/**",
+        "master_rdb/__init__.py",
+        "master_rdb/audit.py",
+        "master_rdb/freeze_policy.py",
+        "master_rdb/s3_artifact.py",
+        "master_rdb/unified_model_audit.py",
         "rdb_builders/**",
         "report_apply/**",
         "event_model/**",
@@ -192,7 +196,6 @@
         "master_rdb/__init__.py",
         "master_rdb/audit.py",
         "master_rdb/freeze_policy.py",
-        "master_rdb/master_db.py",
         "master_rdb/s3_artifact.py",
         "master_rdb/unified_model_audit.py",
         "master_rdb_freeze_policy.py",
@@ -332,6 +335,65 @@
         "files_changed_since": 0
       }
     },
+    "L2-master-schema": {
+      "layer": "L2",
+      "title": "マスタRDBスキーマ契約",
+      "owns": [
+        "master_rdb/master_db.py"
+      ],
+      "depends_on": [
+        "L1-master"
+      ],
+      "invariants": [
+        "INV-SCH-001",
+        "INV-SCH-002",
+        "INV-SCH-003"
+      ],
+      "verified_by": [
+        "tests/test_master_db_connection_guards.py"
+      ],
+      "updated_for": "6537e7f",
+      "path": "docs/spec/L2/master-schema.md",
+      "owned_files": [
+        "master_rdb/master_db.py"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
+    "L2-public-json": {
+      "layer": "L2",
+      "title": "公開JSONのフィールド契約",
+      "owns": [
+        "data/public/events_public.json",
+        "data/public/event_songs_public.json",
+        "data/public/events_public.js"
+      ],
+      "depends_on": [
+        "L1-publication"
+      ],
+      "invariants": [
+        "INV-PJS-001",
+        "INV-PJS-002",
+        "INV-PJS-003"
+      ],
+      "verified_by": [
+        "tests/test_export_public_events.py",
+        "tests/test_classify_public_events_diff.py"
+      ],
+      "updated_for": "6537e7f",
+      "path": "docs/spec/L2/public-json.md",
+      "owned_files": [
+        "data/public/event_songs_public.json",
+        "data/public/events_public.js",
+        "data/public/events_public.json"
+      ],
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      }
+    },
     "L0": {
       "layer": "L0",
       "title": "盆助 全体地図",
@@ -347,7 +409,7 @@
         "docs/spec/README.md"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 1
       }
     },
@@ -588,6 +650,46 @@
         "tests/test_guard_git_large_files.py::test_classifies_warn_and_block_files"
       ],
       "has_test": true
+    },
+    "INV-SCH-001": {
+      "spec": "L2-master-schema",
+      "title": "系列内の開催回は年・回数で一意である",
+      "tests": [],
+      "has_test": false
+    },
+    "INV-SCH-002": {
+      "spec": "L2-master-schema",
+      "title": "確定・終了の開催回は confirmed の日付確実性だけを持つ",
+      "tests": [],
+      "has_test": false
+    },
+    "INV-SCH-003": {
+      "spec": "L2-master-schema",
+      "title": "スキーマ変更は適用済みmigrationとして記録する",
+      "tests": [],
+      "has_test": false
+    },
+    "INV-PJS-001": {
+      "spec": "L2-public-json",
+      "title": "同一性は `name` と `venue` の組で決まり、それ以外にIDは無い",
+      "tests": [
+        "tests/test_guard_public_events_sync.py::test_exact_key_replacement_preserves_event_count_and_resolves_keys"
+      ],
+      "has_test": true
+    },
+    "INV-PJS-002": {
+      "spec": "L2-public-json",
+      "title": "高リスクフィールドの変化は、無検査で公開へ流さない",
+      "tests": [
+        "tests/test_classify_public_events_diff.py::test_source_url_removal_is_high_risk_individual_review"
+      ],
+      "has_test": true
+    },
+    "INV-PJS-003": {
+      "spec": "L2-public-json",
+      "title": "読む側は、フィールドが欠けている前提で書く",
+      "tests": [],
+      "has_test": false
     }
   },
   "file_to_spec": {
@@ -655,7 +757,6 @@
     "master_rdb/__init__.py": "L1-master",
     "master_rdb/audit.py": "L1-master",
     "master_rdb/freeze_policy.py": "L1-master",
-    "master_rdb/master_db.py": "L1-master",
     "master_rdb/s3_artifact.py": "L1-master",
     "master_rdb/unified_model_audit.py": "L1-master",
     "master_rdb_freeze_policy.py": "L1-master",
@@ -703,6 +804,10 @@
     "infra/waf-cloudfront-managed-rules.json": "L1-platform",
     "operation_safety/__init__.py": "L1-platform",
     "operation_safety/manual_apply_guards.py": "L1-platform",
+    "master_rdb/master_db.py": "L2-master-schema",
+    "data/public/event_songs_public.json": "L2-public-json",
+    "data/public/events_public.js": "L2-public-json",
+    "data/public/events_public.json": "L2-public-json",
     "docs/spec/README.md": "L0",
     ".github/workflows/spec_check.yml": "SPEC-GUIDE",
     ".github/workflows/spec_index_refresh.yml": "SPEC-GUIDE",
