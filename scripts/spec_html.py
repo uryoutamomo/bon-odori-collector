@@ -323,7 +323,13 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .results .none{padding:11px 12px;font-size:12.5px;color:var(--muted)}
 
 .page{padding:34px 34px 90px;max-width:860px}
-.page[hidden]{display:none}
+/* JSが動く環境だけ1ページずつ表示する。動かない環境（iOSのファイルプレビュー等）では
+   全ページが縦に並ぶだけで、真っ白にはならない。 */
+.js .page{display:none}
+.js .page.on{display:block}
+.js .nojs-note{display:none}
+.nojs-note{margin:0 0 24px;padding:11px 14px;background:var(--surface-2);
+  border-left:2px solid var(--accent);border-radius:0 3px 3px 0;font-size:13.5px;color:var(--ink-soft)}
 .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
   font-weight:700;margin:0 0 6px}
 .page h1{font-family:var(--serif);font-size:33px;line-height:1.35;margin:0 0 6px;
@@ -426,7 +432,7 @@ def render_html(index, ordered, sections, rows):
             else ""
         )
         pages.append(
-            f'<article class="page" id="{sid}" hidden>'
+            f'<article class="page" id="{sid}">'
             f'<p class="eyebrow">{html.escape(layer)} ・ {html.escape(freshness)}</p>'
             f"{body}{owned_list}"
             "</article>"
@@ -447,7 +453,7 @@ def render_html(index, ordered, sections, rows):
         for r in rows
     )
 
-    inv_page = f"""<article class="page" id="invariants" hidden>
+    inv_page = f"""<article class="page" id="invariants">
 <p class="eyebrow">横断ビュー</p>
 <h1>不変条件の一覧</h1>
 <p class="lead">「破ると全体が壊れる約束」を一覧にしたもの。<strong>テストなし</strong>の行は、
@@ -475,6 +481,7 @@ def render_html(index, ordered, sections, rows):
     )
 
     return f"""<title>盆助 仕様書</title>
+<script>document.documentElement.className += " js";</script>
 <style>{CSS}</style>
 <div class="shell">
 <nav class="rail">
@@ -494,6 +501,8 @@ def render_html(index, ordered, sections, rows):
     </div>
     <span class="hint">触るファイルが決まっているときは、ここから引く</span>
   </div>
+  <p class="nojs-note">この環境ではページ切り替えと逆引き検索が使えないため、
+  すべての仕様を続けて表示しています。上から順に読むか、端末の検索機能で探してください。</p>
   {"".join(pages)}
   {inv_page}
 </div>
@@ -505,7 +514,7 @@ const links = [...document.querySelectorAll('.navlink')];
 
 function show(id) {{
   const target = document.getElementById(id) ? id : pages[0].id;
-  pages.forEach(p => {{ p.hidden = p.id !== target; }});
+  pages.forEach(p => {{ p.classList.toggle('on', p.id === target); }});
   links.forEach(a => a.classList.toggle('on', a.dataset.target === target));
   document.querySelector('.main').scrollTo?.({{top: 0}});
   window.scrollTo({{top: 0, behavior: 'auto'}});
