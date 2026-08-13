@@ -1,0 +1,20 @@
+name: Refresh specification index
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python scripts/spec_index.py build --out docs/spec/index.json
+      - name: Commit refreshed index
+        run: |
+          git add docs/spec/index.json
+          python guard_git_large_files.py
+          git diff --cached --quiet || (git config user.name github-actions[bot] && git config user.email 41898282+github-actions[bot]@users.noreply.github.com && git commit -m "Refresh specification index" && git push)

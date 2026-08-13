@@ -1,0 +1,29 @@
+name: Specification check
+on:
+  pull_request:
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Check specification consistency
+        run: python scripts/spec_index.py check
+      - name: Render impact report
+        id: impact
+        run: |
+          python scripts/spec_index.py impact > /tmp/spec-impact.md || true
+          echo 'body<<EOF' >> "$GITHUB_OUTPUT"
+          cat /tmp/spec-impact.md >> "$GITHUB_OUTPUT"
+          echo EOF >> "$GITHUB_OUTPUT"
+      - name: Update impact comment
+        continue-on-error: true
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: spec-impact
+          message: ${{ steps.impact.outputs.body }}
