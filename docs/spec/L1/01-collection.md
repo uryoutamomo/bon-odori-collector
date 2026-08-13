@@ -17,8 +17,10 @@ invariants:
   - INV-COL-001
   - INV-COL-002
   - INV-COL-003
+  - INV-COL-004
 verified_by:
   - tests/test_x_raw_archive.py
+  - tests/test_x_collection_health.py
 updated_for: 6537e7f
 ---
 
@@ -52,13 +54,21 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 - **守っているコード**: `collect.py` の `_prepare_new_x_posts()`
 - **守っているテスト**: **なし（要追加）**
 
-### INV-COL-003 APIキー・設定・予算が欠けるX収集は安全にスキップする
+### INV-COL-003 収集不能・受理0件を正常な「投稿なし」として扱わない
 
-- **内容**: `collect_x_voices()` は必要条件がないと空結果と収集レーンの理由を返し、推測した取得や無制限のAPI呼出しをしない。
-- **なぜ**: 外部API失敗を無理に回復すると、予算超過や「取得できなかった」を「投稿がなかった」と誤認する事故になるから。
-- **破れたときの症状**: API費用が予想外に増える、または収集停止が正常終了に見えて探索の穴に気づけない。
-- **守っているコード**: `collect.py` の `collect_x_voices()`、`collection_support/x_budget_guard.py`
-- **守っているテスト**: **なし（要追加）**
+- **内容**: `collect_x_voices()` はキー・設定・予算が欠けると理由つきで安全にスキップする。さらに `finalize_health_report()` は、収集が必要なのに無効だった場合と、成功扱いでも受理0件だった場合を `unhealthy` にする。
+- **なぜ**: 2026-08-10のtwitterapi.io課金切れでは、HTTP上は成功しても取得が空だった。止めるだけでは障害を「投稿なし」と取り違えるため、空を異常として見える化しなければならない。
+- **破れたときの症状**: API費用が予想外に増える、または収集停止・受理0件が正常終了に見えて探索の穴が何日も続く。
+- **守っているコード**: `collect.py` の `collect_x_voices()`、`collection_support/x_budget_guard.py`、`collection_support/x_collection_health.py` の `finalize_health_report()`
+- **守っているテスト**: `tests/test_x_collection_health.py::test_successful_but_zero_item_run_is_unhealthy`、`tests/test_x_collection_health.py::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items`
+
+### INV-COL-004 未完了のホワイトリスト収集では since_time を進めない
+
+- **内容**: `collect_whitelist_voices()` は、全バッチが完了したときだけ次回検索の `since_time` を保存する。402などで一部でも未完了なら従来の時刻を維持する。
+- **なぜ**: `since_time` を先に進めると、その時間窓の投稿は次回以降の検索対象から外れ、取りこぼしが恒久化するから。
+- **破れたときの症状**: 課金・通信障害の時間帯だけ候補が永久に消え、復旧後も再収集されない。
+- **守っているコード**: `collect.py` のホワイトリスト収集と `since_time` 保存経路
+- **守っているテスト**: `tests/test_x_collection_health.py::test_whitelist_402_after_partial_success_does_not_advance_since_time`、`tests/test_x_collection_health.py::test_whitelist_advances_since_time_only_after_every_batch_completes`
 
 ## 主要な流れ
 

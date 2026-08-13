@@ -36,7 +36,7 @@ GitHub Actions、インフラ定義、手動実行の確認句、リポジトリ
 - **なぜ**: dry-run と実反映を同じ見た目で実行すると、コピーペーストや引数漏れで本番データを変える危険があるから。
 - **破れたときの症状**: 調査のつもりのコマンドが実データや外部サービスを書き換える。
 - **守っているコード**: `operation_safety/manual_apply_guards.py` の `require_confirmation()`
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_public_json_postprocessor_policy.py::test_manual_public_json_one_off_scripts_require_confirmation`、`tests/test_public_json_postprocessor_policy.py::test_master_rdb_one_off_scripts_keep_specific_confirmations`
 
 ### INV-PLT-002 GitHubの上限に近い大容量ファイルをコミットしない
 
