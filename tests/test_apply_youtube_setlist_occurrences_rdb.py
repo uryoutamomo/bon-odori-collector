@@ -172,6 +172,18 @@ class ResolveSongTest(unittest.TestCase):
                 (None, None, "rejected"),
             )
 
+    def test_rejects_an_unseen_title_that_is_not_a_song_name(self):
+        # 形の検査そのものは NonSongShapeCheckTest が見ているが、resolve_song が
+        # それを通していることは誰も見ていなかった（2026-08-14、仕様書 INV-YTB-004 を
+        # 書くための変異確認で判明）。呼び出しを外すと出演者名が曲として登録される。
+        with closing(songs_db()) as conn:
+            self.assertEqual(
+                apply_setlists.resolve_song(conn, "花園直道 with JPN dancers", "", NOW),
+                (None, None, "rejected"),
+            )
+
+            self.assertEqual(conn.execute("SELECT COUNT(*) FROM songs").fetchone()[0], 0)
+
     def test_registers_an_unseen_plausible_title_as_a_candidate(self):
         with closing(songs_db()) as conn:
             song_id, display_title, verdict = apply_setlists.resolve_song(
