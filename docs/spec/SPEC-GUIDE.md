@@ -3,7 +3,10 @@ id: SPEC-GUIDE
 layer: meta
 title: 仕様書の仕様
 owns:
-  - docs/spec/**
+  - docs/spec/SPEC-GUIDE.md
+  - scripts/spec_index.py
+  - .github/workflows/spec_check.yml
+  - .github/workflows/spec_index_refresh.yml
 depends_on: []
 invariants: []
 verified_by:
