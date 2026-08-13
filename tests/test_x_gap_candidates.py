@@ -209,10 +209,12 @@ def test_checked_in_2026_x_gap_sources_keep_only_kanda_date_range_conflict(tmp_p
     # ``渋谷盆踊り2026`` rather than the display name with the ordinal.
     conn.execute("INSERT INTO event_series_aliases VALUES ('s3','渋谷盆踊り')")
     conn.commit(); conn.close()
-    source_keys={'x:2083138983836672409','x:2082662969792688156','x:2062386225651269673'}
-    checked_in=json.loads((ROOT/'data'/'x_gap_candidates.json').read_text(encoding='utf-8'))
-    voices=[row['voice'] for row in checked_in['candidates'] if row['source_key'] in source_keys]
-    assert len(voices)==3
+    # Only fields read by build() are retained; checked-in daily candidates rotate.
+    voices=[
+        {'source':'x','tweet_id':'2082662969792688156','date':'2026-07-30T03:02:00+00:00','text':'／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻'},
+        {'source':'x','tweet_id':'2083138983836672409','date':'2026-07-31T10:33:31+00:00','text':'8/1(土)\n手賀沼花火大会 道の駅しょうなん\n住所：千葉県柏市箕輪新田59-2\n営業時間：9:30~20:00\n\n8/2(日)\n①江戸川スポーツランド\n住所：東京都江戸川区東篠崎1-8-1\n営業時間：9:00~18:00\n②フレスポ八潮\n住所：埼玉県八潮市大瀬1-1-3\n営業時間：11:00~18:00\n\n8/8(土)\n渋谷盆踊り2026 \n住所：東京都渋谷区道玄坂2-2-29\n営業時間：18:00~21:00'},
+        {'source':'x','tweet_id':'2062386225651269673','date':'2026-06-04T04:09:28+00:00','text':'🏮今年も開催！ #神田明神納涼祭り 🏮\n2026年8月7日(金)～9日(日)の3日間、神田明神で納涼祭りを開催します！\nさらに、8月6日(木)の夜には前夜祭も実施🎐\nお近くの方はぜひふらっと遊びに来てください♪\n\n今年の見どころはこちら👇\n🎶 1日目：アニソン盆踊り\n🏮 2日目・3日目：町会様リードの盆踊り'},
+    ]
     payload=build(voices,db,year=2026,today=date(2026,6,4))
     conflicts=[row['matched_occurrence']['event_name'] for row in payload['candidates']
                if row['candidate_kind']=='date_range_conflict']
