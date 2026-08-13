@@ -52,7 +52,7 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 - **なぜ**: 同じ投稿の重複は候補の件数と重要度を水増しし、後段の人の判断を歪めるから。
 - **破れたときの症状**: 同一投稿が複数の候補として並び、レビュー件数とXコストの説明が合わなくなる。
 - **守っているコード**: `collect.py` の `_prepare_new_x_posts()`
-- **守っているテスト**: **なし（要追加）**
+- **守っているテスト**: `tests/test_collect_duplicate_urls.py::test_prepare_new_x_posts_excludes_duplicate_seen_new_seen_and_empty_urls`
 
 ### INV-COL-003 収集不能・受理0件を正常な「投稿なし」として扱わない
 
