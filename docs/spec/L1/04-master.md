@@ -193,8 +193,8 @@ updated_for: 6537e7f
 
 ## 未解決・注意点
 
-- テーブルのスキーマそのものを説明するL2が未執筆。`event_series` と `event_occurrences` の関係、
-  `evidence_items` の使われ方は、いまソースを読むしかない。
+- テーブルのスキーマそのものは[マスタRDBスキーマ契約](../L2/master-schema.md)に書いた
+  （`event_series` と `event_occurrences` の関係、`evidence_items` の使われ方はそちらを見る）。
 - `report_apply` には既知のバグが残っている領域がある（詳細は別途）。
 - 予測日（`predicted_occurrence_dates`）は14件と少なく、器はあるが実質的に使われていない。
 
