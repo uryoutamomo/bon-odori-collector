@@ -1871,7 +1871,9 @@ def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sql
     existing = {_norm_handle(row.get("handle")): row for row in payload.get("accounts", []) if isinstance(row, dict)}
     for row in candidates:
         prior = existing.get(_norm_handle(row.get("handle")))
-        if not (prior and prior.get("decided_by") == "user"):
+        # The pre-v2 registry was manually curated and had no decided_by.
+        # Only a row explicitly produced by this machine may be replaced.
+        if not (prior and prior.get("decided_by") != "machine"):
             existing[_norm_handle(row.get("handle"))] = {**(prior or {}), **row}
     payload.update({"accounts": list(existing.values()), "updated_at": datetime.now(timezone.utc).date().isoformat(), "updated_by": "machine:x_source_registry_v2"})
     with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, "w", encoding="utf-8") as f:

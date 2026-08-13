@@ -15,6 +15,8 @@ from collection_support.x_official_source_accounts import norm_handle
 
 BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|納涼|民踊|音頭|やぐら|櫓", re.I)
 ORG_RE = re.compile(r"町会|自治会|商店(?:街|会)|振興組合|実行委員|保存会|神社|寺|観光協会|商工会|連合会|奉賛会|睦|八幡|氷川|稲荷|区議|都議|議員|区役所")
+STRONG_ORG_RE = re.compile(r"町会|自治会|商店(?:街|会)|振興組合|実行委員|保存会|観光協会|商工会|連合会|奉賛会|区議|都議|議員|区役所")
+DATE_SCHEDULE_RE = re.compile(r"\d{1,2}/\d{1,2}|\d{1,2}月\d{1,2}日")
 
 
 def link_voice_to_events(voice, events):
@@ -33,7 +35,13 @@ def link_voice_to_events(voice, events):
             continue
         # Ward omission is normal for a local organiser.  We only reject an
         # explicit conflicting city/prefecture (checked above), not silence.
-        matched.append(event)
+        linked = dict(event)
+        event_date = _as_date(event.get("date_start") or event.get("date_end"))
+        if event_date:
+            linked["date_matches"] = bool(re.search(
+                rf"(?:{event_date.month}月{event_date.day}日?|{event_date.month}/{event_date.day})(?!\d)", text
+            ))
+        matched.append(linked)
     return matched
 
 
@@ -47,12 +55,16 @@ def tier_for_account(account, today=None):
     today = today or date.today()
     if account.get("decided_by") == "user" and account.get("tier"):
         return account["tier"]
-    linked = [e for e in account.get("linked_events") or []
-              if e.get("confidence") in ("confirmed", "probable")]
+    linked = account.get("linked_events") or []
     if not linked:
         return "pending_review"
+    # Different venues/events provide corroboration even when each individual
+    # sighting is still only possible.
     if len(linked) >= 2:
         return "active"
+    linked = [e for e in linked if e.get("confidence") in ("confirmed", "probable")]
+    if not linked:
+        return "pending_review"
     event = linked[0]
     end = _as_date(event.get("latest_occurrence_end") or event.get("date_end") or event.get("date_start"))
     if end and end >= today - timedelta(days=14):
@@ -113,17 +125,21 @@ def registry_candidates(voices, events):
     grouped = {}
     for voice in voices:
         handle = norm_handle(voice.get("account"))
-        if not handle or not ORG_RE.search(str(voice.get("name") or "")):
+        name = str(voice.get("name") or "")
+        # A performer's date-filled display name can contain a shrine venue.
+        # Treat place-like terms as organisational only when no schedule list
+        # is present, unless an unambiguous organisation/politician term hits.
+        if not handle or not ORG_RE.search(name) or (DATE_SCHEDULE_RE.search(name) and not STRONG_ORG_RE.search(name)):
             continue
         links = link_voice_to_events(voice, events)
-        if links:
-            grouped.setdefault(handle, []).append((voice, links))
+        grouped.setdefault(handle, []).append((voice, links))
     rows = []
     for handle, pairs in grouped.items():
         by_series = {}
         for voice, links in pairs:
             for event in links:
                 series = event.get("series_id") or event.get("series_name")
+                voice = {**voice, "date_matches": event.get("date_matches", False)}
                 by_series.setdefault(series, {**event, "voices": []})["voices"].append(voice)
         linked = [{
             "series_id": event.get("series_id"), "series_name": event.get("series_name", ""),
@@ -132,6 +148,6 @@ def registry_candidates(voices, events):
         } for event in by_series.values()]
         row = {"handle": "@" + handle, "name": pairs[0][0].get("name", ""),
                "source_type": "official", "linked_events": linked, "decided_by": "machine"}
-        row["tier"] = tier_for_account(row)
+        row["tier"] = tier_for_account(row) if linked else "unlinked"
         rows.append(row)
     return rows
