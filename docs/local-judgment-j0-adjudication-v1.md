@@ -217,7 +217,9 @@ python3 review_inbox_adapters/apply_user_adjudications.py --apply --confirm "APP
 5. hold が期限切れでない
 6. **対象IDは凍結された候補集合の中にある（v1.2 で追加）。** `accept` で候補集合が空でないのに `target_id` が無ければ `missing_target_id`、候補集合の外の ID なら `target_not_in_candidate_set`。**画面の外で作られた対象を通さないため**で、これが無いと §0 の「候補集合を凍結する」意味が反映の段で消えます
 
-失敗理由コードは `hold_not_open` / `inbox_mismatch` / `candidate_set_changed` / `action_not_allowed` / `hold_expired` / `missing_target_id` / `target_not_in_candidate_set` / `invalid_decision` の8つです（後半3つは v1.2 で追加）。**`invalid_decision` は契約側で弾かれた場合**に使います。v1.1 は5つしか用意しておらず、契約違反を `action_not_allowed` と記録することになっていました＝実際の失敗理由と食い違うので分けました。
+失敗理由コードは `hold_not_open` / `inbox_mismatch` / `candidate_set_changed` / `action_not_allowed` / `hold_expired` / `missing_target_id` / `target_not_in_candidate_set` / `invalid_decision` / `prior_attempt_missing` の9つです（後半4つは v1.2 で追加）。**`invalid_decision` は契約側で弾かれた場合**、**`prior_attempt_missing` は hold の `prior_agent_attempt_id` に対応する canonical decision が見つからない場合**に使います。v1.1 は5つしか用意しておらず、契約違反を `action_not_allowed` と記録することになっていました＝実際の失敗理由と食い違うので分けました。
+
+**`adjudications.json` に保存する `invalid_reason` と、report の `issue_type` には同じコードを入れてください。** 2つの語彙に割れると、あとから「どの理由で何件通らなかったか」を数えられなくなります（おとの独立レビューで実際に割れているのが見つかりました）。
 
 **ただし `decision_id_conflict`（同じ ID で中身が違う）だけは invalidated にせず、バッチ全体を止めます。** 台帳の履歴が壊れている合図で、1件の記録として流すと気づけないためです（J0-read の `apply_judgment_results.py` と同じ扱い）。
 
@@ -338,6 +340,7 @@ J0-read が作った `review_claim_ledger` を `claim_kind='user'` で使いま�
 13a. **`invalidated` の行は消えずに残り、`invalid_reason` が入る**（監査証跡）
 13b. **`invalidated` の行は次回以降の反映で再処理されない**（同じ issue を出し続けない）
 13c. **`invalidated` になった hold は画面に再び現れ、裁き直すと別の行として記録される**（古い行は残る）
+13d. **hold の `prior_agent_attempt_id` に対応する decision が無いとき、保存する `invalid_reason` と report の `issue_type` が同じコードになる**（v1.2 で追加。監査の語彙を割らない）
 14. 反映で `canonical_decision_ledger` / `review_queue_state_ledger` / `review_hold_ledger` が整合して更新される（queue が `closed`、hold が `resolved`、`resolved_by_decision_id` が入る）
 15. 反映が J0-read の `write_decision` を経由している（構造検査。console 専用の書き込み口が無い）
 16. 途中で失敗したら3表とも書かれない（トランザクション）
@@ -386,7 +389,7 @@ canonical 不変
 
 ## 11. 完了条件
 
-1. §9 の45件（v1.2 時点）がすべて通り、かつ各件が「修正を外すと落ちる」ことを確認済み
+1. §9 の46件（v1.2 時点）がすべて通り、かつ各件が「修正を外すと落ちる」ことを確認済み
 2. 対応表（条件番号 → テスト名）を作り、未カバーがあれば正直に明記
 3. §9-7（画面操作で master RDB が変わらない）と §9-28（canonical 不変）を実データで実測して PR 本文に貼る
 4. 仕様書（この文書）を `docs/local-judgment-j0-adjudication-v1.md` として同梱

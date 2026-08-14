@@ -414,6 +414,18 @@ class JudgmentJ0AdjudicationTest(unittest.TestCase):
             report = apply_adjudications(self._args(root, db, out_db=root / "applied2.sqlite"))
             self.assertEqual(report["applied"], 1)
 
+    def test_13d_a_hold_without_its_prior_attempt_uses_one_reason_code(self):
+        """保存する理由と report の理由を割らない（おとの独立レビュー指摘）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = self._db(root); hold = self._open_hold(db, root)
+            self._record(db, root, hold)
+            conn = connect_existing(db)
+            conn.execute("DELETE FROM canonical_decision_ledger WHERE decision_id=?", (hold["prior_agent_attempt_id"],))
+            conn.commit(); conn.close()
+            report = apply_adjudications(self._args(root, db))
+            self.assertEqual(report["issues"][0]["issue_type"], "prior_attempt_missing")
+            self.assertEqual(self._rows(self._adj_path(root))[0]["invalid_reason"], "prior_attempt_missing")
+
     def test_14_the_three_ledgers_move_together(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp); db = self._db(root); hold = self._open_hold(db, root)

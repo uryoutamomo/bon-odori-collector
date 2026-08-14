@@ -68,7 +68,8 @@ def run(args):
                 _invalidate(entry,reason); report["invalidated"]+=1; report["issues"].append({"severity":"medium","issue_type":reason,"hold_id":entry.get("hold_id")}); continue
             prior=conn.execute("SELECT * FROM canonical_decision_ledger WHERE decision_id=?", (hold["prior_agent_attempt_id"],)).fetchone()
             if not prior:
-                _invalidate(entry,"hold_not_open"); report["invalidated"]+=1; report["issues"].append({"severity":"medium","issue_type":"prior_attempt_missing","hold_id":entry.get("hold_id")}); continue
+                # 保存する理由と report の理由を割らない。割ると「なぜ通らなかったか」を後から数えられない。
+                _invalidate(entry,"prior_attempt_missing"); report["invalidated"]+=1; report["issues"].append({"severity":"medium","issue_type":"prior_attempt_missing","hold_id":entry.get("hold_id")}); continue
             raw={key: prior[key] for key in ("packet_id","inbox_id","domain","lane","source_id","source_key","source_payload_hash")}
             raw.update(requested_action=entry["action"], payload={"target_id":entry.get("target_id"),"reason_detail":entry.get("reason_detail","")})
             raw["payload"]={k:v for k,v in raw["payload"].items() if v not in (None,"")}

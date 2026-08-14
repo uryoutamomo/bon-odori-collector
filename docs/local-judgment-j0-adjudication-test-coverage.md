@@ -1,11 +1,11 @@
 # J0-adjudication 受け入れ条件 → テスト対応表
 
-正本＝`docs/local-judgment-j0-adjudication-v1.md`（v1.2、SHA-256 `5da40ca968be2972785791fe74921554e84aca66305bcdfc617e4694614bdd6f`）。
-テストは `tests/test_judgment_j0_adjudication.py`（**48本**）。**未カバーはありません（45/45）。**
+正本＝`docs/local-judgment-j0-adjudication-v1.md`（v1.2、SHA-256 `160c1c0de62a838f82ed665deddc0bc9c197f0de2355887e29486d9cd3a2748d`）。
+テストは `tests/test_judgment_j0_adjudication.py`（**49本**）。**未カバーはありません（46/46）。**
 残る2本は条件番号に紐づかない運用上の守りで、下の「条件外の2本」に書いています。
 
 「合計テスト数」は充足件数ではありません。下の表は条件番号ごとに、どのテストがそれを守っているかと、
-**そのテストが「守りを外すと落ちる」ことを実測したか**を記録しています。変異は47通り試し、**47件すべて検知**しました。
+**そのテストが「守りを外すと落ちる」ことを実測したか**を記録しています。変異は48通り試し、**48件すべて検知**しました。
 
 | 条件 | テスト | 変異で検知 |
 |---|---|---|
@@ -30,6 +30,7 @@
 | 13a | `test_13a_invalidated_rows_keep_their_reason` | ✓ `invalid_reason` を書かない |
 | 13b | `test_13b_invalidated_rows_are_not_processed_again` | ✓ `invalidated` も再処理する |
 | 13c | `test_13c_an_invalidated_hold_can_be_adjudicated_again_as_a_new_row` | ✓ 失敗時に hold を resolved にする |
+| 13d | `test_13d_a_hold_without_its_prior_attempt_uses_one_reason_code` | ✓ 保存側だけ `hold_not_open` に戻す |
 | 14 | `test_14_the_three_ledgers_move_together` | ✓ hold の close を削除 |
 | 15 | `test_15_apply_goes_through_the_shared_ledger_writer` | ✓ 直接 INSERT を書く |
 | 16 | `test_16_a_failure_after_the_decision_leaves_no_partial_write` | ✓ `rollback()` を削除 |
