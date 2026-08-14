@@ -291,9 +291,13 @@ decided_at = 取り込み実行時刻（tz付き）
 
 | 状況 | 動作 |
 |---|---|
-| `decision_id` の行が既にあり、`packet_sha256` と `action` と `actor_id` が一致 | **no-op**（何も書かない。レポートの `noop` に計上） |
+| `decision_id` の行が既にあり、**`action` と `actor_id` と `payload`** が一致 | **no-op**（何も書かない。レポートの `noop` に計上） |
 | `decision_id` の行が既にあり、いずれかが不一致 | **high severity で停止**（黙って上書きしない） |
 | 行が無い | 通常どおり INSERT |
+
+**比較に `packet_sha256` を使ってはいけません**（v1.3 で訂正。**これはことの仕様バグでした**）。契約実装の `canonicalize_raw_judgment` は `decided_at`（＝取り込み実行時刻）を含めて `packet_sha256` を計算するため、**同じ result を2回流すと必ずハッシュが変わり、冪等であるはずの再取り込みが `decision_id_conflict` で停止します。** v1.2 までの記述では §9-31（冪等）と §9-32（衝突で停止）が両立しませんでした。
+
+比べるべきは「同じ判断か」であって「いつ取り込んだか」ではありません。`action`・`actor_id`・`payload` の3つで判定します。`payload` は `decision_id` の材料に入っていないので、**payload だけ違う result はこの検査でしか捕まりません**（§9-32 がまさにその形）。`packet_sha256` は「LLM が何を見て判断したか」の証拠として台帳には残しますが、冪等判定には使いません。
 
 **`INSERT OR IGNORE` を使わないこと。** 「同じIDだが中身が違う」を握りつぶすと、あとから何が起きたか追えなくなります。
 

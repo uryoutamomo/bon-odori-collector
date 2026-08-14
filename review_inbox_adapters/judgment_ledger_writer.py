@@ -10,9 +10,12 @@ def _now(): return datetime.now(timezone.utc).isoformat()
 
 def write_decision(conn, decision, *, candidate_ids=None):
     """Write only decision ledgers; domain tables and inbox status stay untouched."""
-    existing = conn.execute("SELECT packet_sha256, action, actor_id FROM canonical_decision_ledger WHERE decision_id=?", (decision["decision_id"],)).fetchone()
+    # 冪等判定に packet_sha256 は使わない。契約の canonicalize_raw_judgment は decided_at
+    # （取り込み時刻）込みでハッシュを作るので、同じ result の再取り込みでも必ず変わる。
+    # 比べるのは「同じ判断か」＝ action / actor_id / payload（仕様 v1.3 §5.3）。
+    existing = conn.execute("SELECT action, actor_id, payload_json FROM canonical_decision_ledger WHERE decision_id=?", (decision["decision_id"],)).fetchone()
     if existing:
-        if tuple(existing) == (decision["packet_sha256"], decision["action"], decision["actor_id"]):
+        if tuple(existing) == (decision["action"], decision["actor_id"], canonical_json(decision["payload"])):
             conn.execute("DELETE FROM review_claim_ledger WHERE inbox_id=?", (decision["inbox_id"],))
             return "noop"
         raise ValueError("decision_id_conflict")
