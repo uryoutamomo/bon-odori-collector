@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_review_lanes.py",
-  "generated_at": "2026-08-13T08:16:33.004026+00:00",
+  "generated_at": "2026-08-14T08:09:40.767662+00:00",
   "contract": {
     "daily_input_max": 30,
     "lane3_user_review_max": 3,
@@ -11,6 +11,73 @@
   "lanes": {
     "lane1_auto_plan": [],
     "lane2_operator_review": [
+      {
+        "candidate_id": "xgap_c29e5a4a82ac4fea",
+        "source_key": "x:2083717690775232581",
+        "lane_hint": "lane2",
+        "candidate_kind": "missing_date",
+        "priority_score": 205,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "venue": "網代公園",
+          "area": "",
+          "venue_area": "港区",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "date_start": "",
+          "date_end": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/COLOGNECHAN/status/2083717690775232581",
+        "source_text": "\n8月22・23日は、〈2026年 麻布十番納涼まつり〉の開催です。今年の夏まつりの〆に参ります！",
+        "source_author": "@COLOGNECHAN",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@colognechan",
+          "account_name": "COLOGNECHAN",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月22"
+        ],
+        "observed_dates": [
+          "2026-08-22"
+        ],
+        "event_group_key": "",
+        "voice": {
+          "source": "x_whitelist",
+          "account": "@COLOGNECHAN",
+          "name": "COLOGNECHAN",
+          "title": "",
+          "text": "8月22・23日は、〈2026年 麻布十番納涼まつり〉の開催です。今年の夏まつりの〆に参ります！",
+          "url": "https://x.com/COLOGNECHAN/status/2083717690775232581",
+          "date": "2026-08-02T00:53:05+00:00",
+          "tweet_id": "2083717690775232581",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "value_score": 15.0
+        },
+        "source_urls": [
+          "https://x.com/COLOGNECHAN/status/2083717690775232581"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "lane": "lane3_user_review"
+      },
       {
         "candidate_id": "xgap_09774f63189e2368",
         "source_key": "x:2084967015425679844",
@@ -1452,6 +1519,77 @@
         "lane": "lane3_user_review"
       },
       {
+        "candidate_id": "xgap_daa3d00f13699255",
+        "source_key": "x:2088156930279923724",
+        "lane_hint": "lane2",
+        "candidate_kind": "date_range_conflict",
+        "priority_score": 255,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_ad6bd712a4d6aeb6",
+          "event_name": "歌舞伎町BON ODORI",
+          "venue": "歌舞伎町シネシティ広場",
+          "area": "",
+          "venue_area": "新宿区",
+          "venue_address": "新宿区歌舞伎町1-19",
+          "date_start": "2026-08-14",
+          "date_end": "2026-08-15",
+          "detail": "2026年は初の2日間開催。参加無料で誰でも参加できる。BLUE MAN GROUP・東京おとめ太鼓・レイザーラモンRGが出演する告知投稿より。",
+          "matched_aliases": [
+            "歌舞伎町BON ODORI",
+            "歌舞伎町BON ODORI"
+          ]
+        },
+        "source_url": "https://x.com/cos9n/status/2088156930279923724",
+        "source_text": "\n歌舞伎町 BON ODORI日時：8月14日(金)・15日(土)場所：新宿区・歌舞伎町シネシティ広場内容\n\n西神田ファミリー夏祭り 盆踊り日時：8月15日(土) 17:00～20:00場所：西神田公園\n\n外神田納涼大会日時：8月20日(木)・21日(金) 19:00～場所：外神田文化体育会\n#夏祭り #盆踊り\n\nhttps://t.co/9h7uKJt7dz",
+        "source_author": "@cos9n",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@cos9n",
+          "account_name": "こす9ん",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月14日",
+          "8月15日",
+          "8月20日"
+        ],
+        "observed_dates": [
+          "2026-08-14",
+          "2026-08-15",
+          "2026-08-20"
+        ],
+        "event_group_key": "",
+        "voice": {
+          "source": "x",
+          "account": "@cos9n",
+          "name": "こす9ん",
+          "profile_description": "吟遊詩人：曲とともに全国のイベント\n〔花火大会・お祭り・盆踊り・フェス・納涼祭・パーティー〕などの動画を掲載\n\n東京都目黒•世田谷や川崎を拠点に活動する、アーティスト、ソングライター、およびフルスタックエンジニア。音楽制作とソフトウェア開発という両輪を掛け合わせ、自身の音楽配信から物流管理システムまで、幅広い技術領域で",
+          "title": "",
+          "text": "歌舞伎町 BON ODORI日時：8月14日(金)・15日(土)場所：新宿区・歌舞伎町シネシティ広場内容\n\n西神田ファミリー夏祭り 盆踊り日時：8月15日(土) 17:00～20:00場所：西神田公園\n\n外神田納涼大会日時：8月20日(木)・21日(金) 19:00～場所：外神田文化体育会\n#夏祭り #盆踊り\n\nhttps://t.co/9h7uKJt7dz",
+          "url": "https://x.com/cos9n/status/2088156930279923724",
+          "date": "2026-08-14T06:53:02+00:00",
+          "tweet_id": "2088156930279923724",
+          "tags": [
+            "🟡関心",
+            "q-poster-images"
+          ],
+          "critique_post": false
+        },
+        "source_urls": [
+          "https://x.com/cos9n/status/2088156930279923724"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "lane": "lane3_user_review"
+      },
+      {
         "candidate_id": "xgap_0346c3b0855cb29b",
         "source_key": "x:2082672552208453855",
         "lane_hint": "lane2",
@@ -1523,75 +1661,76 @@
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
-      },
-      {
-        "candidate_id": "xgap_c29e5a4a82ac4fea",
-        "source_key": "x:2083717690775232581",
-        "lane_hint": "lane2",
-        "candidate_kind": "missing_date",
-        "priority_score": 205,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_e4a7eb02f5fed215",
-          "event_name": "麻布十番納涼盆踊り大会",
-          "venue": "網代公園",
-          "area": "",
-          "venue_area": "港区",
-          "venue_address": "東京都港区麻布十番2-15-1",
-          "date_start": "",
-          "date_end": "",
-          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-          "matched_aliases": [
-            "麻布十番納涼盆踊り大会",
-            "麻布十番納涼盆踊り大会"
-          ]
-        },
-        "source_url": "https://x.com/COLOGNECHAN/status/2083717690775232581",
-        "source_text": "\n8月22・23日は、〈2026年 麻布十番納涼まつり〉の開催です。今年の夏まつりの〆に参ります！",
-        "source_author": "@COLOGNECHAN",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@colognechan",
-          "account_name": "COLOGNECHAN",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8月22"
-        ],
-        "observed_dates": [
-          "2026-08-22"
-        ],
-        "event_group_key": "",
-        "voice": {
-          "source": "x_whitelist",
-          "account": "@COLOGNECHAN",
-          "name": "COLOGNECHAN",
-          "title": "",
-          "text": "8月22・23日は、〈2026年 麻布十番納涼まつり〉の開催です。今年の夏まつりの〆に参ります！",
-          "url": "https://x.com/COLOGNECHAN/status/2083717690775232581",
-          "date": "2026-08-02T00:53:05+00:00",
-          "tweet_id": "2083717690775232581",
-          "tags": [
-            "⭐盆踊ラー",
-            "📅未来予定",
-            "🟡関心"
-          ],
-          "value_score": 15.0
-        },
-        "source_urls": [
-          "https://x.com/COLOGNECHAN/status/2083717690775232581"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "lane": "lane3_user_review"
       }
     ]
   },
-  "archived_candidates": []
+  "archived_candidates": [
+    {
+      "candidate_id": "xgap_4fc89e25e01e4975",
+      "source_key": "x:2088128612247757157",
+      "lane_hint": "lane2",
+      "candidate_kind": "schedule_change",
+      "priority_score": 305,
+      "event_year": 2026,
+      "matched_occurrence": {
+        "occurrence_id": "occ_12e9728c0a384d1b",
+        "event_name": "石島町会 夏祭り",
+        "venue": "石島町会会館前",
+        "area": "",
+        "venue_area": "江東区",
+        "venue_address": "江東区石島17-14",
+        "date_start": "2026-08-14",
+        "date_end": "2026-08-14",
+        "detail": "16:30〜19:00。盆踊りの実施有無は未確認。",
+        "matched_aliases": [
+          "石島町会 夏祭り",
+          "石島町会 夏祭り"
+        ]
+      },
+      "source_url": "https://x.com/kotokeizai/status/2088128612247757157",
+      "source_text": "\n本日8/14(金) 16:30から、石島町会会館前にて\n「石島町会 夏祭り」開催予定\n\n🔻その他の江東区の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjId0bL2\n\n※開催内容は変更・中止になる場合があります",
+      "source_author": "@kotokeizai",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 0,
+        "handle": "@kotokeizai",
+        "account_name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/14"
+      ],
+      "observed_dates": [
+        "2026-08-14"
+      ],
+      "event_group_key": "",
+      "voice": {
+        "source": "x_whitelist",
+        "account": "@kotokeizai",
+        "name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
+        "profile_description": "“江東区がもっと好きになる”ハッピーニュースを配信する《こと経》の中の人です。新店やイベントなどの情報提供はDMやリプライでも大歓迎！イベント情報中心のポストですが、時に江東区グルメも。リプいただけると小躍りして喜びます！ Instagram→ https://t.co/IIpE2CMlNp",
+        "title": "",
+        "text": "本日8/14(金) 16:30から、石島町会会館前にて\n「石島町会 夏祭り」開催予定\n\n🔻その他の江東区の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjId0bL2\n\n※開催内容は変更・中止になる場合があります",
+        "url": "https://x.com/kotokeizai/status/2088128612247757157",
+        "date": "2026-08-14T05:00:31+00:00",
+        "tweet_id": "2088128612247757157",
+        "tags": [
+          "⭐盆踊ラー",
+          "📅未来予定",
+          "🟡関心"
+        ],
+        "critique_post": false,
+        "value_score": 16.0
+      },
+      "source_urls": [
+        "https://x.com/kotokeizai/status/2088128612247757157"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "non_asserted_schedule_change"
+    }
+  ]
 }

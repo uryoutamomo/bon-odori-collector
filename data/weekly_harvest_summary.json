@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-13T08:16:56.825368+00:00",
+  "generated_at": "2026-08-14T08:10:06.721305+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-13T08:16:49.077637+00:00",
+  "source_generated_at": "2026-08-14T08:09:58.668213+00:00",
   "days": 3,
-  "voice_count": 3667,
-  "candidate_count": 220,
+  "voice_count": 3311,
+  "candidate_count": 197,
   "category_counts": {
-    "曲×会場共起": 7,
-    "曲候補": 207,
-    "用語候補": 6
+    "曲×会場共起": 6,
+    "曲候補": 184,
+    "用語候補": 7
   },
   "non_song_review_count": 13,
-  "song_candidate_count": 207,
-  "song_direct_dry_run_count": 134,
-  "song_review_count": 5,
-  "song_rejected_noise_count": 68,
+  "song_candidate_count": 184,
+  "song_direct_dry_run_count": 118,
+  "song_review_count": 7,
+  "song_rejected_noise_count": 59,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -34,18 +34,20 @@
       "活気あふれる踊り × 青山善光寺",
       "炭坑節 × 青山善光寺",
       "中央区音頭 × 浜町公園",
-      "江戸川ふるさと音頭 × 鹿骨中学校",
       "踊り会",
       "練習会",
       "参戦",
-      "はしご",
-      "ハシゴ"
+      "ハシゴ",
+      "踊り始め",
+      "はしご"
     ],
     "song_review": [
       "たいとう音頭",
       "郡上おどり",
-      "ズンパ音頭",
       "盆ジョビ",
+      "まんまる音頭",
+      "ゆかた音頭",
+      "東京本願寺音頭",
       "神田明神音頭"
     ]
   }
