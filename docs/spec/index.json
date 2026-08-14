@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T06:48:32Z",
-  "generated_for_commit": "8e7de2a",
+  "generated_at": "2026-08-14T13:58:05Z",
+  "generated_for_commit": "069a9aa",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -57,7 +57,31 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.3",
+      "revision_count": 4,
+      "history": [
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        },
+        {
+          "commit": "958c6db",
+          "date": "2026-08-14",
+          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
+        },
+        {
+          "commit": "bf4f70d",
+          "date": "2026-08-13",
+          "subject": "Test five previously unguarded data invariants (#196)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-judgment": {
       "layer": "L1",
@@ -89,7 +113,16 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.0",
+      "revision_count": 1,
+      "history": [
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-review": {
       "layer": "L1",
@@ -205,7 +238,26 @@
       "staleness": {
         "commits_since": 1,
         "files_changed_since": 3
-      }
+      },
+      "version": "1.2",
+      "revision_count": 3,
+      "history": [
+        {
+          "commit": "8e7de2a",
+          "date": "2026-08-14",
+          "subject": "ローカル判断の実行経路（J0-read）：候補をLLMへ渡し、判断を台帳へ残す (#206)"
+        },
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-master": {
       "layer": "L1",
@@ -285,7 +337,36 @@
       "staleness": {
         "commits_since": 1,
         "files_changed_since": 1
-      }
+      },
+      "version": "1.4",
+      "revision_count": 5,
+      "history": [
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        },
+        {
+          "commit": "958c6db",
+          "date": "2026-08-14",
+          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
+        },
+        {
+          "commit": "ba928cd",
+          "date": "2026-08-13",
+          "subject": "Replace stale main tests with stable fixtures (#199)"
+        },
+        {
+          "commit": "bf4f70d",
+          "date": "2026-08-13",
+          "subject": "Test five previously unguarded data invariants (#196)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-publication": {
       "layer": "L1",
@@ -338,7 +419,21 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "958c6db",
+          "date": "2026-08-14",
+          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-delivery": {
       "layer": "L1",
@@ -369,7 +464,21 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "c0f3ad8",
+          "date": "2026-08-13",
+          "subject": "配信と公開JSONの不変条件4件に回帰テストを付ける (#197)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-platform": {
       "layer": "L1",
@@ -406,7 +515,21 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L1-songs": {
       "layer": "L1",
@@ -495,7 +618,21 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "3b43069",
+          "date": "2026-08-14",
+          "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
+        },
+        {
+          "commit": "958c6db",
+          "date": "2026-08-14",
+          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
+        }
+      ]
     },
     "L1-youtube": {
       "layer": "L1",
@@ -613,7 +750,21 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        },
+        {
+          "commit": "3b43069",
+          "date": "2026-08-14",
+          "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
+        }
+      ]
     },
     "L1-venues": {
       "layer": "L1",
@@ -669,7 +820,16 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.0",
+      "revision_count": 1,
+      "history": [
+        {
+          "commit": "dae4079",
+          "date": "2026-08-14",
+          "subject": "会場サブシステムのL1仕様を書く (#203)"
+        }
+      ]
     },
     "L1-glossary": {
       "layer": "L1",
@@ -720,7 +880,16 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.0",
+      "revision_count": 1,
+      "history": [
+        {
+          "commit": "2c93cc1",
+          "date": "2026-08-14",
+          "subject": "用語集・別名サブシステムのL1仕様を書く (#204)"
+        }
+      ]
     },
     "L2-master-schema": {
       "layer": "L2",
@@ -748,7 +917,21 @@
       "staleness": {
         "commits_since": 1,
         "files_changed_since": 1
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "bf4f70d",
+          "date": "2026-08-13",
+          "subject": "Test five previously unguarded data invariants (#196)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L2-public-json": {
       "layer": "L2",
@@ -781,7 +964,21 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.1",
+      "revision_count": 2,
+      "history": [
+        {
+          "commit": "c0f3ad8",
+          "date": "2026-08-13",
+          "subject": "配信と公開JSONの不変条件4件に回帰テストを付ける (#197)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "L2-review-inbox-adapter": {
       "layer": "L2",
@@ -807,7 +1004,16 @@
       "staleness": {
         "commits_since": 0,
         "files_changed_since": 0
-      }
+      },
+      "version": "1.0",
+      "revision_count": 1,
+      "history": [
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        }
+      ]
     },
     "L0": {
       "layer": "L0",
@@ -826,7 +1032,36 @@
       "staleness": {
         "commits_since": 1,
         "files_changed_since": 1
-      }
+      },
+      "version": "1.4",
+      "revision_count": 5,
+      "history": [
+        {
+          "commit": "8fb30c8",
+          "date": "2026-08-14",
+          "subject": "L0を4本のmerge後の実態へ合わせる (#205)"
+        },
+        {
+          "commit": "a855a9a",
+          "date": "2026-08-14",
+          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
+        },
+        {
+          "commit": "3b43069",
+          "date": "2026-08-14",
+          "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
+        },
+        {
+          "commit": "958c6db",
+          "date": "2026-08-14",
+          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     },
     "SPEC-GUIDE": {
       "layer": "meta",
@@ -857,7 +1092,31 @@
       "staleness": {
         "commits_since": 4,
         "files_changed_since": 6
-      }
+      },
+      "version": "1.3",
+      "revision_count": 4,
+      "history": [
+        {
+          "commit": "958c6db",
+          "date": "2026-08-14",
+          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
+        },
+        {
+          "commit": "f8e1f21",
+          "date": "2026-08-13",
+          "subject": "仕様書の機械検査の限界に「使われないコードを引く」穴を書き足す (#198)"
+        },
+        {
+          "commit": "c0f3ad8",
+          "date": "2026-08-13",
+          "subject": "配信と公開JSONの不変条件4件に回帰テストを付ける (#197)"
+        },
+        {
+          "commit": "1d2d00d",
+          "date": "2026-08-13",
+          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
+        }
+      ]
     }
   },
   "invariants": {

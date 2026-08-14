@@ -352,6 +352,8 @@ pre.code code{background:none;padding:0;font-size:12.8px}
 pre.mermaid{background:var(--surface);border:1px solid var(--rule);border-radius:3px;
   padding:18px;margin:0 0 17px;text-align:center;overflow-x:auto}
 .scroll-x{overflow-x:auto;margin:0 0 17px}
+.nowrap{white-space:nowrap}
+.history-note{font-size:12.5px;color:var(--muted);margin:-6px 0 12px;line-height:1.7}
 table{border-collapse:collapse;width:100%;font-size:13.8px}
 th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
 th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
@@ -431,10 +433,29 @@ def render_html(index, ordered, sections, rows):
             if owned
             else ""
         )
+        version = meta.get("version") or ""
+        history = meta.get("history") or []
+        history_rows = "".join(
+            f'<tr><td class="nowrap">{html.escape(row.get("date", ""))}</td>'
+            f'<td class="nowrap"><code>{html.escape(row.get("commit", ""))}</code></td>'
+            f'<td>{html.escape(row.get("subject", ""))}</td></tr>'
+            for row in history
+        )
+        history_block = (
+            "<h2>更新履歴</h2>"
+            '<p class="history-note">人が書いた改訂だけを新しい順に並べている。'
+            "閲覧版を作り直しただけの自動コミットは数えない。</p>"
+            '<div class="scroll-x"><table><thead><tr><th>日付</th><th>コミット</th><th>内容</th></tr></thead>'
+            f"<tbody>{history_rows}</tbody></table></div>"
+            if history_rows
+            else ""
+        )
         pages.append(
             f'<article class="page" id="{sid}">'
-            f'<p class="eyebrow">{html.escape(layer)} ・ {html.escape(freshness)}</p>'
-            f"{body}{owned_list}"
+            f'<p class="eyebrow">{html.escape(layer)}'
+            + (f" ・ v{html.escape(version)}" if version else "")
+            + f" ・ {html.escape(freshness)}</p>"
+            f"{body}{owned_list}{history_block}"
             "</article>"
         )
 
