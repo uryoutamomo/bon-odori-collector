@@ -3,6 +3,8 @@
 決定者: こと（Claude Code） / 2026-08-14
 - **v1.1**（同日）：おとの仕様レビュー指摘2件を反映。§3.5＝`--max-packets` の単位、§5.4＝dry-run の migration を v3 まで、§6.3＝claim の書き込み先、§9-45〜49
 - **v1.2**（同日）：初回 push `5649077` のことレビューで出た4件を反映。§3.4＝retry window の算出順序（**ことの仕様バグ**）と retry を出す3条件、§5.1＝migration 直後の暗黙トランザクション、§7.1＝packet 生成側の `--confirm`、§7.3＝例外の握りつぶし禁止、§9-50〜55
+- **v1.3**（同日）：テストを書く過程で見つけた冪等の破綻を訂正。§5.3＝冪等判定に `packet_sha256` を使わない（**ことの仕様バグ**。契約が `decided_at` 込みでハッシュを作るため、再取り込みが必ず衝突扱いになっていた）
+- **v1.4**（同日）：§3.2・§9-8＝候補集合の違いは台帳から辿れないことを明記（**ことの仕様バグ**。`packet_sha256` は `targets` を含まないと実測で確認）。追跡できるのは packet ファイルだけなので保管する
 前提:
 - `docs/local-judgment-contract-v1.md`（v1.1、SHA-256 `3b47f5e4e2618c209c1d8b0fb42cbaa1f5687b9a3f167719bd2939ceb4756a05`）
 - `docs/local-judgment-e0-event-inbox-v1.md`（v1.3、SHA-256 `fbe5788a…`）
@@ -114,7 +116,11 @@ PACKET_CALCULATION_VERSION = "judgment-packet/v1"
 
 候補が改訂されれば `source_payload_hash` が変わるので packet_id も変わります。これは正しい挙動で、改訂後は別の判断として扱われます。
 
-**候補集合（`targets`）が変わっても packet_id は変わりません。** レポートは1文字も変わっていないので当然ですが、「どの候補集合を見て判断したか」は `packet_sha256`（packet 全体のハッシュ、契約実装が `canonicalize_raw_judgment` で自動計算）が台帳に残るため、後から区別できます。E0 §3.4 が `resolved_target` を `proposal` の外に置いたのと同じ考え方です。
+**候補集合（`targets`）が変わっても packet_id は変わりません。** レポートは1文字も変わっていないので当然です。
+
+**ただし「どの候補集合を見て判断したか」は台帳からは辿れません**（v1.4 で訂正。**これもことの仕様バグでした**）。v1.3 までは `packet_sha256` に残ると書いていましたが、契約実装の `canonicalize_raw_judgment` がハッシュを取る対象は `packet_id` / `inbox_id` / `domain` / `lane` / `source_id` / `source_key` / `source_payload_hash` / `requested_action` / `payload` と actor 情報だけで、**`targets` は含まれていません**（実測で確認済み）。
+
+したがって候補集合の記録は **`data/judgment_packets/batch_*.json` が唯一**です。**このファイルを消さないでください。** 「正解が候補に含まれていた率」を後から測る（E0 §3.4 と同じ狙い）ためにも要ります。台帳だけ残して packet ファイルを捨てると、判断の前提が永久に分からなくなります。
 
 ### 3.3 packet の中身（v1 固定）
 
@@ -436,7 +442,7 @@ packet 生成
 5. `review_queue_state_ledger` に行が無い候補が `eligible` として扱われる（E0 §8 の規則）
 6. 同じ入力で2回実行すると同じ `packet_id` になる（決定的。**ランダム化すると落ちる**）
 7. 候補の proposal を1文字変えると `packet_id` が変わる
-8. `targets` の候補集合だけが変わっても `packet_id` は変わらず、`packet_sha256` は変わる
+8. `targets` の候補集合だけが変わっても `packet_id` は変わらない（**v1.4 で訂正**。`packet_sha256` は `targets` を含まないので、候補集合の違いは台帳では判別できない。判別できるのは packet ファイルだけ、というのが正しい前提）
 9. `occurrence_candidates` が空の候補では `retry_candidates` が空配列になり、`retry_unavailable_reason` が入る
 10. `allowed_actions` が registry から引かれている（registry のエントリを消すと packet の内容が変わる）
 11. `--max-packets` 超過分が出力されず、レポートに待機件数が出る

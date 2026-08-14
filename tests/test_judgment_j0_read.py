@@ -327,6 +327,188 @@ class JudgmentJ0ReadTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,"decision_id_conflict"):
                 apply_results(second)
 
+    # --- §9 の残り19件（こと、2026-08-14 の2度目の引き取り分） ---
+
+    def _seed_many(self, root, count=3):
+        """候補を複数作る。流量まわり（§9-11,47,48）を測るのに要る。"""
+        db=root/"master.sqlite"
+        conn=init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); migrate_review_claim_ledger(conn); conn.commit(); conn.close()
+        notice=root/"notice.json"
+        notice.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text","source_url":"https://example.test"},"events":[{"action":"register_new","event_name_hint":f"試験盆踊り{i}","event_year":2099,"date_start":"2099-08-01","venue":{"name":f"試験公園{i}"}} for i in range(count)]}, ensure_ascii=False))
+        build_candidates(SimpleNamespace(report=[notice],report_dir=[],db=db,out_db=db,out_json=root/"candidate.json",out_md=root/"candidate.md",max_candidates=10,apply=True,confirm="APPLY EVENT INBOX CANDIDATES",no_auto_migrate=False,include_expired=False))
+        return db
+
+    def _claim(self, db, inbox_id, claimed_by, expires_at):
+        conn=sqlite3.connect(db)
+        conn.execute("INSERT INTO review_claim_ledger(inbox_id,claimed_by,claim_kind,claimed_at,expires_at,batch_id) VALUES (?,?,?,?,?,?)",(inbox_id,claimed_by,"agent","2026-08-14T00:00:00+00:00",expires_at,"pending"))
+        conn.commit(); conn.close()
+
+    def _row(self, db):
+        conn=sqlite3.connect(db); conn.row_factory=sqlite3.Row
+        row=dict(conn.execute("SELECT * FROM review_inbox_items WHERE kind='event_candidate'").fetchone()); conn.close(); return row
+
+    def test_packet_id_changes_when_the_proposal_changes(self):
+        """§9-7: レポートの中身が変われば別の判断として扱う。"""
+        when=datetime(2026,8,14,tzinfo=timezone.utc)
+        row={"inbox_id":"inbox-test","contract_domain":"event","contract_lane":"event_create","source_id":"s","source_key":"k","source_payload_hash":"a"*64,"expires_at":None,"source_url":"https://example.test","payload_json":json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[]},"evidence_ids":[]})}
+        changed=dict(row,source_payload_hash="b"*64)
+        self.assertNotEqual(make_packet(row,when)["packet_id"], make_packet(changed,when)["packet_id"])
+
+    def test_packet_id_survives_a_changed_candidate_set(self):
+        """§9-8: 候補集合が変わっても判断の同一性は動かない。
+
+        なお候補集合の違いは台帳からは辿れない（packet_sha256 は targets を含まない）。
+        後から追えるのは data/judgment_packets/ の packet ファイルだけなので、消さないこと（仕様 v1.4 §3.2）。
+        """
+        when=datetime(2026,8,14,tzinfo=timezone.utc)
+        base={"inbox_id":"inbox-test","contract_domain":"event","contract_lane":"event_create","source_id":"s","source_key":"k","source_payload_hash":"a"*64,"expires_at":None,"source_url":"https://example.test"}
+        empty=dict(base,payload_json=json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[]},"evidence_ids":["e1"]}))
+        filled=dict(base,payload_json=json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[{"occurrence_id":"occ-1"}]},"evidence_ids":["e1"]}))
+        first, second = make_packet(empty,when), make_packet(filled,when)
+        self.assertEqual(first["packet_id"], second["packet_id"])
+        self.assertNotEqual(first["targets"], second["targets"])
+
+    def test_max_packets_limits_count_and_leaves_the_rest_unclaimed(self):
+        """§9-11,47,48: 上限は packet 数（バッチ数ではない）。切られた分は claim せず次回へ回す。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed_many(root,3)
+            args=self._packet_args(root,db); args.max_packets=2; args.batch_size=1
+            report=build_packets(args)
+            self.assertEqual(report["generated"],2)
+            self.assertEqual(len(report["batches"]),2)
+            self.assertEqual(report["waiting_count"],1)
+            conn=sqlite3.connect(args.out_db)
+            self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_claim_ledger").fetchone()[0],2)
+            conn.close()
+
+    def test_report_records_migrations_and_claim_scope(self):
+        """§9-49: 何を当てたか、排他が効いているかをレポートで見えるようにする。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root)
+            report=build_packets(self._packet_args(root,db))
+            self.assertEqual(report["claim_scope"],"dry_run_copy")
+            self.assertEqual(report["migrations_applied"],["local_judgment_contract_v1","event_inbox_candidate_v1","review_claim_ledger_v1"])
+
+    def test_forged_packet_id_in_the_packet_file_is_rejected(self):
+        """§9-12: packet_id が式に合わなければ、その result を捨てる。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            batch=Path(build["batches"][0]); data=json.loads(batch.read_text())
+            data["packets"][0]["packet_id"]="packet_forged0000000"
+            batch.write_text(json.dumps(data,ensure_ascii=False))
+            args=self._result_args(root,data["packets"][0])
+            report=apply_results(args)
+            self.assertEqual((report["rejected_result"],report["accepted"]),(1,0))
+
+    def test_result_with_a_different_source_hash_is_rejected(self):
+        """§9-13: packet と result の材料が食い違えば捨てる。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            args=self._result_args(root,packet,source_payload_hash="c"*64)
+            self.assertEqual(apply_results(args)["rejected_result"],1)
+
+    def test_candidate_revised_while_judging_is_rejected(self):
+        """§9-14: 判断中に候補が改訂されたら、その判断は使わない（packet_stale）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            conn=sqlite3.connect(root/"packets.sqlite")
+            conn.execute("UPDATE review_inbox_items SET source_payload_hash=? WHERE inbox_id=?",("d"*64,packet["inbox_id"])); conn.commit(); conn.close()
+            args=self._result_args(root,packet)
+            report=apply_results(args)
+            self.assertEqual(report["rejected_result"],1)
+            self.assertTrue(any(x["issue_type"]=="packet_stale" for x in report["issues"]))
+
+    def test_action_outside_allowed_actions_is_rejected(self):
+        """§9-15: packet が許していない action を通さない。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            args=self._result_args(root,packet,requested_action="requeue")
+            report=apply_results(args)
+            self.assertEqual(report["rejected_result"],1)
+            # 捨てた理由まで見る。件数だけだと、検証を外しても契約側が
+            # 「agent に requeue は許されない」で弾くので同じ結果になり、テストが素通りする（変異チェックで実測）。
+            self.assertTrue(any(x["issue_type"]=="packet_mismatch" for x in report["issues"]),report["issues"])
+
+    def test_result_without_its_packet_file_stops_everything(self):
+        """§9-16: 照合できない result を台帳へ入れない（medium ではなく全体停止）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            args=self._result_args(root,dict(packet,packet_id="packet_unknown000000"))
+            with self.assertRaisesRegex(ValueError,"packet_missing"):
+                apply_results(args)
+
+    def test_candidate_claimed_by_another_actor_is_skipped(self):
+        """§9-36: 同じ候補を2つのセッションが同時に読まない。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); row=self._row(db)
+            self._claim(db,row["inbox_id"],"another-session",(datetime.now(timezone.utc)+timedelta(minutes=30)).isoformat())
+            report=build_packets(self._packet_args(root,db))
+            self.assertEqual(report["generated"],0)
+            self.assertEqual([x["reason"] for x in report["excluded"]],["claimed_by_other"])
+
+    def test_expired_claim_is_overwritten_without_deleting_history(self):
+        """§9-37: 期限切れ claim は無効。ただし誰が握って離さなかったかは残す。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); row=self._row(db)
+            self._claim(db,row["inbox_id"],"stale-session","2020-01-01T00:00:00+00:00")
+            args=self._packet_args(root,db)
+            self.assertEqual(build_packets(args)["generated"],1)
+            conn=sqlite3.connect(args.out_db); conn.row_factory=sqlite3.Row
+            claim=conn.execute("SELECT claimed_by FROM review_claim_ledger WHERE inbox_id=?",(row["inbox_id"],)).fetchone()
+            self.assertEqual(claim["claimed_by"],"oto-test")
+            self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_claim_ledger").fetchone()[0],1)
+            conn.close()
+
+    def test_force_claim_takes_over_and_is_recorded(self):
+        """§9-39: 奪ったこと自体を記録する。あとで件数が合わない原因を追えるように。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); row=self._row(db)
+            self._claim(db,row["inbox_id"],"another-session",(datetime.now(timezone.utc)+timedelta(minutes=30)).isoformat())
+            args=self._packet_args(root,db); args.force_claim=True
+            report=build_packets(args)
+            self.assertEqual(report["generated"],1)
+            self.assertTrue(report["force_claim_used"])
+            self.assertEqual(report["force_claimed_inbox_ids"],[row["inbox_id"]])
+
+    def test_dry_run_target_must_differ_from_the_production_path(self):
+        """§9-43: 「dry-run のつもりで本番へ当てた」を仕組みで防ぐ。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root)
+            args=self._packet_args(root,db); args.out_db=db
+            with self.assertRaisesRegex(ValueError,"dry-run target must differ"):
+                build_packets(args)
+
+    def test_candidate_without_expiry_still_builds_a_retry_window(self):
+        """§9-52: expires_at は null になりうる（E0 §3.1）。落ちずに実行日+30日で窓を作る。"""
+        when=datetime(2026,8,14,tzinfo=timezone.utc)
+        row={"inbox_id":"inbox-test","contract_domain":"event","contract_lane":"event_update","source_id":"s","source_key":"k","source_payload_hash":"a"*64,"expires_at":None,"source_url":"https://example.test","payload_json":json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[{"occurrence_id":"occ-1"}]},"evidence_ids":["e1"]})}
+        candidate=make_packet(row,when)["retry_candidates"][0]
+        self.assertEqual(candidate["window_end"],(when+timedelta(days=30)).isoformat())
+        self.assertEqual(candidate["next_eligible_at"],(when+timedelta(days=14)).isoformat())
+
+    def test_candidate_without_evidence_cannot_defer(self):
+        """§9-53: 契約は occurrence と evidence の両方の凍結を要求する。片方欠けたら選ばせない。"""
+        when=datetime(2026,8,14,tzinfo=timezone.utc)
+        row={"inbox_id":"inbox-test","contract_domain":"event","contract_lane":"event_update","source_id":"s","source_key":"k","source_payload_hash":"a"*64,"expires_at":None,"source_url":"https://example.test","payload_json":json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[{"occurrence_id":"occ-1"}]},"evidence_ids":[]})}
+        packet=make_packet(row,when)
+        self.assertEqual(packet["retry_candidates"],[])
+        self.assertEqual(packet["retry_unavailable_reason"],"no_evidence")
+        self.assertNotIn("defer_for_retry",packet["allowed_actions"])
+
+    def test_implementation_errors_are_not_swallowed_as_invalid_results(self):
+        """§9-54: 実装側の誤りを「LLM の出力が悪い」として握りつぶさない。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            args=self._result_args(root,packet)
+            with patch("review_inbox_adapters.apply_judgment_results.canonicalize_raw_judgment",side_effect=TypeError("boom")):
+                with self.assertRaises(TypeError):
+                    apply_results(args)
+
     def test_legacy_pending_rows_are_untouched(self):
         """§9-35: 判断待ち561件の器（既存レビュー画面）へ手を出さない。"""
         with tempfile.TemporaryDirectory() as temp:
