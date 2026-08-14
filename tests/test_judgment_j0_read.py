@@ -68,6 +68,27 @@ class JudgmentJ0ReadTest(unittest.TestCase):
         self.assertEqual(candidate["window_end"], (when+timedelta(days=10)).isoformat())
         self.assertEqual(candidate["next_eligible_at"], candidate["window_end"])
 
+    def test_packet_apply_requires_its_own_confirmation(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); args=self._packet_args(root,db); args.apply=True; args.confirm=""
+            with self.assertRaises(ValueError): build_packets(args)
+
+    def test_result_apply_requires_its_own_confirmation(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root)
+            args=SimpleNamespace(db=db,out_db=root/"unused.sqlite",results=[],packets_dir=root/"missing",report_json=root/"report.json",report_md=root/"report.md",actor_id="oto-test",apply=True,confirm="",no_auto_migrate=False)
+            with self.assertRaises(ValueError): apply_results(args)
+
+    def test_packet_ids_are_deterministic_for_identical_row(self):
+        when=datetime(2026, 8, 14, tzinfo=timezone.utc)
+        row={"inbox_id":"inbox-test","contract_domain":"event","contract_lane":"event_update","source_id":"source","source_key":"key","source_payload_hash":"hash","expires_at":None,"source_url":"https://example.test","payload_json":json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[]},"evidence_ids":[]})}
+        self.assertEqual(make_packet(row,when)["packet_id"], make_packet(row,when+timedelta(days=1))["packet_id"])
+
+    def test_no_auto_migrate_refuses_missing_claim_ledger(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=root/"master.sqlite"; init_db(db).close(); args=self._packet_args(root,db); args.no_auto_migrate=True
+            with self.assertRaisesRegex(ValueError, "judgment_ledger_missing"): build_packets(args)
+
     def test_both_clis_parse_real_argv(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp); db=self._seed(root)
