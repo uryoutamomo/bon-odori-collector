@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 68,
+  "count": 70,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1078,6 +1078,37 @@
         "pic.x.com/84GvpBQADw"
       ],
       "text": "軽井沢 追分盆踊り\n今日13日は盆踊り前夜祭\n追分区公民館で踊りや太鼓の練習会です\n曲目は17曲、練習して明日からの盆踊り楽しみましょう\nどなたでもご参加いただけます\nお待ちしています\n#追分 #盆踊り #軽井沢 #練習会 https://t.co/84GvpBQADw",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "5b00cb03e31858e8",
+      "status": "needs_ocr",
+      "account": "@tatsuya115",
+      "url": "https://x.com/tatsuya115/status/2087877077500666091",
+      "tweet_id": "2087877077500666091",
+      "date": "2026-08-13T12:21:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPmhIq3acAAWI-z.jpg",
+        "https://t.co/pMUvz4DVgU",
+        "pic.x.com/pMUvz4DVgU"
+      ],
+      "text": "久米区の盆踊りへ。\n2曲だけ踊らせてください！とご挨拶したのですが、ニ曲目が終わるとアンコール。もう一曲踊りなさいと…（笑）何と、ダンシングヒーロー。子供達もたくさん輪に入り、汗だくで一緒に踊りました。楽しかったです。皆さんありがとうございました！ https://t.co/pMUvz4DVgU",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "0f147f70e63c15d5",
+      "status": "needs_ocr",
+      "account": "@Y_NGO_TYO",
+      "url": "https://x.com/Y_NGO_TYO/status/2088008973752693219",
+      "tweet_id": "2088008973752693219",
+      "date": "2026-08-13T21:05:07+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPoZFlEawAAHsch.jpg",
+        "https://t.co/iQa7R9882X",
+        "pic.x.com/iQa7R9882X",
+        "https://pbs.twimg.com/media/HPoZF7CaUAAyuzD.jpg"
+      ],
+      "text": "知らないうちに盆踊りの曲目に入ってた曲、と思ったけど、ローカルなのか。 https://t.co/iQa7R9882X",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
