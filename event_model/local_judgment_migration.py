@@ -9,6 +9,8 @@ MIGRATION_VERSION = 1
 MIGRATION_NAME = "local_judgment_contract_v1"
 EVENT_INBOX_MIGRATION_VERSION = 2
 EVENT_INBOX_MIGRATION_NAME = "event_inbox_candidate_v1"
+CLAIM_MIGRATION_VERSION = 3
+CLAIM_MIGRATION_NAME = "review_claim_ledger_v1"
 TABLES = {
     "canonical_decision_ledger", "review_queue_state_ledger",
     "review_hold_ledger", "local_judgment_schema_migrations",
@@ -137,3 +139,13 @@ def migrate_event_inbox_candidate(conn):
         (EVENT_INBOX_MIGRATION_VERSION, EVENT_INBOX_MIGRATION_NAME, datetime.now(timezone.utc).isoformat()),
     )
     return {"migration_version": EVENT_INBOX_MIGRATION_VERSION, "migration_name": EVENT_INBOX_MIGRATION_NAME, "columns_added": added}
+
+
+def migrate_review_claim_ledger(conn):
+    """Add the operational claim table without changing contract state."""
+    conn.execute("""CREATE TABLE IF NOT EXISTS review_claim_ledger (
+      inbox_id TEXT PRIMARY KEY, claimed_by TEXT NOT NULL, claim_kind TEXT NOT NULL,
+      claimed_at TEXT NOT NULL, expires_at TEXT NOT NULL, batch_id TEXT)""")
+    conn.execute("INSERT OR IGNORE INTO local_judgment_schema_migrations(version, name, applied_at) VALUES (?, ?, ?)",
+                 (CLAIM_MIGRATION_VERSION, CLAIM_MIGRATION_NAME, datetime.now(timezone.utc).isoformat()))
+    return {"migration_version": CLAIM_MIGRATION_VERSION, "migration_name": CLAIM_MIGRATION_NAME}
