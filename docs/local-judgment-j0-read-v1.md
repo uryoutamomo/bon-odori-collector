@@ -1,6 +1,8 @@
 # PR-J0-read 仕様：agent judgment intake v1（正本）
 
-決定者: こと（Claude Code） / 2026-08-14（**v1.1 追記 同日**：おとの仕様レビュー指摘2件を反映。§3.5＝`--max-packets` の単位、§5.4＝dry-run の migration を v3 まで、§6.3＝claim の書き込み先、§9-45〜49）
+決定者: こと（Claude Code） / 2026-08-14
+- **v1.1**（同日）：おとの仕様レビュー指摘2件を反映。§3.5＝`--max-packets` の単位、§5.4＝dry-run の migration を v3 まで、§6.3＝claim の書き込み先、§9-45〜49
+- **v1.2**（同日）：初回 push `5649077` のことレビューで出た4件を反映。§3.4＝retry window の算出順序（**ことの仕様バグ**）と retry を出す3条件、§5.1＝migration 直後の暗黙トランザクション、§7.1＝packet 生成側の `--confirm`、§7.3＝例外の握りつぶし禁止、§9-50〜55
 前提:
 - `docs/local-judgment-contract-v1.md`（v1.1、SHA-256 `3b47f5e4e2618c209c1d8b0fb42cbaa1f5687b9a3f167719bd2939ceb4756a05`）
 - `docs/local-judgment-e0-event-inbox-v1.md`（v1.3、SHA-256 `fbe5788a…`）
@@ -151,17 +153,23 @@ LLM へ渡す1件分の JSON。**候補行の `payload_json` をそのまま埋�
 
 契約 §7 のとおり、**`next_eligible_at` は機械が算出し、LLM は提示された候補から選ぶだけ**です。範囲外を選んだら `_retry_hold_packet` が拒否します。
 
-J0-read が生成する候補は、当面**1本だけ**にします。
+J0-read が生成する候補は、当面**1本だけ**にします。**算出順序を固定します**（v1.2 で改訂。順序を変えると契約の窓検査に落ちます）。
+
+```
+window_start     = 実行時刻 + 7日
+window_end       = min(実行時刻 + 30日, expires_at)   ※ expires_at が null なら 実行時刻 + 30日
+next_eligible_at = min(実行時刻 + 14日, window_end)
+```
 
 ```jsonc
 {"candidate_id": "retry_xxxxxxxxxxxx",
- "next_eligible_at": "<実行時刻 + 14日>",
- "window_start": "<実行時刻 + 7日>",
- "window_end": "<expires_at と (実行時刻+30日) の早い方>",
+ "next_eligible_at": "…", "window_start": "…", "window_end": "…",
  "occurrence_ids": ["..."], "evidence_ids": ["..."],
  "retrieved_at": "...", "calculation_version": "retry-window/v1",
  "input_hash": "<sha256 64桁>"}
 ```
+
+**`next_eligible_at` を先に固定値（+14日）で置いてはいけません**（v1 の記述はそうなっていて、これは**ことの仕様バグ**でした）。契約実装の `_retry_hold_packet` は `window_start <= next_eligible_at <= window_end` を要求するので、**期限が2週間以内の候補では +14日が window_end を追い越し、取り込み時に必ず ContractError で落ちます。** お盆前後の行事は期限が近く、実データで頻発します。上の順序なら常に成立します。
 
 **過去の告知実績から算出する仕組みは J0-read では作りません。** 契約 §6 の `insufficient_announcement_history` は「再試行日を算出する履歴が足りないときは根拠のない日付を作らず人へ回す」という規則で、J0-read の時点では**履歴を見る実装がそもそも無いので、固定窓を使う**ことを明示します。
 
@@ -169,9 +177,15 @@ J0-read が生成する候補は、当面**1本だけ**にします。
 
 したがって次の規則にします。
 
-- `targets.occurrence_candidates` が1件以上ある候補 → その `occurrence_id` を最大8件まで凍結し、`retry_candidates` を1本出す
-- 1件も無い候補 → **`retry_candidates` は空配列**。LLM は `defer_for_retry` を選べず、保留したいなら `hold_for_user` になる
-- packet に「なぜ retry を選べないか」を書く（`retry_unavailable_reason: "no_occurrence_candidates"`）
+**`retry_candidates` を出す条件は次の3つを全て満たすときだけ**です（v1.2 で2件追加）。ひとつでも欠けたら**空配列**にし、`retry_unavailable_reason` に理由を入れます。LLM は `defer_for_retry` を選べず、保留したいなら `hold_for_user` になります。
+
+| 条件 | 満たさないときの `retry_unavailable_reason` |
+|---|---|
+| `targets.occurrence_candidates` が1件以上（`occurrence_id` を最大8件まで凍結） | `no_occurrence_candidates` |
+| **`evidence_ids` が1件以上** | `no_evidence` |
+| **`window_end >= window_start`**（期限が1週間以内なら成立しない） | `retry_window_shorter_than_minimum` |
+
+**`evidence_ids` の条件を明示するのは、契約実装が `occurrence_ids` と `evidence_ids` の両方に1件以上を要求するためです**（`local_judgment_contract.py:255`「retry candidate must freeze occurrence and evidence IDs」）。E0 は候補ごとに evidence を1件作りますが、片方だけ見て retry を出すと、evidence が欠けた候補で取り込みが落ちます。
 
 **これは実装上の妥協ではなく、契約が要求している凍結内容を満たせない以上、選ばせてはいけないという判断です。** 空の `occurrence_ids` で hold packet を作ろうとすると、builder が例外を投げてバッチ全体が止まります。
 
@@ -254,6 +268,16 @@ decided_at = 取り込み実行時刻（tz付き）
 | claim 表 | 対象 claim を release |
 
 **`hold_id` の決め方**: `stable_id("hold", decision_id)`。決定的にすることで、二重取り込みが `decision_id` の UNIQUE 制約より先に PRIMARY KEY 衝突で止まるのを防ぎ、§5.3 の冪等判定に乗せられます。
+
+**トランザクションの開き方（v1.2 で追記。実測した罠です）。** `connect_existing` は `isolation_level` を指定していないため Python の既定（暗黙トランザクション）で動きます。migration 関数は最後に `INSERT OR IGNORE INTO local_judgment_schema_migrations` を実行するので、**migration を当てた直後は `conn.in_transaction` が True のまま**です。この状態で `conn.execute("BEGIN")` を呼ぶと `OperationalError: cannot start a transaction within a transaction` になります。
+
+実測（Python 3.14.6 / SQLite 3.53.3）では、**1件目だけが落ちて rollback され、その rollback で migration の記録行まで巻き戻り（3件→1件）、2件目以降は成功する**という、非常に見つけにくい壊れ方をしました。
+
+したがって次を守ってください。
+
+- **migration を当てたら、判断の書き込みを始める前に必ず `commit()` する**
+- 明示 `BEGIN` を使うなら、その直前に `conn.in_transaction` が False であることを前提にしない実装にする（`commit()` を挟むか、接続時に `isolation_level=None` を明示して自分で制御する）
+- **この罠は dry-run 経路でだけ起きます**（`--apply` では migration を当てないため）。dry-run が主な検証経路なので、実害はむしろ大きいです
 
 ### 5.2 LLM の申告を採用しない箇所（実装の要）
 
@@ -338,10 +362,13 @@ claim の読み書きは、**その実行が対象としている DB に対し�
 ### 7.1 `build_judgment_packets.py`
 
 ```
---db PATH / --out-dir DIR / --batch-size N（既定20） / --max-packets N（既定100）
+--db PATH / --out-db PATH / --out-dir DIR / --batch-size N（既定20） / --max-packets N（既定100）
 --actor-id ID / --lease-minutes N（既定30） / --force-claim
 --domain event（既定 event。将来 song/term）
+--apply / --confirm PHRASE / --no-auto-migrate
 ```
+
+**`--confirm` は packet 生成側にも必要です**（v1.2 で明記）。`--apply` を付けると本番DBの `review_claim_ledger` へ書くため、書き込み口である以上、取り込み側と同じ確認フレーズの関門を通します（`operation_safety/manual_apply_guards` の `require_confirmation`）。書く対象が claim 表だけでも、本番へ書く CLI を無防備にしないという原則を優先します。
 
 出力: `data/judgment_packets/batch_*.json` と `data/judgment_packets_report.json`
 
@@ -371,6 +398,10 @@ claim の読み書きは、**その実行が対象としている DB に対し�
 | dry-run の適用先が本番DBパスと同一 | high（全体停止） |
 | `actor_id` が未指定 | high（起動時に停止） |
 | result の `packet_id` に対応する packet ファイルが無い | high（全体停止。照合できないまま台帳へ入れない） |
+
+**medium にしてよいのは「LLM の出力が契約に合わない」ことだけです**（v1.2 で追記）。`except Exception` で丸ごと拾って medium issue に落とす実装にしないでください。`TypeError` / `KeyError` / `sqlite3.OperationalError` のような**実装側の誤りまで「不正な result」として握りつぶされ、LLM の判断が理由不明で消えます。**
+
+捕まえてよいのは `ContractError`（およびその親の `ValueError`）と、こちらが明示的に投げる検証エラーに限ること。それ以外は素通しして停止させてください。#165 で `AttributeError` が「テスト全通過」の裏に隠れたのと同じ形の事故です。
 
 ---
 
@@ -458,6 +489,15 @@ claim
 47. **`--max-packets 100` で生成される packet が最大100件・5バッチになる**（バッチ数と取り違えていれば最大2,000件になるので落ちる）
 48. 上限で切られた候補は claim されず、次の実行で対象になる（claim が残っていると次回 `claimed_by_other` で除外されてしまう）
 49. 実行レポートに `migrations_applied` と `claim_scope`（dry-run なら `dry_run_copy`、`--apply` なら `production`）が出る
+
+### v1.2 で追加（初回 push `5649077` をことがレビューして実測した4件）
+
+50. **dry-run で migration を当てた直後でも、1件目の result が捨てられずに台帳へ書かれる**（migration 後の `commit()` を外すと `cannot start a transaction within a transaction` で1件目だけ落ちること、および rollback で `local_judgment_schema_migrations` の行が巻き戻ることを実測する。**これが初回実装の実バグ**）
+51. **`expires_at` が実行時刻の10日後の候補で `defer_for_retry` が取り込める**（`next_eligible_at` を固定 +14日に戻すと `candidate next_eligible_at is outside its machine-calculated window` で落ちること）
+52. `expires_at` が null の候補でも packet 生成が落ちない（window_end が実行時刻+30日になる）
+53. `evidence_ids` が空の候補では `retry_candidates` が空配列になり、`retry_unavailable_reason` が `no_evidence` になる
+54. **実装側の例外（`TypeError` / `sqlite3.OperationalError` など）が medium issue に落とされず、そのまま停止する**（`except Exception` で拾う実装に戻すと、この停止が起きなくなって落ちる）
+55. packet 生成側も `--apply` を確認フレーズ無しで拒否する
 
 ---
 

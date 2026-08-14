@@ -8,6 +8,7 @@ from master_rdb.master_db import MASTER_DB,connect_existing,stable_id
 from operation_safety.manual_apply_guards import require_confirmation
 from report_apply.rdb_apply_support import copy_db
 from review_inbox_adapters.local_judgment_contract import canonicalize_raw_judgment,build_agent_terminal_decision,build_canonical_hold,REASON_CODE_HOLD_MODE
+from review_inbox_adapters.local_judgment_contract import ContractError
 from review_inbox_adapters.judgment_ledger_writer import write_decision
 JUDGMENT_RESULT_CONFIRMATION='APPLY JUDGMENT RESULTS'
 def _migrate(c):migrate_local_judgment_contract(c);migrate_event_inbox_candidate(c);migrate_review_claim_ledger(c)
@@ -29,6 +30,7 @@ def run(args):
  with connect_existing(target) as c:
   c.row_factory=sqlite3.Row
   if not args.apply and not args.no_auto_migrate:_migrate(c);report['migrations_applied']=['local_judgment_contract_v1','event_inbox_candidate_v1','review_claim_ledger_v1']
+  c.commit()
   tables={x[0] for x in c.execute("SELECT name FROM sqlite_master WHERE type='table'")}
   if not {'canonical_decision_ledger','review_queue_state_ledger','review_hold_ledger','review_claim_ledger'}<=tables:raise ValueError('judgment_ledger_missing')
   for result in results:
@@ -54,7 +56,7 @@ def run(args):
     else: decision=build_agent_terminal_decision(normalized);candidate_ids=None
     c.execute('BEGIN'); outcome=write_decision(c,decision,candidate_ids=candidate_ids);c.commit()
     key={'accept':'accepted','reject':'rejected','hold_for_user':'held_for_user','defer_for_retry':'deferred_for_retry'}[requested] if outcome=='written' else 'noop';report[key]+=1;report['entries'].append({'inbox_id':decision['inbox_id'],'decision_id':decision['decision_id'],'action':decision['action'],'reason_code':decision['reason_code']})
-   except (ValueError,Exception) as exc:
+   except (ContractError, ValueError) as exc:
     c.rollback()
     if str(exc)=='decision_id_conflict':raise
     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':'invalid_result','detail':str(exc),'packet_id':packet['packet_id']})
