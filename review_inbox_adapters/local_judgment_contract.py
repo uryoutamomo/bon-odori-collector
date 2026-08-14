@@ -280,7 +280,7 @@ def build_canonical_hold(
 
 
 def build_user_decision(
-    raw: Mapping[str, Any], *, open_hold: Mapping[str, Any]
+    raw: Mapping[str, Any], *, open_hold: Mapping[str, Any], adjudication_batch_id: str | None = None
 ) -> dict[str, Any]:
     if raw.get("actor_type") != "user" or raw.get("requested_action") not in {"accept", "reject"}:
         raise ContractError("user terminal decision requires user accept or reject")
@@ -296,7 +296,7 @@ def build_user_decision(
         open_hold.get("prior_agent_attempt_id"), "prior_agent_attempt_id"
     )
     packet["open_hold_id"] = _text(open_hold.get("hold_id"), "open_hold_id")
-    packet["adjudication_batch_id"] = open_hold.get("adjudication_batch_id")
+    packet["adjudication_batch_id"] = adjudication_batch_id or open_hold.get("adjudication_batch_id")
     return validate_canonical_decision(packet)
 
 

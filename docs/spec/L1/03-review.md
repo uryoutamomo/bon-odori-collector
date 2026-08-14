@@ -38,10 +38,14 @@ invariants:
   - INV-RVW-005
   - INV-RVW-006
   - INV-RVW-007
+  - INV-RVW-008
+  - INV-RVW-009
+  - INV-RVW-010
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
-updated_for: 7ca7a07
+  - tests/test_judgment_j0_adjudication.py
+updated_for: 069a9aa
 ---
 
 # 人のレビュー運用サブシステム
@@ -145,6 +149,24 @@ updated_for: 7ca7a07
 - **内容**: `review_inbox_items.status` は `candidate` のまま維持する。E0 の改訂・再実行を止めないためである。
 - **守っているテスト**: `tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged`
 
+### INV-RVW-008 裁定画面のボタンは判断台帳を動かさない
+
+- **内容**: 裁定タブの操作が master RDB へ書けるのは `review_claim_ledger` のリース行だけで、canonical decision / queue / hold の3台帳は行の中身まで含めて不変である。台帳への反映は確認フレーズ付きCLI（`apply_user_adjudications.py --apply`）だけが行い、**それを呼ぶ HTTP パスを置かない**。UIのボタンに確認フレーズを肩代わりさせないためである。
+- **守っているコード**: `review_console/data.py` の裁定ヘルパ群、`review_console/server.py`
+- **守っているテスト**: `tests/test_judgment_j0_adjudication.py::test_07_recording_a_decision_does_not_touch_the_master_rdb`、`tests/test_judgment_j0_adjudication.py::test_07_claim_writes_only_the_claim_lease_row`、`tests/test_judgment_j0_adjudication.py::test_07a_no_http_path_can_apply_to_the_ledger`
+
+### INV-RVW-009 人が裁けるのは agent が開いた awaiting_user の hold だけ
+
+- **内容**: user の terminal decision は、`status='open'` かつ `hold_mode='awaiting_user'` の hold を経たものに限る。hold の無い候補（eligible）と `deferred_retry` の hold へは、画面からも反映CLIからも裁定を通さない。人の経路を全pendingへの並行入口にすると、判断待ち561件の器が二重になるためである。
+- **守っているコード**: `review_inbox_adapters/apply_user_adjudications.py` の `_validate`、`local_judgment_contract.build_user_decision`
+- **守っているテスト**: `tests/test_judgment_j0_adjudication.py::test_22_an_eligible_candidate_cannot_be_decided_by_the_user`、`tests/test_judgment_j0_adjudication.py::test_23_a_deferred_retry_hold_cannot_be_decided_by_the_user`
+
+### INV-RVW-010 裁定の対象は凍結された候補集合の中からしか選べない
+
+- **内容**: 反映時に hold の `candidate_set_sha256` を照合し、一致しない裁定は `invalidated` にする。`target_id` は hold の `candidate_ids` に含まれるものに限り、候補集合が空の hold には対象を付けられない。対象の要否は `candidate_ids` の有無で決める（`required_resolution_type` は hold_mode から決まる2値で、対象の要否を表さない）。
+- **守っているコード**: `review_console/data.py` の `adjudication_target_required` / `_check_target`、`apply_user_adjudications.py` の `_validate`
+- **守っているテスト**: `tests/test_judgment_j0_adjudication.py::test_11_changed_candidate_set_is_invalidated`、`tests/test_judgment_j0_adjudication.py::test_09a_target_outside_the_frozen_candidate_set_is_refused`、`tests/test_judgment_j0_adjudication.py::test_11a_target_outside_the_candidate_set_is_invalidated_at_apply`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -162,6 +184,12 @@ updated_for: 7ca7a07
 ### J0-read の局所判断経路
 
 E0 が作った `status='candidate'` を `build_judgment_packets.py` が claim 付きpacketへ凍結する。LLM の result は `apply_judgment_results.py` が packet/source hash/allowed action を照合してから正規化し、`judgment_ledger_writer.py` が decision・queue・hold の3台帳へだけ書く。これは正本factへの適用経路ではない。retry候補、actor identity、時刻をLLMに決めさせると再試行や監査が壊れるため、機械計算またはローカルentrypointの値だけを採用する。
+
+### J0-adjudication の user 裁定レーン
+
+agent が `awaiting_user` hold を開いた候補だけを、同じレビューコンソール（`http://127.0.0.1:8751/` の「裁定」タブ、ショートカット `b`）で人が判断する。画面操作は `data/review_console/adjudications.json` に記録するだけで、判断の台帳は動かさない（唯一の例外は `review_claim_ledger` の作業中リース行）。反映は `apply_user_adjudications.py --apply` の確認フレーズ付きCLIに限定し、それを呼ぶHTTPパスは置かない。反映時はholdの候補集合hash、期限、allowed action、対象IDが候補集合の内側かを再照合し、`build_user_decision` と既存 `judgment_ledger_writer.write_decision` を通す。失敗した記録は消さず `invalidated` と理由を残し、holdは open のままなので裁き直せる。J0-read同様、canonical fact表と `review_inbox_items.status` は変更しない。
+
+**裁定で「採用」してもイベントは1件も増えない。** 記録が台帳へ入るだけで、正本factへの反映はE2a以降である。
 
 ### 日次で積んでいるのは、いくつの入口か
 

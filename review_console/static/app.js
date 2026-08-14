@@ -16,6 +16,7 @@ const state = {
   itemsLoaded: false,
   currentItems: [],
   savingItemIds: new Set(),
+  adjudicationTargets: new Map(),
 };
 
 const labels = {
@@ -32,6 +33,11 @@ const elements = {
   collectionView: document.querySelector("#collectionView"),
   metricsView: document.querySelector("#metricsView"),
   reviewView: document.querySelector("#reviewView"),
+  adjudicationView: document.querySelector("#adjudicationView"),
+  adjudicationSummary: document.querySelector("#adjudicationSummary"),
+  adjudicationCommand: document.querySelector("#adjudicationCommand"),
+  adjudicationItems: document.querySelector("#adjudicationItems"),
+  reloadAdjudicationsButton: document.querySelector("#reloadAdjudicationsButton"),
   homeUpdated: document.querySelector("#homeUpdated"),
   homePendingCount: document.querySelector("#homePendingCount"),
   homeReviewedCount: document.querySelector("#homeReviewedCount"),
@@ -211,6 +217,7 @@ function setView(view) {
   elements.collectionView.hidden = view !== "collection";
   elements.metricsView.hidden = view !== "metrics";
   elements.reviewView.hidden = view !== "review";
+  elements.adjudicationView.hidden = view !== "adjudication";
   elements.viewTabs.forEach((button) => {
     button.classList.toggle("active", button.dataset.view === view);
   });
@@ -236,6 +243,130 @@ function setView(view) {
       console.error(error);
     });
   }
+  if (view === "adjudication") loadAdjudications().catch(error => showMessage(error.message));
+}
+
+function adjudicationCandidates(hold) {
+  const rows = (hold.targets && hold.targets.occurrence_candidates) || [];
+  const byId = new Map(rows.map((row) => [row.occurrence_id, row]));
+  return (hold.candidate_ids || []).map((id) => {
+    const row = byId.get(id) || {};
+    const parts = [row.display_name || row.series_name || id, row.venue_name, row.event_year, row.date_start].filter(Boolean);
+    return { id, label: parts.join(" / ") };
+  });
+}
+
+function adjudicationCard(hold, selected) {
+  const article = document.createElement("article");
+  article.className = "item";
+  const title = document.createElement("h3");
+  title.textContent = hold.title || hold.event_name || hold.inbox_id;
+  article.append(title);
+  const detail = document.createElement("p");
+  detail.textContent = `${hold.reason_code}: ${hold.reason_detail || hold.agent_reason_detail || ""}`;
+  article.append(detail);
+  const meta = document.createElement("p");
+  meta.className = "meta";
+  meta.textContent = hold.expires_in_days === null || hold.expires_in_days === undefined
+    ? "期限なし"
+    : `期限まで ${hold.expires_in_days}日`;
+  article.append(meta);
+
+  // 候補集合は hold に凍結されている。ここから選ばせ、任意の ID を打てないようにする。
+  const candidates = adjudicationCandidates(hold);
+  if (candidates.length) {
+    const list = document.createElement("div");
+    list.className = "candidates";
+    for (const candidate of candidates) {
+      const label = document.createElement("label");
+      const radio = document.createElement("input");
+      radio.type = "radio";
+      radio.name = `target-${hold.hold_id}`;
+      radio.value = candidate.id;
+      radio.checked = selected.get(hold.hold_id) === candidate.id;
+      radio.addEventListener("change", () => selected.set(hold.hold_id, candidate.id));
+      label.append(radio, document.createTextNode(` ${candidate.label}`));
+      list.append(label);
+    }
+    article.append(list);
+  }
+
+  const note = document.createElement("input");
+  note.type = "text";
+  note.className = "note";
+  note.placeholder = "メモ（任意）";
+  article.append(note);
+
+  const actions = document.createElement("div");
+  for (const action of hold.allowed_actions || []) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = labels[action] || action;
+    button.disabled = !hold.actionable;
+    button.addEventListener("click", async () => {
+      const body = { hold_id: hold.hold_id, action, reason_detail: note.value, target_id: selected.get(hold.hold_id) || null };
+      try {
+        await api("/api/adjudication/decide", { method: "POST", body: JSON.stringify(body) });
+        await loadAdjudications();
+      } catch (error) {
+        showMessage(error.message);
+      }
+    });
+    actions.append(button);
+  }
+  if (!hold.actionable) {
+    const reason = document.createElement("small");
+    reason.textContent = hold.action_disabled_reason;
+    actions.append(reason);
+  }
+  article.append(actions);
+  return article;
+}
+
+async function loadAdjudications() {
+  const [holds, status] = await Promise.all([api("/api/adjudication/holds"), api("/api/adjudication/status")]);
+  const rows = holds.holds || [];
+  elements.adjudicationSummary.textContent = `裁定待ち ${rows.length}件 / 未反映 ${status.pending_count}件`;
+  elements.adjudicationCommand.textContent = status.pending_count
+    ? `台帳へ反映するコマンド: ${status.apply_command}`
+    : "未反映の裁定はありません";
+  const selected = state.adjudicationTargets;
+  const cards = rows.map((hold) => adjudicationCard(hold, selected));
+  const batchable = rows.filter((hold) => hold.batch_eligible && hold.actionable);
+  if (batchable.length > 1) {
+    const groups = new Map();
+    for (const hold of batchable) {
+      const key = hold.grouping_fingerprint;
+      groups.set(key, [...(groups.get(key) || []), hold]);
+    }
+    for (const [key, group] of groups) {
+      if (group.length < 2) continue;
+      const box = document.createElement("section");
+      box.className = "home-panel";
+      const head = document.createElement("p");
+      head.textContent = `同じ種類の保留 ${group.length}件（${group[0].reason_code}）をまとめて裁く`;
+      box.append(head);
+      for (const action of ["accept", "reject"]) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = `${labels[action] || action}（${group.length}件）`;
+        button.addEventListener("click", async () => {
+          try {
+            await api("/api/adjudication/decide-batch", {
+              method: "POST",
+              body: JSON.stringify({ hold_ids: group.map((hold) => hold.hold_id), action, reason_detail: "" }),
+            });
+            await loadAdjudications();
+          } catch (error) {
+            showMessage(error.message);
+          }
+        });
+        box.append(button);
+      }
+      cards.unshift(box);
+    }
+  }
+  elements.adjudicationItems.replaceChildren(...cards);
 }
 
 function renderHome() {
@@ -1426,6 +1557,9 @@ async function handleGlobalKeydown(event) {
     q: () => setView("collection"),
     m: () => setView("metrics"),
     v: () => setView("review"),
+    // 仕様は `j` だったが、レビュー画面では `j` がカーソル移動に割り当て済みで、
+    // いちばん使う画面から裁定タブへ飛べなくなるため `b` にした。
+    b: () => setView("adjudication"),
     a: () => setStatusFilter(""),
     u: () => setStatusFilter("pending"),
     d: () => setStatusFilter("reviewed"),
@@ -1494,6 +1628,7 @@ document.querySelectorAll(".stat-card").forEach((button) => {
 });
 elements.openPendingButton.addEventListener("click", () => applyTarget({ view: "review", status: "pending" }));
 elements.reloadCollectionButton.addEventListener("click", loadCollectionStatus);
+elements.reloadAdjudicationsButton.addEventListener("click", () => loadAdjudications().catch((error) => showMessage(error.message)));
 elements.openMetricsReviewButton.addEventListener("click", () => applyTarget({ view: "review", status: "pending" }));
 document.querySelector("#refreshButton").addEventListener("click", refreshCurrentView);
 document.querySelector("#helpButton").addEventListener("click", showHelp);

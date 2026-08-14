@@ -17,6 +17,7 @@
       <button class="view-tab" type="button" data-view="collection">取得状況 <kbd>q</kbd></button>
       <button class="view-tab" type="button" data-view="metrics">メトリクス <kbd>m</kbd></button>
       <button class="view-tab" type="button" data-view="review">レビュー <kbd>v</kbd></button>
+      <button class="view-tab" type="button" data-view="adjudication">裁定 <kbd>b</kbd></button>
     </nav>
     <div class="header-actions">
       <button id="helpButton" type="button">操作ガイド <kbd>?</kbd></button>
@@ -97,6 +98,11 @@
       </div>
       <div id="opsSummary" class="ops-summary"></div>
     </section>
+  </main>
+
+  <main id="adjudicationView" class="app-view" hidden>
+    <section class="home-head"><div><h2>裁定</h2><p id="adjudicationSummary">読み込み中</p></div><button id="reloadAdjudicationsButton" type="button">更新</button></section>
+    <section class="home-panel"><p id="adjudicationCommand"></p><div id="adjudicationItems" class="items"></div></section>
   </main>
 
   <main id="metricsView" class="metrics-view app-view" hidden>

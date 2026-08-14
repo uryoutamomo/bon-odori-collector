@@ -94,6 +94,15 @@ class ReviewConsoleHandler(BaseHTTPRequestHandler):
             return self.send_json(data.undo_status())
         if parsed.path == "/api/stage-status":
             return self.send_json(data.stage_status())
+        if parsed.path == "/api/adjudication/holds":
+            return self.send_json({"holds": data.load_adjudication_holds()})
+        if parsed.path.startswith("/api/adjudication/hold/"):
+            hold = data.load_adjudication_hold(unquote(parsed.path.removeprefix("/api/adjudication/hold/")))
+            if not hold:
+                return self.send_json({"error": "hold not found"}, HTTPStatus.NOT_FOUND)
+            return self.send_json(hold)
+        if parsed.path == "/api/adjudication/status":
+            return self.send_json(data.adjudication_status())
         return self.send_json({"error": "not found"}, HTTPStatus.NOT_FOUND)
 
     def do_POST(self) -> None:
@@ -149,6 +158,15 @@ class ReviewConsoleHandler(BaseHTTPRequestHandler):
                 result = data.run_console_operation(payload.get("operation_id", ""))
                 status = HTTPStatus.OK if result.get("ok") else HTTPStatus.BAD_REQUEST
                 return self.send_json({"ok": result.get("ok"), "result": result}, status)
+            if parsed.path == "/api/adjudication/claim":
+                payload = self.read_json_body()
+                return self.send_json({"ok": True, **data.claim_adjudication_hold(payload.get("hold_id", ""), payload.get("claimed_by", "uchida"), bool(payload.get("release")))})
+            if parsed.path == "/api/adjudication/decide":
+                payload = self.read_json_body()
+                return self.send_json({"ok": True, "adjudication": data.save_adjudication(payload.get("hold_id", ""), payload.get("action", ""), payload.get("target_id"), payload.get("reason_detail", ""), payload.get("decided_by", "uchida"))})
+            if parsed.path == "/api/adjudication/decide-batch":
+                payload = self.read_json_body()
+                return self.send_json({"ok": True, "adjudications": data.save_adjudication_batch(payload.get("hold_ids", []), payload.get("action", ""), payload.get("reason_detail", ""), payload.get("decided_by", "uchida"))})
         except ValueError as exc:
             return self.send_json({"ok": False, "error": str(exc)}, HTTPStatus.BAD_REQUEST)
         except json.JSONDecodeError as exc:
