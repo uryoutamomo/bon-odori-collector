@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T22:50:52Z",
-  "generated_for_commit": "8fb30c8",
+  "generated_at": "2026-08-14T03:30:22Z",
+  "generated_for_commit": "dd790c1",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -128,7 +128,10 @@
         "INV-RVW-001",
         "INV-RVW-002",
         "INV-RVW-003",
-        "INV-RVW-004"
+        "INV-RVW-004",
+        "INV-RVW-005",
+        "INV-RVW-006",
+        "INV-RVW-007"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -161,12 +164,15 @@
         "review_console_ops/run_review_console.py",
         "review_inbox.py",
         "review_inbox_adapters/__init__.py",
+        "review_inbox_adapters/apply_judgment_results.py",
         "review_inbox_adapters/build_change_requests_from_review_inbox.py",
         "review_inbox_adapters/build_event_inbox_candidates.py",
+        "review_inbox_adapters/build_judgment_packets.py",
         "review_inbox_adapters/decision_stage.py",
         "review_inbox_adapters/decision_writer.py",
         "review_inbox_adapters/event_inbox_writer.py",
         "review_inbox_adapters/historical_reference_adapter.py",
+        "review_inbox_adapters/judgment_ledger_writer.py",
         "review_inbox_adapters/local_judgment_contract.py",
         "review_inbox_adapters/low_priority_adapters.py",
         "review_inbox_adapters/missing_source_url_adapter.py",
@@ -197,8 +203,8 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 7,
+        "files_changed_since": 3
       }
     },
     "L1-master": {
@@ -277,8 +283,8 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       }
     },
     "L1-publication": {
@@ -937,6 +943,31 @@
       ],
       "has_test": true
     },
+    "INV-RVW-005": {
+      "spec": "L1-review",
+      "title": "J0-read は正本factを変更しない",
+      "tests": [
+        "tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged",
+        "tests/test_judgment_j0_read.py::test_structure_does_not_import_canonical_fact_writers"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-006": {
+      "spec": "L1-review",
+      "title": "LLMの自己申告は判断主体にしない",
+      "tests": [
+        "tests/test_judgment_j0_read.py::test_untrusted_actor_identity_and_timestamp_are_overwritten"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-007": {
+      "spec": "L1-review",
+      "title": "J0-read はcandidateを消費しない",
+      "tests": [
+        "tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged"
+      ],
+      "has_test": true
+    },
     "INV-MST-001": {
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
@@ -1319,12 +1350,15 @@
     "review_console_ops/run_review_console.py": "L1-review",
     "review_inbox.py": "L1-review",
     "review_inbox_adapters/__init__.py": "L1-review",
+    "review_inbox_adapters/apply_judgment_results.py": "L1-review",
     "review_inbox_adapters/build_change_requests_from_review_inbox.py": "L1-review",
     "review_inbox_adapters/build_event_inbox_candidates.py": "L1-review",
+    "review_inbox_adapters/build_judgment_packets.py": "L1-review",
     "review_inbox_adapters/decision_stage.py": "L1-review",
     "review_inbox_adapters/decision_writer.py": "L1-review",
     "review_inbox_adapters/event_inbox_writer.py": "L1-review",
     "review_inbox_adapters/historical_reference_adapter.py": "L1-review",
+    "review_inbox_adapters/judgment_ledger_writer.py": "L1-review",
     "review_inbox_adapters/local_judgment_contract.py": "L1-review",
     "review_inbox_adapters/low_priority_adapters.py": "L1-review",
     "review_inbox_adapters/missing_source_url_adapter.py": "L1-review",
@@ -1537,8 +1571,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 328,
-    "owned": 238,
+    "tracked_source_files": 331,
+    "owned": 241,
     "unowned": 90,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",

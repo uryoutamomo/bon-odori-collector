@@ -35,6 +35,9 @@ invariants:
   - INV-RVW-002
   - INV-RVW-003
   - INV-RVW-004
+  - INV-RVW-005
+  - INV-RVW-006
+  - INV-RVW-007
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -126,6 +129,22 @@ updated_for: 83bf7d0
 - **守っているテスト**: `tests/test_promote_change_requests_for_review.py::test_refuses_unknown_approved_id`、
   `tests/test_promote_change_requests_for_review.py::test_refuses_selected_request_without_dry_run_only`
 
+### INV-RVW-005 J0-read は正本factを変更しない
+
+- **内容**: event candidate の packet 化と LLM 判断の取り込みは、canonical decision / queue / hold の台帳だけへ記録する。venue、series、occurrence、song とその alias/link 表は変更しない。
+- **守っているコード**: `build_judgment_packets.py`、`apply_judgment_results.py`、`judgment_ledger_writer.py`
+- **守っているテスト**: `tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged`、`tests/test_judgment_j0_read.py::test_structure_does_not_import_canonical_fact_writers`
+
+### INV-RVW-006 LLMの自己申告は判断主体にしない
+
+- **内容**: actor identity・channel・時刻はローカルentrypointが stamp し、result JSON の申告値は採用しない。
+- **守っているテスト**: `tests/test_judgment_j0_read.py::test_untrusted_actor_identity_and_timestamp_are_overwritten`
+
+### INV-RVW-007 J0-read はcandidateを消費しない
+
+- **内容**: `review_inbox_items.status` は `candidate` のまま維持する。E0 の改訂・再実行を止めないためである。
+- **守っているテスト**: `tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -139,6 +158,10 @@ updated_for: 83bf7d0
 4. **決定を書く** — `review_inbox_adapters/decision_writer.py`（INV-RVW-001〜003）。
 5. **昇格させる** — `scripts/promote_change_requests_for_review.py` を人が実行（INV-RVW-004）。
 6. **マスタへ適用** — [L1-master](04-master.md) の dry-run → apply 経路へ。
+
+### J0-read の局所判断経路
+
+E0 が作った `status='candidate'` を `build_judgment_packets.py` が claim 付きpacketへ凍結する。LLM の result は `apply_judgment_results.py` が packet/source hash/allowed action を照合してから正規化し、`judgment_ledger_writer.py` が decision・queue・hold の3台帳へだけ書く。これは正本factへの適用経路ではない。retry候補、actor identity、時刻をLLMに決めさせると再試行や監査が壊れるため、機械計算またはローカルentrypointの値だけを採用する。
 
 ### 日次で積んでいるのは、いくつの入口か
 
