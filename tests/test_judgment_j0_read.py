@@ -13,6 +13,7 @@ from review_inbox_adapters.apply_judgment_results import main as apply_main, run
 from review_inbox_adapters.build_event_inbox_candidates import run as build_candidates
 from review_inbox_adapters.build_judgment_packets import main as packet_main, run as build_packets
 from review_inbox_adapters.build_judgment_packets import make_packet
+import review_inbox_adapters.build_judgment_packets as packet_builder
 
 
 class JudgmentJ0ReadTest(unittest.TestCase):
@@ -83,6 +84,10 @@ class JudgmentJ0ReadTest(unittest.TestCase):
         when=datetime(2026, 8, 14, tzinfo=timezone.utc)
         row={"inbox_id":"inbox-test","contract_domain":"event","contract_lane":"event_update","source_id":"source","source_key":"key","source_payload_hash":"hash","expires_at":None,"source_url":"https://example.test","payload_json":json.dumps({"proposal":{},"targets":{"retrieved_at":when.isoformat(),"occurrence_candidates":[]},"evidence_ids":[]})}
         self.assertEqual(make_packet(row,when)["packet_id"], make_packet(row,when+timedelta(days=1))["packet_id"])
+
+    def test_allowed_actions_follow_registry(self):
+        with patch.dict(packet_builder.ACTION_REGISTRY, {}, clear=True):
+            self.assertEqual(packet_builder.allowed("event", "event_update"), [])
 
     def test_no_auto_migrate_refuses_missing_claim_ledger(self):
         with tempfile.TemporaryDirectory() as temp:

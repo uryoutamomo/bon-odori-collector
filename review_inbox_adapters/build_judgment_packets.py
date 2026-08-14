@@ -16,7 +16,8 @@ def _migrate(c):
     migrate_local_judgment_contract(c);migrate_event_inbox_candidate(c);migrate_review_claim_ledger(c)
 def allowed(domain,lane):
     out=[a for (d,l,a),v in ACTION_REGISTRY.items() if (d,l)==(domain,lane) and "agent" in v["allowed_actor_types"]]
-    return [x for x in out if x!="hold"]+["defer_for_retry","hold_for_user"]
+    expanded=[x for x in out if x!="hold"]
+    return expanded+(["defer_for_retry","hold_for_user"] if "hold" in out else [])
 def make_packet(row,when):
     p=json.loads(row["payload_json"]); pid=stable_id("packet",row["inbox_id"],row["source_payload_hash"],PACKET_CALCULATION_VERSION)
     occ=[x["occurrence_id"] for x in p.get("targets",{}).get("occurrence_candidates",[])][:8]; ev=p.get("evidence_ids",[])
