@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T13:58:05Z",
-  "generated_for_commit": "069a9aa",
+  "generated_at": "2026-08-14T14:00:29Z",
+  "generated_for_commit": "afdc80d",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -235,10 +235,7 @@
         "search_rare_signal_backcheck_sources.py",
         "stage_rare_signal_backcheck_reviews.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 3
-      },
+      "staleness": null,
       "version": "1.2",
       "revision_count": 3,
       "history": [
@@ -1090,12 +1087,17 @@
         "tests/test_spec_index.py"
       ],
       "staleness": {
-        "commits_since": 4,
+        "commits_since": 5,
         "files_changed_since": 6
       },
-      "version": "1.3",
-      "revision_count": 4,
+      "version": "1.4",
+      "revision_count": 5,
       "history": [
+        {
+          "commit": "afdc80d",
+          "date": "2026-08-14",
+          "subject": "仕様書の閲覧版にバージョンと更新履歴を表示する (#207)"
+        },
         {
           "commit": "958c6db",
           "date": "2026-08-14",
