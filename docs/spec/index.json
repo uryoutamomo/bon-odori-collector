@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T03:30:22Z",
-  "generated_for_commit": "dd790c1",
+  "generated_at": "2026-08-14T03:31:48Z",
+  "generated_for_commit": "7ca7a07",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -137,7 +137,7 @@
         "tests/test_review_inbox_decision_writer.py",
         "tests/test_promote_change_requests_for_review.py"
       ],
-      "updated_for": "83bf7d0",
+      "updated_for": "7ca7a07",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -203,8 +203,8 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 7,
-        "files_changed_since": 3
+        "commits_since": 0,
+        "files_changed_since": 0
       }
     },
     "L1-master": {

@@ -41,7 +41,7 @@ invariants:
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
-updated_for: 83bf7d0
+updated_for: 7ca7a07
 ---
 
 # 人のレビュー運用サブシステム
@@ -131,7 +131,7 @@ updated_for: 83bf7d0
 
 ### INV-RVW-005 J0-read は正本factを変更しない
 
-- **内容**: event candidate の packet 化と LLM 判断の取り込みは、canonical decision / queue / hold の台帳だけへ記録する。venue、series、occurrence、song とその alias/link 表は変更しない。
+- **内容**: event candidate の packet 化と LLM 判断の取り込みは、canonical decision / queue / hold / claim の台帳だけへ記録する。venue、series、occurrence、song とその alias/link 表は変更しない。
 - **守っているコード**: `build_judgment_packets.py`、`apply_judgment_results.py`、`judgment_ledger_writer.py`
 - **守っているテスト**: `tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged`、`tests/test_judgment_j0_read.py::test_structure_does_not_import_canonical_fact_writers`
 
