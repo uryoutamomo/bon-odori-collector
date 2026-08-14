@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T03:31:48Z",
-  "generated_for_commit": "7ca7a07",
+  "generated_at": "2026-08-14T06:48:32Z",
+  "generated_for_commit": "8e7de2a",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -203,8 +203,8 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 3
       }
     },
     "L1-master": {
