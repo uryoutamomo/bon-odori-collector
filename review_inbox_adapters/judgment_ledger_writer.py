@@ -12,7 +12,9 @@ def write_decision(conn, decision, *, candidate_ids=None):
     """Write only decision ledgers; domain tables and inbox status stay untouched."""
     existing = conn.execute("SELECT packet_sha256, action, actor_id FROM canonical_decision_ledger WHERE decision_id=?", (decision["decision_id"],)).fetchone()
     if existing:
-        if tuple(existing) == (decision["packet_sha256"], decision["action"], decision["actor_id"]): return "noop"
+        if tuple(existing) == (decision["packet_sha256"], decision["action"], decision["actor_id"]):
+            conn.execute("DELETE FROM review_claim_ledger WHERE inbox_id=?", (decision["inbox_id"],))
+            return "noop"
         raise ValueError("decision_id_conflict")
     cols = ("decision_id schema_version packet_id packet_sha256 inbox_id domain lane source_id source_key source_payload_hash action queue_state_before queue_state_after reason_code hold_mode next_eligible_at hold_packet_json payload_json actor_type actor_id decision_channel decided_at prior_agent_attempt_id open_hold_id adjudication_batch_id created_at").split()
     def value(column):

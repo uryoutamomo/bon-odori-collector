@@ -39,8 +39,11 @@ def run(args):
         if not args.apply and not args.no_auto_migrate:_migrate(c); migrations=["local_judgment_contract_v1","event_inbox_candidate_v1","review_claim_ledger_v1"]
         else:migrations=[]
         tables={r[0] for r in c.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-        if "review_claim_ledger" not in tables: raise ValueError("review_claim_ledger_missing")
+        required={"canonical_decision_ledger","review_queue_state_ledger","review_hold_ledger","review_claim_ledger"}
+        missing=required-tables
+        if missing: raise ValueError(f"judgment_ledger_missing: {sorted(missing)}")
         t=now(); rows=c.execute("SELECT i.*,q.queue_state,q.decision_id,cl.claimed_by,cl.expires_at claim_expires FROM review_inbox_items i LEFT JOIN review_queue_state_ledger q ON q.inbox_id=i.inbox_id LEFT JOIN review_claim_ledger cl ON cl.inbox_id=i.inbox_id WHERE i.kind='event_candidate' AND i.status='candidate' AND i.contract_domain=? ORDER BY i.expires_at,i.first_eligible_at",(args.domain,)).fetchall(); packets=[]; excluded=[]
+        force_claimed=[]
         for r in rows:
             reason=None
             if r["superseded_by_inbox_id"]:reason="superseded"
@@ -49,12 +52,13 @@ def run(args):
             elif r["claimed_by"] and datetime.fromisoformat(r["claim_expires"])>t and r["claimed_by"]!=args.actor_id and not args.force_claim:reason="claimed_by_other"
             if reason: excluded.append({"inbox_id":r["inbox_id"],"reason":reason});continue
             if len(packets)>=args.max_packets: continue
-            packet=make_packet(r,t); c.execute("INSERT INTO review_claim_ledger VALUES (?,?,?,?,?,?) ON CONFLICT(inbox_id) DO UPDATE SET claimed_by=excluded.claimed_by,claim_kind=excluded.claim_kind,claimed_at=excluded.claimed_at,expires_at=excluded.expires_at,batch_id=excluded.batch_id",(r["inbox_id"],args.actor_id,"agent",t.isoformat(),(t+timedelta(minutes=args.lease_minutes)).isoformat(),"pending"));packets.append(packet)
+            if r["claimed_by"] and datetime.fromisoformat(r["claim_expires"])>t and r["claimed_by"]!=args.actor_id and args.force_claim: force_claimed.append(r["inbox_id"])
+            packet=make_packet(r,t); c.execute("INSERT INTO review_claim_ledger(inbox_id,claimed_by,claim_kind,claimed_at,expires_at,batch_id) VALUES (?,?,?,?,?,?) ON CONFLICT(inbox_id) DO UPDATE SET claimed_by=excluded.claimed_by,claim_kind=excluded.claim_kind,claimed_at=excluded.claimed_at,expires_at=excluded.expires_at,batch_id=excluded.batch_id",(r["inbox_id"],args.actor_id,"agent",t.isoformat(),(t+timedelta(minutes=args.lease_minutes)).isoformat(),"pending"));packets.append(packet)
         c.commit()
     args.out_dir.mkdir(parents=True,exist_ok=True); batches=[]
     for n in range(0,len(packets),args.batch_size):
         path=args.out_dir/f"batch_{t.strftime('%Y%m%d')}_{n//args.batch_size+1:02d}.json"; data={"batch_id":path.stem,"packets":packets[n:n+args.batch_size]};path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n");batches.append(str(path))
-    return {"generated":len(packets),"batches":batches,"excluded":excluded,"waiting_count":max(0,len(rows)-len(packets)-len(excluded)),"migrations_applied":migrations,"claim_scope":"production" if args.apply else "dry_run_copy"}
+    return {"generated":len(packets),"batches":batches,"excluded":excluded,"waiting_count":max(0,len(rows)-len(packets)-len(excluded)),"migrations_applied":migrations,"claim_scope":"production" if args.apply else "dry_run_copy","force_claim_used":bool(force_claimed),"force_claimed_inbox_ids":force_claimed}
 def main():
  p=argparse.ArgumentParser();p.add_argument('--db',type=Path,default=MASTER_DB);p.add_argument('--out-db',type=Path,default=Path('data/judgment_packets_dry_run.sqlite'));p.add_argument('--out-dir',type=Path,default=Path('data/judgment_packets'));p.add_argument('--actor-id');p.add_argument('--batch-size',type=int,default=20);p.add_argument('--max-packets',type=int,default=100);p.add_argument('--lease-minutes',type=int,default=30);p.add_argument('--force-claim',action='store_true');p.add_argument('--domain',default='event');p.add_argument('--apply',action='store_true');p.add_argument('--confirm',default='');p.add_argument('--no-auto-migrate',action='store_true');a=p.parse_args();print(json.dumps(run(a),ensure_ascii=False));return 0
 if __name__=='__main__':raise SystemExit(main())
