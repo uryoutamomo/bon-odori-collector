@@ -15,7 +15,13 @@ def write_decision(conn, decision, *, candidate_ids=None):
         if tuple(existing) == (decision["packet_sha256"], decision["action"], decision["actor_id"]): return "noop"
         raise ValueError("decision_id_conflict")
     cols = ("decision_id schema_version packet_id packet_sha256 inbox_id domain lane source_id source_key source_payload_hash action queue_state_before queue_state_after reason_code hold_mode next_eligible_at hold_packet_json payload_json actor_type actor_id decision_channel decided_at prior_agent_attempt_id open_hold_id adjudication_batch_id created_at").split()
-    values = [canonical_json(decision[k]) if k in {"hold_packet_json", "payload_json"} and decision.get(k[:-5] if k.endswith("_json") else k) is not None else decision.get(k) for k in cols[:-1]] + [_now()]
+    def value(column):
+        if column == "hold_packet_json":
+            return canonical_json(decision["hold_packet"]) if decision.get("hold_packet") is not None else None
+        if column == "payload_json":
+            return canonical_json(decision["payload"])
+        return decision.get(column)
+    values = [value(column) for column in cols[:-1]] + [_now()]
     conn.execute(f"INSERT INTO canonical_decision_ledger ({','.join(cols)}) VALUES ({','.join('?' for _ in cols)})", values)
     conn.execute("INSERT INTO review_queue_state_ledger(inbox_id,domain,lane,queue_state,decision_id,updated_at) VALUES (?,?,?,?,?,?) ON CONFLICT(inbox_id) DO UPDATE SET domain=excluded.domain,lane=excluded.lane,queue_state=excluded.queue_state,decision_id=excluded.decision_id,updated_at=excluded.updated_at", (decision["inbox_id"],decision["domain"],decision["lane"],decision["queue_state_after"],decision["decision_id"],_now()))
     if decision["action"] == "hold":
