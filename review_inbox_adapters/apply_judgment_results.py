@@ -17,6 +17,16 @@ def _packets(directory):
  for p in Path(directory).glob('batch_*.json'):
   for x in json.loads(p.read_text()).get('packets',[]):out[x['packet_id']]=x
  return out
+def _markdown(report):
+ lines=['# Judgment results report','']
+ for key in ('accepted','rejected','held_for_user','deferred_for_retry','noop','rejected_result'):
+  lines.append(f'- {key}: {report[key]}')
+ lines.extend(['','## Entries',''])
+ for entry in report['entries']:
+  lines.append(f"- {entry['inbox_id']} | {entry['decision_id']} | {entry['action']} | {entry['reason_code']}")
+ lines.extend(['','## Issues',''])
+ for issue in report['issues']: lines.append(f"- {json.dumps(issue,ensure_ascii=False,sort_keys=True)}")
+ return '\n'.join(lines)+'\n'
 def run(args):
  if not args.actor_id: raise ValueError('actor_id is required')
  if args.apply: require_confirmation(True,args.confirm,JUDGMENT_RESULT_CONFIRMATION,'apply_judgment_results.py --apply')
@@ -60,7 +70,11 @@ def run(args):
     c.rollback()
     if str(exc)=='decision_id_conflict':raise
     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':'invalid_result','detail':str(exc),'packet_id':packet['packet_id']})
+ args.report_json.parent.mkdir(parents=True,exist_ok=True)
+ args.report_json.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
+ args.report_md.parent.mkdir(parents=True,exist_ok=True)
+ args.report_md.write_text(_markdown(report))
  return report
 def main():
- p=argparse.ArgumentParser();p.add_argument('--db',type=Path,default=MASTER_DB);p.add_argument('--out-db',type=Path,default=Path('data/judgment_results_dry_run.sqlite'));p.add_argument('--results',type=Path,action='append',required=True);p.add_argument('--packets-dir',type=Path,default=Path('data/judgment_packets'));p.add_argument('--actor-id');p.add_argument('--apply',action='store_true');p.add_argument('--confirm',default='');p.add_argument('--no-auto-migrate',action='store_true');a=p.parse_args();print(json.dumps(run(a),ensure_ascii=False));return 0
+ p=argparse.ArgumentParser();p.add_argument('--db',type=Path,default=MASTER_DB);p.add_argument('--out-db',type=Path,default=Path('data/judgment_results_dry_run.sqlite'));p.add_argument('--results',type=Path,action='append',required=True);p.add_argument('--packets-dir',type=Path,default=Path('data/judgment_packets'));p.add_argument('--report-json',type=Path,default=Path('data/judgment_results_report.json'));p.add_argument('--report-md',type=Path,default=Path('data/judgment_results_report.md'));p.add_argument('--actor-id');p.add_argument('--apply',action='store_true');p.add_argument('--confirm',default='');p.add_argument('--no-auto-migrate',action='store_true');a=p.parse_args();print(json.dumps(run(a),ensure_ascii=False));return 0
 if __name__=='__main__':raise SystemExit(main())
