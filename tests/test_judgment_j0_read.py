@@ -32,6 +32,12 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     def _packet_args(self, root, db):
         return SimpleNamespace(db=db,out_db=root/"packets.sqlite",out_dir=root/"packets",report_json=root/"packets-report.json",actor_id="oto-test",batch_size=20,max_packets=100,lease_minutes=30,force_claim=False,domain="event",apply=False,confirm="",no_auto_migrate=False)
 
+    def _result_args(self, root, packet, **extra):
+        result={key:packet[key] for key in ("packet_id","inbox_id","domain","lane","source_id","source_key","source_payload_hash")}
+        result.update({"requested_action":"accept","payload":{}}); result.update(extra)
+        result_path=root/"result.json"; result_path.write_text(json.dumps({"results":[result]}))
+        return SimpleNamespace(db=root/"packets.sqlite",out_db=root/"results.sqlite",results=[result_path],packets_dir=root/"packets",report_json=root/"results-report.json",report_md=root/"results-report.md",actor_id="oto-test",apply=False,confirm="",no_auto_migrate=False)
+
     def test_packet_dry_run_writes_report_and_disables_retry_without_occurrence(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp); db=self._seed(root)
@@ -58,6 +64,29 @@ class JudgmentJ0ReadTest(unittest.TestCase):
             conn=sqlite3.connect(args.out_db)
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM canonical_decision_ledger").fetchone()[0],1)
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_claim_ledger").fetchone()[0],0)
+            conn.close()
+
+    def test_untrusted_actor_identity_and_timestamp_are_overwritten(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db)); packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            args=self._result_args(root,packet,actor_id="uchida",actor_type="user",decision_channel="console",decided_at="2000-01-01T00:00:00+00:00")
+            self.assertEqual(apply_results(args)["accepted"],1)
+            row=sqlite3.connect(args.out_db).execute("SELECT actor_id,actor_type,decision_channel,decided_at FROM canonical_decision_ledger").fetchone()
+            self.assertEqual(row[:3],("oto-test","agent","llm")); self.assertNotEqual(row[3],"2000-01-01T00:00:00+00:00")
+
+    def test_untrusted_payload_extra_field_is_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db)); packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            self.assertEqual(apply_results(self._result_args(root,packet,payload={"rationale":"LLM text"}))["rejected_result"],1)
+
+    def test_apply_keeps_canonical_facts_and_candidate_status_unchanged(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db)); packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            before=sqlite3.connect(root/"packets.sqlite"); tables=("venues","event_series","event_occurrences","occurrence_dates","songs","occurrence_songs")
+            counts={t:before.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in tables}; before.close()
+            args=self._result_args(root,packet); apply_results(args); conn=sqlite3.connect(args.out_db)
+            self.assertEqual({t:conn.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in tables},counts)
+            self.assertEqual(conn.execute("SELECT status FROM review_inbox_items WHERE inbox_id=?",(packet["inbox_id"],)).fetchone()[0],"candidate")
             conn.close()
 
     def test_ten_day_expiry_retry_window_is_contract_valid(self):
