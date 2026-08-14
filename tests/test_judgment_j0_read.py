@@ -17,6 +17,14 @@ import review_inbox_adapters.build_judgment_packets as packet_builder
 
 
 class JudgmentJ0ReadTest(unittest.TestCase):
+    def test_structure_does_not_import_canonical_fact_writers(self):
+        sources = "\n".join(Path(name).read_text() for name in (
+            "review_inbox_adapters/build_judgment_packets.py",
+            "review_inbox_adapters/apply_judgment_results.py",
+            "review_inbox_adapters/judgment_ledger_writer.py",
+        ))
+        for name in ("ensure_venue", "ensure_series_and_occurrence", "confirm_occurrence_schedule_venue", "upsert_occurrence_song", "link_occurrence_evidence"):
+            self.assertNotIn(name, sources)
     def _seed(self, root):
         db = root / "master.sqlite"
         conn = init_db(db)
@@ -82,7 +90,7 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     def test_apply_keeps_canonical_facts_and_candidate_status_unchanged(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db)); packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
-            before=sqlite3.connect(root/"packets.sqlite"); tables=("venues","event_series","event_occurrences","occurrence_dates","songs","occurrence_songs")
+            before=sqlite3.connect(root/"packets.sqlite"); tables=("venues","venue_aliases","event_series","event_series_aliases","event_occurrences","occurrence_dates","occurrence_evidence_links","songs","occurrence_songs","occurrence_song_evidence_links")
             counts={t:before.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in tables}; before.close()
             args=self._result_args(root,packet); apply_results(args); conn=sqlite3.connect(args.out_db)
             self.assertEqual({t:conn.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0] for t in tables},counts)
