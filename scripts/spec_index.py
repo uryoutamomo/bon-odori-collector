@@ -145,6 +145,33 @@ def staleness(root, base, files):
     return {"commits_since": len(human_commits), "files_changed_since": len(changed)}
 
 
+def revisions(root, path, limit=12):
+    """その仕様ファイルの改訂履歴を、人が書いた commit だけ新しい順に返す。
+
+    自動生成（Refresh specification views 等）を混ぜると、実際には何も変わって
+    いない日付が並んで履歴が読めなくなるため、staleness と同じ基準でボットを外す。
+    """
+    log = git(root, "log", "--format=%h%x1f%ad%x1f%an%x1f%ae%x1f%s", "--date=short", "--follow", "--", path, check=False)
+    rows = []
+    for line in log.splitlines():
+        parts = line.split("\x1f", 4)
+        if len(parts) < 5:
+            continue
+        short, date, name, email, subject = parts
+        if (name, email) in BOT_AUTHORS:
+            continue
+        rows.append({"commit": short, "date": date, "subject": subject})
+    return rows[:limit], len(rows)
+
+
+def version_for(total):
+    """改訂回数からバージョンを決める。初版が 1.0 で、人手の改訂ごとに minor が上がる。
+
+    front matter に手で書かせない。書かせると必ず実態とずれ、飾りになる。
+    """
+    return f"1.{max(total - 1, 0)}"
+
+
 def build(root):
     rows = specs(root); errors, _, owners = validate(root, rows)
     if errors:
@@ -156,7 +183,8 @@ def build(root):
         if not ident: continue
         owned = expand(root, fm.get("owns", []))
         output["specs"][ident] = {k: fm.get(k, []) if k in ("owns", "depends_on", "invariants", "verified_by") else fm.get(k) for k in ("layer", "title", "owns", "depends_on", "invariants", "verified_by", "updated_for")}
-        output["specs"][ident].update({"path": path, "owned_files": owned, "staleness": staleness(root, fm.get("updated_for"), owned)})
+        history, revision_count = revisions(root, path)
+        output["specs"][ident].update({"path": path, "owned_files": owned, "staleness": staleness(root, fm.get("updated_for"), owned), "version": version_for(revision_count), "revision_count": revision_count, "history": history})
         for inv_id, inv in parse_invariants(body).items(): output["invariants"][inv_id] = {"spec": ident, **inv}
     return output
 

@@ -29,6 +29,34 @@ def test_build_schema_and_impact_cases(tmp_path):
     assert '未記述領域' in run(tmp_path, 'impact', '--files', 'other.py').stdout
     assert '影響する仕様はありません' in spec_index.impact(spec_index.build(tmp_path), [])
 
+def test_version_counts_only_human_revisions(tmp_path):
+    """バージョンは人手の改訂回数から決める。閲覧版の作り直しでは上がらない。"""
+    base(tmp_path)
+    index = spec_index.build(tmp_path)
+    assert index["specs"]["L1-one"]["version"] == "1.0", "初版は 1.0"
+
+    write_spec(tmp_path, body="# 二度目の改訂\n")
+    git(tmp_path, "add", "."); git(tmp_path, "commit", "-m", "人が仕様を直した")
+    assert spec_index.build(tmp_path)["specs"]["L1-one"]["version"] == "1.1"
+
+    # 同じファイルをボットが触っても版は上がらない（自動生成を履歴に混ぜない）
+    write_spec(tmp_path, body="# 二度目の改訂\n\n<!-- regenerated -->\n")
+    git(tmp_path, "add", ".")
+    git(tmp_path, "-c", "user.name=GitHub Action", "-c", "user.email=action@github.com",
+        "commit", "-m", "Refresh specification views")
+    index = spec_index.build(tmp_path)
+    assert index["specs"]["L1-one"]["version"] == "1.1", "ボットの再生成で版が上がってはいけない"
+    assert all(row["subject"] != "Refresh specification views" for row in index["specs"]["L1-one"]["history"])
+
+def test_history_lists_newest_first_with_date_and_commit(tmp_path):
+    """更新履歴は新しい順で、日付・コミット・件名が揃っている。"""
+    base(tmp_path)
+    write_spec(tmp_path, body="# あとの変更\n")
+    git(tmp_path, "add", "."); git(tmp_path, "commit", "-m", "あとの変更")
+    history = spec_index.build(tmp_path)["specs"]["L1-one"]["history"]
+    assert [row["subject"] for row in history] == ["あとの変更", "base"]
+    assert all(row["date"] and row["commit"] for row in history)
+
 def test_missing_required_key(tmp_path):
     base(tmp_path); p=tmp_path/'docs/spec/one.md'; p.write_text(p.read_text().replace('title: One\n','')); assert run(tmp_path,'check').returncode
 
