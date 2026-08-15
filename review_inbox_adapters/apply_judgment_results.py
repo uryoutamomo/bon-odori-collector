@@ -9,6 +9,8 @@ from operation_safety.manual_apply_guards import require_confirmation
 from report_apply.rdb_apply_support import copy_db
 from review_inbox_adapters.local_judgment_contract import canonicalize_raw_judgment,build_agent_terminal_decision,build_canonical_hold,REASON_CODE_HOLD_MODE
 from review_inbox_adapters.local_judgment_contract import ContractError,IDENTITY_LANES,IDENTITY_MATCH_NONE,IDENTITY_PAYLOAD_FIELDS
+from review_inbox_adapters.build_event_inbox_candidates import search_targets
+from review_inbox_adapters.build_judgment_packets import candidate_set_hash
 from review_inbox_adapters.judgment_ledger_writer import write_decision
 JUDGMENT_RESULT_CONFIRMATION='APPLY JUDGMENT RESULTS'
 IDENTITY_FIELDS=('occurrence_match','series_match','venue_match')
@@ -75,9 +77,15 @@ def run(args):
    expected=stable_id('packet',packet['inbox_id'],packet['source_payload_hash'],'judgment-packet/v1')
    if packet['packet_id']!=expected or any(result.get(k)!=packet.get(k) for k in fields) or result.get('requested_action') not in packet['allowed_actions']:
     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':'packet_mismatch','packet_id':packet['packet_id']});continue
-   row=c.execute('SELECT source_payload_hash,status FROM review_inbox_items WHERE inbox_id=?',(packet['inbox_id'],)).fetchone()
+   row=c.execute('SELECT source_payload_hash,status,contract_lane,payload_json FROM review_inbox_items WHERE inbox_id=?',(packet['inbox_id'],)).fetchone()
    if not row or row['source_payload_hash']!=packet['source_payload_hash']:
     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':'packet_stale','packet_id':packet['packet_id']});continue
+   # 提案の中身が同じでも、候補集合は日次収集で入れ替わる。判定者が見た集合と今の集合が
+   # 違えば、その判断はもう別の問いへの答えなので通さない。
+   if packet.get('candidate_set_sha256') is not None:
+    current=candidate_set_hash(search_targets(c,json.loads(row['payload_json'])['proposal'],row['contract_lane'],datetime.now(timezone.utc)))
+    if current!=packet['candidate_set_sha256']:
+     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':'candidate_set_changed','packet_id':packet['packet_id']});continue
    requested=result['requested_action']; raw=dict(result); policy=None
    if requested=='accept' and (packet['domain'],packet['lane']) in IDENTITY_LANES:
     problem=_identity_problem(packet,raw.get('payload') or {})

@@ -107,7 +107,8 @@ def _expires(proposal, now):
     return datetime.fromisoformat(date).replace(hour=23, minute=59, second=59, tzinfo=timezone(timedelta(hours=9)))
 
 
-def _targets(conn, proposal, lane, now):
+def search_targets(conn, proposal, lane, now):
+    """候補集合を今のDBから引き直す。判定用パケットも同じ関数を使う（凍結の時点だけが違う）。"""
     name, venue, year = proposal["event_name_hint"], (proposal.get("venue") or {}).get("name"), proposal.get("event_year")
     first = find_occurrence_candidates(conn, name, venue, year, limit=8)
     if lane == "event_create":
@@ -146,7 +147,7 @@ def _candidate(conn, base, entry, proposal, lane, family, revision, now, depends
         if row:
             resolved_target = dict(row)
             display.update({"event_name_hint": display["event_name_hint"] or row["display_name"], "event_year": display["event_year"] or row["event_year"], "date_start": display["date_start"] or row["date_start"], "venue": display["venue"] or {"name": row["venue_name"]}})
-    payload = {"candidate_version": 1, "report": report, "proposal": proposal, "resolved_target": resolved_target, "targets": _targets(conn, proposal, lane, now), "evidence_ids": [stable_id("evidence", source_id)], "raw_excerpt": raw}
+    payload = {"candidate_version": 1, "report": report, "proposal": proposal, "resolved_target": resolved_target, "targets": search_targets(conn, proposal, lane, now), "evidence_ids": [stable_id("evidence", source_id)], "raw_excerpt": raw}
     expires = _expires(proposal, now)
     return {"inbox_id": stable_id("inbox", "event_candidate", source_id, source_key), "kind": "event_candidate", "domain": "イベント", "contract_domain": "event", "contract_lane": lane, "time_scope": "future" if display.get("date_start") and datetime.fromisoformat(display["date_start"]).date() >= now.date() else ("historical" if display.get("date_start") else "reference"), "priority_label": None, "priority_score": None, "title": f"{display['event_name_hint']}（{(display.get('venue') or {}).get('name')}／{display.get('date_start')}）", "event_name": display["event_name_hint"], "venue": (display.get("venue") or {}).get("name"), "event_year": display["event_year"], "source_id": source_id, "source_key": source_key, "source_url": report["source_url"], "recommended_action": None, "status": "candidate", "source_payload_hash": payload_hash, "last_seen_at": now.isoformat(), "payload_json": payload, "created_at": now.isoformat(), "updated_at": now.isoformat(), "first_eligible_at": now.isoformat(), "expires_at": expires.isoformat(), "superseded_by_inbox_id": None, "depends_on_inbox_id": depends, "revision_family_key": family_key, "revision": revision}
 
