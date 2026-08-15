@@ -20,6 +20,15 @@ occurrence_id are built. New-event registration
 cannot be matched to an existing occurrence are left for a human to decide
 new-registration separately, and are reported in the unresolved list instead
 of being silently dropped.
+
+E0b rewires the primary output: by default the staged decisions are also
+written as `review_console_change_request` reports for
+`review_inbox_adapters/build_event_inbox_candidates.py`, so the console route
+reaches Master RDB through the judgment ledger instead of around it. The
+legacy change-request file is still written for the strangler migration, but
+every request now carries `dry_run_only`, so `apply_change_requests --apply`
+refuses it until `scripts/promote_change_requests_for_review.py` records a
+human promotion (docs/local-judgment-e0b-bridge-v1.md).
 """
 
 from __future__ import annotations
@@ -34,6 +43,9 @@ from typing import Any
 DEFAULT_STAGED = Path("data/review_console/staged/review_inbox_change_request_decisions.json")
 DEFAULT_OUT = Path("data/review_console/staged/rdb_change_requests.json")
 DEFAULT_UNRESOLVED_OUT = Path("data/review_console/staged/rdb_change_requests_unresolved.json")
+DEFAULT_CANDIDATE_REPORT_DIR = Path("data/review_console/staged/event_inbox_reports")
+REVIEW_CONSOLE_REPORT_TYPE = "review_console_change_request"
+UNSAFE_FILENAME_RE = re.compile(r"[^A-Za-z0-9_.-]+")
 
 # "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」" -> "中野通り桜まつり"
 BRACKET_NAME_RE = re.compile(r"[「『]([^」』]+)[」』]")
@@ -256,8 +268,67 @@ def build_requests(
             continue
         seen_ids.add(request["request_id"])
         request["occurrence_id"] = occurrence_id
+        # The console route is the one path that can reach Master RDB without a decision ledger
+        # entry, so the apply layer must refuse it until a human promotes it (INV-RVW-011).
+        request["dry_run_only"] = True
         requests.append(request)
     return requests, unresolved
+
+
+def build_candidate_reports(
+    requests: list[dict[str, Any]], staged_rows: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Convert built change requests into E0 event-inbox reports (one per staged item).
+
+    The reviewer's console choice travels as a *proposal*, not as a decision: contract v1.1 only
+    lets the user finalize a candidate that an agent already held, so the chosen action becomes the
+    report's `action` and the judgment itself happens later on the resulting candidate.
+    """
+    by_inbox_id = {
+        (row.get("source_item") or {}).get("inbox_id"): row for row in staged_rows
+    }
+    reports = []
+    for request in requests:
+        staged_row = by_inbox_id.get(request["request_id"]) or {}
+        source_item = staged_row.get("source_item") or {}
+        payload = source_item.get("payload") or {}
+        name = clean_event_name_for_match(source_item.get("event_name") or "")
+        source_url = (request.get("source") or {}).get("url") or ""
+        raw_text = "\n".join(
+            part
+            for part in (source_item.get("title"), payload.get("memo"), request.get("note"))
+            if part
+        )
+        entry = {
+            "action": request["change_type"],
+            "occurrence_id": request["occurrence_id"],
+            "inbox_id": request["request_id"],
+            "event_name_hint": name or None,
+            "event_year": source_item.get("event_year"),
+            "date_start": request.get("date_start"),
+            "date_end": request.get("date_end"),
+            "historical_year": request.get("historical_year"),
+            "historical_date": request.get("historical_date"),
+            # venue travels only on the update_venue route. Carrying the raw venue text on the
+            # other two routes would reach ensure_venue(), which creates a duplicate venue row
+            # whenever the text does not exactly match an existing one.
+            "venue": request.get("venue") or {},
+            "detail_addendum": request.get("note") or "",
+            "source_url": source_url,
+        }
+        reports.append(
+            {
+                "report_type": REVIEW_CONSOLE_REPORT_TYPE,
+                "source": {
+                    "report_id": request["request_id"],
+                    "raw_text": (raw_text or name or request["request_id"])[:1000],
+                    "source_url": source_url,
+                    "title": source_item.get("title") or name or request["request_id"],
+                },
+                "events": [entry],
+            }
+        )
+    return reports
 
 
 def load_staged_rows(path: Path) -> list[dict[str, Any]]:
@@ -278,6 +349,8 @@ def main() -> int:
     parser.add_argument("--staged", type=Path, default=DEFAULT_STAGED)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--unresolved-out", type=Path, default=DEFAULT_UNRESOLVED_OUT)
+    parser.add_argument("--candidate-report-dir", type=Path, default=DEFAULT_CANDIDATE_REPORT_DIR)
+    parser.add_argument("--no-candidate-report", action="store_true")
     parser.add_argument("--current-year", type=int, default=2026)
     args = parser.parse_args()
 
@@ -288,14 +361,23 @@ def main() -> int:
         write_json(args.out, {"request_type": "rdb_change_requests", "requests": requests})
     if unresolved:
         write_json(args.unresolved_out, {"unresolved_count": len(unresolved), "items": unresolved})
+    written_reports = []
+    if requests and not args.no_candidate_report:
+        for report in build_candidate_reports(requests, staged_rows):
+            stem = UNSAFE_FILENAME_RE.sub("_", report["source"]["report_id"])
+            path = Path(args.candidate_report_dir) / f"{stem}.json"
+            write_json(path, report)
+            written_reports.append(path)
 
     print(
         "build change requests: "
         f"staged_rows={len(staged_rows)} "
         f"requests_built={len(requests)} "
         f"unresolved={len(unresolved)} "
+        f"candidate_reports={len(written_reports)} "
         f"out={args.out if requests else '(not written, no requests)'} "
-        f"unresolved_out={args.unresolved_out if unresolved else '(not written, none unresolved)'}"
+        f"unresolved_out={args.unresolved_out if unresolved else '(not written, none unresolved)'} "
+        f"candidate_report_dir={args.candidate_report_dir if written_reports else '(not written)'}"
     )
     return 0
 
