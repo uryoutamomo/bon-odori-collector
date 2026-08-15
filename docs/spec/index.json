@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T14:35:37Z",
-  "generated_for_commit": "afbd245",
+  "generated_at": "2026-08-15T14:37:25Z",
+  "generated_for_commit": "eebe785",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -57,7 +57,7 @@
         "voices_s3_artifact.py"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 3,
         "files_changed_since": 2
       },
       "version": "1.4",
