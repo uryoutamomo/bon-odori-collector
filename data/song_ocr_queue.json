@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 70,
+  "count": 71,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1109,6 +1109,21 @@
         "https://pbs.twimg.com/media/HPoZF7CaUAAyuzD.jpg"
       ],
       "text": "知らないうちに盆踊りの曲目に入ってた曲、と思ったけど、ローカルなのか。 https://t.co/iQa7R9882X",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "d6d0e06ee9308b58",
+      "status": "needs_ocr",
+      "account": "@bon_odoroo",
+      "url": "https://x.com/bon_odoroo/status/2088259464579145913",
+      "tweet_id": "2088259464579145913",
+      "date": "2026-08-14T13:40:28+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPr854ebMAAy8zq.jpg",
+        "https://t.co/QRw7d9UJzs",
+        "pic.x.com/QRw7d9UJzs"
+      ],
+      "text": "とある町の盆踊りを訪ねました。去年に続き歓迎されて嬉しい😊\n\n曲目はご当地曲・火の国太鼓・炭坑節・オアシス音頭。毎年この4曲を繰り返すらしい。\n\n大都会の人気の櫓もいいけど、地方の踊り手の少ない櫓を支えるのも大切だと感じました🎐 https://t.co/QRw7d9UJzs",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

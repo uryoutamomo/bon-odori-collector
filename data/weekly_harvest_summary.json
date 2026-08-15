@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-14T08:10:06.721305+00:00",
+  "generated_at": "2026-08-15T07:17:52.450152+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-14T08:09:58.668213+00:00",
+  "source_generated_at": "2026-08-15T07:17:46.363012+00:00",
   "days": 3,
-  "voice_count": 3311,
-  "candidate_count": 197,
+  "voice_count": 3300,
+  "candidate_count": 220,
   "category_counts": {
     "曲×会場共起": 6,
-    "曲候補": 184,
-    "用語候補": 7
+    "曲候補": 206,
+    "用語候補": 8
   },
-  "non_song_review_count": 13,
-  "song_candidate_count": 184,
-  "song_direct_dry_run_count": 118,
+  "non_song_review_count": 14,
+  "song_candidate_count": 206,
+  "song_direct_dry_run_count": 135,
   "song_review_count": 7,
-  "song_rejected_noise_count": 59,
+  "song_rejected_noise_count": 64,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -37,9 +37,9 @@
       "踊り会",
       "練習会",
       "参戦",
-      "ハシゴ",
       "踊り始め",
-      "はしご"
+      "はしご",
+      "ハシゴ"
     ],
     "song_review": [
       "たいとう音頭",

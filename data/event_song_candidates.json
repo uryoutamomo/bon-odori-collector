@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1532,
+  "count": 1537,
   "public_event_count": 642,
-  "review_count": 890,
+  "review_count": 895,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -4955,6 +4955,28 @@
       "evidence_count": 1
     },
     {
+      "id": "dba47f3647ce31e5",
+      "song_name": "クックロビン音頭",
+      "event_name": "すみゆめ踊行列：SUMIBON",
+      "venue": "隅田公園そよ風ひろば",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "song_suffix_in_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/MixdArts/status/2088212319881109674",
+          "date": "2026-08-14T10:33:08+00:00",
+          "text": "mi\n8/15にメリケンパークにて盆踊りがあるみたいです。\n演目にクックロビン音頭があったらテンションあがるかも。 https://t.co/sFpEQIuhXv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "dfe35d571f207b0c",
       "song_name": "東京音頭",
       "event_name": "すみゆめ踊行列：SUMIBON",
@@ -9805,7 +9827,7 @@
       "evidence_count": 1
     },
     {
-      "id": "ef9a421d6b1a3bd8",
+      "id": "aec74dc13b9e19f2",
       "song_name": "れじぇらー音頭",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -9818,13 +9840,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/Shichoshitsu2/status/2088456361818652906",
+          "date": "2026-08-15T02:42:52+00:00",
+          "text": "試聴室 (日ノ出町＆神保町)\n＠日ノ出町・しちょ３\nなりすレコードpresents「れじぇらー音頭」再発記念「LET’S ONDO AGAIN 納涼盆踊り大会！2026」\n出演：小日向由衣、Tokyoかけひき倶楽部、Tnaka\nオープン 18:00 / スタート 18:30\nチャージ 2,000円＋1d\nどうぞよろしくお願いします！"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/Tnaka_info/status/2087385087512076420",
           "date": "2026-08-12T03:46:01+00:00",
           "text": "Tnaka info@7/7短冊CDリリース\n【new LIVE】\n\n8/15(土)\nなりすレコードpresents「れじぇらー音頭」再発記念 \n「LET’S ONDO AGAIN 納涼盆踊り大会！2026」\n@横浜 日ノ出町試聴室その3\n\nopen18:00 / start18:30\n¥2,000+1D(¥500~)\n\n小日向由衣 / Tokyoかけひき倶楽部 / Tnaka\n\n急遽決定!!\n今年も試聴室の中に櫓が組まれるとのこと!! https://t.co/M0f1QIeZoC"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "6f391c3947740b61",
@@ -10361,6 +10389,28 @@
       ],
       "already_public": false,
       "evidence_count": 6
+    },
+    {
+      "id": "9e1b48b9758d641b",
+      "song_name": "初めて踊ったチャンピオン音頭",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/fried_wakame/status/2088512805452624218",
+          "date": "2026-08-15T06:27:10+00:00",
+          "text": "ゆかりこ\n木曜日は上郷交流館練習会からのうねべ校区納涼盆踊り大会へ\n練習会は色々あったはずなのだけど戦馬の記憶しかない😂\nそして念願の畝部小学校！広々とした校庭、出迎えてくれるダイナミック琉球笑\n実際の声出しも正対する櫓も体感できて楽しかったー！初めて踊ったチャンピオン音頭好きでした🙌 https://t.co/c4l6iggzep"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "0ae2b4655ac38e01",
@@ -25318,6 +25368,28 @@
       "evidence_count": 1
     },
     {
+      "id": "a669c08cd07922f5",
+      "song_name": "にクックロビン音頭",
+      "event_name": "すみゆめ踊行列：SUMIBON",
+      "venue": "隅田公園そよ風ひろば",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/MixdArts/status/2088212319881109674",
+          "date": "2026-08-14T10:33:08+00:00",
+          "text": "mi\n8/15にメリケンパークにて盆踊りがあるみたいです。\n演目にクックロビン音頭があったらテンションあがるかも。 https://t.co/sFpEQIuhXv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "f64264a8eab2a15c",
       "song_name": "ドンパン節",
       "event_name": "すみゆめ踊行列：SUMIBON",
@@ -25428,6 +25500,28 @@
           "url": "https://www.youtube.com/watch?v=Ub4ubasi21o",
           "date": "2025-10-26T13:30:35Z",
           "text": "和太鼓お祭りチャンネル\n寺島茄子乃介音頭　すみぼん３　ローリングスミダレヴューバンド盆踊り　すみゆめ踊行列：SUMIBON　2025年10月25日\n2025年10月25日に行われました、\n「すみゆめ踊行列：SUMIBON」すみぼん盆踊りの様子です。\n\n\n\nすみぼん\n１サブマリン　https://youtu.be/GQ1a7BQx4Jc\n２つめたく冷やして　https://youtu.be/DaZEcZQ4S1k\n３寺島茄子乃介音頭　https://youtu.be/Ub4ubasi21o\n４すみだ川音頭　https://youtu.be/cZRoBh9mBRg\n５ええじゃないか音頭　https://youtu.be/nZTPVaWieI8\n６東京音頭　https://youtu.be/LwKrgrbnryw"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ba50129928b85b8d",
+      "song_name": "曲が流れると自然と踊り",
+      "event_name": "すみゆめ踊行列：SUMIBON",
+      "venue": "隅田公園そよ風ひろば",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/0511still_umi/status/2088268829143261594",
+          "date": "2026-08-14T14:17:41+00:00",
+          "text": "Umi\n10何年ぶりに地元の盆踊り大会行ってきた！\n思ってたよりも人が多く居たのも嬉しいし、曲が流れると自然と踊りが踊れたのもびっくり。幼少期の英才教育の賜物だなぁ(笑)\nお父様が自治会役員でフランクフルト焼いてたので買いました https://t.co/4xyjdMAfGT"
         }
       ],
       "already_public": false,
@@ -29961,6 +30055,50 @@
       "evidence_count": 1
     },
     {
+      "id": "39c31c51438aa4c2",
+      "song_name": "ぼけない音頭",
+      "event_name": "仲町町会納涼盆踊り",
+      "venue": "中割天祖神社",
+      "area": "江戸川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/uja31/status/2088298938025783474",
+          "date": "2026-08-14T16:17:20+00:00",
+          "text": "うじゃ。\n2026年盆踊り28  江戸川区　8月14日\n仲町町会　中割天祖神社\n葛西の盆友と初訪問。天候の為櫓の皆様は浴衣ではなかったので、浴衣は少数派。Dクイーン←DH似、ぼけない音頭、踊れ日本新世紀等楽しく踊りました✨帰りは盆友行きつけもんじゃとお好み焼きで乾杯🍻盆友の壮絶人生に涙😢人生楽しく生きよう https://t.co/6iqBwwyDak"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "86c3d9815f0f2a5e",
+      "song_name": "踊れ日本新世紀等楽しく踊り",
+      "event_name": "仲町町会納涼盆踊り",
+      "venue": "中割天祖神社",
+      "area": "江戸川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/uja31/status/2088298938025783474",
+          "date": "2026-08-14T16:17:20+00:00",
+          "text": "うじゃ。\n2026年盆踊り28  江戸川区　8月14日\n仲町町会　中割天祖神社\n葛西の盆友と初訪問。天候の為櫓の皆様は浴衣ではなかったので、浴衣は少数派。Dクイーン←DH似、ぼけない音頭、踊れ日本新世紀等楽しく踊りました✨帰りは盆友行きつけもんじゃとお好み焼きで乾杯🍻盆友の壮絶人生に涙😢人生楽しく生きよう https://t.co/6iqBwwyDak"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "26c4361a0eb0a754",
       "song_name": "江戸川ふるさと音頭",
       "event_name": "鹿骨二丁目町会盆踊り",
@@ -31663,28 +31801,6 @@
           "url": "https://www.youtube.com/watch?v=w8vDoRHU_74",
           "date": "2025-11-01T10:01:38Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 晴盆 盆踊り フィリピン エキスポ 蒲田  / Dancing Bon Odori at the Philippine EXPO in Kamata.\n東京の蒲田駅前で「Philippine EXPO in 蒲田 日比友好 歌と踊りの祭典」が開催されました。\n日本とフィリピンの市民レベルの交流を深める国際交流イベントで、歌とダンス、飲食・物販・企業出展などを通じて“日比友好”を体感できる4日間となっています。\n土曜日のこの日は、品川区を中心に活動されている晴盆さんの盆踊りがあり、国籍問わず皆さん踊りで盛り上がっておりました！！\n11月3日（月祝）まで開催中です！\n\nThe Philippine EXPO in Kamata was held in front of Kamata Station in Tokyo. This international exchange eve"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "2279f6b731945f2c",
-      "song_name": "外国人観光客も踊り",
-      "event_name": "渋谷盆踊り",
-      "venue": "渋谷109前",
-      "area": "渋谷区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1RRGlGNVV1anFZNDdERTBIdlhaai1WM2dfYjM1czdEWnFUMENzeGZiRURTZ0RnTXJJcUZGNUlpSjNUczJzY2RRZTUwWUNhem9ROXlld0tncDhrWHRoLTc2dnA5SThjbndLZ01vUDBpYVpDS2FLQmhSN3k3azk0cXc?oc=5",
-          "date": "Sun, 09 Aug 2026 10:11:50 GMT",
-          "text": "「渋谷盆踊り」に6万7000人 109前に櫓、外国人観光客も踊りの輪に（みんなの経済新聞ネットワーク） - Yahoo!ニュース"
         }
       ],
       "already_public": false,

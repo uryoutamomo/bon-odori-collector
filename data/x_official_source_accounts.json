@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14",
+  "updated_at": "2026-08-15",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -263,6 +263,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@ame_ame888",
+      "name": "寺笛あめ",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@anzaimasanobu",
       "name": "安西 まさのぶ 葛飾区議会議員 / 自由民主党",
       "source_type": "official",
@@ -319,6 +327,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@atsukowakai0912",
+      "name": "若井あつこ🥋🏆参議院議員（岐阜県選挙区）",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@aya_nasuno",
       "name": "なすのあやか | 川崎市議会議員（幸区選出）",
       "source_type": "official",
@@ -345,6 +361,14 @@
     {
       "handle": "@ayumi__mizuno",
       "name": "水野あゆみ／公明党足立区議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@azesho0430",
+      "name": "【公式】衆議院議員あぜもとしょうご：自民党衆議院東京6区支部長",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1048,6 +1072,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@hinoyoujinzu",
+      "name": "関根としお　四街道市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@hiranoharumochi",
       "name": "ひらの春望 大田区議会議員 立憲民主党",
       "source_type": "official",
@@ -1347,6 +1379,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@ionzuka1",
+      "name": "おんづか功(京都市会議員左京区選出)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@iri2choukai",
       "name": "入船二丁目町会",
       "description": "東京都中央区入船二丁目町会です。生年月日は旧入船町會の創立日です。担当 広報部",
@@ -1544,6 +1584,14 @@
     {
       "handle": "@ito_tomoko_",
       "name": "いとうともこ@牛久市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@itouzu",
+      "name": "到津八幡神社",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1841,6 +1889,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@karuizawa_kta",
+      "name": "軽井沢観光協会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@kataokakyoko369",
       "name": "片岡きょうこ/豊島区議会議員",
       "source_type": "official",
@@ -1915,6 +1971,14 @@
     {
       "handle": "@kazu_taniguchi",
       "name": "谷口かずふみ 県議会議員【神奈川県・大和市】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@kazuopape",
+      "name": "しばたかずお@静岡県湖西市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2014,6 +2078,14 @@
     {
       "handle": "@kidaoribe",
       "name": "木田おりべ 板橋区議会議員 自由民主党(木田織部)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@kiitakashi",
+      "name": "きいたかし(城井崇)|福岡10区|前衆議院議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -3113,6 +3185,14 @@
     {
       "handle": "@morihakuei",
       "name": "高石市議会議員　森はくえい",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@morita926",
+      "name": "森田たくし 岡山市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4302,7 +4382,7 @@
     },
     {
       "handle": "@sanoto_moko",
-      "name": "佐野ともこ🌾江戸川区議会議員🍚",
+      "name": "佐野ともこ🌾江戸川区議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4375,6 +4455,14 @@
     {
       "handle": "@satoriki_nerima",
       "name": "佐藤 力 💪 練馬区議会議員｜練馬の力",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@satoru_yamane",
+      "name": "山根さとる🍙RICE🍚 郡山市議会議員 防災士",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4931,6 +5019,14 @@
       "tier": "dormant"
     },
     {
+      "handle": "@takekomainari",
+      "name": "竹駒神社 （お稲荷さま）/ Takekoma Inari Shrine",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@takemasa0103",
       "name": "たけうち正明 戸田市議会議員",
       "source_type": "official",
@@ -5005,6 +5101,14 @@
     {
       "handle": "@terasakiyusuke",
       "name": "てらさき雄介　神奈川県議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@terashima_yufu",
+      "name": "だいふく｜寺嶋由芙INFO.",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5183,6 +5287,14 @@
     {
       "handle": "@tsubasa_saitoh",
       "name": "斉藤 つばさ(前江戸川区議会議員)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@tsuchiya_raimu",
+      "name": "土屋らいむ 【越谷市議会議員】",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5491,6 +5603,14 @@
     {
       "handle": "@yamaga_jinja",
       "name": "山家神社 真田神社 公式アカウント",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@yamaguchigoro56",
+      "name": "山口ごろう/公明党/大阪市会議員 西成区",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",

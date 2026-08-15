@@ -1,92 +1,10 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_gap_candidates.json",
-  "input_sha256": "9fa55e8301463c56ec788e9a7c7a32491c6622ad3b0fc92e3386c344e18b9256",
-  "input_size_bytes": 924694,
-  "item_count": 29,
+  "input_sha256": "37aeae7a1ba48205a0ee1eff8dfccb3b4477674dc82040d577a92243c7478e6f",
+  "input_size_bytes": 952881,
+  "item_count": 28,
   "items": [
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 305,
-      "title": "石島町会 夏祭り",
-      "event_name": "石島町会 夏祭り",
-      "venue": "石島町会会館前",
-      "event_year": 2026,
-      "source_key": "x:2088128612247757157",
-      "source_url": "https://x.com/kotokeizai/status/2088128612247757157",
-      "recommended_action": "review_schedule_change",
-      "payload": {
-        "candidate_id": "xgap_4fc89e25e01e4975",
-        "source_key": "x:2088128612247757157",
-        "lane_hint": "lane2",
-        "candidate_kind": "schedule_change",
-        "priority_score": 305,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_12e9728c0a384d1b",
-          "event_name": "石島町会 夏祭り",
-          "venue": "石島町会会館前",
-          "area": "",
-          "venue_area": "江東区",
-          "venue_address": "江東区石島17-14",
-          "date_start": "2026-08-14",
-          "date_end": "2026-08-14",
-          "detail": "16:30〜19:00。盆踊りの実施有無は未確認。",
-          "matched_aliases": [
-            "石島町会 夏祭り",
-            "石島町会 夏祭り"
-          ]
-        },
-        "source_url": "https://x.com/kotokeizai/status/2088128612247757157",
-        "source_text": "\n本日8/14(金) 16:30から、石島町会会館前にて\n「石島町会 夏祭り」開催予定\n\n🔻その他の江東区の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjId0bL2\n\n※開催内容は変更・中止になる場合があります",
-        "source_author": "@kotokeizai",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 0,
-          "handle": "@kotokeizai",
-          "account_name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/14"
-        ],
-        "observed_dates": [
-          "2026-08-14"
-        ],
-        "event_group_key": "",
-        "voice": {
-          "source": "x_whitelist",
-          "account": "@kotokeizai",
-          "name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
-          "profile_description": "“江東区がもっと好きになる”ハッピーニュースを配信する《こと経》の中の人です。新店やイベントなどの情報提供はDMやリプライでも大歓迎！イベント情報中心のポストですが、時に江東区グルメも。リプいただけると小躍りして喜びます！ Instagram→ https://t.co/IIpE2CMlNp",
-          "title": "",
-          "text": "本日8/14(金) 16:30から、石島町会会館前にて\n「石島町会 夏祭り」開催予定\n\n🔻その他の江東区の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjId0bL2\n\n※開催内容は変更・中止になる場合があります",
-          "url": "https://x.com/kotokeizai/status/2088128612247757157",
-          "date": "2026-08-14T05:00:31+00:00",
-          "tweet_id": "2088128612247757157",
-          "tags": [
-            "⭐盆踊ラー",
-            "📅未来予定",
-            "🟡関心"
-          ],
-          "critique_post": false,
-          "value_score": 16.0
-        },
-        "source_urls": [
-          "https://x.com/kotokeizai/status/2088128612247757157"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_488b3c5fea3acd76"
-    },
     {
       "kind": "x_gap",
       "domain": "X",
@@ -116,7 +34,7 @@
           "venue_address": "東京都板橋区",
           "date_start": "2026-08-15",
           "date_end": "2026-08-16",
-          "detail": "開催時間：18:30〜20:30。主催：小豆沢商友会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。",
+          "detail": "開催時間：18:30〜20:30。主催：小豆沢商友会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。\n開催時間：18:30〜20:30。主催：小豆沢商友会。出典：いたばしTIMES（https://itabashi-times.com/archives/matsuri2026.html ）。X上の個別の参加報告は現時点では確認できていない。登録時点では開催予定。",
           "matched_aliases": [
             "小豆沢商友会 納涼盆踊り大会",
             "小豆沢商友会 納涼盆踊り大会"
@@ -177,92 +95,6 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_99fdb8efa2284cde"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 255,
-      "title": "歌舞伎町BON ODORI",
-      "event_name": "歌舞伎町BON ODORI",
-      "venue": "歌舞伎町シネシティ広場",
-      "event_year": 2026,
-      "source_key": "x:2088156930279923724",
-      "source_url": "https://x.com/cos9n/status/2088156930279923724",
-      "recommended_action": "review_date_range_conflict",
-      "payload": {
-        "candidate_id": "xgap_daa3d00f13699255",
-        "source_key": "x:2088156930279923724",
-        "lane_hint": "lane2",
-        "candidate_kind": "date_range_conflict",
-        "priority_score": 255,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_ad6bd712a4d6aeb6",
-          "event_name": "歌舞伎町BON ODORI",
-          "venue": "歌舞伎町シネシティ広場",
-          "area": "",
-          "venue_area": "新宿区",
-          "venue_address": "新宿区歌舞伎町1-19",
-          "date_start": "2026-08-14",
-          "date_end": "2026-08-15",
-          "detail": "2026年は初の2日間開催。参加無料で誰でも参加できる。BLUE MAN GROUP・東京おとめ太鼓・レイザーラモンRGが出演する告知投稿より。",
-          "matched_aliases": [
-            "歌舞伎町BON ODORI",
-            "歌舞伎町BON ODORI"
-          ]
-        },
-        "source_url": "https://x.com/cos9n/status/2088156930279923724",
-        "source_text": "\n歌舞伎町 BON ODORI日時：8月14日(金)・15日(土)場所：新宿区・歌舞伎町シネシティ広場内容\n\n西神田ファミリー夏祭り 盆踊り日時：8月15日(土) 17:00～20:00場所：西神田公園\n\n外神田納涼大会日時：8月20日(木)・21日(金) 19:00～場所：外神田文化体育会\n#夏祭り #盆踊り\n\nhttps://t.co/9h7uKJt7dz",
-        "source_author": "@cos9n",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@cos9n",
-          "account_name": "こす9ん",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8月14日",
-          "8月15日",
-          "8月20日"
-        ],
-        "observed_dates": [
-          "2026-08-14",
-          "2026-08-15",
-          "2026-08-20"
-        ],
-        "event_group_key": "",
-        "voice": {
-          "source": "x",
-          "account": "@cos9n",
-          "name": "こす9ん",
-          "profile_description": "吟遊詩人：曲とともに全国のイベント\n〔花火大会・お祭り・盆踊り・フェス・納涼祭・パーティー〕などの動画を掲載\n\n東京都目黒•世田谷や川崎を拠点に活動する、アーティスト、ソングライター、およびフルスタックエンジニア。音楽制作とソフトウェア開発という両輪を掛け合わせ、自身の音楽配信から物流管理システムまで、幅広い技術領域で",
-          "title": "",
-          "text": "歌舞伎町 BON ODORI日時：8月14日(金)・15日(土)場所：新宿区・歌舞伎町シネシティ広場内容\n\n西神田ファミリー夏祭り 盆踊り日時：8月15日(土) 17:00～20:00場所：西神田公園\n\n外神田納涼大会日時：8月20日(木)・21日(金) 19:00～場所：外神田文化体育会\n#夏祭り #盆踊り\n\nhttps://t.co/9h7uKJt7dz",
-          "url": "https://x.com/cos9n/status/2088156930279923724",
-          "date": "2026-08-14T06:53:02+00:00",
-          "tweet_id": "2088156930279923724",
-          "tags": [
-            "🟡関心",
-            "q-poster-images"
-          ],
-          "critique_post": false
-        },
-        "source_urls": [
-          "https://x.com/cos9n/status/2088156930279923724"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_eb46596aa3a8a17e"
     },
     {
       "kind": "x_gap",
@@ -1450,6 +1282,83 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_5a05406d33ef41b8"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 95,
+      "title": "8/14金  15:00〜16:30\n豊洲千客万来 盆踊り\n2階 時の鐘広場\n\nとにかく暑い\n\n和太鼓と笛のグループ「鼓皷笛々」の演奏が迫力満点で良かった\n\n可",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2088385316478656779",
+      "source_url": "https://x.com/_masakari/status/2088385316478656779",
+      "recommended_action": "review_schedule_change",
+      "payload": {
+        "candidate_id": "xgap_fc0e9da6b593fcb4",
+        "source_key": "x:2088385316478656779",
+        "lane_hint": "lane2",
+        "candidate_kind": "past_event_report",
+        "priority_score": 95,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/_masakari/status/2088385316478656779",
+        "source_text": "\n8/14金  15:00〜16:30\n豊洲千客万来 盆踊り\n2階 時の鐘広場\n\nとにかく暑い\n\n和太鼓と笛のグループ「鼓皷笛々」の演奏が迫力満点で良かった\n\n可愛いだけじゃダメですか\n好きすぎて滅\n大江戸東京音頭\n江州音頭\nおどるポンポコリン\n\nが楽しかったです https://t.co/ghtnz47nd6",
+        "source_author": "@_masakari",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@_masakari",
+          "account_name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/14"
+        ],
+        "observed_dates": [
+          "2026-08-14"
+        ],
+        "event_group_key": "",
+        "voice": {
+          "source": "x_whitelist",
+          "account": "@_masakari",
+          "name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+          "profile_description": "_masakari",
+          "title": "",
+          "text": "8/14金  15:00〜16:30\n豊洲千客万来 盆踊り\n2階 時の鐘広場\n\nとにかく暑い\n\n和太鼓と笛のグループ「鼓皷笛々」の演奏が迫力満点で良かった\n\n可愛いだけじゃダメですか\n好きすぎて滅\n大江戸東京音頭\n江州音頭\nおどるポンポコリン\n\nが楽しかったです https://t.co/ghtnz47nd6",
+          "url": "https://x.com/_masakari/status/2088385316478656779",
+          "date": "2026-08-14T22:00:34+00:00",
+          "tweet_id": "2088385316478656779",
+          "tags": [
+            "⭐盆踊ラー",
+            "🟢一次レポ"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPtvXiYbkAAQHMZ.jpg",
+            "https://t.co/ghtnz47nd6",
+            "pic.x.com/ghtnz47nd6",
+            "https://pbs.twimg.com/media/HPtvXiNa0AA5YS8.jpg",
+            "https://pbs.twimg.com/media/HPtvXiNa8AAAN5A.jpg",
+            "https://pbs.twimg.com/media/HPtvXiaaEAAd_af.jpg"
+          ],
+          "value_score": 14.0
+        },
+        "source_urls": [
+          "https://x.com/_masakari/status/2088385316478656779"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_1ff4fe15f204542c"
     },
     {
       "kind": "x_gap",
