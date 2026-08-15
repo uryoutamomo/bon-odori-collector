@@ -2406,6 +2406,13 @@ def _auto_trusted_roster_accounts(cfg=None):
         return []
     min_posts = roster_cfg.get("min_posts_seen", 3)
     per_axis = roster_cfg.get("per_axis_accounts", 150)
+    # The two axes score *how* someone writes, not *whether* they write about
+    # 盆踊り at all.  Measured on 2026-08-15, that let accounts with a top-rank
+    # announce/record score but zero 23区 bon-odori posts occupy the roster,
+    # while people holding real posts sat thousands of places down the list
+    # (@mypl_katsushika: 12 posts, announce rank 4198).  Requiring at least one
+    # observed post keeps the ranking as-is and only removes the dead weight.
+    require_bon = roster_cfg.get("require_bon23_post", True)
     exclusions = _load_x_roster_exclusions()
     dormant_or_rejected = _curated_non_reader_official_handles()
     candidates = []
@@ -2418,6 +2425,11 @@ def _auto_trusted_roster_accounts(cfg=None):
         if (row.get("posts_seen") or 0) < min_posts:
             continue
         if row.get("is_area_bot"):
+            continue
+        # 「観測して0件だった」と「まだ観測していない」は別。前者だけを落とす。
+        # 未計測を0扱いで弾くのは、unknown を減点にしていた過去の誤りの繰り返しになる。
+        # 手動名簿と公式台帳は別経路で合流するので、ここで落ちても人の判断は消えない。
+        if require_bon and row.get("bon23_count") is not None and row["bon23_count"] <= 0:
             continue
         candidates.append(row)
 
