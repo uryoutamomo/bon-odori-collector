@@ -636,12 +636,13 @@ def _apply_glossary_runtime_to_x_config(cfg):
 
 
 def _score_voice(text, cfg):
-    """ルールベース自動仕分け。🟢一次レポ / 🟡関心 / 🔴ノイズ を返す。
-    除外語(比喩・曲名・ゲーム系)が含まれれば🔴、体験語があれば🟢、それ以外は🟡。"""
+    """ルールベース自動仕分け。🟢一次レポ / 🟡関心 を返す。
+
+    以前は除外語（ポケモン・ライブ・セトリ等）に当たると🔴ノイズとして voices から落としていたが、
+    2026-08-15 の実測でこの語彙が盆踊りの本体情報を捨てていたため廃止した。詳細は
+    _x_post_value_score の注記を参照。「これは盆踊りの話か」は意味の判断なのでLLMが答える。
+    """
     low = text.lower()
-    for kw in cfg.get("exclude_keywords", []):
-        if kw.lower() in low:
-            return "🔴ノイズ"
     for kw in cfg.get("experience_keywords", []):
         if kw.lower() in low:
             return "🟢一次レポ"
@@ -905,9 +906,9 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
                 judgement = _score_voice(v["text"], cfg)
                 v["tags"] = [judgement, qid]
                 _append_x_log_row(v, qid, judgement, cost_per_tweet)
-                # voices.json には一次レポ/関心のみ流す（ノイズは除外）
-                if judgement != "🔴ノイズ":
-                    new_items.append(v)
+                # 意味で捨てる関門は廃止した（_score_voice の注記）。取得した投稿は voices へ流し、
+                # 盆踊りの話かどうかの判断はLLMに任せる。
+                new_items.append(v)
                 new_seen.append(v["url"])
                 count += 1
             record_accepted(health, "keyword", qid, len(new_items) - accepted_before)
@@ -1190,10 +1191,12 @@ def _x_post_value_score(voice, cfg=None, known_venues=None):
     score = 0.0
     reasons = []
 
-    for kw in cfg.get("exclude_keywords", []):
-        if kw.lower() in low:
-            return -4.0, ["exclude"]
-
+    # 除外語による打ち切りは 2026-08-15 に廃止した。生投稿7,162件で実測したところ、
+    # この関門が落としていた212件のうち117件（55%）が盆踊りの話で、「セトリ」「セットリスト」で
+    # 曲目そのものを、「ガチャ」で縁日のガチャガチャを、「ポケモン」でポケモン音頭の参加報告を
+    # 捨てていた。正しく弾けていたのは95件（全体の1.3%）で、うち79件は同一アカウントの
+    # お笑いライブ定型告知だった。1.3%の手間のために欲しい情報を捨てる取引は割に合わない。
+    # 定型連投のような相手は、意味を見ない間引き（同一発信者・同一文型）で落とす。
     base_dt = _voice_datetime(voice) or datetime.now(timezone(timedelta(hours=9)))
     schedule = _future_date_signal(text, base_dt)
     schedule_words = any(kw in text for kw in _X_SCHEDULE_KEYWORDS)
