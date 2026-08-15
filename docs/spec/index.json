@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T05:40:50Z",
-  "generated_for_commit": "b30445d",
+  "generated_at": "2026-08-15T06:47:56Z",
+  "generated_for_commit": "ade48f3",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -28,13 +28,15 @@
         "INV-COL-001",
         "INV-COL-002",
         "INV-COL-003",
-        "INV-COL-004"
+        "INV-COL-004",
+        "INV-COL-005"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
-        "tests/test_x_collection_health.py"
+        "tests/test_x_collection_health.py",
+        "tests/test_collect_no_semantic_exclusion.py"
       ],
-      "updated_for": "83bf7d0",
+      "updated_for": "b30445d",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         "build_x_gap_candidates.py",
@@ -1221,6 +1223,16 @@
       "tests": [
         "tests/test_x_collection_health.py::test_whitelist_402_after_partial_success_does_not_advance_since_time",
         "tests/test_x_collection_health.py::test_whitelist_advances_since_time_only_after_every_batch_completes"
+      ],
+      "has_test": true
+    },
+    "INV-COL-005": {
+      "spec": "L1-collection",
+      "title": "収集の関門は意味を理由に投稿を捨てない",
+      "tests": [
+        "tests/test_collect_no_semantic_exclusion.py::test_real_posts_are_not_dropped_by_the_value_gate",
+        "tests/test_collect_no_semantic_exclusion.py::test_voice_scoring_never_returns_noise",
+        "tests/test_collect_no_semantic_exclusion.py::test_the_gate_still_drops_posts_without_any_context"
       ],
       "has_test": true
     },

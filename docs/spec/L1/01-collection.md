@@ -25,10 +25,12 @@ invariants:
   - INV-COL-002
   - INV-COL-003
   - INV-COL-004
+  - INV-COL-005
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
-updated_for: 83bf7d0
+  - tests/test_collect_no_semantic_exclusion.py
+updated_for: b30445d
 ---
 
 # 収集サブシステム
@@ -76,6 +78,14 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 - **破れたときの症状**: 課金・通信障害の時間帯だけ候補が永久に消え、復旧後も再収集されない。
 - **守っているコード**: `collect.py` のホワイトリスト収集と `since_time` 保存経路
 - **守っているテスト**: `tests/test_x_collection_health.py::test_whitelist_402_after_partial_success_does_not_advance_since_time`、`tests/test_x_collection_health.py::test_whitelist_advances_since_time_only_after_every_batch_completes`
+
+### INV-COL-005 収集の関門は意味を理由に投稿を捨てない
+
+- **内容**: 取得した投稿を落としてよいのは、意味を読まなくても判定できる条件だけである（既見URL、重複、文脈信号が1つも無い＝`no_context`）。**語彙の一致で「これは盆踊りの話ではない」と決めて捨ててはならない。** `_x_post_value_score` の除外語打ち切り、`_score_voice` の🔴ノイズ、`classify_event_evidence` の除外語減点は、いずれも 2026-08-15 に廃止した。
+- **なぜ**: 生投稿7,162件で実測したところ、除外語の関門が落としていた212件のうち**117件（55%）が盆踊りの話**だった。「セトリ」「セットリスト」で曲目そのものを、「ガチャ」で縁日のガチャガチャを、「ポケモン」でポケモン音頭の参加報告を、部分文字列の一致だけで捨てていた。正しく弾けていたのは95件（全体の1.3%）で、うち79件は同一アカウントのお笑いライブ定型告知である。**1.3%の手間のために、盆助が集めている情報の中心（曲目）を捨てる取引は割に合わない。** 「これは盆踊りの話か」は意味の判断なので、LLMが候補として読んでから決める。定型連投のような相手は、同一発信者・同一文型といった意味を見ない条件で落とす。
+- **破れたときの症状**: 曲目や参加報告が収集の時点で消え、下流のどこを直しても出てこない。捨てた記録も残らない（raw アーカイブにはあるが、下流には流れない）。
+- **守っているコード**: `collect.py` の `_x_post_value_score()` と `_score_voice()`、`collection_support/event_evidence.py` の `classify_event_evidence()`
+- **守っているテスト**: `tests/test_collect_no_semantic_exclusion.py::test_real_posts_are_not_dropped_by_the_value_gate`、`tests/test_collect_no_semantic_exclusion.py::test_voice_scoring_never_returns_noise`、`tests/test_collect_no_semantic_exclusion.py::test_the_gate_still_drops_posts_without_any_context`
 
 ## 主要な流れ
 
