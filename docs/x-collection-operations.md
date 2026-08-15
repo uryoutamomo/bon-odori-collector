@@ -107,3 +107,27 @@ python3 apply_poster_ocr_decisions.py --apply                          # 読み�
 
 2026-08-11以前に経路別の機械記録はなかったため、同日Actionsログの手計測を初期行として
 登録している。内訳合計と共有予算台帳との差額は `unattributed` として明示し、推測で配分しない。
+
+## 検索クエリの読み取り位置（2026-08-16〜）
+
+検索は取得件数ぶんだけ課金される。従来は11本のクエリを毎回1ページ目から読み直していて、
+既読URLは保存の段で捨てていたが**課金は発生していた**（2026-08-11 の実測で1,760件中1,100件が読み直し）。
+
+いまはクエリごとに「ここまで読んだ」時刻を `data/x_query_watermarks.json` に持ち、
+`since_time:` を付けてその先だけを読む。設定は `x_queries.json` の `search_watermark`。
+
+| 設定 | 既定 | 意味 |
+| --- | --- | --- |
+| `enabled` | `true` | `false` にすると従来の全件読み直しへ戻る（退避路） |
+| `initial_lookback_days` | `3` | 記録が無いクエリを何日さかのぼって読むか。**クエリを新設したときだけ効く** |
+| `overlap_minutes` | `60` | 窓の境目で落とさないための重なり幅 |
+| `stop_after_zero_new_page` | `true` | 新規0件のページに達したらそのクエリを打ち切る |
+
+**読み切れなかったクエリは窓を進めない**（ページ上限で切れた／HTTP失敗）。
+これは名簿の直読みと同じ約束で、進めるとその時間帯が二度と検索されなくなるため（INV-COL-006）。
+どのクエリが読み切れたかは `data/x_cost_ledger.json` の `note`（`since_time:... completed:True/False`）で分かる。
+
+- **取りこぼしが疑われるとき**: `completed:False` が続くクエリは、`x_queries.json` の
+  `queries[].max_pages` でそのクエリだけページ上限を上げる（全体の `max_pages_per_query` は据え置ける）。
+- **窓をやり直したいとき**: `data/x_query_watermarks.json` から該当クエリの行を消すと、
+  次回は `initial_lookback_days` 前から読み直す。ファイルごと消しても壊れない（初回扱いになるだけ）。

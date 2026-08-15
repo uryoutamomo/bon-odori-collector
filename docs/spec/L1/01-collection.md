@@ -4,6 +4,7 @@ layer: L1
 title: 収集サブシステム
 owns:
   - collect.py
+  - x_queries.json
   - collection_support/x_raw_archive.py
   - collection_support/x_budget_guard.py
   - collection_support/x_cost_ledger.py
@@ -26,11 +27,14 @@ invariants:
   - INV-COL-003
   - INV-COL-004
   - INV-COL-005
+  - INV-COL-006
+  - INV-COL-007
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
   - tests/test_collect_no_semantic_exclusion.py
-updated_for: b30445d
+  - tests/test_x_search_watermark.py
+updated_for: 35615cf
 ---
 
 # 収集サブシステム
@@ -43,7 +47,7 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 
 ## 入力と出力
 
-入力は各サービスの取得結果、既読URL、X設定、予算状態、および会場公式サイトの監視設定（`venue_sites.json`）である。出力は `data/voices.json`、`data/latest.json`、生X投稿のアーカイブ、収集状態・コスト台帳、および候補キューである。
+入力は各サービスの取得結果、既読URL、X設定（`x_queries.json`）、予算状態、検索クエリの読み取り位置（`data/x_query_watermarks.json`）、および会場公式サイトの監視設定（`venue_sites.json`）である。出力は `data/voices.json`、`data/latest.json`、生X投稿のアーカイブ、収集状態・コスト台帳、および候補キューである。
 
 ## 不変条件
 
@@ -87,6 +91,22 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 - **守っているコード**: `collect.py` の `_x_post_value_score()` と `_score_voice()`、`collection_support/event_evidence.py` の `classify_event_evidence()`
 - **守っているテスト**: `tests/test_collect_no_semantic_exclusion.py::test_real_posts_are_not_dropped_by_the_value_gate`、`tests/test_collect_no_semantic_exclusion.py::test_voice_scoring_never_returns_noise`、`tests/test_collect_no_semantic_exclusion.py::test_the_gate_still_drops_posts_without_any_context`
 
+### INV-COL-006 読み切れなかった検索クエリでは since_time を進めない
+
+- **内容**: `collect_x_voices()` はクエリごとに「ここまで読んだ」時刻を `data/x_query_watermarks.json` へ持ち、次回はその先だけを読む。窓を進めてよいのは、そのクエリを**読み切れたとき**（次ページが無い／空ページに達した／新規0件のページに達した）だけである。ページ上限で切れた場合とHTTP失敗の場合は、従来の時刻を維持する。
+- **なぜ**: INV-COL-004 とまったく同じ理由である。読み切れていないのに窓を進めると、その時間帯の投稿は次回以降の検索対象から外れ、取りこぼしが恒久化する。検索は名簿の直読みと違って「誰の投稿か」で後から追いかけ直せないので、一度飛ばした時間帯は二度と拾えない。
+- **破れたときの症状**: 費用は下がるのに voices の採用件数が静かに減る。とくに投稿が集中する開催日の夜（ページ上限に当たりやすい時間帯）の声が欠ける。
+- **守っているコード**: `collect.py` の `collect_x_voices()`、`_load_query_watermarks()` / `_save_query_watermarks()` / `_query_since_time()` / `_apply_since_time()`
+- **守っているテスト**: `tests/test_x_search_watermark.py::XSearchWatermarkTest::test_page_limited_query_does_not_advance_the_watermark`、`tests/test_x_search_watermark.py::XSearchWatermarkTest::test_http_failure_does_not_advance_the_watermark`、`tests/test_x_search_watermark.py::XSearchWatermarkTest::test_other_queries_keep_their_own_position`
+
+### INV-COL-007 収集の読み取り位置と費用台帳は実行のたびにコミットする
+
+- **内容**: 日次の `collect.yml` は `data/x_query_watermarks.json` と `data/x_cost_ledger.json` を毎回コミット対象に含める。
+- **なぜ**: どちらもリポジトリのファイルが正本で、Actions のワークスペースは実行ごとに消える。読み取り位置が残らなければ毎回「初回」扱いに戻り、既読分への課金がそのまま復活する。費用台帳が残らなければ、削減の前後を比べる材料そのものが無くなる。
+- **破れたときの症状**: 費用削減の変更を入れたのに日次費用が下がらない。費用ログの表を実測で更新できず「見込み」のまま放置される（2026-08-12に台帳を作ったとき、実際に `git add` から漏れていて1件も残っていなかった）。
+- **守っているコード**: `.github/workflows/collect.yml` のコミット段
+- **守っているテスト**: `tests/test_x_search_watermark.py::XSearchWatermarkPersistenceTest::test_workflow_commits_the_watermark_and_the_cost_ledger`
+
 ## 主要な流れ
 
 1. `collect.py` がRSS・動画・Xを取得し、既読情報と照合する。
@@ -116,6 +136,29 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 
 読む相手が偏ると、特定の区だけ情報が薄くなるという形で症状が出る。
 これは判定の精度の問題に見えるが、原因は入口の偏りであることが多い。
+
+### 同じ投稿に二度払わないための読み取り位置
+
+X検索は取得件数ぶんだけ課金される（$0.15/1000件）。従来は11本のクエリを毎回1ページ目から読み直し、
+既読URLは `data/voices.json` へ保存する段で捨てていた。**捨てていたのは保存であって課金ではない。**
+2026-08-11 の実測では、1日1,760件を取得して新規は660件（37.5%）、
+残り1,100件は前日までに読んだ投稿の読み直しだった。
+
+そこで `collect_x_voices()` は、クエリごとの `since_time` を `data/x_query_watermarks.json` に持ち、
+`盆踊り lang:ja since_time:1786...` の形で「前回読んだ先」だけを取りに行く。
+仕組みは名簿の直読み（`data/x_whitelist_state.json`）と同じで、次の2点だけ違う。
+
+- **クエリ単位で持つ。** クエリを1本足したとき、その1本だけが過去にさかのぼって読み始められる。
+- **重なりを残す。** `overlap_minutes`（既定60分）ぶん手前から読み直す。窓の境目に来た投稿を落とさないため。
+
+窓を進めてよい条件は INV-COL-006 のとおりで、**読み切れたときだけ**である。
+`queryType=Latest` は新しい順に返すので、新規が1件も無いページに達したらそこから先は既読の領域であり、
+そのクエリは打ち切ってよい（`stop_after_zero_new_page`）。逆にページ上限に当たって切れた場合は、
+まだ読めていない時間帯が残っているので窓は据え置く。**据え置いても費用は増えない**——
+ページ上限が費用の天井なので、読む量は変わらず、次に投稿が少ない日が来たときに窓が追いつく。
+
+なお `x_queries.json` の `search_watermark.enabled` を `false` にすると、
+設定だけで従来の全件読み直しへ戻せる。取りこぼしが疑われたときの退避路として残してある。
 
 費用の記録は `sync_weekly_costs.py` が担う。`data/x_budget.json` を読んでNotionの費用DBへ週次で書き出すもので、
 `weekly_harvest.yml` から動く。X収集は使った分だけ課金される仕組みなので、

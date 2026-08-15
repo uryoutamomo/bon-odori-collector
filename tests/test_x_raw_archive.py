@@ -1,6 +1,7 @@
 import gzip
 import json
 import os
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -93,16 +94,20 @@ class RawXArchiveTest(unittest.TestCase):
             "max_pages_per_query": 1,
             "page_sleep_sec": 0,
         }
-        with (
-            patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
-            patch.object(collect, "_load_x_config", return_value=config),
-            patch.object(collect, "_x_budget_state", return_value={}),
-            patch.object(collect, "_x_search", return_value={"tweets": [tweet]}),
-            patch.object(collect, "capture_raw_x_posts", side_effect=lambda *_args, **_kwargs: events.append("archive")),
-            patch.object(collect, "_score_voice", side_effect=lambda *_args: events.append("score") or "🟡関心"),
-            patch.object(collect, "_append_x_log_row"),
-        ):
-            items, seen = collect.collect_x_voices(set())
+        # 予算・コスト台帳・検索位置はすべて X_BUDGET_FILE の隣に書かれるため、
+        # テストがリポジトリの data/ を書き換えないよう一時ディレクトリへ逃がす。
+        with tempfile.TemporaryDirectory() as tmp:
+            with (
+                patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
+                patch.object(collect, "X_BUDGET_FILE", str(Path(tmp) / "x_budget.json")),
+                patch.object(collect, "_load_x_config", return_value=config),
+                patch.object(collect, "_x_budget_state", return_value={}),
+                patch.object(collect, "_x_search", return_value={"tweets": [tweet]}),
+                patch.object(collect, "capture_raw_x_posts", side_effect=lambda *_args, **_kwargs: events.append("archive")),
+                patch.object(collect, "_score_voice", side_effect=lambda *_args: events.append("score") or "🟡関心"),
+                patch.object(collect, "_append_x_log_row"),
+            ):
+                items, seen = collect.collect_x_voices(set())
 
         self.assertEqual(events, ["archive", "score"])
         self.assertEqual(len(items), 1)

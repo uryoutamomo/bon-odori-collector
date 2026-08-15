@@ -675,6 +675,65 @@ def _x_search(query, cursor=""):
         return json.loads(resp.read())
 
 
+def _query_watermark_path():
+    """検索クエリごとの読み取り位置の保存先（予算ファイルと同じ場所に置く）。"""
+    return Path(X_BUDGET_FILE).with_name("x_query_watermarks.json")
+
+
+def _load_query_watermarks(path=None):
+    """クエリID別の since_time(UNIX秒)。読めなければ空＝初回扱い（fail-safe）。"""
+    try:
+        with open(path or _query_watermark_path(), "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    marks = payload.get("queries")
+    return marks if isinstance(marks, dict) else {}
+
+
+def _save_query_watermarks(marks, path=None):
+    target = str(path or _query_watermark_path())
+    try:
+        os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
+        with open(target, "w", encoding="utf-8") as f:
+            json.dump(
+                {"schema_version": 1, "queries": marks},
+                f,
+                ensure_ascii=False,
+                indent=2,
+            )
+    except Exception as e:
+        # 観測用の状態保存の失敗で収集自体を落とさない。
+        print(f"[x] watermark 保存エラー（収集は継続）: {e}")
+
+
+def _query_since_time(qid, marks, watermark_cfg, now_ts):
+    """このクエリの since_time。記録が無ければ initial_lookback_days 前から読む。"""
+    entry = marks.get(qid)
+    since = entry.get("since_time") if isinstance(entry, dict) else entry
+    try:
+        since = int(since)
+    except (TypeError, ValueError):
+        since = 0
+    if since <= 0:
+        days = watermark_cfg.get("initial_lookback_days", 3)
+        try:
+            days = float(days)
+        except (TypeError, ValueError):
+            days = 3.0
+        since = int(now_ts - days * 86400)
+    return since
+
+
+def _apply_since_time(query, since_ts):
+    """クエリ文字列へ since_time を足す。設定側で明示済みならそちらを尊重する。"""
+    if "since_time:" in query or "since:" in query:
+        return query
+    return f"{query} since_time:{int(since_ts)}"
+
+
 def _x_media_urls(tw):
     """Extract media image URLs from known twitterapi.io/Twitter response shapes."""
     urls = []
@@ -823,10 +882,30 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
     new_seen = list(seen_urls)
     run_cost = 0.0
 
+    # 前回読んだ地点から先だけを読む。既読分の読み直しは voices では捨てられるが課金はされるため。
+    watermark_cfg = cfg.get("search_watermark") or {}
+    watermark_enabled = watermark_cfg.get("enabled", True)
+    stop_on_zero_new = watermark_cfg.get("stop_after_zero_new_page", True)
+    try:
+        overlap_sec = int(float(watermark_cfg.get("overlap_minutes", 60)) * 60)
+    except (TypeError, ValueError):
+        overlap_sec = 3600
+    run_started_at = datetime.now(timezone.utc).timestamp()
+    watermarks = _load_query_watermarks() if watermark_enabled else {}
+    updated_watermarks = dict(watermarks)
+
     queries = [q for q in cfg.get("queries", []) if q.get("query")]
     set_planned_units(health, "keyword", len(queries))
     for q in queries:
         qid, query = q.get("id", "q-?"), q.get("query", "")
+        since_ts = None
+        if watermark_enabled:
+            since_ts = _query_since_time(qid, watermarks, watermark_cfg, run_started_at)
+            query = _apply_since_time(query, since_ts)
+        try:
+            query_max_pages = int(q.get("max_pages") or max_pages)
+        except (TypeError, ValueError):
+            query_max_pages = max_pages
         print(f"[x] {qid}: {query}")
         cursor = ""
         unit_completed = False
@@ -835,7 +914,7 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
         query_tweets = 0
         query_new_urls = 0
         query_accepted = 0
-        for page in range(max_pages):
+        for page in range(query_max_pages):
             # 予算の最終ガード（クエリ途中でも止まる）
             if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
                 print("[x] 走行中に予算上限到達。以降のページを打ち切り")
@@ -915,6 +994,13 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
             query_accepted += len(new_items) - accepted_before
             print(f"[x] {qid}: {count} 件処理（うち voices 採用 {sum(1 for x in new_items if qid in x.get('tags', []))} 件累計）")
 
+            # queryType=Latest は新しい順なので、新規が1件も無いページから先は既読の領域。
+            # since_time の重なり分に達した合図として打ち切る。
+            if stop_on_zero_new and not prepared:
+                print(f"[x] {qid}: 新規0件のページに到達。既読領域とみなし以降を打ち切り")
+                unit_completed = True
+                break
+
             cursor = data.get("next_cursor") or data.get("cursor") or ""
             if not (data.get("has_next_page", bool(cursor)) and cursor):
                 unit_completed = True
@@ -922,8 +1008,16 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
             _time.sleep(page_sleep)
         if unit_completed:
             mark_unit_complete(health, "keyword", qid)
+            if watermark_enabled:
+                updated_watermarks[qid] = {
+                    "since_time": int(run_started_at - overlap_sec),
+                    "updated_at": datetime.now(timezone.utc).isoformat(),
+                }
         else:
             mark_unit_incomplete(health, "keyword", qid, "query_incomplete")
+            if watermark_enabled:
+                # 読み切れていないので窓を進めない。進めると未読の時間帯が恒久的に消える。
+                print(f"[x] {qid}: 未完了のため since_time を維持（{since_ts}）")
         if query_cost > 0:
             _record_x_cost(
                 "search",
@@ -933,7 +1027,15 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
                 tweets_fetched=query_tweets,
                 new_urls=query_new_urls,
                 voices_accepted=query_accepted,
+                note=(
+                    f"since_time:{since_ts} completed:{unit_completed}"
+                    if watermark_enabled
+                    else None
+                ),
             )
+
+    if watermark_enabled and updated_watermarks != watermarks:
+        _save_query_watermarks(updated_watermarks)
 
     # 予算消費を記録
     if run_cost > 0:
