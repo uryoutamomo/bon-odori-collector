@@ -41,6 +41,20 @@ def whitelist_with_ledger(ledger_rows):
 
 
 class LedgerDoesNotMuteRosterTest(unittest.TestCase):
+    def test_curated_dormant_account_is_not_auto_enrolled_before_wake(self):
+        rows = whitelist_with_ledger([
+            {"handle": "@kandakankou", "tier": "dormant", "decided_by": "user",
+             "wake_after": "2027-06-01", "linked_events": []},
+        ])
+        self.assertNotIn("kandakankou", rows)
+
+    def test_rejected_account_is_not_auto_enrolled(self):
+        rows = whitelist_with_ledger([
+            {"handle": "@kandakankou", "tier": "rejected", "decided_by": "user",
+             "linked_events": []},
+        ])
+        self.assertNotIn("kandakankou", rows)
+
     def test_unlinked_ledger_row_does_not_mute_a_roster_account(self):
         """紐付けが取れていないことは「読まない」理由にはならない。"""
         rows = whitelist_with_ledger([

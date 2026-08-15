@@ -44,6 +44,11 @@ class SourceRegistryV2Test(unittest.TestCase):
         self.assertEqual(tier_for_account({"linked_events":[{"confidence":"confirmed"}, {"confidence":"probable"}]}), "active")
         self.assertEqual(tier_for_account({"tier":"dormant", "decided_by":"user", "linked_events":[{}, {}]}), "dormant")
 
+    def test_curated_dormant_account_wakes_on_its_explicit_date(self):
+        account = {"tier": "dormant", "decided_by": "user", "wake_after": "2027-06-01"}
+        self.assertEqual(tier_for_account(account, today=date(2027, 5, 31)), "dormant")
+        self.assertEqual(tier_for_account(account, today=date(2027, 6, 1)), "active")
+
     def test_next_year_wake_is_derived_without_prediction(self):
         prior = date.today().replace(year=date.today().year - 1)
         # sixty days before this year's same-day recurrence is already due.

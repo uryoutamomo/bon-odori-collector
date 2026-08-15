@@ -67,6 +67,13 @@ def tier_for_account(account, today=None):
     if account.get("tier") == REJECTED:
         return REJECTED
     if account.get("decided_by") == "user" and account.get("tier"):
+        # A curated dormancy is stable across daily refreshes, except for its
+        # explicit wake date.  That makes "do not read every day; retry 60 days
+        # before the next season" expressible without another manual edit.
+        if account["tier"] == "dormant":
+            wake = _as_date(account.get("wake_after"))
+            if wake and today >= wake:
+                return "active"
         return account["tier"]
     linked = account.get("linked_events") or []
     if not linked:
