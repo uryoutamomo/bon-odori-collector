@@ -311,6 +311,8 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         date_status=date_status,
         lifecycle_status="published",
         confidence=request.get("confidence") or "high",
+        # 要求が確からしさを名指ししていれば、下げる指定でもそのまま通す。
+        confidence_is_explicit=bool(request.get("confidence")),
         source_kind=request["source"]["kind"],
         detail_addendum=request.get("note"),
         date_basis_note=f"current-year source: {request['source']['url']}",
