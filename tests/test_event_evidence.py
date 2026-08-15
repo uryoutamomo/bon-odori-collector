@@ -132,7 +132,7 @@ class EventEvidenceTest(unittest.TestCase):
         with patch.object(collect, "TWITTERAPI_IO_KEY", "test-key"), \
                 patch.object(collect, "_load_x_config", return_value=config), \
                 patch.object(collect, "load_whitelist_accounts", return_value=[]), \
-                patch.object(collect, "_event_evidence_accounts", return_value=handles), \
+                patch.object(collect, "_event_evidence_cohort_selection", return_value=(handles, state["selection_id"])), \
                 patch.object(collect, "_load_event_evidence_state", return_value=state), \
                 patch.object(collect, "_save_event_evidence_state"), \
                 patch.object(collect, "_advance_event_evidence_state") as advance:
@@ -410,6 +410,47 @@ class EventEvidenceTest(unittest.TestCase):
                 "event_evidence": {"cohort_file": path}
             })
         self.assertEqual(selected, ["@a", "@b"])
+
+    def test_reselected_cohort_requires_bon23_and_respects_exclusions(self):
+        scores = {"accounts": {
+            "first": {"handle": "@first", "posts_seen": 10, "bon23_count": 2,
+                      "announce_score": 10, "record_score": 10},
+            "second": {"handle": "@second", "posts_seen": 10, "bon23_count": 5,
+                       "announce_score": 10, "record_score": 10},
+            "zero": {"handle": "@zero", "posts_seen": 10, "bon23_count": 0,
+                     "announce_score": 99, "record_score": 99},
+            "excluded": {"handle": "@excluded", "posts_seen": 10, "bon23_count": 9,
+                         "announce_score": 99, "record_score": 99},
+            "dormant": {"handle": "@dormant", "posts_seen": 10, "bon23_count": 9,
+                        "announce_score": 99, "record_score": 99},
+        }}
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cohort = os.path.join(tmpdir, "cohort.json")
+            registry = os.path.join(tmpdir, "official.json")
+            with open(cohort, "w", encoding="utf-8") as f:
+                json.dump({"selected_at": "2026-06-01T00:00:00+00:00", "handles": ["@old"]}, f)
+            with open(registry, "w", encoding="utf-8") as f:
+                json.dump({"accounts": [{"handle": "@dormant", "tier": "dormant", "decided_by": "user"}]}, f)
+            cfg = {"event_evidence": {"cohort_file": cohort, "cohort_size": 2, "reselect_after_days": 30}}
+            with patch.object(collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", registry), \
+                    patch.object(collect, "_load_x_account_scores", return_value=scores), \
+                    patch.object(collect, "_load_x_roster_exclusions", return_value={"excluded": {}}):
+                handles, _ = collect._event_evidence_cohort_selection(
+                    cfg, now=datetime(2026, 8, 1, tzinfo=timezone.utc)
+                )
+        self.assertEqual(handles, ["@second", "@first"])
+
+    def test_cohort_is_reselected_after_thirty_days_even_if_handles_match(self):
+        scores = {"accounts": {"a": {"handle": "@a", "posts_seen": 3, "bon23_count": 1,
+                                       "announce_score": 1, "record_score": 1}}}
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cohort = os.path.join(tmpdir, "cohort.json")
+            cfg = {"event_evidence": {"cohort_file": cohort, "cohort_size": 30, "reselect_after_days": 30}}
+            with patch.object(collect, "_load_x_account_scores", return_value=scores), \
+                    patch.object(collect, "_load_x_roster_exclusions", return_value={}):
+                _, first = collect._event_evidence_cohort_selection(cfg, now=datetime(2026, 6, 1, tzinfo=timezone.utc))
+                _, second = collect._event_evidence_cohort_selection(cfg, now=datetime(2026, 7, 1, tzinfo=timezone.utc))
+        self.assertNotEqual(first, second)
 
     def test_clears_pending_only_after_queue_delivery(self):
         with tempfile.TemporaryDirectory() as tmpdir:

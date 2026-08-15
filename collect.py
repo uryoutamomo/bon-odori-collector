@@ -2375,6 +2375,22 @@ def _load_notion_member_list():
     return accounts
 
 
+def _curated_non_reader_official_handles():
+    """Return only human-curated dormant/rejected official-source handles."""
+    try:
+        registry = json.loads(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE).read_text(encoding="utf-8"))
+        rows = registry.get("accounts", []) if isinstance(registry, dict) else registry
+    except (OSError, json.JSONDecodeError, TypeError):
+        return set()
+    return {
+        _norm_handle(row.get("handle"))
+        for row in rows
+        if isinstance(row, dict)
+        and (row.get("tier") == "rejected"
+             or (row.get("tier") == "dormant" and row.get("decided_by") == "user"))
+    }
+
+
 def _auto_trusted_roster_accounts(cfg=None):
     """Build the daily roster from independent announce/record axes.
 
@@ -2391,22 +2407,7 @@ def _auto_trusted_roster_accounts(cfg=None):
     min_posts = roster_cfg.get("min_posts_seen", 3)
     per_axis = roster_cfg.get("per_axis_accounts", 150)
     exclusions = _load_x_roster_exclusions()
-    # The official ledger answers a different question from score eligibility:
-    # a person may be good enough for either two-axis roster, but a curator can
-    # explicitly put an official/quasi-official source to sleep until its wake
-    # date.  Read the raw rows here because load_official_source_accounts()
-    # intentionally hides rejected rows from normal official-source consumers.
-    dormant_or_rejected = set()
-    try:
-        registry = json.loads(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE).read_text(encoding="utf-8"))
-        for official in registry.get("accounts", []) if isinstance(registry, dict) else registry:
-            if (isinstance(official, dict)
-                    and (official.get("tier") == "rejected"
-                         or (official.get("tier") == "dormant"
-                             and official.get("decided_by") == "user"))):
-                dormant_or_rejected.add(_norm_handle(official.get("handle")))
-    except (OSError, json.JSONDecodeError, TypeError):
-        pass
+    dormant_or_rejected = _curated_non_reader_official_handles()
     candidates = []
     for key, row in scores.items():
         handle = row.get("handle") or f"@{key}"
@@ -2810,23 +2811,75 @@ def _clear_pending_event_evidence():
         _save_event_evidence_state(state)
 
 
+def _event_evidence_cohort_selection(cfg, now=None):
+    """Select a small, rotating 23区 evidence-mining cohort.
+
+    A cohort is deliberately a cost-control sample, not a source registry:
+    it must be refreshed periodically even if the same handles happen to win.
+    """
+    evidence_cfg = cfg.get("event_evidence", {}) or {}
+    cohort_file = evidence_cfg.get("cohort_file", X_EVENT_EVIDENCE_COHORT_FILE)
+    now = now or datetime.now(timezone.utc)
+    try:
+        cohort = json.loads(Path(cohort_file).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, TypeError):
+        cohort = {}
+    refresh_days = int(evidence_cfg.get("reselect_after_days", 30))
+    selected_at = cohort.get("selected_at") or ""
+    try:
+        fresh = now - datetime.fromisoformat(selected_at.replace("Z", "+00:00")) < timedelta(days=refresh_days)
+    except (TypeError, ValueError):
+        # Old hand-frozen cohort files did not carry a timestamp.  Preserve
+        # that compatibility; the production file has selected_at and rotates.
+        fresh = bool(cohort.get("handles")) and not selected_at
+    handles = sorted(set(cohort.get("handles") or []), key=str.casefold)
+    if handles and fresh:
+        return handles, cohort.get("selection_id") or hashlib.sha256("\n".join(handles).encode("utf-8")).hexdigest()
+
+    scores = _load_x_account_scores(cfg).get("accounts", {}) or {}
+    if not scores:
+        return [], ""
+    exclusions = _load_x_roster_exclusions()
+    official_non_readers = _curated_non_reader_official_handles()
+    eligible = []
+    for key, row in scores.items():
+        handle = row.get("handle") or f"@{key}"
+        normalized = _norm_handle(handle)
+        if (normalized in exclusions or normalized in official_non_readers
+                or (row.get("posts_seen") or 0) < 3 or row.get("is_area_bot")
+                or (row.get("bon23_count") or 0) <= 0):
+            continue
+        eligible.append(row)
+    eligible.sort(key=lambda row: (
+        -float(row.get("announce_score") or 0) - float(row.get("record_score") or 0),
+        -int(row.get("bon23_count") or 0),
+        _norm_handle(row.get("handle")),
+    ))
+    size = int(evidence_cfg.get("cohort_size", 30))
+    handles = [f"@{_norm_handle(row.get('handle'))}" for row in eligible[:size]]
+    selection_id = hashlib.sha256(
+        (now.isoformat() + "\n" + "\n".join(handles)).encode("utf-8")
+    ).hexdigest()
+    payload = {
+        "selection": "two_axis_bon23_top_cohort",
+        "expected_count": len(handles),
+        "selected_at": now.isoformat(),
+        "selection_id": selection_id,
+        "handles": handles,
+    }
+    try:
+        Path(cohort_file).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    except OSError as exc:
+        print(f"[evidence] コホート保存エラー: {exc}")
+    return handles, selection_id
+
+
 def _event_evidence_accounts(accounts, cfg):
     evidence_cfg = cfg.get("event_evidence", {})
     cohort_file = evidence_cfg.get(
         "cohort_file", X_EVENT_EVIDENCE_COHORT_FILE
     )
-    try:
-        with open(cohort_file, "r", encoding="utf-8") as f:
-            cohort = json.load(f)
-    except (OSError, json.JSONDecodeError, TypeError):
-        cohort = {}
-    handles = sorted(set(cohort.get("handles") or []), key=str.casefold)
-    expected_count = cohort.get("expected_count")
-    if handles and expected_count and len(handles) != int(expected_count):
-        raise ValueError(
-            f"event evidence cohort count mismatch: "
-            f"{len(handles)} != {expected_count}"
-        )
+    handles, _ = _event_evidence_cohort_selection(cfg)
     if handles:
         return handles
 
@@ -2856,10 +2909,10 @@ def collect_event_evidence_history():
         return []
 
     accounts = load_whitelist_accounts()
-    handles = _event_evidence_accounts(accounts, cfg)
-    selection_id = hashlib.sha256(
-        "\n".join(handles).encode("utf-8")
-    ).hexdigest()
+    handles, selection_id = _event_evidence_cohort_selection(cfg)
+    if not handles:
+        handles = _event_evidence_accounts(accounts, cfg)
+        selection_id = hashlib.sha256("\n".join(handles).encode("utf-8")).hexdigest()
     state = _load_event_evidence_state()
     if state and state.get("selection_id") != selection_id:
         print(
