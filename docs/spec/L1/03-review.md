@@ -46,6 +46,7 @@ invariants:
   - INV-RVW-013
   - INV-RVW-014
   - INV-RVW-015
+  - INV-RVW-016
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -53,7 +54,7 @@ verified_by:
   - tests/test_e0b_bridge.py
   - tests/test_e2_identity_judgment.py
   - tests/test_judgment_j0_read.py
-updated_for: 28a8012
+updated_for: 0efb933
 ---
 
 # 人のレビュー運用サブシステム
@@ -214,6 +215,14 @@ updated_for: 28a8012
 - **破れたときの症状**: 既にあるイベントが「新規」と判断され、重複した系列が増える。判断の根拠になった候補集合が、実際の状態と食い違う。
 - **守っているコード**: `review_inbox_adapters/build_judgment_packets.py` の `refreshed_row()` と `candidate_set_hash()`、`apply_judgment_results.py` の照合
 - **守っているテスト**: `tests/test_judgment_j0_read.py::test_packet_refreshes_the_candidate_set_from_the_database`、`tests/test_judgment_j0_read.py::test_a_changed_candidate_set_is_refused_at_ingest`、`tests/test_judgment_j0_read.py::test_an_unchanged_candidate_set_is_accepted`
+
+### INV-RVW-016 名指しされた対象は判定者に見せ、材料の無い候補を「新規」として人へ回さない
+
+- **内容**: レポートが開催回IDを名指ししている候補（`explicit_occurrence_id`。公式お知らせの `confirm_existing` 由来）は、名前を持たず検索に掛からなくても、その開催回と会場を候補集合の先頭に入れる（統合済み `lifecycle_status='merged'` は除く）。あわせて、同一性が `"none"` でも**新規を作る材料（イベント名／会場名）が無ければ** `new_series_requires_confirmation` / `new_venue_requires_confirmation` ではなく `insufficient_evidence` を理由にする。
+- **なぜ**: `confirm_existing` の候補は開催回IDだけを持ち、名前も年も会場名も持たないことが多い（2026-08-15 の実データで112件中55件）。候補集合が空になるため判定者は `"none"` としか答えられず、機械はそれを「新規です」と解釈して人の確認へ回す。ところが**新規を作る材料が無いので、裁定しても何も生まれない**。実際、この日の保留56件は全件が名前も会場名も空で、裁定画面を開いても人は何も判断できなかった。
+- **破れたときの症状**: 対象が分かっているのに「どれとも違う」と判断される。名前も会場も空の項目が裁定待ちに積み上がり、人が見ても処理できない。
+- **守っているコード**: `review_inbox_adapters/build_event_inbox_candidates.py` の `search_targets()`、`apply_judgment_results.py` の `_identity_hold_reason()`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_named_occurrence_is_offered_even_without_a_name`、`tests/test_e2_identity_judgment.py::test_a_merged_occurrence_is_not_offered`、`tests/test_e2_identity_judgment.py::test_no_name_yields_insufficient_evidence_not_new_series`
 
 ## 主要な流れ
 

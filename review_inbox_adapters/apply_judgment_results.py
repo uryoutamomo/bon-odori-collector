@@ -16,6 +16,7 @@ JUDGMENT_RESULT_CONFIRMATION='APPLY JUDGMENT RESULTS'
 IDENTITY_FIELDS=('occurrence_match','series_match','venue_match')
 NEW_SERIES_REASON='new_series_requires_confirmation'
 NEW_VENUE_REASON='new_venue_requires_confirmation'
+NO_MATERIAL_REASON='insufficient_evidence'
 def _identity_problem(packet,payload):
  """同一性の答えを機械が検算する。LLMには候補から選ぶ以上のことをさせない。"""
  targets=packet.get('targets') or {}
@@ -29,14 +30,20 @@ def _identity_problem(packet,payload):
  if payload['venue_match']!=IDENTITY_MATCH_NONE and payload['venue_match'] not in venues: return 'venue_match_not_a_candidate'
  if payload['occurrence_match']!=IDENTITY_MATCH_NONE and payload['series_match']!=occurrences[payload['occurrence_match']].get('series_id'): return 'series_match_conflicts_with_occurrence'
  return None
-def _identity_hold_reason(payload):
+def _identity_hold_reason(payload,proposal):
  """新しい系列・会場が生まれる答えは人の確認へ回す。統合の仕組みが無く取り消せないため。
+
+ ただし「新規です」と言えるのは、作る材料（名前・会場名）が揃っているときだけ。無いものを
+ 新規確認として出すと、名前も会場も空の項目が裁定画面に並び、人は何も判断できない
+ （2026-08-15 に56件すべてがこれだった）。材料が無いなら理由は「証拠不足」が正しい。
 
  保留にするのは機械側の運用ポリシーで、LLMの判断そのものは payload にそのまま残る。
  統合が実装されたらこの関数を外すだけでよく、LLMへの指示は変えずに済む。
  """
- if payload['series_match']==IDENTITY_MATCH_NONE: return NEW_SERIES_REASON
- if payload['venue_match']==IDENTITY_MATCH_NONE: return NEW_VENUE_REASON
+ if payload['series_match']==IDENTITY_MATCH_NONE:
+  return NEW_SERIES_REASON if (proposal or {}).get('event_name_hint') else NO_MATERIAL_REASON
+ if payload['venue_match']==IDENTITY_MATCH_NONE:
+  return NEW_VENUE_REASON if ((proposal or {}).get('venue') or {}).get('name') else NO_MATERIAL_REASON
  return None
 def _migrate(c):migrate_local_judgment_contract(c);migrate_event_inbox_candidate(c);migrate_review_claim_ledger(c)
 def _packets(directory):
@@ -91,7 +98,7 @@ def run(args):
     problem=_identity_problem(packet,raw.get('payload') or {})
     if problem:
      report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':problem,'packet_id':packet['packet_id']});continue
-    policy=_identity_hold_reason(raw['payload'])
+    policy=_identity_hold_reason(raw['payload'],packet.get('proposal'))
     if policy: requested='hold_for_user'
    raw['requested_action']='hold' if requested in {'defer_for_retry','hold_for_user'} else requested
    trusted={'actor_type':'agent','actor_id':args.actor_id,'decision_channel':'llm','decided_at':datetime.now(timezone.utc).isoformat()}

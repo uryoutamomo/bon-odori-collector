@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T04:25:48Z",
-  "generated_for_commit": "0efb933",
+  "generated_at": "2026-08-15T05:38:15Z",
+  "generated_for_commit": "9c6d25e",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -172,7 +172,8 @@
         "INV-RVW-012",
         "INV-RVW-013",
         "INV-RVW-014",
-        "INV-RVW-015"
+        "INV-RVW-015",
+        "INV-RVW-016"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -182,7 +183,7 @@
         "tests/test_e2_identity_judgment.py",
         "tests/test_judgment_j0_read.py"
       ],
-      "updated_for": "28a8012",
+      "updated_for": "0efb933",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -250,8 +251,8 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 3
+        "commits_since": 0,
+        "files_changed_since": 0
       },
       "version": "1.6",
       "revision_count": 7,
@@ -1367,6 +1368,16 @@
         "tests/test_judgment_j0_read.py::test_packet_refreshes_the_candidate_set_from_the_database",
         "tests/test_judgment_j0_read.py::test_a_changed_candidate_set_is_refused_at_ingest",
         "tests/test_judgment_j0_read.py::test_an_unchanged_candidate_set_is_accepted"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-016": {
+      "spec": "L1-review",
+      "title": "名指しされた対象は判定者に見せ、材料の無い候補を「新規」として人へ回さない",
+      "tests": [
+        "tests/test_e2_identity_judgment.py::test_named_occurrence_is_offered_even_without_a_name",
+        "tests/test_e2_identity_judgment.py::test_a_merged_occurrence_is_not_offered",
+        "tests/test_e2_identity_judgment.py::test_no_name_yields_insufficient_evidence_not_new_series"
       ],
       "has_test": true
     },
