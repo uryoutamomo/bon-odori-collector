@@ -1,5 +1,16 @@
 # cleanup script classification for E pass 2
 
+> **⚠️ 2026-08-16 に `legacy/`（153本・32,541行）を削除した。**
+> このドキュメントが名指しするスクリプトは、作業ツリーにはもう存在しない。
+> 記述そのものは当時の事実として正しいので残してある。
+>
+> - 中身を読む: `git show legacy-before-removal:legacy/notion_writes/<name>.py`
+> - 一覧を見る: `git ls-tree -r --name-only legacy-before-removal legacy/`
+> - まとめて戻す: `git checkout legacy-before-removal -- legacy/`
+>
+> `legacy-before-removal` は削除直前を指すタグ。削除しても履歴は消えないので、いつでも読める。
+
+
 作成日: 2026-07-16 JST
 署名: おと（Codex）
 ステータス: 第2段の分類dry-run後、append系52本とbuild系低リスク/移行補助11本を実移動済み。
