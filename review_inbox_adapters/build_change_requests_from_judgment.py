@@ -99,6 +99,9 @@ def build_request(decision, identity: dict[str, str], candidate: dict[str, Any])
         "source": source,
         "note": proposal.get("detail_addendum") or "",
         "decision_id": decision["decision_id"],
+        # 公式・準公式の出典URLつきで今年の開催を確認した経路なので、date_status と同じ確度で扱う。
+        # 明示しないと適用側の既定 "high" が入り、unknown のままの開催回を引き上げ損ねる。
+        "confidence": "confirmed",
     }
     venue = _venue_block(identity, proposal)
     if identity["occurrence_match"] != IDENTITY_MATCH_NONE:

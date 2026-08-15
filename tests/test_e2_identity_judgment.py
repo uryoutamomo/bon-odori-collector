@@ -394,6 +394,64 @@ class VenueIdTest(unittest.TestCase):
             validate_payload({"request_type": "rdb_change_requests", "requests": [{**base, "venue": {}}]})
 
 
+class ConfidenceTest(unittest.TestCase):
+    """確からしさは日付を確認したついでに下がらない。
+
+    2026-08-15 の E2 実地試行で、既存 `confirmed` の開催回9件すべてが `high` へ格下げされた。
+    適用側の既定が "high" で、それを既存値へ無条件に上書きしていたのが原因。
+    """
+
+    def _conn(self, root, confidence):
+        db = root / "master.sqlite"
+        conn = init_db(db)
+        conn.execute("INSERT INTO venues (venue_id, origin, canonical_name, normalized_name, area, address, review_status, created_at, updated_at) VALUES ('ven_seed','curated','試験公園',?,'千代田区','','active',?,?)", (normalize_text("試験公園"), STAMP, STAMP))
+        conn.execute("INSERT INTO event_series (series_id, origin, series_key, canonical_name, normalized_name, usual_venue_id, status, created_at, updated_at) VALUES ('ser_seed','curated',?,'試験盆踊り',?, 'ven_seed','active',?,?)", (normalize_text("試験盆踊り"), normalize_text("試験盆踊り"), STAMP, STAMP))
+        conn.execute("INSERT INTO event_occurrences (occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_start, date_status, lifecycle_status, confidence, created_at, updated_at) VALUES ('occ_seed','curated','ser_seed',2099,1,'試験盆踊り','ven_seed','2099-08-01','confirmed','published',?,?,?)", (confidence, STAMP, STAMP))
+        conn.commit()
+        conn.row_factory = sqlite3.Row
+        return conn
+
+    def _confirm(self, conn, confidence=None):
+        request = {"request_id": "req-c", "change_type": "confirm_current_year_date", "occurrence_id": "occ_seed",
+                   "event_year": 2099, "date_start": "2099-08-02", "date_end": "2099-08-02",
+                   "source": {"url": "https://example.test/c", "kind": "official_current_year"}}
+        if confidence:
+            request["confidence"] = confidence
+        applied, issues = apply_one_request(conn, request, 0, STAMP)
+        self.assertEqual(issues, [])
+        self.assertIsNotNone(applied)
+        return conn.execute("SELECT confidence FROM event_occurrences WHERE occurrence_id='occ_seed'").fetchone()[0]
+
+    def test_confirmed_is_not_downgraded_by_the_default(self):
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(self._confirm(self._conn(Path(temp), "confirmed")), "confirmed")
+
+    def test_unknown_is_raised_by_the_default(self):
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(self._confirm(self._conn(Path(temp), "unknown")), "high")
+
+    def test_an_explicit_higher_confidence_is_applied(self):
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(self._confirm(self._conn(Path(temp), "high"), confidence="confirmed"), "confirmed")
+
+    def test_an_explicit_lower_confidence_does_not_downgrade(self):
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(self._confirm(self._conn(Path(temp), "confirmed"), confidence="medium"), "confirmed")
+
+    def test_a_value_outside_the_rank_table_is_left_alone(self):
+        """superseded のような別軸の値を、日付確認が勝手に書き換えない。"""
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(self._confirm(self._conn(Path(temp), "superseded")), "superseded")
+
+    def test_conversion_asks_for_confirmed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed(root); packet = _packet(root, db)
+            report, args = _apply(root, packet, _identity(packet))
+            self.assertEqual(report["accepted"], 1, report["issues"])
+            _convert_report, payload = _convert(root, args.out_db)
+            self.assertEqual(payload["requests"][0]["confidence"], "confirmed")
+
+
 class ConversionSafetyTest(unittest.TestCase):
     """§7-27〜29：変換層は読むだけ。"""
 

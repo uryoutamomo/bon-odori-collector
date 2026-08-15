@@ -268,6 +268,25 @@ def ensure_series_and_occurrence(
     return {"series_id": series_id, "series_created": series_created, "occurrence_id": occurrence_id, "occurrence_created": created}
 
 
+# 開催回の確からしさの順位。日付や会場を確認しただけで確からしさが下がってはいけない。
+# 実データでは confirmed 253 / unknown 59 / high 49 なので、既定の "high" で上書きすると
+# 確定済みの開催回が静かに格下げされる（2026-08-15 の E2 実地試行で9件すべてに発生した）。
+CONFIDENCE_RANK = {"unknown": 0, "medium": 1, "high": 2, "confirmed": 3}
+
+
+def _kept_confidence(prior, incoming):
+    """確からしさは上げるだけ。順位表に無い値（superseded など）は勝手に触らない。"""
+    if incoming is None:
+        return prior
+    if prior is None:
+        return incoming
+    prior_rank = CONFIDENCE_RANK.get(prior)
+    incoming_rank = CONFIDENCE_RANK.get(incoming)
+    if prior_rank is None or incoming_rank is None:
+        return prior
+    return incoming if incoming_rank >= prior_rank else prior
+
+
 def confirm_occurrence_schedule_venue(
     conn,
     occurrence_id,
@@ -305,12 +324,13 @@ def confirm_occurrence_schedule_venue(
     now = now or now_utc()
     row = _rows(
         conn,
-        "SELECT detail, current_event_state, date_start, date_end FROM event_occurrences WHERE occurrence_id = ?",
+        "SELECT detail, current_event_state, date_start, date_end, confidence FROM event_occurrences WHERE occurrence_id = ?",
         (occurrence_id,),
     )
     if not row:
         raise ValueError(f"occurrence not found: {occurrence_id}")
     prior_detail = row[0]["detail"] or ""
+    confidence = _kept_confidence(row[0]["confidence"], confidence)
 
     new_detail = prior_detail
     if detail_addendum and detail_addendum not in prior_detail:
