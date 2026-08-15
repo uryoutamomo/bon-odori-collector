@@ -37,6 +37,8 @@
     "enabled": true,
     "pilot_only": false,
     "cohort_file": "data/x_event_evidence_cohort.json",
+    "cohort_size": 30,
+    "reselect_after_days": 30,
     "min_account_score": -0.6,
     "lookback_window_days": 3,
     "batch_size": 20,
