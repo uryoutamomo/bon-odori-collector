@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T02:15:14Z",
-  "generated_for_commit": "dcb2f01",
+  "generated_at": "2026-08-15T02:20:19Z",
+  "generated_for_commit": "6036d62",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -1418,11 +1418,11 @@
     },
     "INV-MST-009": {
       "spec": "L1-master",
-      "title": "確からしさは、日付や会場を確認したついでに下がらない",
+      "title": "確からしさは、理由なしに下がらない",
       "tests": [
         "tests/test_e2_identity_judgment.py::test_confirmed_is_not_downgraded_by_the_default",
-        "tests/test_e2_identity_judgment.py::test_unknown_is_raised_by_the_default",
-        "tests/test_e2_identity_judgment.py::test_a_value_outside_the_rank_table_is_left_alone"
+        "tests/test_e2_identity_judgment.py::test_an_explicit_lower_confidence_is_applied",
+        "tests/test_e2_identity_judgment.py::test_a_value_outside_the_rank_table_is_left_alone_by_the_default"
       ],
       "has_test": true
     },

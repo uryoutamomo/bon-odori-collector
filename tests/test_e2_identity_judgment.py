@@ -434,14 +434,20 @@ class ConfidenceTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             self.assertEqual(self._confirm(self._conn(Path(temp), "high"), confidence="confirmed"), "confirmed")
 
-    def test_an_explicit_lower_confidence_does_not_downgrade(self):
+    def test_an_explicit_lower_confidence_is_applied(self):
+        """名指しで下げるのは通す。根拠が覆ったときに下げられないほうが困る。"""
         with tempfile.TemporaryDirectory() as temp:
-            self.assertEqual(self._confirm(self._conn(Path(temp), "confirmed"), confidence="medium"), "confirmed")
+            self.assertEqual(self._confirm(self._conn(Path(temp), "confirmed"), confidence="medium"), "medium")
 
-    def test_a_value_outside_the_rank_table_is_left_alone(self):
-        """superseded のような別軸の値を、日付確認が勝手に書き換えない。"""
+    def test_a_value_outside_the_rank_table_is_left_alone_by_the_default(self):
+        """superseded のような別軸の値を、既定値が勝手に書き換えない。"""
         with tempfile.TemporaryDirectory() as temp:
             self.assertEqual(self._confirm(self._conn(Path(temp), "superseded")), "superseded")
+
+    def test_a_value_outside_the_rank_table_yields_to_an_explicit_one(self):
+        """名指しすれば superseded からも動かせる（順位表は既定値を守るための道具にすぎない）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            self.assertEqual(self._confirm(self._conn(Path(temp), "superseded"), confidence="high"), "high")
 
     def test_conversion_asks_for_confirmed(self):
         with tempfile.TemporaryDirectory() as temp:

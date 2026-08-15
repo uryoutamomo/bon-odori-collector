@@ -268,14 +268,15 @@ def ensure_series_and_occurrence(
     return {"series_id": series_id, "series_created": series_created, "occurrence_id": occurrence_id, "occurrence_created": created}
 
 
-# 開催回の確からしさの順位。日付や会場を確認しただけで確からしさが下がってはいけない。
-# 実データでは confirmed 253 / unknown 59 / high 49 なので、既定の "high" で上書きすると
-# 確定済みの開催回が静かに格下げされる（2026-08-15 の E2 実地試行で9件すべてに発生した）。
+# 開催回の確からしさの順位。下げること自体は正しい場合がある（根拠が覆った、疑わしいと分かった）
+# ので禁じない。禁じるのは「呼び出し側が何も指定しなかったときの既定値」で静かに下がることだけ。
+# 実データでは confirmed 253 / unknown 59 / high 49 なので、既定の "high" が確定済みの開催回を
+# 上書きすると理由のない格下げになる（2026-08-15 の E2 実地試行で9件すべてに発生した）。
 CONFIDENCE_RANK = {"unknown": 0, "medium": 1, "high": 2, "confirmed": 3}
 
 
 def _kept_confidence(prior, incoming):
-    """確からしさは上げるだけ。順位表に無い値（superseded など）は勝手に触らない。"""
+    """既定値での上書きから既存を守る。順位表に無い値（superseded など）は勝手に触らない。"""
     if incoming is None:
         return prior
     if prior is None:
@@ -297,6 +298,7 @@ def confirm_occurrence_schedule_venue(
     date_status="confirmed",
     lifecycle_status="published",
     confidence="high",
+    confidence_is_explicit=False,
     source_kind=None,
     detail_addendum=None,
     detail_replacement=None,
@@ -330,7 +332,10 @@ def confirm_occurrence_schedule_venue(
     if not row:
         raise ValueError(f"occurrence not found: {occurrence_id}")
     prior_detail = row[0]["detail"] or ""
-    confidence = _kept_confidence(row[0]["confidence"], confidence)
+    # 呼び出し側が確からしさを名指ししたなら、下げる指定もそのまま通す（下げる理由があるということ）。
+    # 名指ししていないときだけ、既定値が既存を上書きしないように守る。
+    if not confidence_is_explicit:
+        confidence = _kept_confidence(row[0]["confidence"], confidence)
 
     new_detail = prior_detail
     if detail_addendum and detail_addendum not in prior_detail:
