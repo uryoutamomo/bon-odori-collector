@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T02:20:19Z",
-  "generated_for_commit": "6036d62",
+  "generated_at": "2026-08-15T02:22:41Z",
+  "generated_for_commit": "28a8012",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -365,12 +365,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 3,
         "files_changed_since": 2
       },
-      "version": "1.6",
-      "revision_count": 7,
+      "version": "1.7",
+      "revision_count": 8,
       "history": [
+        {
+          "commit": "28a8012",
+          "date": "2026-08-15",
+          "subject": "確からしさは名指しなら下げられるようにする（#211 の直し過ぎを戻す） (#212)"
+        },
         {
           "commit": "dcb2f01",
           "date": "2026-08-15",
