@@ -28,6 +28,7 @@ invariants:
   - INV-MST-006
   - INV-MST-007
   - INV-MST-008
+  - INV-MST-009
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -164,6 +165,14 @@ updated_for: 02f5f76
 - **破れたときの症状**: 新規登録したはずが既存の開催回の日付・会場が変わる。同じ会場が2行に増える。
 - **守っているコード**: `report_apply/apply_change_requests.py` の `apply_create_event_series()` と `_resolve_venue()`
 - **守っているテスト**: `tests/test_e2_identity_judgment.py::test_create_event_series_never_touches_an_existing_series`、`tests/test_e2_identity_judgment.py::test_duplicate_series_key_is_refused`、`tests/test_e2_identity_judgment.py::test_update_venue_by_id_creates_no_venue_row`
+
+### INV-MST-009 確からしさは、日付や会場を確認したついでに下がらない
+
+- **内容**: `confirm_occurrence_schedule_venue()` は `event_occurrences.confidence` を上げるか据え置くだけで、下げない。順位は `unknown < medium < high < confirmed` とし、順位表に無い値（`superseded` など）は書き換えない。
+- **なぜ**: 呼び出し側の既定が `"high"` で、それを既存値へ無条件に上書きしていた。実データは confirmed 253 / unknown 59 / high 49 なので、**確定済みの開催回が「日付を確認しただけ」で静かに格下げされる**。2026-08-15 の E2 実地試行では、適用した9件すべてで `confirmed → high` が起きた。確からしさを下げる操作は、下げると決めたときにだけ行われるべきである。
+- **破れたときの症状**: 情報を足すほど確からしさが下がる。公開側の扱いが理由なく変わる。
+- **守っているコード**: `report_apply/event_report_helpers.py` の `_kept_confidence()` と `CONFIDENCE_RANK`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_confirmed_is_not_downgraded_by_the_default`、`tests/test_e2_identity_judgment.py::test_unknown_is_raised_by_the_default`、`tests/test_e2_identity_judgment.py::test_a_value_outside_the_rank_table_is_left_alone`
 
 ## 主要な流れ
 
