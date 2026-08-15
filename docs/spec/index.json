@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T02:22:41Z",
-  "generated_for_commit": "28a8012",
+  "generated_at": "2026-08-15T04:22:54Z",
+  "generated_for_commit": "4569477",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -171,16 +171,18 @@
         "INV-RVW-011",
         "INV-RVW-012",
         "INV-RVW-013",
-        "INV-RVW-014"
+        "INV-RVW-014",
+        "INV-RVW-015"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
         "tests/test_promote_change_requests_for_review.py",
         "tests/test_judgment_j0_adjudication.py",
         "tests/test_e0b_bridge.py",
-        "tests/test_e2_identity_judgment.py"
+        "tests/test_e2_identity_judgment.py",
+        "tests/test_judgment_j0_read.py"
       ],
-      "updated_for": "02f5f76",
+      "updated_for": "28a8012",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -248,8 +250,8 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 3
+        "commits_since": 0,
+        "files_changed_since": 0
       },
       "version": "1.5",
       "revision_count": 6,
@@ -1350,6 +1352,16 @@
         "tests/test_e2_identity_judgment.py::test_identity_outside_the_candidate_set_is_rejected",
         "tests/test_e2_identity_judgment.py::test_series_match_conflicting_with_occurrence_is_rejected",
         "tests/test_e2_identity_judgment.py::test_new_confirmation_hold_needs_no_target_and_can_be_batched"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-015": {
+      "spec": "L1-review",
+      "title": "判定に見せる候補集合は判定直前に引き直し、取り込み時に照合する",
+      "tests": [
+        "tests/test_judgment_j0_read.py::test_packet_refreshes_the_candidate_set_from_the_database",
+        "tests/test_judgment_j0_read.py::test_a_changed_candidate_set_is_refused_at_ingest",
+        "tests/test_judgment_j0_read.py::test_an_unchanged_candidate_set_is_accepted"
       ],
       "has_test": true
     },

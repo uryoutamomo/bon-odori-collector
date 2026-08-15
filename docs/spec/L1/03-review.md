@@ -45,13 +45,15 @@ invariants:
   - INV-RVW-012
   - INV-RVW-013
   - INV-RVW-014
+  - INV-RVW-015
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
   - tests/test_judgment_j0_adjudication.py
   - tests/test_e0b_bridge.py
   - tests/test_e2_identity_judgment.py
-updated_for: 02f5f76
+  - tests/test_judgment_j0_read.py
+updated_for: 28a8012
 ---
 
 # 人のレビュー運用サブシステム
@@ -204,6 +206,14 @@ updated_for: 02f5f76
 - **破れたときの症状**: 無関係の行事に日付や会場が付く。裁定画面で選べない対象を要求される。
 - **守っているコード**: `review_inbox_adapters/apply_judgment_results.py` の `_identity_problem()` と `candidate_ids` の決定
 - **守っているテスト**: `tests/test_e2_identity_judgment.py::test_identity_outside_the_candidate_set_is_rejected`、`tests/test_e2_identity_judgment.py::test_series_match_conflicting_with_occurrence_is_rejected`、`tests/test_e2_identity_judgment.py::test_new_confirmation_hold_needs_no_target_and_can_be_batched`
+
+### INV-RVW-015 判定に見せる候補集合は判定直前に引き直し、取り込み時に照合する
+
+- **内容**: 判定用パケットの `targets` は、E0 が候補化した時点のものではなく**パケット生成時にDBから引き直す**。パケットは候補集合の指紋（`candidate_set_sha256`）を持ち、取り込み時に同じ検索をやり直して照合する。一致しなければ `candidate_set_changed` で受け取らない。
+- **なぜ**: 候補集合は `source_payload_hash`（提案の中身）の材料ではないので、**E0 を何度回しても更新されない**。候補化から判定までに日が空くほど古くなり、日次収集で開催回が増えていても判定者には見えない。既存の陳腐化検査は提案の中身しか見ないため、古い候補集合での判断がそのまま通る。2026-08-15 の実地試行では、8日前のコピーで判定した20件のうち**10件が「どれとも違う（＝新規）」と誤判定**され、そのまま入れていれば重複イベントが10件生まれていた（系列の統合はまだ無く、取り消せない）。
+- **破れたときの症状**: 既にあるイベントが「新規」と判断され、重複した系列が増える。判断の根拠になった候補集合が、実際の状態と食い違う。
+- **守っているコード**: `review_inbox_adapters/build_judgment_packets.py` の `refreshed_row()` と `candidate_set_hash()`、`apply_judgment_results.py` の照合
+- **守っているテスト**: `tests/test_judgment_j0_read.py::test_packet_refreshes_the_candidate_set_from_the_database`、`tests/test_judgment_j0_read.py::test_a_changed_candidate_set_is_refused_at_ingest`、`tests/test_judgment_j0_read.py::test_an_unchanged_candidate_set_is_accepted`
 
 ## 主要な流れ
 

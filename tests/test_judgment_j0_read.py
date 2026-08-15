@@ -124,6 +124,59 @@ class JudgmentJ0ReadTest(unittest.TestCase):
         self.assertEqual(candidate["window_end"], (when+timedelta(days=10)).isoformat())
         self.assertEqual(candidate["next_eligible_at"], candidate["window_end"])
 
+    # --- 候補集合の鮮度（2026-08-15 の実地試行で見つかった穴の回帰） ---
+
+    def _one_packet(self, root, db):
+        build=build_packets(self._packet_args(root,db))
+        return json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+
+    def test_packet_carries_the_candidate_set_fingerprint(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root,existing=True)
+            packet=self._one_packet(root,db)
+            self.assertEqual(packet["candidate_set_sha256"], packet_builder.candidate_set_hash(packet["targets"]))
+
+    def test_packet_refreshes_the_candidate_set_from_the_database(self):
+        """E0 が候補化した時点の候補集合が古くても、パケットは今のDBから引き直す。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root,existing=True)
+            conn=sqlite3.connect(db)
+            inbox_id,payload_json=conn.execute("SELECT inbox_id,payload_json FROM review_inbox_items WHERE kind='event_candidate'").fetchone()
+            stale=json.loads(payload_json); stale["targets"]["occurrence_candidates"]=[]; stale["targets"]["venue_candidates"]=[]
+            conn.execute("UPDATE review_inbox_items SET payload_json=? WHERE inbox_id=?",(json.dumps(stale,ensure_ascii=False),inbox_id))
+            conn.commit(); conn.close()
+            packet=self._one_packet(root,db)
+            self.assertTrue(packet["targets"]["occurrence_candidates"], "古い空の候補集合をそのまま渡してはいけない")
+            self.assertEqual(packet["targets"]["occurrence_candidates"][0]["occurrence_id"], "occ_seed")
+
+    def test_a_changed_candidate_set_is_refused_at_ingest(self):
+        """判定してから取り込むまでに候補集合が変われば、その判断は別の問いへの答えなので通さない。
+
+        2026-08-15 の実地試行では、8日前のコピーで作ったパケットの判定を本番へ入れようとした。
+        提案の中身は同じなので既存の陳腐化検査は通り、「新規」と答えた10件がそのまま重複を
+        作る一歩手前だった。
+        """
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root,existing=True)
+            packet=self._one_packet(root,db)
+            args=self._result_args(root,packet,payload=self._identity(packet))
+            stamp="2026-01-01T00:00:00+00:00"
+            conn=sqlite3.connect(args.db)
+            conn.execute("INSERT INTO event_occurrences (occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_start, date_status, lifecycle_status, created_at, updated_at) VALUES ('occ_late','curated','ser_seed',2099,2,'試験盆踊り','ven_seed','2099-08-03','confirmed','published',?,?)",(stamp,stamp))
+            conn.commit(); conn.close()
+            report=apply_results(args)
+            self.assertEqual(report["accepted"],0)
+            self.assertEqual(report["rejected_result"],1)
+            self.assertEqual(report["issues"][0]["issue_type"],"candidate_set_changed")
+
+    def test_an_unchanged_candidate_set_is_accepted(self):
+        """弾きすぎないこと。候補集合が動いていなければ普通に通る。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); db=self._seed(root,existing=True)
+            packet=self._one_packet(root,db)
+            report=apply_results(self._result_args(root,packet,payload=self._identity(packet)))
+            self.assertEqual((report["accepted"],report["rejected_result"]),(1,0))
+
     def test_packet_apply_requires_its_own_confirmation(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp); db=self._seed(root); args=self._packet_args(root,db); args.apply=True; args.confirm=""
@@ -163,12 +216,18 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     # --- §9 の未カバー分（こと、2026-08-14）。対応表 docs/local-judgment-j0-read-test-coverage.md を同時に更新すること ---
 
     def _inject_occurrence_candidate(self, db, occurrence_id="occ-test"):
-        """候補集合だけ差し替える。targets は source_payload_hash の材料ではないので改訂にはならない（E0 §3.4）。"""
+        """候補として拾われる開催回を実際に作る。
+
+        以前は review_inbox_items.payload_json の targets を直接差し替えていた（targets は
+        source_payload_hash の材料ではないので改訂にならない、という性質を利用していた）。
+        パケット生成が候補集合を引き直すようになったので、DBに実在させないと候補にならない。
+        """
         conn=sqlite3.connect(db); conn.row_factory=sqlite3.Row
-        row=conn.execute("SELECT inbox_id,payload_json FROM review_inbox_items WHERE kind='event_candidate'").fetchone()
-        payload=json.loads(row["payload_json"])
-        payload["targets"]["occurrence_candidates"]=[{"occurrence_id":occurrence_id,"series_id":"ser-test","display_name":"試験盆踊り","match_score":0.5}]
-        conn.execute("UPDATE review_inbox_items SET payload_json=? WHERE inbox_id=?",(json.dumps(payload,ensure_ascii=False),row["inbox_id"]))
+        stamp="2026-01-01T00:00:00+00:00"
+        conn.execute("INSERT OR IGNORE INTO venues (venue_id, origin, canonical_name, normalized_name, area, address, review_status, created_at, updated_at) VALUES ('ven-test','curated','試験公園',?,'千代田区','','active',?,?)", (normalize_text("試験公園"), stamp, stamp))
+        conn.execute("INSERT OR IGNORE INTO event_series (series_id, origin, series_key, canonical_name, normalized_name, usual_venue_id, status, created_at, updated_at) VALUES ('ser-test','curated',?,'試験盆踊り',?, 'ven-test','active',?,?)", (normalize_text("試験盆踊り"), normalize_text("試験盆踊り"), stamp, stamp))
+        conn.execute("INSERT OR IGNORE INTO event_occurrences (occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_start, date_status, lifecycle_status, created_at, updated_at) VALUES (?, 'curated','ser-test',2099,1,'試験盆踊り','ven-test','2099-08-01','confirmed','published',?,?)", (occurrence_id, stamp, stamp))
+        row=conn.execute("SELECT inbox_id FROM review_inbox_items WHERE kind='event_candidate'").fetchone()
         conn.commit(); inbox_id=row["inbox_id"]; conn.close(); return inbox_id
 
     def _set_queue_state(self, db, inbox_id, state):

@@ -7,10 +7,19 @@ from event_model.local_judgment_migration import migrate_local_judgment_contract
 from master_rdb.master_db import MASTER_DB,connect_existing,stable_id
 from operation_safety.manual_apply_guards import require_confirmation
 from report_apply.rdb_apply_support import copy_db
+from review_inbox_adapters.build_event_inbox_candidates import search_targets
 from review_inbox_adapters.local_judgment_contract import ACTION_REGISTRY,REASON_CODE_HOLD_MODE,sha256_hex
 
 PACKET_CALCULATION_VERSION="judgment-packet/v1"
 JUDGMENT_PACKET_CONFIRMATION="APPLY JUDGMENT PACKETS"
+
+
+def candidate_set_hash(targets):
+    """判定者へ提示した候補集合の指紋。順位も判断材料なので順序ごと含める。"""
+    return sha256_hex({
+        "occurrence_ids": [x["occurrence_id"] for x in (targets or {}).get("occurrence_candidates", [])],
+        "venue_ids": [x["venue_id"] for x in (targets or {}).get("venue_candidates", []) if x.get("venue_id")],
+    })
 def now(): return datetime.now(timezone.utc)
 def _migrate(c):
     migrate_local_judgment_contract(c);migrate_event_inbox_candidate(c);migrate_review_claim_ledger(c)
@@ -18,6 +27,19 @@ def allowed(domain,lane):
     out=[a for (d,l,a),v in ACTION_REGISTRY.items() if (d,l)==(domain,lane) and "agent" in v["allowed_actor_types"]]
     expanded=[x for x in out if x!="hold"]
     return expanded+(["defer_for_retry","hold_for_user"] if "hold" in out else [])
+def refreshed_row(conn,row,when):
+    """候補集合を今のDBから引き直した row を返す。
+
+    E0 が候補を作った時点の候補集合は、提案の中身が変わらない限り更新されない。候補化から
+    判定までに日が空くほど古くなり、2026-08-15 の実地試行では8日前のコピーで判定した20件の
+    うち10件が「どれとも違う（新規）」と誤判定され、重複イベントを作る一歩手前まで行った。
+    """
+    payload=json.loads(row["payload_json"])
+    payload["targets"]=search_targets(conn,payload["proposal"],row["contract_lane"],when)
+    refreshed=dict(row); refreshed["payload_json"]=json.dumps(payload,ensure_ascii=False)
+    return refreshed
+
+
 def make_packet(row,when):
     p=json.loads(row["payload_json"]); pid=stable_id("packet",row["inbox_id"],row["source_payload_hash"],PACKET_CALCULATION_VERSION)
     occ=[x["occurrence_id"] for x in p.get("targets",{}).get("occurrence_candidates",[])][:8]; ev=p.get("evidence_ids",[])
@@ -29,7 +51,7 @@ def make_packet(row,when):
     retry=[] if reason else [{"candidate_id":stable_id("retry",row["inbox_id"],"v1"),"next_eligible_at":min(when+timedelta(days=14),end).isoformat(),"window_start":start.isoformat(),"window_end":end.isoformat(),"occurrence_ids":occ,"evidence_ids":ev,"retrieved_at":when.isoformat(),"calculation_version":"retry-window/v1","input_hash":sha256_hex({"inbox_id":row["inbox_id"],"occurrence_ids":occ,"evidence_ids":ev})}]
     actions=allowed(row["contract_domain"],row["contract_lane"])
     if reason: actions=[action for action in actions if action!="defer_for_retry"]
-    return {"packet_version":1,"packet_id":pid,"inbox_id":row["inbox_id"],"domain":row["contract_domain"],"lane":row["contract_lane"],"source_id":row["source_id"],"source_key":row["source_key"],"source_payload_hash":row["source_payload_hash"],"generated_at":when.isoformat(),"expires_at":row["expires_at"],"proposal":p["proposal"],"targets":p["targets"],"resolved_target":p.get("resolved_target"),"evidence":[{"evidence_id":x,"source_url":row["source_url"],"excerpt":p.get("raw_excerpt",""),"retrieved_at":p["targets"]["retrieved_at"]} for x in ev],"retry_candidates":retry,"retry_unavailable_reason":reason,"allowed_actions":actions,"reason_codes":REASON_CODE_HOLD_MODE}
+    return {"packet_version":1,"packet_id":pid,"inbox_id":row["inbox_id"],"domain":row["contract_domain"],"lane":row["contract_lane"],"source_id":row["source_id"],"source_key":row["source_key"],"source_payload_hash":row["source_payload_hash"],"generated_at":when.isoformat(),"expires_at":row["expires_at"],"proposal":p["proposal"],"targets":p["targets"],"resolved_target":p.get("resolved_target"),"evidence":[{"evidence_id":x,"source_url":row["source_url"],"excerpt":p.get("raw_excerpt",""),"retrieved_at":p["targets"]["retrieved_at"]} for x in ev],"retry_candidates":retry,"retry_unavailable_reason":reason,"allowed_actions":actions,"reason_codes":REASON_CODE_HOLD_MODE,"candidate_set_sha256":candidate_set_hash(p["targets"])}
 def run(args):
     if not args.actor_id: raise ValueError("actor_id is required")
     if args.apply: require_confirmation(True,args.confirm,JUDGMENT_PACKET_CONFIRMATION,"build_judgment_packets.py --apply")
@@ -56,7 +78,7 @@ def run(args):
             if reason: excluded.append({"inbox_id":r["inbox_id"],"reason":reason});continue
             if len(packets)>=args.max_packets: continue
             if r["claimed_by"] and datetime.fromisoformat(r["claim_expires"])>t and r["claimed_by"]!=args.actor_id and args.force_claim: force_claimed.append(r["inbox_id"])
-            packet=make_packet(r,t); c.execute("INSERT INTO review_claim_ledger(inbox_id,claimed_by,claim_kind,claimed_at,expires_at,batch_id) VALUES (?,?,?,?,?,?) ON CONFLICT(inbox_id) DO UPDATE SET claimed_by=excluded.claimed_by,claim_kind=excluded.claim_kind,claimed_at=excluded.claimed_at,expires_at=excluded.expires_at,batch_id=excluded.batch_id",(r["inbox_id"],args.actor_id,"agent",t.isoformat(),(t+timedelta(minutes=args.lease_minutes)).isoformat(),"pending"));packets.append(packet)
+            packet=make_packet(refreshed_row(c,r,t),t); c.execute("INSERT INTO review_claim_ledger(inbox_id,claimed_by,claim_kind,claimed_at,expires_at,batch_id) VALUES (?,?,?,?,?,?) ON CONFLICT(inbox_id) DO UPDATE SET claimed_by=excluded.claimed_by,claim_kind=excluded.claim_kind,claimed_at=excluded.claimed_at,expires_at=excluded.expires_at,batch_id=excluded.batch_id",(r["inbox_id"],args.actor_id,"agent",t.isoformat(),(t+timedelta(minutes=args.lease_minutes)).isoformat(),"pending"));packets.append(packet)
         c.commit()
     args.out_dir.mkdir(parents=True,exist_ok=True); batches=[]
     for n in range(0,len(packets),args.batch_size):
