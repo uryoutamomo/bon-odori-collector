@@ -8,9 +8,34 @@ from master_rdb.master_db import MASTER_DB,connect_existing,stable_id
 from operation_safety.manual_apply_guards import require_confirmation
 from report_apply.rdb_apply_support import copy_db
 from review_inbox_adapters.local_judgment_contract import canonicalize_raw_judgment,build_agent_terminal_decision,build_canonical_hold,REASON_CODE_HOLD_MODE
-from review_inbox_adapters.local_judgment_contract import ContractError
+from review_inbox_adapters.local_judgment_contract import ContractError,IDENTITY_LANES,IDENTITY_MATCH_NONE,IDENTITY_PAYLOAD_FIELDS
 from review_inbox_adapters.judgment_ledger_writer import write_decision
 JUDGMENT_RESULT_CONFIRMATION='APPLY JUDGMENT RESULTS'
+IDENTITY_FIELDS=('occurrence_match','series_match','venue_match')
+NEW_SERIES_REASON='new_series_requires_confirmation'
+NEW_VENUE_REASON='new_venue_requires_confirmation'
+def _identity_problem(packet,payload):
+ """同一性の答えを機械が検算する。LLMには候補から選ぶ以上のことをさせない。"""
+ targets=packet.get('targets') or {}
+ occurrences={x['occurrence_id']:x for x in targets.get('occurrence_candidates',[]) if x.get('occurrence_id')}
+ series={x.get('series_id') for x in occurrences.values() if x.get('series_id')}
+ venues={x['venue_id'] for x in targets.get('venue_candidates',[]) if x.get('venue_id')}
+ for field in IDENTITY_FIELDS:
+  if not isinstance(payload.get(field),str) or not payload[field]: return f'{field}_missing'
+ if payload['occurrence_match']!=IDENTITY_MATCH_NONE and payload['occurrence_match'] not in occurrences: return 'occurrence_match_not_a_candidate'
+ if payload['series_match']!=IDENTITY_MATCH_NONE and payload['series_match'] not in series: return 'series_match_not_a_candidate'
+ if payload['venue_match']!=IDENTITY_MATCH_NONE and payload['venue_match'] not in venues: return 'venue_match_not_a_candidate'
+ if payload['occurrence_match']!=IDENTITY_MATCH_NONE and payload['series_match']!=occurrences[payload['occurrence_match']].get('series_id'): return 'series_match_conflicts_with_occurrence'
+ return None
+def _identity_hold_reason(payload):
+ """新しい系列・会場が生まれる答えは人の確認へ回す。統合の仕組みが無く取り消せないため。
+
+ 保留にするのは機械側の運用ポリシーで、LLMの判断そのものは payload にそのまま残る。
+ 統合が実装されたらこの関数を外すだけでよく、LLMへの指示は変えずに済む。
+ """
+ if payload['series_match']==IDENTITY_MATCH_NONE: return NEW_SERIES_REASON
+ if payload['venue_match']==IDENTITY_MATCH_NONE: return NEW_VENUE_REASON
+ return None
 def _migrate(c):migrate_local_judgment_contract(c);migrate_event_inbox_candidate(c);migrate_review_claim_ledger(c)
 def _packets(directory):
  out={}
@@ -53,16 +78,25 @@ def run(args):
    row=c.execute('SELECT source_payload_hash,status FROM review_inbox_items WHERE inbox_id=?',(packet['inbox_id'],)).fetchone()
    if not row or row['source_payload_hash']!=packet['source_payload_hash']:
     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':'packet_stale','packet_id':packet['packet_id']});continue
-   requested=result['requested_action']; raw=dict(result); raw['requested_action']='hold' if requested in {'defer_for_retry','hold_for_user'} else requested
+   requested=result['requested_action']; raw=dict(result); policy=None
+   if requested=='accept' and (packet['domain'],packet['lane']) in IDENTITY_LANES:
+    problem=_identity_problem(packet,raw.get('payload') or {})
+    if problem:
+     report['rejected_result']+=1;report['issues'].append({'severity':'medium','issue_type':problem,'packet_id':packet['packet_id']});continue
+    policy=_identity_hold_reason(raw['payload'])
+    if policy: requested='hold_for_user'
+   raw['requested_action']='hold' if requested in {'defer_for_retry','hold_for_user'} else requested
    trusted={'actor_type':'agent','actor_id':args.actor_id,'decision_channel':'llm','decided_at':datetime.now(timezone.utc).isoformat()}
    try:
     normalized=canonicalize_raw_judgment(raw,trusted_actor=trusted)
     if requested in {'defer_for_retry','hold_for_user'}:
-     code=result.get('reason_code'); mode=REASON_CODE_HOLD_MODE.get(code)
+     code=policy or result.get('reason_code'); mode=REASON_CODE_HOLD_MODE.get(code)
      expected_mode='deferred_retry' if requested=='defer_for_retry' else 'awaiting_user'
      if mode!=expected_mode:raise ValueError('hold_mode_mismatch')
      decision=build_canonical_hold(normalized,reason_code=code,retry_candidates=packet['retry_candidates'],selected_candidate_id=result.get('selected_retry_candidate_id'))
-     candidate_ids=[x['occurrence_id'] for x in packet['targets'].get('occurrence_candidates',[])] if mode=='awaiting_user' else None
+     # 新規確認の保留は「どれを選ぶか」ではないので候補集合を凍結しない。空にすると裁定画面が
+     # 対象IDを要求せず、同じ理由の保留をまとめて裁ける（何を見て none と答えたかは packet に残る）。
+     candidate_ids=[] if policy else ([x['occurrence_id'] for x in packet['targets'].get('occurrence_candidates',[])] if mode=='awaiting_user' else None)
     else: decision=build_agent_terminal_decision(normalized);candidate_ids=None
     c.execute('BEGIN'); outcome=write_decision(c,decision,candidate_ids=candidate_ids);c.commit()
     key={'accept':'accepted','reject':'rejected','hold_for_user':'held_for_user','defer_for_retry':'deferred_for_retry'}[requested] if outcome=='written' else 'noop';report[key]+=1;report['entries'].append({'inbox_id':decision['inbox_id'],'decision_id':decision['decision_id'],'action':decision['action'],'reason_code':decision['reason_code']})

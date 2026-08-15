@@ -150,7 +150,7 @@ class ApplyChangeRequestsTests(unittest.TestCase):
 
         with self.assertRaisesRegex(
             ValueError,
-            "missing required field: name.*requires kind.*date_start must be in event_year",
+            "requires venue_id or name.*requires kind.*date_start must be in event_year",
         ):
             validate_payload(payload)
 

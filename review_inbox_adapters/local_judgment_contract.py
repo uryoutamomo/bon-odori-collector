@@ -30,6 +30,10 @@ REASON_CODE_HOLD_MODE = {
     "insufficient_evidence": "awaiting_user",
     "distinct_event_uncertain": "awaiting_user",
     "publication_scope_needed": "awaiting_user",
+    # E2: the agent answered "none of these", so a new row would be created. Series merges do not
+    # exist yet, so a duplicate series or venue cannot be undone -- the user confirms it first.
+    "new_series_requires_confirmation": "awaiting_user",
+    "new_venue_requires_confirmation": "awaiting_user",
 }
 LANES = {
     ("event", "event_create"): "series",
@@ -45,18 +49,32 @@ ACTION_DEFINITIONS = {
 }
 COMMON_PAYLOAD_FIELDS = {"target_id", "reason_detail", "evidence_class"}
 REQUEUE_PAYLOAD_FIELDS = {"hold_id", "released_at", "next_eligible_at"}
+# E2: the event lanes ask identity only -- which existing row this candidate already is, or the
+# literal "none". Names, dates and venue text stay out of the payload: E0 already extracted them,
+# so letting the agent restate them would create a second, disagreeing copy of the same facts.
+IDENTITY_MATCH_NONE = "none"
+IDENTITY_PAYLOAD_FIELDS = {"occurrence_match", "series_match", "venue_match"}
+IDENTITY_LANES = frozenset({("event", "event_create"), ("event", "event_update")})
+IDENTITY_PAYLOAD_ACTIONS = frozenset({"accept", "hold"})
 
-# Tuple-keyed data registry. E2a/T2 can append domain actions without changing
-# transition validation code.
+
+def _payload_fields(domain: str, lane: str, action: str) -> frozenset[str]:
+    if action == "requeue":
+        return frozenset(REQUEUE_PAYLOAD_FIELDS)
+    if (domain, lane) in IDENTITY_LANES and action in IDENTITY_PAYLOAD_ACTIONS:
+        return frozenset(COMMON_PAYLOAD_FIELDS | IDENTITY_PAYLOAD_FIELDS)
+    return frozenset(COMMON_PAYLOAD_FIELDS)
+
+
+# Tuple-keyed data registry. Domain payloads are added per lane; the action vocabulary and the
+# transition table stay as they are, because the machine -- not the agent -- picks the change type.
 ACTION_REGISTRY = {
     (domain, lane, action): {
         "label_ja": label,
         "terminal": terminal,
         "allowed_actor_types": frozenset(actors),
         "required_target_type": target_type,
-        "allowed_payload_fields": frozenset(
-            REQUEUE_PAYLOAD_FIELDS if action == "requeue" else COMMON_PAYLOAD_FIELDS
-        ),
+        "allowed_payload_fields": _payload_fields(domain, lane, action),
     }
     for (domain, lane), target_type in LANES.items()
     for action, (label, terminal, actors) in ACTION_DEFINITIONS.items()
