@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T04:22:54Z",
-  "generated_for_commit": "4569477",
+  "generated_at": "2026-08-15T04:25:48Z",
+  "generated_for_commit": "0efb933",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -250,12 +250,17 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 3
       },
-      "version": "1.5",
-      "revision_count": 6,
+      "version": "1.6",
+      "revision_count": 7,
       "history": [
+        {
+          "commit": "0efb933",
+          "date": "2026-08-15",
+          "subject": "判定に見せる候補集合を判定直前に引き直し、取り込み時に照合する (#213)"
+        },
         {
           "commit": "a40d7c4",
           "date": "2026-08-15",
