@@ -1,15 +1,15 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-08-14T20:29:57.088707+00:00
+- generated_at: 2026-08-15T20:20:24.878888+00:00
 - status: harvested_until_quota_limited
 - month: 6
-- selected_rows: 50
-- completed_batches: 49
+- selected_rows: 53
+- completed_batches: 52
 - remaining_rows_before: 93
-- remaining_rows_after: 44
-- estimated_search_calls: 100
+- remaining_rows_after: 41
+- estimated_search_calls: 106
 - candidates_before: 581
-- candidates_after: 581
+- candidates_after: 582
 - strong_after: 183
 - review_after: 48
 - schedule_rule_count: 13
@@ -74,6 +74,9 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | low | 8 | 2024 | 下代田東町会 「下代田東子供祭り・納涼祭り」 | 下代田児童遊園 | 2025-07-19 |
 | low | 8 | 2024 | 下落合四丁目町会 盆踊り大会 | 下落合公園 | 2025-07-19 |
 | low | 8 | 2024 | 下落合町会知久会 第9回盆踊り | 清水川橋公園 | 2025-07-19 |
+| low | 8 | 2024 | 砧町町会「納涼夏祭り大会」 | 三峰公園 | 2025-07-19 |
+| low | 8 | 2024 | 西糀谷四丁目町会 盆踊り大会 | 西仲天祖神社 | 2025-07-21 |
+| low | 8 | 2024 | 玉川町会盆おどり大会 | 二子玉川西地区ふれあい広場(246高架下) | 2025-07-25 |
 
 ## batches
 
@@ -119,12 +122,15 @@ HTTP Error 429: Too Many Requests (rateLimitExceeded)
 | 38 | 1 | 581 | 183 | 48 |
 | 39 | 1 | 581 | 183 | 48 |
 | 40 | 1 | 581 | 183 | 48 |
-| 41 | 1 | 581 | 183 | 48 |
-| 42 | 1 | 581 | 183 | 48 |
-| 43 | 1 | 581 | 183 | 48 |
-| 44 | 1 | 581 | 183 | 48 |
-| 45 | 1 | 581 | 183 | 48 |
-| 46 | 1 | 581 | 183 | 48 |
-| 47 | 1 | 581 | 183 | 48 |
-| 48 | 1 | 581 | 183 | 48 |
-| 49 | 1 | 581 | 183 | 48 |
+| 41 | 1 | 582 | 183 | 48 |
+| 42 | 1 | 582 | 183 | 48 |
+| 43 | 1 | 582 | 183 | 48 |
+| 44 | 1 | 582 | 183 | 48 |
+| 45 | 1 | 582 | 183 | 48 |
+| 46 | 1 | 582 | 183 | 48 |
+| 47 | 1 | 582 | 183 | 48 |
+| 48 | 1 | 582 | 183 | 48 |
+| 49 | 1 | 582 | 183 | 48 |
+| 50 | 1 | 582 | 183 | 48 |
+| 51 | 1 | 582 | 183 | 48 |
+| 52 | 1 | 582 | 183 | 48 |

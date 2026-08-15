@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-14T20:30:24.256989+00:00",
+  "generated_at": "2026-08-15T20:20:53.473968+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 581,
+    "candidate_count": 582,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 350
+      "weak": 351
     },
     "strong_count": 183,
     "review_count": 48
@@ -26770,7 +26770,7 @@
       "channel_title": "EverlyOfficialEverly",
       "published_at": "2023-05-26T06:30:26Z",
       "thumbnail_url": "https://i.ytimg.com/vi/jf8kbS2uuzg/maxresdefault.jpg",
-      "query": "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
+      "query": "戸越宮前盆踊り 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "2023.5/26 ★Everlyコンサート2023 6/17小金井宮地楽器ホール・大ホール 7/16和光市民文化センター・大ホール 7/17武蔵野市民文化会館・大ホール ■Everlyトークルーム「魔法の時間」へのお便りは、メール info.everly.jp@gmail.comまで ・メッセージ ・リクエスト ・なかそ涅槃のお悩みコーナーへのお悩み相談内容 など #JAPAN #PubicElementarySchool"
@@ -27348,7 +27348,7 @@
       "channel_title": "山崎茂雄",
       "published_at": "2023-06-12T15:12:55Z",
       "thumbnail_url": "https://i.ytimg.com/vi/F2vhFFrsldo/maxresdefault.jpg",
-      "query": "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
+      "query": "戸越宮前盆踊り 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "​ @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
@@ -27643,6 +27643,30 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "#夏祭り #盆踊り #音頭 寶珠音頭 一、 桜 咲く 咲く 春の日に くるり回した 寳珠の輪 病める日々を 乗り越えた 本源 本当にありがとう 元気に生きる 感謝を胸に 寳珠の花を 寳珠の花を 世界の友に 二、 陽光(ひかり) 眩しい 夏の日に くるり回した 寳珠の輪 悩んだ日々を 乗り越えた 本源 本当にありがとう 明るく生きる 感謝を胸に 寳珠の花を寳珠の花を 世界の友に 三、 紅葉 (もみじ) 織りなす 秋の日に くるり回した 寳珠の輪 つらい日々を 乗り越えた 本源 本当にありがとう 朗(ほがら) に生きる 感謝を胸に 寳珠の花を 寳珠の花を 世界の友に 四、 吐く息白き 冬の日に くるり回した 寳珠の輪 涙の日々を乗り越えた 本源 本当にありがとう 安らに生きる 感謝を胸に 寳珠の花を 寳珠の花を 世界の友に 寶珠音頭 ~2018年制作~ 作詞:寶如 作曲:妙道 唄:道賢 囃子:高倉 木村 春木 #盆踊り #夏祭り #音頭 #イベント 関連動画 寳珠音頭 寳珠宗寳珠会 盆踊り 夏祭り https://youtu.be/23JXA9WNc8o 寳珠音頭 夏 盆踊り 夏祭り 春…"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0d2e020cf3f050ae",
+      "target_year": 2024,
+      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "area": "墨田区",
+      "detected_event_date": "",
+      "video_id": "8oTs-GpT54I",
+      "video_url": "https://www.youtube.com/watch?v=8oTs-GpT54I",
+      "title": "【阿波踊り】阿呆連の美しすぎる女奴踊り 本場徳島阿波おどり | Awaodori in Tokushima Japan",
+      "channel_id": "UCiUJ2VY8MoXTV5zdfntNjyQ",
+      "channel_title": "Awaodori Fools",
+      "published_at": "2025-05-18T09:42:28Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/8oTs-GpT54I/maxresdefault.jpg",
+      "query": "-両国- 江戸NOREN 妖怪BON DANCE 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#阿波おどり #阿呆連 #阿波おどり会館 #awaodori #阿波踊り #本場徳島阿波おどり #awadance #阿波舞 #아와오도리 #徳島の阿波踊り #踊り #dance #ダンス #盆踊り #bondance #awadancefestival #japanesefestival #traditionaldance #徳島 #Tokushima #日本 #Japan"
     },
     {
       "status": "weak",
@@ -29000,5 +29024,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-14T20:30:23.404128+00:00"
+  "merged_from": "2026-08-15T20:20:52.970459+00:00"
 }
