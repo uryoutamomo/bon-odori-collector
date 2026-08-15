@@ -60,13 +60,15 @@ class XCollectionHealthTest(unittest.TestCase):
 
     def test_keyword_http_402_is_recorded_without_immediate_raise(self):
         health = new_health_report(collection_enabled=True)
-        with (
-            patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
-            patch.object(collect, "_load_x_config", return_value=self.keyword_config()),
-            patch.object(collect, "_x_budget_state", return_value={}),
-            patch.object(collect, "_x_search", side_effect=payment_required()),
-        ):
-            items, seen = collect.collect_x_voices(set(), health=health)
+        with tempfile.TemporaryDirectory() as tmp:
+            with (
+                patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
+                patch.object(collect, "X_BUDGET_FILE", str(Path(tmp) / "x_budget.json")),
+                patch.object(collect, "_load_x_config", return_value=self.keyword_config()),
+                patch.object(collect, "_x_budget_state", return_value={}),
+                patch.object(collect, "_x_search", side_effect=payment_required()),
+            ):
+                items, seen = collect.collect_x_voices(set(), health=health)
 
         finalize_health_report(health)
         self.assertEqual(items, [])
@@ -77,13 +79,15 @@ class XCollectionHealthTest(unittest.TestCase):
 
     def test_successful_but_zero_item_run_is_unhealthy(self):
         health = new_health_report(collection_enabled=True)
-        with (
-            patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
-            patch.object(collect, "_load_x_config", return_value=self.keyword_config()),
-            patch.object(collect, "_x_budget_state", return_value={}),
-            patch.object(collect, "_x_search", return_value={"tweets": []}),
-        ):
-            collect.collect_x_voices(set(), health=health)
+        with tempfile.TemporaryDirectory() as tmp:
+            with (
+                patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
+                patch.object(collect, "X_BUDGET_FILE", str(Path(tmp) / "x_budget.json")),
+                patch.object(collect, "_load_x_config", return_value=self.keyword_config()),
+                patch.object(collect, "_x_budget_state", return_value={}),
+                patch.object(collect, "_x_search", return_value={"tweets": []}),
+            ):
+                collect.collect_x_voices(set(), health=health)
 
         finalize_health_report(health)
         self.assertEqual(health["lanes"]["keyword"]["completed_units"], 1)

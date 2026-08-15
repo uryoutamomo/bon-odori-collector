@@ -85,16 +85,18 @@ class XCostLedgerTest(unittest.TestCase):
                 items, _ = collect.collect_x_voices(set())
 
         self.assertEqual(len(items), 1)
-        record_run.assert_called_once_with(
-            "search",
-            path=Path(tmp).joinpath("x_cost_ledger.json"),
-            query_id="q-base",
-            cost_usd=0.00015,
-            requests=1,
-            tweets_fetched=1,
-            new_urls=1,
-            voices_accepted=1,
-        )
+        record_run.assert_called_once()
+        self.assertEqual(record_run.call_args.args, ("search",))
+        recorded = record_run.call_args.kwargs
+        self.assertEqual(recorded["path"], Path(tmp).joinpath("x_cost_ledger.json"))
+        self.assertEqual(recorded["query_id"], "q-base")
+        self.assertEqual(recorded["cost_usd"], 0.00015)
+        self.assertEqual(recorded["requests"], 1)
+        self.assertEqual(recorded["tweets_fetched"], 1)
+        self.assertEqual(recorded["new_urls"], 1)
+        self.assertEqual(recorded["voices_accepted"], 1)
+        # 費用が下がったとき「窓を狭めたからか、取れなくなったからか」を後から切り分けるため。
+        self.assertIn("since_time:", recorded["note"])
 
 
 if __name__ == "__main__":

@@ -7,8 +7,15 @@
     "monthly_usd": 25.0,
     "cost_per_tweet_usd": 0.00015
   },
-  "_max_pages_comment": "2026-07-26 に 3->8 へ引き上げ。3の頃は主要クエリが毎回3ページとも満杯で打ち切られており（=その先に未取得の投稿が残っていた）、1日216件・$0.063（日次予算の2%）しか使えていなかった。",
+  "_max_pages_comment": "2026-07-26 に 3->8 へ引き上げ。3の頃は主要クエリが毎回3ページとも満杯で打ち切られており（=その先に未取得の投稿が残っていた）、1日216件・$0.063（日次予算の2%）しか使えていなかった。クエリ単位で上書きしたい場合は queries[].max_pages に書く。",
   "max_pages_per_query": 8,
+  "search_watermark": {
+    "_comment": "2026-08-16追加。検索クエリごとに『ここまで読んだ』時刻(since_time)を data/x_query_watermarks.json へ持ち、次回はその先だけを読む。従来は毎回1ページ目から読み直し、既読URLは保存時に捨てていたが課金は発生していた（2026-08-11の実測で1,760件取得のうち新規660件=37.5%、残り1,100件が既読の読み直し）。overlap_minutes は取りこぼし防止の重なり幅。ページ上限に達して読み切れなかったクエリは since_time を進めない（whitelist の INV-COL-004 と同じ原則）。",
+    "enabled": true,
+    "initial_lookback_days": 3,
+    "overlap_minutes": 60,
+    "stop_after_zero_new_page": true
+  },
   "page_sleep_sec": 2,
   "whitelist_batch_size": 20,
   "_whitelist_max_pages_comment": "2026-07-26追加。1バッチ(20アカウント)あたり1ページ(20件)しか読まず、活発な日は上限で切れて取りこぼしていた。",

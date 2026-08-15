@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-08-15T14:38:26Z",
-  "generated_for_commit": "de5742d",
+  "generated_at": "2026-08-15T15:12:34Z",
+  "generated_for_commit": "35615cf",
   "specs": {
     "L1-collection": {
       "layer": "L1",
       "title": "収集サブシステム",
       "owns": [
         "collect.py",
+        "x_queries.json",
         "collection_support/x_raw_archive.py",
         "collection_support/x_budget_guard.py",
         "collection_support/x_cost_ledger.py",
@@ -29,14 +30,17 @@
         "INV-COL-002",
         "INV-COL-003",
         "INV-COL-004",
-        "INV-COL-005"
+        "INV-COL-005",
+        "INV-COL-006",
+        "INV-COL-007"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
         "tests/test_x_collection_health.py",
-        "tests/test_collect_no_semantic_exclusion.py"
+        "tests/test_collect_no_semantic_exclusion.py",
+        "tests/test_x_search_watermark.py"
       ],
-      "updated_for": "b30445d",
+      "updated_for": "35615cf",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         "build_x_gap_candidates.py",
@@ -54,11 +58,12 @@
         "sync_weekly_costs.py",
         "sync_x_promoted_members.py",
         "venue_sites.json",
-        "voices_s3_artifact.py"
+        "voices_s3_artifact.py",
+        "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 4,
-        "files_changed_since": 2
+        "commits_since": 0,
+        "files_changed_since": 0
       },
       "version": "1.4",
       "revision_count": 5,
@@ -1241,6 +1246,24 @@
       ],
       "has_test": true
     },
+    "INV-COL-006": {
+      "spec": "L1-collection",
+      "title": "読み切れなかった検索クエリでは since_time を進めない",
+      "tests": [
+        "tests/test_x_search_watermark.py::XSearchWatermarkTest::test_page_limited_query_does_not_advance_the_watermark",
+        "tests/test_x_search_watermark.py::XSearchWatermarkTest::test_http_failure_does_not_advance_the_watermark",
+        "tests/test_x_search_watermark.py::XSearchWatermarkTest::test_other_queries_keep_their_own_position"
+      ],
+      "has_test": true
+    },
+    "INV-COL-007": {
+      "spec": "L1-collection",
+      "title": "収集の読み取り位置と費用台帳は実行のたびにコミットする",
+      "tests": [
+        "tests/test_x_search_watermark.py::XSearchWatermarkPersistenceTest::test_workflow_commits_the_watermark_and_the_cost_ledger"
+      ],
+      "has_test": true
+    },
     "INV-JDG-001": {
       "spec": "L1-judgment",
       "title": "判定には盆踊り文脈と説明可能な採点理由を残す",
@@ -1785,6 +1808,7 @@
     "sync_x_promoted_members.py": "L1-collection",
     "venue_sites.json": "L1-collection",
     "voices_s3_artifact.py": "L1-collection",
+    "x_queries.json": "L1-collection",
     "collection_support/event_evidence.py": "L1-judgment",
     "collection_support/suppression_rules.py": "L1-judgment",
     "collection_support/tokyo23_scope.py": "L1-judgment",
