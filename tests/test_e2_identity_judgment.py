@@ -394,6 +394,87 @@ class VenueIdTest(unittest.TestCase):
             validate_payload({"request_type": "rdb_change_requests", "requests": [{**base, "venue": {}}]})
 
 
+def _seed_confirm_existing(root, lifecycle="published"):
+    """開催回IDだけを名指しし、名前も年も会場も書いていないレポートから候補を作る。
+
+    公式お知らせの confirm_existing は実データでこの形が多い（112件中55件）。
+    """
+    db = root / "master.sqlite"
+    conn = init_db(db)
+    migrate_local_judgment_contract(conn)
+    migrate_event_inbox_candidate(conn)
+    migrate_review_claim_ledger(conn)
+    conn.execute("INSERT INTO venues (venue_id, origin, canonical_name, normalized_name, area, address, review_status, created_at, updated_at) VALUES ('ven_seed','curated','試験公園',?,'千代田区','','active',?,?)", (normalize_text("試験公園"), STAMP, STAMP))
+    conn.execute("INSERT INTO event_series (series_id, origin, series_key, canonical_name, normalized_name, usual_venue_id, status, created_at, updated_at) VALUES ('ser_seed','curated',?,'試験盆踊り',?, 'ven_seed','active',?,?)", (normalize_text("試験盆踊り"), normalize_text("試験盆踊り"), STAMP, STAMP))
+    conn.execute("INSERT INTO event_occurrences (occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_start, date_status, lifecycle_status, created_at, updated_at) VALUES ('occ_seed','curated','ser_seed',2099,1,'試験盆踊り','ven_seed','2099-08-01','confirmed',?,?,?)", (lifecycle, STAMP, STAMP))
+    conn.commit()
+    conn.close()
+    notice = root / "notice.json"
+    notice.write_text(json.dumps({"report_type": "official_notice", "source": {"report_id": "notice", "raw_text": "text", "source_url": "https://example.test/n"},
+                                  "events": [{"action": "confirm_existing", "occurrence_id": "occ_seed"}]}, ensure_ascii=False), encoding="utf-8")
+    build_candidates(SimpleNamespace(report=[notice], report_dir=[], db=db, out_db=db, out_json=root / "c.json", out_md=root / "c.md",
+                                     max_candidates=10, apply=True, confirm="APPLY EVENT INBOX CANDIDATES", no_auto_migrate=False, include_expired=True))
+    return db
+
+
+class ExplicitTargetTest(unittest.TestCase):
+    """レポートが開催回IDを名指ししているなら、判定者にその開催回を見せる。"""
+
+    def test_named_occurrence_is_offered_even_without_a_name(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed_confirm_existing(root); packet = _packet(root, db)
+            self.assertIsNone(packet["proposal"].get("event_name_hint"), "この形の候補は名前を持たない")
+            ids = [row["occurrence_id"] for row in packet["targets"]["occurrence_candidates"]]
+            self.assertIn("occ_seed", ids)
+            self.assertEqual(packet["targets"]["occurrence_candidates"][0]["matched_by"], "explicit_occurrence_id")
+
+    def test_named_occurrence_venue_is_offered_too(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed_confirm_existing(root); packet = _packet(root, db)
+            self.assertIn("ven_seed", [row["venue_id"] for row in packet["targets"]["venue_candidates"]])
+
+    def test_a_merged_occurrence_is_not_offered(self):
+        """統合済みの開催回は、名指しされていても候補にしない（統合先ではなく古い側を指してしまう）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed_confirm_existing(root, lifecycle="merged"); packet = _packet(root, db)
+            self.assertEqual([row["occurrence_id"] for row in packet["targets"]["occurrence_candidates"]], [])
+
+    def test_the_named_target_can_be_accepted_and_converted(self):
+        """名指しされた対象を選べば accept になり、変更要求まで届く（保留に落ちない）。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed_confirm_existing(root); packet = _packet(root, db)
+            report, args = _apply(root, packet, _identity(packet))
+            self.assertEqual((report["accepted"], report["held_for_user"]), (1, 0), report["issues"])
+
+
+class MissingMaterialTest(unittest.TestCase):
+    """新規を作る材料が無いものを「新規確認」として人へ回さない。"""
+
+    def _hold_reason(self, root, payload):
+        db = _seed_confirm_existing(root); packet = _packet(root, db)
+        _report, args = _apply(root, packet, payload)
+        return sqlite3.connect(args.out_db).execute("SELECT reason_code FROM review_hold_ledger").fetchone()
+
+    def test_no_name_yields_insufficient_evidence_not_new_series(self):
+        with tempfile.TemporaryDirectory() as temp:
+            row = self._hold_reason(Path(temp), {"occurrence_match": NONE, "series_match": NONE, "venue_match": NONE})
+            self.assertEqual(row[0], "insufficient_evidence")
+
+    def test_no_venue_name_yields_insufficient_evidence_not_new_venue(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed_confirm_existing(root); packet = _packet(root, db)
+            identity = _identity(packet)
+            _report, args = _apply(root, packet, {**identity, "venue_match": NONE})
+            self.assertEqual(sqlite3.connect(args.out_db).execute("SELECT reason_code FROM review_hold_ledger").fetchone()[0], "insufficient_evidence")
+
+    def test_a_named_proposal_still_reports_new_series(self):
+        """材料がある場合は従来どおり「新しい系列の確認」になる。"""
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = _seed(root, existing=False); packet = _packet(root, db)
+            _report, args = _apply(root, packet, {"occurrence_match": NONE, "series_match": NONE, "venue_match": NONE})
+            self.assertEqual(sqlite3.connect(args.out_db).execute("SELECT reason_code FROM review_hold_ledger").fetchone()[0], "new_series_requires_confirmation")
+
+
 class ConfidenceTest(unittest.TestCase):
     """確からしさは日付を確認したついでに下がらない。
 

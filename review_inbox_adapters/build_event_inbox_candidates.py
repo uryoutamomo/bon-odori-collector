@@ -116,9 +116,30 @@ def search_targets(conn, proposal, lane, now):
         for row in find_occurrence_candidates(conn, name, venue, None, limit=8):
             if row["occurrence_id"] not in merged or row["match_score"] > merged[row["occurrence_id"]]["match_score"]: merged[row["occurrence_id"]] = row
         first = sorted(merged.values(), key=lambda x: -x["match_score"])
-    return {"occurrence_candidates": first, "venue_candidates": find_venue_candidates(conn, venue, (proposal.get("venue") or {}).get("area"), limit=8),
-            "retrieved_at": now.isoformat(), "calculation_version": "e0-candidate-search/v1",
-            "input_hash": sha256_hex({"event_name_hint": name, "venue_name": venue, "event_year": year, "limit": 8})}
+    venues = find_venue_candidates(conn, venue, (proposal.get("venue") or {}).get("area"), limit=8)
+    # レポートが開催回IDを名指ししている候補（confirm_existing 由来）は、名前を持たないことが多く
+    # 検索に一切かからない。その開催回を候補へ入れておかないと「どれとも違う」としか答えられず、
+    # 新規を作る材料（名前・会場名）も無いまま人の確認へ回る（2026-08-15 に112件中56件がこれ）。
+    explicit = proposal.get("explicit_occurrence_id")
+    if explicit and explicit not in {row["occurrence_id"] for row in first}:
+        named = conn.execute(
+            "SELECT o.occurrence_id, o.series_id, o.event_year, o.display_name, o.venue_id, o.date_start,"
+            " v.canonical_name AS venue_name FROM event_occurrences o"
+            " LEFT JOIN venues v ON v.venue_id = o.venue_id"
+            " WHERE o.occurrence_id = ? AND o.lifecycle_status != 'merged'",
+            (explicit,),
+        ).fetchone()
+        if named:
+            named = dict(named)
+            first = [{**named, "match_score": 1.0, "matched_by": "explicit_occurrence_id"}] + first
+            if named.get("venue_id") and named["venue_id"] not in {row["venue_id"] for row in venues}:
+                venue_row = conn.execute("SELECT venue_id, canonical_name, normalized_name, area, address FROM venues WHERE venue_id = ?", (named["venue_id"],)).fetchone()
+                if venue_row:
+                    venues = [{**dict(venue_row), "match_score": 1.0, "matched_by": "explicit_occurrence_id", "matched_alias": ""}] + venues
+    return {"occurrence_candidates": first, "venue_candidates": venues,
+            "retrieved_at": now.isoformat(), "calculation_version": "e0-candidate-search/v2",
+            "input_hash": sha256_hex({"event_name_hint": name, "venue_name": venue, "event_year": year,
+                                      "explicit_occurrence_id": explicit, "limit": 8})}
 
 
 def _family(conn, key):
