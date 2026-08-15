@@ -3147,8 +3147,9 @@
       "name": "庄司みずき 8/8(土)橋本七夕祭り17:20〜くらサイゼリア駐輪場8/9大井町会館ライブ",
       "source_type": "official",
       "linked_events": [],
-      "decided_by": "machine",
-      "tier": "unlinked"
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
     },
     {
       "handle": "@mkkkyse6offnpwt",
@@ -3975,8 +3976,9 @@
           ]
         }
       ],
-      "decided_by": "machine",
-      "tier": "active"
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
     },
     {
       "handle": "@otakanko2",
@@ -4657,8 +4659,9 @@
       "name": "畠山 しんいち 世田谷区議会議員7期 🇯🇵Shinichi Hatakeyama",
       "source_type": "official",
       "linked_events": [],
-      "decided_by": "machine",
-      "tier": "unlinked"
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
     },
     {
       "handle": "@shinkotoni_chuo",
@@ -5959,6 +5962,42 @@
       "linked_events": [],
       "decided_by": "machine",
       "tier": "unlinked"
+    },
+    {
+      "handle": "@ginzaofficialjp",
+      "name": "【公式】銀座観光局",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
+    },
+    {
+      "handle": "@akabanemagazine",
+      "name": "赤羽マガジン",
+      "source_type": "regional_media",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
+    },
+    {
+      "handle": "@tunagate",
+      "name": "つなげーと公式",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
+    },
+    {
+      "handle": "@matsudotsushin",
+      "name": "松戸つうしん",
+      "source_type": "regional_media",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
     },
     {
       "handle": "@zojoji_official",

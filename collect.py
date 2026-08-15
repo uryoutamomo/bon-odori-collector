@@ -2391,10 +2391,28 @@ def _auto_trusted_roster_accounts(cfg=None):
     min_posts = roster_cfg.get("min_posts_seen", 3)
     per_axis = roster_cfg.get("per_axis_accounts", 150)
     exclusions = _load_x_roster_exclusions()
+    # The official ledger answers a different question from score eligibility:
+    # a person may be good enough for either two-axis roster, but a curator can
+    # explicitly put an official/quasi-official source to sleep until its wake
+    # date.  Read the raw rows here because load_official_source_accounts()
+    # intentionally hides rejected rows from normal official-source consumers.
+    dormant_or_rejected = set()
+    try:
+        registry = json.loads(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE).read_text(encoding="utf-8"))
+        for official in registry.get("accounts", []) if isinstance(registry, dict) else registry:
+            if (isinstance(official, dict)
+                    and (official.get("tier") == "rejected"
+                         or (official.get("tier") == "dormant"
+                             and official.get("decided_by") == "user"))):
+                dormant_or_rejected.add(_norm_handle(official.get("handle")))
+    except (OSError, json.JSONDecodeError, TypeError):
+        pass
     candidates = []
     for key, row in scores.items():
         handle = row.get("handle") or f"@{key}"
-        if _norm_handle(handle) in exclusions or row.get("manual_status") == "休止":
+        if (_norm_handle(handle) in exclusions
+                or _norm_handle(handle) in dormant_or_rejected
+                or row.get("manual_status") == "休止"):
             continue
         if (row.get("posts_seen") or 0) < min_posts:
             continue
