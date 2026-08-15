@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T01:35:09Z",
-  "generated_for_commit": "02f5f76",
+  "generated_at": "2026-08-15T01:38:21Z",
+  "generated_for_commit": "a40d7c4",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -248,12 +248,17 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 3
       },
-      "version": "1.4",
-      "revision_count": 5,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "a40d7c4",
+          "date": "2026-08-15",
+          "subject": "LLMは同一性だけを答え、機械が変更要求へ変換する（E2） (#210)"
+        },
         {
           "commit": "cd8eb13",
           "date": "2026-08-15",
@@ -359,12 +364,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.4",
-      "revision_count": 5,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "a40d7c4",
+          "date": "2026-08-15",
+          "subject": "LLMは同一性だけを答え、機械が変更要求へ変換する（E2） (#210)"
+        },
         {
           "commit": "a855a9a",
           "date": "2026-08-14",
