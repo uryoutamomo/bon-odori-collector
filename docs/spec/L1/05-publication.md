@@ -17,12 +17,14 @@ invariants:
   - INV-PUB-004
   - INV-PUB-005
   - INV-PUB-006
+  - INV-PUB-007
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
   - tests/test_public_event_site_addition_tools.py
   - tests/test_classify_public_events_diff.py
-updated_for: 6537e7f
+  - tests/test_e0b_bridge.py
+updated_for: aaeecb7
 ---
 
 # 公開サブシステム
@@ -141,6 +143,19 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **守っているコード**: `export_public_events.py` の `require_no_prediction_json_fallback()`
 - **守っているテスト**: `tests/test_export_public_events.py::test_json_prediction_fallback_is_a_hard_failure`、
   `tests/test_export_public_events.py::test_zero_json_prediction_fallback_is_accepted`
+
+### INV-PUB-007 公開実績からRDBへ戻す候補は、対象IDなしでは作られない
+
+- **内容**: `build_public_historical_reference_change_requests.py` の `build_request()` は `occurrence_id` が無ければ
+  `ValueError` を投げ、対象を名前ヒント（`match_hint`）で表すことはしない。どの開催回か決まらなかった公開イベントは
+  リクエストにせず、解決失敗の理由つきで issues に残す。
+- **なぜ**: 反映層は E1 で fuzzy による対象解決を止めた。生成側がヒントだけのリクエストを作れると、
+  いったん確定したはずの名寄せが適用の瞬間にまたあいまいになる。**閾値を跨ぐかどうかではなく、経路として塞ぐ。**
+- **破れたときの症状**: 別の開催回に過去実績が付き、公開ページに他所の行事の実績が出る。
+- **守っているコード**: `public_export_support/build_public_historical_reference_change_requests.py` の `build_request()` と `build_payload()`
+- **守っているテスト**: `tests/test_e0b_bridge.py::test_build_request_requires_occurrence_id`、
+  `tests/test_e0b_bridge.py::test_source_has_no_match_hint_branch_left`、
+  `tests/test_e0b_bridge.py::test_unresolved_event_produces_no_request`
 
 ## 主要な流れ
 

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T14:51:09Z",
-  "generated_for_commit": "1ea0661",
+  "generated_at": "2026-08-15T00:25:05Z",
+  "generated_for_commit": "aaeecb7",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -167,14 +167,16 @@
         "INV-RVW-007",
         "INV-RVW-008",
         "INV-RVW-009",
-        "INV-RVW-010"
+        "INV-RVW-010",
+        "INV-RVW-011"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
         "tests/test_promote_change_requests_for_review.py",
-        "tests/test_judgment_j0_adjudication.py"
+        "tests/test_judgment_j0_adjudication.py",
+        "tests/test_e0b_bridge.py"
       ],
-      "updated_for": "069a9aa",
+      "updated_for": "aaeecb7",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -241,8 +243,8 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 6
+        "commits_since": 0,
+        "files_changed_since": 0
       },
       "version": "1.3",
       "revision_count": 4,
@@ -397,15 +399,17 @@
         "INV-PUB-003",
         "INV-PUB-004",
         "INV-PUB-005",
-        "INV-PUB-006"
+        "INV-PUB-006",
+        "INV-PUB-007"
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
         "tests/test_guard_public_events_sync.py",
         "tests/test_public_event_site_addition_tools.py",
-        "tests/test_classify_public_events_diff.py"
+        "tests/test_classify_public_events_diff.py",
+        "tests/test_e0b_bridge.py"
       ],
-      "updated_for": "6537e7f",
+      "updated_for": "aaeecb7",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -1271,6 +1275,16 @@
       ],
       "has_test": true
     },
+    "INV-RVW-011": {
+      "spec": "L1-review",
+      "title": "コンソール由来の変更提案は、人の昇格なしに適用JSONへ落ちない",
+      "tests": [
+        "tests/test_e0b_bridge.py::test_every_built_request_is_dry_run_only",
+        "tests/test_e0b_bridge.py::test_apply_layer_refuses_bridge_output",
+        "tests/test_e0b_bridge.py::test_cli_writes_candidate_reports_by_default"
+      ],
+      "has_test": true
+    },
     "INV-MST-001": {
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
@@ -1374,6 +1388,14 @@
       "title": "日付予測をJSONフォールバックで補ったら、成功させずに落とす",
       "tests": [
         "tests/test_export_public_events.py::test_json_prediction_fallback_is_a_hard_failure"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-007": {
+      "spec": "L1-publication",
+      "title": "公開実績からRDBへ戻す候補は、対象IDなしでは作られない",
+      "tests": [
+        "tests/test_e0b_bridge.py::test_build_request_requires_occurrence_id"
       ],
       "has_test": true
     },

@@ -41,11 +41,13 @@ invariants:
   - INV-RVW-008
   - INV-RVW-009
   - INV-RVW-010
+  - INV-RVW-011
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
   - tests/test_judgment_j0_adjudication.py
-updated_for: 069a9aa
+  - tests/test_e0b_bridge.py
+updated_for: aaeecb7
 ---
 
 # 人のレビュー運用サブシステム
@@ -167,6 +169,14 @@ updated_for: 069a9aa
 - **守っているコード**: `review_console/data.py` の `adjudication_target_required` / `_check_target`、`apply_user_adjudications.py` の `_validate`
 - **守っているテスト**: `tests/test_judgment_j0_adjudication.py::test_11_changed_candidate_set_is_invalidated`、`tests/test_judgment_j0_adjudication.py::test_09a_target_outside_the_frozen_candidate_set_is_refused`、`tests/test_judgment_j0_adjudication.py::test_11a_target_outside_the_candidate_set_is_invalidated_at_apply`
 
+### INV-RVW-011 コンソール由来の変更提案は、人の昇格なしに適用JSONへ落ちない
+
+- **内容**: `build_change_requests_from_review_inbox.build_requests()` が返すリクエストは全件 `dry_run_only` を持つ。つまり `apply_change_requests --apply` は必ず拒否し、`scripts/promote_change_requests_for_review.py` が人の昇格（`reviewed_by` / `reviewed_at`）を刻んだ後でしか適用できない。あわせてこの橋渡しは既定で `review_console_change_request` レポートを書き、コンソールの選択が候補器（E0）経由でも進めるようにする。
+- **なぜ**: コンソールの `confirm_current_date` / `promote_historical_reference` / `fill_venue` は、判断台帳を1行も通さずに master RDB の正本factへ到達できる唯一の経路だった。旧経路を消さずに（strangler）、適用の直前へ人の関門を1つ入れる。
+- **破れたときの症状**: 画面で押した選択が、誰の確認も決定記録もないまま開催回の日付・会場・過去実績を書き換える。
+- **守っているコード**: `review_inbox_adapters/build_change_requests_from_review_inbox.py` の `build_requests()` と `build_candidate_reports()`
+- **守っているテスト**: `tests/test_e0b_bridge.py::test_every_built_request_is_dry_run_only`、`tests/test_e0b_bridge.py::test_apply_layer_refuses_bridge_output`、`tests/test_e0b_bridge.py::test_cli_writes_candidate_reports_by_default`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -190,6 +200,21 @@ E0 が作った `status='candidate'` を `build_judgment_packets.py` が claim �
 agent が `awaiting_user` hold を開いた候補だけを、同じレビューコンソール（`http://127.0.0.1:8751/` の「裁定」タブ、ショートカット `b`）で人が判断する。画面操作は `data/review_console/adjudications.json` に記録するだけで、判断の台帳は動かさない（唯一の例外は `review_claim_ledger` の作業中リース行）。反映は `apply_user_adjudications.py --apply` の確認フレーズ付きCLIに限定し、それを呼ぶHTTPパスは置かない。反映時はholdの候補集合hash、期限、allowed action、対象IDが候補集合の内側かを再照合し、`build_user_decision` と既存 `judgment_ledger_writer.write_decision` を通す。失敗した記録は消さず `invalidated` と理由を残し、holdは open のままなので裁き直せる。J0-read同様、canonical fact表と `review_inbox_items.status` は変更しない。
 
 **裁定で「採用」してもイベントは1件も増えない。** 記録が台帳へ入るだけで、正本factへの反映はE2a以降である。
+
+### E0b のコンソール橋渡し
+
+コンソールで `confirm_current_date` / `promote_historical_reference` / `fill_venue` を選ぶと、`decision_stage.py` が
+`data/review_console/staged/review_inbox_change_request_decisions.json` へ落とす。`build_change_requests_from_review_inbox.py` は
+これを2通りに書き出す。1つは E0 の候補器が読む `review_console_change_request` レポート（既定・`--no-candidate-report` で抑止）で、
+判断台帳を通る新しい経路になる。もう1つは従来の change request JSON で、こちらは全件 `dry_run_only` 付きなので昇格を経ないと適用できない
+（INV-RVW-011）。**コンソールの選択は「決定」ではなく「提案」として候補になる**——契約上 user の terminal decision は agent hold を経た
+候補にしか出せないため、画面で選んだ行為は候補の `action` として運ばれ、判断そのものは後段で行う。
+
+```
+コンソールの選択 → staged decisions → build_change_requests_from_review_inbox.py
+  ├→ review_console_change_request レポート → build_event_inbox_candidates.py → 候補（event_update）→ J0-read → 裁定 → E2a以降で反映
+  └→ rdb_change_requests.json（dry_run_only）→ 人の昇格 → apply_change_requests（旧経路・当面は残す）
+```
 
 ### 日次で積んでいるのは、いくつの入口か
 

@@ -191,7 +191,12 @@ def resolve_occurrence(conn, event: dict, source_map_occurrence_id: str | None =
     return None, candidates, "weak_candidate"
 
 
-def build_request(event: dict, occurrence_id: str | None, source: dict, date_start: str, date_end: str, year: int) -> dict:
+def build_request(event: dict, occurrence_id: str, source: dict, date_start: str, date_end: str, year: int) -> dict:
+    # E1 removed fuzzy target resolution from the apply layer, so a request without an explicit
+    # target can never be applied. Refusing to build one keeps the generator side honest instead
+    # of emitting a match_hint that only re-opens the name matching at apply time (INV-PUB-007).
+    if not occurrence_id:
+        raise ValueError("occurrence_id is required to build a historical reference change request")
     request = {
         "request_id": stable_id("chrq", event.get("name"), event.get("venue"), date_start, date_end),
         "change_type": "add_historical_reference",
@@ -204,15 +209,8 @@ def build_request(event: dict, occurrence_id: str | None, source: dict, date_sta
         "basis": "公開JSONの historical_reference からRDB投影元へ戻す候補。現在年の開催確定には使わない。",
         "note": f"public historical_reference import candidate: {event.get('historical_reference_label') or event.get('public_note') or ''}",
         "dry_run_only": True,
+        "occurrence_id": occurrence_id,
     }
-    if occurrence_id:
-        request["occurrence_id"] = occurrence_id
-    else:
-        request["match_hint"] = {
-            "event_name_hint": event.get("name"),
-            "venue_name_hint": event.get("venue"),
-            "event_year": TARGET_YEAR,
-        }
     return request
 
 
@@ -256,7 +254,6 @@ def build_payload(public_events: list[dict], master_db: Path, source_map: dict[s
                 issues.append({"issue_type": "missing_source_url", "name": event.get("name"), "venue": event.get("venue")})
                 continue
             counters[f"source:{source_provenance}"] += 1
-            request = build_request(event, occurrence_id, source, date_start, date_end or "", historical_year)
             if not occurrence_id:
                 issues.append(
                     {
@@ -265,11 +262,12 @@ def build_payload(public_events: list[dict], master_db: Path, source_map: dict[s
                         "venue": event.get("venue"),
                         "candidate_count": len(candidates),
                         "candidates": candidates[:5],
-                        "request_id": request["request_id"],
+                        "request_id": stable_id("chrq", event.get("name"), event.get("venue"), date_start, date_end or ""),
                     }
                 )
                 counters["skipped:unresolved_occurrence"] += 1
                 continue
+            request = build_request(event, occurrence_id, source, date_start, date_end or "", historical_year)
             requests.append(request)
             counters["requests"] += 1
 
