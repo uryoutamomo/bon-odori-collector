@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T06:47:56Z",
-  "generated_for_commit": "ade48f3",
+  "generated_at": "2026-08-15T08:21:35Z",
+  "generated_for_commit": "5f28266",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -57,12 +57,17 @@
         "voices_s3_artifact.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.3",
-      "revision_count": 4,
+      "version": "1.4",
+      "revision_count": 5,
       "history": [
+        {
+          "commit": "5f28266",
+          "date": "2026-08-15",
+          "subject": "収集の関門から除外語を廃止する（曲目情報を捨てていた） (#215)"
+        },
         {
           "commit": "a855a9a",
           "date": "2026-08-14",
@@ -113,8 +118,8 @@
         "collection_support/x_source_officiality.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
       "version": "1.0",
       "revision_count": 1,
