@@ -27,11 +27,13 @@ invariants:
   - INV-MST-005
   - INV-MST-006
   - INV-MST-007
+  - INV-MST-008
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
   - tests/test_audit_master_rdb.py
-updated_for: 83bf7d0
+  - tests/test_e2_identity_judgment.py
+updated_for: 02f5f76
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -154,6 +156,14 @@ updated_for: 83bf7d0
 - **破れたときの症状**: 別会場の行事が一つの会場にまとめて表示され、会場・日程の根拠が混ざる。
 - **守っているコード**: `report_apply/event_report_helpers.py` の `ensure_venue()`
 - **守っているテスト**: `tests/test_firsthand_report_helpers.py::FirsthandReportHelpersTest::test_ensure_venue_creates_instead_of_absorbing_a_similar_name`
+
+### INV-MST-008 新しい系列の作成は追加だけで、既存を黙って再利用しない
+
+- **内容**: `create_event_series` は系列・開催回・日付を新規に作るだけで、既存行を更新しない。正規化した系列キーが既にあれば `series_key_already_exists` で止める（その場合は `create_current_year_occurrence` を使う）。`series_id` を同梱した要求は受け付けない。あわせて会場は `venue_id` で指せるようになり、IDが渡されたときは `ensure_venue()` を経由しない。
+- **なぜ**: 従来の `register_new` は実体が `ensure_series_and_occurrence()` で、同じ正規化名の系列を黙って再利用し、同じ年の開催回があれば `ON CONFLICT ... DO UPDATE` で会場と日付を上書きしていた。「新規追加」のつもりの操作が、別の行事の確定日を書き換えうる。会場も名前でしか渡せず、表記が少し違うだけで同じ場所が二重に登録された（2026-08-07 鹿骨中学校）。
+- **破れたときの症状**: 新規登録したはずが既存の開催回の日付・会場が変わる。同じ会場が2行に増える。
+- **守っているコード**: `report_apply/apply_change_requests.py` の `apply_create_event_series()` と `_resolve_venue()`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_create_event_series_never_touches_an_existing_series`、`tests/test_e2_identity_judgment.py::test_duplicate_series_key_is_refused`、`tests/test_e2_identity_judgment.py::test_update_venue_by_id_creates_no_venue_row`
 
 ## 主要な流れ
 

@@ -8,7 +8,8 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 from event_model.local_judgment_migration import migrate_event_inbox_candidate, migrate_local_judgment_contract, migrate_review_claim_ledger
-from master_rdb.master_db import init_db
+from master_rdb.master_db import init_db, normalize_text
+from review_inbox_adapters.local_judgment_contract import IDENTITY_MATCH_NONE
 from review_inbox_adapters.apply_judgment_results import main as apply_main, run as apply_results
 from review_inbox_adapters.build_event_inbox_candidates import run as build_candidates
 from review_inbox_adapters.build_judgment_packets import main as packet_main, run as build_packets
@@ -25,12 +26,19 @@ class JudgmentJ0ReadTest(unittest.TestCase):
         ))
         for name in ("ensure_venue", "ensure_series_and_occurrence", "confirm_occurrence_schedule_venue", "upsert_occurrence_song", "link_occurrence_evidence"):
             self.assertNotIn(name, sources)
-    def _seed(self, root):
+    def _seed(self, root, existing=False):
         db = root / "master.sqlite"
         conn = init_db(db)
         migrate_local_judgment_contract(conn)
         migrate_event_inbox_candidate(conn)
         migrate_review_claim_ledger(conn)
+        if existing:
+            # E2: event lane の accept は同一性の答えを伴うので、指せる既存行が要る。
+            # 何も無いと答えは全部 "none" になり、新規確認の保留へ回って accept にならない。
+            stamp = "2026-01-01T00:00:00+00:00"
+            conn.execute("INSERT INTO venues (venue_id, origin, canonical_name, normalized_name, area, address, review_status, created_at, updated_at) VALUES ('ven_seed','curated','試験公園',?,'千代田区','','active',?,?)", (normalize_text("試験公園"), stamp, stamp))
+            conn.execute("INSERT INTO event_series (series_id, origin, series_key, canonical_name, normalized_name, usual_venue_id, status, created_at, updated_at) VALUES ('ser_seed','curated',?,'試験盆踊り',?, 'ven_seed','active',?,?)", (normalize_text("試験盆踊り"), normalize_text("試験盆踊り"), stamp, stamp))
+            conn.execute("INSERT INTO event_occurrences (occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name, venue_id, date_start, date_status, lifecycle_status, created_at, updated_at) VALUES ('occ_seed','curated','ser_seed',2099,1,'試験盆踊り','ven_seed','2099-08-01','confirmed','published',?,?)", (stamp, stamp))
         conn.commit(); conn.close()
         notice = root / "notice.json"
         notice.write_text(json.dumps({"report_type":"official_notice","source":{"report_id":"notice","raw_text":"text","source_url":"https://example.test"},"events":[{"action":"register_new","event_name_hint":"試験盆踊り","event_year":2099,"date_start":"2099-08-01","venue":{"name":"試験公園"}}]}, ensure_ascii=False))
@@ -39,6 +47,16 @@ class JudgmentJ0ReadTest(unittest.TestCase):
 
     def _packet_args(self, root, db):
         return SimpleNamespace(db=db,out_db=root/"packets.sqlite",out_dir=root/"packets",report_json=root/"packets-report.json",actor_id="oto-test",batch_size=20,max_packets=100,lease_minutes=30,force_claim=False,domain="event",apply=False,confirm="",no_auto_migrate=False)
+
+    @staticmethod
+    def _identity(packet, **extra):
+        """既存候補を指す同一性の答え。これなら新規確認の保留にならず terminal decision になる。"""
+        occurrence = packet["targets"]["occurrence_candidates"][0]
+        venue = (packet["targets"].get("venue_candidates") or [{}])[0]
+        payload = {"occurrence_match": occurrence["occurrence_id"], "series_match": occurrence["series_id"],
+                   "venue_match": venue.get("venue_id") or IDENTITY_MATCH_NONE}
+        payload.update(extra)
+        return payload
 
     def _result_args(self, root, packet, **extra):
         result={key:packet[key] for key in ("packet_id","inbox_id","domain","lane","source_id","source_key","source_payload_hash")}
@@ -60,10 +78,10 @@ class JudgmentJ0ReadTest(unittest.TestCase):
 
     def test_apply_result_writes_ledgers_releases_claim_and_reports(self):
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            root=Path(temp); db=self._seed(root,existing=True); build=build_packets(self._packet_args(root,db))
             packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
             result={key:packet[key] for key in ("packet_id","inbox_id","domain","lane","source_id","source_key","source_payload_hash")}
-            result.update({"requested_action":"accept","payload":{}})
+            result.update({"requested_action":"accept","payload":self._identity(packet)})
             result_path=root/"result.json"; result_path.write_text(json.dumps({"results":[result]}))
             args=SimpleNamespace(db=root/"packets.sqlite",out_db=root/"results.sqlite",results=[result_path],packets_dir=root/"packets",report_json=root/"results-report.json",report_md=root/"results-report.md",actor_id="oto-test",apply=False,confirm="",no_auto_migrate=False)
             report=apply_results(args)
@@ -76,8 +94,8 @@ class JudgmentJ0ReadTest(unittest.TestCase):
 
     def test_untrusted_actor_identity_and_timestamp_are_overwritten(self):
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db)); packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
-            args=self._result_args(root,packet,actor_id="uchida",actor_type="user",decision_channel="console",decided_at="2000-01-01T00:00:00+00:00")
+            root=Path(temp); db=self._seed(root,existing=True); build=build_packets(self._packet_args(root,db)); packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
+            args=self._result_args(root,packet,payload=self._identity(packet),actor_id="uchida",actor_type="user",decision_channel="console",decided_at="2000-01-01T00:00:00+00:00")
             self.assertEqual(apply_results(args)["accepted"],1)
             row=sqlite3.connect(args.out_db).execute("SELECT actor_id,actor_type,decision_channel,decided_at FROM canonical_decision_ledger").fetchone()
             self.assertEqual(row[:3],("oto-test","agent","llm")); self.assertNotEqual(row[3],"2000-01-01T00:00:00+00:00")
@@ -280,9 +298,9 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     def test_accept_closes_the_queue_state(self):
         """§9-27: terminal decision で queue が closed になる。"""
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            root=Path(temp); db=self._seed(root,existing=True); build=build_packets(self._packet_args(root,db))
             packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
-            args=self._result_args(root,packet)
+            args=self._result_args(root,packet,payload=self._identity(packet))
             apply_results(args)
             conn=sqlite3.connect(args.out_db); conn.row_factory=sqlite3.Row
             queue=conn.execute("SELECT queue_state FROM review_queue_state_ledger WHERE inbox_id=?",(packet["inbox_id"],)).fetchone()
@@ -307,10 +325,10 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     def test_reapplying_the_same_result_is_a_noop(self):
         """§9-31: 二重取り込みで台帳が増えない（決定的な packet_id が効いている証拠）。"""
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            root=Path(temp); db=self._seed(root,existing=True); build=build_packets(self._packet_args(root,db))
             packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
-            first=self._result_args(root,packet); self.assertEqual(apply_results(first)["accepted"],1)
-            second=self._result_args(root,packet); second.db=first.out_db; second.out_db=root/"results2.sqlite"
+            first=self._result_args(root,packet,payload=self._identity(packet)); self.assertEqual(apply_results(first)["accepted"],1)
+            second=self._result_args(root,packet,payload=self._identity(packet)); second.db=first.out_db; second.out_db=root/"results2.sqlite"
             report=apply_results(second)
             self.assertEqual((report["noop"],report["accepted"]),(1,0))
             conn=sqlite3.connect(second.out_db)
@@ -320,10 +338,10 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     def test_same_decision_id_with_different_content_stops(self):
         """§9-32: decision_id は同じでも中身が違うものを黙って上書きしない（payload は decision_id の材料ではない）。"""
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            root=Path(temp); db=self._seed(root,existing=True); build=build_packets(self._packet_args(root,db))
             packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
-            first=self._result_args(root,packet); apply_results(first)
-            second=self._result_args(root,packet,payload={"reason_detail":"あとから足した"}); second.db=first.out_db; second.out_db=root/"results2.sqlite"
+            first=self._result_args(root,packet,payload=self._identity(packet)); apply_results(first)
+            second=self._result_args(root,packet,payload=self._identity(packet,reason_detail="あとから足した")); second.db=first.out_db; second.out_db=root/"results2.sqlite"
             with self.assertRaisesRegex(ValueError,"decision_id_conflict"):
                 apply_results(second)
 
@@ -502,9 +520,9 @@ class JudgmentJ0ReadTest(unittest.TestCase):
     def test_implementation_errors_are_not_swallowed_as_invalid_results(self):
         """§9-54: 実装側の誤りを「LLM の出力が悪い」として握りつぶさない。"""
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); db=self._seed(root); build=build_packets(self._packet_args(root,db))
+            root=Path(temp); db=self._seed(root,existing=True); build=build_packets(self._packet_args(root,db))
             packet=json.loads(Path(build["batches"][0]).read_text())["packets"][0]
-            args=self._result_args(root,packet)
+            args=self._result_args(root,packet,payload=self._identity(packet))
             with patch("review_inbox_adapters.apply_judgment_results.canonicalize_raw_judgment",side_effect=TypeError("boom")):
                 with self.assertRaises(TypeError):
                     apply_results(args)

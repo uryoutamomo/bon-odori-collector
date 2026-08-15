@@ -42,12 +42,16 @@ invariants:
   - INV-RVW-009
   - INV-RVW-010
   - INV-RVW-011
+  - INV-RVW-012
+  - INV-RVW-013
+  - INV-RVW-014
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
   - tests/test_judgment_j0_adjudication.py
   - tests/test_e0b_bridge.py
-updated_for: aaeecb7
+  - tests/test_e2_identity_judgment.py
+updated_for: 02f5f76
 ---
 
 # 人のレビュー運用サブシステム
@@ -176,6 +180,30 @@ updated_for: aaeecb7
 - **破れたときの症状**: 画面で押した選択が、誰の確認も決定記録もないまま開催回の日付・会場・過去実績を書き換える。
 - **守っているコード**: `review_inbox_adapters/build_change_requests_from_review_inbox.py` の `build_requests()` と `build_candidate_reports()`
 - **守っているテスト**: `tests/test_e0b_bridge.py::test_every_built_request_is_dry_run_only`、`tests/test_e0b_bridge.py::test_apply_layer_refuses_bridge_output`、`tests/test_e0b_bridge.py::test_cli_writes_candidate_reports_by_default`
+
+### INV-RVW-012 LLMは同一性だけを答え、事実を書かない
+
+- **内容**: event レーンの `accept` / `hold` の payload に許すのは、同一性の答え3つ（`occurrence_match` / `series_match` / `venue_match`）と共通項目だけである。イベント名・日付・会場名・IDの新規値・状態値が payload に現れたら validator が拒否する。song / term レーンの payload 集合は変えない。
+- **なぜ**: LLMは全体像を見渡すのが苦手なので、一つの業務をシンプルに保つ。事実は E0 が抽出済みなので、判断者に言い直させると同じ事実の食い違う写しが2つできる。
+- **破れたときの症状**: 候補と判断で名前や日付が食い違い、どちらが正しいか分からなくなる。
+- **守っているコード**: `review_inbox_adapters/local_judgment_contract.py` の `_payload_fields()` と `ACTION_REGISTRY`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_identity_fields_are_allowed_on_event_lanes`、`tests/test_e2_identity_judgment.py::test_song_and_term_payload_fields_are_unchanged`、`tests/test_e2_identity_judgment.py::test_event_facts_in_the_payload_are_rejected`
+
+### INV-RVW-013 新しい系列・会場が生まれる答えは、人の確認を経る
+
+- **内容**: `series_match` または `venue_match` が `"none"` の判断は、機械が `awaiting_user` の hold へ落とす（reason code は `new_series_requires_confirmation` / `new_venue_requires_confirmation`）。裁定を経ていないものは変更要求へ変換しない。開催回だけが `"none"` の場合は止めない。
+- **なぜ**: 系列と会場は重複しても統合（merge）の仕組みがまだ無く、取り消せない。開催回の追加は `occurrence_id` で後から直せるので、止める必要がない。保留にするのは機械側の運用ポリシーで、LLMの判断そのものは payload に残る——統合が実装されたらポリシーだけ外せばよい。
+- **破れたときの症状**: 同じ行事の系列や同じ場所の会場が、誰も見ないまま二重に増える。
+- **守っているコード**: `review_inbox_adapters/apply_judgment_results.py` の `_identity_hold_reason()`、`build_change_requests_from_judgment.py` の抽出条件
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_new_series_answer_becomes_an_awaiting_user_hold`、`tests/test_e2_identity_judgment.py::test_new_venue_answer_becomes_an_awaiting_user_hold`、`tests/test_e2_identity_judgment.py::test_unadjudicated_none_is_not_converted`
+
+### INV-RVW-014 同一性の答えは候補集合の中からしか選べない
+
+- **内容**: `occurrence_match` / `series_match` / `venue_match` は、パケットに提示した候補に含まれるIDか `"none"` のいずれかに限る。`occurrence_match` を指したなら `series_match` はその開催回の系列と一致しなければならない。新規確認の hold では候補集合を凍結しない（対象を選ぶ hold ではないため。対象IDは要求されず、一括で裁ける）。
+- **なぜ**: 候補の外のIDを通すと、見てもいない開催回が書き換わる。
+- **破れたときの症状**: 無関係の行事に日付や会場が付く。裁定画面で選べない対象を要求される。
+- **守っているコード**: `review_inbox_adapters/apply_judgment_results.py` の `_identity_problem()` と `candidate_ids` の決定
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_identity_outside_the_candidate_set_is_rejected`、`tests/test_e2_identity_judgment.py::test_series_match_conflicting_with_occurrence_is_rejected`、`tests/test_e2_identity_judgment.py::test_new_confirmation_hold_needs_no_target_and_can_be_batched`
 
 ## 主要な流れ
 
