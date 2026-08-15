@@ -3,12 +3,20 @@
   "note": "人が棚卸しで外したアカウント。機械はここにあるものを復活させない。",
   "exclusions": [
     {
-      "handle": "@prtimes_etm",
-      "reason": "企業・団体の宣伝",
-      "memo": "企業リリースの転載が中心",
-      "decided_at": "2026-08-11",
+      "handle": "@abydos_i_nonomi",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で57投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（十六夜　ノノミ(力持ちです)）",
+      "decided_at": "2026-08-15",
       "decided_by": "user",
-      "source": "gold_negative_initial"
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@bak_ao52",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で14投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（T Λ K Λ O 🐯🍅🍅🍅）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
     },
     {
       "handle": "@bot87bi",
@@ -19,12 +27,36 @@
       "source": "gold_negative_initial"
     },
     {
-      "handle": "@mau3_141592",
-      "reason": "東京以外が中心",
-      "memo": "盆踊り好きの個人だが関西中心で23区の投稿がない",
-      "decided_at": "2026-08-11",
+      "handle": "@colognechan",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で13投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（COLOGNECHAN）",
+      "decided_at": "2026-08-15",
       "decided_by": "user",
-      "source": "gold_negative_initial"
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@giantpanda99",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で6投稿し盆踊り関連語ゼロ（パンダ）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@hikoukimono",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で67投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（飛行機物語✈︎おばちゃん✈︎（なつみ））",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@hjmngs",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で24投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（a'pa2 (エーパーツ)　スポーツ観戦⚽️🏀⚾🏐🏈🏉🤾🏓と民謡🎤🪕が好きです）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
     },
     {
       "handle": "@ichikawa_news",
@@ -35,12 +67,236 @@
       "source": "gold_negative_initial"
     },
     {
+      "handle": "@inabakyoudai",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で24投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（横島編集隊（柊姉妹&因幡姉弟&その他））",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@joechang5782",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で26投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（joechang）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@kasui21",
+      "reason": "名指しでの除外（盆踊り言及はあるが対象外と判断）",
+      "memo": "6日間で15投稿・盆踊り関連1件。内田さんが実例として名指しし全員除外と判断（逢樹ひろ）。触れていた実績があるため、必要になれば復帰させられるよう記録を残す",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@katsuookuhara",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で15投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（奥原佳津夫）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@machiview",
+      "reason": "名指しでの除外（盆踊り言及はあるが対象外と判断）",
+      "memo": "6日間で23投稿・盆踊り関連1件。内田さんが実例として名指しし全員除外と判断（まちビュー@地域SNSアプリ）。触れていた実績があるため、必要になれば復帰させられるよう記録を残す",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@mau3_141592",
+      "reason": "東京以外が中心",
+      "memo": "盆踊り好きの個人だが関西中心で23区の投稿がない",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@mayu_singer",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で10投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（ひいらぎ繭）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@megarebo1962",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で83投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（megarebo）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@middonaitogaru",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で42投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（PEACEGIRLミッドナイトみかん）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@mjpeco0829",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で18投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（💖プリティ１２３１💖東京ドーム楽屋でMＪと一緒に撮った写真一般人には貰えず（泣））",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@mormogtarou",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で12投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（ももじろうちゃん寝る🍑）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@mukaibunkaharu",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で18投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（栗山）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@mukqjeycne5523",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で52投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（ソースオニオン）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@nana20090623",
+      "reason": "名指しでの除外（盆踊り言及はあるが対象外と判断）",
+      "memo": "6日間で36投稿・盆踊り関連5件。内田さんが実例として名指しし全員除外と判断（ファンキーOL奈々💜👊🏾）。触れていた実績があるため、必要になれば復帰させられるよう記録を残す",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@nbrand1122",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で11投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（N-Brand｜大きいサイズストッキング・レッグウェア専門店）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@oer2052f",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で32投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（クロさん）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@prtimes_etm",
+      "reason": "企業・団体の宣伝",
+      "memo": "企業リリースの転載が中心",
+      "decided_at": "2026-08-11",
+      "decided_by": "user",
+      "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@qtjittan",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で40投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（jittan）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
       "handle": "@shonanjincom",
       "reason": "東京以外が中心",
       "memo": "湘南エリアの総合情報。同上でbot条件を僅差で外れる",
       "decided_at": "2026-08-11",
       "decided_by": "user",
       "source": "gold_negative_initial"
+    },
+    {
+      "handle": "@shumatsu_y",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で18投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（よしもとライブ）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@soundmate_pro",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で56投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（SOUND MATE）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@swind_prv",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で11投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（Swind/神凪唐州@名古屋めし愛好家【作家・料理家・ライター】）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@tomkamoshida",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で33投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（カントリージェントルマン鴨志田＠軽井沢）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@ufufufufufu412",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で27投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（桃の葉（小））",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@usagitv",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で14投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（田中ひろみ(公式)/仏像イラストレーター）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@yamashita99",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で111投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（秋ゑびす(科学史年表アカ)）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@yiuyama",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で11投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（ヤンマー）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@yusoku_mansion",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で20投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（ゆ〜そく）",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
+    },
+    {
+      "handle": "@z0c1ww",
+      "reason": "盆踊りに触れない日常アカウント",
+      "memo": "8/10-15の6日間で22投稿し盆踊り関連語ゼロ。盆踊り最盛期の実測（桃道（ももみっち））",
+      "decided_at": "2026-08-15",
+      "decided_by": "user",
+      "source": "roster_audit_20260815"
     }
   ]
 }
