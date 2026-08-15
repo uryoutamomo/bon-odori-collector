@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T02:13:15Z",
-  "generated_for_commit": "abe2348",
+  "generated_at": "2026-08-15T02:15:14Z",
+  "generated_for_commit": "dcb2f01",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -248,7 +248,7 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 3
       },
       "version": "1.5",
@@ -365,12 +365,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 2,
+        "files_changed_since": 2
       },
-      "version": "1.5",
-      "revision_count": 6,
+      "version": "1.6",
+      "revision_count": 7,
       "history": [
+        {
+          "commit": "dcb2f01",
+          "date": "2026-08-15",
+          "subject": "確からしさを日付確認のついでに下げない（E2実地試行で見つかった穴） (#211)"
+        },
         {
           "commit": "a40d7c4",
           "date": "2026-08-15",
