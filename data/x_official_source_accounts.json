@@ -3976,9 +3976,8 @@
           ]
         }
       ],
-      "decided_by": "user",
-      "tier": "dormant",
-      "wake_after": "2027-06-01"
+      "decided_by": "machine",
+      "tier": "active"
     },
     {
       "handle": "@otakanko2",
@@ -5962,15 +5961,6 @@
       "linked_events": [],
       "decided_by": "machine",
       "tier": "unlinked"
-    },
-    {
-      "handle": "@ginzaofficialjp",
-      "name": "【公式】銀座観光局",
-      "source_type": "official",
-      "linked_events": [],
-      "decided_by": "user",
-      "tier": "dormant",
-      "wake_after": "2027-06-01"
     },
     {
       "handle": "@akabanemagazine",
