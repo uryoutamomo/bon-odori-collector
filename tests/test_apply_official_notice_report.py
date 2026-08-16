@@ -239,6 +239,87 @@ class ApplyOfficialNoticeReportTest(unittest.TestCase):
         self.assertEqual(song_count, 1)
         self.assertEqual(evidence_count, 1)
 
+    def test_reapplying_notice_does_not_restore_detail_removed_by_curated_replacement(self):
+        report = self._base_report(
+            [
+                {
+                    "action": "confirm_existing",
+                    "occurrence_id": self.occurrence_a_id,
+                    "detail_addendum": "開催時間：18:00〜20:00。私人の情報源名。",
+                    "songs": [],
+                }
+            ]
+        )
+        report_path = self._write_report(report)
+        script.run(self._args(report_path, apply=True, confirm="APPLY OFFICIAL NOTICE FIELD REPORT"))
+
+        conn = sqlite3.connect(self.db_path)
+        conn.execute(
+            "UPDATE event_occurrences SET detail = ? WHERE occurrence_id = ?",
+            ("開催時間：18:00〜20:00。", self.occurrence_a_id),
+        )
+        conn.commit()
+        conn.close()
+
+        script.run(self._args(report_path, apply=True, confirm="APPLY OFFICIAL NOTICE FIELD REPORT"))
+
+        conn = sqlite3.connect(self.db_path)
+        detail = conn.execute(
+            "SELECT detail FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_a_id,)
+        ).fetchone()[0]
+        conn.close()
+        self.assertEqual(detail, "開催時間：18:00〜20:00。")
+
+    def test_reapplying_older_replacement_does_not_overwrite_newer_notice_replacement(self):
+        report_a = self._base_report(
+            [
+                {
+                    "action": "confirm_existing",
+                    "occurrence_id": self.occurrence_a_id,
+                    "date_start": "2026-07-17",
+                    "venue": {"name": "京橋プラザ区民館", "area": "中央区"},
+                    "detail_replacement": "A通知の本文。",
+                    "songs": [{"title": "炭坑節"}],
+                }
+            ]
+        )
+        report_b = self._base_report(
+            [
+                {
+                    "action": "confirm_existing",
+                    "occurrence_id": self.occurrence_a_id,
+                    "detail_replacement": "B通知の本文。",
+                    "songs": [],
+                }
+            ]
+        )
+        report_b["source"]["report_id"] = "test_notice_report_b"
+        report_a_path = self._write_report(report_a, "report-a.json")
+        report_b_path = self._write_report(report_b, "report-b.json")
+
+        script.run(self._args(report_a_path, apply=True, confirm="APPLY OFFICIAL NOTICE FIELD REPORT"))
+        script.run(self._args(report_b_path, apply=True, confirm="APPLY OFFICIAL NOTICE FIELD REPORT"))
+        script.run(self._args(report_a_path, apply=True, confirm="APPLY OFFICIAL NOTICE FIELD REPORT"))
+
+        conn = sqlite3.connect(self.db_path)
+        detail = conn.execute(
+            "SELECT detail FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_a_id,)
+        ).fetchone()[0]
+        date_start = conn.execute(
+            "SELECT date_start FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_a_id,)
+        ).fetchone()[0]
+        song_count = conn.execute("SELECT COUNT(*) FROM occurrence_songs").fetchone()[0]
+        evidence_count = conn.execute("SELECT COUNT(*) FROM evidence_items").fetchone()[0]
+        link_count = conn.execute(
+            "SELECT COUNT(*) FROM occurrence_evidence_links WHERE occurrence_id = ?", (self.occurrence_a_id,)
+        ).fetchone()[0]
+        conn.close()
+        self.assertEqual(detail, "B通知の本文。")
+        self.assertEqual(date_start, "2026-07-17")
+        self.assertEqual(song_count, 1)
+        self.assertEqual(evidence_count, 2)
+        self.assertEqual(link_count, 2)
+
     def test_rename_series_and_register_new_keeps_one_series_and_prior_alias(self):
         conn = sqlite3.connect(self.db_path)
         prior_occurrence_id = master_db.stable_id("occ", self.series_a_id, 2025, 1)

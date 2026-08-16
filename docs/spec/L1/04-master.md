@@ -39,7 +39,7 @@ verified_by:
   - tests/test_x_song_identity_migration.py
   - tests/test_x_song_apply_safety.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: 64c874f
+updated_for: 14e6024
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -210,6 +210,12 @@ updated_for: 64c874f
    これが動かないと、終わった行事が公開面に「開催予定」として残る。
 5. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
 6. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
+
+**通知レポートの再適用**では、`report_apply/apply_official_notice_report.py` が同じ通知の
+evidence link を開催回にすでに持つ場合、`detail_addendum` と `detail_replacement` を再実行しない。
+後から人が整えた公開本文を古い通知が戻してしまうことを防ぐためである。一方で、日付・会場・
+evidence・曲の冪等な適用は続ける。別の通知evidenceによる後続の本文差替は正しく反映され、
+古い通知を再実行しても上書きされない。
 
 日次のほかに、**バッチの後始末を読むだけのレポート**がある。`run_post_batch_maintenance.py` は
 RDBとローカルのJSON出力を読み、件数と気になる点をまとめたJSON/Markdownを出す。書き込みはしない。

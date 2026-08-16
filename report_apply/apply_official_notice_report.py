@@ -55,6 +55,28 @@ STRONG_MATCH_SCORE = 0.92
 REQUIRED_SOURCE_FIELDS = ("report_id", "raw_text")
 
 
+def notice_detail_already_applied(conn, occurrence_id, evidence_id):
+    """Whether this notice already supplied the occurrence's detail text.
+
+    A curated ``detail_replacement`` may intentionally remove wording from an
+    older notice.  Re-running that immutable notice must preserve the curated
+    text rather than append the retired addendum again.
+    """
+    return bool(
+        scalar(
+            conn,
+            """
+            SELECT EXISTS(
+              SELECT 1
+              FROM occurrence_evidence_links
+              WHERE occurrence_id = ? AND evidence_id = ?
+            )
+            """,
+            (occurrence_id, evidence_id),
+        )
+    )
+
+
 def validate_report(report):
     errors = []
     if report.get("report_type") != "official_notice":
@@ -284,6 +306,12 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
         if occurrence_id is None:
             return None, issues
 
+        detail_addendum = event.get("detail_addendum")
+        detail_replacement = event.get("detail_replacement")
+        if notice_detail_already_applied(conn, occurrence_id, shared_evidence_id):
+            detail_addendum = None
+            detail_replacement = None
+
         venue_info = event.get("venue")
         venue_id = None
         if venue_info:
@@ -306,8 +334,8 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
             date_start=event.get("date_start"),
             date_end=event.get("date_end"),
             source_kind=notice_kind,
-            detail_addendum=event.get("detail_addendum"),
-            detail_replacement=event.get("detail_replacement"),
+            detail_addendum=detail_addendum,
+            detail_replacement=detail_replacement,
             date_basis_note="公式掲示物・チラシで確認。",
             now=now,
         )
