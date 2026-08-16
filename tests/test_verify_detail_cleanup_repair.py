@@ -1,6 +1,8 @@
 import json
 import shutil
 import sqlite3
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -66,4 +68,9 @@ class VerifyDetailCleanupRepairTest(unittest.TestCase):
     def test_public_rejects_duplicate_source_occurrence_id(self):
         source=json.loads(self.map_after.read_text(encoding='utf-8')); source['rows'][-1]['occurrence_id']=self.ids[0]; self.map_after.write_text(json.dumps(source),encoding='utf-8')
         with self.assertRaisesRegex(ValueError,'unique'): self.verify_public()
+    def test_cli_writes_result_json_without_passing_out_to_verify(self):
+        out = Path(self.tmp.name) / 'cli-result.json'
+        result = subprocess.run([sys.executable, 'scripts/verify_detail_cleanup_repair.py', '--before', str(self.before), '--after', str(self.after), '--report', str(self.report), '--apply-report', str(self.apply), '--out', str(out)], cwd=Path(__file__).resolve().parents[1], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(out.read_text(encoding='utf-8'))['count'], 14)
 if __name__=='__main__': unittest.main()
