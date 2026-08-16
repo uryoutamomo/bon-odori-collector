@@ -43,7 +43,8 @@ verified_by:
   - tests/test_song_catalog.py
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
-updated_for: f517fa8
+  - tests/test_x_post_extraction_songs.py
+updated_for: 7bcacd0
 ---
 
 # 曲目サブシステム
@@ -78,6 +79,7 @@ updated_for: f517fa8
 **入力**
 
 - `data/voices.json` — X投稿。収集サブシステムの出力（曲名を含む文章と、曲目表の画像URL）
+- E0X回答の `events[].songs` / `observations[].songs` — LLMが投稿本文から書き写した曲名候補
 - `data/public/events_public.json` — 公開済みイベントの本文。曲候補を探す対象文章になる
 - `data/weekly_harvest_candidates.json` — 週次収穫で拾った用語候補（`category` が `曲候補` の行だけ使う）
 - `data/youtube_song_candidates_review.json`、`data/youtube_setlist_occurrences.json` — YouTube概要欄由来のセットリスト
@@ -86,6 +88,7 @@ updated_for: f517fa8
 
 **出力**
 
+- `data/x_song_observations.json` — X投稿本文に曲名文字列があったという観測。曲マスタ・開催回へは未接続
 - `data/bon_odori_master.sqlite` の `occurrence_songs`（＋ `occurrence_song_evidence_links`）— 開催回ごとの曲。**公開の直接の元**
 - `data/event_song_candidates.json` — レビュー用の曲候補キュー（`f517fa8` 時点で1,527件、うち要レビュー885件）
 - `data/weekly_song_candidates_review.json` — 仕分けで決めきれなかった曲候補。レビュー受信箱へ渡る
@@ -152,6 +155,14 @@ updated_for: f517fa8
 **曲目は工程ではなく一本のパイプラインとして読まないと理解できない**ので、縦で切ってある。
 同じ理由で、`export_public_events.py` そのものは公開L1が `owns` したままにしてある（1ファイルを2つの仕様が持てないため）。
 
+### 1a. LLMが本文を読んで観測台帳へ記録する（手動・新経路）
+
+E0X回答を `apply_x_extraction_results.py` で取り込むと、5点イベントの `events[].songs` と、点数に関係なく返せる `observations[].songs` の両方を `data/x_song_observations.json` へ記録する。両方に同じ曲があれば `events` を先に扱い、安定IDで重複を止め、`origin` に `events` または `observations` を残す。URLが無い投稿でも観測は残せるが、投稿ID、原文、投稿日時、アカウント、公式性、原文上の行事名を来歴として保持する。
+
+この段階で確認するのは「曲名文字列が投稿本文にある」ことだけである。曲マスタとの同一性判断も、`occurrence_songs` / `event_occurrences` への接続も行わず、行事名が取れなければ `event_name: null` のまま残す。実装の安全境界は [判断・仕分けのINV-XPE-010〜013](02-judgment.md) が持ち、回答形式と受け入れ条件は [E0X-S設計](../../x-post-extraction-songs-v1.md) に置く。
+
+これは既存の正規表現抽出を置き換える経路ではない。まず観測台帳へ並走させ、再現率と誤検知を測ってから、曲マスタ照合・レビュー・開催回接続を第2段として設計する。
+
 ### 1. 候補を拾う（毎日）
 
 日次の `collect.yml`（毎日 約15:13 JST）で動くのは次の3つである。
@@ -208,7 +219,7 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
 **上流**
 
 - [収集](01-collection.md) — `voices.json` が薄い日は曲の入力そのものが無い。
-- [判断](02-judgment.md) — イベントと開催回が特定できていないと、曲を結びつける先が無い。
+- [判断](02-judgment.md) — E0X回答から曲名の観測台帳を作る。イベントと開催回が特定できていないと、曲を結びつける先が無い。
 - [レビュー](03-review.md) — 曲の同一性はここでしか確定しない。**この工程の実質的な律速**。
 - [マスタ](04-master.md) / [マスタRDBスキーマ契約](../L2/master-schema.md) — `songs`・`song_aliases`・`occurrence_songs` の形。
 
@@ -236,6 +247,8 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
 
 ## 未解決・注意点
 
+- **E0X-Sは第1段の観測だけで、曲マスタ・レビュー・開催回へ未接続である。** `data/x_song_observations.json` をどの照合器へ渡し、同名曲や表記揺れをどう裁定するかは第2段で決める。観測が増えても公開曲目はまだ増えない。
+- **既存の正規表現経路は稼働したままである。** E0X-Sの品質を実測する前に置き換えない。二つの経路の件数差を「重複」だけと決めつけず、本文照合・再現率・誤検知を比較する。
 - **週次収穫レビューが2026-06-25から動いていない。** `weekly_harvest.yml` は
   `manual-harvest-fallback` という手動起動のworkflowになっており、定期実行されていない。
   INV-SNG-001の抑制リストは、この停止の応急処置として存在している。レビューが戻れば

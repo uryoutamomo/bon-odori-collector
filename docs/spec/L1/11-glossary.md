@@ -27,7 +27,8 @@ verified_by:
   - tests/test_event_alias_runtime.py
   - tests/test_series_alias_migration.py
   - tests/test_local_glossary_manual_policy.py
-updated_for: 83bf7d0
+  - tests/test_x_post_extraction_songs.py
+updated_for: 7bcacd0
 ---
 
 # 用語集・別名サブシステム
@@ -47,6 +48,7 @@ updated_for: 83bf7d0
 
 | 区分 | 正本・入力 | 出力 | 実行状態 |
 |---|---|---|---|
+| X界隈語観測 | E0X回答の `glossary` と投稿本文 | `data/x_glossary_observations.json` | `apply_x_extraction_results.py` 実行時に生成。用語集v2・Notion・runtimeへ未接続 |
 | 用語runtime | Notion の用語集v2 DB。状態・確度・自動適用可・役割を読む | `data/glossary_runtime.json` | `collect.yml` が日次実行・mainへcommit |
 | 別名runtime | Master RDB の `event_series_aliases` / `venue_aliases` と既存runtime | `data/event_alias_runtime.json` | `collect.yml` が日次実行・mainへcommit |
 | 用語候補シード | `voices.json`、公開イベント、旧会場JSON | `data/glossary_v2_seed_candidates.json` | 呼び出し元なし。休眠候補 |
@@ -89,6 +91,12 @@ updated_for: 83bf7d0
 `event_model/series_alias_migration.py` はL1-masterが所有する。このL1は実行入口を持つだけで、移行本体のschema契約やマスタ所有を重複定義しない。`apply_curated_youtube_aliases.py` と `youtube_backfill/event_aliases.py` もL1-youtubeの所有であり、runtimeの利用先として参照するがここでは所有しない。
 
 ## 主要な流れ
+
+### 0. X投稿から界隈語観測を貯める（新設・未接続）
+
+E0X回答の `glossary` にある文字列を `apply_x_extraction_results.py` が投稿本文へ照合し、原表記のまま `data/x_glossary_observations.json` へ集約する。語ごとに全件の `source_tweet_ids` と最大5件の例を持ち、`count` はtweet IDの件数から導出する。同じ回答を再取り込みしても増えない。
+
+この台帳は「投稿本文で見た語」の観測であり、Notion用語集v2の候補・有効状態や `glossary_runtime.json` ではない。自動適用可否を決めず、Notionへ書かず、日次収集の判断規則も変えない。本文照合・冪等性・異常要素の隔離は [判断・仕分けのINV-XPE-010〜013](02-judgment.md)、回答形式は [E0X-S設計](../../x-post-extraction-songs-v1.md) を参照する。
 
 ### 1. 用語集v2から日次runtimeを作る（稼働中）
 
@@ -162,6 +170,7 @@ YouTube側のRDBへの別名投入 `apply_curated_youtube_aliases.py` は、L1-y
 
 ## 未解決・注意点
 
+- **X界隈語観測は用語集v2へ未接続である。** 観測回数が多くても候補採用や自動適用を意味しない。第2段で候補化、レビュー、Notion正本への反映を別々に設計する必要がある。
 - **用語runtimeの空出力防止は別名runtimeほど確認できていない。** Notion token／DB IDが無いと `load_glossary_v2()` は空辞書を返す。日次が空artifactをcommitしてよいかの明示的保護は、別途検討が必要である。
 - **公開用用語集の自動接続は未確認ではなく、現状のworkflow／Python検索では未接続である。** 手動exportがsiteへ書くことと、本番サイトに反映されることは別である。
 - **候補シードとレビューUIは日次ではない。** `build_glossary_v2_seed_candidates.py`、`merge_glossary_v2_oto_reports.py`、`build_glossary_review_ui.py` を日次へ足すには、候補の正本、レビュー境界、artifactのcommit方針を決める必要がある。

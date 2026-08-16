@@ -23,9 +23,15 @@ invariants:
   - INV-XPE-007
   - INV-XPE-008
   - INV-XPE-009
+  - INV-XPE-010
+  - INV-XPE-011
+  - INV-XPE-012
+  - INV-XPE-013
 verified_by:
   - tests/test_event_evidence.py
-updated_for: 6537e7f
+  - tests/test_x_post_extraction_e0x.py
+  - tests/test_x_post_extraction_songs.py
+updated_for: 7bcacd0
 ---
 
 # 自動判断サブシステム
@@ -38,7 +44,7 @@ updated_for: 6537e7f
 
 ## 入力と出力
 
-入力は収集済みの投稿と除外語・地理・公式性の設定。出力はイベント候補の本文、根拠、スコア、推定日付・会場・関連キーである。
+入力は収集済みの投稿と除外語・地理・公式性の設定。出力はイベント候補の本文、根拠、スコア、推定日付・会場・関連キーに加え、E0X回答から作る曲名観測 `data/x_song_observations.json` と界隈語観測 `data/x_glossary_observations.json` である。観測台帳は候補を失わないための中間出力であり、曲マスタ、開催回、用語集runtimeへはまだ接続しない。
 
 ## 不変条件
 
@@ -122,11 +128,44 @@ updated_for: 6537e7f
 - **守っているコード**: `build_x_extraction_packets.py` の `build()`
 - **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_since_defaults_to_yesterday_and_max_batches_defers_the_rest`
 
+### INV-XPE-010 曲名・界隈語は投稿本文に書かれた文字列だけを観測する
+
+- **内容**: `apply_x_extraction_results.py` は文字列型の曲名・界隈語だけを受け入れ、NFKC正規化と空白・中黒・長音の除去後に投稿本文へ含まれることを照合する。ひらがなとカタカナは同一視しない。照合できない1要素はissueへ落とし、同じ回答の他要素を巻き込まない。
+- **なぜ**: LLMが本文に無い曲名や用語を補完すると、未確認情報が観測台帳へ事実のように蓄積されるから。一方、表記上の中黒・長音・全半角差だけで本文由来の語を落とすと、実在する観測を失うから。
+- **破れたときの症状**: 本文に無い曲・語が候補化される／「ダンシング・ヒーロー」と「ダンシングヒロ」のような表記差で観測が消える／ひらがな・カタカナの別語が誤結合される。
+- **守っているコード**: `apply_x_extraction_results.py` の `_material_text()`、`_appears_in_text()`、`_record_materials()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_01_records_song_found_in_text`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_02_rejects_song_not_found_in_text`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_12_normalizes_middle_dot_long_mark_and_width`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_13_does_not_fold_hiragana_and_katakana`
+
+### INV-XPE-011 第1段の曲名観測は曲マスタや開催回へ自動接続しない
+
+- **内容**: E0X-Sの第1段は `data/x_song_observations.json` に原文由来の観測を積むだけで、`songs`、`song_aliases`、`occurrence_songs`、`event_occurrences` を読まず、書かない。`event_name` が無い観測も `null` のまま保持する。
+- **なぜ**: 同名曲、表記揺れ、行事不明の投稿があるため、文字列抽出と曲の同一性判断・開催回への紐付けを一度に行うと誤結合が正本へ入るから。
+- **破れたときの症状**: 投稿に曲名があっただけで、別の曲や開催回へ自動登録される。
+- **守っているコード**: `apply_x_extraction_results.py` の `_record_song_group()` と `_record_materials()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_04_records_null_event_name`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_17_has_no_occurrence_songs_write_path`
+
+### INV-XPE-012 同じ回答を再取り込みしても観測件数を増やさない
+
+- **内容**: 曲名観測は投稿ID・正規化済み行事名・正規化済み曲名から安定IDを作る。界隈語観測は全件の `source_tweet_ids` を保持し、`count` をその配列の長さから導出する。表示用の `examples` は5件で止めても、重複判定の根拠は失わない。
+- **なぜ**: 回答の再送や再実行は通常運用で起きる。例示上限を重複判定に兼用すると、6件目以降の再取り込みで件数だけが増え続けるから。
+- **破れたときの症状**: 同じ投稿を再処理するたびに曲観測や用語のcountが増える。
+- **守っているコード**: `apply_x_extraction_results.py` の `_record_song_group()` と `_record_glossary()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_06_song_observations_are_idempotent`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_18_glossary_count_is_idempotent_after_examples_fill`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_19_count_always_matches_source_tweet_ids`
+
+### INV-XPE-013 曲名・界隈語の壊れた要素は採点・レポート・他観測を止めない
+
+- **内容**: `observations`、各観測、`songs`、`glossary` の型不正は要素単位のissueにし、既存の採点、5点イベントレポート、同じ投稿の正常な曲名・界隈語を処理し続ける。取り込みレポートは曲名と界隈語のissue件数を分けて残す。
+- **なぜ**: 補助的な観測の形式不正で既存E0X経路まで失敗すると、開催情報の取り込みと再現可能な採点記録を同時に失うから。
+- **破れたときの症状**: 1曲の型不正で投稿全体の採点・レポートが消える／どちらの観測が壊れたかレポートから判別できない。
+- **守っているコード**: `apply_x_extraction_results.py` の `_record_materials()` と `apply()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_03_keeps_valid_song_when_sibling_is_invalid`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_14_malformed_observations_do_not_stop_other_processing`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_20_bad_event_name_does_not_stop_glossary_or_scoring`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_21_bad_glossary_does_not_stop_song_score_or_report`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_25_separates_song_and_glossary_issue_counts`
+
 ## 主要な流れ
 
-1. 文面から時期・地域・会場・曲・団体を抽出する。
-2. 除外語と盆踊り文脈を評価し、理由つきの点数を計算する。
-3. 同一候補を関連キーでまとめ、優先候補としてレビューへ渡す。
+1. 文面から時期・地域・会場・曲・団体・界隈語を抽出する。
+2. `apply_x_extraction_results.py` が本文照合を行い、曲名・界隈語をそれぞれの観測台帳へ冪等に記録する。
+3. 除外語と盆踊り文脈を評価し、理由つきの点数を計算する。
+4. 同一候補を関連キーでまとめ、優先候補としてレビューへ渡す。曲名・界隈語の観測はこの段階では正本や開催回へ結び付けない。
 
 ## 依存と影響
 
@@ -138,7 +177,7 @@ updated_for: 6537e7f
 
 ## 未解決・注意点
 
-スコアは真実性の証明ではない。公式確認や人の承認を省略する根拠にはならない。
+スコアは真実性の証明ではない。公式確認や人の承認を省略する根拠にはならない。曲名・界隈語の観測台帳も同様に「投稿本文にこの文字列があった」という記録であり、曲の同一性、開催回との関係、用語の自動適用可否を確定しない。第2段の照合・レビュー経路は未実装である。詳細は [E0X-S設計](../../x-post-extraction-songs-v1.md) を参照する。
 
 ---
 
