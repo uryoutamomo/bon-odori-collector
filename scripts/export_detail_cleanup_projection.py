@@ -3,7 +3,14 @@
 
 import argparse
 import json
+import sys
 from pathlib import Path
+
+# `python scripts/...` puts only scripts/ on sys.path.  Keep this direct CLI
+# usable from the repository root, like the repair workflow invokes it.
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from export_public_events import build_public_events_from_master, project_public_events
 

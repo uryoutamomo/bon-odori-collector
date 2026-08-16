@@ -28,7 +28,7 @@ verified_by:
   - tests/test_e0b_bridge.py
   - tests/test_verify_detail_cleanup_repair.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: fcb8277
+updated_for: 64f2371
 ---
 
 # 公開サブシステム
