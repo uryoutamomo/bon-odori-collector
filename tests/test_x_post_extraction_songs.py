@@ -467,20 +467,28 @@ class XPostExtractionSongsTest(unittest.TestCase):
         self.assertEqual(songs["observations"][0]["origin"], "events")
 
     def test_v2_is_idempotent_and_conflicting_reanswer_is_held(self):
-        def result_for(claim_type):
+        def result_for(claim_type, evidence_quote="東京音頭を踊った"):
             return [{"no": 1, "s": 4, "observations": [{
                 "event_name": None,
                 "song_claims": [{
-                    "song_name": "東京音頭", "claim_type": claim_type, "evidence_quote": "東京音頭を踊った",
+                    "song_name": "東京音頭", "claim_type": claim_type, "evidence_quote": evidence_quote,
                 }],
             }]}]
-        _, songs, glossary, state = self.run_apply(result_for("observed"))
+        source = "きのう東京音頭を踊った。東京音頭は来年も流す予定"
+        _, songs, glossary, state = self.run_apply(
+            result_for("observed", "きのう東京音頭を踊った"),
+            items=[item(text=source)],
+        )
         repeat, songs, _, _ = self.run_apply(
-            result_for("observed"), song_ledger=songs, glossary_ledger=glossary, state=state
+            result_for("observed", "きのう東京音頭を踊った"),
+            items=[item(text=source)],
+            song_ledger=songs, glossary_ledger=glossary, state=state
         )
         self.assertEqual((len(songs["observations"]), repeat["song_observation_count"]), (1, 0))
         conflict, songs, _, _ = self.run_apply(
-            result_for("announced"), song_ledger=songs, glossary_ledger=glossary, state=state
+            result_for("announced", "東京音頭は来年も流す予定"),
+            items=[item(text=source)],
+            song_ledger=songs, glossary_ledger=glossary, state=state
         )
         self.assertEqual(len(songs["observations"]), 2)
         self.assertTrue(all(row["claim_type_conflict"] for row in songs["observations"]))

@@ -184,8 +184,10 @@ E0レポート側のイベントにも `entry_id=report_event_id` を書く。�
 `event_name_in_text` は行事名が本文にあったか、`event_report_verified` は実在するE0レポート系譜が付いたかを
 別々に表す。後段はこの2つを混同しない。
 
-`claim_family_id` は投稿・行事文脈・曲名・根拠quoteから作る。`observation_id` はそこへclaim_typeを加える。
-同じ回答の再取り込みは同じIDになり、claim_typeだけが食い違う再回答は同じfamilyの競合として残る。
+`claim_family_id` は投稿・行事文脈・曲名から作る。引用範囲は、同じ本文を読むたびに前後へ少し伸び縮みしても
+同じclaimを指すため、family IDへ入れない。`observation_id` はfamilyへclaim_typeを加える。
+同じ回答の再取り込みは同じIDになり、引用範囲とclaim_typeの両方が食い違う再回答でも
+同じfamilyの競合として残る。
 同一familyに複数のclaim_typeがある場合、後段は自動公開せず `claim_type_conflict` にする。
 
 ## 7. 既存15件
@@ -223,6 +225,7 @@ E0レポート側のイベントにも `entry_id=report_event_id` を書く。�
 11. 旧文字列形式はunknownとして受理される。
 12. v1既存行のID・件数は不変で、claim_type欠落はunknownになる。
 13. 同一familyでclaim_typeが競合した場合、後段公開不可になる。
+    引用範囲だけ変えた再回答でもfamilyを分裂させない。
 14. 点数とeventsの形が不整合でも曲claimを救い、E0レポートだけ5点に限定する。
 15. `results` が配列でなくてもクラッシュしない。
 16. 取り込みレポートにclaim_type別の追加件数・累計を出す。

@@ -445,9 +445,7 @@ def _record_song_group(
                 event_date_end or "",
                 _material_text(event_venue_name or ""),
                 _material_text(event_ward or ""),
-                _material_text(event_quote or ""),
                 _material_text(song_name),
-                _material_text(evidence_quote or ""),
             )
             observation_id = stable_id("xsong2", claim_family_id, claim_type)
         if observation_id in existing_ids:
