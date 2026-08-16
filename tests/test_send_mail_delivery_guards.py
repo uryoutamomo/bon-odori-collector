@@ -164,6 +164,65 @@ class SendMailRecipientConfigurationTest(unittest.TestCase):
             self.assertTrue(draft.exists())
             sender.assert_not_called()
 
+    def test_blank_mail_to_never_falls_back_to_a_hardcoded_recipient(self):
+        """MAIL_TO が「設定はされているが実質空」でも、既定の宛先へ送らない。
+
+        `test_mail_to_is_required_and_draft_is_kept` は MAIL_TO=None を見ているが、
+        その経路は main() の設定不足チェックで先に止まるため、`get_recipients()` の中身が
+        既定の宛先を返す形へ戻されても検出できない（実際に変異を当てて空振りを確認した）。
+        ここではカンマだけ・空白だけを渡し、宛先解決そのものが止まることを見る。
+        """
+        for value in [",", "  ", " , , "]:
+            with self.subTest(mail_to=value):
+                with patch.object(send_mail, "MAIL_TO", value):
+                    with self.assertRaises(ValueError):
+                        send_mail.get_recipients()
+
+        with TemporaryDirectory() as tmp:
+            draft = Path(tmp) / "sending_mail.json"
+            draft.write_text(json.dumps({"subject": "件名", "plain": "本文"}), encoding="utf-8")
+
+            with patch.object(send_mail, "MAIL_USERNAME", "user@example.com"), \
+                    patch.object(send_mail, "MAIL_APP_PASSWORD", "pw"), \
+                    patch.object(send_mail, "MAIL_TO", ","), \
+                    patch.object(send_mail, "send_mail") as sender:
+                exit_code = send_mail.main(draft)
+
+            self.assertEqual(exit_code, 1)
+            self.assertTrue(draft.exists())
+            sender.assert_not_called()
+
+    def test_malformed_recipient_stops_delivery(self):
+        """宛先の形が壊れていたら送らない。改行入りはヘッダインジェクションになる。
+
+        SMTPヘッダへ改行を持ち込めると、宛先を増やしたり件名を差し替えたりできる。
+        MAIL_TO はSecret なので外部から直接は触れないが、検査を書いた以上は
+        戻されたことに気づけるようにしておく（この検査を外す変異が空振りしていた）。
+        """
+        for value in ["bad-address",
+                      "ok@example.com\r\nBcc: someone@example.com",
+                      "ok@example.com\nBcc: someone@example.com"]:
+            with self.subTest(mail_to=value):
+                with patch.object(send_mail, "MAIL_TO", value):
+                    with self.assertRaises(ValueError):
+                        send_mail.get_recipients()
+
+    def test_valid_recipient_alongside_a_malformed_one_is_not_sent(self):
+        """1件でも壊れていたら、正しい宛先の分だけ送るようなことはしない。"""
+        with TemporaryDirectory() as tmp:
+            draft = Path(tmp) / "sending_mail.json"
+            draft.write_text(json.dumps({"subject": "件名", "plain": "本文"}), encoding="utf-8")
+
+            with patch.object(send_mail, "MAIL_USERNAME", "user@example.com"), \
+                    patch.object(send_mail, "MAIL_APP_PASSWORD", "pw"), \
+                    patch.object(send_mail, "MAIL_TO", "good@example.com, broken"), \
+                    patch.object(send_mail, "send_mail") as sender:
+                exit_code = send_mail.main(draft)
+
+            self.assertEqual(exit_code, 1)
+            self.assertTrue(draft.exists())
+            sender.assert_not_called()
+
     def test_recipients_come_only_from_mail_to_and_are_deduplicated(self):
         with patch.object(
             send_mail,
