@@ -97,7 +97,8 @@ class XPostExtractionE0XTest(unittest.TestCase):
     def test_bundle_keeps_first_representative_and_never_rewrites_events(self):
         text="8月20日に試験公園で試験盆踊りを開催"
         first={"no":1,"tweet_id":"a","url":"https://x/first","account":"@a","text":text,"machine_extracted_dates":["2026-08-20","2026-08-21"]}
-        # 後から届く投稿のほうが posted_at は早い。代表が入れ替わらないことを見る。
+        # 後続の投稿は本文も date_end も違う。投稿順に関係なく代表が動かないことを見る
+        # （実装は posted_at を見ずに「既にレポートがあるか」だけで判断するので、これがより強い検査になる）。
         later={"no":1,"tweet_id":"b","url":"https://x/later","account":"@b","text":text+"（21日まで）","machine_extracted_dates":["2026-08-20","2026-08-21"]}
         event={"event_name":"試験盆踊り","date_start":"2026-08-20","venue_name":"試験公園","quote":text}
         with tempfile.TemporaryDirectory() as temp:
