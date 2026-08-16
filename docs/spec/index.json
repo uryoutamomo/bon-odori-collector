@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T15:28:05Z",
-  "generated_for_commit": "a1e1c18",
+  "generated_at": "2026-08-16T15:45:25Z",
+  "generated_for_commit": "c753ca9",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -478,7 +478,7 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 3
       },
       "version": "1.11",
