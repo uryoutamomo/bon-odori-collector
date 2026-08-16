@@ -287,7 +287,9 @@ def apply(
     now: datetime | None = None,
 ) -> dict:
     now = now or datetime.now(timezone.utc)
-    today = today or now.date()
+    # Preserve the existing local-calendar cutoff for event dates. `now` is UTC
+    # because it is only used for persisted timestamps.
+    today = today or date.today()
     stamp = now.isoformat()
     issues: list[dict] = []
     reports: list[str] = []
