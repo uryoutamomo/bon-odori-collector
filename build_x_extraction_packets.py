@@ -63,12 +63,24 @@ def _state_rows(state: dict) -> dict:
     return state.get("tweets", state) if isinstance(state, dict) else {}
 
 
-def build(voices: list[dict], state: dict, *, batch_size: int = 300, now: datetime | None = None, reissue: bool = False) -> list[dict]:
+def build(voices: list[dict], state: dict, *, batch_size: int = 300, now: datetime | None = None,
+          reissue: bool = False, since: date | None = None, max_batches: int = 10) -> list[dict]:
+    """voices からパケットを組む。
+
+    `voices.json` は日次の差分ではなく**累積**（2026-08-16 時点で X 系 32,476件）なので、
+    投稿日の下限を置かないと state が空の初回実行で102バッチ＝30,557件が対象になる。
+    実測では1日分が約780件（3バッチ）なので、既定は「前日以降」にしてある。
+    過去へ遡りたいときだけ `since` を明示する。
+    """
     now = now or datetime.now(timezone.utc)
+    since = since or (now.date() - timedelta(days=1))
     rows = _state_rows(state)
     selected, text_seen = [], set()
     for voice in voices:
         if not isinstance(voice, dict) or voice.get("source") not in X_SOURCES:
+            continue
+        # 投稿日が読めないものは落とさず通す（読ませない側へ倒さない）。
+        if _posted_date(_posted_at(voice), now.date()) < since:
             continue
         text = str(voice.get("text") or voice.get("title") or "")
         dedupe = normalized_text(text)
@@ -99,7 +111,8 @@ def build(voices: list[dict], state: dict, *, batch_size: int = 300, now: dateti
             "text": text, "has_media": bool(voice.get("has_media") or voice.get("media")),
             "machine_extracted_dates": machine_dates(text, posted_at, today=now.date())})
     packets=[]
-    for offset in range(0, len(selected), batch_size):
+    # 上限を超えた分は捨てず、state へ issued を書かないので次回そのまま出てくる。
+    for offset in range(0, min(len(selected), batch_size * max_batches), batch_size):
         number = offset // batch_size + 1
         batch_id = f"x_extraction_{now:%Y%m%d}_{number:02d}"
         items=[]
@@ -130,11 +143,16 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--voices", type=Path, default=Path("data/voices.json")); p.add_argument("--state", type=Path, default=Path("data/x_extraction_state.json"))
     p.add_argument("--out-dir", type=Path, default=Path("data/x_extraction_packets")); p.add_argument("--batch-size", type=int, default=300); p.add_argument("--reissue", action="store_true")
+    p.add_argument("--since", type=date.fromisoformat, help="この日以降に投稿されたものだけを対象にする（既定は前日以降）")
+    p.add_argument("--max-batches", type=int, default=10, help="1回に出すバッチ数の上限。超えた分は次回へ残す")
     a = p.parse_args()
     if a.batch_size < 1: p.error("--batch-size must be positive")
-    packets = build(load_json(a.voices, []), load_json(a.state, {"tweets": {}}), batch_size=a.batch_size, reissue=a.reissue)
-    write_packets(packets, load_json(a.state, {"tweets": {}}), a.out_dir, a.state)
-    print(f"x extraction packets: {len(packets)}")
+    if a.max_batches < 1: p.error("--max-batches must be positive")
+    state = load_json(a.state, {"tweets": {}})
+    packets = build(load_json(a.voices, []), state, batch_size=a.batch_size, reissue=a.reissue,
+                    since=a.since, max_batches=a.max_batches)
+    write_packets(packets, state, a.out_dir, a.state)
+    print(f"x extraction packets: {len(packets)} batches / {sum(len(p['packets']) for p in packets)} posts")
 
 
 if __name__ == "__main__": main()

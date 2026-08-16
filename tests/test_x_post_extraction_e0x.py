@@ -10,7 +10,9 @@ from build_x_extraction_packets import build, machine_dates
 
 
 def voice(tweet_id, text, **extra):
-    return {"source": "x", "tweet_id": tweet_id, "url": f"https://x.example/{tweet_id}", "account": "@person", "posted_at": "2026-08-10T00:00:00+00:00", "text": text, **extra}
+    # 既定は「テストの now（2026-08-16）から見て対象になる日付」。voices.json は累積なので
+    # build() は既定で前日以降しか拾わない（古い日付を試したいテストは posted_at を明示する）。
+    return {"source": "x", "tweet_id": tweet_id, "url": f"https://x.example/{tweet_id}", "account": "@person", "posted_at": "2026-08-16T00:00:00+00:00", "text": text, **extra}
 
 
 class XPostExtractionE0XTest(unittest.TestCase):
@@ -68,6 +70,22 @@ class XPostExtractionE0XTest(unittest.TestCase):
         waiting={"tweets":{"b":{"issued_at":"2026-08-16T00:00:00+00:00","batch_id":"old","applied_at":None}}}
         self.assertEqual(build([voice("b","回答待ちの投稿")],waiting,now=now),[])
         self.assertEqual(len(build([voice("b","回答待ちの投稿")],waiting,now=now,reissue=True)[0]["packets"]),1)
+
+    # --- 流量：累積voicesを初回に全部読ませない／上限超過は捨てずに残す ---
+    def test_since_defaults_to_yesterday_and_max_batches_defers_the_rest(self):
+        now=datetime(2026,8,16,12,tzinfo=timezone.utc)
+        old=[voice(f"old{i}",f"古い投稿{i}",posted_at="2026-07-01T00:00:00+00:00") for i in range(3)]
+        fresh=[voice(f"new{i}",f"新しい投稿{i}",posted_at="2026-08-16T00:00:00+00:00") for i in range(3)]
+        packets=build(old+fresh,{"tweets":{}},batch_size=10,now=now)
+        ids={item["tweet_id"] for packet in packets for item in packet["packets"]}
+        self.assertEqual(ids,{"new0","new1","new2"},"既定では前日以降だけを対象にする")
+        packets=build(old+fresh,{"tweets":{}},batch_size=10,now=now,since=date(2026,6,1))
+        self.assertEqual(len({item["tweet_id"] for packet in packets for item in packet["packets"]}),6,
+                         "--since を遡らせれば過去分も読める")
+        # 上限を超えた分は state に issued が付かないので、次回そのまま出てくる
+        capped=build(fresh,{"tweets":{}},batch_size=1,now=now,max_batches=2)
+        self.assertEqual(len(capped),2)
+        self.assertEqual(sum(len(p["packets"]) for p in capped),2,"上限を超えたバッチは出さない")
 
     # --- 受け入れ条件10・11：本文に無い日付／逆転した範囲 ---
     def test_dates_outside_the_text_and_reversed_ranges_are_rejected(self):

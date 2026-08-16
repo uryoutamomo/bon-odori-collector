@@ -22,6 +22,7 @@ invariants:
   - INV-XPE-006
   - INV-XPE-007
   - INV-XPE-008
+  - INV-XPE-009
 verified_by:
   - tests/test_event_evidence.py
 updated_for: 6537e7f
@@ -112,6 +113,14 @@ updated_for: 6537e7f
 - **破れたときの症状**: 同じ開催情報を再取り込みしただけでレビュー候補が増える。
 - **守っているコード**: `apply_x_extraction_results.py` の `apply()`
 - **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_bundle_keeps_first_representative_and_never_rewrites_events`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+
+### INV-XPE-009 累積voicesから読ませるのは既定で前日以降だけ、超過分は次回へ残す
+
+- **内容**: `build()` は `--since`（既定＝前日）以降の投稿だけを対象にし、`--max-batches`（既定10）で1回の出力を制限する。上限を超えた投稿には `issued_at` を書かないので、次回そのままパケットへ出る。
+- **なぜ**: `voices.json` は日次の差分ではなく**累積**で、2026-08-16 時点でX系だけで32,476件ある。下限を置かないと初回実行が102バッチ（30,557件）になり、判定が回らない。実測では前日以降だけで3バッチ（778件）に収まる。
+- **破れたときの症状**: 初回や再構築のたびに数万件のパケットが生成され、判定が事実上不可能になる／上限で切った分が捨てられて二度と読まれない。
+- **守っているコード**: `build_x_extraction_packets.py` の `build()`
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_since_defaults_to_yesterday_and_max_batches_defers_the_rest`
 
 ## 主要な流れ
 
