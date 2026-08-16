@@ -118,6 +118,15 @@ def public_source_index(path):
     return indexed
 
 
+def nonempty_source_urls(event):
+    """Match the public projection's representation: empty aggregate URLs carry no URL identity."""
+    return {
+        str(source.get("url") or "").strip()
+        for source in (event.get("source_urls") or [])
+        if str(source.get("url") or "").strip()
+    }
+
+
 def verify_public(before, after, before_map, after_map, expected):
     before_rows = json.loads(Path(before).read_text(encoding="utf-8"))
     after_rows = json.loads(Path(after).read_text(encoding="utf-8"))
@@ -142,8 +151,10 @@ def verify_public(before, after, before_map, after_map, expected):
         raise ValueError(f"unexpected public event changes: {sorted(changed)}")
     for key in expected:
         differences = {field for field in before_index[key] | after_index[key] if before_index[key].get(field) != after_index[key].get(field)}
-        if differences != {"detail"} or after_index[key].get("detail") != expected[key]:
+        if differences - {"detail", "source_urls"} or after_index[key].get("detail") != expected[key]:
             raise ValueError(f"public event changed outside detail: {key}: {sorted(differences)}")
+        if "source_urls" in differences and nonempty_source_urls(before_index[key]) != nonempty_source_urls(after_index[key]):
+            raise ValueError(f"public source URL identity changed: {key}")
 
 
 def verify(before, after, report, apply_report=None, audit_report=None, public_before=None, public_after=None, public_before_source_map=None, public_after_source_map=None):
