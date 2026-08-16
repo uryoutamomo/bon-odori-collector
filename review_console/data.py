@@ -13,10 +13,11 @@ import tempfile
 import threading
 from collections import Counter
 from dataclasses import dataclass, field
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from master_rdb.master_db import stable_id
 from review_console_ops import collect_ops_metrics
 from review_inbox_adapters.decision_stage import UPDATES_FILE, build_decision_stage, write_decision_stage
 from youtube_backfill.youtube_title_parts import split_youtube_title
@@ -35,6 +36,8 @@ STAGED_DIR = CONSOLE_DIR / "staged"
 STAGE_RESULT_PATH = STAGED_DIR / "stage_apply_result.json"
 STAGE_ACK_PATH = STAGED_DIR / "stage_apply_ack.json"
 SONG_MASTER_PATH = DATA_DIR / "youtube_song_master.json"
+ADJUDICATIONS_PATH = CONSOLE_DIR / "adjudications.json"
+ADJUDICATION_COMMAND = 'python3 review_inbox_adapters/apply_user_adjudications.py --apply --confirm "APPLY USER ADJUDICATIONS" --actor-id uchida'
 
 _INVENTORY_CACHE: dict[tuple[str, str, str], dict[str, Any]] = {}
 _DECISION_LOCKS: dict[str, threading.RLock] = {}
@@ -633,6 +636,166 @@ def write_json_atomic(path: Path, payload: Any) -> None:
         tmp_path = Path(tmp_name)
         if tmp_path.exists():
             tmp_path.unlink()
+
+
+# J0-adjudication is intentionally separate from decisions.json and its export
+# pipeline.  These helpers are the only console-side persistence entrypoint.
+def load_adjudications(path: Path = ADJUDICATIONS_PATH) -> dict[str, Any]:
+    payload = read_json(path, {"schema_version": 1, "adjudications": []})
+    if not isinstance(payload, dict) or not isinstance(payload.get("adjudications"), list):
+        raise ValueError("invalid adjudications.json")
+    payload.setdefault("schema_version", 1)
+    return payload
+
+
+def _parse_json(value: Any, default: Any):
+    try:
+        return json.loads(value) if value else default
+    except (TypeError, ValueError):
+        return default
+
+
+def _adjudication_db(db_path: Path | None = None) -> Path:
+    return Path(db_path or (DATA_DIR / "bon_odori_master.sqlite"))
+
+
+def _adjudication_connect(db_path: Path | None = None):
+    """Open the master RDB without ever creating it.
+
+    `sqlite3.connect` makes an empty file when the path is missing.  Doing that at
+    `data/bon_odori_master.sqlite` would leave a 0-byte file where the master
+    database belongs, which later tools would open as an empty master.
+    """
+    path = _adjudication_db(db_path)
+    if not path.exists():
+        raise FileNotFoundError(path)
+    conn = sqlite3.connect(path)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+
+def _packet_for_id(packet_id: str, packets_dir: Path = DATA_DIR / "judgment_packets") -> dict[str, Any] | None:
+    for path in sorted(packets_dir.glob("batch_*.json")):
+        for packet in read_json(path, {}).get("packets", []):
+            if packet.get("packet_id") == packet_id:
+                return packet
+    return None
+
+
+def _hold_row(conn, hold_id: str):
+    row = conn.execute("SELECT * FROM review_hold_ledger WHERE hold_id=?", (hold_id,)).fetchone()
+    return dict(row) if row else None
+
+
+def load_adjudication_holds(db_path: Path | None = None, packets_dir: Path = DATA_DIR / "judgment_packets") -> list[dict[str, Any]]:
+    now = datetime.now(timezone.utc)
+    if not _adjudication_db(db_path).exists():
+        return []
+    with _adjudication_connect(db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        # 本番 master RDB へは J0 の migration をまだ当てていない。台帳が無い間に
+        # 裁定タブを開いても画面が落ちないよう、空一覧を返す。
+        present = {row[0] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        if not {"review_hold_ledger", "review_claim_ledger", "canonical_decision_ledger"} <= present:
+            return []
+        rows = conn.execute("""SELECT h.*, c.claimed_by, c.claim_kind, c.expires_at AS claim_expires,
+          i.title, i.event_name, i.venue, i.event_year, i.source_url,
+          d.packet_id AS prior_packet_id, d.payload_json AS prior_payload_json
+          FROM review_hold_ledger h
+          LEFT JOIN review_claim_ledger c ON c.inbox_id=h.inbox_id
+          LEFT JOIN review_inbox_items i ON i.inbox_id=h.inbox_id
+          LEFT JOIN canonical_decision_ledger d ON d.decision_id=h.prior_agent_attempt_id
+          WHERE h.status='open' AND h.hold_mode='awaiting_user'
+          ORDER BY COALESCE(h.expires_at, '9999-12-31T00:00:00+00:00'), h.opened_at""").fetchall()
+    out=[]
+    for source in rows:
+        row=dict(source); row["allowed_actions"]=_parse_json(row["allowed_actions"], []); row["candidate_ids"]=_parse_json(row["candidate_ids"], [])
+        expires = row.get("expires_at")
+        expired = bool(expires and datetime.fromisoformat(expires.replace("Z", "+00:00")) <= now)
+        claim_other = row.get("claim_kind") == "user" and row.get("claim_expires") and datetime.fromisoformat(row["claim_expires"].replace("Z", "+00:00")) > now
+        packet = _packet_for_id(row.get("prior_packet_id", ""), packets_dir)
+        remaining = (datetime.fromisoformat(expires.replace("Z", "+00:00")) - now).days if expires else None
+        row.update({"expired": expired, "claim_other": bool(claim_other), "packet_available": packet is not None,
+                    "expires_in_days": remaining,
+                    "target_required": bool(row["candidate_ids"]),
+                    "batch_eligible": not row["candidate_ids"],
+                    "actionable": not expired and not claim_other and packet is not None,
+                    "action_disabled_reason": "期限切れ" if expired else ("他の画面で裁定中" if claim_other else ("packet が見つからないため裁定できません" if packet is None else None)),
+                    "agent_reason_detail": _parse_json(row.get("prior_payload_json"), {}).get("reason_detail"),
+                    "proposal": packet.get("proposal") if packet else None, "targets": packet.get("targets") if packet else None})
+        out.append(row)
+    return out
+
+
+def load_adjudication_hold(hold_id: str, **kwargs: Any) -> dict[str, Any] | None:
+    return next((row for row in load_adjudication_holds(**kwargs) if row["hold_id"] == hold_id), None)
+
+
+def claim_adjudication_hold(hold_id: str, claimed_by: str, release: bool = False, db_path: Path | None = None) -> dict[str, Any]:
+    now=datetime.now(timezone.utc); expiry=(now + timedelta(minutes=30)).isoformat()
+    with _adjudication_connect(db_path) as conn:
+        conn.row_factory=sqlite3.Row; hold=_hold_row(conn, hold_id)
+        if not hold or hold["status"] != "open" or hold["hold_mode"] != "awaiting_user": raise ValueError("hold is not actionable")
+        if release:
+            conn.execute("DELETE FROM review_claim_ledger WHERE inbox_id=? AND claim_kind='user' AND claimed_by=?", (hold["inbox_id"], claimed_by)); return {"released": True}
+        claim=conn.execute("SELECT * FROM review_claim_ledger WHERE inbox_id=?", (hold["inbox_id"],)).fetchone()
+        if claim and claim["claim_kind"] == "user" and claim["claimed_by"] != claimed_by and datetime.fromisoformat(claim["expires_at"].replace("Z", "+00:00")) > now: raise ValueError("hold is claimed by another user")
+        conn.execute("INSERT INTO review_claim_ledger(inbox_id,claimed_by,claim_kind,claimed_at,expires_at,batch_id) VALUES (?,?,?,?,?,?) ON CONFLICT(inbox_id) DO UPDATE SET claimed_by=excluded.claimed_by,claim_kind=excluded.claim_kind,claimed_at=excluded.claimed_at,expires_at=excluded.expires_at,batch_id=excluded.batch_id", (hold["inbox_id"],claimed_by,"user",now.isoformat(),expiry,None))
+        return {"claimed": True, "expires_at": expiry}
+
+
+# 対象IDが要るかどうかは `required_resolution_type` では決まらない。この列は
+# awaiting_user なら必ず "user_terminal_decision"（deferred_retry なら "scheduled_requeue"）で、
+# 「どのレーンで解決するか」しか表さない。実際に人が対象を選ぶ必要があるのは、agent が
+# 候補集合を凍結した hold＝`candidate_ids` が空でないものだけ（仕様 v1.2 §7.2）。
+def adjudication_target_required(hold: dict[str, Any], action: str) -> bool:
+    return action == "accept" and bool(_parse_json(hold["candidate_ids"], []))
+
+
+def _check_target(hold: dict[str, Any], action: str, target_id: str | None) -> None:
+    candidates = _parse_json(hold["candidate_ids"], []) or []
+    if adjudication_target_required(hold, action) and not target_id:
+        raise ValueError("target_id is required for this hold")
+    if target_id and target_id not in candidates:
+        raise ValueError("target_id is not in the frozen candidate set")
+
+
+def _record_adjudication(hold: dict[str, Any], action: str, target_id: str | None, reason_detail: str, decided_by: str, batch_id: str | None, path: Path) -> dict[str, Any]:
+    if hold["status"] != "open" or hold["hold_mode"] != "awaiting_user": raise ValueError("hold is not actionable")
+    if hold["expires_at"] and datetime.fromisoformat(hold["expires_at"].replace("Z", "+00:00")) <= datetime.now(timezone.utc): raise ValueError("hold has expired")
+    if action not in _parse_json(hold["allowed_actions"], []): raise ValueError("action is not allowed for this hold")
+    _check_target(hold, action, target_id)
+    row={"hold_id":hold["hold_id"],"inbox_id":hold["inbox_id"],"action":action,"target_id":target_id,"reason_detail":reason_detail,"candidate_set_sha256":hold["candidate_set_sha256"],"decided_by":decided_by,"recorded_at":datetime.now(timezone.utc).isoformat(),"batch_id":batch_id,"status":"pending","applied_at":None,"decision_id":None,"invalidated_at":None,"invalid_reason":None}
+    with decision_file_lock(path):
+        payload=load_adjudications(path); payload["adjudications"].append(row); write_json_atomic(path,payload)
+    return row
+
+
+def save_adjudication(hold_id: str, action: str, target_id: str | None = None, reason_detail: str = "", decided_by: str = "uchida", db_path: Path | None = None, path: Path = ADJUDICATIONS_PATH) -> dict[str, Any]:
+    with _adjudication_connect(db_path) as conn:
+        conn.row_factory=sqlite3.Row; hold=_hold_row(conn,hold_id)
+    if not hold: raise ValueError("hold not found")
+    return _record_adjudication(hold,action,target_id,reason_detail,decided_by,None,path)
+
+
+def save_adjudication_batch(hold_ids: list[str], action: str, reason_detail: str = "", decided_by: str = "uchida", db_path: Path | None = None, path: Path = ADJUDICATIONS_PATH) -> list[dict[str, Any]]:
+    if not hold_ids: raise ValueError("hold_ids is required")
+    with _adjudication_connect(db_path) as conn:
+        conn.row_factory=sqlite3.Row; holds=[_hold_row(conn,x) for x in hold_ids]
+    if any(not h for h in holds): raise ValueError("hold not found")
+    groups={h["grouping_fingerprint"] for h in holds}
+    # 候補集合が凍結された hold は一括から外す。まとめて裁くと「1位候補へ暗黙に寄せる」
+    # 対象選択が生まれるため（契約 v1.1 §8・仕様 v1.2 §7.2）。
+    if len(groups)!=1 or any(_parse_json(h["candidate_ids"], []) for h in holds): raise ValueError("holds are not eligible for batch adjudication")
+    batch_id=stable_id("adjbatch", next(iter(groups)), datetime.now(timezone.utc).isoformat(), length=12)
+    return [_record_adjudication(h,action,None,reason_detail,decided_by,batch_id,path) for h in holds]
+
+
+def adjudication_status(path: Path = ADJUDICATIONS_PATH) -> dict[str, Any]:
+    rows=load_adjudications(path)["adjudications"]; applied=[r.get("applied_at") for r in rows if r.get("status")=="applied"]
+    return {"pending_count":sum(r.get("status")=="pending" for r in rows),"last_applied_at":max(applied) if applied else None,"apply_command":ADJUDICATION_COMMAND}
+
+
 
 
 def decision_file_lock(path: Path) -> threading.RLock:

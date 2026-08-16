@@ -25,7 +25,7 @@ from report_apply.event_report_helpers import (
     upsert_evidence_item,
     upsert_occurrence_song,
 )
-from master_rdb.master_db import MASTER_DB, refresh_manifest_database_state, stable_id, table_counts
+from master_rdb.master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, stable_id, table_counts
 from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
 
 
@@ -39,12 +39,15 @@ SCRIPT_NAME = "apply_change_requests.py"
 JST = ZoneInfo("Asia/Tokyo")
 
 CHANGE_TYPES = {
+    "create_event_series",
     "create_current_year_occurrence",
     "confirm_current_year_date",
     "add_historical_reference",
     "update_venue",
     "add_song_evidence",
 }
+# These create their target instead of pointing at one, so they carry no occurrence_id.
+TARGETLESS_CHANGE_TYPES = {"create_event_series", "create_current_year_occurrence"}
 CURRENT_YEAR_SOURCE_KINDS = {"official_current_year", "organizer_current_year", "trusted_x_current_year"}
 SONG_EVIDENCE_MODES = {
     "official_setlist": {
@@ -79,6 +82,17 @@ def _required(obj, field, errors, prefix):
         errors.append(f"{prefix}: missing required field: {field}")
 
 
+def _venue_reference(request):
+    """Return the venue_id the request names, or its venue name, or None.
+
+    A request may point at an existing venue by id. That path skips ensure_venue() entirely:
+    the identity question was already answered upstream, and re-deciding it here by name is how
+    the same place ends up stored twice.
+    """
+    venue = request.get("venue") or {}
+    return venue.get("venue_id") or venue.get("name") or None
+
+
 def validate_payload(payload):
     errors = []
     if payload.get("request_type") != "rdb_change_requests":
@@ -98,15 +112,33 @@ def validate_payload(payload):
         if change_type not in CHANGE_TYPES:
             errors.append(f"{prefix}: invalid change_type: {change_type!r}")
             continue
-        if change_type != "create_current_year_occurrence" and not request.get("occurrence_id"):
+        if change_type not in TARGETLESS_CHANGE_TYPES and not request.get("occurrence_id"):
             errors.append(f"{prefix}: requires occurrence_id")
         source = request.get("source") or {}
-        if change_type == "create_current_year_occurrence":
+        if change_type == "create_event_series":
+            _required(request, "series_name", errors, prefix)
+            _required(request, "display_name", errors, prefix)
+            _required(request, "date_start", errors, prefix)
+            _required(request, "event_year", errors, prefix)
+            _required(source, "url", errors, f"{prefix}.source")
+            if source.get("kind") not in CURRENT_YEAR_SOURCE_KINDS:
+                errors.append(
+                    f"{prefix}.source: create_event_series requires kind in {sorted(CURRENT_YEAR_SOURCE_KINDS)}"
+                )
+            if request.get("date_start") and request.get("event_year"):
+                if not str(request["date_start"]).startswith(str(request["event_year"])):
+                    errors.append(f"{prefix}: date_start must be in event_year")
+            if not _venue_reference(request):
+                errors.append(f"{prefix}.venue: requires venue_id or name")
+            if request.get("series_id"):
+                errors.append(f"{prefix}: create_event_series must not carry series_id")
+        elif change_type == "create_current_year_occurrence":
             _required(request, "series_id", errors, prefix)
             _required(request, "display_name", errors, prefix)
             _required(request, "date_start", errors, prefix)
             _required(request, "event_year", errors, prefix)
-            _required(request.get("venue") or {}, "name", errors, f"{prefix}.venue")
+            if not _venue_reference(request):
+                errors.append(f"{prefix}.venue: requires venue_id or name")
             _required(source, "url", errors, f"{prefix}.source")
             if source.get("kind") not in CURRENT_YEAR_SOURCE_KINDS:
                 errors.append(
@@ -137,8 +169,8 @@ def validate_payload(payload):
                 if int(request["historical_year"]) >= int(request["event_year"]):
                     errors.append(f"{prefix}: historical_year must be before target event_year")
         elif change_type == "update_venue":
-            venue = request.get("venue") or {}
-            _required(venue, "name", errors, f"{prefix}.venue")
+            if not _venue_reference(request):
+                errors.append(f"{prefix}.venue: requires venue_id or name")
             _required(source, "url", errors, f"{prefix}.source")
         elif change_type == "add_song_evidence":
             mode = request.get("evidence_mode")
@@ -235,27 +267,38 @@ def _current_year_date_status(request, now):
     return "ended" if event_end < today_jst else "confirmed"
 
 
+def _resolve_venue(conn, request, now):
+    """Return (venue_id, status, issues). No venue on the request means (None, None, [])."""
+    venue = request.get("venue") or {}
+    venue_id = venue.get("venue_id")
+    if venue_id:
+        if not rows(conn, "SELECT venue_id FROM venues WHERE venue_id = ?", (venue_id,)):
+            return None, None, [{"severity": "medium", "issue_type": "venue_id_not_found", "request_id": request["request_id"], "venue_id": venue_id}]
+        return venue_id, "resolved", []
+    if not venue.get("name"):
+        return None, None, []
+    result = ensure_venue(
+        conn,
+        venue["name"],
+        area=venue.get("area"),
+        address=venue.get("address"),
+        access=venue.get("access"),
+        source_url=(request.get("source") or {}).get("url"),
+        now=now,
+    )
+    if result["status"] == "ambiguous":
+        return None, None, [{"severity": "medium", "issue_type": "ambiguous_venue", "request_id": request["request_id"], "candidates": result["candidates"]}]
+    return result["venue_id"], result["status"], []
+
+
 def apply_confirm_current_year_date(conn, request, occurrence_id, now):
     occurrence_before = conn.execute(
         "SELECT source_url FROM event_occurrences WHERE occurrence_id = ?",
         (occurrence_id,),
     ).fetchone()
-    venue_id = None
-    venue_result = None
-    if request.get("venue"):
-        venue = request["venue"]
-        venue_result = ensure_venue(
-            conn,
-            venue["name"],
-            area=venue.get("area"),
-            address=venue.get("address"),
-            access=venue.get("access"),
-            source_url=request["source"].get("url"),
-            now=now,
-        )
-        if venue_result["status"] == "ambiguous":
-            return None, [{"severity": "medium", "issue_type": "ambiguous_venue", "request_id": request["request_id"], "candidates": venue_result["candidates"]}]
-        venue_id = venue_result["venue_id"]
+    venue_id, venue_status, venue_issues = _resolve_venue(conn, request, now)
+    if venue_issues:
+        return None, venue_issues
 
     evidence_id = _upsert_source_evidence(conn, request, now, detected_event_date=request["date_start"])
     date_status = _current_year_date_status(request, now)
@@ -268,6 +311,8 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         date_status=date_status,
         lifecycle_status="published",
         confidence=request.get("confidence") or "high",
+        # 要求が確からしさを名指ししていれば、下げる指定でもそのまま通す。
+        confidence_is_explicit=bool(request.get("confidence")),
         source_kind=request["source"]["kind"],
         detail_addendum=request.get("note"),
         date_basis_note=f"current-year source: {request['source']['url']}",
@@ -310,9 +355,66 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         "occurrence_id": occurrence_id,
         "evidence_id": evidence_id,
         "changed_fields": result["changed_fields"],
-        "venue_status": (venue_result or {}).get("status"),
+        "venue_status": venue_status,
         "date_status": date_status,
     }, []
+
+
+def apply_create_event_series(conn, request, index, now):
+    """Create a genuinely new series, then its first occurrence.
+
+    Unlike ensure_series_and_occurrence(), this never reuses a series whose name happens to
+    normalize to the same key, and never updates an existing occurrence. If the key is taken the
+    caller wanted create_current_year_occurrence: quietly merging the two is how a "new event"
+    ends up overwriting the date of an unrelated one.
+    """
+    series_key = normalize_text(request["series_name"])
+    if not series_key:
+        return None, [{"severity": "medium", "issue_type": "series_name_empty", "request_index": index, "request_id": request.get("request_id")}]
+    existing = rows(conn, "SELECT series_id FROM event_series WHERE series_key = ?", (series_key,))
+    if existing:
+        return None, [
+            {
+                "severity": "medium",
+                "issue_type": "series_key_already_exists",
+                "request_index": index,
+                "request_id": request.get("request_id"),
+                "series_key": series_key,
+                "series_id": existing[0]["series_id"],
+            }
+        ]
+    series_id = stable_id("series", series_key)
+    savepoint = f"create_event_series_{index}"
+    conn.execute(f"SAVEPOINT {savepoint}")
+    conn.execute(
+        """
+        INSERT INTO event_series (
+          series_id, origin, series_key, canonical_name, normalized_name,
+          usual_venue_id, area, program_type, annual_months_json,
+          schedule_rule_type, schedule_rule_detail, public_intro, source_url,
+          status, created_at, updated_at
+        ) VALUES (?, 'curated', ?, ?, ?, NULL, NULL, 'bon_odori', '[]', NULL, NULL, NULL, ?, 'active', ?, ?)
+        """,
+        (
+            series_id,
+            series_key,
+            request["series_name"],
+            series_key,
+            (request.get("source") or {}).get("url"),
+            now,
+            now,
+        ),
+    )
+    applied, issues = apply_create_current_year_occurrence(conn, {**request, "series_id": series_id}, index, now)
+    if applied is None:
+        conn.execute(f"ROLLBACK TO {savepoint}")
+        conn.execute(f"RELEASE {savepoint}")
+        return None, issues
+    conn.execute(f"RELEASE {savepoint}")
+    applied["change_type"] = request["change_type"]
+    applied["series_id"] = series_id
+    applied["series_created"] = True
+    return applied, issues
 
 
 def apply_create_current_year_occurrence(conn, request, index, now):
@@ -486,23 +588,14 @@ def apply_add_historical_reference(conn, request, occurrence_id, now):
 
 
 def apply_update_venue(conn, request, occurrence_id, now):
-    venue = request["venue"]
-    venue_result = ensure_venue(
-        conn,
-        venue["name"],
-        area=venue.get("area"),
-        address=venue.get("address"),
-        access=venue.get("access"),
-        source_url=request["source"].get("url"),
-        now=now,
-    )
-    if venue_result["status"] == "ambiguous":
-        return None, [{"severity": "medium", "issue_type": "ambiguous_venue", "request_id": request["request_id"], "candidates": venue_result["candidates"]}]
+    venue_id, venue_status, venue_issues = _resolve_venue(conn, request, now)
+    if venue_issues:
+        return None, venue_issues
     evidence_id = _upsert_source_evidence(conn, request, now)
     result = confirm_occurrence_schedule_venue(
         conn,
         occurrence_id,
-        venue_id=venue_result["venue_id"],
+        venue_id=venue_id,
         source_kind=request["source"].get("kind"),
         detail_addendum=request.get("note"),
         date_basis_note=None,
@@ -520,8 +613,8 @@ def apply_update_venue(conn, request, occurrence_id, now):
         "request_id": request["request_id"],
         "change_type": request["change_type"],
         "occurrence_id": occurrence_id,
-        "venue_id": venue_result["venue_id"],
-        "venue_status": venue_result["status"],
+        "venue_id": venue_id,
+        "venue_status": venue_status,
         "evidence_id": evidence_id,
         "changed_fields": result["changed_fields"],
     }, []
@@ -574,6 +667,8 @@ APPLIERS = {
 
 
 def apply_one_request(conn, request, index, now):
+    if request["change_type"] == "create_event_series":
+        return apply_create_event_series(conn, request, index, now)
     if request["change_type"] == "create_current_year_occurrence":
         return apply_create_current_year_occurrence(conn, request, index, now)
     occurrence_id, issues = _resolve_occurrence(conn, request, index)

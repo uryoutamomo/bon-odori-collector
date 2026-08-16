@@ -43,6 +43,11 @@ Legacy Notion queue migration boundary:
 
 Legacy Notion write-back boundary:
 
+> **2026-08-16 に `legacy/` を削除したため、この節が名指しするスクリプトは現存しない。**
+> 「凍結されている」ではなく「もう無い」が現状で、うっかり実行する余地そのものが消えた。
+> 何があったかは `git ls-tree -r --name-only legacy-before-removal legacy/` で辿れる。
+> 以下は当時の境界の記録として残す。
+
 - Master RDB -> Notion write-back is frozen by default.
 - `sync_master_to_notion.py --apply` requires both
   `--allow-frozen-notion-write` and `--confirm "APPLY RDB TO NOTION"`.

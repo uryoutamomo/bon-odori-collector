@@ -1,3 +1,4 @@
+import json
 import sqlite3
 from contextlib import closing
 import unittest
@@ -6,6 +7,7 @@ from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 from export_public_events import (
+    _song_from_rdb,
     apply_public_recurrence_metadata,
     apply_public_site_postprocessors,
     apply_public_event_overrides,
@@ -527,6 +529,66 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual([song["basis"] for song in songs], ["current_observed", "current_observed"])
         self.assertEqual([song["basis_label"] for song in songs], ["実測", "実測"])
 
+    def test_suppressed_prose_never_reaches_public_songs(self):
+        """INV-SNG-001: 曲名でないと確認された文字列は、どちら側から来ても公開曲目に残さない。"""
+        songs = merge_song_occurrence_hints(
+            [
+                {"name": "路上で行われる踊り", "confidence": "hint"},
+                {"name": "東京音頭", "confidence": "hint"},
+            ],
+            {
+                "songs": [
+                    {
+                        "name": "大人の部",
+                        "confidence": "confirmed",
+                        "probability": 99,
+                        "basis": "current_observed",
+                        "basis_label": "実測",
+                    },
+                    {
+                        "name": "炭坑節",
+                        "confidence": "confirmed",
+                        "probability": 99,
+                        "basis": "current_observed",
+                        "basis_label": "実測",
+                    },
+                ]
+            },
+        )
+
+        self.assertEqual([song["name"] for song in songs], ["炭坑節", "東京音頭"])
+
+    def test_song_from_rdb_labels_basis_by_evidence_status(self):
+        """INV-SNG-002: 公開する曲には、その確からしさの出どころを必ず添える。"""
+        def row(**overrides):
+            base = {
+                "song_title_raw": "東京音頭",
+                "probability": 80,
+                "evidence_status": "predicted",
+                "confidence": "unknown",
+                "source_count": 1,
+                "evidence_count": 1,
+                "inherited_from_year": None,
+                "notes": None,
+            }
+            base.update(overrides)
+            return base
+
+        announced = _song_from_rdb(row(evidence_status="announced"))
+        self.assertEqual((announced["basis"], announced["basis_label"]), ("current_announced", "今年告知"))
+
+        observed = _song_from_rdb(row(evidence_status="observed"))
+        self.assertEqual((observed["basis"], observed["basis_label"]), ("current_observed", "実測"))
+
+        # 今年のヒントしか無い行を「過去実績」と呼ばない（RDB移行時に実際に起きた誤表示）。
+        hint = _song_from_rdb(row())
+        self.assertEqual((hint["basis"], hint["basis_label"]), ("current_hint", "今年ヒント"))
+
+        # 継承元の証拠種別を落とすと、前年に実測された曲まで「ヒント」表示になる。
+        inherited = _song_from_rdb(
+            row(inherited_from_year=2025, notes=json.dumps({"source_kind": "observed"}))
+        )
+        self.assertEqual((inherited["basis"], inherited["basis_label"]), ("past_evidence", "2025年実測"))
 
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
         detail = "\n".join([

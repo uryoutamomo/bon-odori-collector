@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-10T20:41:30.537494+00:00",
+  "generated_at": "2026-08-14T20:30:24.256989+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 580,
+    "candidate_count": 581,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 349
+      "weak": 350
     },
     "strong_count": 183,
     "review_count": 48
@@ -28519,6 +28519,28 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:ce6e8b57634e97ed",
+      "target_year": 2023,
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "detected_event_date": "",
+      "video_id": "0w6kqr-Pzcg",
+      "video_url": "https://www.youtube.com/watch?v=0w6kqr-Pzcg",
+      "title": "小学校生徒数ランキングTop 15",
+      "channel_id": "UCPoEVGmS9ezdgmUpFPnGjVQ",
+      "channel_title": "そるくれ(まとも)",
+      "published_at": "2023-10-17T22:00:00Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/0w6kqr-Pzcg/maxresdefault.jpg",
+      "query": "第34回ふるさと千川 まつり 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:698c95125ef6dd96",
       "target_year": 2023,
       "event_name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」",
@@ -28978,5 +29000,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-10T20:41:30.081384+00:00"
+  "merged_from": "2026-08-14T20:30:23.404128+00:00"
 }

@@ -2620,6 +2620,69 @@
       "site_sha256": "ba75309b623a5dd3ee204cebf8ebb9d20d0df5900f0ce60a5b911e0f0039dc76",
       "collector_sha256": "044f79fe381f399f55fc0df1a0bc4bf98a52e91bd753c10aadc8ce0924e1b051",
       "reason": "2026-08-08 の方針対応。公開detailから私人由来の情報源表記（地域情報サイト名・第三者の参加報告アカウント名）を除去し、URL削除の跡に残っていた空カッコを片付けた。日付・名前・会場・出典URLはいずれも不変。"
+    },
+    {
+      "id": "reviewed-addition-20260812-4dc8c8398278",
+      "kind": "addition",
+      "event_key": "浅草神社 夏詣盆をどり||浅草神社",
+      "collector_sha256": "4dc8c8398278c4852c44e75588a6377d17ca1994d4f02dc579c97d043b0c3baa",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。浅草神社「夏詣」公式で7/3・7/5開催を確認。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-b576cb886067",
+      "kind": "addition",
+      "event_key": "しながわスネークタウン 夏フェス盆踊り||蛇窪神社",
+      "collector_sha256": "b576cb886067eda56fe5093d0355c3b5af1047a1858b7e991d533432ec0a2322",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。しながわ観光協会（準公式）で7/11-12開催を確認。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-56b3a3bfc035",
+      "kind": "addition",
+      "event_key": "秋葉神社納涼盆踊り||秋葉神社",
+      "collector_sha256": "56b3a3bfc035b3bb063bb2830ea2d57d39c455a957512fe2db286c6f7e1ffe7d",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。すみだ経済新聞で7/18開催を確認。会場は墨田区向島4丁目の秋葉神社。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-3e5c0d212f2c",
+      "kind": "addition",
+      "event_key": "北新井公園 納涼盆踊大会||北新井公園",
+      "collector_sha256": "3e5c0d212f2c56bfed3fa91f584891c1ac15cdd53f1a789b10c73b70f0c92d55",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。練馬区公式「令和8年度 地区祭開催日程」で7/18-19開催を確認。主催は豊玉第一町会。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-d3004c01c3d8",
+      "kind": "addition",
+      "event_key": "中原八幡神社盆踊り大会||中原八幡神社",
+      "collector_sha256": "d3004c01c3d8cba3137c2e9d1e425ca1d187d42104c758ce82ffd146cc45a039",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。南葛SC公式の参加報告で7/18開催を確認。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-e9abcdf3817b",
+      "kind": "addition",
+      "event_key": "大森南自治会 納涼盆おどり大会||浦守稲荷神社",
+      "collector_sha256": "e9abcdf3817b687261ee8122e39c4c5847b14638570c3346f3febbb0d5931896",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。おーたふる（大田区商店街連合会）で7/23-24開催を確認。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-1f63b28c50ee",
+      "kind": "addition",
+      "event_key": "碑文谷公園盆踊り大会||碑文谷公園",
+      "collector_sha256": "1f63b28c50eeaa9ba72e359b5a2f1a94e6b636dd5b3444cc214d2550a112f3dd",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。碑文谷６丁目自治会で7/24-25開催を確認。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-f11b1634ca44",
+      "kind": "addition",
+      "event_key": "三原台町会納涼盆踊大会||三原台公園",
+      "collector_sha256": "f11b1634ca4465a8f2de979cdb937d58997d884f3e664e1c681ef6b7d83cab9c",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。盆まる（全日本民踊指導者連盟）で7/25-26開催を確認。主催は三原台町会。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-addition-20260812-81f008ed3019",
+      "kind": "addition",
+      "event_key": "目黒駅前 地域のふれあい盆踊り大会||権之助坂商店街",
+      "collector_sha256": "81f008ed301912a43b4609deb62211422e01c4ac0b975173510c7ecc747c1d07",
+      "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。号外NET目黒区で第40回・7/26開催を確認。主催は権之助坂商店街振興組合。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
     }
   ]
 }

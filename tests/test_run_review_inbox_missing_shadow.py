@@ -1,4 +1,5 @@
 import hashlib
+import json
 import sqlite3
 import tempfile
 import unittest
@@ -165,7 +166,7 @@ class RunReviewInboxMissingShadowTest(unittest.TestCase):
             self.assertEqual(store.fetch_calls, 0)
             self.assertEqual(store.publish_calls, 0)
 
-    def test_real_sources_run_separately_zero_then_three_pending_rows(self):
+    def test_sources_run_separately_with_fixture_pending_rows(self):
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"
             make_master(db)
@@ -177,11 +178,17 @@ class RunReviewInboxMissingShadowTest(unittest.TestCase):
                 store_factory=lambda _args: store,
                 digest_function=fixed_public_digest,
             )
+            venue_input = Path(tmp) / "venue.json"
+            venue_input.write_text(json.dumps({"review": [
+                {"occurrence_id": "one", "event_name": "One", "event_year": 2026, "review_action": "manual_name_or_venue_research_required"},
+                {"occurrence_id": "two", "event_name": "Two", "event_year": 2026, "review_action": "manual_venue_research_required"},
+            ]}), encoding="utf-8")
             venue_report = run_missing_shadow(
                 args_for(
                     tmp,
                     source="venue",
                     rstart=hashlib.sha256(store.database_bytes).hexdigest(),
+                    input=venue_input,
                 ),
                 environ=ENABLED_ENV,
                 now=datetime(2026, 7, 18, 12, 0, tzinfo=JST),

@@ -4,6 +4,8 @@ import sys
 import json
 import hashlib
 import html
+import math
+import sqlite3
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -31,8 +33,15 @@ from collection_support.event_evidence import (
     classify_event_evidence,
 )
 from collection_support.x_official_source_accounts import load_official_source_accounts
+from collection_support.x_source_registry import (
+    REJECTED,
+    load_events_from_master_db,
+    registry_candidates,
+)
+from collection_support.x_author_profile import PROBE as X_PROFILE_PROBE, author_profile_description
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
+from collection_support import x_cost_ledger
 from collection_support.x_collection_health import (
     check_health_report,
     finalize_health_report,
@@ -47,6 +56,7 @@ from collection_support.x_collection_health import (
     set_planned_units,
     write_health_report,
 )
+from collection_support.tokyo23_scope import TOKYO_23_RE, NON_TOKYO_PREF_RE, KNOWN_OUTSIDE_TOKYO_23_RE
 
 try:
     import feedparser
@@ -88,6 +98,9 @@ X_COLLECTION_HEALTH_REPORT = os.environ.get(
     "data/x_collection_health_report.json",
 )
 GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
+X_GAP_CREDITS_FILE = "data/x_gap_credits.json"
+X_ROSTER_EXCLUSIONS_FILE = "data/x_roster_exclusions.json"
+X_MASTER_RUNTIME_FILE = "data/x_bonodorer_master_runtime.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
 HOME_KEYWORDS = []
@@ -607,9 +620,14 @@ def _apply_glossary_runtime_to_x_config(cfg):
         cfg.get("experience_keywords", []),
         runtime.get("experience_keywords", []),
     )
+    # Entity aliases are deliberately kept separate from the generic alias
+    # map: only a typed venue/event alias may become geographic evidence after
+    # it resolves against the local master snapshot.
+    cfg["glossary_entity_aliases"] = list(runtime.get("entity_aliases", []))
     cfg["glossary_runtime"] = {
         "source": runtime.get("generated_by", ""),
         "alias_count": len(runtime.get("alias_map", {})),
+        "entity_alias_count": len(runtime.get("entity_aliases", [])),
         "exclude_count": len(runtime.get("exclude_keywords", [])),
         "experience_count": len(runtime.get("experience_keywords", [])),
         "song_count": len(runtime.get("song_terms", [])),
@@ -618,12 +636,13 @@ def _apply_glossary_runtime_to_x_config(cfg):
 
 
 def _score_voice(text, cfg):
-    """ルールベース自動仕分け。🟢一次レポ / 🟡関心 / 🔴ノイズ を返す。
-    除外語(比喩・曲名・ゲーム系)が含まれれば🔴、体験語があれば🟢、それ以外は🟡。"""
+    """ルールベース自動仕分け。🟢一次レポ / 🟡関心 を返す。
+
+    以前は除外語（ポケモン・ライブ・セトリ等）に当たると🔴ノイズとして voices から落としていたが、
+    2026-08-15 の実測でこの語彙が盆踊りの本体情報を捨てていたため廃止した。詳細は
+    _x_post_value_score の注記を参照。「これは盆踊りの話か」は意味の判断なのでLLMが答える。
+    """
     low = text.lower()
-    for kw in cfg.get("exclude_keywords", []):
-        if kw.lower() in low:
-            return "🔴ノイズ"
     for kw in cfg.get("experience_keywords", []):
         if kw.lower() in low:
             return "🟢一次レポ"
@@ -639,6 +658,12 @@ def _x_budget_state():
         return {}
 
 
+def _record_x_cost(route, **kwargs):
+    """Write route detail beside the shared budget file without changing it."""
+    ledger_path = Path(X_BUDGET_FILE).with_name("x_cost_ledger.json")
+    return x_cost_ledger.record_run(route, path=ledger_path, **kwargs)
+
+
 def _x_search(query, cursor=""):
     """twitterapi.io advanced_search を1ページ取得。429は呼び出し側で扱う。"""
     params = {"query": query, "queryType": "Latest"}
@@ -648,6 +673,65 @@ def _x_search(query, cursor=""):
     req = urllib.request.Request(url, headers={"X-API-Key": TWITTERAPI_IO_KEY})
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read())
+
+
+def _query_watermark_path():
+    """検索クエリごとの読み取り位置の保存先（予算ファイルと同じ場所に置く）。"""
+    return Path(X_BUDGET_FILE).with_name("x_query_watermarks.json")
+
+
+def _load_query_watermarks(path=None):
+    """クエリID別の since_time(UNIX秒)。読めなければ空＝初回扱い（fail-safe）。"""
+    try:
+        with open(path or _query_watermark_path(), "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    marks = payload.get("queries")
+    return marks if isinstance(marks, dict) else {}
+
+
+def _save_query_watermarks(marks, path=None):
+    target = str(path or _query_watermark_path())
+    try:
+        os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
+        with open(target, "w", encoding="utf-8") as f:
+            json.dump(
+                {"schema_version": 1, "queries": marks},
+                f,
+                ensure_ascii=False,
+                indent=2,
+            )
+    except Exception as e:
+        # 観測用の状態保存の失敗で収集自体を落とさない。
+        print(f"[x] watermark 保存エラー（収集は継続）: {e}")
+
+
+def _query_since_time(qid, marks, watermark_cfg, now_ts):
+    """このクエリの since_time。記録が無ければ initial_lookback_days 前から読む。"""
+    entry = marks.get(qid)
+    since = entry.get("since_time") if isinstance(entry, dict) else entry
+    try:
+        since = int(since)
+    except (TypeError, ValueError):
+        since = 0
+    if since <= 0:
+        days = watermark_cfg.get("initial_lookback_days", 3)
+        try:
+            days = float(days)
+        except (TypeError, ValueError):
+            days = 3.0
+        since = int(now_ts - days * 86400)
+    return since
+
+
+def _apply_since_time(query, since_ts):
+    """クエリ文字列へ since_time を足す。設定側で明示済みならそちらを尊重する。"""
+    if "since_time:" in query or "since:" in query:
+        return query
+    return f"{query} since_time:{int(since_ts)}"
 
 
 def _x_media_urls(tw):
@@ -701,6 +785,7 @@ def _x_map_to_voice(tw):
         "source": "x",
         "account": f"@{username}" if username else "",
         "name": name,
+        "profile_description": author_profile_description(author),
         "title": "",
         "text": (tw.get("text") or tw.get("full_text") or "").strip()[:500],
         "url": url,
@@ -708,6 +793,7 @@ def _x_map_to_voice(tw):
         "tweet_id": str(tw_id),
         "tags": [],
     }
+    voice["critique_post"] = _x_is_critique_post(voice["text"])
     media_urls = _x_media_urls(tw)
     if media_urls:
         voice["media_urls"] = media_urls
@@ -796,14 +882,39 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
     new_seen = list(seen_urls)
     run_cost = 0.0
 
+    # 前回読んだ地点から先だけを読む。既読分の読み直しは voices では捨てられるが課金はされるため。
+    watermark_cfg = cfg.get("search_watermark") or {}
+    watermark_enabled = watermark_cfg.get("enabled", True)
+    stop_on_zero_new = watermark_cfg.get("stop_after_zero_new_page", True)
+    try:
+        overlap_sec = int(float(watermark_cfg.get("overlap_minutes", 60)) * 60)
+    except (TypeError, ValueError):
+        overlap_sec = 3600
+    run_started_at = datetime.now(timezone.utc).timestamp()
+    watermarks = _load_query_watermarks() if watermark_enabled else {}
+    updated_watermarks = dict(watermarks)
+
     queries = [q for q in cfg.get("queries", []) if q.get("query")]
     set_planned_units(health, "keyword", len(queries))
     for q in queries:
         qid, query = q.get("id", "q-?"), q.get("query", "")
+        since_ts = None
+        if watermark_enabled:
+            since_ts = _query_since_time(qid, watermarks, watermark_cfg, run_started_at)
+            query = _apply_since_time(query, since_ts)
+        try:
+            query_max_pages = int(q.get("max_pages") or max_pages)
+        except (TypeError, ValueError):
+            query_max_pages = max_pages
         print(f"[x] {qid}: {query}")
         cursor = ""
         unit_completed = False
-        for page in range(max_pages):
+        query_cost = 0.0
+        query_requests = 0
+        query_tweets = 0
+        query_new_urls = 0
+        query_accepted = 0
+        for page in range(query_max_pages):
             # 予算の最終ガード（クエリ途中でも止まる）
             if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
                 print("[x] 走行中に予算上限到達。以降のページを打ち切り")
@@ -846,6 +957,9 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
 
             tweets = data.get("tweets") or data.get("data") or []
             page_cost = len(tweets) * cost_per_tweet
+            query_requests += 1
+            query_tweets += len(tweets)
+            query_cost += page_cost
             record_success(
                 health,
                 "keyword",
@@ -866,17 +980,26 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
                 "batch_id": f"{qid}-page-{page + 1}",
                 "estimated_cost_usd": cost_per_tweet,
             })
+            query_new_urls += len(prepared)
             for _, v in prepared:
                 judgement = _score_voice(v["text"], cfg)
                 v["tags"] = [judgement, qid]
                 _append_x_log_row(v, qid, judgement, cost_per_tweet)
-                # voices.json には一次レポ/関心のみ流す（ノイズは除外）
-                if judgement != "🔴ノイズ":
-                    new_items.append(v)
+                # 意味で捨てる関門は廃止した（_score_voice の注記）。取得した投稿は voices へ流し、
+                # 盆踊りの話かどうかの判断はLLMに任せる。
+                new_items.append(v)
                 new_seen.append(v["url"])
                 count += 1
             record_accepted(health, "keyword", qid, len(new_items) - accepted_before)
+            query_accepted += len(new_items) - accepted_before
             print(f"[x] {qid}: {count} 件処理（うち voices 採用 {sum(1 for x in new_items if qid in x.get('tags', []))} 件累計）")
+
+            # queryType=Latest は新しい順なので、新規が1件も無いページから先は既読の領域。
+            # since_time の重なり分に達した合図として打ち切る。
+            if stop_on_zero_new and not prepared:
+                print(f"[x] {qid}: 新規0件のページに到達。既読領域とみなし以降を打ち切り")
+                unit_completed = True
+                break
 
             cursor = data.get("next_cursor") or data.get("cursor") or ""
             if not (data.get("has_next_page", bool(cursor)) and cursor):
@@ -885,8 +1008,34 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
             _time.sleep(page_sleep)
         if unit_completed:
             mark_unit_complete(health, "keyword", qid)
+            if watermark_enabled:
+                updated_watermarks[qid] = {
+                    "since_time": int(run_started_at - overlap_sec),
+                    "updated_at": datetime.now(timezone.utc).isoformat(),
+                }
         else:
             mark_unit_incomplete(health, "keyword", qid, "query_incomplete")
+            if watermark_enabled:
+                # 読み切れていないので窓を進めない。進めると未読の時間帯が恒久的に消える。
+                print(f"[x] {qid}: 未完了のため since_time を維持（{since_ts}）")
+        if query_cost > 0:
+            _record_x_cost(
+                "search",
+                query_id=qid,
+                cost_usd=query_cost,
+                requests=query_requests,
+                tweets_fetched=query_tweets,
+                new_urls=query_new_urls,
+                voices_accepted=query_accepted,
+                note=(
+                    f"since_time:{since_ts} completed:{unit_completed}"
+                    if watermark_enabled
+                    else None
+                ),
+            )
+
+    if watermark_enabled and updated_watermarks != watermarks:
+        _save_query_watermarks(updated_watermarks)
 
     # 予算消費を記録
     if run_cost > 0:
@@ -923,6 +1072,9 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
     limit = int(config.get("max_x_queries_per_run", 6))
     year = datetime.now(timezone(timedelta(hours=9))).year
     new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+    ledger_requests = 0
+    ledger_tweets = 0
+    ledger_new_urls = 0
 
     selected_targets = targets[:limit]
     set_planned_units(health, "proactive", len(selected_targets))
@@ -949,6 +1101,8 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
         tweets = data.get("tweets") or data.get("data") or []
         request_cost = max(len(tweets), 1) * cost_per_tweet
         run_cost += request_cost
+        ledger_requests += 1
+        ledger_tweets += len(tweets)
         record_success(
             health,
             "proactive",
@@ -963,6 +1117,7 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
             "batch_id": f"venue-{target.get('venue') or 'unknown'}",
             "estimated_cost_usd": cost_per_tweet,
         })
+        ledger_new_urls += len(prepared)
         for _, voice in prepared:
             voice["source"] = "x_proactive"
             voice["tags"] = ["🔎能動検索", target["venue"]]
@@ -980,6 +1135,15 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
                 json.dump(state, f, ensure_ascii=False, indent=2)
         except Exception as exc:
             print(f"[proactive/x] 予算記録の保存エラー: {exc}")
+    if run_cost > 0:
+        _record_x_cost(
+            "proactive",
+            cost_usd=run_cost,
+            requests=ledger_requests,
+            tweets_fetched=ledger_tweets,
+            new_urls=ledger_new_urls,
+            voices_accepted=len(new_items),
+        )
     return new_items, new_seen
 
 
@@ -1129,10 +1293,12 @@ def _x_post_value_score(voice, cfg=None, known_venues=None):
     score = 0.0
     reasons = []
 
-    for kw in cfg.get("exclude_keywords", []):
-        if kw.lower() in low:
-            return -4.0, ["exclude"]
-
+    # 除外語による打ち切りは 2026-08-15 に廃止した。生投稿7,162件で実測したところ、
+    # この関門が落としていた212件のうち117件（55%）が盆踊りの話で、「セトリ」「セットリスト」で
+    # 曲目そのものを、「ガチャ」で縁日のガチャガチャを、「ポケモン」でポケモン音頭の参加報告を
+    # 捨てていた。正しく弾けていたのは95件（全体の1.3%）で、うち79件は同一アカウントの
+    # お笑いライブ定型告知だった。1.3%の手間のために欲しい情報を捨てる取引は割に合わない。
+    # 定型連投のような相手は、意味を見ない間引き（同一発信者・同一文型）で落とす。
     base_dt = _voice_datetime(voice) or datetime.now(timezone(timedelta(hours=9)))
     schedule = _future_date_signal(text, base_dt)
     schedule_words = any(kw in text for kw in _X_SCHEDULE_KEYWORDS)
@@ -1268,6 +1434,291 @@ def _x_account_role_tags(top_reasons):
     return tags
 
 
+# These signals deliberately use the post body, rather than the existing
+# usefulness score.  The latter is retained for backwards compatibility and
+# continues to be the only score used by the current whitelist selection.
+_X_BONODORI_RE = re.compile(r"盆踊|盆おどり|ぼんおどり|納涼|音頭|やぐら|櫓|民踊")
+_X_OTHER_WARD_CITY_RE = re.compile(
+    r"札幌市|仙台市|さいたま市|千葉市|横浜市|川崎市|相模原市|新潟市|静岡市|浜松市|"
+    r"名古屋市|京都市|大阪市|堺市|神戸市|岡山市|広島市|北九州市|福岡市|熊本市"
+)
+_X_TOKYO23_PLACE_RE = re.compile(
+    r"浅草|上野|銀座|新宿|渋谷|池袋|麻布|六本木|築地|月島|佃|勝どき|晴海|日本橋|神田|秋葉原|"
+    r"錦糸町|押上|亀戸|北千住|巣鴨|高円寺|阿佐ヶ谷|下北沢|三軒茶屋|自由が丘|蒲田|大井町|"
+    r"五反田|目黒|恵比寿|代々木|荻窪|王子|十条|赤羽|葛西|小岩|清澄|門前仲町|深川|"
+    r"両国|浜町|高島平|千住|谷中|根津|白金|世田谷|杉並|豊島|荒川|足立|葛飾|江戸川|"
+    r"板橋|練馬|中野|品川|墨田|江東|台東|文京"
+)
+# Do not treat "東京音頭" as geographic evidence, but retain an explicit
+# Tokyo-side mention in a post that also names another region (e.g. 東京と大阪).
+_X_TOKYO23_CONTEXT_RE = re.compile(r"東京(?:都|23区|の|と|、|・|及び|および)")
+_X_OPINION_RE = re.compile(
+    r"と思|感じ|好き|嬉し|楽し|良かっ|よかっ|最高|素晴らし|残念|寂し|懐かし|"
+    r"なぜ|理由|文化|歴史|伝統|変わ|続け|工夫|課題|問題|意味|べき|かもしれ|気がする|印象|"
+    r"初めて|久しぶり|来年|また行|おすすめ"
+)
+_X_DETAIL_RE = re.compile(
+    r"炭坑節|東京音頭|ダンシング|きよし|花笠|河内音頭|八木節|大東京音頭|三宅|曲目|曲順|"
+    r"演目|生演奏|櫓|やぐら|太鼓|浴衣|屋台|盆唄|音頭取り|振り付け|練習会|講習会"
+)
+_X_LIST_DATE_RE = re.compile(r"\d{1,2}\s*[/月]\s*\d{1,2}")
+_X_CHANGE_RE = re.compile(r"中止|順延|延期|荒天|規模縮小|時間変更|取り止め|とりやめ|見合わせ")
+_X_ONSITE_RE = re.compile(r"今日の盆踊り|本日は|始まりました|まもなく|終わりました|なう|開催中|到着|出番|演奏中|ただいま")
+_X_PROFILE_BON_RE = re.compile(r"盆踊|盆おどり|盆オドリ|ぼんおどり|ボンオドリ|盆オドラー|盆踊ラー|盆踊らー|盆おどらー|ボンオドラー|ぼんおどらー|盆ドラー|盆らー|bon[- _]?odor(?:i|er|a)|音頭|民踊|民舞|やぐら|櫓|盆唄|盆太鼓", re.I)
+_X_PROFILE_ORG_RE = re.compile(r"町会|自治会|商店会|商店街|振興組合|神社|寺|観光協会|青年部|婦人部|実行委員|保存会|連合会|公式|区役所|市役所|まちづくり|協議会")
+_X_CRITIQUE_RE = re.compile(r"盆踊.*(?:文化|歴史|伝統|課題|問題|意味|変わ|続け|べき|なぜ|理由)")
+_X_CRITIQUE_EXCLUDE_RE = re.compile(r"議員|選挙|外国人|宗教|移民|差別")
+
+
+def _x_is_critique_post(text):
+    """Tag sparse editorial material without turning it into an account axis."""
+    return bool(_X_CRITIQUE_RE.search(text or "") and not _X_CRITIQUE_EXCLUDE_RE.search(text or ""))
+
+
+def _load_x_bonodorer_master_runtime(path=None, db_path=None):
+    """Load a small vocabulary snapshot, or derive it from a local master DB.
+
+    Missing data is deliberately harmless: collection must never need an S3
+    fetch merely to score an account.
+    """
+    path = Path(path or X_MASTER_RUNTIME_FILE)
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return {
+            **{key: set(payload.get(key) or []) for key in ("songs", "places", "events")},
+            "venue_entities": dict(payload.get("venue_entities") or {}),
+            "event_entities": dict(payload.get("event_entities") or {}),
+        }
+    except Exception:
+        pass
+    db = Path(db_path or "data/bon_odori_master.sqlite")
+    if not db.exists():
+        return {"songs": set(), "places": set(), "events": set(), "venue_entities": {}, "event_entities": {}}
+    runtime = {"songs": set(), "places": set(), "events": set(), "venue_entities": {}, "event_entities": {}}
+    try:
+        with sqlite3.connect(f"file:{db.resolve().as_posix()}?mode=ro", uri=True) as conn:
+            runtime["songs"].update(row[0] for row in conn.execute("SELECT canonical_title FROM songs") if len(row[0] or "") >= 3)
+            runtime["songs"].update(row[0] for row in conn.execute("SELECT alias FROM song_aliases") if len(row[0] or "") >= 3)
+            runtime["places"].update(row[0] for row in conn.execute("SELECT canonical_name FROM venues WHERE area LIKE '%区%' OR address LIKE '%区%'") if len(row[0] or "") >= 3)
+            runtime["places"].update(row[0] for row in conn.execute("SELECT va.alias FROM venue_aliases va JOIN venues v ON v.venue_id=va.venue_id WHERE v.area LIKE '%区%' OR v.address LIKE '%区%'") if len(row[0] or "") >= 3)
+            runtime["events"].update(row[0] for row in conn.execute("SELECT canonical_name FROM event_series") if len(row[0] or "") >= 4)
+            runtime["events"].update(row[0] for row in conn.execute("SELECT alias FROM event_series_aliases") if len(row[0] or "") >= 4)
+            for venue_id, name, area, address in conn.execute(
+                "SELECT venue_id, canonical_name, area, address FROM venues"
+            ):
+                if name:
+                    runtime["venue_entities"][name] = {
+                        "entity_id": venue_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(f"{area or ''} {address or ''}")),
+                    }
+            for venue_id, alias, area, address in conn.execute(
+                "SELECT v.venue_id, va.alias, v.area, v.address FROM venue_aliases va JOIN venues v ON v.venue_id=va.venue_id"
+            ):
+                if alias:
+                    runtime["venue_entities"][alias] = {
+                        "entity_id": venue_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(f"{area or ''} {address or ''}")),
+                    }
+            for series_id, name, area in conn.execute("SELECT series_id, canonical_name, area FROM event_series"):
+                if name:
+                    runtime["event_entities"][name] = {
+                        "entity_id": series_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(area or "")),
+                    }
+            for series_id, alias, area in conn.execute(
+                "SELECT e.series_id, ea.alias, e.area FROM event_series_aliases ea JOIN event_series e ON e.series_id=ea.series_id"
+            ):
+                if alias:
+                    runtime["event_entities"][alias] = {
+                        "entity_id": series_id,
+                        "is_tokyo23": bool(TOKYO_23_RE.search(area or "")),
+                    }
+    except sqlite3.Error:
+        return {"songs": set(), "places": set(), "events": set(), "venue_entities": {}, "event_entities": {}}
+    return runtime
+
+
+def _x_runtime_match(text, values):
+    return any(value and value in text for value in values)
+
+
+def _x_glossary_entity_has_tokyo23_evidence(text, aliases, master_runtime):
+    """Resolve a typed glossary alias to a local master entity's area.
+
+    Unresolved aliases are intentionally neutral.  A generic glossary alias is
+    never sufficient: it must identify a venue/event whose master record is in
+    the 23 wards.
+    """
+    for row in aliases or []:
+        if not isinstance(row, dict):
+            continue
+        term = str(row.get("term") or "")
+        canonical = str(row.get("canonical") or "")
+        entity_type = row.get("entity_type")
+        if not term or not canonical or term not in text:
+            continue
+        entity_maps = []
+        if entity_type in ("venue", "place", "region"):
+            entity_maps.append(master_runtime.get("venue_entities", {}))
+        if entity_type in ("event", "place", "region"):
+            entity_maps.append(master_runtime.get("event_entities", {}))
+        for entities in entity_maps:
+            entity = entities.get(canonical)
+            if entity and entity.get("is_tokyo23"):
+                return True
+    return False
+
+
+def _x_has_tokyo23_evidence(text, *, has_place=False, has_event=False):
+    """Return Tokyo-23 evidence without discarding evidence from mixed posts.
+
+    A post can explicitly name both Tokyo and another area.  That is useful
+    evidence for both dimensions, rather than a reason to erase the Tokyo
+    match as the former exclusive classifier did.
+    """
+    explicit_ward = bool(TOKYO_23_RE.search(text) and not _X_OTHER_WARD_CITY_RE.search(text))
+    return bool(
+        explicit_ward
+        or _X_TOKYO23_CONTEXT_RE.search(text)
+        or _X_TOKYO23_PLACE_RE.search(text)
+        or has_place
+        or has_event
+    )
+
+
+def _x_is_tokyo23_text(text):
+    """Backward-compatible text-only Tokyo-23 evidence helper."""
+    return _x_has_tokyo23_evidence(text)
+
+
+def _x_is_outside_tokyo23_text(text):
+    return bool(_X_OTHER_WARD_CITY_RE.search(text) or NON_TOKYO_PREF_RE.search(text)
+                or KNOWN_OUTSIDE_TOKYO_23_RE.search(text))
+
+
+def _load_x_gap_credits(path=None):
+    """Read the small cumulative ledger maintained alongside account scores."""
+    try:
+        with open(path or X_GAP_CREDITS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    raw = payload.get("credits", payload) if isinstance(payload, dict) else {}
+    return {
+        _norm_handle(handle): int(value)
+        for handle, value in raw.items()
+        if _norm_handle(handle) and isinstance(value, (int, float))
+    }
+
+
+def _load_x_roster_exclusions(path=None):
+    """Load reviewed X-account exclusions, accepting the shelf export shape too."""
+    try:
+        with open(path or X_ROSTER_EXCLUSIONS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return {}
+    rows = payload.get("exclusions", payload.get("excluded", [])) if isinstance(payload, dict) else []
+    result = {}
+    for row in rows if isinstance(rows, list) else []:
+        if not isinstance(row, dict):
+            continue
+        handle = _norm_handle(row.get("handle"))
+        if not handle:
+            continue
+        result[handle] = {
+            **row,
+            "handle": f"@{handle}",
+            "reason": row.get("reason") or row.get("why") or "その他",
+        }
+    return result
+
+
+def _x_smoothed_ratio(count, total, base):
+    return (count + 5 * base) / (total + 5)
+
+
+def _x_area_bot(row):
+    posts = row.get("posts_with_text", 0)
+    if posts < 4:
+        return False
+    return (
+        row.get("url_ratio", 0) >= 0.8
+        and row.get("experience_ratio", 0) <= 0.15
+        and row.get("bon23_count", 0) == 0
+        and (row.get("outside_ratio", 0) >= 0.4 or row.get("bon_ratio", 0) < 0.5)
+    )
+
+
+def _add_x_bonodorer_scores(accounts, text_metrics, gap_credits):
+    for handle, row in accounts.items():
+        metrics = text_metrics.get(handle, {})
+        posts = metrics.get("posts_with_text", 0)
+        if posts:
+            row.update({key: value for key, value in metrics.items() if key != "post_days"})
+            row["bon23_ratio"] = round(_x_smoothed_ratio(row["bon23_count"], posts, 0.10), 4)
+            row["listy_ratio"] = round(_x_smoothed_ratio(row["listy_count"], posts, 0.15), 4)
+            row["opinion_ratio"] = round(_x_smoothed_ratio(row["opinion_count"], posts, 0.35), 4)
+            row["experience_ratio"] = round(_x_smoothed_ratio(row["experience_count"], posts, 0.20), 4)
+            row["detail_ratio"] = round(_x_smoothed_ratio(row["detail_count"], posts, 0.30), 4)
+            row["media_ratio"] = round(_x_smoothed_ratio(row["media_count"], posts, 0.30), 4)
+            row["onsite23_ratio"] = round(_x_smoothed_ratio(row["onsite23_count"], posts, 0.08), 4)
+            row["photo23_ratio"] = round(_x_smoothed_ratio(row["photo23_count"], posts, 0.10), 4)
+            row["song_ratio"] = round(_x_smoothed_ratio(row["song_count"], posts, 0.15), 4)
+            row["place_ratio"] = round(_x_smoothed_ratio(row["place_count"], posts, 0.15), 4)
+            row["url_ratio"] = round(row["url_count"] / posts, 4)
+            row["bon_ratio"] = round(row["bon_count"] / posts, 4)
+            row["outside_ratio"] = round(row["outside_count"] / posts, 4)
+            row["avg_len"] = round(row["text_length"] / posts, 2)
+            row["distinct_post_days"] = len(metrics["post_days"])
+        else:
+            row.update({
+                "posts_with_text": 0, "bon23_count": 0, "bon23_ratio": 0.1,
+                "listy_ratio": 0.15, "opinion_ratio": 0.35, "experience_ratio": 0.2,
+                "detail_ratio": 0.3, "media_ratio": 0.3, "avg_len": 0.0,
+                "change_count": 0, "onsite23_count": 0, "photo23_count": 0, "song_count": 0,
+                "place_count": 0, "onsite23_ratio": 0.08, "photo23_ratio": 0.1,
+                "song_ratio": 0.15, "place_ratio": 0.15,
+                "distinct_post_days": 0, "url_ratio": 0.0, "bon_ratio": 0.0,
+                "outside_ratio": 0.0,
+            })
+        row["gap_credits"] = gap_credits.get(handle, 0)
+        row["is_area_bot"] = _x_area_bot(row)
+        announce = min(10.0, 10 * math.log1p(row.get("recent_future_schedule_posts", 0)) / math.log1p(20))
+        announce += 14 * row["bon23_ratio"]
+        announce -= 5 * max(0.0, row["listy_ratio"] - 0.30)
+        announce += min(5.0, 1.2 * row.get("change_count", 0))
+        announce += 5 * min(row["gap_credits"], 3)
+        if row["is_area_bot"]:
+            announce -= 15
+        profile = row.get("profile_description")
+        if profile:
+            if _X_PROFILE_BON_RE.search(profile):
+                announce += 2
+            elif not _X_PROFILE_ORG_RE.search(profile):
+                announce -= 3
+        row["announce_score"] = round(announce, 2)
+
+        record = 0.0
+        if posts >= 3:
+            record = 7 * row["onsite23_ratio"] + 4 * row["photo23_ratio"]
+            record += 4 * row["song_ratio"] + 3 * row["place_ratio"]
+            record += 7 * min(math.log1p(row["onsite23_count"]) / math.log1p(20), 1.0)
+            record += 4 * min(math.log1p(row["song_count"]) / math.log1p(20), 1.0)
+            record += 3 * min(row["distinct_post_days"] / 15, 1.0)
+            record -= 8 * row["listy_ratio"]
+            if row.get("recent_posts_seen", 0) == 0:
+                record -= 3
+            if row["is_area_bot"]:
+                record -= 10
+        if profile:
+            if _X_PROFILE_BON_RE.search(profile):
+                record += 3
+            elif not _X_PROFILE_ORG_RE.search(profile):
+                record -= 4
+        row["record_score"] = round(record, 2)
+
+
 def _build_x_account_scores(voices, cfg=None):
     """voices.json などの過去投稿からアカウント価値スコアを作る。"""
     cfg = cfg or {}
@@ -1276,6 +1727,21 @@ def _build_x_account_scores(voices, cfg=None):
     recent_days = ranking_cfg.get("recent_days", 30)
     recent_cutoff = datetime.now(timezone.utc) - timedelta(days=recent_days)
     accounts = {}
+    text_metrics = {}
+    master_runtime = _load_x_bonodorer_master_runtime(
+        cfg.get("x_bonodorer_master_runtime_file"), cfg.get("master_db_path")
+    )
+    # `experience_keywords` remains the established quality signal used by
+    # _x_post_value_score.  This narrower list is only for estimating whether
+    # a writer is describing first-hand experience rather than publishing a
+    # program or song list.
+    experience_style_keywords = cfg.get("experience_style_keywords")
+    if experience_style_keywords is None:
+        non_experience_terms = {"曲目表", "曲順", "プログラム", "演目", "曲目発表"}
+        experience_style_keywords = [
+            term for term in cfg.get("experience_keywords", []) if term not in non_experience_terms
+        ]
+    experience_style_keywords = [str(term).lower() for term in experience_style_keywords if term]
     for v in voices:
         if v.get("source") not in ("x", "x_whitelist"):
             continue
@@ -1296,7 +1762,64 @@ def _build_x_account_scores(voices, cfg=None):
             "recent_future_schedule_posts": 0,
             "recent_noise_posts": 0,
             "recent_value_points": 0.0,
+            "profile_description": "",
         })
+        text = str(v.get("text") or "")
+        if v.get("profile_description"):
+            row["profile_description"] = str(v["profile_description"])
+        if text:
+            metrics = text_metrics.setdefault(handle, {
+                "posts_with_text": 0, "bon_count": 0, "bon23_count": 0, "outside_count": 0,
+                "url_count": 0, "listy_count": 0, "opinion_count": 0, "experience_count": 0,
+                "detail_count": 0, "media_count": 0, "text_length": 0, "post_days": set(),
+                "change_count": 0, "onsite23_count": 0, "photo23_count": 0, "song_count": 0,
+                "place_count": 0,
+            })
+            metrics["posts_with_text"] += 1
+            metrics["text_length"] += len(text)
+            date_text = str(v.get("date") or "")[:10]
+            if date_text:
+                metrics["post_days"].add(date_text)
+            is_bon = bool(_X_BONODORI_RE.search(text))
+            has_place = _x_runtime_match(text, master_runtime["places"])
+            has_event = _x_runtime_match(text, master_runtime["events"])
+            has_song = _x_runtime_match(text, master_runtime["songs"]) or bool(_X_DETAIL_RE.search(text))
+            has_glossary_entity = _x_glossary_entity_has_tokyo23_evidence(
+                text, cfg.get("glossary_entity_aliases"), master_runtime
+            )
+            has_tokyo23_evidence = _x_has_tokyo23_evidence(
+                text, has_place=has_place or has_glossary_entity, has_event=has_event
+            )
+            has_outside_evidence = _x_is_outside_tokyo23_text(text)
+            # Persist independent post-level evidence so a mixed post remains
+            # visible to later inspection instead of being forced into one
+            # exclusive geographic bucket.
+            v["has_tokyo23_evidence"] = has_tokyo23_evidence
+            v["has_outside_evidence"] = has_outside_evidence
+            metrics["bon_count"] += int(is_bon)
+            metrics["bon23_count"] += int(is_bon and has_tokyo23_evidence)
+            metrics["outside_count"] += int(has_outside_evidence)
+            metrics["url_count"] += int("http" in text.lower() or "t.co/" in text.lower())
+            lines = [line for line in text.splitlines() if line.strip()]
+            metrics["listy_count"] += int(
+                sum(1 for line in lines if _X_LIST_DATE_RE.match(line.strip())) >= 3 or len(lines) >= 8
+            )
+            metrics["opinion_count"] += int(bool(_X_OPINION_RE.search(text)))
+            metrics["experience_count"] += int(
+                any(keyword in text.lower() for keyword in experience_style_keywords)
+            )
+            metrics["detail_count"] += int(bool(_X_DETAIL_RE.search(text)))
+            metrics["media_count"] += int(bool(v.get("media_urls")))
+            onsite = is_bon and has_tokyo23_evidence and (
+                any(keyword in text.lower() for keyword in experience_style_keywords)
+                or bool(_X_ONSITE_RE.search(text))
+            )
+            metrics["change_count"] += int(is_bon and has_tokyo23_evidence and bool(_X_CHANGE_RE.search(text)))
+            metrics["onsite23_count"] += int(onsite)
+            metrics["photo23_count"] += int(onsite and bool(v.get("media_urls")))
+            metrics["song_count"] += int(has_song)
+            metrics["place_count"] += int(has_place or has_event)
+            v["critique_post"] = _x_is_critique_post(text)
         row["posts_seen"] += 1
         value, reasons = _x_post_value_score(v, cfg, known)
         row["value_points"] += value
@@ -1371,6 +1894,7 @@ def _build_x_account_scores(voices, cfg=None):
         row["usefulness_score"] = _x_account_usefulness_score(row)
         row["role_tags"] = _x_account_role_tags(row.get("top_reasons", {}))
 
+    _add_x_bonodorer_scores(accounts, text_metrics, _load_x_gap_credits())
     _annotate_important_informants(accounts)
 
     return {
@@ -1440,6 +1964,58 @@ def _save_x_account_scores(voices, cfg=None):
         print(f"[rank] Xアカウントスコア更新: {len(stats)}件（trusted {trusted} / muted {muted}）")
     except Exception as e:
         print(f"[rank] Xアカウントスコア保存エラー（継続）: {e}")
+
+
+def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sqlite"):
+    """Refresh candidates from stored voices only; this never calls the X API."""
+    events = load_events_from_master_db(db_path)
+    if not events:
+        print("[official-registry] master RDB unavailable; refresh skipped")
+        return []
+    candidates = registry_candidates([v for v in voices if v.get("source") in ("x", "x_whitelist")], events)
+    try:
+        with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        payload = {"accounts": []}
+    today = datetime.now(timezone.utc).date().isoformat()
+    existing = {_norm_handle(row.get("handle")): row for row in payload.get("accounts", []) if isinstance(row, dict)}
+    rejected = 0
+    for row in candidates:
+        key = _norm_handle(row.get("handle"))
+        prior = existing.get(key)
+        # A person already ruled this account out.  Re-deriving it would put it
+        # back in the review queue tomorrow, which is exactly what recording
+        # the decision is meant to prevent.
+        if prior and prior.get("tier") == REJECTED:
+            rejected += 1
+            continue
+        # The pre-v2 registry was manually curated and had no decided_by.
+        # Only a row explicitly produced by this machine may be replaced.
+        if not (prior and prior.get("decided_by") != "machine"):
+            merged = {**(prior or {}), **row}
+            # Keep the date the account first needed a person, so a queue that
+            # nobody works through shows its age instead of looking fresh.
+            if merged.get("tier") == "pending_review":
+                merged["pending_since"] = (prior or {}).get("pending_since") or today
+            else:
+                merged.pop("pending_since", None)
+            existing[key] = merged
+    payload.update({
+        "accounts": [existing[key] for key in sorted(existing)],
+        "updated_at": today,
+        "updated_by": "machine:x_source_registry_v2",
+    })
+    with open(X_OFFICIAL_SOURCE_ACCOUNTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    pending = [row for row in existing.values() if row.get("tier") == "pending_review"]
+    fresh = sum(1 for row in pending if row.get("pending_since") == today)
+    print(f"[official-registry] linked source candidates: {len(candidates)}")
+    print(
+        f"[official-registry] 要確認 {len(pending)}件（本日新規 {fresh}件 / 継続 {len(pending) - fresh}件）"
+        f" / 人が対象外と決めたので再提示しなかった {rejected}件"
+    )
+    return candidates
 
 
 def _ensure_x_member_score_props():
@@ -1645,11 +2221,20 @@ def _rank_whitelist_accounts(accounts, cfg=None):
         -x.get("score", 0),
         x["handle"].lower()
     ))
+    probed = []
     if include_muted_probe:
-        muted.sort(key=lambda x: (-x.get("score", 0), x["handle"].lower()))
-        ranked.extend(muted[:include_muted_probe])
+        # The probe re-checks accounts the scoring muted, in case the score was
+        # wrong.  A person's 休止 is a decision rather than a low score, so it
+        # is never probed: doing so would read someone they told us to stop
+        # reading.  This only became visible once the ledger stopped padding
+        # the muted pool with hundreds of rows.
+        probed = sorted(
+            (row for row in muted if row["reason"] == "muted"),
+            key=lambda x: (-x.get("score", 0), x["handle"].lower()),
+        )[:include_muted_probe]
+        ranked.extend(probed)
 
-    skipped = len(muted) - min(len(muted), include_muted_probe)
+    skipped = len(muted) - len(probed)
     if skipped:
         print(f"[rank] 低スコアのためホワイトリスト収集を休止: {skipped} アカウント")
     print(f"[rank] ホワイトリスト収集対象: {len(ranked)} / 元リスト {len(accounts)}")
@@ -1892,12 +2477,27 @@ def _load_notion_member_list():
     return accounts
 
 
-def _load_trusted_score_accounts(cfg=None):
-    """スコア台帳で trusted 判定されたアカウントを収集対象に自動編入する。
+def _curated_non_reader_official_handles():
+    """Return only human-curated dormant/rejected official-source handles."""
+    try:
+        registry = json.loads(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE).read_text(encoding="utf-8"))
+        rows = registry.get("accounts", []) if isinstance(registry, dict) else registry
+    except (OSError, json.JSONDecodeError, TypeError):
+        return set()
+    return {
+        _norm_handle(row.get("handle"))
+        for row in rows
+        if isinstance(row, dict)
+        and (row.get("tier") == "rejected"
+             or (row.get("tier") == "dormant" and row.get("decided_by") == "user"))
+    }
 
-    これが無いと、投稿の質から「良い情報源」と判定済みのアカウントでも、Notion
-    メンバーリストに手で登録されるまで一度もタイムラインを読みに行かなかった。
-    2026-07-26時点で trusted 383件に対し実際の収集名簿は69件だった。
+
+def _auto_trusted_roster_accounts(cfg=None):
+    """Build the daily roster from independent announce/record axes.
+
+    usefulness_score remains an evidence/review metric.  A saturated score
+    must never make alphabetical handle ordering the effective primary key.
     """
     cfg = cfg or _load_x_config() or {}
     roster_cfg = cfg.get("auto_trusted_roster", {}) or {}
@@ -1906,27 +2506,60 @@ def _load_trusted_score_accounts(cfg=None):
     scores = _load_x_account_scores(cfg).get("accounts", {})
     if not scores:
         return []
-    min_score = roster_cfg.get("min_score", 6.0)
     min_posts = roster_cfg.get("min_posts_seen", 3)
-    max_accounts = roster_cfg.get("max_accounts", 250)
+    per_axis = roster_cfg.get("per_axis_accounts", 150)
+    # The two axes score *how* someone writes, not *whether* they write about
+    # 盆踊り at all.  Measured on 2026-08-15, that let accounts with a top-rank
+    # announce/record score but zero 23区 bon-odori posts occupy the roster,
+    # while people holding real posts sat thousands of places down the list
+    # (@mypl_katsushika: 12 posts, announce rank 4198).  Requiring at least one
+    # observed post keeps the ranking as-is and only removes the dead weight.
+    require_bon = roster_cfg.get("require_bon23_post", True)
+    exclusions = _load_x_roster_exclusions()
+    dormant_or_rejected = _curated_non_reader_official_handles()
     candidates = []
     for key, row in scores.items():
-        if row.get("status") != "trusted":
+        handle = row.get("handle") or f"@{key}"
+        if (_norm_handle(handle) in exclusions
+                or _norm_handle(handle) in dormant_or_rejected
+                or row.get("manual_status") == "休止"):
             continue
         if (row.get("posts_seen") or 0) < min_posts:
             continue
-        score = row.get("usefulness_score", row.get("score", 0)) or 0
-        if score < min_score:
+        if row.get("is_area_bot"):
             continue
-        candidates.append((score, row.get("handle") or f"@{key}"))
-    candidates.sort(key=lambda item: (-item[0], item[1].lower()))
+        # 「観測して0件だった」と「まだ観測していない」は別。前者だけを落とす。
+        # 未計測を0扱いで弾くのは、unknown を減点にしていた過去の誤りの繰り返しになる。
+        # 手動名簿と公式台帳は別経路で合流するので、ここで落ちても人の判断は消えない。
+        if require_bon and row.get("bon23_count") is not None and row["bon23_count"] <= 0:
+            continue
+        candidates.append(row)
+
+    def rank(axis):
+        return sorted(candidates, key=lambda row: (
+            -float(row.get(axis) or 0),
+            -int(row.get("bon23_count") or 0),
+            -int(row.get("distinct_post_days") or 0),
+            _norm_handle(row.get("handle")),
+        ))[:per_axis]
+
+    selected_by_handle = {}
+    for axis in ("announce_score", "record_score"):
+        for row in rank(axis):
+            handle = row.get("handle") or ""
+            selected_by_handle.setdefault(_norm_handle(handle), {
+                "handle": handle, "page_id": "", "manual_status": "",
+                "source_type": "auto_two_axis", "selection_axes": [],
+            })["selection_axes"].append(axis)
     selected = [
-        {"handle": handle, "page_id": "", "manual_status": "", "source_type": "auto_trusted"}
-        for _, handle in candidates[:max_accounts]
+        selected_by_handle[key] for key in sorted(selected_by_handle)
     ]
     if selected:
-        print(f"[whitelist] スコアtrustedから自動編入: {len(selected)} アカウント")
+        print(f"[whitelist] 2軸名簿から自動編入: {len(selected)} アカウント")
     return selected
+
+
+_load_trusted_score_accounts = _auto_trusted_roster_accounts
 
 
 def load_whitelist_accounts(cfg=None):
@@ -1939,13 +2572,22 @@ def load_whitelist_accounts(cfg=None):
     manual_status: 優先 / 通常 / 休止
     """
     accounts = [
-        *load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE)),
+        # The ledger records what a source is; it does not get to decide
+        # against reading someone.  A dormant/unlinked/pending_review row is
+        # simply not contributed here, so the bonodorer roster keeps its own
+        # say.  Supplying it as 休止 muted 25 accounts the two-axis roster had
+        # selected -- including 神田観光協会 -- because this list is assembled
+        # first and then deduplicated by handle.
+        *[row for row in load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE))
+          if row.get("tier") in (None, "active")],
         *_load_important_informants(),
         *_load_collection_roster(),
     ]
     accounts.extend(_load_notion_member_list())
-    accounts.extend(_load_trusted_score_accounts(cfg))
-    out = _dedupe_whitelist_accounts(accounts)
+    accounts.extend(_auto_trusted_roster_accounts(cfg))
+    excluded = _load_x_roster_exclusions()
+    out = [row for row in _dedupe_whitelist_accounts(accounts)
+           if _norm_handle(row.get("handle")) not in excluded]
     print(f"[whitelist] 収集対象 {len(out)} アカウント（ローカル名簿＋自動編入＋Notion）")
     return out
 
@@ -2039,6 +2681,9 @@ def collect_x_whitelist(seen_urls, health=None):
     _sync_x_account_scores_to_notion(accounts, cfg)
     ranked_handles = _rank_whitelist_accounts(accounts, cfg)
     new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+    ledger_requests = 0
+    ledger_tweets = 0
+    ledger_new_urls = 0
     known_venues = _load_known_venues()
 
     search_batches = []
@@ -2116,6 +2761,8 @@ def collect_x_whitelist(seen_urls, health=None):
             tweets = data.get("tweets") or data.get("data") or []
             request_cost = max(len(tweets), 1) * cost_per_tweet
             run_cost += request_cost  # 空振りも1件課金
+            ledger_requests += 1
+            ledger_tweets += len(tweets)
             record_success(
                 health,
                 "whitelist",
@@ -2129,6 +2776,7 @@ def collect_x_whitelist(seen_urls, health=None):
                 "batch_id": f"batch-{batch_index}-page-{page}",
                 "estimated_cost_usd": cost_per_tweet,
             })
+            ledger_new_urls += len(prepared)
             accepted_before = len(new_items)
             for _, v in prepared:
                 v["source"] = "x_whitelist"
@@ -2175,6 +2823,15 @@ def collect_x_whitelist(seen_urls, health=None):
                 json.dump(state, f, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"[whitelist] 予算記録の保存エラー: {e}")
+    if run_cost > 0:
+        _record_x_cost(
+            "whitelist",
+            cost_usd=run_cost,
+            requests=ledger_requests,
+            tweets_fetched=ledger_tweets,
+            new_urls=ledger_new_urls,
+            voices_accepted=len(new_items),
+        )
     if all_batches_completed and search_batches:
         _save_whitelist_since(run_started_at)
     else:
@@ -2195,6 +2852,14 @@ def _save_event_evidence_state(state):
     os.makedirs("data", exist_ok=True)
     with open(X_EVENT_EVIDENCE_STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
+
+
+def _event_evidence_window_days(evidence_cfg):
+    """Return the rolling lookback, preserving the legacy config key."""
+    return int(evidence_cfg.get(
+        "lookback_window_days",
+        evidence_cfg.get("initial_window_days", 14),
+    ))
 
 
 def _advance_event_evidence_state(state, days, note, now=None):
@@ -2260,23 +2925,75 @@ def _clear_pending_event_evidence():
         _save_event_evidence_state(state)
 
 
+def _event_evidence_cohort_selection(cfg, now=None):
+    """Select a small, rotating 23区 evidence-mining cohort.
+
+    A cohort is deliberately a cost-control sample, not a source registry:
+    it must be refreshed periodically even if the same handles happen to win.
+    """
+    evidence_cfg = cfg.get("event_evidence", {}) or {}
+    cohort_file = evidence_cfg.get("cohort_file", X_EVENT_EVIDENCE_COHORT_FILE)
+    now = now or datetime.now(timezone.utc)
+    try:
+        cohort = json.loads(Path(cohort_file).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, TypeError):
+        cohort = {}
+    refresh_days = int(evidence_cfg.get("reselect_after_days", 30))
+    selected_at = cohort.get("selected_at") or ""
+    try:
+        fresh = now - datetime.fromisoformat(selected_at.replace("Z", "+00:00")) < timedelta(days=refresh_days)
+    except (TypeError, ValueError):
+        # Old hand-frozen cohort files did not carry a timestamp.  Preserve
+        # that compatibility; the production file has selected_at and rotates.
+        fresh = bool(cohort.get("handles")) and not selected_at
+    handles = sorted(set(cohort.get("handles") or []), key=str.casefold)
+    if handles and fresh:
+        return handles, cohort.get("selection_id") or hashlib.sha256("\n".join(handles).encode("utf-8")).hexdigest()
+
+    scores = _load_x_account_scores(cfg).get("accounts", {}) or {}
+    if not scores:
+        return [], ""
+    exclusions = _load_x_roster_exclusions()
+    official_non_readers = _curated_non_reader_official_handles()
+    eligible = []
+    for key, row in scores.items():
+        handle = row.get("handle") or f"@{key}"
+        normalized = _norm_handle(handle)
+        if (normalized in exclusions or normalized in official_non_readers
+                or (row.get("posts_seen") or 0) < 3 or row.get("is_area_bot")
+                or (row.get("bon23_count") or 0) <= 0):
+            continue
+        eligible.append(row)
+    eligible.sort(key=lambda row: (
+        -float(row.get("announce_score") or 0) - float(row.get("record_score") or 0),
+        -int(row.get("bon23_count") or 0),
+        _norm_handle(row.get("handle")),
+    ))
+    size = int(evidence_cfg.get("cohort_size", 30))
+    handles = [f"@{_norm_handle(row.get('handle'))}" for row in eligible[:size]]
+    selection_id = hashlib.sha256(
+        (now.isoformat() + "\n" + "\n".join(handles)).encode("utf-8")
+    ).hexdigest()
+    payload = {
+        "selection": "two_axis_bon23_top_cohort",
+        "expected_count": len(handles),
+        "selected_at": now.isoformat(),
+        "selection_id": selection_id,
+        "handles": handles,
+    }
+    try:
+        Path(cohort_file).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    except OSError as exc:
+        print(f"[evidence] コホート保存エラー: {exc}")
+    return handles, selection_id
+
+
 def _event_evidence_accounts(accounts, cfg):
     evidence_cfg = cfg.get("event_evidence", {})
     cohort_file = evidence_cfg.get(
         "cohort_file", X_EVENT_EVIDENCE_COHORT_FILE
     )
-    try:
-        with open(cohort_file, "r", encoding="utf-8") as f:
-            cohort = json.load(f)
-    except (OSError, json.JSONDecodeError, TypeError):
-        cohort = {}
-    handles = sorted(set(cohort.get("handles") or []), key=str.casefold)
-    expected_count = cohort.get("expected_count")
-    if handles and expected_count and len(handles) != int(expected_count):
-        raise ValueError(
-            f"event evidence cohort count mismatch: "
-            f"{len(handles)} != {expected_count}"
-        )
+    handles, _ = _event_evidence_cohort_selection(cfg)
     if handles:
         return handles
 
@@ -2295,20 +3012,21 @@ def _event_evidence_accounts(accounts, cfg):
 
 
 def collect_event_evidence_history():
-    """前年同日から2週間分を全対象アカウントで収集する再開可能なパイロット。"""
+    """設定された窓を全対象アカウントで収集する再開可能なパイロット。"""
     cfg = _load_x_config() or {}
     evidence_cfg = cfg.get("event_evidence", {})
     if not evidence_cfg.get("enabled", False):
         return []
+    window_days = _event_evidence_window_days(evidence_cfg)
     if not TWITTERAPI_IO_KEY:
         print("[evidence] TWITTERAPI_IO_KEY 未設定のためスキップ")
         return []
 
     accounts = load_whitelist_accounts()
-    handles = _event_evidence_accounts(accounts, cfg)
-    selection_id = hashlib.sha256(
-        "\n".join(handles).encode("utf-8")
-    ).hexdigest()
+    handles, selection_id = _event_evidence_cohort_selection(cfg)
+    if not handles:
+        handles = _event_evidence_accounts(accounts, cfg)
+        selection_id = hashlib.sha256("\n".join(handles).encode("utf-8")).hexdigest()
     state = _load_event_evidence_state()
     if state and state.get("selection_id") != selection_id:
         print(
@@ -2326,7 +3044,7 @@ def collect_event_evidence_history():
             return []
         state = _advance_event_evidence_state(
             state,
-            days=int(evidence_cfg.get("initial_window_days", 14)),
+            days=window_days,
             note="auto-advance continuous event evidence window",
         )
         if not state:
@@ -2343,7 +3061,7 @@ def collect_event_evidence_history():
             print("[evidence] 対象アカウントなし")
             return []
         start, end = build_initial_window(
-            days=int(evidence_cfg.get("initial_window_days", 14))
+            days=window_days
         )
         state = {
             "status": "in_progress",
@@ -2389,6 +3107,7 @@ def collect_event_evidence_history():
     detected = []
     run_cost = 0.0
     pages = 0
+    ledger_tweets = 0
     batch_index = int(state.get("batch_index", 0))
     batch_cursors = state.get("batch_cursors") or {}
     completed_batches = set(state.get("completed_batches") or [])
@@ -2413,6 +3132,7 @@ def collect_event_evidence_history():
 
         tweets = data.get("tweets") or data.get("data") or []
         run_cost += max(len(tweets), 1) * cost_per_tweet
+        ledger_tweets += len(tweets)
         state["tweets_scanned"] = int(state.get("tweets_scanned", 0)) + len(tweets)
         page_evidence = []
         for tweet in tweets:
@@ -2447,6 +3167,14 @@ def collect_event_evidence_history():
         budget_state[today] = daily_spent + run_cost
         with open(X_BUDGET_FILE, "w", encoding="utf-8") as f:
             json.dump(budget_state, f, ensure_ascii=False, indent=2)
+    if run_cost > 0:
+        _record_x_cost(
+            "cohort_evidence",
+            cost_usd=run_cost,
+            requests=pages,
+            tweets_fetched=ledger_tweets,
+            evidence_detected=len(detected),
+        )
     if len(completed_batches) >= len(batches):
         state["status"] = "awaiting_review"
         state["completed_at"] = datetime.now(timezone.utc).isoformat()
@@ -3102,6 +3830,7 @@ def load_glossary_v2():
     - experience_keywords: 参加報告語として使う語
     - role_terms: {シグナル役割: [使用語]}
     - song_terms: 曲名候補として使う語
+    - entity_aliases: 型付き会場・イベント別名（master地理解決用）
     """
     empty = {
         "alias_map": {},
@@ -3109,6 +3838,7 @@ def load_glossary_v2():
         "experience_keywords": [],
         "role_terms": {},
         "song_terms": [],
+        "entity_aliases": [],
     }
     if not NOTION_TOKEN or not GLOSSARY_V2_DB_ID:
         return empty
@@ -3119,6 +3849,7 @@ def load_glossary_v2():
             "experience_keywords": set(),
             "role_terms": {},
             "song_terms": set(),
+            "entity_aliases": [],
         }
         cursor = None
         while True:
@@ -3150,6 +3881,17 @@ def load_glossary_v2():
 
                 if kind in ("会場別名", "イベント別名", "地域語", "団体語"):
                     runtime["alias_map"][term] = interpretation
+                entity_type = {
+                    "会場別名": "venue",
+                    "イベント別名": "event",
+                    "地域語": "region",
+                }.get(kind)
+                if entity_type:
+                    runtime["entity_aliases"].append({
+                        "term": term,
+                        "canonical": interpretation,
+                        "entity_type": entity_type,
+                    })
                 if kind == "除外語" or "除外語" in roles or confidence == "除外確定":
                     runtime["exclude_keywords"].add(term)
                 if "参加報告" in roles:
@@ -3172,13 +3914,17 @@ def load_glossary_v2():
                 for role, values in sorted(runtime["role_terms"].items())
             },
             "song_terms": sorted(runtime["song_terms"]),
+            "entity_aliases": sorted(
+                runtime["entity_aliases"],
+                key=lambda row: (row["term"], row["entity_type"], row["canonical"]),
+            ),
         }
         print(
             "[glossary-v2] runtime読込: "
             f"alias {len(out['alias_map'])} / "
             f"exclude {len(out['exclude_keywords'])} / "
             f"experience {len(out['experience_keywords'])} / "
-            f"songs {len(out['song_terms'])}"
+            f"songs {len(out['song_terms'])} / entities {len(out['entity_aliases'])}"
         )
         return out
     except Exception as e:
@@ -3573,7 +4319,12 @@ def main():
         with open(voices_seen_file, 'w', encoding='utf-8') as f:
             json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
 
+        # Where the bio came from, printed before the scores are rebuilt.  An
+        # all-empty run is a real finding here, not an absence of output.
+        print(X_PROFILE_PROBE.report())
+
         _save_x_account_scores(deduped_voices, _load_x_config() or {})
+        _refresh_official_source_registry(deduped_voices)
 
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
     except RawXArchiveError:

@@ -1,6 +1,6 @@
 # PR-E0 仕様：event inbox candidate v1（正本）
 
-決定者: こと（Claude Code） / 2026-08-11（**v1.1 追記 同日**：おとの仕様レビュー指摘2件＋補足2件を反映。改訂箇所は §3.2 / §4.2 / §5.1 / §5.2 / §10.1 / §11-26〜35）
+決定者: こと（Claude Code） / 2026-08-11（**v1.2 追記 同日**：おとの仕様レビュー指摘＋実データdry-runの発見を反映。v1.1＝§3.2/§4.2/§5.1/§5.2/§10.1/§11-26〜35、v1.2＝§3.4/§4.1/§9/§11-36〜40、v1.3＝§9/§10.2/§11-41〜42）
 前提: `docs/local-judgment-contract-v1.md`（v1.1、SHA-256 `3b47f5e4e2618c209c1d8b0fb42cbaa1f5687b9a3f167719bd2939ceb4756a05`）
 段階: 10本立てのうち3本目（E1・J0-contract は merge 済み）
 
@@ -34,7 +34,7 @@
 
 | 入力 | 実体 | 現状の件数 |
 |---|---|---|
-| 公式・準公式のお知らせレポート | `data/official_notice_reports/*.json` → `report_apply/apply_official_notice_report.py` | origin/main に 40件超 |
+| 公式・準公式のお知らせレポート | `data/official_notice_reports/*.json` → `report_apply/apply_official_notice_report.py` | origin/main に 34本・241 entry（v1.2 で実測） |
 | 現地報告（新規イベント） | `data/firsthand_reports/*.json` → `report_apply/apply_firsthand_field_report.py` の `report_type = "new_event"` | 1件 |
 
 ### 入れないもの（意図的な先送り。抜け漏れではない）
@@ -46,7 +46,7 @@
 
 ### なぜこの切り方か
 
-E0 の目的は「イベント候補の入り口を1本にする」ことだが、**一度に全部の入り口を付け替えると、差し戻しが起きたとき原因の切り分けができない。** J0-contract で2度差し戻した経験から、1PRで確定させる範囲を狭く取る。お知らせレポートは内田さんが日々使う主入口（実績40件超）なので、ここが通れば E0 の目的の大半は達成できる。
+E0 の目的は「イベント候補の入り口を1本にする」ことだが、**一度に全部の入り口を付け替えると、差し戻しが起きたとき原因の切り分けができない。** J0-contract で2度差し戻した経験から、1PRで確定させる範囲を狭く取る。お知らせレポートは内田さんが日々使う主入口（実績34本・241 entry）なので、ここが通れば E0 の目的の大半は達成できる。
 
 ---
 
@@ -174,10 +174,23 @@ ON review_inbox_items(contract_domain, contract_lane, status, expires_at);
     "calculation_version": "e0-candidate-search/v1",
     "input_hash": "<sha256 64桁>"
   },
+  "resolved_target": {                            // v1.2。DBから読んだ値だけを置く。null 可
+    "occurrence_id": "...",
+    "display_name": "...",
+    "series_id": "...",
+    "event_year": 2026,
+    "venue_name": "...",
+    "date_start": "...",
+    "read_at": "2026-08-11T14:00:00+09:00"
+  },
   "evidence_ids": ["evidence_xxxxxxxxxxxxxxxx"],
   "raw_excerpt": "レポート source.raw_text の該当部分（無ければ全文の先頭1000字）"
 }
 ```
+
+**`resolved_target` を `proposal` の外に置くのは、hash を揺らさないためです（v1.2 で追記）。** `occurrence_id` しか書いていない entry の表示名を補うには既存の開催回を読む必要がありますが、**読んだ値を `proposal` に入れると、DB 側で表示名が変わっただけで `source_payload_hash` が変わり、レポートは1文字も変わっていないのに改訂が発生します**（§4.2 の家族が無意味に伸びる）。`source_payload_hash` は**レポート由来の値だけ**から作ってください。
+
+読み取りは `SELECT` のみで、行が見つからなければ `resolved_target` は null にし、§10.2 の `occurrence_id_not_found`（medium）を出します。`title` 列などの表示用文字列にはこの値を使って構いません（列は hash の対象外）。
 
 `targets.input_hash` は `sha256_hex(canonical_json({event_name_hint, venue_name, event_year, limit}))`。
 候補集合を後から凍結して照合できるようにするためのもので、契約 §7 の retry packet の `input_hash` と同じ役割です。
@@ -200,8 +213,21 @@ ON review_inbox_items(contract_domain, contract_lane, status, expires_at);
 
 - `source_id` = `official_notice:{report.source.report_id}` または `firsthand:{report_id}`
   （firsthand のレポートには `report_id` が無いので、**ファイル名の stem** を `report_id` とする）
-- `entry_key` = レポートの entry に `entry_id` があればその値。無ければ `stable_id("entry", normalize_text(event_name_hint), str(event_year), length=12)`
-  **配列の index は使わない**（レポートを並び替えただけで別候補になるため）
+- `entry_key` = **下の優先順位で最初に決まったもの**（v1.2 で改訂。おとの実データ指摘）。**配列の index は使わない**（レポートを並び替えただけで別候補になるため）
+
+| # | 条件 | `entry_key` |
+|---|---|---|
+| 1 | entry に `entry_id` がある | その値 |
+| 2 | `occurrence_id` がある | `stable_id("entry", "occ", occurrence_id, length=12)` |
+| 3 | `event_name_hint` と `event_year` がある | `stable_id("entry", normalize_text(event_name_hint), str(event_year), length=12)` |
+| 4 | `match_hint` に名前か会場がある | `stable_id("entry", "hint", normalize_text(match_hint.event_name_hint or ""), str(match_hint.event_year or ""), normalize_text(match_hint.venue_name_hint or ""), length=12)` |
+| 5 | どれも無い | **high severity `entry_identity_undeterminable` で停止** |
+
+**改訂の理由（実測）**: origin/main の実レポート34本・241 entry を数えたところ、`confirm_existing` 63件のうち **14件が `event_name_hint` も `event_year` も持たず、`occurrence_id` だけ**でした（`kyobashi5_nouryou_map_2026_verify` / `koto_date_fill_hamacho_morishita_rinkai_2026` / `edogawa_venue_corrections_2026` ほか）。v1.1 の式では全部が同じ `entry_key` になり、同一レポート内 collision で停止します。**明示IDを最強のアイデンティティとして使う**のは「fuzzy 解決の禁止」とも整合するので、おとの案1を採ります。
+
+レポート34本を直す案（案2）は採りません。**既存レポートの書き換えが E0 の PR に混ざる**と、差し戻し時にコードの問題かデータの問題か切り分けられなくなるためです。
+
+なお実データに `match_hint` を使った entry は**1件もありません**（63件すべて `occurrence_id`）。条件4は将来のための規則で、テストは fixture で作ってください。
 - `source_key` = `{source_id}#{entry_key}`
 - `inbox_id` = `stable_id("inbox", "event_candidate", source_id, source_key)`
 
@@ -343,7 +369,15 @@ firsthand は official notice と形が違い、**1ファイル＝1イベント�
 - 無く `date_start` があれば `date_start` の JST 23:59:59
 - どちらも無ければ `first_eligible_at + 90日`
 
-**期限切れの entry は候補化しない。** 実行時刻が `expires_at` を過ぎている entry は行を作らず、実行レポートに `expired` として件数と内訳を出す（黙って捨てない）。既存の E0 行が期限切れになった場合、E0 は状態を変えません（掃除は J0-read/J1 の担当）。
+**期限切れの entry は既定では候補化しない。** 実行時刻が `expires_at` を過ぎている entry は行を作らず、実行レポートの `expired` に**1件ずつ `source_key`・イベント名・日付を列挙**します（件数だけでは何が落ちたか分からないので、黙って捨てたのと同じになる）。既存の E0 行が期限切れになった場合、E0 は状態を変えません（掃除は J0-read/J1 の担当）。
+
+**`--include-expired` フラグを用意すること（v1.3）。** 付けると期限切れでも候補化し、`time_scope='historical'` で入れます。
+
+**この既定にした理由と、フラグが要る理由**（v1.3 で追記）。おとの実測で、34本の dry-run は created 134 / expired 107 でした。**expired が 44% を占めますが、この34本は既に旧経路で master RDB へ適用済み**です（練馬第1弾の「北大泉商栄会 納涼盆踊り大会」`occ_833412c94433491f` ほか4件が実在することを RDB で確認済み）。つまりこのコーパスは移行対象ではなく**テスト材料**で、落としても失うものはありません。
+
+一方で、**内田さんが「終わった行事の掲示物」を後から取り込む使い方は実在します**（過去実績の記録は盆助の資産）。既定で落としたままだと、その入力経路が E0 に無いことになります。フラグで開けられるようにし、既定は流量を守る側に倒します。
+
+**初回投入についての注意（v1.2）**: 既存34レポートを一度に流すと候補が235件できます（おと実測）。`--max-candidates` の既定200で止まるのは**仕様どおりの正しい挙動**で、緩めません。§13 の実測は明示的に上限を上げて行い、**使った値を PR 本文に書いてください**。ただし本番へ入れるとき（`--apply`）に235件を一度に積むかどうかは別問題で、**判断待ち561件の再演を避けるためレポート単位で小分けに入れる**のが既定の運用です。ここは E0 が決めることではなく、実行時に内田さんと決めます。
 
 **流量の上限**: `--max-candidates`（既定 200）。1回の実行で作る**新規行**がこれを超える場合、**1行も書かずに非zero終了**する。部分適用にすると「何件が入って何件が入っていないか」が読めなくなるためで、既存 apply スクリプトの partial-apply ポリシーとは意図的に変えています。超過時のメッセージには、対象レポートと必要な件数を出すこと。
 
@@ -373,7 +407,7 @@ firsthand は official notice と形が違い、**1ファイル＝1イベント�
 
 `review_inbox_adapters/build_event_inbox_candidates.py`（新設、entry point）
 
-- 引数: `--report PATH`（複数可） / `--report-dir DIR` / `--db PATH` / `--max-candidates N` / `--apply` / `--confirm PHRASE` / `--no-auto-migrate`
+- 引数: `--report PATH`（複数可） / `--report-dir DIR` / `--db PATH` / `--max-candidates N` / `--apply` / `--confirm PHRASE` / `--no-auto-migrate` / `--include-expired`
 - **既定は dry-run**。本番DBをコピーして `data/event_inbox_candidates_dry_run.sqlite` へ書く（既存 apply スクリプトと同じ `report_apply/rdb_apply_support` の `copy_db` / `backup_db` / `audit_db` を使う）
 - 本番書き込みは `--apply` ＋ `operation_safety/manual_apply_guards` の確認フレーズが揃ったときのみ。定数 `EVENT_INBOX_CANDIDATE_CONFIRMATION` を新設する
 - 出力: `data/event_inbox_candidates_report.json` と `.md`。内訳は `created` / `updated` / `noop` / `superseded` / `expired` / `out_of_scope` / `issues` の件数と、各件の `inbox_id`・`source_key`・理由
@@ -439,6 +473,19 @@ PR本文に、どのテストがどの修正を外すと落ちるかを1行ず�
 34. 実行レポートに `migrations_applied` が出る（何も当てなかった場合は空配列）
 35. firsthand の root 直下フィールドが §5.2 のとおり proposal へ写り、`report_id` がファイル名 stem になる（fixture で固定）
 
+### v1.2 で追加（実データ dry-run で出た entry identity の穴）
+
+36. `occurrence_id` だけで `event_name_hint` / `event_year` を持たない `confirm_existing` が同一レポートに複数あっても、**別々の `entry_key` になり衝突しない**（実レポート `kyobashi5_nouryou_map_2026_verify` を fixture に使う）
+37. `match_hint` だけの entry が §4.1 の条件4で採番される（fixture）
+38. `entry_id`・`occurrence_id`・名前年・`match_hint` のいずれも無い entry で high severity `entry_identity_undeterminable` 停止
+39. **`resolved_target` の値が変わっても `source_payload_hash` が変わらない**（DB 側の `display_name` を書き換えてから再実行し、no-op になること。修正を外す＝ proposal に読み取り値を入れると落ちる）
+40. `occurrence_id` が実在しないとき `resolved_target` が null になり、medium issue が出て、その entry だけスキップされる（他 entry は候補化される）
+
+### v1.3 で追加（期限切れの扱い）
+
+41. 期限切れ entry が実行レポートの `expired` に**1件ずつ `source_key`・イベント名・日付つきで**出る（件数だけではない）
+42. `--include-expired` を付けると期限切れも候補化され、`time_scope='historical'` になる（付けなければ行は作られない）
+
 ---
 
 ## 12. やらないこと（E0 の範囲外）
@@ -457,8 +504,8 @@ PR本文に、どのテストがどの修正を外すと落ちるかを1行ず�
 
 ## 13. 完了条件
 
-1. §11 の 35件がすべて通り、かつ各件が「修正を外すと落ちる」ことを確認済み
-2. dry-run を実際の `data/official_notice_reports/` 全件（40件超）に対して回し、実行レポートの内訳（created / expired / out_of_scope / issues）を PR 本文に貼る
+1. §11 の 42件がすべて通り、かつ各件が「修正を外すと落ちる」ことを確認済み
+2. dry-run を実際の `data/official_notice_reports/` 全件（34本・241 entry）に対して回し、実行レポートの内訳（created / expired / out_of_scope / issues）を PR 本文に貼る
 3. §7 の canonical テーブル行数が dry-run 前後で不変であることを、実データで実測して PR 本文に貼る
 4. 仕様書（この文書）を `docs/local-judgment-e0-event-inbox-v1.md` として同梱
 5. 本番 migration は適用しない（PRにはスクリプトのみ）

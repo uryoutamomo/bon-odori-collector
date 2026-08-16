@@ -95,25 +95,43 @@ class FirsthandReportHelpersTest(unittest.TestCase):
         count = self.conn.execute("SELECT COUNT(*) FROM venues").fetchone()[0]
         self.assertEqual(count, 2)
 
-    def test_ensure_venue_ambiguous_does_not_write(self):
+    def test_ensure_venue_ambiguous_when_duplicate_rows_have_no_address(self):
         now = master_db.now_utc()
-        other_id = master_db.stable_id("venue", "杜松ホーム別館", "東京都品川区別")
+        self.conn.execute("UPDATE venues SET address = NULL WHERE venue_id = ?", (self.venue_id,))
+        other_id = master_db.stable_id("venue", "杜松ホーム", "other")
         self.conn.execute(
             """
             INSERT INTO venues(
               venue_id, origin, canonical_name, normalized_name, area, address,
               review_status, created_at, updated_at
-            ) VALUES (?, 'curated', ?, ?, '品川区', '東京都品川区別', 'active', ?, ?)
+            ) VALUES (?, 'curated', ?, ?, '品川区', NULL, 'active', ?, ?)
             """,
-            (other_id, "杜松ホーム別館", master_db.normalize_text("杜松ホーム別館"), now, now),
+            (other_id, "杜松ホーム", master_db.normalize_text("杜松ホーム"), now, now),
         )
         self.conn.commit()
         before = self.conn.execute("SELECT COUNT(*) FROM venues").fetchone()[0]
-        result = ensure_venue(self.conn, "杜松ホーム", address="東京都品川区XYZ")
+        # SQLite permits multiple NULL values in UNIQUE(name, address); ensure_venue
+        # coalesces those NULL addresses and must refuse to choose one.
+        result = ensure_venue(self.conn, "杜松ホーム")
         self.assertEqual(result["status"], "ambiguous")
         self.assertIsNone(result["venue_id"])
         after = self.conn.execute("SELECT COUNT(*) FROM venues").fetchone()[0]
         self.assertEqual(before, after)
+
+    def test_ensure_venue_creates_instead_of_absorbing_a_similar_name(self):
+        now = master_db.now_utc()
+        other_id = master_db.stable_id("venue", "杜松ホーム別館", "東京都品川区別")
+        self.conn.execute(
+            "INSERT INTO venues(venue_id,origin,canonical_name,normalized_name,area,address,review_status,created_at,updated_at) VALUES (?, 'curated', ?, ?, '品川区', '東京都品川区別', 'active', ?, ?)",
+            (other_id, "杜松ホーム別館", master_db.normalize_text("杜松ホーム別館"), now, now),
+        )
+        self.conn.commit()
+        # 6e1bb39: 'さくら公園' must not silently become '東葛西さくら公園'.
+        result = ensure_venue(self.conn, "杜松ホーム", address="東京都品川区XYZ")
+        self.assertEqual(result["status"], "created")
+        self.assertNotEqual(result["venue_id"], other_id)
+        self.assertEqual(self.conn.execute("SELECT COUNT(*) FROM venues").fetchone()[0], 3)
+        self.assertEqual(self.conn.execute("SELECT canonical_name FROM venues WHERE venue_id=?", (other_id,)).fetchone()[0], "杜松ホーム別館")
 
     def test_find_occurrence_candidates_exact_name(self):
         candidates = find_occurrence_candidates(self.conn, "品川第一盆踊り", event_year=2026)

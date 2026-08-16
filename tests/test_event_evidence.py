@@ -1,7 +1,8 @@
-import unittest
+import hashlib
 import json
 import os
 import tempfile
+import unittest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
@@ -19,6 +20,44 @@ from collection_support.event_evidence import (
 
 
 class EventEvidenceTest(unittest.TestCase):
+    def test_production_config_uses_three_day_lookback(self):
+        with open("x_queries.json", encoding="utf-8") as handle:
+            evidence_cfg = json.load(handle)["event_evidence"]
+
+        self.assertEqual(evidence_cfg["lookback_window_days"], 3)
+        self.assertNotIn("initial_window_days", evidence_cfg)
+        self.assertEqual(collect._event_evidence_window_days(evidence_cfg), 3)
+
+    def test_shrinking_completed_window_to_three_days_covers_new_interval(self):
+        old_covered_until = datetime(2026, 8, 11, 7, 47, tzinfo=timezone.utc)
+        now = datetime(2026, 8, 12, 8, 0, tzinfo=timezone.utc)
+        state = {
+            "status": "awaiting_review",
+            "window_start": "2026-07-28T07:47:00+00:00",
+            "window_end": old_covered_until.isoformat(),
+            "covered_until": old_covered_until.isoformat(),
+        }
+        days = collect._event_evidence_window_days({
+            "lookback_window_days": 3,
+            "initial_window_days": 14,
+        })
+
+        next_state = collect._advance_event_evidence_state(
+            state, days=days, note="test shrink", now=now
+        )
+
+        next_start = datetime.fromisoformat(next_state["window_start"])
+        next_end = datetime.fromisoformat(next_state["window_end"])
+        self.assertEqual(next_end - next_start, timedelta(days=3))
+        self.assertLessEqual(next_start, old_covered_until)
+        self.assertEqual(next_end, now)
+
+    def test_legacy_initial_window_key_remains_supported(self):
+        self.assertEqual(
+            collect._event_evidence_window_days({"initial_window_days": 14}),
+            14,
+        )
+
     def test_advance_window_never_runs_into_the_future(self):
         state = {
             "status": "awaiting_review",
@@ -65,6 +104,43 @@ class EventEvidenceTest(unittest.TestCase):
             self.assertLessEqual(window_end, now)
             self.assertEqual(window_end - window_start, timedelta(days=14))
             state["covered_until"] = state["window_end"]
+
+    def test_in_progress_state_keeps_its_existing_window(self):
+        window_start = "2026-08-09T00:00:00+00:00"
+        window_end = "2026-08-12T00:00:00+00:00"
+        handles = ["@a"]
+        state = {
+            "status": "in_progress",
+            "window_start": window_start,
+            "window_end": window_end,
+            "selected_handles": handles,
+            "selection_id": hashlib.sha256(b"@a").hexdigest(),
+            "batch_index": 0,
+            "batch_cursors": {},
+            "completed_batches": [0],
+            "pending_evidence": [],
+        }
+        config = {
+            "event_evidence": {
+                "enabled": True,
+                "pilot_only": False,
+                "lookback_window_days": 3,
+                "batch_size": 20,
+            }
+        }
+
+        with patch.object(collect, "TWITTERAPI_IO_KEY", "test-key"), \
+                patch.object(collect, "_load_x_config", return_value=config), \
+                patch.object(collect, "load_whitelist_accounts", return_value=[]), \
+                patch.object(collect, "_event_evidence_cohort_selection", return_value=(handles, state["selection_id"])), \
+                patch.object(collect, "_load_event_evidence_state", return_value=state), \
+                patch.object(collect, "_save_event_evidence_state"), \
+                patch.object(collect, "_advance_event_evidence_state") as advance:
+            collect.collect_event_evidence_history()
+
+        advance.assert_not_called()
+        self.assertEqual(state["window_start"], window_start)
+        self.assertEqual(state["window_end"], window_end)
 
     def test_classifies_patterns_and_explainable_score(self):
         evidence = classify_event_evidence({
@@ -278,12 +354,16 @@ class EventEvidenceTest(unittest.TestCase):
         self.assertEqual(candidates[0]["estimated_month"], "06")
         self.assertEqual(candidates[0]["evidence_count"], 2)
 
-    def test_initial_window_is_previous_year_and_fourteen_days(self):
+    def test_recreated_state_starts_previous_year_with_configured_window(self):
+        days = collect._event_evidence_window_days({
+            "lookback_window_days": 3,
+            "initial_window_days": 14,
+        })
         start, end = build_initial_window(
-            datetime(2026, 6, 7, 12, tzinfo=timezone.utc), days=14
+            datetime(2026, 6, 7, 12, tzinfo=timezone.utc), days=days
         )
         self.assertEqual(start.isoformat(), "2025-06-07T00:00:00+00:00")
-        self.assertEqual((end - start).days, 14)
+        self.assertEqual((end - start).days, 3)
 
     def test_history_query_has_unfiltered_accounts_and_half_open_window(self):
         start = datetime(2025, 6, 7, tzinfo=timezone.utc)
@@ -330,6 +410,47 @@ class EventEvidenceTest(unittest.TestCase):
                 "event_evidence": {"cohort_file": path}
             })
         self.assertEqual(selected, ["@a", "@b"])
+
+    def test_reselected_cohort_requires_bon23_and_respects_exclusions(self):
+        scores = {"accounts": {
+            "first": {"handle": "@first", "posts_seen": 10, "bon23_count": 2,
+                      "announce_score": 10, "record_score": 10},
+            "second": {"handle": "@second", "posts_seen": 10, "bon23_count": 5,
+                       "announce_score": 10, "record_score": 10},
+            "zero": {"handle": "@zero", "posts_seen": 10, "bon23_count": 0,
+                     "announce_score": 99, "record_score": 99},
+            "excluded": {"handle": "@excluded", "posts_seen": 10, "bon23_count": 9,
+                         "announce_score": 99, "record_score": 99},
+            "dormant": {"handle": "@dormant", "posts_seen": 10, "bon23_count": 9,
+                        "announce_score": 99, "record_score": 99},
+        }}
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cohort = os.path.join(tmpdir, "cohort.json")
+            registry = os.path.join(tmpdir, "official.json")
+            with open(cohort, "w", encoding="utf-8") as f:
+                json.dump({"selected_at": "2026-06-01T00:00:00+00:00", "handles": ["@old"]}, f)
+            with open(registry, "w", encoding="utf-8") as f:
+                json.dump({"accounts": [{"handle": "@dormant", "tier": "dormant", "decided_by": "user"}]}, f)
+            cfg = {"event_evidence": {"cohort_file": cohort, "cohort_size": 2, "reselect_after_days": 30}}
+            with patch.object(collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", registry), \
+                    patch.object(collect, "_load_x_account_scores", return_value=scores), \
+                    patch.object(collect, "_load_x_roster_exclusions", return_value={"excluded": {}}):
+                handles, _ = collect._event_evidence_cohort_selection(
+                    cfg, now=datetime(2026, 8, 1, tzinfo=timezone.utc)
+                )
+        self.assertEqual(handles, ["@second", "@first"])
+
+    def test_cohort_is_reselected_after_thirty_days_even_if_handles_match(self):
+        scores = {"accounts": {"a": {"handle": "@a", "posts_seen": 3, "bon23_count": 1,
+                                       "announce_score": 1, "record_score": 1}}}
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cohort = os.path.join(tmpdir, "cohort.json")
+            cfg = {"event_evidence": {"cohort_file": cohort, "cohort_size": 30, "reselect_after_days": 30}}
+            with patch.object(collect, "_load_x_account_scores", return_value=scores), \
+                    patch.object(collect, "_load_x_roster_exclusions", return_value={}):
+                _, first = collect._event_evidence_cohort_selection(cfg, now=datetime(2026, 6, 1, tzinfo=timezone.utc))
+                _, second = collect._event_evidence_cohort_selection(cfg, now=datetime(2026, 7, 1, tzinfo=timezone.utc))
+        self.assertNotEqual(first, second)
 
     def test_clears_pending_only_after_queue_delivery(self):
         with tempfile.TemporaryDirectory() as tmpdir:

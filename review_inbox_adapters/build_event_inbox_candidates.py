@@ -23,6 +23,11 @@ OUT_DB = DATA / "event_inbox_candidates_dry_run.sqlite"
 OUT_JSON = DATA / "event_inbox_candidates_report.json"
 OUT_MD = DATA / "event_inbox_candidates_report.md"
 EVENT_INBOX_CANDIDATE_CONFIRMATION = "APPLY EVENT INBOX CANDIDATES"
+REVIEW_CONSOLE = "review_console_change_request"
+# Review console change_request actions (decision_stage.CHANGE_REQUEST_TYPES values).
+CONSOLE_ACTIONS = ("confirm_current_year_date", "add_historical_reference", "update_venue")
+SOURCE_PREFIXES = {"official_notice": "official_notice:", REVIEW_CONSOLE: "review_console:"}
+REPORT_LABELS = {"official_notice": "official_notice", REVIEW_CONSOLE: REVIEW_CONSOLE}
 
 CANONICAL_TABLES = ("venues", "venue_aliases", "event_series", "event_series_aliases", "event_occurrences", "occurrence_dates", "occurrence_evidence_links", "songs", "occurrence_songs", "occurrence_song_evidence_links", "canonical_decision_ledger", "review_queue_state_ledger", "review_hold_ledger")
 
@@ -43,26 +48,46 @@ def _report_entries(path):
     if report.get("report_type") in {"new_event", "existing_event_songs"}:
         base = {"report_type": report["report_type"], "report_id": Path(path).stem, "source": report, "path": str(path)}
         return [(base, report)]
+    if report.get("report_type") == REVIEW_CONSOLE:
+        source = report.get("source") or {}
+        if not source.get("report_id") or not source.get("raw_text") or not isinstance(report.get("events"), list):
+            raise ValueError("review console report missing source.report_id, source.raw_text, or events")
+        for event in report["events"]:
+            if event.get("action") not in CONSOLE_ACTIONS:
+                raise ValueError(f"unsupported review console action: {event.get('action')!r}")
+            # E1 requires an explicit target for every update; the candidate器 keeps that promise.
+            if not event.get("occurrence_id"):
+                raise ValueError("review console entry requires occurrence_id")
+        base = {"report_type": REVIEW_CONSOLE, "report_id": source["report_id"], "source": source, "path": str(path)}
+        return [(base, event) for event in report["events"]]
     raise ValueError(f"unsupported report_type: {report.get('report_type')!r}")
+
+
+def _source_id(base): return SOURCE_PREFIXES.get(base["report_type"], "firsthand:") + base["report_id"]
 
 
 def _proposal(base, entry, action, suffix=""):
     official = base["report_type"] == "official_notice"
+    console = base["report_type"] == REVIEW_CONSOLE
     hint = entry.get("match_hint") or {}
     name = entry.get("event_name_hint") or hint.get("event_name_hint")
     year = entry.get("event_year") or hint.get("event_year")
     if not official:
         name, year = entry.get("event_name_hint"), entry.get("event_year")
-    date = entry.get("date_start") if official else entry.get("event_date")
-    date_end = entry.get("date_end") if official else entry.get("event_date_end")
+    date = entry.get("date_start") if official or console else entry.get("event_date")
+    date_end = entry.get("date_end") if official or console else entry.get("event_date_end")
     venue = entry.get("venue") or ({"name": hint.get("venue_name_hint")} if hint.get("venue_name_hint") else {})
-    return {"legacy_action": action, "event_name_hint": name, "series_name_hint": entry.get("series_name") if not official else None,
+    proposal = {"legacy_action": action, "event_name_hint": name, "series_name_hint": entry.get("series_name") if not official else None,
             "event_year": year, "date_start": date, "date_end": date_end, "venue": venue,
-            "detail_addendum": entry.get("detail_addendum") if official else entry.get("raw_note"),
+            "detail_addendum": entry.get("detail_addendum") if official or console else entry.get("raw_note"),
             "songs": entry.get("songs", []), "uncertain": bool(entry.get("uncertain", False)),
-            "explicit_occurrence_id": entry.get("occurrence_id") if action == "confirm_existing" else None,
+            "explicit_occurrence_id": entry.get("occurrence_id") if action == "confirm_existing" or console else None,
             "explicit_series_id": None, "explicit_source_occurrence_id": entry.get("source_occurrence_id"),
             "depends_on_family_key": None, "_suffix": suffix}
+    # Console-only keys. Adding them unconditionally would change source_payload_hash for every
+    # existing official/firsthand family and spawn a revision for candidates nobody edited.
+    if console: proposal.update({"historical_year": entry.get("historical_year"), "historical_date": entry.get("historical_date")})
+    return proposal
 
 
 def _entry_key(entry, proposal):
@@ -82,7 +107,8 @@ def _expires(proposal, now):
     return datetime.fromisoformat(date).replace(hour=23, minute=59, second=59, tzinfo=timezone(timedelta(hours=9)))
 
 
-def _targets(conn, proposal, lane, now):
+def search_targets(conn, proposal, lane, now):
+    """候補集合を今のDBから引き直す。判定用パケットも同じ関数を使う（凍結の時点だけが違う）。"""
     name, venue, year = proposal["event_name_hint"], (proposal.get("venue") or {}).get("name"), proposal.get("event_year")
     first = find_occurrence_candidates(conn, name, venue, year, limit=8)
     if lane == "event_create":
@@ -90,9 +116,30 @@ def _targets(conn, proposal, lane, now):
         for row in find_occurrence_candidates(conn, name, venue, None, limit=8):
             if row["occurrence_id"] not in merged or row["match_score"] > merged[row["occurrence_id"]]["match_score"]: merged[row["occurrence_id"]] = row
         first = sorted(merged.values(), key=lambda x: -x["match_score"])
-    return {"occurrence_candidates": first, "venue_candidates": find_venue_candidates(conn, venue, (proposal.get("venue") or {}).get("area"), limit=8),
-            "retrieved_at": now.isoformat(), "calculation_version": "e0-candidate-search/v1",
-            "input_hash": sha256_hex({"event_name_hint": name, "venue_name": venue, "event_year": year, "limit": 8})}
+    venues = find_venue_candidates(conn, venue, (proposal.get("venue") or {}).get("area"), limit=8)
+    # レポートが開催回IDを名指ししている候補（confirm_existing 由来）は、名前を持たないことが多く
+    # 検索に一切かからない。その開催回を候補へ入れておかないと「どれとも違う」としか答えられず、
+    # 新規を作る材料（名前・会場名）も無いまま人の確認へ回る（2026-08-15 に112件中56件がこれ）。
+    explicit = proposal.get("explicit_occurrence_id")
+    if explicit and explicit not in {row["occurrence_id"] for row in first}:
+        named = conn.execute(
+            "SELECT o.occurrence_id, o.series_id, o.event_year, o.display_name, o.venue_id, o.date_start,"
+            " v.canonical_name AS venue_name FROM event_occurrences o"
+            " LEFT JOIN venues v ON v.venue_id = o.venue_id"
+            " WHERE o.occurrence_id = ? AND o.lifecycle_status != 'merged'",
+            (explicit,),
+        ).fetchone()
+        if named:
+            named = dict(named)
+            first = [{**named, "match_score": 1.0, "matched_by": "explicit_occurrence_id"}] + first
+            if named.get("venue_id") and named["venue_id"] not in {row["venue_id"] for row in venues}:
+                venue_row = conn.execute("SELECT venue_id, canonical_name, normalized_name, area, address FROM venues WHERE venue_id = ?", (named["venue_id"],)).fetchone()
+                if venue_row:
+                    venues = [{**dict(venue_row), "match_score": 1.0, "matched_by": "explicit_occurrence_id", "matched_alias": ""}] + venues
+    return {"occurrence_candidates": first, "venue_candidates": venues,
+            "retrieved_at": now.isoformat(), "calculation_version": "e0-candidate-search/v2",
+            "input_hash": sha256_hex({"event_name_hint": name, "venue_name": venue, "event_year": year,
+                                      "explicit_occurrence_id": explicit, "limit": 8})}
 
 
 def _family(conn, key):
@@ -107,13 +154,13 @@ def _validate_family(rows):
 
 
 def _candidate(conn, base, entry, proposal, lane, family, revision, now, depends=None):
-    source_id = ("official_notice:" if base["report_type"] == "official_notice" else "firsthand:") + base["report_id"]
+    source_id = _source_id(base)
     key = _entry_key(entry, proposal) + proposal.pop("_suffix", "")
     family_key = f"{source_id}#{key}"
     source_key = family_key if revision == 0 else f"{family_key}@r{revision}"
     payload_hash = sha256_hex(proposal)
     raw = (base["source"].get("raw_text") or base["source"].get("raw_note") or "")[:1000]
-    report = {"report_type": "official_notice" if base["report_type"] == "official_notice" else "firsthand_new_event", "report_id": base["report_id"], "report_path": base["path"], "reported_at": None, "notice_kind": base["source"].get("notice_kind"), "source_title": base["source"].get("title"), "source_url": base["source"].get("source_url") or base["source"].get("url")}
+    report = {"report_type": REPORT_LABELS.get(base["report_type"], "firsthand_new_event"), "report_id": base["report_id"], "report_path": base["path"], "reported_at": None, "notice_kind": base["source"].get("notice_kind"), "source_title": base["source"].get("title"), "source_url": base["source"].get("source_url") or base["source"].get("url")}
     resolved_target = None
     display = {"event_name_hint": proposal.get("event_name_hint"), "event_year": proposal.get("event_year"), "date_start": proposal.get("date_start"), "venue": proposal.get("venue")}
     if proposal.get("explicit_occurrence_id"):
@@ -121,7 +168,7 @@ def _candidate(conn, base, entry, proposal, lane, family, revision, now, depends
         if row:
             resolved_target = dict(row)
             display.update({"event_name_hint": display["event_name_hint"] or row["display_name"], "event_year": display["event_year"] or row["event_year"], "date_start": display["date_start"] or row["date_start"], "venue": display["venue"] or {"name": row["venue_name"]}})
-    payload = {"candidate_version": 1, "report": report, "proposal": proposal, "resolved_target": resolved_target, "targets": _targets(conn, proposal, lane, now), "evidence_ids": [stable_id("evidence", source_id)], "raw_excerpt": raw}
+    payload = {"candidate_version": 1, "report": report, "proposal": proposal, "resolved_target": resolved_target, "targets": search_targets(conn, proposal, lane, now), "evidence_ids": [stable_id("evidence", source_id)], "raw_excerpt": raw}
     expires = _expires(proposal, now)
     return {"inbox_id": stable_id("inbox", "event_candidate", source_id, source_key), "kind": "event_candidate", "domain": "イベント", "contract_domain": "event", "contract_lane": lane, "time_scope": "future" if display.get("date_start") and datetime.fromisoformat(display["date_start"]).date() >= now.date() else ("historical" if display.get("date_start") else "reference"), "priority_label": None, "priority_score": None, "title": f"{display['event_name_hint']}（{(display.get('venue') or {}).get('name')}／{display.get('date_start')}）", "event_name": display["event_name_hint"], "venue": (display.get("venue") or {}).get("name"), "event_year": display["event_year"], "source_id": source_id, "source_key": source_key, "source_url": report["source_url"], "recommended_action": None, "status": "candidate", "source_payload_hash": payload_hash, "last_seen_at": now.isoformat(), "payload_json": payload, "created_at": now.isoformat(), "updated_at": now.isoformat(), "first_eligible_at": now.isoformat(), "expires_at": expires.isoformat(), "superseded_by_inbox_id": None, "depends_on_inbox_id": depends, "revision_family_key": family_key, "revision": revision}
 
@@ -152,18 +199,20 @@ def run(args):
             try: entries = _report_entries(path)
             except ValueError as exc: _issue(issues, "high", "invalid_report", report=str(path), detail=str(exc)); continue
             for base, entry in entries:
-                action = entry.get("action") if base["report_type"] == "official_notice" else base["report_type"]
+                action = entry.get("action") if base["report_type"] in {"official_notice", REVIEW_CONSOLE} else base["report_type"]
                 if action in {"merge_existing_series", "existing_event_songs"}: changes.append({"outcome":"out_of_scope", "source":str(path), "action":action}); continue
                 variants = [(action, "event_update" if action == "confirm_existing" else "event_create", "")]
-                if action == "rename_series_and_register_new": variants = [(action, "event_update", ":rename"), (action, "event_create", ":create")]
+                # Console proposals all target an existing occurrence, and the same occurrence can carry
+                # a date confirmation and a venue fix at once, so the action goes into the family key.
+                if base["report_type"] == REVIEW_CONSOLE: variants = [(action, "event_update", f":{action}")]
+                elif action == "rename_series_and_register_new": variants = [(action, "event_update", ":rename"), (action, "event_create", ":create")]
                 for act,lane,suffix in variants:
                     proposal = _proposal(base, entry, act, suffix)
                     if suffix == ":create":
-                        source_id = ("official_notice:" if base["report_type"] == "official_notice" else "firsthand:") + base["report_id"]
-                        proposal["depends_on_family_key"] = f"{source_id}#{_entry_key(entry, proposal)}:rename"
+                        proposal["depends_on_family_key"] = f"{_source_id(base)}#{_entry_key(entry, proposal)}:rename"
                     try: key = _entry_key(entry, proposal) + suffix
                     except Exception: _issue(issues,"high","invalid_entry",report=str(path)); continue
-                    family_key = (("official_notice:" if base["report_type"] == "official_notice" else "firsthand:") + base["report_id"] + "#" + key)
+                    family_key = _source_id(base) + "#" + key
                     if family_key in seen: _issue(issues,"high","entry_key_collision",family_key=family_key); continue
                     seen.add(family_key); jobs.append((base,entry,proposal,lane,family_key))
         now = datetime.now(timezone.utc)

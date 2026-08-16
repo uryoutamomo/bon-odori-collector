@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 67,
+  "count": 71,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1063,6 +1063,67 @@
         "https://pbs.twimg.com/media/HPSoT-Ib0AE8ghU.jpg"
       ],
       "text": "涼しくなってきた夕方から十条駅前盆踊りへ。\n\n生の盆太鼓はテンションが上がりますね〜！\n他ではあまり聞かない珍しい曲目をたくさんやるんだな〜と思ったのですが、3日目ともなるとみなさん踊り慣れているのかどの曲も大盛り上がり‼️\n\n帰りに十条銀座の「てこや」でたこ焼き、「あい菜家」で鴨わさと焼き鳥、「酒の大林」で帰山Extra Edition（長野）を買っておうちでもお祭り気分を味わいました。",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "abf544fe84b9f6bf",
+      "status": "needs_ocr",
+      "account": "@oiwake_bonodori",
+      "url": "https://x.com/oiwake_bonodori/status/2087796929770176908",
+      "tweet_id": "2087796929770176908",
+      "date": "2026-08-13T07:02:32+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPlYPLmaMAAKnIY.jpg",
+        "https://t.co/84GvpBQADw",
+        "pic.x.com/84GvpBQADw"
+      ],
+      "text": "軽井沢 追分盆踊り\n今日13日は盆踊り前夜祭\n追分区公民館で踊りや太鼓の練習会です\n曲目は17曲、練習して明日からの盆踊り楽しみましょう\nどなたでもご参加いただけます\nお待ちしています\n#追分 #盆踊り #軽井沢 #練習会 https://t.co/84GvpBQADw",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "5b00cb03e31858e8",
+      "status": "needs_ocr",
+      "account": "@tatsuya115",
+      "url": "https://x.com/tatsuya115/status/2087877077500666091",
+      "tweet_id": "2087877077500666091",
+      "date": "2026-08-13T12:21:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPmhIq3acAAWI-z.jpg",
+        "https://t.co/pMUvz4DVgU",
+        "pic.x.com/pMUvz4DVgU"
+      ],
+      "text": "久米区の盆踊りへ。\n2曲だけ踊らせてください！とご挨拶したのですが、ニ曲目が終わるとアンコール。もう一曲踊りなさいと…（笑）何と、ダンシングヒーロー。子供達もたくさん輪に入り、汗だくで一緒に踊りました。楽しかったです。皆さんありがとうございました！ https://t.co/pMUvz4DVgU",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "0f147f70e63c15d5",
+      "status": "needs_ocr",
+      "account": "@Y_NGO_TYO",
+      "url": "https://x.com/Y_NGO_TYO/status/2088008973752693219",
+      "tweet_id": "2088008973752693219",
+      "date": "2026-08-13T21:05:07+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPoZFlEawAAHsch.jpg",
+        "https://t.co/iQa7R9882X",
+        "pic.x.com/iQa7R9882X",
+        "https://pbs.twimg.com/media/HPoZF7CaUAAyuzD.jpg"
+      ],
+      "text": "知らないうちに盆踊りの曲目に入ってた曲、と思ったけど、ローカルなのか。 https://t.co/iQa7R9882X",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "d6d0e06ee9308b58",
+      "status": "needs_ocr",
+      "account": "@bon_odoroo",
+      "url": "https://x.com/bon_odoroo/status/2088259464579145913",
+      "tweet_id": "2088259464579145913",
+      "date": "2026-08-14T13:40:28+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPr854ebMAAy8zq.jpg",
+        "https://t.co/QRw7d9UJzs",
+        "pic.x.com/QRw7d9UJzs"
+      ],
+      "text": "とある町の盆踊りを訪ねました。去年に続き歓迎されて嬉しい😊\n\n曲目はご当地曲・火の国太鼓・炭坑節・オアシス音頭。毎年この4曲を繰り返すらしい。\n\n大都会の人気の櫓もいいけど、地方の踊り手の少ない櫓を支えるのも大切だと感じました🎐 https://t.co/QRw7d9UJzs",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

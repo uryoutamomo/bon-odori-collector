@@ -448,7 +448,7 @@ def classify_event_evidence(voice, config=None):
     config = config or {}
     text = voice.get("text") or ""
     low = text.casefold()
-    exclude = [keyword for keyword in config.get("exclude_keywords", []) if keyword.casefold() in low]
+
     patterns = [
         code for code, keywords in PATTERN_KEYWORDS.items()
         if any(keyword.casefold() in low for keyword in keywords)
@@ -506,9 +506,8 @@ def classify_event_evidence(voice, config=None):
     if not bon_hits:
         score -= 3
         reasons.append("weak_bon_context:-3")
-    if exclude:
-        score -= 5
-        reasons.append("excluded_context:-5")
+    # 除外語による減点は 2026-08-15 に廃止した。同じ語彙が収集の関門で盆踊りの本体情報
+    # （曲目・参加報告）を捨てていたのが実測で分かったため。候補の優先付けでも同じ誤りが起きる。
 
     account = voice.get("account") or ""
     date = voice.get("date") or ""

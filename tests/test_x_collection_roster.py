@@ -62,16 +62,16 @@ class XCollectionRosterTest(unittest.TestCase):
             "accounts": {
                 "goodone": {
                     "handle": "@goodone", "status": "trusted",
-                    "posts_seen": 40, "usefulness_score": 90,
+                    "posts_seen": 40, "usefulness_score": 90, "announce_score": 9, "record_score": 8,
                 },
                 "thin": {
                     # trusted だが観測数が少なく judgement が薄いので編入しない
                     "handle": "@thin", "status": "trusted",
-                    "posts_seen": 1, "usefulness_score": 95,
+                    "posts_seen": 1, "usefulness_score": 95, "announce_score": 99, "record_score": 99,
                 },
                 "ordinary": {
                     "handle": "@ordinary", "status": "active",
-                    "posts_seen": 50, "usefulness_score": 80,
+                    "posts_seen": 50, "usefulness_score": 80, "announce_score": 1, "record_score": 1,
                 },
             }
         }
@@ -93,7 +93,10 @@ class XCollectionRosterTest(unittest.TestCase):
         handles = {row["handle"] for row in accounts}
         self.assertIn("@goodone", handles)
         self.assertNotIn("@thin", handles)
-        self.assertNotIn("@ordinary", handles)
+        # v2 candidates are selected by their independent axes, not legacy
+        # trusted status; low-axis accounts remain only because this fixture's
+        # per-axis limit is intentionally broad.
+        self.assertIn("@ordinary", handles)
 
     def test_auto_enrollment_respects_max_accounts(self):
         scores = {
@@ -101,6 +104,7 @@ class XCollectionRosterTest(unittest.TestCase):
                 f"acct{i}": {
                     "handle": f"@acct{i}", "status": "trusted",
                     "posts_seen": 10, "usefulness_score": 50 + i,
+                    "announce_score": 50 + i, "record_score": 50 + i,
                 }
                 for i in range(10)
             }
@@ -114,7 +118,7 @@ class XCollectionRosterTest(unittest.TestCase):
                 p.start()
             try:
                 accounts = collect.load_whitelist_accounts({
-                    "auto_trusted_roster": {"enabled": True, "max_accounts": 3, "min_posts_seen": 1}
+                    "auto_trusted_roster": {"enabled": True, "per_axis_accounts": 3, "min_posts_seen": 1}
                 })
             finally:
                 for p in patches:

@@ -19,6 +19,13 @@ class SongOcrPipelineTest(unittest.TestCase):
         })
         self.assertEqual(voice["media_urls"], ["https://pbs.twimg.com/media/example.jpg"])
 
+    def test_x_map_to_voice_preserves_author_description(self):
+        voice = _x_map_to_voice({
+            "id": "description", "text": "盆踊り",
+            "author": {"userName": "profile", "name": "Profile", "description": "盆オドラーです"},
+        })
+        self.assertEqual(voice["profile_description"], "盆オドラーです")
+
     def test_build_queues_setlist_posts_with_media(self):
         output = build([
             {

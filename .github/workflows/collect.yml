@@ -256,6 +256,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/latest.json data/seen.json data/voices_seen.json
+        [ -f data/x_official_source_accounts.json ] && git add -f data/x_official_source_accounts.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/event_date_update_candidates.json ] && git add data/event_date_update_candidates.json
         [ -f data/event_song_candidates.json ] && git add data/event_song_candidates.json
@@ -308,6 +309,10 @@ jobs:
         [ -f data/proactive_search_state.json ] && git add data/proactive_search_state.json
         [ -f data/torimochi_queue_seen.json ] && git add data/torimochi_queue_seen.json
         [ -f data/x_whitelist_state.json ] && git add data/x_whitelist_state.json
+        # 検索クエリの読み取り位置。残らないと毎回初回扱いになり、既読分の課金が復活する。
+        [ -f data/x_query_watermarks.json ] && git add data/x_query_watermarks.json
+        # 経路別の費用と成果。2026-08-12に台帳を作ったが add 漏れで1件も残っていなかった。
+        [ -f data/x_cost_ledger.json ] && git add data/x_cost_ledger.json
         [ -f data/x_event_evidence_state.json ] && git add data/x_event_evidence_state.json
         [ -f data/x_event_evidence_cohort.json ] && git add data/x_event_evidence_cohort.json
         python guard_git_large_files.py

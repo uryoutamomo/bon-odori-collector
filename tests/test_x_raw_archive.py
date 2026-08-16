@@ -1,6 +1,7 @@
 import gzip
 import json
 import os
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -63,6 +64,15 @@ class RawXArchiveTest(unittest.TestCase):
         manifest = json.loads(client.objects[1]["Body"].decode("utf-8"))
         self.assertEqual(manifest["post_keys"], ["tweet:123"])
 
+    def test_preserves_author_description(self):
+        client = FakeS3()
+        tweet = self._tweet()
+        tweet["author"]["description"] = "盆踊りの記録"
+        with patch.dict(os.environ, {"X_RAW_POSTS_S3_BUCKET": "private-test"}, clear=False):
+            capture_raw_x_posts([tweet], {}, client=client, captured_at="2026-08-10T01:02:03+00:00")
+        archived = json.loads(gzip.decompress(client.objects[0]["Body"]).decode("utf-8"))
+        self.assertEqual(archived["profile_description"], "盆踊りの記録")
+
     def test_requires_archive_bucket_and_wraps_write_failure(self):
         with patch.dict(os.environ, {}, clear=True):
             with self.assertRaisesRegex(RawXArchiveError, "X_RAW_POSTS_S3_BUCKET"):
@@ -84,16 +94,20 @@ class RawXArchiveTest(unittest.TestCase):
             "max_pages_per_query": 1,
             "page_sleep_sec": 0,
         }
-        with (
-            patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
-            patch.object(collect, "_load_x_config", return_value=config),
-            patch.object(collect, "_x_budget_state", return_value={}),
-            patch.object(collect, "_x_search", return_value={"tweets": [tweet]}),
-            patch.object(collect, "capture_raw_x_posts", side_effect=lambda *_args, **_kwargs: events.append("archive")),
-            patch.object(collect, "_score_voice", side_effect=lambda *_args: events.append("score") or "🟡関心"),
-            patch.object(collect, "_append_x_log_row"),
-        ):
-            items, seen = collect.collect_x_voices(set())
+        # 予算・コスト台帳・検索位置はすべて X_BUDGET_FILE の隣に書かれるため、
+        # テストがリポジトリの data/ を書き換えないよう一時ディレクトリへ逃がす。
+        with tempfile.TemporaryDirectory() as tmp:
+            with (
+                patch.object(collect, "TWITTERAPI_IO_KEY", "test"),
+                patch.object(collect, "X_BUDGET_FILE", str(Path(tmp) / "x_budget.json")),
+                patch.object(collect, "_load_x_config", return_value=config),
+                patch.object(collect, "_x_budget_state", return_value={}),
+                patch.object(collect, "_x_search", return_value={"tweets": [tweet]}),
+                patch.object(collect, "capture_raw_x_posts", side_effect=lambda *_args, **_kwargs: events.append("archive")),
+                patch.object(collect, "_score_voice", side_effect=lambda *_args: events.append("score") or "🟡関心"),
+                patch.object(collect, "_append_x_log_row"),
+            ):
+                items, seen = collect.collect_x_voices(set())
 
         self.assertEqual(events, ["archive", "score"])
         self.assertEqual(len(items), 1)

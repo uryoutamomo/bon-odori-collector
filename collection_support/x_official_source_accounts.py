@@ -37,7 +37,23 @@ def load_official_source_accounts(path: Path | str = DEFAULT_REGISTRY) -> list[d
         seen.add(handle_key)
         account = dict(row)
         account["handle"] = f"@{handle_key}"
-        account.setdefault("manual_status", "優先")
+        # A rejected row is a record of a decision, not a source.  It is
+        # dropped rather than returned as 休止 because this list is assembled
+        # ahead of the bonodorer roster and shadows it by handle: returning a
+        # muted row here would quietly stop reading an account that the person
+        # only ruled out as an *official* source.
+        if account.get("tier") == "rejected":
+            continue
+        # v2 registry rows are retained even while dormant.  Only active rows
+        # are daily readers; legacy rows without a tier retain their old,
+        # explicit-priority behaviour.
+        if "tier" in account:
+            # Import lazily: the registry matcher also imports norm_handle.
+            from collection_support.x_source_registry import tier_for_account
+            account["tier"] = tier_for_account(account)
+            account["manual_status"] = "優先" if account["tier"] == "active" else "休止"
+        elif "manual_status" not in account:
+            account["manual_status"] = "優先" if account.get("tier", "active") == "active" else "休止"
         account.setdefault("source_type", "official_or_organizer_social")
         account.setdefault("trust_level", "organizer_official")
         account.setdefault("page_id", "")

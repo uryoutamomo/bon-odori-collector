@@ -7,8 +7,15 @@
     "monthly_usd": 25.0,
     "cost_per_tweet_usd": 0.00015
   },
-  "_max_pages_comment": "2026-07-26 に 3->8 へ引き上げ。3の頃は主要クエリが毎回3ページとも満杯で打ち切られており（=その先に未取得の投稿が残っていた）、1日216件・$0.063（日次予算の2%）しか使えていなかった。",
+  "_max_pages_comment": "2026-07-26 に 3->8 へ引き上げ。3の頃は主要クエリが毎回3ページとも満杯で打ち切られており（=その先に未取得の投稿が残っていた）、1日216件・$0.063（日次予算の2%）しか使えていなかった。クエリ単位で上書きしたい場合は queries[].max_pages に書く。",
   "max_pages_per_query": 8,
+  "search_watermark": {
+    "_comment": "2026-08-16追加。検索クエリごとに『ここまで読んだ』時刻(since_time)を data/x_query_watermarks.json へ持ち、次回はその先だけを読む。従来は毎回1ページ目から読み直し、既読URLは保存時に捨てていたが課金は発生していた（2026-08-11の実測で1,760件取得のうち新規660件=37.5%、残り1,100件が既読の読み直し）。overlap_minutes は取りこぼし防止の重なり幅。ページ上限に達して読み切れなかったクエリは since_time を進めない（whitelist の INV-COL-004 と同じ原則）。",
+    "enabled": true,
+    "initial_lookback_days": 3,
+    "overlap_minutes": 60,
+    "stop_after_zero_new_page": true
+  },
   "page_sleep_sec": 2,
   "whitelist_batch_size": 20,
   "_whitelist_max_pages_comment": "2026-07-26追加。1バッチ(20アカウント)あたり1ページ(20件)しか読まず、活発な日は上限で切れて取りこぼしていた。",
@@ -33,12 +40,14 @@
     "muted_max_score": 1.5
   },
   "event_evidence": {
-    "_comment": "イベントらしき発言断片を、固定コホートの過去発言から継続的に掘る。各窓の完了後は advance_event_evidence_window.py で次窓へ進める。",
+    "_comment": "イベントらしき発言断片を、固定コホートの過去発言から継続的に掘る。lookback_window_days は初回と連続収集の窓幅。旧 initial_window_days はコード側で後方互換として読み取る。",
     "enabled": true,
     "pilot_only": false,
     "cohort_file": "data/x_event_evidence_cohort.json",
+    "cohort_size": 30,
+    "reselect_after_days": 30,
     "min_account_score": -0.6,
-    "initial_window_days": 14,
+    "lookback_window_days": 3,
     "batch_size": 20,
     "max_pages_per_run": 120,
     "max_evidence_per_run": 900
@@ -82,6 +91,12 @@
     "行った", "行ってきた", "踊った", "踊ってきた", "参加し", "参加した",
     "楽しかった", "最高", "見てきた", "参戦", "踊りに行", "盆踊り会",
     "曲目表", "曲順", "プログラム", "演目", "曲目発表"
+  ],
+  "experience_style_keywords": [
+    "行った", "行ってきた", "行って来た", "行きました", "お邪魔", "参加し", "参加した",
+    "踊った", "踊ってきた", "踊りました", "踊りに行", "見てきた", "見て来た",
+    "帰ってき", "してきた", "楽しかった", "楽しめ", "楽しん", "堪能", "初参加",
+    "参戦", "久しぶり", "最高", "盆踊り会"
   ],
   "queries": [
     {
