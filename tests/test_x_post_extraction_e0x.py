@@ -42,3 +42,16 @@ class XPostExtractionE0XTest(unittest.TestCase):
             self.assertEqual(result["report_count"],0)
             self.assertIn("date_in_past",[x["issue_type"] for x in result["issues"]]); self.assertIn("quote_not_in_text",[x["issue_type"] for x in result["issues"]])
             self.assertEqual(state["tweets"]["a"]["outcome"],"scored_only"); self.assertEqual(state["tweets"]["b"]["outcome"],"issue")
+
+    def test_one_bad_event_does_not_discard_a_second_valid_event(self):
+        text="8月1日に一丁目公園で一丁目盆踊り、8月20日に二丁目公園で二丁目盆踊りを開催"
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","text":text,"machine_extracted_dates":["2026-08-01","2026-08-20"]}]}
+        good={"event_name":"二丁目盆踊り","date_start":"2026-08-20","venue_name":"二丁目公園","quote":"8月20日に二丁目公園で二丁目盆踊りを開催"}
+        past={"event_name":"一丁目盆踊り","date_start":"2026-08-01","venue_name":"一丁目公園","quote":"8月1日に一丁目公園で一丁目盆踊り"}
+        bad={"event_name":"捏造","date_start":"2026-08-20","venue_name":"ない公園","quote":"8月20日に二丁目公園で二丁目盆踊りを開催"}
+        for rejected, issue in ((past,"date_in_past"),(bad,"venue_not_in_text")):
+            with self.subTest(issue=issue), tempfile.TemporaryDirectory() as temp:
+                state={"tweets":{}}; result=apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[rejected,good]}]},state,Path(temp),today=date(2026,8,16))
+                self.assertEqual(result["report_count"],1)
+                self.assertIn(issue,[row["issue_type"] for row in result["issues"]])
+                self.assertEqual(state["tweets"]["a"]["outcome"],"report")

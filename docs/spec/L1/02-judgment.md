@@ -15,6 +15,12 @@ invariants:
   - INV-JDG-001
   - INV-JDG-002
   - INV-XPE-001
+  - INV-XPE-002
+  - INV-XPE-003
+  - INV-XPE-004
+  - INV-XPE-005
+  - INV-XPE-006
+  - INV-XPE-007
   - INV-XPE-008
 verified_by:
   - tests/test_event_evidence.py
@@ -58,6 +64,36 @@ updated_for: 6537e7f
 - **破れたときの症状**: 開催情報が読まれない／本文に無い日付や会場の候補がレビュー受信箱へ流れる。
 - **守っているコード**: `build_x_extraction_packets.py` の `build()`、`apply_x_extraction_results.py` の `apply()`
 - **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied`
+
+### INV-XPE-002 本文に無い日付・会場・引用からレポートを作らない
+
+- **内容**: 照合に失敗したイベントだけを除外し、同じ投稿の他イベントは巻き込まない。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event`
+
+### INV-XPE-003 5点未満は採点だけを保存する
+
+- **内容**: 4点以下からE0レポートを作らない。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied`
+
+### INV-XPE-004 生成レポートは出典URLを持つ
+
+- **内容**: URLの無い投稿は候補化しない。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied`
+
+### INV-XPE-005 投稿由来の会場に住所を推測しない
+
+- **内容**: `venue` は名称とareaだけである。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+
+### INV-XPE-006 私人アカウントを公開詳細へ出さない
+
+- **内容**: 私人のアカウント名・ハンドルはdetail_addendumへ入れない。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+
+### INV-XPE-007 未回答投稿は24時間後に再発行する
+
+- **内容**: issuedだけの投稿は処理済みにせず、24時間後に再びパケット化できる。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules`
 
 ### INV-XPE-008 束ねたXレポートは代表投稿を変えない
 
