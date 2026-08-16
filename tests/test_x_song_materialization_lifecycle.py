@@ -125,7 +125,10 @@ def test_public_export_requires_active_song_and_accepted_evidence_for_x_fact(tmp
     )
     conn.row_factory = __import__("sqlite3").Row
 
-    assert [row["name"] for row in load_rdb_occurrence_songs(conn)["occ_1"]] == ["東京音頭"]
+    # An X-shaped fact without an active materialization ledger entry is not
+    # authorized merely because an accepted link exists.
+    conn.execute("UPDATE evidence_items SET evidence_type='x_song_claim_v2' WHERE evidence_id='evid_1'")
+    assert load_rdb_occurrence_songs(conn) == {}
 
     conn.execute(
         "UPDATE occurrence_song_evidence_links SET link_status='retracted' WHERE occurrence_song_id=?",
@@ -257,6 +260,25 @@ def test_materializer_promotes_candidate_maps_announced_to_setlist_and_retracts(
     ledger = {"observations": [resolved_observation()]}
     decide_song(conn, ledger, action="match_song", selected_song_id="song_tokyo")
     decide_occurrence(conn, ledger)
+    conn.execute(
+        """
+        INSERT INTO songs (
+          song_id, canonical_title, normalized_title, status, created_at, updated_at
+        ) VALUES ('song_unrelated', '無関係音頭', '無関係音頭', '候補', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.execute(
+        """
+        INSERT INTO event_occurrences (
+          occurrence_id, series_id, event_year, display_name,
+          lifecycle_status, created_at, updated_at
+        ) VALUES ('occ_unrelated', 'series_1', 2027, '無関係の開催回',
+                  'draft', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.commit()
 
     observation_path = tmp_path / "observations.json"
     observation_path.write_text(json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
@@ -286,6 +308,8 @@ def test_materializer_promotes_candidate_maps_announced_to_setlist_and_retracts(
     ).fetchone()
     assert song == "active"
     assert tuple(fact) == ("setlist", "announced", "observed_x_post")
+    conn.row_factory = __import__("sqlite3").Row
+    assert [row["name"] for row in load_rdb_occurrence_songs(conn)["occ_1"]] == ["東京音頭"]
 
     conn.close()
     dry_retract = retraction_run(
@@ -325,6 +349,38 @@ def test_materializer_promotes_candidate_maps_announced_to_setlist_and_retracts(
         now="2026-08-17T00:00:00+00:00",
     )
     assert exact_retry["no_op"] == [materialization_id]
+
+
+def test_materializer_rechecks_event_dependency_before_writing(tmp_path):
+    conn = init_db(tmp_path / "master.sqlite")
+    seed_domain(conn)
+    conn.commit()
+    ledger = {"observations": [resolved_observation()]}
+    decide_song(conn, ledger, action="match_song", selected_song_id="song_tokyo")
+    decide_occurrence(conn, ledger)
+    conn.execute(
+        """
+        UPDATE x_occurrence_resolution_decisions
+        SET resolution_source='report_dependency',
+            event_dependency_key='event-family-new-revision',
+            dependency_decision_id='event-decision-old'
+        WHERE observation_id='xsong2_materialize' AND status='active'
+        """
+    )
+    conn.commit()
+
+    with patch.object(
+        materializer_module,
+        "resolve_event_dependency",
+        return_value={"action": "dependency_pending", "reason_code": "event_decision_pending"},
+    ):
+        report = materialize(conn, ledger, actor_id="oto-test", now=NOW)
+    assert report["applied"] == []
+    assert report["held"] == [{
+        "observation_id": "xsong2_materialize",
+        "reason": "event_dependency_stale",
+    }]
+    assert conn.execute("SELECT COUNT(*) FROM occurrence_songs").fetchone()[0] == 0
 
 
 def test_new_song_requires_novelty_decision_and_is_tombstoned_on_retraction(tmp_path):

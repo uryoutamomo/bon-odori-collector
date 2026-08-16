@@ -157,6 +157,78 @@ def test_direct_candidates_require_valid_event_context_and_never_create_occurren
     assert conn.execute("SELECT COUNT(*) FROM event_occurrences").fetchone()[0] == 1
 
 
+def test_unresolved_occurrence_waits_for_snapshot_change(tmp_path):
+    conn = make_db(tmp_path)
+    ledger = {"observations": [claim()]}
+    packet_set = build_packet_set(conn, ledger, generated_at=NOW)
+    packet = packet_set["packets"][0]
+    apply_results(
+        conn,
+        ledger,
+        packet_set,
+        {
+            "schema": "x_occurrence_resolution_results_v2",
+            "results": [{"packet_id": packet["packet_id"], "action": "unresolved"}],
+        },
+        actor_id="oto-local",
+        model_id=MODEL,
+        prompt_sha256=PROMPT_SHA,
+        decided_at=NOW,
+    )
+    unchanged = build_packet_set(conn, ledger, generated_at=NOW)
+    assert unchanged["packets"] == []
+    assert unchanged["excluded"] == [{
+        "observation_id": "xsong2_1",
+        "reason": "already_decided_current_snapshot",
+    }]
+
+    conn.execute("UPDATE event_occurrences SET display_name=? WHERE occurrence_id='occ_1'", ("試験盆踊り 改訂",))
+    changed = build_packet_set(conn, ledger, generated_at=NOW)
+    assert len(changed["packets"]) == 1
+    assert changed["packets"][0]["packet_id"] != packet["packet_id"]
+
+
+def test_resolved_occurrence_is_not_reopened_by_unrelated_snapshot_change(tmp_path):
+    conn = make_db(tmp_path)
+    ledger = {"observations": [claim()]}
+    packet_set = build_packet_set(conn, ledger, generated_at=NOW)
+    packet = packet_set["packets"][0]
+    apply_results(
+        conn,
+        ledger,
+        packet_set,
+        {
+            "schema": "x_occurrence_resolution_results_v2",
+            "results": [{
+                "packet_id": packet["packet_id"],
+                "action": "match_occurrence",
+                "selected_occurrence_id": "occ_1",
+            }],
+        },
+        actor_id="oto-local",
+        model_id=MODEL,
+        prompt_sha256=PROMPT_SHA,
+        decided_at=NOW,
+    )
+    conn.execute(
+        """
+        INSERT INTO event_occurrences (
+          occurrence_id, series_id, event_year, display_name, venue_id,
+          lifecycle_status, created_at, updated_at
+        ) VALUES ('occ_unrelated', 'series_1', 2027, '無関係の開催回', 'venue_1',
+                  'draft', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+
+    packet_set = build_packet_set(conn, ledger, generated_at=NOW)
+    assert packet_set["packets"] == []
+    assert packet_set["excluded"] == [{
+        "observation_id": "xsong2_1",
+        "reason": "identity_already_resolved",
+    }]
+
+
 def test_event_dependency_is_mechanical_and_pending_until_event_decision(tmp_path):
     conn = make_db(tmp_path)
     ledger = {"observations": [claim(event_dependency_key="event-family-1")]}
@@ -167,6 +239,19 @@ def test_event_dependency_is_mechanical_and_pending_until_event_decision(tmp_pat
     pending = build_packet_set(conn, ledger, generated_at=NOW)
     assert pending["machine_results"]["results"][0]["action"] == "dependency_pending"
     assert pending["packets"][0]["candidate_rows"] == []
+    apply_results(
+        conn,
+        ledger,
+        pending,
+        pending["machine_results"],
+        actor_id="system:event-dependency",
+        model_id="deterministic-event-dependency",
+        prompt_sha256=PROMPT_SHA,
+        decided_at=NOW,
+    )
+    still_pending = build_packet_set(conn, ledger, generated_at=NOW)
+    assert still_pending["packets"] == []
+    assert still_pending["machine_results"]["results"] == []
 
     seed_accepted_event_decision(conn, "event-family-1")
     matched = build_packet_set(conn, ledger, generated_at=NOW)
@@ -184,7 +269,8 @@ def test_event_dependency_is_mechanical_and_pending_until_event_decision(tmp_pat
         decided_at=NOW,
     )
     row = conn.execute(
-        "SELECT resolution_source, action, selected_occurrence_id FROM x_occurrence_resolution_decisions"
+        "SELECT resolution_source, action, selected_occurrence_id "
+        "FROM x_occurrence_resolution_decisions WHERE status='active'"
     ).fetchone()
     assert tuple(row) == ("report_dependency", "match_occurrence", "occ_1")
 
@@ -193,6 +279,19 @@ def test_event_dependency_never_reuses_accept_from_an_older_revision(tmp_path):
     conn = make_db(tmp_path)
     dependency_key = "event-family-revised"
     seed_accepted_event_decision(conn, dependency_key)
+    ledger = {"observations": [claim(event_dependency_key=dependency_key)]}
+    accepted = build_packet_set(conn, ledger, generated_at=NOW)
+    assert accepted["machine_results"]["results"][0]["action"] == "match_occurrence"
+    apply_results(
+        conn,
+        ledger,
+        accepted,
+        accepted["machine_results"],
+        actor_id="system:event-dependency",
+        model_id="deterministic-event-dependency",
+        prompt_sha256=PROMPT_SHA,
+        decided_at=NOW,
+    )
     conn.execute(
         """
         INSERT INTO review_inbox_items (
@@ -208,7 +307,6 @@ def test_event_dependency_never_reuses_accept_from_an_older_revision(tmp_path):
         "UPDATE review_inbox_items SET superseded_by_inbox_id='inbox_2' WHERE inbox_id='inbox_1'"
     )
     conn.commit()
-    ledger = {"observations": [claim(event_dependency_key=dependency_key)]}
 
     packet_set = build_packet_set(conn, ledger, generated_at=NOW)
     result = packet_set["machine_results"]["results"][0]

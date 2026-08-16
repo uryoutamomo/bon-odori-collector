@@ -13,7 +13,10 @@ from report_apply.event_report_helpers import (
     upsert_evidence_item,
 )
 from report_apply.x_song_apply_safety import run_guarded
-from review_inbox_adapters.x_occurrence_resolution_contract import occurrence_snapshot
+from review_inbox_adapters.x_occurrence_resolution_contract import (
+    occurrence_snapshot,
+    resolve_event_dependency,
+)
 from review_inbox_adapters.x_song_resolution_contract import (
     catalog_snapshot,
     eligible_observation,
@@ -64,11 +67,46 @@ def _final_song_decision(conn, observation_id: str):
     return novelty, None
 
 
+def _frozen_selected(rows_json: str, id_key: str, selected_id: str, *, ignored=()) -> dict | None:
+    try:
+        rows = json.loads(rows_json)
+    except (TypeError, ValueError):
+        return None
+    for row in rows:
+        if isinstance(row, dict) and row.get(id_key) == selected_id:
+            return {key: value for key, value in row.items() if key not in set(ignored)}
+    return None
+
+
+def _matched_song_is_current(decision: dict, current_by_id: dict[str, dict]) -> bool:
+    if decision["action"] != "match_song":
+        return decision["action"] == "new_song"
+    frozen = _frozen_selected(
+        decision["candidate_rows_json"],
+        "song_id",
+        decision["selected_song_id"],
+        ignored={"matched_by", "matched_text", "match_score"},
+    )
+    return bool(frozen and current_by_id.get(decision["selected_song_id"]) == frozen)
+
+
+def _matched_occurrence_is_current(decision: dict, current_by_id: dict[str, dict]) -> bool:
+    frozen = _frozen_selected(
+        decision["candidate_rows_json"],
+        "occurrence_id",
+        decision["selected_occurrence_id"],
+        ignored={"match_score"},
+    )
+    return bool(frozen and current_by_id.get(decision["selected_occurrence_id"]) == frozen)
+
+
 def build_plan(conn, ledger: dict) -> dict:
-    current_catalog_sha = sha256_json(catalog_snapshot(conn))
+    current_catalog = catalog_snapshot(conn)
+    current_catalog_by_id = {row["song_id"]: row for row in current_catalog}
     current_occurrence_snapshot = occurrence_snapshot(conn)
-    current_occurrence_sha = sha256_json(current_occurrence_snapshot)
-    current_occurrence_ids = {row["occurrence_id"] for row in current_occurrence_snapshot}
+    current_occurrence_by_id = {
+        row["occurrence_id"]: row for row in current_occurrence_snapshot
+    }
     ready = []
     held = []
     for observation_id, observation in sorted(observation_index(ledger).items()):
@@ -91,12 +129,26 @@ def build_plan(conn, ledger: dict) -> dict:
         if not occurrence_decision or occurrence_decision["action"] != "match_occurrence":
             held.append({"observation_id": observation_id, "reason": "occurrence_unresolved"})
             continue
-        if (
-            occurrence_decision["occurrence_snapshot_sha256"] != current_occurrence_sha
-            or occurrence_decision["selected_occurrence_id"] not in current_occurrence_ids
-        ):
+        if not _matched_occurrence_is_current(occurrence_decision, current_occurrence_by_id):
             held.append({"observation_id": observation_id, "reason": "occurrence_snapshot_stale"})
             continue
+        if occurrence_decision["resolution_source"] == "report_dependency":
+            current_dependency = resolve_event_dependency(
+                conn,
+                occurrence_decision["event_dependency_key"],
+                current_occurrence_snapshot,
+            )
+            if (
+                current_dependency.get("action") != "match_occurrence"
+                or current_dependency.get("selected_occurrence_id")
+                != occurrence_decision["selected_occurrence_id"]
+                or current_dependency.get("dependency_decision_id")
+                != occurrence_decision["dependency_decision_id"]
+            ):
+                held.append(
+                    {"observation_id": observation_id, "reason": "event_dependency_stale"}
+                )
+                continue
         observation_sha = sha256_json(observation)
         if (
             song_decision["observation_sha256"] != observation_sha
@@ -104,7 +156,7 @@ def build_plan(conn, ledger: dict) -> dict:
         ):
             held.append({"observation_id": observation_id, "reason": "observation_stale"})
             continue
-        if song_decision["catalog_snapshot_sha256"] != current_catalog_sha:
+        if not _matched_song_is_current(song_decision, current_catalog_by_id):
             held.append({"observation_id": observation_id, "reason": "song_catalog_stale"})
             continue
         existing = _row(

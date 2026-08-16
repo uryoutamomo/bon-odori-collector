@@ -163,6 +163,8 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 
 - **内容**: `origin='observed_x_post'` の `occurrence_songs` は、song statusが `active/有効`、
   `setlist/announced` または `result/observed`、accepted evidence linkが1件以上、をすべて満たす行だけ読む。
+  `x_song_claim_v2` evidenceは同じfact・evidence・song・occurrence・roleを指すactive materializationも必須にし、
+  証跡台帳なしに作られたX風の行を公開しない。別経路のaccepted evidenceは従来どおり公開根拠にできる。
   他originの既存公開契約は変えない。
 - **なぜ**: evidence linkをretractしても行だけを無条件に読むと、削除・訂正された投稿が公開へ残り続ける。
 - **破れたときの症状**: 最後のX根拠を撤回しても曲目が消えない、または告知がpredictionとして重複する。

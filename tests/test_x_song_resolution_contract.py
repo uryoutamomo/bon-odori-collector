@@ -195,6 +195,74 @@ def test_apply_is_ledger_only_uses_local_actor_and_exact_retry_is_noop(tmp_path)
     assert conn.execute("SELECT COUNT(*) FROM occurrence_songs").fetchone()[0] == 0
 
 
+def test_current_snapshot_decision_is_not_packetized_again(tmp_path):
+    conn = make_db(tmp_path)
+    ledger = {"observations": [observation()]}
+    packet_set = build_packet_set(conn, ledger, phase="retrieval", generated_at=NOW)
+    packet = packet_set["packets"][0]
+    apply_results(
+        conn,
+        ledger,
+        entries(packet_set),
+        result_for(packet, "unresolved"),
+        actor_id="oto-local",
+        model_id=MODEL,
+        prompt_sha256=PROMPT_SHA,
+        decided_at=NOW,
+    )
+
+    unchanged = build_packet_set(conn, ledger, phase="retrieval", generated_at=NOW)
+    assert unchanged["packets"] == []
+    assert unchanged["excluded"] == [{
+        "observation_id": "xsong2_1",
+        "reason": "already_decided_current_snapshot",
+    }]
+
+    conn.execute(
+        """
+        INSERT INTO songs (
+          song_id, canonical_title, normalized_title, status, created_at, updated_at
+        ) VALUES ('song_new_context', '新しい音頭', '新しい音頭', '候補', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    changed = build_packet_set(conn, ledger, phase="retrieval", generated_at=NOW)
+    assert len(changed["packets"]) == 1
+    assert changed["packets"][0]["packet_id"] != packet["packet_id"]
+
+
+def test_resolved_song_is_not_reopened_by_unrelated_catalog_change(tmp_path):
+    conn = make_db(tmp_path)
+    ledger = {"observations": [observation()]}
+    packet_set = build_packet_set(conn, ledger, phase="retrieval", generated_at=NOW)
+    packet = packet_set["packets"][0]
+    apply_results(
+        conn,
+        ledger,
+        entries(packet_set),
+        result_for(packet, "match_song", "song_tokyo"),
+        actor_id="oto-local",
+        model_id=MODEL,
+        prompt_sha256=PROMPT_SHA,
+        decided_at=NOW,
+    )
+    conn.execute(
+        """
+        INSERT INTO songs (
+          song_id, canonical_title, normalized_title, status, created_at, updated_at
+        ) VALUES ('song_unrelated', '無関係音頭', '無関係音頭', '候補', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+
+    packet_set = build_packet_set(conn, ledger, phase="retrieval", generated_at=NOW)
+    assert packet_set["packets"] == []
+    assert packet_set["excluded"] == [{
+        "observation_id": "xsong2_1",
+        "reason": "identity_already_resolved",
+    }]
+
+
 def test_apply_rejects_tampered_packet_stale_catalog_and_unoffered_selection(tmp_path):
     conn = make_db(tmp_path)
     ledger = {"observations": [observation()]}

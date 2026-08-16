@@ -31,6 +31,10 @@ LLMの判断取込は同定台帳までで、`songs` / `event_occurrences` / `oc
 回答取込時に現在値を再計算し、title・alias・status・観測のどれかが変わっていれば台帳へ書かない。
 別ファイルに同じpacket IDがあれば、同一内容でもfail closedにする。
 
+同じpacket IDにdecisionが既にある場合、その観測を再びpacketへ出さない。`unresolved` は時間経過で再試行せず、
+観測またはcatalog snapshotが変わりpacket IDが変わったときだけ再eligibleになる。
+`candidate_missing` だけは同じretrieval decisionを依存先にしてnoveltyへ一度進める。
+
 ## 2. 開催回同定を曲同定から分ける
 
 `event_dependency_key` があるclaimは、LLMへ開催回候補を出さない。E0のrevision familyで最大revisionの
@@ -50,6 +54,10 @@ dependencyが無いclaimだけを別packetにし、本文照合済みevent name�
 候補には年・日付・会場・系列別名・statusを含める。許可回答は `match_occurrence` / `unresolved` だけで、
 `new_occurrence` は存在しない。地域・wardは候補順位の文脈であり、E2-Sの保存gateではない。
 
+開催回側も同じpacket IDのdecisionを再提示しない。direct `unresolved` は観測または開催回snapshotが変わったときだけ、
+`dependency_pending` はE0 revision familyの最新inbox・decision・適用evidenceの状態が変わったときだけ再eligibleになる。
+30日タイマーなど、同じ入力を期限だけで繰り返す経路は置かない。
+
 ## 3. 台帳とactor provenance
 
 schema migration 4 (`x_song_identity_v2`) は次のappend-only表を追加する。
@@ -67,7 +75,7 @@ schema migration 4 (`x_song_identity_v2`) は次のappend-only表を追加する
 `report_apply/materialize_x_song_resolutions.py` は次をすべて満たす観測だけを書く。
 
 - current observation SHAが曲・開催回decisionと一致
-- current catalog/occurrence snapshotがdecision時と一致
+- 選択した曲・開催回の凍結行が現在値と一致（無関係な別entityの追加だけでは再判断しない）
 - claim typeが `announced` / `observed` でconflictなし
 - 曲のfinal active decisionと `match_occurrence` がある
 - 選択開催回が存在し、`merged`でない
@@ -88,6 +96,9 @@ schema migration 4 (`x_song_identity_v2`) は次のappend-only表を追加する
 
 X materializer所有のfactは `origin='observed_x_post'` とする。公開exporterはこのoriginだけについて、
 曲statusが `active/有効`、role/evidence mappingが上表どおり、accepted evidence linkが1件以上、の全条件を要求する。
+`x_song_claim_v2` evidenceは、同じfact・evidence・song・occurrence・roleを指すactive materializationも必須にする。
+証跡台帳のないX風の行へaccepted linkだけを足しても公開しない。別経路のaccepted evidenceが同じfactを支える場合は、
+その非X evidenceを根拠に公開を維持できる。
 したがって最後のaccepted linkを `retracted` にした時点で行を削除せず公開から消える。
 
 retractはmaterialization IDを明示し、次を同じtransactionで行う。
@@ -109,7 +120,41 @@ schema migration、両decision apply、materializer、retractorはすべてdry-r
 
 この工程はpublic JSONの生成・GitHub push・公開deployを行わない。
 
-## 7. コマンド順
+DB transactionの失敗はcommit前rollbackで戻す。backupは監査・手動復旧用であり、自動restoreには使わない。
+誤判断を後から取り消す業務操作はretractorだけを使い、DBファイル差し戻しと混同しない。
+
+## 7. negative acceptance conditions
+
+各条件は、対応する防御を外すとテストが落ちる粒度で固定する。
+
+1. `mentioned` / `unknown` / legacy / claim conflictは曲・開催回packetを作らず、materializeしない。
+2. retrieval top 20に無いことだけでは`new_song`を選べず、`candidate_missing`決定なしにnoveltyへ進めない。
+3. noveltyは全catalog snapshotを持ち、同じnormalized title/aliasが現在存在すれば新曲を作らない。
+4. 同じsnapshotで決着済みの`unresolved` / `dependency_pending`を再packet化しない。
+5. 未解決はcatalog・開催回・観測・E0 revision/evidenceが変わった場合だけ、新しいpacket IDで再eligibleになる。
+   解決済みidentityは選択行が変わらない限り、無関係なentity追加で再提示しない。
+6. E0の最新revisionがpendingなら、旧revisionのacceptを再利用しない。
+7. report dependency解決済みの開催回をLLM回答で上書きできない。
+8. 曲decisionと開催回decisionのobservation SHAが違えばmaterializeしない。
+9. 無効曲、merged開催回、stale snapshot、retracted/superseded decisionはmaterializeしない。
+10. 既存curated factへX根拠を足してもorigin・song ID・title・confidenceを変更しない。
+11. 同じunique identityに別song IDが衝突したらbatch全体をrollbackする。
+12. `origin='observed_x_post'` でもactive materializationのない`x_song_claim_v2`根拠は公開しない。
+13. active materializationでもfact・evidence・song・occurrence・roleのどれかが違えば公開しない。
+14. 最後のaccepted根拠をretractすると非公開になり、別経路のaccepted根拠があれば公開を維持する。
+15. Xだけで作った孤立曲は撤回で無効化し、共有曲やCAS不一致の曲を巻き戻さない。
+16. schema migration・decision apply・materializer・retractorはdry-run既定、confirm不一致・FK/integrity失敗で正本不変。
+17. shadow実行ではmaster DB・state・public JSON・Git差分を一切変更せず、除外理由とhold年齢をartifactへ出す。
+
+## 8. 日次shadowの次工程
+
+最初の日次配線は、観測台帳の読取、eligible判定、packet生成、materializer plan、件数・候補rank・保留理由の
+artifact出力までに限定する。RDB/state/public JSON/S3/Gitは書かない。旧抽出器の候補生成停止と、
+旧review/public reader停止は別gate・別判断にする。
+
+workflow変更はこの実装差分には含めず、保護操作として別の明示承認後に行う。
+
+## 9. コマンド順
 
 ```text
 run_x_song_identity_migration.py

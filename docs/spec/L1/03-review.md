@@ -231,14 +231,16 @@ updated_for: 64c874f
 
 - **内容**: 曲retrieval/noveltyと開催回同定は別packetにし、観測、候補行、catalog/occurrence snapshot、
   allowed actionをSHAへ含める。回答取込は各decision台帳だけへappendし、actor/model/prompt/timeをローカルでstampする。
-  event dependencyは同じfamilyの最大revisionだけを見る。
+  event dependencyは同じfamilyの最大revisionだけを見る。同じsnapshotでdecision済みのpacketは再提示せず、
+  解決済みidentityは選択行が変わらない限り無関係なentity追加で開き直さない。
 - **なぜ**: ID列だけのhashでは、判定者が見たtitle・alias・年・日付・会場が後から変わっても回答が通る。
   また旧revisionのacceptを使うと、訂正・reject済みイベントへ曲を結べる。
 - **破れたときの症状**: stale回答が別曲・別年の開催回へ適用される。判断を取り込んだだけで公開factが増える。
 - **守っているコード**: `review_inbox_adapters/x_song_resolution_contract.py`、
   `review_inbox_adapters/x_occurrence_resolution_contract.py`
 - **守っているテスト**: `tests/test_x_song_resolution_contract.py`、
-  `tests/test_x_occurrence_resolution_contract.py::test_event_dependency_never_reuses_accept_from_an_older_revision`
+  `tests/test_x_occurrence_resolution_contract.py::test_event_dependency_never_reuses_accept_from_an_older_revision`、
+  `tests/test_x_occurrence_resolution_contract.py::test_resolved_occurrence_is_not_reopened_by_unrelated_snapshot_change`
 
 ## 主要な流れ
 

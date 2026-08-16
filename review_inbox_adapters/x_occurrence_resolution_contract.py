@@ -198,6 +198,62 @@ def resolve_event_dependency(conn, dependency_key: str, snapshot: list[dict]) ->
     }
 
 
+def event_dependency_state(conn, dependency_key: str) -> dict:
+    """Freeze the latest revision even while it has no accepted decision.
+
+    A bare `dependency_pending` result is otherwise identical before and after
+    an event-inbox revision.  Including the revision identity lets a pending
+    claim become eligible only when its actual dependency changes.
+    """
+    conn.row_factory = __import__("sqlite3").Row
+    row = conn.execute(
+        """
+        SELECT inbox_id, revision, source_payload_hash, status,
+               superseded_by_inbox_id
+        FROM review_inbox_items
+        WHERE revision_family_key=?
+        ORDER BY revision DESC, updated_at DESC, inbox_id DESC
+        LIMIT 1
+        """,
+        (dependency_key,),
+    ).fetchone()
+    if row is None:
+        return {"revision_family_key": dependency_key, "latest_inbox": None}
+    return {
+        "revision_family_key": dependency_key,
+        "latest_inbox": dict(row),
+    }
+
+
+def _packet_already_decided(conn, packet_id: str) -> bool:
+    return conn.execute(
+        "SELECT 1 FROM x_occurrence_resolution_decisions WHERE packet_id=?",
+        (packet_id,),
+    ).fetchone() is not None
+
+
+def _selected_occurrence_is_current(decision, snapshot: list[dict]) -> bool:
+    if not decision["selected_occurrence_id"]:
+        return False
+    try:
+        frozen_rows = json.loads(decision["candidate_rows_json"])
+    except (TypeError, ValueError):
+        return False
+    frozen = next(
+        (
+            {key: value for key, value in row.items() if key != "match_score"}
+            for row in frozen_rows
+            if row.get("occurrence_id") == decision["selected_occurrence_id"]
+        ),
+        None,
+    )
+    current = next(
+        (row for row in snapshot if row.get("occurrence_id") == decision["selected_occurrence_id"]),
+        None,
+    )
+    return bool(frozen and current and frozen == current)
+
+
 def _packet_payload(packet: dict) -> dict:
     return {key: value for key, value in packet.items() if key not in {"packet_id", "packet_sha256"}}
 
@@ -218,10 +274,27 @@ def build_packet_set(conn, ledger: dict, *, generated_at: str, limit: int = 20) 
         if not eligible:
             excluded.append({"observation_id": observation_id, "reason": reason})
             continue
+        observation_sha = sha256_json(row)
+        if conn.execute(
+            "SELECT 1 FROM x_song_materializations WHERE observation_id=? AND status='active'",
+            (observation_id,),
+        ).fetchone():
+            excluded.append({"observation_id": observation_id, "reason": "already_materialized"})
+            continue
+        conn.row_factory = __import__("sqlite3").Row
+        active = conn.execute(
+            """
+            SELECT * FROM x_occurrence_resolution_decisions
+            WHERE observation_id=? AND status='active'
+            """,
+            (observation_id,),
+        ).fetchone()
+        active = dict(active) if active else None
         dependency_key = row.get("event_dependency_key")
         if dependency_key:
             resolution_source = "report_dependency"
             dependency = resolve_event_dependency(conn, dependency_key, snapshot)
+            dependency_state = event_dependency_state(conn, dependency_key)
             selected = dependency.get("selected_occurrence_id")
             candidates = [value for value in snapshot if value["occurrence_id"] == selected]
             allowed = [dependency["action"]]
@@ -236,23 +309,53 @@ def build_packet_set(conn, ledger: dict, *, generated_at: str, limit: int = 20) 
                 continue
             resolution_source = "direct_candidates"
             dependency = {}
+            dependency_state = None
             candidates = direct_candidates(row, snapshot, limit=limit)
             allowed = ["match_occurrence", "unresolved"]
+        if (
+            active
+            and active["observation_sha256"] == observation_sha
+            and active["action"] == "match_occurrence"
+            and _selected_occurrence_is_current(active, snapshot)
+        ):
+            dependency_is_current = (
+                resolution_source == "direct_candidates"
+                or (
+                    dependency.get("action") == "match_occurrence"
+                    and dependency.get("selected_occurrence_id") == active["selected_occurrence_id"]
+                    and dependency.get("dependency_decision_id") == active["dependency_decision_id"]
+                )
+            )
+            if dependency_is_current:
+                excluded.append(
+                    {"observation_id": observation_id, "reason": "identity_already_resolved"}
+                )
+                continue
         packet = _finish_packet(
             {
                 "schema": "x_occurrence_resolution_packet_v2",
                 "resolution_source": resolution_source,
                 "observation_id": observation_id,
-                "observation_sha256": sha256_json(row),
+                "observation_sha256": observation_sha,
                 "observation": row,
                 "event_dependency_key": dependency_key,
                 "dependency_decision_id": dependency.get("dependency_decision_id"),
+                "event_dependency_state": dependency_state,
+                "dependency_resolution": dependency if dependency_key else None,
                 "candidate_rows": candidates,
                 "candidate_set_sha256": sha256_json(candidates),
                 "occurrence_snapshot_sha256": snapshot_sha,
                 "allowed_actions": allowed,
             }
         )
+        if _packet_already_decided(conn, packet["packet_id"]):
+            excluded.append(
+                {
+                    "observation_id": observation_id,
+                    "reason": "already_decided_current_snapshot",
+                }
+            )
+            continue
         packets.append(packet)
         if resolution_source == "report_dependency":
             machine_results.append(
@@ -344,7 +447,12 @@ def apply_results(
                 raise ValueError("selected_occurrence_id is only allowed for match_occurrence")
             if packet["resolution_source"] == "report_dependency":
                 current = resolve_event_dependency(conn, packet["event_dependency_key"], current_snapshot)
-                if (action, selected) != (current["action"], current.get("selected_occurrence_id")):
+                current_state = event_dependency_state(conn, packet["event_dependency_key"])
+                if (
+                    packet.get("dependency_resolution") != current
+                    or packet.get("event_dependency_state") != current_state
+                    or (action, selected) != (current["action"], current.get("selected_occurrence_id"))
+                ):
                     raise ValueError("event dependency changed after packet build")
 
             decision_id = stable_id("xodec2", packet_id, action, selected or "")

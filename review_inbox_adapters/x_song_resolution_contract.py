@@ -157,6 +157,39 @@ def _finish_packet(packet: dict) -> dict:
     }
 
 
+def _packet_already_decided(conn, packet_id: str) -> bool:
+    return conn.execute(
+        "SELECT 1 FROM x_song_resolution_decisions WHERE packet_id=?",
+        (packet_id,),
+    ).fetchone() is not None
+
+
+def _plain_song_row(row: dict) -> dict:
+    return {
+        key: value
+        for key, value in row.items()
+        if key not in {"matched_by", "matched_text", "match_score"}
+    }
+
+
+def _selected_song_is_current(decision, snapshot: list[dict]) -> bool:
+    if not decision["selected_song_id"]:
+        return False
+    try:
+        frozen_rows = json.loads(decision["candidate_rows_json"])
+    except (TypeError, ValueError):
+        return False
+    frozen = next(
+        (row for row in frozen_rows if row.get("song_id") == decision["selected_song_id"]),
+        None,
+    )
+    current = next(
+        (row for row in snapshot if row.get("song_id") == decision["selected_song_id"]),
+        None,
+    )
+    return bool(frozen and current and _plain_song_row(frozen) == current)
+
+
 def build_packet_set(conn, ledger: dict, *, phase: str, generated_at: str, limit: int = 20) -> dict:
     if phase not in {"retrieval", "novelty"}:
         raise ValueError("phase must be retrieval or novelty")
@@ -169,6 +202,40 @@ def build_packet_set(conn, ledger: dict, *, phase: str, generated_at: str, limit
         if not eligible:
             excluded.append({"observation_id": observation_id, "reason": reason})
             continue
+        observation_sha = sha256_json(row)
+        if conn.execute(
+            "SELECT 1 FROM x_song_materializations WHERE observation_id=? AND status='active'",
+            (observation_id,),
+        ).fetchone():
+            excluded.append({"observation_id": observation_id, "reason": "already_materialized"})
+            continue
+
+        conn.row_factory = __import__("sqlite3").Row
+        active_phase = conn.execute(
+            """
+            SELECT * FROM x_song_resolution_decisions
+            WHERE observation_id=? AND phase=? AND status='active'
+            """,
+            (observation_id, phase),
+        ).fetchone()
+        active_phase = dict(active_phase) if active_phase else None
+        if active_phase and active_phase["observation_sha256"] == observation_sha:
+            terminal = (
+                active_phase["action"] == "candidate_missing"
+                or (
+                    active_phase["action"] == "match_song"
+                    and _selected_song_is_current(active_phase, snapshot)
+                )
+                or (
+                    active_phase["action"] == "new_song"
+                    and active_phase["catalog_snapshot_sha256"] == snapshot_sha
+                )
+            )
+            if terminal:
+                excluded.append(
+                    {"observation_id": observation_id, "reason": "identity_already_resolved"}
+                )
+                continue
 
         dependency = None
         if phase == "novelty":
@@ -190,19 +257,27 @@ def build_packet_set(conn, ledger: dict, *, phase: str, generated_at: str, limit
             # Novelty adjudication must see the entire frozen catalog, not a
             # second small search result whose miss could be mistaken for proof.
             candidates = snapshot
-        packet = {
+        packet = _finish_packet({
             "schema": "x_song_resolution_packet_v2",
             "phase": phase,
             "observation_id": observation_id,
-            "observation_sha256": sha256_json(row),
+            "observation_sha256": observation_sha,
             "observation": row,
             "depends_on_decision_id": dependency,
             "candidate_rows": candidates,
             "candidate_set_sha256": sha256_json(candidates),
             "catalog_snapshot_sha256": snapshot_sha,
             "allowed_actions": list(RETRIEVAL_ACTIONS if phase == "retrieval" else NOVELTY_ACTIONS),
-        }
-        packets.append(_finish_packet(packet))
+        })
+        if _packet_already_decided(conn, packet["packet_id"]):
+            excluded.append(
+                {
+                    "observation_id": observation_id,
+                    "reason": "already_decided_current_snapshot",
+                }
+            )
+            continue
+        packets.append(packet)
     return {
         "schema": "x_song_resolution_packet_set_v2",
         "phase": phase,

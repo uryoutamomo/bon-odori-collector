@@ -607,15 +607,20 @@ def load_rdb_occurrence_songs(conn):
     tables = {
         row[0] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
     }
-    e2_gate_available = (
+    e2_base_gate_available = (
         {"origin", "song_id", "occurrence_song_id", "role"} <= occurrence_song_columns
-        and {"songs", "occurrence_song_evidence_links"} <= tables
+        and {"songs", "evidence_items", "occurrence_song_evidence_links"} <= tables
     )
     gate = ""
     joins = ""
-    if e2_gate_available:
+    if e2_base_gate_available:
         joins = "LEFT JOIN songs s ON s.song_id = occurrence_songs.song_id"
-        gate = """
+        if "x_song_materializations" not in tables:
+            # A partially migrated database must not expose X-owned facts
+            # without the provenance ledger that authorizes them.
+            gate = "WHERE occurrence_songs.origin != 'observed_x_post'"
+        else:
+            gate = """
         WHERE occurrence_songs.origin != 'observed_x_post'
            OR (
              s.status IN ('active', '有効')
@@ -626,8 +631,23 @@ def load_rdb_occurrence_songs(conn):
              AND EXISTS (
                SELECT 1
                FROM occurrence_song_evidence_links xlink
+               JOIN evidence_items xe ON xe.evidence_id = xlink.evidence_id
                WHERE xlink.occurrence_song_id = occurrence_songs.occurrence_song_id
                  AND xlink.link_status = 'accepted'
+                 AND (
+                   xe.evidence_type != 'x_song_claim_v2'
+                   OR EXISTS (
+                     SELECT 1
+                     FROM x_song_materializations xm
+                     WHERE xm.status = 'active'
+                       AND xm.occurrence_song_id = occurrence_songs.occurrence_song_id
+                       AND xm.evidence_id = xlink.evidence_id
+                       AND xm.song_id = occurrence_songs.song_id
+                       AND xm.occurrence_id = occurrence_songs.occurrence_id
+                       AND xm.role = occurrence_songs.role
+                       AND xm.evidence_status = occurrence_songs.evidence_status
+                   )
+                 )
              )
            )
         """

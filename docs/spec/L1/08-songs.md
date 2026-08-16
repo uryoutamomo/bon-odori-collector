@@ -44,6 +44,7 @@ invariants:
   - INV-SNG-003
   - INV-SNG-004
   - INV-SNG-005
+  - INV-SNG-006
 verified_by:
   - tests/test_bon_odori_songs.py
   - tests/test_song_catalog.py
@@ -166,12 +167,13 @@ updated_for: 64c874f
 - **破れたときの症状**: マスタに既にある曲が別song IDで増え、同じ曲が公開欄へ複数表示される。
 - **守っているコード**: `review_inbox_adapters/x_song_resolution_contract.py`
 - **守っているテスト**: `tests/test_x_song_resolution_contract.py::test_retrieval_packet_freezes_full_candidate_rows_and_forbids_new_song`、
-  `tests/test_x_song_resolution_contract.py::test_candidate_missing_must_be_recorded_before_novelty_packet`
+  `tests/test_x_song_resolution_contract.py::test_candidate_missing_must_be_recorded_before_novelty_packet`、
+  `tests/test_x_song_resolution_contract.py::test_current_snapshot_decision_is_not_packetized_again`
 
 ### INV-SNG-005 X曲factは二つの同定と有効な根拠が揃ったときだけ作る
 
 - **内容**: `announced` / `observed` のcurrent observation SHAと、曲・開催回のactive decision、
-  current catalog/occurrence snapshotが一致したときだけmaterializeする。対応は
+  選択した曲・開催回の凍結行が現在値と一致したときだけmaterializeする。無関係な別entity追加では再判断しない。対応は
   `announced → setlist/announced`、`observed → result/observed` に固定する。retractはappend-onlyで、
   最後のX根拠が消えた曲のcreate/promotionを撤回順に依存せずCAS cleanupする。
 - **なぜ**: 回答経路やイベント名だけから意味を推測すると、願望曲・別年度開催・訂正済み投稿が公開factになる。
@@ -180,6 +182,20 @@ updated_for: 64c874f
   `report_apply/retract_x_song_materializations.py`
 - **守っているテスト**: `tests/test_x_song_materialization_lifecycle.py`、
   `tests/test_x_occurrence_resolution_contract.py`
+
+### INV-SNG-006 未解決を時刻だけで繰り返さない
+
+- **内容**: 同じpacket IDにdecisionがあれば再提示しない。未解決は曲・開催回・観測・E0 revision/evidenceの
+  いずれかが変わり、新しいpacket IDになった場合だけ再eligibleにする。解決済みidentityは選択行が変わらない限り
+  無関係なentity追加で開き直さない。30日後など固定時刻で同じ入力を再試行しない。
+- **なぜ**: 多くの未解決は処理が遅いのではなく、開催回やaliasがまだ存在しない依存待ちである。
+  同じ候補を定期的に読ませても判断負荷だけが増える。
+- **破れたときの症状**: `unresolved` / `dependency_pending` が毎日同じ内容で再登場し、保留キューが永久に回り続ける。
+- **守っているコード**: `review_inbox_adapters/x_song_resolution_contract.py`、
+  `review_inbox_adapters/x_occurrence_resolution_contract.py`
+- **守っているテスト**: `tests/test_x_song_resolution_contract.py::test_current_snapshot_decision_is_not_packetized_again`、
+  `tests/test_x_occurrence_resolution_contract.py::test_unresolved_occurrence_waits_for_snapshot_change`、
+  `tests/test_x_occurrence_resolution_contract.py::test_event_dependency_is_mechanical_and_pending_until_event_decision`
 
 ## 主要な流れ
 
