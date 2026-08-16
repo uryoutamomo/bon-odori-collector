@@ -3,6 +3,8 @@ id: L1-judgment
 layer: L1
 title: 自動判断サブシステム
 owns:
+  - build_x_extraction_packets.py
+  - apply_x_extraction_results.py
   - collection_support/event_evidence.py
   - collection_support/suppression_rules.py
   - collection_support/tokyo23_scope.py
@@ -12,6 +14,15 @@ depends_on:
 invariants:
   - INV-JDG-001
   - INV-JDG-002
+  - INV-XPE-001
+  - INV-XPE-002
+  - INV-XPE-003
+  - INV-XPE-004
+  - INV-XPE-005
+  - INV-XPE-006
+  - INV-XPE-007
+  - INV-XPE-008
+  - INV-XPE-009
 verified_by:
   - tests/test_event_evidence.py
 updated_for: 6537e7f
@@ -46,6 +57,70 @@ updated_for: 6537e7f
 - **破れたときの症状**: 存在しないイベント名の候補が増え、別会場の情報が誤結合される。
 - **守っているコード**: `collection_support/event_evidence.py` の `is_generic_event_hint()` と `classify_event_evidence()`
 - **守っているテスト**: `tests/test_event_evidence.py::test_generic_event_name_is_suppressed_and_uses_venue_month`
+
+### INV-XPE-001 X投稿抽出は意味で捨てず、本文外の事実を通さない
+
+- **内容**: `build_x_extraction_packets.py` はX投稿を語彙で除外せず、既処理・24時間以内に発行済み・完全重複だけを除く。`apply_x_extraction_results.py` は5点回答の日付・会場・引用・URLを本文とpacketに照合し、失敗時はレポートを作らない。5点未満も採点として保存する。
+- **なぜ**: 発見の入口で意味判定を重ねると開催情報を取りこぼし、反対にLLMの書き写しを無検証で通すと正本候補へ捏造が混ざるため。
+- **破れたときの症状**: 開催情報が読まれない／本文に無い日付や会場の候補がレビュー受信箱へ流れる。
+- **守っているコード**: `build_x_extraction_packets.py` の `build()`、`apply_x_extraction_results.py` の `apply()`
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied`
+
+### INV-XPE-002 本文に無い日付・会場・引用からレポートを作らない
+
+- **内容**: 照合に失敗したイベントだけを除外し、同じ投稿の他イベントは巻き込まない。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event`
+
+### INV-XPE-003 5点未満は採点だけを保存する
+
+- **内容**: 4点以下からE0レポートを作らない。ただし点数は `data/x_post_scores.json` に必ず残す。
+- **なぜ**: 点数は捨てるための閾値ではなく、後で並べ替え・見直しをするための記録だから（2026-08-15 内田さん）。
+- **破れたときの症状**: 読んだ結果が消え、同じ投稿を読み直す羽目になる。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_unknown_no_is_flagged_and_low_scores_keep_only_the_score`
+
+### INV-XPE-004 生成レポートは出典URLを持つ
+
+- **内容**: URLの無い投稿は候補化しない。
+- **なぜ**: 出典なしで正本factの材料を作らないため。
+- **破れたときの症状**: 出所を辿れない開催情報がレビュー受信箱へ入る。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_post_without_url_never_becomes_a_report`
+
+### INV-XPE-005 投稿由来の会場に住所を推測しない
+
+- **内容**: `venue` は名称とareaだけである。
+- **なぜ**: 投稿から住所は読めず、推測を入れると `ensure_venue` の完全一致照合を誤らせる。
+- **破れたときの症状**: 同じ会場が住所違いで二重に登録される（2026-08-07 鹿骨中学校と同型）。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_report_omits_address_and_derives_year_from_date`
+
+### INV-XPE-006 私人アカウントを公開詳細へ出さない
+
+- **内容**: 私人のアカウント名・ハンドルはdetail_addendumへ入れない。URLは公開層が除去する内部記録行にだけ残す。
+- **なぜ**: 本人の同意なく私人の投稿を公開サイトへ引用しないため（2026-08-08 内田さん決定）。
+- **破れたときの症状**: 公開ページに第三者のXハンドルが並ぶ。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+
+### INV-XPE-007 未回答投稿は24時間後に再発行し、処理済みは掘り返さない
+
+- **内容**: issuedだけの投稿は処理済みにせず24時間後に再びパケット化する。`applied_at` を持つ投稿は `--reissue` でも出さない。
+- **なぜ**: 読み落としを取りこぼさないため。逆に処理済みを再発行すると、同じ投稿を何度も読ませることになる。
+- **破れたときの症状**: 回答が返らなかった投稿が永久に読まれない／既に読んだ投稿が毎日パケットへ戻る。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_applied_post_is_never_reissued_even_with_reissue_flag`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules`
+
+### INV-XPE-008 束ねたXレポートは代表投稿を変えない
+
+- **内容**: 同じ正規化済み名前・日付・会場の投稿は1 report_idへ束ね、初回の `source.url` / `raw_text` / `events` を固定し、後続URLだけ内部記録行へ追記する。
+- **なぜ**: 代表を入れ替えるとE0のsource payload hashが変わり、実質同一候補に無意味なrevisionが増えるため。
+- **破れたときの症状**: 同じ開催情報を再取り込みしただけでレビュー候補が増える。
+- **守っているコード**: `apply_x_extraction_results.py` の `apply()`
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_bundle_keeps_first_representative_and_never_rewrites_events`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+
+### INV-XPE-009 累積voicesから読ませるのは既定で前日以降だけ、超過分は次回へ残す
+
+- **内容**: `build()` は `--since`（既定＝前日）以降の投稿だけを対象にし、`--max-batches`（既定10）で1回の出力を制限する。上限を超えた投稿には `issued_at` を書かないので、次回そのままパケットへ出る。
+- **なぜ**: `voices.json` は日次の差分ではなく**累積**で、2026-08-16 時点でX系だけで32,476件ある。下限を置かないと初回実行が102バッチ（30,557件）になり、判定が回らない。実測では前日以降だけで3バッチ（778件）に収まる。
+- **破れたときの症状**: 初回や再構築のたびに数万件のパケットが生成され、判定が事実上不可能になる／上限で切った分が捨てられて二度と読まれない。
+- **守っているコード**: `build_x_extraction_packets.py` の `build()`
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_since_defaults_to_yesterday_and_max_batches_defers_the_rest`
 
 ## 主要な流れ
 
