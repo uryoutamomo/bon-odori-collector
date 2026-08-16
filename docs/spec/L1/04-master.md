@@ -19,7 +19,6 @@ owns:
   - run_event_state_axes_migration.py
   - run_post_batch_maintenance.py
   - run_x_song_identity_migration.py
-  - scripts/verify_detail_cleanup_repair.py
 depends_on:
   - L1-platform
 invariants:
@@ -41,8 +40,6 @@ verified_by:
   - tests/test_x_song_identity_migration.py
   - tests/test_x_song_apply_safety.py
   - tests/test_x_song_materialization_lifecycle.py
-  - tests/test_apply_detail_cleanup_repair.py
-  - tests/test_verify_detail_cleanup_repair.py
 updated_for: fcb8277
 ---
 
@@ -221,12 +218,7 @@ evidence link を開催回にすでに持つ場合、`detail_addendum` と `deta
 evidence・曲の冪等な適用は続ける。別の通知evidenceによる後続の本文差替は正しく反映され、
 古い通知を再実行しても上書きされない。
 
-2026-08-16 の14件公開detail修復は、通常の通知レポートを再適用せず、
-`report_apply/apply_detail_cleanup_repair.py` の一回限りの経路で行う。修復台帳は対象14件と
-各行の現在detail SHA-256、台帳自身のSHA-256を固定する。全行を先に照合し、隔離したDBコピーで
-detail と `updated_at` だけを更新してから、FK・integrity・RDB監査を通す。どれか一つでも失敗すれば
-Master RDBを置換しない。`scripts/verify_detail_cleanup_repair.py` は全table差分、公開射影とsource mapを
-fail-closedで照合し、14件以外の変更を拒否する。
+2026-08-16 の14件公開detail修復は完了済みで、修復台帳は監査記録として保持する。実行証跡は GitHub Actions run 31958734256 の artifact にある。
 
 日次のほかに、**バッチの後始末を読むだけのレポート**がある。`run_post_batch_maintenance.py` は
 RDBとローカルのJSON出力を読み、件数と気になる点をまとめたJSON/Markdownを出す。書き込みはしない。

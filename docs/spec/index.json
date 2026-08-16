@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T16:20:05Z",
-  "generated_for_commit": "9eb53f5",
+  "generated_at": "2026-08-16T16:38:48Z",
+  "generated_for_commit": "9da046c",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -326,7 +326,10 @@
         "search_rare_signal_backcheck_sources.py",
         "stage_rare_signal_backcheck_reviews.py"
       ],
-      "staleness": null,
+      "staleness": {
+        "commits_since": 3,
+        "files_changed_since": 2
+      },
       "version": "1.9",
       "revision_count": 10,
       "history": [
@@ -401,8 +404,7 @@
         "transition_ended_occurrences.py",
         "run_event_state_axes_migration.py",
         "run_post_batch_maintenance.py",
-        "run_x_song_identity_migration.py",
-        "scripts/verify_detail_cleanup_repair.py"
+        "run_x_song_identity_migration.py"
       ],
       "depends_on": [
         "L1-platform"
@@ -426,9 +428,7 @@
         "tests/test_e2_identity_judgment.py",
         "tests/test_x_song_identity_migration.py",
         "tests/test_x_song_apply_safety.py",
-        "tests/test_x_song_materialization_lifecycle.py",
-        "tests/test_apply_detail_cleanup_repair.py",
-        "tests/test_verify_detail_cleanup_repair.py"
+        "tests/test_x_song_materialization_lifecycle.py"
       ],
       "updated_for": "fcb8277",
       "path": "docs/spec/L1/04-master.md",
@@ -474,12 +474,11 @@
         "run_event_state_axes_migration.py",
         "run_post_batch_maintenance.py",
         "run_x_song_identity_migration.py",
-        "scripts/verify_detail_cleanup_repair.py",
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 3,
-        "files_changed_since": 3
+        "commits_since": 1,
+        "files_changed_since": 2
       },
       "version": "1.11",
       "revision_count": 12,
@@ -554,8 +553,7 @@
         "public_json_postprocessors/**",
         "public_export_support/**",
         "guard_site_public_event_additions.py",
-        "venues/export_public_venues.py",
-        "scripts/export_detail_cleanup_projection.py"
+        "venues/export_public_venues.py"
       ],
       "depends_on": [
         "L1-master"
@@ -576,7 +574,6 @@
         "tests/test_public_event_site_addition_tools.py",
         "tests/test_classify_public_events_diff.py",
         "tests/test_e0b_bridge.py",
-        "tests/test_verify_detail_cleanup_repair.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
       "updated_for": "1ca79f4",
@@ -598,7 +595,6 @@
         "public_json_postprocessors/compare_public_projection_sources.py",
         "public_json_postprocessors/guard_public_events_sync.py",
         "public_json_postprocessors/review_missing_occurrence_venues.py",
-        "scripts/export_detail_cleanup_projection.py",
         "venues/export_public_venues.py"
       ],
       "staleness": {
@@ -1187,7 +1183,10 @@
       "owned_files": [
         "master_rdb/master_db.py"
       ],
-      "staleness": null,
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 1
+      },
       "version": "1.2",
       "revision_count": 3,
       "history": [
@@ -2312,7 +2311,6 @@
     "run_event_state_axes_migration.py": "L1-master",
     "run_post_batch_maintenance.py": "L1-master",
     "run_x_song_identity_migration.py": "L1-master",
-    "scripts/verify_detail_cleanup_repair.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
     "export_public_events.py": "L1-publication",
     "guard_site_public_event_additions.py": "L1-publication",
@@ -2330,7 +2328,6 @@
     "public_json_postprocessors/compare_public_projection_sources.py": "L1-publication",
     "public_json_postprocessors/guard_public_events_sync.py": "L1-publication",
     "public_json_postprocessors/review_missing_occurrence_venues.py": "L1-publication",
-    "scripts/export_detail_cleanup_projection.py": "L1-publication",
     "venues/export_public_venues.py": "L1-publication",
     ".github/workflows/send_mail.yml": "L1-delivery",
     ".github/workflows/send_mail_watchdog.yml": "L1-delivery",
@@ -2469,8 +2466,8 @@
   },
   "coverage": {
     "tracked_source_files": 349,
-    "owned": 259,
-    "unowned": 90,
+    "owned": 257,
+    "unowned": 92,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",

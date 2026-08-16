@@ -415,7 +415,7 @@
       "site_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
       "collector_event_key": "大井どんたく夏まつり||大井町駅前中央通り",
       "site_sha256": "6366985cb348b1aa564aaa3a8a54d89b7625a96e8bd6521ddad8d08c44b0787b",
-      "collector_sha256": "af431118eaf8037fea0aeaed00a16107c631dee7d6e63c81913d07d1137a251f",
+      "collector_sha256": "44ab6b52e790bad1dfc3d75b611aec190b9d8c15293c6ca2bd4d823d47b7ba64",
       "reason": "2026-08-07: 内田さん承認のシリーズ統合により、2025年の『第71回大井どんたく夏まつり 初日 盆踊り』を既存seriesへ保持したまま『大井どんたく夏まつり』へ正規化し、公式確認済み2026年回を同シリーズへ統合。旧2025公開行から統合後2026公開行への exact key replacement として更新（おと）。"
     },
     {
@@ -2683,6 +2683,558 @@
       "event_key": "目黒駅前 地域のふれあい盆踊り大会||権之助坂商店街",
       "collector_sha256": "81f008ed301912a43b4609deb62211422e01c4ac0b975173510c7ecc747c1d07",
       "reason": "2026-08-12 に内田さん承認のうえ master RDB へ新規登録したイベント。号外NET目黒区で第40回・7/26開催を確認。主催は権之助坂商店街振興組合。裏取りキュー（会場・要裏取り）の未登録会場112件を精査して拾ったもので、開催日は過去のため公開区分は ended。経緯は data/queue_venue_backfill_20260812_triage.md"
+    },
+    {
+      "id": "reviewed-update-20260816-215dacb91e5a",
+      "kind": "same_key_update",
+      "event_key": "D館夏まつり||リバーウエストD館 駐車スペース",
+      "site_sha256": "577c4b6671aa3bb54017f5cd526e66fbc9c2dc98dc3b3ce220c53d4c05a6058f",
+      "collector_sha256": "602123c1632e6955102c93ea067c62f1b36eed222a609e42d949e8936c175ede",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-fe53294695f2",
+      "kind": "same_key_update",
+      "event_key": "LP26まつり||ライオンズプラザ西葛西マンション内公園",
+      "site_sha256": "48ec358fef1f1bfac8da24a15d2f451c258213110e5d97f0004764f6e2c2db71",
+      "collector_sha256": "4e68dfb20dc1048bfdc07df19bc338844be338fe011d0e322beff4bd165d30fc",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-ae2910d33a92",
+      "kind": "same_key_update",
+      "event_key": "とよす夏祭り||アーバンドック ららぽーと豊洲",
+      "site_sha256": "6ed77a1871229015e0118e57fd4db65b07cb9243a96a3660164eaaa7d9ab63bb",
+      "collector_sha256": "a0f68df8a31d58020f42faebb925383818c40ab6b224545e3ff89d9bbf360552",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-a2574b24d449",
+      "kind": "same_key_update",
+      "event_key": "なぎさ納涼祭||なぎさニュータウン内中央広場",
+      "site_sha256": "770eb5e59510a304590ee57f143309fc9521c1f41c6ceb48140c418f14f8499a",
+      "collector_sha256": "bcd67fea1c5833d297139231aaf2c80773d3793822c5c69a936c738ea372a3bd",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-25ef86d4dd32",
+      "kind": "same_key_update",
+      "event_key": "まつりだワッショイ小松川||東大島駅前大島小松川公園季節の広場",
+      "site_sha256": "8961693f5c07a961c93897137d75d5203202a28fd94dbb0e7a9399dd56bc8b01",
+      "collector_sha256": "5e6b18ea370b221ad9aca3d1950b8ba2c62e5fc2326471641c11dee62a5cdd8c",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-008e95f38fee",
+      "kind": "same_key_update",
+      "event_key": "コープ野村梅島自治会 盆踊り大会||梅田七丁目児童遊園",
+      "site_sha256": "9b32f8ebca95b864d0c01965594e1c5bc0784c39311bb1dbec5c4b4ced71dd16",
+      "collector_sha256": "d8a60c0535d931223f1adb33ba70169f57337919bc51ecc657976f47973375ff",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-d0508867a8ed",
+      "kind": "same_key_update",
+      "event_key": "シティコープ西葛西自治会夏祭り||西葛西五丁目児童遊園",
+      "site_sha256": "0a42d58ada61cfed974e31c7f861c01fac9adb54cc7f14c0b0911ba8145807c3",
+      "collector_sha256": "1e488db271feb233ca5f011873747809c10b4833df01a200ff80d8d0760b85fa",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-8093b77a1829",
+      "kind": "same_key_update",
+      "event_key": "ハイラーク船堀自治会秋まつり||しらさぎ児童遊園",
+      "site_sha256": "1193c9f57ef84c4451da136471ddfa6f8e9863d744f99185ed00f995f4a85b0d",
+      "collector_sha256": "e2b0656ec5632544046119768ed48e96c56f10e5d5bd6efa7dcdb0e8b82c19e5",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-0f09e902e380",
+      "kind": "same_key_update",
+      "event_key": "上石神井地区祭||上石神井小学校",
+      "site_sha256": "a211ddf3c0472e7e0ccf39b3129939fffa97b18eae9bf4d9320fc85e79a1092b",
+      "collector_sha256": "de185c92dcf872a9b561f4b15b046f4a50a07513128aa2be0b23762fb7f6d04c",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-5a7a83cb0541",
+      "kind": "same_key_update",
+      "event_key": "上野ゐの市盆踊り||上野恩賜公園",
+      "site_sha256": "6d84f81cf0e562716987c1d7d572e9f4a9fabe3e39ae40d797dc6f02a951485e",
+      "collector_sha256": "8881e621d33516bcb16bdb3f843b4b61c4edbe9bcbc1d97072bfe265a70d4f59",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-b64b2c1ee923",
+      "kind": "same_key_update",
+      "event_key": "五仲自治会盆踊り||くじら児童遊園",
+      "site_sha256": "3914476bc78573bb9313a4c076c55a9ea2e319d2c5f680e2c48c4d402aa25528",
+      "collector_sha256": "07c68944657aaa882181d62bb3350a39c7874b4cab32eb23d69beeec8546c3c9",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-cdc4871dd6a6",
+      "kind": "same_key_update",
+      "event_key": "今井町会納涼盆踊り大会||八雲神社前広場",
+      "site_sha256": "700d527f000aab46ab034d7cabd1ef37e72b4bb66beb4a8c9f1c7800591dc2e2",
+      "collector_sha256": "03d5b6eebbabadc27f804be64b11883046734f64c6b050c07725e7fe339030cc",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-0b8405528c68",
+      "kind": "same_key_update",
+      "event_key": "仲町町会納涼盆踊り||中割天祖神社",
+      "site_sha256": "3cfd23a527a11d6a0ea3c04b0f6c6d8a7b2681f78ae5af7ec6bdc9b251e1ee00",
+      "collector_sha256": "0b9e9805f318ed267ea69f63adab1a5db1487f50327a2028a7ca412cb1419339",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-c9f328c2f56d",
+      "kind": "same_key_update",
+      "event_key": "公社東葛西第一住宅自治会住宅祭||公社東葛西第一住宅団地内公園",
+      "site_sha256": "3b20dc80718494e56f9c374e33820222d036d85d5c529746edf7c3aefe41d365",
+      "collector_sha256": "9e2d264fffb44887c76ee24c3728af1eeb097509f00220e729680fded314046d",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-537aa311a58d",
+      "kind": "same_key_update",
+      "event_key": "六中自治会盆踊り||北小岩小学校",
+      "site_sha256": "e44b99f88cdfd5788d5a7bcff6b581bbd26f8d40fc68cc1290944ae117a6f6cf",
+      "collector_sha256": "3e11dddbf8b5fcd0c53a29b9caf1c35f496197c1302614f91ab6b40ef616368a",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-0cf019b59056",
+      "kind": "same_key_update",
+      "event_key": "北小岩五丁目自治会盆踊り||北小岩五丁目天祖神社",
+      "site_sha256": "5b8cc2c50329fc76629d829fee638bd677c36986d0e907c9e02a528f8bf65dd4",
+      "collector_sha256": "18c5423889f137871b83e05a31674e8f152e0c33e2e4fcc14fd42b7a0216528c",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-b6d90ef43478",
+      "kind": "same_key_update",
+      "event_key": "北篠崎二丁目自治会盆踊り||北篠崎二丁目公園",
+      "site_sha256": "6ce442f3432d4a571227ce98f432caae56c9f14dec962fa5b6eea61ad6a22c1a",
+      "collector_sha256": "547686146f48a9411ce83498e270603640021a4665c2a59d7a3ccc395f349719",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-384c974f2a17",
+      "kind": "same_key_update",
+      "event_key": "南小岩司町会盆踊り||南小岩三丁目第二児童遊園",
+      "site_sha256": "cca85bfad996a6a6033c283176ac5c7507090664b3defa2d6c5431f58af0d7e9",
+      "collector_sha256": "c67da11dc9e7762e2648df5d05a2fac46175a57ceae364c06ff69bc8d1d2f5a2",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-bb9021839e2f",
+      "kind": "same_key_update",
+      "event_key": "南小岩神明町会盆踊り||南小岩六丁目児童遊園",
+      "site_sha256": "38c596d52ab8d1d581f6798688739d4a13eb9bd61f8cb58c775d6d3d9299c6bb",
+      "collector_sha256": "0b2b69632299e3c88639afa36d04553d8714c213e0fb8e6e950d79a5099b928a",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-432c6c132e40",
+      "kind": "same_key_update",
+      "event_key": "南砂住宅 団地祭り||南砂住宅",
+      "site_sha256": "802be3c76f9432be2c1af79cb9aafc763d919be321d9610f68ca3418c2311719",
+      "collector_sha256": "921dba06d71439e8fdc7152382150e9809abb4f931b635f21ca72ed305a441c6",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-16ae3d6744c3",
+      "kind": "same_key_update",
+      "event_key": "南篠崎天祖神社例大祭||南篠崎天祖神社",
+      "site_sha256": "b86a929171931419998255368ad4c005e61b4d66fbb82580c1ac61f62c8390f5",
+      "collector_sha256": "a5a054368d0f10b009d4758b08106da3428aabcc323ab777bfc5fadca4065dc9",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-25ae1562884f",
+      "kind": "same_key_update",
+      "event_key": "南葛西町会納涼夏祭り||南葛西小学校",
+      "site_sha256": "e93a9d64dd7ea0849e5695342c06645dca00f55523a6119b65d99c142f79ca5f",
+      "collector_sha256": "bab6511556505dd117f06982e536092176cfee9906b5f0e65614fcb9f48a078e",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-286ab3372ffe",
+      "kind": "same_key_update",
+      "event_key": "坂下一丁目南町会 盆踊り大会||志村公園 特設会場",
+      "site_sha256": "2ce87c67aa9f86ae9a247dccea6a84db9ea23fcfc144be99109550a4093052b1",
+      "collector_sha256": "a009c199ee38d166c383d38b573465848c5ccc72fea383c8225ea3ac40e24673",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-a46e49abf3f6",
+      "kind": "same_key_update",
+      "event_key": "塩浜一丁目団地自治会 夏まつり||塩浜一丁目団地中央公園内",
+      "site_sha256": "6dc7b409ebdce0b52cac9cbd62a2627436a9ed1a559aa3c32f43a7cb9f5d2f9a",
+      "collector_sha256": "89e1e8172ce2451ff7ceab4f6d28f96111257860f13056635cc298067864262b",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-1bf026c15143",
+      "kind": "same_key_update",
+      "event_key": "大井どんたく夏まつり||大井町駅前中央通り",
+      "site_sha256": "44ab6b52e790bad1dfc3d75b611aec190b9d8c15293c6ca2bd4d823d47b7ba64",
+      "collector_sha256": "35ba7480beaf10cbb843033c45c3159606ae273dbb4cffddd635e623960d5144",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-8da9445cb8f0",
+      "kind": "same_key_update",
+      "event_key": "大京町商店会納涼おどり大会||大京公園",
+      "site_sha256": "d8b13d30901e73717ec1e43a7093f76ed7a05e9dc917f122c16f0f21e6c48510",
+      "collector_sha256": "367e8feb228c02857e1120c7b1e2256f2f732052ddfd3de2ea420bdd9d8ae63c",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-820dba9ffc04",
+      "kind": "same_key_update",
+      "event_key": "大島三丁目団地自治会 夕涼み会||大島三丁目団地",
+      "site_sha256": "d684f0c0ca8dcab167b4feb1076ead23a82d756f215d7d467702559162903986",
+      "collector_sha256": "80c68513af192b11c509898f1c62b68177a42720e9af2d2ba2ff940967d54651",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-83c156cbd8b9",
+      "kind": "same_key_update",
+      "event_key": "大島五丁目町会 ぼんおどり||大島五丁目公園",
+      "site_sha256": "ca8c9290e798b7368801226d532b0a4296d14e852901f6c02713fc610b8573ec",
+      "collector_sha256": "4e84a9a04e8a39dbcfce636f2409e9084f08c5de3880878160747862621e7c00",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-06074396b3bf",
+      "kind": "same_key_update",
+      "event_key": "大泉西地区祭||四面塔稲荷神社",
+      "site_sha256": "d04a469f6620c27fb050ce01ca8e0f3cba2b8fe2fc13ed742f031dd4b8a389d9",
+      "collector_sha256": "7417aaa615905f0b41e275170db7879fd0ef0406a45e5d478b70bb6d6a357973",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-138ec0b1d205",
+      "kind": "same_key_update",
+      "event_key": "子どもふれあいまつり||西瑞江三丁目第三児童遊園",
+      "site_sha256": "05eb260fc1d6d330be4d88d8eec3e511f70e18bf6b34d299f20af5cc024a5cf1",
+      "collector_sha256": "50c2536f12eaf4200b0fe453bc315bb5c9d7f9bb310cdba9b817e94903edb08d",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-fe72bfb8a167",
+      "kind": "same_key_update",
+      "event_key": "宿和会納涼盆踊り大会||下鎌田東小学校",
+      "site_sha256": "bd6ee5cb8193a89a3bfc8aaa2ea7bc79e894ddb58fc8f33b05dfd7d28f5be56b",
+      "collector_sha256": "317e221fdb7b840cf1ab862e54f95efdd02b225ccaf3894568768bb34be6479d",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-0d5a7339a27b",
+      "kind": "same_key_update",
+      "event_key": "小岩二東町会盆踊り||東小岩小学校",
+      "site_sha256": "0ee8036965c1ac123e6d624915a0ddd226dc3f3c4b007f9e47f856f92f6e8d08",
+      "collector_sha256": "3e470c63e9dc0aa9907d512e41dd39226dddf572dddfea51eb17ddfd3fb79c3d",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-20d7efbebfef",
+      "kind": "same_key_update",
+      "event_key": "小岩田自治会盆踊り||小岩田天祖神社",
+      "site_sha256": "f29365af8ed2f659ab38ccc3f4da4b941be54d0141ab6fb9c21801ca3da80385",
+      "collector_sha256": "39a97672652e8f367a351cf3f82afed54b6a8f06ca9d8221514e053b053818da",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-9b9c7d208182",
+      "kind": "same_key_update",
+      "event_key": "小岩駅前町会盆踊り||南小岩六丁目児童遊園",
+      "site_sha256": "5cd57e5560a5c4b45f260865be8562bdf4904cb1a1179dda52c7905f9ddbb8ab",
+      "collector_sha256": "8a248d7636e8056faf4f063cd6ed9203a836c5904c6299bd9f6409845e1f448f",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-09a487543dac",
+      "kind": "same_key_update",
+      "event_key": "小松川四丁目親交会ふるさと小松川夏祭り||善通寺駐車場",
+      "site_sha256": "d5cb17fce5d512fbd7112ec4bfe17003cfa94c9fb047192ff492bfb89c2175e1",
+      "collector_sha256": "0030ef7f6d78b48d737b00b01990d1d1ffbe5fa6c367542c25f6e7e56a3d3ca3",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-f3eb685bc0aa",
+      "kind": "same_key_update",
+      "event_key": "小豆沢商友会 納涼盆踊り大会||志村第二中学校 校庭",
+      "site_sha256": "531c14bf52e878d723ae5e98a2acd95e74f84fa8bb329af1259444455d75a76f",
+      "collector_sha256": "57338fb0c0ce72a805bb05eef13abbad281fec238a4e1b17875954c4939385e5",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-dd54e1e2301b",
+      "kind": "same_key_update",
+      "event_key": "巽親和会盆踊り||善養寺",
+      "site_sha256": "2d14ae970279eb3146599c955f140055b983b9c9126cc1eac16cb4162482e949",
+      "collector_sha256": "7f107a140dd091a02f3fd7ea799685a180b19f092ddc14809ac73bc278d8d5ee",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-b30fe6694295",
+      "kind": "same_key_update",
+      "event_key": "平井6丁目23号棟自治会納涼大会||平井六丁目23号棟 団地敷地内",
+      "site_sha256": "af17de48bb0311725d0f3ac7ed2a186244cd8107f8ee9fa6aadb05b8c699a368",
+      "collector_sha256": "61073d9da2b0fb3c38e2807f6f16e299cb1e552671ae5482454c4b1c6ebf5964",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-4efbd5454e1f",
+      "kind": "same_key_update",
+      "event_key": "平井一丁目南親会夏祭り||平井一丁目児童遊園",
+      "site_sha256": "c7f7891c253524555169297f69028c4979762ed8d460797ade07c13425c69596",
+      "collector_sha256": "1fed6e4bc5d1d78c02a1071db42bdb86151019aec38ff873066d30b4474fa9aa",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-f03c613f00fb",
+      "kind": "same_key_update",
+      "event_key": "平井西町会納涼盆踊り大会||平井西小学校",
+      "site_sha256": "c2ae2b0e9797a7af281ce2649959d2c4b50752c277cc762073b5336daa1f7153",
+      "collector_sha256": "d65c0fdd5905ae11487aa474ef07ea44db01bacac69407a3c399238be8ca7870",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-b9974a15f5f6",
+      "kind": "same_key_update",
+      "event_key": "扇子田自治会盆踊り||南小岩会館",
+      "site_sha256": "1cd5d964e0f6b21588a50ffd91da7c078ad082e93af97b252cac3cf77d07bf7d",
+      "collector_sha256": "bee5f1a360f5a06363aec897c898bc41c26947ed7b6a2d5b7a10b65db835eb71",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-8d359f03e8aa",
+      "kind": "same_key_update",
+      "event_key": "扇橋二丁目町会 納涼大会||江東公園",
+      "site_sha256": "2dd9d9b74abc676f2d74eeb68af8ed3ad04ef2ab3b8f53ebcff0795a9a56dc2d",
+      "collector_sha256": "5d1bcccdac3c78e70df52d5fdd4b0e2f76fa79f776d4438e31a261121e78e48b",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-661e1f7f3520",
+      "kind": "same_key_update",
+      "event_key": "杉大門通り盆踊り大会||杉大門通り",
+      "site_sha256": "181ebe4ade3a6e421a202fa3ba32223532ef7910a2a13c32ac171044b18220a1",
+      "collector_sha256": "8393c52cac4b5e297cd620ca2c06c82caf32f46d4162b69ccf25a9d832d1ff54",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-d10f3b2df5e3",
+      "kind": "same_key_update",
+      "event_key": "東小岩中央自治会盆踊り||東小岩滝児童遊園",
+      "site_sha256": "584299493e044c01947dbee8105b0ce5cff4b5959d0d2ca9c4a0c023b9fb371c",
+      "collector_sha256": "18d65bf9f1b285fb1e4bc41252b0ff708d647093e14258dde44e8198ca45cbc5",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-c9834be8d55f",
+      "kind": "same_key_update",
+      "event_key": "東砂一丁目団地 ふれあい祭り||東砂一丁目団地",
+      "site_sha256": "af6f555a7bb30ac787dbd1670567b098a38e0ba5ff18e84835afa57eb7d3cd95",
+      "collector_sha256": "35ea421ec05847640d3f86e4aab395e2039ea12774400f8fa42f2af917ba5f00",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-96f8f78cd6f1",
+      "kind": "same_key_update",
+      "event_key": "東砂三丁目町会 盆踊大会||東砂第二公園",
+      "site_sha256": "881dceba5425e18ac581feb85d91eaa693a587e0125a94c01665f97b88c8babf",
+      "collector_sha256": "91b8fdd61b13162fb9258d50071945ab01f966d6182ab77380a292cb91d6fc00",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-ed985ec543a4",
+      "kind": "same_key_update",
+      "event_key": "東陽六・七丁目町会 夏まつり||イーストプラザ広場",
+      "site_sha256": "1e843d630db8ab6510a1fedb742f92ad9d0b9095569a0b63e4838a774d1041b2",
+      "collector_sha256": "4534fe380971a80d68f7cec8f4f0c87da71200d23eb576100730ad636bba8807",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-9ba38b8bb11e",
+      "kind": "same_key_update",
+      "event_key": "松本町会盆踊り||松本天祖神社",
+      "site_sha256": "04835085d50e98071aefc9f77557cb6d0cc2e83511cee85164f8acf785e2f2c7",
+      "collector_sha256": "508a62e422c1ea48bdaa90f203deddb98c8870cc3afde9b047f84e306b0cbdb2",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-b7db1680be9c",
+      "kind": "same_key_update",
+      "event_key": "梅島町会 盆踊り大会||梅島天満宮",
+      "site_sha256": "7a4b205bb8bb3fb2e8bef88c686cf8ec08d4a40b51592aba4da4cf0a214f1dd6",
+      "collector_sha256": "a207413298ac217c3d6a60353f772b4419943d50873eacee811b7ade2c968ed6",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-60e040f44dc6",
+      "kind": "same_key_update",
+      "event_key": "梅田神明町自治会 盆踊り||梅田公園",
+      "site_sha256": "754b10c574a9451a02f1890a6fb27f4255ee9f22d11dc25a2152fdba54f84400",
+      "collector_sha256": "747c32b754194c08ddd608fefdaec64163347c9eb832df8b0184e175f3777435",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-52d18d260087",
+      "kind": "same_key_update",
+      "event_key": "椿ふるさとまつり||弥生公園",
+      "site_sha256": "2e1d861fed41e235938e4047ddf13d504fbe10afa429c97bb94a2528ae4f1a6e",
+      "collector_sha256": "5b8af94a175762d50e0cc721831d8aadccf4d99b0721be1923c8b8d53cb46ea2",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-3a720969c558",
+      "kind": "same_key_update",
+      "event_key": "椿フェスティバル||瑞江葬儀所裏こどもの広場",
+      "site_sha256": "156d48af4f8768e7b4b50606104bb33d45bc99ba198619d443271611adf7bdb3",
+      "collector_sha256": "2bef6ab2f19f3509d2e46d905c0498c1f8434cf6659b27b1689da10da8013506",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-35049e748f7f",
+      "kind": "same_key_update",
+      "event_key": "椿祭り||第二椿児童遊園",
+      "site_sha256": "cee9bee1403de5bed89a1509fed798c936659514a76946572ef7212095df36c6",
+      "collector_sha256": "72c75551c89341797eb24ba615aa73534b601aa02003af0d69e69d1df1d8bbe5",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-395ae0dc2291",
+      "kind": "same_key_update",
+      "event_key": "江戸川北東自治会盆踊り||東小岩天祖神社",
+      "site_sha256": "019577e86af954433912fbc4246c0a7eae355fdcc44a9a2abfbf1aa163c23b1d",
+      "collector_sha256": "ffa459c19063ded26cfead98f92ecb384e5d89960d21b2bcc82720b7c1a92999",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-406e8a7b73ef",
+      "kind": "same_key_update",
+      "event_key": "江東区民まつり 亀戸地区夏まつり大会||亀戸中央公園",
+      "site_sha256": "69be9a41fbd3d37ad3c8c6f36dd4343bd6638d5ec79161286f0b8b6faad37b06",
+      "collector_sha256": "552eb8c4308b99ba0cb1ce1c815b6b24d078825a5b34de8bfaf5935d2e2bf6b7",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-512814ff12a2",
+      "kind": "same_key_update",
+      "event_key": "河原田町会盆踊り||南小岩第二小学校",
+      "site_sha256": "13154aaa54b92e19445bd96e2f4dd7d1b4eb344438d685b8f65da9ab6148d127",
+      "collector_sha256": "2b89f7566213ac038a8e18d482b973d3df51e8cdf4f23d8e4bdb67abace90f82",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-e863d46c03ae",
+      "kind": "same_key_update",
+      "event_key": "片山自治会盆踊り||片山公園",
+      "site_sha256": "eba68e34776a348105e6ff3546ed0169c49e952932787ab0fcc7169955733295",
+      "collector_sha256": "ec63007d45df79d01f8ea6cc46e6d2ac38739dfea9e0429e624a3df4f9f9c51a",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-bef07c609f68",
+      "kind": "same_key_update",
+      "event_key": "猿江一丁目町会 納涼まつり||猿江一丁目公園",
+      "site_sha256": "b83acf37e8b956e5ccd2700cfdd4f7deb9494c9098bd456ede6cdf1dc77b8ca5",
+      "collector_sha256": "86024dac7173edaa0dd9ffd1b7a9fb4633479ce46700590ae410507b72e71df8",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-9881e0d5b737",
+      "kind": "same_key_update",
+      "event_key": "篠崎七丁目町会盆踊り||篠崎第四小学校",
+      "site_sha256": "5911e6dd18e806e049d7a363ac1a23fc98da8925b599f8be0afe7133a339837a",
+      "collector_sha256": "3327566701f26dd378ad4151b66d066148e25ac7951a8f8b9f265702a1996911",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-7b08572eacb2",
+      "kind": "same_key_update",
+      "event_key": "綾瀬三丁目自治会 納涼盆踊り大会||東綾瀬公園",
+      "site_sha256": "490a319424822f9aa3b77173e63035045976f9c82f4c580026de014cd070f005",
+      "collector_sha256": "08bf5a598bf884611312b882561798343cf222ba954cbe2c8db367edd3bd014c",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-3d07ce60fe1b",
+      "kind": "same_key_update",
+      "event_key": "緑町会 夏祭り盆踊り大会||大泉公園",
+      "site_sha256": "b0f46f4d8b631568c5ff3721489e7ba74613f91808ef010dfea6ee5d6623f62d",
+      "collector_sha256": "f1c0f71e88059423b252a840ff7576fa9e296f350ad0a18e00162e856028aa9a",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-be834ca540c8",
+      "kind": "same_key_update",
+      "event_key": "自治会コミニティー5秋まつり||葛西東公園",
+      "site_sha256": "a03a57de27659b9b9352e5110f8b36bd53042d715d019c6ad17709e7bcf4ed78",
+      "collector_sha256": "96133afc3dda87d0c7951a62c6a2faebe750bf694acd33d822fdddafc8411030",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-f2ffb901baa0",
+      "kind": "same_key_update",
+      "event_key": "興宮自治会盆踊り||興宮神社",
+      "site_sha256": "e99d96e739e1b3efdbaec60cca8415b10dbe1edd2d9994a422dfa5a20c2516af",
+      "collector_sha256": "625179302658f4d3c36d16c48721682b932ecd3c016e32ffb309d5caaeb1bc3c",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-987f09748d4b",
+      "kind": "same_key_update",
+      "event_key": "花園町会納涼踊り大会||花園小学校",
+      "site_sha256": "c041d4ec261bf4c1958708e459d37184add41c393bff77594a7f2c4c581d7a5e",
+      "collector_sha256": "42155b19c2a23ab7033f363eeb291f5b29a0a9da05fa0935f2fed92fd3c0250b",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-aef929c4f68f",
+      "kind": "same_key_update",
+      "event_key": "西小岩六西自治会盆踊り||江戸川区立福祉作業所",
+      "site_sha256": "58f687cf1a1d1139269985ab646c3cf89786cc93733724ae36dd7b561101a719",
+      "collector_sha256": "57a051b346849dc5441e2f5c9125988ad3437966195725a7c46e2beaef4a2875",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-715a756348ea",
+      "kind": "same_key_update",
+      "event_key": "諏訪神社盆踊り||諏訪神社",
+      "site_sha256": "4bfc9adbce5e27b7ad6c75d36e62140bc408b0637d1bd87a331a5841f8111cfb",
+      "collector_sha256": "ad977402a47518dffdb3b159f69031b3827689de24db90219ab1db9289684be8",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-526e3c78794c",
+      "kind": "same_key_update",
+      "event_key": "谷河内南町会盆踊り大会||谷河内みなみ公園",
+      "site_sha256": "9dce2c892cc3970a9a1eb72452262f77f9796b3d689d00e76f8cdeaa08767627",
+      "collector_sha256": "7d36ea303ebaafda56a341a2b168dec2184c79295c2e80ca83c609b400680de0",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-afab541061e5",
+      "kind": "same_key_update",
+      "event_key": "踊ろう！in荒木町の秋||荒木公園",
+      "site_sha256": "55df2854f0de09308a5e6fca839cfbb09dc2c575b8a39cdf22a6b15e795c089a",
+      "collector_sha256": "999f41c11096b6b72c94f3db76c86841a7caa1ffc30d49809b3864fb4dd16936",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-update-20260816-2a819a428e2b",
+      "kind": "same_key_update",
+      "event_key": "都営船堀団地自治会納涼祭||都営船堀団地内広場",
+      "site_sha256": "22d39e39c2eebf99660a4be284e24797b225ca5bf820aca3e6199454cf049f09",
+      "collector_sha256": "0a2c5ebe1db04c4478b735fc7933e9f008b9491e19253a2561523b7cc08804eb",
+      "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
     }
   ]
 }

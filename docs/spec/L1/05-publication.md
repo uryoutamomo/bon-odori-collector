@@ -8,7 +8,6 @@ owns:
   - public_export_support/**
   - guard_site_public_event_additions.py
   - venues/export_public_venues.py
-  - scripts/export_detail_cleanup_projection.py
 depends_on:
   - L1-master
 invariants:
@@ -26,7 +25,6 @@ verified_by:
   - tests/test_public_event_site_addition_tools.py
   - tests/test_classify_public_events_diff.py
   - tests/test_e0b_bridge.py
-  - tests/test_verify_detail_cleanup_repair.py
   - tests/test_x_song_materialization_lifecycle.py
 updated_for: 1ca79f4
 ---
@@ -74,9 +72,6 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 公開サイトへの実際の反映は、このリポジトリではなく `bon-odori-site` 側の `Sync public data` workflow が行う。
 **この工程の責任は「正しいJSONを作り、危ないときに止めること」までで、デプロイそのものは含まない。**
 
-一回限りの14件detail修復では、`scripts/export_detail_cleanup_projection.py` が同じMaster RDB snapshotを
-固定した `target-year` と `today` で公開射影し、イベントJSONと occurrence へのsource mapを出す。修復前後で
-source mapが完全一致し、対象14件の `detail` と、そこから再計算される `source_urls` の表現だけが変わることを検証できない限り公開しない。`source_urls` は空URLの集計表示が増減してよいが、非空URLの集合は完全一致しなければならない。
 
 ## 不変条件
 
