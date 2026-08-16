@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T16:38:48Z",
-  "generated_for_commit": "9da046c",
+  "generated_at": "2026-08-16T16:43:15Z",
+  "generated_for_commit": "01db7c0",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -64,7 +64,7 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 1
       },
       "version": "1.6",
@@ -326,10 +326,7 @@
         "search_rare_signal_backcheck_sources.py",
         "stage_rare_signal_backcheck_reviews.py"
       ],
-      "staleness": {
-        "commits_since": 3,
-        "files_changed_since": 2
-      },
+      "staleness": null,
       "version": "1.9",
       "revision_count": 10,
       "history": [
@@ -461,7 +458,6 @@
         "rdb_builders/export_rdb_review_report.py",
         "report_apply/__init__.py",
         "report_apply/apply_change_requests.py",
-        "report_apply/apply_detail_cleanup_repair.py",
         "report_apply/apply_firsthand_field_report.py",
         "report_apply/apply_official_notice_report.py",
         "report_apply/event_report_helpers.py",
@@ -478,11 +474,16 @@
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 2
+        "files_changed_since": 1
       },
-      "version": "1.11",
-      "revision_count": 12,
+      "version": "1.12",
+      "revision_count": 13,
       "history": [
+        {
+          "commit": "01db7c0",
+          "date": "2026-08-17",
+          "subject": "Finalize detail cleanup repair"
+        },
         {
           "commit": "9bd761e",
           "date": "2026-08-16",
@@ -537,11 +538,6 @@
           "commit": "bf4f70d",
           "date": "2026-08-13",
           "subject": "Test five previously unguarded data invariants (#196)"
-        },
-        {
-          "commit": "1d2d00d",
-          "date": "2026-08-13",
-          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
       ]
     },
@@ -601,9 +597,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.8",
-      "revision_count": 9,
+      "version": "1.9",
+      "revision_count": 10,
       "history": [
+        {
+          "commit": "01db7c0",
+          "date": "2026-08-17",
+          "subject": "Finalize detail cleanup repair"
+        },
         {
           "commit": "1bd1ad3",
           "date": "2026-08-17",
@@ -1183,10 +1184,7 @@
       "owned_files": [
         "master_rdb/master_db.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
-      },
+      "staleness": null,
       "version": "1.2",
       "revision_count": 3,
       "history": [
@@ -1236,7 +1234,7 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 3
       },
       "version": "1.1",
@@ -2298,7 +2296,6 @@
     "rdb_builders/export_rdb_review_report.py": "L1-master",
     "report_apply/__init__.py": "L1-master",
     "report_apply/apply_change_requests.py": "L1-master",
-    "report_apply/apply_detail_cleanup_repair.py": "L1-master",
     "report_apply/apply_firsthand_field_report.py": "L1-master",
     "report_apply/apply_official_notice_report.py": "L1-master",
     "report_apply/event_report_helpers.py": "L1-master",
@@ -2465,9 +2462,9 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 349,
-    "owned": 257,
-    "unowned": 92,
+    "tracked_source_files": 346,
+    "owned": 256,
+    "unowned": 90,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
