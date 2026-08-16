@@ -26,6 +26,10 @@ owns:
   - apply_song_publication_review_decisions.py
   - apply_weekly_song_final_corrections.py
   - apply_weekly_song_review_decisions.py
+  - build_x_song_resolution_packets.py
+  - apply_x_song_resolution_results.py
+  - build_x_occurrence_resolution_packets.py
+  - apply_x_occurrence_resolution_results.py
   - scripts/build_song_candidate_finite_payload.py
   - scripts/run_song_candidate_decision_write.py
   - scripts/manual/render_song_calibration_report.py
@@ -38,13 +42,19 @@ invariants:
   - INV-SNG-001
   - INV-SNG-002
   - INV-SNG-003
+  - INV-SNG-004
+  - INV-SNG-005
+  - INV-SNG-006
 verified_by:
   - tests/test_bon_odori_songs.py
   - tests/test_song_catalog.py
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
   - tests/test_x_post_extraction_songs.py
-updated_for: f00d58e
+  - tests/test_x_song_resolution_contract.py
+  - tests/test_x_occurrence_resolution_contract.py
+  - tests/test_x_song_materialization_lifecycle.py
+updated_for: 87489f5
 ---
 
 # 曲目サブシステム
@@ -147,6 +157,46 @@ updated_for: f00d58e
   `tests/test_song_catalog.py::TestSongCatalog::test_unrecognized_status_is_unknown_not_verified`、
   `tests/test_song_catalog.py::TestSongCatalog::test_ambiguous_alias_is_not_silently_resolved`
 
+### INV-SNG-004 検索missだけでは新曲を作らない
+
+- **内容**: X曲claimのretrieval判定は `match_song` / `candidate_missing` / `unresolved` だけを許す。
+  `candidate_missing` がactive台帳へ入った観測だけが、全曲catalogを凍結したnovelty判定へ進み、そこで初めて
+  `new_song` を選べる。曲と開催回の判定は別packet・別台帳にする。
+- **なぜ**: top 20検索は候補生成器であり、曲が存在しないことの証明ではない。検索漏れを新曲扱いすると、
+  alias違いの同じ曲がactiveで重複し、開催回曲目も分裂する。
+- **破れたときの症状**: マスタに既にある曲が別song IDで増え、同じ曲が公開欄へ複数表示される。
+- **守っているコード**: `review_inbox_adapters/x_song_resolution_contract.py`
+- **守っているテスト**: `tests/test_x_song_resolution_contract.py::test_retrieval_packet_freezes_full_candidate_rows_and_forbids_new_song`、
+  `tests/test_x_song_resolution_contract.py::test_candidate_missing_must_be_recorded_before_novelty_packet`、
+  `tests/test_x_song_resolution_contract.py::test_current_snapshot_decision_is_not_packetized_again`
+
+### INV-SNG-005 X曲factは二つの同定と有効な根拠が揃ったときだけ作る
+
+- **内容**: 行事名が本文と一致する `announced` / `observed` のcurrent observation SHAと、曲・開催回のactive decision、
+  選択した曲・開催回の凍結行が現在値と一致したときだけmaterializeする。無関係な別entity追加では再判断しない。対応は
+  `announced → setlist/announced`、`observed → result/observed` に固定する。retractはappend-onlyで、
+  最後のX根拠が消えた曲のcreate/promotionを撤回順に依存せずCAS cleanupする。
+- **なぜ**: 回答経路やイベント名だけから意味を推測すると、願望曲・別年度開催・訂正済み投稿が公開factになる。
+- **破れたときの症状**: 「踊ってほしい」が曲目になる、去年の曲が今年へ付く、全根拠撤回後も曲が公開に残る。
+- **守っているコード**: `report_apply/materialize_x_song_resolutions.py`、
+  `report_apply/retract_x_song_materializations.py`
+- **守っているテスト**: `tests/test_x_song_materialization_lifecycle.py`、
+  `tests/test_x_occurrence_resolution_contract.py`
+
+### INV-SNG-006 未解決を時刻だけで繰り返さない
+
+- **内容**: 同じpacket IDにdecisionがあれば再提示しない。未解決は曲・開催回・観測・E0 revision/evidenceの
+  いずれかが変わり、新しいpacket IDになった場合だけ再eligibleにする。解決済みidentityは選択行が変わらない限り
+  無関係なentity追加で開き直さない。30日後など固定時刻で同じ入力を再試行しない。
+- **なぜ**: 多くの未解決は処理が遅いのではなく、開催回やaliasがまだ存在しない依存待ちである。
+  同じ候補を定期的に読ませても判断負荷だけが増える。
+- **破れたときの症状**: `unresolved` / `dependency_pending` が毎日同じ内容で再登場し、保留キューが永久に回り続ける。
+- **守っているコード**: `review_inbox_adapters/x_song_resolution_contract.py`、
+  `review_inbox_adapters/x_occurrence_resolution_contract.py`
+- **守っているテスト**: `tests/test_x_song_resolution_contract.py::test_current_snapshot_decision_is_not_packetized_again`、
+  `tests/test_x_occurrence_resolution_contract.py::test_unresolved_occurrence_waits_for_snapshot_change`、
+  `tests/test_x_occurrence_resolution_contract.py::test_event_dependency_is_mechanical_and_pending_until_event_decision`
+
 ## 主要な流れ
 
 最初に、なぜこれだけドメインで切ってあるかを書いておく。曲目は収集から公開までの全工程を縦に貫いており、
@@ -190,6 +240,10 @@ E0 family keyを残す。URLが無い投稿や過去日のclaimも観測とし�
 `extract_song_candidates()` は**レビュー前提でもっと広く拾う**抽出である。混ぜて使ってはいけない。
 
 ### 2. どの曲かを決める（毎日）
+
+E0X-S v2由来の新経路は、通常の週次候補とは別に
+[E2-S v2契約](../../local-judgment-e2s-song-identity-v2.md)を使う。曲retrieval、全catalogでのnovelty、
+開催回同定を別sceneにし、判断writerは同定台帳まで、正本writerはmaterializer一箇所に分ける。
 
 `classify_candidate()` が、候補の文字列を4つの行き先へ振り分ける。
 先に手書きの対応表（`CANONICAL_MAP` / `NOISE_EXACT` / `AMBIGUOUS_TERMS`）を見て、

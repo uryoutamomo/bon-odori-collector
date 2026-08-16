@@ -12,7 +12,15 @@ CREATE INDEX idx_occurrence_songs_occurrence ON occurrence_songs(occurrence_id)
 
 CREATE INDEX idx_occurrences_year ON event_occurrences(event_year)
 
+CREATE INDEX idx_place_aliases_name ON place_aliases(normalized_alias)
+
+CREATE INDEX idx_place_nodes_name ON place_nodes(normalized_name)
+
+CREATE INDEX idx_place_nodes_parent ON place_nodes(parent_place_id)
+
 CREATE INDEX idx_predicted_occurrence_dates_target ON predicted_occurrence_dates(target_occurrence_id, predicted_year)
+
+CREATE INDEX idx_review_inbox_status ON review_inbox_items(status, kind, priority_score)
 
 CREATE INDEX idx_series_key ON event_series(series_key)
 
@@ -20,11 +28,20 @@ CREATE INDEX idx_songs_title ON songs(normalized_title)
 
 CREATE INDEX idx_venues_name ON venues(normalized_name)
 
-CREATE INDEX idx_place_nodes_parent ON place_nodes(parent_place_id)
+CREATE UNIQUE INDEX idx_x_occurrence_resolution_active
+ON x_occurrence_resolution_decisions(observation_id)
+WHERE status = 'active'
 
-CREATE INDEX idx_place_nodes_name ON place_nodes(normalized_name)
+CREATE UNIQUE INDEX idx_x_song_materialization_active
+ON x_song_materializations(observation_id)
+WHERE status = 'active'
 
-CREATE INDEX idx_place_aliases_name ON place_aliases(normalized_alias)
+CREATE UNIQUE INDEX idx_x_song_resolution_active
+ON x_song_resolution_decisions(observation_id, phase)
+WHERE status = 'active'
+
+CREATE INDEX idx_x_song_resolution_observation
+ON x_song_resolution_decisions(observation_id, status)
 
 CREATE TABLE event_investigation_tasks (
   task_id TEXT PRIMARY KEY,
@@ -95,6 +112,16 @@ CREATE TABLE event_series (
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL,
   FOREIGN KEY (usual_venue_id) REFERENCES venues(venue_id)
+)
+
+CREATE TABLE event_series_aliases (
+  series_id TEXT NOT NULL,
+  alias TEXT NOT NULL,
+  normalized_alias TEXT NOT NULL,
+  source TEXT NOT NULL,
+  confidence TEXT NOT NULL DEFAULT 'manual',
+  PRIMARY KEY (series_id, normalized_alias),
+  FOREIGN KEY (series_id) REFERENCES event_series(series_id)
 )
 
 CREATE TABLE evidence_items (
@@ -276,6 +303,34 @@ CREATE TABLE occurrence_songs (
   FOREIGN KEY (song_id) REFERENCES songs(song_id)
 )
 
+CREATE TABLE place_aliases (
+  place_id TEXT NOT NULL,
+  alias TEXT NOT NULL,
+  normalized_alias TEXT NOT NULL,
+  source TEXT NOT NULL,
+  confidence TEXT NOT NULL DEFAULT 'manual',
+  PRIMARY KEY (place_id, normalized_alias),
+  FOREIGN KEY (place_id) REFERENCES place_nodes(place_id)
+)
+
+CREATE TABLE place_nodes (
+  place_id TEXT PRIMARY KEY,
+  place_type TEXT NOT NULL CHECK(place_type IN ('prefecture', 'municipality', 'locality', 'site')),
+  canonical_name TEXT NOT NULL,
+  normalized_name TEXT NOT NULL,
+  parent_place_id TEXT,
+  latitude REAL,
+  longitude REAL,
+  memo TEXT,
+  source TEXT NOT NULL,
+  confidence TEXT NOT NULL DEFAULT 'official',
+  review_status TEXT NOT NULL DEFAULT 'active',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  UNIQUE(parent_place_id, normalized_name),
+  FOREIGN KEY (parent_place_id) REFERENCES place_nodes(place_id)
+)
+
 CREATE TABLE predicted_occurrence_dates (
   predicted_date_id TEXT PRIMARY KEY,
   historical_candidate_id TEXT NOT NULL,
@@ -300,6 +355,35 @@ CREATE TABLE predicted_occurrence_dates (
   FOREIGN KEY (historical_candidate_id) REFERENCES historical_promotion_candidates(candidate_id),
   FOREIGN KEY (target_series_id) REFERENCES event_series(series_id),
   FOREIGN KEY (target_occurrence_id) REFERENCES event_occurrences(occurrence_id)
+)
+
+CREATE TABLE review_inbox_items (
+  inbox_id TEXT PRIMARY KEY,
+  kind TEXT NOT NULL,
+  domain TEXT NOT NULL,
+  time_scope TEXT NOT NULL DEFAULT 'reference'
+    CHECK (time_scope IN ('future', 'historical', 'reference')),
+  priority_label TEXT,
+  priority_score REAL,
+  title TEXT NOT NULL,
+  event_name TEXT,
+  venue TEXT,
+  event_year INTEGER,
+  source_id TEXT NOT NULL,
+  source_key TEXT NOT NULL,
+  source_url TEXT,
+  recommended_action TEXT,
+  status TEXT NOT NULL DEFAULT 'pending',
+  decision TEXT,
+  decided_by TEXT,
+  decided_at TEXT,
+  closed_at TEXT,
+  decision_route TEXT,
+  source_payload_hash TEXT NOT NULL DEFAULT '',
+  last_seen_at TEXT NOT NULL,
+  payload_json TEXT NOT NULL DEFAULT '{}',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
 )
 
 CREATE TABLE schema_migrations (
@@ -343,34 +427,6 @@ CREATE TABLE venue_aliases (
   FOREIGN KEY (venue_id) REFERENCES venues(venue_id)
 )
 
-CREATE TABLE place_nodes (
-  place_id TEXT PRIMARY KEY,
-  place_type TEXT NOT NULL CHECK(place_type IN ('prefecture', 'municipality', 'locality', 'site')),
-  canonical_name TEXT NOT NULL,
-  normalized_name TEXT NOT NULL,
-  parent_place_id TEXT,
-  latitude REAL,
-  longitude REAL,
-  memo TEXT,
-  source TEXT NOT NULL,
-  confidence TEXT NOT NULL DEFAULT 'official',
-  review_status TEXT NOT NULL DEFAULT 'active',
-  created_at TEXT NOT NULL,
-  updated_at TEXT NOT NULL,
-  UNIQUE(parent_place_id, normalized_name),
-  FOREIGN KEY (parent_place_id) REFERENCES place_nodes(place_id)
-)
-
-CREATE TABLE place_aliases (
-  place_id TEXT NOT NULL,
-  alias TEXT NOT NULL,
-  normalized_alias TEXT NOT NULL,
-  source TEXT NOT NULL,
-  confidence TEXT NOT NULL DEFAULT 'manual',
-  PRIMARY KEY (place_id, normalized_alias),
-  FOREIGN KEY (place_id) REFERENCES place_nodes(place_id)
-)
-
 CREATE TABLE venues (
   venue_id TEXT PRIMARY KEY,
   origin TEXT NOT NULL DEFAULT 'curated',
@@ -403,6 +459,114 @@ CREATE TABLE write_batches (
   finished_at TEXT,
   status TEXT NOT NULL,
   summary_json TEXT NOT NULL DEFAULT '{}'
+)
+
+CREATE TABLE x_occurrence_resolution_decisions (
+  decision_id TEXT PRIMARY KEY,
+  observation_id TEXT NOT NULL,
+  observation_sha256 TEXT NOT NULL,
+  packet_id TEXT NOT NULL UNIQUE,
+  packet_sha256 TEXT NOT NULL,
+  resolution_source TEXT NOT NULL CHECK(resolution_source IN ('report_dependency', 'direct_candidates')),
+  action TEXT NOT NULL CHECK(action IN ('match_occurrence', 'dependency_pending', 'unresolved')),
+  selected_occurrence_id TEXT,
+  event_dependency_key TEXT,
+  dependency_decision_id TEXT,
+  candidate_rows_json TEXT NOT NULL,
+  candidate_set_sha256 TEXT NOT NULL,
+  occurrence_snapshot_json TEXT NOT NULL,
+  occurrence_snapshot_sha256 TEXT NOT NULL,
+  reason_code TEXT NOT NULL,
+  reason_detail TEXT,
+  actor_id TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  prompt_sha256 TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active', 'superseded', 'retracted')),
+  supersedes_decision_id TEXT,
+  decided_at TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (selected_occurrence_id) REFERENCES event_occurrences(occurrence_id),
+  FOREIGN KEY (supersedes_decision_id) REFERENCES x_occurrence_resolution_decisions(decision_id),
+  CHECK ((action = 'match_occurrence') = (selected_occurrence_id IS NOT NULL))
+)
+
+CREATE TABLE x_song_materializations (
+  materialization_id TEXT PRIMARY KEY,
+  observation_id TEXT NOT NULL,
+  observation_sha256 TEXT NOT NULL,
+  song_decision_id TEXT NOT NULL,
+  occurrence_decision_id TEXT NOT NULL,
+  song_id TEXT NOT NULL,
+  occurrence_id TEXT NOT NULL,
+  occurrence_song_id TEXT NOT NULL,
+  evidence_id TEXT NOT NULL,
+  claim_type TEXT NOT NULL CHECK(claim_type IN ('announced', 'observed')),
+  role TEXT NOT NULL CHECK(role IN ('setlist', 'result')),
+  evidence_status TEXT NOT NULL CHECK(evidence_status IN ('announced', 'observed')),
+  song_change_kind TEXT NOT NULL CHECK(song_change_kind IN ('none', 'created', 'promoted_candidate')),
+  song_status_before TEXT,
+  song_updated_at_after TEXT,
+  created_occurrence_song INTEGER NOT NULL CHECK(created_occurrence_song IN (0, 1)),
+  status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active', 'retracted')),
+  materialized_at TEXT NOT NULL,
+  retracted_at TEXT,
+  FOREIGN KEY (song_decision_id) REFERENCES x_song_resolution_decisions(decision_id),
+  FOREIGN KEY (occurrence_decision_id) REFERENCES x_occurrence_resolution_decisions(decision_id),
+  FOREIGN KEY (song_id) REFERENCES songs(song_id),
+  FOREIGN KEY (occurrence_id) REFERENCES event_occurrences(occurrence_id),
+  FOREIGN KEY (occurrence_song_id) REFERENCES occurrence_songs(occurrence_song_id),
+  FOREIGN KEY (evidence_id) REFERENCES evidence_items(evidence_id),
+  UNIQUE(observation_id, observation_sha256)
+)
+
+CREATE TABLE x_song_resolution_decisions (
+  decision_id TEXT PRIMARY KEY,
+  observation_id TEXT NOT NULL,
+  observation_sha256 TEXT NOT NULL,
+  packet_id TEXT NOT NULL UNIQUE,
+  packet_sha256 TEXT NOT NULL,
+  phase TEXT NOT NULL CHECK(phase IN ('retrieval', 'novelty')),
+  action TEXT NOT NULL CHECK(action IN ('match_song', 'candidate_missing', 'new_song', 'unresolved')),
+  selected_song_id TEXT,
+  proposed_canonical_title TEXT,
+  depends_on_decision_id TEXT,
+  candidate_rows_json TEXT NOT NULL,
+  candidate_set_sha256 TEXT NOT NULL,
+  catalog_snapshot_json TEXT NOT NULL,
+  catalog_snapshot_sha256 TEXT NOT NULL,
+  reason_code TEXT NOT NULL,
+  reason_detail TEXT,
+  actor_id TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  prompt_sha256 TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active', 'superseded', 'retracted')),
+  supersedes_decision_id TEXT,
+  decided_at TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (selected_song_id) REFERENCES songs(song_id),
+  FOREIGN KEY (depends_on_decision_id) REFERENCES x_song_resolution_decisions(decision_id),
+  FOREIGN KEY (supersedes_decision_id) REFERENCES x_song_resolution_decisions(decision_id),
+  CHECK (
+    (phase = 'retrieval' AND action IN ('match_song', 'candidate_missing', 'unresolved'))
+    OR (phase = 'novelty' AND action IN ('match_song', 'new_song', 'unresolved'))
+  ),
+  CHECK ((action = 'match_song') = (selected_song_id IS NOT NULL)),
+  CHECK ((action = 'new_song') = (proposed_canonical_title IS NOT NULL)),
+  CHECK ((phase = 'novelty') = (depends_on_decision_id IS NOT NULL))
+)
+
+CREATE TABLE x_song_retractions (
+  retraction_id TEXT PRIMARY KEY,
+  materialization_id TEXT NOT NULL UNIQUE,
+  observation_id TEXT NOT NULL,
+  evidence_link_action TEXT NOT NULL,
+  occurrence_song_action TEXT NOT NULL,
+  song_action TEXT NOT NULL,
+  reason_code TEXT NOT NULL,
+  reason_detail TEXT,
+  actor_id TEXT NOT NULL,
+  retracted_at TEXT NOT NULL,
+  FOREIGN KEY (materialization_id) REFERENCES x_song_materializations(materialization_id)
 )
 
 CREATE TRIGGER validate_event_state_axes_insert

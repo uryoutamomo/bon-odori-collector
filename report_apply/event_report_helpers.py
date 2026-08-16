@@ -581,3 +581,124 @@ def upsert_occurrence_song(
         (occurrence_song_id, evidence_id, 0.7 if uncertain else 0.95, evidence_note),
     )
     return {"song_id": song_id, "occurrence_song_id": occurrence_song_id}
+
+
+def link_resolved_occurrence_song(
+    conn,
+    occurrence_id,
+    song_id,
+    song_title,
+    evidence_id,
+    *,
+    role,
+    evidence_status,
+    evidence_note,
+    now=None,
+):
+    """Attach an already-resolved X claim without creating or rematching a song.
+
+    An existing fact may be shared, but its identity and provenance are never
+    overwritten. A collision therefore fails closed instead of borrowing the
+    destructive ON CONFLICT behavior of the older report helper.
+    """
+    if (role, evidence_status) not in {
+        ("setlist", "announced"),
+        ("result", "observed"),
+    }:
+        raise ValueError("invalid X claim role/evidence_status mapping")
+    now = now or now_utc()
+    normalized = normalize_text(song_title)
+    if not normalized:
+        raise ValueError("song title is required")
+    song = _rows(
+        conn,
+        "SELECT canonical_title, normalized_title, status FROM songs WHERE song_id = ?",
+        (song_id,),
+    )
+    if not song:
+        raise ValueError("resolved song does not exist")
+    if song[0]["status"] not in {"active", "有効"}:
+        raise ValueError("resolved song is not active")
+    if song[0]["normalized_title"] != normalized:
+        raise ValueError("resolved song title does not match the selected song")
+
+    existing = _rows(
+        conn,
+        """
+        SELECT occurrence_song_id, origin, song_id, song_title_raw, evidence_status
+        FROM occurrence_songs
+        WHERE occurrence_id = ? AND normalized_title = ? AND role = ?
+        """,
+        (occurrence_id, normalized, role),
+    )
+    created = not existing
+    if existing:
+        row = existing[0]
+        if (
+            row["song_id"] is not None
+            and row["song_id"] != song_id
+            or normalize_text(row["song_title_raw"]) != normalized
+            or row["evidence_status"] != evidence_status
+        ):
+            raise ValueError("existing occurrence song conflicts with resolved identity")
+        occurrence_song_id = row["occurrence_song_id"]
+        if row["song_id"] is None:
+            # Older writers can leave an occurrence fact unlinked to the song
+            # master.  The unique fact identity is already the same, so only
+            # fill that missing foreign key.  Keep every provenance/display
+            # field untouched; a concurrent linker makes this update a no-op
+            # rather than overwriting a different resolved song.
+            cursor = conn.execute(
+                """
+                UPDATE occurrence_songs
+                SET song_id = ?
+                WHERE occurrence_song_id = ? AND song_id IS NULL
+                """,
+                (song_id, occurrence_song_id),
+            )
+            if cursor.rowcount != 1:
+                current = _rows(
+                    conn,
+                    "SELECT song_id FROM occurrence_songs WHERE occurrence_song_id = ?",
+                    (occurrence_song_id,),
+                )
+                if not current or current[0]["song_id"] != song_id:
+                    raise ValueError("existing occurrence song conflicts with resolved identity")
+    else:
+        occurrence_song_id = stable_id("osong", occurrence_id, normalized, role)
+        conn.execute(
+            """
+            INSERT INTO occurrence_songs (
+              occurrence_song_id, origin, occurrence_id, song_id, song_title_raw,
+              normalized_title, role, evidence_status, probability, confidence,
+              source_count, evidence_count, inherited_from_year,
+              first_observed_at, last_observed_at, notes, created_at, updated_at
+            ) VALUES (?, 'observed_x_post', ?, ?, ?, ?, ?, ?, NULL, 'high',
+                      1, 1, NULL, ?, ?, ?, ?, ?)
+            """,
+            (
+                occurrence_song_id,
+                occurrence_id,
+                song_id,
+                song_title,
+                normalized,
+                role,
+                evidence_status,
+                now,
+                now,
+                json_text({"source_kind": "x_song_claim", "evidence_id": evidence_id}),
+                now,
+                now,
+            ),
+        )
+    conn.execute(
+        """
+        INSERT INTO occurrence_song_evidence_links (
+          occurrence_song_id, evidence_id, link_status, confidence, notes
+        ) VALUES (?, ?, 'accepted', 0.95, ?)
+        ON CONFLICT(occurrence_song_id, evidence_id) DO UPDATE SET
+          link_status='accepted', confidence=excluded.confidence, notes=excluded.notes
+        """,
+        (occurrence_song_id, evidence_id, evidence_note),
+    )
+    return {"occurrence_song_id": occurrence_song_id, "created": created}

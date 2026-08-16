@@ -8,6 +8,8 @@ from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_model.x_song_identity_migration import DDL as X_SONG_IDENTITY_DDL
+
 
 DATA = Path("data")
 MASTER_DB = DATA / "bon_odori_master.sqlite"
@@ -471,7 +473,7 @@ CREATE INDEX idx_event_investigation_tasks_priority ON event_investigation_tasks
 CREATE INDEX idx_historical_promotion_candidates_target ON historical_promotion_candidates(target_occurrence_id);
 CREATE INDEX idx_predicted_occurrence_dates_target ON predicted_occurrence_dates(target_occurrence_id, predicted_year);
 CREATE INDEX idx_review_inbox_status ON review_inbox_items(status, kind, priority_score);
-"""
+""" + X_SONG_IDENTITY_DDL
 
 
 def now_utc():
