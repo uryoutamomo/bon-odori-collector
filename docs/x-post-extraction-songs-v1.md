@@ -1,310 +1,234 @@
-# E0X-S: X投稿から曲名と界隈語を取り出す口（意味判定層の退場・第0段の続き）v1.1
+# E0X-S: X投稿の曲claim観測台帳 v2.0
 
-作成: 2026-08-16 / こと（Claude Code）
-v1.1（2026-08-16）＝おとの実装前レビューで出た5件の穴を埋めた。
-**界隈語の冪等性（§7）／untrusted出力の型契約（§6）／5点の `events[].songs` と `observations` の併存（§6）／
-レポート件数の定義（§7）／URL欠損の扱い（§6）。** いずれも v1.0 では未定義または誤りだった。
-上位＝`docs/x-post-extraction-e0x-v1.md`（E0X v1.4、開催情報の経路）。**この文書はその同じ回答から、
-5点以外に含まれている材料＝曲名と界隈語を取り出す口を足す。** パケット生成は一切変更しない。
+作成: 2026-08-16 / おと（Codex）
 
-## 0. コンセプト（設計判断に迷ったらここへ戻る）
+上位は `docs/x-post-extraction-e0x-v1.md`。この段はX投稿から本文由来の曲claimを写し、
+`data/x_song_observations.json` へ止める。曲マスタとの同一性、開催回との同一性、公開可否は決めない。
 
-内田さんの言葉＝「LLMの誤りは人間とほぼ同等。ただしLLMは全体像を見渡すことを見落としがち。
-だからLLMの一つ一つの業務はシンプルであるべきで、全体を見渡すのは別のシーンかつ別のモデルで行う」。
+## 0. 設計判断の基準
 
-**ここでLLMに任せるのは「本文に書いてある曲名・行事名・界隈語を書き写す」ことだけである。**
-その曲が曲マスタのどれか、その行事が既存の開催回のどれかという同一性は、一切聞かない。
-E2が同一性を1問1答に切り出して成功したのと同じ形を、曲でも取る。
+- LLMの一業務は単純にする。この段で聞くのは、本文にある曲名・関係する行事・claim種別・根拠引用の書き写しだけ。
+- 採点は抽出のついでであり、点数の不整合を理由に本文由来の曲claimを捨てない。
+- 回答JSON内の置き場所である `origin` を、告知・実測などの意味に使わない。
+- 公開可能な関係factは後段で作る。この段は `songs`、`song_aliases`、`event_occurrences`、
+  `occurrence_songs` を読まず、書かない。
 
-さらに内田さんの位置づけの訂正（2026-08-16）＝**「採点は『ついで』で、本体は抽出」**。
-E0Xはいま5点（開催情報）しか取り出しておらず、**4点の曲名を取り出す口が無い**。ここを塞ぐ。
+## 1. v1.1から直す問題
 
-## 1. 実測（この仕様の前提）
+v1.1は `events[].songs` を告知、`observations[].songs` を実測として扱う前提を後段へ渡していた。
+しかし `observations` には願望・思い出・一般的な言及も入るため、
+「来年はマツケンサンバをやってほしい」を実績曲として公開できてしまう。
 
-### 1.1 旧経路 `build_event_song_candidates.py` が今なにを作っているか
+また、同じ行事について実績曲と願望曲が一投稿に混在する。したがって `claim_type` は行事グループではなく
+曲ごとに持たせる。開催回は年ごとのentityなので、5点イベントが既に持つ日付・会場・E0レポート系譜も捨てない。
 
-日次 `collect.yml` から毎日動いていて、`data/event_song_candidates.json` に**1,317件**
-（公開済み656／要レビュー661）。要レビュー661件の内訳は 高1・中94・**低562**で、
-根拠の内訳は `song_suffix_near_context` 839件＝「近くに『音頭』などの接尾辞がある」という弱いものが大半である。
+## 2. 回答契約（採点基準 v3.3）
 
-**低562件からランダム25件を取り出して中身を読んだ結果（2026-08-16 こと）**、次のものが混ざっていた。
-
-- 曲名でないもの＝「人と地域がつながる季節」「久しぶりに会う踊り」「昼間から各チーム踊り」「昔ながらの踊り」
-- 切り出しを誤ったもの＝「お祓いから白浜音頭」（正しくは白浜音頭）、「山王音頭と千代田踊り」（2曲が繋がっている）
-- 紐付け先が一般名詞のもの＝event_name が「盆踊り大会」のまま6件
-- 紐付けが疑わしいもの＝「中野音頭」が築地本願寺、「赤坂冬おどり」が赤坂夏おどり、「小伝馬町音頭」が神田明神
-
-**25件のうち妥当と読めたのは半数程度である。** これは抽出器の欠陥ではなく設計どおりで、
-`build_event_song_candidates.py` は「粗く拾って人が捨てる」前提で作られている（L1-songs 仕様§1）。
-問題は**その人のレビューが2026-06-25から止まっている**ことで、粗いまま661件が溜まっている。
-INV-SNG-001 の抑制リスト（曲名でない文字列を名指しで消す）は、この停止の応急処置として生まれた。
-
-### 1.2 紐付けも正規表現と fuzzy に依存している
-
-`match_event()` は「イベント名が本文に含まれれば+6、会場名が含まれれば+5、areaが一致で+1、
-合計5以上で採用」というスコアで公開イベントへ寄せている。閾値も重みも根拠が書かれていない。
-上の「中野音頭→築地本願寺」はこの経路で生まれた形である。
-
-**つまり曲は、抽出も紐付けも意味判定層のままである。** ここが退場の対象になる。
-
-## 2. 目的
-
-**LLMが投稿を読むついでに曲名と界隈語を書き写し、正規表現による抽出と fuzzy による紐付けを置き換える。**
-
-E0Xの目的が「捨てられたものを救う」から「出口を広げる」へ置き直されたのと同じく、
-ここでの実質は**質の入れ替え**である。件数を増やすことではない。
-
-## 3. 範囲
-
-**v1で扱う**＝E0Xの回答に含まれる `observations`（行事ごとの曲）と `glossary`（界隈語）を検証し、
-観測台帳へ記録する。点数に関わらず受け取る（5点の投稿では `events[].songs` を優先する）。
-
-**v1で扱わない**（すべて次段）
-- 曲名と曲マスタ（`songs` / `song_aliases`）の同一性判定 → 第2段でE2と同じ1問1答にする
-- `event_name` と既存開催回の同一性判定 → 同上
-- `occurrence_songs` への書き込み
-- 用語集v2（Notion）への登録
-- 旧経路 `build_event_song_candidates.py` の停止 → §9 の条件を満たしてから
-
-**なぜ第1段を観測の記録だけにするか。** 入口から出口まで1本のPRで付け替えると、
-差し戻しのときにどこが原因か切り分けられない（E0で決めた進め方）。
-それに、同一性を足す前に**書き写しの精度そのもの**を実データで見ておきたい。
-
-## 4. 全体の流れ
-
-```
-既存のE0Xパケット（無変更）──[LLMが読む]──→ 回答JSON
-                                              ├→ 5点の events   → E0レポート（既存）
-                                              ├→ observations   → data/x_song_observations.json  ← 新
-                                              └→ glossary       → data/x_glossary_observations.json ← 新
-```
-
-`build_x_extraction_packets.py` は**触らない**。投稿本文の全文を渡す形は既にできており、
-何を書き写すかの指示は採点基準（`~/.agents/x-post-scoring/README_criteria_v2.md` v3.2）側にあるためである。
-
-## 5. LLMに聞くこと（2026-08-16 におとと合意済み。採点基準 v3.2）
-
-> 採点基準の正本＝`~/.agents/x-post-scoring/README_criteria_v2.md`（**v3.2**、SHA-256 `1f034c05…`、273行）。
-> v3.1 で `observations` / `glossary` を追加し、v3.2 で「本文にある形のまま書き写す」を明記した。
-
-回答へ次の2つが増える。**点数の付け方は変わらない。**
+4点など、開催情報レポートを作らない投稿は次の形を使う。
 
 ```json
-{"no": 12, "s": 4,
- "observations": [
-   {"event_name": "上野ゐの市盆踊り", "songs": ["やさしさに包まれたなら", "大江戸東京"]},
-   {"event_name": null, "songs": ["炭坑節"]}],
- "glossary": ["ゆる盆", "盆オドラー"]}
+{
+  "no": 12,
+  "s": 4,
+  "observations": [
+    {
+      "event_name": "上野ゐの市盆踊り",
+      "event_date_start": "2026-08-15",
+      "event_date_end": null,
+      "venue_name": "上野恩賜公園",
+      "ward": "台東区",
+      "event_quote": "上野ゐの市盆踊りで",
+      "song_claims": [
+        {
+          "song_name": "東京音頭",
+          "claim_type": "observed",
+          "evidence_quote": "東京音頭を踊った"
+        },
+        {
+          "song_name": "マツケンサンバ",
+          "claim_type": "mentioned",
+          "evidence_quote": "マツケンサンバもやってほしい"
+        }
+      ]
+    }
+  ],
+  "glossary": ["盆オドラー"]
+}
 ```
 
-- **`observations` は行事ごとに曲をまとめる。** これで多対多が表せる
-  （1投稿に「石徹白の盆踊り」「白鳥の徹夜おどり」が並ぶ形が実在する）
-- **どの行事の曲か本文から読めないときは `event_name: null`。** 無理に紐づけない
-- **既存開催回との照合はしない**（第2段の仕事）
-- 5点の投稿では `events[].songs` に入れる。`observations` は不要
-
-### ★ v3.2 で明記した補足
-
-**曲名・界隈語は「本文にある形のまま」書き写す。正式名への言い換えをしない。**
-§7の照合が本文に対して行われるためで、「ダンシングヒーロー」とある投稿を「ダンシング・ヒーロー」へ
-直されると照合で落ちる。正式名への解決は曲マスタを持つ第2段の仕事である。
-（照合側でも中黒・長音・全角半角の差は吸収するので、多少のゆれで落ちることはない。）
-
-## 6. 取り込みと検証（`apply_x_extraction_results.py` を拡張）— LLM出力はuntrusted
-
-契約v1.1の原則「凍結packet＋raw judgment → deterministic builderが照合」をここでも守る。
-照合先は**その投稿の本文**である。
-
-| 検査 | 内容 | 落ちたとき |
-|---|---|---|
-| 曲名の実在 | `song_name` が本文に部分文字列として現れる（正規化後） | `song_not_in_text` |
-| 界隈語の実在 | `term` が本文に部分文字列として現れる（正規化後） | `term_not_in_text` |
-| 形式 | `observations` が配列で、各要素が `songs` 配列を持つ | `malformed_observation` |
-| 空でないこと | `song_name` / `term` が空文字でない | `empty_song_name` / `empty_term` |
-
-### ★ 型契約（v1.1 で追加。おとの指摘）
-
-**LLM出力はuntrustedなので、素直に読むとクラッシュしうる。** 型が違うものは落として先へ進む。
-
-- `event_name` は**文字列または null**。それ以外はその観測を `malformed_observation` で落とす
-- `songs` / `glossary` は**配列**。配列でなければ `malformed_observation` / `malformed_glossary`
-- `songs` / `glossary` の各要素は**空でない文字列**。違えば `empty_song_name` / `malformed_term`
-
-**いずれも投稿単位で止めない。** `glossary` が壊れていても `observations` は処理し、採点も5点のレポート生成も続ける。
-
-### ★ 5点の `events[].songs` と `observations` は両方処理する（v1.1 で確定。おとの指摘）
-
-v3.1 で「5点は `events[].songs` を優先」と伝えたが、**優先の意味を書いていなかった**。
-片方を捨てると情報が落ちる——`events[].songs` は告知に載った曲、`observations` は
-それに紐づかない曲（`event_name: null` を含む）で、**どちらも材料である**。
-
-したがって**両方を観測として取り込み、`observation_id` が同じものは重複排除する**。
-`events[].songs` 由来の観測は、その `events[].event_name` を `event_name` に持つ。
-
-**観測には由来を記録する**（`origin`＝`"events"` か `"observations"`）。
-第2段で `occurrence_songs` の `evidence_status` を決めるとき、
-「告知に載っていた曲」と「踊った記録の曲」は別物として扱う必要があるためである。
-第1段では区別せず貯めるだけだが、後から区別できないと拾い直せない。
-
-### ★ URL が空でも観測は残す（v1.1 で確定。おとの指摘）
-
-パケットは `url` が空の投稿を許す。開催レポートは出典なしに正本factの材料を作らないため
-`missing_source_url` で落とすが（INV-XPE-004）、**観測は正本factではない**ので落とさない。
-`tweet_id` と本文全文があれば後から辿れる。**曲・界隈語に `missing_source_url` は適用しない。**
-
-**`event_name` は照合しない。** E0X §7 と同じ理由で、投稿が「今日の盆踊り楽しかった」としか
-書いていないときにLLMが補う名前は本文の部分文字列にならない。ここを厳しくすると全部落ちる。
-紐付けの正しさは、観測に本文全文とURLを残すことで人が後から追えるようにする。
-
-### 正規化（照合をどこまで緩めるか）
-
-既存の `normalized_text()`（空白・改行・URL除去）に加えて、**中黒（・）を除去し、
-長音（ー）を除去し、全角英数を半角へ寄せる**。理由は表記ゆれで落とさないためで、
-これ以上は緩めない（例えばひらがな・カタカナの相互変換はしない。「おどり」と「オドリ」は別の曲名でありうる）。
-
-### 採否は観測1件ごとに行う
-
-**ある曲名が検査に落ちても、同じ投稿の他の曲名と界隈語はそのまま記録する。**
-E0X §7 でイベント単位にしたのと同じ理由で、1件の書き写しミスで投稿全体の材料を失ってはいけない。
-
-### state と outcome は変えない
-
-`data/x_extraction_state.json` の `outcome` の語彙（`report` / `scored_only` / `issue`）は**触らない**。
-曲の観測はレポートではないので、4点の投稿は今までどおり `scored_only` である。
-観測を取ったかどうかは取り込みレポートの件数で分かる。
-
-**INV-XPE-003（5点未満からレポートを作らない）はそのまま守られる。** 観測台帳はE0へ渡らない。
-
-## 7. 出力
-
-### `data/x_song_observations.json`
+5点は既存 `events[]` の各要素へ同じ `song_claims` を追加する。
 
 ```json
-{"generated_by": "apply_x_extraction_results.py", "updated_at": "...",
- "observations": [
-   {"observation_id": "<stable_id('xsong', tweet_id, 正規化event_name, 正規化song_name)>",
-    "tweet_id": "...", "url": "...", "posted_at": "...",
-    "account": "@...", "officiality": "...",
-    "event_name": "上野ゐの市盆踊り", "song_name": "やさしさに包まれたなら",
-    "origin": "observations", "batch_id": "...", "score": 4,
-    "text": "<投稿本文の全文>", "first_seen_at": "..."}]}
+{
+  "event_name": "試験盆踊り",
+  "date_start": "2026-08-20",
+  "date_end": "2026-08-21",
+  "venue_name": "試験公園",
+  "ward": "足立区",
+  "quote": "8月20日・21日に試験公園で試験盆踊りを開催",
+  "song_claims": [
+    {
+      "song_name": "東京音頭",
+      "claim_type": "announced",
+      "evidence_quote": "曲目は東京音頭です"
+    }
+  ]
+}
 ```
 
-`origin` は `"events"`（5点の開催情報に添えられた曲＝告知に載っていた曲）か
-`"observations"`（それ以外＝記録・思い出・話題の曲）。§6 のとおり第2段で使う。
+### claim_type
 
-`observation_id` が中身から決まるので、**同じ回答を2回取り込んでも増えない**。
-`event_name` が null のものは正規化空文字として id に入る（＝行事不明の同じ曲は1件に束ねられる）。
+| 値 | 意味 |
+|---|---|
+| `announced` | その開催回で流す予定・選曲済みだと本文が述べる |
+| `observed` | その開催回で実際に流れた・踊ったと本文が述べる |
+| `mentioned` | 願望・一般論・開催回不明の思い出など、開催回の予定・実績ではない |
+| `unknown` | 本文から区別できない |
 
-### `data/x_glossary_observations.json`
+迷ったら `unknown` にする。後段で公開候補になれるのは `announced` と `observed` だけである。
 
-界隈語は同じ語が毎日出るので、**語ごとに集約する**（1件1行にすると「櫓」だけで台帳が埋まる）。
+### 書き写しの約束
+
+- `song_name`、observations側の `event_name`、会場名、quoteは本文にある表記のまま。正式名へ直さない。
+- 5点events側の `event_name` だけは、従来E0契約どおり本文に固有名がなくても短い識別名を付けてよい。
+  この場合も `event_name_in_text=false` として区別され、E0系譜なしには開催回手がかりとして使わない。
+- `evidence_quote` は本文の連続した部分文字列で、必ず曲名を含む。
+- `event_quote` は任意だが、付ける場合は本文の連続した部分文字列である。
+- 行事が本文から分からなければ `event_name: null`。推測で補わない。
+- 4点の日時・会場は本文に明示され、書き写せる場合だけ付ける。投稿時刻から開催年を推測しない。
+- `glossary` は従来どおり本文表記を文字列で返す。
+
+## 3. 後方互換
+
+採点基準 v3.3 は `song_claims` を正規形とする。ただし取り込みは既存回答を失わない。
+
+- 旧 `songs: ["東京音頭"]` は受け入れ、`claim_type="unknown"`、quoteなしとして記録する。
+- claim_typeの欠落・不正値・型不正は `invalid_claim_type` issueを残し、`unknown` にする。
+- 曲名やquoteの型不正、本文照合失敗はその曲だけを落とし、兄弟曲・glossary・採点・E0レポートを続ける。
+- v1の既存観測はIDを変えず、欠落 `claim_type` を読み取り時に `unknown` と扱う。再判定はしない。
+
+## 4. 本文照合
+
+NFKC、空白・改行・URL・中黒・長音の除去後に照合する。ひらがなとカタカナは同一視しない。
+
+- `song_name` は本文に存在しなければ `song_not_in_text`。
+- `evidence_quote` は本文に存在しなければ `claim_quote_not_in_text`。
+- v2のquoteは正規化後に `song_name` を含まなければ `song_not_in_claim_quote`。
+- `event_quote` は本文に存在しなければ `event_quote_not_in_text` とし、開催回手がかりだけ無効化する。
+- 日付はISO日付かつpacketの `machine_extracted_dates` に存在すること、日付範囲が逆転しないことを検査する。
+- 会場とwardを付ける場合は本文に存在することを検査する。
+- `event_context_valid=true` には、本文内の行事名に加えて日付・会場・event quoteのいずれかの
+  検証済みanchorが必要である。空contextはvalidにしない。
+- observations側の `event_name` は本文に存在しない場合も曲claim自体は残すが、
+  `event_name_in_text=false` として後段の開催回候補生成には使わせない。
+
+## 5. E0レポート系譜
+
+5点イベントがE0検査を通り、実際にレポートが生成または再利用された場合だけ、曲観測へ次を残す。
+
+- `event_report_id`: レポートの `source.report_id`
+- `report_event_id`: レポート内イベント要素の安定ID
+- `event_dependency_key`: E0受信箱の revision family key
+
+E0レポート側のイベントにも `entry_id=report_event_id` を書く。受信箱アダプタは既存どおり `entry_id` を
+最優先キーに使うので、後段は `event_dependency_key` から同じイベント要素のE2判断・適用結果を追跡できる。
+ただしv1で既に生成済みのレポートに `entry_id` が無い場合は、E0が従来使っていた
+行事名・年・会場由来の `entry_*` を補う。新しい `xrevent_*` へ変えて既存revision familyを分裂させない。
+
+過去日、URL欠落、quote・日付・会場の検査失敗では曲claimは残すが、存在しないレポート系譜を付けない。
+曲観測を先に作って架空IDを付けないため、イベント検証結果を確定してから材料台帳を組み立てる。
+
+## 6. 出力契約
 
 ```json
-{"generated_by": "apply_x_extraction_results.py", "updated_at": "...",
- "terms": [
-   {"term": "ゆる盆",
-    "source_tweet_ids": ["...", "...", "..."],
-    "count": 3,
-    "first_seen_at": "...", "last_seen_at": "...",
-    "examples": [{"tweet_id": "...", "url": "...", "text": "..."}]}]}
+{
+  "schema_version": 2,
+  "generated_by": "apply_x_extraction_results.py",
+  "updated_at": "...",
+  "observations": [
+    {
+      "observation_schema_version": 2,
+      "observation_id": "xsong2_...",
+      "claim_family_id": "xsclaim_...",
+      "tweet_id": "...",
+      "url": "...",
+      "posted_at": "...",
+      "account": "@...",
+      "officiality": "...",
+      "event_name": "試験盆踊り",
+      "event_name_in_text": true,
+      "event_report_verified": true,
+      "song_name": "東京音頭",
+      "claim_type": "announced",
+      "evidence_quote": "曲目は東京音頭です",
+      "origin": "events",
+      "event_date_start": "2026-08-20",
+      "event_date_end": "2026-08-21",
+      "event_venue_name": "試験公園",
+      "event_ward": "足立区",
+      "event_context_valid": true,
+      "event_report_id": "x_event_...",
+      "report_event_id": "xrevent_...",
+      "event_dependency_key": "official_notice:x_event_...#xrevent_...",
+      "batch_id": "...",
+      "score": 5,
+      "text": "...",
+      "first_seen_at": "..."
+    }
+  ]
+}
 ```
 
-**★ `source_tweet_ids` を必ず全件持つ（v1.1 で修正。おとの指摘＝v1.0 は冪等でなかった）。**
-v1.0 は `examples` を5件で打ち切って `count` だけ増やす形にしていたが、これだと
-**6件目以降の投稿を既に数えたのか判別できず、同じ回答を2回取り込むと `count` が二重に増える**。
-INV-XPE-012（冪等）が界隈語で守れていなかった。
+`origin` は `events` / `observations` という系譜だけを表す。evidence_statusやroleへ変換しない。
 
-**`count` は `source_tweet_ids` の要素数と常に一致する**（独立に持つと必ずずれるので、
-実装では導出値として書き出す）。同じ投稿に同じ語が2回出ても1件である。
+`event_name_in_text` は行事名が本文にあったか、`event_report_verified` は実在するE0レポート系譜が付いたかを
+別々に表す。後段はこの2つを混同しない。
 
-`examples` は**最大5件**まで（人が中身を読むためのもので、台帳が膨らむのを防ぐ）。
-`source_tweet_ids` は全件持つが、1件あたり20バイト程度なので問題にならない。
+`claim_family_id` は投稿・行事文脈・曲名・根拠quoteから作る。`observation_id` はそこへclaim_typeを加える。
+同じ回答の再取り込みは同じIDになり、claim_typeだけが食い違う再回答は同じfamilyの競合として残る。
+同一familyに複数のclaim_typeがある場合、後段は自動公開せず `claim_type_conflict` にする。
 
-既存の用語集（`data/glossary_runtime.json`）と照合して既知語を捨てることは**しない**。
-同一性判定は第2段の仕事で、ここでは観測をそのまま残す。
+## 7. 既存15件
 
-### 取り込みレポート
+既存行は再採番・再判定しない。台帳読込時に次の既定を補う。
 
-`data/x_post_extraction_apply_report.json` に次を足す。**件数の定義を取り違えると
-流量の判断を誤る**ので、v1.1 で意味を確定した（おとの指摘。v1.0 は曖昧だった）。
+- `observation_schema_version=1`
+- `claim_type=unknown`
+- 新しいevent context／report lineageはnull
 
-- `song_observation_count` — **今回新しく台帳へ加わった**曲観測の数（既出の重複は数えない）
-- `glossary_term_count` — 今回受理した**異なり語数**（言及数ではない）
-- `song_issue_count` — 曲まわりの issue だけの数
-- `glossary_issue_count` — 界隈語まわりの issue だけの数（曲と混ぜない）
-- `song_observations_total` / `glossary_terms_total` — **台帳の累計**（曲は行数、界隈語は異なり語数）
-累計が増え続けて第2段の処理が追いつかなくなったら提案を止める、という判断材料にするためである
-（判断待ち561件の再演を避ける／合意事項2）。
+必要なら明示的な一回限りmigrationを用意し、件数と既存IDが不変であることをテストする。
 
-## 8. 不変条件（`docs/spec/` へ追加。同じPRで直すのが大原則）
+## 8. 旧経路の退場条件
 
-- **INV-XPE-010**: 曲名・界隈語は、投稿本文に現れる文字列だけを記録する（正規化後の部分文字列一致）
-- **INV-XPE-011**: 曲の観測は、曲マスタ（`songs`）とも既存開催回（`event_occurrences`）とも結びつけない。
-  観測台帳は `occurrence_songs` へ書かない
-- **INV-XPE-012**: 観測の記録は冪等である（同じ回答を2回取り込んでも件数が増えない）。
-  **曲の行数だけでなく、界隈語の `count` にも等しく適用する**（v1.1。`source_tweet_ids` で担保する）
-- **INV-XPE-013**: 1件の曲名が検査に落ちても、同じ投稿の他の曲名・界隈語は記録される。
-  **型が壊れた入力でも同様で、採点と5点のレポート生成は続行する**（v1.1）
+旧抽出器の新規候補生成停止と、旧レビュー／公開経路の停止は別gateにする。
 
-## 9. 旧経路との関係（退場の条件）
+1. 同じ投稿集合で曲名precision/recall、複数曲、表記ゆれ、一般語を層別比較する。
+2. 新経路で候補recall、開催回解決率、重複新曲率、保留期間、positive dry-run、retract試験を測る。
+3. 最初は日次shadowだけを動かし、RDBとstateは書かない。
 
-**この第1段では `build_event_song_candidates.py` を止めない。** 日次から外すのは、
-新経路が同等以上だと実データで確かめてからにする。判断材料は次の3つで、
-第2段の着手前に こと が集計して内田さんへ出す。
+## 9. negative acceptance conditions
 
-1. **同じ日のX投稿から、新旧それぞれ何件の曲名が取れたか**
-2. **その曲名のうち、曲名でないものが何件混ざっているか**（§1.1 と同じ読み方で標本25件）
-3. **行事への紐付けが何件付いたか、そのうち一般名詞（「盆踊り大会」等）でないものが何件か**
+既存25条件を維持し、v2では少なくとも次を追加する。
 
-**新経路が勝つと見込む理由**は、旧経路の誤りが「文字列の形だけで判断している」ことに由来するためである
-（「久しぶりに会う踊り」は形として曲名に見えるが、読めば曲名でないと分かる）。
-ただし**見込みであって実測ではない**ので、退場は測ってから決める。
-
-## 10. 受け入れ条件（negative test。各件「修正を外したら落ちる」ことを確認する）
-
-1. 本文にある曲名は `x_song_observations.json` に記録される
-2. 本文に無い曲名は記録されず `song_not_in_text` が記録される（**捏造を止めることの確認**）
-3. 1つの `observations` に2曲あり片方だけ本文に無いとき、**もう片方は記録される**（INV-XPE-013）
-4. `event_name: null` の観測が、行事なしとして記録される
-5. 同じ曲名でも `event_name` が異なれば別の観測になる（多対多が表せることの確認）
-6. 同じ回答を2回取り込んでも観測の件数が増えない（INV-XPE-012）
-7. 5点の投稿の `events[].songs` も観測として記録される
-8. 4点の投稿から観測が記録されても、E0レポートは作られない（INV-XPE-003 が壊れていないことの確認）
-9. 本文にある界隈語が `x_glossary_observations.json` に記録される
-10. 本文に無い界隈語は記録されず `term_not_in_text` が記録される
-11. 同じ界隈語が複数の投稿に出たとき、`count` が増えて `examples` は最大5件で止まる
-12. 中黒・長音・全角半角の違いは吸収され、照合で落ちない
-13. ひらがな・カタカナの違いは吸収されない（緩めすぎていないことの確認）
-14. `observations` が配列でない回答は `malformed_observation` を記録し、その投稿の他の処理（採点・5点のレポート）は続く
-15. 観測を記録しても `outcome` の語彙は変わらない（4点は `scored_only` のまま）
-16. 取り込みレポートに `song_observation_count` と累計件数が出る
-17. 曲の観測が `occurrence_songs` へ書かれない（INV-XPE-011。構造検査でよい）
-
-**v1.1 で追加（おとの指摘5件に対応）**
-
-18. **同じ界隈語を含む同じ回答を2回取り込んでも `count` が増えない**（INV-XPE-012。
-    `examples` が5件で埋まっている語でも増えないことを確かめる＝v1.0 が壊れていた条件そのもの）
-19. `count` が `source_tweet_ids` の要素数と一致する
-20. `event_name` が文字列でも null でもない回答は `malformed_observation` になり、
-    **同じ投稿の `glossary` と採点は処理される**
-21. `glossary` が配列でない回答は `malformed_glossary` になり、
-    **同じ投稿の `observations` と採点、5点のレポート生成は処理される**
-22. 5点の投稿で `events[].songs` と `observations` が両方来たとき、**両方が観測になる**。
-    同じ（tweet_id・event_name・song_name）の組は1件に排除される
-23. `events[].songs` 由来の観測は `origin` が `"events"`、それ以外は `"observations"`
-24. `url` が空の投稿からも観測は記録される（`missing_source_url` で落とさない）
-25. 取り込みレポートで `song_issue_count` と `glossary_issue_count` が分かれている
-
-## 11. 進め方
-
-1. **まずこの仕様を読んで、矛盾や穴があれば実装前に返してほしい**（E0とE0Xで、この形で合計5件の穴が実装前に潰れた）
-2. 問題なければ Draft PR まで。Ready化・merge は内田さんの承認を得てから こと が行う
-3. 実装時は `docs/x-post-extraction-songs-v1.md` として同梱する
-4. `docs/spec/` の更新を同じPRに含める（大原則）。
-   `python3 scripts/spec_index.py impact --files apply_x_extraction_results.py` で逆引きすると
-   L1-judgment（INV-XPE-*）が出る。曲に触るので **L1-songs にも「LLM由来の新しい入口がある」ことを書き足す**
+1. 同じ行事グループの実測曲と願望曲を別claimとして保持する。
+2. `origin` を入れ替えてもclaim_typeは変わらない。
+3. 欠落・不正claimはunknownになり、曲・兄弟材料を失わない。
+4. evidence_quoteが本文に無い、または曲名を含まないclaimだけを落とす。
+5. events由来の日時・会場・wardを同じイベント要素から保持する。
+6. observations由来へ別イベントのcontextを推測コピーしない。
+7. 実在するレポートだけがreport ID・entry ID・dependency keyを持つ。
+8. 過去日・URL欠落・不正イベントでも曲claimは残り、dangling dependencyは作られない。
+9. 同じ投稿・行事・曲でも別開催回文脈なら別観測になる。
+10. v2回答の再取り込みは冪等である。
+11. 旧文字列形式はunknownとして受理される。
+12. v1既存行のID・件数は不変で、claim_type欠落はunknownになる。
+13. 同一familyでclaim_typeが競合した場合、後段公開不可になる。
+14. 点数とeventsの形が不整合でも曲claimを救い、E0レポートだけ5点に限定する。
+15. `results` が配列でなくてもクラッシュしない。
+16. 取り込みレポートにclaim_type別の追加件数・累計を出す。
+17. claim追加後も既存E0のreport、bundling、state outcomeは変わらない。
+18. この段に `songs` / `event_occurrences` / `occurrence_songs` の読み書き口が無い。
 
 ---
 
-こと（Claude Code）
+おと（Codex）

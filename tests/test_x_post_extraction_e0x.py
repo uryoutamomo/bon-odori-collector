@@ -194,11 +194,14 @@ class XPostExtractionE0XTest(unittest.TestCase):
         from master_rdb.master_db import init_db
         from review_inbox_adapters.build_event_inbox_candidates import run as e0_run
         packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","account":"@city","account_name":"◯◯区役所",
-                 "officiality":"registered_official_social","text":"8月20日に試験公園で試験盆踊りを開催","machine_extracted_dates":["2099-08-20"]}]}
-        event={"event_name":"試験盆踊り","date_start":"2099-08-20","venue_name":"試験公園","ward":"足立区","quote":"8月20日に試験公園で試験盆踊りを開催"}
+                 "officiality":"registered_official_social","text":"8月20日に試験公園で試験盆踊りを開催。曲目は東京音頭です","machine_extracted_dates":["2099-08-20"]}]}
+        event={"event_name":"試験盆踊り","date_start":"2099-08-20","venue_name":"試験公園","ward":"足立区",
+               "quote":"8月20日に試験公園で試験盆踊りを開催",
+               "song_claims":[{"song_name":"東京音頭","claim_type":"announced","evidence_quote":"曲目は東京音頭です"}]}
         with tempfile.TemporaryDirectory() as temp:
-            root=Path(temp); reports=root/"x_post_reports"; state={"tweets":{}}
-            result=apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[event]}]},state,reports,today=date(2026,8,16))
+            root=Path(temp); reports=root/"x_post_reports"; state={"tweets":{}}; songs={"observations":[]}
+            result=apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[event]}]},state,reports,
+                         song_ledger=songs,today=date(2026,8,16))
             self.assertEqual(result["report_count"],1)
             db=root/"master.sqlite"; conn=init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); conn.commit(); conn.close()
             args=type("Args",(),{"report":[],"report_dir":[reports],"db":db,"out_db":root/"dry.sqlite","out_json":root/"e0.json",
@@ -206,6 +209,65 @@ class XPostExtractionE0XTest(unittest.TestCase):
             e0=e0_run(args)
             self.assertEqual(e0["summary"]["created"],1,f"E0が候補にできなかった: {e0['issues']}")
             dry=sqlite3.connect(root/"dry.sqlite")
-            row=dry.execute("SELECT contract_domain, contract_lane, status, source_url FROM review_inbox_items").fetchone()
+            row=dry.execute("SELECT contract_domain, contract_lane, status, source_url, revision_family_key FROM review_inbox_items").fetchone()
             dry.close()
-            self.assertEqual(row,("event","event_create","candidate","https://x/a"))
+            self.assertEqual(row[:4],("event","event_create","candidate","https://x/a"))
+            self.assertEqual(row[4],songs["observations"][0]["event_dependency_key"],
+                             "曲claimのdependencyはE0が実際に作るfamily keyと一致する")
+
+    def test_reused_legacy_report_keeps_its_existing_e0_family(self):
+        from event_model.local_judgment_migration import migrate_event_inbox_candidate, migrate_local_judgment_contract
+        from master_rdb.master_db import init_db
+        from review_inbox_adapters.build_event_inbox_candidates import (
+            EVENT_INBOX_CANDIDATE_CONFIRMATION,
+            run as e0_run,
+        )
+
+        text = "8月20日に試験公園で試験盆踊りを開催。曲目は東京音頭です"
+        event = {
+            "event_name": "試験盆踊り", "date_start": "2099-08-20", "venue_name": "試験公園",
+            "quote": "8月20日に試験公園で試験盆踊りを開催",
+            "song_claims": [{
+                "song_name": "東京音頭", "claim_type": "announced", "evidence_quote": "曲目は東京音頭です",
+            }],
+        }
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); reports = root / "reports"
+            first = {"no": 1, "tweet_id": "a", "url": "https://x/a", "text": text,
+                     "machine_extracted_dates": ["2099-08-20"]}
+            apply({"batch_id": "x", "packets": [first]},
+                  {"batch_id": "x", "results": [{"no": 1, "s": 5, "events": [event]}]},
+                  {"tweets": {}}, reports, today=date(2026, 8, 16))
+            report_path = next(reports.glob("*.json"))
+            legacy_report = json.loads(report_path.read_text(encoding="utf-8"))
+            legacy_report["events"][0].pop("entry_id")
+            report_path.write_text(json.dumps(legacy_report, ensure_ascii=False), encoding="utf-8")
+
+            db = root / "master.sqlite"
+            conn = init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn)
+            conn.commit(); conn.close()
+            args = type("Args", (), {
+                "report": [report_path], "report_dir": [], "db": db, "out_db": root / "unused.sqlite",
+                "out_json": root / "e0.json", "out_md": root / "e0.md", "max_candidates": 20,
+                "apply": True, "confirm": EVENT_INBOX_CANDIDATE_CONFIRMATION,
+                "no_auto_migrate": True, "include_expired": False,
+            })()
+            first_e0 = e0_run(args)
+            self.assertEqual(first_e0["summary"]["created"], 1)
+            conn = sqlite3.connect(db)
+            initial_family = conn.execute("SELECT revision_family_key FROM review_inbox_items").fetchone()[0]
+            conn.close()
+
+            second = {"no": 1, "tweet_id": "b", "url": "https://x/b", "text": text,
+                      "machine_extracted_dates": ["2099-08-20"]}
+            songs = {"observations": []}
+            apply({"batch_id": "y", "packets": [second]},
+                  {"batch_id": "y", "results": [{"no": 1, "s": 5, "events": [event]}]},
+                  {"tweets": {}}, reports, song_ledger=songs, today=date(2026, 8, 16))
+            second_e0 = e0_run(args)
+            self.assertEqual(second_e0["summary"]["created"], 0)
+            conn = sqlite3.connect(db)
+            families = conn.execute("SELECT revision_family_key FROM review_inbox_items").fetchall()
+            conn.close()
+            self.assertEqual(families, [(initial_family,)])
+            self.assertEqual(songs["observations"][0]["event_dependency_key"], initial_family)
