@@ -180,10 +180,12 @@ def main():
     parser.add_argument("--public-after-source-map", type=Path)
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
-    result = verify(**vars(args))
+    options = vars(args)
+    out_path = options.pop("out")
+    result = verify(**options)
     text = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
-    if args.out:
-        args.out.write_text(text, encoding="utf-8")
+    if out_path:
+        out_path.write_text(text, encoding="utf-8")
     print(text, end="")
 
 
