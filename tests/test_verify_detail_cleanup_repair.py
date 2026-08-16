@@ -59,6 +59,22 @@ class VerifyDetailCleanupRepairTest(unittest.TestCase):
     def test_public_rejects_target_non_detail_change(self):
         rows=json.loads(self.public_after.read_text(encoding='utf-8')); rows[0]['url']='https://example.test/changed'; self.write_public_after(rows)
         with self.assertRaisesRegex(ValueError,'outside detail'): self.verify_public()
+    def test_public_accepts_empty_source_url_representation_change(self):
+        rows=json.loads(self.public_after.read_text(encoding='utf-8'))
+        rows[0]['source_urls']=[{'kind':'official','url':'https://example.test/official'}, {'kind':'web','url':''}]
+        before=json.loads(self.public_before.read_text(encoding='utf-8')); before[0]['source_urls']=[{'kind':'official','url':'https://example.test/official'}, {'kind':'web','url':'', 'count':3}]
+        self.public_before.write_text(json.dumps(before),encoding='utf-8'); self.write_public_after(rows)
+        self.verify_public()
+    def test_public_rejects_source_url_add_remove_or_replacement(self):
+        before=json.loads(self.public_before.read_text(encoding='utf-8')); before[0]['source_urls']=[{'kind':'official','url':'https://example.test/original'}]; self.public_before.write_text(json.dumps(before),encoding='utf-8')
+        for label, urls in (
+            ('add_only',[{'kind':'official','url':'https://example.test/original'},{'kind':'web','url':'https://example.test/added'}]),
+            ('remove_only',[]),
+            ('replacement',[{'kind':'official','url':'https://example.test/replacement'}]),
+        ):
+            with self.subTest(label=label):
+                rows=json.loads(self.public_after.read_text(encoding='utf-8')); rows[0]['source_urls']=urls; self.write_public_after(rows)
+                with self.assertRaisesRegex(ValueError,'source URL identity'): self.verify_public()
     def test_public_rejects_event_addition_or_deletion(self):
         rows=json.loads(self.public_after.read_text(encoding='utf-8'))
         for changed in (rows[:-1], rows + [dict(rows[-1], name='added')]):
