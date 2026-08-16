@@ -34,7 +34,7 @@ verified_by:
   - tests/test_event_evidence.py
   - tests/test_x_post_extraction_e0x.py
   - tests/test_x_post_extraction_songs.py
-updated_for: 7bcacd0
+updated_for: f00d58e
 ---
 
 # 自動判断サブシステム

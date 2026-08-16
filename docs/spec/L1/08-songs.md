@@ -44,7 +44,7 @@ verified_by:
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
   - tests/test_x_post_extraction_songs.py
-updated_for: 7bcacd0
+updated_for: f00d58e
 ---
 
 # 曲目サブシステム
