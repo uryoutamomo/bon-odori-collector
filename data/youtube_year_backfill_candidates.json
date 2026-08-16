@@ -1,11 +1,11 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-15T20:20:53.473968+00:00",
+  "generated_at": "2026-08-16T20:20:39.573511+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 2,
+  "api_request_count_estimate": 3,
   "summary": {
     "candidate_count": 582,
     "status_counts": {
@@ -26770,7 +26770,7 @@
       "channel_title": "EverlyOfficialEverly",
       "published_at": "2023-05-26T06:30:26Z",
       "thumbnail_url": "https://i.ytimg.com/vi/jf8kbS2uuzg/maxresdefault.jpg",
-      "query": "戸越宮前盆踊り 2023 YouTube 盆踊り",
+      "query": "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "2023.5/26 ★Everlyコンサート2023 6/17小金井宮地楽器ホール・大ホール 7/16和光市民文化センター・大ホール 7/17武蔵野市民文化会館・大ホール ■Everlyトークルーム「魔法の時間」へのお便りは、メール info.everly.jp@gmail.comまで ・メッセージ ・リクエスト ・なかそ涅槃のお悩みコーナーへのお悩み相談内容 など #JAPAN #PubicElementarySchool"
@@ -27348,7 +27348,7 @@
       "channel_title": "山崎茂雄",
       "published_at": "2023-06-12T15:12:55Z",
       "thumbnail_url": "https://i.ytimg.com/vi/F2vhFFrsldo/maxresdefault.jpg",
-      "query": "戸越宮前盆踊り 2023 YouTube 盆踊り",
+      "query": "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "​ @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
@@ -29024,5 +29024,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-15T20:20:52.970459+00:00"
+  "merged_from": "2026-08-16T20:20:39.000347+00:00"
 }

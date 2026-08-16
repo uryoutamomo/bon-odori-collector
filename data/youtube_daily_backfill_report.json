@@ -1,14 +1,14 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-15T20:20:24.878888+00:00",
+  "generated_at": "2026-08-16T20:20:11.033421+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 53,
+  "selected_rows": 54,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 41,
-  "estimated_search_calls": 106,
-  "candidates_before": 581,
+  "remaining_rows_after": 40,
+  "estimated_search_calls": 108,
+  "candidates_before": 582,
   "selected": [
     {
       "queue_id": "youtube-year-backfill:2bb32005a3f74bc3",
@@ -1281,36 +1281,6 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:0d2e020cf3f050ae",
-      "target_year": 2024,
-      "priority_score": 0,
-      "priority": "low",
-      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
-      "venue": "-両国-江戸NOREN",
-      "area": "墨田区",
-      "series_key": "2538c4edcb46",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-13",
-      "public_date_end": "2025-07-13",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-13",
-        "2025-07-13"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.46,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [],
-      "search_queries": [
-        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2024 盆踊り",
-        "-両国- 江戸NOREN 妖怪BON DANCE 2024 YouTube 盆踊り",
-        "-両国-江戸NOREN 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
       "queue_id": "youtube-year-backfill:699a870d93f11789",
       "target_year": 2023,
       "priority_score": 0,
@@ -1686,9 +1656,71 @@
         "二子玉川西地区ふれあい広場(246高架下) 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:dfc7318f89a3808b",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "堤方東町会「盆踊り大会」",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "series_key": "1156476c7001",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "堤方東町会「盆踊り大会」 池上第二小学校 大田区 2024 盆踊り",
+        "堤方東町会「盆踊り大会」 2024 YouTube 盆踊り",
+        "池上第二小学校 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:595b91e72f1262b1",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "成城学園 盆踊り大会",
+      "venue": "成城大学9号館前広場",
+      "area": "世田谷区",
+      "series_key": "56202bd98582",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "成城学園 盆踊り大会 成城大学9号館前広場 世田谷区 2024 盆踊り",
+        "成城学園 盆踊り大会 2024 YouTube 盆踊り",
+        "成城大学9号館前広場 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 52,
+  "completed_batches": 53,
   "batches": [
     {
       "batch": 1,
@@ -1703,7 +1735,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1720,7 +1752,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1737,7 +1769,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1754,7 +1786,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1771,7 +1803,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1788,7 +1820,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1805,7 +1837,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1824,7 +1856,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1843,7 +1875,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1862,7 +1894,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1874,12 +1906,14 @@
         "youtube-year-backfill:804cab8073565d95"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1898,7 +1932,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1915,7 +1949,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1932,7 +1966,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1949,7 +1983,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1966,7 +2000,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1983,7 +2017,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2000,7 +2034,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2017,7 +2051,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2034,7 +2068,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2051,7 +2085,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2068,7 +2102,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2085,7 +2119,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2102,7 +2136,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2119,7 +2153,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2136,7 +2170,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2153,7 +2187,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2170,7 +2204,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2187,7 +2221,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2204,7 +2238,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2221,7 +2255,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2238,7 +2272,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2255,7 +2289,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2272,7 +2306,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2289,7 +2323,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2306,7 +2340,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2323,7 +2357,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2340,7 +2374,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2357,7 +2391,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
+      "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2374,31 +2408,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 581,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 41,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:0d2e020cf3f050ae"
-      ],
-      "fresh_summary": {
-        "candidate_count": 1,
-        "status_counts": {
-          "weak": 1
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
       "candidate_count": 582,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 42,
+      "batch": 41,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2415,7 +2430,7 @@
       "review_count": 48
     },
     {
-      "batch": 43,
+      "batch": 42,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2432,7 +2447,7 @@
       "review_count": 48
     },
     {
-      "batch": 44,
+      "batch": 43,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2451,7 +2466,7 @@
       "review_count": 48
     },
     {
-      "batch": 45,
+      "batch": 44,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2470,7 +2485,7 @@
       "review_count": 48
     },
     {
-      "batch": 46,
+      "batch": 45,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2487,15 +2502,17 @@
       "review_count": 48
     },
     {
-      "batch": 47,
+      "batch": 46,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
         "youtube-year-backfill:2ab649320f07944c"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
@@ -2504,7 +2521,7 @@
       "review_count": 48
     },
     {
-      "batch": 48,
+      "batch": 47,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2523,7 +2540,7 @@
       "review_count": 48
     },
     {
-      "batch": 49,
+      "batch": 48,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2540,7 +2557,7 @@
       "review_count": 48
     },
     {
-      "batch": 50,
+      "batch": 49,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2559,7 +2576,7 @@
       "review_count": 48
     },
     {
-      "batch": 51,
+      "batch": 50,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2576,7 +2593,7 @@
       "review_count": 48
     },
     {
-      "batch": 52,
+      "batch": 51,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2585,6 +2602,42 @@
       "fresh_summary": {
         "candidate_count": 0,
         "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 582,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 52,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:e281db4d7322a660"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 582,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 53,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:dfc7318f89a3808b"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
@@ -2600,8 +2653,8 @@
     "event occurrence backfill applied: added=0 updated=29 observations=53 series_3year=4",
     "event schedule rules: target_year=2026 rules=13 axes={'date': 1, 'near_date': 2, 'weekday': 6, 'weekday_near_date': 2, 'weekend_near_date': 2}",
     "event date predictions: target_year=2026 predictions=13 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 4, 'weekend_near_day': 2}",
-    "曲 occurrence 生成完了: occurrences=601 relations=2957 -> data/song_occurrences.json",
-    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 379 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 379 件（363 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 55 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
+    "曲 occurrence 生成完了: occurrences=601 relations=2958 -> data/song_occurrences.json",
+    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 379 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 379 件（363 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 56 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
   "candidates_after": 582,
@@ -2620,5 +2673,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-16 youtube_candidates=582 review=48 history_rows=51"
+  "ops_metrics": "ops metrics: date=2026-08-17 youtube_candidates=582 review=48 history_rows=52"
 }
