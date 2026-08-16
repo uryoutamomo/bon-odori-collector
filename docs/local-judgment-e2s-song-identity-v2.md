@@ -90,7 +90,9 @@ schema migration 4 (`x_song_identity_v2`) は次のappend-only表を追加する
 | `observed` | `result` | `observed` |
 
 既存 `occurrence_songs` と同じidentityなら証拠linkだけを追加し、song ID・title・origin・confidenceを
-上書きしない。異なるidentityが同じ一意キーへ当たればbatch全体をrollbackする。
+上書きしない。ただし旧経路の同一rowで `song_id` だけが `NULL` の場合に限り、`WHERE song_id IS NULL` の
+CAS的な補完で解決済みsong IDだけを埋める。origin・生タイトル・evidence status・confidence・件数・notes・時刻は
+変更しない。既に別の非NULL song IDがある、またはidentity/evidence statusが異なる場合はbatch全体をrollbackする。
 
 ## 5. retractと公開安全柵
 
@@ -99,6 +101,9 @@ X materializer所有のfactは `origin='observed_x_post'` とする。公開expo
 `x_song_claim_v2` evidenceは、同じfact・evidence・song・occurrence・roleを指すactive materializationも必須にする。
 証跡台帳のないX風の行へaccepted linkだけを足しても公開しない。別経路のaccepted evidenceが同じfactを支える場合は、
 その非X evidenceを根拠に公開を維持できる。
+年次の `inherited_prediction` は `origin='observed_x_post'` のfactを継承元にせず、acceptedかつ
+`x_song_claim_v2` ではない根拠だけを計算に使う。active materializationを持てない派生predictionへ
+X claimを移し替えて公開gateを迂回させない。
 したがって最後のaccepted linkを `retracted` にした時点で行を削除せず公開から消える。
 
 retractはmaterialization IDを明示し、次を同じtransactionで行う。
@@ -145,6 +150,9 @@ DB transactionの失敗はcommit前rollbackで戻す。backupは監査・手動�
 15. Xだけで作った孤立曲は撤回で無効化し、共有曲やCAS不一致の曲を巻き戻さない。
 16. schema migration・decision apply・materializer・retractorはdry-run既定、confirm不一致・FK/integrity失敗で正本不変。
 17. shadow実行ではmaster DB・state・public JSON・Git差分を一切変更せず、除外理由とhold年齢をartifactへ出す。
+18. 同一 `(occurrence_id, normalized_title, role)` の既存factで `song_id` がNULLなら、その列だけをCAS的に補完し、
+    origin・title・evidence status・confidence・件数・notes・時刻を変更しない。別の非NULL song IDなら証拠linkも追加せず
+    batchをrollbackする。
 
 ## 8. 日次shadowの次工程
 

@@ -184,13 +184,16 @@ updated_for: 64c874f
 - **内容**: X曲のschema migration、decision apply、materializer、retractorはdry-runを既定にし、実行時は
   同一入力をDB複製へpreflightしてからbackupを作る。実DBではtransactionを開いたまま
   `integrity_check` / `foreign_key_check` を行い、通過後だけcommitする。既存factとのidentity衝突は上書きせずrollbackする。
+  ただし同一factに限り、旧経路が残した `song_id=NULL` はCAS的にsong IDだけ補完でき、他列は変更しない。
 - **なぜ**: commit後の監査では失敗を検出しても正本を元へ戻せず、根拠と公開factが半端な状態になる。
 - **破れたときの症状**: writerが失敗を報告したのに正本だけ変更済み、または既存curated曲のsong ID/titleが変わる。
+  NULL補完でorigin・生タイトル・確からしさまで更新される、または別song IDのfactへ根拠を混ぜる。
 - **守っているコード**: `report_apply/x_song_apply_safety.py`、
   `report_apply/materialize_x_song_resolutions.py`、`report_apply/retract_x_song_materializations.py`、
   `report_apply/event_report_helpers.py::link_resolved_occurrence_song`
 - **守っているテスト**: `tests/test_x_song_apply_safety.py`、
-  `tests/test_x_song_materialization_lifecycle.py::test_resolved_helper_fails_closed_on_existing_fact_collision`
+  `tests/test_x_song_materialization_lifecycle.py::test_resolved_helper_fails_closed_on_existing_fact_collision`、
+  `tests/test_x_song_null_song_id_linking.py`
 
 ## 主要な流れ
 

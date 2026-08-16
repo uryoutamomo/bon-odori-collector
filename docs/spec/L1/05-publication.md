@@ -165,12 +165,17 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   `setlist/announced` または `result/observed`、accepted evidence linkが1件以上、をすべて満たす行だけ読む。
   `x_song_claim_v2` evidenceは同じfact・evidence・song・occurrence・roleを指すactive materializationも必須にし、
   証跡台帳なしに作られたX風の行を公開しない。別経路のaccepted evidenceは従来どおり公開根拠にできる。
+  `inherited_prediction` は `origin='observed_x_post'` の行を継承元にせず、acceptedかつ
+  `x_song_claim_v2` ではない根拠だけで算出する。これによりactive materializationを持たない派生行へ
+  X投稿の判断を写さない。
   他originの既存公開契約は変えない。
 - **なぜ**: evidence linkをretractしても行だけを無条件に読むと、削除・訂正された投稿が公開へ残り続ける。
 - **破れたときの症状**: 最後のX根拠を撤回しても曲目が消えない、または告知がpredictionとして重複する。
-- **守っているコード**: `export_public_events.py::load_rdb_occurrence_songs`
+- **守っているコード**: `export_public_events.py::load_rdb_occurrence_songs`、
+  `inherit_song_probabilities_rdb.py::find_inheritance_candidates`、`gather_evidence`
 - **守っているテスト**: `tests/test_x_song_materialization_lifecycle.py::test_public_export_requires_active_song_and_accepted_evidence_for_x_fact`、
-  `tests/test_x_song_materialization_lifecycle.py::test_other_accepted_evidence_keeps_shared_fact_public_on_x_retraction`
+  `tests/test_x_song_materialization_lifecycle.py::test_other_accepted_evidence_keeps_shared_fact_public_on_x_retraction`、
+  `tests/test_inherit_song_probabilities_x_safety.py`
 
 ## 主要な流れ
 

@@ -87,10 +87,18 @@ def test_resolved_helper_fails_closed_on_existing_fact_collision(tmp_path):
     seed_domain(conn)
     conn.execute(
         """
+        INSERT INTO songs (
+          song_id, canonical_title, normalized_title, status, created_at, updated_at
+        ) VALUES ('song_other', '別の東京音頭', '別の東京音頭', 'active', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.execute(
+        """
         INSERT INTO occurrence_songs (
-          occurrence_song_id, occurrence_id, song_title_raw, normalized_title,
+          occurrence_song_id, occurrence_id, song_id, song_title_raw, normalized_title,
           role, evidence_status, confidence, created_at, updated_at
-        ) VALUES ('osong_existing', 'occ_1', '東京音頭', '東京音頭',
+        ) VALUES ('osong_existing', 'occ_1', 'song_other', '東京音頭', '東京音頭',
                   'result', 'observed', 'high', ?, ?)
         """,
         (NOW, NOW),

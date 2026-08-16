@@ -14,7 +14,10 @@ occurrence has NO existing row (any role) for that normalized_title --
 existing direct evidence (Phase 1's job) always wins and is never
 overwritten. Only the single most recent past year per series is used as the
 source (matching the legacy algorithm, which takes max(past years) rather
-than blending multiple past years).
+than blending multiple past years). X-song materializer-owned facts and
+X-song claim evidence are deliberately excluded: their publication contract
+requires an active materialization ledger entry, which an inherited prediction
+cannot preserve.
 
 Probability formula (ported from song_processing/song_occurrences.py's
 prediction_probability(), past-evidence branch):
@@ -144,7 +147,8 @@ def find_inheritance_candidates(conn, target_year):
             conn,
             """
             SELECT occurrence_song_id, song_id, song_title_raw, normalized_title, role
-            FROM occurrence_songs WHERE occurrence_id = ?
+            FROM occurrence_songs
+            WHERE occurrence_id = ? AND origin != 'observed_x_post'
             ORDER BY CASE role WHEN 'result' THEN 0 WHEN 'setlist' THEN 1 ELSE 2 END
             """,
             (source_occurrence_id,),
@@ -186,6 +190,8 @@ def gather_evidence(conn, occurrence_song_id):
         FROM occurrence_song_evidence_links l
         JOIN evidence_items e ON e.evidence_id = l.evidence_id
         WHERE l.occurrence_song_id = ?
+          AND l.link_status = 'accepted'
+          AND e.evidence_type != 'x_song_claim_v2'
         """,
         (occurrence_song_id,),
     )

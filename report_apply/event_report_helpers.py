@@ -635,12 +635,35 @@ def link_resolved_occurrence_song(
     if existing:
         row = existing[0]
         if (
-            row["song_id"] != song_id
+            row["song_id"] is not None
+            and row["song_id"] != song_id
             or normalize_text(row["song_title_raw"]) != normalized
             or row["evidence_status"] != evidence_status
         ):
             raise ValueError("existing occurrence song conflicts with resolved identity")
         occurrence_song_id = row["occurrence_song_id"]
+        if row["song_id"] is None:
+            # Older writers can leave an occurrence fact unlinked to the song
+            # master.  The unique fact identity is already the same, so only
+            # fill that missing foreign key.  Keep every provenance/display
+            # field untouched; a concurrent linker makes this update a no-op
+            # rather than overwriting a different resolved song.
+            cursor = conn.execute(
+                """
+                UPDATE occurrence_songs
+                SET song_id = ?
+                WHERE occurrence_song_id = ? AND song_id IS NULL
+                """,
+                (song_id, occurrence_song_id),
+            )
+            if cursor.rowcount != 1:
+                current = _rows(
+                    conn,
+                    "SELECT song_id FROM occurrence_songs WHERE occurrence_song_id = ?",
+                    (occurrence_song_id,),
+                )
+                if not current or current[0]["song_id"] != song_id:
+                    raise ValueError("existing occurrence song conflicts with resolved identity")
     else:
         occurrence_song_id = stable_id("osong", occurrence_id, normalized, role)
         conn.execute(
