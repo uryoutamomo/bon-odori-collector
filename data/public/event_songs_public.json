@@ -4781,6 +4781,20 @@
     ]
   },
   {
+    "name": "あ〜夏休み！納涼盆踊り大会",
+    "venue": "亀有ゆうろーど（亀有銀座商店街）",
+    "area": "葛飾区",
+    "date": "2026-07-17",
+    "songs": [
+      {
+        "name": "河内おとこ節",
+        "confidence": "confirmed",
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      }
+    ]
+  },
+  {
     "name": "LP26まつり",
     "venue": "ライオンズプラザ西葛西マンション内公園",
     "area": "江戸川区",
