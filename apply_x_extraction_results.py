@@ -48,7 +48,11 @@ def apply(packet: dict, answer: dict, state: dict, reports_dir: Path, *, today: 
     reports_dir.mkdir(parents=True, exist_ok=True)
     for no, item in by_no.items():
         result=answers.get(no); outcome="issue"
-        if not isinstance(result, dict): _issue(issues,"missing_result",no=no)
+        if not isinstance(result, dict):
+            # 回答の無い投稿を処理済みにすると、次のパケットへ二度と出てこない（INV-XPE-007に反する）。
+            # issued のまま残して24時間後の再発行に任せる。これで**部分回答を安全に取り込める**——
+            # 判定は1ターンで終わらないことがあり、途中までを返せる余地を残しておく必要がある。
+            _issue(issues,"missing_result",no=no); continue
         else:
             score=result.get("s")
             if not isinstance(score, int) or isinstance(score, bool) or not 1 <= score <= 5:

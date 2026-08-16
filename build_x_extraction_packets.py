@@ -63,7 +63,7 @@ def _state_rows(state: dict) -> dict:
     return state.get("tweets", state) if isinstance(state, dict) else {}
 
 
-def build(voices: list[dict], state: dict, *, batch_size: int = 300, now: datetime | None = None,
+def build(voices: list[dict], state: dict, *, batch_size: int = 150, now: datetime | None = None,
           reissue: bool = False, since: date | None = None, max_batches: int = 10) -> list[dict]:
     """voices からパケットを組む。
 
@@ -142,7 +142,7 @@ def write_packets(packets: list[dict], state: dict, out_dir: Path, state_path: P
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--voices", type=Path, default=Path("data/voices.json")); p.add_argument("--state", type=Path, default=Path("data/x_extraction_state.json"))
-    p.add_argument("--out-dir", type=Path, default=Path("data/x_extraction_packets")); p.add_argument("--batch-size", type=int, default=300); p.add_argument("--reissue", action="store_true")
+    p.add_argument("--out-dir", type=Path, default=Path("data/x_extraction_packets")); p.add_argument("--batch-size", type=int, default=150); p.add_argument("--reissue", action="store_true")
     p.add_argument("--since", type=date.fromisoformat, help="この日以降に投稿されたものだけを対象にする（既定は前日以降）")
     p.add_argument("--max-batches", type=int, default=10, help="1回に出すバッチ数の上限。超えた分は次回へ残す")
     a = p.parse_args()

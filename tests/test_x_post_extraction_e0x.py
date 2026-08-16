@@ -100,6 +100,26 @@ class XPostExtractionE0XTest(unittest.TestCase):
                 self.assertEqual(result["report_count"],0)
                 self.assertIn(issue,[row["issue_type"] for row in result["issues"]])
 
+    # --- 部分回答：答えの無い投稿を処理済みにしない（INV-XPE-007） ---
+    def test_partial_answer_leaves_unanswered_posts_for_the_next_packet(self):
+        packet={"batch_id":"x","packets":[
+          {"no":1,"tweet_id":"a","url":"https://x/a","text":"盆踊りの話","machine_extracted_dates":[]},
+          {"no":2,"tweet_id":"b","url":"https://x/b","text":"別の投稿","machine_extracted_dates":[]}]}
+        # 判定は1ターンで終わらないことがある。1件だけ答えて残りを次回へ回せる必要がある。
+        answer={"batch_id":"x","results":[{"no":1,"s":3,"n":"内容あり"}]}
+        with tempfile.TemporaryDirectory() as temp:
+            state={"tweets":{"a":{"issued_at":"2026-08-16T00:00:00+00:00","batch_id":"x","applied_at":None},
+                             "b":{"issued_at":"2026-08-16T00:00:00+00:00","batch_id":"x","applied_at":None}}}
+            result=apply(packet,answer,state,Path(temp),today=date(2026,8,16))
+            self.assertIn("missing_result",[row["issue_type"] for row in result["issues"]])
+            self.assertIsNotNone(state["tweets"]["a"]["applied_at"],"答えたものは処理済みになる")
+            self.assertIsNone(state["tweets"]["b"]["applied_at"],
+                              "答えの無いものを処理済みにすると二度と読まれない")
+            # 24時間後のbuildで b だけが戻ってくる
+            packets=build([voice("a","盆踊りの話"),voice("b","別の投稿")],state,
+                          now=datetime(2026,8,17,12,tzinfo=timezone.utc),batch_size=10)
+            self.assertEqual({item["tweet_id"] for p in packets for item in p["packets"]},{"b"})
+
     # --- 受け入れ条件13・14：不明なno／4点以下は採点だけ残る ---
     def test_unknown_no_is_flagged_and_low_scores_keep_only_the_score(self):
         packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","text":"盆踊りの思い出話","machine_extracted_dates":[]}]}
