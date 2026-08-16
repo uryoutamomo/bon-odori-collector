@@ -625,7 +625,7 @@ def link_resolved_occurrence_song(
     existing = _rows(
         conn,
         """
-        SELECT occurrence_song_id, origin, song_id, song_title_raw
+        SELECT occurrence_song_id, origin, song_id, song_title_raw, evidence_status
         FROM occurrence_songs
         WHERE occurrence_id = ? AND normalized_title = ? AND role = ?
         """,
@@ -634,7 +634,11 @@ def link_resolved_occurrence_song(
     created = not existing
     if existing:
         row = existing[0]
-        if row["song_id"] != song_id or normalize_text(row["song_title_raw"]) != normalized:
+        if (
+            row["song_id"] != song_id
+            or normalize_text(row["song_title_raw"]) != normalized
+            or row["evidence_status"] != evidence_status
+        ):
             raise ValueError("existing occurrence song conflicts with resolved identity")
         occurrence_song_id = row["occurrence_song_id"]
     else:

@@ -65,12 +65,15 @@ def test_resolution_phase_and_action_are_constrained(tmp_path):
         "packet_sha256": "b" * 64,
         "phase": "retrieval",
         "action": "new_song",
+        "proposed_canonical_title": "新曲",
         "candidate_rows_json": "[]",
         "candidate_set_sha256": "c" * 64,
         "catalog_snapshot_json": "[]",
         "catalog_snapshot_sha256": "d" * 64,
         "reason_code": "test",
         "actor_id": "test",
+        "model_id": "test-model",
+        "prompt_sha256": "e" * 64,
         "decided_at": "2026-08-16T00:00:00+00:00",
         "created_at": "2026-08-16T00:00:00+00:00",
     }
@@ -79,14 +82,16 @@ def test_resolution_phase_and_action_are_constrained(tmp_path):
             """
             INSERT INTO x_song_resolution_decisions (
               decision_id, observation_id, observation_sha256, packet_id,
-              packet_sha256, phase, action, candidate_rows_json,
+              packet_sha256, phase, action, proposed_canonical_title, candidate_rows_json,
               candidate_set_sha256, catalog_snapshot_json,
-              catalog_snapshot_sha256, reason_code, actor_id, decided_at, created_at
+              catalog_snapshot_sha256, reason_code, actor_id, model_id,
+              prompt_sha256, decided_at, created_at
             ) VALUES (
               :decision_id, :observation_id, :observation_sha256, :packet_id,
-              :packet_sha256, :phase, :action, :candidate_rows_json,
+              :packet_sha256, :phase, :action, :proposed_canonical_title, :candidate_rows_json,
               :candidate_set_sha256, :catalog_snapshot_json,
-              :catalog_snapshot_sha256, :reason_code, :actor_id, :decided_at, :created_at
+              :catalog_snapshot_sha256, :reason_code, :actor_id, :model_id,
+              :prompt_sha256, :decided_at, :created_at
             )
             """,
             params,
