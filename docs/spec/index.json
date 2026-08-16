@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T02:55:45Z",
-  "generated_for_commit": "d7d5f3f",
+  "generated_at": "2026-08-16T06:05:57Z",
+  "generated_for_commit": "1b7e548",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -125,12 +125,18 @@
         "INV-XPE-006",
         "INV-XPE-007",
         "INV-XPE-008",
-        "INV-XPE-009"
+        "INV-XPE-009",
+        "INV-XPE-010",
+        "INV-XPE-011",
+        "INV-XPE-012",
+        "INV-XPE-013"
       ],
       "verified_by": [
-        "tests/test_event_evidence.py"
+        "tests/test_event_evidence.py",
+        "tests/test_x_post_extraction_e0x.py",
+        "tests/test_x_post_extraction_songs.py"
       ],
-      "updated_for": "6537e7f",
+      "updated_for": "7bcacd0",
       "path": "docs/spec/L1/02-judgment.md",
       "owned_files": [
         "apply_x_extraction_results.py",
@@ -141,12 +147,17 @@
         "collection_support/x_source_officiality.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 3
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.1",
-      "revision_count": 2,
+      "version": "1.2",
+      "revision_count": 3,
       "history": [
+        {
+          "commit": "1b7e548",
+          "date": "2026-08-16",
+          "subject": "X投稿から曲名・界隈語の観測台帳を作る (#224)"
+        },
         {
           "commit": "d7d5f3f",
           "date": "2026-08-16",
@@ -677,9 +688,10 @@
         "tests/test_bon_odori_songs.py",
         "tests/test_song_catalog.py",
         "tests/test_weekly_song_triage.py",
-        "tests/test_export_public_events.py"
+        "tests/test_export_public_events.py",
+        "tests/test_x_post_extraction_songs.py"
       ],
-      "updated_for": "f517fa8",
+      "updated_for": "7bcacd0",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         "apply_song_candidate_finite_actions.py",
@@ -719,9 +731,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.1",
-      "revision_count": 2,
+      "version": "1.2",
+      "revision_count": 3,
       "history": [
+        {
+          "commit": "1b7e548",
+          "date": "2026-08-16",
+          "subject": "X投稿から曲名・界隈語の観測台帳を作る (#224)"
+        },
         {
           "commit": "3b43069",
           "date": "2026-08-14",
@@ -961,9 +978,10 @@
         "tests/test_glossary.py",
         "tests/test_event_alias_runtime.py",
         "tests/test_series_alias_migration.py",
-        "tests/test_local_glossary_manual_policy.py"
+        "tests/test_local_glossary_manual_policy.py",
+        "tests/test_x_post_extraction_songs.py"
       ],
-      "updated_for": "83bf7d0",
+      "updated_for": "7bcacd0",
       "path": "docs/spec/L1/11-glossary.md",
       "owned_files": [
         "build_event_alias_runtime.py",
@@ -981,9 +999,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.0",
-      "revision_count": 1,
+      "version": "1.1",
+      "revision_count": 2,
       "history": [
+        {
+          "commit": "1b7e548",
+          "date": "2026-08-16",
+          "subject": "X投稿から曲名・界隈語の観測台帳を作る (#224)"
+        },
         {
           "commit": "2c93cc1",
           "date": "2026-08-14",
@@ -1375,6 +1398,48 @@
       "title": "累積voicesから読ませるのは既定で前日以降だけ、超過分は次回へ残す",
       "tests": [
         "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_since_defaults_to_yesterday_and_max_batches_defers_the_rest"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-010": {
+      "spec": "L1-judgment",
+      "title": "曲名・界隈語は投稿本文に書かれた文字列だけを観測する",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_01_records_song_found_in_text",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_02_rejects_song_not_found_in_text",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_12_normalizes_middle_dot_long_mark_and_width",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_13_does_not_fold_hiragana_and_katakana"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-011": {
+      "spec": "L1-judgment",
+      "title": "第1段の曲名観測は曲マスタや開催回へ自動接続しない",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_04_records_null_event_name",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_17_has_no_occurrence_songs_write_path"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-012": {
+      "spec": "L1-judgment",
+      "title": "同じ回答を再取り込みしても観測件数を増やさない",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_06_song_observations_are_idempotent",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_18_glossary_count_is_idempotent_after_examples_fill",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_19_count_always_matches_source_tweet_ids"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-013": {
+      "spec": "L1-judgment",
+      "title": "曲名・界隈語の壊れた要素は採点・レポート・他観測を止めない",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_03_keeps_valid_song_when_sibling_is_invalid",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_14_malformed_observations_do_not_stop_other_processing",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_20_bad_event_name_does_not_stop_glossary_or_scoring",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_21_bad_glossary_does_not_stop_song_score_or_report",
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_25_separates_song_and_glossary_issue_counts"
       ],
       "has_test": true
     },
