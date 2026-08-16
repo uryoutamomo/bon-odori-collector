@@ -82,7 +82,7 @@ class XPostExtractionSongsTest(unittest.TestCase):
     # 3. 1曲の失敗で同じ観測の他曲を失わない。
     def test_acceptance_03_keeps_valid_song_when_sibling_is_invalid(self):
         result, songs, _, _ = self.run_apply([
-            {"no": 1, "s": 4, "observations": [{"event_name": None, "songs": ["東京音頭", "炭坑節"]}]}
+            {"no": 1, "s": 4, "observations": [{"event_name": None, "songs": ["炭坑節", "東京音頭"]}]}
         ])
         self.assertEqual([row["song_name"] for row in songs["observations"]], ["東京音頭"])
         self.assertEqual(result["song_issue_count"], 1)
@@ -296,11 +296,23 @@ class XPostExtractionSongsTest(unittest.TestCase):
     def test_acceptance_25_separates_song_and_glossary_issue_counts(self):
         result, _, _, _ = self.run_apply([
             {"no": 1, "s": 4,
-             "observations": [{"event_name": None, "songs": ["炭坑節"]}],
+             "observations": [{"event_name": None, "songs": ["炭坑節", "河内音頭"]}],
              "glossary": ["盆オドラー"]}
         ])
-        self.assertEqual(result["song_issue_count"], 1)
+        self.assertEqual(result["song_issue_count"], 2)
         self.assertEqual(result["glossary_issue_count"], 1)
+
+    # 基準では events は5点だけ。4点以下の events[].songs は観測にしない。
+    def test_events_songs_ignored_when_score_is_not_five(self):
+        event = valid_event(songs=["東京音頭"])
+        _, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 4, "events": [event]}],
+            items=[item(
+                text="8月20日に試験公園で試験盆踊りを開催 東京音頭",
+                machine_extracted_dates=["2099-08-20"],
+            )],
+        )
+        self.assertEqual(songs["observations"], [])
 
     def test_type_contract_rejects_non_string_song_and_term_independently(self):
         result, songs, glossary, _ = self.run_apply(
