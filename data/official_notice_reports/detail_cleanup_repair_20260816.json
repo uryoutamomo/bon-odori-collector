@@ -1,0 +1,25 @@
+{
+  "report_type": "detail_cleanup_repair",
+  "reported_at": "2026-08-16T00:00:00+09:00",
+  "reason": "2026-08-08の正本cleanup後に古い通知再適用で復活した14件のdetailだけを戻す。日付・会場・曲目・evidenceは変更しない。",
+  "report_sha256": "6c253a9ca5518277754312489906882a81158fdd7624ddef91f6873905e9f3b9",
+  "expected_current_detail_sha256": {
+    "occ_c269edeedf7a5b71":"35f4f3474b02816aaceb3dcd32d069899f8a1f115a2293029c123b8ba95b3212","occ_fd1c503d3f6538d5":"e87f0ad8021b193f489e92455d0f52cb0c494aa7eb9d08e9e73f9b6fb7064389","occ_c144b96d770e3b9e":"2c29cdec1aaed0570bb3f53912333a55f485818ae33a91f0050b148364bb8613","occ_fbbf1f3dcb7ae7c3":"898b537fb0807cf8649661f581075bdcbe6fcae00111f0b0bb06587dbd797b3d","occ_144344004e460a1a":"ed1e6fc5eac41c6d7d9b273c0b2f4c1cd6bc6ac20d5e421bdaae221e479406a3","occ_d4f2f14192a4ef64":"b0130e79a015dea4cf04e10a53f50d522909450adbca210292e4b3680b04388b","occ_5df32308eae3f789":"2d3f0b13fa273842d3f238631fc64c71e71d8ecf8a7219efae0efa5140939b79","occ_64e9d25c0c48cc6b":"9dc3cdd8e105b536b3dafae2880fa0c6d8b0e97c8a93c92f93113e4da3c354d5","occ_4ed149af2fc84735":"75f07f4062387f86c9382cbfa6b6b49b907f320228359f1f498e2e2f21281a8b","occ_cf0544b3561983b8":"169cab5083b952445fbdc39c198d5becb0dadc9d78ffbbece7a951ec57600874","occ_ef53e510c8842afb":"17b867fe7dc6b7339fb2eab33f399c820565ee913534d129950c075926d33fa6","occ_b223cacd3b0c84eb":"8b641ca9d42517bcc470c9ed6165ce67cee7dd4d88c6500e2565b0748f5fbba6","occ_96854e6c02eba84d":"032ef9160152a67adef93008001ad5df45e1eb1883e43b003f53c48a61b42bb9","occ_950d73869e1a34de":"ed69199bfb0e0ad40f44108bb8e41a0c9e302e34e4ad463496c8d919b5505a42"
+  },
+  "events": [
+    {"action":"confirm_existing","occurrence_id":"occ_c269edeedf7a5b71","event_name_hint":"上野ゐの市盆踊り","detail_replacement":"2026年8月7日（金）〜16日（日）の10日間、全日12:00〜21:00。会場は上野恩賜公園の袴腰広場、主催は上野中通商店街振興組合、観覧無料。盆踊りのほか祭りグルメとステージ企画があり、曲目は日替わり。同じ会場の前半3日には「ゐの市盆踊り～不忍夢～」も行われます（別に掲載）。開催期間は情報源によって3日間と10日間に分かれており、主催者自身が10日間と明記した告知はまだ確認できていません。お出かけの際は最新の告知もあわせてご確認ください。"},
+    {"action":"confirm_existing","occurrence_id":"occ_fd1c503d3f6538d5","event_name_hint":"とよす夏祭り","detail_replacement":"2026年は第2回。盆踊りは8月8日・9日・11日・15日・16日に実施と明記され、その他の日は実施記載なし。"},
+    {"action":"confirm_existing","occurrence_id":"occ_c144b96d770e3b9e","event_name_hint":"東陽六・七丁目町会 夏まつり","detail_replacement":"元の告知表記は「夏まつり2026」。17:00〜21:30。盆踊りの実施有無は未確認。"},
+    {"action":"confirm_existing","occurrence_id":"occ_fbbf1f3dcb7ae7c3","event_name_hint":"江東区民まつり 亀戸地区夏まつり大会","detail_replacement":"盆踊りの実施有無は未確認。"},
+    {"action":"confirm_existing","occurrence_id":"occ_144344004e460a1a","event_name_hint":"南砂住宅 団地祭り","detail_replacement":"15:00〜19:00。盆踊りの実施有無は未確認。"},
+    {"action":"confirm_existing","occurrence_id":"occ_d4f2f14192a4ef64","event_name_hint":"塩浜一丁目団地自治会 夏まつり","detail_replacement":"9:30〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。"},
+    {"action":"confirm_existing","occurrence_id":"occ_5df32308eae3f789","event_name_hint":"大島三丁目団地自治会 夕涼み会","detail_replacement":"16:00〜18:00。盆踊りの実施有無は未確認。"},
+    {"action":"confirm_existing","occurrence_id":"occ_64e9d25c0c48cc6b","event_name_hint":"大島五丁目町会 ぼんおどり","detail_replacement":"17:00〜。"},
+    {"action":"confirm_existing","occurrence_id":"occ_4ed149af2fc84735","event_name_hint":"東砂一丁目団地 ふれあい祭り","detail_replacement":"11:00〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。"},
+    {"action":"confirm_existing","occurrence_id":"occ_cf0544b3561983b8","event_name_hint":"東砂三丁目町会 盆踊大会","detail_replacement":"18:30〜。"},
+    {"action":"confirm_existing","occurrence_id":"occ_ef53e510c8842afb","event_name_hint":"扇橋二丁目町会 納涼大会","detail_replacement":"18:00〜21:00。盆踊りの実施有無は未確認。"},
+    {"action":"confirm_existing","occurrence_id":"occ_b223cacd3b0c84eb","event_name_hint":"猿江一丁目町会 納涼まつり","detail_replacement":"16:00〜20:00。盆踊りの実施有無は未確認。"},
+    {"action":"confirm_existing","occurrence_id":"occ_96854e6c02eba84d","event_name_hint":"坂下一丁目南町会 盆踊り大会","detail_replacement":"開催時間：8月22日18:00〜21:00、8月23日17:30〜20:30。主催：坂下一丁目南町会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。"},
+    {"action":"confirm_existing","occurrence_id":"occ_950d73869e1a34de","event_name_hint":"小豆沢商友会 納涼盆踊り大会","detail_replacement":"開催時間：18:30〜20:30。主催：小豆沢商友会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。"}
+  ]
+}
