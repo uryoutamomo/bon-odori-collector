@@ -27,11 +27,14 @@ invariants:
   - INV-XPE-011
   - INV-XPE-012
   - INV-XPE-013
+  - INV-XPE-014
+  - INV-XPE-015
+  - INV-XPE-016
 verified_by:
   - tests/test_event_evidence.py
   - tests/test_x_post_extraction_e0x.py
   - tests/test_x_post_extraction_songs.py
-updated_for: 7bcacd0
+updated_for: d720f46
 ---
 
 # 自動判断サブシステム
@@ -77,12 +80,14 @@ updated_for: 7bcacd0
 - **内容**: 照合に失敗したイベントだけを除外し、同じ投稿の他イベントは巻き込まない。
 - **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event`
 
-### INV-XPE-003 5点未満は採点だけを保存する
+### INV-XPE-003 5点未満からE0レポートを作らない
 
-- **内容**: 4点以下からE0レポートを作らない。ただし点数は `data/x_post_scores.json` に必ず残す。
+- **内容**: 4点以下からE0レポートを作らない。ただし点数は `data/x_post_scores.json` に必ず残し、
+  本文由来の曲claim・界隈語も各観測台帳へ残す。
 - **なぜ**: 点数は捨てるための閾値ではなく、後で並べ替え・見直しをするための記録だから（2026-08-15 内田さん）。
-- **破れたときの症状**: 読んだ結果が消え、同じ投稿を読み直す羽目になる。
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_unknown_no_is_flagged_and_low_scores_keep_only_the_score`
+- **破れたときの症状**: 読んだ結果や低得点投稿の曲材料が消え、同じ投稿を読み直す羽目になる。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_unknown_no_is_flagged_and_low_scores_keep_only_the_score`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_events_songs_are_kept_when_score_is_not_five_without_e0_report`
 
 ### INV-XPE-004 生成レポートは出典URLを持つ
 
@@ -128,13 +133,18 @@ updated_for: 7bcacd0
 - **守っているコード**: `build_x_extraction_packets.py` の `build()`
 - **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_since_defaults_to_yesterday_and_max_batches_defers_the_rest`
 
-### INV-XPE-010 曲名・界隈語は投稿本文に書かれた文字列だけを観測する
+### INV-XPE-010 曲claim・界隈語は投稿本文に書かれた材料だけを観測する
 
-- **内容**: `apply_x_extraction_results.py` は文字列型の曲名・界隈語だけを受け入れ、NFKC正規化と空白・中黒・長音の除去後に投稿本文へ含まれることを照合する。ひらがなとカタカナは同一視しない。照合できない1要素はissueへ落とし、同じ回答の他要素を巻き込まない。
+- **内容**: `apply_x_extraction_results.py` は曲名・曲ごとの `claim_type`・根拠引用と界隈語を受け入れ、
+  NFKC正規化と空白・中黒・長音の除去後に曲名と引用が投稿本文にあり、引用内にも曲名があることを照合する。
+  ひらがなとカタカナは同一視しない。照合できない1要素はissueへ落とし、同じ回答の他要素を巻き込まない。
 - **なぜ**: LLMが本文に無い曲名や用語を補完すると、未確認情報が観測台帳へ事実のように蓄積されるから。一方、表記上の中黒・長音・全半角差だけで本文由来の語を落とすと、実在する観測を失うから。
 - **破れたときの症状**: 本文に無い曲・語が候補化される／「ダンシング・ヒーロー」と「ダンシングヒロ」のような表記差で観測が消える／ひらがな・カタカナの別語が誤結合される。
 - **守っているコード**: `apply_x_extraction_results.py` の `_material_text()`、`_appears_in_text()`、`_record_materials()`
-- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_01_records_song_found_in_text`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_02_rejects_song_not_found_in_text`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_12_normalizes_middle_dot_long_mark_and_width`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_13_does_not_fold_hiragana_and_katakana`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_01_records_song_found_in_text`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_bad_claim_quotes_fail_per_song`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_12_normalizes_middle_dot_long_mark_and_width`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_13_does_not_fold_hiragana_and_katakana`
 
 ### INV-XPE-011 第1段の曲名観測は曲マスタや開催回へ自動接続しない
 
@@ -146,13 +156,18 @@ updated_for: 7bcacd0
 
 ### INV-XPE-012 同じ回答を再取り込みしても観測件数を増やさない
 
-- **内容**: 曲名観測は投稿ID・正規化済み行事名・正規化済み曲名から安定IDを作る。界隈語観測は全件の `source_tweet_ids` を保持し、`count` をその配列の長さから導出する。表示用の `examples` は5件で止めても、重複判定の根拠は失わない。
+- **内容**: v2曲claimは投稿・行事文脈・曲名からfamily IDを作り、そこへclaim typeと根拠引用を加えて観測IDを作る。
+  family IDには根拠引用を含めない。同じ主題への再回答で引用範囲だけが変わっても、claim typeの意味競合を同じfamilyで検知する。
+  旧文字列回答は従来IDを保つ。界隈語観測は全件の `source_tweet_ids` を保持し、`count` をその配列の長さから導出する。
+  表示用の `examples` は5件で止めても、重複判定の根拠は失わない。
 - **なぜ**: 回答の再送や再実行は通常運用で起きる。例示上限を重複判定に兼用すると、6件目以降の再取り込みで件数だけが増え続けるから。
 - **破れたときの症状**: 同じ投稿を再処理するたびに曲観測や用語のcountが増える。
 - **守っているコード**: `apply_x_extraction_results.py` の `_record_song_group()` と `_record_glossary()`
-- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_06_song_observations_are_idempotent`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_18_glossary_count_is_idempotent_after_examples_fill`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_19_count_always_matches_source_tweet_ids`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_is_idempotent_and_conflicting_reanswer_is_held`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_legacy_rows_get_defaults_without_new_identity`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_18_glossary_count_is_idempotent_after_examples_fill`
 
-### INV-XPE-013 曲名・界隈語の壊れた要素は採点・レポート・他観測を止めない
+### INV-XPE-013 曲claim・界隈語の壊れた要素は採点・レポート・他観測を止めない
 
 - **内容**: `observations`、各観測、`songs`、`glossary` の型不正は要素単位のissueにし、既存の採点、5点イベントレポート、同じ投稿の正常な曲名・界隈語を処理し続ける。取り込みレポートは曲名と界隈語のissue件数を分けて残す。
 - **なぜ**: 補助的な観測の形式不正で既存E0X経路まで失敗すると、開催情報の取り込みと再現可能な採点記録を同時に失うから。
@@ -160,10 +175,40 @@ updated_for: 7bcacd0
 - **守っているコード**: `apply_x_extraction_results.py` の `_record_materials()` と `apply()`
 - **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_03_keeps_valid_song_when_sibling_is_invalid`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_14_malformed_observations_do_not_stop_other_processing`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_20_bad_event_name_does_not_stop_glossary_or_scoring`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_21_bad_glossary_does_not_stop_song_score_or_report`、`tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_25_separates_song_and_glossary_issue_counts`
 
+### INV-XPE-014 曲の意味はoriginでなく曲ごとのclaim typeで持つ
+
+- **内容**: `announced` / `observed` / `mentioned` / `unknown` は各 `song_claims[]` に置く。
+  `events` / `observations` という回答上の経路は来歴だけであり、意味へ変換しない。
+- **なぜ**: 同じ行事の実績曲と願望曲が一投稿に混在し、置き場所だけでは意味を決められないから。
+- **破れたときの症状**: 「来年はこの曲もやってほしい」が実績曲や告知曲として扱われる。
+- **守っているコード**: `apply_x_extraction_results.py` の `_record_song_group()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_mixed_claims_keep_per_song_meaning`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_origin_does_not_override_claim_type`
+
+### INV-XPE-015 曲claimのE0系譜は実在するイベント要素だけを指す
+
+- **内容**: 5点イベントが検査を通ってレポートが生成・再利用された場合だけ、曲claimへreport ID、
+  event entry ID、E0 family keyを付ける。過去日・URL欠落・本文照合失敗では付けない。
+- **なぜ**: report IDだけでは複数要素を区別できず、生成前に予測したIDは存在しない開催回へのdangling参照になるから。
+- **破れたときの症状**: 曲claimが別行事のE2判断へ結び付く／存在しないE0候補を待ち続ける。
+- **守っているコード**: `apply_x_extraction_results.py` の `apply()` と `_report_event_id()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_valid_five_point_event_has_real_e0_dependency`、
+  `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_rejected_event_keeps_claim_without_dangling_dependency`
+
+### INV-XPE-016 claim再回答の意味競合を自動公開へ流さない
+
+- **内容**: 同じ投稿・行事文脈・曲についてclaim typeが異なる再回答は、根拠引用の範囲が同じかどうかにかかわらず同じfamilyの別観測として保持し、
+  `claim_type_conflict=true` とissueを残す。黙って上書きしない。
+- **なぜ**: LLM再実行の揺れを最後の回答で上書きすると、根拠なしに告知と実績が入れ替わるから。
+- **破れたときの症状**: 同じ原文の再処理だけで公開根拠ラベルや曲の役割が変わる。
+- **守っているコード**: `apply_x_extraction_results.py` の `_mark_claim_conflicts()`
+- **守っているテスト**: `tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_is_idempotent_and_conflicting_reanswer_is_held`
+
 ## 主要な流れ
 
 1. 文面から時期・地域・会場・曲・団体・界隈語を抽出する。
-2. `apply_x_extraction_results.py` が本文照合を行い、曲名・界隈語をそれぞれの観測台帳へ冪等に記録する。
+2. `apply_x_extraction_results.py` が本文照合を行い、曲ごとのclaim・行事文脈・根拠引用と界隈語を
+   それぞれの観測台帳へ冪等に記録する。実在するE0レポートがある曲claimだけ、そのイベント要素の系譜を持つ。
 3. 除外語と盆踊り文脈を評価し、理由つきの点数を計算する。
 4. 同一候補を関連キーでまとめ、優先候補としてレビューへ渡す。曲名・界隈語の観測はこの段階では正本や開催回へ結び付けない。
 

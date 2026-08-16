@@ -302,17 +302,255 @@ class XPostExtractionSongsTest(unittest.TestCase):
         self.assertEqual(result["song_issue_count"], 2)
         self.assertEqual(result["glossary_issue_count"], 1)
 
-    # 基準では events は5点だけ。4点以下の events[].songs は観測にしない。
-    def test_events_songs_ignored_when_score_is_not_five(self):
+    # v2では採点と抽出を分離し、4点以下のevents材料もunknownとして救う。
+    def test_events_songs_are_kept_when_score_is_not_five_without_e0_report(self):
         event = valid_event(songs=["東京音頭"])
-        _, songs, _, _ = self.run_apply(
+        result, songs, _, _ = self.run_apply(
             [{"no": 1, "s": 4, "events": [event]}],
             items=[item(
                 text="8月20日に試験公園で試験盆踊りを開催 東京音頭",
                 machine_extracted_dates=["2099-08-20"],
             )],
         )
-        self.assertEqual(songs["observations"], [])
+        self.assertEqual(len(songs["observations"]), 1)
+        self.assertEqual(songs["observations"][0]["claim_type"], "unknown")
+        self.assertIsNone(songs["observations"][0]["event_dependency_key"])
+        self.assertEqual(result["report_count"], 0)
+
+    def test_v2_mixed_claims_keep_per_song_meaning(self):
+        result, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 4, "observations": [{
+                "event_name": "試験盆踊り",
+                "event_quote": "試験盆踊りで",
+                "song_claims": [
+                    {"song_name": "東京音頭", "claim_type": "observed", "evidence_quote": "東京音頭を踊った"},
+                    {"song_name": "炭坑節", "claim_type": "mentioned", "evidence_quote": "炭坑節もやってほしい"},
+                ],
+            }]}],
+            items=[item(text="試験盆踊りで東京音頭を踊った。炭坑節もやってほしい")],
+        )
+        self.assertEqual(
+            {row["song_name"]: row["claim_type"] for row in songs["observations"]},
+            {"東京音頭": "observed", "炭坑節": "mentioned"},
+        )
+        self.assertEqual(result["song_claim_type_added"]["observed"], 1)
+        self.assertEqual(result["song_claim_type_added"]["mentioned"], 1)
+
+    def test_v2_origin_does_not_override_claim_type(self):
+        event = valid_event(song_claims=[{
+            "song_name": "東京音頭", "claim_type": "observed", "evidence_quote": "東京音頭を踊った",
+        }])
+        _, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 4, "events": [event]}],
+            items=[item(text="8月20日に試験公園で試験盆踊りを開催し東京音頭を踊った")],
+        )
+        self.assertEqual((songs["observations"][0]["origin"], songs["observations"][0]["claim_type"]),
+                         ("events", "observed"))
+
+    def test_v2_invalid_claim_type_becomes_unknown_without_losing_sibling(self):
+        result, songs, _, _ = self.run_apply([{"no": 1, "s": 4, "observations": [{
+            "event_name": None,
+            "song_claims": [
+                {"song_name": "東京音頭", "claim_type": "wish", "evidence_quote": "東京音頭を踊った"},
+                {"song_name": "炭坑節", "claim_type": "observed", "evidence_quote": "炭坑節も踊った"},
+            ],
+        }]}], items=[item(text="東京音頭を踊った。炭坑節も踊った")])
+        self.assertEqual({row["claim_type"] for row in songs["observations"]}, {"unknown", "observed"})
+        self.assertIn("invalid_claim_type", [row["issue_type"] for row in result["issues"]])
+
+    def test_v2_bad_claim_quotes_fail_per_song(self):
+        result, songs, _, _ = self.run_apply([{"no": 1, "s": 4, "observations": [{
+            "event_name": None,
+            "song_claims": [
+                {"song_name": "東京音頭", "claim_type": "observed", "evidence_quote": "本文にない東京音頭"},
+                {"song_name": "炭坑節", "claim_type": "observed", "evidence_quote": "踊った"},
+                {"song_name": "河内音頭", "claim_type": "observed", "evidence_quote": "河内音頭を踊った"},
+            ],
+        }]}], items=[item(text="東京音頭と炭坑節、それから河内音頭を踊った")])
+        self.assertEqual([row["song_name"] for row in songs["observations"]], ["河内音頭"])
+        issue_types = [row["issue_type"] for row in result["issues"]]
+        self.assertIn("claim_quote_not_in_text", issue_types)
+        self.assertIn("song_not_in_claim_quote", issue_types)
+
+    def test_v2_valid_five_point_event_has_real_e0_dependency(self):
+        event = valid_event(song_claims=[{
+            "song_name": "東京音頭", "claim_type": "announced", "evidence_quote": "曲目は東京音頭です",
+        }])
+        _, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 5, "events": [event]}],
+            items=[item(text="8月20日に試験公園で試験盆踊りを開催。曲目は東京音頭です",
+                        machine_extracted_dates=["2099-08-20"])],
+        )
+        row = songs["observations"][0]
+        report = json.loads(next(self.reports_dir.glob("*.json")).read_text(encoding="utf-8"))
+        self.assertEqual(row["event_report_id"], report["source"]["report_id"])
+        self.assertEqual(row["report_event_id"], report["events"][0]["entry_id"])
+        self.assertEqual(row["event_dependency_key"],
+                         f"official_notice:{row['event_report_id']}#{row['report_event_id']}")
+
+    def test_v2_rejected_event_keeps_claim_without_dangling_dependency(self):
+        event = valid_event(
+            date_start="2026-08-01",
+            quote="8月1日に試験公園で試験盆踊りを開催",
+            song_claims=[{
+                "song_name": "東京音頭", "claim_type": "announced", "evidence_quote": "東京音頭を予定",
+            }],
+        )
+        result, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 5, "events": [event]}],
+            items=[item(text="8月1日に試験公園で試験盆踊りを開催。東京音頭を予定",
+                        machine_extracted_dates=["2026-08-01"])],
+        )
+        self.assertEqual(len(songs["observations"]), 1)
+        self.assertIsNone(songs["observations"][0]["event_dependency_key"])
+        self.assertEqual(result["report_count"], 0)
+
+    def test_v2_event_context_is_preserved_but_not_copied_to_observations(self):
+        event = valid_event(
+            date_end="2099-08-21", ward="足立区",
+            song_claims=[{"song_name": "東京音頭", "claim_type": "announced", "evidence_quote": "東京音頭"}],
+        )
+        _, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 4, "events": [event], "observations": [{
+                "event_name": None,
+                "song_claims": [{"song_name": "炭坑節", "claim_type": "mentioned", "evidence_quote": "炭坑節"}],
+            }]}],
+            items=[item(text="8月20日に試験公園で試験盆踊りを開催。東京音頭と炭坑節")],
+        )
+        by_song = {row["song_name"]: row for row in songs["observations"]}
+        self.assertEqual(
+            (by_song["東京音頭"]["event_date_end"], by_song["東京音頭"]["event_ward"]),
+            ("2099-08-21", "足立区"),
+        )
+        self.assertIsNone(by_song["炭坑節"]["event_date_start"])
+        self.assertIsNone(by_song["炭坑節"]["event_venue_name"])
+
+    def test_v2_fabricated_or_empty_event_context_is_not_verified(self):
+        result, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 4, "observations": [
+                {
+                    "event_name": "試験盆踊り",
+                    "event_date_start": "2099-12-31",
+                    "venue_name": "捏造公園",
+                    "event_quote": "試験盆踊りで",
+                    "song_claims": [{
+                        "song_name": "東京音頭", "claim_type": "observed", "evidence_quote": "東京音頭を踊った",
+                    }],
+                },
+                {
+                    "event_name": None,
+                    "song_claims": [{
+                        "song_name": "炭坑節", "claim_type": "mentioned", "evidence_quote": "炭坑節の話",
+                    }],
+                },
+            ]}],
+            items=[item(text="試験盆踊りで東京音頭を踊った。炭坑節の話")],
+        )
+        by_song = {row["song_name"]: row for row in songs["observations"]}
+        self.assertFalse(by_song["東京音頭"]["event_context_valid"])
+        self.assertFalse(by_song["炭坑節"]["event_context_valid"])
+        issue_types = [row["issue_type"] for row in result["issues"]]
+        self.assertIn("event_date_not_in_text", issue_types)
+        self.assertIn("event_venue_not_in_text", issue_types)
+
+    def test_v2_same_claim_in_events_and_observations_prefers_event_route(self):
+        claim = {"song_name": "東京音頭", "claim_type": "announced", "evidence_quote": "東京音頭を予定"}
+        event = valid_event(song_claims=[claim])
+        _, songs, _, _ = self.run_apply(
+            [{"no": 1, "s": 4, "events": [event], "observations": [{
+                "event_name": "試験盆踊り", "song_claims": [claim],
+            }]}],
+            items=[item(text="8月20日に試験公園で試験盆踊りを開催。東京音頭を予定",
+                        machine_extracted_dates=["2099-08-20"])],
+        )
+        self.assertEqual(len(songs["observations"]), 1)
+        self.assertEqual(songs["observations"][0]["origin"], "events")
+
+    def test_v2_is_idempotent_and_conflicting_reanswer_is_held(self):
+        def result_for(claim_type, evidence_quote="東京音頭を踊った"):
+            return [{"no": 1, "s": 4, "observations": [{
+                "event_name": None,
+                "song_claims": [{
+                    "song_name": "東京音頭", "claim_type": claim_type, "evidence_quote": evidence_quote,
+                }],
+            }]}]
+        source = "きのう東京音頭を踊った。東京音頭は来年も流す予定"
+        _, songs, glossary, state = self.run_apply(
+            result_for("observed", "きのう東京音頭を踊った"),
+            items=[item(text=source)],
+        )
+        repeat, songs, _, _ = self.run_apply(
+            result_for("observed", "きのう東京音頭を踊った"),
+            items=[item(text=source)],
+            song_ledger=songs, glossary_ledger=glossary, state=state
+        )
+        self.assertEqual((len(songs["observations"]), repeat["song_observation_count"]), (1, 0))
+        conflict, songs, _, _ = self.run_apply(
+            result_for("announced", "東京音頭は来年も流す予定"),
+            items=[item(text=source)],
+            song_ledger=songs, glossary_ledger=glossary, state=state
+        )
+        self.assertEqual(len(songs["observations"]), 2)
+        self.assertTrue(all(row["claim_type_conflict"] for row in songs["observations"]))
+        self.assertIn("claim_type_conflict", [row["issue_type"] for row in conflict["issues"]])
+
+        unrelated, _, _, _ = self.run_apply(
+            [{"no": 1, "s": 1}], song_ledger=songs, glossary_ledger=glossary, state=state
+        )
+        self.assertNotIn("claim_type_conflict", [row["issue_type"] for row in unrelated["issues"]])
+        self.assertEqual(unrelated["song_issue_count"], 0)
+        self.assertEqual(unrelated["song_claim_conflict_total"], 1)
+
+    def test_broken_existing_report_never_claims_report_outcome_or_dependency(self):
+        event = valid_event(song_claims=[{
+            "song_name": "東京音頭", "claim_type": "announced", "evidence_quote": "東京音頭を予定",
+        }])
+        first_item = item(
+            text="8月20日に試験公園で試験盆踊りを開催。東京音頭を予定",
+            machine_extracted_dates=["2099-08-20"],
+        )
+        self.run_apply([{"no": 1, "s": 5, "events": [event]}], items=[first_item])
+        report_path = next(self.reports_dir.glob("*.json"))
+        report_id = json.loads(report_path.read_text(encoding="utf-8"))["source"]["report_id"]
+        cases = (
+            ({}, "report_id_mismatch"),
+            ({"source": {"report_id": report_id}, "events": [{}]}, "malformed_existing_report"),
+        )
+        for index, (broken_report, expected_issue) in enumerate(cases, 2):
+            with self.subTest(expected_issue=expected_issue):
+                report_path.write_text(json.dumps(broken_report), encoding="utf-8")
+                second_item = item(
+                    tweet_id=f"t{index}",
+                    text="8月20日に試験公園で試験盆踊りを開催。東京音頭を予定",
+                    machine_extracted_dates=["2099-08-20"],
+                )
+                result, songs, _, state = self.run_apply(
+                    [{"no": 1, "s": 5, "events": [event]}], items=[second_item]
+                )
+                self.assertEqual(result["report_count"], 0)
+                self.assertEqual(state["tweets"][f"t{index}"]["outcome"], "issue")
+                self.assertFalse(songs["observations"][0]["event_report_verified"])
+                self.assertIsNone(songs["observations"][0]["event_dependency_key"])
+                self.assertIn(expected_issue, [row["issue_type"] for row in result["issues"]])
+
+    def test_v2_legacy_rows_get_defaults_without_new_identity(self):
+        legacy = {"observation_id": "xsong_existing", "song_name": "東京音頭"}
+        ledger = {"observations": [legacy]}
+        result, songs, _, _ = self.run_apply([], items=[], song_ledger=ledger)
+        self.assertEqual(len(songs["observations"]), 1)
+        self.assertEqual(songs["observations"][0]["observation_id"], "xsong_existing")
+        self.assertEqual(songs["observations"][0]["claim_type"], "unknown")
+        self.assertEqual(songs["observations"][0]["observation_schema_version"], 1)
+        self.assertEqual(result["song_claim_type_total"]["unknown"], 1)
+
+    def test_malformed_results_array_fails_closed(self):
+        packet = {"batch_id": "x", "packets": [item()]}
+        state = {"tweets": {}}
+        result = apply(packet, {"batch_id": "x", "results": {}}, state, self.reports_dir,
+                       song_ledger={"observations": []}, glossary_ledger={"terms": []},
+                       today=date(2026, 8, 16), now=FIXED_NOW)
+        self.assertIn("malformed_results", [row["issue_type"] for row in result["issues"]])
+        self.assertNotIn("t1", state["tweets"])
 
     def test_type_contract_rejects_non_string_song_and_term_independently(self):
         result, songs, glossary, _ = self.run_apply(

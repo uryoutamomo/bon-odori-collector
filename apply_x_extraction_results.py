@@ -12,7 +12,25 @@ from build_x_extraction_packets import normalized_text
 from master_rdb.master_db import normalize_text, stable_id
 
 
-SONG_ISSUE_TYPES = {"malformed_observation", "empty_song_name", "song_not_in_text"}
+CLAIM_TYPES = {"announced", "observed", "mentioned", "unknown"}
+SONG_ISSUE_TYPES = {
+    "malformed_observation",
+    "empty_song_name",
+    "song_not_in_text",
+    "invalid_claim_type",
+    "malformed_claim_quote",
+    "empty_claim_quote",
+    "claim_quote_not_in_text",
+    "song_not_in_claim_quote",
+    "event_quote_not_in_text",
+    "event_date_invalid",
+    "event_date_not_in_text",
+    "event_date_range_invalid",
+    "event_venue_not_in_text",
+    "event_ward_not_in_text",
+    "malformed_event_context",
+    "claim_type_conflict",
+}
 GLOSSARY_ISSUE_TYPES = {"malformed_glossary", "malformed_term", "empty_term", "term_not_in_text"}
 
 
@@ -61,12 +79,219 @@ def _appears_in_text(value: str, text: str) -> bool:
     return bool(needle) and needle in _material_text(text)
 
 
+def _event_report_id(event: dict) -> str:
+    """Return the one report ID used by both E0 output and song lineage."""
+    return "x_event_" + stable_id(
+        "xevent",
+        normalize_text(event.get("event_name") or ""),
+        event.get("date_start") or "",
+        normalize_text(event.get("venue_name") or ""),
+    )
+
+
+def _report_event_id(report_id: str) -> str:
+    """Identify one event element inside a report, not merely the report file."""
+    # E0X currently emits exactly one event element per report. Keep this key
+    # stable when a later bundled post adds detail such as date_end.
+    return stable_id("xrevent", report_id, "0")
+
+
+def _legacy_report_event_id(entry: dict) -> str:
+    """Preserve the family key E0 used before reports carried entry_id."""
+    venue = entry.get("venue") if isinstance(entry.get("venue"), dict) else {}
+    return stable_id(
+        "entry",
+        normalize_text(entry.get("event_name_hint") or ""),
+        str(entry.get("event_year") or ""),
+        venue.get("name") or "",
+        length=12,
+    )
+
+
+def _reusable_x_event_report(report: dict, report_id: str) -> tuple[dict | None, str | None]:
+    """Validate the minimum E0 contract before reusing report lineage."""
+    if report.get("report_type") != "official_notice":
+        return None, "report_type"
+    source = report.get("source") if isinstance(report.get("source"), dict) else {}
+    if source.get("report_id") != report_id:
+        return None, "report_id"
+    if not source.get("raw_text") or not source.get("url"):
+        return None, "source"
+    events = report.get("events")
+    if not isinstance(events, list) or not events or not isinstance(events[0], dict):
+        return None, "events"
+    entry = events[0]
+    venue = entry.get("venue") if isinstance(entry.get("venue"), dict) else {}
+    has_identity = bool(entry.get("entry_id")) or bool(
+        entry.get("event_name_hint") and entry.get("event_year") and venue.get("name")
+    )
+    if entry.get("action") != "register_new" or not has_identity:
+        return None, "event_identity"
+    return entry, None
+
+
+def _optional_text(value, *, no, origin: str, field: str, issues: list[dict]) -> str | None:
+    if value is None:
+        return None
+    if not isinstance(value, str):
+        _issue(issues, "malformed_event_context", no=no, origin=origin, field=field)
+        return None
+    text = value.strip()
+    return text or None
+
+
+def _claim_type(value, *, no, origin: str, song_index: int, issues: list[dict]) -> str:
+    if isinstance(value, str) and value in CLAIM_TYPES:
+        return value
+    _issue(issues, "invalid_claim_type", no=no, origin=origin, song_index=song_index)
+    return "unknown"
+
+
+def _validate_observation_event_context(
+    *,
+    item: dict,
+    no,
+    origin: str,
+    event_name: str | None,
+    date_start: str | None,
+    date_end: str | None,
+    venue_name: str | None,
+    ward: str | None,
+    event_quote: str | None,
+    issues: list[dict],
+) -> tuple[bool, bool]:
+    """Return (event_name_in_text, locally_verified_context)."""
+    text = str(item.get("text") or "")
+    event_name_in_text = bool(event_name and _appears_in_text(event_name, text))
+    valid = True
+
+    machine_dates = item.get("machine_extracted_dates")
+    machine_dates = machine_dates if isinstance(machine_dates, list) else []
+    parsed_dates: list[date] = []
+    for field, value in (("event_date_start", date_start), ("event_date_end", date_end)):
+        if value is None:
+            continue
+        try:
+            parsed_dates.append(date.fromisoformat(value))
+        except ValueError:
+            _issue(issues, "event_date_invalid", no=no, origin=origin, field=field, value=value)
+            valid = False
+            continue
+        if value not in machine_dates:
+            _issue(issues, "event_date_not_in_text", no=no, origin=origin, field=field, value=value)
+            valid = False
+    if date_end and not date_start:
+        _issue(issues, "event_date_range_invalid", no=no, origin=origin)
+        valid = False
+    if len(parsed_dates) == 2 and parsed_dates[1] < parsed_dates[0]:
+        _issue(issues, "event_date_range_invalid", no=no, origin=origin)
+        valid = False
+    if venue_name and not _appears_in_text(venue_name, text):
+        _issue(issues, "event_venue_not_in_text", no=no, origin=origin)
+        valid = False
+    if ward and not _appears_in_text(ward, text):
+        _issue(issues, "event_ward_not_in_text", no=no, origin=origin)
+        valid = False
+    if event_quote and not _appears_in_text(event_quote, text):
+        _issue(issues, "event_quote_not_in_text", no=no, origin=origin)
+        valid = False
+
+    has_anchor = bool(date_start or venue_name or event_quote)
+    return event_name_in_text, bool(valid and event_name_in_text and has_anchor)
+
+
 def _song_rows(ledger: dict) -> list[dict]:
     rows = ledger.get("observations")
     if not isinstance(rows, list):
         rows = []
         ledger["observations"] = rows
     return rows
+
+
+def _normalize_song_rows(rows: list[dict]) -> None:
+    """Add read-time v2 defaults without changing legacy IDs or row count."""
+    defaults = {
+        "claim_family_id": None,
+        "event_name_in_text": None,
+        "event_report_verified": False,
+        "claim_type": "unknown",
+        "evidence_quote": None,
+        "event_date_start": None,
+        "event_date_end": None,
+        "event_venue_name": None,
+        "event_ward": None,
+        "event_quote": None,
+        "event_context_valid": None,
+        "event_report_id": None,
+        "report_event_id": None,
+        "event_dependency_key": None,
+        "claim_type_conflict": False,
+    }
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        row.setdefault("observation_schema_version", 1)
+        for key, value in defaults.items():
+            row.setdefault(key, value)
+
+
+def _claim_counts(rows: list[dict]) -> dict[str, int]:
+    counts = {claim_type: 0 for claim_type in sorted(CLAIM_TYPES)}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        claim_type = row.get("claim_type")
+        if claim_type not in CLAIM_TYPES:
+            claim_type = "unknown"
+        counts[claim_type] += 1
+    return counts
+
+
+def _claim_route_key(tweet_id, event_name, song_name, evidence_quote, claim_type) -> str:
+    """Deduplicate the same v2 claim repeated across answer routes."""
+    return stable_id(
+        "xsroute",
+        tweet_id or "",
+        _material_text(event_name or ""),
+        _material_text(song_name or ""),
+        _material_text(evidence_quote or ""),
+        claim_type or "unknown",
+    )
+
+
+def _claim_conflict_families(rows: list[dict]) -> set[str]:
+    families: dict[str, list[dict]] = {}
+    for row in rows:
+        if isinstance(row, dict) and isinstance(row.get("claim_family_id"), str):
+            families.setdefault(row["claim_family_id"], []).append(row)
+    return {
+        family_id
+        for family_id, family_rows in families.items()
+        if len({row.get("claim_type") for row in family_rows}) > 1
+    }
+
+
+def _mark_claim_conflicts(
+    rows: list[dict], issues: list[dict], *, initial_conflicts: set[str]
+) -> set[str]:
+    conflicts = _claim_conflict_families(rows)
+    families: dict[str, list[dict]] = {}
+    for row in rows:
+        if isinstance(row, dict) and isinstance(row.get("claim_family_id"), str):
+            families.setdefault(row["claim_family_id"], []).append(row)
+    for family_id, family_rows in families.items():
+        claim_types = {row.get("claim_type") for row in family_rows}
+        conflict = family_id in conflicts
+        for row in family_rows:
+            row["claim_type_conflict"] = conflict
+        if conflict and family_id not in initial_conflicts:
+            _issue(
+                issues,
+                "claim_type_conflict",
+                claim_family_id=family_id,
+                claim_types=sorted(str(value) for value in claim_types),
+            )
+    return conflicts
 
 
 def _glossary_rows(ledger: dict) -> list[dict]:
@@ -82,26 +307,89 @@ def _record_song_group(
     item: dict,
     no,
     event_name,
-    songs,
+    claims,
     origin: str,
+    event_context: dict,
+    dependency: dict | None,
     score: int | None,
     batch_id,
     stamp: str,
     issues: list[dict],
     rows: list[dict],
     existing_ids: set[str],
+    event_claim_keys: set[str],
 ) -> int:
     if event_name is not None and not isinstance(event_name, str):
         _issue(issues, "malformed_observation", no=no, origin=origin)
         return 0
-    if not isinstance(songs, list):
+    if not isinstance(claims, list):
         _issue(issues, "malformed_observation", no=no, origin=origin)
         return 0
 
     event_value = event_name.strip() if isinstance(event_name, str) else None
     text = str(item.get("text") or "")
+    issue_start = len(issues)
+    event_date_start = _optional_text(
+        event_context.get("date_start"), no=no, origin=origin, field="event_date_start", issues=issues
+    )
+    event_date_end = _optional_text(
+        event_context.get("date_end"), no=no, origin=origin, field="event_date_end", issues=issues
+    )
+    event_venue_name = _optional_text(
+        event_context.get("venue_name"), no=no, origin=origin, field="event_venue_name", issues=issues
+    )
+    event_ward = _optional_text(
+        event_context.get("ward"), no=no, origin=origin, field="event_ward", issues=issues
+    )
+    event_quote = _optional_text(
+        event_context.get("event_quote"), no=no, origin=origin, field="event_quote", issues=issues
+    )
+    event_context_well_typed = not any(
+        row.get("issue_type") == "malformed_event_context" for row in issues[issue_start:]
+    )
+    dependency = dependency if isinstance(dependency, dict) else {}
+    event_name_in_text, event_context_valid = _validate_observation_event_context(
+        item=item,
+        no=no,
+        origin=origin,
+        event_name=event_value,
+        date_start=event_date_start,
+        date_end=event_date_end,
+        venue_name=event_venue_name,
+        ward=event_ward,
+        event_quote=event_quote,
+        issues=issues,
+    )
+    event_context_valid = bool(event_context_well_typed and event_context_valid)
     added = 0
-    for song_index, raw_song in enumerate(songs):
+    for song_index, raw_claim in enumerate(claims):
+        legacy = isinstance(raw_claim, str)
+        if legacy:
+            raw_song = raw_claim
+            claim_type = "unknown"
+            evidence_quote = None
+        elif isinstance(raw_claim, dict):
+            raw_song = raw_claim.get("song_name")
+            claim_type = _claim_type(
+                raw_claim.get("claim_type"),
+                no=no,
+                origin=origin,
+                song_index=song_index,
+                issues=issues,
+            )
+            raw_quote = raw_claim.get("evidence_quote")
+            if not isinstance(raw_quote, str):
+                _issue(issues, "malformed_claim_quote", no=no, origin=origin, song_index=song_index)
+                continue
+            evidence_quote = raw_quote.strip()
+            if not evidence_quote:
+                _issue(issues, "empty_claim_quote", no=no, origin=origin, song_index=song_index)
+                continue
+        else:
+            raw_song = None
+            claim_type = "unknown"
+            evidence_quote = None
+
         if not isinstance(raw_song, str) or not raw_song.strip():
             _issue(issues, "empty_song_name", no=no, origin=origin, song_index=song_index)
             continue
@@ -109,24 +397,85 @@ def _record_song_group(
         if not _appears_in_text(song_name, text):
             _issue(issues, "song_not_in_text", no=no, origin=origin, song_name=song_name)
             continue
-        observation_id = stable_id(
-            "xsong",
-            item.get("tweet_id") or "",
-            _material_text(event_value or ""),
-            _material_text(song_name),
-        )
+        if not legacy:
+            if not _appears_in_text(evidence_quote or "", text):
+                _issue(
+                    issues,
+                    "claim_quote_not_in_text",
+                    no=no,
+                    origin=origin,
+                    song_index=song_index,
+                    song_name=song_name,
+                )
+                continue
+
+            if not _appears_in_text(song_name, evidence_quote or ""):
+                _issue(
+                    issues,
+                    "song_not_in_claim_quote",
+                    no=no,
+                    origin=origin,
+                    song_index=song_index,
+                    song_name=song_name,
+                )
+                continue
+            route_key = _claim_route_key(
+                item.get("tweet_id"), event_value, song_name, evidence_quote, claim_type
+            )
+            if origin == "observations" and route_key in event_claim_keys:
+                continue
+            if origin == "events":
+                event_claim_keys.add(route_key)
+
+        if legacy:
+            # Preserve the v1 identity so the existing observations are not duplicated.
+            claim_family_id = None
+            observation_id = stable_id(
+                "xsong",
+                item.get("tweet_id") or "",
+                _material_text(event_value or ""),
+                _material_text(song_name),
+            )
+        else:
+            claim_family_id = stable_id(
+                "xsclaim",
+                item.get("tweet_id") or "",
+                _material_text(event_value or ""),
+                event_date_start or "",
+                event_date_end or "",
+                _material_text(event_venue_name or ""),
+                _material_text(event_ward or ""),
+                _material_text(song_name),
+            )
+            observation_id = stable_id("xsong2", claim_family_id, claim_type)
         if observation_id in existing_ids:
             continue
         rows.append({
+            "observation_schema_version": 1 if legacy else 2,
             "observation_id": observation_id,
+            "claim_family_id": claim_family_id,
             "tweet_id": item.get("tweet_id") or "",
             "url": item.get("url") or "",
             "posted_at": item.get("posted_at") or "",
             "account": item.get("account") or "",
             "officiality": item.get("officiality") or "",
             "event_name": event_value,
+            "event_name_in_text": event_name_in_text,
+            "event_report_verified": bool(dependency),
             "song_name": song_name,
+            "claim_type": claim_type,
+            "evidence_quote": evidence_quote,
             "origin": origin,
+            "event_date_start": event_date_start,
+            "event_date_end": event_date_end,
+            "event_venue_name": event_venue_name,
+            "event_ward": event_ward,
+            "event_quote": event_quote,
+            "event_context_valid": event_context_valid,
+            "event_report_id": dependency.get("event_report_id"),
+            "report_event_id": dependency.get("report_event_id"),
+            "event_dependency_key": dependency.get("event_dependency_key"),
+            "claim_type_conflict": False,
             "batch_id": batch_id,
             "score": score,
             "text": text,
@@ -211,6 +560,7 @@ def _record_materials(
     issues: list[dict],
     song_ledger: dict,
     glossary_ledger: dict,
+    event_dependencies: dict[int, dict],
 ) -> tuple[int, set[str]]:
     song_rows = _song_rows(song_ledger)
     existing_ids = {
@@ -218,25 +568,47 @@ def _record_materials(
         for row in song_rows
         if isinstance(row, dict) and row.get("observation_id")
     }
+    event_claim_keys = {
+        _claim_route_key(
+            row.get("tweet_id"),
+            row.get("event_name"),
+            row.get("song_name"),
+            row.get("evidence_quote"),
+            row.get("claim_type"),
+        )
+        for row in song_rows
+        if isinstance(row, dict)
+        and row.get("observation_schema_version") == 2
+        and row.get("origin") == "events"
+    }
     new_songs = 0
 
-    # Events go first so a duplicate from observations keeps the stronger origin.
+    # `origin` records the answer route only. Meaning lives in each claim_type.
     events = result.get("events")
-    if score == 5 and isinstance(events, list):
-        for event in events:
-            if isinstance(event, dict) and "songs" in event:
+    if isinstance(events, list):
+        for event_index, event in enumerate(events):
+            if isinstance(event, dict) and ("song_claims" in event or "songs" in event):
                 new_songs += _record_song_group(
                     item=item,
                     no=no,
                     event_name=event.get("event_name"),
-                    songs=event.get("songs"),
+                    claims=event.get("song_claims", event.get("songs")),
                     origin="events",
+                    event_context={
+                        "date_start": event.get("date_start"),
+                        "date_end": event.get("date_end") or event.get("date_start"),
+                        "venue_name": event.get("venue_name"),
+                        "ward": event.get("ward"),
+                        "event_quote": event.get("quote"),
+                    },
+                    dependency=event_dependencies.get(event_index),
                     score=score,
                     batch_id=batch_id,
                     stamp=stamp,
                     issues=issues,
                     rows=song_rows,
                     existing_ids=existing_ids,
+                    event_claim_keys=event_claim_keys,
                 )
 
     if "observations" in result:
@@ -252,14 +624,23 @@ def _record_materials(
                     item=item,
                     no=no,
                     event_name=observation.get("event_name"),
-                    songs=observation.get("songs"),
+                    claims=observation.get("song_claims", observation.get("songs")),
                     origin="observations",
+                    event_context={
+                        "date_start": observation.get("event_date_start"),
+                        "date_end": observation.get("event_date_end") or observation.get("event_date_start"),
+                        "venue_name": observation.get("venue_name"),
+                        "ward": observation.get("ward"),
+                        "event_quote": observation.get("event_quote"),
+                    },
+                    dependency=None,
                     score=score,
                     batch_id=batch_id,
                     stamp=stamp,
                     issues=issues,
                     rows=song_rows,
                     existing_ids=existing_ids,
+                    event_claim_keys=event_claim_keys,
                 )
 
     accepted_terms: set[str] = set()
@@ -296,8 +677,16 @@ def apply(
     scores: list[dict] = []
     song_ledger = song_ledger if isinstance(song_ledger, dict) else {}
     glossary_ledger = glossary_ledger if isinstance(glossary_ledger, dict) else {}
-    song_ledger.update({"generated_by": "apply_x_extraction_results.py", "updated_at": stamp})
+    song_ledger.update({
+        "schema_version": 2,
+        "generated_by": "apply_x_extraction_results.py",
+        "updated_at": stamp,
+    })
     glossary_ledger.update({"generated_by": "apply_x_extraction_results.py", "updated_at": stamp})
+    initial_song_rows = _song_rows(song_ledger)
+    _normalize_song_rows(initial_song_rows)
+    initial_claim_counts = _claim_counts(initial_song_rows)
+    initial_claim_conflicts = _claim_conflict_families(initial_song_rows)
 
     if "tweets" not in state:
         state["tweets"] = {key: value for key, value in state.items() if isinstance(value, dict)}
@@ -306,7 +695,11 @@ def apply(
     answers = {}
     if answer.get("batch_id") != packet.get("batch_id"):
         _issue(issues, "batch_id_mismatch")
-    for result in answer.get("results", []):
+    raw_results = answer.get("results", [])
+    if not isinstance(raw_results, list):
+        _issue(issues, "malformed_results")
+        raw_results = []
+    for result in raw_results:
         if not isinstance(result, dict):
             _issue(issues, "malformed_result")
             continue
@@ -341,20 +734,7 @@ def apply(
                 "note": result.get("n"),
             })
 
-        added, accepted_terms = _record_materials(
-            result,
-            item,
-            no,
-            score,
-            packet.get("batch_id"),
-            stamp,
-            issues,
-            song_ledger,
-            glossary_ledger,
-        )
-        song_observation_count += added
-        accepted_glossary_terms.update(accepted_terms)
-
+        event_dependencies: dict[int, dict] = {}
         if score is not None and score < 5:
             outcome = "scored_only"
         elif score == 5:
@@ -362,7 +742,7 @@ def apply(
             if not isinstance(events, list) or not events:
                 _issue(issues, "missing_events", no=no)
             else:
-                for event in events:
+                for event_index, event in enumerate(events):
                     if not isinstance(event, dict):
                         _issue(issues, "malformed_event", no=no)
                         continue
@@ -380,6 +760,10 @@ def apply(
                     if not item.get("url"):
                         _issue(issues, "missing_source_url", no=no)
                         event_ok = False
+                    if not all(isinstance(value, str) and value for value in dates):
+                        _issue(issues, "date_not_in_text", no=no)
+                        event_ok = False
+                        continue
                     if any(value not in item.get("machine_extracted_dates", []) for value in dates):
                         _issue(issues, "date_not_in_text", no=no)
                         event_ok = False
@@ -388,23 +772,38 @@ def apply(
                         _issue(issues, "date_range_invalid", no=no)
                         event_ok = False
                         continue
-                    if event_ok and date.fromisoformat(dates[1]) < today:
-                        _issue(issues, "date_in_past", no=no)
-                        past = True
+                    if event_ok:
+                        try:
+                            past = date.fromisoformat(dates[1]) < today
+                        except ValueError:
+                            _issue(issues, "date_not_in_text", no=no)
+                            event_ok = False
+                        if past:
+                            _issue(issues, "date_in_past", no=no)
                     if past:
                         continue
                     if event_ok:
-                        outcome = "report"
-                        report_id = "x_event_" + stable_id(
-                            "xevent",
-                            normalize_text(event.get("event_name") or ""),
-                            event["date_start"],
-                            normalize_text(event.get("venue_name") or ""),
-                        )
+                        report_id = _event_report_id(event)
+                        event_entry_id = _report_event_id(report_id)
                         path = reports_dir / f"{report_id}.json"
                         if path.exists():
                             report = load(path, {})
-                            existing = report.get("events", [{}])[0]
+                            report_source = report.get("source") if isinstance(report.get("source"), dict) else {}
+                            if report_source.get("report_id") != report_id:
+                                _issue(issues, "report_id_mismatch", no=no, report_id=report_id)
+                                continue
+                            existing, invalid_field = _reusable_x_event_report(report, report_id)
+                            if existing is None:
+                                _issue(
+                                    issues,
+                                    "malformed_existing_report",
+                                    no=no,
+                                    report_id=report_id,
+                                    field=invalid_field,
+                                )
+                                continue
+                            event_entry_id = existing.get("entry_id") or _legacy_report_event_id(existing)
+                            existing["entry_id"] = event_entry_id
                             existing["detail_addendum"] = _add_url(existing.get("detail_addendum", ""), item["url"])
                         else:
                             report = {
@@ -419,6 +818,7 @@ def apply(
                                     "raw_text": item.get("text") or "",
                                 },
                                 "events": [{
+                                    "entry_id": event_entry_id,
                                     "action": "register_new",
                                     "event_name_hint": event.get("event_name"),
                                     "event_year": int(event["date_start"][:4]),
@@ -429,7 +829,30 @@ def apply(
                                 }],
                             }
                         _write(path, report)
+                        outcome = "report"
                         reports.append(report_id)
+                        event_dependencies[event_index] = {
+                            "event_report_id": report_id,
+                            "report_event_id": event_entry_id,
+                            "event_dependency_key": f"official_notice:{report_id}#{event_entry_id}",
+                        }
+
+        # Materials are intentionally recorded after event validation so a
+        # report dependency is attached only when that report actually exists.
+        added, accepted_terms = _record_materials(
+            result,
+            item,
+            no,
+            score,
+            packet.get("batch_id"),
+            stamp,
+            issues,
+            song_ledger,
+            glossary_ledger,
+            event_dependencies,
+        )
+        song_observation_count += added
+        accepted_glossary_terms.update(accepted_terms)
 
         if outcome != "report" and result.get("s") == 5:
             outcome = (
@@ -446,8 +869,16 @@ def apply(
 
     song_rows = _song_rows(song_ledger)
     glossary_rows = _glossary_rows(glossary_ledger)
+    claim_conflicts = _mark_claim_conflicts(
+        song_rows, issues, initial_conflicts=initial_claim_conflicts
+    )
     song_rows.sort(key=lambda row: str(row.get("observation_id") or ""))
     glossary_rows.sort(key=lambda row: str(row.get("term") or ""))
+    final_claim_counts = _claim_counts(song_rows)
+    added_claim_counts = {
+        claim_type: final_claim_counts[claim_type] - initial_claim_counts[claim_type]
+        for claim_type in sorted(CLAIM_TYPES)
+    }
     song_issue_count = sum(row.get("issue_type") in SONG_ISSUE_TYPES for row in issues)
     glossary_issue_count = sum(row.get("issue_type") in GLOSSARY_ISSUE_TYPES for row in issues)
     return {
@@ -456,6 +887,9 @@ def apply(
         "report_count": len(set(reports)),
         "bundled_count": len(reports) - len(set(reports)),
         "song_observation_count": song_observation_count,
+        "song_claim_type_added": added_claim_counts,
+        "song_claim_type_total": final_claim_counts,
+        "song_claim_conflict_total": len(claim_conflicts),
         "glossary_term_count": len(accepted_glossary_terms),
         "song_issue_count": song_issue_count,
         "glossary_issue_count": glossary_issue_count,

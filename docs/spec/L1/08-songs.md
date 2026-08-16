@@ -44,7 +44,7 @@ verified_by:
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
   - tests/test_x_post_extraction_songs.py
-updated_for: 7bcacd0
+updated_for: f00d58e
 ---
 
 # 曲目サブシステム
@@ -157,11 +157,22 @@ updated_for: 7bcacd0
 
 ### 1a. LLMが本文を読んで観測台帳へ記録する（手動・新経路）
 
-E0X回答を `apply_x_extraction_results.py` で取り込むと、5点イベントの `events[].songs` と、点数に関係なく返せる `observations[].songs` の両方を `data/x_song_observations.json` へ記録する。両方に同じ曲があれば `events` を先に扱い、安定IDで重複を止め、`origin` に `events` または `observations` を残す。URLが無い投稿でも観測は残せるが、投稿ID、原文、投稿日時、アカウント、公式性、原文上の行事名を来歴として保持する。
+E0X回答を `apply_x_extraction_results.py` で取り込むと、`events[].song_claims` と
+`observations[].song_claims` の両方を、点数に関係なく `data/x_song_observations.json` へ記録する。
+各曲は `announced` / `observed` / `mentioned` / `unknown` のclaim typeと、曲名を含む本文引用を持つ。
+`origin` は `events` / `observations` という回答経路だけを表し、告知・実績の意味には使わない。
+5点イベントが本文照合を通って実際にE0レポートになった場合だけ、report IDに加えてレポート内event entry IDと
+E0 family keyを残す。URLが無い投稿や過去日のclaimも観測としては残すが、存在しないE0系譜を付けない。
+旧 `songs: ["..."]` と既存観測はIDを変えず `unknown` として扱う。
 
-この段階で確認するのは「曲名文字列が投稿本文にある」ことだけである。曲マスタとの同一性判断も、`occurrence_songs` / `event_occurrences` への接続も行わず、行事名が取れなければ `event_name: null` のまま残す。実装の安全境界は [判断・仕分けのINV-XPE-010〜013](02-judgment.md) が持ち、回答形式と受け入れ条件は [E0X-S設計](../../x-post-extraction-songs-v1.md) に置く。
+この段階で確認するのは「曲名と根拠引用が投稿本文にあり、引用にも曲名がある」ことまでである。
+曲マスタとの同一性判断も、`occurrence_songs` / `event_occurrences` への接続も行わず、行事名が取れなければ
+`event_name: null` のまま残す。実装の安全境界は [判断・仕分けのINV-XPE-010〜016](02-judgment.md) が持ち、
+回答形式と受け入れ条件は [E0X-S v2.0](../../x-post-extraction-songs-v1.md) に置く。
 
-これは既存の正規表現抽出を置き換える経路ではない。まず観測台帳へ並走させ、再現率と誤検知を測ってから、曲マスタ照合・レビュー・開催回接続を第2段として設計する。
+これは既存の正規表現抽出を置き換える経路ではない。まず観測台帳へ並走させ、再現率と誤検知を測ってから、
+曲マスタ照合・レビュー・開催回接続を第2段として設計する。claim typeだけが食い違う再回答は同じfamilyの競合として
+保持し、下流の自動公開へ流さない。
 
 ### 1. 候補を拾う（毎日）
 
