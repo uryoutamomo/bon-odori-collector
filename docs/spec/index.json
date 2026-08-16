@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T16:19:33Z",
-  "generated_for_commit": "74c2390",
+  "generated_at": "2026-08-16T02:55:45Z",
+  "generated_for_commit": "d7d5f3f",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -104,6 +104,8 @@
       "layer": "L1",
       "title": "自動判断サブシステム",
       "owns": [
+        "build_x_extraction_packets.py",
+        "apply_x_extraction_results.py",
         "collection_support/event_evidence.py",
         "collection_support/suppression_rules.py",
         "collection_support/tokyo23_scope.py",
@@ -114,7 +116,16 @@
       ],
       "invariants": [
         "INV-JDG-001",
-        "INV-JDG-002"
+        "INV-JDG-002",
+        "INV-XPE-001",
+        "INV-XPE-002",
+        "INV-XPE-003",
+        "INV-XPE-004",
+        "INV-XPE-005",
+        "INV-XPE-006",
+        "INV-XPE-007",
+        "INV-XPE-008",
+        "INV-XPE-009"
       ],
       "verified_by": [
         "tests/test_event_evidence.py"
@@ -122,18 +133,25 @@
       "updated_for": "6537e7f",
       "path": "docs/spec/L1/02-judgment.md",
       "owned_files": [
+        "apply_x_extraction_results.py",
+        "build_x_extraction_packets.py",
         "collection_support/event_evidence.py",
         "collection_support/suppression_rules.py",
         "collection_support/tokyo23_scope.py",
         "collection_support/x_source_officiality.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 2,
+        "files_changed_since": 3
       },
-      "version": "1.0",
-      "revision_count": 1,
+      "version": "1.1",
+      "revision_count": 2,
       "history": [
+        {
+          "commit": "d7d5f3f",
+          "date": "2026-08-16",
+          "subject": "X投稿からE0レポートを作る器を新設する（意味判定層の退場・第0段） (#223)"
+        },
         {
           "commit": "1d2d00d",
           "date": "2026-08-13",
@@ -1285,6 +1303,81 @@
       ],
       "has_test": true
     },
+    "INV-XPE-001": {
+      "spec": "L1-judgment",
+      "title": "X投稿抽出は意味で捨てず、本文外の事実を通さない",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules",
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-002": {
+      "spec": "L1-judgment",
+      "title": "本文に無い日付・会場・引用からレポートを作らない",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-003": {
+      "spec": "L1-judgment",
+      "title": "5点未満は採点だけを保存する",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_unknown_no_is_flagged_and_low_scores_keep_only_the_score"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-004": {
+      "spec": "L1-judgment",
+      "title": "生成レポートは出典URLを持つ",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_post_without_url_never_becomes_a_report"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-005": {
+      "spec": "L1-judgment",
+      "title": "投稿由来の会場に住所を推測しない",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_report_omits_address_and_derives_year_from_date"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-006": {
+      "spec": "L1-judgment",
+      "title": "私人アカウントを公開詳細へ出さない",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-007": {
+      "spec": "L1-judgment",
+      "title": "未回答投稿は24時間後に再発行し、処理済みは掘り返さない",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_applied_post_is_never_reissued_even_with_reissue_flag",
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-008": {
+      "spec": "L1-judgment",
+      "title": "束ねたXレポートは代表投稿を変えない",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_bundle_keeps_first_representative_and_never_rewrites_events",
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-009": {
+      "spec": "L1-judgment",
+      "title": "累積voicesから読ませるのは既定で前日以降だけ、超過分は次回へ残す",
+      "tests": [
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_since_defaults_to_yesterday_and_max_batches_defers_the_rest"
+      ],
+      "has_test": true
+    },
     "INV-RVW-001": {
       "spec": "L1-review",
       "title": "同じ決定を二度書いても、二重に適用されない",
@@ -1814,6 +1907,8 @@
     "venue_sites.json": "L1-collection",
     "voices_s3_artifact.py": "L1-collection",
     "x_queries.json": "L1-collection",
+    "apply_x_extraction_results.py": "L1-judgment",
+    "build_x_extraction_packets.py": "L1-judgment",
     "collection_support/event_evidence.py": "L1-judgment",
     "collection_support/suppression_rules.py": "L1-judgment",
     "collection_support/tokyo23_scope.py": "L1-judgment",
@@ -2065,8 +2160,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 333,
-    "owned": 243,
+    "tracked_source_files": 335,
+    "owned": 245,
     "unowned": 90,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
