@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T13:26:23Z",
-  "generated_for_commit": "9c2d311",
+  "generated_at": "2026-08-16T13:28:15Z",
+  "generated_for_commit": "591308a",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -237,7 +237,8 @@
         "INV-RVW-013",
         "INV-RVW-014",
         "INV-RVW-015",
-        "INV-RVW-016"
+        "INV-RVW-016",
+        "INV-RVW-017"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -245,9 +246,11 @@
         "tests/test_judgment_j0_adjudication.py",
         "tests/test_e0b_bridge.py",
         "tests/test_e2_identity_judgment.py",
-        "tests/test_judgment_j0_read.py"
+        "tests/test_judgment_j0_read.py",
+        "tests/test_x_song_resolution_contract.py",
+        "tests/test_x_occurrence_resolution_contract.py"
       ],
-      "updated_for": "0efb933",
+      "updated_for": "64c874f",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -300,6 +303,8 @@
         "review_inbox_adapters/source_adapter.py",
         "review_inbox_adapters/source_writer.py",
         "review_inbox_adapters/x_gap_adapter.py",
+        "review_inbox_adapters/x_occurrence_resolution_contract.py",
+        "review_inbox_adapters/x_song_resolution_contract.py",
         "review_inbox_adapters/youtube_adapter.py",
         "review_inbox_adapters/youtube_aggregate.py",
         "review_inbox_adapters/youtube_user_confirmation_adapter.py",
@@ -314,13 +319,20 @@
         "search_rare_signal_backcheck_sources.py",
         "stage_rare_signal_backcheck_reviews.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 2
-      },
-      "version": "1.7",
-      "revision_count": 8,
+      "staleness": null,
+      "version": "1.9",
+      "revision_count": 10,
       "history": [
+        {
+          "commit": "87489f5",
+          "date": "2026-08-16",
+          "subject": "Close E2-S replay and publication gates"
+        },
+        {
+          "commit": "33c728c",
+          "date": "2026-08-16",
+          "subject": "Document E2-S v2 identity contracts"
+        },
         {
           "commit": "b30445d",
           "date": "2026-08-15",
@@ -380,7 +392,8 @@
         "master_rdb_freeze_policy.py",
         "transition_ended_occurrences.py",
         "run_event_state_axes_migration.py",
-        "run_post_batch_maintenance.py"
+        "run_post_batch_maintenance.py",
+        "run_x_song_identity_migration.py"
       ],
       "depends_on": [
         "L1-platform"
@@ -394,15 +407,19 @@
         "INV-MST-006",
         "INV-MST-007",
         "INV-MST-008",
-        "INV-MST-009"
+        "INV-MST-009",
+        "INV-MST-010"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
         "tests/test_master_db_s3_artifact.py",
         "tests/test_audit_master_rdb.py",
-        "tests/test_e2_identity_judgment.py"
+        "tests/test_e2_identity_judgment.py",
+        "tests/test_x_song_identity_migration.py",
+        "tests/test_x_song_apply_safety.py",
+        "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "02f5f76",
+      "updated_for": "64c874f",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         "audit_master_rdb.py",
@@ -413,6 +430,7 @@
         "event_model/place_dictionary.py",
         "event_model/series_alias_migration.py",
         "event_model/state_axes_migration.py",
+        "event_model/x_song_identity_migration.py",
         "event_model/year_context.py",
         "master_db_s3_artifact.py",
         "master_rdb/__init__.py",
@@ -435,19 +453,30 @@
         "report_apply/apply_official_notice_report.py",
         "report_apply/event_report_helpers.py",
         "report_apply/firsthand_report_helpers.py",
+        "report_apply/materialize_x_song_resolutions.py",
         "report_apply/official_notice_report_helpers.py",
         "report_apply/rdb_apply_support.py",
+        "report_apply/retract_x_song_materializations.py",
+        "report_apply/x_song_apply_safety.py",
         "run_event_state_axes_migration.py",
         "run_post_batch_maintenance.py",
+        "run_x_song_identity_migration.py",
         "transition_ended_occurrences.py"
       ],
-      "staleness": {
-        "commits_since": 3,
-        "files_changed_since": 2
-      },
-      "version": "1.7",
-      "revision_count": 8,
+      "staleness": null,
+      "version": "1.9",
+      "revision_count": 10,
       "history": [
+        {
+          "commit": "b9ff2f0",
+          "date": "2026-08-16",
+          "subject": "fix: close X song materialization safety gaps"
+        },
+        {
+          "commit": "33c728c",
+          "date": "2026-08-16",
+          "subject": "Document E2-S v2 identity contracts"
+        },
         {
           "commit": "28a8012",
           "date": "2026-08-15",
@@ -510,16 +539,18 @@
         "INV-PUB-004",
         "INV-PUB-005",
         "INV-PUB-006",
-        "INV-PUB-007"
+        "INV-PUB-007",
+        "INV-PUB-008"
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
         "tests/test_guard_public_events_sync.py",
         "tests/test_public_event_site_addition_tools.py",
         "tests/test_classify_public_events_diff.py",
-        "tests/test_e0b_bridge.py"
+        "tests/test_e0b_bridge.py",
+        "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "aaeecb7",
+      "updated_for": "64c874f",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -540,13 +571,25 @@
         "public_json_postprocessors/review_missing_occurrence_venues.py",
         "venues/export_public_venues.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
-      },
-      "version": "1.2",
-      "revision_count": 3,
+      "staleness": null,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "b9ff2f0",
+          "date": "2026-08-16",
+          "subject": "fix: close X song materialization safety gaps"
+        },
+        {
+          "commit": "87489f5",
+          "date": "2026-08-16",
+          "subject": "Close E2-S replay and publication gates"
+        },
+        {
+          "commit": "33c728c",
+          "date": "2026-08-16",
+          "subject": "Document E2-S v2 identity contracts"
+        },
         {
           "commit": "cd8eb13",
           "date": "2026-08-15",
@@ -687,6 +730,10 @@
         "apply_song_publication_review_decisions.py",
         "apply_weekly_song_final_corrections.py",
         "apply_weekly_song_review_decisions.py",
+        "build_x_song_resolution_packets.py",
+        "apply_x_song_resolution_results.py",
+        "build_x_occurrence_resolution_packets.py",
+        "apply_x_occurrence_resolution_results.py",
         "scripts/build_song_candidate_finite_payload.py",
         "scripts/run_song_candidate_decision_write.py",
         "scripts/manual/render_song_calibration_report.py"
@@ -700,16 +747,22 @@
       "invariants": [
         "INV-SNG-001",
         "INV-SNG-002",
-        "INV-SNG-003"
+        "INV-SNG-003",
+        "INV-SNG-004",
+        "INV-SNG-005",
+        "INV-SNG-006"
       ],
       "verified_by": [
         "tests/test_bon_odori_songs.py",
         "tests/test_song_catalog.py",
         "tests/test_weekly_song_triage.py",
         "tests/test_export_public_events.py",
-        "tests/test_x_post_extraction_songs.py"
+        "tests/test_x_post_extraction_songs.py",
+        "tests/test_x_song_resolution_contract.py",
+        "tests/test_x_occurrence_resolution_contract.py",
+        "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "f00d58e",
+      "updated_for": "87489f5",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         "apply_song_candidate_finite_actions.py",
@@ -719,6 +772,8 @@
         "apply_song_publication_review_decisions.py",
         "apply_weekly_song_final_corrections.py",
         "apply_weekly_song_review_decisions.py",
+        "apply_x_occurrence_resolution_results.py",
+        "apply_x_song_resolution_results.py",
         "build_event_song_candidates.py",
         "build_song_catalog_shadow_report.py",
         "build_song_content_research_queue.py",
@@ -727,6 +782,8 @@
         "build_song_occurrences.py",
         "build_song_ocr_queue.py",
         "build_song_publication_review.py",
+        "build_x_occurrence_resolution_packets.py",
+        "build_x_song_resolution_packets.py",
         "calibrate_song_predictions.py",
         "calibrate_song_probabilities_rdb.py",
         "export_master_rdb_song_occurrences.py",
@@ -746,12 +803,27 @@
         "triage_weekly_song_candidates.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.4",
-      "revision_count": 5,
+      "version": "1.7",
+      "revision_count": 8,
       "history": [
+        {
+          "commit": "f50c4ce",
+          "date": "2026-08-16",
+          "subject": "Harden E2-S event and rollback boundaries"
+        },
+        {
+          "commit": "87489f5",
+          "date": "2026-08-16",
+          "subject": "Close E2-S replay and publication gates"
+        },
+        {
+          "commit": "33c728c",
+          "date": "2026-08-16",
+          "subject": "Document E2-S v2 identity contracts"
+        },
         {
           "commit": "863486b",
           "date": "2026-08-16",
@@ -1054,24 +1126,28 @@
       "invariants": [
         "INV-SCH-001",
         "INV-SCH-002",
-        "INV-SCH-003"
+        "INV-SCH-003",
+        "INV-SCH-004"
       ],
       "verified_by": [
         "tests/test_master_db_connection_guards.py",
-        "tests/test_master_db_schema_invariants.py"
+        "tests/test_master_db_schema_invariants.py",
+        "tests/test_x_song_identity_migration.py"
       ],
-      "updated_for": "6537e7f",
+      "updated_for": "64c874f",
       "path": "docs/spec/L2/master-schema.md",
       "owned_files": [
         "master_rdb/master_db.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
-      },
-      "version": "1.1",
-      "revision_count": 2,
+      "staleness": null,
+      "version": "1.2",
+      "revision_count": 3,
       "history": [
+        {
+          "commit": "33c728c",
+          "date": "2026-08-16",
+          "subject": "Document E2-S v2 identity contracts"
+        },
         {
           "commit": "bf4f70d",
           "date": "2026-08-13",
@@ -1636,6 +1712,14 @@
       ],
       "has_test": true
     },
+    "INV-RVW-017": {
+      "spec": "L1-review",
+      "title": "X曲同定の判断取込は正本factを書かず、見せた候補全体を凍結する",
+      "tests": [
+        "tests/test_x_song_resolution_contract.py"
+      ],
+      "has_test": true
+    },
     "INV-MST-001": {
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
@@ -1714,6 +1798,14 @@
       ],
       "has_test": true
     },
+    "INV-MST-010": {
+      "spec": "L1-master",
+      "title": "X曲factのwriterはpreflight・backup・commit前検証を省略しない",
+      "tests": [
+        "tests/test_x_song_apply_safety.py"
+      ],
+      "has_test": true
+    },
     "INV-PUB-001": {
       "spec": "L1-publication",
       "title": "公開イベントの同一性は「名前 + 会場」で決まる",
@@ -1767,6 +1859,14 @@
       "title": "公開実績からRDBへ戻す候補は、対象IDなしでは作られない",
       "tests": [
         "tests/test_e0b_bridge.py::test_build_request_requires_occurrence_id"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-008": {
+      "spec": "L1-publication",
+      "title": "X materializer所有の曲は有効曲・意味対応・accepted根拠が揃った間だけ公開する",
+      "tests": [
+        "tests/test_x_song_materialization_lifecycle.py::test_public_export_requires_active_song_and_accepted_evidence_for_x_fact"
       ],
       "has_test": true
     },
@@ -1832,6 +1932,30 @@
       "title": "レビュー未了・無効・状態不明の曲を「確認済み」として扱わない",
       "tests": [
         "tests/test_song_catalog.py::TestSongCatalog::test_candidate_is_not_verified"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-004": {
+      "spec": "L1-songs",
+      "title": "検索missだけでは新曲を作らない",
+      "tests": [
+        "tests/test_x_song_resolution_contract.py::test_retrieval_packet_freezes_full_candidate_rows_and_forbids_new_song"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-005": {
+      "spec": "L1-songs",
+      "title": "X曲factは二つの同定と有効な根拠が揃ったときだけ作る",
+      "tests": [
+        "tests/test_x_song_materialization_lifecycle.py"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-006": {
+      "spec": "L1-songs",
+      "title": "未解決を時刻だけで繰り返さない",
+      "tests": [
+        "tests/test_x_song_resolution_contract.py::test_current_snapshot_decision_is_not_packetized_again"
       ],
       "has_test": true
     },
@@ -1941,6 +2065,14 @@
       "title": "スキーマ変更は適用済みmigrationとして記録する",
       "tests": [
         "tests/test_master_db_schema_invariants.py::test_migrations_are_recorded_unique_and_connections_enable_foreign_keys"
+      ],
+      "has_test": true
+    },
+    "INV-SCH-004": {
+      "spec": "L2-master-schema",
+      "title": "X曲の同定・反映・撤回はappend-only台帳で追跡する",
+      "tests": [
+        "tests/test_x_song_identity_migration.py"
       ],
       "has_test": true
     },
@@ -2075,6 +2207,8 @@
     "review_inbox_adapters/source_adapter.py": "L1-review",
     "review_inbox_adapters/source_writer.py": "L1-review",
     "review_inbox_adapters/x_gap_adapter.py": "L1-review",
+    "review_inbox_adapters/x_occurrence_resolution_contract.py": "L1-review",
+    "review_inbox_adapters/x_song_resolution_contract.py": "L1-review",
     "review_inbox_adapters/youtube_adapter.py": "L1-review",
     "review_inbox_adapters/youtube_aggregate.py": "L1-review",
     "review_inbox_adapters/youtube_user_confirmation_adapter.py": "L1-review",
@@ -2096,6 +2230,7 @@
     "event_model/place_dictionary.py": "L1-master",
     "event_model/series_alias_migration.py": "L1-master",
     "event_model/state_axes_migration.py": "L1-master",
+    "event_model/x_song_identity_migration.py": "L1-master",
     "event_model/year_context.py": "L1-master",
     "master_db_s3_artifact.py": "L1-master",
     "master_rdb/__init__.py": "L1-master",
@@ -2118,10 +2253,14 @@
     "report_apply/apply_official_notice_report.py": "L1-master",
     "report_apply/event_report_helpers.py": "L1-master",
     "report_apply/firsthand_report_helpers.py": "L1-master",
+    "report_apply/materialize_x_song_resolutions.py": "L1-master",
     "report_apply/official_notice_report_helpers.py": "L1-master",
     "report_apply/rdb_apply_support.py": "L1-master",
+    "report_apply/retract_x_song_materializations.py": "L1-master",
+    "report_apply/x_song_apply_safety.py": "L1-master",
     "run_event_state_axes_migration.py": "L1-master",
     "run_post_batch_maintenance.py": "L1-master",
+    "run_x_song_identity_migration.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
     "export_public_events.py": "L1-publication",
     "guard_site_public_event_additions.py": "L1-publication",
@@ -2159,6 +2298,8 @@
     "apply_song_publication_review_decisions.py": "L1-songs",
     "apply_weekly_song_final_corrections.py": "L1-songs",
     "apply_weekly_song_review_decisions.py": "L1-songs",
+    "apply_x_occurrence_resolution_results.py": "L1-songs",
+    "apply_x_song_resolution_results.py": "L1-songs",
     "build_event_song_candidates.py": "L1-songs",
     "build_song_catalog_shadow_report.py": "L1-songs",
     "build_song_content_research_queue.py": "L1-songs",
@@ -2167,6 +2308,8 @@
     "build_song_occurrences.py": "L1-songs",
     "build_song_ocr_queue.py": "L1-songs",
     "build_song_publication_review.py": "L1-songs",
+    "build_x_occurrence_resolution_packets.py": "L1-songs",
+    "build_x_song_resolution_packets.py": "L1-songs",
     "calibrate_song_predictions.py": "L1-songs",
     "calibrate_song_probabilities_rdb.py": "L1-songs",
     "export_master_rdb_song_occurrences.py": "L1-songs",
@@ -2272,8 +2415,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 335,
-    "owned": 245,
+    "tracked_source_files": 346,
+    "owned": 256,
     "unowned": 90,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
