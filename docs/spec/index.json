@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T15:45:25Z",
-  "generated_for_commit": "c753ca9",
+  "generated_at": "2026-08-16T16:20:05Z",
+  "generated_for_commit": "9eb53f5",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -478,7 +478,7 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 3,
         "files_changed_since": 3
       },
       "version": "1.11",
@@ -579,7 +579,7 @@
         "tests/test_verify_detail_cleanup_repair.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "64f2371",
+      "updated_for": "1ca79f4",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -602,12 +602,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.7",
-      "revision_count": 8,
+      "version": "1.8",
+      "revision_count": 9,
       "history": [
+        {
+          "commit": "1bd1ad3",
+          "date": "2026-08-17",
+          "subject": "Allow derived source URL representation changes"
+        },
         {
           "commit": "5892ac4",
           "date": "2026-08-17",
