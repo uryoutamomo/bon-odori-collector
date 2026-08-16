@@ -601,20 +601,54 @@ def _song_from_rdb(row):
 
 def load_rdb_occurrence_songs(conn):
     grouped = {}
-    rows = conn.execute(
+    occurrence_song_columns = {
+        row[1] for row in conn.execute("PRAGMA table_info(occurrence_songs)")
+    }
+    tables = {
+        row[0] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
+    }
+    e2_gate_available = (
+        {"origin", "song_id", "occurrence_song_id", "role"} <= occurrence_song_columns
+        and {"songs", "occurrence_song_evidence_links"} <= tables
+    )
+    gate = ""
+    joins = ""
+    if e2_gate_available:
+        joins = "LEFT JOIN songs s ON s.song_id = occurrence_songs.song_id"
+        gate = """
+        WHERE occurrence_songs.origin != 'observed_x_post'
+           OR (
+             s.status IN ('active', '有効')
+             AND (
+               (occurrence_songs.role = 'setlist' AND occurrence_songs.evidence_status = 'announced')
+               OR (occurrence_songs.role = 'result' AND occurrence_songs.evidence_status = 'observed')
+             )
+             AND EXISTS (
+               SELECT 1
+               FROM occurrence_song_evidence_links xlink
+               WHERE xlink.occurrence_song_id = occurrence_songs.occurrence_song_id
+                 AND xlink.link_status = 'accepted'
+             )
+           )
         """
+    rows = conn.execute(
+        f"""
         SELECT
-          occurrence_id,
-          song_title_raw,
-          evidence_status,
-          probability,
-          confidence,
-          source_count,
-          evidence_count,
-          inherited_from_year,
-          notes
+          occurrence_songs.occurrence_id,
+          occurrence_songs.song_title_raw,
+          occurrence_songs.evidence_status,
+          occurrence_songs.probability,
+          occurrence_songs.confidence,
+          occurrence_songs.source_count,
+          occurrence_songs.evidence_count,
+          occurrence_songs.inherited_from_year,
+          occurrence_songs.notes
         FROM occurrence_songs
-        ORDER BY occurrence_id, probability DESC, song_title_raw
+        {joins}
+        {gate}
+        ORDER BY occurrence_songs.occurrence_id,
+                 occurrence_songs.probability DESC,
+                 occurrence_songs.song_title_raw
         """
     ).fetchall()
     for row in rows:
