@@ -54,6 +54,8 @@ def eligible_observation(row: dict) -> tuple[bool, str]:
         return False, "non_fact_claim"
     if row.get("claim_type_conflict") is not False:
         return False, "claim_type_conflict"
+    if not normalize_text(row.get("event_name")) or row.get("event_name_in_text") is not True:
+        return False, "insufficient_event_identity"
     if not row.get("url") and not row.get("tweet_id"):
         return False, "missing_source_identity"
     song_name = row.get("song_name")

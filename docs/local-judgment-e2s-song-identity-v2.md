@@ -9,7 +9,7 @@ LLMの判断取込は同定台帳までで、`songs` / `event_occurrences` / `oc
 正本factの書き込みは、曲と開催回の両方が解決した後のmaterializer一箇所だけが行う。
 
 公開可能なclaimは `announced` と `observed` だけである。`mentioned` / `unknown` / conflict / legacy /
-根拠引用不正 / source identity欠落はpacketにもfactにもならない。`origin=events|observations` は回答経路であり、
+行事名欠落・行事名本文不一致 / 根拠引用不正 / source identity欠落はpacketにもfactにもならない。`origin=events|observations` は回答経路であり、
 告知・実測の意味には使わない。
 
 ## 1. 曲同定を二段階に分ける
@@ -127,7 +127,7 @@ DB transactionの失敗はcommit前rollbackで戻す。backupは監査・手動�
 
 各条件は、対応する防御を外すとテストが落ちる粒度で固定する。
 
-1. `mentioned` / `unknown` / legacy / claim conflictは曲・開催回packetを作らず、materializeしない。
+1. `mentioned` / `unknown` / legacy / claim conflict / 行事名欠落・本文不一致は曲・開催回packetを作らず、materializeしない。
 2. retrieval top 20に無いことだけでは`new_song`を選べず、`candidate_missing`決定なしにnoveltyへ進めない。
 3. noveltyは全catalog snapshotを持ち、同じnormalized title/aliasが現在存在すれば新曲を作らない。
 4. 同じsnapshotで決着済みの`unresolved` / `dependency_pending`を再packet化しない。

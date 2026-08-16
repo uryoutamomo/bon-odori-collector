@@ -118,19 +118,26 @@ def test_retrieval_packet_freezes_full_candidate_rows_and_forbids_new_song(tmp_p
     validate_packet_set(packet_set)
 
 
-def test_non_fact_conflict_and_legacy_observations_are_excluded(tmp_path):
+def test_non_fact_conflict_legacy_and_eventless_observations_are_excluded(tmp_path):
     conn = make_db(tmp_path)
     ledger = {
         "observations": [
             observation(observation_id="unknown", claim_type="unknown"),
             observation(observation_id="conflict", claim_type_conflict=True),
             observation(observation_id="legacy", observation_schema_version=1),
+            observation(
+                observation_id="eventless",
+                event_name=None,
+                event_name_in_text=True,
+                event_context_valid=True,
+            ),
         ]
     }
     packet_set = build_packet_set(conn, ledger, phase="retrieval", generated_at=NOW)
     assert packet_set["packets"] == []
     assert {row["reason"] for row in packet_set["excluded"]} == {
-        "non_fact_claim", "claim_type_conflict", "legacy_observation"
+        "non_fact_claim", "claim_type_conflict", "legacy_observation",
+        "insufficient_event_identity",
     }
 
 

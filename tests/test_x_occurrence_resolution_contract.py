@@ -115,6 +115,17 @@ def seed_accepted_event_decision(conn, dependency_key, occurrence_match="occ_1")
 
 def test_direct_candidates_require_valid_event_context_and_never_create_occurrence(tmp_path):
     conn = make_db(tmp_path)
+    eventless = build_packet_set(
+        conn,
+        {"observations": [claim(
+            event_name=None,
+            event_name_in_text=True,
+            event_context_valid=True,
+        )]},
+        generated_at=NOW,
+    )
+    assert eventless["packets"] == []
+    assert eventless["excluded"][0]["reason"] == "insufficient_event_identity"
     invalid = build_packet_set(
         conn,
         {"observations": [claim(event_context_valid=False)]},

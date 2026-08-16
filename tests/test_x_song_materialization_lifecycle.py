@@ -253,6 +253,71 @@ def decide_occurrence(conn, ledger):
     )
 
 
+def test_materializer_rolls_back_earlier_batch_writes_when_later_fact_collides(tmp_path):
+    conn = init_db(tmp_path / "master.sqlite")
+    seed_domain(conn)
+    conn.execute(
+        """
+        INSERT INTO songs (
+          song_id, canonical_title, normalized_title, status, created_at, updated_at
+        ) VALUES ('song_daitokyo', '大東京音頭', '大東京音頭', 'active', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.commit()
+
+    first = resolved_observation(
+        observation_id="xsong2_batch_a",
+        claim_family_id="xsclaim_batch_a",
+    )
+    second = resolved_observation(
+        observation_id="xsong2_batch_z",
+        claim_family_id="xsclaim_batch_z",
+        song_name="大東京音頭",
+        evidence_quote="曲目は大東京音頭です",
+    )
+    for row, song_id in ((first, "song_tokyo"), (second, "song_daitokyo")):
+        single = {"observations": [row]}
+        decide_song(conn, single, action="match_song", selected_song_id=song_id)
+        decide_occurrence(conn, single)
+
+    conn.execute(
+        """
+        INSERT INTO occurrence_songs (
+          occurrence_song_id, origin, occurrence_id, song_id, song_title_raw,
+          normalized_title, role, evidence_status, confidence, created_at, updated_at
+        ) VALUES ('osong_collision', 'curated', 'occ_1', 'song_tokyo', '大東京音頭',
+                  '大東京音頭', 'setlist', 'announced', 'high', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.commit()
+    before = {
+        "facts": conn.execute("SELECT COUNT(*) FROM occurrence_songs").fetchone()[0],
+        "evidence": conn.execute("SELECT COUNT(*) FROM evidence_items").fetchone()[0],
+        "materializations": conn.execute(
+            "SELECT COUNT(*) FROM x_song_materializations"
+        ).fetchone()[0],
+    }
+
+    with pytest.raises(ValueError, match="conflicts"):
+        materialize(
+            conn,
+            {"observations": [first, second]},
+            actor_id="oto-test",
+            now=NOW,
+        )
+
+    assert conn.execute("SELECT COUNT(*) FROM occurrence_songs").fetchone()[0] == before["facts"]
+    assert conn.execute("SELECT COUNT(*) FROM evidence_items").fetchone()[0] == before["evidence"]
+    assert conn.execute(
+        "SELECT COUNT(*) FROM x_song_materializations"
+    ).fetchone()[0] == before["materializations"]
+    assert conn.execute(
+        "SELECT COUNT(*) FROM occurrence_songs WHERE normalized_title='東京音頭'"
+    ).fetchone()[0] == 0
+
+
 def test_materializer_promotes_candidate_maps_announced_to_setlist_and_retracts(tmp_path):
     conn = init_db(tmp_path / "master.sqlite")
     seed_domain(conn, song_status="候補")

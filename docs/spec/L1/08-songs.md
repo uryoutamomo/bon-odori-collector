@@ -54,7 +54,7 @@ verified_by:
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: 64c874f
+updated_for: 87489f5
 ---
 
 # 曲目サブシステム
@@ -172,7 +172,7 @@ updated_for: 64c874f
 
 ### INV-SNG-005 X曲factは二つの同定と有効な根拠が揃ったときだけ作る
 
-- **内容**: `announced` / `observed` のcurrent observation SHAと、曲・開催回のactive decision、
+- **内容**: 行事名が本文と一致する `announced` / `observed` のcurrent observation SHAと、曲・開催回のactive decision、
   選択した曲・開催回の凍結行が現在値と一致したときだけmaterializeする。無関係な別entity追加では再判断しない。対応は
   `announced → setlist/announced`、`observed → result/observed` に固定する。retractはappend-onlyで、
   最後のX根拠が消えた曲のcreate/promotionを撤回順に依存せずCAS cleanupする。
