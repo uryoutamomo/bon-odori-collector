@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-16",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -221,6 +221,15 @@
       "linked_events": [],
       "decided_by": "machine",
       "tier": "unlinked"
+    },
+    {
+      "handle": "@akabanemagazine",
+      "name": "赤羽マガジン",
+      "source_type": "regional_media",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
     },
     {
       "handle": "@akamatsu_te",
@@ -452,6 +461,14 @@
       "pending_since": "2026-08-13"
     },
     {
+      "handle": "@chiba_syuhei",
+      "name": "ちば修平@仙台市議会議員(太白区) 自民党 松下政経塾出身",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@chihaya4mutsumi",
       "name": "千早四睦",
       "source_type": "official",
@@ -486,6 +503,14 @@
     {
       "handle": "@cpyukie",
       "name": "奥村ユキエ 大阪府議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@csakamoto_sakai",
+      "name": "坂本ちよこ 堺市議会議員(大阪維新の会)堺市北区",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -700,6 +725,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@futaikumiyo",
+      "name": "二井 くみよ 横浜市会議員(磯子区)選挙ドットコムも更新中",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@futetsuji",
       "name": "臨済宗妙心寺派　松壽山不徹寺",
       "source_type": "official",
@@ -808,6 +841,14 @@
     {
       "handle": "@gotou_masami",
       "name": "後藤まさみ日本共産党川崎市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@h27e7899a47x8y",
+      "name": "吉岡ひろ子 札幌市議会議員（清田区）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1226,6 +1267,14 @@
     {
       "handle": "@hosakamasahiro",
       "name": "保坂まさひろ 東京都議会議員 都民ファーストの会(台東区)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@hoshidakoji",
+      "name": "星田こうじ　元茨城県議会議員（つくば市区）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1929,6 +1978,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@katsufuji51210",
+      "name": "かっちぃさん＝藤岡克行 10周年のゆっふぃー＝寺嶋由芙大好き❣",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@katsumeyasushi",
       "name": "勝目やすし/衆議院議員（京都１区・３期）",
       "source_type": "official",
@@ -2289,6 +2346,14 @@
     {
       "handle": "@koibumi_spot",
       "name": "恋文すぽっときみまち(二ツ井町商工会)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@koichiromyoken",
+      "name": "明見孝一郎(尼崎市議会議員)",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2843,6 +2908,15 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@matsudotsushin",
+      "name": "松戸つうしん",
+      "source_type": "regional_media",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
+    },
+    {
       "handle": "@matsugarasuya",
       "name": "松浦洋之 川口市議会議員 自民党",
       "source_type": "official",
@@ -3226,6 +3300,14 @@
     {
       "handle": "@mrakugosin",
       "name": "村上落語会実行委員会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@msj_taiko",
+      "name": "湯河原ばやし宮下保存会(公式)",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -3660,6 +3742,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@nkurokuror77182",
+      "name": "吉祥寺では黒猫🐈‍⬛",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@nogi6kiseitan01",
       "name": "矢田萌華生誕祭実行委員会",
       "source_type": "official",
@@ -3817,6 +3907,14 @@
     {
       "handle": "@okatakadesu",
       "name": "岡安たかし 足立区議会議員 ☆RICE🌾",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@okawa__yuri",
+      "name": "大川ゆり｜摂津市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4057,6 +4155,14 @@
     {
       "handle": "@ozorakoki",
       "name": "大空こうき / 衆議院議員(江東区-東京15区), OZORA Koki",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@pbguhtcs5yleynt",
+      "name": "たかはし利宗（相馬市議会議員）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4622,6 +4728,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@shimoyama_komei",
+      "name": "下山しんいち☀️葛飾区区議会議員｜公明党｜防犯アドバイザー",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@shin5tw99",
       "name": "赤坂新町五丁目町会",
       "source_type": "official",
@@ -5069,6 +5183,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@tannomidori",
+      "name": "丹野みどり 国民民主党 衆議院議員 愛知県第11区(豊田市・みよし市）",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@taroh_agematsu",
       "name": "上松太郎【上松町観光協会公式】",
       "source_type": "official",
@@ -5377,6 +5499,15 @@
       "linked_events": [],
       "decided_by": "machine",
       "tier": "unlinked"
+    },
+    {
+      "handle": "@tunagate",
+      "name": "つなげーと公式",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "user",
+      "tier": "dormant",
+      "wake_after": "2027-06-01"
     },
     {
       "handle": "@ture987654321",
@@ -5961,33 +6092,6 @@
       "linked_events": [],
       "decided_by": "machine",
       "tier": "unlinked"
-    },
-    {
-      "handle": "@akabanemagazine",
-      "name": "赤羽マガジン",
-      "source_type": "regional_media",
-      "linked_events": [],
-      "decided_by": "user",
-      "tier": "dormant",
-      "wake_after": "2027-06-01"
-    },
-    {
-      "handle": "@tunagate",
-      "name": "つなげーと公式",
-      "source_type": "official",
-      "linked_events": [],
-      "decided_by": "user",
-      "tier": "dormant",
-      "wake_after": "2027-06-01"
-    },
-    {
-      "handle": "@matsudotsushin",
-      "name": "松戸つうしん",
-      "source_type": "regional_media",
-      "linked_events": [],
-      "decided_by": "user",
-      "tier": "dormant",
-      "wake_after": "2027-06-01"
     },
     {
       "handle": "@zojoji_official",

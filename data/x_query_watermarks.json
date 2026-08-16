@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "queries": {
+    "q-report": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T06:59:43.625804+00:00"
+    },
+    "q-venue": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T06:59:44.308231+00:00"
+    },
+    "q-song-program": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T06:59:49.365015+00:00"
+    },
+    "q-poster-flyer": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T07:00:53.434068+00:00"
+    },
+    "q-program-songs-wide": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T07:01:03.242268+00:00"
+    },
+    "q-cancel-change": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T07:01:52.314616+00:00"
+    },
+    "q-venue-tokyo-wards": {
+      "since_time": 1786859943,
+      "updated_at": "2026-08-16T07:02:36.967451+00:00"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 71,
+  "count": 79,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1124,6 +1124,135 @@
         "pic.x.com/QRw7d9UJzs"
       ],
       "text": "とある町の盆踊りを訪ねました。去年に続き歓迎されて嬉しい😊\n\n曲目はご当地曲・火の国太鼓・炭坑節・オアシス音頭。毎年この4曲を繰り返すらしい。\n\n大都会の人気の櫓もいいけど、地方の踊り手の少ない櫓を支えるのも大切だと感じました🎐 https://t.co/QRw7d9UJzs",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "f318d4de554f4a2d",
+      "status": "needs_ocr",
+      "account": "@kmne22",
+      "url": "https://x.com/kmne22/status/2088577145614528558",
+      "tweet_id": "2088577145614528558",
+      "date": "2026-08-15T10:42:50+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPwd1qgawAAMdmm.jpg",
+        "https://t.co/C7fRRKvWXa",
+        "pic.x.com/C7fRRKvWXa",
+        "https://pbs.twimg.com/media/HPwd1qnakAApN-w.jpg",
+        "https://pbs.twimg.com/media/HPwd1qcbIAAWdiV.jpg"
+      ],
+      "text": "駅近くで盆踊りやってたー！\nまだ始まる前だったけど出店沢山！！\nマグロ屋さんが出店してて、唐揚げと中落ち購入。格安だった！！\n唐揚げ揚げたてで熱々で美味かったー！\n臭みゼロ🐟明日も行きたい。\n盆踊り曲順表。。たのし〜\n見ないで帰ってきたけど😎\n盆ダンスしたい https://t.co/C7fRRKvWXa",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "d1f0be6b15a41112",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2088619393530155073",
+      "tweet_id": "2088619393530155073",
+      "date": "2026-08-15T13:30:42+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPxEQaPaEAAi5q5.jpg",
+        "https://t.co/4rtwHlojzu",
+        "pic.x.com/4rtwHlojzu",
+        "https://pbs.twimg.com/media/HPxEQ9Xb0AAIG9u.jpg"
+      ],
+      "text": "2026年8月15日(土)\n千葉県印西市\n「ココハレまつり2026」\n盆踊り18:20～19:45\n\n〈曲順〉\n印西音頭\nおさんぽ いんザイ君\n盆ギリ\nきよズン\n☆5分休\n\n炭坑節\nマツケン\n大東京\nダンヒロ\n\n★15分休\n\n印西音頭\nおさんぽ いんザイ君\n盆ギリ\nマツケン\n☆5分休\n\n八木節\n盆ギリ\nマツケン\nダンヒロ\n変調 印西音頭 https://t.co/4rtwHlojzu",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "34927ca02d459b6d",
+      "status": "needs_ocr",
+      "account": "@_yumemigati",
+      "url": "https://x.com/_yumemigati/status/2088619409179095320",
+      "tweet_id": "2088619409179095320",
+      "date": "2026-08-15T13:30:46+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPxER7xbQAExZIx.jpg",
+        "https://t.co/ny6Kbpwo2P",
+        "pic.x.com/ny6Kbpwo2P"
+      ],
+      "text": "8/6 納涼盆踊大会 @東京大神宮 ちっちゃい会場！　一回しか踊らない曲も多く、曲目多めでリードの人もいない？のかな？　それでも成立するのは長くやってきて踊れる人がいるからなのだと思う　なんか浮かれた曲があったのだけどタイトル忘れた　かき氷が100円で東京の盆踊りでは最安値な気がする🍧 https://t.co/ny6Kbpwo2P",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "635c6eb52cb0cbc5",
+      "status": "needs_ocr",
+      "account": "@hagino_eisuke",
+      "url": "https://x.com/hagino_eisuke/status/2088755044682457502",
+      "tweet_id": "2088755044682457502",
+      "date": "2026-08-15T22:29:44+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPy_o8GawAEUkDJ.jpg",
+        "https://t.co/E0o0HTrWek",
+        "pic.x.com/E0o0HTrWek"
+      ],
+      "text": "昨日は👉内藤自治会盆踊り大会が、すぎのこ公園にて開催されました。\n１曲目からラスト迄、休憩と交流をしながら楽しく踊らせて頂きました。\n着ていった👉ホッチ✖️タツノコプロコラボＴシャツが大好評でした。\n準備や運営に携わって頂いた全ての関係者の皆様へ心より感謝を申し上げます。\n\n#はぎの英輔 #国分寺市議会議員 #公明党",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ad5517d18919ad1d",
+      "status": "needs_ocr",
+      "account": "@iharayutaka1983",
+      "url": "https://x.com/iharayutaka1983/status/2088770057262547141",
+      "tweet_id": "2088770057262547141",
+      "date": "2026-08-15T23:29:23+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPzNSmOaYAE2Zh_.jpg",
+        "https://t.co/MYkgRSC9ie",
+        "pic.x.com/MYkgRSC9ie",
+        "https://pbs.twimg.com/media/HPzNSmDacAAATI6.jpg",
+        "https://pbs.twimg.com/media/HPzNSmNaQAAX9H_.jpg",
+        "https://pbs.twimg.com/media/HPzNSmPbwAAyehi.jpg"
+      ],
+      "text": "8/15\n昨夜は地元で4ヶ所の盆踊りに伺わせていただきました。\n大宮区では藤井先生、西区では金井先生、北区では伊藤まなぶ先生にお世話になりました。\n西区内野本郷では曲目”好きになった人”でしたので、一緒に踊っていただきました(^^)ありがとうございました🙏\n\n多くの方々にお声がけいただけることが新人としては嬉しい限りです。ちょっと人見知りなところも直さねば、です💦\n#さいたま市 \n#自民党",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "70447014f094f52c",
+      "status": "needs_ocr",
+      "account": "@bon_odorer",
+      "url": "https://x.com/bon_odorer/status/2088788908691906674",
+      "tweet_id": "2088788908691906674",
+      "date": "2026-08-16T00:44:18+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HPzdi20aIAA-ssq.jpg",
+        "https://t.co/S4qf9OPmKo",
+        "pic.x.com/S4qf9OPmKo",
+        "https://pbs.twimg.com/media/HPzdkbsbUAAgCHU.jpg",
+        "https://pbs.twimg.com/media/HPzdl17bAAAMvon.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2088788054240874497/img/7oG_TlzmYyDkIDk2.jpg"
+      ],
+      "text": "浦安・葛西盆探索\n\n浦安小学校 盆踊り\n新曲ソーラン節の勉強に（添付動画）\n\nただ曲数減ってしまいセトリ4周ぐらい？\n\nそのため近場のおすすめ梯子会場も探索\n例のAIデータで検索し２件ヒット\n\n中割天祖神社\nなぎさニュータウン\n\nなぎさの方は途中離脱も後半面白そう？\n踊ラー皆無のガラパゴス発見！ https://t.co/S4qf9OPmKo",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "696ed0338bae8bd0",
+      "status": "needs_ocr",
+      "account": "@yukikun72",
+      "url": "https://x.com/yukikun72/status/2088828057746596290",
+      "tweet_id": "2088828057746596290",
+      "date": "2026-08-16T03:19:52+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HP0B_D8bYAAqMM0.jpg",
+        "https://t.co/NFXbQvIjbb",
+        "pic.x.com/NFXbQvIjbb"
+      ],
+      "text": "♪おとといは上野で１２時～🎸🎸🎤🎹\n\n２０２６年８月１４日（金）、上野恩賜公園袴腰広場で開催された上野ゐの市盆踊りでのライブを拝見しました。\n\n１２時からは長澤明日香さん。\n到着がギリギリでしたが１曲目の大好きな「Call my name」から聴くことができてよかった。\n相変わらずステキな歌声です https://t.co/NFXbQvIjbb",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "57e6f9623c2611f0",
+      "status": "needs_ocr",
+      "account": "@GOB7qpuaaOFitmF",
+      "url": "https://x.com/GOB7qpuaaOFitmF/status/2088880171277578484",
+      "tweet_id": "2088880171277578484",
+      "date": "2026-08-16T06:46:57+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HP0xJpBasAAUj85.jpg",
+        "https://t.co/Yaz4WIteOx",
+        "pic.x.com/Yaz4WIteOx"
+      ],
+      "text": "「ゐの市盆踊り」@袴腰広場へ〜☔\n12時から踊れるという事で🐼の前に軽い気持ちで行ったらまさかの雨の洗礼😭\n…ですが充実のセトリ進行＋最高に楽しそうな彩之曾の方達を見て皆さんもテンション高くなっていたはず🙌\n踊る事が好きという気持ちは何にも止められないという事を再認識した会場でした🥰 https://t.co/Yaz4WIteOx",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
