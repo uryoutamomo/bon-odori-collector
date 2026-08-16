@@ -129,6 +129,24 @@ class E2SSongIdentityTest(unittest.TestCase):
         self.assertEqual(report["applied"], 1)
         self.assertEqual(self.conn.execute("SELECT COUNT(*) FROM occurrence_songs").fetchone()[0], 1)
 
+    def test_answer_contract_keys_produce_a_routable_result(self):
+        observation = self.observation()
+        packet = self.packet(observation)
+        contract = packet["answer_contract"]
+        answer = {key: contract[key] for key in contract}
+        answer.update(
+            song_match="song_tanko",
+            occurrence_match="occ_test",
+            reason="別名と開催回が一致",
+        )
+
+        report, _ = self.apply([observation], [packet], [answer])
+
+        self.assertEqual(contract["packet_id"], packet["packet_id"])
+        self.assertEqual(report["rejected_result"], 0)
+        self.assertNotIn("packet_missing", {row["issue_type"] for row in report["issues"]})
+        self.assertEqual(report["applied"], 1)
+
     # 2. occurrence none は決して書かない。
     def test_acceptance_02_occurrence_none_writes_nothing(self):
         observation = self.observation()

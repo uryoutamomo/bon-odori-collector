@@ -84,14 +84,15 @@ def build(
         songs = song_candidates(conn, song_name)
         occurrences = occurrence_candidates(conn, observation.get("event_name"))
         hashes = candidate_hashes(songs, occurrences)
+        frozen_packet_id = packet_id(
+            observation_id,
+            hashes["song_candidate_set_sha256"],
+            hashes["occurrence_candidate_set_sha256"],
+        )
         packets.append(
             {
                 "packet_version": PACKET_VERSION,
-                "packet_id": packet_id(
-                    observation_id,
-                    hashes["song_candidate_set_sha256"],
-                    hashes["occurrence_candidate_set_sha256"],
-                ),
+                "packet_id": frozen_packet_id,
                 "observation_id": observation_id,
                 "generated_at": when.isoformat(),
                 "observation_sha256": observation_sha256(observation),
@@ -100,6 +101,7 @@ def build(
                 "occurrence_candidates": occurrences,
                 **hashes,
                 "answer_contract": {
+                    "packet_id": frozen_packet_id,
                     "song_match": "one shown song_id or 'none'",
                     "occurrence_match": "one shown occurrence_id or 'none'",
                     "reason": "short identity rationale",

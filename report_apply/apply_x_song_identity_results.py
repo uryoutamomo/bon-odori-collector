@@ -132,8 +132,6 @@ def _packet_problem(packet: dict[str, Any], observation: dict[str, Any]) -> str 
 
 
 def _answer_problem(result: dict[str, Any], packet: dict[str, Any]) -> str | None:
-    if result.get("observation_id") != packet.get("observation_id"):
-        return "result_observation_id_mismatch"
     song_match = result.get("song_match")
     occurrence_match = result.get("occurrence_match")
     if not isinstance(song_match, str) or not song_match:
