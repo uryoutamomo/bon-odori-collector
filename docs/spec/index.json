@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T14:59:56Z",
-  "generated_for_commit": "1c0f355",
+  "generated_at": "2026-08-16T15:28:05Z",
+  "generated_for_commit": "a1e1c18",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -579,7 +579,7 @@
         "tests/test_verify_detail_cleanup_repair.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "fcb8277",
+      "updated_for": "64f2371",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -605,9 +605,14 @@
         "commits_since": 1,
         "files_changed_since": 1
       },
-      "version": "1.6",
-      "revision_count": 7,
+      "version": "1.7",
+      "revision_count": 8,
       "history": [
+        {
+          "commit": "5892ac4",
+          "date": "2026-08-17",
+          "subject": "Fix detail projection direct imports"
+        },
         {
           "commit": "9bd761e",
           "date": "2026-08-16",
