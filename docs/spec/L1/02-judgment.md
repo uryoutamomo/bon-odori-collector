@@ -34,7 +34,7 @@ verified_by:
   - tests/test_event_evidence.py
   - tests/test_x_post_extraction_e0x.py
   - tests/test_x_post_extraction_songs.py
-updated_for: f00d58e
+updated_for: d720f46
 ---
 
 # 自動判断サブシステム
@@ -156,7 +156,8 @@ updated_for: f00d58e
 
 ### INV-XPE-012 同じ回答を再取り込みしても観測件数を増やさない
 
-- **内容**: v2曲claimは投稿・行事文脈・曲名・根拠引用からfamily IDを、そこへclaim typeを加えて観測IDを作る。
+- **内容**: v2曲claimは投稿・行事文脈・曲名からfamily IDを作り、そこへclaim typeと根拠引用を加えて観測IDを作る。
+  family IDには根拠引用を含めない。同じ主題への再回答で引用範囲だけが変わっても、claim typeの意味競合を同じfamilyで検知する。
   旧文字列回答は従来IDを保つ。界隈語観測は全件の `source_tweet_ids` を保持し、`count` をその配列の長さから導出する。
   表示用の `examples` は5件で止めても、重複判定の根拠は失わない。
 - **なぜ**: 回答の再送や再実行は通常運用で起きる。例示上限を重複判定に兼用すると、6件目以降の再取り込みで件数だけが増え続けるから。
@@ -196,7 +197,7 @@ updated_for: f00d58e
 
 ### INV-XPE-016 claim再回答の意味競合を自動公開へ流さない
 
-- **内容**: 同じ投稿・行事文脈・曲・根拠引用でclaim typeだけが異なる回答は、同じfamilyの別観測として保持し、
+- **内容**: 同じ投稿・行事文脈・曲についてclaim typeが異なる再回答は、根拠引用の範囲が同じかどうかにかかわらず同じfamilyの別観測として保持し、
   `claim_type_conflict=true` とissueを残す。黙って上書きしない。
 - **なぜ**: LLM再実行の揺れを最後の回答で上書きすると、根拠なしに告知と実績が入れ替わるから。
 - **破れたときの症状**: 同じ原文の再処理だけで公開根拠ラベルや曲の役割が変わる。
