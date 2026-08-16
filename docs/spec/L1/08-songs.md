@@ -26,6 +26,8 @@ owns:
   - apply_song_publication_review_decisions.py
   - apply_weekly_song_final_corrections.py
   - apply_weekly_song_review_decisions.py
+  - data/x_song_identity_state.json
+  - tests/test_e2s_song_identity.py
   - scripts/build_song_candidate_finite_payload.py
   - scripts/run_song_candidate_decision_write.py
   - scripts/manual/render_song_calibration_report.py
@@ -38,13 +40,20 @@ invariants:
   - INV-SNG-001
   - INV-SNG-002
   - INV-SNG-003
+  - INV-SNG-004
+  - INV-SNG-005
+  - INV-SNG-006
+  - INV-SNG-007
+  - INV-SNG-008
+  - INV-SNG-009
 verified_by:
   - tests/test_bon_odori_songs.py
   - tests/test_song_catalog.py
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
   - tests/test_x_post_extraction_songs.py
-updated_for: 7bcacd0
+  - tests/test_e2s_song_identity.py
+updated_for: 0e28df5
 ---
 
 # 曲目サブシステム
@@ -80,6 +89,7 @@ updated_for: 7bcacd0
 
 - `data/voices.json` — X投稿。収集サブシステムの出力（曲名を含む文章と、曲目表の画像URL）
 - E0X回答の `events[].songs` / `observations[].songs` — LLMが投稿本文から書き写した曲名候補
+- E2-S回答の `song_match` / `occurrence_match` — 凍結された候補IDからLLMが選んだ同一性だけの回答
 - `data/public/events_public.json` — 公開済みイベントの本文。曲候補を探す対象文章になる
 - `data/weekly_harvest_candidates.json` — 週次収穫で拾った用語候補（`category` が `曲候補` の行だけ使う）
 - `data/youtube_song_candidates_review.json`、`data/youtube_setlist_occurrences.json` — YouTube概要欄由来のセットリスト
@@ -89,6 +99,8 @@ updated_for: 7bcacd0
 **出力**
 
 - `data/x_song_observations.json` — X投稿本文に曲名文字列があったという観測。曲マスタ・開催回へは未接続
+- `data/x_song_identity_packets/` — 曲と開催回の候補を別々に凍結した、1観測1問の判定パケット
+- `data/x_song_identity_state.json` — 観測ごとの適用・保留・再発行状態。本番適用時だけ更新する
 - `data/bon_odori_master.sqlite` の `occurrence_songs`（＋ `occurrence_song_evidence_links`）— 開催回ごとの曲。**公開の直接の元**
 - `data/event_song_candidates.json` — レビュー用の曲候補キュー（`f517fa8` 時点で1,527件、うち要レビュー885件）
 - `data/weekly_song_candidates_review.json` — 仕分けで決めきれなかった曲候補。レビュー受信箱へ渡る
@@ -147,6 +159,73 @@ updated_for: 7bcacd0
   `tests/test_song_catalog.py::TestSongCatalog::test_unrecognized_status_is_unknown_not_verified`、
   `tests/test_song_catalog.py::TestSongCatalog::test_ambiguous_alias_is_not_silently_resolved`
 
+### INV-SNG-004 X投稿の曲は、開催回の同一性が決まったときだけ正本へ書く
+
+- **内容**: E2-Sは、LLMがパケットに示した既存`occurrence_id`を選んだ観測だけを
+  `occurrence_songs`へ書く。`occurrence_match="none"`なら曲が既存でも新規でも書かず、30日保留する。
+- **なぜ**: 曲だけ分かっても結びつける開催回が無い。ここで開催回まで作ると、イベント同一性を扱うE2と競合し、
+  同じ行事を二重登録するから。
+- **破れたときの症状**: 行事名の無い投稿から、無関係な開催回の曲目が公開される／同じ開催回が複数できる。
+- **守っているコード**: `report_apply/apply_x_song_identity_results.py` の `apply_results()`
+- **守っているテスト**: `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_02_occurrence_none_writes_nothing`
+
+### INV-SNG-005 X投稿の根拠区分は抽出元から機械が決める
+
+- **内容**: 観測の`origin=events`は`announced` / `prediction`、`origin=observations`は
+  `observed` / `result`へ固定変換する。LLM回答に同名フィールドがあっても採用しない。
+- **なぜ**: LLMへ聞く仕事を同一性の2問だけに保ち、告知と実測を回答者の解釈で混ぜないため。
+- **破れたときの症状**: 「踊った」という投稿が今年の告知として表示される／告知曲が実測済みに見える。
+- **守っているコード**: `report_apply/apply_x_song_identity_results.py` の `ORIGIN_CONTRACT` と `apply_results()`
+- **守っているテスト**: `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_07_ignores_llm_evidence_status`
+
+### INV-SNG-006 E2-Sが新しく作る曲にはX投稿の系譜を必ず残す
+
+- **内容**: `song_match="none"`で新規登録する`songs`行は`status='active'`とし、
+  `source_url`に投稿URL、`memo`に観測IDと抽出バッチIDを必ず入れる。URLが空ならtweet IDから復元し、
+  復元したこともmemoへ書く。
+- **なぜ**: LLMの読み取りを人レビューと同等に扱う代わりに、誤りが見つかったとき元投稿まで戻って消せることを
+  採用条件にしているから。
+- **破れたときの症状**: 公開された新曲がどの投稿由来か追えず、誤りを安全に取り消せない。
+- **守っているコード**: `report_apply/apply_x_song_identity_results.py` の `_effective_url()`、
+  `_lineage_memo()`、`apply_results()`
+- **守っているテスト**: `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_04_all_new_songs_have_provenance`、
+  `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_23_reconstructs_empty_url_and_marks_memo`
+
+### INV-SNG-007 判定に見せた曲候補と開催回候補を別々に凍結する
+
+- **内容**: パケットは曲候補ID列と開催回候補ID列を別々のSHA-256で固定し、取り込み直前に現在のDBから
+  同じ順序で作り直して照合する。どちらかが変われば書かず`stale`にし、すぐ再発行できる状態へ戻す。
+  ハッシュ対象はID列だけで、表示名・状態などは含めない。
+- **なぜ**: 古いDBコピーで「該当なし」と答えた判定から重複を作る事故を防ぎつつ、表示だけの変更で
+  不要な再判定を起こさないため。
+- **破れたときの症状**: 既にある曲や開催回が重複登録される／名称の説明を直しただけで判定が大量にやり直しになる。
+- **守っているコード**: `review_inbox_adapters/x_song_identity_contract.py` の `candidate_hashes()`、
+  `report_apply/apply_x_song_identity_results.py` の `apply_results()`
+- **守っているテスト**: `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_09_candidate_set_change_is_stale`、
+  `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_27_candidate_hash_uses_only_ordered_ids`
+
+### INV-SNG-008 E2-Sは既存曲のレビュー状態を変更しない
+
+- **内容**: LLMが既存`song_id`を選んでも、その`songs.status`は更新しない。`候補`の曲を開催回へ結びつけても
+  `候補`のままにする。
+- **なぜ**: 曲の同一性と曲マスタの昇格は別の仕事である。ここで状態を上げると、有限行動による曲レビューを迂回するから。
+- **破れたときの症状**: 開催回へ曲を足しただけで、未レビュー曲が曲マスタ上も確認済みに変わる。
+- **守っているコード**: `report_apply/event_report_helpers.py` の `upsert_occurrence_song()` と
+  `report_apply/apply_x_song_identity_results.py` の `apply_results()`
+- **守っているテスト**: `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_04b_existing_song_status_is_unchanged`
+
+### INV-SNG-009 既存song_idを選んだら名前で同一性を開き直さない
+
+- **内容**: E2-Sは選ばれた`song_id`をhelperへ明示し、名前検索と暗黙登録を迂回する。開催回側へ書く名前は
+  現在の`canonical_title`とし、投稿の生表記は`evidence_items.raw_json`へ残す。
+- **なぜ**: helperは別名を検索しない。別名「炭鉱節」から既存の「炭坑節」を選んだ後に名前で探し直すと、
+  同じ曲を新しい曲として登録し、公開にも2行並べるから。
+- **破れたときの症状**: 同じ曲が表記違いで曲マスタと開催回曲目に重複する。
+- **守っているコード**: `report_apply/event_report_helpers.py` の `upsert_occurrence_song()` と
+  `report_apply/apply_x_song_identity_results.py` の `apply_results()`
+- **守っているテスト**: `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_17_alias_match_with_explicit_id_does_not_create_song`、
+  `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_19_two_spellings_of_same_song_create_one_occurrence_song`
+
 ## 主要な流れ
 
 最初に、なぜこれだけドメインで切ってあるかを書いておく。曲目は収集から公開までの全工程を縦に貫いており、
@@ -161,7 +240,21 @@ E0X回答を `apply_x_extraction_results.py` で取り込むと、5点イベン�
 
 この段階で確認するのは「曲名文字列が投稿本文にある」ことだけである。曲マスタとの同一性判断も、`occurrence_songs` / `event_occurrences` への接続も行わず、行事名が取れなければ `event_name: null` のまま残す。実装の安全境界は [判断・仕分けのINV-XPE-010〜013](02-judgment.md) が持ち、回答形式と受け入れ条件は [E0X-S設計](../../x-post-extraction-songs-v1.md) に置く。
 
-これは既存の正規表現抽出を置き換える経路ではない。まず観測台帳へ並走させ、再現率と誤検知を測ってから、曲マスタ照合・レビュー・開催回接続を第2段として設計する。
+これは既存の正規表現抽出を直ちに置き換える経路ではない。まず観測台帳へ並走させ、再現率と誤検知を測る。
+
+### 1b. 観測を曲・開催回へ結びつける（手動・E2-S）
+
+`review_inbox_adapters/build_x_song_identity_packets.py` は観測ごとに曲候補と開催回候補を最大20件ずつ作る。
+曲は`曲名完全一致 → 前方一致 → 部分一致 → song_id`、開催回は同じ一致順位の後に
+`date_start降順 → occurrence_id`で並べる。別名で当たった候補にはその別名も載せる。
+LLMへ聞くのは「どの曲か」「どの開催回か」の2問だけで、根拠区分・role・書き込み先は機械が決める。
+
+`report_apply/apply_x_song_identity_results.py` は、パケットの候補ID列を現在のRDBから再構築して照合し、
+変わっていなければ既存`upsert_occurrence_song()`を通して`evidence_items`、`occurrence_songs`、
+`occurrence_song_evidence_links`へ書く。既存曲はcanonical名を使い、新曲はX投稿のURL・観測ID・バッチIDを残して
+`active`登録する。confidenceは件数では変えず常に`high`である。既定はコピーDBへのdry-runで、
+本番適用時だけ`data/x_song_identity_state.json`を更新する。詳細な契約と27件の受け入れ条件は
+[E2-S v1.3設計](../../local-judgment-e2s-song-identity-v1.md)に置く。
 
 ### 1. 候補を拾う（毎日）
 
@@ -178,7 +271,7 @@ E0X回答を `apply_x_extraction_results.py` で取り込むと、5点イベン�
 `extract_song_hints()` は公開本文から**そのまま出してよい程度**に絞った抽出で、
 `extract_song_candidates()` は**レビュー前提でもっと広く拾う**抽出である。混ぜて使ってはいけない。
 
-### 2. どの曲かを決める（毎日）
+### 2. 正規表現由来の候補を仕分ける（毎日・旧経路）
 
 `classify_candidate()` が、候補の文字列を4つの行き先へ振り分ける。
 先に手書きの対応表（`CANONICAL_MAP` / `NOISE_EXACT` / `AMBIGUOUS_TERMS`）を見て、
@@ -189,14 +282,15 @@ E0X回答を `apply_x_extraction_results.py` で取り込むと、5点イベン�
 
 `f517fa8` 時点で日次に記録されている仕分け結果は、曲候補207件・直接採用134件・ノイズ68件・要レビュー5件である。
 
-### 3. 人が裁定する
+### 3. 旧経路で決めきれない曲を人が裁定する
 
 決めきれなかったものは `data/weekly_song_candidates_review.json` に出て、
 日次の低優先レーンから[レビュー受信箱](03-review.md)へ入る（`--source daily_song_candidate=...`）。
 裁定の結果は `song_candidate_finite_actions.py` が定める**有限の行動**
 （`register_song` / `add_song_alias` / `reject_song` / `hold`）に変換され、
 `apply_song_candidate_finite_actions.py` がマスタへ書く。
-レビューされていないものが暗黙に採用されることはなく、決まっていなければ `hold` になる。
+この有限行動の経路では、レビューされていないものが暗黙に採用されることはなく、決まっていなければ `hold` になる。
+E2-Sは、本文照合済みのX観測に対するLLM同一性判定を人レビューと同等に扱う別経路である。
 
 ### 4. 開催回へ結びつけ、確からしさを計算する（手動）
 
@@ -220,7 +314,7 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
 
 - [収集](01-collection.md) — `voices.json` が薄い日は曲の入力そのものが無い。
 - [判断](02-judgment.md) — E0X回答から曲名の観測台帳を作る。イベントと開催回が特定できていないと、曲を結びつける先が無い。
-- [レビュー](03-review.md) — 曲の同一性はここでしか確定しない。**この工程の実質的な律速**。
+- [レビュー](03-review.md) — 正規表現由来の旧経路で決めきれない曲を有限行動へ裁定する。
 - [マスタ](04-master.md) / [マスタRDBスキーマ契約](../L2/master-schema.md) — `songs`・`song_aliases`・`occurrence_songs` の形。
 
 **下流**
@@ -241,13 +335,18 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
 | 曲名でない文章が曲目に並んでいる | INV-SNG-001。抑制リストに無い新種の文章断片が抜けた |
 | 曲の根拠ラベルが実態とずれる（去年の曲が今年の告知に見える） | INV-SNG-002。`evidence_status` と `inherited_from_year` の解釈 |
 | 誰も確認していない曲名が確定曲として出る | INV-SNG-003。台帳の状態より形の判定が勝った |
+| 行事不明のX投稿から曲目が公開される | INV-SNG-004。`occurrence_match=none`で書いていないか |
+| 告知曲と実測曲のラベルが逆になる | INV-SNG-005。LLM回答から根拠区分を採っていないか |
+| X由来の新曲から元投稿へ戻れない | INV-SNG-006。新規曲のURL・memoが欠けている |
+| 曲・開催回の重複が急に増える | INV-SNG-007 / 009。候補凍結か明示IDが迂回されている |
 | 曲名を直したのにサイトの表示が変わらない | `songs` を直して `occurrence_songs` を直していない |
 | 曲の確率が何日も同じ | 正常。確率計算は手動実行で、日次では動かない |
 | 曲目が付くイベントが増えない | 候補キューは溜まっているがレビューが進んでいない |
 
 ## 未解決・注意点
 
-- **E0X-Sは第1段の観測だけで、曲マスタ・レビュー・開催回へ未接続である。** `data/x_song_observations.json` をどの照合器へ渡し、同名曲や表記揺れをどう裁定するかは第2段で決める。観測が増えても公開曲目はまだ増えない。
+- **E2-Sは手動経路で、日次workflowには未接続である。** 観測台帳からパケットを作り、LLM回答をdry-runしてから
+  明示的に適用する。旧経路を止めるのは、新旧の抽出件数・誤検知・`occurrence_songs`到達件数を数日分比較した後である。
 - **既存の正規表現経路は稼働したままである。** E0X-Sの品質を実測する前に置き換えない。二つの経路の件数差を「重複」だけと決めつけず、本文照合・再現率・誤検知を比較する。
 - **週次収穫レビューが2026-06-25から動いていない。** `weekly_harvest.yml` は
   `manual-harvest-fallback` という手動起動のworkflowになっており、定期実行されていない。

@@ -447,23 +447,29 @@ def upsert_evidence_item(
     platform,
     evidence_type,
     source_key,
+    source_id=None,
     account_key=None,
     title=None,
     text_excerpt,
     url=None,
     event_date=None,
     raw_json_extra=None,
+    published_at=None,
+    observed_at=None,
+    raw_status="reviewed",
     now=None,
 ):
     """Create or update one evidence_items row. Does not link it to any occurrence."""
     now = now or now_utc()
+    published_at = now if published_at is None else published_at
+    observed_at = now if observed_at is None else observed_at
     conn.execute(
         """
         INSERT INTO evidence_items (
           evidence_id, platform, evidence_type, source_key, source_id, account_key,
           title, text_excerpt, url, published_at, observed_at, detected_event_date,
           raw_status, raw_json
-        ) VALUES (?, ?, ?, ?, NULL, ?, ?, ?, ?, ?, ?, ?, 'reviewed', ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(evidence_id) DO UPDATE SET
           text_excerpt=excluded.text_excerpt,
           url=COALESCE(evidence_items.url, excluded.url),
@@ -475,13 +481,15 @@ def upsert_evidence_item(
             platform,
             evidence_type,
             source_key,
+            source_id,
             account_key,
             title,
             text_excerpt,
             url,
-            now,
-            now,
+            published_at,
+            observed_at,
             event_date,
+            raw_status,
             json_text(raw_json_extra or {}),
         ),
     )
@@ -514,28 +522,45 @@ def upsert_occurrence_song(
     evidence_status,
     basis_key,
     evidence_note,
+    song_id=None,
+    origin="curated",
+    song_source_url=None,
+    song_memo=None,
     uncertain=False,
     now=None,
 ):
-    """Name-match song_title_raw against songs, then idempotently upsert occurrence_songs."""
+    """Resolve or create a song, then idempotently upsert occurrence_songs.
+
+    ``song_id`` is an identity decision, not a hint.  When supplied, this
+    helper neither re-opens the decision by name nor implicitly registers a
+    song.  The optional provenance arguments default to the historical
+    behavior used by official-notice and firsthand callers.
+    """
     now = now or now_utc()
     normalized = normalize_text(song_title_raw)
-    existing_song = _rows(conn, "SELECT song_id FROM songs WHERE normalized_title = ?", (normalized,))
-    song_id = existing_song[0]["song_id"] if existing_song else stable_id("song", song_title_raw)
-    if not existing_song:
+    if song_id is not None:
+        selected_song = _rows(conn, "SELECT song_id FROM songs WHERE song_id = ?", (song_id,))
+        if not selected_song:
+            raise ValueError(f"song_id_not_found: {song_id}")
+        resolved_song_id = song_id
+        existing_song = selected_song
+    else:
+        existing_song = _rows(conn, "SELECT song_id FROM songs WHERE normalized_title = ?", (normalized,))
+        resolved_song_id = existing_song[0]["song_id"] if existing_song else stable_id("song", song_title_raw)
+    if song_id is None and not existing_song:
         conn.execute(
             """
             INSERT INTO songs (
               song_id, canonical_title, normalized_title, category, status,
               prior_tier, target_area, evidence_count, source_url, memo,
               created_at, updated_at
-            ) VALUES (?, ?, ?, NULL, 'active', NULL, NULL, 1, NULL, NULL, ?, ?)
+            ) VALUES (?, ?, ?, NULL, 'active', NULL, NULL, 1, ?, ?, ?, ?)
             ON CONFLICT(normalized_title) DO NOTHING
             """,
-            (song_id, song_title_raw, normalized, now, now),
+            (resolved_song_id, song_title_raw, normalized, song_source_url, song_memo, now, now),
         )
         refetch = _rows(conn, "SELECT song_id FROM songs WHERE normalized_title = ?", (normalized,))
-        song_id = refetch[0]["song_id"]
+        resolved_song_id = refetch[0]["song_id"]
 
     confidence = "medium" if uncertain else "high"
     occurrence_song_id = stable_id("osong", occurrence_id, normalized, role)
@@ -546,7 +571,7 @@ def upsert_occurrence_song(
           normalized_title, role, evidence_status, probability, confidence,
           source_count, evidence_count, inherited_from_year,
           first_observed_at, last_observed_at, notes, created_at, updated_at
-        ) VALUES (?, 'curated', ?, ?, ?, ?, ?, ?, NULL, ?, 1, 1, NULL, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, NULL, ?, 1, 1, NULL, ?, ?, ?, ?, ?)
         ON CONFLICT(occurrence_id, normalized_title, role) DO UPDATE SET
           song_id=excluded.song_id,
           song_title_raw=excluded.song_title_raw,
@@ -556,8 +581,9 @@ def upsert_occurrence_song(
         """,
         (
             occurrence_song_id,
+            origin,
             occurrence_id,
-            song_id,
+            resolved_song_id,
             song_title_raw,
             normalized,
             role,
@@ -580,4 +606,4 @@ def upsert_occurrence_song(
         """,
         (occurrence_song_id, evidence_id, 0.7 if uncertain else 0.95, evidence_note),
     )
-    return {"song_id": song_id, "occurrence_song_id": occurrence_song_id}
+    return {"song_id": resolved_song_id, "occurrence_song_id": occurrence_song_id}

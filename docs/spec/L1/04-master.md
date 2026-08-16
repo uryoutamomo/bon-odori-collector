@@ -34,7 +34,8 @@ verified_by:
   - tests/test_master_db_s3_artifact.py
   - tests/test_audit_master_rdb.py
   - tests/test_e2_identity_judgment.py
-updated_for: 02f5f76
+  - tests/test_e2s_song_identity.py
+updated_for: 0e28df5
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -80,13 +81,17 @@ updated_for: 02f5f76
 - **内容**: `report_apply/apply_change_requests.py` が受け付ける変更は
   `create_current_year_occurrence` / `confirm_current_year_date` / `add_historical_reference` /
   `update_venue` / `add_song_evidence` に限られる（`CHANGE_TYPES`）。
-  未知の種別は検証で弾かれ、自由記述のパッチは受け付けない。
+  未知の種別は検証で弾かれ、自由記述のパッチは受け付けない。個別入口も自由な列更新にはせず、
+  X曲同一性なら「既存曲を既存開催回へ結ぶ／由来つき新曲を既存開催回へ結ぶ／保留」の有限な結果だけを
+  `upsert_occurrence_song()`へ渡す。
 - **なぜ**: 「何でも書ける口」を1つ用意すると、種別ごとに必要な根拠を強制できなくなるから。
   種別を絞ることで、たとえば「今年の開催日を確定する」には今年のソースが要る、という規則を機械が守れる。
 - **破れたときの症状**: 根拠のない値がRDBへ入り、どの情報が確定でどれが推測か区別できなくなる。
   イベント個別の `apply_*.py` が増殖し、それぞれ違う検証をするようになる。
-- **守っているコード**: `report_apply/apply_change_requests.py` の `CHANGE_TYPES` と検証処理
-- **守っているテスト**: `tests/test_apply_change_requests.py::test_applies_four_finite_change_types`
+- **守っているコード**: `report_apply/apply_change_requests.py` の `CHANGE_TYPES` と検証処理、
+  `report_apply/apply_x_song_identity_results.py` の `_answer_problem()` / `apply_results()`
+- **守っているテスト**: `tests/test_apply_change_requests.py::test_applies_four_finite_change_types`、
+  `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_08_rejects_id_outside_candidates`
 
 ### INV-MST-002 今年の開催日の確定には、今年のソースを要求する
 
@@ -107,11 +112,16 @@ updated_for: 02f5f76
 - **内容**: `apply_change_requests.py` は既定でコピーDB（`data/change_requests_apply_dry_run.sqlite`）にだけ書く。
   実DBへ反映するには `--apply` と、`manual_apply_guards.CHANGE_REQUESTS_CONFIRMATION` の確認句が要る。
   さらに `dry_run_only` が付いたリクエストが1件でも含まれていれば、`--apply` を拒否する。
+  X曲同一性の`apply_x_song_identity_results.py`も同じく既定でコピーDBへだけ書き、
+  本番RDBには`--apply`と専用確認句を要求する。dry-runでは状態ファイルも変更しない。
 - **なぜ**: RDBは公開・メール・レビューすべての土台なので、壊れたときの影響範囲が最も広い。
   「試すつもりが本番に入った」を構造的に起こせなくしてある。
 - **破れたときの症状**: 検証目的の実行が本番RDBを書き換える。
-- **守っているコード**: `report_apply/apply_change_requests.py` の `main()` と `require_confirmation()` 呼び出し
-- **守っているテスト**: `tests/test_apply_change_requests.py::test_apply_refuses_dry_run_only_requests`
+- **守っているコード**: `report_apply/apply_change_requests.py` と
+  `report_apply/apply_x_song_identity_results.py` の `run()` / `require_confirmation()` 呼び出し
+- **守っているテスト**: `tests/test_apply_change_requests.py::test_apply_refuses_dry_run_only_requests`、
+  `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_13_dry_run_preserves_master_checksum`、
+  `tests/test_e2s_song_identity.py::E2SSongIdentityTest::test_acceptance_26_dry_run_does_not_write_state`
 
 ### INV-MST-004 S3の latest を上書きするときは、期待するチェックサムと一致させる
 
@@ -188,7 +198,10 @@ updated_for: 02f5f76
 4. **終了した開催回の遷移** — `transition_ended_occurrences.py`。過ぎた開催回を「終了」へ落とす。
    これが動かないと、終わった行事が公開面に「開催予定」として残る。
 5. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
-6. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
+6. **X曲同一性の適用（手動）** — `report_apply/apply_x_song_identity_results.py`。
+   凍結候補を再照合し、dry-run → preflight → backup → apply → 監査の順で曲とevidenceを書く。
+   曲固有の安全境界は[INV-SNG-004〜009](08-songs.md#inv-sng-004-x投稿の曲は開催回の同一性が決まったときだけ正本へ書く)が持つ。
+7. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
 
 日次のほかに、**バッチの後始末を読むだけのレポート**がある。`run_post_batch_maintenance.py` は
 RDBとローカルのJSON出力を読み、件数と気になる点をまとめたJSON/Markdownを出す。書き込みはしない。
@@ -226,6 +239,8 @@ RDBとローカルのJSON出力を読み、件数と気になる点をまとめ�
 - テーブルのスキーマそのものは[マスタRDBスキーマ契約](../L2/master-schema.md)に書いた
   （`event_series` と `event_occurrences` の関係、`evidence_items` の使われ方はそちらを見る）。
 - `report_apply` には既知のバグが残っている領域がある（詳細は別途）。
+- `report_apply/event_report_helpers.py` の曲upsertを触るときは、マスタ側の逆引きだけでなく
+  [INV-SNG-006 / 008 / 009](08-songs.md#inv-sng-006-e2-sが新しく作る曲にはx投稿の系譜を必ず残す)も確認する。
 - 予測日（`predicted_occurrence_dates`）は14件と少なく、器はあるが実質的に使われていない。
 
 ---

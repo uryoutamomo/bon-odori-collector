@@ -54,7 +54,8 @@ verified_by:
   - tests/test_e0b_bridge.py
   - tests/test_e2_identity_judgment.py
   - tests/test_judgment_j0_read.py
-updated_for: 0efb933
+  - tests/test_e2s_song_identity.py
+updated_for: 0e28df5
 ---
 
 # 人のレビュー運用サブシステム
@@ -84,6 +85,7 @@ updated_for: 0efb933
 | 何を | どこから |
 |---|---|
 | 各種の要レビュー項目 | `review_inbox_adapters/` 配下の各アダプタ経由（X由来の穴、公式ソース、会場欠落、過去実績、YouTube など） |
+| X曲名観測 | E2-Sが曲候補・開催回候補を別々に凍結した同一性判定パケット |
 | 現在のマスタ状態 | Master RDB の `review_inbox_items` テーブル |
 
 **出力**
@@ -312,6 +314,11 @@ X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つ�
 **移行の入口をここに1本だけ置いてあるのは、日常の書き込み経路が副作用でスキーマを変えないようにするため**で、
 その約束が INV-RVW-003 である。この runner はマスタDBを publish しない作りになっていて、
 移行とS3への公開を必ず別の操作に保っている。
+
+`review_inbox_adapters/build_x_song_identity_packets.py` は汎用受信箱へ積むアダプタではなく、
+X曲名観測をLLMの単純な同一性2問へ変える手動パケット生成器である。候補の順序・別名表示・凍結は
+`x_song_identity_contract.py`が機械的に担う。これら2ファイルはディレクトリ所有上はこのL1に属するが、
+守るべき内容は曲目側の[INV-SNG-004〜009](08-songs.md#inv-sng-004-x投稿の曲は開催回の同一性が決まったときだけ正本へ書く)である。
 
 ## 依存と影響
 
