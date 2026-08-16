@@ -10,10 +10,12 @@ invariants:
   - INV-SCH-001
   - INV-SCH-002
   - INV-SCH-003
+  - INV-SCH-004
 verified_by:
   - tests/test_master_db_connection_guards.py
   - tests/test_master_db_schema_invariants.py
-updated_for: 6537e7f
+  - tests/test_x_song_identity_migration.py
+updated_for: 64c874f
 ---
 
 # マスタRDBスキーマ契約
@@ -91,6 +93,16 @@ observed_occurrences ──< observed_occurrence_songs
 - **破れたときの症状**: 昨日まで通った処理が列不足や孤立参照で失敗し、どのDB世代か分からない。
 - **守っているコード**: `master_rdb/master_db.py` の `schema_migrations`・`init_db()`・`connect_existing()`、`review_inbox.py` の `migrate_inbox_schema_v2()`
 - **守っているテスト**: `tests/test_master_db_schema_invariants.py::test_migrations_are_recorded_unique_and_connections_enable_foreign_keys`
+
+### INV-SCH-004 X曲の同定・反映・撤回はappend-only台帳で追跡する
+
+- **内容**: migration 4 `x_song_identity_v2` は曲decision、開催回decision、materialization、retractionの4表を
+  加算的に作る。active decision/materializationはpartial unique indexで観測・phaseごとに一つへ制限し、
+  再判断は旧行削除でなく `superseded`、撤回はfact削除でなく `retracted` とlink状態で表す。
+- **なぜ**: 現在値だけを上書きすると、どの観測・候補集合・判断が曲factを作り、なぜ消えたかを復元できない。
+- **破れたときの症状**: retryでactive判断が二重化する、撤回後に由来不明の曲が残る、監査で判断元を辿れない。
+- **守っているコード**: `event_model/x_song_identity_migration.py`、`master_rdb/master_db.py`
+- **守っているテスト**: `tests/test_x_song_identity_migration.py`
 
 ## 変更時の確認
 

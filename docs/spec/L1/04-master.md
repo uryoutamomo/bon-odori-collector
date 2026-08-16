@@ -17,6 +17,7 @@ owns:
   - transition_ended_occurrences.py
   - run_event_state_axes_migration.py
   - run_post_batch_maintenance.py
+  - run_x_song_identity_migration.py
 depends_on:
   - L1-platform
 invariants:
@@ -29,12 +30,16 @@ invariants:
   - INV-MST-007
   - INV-MST-008
   - INV-MST-009
+  - INV-MST-010
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
   - tests/test_audit_master_rdb.py
   - tests/test_e2_identity_judgment.py
-updated_for: 02f5f76
+  - tests/test_x_song_identity_migration.py
+  - tests/test_x_song_apply_safety.py
+  - tests/test_x_song_materialization_lifecycle.py
+updated_for: 64c874f
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -173,6 +178,19 @@ updated_for: 02f5f76
 - **破れたときの症状**: 情報を足すほど確からしさが下がる（既定値を守れていない場合）。あるいは、根拠が覆っても確からしさを下げられない（名指しを通していない場合）。
 - **守っているコード**: `report_apply/event_report_helpers.py` の `_kept_confidence()` と `confidence_is_explicit`
 - **守っているテスト**: `tests/test_e2_identity_judgment.py::test_confirmed_is_not_downgraded_by_the_default`、`tests/test_e2_identity_judgment.py::test_an_explicit_lower_confidence_is_applied`、`tests/test_e2_identity_judgment.py::test_a_value_outside_the_rank_table_is_left_alone_by_the_default`
+
+### INV-MST-010 X曲factのwriterはpreflight・backup・commit前検証を省略しない
+
+- **内容**: X曲のschema migration、decision apply、materializer、retractorはdry-runを既定にし、実行時は
+  同一入力をDB複製へpreflightしてからbackupを作る。実DBではtransactionを開いたまま
+  `integrity_check` / `foreign_key_check` を行い、通過後だけcommitする。既存factとのidentity衝突は上書きせずrollbackする。
+- **なぜ**: commit後の監査では失敗を検出しても正本を元へ戻せず、根拠と公開factが半端な状態になる。
+- **破れたときの症状**: writerが失敗を報告したのに正本だけ変更済み、または既存curated曲のsong ID/titleが変わる。
+- **守っているコード**: `report_apply/x_song_apply_safety.py`、
+  `report_apply/materialize_x_song_resolutions.py`、`report_apply/retract_x_song_materializations.py`、
+  `report_apply/event_report_helpers.py::link_resolved_occurrence_song`
+- **守っているテスト**: `tests/test_x_song_apply_safety.py`、
+  `tests/test_x_song_materialization_lifecycle.py::test_resolved_helper_fails_closed_on_existing_fact_collision`
 
 ## 主要な流れ
 

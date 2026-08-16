@@ -18,13 +18,15 @@ invariants:
   - INV-PUB-005
   - INV-PUB-006
   - INV-PUB-007
+  - INV-PUB-008
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
   - tests/test_public_event_site_addition_tools.py
   - tests/test_classify_public_events_diff.py
   - tests/test_e0b_bridge.py
-updated_for: aaeecb7
+  - tests/test_x_song_materialization_lifecycle.py
+updated_for: 64c874f
 ---
 
 # 公開サブシステム
@@ -156,6 +158,17 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **守っているテスト**: `tests/test_e0b_bridge.py::test_build_request_requires_occurrence_id`、
   `tests/test_e0b_bridge.py::test_source_has_no_match_hint_branch_left`、
   `tests/test_e0b_bridge.py::test_unresolved_event_produces_no_request`
+
+### INV-PUB-008 X materializer所有の曲は有効曲・意味対応・accepted根拠が揃った間だけ公開する
+
+- **内容**: `origin='observed_x_post'` の `occurrence_songs` は、song statusが `active/有効`、
+  `setlist/announced` または `result/observed`、accepted evidence linkが1件以上、をすべて満たす行だけ読む。
+  他originの既存公開契約は変えない。
+- **なぜ**: evidence linkをretractしても行だけを無条件に読むと、削除・訂正された投稿が公開へ残り続ける。
+- **破れたときの症状**: 最後のX根拠を撤回しても曲目が消えない、または告知がpredictionとして重複する。
+- **守っているコード**: `export_public_events.py::load_rdb_occurrence_songs`
+- **守っているテスト**: `tests/test_x_song_materialization_lifecycle.py::test_public_export_requires_active_song_and_accepted_evidence_for_x_fact`、
+  `tests/test_x_song_materialization_lifecycle.py::test_other_accepted_evidence_keeps_shared_fact_public_on_x_retraction`
 
 ## 主要な流れ
 

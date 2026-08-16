@@ -26,6 +26,10 @@ owns:
   - apply_song_publication_review_decisions.py
   - apply_weekly_song_final_corrections.py
   - apply_weekly_song_review_decisions.py
+  - build_x_song_resolution_packets.py
+  - apply_x_song_resolution_results.py
+  - build_x_occurrence_resolution_packets.py
+  - apply_x_occurrence_resolution_results.py
   - scripts/build_song_candidate_finite_payload.py
   - scripts/run_song_candidate_decision_write.py
   - scripts/manual/render_song_calibration_report.py
@@ -38,13 +42,18 @@ invariants:
   - INV-SNG-001
   - INV-SNG-002
   - INV-SNG-003
+  - INV-SNG-004
+  - INV-SNG-005
 verified_by:
   - tests/test_bon_odori_songs.py
   - tests/test_song_catalog.py
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
   - tests/test_x_post_extraction_songs.py
-updated_for: f00d58e
+  - tests/test_x_song_resolution_contract.py
+  - tests/test_x_occurrence_resolution_contract.py
+  - tests/test_x_song_materialization_lifecycle.py
+updated_for: 64c874f
 ---
 
 # 曲目サブシステム
@@ -147,6 +156,31 @@ updated_for: f00d58e
   `tests/test_song_catalog.py::TestSongCatalog::test_unrecognized_status_is_unknown_not_verified`、
   `tests/test_song_catalog.py::TestSongCatalog::test_ambiguous_alias_is_not_silently_resolved`
 
+### INV-SNG-004 検索missだけでは新曲を作らない
+
+- **内容**: X曲claimのretrieval判定は `match_song` / `candidate_missing` / `unresolved` だけを許す。
+  `candidate_missing` がactive台帳へ入った観測だけが、全曲catalogを凍結したnovelty判定へ進み、そこで初めて
+  `new_song` を選べる。曲と開催回の判定は別packet・別台帳にする。
+- **なぜ**: top 20検索は候補生成器であり、曲が存在しないことの証明ではない。検索漏れを新曲扱いすると、
+  alias違いの同じ曲がactiveで重複し、開催回曲目も分裂する。
+- **破れたときの症状**: マスタに既にある曲が別song IDで増え、同じ曲が公開欄へ複数表示される。
+- **守っているコード**: `review_inbox_adapters/x_song_resolution_contract.py`
+- **守っているテスト**: `tests/test_x_song_resolution_contract.py::test_retrieval_packet_freezes_full_candidate_rows_and_forbids_new_song`、
+  `tests/test_x_song_resolution_contract.py::test_candidate_missing_must_be_recorded_before_novelty_packet`
+
+### INV-SNG-005 X曲factは二つの同定と有効な根拠が揃ったときだけ作る
+
+- **内容**: `announced` / `observed` のcurrent observation SHAと、曲・開催回のactive decision、
+  current catalog/occurrence snapshotが一致したときだけmaterializeする。対応は
+  `announced → setlist/announced`、`observed → result/observed` に固定する。retractはappend-onlyで、
+  最後のX根拠が消えた曲のcreate/promotionを撤回順に依存せずCAS cleanupする。
+- **なぜ**: 回答経路やイベント名だけから意味を推測すると、願望曲・別年度開催・訂正済み投稿が公開factになる。
+- **破れたときの症状**: 「踊ってほしい」が曲目になる、去年の曲が今年へ付く、全根拠撤回後も曲が公開に残る。
+- **守っているコード**: `report_apply/materialize_x_song_resolutions.py`、
+  `report_apply/retract_x_song_materializations.py`
+- **守っているテスト**: `tests/test_x_song_materialization_lifecycle.py`、
+  `tests/test_x_occurrence_resolution_contract.py`
+
 ## 主要な流れ
 
 最初に、なぜこれだけドメインで切ってあるかを書いておく。曲目は収集から公開までの全工程を縦に貫いており、
@@ -190,6 +224,10 @@ E0 family keyを残す。URLが無い投稿や過去日のclaimも観測とし�
 `extract_song_candidates()` は**レビュー前提でもっと広く拾う**抽出である。混ぜて使ってはいけない。
 
 ### 2. どの曲かを決める（毎日）
+
+E0X-S v2由来の新経路は、通常の週次候補とは別に
+[E2-S v2契約](../../local-judgment-e2s-song-identity-v2.md)を使う。曲retrieval、全catalogでのnovelty、
+開催回同定を別sceneにし、判断writerは同定台帳まで、正本writerはmaterializer一箇所に分ける。
 
 `classify_candidate()` が、候補の文字列を4つの行き先へ振り分ける。
 先に手書きの対応表（`CANONICAL_MAP` / `NOISE_EXACT` / `AMBIGUOUS_TERMS`）を見て、
