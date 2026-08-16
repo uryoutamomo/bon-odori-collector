@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T06:05:57Z",
-  "generated_for_commit": "1b7e548",
+  "generated_at": "2026-08-16T13:26:23Z",
+  "generated_for_commit": "9c2d311",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -129,14 +129,17 @@
         "INV-XPE-010",
         "INV-XPE-011",
         "INV-XPE-012",
-        "INV-XPE-013"
+        "INV-XPE-013",
+        "INV-XPE-014",
+        "INV-XPE-015",
+        "INV-XPE-016"
       ],
       "verified_by": [
         "tests/test_event_evidence.py",
         "tests/test_x_post_extraction_e0x.py",
         "tests/test_x_post_extraction_songs.py"
       ],
-      "updated_for": "7bcacd0",
+      "updated_for": "d720f46",
       "path": "docs/spec/L1/02-judgment.md",
       "owned_files": [
         "apply_x_extraction_results.py",
@@ -147,12 +150,27 @@
         "collection_support/x_source_officiality.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.2",
-      "revision_count": 3,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "22a8e7d",
+          "date": "2026-08-16",
+          "subject": "Align claim-family specifications"
+        },
+        {
+          "commit": "863486b",
+          "date": "2026-08-16",
+          "subject": "Refresh specs for E0X-S v2"
+        },
+        {
+          "commit": "f00d58e",
+          "date": "2026-08-16",
+          "subject": "Implement E0X-S v2 claim extraction"
+        },
         {
           "commit": "1b7e548",
           "date": "2026-08-16",
@@ -691,7 +709,7 @@
         "tests/test_export_public_events.py",
         "tests/test_x_post_extraction_songs.py"
       ],
-      "updated_for": "7bcacd0",
+      "updated_for": "f00d58e",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         "apply_song_candidate_finite_actions.py",
@@ -731,9 +749,19 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.2",
-      "revision_count": 3,
+      "version": "1.4",
+      "revision_count": 5,
       "history": [
+        {
+          "commit": "863486b",
+          "date": "2026-08-16",
+          "subject": "Refresh specs for E0X-S v2"
+        },
+        {
+          "commit": "f00d58e",
+          "date": "2026-08-16",
+          "subject": "Implement E0X-S v2 claim extraction"
+        },
         {
           "commit": "1b7e548",
           "date": "2026-08-16",
@@ -1345,7 +1373,7 @@
     },
     "INV-XPE-003": {
       "spec": "L1-judgment",
-      "title": "5点未満は採点だけを保存する",
+      "title": "5点未満からE0レポートを作らない",
       "tests": [
         "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_unknown_no_is_flagged_and_low_scores_keep_only_the_score"
       ],
@@ -1403,12 +1431,9 @@
     },
     "INV-XPE-010": {
       "spec": "L1-judgment",
-      "title": "曲名・界隈語は投稿本文に書かれた文字列だけを観測する",
+      "title": "曲claim・界隈語は投稿本文に書かれた材料だけを観測する",
       "tests": [
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_01_records_song_found_in_text",
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_02_rejects_song_not_found_in_text",
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_12_normalizes_middle_dot_long_mark_and_width",
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_13_does_not_fold_hiragana_and_katakana"
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_01_records_song_found_in_text"
       ],
       "has_test": true
     },
@@ -1425,21 +1450,43 @@
       "spec": "L1-judgment",
       "title": "同じ回答を再取り込みしても観測件数を増やさない",
       "tests": [
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_06_song_observations_are_idempotent",
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_18_glossary_count_is_idempotent_after_examples_fill",
-        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_19_count_always_matches_source_tweet_ids"
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_is_idempotent_and_conflicting_reanswer_is_held"
       ],
       "has_test": true
     },
     "INV-XPE-013": {
       "spec": "L1-judgment",
-      "title": "曲名・界隈語の壊れた要素は採点・レポート・他観測を止めない",
+      "title": "曲claim・界隈語の壊れた要素は採点・レポート・他観測を止めない",
       "tests": [
         "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_03_keeps_valid_song_when_sibling_is_invalid",
         "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_14_malformed_observations_do_not_stop_other_processing",
         "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_20_bad_event_name_does_not_stop_glossary_or_scoring",
         "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_21_bad_glossary_does_not_stop_song_score_or_report",
         "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_acceptance_25_separates_song_and_glossary_issue_counts"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-014": {
+      "spec": "L1-judgment",
+      "title": "曲の意味はoriginでなく曲ごとのclaim typeで持つ",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_mixed_claims_keep_per_song_meaning"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-015": {
+      "spec": "L1-judgment",
+      "title": "曲claimのE0系譜は実在するイベント要素だけを指す",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_valid_five_point_event_has_real_e0_dependency"
+      ],
+      "has_test": true
+    },
+    "INV-XPE-016": {
+      "spec": "L1-judgment",
+      "title": "claim再回答の意味競合を自動公開へ流さない",
+      "tests": [
+        "tests/test_x_post_extraction_songs.py::XPostExtractionSongsTest::test_v2_is_idempotent_and_conflicting_reanswer_is_held"
       ],
       "has_test": true
     },
