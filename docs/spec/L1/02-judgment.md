@@ -72,28 +72,38 @@ updated_for: 6537e7f
 
 ### INV-XPE-003 5点未満は採点だけを保存する
 
-- **内容**: 4点以下からE0レポートを作らない。
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied`
+- **内容**: 4点以下からE0レポートを作らない。ただし点数は `data/x_post_scores.json` に必ず残す。
+- **なぜ**: 点数は捨てるための閾値ではなく、後で並べ替え・見直しをするための記録だから（2026-08-15 内田さん）。
+- **破れたときの症状**: 読んだ結果が消え、同じ投稿を読み直す羽目になる。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_unknown_no_is_flagged_and_low_scores_keep_only_the_score`
 
 ### INV-XPE-004 生成レポートは出典URLを持つ
 
 - **内容**: URLの無い投稿は候補化しない。
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_invalid_quote_and_past_date_are_not_reports_but_are_applied`
+- **なぜ**: 出典なしで正本factの材料を作らないため。
+- **破れたときの症状**: 出所を辿れない開催情報がレビュー受信箱へ入る。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_post_without_url_never_becomes_a_report`
 
 ### INV-XPE-005 投稿由来の会場に住所を推測しない
 
 - **内容**: `venue` は名称とareaだけである。
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+- **なぜ**: 投稿から住所は読めず、推測を入れると `ensure_venue` の完全一致照合を誤らせる。
+- **破れたときの症状**: 同じ会場が住所違いで二重に登録される（2026-08-07 鹿骨中学校と同型）。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_report_omits_address_and_derives_year_from_date`
 
 ### INV-XPE-006 私人アカウントを公開詳細へ出さない
 
-- **内容**: 私人のアカウント名・ハンドルはdetail_addendumへ入れない。
+- **内容**: 私人のアカウント名・ハンドルはdetail_addendumへ入れない。URLは公開層が除去する内部記録行にだけ残す。
+- **なぜ**: 本人の同意なく私人の投稿を公開サイトへ引用しないため（2026-08-08 内田さん決定）。
+- **破れたときの症状**: 公開ページに第三者のXハンドルが並ぶ。
 - **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
 
-### INV-XPE-007 未回答投稿は24時間後に再発行する
+### INV-XPE-007 未回答投稿は24時間後に再発行し、処理済みは掘り返さない
 
-- **内容**: issuedだけの投稿は処理済みにせず、24時間後に再びパケット化できる。
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules`
+- **内容**: issuedだけの投稿は処理済みにせず24時間後に再びパケット化する。`applied_at` を持つ投稿は `--reissue` でも出さない。
+- **なぜ**: 読み落としを取りこぼさないため。逆に処理済みを再発行すると、同じ投稿を何度も読ませることになる。
+- **破れたときの症状**: 回答が返らなかった投稿が永久に読まれない／既に読んだ投稿が毎日パケットへ戻る。
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_applied_post_is_never_reissued_even_with_reissue_flag`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_build_keeps_non_bon_post_and_state_reissue_rules`
 
 ### INV-XPE-008 束ねたXレポートは代表投稿を変えない
 
@@ -101,7 +111,7 @@ updated_for: 6537e7f
 - **なぜ**: 代表を入れ替えるとE0のsource payload hashが変わり、実質同一候補に無意味なrevisionが増えるため。
 - **破れたときの症状**: 同じ開催情報を再取り込みしただけでレビュー候補が増える。
 - **守っているコード**: `apply_x_extraction_results.py` の `apply()`
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_bundle_keeps_first_representative_and_never_rewrites_events`、`tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_apply_fails_closed_and_bundles_without_replacing_source`
 
 ## 主要な流れ
 

@@ -1,3 +1,5 @@
+import json
+import sqlite3
 import tempfile
 import unittest
 from datetime import datetime, timezone, date
@@ -55,3 +57,116 @@ class XPostExtractionE0XTest(unittest.TestCase):
                 self.assertEqual(result["report_count"],1)
                 self.assertIn(issue,[row["issue_type"] for row in result["issues"]])
                 self.assertEqual(state["tweets"]["a"]["outcome"],"report")
+
+    # --- 受け入れ条件1・4：処理済みは出ない／--reissue は発行済み抑止だけを外す ---
+    def test_applied_post_is_never_reissued_even_with_reissue_flag(self):
+        now=datetime(2026,8,16,tzinfo=timezone.utc)
+        done={"tweets":{"a":{"issued_at":"2026-08-15T00:00:00+00:00","batch_id":"old","applied_at":"2026-08-15T01:00:00+00:00","outcome":"report"}}}
+        self.assertEqual(build([voice("a","処理済みの投稿")],done,now=now),[])
+        self.assertEqual(build([voice("a","処理済みの投稿")],done,now=now,reissue=True),[],
+                         "--reissue は未処理の再発行のためのもので、処理済みを掘り返してはいけない")
+        waiting={"tweets":{"b":{"issued_at":"2026-08-16T00:00:00+00:00","batch_id":"old","applied_at":None}}}
+        self.assertEqual(build([voice("b","回答待ちの投稿")],waiting,now=now),[])
+        self.assertEqual(len(build([voice("b","回答待ちの投稿")],waiting,now=now,reissue=True)[0]["packets"]),1)
+
+    # --- 受け入れ条件10・11：本文に無い日付／逆転した範囲 ---
+    def test_dates_outside_the_text_and_reversed_ranges_are_rejected(self):
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","text":"8月20日と8月25日に公園で開催","machine_extracted_dates":["2026-08-20","2026-08-25"]}]}
+        base={"event_name":"試験","venue_name":"公園","quote":"8月20日と8月25日に公園で開催"}
+        cases=(({"date_start":"2026-09-09"},"date_not_in_text"),
+               ({"date_start":"2026-08-25","date_end":"2026-08-20"},"date_range_invalid"))
+        for extra, issue in cases:
+            with self.subTest(issue=issue), tempfile.TemporaryDirectory() as temp:
+                state={"tweets":{}}
+                result=apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[{**base,**extra}]}]},state,Path(temp),today=date(2026,8,16))
+                self.assertEqual(result["report_count"],0)
+                self.assertIn(issue,[row["issue_type"] for row in result["issues"]])
+
+    # --- 受け入れ条件13・14：不明なno／4点以下は採点だけ残る ---
+    def test_unknown_no_is_flagged_and_low_scores_keep_only_the_score(self):
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","text":"盆踊りの思い出話","machine_extracted_dates":[]}]}
+        answer={"batch_id":"x","results":[{"no":1,"s":3,"n":"曲名が出ている"},{"no":99,"s":5}]}
+        with tempfile.TemporaryDirectory() as temp:
+            state={"tweets":{}}; result=apply(packet,answer,state,Path(temp),today=date(2026,8,16))
+            self.assertEqual(result["report_count"],0)
+            self.assertIn("unknown_packet",[row["issue_type"] for row in result["issues"]])
+            self.assertEqual([(row["score"],row["note"]) for row in result["scores"]],[(3,"曲名が出ている")])
+            self.assertEqual(state["tweets"]["a"]["outcome"],"scored_only")
+
+    # --- 受け入れ条件18・19・21：束ねても代表は動かず、URLも重複しない ---
+    def test_bundle_keeps_first_representative_and_never_rewrites_events(self):
+        text="8月20日に試験公園で試験盆踊りを開催"
+        first={"no":1,"tweet_id":"a","url":"https://x/first","account":"@a","text":text,"machine_extracted_dates":["2026-08-20","2026-08-21"]}
+        # 後から届く投稿のほうが posted_at は早い。代表が入れ替わらないことを見る。
+        later={"no":1,"tweet_id":"b","url":"https://x/later","account":"@b","text":text+"（21日まで）","machine_extracted_dates":["2026-08-20","2026-08-21"]}
+        event={"event_name":"試験盆踊り","date_start":"2026-08-20","venue_name":"試験公園","quote":text}
+        with tempfile.TemporaryDirectory() as temp:
+            out=Path(temp); state={"tweets":{}}
+            apply({"batch_id":"x","packets":[first]},{"batch_id":"x","results":[{"no":1,"s":5,"events":[event]}]},state,out,today=date(2026,8,16))
+            apply({"batch_id":"y","packets":[later]},{"batch_id":"y","results":[{"no":1,"s":5,"events":[{**event,"date_end":"2026-08-21"}]}]},state,out,today=date(2026,8,16))
+            # 同じ回答をもう一度取り込んでも増えない（受け入れ条件21・27）
+            apply({"batch_id":"z","packets":[later]},{"batch_id":"z","results":[{"no":1,"s":5,"events":[{**event,"date_end":"2026-08-21"}]}]},state,out,today=date(2026,8,16))
+            paths=list(out.glob("*.json")); self.assertEqual(len(paths),1)
+            report=json.loads(paths[0].read_text(encoding="utf-8"))
+            self.assertEqual(report["source"]["url"],"https://x/first","代表は初回で固定される")
+            self.assertEqual(report["source"]["raw_text"],text,"後続投稿の本文で置き換わらない")
+            self.assertEqual(report["events"][0]["date_end"],"2026-08-20",
+                             "後から判明した date_end で events を書き換えない")
+            detail=report["events"][0]["detail_addendum"]
+            self.assertEqual(detail.count("https://x/later"),1,"同じURLを二度足さない")
+
+    # --- 受け入れ条件（§7 出典）：URLの無い投稿からはレポートを作らない ---
+    def test_post_without_url_never_becomes_a_report(self):
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"","text":"8月20日に試験公園で試験盆踊りを開催","machine_extracted_dates":["2026-08-20"]}]}
+        event={"event_name":"試験盆踊り","date_start":"2026-08-20","venue_name":"試験公園","quote":"8月20日に試験公園で試験盆踊りを開催"}
+        with tempfile.TemporaryDirectory() as temp:
+            state={"tweets":{}}
+            result=apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[event]}]},state,Path(temp),today=date(2026,8,16))
+            self.assertEqual(result["report_count"],0,"出典なしで正本factの材料を作らない")
+            self.assertIn("missing_source_url",[row["issue_type"] for row in result["issues"]])
+
+    # --- 受け入れ条件24＋note：公式は名前を出し、回答の n を詳細へ運ぶ ---
+    def test_official_source_shows_its_name_and_carries_the_note(self):
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","account":"@city","account_name":"◯◯区役所",
+                 "officiality":"registered_official_social","text":"8月20日に試験公園で試験盆踊りを開催","machine_extracted_dates":["2026-08-20"]}]}
+        event={"event_name":"試験盆踊り","date_start":"2026-08-20","venue_name":"試験公園","quote":"8月20日に試験公園で試験盆踊りを開催"}
+        with tempfile.TemporaryDirectory() as temp:
+            state={"tweets":{}}
+            apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"n":"町会の公式告知","events":[event]}]},state,Path(temp),today=date(2026,8,16))
+            detail=json.loads(next(Path(temp).glob("*.json")).read_text(encoding="utf-8"))["events"][0]["detail_addendum"]
+            self.assertIn("◯◯区役所",detail)
+            self.assertIn("町会の公式告知",detail,"回答の n（resultレベル）を詳細へ運ぶ")
+
+    # --- 受け入れ条件25・26：住所は入れない／年は機械が決める ---
+    def test_report_omits_address_and_derives_year_from_date(self):
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","text":"1月10日に試験公園で新年盆踊りを開催","machine_extracted_dates":["2027-01-10"]}]}
+        event={"event_name":"新年盆踊り","date_start":"2027-01-10","venue_name":"試験公園","ward":"足立区",
+               "quote":"1月10日に試験公園で新年盆踊りを開催","event_year":1999}
+        with tempfile.TemporaryDirectory() as temp:
+            state={"tweets":{}}
+            apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[event]}]},state,Path(temp),today=date(2026,8,16))
+            entry=json.loads(next(Path(temp).glob("*.json")).read_text(encoding="utf-8"))["events"][0]
+            self.assertNotIn("address",entry["venue"],"住所は投稿から読めないので入れない")
+            self.assertEqual(entry["event_year"],2027,"LLMが書いた年ではなく date_start から決める")
+
+    # --- 受け入れ条件28：生成レポートがE0でevent_create候補になる ---
+    def test_generated_report_becomes_an_e0_event_create_candidate(self):
+        from event_model.local_judgment_migration import migrate_event_inbox_candidate, migrate_local_judgment_contract
+        from master_rdb.master_db import init_db
+        from review_inbox_adapters.build_event_inbox_candidates import run as e0_run
+        packet={"batch_id":"x","packets":[{"no":1,"tweet_id":"a","url":"https://x/a","account":"@city","account_name":"◯◯区役所",
+                 "officiality":"registered_official_social","text":"8月20日に試験公園で試験盆踊りを開催","machine_extracted_dates":["2099-08-20"]}]}
+        event={"event_name":"試験盆踊り","date_start":"2099-08-20","venue_name":"試験公園","ward":"足立区","quote":"8月20日に試験公園で試験盆踊りを開催"}
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp); reports=root/"x_post_reports"; state={"tweets":{}}
+            result=apply(packet,{"batch_id":"x","results":[{"no":1,"s":5,"events":[event]}]},state,reports,today=date(2026,8,16))
+            self.assertEqual(result["report_count"],1)
+            db=root/"master.sqlite"; conn=init_db(db); migrate_local_judgment_contract(conn); migrate_event_inbox_candidate(conn); conn.commit(); conn.close()
+            args=type("Args",(),{"report":[],"report_dir":[reports],"db":db,"out_db":root/"dry.sqlite","out_json":root/"e0.json",
+                                 "out_md":root/"e0.md","max_candidates":200,"apply":False,"confirm":"","no_auto_migrate":False,"include_expired":False})()
+            e0=e0_run(args)
+            self.assertEqual(e0["summary"]["created"],1,f"E0が候補にできなかった: {e0['issues']}")
+            dry=sqlite3.connect(root/"dry.sqlite")
+            row=dry.execute("SELECT contract_domain, contract_lane, status, source_url FROM review_inbox_items").fetchone()
+            dry.close()
+            self.assertEqual(row,("event","event_create","candidate","https://x/a"))
