@@ -20,6 +20,7 @@ owns:
   - discover_x_social_graph.py
   - sync_x_promoted_members.py
   - sync_weekly_costs.py
+  - .github/workflows/collect.yml
 depends_on: []
 invariants:
   - INV-COL-001
@@ -34,7 +35,7 @@ verified_by:
   - tests/test_x_collection_health.py
   - tests/test_collect_no_semantic_exclusion.py
   - tests/test_x_search_watermark.py
-updated_for: 35615cf
+updated_for: fcb8277
 ---
 
 # 収集サブシステム
@@ -48,6 +49,10 @@ RSS、YouTube、X、公式ソースから、盆踊りに関係しうる情報を
 ## 入力と出力
 
 入力は各サービスの取得結果、既読URL、X設定（`x_queries.json`）、予算状態、検索クエリの読み取り位置（`data/x_query_watermarks.json`）、および会場公式サイトの監視設定（`venue_sites.json`）である。出力は `data/voices.json`、`data/latest.json`、生X投稿のアーカイブ、収集状態・コスト台帳、および候補キューである。
+
+`collect.yml` には、2026-08-16の公開detail修復専用jobも一時的に同居する。通常の収集jobとは排他的で、
+mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文字列を全て照合してからMaster RDBを扱う。
+これは収集経路をPR branchから本番へ広げる例外ではない。修復後は証跡を残して専用jobを除去する。
 
 ## 不変条件
 

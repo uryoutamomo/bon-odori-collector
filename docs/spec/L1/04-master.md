@@ -13,11 +13,13 @@ owns:
   - event_model/**
   - master_db_s3_artifact.py
   - audit_master_rdb.py
+  - data/official_notice_reports/detail_cleanup_repair_20260816.json
   - master_rdb_freeze_policy.py
   - transition_ended_occurrences.py
   - run_event_state_axes_migration.py
   - run_post_batch_maintenance.py
   - run_x_song_identity_migration.py
+  - scripts/verify_detail_cleanup_repair.py
 depends_on:
   - L1-platform
 invariants:
@@ -39,7 +41,9 @@ verified_by:
   - tests/test_x_song_identity_migration.py
   - tests/test_x_song_apply_safety.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: 64c874f
+  - tests/test_apply_detail_cleanup_repair.py
+  - tests/test_verify_detail_cleanup_repair.py
+updated_for: fcb8277
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -210,6 +214,19 @@ updated_for: 64c874f
    これが動かないと、終わった行事が公開面に「開催予定」として残る。
 5. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
 6. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
+
+**通知レポートの再適用**では、`report_apply/apply_official_notice_report.py` が同じ通知の
+evidence link を開催回にすでに持つ場合、`detail_addendum` と `detail_replacement` を再実行しない。
+後から人が整えた公開本文を古い通知が戻してしまうことを防ぐためである。一方で、日付・会場・
+evidence・曲の冪等な適用は続ける。別の通知evidenceによる後続の本文差替は正しく反映され、
+古い通知を再実行しても上書きされない。
+
+2026-08-16 の14件公開detail修復は、通常の通知レポートを再適用せず、
+`report_apply/apply_detail_cleanup_repair.py` の一回限りの経路で行う。修復台帳は対象14件と
+各行の現在detail SHA-256、台帳自身のSHA-256を固定する。全行を先に照合し、隔離したDBコピーで
+detail と `updated_at` だけを更新してから、FK・integrity・RDB監査を通す。どれか一つでも失敗すれば
+Master RDBを置換しない。`scripts/verify_detail_cleanup_repair.py` は全table差分、公開射影とsource mapを
+fail-closedで照合し、14件以外の変更を拒否する。
 
 日次のほかに、**バッチの後始末を読むだけのレポート**がある。`run_post_batch_maintenance.py` は
 RDBとローカルのJSON出力を読み、件数と気になる点をまとめたJSON/Markdownを出す。書き込みはしない。
