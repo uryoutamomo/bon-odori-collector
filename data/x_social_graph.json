@@ -1,55 +1,41 @@
 {
-  "generated_at": "2026-08-10T21:44:05.396350+00:00",
+  "generated_at": "2026-08-17T21:28:18.377566+00:00",
   "mode": "followings",
   "seeds": [
     {
       "handle": "@gpveqead9u10257",
-      "score": 24.419,
+      "score": 22.795,
       "status": "trusted",
       "pages": 1,
       "returned_users": 200
     },
     {
       "handle": "@natsutr_bon",
-      "score": 17.246,
+      "score": 16.78,
       "status": "trusted",
       "pages": 1,
       "returned_users": 200
     },
     {
-      "handle": "@luck_a_say",
-      "score": 26.2,
-      "status": "trusted",
-      "pages": 1,
-      "returned_users": 173
-    },
-    {
-      "handle": "@mormogtarou",
-      "score": 25.533,
-      "status": "trusted",
-      "pages": 1,
-      "returned_users": 200
-    },
-    {
-      "handle": "@shinjuku_news_j",
+      "handle": "@yusuke194167",
       "score": 24.6,
       "status": "trusted",
       "pages": 1,
-      "returned_users": 12
-    },
-    {
-      "handle": "@tokyo_eventinfo",
-      "score": 24.549,
-      "status": "trusted",
-      "pages": 1,
-      "returned_users": 148
+      "returned_users": 200
     },
     {
       "handle": "@shakyo_komono",
-      "score": 24.52,
+      "score": 24.44,
       "status": "trusted",
       "pages": 1,
       "returned_users": 24
+    },
+    {
+      "handle": "@tokyo_eventinfo",
+      "score": 24.374,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 153
     },
     {
       "handle": "@party_animalsjp",
@@ -66,8 +52,22 @@
       "returned_users": 22
     },
     {
+      "handle": "@matsudokankou1",
+      "score": 23.6,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
       "handle": "@odakakankou",
       "score": 23.6,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@sayamabico",
+      "score": 23.575,
       "status": "trusted",
       "pages": 1,
       "returned_users": 200
@@ -561,7 +561,7 @@
     },
     {
       "source": "@gpveqead9u10257",
-      "target": "@bon_poyomaru",
+      "target": "@bon_dopamaru",
       "type": "following"
     },
     {
@@ -1076,6 +1076,11 @@
     },
     {
       "source": "@natsutr_bon",
+      "target": "@crab_feet",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
       "target": "@takahashiemi_s",
       "type": "following"
     },
@@ -1306,7 +1311,7 @@
     },
     {
       "source": "@natsutr_bon",
-      "target": "@bon_poyomaru",
+      "target": "@bon_dopamaru",
       "type": "following"
     },
     {
@@ -2070,1933 +2075,1148 @@
       "type": "following"
     },
     {
-      "source": "@natsutr_bon",
-      "target": "@nyoritael",
+      "source": "@yusuke194167",
+      "target": "@yocchin_renraku",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@songstressmile",
+      "source": "@yusuke194167",
+      "target": "@yanagi_ayari",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@musicriona",
+      "source": "@yusuke194167",
+      "target": "@yumenotoa",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mirandaotsuji",
+      "source": "@yusuke194167",
+      "target": "@merry_goround_8",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@singer_yuuka",
+      "source": "@yusuke194167",
+      "target": "@mavoigrvei9792",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hatan75",
+      "source": "@yusuke194167",
+      "target": "@ryoma_cam",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mayu_n0117",
+      "source": "@yusuke194167",
+      "target": "@studio_buzz3",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@omoware2022",
+      "source": "@yusuke194167",
+      "target": "@djnia0iipd4oqwi",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hayashimomoko",
+      "source": "@yusuke194167",
+      "target": "@karan12303030",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@itani1005",
+      "source": "@yusuke194167",
+      "target": "@sakikawashima32",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yuka_1110_music",
+      "source": "@yusuke194167",
+      "target": "@sokubaku_angel",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@cheeze1031",
+      "source": "@yusuke194167",
+      "target": "@jr_mobile_suica",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yellow_hiroha",
+      "source": "@yusuke194167",
+      "target": "@ql8ornx",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@manaueno",
+      "source": "@yusuke194167",
+      "target": "@miami_ren",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yu_ki81530",
+      "source": "@yusuke194167",
+      "target": "@0lp3wldqku53689",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@marinatterstaff",
+      "source": "@yusuke194167",
+      "target": "@s2____haru",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@u_pa_risa",
+      "source": "@yusuke194167",
+      "target": "@coconaloverian",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@ayane_seino",
+      "source": "@yusuke194167",
+      "target": "@aya___lily",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@cp_taroo",
+      "source": "@yusuke194167",
+      "target": "@alulu777",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@suzune_dayo",
+      "source": "@yusuke194167",
+      "target": "@riiichan_0123",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sunroadhyota",
+      "source": "@yusuke194167",
+      "target": "@riaria___1018",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@htaym_official",
+      "source": "@yusuke194167",
+      "target": "@iiirohachan",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@missiwsmile",
+      "source": "@yusuke194167",
+      "target": "@hiiragizzz1224",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@nanatsumagari",
+      "source": "@yusuke194167",
+      "target": "@mentaiko_smw",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@danp_o_boy",
+      "source": "@yusuke194167",
+      "target": "@ya__yo__chan",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@813garden",
+      "source": "@yusuke194167",
+      "target": "@katourea0119",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@peco0826",
+      "source": "@yusuke194167",
+      "target": "@hi7maa77rii",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@music__yuka",
+      "source": "@yusuke194167",
+      "target": "@riipon0423",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hanafusamayu",
+      "source": "@yusuke194167",
+      "target": "@kurumi_moa",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@harunomai",
+      "source": "@yusuke194167",
+      "target": "@miraaa0043",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@ito_sakura",
+      "source": "@yusuke194167",
+      "target": "@tsukino_rene",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@stayg_ssw",
+      "source": "@yusuke194167",
+      "target": "@spiralmusicidol",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yukarimaeda",
+      "source": "@yusuke194167",
+      "target": "@st_simon10",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hamukoman",
+      "source": "@yusuke194167",
+      "target": "@seeking_thegold",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@funamu_m",
+      "source": "@yusuke194167",
+      "target": "@satou_mea",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sito_soloartist",
+      "source": "@yusuke194167",
+      "target": "@sakacchi_ph2",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@fujiko1023",
+      "source": "@yusuke194167",
+      "target": "@anton226",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@emichi1230",
+      "source": "@yusuke194167",
+      "target": "@yumechan0222",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@manayutakai",
+      "source": "@yusuke194167",
+      "target": "@ichinose_reina",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@0522tatsuya0522",
+      "source": "@yusuke194167",
+      "target": "@kira__rian",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@akaneokada",
+      "source": "@yusuke194167",
+      "target": "@rcjoe0",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@okada_hideyuki",
+      "source": "@yusuke194167",
+      "target": "@spiralgirls5",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@daiki_y0507",
+      "source": "@yusuke194167",
+      "target": "@kousoku_k",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@xxryoaramakixx",
+      "source": "@yusuke194167",
+      "target": "@takeshikarn",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@junko_sugino",
+      "source": "@yusuke194167",
+      "target": "@jun078b66",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hironoshiozaki",
+      "source": "@yusuke194167",
+      "target": "@ultrascout",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@t7k017",
+      "source": "@yusuke194167",
+      "target": "@memopuri1106",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@gyo_chan812",
+      "source": "@yusuke194167",
+      "target": "@iseto_raru",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@komariko1211",
+      "source": "@yusuke194167",
+      "target": "@sophie_siratori",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yokoonoda",
+      "source": "@yusuke194167",
+      "target": "@loveribbon1025",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@otonecoikuri",
+      "source": "@yusuke194167",
+      "target": "@rn_1ntu",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yamotonaoko",
+      "source": "@yusuke194167",
+      "target": "@izonai_bd",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@rei_sakamoto",
+      "source": "@yusuke194167",
+      "target": "@hirocchiii1020",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@pigumo415",
+      "source": "@yusuke194167",
+      "target": "@aoi_250724",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@tateishijunko",
+      "source": "@yusuke194167",
+      "target": "@cocona_0325",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@riarnas",
+      "source": "@yusuke194167",
+      "target": "@riaria_o_0507",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@okumurabrothers",
+      "source": "@yusuke194167",
+      "target": "@karankaran12303",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@adatikengo209",
+      "source": "@yusuke194167",
+      "target": "@oba_hann",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hasidumemomo",
+      "source": "@yusuke194167",
+      "target": "@keyp1c0",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@minamisayasaya",
+      "source": "@yusuke194167",
+      "target": "@anzai_miori",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@marinatter",
+      "source": "@yusuke194167",
+      "target": "@01aguni",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@raymuramoto",
+      "source": "@yusuke194167",
+      "target": "@jankenpon_win",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hibinaohiro",
+      "source": "@yusuke194167",
+      "target": "@reimi0977",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@takashi_ohashi",
+      "source": "@yusuke194167",
+      "target": "@jingusyoujo",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@shima_hit0",
+      "source": "@yusuke194167",
+      "target": "@goto_note",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@smjmarianne",
+      "source": "@yusuke194167",
+      "target": "@say_idol",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yutaka_mat",
+      "source": "@yusuke194167",
+      "target": "@don__0120",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@triggersoul1",
+      "source": "@yusuke194167",
+      "target": "@parlourspiral",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mappeneko",
+      "source": "@yusuke194167",
+      "target": "@sallykubota",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sae_catfreak",
+      "source": "@yusuke194167",
+      "target": "@yamazoe_aoi",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yukatsumura",
+      "source": "@yusuke194167",
+      "target": "@spiralstudio529",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yunkeru75",
+      "source": "@yusuke194167",
+      "target": "@luv_m0o",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@seinasama0523",
+      "source": "@yusuke194167",
+      "target": "@_yuzupi15",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@akoya_world",
+      "source": "@yusuke194167",
+      "target": "@baby_panda_da",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@pojimon",
+      "source": "@yusuke194167",
+      "target": "@camera_girls",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@syoki1018sp",
+      "source": "@yusuke194167",
+      "target": "@hinachu_ak",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hangyooodon",
+      "source": "@yusuke194167",
+      "target": "@samsanfoto",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@unairina0512",
+      "source": "@yusuke194167",
+      "target": "@hazukiss775",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kaoruhoshino",
+      "source": "@yusuke194167",
+      "target": "@nanaco_x615x",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@haana16",
+      "source": "@yusuke194167",
+      "target": "@michiri_59727",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@anzaiaya_staff",
+      "source": "@yusuke194167",
+      "target": "@spiral_w_k",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@brooklyn_001",
+      "source": "@yusuke194167",
+      "target": "@isa130pull",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mariko_omori",
+      "source": "@yusuke194167",
+      "target": "@amahisa_mao1212",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@iikuboteam",
+      "source": "@yusuke194167",
+      "target": "@enakyan__1215",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yeltkchlow",
+      "source": "@yusuke194167",
+      "target": "@hrk10292",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@oonokenji",
+      "source": "@yusuke194167",
+      "target": "@kazum51119",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kmroll",
+      "source": "@yusuke194167",
+      "target": "@ayapyon_65",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@naoya115",
+      "source": "@yusuke194167",
+      "target": "@h921ana",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mayu_singer",
+      "source": "@yusuke194167",
+      "target": "@meru_kimisen_y",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@fujimori_ai",
+      "source": "@yusuke194167",
+      "target": "@spiralmusicwest",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@official_akane",
+      "source": "@yusuke194167",
+      "target": "@moneysensecoll",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mana__yoshi",
+      "source": "@yusuke194167",
+      "target": "@shironiyell",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kbo_office",
+      "source": "@yusuke194167",
+      "target": "@oe2ecwhtq473336",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@maitea_piano",
+      "source": "@yusuke194167",
+      "target": "@mchoco0301",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@chaorin26",
+      "source": "@yusuke194167",
+      "target": "@nihonshuusha",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@shion_eve",
+      "source": "@yusuke194167",
+      "target": "@mii71_miikun",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@saki_ueshima",
+      "source": "@yusuke194167",
+      "target": "@ankass_dwrp",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@naoko0502",
+      "source": "@yusuke194167",
+      "target": "@knishida_x",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@konoha_kotonoha",
+      "source": "@yusuke194167",
+      "target": "@aki_nico",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@takahashiryoko_",
+      "source": "@yusuke194167",
+      "target": "@marika50_m",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@asabayuki",
+      "source": "@yusuke194167",
+      "target": "@smatbub",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@harunatakeuchi",
+      "source": "@yusuke194167",
+      "target": "@aperture_8",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@misatokondo",
+      "source": "@yusuke194167",
+      "target": "@harajuku_girls_",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@chiimimoto",
+      "source": "@yusuke194167",
+      "target": "@dai_photokatsu",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@namiriyu",
+      "source": "@yusuke194167",
+      "target": "@ammkokoaseiya",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hitochangmin",
+      "source": "@yusuke194167",
+      "target": "@shizu8212",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hirano_risa",
+      "source": "@yusuke194167",
+      "target": "@sara_113__",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@irei_megumi",
+      "source": "@yusuke194167",
+      "target": "@cocoyumechan",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sagoimariko",
+      "source": "@yusuke194167",
+      "target": "@iehmfsgozmxftx3",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@manami_0309",
+      "source": "@yusuke194167",
+      "target": "@idoll0v3r",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@asamine_k",
+      "source": "@yusuke194167",
+      "target": "@arikau15",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mi_yan_trico",
+      "source": "@yusuke194167",
+      "target": "@kazu04mi",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@minami_trico",
+      "source": "@yusuke194167",
+      "target": "@toooomooooko",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@maaaayu1024",
+      "source": "@yusuke194167",
+      "target": "@polluelo_gogo_7",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@minakobachan",
+      "source": "@yusuke194167",
+      "target": "@ricardo81174492",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@pf_donkey",
+      "source": "@yusuke194167",
+      "target": "@countzero_aasyu",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@takeki328",
+      "source": "@yusuke194167",
+      "target": "@mahina_xx",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yoshimi09",
+      "source": "@yusuke194167",
+      "target": "@k4210584332531",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hisaeecholove",
+      "source": "@yusuke194167",
+      "target": "@goto_finance",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@cheripanda",
+      "source": "@yusuke194167",
+      "target": "@tenjin_musume",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@milkvetchika",
+      "source": "@yusuke194167",
+      "target": "@shi_qing84603",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kazusa1011",
+      "source": "@yusuke194167",
+      "target": "@shizu_1305",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@koyama1010",
+      "source": "@yusuke194167",
+      "target": "@motokun735",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@angelfleurie",
+      "source": "@yusuke194167",
+      "target": "@dai_toryo2",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@k31ta_0625xx",
+      "source": "@yusuke194167",
+      "target": "@nyanyameow15",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@akarioya",
+      "source": "@yusuke194167",
+      "target": "@p_o_w_e_r_1000",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yukko1112",
+      "source": "@yusuke194167",
+      "target": "@michiri_231227",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@omoware_chiemi",
+      "source": "@yusuke194167",
+      "target": "@kaoru_ob",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@emiko410",
+      "source": "@yusuke194167",
+      "target": "@aguni7",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@anzu_uta",
+      "source": "@yusuke194167",
+      "target": "@aguni__new",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yy_tnk",
+      "source": "@yusuke194167",
+      "target": "@itsuki_joy",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@mikiwakabayashi",
+      "source": "@yusuke194167",
+      "target": "@a_a_aguni_san",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@utainaoya",
+      "source": "@yusuke194167",
+      "target": "@_ultra_c",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@myu_cako",
+      "source": "@yusuke194167",
+      "target": "@torimaka007",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@16yushin",
+      "source": "@yusuke194167",
+      "target": "@kawariri0420",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@natsumieat",
+      "source": "@yusuke194167",
+      "target": "@spiral_music",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hmb_d",
+      "source": "@yusuke194167",
+      "target": "@tokyoidolgekijo",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@freemusic_ltl",
+      "source": "@yusuke194167",
+      "target": "@amabuki_01",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@seira2013",
+      "source": "@yusuke194167",
+      "target": "@9nxcmnd933",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@p_nuts_farm",
+      "source": "@yusuke194167",
+      "target": "@honatsu_hp",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@amazonjp",
+      "source": "@yusuke194167",
+      "target": "@aquabluecha",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@nakarisa1212",
+      "source": "@yusuke194167",
+      "target": "@miti_317",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kinonao",
+      "source": "@yusuke194167",
+      "target": "@sana_mizutani",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@okamoshi",
+      "source": "@yusuke194167",
+      "target": "@hilala__idol",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@tomodanaoki",
+      "source": "@yusuke194167",
+      "target": "@miki_konyanko",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@asuka_sugino",
+      "source": "@yusuke194167",
+      "target": "@lin_0407",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sakai_akira1006",
+      "source": "@yusuke194167",
+      "target": "@punam_kanda",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@akkoaraa",
+      "source": "@yusuke194167",
+      "target": "@paruko657017780",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@chako0723",
+      "source": "@yusuke194167",
+      "target": "@fuzi_ookami",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hotaru0115",
+      "source": "@yusuke194167",
+      "target": "@oil_picture",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@uparupanekodog",
+      "source": "@yusuke194167",
+      "target": "@d10hiro",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sawachan_21ways",
+      "source": "@yusuke194167",
+      "target": "@tik149",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@chaqqhoshi",
+      "source": "@yusuke194167",
+      "target": "@naosuke_photo",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@gentabeer",
+      "source": "@yusuke194167",
+      "target": "@harajukuland",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@anahata_",
+      "source": "@yusuke194167",
+      "target": "@miku_no_nini",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@goqoo59",
+      "source": "@yusuke194167",
+      "target": "@mokkun2419",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kishimotoerika",
+      "source": "@yusuke194167",
+      "target": "@alienjkt_",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@nonpe_fullgallo",
+      "source": "@yusuke194167",
+      "target": "@yuno_staff",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@atsushikubota",
+      "source": "@yusuke194167",
+      "target": "@studio_nini2",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@chinamixchinami",
+      "source": "@yusuke194167",
+      "target": "@olive_oil_drink",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@noppotan",
+      "source": "@yusuke194167",
+      "target": "@anji_angelique",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@kamu_kamu",
+      "source": "@yusuke194167",
+      "target": "@omasanori555",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@goutarou1001",
+      "source": "@yusuke194167",
+      "target": "@jun_omeijun666",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@eriguitar",
+      "source": "@yusuke194167",
+      "target": "@pimont47",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@yuuki118_47",
+      "source": "@yusuke194167",
+      "target": "@aoi_t717",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@binkoh",
+      "source": "@yusuke194167",
+      "target": "@habz4ecf1sccktu",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@takhir",
+      "source": "@yusuke194167",
+      "target": "@leoyauman",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@sarayamegumi",
+      "source": "@yusuke194167",
+      "target": "@nyamo16",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@utautaitefutefu",
+      "source": "@yusuke194167",
+      "target": "@greghall4444",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@vo_go",
+      "source": "@yusuke194167",
+      "target": "@kokoa_616",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@uparupanecodog",
+      "source": "@yusuke194167",
+      "target": "@tomo0527_",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@do_do_dorothy",
+      "source": "@yusuke194167",
+      "target": "@arisa_w623",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@arazoumusic",
+      "source": "@yusuke194167",
+      "target": "@yuitann_0129",
       "type": "following"
     },
     {
-      "source": "@luck_a_say",
-      "target": "@hakanakikana",
+      "source": "@yusuke194167",
+      "target": "@oomikami_you",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@maroaiart",
+      "source": "@yusuke194167",
+      "target": "@harutan_tan_4",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@lucky_happy_83",
+      "source": "@yusuke194167",
+      "target": "@masayuki1025203",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@blackpig_pri",
+      "source": "@yusuke194167",
+      "target": "@a22177937a1",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@sirwilliamjm1",
+      "source": "@yusuke194167",
+      "target": "@suguhakobu",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@mei_apple_sabu",
+      "source": "@yusuke194167",
+      "target": "@kou_kool",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@mikage_myu",
+      "source": "@yusuke194167",
+      "target": "@samoozo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@seimi_takamatsu",
+      "source": "@yusuke194167",
+      "target": "@ryu20131129",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@michisachipapa",
+      "source": "@yusuke194167",
+      "target": "@_benji__",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@ascha30",
+      "source": "@yusuke194167",
+      "target": "@takutronic",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@naturaldiary_me",
+      "source": "@yusuke194167",
+      "target": "@rrundfunk",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@nekohidejp",
+      "source": "@yusuke194167",
+      "target": "@spiral_manager",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@nekodayofficial",
+      "source": "@yusuke194167",
+      "target": "@fbi999990",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@nanashiowl_1220",
+      "source": "@yusuke194167",
+      "target": "@cocona_coco1201",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@ai_aisome",
+      "source": "@yusuke194167",
+      "target": "@rxizimd28rox013",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@aicrealab",
+      "source": "@yusuke194167",
+      "target": "@maikawa_yuno",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@captyuki",
+      "source": "@yusuke194167",
+      "target": "@spiral_mg",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@siontukisiro",
+      "source": "@yusuke194167",
+      "target": "@takahashihisai",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@kimagure_siro",
+      "source": "@yusuke194167",
+      "target": "@takahashikazaha",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@2525_mfuw",
+      "source": "@yusuke194167",
+      "target": "@a_a_mai_ipo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@kurisu19801011",
+      "source": "@yusuke194167",
+      "target": "@ww_spiral",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@yukitubu_meru",
+      "source": "@yusuke194167",
+      "target": "@obknozunzun",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@black_rin320",
+      "source": "@yusuke194167",
+      "target": "@nyaaanya_spiral",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@yuno02_aiart",
+      "source": "@yusuke194167",
+      "target": "@386mi",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@rsnow0802",
+      "source": "@yusuke194167",
+      "target": "@o0pi6",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@sin_nari_poteto",
+      "source": "@yusuke194167",
+      "target": "@siz6lccsntgibgn",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@rinsisteraiart",
+      "source": "@yusuke194167",
+      "target": "@konekoneko1030",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@sasasasaorigin",
+      "source": "@shakyo_komono",
+      "target": "@geibunnkyou",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@yasagure77",
+      "source": "@shakyo_komono",
+      "target": "@yuna_bit",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@tgemr",
+      "source": "@shakyo_komono",
+      "target": "@orangetanakades",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@asahioabj",
+      "source": "@shakyo_komono",
+      "target": "@trust_records",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@shiromame0304",
+      "source": "@shakyo_komono",
+      "target": "@kisosaki_shakyo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@666hara_k",
+      "source": "@shakyo_komono",
+      "target": "@paramita_muse",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@latoa0123rj",
+      "source": "@shakyo_komono",
+      "target": "@gozaishoropeway",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@shizukunooekaki",
+      "source": "@shakyo_komono",
+      "target": "@humanitec_net",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@ai_danomi",
+      "source": "@shakyo_komono",
+      "target": "@huma_iryo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@nia_x_ai",
+      "source": "@shakyo_komono",
+      "target": "@midorinetkomono",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@kimagureanimals",
+      "source": "@shakyo_komono",
+      "target": "@komono_moko",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@lunarose_game",
+      "source": "@shakyo_komono",
+      "target": "@inabeshakyo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@3ipi5wfslry0z9t",
+      "source": "@shakyo_komono",
+      "target": "@bunkyo_vc",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@eikologos",
+      "source": "@shakyo_komono",
+      "target": "@kawaguchisyakyo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@sutanokami",
+      "source": "@shakyo_komono",
+      "target": "@tokaimurashakyo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@fightingcomic",
+      "source": "@shakyo_komono",
+      "target": "@yokkaichikouhou",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@jinsoukyokusei",
+      "source": "@shakyo_komono",
+      "target": "@naoki_hirota",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@yousty_01",
+      "source": "@shakyo_komono",
+      "target": "@kenjic69",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@syyholbswjwneh2",
+      "source": "@shakyo_komono",
+      "target": "@henli374awrroxn",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@tadaima_sagashi",
+      "source": "@shakyo_komono",
+      "target": "@mie_komono",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@kuzelabo78660",
+      "source": "@shakyo_komono",
+      "target": "@komoshika",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@sarischerika",
+      "source": "@shakyo_komono",
+      "target": "@mvsc_jimukyoku",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@mikke_illust",
+      "source": "@shakyo_komono",
+      "target": "@sanjosyakyo",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@lulu_lulu1123",
+      "source": "@shakyo_komono",
+      "target": "@town_komono",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@_shima__shima__",
+      "source": "@tokyo_eventinfo",
+      "target": "@oidontaku",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@prism_illust_ai",
+      "source": "@tokyo_eventinfo",
+      "target": "@tokyonekyoramen",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@hidamari173822",
+      "source": "@tokyo_eventinfo",
+      "target": "@37sakana_japan",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@yumeoi773",
+      "source": "@tokyo_eventinfo",
+      "target": "@currytronica",
       "type": "following"
     },
     {
-      "source": "@mormogtarou",
-      "target": "@yurishia_diary",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@iuvdl51ys027162",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ipupupupupu",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@mmx_enc",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aixyu1v",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aki__studio",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@alacbal",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@pound1844721",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@iwakan_logss",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@akinonnon_kan",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@oshin_taro",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@jacks_room_fun",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@saikounaoresama",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@antlerspassion7",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@wearereds281",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kurukurumeikyu",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@rino_saeka2676",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@irororu",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@nina_genuine",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@martian_gem",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@lunay3430143",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@motherstar2023",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@rurina_ai",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yamanoge1",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kaz_imosala",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@hiro_gundamw",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@donut_sheep",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yuk1_o128",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@keiko2015xxx",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ukiyo_il",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@_love2030_",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@merumeruchan79",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@mizukikotohaai",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@sakura_i_ai",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@echoesf09",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@dj_hajime_music",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@bakubaku_hi",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@koukou_ko1",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@gmaster_2",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@gkz9_m",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@pawprintbit",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yasaisan36625",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@shachino_onara",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yozomi_pkmnk",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yukari_sitou76",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@jyoharuto",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@q212d",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@shimaebi2108",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@amanojaku0730",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@tb3bu7xcsb53909",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@loud0715",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@frienzu1211",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@tofupan_",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aimer_pita",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ichifujishunka",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@abm_velvet",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@pokarin_grok",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@syuji_create",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@0022_kirisumi",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@xuan_lune",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@lumie_aiart",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@suou_ttm",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ruizartstudio",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@rion_409",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@koko_rix",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kuragesan_99",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aivideo2026",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@mario335599",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@mira_secret_7",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@silver_mokusei",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yukinono_ai",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@modulationwheel",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@everyday_pickup",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@rinkochandesuyo",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@koharutameiki",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@uhaoke_stamp",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@nekotyan888",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@studio_siba",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@bigchanx",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ameimaruart",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@shirika_kobe",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kyou_ai_art",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@toshika_sieg",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@stellaaiart",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@menesmegami",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@shu_u_jp",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@jj1ncg",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ria_aiart",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@tsukiakari_girl",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@syokupan0099",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@murimnoigin",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@syakknnhennsai",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@sayaka_soutya",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aiyurumohusedo3",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@sakurasaku01xyz",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yorukotoba",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ocwecc7nziuzppu",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@skyblue_cat22",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@chararyou",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@saltysugarx8",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@angekoganegaoka",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@cocolofade",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@tofu151",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kabostart",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@mioworkshop",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@auiaqfeeud39853",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@massun0312",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@pulsecom",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@unv_v568",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@night_owl_syn",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@alpacako",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@jtfai_1917",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@nemnecousagi",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@sinosin0324",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@siera_kk",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@yamadaex5",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kaonasis_love",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@pokapokapo36501",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@pesutomasuku48",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@lira_ai_log",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ai_mio_art",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@waifurys",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@setsunawave",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@shiranuinanoka",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@taakekoke",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@452saitama",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@cw21kel7ze87277",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@nocturne_aka",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@arsonayurizen",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@ai1299632374143",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@misadokirico26",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@naginoyoin",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aiwatap",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@eyiilcvmmp90157",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@medousa1969",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@kotoha_works",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@chachamzdd",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@cxd0gwm3aikfamm",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@muyz9d",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@shlromimikinako",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@goccardgame",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@wakarankoro",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@dqxmoet",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@aababd147",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@511ver14",
-      "type": "following"
-    },
-    {
-      "source": "@mormogtarou",
-      "target": "@coyane_ai",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@tocho_koho",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@tmtabunka",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@clair_tabunka",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@moj_immi",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@kanboukansen",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@immi_tokyo",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@mhlwitter",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@shinjuku_news_e",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@shinjuku_news_c",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@shinjuku_news_k",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@shinjuku_info",
-      "type": "following"
-    },
-    {
-      "source": "@shinjuku_news_j",
-      "target": "@kanko_shinjuku",
+      "source": "@tokyo_eventinfo",
+      "target": "@funabashiya_",
       "type": "following"
     },
     {
@@ -4740,123 +3960,13 @@
       "type": "following"
     },
     {
-      "source": "@shakyo_komono",
-      "target": "@geibunnkyou",
+      "source": "@party_animalsjp",
+      "target": "@soyukai_renmei",
       "type": "following"
     },
     {
-      "source": "@shakyo_komono",
-      "target": "@yuna_bit",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@orangetanakades",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@trust_records",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@kisosaki_shakyo",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@paramita_muse",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@gozaishoropeway",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@humanitec_net",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@huma_iryo",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@midorinetkomono",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@komono_moko",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@inabeshakyo",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@bunkyo_vc",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@kawaguchisyakyo",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@tokaimurashakyo",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@yokkaichikouhou",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@naoki_hirota",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@kenjic69",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@henli374awrroxn",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@mie_komono",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@komoshika",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@mvsc_jimukyoku",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@sanjosyakyo",
-      "type": "following"
-    },
-    {
-      "source": "@shakyo_komono",
-      "target": "@town_komono",
+      "source": "@party_animalsjp",
+      "target": "@banhmi_fes",
       "type": "following"
     },
     {
@@ -5850,16 +4960,6 @@
       "type": "following"
     },
     {
-      "source": "@party_animalsjp",
-      "target": "@emeraldchoco",
-      "type": "following"
-    },
-    {
-      "source": "@party_animalsjp",
-      "target": "@fuyuki",
-      "type": "following"
-    },
-    {
       "source": "@musako_higako",
       "target": "@koganeiawaodori",
       "type": "following"
@@ -5967,6 +5067,1006 @@
     {
       "source": "@musako_higako",
       "target": "@_koganeikanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kero_car",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@hokuso_plus",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@sunsmil38367775",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@machidukuri1",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ryugasaki_city",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@jgsdf_matudosta",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yakiri_jinja",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chiba_900th",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@unarikun_narita",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@parksreien",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@choshi_flat_com",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@onomasatoshi_of",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@narumitakahash4",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@mogup_basshi",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_cpf",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_happy",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@evadancestudio",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@shin_matsu_ri",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tobubus_group",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@rku_soc",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nut_gurume",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chizu_kankou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kanbi_rioha",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@love_love_chiba",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@vols_labor",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@farmnemoto",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@funabashi_kanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@takera_meshi",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@inaydgs5j88rt6w",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@akihama_net",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@area_matsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@bunguya_kiya",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@amigos_uruguay",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nankashi_fes",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tokibow300",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudonegi",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@harajukumiccolo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kuma_matsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@books_ryobundo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kikuyamatsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ogurotomoe1987",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chokai_info",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@leonids_07",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_kankyou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudoshikoren",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nagaruru_pj",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_shoku",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nashikomadon",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@honjo_kanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@misatokankou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@m_wakamonop",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ntmatsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@m_machikadofes",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudomatsuri",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@gekidan_mathudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yagiribrewery",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@miyazawahomes",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo21kouen",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudocra1104",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yuna_eco",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo64568351",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudomatsukai",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@hagitani",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@washuen808",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chibaken_kouhou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@obatafarm",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@h_br_dofasi_sol",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ateliernihaku",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@meiji_the_choco",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tobari_tomato",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tojosoba_sachi",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yasukawa_farm",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@zen_info",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@garoima",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_kyousei",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@checkin2710077",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tengu_canning",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@takacyuen330",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@npomamacan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudobunkazai",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudocityphil",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_shobo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kotobuki_tougei",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@machi_kashiwa",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@expo2025_japan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tojosai",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_kyoudou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_startup",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nekoranpa2",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@katherinejrdt",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@bernardopietkd",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@colimdo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ypkljylbod4vgda",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_sc",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nashibo_shiroi",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@masamitsu_kun",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tourismhida",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@agatsuma_kanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kitaiba_kankou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kawaiimatsurin",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@machinakakankou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@arida_city",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yura_greenery",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@guruttochiba",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chibabunkasisan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@seitoku_univ",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@saitamakanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@saitama_style",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@aomori_kyodokan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@wakasaobamainfo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@saitamabunkazai",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@jomon_ichikawa",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@hitachiotakanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tateyamacityta",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@minori_togane",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@rakunounosato",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@taclibido19",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@seitokunichibun",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_danjo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@arita_shoten",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kitakoganedream",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@minekankou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@shimantokanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@jcimatsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@oma_kanko",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kurayoshi_city",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kashiwa_tweb",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tojou_linca",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yui0630susaki",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kuratmicecs",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@saito_nouen_y",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@oosumikankou45",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@shinmatsudoz",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@remi_hirano",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@niihamaleon",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@isumitetsuitter",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kanto_mintetsu",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@dasiokon28",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chi_bakunstaff",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@seikouudoku2005",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@teppentenshin",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kawamitsubussan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@wakuhide16",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@akimotooo726",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kanzashi_ayano",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@atsumarushe",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@jobansen_know",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_ouendan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsuon2021",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@coworkingflat",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@saza_coffee",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@princetokugawa",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@eventbank_a",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kankou_kashiwa",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@binasce",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kondo_yas",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@gigo_kitemite",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nashikkokan20",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chibakunplaza",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@kisarazukankou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@baffetto047",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tojomuseum",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@australiainjpn",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@omatsurijapan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@iceopenoff",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@robert_takata",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@jrsca_jr",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@rdenjapon",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@jatoukatuchuou",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@vase_ase",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ichigo_group",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@queenslandjp",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matudoramen",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@km_matsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudo_museum",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chiro_wan",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudotakeout",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@chiba_tommy",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nomad_matsudo",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@etabi55",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@zawazawa80",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@munetada_chiba",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@tomita_kizuna",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@mahamerucoffee",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@shinko_venus",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@seal_ase",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@matsudobrewery",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@nomad_suzuki",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@t_sakuramatsuri",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@1126ben",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@uhhosugawara",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@minibake_",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@bakegoro",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@bake_jimu",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@yamap168",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@torasan_50th",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ynn47_chiba_",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@sei_gakuyukai",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@ichikawa_tekona",
+      "type": "following"
+    },
+    {
+      "source": "@matsudokankou1",
+      "target": "@astro_naoko",
       "type": "following"
     },
     {
@@ -6968,12 +7068,1012 @@
       "source": "@odakakankou",
       "target": "@sato_qrl",
       "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@bizlab09",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@goho___",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yuji_186",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@enatsu_tai",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@megurita",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kimacchan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sweets_itsuki",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tereenu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nekonohigurashi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@lcmk_kawachi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@aircon373pgg",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@chibajiro_chiba",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sayamabico_s",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@dejitama_ai",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@koumei_ai5566",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@okanestory07yt",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@minnano_copy",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@lp_marketing_ma",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@zeirishi2",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yuruazabu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@youko_u_u",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mado_aimasuter",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kensuu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@creativeedge_cl",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@cozeblog",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tapehead_lab",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mireilledartois",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@smobijiman_sss",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@develogon0",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@bmr_sri",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sugurukun_ai",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@1namaiki",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@gomachandakedo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ai_jitan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@malcchi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@musicst45110914",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@weekendbob3",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tsumugi_utatabi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@armadillo_ai",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ryocchi_o",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@junya_826",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tanatan50508048",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sakurasagami",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@pianolesson310",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@momobungei",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@maslow_design",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@buku_batu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hiroviva",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kssetubi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mochitaro_de",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yuto__2410",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@misakino_marin",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@snoopy_chaen",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@r_brewery",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kochokomachi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nankai_green",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@wanone737",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@minyangdlucky",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ranpan22",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@koichiroshimizu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@rino0825_kada",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kogitsune_aira",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nijinocraft1124",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ao9120sora",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@rakuko_rozerubs",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mmei_comedyidol",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@g_amino",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@obanayukari",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yukkycameo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@d_j_masa",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@d_d_p111",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ryo_sasaoka",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@okarina0714",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@orengesayama",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@dagashi_houkago",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@moe1natsumikan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kazeinu_",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@aoidakara1",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@adue_sanki",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@rikkatan62",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@___rikkachan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kyoshi0208",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ryouka_ph",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@rutosara55",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kokoromiruru",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sus304stainless",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@oshidori_neu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hiroaki_p_72",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@jzwwbfzpb895474",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@arika7018",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@silver_celica",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@shrine_water",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@cafe_kami",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@noraneko_pj",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mockey52",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@okanotosou1211",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tenpos_sakai070",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@info_fieldworks",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sayakahall8700",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@minatoaqua",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@xc0frhkikaifhcr",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kuri_m_m_kuri",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mshimfujin",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@inknoshimi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yokoyama_bancho",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ranpan21",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@goakashin",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ageomao",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nukosama",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@shinnosukeykt",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@haruharu20071",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ichijo_mitsuki",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ocha_ai0708",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ipd_ai_miyama",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tuina_chan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ruchisyougun",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@novatynagano",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hojo_rururu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@o_forest_kumiai",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kgorigori",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hanachan77",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hisayoshi_ueda",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@seiramhxx",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mrkoukun",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@norisman_hs",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@byakuya0614",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@itsuhamusik",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@amagasakicci",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tsurui_love",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@meg_re_art",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mirinkoboreume",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kaorinmj",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ms_system3",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@seonabe",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ppixgkrwxbhhhrt",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@dmohashi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kasegu_master",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mikkeichi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kappagree_n",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@koakkuma_jpn",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@fuumuuattend",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tochi_suke",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@takata_yumechan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hanyu06272015",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@may27s",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@fuunya_mumunya",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mofu_to_risu",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@jurotan",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ryukke",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@h_mentalcoach",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@unasen_bo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@princess_kohsin",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@omisa_donguri",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@housyunji",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@saikimagnet",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@tukasa2023",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nishino_kiyo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kikurami_tomoe",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kise_ruri",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ryu_ouri",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@scramblenara",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@chimohama",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@matama_tamane",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@projectkomahime",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kimiwata",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@robotatama",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@hounengyo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kinoko_no_sei",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nagasaki_search",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@minazuki_yukari",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@shiroamojo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yoriyoriyorikoo",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nonnokaminoseki",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sakuyaoi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@sonokuwadouga",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@anniversary_70",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@chitamilk",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@shiromoto_3",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@yuuki_pudding",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@mercury90003",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@fufufu_yoshi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@pooh_conductor",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@zyuninmomoiro",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@revocomi",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@kagami_info",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ryokan_suigou",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@charinchanno1",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@otane_ch",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@bainyako",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@t0m0yam4649",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@robo111922",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@xq6beh2btq12744",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@ourlzabnkpzwhqk",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@rokou2008",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@osakasayamaneko",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@minamioweb",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@wbelectric0521",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@nishiura0802",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@standards_info",
+      "type": "following"
+    },
+    {
+      "source": "@sayamabico",
+      "target": "@juriatana0518",
+      "type": "following"
     }
   ],
   "cost_estimate": {
-    "credits": 1501,
-    "usd": 0.01501,
+    "credits": 1673,
+    "usd": 0.01673,
     "calls": 10,
-    "returned_users": 1379
+    "returned_users": 1599
   }
 }
