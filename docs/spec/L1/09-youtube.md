@@ -48,12 +48,13 @@ invariants:
   - INV-YTB-003
   - INV-YTB-004
   - INV-YTB-005
+  - INV-YTB-006
 verified_by:
   - tests/test_run_daily_youtube_backfill.py
   - tests/test_youtube_daily_operations_policy.py
   - tests/test_apply_youtube_setlist_occurrences_rdb.py
   - tests/test_extract_youtube_setlists.py
-updated_for: 83bf7d0
+updated_for: c55e71a
 ---
 
 # YouTube取り込みサブシステム
@@ -92,7 +93,8 @@ updated_for: 83bf7d0
 
 **出力**
 
-- `data/youtube_year_backfill_candidates.json` — 掘り起こしの候補（581件。強一致183・要レビュー48・弱350）
+- `data/youtube_year_backfill_candidates.json` — 掘り起こしの候補（582件。強一致183・要レビュー48・弱351）
+- `data/youtube_backfill_retry_state.json` — 行ごとの最終検索日、次回検索可能日、直近の成果件数を持つ再試行台帳
 - `data/event_occurrence_observations.json` — 「この系列はこの年に開かれた」という観測（30系列・53観測）
 - `data/event_schedule_rules.json` / `data/event_date_predictions.json` — 観測から導いた開催規則と日付予測（各13件）
 - `data/youtube_setlist_occurrences.json` — 概要欄から取り出したセットリスト（307開催回・延べ2,745曲。うち公開イベントに結びついたもの23件）
@@ -188,6 +190,23 @@ RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、それ
 - **守っているテスト**: `tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_local_launchagent_template_is_manual_only`、
   `tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_runbook_names_github_actions_as_automatic_owner`
 
+### INV-YTB-006 検索済みの薄い行を毎日引き直さない
+
+- **内容**: 日次検索は、8月・7月の未検索行を、検索済み行の再試行より先に選ぶ。
+  検索済み行は `data/youtube_backfill_retry_state.json` の `next_retry_on` を過ぎるまで再検索せず、
+  成果ゼロが10バッチ続いた場合は、quota上限まで走らず `harvested_no_yield_limit` で終了する。
+- **なぜ**: 2026-07-30〜08-16は毎日およそ100検索を使ったのに、候補は14日で6件しか増えず、
+  2026-08-17分は推定108検索・53完了バッチで新規候補ゼロだった。検索済みの薄い6月・7月行を
+  `--retry-selected` で毎日引き直していたためである。再試行期限をプロセス外へ保存しなければ、
+  翌日のジョブは前日の空振りを知らず、同じ費用を繰り返す。
+- **破れたときの症状**: 候補数が増えないまま毎日quota上限へ達する。旬の8月行が未検索のまま残る。
+- **守っているコード**: `run_daily_youtube_backfill.py` の `bootstrap_retry_state()`、
+  `next_rows_for_args()`、`run_harvest_batches()` と `.github/workflows/youtube_daily_backfill.yml` の対象月・上限引数
+- **守っているテスト**: `tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_bootstrap_puts_existing_searches_on_cooldown`、
+  `test_retry_cooldown_suppresses_row_until_due_date`、`test_unseen_rows_across_focus_months_precede_retries`、
+  `test_run_harvest_batches_stops_after_consecutive_no_yield`、
+  `tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_workflow_prioritizes_current_month_and_bounds_empty_retries`
+
 ## 主要な流れ
 
 先に、なぜこれもドメインで切ってあるかを書いておく。YouTubeは収集・判断・レビュー・マスタ・公開のすべてに顔を出すが、
@@ -203,16 +222,19 @@ YouTube由来の曲スクリプトを自分では持たず、この仕様が書�
 渡している引数がこの工程の性格をよく表している。
 
 ```
---month 6 --auto-next-month --focus-month 6 --focus-month 7
---limit 1 --max-results 5 --retry-selected --until-quota-limited --mail-reminder
+--month 8 --auto-next-month --focus-month 8 --focus-month 7
+--limit 1 --max-results 5 --retry-selected --retry-cooldown-days 30
+--max-consecutive-no-yield 10 --until-quota-limited --mail-reminder
 ```
 
-1回に1行だけ、検索結果は5件まで、6月と7月に絞り、クォータが尽きるまで繰り返す。
+1回に1行だけ、検索結果は5件までとし、8月の未検索行、7月の未検索行、期限を迎えた再試行行の順に繰り返す。
 **1回の量を極端に小さくして、回数で稼ぐ形になっている。** APIの1リクエストが重いためで、
 `estimated_search_calls` は1行あたり最大2回と数えている。
 
 クォータに当たった時点で `status="quota_limited"` として静かに終わる（INV-YTB-003）。
 `--max-batches` は手動実行時の安全弁で、定時実行では0（上限なし）である。
+ただし成果ゼロが10バッチ続けば `harvested_no_yield_limit` で先に止まり、残りのquotaを温存する。
+既存169行は再試行台帳の導入日に一度だけ初期登録し、直後に同じ検索を繰り返さない。
 
 ### 2. 掘り起こした候補を、観測 → 規則 → 予測へ変える（稼働中）
 
@@ -335,15 +357,6 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 
 ## 未解決・注意点
 
-- **日次バックフィルが、毎日クォータを使い切りながらほとんど前に進んでいない。**
-  直近14日（2026-07-30〜08-12）の実行記録を並べると、毎日50前後のバッチを回して
-  約100回の検索を投げているのに、候補は575件から581件へ**14日で6件しか増えていない**。
-  強一致183件と要レビュー48件に至っては、**1件も動いていない**。
-  原因は `--retry-selected` だと読める。6月の未処理行はもう無く、
-  「候補が10件未満で強一致がゼロの行」を毎日引き直す状態に入っている（`retryable_rows()`）。
-  同じ行を毎日検索しても結果は変わりにくいので、クォータがほぼ空振りしている。
-  **これは仕様上の欠陥というより運用の判断待ちで**、対象月を進めるのか、
-  引き直しの条件を狭めるのか、そもそも止めるのかは決まっていない。
 - **セットリスト抽出が2026-07-25から止まっている。** 曲目の主要な入力なのに、
   `extract_youtube_setlists.py` はどのworkflowにも入っていない。
   自動化すべきかどうかは未決。手厚いテスト（24件）があるので、繋ぐこと自体は難しくない。
