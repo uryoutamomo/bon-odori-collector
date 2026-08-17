@@ -48,6 +48,7 @@ invariants:
   - INV-RVW-015
   - INV-RVW-016
   - INV-RVW-017
+  - INV-RVW-018
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -57,6 +58,7 @@ verified_by:
   - tests/test_judgment_j0_read.py
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
+  - tests/test_review_console.py
 updated_for: 64c874f
 ---
 
@@ -242,6 +244,22 @@ updated_for: 64c874f
   `tests/test_x_occurrence_resolution_contract.py::test_event_dependency_never_reuses_accept_from_an_older_revision`、
   `tests/test_x_occurrence_resolution_contract.py::test_resolved_occurrence_is_not_reopened_by_unrelated_snapshot_change`
 
+### INV-RVW-018 レビュー画面の自動解決は、完全な現在集合か一意な確定開催回だけを根拠にする
+
+- **内容**: 統合受信箱のpending行を表示上の処理済みにできるのは、`selection.mode=all` の完全スナップショットを
+  リポジトリ内で再現でき、その現在集合から安定IDが消えた場合、またはX新規イベント候補について
+  シリーズ名・開催年・開催日が一致する確認済み公開イベントがちょうど1件ある場合だけである。
+  入力欠落・変換失敗・複数一致では候補を隠さない。この表示上の解決は受信箱DBのstatus/decisionを変更しない。
+- **なぜ**: source writerは監査のため、元キューから消えたpending行もDBに残す。そのまま全件を人へ見せると
+  解決済みの残骸が現在の仕事を埋める。一方、canaryや部分スナップショットからの不在を「解決」とみなすと、
+  まだ必要なレビューを消してしまうため、完全性と一意な同一性を証明できる場合に限る。
+- **破れたときの症状**: もう候補でない行が未レビュー件数を増やし続ける。逆に、別イベントや未収集の行が
+  勝手に処理済みになり、必要な確認が画面から消える。
+- **守っているコード**: `review_console/data.py` の `current_complete_source_inbox_ids()`、
+  `source_snapshot_auto_resolution()`、`x_gap_public_auto_resolution()`
+- **守っているテスト**: `tests/test_review_console.py::ReviewConsoleTests::test_review_inbox_item_absent_from_complete_current_source_snapshot_is_closed`、
+  `tests/test_review_console.py::ReviewConsoleTests::test_x_gap_new_event_already_confirmed_in_public_data_is_closed`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -351,7 +369,9 @@ X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つ�
 
 - **受信箱に積む選別基準の作り直しが未着手。** いまは積まれる量が人の処理量を上回りうる。
   律速工程に対して入口を絞らないままなので、根本的にはここが宿題になっている。
-- レビューコンソールの「次に何をすべきか」の提示が弱く、優先順位が人の記憶に依存している。
+- ~~レビューコンソールの「次に何をすべきか」の提示が弱く、優先順位が人の記憶に依存している。~~
+  **2026-08-17に次アクション別表示、未来情報の先頭表示、完全な現在集合から消えた残骸の表示上の自動解決を実装した。**
+  ただしYouTube入力は実行時だけ生成されるため、リポジトリ内で完全性を再現できず、この自動解決の対象外である。
 - ~~アダプタが種類ごとに増える構造なので、共通の契約（L2）を切り出したい。~~
   **2026-08-14に[受信箱アダプタの契約](../L2/review-inbox-adapter.md)として切り出した。**
   ただし切り出したのは共通部分（項目の形・禁止事項・突き合わせ）だけで、

@@ -10,6 +10,7 @@ const state = {
   source: "",
   domain: "",
   actionGroup: "",
+  timeScope: "",
   q: "",
   limit: "250",
   activeIndex: 0,
@@ -418,7 +419,13 @@ function renderTodayActions(summary) {
   const review = summary.review || {};
   const ops = summary.ops || {};
   const actionGroups = state.inventory?.action_group_counts || {};
+  const timeScopes = state.inventory?.time_scope_counts || {};
   const actions = [
+    {
+      title: "開催前情報を先に見る",
+      value: timeScopes.future?.pending,
+      target: { view: "review", timeScope: "future", status: "pending" },
+    },
     {
       title: "未レビューを見る",
       value: review.pending,
@@ -779,6 +786,7 @@ function applyTarget(target) {
   state.source = target.source || "";
   state.domain = target.domain || "";
   state.actionGroup = target.actionGroup || target.action_group || "";
+  state.timeScope = target.timeScope || target.time_scope || "";
   state.q = target.q || "";
   elements.searchInput.value = state.q;
   state.activeIndex = 0;
@@ -831,6 +839,7 @@ function renderInventory() {
       button.addEventListener("click", () => {
         state.source = state.source === source.id ? "" : source.id;
         state.actionGroup = "";
+        state.timeScope = "";
         state.activeIndex = 0;
         loadItems();
         renderInventory();
@@ -908,6 +917,7 @@ function actionGroupButton(label, value, active, count) {
     state.actionGroup = value;
     state.source = "";
     state.domain = "";
+    state.timeScope = "";
     state.activeIndex = 0;
     loadItems();
     renderInventory();
@@ -924,6 +934,7 @@ function filterButton(label, value, active, count) {
   button.addEventListener("click", () => {
     state.domain = value;
     state.actionGroup = "";
+    state.timeScope = "";
     state.activeIndex = 0;
     loadItems();
     renderInventory();
@@ -941,6 +952,7 @@ async function loadItems() {
   if (state.source) params.set("source", state.source);
   if (state.domain) params.set("domain", state.domain);
   if (state.actionGroup) params.set("action_group", state.actionGroup);
+  if (state.timeScope) params.set("time_scope", state.timeScope);
   if (state.q) params.set("q", state.q);
   params.set("limit", state.limit);
   const payload = await api(`/api/items?${params.toString()}`);
@@ -954,7 +966,8 @@ function renderItems(items, count) {
   const sourceText = state.source ? sourceTitle(state.source) : "";
   const domainText = state.domain || "";
   const actionGroupText = state.actionGroup ? actionGroupTitle(state.actionGroup) : "";
-  elements.listTitle.textContent = [statusText, actionGroupText, domainText, sourceText].filter(Boolean).join(" / ");
+  const timeScopeText = state.timeScope ? timeScopeTitle(state.timeScope) : "";
+  elements.listTitle.textContent = [statusText, timeScopeText, actionGroupText, domainText, sourceText].filter(Boolean).join(" / ");
   elements.listSummary.textContent = `${count}件`;
   elements.items.replaceChildren(...items.map(renderItem));
   setActiveIndex(state.activeIndex, { scroll: false });
@@ -1338,6 +1351,14 @@ function sourceTitle(sourceId) {
 function actionGroupTitle(groupId) {
   const group = state.inventory?.action_group_counts?.[groupId];
   return group ? group.label : groupId;
+}
+
+function timeScopeTitle(timeScope) {
+  return {
+    future: "開催前情報",
+    reference: "参考・整理",
+    historical: "過去実績",
+  }[timeScope] || timeScope;
 }
 
 function statusLabel(status) {

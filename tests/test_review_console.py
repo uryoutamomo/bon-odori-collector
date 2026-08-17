@@ -195,6 +195,204 @@ class ReviewConsoleTests(unittest.TestCase):
         self.assertEqual(item["domain"], "受信箱")
         self.assertEqual(item["action_group"], "current_date")
 
+    def test_review_inbox_item_absent_from_complete_current_source_snapshot_is_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            current_source_key = "term:用語候補|type:参加スタイル語|value:踊り納め"
+            stale_source_key = "term:用語候補|type:参加スタイル語|value:古い候補"
+            current_inbox_id = data.stable_id(
+                "inbox", "term", "daily_term_candidate", current_source_key
+            )
+            stale_inbox_id = data.stable_id(
+                "inbox", "term", "daily_term_candidate", stale_source_key
+            )
+            (root / "data/weekly_harvest_review_candidates.json").write_text(
+                json.dumps(
+                    {
+                        "rows": [
+                            {
+                                "term": "踊り納め",
+                                "category": "用語候補",
+                                "type": "参加スタイル語",
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            (root / "data/review_inbox.json").write_text(
+                json.dumps(
+                    {
+                        "items": [
+                            {
+                                "inbox_id": current_inbox_id,
+                                "kind": "term",
+                                "time_scope": "reference",
+                                "title": "踊り納め",
+                                "source_id": "daily_term_candidate",
+                                "source_key": current_source_key,
+                            },
+                            {
+                                "inbox_id": stale_inbox_id,
+                                "kind": "term",
+                                "time_scope": "reference",
+                                "title": "古い候補",
+                                "source_id": "daily_term_candidate",
+                                "source_key": stale_source_key,
+                            },
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            inventory = data.load_inventory(
+                root=root,
+                decisions_path=root / "data/review_console/decisions.json",
+                reader_mode="inbox",
+            )
+            by_inbox_id = {
+                item["key"].split("|", 1)[0]: item for item in inventory["items"]
+            }
+
+        self.assertEqual(by_inbox_id[current_inbox_id]["status"], "pending")
+        self.assertEqual(by_inbox_id[stale_inbox_id]["status"], "closed")
+        self.assertEqual(
+            by_inbox_id[stale_inbox_id]["auto_resolution"]["decision"],
+            "auto_source_snapshot_no_longer_pending",
+        )
+        self.assertEqual(inventory["totals"]["pending"], 1)
+        self.assertEqual(inventory["totals"]["auto_closed"], 1)
+
+    def test_x_gap_new_event_already_confirmed_in_public_data_is_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data/public").mkdir(parents=True)
+            (root / "data/public/events_public.json").write_text(
+                json.dumps(
+                    [
+                        {
+                            "name": "大井どんたく夏まつり",
+                            "date": "2026-08-22",
+                            "date_end": "2026-08-23",
+                            "status": "確認済み",
+                            "date_confidence": {"level": "confirmed"},
+                        }
+                    ],
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            (root / "data/review_inbox.json").write_text(
+                json.dumps(
+                    {
+                        "items": [
+                            {
+                                "inbox_id": "inbox_ooi",
+                                "kind": "x_gap",
+                                "time_scope": "future",
+                                "priority_label": "P1",
+                                "priority_score": 85,
+                                "title": "【第72回大井どんたく夏まつり】8/22(土)23(日)",
+                                "event_year": 2026,
+                                "source_id": "x_gap",
+                                "source_key": "x:ooi",
+                                "recommended_action": "review_new_event",
+                                "payload": {
+                                    "candidate_kind": "informal_new_event",
+                                    "observed_dates": ["2026-08-22"],
+                                    "source_text": "【第72回大井どんたく夏まつり】8/22(土)23(日)",
+                                },
+                            },
+                            {
+                                "inbox_id": "inbox_kuramae",
+                                "kind": "x_gap",
+                                "time_scope": "future",
+                                "priority_label": "P1",
+                                "priority_score": 85,
+                                "title": "【蔵前つながる盆ダンス】10/4(日)",
+                                "event_year": 2026,
+                                "source_id": "x_gap",
+                                "source_key": "x:kuramae",
+                                "recommended_action": "review_new_event",
+                                "payload": {
+                                    "candidate_kind": "informal_new_event",
+                                    "observed_dates": ["2026-10-04"],
+                                    "source_text": "【蔵前つながる盆ダンス】10/4(日)",
+                                },
+                            },
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            inventory = data.load_inventory(
+                root=root,
+                decisions_path=root / "data/review_console/decisions.json",
+                reader_mode="inbox",
+            )
+            items = {item["title"]: item for item in inventory["items"]}
+
+        self.assertEqual(items["【第72回大井どんたく夏まつり】8/22(土)23(日)"]["status"], "closed")
+        self.assertEqual(
+            items["【第72回大井どんたく夏まつり】8/22(土)23(日)"]["auto_resolution"]["matched_event_name"],
+            "大井どんたく夏まつり",
+        )
+        self.assertEqual(items["【蔵前つながる盆ダンス】10/4(日)"]["status"], "pending")
+        self.assertEqual(inventory["time_scope_counts"]["future"]["pending"], 1)
+
+    def test_future_review_items_sort_first_and_time_scope_filter_is_exact(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / "data/review_inbox.json").write_text(
+                json.dumps(
+                    {
+                        "items": [
+                            {
+                                "inbox_id": "inbox_reference",
+                                "kind": "term",
+                                "time_scope": "reference",
+                                "priority_label": "P0",
+                                "title": "参考P0",
+                                "source_id": "untracked_source",
+                                "source_key": "reference",
+                            },
+                            {
+                                "inbox_id": "inbox_future",
+                                "kind": "current_year_confirmation",
+                                "time_scope": "future",
+                                "priority_label": "P2",
+                                "title": "未来P2",
+                                "source_id": "untracked_source",
+                                "source_key": "future",
+                            },
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            inventory = data.load_inventory(
+                root=root,
+                decisions_path=root / "data/review_console/decisions.json",
+                reader_mode="inbox",
+            )
+            filtered = server.filter_items(
+                inventory,
+                {"status": ["pending"], "time_scope": ["future"]},
+            )
+
+        self.assertEqual([item["title"] for item in inventory["items"]], ["未来P2", "参考P0"])
+        self.assertEqual(filtered["count"], 1)
+        self.assertEqual(filtered["items"][0]["title"], "未来P2")
+
     def test_inventory_counts_console_decisions(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

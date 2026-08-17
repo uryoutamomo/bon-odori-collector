@@ -663,11 +663,21 @@ The latest local inventory can be regenerated at any time:
 python3 -m review_console_ops.run_review_console --inventory
 ```
 
-As of the latest local inventory, the console found 13 sources and 846
-pending review items. The generated breakdown is in
-`data/review_console/source_inventory.md`.
+With the consolidated inbox reader, the console distinguishes stored pending
+rows from currently actionable rows. A row is shown as auto-resolved only when
+its repository-backed source is a reproducible complete snapshot and no longer
+emits the same stable ID, or when an X new-event candidate has exactly one
+confirmed public event with the same normalized series name, year, and date.
+This is display-only: it does not update the inbox lifecycle or create a human
+decision. Missing/invalid source inputs and ambiguous public matches remain
+pending.
 
-The latest implementation inventory was:
+On 2026-08-17 the committed projection contained 684 pending DB rows; the
+console classified 138 as auto-resolved and showed 546 actionable rows. Only
+one actionable row had `time_scope=future`, and that row is sorted first. The
+generated breakdown can be written to `data/review_console/source_inventory.md`.
+
+The following legacy-reader inventory is retained as a historical baseline:
 
 | Domain | Pending |
 | --- | ---: |
