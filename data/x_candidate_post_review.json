@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-10T22:09:26.323628+00:00",
+  "generated_at": "2026-08-17T21:52:47.420320+00:00",
   "reviewed_candidates": 30,
   "cost_estimate": {
     "calls": 30,
-    "credits": 7185,
-    "usd": 0.07185
+    "credits": 6660,
+    "usd": 0.0666
   },
   "recommendation_counts": {
     "promote": 16,
-    "watch": 10,
-    "reject": 4,
+    "watch": 9,
+    "reject": 5,
     "error": 0
   },
   "results": [
@@ -17,27 +17,26 @@
       "handle": "@jhf6giih6918081",
       "name": "卯ケン",
       "description": "盆踊りと新舞踊が好きだった母親の血を引く盆踊ラー　好きな踊りベスト15は \n① 河内酒　亀有v②男おけさ③美子の三味線ドンパン④おけさ恋唄 　北区v⑤板橋音頭　 流しv⑥ソーラン北海⑦百年桜⑧平成新宿音頭⑨川口小唄⑩大江戸八丁堀音頭⑪チャンチキ恋唄⑫江戸川ふるさと音頭⑬すみだ音頭⑭月島音頭⑮日本一だよ",
-      "graph_candidate_score": 7.095,
+      "graph_candidate_score": 7.086,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,音頭,踊り"
       ],
       "discovered_by_count": 1,
       "tweets_checked": 20,
-      "valuable_posts": 18,
+      "valuable_posts": 20,
       "future_schedule_posts": 3,
-      "post_avg_value": 10.55,
-      "promote_score": 22.55,
+      "post_avg_value": 12.25,
+      "promote_score": 24.25,
       "reason_counts": {
         "schedule_like": 5,
-        "date_time": 11,
-        "link": 17,
-        "bon": 14,
-        "context": 15,
-        "exclude": 2,
+        "date_time": 12,
+        "link": 19,
+        "bon": 16,
+        "context": 17,
+        "media_hint": 5,
         "future_schedule": 3,
-        "venue": 2,
-        "media_hint": 3,
+        "venue": 3,
         "experience": 1
       },
       "sample_valuable_posts": [
@@ -118,24 +117,23 @@
       "handle": "@junt_koto",
       "name": "JUNT",
       "description": "江東/盆踊り/野球/ディズニー/📷/B'z/Mr.Children",
-      "graph_candidate_score": 6.833,
+      "graph_candidate_score": 6.792,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り"
       ],
       "discovered_by_count": 2,
       "tweets_checked": 14,
-      "valuable_posts": 13,
+      "valuable_posts": 14,
       "future_schedule_posts": 3,
-      "post_avg_value": 9.071,
-      "promote_score": 21.071,
+      "post_avg_value": 9.429,
+      "promote_score": 21.429,
       "reason_counts": {
         "future_schedule": 3,
         "context": 13,
         "experience": 4,
-        "exclude": 1,
+        "link": 10,
         "bon": 9,
-        "link": 9,
         "venue": 1,
         "media_hint": 1
       },
@@ -209,7 +207,7 @@
       "handle": "@tawarade",
       "name": "田原de盆踊り",
       "description": "田原っ子に盆踊りを届けたい！田原小学校で盆踊り大会を開催したい。そんな想いから企画し、2024年の初めての開催は大成功でした。今年も勿論開催します！学区地域町会と協力して、何十年も続く地域行事にしていきたいと思います。",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,町会"
@@ -302,215 +300,28 @@
       "recommendation": "promote"
     },
     {
-      "handle": "@mikinooogi",
-      "name": "おぎ",
-      "description": "趣味 \n#民謡、#三味線、#民舞 、#盆踊り、#たま〜にゴルフ、#旅行 同じ趣味の人、宜しくお願いします\n無言フォローすみません🙇‍♂️",
-      "graph_candidate_score": 7.238,
-      "graph_reasons": [
-        "graph_hint_followed_by_seeds:1",
-        "profile_keywords:盆踊り,盆踊,民謡,踊り"
-      ],
-      "discovered_by_count": 1,
-      "tweets_checked": 20,
-      "valuable_posts": 19,
-      "future_schedule_posts": 3,
-      "post_avg_value": 8.2,
-      "promote_score": 20.2,
-      "reason_counts": {
-        "bon": 4,
-        "context": 16,
-        "venue": 2,
-        "experience": 4,
-        "link": 18,
-        "future_schedule": 3,
-        "date_time": 7,
-        "no_context": 1,
-        "schedule_like": 2,
-        "media_hint": 1
-      },
-      "sample_valuable_posts": [
-        {
-          "value_score": 20.0,
-          "reasons": [
-            "schedule_like",
-            "bon",
-            "context",
-            "date_time",
-            "venue"
-          ],
-          "text": "7月は\n◎11日　土曜日\n東京　大正大学\n#鴨台盆踊り　おうだいぼんおとり\n\n◎25日　土曜日\n#巣鴨納涼盆踊り\n→レベル高し！笑\n\n◎8月1日　土曜日\n新宿\n#花園神社　盆踊り\n\n予定しております\n\n#中野盆踊り　迷い中笑\n\n#築地本願寺は\n行ってみたいけどなー",
-          "url": "https://x.com/mikinooogi/status/2074417964980572649",
-          "date": "Tue Jul 07 08:59:18 +0000 2026"
-        },
-        {
-          "value_score": 16.0,
-          "reasons": [
-            "bon",
-            "context",
-            "venue",
-            "experience",
-            "link"
-          ],
-          "text": "#花園神社盆踊り　新宿\n\n開始から\nしばらくしたら\n土砂降りになった笑\nでも\n生演奏以降は大丈夫だった！\n\n盛りがってて\n楽しかったっす！\n\n#八木節いいよねー https://t.co/EGvF1cEmx7",
-          "url": "https://x.com/mikinooogi/status/2083579501448249611",
-          "date": "Sat Aug 01 15:43:58 +0000 2026"
-        },
-        {
-          "value_score": 16.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "date_time",
-            "link"
-          ],
-          "text": "日曜日\n敏葉さんの\n『民謡を楽しむ会』　in  川越\n\n唄、お囃子、三味線、踊り\n色々と出番を頂き感謝\n勉強になりましたー\n反省挙げたらキリがない、、笑\n\nまた次回予定11月15日（日）\n川越\n\n頑張ります！ https://t.co/MaKZMXbIKR",
-          "url": "https://x.com/mikinooogi/status/2081747058118270993",
-          "date": "Mon Jul 27 14:22:30 +0000 2026"
-        },
-        {
-          "value_score": 16.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "date_time",
-            "link"
-          ],
-          "text": "大田区南千束でボランティア\n\n唄も\n踊りも力んでるー笑\n\n来週（5/24）のボランティアも\n頑張ります💪 https://t.co/tx1jwu5tYg",
-          "url": "https://x.com/mikinooogi/status/2056371588162035820",
-          "date": "Mon May 18 13:49:26 +0000 2026"
-        },
-        {
-          "value_score": 16.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "date_time",
-            "link"
-          ],
-          "text": "日曜日（4/19）\n民謡コンサートでした\n\n練習では失敗ばかりだったのに\n本番では上手くいった！\n初めての経験だ笑\n\n張り切り過ぎないようにと\n自分にいい聞かせたのが\n良かったのかな笑 https://t.co/4PKjLxnHun",
-          "url": "https://x.com/mikinooogi/status/2046216220970721318",
-          "date": "Mon Apr 20 13:15:38 +0000 2026"
-        }
-      ],
-      "credits": 300,
-      "calls": 1,
-      "recommendation": "promote"
-    },
-    {
-      "handle": "@kazgk0358",
-      "name": "GK",
-      "description": "盆太鼓 民踊 盆踊り\n和歌山をメインに活動しています。\n⚫︎実績(太鼓・踊り)\n 和歌山、大阪、尼崎、名古屋、一宮\n※太鼓はこちらからお願いし、叩かせていただいております。",
-      "graph_candidate_score": 7.238,
-      "graph_reasons": [
-        "graph_hint_followed_by_seeds:1",
-        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
-      ],
-      "discovered_by_count": 1,
-      "tweets_checked": 20,
-      "valuable_posts": 19,
-      "future_schedule_posts": 3,
-      "post_avg_value": 6.35,
-      "promote_score": 18.35,
-      "reason_counts": {
-        "context": 19,
-        "link": 15,
-        "future_schedule": 3,
-        "experience": 5,
-        "no_context": 1,
-        "date_time": 3,
-        "media_hint": 1,
-        "bon": 1
-      },
-      "sample_valuable_posts": [
-        {
-          "value_score": 19.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "date_time",
-            "experience",
-            "link"
-          ],
-          "text": "12月7日(日)に和歌山市松下体育館でチャリティー民踊祭りがあります！\n私はプログラム21、22、33、34にてステージで踊る予定です。 https://t.co/iWVAUT5eEI",
-          "url": "https://x.com/kazgk0358/status/1996137509596934474",
-          "date": "Wed Dec 03 08:40:43 +0000 2025"
-        },
-        {
-          "value_score": 16.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "date_time",
-            "link"
-          ],
-          "text": "12月6日(土)15:30〜20:00に愛知県江南市\nすいとぴあ江南　多目的ホールで『踊月夜』さん主催の踊り助平の忘年会が開催されます。 https://t.co/63ZjahpNHy",
-          "url": "https://x.com/kazgk0358/status/1995638752535085116",
-          "date": "Mon Dec 01 23:38:50 +0000 2025"
-        },
-        {
-          "value_score": 13.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "link"
-          ],
-          "text": "今日は、和歌山県農協(名手選果場)の祭りに参踊。\nさくら(秋田)音頭叩きましたが、ミスっちゃいました。\n明日からも連日、紀の川市で踊りがあります🫡 https://t.co/IA9CuWS90z",
-          "url": "https://x.com/kazgk0358/status/2085742245941268860",
-          "date": "Fri Aug 07 14:57:57 +0000 2026"
-        },
-        {
-          "value_score": 11.0,
-          "reasons": [
-            "context",
-            "date_time",
-            "media_hint",
-            "experience",
-            "link"
-          ],
-          "text": "12月7日に松下体育館で行われた日本民踊祭りに参加。たくさん踊ることができ楽しかった。先生達からも、踊り方が綺麗になったねと褒められることが増え嬉しいです！まだまだですが頑張ります。6日の踊月夜さんの踊りは寝不足のため参加できませんでした😭\n動画は「粉河トンマカ」と「ぶんだら」です。 https://t.co/0c1xrJ4VmQ",
-          "url": "https://x.com/kazgk0358/status/1997848505331962312",
-          "date": "Mon Dec 08 01:59:36 +0000 2025"
-        },
-        {
-          "value_score": 8.0,
-          "reasons": [
-            "bon",
-            "context",
-            "link"
-          ],
-          "text": "今日は木川小学校の盆踊りにお邪魔しました。急なお邪魔にも関わらず鼓組さんの太鼓を叩かせていただきました。虹亀さんはじめ関係者の皆様ありがとうございました🙇\nいっぱい踊らせていただきました！！ https://t.co/JYGnb8uXT3",
-          "url": "https://x.com/kazgk0358/status/1992476982366638255",
-          "date": "Sun Nov 23 06:15:05 +0000 2025"
-        }
-      ],
-      "credits": 300,
-      "calls": 1,
-      "recommendation": "promote"
-    },
-    {
       "handle": "@ftatsumidaiko",
       "name": "深川辰巳太鼓",
       "description": "深川辰巳太鼓の公式Xです。 東京江東区を中心に活動する和太鼓集団。深川の街、祭りを愛し、下町を盛り上げる為に発足。男女約20名で深川の粋と威勢の良さで各所夏祭り、イベントに華を添えます。 気軽にご連絡ください！！",
-      "graph_candidate_score": 6.833,
+      "graph_candidate_score": 6.792,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:祭,夏祭り,太鼓"
       ],
       "discovered_by_count": 2,
       "tweets_checked": 20,
-      "valuable_posts": 18,
-      "future_schedule_posts": 3,
-      "post_avg_value": 5.85,
-      "promote_score": 17.85,
+      "valuable_posts": 19,
+      "future_schedule_posts": 4,
+      "post_avg_value": 6.7,
+      "promote_score": 18.7,
       "reason_counts": {
-        "link": 16,
-        "context": 13,
-        "future_schedule": 3,
+        "link": 17,
+        "context": 14,
+        "future_schedule": 4,
         "date_time": 4,
         "bon": 3,
         "experience": 1,
         "schedule_like": 2,
-        "exclude": 1,
         "media_hint": 1,
         "no_context": 1
       },
@@ -585,7 +396,7 @@
       "handle": "@kasiraotowayou",
       "name": "頭 音輪踊",
       "description": "民謡や盆踊りの歌詞を適当に呟きますことを宜しく御願い致します。",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,民謡,踊り,櫓"
@@ -660,10 +471,105 @@
       "recommendation": "promote"
     },
     {
+      "handle": "@mikinooogi",
+      "name": "おぎ",
+      "description": "趣味 \n#民謡、#三味線、#民舞 、#盆踊り、#たま〜にゴルフ、#旅行 同じ趣味の人、宜しくお願いします\n無言フォローすみません🙇‍♂️",
+      "graph_candidate_score": 7.206,
+      "graph_reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,民謡,踊り"
+      ],
+      "discovered_by_count": 1,
+      "tweets_checked": 20,
+      "valuable_posts": 19,
+      "future_schedule_posts": 2,
+      "post_avg_value": 7.45,
+      "promote_score": 17.45,
+      "reason_counts": {
+        "link": 18,
+        "bon": 4,
+        "context": 15,
+        "venue": 2,
+        "experience": 4,
+        "future_schedule": 2,
+        "date_time": 6,
+        "no_context": 1,
+        "schedule_like": 2,
+        "media_hint": 1
+      },
+      "sample_valuable_posts": [
+        {
+          "value_score": 20.0,
+          "reasons": [
+            "schedule_like",
+            "bon",
+            "context",
+            "date_time",
+            "venue"
+          ],
+          "text": "7月は\n◎11日　土曜日\n東京　大正大学\n#鴨台盆踊り　おうだいぼんおとり\n\n◎25日　土曜日\n#巣鴨納涼盆踊り\n→レベル高し！笑\n\n◎8月1日　土曜日\n新宿\n#花園神社　盆踊り\n\n予定しております\n\n#中野盆踊り　迷い中笑\n\n#築地本願寺は\n行ってみたいけどなー",
+          "url": "https://x.com/mikinooogi/status/2074417964980572649",
+          "date": "Tue Jul 07 08:59:18 +0000 2026"
+        },
+        {
+          "value_score": 16.0,
+          "reasons": [
+            "bon",
+            "context",
+            "venue",
+            "experience",
+            "link"
+          ],
+          "text": "#花園神社盆踊り　新宿\n\n開始から\nしばらくしたら\n土砂降りになった笑\nでも\n生演奏以降は大丈夫だった！\n\n盛りがってて\n楽しかったっす！\n\n#八木節いいよねー https://t.co/EGvF1cEmx7",
+          "url": "https://x.com/mikinooogi/status/2083579501448249611",
+          "date": "Sat Aug 01 15:43:58 +0000 2026"
+        },
+        {
+          "value_score": 16.0,
+          "reasons": [
+            "future_schedule",
+            "context",
+            "date_time",
+            "link"
+          ],
+          "text": "日曜日\n敏葉さんの\n『民謡を楽しむ会』　in  川越\n\n唄、お囃子、三味線、踊り\n色々と出番を頂き感謝\n勉強になりましたー\n反省挙げたらキリがない、、笑\n\nまた次回予定11月15日（日）\n川越\n\n頑張ります！ https://t.co/MaKZMXbIKR",
+          "url": "https://x.com/mikinooogi/status/2081747058118270993",
+          "date": "Mon Jul 27 14:22:30 +0000 2026"
+        },
+        {
+          "value_score": 16.0,
+          "reasons": [
+            "future_schedule",
+            "context",
+            "date_time",
+            "link"
+          ],
+          "text": "大田区南千束でボランティア\n\n唄も\n踊りも力んでるー笑\n\n来週（5/24）のボランティアも\n頑張ります💪 https://t.co/tx1jwu5tYg",
+          "url": "https://x.com/mikinooogi/status/2056371588162035820",
+          "date": "Mon May 18 13:49:26 +0000 2026"
+        },
+        {
+          "value_score": 12.0,
+          "reasons": [
+            "schedule_like",
+            "context",
+            "date_time",
+            "link"
+          ],
+          "text": "7月20日月㊗️\n\n大阪\n四条畷市で\n『夏祭』開催\n\n今年も見に行きます\n楽しみです◎ https://t.co/CnZY66kJpM",
+          "url": "https://x.com/mikinooogi/status/2061641563604943177",
+          "date": "Tue Jun 02 02:50:26 +0000 2026"
+        }
+      ],
+      "credits": 300,
+      "calls": 1,
+      "recommendation": "promote"
+    },
+    {
       "handle": "@nebuta_tokyo",
       "name": "東京ねぶた連合會【公式】（囃子方創設29周年・連合會創設20周年）",
       "description": "東京ねぶた連合會は、運行・跳人・囃子方の3団体が集まり、2006年4月に発足。以降、東京近郊で開催されるねぶた祭への参加や、各種施設への慰問や商業イベントへの協力、靖國神社「みたままつり」に青森ねぶたの奉納を行う等の活動をしています。 2013年1月、当會は団体として初めて「青森市観光大使」の任を委嘱されました。",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:祭,まつり,神社,観光"
@@ -747,10 +653,93 @@
       "recommendation": "promote"
     },
     {
+      "handle": "@ino_mee",
+      "name": "いの",
+      "description": "盆踊り2.5年生\n土日はあわおどりと東北のおまつりをみて生きているので\nあまり出没しませんがぐじょうとすみゆめが好きです",
+      "graph_candidate_score": 7.206,
+      "graph_reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,まつり"
+      ],
+      "discovered_by_count": 1,
+      "tweets_checked": 20,
+      "valuable_posts": 18,
+      "future_schedule_posts": 3,
+      "post_avg_value": 4.5,
+      "promote_score": 16.5,
+      "reason_counts": {
+        "future_schedule": 3,
+        "context": 14,
+        "experience": 4,
+        "link": 4,
+        "no_context": 2,
+        "media_hint": 1,
+        "bon": 1
+      },
+      "sample_valuable_posts": [
+        {
+          "value_score": 18.0,
+          "reasons": [
+            "future_schedule",
+            "context",
+            "media_hint",
+            "experience"
+          ],
+          "text": "今日は錦糸町にお初にお邪魔しましたー。\n歌い手さん、踊り子さん\n見ていた動画の3倍ぐらい素敵な楽園でした。\n音響も最高で、これはさらに\nお唄に没入したく来年は練習会にいこっと！\n\n今日は美容院で正味30分程度しかいられず\nしかも帰りは土砂降りでびっくり\n\n週末に次ぐ、ずぶぬれの1日",
+          "url": "https://x.com/ino_mee/status/2082827256137994629",
+          "date": "Thu Jul 30 13:54:49 +0000 2026"
+        },
+        {
+          "value_score": 15.0,
+          "reasons": [
+            "future_schedule",
+            "context",
+            "experience"
+          ],
+          "text": "観る祭りから帰宅\nホテル前で踊っていたら、声かけてくださった方が\nおすすめを教えてくださったので早速宿探し。\n\n全国各地の盆、楽しすぎます！\n行けない場所と詳しい説明、最高でございます～\n\n辛い今週の日常をやり過ごし\n週末は踊りにいくぞー",
+          "url": "https://x.com/ino_mee/status/2089132592385888315",
+          "date": "Sun Aug 16 23:29:58 +0000 2026"
+        },
+        {
+          "value_score": 12.0,
+          "reasons": [
+            "future_schedule",
+            "context"
+          ],
+          "text": "カッパ→カッパ→カッパの週末\n日中雨でもいいんだよ。\n\nインプットの連日でしたので\nそろそろ踊りたい。\n\n今日は近場の練習会しか存じ上げておらず\n中央区の会場ないかなと探しながら\n週明けお仕事がんばります",
+          "url": "https://x.com/ino_mee/status/2081506843424411823",
+          "date": "Sun Jul 26 22:27:58 +0000 2026"
+        },
+        {
+          "value_score": 7.0,
+          "reasons": [
+            "bon",
+            "context"
+          ],
+          "text": "盆踊り原点の地へ\n神楽坂にお邪魔しましたー\n\nバハマハマ、真っ赤な太陽、湘南、365日を\n皆さんで踊れるの幸せ\n\n改めて民謡を歌いながらみんなでおどるのがすきなんだなと気づかされました。\n\n歌詞あやしいけどいつも唄いながらおどっているので\nうるさかったらすみません。ぺこり。",
+          "url": "https://x.com/ino_mee/status/2079212308916846733",
+          "date": "Mon Jul 20 14:30:18 +0000 2026"
+        },
+        {
+          "value_score": 6.0,
+          "reasons": [
+            "context",
+            "experience"
+          ],
+          "text": "雨で延期になったのでお初の白鳥おどりへ～\n保存会の先生方の踊りがみえなかったので\nあいまいだけど輪に加われて楽しかった～\nやっぱね、生歌で、大勢の人と輪になって踊る\nこれな、です。\n最高でございました～\nまた機会がありますよーに",
+          "url": "https://x.com/ino_mee/status/2047997293455151123",
+          "date": "Sat Apr 25 11:12:59 +0000 2026"
+        }
+      ],
+      "credits": 300,
+      "calls": 1,
+      "recommendation": "promote"
+    },
+    {
       "handle": "@boncha_4141",
       "name": "まんまる@盆",
       "description": "元々好きだった盆踊りをもう少しちゃんと楽しみたくて作った初心者アカウント🔰マイペースにいろんな櫓をまわります",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,櫓"
@@ -839,92 +828,10 @@
       "recommendation": "promote"
     },
     {
-      "handle": "@ino_mee",
-      "name": "いの",
-      "description": "盆踊り2.5年生\n土日はあわおどりと東北のおまつりをみて生きているので\nあまり出没しませんがぐじょうとすみゆめが好きです",
-      "graph_candidate_score": 7.238,
-      "graph_reasons": [
-        "graph_hint_followed_by_seeds:1",
-        "profile_keywords:盆踊り,盆踊,踊り,まつり"
-      ],
-      "discovered_by_count": 1,
-      "tweets_checked": 20,
-      "valuable_posts": 15,
-      "future_schedule_posts": 2,
-      "post_avg_value": 3.65,
-      "promote_score": 13.65,
-      "reason_counts": {
-        "bon": 2,
-        "context": 14,
-        "no_context": 5,
-        "future_schedule": 2,
-        "media_hint": 1,
-        "experience": 2,
-        "link": 1
-      },
-      "sample_valuable_posts": [
-        {
-          "value_score": 18.0,
-          "reasons": [
-            "future_schedule",
-            "context",
-            "media_hint",
-            "experience"
-          ],
-          "text": "今日は錦糸町にお初にお邪魔しましたー。\n歌い手さん、踊り子さん\n見ていた動画の3倍ぐらい素敵な楽園でした。\n音響も最高で、これはさらに\nお唄に没入したく来年は練習会にいこっと！\n\n今日は美容院で正味30分程度しかいられず\nしかも帰りは土砂降りでびっくり\n\n週末に次ぐ、ずぶぬれの1日",
-          "url": "https://x.com/ino_mee/status/2082827256137994629",
-          "date": "Thu Jul 30 13:54:49 +0000 2026"
-        },
-        {
-          "value_score": 12.0,
-          "reasons": [
-            "future_schedule",
-            "context"
-          ],
-          "text": "カッパ→カッパ→カッパの週末\n日中雨でもいいんだよ。\n\nインプットの連日でしたので\nそろそろ踊りたい。\n\n今日は近場の練習会しか存じ上げておらず\n中央区の会場ないかなと探しながら\n週明けお仕事がんばります",
-          "url": "https://x.com/ino_mee/status/2081506843424411823",
-          "date": "Sun Jul 26 22:27:58 +0000 2026"
-        },
-        {
-          "value_score": 7.0,
-          "reasons": [
-            "bon",
-            "context"
-          ],
-          "text": "ちょっくら落ち込んでおり\nアニソン盆踊りと\n恵比寿盆踊りを見て\nテンション上げる朝\n\nいろいろ終わってゆくが秋祭りもあるしね！のともくまもとも行きたいお祭りあるから元気だそっと",
-          "url": "https://x.com/ino_mee/status/2085859740966601011",
-          "date": "Fri Aug 07 22:44:50 +0000 2026"
-        },
-        {
-          "value_score": 7.0,
-          "reasons": [
-            "bon",
-            "context"
-          ],
-          "text": "盆踊り原点の地へ\n神楽坂にお邪魔しましたー\n\nバハマハマ、真っ赤な太陽、湘南、365日を\n皆さんで踊れるの幸せ\n\n改めて民謡を歌いながらみんなでおどるのがすきなんだなと気づかされました。\n\n歌詞あやしいけどいつも唄いながらおどっているので\nうるさかったらすみません。ぺこり。",
-          "url": "https://x.com/ino_mee/status/2079212308916846733",
-          "date": "Mon Jul 20 14:30:18 +0000 2026"
-        },
-        {
-          "value_score": 6.0,
-          "reasons": [
-            "context",
-            "experience"
-          ],
-          "text": "雨で延期になったのでお初の白鳥おどりへ～\n保存会の先生方の踊りがみえなかったので\nあいまいだけど輪に加われて楽しかった～\nやっぱね、生歌で、大勢の人と輪になって踊る\nこれな、です。\n最高でございました～\nまた機会がありますよーに",
-          "url": "https://x.com/ino_mee/status/2047997293455151123",
-          "date": "Sat Apr 25 11:12:59 +0000 2026"
-        }
-      ],
-      "credits": 300,
-      "calls": 1,
-      "recommendation": "promote"
-    },
-    {
       "handle": "@motoeka_ageha",
       "name": "鳳蝶素檜香（あげはもとえか）",
       "description": "鳳蝶素橧香(あげはもとえか）と申します。 日本の文化と伝統芸能の伝承にお役に立てれば幸いです。母、弟（鳳蝶流家元師範【鳳蝶美成】あげはびじょう)とともに、日本各地、その他、海外公演を経て、現在は、弟の流派である鳳蝶流に所属する。 【盆踊り和太鼓】https://t.co/3R5pjJG8lp",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,太鼓"
@@ -1014,10 +921,95 @@
       "recommendation": "promote"
     },
     {
+      "handle": "@kazgk0358",
+      "name": "GK",
+      "description": "盆太鼓 民踊 盆踊り\n和歌山をメインに活動しています。\n⚫︎実績(太鼓・踊り)\n 和歌山、大阪、尼崎、名古屋、一宮\n※上記の太鼓はこちらからお願いし、叩かせていただきました。ご依頼があれば、太鼓叩きに行きたいと思っております。",
+      "graph_candidate_score": 7.206,
+      "graph_reasons": [
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
+      ],
+      "discovered_by_count": 1,
+      "tweets_checked": 20,
+      "valuable_posts": 19,
+      "future_schedule_posts": 1,
+      "post_avg_value": 4.75,
+      "promote_score": 12.75,
+      "reason_counts": {
+        "bon": 2,
+        "context": 18,
+        "experience": 4,
+        "link": 13,
+        "future_schedule": 1,
+        "no_context": 1
+      },
+      "sample_valuable_posts": [
+        {
+          "value_score": 13.0,
+          "reasons": [
+            "future_schedule",
+            "context",
+            "link"
+          ],
+          "text": "今日は、和歌山県農協(名手選果場)の祭りに参踊。\nさくら(秋田)音頭叩きましたが、ミスっちゃいました。\n明日からも連日、紀の川市で踊りがあります🫡 https://t.co/IA9CuWS90z",
+          "url": "https://x.com/kazgk0358/status/2085742245941268860",
+          "date": "Fri Aug 07 14:57:57 +0000 2026"
+        },
+        {
+          "value_score": 11.0,
+          "reasons": [
+            "bon",
+            "context",
+            "experience",
+            "link"
+          ],
+          "text": "今日は志賀盆踊りに参踊。「恋をするなら」が初めて和歌山で踊った気がします！「ぶんだら21」の踊り子の掛け声「ソレ！」で盛り上がっています！！ https://t.co/cQiiYPcw7F",
+          "url": "https://x.com/kazgk0358/status/2088961387158724753",
+          "date": "Sun Aug 16 12:09:40 +0000 2026"
+        },
+        {
+          "value_score": 8.0,
+          "reasons": [
+            "bon",
+            "context",
+            "link"
+          ],
+          "text": "今日は府中盆踊り大会→名手西野祭り→トモブチ盆踊りに参踊。さすがに3件ハシゴはヘトヘト。太鼓も数曲叩かせていただきました！\nトモブチでは、小さいですが花火があがります。地元の人達が続けていっているのが良いですね。 https://t.co/ZDtOA2QGHw",
+          "url": "https://x.com/kazgk0358/status/2088623472029344142",
+          "date": "Sat Aug 15 13:46:55 +0000 2026"
+        },
+        {
+          "value_score": 7.0,
+          "reasons": [
+            "context",
+            "experience",
+            "link"
+          ],
+          "text": "昨日は紀州踊り(ぶんだら節)に参踊。輪踊りコンテストで入賞！最優秀賞は逃しました、、僕は別の会で参加しましたが、保存会の皆様は踊りが綺麗で上品です。 https://t.co/argaTpfPYv",
+          "url": "https://x.com/kazgk0358/status/2083717567139742022",
+          "date": "Sun Aug 02 00:52:36 +0000 2026"
+        },
+        {
+          "value_score": 7.0,
+          "reasons": [
+            "context",
+            "experience",
+            "link"
+          ],
+          "text": "昨日は橋本体育館に、踊り始め参加しました。県外からも数名参加されていて、和歌山の踊りに活気付いてきたと思います！！ https://t.co/qoEMFgLRrb",
+          "url": "https://x.com/kazgk0358/status/2071129533789692226",
+          "date": "Sun Jun 28 07:12:15 +0000 2026"
+        }
+      ],
+      "credits": 300,
+      "calls": 1,
+      "recommendation": "promote"
+    },
+    {
       "handle": "@daibonjp",
       "name": "DAIBON",
       "description": "中野区大和町八幡神社\n例大祭🏮大盆踊り会🏮\n\\また来年/",
-      "graph_candidate_score": 7.241,
+      "graph_candidate_score": 7.237,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,祭,神社"
@@ -1111,7 +1103,7 @@
       "handle": "@reonarudopon",
       "name": "れお",
       "description": "昇舞 /盆踊りはじめたてほやほや/小学生の感想文すぎます",
-      "graph_candidate_score": 6.833,
+      "graph_candidate_score": 6.792,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り"
@@ -1197,93 +1189,87 @@
       "recommendation": "promote"
     },
     {
-      "handle": "@siroian333",
-      "name": "白井杏",
-      "description": "群馬県で歌う人🎤🌳 「ティータイム」 vo. （J POP中心）＆民謡盆踊り🔰日本歌手協会プロレベル認定🙏R7.POPS民謡自主イベントスタート✨R7.桐生八木節教室歌部門修了😊🎤🌸POPS民謡盆踊りフェス開催in群馬🌈無言フォロー失礼します🙇‍♀️",
-      "graph_candidate_score": 8.333,
+      "handle": "@bsszpiverz5ukxa",
+      "name": "鈴木めの字",
+      "description": "お母さんです。/盆踊り/ピノキオピー/よろしくお願いします",
+      "graph_candidate_score": 6.792,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
-        "profile_keywords:盆踊り,盆踊,民謡,踊り"
+        "profile_keywords:盆踊り,盆踊,踊り"
       ],
       "discovered_by_count": 2,
       "tweets_checked": 20,
-      "valuable_posts": 13,
+      "valuable_posts": 18,
       "future_schedule_posts": 1,
-      "post_avg_value": 3.8,
-      "promote_score": 11.8,
+      "post_avg_value": 3.65,
+      "promote_score": 11.65,
       "reason_counts": {
-        "exclude": 2,
         "bon": 5,
-        "context": 7,
-        "date_time": 5,
-        "link": 9,
-        "media_hint": 1,
+        "context": 8,
+        "link": 15,
+        "experience": 2,
         "future_schedule": 1,
-        "no_context": 5,
-        "experience": 3,
-        "schedule_like": 1
+        "no_context": 2,
+        "media_hint": 1
       },
       "sample_valuable_posts": [
         {
-          "value_score": 20.0,
+          "value_score": 19.0,
           "reasons": [
             "future_schedule",
             "bon",
             "context",
-            "date_time",
-            "link"
+            "experience"
           ],
-          "text": "３月15（日）\nサンサンフェスタでの盆ROCKへ🎸\n会場を間違えるというハプニングもありのw全て楽しすぎました😆\n八木節も🙌グンマー人嬉し〜\n晴盆さん皆さんお優しい心遣いに感謝💖\nでした😊元気たくさんもらえてにっこり帰宅🤗💖\nありがとうございました‼️🥹\n\n#サンサンフェスタ\n#晴盆\n#盆ROCK\n#盆踊り https://t.co/Ma4K6Ul8q9",
-          "url": "https://x.com/siroian333/status/2033395674855920095",
-          "date": "Mon Mar 16 04:11:22 +0000 2026"
-        },
-        {
-          "value_score": 16.0,
-          "reasons": [
-            "schedule_like",
-            "bon",
-            "context",
-            "date_time",
-            "link"
-          ],
-          "text": "6/8(日)道の駅こもちでの自主イベント「ご縁あるんさ」第一回目終了しました😊😊群馬🏔️地元にも新しい風を✨🌬️民謡盆踊りの楽しさを伝えていけたら🌈✨次は８月以降の予定🎶🙏とはいえ、踊り微妙すぎる私^^;練習頑張ろう٩( ᐛ )و https://t.co/2DyiPu58q8",
-          "url": "https://x.com/siroian333/status/1931926743293763818",
-          "date": "Mon Jun 09 04:10:03 +0000 2025"
-        },
-        {
-          "value_score": 12.0,
-          "reasons": [
-            "bon",
-            "context",
-            "date_time",
-            "media_hint",
-            "link"
-          ],
-          "text": "3/15サンサンフェスタでの盆ROCK🎸\n終了後に晴盆さんと写真🤳✨\n頂きました😆ありがとうございました💗😊💗\n#サンサンフェスタ\n#晴盆 \n#盆ROCK\n#盆踊り https://t.co/R68WLiEBb7",
-          "url": "https://x.com/siroian333/status/2034764340767945049",
-          "date": "Thu Mar 19 22:49:57 +0000 2026"
+          "text": "＃盆踊り\n地元の盆踊り会場を通りかかったら顔役の方達が参加されていた😍\n自分の地元の会場を可愛がっていただき感謝です！\nでも私は今日は友人との約束で違う場所へ😓💦明日は地元でがっつり踊る予定です！",
+          "url": "https://x.com/BSszPIverz5uKXa/status/2083482605249573004",
+          "date": "Sat Aug 01 09:18:56 +0000 2026"
         },
         {
           "value_score": 11.0,
           "reasons": [
             "bon",
             "context",
-            "date_time",
+            "experience",
             "link"
           ],
-          "text": "4/5（日）谷川雪山フェスへ⛄️\n雪山de八木節！足元滑りそうになりながら踊るという😆なかなかない体験🤭\nありがとうございました😊😊🤲\n\n#桐生八木節　#盆踊り　#谷川雪山フェス https://t.co/Y2jSULVOsO",
-          "url": "https://x.com/siroian333/status/2040759623662358777",
-          "date": "Sun Apr 05 11:53:04 +0000 2026"
+          "text": "#ゐの市盆踊り2026\n#ゐの市盆踊り2日目\n#盆踊りDJ鈴木\n#伝承戦隊オドルンジャー\n\n今日は上野で踊って来ましたヽ(*´∀｀*)ノ\nリードしてくださる方がいて安心して楽しめました！\n伯方の塩！入りが難しすぎるーw\n2時間とても楽しかったです。ありがとうございました😊 https://t.co/BIB8MOk9BU",
+          "url": "https://x.com/BSszPIverz5uKXa/status/2086055483513934212",
+          "date": "Sat Aug 08 11:42:38 +0000 2026"
         },
         {
-          "value_score": 7.0,
+          "value_score": 9.0,
           "reasons": [
             "bon",
-            "context"
+            "context",
+            "media_hint",
+            "link"
           ],
-          "text": "@natsutr_bon 行けなかったけど行きたかった(^◇^;)\n伊勢崎でも盆踊り嬉しいです〜😆🙌",
-          "url": "https://x.com/siroian333/status/1998173797288210676",
-          "date": "Mon Dec 08 23:32:12 +0000 2025"
+          "text": "#住友三角ビル #盆踊り #日本盆踊り協会\n\n 写真下手でごめんね💦\nとても可愛いお嬢さん達でした！ https://t.co/HOfFx4hGM7",
+          "url": "https://x.com/BSszPIverz5uKXa/status/2070135263389724904",
+          "date": "Thu Jun 25 13:21:22 +0000 2026"
+        },
+        {
+          "value_score": 8.0,
+          "reasons": [
+            "bon",
+            "context",
+            "link"
+          ],
+          "text": "#ゐの市盆踊り2026\n#ゐの市盆踊り3日目\n#盆踊りDJ鈴木\n#伝承戦隊オドルンジャー\n\n昨日の楽しさが忘れられず最後の方だけでしたが参加させていただきました\nヽ(*´∀｀*)ノ自分に素直になって楽しい事はめいっぱい楽しみたいです！\n\n下駄はお誕生日に主人に買ってもらいました😋鎌倉彫の素敵な下駄です！ https://t.co/aWVCgP6DOz",
+          "url": "https://x.com/BSszPIverz5uKXa/status/2086431788810031219",
+          "date": "Sun Aug 09 12:37:57 +0000 2026"
+        },
+        {
+          "value_score": 8.0,
+          "reasons": [
+            "bon",
+            "context",
+            "link"
+          ],
+          "text": "#住友三角ビル #盆踊り #アニソンDJ\n\n可愛い♥️ https://t.co/HYDLUNTCAJ",
+          "url": "https://x.com/BSszPIverz5uKXa/status/2070111636502036968",
+          "date": "Thu Jun 25 11:47:29 +0000 2026"
         }
       ],
       "credits": 300,
@@ -1293,8 +1279,8 @@
     {
       "handle": "@suzuran_139",
       "name": "鈴蘭の日🎐",
-      "description": "和裁・和装・民謡・盆踊り好きアラフィフ51❤︎OL兼和裁📍🧵",
-      "graph_candidate_score": 7.238,
+      "description": "和裁・和装・民謡・盆踊り好きアラフィフ51❤︎OL兼和裁📍🧵時間を最大限に使って実りある人生に喜び❤︎",
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,民謡,踊り"
@@ -1376,87 +1362,74 @@
       "recommendation": "promote"
     },
     {
-      "handle": "@bsszpiverz5ukxa",
-      "name": "鈴木めの字",
-      "description": "お母さんです。/盆踊り/ピノキオピー/よろしくお願いします",
-      "graph_candidate_score": 6.833,
+      "handle": "@rkvtjywomupyeir",
+      "name": "杉本悠紀",
+      "description": "私は、フラダンス、ベリーグッドマン、セレっソ、だんじり、盆踊り、民揺、太鼓が、好きです。で、セレサポです。よろしくお願いします。柴山応援してます。",
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
-        "graph_hint_followed_by_seeds:2",
-        "profile_keywords:盆踊り,盆踊,踊り"
+        "graph_hint_followed_by_seeds:1",
+        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
       ],
-      "discovered_by_count": 2,
+      "discovered_by_count": 1,
       "tweets_checked": 20,
-      "valuable_posts": 10,
+      "valuable_posts": 7,
       "future_schedule_posts": 1,
-      "post_avg_value": 1.1,
-      "promote_score": 9.1,
+      "post_avg_value": 0.6,
+      "promote_score": 7.5,
       "reason_counts": {
-        "bon": 5,
-        "context": 6,
-        "link": 8,
-        "experience": 2,
-        "exclude": 10,
+        "no_context": 13,
         "future_schedule": 1,
+        "context": 4,
+        "link": 3,
         "media_hint": 1
       },
       "sample_valuable_posts": [
         {
-          "value_score": 19.0,
+          "value_score": 12.0,
           "reasons": [
             "future_schedule",
-            "bon",
-            "context",
-            "experience"
+            "context"
           ],
-          "text": "＃盆踊り\n地元の盆踊り会場を通りかかったら顔役の方達が参加されていた😍\n自分の地元の会場を可愛がっていただき感謝です！\nでも私は今日は友人との約束で違う場所へ😓💦明日は地元でがっつり踊る予定です！",
-          "url": "https://x.com/BSszPIverz5uKXa/status/2083482605249573004",
-          "date": "Sat Aug 01 09:18:56 +0000 2026"
+          "text": "@emi_loves_dora 今晩は、旗に興味があって、作りないなって思ってますけど。明日の試合、いけないから、残念です、また、やって欲しいです。明日以外にも、よろしくお願いします。",
+          "url": "https://x.com/rkVTJyWOMuPYeIr/status/2050561604841001270",
+          "date": "Sat May 02 13:02:38 +0000 2026"
         },
         {
-          "value_score": 11.0,
+          "value_score": 3.0,
           "reasons": [
-            "bon",
-            "context",
-            "experience",
-            "link"
+            "context"
           ],
-          "text": "#ゐの市盆踊り2026\n#ゐの市盆踊り2日目\n#盆踊りDJ鈴木\n#伝承戦隊オドルンジャー\n\n今日は上野で踊って来ましたヽ(*´∀｀*)ノ\nリードしてくださる方がいて安心して楽しめました！\n伯方の塩！入りが難しすぎるーw\n2時間とても楽しかったです。ありがとうございました😊 https://t.co/BIB8MOk9BU",
-          "url": "https://x.com/BSszPIverz5uKXa/status/2086055483513934212",
-          "date": "Sat Aug 08 11:42:38 +0000 2026"
+          "text": "@kanemale 今日、朝から。だんじり見てましたよ、お疲れ様でした。",
+          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1847933031010738256",
+          "date": "Sun Oct 20 09:29:02 +0000 2024"
         },
         {
-          "value_score": 9.0,
+          "value_score": 3.0,
           "reasons": [
-            "bon",
-            "context",
+            "context"
+          ],
+          "text": "@Dannn416 可哀想過ぎる、せっかくの、最後の祭りやったのに、",
+          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1842945708548321756",
+          "date": "Sun Oct 06 15:11:11 +0000 2024"
+        },
+        {
+          "value_score": 3.0,
+          "reasons": [
+            "context"
+          ],
+          "text": "@ko_ma_ @mad_cat_toshi 今晩は、今日、午後に、長居公園通り、おりました。見かけたんですけど。😱❓",
+          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1826606705574293647",
+          "date": "Thu Aug 22 13:05:49 +0000 2024"
+        },
+        {
+          "value_score": 2.0,
+          "reasons": [
             "media_hint",
             "link"
           ],
-          "text": "#住友三角ビル #盆踊り #日本盆踊り協会\n\n 写真下手でごめんね💦\nとても可愛いお嬢さん達でした！ https://t.co/HOfFx4hGM7",
-          "url": "https://x.com/BSszPIverz5uKXa/status/2070135263389724904",
-          "date": "Thu Jun 25 13:21:22 +0000 2026"
-        },
-        {
-          "value_score": 8.0,
-          "reasons": [
-            "bon",
-            "context",
-            "link"
-          ],
-          "text": "#ゐの市盆踊り2026\n#ゐの市盆踊り3日目\n#盆踊りDJ鈴木\n#伝承戦隊オドルンジャー\n\n昨日の楽しさが忘れられず最後の方だけでしたが参加させていただきました\nヽ(*´∀｀*)ノ自分に素直になって楽しい事はめいっぱい楽しみたいです！\n\n下駄はお誕生日に主人に買ってもらいました😋鎌倉彫の素敵な下駄です！ https://t.co/aWVCgP6DOz",
-          "url": "https://x.com/BSszPIverz5uKXa/status/2086431788810031219",
-          "date": "Sun Aug 09 12:37:57 +0000 2026"
-        },
-        {
-          "value_score": 8.0,
-          "reasons": [
-            "bon",
-            "context",
-            "link"
-          ],
-          "text": "#住友三角ビル #盆踊り #アニソンDJ\n\n可愛い♥️ https://t.co/HYDLUNTCAJ",
-          "url": "https://x.com/BSszPIverz5uKXa/status/2070111636502036968",
-          "date": "Thu Jun 25 11:47:29 +0000 2026"
+          "text": "#新しいプロフィール画像 https://t.co/SywBmsmcWg",
+          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1801833095739621421",
+          "date": "Sat Jun 15 04:24:21 +0000 2024"
         }
       ],
       "credits": 300,
@@ -1467,24 +1440,24 @@
       "handle": "@m7777777m8",
       "name": "M♡",
       "description": "盆踊りが大好きで盆踊りシーズンを毎年楽しみにしています。音楽（洋楽、a-ha 、浜崎あゆみさんetc）・動物（特に🐈♡猫を飼っています）・自然（海、空、花）、神社仏閣が好き。宜しくお願いいたします✨",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,神社"
       ],
       "discovered_by_count": 1,
-      "tweets_checked": 16,
-      "valuable_posts": 15,
+      "tweets_checked": 17,
+      "valuable_posts": 16,
       "future_schedule_posts": 0,
-      "post_avg_value": 8.062,
-      "promote_score": 14.062,
+      "post_avg_value": 7.647,
+      "promote_score": 13.647,
       "reason_counts": {
+        "link": 13,
         "schedule_like": 4,
         "bon": 8,
         "context": 12,
         "date_time": 4,
         "experience": 6,
-        "link": 12,
         "no_context": 1
       },
       "sample_valuable_posts": [
@@ -1556,95 +1529,7 @@
           "date": "Sat May 28 09:40:03 +0000 2022"
         }
       ],
-      "credits": 240,
-      "calls": 1,
-      "recommendation": "watch"
-    },
-    {
-      "handle": "@ikomakazuya83",
-      "name": "H.KAWAKAMI",
-      "description": "河内音頭 生駒会 生駒一八‼️一般社団法人 日本伝統文化河内音頭保存会 理事‼️伝統文化を後世に残し地域の繋がり活性化を応援しています❗️全国に河内音頭❗️自治体企業様の盆踊りイベント一式を企画請負い致します気軽にご相談下さい❗️河内音頭好きな方生駒会練習生も募集しています❗️フォローリツイートDMお待ちしています‼️",
-      "graph_candidate_score": 7.238,
-      "graph_reasons": [
-        "graph_hint_followed_by_seeds:1",
-        "profile_keywords:盆踊り,盆踊,音頭,踊り"
-      ],
-      "discovered_by_count": 1,
-      "tweets_checked": 20,
-      "valuable_posts": 20,
-      "future_schedule_posts": 0,
-      "post_avg_value": 6.45,
-      "promote_score": 12.45,
-      "reason_counts": {
-        "bon": 9,
-        "context": 17,
-        "link": 17,
-        "experience": 1,
-        "date_time": 3,
-        "schedule_like": 2,
-        "media_hint": 1
-      },
-      "sample_valuable_posts": [
-        {
-          "value_score": 18.0,
-          "reasons": [
-            "schedule_like",
-            "bon",
-            "context",
-            "date_time",
-            "media_hint"
-          ],
-          "text": "2026.9.19日.9.20日！\n東大阪市花園ラグビー場\n噴水広場にて！\n\n河内音頭の生誕の地で\n大阪で最大級の大盆踊り大会を\n開催いたします！\nレゲエと河内音頭とキッチンカーとフードテントによる\n超激アツフェス！\n子供達も\n沢山遊んでいただけるように\n子供縁日も沢山取り揃えています\n盛り上がること間違いなしの\nこの夏1番の大イベントです！\nもちろん入場無料です！\n皆さん是非遊びに来て下さいね！\n\n出店申請情報もポスターに\nのっています！\nポスター配布1万枚！\n予想来場者数 1万人！",
-          "url": "https://x.com/ikomakazuya83/status/2073638172240814508",
-          "date": "Sun Jul 05 05:20:41 +0000 2026"
-        },
-        {
-          "value_score": 15.0,
-          "reasons": [
-            "schedule_like",
-            "bon",
-            "context",
-            "date_time"
-          ],
-          "text": "2026.7.18.19日\nいよいよ今月開催です！\n第3回\n本庄南公園大盆踊り大会！\n東大阪市役所からすぐ側！\n豪華ゲスト\n河内音頭 生駒会\n生駒竜也  生駒尚子 生駒一久\n生駒一八 生駒一美 生駒一花\n生駒一洋 生駒一弘 生駒一福\n鉄砲節 河内音頭 松原会\n松原光司 松原慎之介\n鉄砲博若 睦たかし 近江富士若\n月乃家小菊 瀧乃家秀月\n音頭取りも沢山出演します！\n\nキッチンカーグルメフェスや\n子供縁日もたくさん出店があります！\n是非皆さん遊びにきてください",
-          "url": "https://x.com/ikomakazuya83/status/2073514976489455893",
-          "date": "Sat Jul 04 21:11:09 +0000 2026"
-        },
-        {
-          "value_score": 10.0,
-          "reasons": [
-            "bon",
-            "context",
-            "experience"
-          ],
-          "text": "2026年\n今年も盆踊りシーズンが始まりました！\n7.18.19日 \n河内音頭生駒会による\n本庄南公園大盆踊り大会を無事、成功に終わる事ができました！\n盆踊りに参加していただいた皆様今年も暑い中、本当にありがとうございました。\n良い盆踊り大会となりました！\n盆踊りシーズンはまだまだ続きます。今後とも宜しくお願い致します。",
-          "url": "https://x.com/ikomakazuya83/status/2079115108513624490",
-          "date": "Mon Jul 20 08:04:04 +0000 2026"
-        },
-        {
-          "value_score": 8.0,
-          "reasons": [
-            "bon",
-            "context",
-            "link"
-          ],
-          "text": "今日は仕事の帰りに\n小学校で盆踊りをやっていた\nのて少し見て帰りました！ https://t.co/ziDqxrsFoa",
-          "url": "https://x.com/ikomakazuya83/status/2086556268278452675",
-          "date": "Sun Aug 09 20:52:35 +0000 2026"
-        },
-        {
-          "value_score": 8.0,
-          "reasons": [
-            "bon",
-            "context",
-            "link"
-          ],
-          "text": "2026.8.8は\n東大阪市新庄盆踊り！\n生駒会は大津神社⛩️\nも行かせていただきました！ https://t.co/mNtivNmre4",
-          "url": "https://x.com/ikomakazuya83/status/2086553074852868274",
-          "date": "Sun Aug 09 20:39:53 +0000 2026"
-        }
-      ],
-      "credits": 300,
+      "credits": 255,
       "calls": 1,
       "recommendation": "watch"
     },
@@ -1652,7 +1537,7 @@
       "handle": "@dnklsra9kaapmyu",
       "name": "nohara",
       "description": "子供の頃から歌と踊りが大好きでした🎶盆踊りは地元のお寺の境内でしか知らなかったので凄い世界との出逢いに感動💖どんな曲が流れても踊れる皆様を尊敬👘皆さんどうやって覚えるのですか？♪😆",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,寺"
@@ -1740,7 +1625,7 @@
       "handle": "@arejvjete0nflcb",
       "name": "大和家勝若 8/13-16 ハーベストの丘夏祭り",
       "description": "八尾本場河内音頭連盟所属🏮🎸♪✨️　大和家会/ 師:大和家 石勝 /人と人の繋がりを大切に、地域活性化で社会貢献へ♪( 'ω' و(و　₍₍ (ง ›ω‹ )ว ⁾⁾/ギター、お酒、スイーツ、🐈‍⬛🐕️好き/地域の盆踊りの話•異文化コミュニケーション•ご依頼等お気軽にお話しましょう😊🙌",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,音頭,踊り,祭,夏祭り"
@@ -1821,7 +1706,7 @@
       "handle": "@mmmjasminehhh",
       "name": "眞智子",
       "description": "今年(2024年夏)盆踊りデビュー🙌\n春駒とジンギスカンを踊ると口から心臓出そうになりますが、まだまだがんばります💃",
-      "graph_candidate_score": 8.333,
+      "graph_candidate_score": 8.291,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り,踊る"
@@ -1880,21 +1765,21 @@
       "handle": "@jxxuq6vvad4gzom",
       "name": "盆女ひろみ",
       "description": "2児のママ。\n日本舞踊経験のある女性アーティストグループ「盆女」所属。伝統を崩さず、「魅せる盆踊り」「踊る盆踊り」をテーマに活動しています！\n身体も心も健康に楽しく踊っています。\n藤間派名取。\n師匠は大正生まれ。\n母方祖母は奄美の大島紬の機織。\n書道活動中。\n千葉県木更津出身。木更津甚句を踊りたい👘",
-      "graph_candidate_score": 8.333,
+      "graph_candidate_score": 8.291,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り,踊る"
       ],
       "discovered_by_count": 2,
       "tweets_checked": 20,
-      "valuable_posts": 14,
+      "valuable_posts": 15,
       "future_schedule_posts": 0,
-      "post_avg_value": 2.75,
-      "promote_score": 8.75,
+      "post_avg_value": 2.95,
+      "promote_score": 8.95,
       "reason_counts": {
-        "context": 11,
+        "context": 12,
         "link": 8,
-        "no_context": 6,
+        "no_context": 5,
         "experience": 3,
         "bon": 2,
         "date_time": 1
@@ -1961,8 +1846,8 @@
     {
       "handle": "@sacbb10",
       "name": "sachisa",
-      "description": "盆踊りを世界の人と踊る⭐︎Japanese folkdance in the world    https://t.co/cXMp9CRPzz ★https://t.co/EC2npp0TJm",
-      "graph_candidate_score": 8.333,
+      "description": "盆踊りを世界の人と踊る⭐︎Japanese folkdance in the world ★",
+      "graph_candidate_score": 8.291,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り,踊る"
@@ -1971,14 +1856,13 @@
       "tweets_checked": 20,
       "valuable_posts": 15,
       "future_schedule_posts": 0,
-      "post_avg_value": 2.25,
-      "promote_score": 8.25,
+      "post_avg_value": 2.6,
+      "promote_score": 8.6,
       "reason_counts": {
-        "media_hint": 1,
         "no_context": 5,
-        "bon": 2,
-        "context": 7,
-        "link": 8,
+        "bon": 3,
+        "context": 8,
+        "link": 9,
         "experience": 4
       },
       "sample_valuable_posts": [
@@ -1993,6 +1877,17 @@
           "text": "今日は本当に幸せな気持ちだったなーフェスも盆踊りも最高！\n #RHYTHMANDRIDE https://t.co/ZDengBXjpS",
           "url": "https://x.com/sacbb10/status/1964310080364368119",
           "date": "Sat Sep 06 12:49:52 +0000 2025"
+        },
+        {
+          "value_score": 8.0,
+          "reasons": [
+            "bon",
+            "context",
+            "link"
+          ],
+          "text": "ココ⭐︎ナツで盆踊りがすごいことになってた！！（この前に盆踊りの振りしてます🤣）\n#桃磐祭　#盆踊り #盆ジョヴィ　#ココナツ https://t.co/Chf6ezFrHp",
+          "url": "https://x.com/sacbb10/status/2087402451070750778",
+          "date": "Wed Aug 12 04:55:01 +0000 2026"
         },
         {
           "value_score": 7.0,
@@ -2023,6 +1918,42 @@
           "text": "本日は中野区民謡連盟の春季大会です！\n皆様のご来場お待ちしております✨ https://t.co/4NClmVX7MU",
           "url": "https://x.com/sacbb10/status/2051067934228033848",
           "date": "Sun May 03 22:34:37 +0000 2026"
+        }
+      ],
+      "credits": 300,
+      "calls": 1,
+      "recommendation": "watch"
+    },
+    {
+      "handle": "@bon_dopamaru",
+      "name": "盆踊りログ",
+      "description": "最近盆踊り行くようになりました。1人でも洋服で踊りまくってます🏮✨",
+      "graph_candidate_score": 6.792,
+      "graph_reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,踊り"
+      ],
+      "discovered_by_count": 2,
+      "tweets_checked": 3,
+      "valuable_posts": 3,
+      "future_schedule_posts": 0,
+      "post_avg_value": 5.0,
+      "promote_score": 7.1,
+      "reason_counts": {
+        "context": 3,
+        "link": 2,
+        "bon": 1
+      },
+      "sample_valuable_posts": [
+        {
+          "value_score": 7.0,
+          "reasons": [
+            "bon",
+            "context"
+          ],
+          "text": "御徒町の盆踊りちょっと行ってみたけど、新しい曲でやる盆踊りは難易度がインフレ化してて諦めたorz",
+          "url": "https://x.com/bon_dopamaru/status/2088948277823869384",
+          "date": "Sun Aug 16 11:17:34 +0000 2026"
         },
         {
           "value_score": 4.0,
@@ -2030,12 +1961,22 @@
             "context",
             "link"
           ],
-          "text": "初NYきた！海外に来ると新しい文化に触れらて楽しいのと同時に、日本の安全さや素晴らしさに改めて感謝する。帰ったらまた踊りを頑張ろう！ https://t.co/gF5ZdeoqY8",
-          "url": "https://x.com/sacbb10/status/2012490389937119510",
-          "date": "Sat Jan 17 11:41:13 +0000 2026"
+          "text": "1日経つと、津具のせっせ踊りが頭にかなり残ってて、だんだんガンギマってくる感じが凄い良い\nチョイナの盛り上がりとはまた別の高揚感がある https://t.co/jK0mp74zDT",
+          "url": "https://x.com/bon_dopamaru/status/2088966157072298365",
+          "date": "Sun Aug 16 12:28:37 +0000 2026"
+        },
+        {
+          "value_score": 4.0,
+          "reasons": [
+            "context",
+            "link"
+          ],
+          "text": "そして2時間かけて白鳥に戻ってきた！！！\n雨でも深夜3時でもみんな元気！！！ \n #白鳥おどり https://t.co/Pb6pwk9kia",
+          "url": "https://x.com/bon_dopamaru/status/2088684220726333519",
+          "date": "Sat Aug 15 17:48:18 +0000 2026"
         }
       ],
-      "credits": 300,
+      "credits": 45,
       "calls": 1,
       "recommendation": "watch"
     },
@@ -2043,139 +1984,60 @@
       "handle": "@kameopinku49130",
       "name": "カメオピンク",
       "description": "ピンクカメオ（牝馬）が好きな競馬と盆踊り踊るんが大好きな会社員のおっちゃんです👍維新を支持してます🙌つまらんことつぶやきますが宜しくです。",
-      "graph_candidate_score": 7.095,
+      "graph_candidate_score": 7.086,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,踊る"
       ],
       "discovered_by_count": 1,
       "tweets_checked": 20,
-      "valuable_posts": 9,
-      "future_schedule_posts": 0,
-      "post_avg_value": 1.1,
-      "promote_score": 7.1,
-      "reason_counts": {
-        "no_context": 11,
-        "context": 7,
-        "media_hint": 1,
-        "link": 7,
-        "bon": 1
-      },
-      "sample_valuable_posts": [
-        {
-          "value_score": 8.0,
-          "reasons": [
-            "bon",
-            "context",
-            "link"
-          ],
-          "text": "長居盆踊りと苅田南盆踊りに来ました。 https://t.co/PIjnskG8iv",
-          "url": "https://x.com/kameopinku49130/status/2081076350002356687",
-          "date": "Sat Jul 25 17:57:21 +0000 2026"
-        },
-        {
-          "value_score": 4.0,
-          "reasons": [
-            "context",
-            "media_hint"
-          ],
-          "text": "@kaz0045 僕とオレンジさんが写ってる写真をフェイスブックですかね\nトビキヨさんが出したら全く同じ浴衣を持ってる女性がいたみたいで写真が目にとまったそうで大の菊水丸さん熱烈ファンでおっかけらしいです。その女性は菊水丸さんから浴衣頂いたそうです。",
-          "url": "https://x.com/kameopinku49130/status/2084285010128130398",
-          "date": "Mon Aug 03 14:27:25 +0000 2026"
-        },
-        {
-          "value_score": 4.0,
-          "reasons": [
-            "context",
-            "link"
-          ],
-          "text": "@kaz0045 すみません\nトビキヨさんからオレンジさんが着てるオレンジの浴衣はどうやって入手されたのか教えてほしいと言われたのですが、もしよければ教えてもらってもいいでしょうか? https://t.co/wWLhVUQV7s",
-          "url": "https://x.com/kameopinku49130/status/2084274193030660421",
-          "date": "Mon Aug 03 13:44:26 +0000 2026"
-        },
-        {
-          "value_score": 4.0,
-          "reasons": [
-            "context",
-            "link"
-          ],
-          "text": "錦糸町河内音頭終わってもた\n2日間ありがとう、後ろに付いて踊ってくれた方々ありがとうございました🙇また来年来れたら来ます。 https://t.co/nsOjLxxMno",
-          "url": "https://x.com/kameopinku49130/status/2083027413123109140",
-          "date": "Fri Jul 31 03:10:10 +0000 2026"
-        },
-        {
-          "value_score": 4.0,
-          "reasons": [
-            "context",
-            "link"
-          ],
-          "text": "今年も錦糸町河内音頭に来たで〜\nあっと言う間に1日めが終わった\n今日も目一杯踊って帰りま〜す\n😄 https://t.co/UIWgciz4dR",
-          "url": "https://x.com/kameopinku49130/status/2082631350545506312",
-          "date": "Thu Jul 30 00:56:22 +0000 2026"
-        }
-      ],
-      "credits": 300,
-      "calls": 1,
-      "recommendation": "watch"
-    },
-    {
-      "handle": "@rkvtjywomupyeir",
-      "name": "杉本悠紀",
-      "description": "私は、フラダンス、ベリーグッドマン、セレっソ、だんじり、盆踊り、民揺、太鼓が、好きです。で、セレサポです。よろしくお願いします。柴山応援してます。",
-      "graph_candidate_score": 7.238,
-      "graph_reasons": [
-        "graph_hint_followed_by_seeds:1",
-        "profile_keywords:盆踊り,盆踊,踊り,太鼓"
-      ],
-      "discovered_by_count": 1,
-      "tweets_checked": 20,
       "valuable_posts": 4,
-      "future_schedule_posts": 1,
-      "post_avg_value": 0.05,
-      "promote_score": 4.85,
+      "future_schedule_posts": 0,
+      "post_avg_value": -0.15,
+      "promote_score": 2.65,
       "reason_counts": {
         "no_context": 16,
-        "future_schedule": 1,
-        "context": 2,
-        "link": 2
+        "context": 3,
+        "experience": 1,
+        "link": 1
       },
       "sample_valuable_posts": [
         {
-          "value_score": 12.0,
+          "value_score": 4.0,
           "reasons": [
-            "future_schedule",
-            "context"
+            "context",
+            "link"
           ],
-          "text": "@emi_loves_dora 今晩は、旗に興味があって、作りないなって思ってますけど。明日の試合、いけないから、残念です、また、やって欲しいです。明日以外にも、よろしくお願いします。",
-          "url": "https://x.com/rkVTJyWOMuPYeIr/status/2050561604841001270",
-          "date": "Sat May 02 13:02:38 +0000 2026"
+          "text": "スタ盆来ました。\nアニメや民謡や歌謡曲なんかもありました。ダンシング・ヒーローとギザギザハートの子守唄とあとバハマ・ママっていうのがかかってえらい盛り上がってたな\n河内音頭、江州音頭は鳴門家さんでした☺️ https://t.co/m5cNrrZFUg",
+          "url": "https://x.com/kameopinku49130/status/2088618420292198784",
+          "date": "Sat Aug 15 13:26:50 +0000 2026"
         },
         {
           "value_score": 3.0,
           "reasons": [
             "context"
           ],
-          "text": "@kanemale 今日、朝から。だんじり見てましたよ、お疲れ様でした。",
-          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1847933031010738256",
-          "date": "Sun Oct 20 09:29:02 +0000 2024"
+          "text": "@ara_news01 夏色のナンシーも踊りあるんやね😳",
+          "url": "https://x.com/kameopinku49130/status/2089337049392545868",
+          "date": "Mon Aug 17 13:02:25 +0000 2026"
         },
         {
-          "value_score": 1.0,
+          "value_score": 3.0,
           "reasons": [
-            "link"
+            "experience"
           ],
-          "text": "おはようございます、もう、めっちゃ可愛過ぎるって、欲しいって，もし、柴山、西尾、北野が、出たら、ぜひ、買い取らせて下さい。お願いします。 https://t.co/q6AWKvQOs7",
-          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1916990968605315372",
-          "date": "Mon Apr 28 23:00:37 +0000 2025"
+          "text": "@NagasakiBGC 精霊流し\n自分も20年位前と15年位前に精霊船流しに\n2回行ったことあるけど\n最初はびっくりした😱\nすごいなぁ〜って\n爆竹も何箱もやったわ",
+          "url": "https://x.com/kameopinku49130/status/2088944005816144111",
+          "date": "Sun Aug 16 11:00:36 +0000 2026"
         },
         {
-          "value_score": 1.0,
+          "value_score": 3.0,
           "reasons": [
-            "link"
+            "context"
           ],
-          "text": "#パリッと桜満開 https://t.co/mnxVk65PWl",
-          "url": "https://x.com/rkVTJyWOMuPYeIr/status/1855094046089527649",
-          "date": "Sat Nov 09 03:44:21 +0000 2024"
+          "text": "@Leenea55 昔からやってる祭りやったらしゃあないね諦めなさい",
+          "url": "https://x.com/kameopinku49130/status/2088780377494303036",
+          "date": "Sun Aug 16 00:10:24 +0000 2026"
         }
       ],
       "credits": 300,
@@ -2186,7 +2048,7 @@
       "handle": "@fukuchanmannnn",
       "name": "ふくちゃん＠兵庫",
       "description": "・民踊、盆踊り愛好者です🏮\n・よろしくお願いします🙇",
-      "graph_candidate_score": 6.833,
+      "graph_candidate_score": 6.792,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り"
@@ -2219,8 +2081,8 @@
     {
       "handle": "@cottoncand75102",
       "name": "ユin 🧸 uの",
-      "description": "盆踊りが好き♡ 4年目🏮 夏から秋まで？参加👘🎀 ユin🧠👩🏻 #ILLIT 好き uの(9)👧🏻 反抗期の為お休み中 冬は推し活⟡.·🐱🍎*. ﾟ #サンリオ好き #hellokitty 銭湯♨️",
-      "graph_candidate_score": 6.833,
+      "description": "盆踊りが好き♡ 4年目🏮 夏から秋まで？参加👘🎀 ユin🧠👩🏻 #ILLIT 好き uの(9)👧🏻 反抗期の為お休み(?)中 冬は推し活⟡.·🐱🍎*. ﾟ #サンリオ好き #hellokitty 銭湯♨️",
+      "graph_candidate_score": 6.792,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り"
@@ -2241,7 +2103,7 @@
       "handle": "@kita1013yuu",
       "name": "ｸ ﾛ ﾉ ｽ🦊",
       "description": "黒衣(こくい)の盆オドラー 見た目は怪しい\n            盆踊り好きの盆踊り垢 黒い着物にロン毛ハット🕴激しい振りは苦手 鍵垢の無言フォローお断り",
-      "graph_candidate_score": 8.333,
+      "graph_candidate_score": 8.291,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:2",
         "profile_keywords:盆踊り,盆踊,踊り,櫓"
@@ -2262,7 +2124,7 @@
       "handle": "@pedal2411",
       "name": "祭囃子🏮🍧🎆🍻",
       "description": "踊れる曲はまだ少ない初心者盆踊らー🏮今年はたくさんの盆踊りに参加したいです😄街歩きや美味しいもの巡りも☕️",
-      "graph_candidate_score": 7.095,
+      "graph_candidate_score": 7.086,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,祭"
@@ -2280,10 +2142,31 @@
       "recommendation": "reject"
     },
     {
+      "handle": "@siroian333",
+      "name": "白井杏",
+      "description": "群馬県で歌う人🎤🌳 「ティータイム」 vo. （J POP中心）＆民謡盆踊り🔰日本歌手協会プロレベル認定🙏R7.POPS民謡自主イベントスタート✨R7.桐生八木節教室歌部門修了😊🎤🌸POPS民謡盆踊りフェス開催in群馬🌈無言フォロー失礼します🙇‍♀️",
+      "graph_candidate_score": 8.291,
+      "graph_reasons": [
+        "graph_hint_followed_by_seeds:2",
+        "profile_keywords:盆踊り,盆踊,民謡,踊り"
+      ],
+      "discovered_by_count": 2,
+      "tweets_checked": 0,
+      "valuable_posts": 0,
+      "future_schedule_posts": 0,
+      "post_avg_value": 0.0,
+      "promote_score": 0.0,
+      "reason_counts": {},
+      "sample_valuable_posts": [],
+      "credits": 15,
+      "calls": 1,
+      "recommendation": "reject"
+    },
+    {
       "handle": "@xiaolinhon56939",
       "name": "鼓次郎",
       "description": "盆踊りと盆踊りのための太鼓が好き。流浪の太鼓打ち\n盆踊りのための太鼓と踊り\n、新井宿太鼓",
-      "graph_candidate_score": 7.238,
+      "graph_candidate_score": 7.206,
       "graph_reasons": [
         "graph_hint_followed_by_seeds:1",
         "profile_keywords:盆踊り,盆踊,踊り,太鼓"
