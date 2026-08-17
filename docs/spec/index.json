@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T03:28:59Z",
-  "generated_for_commit": "70cc10b",
+  "generated_at": "2026-08-17T03:47:55Z",
+  "generated_for_commit": "506d9c9",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -955,7 +955,7 @@
         "tests/test_apply_youtube_setlist_occurrences_rdb.py",
         "tests/test_extract_youtube_setlists.py"
       ],
-      "updated_for": "c55e71a",
+      "updated_for": "5da18e5",
       "path": "docs/spec/L1/09-youtube.md",
       "owned_files": [
         ".github/workflows/youtube_daily_backfill.yml",
@@ -1014,9 +1014,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.2",
-      "revision_count": 3,
+      "version": "1.3",
+      "revision_count": 4,
       "history": [
+        {
+          "commit": "8fead11",
+          "date": "2026-08-17",
+          "subject": "Document YouTube publication boundary"
+        },
         {
           "commit": "56440f5",
           "date": "2026-08-17",
@@ -2020,9 +2025,9 @@
     },
     "INV-YTB-002": {
       "spec": "L1-youtube",
-      "title": "日次の再生成は、公開exportを基準日つきで一度だけ通す",
+      "title": "日次の再生成は公開exportへ接続しない",
       "tests": [
-        "tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_regenerate_outputs_uses_single_public_export_path"
+        "tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_regenerate_outputs_does_not_call_public_export"
       ],
       "has_test": true
     },
