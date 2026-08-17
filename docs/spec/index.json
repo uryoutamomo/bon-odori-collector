@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T16:43:15Z",
-  "generated_for_commit": "01db7c0",
+  "generated_at": "2026-08-17T03:28:59Z",
+  "generated_for_commit": "70cc10b",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -946,7 +946,8 @@
         "INV-YTB-002",
         "INV-YTB-003",
         "INV-YTB-004",
-        "INV-YTB-005"
+        "INV-YTB-005",
+        "INV-YTB-006"
       ],
       "verified_by": [
         "tests/test_run_daily_youtube_backfill.py",
@@ -954,7 +955,7 @@
         "tests/test_apply_youtube_setlist_occurrences_rdb.py",
         "tests/test_extract_youtube_setlists.py"
       ],
-      "updated_for": "83bf7d0",
+      "updated_for": "c55e71a",
       "path": "docs/spec/L1/09-youtube.md",
       "owned_files": [
         ".github/workflows/youtube_daily_backfill.yml",
@@ -1013,9 +1014,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.1",
-      "revision_count": 2,
+      "version": "1.2",
+      "revision_count": 3,
       "history": [
+        {
+          "commit": "56440f5",
+          "date": "2026-08-17",
+          "subject": "Document YouTube retry quota guards"
+        },
         {
           "commit": "a855a9a",
           "date": "2026-08-14",
@@ -2041,6 +2047,14 @@
       "title": "日次バックフィルの自動実行元は、GitHub Actions ひとつだけである",
       "tests": [
         "tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_local_launchagent_template_is_manual_only"
+      ],
+      "has_test": true
+    },
+    "INV-YTB-006": {
+      "spec": "L1-youtube",
+      "title": "検索済みの薄い行を毎日引き直さない",
+      "tests": [
+        "tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_bootstrap_puts_existing_searches_on_cooldown"
       ],
       "has_test": true
     },
