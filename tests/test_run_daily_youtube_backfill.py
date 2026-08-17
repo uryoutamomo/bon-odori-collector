@@ -15,6 +15,12 @@ class Args:
     focus_months = None
     retry_selected = False
     retry_min_candidates = 10
+    retry_cooldown_days = 30
+    max_consecutive_no_yield = 10
+    as_of = "2026-08-17"
+
+    def __init__(self):
+        self.retry_state = daily.empty_retry_state()
 
 
 def queue_row(queue_id, score):
@@ -31,6 +37,61 @@ def queue_row(queue_id, score):
 
 
 class RunDailyYoutubeBackfillTest(unittest.TestCase):
+    def test_bootstrap_puts_existing_searches_on_cooldown(self):
+        state = daily.empty_retry_state()
+        candidates = {"selected_queue_rows": [queue_row("q1", 30)]}
+
+        count = daily.bootstrap_retry_state(candidates, state, "2026-08-17", 30)
+
+        self.assertEqual(count, 1)
+        self.assertEqual(state["attempts"]["q1"]["next_retry_on"], "2026-09-16")
+        self.assertEqual(state["attempts"]["q1"]["last_result"], "bootstrap_existing")
+
+    def test_retry_cooldown_suppresses_row_until_due_date(self):
+        row = queue_row("q1", 30)
+        queue = {"rows": [row]}
+        candidates = {"selected_queue_rows": [row], "candidates": []}
+        state = daily.empty_retry_state()
+        daily.bootstrap_retry_state(candidates, state, "2026-08-17", 30)
+
+        blocked = daily.retryable_rows(
+            queue,
+            candidates,
+            7,
+            set(),
+            10,
+            retry_state=state,
+            run_date="2026-09-15",
+        )
+        due = daily.retryable_rows(
+            queue,
+            candidates,
+            7,
+            set(),
+            10,
+            retry_state=state,
+            run_date="2026-09-16",
+        )
+
+        self.assertEqual(blocked, [])
+        self.assertEqual([item["queue_id"] for item in due], ["q1"])
+
+    def test_unseen_rows_across_focus_months_precede_retries(self):
+        retry_row = queue_row("q8-retry", 50)
+        retry_row["public_date"] = "2025-08-01"
+        new_row = queue_row("q7-new", 10)
+        queue = {"rows": [retry_row, new_row]}
+        candidates = {"selected_queue_rows": [retry_row], "candidates": []}
+        args = Args()
+        args.month = 8
+        args.focus_months = [8, 7]
+        args.retry_selected = True
+
+        month, selected, _remaining = daily.next_rows_for_args(queue, candidates, args)
+
+        self.assertEqual(month, 7)
+        self.assertEqual([row["queue_id"] for row in selected], ["q7-new"])
+
     def test_first_month_with_rows_skips_empty_start_month(self):
         row = queue_row("q1", 30)
         row["public_date"] = "2025-08-01"
@@ -139,6 +200,45 @@ class RunDailyYoutubeBackfillTest(unittest.TestCase):
         self.assertEqual(result["selected_rows"], 1)
         self.assertEqual(result["remaining_rows_after"], 1)
         self.assertIn("quotaExceeded", result["error"])
+        self.assertNotIn("q1", args.retry_state["attempts"])
+
+    def test_run_harvest_batches_stops_after_consecutive_no_yield(self):
+        queue = {"rows": [queue_row("q1", 30), queue_row("q2", 20), queue_row("q3", 10)]}
+        args = Args()
+        args.max_consecutive_no_yield = 2
+        calls = []
+
+        original_harvest = daily.harvest_mod.harvest
+        original_write_json = daily.harvest_mod.atomic_write_json
+        original_write_text = daily.harvest_mod.atomic_write_text
+
+        def fake_harvest(batch_queue, **_kwargs):
+            row = batch_queue["rows"][0]
+            calls.append(row["queue_id"])
+            return {
+                "generated_at": "now",
+                "selected_queue_count": 1,
+                "selected_queue_rows": [row],
+                "candidates": [],
+                "summary": {"candidate_count": 0, "strong_count": 0, "review_count": 0},
+            }
+
+        try:
+            daily.harvest_mod.harvest = fake_harvest
+            daily.harvest_mod.atomic_write_json = lambda *_args, **_kwargs: None
+            daily.harvest_mod.atomic_write_text = lambda *_args, **_kwargs: None
+            result = daily.run_harvest_batches(queue, {}, args, api_key="key")
+        finally:
+            daily.harvest_mod.harvest = original_harvest
+            daily.harvest_mod.atomic_write_json = original_write_json
+            daily.harvest_mod.atomic_write_text = original_write_text
+
+        self.assertEqual(result["status"], "harvested_no_yield_limit")
+        self.assertEqual(calls, ["q1", "q2"])
+        self.assertEqual(result["new_candidates"], 0)
+        self.assertEqual(result["consecutive_no_yield"], 2)
+        self.assertEqual(args.retry_state["attempts"]["q1"]["next_retry_on"], "2026-09-16")
+        self.assertEqual(args.retry_state["attempts"]["q2"]["last_result"], "no_yield")
 
     def test_regenerate_outputs_uses_single_public_export_path(self):
         commands = []

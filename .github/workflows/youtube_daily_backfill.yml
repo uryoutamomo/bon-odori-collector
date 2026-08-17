@@ -99,13 +99,15 @@ jobs:
         python run_daily_youtube_backfill.py \
           --target-year "$TARGET_YEAR" \
           --as-of "$TODAY" \
-          --month 6 \
+          --month 8 \
           --auto-next-month \
-          --focus-month 6 \
+          --focus-month 8 \
           --focus-month 7 \
           --limit 1 \
           --max-results 5 \
           --retry-selected \
+          --retry-cooldown-days 30 \
+          --max-consecutive-no-yield 10 \
           --until-quota-limited \
           --mail-reminder \
           $FLAGS
@@ -140,6 +142,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add data/youtube_daily_backfill_report.json
         git add data/youtube_daily_backfill_report.md
+        git add data/youtube_backfill_retry_state.json
         git add data/youtube_year_backfill_candidates.json
         git add data/youtube_year_backfill_candidates.md
         git add data/event_occurrence_backfill_plan.json
@@ -166,6 +169,8 @@ jobs:
         git add data/month_06_youtube_backfill_queue.md
         git add data/month_07_youtube_backfill_queue.json
         git add data/month_07_youtube_backfill_queue.md
+        git add data/month_08_youtube_backfill_queue.json
+        git add data/month_08_youtube_backfill_queue.md
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip staging legacy song occurrence outputs"
         else

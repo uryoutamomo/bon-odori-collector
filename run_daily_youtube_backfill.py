@@ -7,7 +7,7 @@ import subprocess
 import sys
 import urllib.error
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from event_model.year_context import normalize_target_year
@@ -22,6 +22,7 @@ CANDIDATES = DATA / "youtube_year_backfill_candidates.json"
 SCHEDULE_RULES = DATA / "event_schedule_rules.json"
 REPORT_JSON = DATA / "youtube_daily_backfill_report.json"
 REPORT_MD = DATA / "youtube_daily_backfill_report.md"
+RETRY_STATE = DATA / "youtube_backfill_retry_state.json"
 PENDING_MAIL = DATA / "pending_mail.json"
 MASTER_RDB_FREEZE = DATA / "master_rdb_migration_freeze.json"
 OPS_METRICS_DASHBOARD = DATA / "ops_metrics_dashboard.html"
@@ -29,6 +30,7 @@ QUOTA_LIMIT_RE = re.compile(
     r"quotaExceeded|dailyLimitExceeded|rateLimitExceeded|userRateLimitExceeded|Too Many Requests",
     re.I,
 )
+RETRY_STATE_SCHEMA_VERSION = 1
 
 def load_json(path, default):
     path = Path(path)
@@ -60,6 +62,75 @@ def write_json(path, data):
     with path.open("w", encoding="utf-8") as handle:
         json.dump(data, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
+
+
+def empty_retry_state():
+    return {
+        "schema_version": RETRY_STATE_SCHEMA_VERSION,
+        "updated_at": None,
+        "attempts": {},
+    }
+
+
+def load_retry_state(path=RETRY_STATE):
+    state = load_json(path, empty_retry_state())
+    if not isinstance(state, dict):
+        raise ValueError("YouTube retry state must be a JSON object")
+    if state.get("schema_version") != RETRY_STATE_SCHEMA_VERSION:
+        raise ValueError("unsupported YouTube retry state schema_version")
+    if not isinstance(state.get("attempts"), dict):
+        raise ValueError("YouTube retry state attempts must be a JSON object")
+    return state
+
+
+def parse_run_date(value):
+    try:
+        return date.fromisoformat(str(value))
+    except ValueError as exc:
+        raise ValueError(f"invalid run date: {value!r}") from exc
+
+
+def retry_date(run_date, cooldown_days):
+    return (parse_run_date(run_date) + timedelta(days=cooldown_days)).isoformat()
+
+
+def bootstrap_retry_state(candidates, state, run_date, cooldown_days):
+    """Put pre-ledger searches on cooldown instead of retrying them once more."""
+    attempts = state["attempts"]
+    bootstrapped = 0
+    for queue_id in sorted(selected_queue_ids(candidates)):
+        if queue_id in attempts:
+            continue
+        attempts[queue_id] = {
+            "attempt_count": 0,
+            "last_attempted_on": run_date,
+            "next_retry_on": retry_date(run_date, cooldown_days),
+            "last_new_candidate_count": None,
+            "consecutive_no_yield": 0,
+            "last_result": "bootstrap_existing",
+        }
+        bootstrapped += 1
+    return bootstrapped
+
+
+def record_retry_attempt(state, rows, run_date, cooldown_days, new_candidates_by_queue):
+    attempts = state["attempts"]
+    for row in rows:
+        queue_id = row.get("queue_id")
+        if not queue_id:
+            continue
+        prior = attempts.get(queue_id) or {}
+        new_count = int(new_candidates_by_queue.get(queue_id, 0))
+        no_yield = int(prior.get("consecutive_no_yield", 0)) + 1 if new_count == 0 else 0
+        attempts[queue_id] = {
+            "attempt_count": int(prior.get("attempt_count", 0)) + 1,
+            "last_attempted_on": run_date,
+            "next_retry_on": retry_date(run_date, cooldown_days),
+            "last_new_candidate_count": new_count,
+            "consecutive_no_yield": no_yield,
+            "last_result": "no_yield" if new_count == 0 else "new_candidates",
+        }
+    state["updated_at"] = datetime.now(timezone.utc).isoformat()
 
 
 def run_command(args):
@@ -173,7 +244,7 @@ def retry_sort_key(month, stats):
     return key
 
 
-def retryable_rows(queue, candidates, month, attempted_queue_ids, min_candidates):
+def retry_candidates(queue, candidates, month, attempted_queue_ids, min_candidates):
     seen = selected_queue_ids(candidates)
     stats = candidate_stats_by_queue(candidates)
     rows = []
@@ -191,7 +262,56 @@ def retryable_rows(queue, candidates, month, attempted_queue_ids, min_candidates
     return rows
 
 
-def next_rows(queue, candidates, month, limit, retry_selected=False, retry_min_candidates=10, attempted_queue_ids=None):
+def retry_is_on_cooldown(queue_id, retry_state, run_date):
+    entry = (retry_state or {}).get("attempts", {}).get(queue_id) or {}
+    next_retry_on = entry.get("next_retry_on")
+    if not next_retry_on:
+        return False
+    try:
+        return parse_run_date(run_date) < parse_run_date(next_retry_on)
+    except ValueError as exc:
+        raise ValueError(f"invalid next_retry_on for {queue_id}: {next_retry_on!r}") from exc
+
+
+def retryable_rows(
+    queue,
+    candidates,
+    month,
+    attempted_queue_ids,
+    min_candidates,
+    retry_state=None,
+    run_date=None,
+):
+    rows = retry_candidates(queue, candidates, month, attempted_queue_ids, min_candidates)
+    if not retry_state or not run_date:
+        return rows
+    return [
+        row
+        for row in rows
+        if not retry_is_on_cooldown(row.get("queue_id"), retry_state, run_date)
+    ]
+
+
+def cooldown_suppressed_rows(queue, candidates, args, retry_state, attempted_queue_ids=None):
+    if not args.retry_selected:
+        return 0
+    suppressed = set()
+    attempted_queue_ids = set(attempted_queue_ids or [])
+    for month in month_sequence(args.month, args.focus_months):
+        for row in retry_candidates(
+            queue,
+            candidates,
+            month,
+            attempted_queue_ids,
+            args.retry_min_candidates,
+        ):
+            queue_id = row.get("queue_id")
+            if retry_is_on_cooldown(queue_id, retry_state, args.as_of):
+                suppressed.add(queue_id)
+    return len(suppressed)
+
+
+def new_rows(queue, candidates, month, attempted_queue_ids=None):
     attempted_queue_ids = set(attempted_queue_ids or [])
     seen = selected_queue_ids(candidates)
     rows = [
@@ -201,9 +321,32 @@ def next_rows(queue, candidates, month, limit, retry_selected=False, retry_min_c
         and has_month(row, month)
     ]
     rows.sort(key=sort_key(month))
+    return rows
+
+
+def next_rows(
+    queue,
+    candidates,
+    month,
+    limit,
+    retry_selected=False,
+    retry_min_candidates=10,
+    attempted_queue_ids=None,
+    retry_state=None,
+    run_date=None,
+):
+    rows = new_rows(queue, candidates, month, attempted_queue_ids)
     if rows or not retry_selected:
         return rows[:limit], rows
-    retry_rows = retryable_rows(queue, candidates, month, attempted_queue_ids, retry_min_candidates)
+    retry_rows = retryable_rows(
+        queue,
+        candidates,
+        month,
+        attempted_queue_ids or set(),
+        retry_min_candidates,
+        retry_state=retry_state,
+        run_date=run_date,
+    )
     return retry_rows[:limit], retry_rows
 
 
@@ -217,19 +360,33 @@ def month_sequence(start_month, focus_months=None):
     return list(range(start_month, 13)) + list(range(1, start_month))
 
 
-def first_month_with_rows(queue, candidates, start_month, limit, focus_months=None, retry_selected=False, retry_min_candidates=10):
+def first_month_with_rows(
+    queue,
+    candidates,
+    start_month,
+    limit,
+    focus_months=None,
+    retry_selected=False,
+    retry_min_candidates=10,
+    retry_state=None,
+    run_date=None,
+):
     months = month_sequence(start_month, focus_months)
     for month in months:
-        selected, _remaining = next_rows(
-            queue,
-            candidates,
-            month,
-            limit,
-            retry_selected=retry_selected,
-            retry_min_candidates=retry_min_candidates,
-        )
-        if selected:
+        if new_rows(queue, candidates, month):
             return month
+    if retry_selected:
+        for month in months:
+            if retryable_rows(
+                queue,
+                candidates,
+                month,
+                set(),
+                retry_min_candidates,
+                retry_state=retry_state,
+                run_date=run_date,
+            ):
+                return month
     return start_month
 
 
@@ -237,35 +394,60 @@ def estimated_search_calls(rows):
     return sum(min(len(row.get("search_queries") or []), 2) for row in rows)
 
 
+def candidate_identities(candidates):
+    return {
+        (row.get("queue_id"), row.get("video_id"))
+        for row in candidates.get("candidates") or []
+        if row.get("queue_id") and row.get("video_id")
+    }
+
+
 def remaining_rows_count(queue, candidates, args, attempted_queue_ids=None):
-    total = 0
+    queue_ids = set()
+    attempted_queue_ids = set(attempted_queue_ids or [])
     for month in month_sequence(args.month, args.focus_months):
-        _selected, remaining = next_rows(
-            queue,
-            candidates,
-            month,
-            args.limit,
-            retry_selected=args.retry_selected,
-            retry_min_candidates=args.retry_min_candidates,
-            attempted_queue_ids=attempted_queue_ids,
+        queue_ids.update(
+            row.get("queue_id")
+            for row in new_rows(queue, candidates, month, attempted_queue_ids)
+            if row.get("queue_id")
         )
-        total += len(remaining)
-    return total
+        if args.retry_selected:
+            queue_ids.update(
+                row.get("queue_id")
+                for row in retryable_rows(
+                    queue,
+                    candidates,
+                    month,
+                    attempted_queue_ids,
+                    args.retry_min_candidates,
+                    retry_state=args.retry_state,
+                    run_date=args.as_of,
+                )
+                if row.get("queue_id")
+            )
+    return len(queue_ids)
 
 
 def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
-    for month in month_sequence(args.month, args.focus_months):
-        selected, remaining = next_rows(
+    months = month_sequence(args.month, args.focus_months)
+    for month in months:
+        rows = new_rows(queue, candidates, month, attempted_queue_ids)
+        if rows:
+            return month, rows[:args.limit], rows
+    if not args.retry_selected:
+        return args.month, [], []
+    for month in months:
+        rows = retryable_rows(
             queue,
             candidates,
             month,
-            args.limit,
-            retry_selected=args.retry_selected,
-            retry_min_candidates=args.retry_min_candidates,
-            attempted_queue_ids=attempted_queue_ids,
+            attempted_queue_ids or set(),
+            args.retry_min_candidates,
+            retry_state=args.retry_state,
+            run_date=args.as_of,
         )
-        if selected:
-            return month, selected, remaining
+        if rows:
+            return month, rows[:args.limit], rows
     return args.month, [], []
 
 
@@ -333,6 +515,11 @@ def render_report(report):
         f"- estimated_search_calls: {report['estimated_search_calls']}",
         f"- candidates_before: {report.get('candidates_before', 0)}",
         f"- candidates_after: {report.get('candidates_after', 0)}",
+        f"- new_candidates: {report.get('new_candidates', 0)}",
+        f"- candidates_per_estimated_search: {report.get('candidates_per_estimated_search', 0.0)}",
+        f"- consecutive_no_yield: {report.get('consecutive_no_yield', 0)}",
+        f"- cooldown_suppressed_rows: {report.get('cooldown_suppressed_rows', 0)}",
+        f"- retry_state_bootstrapped_rows: {report.get('retry_state_bootstrapped_rows', 0)}",
         f"- strong_after: {report.get('strong_after', 0)}",
         f"- review_after: {report.get('review_after', 0)}",
         f"- schedule_rule_count: {report.get('schedule_rule_count', 0)}",
@@ -359,12 +546,13 @@ def render_report(report):
         lines.extend([
             "## batches",
             "",
-            "| batch | selected | candidates | strong | review |",
-            "| ---: | ---: | ---: | ---: | ---: |",
+            "| batch | month | selected | new | no-yield streak | candidates | strong | review |",
+            "| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
         ])
         for row in report["batches"]:
             lines.append(
-                f"| {row.get('batch')} | {row.get('selected_rows')} | "
+                f"| {row.get('batch')} | {row.get('month')} | {row.get('selected_rows')} | "
+                f"{row.get('new_candidates', 0)} | {row.get('consecutive_no_yield', 0)} | "
                 f"{row.get('candidate_count')} | {row.get('strong_count')} | {row.get('review_count')} |"
             )
         lines.append("")
@@ -375,9 +563,14 @@ def mail_text(report):
     if report["status"] in {"quota_limited", "harvested_until_quota_limited"}:
         lead = "YouTube APIのquota制限で止まりました。今日は追加収集せず、明日以降に再試行します。"
     elif report["status"] == "no_rows":
-        lead = f"{report['month']}月の未処理YouTube候補はありません。"
+        if report.get("cooldown_suppressed_rows", 0):
+            lead = "未検索のYouTube候補はありません。検索済みの薄い行はクールダウン中です。"
+        else:
+            lead = f"{report['month']}月の未処理YouTube候補はありません。"
     elif report["status"] == "dry_run":
         lead = "YouTube日次バックフィルのdry-runです。APIは使っていません。"
+    elif report["status"] == "harvested_no_yield_limit":
+        lead = "新しい候補が続けて見つからなかったため、quotaを温存して終了しました。"
     else:
         lead = "YouTube日次バックフィルを実行しました。"
     return "\n".join([
@@ -390,6 +583,9 @@ def mail_text(report):
         f"完了バッチ: {report.get('completed_batches', 0)}",
         f"推定検索数: {report['estimated_search_calls']}",
         f"候補数: {report.get('candidates_before', 0)} -> {report.get('candidates_after', 0)}",
+        f"新規候補: {report.get('new_candidates', 0)}件",
+        f"検索効率: {report.get('candidates_per_estimated_search', 0.0)}件/推定検索",
+        f"クールダウン中: {report.get('cooldown_suppressed_rows', 0)}件",
         f"strong: {report.get('strong_after', 0)} / review: {report.get('review_after', 0)}",
         f"開催パターン分類: {report.get('schedule_rule_count', 0)}件",
         "",
@@ -419,6 +615,7 @@ def git_commit_and_push(report, push):
     paths = [
         "data/youtube_daily_backfill_report.json",
         "data/youtube_daily_backfill_report.md",
+        "data/youtube_backfill_retry_state.json",
         "data/pending_mail.json",
         "data/youtube_year_backfill_candidates.json",
         "data/youtube_year_backfill_candidates.md",
@@ -468,6 +665,8 @@ def run_harvest_batches(queue, existing, args, api_key):
     status = "no_rows"
     error = ""
     attempted_queue_ids = set()
+    new_candidates = 0
+    consecutive_no_yield = 0
 
     while True:
         selected_month, selected, remaining = next_rows_for_args(queue, current, args, attempted_queue_ids)
@@ -483,6 +682,7 @@ def run_harvest_batches(queue, existing, args, api_key):
             status = "dry_run"
             break
 
+        before_identities = candidate_identities(current)
         try:
             fresh = harvest_mod.harvest(
                 {**queue, "rows": selected},
@@ -500,9 +700,25 @@ def run_harvest_batches(queue, existing, args, api_key):
             break
 
         current = harvest_mod.merge_harvests(current, fresh)
+        added_identities = candidate_identities(current) - before_identities
+        new_by_queue = Counter(queue_id for queue_id, _video_id in added_identities)
+        batch_new_candidates = len(added_identities)
+        new_candidates += batch_new_candidates
+        if batch_new_candidates:
+            consecutive_no_yield = 0
+        else:
+            consecutive_no_yield += 1
+        record_retry_attempt(
+            args.retry_state,
+            selected,
+            args.as_of,
+            args.retry_cooldown_days,
+            new_by_queue,
+        )
         attempted_queue_ids.update(row.get("queue_id") for row in selected if row.get("queue_id"))
         harvest_mod.atomic_write_json(harvest_mod.OUT, current)
         harvest_mod.atomic_write_text(harvest_mod.MD_OUT, harvest_mod.render_markdown(current))
+        harvest_mod.atomic_write_json(RETRY_STATE, args.retry_state)
         completed_batches += 1
         summary = current.get("summary") or {}
         batches.append({
@@ -511,6 +727,8 @@ def run_harvest_batches(queue, existing, args, api_key):
             "selected_rows": len(selected),
             "queue_ids": [row.get("queue_id") for row in selected if row.get("queue_id")],
             "fresh_summary": fresh.get("summary") or {},
+            "new_candidates": batch_new_candidates,
+            "consecutive_no_yield": consecutive_no_yield,
             "candidate_count": summary.get("candidate_count", 0),
             "strong_count": summary.get("strong_count", 0),
             "review_count": summary.get("review_count", 0),
@@ -518,6 +736,12 @@ def run_harvest_batches(queue, existing, args, api_key):
 
         if not args.until_quota_limited:
             status = "harvested"
+            break
+        if (
+            args.max_consecutive_no_yield
+            and consecutive_no_yield >= args.max_consecutive_no_yield
+        ):
+            status = "harvested_no_yield_limit"
             break
         if args.max_batches and completed_batches >= args.max_batches:
             status = "harvested_max_batches"
@@ -534,6 +758,15 @@ def run_harvest_batches(queue, existing, args, api_key):
         "remaining_rows_after": remaining_after,
         "estimated_search_calls": estimated_calls,
         "completed_batches": completed_batches,
+        "new_candidates": new_candidates,
+        "consecutive_no_yield": consecutive_no_yield,
+        "cooldown_suppressed_rows": cooldown_suppressed_rows(
+            queue,
+            current,
+            args,
+            args.retry_state,
+            attempted_queue_ids,
+        ),
         "batches": batches,
     }
 
@@ -549,6 +782,18 @@ def main():
     parser.add_argument("--max-results", type=int, default=5)
     parser.add_argument("--retry-selected", action="store_true", help="Retry already selected rows when they still have thin evidence.")
     parser.add_argument("--retry-min-candidates", type=int, default=10)
+    parser.add_argument(
+        "--retry-cooldown-days",
+        type=int,
+        default=30,
+        help="Minimum days before a previously searched row can be retried.",
+    )
+    parser.add_argument(
+        "--max-consecutive-no-yield",
+        type=int,
+        default=10,
+        help="Stop after this many successful batches add no new candidates. 0 disables the guard.",
+    )
     parser.add_argument("--until-quota-limited", action="store_true")
     parser.add_argument("--max-batches", type=int, default=0, help="Safety cap for --until-quota-limited. 0 means no cap.")
     parser.add_argument("--dry-run", action="store_true")
@@ -559,10 +804,24 @@ def main():
     parser.add_argument("--ignore-migration-freeze", action="store_true")
     args = parser.parse_args()
     args.target_year = normalize_target_year(args.target_year)
+    parse_run_date(args.as_of)
+    if args.retry_cooldown_days < 1:
+        raise SystemExit("--retry-cooldown-days must be at least 1")
+    if args.max_consecutive_no_yield < 0:
+        raise SystemExit("--max-consecutive-no-yield must be 0 or greater")
     guard_master_rdb_freeze(args)
 
     queue = load_json(QUEUE, {})
     existing = load_json(CANDIDATES, {})
+    args.retry_state = load_retry_state()
+    bootstrapped_rows = 0
+    if args.retry_selected:
+        bootstrapped_rows = bootstrap_retry_state(
+            existing,
+            args.retry_state,
+            args.as_of,
+            args.retry_cooldown_days,
+        )
     if args.auto_next_month:
         args.month = first_month_with_rows(
             queue,
@@ -572,6 +831,8 @@ def main():
             focus_months=args.focus_months,
             retry_selected=args.retry_selected,
             retry_min_candidates=args.retry_min_candidates,
+            retry_state=args.retry_state,
+            run_date=args.as_of,
         )
     before_count = len(existing.get("candidates") or [])
     report = {
@@ -587,6 +848,10 @@ def main():
         "candidates_before": before_count,
         "selected": [],
         "completed_batches": 0,
+        "new_candidates": 0,
+        "consecutive_no_yield": 0,
+        "cooldown_suppressed_rows": 0,
+        "retry_state_bootstrapped_rows": bootstrapped_rows,
         "batches": [],
     }
 
@@ -604,12 +869,21 @@ def main():
         "remaining_rows_before": result["remaining_rows_before"],
         "remaining_rows_after": result["remaining_rows_after"],
         "estimated_search_calls": result["estimated_search_calls"],
+        "new_candidates": result["new_candidates"],
+        "candidates_per_estimated_search": round(
+            result["new_candidates"] / result["estimated_search_calls"], 4
+        ) if result["estimated_search_calls"] else 0.0,
+        "consecutive_no_yield": result["consecutive_no_yield"],
+        "cooldown_suppressed_rows": result["cooldown_suppressed_rows"],
         "selected": result["selected"],
         "completed_batches": result["completed_batches"],
         "batches": result["batches"],
     })
     if result["error"]:
         report["error"] = result["error"]
+    if not args.dry_run:
+        args.retry_state["updated_at"] = datetime.now(timezone.utc).isoformat()
+        harvest_mod.atomic_write_json(RETRY_STATE, args.retry_state)
     if report["status"] not in {"no_rows", "dry_run"}:
         report["regenerated"] = regenerate_outputs(
             args.month, args.target_year, args.as_of

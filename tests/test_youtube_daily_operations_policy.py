@@ -38,6 +38,16 @@ class YouTubeDailyOperationsPolicyTest(unittest.TestCase):
         self.assertIn("YouTube日次バックフィル詳細", text)
         self.assertIn("運用メトリクス最新", text)
 
+    def test_workflow_prioritizes_current_month_and_bounds_empty_retries(self):
+        text = (ROOT / ".github" / "workflows" / "youtube_daily_backfill.yml").read_text(encoding="utf-8")
+
+        self.assertIn("--month 8", text)
+        self.assertLess(text.index("--focus-month 8"), text.index("--focus-month 7"))
+        self.assertNotIn("--focus-month 6", text)
+        self.assertIn("--retry-cooldown-days 30", text)
+        self.assertIn("--max-consecutive-no-yield 10", text)
+        self.assertIn("git add data/youtube_backfill_retry_state.json", text)
+
     def test_workflow_commits_results_to_main_without_pull_request(self):
         # 自動PR方式では、PRが閉じられた後も `gh pr view <branch>` が closed PR に
         # ヒットして本文を書き換え続けるため、日次の成果が main へ届かないまま

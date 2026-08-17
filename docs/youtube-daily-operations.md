@@ -28,7 +28,7 @@ flowchart TD
   fetch --> audit[Audit Master RDB]
   audit --> youtube[Run YouTube daily backfill]
   youtube --> maintenance[Run post-batch maintenance report]
-  maintenance --> pr[Update automation PR branch]
+  maintenance --> commit[Commit result artifacts to main]
 
   local[Local Mac LaunchAgent] -. disabled/manual only .-> fallback[One-batch fallback command]
 ```
@@ -54,13 +54,16 @@ First inspect the selected row without using YouTube API quota:
 ```bash
 python3 run_daily_youtube_backfill.py \
   --target-year 2026 \
-  --month 6 \
+  --as-of 2026-08-17 \
+  --month 8 \
   --auto-next-month \
-  --focus-month 6 \
+  --focus-month 8 \
   --focus-month 7 \
   --limit 1 \
   --max-results 5 \
   --retry-selected \
+  --retry-cooldown-days 30 \
+  --max-consecutive-no-yield 10 \
   --until-quota-limited \
   --max-batches 1 \
   --mail-reminder \
@@ -72,17 +75,31 @@ If the dry-run looks correct, run one real batch:
 ```bash
 python3 run_daily_youtube_backfill.py \
   --target-year 2026 \
-  --month 6 \
+  --as-of 2026-08-17 \
+  --month 8 \
   --auto-next-month \
-  --focus-month 6 \
+  --focus-month 8 \
   --focus-month 7 \
   --limit 1 \
   --max-results 5 \
   --retry-selected \
+  --retry-cooldown-days 30 \
+  --max-consecutive-no-yield 10 \
   --until-quota-limited \
   --max-batches 1 \
   --mail-reminder
 ```
+
+Selection is deliberately ordered as follows:
+
+1. unseen August rows;
+2. unseen July rows;
+3. previously searched thin rows whose 30-day cooldown has expired.
+
+The persistent state is `data/youtube_backfill_retry_state.json`. A successful
+search that adds no candidate starts the row's cooldown. Ten consecutive
+no-yield batches stop the run early so the remaining daily API quota is not
+spent on another long sequence of empty searches.
 
 Then regenerate the local read-only maintenance report:
 
