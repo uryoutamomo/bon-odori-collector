@@ -1,14 +1,14 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-08-17T03:48:22.198938+00:00",
+  "generated_at": "2026-08-17T20:25:50.720683+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
   },
   "summary": {
-    "observation_count": 54,
-    "series_count": 30,
-    "source_video_count": 718,
+    "observation_count": 62,
+    "series_count": 35,
+    "source_video_count": 757,
     "observed_years": [
       "2023",
       "2024",
@@ -16,13 +16,13 @@
       "2026"
     ],
     "observations_by_year": {
-      "2023": 15,
-      "2024": 15,
+      "2023": 18,
+      "2024": 20,
       "2025": 22,
       "2026": 2
     },
     "series_with_3year_window": 4,
-    "observations_with_songs": 30,
+    "observations_with_songs": 37,
     "active_review_skipped": {
       "missing_event_venue_or_date": 3665
     },
@@ -33,10 +33,10 @@
       }
     },
     "backfill_apply": {
-      "added": 1,
-      "updated": 29,
+      "added": 8,
+      "updated": 30,
       "source": "data/event_occurrence_backfill_plan.json",
-      "source_observation_count": 30
+      "source_observation_count": 38
     }
   },
   "series": [
@@ -50,6 +50,21 @@
       "observation_count": 2,
       "has_3year_window": false,
       "song_years": []
+    },
+    {
+      "series_key": "065d5830a8cc",
+      "canonical_name": "六本木ヒルズ盆踊り",
+      "usual_venue": "六本木ヒルズアリーナ",
+      "observed_years": [
+        2023,
+        2024
+      ],
+      "observation_count": 2,
+      "has_3year_window": false,
+      "song_years": [
+        2023,
+        2024
+      ]
     },
     {
       "series_key": "0870cb15867a",
@@ -66,6 +81,21 @@
       ]
     },
     {
+      "series_key": "1b635c22a871",
+      "canonical_name": "中央区大江戸まつり盆おどり大会",
+      "usual_venue": "浜町公園",
+      "observed_years": [
+        2023,
+        2024
+      ],
+      "observation_count": 2,
+      "has_3year_window": false,
+      "song_years": [
+        2023,
+        2024
+      ]
+    },
+    {
       "series_key": "1b921428ffd8",
       "canonical_name": "第25回 四谷納涼踊り大会",
       "usual_venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
@@ -75,6 +105,21 @@
       "observation_count": 1,
       "has_3year_window": false,
       "song_years": []
+    },
+    {
+      "series_key": "2cc9849749bc",
+      "canonical_name": "花園神社 盆踊り",
+      "usual_venue": "花園神社",
+      "observed_years": [
+        2023,
+        2024
+      ],
+      "observation_count": 2,
+      "has_3year_window": false,
+      "song_years": [
+        2023,
+        2024
+      ]
     },
     {
       "series_key": "30e9a87bdb27",
@@ -135,6 +180,30 @@
       "usual_venue": "青山熊野神社",
       "observed_years": [
         2025
+      ],
+      "observation_count": 1,
+      "has_3year_window": false,
+      "song_years": []
+    },
+    {
+      "series_key": "44fc86102fec",
+      "canonical_name": "納涼盆踊り大会",
+      "usual_venue": "駒沢緑泉公園",
+      "observed_years": [
+        2024
+      ],
+      "observation_count": 1,
+      "has_3year_window": false,
+      "song_years": [
+        2024
+      ]
+    },
+    {
+      "series_key": "582c09d83eef",
+      "canonical_name": "船橋会 盆踊り",
+      "usual_venue": "千歳船橋駅前広場",
+      "observed_years": [
+        2024
       ],
       "observation_count": 1,
       "has_3year_window": false,
@@ -661,6 +730,169 @@
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "observed"
+        }
+      ]
+    },
+    {
+      "observation_id": "096a5967bba6125f",
+      "series_key": "1b635c22a871",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "year": 2023,
+      "date_start": "2023-08-25",
+      "date_end": "2023-08-26",
+      "observed_dates": [
+        "2023-08-25",
+        "2023-08-26"
+      ],
+      "weekday_start": "金",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 6,
+      "source_channels": [
+        "Camino de Tokio",
+        "akkz01",
+        "山崎茂雄"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=zHlwwexYKYs",
+          "video_id": "zHlwwexYKYs",
+          "title": "4K【浜町の盆踊り】中央区大江戸まつり盆おどり大会 2023 東京 Japan",
+          "channel": "akkz01",
+          "published_at": "2023-08-31T07:00:34Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7o2bq_hYMzI",
+          "video_id": "7o2bq_hYMzI",
+          "title": "🏮＃ダンシングヒーロー 2️⃣＃中央区大江戸まつり盆踊り大会2023＃日本 ＃2023年8月25日＃DacingHero 2️⃣",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-27T01:48:32Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fzYqTAglJBU",
+          "video_id": "fzYqTAglJBU",
+          "title": "🏮＃チャンチキおけさ 2️⃣＃中央区大江戸まつり盆踊り大会2023＃日本の夏祭り ＃2023年8月25日＃CyantikiOkesa 2️⃣",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-27T06:00:02Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YI-wYn8ATu8",
+          "video_id": "YI-wYn8ATu8",
+          "title": "🏮＃チャンチキおけさ＃中央区大江戸まつり盆踊り大会2023＃日本の夏祭り ＃2023年8月25日＃CyantikiOkesa",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-25T14:29:04Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OHgkcfpQlCc",
+          "video_id": "OHgkcfpQlCc",
+          "title": "🏮＃二千年音頭 2️⃣＃中央区大江戸まつり盆踊り大会2023＃日本の夏祭り ＃2023年8月25日＃NisennenOndo 2️⃣",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-28T08:55:10Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eRVOpI_CW_s",
+          "video_id": "eRVOpI_CW_s",
+          "title": "Aug. 26, 2023: Oedo (Great Edo/Tokyo) Festival - Bon Dance Event in Hamacho Park (大江戸まつり盆踊り大会・浜町公園)",
+          "channel": "Camino de Tokio",
+          "published_at": "2023-08-26T10:09:38Z",
+          "score": 88
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "盆おどり会場南門",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=zHlwwexYKYs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=zHlwwexYKYs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=zHlwwexYKYs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=zHlwwexYKYs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "0480c167c06151b5",
+      "series_key": "065d5830a8cc",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "year": 2023,
+      "date_start": "2023-08-27",
+      "date_end": "2023-08-27",
+      "observed_dates": [
+        "2023-08-27"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "shu channel",
+        "トーキョーまっぷ"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=_raPZDH9bCQ",
+          "video_id": "_raPZDH9bCQ",
+          "title": "4K【六本木ヒルズ盆踊り 2023（DAY2）】『花火音頭／六本木じろう × みちのく娘（津吹みゆ、羽山みずき）』2023.8.27 @六本木ヒルズアリーナ",
+          "channel": "shu channel",
+          "published_at": "2023-08-27T15:44:08Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Kmc2kz1OJm4",
+          "video_id": "Kmc2kz1OJm4",
+          "title": "方向音痴が無駄に歩き倒した六本木ヒルズ盆踊り大会",
+          "channel": "トーキョーまっぷ",
+          "published_at": "2023-08-28T10:32:04Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "花火音頭／六本木じろう × みちのく娘（津吹みゆ、羽山みずき）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=_raPZDH9bCQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
         }
       ]
     },
@@ -1769,6 +2001,92 @@
       "manual_review": "accepted_low_confidence"
     },
     {
+      "observation_id": "588465425a5e2ef0",
+      "series_key": "2cc9849749bc",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "year": 2023,
+      "date_start": "2023-08-01",
+      "date_end": "2023-08-02",
+      "observed_dates": [
+        "2023-08-01",
+        "2023-08-02"
+      ],
+      "weekday_start": "火",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 5,
+      "source_channels": [
+        "sasurau",
+        "shishi raizou",
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=zxnUpYigCUE",
+          "video_id": "zxnUpYigCUE",
+          "title": "祭りの準備1/3 屋台巡り 新宿花園神社盆踊り大会  Shinjuku Walk",
+          "channel": "shishi raizou",
+          "published_at": "2023-08-01T16:50:59Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=R--4UQbR8kg",
+          "video_id": "R--4UQbR8kg",
+          "title": "祭りの準備2/3 太鼓の設置 新宿花園神社盆踊り大会 Shinjuku Walk",
+          "channel": "shishi raizou",
+          "published_at": "2023-08-01T17:17:13Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9FZ6dGyzo7o",
+          "video_id": "9FZ6dGyzo7o",
+          "title": "花園神社 盆踊り 20230801",
+          "channel": "sasurau",
+          "published_at": "2023-08-01T10:16:34Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=d-K89sbhzlY",
+          "video_id": "d-K89sbhzlY",
+          "title": "ダンシング・ヒーロー 　新宿 花園神社 盆踊り　20230802",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T03:04:53Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MNzsv4Qcbog",
+          "video_id": "MNzsv4Qcbog",
+          "title": "マツケンサンバⅡ　盆踊り　新宿 花園神社 　20230802",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T03:04:53Z",
+          "score": 88
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ダンシング・ヒーロー",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=d-K89sbhzlY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "マツケンサンバⅡ",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=MNzsv4Qcbog"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
       "observation_id": "903be26b351a9911",
       "series_key": "aca270553085",
       "event_name": "西久保八幡神社 盆踊り",
@@ -2780,6 +3098,127 @@
       ]
     },
     {
+      "observation_id": "269303acfab0fc2a",
+      "series_key": "1b635c22a871",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "year": 2024,
+      "date_start": "2024-08-23",
+      "date_end": "2024-08-24",
+      "observed_dates": [
+        "2024-08-23",
+        "2024-08-24"
+      ],
+      "weekday_start": "金",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 5,
+      "source_channels": [
+        "Very JAPAN",
+        "machihito"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=5GpO_CwIlvQ",
+          "video_id": "5GpO_CwIlvQ",
+          "title": "会場広すぎ！中央区で一番大きい公園で盆踊り！中央区大江戸まつり盆おどり大会 2024 盆踊り 浜町公園 Tokyo,Hamacho Bon Dance. Bon Odori",
+          "channel": "Very JAPAN",
+          "published_at": "2024-08-24T01:00:05Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KvyN9Q-RfFI",
+          "video_id": "KvyN9Q-RfFI",
+          "title": "佃島盆踊保存会　第３４回中央区大江戸まつり盆おどり大会",
+          "channel": "machihito",
+          "published_at": "2024-09-11T07:57:10Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qvX02OM6LFc",
+          "video_id": "qvX02OM6LFc",
+          "title": "大江戸八丁堀音頭　第３４回中央区大江戸まつり盆おどり大会",
+          "channel": "machihito",
+          "published_at": "2024-09-11T08:01:00Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I_oWUwboPjI",
+          "video_id": "I_oWUwboPjI",
+          "title": "浜町音頭保存会　第３４回中央区大江戸まつり盆おどり大会",
+          "channel": "machihito",
+          "published_at": "2024-09-11T08:04:21Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G2URZkqAkSY",
+          "video_id": "G2URZkqAkSY",
+          "title": "第３４回中央区大江戸まつり盆おどり大会　 縁日コーナーを支える方々",
+          "channel": "machihito",
+          "published_at": "2024-09-10T21:45:18Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "きよしのズンドコ節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5GpO_CwIlvQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "令和音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5GpO_CwIlvQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "きよしの数え唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5GpO_CwIlvQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "佃島盆踊保存会",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=KvyN9Q-RfFI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "大江戸八丁堀音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qvX02OM6LFc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "浜町音頭保存会",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=I_oWUwboPjI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
       "observation_id": "d769da7140780732",
       "series_key": "5be1649191ae",
       "event_name": "丸の内de盆踊り",
@@ -2923,6 +3362,235 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=-b5NddLyoHM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "341632d1e62224fa",
+      "series_key": "065d5830a8cc",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "year": 2024,
+      "date_start": "2024-08-24",
+      "date_end": "2024-08-24",
+      "observed_dates": [
+        "2024-08-24"
+      ],
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 6,
+      "source_channels": [
+        "Hidden NIPPON",
+        "Very JAPAN",
+        "shu channel"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=saqACVFhnEQ",
+          "video_id": "saqACVFhnEQ",
+          "title": "【4KHDR】2024夏 ドラえもんと一緒に踊る 六本木ヒルズ盆踊り ドラえもん音頭/六本人音頭/六本木音頭 Bon Dance Fest. at Roppongi Hills 2024/8/25",
+          "channel": "Hidden NIPPON",
+          "published_at": "2024-08-27T08:00:36Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TNyKLNFFZJc",
+          "video_id": "TNyKLNFFZJc",
+          "title": "【六本木ヒルズ盆踊り 2024（DAY1）】『みちのく娘（津吹みゆ、工藤あやの）LIVE』2024.8.24 @六本木ヒルズアリーナ",
+          "channel": "shu channel",
+          "published_at": "2024-08-24T16:32:19Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=y6RekKBaUKk",
+          "video_id": "y6RekKBaUKk",
+          "title": "【六本木ヒルズ盆踊り 2024（DAY1）】『六本人音頭／六本木じろう × みちのく娘（津吹みゆ、工藤あやの）』2024.8.24 @六本木ヒルズアリーナ",
+          "channel": "shu channel",
+          "published_at": "2024-08-24T16:10:07Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xCmGTiaw9VI",
+          "video_id": "xCmGTiaw9VI",
+          "title": "【六本木ヒルズ盆踊り 2024（DAY1）】『六本木音頭～炭坑節』2024.8.24 @六本木ヒルズアリーナ",
+          "channel": "shu channel",
+          "published_at": "2024-08-24T15:44:56Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=e8eN-ZvTgfM",
+          "video_id": "e8eN-ZvTgfM",
+          "title": "【六本木ヒルズ盆踊り 2024（DAY1）】『東京音頭～炭坑節／六本木じろう🎤生歌』2024.8.24 @六本木ヒルズアリーナ",
+          "channel": "shu channel",
+          "published_at": "2024-08-24T17:07:53Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vlG11_YXAk4",
+          "video_id": "vlG11_YXAk4",
+          "title": "人多すぎ！ドラえもん登場！六本木ヒルズ 盆踊り 2024 Tokyo,Roppongi Hills Bon Dance. Bon Odori",
+          "channel": "Very JAPAN",
+          "published_at": "2024-08-25T01:00:35Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "六本木音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ",
+            "https://www.youtube.com/watch?v=xCmGTiaw9VI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダイジェスト(六本人音頭)",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ドラえもん音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "六本人音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ドラえもん音頭(櫓を囲んで)",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "六本人音頭(櫓を囲んで)",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "六本人音頭(アンコール)",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "4KHDR",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=saqACVFhnEQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "みちのく娘（津吹みゆ、工藤あやの）LIVE",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=TNyKLNFFZJc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "六本人音頭／六本木じろう × みちのく娘（津吹みゆ、工藤あやの）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=y6RekKBaUKk"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=xCmGTiaw9VI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "六本木音頭～炭坑節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=xCmGTiaw9VI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京音頭／六本木じろう",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=e8eN-ZvTgfM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "炭坑節／六本木じろう",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=e8eN-ZvTgfM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京音頭～炭坑節／六本木じろう🎤生歌",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=e8eN-ZvTgfM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "踊れ・どれ・ドラ ドラえもん音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=vlG11_YXAk4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "踊れ・どれ・ドラ ドラえもん音頭(2回目)",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=vlG11_YXAk4"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"
@@ -3969,6 +4637,167 @@
       ]
     },
     {
+      "observation_id": "3c183013b79a576c",
+      "series_key": "44fc86102fec",
+      "event_name": "納涼盆踊り大会",
+      "venue": "駒沢緑泉公園",
+      "area": "世田谷区",
+      "year": 2024,
+      "date_start": "2024-07-31",
+      "date_end": "2024-08-02",
+      "observed_dates": [
+        "2024-07-31",
+        "2024-08-01",
+        "2024-08-02"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "金",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 3,
+      "source_channels": [
+        "Tokyo Lonely Walker",
+        "Very JAPAN",
+        "shu channel"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=qiSSeAOIkWE",
+          "video_id": "qiSSeAOIkWE",
+          "title": "日本一おいしい盆踊り！「築地本願寺納涼盆踊り大会」2024 大江戸助六太鼓 屋台やメニューも！ Tokyo,Tsukiji Honganji Temple Bon Dance. Bon Odori",
+          "channel": "Very JAPAN",
+          "published_at": "2024-08-02T03:56:21Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CblroQKUzMI",
+          "video_id": "CblroQKUzMI",
+          "title": "[4K]🇯🇵 築地本願寺 納涼盆踊り大会 2024 人気観光地 / Traditional Japanese Bon dance in Tsukiji Honganji Temple, Tokyo.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-08-03T08:00:06Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=N8yi5cGyMwY",
+          "video_id": "N8yi5cGyMwY",
+          "title": "【築地本願寺納涼盆踊り大会 2024】『大江戸助六音頭』🏮Tokyo Bon Dance👘2024.8.1 @築地本願寺 Tsukiji Hongawanji",
+          "channel": "shu channel",
+          "published_at": "2024-08-01T13:35:53Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ホームラン音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qiSSeAOIkWE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "おこさ節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qiSSeAOIkWE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "大江戸助六音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=N8yi5cGyMwY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "築地音頭 / Tsukiji Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "あさりときりみのおだいどこ音頭 / Asari to Kirimi no Odaidoko Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "あやめ踊り / Ayame Odori",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ホームラン音頭 / Homerun Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "おこさ節 / Okosa Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "大江戸助六音頭 / Ooedo Sukeroku Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "斎太郎節 / Saitarou Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "法輪音頭 / Hourin Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "浴衣音頭 / Yukata Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=CblroQKUzMI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
       "observation_id": "e50f081d8be1b6fb",
       "series_key": "bcbfa4cac9e3",
       "event_name": "自由が丘納涼盆踊り大会",
@@ -4059,6 +4888,198 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=ONuZ_KNO2FU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "aff0cb06aac883e3",
+      "series_key": "582c09d83eef",
+      "event_name": "船橋会 盆踊り",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "year": 2024,
+      "date_start": "2024-08-18",
+      "date_end": "2024-08-18",
+      "observed_dates": [
+        "2024-08-18"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 5,
+      "source_channels": [
+        "X365 Den"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=QWZJ5IY0q7U",
+          "video_id": "QWZJ5IY0q7U",
+          "title": "ちとふな盆踊り　2024年08月18日　01",
+          "channel": "X365 Den",
+          "published_at": "2024-08-19T11:45:02Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kfIz36SKXkM",
+          "video_id": "kfIz36SKXkM",
+          "title": "ちとふな盆踊り　2024年08月18日　03",
+          "channel": "X365 Den",
+          "published_at": "2024-08-21T11:00:53Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bT2RliLiyCc",
+          "video_id": "bT2RliLiyCc",
+          "title": "ちとふな盆踊り　2024年08月18日　05",
+          "channel": "X365 Den",
+          "published_at": "2024-08-23T11:00:41Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-0eGuka7ndE",
+          "video_id": "-0eGuka7ndE",
+          "title": "ちとふな盆踊り　2024年08月18日　06",
+          "channel": "X365 Den",
+          "published_at": "2024-08-24T11:00:00Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OL1VydXUuCI",
+          "video_id": "OL1VydXUuCI",
+          "title": "ちとふな盆踊り　2024年08月18日　07",
+          "channel": "X365 Den",
+          "published_at": "2024-08-25T11:00:21Z",
+          "score": 88
+        }
+      ],
+      "songs": []
+    },
+    {
+      "observation_id": "f6e0fad57028123f",
+      "series_key": "2cc9849749bc",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "year": 2024,
+      "date_start": "2024-08-01",
+      "date_end": "2024-08-01",
+      "observed_dates": [
+        "2024-08-01"
+      ],
+      "weekday_start": "木",
+      "weekday_end": "木",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 7,
+      "source_channels": [
+        "Tokyo Dance Storage",
+        "Urban Walk"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=qwU3B5pXhYE",
+          "video_id": "qwU3B5pXhYE",
+          "title": "「マツケンサンバ Ⅱ」- 松平健【新宿 花園神社 盆踊り 2024】盆踊り",
+          "channel": "Urban Walk",
+          "published_at": "2024-08-01T23:00:29Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2fXftWUZrSg",
+          "video_id": "2fXftWUZrSg",
+          "title": "【新宿 花園神社 盆踊り 2024】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
+          "channel": "Urban Walk",
+          "published_at": "2024-09-20T14:16:44Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gYKzACWqAy0",
+          "video_id": "gYKzACWqAy0",
+          "title": "最後はこの曲「ダンシングヒーロー」- 荻野目洋子【新宿 花園神社 盆踊り 2024】 盆踊り Hanazono Shrine Bon Dance Festival",
+          "channel": "Urban Walk",
+          "published_at": "2024-08-02T01:00:30Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=p_upIeqJRWs",
+          "video_id": "p_upIeqJRWs",
+          "title": "生歌「八木節」がカッコよすぎてアンコール 【新宿 花園神社 盆踊り 2024】 盆踊り Hanazono  Shrine Bon Dance Festival",
+          "channel": "Urban Walk",
+          "published_at": "2024-08-01T15:32:13Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=y4RowdAEdSw",
+          "video_id": "y4RowdAEdSw",
+          "title": "盆踊り｜【生唄】新宿音頭｜新宿 花園神社2024 / Traditional Japanese Bon dance in Shinjyuku [4K]",
+          "channel": "Tokyo Dance Storage",
+          "published_at": "2025-02-24T09:01:08Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sp0YR-UX3ZM",
+          "video_id": "sp0YR-UX3ZM",
+          "title": "盆踊り｜燃えろ日本の夏祭り｜新宿 花園神社2024 / Traditional Japanese Bon dance in Shinjyuku [4K]",
+          "channel": "Tokyo Dance Storage",
+          "published_at": "2025-02-18T09:01:06Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2sTKtXY4hAw",
+          "video_id": "2sTKtXY4hAw",
+          "title": "盆踊り｜花笠音頭｜新宿 花園神社2024 / Traditional Japanese Bon dance in Shinjyuku [4K]",
+          "channel": "Tokyo Dance Storage",
+          "published_at": "2025-02-20T09:00:06Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=2fXftWUZrSg",
+            "https://www.youtube.com/watch?v=gYKzACWqAy0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "マツケンサンバ Ⅱ",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qwU3B5pXhYE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "八木節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=p_upIeqJRWs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "八木節 アンコール",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=p_upIeqJRWs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "生唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=y4RowdAEdSw"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"

@@ -1,49 +1,15 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-08-17T03:48:20.806161+00:00",
-  "status": "harvested_until_quota_limited",
+  "generated_at": "2026-08-17T20:25:20.910740+00:00",
+  "status": "harvested_all_available",
   "month": 8,
   "target_year": 2026,
-  "selected_rows": 2,
-  "remaining_rows_before": 41,
-  "remaining_rows_after": 40,
-  "estimated_search_calls": 4,
-  "candidates_before": 582,
+  "selected_rows": 40,
+  "remaining_rows_before": 40,
+  "remaining_rows_after": 0,
+  "estimated_search_calls": 80,
+  "candidates_before": 592,
   "selected": [
-    {
-      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
-      "target_year": 2024,
-      "priority_score": 24,
-      "priority": "low",
-      "event_name": "神田明神納涼祭り アニソン盆踊り",
-      "venue": "神田明神境内",
-      "area": "千代田区",
-      "series_key": "90b1820eac7a",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-08-08",
-      "public_date_end": "2025-08-08",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-08",
-        "2025-08-08"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.55,
-      "source_url_count": 1,
-      "song_count": 3,
-      "priority_reasons": [
-        "has_source_url",
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
-        "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
-        "神田明神境内 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
     {
       "queue_id": "youtube-year-backfill:789440cb4d4795de",
       "target_year": 2024,
@@ -76,63 +42,2095 @@
         "中央通り（銀座1丁目〜8丁目） 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:a36fda4bdb097963",
+      "target_year": 2024,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "series_key": "20d3b6b151c7",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "2025-08-02",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02",
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.61,
+      "source_url_count": 1,
+      "song_count": 0,
+      "priority_reasons": [
+        "has_source_url",
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "第6回 渋谷盆踊り SHIBUYA109前〜道玄坂・文化村通り一帯 渋谷区 2024 盆踊り",
+        "第6回 渋谷盆踊り 2024 YouTube 盆踊り",
+        "SHIBUYA109前〜道玄坂・文化村通り一帯 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "series_key": "2b02ecb0792d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "2025-08-02",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02",
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.51,
+      "source_url_count": 0,
+      "song_count": 7,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "大銀座盆踊り 中央通り（銀座1丁目〜8丁目） 中央区 2023 盆踊り",
+        "大銀座盆踊り 2023 YouTube 盆踊り",
+        "中央通り（銀座1丁目〜8丁目） 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:fa219506b6c10603",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "series_key": "20d3b6b151c7",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "2025-08-02",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02",
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.61,
+      "source_url_count": 1,
+      "song_count": 0,
+      "priority_reasons": [
+        "has_source_url",
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "第6回 渋谷盆踊り SHIBUYA109前〜道玄坂・文化村通り一帯 渋谷区 2023 盆踊り",
+        "第6回 渋谷盆踊り 2023 YouTube 盆踊り",
+        "SHIBUYA109前〜道玄坂・文化村通り一帯 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "series_key": "d247c16007d5",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-09",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-09"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.55,
+      "source_url_count": 0,
+      "song_count": 1,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2024 盆踊り",
+        "あずま通り商店街「下北沢盆踊り2025」 2024 YouTube 盆踊り",
+        "下北沢駅東口 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:86054631154e1cf1",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "series_key": "d247c16007d5",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-09",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-09"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.55,
+      "source_url_count": 0,
+      "song_count": 1,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2023 盆踊り",
+        "あずま通り商店街「下北沢盆踊り2025」 2023 YouTube 盆踊り",
+        "下北沢駅東口 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:17c81781240a7e2b",
+      "target_year": 2024,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "船橋会 盆踊り",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "series_key": "582c09d83eef",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-17",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-17"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.56,
+      "source_url_count": 0,
+      "song_count": 1,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "船橋会 盆踊り 千歳船橋駅前広場 世田谷区 2024 盆踊り",
+        "船橋会 盆踊り 2024 YouTube 盆踊り",
+        "千歳船橋駅前広場 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f0782f74b4286e36",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "船橋会 盆踊り",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "series_key": "582c09d83eef",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-17",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-17"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.56,
+      "source_url_count": 0,
+      "song_count": 1,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "船橋会 盆踊り 千歳船橋駅前広場 世田谷区 2023 盆踊り",
+        "船橋会 盆踊り 2023 YouTube 盆踊り",
+        "千歳船橋駅前広場 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:67bdf28c77e2e7f1",
+      "target_year": 2024,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "series_key": "065d5830a8cc",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-22",
+      "public_date_end": "2025-08-24",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-22",
+        "2025-08-24"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.51,
+      "source_url_count": 0,
+      "song_count": 7,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "六本木ヒルズ盆踊り 六本木ヒルズアリーナ 港区 2024 盆踊り",
+        "六本木ヒルズ盆踊り 2024 YouTube 盆踊り",
+        "六本木ヒルズアリーナ 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f3b5346484a7df4c",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "series_key": "065d5830a8cc",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-22",
+      "public_date_end": "2025-08-24",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-22",
+        "2025-08-24"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.51,
+      "source_url_count": 0,
+      "song_count": 7,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "六本木ヒルズ盆踊り 六本木ヒルズアリーナ 港区 2023 盆踊り",
+        "六本木ヒルズ盆踊り 2023 YouTube 盆踊り",
+        "六本木ヒルズアリーナ 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:2a98360a047732bf",
+      "target_year": 2024,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "series_key": "bb825e2a409e",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_score": 0.78,
+      "source_url_count": 0,
+      "song_count": 6,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "第71回大井どんたく夏まつり 初日 盆踊り 大井町駅前中央通り 品川区 2024 盆踊り",
+        "第71回大井どんたく夏まつり 初日 盆踊り 2024 YouTube 盆踊り",
+        "大井町駅前中央通り 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:eb0009ffa921cecb",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "series_key": "bb825e2a409e",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_score": 0.78,
+      "source_url_count": 0,
+      "song_count": 6,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "第71回大井どんたく夏まつり 初日 盆踊り 大井町駅前中央通り 品川区 2023 盆踊り",
+        "第71回大井どんたく夏まつり 初日 盆踊り 2023 YouTube 盆踊り",
+        "大井町駅前中央通り 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:6bf80ae38d76f9f2",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "series_key": "1b635c22a871",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-08-21",
+      "public_date_end": "2026-08-22",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-08-21",
+        "2026-08-22"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "中央区大江戸まつり盆おどり大会 浜町公園 中央区 2024 盆踊り",
+        "中央区大江戸まつり盆おどり大会 2024 YouTube 盆踊り",
+        "浜町公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:6d6af9cce77b5572",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "series_key": "1b635c22a871",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-08-21",
+      "public_date_end": "2026-08-22",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-08-21",
+        "2026-08-22"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "中央区大江戸まつり盆おどり大会 浜町公園 中央区 2023 盆踊り",
+        "中央区大江戸まつり盆おどり大会 2023 YouTube 盆踊り",
+        "浜町公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:a4575cc6dcfdd493",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "法人格砧町自治会「納涼盆踊り大会」",
+      "venue": "砧八丁目児童遊園",
+      "area": "世田谷区",
+      "series_key": "de39cf75cb79",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "法人格砧町自治会「納涼盆踊り大会」 砧八丁目児童遊園 世田谷区 2024 盆踊り",
+        "法人格砧町自治会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+        "砧八丁目児童遊園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e79f8c730bbc5386",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "series_key": "74374ee2cd62",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "盆踊り(池尻地区) 池尻稲荷神社 世田谷区 2024 盆踊り",
+        "盆踊り(池尻地区) 2024 YouTube 盆踊り",
+        "池尻稲荷神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:ab321049c4bb6ec7",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "series_key": "2cc9849749bc",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "2025-08-02",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01",
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.55,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "花園神社 盆踊り 花園神社 新宿区 2024 盆踊り",
+        "花園神社 盆踊り 2024 YouTube 盆踊り",
+        "花園神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:09165d31a5ebc17f",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "法人格砧町自治会「納涼盆踊り大会」",
+      "venue": "砧八丁目児童遊園",
+      "area": "世田谷区",
+      "series_key": "de39cf75cb79",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "法人格砧町自治会「納涼盆踊り大会」 砧八丁目児童遊園 世田谷区 2023 盆踊り",
+        "法人格砧町自治会「納涼盆踊り大会」 2023 YouTube 盆踊り",
+        "砧八丁目児童遊園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:17cc861343390d99",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "series_key": "74374ee2cd62",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "盆踊り(池尻地区) 池尻稲荷神社 世田谷区 2023 盆踊り",
+        "盆踊り(池尻地区) 2023 YouTube 盆踊り",
+        "池尻稲荷神社 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:22c29aeb9014cc6b",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "series_key": "2cc9849749bc",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "2025-08-02",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01",
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.55,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "花園神社 盆踊り 花園神社 新宿区 2023 盆踊り",
+        "花園神社 盆踊り 2023 YouTube 盆踊り",
+        "花園神社 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:887907bebfbba367",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "series_key": "236e1792b7c8",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "岡本自治会「盆踊り大会」 長円寺 世田谷区 2024 盆踊り",
+        "岡本自治会「盆踊り大会」 2024 YouTube 盆踊り",
+        "長円寺 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:63ea4fdc0f484060",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "市野倉南町会 盆踊り",
+      "venue": "市野倉南児童公園",
+      "area": "大田区",
+      "series_key": "274a013ace92",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "市野倉南町会 盆踊り 市野倉南児童公園 大田区 2024 盆踊り",
+        "市野倉南町会 盆踊り 2024 YouTube 盆踊り",
+        "市野倉南児童公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e711903819fce1d6",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "柏木地区6町会盆踊り大会",
+      "venue": "北新宿公園",
+      "area": "新宿区",
+      "series_key": "a37803491d9d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "柏木地区6町会盆踊り大会 北新宿公園 新宿区 2024 盆踊り",
+        "柏木地区6町会盆踊り大会 2024 YouTube 盆踊り",
+        "北新宿公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:33d86adc56ea7500",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "series_key": "236e1792b7c8",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "岡本自治会「盆踊り大会」 長円寺 世田谷区 2023 盆踊り",
+        "岡本自治会「盆踊り大会」 2023 YouTube 盆踊り",
+        "長円寺 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:668ec2cc374d5380",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "市野倉南町会 盆踊り",
+      "venue": "市野倉南児童公園",
+      "area": "大田区",
+      "series_key": "274a013ace92",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "市野倉南町会 盆踊り 市野倉南児童公園 大田区 2023 盆踊り",
+        "市野倉南町会 盆踊り 2023 YouTube 盆踊り",
+        "市野倉南児童公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:166c563107e08890",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "柏木地区6町会盆踊り大会",
+      "venue": "北新宿公園",
+      "area": "新宿区",
+      "series_key": "a37803491d9d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "柏木地区6町会盆踊り大会 北新宿公園 新宿区 2023 盆踊り",
+        "柏木地区6町会盆踊り大会 2023 YouTube 盆踊り",
+        "北新宿公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:218e00e0f9088eb1",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "納涼盆踊り大会",
+      "venue": "駒沢緑泉公園",
+      "area": "世田谷区",
+      "series_key": "44fc86102fec",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-03",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-03"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "納涼盆踊り大会 駒沢緑泉公園 世田谷区 2024 盆踊り",
+        "納涼盆踊り大会 2024 YouTube 盆踊り",
+        "駒沢緑泉公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:151caf0613f4e5a4",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "納涼盆踊り大会",
+      "venue": "駒沢緑泉公園",
+      "area": "世田谷区",
+      "series_key": "44fc86102fec",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-03",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-03"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "納涼盆踊り大会 駒沢緑泉公園 世田谷区 2023 盆踊り",
+        "納涼盆踊り大会 2023 YouTube 盆踊り",
+        "駒沢緑泉公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:8dbd4a9f3fabb72a",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "駒澤大学同窓会東京都支部・営友会",
+      "venue": "駒澤大学 駒沢キャンパス",
+      "area": "世田谷区",
+      "series_key": "7f6306842f4b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-10",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-10"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.56,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "駒澤大学同窓会東京都支部・営友会 駒澤大学 駒沢キャンパス 世田谷区 2024 盆踊り",
+        "駒澤大学同窓会東京都支部・営友会 2024 YouTube 盆踊り",
+        "駒澤大学 駒沢キャンパス 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5c12fe234e96383c",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "駒澤大学同窓会東京都支部・営友会",
+      "venue": "駒澤大学 駒沢キャンパス",
+      "area": "世田谷区",
+      "series_key": "7f6306842f4b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-10",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-10"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.56,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "駒澤大学同窓会東京都支部・営友会 駒澤大学 駒沢キャンパス 世田谷区 2023 盆踊り",
+        "駒澤大学同窓会東京都支部・営友会 2023 YouTube 盆踊り",
+        "駒澤大学 駒沢キャンパス 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:458c0bf1425b5a71",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "series_key": "58ecbe69a3cd",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-16",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-16"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "瀬田商店会 瀬田納涼盆踊り 瀬田中学校 世田谷区 2024 盆踊り",
+        "瀬田商店会 瀬田納涼盆踊り 2024 YouTube 盆踊り",
+        "瀬田中学校 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:c4ca2667a8147ce3",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "series_key": "58ecbe69a3cd",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-16",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-16"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "瀬田商店会 瀬田納涼盆踊り 瀬田中学校 世田谷区 2023 盆踊り",
+        "瀬田商店会 瀬田納涼盆踊り 2023 YouTube 盆踊り",
+        "瀬田中学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:a2afeb24a3ec3e0b",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "series_key": "8b54ecd5eabd",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-17",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-17"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "新町公民会 盆踊り大会 久富稲荷神社 世田谷区 2024 盆踊り",
+        "新町公民会 盆踊り大会 2024 YouTube 盆踊り",
+        "久富稲荷神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:53436bcc9d9d42c2",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "series_key": "8b54ecd5eabd",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-17",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-17"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "新町公民会 盆踊り大会 久富稲荷神社 世田谷区 2023 盆踊り",
+        "新町公民会 盆踊り大会 2023 YouTube 盆踊り",
+        "久富稲荷神社 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:3cccc47e9a919d8e",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "venue": "上北沢小学校",
+      "area": "世田谷区",
+      "series_key": "6eee69235ad3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 上北沢小学校 世田谷区 2024 盆踊り",
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 2024 YouTube 盆踊り",
+        "上北沢小学校 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:2ab855e49e95c6f7",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "area": "台東区",
+      "series_key": "7f82e0ee9081",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "坂本町会 納涼祭 さかもと朝顔広場（旧坂本小学校跡地） 台東区 2024 盆踊り",
+        "坂本町会 納涼祭 2024 YouTube 盆踊り",
+        "さかもと朝顔広場（旧坂本小学校跡地） 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:a481c8b8cd180fc0",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "venue": "上北沢小学校",
+      "area": "世田谷区",
+      "series_key": "6eee69235ad3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 上北沢小学校 世田谷区 2023 盆踊り",
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 2023 YouTube 盆踊り",
+        "上北沢小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:eb63ef3c5e274965",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "area": "台東区",
+      "series_key": "7f82e0ee9081",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "坂本町会 納涼祭 さかもと朝顔広場（旧坂本小学校跡地） 台東区 2023 盆踊り",
+        "坂本町会 納涼祭 2023 YouTube 盆踊り",
+        "さかもと朝顔広場（旧坂本小学校跡地） 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:11103cae5c109fc8",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "series_key": "f08a4e6dcbae",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-30",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-30"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "中目黒盆踊り大会 フナイリバ（目黒川船入場広場） 目黒区 2024 盆踊り",
+        "中目黒盆踊り大会 2024 YouTube 盆踊り",
+        "フナイリバ（目黒川船入場広場） 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:b4732eefa45630fc",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "series_key": "f08a4e6dcbae",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-30",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-30"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "中目黒盆踊り大会 フナイリバ（目黒川船入場広場） 目黒区 2023 盆踊り",
+        "中目黒盆踊り大会 2023 YouTube 盆踊り",
+        "フナイリバ（目黒川船入場広場） 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 1,
-  "new_candidates": 10,
+  "completed_batches": 40,
+  "new_candidates": 157,
   "consecutive_no_yield": 0,
   "cooldown_suppressed_rows": 85,
-  "retry_state_bootstrapped_rows": 169,
+  "retry_state_bootstrapped_rows": 0,
   "batches": [
     {
       "batch": 1,
       "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:9fd7b26ad03a8f8b"
+        "youtube-year-backfill:789440cb4d4795de"
       ],
       "fresh_summary": {
         "candidate_count": 10,
         "status_counts": {
-          "strong": 6,
+          "review": 1,
+          "strong": 1,
+          "weak": 8
+        },
+        "strong_count": 1,
+        "review_count": 1
+      },
+      "new_candidates": 10,
+      "consecutive_no_yield": 0,
+      "candidate_count": 602,
+      "strong_count": 190,
+      "review_count": 49
+    },
+    {
+      "batch": 2,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:a36fda4bdb097963"
+      ],
+      "fresh_summary": {
+        "candidate_count": 6,
+        "status_counts": {
+          "review": 2,
           "weak": 4
+        },
+        "strong_count": 0,
+        "review_count": 2
+      },
+      "new_candidates": 6,
+      "consecutive_no_yield": 0,
+      "candidate_count": 608,
+      "strong_count": 190,
+      "review_count": 51
+    },
+    {
+      "batch": 3,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:c59a1cd2c52270d8"
+      ],
+      "fresh_summary": {
+        "candidate_count": 9,
+        "status_counts": {
+          "weak": 9
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 9,
+      "consecutive_no_yield": 0,
+      "candidate_count": 617,
+      "strong_count": 190,
+      "review_count": 51
+    },
+    {
+      "batch": 4,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:fa219506b6c10603"
+      ],
+      "fresh_summary": {
+        "candidate_count": 7,
+        "status_counts": {
+          "weak": 7
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 7,
+      "consecutive_no_yield": 0,
+      "candidate_count": 624,
+      "strong_count": 190,
+      "review_count": 51
+    },
+    {
+      "batch": 5,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:fcf9a15959dc7e92"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 624,
+      "strong_count": 190,
+      "review_count": 51
+    },
+    {
+      "batch": 6,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:86054631154e1cf1"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 2,
+      "candidate_count": 624,
+      "strong_count": 190,
+      "review_count": 51
+    },
+    {
+      "batch": 7,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:17c81781240a7e2b"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "strong": 5
+        },
+        "strong_count": 5,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 629,
+      "strong_count": 195,
+      "review_count": 51
+    },
+    {
+      "batch": 8,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:f0782f74b4286e36"
+      ],
+      "fresh_summary": {
+        "candidate_count": 9,
+        "status_counts": {
+          "weak": 9
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 9,
+      "consecutive_no_yield": 0,
+      "candidate_count": 638,
+      "strong_count": 195,
+      "review_count": 51
+    },
+    {
+      "batch": 9,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:67bdf28c77e2e7f1"
+      ],
+      "fresh_summary": {
+        "candidate_count": 10,
+        "status_counts": {
+          "review": 1,
+          "strong": 6,
+          "weak": 3
+        },
+        "strong_count": 6,
+        "review_count": 1
+      },
+      "new_candidates": 10,
+      "consecutive_no_yield": 0,
+      "candidate_count": 648,
+      "strong_count": 201,
+      "review_count": 52
+    },
+    {
+      "batch": 10,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:f3b5346484a7df4c"
+      ],
+      "fresh_summary": {
+        "candidate_count": 7,
+        "status_counts": {
+          "review": 3,
+          "strong": 4
+        },
+        "strong_count": 4,
+        "review_count": 3
+      },
+      "new_candidates": 7,
+      "consecutive_no_yield": 0,
+      "candidate_count": 655,
+      "strong_count": 205,
+      "review_count": 55
+    },
+    {
+      "batch": 11,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:2a98360a047732bf"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 655,
+      "strong_count": 205,
+      "review_count": 55
+    },
+    {
+      "batch": 12,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:eb0009ffa921cecb"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 2,
+      "candidate_count": 655,
+      "strong_count": 205,
+      "review_count": 55
+    },
+    {
+      "batch": 13,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:6bf80ae38d76f9f2"
+      ],
+      "fresh_summary": {
+        "candidate_count": 6,
+        "status_counts": {
+          "strong": 5,
+          "weak": 1
+        },
+        "strong_count": 5,
+        "review_count": 0
+      },
+      "new_candidates": 6,
+      "consecutive_no_yield": 0,
+      "candidate_count": 661,
+      "strong_count": 210,
+      "review_count": 55
+    },
+    {
+      "batch": 14,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:6d6af9cce77b5572"
+      ],
+      "fresh_summary": {
+        "candidate_count": 7,
+        "status_counts": {
+          "review": 1,
+          "strong": 6
+        },
+        "strong_count": 6,
+        "review_count": 1
+      },
+      "new_candidates": 7,
+      "consecutive_no_yield": 0,
+      "candidate_count": 668,
+      "strong_count": 216,
+      "review_count": 56
+    },
+    {
+      "batch": 15,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:a4575cc6dcfdd493"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 668,
+      "strong_count": 216,
+      "review_count": 56
+    },
+    {
+      "batch": 16,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:e79f8c730bbc5386"
+      ],
+      "fresh_summary": {
+        "candidate_count": 4,
+        "status_counts": {
+          "weak": 4
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 4,
+      "consecutive_no_yield": 0,
+      "candidate_count": 672,
+      "strong_count": 216,
+      "review_count": 56
+    },
+    {
+      "batch": 17,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:ab321049c4bb6ec7"
+      ],
+      "fresh_summary": {
+        "candidate_count": 9,
+        "status_counts": {
+          "strong": 9
+        },
+        "strong_count": 9,
+        "review_count": 0
+      },
+      "new_candidates": 9,
+      "consecutive_no_yield": 0,
+      "candidate_count": 681,
+      "strong_count": 225,
+      "review_count": 56
+    },
+    {
+      "batch": 18,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:09165d31a5ebc17f"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 681,
+      "strong_count": 225,
+      "review_count": 56
+    },
+    {
+      "batch": 19,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:17cc861343390d99"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 686,
+      "strong_count": 225,
+      "review_count": 56
+    },
+    {
+      "batch": 20,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:22c29aeb9014cc6b"
+      ],
+      "fresh_summary": {
+        "candidate_count": 9,
+        "status_counts": {
+          "strong": 6,
+          "weak": 3
         },
         "strong_count": 6,
         "review_count": 0
       },
-      "new_candidates": 10,
+      "new_candidates": 9,
       "consecutive_no_yield": 0,
-      "candidate_count": 592,
-      "strong_count": 189,
-      "review_count": 48
+      "candidate_count": 695,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 21,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:887907bebfbba367"
+      ],
+      "fresh_summary": {
+        "candidate_count": 2,
+        "status_counts": {
+          "weak": 2
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 2,
+      "consecutive_no_yield": 0,
+      "candidate_count": 697,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 22,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:63ea4fdc0f484060"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 697,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 23,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:e711903819fce1d6"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 1,
+      "consecutive_no_yield": 0,
+      "candidate_count": 698,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 24,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:33d86adc56ea7500"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 703,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 25,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:668ec2cc374d5380"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 1,
+      "consecutive_no_yield": 0,
+      "candidate_count": 704,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 26,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:166c563107e08890"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 709,
+      "strong_count": 231,
+      "review_count": 56
+    },
+    {
+      "batch": 27,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:218e00e0f9088eb1"
+      ],
+      "fresh_summary": {
+        "candidate_count": 9,
+        "status_counts": {
+          "strong": 6,
+          "weak": 3
+        },
+        "strong_count": 6,
+        "review_count": 0
+      },
+      "new_candidates": 9,
+      "consecutive_no_yield": 0,
+      "candidate_count": 718,
+      "strong_count": 237,
+      "review_count": 56
+    },
+    {
+      "batch": 28,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:151caf0613f4e5a4"
+      ],
+      "fresh_summary": {
+        "candidate_count": 8,
+        "status_counts": {
+          "review": 4,
+          "strong": 1,
+          "weak": 3
+        },
+        "strong_count": 1,
+        "review_count": 4
+      },
+      "new_candidates": 8,
+      "consecutive_no_yield": 0,
+      "candidate_count": 726,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 29,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:8dbd4a9f3fabb72a"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 726,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 30,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:5c12fe234e96383c"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 2,
+      "candidate_count": 726,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 31,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:458c0bf1425b5a71"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 3,
+      "candidate_count": 726,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 32,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:c4ca2667a8147ce3"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 731,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 33,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:a2afeb24a3ec3e0b"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 1,
+      "consecutive_no_yield": 0,
+      "candidate_count": 732,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 34,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:53436bcc9d9d42c2"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 732,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 35,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:3cccc47e9a919d8e"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 2,
+      "candidate_count": 732,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 36,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:2ab855e49e95c6f7"
+      ],
+      "fresh_summary": {
+        "candidate_count": 2,
+        "status_counts": {
+          "weak": 2
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 2,
+      "consecutive_no_yield": 0,
+      "candidate_count": 734,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 37,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:a481c8b8cd180fc0"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 0,
+      "consecutive_no_yield": 1,
+      "candidate_count": 734,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 38,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:eb63ef3c5e274965"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 739,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 39,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:11103cae5c109fc8"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 744,
+      "strong_count": 238,
+      "review_count": 60
+    },
+    {
+      "batch": 40,
+      "month": 8,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:b4732eefa45630fc"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "new_candidates": 5,
+      "consecutive_no_yield": 0,
+      "candidate_count": 749,
+      "strong_count": 238,
+      "review_count": 60
     }
   ],
-  "candidates_per_estimated_search": 2.5,
-  "error": "HTTP Error 429: Too Many Requests (rateLimitExceeded)",
+  "candidates_per_estimated_search": 1.9625,
   "regenerated": [
-    "event occurrence backfill plan: observations=30 videos=161 with_songs=27",
-    "low confidence backfill review: rows=12 -> data/low_confidence_backfill_review.md",
-    "event occurrence backfill applied: added=1 updated=29 observations=54 series_3year=4",
-    "event schedule rules: target_year=2026 rules=14 axes={'date': 1, 'near_date': 2, 'weekday': 7, 'weekday_near_date': 2, 'weekend_near_date': 2}",
-    "event date predictions: target_year=2026 predictions=14 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 5, 'weekend_near_day': 2}",
-    "曲 occurrence 生成完了: occurrences=601 relations=2958 -> data/song_occurrences.json",
-    "month youtube backfill queue: month=8 items=40 search_calls=80"
+    "event occurrence backfill plan: observations=38 videos=200 with_songs=34",
+    "low confidence backfill review: rows=16 -> data/low_confidence_backfill_review.md",
+    "event occurrence backfill applied: added=8 updated=30 observations=62 series_3year=4",
+    "event schedule rules: target_year=2026 rules=17 axes={'date': 2, 'near_date': 2, 'weekday': 8, 'weekday_near_date': 2, 'weekend_near_date': 3}",
+    "event date predictions: target_year=2026 predictions=17 rules={'date_near': 2, 'fixed_date': 2, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 6, 'weekend_near_day': 3}",
+    "曲 occurrence 生成完了: occurrences=601 relations=2971 -> data/song_occurrences.json",
+    "month youtube backfill queue: month=8 items=0 search_calls=0"
   ],
-  "candidates_after": 592,
-  "strong_after": 189,
-  "review_after": 48,
-  "schedule_rule_count": 14,
+  "candidates_after": 749,
+  "strong_after": 238,
+  "review_after": 60,
+  "schedule_rule_count": 17,
   "schedule_rule_confidence_counts": {
     "high": 1,
-    "medium": 13
+    "medium": 16
   },
   "schedule_rule_axis_counts": {
-    "date": 1,
+    "date": 2,
     "near_date": 2,
-    "weekday": 7,
+    "weekday": 8,
     "weekday_near_date": 2,
-    "weekend_near_date": 2
+    "weekend_near_date": 3
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-08-17 youtube_candidates=592 review=48 history_rows=52"
+  "ops_metrics": "ops metrics: date=2026-08-18 youtube_candidates=749 review=60 history_rows=53"
 }

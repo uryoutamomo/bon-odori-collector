@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-17T03:48:22.000698+00:00",
+  "updated_at": "2026-08-17T20:25:50.418733+00:00",
   "attempts": {
     "youtube-year-backfill:0454aac7cd9268b6": {
       "attempt_count": 0,
@@ -1359,6 +1359,326 @@
       "last_attempted_on": "2026-08-17",
       "next_retry_on": "2026-09-16",
       "last_new_candidate_count": 10,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:789440cb4d4795de": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 10,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:a36fda4bdb097963": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 6,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:c59a1cd2c52270d8": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 9,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:fa219506b6c10603": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 7,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:fcf9a15959dc7e92": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:86054631154e1cf1": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:17c81781240a7e2b": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:f0782f74b4286e36": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 9,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:67bdf28c77e2e7f1": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 10,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:f3b5346484a7df4c": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 7,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:2a98360a047732bf": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:eb0009ffa921cecb": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:6bf80ae38d76f9f2": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 6,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:6d6af9cce77b5572": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 7,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:a4575cc6dcfdd493": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:e79f8c730bbc5386": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 4,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:ab321049c4bb6ec7": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 9,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:09165d31a5ebc17f": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:17cc861343390d99": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:22c29aeb9014cc6b": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 9,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:887907bebfbba367": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 2,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:63ea4fdc0f484060": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:e711903819fce1d6": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 1,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:33d86adc56ea7500": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:668ec2cc374d5380": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 1,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:166c563107e08890": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:218e00e0f9088eb1": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 9,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:151caf0613f4e5a4": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 8,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:8dbd4a9f3fabb72a": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:5c12fe234e96383c": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:458c0bf1425b5a71": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:c4ca2667a8147ce3": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:a2afeb24a3ec3e0b": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 1,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:53436bcc9d9d42c2": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:3cccc47e9a919d8e": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:2ab855e49e95c6f7": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 2,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:a481c8b8cd180fc0": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
+    },
+    "youtube-year-backfill:eb63ef3c5e274965": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:11103cae5c109fc8": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
+      "consecutive_no_yield": 0,
+      "last_result": "new_candidates"
+    },
+    "youtube-year-backfill:b4732eefa45630fc": {
+      "attempt_count": 1,
+      "last_attempted_on": "2026-08-18",
+      "next_retry_on": "2026-09-17",
+      "last_new_candidate_count": 5,
       "consecutive_no_yield": 0,
       "last_result": "new_candidates"
     }

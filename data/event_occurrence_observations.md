@@ -1,20 +1,20 @@
 # 年次開催回観測 初期JSON
 
-生成: 2026-08-17T03:48:22.198938+00:00
+生成: 2026-08-17T20:25:50.720683+00:00
 
 ## 集計
 
-- observation_count: 54
-- series_count: 30
-- source_video_count: 718
+- observation_count: 62
+- series_count: 35
+- source_video_count: 757
 - observed_years: ['2023', '2024', '2025', '2026']
 - series_with_3year_window: 4
-- observations_with_songs: 30
+- observations_with_songs: 37
 
 ## 年別
 
-- 2023: 15
-- 2024: 15
+- 2023: 18
+- 2024: 20
 - 2025: 22
 - 2026: 2
 
