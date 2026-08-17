@@ -68,6 +68,9 @@ class YouTubeDailyOperationsPolicyTest(unittest.TestCase):
 
         self.assertNotIn("git add data/public/events_public.json", text)
         self.assertNotIn("git add data/public/events_public.js", text)
+        self.assertNotIn("git add data/public_date_prediction_apply_result.json", text)
+        self.assertNotIn("git add data/public_historical_reference_dry_run.json", text)
+        self.assertNotIn("git add data/public_season_hint_dry_run.json", text)
 
 
 if __name__ == "__main__":

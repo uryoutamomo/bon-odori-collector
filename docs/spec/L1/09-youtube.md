@@ -54,7 +54,7 @@ verified_by:
   - tests/test_youtube_daily_operations_policy.py
   - tests/test_apply_youtube_setlist_occurrences_rdb.py
   - tests/test_extract_youtube_setlists.py
-updated_for: c55e71a
+updated_for: 5da18e5
 ---
 
 # YouTube取り込みサブシステム
@@ -103,8 +103,8 @@ updated_for: c55e71a
 - `data/pending_mail.json` への催促文（`--mail-reminder`）— [配信サブシステム](06-delivery.md)が拾う
 
 RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、それも既定ではコピーDBにしか書かない。
-公開JSONを作るのは[公開サブシステム](05-publication.md)の `export_public_events.py` で、この工程はそれを**呼ぶ**が、
-結果をコミットはしない（INV-YTB-001・INV-YTB-002）。
+公開JSONを作るのは[公開サブシステム](05-publication.md)の `export_public_events.py` であり、
+この工程からは呼ばない（INV-YTB-001・INV-YTB-002）。
 
 ## 不変条件
 
@@ -122,19 +122,21 @@ RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、それ
 - **守っているコード**: `.github/workflows/youtube_daily_backfill.yml` の `Commit results to main` ステップ
 - **守っているテスト**: `tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_workflow_does_not_stage_public_event_json`
 
-### INV-YTB-002 日次の再生成は、公開exportを基準日つきで一度だけ通す
+### INV-YTB-002 日次の再生成は公開exportへ接続しない
 
-- **内容**: `run_daily_youtube_backfill.py` の `regenerate_outputs()` が呼ぶ公開exportは
-  `export_public_events.py --target-year <年> --today <日>` の**1回だけ**である。
-  `apply_public_date_predictions.py`・`apply_public_season_hints.py`・`apply_public_historical_references.py`
-  といった、予測や季節ヒントを公開層へ直接当てるスクリプトは、ここから呼ばない。
-- **なぜ**: YouTubeから導いた予測は推測であって確定ではない。公開層へ直接当てる経路をこの工程が持つと、
-  人の裁定を通らないまま推測が公開の形になる。また `--today` を渡さない経路が混ざると、
-  公開の基準日が実行環境の日付に落ちる（[INV-PUB-005](05-publication.md)が守っているのと同じ危険である）。
-- **破れたときの症状**: 予測でしかない日付が公開ページに確定日として出る。
-  実行環境の時刻によって公開内容が変わる。
-- **守っているコード**: `run_daily_youtube_backfill.py` の `regenerate_outputs()`
-- **守っているテスト**: `tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_regenerate_outputs_uses_single_public_export_path`
+- **内容**: `run_daily_youtube_backfill.py` の `regenerate_outputs()` は、観測・開催規則・日付予測までを再生成するが、
+  `export_public_events.py`、`apply_public_date_predictions.py`、`apply_public_season_hints.py`、
+  `apply_public_historical_references.py` を呼ばない。workflowのcommit対象にも公開日付の適用結果を含めない。
+- **なぜ**: YouTubeから導いた予測は推測であって確定ではない。2026-08-17の本番手動実行では、
+  神田明神納涼祭りの新しい観測を作った直後、公開exportがRDBにないJSON予測を検出し、
+  INV-PUB-006のガードで停止した。ガードを緩めるのではなく、公開物を使わないこの工程から
+  公開exportへの接続自体を外すのが境界として正しい。
+- **破れたときの症状**: YouTube検索は成功してquotaを消費したのに、公開exportのガードで日次全体が失敗し、
+  候補と再試行台帳がcommitされず、翌日に同じ検索を繰り返す。
+- **守っているコード**: `run_daily_youtube_backfill.py` の `regenerate_outputs()` と
+  `.github/workflows/youtube_daily_backfill.yml` のcommit対象
+- **守っているテスト**: `tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_regenerate_outputs_does_not_call_public_export`、
+  `tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_workflow_does_not_stage_public_event_json`
 
 ### INV-YTB-003 クォータ上限に当たったら、失敗させずにその時点で止める
 
@@ -246,8 +248,9 @@ harvest が終わると `regenerate_outputs()` が後段をまとめて回す。
 4. `youtube_backfill.build_event_schedule_rules` — 年ごとの観測から「毎年第1土曜」のような開催規則を分類する
 5. `youtube_backfill.build_event_date_predictions` — 規則から今年の日付を予測する
 6. `build_song_occurrences.py`（凍結中のため実質は空振り）
-7. `export_public_events.py --target-year … --today …` — **この1回だけが公開exportの経路である**（INV-YTB-002）
-8. `youtube_backfill.build_month_youtube_backfill_queue` — 翌回に備えて月別のキューを作り直す
+7. `youtube_backfill.build_month_youtube_backfill_queue` — 翌回に備えて月別のキューを作り直す
+
+ここでは公開exportを呼ばない。観測と予測は判断材料として保存し、公開はRDBの確定層を読む日次収集へ任せる（INV-YTB-002）。
 
 3番の観測ビルダーは docstring で自分の立場をはっきり書いている。
 「これは将来の event_series / event_occurrences モデルのための**仮置きデータ**であり、
@@ -334,7 +337,7 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 - [レビュー](03-review.md) — 動画由来の要レビュー項目。アダプタ（`review_inbox_adapters/youtube_*.py`）は
   レビュー側の所有物なので、そちらを読む。
 - [マスタ](04-master.md) — 観測と曲の書き込み先。確定へ上げる判断はマスタ側の不変条件が守る。
-- [公開](05-publication.md) — 公開exportを呼ぶが、結果はコミットしない（INV-YTB-001）。
+- [公開](05-publication.md) — この工程から公開exportは呼ばず、RDBの確定層を読む日次収集へ任せる（INV-YTB-001・002）。
 - [配信](06-delivery.md) — `--mail-reminder` が `pending_mail.json` へ催促を書く。
 
 **この工程が壊れても、公開はすぐには壊れない。** 公開JSONの正本は日次収集がRDBから作るもので、

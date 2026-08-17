@@ -159,9 +159,6 @@ jobs:
         # 引用部分をまるごと1曲名として取り込んだもの等)を公開JSONへ流し込むため、
         # main へ入れると sync-public-data の定時実行がそのまま本番公開してしまう。
         # 公開JSONは collect.yml が RDB(curated層)から日次生成するものを正本とする。
-        git add data/public_date_prediction_apply_result.json
-        git add data/public_historical_reference_dry_run.json
-        git add data/public_season_hint_dry_run.json
         git add data/ops_metrics_history.jsonl
         git add data/ops_metrics_latest.md
         git add data/ops_metrics_dashboard.html
