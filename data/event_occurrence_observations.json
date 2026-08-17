@@ -1,14 +1,14 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-08-16T20:20:39.948858+00:00",
+  "generated_at": "2026-08-17T03:48:22.198938+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
   },
   "summary": {
-    "observation_count": 53,
+    "observation_count": 54,
     "series_count": 30,
-    "source_video_count": 712,
+    "source_video_count": 718,
     "observed_years": [
       "2023",
       "2024",
@@ -17,12 +17,12 @@
     ],
     "observations_by_year": {
       "2023": 15,
-      "2024": 14,
+      "2024": 15,
       "2025": 22,
       "2026": 2
     },
     "series_with_3year_window": 4,
-    "observations_with_songs": 29,
+    "observations_with_songs": 30,
     "active_review_skipped": {
       "missing_event_venue_or_date": 3665
     },
@@ -33,10 +33,10 @@
       }
     },
     "backfill_apply": {
-      "added": 0,
+      "added": 1,
       "updated": 29,
       "source": "data/event_occurrence_backfill_plan.json",
-      "source_observation_count": 29
+      "source_observation_count": 30
     }
   },
   "series": [
@@ -200,12 +200,14 @@
       "canonical_name": "神田明神納涼祭り アニソン盆踊り",
       "usual_venue": "神田明神境内",
       "observed_years": [
-        2023
+        2023,
+        2024
       ],
-      "observation_count": 1,
+      "observation_count": 2,
       "has_3year_window": false,
       "song_years": [
-        2023
+        2023,
+        2024
       ]
     },
     {
@@ -3511,6 +3513,164 @@
         }
       ],
       "manual_review": "accepted_low_confidence"
+    },
+    {
+      "observation_id": "dad699d77a00a16a",
+      "series_key": "90b1820eac7a",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "year": 2024,
+      "date_start": "2024-08-09",
+      "date_end": "2024-08-11",
+      "observed_dates": [
+        "2024-08-09",
+        "2024-08-11"
+      ],
+      "weekday_start": "金",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 6,
+      "source_channels": [
+        "Tokyo Lonely Walker",
+        "maruyoshi2011",
+        "shu channel"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=YAF_nxAwRhk",
+          "video_id": "YAF_nxAwRhk",
+          "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】『おジャ魔女カーニバル～ダンシングヒーロー～神田明神音頭（生歌）』🏮Tokyo Bon Dance👘2024.8.9 @神田明神 Kanda Myojin",
+          "channel": "shu channel",
+          "published_at": "2024-08-09T18:43:14Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7UzzSycfHuo",
+          "video_id": "7UzzSycfHuo",
+          "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】『神田明神音頭／生歌🎤小坂井祐莉絵（小坂井ゆりえ）』（第２部）🏮Tokyo Bon Dance👘2024.8.9 @神田明神 Kanda Myojin",
+          "channel": "shu channel",
+          "published_at": "2024-08-09T18:43:01Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=i4jrDZxtYIE",
+          "video_id": "i4jrDZxtYIE",
+          "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】新曲‼『 CHA-LA HEAD-CHA-LA （ドラゴンボールZ）』🏮Tokyo Bon Dance👘2024.8.9@神田明神 Kanda Myojin",
+          "channel": "shu channel",
+          "published_at": "2024-08-09T14:38:26Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rqOW8hULTLg",
+          "video_id": "rqOW8hULTLg",
+          "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】新曲‼『 CHA-LA HEAD-CHA-LA （ドラゴンボールZ）』🏮Tokyo Bon Dance👘2024.8.9@神田明神 Kanda Myojin",
+          "channel": "shu channel",
+          "published_at": "2024-08-09T18:38:23Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kZBRQ0KQYVc",
+          "video_id": "kZBRQ0KQYVc",
+          "title": "[4K]🇯🇵 神田明神 盆踊り 納涼祭り 最終日 生唄 東京音頭｜炭坑節 他 / Bon dance in Kanda Myoujin Shrine, Tokyo. Short Ver.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-08-12T06:00:30Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vLu9dDI4ZCA",
+          "video_id": "vLu9dDI4ZCA",
+          "title": "神田明神 納涼祭り アニソン盆踊り ダンシング・ヒーロー 2024年8月9日",
+          "channel": "maruyoshi2011",
+          "published_at": "2024-08-09T15:05:29Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "CHA-LA HEAD-CHA-LA （ドラゴンボールZ）",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=i4jrDZxtYIE",
+            "https://www.youtube.com/watch?v=rqOW8hULTLg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダンシング・ヒーロー（Eat You Up）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=YAF_nxAwRhk"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "神田明神音頭／小坂井祐莉絵",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=YAF_nxAwRhk"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "おジャ魔女カーニバル～ダンシングヒーロー～神田明神音頭（生歌）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=YAF_nxAwRhk"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "神田明神音頭／生歌🎤小坂井祐莉絵（小坂井ゆりえ）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=7UzzSycfHuo"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "浜町美人音頭 / Hamacho Bijin Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=kZBRQ0KQYVc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "花笠音頭 / Hanagasa Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=kZBRQ0KQYVc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "炭坑節 / Tanko Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=kZBRQ0KQYVc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "浴衣音頭 / Yukata Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=kZBRQ0KQYVc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
     },
     {
       "observation_id": "ca7e2062e653d832",

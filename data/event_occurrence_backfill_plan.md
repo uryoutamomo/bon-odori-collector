@@ -1,9 +1,9 @@
 # 年次開催回バックフィル追加プラン
 
-- 生成: 2026-08-16T20:20:39.808572+00:00
-- observation_count: 29
-- source_video_count: 155
-- observations_with_songs: 26
+- 生成: 2026-08-17T03:48:22.091474+00:00
+- observation_count: 30
+- source_video_count: 161
+- observations_with_songs: 27
 - excluded_low_observation_count: 12
 
 | confidence | year | date | event | venue | videos | channels | songs |
@@ -31,6 +31,7 @@
 | high | 2024 | 2024-06-13〜2024-06-15 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 10 | 3 | 11 |
 | medium | 2024 | 2024-08-21 | 東本願寺盆踊り | 東本願寺（浅草） | 4 | 2 | 0 |
 | manual_accept | 2024 | 2024-08-17 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2 | 1 | 2 |
+| high | 2024 | 2024-08-09〜2024-08-11 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 6 | 3 | 9 |
 | high | 2024 | 2024-07-05 | 第15回 鴨台盆踊り | 大正大学 | 6 | 2 | 8 |
 | medium | 2024 | 2024-07-31〜2024-08-01 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 4 | 3 | 10 |
 | medium | 2024 | 2024-07-13〜2024-07-15 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 3 | 3 | 5 |

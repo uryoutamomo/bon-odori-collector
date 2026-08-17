@@ -1,19 +1,19 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-16T20:20:39.573511+00:00",
+  "generated_at": "2026-08-17T03:48:21.623490+00:00",
   "source": "data/youtube_year_backfill_queue.json",
-  "selected_queue_count": 169,
+  "selected_queue_count": 170,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 3,
   "summary": {
-    "candidate_count": 582,
+    "candidate_count": 592,
     "status_counts": {
       "review": 48,
-      "strong": 183,
-      "weak": 351
+      "strong": 189,
+      "weak": 355
     },
-    "strong_count": 183,
+    "strong_count": 189,
     "review_count": 48
   },
   "selected_queue_rows": [
@@ -1831,6 +1831,40 @@
         "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。 祖師谷神明社 世田谷区 2024 盆踊り",
         "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。 2024 YouTube 盆踊り",
         "祖師谷神明社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "priority_score": 24,
+      "priority": "low",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "series_key": "90b1820eac7a",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-08",
+      "public_date_end": "2025-08-08",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-08",
+        "2025-08-08"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.55,
+      "source_url_count": 1,
+      "song_count": 3,
+      "priority_reasons": [
+        "has_source_url",
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
+        "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
+        "神田明神境内 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -9590,6 +9624,191 @@
       "status": "strong",
       "score": 100,
       "reasons": [
+        "event_name_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-11",
+      "video_id": "kZBRQ0KQYVc",
+      "video_url": "https://www.youtube.com/watch?v=kZBRQ0KQYVc",
+      "title": "[4K]🇯🇵 神田明神 盆踊り 納涼祭り 最終日 生唄 東京音頭｜炭坑節 他 / Bon dance in Kanda Myoujin Shrine, Tokyo. Short Ver.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-08-12T06:00:30Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/kZBRQ0KQYVc/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "浜町美人音頭 / Hamacho Bijin Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "花笠音頭 / Hanagasa Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "炭坑節 / Tanko Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "浴衣音頭 / Yukata Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "東京音頭 / Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "秋葉原の近くにある神田明神で「令和6年 神田明神 納涼祭り」が行われました。 盆踊りは3日間開催され、初日には「アニソン盆踊り」2日目は「千代田区民踊連盟 盆踊り」最終日には「浜町音頭保存会 盆踊り」と違った盆踊りが楽しめる趣向となっています。 この動画では最終日の「浜町音頭保存会」の会長による生唄を中心にご紹介させていただきます。 本当に人が多く、すごい賑わいとなっておりました！ The 2024 Kanda Myojin Summer Evening Festival was held at Kanda Myojin near Akihabara. This video introduces the live singing by the chairman of the \"Hamacho Ondo Preservation Society\" on the last day of the festival. There were so many people and it was really crowded! 2024.8.11 Sun 4K60fps virtual walki…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "YAF_nxAwRhk",
+      "video_url": "https://www.youtube.com/watch?v=YAF_nxAwRhk",
+      "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】『おジャ魔女カーニバル～ダンシングヒーロー～神田明神音頭（生歌）』🏮Tokyo Bon Dance👘2024.8.9 @神田明神 Kanda Myojin",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-08-09T18:43:14Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/YAF_nxAwRhk/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
+      "setlist_count": 2,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "ダンシング・ヒーロー（Eat You Up）",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "神田明神音頭／小坂井祐莉絵",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "00:00 おジャ魔女カーニバル 03:54 ダンシング・ヒーロー（Eat You Up） 09:18 神田明神音頭／小坂井祐莉絵 16:27 締めの太鼓／千代田区民謡連盟 【神田明神納涼祭り アニソン盆踊り】 ■開催期間：2024年8月9日（金） ■開催時間：17:00～21:00 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：小坂井祐莉絵、髙橋彩音（AKB48）、尾崎明日香、小見川千明 ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 #神田明神納涼祭り #アニソン盆踊り #おジャ魔女カーニバル"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "7UzzSycfHuo",
+      "video_url": "https://www.youtube.com/watch?v=7UzzSycfHuo",
+      "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】『神田明神音頭／生歌🎤小坂井祐莉絵（小坂井ゆりえ）』（第２部）🏮Tokyo Bon Dance👘2024.8.9 @神田明神 Kanda Myojin",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-08-09T18:43:01Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/7UzzSycfHuo/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【神田明神納涼祭り アニソン盆踊り】 『神田明神音頭／小坂井祐莉絵（小坂井ゆりえ・神田メイ）生歌』 ■開催期間：2024年8月9日（金） ■開催時間：17:00～21:00 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：小坂井祐莉絵、髙橋彩音（AKB48）、尾崎明日香、小見川千明 ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 ■チャンネル内関連動画 4K【神田明神⛩納涼盆踊り2023】『神田明神音頭／生歌🎤小坂井祐莉絵（小坂井ゆりえ）』🏮アニソン盆踊り👘Tokyo Bon Dance 2023.8.11 @神田明神 Kanda Myojin https://youtu.be/heoaxDREung #神田明神納涼祭り #アニソン盆踊り #小坂井祐莉絵"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "i4jrDZxtYIE",
+      "video_url": "https://www.youtube.com/watch?v=i4jrDZxtYIE",
+      "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】新曲‼『 CHA-LA HEAD-CHA-LA （ドラゴンボールZ）』🏮Tokyo Bon Dance👘2024.8.9@神田明神 Kanda Myojin",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-08-09T14:38:26Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/i4jrDZxtYIE/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【神田明神納涼祭り アニソン盆踊り】 ■開催期間：2024年8月9日（金） ■開催時間：17:00～21:00 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：小坂井祐莉絵、髙橋彩音（AKB48）、尾崎明日香、小見川千明 ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 #神田明神納涼祭り #アニソン盆踊り #ドラゴンボール"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "rqOW8hULTLg",
+      "video_url": "https://www.youtube.com/watch?v=rqOW8hULTLg",
+      "title": "【神田明神納涼祭り2024🏮アニソン盆踊り】新曲‼『 CHA-LA HEAD-CHA-LA （ドラゴンボールZ）』🏮Tokyo Bon Dance👘2024.8.9@神田明神 Kanda Myojin",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-08-09T18:38:23Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/rqOW8hULTLg/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【神田明神納涼祭り アニソン盆踊り】 ■開催期間：2024年8月9日（金） ■開催時間：17:00～21:00 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：小坂井祐莉絵、髙橋彩音（AKB48）、尾崎明日香、小見川千明 ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 #神田明神納涼祭り #アニソン盆踊り #ドラゴンボール"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
         "venue_in_video",
         "target_year_in_video",
         "target_year_date_detected",
@@ -12980,6 +13199,33 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "東京・新宿の歌舞伎町で「歌舞伎町BON ODORI」が開催されました。 新宿歌舞伎町の真ん中で行われた盆踊りの第2部はJ-POPや洋楽中心で盛り上がりました！ この動画ではその中から大いに湧いたB'zのultra soulを抜粋！ ※過去にイベント全体をアップした動画が配信不可の楽曲が入っていたため配信自体がブロックとなり削除されたため、いくつかに細分化した形で再アップいたしました。どれかがまたブロックになる可能性もありますのでご容赦ください。 Kabukicho BON ODORI” was held in Kabukicho, Shinjuku, Tokyo. This video shows the second half of the event. The second half of the event was a lot of fun, with people dancing to pop and rock songs and traditional Japanese Bon Odori Dance choreography. This video presents “U…"
+    },
+    {
+      "status": "strong",
+      "score": 98,
+      "reasons": [
+        "event_name_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "vLu9dDI4ZCA",
+      "video_url": "https://www.youtube.com/watch?v=vLu9dDI4ZCA",
+      "title": "神田明神 納涼祭り アニソン盆踊り ダンシング・ヒーロー 2024年8月9日",
+      "channel_id": "UCtYweJZiS4rL6kNUYMUS3_g",
+      "channel_title": "maruyoshi2011",
+      "published_at": "2024-08-09T15:05:29Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/vLu9dDI4ZCA/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "神田明神 納涼祭り アニソン盆踊り ダンシングヒーロー"
     },
     {
       "status": "strong",
@@ -18161,6 +18407,33 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "#歌舞伎町BONODRI #ダンシングヒーロー #荻野目洋子 #トー横 #盆踊り #歌舞伎町 #鳳蝶美成 #新宿 #祭り #東京おとめ太鼓 Dance to the Pop Music at Shinjyuku Kabukicho City Square. This is the Japanese traditional dance called \"Bon Odori\" . 開催日時：2025年8月16日(土) 17時30分 ~20時30分 開催場所：歌舞伎町 シネシティ広場 https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu 盆踊りナビケーター：…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2025-08-08",
+      "video_id": "TQG9UQzN9-8",
+      "video_url": "https://www.youtube.com/watch?v=TQG9UQzN9-8",
+      "title": "『クックロビン音頭 Cock Robin Ondo』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2025-08-08T17:45:24Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/TQG9UQzN9-8/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【神田明神納涼祭り アニソン盆踊り】『クックロビン音頭 Cock Robin Ondo』 ■開催期間：2025年8月8日（金） ■開催時間：16時30分～20時30分 ■場所：神田明神境内 ■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師） ■盆踊り協力：東京大学盆踊りサークル ■太鼓演奏：千代田区民踊連盟 ■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星 ■神田明神納涼祭り https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 #神田明神納涼祭り #アニソン盆踊り #クックロビン音頭 #パタリロ"
     },
     {
       "status": "weak",
@@ -24070,6 +24343,58 @@
         "target_year_date_detected",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "cVGo8dfl04I",
+      "video_url": "https://www.youtube.com/watch?v=cVGo8dfl04I",
+      "title": "【やっぱコレっしょ !!! 】 おジャ魔女カーニバル!!　アニソン盆踊り【神田明神 納涼祭り 2024】",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2024-08-09T14:02:58Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/cVGo8dfl04I/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "アニソン盆踊り 神田明神 納涼祭り 2024年8月9日（金） スイッチON !!! おジャ魔女カーニバル! 神田明神納涼祭りの名物”アニソン盆踊り”が今年もやってきました。 秋葉原ならではの新旧アニメソングによる盆踊りを取り入れ、メディアでも大きな話題となった老若男女を問わず楽しめるイベントです。ガイドダンサーによる振付けのレクチャータイムもありますので、初めての方でもお気軽に参加できます。皆様奮ってご参加ください。 ＜公式サイトより＞ https://youtu.be/cVGo8dfl04I https://youtu.be/jkQ2PT9Eg0M https://youtu.be/Ru2nB_PAgkY https://youtu.be/wvtKx2K3wl4 kanda Myojin Shrine, Tokyo Bon Dance, Anime Songs Bon Dance,"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2024-08-09",
+      "video_id": "1qgQpyPp8qs",
+      "video_url": "https://www.youtube.com/watch?v=1qgQpyPp8qs",
+      "title": "【神田明神アニソン盆踊り】ヲタクの「おジャ魔女カーニバル」は別格です / 盆踊り Kanda Myojin Anime Songs Bon Dance  秋葉原",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2024-08-09T13:31:51Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/1qgQpyPp8qs/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#おジャ魔女カーニバル #神田明神アニソン盆踊り #アニソン盆踊り #祭り #秋葉原 #ヲタ芸 【関連動画】 「おジャ魔女カーニバル」② https://youtu.be/VSEt0ueQTD0 「ダンシングヒーロー」 荻野目洋子 ~ アンコール本人生歌「神田明神音頭」小坂井祐莉絵 https://youtu.be/NzcWd1ZZ9bQ 「CHA-LA HEAD-CHA-LA」 https://youtu.be/2930ce3cHcM 「クックロビン音頭」 https://youtu.be/nT-pa4bQmIM 「おそ松くん音頭」 https://youtu.be/SLP3YHFCo2s 「邪神ちゃん音頭」 https://youtu.be/QXXJybpiios 「サンシャインぴっかぴか音頭」 https://youtu.be/9N5rXCOzW0U 「ドラえもん音頭」 https://youtu.be/YNGLRfmUh3M 【神田明神アニソン盆踊り 2024】 開催日程：2024年8月9日(金) 開催場所：神田明神 https://www.google.com/maps/p…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:6a444090c6dab475",
       "target_year": 2024,
       "event_name": "第16回ハマサイトの夏祭り",
@@ -26133,6 +26458,32 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "市制施行70周年、馬場大門ケヤキ並木 国指定記念登録から100年と歴史的な1年となった2024年の府中。 そんな2024年の市内様子をまとめたスペシャルムービーを公開 主催・制作：府中動画配信部（府中市市民活動センタープラッツ登録団体） 協力：府中市市民活動センタープラッツ 撮影協力：たまいま・よさこいin府中実行委員会・JAZZinFUCHU実行委員会 市民協働まつり実行委員会・THE ART FUCHU実行委員会 Special Thanks：府中市・各イベント主催者の皆さん・番場の皆さん 🎥オープニング 0:00 🎥初詣 1:43 🎥初日の出 2:02 🎥府中で開運！新春デジタルスタンプラリー 2:37 🎥令和6年府中市消防団出初式 3:36 🎥どんど焼きの集い 8:17 🎥おもてなしライトアップ～竹あかりで府中のお正月～2023-2024 11:47 🎥 ロウバイの小径 12:23 🎥令和六年大國魂神社 節分祭 13:09 🎥市内積雪 14:11 🎥第77回府中駅伝競走大会 14:38 🎥郷土の森 梅まつり（2月） 16:28 🎥郷土の森 梅まつり（3月） 17:49 🎥府中…"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
+      "target_year": 2024,
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "detected_event_date": "2025-08-08",
+      "video_id": "udzVht-ykLs",
+      "video_url": "https://www.youtube.com/watch?v=udzVht-ykLs",
+      "title": "[4K]🇯🇵 神田明神 アニソン盆踊り おジャ魔女カーニバル!! 2025 / Bon dance at Ojamajo Carnival!! in Kanda Myojin Shrine.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2025-08-08T12:58:44Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/udzVht-ykLs/maxresdefault.jpg",
+      "query": "神田明神納涼祭り アニソン盆踊り 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "神田明神のアニソン盆踊り（神田明神納涼祭り）前半の部に参加。 人気のアニメ曲やJ-POPで踊る盆踊りは最初から最後まで大盛り上がり。 この動画では、その中から大いに盛り上がった「おジャ魔女カーニバル!!」を先行でご紹介します！ A Bon Odori dance festival featuring anime songs and J-POP was held at Kanda Myojin. In this video, I will give you a sneak peek at Ojamajo Carnival!! 2025.8.8 Fri 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Please Subscribe to my channel よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 …"
     },
     {
       "status": "weak",
@@ -29024,5 +29375,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-16T20:20:39.000347+00:00"
+  "merged_from": "2026-08-16T20:20:39.573511+00:00"
 }

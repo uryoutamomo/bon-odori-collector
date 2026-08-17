@@ -1,21 +1,21 @@
 {
   "generated_by": "build_event_date_predictions.py",
-  "generated_at": "2026-08-16T20:20:40.218912+00:00",
+  "generated_at": "2026-08-17T03:48:22.371199+00:00",
   "target_year": 2026,
   "source": "data/event_occurrence_observations.json",
   "summary": {
-    "prediction_count": 13,
+    "prediction_count": 14,
     "rule_counts": {
       "date_near": 2,
       "fixed_date": 1,
       "weekday_last": 2,
       "weekday_near_day": 2,
-      "weekday_nth": 4,
+      "weekday_nth": 5,
       "weekend_near_day": 2
     },
     "confidence_counts": {
       "low": 2,
-      "medium": 11
+      "medium": 12
     },
     "with_actual_observation": 1
   },
@@ -1059,6 +1059,195 @@
               "duration_days": 1,
               "confidence": "high",
               "source_video_count": 18
+            }
+          ]
+        }
+      ],
+      "actual_observations": []
+    },
+    {
+      "series_key": "90b1820eac7a",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "target_year": 2026,
+      "prediction": {
+        "rule_type": "weekday_nth",
+        "predicted_date_start": "2026-08-14",
+        "predicted_date_end": "2026-08-16",
+        "predicted_weekday_start": "金",
+        "predicted_weekday_end": "日",
+        "duration_days": 3,
+        "score": 0.7,
+        "confidence": "medium",
+        "basis": "8月第2金曜",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "evidence_rows": [
+          {
+            "year": 2023,
+            "date_start": "2023-08-11",
+            "date_end": "2023-08-11",
+            "weekday_start": "金",
+            "duration_days": 1,
+            "confidence": "medium",
+            "source_video_count": 2
+          },
+          {
+            "year": 2024,
+            "date_start": "2024-08-09",
+            "date_end": "2024-08-11",
+            "weekday_start": "金",
+            "duration_days": 3,
+            "confidence": "high",
+            "source_video_count": 6
+          }
+        ]
+      },
+      "candidate_rules": [
+        {
+          "rule_type": "weekday_nth",
+          "predicted_date_start": "2026-08-14",
+          "predicted_date_end": "2026-08-16",
+          "predicted_weekday_start": "金",
+          "predicted_weekday_end": "日",
+          "duration_days": 3,
+          "score": 0.7,
+          "confidence": "medium",
+          "basis": "8月第2金曜",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-08-11",
+              "date_end": "2023-08-11",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 2
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-08-09",
+              "date_end": "2024-08-11",
+              "weekday_start": "金",
+              "duration_days": 3,
+              "confidence": "high",
+              "source_video_count": 6
+            }
+          ]
+        },
+        {
+          "rule_type": "weekday_near_day",
+          "predicted_date_start": "2026-08-07",
+          "predicted_date_end": "2026-08-09",
+          "predicted_weekday_start": "金",
+          "predicted_weekday_end": "日",
+          "duration_days": 3,
+          "score": 0.68,
+          "confidence": "medium",
+          "basis": "8月10日前後の金曜",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-08-11",
+              "date_end": "2023-08-11",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 2
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-08-09",
+              "date_end": "2024-08-11",
+              "weekday_start": "金",
+              "duration_days": 3,
+              "confidence": "high",
+              "source_video_count": 6
+            }
+          ]
+        },
+        {
+          "rule_type": "weekend_near_day",
+          "predicted_date_start": "2026-08-08",
+          "predicted_date_end": "2026-08-09",
+          "predicted_weekday_start": "土",
+          "predicted_weekday_end": "日",
+          "duration_days": 2,
+          "score": 0.6,
+          "confidence": "medium",
+          "basis": "8月10日前後の週末",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-08-11",
+              "date_end": "2023-08-11",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 2
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-08-09",
+              "date_end": "2024-08-11",
+              "weekday_start": "金",
+              "duration_days": 3,
+              "confidence": "high",
+              "source_video_count": 6
+            }
+          ]
+        },
+        {
+          "rule_type": "date_near",
+          "predicted_date_start": "2026-08-10",
+          "predicted_date_end": "2026-08-12",
+          "predicted_weekday_start": "月",
+          "predicted_weekday_end": "水",
+          "duration_days": 3,
+          "score": 0.58,
+          "confidence": "low",
+          "basis": "8月10日前後",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-08-11",
+              "date_end": "2023-08-11",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 2
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-08-09",
+              "date_end": "2024-08-11",
+              "weekday_start": "金",
+              "duration_days": 3,
+              "confidence": "high",
+              "source_video_count": 6
             }
           ]
         }

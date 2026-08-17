@@ -1,18 +1,17 @@
 # 8月 YouTube 過去年バックフィルキュー
 
-- 生成: 2026-06-23T11:00:38.618222+00:00
-- items: 41
-- estimated_search_calls: 82
+- 生成: 2026-08-17T03:48:22.830376+00:00
+- items: 40
+- estimated_search_calls: 80
 
 ## priority_counts
 
-- low: 41
+- low: 40
 
 ## queue
 
 | priority | score | year | event | venue | dates | reasons |
 | --- | ---: | ---: | --- | --- | --- | --- |
-| low | 24 | 2024 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2025-08-08 | has_source_url, medium_recurrence_score, has_song_data |
 | low | 16 | 2023 | あずま通り商店街「下北沢盆踊り2025」 | 下北沢駅東口 | 2025-08-09 | medium_recurrence_score, has_song_data |
 | low | 16 | 2023 | 六本木ヒルズ盆踊り | 六本木ヒルズアリーナ | 2025-08-22, 2025-08-24 | medium_recurrence_score, has_song_data |
 | low | 16 | 2023 | 大銀座盆踊り | 中央通り（銀座1丁目〜8丁目） | 2025-08-02 | medium_recurrence_score, has_song_data |

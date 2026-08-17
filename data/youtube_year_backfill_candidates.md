@@ -1,9 +1,9 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-08-16T20:20:39.573511+00:00
-- selected_queue_count: 169
-- candidate_count: 582
-- strong: 183
+- 生成: 2026-08-17T03:48:21.623490+00:00
+- selected_queue_count: 170
+- candidate_count: 592
+- strong: 189
 - review: 48
 
 | status | score | year | event | venue | detected | channel | title | url |
@@ -75,6 +75,11 @@
 | strong | 100 | 2024 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2024-06-13 | shu channel | 赤坂・日枝神社 山王祭「納涼大会 盆踊り（4/5）相馬甚句～東京おどり～千代田おどり」2024.6.13 @山王パークタワー公開空地 | https://www.youtube.com/watch?v=Afl5z11mHpQ |
 | strong | 100 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） | 2024-08-21 | joy joy | full 浅草・東本願寺盆踊り2024.8.21 Asakusa-Higashi Honganji Bondance tokyo japan | https://www.youtube.com/watch?v=Dyf9OD1euNQ |
 | strong | 100 | 2024 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2024-08-17 | Tokyo Lonely Walker | [4K]🇯🇵 新宿 歌舞伎町で盆ジョヴィ Bon Jovi｜Michael Jackson｜B'z｜YOASOBI 他 Kabukicho BON ODORI 盆踊り 2024 2部 | https://www.youtube.com/watch?v=5c4jwXCsQzM |
+| strong | 100 | 2024 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2024-08-11 | Tokyo Lonely Walker | [4K]🇯🇵 神田明神 盆踊り 納涼祭り 最終日 生唄 東京音頭｜炭坑節 他 / Bon dance in Kanda Myoujin Shrine, Tokyo. Short Ver. | https://www.youtube.com/watch?v=kZBRQ0KQYVc |
+| strong | 100 | 2024 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2024-08-09 | shu channel | 【神田明神納涼祭り2024🏮アニソン盆踊り】『おジャ魔女カーニバル～ダンシングヒーロー～神田明神音頭（生歌）』🏮Tokyo Bon Dance👘2024.8.9 @神田明神 Kanda Myojin | https://www.youtube.com/watch?v=YAF_nxAwRhk |
+| strong | 100 | 2024 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2024-08-09 | shu channel | 【神田明神納涼祭り2024🏮アニソン盆踊り】『神田明神音頭／生歌🎤小坂井祐莉絵（小坂井ゆりえ）』（第２部）🏮Tokyo Bon Dance👘2024.8.9 @神田明神 Kanda Myojin | https://www.youtube.com/watch?v=7UzzSycfHuo |
+| strong | 100 | 2024 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2024-08-09 | shu channel | 【神田明神納涼祭り2024🏮アニソン盆踊り】新曲‼『 CHA-LA HEAD-CHA-LA （ドラゴンボールZ）』🏮Tokyo Bon Dance👘2024.8.9@神田明神 Kanda Myojin | https://www.youtube.com/watch?v=i4jrDZxtYIE |
+| strong | 100 | 2024 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2024-08-09 | shu channel | 【神田明神納涼祭り2024🏮アニソン盆踊り】新曲‼『 CHA-LA HEAD-CHA-LA （ドラゴンボールZ）』🏮Tokyo Bon Dance👘2024.8.9@神田明神 Kanda Myojin | https://www.youtube.com/watch?v=rqOW8hULTLg |
 | strong | 100 | 2024 | 第15回 鴨台盆踊り | 大正大学 | 2024-07-05 | 和太鼓お祭りチャンネル | 「365日の紙飛行機」（AKB48）　2024年大正大学鴨台盆踊り14　東京都豊島区 | https://www.youtube.com/watch?v=DKD7BV2HjHE |
 | strong | 100 | 2024 | 第15回 鴨台盆踊り | 大正大学 | 2024-07-05 | 和太鼓お祭りチャンネル | おジャ魔女カーニバル　2024年大正大学鴨台盆踊り12　東京都豊島区 | https://www.youtube.com/watch?v=TJJTvWUNjq0 |
 | strong | 100 | 2024 | 第15回 鴨台盆踊り | 大正大学 | 2024-07-05 | 和太鼓お祭りチャンネル | ジャンボリミッキー　2024年大正大学鴨台盆踊り18　東京都豊島区 | https://www.youtube.com/watch?v=aVqsLhBFkKw |
@@ -83,8 +88,3 @@
 | strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2024-07-31 | Tokyo Lonely Walker | [4K]🇯🇵 築地本願寺 納涼盆踊り大会 2025 人気観光地 / Traditional Japanese Bon dance in Tsukiji Honganji Temple, Tokyo. | https://www.youtube.com/watch?v=agZGbUbID1Q |
 | strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2024-07-31 | joy joy | full 第77回築地本願寺納涼盆踊り大会 2024.8.1 Tsukiji Hongan-ji Temple Noryo Bon Odori Festival tokyo japan. | https://www.youtube.com/watch?v=Z0q3PLUxkz8 |
 | strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2024-08-01 | 山崎茂雄 | ⚾＃ホームラン音頭 2️⃣🏮＃第77回築地本願寺納涼盆踊り大会2024 大盛り上がり＃HomeRunOndo＃TsukijiHonganji＃2024年8月1日 | https://www.youtube.com/watch?v=15zPoHOoTbg |
-| strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 |  | 和太鼓お祭りチャンネル | 「日本晴れだよ」　2024年築地本願寺納涼盆踊り大会2日目５終　東京都中央区 | https://www.youtube.com/watch?v=MxMozxigK2s |
-| strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 |  | 和太鼓お祭りチャンネル | あやめ踊り　2024年築地本願寺納涼盆踊り大会2日目４　東京都中央区 | https://www.youtube.com/watch?v=cmh8PANu8A8 |
-| strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 |  | 和太鼓お祭りチャンネル | これがお江戸の盆ダンス　2024年築地本願寺納涼盆踊り大会2日目２　東京都中央区 | https://www.youtube.com/watch?v=_leKMPd292w |
-| strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2024-08-01 | 山崎茂雄 | 🏮[＃おこさ節 ]⛩️[＃第77回築地本願寺納涼盆踊り大会2024] 大盛り上がり＃OkosaBushi＃TsukijiHonganji＃2024年8月1日 | https://www.youtube.com/watch?v=izf4pmVM7A8 |
-| strong | 100 | 2024 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2024-07-15 | Tokyo Lonely Walker | [4K]🇯🇵 自由が丘納涼盆踊り大会 「ホイップるん音頭」「自由が丘小唄」最終日 / Traditional Japanese Bon dance in Jiyugaoka. Short ver. | https://www.youtube.com/watch?v=ONuZ_KNO2FU |

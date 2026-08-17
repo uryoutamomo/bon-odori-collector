@@ -1,8 +1,8 @@
 # 年次開催回 日付予測
 
-- 生成: 2026-08-16T20:20:40.218912+00:00
+- 生成: 2026-08-17T03:48:22.371199+00:00
 - target_year: 2026
-- prediction_count: 13
+- prediction_count: 14
 - with_actual_observation: 1
 
 | confidence | rule | predicted | weekday | event | venue | basis | actual |
@@ -13,6 +13,7 @@
 | medium | weekday_nth | 2026-08-15 | 土 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 8月第3土曜 |  |
 | medium | weekday_nth | 2026-08-19 | 水 | 東本願寺盆踊り | 東本願寺（浅草） | 8月第3水曜 |  |
 | medium | weekday_nth | 2026-08-15 | 土 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 8月第3土曜 |  |
+| medium | weekday_nth | 2026-08-14〜2026-08-16 | 金〜日 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 8月第2金曜 |  |
 | medium | weekday_nth | 2026-07-23 | 木 | 第28回新橋こいち祭 盆踊り | 桜田公園 | 7月第4木曜 |  |
 | medium | weekday_near_day | 2026-07-18〜2026-07-20 | 土〜月 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 7月16日前後の土曜 |  |
 | medium | weekday_near_day | 2026-06-19 | 金 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 6月17日前後の金曜 |  |
