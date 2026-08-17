@@ -240,31 +240,18 @@ class RunDailyYoutubeBackfillTest(unittest.TestCase):
         self.assertEqual(args.retry_state["attempts"]["q1"]["next_retry_on"], "2026-09-16")
         self.assertEqual(args.retry_state["attempts"]["q2"]["last_result"], "no_yield")
 
-    def test_regenerate_outputs_uses_single_public_export_path(self):
+    def test_regenerate_outputs_does_not_call_public_export(self):
         commands = []
         original_run_command = daily.run_command
         try:
             daily.run_command = lambda command: commands.append(command) or {"returncode": 0}
 
-            daily.regenerate_outputs(7, 2027, "2027-06-17")
+            daily.regenerate_outputs(7, 2027)
         finally:
             daily.run_command = original_run_command
 
-        public_export_commands = [
-            command
-            for command in commands
-            if command[:2] == ["python3", "export_public_events.py"]
-        ]
-        self.assertEqual(
-            public_export_commands,
-            [[
-                "python3",
-                "export_public_events.py",
-                "--target-year",
-                "2027",
-                "--today",
-                "2027-06-17",
-            ]],
+        self.assertFalse(
+            any(command[:2] == ["python3", "export_public_events.py"] for command in commands)
         )
         self.assertIn(
             [

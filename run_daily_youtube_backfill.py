@@ -451,7 +451,7 @@ def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
     return args.month, [], []
 
 
-def regenerate_outputs(month, target_year, as_of):
+def regenerate_outputs(month, target_year):
     commands = [
         ["python3", "-m", "youtube_backfill.build_event_occurrence_backfill_plan"],
         ["python3", "-m", "youtube_backfill.build_low_confidence_backfill_review"],
@@ -459,14 +459,6 @@ def regenerate_outputs(month, target_year, as_of):
         ["python3", "-m", "youtube_backfill.build_event_schedule_rules", "--target-year", str(target_year)],
         ["python3", "-m", "youtube_backfill.build_event_date_predictions", "--target-year", str(target_year)],
         ["python3", "build_song_occurrences.py"],
-        [
-            "python3",
-            "export_public_events.py",
-            "--target-year",
-            str(target_year),
-            "--today",
-            as_of,
-        ],
         [
             "python3",
             "-m",
@@ -628,11 +620,6 @@ def git_commit_and_push(report, push):
         "data/event_schedule_rules.md",
         "data/event_date_predictions.json",
         "data/event_date_predictions.md",
-        "data/public/events_public.json",
-        "data/public/events_public.js",
-        "data/public_date_prediction_apply_result.json",
-        "data/public_historical_reference_dry_run.json",
-        "data/public_season_hint_dry_run.json",
         "data/song_occurrences.json",
         "data/song_prediction_snapshots.json",
         "data/public/event_song_occurrences_public.json",
@@ -885,9 +872,7 @@ def main():
         args.retry_state["updated_at"] = datetime.now(timezone.utc).isoformat()
         harvest_mod.atomic_write_json(RETRY_STATE, args.retry_state)
     if report["status"] not in {"no_rows", "dry_run"}:
-        report["regenerated"] = regenerate_outputs(
-            args.month, args.target_year, args.as_of
-        )
+        report["regenerated"] = regenerate_outputs(args.month, args.target_year)
 
     if "candidates_after" not in report:
         current = load_json(CANDIDATES, {})
