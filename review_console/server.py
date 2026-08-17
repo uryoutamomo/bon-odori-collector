@@ -194,6 +194,7 @@ def filter_items(inventory: dict, query: dict[str, list[str]]) -> dict:
     source_id = first_query(query, "source")
     domain = first_query(query, "domain")
     action_group = first_query(query, "action_group")
+    time_scope = first_query(query, "time_scope")
     search = first_query(query, "q").casefold()
     limit_text = first_query(query, "limit")
     try:
@@ -209,6 +210,8 @@ def filter_items(inventory: dict, query: dict[str, list[str]]) -> dict:
         if domain and item["domain"] != domain:
             continue
         if action_group and item.get("action_group") != action_group:
+            continue
+        if time_scope and item.get("time_scope") != time_scope:
             continue
         if search:
             haystack = " ".join(

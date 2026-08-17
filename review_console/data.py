@@ -17,6 +17,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from event_model.event_series_normalization import public_series_name
 from master_rdb.master_db import stable_id
 from review_console_ops import collect_ops_metrics
 from review_inbox_adapters.decision_stage import UPDATES_FILE, build_decision_stage, write_decision_stage
@@ -43,6 +44,10 @@ _INVENTORY_CACHE: dict[tuple[str, str, str], dict[str, Any]] = {}
 _DECISION_LOCKS: dict[str, threading.RLock] = {}
 _DECISION_LOCKS_GUARD = threading.Lock()
 _SONG_TERM_CACHE: dict[str, tuple[tuple[str, int], dict[str, str]]] = {}
+_REVIEW_INBOX_SOURCE_PRESENCE_CACHE: dict[
+    str,
+    tuple[tuple[tuple[str, int], ...], dict[str, frozenset[str]]],
+] = {}
 
 GENERIC_SONG_TERMS = {
     "盆踊り",
@@ -1460,13 +1465,165 @@ def registered_auto_resolution(
     return None
 
 
+def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[str]]:
+    """Return the identities still emitted by complete, repository-backed snapshots.
+
+    The review-inbox lifecycle intentionally retains unseen pending rows.  That is
+    the safe storage rule, but it makes the console show work that the source's
+    latest complete snapshot no longer considers pending.  Only the five B4
+    sources are used here: each is committed with the collection result and each
+    adapter declares ``selection.mode=all``.  Canary and runtime-only inputs are
+    deliberately excluded because absence from those snapshots proves nothing.
+    """
+    from review_inbox_adapters.low_priority_adapters import SOURCE_CONFIG, build_snapshot
+
+    inputs: list[tuple[str, Path]] = []
+    for source_id, (configured_path, _kind) in SOURCE_CONFIG.items():
+        try:
+            relative_path = configured_path.relative_to(ROOT)
+        except ValueError:
+            continue
+        inputs.append((source_id, root / relative_path))
+    stamp = tuple(
+        (str(path), path.stat().st_mtime_ns if path.exists() else -1)
+        for _source_id, path in inputs
+    )
+    cache_key = str(root.resolve())
+    cached = _REVIEW_INBOX_SOURCE_PRESENCE_CACHE.get(cache_key)
+    if cached and cached[0] == stamp:
+        return cached[1]
+
+    current: dict[str, frozenset[str]] = {}
+    for source_id, path in inputs:
+        if not path.exists():
+            continue
+        try:
+            snapshot = build_snapshot(source_id, path)
+        except (OSError, TypeError, ValueError):
+            # Fail open: an unreadable/incomplete source must not hide inbox work.
+            continue
+        if snapshot.get("selection", {}).get("mode") != "all":
+            continue
+        items = snapshot.get("items")
+        if not isinstance(items, list):
+            continue
+        ids = [as_text(item.get("inbox_id")) for item in items if isinstance(item, dict)]
+        if len(ids) != len(items) or any(not inbox_id for inbox_id in ids):
+            continue
+        current[source_id] = frozenset(ids)
+    _REVIEW_INBOX_SOURCE_PRESENCE_CACHE[cache_key] = (stamp, current)
+    return current
+
+
+def source_snapshot_auto_resolution(
+    row: dict[str, Any],
+    root: Path = ROOT,
+) -> dict[str, str] | None:
+    origin_source_id = as_text(row.get("source_id"))
+    inbox_id = as_text(row.get("inbox_id"))
+    current = current_complete_source_inbox_ids(root)
+    if not origin_source_id or not inbox_id or origin_source_id not in current:
+        return None
+    if inbox_id in current[origin_source_id]:
+        return None
+    return {
+        "decision": "auto_source_snapshot_no_longer_pending",
+        "label": "自動解決",
+        "reason": "最新の完全な元キューに含まれないため、古い候補として人間レビューから外します。受信箱DBの裁定履歴は変更しません。",
+        "source_id": origin_source_id,
+        "inbox_id": inbox_id,
+    }
+
+
+def x_gap_candidate_name(row: dict[str, Any]) -> str:
+    payload = row.get("payload") if isinstance(row.get("payload"), dict) else {}
+    matched = payload.get("matched_occurrence") if isinstance(payload.get("matched_occurrence"), dict) else {}
+    name = as_text(row.get("event_name") or matched.get("event_name"))
+    if not name:
+        source_text = as_text(payload.get("source_text") or row.get("title"))
+        heading = re.search(r"【([^】]{2,100})】", source_text)
+        name = heading.group(1).strip() if heading else ""
+    return public_series_name(name)
+
+
+def x_gap_candidate_dates(row: dict[str, Any]) -> set[str]:
+    payload = row.get("payload") if isinstance(row.get("payload"), dict) else {}
+    values = payload.get("observed_dates") if isinstance(payload.get("observed_dates"), list) else []
+    return {
+        value
+        for raw in values
+        if (value := as_text(raw)) and re.fullmatch(r"20\d{2}-\d{2}-\d{2}", value)
+    }
+
+
+def confirmed_public_event(event: dict[str, Any]) -> bool:
+    confidence = event.get("date_confidence") if isinstance(event.get("date_confidence"), dict) else {}
+    return (
+        as_text(event.get("date_certainty_tier")).casefold() == "confirmed"
+        or as_text(event.get("display_tier")).casefold() == "confirmed"
+        or as_text(confidence.get("level")).casefold() == "confirmed"
+        or as_text(event.get("status")) == "確認済み"
+    )
+
+
+def x_gap_public_auto_resolution(
+    row: dict[str, Any],
+    root: Path = ROOT,
+) -> dict[str, str] | None:
+    if as_text(row.get("source_id")) != "x_gap":
+        return None
+    payload = row.get("payload") if isinstance(row.get("payload"), dict) else {}
+    if as_text(payload.get("candidate_kind")) not in {"official_new_event", "informal_new_event"}:
+        return None
+    candidate_name = x_gap_candidate_name(row)
+    candidate_dates = x_gap_candidate_dates(row)
+    candidate_year = as_text(row.get("event_year"))
+    normalized_name = normalize_event_lookup_text(candidate_name)
+    if not normalized_name or not candidate_dates or not candidate_year:
+        return None
+
+    public_events = read_json(root / "data" / "public" / "events_public.json", [])
+    if not isinstance(public_events, list):
+        return None
+    matches: list[dict[str, Any]] = []
+    for event in public_events:
+        if not isinstance(event, dict) or not confirmed_public_event(event):
+            continue
+        event_name = public_series_name(
+            as_text(event.get("display_name") or event.get("name") or event.get("event_name"))
+        )
+        if normalize_event_lookup_text(event_name) != normalized_name:
+            continue
+        date_start = as_text(event.get("date") or event.get("date_start"))
+        date_end = as_text(event.get("date_end"))
+        if not date_start.startswith(candidate_year):
+            continue
+        if not candidate_dates.intersection({date_start, date_end}):
+            continue
+        matches.append(event)
+    if len(matches) != 1:
+        return None
+    match = matches[0]
+    return {
+        "decision": "auto_confirmed_public_occurrence_already_exists",
+        "label": "自動解決",
+        "reason": "同じ系列名・開催年・開催日を持つ確認済み公開イベントが1件あるため、新規イベント候補としては古いものです。",
+        "matched_event_name": as_text(match.get("name") or match.get("event_name")),
+        "matched_date": as_text(match.get("date") or match.get("date_start")),
+        "candidate_name": candidate_name,
+    }
+
+
 def auto_source_resolution(
     source: ReviewSource,
     row: dict[str, Any],
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
+    root: Path = ROOT,
 ) -> dict[str, str] | None:
     if source.id == "registered_event_investigation":
         return registered_auto_resolution(row, historical_refs)
+    if source.id == "review_inbox":
+        return source_snapshot_auto_resolution(row, root) or x_gap_public_auto_resolution(row, root)
     return None
 
 
@@ -2231,7 +2388,11 @@ def route_note(
     source: ReviewSource,
     row: dict[str, Any],
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
+    root: Path = ROOT,
 ) -> str:
+    auto = auto_source_resolution(source, row, historical_refs, root=root)
+    if auto:
+        return f"自動解決済みです。{auto['reason']}"
     if source.id == "review_inbox" and as_text(row.get("kind")) == "rare_signal":
         return "X由来の発見候補です。採用時も登録候補packetを作るだけで、非X確認URLがなければ安全側に停止します。"
     if source.id == "review_inbox" and as_text(row.get("kind")) == "youtube_evidence":
@@ -2256,9 +2417,6 @@ def route_note(
         return "これは採用済み過去実績の再点検です。日付・曜日・曲候補が足りないものだけをレビューに出しています。"
     if source.id != "registered_event_investigation":
         return ""
-    auto = registered_auto_resolution(row, historical_refs)
-    if auto:
-        return f"自動解決済みです。{auto['reason']}"
     return registered_review_focus(row)["note"]
 
 
@@ -2266,7 +2424,10 @@ def route_check_title(
     source: ReviewSource,
     row: dict[str, Any],
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
+    root: Path = ROOT,
 ) -> str:
+    if auto_source_resolution(source, row, historical_refs, root=root):
+        return "自動解決したこと"
     if source.id == "x_candidate_post":
         return "この判断で変わるもの"
     if source.id == "rare_signal_backcheck":
@@ -2274,8 +2435,6 @@ def route_check_title(
     if source.id == "youtube_active_video":
         return "追加先イベント確認"
     if source.id == "registered_event_investigation":
-        if registered_auto_resolution(row, historical_refs):
-            return "自動解決したこと"
         return "確認してほしいこと"
     return "採用後に残る情報"
 
@@ -2887,7 +3046,7 @@ def has_final_source_decision(
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
     root: Path = ROOT,
 ) -> bool:
-    if auto_source_resolution(source, row, historical_refs):
+    if auto_source_resolution(source, row, historical_refs, root=root):
         return True
     if source.id == "youtube_active_video" and youtube_auto_closed_parent_component(row, root=root):
         return True
@@ -2947,13 +3106,14 @@ def normalize_item(
     source_decision = first_text(row, source.source_decision_fields)
     description = first_text(row, source.description_fields)
     action_group = action_group_for(source, row, historical_refs)
-    auto_resolution = auto_source_resolution(source, row, historical_refs)
+    auto_resolution = auto_source_resolution(source, row, historical_refs, root=root)
     advice = research_advice(source, row)
     item = {
         "id": item_id,
         "source_id": source.id,
         "origin_source_id": as_text(row.get("source_id")) if source.id == "review_inbox" else source.id,
         "kind": as_text(row.get("kind")),
+        "time_scope": as_text(row.get("time_scope")) or "reference",
         "source_title": source.title,
         "source_path": source.path,
         "domain": source.domain,
@@ -2979,8 +3139,8 @@ def normalize_item(
         "details": scalar_details(row),
         "option_values": list(source.option_values),
         "apply_options": apply_options(source, row),
-        "route_note": route_note(source, row, historical_refs),
-        "route_check_title": route_check_title(source, row, historical_refs),
+        "route_note": route_note(source, row, historical_refs, root=root),
+        "route_check_title": route_check_title(source, row, historical_refs, root=root),
         "route_checks": route_checks(source, row, historical_refs),
         "comparison": comparison_summary(source, row),
     }
@@ -3025,16 +3185,28 @@ def inventory_without_items(inventory: dict[str, Any]) -> dict[str, Any]:
     return {key: value for key, value in inventory.items() if key != "items"}
 
 
-def priority_rank(item: dict[str, Any]) -> tuple[int, int, float, str]:
+def priority_rank(item: dict[str, Any]) -> tuple[int, int, int, float, str]:
     status_rank = {"pending": 0, "reviewed": 1, "closed": 2}.get(item["status"], 3)
+    time_scope_rank = {"future": 0, "reference": 1, "historical": 2}.get(
+        item.get("time_scope") or "reference",
+        3,
+    )
     label = item.get("priority_label") or ""
-    label_rank = {"P0": 0, "high": 0, "P1": 1, "normal": 1, "P2": 2, "low": 2}.get(label, 3)
+    label_rank = {
+        "P0": 0,
+        "high": 0,
+        "P1": 1,
+        "normal": 1,
+        "P2": 2,
+        "low": 2,
+        "P3": 3,
+    }.get(label, 4)
     score_text = item.get("score") or ""
     try:
         score = -float(score_text)
     except ValueError:
         score = 0.0
-    return (status_rank, label_rank, score, item.get("title") or "")
+    return (status_rank, time_scope_rank, label_rank, score, item.get("title") or "")
 
 
 def build_inventory(
@@ -3097,6 +3269,7 @@ def build_inventory(
     totals = {"pending": 0, "reviewed": 0, "closed": 0}
     domain_counts: dict[str, dict[str, int]] = {}
     action_group_counts: dict[str, dict[str, Any]] = {}
+    time_scope_counts: dict[str, dict[str, int]] = {}
     inbox_source_group_counts: dict[str, int] = {}
     for item in items:
         totals[item["status"]] = totals.get(item["status"], 0) + 1
@@ -3112,6 +3285,15 @@ def build_inventory(
         )
         action_group_counts[group][item["status"]] = action_group_counts[group].get(item["status"], 0) + 1
         action_group_counts[group]["total"] += 1
+        time_scope = item.get("time_scope") or "reference"
+        time_scope_counts.setdefault(
+            time_scope,
+            {"pending": 0, "reviewed": 0, "closed": 0, "total": 0},
+        )
+        time_scope_counts[time_scope][item["status"]] = (
+            time_scope_counts[time_scope].get(item["status"], 0) + 1
+        )
+        time_scope_counts[time_scope]["total"] += 1
         if item["source_id"] == "review_inbox":
             origin_source_id = item.get("origin_source_id") or "unknown"
             inbox_source_group_counts[origin_source_id] = inbox_source_group_counts.get(origin_source_id, 0) + 1
@@ -3133,9 +3315,13 @@ def build_inventory(
             "pending": totals.get("pending", 0),
             "reviewed": totals.get("reviewed", 0),
             "closed": totals.get("closed", 0),
+            "auto_closed": sum(
+                1 for item in items if item["status"] == "closed" and item.get("auto_resolution")
+            ),
         },
         "domain_counts": domain_counts,
         "action_group_counts": action_group_counts,
+        "time_scope_counts": time_scope_counts,
         "review_inbox_source_group_counts": dict(sorted(inbox_source_group_counts.items())),
     }
 
