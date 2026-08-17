@@ -1,0 +1,39 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "おと（Codex）",
+  "scope": "oedo_matsuri_2025_youtube_songs",
+  "requests": [
+    {
+      "request_id": "oedo_matsuri_2025_youtube_setlist_j0tAIB1dOig",
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "evidence_mode": "historical_youtube",
+      "event_date": "2025-08-22",
+      "dry_run_only": true,
+      "songs": [
+        {"title": "これがお江戸の盆ダンス"},
+        {"title": "大東京音頭"},
+        {"title": "2000年音頭"},
+        {"title": "チャンチキおけさ"},
+        {"title": "東京音頭"},
+        {"title": "炭坑節"},
+        {"title": "銀座カンカン娘"},
+        {"title": "令和音頭"},
+        {"title": "きよしの数え唄"},
+        {"title": "バハマ・ママ"},
+        {"title": "どだればち・サンバ"},
+        {"title": "ダンシング・ヒーロー"},
+        {"title": "きよしのズンドコ節"}
+      ],
+      "source": {
+        "url": "https://www.youtube.com/watch?v=j0tAIB1dOig",
+        "platform": "youtube",
+        "kind": "historical_occurrence_video",
+        "account_key": "UCKCspf_NrY16rUnODmBqOWA",
+        "title": "中央区大江戸まつり盆おどり大会 2025（2025年8月22日）",
+        "text_excerpt": "動画説明欄の時刻付きチャプターから、重複・OP・会場風景を除いた13曲を確認。"
+      },
+      "note": "2025年8月22日のYouTube実績。2026年の公式曲目ではなく、過去実績に基づく予測根拠として追加。"
+    }
+  ]
+}

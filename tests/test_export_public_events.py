@@ -35,6 +35,24 @@ from export_public_events import (
 
 
 class ExportPublicEventsTest(unittest.TestCase):
+    def test_historical_observation_exports_as_past_hint(self):
+        song = _song_from_rdb(
+            {
+                "song_title_raw": "東京音頭",
+                "evidence_status": "observed",
+                "probability": 51,
+                "confidence": "high",
+                "source_count": 1,
+                "evidence_count": 1,
+                "inherited_from_year": 2025,
+                "notes": '{"source_kind":"observed"}',
+            }
+        )
+
+        self.assertEqual(song["confidence"], "hint")
+        self.assertEqual(song["basis"], "past_evidence")
+        self.assertEqual(song["basis_label"], "2025年実測")
+
     def test_public_export_today_can_be_fixed_by_environment(self):
         with patch.dict("os.environ", {"BON_ODORI_PUBLIC_TODAY": "2026-07-16"}):
             self.assertEqual(public_export_today().isoformat(), "2026-07-16")

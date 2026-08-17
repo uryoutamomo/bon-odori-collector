@@ -1875,7 +1875,99 @@
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "2000年音頭",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "きよしの数え唄",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "どだればち・サンバ",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ダンシング・ヒーロー",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "令和音頭",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      }
+    ],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",

@@ -1,18 +1,12 @@
 """Compute occurrence_songs.probability natively from RDB evidence.
 
-Phase 1 of the RDB-native rewrite of song_processing/song_occurrences.py's
-prediction_probability()/evidence_view_for_year() (see that module's header
-and apply_youtube_setlist_occurrences_rdb.py's docstring, which deliberately
-left probability NULL pending this rewrite).
-
-Scope (2026-07-24 spot-check on the live master DB): every occurrence_songs
-row with probability IS NULL turned out to have evidence linked directly via
-occurrence_song_evidence_links for its own occurrence year -- none needed
-cross-year inheritance (no row has inherited_from_year set yet; that's the
-"past_evidence"/"prior" branches of the legacy algorithm and is out of scope
-for this pass). So this script only reimplements the "current year, direct
-evidence" branches (current_predictions / current_observed) of the legacy
-prediction_probability(). Cross-year inheritance is a separate follow-up.
+This began as Phase 1 of the RDB-native rewrite of
+song_processing/song_occurrences.py's prediction_probability() function. It
+now handles both direct current-year evidence and a historical evidence row
+that already carries inherited_from_year. The latter uses the same decay and
+speaker factor as inherit_song_probabilities_rdb.py. That separate script is
+still responsible for creating inherited rows between distinct annual
+occurrences; this script only fills NULL probabilities on rows that exist.
 
 Never touches a row whose probability is already non-NULL -- those are
 legacy JSON-computed values transcribed once by build_master_rdb.py's
@@ -68,7 +62,9 @@ KIND_BY_EVIDENCE_TYPE = {
     "hint": "hint",
     "announced": "announced",
     "firsthand_attendance": "observed",
+    "historical_occurrence_video": "observed",
 }
+DECAY_RATE = 0.75
 
 BASIS_LABEL = {
     "current_announced": "今年告知",
@@ -180,12 +176,36 @@ def compute_probability(evidence_rows):
     return None
 
 
-def calibrate(conn, now):
-    targets = rows(
-        conn,
-        "SELECT occurrence_song_id, occurrence_id, normalized_title, origin "
-        "FROM occurrence_songs WHERE probability IS NULL",
+def compute_historical_probability(evidence_rows, target_year, source_year):
+    if not evidence_rows or not source_year or source_year >= target_year:
+        return None
+    base = noisy_or(ev["reliability"] for ev in evidence_rows) * 100
+    speakers = {speaker_key(ev["speaker"]) for ev in evidence_rows}
+    speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(speakers)))
+    probability = round(base * (DECAY_RATE ** (target_year - source_year)) * speaker_factor)
+    kinds = {ev["kind"] for ev in evidence_rows}
+    source_kind = "announced" if "announced" in kinds else "observed" if "observed" in kinds else "hint"
+    return {
+        "probability": max(5, min(90, probability)),
+        "basis": "past_evidence",
+        "basis_label": f"{source_year}年{BASIS_LABEL.get('current_' + source_kind, '過去実績').removeprefix('今年')}",
+        "speaker_count": len(speakers),
+        "evidence_used": len(evidence_rows),
+    }
+
+
+def calibrate(conn, now, occurrence_id=None):
+    query = (
+        "SELECT os.occurrence_song_id, os.occurrence_id, os.normalized_title, os.origin, "
+        "os.inherited_from_year, eo.event_year "
+        "FROM occurrence_songs os JOIN event_occurrences eo ON eo.occurrence_id=os.occurrence_id "
+        "WHERE os.probability IS NULL"
     )
+    params = ()
+    if occurrence_id:
+        query += " AND os.occurrence_id = ?"
+        params = (occurrence_id,)
+    targets = rows(conn, query, params)
     updated = []
     skipped_no_current_evidence = []
     for target in targets:
@@ -219,7 +239,14 @@ def calibrate(conn, now):
                 }
             )
 
-        result = compute_probability(normalized)
+        if target["inherited_from_year"]:
+            result = compute_historical_probability(
+                normalized,
+                int(target["event_year"]),
+                int(target["inherited_from_year"]),
+            )
+        else:
+            result = compute_probability(normalized)
         if result is None:
             skipped_no_current_evidence.append(
                 {
@@ -306,7 +333,7 @@ def issue_summary(issues):
 def render_markdown(result):
     summary = result["summary"]
     lines = [
-        "# Song probability RDB calibration report (Phase 1: direct evidence only)",
+        "# Song probability RDB calibration report",
         "",
         f"- generated_at: {result['generated_at']}",
         f"- mode: {result['mode']}",
@@ -326,10 +353,8 @@ def render_markdown(result):
             "## Scope",
             "",
             "- Only fills occurrence_songs rows where probability IS NULL.",
-            "- Only uses evidence directly linked to that occurrence_song's own year "
-            "(current_predictions / current_observed branches of the legacy algorithm).",
-            "- Cross-year inheritance (past_evidence/prior branches) is out of scope "
-            "for this pass -- no row had inherited_from_year set at calibration time.",
+            "- Direct evidence uses the current_predictions/current_observed branches.",
+            "- Rows carrying inherited_from_year use past-evidence decay; this does not create new inherited rows.",
             "- Existing non-NULL probability values (legacy JSON transcriptions) are left untouched.",
             "",
         ]
@@ -358,7 +383,7 @@ def run(args):
         copy_db(args.master_db, preflight_db)
         with connect_existing(preflight_db) as conn:
             conn.execute("PRAGMA foreign_keys = ON")
-            preflight_calibration = calibrate(conn, now)
+            preflight_calibration = calibrate(conn, now, args.occurrence_id)
             preflight_issues = consistency_checks(conn, preflight_calibration)
             conn.commit()
         preflight_audit = audit_db(preflight_db)
@@ -376,7 +401,7 @@ def run(args):
     rolled_back = False
     with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
-        calibration = calibrate(conn, now)
+        calibration = calibrate(conn, now, args.occurrence_id)
         issues = consistency_checks(conn, calibration)
         has_high_issue = any(row.get("severity") == "high" for row in issues)
         if has_high_issue:
@@ -409,7 +434,7 @@ def run(args):
             "json": str(args.out_json),
             "markdown": str(args.out_md),
         },
-        "options": {"apply": bool(args.apply)},
+        "options": {"apply": bool(args.apply), "occurrence_id": args.occurrence_id},
         "write_guard": {
             "db_committed": committed,
             "rolled_back": rolled_back,
@@ -445,6 +470,7 @@ def main():
     parser.add_argument("--out-db", type=Path, default=OUT_DB)
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
+    parser.add_argument("--occurrence-id", default="")
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
     args = parser.parse_args()

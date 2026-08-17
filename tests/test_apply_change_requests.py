@@ -456,6 +456,7 @@ class ApplyChangeRequestsTests(unittest.TestCase):
                     "change_type": "add_song_evidence",
                     "occurrence_id": "occ_1",
                     "evidence_mode": "historical_youtube",
+                    "event_date": "2025-07-21",
                     "songs": [{"title": "東京音頭"}, {"title": "大東京音頭", "uncertain": True}],
                     "source": {
                         "url": "https://www.youtube.com/watch?v=songs",
@@ -485,6 +486,11 @@ class ApplyChangeRequestsTests(unittest.TestCase):
         self.assertEqual(historical_dates, 1)
         song_count = self.conn.execute("SELECT COUNT(*) FROM occurrence_songs WHERE occurrence_id = 'occ_1'").fetchone()[0]
         self.assertEqual(song_count, 2)
+        historical_song_rows = self.conn.execute(
+            "SELECT inherited_from_year, notes FROM occurrence_songs WHERE occurrence_id = 'occ_1' ORDER BY song_title_raw"
+        ).fetchall()
+        self.assertEqual({row[0] for row in historical_song_rows}, {2025})
+        self.assertTrue(all(json.loads(row[1])["source_kind"] == "observed" for row in historical_song_rows))
 
     def test_firsthand_song_evidence_accepts_source_key_without_url(self):
         payload = {
@@ -538,6 +544,29 @@ class ApplyChangeRequestsTests(unittest.TestCase):
         }
 
         with self.assertRaisesRegex(ValueError, "missing required field: url"):
+            validate_payload(payload)
+
+    def test_historical_youtube_requires_iso_event_date(self):
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "youtube_bad_date",
+                    "change_type": "add_song_evidence",
+                    "occurrence_id": "occ_1",
+                    "evidence_mode": "historical_youtube",
+                    "event_date": "2025/07/21",
+                    "songs": [{"title": "東京音頭"}],
+                    "source": {
+                        "url": "https://www.youtube.com/watch?v=sample",
+                        "platform": "youtube",
+                        "kind": "historical_occurrence_video",
+                    },
+                }
+            ],
+        }
+
+        with self.assertRaisesRegex(ValueError, "event_date must be an ISO date"):
             validate_payload(payload)
 
     def test_historical_reference_date_reuses_existing_natural_key(self):

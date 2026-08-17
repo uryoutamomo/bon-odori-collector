@@ -1,0 +1,215 @@
+{
+  "generated_by": "apply_change_requests.py",
+  "generated_at": "2026-08-17T14:30:47.714673+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "requests": "data/change_requests/oedo_matsuri_2025_youtube_songs_20260817_reviewed.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260817T143047.714673+0000.sqlite.bak",
+    "json": "data/oedo_matsuri_2025_youtube_songs_apply_result.json",
+    "markdown": "data/oedo_matsuri_2025_youtube_songs_apply_result.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "canonical_decision_ledger": 132,
+      "event_investigation_tasks": 79,
+      "event_occurrences": 435,
+      "event_series": 417,
+      "event_series_aliases": 25,
+      "evidence_items": 31428,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "local_judgment_schema_migrations": 4,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 488,
+      "occurrence_evidence_links": 418,
+      "occurrence_song_evidence_links": 1025,
+      "occurrence_songs": 837,
+      "predicted_occurrence_dates": 14,
+      "review_claim_ledger": 0,
+      "review_hold_ledger": 48,
+      "review_inbox_items": 831,
+      "review_queue_state_ledger": 132,
+      "schema_migrations": 4,
+      "song_aliases": 142,
+      "songs": 402,
+      "venue_aliases": 475,
+      "venues": 411,
+      "write_batches": 0,
+      "x_occurrence_resolution_decisions": 1,
+      "x_song_materializations": 1,
+      "x_song_resolution_decisions": 1,
+      "x_song_retractions": 0
+    }
+  },
+  "request_payload": {
+    "request_type": "rdb_change_requests",
+    "generated_by": "scripts/promote_change_requests_for_review.py",
+    "scope": "oedo_matsuri_2025_youtube_songs_reviewed",
+    "requests": [
+      {
+        "request_id": "oedo_matsuri_2025_youtube_setlist_j0tAIB1dOig",
+        "change_type": "add_song_evidence",
+        "occurrence_id": "occ_748784f87c0cce79",
+        "evidence_mode": "historical_youtube",
+        "event_date": "2025-08-22",
+        "songs": [
+          {
+            "title": "これがお江戸の盆ダンス"
+          },
+          {
+            "title": "大東京音頭"
+          },
+          {
+            "title": "2000年音頭"
+          },
+          {
+            "title": "チャンチキおけさ"
+          },
+          {
+            "title": "東京音頭"
+          },
+          {
+            "title": "炭坑節"
+          },
+          {
+            "title": "銀座カンカン娘"
+          },
+          {
+            "title": "令和音頭"
+          },
+          {
+            "title": "きよしの数え唄"
+          },
+          {
+            "title": "バハマ・ママ"
+          },
+          {
+            "title": "どだればち・サンバ"
+          },
+          {
+            "title": "ダンシング・ヒーロー"
+          },
+          {
+            "title": "きよしのズンドコ節"
+          }
+        ],
+        "source": {
+          "url": "https://www.youtube.com/watch?v=j0tAIB1dOig",
+          "platform": "youtube",
+          "kind": "historical_occurrence_video",
+          "account_key": "UCKCspf_NrY16rUnODmBqOWA",
+          "title": "中央区大江戸まつり盆おどり大会 2025（2025年8月22日）",
+          "text_excerpt": "動画説明欄の時刻付きチャプターから、重複・OP・会場風景を除いた13曲を確認。"
+        },
+        "note": "2025年8月22日のYouTube実績。2026年の公式曲目ではなく、過去実績に基づく予測根拠として追加。",
+        "reviewed_by": "おと（Codex）",
+        "reviewed_at": "2026-08-17T14:30:29.261640+00:00",
+        "review_note": "最新S3正本RDB c76991a0 上でdry-runし、対象開催回・13曲・2025年継承・51%・監査0件を確認。"
+      }
+    ],
+    "source_generated_by": "おと（Codex）",
+    "reviewed_by": "おと（Codex）",
+    "reviewed_at": "2026-08-17T14:30:29.261640+00:00",
+    "review_note": "最新S3正本RDB c76991a0 上でdry-runし、対象開催回・13曲・2025年継承・51%・監査0件を確認。",
+    "source_request_count": 1,
+    "approved_request_count": 1
+  },
+  "applied": {
+    "resolved": true,
+    "requests_applied": [
+      {
+        "request_id": "oedo_matsuri_2025_youtube_setlist_j0tAIB1dOig",
+        "change_type": "add_song_evidence",
+        "occurrence_id": "occ_748784f87c0cce79",
+        "evidence_id": "evid_6210afb8050c44a5",
+        "songs_applied": [
+          {
+            "song_id": "song_49b79df0f91492e1",
+            "occurrence_song_id": "osong_919ad2fc7f8036b0"
+          },
+          {
+            "song_id": "song_a7b7cff17ea7f44e",
+            "occurrence_song_id": "osong_505dd8a45ac1bde5"
+          },
+          {
+            "song_id": "song_b103cc35aca4af32",
+            "occurrence_song_id": "osong_a1ce0eead6b9674b"
+          },
+          {
+            "song_id": "song_cand_526adf6c2dde279f",
+            "occurrence_song_id": "osong_e17d33a1b0db7744"
+          },
+          {
+            "song_id": "song_ba38e97046254d94",
+            "occurrence_song_id": "osong_dd653187f43ac971"
+          },
+          {
+            "song_id": "song_8301ef2fd9b554f0",
+            "occurrence_song_id": "osong_08985e42e5f6c748"
+          },
+          {
+            "song_id": "song_ea8d6bc1b835a0f7",
+            "occurrence_song_id": "osong_b988cdf18ff23cc4"
+          },
+          {
+            "song_id": "song_cand_85f32a645526c4f3",
+            "occurrence_song_id": "osong_fcfd786c2db6cb98"
+          },
+          {
+            "song_id": "song_aef21e21ee18f7bb",
+            "occurrence_song_id": "osong_8c5ce73e0a350765"
+          },
+          {
+            "song_id": "song_7e160b25ebfb0de2",
+            "occurrence_song_id": "osong_f34fc25e1de4d37b"
+          },
+          {
+            "song_id": "song_5e846f123a32ad09",
+            "occurrence_song_id": "osong_f8447283cf831cc7"
+          },
+          {
+            "song_id": "song_91e0bb2ffff44fc0",
+            "occurrence_song_id": "osong_4df90d46eacd81ad"
+          },
+          {
+            "song_id": "song_242d9e37e1176744",
+            "occurrence_song_id": "osong_27e01cc9401b2e2c"
+          }
+        ],
+        "changed_fields": [
+          "detail"
+        ]
+      }
+    ],
+    "requests_unresolved": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

@@ -47,6 +47,92 @@ class ExtractYoutubeSetlistsTest(unittest.TestCase):
             [{"number": 2, "title": "東京音頭", "url": "https://www.youtube.com/watch?v=bbb"}],
         )
 
+    def test_extracts_oedo_matsuri_timestamp_chapters_and_matches_current_event(self):
+        video_url = "https://www.youtube.com/watch?v=j0tAIB1dOig"
+        voices = [
+            {
+                "source": "youtube",
+                "account": "UCKCspf_NrY16rUnODmBqOWA",
+                "title": (
+                    "[4K]🇯🇵 中央区大江戸まつり盆おどり大会 2025 "
+                    "ダンシングヒーロー｜これがお江戸の盆ダンス 他 / "
+                    "Japanese Bon dance in Chuo-ku, Tokyo."
+                ),
+                "text": "\n".join(
+                    [
+                        "東京の浜町公園で「第35回中央区大江戸まつり盆おどり大会」が開催されました！",
+                        "2025.8.22 Fri",
+                        "0:00 OP",
+                        "0:13 中央区大江戸まつり盆おどり大会 / Chuo-ku Oedo Matsuri Bon Odori Festival",
+                        "1:42 これがお江戸の盆ダンス with 土佐兄弟 / Korega Oedo no Bon Dance",
+                        "5:40 大東京音頭 / Dai Tokyo Ondo",
+                        "9:08 2000年音頭 / 2000 Nen Ondo",
+                        "14:05 チャンチキおけさ / Chanchiki Okesa",
+                        "17:25 これがお江戸の盆ダンス② / Korega Oedo no Bon Dance②",
+                        "21:05 東京音頭 / Tokyo Ondo",
+                        "24:41 大東京音頭② / Dai Tokyo Ondo②",
+                        "28:09 炭坑節 / Tanko Bushi",
+                        "31:47 銀座カンカン娘 / Ginza Kankan Musume",
+                        "35:34 会場雰囲気・屋台・フード / Venue atmosphere, food stalls, and food",
+                        "40:59 令和音頭 / Reiwa Ondo",
+                        "46:16 きよしの数え唄 / Kiyoshi no Kazoeuta",
+                        "49:56 バハマ・ママ / Bahama Mama",
+                        "53:46 どだればち・サンバ / Dodarebachi Samba",
+                        "1:03:50 2000年音頭② / 2000 Nen Ondo②",
+                        "1:08:50 ダンシング・ヒーロー / Eat You Up",
+                        "1:13:06 きよしのズンドコ節 / Kiyoshi no Zundoko Bushi",
+                        "1:24:32 これがお江戸の盆ダンス③ / Korega Oedo no Bon Dance③",
+                        "1:28:05 END",
+                    ]
+                ),
+                "url": video_url,
+                "date": "2025-08-23T08:00:46Z",
+            }
+        ]
+
+        occurrences, skipped, _ = extract_occurrences(voices, {})
+
+        self.assertEqual(skipped, [])
+        self.assertEqual(len(occurrences), 1)
+        self.assertEqual(occurrences[0]["event_name_hint"], "中央区大江戸まつり盆おどり大会")
+        self.assertEqual(occurrences[0]["event_date"], "2025-08-22")
+        self.assertEqual(occurrences[0]["song_count"], 13)
+        self.assertEqual(
+            [item["title"] for item in occurrences[0]["setlist"]],
+            [
+                "これがお江戸の盆ダンス",
+                "大東京音頭",
+                "2000年音頭",
+                "チャンチキおけさ",
+                "東京音頭",
+                "炭坑節",
+                "銀座カンカン娘",
+                "令和音頭",
+                "きよしの数え唄",
+                "バハマ・ママ",
+                "どだればち・サンバ",
+                "ダンシング・ヒーロー",
+                "きよしのズンドコ節",
+            ],
+        )
+        rows = attach_public_event_matches(
+            occurrences,
+            [
+                {
+                    "name": "中央区大江戸まつり盆おどり大会",
+                    "venue": "浜町公園",
+                    "date": "2026-08-21",
+                    "date_end": "2026-08-22",
+                }
+            ],
+        )
+        self.assertEqual(rows[0]["canonical_event_name"], "中央区大江戸まつり盆おどり大会")
+        self.assertEqual(rows[0]["canonical_venue"], "浜町公園")
+        self.assertEqual(
+            rows[0]["matched_public_event"]["reasons"],
+            ["cross_year_event_name_exact", "event_name_exact", "event_key_hint"],
+        )
+
     def test_splits_bracket_event_and_quoted_song_title(self):
         parsed = split_title_event_song("【鴨台盆踊り2025】「東京音頭」 大正大学盆踊り / 大学生主催盆踊り #盆踊り")
 

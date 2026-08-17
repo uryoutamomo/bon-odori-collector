@@ -25,14 +25,20 @@ SETLIST_ITEM_RE = re.compile(
     r"(?:^|\n|\s)([0-9０-９]{1,2})\s*([^\n\r]+?)\s+"
     r"(https?://(?:youtu\.be|www\.youtube\.com)[^\s、。，)）]+)"
 )
+CHAPTER_ITEM_RE = re.compile(r"^\s*((?:[0-9]{1,2}:)?[0-9]{1,2}:[0-9]{2})\s+(.+?)\s*$")
+CHAPTER_REPEAT_SUFFIX_RE = re.compile(r"[①-⑳]+\s*$")
+CHAPTER_NON_SONG_RE = re.compile(
+    r"^(?:OP|OPENING|END|ENDING|会場(?:雰囲気)?|屋台|フード|休憩|トーク|MC)(?:\b|[・／/]|$)",
+    re.I,
+)
 EVENT_LINE_STOP_RE = re.compile(r"^[0-9０-９]{1,2}\s*\S.*https?://")
 PARENS_RE = re.compile(r"[「」『』【】\[\]（）()]")
 SPACE_RE = re.compile(r"\s+")
 COMPACT_DATE_RE = re.compile(r"(20\d{2})(\d{2})(\d{2})")
 DOT_DATE_RE = re.compile(r"(20\d{2})\.(\d{1,2})\.(\d{1,2})")
-BON_CONTEXT_RE = re.compile(r"(盆踊り|輪踊り|郡上おどり|民踊|民謡|音頭|踊り)")
+BON_CONTEXT_RE = re.compile(r"(盆(?:踊り|おどり)|輪踊り|郡上おどり|民踊|民謡|音頭|踊り)")
 EVENT_CONTEXT_RE = re.compile(
-    r"(盆踊り|輪踊り|Bon\s*Odori|Bon\s*Dance|Bondance|納涼踊り|夏祭り|祭り|Festival)",
+    r"(盆(?:踊り|おどり)|輪踊り|Bon\s*Odori|Bon\s*Dance|Bondance|納涼踊り|夏祭り|祭り|Festival)",
     re.I,
 )
 TITLE_DECORATION_RE = re.compile(r"^\s*(?:\[[^\]]*(?:4K|HDR)[^\]]*\]|【[^】]*(?:4K|HDR)[^】]*】)\s*", re.I)
@@ -168,6 +174,53 @@ def extract_setlist(text):
     return rows
 
 
+def chapter_title(value):
+    """Return the Japanese/primary title from one YouTube chapter label."""
+    # Strip circled repeat markers before NFKC turns ``②`` into a plain ``2``.
+    value = str(value or "").strip()
+    value = re.split(r"\s+[/／]\s+", value, maxsplit=1)[0]
+    value = CHAPTER_REPEAT_SUFFIX_RE.sub("", value)
+    value = normalize_text(value)
+    value = re.sub(r"\s+with\s+.+$", "", value, flags=re.I)
+    return normalize_text(value).strip(" 　-:：、。")
+
+
+def extract_chapter_setlist(text, video_url=""):
+    """Extract song rows from ``0:13 曲名`` / ``1:03:50 曲名`` chapters.
+
+    Some full-event videos put the complete program in YouTube chapters rather
+    than in the numbered ``曲名 URL`` form handled by ``extract_setlist``. Event
+    headings, OP/END, atmosphere and food chapters are deliberately excluded.
+    Repeated plays marked with circled numbers are collapsed to one song.
+    """
+    rows = []
+    seen = set()
+    for line in primary_description_text(text).splitlines():
+        match = CHAPTER_ITEM_RE.match(line)
+        if not match:
+            continue
+        timestamp, raw_title = match.groups()
+        title = chapter_title(raw_title)
+        if not title or CHAPTER_NON_SONG_RE.search(title) or EVENT_CONTEXT_RE.search(title):
+            continue
+        if not title_looks_like_song(title):
+            continue
+        key = song_dedupe_key(title)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        rows.append(
+            {
+                "number": len(rows) + 1,
+                "title": title,
+                "url": compact_url(video_url),
+                "evidence_type": "chapter_timestamp",
+                "timestamp": timestamp,
+            }
+        )
+    return rows
+
+
 def has_bon_context(voice, setlist):
     text = "\n".join([voice.get("title") or "", primary_description_text(voice.get("text") or "")])
     if BON_CONTEXT_RE.search(text):
@@ -190,6 +243,13 @@ def event_label_from_text(text):
         for line in reversed(lines[:idx]):
             if len(line) <= 80 and not URL_RE.search(line) and not re.search(r"チャンネル登録|高評価|コメント", line):
                 return line
+    for line in lines:
+        chapter_match = CHAPTER_ITEM_RE.match(line)
+        if not chapter_match:
+            continue
+        candidate = chapter_title(chapter_match.group(2))
+        if candidate and EVENT_CONTEXT_RE.search(candidate):
+            return clean_event_title(candidate)
     return ""
 
 
@@ -515,14 +575,22 @@ def event_date_matches(occurrence_date, event):
 def score_public_event_match(occurrence, event):
     date_matches = event_date_matches(occurrence.get("event_date"), event)
     event_alias = find_event_alias(event.get("name"), occurrence.get("event_name_hint"), normalize_key)
-    if not date_matches and not event_alias:
-        return 0, []
-    reasons = ["date"] if date_matches else ["cross_year_event_alias"]
-    score = 50 if date_matches else 35
     occ_name = normalize_key(occurrence.get("event_name_hint"))
     event_name = normalize_key(event.get("name"))
     occ_venue = normalize_key(occurrence.get("venue"))
     event_venue = normalize_key(event.get("venue"))
+    event_name_exact = bool(occ_name and event_name and occ_name == event_name)
+    if not date_matches and not event_alias and not event_name_exact:
+        return 0, []
+    if date_matches:
+        reasons = ["date"]
+        score = 50
+    elif event_alias:
+        reasons = ["cross_year_event_alias"]
+        score = 35
+    else:
+        reasons = ["cross_year_event_name_exact"]
+        score = 35
     if event_alias:
         score += 45
         reasons.append("event_name_alias")
@@ -592,6 +660,8 @@ def extract_occurrences(voices, review=None):
         primary_text = primary_description_text(voice.get("text") or "")
         event_date = parse_youtube_event_date(primary_text, voice.get("title"))
         setlist = extract_setlist(primary_text)
+        if len(setlist) < 2:
+            setlist = extract_chapter_setlist(primary_text, voice.get("url") or "")
         if len(setlist) < 2:
             setlist = setlist_from_title({**voice, "text": primary_text})
             if not setlist:

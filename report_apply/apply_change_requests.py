@@ -185,6 +185,17 @@ def validate_payload(payload):
                 _required(source, "source_key", errors, f"{prefix}.source")
             else:
                 _required(source, "url", errors, f"{prefix}.source")
+            if mode == "historical_youtube":
+                _required(request, "event_date", errors, prefix)
+                if request.get("event_date"):
+                    try:
+                        date.fromisoformat(str(request["event_date"]))
+                    except ValueError:
+                        errors.append(f"{prefix}: event_date must be an ISO date (YYYY-MM-DD)")
+                if source.get("kind") != "historical_occurrence_video":
+                    errors.append(
+                        f"{prefix}.source: historical_youtube requires kind='historical_occurrence_video'"
+                    )
     if errors:
         raise ValueError("invalid change request payload: " + "; ".join(errors))
 
@@ -622,6 +633,29 @@ def apply_update_venue(conn, request, occurrence_id, now):
 
 def apply_add_song_evidence(conn, request, occurrence_id, now):
     mode = SONG_EVIDENCE_MODES[request["evidence_mode"]]
+    inherited_from_year = None
+    if request["evidence_mode"] == "historical_youtube":
+        event_date = str(request.get("event_date") or "")
+        try:
+            inherited_from_year = date.fromisoformat(event_date).year
+        except (TypeError, ValueError):
+            inherited_from_year = None
+        occurrence = conn.execute(
+            "SELECT event_year FROM event_occurrences WHERE occurrence_id = ?",
+            (occurrence_id,),
+        ).fetchone()
+        target_year = int(occurrence[0]) if occurrence else 0
+        if not inherited_from_year or inherited_from_year >= target_year:
+            return None, [
+                {
+                    "severity": "medium",
+                    "issue_type": "historical_song_evidence_year_invalid",
+                    "request_id": request["request_id"],
+                    "occurrence_id": occurrence_id,
+                    "event_date": event_date,
+                    "target_year": target_year,
+                }
+            ]
     evidence_id = _upsert_source_evidence(conn, request, now, detected_event_date=request.get("event_date"))
     link_occurrence_evidence(
         conn,
@@ -644,6 +678,10 @@ def apply_add_song_evidence(conn, request, occurrence_id, now):
                 basis_key=mode["basis"],
                 evidence_note=song.get("note") or mode["note"],
                 uncertain=bool(song.get("uncertain", False)),
+                inherited_from_year=inherited_from_year,
+                observed_at=request.get("event_date"),
+                source_kind="observed" if inherited_from_year else None,
+                evidence_confidence=mode["confidence"],
                 now=now,
             )
         )

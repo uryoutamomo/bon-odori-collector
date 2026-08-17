@@ -1,0 +1,212 @@
+{
+  "generated_by": "calibrate_song_probabilities_rdb.py",
+  "generated_at": "2026-08-17T14:30:49.394821+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260817T143049.394821+0000.sqlite.bak",
+    "json": "data/oedo_matsuri_2025_song_probability_calibration_result.json",
+    "markdown": "data/oedo_matsuri_2025_song_probability_calibration_result.md"
+  },
+  "options": {
+    "apply": true,
+    "occurrence_id": "occ_748784f87c0cce79"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "targets_considered": 13,
+    "rows_updated": 13,
+    "rows_skipped_no_current_evidence": 0,
+    "probability_min": 51,
+    "probability_max": 51,
+    "basis_distribution": {
+      "past_evidence": 13
+    },
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "canonical_decision_ledger": 132,
+      "event_investigation_tasks": 79,
+      "event_occurrences": 435,
+      "event_series": 417,
+      "event_series_aliases": 25,
+      "evidence_items": 31428,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "local_judgment_schema_migrations": 4,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 488,
+      "occurrence_evidence_links": 418,
+      "occurrence_song_evidence_links": 1025,
+      "occurrence_songs": 837,
+      "predicted_occurrence_dates": 14,
+      "review_claim_ledger": 0,
+      "review_hold_ledger": 48,
+      "review_inbox_items": 831,
+      "review_queue_state_ledger": 132,
+      "schema_migrations": 4,
+      "song_aliases": 142,
+      "songs": 402,
+      "venue_aliases": 475,
+      "venues": 411,
+      "write_batches": 0,
+      "x_occurrence_resolution_decisions": 1,
+      "x_song_materializations": 1,
+      "x_song_resolution_decisions": 1,
+      "x_song_retractions": 0
+    }
+  },
+  "calibration": {
+    "targets_considered": 13,
+    "updated": [
+      {
+        "occurrence_song_id": "osong_919ad2fc7f8036b0",
+        "normalized_title": "これがお江戸の盆ダンス",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_505dd8a45ac1bde5",
+        "normalized_title": "大東京音頭",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_a1ce0eead6b9674b",
+        "normalized_title": "2000年音頭",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_e17d33a1b0db7744",
+        "normalized_title": "チャンチキおけさ",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_dd653187f43ac971",
+        "normalized_title": "東京音頭",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_08985e42e5f6c748",
+        "normalized_title": "炭坑節",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_b988cdf18ff23cc4",
+        "normalized_title": "銀座カンカン娘",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_fcfd786c2db6cb98",
+        "normalized_title": "令和音頭",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_8c5ce73e0a350765",
+        "normalized_title": "きよしの数え唄",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_f34fc25e1de4d37b",
+        "normalized_title": "バハマママ",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_f8447283cf831cc7",
+        "normalized_title": "どだればちサンバ",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_4df90d46eacd81ad",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_27e01cc9401b2e2c",
+        "normalized_title": "きよしのズンドコ節",
+        "origin": "curated",
+        "probability": 51,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      }
+    ],
+    "skipped_no_current_evidence": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  }
+}

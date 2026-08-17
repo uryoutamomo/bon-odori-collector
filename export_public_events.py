@@ -558,7 +558,23 @@ def _song_from_rdb(row):
         probability = int(probability) if float(probability).is_integer() else float(probability)
     basis = "past_evidence"
     basis_label = "過去実績"
-    if row["evidence_status"] == "announced":
+    if row["inherited_from_year"]:
+        # Historical evidence can be attached directly to the target-year
+        # occurrence by the guarded add_song_evidence change request. Give the
+        # source year priority over the row's observed/announced status so a
+        # 2025 result never appears as a 2026 direct observation.
+        source_kind_label = "ヒント"
+        try:
+            notes = json.loads(row["notes"] or "{}")
+        except (TypeError, ValueError):
+            notes = {}
+        source_kind = notes.get("source_kind")
+        if source_kind == "announced":
+            source_kind_label = "告知"
+        elif source_kind == "observed":
+            source_kind_label = "実測"
+        basis_label = f"{row['inherited_from_year']}年{source_kind_label}"
+    elif row["evidence_status"] == "announced":
         basis = "current_announced"
         basis_label = "今年告知"
     elif row["evidence_status"] == "observed":
@@ -572,24 +588,14 @@ def _song_from_rdb(row):
         # inherited_from_yearチェックにも掛からず「過去実績」に誤表示していた)。
         basis = "current_hint"
         basis_label = "今年ヒント"
-    elif row["inherited_from_year"]:
-        # inherit_song_probabilities_rdb.py が notes.source_kind に継承元の証拠種別
-        # (告知/実測/ヒント)を記録している。ここを見ずに「年ヒント」固定にすると、
-        # 前年に実測された曲まで「ヒント」表示になり信頼度の印象を下げてしまう。
-        source_kind_label = "ヒント"
-        try:
-            notes = json.loads(row["notes"] or "{}")
-        except (TypeError, ValueError):
-            notes = {}
-        source_kind = notes.get("source_kind")
-        if source_kind == "announced":
-            source_kind_label = "告知"
-        elif source_kind == "observed":
-            source_kind_label = "実測"
-        basis_label = f"{row['inherited_from_year']}年{source_kind_label}"
     song = {
         "name": row["song_title_raw"],
-        "confidence": "confirmed" if (probability or 0) >= 95 or row["confidence"] == "high" else "hint",
+        "confidence": (
+            "confirmed"
+            if (probability or 0) >= 95
+            or (row["confidence"] == "high" and not row["inherited_from_year"])
+            else "hint"
+        ),
         "probability": probability,
         "basis": basis,
         "basis_label": basis_label,

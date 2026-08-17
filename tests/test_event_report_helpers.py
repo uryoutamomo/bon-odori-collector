@@ -323,6 +323,51 @@ class EventReportHelpersTest(unittest.TestCase):
         ).fetchone()
         self.assertEqual(tuple(row), ("setlist", "announced"))
 
+    def test_upsert_occurrence_song_current_evidence_clears_inherited_year(self):
+        historical_evidence_id = master_db.stable_id("ev", "historical_song_evidence")
+        current_evidence_id = master_db.stable_id("ev", "current_song_evidence")
+        for evidence_id in (historical_evidence_id, current_evidence_id):
+            upsert_evidence_item(
+                self.conn,
+                evidence_id,
+                platform="web",
+                evidence_type="video_description",
+                source_key=evidence_id,
+                text_excerpt="曲目実績",
+            )
+        upsert_occurrence_song(
+            self.conn,
+            self.occurrence_id,
+            "東京音頭",
+            historical_evidence_id,
+            role="result",
+            evidence_status="observed",
+            basis_key="historical_youtube",
+            evidence_note="前年実績。",
+            inherited_from_year=2025,
+        )
+        self.conn.execute(
+            "UPDATE occurrence_songs SET probability = 51 WHERE occurrence_id = ? AND normalized_title = ?",
+            (self.occurrence_id, master_db.normalize_text("東京音頭")),
+        )
+        upsert_occurrence_song(
+            self.conn,
+            self.occurrence_id,
+            "東京音頭",
+            current_evidence_id,
+            role="result",
+            evidence_status="observed",
+            basis_key="firsthand_observed",
+            evidence_note="今年実績。",
+        )
+
+        row = self.conn.execute(
+            "SELECT inherited_from_year, probability, evidence_status FROM occurrence_songs "
+            "WHERE occurrence_id = ? AND normalized_title = ?",
+            (self.occurrence_id, master_db.normalize_text("東京音頭")),
+        ).fetchone()
+        self.assertEqual(tuple(row), (None, None, "observed"))
+
 
 if __name__ == "__main__":
     unittest.main()

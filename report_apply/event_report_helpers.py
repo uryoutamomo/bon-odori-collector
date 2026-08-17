@@ -515,6 +515,10 @@ def upsert_occurrence_song(
     basis_key,
     evidence_note,
     uncertain=False,
+    inherited_from_year=None,
+    observed_at=None,
+    source_kind=None,
+    evidence_confidence=None,
     now=None,
 ):
     """Name-match song_title_raw against songs, then idempotently upsert occurrence_songs."""
@@ -538,6 +542,8 @@ def upsert_occurrence_song(
         song_id = refetch[0]["song_id"]
 
     confidence = "medium" if uncertain else "high"
+    observed_at = observed_at or now
+    link_confidence = 0.7 if uncertain else float(evidence_confidence or 0.95)
     occurrence_song_id = stable_id("osong", occurrence_id, normalized, role)
     conn.execute(
         """
@@ -546,12 +552,19 @@ def upsert_occurrence_song(
           normalized_title, role, evidence_status, probability, confidence,
           source_count, evidence_count, inherited_from_year,
           first_observed_at, last_observed_at, notes, created_at, updated_at
-        ) VALUES (?, 'curated', ?, ?, ?, ?, ?, ?, NULL, ?, 1, 1, NULL, ?, ?, ?, ?, ?)
+        ) VALUES (?, 'curated', ?, ?, ?, ?, ?, ?, NULL, ?, 1, 1, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(occurrence_id, normalized_title, role) DO UPDATE SET
           song_id=excluded.song_id,
           song_title_raw=excluded.song_title_raw,
+          evidence_status=excluded.evidence_status,
+          probability=CASE
+            WHEN occurrence_songs.inherited_from_year IS NOT excluded.inherited_from_year THEN NULL
+            ELSE occurrence_songs.probability
+          END,
           confidence=excluded.confidence,
+          inherited_from_year=excluded.inherited_from_year,
           last_observed_at=excluded.last_observed_at,
+          notes=excluded.notes,
           updated_at=excluded.updated_at
         """,
         (
@@ -563,9 +576,17 @@ def upsert_occurrence_song(
             role,
             evidence_status,
             confidence,
-            now,
-            now,
-            json_text({"basis": basis_key, "evidence_id": evidence_id}),
+            inherited_from_year,
+            observed_at,
+            observed_at,
+            json_text(
+                {
+                    "basis": basis_key,
+                    "evidence_id": evidence_id,
+                    "source_kind": source_kind,
+                    "source_year": inherited_from_year,
+                }
+            ),
             now,
             now,
         ),
@@ -578,7 +599,7 @@ def upsert_occurrence_song(
         ON CONFLICT(occurrence_song_id, evidence_id) DO UPDATE SET
           confidence=excluded.confidence
         """,
-        (occurrence_song_id, evidence_id, 0.7 if uncertain else 0.95, evidence_note),
+        (occurrence_song_id, evidence_id, link_confidence, evidence_note),
     )
     return {"song_id": song_id, "occurrence_song_id": occurrence_song_id}
 
