@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T03:47:55Z",
-  "generated_for_commit": "506d9c9",
+  "generated_at": "2026-08-17T06:28:58Z",
+  "generated_for_commit": "f583710",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -245,7 +245,8 @@
         "INV-RVW-014",
         "INV-RVW-015",
         "INV-RVW-016",
-        "INV-RVW-017"
+        "INV-RVW-017",
+        "INV-RVW-018"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -255,7 +256,8 @@
         "tests/test_e2_identity_judgment.py",
         "tests/test_judgment_j0_read.py",
         "tests/test_x_song_resolution_contract.py",
-        "tests/test_x_occurrence_resolution_contract.py"
+        "tests/test_x_occurrence_resolution_contract.py",
+        "tests/test_review_console.py"
       ],
       "updated_for": "64c874f",
       "path": "docs/spec/L1/03-review.md",
@@ -327,9 +329,14 @@
         "stage_rare_signal_backcheck_reviews.py"
       ],
       "staleness": null,
-      "version": "1.9",
-      "revision_count": 10,
+      "version": "1.10",
+      "revision_count": 11,
       "history": [
+        {
+          "commit": "fa94b3a",
+          "date": "2026-08-17",
+          "subject": "Improve review inbox next-action triage"
+        },
         {
           "commit": "87489f5",
           "date": "2026-08-16",
@@ -1773,6 +1780,14 @@
       "title": "X曲同定の判断取込は正本factを書かず、見せた候補全体を凍結する",
       "tests": [
         "tests/test_x_song_resolution_contract.py"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-018": {
+      "spec": "L1-review",
+      "title": "レビュー画面の自動解決は、完全な現在集合か一意な確定開催回だけを根拠にする",
+      "tests": [
+        "tests/test_review_console.py::ReviewConsoleTests::test_review_inbox_item_absent_from_complete_current_source_snapshot_is_closed"
       ],
       "has_test": true
     },
