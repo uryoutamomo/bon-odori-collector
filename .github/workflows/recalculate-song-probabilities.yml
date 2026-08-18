@@ -1,0 +1,312 @@
+name: Recalculate song probabilities
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_year:
+        description: '再計算する開催年（YYYY）'
+        required: true
+        type: string
+        default: '2026'
+      apply:
+        description: 'S3正本へ適用する。falseはdry-runのみ'
+        required: false
+        type: boolean
+        default: false
+      confirm:
+        description: "apply時のみ: APPLY SONG PROBABILITY RECALCULATION と入力する"
+        required: false
+        type: string
+        default: ''
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  recalculate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+      MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+      AWS_REGION: ap-northeast-1
+      TARGET_YEAR: ${{ inputs.target_year }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Validate target year and confirmation
+        env:
+          APPLY_REQUESTED: ${{ inputs.apply }}
+          CONFIRMATION: ${{ inputs.confirm }}
+        run: |
+          set -euo pipefail
+          case "$TARGET_YEAR" in
+            20[0-9][0-9]|2100) ;;
+            *) echo "target_year must be a four-digit year from 2000 through 2100" >&2; exit 1 ;;
+          esac
+          if [ "$APPLY_REQUESTED" = "true" ] && [ "$CONFIRMATION" != "APPLY SONG PROBABILITY RECALCULATION" ]; then
+            echo "apply=true requires confirm='APPLY SONG PROBABILITY RECALCULATION'" >&2
+            exit 1
+          fi
+
+      - name: Fetch master RDB artifact
+        run: python master_db_s3_artifact.py fetch --overwrite
+
+      - name: Record fetched checksum
+        id: fetched
+        run: |
+          SHA="$(python -c 'from master_rdb.master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "- fetched checksum: $SHA" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Dry-run direct song calibration
+        run: |
+          python calibrate_song_probabilities_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --out-db "$RUNNER_TEMP/song-calibrated-dry-run.sqlite" \
+            --out-json "$RUNNER_TEMP/song-calibration-dry-run.json" \
+            --out-md "$RUNNER_TEMP/song-calibration-dry-run.md" \
+            --target-year "$TARGET_YEAR" \
+            --recalculate-existing
+
+      - name: Dry-run historical song inheritance
+        run: |
+          python inherit_song_probabilities_rdb.py \
+            --master-db "$RUNNER_TEMP/song-calibrated-dry-run.sqlite" \
+            --out-db "$RUNNER_TEMP/song-inherited-dry-run.sqlite" \
+            --out-json "$RUNNER_TEMP/song-inheritance-dry-run.json" \
+            --out-md "$RUNNER_TEMP/song-inheritance-dry-run.md" \
+            --target-year "$TARGET_YEAR"
+
+      - name: Audit dry-run public projection
+        run: |
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          BON_ODORI_PUBLIC_OUT_DIR="$RUNNER_TEMP/public-dry-run" \
+          BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON="$RUNNER_TEMP/public-dry-run-source-map.json" \
+          BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT="$RUNNER_TEMP/public-dry-run-date-predictions.json" \
+          python export_public_events.py \
+            --master-db "$RUNNER_TEMP/song-inherited-dry-run.sqlite" \
+            --target-year "$TARGET_YEAR" \
+            --today "$TODAY"
+
+      - name: Apply direct song calibration
+        if: ${{ inputs.apply }}
+        run: |
+          python calibrate_song_probabilities_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --out-db "$RUNNER_TEMP/song-calibration-apply-unused.sqlite" \
+            --out-json "$RUNNER_TEMP/song-calibration-apply.json" \
+            --out-md "$RUNNER_TEMP/song-calibration-apply.md" \
+            --target-year "$TARGET_YEAR" \
+            --recalculate-existing \
+            --apply \
+            --confirm 'APPLY SONG PROBABILITY CALIBRATION RDB'
+
+      - name: Apply historical song inheritance
+        if: ${{ inputs.apply }}
+        run: |
+          python inherit_song_probabilities_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --out-db "$RUNNER_TEMP/song-inheritance-apply-unused.sqlite" \
+            --out-json "$RUNNER_TEMP/song-inheritance-apply.json" \
+            --out-md "$RUNNER_TEMP/song-inheritance-apply.md" \
+            --target-year "$TARGET_YEAR" \
+            --apply \
+            --confirm 'APPLY SONG PROBABILITY INHERITANCE RDB'
+          cp data/bon_odori_master.sqlite "$RUNNER_TEMP/song-applied-expected.sqlite"
+
+      - name: Audit applied public projection
+        if: ${{ inputs.apply }}
+        run: |
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          BON_ODORI_PUBLIC_OUT_DIR="$RUNNER_TEMP/public-applied" \
+          BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON="$RUNNER_TEMP/public-applied-source-map.json" \
+          BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT="$RUNNER_TEMP/public-applied-date-predictions.json" \
+          python export_public_events.py \
+            --master-db data/bon_odori_master.sqlite \
+            --target-year "$TARGET_YEAR" \
+            --today "$TODAY"
+
+      - name: Verify dry-run and applied song rows match
+        if: ${{ inputs.apply }}
+        run: |
+          python - \
+            "$RUNNER_TEMP/song-inherited-dry-run.sqlite" \
+            data/bon_odori_master.sqlite \
+            "$TARGET_YEAR" \
+            "$RUNNER_TEMP/song-probability-parity-apply.json" <<'PY'
+          import json
+          import sqlite3
+          import sys
+
+          left_path, right_path, target_year, report_path = sys.argv[1:]
+          columns = (
+              "os.occurrence_song_id, os.origin, os.occurrence_id, os.song_id, "
+              "os.song_title_raw, os.normalized_title, os.role, os.evidence_status, "
+              "os.probability, os.confidence, os.source_count, os.evidence_count, "
+              "os.inherited_from_year, os.first_observed_at, os.last_observed_at, os.notes"
+          )
+
+          def load(path):
+              with sqlite3.connect(f"file:{path}?mode=ro", uri=True) as conn:
+                  return conn.execute(
+                      f"SELECT {columns} FROM occurrence_songs os "
+                      "JOIN event_occurrences eo ON eo.occurrence_id=os.occurrence_id "
+                      "WHERE eo.event_year=? ORDER BY os.occurrence_song_id",
+                      (int(target_year),),
+                  ).fetchall()
+
+          left = load(left_path)
+          right = load(right_path)
+          report = {
+              "target_year": int(target_year),
+              "left": left_path,
+              "right": right_path,
+              "left_count": len(left),
+              "right_count": len(right),
+              "matches": left == right,
+          }
+          if left != right:
+              left_set = {tuple(row) for row in left}
+              right_set = {tuple(row) for row in right}
+              report["left_only"] = [list(row) for row in sorted(left_set - right_set)[:20]]
+              report["right_only"] = [list(row) for row in sorted(right_set - left_set)[:20]]
+          with open(report_path, "w", encoding="utf-8") as handle:
+              json.dump(report, handle, ensure_ascii=False, indent=2)
+              handle.write("\n")
+          if left != right:
+              raise SystemExit("dry-run and applied target-year song rows differ")
+          PY
+
+      - name: Publish Master RDB with CAS
+        if: ${{ inputs.apply }}
+        run: |
+          python master_db_s3_artifact.py publish \
+            --expect-remote-checksum "${{ steps.fetched.outputs.sha }}" \
+            --snapshot-id "song-probability-recalculation-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+      - name: Re-fetch and verify published Master RDB
+        if: ${{ inputs.apply }}
+        run: |
+          python master_db_s3_artifact.py fetch --overwrite
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          BON_ODORI_PUBLIC_OUT_DIR="$RUNNER_TEMP/public-refetch" \
+          BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON="$RUNNER_TEMP/public-refetch-source-map.json" \
+          BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT="$RUNNER_TEMP/public-refetch-date-predictions.json" \
+          python export_public_events.py \
+            --master-db data/bon_odori_master.sqlite \
+            --target-year "$TARGET_YEAR" \
+            --today "$TODAY"
+
+      - name: Verify published song rows match applied rows
+        if: ${{ inputs.apply }}
+        run: |
+          python - \
+            "$RUNNER_TEMP/song-applied-expected.sqlite" \
+            data/bon_odori_master.sqlite \
+            "$TARGET_YEAR" \
+            "$RUNNER_TEMP/song-probability-parity-refetch.json" <<'PY'
+          import json
+          import sqlite3
+          import sys
+
+          left_path, right_path, target_year, report_path = sys.argv[1:]
+          columns = (
+              "os.occurrence_song_id, os.origin, os.occurrence_id, os.song_id, "
+              "os.song_title_raw, os.normalized_title, os.role, os.evidence_status, "
+              "os.probability, os.confidence, os.source_count, os.evidence_count, "
+              "os.inherited_from_year, os.first_observed_at, os.last_observed_at, os.notes"
+          )
+
+          def load(path):
+              with sqlite3.connect(f"file:{path}?mode=ro", uri=True) as conn:
+                  return conn.execute(
+                      f"SELECT {columns} FROM occurrence_songs os "
+                      "JOIN event_occurrences eo ON eo.occurrence_id=os.occurrence_id "
+                      "WHERE eo.event_year=? ORDER BY os.occurrence_song_id",
+                      (int(target_year),),
+                  ).fetchall()
+
+          left = load(left_path)
+          right = load(right_path)
+          report = {
+              "target_year": int(target_year),
+              "left": left_path,
+              "right": right_path,
+              "left_count": len(left),
+              "right_count": len(right),
+              "matches": left == right,
+          }
+          with open(report_path, "w", encoding="utf-8") as handle:
+              json.dump(report, handle, ensure_ascii=False, indent=2)
+              handle.write("\n")
+          if left != right:
+              raise SystemExit("published and applied target-year song rows differ")
+          PY
+
+      - name: Write run summary
+        if: ${{ always() }}
+        env:
+          APPLY_REQUESTED: ${{ inputs.apply }}
+        run: |
+          python - "$RUNNER_TEMP" "$TARGET_YEAR" "$APPLY_REQUESTED" >> "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json
+          import pathlib
+          import sys
+
+          root = pathlib.Path(sys.argv[1])
+          target_year = sys.argv[2]
+          apply_requested = sys.argv[3]
+          print(f"## Song probability recalculation ({target_year})")
+          print(f"\n- apply requested: {apply_requested}")
+          for label, filename in (
+              ("calibration dry-run", "song-calibration-dry-run.json"),
+              ("inheritance dry-run", "song-inheritance-dry-run.json"),
+              ("calibration apply", "song-calibration-apply.json"),
+              ("inheritance apply", "song-inheritance-apply.json"),
+              ("apply parity", "song-probability-parity-apply.json"),
+              ("refetch parity", "song-probability-parity-refetch.json"),
+          ):
+              path = root / filename
+              if not path.exists():
+                  continue
+              payload = json.loads(path.read_text(encoding="utf-8"))
+              summary = payload.get("summary", payload)
+              print(f"- {label}: `{json.dumps(summary, ensure_ascii=False, sort_keys=True)}`")
+          PY
+
+      - name: Upload recalculation evidence and public projections
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: song-probability-recalculation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/song-calibration-*.json
+            ${{ runner.temp }}/song-calibration-*.md
+            ${{ runner.temp }}/song-inheritance-*.json
+            ${{ runner.temp }}/song-inheritance-*.md
+            ${{ runner.temp }}/song-probability-parity-*.json
+            ${{ runner.temp }}/public-dry-run/
+            ${{ runner.temp }}/public-applied/
+            ${{ runner.temp }}/public-refetch/
+          if-no-files-found: warn
+          retention-days: 30

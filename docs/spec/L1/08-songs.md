@@ -15,6 +15,7 @@ owns:
   - calibrate_song_predictions.py
   - calibrate_song_probabilities_rdb.py
   - inherit_song_probabilities_rdb.py
+  - .github/workflows/recalculate-song-probabilities.yml
   - export_master_rdb_song_occurrences.py
   - triage_weekly_song_candidates.py
   - register_song_master_initial.py
@@ -54,11 +55,12 @@ verified_by:
   - tests/test_export_public_events.py
   - tests/test_calibrate_song_probabilities_rdb.py
   - tests/test_inherit_song_probabilities_x_safety.py
+  - tests/test_recalculate_song_probabilities_workflow.py
   - tests/test_x_post_extraction_songs.py
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: a9432c4
+updated_for: 9539d63
 ---
 
 # 曲目サブシステム
@@ -314,8 +316,11 @@ E0X-S v2由来の新経路は、通常の週次候補とは別に
 公式曲目画像の `poster_post` は告知として扱う。通常はNULL行だけを埋めるが、既存値を直すときは
 `--recalculate-existing` と `--target-year`（または `--occurrence-id`）を同時指定し、acceptedリンクがある行だけを再計算する。
 この2本は日次workflowでは呼ばれないが、レビュー済み変更要求の `add_song_evidence` 適用時には
-`apply-reviewed-change-requests.yml` が対象開催回を較正する。したがって通常の公開曲確率は毎日は更新されず、
-レビュー反映時または人・AIが手動実行した時点の値である。
+`apply-reviewed-change-requests.yml` が対象開催回を較正する。全件を直すときは手動の
+`recalculate-song-probabilities.yml` が、同じ対象年について「直接証拠の再較正→複数年継承→公開前監査」を
+dry-runで通し、apply時だけ明示確認・CAS付きでS3正本へ反映する。公開投影もdry-run・適用後・再取得後の3段階で監査し、
+対象年の曲行がdry-runと本番、更新前後で一致しなければ停止する。したがって通常の公開曲確率は毎日は更新されず、
+レビュー反映時またはこの手動workflowを実行した時点の値である。
 
 ### 5. 公開へ渡す（毎日）
 
@@ -371,8 +376,9 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
   実際には曲マスタへ書かれていない（結果JSONに「作るとしたらこうなる」と記録されるだけ）。
   日次で実際に前へ進むのは要レビュー行の書き出しだけである。
 - **確率の全件再計算（`calibrate_song_probabilities_rdb.py` / `inherit_song_probabilities_rdb.py`）は
-  日次workflowに入っていない。** レビュー済みの `add_song_evidence` だけは適用workflowが対象開催回を再計算する。
-  75%の年次残存率は暫定値で、十分な年次実績が蓄積した後に再較正する。
+  日次workflowに入っていない。** レビュー済みの `add_song_evidence` は適用workflowが対象開催回を再計算し、
+  全件の補正は `recalculate-song-probabilities.yml` を手動実行する。75%の年次残存率は暫定値で、
+  十分な年次実績が蓄積した後に再較正する。
 - **旧JSON経路は凍結中。** `build_song_occurrences.py` と `calibrate_song_predictions.py` は
   `master_rdb_freeze_policy.py` の `legacy_song_occurrence_generation` が active なので日次では飛ばされる。
   凍結の判断は2026-06-20のRDB移行時のもので、解除条件は `data/master_rdb_migration_freeze.json` にある。
