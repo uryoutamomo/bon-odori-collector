@@ -153,6 +153,21 @@ class ReviewInboxSourceWriterTest(unittest.TestCase):
                 legacy_writer_enabled=False,
             ).require_shadow_run("canary")
 
+    def test_partial_cohort_requires_its_own_mode_and_cutover_pair(self):
+        SourceWriterFlags(
+            dual_write_mode="cohort",
+            cas_publish_enabled=True,
+            reader_mode="inbox",
+            legacy_writer_enabled=False,
+        ).require_shadow_run("cohort")
+        with self.assertRaisesRegex(SourceWriterError, "does not match"):
+            SourceWriterFlags(
+                dual_write_mode="bulk",
+                cas_publish_enabled=True,
+                reader_mode="inbox",
+                legacy_writer_enabled=False,
+            ).require_shadow_run("cohort")
+
     def test_default_off_refuses_before_touching_artifact_store(self):
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"
@@ -342,7 +357,7 @@ class ReviewInboxSourceWriterTest(unittest.TestCase):
 
         self.assertEqual(store.publish_calls, 0)
 
-    def test_selection_mode_must_match_canary_or_bulk_flag(self):
+    def test_selection_mode_must_match_canary_cohort_or_bulk_flag(self):
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"
             make_master(db)

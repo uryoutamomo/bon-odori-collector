@@ -1,8 +1,8 @@
-"""Adapt the bounded, gap-driven X queue into review-inbox items.
+"""Adapt the gap-driven X queue or durable backlog into review-inbox items.
 
-The adapter is intentionally snapshot-only.  Production dual-write remains
-behind the existing shadow/CAS gate; this keeps a machine-selected X post from
-becoming an unreviewed database change.
+The adapter is pure and snapshot-only.  The scheduled writer consumes a
+five-item ``cohort`` snapshot behind explicit environment and CAS gates; this
+keeps a machine-selected X post from becoming an unreviewed database change.
 """
 from __future__ import annotations
 
@@ -23,11 +23,14 @@ from review_inbox_adapters.source_adapter import (
     load_adapted_source,
     write_adapted_snapshot,
 )
+from x_candidate_backlog import BacklogError, select_daily_cohort
 
 DEFAULT_INPUT=ROOT / "data" / "x_gap_candidates.json"
 DEFAULT_OUTPUT=ROOT / "data" / "review_inbox_adapted" / "x_gap.json"
 DEFAULT_LANES_INPUT=ROOT / "data" / "x_review_lanes.json"
+DEFAULT_BACKLOG_INPUT=ROOT / "data" / "x_candidate_backlog.json"
 CANARY_LANES=("lane2_operator_review","lane3_user_review")
+DAILY_COHORT_MAX=5
 
 class XGapAdapter:
     source_id="x_gap"
@@ -49,7 +52,14 @@ class XGapAdapter:
         officiality=row.get("source_officiality") or {}
         official=officiality.get("classification") == "registered_official_social"
         kind=str(row.get("candidate_kind") or "")
-        action={"missing_date":"confirm_current_year_date", "date_range_conflict":"review_date_range_conflict", "informal_new_event":"review_new_event"}.get(kind, "review_schedule_change")
+        action={
+            "missing_date":"confirm_current_year_date",
+            "date_range_conflict":"review_date_range_conflict",
+            "official_new_event":"review_new_event",
+            "informal_new_event":"review_new_event",
+            "past_event_report":"review_historical_event",
+            "schedule_change":"review_schedule_change",
+        }.get(kind, "review_x_event_evidence")
         payload=copy.deepcopy(row)
         # The existing change-request bridge consumes this compact date text
         # format.  Keep the original X text alongside it as evidence.
@@ -78,6 +88,43 @@ def build_snapshot(input_path:Path)->dict[str,Any]:
     snapshot["write_mode"]="snapshot_only_default_off"
     snapshot["upstream_boundary"]="bounded_gap_driven_x_candidates"
     return snapshot
+
+
+def build_daily_cohort_snapshot(
+    backlog_path: Path, *, max_items: int = DAILY_COHORT_MAX
+) -> dict[str, Any]:
+    """Freeze up to five unprocessed backlog rows as an explicit partial cohort.
+
+    ``selection.mode=cohort`` is intentionally distinct from ``all``.  The
+    review console may use absence from a complete ``all`` snapshot as an
+    auto-resolution signal; absence from this five-row sample proves nothing.
+    """
+    backlog_path = Path(backlog_path)
+    raw = backlog_path.read_bytes()
+    backlog = json.loads(raw)
+    try:
+        selected = select_daily_cohort(backlog, max_items=max_items)
+    except BacklogError as exc:
+        raise ValueError(str(exc)) from exc
+    candidates = [copy.deepcopy(row["candidate"]) for row in selected]
+    items = adapt_source_payload(XGapAdapter(), {"candidates": candidates})
+    source_keys = [item["source_key"] for item in items]
+    return {
+        "source_id": XGapAdapter.source_id,
+        "input_path": str(backlog_path),
+        "input_sha256": input_sha256(raw),
+        "input_size_bytes": len(raw),
+        "item_count": len(items),
+        "items": items,
+        "selection": {
+            "mode": "cohort",
+            "cohort": "daily_canary",
+            "max_items": max_items,
+            "source_keys": source_keys,
+        },
+        "write_mode": "snapshot_only_default_off",
+        "upstream_boundary": "durable_x_candidate_backlog_unprocessed_only",
+    }
 
 
 def build_canary_snapshot(input_path: Path, *, canary_source_key: str) -> dict[str, Any]:
@@ -123,7 +170,21 @@ def build_canary_snapshot(input_path: Path, *, canary_source_key: str) -> dict[s
     }
 
 def main()->None:
-    p=argparse.ArgumentParser(); p.add_argument("--input",type=Path,default=DEFAULT_INPUT); p.add_argument("--output",type=Path,default=DEFAULT_OUTPUT); a=p.parse_args()
-    snapshot=build_snapshot(a.input); write_adapted_snapshot(snapshot,a.output); print(f"x gap snapshot: items={snapshot['item_count']} -> {a.output}")
+    p=argparse.ArgumentParser()
+    p.add_argument("--input",type=Path,default=DEFAULT_INPUT)
+    p.add_argument("--backlog",type=Path)
+    p.add_argument("--daily-limit",type=int,default=DAILY_COHORT_MAX)
+    p.add_argument("--output",type=Path,default=DEFAULT_OUTPUT)
+    a=p.parse_args()
+    snapshot=(
+        build_daily_cohort_snapshot(a.backlog,max_items=a.daily_limit)
+        if a.backlog
+        else build_snapshot(a.input)
+    )
+    write_adapted_snapshot(snapshot,a.output)
+    print(
+        f"x gap snapshot: mode={snapshot.get('selection',{}).get('mode','all')} "
+        f"items={snapshot['item_count']} -> {a.output}"
+    )
 
 if __name__ == "__main__": main()
