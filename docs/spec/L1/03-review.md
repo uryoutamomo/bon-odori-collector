@@ -6,6 +6,7 @@ owns:
   - review_inbox.py
   - review_inbox_adapters/**
   - data/review_backlog_decision_overlay.json
+  - data/review_backlog_youtube_decision_overlay.json
   - review_console/**
   - review_console_ops/**
   - scripts/promote_change_requests_for_review.py
@@ -62,6 +63,7 @@ verified_by:
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_review_console.py
   - tests/test_review_inbox_low_priority_adapters.py
+  - tests/test_review_inbox_youtube_adapter.py
 updated_for: 419cd04
 ---
 
@@ -263,23 +265,32 @@ updated_for: 419cd04
 - **守っているテスト**: `tests/test_review_console.py::ReviewConsoleTests::test_review_inbox_item_absent_from_complete_current_source_snapshot_is_closed`、
   `tests/test_review_console.py::ReviewConsoleTests::test_x_gap_new_event_already_confirmed_in_public_data_is_closed`
 
-### INV-RVW-019 低優先の判断済み候補は、安定IDと内容の指紋が一致するときだけ現在集合から外す
+### INV-RVW-019 判断済み候補は、安定IDと内容の指紋が一致するときだけ現在集合から外す
 
-- **内容**: 曲・用語/曲×会場・会場候補の人/LLM判断は、元JSONのライフサイクル欄へ偽装して書き戻さず、
-  `data/review_backlog_decision_overlay.json` に判断主体と理由を残す。完全スナップショットを作る際、
+- **内容**: 曲・用語/曲×会場・会場・YouTube曲証拠候補の人/LLM判断は、元JSONのライフサイクル欄へ
+  偽装して書き戻さず、`data/review_backlog_decision_overlay.json` と
+  `data/review_backlog_youtube_decision_overlay.json` に判断主体と理由を残す。完全スナップショットを作る際、
   `source_id`・`source_key`・`inbox_id`・`source_payload_hash` が現在候補とすべて一致した判断だけを除外する。
+  `保留` は完了判断ではないためoverlayでは受理せず、待ち一覧に残す。
   安定IDが違えば fail-closed、内容の指紋が変わればその判断を stale として候補を再提示する。
+  YouTube入力はリポジトリ内の版よりDB側が新しい場合があるため、画面上の自動解決はDB行の4項目が
+  overlayと完全一致する行だけに限り、古いファイルからの不在を根拠にしない。
   この処理は受信箱DBのstatus/decisionと曲・用語・会場の正本factを変更しない。
 - **なぜ**: 2026-08-18の監査では低優先29件のうち、曲3件と会場5件は別ファイルですでに人が判断済み、
   用語1件も登録済みだった。生成キューが判断記録を引き継がず、同じ意味の候補を別の証拠URLで再発行していたため、
   LLMに同じ問いを繰り返すだけでなく「レビュー待ち」の実数も水増ししていた。一方、語だけで過去判断を再利用すると、
   根拠や意味が変わった別候補まで隠すため、判定時の内容全体の指紋を必須にする。
+  同日のYouTubeパイロット43件も同じ契約で凍結し、DB未同期の新着とDB側で内容が変わった行を
+  古い判断で閉じないようにした。
 - **破れたときの症状**: 判断済みの曲・会場が日次で再び待ち一覧へ現れる。逆に、証拠内容が変わった候補が
   過去判断で勝手に消える。LLM判断が人判断として記録される。
 - **守っているコード**: `review_inbox_adapters/backlog_decision_overlay.py`、
-  `review_inbox_adapters/low_priority_adapters.py` の `build_snapshot()`
+  `review_inbox_adapters/low_priority_adapters.py` と `review_inbox_adapters/youtube_adapter.py` の `build_snapshot()`、
+  `review_console/data.py` の `decision_overlay_auto_resolution()`
 - **守っているテスト**: `tests/test_review_inbox_low_priority_adapters.py::test_exact_decision_overlay_closes_only_the_frozen_payload`、
-  `tests/test_review_inbox_low_priority_adapters.py::test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors`
+  `tests/test_review_inbox_low_priority_adapters.py::test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors`、
+  `tests/test_review_inbox_youtube_adapter.py::ReviewInboxYouTubeAdapterTest::test_frozen_agent_decision_filters_only_the_exact_youtube_payload`、
+  `tests/test_review_console.py::ReviewConsoleTests::test_exact_overlay_decision_is_attributed_to_agent_and_stale_hash_stays_open`
 
 ## 主要な流れ
 
@@ -340,6 +351,10 @@ agent が `awaiting_user` hold を開いた候補だけを、同じレビュー�
 | YouTube集約 | [YouTube取り込み](09-youtube.md)側で用意 | `run_review_inbox_youtube_scheduled.py`（同じくあちら） |
 | 低優先 | `build_missing_venue_review_from_song_associations.py`（会場側）、`build_historical_reference_quality_review.py` | `run_review_inbox_low_priority_scheduled.py` |
 | X由来 | `build_x_gap_candidates.py`（収集側）→ `review_inbox_adapters/x_gap_adapter.py` → `build_x_review_lanes.py` | 定期の二重書き込みは持たず、整形したJSONを置くところで止まる |
+
+YouTube曲証拠のLLM判断は、現行DB行の内容指紋まで一致したときだけ画面上の判断済みにする。
+入力ファイルは実行時のDBより古いことがあるため、低優先キューのような「現在集合から消えた」だけの自動解決はしない
+（INV-RVW-019）。
 
 X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つの運用レーンへ切り分ける**のが役目で、
 1番目のレーンは意図的に厳しくしてある（登録済みの公式ソースだけを通す）。

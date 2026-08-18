@@ -317,6 +317,43 @@ class ReviewConsoleTests(unittest.TestCase):
         self.assertEqual(projected["auto_resolution"]["decision"], "auto_source_snapshot_no_longer_pending")
         self.assertEqual(inventory["totals"]["pending"], 0)
 
+    def test_exact_overlay_decision_is_attributed_to_agent_and_stale_hash_stays_open(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            decision = {
+                "source_id": "youtube_evidence",
+                "source_key": "video:one|year:2026",
+                "inbox_id": "inbox_one",
+                "source_payload_hash": "a" * 64,
+                "decision": "採用",
+                "actor_type": "agent",
+                "actor_id": "おと（Codex）/Terra",
+                "decided_at": "2026-08-18T12:31:38+09:00",
+                "reason_detail": "曲名と盆踊りイベントの対応が明示される。",
+            }
+            (root / "data/review_backlog_youtube_decision_overlay.json").write_text(
+                json.dumps({"schema_version": 1, "decisions": [decision]}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            exact = data.decision_overlay_auto_resolution({
+                "source_id": decision["source_id"],
+                "source_key": decision["source_key"],
+                "inbox_id": decision["inbox_id"],
+                "source_payload_hash": decision["source_payload_hash"],
+            }, root)
+            stale = data.decision_overlay_auto_resolution({
+                "source_id": decision["source_id"],
+                "source_key": decision["source_key"],
+                "inbox_id": decision["inbox_id"],
+                "source_payload_hash": "b" * 64,
+            }, root)
+
+        self.assertEqual(exact["decision"], "auto_frozen_review_decision")
+        self.assertEqual(exact["label"], "LLM判断済み")
+        self.assertEqual(exact["actor_type"], "agent")
+        self.assertIsNone(stale)
+
     def test_x_gap_new_event_already_confirmed_in_public_data_is_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

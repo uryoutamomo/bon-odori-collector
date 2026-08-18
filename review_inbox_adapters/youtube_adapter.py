@@ -16,6 +16,7 @@ from typing import Any, Iterable, Mapping
 from urllib.parse import parse_qs, urlsplit
 
 from review_console.data import load_known_song_terms
+from review_inbox_adapters.backlog_decision_overlay import apply_overlay, load_overlay
 from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 from youtube_backfill.evidence_dates import borrowed_public_date
 
@@ -23,6 +24,7 @@ from youtube_backfill.evidence_dates import borrowed_public_date
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "youtube_active_video_review.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "youtube_active_video.json"
+DEFAULT_DECISION_OVERLAY = ROOT / "data" / "review_backlog_youtube_decision_overlay.json"
 SONG_VOCABULARY_PATHS = (
     Path("data/bon_odori_master.sqlite"),
     Path("data/youtube_song_master.json"),
@@ -240,11 +242,16 @@ def build_snapshot(
     *,
     root: Path = ROOT,
     known_song_terms: Mapping[str, str] | None = None,
+    decision_overlay_path: Path | None = DEFAULT_DECISION_OVERLAY,
 ) -> dict[str, Any]:
     root = Path(root)
     injected_terms = known_song_terms is not None
     terms = dict(known_song_terms) if injected_terms else load_known_song_terms(root)
     snapshot = load_adapted_source(YouTubeActiveVideoAdapter(terms), input_path)
+    overlay = load_overlay(decision_overlay_path)
+    if overlay is not None:
+        overlay["source_path"] = str(decision_overlay_path)
+    snapshot = apply_overlay(snapshot, overlay)
     snapshot["write_mode"] = "snapshot_only_default_off"
     snapshot["upstream_boundary"] = "pending_active_video_reviews_only"
     snapshot["selection"] = {

@@ -1,0 +1,661 @@
+{
+  "schema_version": 1,
+  "generated_by": "おと（Codex）/Terra",
+  "generated_at": "2026-08-18T12:31:38+09:00",
+  "summary": {
+    "total": 43,
+    "採用": 31,
+    "不採用": 12,
+    "保留": 0,
+    "snapshot": "data/youtube_active_video_review.json",
+    "snapshot_input_sha256": "88d290dca55cfd36f6d10e863a1374a10abd6e9ae8bc9aa0aa46946312c38f13",
+    "hash_method": "review_inbox_adapters.parity.item_payload_hash(item) payload fallback"
+  },
+  "decisions": [
+    {
+      "inbox_id": "inbox_76864784cca98d5a",
+      "source_id": "youtube_evidence",
+      "source_key": "video:6uz-OHq1ELU|year:2025",
+      "source_payload_hash": "0f8e3fac05c4597331baf7897ac58e26109a1f3a38141aedd2978e01d13455e1",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "演目名・出演団体の記載のみで、個別曲名または曲目表がない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=6uz-OHq1ELU"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_6d7ed1d5f1f31d3c",
+      "source_id": "youtube_evidence",
+      "source_key": "video:34P9jeSTPFg|year:2025",
+      "source_payload_hash": "02260491c988d0c85eb8d387203043e5144530db6a44c91e2ac665501c80ae7a",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "イベント全体と生唄出演の説明であり、個別曲の曲実績を明示しない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=34P9jeSTPFg"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_647e15be30ec0b6c",
+      "source_id": "youtube_evidence",
+      "source_key": "video:Rag_--g3Y9Q|year:2025",
+      "source_payload_hash": "aebddc1244f9e857893f958993092043c62cc99533204534c897c9985b9e9f61",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "民謡ガールズバンドの生演奏・出演のみで、曲名またはセットリストがない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=Rag_--g3Y9Q"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_33caba5ace55f630",
+      "source_id": "youtube_evidence",
+      "source_key": "video:9jbEUvtiWnQ|year:2025",
+      "source_payload_hash": "25617398fdd3b3787a890df0eed7e1d07236ade750933267c4d9a294cd72ab70",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=9jbEUvtiWnQ"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_56de7c0a2e3a602a",
+      "source_id": "youtube_evidence",
+      "source_key": "video:ej4w3xfKUUo|year:2025",
+      "source_payload_hash": "be5f372faa1b3d3a3c8f2357f88ebf0eea3d9628f68234a6f7b32391ce3b005b",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=ej4w3xfKUUo"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_ef375b14f087dd22",
+      "source_id": "youtube_evidence",
+      "source_key": "video:_7-l442vy-8|year:2025",
+      "source_payload_hash": "b94aae3d650f8602da7f6d4bcadbc88c3db514c3ac406f3af5628749950a33b3",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=_7-l442vy-8"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_2847a6a1e47f8a6c",
+      "source_id": "youtube_evidence",
+      "source_key": "video:nJwaVtRbylo|year:2025",
+      "source_payload_hash": "c2425e23d93caf78da356d0e0e6e6a4bcecfcdf41dbb322f3e7a259b602dcde8",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=nJwaVtRbylo"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_40044c213b325bc1",
+      "source_id": "youtube_evidence",
+      "source_key": "video:1TOKzcLxRts|year:2025",
+      "source_payload_hash": "c463d7cdc293078b316ac1c42a0c420d009fba55691c186b92e8e37513596a43",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=1TOKzcLxRts"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_4ccbfc802c088498",
+      "source_id": "youtube_evidence",
+      "source_key": "video:yHbuMcyWg4s|year:2025",
+      "source_payload_hash": "131bc4f37979e79827d962f2457c2489367c525ab4f1e76ddf25fa7348a53c97",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=yHbuMcyWg4s"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_e817b806a05df357",
+      "source_id": "youtube_evidence",
+      "source_key": "video:iWe-W98GhKg|year:2025",
+      "source_payload_hash": "48a56ec5cba6ece355726bd2f606310c2aed76960bdb6baa7ca01bbe4e0c2ae1",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=iWe-W98GhKg"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_bac8d916a813adf0",
+      "source_id": "youtube_evidence",
+      "source_key": "video:yycbJsz-Bo0|year:2025",
+      "source_payload_hash": "a34d69cc379d76a6702201daa7a5f3891006b62883fbbfbc68b278b3020a6d51",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=yycbJsz-Bo0"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_0429e579d6a6abdd",
+      "source_id": "youtube_evidence",
+      "source_key": "video:pqc4oBo2vik|year:2025",
+      "source_payload_hash": "67275670523c542380089d641fa3922d38d810bea4204348ef1555424c2fadaa",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=pqc4oBo2vik"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_3e2128849aef7682",
+      "source_id": "youtube_evidence",
+      "source_key": "video:a1Bk7y4EKAw|year:2025",
+      "source_payload_hash": "d4c28b37917e9951499dedfda7ee7b4d6cc9dbb0ef322ca9c00bdf0b13273f46",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "全曲まとめ動画で個別曲候補が特定されず、個別の曲実績としては扱えない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=a1Bk7y4EKAw"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_b826c6321f9b76fc",
+      "source_id": "youtube_evidence",
+      "source_key": "video:ZzDkJ2cX_F0|year:2025",
+      "source_payload_hash": "0c2291374d168ef4222f898b616adfaedfcc8a5d74919186eee354722ec1dad4",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=ZzDkJ2cX_F0"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_0569613b15a43691",
+      "source_id": "youtube_evidence",
+      "source_key": "video:LB366_VoHGE|year:2025",
+      "source_payload_hash": "e1a77e431fd26394f20166e6189994a1c325253bcf28d9e2d8b8164e6799570d",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "「盆女」はイベントステージの出演・演目名で、曲実績としての曲名を明示しない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=LB366_VoHGE"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_c53748004c6cafcb",
+      "source_id": "youtube_evidence",
+      "source_key": "video:XpvPt-Wj4Pk|year:2025",
+      "source_payload_hash": "1ec674df7ba7ba4cdb10af3e79512b976c42e96c55e0bad9144acbda79799f09",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=XpvPt-Wj4Pk"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_00b661fb1c09da1d",
+      "source_id": "youtube_evidence",
+      "source_key": "video:uOiAhR6bmbI|year:2025",
+      "source_payload_hash": "8e8ac5560c66cdda4e87de42e25141765ac881f9013f2fa6b1f9237f4372d923",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "DJ名は曲名でなく、DJ出演は曲実績として登録しない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=uOiAhR6bmbI"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_29e82b97ab5dfc4e",
+      "source_id": "youtube_evidence",
+      "source_key": "video:9ejLMS6ZdY4|year:2025",
+      "source_payload_hash": "ca6c92b7d1ea0bf7413ea946ed0aa4e09bd9a0621bd8a29f7ac31f2d3f62a879",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=9ejLMS6ZdY4"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_5d8fc446aa6cde6b",
+      "source_id": "youtube_evidence",
+      "source_key": "video:rlDN073p178|year:2025",
+      "source_payload_hash": "ed25126956691e885a03634c8a0a30359ae0d196f814c26066e0c56c39a87729",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "右近屋パフォーマンスは出演・演技であり、曲実績としての曲名ではない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=rlDN073p178"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_396fa9b1b9c8acd3",
+      "source_id": "youtube_evidence",
+      "source_key": "video:CbEqfuJ0Sm4|year:2025",
+      "source_payload_hash": "0b7244099eec77a06a4538b34cee99b1962ef4a4b8a06136192e58872a1f4999",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=CbEqfuJ0Sm4"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_e77cfa8c19d364d6",
+      "source_id": "youtube_evidence",
+      "source_key": "video:dPGAewpibv4|year:2025",
+      "source_payload_hash": "7ec69e62dbe314450d38c7c2eabbde27900321b8efb34ec07a119d76854131e3",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "出演者名であり、曲名または曲目表ではない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=dPGAewpibv4"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_fcdb4bdbb021c401",
+      "source_id": "youtube_evidence",
+      "source_key": "video:SggXZLFIVss|year:2025",
+      "source_payload_hash": "f8c4bf32a5976441573efe25a83ac5a5fb5ae5e0091519988d6acde200610ae4",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=SggXZLFIVss"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_292ea7fde2c13b29",
+      "source_id": "youtube_evidence",
+      "source_key": "video:06E6QZNrAZM|year:2025",
+      "source_payload_hash": "8da1394cfeff170c5a111437080dcf92cf35ab3c7707ecbb9340197bad8a2123",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=06E6QZNrAZM"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_352c6e339581bbdf",
+      "source_id": "youtube_evidence",
+      "source_key": "video:8HYBHA5FRF8|year:2025",
+      "source_payload_hash": "ab88496c4741b1c8143478e9e464cb7a2905583be19c43299f4e8946e7489388",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=8HYBHA5FRF8"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_a58bbc0eeac2d7ba",
+      "source_id": "youtube_evidence",
+      "source_key": "video:6VCQFgasvP4|year:2025",
+      "source_payload_hash": "ddfda38d95054efffc2b33688fdecb3342bb46c6ec7a97b9af5fce002e261065",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "奉納ライブであり、盆踊りにおける曲実績とは明示されない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=6VCQFgasvP4"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_8345ac7b71d0d202",
+      "source_id": "youtube_evidence",
+      "source_key": "video:y4jNaqjTGAA|year:2025",
+      "source_payload_hash": "8fdcf79d51823f4e2c78b6acaf070ab0d88b248af31090e212a9ab72e479ffad",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=y4jNaqjTGAA"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_1248d3000e7def50",
+      "source_id": "youtube_evidence",
+      "source_key": "video:ozARmZ8blyQ|year:2025",
+      "source_payload_hash": "9aaf09aaa2799d346ce625bbc5458227565730a3fbd8a284da6bda5f5076ae69",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "大学祭の企画・出演内容であり、盆踊りイベントまたは会場との曲実績対応を示さない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=ozARmZ8blyQ"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_a27dffd18a562a3d",
+      "source_id": "youtube_evidence",
+      "source_key": "video:nDF-RNPq-7Q|year:2025",
+      "source_payload_hash": "7771f2b60d5b2cea42661135c5677acac0f9d39584d0262b02b3c7e057a1060e",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "アニソンDJ・ヲタ芸タイムであり、各曲が盆踊り曲実績として踊られたことを示さない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=nDF-RNPq-7Q"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_92f5065abcdb16cb",
+      "source_id": "youtube_evidence",
+      "source_key": "video:WE898Rsgjic|year:2026",
+      "source_payload_hash": "5a2c778fb0465814a1264dbcddecea7b2f7ae895da58adffc66da76ec7b4b576",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=WE898Rsgjic"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_535c5d6663d5fe22",
+      "source_id": "youtube_evidence",
+      "source_key": "video:QZUOs1LcCU8|year:2026",
+      "source_payload_hash": "3d44c6b6662423e8841def1d15929582f6f42e2c58684285c1a77d3a02d257e1",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=QZUOs1LcCU8"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_ae1d2c0d69eb0c5a",
+      "source_id": "youtube_evidence",
+      "source_key": "video:80SVBrfgOEw|year:2026",
+      "source_payload_hash": "05a11807c099f5455f9554443ac2843069c6e8452d04f2e02e0170550ed1d83b",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=80SVBrfgOEw"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_89d6be427679df4e",
+      "source_id": "youtube_evidence",
+      "source_key": "video:L6-h920VUA4|year:2026",
+      "source_payload_hash": "e04dd498b827eddad838d163c064b158640968eeb7d91c5325646a05b95628b6",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=L6-h920VUA4"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_ee1ed9d3431776fc",
+      "source_id": "youtube_evidence",
+      "source_key": "video:A6W856h4Plw|year:2026",
+      "source_payload_hash": "143a79e83720c828bec11c7f585da42481830c7b42eb284d73fa9a57a6576ab4",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=A6W856h4Plw"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_29d4613b68089e2c",
+      "source_id": "youtube_evidence",
+      "source_key": "video:xPCxu2RKnlk|year:2026",
+      "source_payload_hash": "5737894f8182edff467ae03698d39010144fbdfa6b8daa0f92fcdccbfe4058f3",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=xPCxu2RKnlk"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_00714a8755384584",
+      "source_id": "youtube_evidence",
+      "source_key": "video:M9HXO_R_-KM|year:2026",
+      "source_payload_hash": "6b594e924a95b1bd22163c1563b444d957c85afd19030dcc886ec3269033c067",
+      "decision": "不採用",
+      "confidence": "high",
+      "reason_detail": "法政大学応援団の奉納応援は出演・演技であり、曲実績ではない。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=M9HXO_R_-KM"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_2f5188f4b3b8061d",
+      "source_id": "youtube_evidence",
+      "source_key": "video:ih1r8u6hioU|year:2026",
+      "source_payload_hash": "8909fb5a07710958859e93f12ab60a99a837082364b4144bca4c6ab4c6723217",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=ih1r8u6hioU"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_d96517a7de1637dc",
+      "source_id": "youtube_evidence",
+      "source_key": "video:vyyN6Y5wvfU|year:2026",
+      "source_payload_hash": "1b19ce34d20f4db3ef9b5eed8d1739472e814edde44ed7701247e96a191e8172",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=vyyN6Y5wvfU"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_f4ecde88cbe9a6e1",
+      "source_id": "youtube_evidence",
+      "source_key": "video:gJJGkBoHK7E|year:2026",
+      "source_payload_hash": "c5fe2046e5b5068f0c7dccd8ea046803e278260bf53f98ba545d3dad8ab45058",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=gJJGkBoHK7E"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_c97603990f37b628",
+      "source_id": "youtube_evidence",
+      "source_key": "video:l-CPKM8_HyE|year:2026",
+      "source_payload_hash": "44fd0fa084f6dbab0014a6ac6b0b7a9850efe00e3227e8c697610800a2af3f37",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=l-CPKM8_HyE"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_875a528f3b0dcf3d",
+      "source_id": "youtube_evidence",
+      "source_key": "video:q_hJlcTkQ6U|year:2026",
+      "source_payload_hash": "607c269a7bd3abeb5783871c0d6fca48e30a987cfaa30f749021b822d34b0834",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=q_hJlcTkQ6U"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_d86add89f738c274",
+      "source_id": "youtube_evidence",
+      "source_key": "video:v8q5DM8Ahbk|year:2026",
+      "source_payload_hash": "c14e0b54e4a3d967eabef281ad7d42d9add85061594ad6974a29565833ad3f20",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=v8q5DM8Ahbk"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_2896097c892c4cbb",
+      "source_id": "youtube_evidence",
+      "source_key": "video:ffp-cPhgVHk|year:2026",
+      "source_payload_hash": "8369d46116ede3f4416af7a2caadcb38dca73d538563ee618ac1c65c5dc0b833",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=ffp-cPhgVHk"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    },
+    {
+      "inbox_id": "inbox_89499ec0730f06e1",
+      "source_id": "youtube_evidence",
+      "source_key": "video:NLoxsxSNwB0|year:2026",
+      "source_payload_hash": "67c03002c25563e58998cae9838a741067dabbd68d0b661f7bfd7a2f4b81890b",
+      "decision": "採用",
+      "confidence": "high",
+      "reason_detail": "曲名または番号付きセットリストと、盆踊りイベント又は会場の対応が明示される。",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=NLoxsxSNwB0"
+      ],
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T12:31:38+09:00"
+    }
+  ]
+}

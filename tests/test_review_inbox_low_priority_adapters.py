@@ -61,6 +61,8 @@ def test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors():
         apply_overlay(snapshot, {"schema_version": 1, "decisions": [base]})
     with pytest.raises(DecisionOverlayError, match="unsupported decision"):
         apply_overlay(snapshot, {"schema_version": 1, "decisions": [{**base, "inbox_id": item["inbox_id"], "decision": "publish"}]})
+    with pytest.raises(DecisionOverlayError, match="unsupported decision"):
+        apply_overlay(snapshot, {"schema_version": 1, "decisions": [{**base, "inbox_id": item["inbox_id"], "decision": "保留"}]})
 
 
 def test_venue_rows_with_the_same_semantic_identity_are_merged():

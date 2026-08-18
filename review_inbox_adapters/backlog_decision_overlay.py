@@ -19,9 +19,10 @@ from review_inbox_adapters.source_adapter import input_sha256
 SCHEMA_VERSION = 1
 ALLOWED_ACTOR_TYPES = {"agent", "user"}
 ALLOWED_DECISIONS = {
-    "daily_song_candidate": {"曲として採用", "曲ではない", "分割", "用語集へ", "保留"},
-    "daily_term_candidate": {"採用", "不採用", "保留"},
-    "accepted_venue_song_missing_venue": {"会場追加", "既存に統合", "不採用", "保留"},
+    "daily_song_candidate": {"曲として採用", "曲ではない", "分割", "用語集へ"},
+    "daily_term_candidate": {"採用", "不採用"},
+    "accepted_venue_song_missing_venue": {"会場追加", "既存に統合", "不採用"},
+    "youtube_evidence": {"採用", "不採用"},
 }
 REQUIRED_FIELDS = {
     "source_id",
@@ -55,7 +56,7 @@ def load_overlay(path: Path | None) -> dict[str, Any] | None:
     return payload
 
 
-def _validated_index(overlay: Mapping[str, Any]) -> dict[tuple[str, str], dict[str, Any]]:
+def validated_decision_index(overlay: Mapping[str, Any]) -> dict[tuple[str, str], dict[str, Any]]:
     indexed: dict[tuple[str, str], dict[str, Any]] = {}
     for raw in overlay.get("decisions") or []:
         missing = sorted(REQUIRED_FIELDS - set(raw))
@@ -89,6 +90,24 @@ def _validated_index(overlay: Mapping[str, Any]) -> dict[tuple[str, str], dict[s
     return indexed
 
 
+def exact_decision(
+    item: Mapping[str, Any], overlay: Mapping[str, Any] | None
+) -> dict[str, Any] | None:
+    """Return a frozen decision only for the exact identity and payload."""
+    if overlay is None:
+        return None
+    indexed = validated_decision_index(overlay)
+    key = (str(item.get("source_id") or ""), str(item.get("source_key") or ""))
+    decision = indexed.get(key)
+    if decision is None:
+        return None
+    if decision["inbox_id"] != item.get("inbox_id"):
+        raise DecisionOverlayError(f"decision inbox identity mismatch: {item.get('inbox_id')}")
+    if decision["source_payload_hash"] != item_payload_hash(dict(item)):
+        return None
+    return dict(decision)
+
+
 def apply_overlay(snapshot: Mapping[str, Any], overlay: Mapping[str, Any] | None) -> dict[str, Any]:
     """Return the still-pending complete snapshot plus decision audit metadata."""
     result = dict(snapshot)
@@ -96,7 +115,7 @@ def apply_overlay(snapshot: Mapping[str, Any], overlay: Mapping[str, Any] | None
     if overlay is None:
         return result
 
-    indexed = _validated_index(overlay)
+    indexed = validated_decision_index(overlay)
     source_id = str(snapshot.get("source_id") or "")
     kept: list[dict[str, Any]] = []
     applied: list[dict[str, Any]] = []

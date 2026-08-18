@@ -48,6 +48,10 @@ _REVIEW_INBOX_SOURCE_PRESENCE_CACHE: dict[
     str,
     tuple[tuple[tuple[str, int], ...], dict[str, frozenset[str]]],
 ] = {}
+_REVIEW_DECISION_OVERLAY_CACHE: dict[
+    str,
+    tuple[tuple[tuple[str, int], ...], dict[tuple[str, str], dict[str, Any]]],
+] = {}
 
 GENERIC_SONG_TERMS = {
     "盆踊り",
@@ -1520,6 +1524,67 @@ def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[
     return current
 
 
+def current_decision_overlay_index(root: Path = ROOT) -> dict[tuple[str, str], dict[str, Any]]:
+    """Load validated frozen decisions without treating source absence as proof."""
+    from review_inbox_adapters.backlog_decision_overlay import (
+        load_overlay,
+        validated_decision_index,
+    )
+
+    paths = (
+        root / "data/review_backlog_decision_overlay.json",
+        root / "data/review_backlog_youtube_decision_overlay.json",
+    )
+    stamp = tuple(
+        (str(path), path.stat().st_mtime_ns if path.exists() else -1)
+        for path in paths
+    )
+    cache_key = str(root.resolve())
+    cached = _REVIEW_DECISION_OVERLAY_CACHE.get(cache_key)
+    if cached and cached[0] == stamp:
+        return cached[1]
+
+    indexed: dict[tuple[str, str], dict[str, Any]] = {}
+    for path in paths:
+        overlay = load_overlay(path)
+        if overlay is None:
+            continue
+        for key, decision in validated_decision_index(overlay).items():
+            if key in indexed:
+                raise ValueError(f"duplicate frozen decision across overlays: {key!r}")
+            indexed[key] = decision
+    _REVIEW_DECISION_OVERLAY_CACHE[cache_key] = (stamp, indexed)
+    return indexed
+
+
+def decision_overlay_auto_resolution(
+    row: dict[str, Any],
+    root: Path = ROOT,
+) -> dict[str, str] | None:
+    """Close only the exact DB payload frozen by a human/agent decision."""
+    source_id = as_text(row.get("source_id"))
+    source_key = as_text(row.get("source_key"))
+    inbox_id = as_text(row.get("inbox_id"))
+    payload_hash = as_text(row.get("source_payload_hash"))
+    if not all((source_id, source_key, inbox_id, payload_hash)):
+        return None
+    decision = current_decision_overlay_index(root).get((source_id, source_key))
+    if not decision:
+        return None
+    if decision["inbox_id"] != inbox_id or decision["source_payload_hash"] != payload_hash:
+        return None
+    is_agent = decision["actor_type"] == "agent"
+    return {
+        "decision": "auto_frozen_review_decision",
+        "label": "LLM判断済み" if is_agent else "既存判断済み",
+        "reason": as_text(decision["reason_detail"]),
+        "recorded_decision": as_text(decision["decision"]),
+        "actor_type": as_text(decision["actor_type"]),
+        "actor_id": as_text(decision["actor_id"]),
+        "decided_at": as_text(decision["decided_at"]),
+    }
+
+
 def source_snapshot_auto_resolution(
     row: dict[str, Any],
     root: Path = ROOT,
@@ -1628,7 +1693,11 @@ def auto_source_resolution(
     if source.id == "registered_event_investigation":
         return registered_auto_resolution(row, historical_refs)
     if source.id == "review_inbox":
-        return source_snapshot_auto_resolution(row, root) or x_gap_public_auto_resolution(row, root)
+        return (
+            decision_overlay_auto_resolution(row, root)
+            or source_snapshot_auto_resolution(row, root)
+            or x_gap_public_auto_resolution(row, root)
+        )
     return None
 
 
