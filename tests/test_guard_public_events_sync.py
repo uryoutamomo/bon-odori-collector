@@ -450,6 +450,40 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(decision["status"], "block")
         self.assertIn("reviewed_exact_approval_mismatch", decision["failures"])
 
+    def test_stale_approval_hash_does_not_block_proven_low_risk_only_diff(self):
+        raw = {
+            "summary": {
+                "collector_event_count": 1,
+                "site_event_count": 1,
+                "collector_only_count": 0,
+                "site_only_count": 0,
+                "high_risk_diff_record_count": 0,
+                "events_by_action": {},
+            }
+        }
+        approved = {
+            "summary": {
+                "collector_event_count": 1,
+                "site_event_count": 1,
+                "collector_only_count": 0,
+                "site_only_count": 0,
+                "events_by_action": {},
+            }
+        }
+
+        decision = guard_decision(
+            raw,
+            approved,
+            allow_individual_review=False,
+            approval_summary={"failure_count": 1},
+        )
+
+        self.assertEqual(decision["status"], "pass")
+        self.assertEqual(decision["failures"], [])
+        self.assertIn(
+            "stale_reviewed_approval_hashes_low_risk_only", decision["warnings"]
+        )
+
     def test_pass_still_requires_separate_public_deploy_approval(self):
         raw = {"summary": {"events_by_action": {}}}
         postprocessed = {
@@ -819,6 +853,34 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(
             result["reviewed_exact_approvals"]["status_counts"],
             {"hash_mismatch": 1},
+        )
+
+    def test_build_allows_song_only_update_when_old_exact_approval_hash_is_stale(self):
+        published = self.published_event()
+        site = {
+            **published,
+            "songs": [{"name": "東京音頭", "probability": 95}],
+        }
+        collector = {
+            **published,
+            "songs": [{"name": "東京音頭", "probability": 71}],
+        }
+        stale_approval = self.same_key_approval(
+            {**published, "detail": "承認前の値"},
+            {**published, "detail": "以前承認した値"},
+        )
+
+        result = self.run_build([collector], [site], [stale_approval])
+
+        self.assertEqual(result["raw_classification"]["high_risk_diff_record_count"], 0)
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"hash_mismatch": 1},
+        )
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertIn(
+            "stale_reviewed_approval_hashes_low_risk_only",
+            result["decision"]["warnings"],
         )
 
     def test_ended_transition_on_today_still_requires_review(self):

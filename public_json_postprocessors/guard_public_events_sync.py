@@ -408,6 +408,7 @@ def apply_required_postprocessors(events, target_year, today, fixed_date_rules_p
 def guard_decision(raw, postprocessed, allow_individual_review, approval_summary=None):
     failures = []
     warnings = []
+    raw_summary = raw.get("summary") or {}
     post_summary = postprocessed["summary"]
     if post_summary["collector_event_count"] != post_summary["site_event_count"]:
         failures.append("event_count_mismatch")
@@ -425,9 +426,35 @@ def guard_decision(raw, postprocessed, allow_individual_review, approval_summary
     if site_update_count and not allow_individual_review:
         failures.append("site_update_candidates_remain")
     if approval_summary and approval_summary.get("failure_count"):
-        failures.append("reviewed_exact_approval_mismatch")
+        # Exact approvals pin the complete event payload, while this guard's
+        # review boundary intentionally covers only event identity and
+        # HIGH_RISK_FIELDS.  A reviewed event's song list can therefore make
+        # an old full-payload hash stale even when the current collector/site
+        # diff contains no field that requires that approval.  Ignore only
+        # that explicitly proven low-risk case; missing summary keys remain
+        # fail-closed so callers cannot bypass the approval check accidentally.
+        raw_low_risk_only = (
+            all(
+                key in raw_summary
+                for key in (
+                    "collector_event_count",
+                    "site_event_count",
+                    "collector_only_count",
+                    "site_only_count",
+                    "high_risk_diff_record_count",
+                )
+            )
+            and raw_summary["collector_event_count"] == raw_summary["site_event_count"]
+            and raw_summary["collector_only_count"] == 0
+            and raw_summary["site_only_count"] == 0
+            and raw_summary["high_risk_diff_record_count"] == 0
+        )
+        if raw_low_risk_only:
+            warnings.append("stale_reviewed_approval_hashes_low_risk_only")
+        else:
+            failures.append("reviewed_exact_approval_mismatch")
 
-    raw_actions = raw["summary"].get("events_by_action") or {}
+    raw_actions = raw_summary.get("events_by_action") or {}
     if raw_actions.get("restore_collector_from_site_or_reenable_export_postprocess", 0) and not restore_count:
         warnings.append("raw_restore_candidates_resolved_by_required_postprocessors")
 

@@ -28,7 +28,7 @@ verified_by:
   - tests/test_e0b_bridge.py
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
-updated_for: a9432c4
+updated_for: 4830e93
 ---
 
 # 公開サブシステム
@@ -107,13 +107,18 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 
 - **内容**: `public_json_postprocessors/guard_public_events_sync.py` の `guard_decision()` は、
   collector 側と site 側でイベント件数が違えば `event_count_mismatch`、
-  片側にしか無いキーがあれば `event_key_mismatch` として `block` する。
+  片側にしか無いキーがあれば `event_key_mismatch` として `block` する。個別承認はイベント全体のhashを固定するため、
+  後から曲目のような低リスクfieldだけが変わっても古いhashは不一致になる。この場合は、**現在の**件数・キー集合が一致し、
+  `HIGH_RISK_FIELDS` の差分が0件だと機械確認できたときだけ警告へ下げる。高リスク差分が1件でもある場合、または
+  分類結果の必要fieldが欠ける場合は、従来どおり `reviewed_exact_approval_mismatch` で閉じる。
 - **なぜ**: 件数のズレは、後処理のどれかが動かなかったか、想定外の削除が起きたことの最も分かりやすい兆候だから。
   個々の差分を見る前に、まず総数で異常を捕まえる。
 - **破れたときの症状**: 公開件数が急に減る・増える。過去に、日次が止まったまま同期だけ進んで
   終了済み38件が「開催予定」のまま残り続けた事故がある。
 - **守っているコード**: `public_json_postprocessors/guard_public_events_sync.py` の `guard_decision()`
-- **守っているテスト**: `tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync`
+- **守っているテスト**: `tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_allows_song_only_update_when_old_exact_approval_hash_is_stale`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_rejects_drift_before_the_reviewed_value_was_published`
 
 ### INV-PUB-004 ガードが pass してもデプロイ承認にはならない
 
