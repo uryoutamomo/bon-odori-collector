@@ -670,6 +670,112 @@
     ]
   },
   {
+    "name": "中央区大江戸まつり盆おどり大会",
+    "venue": "浜町公園",
+    "area": "中央区",
+    "date": "2026-08-21",
+    "songs": [
+      {
+        "name": "2000年音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "きよしの数え唄",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "どだればち・サンバ",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "ダンシング・ヒーロー",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "令和音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "ベイサイド・ブギ",
+        "confidence": "hint",
+        "probability": 79,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      }
+    ]
+  },
+  {
     "name": "濱町音頭盆踊り大会",
     "venue": "浜町公園",
     "area": "中央区",
@@ -1265,13 +1371,6 @@
       },
       {
         "name": "遊行おどり",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "阿波踊り",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -2963,6 +3062,13 @@
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "終 ガット・トゥ・ビー・リアル",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "青い珊瑚礁",
         "confidence": "hint",
         "probability": 80,
@@ -3129,13 +3235,6 @@
         "probability": 57,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "終 ガット・トゥ・ビー・リアル",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
       }
     ]
   },
@@ -3569,20 +3668,6 @@
         "basis_label": "実測"
       },
       {
-        "name": "津軽甚句",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "牛深ハイヤ",
         "confidence": "confirmed",
         "probability": 95,
@@ -3612,13 +3697,6 @@
       },
       {
         "name": "紀州白浜音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 繁昌ぶし",
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
@@ -3779,6 +3857,13 @@
         "basis_label": "実測"
       },
       {
+        "name": "メガ盆",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "二十一世紀音頭",
         "confidence": "hint",
         "probability": 80,
@@ -3787,6 +3872,13 @@
       },
       {
         "name": "八木節",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夏祭り",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
@@ -3807,42 +3899,21 @@
         "basis_label": "実測"
       },
       {
+        "name": "津軽甚句",
+        "confidence": "confirmed",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "相馬盆唄",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 メガヒッツ盆踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 夏祭り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 池袋盆BAND",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 津軽甚句",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 炭坑節",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
@@ -3882,6 +3953,13 @@
     "area": "目黒区",
     "date": "2026-07-18",
     "songs": [
+      {
+        "name": "特設会場周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
       {
         "name": "RPG",
         "confidence": "hint",
@@ -3965,13 +4043,6 @@
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "特設会場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
       }
     ]
   },
@@ -4124,6 +4195,13 @@
     "date": "2026-09-26",
     "songs": [
       {
+        "name": "阿波踊り",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 48,
@@ -4132,13 +4210,6 @@
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "阿波踊り",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
