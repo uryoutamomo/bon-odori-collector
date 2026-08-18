@@ -328,6 +328,16 @@ class SyncEventDatePredictionsRdbTest(unittest.TestCase):
                 confirm="wrong",
             )
 
+    def test_prediction_with_less_than_two_historical_years_is_rejected(self):
+        self.add_series()
+        predictions = self.write_predictions()
+        payload = json.loads(predictions.read_text(encoding="utf-8"))
+        payload["predictions"][0]["prediction"]["evidence_years"] = [2025]
+        predictions.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+        with self.assertRaisesRegex(syncer.PredictionSyncError, "at least two"):
+            self.execute(predictions)
+
 
 if __name__ == "__main__":
     unittest.main()

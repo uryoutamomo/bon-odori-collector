@@ -98,6 +98,20 @@ def load_prediction_rows(path: Path, *, target_year: int) -> list[dict]:
         prediction = raw.get("prediction")
         if not isinstance(prediction, dict):
             raise PredictionSyncError(f"predictions[{index}].prediction must be an object")
+        evidence_years = prediction.get("evidence_years")
+        if not isinstance(evidence_years, list):
+            raise PredictionSyncError(
+                f"predictions[{index}].prediction.evidence_years must be a list"
+            )
+        historical_years = {
+            year
+            for year in evidence_years
+            if isinstance(year, int) and not isinstance(year, bool) and year < target_year
+        }
+        if len(historical_years) < 2 or len(historical_years) != len(evidence_years):
+            raise PredictionSyncError(
+                f"predictions[{index}] requires at least two unique historical evidence years"
+            )
         start = _parse_prediction_date(
             prediction.get("predicted_date_start"),
             f"predictions[{index}].prediction.predicted_date_start",
