@@ -682,6 +682,61 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(result["ended_transition_downgrades"][0]["ended_on"], "2026-07-29")
         self.assertEqual(result["blocking_examples"], [])
 
+    def test_build_allows_superseded_approval_chain_to_flow_into_ended_transition(self):
+        published = self.published_event()
+        original = {**published, "detail": "最初の公開値"}
+        intermediate = {**published, "detail": "次の承認値"}
+        collector = {
+            **published,
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+        first = self.same_key_approval(original, intermediate)
+        second = self.same_key_approval(intermediate, published)
+        second["id"] = "review-2"
+
+        result = self.run_build([collector], [published], [first, second])
+
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"superseded": 1, "consumed_at_site": 1},
+        )
+        approval_results = result["reviewed_exact_approvals"]["results"]
+        self.assertEqual(approval_results[0]["superseded_by"], "review-2")
+        self.assertEqual(
+            result["approved_classification"]["events_by_action"],
+            {"ended_transition_downgrade": 1},
+        )
+
+    def test_superseded_approval_chain_does_not_hide_current_detail_drift(self):
+        published = self.published_event()
+        original = {**published, "detail": "最初の公開値"}
+        intermediate = {**published, "detail": "次の承認値"}
+        collector = {
+            **published,
+            "detail": "未承認の変更",
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+        first = self.same_key_approval(original, intermediate)
+        second = self.same_key_approval(intermediate, published)
+        second["id"] = "review-2"
+
+        result = self.run_build([collector], [published], [first, second])
+
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertNotIn(
+            "reviewed_exact_approval_mismatch", result["decision"]["failures"]
+        )
+        self.assertIn("individual_review_diffs_remain", result["decision"]["failures"])
+        self.assertEqual(
+            result["approved_classification"]["events_by_action"],
+            {"individual_review": 1},
+        )
+
     def test_build_allows_same_recurrence_score_bucket_after_consumed_approval(self):
         published = {**self.published_event(), "recurrence_score": 0.76}
         collector = {**published, "recurrence_score": 0.78}

@@ -1,6 +1,6 @@
 {
   "generated_by": "おと（Codex）",
-  "generated_at": "2026-06-22",
+  "generated_at": "2026-08-19",
   "scope": "reviewed_public_only_overrides_until_notion_sync_catches_up",
   "overrides": [
     {
@@ -103,6 +103,17 @@
         "description": "京橋プラザ区民館・京橋公園周辺で行われる、銀座一丁目東町会・新富町会の納涼盆踊り大会。",
         "detail": "2026年日程は未確認。過去実績として、2025年は7月19日（土）、2023年は7月28日（金）開催を過去情報から確認。近年は7月後半の週末開催と見なし、2026年は7月18日（土）を予想候補として扱う。",
         "source_urls": []
+      }
+    },
+    {
+      "id": "oedo_matsuri_keep_reviewed_public_detail_20260819",
+      "reason": "おと（Codex）2026-08-19: PR #242 separated the approved 14-song historical setlist from this unreviewed detail addition. Keep the currently published detail stable when the Master RDB export regenerates, while retaining the reviewed songs and their probability/basis fields.",
+      "match": {
+        "name": "中央区大江戸まつり盆おどり大会",
+        "venue": "浜町公園"
+      },
+      "set": {
+        "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会"
       }
     },
     {
