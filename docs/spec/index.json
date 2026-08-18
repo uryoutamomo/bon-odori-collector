@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T10:57:38Z",
-  "generated_for_commit": "b0c38ab",
+  "generated_at": "2026-08-18T13:00:54Z",
+  "generated_for_commit": "02745d2",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -453,7 +453,10 @@
         "transition_ended_occurrences.py",
         "run_event_state_axes_migration.py",
         "run_post_batch_maintenance.py",
-        "run_x_song_identity_migration.py"
+        "run_x_song_identity_migration.py",
+        "promotion_candidates/build_historical_promotion_candidates.py",
+        "scripts/verify_review_backlog_application.py",
+        ".github/workflows/apply-reviewed-change-requests.yml"
       ],
       "depends_on": [
         "L1-platform"
@@ -469,7 +472,8 @@
         "INV-MST-008",
         "INV-MST-009",
         "INV-MST-010",
-        "INV-MST-011"
+        "INV-MST-011",
+        "INV-MST-012"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
@@ -479,11 +483,14 @@
         "tests/test_x_song_identity_migration.py",
         "tests/test_x_song_apply_safety.py",
         "tests/test_x_song_materialization_lifecycle.py",
-        "tests/test_event_date_prediction_judgment.py"
+        "tests/test_event_date_prediction_judgment.py",
+        "tests/test_build_historical_promotion_candidates.py",
+        "tests/test_reviewed_change_requests_workflow.py"
       ],
-      "updated_for": "fcb8277",
+      "updated_for": "665424d",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
+        ".github/workflows/apply-reviewed-change-requests.yml",
         "audit_master_rdb.py",
         "data/llm_event_date_prediction_judgments.json",
         "data/official_notice_reports/detail_cleanup_repair_20260816.json",
@@ -505,6 +512,7 @@
         "master_rdb/s3_artifact.py",
         "master_rdb/unified_model_audit.py",
         "master_rdb_freeze_policy.py",
+        "promotion_candidates/build_historical_promotion_candidates.py",
         "rdb_builders/__init__.py",
         "rdb_builders/build_bon_odori_rdb.py",
         "rdb_builders/build_evidence_rdb.py",
@@ -528,15 +536,21 @@
         "run_event_state_axes_migration.py",
         "run_post_batch_maintenance.py",
         "run_x_song_identity_migration.py",
+        "scripts/verify_review_backlog_application.py",
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 4,
-        "files_changed_since": 7
+        "commits_since": 1,
+        "files_changed_since": 5
       },
-      "version": "1.13",
-      "revision_count": 14,
+      "version": "1.14",
+      "revision_count": 15,
       "history": [
+        {
+          "commit": "ad611a0",
+          "date": "2026-08-18",
+          "subject": "Combine multi-year song evidence"
+        },
         {
           "commit": "0b70acc",
           "date": "2026-08-18",
@@ -591,11 +605,6 @@
           "commit": "958c6db",
           "date": "2026-08-14",
           "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
-        },
-        {
-          "commit": "ba928cd",
-          "date": "2026-08-13",
-          "subject": "Replace stale main tests with stable fixtures (#199)"
         }
       ]
     },
@@ -654,7 +663,7 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 3,
         "files_changed_since": 3
       },
       "version": "1.10",
@@ -860,19 +869,22 @@
         "INV-SNG-003",
         "INV-SNG-004",
         "INV-SNG-005",
-        "INV-SNG-006"
+        "INV-SNG-006",
+        "INV-SNG-007"
       ],
       "verified_by": [
         "tests/test_bon_odori_songs.py",
         "tests/test_song_catalog.py",
         "tests/test_weekly_song_triage.py",
         "tests/test_export_public_events.py",
+        "tests/test_calibrate_song_probabilities_rdb.py",
+        "tests/test_inherit_song_probabilities_x_safety.py",
         "tests/test_x_post_extraction_songs.py",
         "tests/test_x_song_resolution_contract.py",
         "tests/test_x_occurrence_resolution_contract.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "87489f5",
+      "updated_for": "665424d",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         "apply_song_candidate_finite_actions.py",
@@ -913,12 +925,17 @@
         "triage_weekly_song_candidates.py"
       ],
       "staleness": {
-        "commits_since": 3,
+        "commits_since": 1,
         "files_changed_since": 3
       },
-      "version": "1.7",
-      "revision_count": 8,
+      "version": "1.8",
+      "revision_count": 9,
       "history": [
+        {
+          "commit": "ad611a0",
+          "date": "2026-08-18",
+          "subject": "Combine multi-year song evidence"
+        },
         {
           "commit": "f50c4ce",
           "date": "2026-08-16",
@@ -1995,6 +2012,14 @@
       ],
       "has_test": true
     },
+    "INV-MST-012": {
+      "spec": "L1-master",
+      "title": "レビュー済み曲根拠は派生値まで確定してから正本DBを公開する",
+      "tests": [
+        "tests/test_reviewed_change_requests_workflow.py::test_workflow_dry_runs_before_apply_and_verifies_every_stage"
+      ],
+      "has_test": true
+    },
     "INV-PUB-001": {
       "spec": "L1-publication",
       "title": "公開イベントの同一性は「名前 + 会場」で決まる",
@@ -2153,6 +2178,14 @@
       "title": "未解決を時刻だけで繰り返さない",
       "tests": [
         "tests/test_x_song_resolution_contract.py::test_current_snapshot_decision_is_not_packetized_again"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-007": {
+      "spec": "L1-songs",
+      "title": "過去年の曲実績は年ごとに減衰させ、複数年ぶんを合算する",
+      "tests": [
+        "tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_two_consecutive_years_score_higher_than_latest_year_alone"
       ],
       "has_test": true
     },
@@ -2447,6 +2480,7 @@
     "search_rare_signal_backcheck_sources.py": "L1-review",
     "stage_rare_signal_backcheck_reviews.py": "L1-review",
     "x_candidate_backlog.py": "L1-review",
+    ".github/workflows/apply-reviewed-change-requests.yml": "L1-master",
     "audit_master_rdb.py": "L1-master",
     "data/llm_event_date_prediction_judgments.json": "L1-master",
     "data/official_notice_reports/detail_cleanup_repair_20260816.json": "L1-master",
@@ -2468,6 +2502,7 @@
     "master_rdb/s3_artifact.py": "L1-master",
     "master_rdb/unified_model_audit.py": "L1-master",
     "master_rdb_freeze_policy.py": "L1-master",
+    "promotion_candidates/build_historical_promotion_candidates.py": "L1-master",
     "rdb_builders/__init__.py": "L1-master",
     "rdb_builders/build_bon_odori_rdb.py": "L1-master",
     "rdb_builders/build_evidence_rdb.py": "L1-master",
@@ -2491,6 +2526,7 @@
     "run_event_state_axes_migration.py": "L1-master",
     "run_post_batch_maintenance.py": "L1-master",
     "run_x_song_identity_migration.py": "L1-master",
+    "scripts/verify_review_backlog_application.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
     "export_public_events.py": "L1-publication",
     "guard_site_public_event_additions.py": "L1-publication",
@@ -2646,8 +2682,8 @@
   },
   "coverage": {
     "tracked_source_files": 359,
-    "owned": 262,
-    "unowned": 97,
+    "owned": 264,
+    "unowned": 95,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
