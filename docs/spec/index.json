@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T14:32:54Z",
-  "generated_for_commit": "2531a84",
+  "generated_at": "2026-08-18T14:38:26Z",
+  "generated_for_commit": "590b43b",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -641,7 +641,7 @@
         "tests/test_x_song_materialization_lifecycle.py",
         "tests/test_apply_public_date_predictions.py"
       ],
-      "updated_for": "a9432c4",
+      "updated_for": "4830e93",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -666,9 +666,14 @@
         "commits_since": 1,
         "files_changed_since": 1
       },
-      "version": "1.11",
-      "revision_count": 12,
+      "version": "1.12",
+      "revision_count": 13,
       "history": [
+        {
+          "commit": "590b43b",
+          "date": "2026-08-18",
+          "subject": "Allow verified low-risk public data syncs (#246)"
+        },
         {
           "commit": "2915f6b",
           "date": "2026-08-18",
@@ -723,11 +728,6 @@
           "commit": "958c6db",
           "date": "2026-08-14",
           "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
-        },
-        {
-          "commit": "1d2d00d",
-          "date": "2026-08-13",
-          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
       ]
     },
