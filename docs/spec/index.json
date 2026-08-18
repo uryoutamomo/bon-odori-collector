@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T08:10:52Z",
-  "generated_for_commit": "5c9d608",
+  "generated_at": "2026-08-18T08:12:22Z",
+  "generated_for_commit": "be1d1f1",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -2590,9 +2590,9 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 351,
+    "tracked_source_files": 352,
     "owned": 259,
-    "unowned": 92,
+    "unowned": 93,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
