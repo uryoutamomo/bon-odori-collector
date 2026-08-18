@@ -29,6 +29,12 @@ prediction_probability(), past-evidence branch):
 decay_rate defaults to 0.75, matching DEFAULT_PREDICTION_PARAMS in
 song_processing/song_occurrences.py.
 
+Older imported rows that have a reviewed event-year probability but no
+accepted per-source link use that probability as the annual base fallback;
+they still receive the same speaker adjustment, year decay, and cross-year
+noisy-or. This lets repeated legacy years contribute without treating the
+old event-year probability as a current-year fact.
+
 Default mode writes only to a copied SQLite DB. Production writes require
 --apply and the confirmation phrase.
 """
@@ -112,9 +118,11 @@ def validate_apply_request(args):
 
 
 def find_inheritance_candidates(conn, target_year):
-    """For each curated series that has both a target_year occurrence and an
-    earlier occurrence, return songs present only on the most recent past
-    occurrence (not already covered by a direct-evidence row on the target)."""
+    """Return prior-year direct songs absent from a series' target occurrence.
+
+    Every available past event year is retained for cross-year combination;
+    a direct-evidence row on the target occurrence always excludes inheritance.
+    """
     series_occs = defaultdict(list)
     for row in rows(
         conn,
@@ -147,7 +155,8 @@ def find_inheritance_candidates(conn, target_year):
             source_songs = rows(
                 conn,
                 """
-                SELECT occurrence_song_id, song_id, song_title_raw, normalized_title, role
+                SELECT occurrence_song_id, song_id, song_title_raw, normalized_title,
+                       role, evidence_status, probability, source_count
                 FROM occurrence_songs
                 WHERE occurrence_id = ?
                   AND origin NOT IN ('observed_x_post', 'inherited_prediction')
@@ -174,6 +183,9 @@ def find_inheritance_candidates(conn, target_year):
                         "source_year": source_year,
                         "source_occurrence_song_id": song["occurrence_song_id"],
                         "source_role": song["role"],
+                        "source_evidence_status": song["evidence_status"],
+                        "source_probability": song["probability"],
+                        "source_count": song["source_count"],
                         "song_id": song["song_id"],
                         "song_title_raw": song["song_title_raw"],
                         "normalized_title": normalized_title,
@@ -186,6 +198,9 @@ def find_inheritance_candidates(conn, target_year):
                         "source_occurrence_song_id": song["occurrence_song_id"],
                         "source_year": source_year,
                         "source_role": song["role"],
+                        "source_evidence_status": song["evidence_status"],
+                        "source_probability": song["probability"],
+                        "source_count": song["source_count"],
                     }
                 )
         candidates.extend(
@@ -194,7 +209,13 @@ def find_inheritance_candidates(conn, target_year):
     return candidates
 
 
-def gather_evidence(conn, occurrence_song_id, source_year=None, include_evidence_id=False):
+def gather_evidence(
+    conn,
+    occurrence_song_id,
+    source_year=None,
+    include_evidence_id=False,
+    evidence_status=None,
+):
     evidence_rows = rows(
         conn,
         """
@@ -211,7 +232,7 @@ def gather_evidence(conn, occurrence_song_id, source_year=None, include_evidence
     result = []
     for row in evidence_rows:
         evidence = {
-            "kind": normalize_kind(row["evidence_type"]),
+            "kind": normalize_kind(row["evidence_type"], evidence_status),
             "reliability": row["reliability"],
             "speaker": row["account_key"] or row["source_key"],
         }
@@ -240,6 +261,7 @@ def inherit(conn, target_year, now):
                 source["source_occurrence_song_id"],
                 source_year=source["source_year"],
                 include_evidence_id=True,
+                evidence_status=source["source_evidence_status"],
             )
             for evidence in source_evidence:
                 # If one evidence item was accidentally linked to more than one
@@ -249,7 +271,29 @@ def inherit(conn, target_year, now):
             {key: value for key, value in evidence.items() if key != "evidence_id"}
             for evidence in evidence_by_id.values()
         ]
-        result = compute_inherited_probability(evidence_rows, target_year, candidate["source_year"])
+        years_with_evidence = {row["source_year"] for row in evidence_rows}
+        annual_fallbacks = []
+        for source in candidate["source_occurrence_songs"]:
+            if source["source_year"] in years_with_evidence or source["source_probability"] is None:
+                continue
+            source_kind = {
+                "announced": "announced",
+                "observed": "observed",
+            }.get(source["source_evidence_status"], "hint")
+            annual_fallbacks.append(
+                {
+                    "source_year": source["source_year"],
+                    "probability": source["source_probability"],
+                    "source_count": source["source_count"],
+                    "source_kind": source_kind,
+                }
+            )
+        result = compute_historical_probability(
+            evidence_rows,
+            target_year,
+            candidate["source_year"],
+            annual_fallbacks=annual_fallbacks,
+        )
         if result is None:
             skipped_no_evidence.append(candidate)
             continue
@@ -278,6 +322,7 @@ def inherit(conn, target_year, now):
                 "source_kind": result["source_kind"],
                 "historical_basis_label": result["basis_label"],
                 "annual_probabilities": result["annual_probabilities"],
+                "fallback_years": result["fallback_years"],
                 "speaker_count": result["speaker_count"],
                 "decay_rate": DECAY_RATE,
                 "year_combination": "independent_noisy_or",

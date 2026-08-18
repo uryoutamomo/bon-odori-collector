@@ -170,3 +170,42 @@ def test_inheritance_combines_direct_evidence_from_multiple_years(tmp_path):
     second = inherit(conn, 2026, NOW)
     assert second["created"] == []
     assert len(second["updated"]) == 1
+
+
+def test_inheritance_combines_legacy_probabilities_when_links_are_missing(tmp_path):
+    conn = init_db(tmp_path / "master.sqlite")
+    seed_occurrences(conn)
+    conn.execute(
+        "UPDATE occurrence_songs SET probability=95, source_count=1 "
+        "WHERE occurrence_song_id='osong_curated'"
+    )
+    conn.execute(
+        """
+        INSERT INTO event_occurrences (
+          occurrence_id, origin, series_id, event_year, display_name, created_at, updated_at
+        ) VALUES ('occ_2024', 'curated', 'series_1', 2024, 'テスト盆踊り 2024', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.execute(
+        """
+        INSERT INTO occurrence_songs (
+          occurrence_song_id, origin, occurrence_id, song_id, song_title_raw,
+          normalized_title, role, evidence_status, probability, source_count, created_at, updated_at
+        ) VALUES (
+          'osong_curated_2024', 'curated', 'occ_2024', 'song_curated',
+          '公式根拠の曲', '公式根拠の曲', 'result', 'observed', 95, 1, ?, ?
+        )
+        """,
+        (NOW, NOW),
+    )
+
+    result = inherit(conn, 2026, NOW)
+    inherited = conn.execute(
+        "SELECT probability, notes FROM occurrence_songs "
+        "WHERE occurrence_id='occ_2026' AND normalized_title='公式根拠の曲'"
+    ).fetchone()
+
+    assert result["created"][0]["probability"] == 75
+    assert result["created"][0]["basis_label"] == "2024・2025年実測"
+    assert json.loads(inherited[1])["fallback_years"] == [2024, 2025]

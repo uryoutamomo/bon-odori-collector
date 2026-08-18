@@ -8,14 +8,16 @@ speaker factor as inherit_song_probabilities_rdb.py. That separate script is
 still responsible for creating inherited rows between distinct annual
 occurrences; this script only fills NULL probabilities on rows that exist.
 
-Never touches a row whose probability is already non-NULL -- those are
-legacy JSON-computed values transcribed once by build_master_rdb.py's
-build_from_song_occurrences(); leaving them alone avoids silently changing
-already-published numbers in this pass.
+The safe default only fills rows whose probability is NULL. A guarded
+``--recalculate-existing`` mode is available for an explicitly selected year;
+it recomputes non-NULL rows only when accepted linked evidence supports the
+calculation. This repairs stale or previously unrecognized direct evidence
+without inventing probabilities for legacy rows that have no links.
 
 Evidence normalization, per linked evidence_items row:
   - kind: evidence_items.evidence_type, mapped through KIND_BY_EVIDENCE_TYPE
-    (unknown types fall back to "hint", the conservative legacy default).
+    (generic/unknown types use the reviewed occurrence_songs.evidence_status
+    when it is announced/observed, otherwise the conservative "hint").
   - reliability: occurrence_song_evidence_links.confidence. Every writer of
     this table (build_master_rdb.py's build_from_song_occurrences,
     apply_youtube_setlist_occurrences_rdb.py) already stores a 0-1
@@ -64,6 +66,9 @@ KIND_BY_EVIDENCE_TYPE = {
     "firsthand_attendance": "observed",
     "historical_occurrence_video": "observed",
     "historical_occurrence_report": "observed",
+    # Official/current-year setlist images are announcements, not generic
+    # hints. Missing this mapping left poster-backed rows uncalibrated.
+    "poster_post": "announced",
 }
 DECAY_RATE = 0.75
 
@@ -112,6 +117,8 @@ def backup_db(source, now):
 
 
 def validate_apply_request(args):
+    if args.recalculate_existing and not (args.target_year or args.occurrence_id):
+        raise ValueError("--recalculate-existing requires --target-year or --occurrence-id")
     if not args.apply:
         return
     if args.confirm != CONFIRM_PHRASE:
@@ -120,8 +127,12 @@ def validate_apply_request(args):
         raise ValueError("--out-db must not equal --master-db")
 
 
-def normalize_kind(evidence_type):
-    return KIND_BY_EVIDENCE_TYPE.get(evidence_type, "hint")
+def normalize_kind(evidence_type, evidence_status=None):
+    """Normalize source type, using the reviewed song-row status as fallback."""
+    kind = KIND_BY_EVIDENCE_TYPE.get(evidence_type, "hint")
+    if kind == "hint" and evidence_status in {"announced", "observed"}:
+        return evidence_status
+    return kind
 
 
 def evidence_role(observed_at, event_start, kind):
@@ -186,7 +197,13 @@ def _historical_kind_label(kind):
     return BASIS_LABEL.get("current_" + kind, "過去実績").removeprefix("今年")
 
 
-def compute_historical_probability(evidence_rows, target_year, source_year=None):
+def compute_historical_probability(
+    evidence_rows,
+    target_year,
+    source_year=None,
+    *,
+    annual_fallbacks=None,
+):
     """Combine historical evidence by event year, then across event years.
 
     Evidence from one year is first combined with the existing noisy-or and
@@ -199,7 +216,8 @@ def compute_historical_probability(evidence_rows, target_year, source_year=None)
     ``source_year`` remains as the fallback for legacy evidence rows that do
     not yet carry detected_event_date/source_year themselves.
     """
-    if not evidence_rows:
+    annual_fallbacks = annual_fallbacks or []
+    if not evidence_rows and not annual_fallbacks:
         return None
 
     by_year = {}
@@ -214,23 +232,53 @@ def compute_historical_probability(evidence_rows, target_year, source_year=None)
         if evidence_year >= target_year:
             continue
         by_year.setdefault(evidence_year, []).append(evidence)
-    if not by_year:
+    fallback_by_year = {}
+    for fallback in annual_fallbacks:
+        try:
+            fallback_year = int(fallback.get("source_year"))
+            fallback_probability = float(fallback.get("probability"))
+        except (TypeError, ValueError):
+            continue
+        if fallback_year >= target_year or fallback_probability <= 0:
+            continue
+        current = fallback_by_year.get(fallback_year)
+        if current is None or fallback_probability > float(current.get("probability") or 0):
+            fallback_by_year[fallback_year] = fallback
+
+    evidence_years = set(by_year)
+    fallback_years = set(fallback_by_year) - evidence_years
+    source_years_available = evidence_years | fallback_years
+    if not source_years_available:
         return None
 
     annual = []
-    for evidence_year in sorted(by_year):
-        annual_evidence = by_year[evidence_year]
-        base = noisy_or(ev["reliability"] for ev in annual_evidence)
-        annual_speakers = {speaker_key(ev["speaker"]) for ev in annual_evidence}
-        speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(annual_speakers)))
+    for evidence_year in sorted(source_years_available):
+        annual_evidence = by_year.get(evidence_year, [])
+        if annual_evidence:
+            base = noisy_or(ev["reliability"] for ev in annual_evidence)
+            annual_speakers = {speaker_key(ev["speaker"]) for ev in annual_evidence}
+            speaker_count = len(annual_speakers)
+            source_kind = _historical_kind(annual_evidence)
+            evidence_used = len(annual_evidence)
+        else:
+            # Older imported setlists can have a reviewed event-year
+            # probability but no per-source evidence link. Reuse that annual
+            # score only as a conservative fallback, then apply the same
+            # single/multi-source factor and year decay as native evidence.
+            fallback = fallback_by_year[evidence_year]
+            base = max(0.0, min(1.0, float(fallback["probability"]) / 100.0))
+            speaker_count = max(1, int(fallback.get("source_count") or 1))
+            source_kind = fallback.get("source_kind") or "hint"
+            evidence_used = 0
+        speaker_factor = min(1.0, 0.65 + 0.15 * max(1, speaker_count))
         contribution = base * (DECAY_RATE ** (target_year - evidence_year)) * speaker_factor
         annual.append(
             {
                 "source_year": evidence_year,
                 "probability": contribution,
-                "source_kind": _historical_kind(annual_evidence),
-                "speaker_count": len(annual_speakers),
-                "evidence_used": len(annual_evidence),
+                "source_kind": source_kind,
+                "speaker_count": speaker_count,
+                "evidence_used": evidence_used,
             }
         )
 
@@ -245,14 +293,18 @@ def compute_historical_probability(evidence_rows, target_year, source_year=None)
     year_label = "・".join(str(year) for year in source_years)
     used_evidence = [evidence for annual_rows in by_year.values() for evidence in annual_rows]
     speakers = {speaker_key(ev["speaker"]) for ev in used_evidence}
+    fallback_speaker_count = sum(
+        row["speaker_count"] for row in annual if row["source_year"] in fallback_years
+    )
     return {
         "probability": max(5, min(90, probability)),
         "basis": "past_evidence",
         "basis_label": f"{year_label}年{kind_label}",
-        "speaker_count": len(speakers),
+        "speaker_count": len(speakers) + fallback_speaker_count,
         "evidence_used": sum(row["evidence_used"] for row in annual),
         "source_years": source_years,
         "source_kind": source_kind,
+        "fallback_years": sorted(fallback_years),
         "annual_probabilities": [
             {
                 **row,
@@ -263,18 +315,30 @@ def compute_historical_probability(evidence_rows, target_year, source_year=None)
     }
 
 
-def calibrate(conn, now, occurrence_id=None):
+def calibrate(
+    conn,
+    now,
+    occurrence_id=None,
+    *,
+    target_year=None,
+    recalculate_existing=False,
+):
     query = (
         "SELECT os.occurrence_song_id, os.occurrence_id, os.normalized_title, os.origin, "
-        "os.inherited_from_year, os.notes, eo.event_year "
+        "os.inherited_from_year, os.notes, os.evidence_status, eo.event_year "
         "FROM occurrence_songs os JOIN event_occurrences eo ON eo.occurrence_id=os.occurrence_id "
-        "WHERE os.probability IS NULL"
+        "WHERE 1=1"
     )
-    params = ()
+    params = []
+    if not recalculate_existing:
+        query += " AND os.probability IS NULL"
     if occurrence_id:
         query += " AND os.occurrence_id = ?"
-        params = (occurrence_id,)
-    targets = rows(conn, query, params)
+        params.append(occurrence_id)
+    if target_year is not None:
+        query += " AND eo.event_year = ?"
+        params.append(int(target_year))
+    targets = rows(conn, query, tuple(params))
     updated = []
     skipped_no_current_evidence = []
     for target in targets:
@@ -293,12 +357,13 @@ def calibrate(conn, now, occurrence_id=None):
             FROM occurrence_song_evidence_links l
             JOIN evidence_items e ON e.evidence_id = l.evidence_id
             WHERE l.occurrence_song_id = ?
+              AND l.link_status = 'accepted'
             """,
             (target["occurrence_song_id"],),
         )
         normalized = []
         for ev in evidence_rows:
-            kind = normalize_kind(ev["evidence_type"])
+            kind = normalize_kind(ev["evidence_type"], target["evidence_status"])
             role = evidence_role(ev["observed_at"], event_start, kind)
             normalized.append(
                 {
@@ -457,10 +522,18 @@ def render_markdown(result):
             "",
             "## Scope",
             "",
-            "- Only fills occurrence_songs rows where probability IS NULL.",
+            (
+                "- Recalculates existing probabilities only where accepted linked evidence supports it."
+                if result["options"]["recalculate_existing"]
+                else "- Only fills occurrence_songs rows where probability IS NULL."
+            ),
             "- Direct evidence uses the current_predictions/current_observed branches.",
             "- Rows carrying inherited_from_year use past-evidence decay; this does not create new inherited rows.",
-            "- Existing non-NULL probability values (legacy JSON transcriptions) are left untouched.",
+            (
+                "- Legacy rows without accepted evidence links are skipped, never assigned an invented value."
+                if result["options"]["recalculate_existing"]
+                else "- Existing non-NULL probability values (legacy JSON transcriptions) are left untouched."
+            ),
             "",
         ]
     )
@@ -488,7 +561,13 @@ def run(args):
         copy_db(args.master_db, preflight_db)
         with connect_existing(preflight_db) as conn:
             conn.execute("PRAGMA foreign_keys = ON")
-            preflight_calibration = calibrate(conn, now, args.occurrence_id)
+            preflight_calibration = calibrate(
+                conn,
+                now,
+                args.occurrence_id,
+                target_year=args.target_year,
+                recalculate_existing=args.recalculate_existing,
+            )
             preflight_issues = consistency_checks(conn, preflight_calibration)
             conn.commit()
         preflight_audit = audit_db(preflight_db)
@@ -506,7 +585,13 @@ def run(args):
     rolled_back = False
     with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
-        calibration = calibrate(conn, now, args.occurrence_id)
+        calibration = calibrate(
+            conn,
+            now,
+            args.occurrence_id,
+            target_year=args.target_year,
+            recalculate_existing=args.recalculate_existing,
+        )
         issues = consistency_checks(conn, calibration)
         has_high_issue = any(row.get("severity") == "high" for row in issues)
         if has_high_issue:
@@ -539,7 +624,12 @@ def run(args):
             "json": str(args.out_json),
             "markdown": str(args.out_md),
         },
-        "options": {"apply": bool(args.apply), "occurrence_id": args.occurrence_id},
+        "options": {
+            "apply": bool(args.apply),
+            "occurrence_id": args.occurrence_id,
+            "target_year": args.target_year,
+            "recalculate_existing": bool(args.recalculate_existing),
+        },
         "write_guard": {
             "db_committed": committed,
             "rolled_back": rolled_back,
@@ -576,6 +666,8 @@ def main():
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
     parser.add_argument("--occurrence-id", default="")
+    parser.add_argument("--target-year", type=int)
+    parser.add_argument("--recalculate-existing", action="store_true")
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
     args = parser.parse_args()

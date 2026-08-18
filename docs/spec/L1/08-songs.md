@@ -46,6 +46,7 @@ invariants:
   - INV-SNG-005
   - INV-SNG-006
   - INV-SNG-007
+  - INV-SNG-008
 verified_by:
   - tests/test_bon_odori_songs.py
   - tests/test_song_catalog.py
@@ -57,7 +58,7 @@ verified_by:
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: 665424d
+updated_for: a9432c4
 ---
 
 # 曲目サブシステム
@@ -117,7 +118,9 @@ updated_for: 665424d
 ### INV-SNG-001 曲名でないと確認された文字列は公開曲目に出さない
 
 - **内容**: `song_processing/bon_odori_songs.py` の `SUPPRESSED_SONG_NAMES` に載った文字列は、
-  抽出側でも公開直前のマージでも落とす。判定は**完全一致のみ**で、このリストからパターンを推測してはいけない。
+  抽出側でも公開直前のマージでも落とす。通常の抑制は**完全一致のみ**で、このリストからパターンを推測してはいけない。
+  公開境界では、実データで構造が確定した進行記号 `終 ` を曲名から外し、
+  `周辺で開かれる街なかの踊り` で終わる文章断片だけを追加で落とす。曲名らしい語を一般化した正規表現は使わない。
 - **なぜ**: 抽出器はもともと「機械が粗く拾い、人が正式名へ書き直す」前提で作られている。
   その書き直しの工程（週次収穫レビュー）が2026-06-25以降動いていないため、粗いままの候補が公開面へ届く状態になった。
   実際に「大井町駅前中央通り周辺で開かれる街なかの踊り」のような文章がbonsuke.jpに曲名として並んだ。
@@ -126,8 +129,9 @@ updated_for: 665424d
   だからこのリストは「悪い例の集合」であって「悪いパターンの例示」ではない。
 - **破れたときの症状**: 公開サイトの曲目欄に、曲名でない説明文（「路上で行われる踊り」「大人の部」など）が並ぶ。
 - **守っているコード**: `song_processing/bon_odori_songs.py` の `is_suppressed_song()`、
-  `export_public_events.py` の `merge_song_occurrence_hints()`
-- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_suppressed_prose_never_reaches_public_songs`
+  `export_public_events.py` の `canonical_public_song_name()` / `_is_public_non_song_name()` / `merge_song_occurrence_hints()`
+- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_suppressed_prose_never_reaches_public_songs`、
+  `tests/test_export_public_events.py::ExportPublicEventsTest::test_public_song_cleanup_removes_chapter_markers_and_prose`
 
 ### INV-SNG-002 公開する曲には、その確からしさの出どころを必ず添える
 
@@ -206,6 +210,9 @@ updated_for: 665424d
   その年の寄与へ `0.75 ** (対象年 - 根拠年)` を掛け、異なる開催年の寄与をもう一度 noisy-or で合算する。
   したがって2023年・2024年の両方に同じ曲があれば2024年だけより高くなり、根拠表示も
   「2023・2024年実測」のように全採用年を残す。当年の直接根拠がある行は過去年継承より優先する。
+  過去の移行行にaccepted根拠リンクが無い場合は、その開催年ですでにレビュー済みの確率を年寄与の代替値として使い、
+  同じ話者係数・減衰・年どうしの合算を行う。前年カードを公開カードへ補完する最終フォールバックも、
+  生の80%/95%をコピーせず、同じ75%減衰を掛ける。
 - **なぜ**: 最新の過去年だけを見ると、毎年続いている曲と1回だけ出た曲が同じ確率になる。
   逆に根拠の本数を年を無視して足すと、同一年の転載や複数動画を連年実績のように数えてしまう。
   現在の75%は実測で確定した係数ではなく暫定の初期値であり、将来の較正とは分けて扱う。
@@ -214,7 +221,23 @@ updated_for: 665424d
 - **守っているコード**: `calibrate_song_probabilities_rdb.py` の `compute_historical_probability()`、
   `inherit_song_probabilities_rdb.py` の過去年継承、`song_processing/song_occurrences.py` の凍結旧経路
 - **守っているテスト**: `tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_two_consecutive_years_score_higher_than_latest_year_alone`、
-  `tests/test_inherit_song_probabilities_x_safety.py::test_inheritance_combines_direct_evidence_from_multiple_years`
+  `tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_legacy_annual_probabilities_also_accumulate_across_years`、
+  `tests/test_inherit_song_probabilities_x_safety.py::test_inheritance_combines_direct_evidence_from_multiple_years`、
+  `tests/test_inherit_song_probabilities_x_safety.py::test_inheritance_combines_legacy_probabilities_when_links_are_missing`、
+  `tests/test_export_public_events.py::ExportPublicEventsTest::test_previous_year_direct_result_is_decayed_and_keeps_result_label`
+
+### INV-SNG-008 「確実」相当は当年の直接根拠だけに限定する
+
+- **内容**: 公開JSONで `basis` が `past_evidence` / `current_hint` / 未設定の曲は、90%を超えてはならない。
+  `export_public_events.py` はこの状態を公開前監査で拒否する。サイトの「確実」は90%以上という数値だけでは決めず、
+  `current_announced` または `current_observed` の当年開催回に限る。過去実績・看板曲prior・過去年カードは
+  数値が90%以上でも「かなり有力」までとする。
+- **なぜ**: 前年のYouTube実測95%が減衰なしで今年へコピーされ、「2025年ヒント」なのに「確実」と表示された。
+  数値だけを見る表示では、推測と直接確認の違いを利用者が判別できない。
+- **破れたときの症状**: 去年しか踊られていない曲や会場の看板曲が「確実」になり、今年の公式曲目より上に並ぶ。
+- **守っているコード**: `export_public_events.py` の `audit_public_song_projection()`、
+  `bon-odori-site/app.js` の `songCertaintyLabel()`
+- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_public_song_audit_rejects_indirect_exact_scores`
 
 ## 主要な流れ
 
@@ -287,6 +310,9 @@ E0X-S v2由来の新経路は、通常の週次候補とは別に
 `occurrence_songs` に曲を積み、確率を計算するのが `calibrate_song_probabilities_rdb.py`（直接証拠の較正）と
 `inherit_song_probabilities_rdb.py`（複数の過去年からの継承）である。過去年は開催年ごとにまとめてから
 1年ごとに75%を残し、年どうしを合算する（INV-SNG-007）。
+直接根拠の型は `evidence_type` に加えてレビュー済みの `evidence_status` を保守的な補助に使い、
+公式曲目画像の `poster_post` は告知として扱う。通常はNULL行だけを埋めるが、既存値を直すときは
+`--recalculate-existing` と `--target-year`（または `--occurrence-id`）を同時指定し、acceptedリンクがある行だけを再計算する。
 この2本は日次workflowでは呼ばれないが、レビュー済み変更要求の `add_song_evidence` 適用時には
 `apply-reviewed-change-requests.yml` が対象開催回を較正する。したがって通常の公開曲確率は毎日は更新されず、
 レビュー反映時または人・AIが手動実行した時点の値である。
@@ -296,9 +322,10 @@ E0X-S v2由来の新経路は、通常の週次候補とは別に
 `export_public_events.py` が開催回ごとに `occurrence_songs` を読み、本文からの抽出結果とマージして公開形にする。
 **RDBに1行でも曲があれば、RDB側が正**として扱う。凍結された旧JSON（`data/song_occurrences.json`）は
 RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結されて古いままの確率がRDBの計算結果を毎日上書きしてしまう。
+公開直前には、同一曲の既知表記ゆれを束ね、文章・演目名を落とし、間接根拠が90%を超えていないかを監査する。
 
-`f517fa8` 時点の実データでは、公開379件のうち曲目が付いているのは55件、曲の延べ数は642件（異なり375曲）である。
-根拠の内訳は実測346・今年告知9・今年ヒント73・過去実績191、そして本文抽出だけで根拠ラベルの無いものが23件ある。
+2026-08-18の全件再計算dry-runでは、公開379件のうち曲目が付いているのは56件、曲の延べ数は637件である。
+前年根拠なのに90%を超える行は30件から0件になり、今年の公式ポスター4曲は未計算から95%へ較正された。
 
 ## 依存と影響
 
@@ -327,6 +354,7 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
 | 曲名でない文章が曲目に並んでいる | INV-SNG-001。抑制リストに無い新種の文章断片が抜けた |
 | 曲の根拠ラベルが実態とずれる（去年の曲が今年の告知に見える） | INV-SNG-002。`evidence_status` と `inherited_from_year` の解釈 |
 | 誰も確認していない曲名が確定曲として出る | INV-SNG-003。台帳の状態より形の判定が勝った |
+| 前年実績や看板曲が「確実」と表示される | INV-SNG-008。数値だけで確実判定していないか |
 | 曲名を直したのにサイトの表示が変わらない | `songs` を直して `occurrence_songs` を直していない |
 | 曲の確率が何日も同じ | 正常。確率計算は手動実行で、日次では動かない |
 | 曲目が付くイベントが増えない | 候補キューは溜まっているがレビューが進んでいない |

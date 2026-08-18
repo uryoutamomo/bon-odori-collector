@@ -28,7 +28,7 @@ verified_by:
   - tests/test_e0b_bridge.py
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
-updated_for: 1ca79f4
+updated_for: a9432c4
 ---
 
 # 公開サブシステム
@@ -55,7 +55,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 
 | 何を | どこから |
 |---|---|
-| イベント・会場・曲目の確定情報 | Master RDB（`data/bon_odori_master.sqlite`） |
+| イベント・会場・曲目の確定情報 | Master RDB（既定 `data/bon_odori_master.sqlite`、dry-runは `--master-db` でコピーを明示） |
 | 日付予測 | Master RDB の `predicted_occurrence_dates` |
 | 固定日ルール | `data/public_fixed_date_rules.json` |
 | 同期の個別承認台帳 | `data/public_sync_exact_approvals.json` |
@@ -198,6 +198,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 ## 主要な流れ
 
 1. **RDBから素の公開イベントを組み立てる** — `export_public_events.py`。`--target-year` と `--today` が必須。
+   dry-run連鎖では `--master-db` で較正・継承後のコピーを指定し、本番DBを差し替えずに公開結果まで検証する。
 2. **後処理を重ねる** — `public_json_postprocessors/` 配下。順序に意味がある。
    `apply_public_historical_references`（過去実績）→ `apply_public_display_tiers`（表示段）→
    `apply_public_season_hints`（季節ヒント）→ 再度 `apply_public_display_tiers`。
@@ -206,6 +207,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
    （過去実績・季節・日付予測・日程・詳細・出典・固定日ルール）に絞って見る。
 4. **2つのガードで止める** — 一括同期の可否は `guard_public_events_sync.py`、
    追加だけの差分かどうかは `guard_site_public_event_additions.py`。
+   曲目はこれらに加え `audit_public_song_projection()` で、重複・非曲名・範囲外確率・間接根拠の90%超を拒否する。
 5. **人が承認してデプロイ** — `bon-odori-site` 側へJSONを同期し、あちらの `Sync public data` workflow が公開する。
 
 ## 依存と影響
