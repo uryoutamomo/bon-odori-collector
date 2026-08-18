@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T14:17:28Z",
-  "generated_for_commit": "d76c1b9",
+  "generated_at": "2026-08-18T14:25:36Z",
+  "generated_for_commit": "916de7d",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -843,6 +843,7 @@
         "calibrate_song_predictions.py",
         "calibrate_song_probabilities_rdb.py",
         "inherit_song_probabilities_rdb.py",
+        ".github/workflows/recalculate-song-probabilities.yml",
         "export_master_rdb_song_occurrences.py",
         "triage_weekly_song_candidates.py",
         "register_song_master_initial.py",
@@ -885,14 +886,16 @@
         "tests/test_export_public_events.py",
         "tests/test_calibrate_song_probabilities_rdb.py",
         "tests/test_inherit_song_probabilities_x_safety.py",
+        "tests/test_recalculate_song_probabilities_workflow.py",
         "tests/test_x_post_extraction_songs.py",
         "tests/test_x_song_resolution_contract.py",
         "tests/test_x_occurrence_resolution_contract.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "a9432c4",
+      "updated_for": "9539d63",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
+        ".github/workflows/recalculate-song-probabilities.yml",
         "apply_song_candidate_finite_actions.py",
         "apply_song_content_research_batch.py",
         "apply_song_ocr_review.py",
@@ -932,11 +935,16 @@
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 2
+        "files_changed_since": 1
       },
-      "version": "1.9",
-      "revision_count": 10,
+      "version": "1.10",
+      "revision_count": 11,
       "history": [
+        {
+          "commit": "916de7d",
+          "date": "2026-08-18",
+          "subject": "Add guarded song probability recalculation workflow (#244)"
+        },
         {
           "commit": "2915f6b",
           "date": "2026-08-18",
@@ -2576,6 +2584,7 @@
     "operation_safety/__init__.py": "L1-platform",
     "operation_safety/manual_apply_guards.py": "L1-platform",
     "verify_aws_queues.py": "L1-platform",
+    ".github/workflows/recalculate-song-probabilities.yml": "L1-songs",
     "apply_song_candidate_finite_actions.py": "L1-songs",
     "apply_song_content_research_batch.py": "L1-songs",
     "apply_song_ocr_review.py": "L1-songs",
