@@ -21,6 +21,9 @@ owns:
   - run_event_state_axes_migration.py
   - run_post_batch_maintenance.py
   - run_x_song_identity_migration.py
+  - promotion_candidates/build_historical_promotion_candidates.py
+  - scripts/verify_review_backlog_application.py
+  - .github/workflows/apply-reviewed-change-requests.yml
 depends_on:
   - L1-platform
 invariants:
@@ -35,6 +38,7 @@ invariants:
   - INV-MST-009
   - INV-MST-010
   - INV-MST-011
+  - INV-MST-012
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -44,7 +48,9 @@ verified_by:
   - tests/test_x_song_apply_safety.py
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_event_date_prediction_judgment.py
-updated_for: fcb8277
+  - tests/test_build_historical_promotion_candidates.py
+  - tests/test_reviewed_change_requests_workflow.py
+updated_for: 665424d
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -214,6 +220,22 @@ updated_for: fcb8277
 - **守っているコード**: `event_model/event_date_prediction_judgment.py`
 - **守っているテスト**: `tests/test_event_date_prediction_judgment.py`
 
+### INV-MST-012 レビュー済み曲根拠は派生値まで確定してから正本DBを公開する
+
+- **内容**: `apply-reviewed-change-requests.yml` はレビュー済み変更要求をコピーDBへdry-runした後、
+  正本候補へ適用する。`add_song_evidence` が含まれる場合は対象開催回の曲確率を再計算し、
+  過去実績からの日付候補を再構築し、RDBだけを入力にした公開JSON出力と適用内容の検証を通す。
+  その同じSQLite成果物だけをCASでS3へpublishし、再取得後にも適用検証と公開JSON出力を繰り返す。
+- **なぜ**: 曲根拠だけを書いて確率を古いまま残す、または公開JSONの旧フォールバックだけで見た目を直すと、
+  次の正本同期で表示が戻る。日付候補の照合が短い正式名を取りこぼすと、RDBが正しくても公開出力が失敗する。
+- **破れたときの症状**: RDBには根拠があるのに曲の確率が空または更新前のままになる。
+  公開JSONの再生成で曲目が消える、あるいは無関係なJSONフォールバックなしでは書き出せない。
+- **守っているコード**: `.github/workflows/apply-reviewed-change-requests.yml`、
+  `promotion_candidates/build_historical_promotion_candidates.py`、
+  `scripts/verify_review_backlog_application.py`
+- **守っているテスト**: `tests/test_reviewed_change_requests_workflow.py::test_workflow_dry_runs_before_apply_and_verifies_every_stage`、
+  `tests/test_build_historical_promotion_candidates.py::BuildHistoricalPromotionCandidatesTest::test_exact_event_and_venue_match_short_canonical_name`
+
 ## 主要な流れ
 
 日次では、S3から取得 → 監査 → 各種同期 → 変更があれば publish、という順に進む。
@@ -228,6 +250,7 @@ updated_for: fcb8277
 4. **終了した開催回の遷移** — `transition_ended_occurrences.py`。過ぎた開催回を「終了」へ落とす。
    これが動かないと、終わった行事が公開面に「開催予定」として残る。
 5. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
+   曲根拠を足した場合は、確率較正 → 過去実績の日付候補再構築 → 公開JSON検証まで同じDBで終える（INV-MST-012）。
 6. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
 
 **通知レポートの再適用**では、`report_apply/apply_official_notice_report.py` が同じ通知の

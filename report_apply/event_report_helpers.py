@@ -557,10 +557,11 @@ def upsert_occurrence_song(
           song_id=excluded.song_id,
           song_title_raw=excluded.song_title_raw,
           evidence_status=excluded.evidence_status,
-          probability=CASE
-            WHEN occurrence_songs.inherited_from_year IS NOT excluded.inherited_from_year THEN NULL
-            ELSE occurrence_songs.probability
-          END,
+          -- Every accepted evidence upsert can change the noisy-or result,
+          -- including a second source from the same event year.  Force the
+          -- guarded calibration step to recompute instead of preserving a
+          -- stale probability merely because inherited_from_year is equal.
+          probability=NULL,
           confidence=excluded.confidence,
           inherited_from_year=excluded.inherited_from_year,
           last_observed_at=excluded.last_observed_at,
@@ -600,6 +601,24 @@ def upsert_occurrence_song(
           confidence=excluded.confidence
         """,
         (occurrence_song_id, evidence_id, link_confidence, evidence_note),
+    )
+    conn.execute(
+        """
+        UPDATE occurrence_songs
+        SET evidence_count = (
+              SELECT COUNT(*)
+              FROM occurrence_song_evidence_links l
+              WHERE l.occurrence_song_id = occurrence_songs.occurrence_song_id
+            ),
+            source_count = (
+              SELECT COUNT(DISTINCT COALESCE(NULLIF(e.account_key, ''), e.source_key))
+              FROM occurrence_song_evidence_links l
+              JOIN evidence_items e ON e.evidence_id = l.evidence_id
+              WHERE l.occurrence_song_id = occurrence_songs.occurrence_song_id
+            )
+        WHERE occurrence_song_id = ?
+        """,
+        (occurrence_song_id,),
     )
     return {"song_id": song_id, "occurrence_song_id": occurrence_song_id}
 

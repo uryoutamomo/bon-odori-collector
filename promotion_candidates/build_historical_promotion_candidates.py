@@ -23,6 +23,7 @@ from promotion_candidates.build_observed_promotion_candidates import (
     extract_event_name,
     load_curated_events,
     load_json,
+    normalize_text,
     occurrence_by_id,
     write_json,
 )
@@ -252,6 +253,35 @@ def prediction_rows(path):
     return data.get("predictions") or []
 
 
+def exact_event_venue_match(event_name, venue, curated_events, *, target_year):
+    """Resolve an exact event+venue pair without fuzzy-score penalties.
+
+    Short canonical names such as ``花園神社 盆踊り`` can lose all of their
+    token score when an already-complete curated row receives the normal
+    enrichment penalty.  Exact normalized event and venue equality is a
+    stronger identity signal than that heuristic.  Refuse the shortcut when
+    it points to more than one series, and prefer the target-year occurrence
+    within the one resolved series.
+    """
+    event_norm = normalize_text(event_name)
+    venue_norm = normalize_text(venue)
+    if not event_norm or not venue_norm:
+        return None
+    matches = [
+        row
+        for row in curated_events
+        if normalize_text(row.get("canonical_name")) == event_norm
+        and normalize_text(row.get("venue")) == venue_norm
+    ]
+    if not matches or len({row["series_id"] for row in matches}) != 1:
+        return None
+    selected = max(
+        matches,
+        key=lambda row: (row.get("event_year") == target_year, row.get("event_year") or 0),
+    )
+    return {**selected, "match_score": 6, "matched_tokens": ["exact_event_venue"]}
+
+
 def add_event_date_prediction_candidates(
     grouped, skipped, path, curated_events, *, target_year
 ):
@@ -267,7 +297,12 @@ def add_event_date_prediction_candidates(
             skipped["event_date_predictions_less_than_two_years"] += 1
             continue
         raw_text = " ".join([row.get("event_name") or "", row.get("venue") or ""])
-        match = best_curated_match(raw_text, row.get("event_name") or "", curated_events)
+        match = exact_event_venue_match(
+            row.get("event_name") or "",
+            row.get("venue") or "",
+            curated_events,
+            target_year=target_year,
+        ) or best_curated_match(raw_text, row.get("event_name") or "", curated_events)
         if not match:
             skipped["event_date_predictions_no_curated_match"] += 1
             continue

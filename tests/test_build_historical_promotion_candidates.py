@@ -6,6 +6,68 @@ from master_rdb.master_db import SCHEMA
 
 
 class BuildHistoricalPromotionCandidatesTest(unittest.TestCase):
+    def test_exact_event_and_venue_match_short_canonical_name(self):
+        curated = [
+            {
+                "occurrence_id": "occ_2025",
+                "series_id": "series_hanazono",
+                "canonical_name": "花園神社 盆踊り",
+                "event_year": 2025,
+                "venue": "花園神社",
+                "tokens": {"花園神社"},
+                "needs_enrichment": False,
+            },
+            {
+                "occurrence_id": "occ_2026",
+                "series_id": "series_hanazono",
+                "canonical_name": "花園神社 盆踊り",
+                "event_year": 2026,
+                "venue": "花園神社",
+                "tokens": {"花園神社"},
+                "needs_enrichment": False,
+            },
+            {
+                "occurrence_id": "occ_other",
+                "series_id": "series_other",
+                "canonical_name": "花園町会納涼踊り大会",
+                "event_year": 2026,
+                "venue": "花園小学校",
+                "tokens": {"花園町会納涼踊り大会"},
+                "needs_enrichment": False,
+            },
+        ]
+
+        match = builder.exact_event_venue_match(
+            "花園神社 盆踊り", "花園神社", curated, target_year=2026
+        )
+
+        self.assertEqual(match["occurrence_id"], "occ_2026")
+        self.assertEqual(match["series_id"], "series_hanazono")
+
+    def test_exact_event_and_venue_refuses_cross_series_ambiguity(self):
+        curated = [
+            {
+                "occurrence_id": "occ_a",
+                "series_id": "series_a",
+                "canonical_name": "同名盆踊り",
+                "event_year": 2026,
+                "venue": "同名公園",
+            },
+            {
+                "occurrence_id": "occ_b",
+                "series_id": "series_b",
+                "canonical_name": "同名盆踊り",
+                "event_year": 2026,
+                "venue": "同名公園",
+            },
+        ]
+
+        self.assertIsNone(
+            builder.exact_event_venue_match(
+                "同名盆踊り", "同名公園", curated, target_year=2026
+            )
+        )
+
     def test_low_score_prediction_is_kept_for_existing_current_occurrence(self):
         item = {
             "candidate_id": "candidate_1",

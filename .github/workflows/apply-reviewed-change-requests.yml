@@ -87,6 +87,42 @@ jobs:
             --out-db "$RUNNER_TEMP/reviewed-change-requests-dry-run.sqlite" \
             --out-json "$RUNNER_TEMP/reviewed-change-requests-dry-run.json" \
             --out-md "$RUNNER_TEMP/reviewed-change-requests-dry-run.md"
+
+      - name: Finalize and verify dry-run RDB
+        run: |
+          TARGET_YEAR="$(TZ=Asia/Tokyo date +%Y)"
+          python - "$REQUEST_FILE" > "$RUNNER_TEMP/song-occurrence-ids.txt" <<'PY'
+          import json
+          import sys
+          payload = json.load(open(sys.argv[1], encoding="utf-8"))
+          occurrence_ids = sorted({
+              request["occurrence_id"]
+              for request in payload.get("requests", [])
+              if request.get("change_type") == "add_song_evidence"
+              and request.get("occurrence_id")
+          })
+          print("\n".join(occurrence_ids))
+          PY
+          while IFS= read -r occurrence_id; do
+            [ -n "$occurrence_id" ] || continue
+            python calibrate_song_probabilities_rdb.py \
+              --master-db "$RUNNER_TEMP/reviewed-change-requests-dry-run.sqlite" \
+              --out-db "$RUNNER_TEMP/song-calibration-unused-${occurrence_id}.sqlite" \
+              --out-json "$RUNNER_TEMP/song-calibration-${occurrence_id}.json" \
+              --out-md "$RUNNER_TEMP/song-calibration-${occurrence_id}.md" \
+              --occurrence-id "$occurrence_id" \
+              --apply \
+              --confirm 'APPLY SONG PROBABILITY CALIBRATION RDB'
+          done < "$RUNNER_TEMP/song-occurrence-ids.txt"
+          python -m promotion_candidates.build_historical_promotion_candidates \
+            --db "$RUNNER_TEMP/reviewed-change-requests-dry-run.sqlite" \
+            --song-occurrences data/song_occurrences.json \
+            --event-date-predictions data/event_date_predictions.json \
+            --out-json "$RUNNER_TEMP/historical-promotion-dry-run.json" \
+            --out-md "$RUNNER_TEMP/historical-promotion-dry-run.md" \
+            --manifest "$RUNNER_TEMP/nonexistent-manifest.json" \
+            --target-year "$TARGET_YEAR" \
+            --confirm 'APPLY MASTER RDB ONE-OFF'
           python -m scripts.verify_review_backlog_application \
             --db "$RUNNER_TEMP/reviewed-change-requests-dry-run.sqlite" \
             --requests "$REQUEST_FILE" \
@@ -103,6 +139,33 @@ jobs:
             --out-md "$RUNNER_TEMP/reviewed-change-requests-apply.md" \
             --apply \
             --confirm 'APPLY CHANGE REQUESTS'
+
+      - name: Finalize and verify applied RDB
+        if: ${{ inputs.apply }}
+        run: |
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          TARGET_YEAR="${TODAY%%-*}"
+          while IFS= read -r occurrence_id; do
+            [ -n "$occurrence_id" ] || continue
+            python calibrate_song_probabilities_rdb.py \
+              --master-db data/bon_odori_master.sqlite \
+              --out-db "$RUNNER_TEMP/song-calibration-apply-unused-${occurrence_id}.sqlite" \
+              --out-json "$RUNNER_TEMP/song-calibration-apply-${occurrence_id}.json" \
+              --out-md "$RUNNER_TEMP/song-calibration-apply-${occurrence_id}.md" \
+              --occurrence-id "$occurrence_id" \
+              --apply \
+              --confirm 'APPLY SONG PROBABILITY CALIBRATION RDB'
+          done < "$RUNNER_TEMP/song-occurrence-ids.txt"
+          python -m promotion_candidates.build_historical_promotion_candidates \
+            --db data/bon_odori_master.sqlite \
+            --song-occurrences data/song_occurrences.json \
+            --event-date-predictions data/event_date_predictions.json \
+            --out-json "$RUNNER_TEMP/historical-promotion-apply.json" \
+            --out-md "$RUNNER_TEMP/historical-promotion-apply.md" \
+            --manifest "$RUNNER_TEMP/nonexistent-manifest.json" \
+            --target-year "$TARGET_YEAR" \
+            --confirm 'APPLY MASTER RDB ONE-OFF'
+          python export_public_events.py --target-year "$TARGET_YEAR" --today "$TODAY"
           python -m scripts.verify_review_backlog_application \
             --db data/bon_odori_master.sqlite \
             --requests "$REQUEST_FILE" \
@@ -119,6 +182,9 @@ jobs:
         if: ${{ inputs.apply }}
         run: |
           python master_db_s3_artifact.py fetch --overwrite
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          TARGET_YEAR="${TODAY%%-*}"
+          python export_public_events.py --target-year "$TARGET_YEAR" --today "$TODAY"
           python -m scripts.verify_review_backlog_application \
             --db data/bon_odori_master.sqlite \
             --requests "$REQUEST_FILE" \
@@ -133,5 +199,9 @@ jobs:
             ${{ runner.temp }}/reviewed-change-requests-*.json
             ${{ runner.temp }}/reviewed-change-requests-*.md
             ${{ runner.temp }}/review-backlog-verification-*.json
+            ${{ runner.temp }}/song-calibration-*.json
+            ${{ runner.temp }}/song-calibration-*.md
+            ${{ runner.temp }}/historical-promotion-*.json
+            ${{ runner.temp }}/historical-promotion-*.md
           if-no-files-found: warn
           retention-days: 30

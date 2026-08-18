@@ -9,6 +9,11 @@ import sqlite3
 from pathlib import Path
 
 from master_rdb.master_db import normalize_text, stable_id
+from report_apply.apply_change_requests import (
+    HISTORICAL_SONG_EVIDENCE_MODES,
+    SONG_EVIDENCE_MODES,
+    _source_evidence_id,
+)
 
 
 def load(path: Path) -> dict:
@@ -120,6 +125,90 @@ def verify(db: Path, payload: dict) -> dict:
                             "actual": row[0] if row else None,
                         }
                     )
+            elif change_type == "add_song_evidence":
+                mode = SONG_EVIDENCE_MODES[request["evidence_mode"]]
+                evidence_id = _source_evidence_id(request)
+                evidence = connection.execute(
+                    "SELECT detected_event_date FROM evidence_items WHERE evidence_id = ?",
+                    (evidence_id,),
+                ).fetchone()
+                if not evidence:
+                    errors.append({"request_id": request_id, "error": "song_evidence_missing"})
+                    continue
+                if (
+                    request["evidence_mode"] in HISTORICAL_SONG_EVIDENCE_MODES
+                    and evidence[0] != request.get("event_date")
+                ):
+                    errors.append(
+                        {
+                            "request_id": request_id,
+                            "error": "historical_song_evidence_date_mismatch",
+                            "expected": request.get("event_date"),
+                            "actual": evidence[0],
+                        }
+                    )
+                for song in request["songs"]:
+                    normalized_title = normalize_text(song["title"])
+                    linked = connection.execute(
+                        """
+                        SELECT os.inherited_from_year, l.link_status, os.probability
+                        FROM occurrence_songs os
+                        JOIN occurrence_song_evidence_links l
+                          ON l.occurrence_song_id = os.occurrence_song_id
+                        WHERE os.occurrence_id = ?
+                          AND os.normalized_title = ?
+                          AND os.role = ?
+                          AND l.evidence_id = ?
+                        """,
+                        (
+                            request["occurrence_id"],
+                            normalized_title,
+                            mode["role"],
+                            evidence_id,
+                        ),
+                    ).fetchone()
+                    if not linked or linked[1] != "accepted":
+                        errors.append(
+                            {
+                                "request_id": request_id,
+                                "error": "occurrence_song_evidence_link_missing",
+                                "song": song["title"],
+                            }
+                        )
+                    elif request["evidence_mode"] in HISTORICAL_SONG_EVIDENCE_MODES and linked[2] is None:
+                        errors.append(
+                            {
+                                "request_id": request_id,
+                                "error": "historical_song_probability_not_calibrated",
+                                "song": song["title"],
+                            }
+                        )
+                    elif request["evidence_mode"] in HISTORICAL_SONG_EVIDENCE_MODES:
+                        latest_linked_year = connection.execute(
+                            """
+                            SELECT MAX(CAST(SUBSTR(e.detected_event_date, 1, 4) AS INTEGER))
+                            FROM occurrence_songs os
+                            JOIN occurrence_song_evidence_links l
+                              ON l.occurrence_song_id = os.occurrence_song_id
+                            JOIN evidence_items e ON e.evidence_id = l.evidence_id
+                            WHERE os.occurrence_id = ?
+                              AND os.normalized_title = ?
+                              AND os.role = ?
+                              AND l.link_status = 'accepted'
+                              AND e.detected_event_date IS NOT NULL
+                            """,
+                            (request["occurrence_id"], normalized_title, mode["role"]),
+                        ).fetchone()[0]
+                        if linked[0] != latest_linked_year:
+                            errors.append(
+                                {
+                                    "request_id": request_id,
+                                    "error": "historical_song_latest_year_mismatch",
+                                    "song": song["title"],
+                                    "expected": latest_linked_year,
+                                    "actual": linked[0],
+                                }
+                            )
             else:
                 errors.append({"request_id": request_id, "error": "unsupported_type"})
 

@@ -59,6 +59,40 @@ class SongOccurrencesTest(unittest.TestCase):
         self.assertEqual(result["basis"], "past_evidence")
         self.assertLess(result["probability"], 95)
 
+    def test_past_evidence_from_multiple_years_is_combined(self):
+        latest_only = prediction_probability(
+            [
+                {
+                    "year": 2024,
+                    "kind": "observed",
+                    "speaker": "same-channel",
+                    "reliability": 0.85,
+                }
+            ],
+            2026,
+        )
+        consecutive = prediction_probability(
+            [
+                {
+                    "year": 2023,
+                    "kind": "observed",
+                    "speaker": "same-channel",
+                    "reliability": 0.85,
+                },
+                {
+                    "year": 2024,
+                    "kind": "observed",
+                    "speaker": "same-channel",
+                    "reliability": 0.85,
+                },
+            ],
+            2026,
+        )
+
+        self.assertEqual(latest_only["probability"], 38)
+        self.assertEqual(consecutive["probability"], 56)
+        self.assertEqual(consecutive["basis_label"], "2023・2024年実測")
+
     def test_builds_occurrences_from_review_and_public_events(self):
         data = build_occurrences(target_year=2026, generated_at="2026-06-13T00:00:00+00:00")
         self.assertGreaterEqual(data["occurrence_count"], 1)

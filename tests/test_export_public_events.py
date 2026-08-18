@@ -611,6 +611,23 @@ class ExportPublicEventsTest(unittest.TestCase):
         )
         self.assertEqual((inherited["basis"], inherited["basis_label"]), ("past_evidence", "2025年実測"))
 
+        multiyear = _song_from_rdb(
+            row(
+                inherited_from_year=2025,
+                notes=json.dumps(
+                    {
+                        "source_kind": "observed",
+                        "source_years": [2024, 2025],
+                        "historical_basis_label": "2024・2025年実測",
+                    }
+                ),
+            )
+        )
+        self.assertEqual(
+            (multiyear["basis"], multiyear["basis_label"]),
+            ("past_evidence", "2024・2025年実測"),
+        )
+
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
         detail = "\n".join([
             "2026発表 https://t.co/abc",

@@ -74,6 +74,30 @@ SONG_EVIDENCE_MODES = {
         "target": "historical_program",
         "confidence": 0.85,
     },
+    "historical_curated_report": {
+        "role": "result",
+        "evidence_status": "observed",
+        "basis": "historical_curated_report",
+        "note": "観光協会などの編集・確認された過去開催レポートで確認した曲目。",
+        "target": "historical_program",
+        "confidence": 0.80,
+    },
+    "historical_firsthand_report": {
+        "role": "result",
+        "evidence_status": "observed",
+        "basis": "historical_firsthand_report",
+        "note": "個人の現地参加レポートで確認した過去曲目。",
+        "target": "historical_program",
+        "confidence": 0.70,
+    },
+    "historical_partial_youtube": {
+        "role": "result",
+        "evidence_status": "observed",
+        "basis": "historical_partial_youtube",
+        "note": "YouTubeの部分動画で確認した過去曲目。",
+        "target": "historical_program",
+        "confidence": 0.70,
+    },
     "firsthand_observed": {
         "role": "result",
         "evidence_status": "observed",
@@ -82,6 +106,12 @@ SONG_EVIDENCE_MODES = {
         "target": "program",
         "confidence": 0.95,
     },
+}
+HISTORICAL_SONG_EVIDENCE_MODES = {
+    "historical_youtube",
+    "historical_curated_report",
+    "historical_firsthand_report",
+    "historical_partial_youtube",
 }
 
 
@@ -195,16 +225,21 @@ def validate_payload(payload):
                 _required(source, "source_key", errors, f"{prefix}.source")
             else:
                 _required(source, "url", errors, f"{prefix}.source")
-            if mode == "historical_youtube":
+            if mode in HISTORICAL_SONG_EVIDENCE_MODES:
                 _required(request, "event_date", errors, prefix)
                 if request.get("event_date"):
                     try:
                         date.fromisoformat(str(request["event_date"]))
                     except ValueError:
                         errors.append(f"{prefix}: event_date must be an ISO date (YYYY-MM-DD)")
-                if source.get("kind") != "historical_occurrence_video":
+                expected_kind = (
+                    "historical_occurrence_report"
+                    if mode in {"historical_curated_report", "historical_firsthand_report"}
+                    else "historical_occurrence_video"
+                )
+                if source.get("kind") != expected_kind:
                     errors.append(
-                        f"{prefix}.source: historical_youtube requires kind='historical_occurrence_video'"
+                        f"{prefix}.source: {mode} requires kind={expected_kind!r}"
                     )
     if errors:
         raise ValueError("invalid change request payload: " + "; ".join(errors))
@@ -644,7 +679,7 @@ def apply_update_venue(conn, request, occurrence_id, now):
 def apply_add_song_evidence(conn, request, occurrence_id, now):
     mode = SONG_EVIDENCE_MODES[request["evidence_mode"]]
     inherited_from_year = None
-    if request["evidence_mode"] == "historical_youtube":
+    if request["evidence_mode"] in HISTORICAL_SONG_EVIDENCE_MODES:
         event_date = str(request.get("event_date") or "")
         try:
             inherited_from_year = date.fromisoformat(event_date).year

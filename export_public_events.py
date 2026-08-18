@@ -568,12 +568,13 @@ def _song_from_rdb(row):
             notes = json.loads(row["notes"] or "{}")
         except (TypeError, ValueError):
             notes = {}
+        historical_basis_label = notes.get("historical_basis_label")
         source_kind = notes.get("source_kind")
         if source_kind == "announced":
             source_kind_label = "告知"
         elif source_kind == "observed":
             source_kind_label = "実測"
-        basis_label = f"{row['inherited_from_year']}年{source_kind_label}"
+        basis_label = historical_basis_label or f"{row['inherited_from_year']}年{source_kind_label}"
     elif row["evidence_status"] == "announced":
         basis = "current_announced"
         basis_label = "今年告知"

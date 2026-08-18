@@ -45,16 +45,19 @@ invariants:
   - INV-SNG-004
   - INV-SNG-005
   - INV-SNG-006
+  - INV-SNG-007
 verified_by:
   - tests/test_bon_odori_songs.py
   - tests/test_song_catalog.py
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
+  - tests/test_calibrate_song_probabilities_rdb.py
+  - tests/test_inherit_song_probabilities_x_safety.py
   - tests/test_x_post_extraction_songs.py
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: 87489f5
+updated_for: 665424d
 ---
 
 # 曲目サブシステム
@@ -197,6 +200,22 @@ updated_for: 87489f5
   `tests/test_x_occurrence_resolution_contract.py::test_unresolved_occurrence_waits_for_snapshot_change`、
   `tests/test_x_occurrence_resolution_contract.py::test_event_dependency_is_mechanical_and_pending_until_event_decision`
 
+### INV-SNG-007 過去年の曲実績は年ごとに減衰させ、複数年ぶんを合算する
+
+- **内容**: 対象年より前の曲根拠は、まず同じ開催年の複数ソースを noisy-or でまとめ、話者数の係数を掛ける。
+  その年の寄与へ `0.75 ** (対象年 - 根拠年)` を掛け、異なる開催年の寄与をもう一度 noisy-or で合算する。
+  したがって2023年・2024年の両方に同じ曲があれば2024年だけより高くなり、根拠表示も
+  「2023・2024年実測」のように全採用年を残す。当年の直接根拠がある行は過去年継承より優先する。
+- **なぜ**: 最新の過去年だけを見ると、毎年続いている曲と1回だけ出た曲が同じ確率になる。
+  逆に根拠の本数を年を無視して足すと、同一年の転載や複数動画を連年実績のように数えてしまう。
+  現在の75%は実測で確定した係数ではなく暫定の初期値であり、将来の較正とは分けて扱う。
+- **破れたときの症状**: 2年以上連続して踊られた曲の確率が前年だけの曲と同じになる、または
+  同じ年の動画が増えただけで連年実績より高くなる。公開根拠ラベルから古い採用年が消える。
+- **守っているコード**: `calibrate_song_probabilities_rdb.py` の `compute_historical_probability()`、
+  `inherit_song_probabilities_rdb.py` の過去年継承、`song_processing/song_occurrences.py` の凍結旧経路
+- **守っているテスト**: `tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_two_consecutive_years_score_higher_than_latest_year_alone`、
+  `tests/test_inherit_song_probabilities_x_safety.py::test_inheritance_combines_direct_evidence_from_multiple_years`
+
 ## 主要な流れ
 
 最初に、なぜこれだけドメインで切ってあるかを書いておく。曲目は収集から公開までの全工程を縦に貫いており、
@@ -265,10 +284,12 @@ E0X-S v2由来の新経路は、通常の週次候補とは別に
 
 ### 4. 開催回へ結びつけ、確からしさを計算する（手動）
 
-`occurrence_songs` に曲を積み、確率を計算するのが `calibrate_song_probabilities_rdb.py`（今年の直接証拠）と
-`inherit_song_probabilities_rdb.py`（前年からの継承）である。
-**この2本はどのworkflowからも呼ばれていない。** 内田さんかAIが必要なときに手で回す。
-つまり公開されている曲の確率は、最後に誰かがこれを実行した時点のもので、毎日は更新されない。
+`occurrence_songs` に曲を積み、確率を計算するのが `calibrate_song_probabilities_rdb.py`（直接証拠の較正）と
+`inherit_song_probabilities_rdb.py`（複数の過去年からの継承）である。過去年は開催年ごとにまとめてから
+1年ごとに75%を残し、年どうしを合算する（INV-SNG-007）。
+この2本は日次workflowでは呼ばれないが、レビュー済み変更要求の `add_song_evidence` 適用時には
+`apply-reviewed-change-requests.yml` が対象開催回を較正する。したがって通常の公開曲確率は毎日は更新されず、
+レビュー反映時または人・AIが手動実行した時点の値である。
 
 ### 5. 公開へ渡す（毎日）
 
@@ -321,8 +342,9 @@ RDBに曲が無い開催回のときだけ使う。順序が逆だと、凍結�
 - **日次の仕分けは `--dry-run` で動いている。** 「直接採用」と判定された134件も、
   実際には曲マスタへ書かれていない（結果JSONに「作るとしたらこうなる」と記録されるだけ）。
   日次で実際に前へ進むのは要レビュー行の書き出しだけである。
-- **確率の計算（`calibrate_song_probabilities_rdb.py` / `inherit_song_probabilities_rdb.py`）は
-  どのworkflowにも入っていない。** 自動化するかどうかは決まっていない。
+- **確率の全件再計算（`calibrate_song_probabilities_rdb.py` / `inherit_song_probabilities_rdb.py`）は
+  日次workflowに入っていない。** レビュー済みの `add_song_evidence` だけは適用workflowが対象開催回を再計算する。
+  75%の年次残存率は暫定値で、十分な年次実績が蓄積した後に再較正する。
 - **旧JSON経路は凍結中。** `build_song_occurrences.py` と `calibrate_song_predictions.py` は
   `master_rdb_freeze_policy.py` の `legacy_song_occurrence_generation` が active なので日次では飛ばされる。
   凍結の判断は2026-06-20のRDB移行時のもので、解除条件は `data/master_rdb_migration_freeze.json` にある。

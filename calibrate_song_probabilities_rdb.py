@@ -63,6 +63,7 @@ KIND_BY_EVIDENCE_TYPE = {
     "announced": "announced",
     "firsthand_attendance": "observed",
     "historical_occurrence_video": "observed",
+    "historical_occurrence_report": "observed",
 }
 DECAY_RATE = 0.75
 
@@ -176,28 +177,96 @@ def compute_probability(evidence_rows):
     return None
 
 
-def compute_historical_probability(evidence_rows, target_year, source_year):
-    if not evidence_rows or not source_year or source_year >= target_year:
-        return None
-    base = noisy_or(ev["reliability"] for ev in evidence_rows) * 100
-    speakers = {speaker_key(ev["speaker"]) for ev in evidence_rows}
-    speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(speakers)))
-    probability = round(base * (DECAY_RATE ** (target_year - source_year)) * speaker_factor)
+def _historical_kind(evidence_rows):
     kinds = {ev["kind"] for ev in evidence_rows}
-    source_kind = "announced" if "announced" in kinds else "observed" if "observed" in kinds else "hint"
+    return "announced" if "announced" in kinds else "observed" if "observed" in kinds else "hint"
+
+
+def _historical_kind_label(kind):
+    return BASIS_LABEL.get("current_" + kind, "過去実績").removeprefix("今年")
+
+
+def compute_historical_probability(evidence_rows, target_year, source_year=None):
+    """Combine historical evidence by event year, then across event years.
+
+    Evidence from one year is first combined with the existing noisy-or and
+    distinct-speaker adjustment.  Each annual contribution then decays by
+    0.75 per elapsed year.  Contributions from different event years are
+    combined with noisy-or, so consecutive annual appearances raise the
+    prediction without counting duplicate sources inside one year twice as
+    separate recurrence evidence.
+
+    ``source_year`` remains as the fallback for legacy evidence rows that do
+    not yet carry detected_event_date/source_year themselves.
+    """
+    if not evidence_rows:
+        return None
+
+    by_year = {}
+    for evidence in evidence_rows:
+        evidence_year = evidence.get("source_year")
+        if evidence_year is None:
+            evidence_year = source_year
+        try:
+            evidence_year = int(evidence_year)
+        except (TypeError, ValueError):
+            continue
+        if evidence_year >= target_year:
+            continue
+        by_year.setdefault(evidence_year, []).append(evidence)
+    if not by_year:
+        return None
+
+    annual = []
+    for evidence_year in sorted(by_year):
+        annual_evidence = by_year[evidence_year]
+        base = noisy_or(ev["reliability"] for ev in annual_evidence)
+        annual_speakers = {speaker_key(ev["speaker"]) for ev in annual_evidence}
+        speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(annual_speakers)))
+        contribution = base * (DECAY_RATE ** (target_year - evidence_year)) * speaker_factor
+        annual.append(
+            {
+                "source_year": evidence_year,
+                "probability": contribution,
+                "source_kind": _historical_kind(annual_evidence),
+                "speaker_count": len(annual_speakers),
+                "evidence_used": len(annual_evidence),
+            }
+        )
+
+    probability = round(noisy_or(row["probability"] for row in annual) * 100)
+    source_years = [row["source_year"] for row in annual]
+    source_kinds = {row["source_kind"] for row in annual}
+    source_kind = annual[-1]["source_kind"]
+    if len(source_kinds) == 1:
+        kind_label = _historical_kind_label(source_kind)
+    else:
+        kind_label = "実績"
+    year_label = "・".join(str(year) for year in source_years)
+    used_evidence = [evidence for annual_rows in by_year.values() for evidence in annual_rows]
+    speakers = {speaker_key(ev["speaker"]) for ev in used_evidence}
     return {
         "probability": max(5, min(90, probability)),
         "basis": "past_evidence",
-        "basis_label": f"{source_year}年{BASIS_LABEL.get('current_' + source_kind, '過去実績').removeprefix('今年')}",
+        "basis_label": f"{year_label}年{kind_label}",
         "speaker_count": len(speakers),
-        "evidence_used": len(evidence_rows),
+        "evidence_used": sum(row["evidence_used"] for row in annual),
+        "source_years": source_years,
+        "source_kind": source_kind,
+        "annual_probabilities": [
+            {
+                **row,
+                "probability": round(row["probability"] * 100),
+            }
+            for row in annual
+        ],
     }
 
 
 def calibrate(conn, now, occurrence_id=None):
     query = (
         "SELECT os.occurrence_song_id, os.occurrence_id, os.normalized_title, os.origin, "
-        "os.inherited_from_year, eo.event_year "
+        "os.inherited_from_year, os.notes, eo.event_year "
         "FROM occurrence_songs os JOIN event_occurrences eo ON eo.occurrence_id=os.occurrence_id "
         "WHERE os.probability IS NULL"
     )
@@ -218,7 +287,8 @@ def calibrate(conn, now, occurrence_id=None):
         evidence_rows = rows(
             conn,
             """
-            SELECT e.evidence_type, e.observed_at, l.confidence AS reliability,
+            SELECT e.evidence_type, e.observed_at, e.detected_event_date,
+                   l.confidence AS reliability,
                    e.account_key, e.source_key
             FROM occurrence_song_evidence_links l
             JOIN evidence_items e ON e.evidence_id = l.evidence_id
@@ -236,6 +306,11 @@ def calibrate(conn, now, occurrence_id=None):
                     "role": role,
                     "reliability": ev["reliability"],
                     "speaker": ev["account_key"] or ev["source_key"],
+                    "source_year": (
+                        int(str(ev["detected_event_date"])[:4])
+                        if str(ev["detected_event_date"] or "")[:4].isdigit()
+                        else None
+                    ),
                 }
             )
 
@@ -246,7 +321,16 @@ def calibrate(conn, now, occurrence_id=None):
                 int(target["inherited_from_year"]),
             )
         else:
-            result = compute_probability(normalized)
+            # Historical links can remain attached after direct current-year
+            # evidence upgrades the same result row.  They remain provenance,
+            # but must not be recomputed as un-decayed current hints.
+            current_year = int(target["event_year"])
+            current_evidence = [
+                evidence
+                for evidence in normalized
+                if evidence.get("source_year") in {None, current_year}
+            ]
+            result = compute_probability(current_evidence)
         if result is None:
             skipped_no_current_evidence.append(
                 {
@@ -258,9 +342,30 @@ def calibrate(conn, now, occurrence_id=None):
             )
             continue
 
+        notes = target["notes"]
+        if target["inherited_from_year"]:
+            try:
+                notes_data = json.loads(notes or "{}")
+            except (TypeError, ValueError):
+                notes_data = {}
+            if not isinstance(notes_data, dict):
+                notes_data = {}
+            notes_data.update(
+                {
+                    "source_year": max(result["source_years"]),
+                    "source_years": result["source_years"],
+                    "source_kind": result["source_kind"],
+                    "historical_basis_label": result["basis_label"],
+                    "annual_probabilities": result["annual_probabilities"],
+                    "decay_rate": DECAY_RATE,
+                    "year_combination": "independent_noisy_or",
+                }
+            )
+            notes = json.dumps(notes_data, ensure_ascii=False, sort_keys=True)
         conn.execute(
-            "UPDATE occurrence_songs SET probability = ?, updated_at = ? WHERE occurrence_song_id = ?",
-            (result["probability"], now, target["occurrence_song_id"]),
+            "UPDATE occurrence_songs SET probability = ?, notes = ?, updated_at = ? "
+            "WHERE occurrence_song_id = ?",
+            (result["probability"], notes, now, target["occurrence_song_id"]),
         )
         updated.append(
             {

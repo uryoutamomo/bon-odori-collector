@@ -368,6 +368,53 @@ class EventReportHelpersTest(unittest.TestCase):
         ).fetchone()
         self.assertEqual(tuple(row), (None, None, "observed"))
 
+    def test_same_year_additional_evidence_invalidates_probability(self):
+        first_evidence_id = master_db.stable_id("ev", "historical_source_one")
+        second_evidence_id = master_db.stable_id("ev", "historical_source_two")
+        for evidence_id in (first_evidence_id, second_evidence_id):
+            upsert_evidence_item(
+                self.conn,
+                evidence_id,
+                platform="web",
+                evidence_type="historical_occurrence_report",
+                source_key=evidence_id,
+                text_excerpt="2025年の曲目実績",
+                event_date="2025-08-22",
+            )
+        upsert_occurrence_song(
+            self.conn,
+            self.occurrence_id,
+            "東京音頭",
+            first_evidence_id,
+            role="result",
+            evidence_status="observed",
+            basis_key="historical_curated_report",
+            evidence_note="2025年実績その1。",
+            inherited_from_year=2025,
+        )
+        self.conn.execute(
+            "UPDATE occurrence_songs SET probability = 51 WHERE occurrence_id = ? AND normalized_title = ?",
+            (self.occurrence_id, master_db.normalize_text("東京音頭")),
+        )
+
+        upsert_occurrence_song(
+            self.conn,
+            self.occurrence_id,
+            "東京音頭",
+            second_evidence_id,
+            role="result",
+            evidence_status="observed",
+            basis_key="historical_curated_report",
+            evidence_note="2025年実績その2。",
+            inherited_from_year=2025,
+        )
+
+        probability = self.conn.execute(
+            "SELECT probability FROM occurrence_songs WHERE occurrence_id = ? AND normalized_title = ?",
+            (self.occurrence_id, master_db.normalize_text("東京音頭")),
+        ).fetchone()[0]
+        self.assertIsNone(probability)
+
 
 if __name__ == "__main__":
     unittest.main()

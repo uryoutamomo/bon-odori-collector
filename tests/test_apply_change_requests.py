@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 import report_apply.apply_change_requests as apply_change_requests
 from report_apply.apply_change_requests import apply_payload, validate_apply_allowed, validate_payload
-from master_rdb.master_db import SCHEMA
+from master_rdb.master_db import SCHEMA, normalize_text
 
 
 class ApplyChangeRequestsTests(unittest.TestCase):
@@ -568,6 +568,39 @@ class ApplyChangeRequestsTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "event_date must be an ISO date"):
             validate_payload(payload)
+
+    def test_historical_report_uses_report_kind_and_inherits_source_year(self):
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "curated_report",
+                    "change_type": "add_song_evidence",
+                    "occurrence_id": "occ_1",
+                    "evidence_mode": "historical_curated_report",
+                    "event_date": "2025-08-22",
+                    "songs": [{"title": "東京音頭"}],
+                    "source": {
+                        "url": "https://example.com/report",
+                        "platform": "web",
+                        "kind": "historical_occurrence_report",
+                    },
+                }
+            ],
+        }
+
+        validate_payload(payload)
+        applied, issues = apply_payload(self.conn, payload, "2026-08-18T00:00:00+00:00")
+        self.conn.commit()
+
+        self.assertEqual(issues, [])
+        self.assertEqual(len(applied["requests_applied"]), 1)
+        row = self.conn.execute(
+            "SELECT inherited_from_year, source_count, evidence_count FROM occurrence_songs "
+            "WHERE occurrence_id = 'occ_1' AND normalized_title = ?",
+            (normalize_text("東京音頭"),),
+        ).fetchone()
+        self.assertEqual(tuple(row), (2025, 1, 1))
 
     def test_historical_reference_date_reuses_existing_natural_key(self):
         self.conn.execute(

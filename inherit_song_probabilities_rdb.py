@@ -9,21 +9,22 @@ only in an earlier occurrence of the same series is carried forward as a
 role='prediction' row with a decayed probability, instead of vanishing from
 the target year's song list entirely.
 
-Scope: only creates a new occurrence_songs row when the target-year
-occurrence has NO existing row (any role) for that normalized_title --
-existing direct evidence (Phase 1's job) always wins and is never
-overwritten. Only the single most recent past year per series is used as the
-source (matching the legacy algorithm, which takes max(past years) rather
-than blending multiple past years). X-song materializer-owned facts and
+Scope: creates a new occurrence_songs row when the target-year occurrence has
+no direct row for that normalized_title, and refreshes only rows previously
+created by this inheritance script. Existing direct evidence (Phase 1's job)
+always wins and is never overwritten. Direct evidence from every available
+past event year is grouped by year, decayed, and combined; repeated annual
+appearances therefore score higher than a single appearance. X-song materializer-owned facts and
 X-song claim evidence are deliberately excluded: their publication contract
 requires an active materialization ledger entry, which an inherited prediction
 cannot preserve.
 
 Probability formula (ported from song_processing/song_occurrences.py's
 prediction_probability(), past-evidence branch):
-    base = noisy_or(reliability of each evidence linked to the source song) * 100
-    speaker_factor = min(1.0, 0.65 + 0.15 * max(1, distinct speaker count))
-    probability = round(base * decay_rate ** (target_year - source_year) * speaker_factor)
+    annual = noisy_or(reliability within year)
+             * decay_rate ** (target_year - source_year)
+             * speaker_factor_within_year
+    probability = noisy_or(annual contribution from every source year) * 100
     clamped to [5, 90]
 decay_rate defaults to 0.75, matching DEFAULT_PREDICTION_PARAMS in
 song_processing/song_occurrences.py.
@@ -41,7 +42,11 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import audit_master_rdb
-from calibrate_song_probabilities_rdb import noisy_or, normalize_kind, speaker_key
+from calibrate_song_probabilities_rdb import (
+    DECAY_RATE,
+    compute_historical_probability,
+    normalize_kind,
+)
 from master_rdb.master_db import (
     MASTER_DB,
     connect_existing,
@@ -59,11 +64,6 @@ OUT_MD = DATA / "song_probability_inheritance_report.md"
 BACKUP_DIR = DATA / "backups"
 CONFIRM_PHRASE = "APPLY SONG PROBABILITY INHERITANCE RDB"
 SCRIPT_NAME = "inherit_song_probabilities_rdb.py"
-
-DECAY_RATE = 0.75
-KIND_LABEL = {"announced": "告知", "observed": "実測", "hint": "ヒント"}
-KIND_RANK = {"announced": 3, "observed": 2, "hint": 1}
-
 
 def rows(conn, query, params=()):
     conn.row_factory = sqlite3.Row
@@ -133,60 +133,73 @@ def find_inheritance_candidates(conn, target_year):
         past = [(year, occ_id) for year, occ_id in occs if year < target_year]
         if not past:
             continue
-        source_year, source_occurrence_id = max(past)
-
         existing_titles = {
             row["normalized_title"]
             for row in rows(
                 conn,
-                "SELECT normalized_title FROM occurrence_songs WHERE occurrence_id = ?",
+                "SELECT normalized_title FROM occurrence_songs "
+                "WHERE occurrence_id = ? AND origin != 'inherited_prediction'",
                 (target_occurrence_id,),
             )
         }
-        source_songs = rows(
-            conn,
-            """
-            SELECT occurrence_song_id, song_id, song_title_raw, normalized_title, role
-            FROM occurrence_songs
-            WHERE occurrence_id = ? AND origin != 'observed_x_post'
-            ORDER BY CASE role WHEN 'result' THEN 0 WHEN 'setlist' THEN 1 ELSE 2 END
-            """,
-            (source_occurrence_id,),
-        )
-        # A source occurrence can have the same song under multiple roles (e.g. a
-        # directly-observed 'result' row and a leftover legacy 'prediction' row) --
-        # the ORDER BY above puts 'result' first, so this dedup keeps the
-        # most-observed version as the inheritance source rather than picking
-        # whichever role happened to sort last in SQLite's default rowid order.
-        picked_titles = set()
-        for song in source_songs:
-            if song["normalized_title"] in existing_titles:
-                continue
-            if song["normalized_title"] in picked_titles:
-                continue
-            picked_titles.add(song["normalized_title"])
-            candidates.append(
-                {
-                    "series_id": series_id,
-                    "target_occurrence_id": target_occurrence_id,
-                    "target_year": target_year,
-                    "source_occurrence_id": source_occurrence_id,
-                    "source_year": source_year,
-                    "source_occurrence_song_id": song["occurrence_song_id"],
-                    "source_role": song["role"],
-                    "song_id": song["song_id"],
-                    "song_title_raw": song["song_title_raw"],
-                    "normalized_title": song["normalized_title"],
-                }
+        candidates_by_title = {}
+        for source_year, source_occurrence_id in sorted(past, reverse=True):
+            source_songs = rows(
+                conn,
+                """
+                SELECT occurrence_song_id, song_id, song_title_raw, normalized_title, role
+                FROM occurrence_songs
+                WHERE occurrence_id = ?
+                  AND origin NOT IN ('observed_x_post', 'inherited_prediction')
+                ORDER BY CASE role WHEN 'result' THEN 0 WHEN 'setlist' THEN 1 ELSE 2 END
+                """,
+                (source_occurrence_id,),
             )
+            # The same song can exist under multiple roles in one occurrence.
+            # Keep its most-observed direct row for that event year.
+            picked_titles = set()
+            for song in source_songs:
+                normalized_title = song["normalized_title"]
+                if normalized_title in existing_titles or normalized_title in picked_titles:
+                    continue
+                picked_titles.add(normalized_title)
+                candidate = candidates_by_title.get(normalized_title)
+                if candidate is None:
+                    candidate = {
+                        "series_id": series_id,
+                        "target_occurrence_id": target_occurrence_id,
+                        "target_year": target_year,
+                        # Compatibility fields identify the latest direct source.
+                        "source_occurrence_id": source_occurrence_id,
+                        "source_year": source_year,
+                        "source_occurrence_song_id": song["occurrence_song_id"],
+                        "source_role": song["role"],
+                        "song_id": song["song_id"],
+                        "song_title_raw": song["song_title_raw"],
+                        "normalized_title": normalized_title,
+                        "source_occurrence_songs": [],
+                    }
+                    candidates_by_title[normalized_title] = candidate
+                candidate["source_occurrence_songs"].append(
+                    {
+                        "source_occurrence_id": source_occurrence_id,
+                        "source_occurrence_song_id": song["occurrence_song_id"],
+                        "source_year": source_year,
+                        "source_role": song["role"],
+                    }
+                )
+        candidates.extend(
+            sorted(candidates_by_title.values(), key=lambda row: row["normalized_title"])
+        )
     return candidates
 
 
-def gather_evidence(conn, occurrence_song_id):
+def gather_evidence(conn, occurrence_song_id, source_year=None, include_evidence_id=False):
     evidence_rows = rows(
         conn,
         """
-        SELECT e.evidence_type, e.account_key, e.source_key, l.confidence AS reliability
+        SELECT e.evidence_id, e.evidence_type, e.account_key, e.source_key,
+               l.confidence AS reliability
         FROM occurrence_song_evidence_links l
         JOIN evidence_items e ON e.evidence_id = l.evidence_id
         WHERE l.occurrence_song_id = ?
@@ -195,38 +208,47 @@ def gather_evidence(conn, occurrence_song_id):
         """,
         (occurrence_song_id,),
     )
-    return [
-        {
+    result = []
+    for row in evidence_rows:
+        evidence = {
             "kind": normalize_kind(row["evidence_type"]),
             "reliability": row["reliability"],
             "speaker": row["account_key"] or row["source_key"],
         }
-        for row in evidence_rows
-    ]
+        if source_year is not None:
+            evidence["source_year"] = source_year
+        if include_evidence_id:
+            evidence["evidence_id"] = row["evidence_id"]
+        result.append(evidence)
+    return result
 
 
 def compute_inherited_probability(evidence_rows, target_year, source_year):
-    if not evidence_rows:
-        return None
-    base = noisy_or(ev["reliability"] for ev in evidence_rows) * 100
-    speakers = {speaker_key(ev["speaker"]) for ev in evidence_rows}
-    speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(speakers)))
-    probability = round(base * (DECAY_RATE ** (target_year - source_year)) * speaker_factor)
-    kind = max((ev["kind"] for ev in evidence_rows), key=lambda value: KIND_RANK.get(value, 0))
-    return {
-        "probability": max(5, min(90, probability)),
-        "speaker_count": len(speakers),
-        "source_kind": kind,
-        "source_kind_label": KIND_LABEL.get(kind, "ヒント"),
-    }
+    return compute_historical_probability(evidence_rows, target_year, source_year)
 
 
 def inherit(conn, target_year, now):
     candidates = find_inheritance_candidates(conn, target_year)
     created = []
+    updated = []
     skipped_no_evidence = []
     for candidate in candidates:
-        evidence_rows = gather_evidence(conn, candidate["source_occurrence_song_id"])
+        evidence_by_id = {}
+        for source in candidate["source_occurrence_songs"]:
+            source_evidence = gather_evidence(
+                conn,
+                source["source_occurrence_song_id"],
+                source_year=source["source_year"],
+                include_evidence_id=True,
+            )
+            for evidence in source_evidence:
+                # If one evidence item was accidentally linked to more than one
+                # historical occurrence, keep its latest-year interpretation.
+                evidence_by_id.setdefault(evidence["evidence_id"], evidence)
+        evidence_rows = [
+            {key: value for key, value in evidence.items() if key != "evidence_id"}
+            for evidence in evidence_by_id.values()
+        ]
         result = compute_inherited_probability(evidence_rows, target_year, candidate["source_year"])
         if result is None:
             skipped_no_evidence.append(candidate)
@@ -239,11 +261,60 @@ def inherit(conn, target_year, now):
             """
             SELECT occurrence_song_id FROM occurrence_songs
             WHERE occurrence_id = ? AND normalized_title = ? AND role = 'prediction'
+              AND origin = 'inherited_prediction'
             """,
             (candidate["target_occurrence_id"], candidate["normalized_title"]),
         ).fetchone()
+        notes = json.dumps(
+            {
+                "basis": "past_evidence",
+                "source_occurrence_song_id": candidate["source_occurrence_song_id"],
+                "source_occurrence_song_ids": [
+                    source["source_occurrence_song_id"]
+                    for source in candidate["source_occurrence_songs"]
+                ],
+                "source_year": max(result["source_years"]),
+                "source_years": result["source_years"],
+                "source_kind": result["source_kind"],
+                "historical_basis_label": result["basis_label"],
+                "annual_probabilities": result["annual_probabilities"],
+                "speaker_count": result["speaker_count"],
+                "decay_rate": DECAY_RATE,
+                "year_combination": "independent_noisy_or",
+            },
+            ensure_ascii=False,
+            sort_keys=True,
+        )
         if existing:
-            # Already inherited by an earlier run of this script; nothing new to add.
+            conn.execute(
+                """
+                UPDATE occurrence_songs
+                SET probability = ?, source_count = ?, evidence_count = ?,
+                    inherited_from_year = ?, notes = ?, updated_at = ?
+                WHERE occurrence_song_id = ?
+                """,
+                (
+                    result["probability"],
+                    result["speaker_count"],
+                    result["evidence_used"],
+                    max(result["source_years"]),
+                    notes,
+                    now,
+                    existing[0],
+                ),
+            )
+            updated.append(
+                {
+                    "occurrence_song_id": existing[0],
+                    "series_id": candidate["series_id"],
+                    "target_year": target_year,
+                    "song_title_raw": candidate["song_title_raw"],
+                    "source_years": result["source_years"],
+                    "probability": result["probability"],
+                    "basis_label": result["basis_label"],
+                    "speaker_count": result["speaker_count"],
+                }
+            )
             continue
 
         conn.execute(
@@ -265,22 +336,12 @@ def inherit(conn, target_year, now):
                 "predicted",
                 result["probability"],
                 "unknown",
-                0,
-                0,
-                candidate["source_year"],
+                result["speaker_count"],
+                result["evidence_used"],
+                max(result["source_years"]),
                 "",
                 "",
-                json.dumps(
-                    {
-                        "basis": "past_evidence",
-                        "source_occurrence_song_id": candidate["source_occurrence_song_id"],
-                        "source_year": candidate["source_year"],
-                        "source_kind": result["source_kind"],
-                        "speaker_count": result["speaker_count"],
-                        "decay_rate": DECAY_RATE,
-                    },
-                    ensure_ascii=False,
-                ),
+                notes,
                 now,
                 now,
             ),
@@ -291,15 +352,16 @@ def inherit(conn, target_year, now):
                 "series_id": candidate["series_id"],
                 "target_year": target_year,
                 "song_title_raw": candidate["song_title_raw"],
-                "source_year": candidate["source_year"],
+                "source_years": result["source_years"],
                 "probability": result["probability"],
-                "basis_label": f"{candidate['source_year']}年{result['source_kind_label']}",
+                "basis_label": result["basis_label"],
                 "speaker_count": result["speaker_count"],
             }
         )
     return {
         "candidates_considered": len(candidates),
         "created": created,
+        "updated": updated,
         "skipped_no_evidence": skipped_no_evidence,
     }
 
@@ -387,9 +449,9 @@ def render_markdown(result):
             "## Scope",
             "",
             "- Only series with BOTH a target_year occurrence and an earlier occurrence are considered.",
-            "- Only the single most recent past year per series is used as the inheritance source.",
-            "- A song already present on the target occurrence (any role) is never overwritten -- "
-            "direct evidence always wins over inheritance.",
+            "- Direct evidence from every available past event year is combined after per-year decay.",
+            "- A direct song row already present on the target occurrence is never overwritten; "
+            "only an existing inherited_prediction row can be refreshed.",
             "- New rows are written with role='prediction', origin='inherited_prediction', "
             "inherited_from_year=<source year>.",
             "",
@@ -398,6 +460,14 @@ def render_markdown(result):
     if result["inheritance"]["created"]:
         lines.extend(["## Sample created rows", ""])
         for row in result["inheritance"]["created"][:20]:
+            lines.append(
+                f"- {row['song_title_raw']}: {row['probability']}% ({row['basis_label']}, "
+                f"speakers={row['speaker_count']})"
+            )
+        lines.append("")
+    if result["inheritance"]["updated"]:
+        lines.extend(["## Sample updated rows", ""])
+        for row in result["inheritance"]["updated"][:20]:
             lines.append(
                 f"- {row['song_title_raw']}: {row['probability']}% ({row['basis_label']}, "
                 f"speakers={row['speaker_count']})"
@@ -462,6 +532,7 @@ def run(args):
     if args.apply and committed:
         refresh_manifest_database_state(args.master_db, updated_at=now)
 
+    changed_rows = inheritance["created"] + inheritance["updated"]
     result = {
         "generated_by": SCRIPT_NAME,
         "generated_at": now,
@@ -483,9 +554,10 @@ def run(args):
         "summary": {
             "candidates_considered": inheritance["candidates_considered"],
             "rows_created": len(inheritance["created"]),
+            "rows_updated": len(inheritance["updated"]),
             "rows_skipped_no_evidence": len(inheritance["skipped_no_evidence"]),
-            "probability_min": min((r["probability"] for r in inheritance["created"]), default=None),
-            "probability_max": max((r["probability"] for r in inheritance["created"]), default=None),
+            "probability_min": min((r["probability"] for r in changed_rows), default=None),
+            "probability_max": max((r["probability"] for r in changed_rows), default=None),
             "issues_by_severity": issue_summary(issues),
             "audit_issues_by_severity": audit_result["issues_by_severity"],
             "table_counts": counts,

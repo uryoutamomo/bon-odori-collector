@@ -21,6 +21,10 @@ def test_workflow_dry_runs_before_apply_and_verifies_every_stage() -> None:
     refetch = text.index("- name: Re-fetch and verify published Master RDB")
     assert dry_run < apply < publish < refetch
     assert text.count("python -m scripts.verify_review_backlog_application") == 3
+    assert text.count("python calibrate_song_probabilities_rdb.py") == 2
+    assert text.count("promotion_candidates.build_historical_promotion_candidates") == 2
+    assert text.index("- name: Finalize and verify applied RDB") < publish
+    assert text.count("python export_public_events.py") == 2
 
 
 def test_workflow_uses_serialized_cas_publish_without_force() -> None:
