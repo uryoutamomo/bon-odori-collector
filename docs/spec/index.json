@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T14:38:26Z",
-  "generated_for_commit": "590b43b",
+  "generated_at": "2026-08-18T23:00:54Z",
+  "generated_for_commit": "2923aa3",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -34,16 +34,19 @@
         "INV-COL-005",
         "INV-COL-006",
         "INV-COL-007",
-        "INV-COL-008"
+        "INV-COL-008",
+        "INV-COL-009"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
         "tests/test_x_collection_health.py",
         "tests/test_collect_no_semantic_exclusion.py",
         "tests/test_x_search_watermark.py",
-        "tests/test_x_gap_candidates.py"
+        "tests/test_x_gap_candidates.py",
+        "tests/test_collect_event_state_axes_wiring.py",
+        "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "c2364ab",
+      "updated_for": "b5e6c0a",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         ".github/workflows/collect.yml",
@@ -65,13 +68,15 @@
         "voices_s3_artifact.py",
         "x_queries.json"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 2
-      },
-      "version": "1.7",
-      "revision_count": 8,
+      "staleness": null,
+      "version": "1.8",
+      "revision_count": 9,
       "history": [
+        {
+          "commit": "6083472",
+          "date": "2026-08-19",
+          "subject": "日次予測同期の仕様と運用境界を記録する"
+        },
         {
           "commit": "b0c38ab",
           "date": "2026-08-18",
@@ -452,6 +457,7 @@
         "master_rdb_freeze_policy.py",
         "transition_ended_occurrences.py",
         "run_event_state_axes_migration.py",
+        "sync_event_date_predictions_rdb.py",
         "run_post_batch_maintenance.py",
         "run_x_song_identity_migration.py",
         "promotion_candidates/build_historical_promotion_candidates.py",
@@ -473,7 +479,8 @@
         "INV-MST-009",
         "INV-MST-010",
         "INV-MST-011",
-        "INV-MST-012"
+        "INV-MST-012",
+        "INV-MST-013"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
@@ -485,9 +492,11 @@
         "tests/test_x_song_materialization_lifecycle.py",
         "tests/test_event_date_prediction_judgment.py",
         "tests/test_build_historical_promotion_candidates.py",
-        "tests/test_reviewed_change_requests_workflow.py"
+        "tests/test_reviewed_change_requests_workflow.py",
+        "tests/test_sync_event_date_predictions_rdb.py",
+        "tests/test_collect_event_state_axes_wiring.py"
       ],
-      "updated_for": "665424d",
+      "updated_for": "b5e6c0a",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -537,15 +546,18 @@
         "run_post_batch_maintenance.py",
         "run_x_song_identity_migration.py",
         "scripts/verify_review_backlog_application.py",
+        "sync_event_date_predictions_rdb.py",
         "transition_ended_occurrences.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 5
-      },
-      "version": "1.14",
-      "revision_count": 15,
+      "staleness": null,
+      "version": "1.15",
+      "revision_count": 16,
       "history": [
+        {
+          "commit": "6083472",
+          "date": "2026-08-19",
+          "subject": "日次予測同期の仕様と運用境界を記録する"
+        },
         {
           "commit": "ad611a0",
           "date": "2026-08-18",
@@ -600,11 +612,6 @@
           "commit": "a855a9a",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
-        },
-        {
-          "commit": "958c6db",
-          "date": "2026-08-14",
-          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
         }
       ]
     },
@@ -639,9 +646,10 @@
         "tests/test_classify_public_events_diff.py",
         "tests/test_e0b_bridge.py",
         "tests/test_x_song_materialization_lifecycle.py",
-        "tests/test_apply_public_date_predictions.py"
+        "tests/test_apply_public_date_predictions.py",
+        "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "4830e93",
+      "updated_for": "b5e6c0a",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -662,13 +670,15 @@
         "public_json_postprocessors/review_missing_occurrence_venues.py",
         "venues/export_public_venues.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
-      },
-      "version": "1.12",
-      "revision_count": 13,
+      "staleness": null,
+      "version": "1.13",
+      "revision_count": 14,
       "history": [
+        {
+          "commit": "6083472",
+          "date": "2026-08-19",
+          "subject": "日次予測同期の仕様と運用境界を記録する"
+        },
         {
           "commit": "590b43b",
           "date": "2026-08-18",
@@ -723,11 +733,6 @@
           "commit": "cd8eb13",
           "date": "2026-08-15",
           "subject": "コンソール由来の変更提案を候補器へ付け替える（E0b） (#209)"
-        },
-        {
-          "commit": "958c6db",
-          "date": "2026-08-14",
-          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
         }
       ]
     },
@@ -1054,9 +1059,10 @@
         "tests/test_run_daily_youtube_backfill.py",
         "tests/test_youtube_daily_operations_policy.py",
         "tests/test_apply_youtube_setlist_occurrences_rdb.py",
-        "tests/test_extract_youtube_setlists.py"
+        "tests/test_extract_youtube_setlists.py",
+        "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "5da18e5",
+      "updated_for": "b5e6c0a",
       "path": "docs/spec/L1/09-youtube.md",
       "owned_files": [
         ".github/workflows/youtube_daily_backfill.yml",
@@ -1111,13 +1117,15 @@
         "youtube_channels/discover_youtube_channels.py",
         "youtube_channels/extract_youtube_setlists.py"
       ],
-      "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 2
-      },
-      "version": "1.4",
-      "revision_count": 5,
+      "staleness": null,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "6083472",
+          "date": "2026-08-19",
+          "subject": "日次予測同期の仕様と運用境界を記録する"
+        },
         {
           "commit": "0b70acc",
           "date": "2026-08-18",
@@ -1591,6 +1599,14 @@
       ],
       "has_test": true
     },
+    "INV-COL-009": {
+      "spec": "L1-collection",
+      "title": "日次収集は生成日付予測を正本RDBへ同期してから公開射影へ進む",
+      "tests": [
+        "tests/test_collect_event_state_axes_wiring.py"
+      ],
+      "has_test": true
+    },
     "INV-JDG-001": {
       "spec": "L1-judgment",
       "title": "判定には盆踊り文脈と説明可能な採点理由を残す",
@@ -2036,6 +2052,14 @@
       "title": "レビュー済み曲根拠は派生値まで確定してから正本DBを公開する",
       "tests": [
         "tests/test_reviewed_change_requests_workflow.py::test_workflow_dry_runs_before_apply_and_verifies_every_stage"
+      ],
+      "has_test": true
+    },
+    "INV-MST-013": {
+      "spec": "L1-master",
+      "title": "生成された日付予測は正本RDBへ先に同期し、曖昧な系列へは書かない",
+      "tests": [
+        "tests/test_sync_event_date_predictions_rdb.py"
       ],
       "has_test": true
     },
@@ -2554,6 +2578,7 @@
     "run_post_batch_maintenance.py": "L1-master",
     "run_x_song_identity_migration.py": "L1-master",
     "scripts/verify_review_backlog_application.py": "L1-master",
+    "sync_event_date_predictions_rdb.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
     "export_public_events.py": "L1-publication",
     "guard_site_public_event_additions.py": "L1-publication",
@@ -2709,8 +2734,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 359,
-    "owned": 264,
+    "tracked_source_files": 360,
+    "owned": 265,
     "unowned": 95,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
