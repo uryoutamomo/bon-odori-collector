@@ -5,6 +5,7 @@ title: 人のレビュー運用サブシステム
 owns:
   - review_inbox.py
   - review_inbox_adapters/**
+  - data/review_backlog_decision_overlay.json
   - review_console/**
   - review_console_ops/**
   - scripts/promote_change_requests_for_review.py
@@ -49,6 +50,7 @@ invariants:
   - INV-RVW-016
   - INV-RVW-017
   - INV-RVW-018
+  - INV-RVW-019
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -59,7 +61,8 @@ verified_by:
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_review_console.py
-updated_for: 64c874f
+  - tests/test_review_inbox_low_priority_adapters.py
+updated_for: 419cd04
 ---
 
 # 人のレビュー運用サブシステム
@@ -260,6 +263,24 @@ updated_for: 64c874f
 - **守っているテスト**: `tests/test_review_console.py::ReviewConsoleTests::test_review_inbox_item_absent_from_complete_current_source_snapshot_is_closed`、
   `tests/test_review_console.py::ReviewConsoleTests::test_x_gap_new_event_already_confirmed_in_public_data_is_closed`
 
+### INV-RVW-019 低優先の判断済み候補は、安定IDと内容の指紋が一致するときだけ現在集合から外す
+
+- **内容**: 曲・用語/曲×会場・会場候補の人/LLM判断は、元JSONのライフサイクル欄へ偽装して書き戻さず、
+  `data/review_backlog_decision_overlay.json` に判断主体と理由を残す。完全スナップショットを作る際、
+  `source_id`・`source_key`・`inbox_id`・`source_payload_hash` が現在候補とすべて一致した判断だけを除外する。
+  安定IDが違えば fail-closed、内容の指紋が変わればその判断を stale として候補を再提示する。
+  この処理は受信箱DBのstatus/decisionと曲・用語・会場の正本factを変更しない。
+- **なぜ**: 2026-08-18の監査では低優先29件のうち、曲3件と会場5件は別ファイルですでに人が判断済み、
+  用語1件も登録済みだった。生成キューが判断記録を引き継がず、同じ意味の候補を別の証拠URLで再発行していたため、
+  LLMに同じ問いを繰り返すだけでなく「レビュー待ち」の実数も水増ししていた。一方、語だけで過去判断を再利用すると、
+  根拠や意味が変わった別候補まで隠すため、判定時の内容全体の指紋を必須にする。
+- **破れたときの症状**: 判断済みの曲・会場が日次で再び待ち一覧へ現れる。逆に、証拠内容が変わった候補が
+  過去判断で勝手に消える。LLM判断が人判断として記録される。
+- **守っているコード**: `review_inbox_adapters/backlog_decision_overlay.py`、
+  `review_inbox_adapters/low_priority_adapters.py` の `build_snapshot()`
+- **守っているテスト**: `tests/test_review_inbox_low_priority_adapters.py::test_exact_decision_overlay_closes_only_the_frozen_payload`、
+  `tests/test_review_inbox_low_priority_adapters.py::test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -333,6 +354,8 @@ X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つ�
 - **収穫（harvest）** — `build_retrospective_harvest.py` と `build_weekly_harvest_candidates.py --days 3`、
   `prepare_weekly_harvest_review.py` が、用語候補と曲・会場の共起をレビュー用のキューにする。
   名前は「週次」だが**日次で動いている**ので、名前から実行間隔を推測しないこと。
+  低優先の完全スナップショットは、人/LLMの凍結判断overlayと内容の指紋が一致する行を現在のpending集合から除く
+  （INV-RVW-019）。これは判断の投影だけで、正本factへの適用ではない。
 - **掲示物のOCR** — `build_event_poster_ocr_queue.py` が、チラシ・貼り紙の写真が付いた投稿を
   優先度の高いOCRの列にする。曲目表のOCR（`build_song_ocr_queue.py`）は[曲目](08-songs.md)側の別経路である。
 

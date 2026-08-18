@@ -9,10 +9,12 @@ import unicodedata
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
+from review_inbox_adapters.backlog_decision_overlay import apply_overlay, load_overlay
 from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
 ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_DECISION_OVERLAY = ROOT / "data/review_backlog_decision_overlay.json"
 SOURCE_CONFIG = {
     "daily_song_candidate": (ROOT / "data/weekly_song_candidates_review.json", "song"),
     "daily_term_candidate": (ROOT / "data/weekly_harvest_review_candidates.json", "term"),
@@ -168,11 +170,20 @@ ADAPTERS = {
 }
 
 
-def build_snapshot(source_id: str, input_path: Path | None = None) -> dict[str, Any]:
+def build_snapshot(
+    source_id: str,
+    input_path: Path | None = None,
+    *,
+    decision_overlay_path: Path | None = DEFAULT_DECISION_OVERLAY,
+) -> dict[str, Any]:
     if source_id not in ADAPTERS:
         raise ValueError(f"unsupported low-priority source: {source_id}")
     default_path, _ = SOURCE_CONFIG[source_id]
     snapshot = load_adapted_source(ADAPTERS[source_id](), input_path or default_path)
+    overlay = load_overlay(decision_overlay_path)
+    if overlay is not None:
+        overlay["source_path"] = str(decision_overlay_path)
+    snapshot = apply_overlay(snapshot, overlay)
     snapshot["write_mode"] = "snapshot_only_default_off"
     snapshot["upstream_boundary"] = "pending_low_priority_reviews_only"
     snapshot["selection"] = {"mode":"all","source_keys":[item["source_key"] for item in snapshot["items"]]}

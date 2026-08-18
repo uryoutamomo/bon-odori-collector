@@ -267,6 +267,56 @@ class ReviewConsoleTests(unittest.TestCase):
         self.assertEqual(inventory["totals"]["pending"], 1)
         self.assertEqual(inventory["totals"]["auto_closed"], 1)
 
+    def test_frozen_agent_decision_removes_exact_current_item_from_pending_projection(self):
+        from review_inbox_adapters.low_priority_adapters import build_snapshot
+        from review_inbox_adapters.parity import item_payload_hash
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            source = root / "data/weekly_harvest_review_candidates.json"
+            source.write_text(
+                json.dumps({"rows": [{"term": "輪踊り", "category": "用語候補", "type": "準公式用語"}]}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            item = build_snapshot(
+                "daily_term_candidate", source, decision_overlay_path=None
+            )["items"][0]
+            (root / "data/review_backlog_decision_overlay.json").write_text(
+                json.dumps(
+                    {
+                        "schema_version": 1,
+                        "decisions": [{
+                            "source_id": item["source_id"],
+                            "source_key": item["source_key"],
+                            "inbox_id": item["inbox_id"],
+                            "source_payload_hash": item_payload_hash(item),
+                            "decision": "採用",
+                            "actor_type": "agent",
+                            "actor_id": "おと（Codex）/Terra",
+                            "decided_at": "2026-08-18T12:31:38+09:00",
+                            "reason_detail": "evidence",
+                        }],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            (root / "data/review_inbox.json").write_text(
+                json.dumps({"items": [item]}, ensure_ascii=False), encoding="utf-8"
+            )
+
+            inventory = data.load_inventory(
+                root=root,
+                decisions_path=root / "data/review_console/decisions.json",
+                reader_mode="inbox",
+            )
+
+        projected = next(row for row in inventory["items"] if row["source_id"] == "review_inbox")
+        self.assertEqual(projected["status"], "closed")
+        self.assertEqual(projected["auto_resolution"]["decision"], "auto_source_snapshot_no_longer_pending")
+        self.assertEqual(inventory["totals"]["pending"], 0)
+
     def test_x_gap_new_event_already_confirmed_in_public_data_is_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

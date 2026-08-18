@@ -1484,10 +1484,11 @@ def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[
         except ValueError:
             continue
         inputs.append((source_id, root / relative_path))
+    decision_overlay_path = root / "data/review_backlog_decision_overlay.json"
     stamp = tuple(
         (str(path), path.stat().st_mtime_ns if path.exists() else -1)
         for _source_id, path in inputs
-    )
+    ) + ((str(decision_overlay_path), decision_overlay_path.stat().st_mtime_ns if decision_overlay_path.exists() else -1),)
     cache_key = str(root.resolve())
     cached = _REVIEW_INBOX_SOURCE_PRESENCE_CACHE.get(cache_key)
     if cached and cached[0] == stamp:
@@ -1498,7 +1499,11 @@ def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[
         if not path.exists():
             continue
         try:
-            snapshot = build_snapshot(source_id, path)
+            snapshot = build_snapshot(
+                source_id,
+                path,
+                decision_overlay_path=decision_overlay_path,
+            )
         except (OSError, TypeError, ValueError):
             # Fail open: an unreadable/incomplete source must not hide inbox work.
             continue

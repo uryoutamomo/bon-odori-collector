@@ -8,6 +8,10 @@ from review_inbox_adapters.low_priority_adapters import (
     AcceptedVenueSongAdapter, DailySongAdapter, DailyTermAdapter,
     HistoricalQualityAdapter, PublicationGapAdapter, build_snapshot,
 )
+from review_inbox_adapters.backlog_decision_overlay import (
+    DecisionOverlayError, apply_overlay,
+)
+from review_inbox_adapters.parity import item_payload_hash
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,9 +23,44 @@ def test_current_song_term_and_venue_pending_parity():
         "daily_term_candidate",
         "accepted_venue_song_missing_venue",
     ):
-        snapshot = build_snapshot(source_id)
+        snapshot = build_snapshot(source_id, decision_overlay_path=None)
         assert snapshot["item_count"] == len(snapshot["items"]) > 0
         assert len({item["inbox_id"] for item in snapshot["items"]}) == snapshot["item_count"]
+
+
+def test_exact_decision_overlay_closes_only_the_frozen_payload():
+    item = adapt_source_payload(DailyTermAdapter(), {"rows": [{"term": "輪踊り", "category": "用語", "type": "設備"}]})[0]
+    snapshot = {"source_id": "daily_term_candidate", "item_count": 1, "items": [item]}
+    decision = {
+        "source_id": item["source_id"], "source_key": item["source_key"],
+        "inbox_id": item["inbox_id"], "source_payload_hash": item_payload_hash(item),
+        "decision": "採用", "actor_type": "agent", "actor_id": "おと（Codex）/Terra",
+        "decided_at": "2026-08-18T00:00:00+09:00", "reason_detail": "evidence",
+    }
+    result = apply_overlay(snapshot, {"schema_version": 1, "decisions": [decision]})
+    assert result["item_count"] == 0
+    assert result["decision_overlay"]["applied_count"] == 1
+
+    changed = dict(item)
+    changed["payload"] = {**item["payload"], "evidence_text": "changed"}
+    stale = apply_overlay({**snapshot, "items": [changed]}, {"schema_version": 1, "decisions": [decision]})
+    assert stale["item_count"] == 1
+    assert stale["decision_overlay"]["stale_count"] == 1
+
+
+def test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors():
+    item = adapt_source_payload(DailyTermAdapter(), {"rows": [{"term": "輪踊り", "category": "用語", "type": "設備"}]})[0]
+    snapshot = {"source_id": "daily_term_candidate", "item_count": 1, "items": [item]}
+    base = {
+        "source_id": item["source_id"], "source_key": item["source_key"],
+        "inbox_id": "wrong", "source_payload_hash": item_payload_hash(item),
+        "decision": "採用", "actor_type": "agent", "actor_id": "oto",
+        "decided_at": "2026-08-18T00:00:00+09:00", "reason_detail": "evidence",
+    }
+    with pytest.raises(DecisionOverlayError, match="identity mismatch"):
+        apply_overlay(snapshot, {"schema_version": 1, "decisions": [base]})
+    with pytest.raises(DecisionOverlayError, match="unsupported decision"):
+        apply_overlay(snapshot, {"schema_version": 1, "decisions": [{**base, "inbox_id": item["inbox_id"], "decision": "publish"}]})
 
 
 def test_venue_rows_with_the_same_semantic_identity_are_merged():
