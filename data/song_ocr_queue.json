@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 79,
+  "count": 84,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1253,6 +1253,94 @@
         "pic.x.com/Yaz4WIteOx"
       ],
       "text": "「ゐの市盆踊り」@袴腰広場へ〜☔\n12時から踊れるという事で🐼の前に軽い気持ちで行ったらまさかの雨の洗礼😭\n…ですが充実のセトリ進行＋最高に楽しそうな彩之曾の方達を見て皆さんもテンション高くなっていたはず🙌\n踊る事が好きという気持ちは何にも止められないという事を再認識した会場でした🥰 https://t.co/Yaz4WIteOx",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "616bb71f298f6989",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2088943382567813378",
+      "tweet_id": "2088943382567813378",
+      "date": "2026-08-16T10:58:07+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2088943001137827840/img/bPRZQkB29If9hKiM.jpg",
+        "https://t.co/iJ8TxBVlYu",
+        "pic.x.com/iJ8TxBVlYu",
+        "https://pbs.twimg.com/amplify_video_thumb/2088943257564889088/img/1l5Se8fjK57zTJZc.jpg",
+        "https://pbs.twimg.com/media/HP1q7eEbwAE8QDR.jpg",
+        "https://pbs.twimg.com/media/HP1q7zLbUAAWC5B.jpg"
+      ],
+      "text": "2026年8月16日(日)\n埼玉県鴻巣市／エルミこうのす\n「よりみち盆踊り」\n\n鴻巣駅 東口に直結している入口から入り、1階センターコートへ。\n\n【曲目】\n「鴻巣音頭」\n「花の鴻巣音頭」\n\n小旅行か⁉️くらいに遠かった、鴻巣の免許センターに始発電車で行った、遠い昔の思い出。\n盆踊りの思い出もできました🤗 https://t.co/iJ8TxBVlYu",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "33ff665dc37e4187",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2088963108354322772",
+      "tweet_id": "2088963108354322772",
+      "date": "2026-08-16T12:16:30+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2088962267782303744/img/qYnJf8qetH5j1w09.jpg",
+        "https://t.co/FQR92eNKk1",
+        "pic.x.com/FQR92eNKk1",
+        "https://pbs.twimg.com/amplify_video_thumb/2088962497906974720/img/hJnZvdklgk31ZAEw.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2088962836051681280/img/eKr1XKHqjPOouP_K.jpg",
+        "https://pbs.twimg.com/media/HP183v9aIAAwGtG.jpg"
+      ],
+      "text": "2026年8月16日(日)\n埼玉県春日部市\n／上蛭田ふれあい広場\n「第1回 豊春ふれあい盆踊り大会」\n\n昨夏、春日部市役所の納涼夏祭りで、市長の岩谷様も盆踊りをされていました。\n今日も、市長にお目にかかれたことが嬉しかったです🤗✨\n\n【曲目】\n春日部音頭\n春日部サンバ\n東京音頭\n炭坑節\nマツケンサンバII https://t.co/FQR92eNKk1",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "c8cc85a2852018dc",
+      "status": "needs_ocr",
+      "account": "@2tsuo_g",
+      "url": "https://x.com/2tsuo_g/status/2089304303353909620",
+      "tweet_id": "2089304303353909620",
+      "date": "2026-08-17T10:52:17+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HP6zLi9akAAHjDe.jpg",
+        "https://t.co/DJYYYOoTKE",
+        "pic.x.com/DJYYYOoTKE",
+        "https://pbs.twimg.com/media/HP6zLjBbIAApGZt.jpg"
+      ],
+      "text": "148件目 久我山盆踊り 練習会\n練習会は3時間だけど私は途中抜け🙇‍♂️13曲踊りました！結構楽しかった！\nまだセトリは決めてる最中で減るかもしれないとのことです⚠️\n「メリーアン音頭」と「新花笠音頭」初めて踊りました✌️ https://t.co/DJYYYOoTKE",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "aac537c5b5e261f8",
+      "status": "needs_ocr",
+      "account": "@kazuya_united",
+      "url": "https://x.com/kazuya_united/status/2089308642965082167",
+      "tweet_id": "2089308642965082167",
+      "date": "2026-08-17T11:09:32+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HP63IpJbYAAslxF.jpg",
+        "https://t.co/nJBtravQ6O",
+        "pic.x.com/nJBtravQ6O",
+        "https://pbs.twimg.com/media/HP63IpKaIAANDAq.jpg",
+        "https://pbs.twimg.com/media/HP63IpKbMAAfZ6I.jpg",
+        "https://pbs.twimg.com/media/HP63IpHb0AA6CV6.jpg"
+      ],
+      "text": "お疲れ様です。昨夜は近くの駅前で盆踊りをやっていたので見物していました。曲目が「勇気100%」だったのに軽く驚きましたが、忍たま見ていた世代なので懐かしく感じましたね…ビール片手にひと時の夏を楽しみました。\n#盆踊り #祭り #夏祭り #お祭り #忍たま乱太郎 #写真 #写真で奏でる私の世界 #写真好き #写真好き #写真が好き #写真好きと繋がりたい #写真撮ってる人と繫がりたい #写真撮っている人と繋がりたい #写真撮影",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ede8ba3e92bcb071",
+      "status": "needs_ocr",
+      "account": "@yattokame1000",
+      "url": "https://x.com/yattokame1000/status/2089342855534072063",
+      "tweet_id": "2089342855534072063",
+      "date": "2026-08-17T13:25:29+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HP7KAj3a8AAr1PG.jpg",
+        "https://t.co/IBDFSwNTu4",
+        "pic.x.com/IBDFSwNTu4",
+        "https://pbs.twimg.com/media/HP7KAj3aAAAJx0G.jpg",
+        "https://pbs.twimg.com/media/HP7KAj5aYAAjzYk.jpg",
+        "https://pbs.twimg.com/media/HP7KAkEaMAEwBaV.jpg"
+      ],
+      "text": "8月15日(土)\n#PSJあいち戦国姫隊 演舞\n名古屋城 西之丸A・盆踊り櫓ステージ\n\nセットリスト\n①めでたやの\n②名乗乃口上\n③あいちめいふつかたり（オリジナルver.）\n④あいらぶあいち\n\n先日の「DAKEじゃない」、この日の「めいふつかたり」と今のお身体では稀有な演目が続きます…特に江姫、ご苦労さま。 https://t.co/IBDFSwNTu4",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

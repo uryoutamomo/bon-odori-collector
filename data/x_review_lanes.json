@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_review_lanes.py",
-  "generated_at": "2026-08-16T07:14:37.918890+00:00",
+  "generated_at": "2026-08-18T23:17:21.563621+00:00",
   "contract": {
     "daily_input_max": 30,
     "lane3_user_review_max": 3,
@@ -11,6 +11,77 @@
   "lanes": {
     "lane1_auto_plan": [],
     "lane2_operator_review": [
+      {
+        "candidate_id": "xgap_f6da3e7254871a87",
+        "source_key": "x:2089457457554694346",
+        "lane_hint": "lane2",
+        "candidate_kind": "missing_date",
+        "priority_score": 205,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "venue": "網代公園",
+          "area": "",
+          "venue_area": "港区",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "date_start": "",
+          "date_end": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/Party_AnimalsJP/status/2089457457554694346",
+        "source_text": "\n【開催まであと4日！】\n8/22(土)23(日)🪭麻布十番商店街一帯にて\n「🏮第60回 麻布十番納涼まつり」開催！\n👉 詳細：https://t.co/aAi3ZI3Clz\n\n🍴 工夫を凝らした露店が立ち並ぶ、麻布十番の夏の風物詩！\n🎤 ステージ「10-BANG」では多彩なパフォーマンス！\n🌏 今年も駐日リトアニア共和国大使館ブースが出展予定！\n#麻布十番納涼まつり #麻布十番 #夏祭り #大使館",
+        "source_author": "@Party_AnimalsJP",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@party_animalsjp",
+          "account_name": "国際交流イベント情報~パーティアニマルズ",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/22"
+        ],
+        "observed_dates": [
+          "2026-08-22"
+        ],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x_whitelist",
+          "account": "@Party_AnimalsJP",
+          "name": "国際交流イベント情報~パーティアニマルズ",
+          "profile_description": "米軍基地を一般開放して開催するイベントや、各国の大使館が参加するお祭り等、国際的なイベント情報をつぶやいています。2025年は463個の国際的なイベントを紹介しました。気軽にフォローしたりリツイットてください♪",
+          "title": "",
+          "text": "【開催まであと4日！】\n8/22(土)23(日)🪭麻布十番商店街一帯にて\n「🏮第60回 麻布十番納涼まつり」開催！\n👉 詳細：https://t.co/aAi3ZI3Clz\n\n🍴 工夫を凝らした露店が立ち並ぶ、麻布十番の夏の風物詩！\n🎤 ステージ「10-BANG」では多彩なパフォーマンス！\n🌏 今年も駐日リトアニア共和国大使館ブースが出展予定！\n#麻布十番納涼まつり #麻布十番 #夏祭り #大使館",
+          "url": "https://x.com/Party_AnimalsJP/status/2089457457554694346",
+          "date": "2026-08-17T21:00:52+00:00",
+          "tweet_id": "2089457457554694346",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "critique_post": false,
+          "value_score": 16.0
+        },
+        "source_urls": [
+          "https://x.com/Party_AnimalsJP/status/2089457457554694346"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "lane": "lane3_user_review"
+      },
       {
         "candidate_id": "xgap_532b6d1677e46da1",
         "source_key": "x:2056225115428577401",
@@ -39,6 +110,7 @@
         ],
         "observed_dates": [],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@mizu516AforReal",
@@ -56,6 +128,7 @@
         "source_urls": [
           "https://x.com/mizu516AforReal/status/2056225115428577401"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -88,6 +161,7 @@
         ],
         "observed_dates": [],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@mizu516AforReal",
@@ -105,6 +179,7 @@
         "source_urls": [
           "https://x.com/mizu516AforReal/status/2056307952542441671"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -139,6 +214,7 @@
           "2026-08-22"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@8_chokai",
@@ -156,6 +232,7 @@
         "source_urls": [
           "https://x.com/8_chokai/status/2056637018248229108"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -188,6 +265,7 @@
         ],
         "observed_dates": [],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@maru_akitahaku",
@@ -205,6 +283,7 @@
         "source_urls": [
           "https://x.com/maru_akitahaku/status/2060657371937153093"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -241,6 +320,7 @@
         ],
         "observed_dates": [],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@tunagate",
@@ -258,6 +338,7 @@
         "source_urls": [
           "https://x.com/tunagate/status/2065391293539529004"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -293,6 +374,7 @@
           "2026-07-19"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@bakushin339711",
@@ -310,6 +392,7 @@
         "source_urls": [
           "https://x.com/bakushin339711/status/2079454576525431254"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -344,6 +427,7 @@
           "2026-07-26"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@gPVEQeAD9U10257",
@@ -366,6 +450,12 @@
         },
         "source_urls": [
           "https://x.com/gPVEQeAD9U10257/status/2081386011142307988"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOKRcrUboAEumxr.jpg",
+          "https://t.co/7vdRAtjIYS",
+          "pic.x.com/7vdRAtjIYS",
+          "https://pbs.twimg.com/amplify_video_thumb/2081385936244588545/img/tv_EiednWtFWCuES.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -401,6 +491,7 @@
           "2026-07-26"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x_whitelist",
           "account": "@blue_sky_blue_j",
@@ -427,6 +518,14 @@
         },
         "source_urls": [
           "https://x.com/blue_sky_blue_j/status/2081507393268269352"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOL_2nAaIAAI7D_.jpg",
+          "https://t.co/Bu6RWRAI53",
+          "pic.x.com/Bu6RWRAI53",
+          "https://pbs.twimg.com/amplify_video_thumb/2081507346359218176/img/yua6v-JpcrIp2Hx-.jpg",
+          "https://pbs.twimg.com/media/HOL_7dFb0AA-wlS.jpg",
+          "https://pbs.twimg.com/media/HOL_8JDbAAAlKB5.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -464,6 +563,7 @@
           "2026-07-26"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@bakushin339711",
@@ -486,6 +586,12 @@
         },
         "source_urls": [
           "https://x.com/bakushin339711/status/2082355203135930443"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOYDArybMAAoU1_.jpg",
+          "https://t.co/wnx6NqHSxv",
+          "pic.x.com/wnx6NqHSxv",
+          "https://pbs.twimg.com/media/HOYDBMGacAAioG-.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -521,6 +627,7 @@
           "2026-08-02"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@rollingasahi",
@@ -542,6 +649,11 @@
         },
         "source_urls": [
           "https://x.com/rollingasahi/status/2082792423563075679"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOeQqyna4AEzwmJ.jpg",
+          "https://t.co/XxExrT6Mdx",
+          "pic.x.com/XxExrT6Mdx"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -577,6 +689,7 @@
           "2026-07-31"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@uja31",
@@ -599,6 +712,12 @@
         },
         "source_urls": [
           "https://x.com/uja31/status/2083185264651092077"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOj19NLa4AA5L8m.jpg",
+          "https://t.co/5b8yNnC59J",
+          "pic.x.com/5b8yNnC59J",
+          "https://pbs.twimg.com/media/HOj19NLbkAAunhY.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -634,6 +753,7 @@
           "2026-08-02"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@TodaBon",
@@ -655,6 +775,11 @@
         },
         "source_urls": [
           "https://x.com/TodaBon/status/2084144299776868613"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOxeMaPbYAAT5y0.jpg",
+          "https://t.co/yOm8LMG7R4",
+          "pic.x.com/yOm8LMG7R4"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -690,6 +815,7 @@
           "2026-08-08"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@uja31",
@@ -712,6 +838,12 @@
         },
         "source_urls": [
           "https://x.com/uja31/status/2086110286935990458"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPNaP6kb0AATlqf.jpg",
+          "https://t.co/XRSyUSXvw8",
+          "pic.x.com/XRSyUSXvw8",
+          "https://pbs.twimg.com/media/HPNaP6Sa0AEhLSW.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -747,6 +879,7 @@
           "2026-08-14"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x_whitelist",
           "account": "@_masakari",
@@ -775,8 +908,151 @@
         "source_urls": [
           "https://x.com/_masakari/status/2088385316478656779"
         ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPtvXiYbkAAQHMZ.jpg",
+          "https://t.co/ghtnz47nd6",
+          "pic.x.com/ghtnz47nd6",
+          "https://pbs.twimg.com/media/HPtvXiNa0AA5YS8.jpg",
+          "https://pbs.twimg.com/media/HPtvXiNa8AAAN5A.jpg",
+          "https://pbs.twimg.com/media/HPtvXiaaEAAd_af.jpg"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
+        "lane": "lane3_user_review"
+      },
+      {
+        "candidate_id": "xgap_ea64e6beda0ec3c7",
+        "source_key": "x:2081881810930442285",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 90,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/mu4324/status/2081881810930442285",
+        "source_text": "\nちなみに今年の、\n八丁堀納涼大会\n京華スクエア盆踊り\n8月27〜28日\n#八丁堀京華スクエア盆踊り",
+        "source_author": "@mu4324",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@mu4324",
+          "account_name": "宇佐美",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月27"
+        ],
+        "observed_dates": [
+          "2026-08-27",
+          "2026-08-28"
+        ],
+        "event_group_key": "informal-venue:5812a384ecb3d611",
+        "known_venue_evidence": {
+          "venue": "京華スクエア",
+          "region_hint": "中央区",
+          "address": "中央区八丁堀3-17-9",
+          "source_url": "https://www.instagram.com/p/DbPLNi6EzdJ/"
+        },
+        "voice": {
+          "source": "x_whitelist",
+          "account": "@mu4324",
+          "name": "宇佐美",
+          "title": "",
+          "text": "ちなみに今年の、\n八丁堀納涼大会\n京華スクエア盆踊り\n8月27〜28日\n#八丁堀京華スクエア盆踊り",
+          "url": "https://x.com/mu4324/status/2081881810930442285",
+          "date": "2026-07-27T23:17:57+00:00",
+          "tweet_id": "2081881810930442285",
+          "tags": [
+            "⭐盆踊ラー",
+            "🟡関心"
+          ],
+          "value_score": 10.0
+        },
+        "source_urls": [
+          "https://x.com/mu4324/status/2081881810930442285",
+          "https://x.com/tukishimanagaya/status/2088167046794326105"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPqnrHbbkAAv5uG.jpg",
+          "https://t.co/N1hQ2lEVSe",
+          "pic.x.com/N1hQ2lEVSe"
+        ],
+        "corroboration_count": 2,
+        "source_count": 2,
+        "lane": "lane3_user_review"
+      },
+      {
+        "candidate_id": "xgap_f0a1b465dccb3a4e",
+        "source_key": "x:2088460671763525885",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 90,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/HAMANOYUedoyu/status/2088460671763525885",
+        "source_text": "\n8/21(金)・22(土)の2日間は、えど遊からも近い\n浜町駅前の浜町公園で\n「中央区大江戸祭り盆踊り大会」があります！\n\n盆踊りなどの様々なイベントや縁日屋台など\n楽しそうなイベントが盛りだくさんです🙌\n\nみんなで盛り上がりましょう！\nhttps://t.co/I7FDtJx1rX https://t.co/B8Jsv7aMZ2",
+        "source_author": "@HAMANOYUedoyu",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@hamanoyuedoyu",
+          "account_name": "HAMANOYU えど遊",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/21"
+        ],
+        "observed_dates": [
+          "2026-08-21"
+        ],
+        "event_group_key": "informal-venue:8a094e9158b0a032",
+        "known_venue_evidence": {
+          "venue": "浜町公園",
+          "region_hint": "中央区",
+          "address": "中央区日本橋浜町2-59",
+          "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
+        },
+        "voice": {
+          "source": "x",
+          "account": "@HAMANOYUedoyu",
+          "name": "HAMANOYU えど遊",
+          "profile_description": "浜町駅、水天宮前駅徒歩7分。安価で気軽、短時間の利用も可能な新しい形の「小型温浴施設」。3つのお風呂♨︎・2つのサウナ・湯Cafeがあります☕️🍻🥛\n1F｜湯Cafe☕︎ 10:00-22:00\n2F・3F｜温浴施設♨︎ 9:00-23:00(最終入場 22:30)\n#えど遊　#湯カフェ",
+          "title": "",
+          "text": "8/21(金)・22(土)の2日間は、えど遊からも近い\n浜町駅前の浜町公園で\n「中央区大江戸祭り盆踊り大会」があります！\n\n盆踊りなどの様々なイベントや縁日屋台など\n楽しそうなイベントが盛りだくさんです🙌\n\nみんなで盛り上がりましょう！\nhttps://t.co/I7FDtJx1rX https://t.co/B8Jsv7aMZ2",
+          "url": "https://x.com/HAMANOYUedoyu/status/2088460671763525885",
+          "date": "2026-08-15T03:00:00+00:00",
+          "tweet_id": "2088460671763525885",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPqJvaabQAARuDx.jpg",
+            "https://t.co/B8Jsv7aMZ2",
+            "pic.x.com/B8Jsv7aMZ2"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/HAMANOYUedoyu/status/2088460671763525885",
+          "https://x.com/natsutr_bon/status/2061795596592419268"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPqJvaabQAARuDx.jpg",
+          "https://t.co/B8Jsv7aMZ2",
+          "pic.x.com/B8Jsv7aMZ2"
+        ],
+        "corroboration_count": 2,
+        "source_count": 2,
         "lane": "lane3_user_review"
       },
       {
@@ -810,6 +1086,7 @@
           "2026-10-12"
         ],
         "event_group_key": "informal:75b0f5839d4bdaa4",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@yumiya_pon",
@@ -827,6 +1104,7 @@
         "source_urls": [
           "https://x.com/yumiya_pon/status/2063865448232636505"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -861,6 +1139,7 @@
           "2026-10-04"
         ],
         "event_group_key": "informal:e5fff6f9da3e5d4c",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@natsutr_bon",
@@ -878,6 +1157,7 @@
         "source_urls": [
           "https://x.com/natsutr_bon/status/2067765707643949227"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -912,6 +1192,7 @@
           "2026-10-04"
         ],
         "event_group_key": "informal:1408035734a888d7",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@toshi4532toshi",
@@ -934,12 +1215,17 @@
         "source_urls": [
           "https://x.com/toshi4532toshi/status/2067804572953829880"
         ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+          "https://t.co/th2pQ2RvCk",
+          "pic.twitter.com/th2pQ2RvCk"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
       },
       {
-        "candidate_id": "xgap_d646860d85c98b9e",
+        "candidate_id": "xgap_a1ab8ff65d6b7299",
         "source_key": "x:2074841869834658034",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
@@ -976,10 +1262,10 @@
           "8/30"
         ],
         "observed_dates": [
-          "2026-08-16",
           "2026-08-30"
         ],
-        "event_group_key": "informal:58694d2396ed9800",
+        "event_group_key": "informal:8784467996327221",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x_proactive",
           "account": "@TaroToda",
@@ -997,6 +1283,7 @@
         "source_urls": [
           "https://x.com/TaroToda/status/2074841869834658034"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -1031,6 +1318,7 @@
           "2026-09-12"
         ],
         "event_group_key": "informal:1729f44445bc57c3",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@toyo_app",
@@ -1052,6 +1340,11 @@
         },
         "source_urls": [
           "https://x.com/toyo_app/status/2075152227652829682"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HMxQyFob0AAttks.jpg",
+          "https://t.co/OgKwaRnYaD",
+          "pic.x.com/OgKwaRnYaD"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -1088,6 +1381,7 @@
           "2026-10-03"
         ],
         "event_group_key": "informal:fefee2bdf13bdae4",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@tukishimanagaya",
@@ -1110,6 +1404,12 @@
         },
         "source_urls": [
           "https://x.com/tukishimanagaya/status/2076346727154815267"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNCoQoUbcAAHVX1.jpg",
+          "https://t.co/fM0yxtZSrv",
+          "pic.x.com/fM0yxtZSrv",
+          "https://pbs.twimg.com/media/HNCoTnIbMAEF-Hf.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -1149,6 +1449,7 @@
           "2026-10-12"
         ],
         "event_group_key": "informal:c69c898e40a3cdd3",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@SNS66524341",
@@ -1166,6 +1467,7 @@
         "source_urls": [
           "https://x.com/SNS66524341/status/2076792900260974804"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -1206,6 +1508,7 @@
           "2026-08-23"
         ],
         "event_group_key": "informal:cc72032aef8e8f98",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@kamatanomi",
@@ -1228,121 +1531,10 @@
         "source_urls": [
           "https://x.com/kamatanomi/status/2078354038559813733"
         ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "lane": "lane3_user_review"
-      },
-      {
-        "candidate_id": "xgap_a3dddff01f8d3b70",
-        "source_key": "x:2079441657993613335",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/natsutr_bon/status/2079441657993613335",
-        "source_text": "\n🏮新宿区公式 8月盆踊り情報🏮\n\n8/1-2 柏木地区六町会\n8/1-2 中落合二丁目町会\n8/15 下落合東町会\n8/22-23 新宿中央公園夏まつり納涼盆踊り\n8/22-23 四谷 大京町会\n8/27-28 四谷 花園町会\n\n★詳細は新宿区公式\nhttps://t.co/zASmuT2vzB",
-        "source_author": "@natsutr_bon",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@natsutr_bon",
-          "account_name": "奈津大郎〘ナツタロ〙",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/1",
-          "8/1",
-          "8/15",
-          "8/22",
-          "8/22",
-          "8/27"
-        ],
-        "observed_dates": [
-          "2026-08-22",
-          "2026-08-27"
-        ],
-        "event_group_key": "informal:9f524b0aa4465fbf",
-        "voice": {
-          "source": "x",
-          "account": "@natsutr_bon",
-          "name": "奈津大郎〘ナツタロ〙",
-          "title": "",
-          "text": "🏮新宿区公式 8月盆踊り情報🏮\n\n8/1-2 柏木地区六町会\n8/1-2 中落合二丁目町会\n8/15 下落合東町会\n8/22-23 新宿中央公園夏まつり納涼盆踊り\n8/22-23 四谷 大京町会\n8/27-28 四谷 花園町会\n\n★詳細は新宿区公式\nhttps://t.co/zASmuT2vzB",
-          "url": "https://x.com/natsutr_bon/status/2079441657993613335",
-          "date": "2026-07-21T05:41:40+00:00",
-          "tweet_id": "2079441657993613335",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/natsutr_bon/status/2079441657993613335"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "lane": "lane3_user_review"
-      },
-      {
-        "candidate_id": "xgap_93e50c9a1ef51306",
-        "source_key": "x:2082613391282045394",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/osakachushin/status/2082613391282045394",
-        "source_text": "\n本町の夏の風物詩🎐北御堂盆おどり開催！河内音頭や屋台、縁日で夏祭り気分を満喫✨家族で楽しもう😊\n\n第54回北御堂盆踊り\n🗓️8/19(水)・8/20(木) 17:00〜20:00\n📍北御堂（本願寺津村別院）（大阪市中央区本町4丁目1-3）\n\nhttps://t.co/0qRo0KLV45 #osakachushin #event https://t.co/R3mdnKhEuX",
-        "source_author": "@osakachushin",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@osakachushin",
-          "account_name": "大阪中心 / The Heart of Osaka 🌸",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/19",
-          "8/20"
-        ],
-        "observed_dates": [
-          "2026-08-19",
-          "2026-08-20"
-        ],
-        "event_group_key": "informal:288b24cb40d48e2e",
-        "voice": {
-          "source": "x",
-          "account": "@osakachushin",
-          "name": "大阪中心 / The Heart of Osaka 🌸",
-          "title": "",
-          "text": "本町の夏の風物詩🎐北御堂盆おどり開催！河内音頭や屋台、縁日で夏祭り気分を満喫✨家族で楽しもう😊\n\n第54回北御堂盆踊り\n🗓️8/19(水)・8/20(木) 17:00〜20:00\n📍北御堂（本願寺津村別院）（大阪市中央区本町4丁目1-3）\n\nhttps://t.co/0qRo0KLV45 #osakachushin #event https://t.co/R3mdnKhEuX",
-          "url": "https://x.com/osakachushin/status/2082613391282045394",
-          "date": "2026-07-29T23:45:00+00:00",
-          "tweet_id": "2082613391282045394",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOYgbW8bMAAr7Hy.jpg",
-            "https://t.co/R3mdnKhEuX",
-            "pic.x.com/R3mdnKhEuX",
-            "https://pbs.twimg.com/media/HOYgbW2a4AA9h47.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/osakachushin/status/2082613391282045394"
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2078353985812230144/img/lzzPFUhi5Ea1iWSD.jpg",
+          "https://t.co/c5lEdbw3Tl",
+          "pic.x.com/c5lEdbw3Tl"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -1394,6 +1586,7 @@
           "2026-08-21"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@event_checker",
@@ -1418,6 +1611,14 @@
         },
         "source_urls": [
           "https://x.com/event_checker/status/2082672552208453855"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOcjo-LWUAEPWJR.jpg",
+          "https://t.co/yYkNhq2YZU",
+          "pic.x.com/yYkNhq2YZU",
+          "https://pbs.twimg.com/media/HOcjpmSXwAARfVZ.jpg",
+          "https://pbs.twimg.com/media/HOcjo_kWUAAM9cQ.jpg",
+          "https://pbs.twimg.com/media/HOcjo6iWcAALSdR.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -1464,9 +1665,11 @@
           "8月22"
         ],
         "observed_dates": [
-          "2026-08-22"
+          "2026-08-22",
+          "2026-08-23"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x_whitelist",
           "account": "@COLOGNECHAN",
@@ -1486,6 +1689,7 @@
         "source_urls": [
           "https://x.com/COLOGNECHAN/status/2083717690775232581"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -1549,9 +1753,12 @@
         "observed_dates": [
           "2026-08-21",
           "2026-08-22",
-          "2026-08-29"
+          "2026-08-23",
+          "2026-08-29",
+          "2026-08-30"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@travelroad5",
@@ -1573,6 +1780,11 @@
         },
         "source_urls": [
           "https://x.com/travelroad5/status/2084967015425679844"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO9Kci_boAA8aOk.jpg",
+          "https://t.co/BTiPSlyCxU",
+          "pic.x.com/BTiPSlyCxU"
         ],
         "corroboration_count": 1,
         "source_count": 1,

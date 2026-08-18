@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "3f90d3c9b3d15262e8017b045b14b379ce89454d654f996bad0f897e4ed24ff4",
-  "input_size_bytes": 1375169,
+  "input_sha256": "9ede974171facee6a97dbbdda527ab36c6286760bbca6eb2294053a7541266e9",
+  "input_size_bytes": 1567452,
   "item_count": 5,
   "items": [
     {
@@ -62,6 +62,7 @@
           "2026-08-21"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@event_checker",
@@ -86,6 +87,14 @@
         },
         "source_urls": [
           "https://x.com/event_checker/status/2082672552208453855"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOcjo-LWUAEPWJR.jpg",
+          "https://t.co/yYkNhq2YZU",
+          "pic.x.com/yYkNhq2YZU",
+          "https://pbs.twimg.com/media/HOcjpmSXwAARfVZ.jpg",
+          "https://pbs.twimg.com/media/HOcjo_kWUAAM9cQ.jpg",
+          "https://pbs.twimg.com/media/HOcjo6iWcAALSdR.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -150,9 +159,11 @@
           "8月22"
         ],
         "observed_dates": [
-          "2026-08-22"
+          "2026-08-22",
+          "2026-08-23"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x_whitelist",
           "account": "@COLOGNECHAN",
@@ -172,6 +183,7 @@
         "source_urls": [
           "https://x.com/COLOGNECHAN/status/2083717690775232581"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
         "event_date_text": "2026\n8/22",
@@ -254,9 +266,12 @@
         "observed_dates": [
           "2026-08-21",
           "2026-08-22",
-          "2026-08-29"
+          "2026-08-23",
+          "2026-08-29",
+          "2026-08-30"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@travelroad5",
@@ -279,6 +294,11 @@
         "source_urls": [
           "https://x.com/travelroad5/status/2084967015425679844"
         ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO9Kci_boAA8aOk.jpg",
+          "https://t.co/BTiPSlyCxU",
+          "pic.x.com/BTiPSlyCxU"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
         "event_date_text": "2026\n8/6",
@@ -288,6 +308,95 @@
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_a99e68e0d7bf14b6"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 205,
+      "title": "麻布十番納涼盆踊り大会",
+      "event_name": "麻布十番納涼盆踊り大会",
+      "venue": "網代公園",
+      "event_year": 2026,
+      "source_key": "x:2089457457554694346",
+      "source_url": "https://x.com/Party_AnimalsJP/status/2089457457554694346",
+      "recommended_action": "confirm_current_year_date",
+      "payload": {
+        "candidate_id": "xgap_f6da3e7254871a87",
+        "source_key": "x:2089457457554694346",
+        "lane_hint": "lane2",
+        "candidate_kind": "missing_date",
+        "priority_score": 205,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "venue": "網代公園",
+          "area": "",
+          "venue_area": "港区",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "date_start": "",
+          "date_end": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/Party_AnimalsJP/status/2089457457554694346",
+        "source_text": "\n【開催まであと4日！】\n8/22(土)23(日)🪭麻布十番商店街一帯にて\n「🏮第60回 麻布十番納涼まつり」開催！\n👉 詳細：https://t.co/aAi3ZI3Clz\n\n🍴 工夫を凝らした露店が立ち並ぶ、麻布十番の夏の風物詩！\n🎤 ステージ「10-BANG」では多彩なパフォーマンス！\n🌏 今年も駐日リトアニア共和国大使館ブースが出展予定！\n#麻布十番納涼まつり #麻布十番 #夏祭り #大使館",
+        "source_author": "@Party_AnimalsJP",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@party_animalsjp",
+          "account_name": "国際交流イベント情報~パーティアニマルズ",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/22"
+        ],
+        "observed_dates": [
+          "2026-08-22"
+        ],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x_whitelist",
+          "account": "@Party_AnimalsJP",
+          "name": "国際交流イベント情報~パーティアニマルズ",
+          "profile_description": "米軍基地を一般開放して開催するイベントや、各国の大使館が参加するお祭り等、国際的なイベント情報をつぶやいています。2025年は463個の国際的なイベントを紹介しました。気軽にフォローしたりリツイットてください♪",
+          "title": "",
+          "text": "【開催まであと4日！】\n8/22(土)23(日)🪭麻布十番商店街一帯にて\n「🏮第60回 麻布十番納涼まつり」開催！\n👉 詳細：https://t.co/aAi3ZI3Clz\n\n🍴 工夫を凝らした露店が立ち並ぶ、麻布十番の夏の風物詩！\n🎤 ステージ「10-BANG」では多彩なパフォーマンス！\n🌏 今年も駐日リトアニア共和国大使館ブースが出展予定！\n#麻布十番納涼まつり #麻布十番 #夏祭り #大使館",
+          "url": "https://x.com/Party_AnimalsJP/status/2089457457554694346",
+          "date": "2026-08-17T21:00:52+00:00",
+          "tweet_id": "2089457457554694346",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "critique_post": false,
+          "value_score": 16.0
+        },
+        "source_urls": [
+          "https://x.com/Party_AnimalsJP/status/2089457457554694346"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "observed_candidate": {
+          "candidate_key": "occ_e4a7eb02f5fed215"
+        }
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_9c73e6e1b3a00668"
     },
     {
       "kind": "x_gap",
@@ -332,6 +441,7 @@
           "2026-08-22"
         ],
         "event_group_key": "",
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
           "account": "@8_chokai",
@@ -349,96 +459,12 @@
         "source_urls": [
           "https://x.com/8_chokai/status/2056637018248229108"
         ],
+        "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1
       },
       "source_id": "x_gap",
       "inbox_id": "inbox_4a405f712461c0ae"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "へびくぼフェスティバル「デジタルdeスタンプラリー」開催🐍\n【参加方法】\n参加登録のQRコードを読み取って参加スタート！（各イベントの会場内にも掲出します）\nへ",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2069399177852043484",
-      "source_url": "https://x.com/hebikubojinja/status/2069399177852043484",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_8bb57d2373174b91",
-        "source_key": "x:2069399177852043484",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/hebikubojinja/status/2069399177852043484",
-        "source_text": "\nへびくぼフェスティバル「デジタルdeスタンプラリー」開催🐍\n【参加方法】\n参加登録のQRコードを読み取って参加スタート！（各イベントの会場内にも掲出します）\nへびくぼフェスティバルの各イベント（下記の①～⑤）に参加し、各会場に設置されているQRコードを読み取ってデジタルスタンプを集めてください✨\nスタンプは1個から最大5個まで集めることができます。集めたスタンプの数だけ抽選にご参加いただけます⭐️\n①６月２４日（水）or８月２３日（日）つちのとみの市　② ７月７日（火）１００万人の七夕線香花火ナイト　③ ７月１１日（土）or１２日（日） 夏フェス盆踊り　④ ８月２９日（土） 戸越６丁目町会・大原盆踊り　⑤ ９月１９日（土）or２０日（日） 日本白蛇三大聖地集結！しろへびサミットinしながわ\n抽選会　９月１９日（土）２０日（日）しろへびサミットinしながわ　１２時～１７時　品川区・蛇窪のブース\n景品　特賞/山口県岩国市天然記念物しろへび頭部脱皮御守り３名様、１等/群馬県沼田市老神温泉・宿泊補助券３万円分３名様、２等/品川区蛇窪オリジナルクリアファイル１００名様",
-        "source_author": "@hebikubojinja",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@hebikubojinja",
-          "account_name": "蛇窪神社　公式",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "６月２４日",
-          "８月２３日",
-          "７月７日",
-          "７月１１日",
-          "８月２９日",
-          "９月１９日",
-          "９月１９日",
-          "１２時",
-          "１７時"
-        ],
-        "observed_dates": [
-          "2026-08-23",
-          "2026-08-29",
-          "2026-09-19"
-        ],
-        "event_group_key": "",
-        "voice": {
-          "source": "x",
-          "account": "@hebikubojinja",
-          "name": "蛇窪神社　公式",
-          "title": "",
-          "text": "へびくぼフェスティバル「デジタルdeスタンプラリー」開催🐍\n【参加方法】\n参加登録のQRコードを読み取って参加スタート！（各イベントの会場内にも掲出します）\nへびくぼフェスティバルの各イベント（下記の①～⑤）に参加し、各会場に設置されているQRコードを読み取ってデジタルスタンプを集めてください✨\nスタンプは1個から最大5個まで集めることができます。集めたスタンプの数だけ抽選にご参加いただけます⭐️\n①６月２４日（水）or８月２３日（日）つちのとみの市　② ７月７日（火）１００万人の七夕線香花火ナイト　③ ７月１１日（土）or１２日（日） 夏フェス盆踊り　④ ８月２９日（土） 戸越６丁目町会・大原盆踊り　⑤ ９月１９日（土）or２０日（日） 日本白蛇三大聖地集結！しろへびサミットinしながわ\n抽選会　９月１９日（土）２０日（日）しろへびサミットinしながわ　１２時～１７時　品川区・蛇窪のブース\n景品　特賞/山口県岩国市天然記念物しろへび頭部脱皮御守り３名様、１等/群馬県沼田市老神温泉・宿泊補助券３万円分３名様、２等/品川区蛇窪オリジナルクリアファイル１００名様",
-          "url": "https://x.com/hebikubojinja/status/2069399177852043484",
-          "date": "2026-06-23T12:36:26+00:00",
-          "tweet_id": "2069399177852043484",
-          "tags": [
-            "🟢一次レポ",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HLf7lLKbYAABwzN.jpg",
-            "https://t.co/MovmJkVD9A",
-            "pic.twitter.com/MovmJkVD9A",
-            "https://pbs.twimg.com/media/HLf7lLIbAAA5szz.jpg",
-            "https://pbs.twimg.com/media/HLf7lLMaoAEY-Ba.jpg",
-            "https://pbs.twimg.com/media/HLf7lLSaAAA05_P.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/hebikubojinja/status/2069399177852043484"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_8c76fe09a1be2eb7"
     }
   ],
   "selection": {
@@ -449,8 +475,8 @@
       "x:2082672552208453855",
       "x:2083717690775232581",
       "x:2084967015425679844",
-      "x:2056637018248229108",
-      "x:2069399177852043484"
+      "x:2089457457554694346",
+      "x:2056637018248229108"
     ]
   },
   "write_mode": "snapshot_only_default_off",

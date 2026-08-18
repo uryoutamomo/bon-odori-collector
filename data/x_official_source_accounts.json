@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-18",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -94,6 +94,14 @@
     {
       "handle": "@620tanaka",
       "name": "田中むつお｜松戸市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@84yusuke",
+      "name": "橋爪ゆうすけ【浦安市議会議員】",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -298,6 +306,14 @@
     {
       "handle": "@aoki_1117",
       "name": "青木 たけし@公明党 福生市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@apollotheaters",
+      "name": "おおつぼ@商店街盛り上げボーイズ(ビーバー)",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -645,6 +661,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@enryakuji_hiei",
+      "name": "延暦寺【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@eriko_omori",
       "name": "大森江里子🌾(おおもりえりこ)✿中道改革連合✿衆議院議員",
       "source_type": "official",
@@ -711,6 +735,22 @@
     {
       "handle": "@fumiona12",
       "name": "中沢ふみお　台東区議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@funfunmiyukids",
+      "name": "水柿 美幸　筑西市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@furuboutomoo",
+      "name": "ふるぼう知生　区議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -833,6 +873,14 @@
     {
       "handle": "@goodjobkomei",
       "name": "あずま健太郎 大東市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@gorillian",
+      "name": "ゴリラマスター／GORILLA（高円寺ゴリラ）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2714,6 +2762,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@maenocho2chome",
+      "name": "前野町二丁目町会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@maho830201",
       "name": "有里 まほ 【豊島区議会議員】",
       "source_type": "official",
@@ -2887,9 +2943,20 @@
       "handle": "@masashisakamoto",
       "name": "坂本まさし｜都議会議員(世田谷区) 国民民主党東京都議団 幹事長",
       "source_type": "official",
-      "linked_events": [],
+      "linked_events": [
+        {
+          "series_id": "ser_02e36b770bac7bef",
+          "series_name": "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。",
+          "ward": "世田谷区",
+          "confidence": "possible",
+          "evidence_urls": [
+            "https://x.com/masashisakamoto/status/2088907681646174520"
+          ]
+        }
+      ],
       "decided_by": "machine",
-      "tier": "unlinked"
+      "tier": "pending_review",
+      "pending_since": "2026-08-18"
     },
     {
       "handle": "@masumoto_saori",
@@ -3899,6 +3966,14 @@
     {
       "handle": "@okamotoosyou",
       "name": "石勝山 金常寺大石不動院",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@okanomachi_biei",
+      "name": "美瑛町観光協会＠美瑛子",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5215,6 +5290,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@teramura47",
+      "name": "寺村よしひさ",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@teranisi_k",
       "name": "てらにし敬子／門真市議会議員／公明党",
       "source_type": "official",
@@ -5249,6 +5332,14 @@
     {
       "handle": "@terayama_town",
       "name": "寺山町自治会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@tetsuo_sasaki",
+      "name": "ささき哲夫🌾公明党大阪市会議員(西淀川区)",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5411,6 +5502,14 @@
     {
       "handle": "@tsubasa_saitoh",
       "name": "斉藤 つばさ(前江戸川区議会議員)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@tsuchidashin",
+      "name": "土田 しん |衆議院議員(3期)|東京13区|足立区",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5848,6 +5947,14 @@
     {
       "handle": "@yatsugi_koji",
       "name": "やつぎこうじ@江東区議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@ydxsxk96wyjpcr9",
+      "name": "松田ともこ🌹公明党荒川区議会議員🌹４期",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
