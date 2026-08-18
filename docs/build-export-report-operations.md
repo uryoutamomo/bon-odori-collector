@@ -31,6 +31,31 @@ These can remain in scheduled or local generation flows:
 These do not directly mutate Notion, S3, CloudFront, or Google Calendar.
 Public deployment remains controlled by site sync/deploy workflows.
 
+## Scheduled Narrow Master RDB Sync
+
+`sync_event_date_predictions_rdb.py` is the one scheduled exception to the
+manual derived-table rule below. It synchronizes rows owned by
+`source='event_date_predictions'` from `data/event_date_predictions.json` into
+`predicted_occurrence_dates`, and inserts a minimal historical-candidate support
+row only when the foreign key target is missing. It does not rebuild, update, or
+delete existing historical candidates, change confirmed occurrence dates, or
+overwrite manual/LLM predictions.
+
+The `collect.yml` wrapper must keep all of these controls together:
+
+- default dry-run against a copied DB, followed by execute with the exact
+  `SYNC EVENT DATE PREDICTIONS` confirmation;
+- exact/alias event identity plus venue identity, with ambiguous or unmatched
+  rows failing the whole transaction;
+- Master RDB audit and one checksum-CAS publish shared with event-state axes;
+- refetch followed by `--check`, which requires zero remaining changes;
+- JSON reports uploaded with the event-state evidence artifact.
+
+This exception exists because the YouTube workflow regenerates predictions
+independently. On 2026-08-17 and 2026-08-18, JSON advanced while the RDB did not,
+and the public hard-fail correctly stopped both collection runs. Do not fix that
+incident by weakening the public fallback guard.
+
 ## Manual Confirmation Required
 
 These are build scripts, but they write into Master RDB derived tables:
@@ -61,7 +86,9 @@ flowchart TD
 ## Automation Boundary
 
 Do not add schedules around derived-table rebuilds without first updating this
-runbook and `docs/manual-auto-operations-inventory.md`.
+runbook and `docs/manual-auto-operations-inventory.md`. The narrow prediction
+sync above is not permission to schedule the broader
+`build_historical_promotion_candidates.py` rebuild.
 
 If a derived rebuild becomes part of the normal Master RDB regeneration path,
 prefer a single explicit rebuild workflow that:
