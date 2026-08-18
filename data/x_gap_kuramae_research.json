@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "generated_by": "おと（Codex）/Terra",
+  "generated_at": "2026-08-18T16:14:10+09:00",
+  "summary": {
+    "total": 1,
+    "classification_counts": {
+      "confirmed_2026": 0,
+      "corroborated_2026": 1,
+      "personal_only": 0,
+      "conflicting": 0,
+      "false": 0
+    },
+    "web_additional_verification_count": 2,
+    "primary_source_found_count": 0,
+    "scope": "2026年の主催・行政・会場の一次情報を優先して検索。一次情報は見つからなかったが、元X投稿とは独立した2件の2026年言及が日付・蔵前／新堀通り・盆踊り企画を整合的に支持した。"
+  },
+  "decisions": [
+    {
+      "source_id": "x_gap",
+      "source_key": "x:2067765707643949227",
+      "inbox_id": "inbox_0fe2591205f0b80a",
+      "source_payload_hash": "eb92f006160b76daea35db0be49c0febbd64df122940e354f74b548e5f0aff08",
+      "current_source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
+      "classification": "corroborated_2026",
+      "event_name": "蔵前つながる盆ダンス",
+      "event_date": "2026-10-04",
+      "event_time": "15:00-19:00",
+      "venue": "新堀通り（東東京信用金庫 三筋支店周辺）",
+      "evidence_urls": [
+        "https://ameblo.jp/taitokulove/entry-12970409005.html",
+        "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&p=%E5%8F%B0%E6%9D%B1%E5%8C%BA+%E3%81%8A%E7%A5%AD%E3%82%8A&rkf=1"
+      ],
+      "evidence": [
+        {
+          "url": "https://ameblo.jp/taitokulove/entry-12970409005.html",
+          "source_type": "independent local event blog",
+          "is_primary": false,
+          "observed": "2026-06-27公開。10月4日に蔵前エリアで「蔵前つながる盆ダンス」を開催、新堀通りを通行止めにして盆踊り・ステージ・物販を行うと記載。"
+        },
+        {
+          "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&p=%E5%8F%B0%E6%9D%B1%E5%8C%BA+%E3%81%8A%E7%A5%AD%E3%82%8A&rkf=1",
+          "source_type": "performer announcement indexed by Yahoo!リアルタイム検索",
+          "is_primary": false,
+          "observed": "出演者側の2026年投稿として、イベント名、2026-10-04、伝統曲と盆ダンスを含む企画であることを告知。検索結果では原投稿の固定URLを取得できなかった。"
+        }
+      ],
+      "primary_source_search_result": "台東区・会場・蔵前商店街および主催者と特定できる2026年の公式告知ページは、今回の検索範囲では発見できなかった。",
+      "recommended_decision": "needs_official_confirmation",
+      "reason_detail": "元の個人X投稿だけではない独立した2026年言及により、イベント名・10月4日・蔵前／新堀通りでの盆踊り企画は相互に整合する。ただし主催・行政・会場の一次告知で日時・会場・開催確定を確認できていないため、登録・日程確定には進めず公式確認待ちを推奨する。",
+      "actor_type": "agent",
+      "actor_id": "おと（Codex）/Terra",
+      "decided_at": "2026-08-18T16:14:10+09:00"
+    }
+  ]
+}

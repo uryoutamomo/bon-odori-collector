@@ -23,6 +23,15 @@ ALLOWED_DECISIONS = {
     "daily_term_candidate": {"採用", "不採用"},
     "accepted_venue_song_missing_venue": {"会場追加", "既存に統合", "不採用"},
     "youtube_evidence": {"採用", "不採用"},
+    "historical_reference_quality": {"過去実績として維持", "過去実績から外す"},
+    "publication_gap": {
+        "既存曲へ統合",
+        "曲名ノイズとして除外",
+        "新規曲候補として維持",
+        "2026年根拠なし",
+        "公開同期対象",
+    },
+    "x_gap": {"公式確認待ち"},
 }
 REQUIRED_FIELDS = {
     "source_id",

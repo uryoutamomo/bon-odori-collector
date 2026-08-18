@@ -287,15 +287,23 @@ updated_for: 419cd04
   根拠や意味が変わった別候補まで隠すため、判定時の内容全体の指紋を必須にする。
   同日のYouTubeパイロット43件も同じ契約で凍結し、DB未同期の新着とDB側で内容が変わった行を
   古い判断で閉じないようにした。
+  続く全件処理では、当時の現在集合に残った505件（YouTube 247、過去実績60、公開差分197、X 1）を
+  同じ完全一致契約で凍結した。公開差分は、曲名84件を既存曲へ統合、55件をタイトル断片として除外、
+  8件を新規曲候補として維持し、2026年日程の直接根拠が無い38件は今年の日付へ転用しなかった。
+  公開辞書未同期12件の `公開同期対象` とX 1件の `公式確認待ち` も、正本factを変更する指示ではなく、
+  現在入力に対するレビュー完了分類である。
 - **破れたときの症状**: 判断済みの曲・会場が日次で再び待ち一覧へ現れる。逆に、証拠内容が変わった候補が
   過去判断で勝手に消える。LLM判断が人判断として記録される。
 - **守っているコード**: `review_inbox_adapters/backlog_decision_overlay.py`、
   `review_inbox_adapters/low_priority_adapters.py` と `review_inbox_adapters/youtube_adapter.py` の `build_snapshot()`、
-  `review_console/data.py` の `decision_overlay_auto_resolution()`
+  `review_console/data.py` の `decision_overlay_auto_resolution()`、
+  `scripts/build_publication_gap_song_identity_llm_decisions.py`、
+  `scripts/build_review_backlog_completion_overlays.py`
 - **守っているテスト**: `tests/test_review_inbox_low_priority_adapters.py::test_exact_decision_overlay_closes_only_the_frozen_payload`、
   `tests/test_review_inbox_low_priority_adapters.py::test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors`、
   `tests/test_review_inbox_youtube_adapter.py::ReviewInboxYouTubeAdapterTest::test_frozen_agent_decision_filters_only_the_exact_youtube_payload`、
-  `tests/test_review_console.py::ReviewConsoleTests::test_exact_overlay_decision_is_attributed_to_agent_and_stale_hash_stays_open`
+  `tests/test_review_console.py::ReviewConsoleTests::test_exact_overlay_decision_is_attributed_to_agent_and_stale_hash_stays_open`、
+  `tests/test_review_backlog_llm_completion.py`
 
 ### INV-RVW-020 既存開催回へ完全一致した古い人待ちholdは、内容が変わらない間だけ画面から外す
 
