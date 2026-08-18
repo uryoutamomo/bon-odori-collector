@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T08:12:22Z",
-  "generated_for_commit": "be1d1f1",
+  "generated_at": "2026-08-18T08:13:43Z",
+  "generated_for_commit": "e9a36d9",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -500,6 +500,7 @@
         "report_apply/official_notice_report_helpers.py",
         "report_apply/rdb_apply_support.py",
         "report_apply/retract_x_song_materializations.py",
+        "report_apply/review_backlog_change_requests.py",
         "report_apply/x_song_apply_safety.py",
         "run_event_state_axes_migration.py",
         "run_post_batch_maintenance.py",
@@ -507,8 +508,8 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 3,
-        "files_changed_since": 6
+        "commits_since": 4,
+        "files_changed_since": 7
       },
       "version": "1.13",
       "revision_count": 14,
@@ -889,8 +890,8 @@
         "triage_weekly_song_candidates.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 2
+        "commits_since": 3,
+        "files_changed_since": 3
       },
       "version": "1.7",
       "revision_count": 8,
@@ -1052,8 +1053,8 @@
         "youtube_channels/extract_youtube_setlists.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 2,
+        "files_changed_since": 2
       },
       "version": "1.4",
       "revision_count": 5,
@@ -1293,7 +1294,7 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 4,
+        "commits_since": 5,
         "files_changed_since": 3
       },
       "version": "1.2",
@@ -2432,6 +2433,7 @@
     "report_apply/official_notice_report_helpers.py": "L1-master",
     "report_apply/rdb_apply_support.py": "L1-master",
     "report_apply/retract_x_song_materializations.py": "L1-master",
+    "report_apply/review_backlog_change_requests.py": "L1-master",
     "report_apply/x_song_apply_safety.py": "L1-master",
     "run_event_state_axes_migration.py": "L1-master",
     "run_post_batch_maintenance.py": "L1-master",
@@ -2590,9 +2592,9 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 352,
-    "owned": 259,
-    "unowned": 93,
+    "tracked_source_files": 357,
+    "owned": 260,
+    "unowned": 97,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
