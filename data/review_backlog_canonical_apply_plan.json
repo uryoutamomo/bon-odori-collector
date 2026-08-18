@@ -1,0 +1,4910 @@
+{
+  "schema_version": 1,
+  "generated_by": "おと（Codex）",
+  "generated_at": "2026-08-18T17:45:00+09:00",
+  "mode": "read_only_dry_run",
+  "master_db": {
+    "provided_path": "/Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite",
+    "sha256": "6e62796cbfd5df1d6eb5654ffbdadbe82ec95d9dd7c52fc5926b973f5e7d4e64",
+    "matches_frozen_review_input": true,
+    "opened_read_only": true
+  },
+  "input_lineage": {
+    "publication_song_identity": {
+      "path": "data/publication_gap_song_identity_llm_decisions.json",
+      "sha256": "95c55d1500d844d52c679905255b612ec6e7420cf438ff34baa433a5f1a1c850"
+    },
+    "youtube": {
+      "path": "data/review_backlog_youtube_llm_decisions_remaining.json",
+      "sha256": "836fc4a1096bfcd57be05eda4eb65c2fb9c4ffad7ee0f8b265212a803b6e1e26"
+    },
+    "historical_reference_quality": {
+      "path": "data/historical_reference_quality_llm_research.json",
+      "sha256": "38d7bc30627b87f9f9d12e05fa7703d553626f48060ed87e54e26869c3c305eb"
+    },
+    "publication_event_date": {
+      "path": "data/publication_gap_event_date_research.json",
+      "sha256": "ab53f8793ad229c7b9bfabc4e55f6d7ee82a50685d7305d5635b0e6d08f437c6"
+    },
+    "x_gap": {
+      "path": "data/x_gap_kuramae_research.json",
+      "sha256": "37739d984043b58a5174628ca2123551c9cbfb97d984972a496652eb0c8e2071"
+    },
+    "general_overlay": {
+      "path": "data/review_backlog_decision_overlay.json",
+      "sha256": "eb82d9828320cd65612d21bc4fa7c40ec0b4b134d2749def8050f7c5391b657d"
+    }
+  },
+  "summary": {
+    "review_decision_count": 505,
+    "decision_counts": {
+      "youtube": 247,
+      "publication_song_identity": 147,
+      "historical_reference_quality": 60,
+      "publication_event_date": 38,
+      "publication_sync": 12,
+      "x_gap": 1
+    },
+    "production_write_ready_count": 0,
+    "canonical_write_performed": false,
+    "separate_repository_sync_count": 12,
+    "date_promotions_allowed": 0
+  },
+  "canonical_write_boundary": {
+    "would_write": false,
+    "apply_mode_exists": false,
+    "reason": "The required relink, merge, retraction, candidate-registration, identity-packet, and public-site sync materializers are not part of this read-only plan. Production application also requires separate explicit user approval for an exact target and action."
+  },
+  "publication_song_identity": {
+    "summary": {
+      "decision_count": 147,
+      "decision_counts": {
+        "曲名ノイズとして除外": 55,
+        "既存曲へ統合": 84,
+        "新規曲候補として維持": 8
+      },
+      "action_counts": {
+        "source_public_only_no_rdb_row": 98,
+        "already_matched_current_rdb": 5,
+        "requires_candidate_registration_from_public_source": 8,
+        "requires_relink_materializer": 7,
+        "blocked_target_song_missing_from_rdb": 16,
+        "requires_retraction_materializer": 11,
+        "requires_merge_materializer": 2
+      },
+      "rdb_source_row_count": 72,
+      "rdb_conflict_row_count": 2,
+      "target_missing_from_rdb_count": 16
+    },
+    "items": [
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:24",
+        "inbox_id": "inbox_51f3f0305b26ad66",
+        "raw_song_name": "24",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:24年赤坂日枝神社盆踊り",
+        "inbox_id": "inbox_1acaf1342d08d20b",
+        "raw_song_name": "24年赤坂日枝神社盆踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25",
+        "inbox_id": "inbox_ca3c93d728b7682c",
+        "raw_song_name": "25",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25 / Bon dance to tune of Southern All Stars in Tokyo.",
+        "inbox_id": "inbox_b84a3c4029b07052",
+        "raw_song_name": "25 / Bon dance to tune of Southern All Stars in Tokyo.",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25 in Ebisu, Tokyo.",
+        "inbox_id": "inbox_d2ae7a0589f8ad49",
+        "raw_song_name": "25 in Ebisu, Tokyo.",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25 with heavy rain.",
+        "inbox_id": "inbox_d34334bd52ffedd4",
+        "raw_song_name": "25 with heavy rain.",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25 中編",
+        "inbox_id": "inbox_c01ac4996c3c6e14",
+        "raw_song_name": "25 中編",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25 前編",
+        "inbox_id": "inbox_74d75abee62c8b5a",
+        "raw_song_name": "25 前編",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25 後編",
+        "inbox_id": "inbox_8e9821968cde16bb",
+        "raw_song_name": "25 後編",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25, Tokyo, Japan.",
+        "inbox_id": "inbox_05a4ed5cf24c2d36",
+        "raw_song_name": "25, Tokyo, Japan.",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25.",
+        "inbox_id": "inbox_70641055f8ba2be9",
+        "raw_song_name": "25.",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:25】",
+        "inbox_id": "inbox_d6c16d1ede373806",
+        "raw_song_name": "25】",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:65日の紙飛行機",
+        "inbox_id": "inbox_6080baad3a07ea9a",
+        "raw_song_name": "65日の紙飛行機",
+        "decision": "既存曲へ統合",
+        "target_song_name": "365日の紙飛行機",
+        "resolved_target_song_ids": [
+          "song_a17ffbf66077750a"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:APT.",
+        "inbox_id": "inbox_ff09b620647b9e5b",
+        "raw_song_name": "APT.",
+        "decision": "既存曲へ統合",
+        "target_song_name": "APT.",
+        "resolved_target_song_ids": [
+          "song_cand_2f5d98a7a5323fbc"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "already_matched_current_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:BLUE BLUR(Live)",
+        "inbox_id": "inbox_e19c8cf8c11ae9c2",
+        "raw_song_name": "BLUE BLUR(Live)",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "BLUE BLUR",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:DJタイム",
+        "inbox_id": "inbox_3de8ef914da07f39",
+        "raw_song_name": "DJタイム",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:EDM盆踊り",
+        "inbox_id": "inbox_962aa657c80b54dd",
+        "raw_song_name": "EDM盆踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:EZDODANCE",
+        "inbox_id": "inbox_5bb32d1f7f3f5f86",
+        "raw_song_name": "EZDODANCE",
+        "decision": "既存曲へ統合",
+        "target_song_name": "EZ DO DANCE",
+        "resolved_target_song_ids": [
+          "song_cand_f9d27bc7af68d3d5"
+        ],
+        "rdb_source_row_count": 4,
+        "rdb_evidence_link_count": 4,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:LOVE SO SWEET",
+        "inbox_id": "inbox_17e878571fa62a7f",
+        "raw_song_name": "LOVE SO SWEET",
+        "decision": "既存曲へ統合",
+        "target_song_name": "Love so sweet",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:Livin’On A Prayer",
+        "inbox_id": "inbox_56496c7cbd085265",
+        "raw_song_name": "Livin’On A Prayer",
+        "decision": "既存曲へ統合",
+        "target_song_name": "Livin' On A Prayer",
+        "resolved_target_song_ids": [
+          "song_cand_5f1970e7f3079707"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "already_matched_current_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:September",
+        "inbox_id": "inbox_35cd75c932fe3994",
+        "raw_song_name": "September",
+        "decision": "既存曲へ統合",
+        "target_song_name": "September",
+        "resolved_target_song_ids": [
+          "song_cand_85f2aea244dabe24"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "already_matched_current_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:USA",
+        "inbox_id": "inbox_c41b997209ff2459",
+        "raw_song_name": "USA",
+        "decision": "既存曲へ統合",
+        "target_song_name": "U.S.A.",
+        "resolved_target_song_ids": [
+          "song_cand_3cd0f6484b7e10a3"
+        ],
+        "rdb_source_row_count": 3,
+        "rdb_evidence_link_count": 4,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:Y.M.C.A.",
+        "inbox_id": "inbox_2d64aad2d4bfd321",
+        "raw_song_name": "Y.M.C.A.",
+        "decision": "既存曲へ統合",
+        "target_song_name": "YMCA",
+        "resolved_target_song_ids": [
+          "song_cand_de05b7d6fad5500d"
+        ],
+        "rdb_source_row_count": 2,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "already_matched_current_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:いわき やっちき",
+        "inbox_id": "inbox_bfa46bede14426df",
+        "raw_song_name": "いわき やっちき",
+        "decision": "既存曲へ統合",
+        "target_song_name": "いわきやっちき",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:おどりはだり1",
+        "inbox_id": "inbox_242276521da60534",
+        "raw_song_name": "おどりはだり1",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:おどりはだり2ドダレバチサンバ",
+        "inbox_id": "inbox_a43c0e577fb895cf",
+        "raw_song_name": "おどりはだり2ドダレバチサンバ",
+        "decision": "既存曲へ統合",
+        "target_song_name": "どだればち・サンバ",
+        "resolved_target_song_ids": [
+          "song_5e846f123a32ad09"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:おどりはだり3",
+        "inbox_id": "inbox_6d8e641125b26e82",
+        "raw_song_name": "おどりはだり3",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:おどりはだり4",
+        "inbox_id": "inbox_4d75149d2883a808",
+        "raw_song_name": "おどりはだり4",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:おどりはだり5",
+        "inbox_id": "inbox_2065926e00ac7540",
+        "raw_song_name": "おどりはだり5",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:お囃子&獅子舞",
+        "inbox_id": "inbox_49e70f86d90c4440",
+        "raw_song_name": "お囃子&獅子舞",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:さくら音頭(生歌)",
+        "inbox_id": "inbox_8b5a6fa05b32d381",
+        "raw_song_name": "さくら音頭(生歌)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "さくら音頭",
+        "resolved_target_song_ids": [
+          "song_f30b68bf2bf05ec0"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:まとめ1",
+        "inbox_id": "inbox_192333e4fcdf6472",
+        "raw_song_name": "まとめ1",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:まとめ2",
+        "inbox_id": "inbox_9e9a25d9ad089aa5",
+        "raw_song_name": "まとめ2",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:ダンシング・ヒーロー",
+        "inbox_id": "inbox_f756716e5ce90b98",
+        "raw_song_name": "ダンシング・ヒーロー",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ダンシングヒーロー",
+        "resolved_target_song_ids": [
+          "song_91e0bb2ffff44fc0"
+        ],
+        "rdb_source_row_count": 29,
+        "rdb_evidence_link_count": 31,
+        "rdb_conflict_row_count": 0,
+        "action": "already_matched_current_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:ダンシング・ヒーロー(生歌)",
+        "inbox_id": "inbox_3bc333ad38027b82",
+        "raw_song_name": "ダンシング・ヒーロー(生歌)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ダンシングヒーロー",
+        "resolved_target_song_ids": [
+          "song_91e0bb2ffff44fc0"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:ドダレバチ(津軽甚句)",
+        "inbox_id": "inbox_45912f2a9fbee214",
+        "raw_song_name": "ドダレバチ(津軽甚句)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "津軽甚句",
+        "resolved_target_song_ids": [
+          "song_b8c94b3dc0bd45bb"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:バハマ・ママ",
+        "inbox_id": "inbox_c74ef61b1dd0bdf5",
+        "raw_song_name": "バハマ・ママ",
+        "decision": "既存曲へ統合",
+        "target_song_name": "バハマ・ママ",
+        "resolved_target_song_ids": [
+          "song_7e160b25ebfb0de2"
+        ],
+        "rdb_source_row_count": 8,
+        "rdb_evidence_link_count": 7,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:ムーンライトステーション",
+        "inbox_id": "inbox_d3d77059f5b8c3ce",
+        "raw_song_name": "ムーンライトステーション",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "ムーンライトステーション",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:ムーンライト伝説",
+        "inbox_id": "inbox_3e4b89e7d376ded1",
+        "raw_song_name": "ムーンライト伝説",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "ムーンライト伝説",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:ラジオ体操",
+        "inbox_id": "inbox_28ee8dc966a16970",
+        "raw_song_name": "ラジオ体操",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:下北沢駅東口周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_804980c96c30cd35",
+        "raw_song_name": "下北沢駅東口周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:僕の生まれは郡山(生歌)",
+        "inbox_id": "inbox_4f864d8b4522d51c",
+        "raw_song_name": "僕の生まれは郡山(生歌)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "僕の生まれは郡山",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:円光院駐車場周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_4c5ee5d2e2540a61",
+        "raw_song_name": "円光院駐車場周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:切腹ピストルズ開催鳴らし",
+        "inbox_id": "inbox_e52810e69e7f1b86",
+        "raw_song_name": "切腹ピストルズ開催鳴らし",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:千本櫻",
+        "inbox_id": "inbox_5cf1de63c78cc0e1",
+        "raw_song_name": "千本櫻",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "千本櫻",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:千歳船橋駅前広場周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_762bb5b7c6f3f22b",
+        "raw_song_name": "千歳船橋駅前広場周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:南口広場周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_2c835b318629f36f",
+        "raw_song_name": "南口広場周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_cbcd40f45c1b3c96",
+        "raw_song_name": "周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:外国人も一緒になって阿波踊り",
+        "inbox_id": "inbox_5bbe6cc1ae537422",
+        "raw_song_name": "外国人も一緒になって阿波踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 2,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:大井町駅前中央通り周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_39608f058d8d058f",
+        "raw_song_name": "大井町駅前中央通り周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:大人の部",
+        "inbox_id": "inbox_bf387951a1d3478d",
+        "raw_song_name": "大人の部",
+        "decision": "既存曲へ統合",
+        "target_song_name": "相馬盆唄",
+        "resolved_target_song_ids": [
+          "song_cand_2f570f729ff76eaa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:大大和会(江州音頭)",
+        "inbox_id": "inbox_a5dc5daa38de35a5",
+        "raw_song_name": "大大和会(江州音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "江州音頭",
+        "resolved_target_song_ids": [
+          "song_7b78f35fc2d74baa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:大大和稔龍(江州音頭)",
+        "inbox_id": "inbox_0d684801ac724b3b",
+        "raw_song_name": "大大和稔龍(江州音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "江州音頭",
+        "resolved_target_song_ids": [
+          "song_7b78f35fc2d74baa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:好きの有志が季節",
+        "inbox_id": "inbox_55a1c70091796bff",
+        "raw_song_name": "好きの有志が季節",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:子どもの部",
+        "inbox_id": "inbox_1b1e7caba2f2c6f0",
+        "raw_song_name": "子どもの部",
+        "decision": "既存曲へ統合",
+        "target_song_name": "相馬盆唄",
+        "resolved_target_song_ids": [
+          "song_cand_2f570f729ff76eaa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:常磐ディスコ港町(生歌)",
+        "inbox_id": "inbox_043a09de05594e99",
+        "raw_song_name": "常磐ディスコ港町(生歌)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "常磐ディスコ港町",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:新浅草橋音頭(生歌)",
+        "inbox_id": "inbox_caf44b55b088702b",
+        "raw_song_name": "新浅草橋音頭(生歌)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "新浅草橋音頭",
+        "resolved_target_song_ids": [
+          "song_3c2369d4f2abc5dd"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:旧 台東音頭",
+        "inbox_id": "inbox_e9519835b6f0bc31",
+        "raw_song_name": "旧 台東音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "旧台東音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:月乃家寿子(河内音頭)",
+        "inbox_id": "inbox_6672450bd5593270",
+        "raw_song_name": "月乃家寿子(河内音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:月乃家小菊(江州音頭)",
+        "inbox_id": "inbox_6a2976ecc9f4b789",
+        "raw_song_name": "月乃家小菊(江州音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "江州音頭",
+        "resolved_target_song_ids": [
+          "song_7b78f35fc2d74baa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:東京名物・人混み(生歌)",
+        "inbox_id": "inbox_aa76937ad19522eb",
+        "raw_song_name": "東京名物・人混み(生歌)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "東京名物・人混み",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:松原光司(河内音頭)",
+        "inbox_id": "inbox_da1c424a277cacaa",
+        "raw_song_name": "松原光司(河内音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:松原慎之介(河内音頭)",
+        "inbox_id": "inbox_9cd1b62cec1e6917",
+        "raw_song_name": "松原慎之介(河内音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:浅草右近屋",
+        "inbox_id": "inbox_ce4411daf8b475af",
+        "raw_song_name": "浅草右近屋",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:激混み会場で外国人も踊り",
+        "inbox_id": "inbox_ad9a9604d74c0d24",
+        "raw_song_name": "激混み会場で外国人も踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 2,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:瀧野家秀月(泉州音頭)",
+        "inbox_id": "inbox_54d18717b37c55be",
+        "raw_song_name": "瀧野家秀月(泉州音頭)",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "泉州音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:特設会場周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_7b97a49ba171bea3",
+        "raw_song_name": "特設会場周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 2,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:猫の子(白鳥)",
+        "inbox_id": "inbox_038c975c53abdea9",
+        "raw_song_name": "猫の子(白鳥)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "猫の子",
+        "resolved_target_song_ids": [
+          "song_cand_43dca55fffce5ba4"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:猫の子(郡上)",
+        "inbox_id": "inbox_1ceeb78a082862e6",
+        "raw_song_name": "猫の子(郡上)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "猫の子",
+        "resolved_target_song_ids": [
+          "song_cand_43dca55fffce5ba4"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:生駒みづき (河内音頭)",
+        "inbox_id": "inbox_cd74d3aa537b99c8",
+        "raw_song_name": "生駒みづき (河内音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:生駒一久 河内音頭(一部)",
+        "inbox_id": "inbox_1c94ef33368c86d1",
+        "raw_song_name": "生駒一久 河内音頭(一部)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:生駒尚子(星屑の御堂筋)",
+        "inbox_id": "inbox_feaf327e1feed143",
+        "raw_song_name": "生駒尚子(星屑の御堂筋)",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "星屑の御堂筋",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:生駒尚子(河内音頭)",
+        "inbox_id": "inbox_9ee2d729b96f25d4",
+        "raw_song_name": "生駒尚子(河内音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:白鳥おどり",
+        "inbox_id": "inbox_5a830ce9d2dcfbc9",
+        "raw_song_name": "白鳥おどり",
+        "decision": "既存曲へ統合",
+        "target_song_name": "白鳥おどり",
+        "resolved_target_song_ids": [
+          "song_4ecf96d07d4e85c5"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:盆おどり",
+        "inbox_id": "inbox_a3769bd14b1c7dfc",
+        "raw_song_name": "盆おどり",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:祖師谷神明社周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_d1ef5a23a8c24afb",
+        "raw_song_name": "祖師谷神明社周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 10連合同総踊り",
+        "inbox_id": "inbox_0025eb7e977099ed",
+        "raw_song_name": "終 10連合同総踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 Bling-Bang-Bang-Born",
+        "inbox_id": "inbox_f62ecb63873edb07",
+        "raw_song_name": "終 Bling-Bang-Bang-Born",
+        "decision": "既存曲へ統合",
+        "target_song_name": "Bling-Bang-Bang-Born",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 Livin’OnAPrayer",
+        "inbox_id": "inbox_167b9f30b71f84a5",
+        "raw_song_name": "終 Livin’OnAPrayer",
+        "decision": "既存曲へ統合",
+        "target_song_name": "Livin' On A Prayer",
+        "resolved_target_song_ids": [
+          "song_cand_5f1970e7f3079707"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 TOKIO",
+        "inbox_id": "inbox_75a2c7b850bf4e7a",
+        "raw_song_name": "終 TOKIO",
+        "decision": "既存曲へ統合",
+        "target_song_name": "TOKIO",
+        "resolved_target_song_ids": [
+          "song_cand_b58431b90f219617"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ultra soul",
+        "inbox_id": "inbox_5da2e1951737c716",
+        "raw_song_name": "終 ultra soul",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ultra soul",
+        "resolved_target_song_ids": [
+          "song_cand_8c47b2fc30a48862"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 〆太鼓",
+        "inbox_id": "inbox_98200177022b618d",
+        "raw_song_name": "終 〆太鼓",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 おどりはだり6ドダレバチサンバ",
+        "inbox_id": "inbox_07841238523b6054",
+        "raw_song_name": "終 おどりはだり6ドダレバチサンバ",
+        "decision": "既存曲へ統合",
+        "target_song_name": "どだればち・サンバ",
+        "resolved_target_song_ids": [
+          "song_5e846f123a32ad09"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 お囃子~打ち上げ花火",
+        "inbox_id": "inbox_9d7843fc3cc4e6b7",
+        "raw_song_name": "終 お囃子~打ち上げ花火",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 かがやき音頭",
+        "inbox_id": "inbox_17e5ac803ddea7a7",
+        "raw_song_name": "終 かがやき音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "かがやき音頭",
+        "resolved_target_song_ids": [
+          "song_cand_c1e186113b3f93ff"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 きよしのズンドコ節",
+        "inbox_id": "inbox_18fe569742fee3b9",
+        "raw_song_name": "終 きよしのズンドコ節",
+        "decision": "既存曲へ統合",
+        "target_song_name": "きよしのズンドコ節",
+        "resolved_target_song_ids": [
+          "song_242d9e37e1176744"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 たいとう音頭",
+        "inbox_id": "inbox_cb298f190242a5d5",
+        "raw_song_name": "終 たいとう音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "たいとう音頭",
+        "resolved_target_song_ids": [
+          "song_b3242fa54273ad3f"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ねぶた囃子、跳人",
+        "inbox_id": "inbox_91ceddf8c0812518",
+        "raw_song_name": "終 ねぶた囃子、跳人",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 また逢う日まで",
+        "inbox_id": "inbox_63611199f904f59f",
+        "raw_song_name": "終 また逢う日まで",
+        "decision": "既存曲へ統合",
+        "target_song_name": "また逢う日まで",
+        "resolved_target_song_ids": [
+          "song_cand_e74fa23dd64fa64f"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 まつさか",
+        "inbox_id": "inbox_a3afaebbdf428fec",
+        "raw_song_name": "終 まつさか",
+        "decision": "既存曲へ統合",
+        "target_song_name": "まつさか",
+        "resolved_target_song_ids": [
+          "song_cand_18de5d8af83f16cc"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 まとめ3",
+        "inbox_id": "inbox_3b925b0634b595dc",
+        "raw_song_name": "終 まとめ3",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 エビカニクス",
+        "inbox_id": "inbox_c9e4b97af2a9c228",
+        "raw_song_name": "終 エビカニクス",
+        "decision": "既存曲へ統合",
+        "target_song_name": "エビカニクス",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 オー・シャンゼリゼ",
+        "inbox_id": "inbox_2677e8194d0e6fbf",
+        "raw_song_name": "終 オー・シャンゼリゼ",
+        "decision": "既存曲へ統合",
+        "target_song_name": "オー・シャンゼリゼ",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ガット・トゥ・ビー・リアル",
+        "inbox_id": "inbox_c25d03706a0540bf",
+        "raw_song_name": "終 ガット・トゥ・ビー・リアル",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ガット・トゥ・ビー・リアル",
+        "resolved_target_song_ids": [
+          "song_cand_6a87b05aa9ccfaa8"
+        ],
+        "rdb_source_row_count": 2,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 1,
+        "action": "requires_merge_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ジャンボリーミッキー",
+        "inbox_id": "inbox_9b0b22569c34c808",
+        "raw_song_name": "終 ジャンボリーミッキー",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ジャンボリミッキー",
+        "resolved_target_song_ids": [
+          "song_8ed0cbde87d92616"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ソーラン節",
+        "inbox_id": "inbox_0b84179c3712cbd7",
+        "raw_song_name": "終 ソーラン節",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ソーラン節",
+        "resolved_target_song_ids": [
+          "song_acfefba6cb5f195f"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ダンシングヒーロー",
+        "inbox_id": "inbox_6f68ba6396de1066",
+        "raw_song_name": "終 ダンシングヒーロー",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ダンシングヒーロー",
+        "resolved_target_song_ids": [
+          "song_91e0bb2ffff44fc0"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ダンシング・ヒーロー",
+        "inbox_id": "inbox_e24590dc4cd018d3",
+        "raw_song_name": "終 ダンシング・ヒーロー",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ダンシングヒーロー",
+        "resolved_target_song_ids": [
+          "song_91e0bb2ffff44fc0"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 チャンチキおけさ",
+        "inbox_id": "inbox_fe1073caaeeec045",
+        "raw_song_name": "終 チャンチキおけさ",
+        "decision": "既存曲へ統合",
+        "target_song_name": "チャンチキおけさ",
+        "resolved_target_song_ids": [
+          "song_cand_526adf6c2dde279f"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 トラック音頭",
+        "inbox_id": "inbox_1def1050a6533c4b",
+        "raw_song_name": "終 トラック音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "トラック音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ドダレバチ",
+        "inbox_id": "inbox_2057541aa13bc068",
+        "raw_song_name": "終 ドダレバチ",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ドダレバチ",
+        "resolved_target_song_ids": [
+          "song_cand_be4439577e88be4a"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 パレード",
+        "inbox_id": "inbox_67df2855567ef497",
+        "raw_song_name": "終 パレード",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 ボンゴ天国〆太鼓",
+        "inbox_id": "inbox_0330d4a80cd44a4a",
+        "raw_song_name": "終 ボンゴ天国〆太鼓",
+        "decision": "既存曲へ統合",
+        "target_song_name": "ボンゴ天国",
+        "resolved_target_song_ids": [
+          "song_cand_c09fb13798f8882d"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 マツケンサンバII",
+        "inbox_id": "inbox_ba1d05f3fff5e486",
+        "raw_song_name": "終 マツケンサンバII",
+        "decision": "既存曲へ統合",
+        "target_song_name": "マツケンサンバII",
+        "resolved_target_song_ids": [
+          "song_cand_586392d83a8fd83d"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 メガヒッツ盆踊り",
+        "inbox_id": "inbox_10ea98706a0b2aa4",
+        "raw_song_name": "終 メガヒッツ盆踊り",
+        "decision": "既存曲へ統合",
+        "target_song_name": "メガ盆",
+        "resolved_target_song_ids": [
+          "song_cand_23f50af7cc7a6838"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 一般の部",
+        "inbox_id": "inbox_a8b4718e050500da",
+        "raw_song_name": "終 一般の部",
+        "decision": "既存曲へ統合",
+        "target_song_name": "相馬盆唄",
+        "resolved_target_song_ids": [
+          "song_cand_2f570f729ff76eaa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 俺ら炭鉱夫",
+        "inbox_id": "inbox_039494b7b2da2219",
+        "raw_song_name": "終 俺ら炭鉱夫",
+        "decision": "既存曲へ統合",
+        "target_song_name": "俺ら炭鉱夫",
+        "resolved_target_song_ids": [
+          "song_cand_f6f289ff9566feba"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 八木節",
+        "inbox_id": "inbox_2e6d4dc80064468b",
+        "raw_song_name": "終 八木節",
+        "decision": "既存曲へ統合",
+        "target_song_name": "八木節",
+        "resolved_target_song_ids": [
+          "song_67661d05d43c0b6d"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 初音節2",
+        "inbox_id": "inbox_ee25698f19fc0dec",
+        "raw_song_name": "終 初音節2",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "初音節",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 堀切あやめ連流し踊り",
+        "inbox_id": "inbox_3b4b8e8e0fb9e107",
+        "raw_song_name": "終 堀切あやめ連流し踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 夏祭り",
+        "inbox_id": "inbox_f7d1d83d4bd57d74",
+        "raw_song_name": "終 夏祭り",
+        "decision": "既存曲へ統合",
+        "target_song_name": "夏祭り",
+        "resolved_target_song_ids": [
+          "song_cand_c7cfc5dc3e45cb26"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 大角会和太鼓演奏",
+        "inbox_id": "inbox_d1dd1ef52a7138ad",
+        "raw_song_name": "終 大角会和太鼓演奏",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 妖怪盆踊り",
+        "inbox_id": "inbox_0f926f0d8f4310a8",
+        "raw_song_name": "終 妖怪盆踊り",
+        "decision": "既存曲へ統合",
+        "target_song_name": "妖怪盆踊り",
+        "resolved_target_song_ids": [
+          "song_cand_72d22ca762f02f5b"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 山中一平",
+        "inbox_id": "inbox_d868b1c87283f2c4",
+        "raw_song_name": "終 山中一平",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 川崎おどり",
+        "inbox_id": "inbox_70ab0759b6304e34",
+        "raw_song_name": "終 川崎おどり",
+        "decision": "既存曲へ統合",
+        "target_song_name": "川崎おどり",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 押せ押せ音頭",
+        "inbox_id": "inbox_6ec0808239c859a9",
+        "raw_song_name": "終 押せ押せ音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "押せ押せ音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 木遣り・纏振り",
+        "inbox_id": "inbox_f3b10dcd816e3385",
+        "raw_song_name": "終 木遣り・纏振り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 東京スカイツリー音頭",
+        "inbox_id": "inbox_e620dc23b45f7c91",
+        "raw_song_name": "終 東京スカイツリー音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "東京スカイツリー音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 東京音頭",
+        "inbox_id": "inbox_b4d3b9849ff499fd",
+        "raw_song_name": "終 東京音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "東京音頭",
+        "resolved_target_song_ids": [
+          "song_ba38e97046254d94"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 江州音頭2",
+        "inbox_id": "inbox_47446472be16e06e",
+        "raw_song_name": "終 江州音頭2",
+        "decision": "既存曲へ統合",
+        "target_song_name": "江州音頭",
+        "resolved_target_song_ids": [
+          "song_7b78f35fc2d74baa"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 池袋盆BAND",
+        "inbox_id": "inbox_dd9515f82ba5cbdc",
+        "raw_song_name": "終 池袋盆BAND",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 河内おとこ節・〆太鼓",
+        "inbox_id": "inbox_c7cc3659d4e18ae3",
+        "raw_song_name": "終 河内おとこ節・〆太鼓",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内おとこ節",
+        "resolved_target_song_ids": [
+          "song_2db09070cee96f09"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 津具「チョイナ節」",
+        "inbox_id": "inbox_da50fae4944ea27a",
+        "raw_song_name": "終 津具「チョイナ節」",
+        "decision": "新規曲候補として維持",
+        "target_song_name": "チョイナ節",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_candidate_registration_from_public_source"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 津軽甚句",
+        "inbox_id": "inbox_aa72ab96a9e9f2b3",
+        "raw_song_name": "終 津軽甚句",
+        "decision": "既存曲へ統合",
+        "target_song_name": "津軽甚句",
+        "resolved_target_song_ids": [
+          "song_b8c94b3dc0bd45bb"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 浅草右近屋パフォーマンス",
+        "inbox_id": "inbox_b21c713b7fb51a04",
+        "raw_song_name": "終 浅草右近屋パフォーマンス",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 炭坑節",
+        "inbox_id": "inbox_a85ac10c64003741",
+        "raw_song_name": "終 炭坑節",
+        "decision": "既存曲へ統合",
+        "target_song_name": "炭坑節",
+        "resolved_target_song_ids": [
+          "song_8301ef2fd9b554f0"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_relink_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 炭坑節 〆太鼓",
+        "inbox_id": "inbox_760741f0ce1c5c3a",
+        "raw_song_name": "終 炭坑節 〆太鼓",
+        "decision": "既存曲へ統合",
+        "target_song_name": "炭坑節",
+        "resolved_target_song_ids": [
+          "song_8301ef2fd9b554f0"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 生駒竜也(河内音頭)",
+        "inbox_id": "inbox_b885f65bc1097978",
+        "raw_song_name": "終 生駒竜也(河内音頭)",
+        "decision": "既存曲へ統合",
+        "target_song_name": "河内音頭",
+        "resolved_target_song_ids": [
+          "song_a506f1b29be025c9"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 男おけさ~〆太鼓",
+        "inbox_id": "inbox_e95f6168126b58b6",
+        "raw_song_name": "終 男おけさ~〆太鼓",
+        "decision": "既存曲へ統合",
+        "target_song_name": "男おけさ",
+        "resolved_target_song_ids": [
+          "song_cand_5651ad3bb017f91e"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 番外編",
+        "inbox_id": "inbox_a530f8395f4a5c1f",
+        "raw_song_name": "終 番外編",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 盆ギリ恋歌",
+        "inbox_id": "inbox_a983cf6f0d9c883d",
+        "raw_song_name": "終 盆ギリ恋歌",
+        "decision": "既存曲へ統合",
+        "target_song_name": "盆ギリ恋歌",
+        "resolved_target_song_ids": [
+          "song_cand_8b5b1557843311d1"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 真夏の果実",
+        "inbox_id": "inbox_9da77cf562a60462",
+        "raw_song_name": "終 真夏の果実",
+        "decision": "既存曲へ統合",
+        "target_song_name": "真夏の果実",
+        "resolved_target_song_ids": [
+          "song_808c5eb46b2f3abb"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 秋田大黒舞",
+        "inbox_id": "inbox_231b348c0bd245e3",
+        "raw_song_name": "終 秋田大黒舞",
+        "decision": "既存曲へ統合",
+        "target_song_name": "秋田大黒舞",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 繁昌ぶし",
+        "inbox_id": "inbox_0e97c81eef2fc326",
+        "raw_song_name": "終 繁昌ぶし",
+        "decision": "既存曲へ統合",
+        "target_song_name": "繁昌ぶし",
+        "resolved_target_song_ids": [
+          "song_cand_d46a11323f51c7d3"
+        ],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 1,
+        "action": "requires_merge_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 踊れ・どれ・ドラ ドラえもん音頭",
+        "inbox_id": "inbox_b3d5cb73b2a28ff9",
+        "raw_song_name": "終 踊れ・どれ・ドラ ドラえもん音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "踊れ・どれ・ドラ ドラえもん音頭",
+        "resolved_target_song_ids": [
+          "song_cand_dd6ae89b3267df70"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 銀座ときめき音頭",
+        "inbox_id": "inbox_052b58f4070c6d75",
+        "raw_song_name": "終 銀座ときめき音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "銀座ときめき音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 関東やまと太鼓",
+        "inbox_id": "inbox_d80d0ef074748733",
+        "raw_song_name": "終 関東やまと太鼓",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 関東やまと太鼓〆太鼓",
+        "inbox_id": "inbox_74afa8ebfa42abea",
+        "raw_song_name": "終 関東やまと太鼓〆太鼓",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:終 電電音頭",
+        "inbox_id": "inbox_1457a10b1d21e430",
+        "raw_song_name": "終 電電音頭",
+        "decision": "既存曲へ統合",
+        "target_song_name": "電電音頭",
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "blocked_target_song_missing_from_rdb"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:郡上おどり",
+        "inbox_id": "inbox_35f7863d9a229fa1",
+        "raw_song_name": "郡上おどり",
+        "decision": "既存曲へ統合",
+        "target_song_name": "郡上おどり",
+        "resolved_target_song_ids": [
+          "song_ffd16a24ae7f7096"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:都立大学駅西口緑道周辺で開かれる街なかの踊り",
+        "inbox_id": "inbox_ad9d42fc87c9240e",
+        "raw_song_name": "都立大学駅西口緑道周辺で開かれる街なかの踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:阿波踊り",
+        "inbox_id": "inbox_5339fe6aef56e95e",
+        "raw_song_name": "阿波踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 3,
+        "rdb_evidence_link_count": 2,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:阿波踊り「和楽連」",
+        "inbox_id": "inbox_a953cdf60b079e84",
+        "raw_song_name": "阿波踊り「和楽連」",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:阿波踊り「和樂連」",
+        "inbox_id": "inbox_cec87b9f539020aa",
+        "raw_song_name": "阿波踊り「和樂連」",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:音頭「七福神」",
+        "inbox_id": "inbox_cde3a8602a862cf9",
+        "raw_song_name": "音頭「七福神」",
+        "decision": "既存曲へ統合",
+        "target_song_name": "七福神音頭",
+        "resolved_target_song_ids": [
+          "song_cand_73261d70ecf38eb6"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:音頭「福よ来い」",
+        "inbox_id": "inbox_019acf79f2fa61a1",
+        "raw_song_name": "音頭「福よ来い」",
+        "decision": "既存曲へ統合",
+        "target_song_name": "福よ来い",
+        "resolved_target_song_ids": [
+          "song_cand_66580dd20bb2da3a"
+        ],
+        "rdb_source_row_count": 0,
+        "rdb_evidence_link_count": 0,
+        "rdb_conflict_row_count": 0,
+        "action": "source_public_only_no_rdb_row"
+      },
+      {
+        "source_key": "gap:public_occurrence_song_not_in_master:飛鳥山公園の檜舞台での踊り",
+        "inbox_id": "inbox_2293670e39419a42",
+        "raw_song_name": "飛鳥山公園の檜舞台での踊り",
+        "decision": "曲名ノイズとして除外",
+        "target_song_name": null,
+        "resolved_target_song_ids": [],
+        "rdb_source_row_count": 1,
+        "rdb_evidence_link_count": 1,
+        "rdb_conflict_row_count": 0,
+        "action": "requires_retraction_materializer"
+      }
+    ]
+  },
+  "youtube": {
+    "summary": {
+      "decision_count": 247,
+      "decision_counts": {
+        "不採用": 36,
+        "採用": 211
+      },
+      "action_counts": {
+        "no_canonical_write": 32,
+        "requires_identity_packet_before_materialize": 207,
+        "no_write_retraction_review_required": 4,
+        "already_present_or_partially_materialized": 4
+      }
+    },
+    "items": [
+      {
+        "source_key": "video:lnNRMFZtwDw|year:2023",
+        "inbox_id": "inbox_a2055c79d6b1dbfa",
+        "video_id": "lnNRMFZtwDw",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:ZaV42ml2T-M|year:2026",
+        "inbox_id": "inbox_10bf6072f9631fb8",
+        "video_id": "ZaV42ml2T-M",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:zPZETe2_0G8|year:2026",
+        "inbox_id": "inbox_190f47fcd51587b4",
+        "video_id": "zPZETe2_0G8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:_RlXx8lhTWg|year:2026",
+        "inbox_id": "inbox_341f386f63cc5f24",
+        "video_id": "_RlXx8lhTWg",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:1Xcc7Wbswls|year:2026",
+        "inbox_id": "inbox_51c5d68f52ed5a6b",
+        "video_id": "1Xcc7Wbswls",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ZM2u3rqeELQ|year:2026",
+        "inbox_id": "inbox_5272cd696d02827a",
+        "video_id": "ZM2u3rqeELQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:yjs5TeAayrA|year:2026",
+        "inbox_id": "inbox_5c8ed94a77420bd1",
+        "video_id": "yjs5TeAayrA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:3hsVtD-_Khk|year:2026",
+        "inbox_id": "inbox_7268972a40b60bb7",
+        "video_id": "3hsVtD-_Khk",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:otdg9tXQG1U|year:2026",
+        "inbox_id": "inbox_8203dc10f012a649",
+        "video_id": "otdg9tXQG1U",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:VBv2P_j87uY|year:2026",
+        "inbox_id": "inbox_86266cd5decb24c0",
+        "video_id": "VBv2P_j87uY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:0mzsieNYY7w|year:2026",
+        "inbox_id": "inbox_b2a693fd6a7cd03c",
+        "video_id": "0mzsieNYY7w",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:zg0AwQqSH_I|year:2026",
+        "inbox_id": "inbox_b61c54d266148118",
+        "video_id": "zg0AwQqSH_I",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:qyZiOls_BHQ|year:2026",
+        "inbox_id": "inbox_ba76998bf9888213",
+        "video_id": "qyZiOls_BHQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ohAK9THywj4|year:2026",
+        "inbox_id": "inbox_e6a126c79be2ce7a",
+        "video_id": "ohAK9THywj4",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:9rUaJtpSqEI|year:2026",
+        "inbox_id": "inbox_ec3ce1e99ea640e0",
+        "video_id": "9rUaJtpSqEI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:XGwCgGWdrp4|year:2026",
+        "inbox_id": "inbox_04eea8f72fe83686",
+        "video_id": "XGwCgGWdrp4",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:LnDx7dqrXpo|year:2026",
+        "inbox_id": "inbox_1feb83eb807eda4a",
+        "video_id": "LnDx7dqrXpo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:MIb6hfhpWzA|year:2026",
+        "inbox_id": "inbox_24c54aedd40b992a",
+        "video_id": "MIb6hfhpWzA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:sr6C6gsU0wY|year:2026",
+        "inbox_id": "inbox_38a04f40f0b0dafb",
+        "video_id": "sr6C6gsU0wY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:kzl-riNqvqY|year:2026",
+        "inbox_id": "inbox_3e2b8c08af527881",
+        "video_id": "kzl-riNqvqY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:LTS4RkW47Pw|year:2026",
+        "inbox_id": "inbox_410ed5ed99ca3eef",
+        "video_id": "LTS4RkW47Pw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Kp0nDhQPaLw|year:2026",
+        "inbox_id": "inbox_43b88107595affef",
+        "video_id": "Kp0nDhQPaLw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:We0vbQmsmgw|year:2026",
+        "inbox_id": "inbox_5c1dd3e28301af14",
+        "video_id": "We0vbQmsmgw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Pm7VPt1iv4k|year:2026",
+        "inbox_id": "inbox_5c8a0a24cc70ce0d",
+        "video_id": "Pm7VPt1iv4k",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:s8yu4QgoV_4|year:2026",
+        "inbox_id": "inbox_7a008b088af449fa",
+        "video_id": "s8yu4QgoV_4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:93Ci4rKTa1M|year:2026",
+        "inbox_id": "inbox_958c6b352947217d",
+        "video_id": "93Ci4rKTa1M",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ynx87vN22DQ|year:2026",
+        "inbox_id": "inbox_a72228ab48bc9693",
+        "video_id": "ynx87vN22DQ",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:FamUCN6FuxQ|year:2026",
+        "inbox_id": "inbox_ac63ad051e781b6d",
+        "video_id": "FamUCN6FuxQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:f7Ts017UMvI|year:2026",
+        "inbox_id": "inbox_ae192b821e0f96bb",
+        "video_id": "f7Ts017UMvI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:tulaxdQj9mY|year:2026",
+        "inbox_id": "inbox_daeae531b7218848",
+        "video_id": "tulaxdQj9mY",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:NkCPway6ga8|year:2026",
+        "inbox_id": "inbox_e15d648e441f21e6",
+        "video_id": "NkCPway6ga8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:eYJ74JsFM-4|year:2026",
+        "inbox_id": "inbox_13d7724881b43f23",
+        "video_id": "eYJ74JsFM-4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:9zYsaU8gxTA|year:2026",
+        "inbox_id": "inbox_306b79d52e4877c8",
+        "video_id": "9zYsaU8gxTA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:oMsVgMheLf4|year:2026",
+        "inbox_id": "inbox_380cd983fff29889",
+        "video_id": "oMsVgMheLf4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:1CBK5SxJz50|year:2026",
+        "inbox_id": "inbox_4dcce187c71aaa02",
+        "video_id": "1CBK5SxJz50",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:o_1bjVmZN_w|year:2026",
+        "inbox_id": "inbox_4eb284a72eea45f5",
+        "video_id": "o_1bjVmZN_w",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:NK-mQeP_N_U|year:2026",
+        "inbox_id": "inbox_77edf05506a3f494",
+        "video_id": "NK-mQeP_N_U",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:CqmYVaEp0zI|year:2026",
+        "inbox_id": "inbox_957b69478b553358",
+        "video_id": "CqmYVaEp0zI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:irBvLMM7yc0|year:2026",
+        "inbox_id": "inbox_b07184ab91ca33f3",
+        "video_id": "irBvLMM7yc0",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:4DIsimjFicY|year:2026",
+        "inbox_id": "inbox_bd8ea99b8418b454",
+        "video_id": "4DIsimjFicY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:u83TkTBfJvw|year:2026",
+        "inbox_id": "inbox_cb90c976f56608f7",
+        "video_id": "u83TkTBfJvw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:W_LWeC5rXcs|year:2026",
+        "inbox_id": "inbox_d4f552da8fad6c2b",
+        "video_id": "W_LWeC5rXcs",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:CdeFu8zZYH0|year:2026",
+        "inbox_id": "inbox_de40fe27128b5050",
+        "video_id": "CdeFu8zZYH0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ghBFhaabrsE|year:2026",
+        "inbox_id": "inbox_eac80c10a2100b87",
+        "video_id": "ghBFhaabrsE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:skdGOFp_PxI|year:2026",
+        "inbox_id": "inbox_fd027512e63d8c61",
+        "video_id": "skdGOFp_PxI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:sZI5OxNWNaA|year:2026",
+        "inbox_id": "inbox_0efa65b3904293f2",
+        "video_id": "sZI5OxNWNaA",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:SlQzar6XHA8|year:2026",
+        "inbox_id": "inbox_3083a51d1e8b5526",
+        "video_id": "SlQzar6XHA8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:eJgB4RgaUJY|year:2026",
+        "inbox_id": "inbox_310d7aa3bbe79869",
+        "video_id": "eJgB4RgaUJY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:lYlW71_A480|year:2026",
+        "inbox_id": "inbox_3f11ddac004f2482",
+        "video_id": "lYlW71_A480",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:8z8pn6LZibM|year:2026",
+        "inbox_id": "inbox_6423c167e8517b88",
+        "video_id": "8z8pn6LZibM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Vux6e96_QMc|year:2026",
+        "inbox_id": "inbox_6729802d91224a99",
+        "video_id": "Vux6e96_QMc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:9J02CWOOqrE|year:2026",
+        "inbox_id": "inbox_7680132cec7d41be",
+        "video_id": "9J02CWOOqrE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Kx8rVDCZ7QQ|year:2026",
+        "inbox_id": "inbox_861e0bc13d1bc875",
+        "video_id": "Kx8rVDCZ7QQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ArdSdnkAU10|year:2026",
+        "inbox_id": "inbox_9827b1a9181ab63e",
+        "video_id": "ArdSdnkAU10",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:-xXK7-ik-O4|year:2026",
+        "inbox_id": "inbox_a44c1ee22367ad17",
+        "video_id": "-xXK7-ik-O4",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:IrfMA63fQbM|year:2026",
+        "inbox_id": "inbox_b8922c29b3723f84",
+        "video_id": "IrfMA63fQbM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:J4okDvEH-YQ|year:2026",
+        "inbox_id": "inbox_c83d53124417757b",
+        "video_id": "J4okDvEH-YQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:CUMNfUEK-qQ|year:2026",
+        "inbox_id": "inbox_d78724cfb8de1830",
+        "video_id": "CUMNfUEK-qQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:C2LogvrICzM|year:2026",
+        "inbox_id": "inbox_e153306aa7e9e08e",
+        "video_id": "C2LogvrICzM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:IqQT8Uid8xw|year:2026",
+        "inbox_id": "inbox_fff0d4dcd5434c25",
+        "video_id": "IqQT8Uid8xw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:TOgVSKgsboE|year:2026",
+        "inbox_id": "inbox_1cd495995ed4d415",
+        "video_id": "TOgVSKgsboE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:EkHN2XhD8Gw|year:2026",
+        "inbox_id": "inbox_2590e93fd8347cac",
+        "video_id": "EkHN2XhD8Gw",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:RlEeCvcVlck|year:2026",
+        "inbox_id": "inbox_42fea056896840da",
+        "video_id": "RlEeCvcVlck",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:Terw6MVPFpM|year:2026",
+        "inbox_id": "inbox_5f40a40b3b708e49",
+        "video_id": "Terw6MVPFpM",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:3wrAtvX9Ouo|year:2026",
+        "inbox_id": "inbox_9645e66632ce9a87",
+        "video_id": "3wrAtvX9Ouo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:JUH9xK_5fxQ|year:2026",
+        "inbox_id": "inbox_a3bdab3914385323",
+        "video_id": "JUH9xK_5fxQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:5ykB81NtNyg|year:2026",
+        "inbox_id": "inbox_f9a1e69f5b05881d",
+        "video_id": "5ykB81NtNyg",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:OWwnMJfgjLc|year:2026",
+        "inbox_id": "inbox_feab4c9534341bbc",
+        "video_id": "OWwnMJfgjLc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:d6nfuN3L2po|year:2026",
+        "inbox_id": "inbox_101aa66d58af821a",
+        "video_id": "d6nfuN3L2po",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:d223dGWqqI8|year:2026",
+        "inbox_id": "inbox_22a6956203c4ff8c",
+        "video_id": "d223dGWqqI8",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:OUKLS0LLoiw|year:2026",
+        "inbox_id": "inbox_314b6fd1b852b277",
+        "video_id": "OUKLS0LLoiw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:q55xshaNG2g|year:2026",
+        "inbox_id": "inbox_6fc424b1e4e3699c",
+        "video_id": "q55xshaNG2g",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:lYeUgNF3lNk|year:2026",
+        "inbox_id": "inbox_87e2a7cc23b9497d",
+        "video_id": "lYeUgNF3lNk",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Ucyfu652SFg|year:2026",
+        "inbox_id": "inbox_91ca5ccd3ba3da0e",
+        "video_id": "Ucyfu652SFg",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:uEDwfvO-h0o|year:2026",
+        "inbox_id": "inbox_92127f593c3176be",
+        "video_id": "uEDwfvO-h0o",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:jEGkUpcB4bs|year:2026",
+        "inbox_id": "inbox_9ebf93c6c7f4eb7a",
+        "video_id": "jEGkUpcB4bs",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:OU1LpKVlw8E|year:2026",
+        "inbox_id": "inbox_e9753a6570df1c08",
+        "video_id": "OU1LpKVlw8E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:qtmTDAG1kvU|year:2026",
+        "inbox_id": "inbox_f92aa2fe44135a12",
+        "video_id": "qtmTDAG1kvU",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:z6QK95rl3FQ|year:2026",
+        "inbox_id": "inbox_021924f1a5c6bdd4",
+        "video_id": "z6QK95rl3FQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:k-csKz1vBQo|year:2026",
+        "inbox_id": "inbox_174f4934155364b5",
+        "video_id": "k-csKz1vBQo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:wMBeSym8AI8|year:2026",
+        "inbox_id": "inbox_17fac9ba23405c08",
+        "video_id": "wMBeSym8AI8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:NW-BfproXas|year:2026",
+        "inbox_id": "inbox_211479d505bf4b56",
+        "video_id": "NW-BfproXas",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:fZkFK1DH2GI|year:2026",
+        "inbox_id": "inbox_66a519fb52fe072d",
+        "video_id": "fZkFK1DH2GI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:wrcUlGjG10Q|year:2026",
+        "inbox_id": "inbox_6c5c0b2d41efe26e",
+        "video_id": "wrcUlGjG10Q",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:837e9rU2MPY|year:2026",
+        "inbox_id": "inbox_7384fef12d68df2d",
+        "video_id": "837e9rU2MPY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:26km0N_RewQ|year:2026",
+        "inbox_id": "inbox_8794d3e7eb2b4c94",
+        "video_id": "26km0N_RewQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:QI1fWjXIh0g|year:2026",
+        "inbox_id": "inbox_c72fcc64bf42a5be",
+        "video_id": "QI1fWjXIh0g",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:1Vx4VaARfBQ|year:2026",
+        "inbox_id": "inbox_d3d80e2f0743f1d3",
+        "video_id": "1Vx4VaARfBQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:woOfIXse--c|year:2026",
+        "inbox_id": "inbox_f6d2720be36f1c11",
+        "video_id": "woOfIXse--c",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:HBhKY3L0r9s|year:2026",
+        "inbox_id": "inbox_25861ea6fb7606d0",
+        "video_id": "HBhKY3L0r9s",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:hES9e67N9BI|year:2026",
+        "inbox_id": "inbox_38621a6686736413",
+        "video_id": "hES9e67N9BI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:KhwobMg0IGw|year:2026",
+        "inbox_id": "inbox_462b4815ba833340",
+        "video_id": "KhwobMg0IGw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:CTpAMXWkteE|year:2026",
+        "inbox_id": "inbox_5db587c0c3e1b830",
+        "video_id": "CTpAMXWkteE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:2jo2gwk1GnQ|year:2026",
+        "inbox_id": "inbox_99e55629e749cc79",
+        "video_id": "2jo2gwk1GnQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:xooxuK8CB3E|year:2026",
+        "inbox_id": "inbox_9ff096c3e9772432",
+        "video_id": "xooxuK8CB3E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:5A2iJnj_P18|year:2026",
+        "inbox_id": "inbox_a39d27d0f8de55ed",
+        "video_id": "5A2iJnj_P18",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:OM4F9USlUq8|year:2026",
+        "inbox_id": "inbox_a5a31d8fbf920374",
+        "video_id": "OM4F9USlUq8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:xDAGJyBNIxc|year:2026",
+        "inbox_id": "inbox_a785cf904fd1bc2b",
+        "video_id": "xDAGJyBNIxc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:3ET6WOVQ4pc|year:2026",
+        "inbox_id": "inbox_db53b780e5b374ea",
+        "video_id": "3ET6WOVQ4pc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ixU_B6mszvE|year:2025",
+        "inbox_id": "inbox_f4025644ac3ac7f1",
+        "video_id": "ixU_B6mszvE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:0liV5_9fOfY|year:2026",
+        "inbox_id": "inbox_00a515782405cb73",
+        "video_id": "0liV5_9fOfY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:4gssbW1M5uI|year:2026",
+        "inbox_id": "inbox_36418fe6a1620cd8",
+        "video_id": "4gssbW1M5uI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Xgue2QcjOoM|year:2026",
+        "inbox_id": "inbox_79f0e21b84cc0133",
+        "video_id": "Xgue2QcjOoM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:VqcYUGalKF0|year:2026",
+        "inbox_id": "inbox_7c37d571980273f2",
+        "video_id": "VqcYUGalKF0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:9ueWobj3Eyc|year:2026",
+        "inbox_id": "inbox_a9a3228dc9a45033",
+        "video_id": "9ueWobj3Eyc",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:xJ8ChcShFG4|year:2026",
+        "inbox_id": "inbox_e6d4ca6ea6cbb65f",
+        "video_id": "xJ8ChcShFG4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:wUwVqpjE8oI|year:2026",
+        "inbox_id": "inbox_01392c5fffbea958",
+        "video_id": "wUwVqpjE8oI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:dJmPbOdymKI|year:2026",
+        "inbox_id": "inbox_4da2bd5a780d41a7",
+        "video_id": "dJmPbOdymKI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:nmnaYde6qzk|year:2026",
+        "inbox_id": "inbox_65e9ed1bd09cd1d1",
+        "video_id": "nmnaYde6qzk",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:Jw3t8cm8RGI|year:2026",
+        "inbox_id": "inbox_abb19a64e59b8713",
+        "video_id": "Jw3t8cm8RGI",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:lJkpqfXphpQ|year:2026",
+        "inbox_id": "inbox_ac9fdacc602c8c2d",
+        "video_id": "lJkpqfXphpQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:seZHSLMkIOU|year:2026",
+        "inbox_id": "inbox_b5ef57645fe07d79",
+        "video_id": "seZHSLMkIOU",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:K8wjNG0tW0A|year:2026",
+        "inbox_id": "inbox_e59a7b83492be6c9",
+        "video_id": "K8wjNG0tW0A",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Z6bIIC_4SaU|year:2026",
+        "inbox_id": "inbox_eecc73125b0a7ff5",
+        "video_id": "Z6bIIC_4SaU",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:MaNQ63B1BA4|year:2026",
+        "inbox_id": "inbox_04e68dbb24685613",
+        "video_id": "MaNQ63B1BA4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:XqWpI0tI28s|year:2026",
+        "inbox_id": "inbox_1414f68b5c4a272a",
+        "video_id": "XqWpI0tI28s",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:OHf10tKFWd8|year:2026",
+        "inbox_id": "inbox_7ca5ade92c26ca04",
+        "video_id": "OHf10tKFWd8",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:8xO2Kl1I3uQ|year:2026",
+        "inbox_id": "inbox_7e955517fc69b7c1",
+        "video_id": "8xO2Kl1I3uQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:tQJ4bEL8RTE|year:2026",
+        "inbox_id": "inbox_9980689585cce634",
+        "video_id": "tQJ4bEL8RTE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:G9u_QKXk8Jo|year:2026",
+        "inbox_id": "inbox_a3885ed810d6e013",
+        "video_id": "G9u_QKXk8Jo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ySdkIisW7ec|year:2026",
+        "inbox_id": "inbox_cf8105a73c40b1f0",
+        "video_id": "ySdkIisW7ec",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Vx6gQQOjXTk|year:2026",
+        "inbox_id": "inbox_0233c8d5c4e74d0e",
+        "video_id": "Vx6gQQOjXTk",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:B1D_UzuJrE0|year:2026",
+        "inbox_id": "inbox_1d57e11b07593f56",
+        "video_id": "B1D_UzuJrE0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:uHvQ848vrb0|year:2026",
+        "inbox_id": "inbox_388f74b75d418140",
+        "video_id": "uHvQ848vrb0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:CtJjKyPEx2g|year:2026",
+        "inbox_id": "inbox_0ab9507c1dbc9300",
+        "video_id": "CtJjKyPEx2g",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Dn8MjNKLyQU|year:2026",
+        "inbox_id": "inbox_17113cba172e0f24",
+        "video_id": "Dn8MjNKLyQU",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:gGN_FzhKog8|year:2026",
+        "inbox_id": "inbox_39eab3b56d81e5c5",
+        "video_id": "gGN_FzhKog8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:OB2CrzU3P1Q|year:2026",
+        "inbox_id": "inbox_673437f9baef2394",
+        "video_id": "OB2CrzU3P1Q",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:LfDsNDI2fS8|year:2026",
+        "inbox_id": "inbox_738f4d6ec09e3552",
+        "video_id": "LfDsNDI2fS8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:hg95THp7P10|year:2026",
+        "inbox_id": "inbox_c3e01b4837a88f0d",
+        "video_id": "hg95THp7P10",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:e3p5orQvnEA|year:2026",
+        "inbox_id": "inbox_d8a802e23f750022",
+        "video_id": "e3p5orQvnEA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:oyQ0Nvo_tD4|year:2026",
+        "inbox_id": "inbox_fdd737d1d2301bec",
+        "video_id": "oyQ0Nvo_tD4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:fO6rrpQvgJk|year:2026",
+        "inbox_id": "inbox_09a2b8e08d5c4654",
+        "video_id": "fO6rrpQvgJk",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:FOnm6h2Dg9E|year:2026",
+        "inbox_id": "inbox_29a4ff5f3e3ffe88",
+        "video_id": "FOnm6h2Dg9E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:WD-0YlnpgNI|year:2026",
+        "inbox_id": "inbox_3bc78c3c03cd7feb",
+        "video_id": "WD-0YlnpgNI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:BvJsQOJugEg|year:2026",
+        "inbox_id": "inbox_516f0228cc2a54b5",
+        "video_id": "BvJsQOJugEg",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:G1S0jpCQh0E|year:2026",
+        "inbox_id": "inbox_d5fe62ebe4c96990",
+        "video_id": "G1S0jpCQh0E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:_Yki3XKxizU|year:2026",
+        "inbox_id": "inbox_f0fdf7e1b1c7251d",
+        "video_id": "_Yki3XKxizU",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:kjDmM17fFmw|year:2026",
+        "inbox_id": "inbox_f3165871cd3b8f1f",
+        "video_id": "kjDmM17fFmw",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:_HKD1DP2R0c|year:2026",
+        "inbox_id": "inbox_4de898740b18b09f",
+        "video_id": "_HKD1DP2R0c",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:gfnIQmtf0Rc|year:2026",
+        "inbox_id": "inbox_6ac6a244259de3f6",
+        "video_id": "gfnIQmtf0Rc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:vaNMoZgVvz4|year:2026",
+        "inbox_id": "inbox_b47205ade18a5d44",
+        "video_id": "vaNMoZgVvz4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:UVgcw_bX1zQ|year:2026",
+        "inbox_id": "inbox_cd4ab535dff8af56",
+        "video_id": "UVgcw_bX1zQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:6VmuT4fMwuk|year:2026",
+        "inbox_id": "inbox_4d8e777dd8a99df6",
+        "video_id": "6VmuT4fMwuk",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Y6xQYOTmLFs|year:2026",
+        "inbox_id": "inbox_52b99745d3aa4639",
+        "video_id": "Y6xQYOTmLFs",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:kFpV0d9G0EY|year:2026",
+        "inbox_id": "inbox_8b5c33ecbb2af67e",
+        "video_id": "kFpV0d9G0EY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:it0D9q1Hmo4|year:2026",
+        "inbox_id": "inbox_a94aa5c213f040a5",
+        "video_id": "it0D9q1Hmo4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:VpP7Y26QTYw|year:2026",
+        "inbox_id": "inbox_ac75ecf4f0724f7d",
+        "video_id": "VpP7Y26QTYw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:MnLst-G2PLQ|year:2026",
+        "inbox_id": "inbox_dc88ce817881f917",
+        "video_id": "MnLst-G2PLQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:4qs2GG1aKXY|year:2026",
+        "inbox_id": "inbox_e95ecfe35fce814a",
+        "video_id": "4qs2GG1aKXY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ctOfHSAuR3A|year:2026",
+        "inbox_id": "inbox_44ee063bcdab2a5d",
+        "video_id": "ctOfHSAuR3A",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Tdefi6-rhvI|year:2026",
+        "inbox_id": "inbox_47988afd14798d30",
+        "video_id": "Tdefi6-rhvI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:_LfE1dJJces|year:2026",
+        "inbox_id": "inbox_80ebeef214645a13",
+        "video_id": "_LfE1dJJces",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:36SGYFFXXN8|year:2025",
+        "inbox_id": "inbox_c62a13af73117548",
+        "video_id": "36SGYFFXXN8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:PCCF0TjFAcc|year:2026",
+        "inbox_id": "inbox_d06c01a32e5b7166",
+        "video_id": "PCCF0TjFAcc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:8RY9x9DKtFw|year:2025",
+        "inbox_id": "inbox_3c771e69ddc5cd11",
+        "video_id": "8RY9x9DKtFw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Ub0PVHUBOic|year:2025",
+        "inbox_id": "inbox_7499f38b9d232f42",
+        "video_id": "Ub0PVHUBOic",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Ay1igrdR6NA|year:2026",
+        "inbox_id": "inbox_b39058da16d1d0ff",
+        "video_id": "Ay1igrdR6NA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:COW4s7gdky4|year:2026",
+        "inbox_id": "inbox_f38662f482030abd",
+        "video_id": "COW4s7gdky4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:i-Gz-m8gMNM|year:2026",
+        "inbox_id": "inbox_11f99890b11c2b3c",
+        "video_id": "i-Gz-m8gMNM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:lBx5v6zDNjk|year:2026",
+        "inbox_id": "inbox_610baa271cc2efcd",
+        "video_id": "lBx5v6zDNjk",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:lh0jR5_Bz10|year:2026",
+        "inbox_id": "inbox_a92c907fd3a4e275",
+        "video_id": "lh0jR5_Bz10",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:XFal6R3wylA|year:2026",
+        "inbox_id": "inbox_cbd652e5790e1020",
+        "video_id": "XFal6R3wylA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:2BUvg_jPOd4|year:2026",
+        "inbox_id": "inbox_df59f629a94d329c",
+        "video_id": "2BUvg_jPOd4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:69jK7PfLDHI|year:2026",
+        "inbox_id": "inbox_be15efb90c9a7044",
+        "video_id": "69jK7PfLDHI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:rU52ptPOrHg|year:2026",
+        "inbox_id": "inbox_e7e001edfa8aa94e",
+        "video_id": "rU52ptPOrHg",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:q_oPLoqNizM|year:2026",
+        "inbox_id": "inbox_e8dc535d6df50d73",
+        "video_id": "q_oPLoqNizM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:oCvxJCOvBuo|year:2026",
+        "inbox_id": "inbox_f0d194b602b9d84e",
+        "video_id": "oCvxJCOvBuo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:aPPgVp7Ngcc|year:2026",
+        "inbox_id": "inbox_fee31f0f8bef307f",
+        "video_id": "aPPgVp7Ngcc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:O6oiJtBvt0E|year:2026",
+        "inbox_id": "inbox_32c5e084b0873b6f",
+        "video_id": "O6oiJtBvt0E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Xaww5YsVFKY|year:2026",
+        "inbox_id": "inbox_46bc4a6ec70a808e",
+        "video_id": "Xaww5YsVFKY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:_ZXPROAGnTQ|year:2026",
+        "inbox_id": "inbox_481214192c71f5e6",
+        "video_id": "_ZXPROAGnTQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:2TejCSfYHVQ|year:2026",
+        "inbox_id": "inbox_4f9f97fd07db903b",
+        "video_id": "2TejCSfYHVQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:2DK2Zk4rYzo|year:2026",
+        "inbox_id": "inbox_8d48b7a53aa24034",
+        "video_id": "2DK2Zk4rYzo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:rnzPep1f2vg|year:2026",
+        "inbox_id": "inbox_b990d76165eba179",
+        "video_id": "rnzPep1f2vg",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:NThHl0uSadI|year:2026",
+        "inbox_id": "inbox_f14633f544331d3c",
+        "video_id": "NThHl0uSadI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:uOiAhR6bmbI|year:2025",
+        "inbox_id": "inbox_00b661fb1c09da1d",
+        "video_id": "uOiAhR6bmbI",
+        "decision": "不採用",
+        "evidence_item_count": 17,
+        "observed_song_row_count": 17,
+        "action": "no_write_retraction_review_required"
+      },
+      {
+        "source_key": "video:OMk1yRPcbNM|year:2026",
+        "inbox_id": "inbox_01c4640329ebcaea",
+        "video_id": "OMk1yRPcbNM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:3IiyNS82SyE|year:2025",
+        "inbox_id": "inbox_03e2d5cf9f970d81",
+        "video_id": "3IiyNS82SyE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:9vfPcV1n070|year:2025",
+        "inbox_id": "inbox_09bf780e3e6e435e",
+        "video_id": "9vfPcV1n070",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:nrQ3Myn_5lc|year:2026",
+        "inbox_id": "inbox_0fa28b71e44a1e91",
+        "video_id": "nrQ3Myn_5lc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Tm94VO-xyg8|year:2025",
+        "inbox_id": "inbox_11de2abdf16613b5",
+        "video_id": "Tm94VO-xyg8",
+        "decision": "不採用",
+        "evidence_item_count": 1,
+        "observed_song_row_count": 1,
+        "action": "no_write_retraction_review_required"
+      },
+      {
+        "source_key": "video:agphd4pcmlE|year:2025",
+        "inbox_id": "inbox_146664a277e06a4c",
+        "video_id": "agphd4pcmlE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:AlE4MGKQ15U|year:2025",
+        "inbox_id": "inbox_158f8fffd2a3c39e",
+        "video_id": "AlE4MGKQ15U",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:5j4qts5Tl8Q|year:2025",
+        "inbox_id": "inbox_21fe54367f8fe506",
+        "video_id": "5j4qts5Tl8Q",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:qYMrGH-rKJ4|year:2025",
+        "inbox_id": "inbox_242ca5be565270b5",
+        "video_id": "qYMrGH-rKJ4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:9ejLMS6ZdY4|year:2025",
+        "inbox_id": "inbox_29e82b97ab5dfc4e",
+        "video_id": "9ejLMS6ZdY4",
+        "decision": "採用",
+        "evidence_item_count": 11,
+        "observed_song_row_count": 11,
+        "action": "already_present_or_partially_materialized"
+      },
+      {
+        "source_key": "video:25REB1IJg3k|year:2025",
+        "inbox_id": "inbox_334e6a8ce90455e7",
+        "video_id": "25REB1IJg3k",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:eCiDJx3BcLw|year:2026",
+        "inbox_id": "inbox_34f20108e471b805",
+        "video_id": "eCiDJx3BcLw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:iEU6uuF-K-Y|year:2025",
+        "inbox_id": "inbox_36961abe486050f4",
+        "video_id": "iEU6uuF-K-Y",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:KrWCPUfeMmQ|year:2025",
+        "inbox_id": "inbox_38023ed81ec6810e",
+        "video_id": "KrWCPUfeMmQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:eHJ2Ngs-lHA|year:2026",
+        "inbox_id": "inbox_3b18a92cb06d44ae",
+        "video_id": "eHJ2Ngs-lHA",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:l0_aQlA-sfg|year:2025",
+        "inbox_id": "inbox_3bd2a4810b38c028",
+        "video_id": "l0_aQlA-sfg",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:jsAIbV96TmI|year:2025",
+        "inbox_id": "inbox_3ee6d117eb350075",
+        "video_id": "jsAIbV96TmI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:7RT7OvLaVrE|year:2026",
+        "inbox_id": "inbox_406705fdff121d35",
+        "video_id": "7RT7OvLaVrE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:pxduNRUg0wM|year:2025",
+        "inbox_id": "inbox_41b68adf44947f22",
+        "video_id": "pxduNRUg0wM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:TdO1OXbYHfA|year:2025",
+        "inbox_id": "inbox_49c7fe79efeb6c98",
+        "video_id": "TdO1OXbYHfA",
+        "decision": "採用",
+        "evidence_item_count": 1,
+        "observed_song_row_count": 1,
+        "action": "already_present_or_partially_materialized"
+      },
+      {
+        "source_key": "video:Ulbh7NUbGJI|year:2025",
+        "inbox_id": "inbox_4a5c80c0fdb3b54e",
+        "video_id": "Ulbh7NUbGJI",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:FoXt7X1cqJ8|year:2025",
+        "inbox_id": "inbox_54d973cb875cde34",
+        "video_id": "FoXt7X1cqJ8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:rlDN073p178|year:2025",
+        "inbox_id": "inbox_5d8fc446aa6cde6b",
+        "video_id": "rlDN073p178",
+        "decision": "不採用",
+        "evidence_item_count": 11,
+        "observed_song_row_count": 11,
+        "action": "no_write_retraction_review_required"
+      },
+      {
+        "source_key": "video:SOebIygsKM0|year:2026",
+        "inbox_id": "inbox_609a7a881b8ab982",
+        "video_id": "SOebIygsKM0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:YXUgqyxC1LE|year:2025",
+        "inbox_id": "inbox_64b82a8a64d0266e",
+        "video_id": "YXUgqyxC1LE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:RHBPa97oQh0|year:2026",
+        "inbox_id": "inbox_70ac431431953986",
+        "video_id": "RHBPa97oQh0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:XehJce12asQ|year:2025",
+        "inbox_id": "inbox_731de5c28443b787",
+        "video_id": "XehJce12asQ",
+        "decision": "採用",
+        "evidence_item_count": 3,
+        "observed_song_row_count": 3,
+        "action": "already_present_or_partially_materialized"
+      },
+      {
+        "source_key": "video:2lhY-RRf21A|year:2025",
+        "inbox_id": "inbox_7748a69b776b699b",
+        "video_id": "2lhY-RRf21A",
+        "decision": "不採用",
+        "evidence_item_count": 1,
+        "observed_song_row_count": 1,
+        "action": "no_write_retraction_review_required"
+      },
+      {
+        "source_key": "video:18WBulPVe8I|year:2026",
+        "inbox_id": "inbox_782c48489a3c9537",
+        "video_id": "18WBulPVe8I",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:RxMD_f9qOkU|year:2025",
+        "inbox_id": "inbox_7f937eafeb5ef4f0",
+        "video_id": "RxMD_f9qOkU",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Z3K3oGT3jJ0|year:2025",
+        "inbox_id": "inbox_8029ff5d1ed56064",
+        "video_id": "Z3K3oGT3jJ0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:2juoO7pnUWU|year:2025",
+        "inbox_id": "inbox_817e909a6b8fb6c5",
+        "video_id": "2juoO7pnUWU",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:zoKLWo-EvJo|year:2025",
+        "inbox_id": "inbox_84e560e4804c51b4",
+        "video_id": "zoKLWo-EvJo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:iTNIkDXA4Uo|year:2025",
+        "inbox_id": "inbox_87be41f4017f64de",
+        "video_id": "iTNIkDXA4Uo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:35Cein3Mp9w|year:2025",
+        "inbox_id": "inbox_8cd29990d316446f",
+        "video_id": "35Cein3Mp9w",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:t8fhejvxl6E|year:2026",
+        "inbox_id": "inbox_8ed6ffdf83b63a76",
+        "video_id": "t8fhejvxl6E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:04LxYM4ctH0|year:2025",
+        "inbox_id": "inbox_8f6320bf37a3dc64",
+        "video_id": "04LxYM4ctH0",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:o4PwluUsJ4c|year:2025",
+        "inbox_id": "inbox_909e248e732cc159",
+        "video_id": "o4PwluUsJ4c",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:6PD4Zer-Q5E|year:2025",
+        "inbox_id": "inbox_991c65b0f31fe04f",
+        "video_id": "6PD4Zer-Q5E",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:GIvpQd5yVsg|year:2025",
+        "inbox_id": "inbox_a466f04c4882b81e",
+        "video_id": "GIvpQd5yVsg",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:NSVOuxanAak|year:2026",
+        "inbox_id": "inbox_a58c18a3276c04e9",
+        "video_id": "NSVOuxanAak",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:JLShV4UCpgo|year:2026",
+        "inbox_id": "inbox_a7cf52308dc15f7d",
+        "video_id": "JLShV4UCpgo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:HB2pFsxIaXs|year:2025",
+        "inbox_id": "inbox_a874dbe62c093328",
+        "video_id": "HB2pFsxIaXs",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:6hl2nvhabW8|year:2025",
+        "inbox_id": "inbox_a90c52498a8cfe43",
+        "video_id": "6hl2nvhabW8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:XFw4jaTWLhk|year:2026",
+        "inbox_id": "inbox_ace2d6028a0949bd",
+        "video_id": "XFw4jaTWLhk",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Bwoj4mgP8TE|year:2026",
+        "inbox_id": "inbox_b354a5d625c22ed6",
+        "video_id": "Bwoj4mgP8TE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:3Gek9Fbhhk4|year:2026",
+        "inbox_id": "inbox_b4bd828767c95e5b",
+        "video_id": "3Gek9Fbhhk4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:IQAdQJlWwcM|year:2025",
+        "inbox_id": "inbox_b594b0273c2e667a",
+        "video_id": "IQAdQJlWwcM",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:l4uMHnkBn10|year:2025",
+        "inbox_id": "inbox_ba899ad47e18e87b",
+        "video_id": "l4uMHnkBn10",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:XqsgkrjCZeY|year:2026",
+        "inbox_id": "inbox_c3d0c1087a3ebb19",
+        "video_id": "XqsgkrjCZeY",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:XpvPt-Wj4Pk|year:2025",
+        "inbox_id": "inbox_c53748004c6cafcb",
+        "video_id": "XpvPt-Wj4Pk",
+        "decision": "採用",
+        "evidence_item_count": 8,
+        "observed_song_row_count": 8,
+        "action": "already_present_or_partially_materialized"
+      },
+      {
+        "source_key": "video:G-G5XsEKdz4|year:2025",
+        "inbox_id": "inbox_c5fa35c959231e57",
+        "video_id": "G-G5XsEKdz4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:iyOhVzVvUFQ|year:2025",
+        "inbox_id": "inbox_c6d9d890cde3666f",
+        "video_id": "iyOhVzVvUFQ",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Wk7tnUJB1mo|year:2026",
+        "inbox_id": "inbox_c7eb652919a2488c",
+        "video_id": "Wk7tnUJB1mo",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:6YvLCiDjbZ4|year:2025",
+        "inbox_id": "inbox_c95582191ba896b9",
+        "video_id": "6YvLCiDjbZ4",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ObqTl4UGLCc|year:2025",
+        "inbox_id": "inbox_cd7f7c756cee4849",
+        "video_id": "ObqTl4UGLCc",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:b2I4EiNUs_Y|year:2025",
+        "inbox_id": "inbox_cf13a3e988d0247a",
+        "video_id": "b2I4EiNUs_Y",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:68t1Ae8iAGs|year:2025",
+        "inbox_id": "inbox_d4ae71a62b6424b4",
+        "video_id": "68t1Ae8iAGs",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:4u1cQkoNmr8|year:2025",
+        "inbox_id": "inbox_d93b25f250025099",
+        "video_id": "4u1cQkoNmr8",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:4pQDvVwQd3g|year:2025",
+        "inbox_id": "inbox_dac14dfd06b665f2",
+        "video_id": "4pQDvVwQd3g",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:Otv4gDwv8io|year:2025",
+        "inbox_id": "inbox_e07c732d6c6d7b2f",
+        "video_id": "Otv4gDwv8io",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:WdqoYPhAJ8U|year:2026",
+        "inbox_id": "inbox_e1c862207c8909b8",
+        "video_id": "WdqoYPhAJ8U",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:CTA9El6Hmfg|year:2025",
+        "inbox_id": "inbox_e274508a20a1c4ad",
+        "video_id": "CTA9El6Hmfg",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      },
+      {
+        "source_key": "video:3Vjlo-aWqmE|year:2025",
+        "inbox_id": "inbox_e592a2af11ee0aa8",
+        "video_id": "3Vjlo-aWqmE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:aBaSDarn5zU|year:2025",
+        "inbox_id": "inbox_f068101a909141e7",
+        "video_id": "aBaSDarn5zU",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:rQB_pf4XMgs|year:2026",
+        "inbox_id": "inbox_f3b5d5645cf1a8b6",
+        "video_id": "rQB_pf4XMgs",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:ifoY3c2In8o|year:2026",
+        "inbox_id": "inbox_f479c328aadc3919",
+        "video_id": "ifoY3c2In8o",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:leAohTXmzUw|year:2025",
+        "inbox_id": "inbox_f56d9dae5bb9e2f0",
+        "video_id": "leAohTXmzUw",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:AIUmG_wplQE|year:2025",
+        "inbox_id": "inbox_f957212aac819c22",
+        "video_id": "AIUmG_wplQE",
+        "decision": "採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "requires_identity_packet_before_materialize"
+      },
+      {
+        "source_key": "video:nkJ1fRUPtEs|year:2025",
+        "inbox_id": "inbox_fcd6203aaecf2129",
+        "video_id": "nkJ1fRUPtEs",
+        "decision": "不採用",
+        "evidence_item_count": 0,
+        "observed_song_row_count": 0,
+        "action": "no_canonical_write"
+      }
+    ]
+  },
+  "no_write_decisions": {
+    "summary": {
+      "decision_count": 99,
+      "historical_reference_count": 60,
+      "event_date_count": 38,
+      "x_gap_count": 1
+    },
+    "historical_reference_quality": [
+      {
+        "source_key": "quality:hrq_8f28bc79e0ffc786",
+        "inbox_id": "inbox_efb2b1b64556e29b",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_2acdfb42fc2c98e9",
+        "inbox_id": "inbox_444d25f115461dee",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_fa4115be65482b4f",
+        "inbox_id": "inbox_e365f1ab6a18d283",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_de679ea374461a9d",
+        "inbox_id": "inbox_d9da543d8386d479",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_deac566530d45633",
+        "inbox_id": "inbox_0ad017df1e3af82f",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_21b8700f94515f1c",
+        "inbox_id": "inbox_7a4a28360994d174",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_04476552c2aa8015",
+        "inbox_id": "inbox_e8d2c0ff7048f467",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_68546e5aa76c7350",
+        "inbox_id": "inbox_28dc9c184cef44d2",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_1aefd75d83c60108",
+        "inbox_id": "inbox_d91c7bb9cdae1b47",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_62f90685172b6daf",
+        "inbox_id": "inbox_029eecbed5daad1a",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_fe24ff7347d2ee28",
+        "inbox_id": "inbox_040800ed25c197b0",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_161867f684a6c3c0",
+        "inbox_id": "inbox_09366a616eaa8c6d",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_4e45713f4895bed5",
+        "inbox_id": "inbox_0a598759ad1bd707",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_5d6e07fbf674dc36",
+        "inbox_id": "inbox_119d541b96d8b811",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_2732d0aca688aeb8",
+        "inbox_id": "inbox_1d47781be32ea502",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_28193c7b0a0f4875",
+        "inbox_id": "inbox_2a416a31aa5bf127",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_f2d96c99ee125ac7",
+        "inbox_id": "inbox_2ced14c0238c25c4",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_6ccef99d766b9f4e",
+        "inbox_id": "inbox_2fa55cd50f8d2fea",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_cec70d8dc3b2267d",
+        "inbox_id": "inbox_314b388d6b75c0de",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_ceaf10961241205c",
+        "inbox_id": "inbox_317bdb6c58bdbdbb",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_bd79f78bb6260e9c",
+        "inbox_id": "inbox_32ac86aa21c90e8c",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_4bfa1433f7742d14",
+        "inbox_id": "inbox_3c0eea867358198f",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_e61710a04fd30425",
+        "inbox_id": "inbox_3e0600eaa8a6b833",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_17fa1cb32101bd00",
+        "inbox_id": "inbox_3e4546c60377dd2b",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_2618ab851e2a0906",
+        "inbox_id": "inbox_43e1cdeb38f38e20",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_d08d84ed53156612",
+        "inbox_id": "inbox_45f562a7954683c4",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_8ee678c4f6ef3c4f",
+        "inbox_id": "inbox_4633de5b0189adac",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_3ec32a50e0d6b71e",
+        "inbox_id": "inbox_4d55e32c4fbccd89",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_cabd427639c87a82",
+        "inbox_id": "inbox_57dbc9e3fa753afa",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_6bd932fc5188850d",
+        "inbox_id": "inbox_58c9367c00f8937e",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_9239d26b4a5d640f",
+        "inbox_id": "inbox_5a99f9defbb33a61",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_ade99e60ade9871a",
+        "inbox_id": "inbox_5b5292bf06bdaba5",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_762915b0b86aac07",
+        "inbox_id": "inbox_64b0302554e8c20d",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_2f89cd0279931e2e",
+        "inbox_id": "inbox_774c1c24fb748b85",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_1c73ebb6355b8036",
+        "inbox_id": "inbox_79b2dfeb548e1271",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_df56507b46bb05c8",
+        "inbox_id": "inbox_8254e60b78a7d6ad",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_881ba4845fe69112",
+        "inbox_id": "inbox_8814bbaa44885f54",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_edfc570930a6cbbb",
+        "inbox_id": "inbox_8e571205a360dcc1",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_cb90264ae7c094a8",
+        "inbox_id": "inbox_943483fa9975e1ec",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_f9d6aa4192df816d",
+        "inbox_id": "inbox_9bb0d5b6bcfbfbcc",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_64d5d28f6b4a29b0",
+        "inbox_id": "inbox_aadbc3908b8efe68",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_072af5b23fdffb5c",
+        "inbox_id": "inbox_ac17fe32fc91596f",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_fa69702ed70fe9c2",
+        "inbox_id": "inbox_ad28ae95bc3f7905",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_fe3acf1898dd47f5",
+        "inbox_id": "inbox_b054df6aac6ee2f0",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_dde0cf58147e76d5",
+        "inbox_id": "inbox_c1a3b2f24699ed6a",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_51223108e64c0353",
+        "inbox_id": "inbox_c3b4fde7c26608e9",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_193c5e53c304b0a0",
+        "inbox_id": "inbox_d05003846f9829b0",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_0700d78078951f84",
+        "inbox_id": "inbox_d1c18bd732c688ce",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_9c8f3e5c5831bc1a",
+        "inbox_id": "inbox_d3aabdfdc8b3641c",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_81decddf7591ffc5",
+        "inbox_id": "inbox_d702e139033d34d5",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_c32eec682da51e02",
+        "inbox_id": "inbox_d8c591ca91fdb339",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_0dfd7d9ef68e4135",
+        "inbox_id": "inbox_e1bee8e241462c90",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_92a928c1735d5c4a",
+        "inbox_id": "inbox_e36cce98f03c28fd",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_6c98f213c4c6c419",
+        "inbox_id": "inbox_e50e81ff469df03d",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_2e06f3bc497f7062",
+        "inbox_id": "inbox_e7b9c839acc32109",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_dce5a5d97a62600f",
+        "inbox_id": "inbox_ed4f7c89c2fd6ba6",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_7d1af9bedb58222c",
+        "inbox_id": "inbox_f9a746674a6157eb",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_93d7ead4096f3804",
+        "inbox_id": "inbox_fc34c5505c629888",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_b72a91ea7fd9c95d",
+        "inbox_id": "inbox_fcca83e1e3ac906b",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      },
+      {
+        "source_key": "quality:hrq_a9d09a1936dbd270",
+        "inbox_id": "inbox_fd1d53c490063d43",
+        "action": "no_canonical_write_keep_historical_reference",
+        "decision": "過去実績として維持"
+      }
+    ],
+    "publication_event_date": [
+      {
+        "source_key": "gap:event_publication_blocked:occ_e4c1f913880556e6",
+        "inbox_id": "inbox_2baf7c76ae7fe333",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_155994a7692e0903",
+        "inbox_id": "inbox_9743a92217a1e83f",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_0ace412b9159e3d6",
+        "inbox_id": "inbox_ac0b547d3232300d",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_7efd1cf300fcc49b",
+        "inbox_id": "inbox_02a37597342f2618",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_12d3e47336ce1954",
+        "inbox_id": "inbox_097840485478eac6",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_67fd8e9026d47b41",
+        "inbox_id": "inbox_0a5025f46f4a7720",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_4775d08e03ae9c0a",
+        "inbox_id": "inbox_15efd279b8b724cc",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_01cf7a28d077f15a",
+        "inbox_id": "inbox_1bb8edcb710708ab",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_5639b5e5d86daae0",
+        "inbox_id": "inbox_1ed9627294935d97",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_3d9a8416ad891275",
+        "inbox_id": "inbox_24c5b0fd9ce7db7d",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_6a7d51cebe7e6504",
+        "inbox_id": "inbox_3e58e4f986fe021a",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_38f8a7a86d5518b5",
+        "inbox_id": "inbox_3e9b7b16b0b6c7e1",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_9826d7e4a03517e5",
+        "inbox_id": "inbox_471d7b91f33933d4",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_c7619656781592c0",
+        "inbox_id": "inbox_499bf38d3e24dcf3",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_3056f95dcb2e5bef",
+        "inbox_id": "inbox_6c618b95a8c995f8",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_cd931551e6999c29",
+        "inbox_id": "inbox_6ff28ef6fb87d8a4",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_566324ef4cc023fc",
+        "inbox_id": "inbox_765aeea012933bfd",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_8ca0a83555960eda",
+        "inbox_id": "inbox_79c77c285b99777a",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_663f8dcbc116cc6c",
+        "inbox_id": "inbox_7bed88bc7ede8c2f",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_0c0916e2c7e2372e",
+        "inbox_id": "inbox_8954c9a4d050ce60",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_8e5839f6edc5e755",
+        "inbox_id": "inbox_8ffa33fabeac30bb",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_b3af04396e8d3892",
+        "inbox_id": "inbox_9398d72df3bab3a0",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_e5ea459ea88de16c",
+        "inbox_id": "inbox_a4aa14f2cbff8557",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_e0b26e0575018108",
+        "inbox_id": "inbox_ac94b6450ff64a04",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_fd17ae0a3e8ebee8",
+        "inbox_id": "inbox_b056ab0af102711a",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_2eb9d3179e731fbe",
+        "inbox_id": "inbox_ba21df29b8512e94",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_e4a7eb02f5fed215",
+        "inbox_id": "inbox_bb83209e5273d060",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_1df0a276422a54b5",
+        "inbox_id": "inbox_cb90f4a002d75872",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_c565b321c0781d58",
+        "inbox_id": "inbox_d3b4eae77b1909a0",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_7cf4363078dba915",
+        "inbox_id": "inbox_d541fc70969c4395",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_bc886d56d49db026",
+        "inbox_id": "inbox_d6fa4fc4945619c4",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_157d77e9752e5cea",
+        "inbox_id": "inbox_d7863c7cf6a9d798",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_1c1ba416045784f2",
+        "inbox_id": "inbox_d8b9429fad15d84d",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_3457fbcaa3574e2a",
+        "inbox_id": "inbox_e863ce2dccae41f0",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_04c6583602918b75",
+        "inbox_id": "inbox_ed861e3e4fde74e3",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_d02e65d5c00a6dbc",
+        "inbox_id": "inbox_ed9c9bfb958eb15e",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_ae27910105bc5737",
+        "inbox_id": "inbox_fa647d38cff7312c",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      },
+      {
+        "source_key": "gap:event_publication_blocked:occ_cebf9d6e2408f0ce",
+        "inbox_id": "inbox_ff8402832bbd76f0",
+        "classification": "no_current_year_evidence",
+        "action": "no_write_current_year_date_unconfirmed"
+      }
+    ],
+    "x_gap": [
+      {
+        "source_key": "x:2067765707643949227",
+        "inbox_id": "inbox_0fe2591205f0b80a",
+        "action": "no_write_official_confirmation_required",
+        "classification": "corroborated_2026",
+        "recommended_decision": "needs_official_confirmation"
+      }
+    ]
+  },
+  "publication_sync": {
+    "summary": {
+      "decision_count": 12
+    },
+    "items": [
+      {
+        "source_key": "gap:glossary_v2_missing_public:ぼーんとぅ盆踊り",
+        "inbox_id": "inbox_439b15123170ea27",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:000年音頭",
+        "inbox_id": "inbox_f403205ca41796af",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:古調かわさき・かわさき",
+        "inbox_id": "inbox_44ab4ea8edb435e9",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:少年八木節",
+        "inbox_id": "inbox_e99eb7c95b6ae8bf",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:川崎おどり",
+        "inbox_id": "inbox_64d4b6440bd764cb",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:川崎踊り",
+        "inbox_id": "inbox_fdb6da0e9697ea24",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:郡上かわさき",
+        "inbox_id": "inbox_00337c28ebc0edb1",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:public_ready_song_missing_public:郡上節かわさき",
+        "inbox_id": "inbox_35465eb6ddbcc59d",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:weekly_song_updated_unpublished:五万石おどり",
+        "inbox_id": "inbox_fe7a93190ff4bb65",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:weekly_song_updated_unpublished:夜の踊り子",
+        "inbox_id": "inbox_1a96f73ff2fc4189",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:weekly_song_updated_unpublished:岡崎音頭",
+        "inbox_id": "inbox_a3c48ec15730d2ee",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      },
+      {
+        "source_key": "gap:weekly_song_updated_unpublished:馬鹿おどり",
+        "inbox_id": "inbox_05d667bd7ae66bca",
+        "action": "separate_bon_odori_site_sync_plan_required",
+        "decision": "公開同期対象"
+      }
+    ]
+  }
+}
