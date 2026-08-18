@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 from export_public_events import (
     _song_from_rdb,
+    audit_public_song_projection,
     apply_public_recurrence_metadata,
     apply_public_site_postprocessors,
     apply_public_event_overrides,
@@ -28,6 +29,7 @@ from export_public_events import (
     public_detail_text,
     sanitize_public_event_details,
     strip_public_internal_event_fields,
+    strip_song_internal_fields,
     suppress_replaced_recurring_events,
     require_no_prediction_json_fallback,
     write_public_js,
@@ -813,6 +815,7 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual(filtered[0].get("songs"), [])
         self.assertEqual([song["name"] for song in filtered[1]["songs"]], ["かわさき", "春駒"])
         self.assertEqual(filtered[1]["songs"][0]["basis_label"], "2025年ヒント")
+        self.assertEqual(filtered[1]["songs"][0]["probability"], 48)
         self.assertNotIn("source_count", filtered[1]["songs"][0])
 
     def test_suppress_replaced_recurring_events_matches_numbered_bon_odori_variant(self):
@@ -847,6 +850,77 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual([row["name"] for row in filtered], ["新橋こいち祭"])
         self.assertEqual([song["name"] for song in filtered[0]["songs"]], ["新橋音頭", "東京音頭"])
         self.assertEqual(filtered[0]["songs"][0]["basis_label"], "2025年ヒント")
+        self.assertEqual(filtered[0]["songs"][0]["probability"], 57)
+
+    def test_previous_year_direct_result_is_decayed_and_keeps_result_label(self):
+        rows = apply_public_recurrence_metadata([
+            {
+                "name": "テスト盆踊り",
+                "venue": "テスト公園",
+                "area": "港区",
+                "date": "2026-08-01",
+                "status": "確認済み",
+                "_series_id": "ser_test",
+            },
+            {
+                "name": "テスト盆踊り",
+                "venue": "テスト公園",
+                "area": "港区",
+                "date": "2025-08-02",
+                "status": "終了",
+                "_series_id": "ser_test",
+                "songs": [{
+                    "name": "東京音頭",
+                    "confidence": "confirmed",
+                    "source_count": 2,
+                    "probability": 95,
+                    "basis": "current_observed",
+                    "basis_label": "実測",
+                }],
+            },
+        ], target_year=2026, today="2026-06-17")
+
+        filtered = suppress_replaced_recurring_events(rows, target_year=2026)
+
+        self.assertEqual(filtered[0]["songs"], [{
+            "name": "東京音頭",
+            "confidence": "hint",
+            "probability": 68,
+            "basis": "past_evidence",
+            "basis_label": "2025年実測",
+        }])
+
+    def test_public_song_aliases_dedupe_video_title_artifacts(self):
+        songs = merge_song_occurrence_hints(
+            [{"name": "ドラえもん音頭", "probability": 95, "basis": "current_announced"}],
+            {"songs": [{"name": "ドラえもん音頭 Doraemon ondo", "probability": 80}]},
+        )
+        public = strip_public_internal_event_fields([{"songs": songs}])[0]["songs"]
+
+        self.assertEqual([song["name"] for song in public], ["ドラえもん音頭"])
+
+    def test_public_song_cleanup_removes_chapter_markers_and_prose(self):
+        public = strip_song_internal_fields([
+            {"name": "終 ガット・トゥ・ビー・リアル", "probability": 71},
+            {"name": "特設会場周辺で開かれる街なかの踊り", "probability": 60},
+            {"name": "阿波踊り", "probability": 60},
+        ])
+
+        self.assertEqual(public, [{"name": "ガット・トゥ・ビー・リアル", "probability": 71}])
+
+    def test_public_song_audit_rejects_indirect_exact_scores(self):
+        issues = audit_public_song_projection([
+            {
+                "name": "テスト盆踊り",
+                "songs": [{
+                    "name": "東京音頭",
+                    "probability": 95,
+                    "basis": "past_evidence",
+                }],
+            }
+        ])
+
+        self.assertEqual(issues[0]["type"], "indirect_song_above_exact_threshold")
 
     def test_suppress_replaced_recurring_events_keeps_both_without_series_id(self):
         # No _series_id on either row: even though name/venue/area coincidentally

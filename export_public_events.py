@@ -20,6 +20,7 @@ import urllib.error
 import urllib.request
 
 from song_processing.bon_odori_songs import extract_song_hints, is_suppressed_song
+from song_processing.song_occurrences import DEFAULT_PREDICTION_PARAMS
 from event_model.event_series_normalization import public_series_name
 from event_model.year_context import normalize_target_year
 from master_rdb.master_db import MASTER_DB, connect_existing
@@ -88,7 +89,25 @@ FALLBACK_SUPPRESSED_VENUES = {
 NON_SONG_LABELS = {
     # ジャンル/イベント名であって曲名ではないため、曲目タグには出さない。
     "郡上おどり",
+    # YouTube 動画タイトルから混入した演目・進行・文章断片。
+    "新宿音頭コンクール 予選決勝",
+    "大角会和太鼓演奏",
+    "演舞披露",
+    "締め太鼓",
+    "東大島駅前大島小松川公園季節",
+    "阿波踊り",
 }
+PUBLIC_SONG_ALIASES = {
+    # 公開曲名の表記ゆれ。証拠行は消さず、公開時だけ同一曲へ束ねる。
+    "浅草ばし音頭": "浅草橋音頭",
+    "新宿音頭1": "新宿音頭",
+    "新宿音頭2": "新宿音頭",
+    "ドラえもん音頭 Doraemon ondo": "ドラえもん音頭",
+    "クックロビン音頭 Cock Robin Ondo": "クックロビン音頭",
+    "ジャンボリーミッキー": "ジャンボリミッキー",
+    "Y.M.C.A.": "YMCA",
+}
+SONG_YEAR_DECAY_RATE = float(DEFAULT_PREDICTION_PARAMS["decay_rate"])
 AMBIGUOUS_SONG_LABELS = {
     # 曲名にもなり得るが、イベント本文では一般語として誤抽出されやすい。
     "まつり",
@@ -686,7 +705,7 @@ def load_rdb_occurrence_songs(conn):
 def merge_song_occurrence_hints(existing_songs, occurrence):
     songs = {}
     for song in existing_songs or []:
-        if not song.get("name") or is_suppressed_song(song.get("name")):
+        if not song.get("name") or _is_public_non_song_name(song.get("name")):
             continue
         key = _song_dedupe_key(song.get("name", ""))
         if not key:
@@ -696,7 +715,7 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
         if current is None or _song_score(candidate) > _song_score(current):
             songs[key] = candidate
     for song in (occurrence or {}).get("songs", []):
-        if is_suppressed_song(song.get("name")):
+        if _is_public_non_song_name(song.get("name")):
             continue
         key = _song_dedupe_key(song.get("name", ""))
         if not key:
@@ -736,7 +755,10 @@ def strip_song_internal_fields(songs):
             candidate = {"name": song, "confidence": "hint"}
         else:
             candidate = dict(song)
-        name = _song_name(candidate).strip()
+        name = canonical_public_song_name(_song_name(candidate))
+        if _is_public_non_song_name(name):
+            continue
+        candidate["name"] = name
         key = _song_dedupe_key(name)
         if not key:
             continue
@@ -1178,10 +1200,10 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
     return events, len(covered), 0, 0
 
 
-def build_public_events(*, target_year):
+def build_public_events(*, target_year, db_path=MASTER_DB):
     if PUBLIC_SOURCE in {"notion", "legacy_notion"}:
         return build_public_events_from_notion(target_year=target_year)
-    return build_public_events_from_master(target_year=target_year)
+    return build_public_events_from_master(db_path=db_path, target_year=target_year)
 
 
 def write_public_js(path, events):
@@ -1522,8 +1544,27 @@ def _song_name(song):
     return song if isinstance(song, str) else str(song.get("name") or "")
 
 
+def canonical_public_song_name(name):
+    name = str(name or "").strip()
+    # YouTube titles sometimes prefix the final chapter with 「終 」; it is a
+    # chapter marker, never part of the song title.
+    name = re.sub(r"^終\s+", "", name)
+    lookup = unicodedata.normalize("NFKC", name)
+    return PUBLIC_SONG_ALIASES.get(name, PUBLIC_SONG_ALIASES.get(lookup, name))
+
+
+def _is_public_non_song_name(name):
+    name = canonical_public_song_name(name)
+    return (
+        not name
+        or name in NON_SONG_LABELS
+        or is_suppressed_song(name)
+        or name.endswith("周辺で開かれる街なかの踊り")
+    )
+
+
 def _song_dedupe_key(name):
-    normalized = unicodedata.normalize("NFKC", str(name or "")).casefold()
+    normalized = canonical_public_song_name(name).casefold()
     chars = []
     for char in normalized:
         if char.isspace():
@@ -1536,12 +1577,14 @@ def _song_dedupe_key(name):
 
 def _public_song(song):
     if isinstance(song, str):
-        return {"name": song, "confidence": "hint"}
-    return {
+        return {"name": canonical_public_song_name(song), "confidence": "hint"}
+    public = {
         key: song[key]
         for key in ["name", "confidence", "probability", "basis", "basis_label"]
         if key in song and song[key] not in (None, "", [])
     }
+    public["name"] = canonical_public_song_name(public.get("name"))
+    return public
 
 
 def strip_internal_public_fields(value):
@@ -1650,6 +1693,45 @@ def _is_weak_ambiguous_song(song):
     )
 
 
+def _historical_kind_label(song):
+    basis = song.get("basis") if isinstance(song, dict) else None
+    if basis == "current_observed":
+        return "実測"
+    if basis == "current_announced":
+        return "告知"
+    return "ヒント"
+
+
+def _decay_replacement_song(song, *, previous_year):
+    """Turn a previous-year public row into a conservative historical hint."""
+    song = dict(song)
+    probability = song.get("probability")
+    if probability is None:
+        probability = 80
+
+    if song.get("basis") == "past_evidence":
+        # The source row was already speaker-adjusted and decayed into the
+        # previous year. Moving it forward one more year must apply only the
+        # additional year decay, not a second speaker penalty.
+        decayed = float(probability) * SONG_YEAR_DECAY_RATE
+        basis_label = song.get("basis_label") or f"{previous_year - 1}年ヒント"
+    else:
+        source_count = max(1, int(song.get("source_count") or 1))
+        speaker_factor = min(1.0, 0.65 + 0.15 * source_count)
+        decayed = float(probability) * SONG_YEAR_DECAY_RATE * speaker_factor
+        basis_label = f"{previous_year}年{_historical_kind_label(song)}"
+
+    song.update(
+        {
+            "confidence": "hint",
+            "probability": max(5, min(90, round(decayed))),
+            "basis": "past_evidence",
+            "basis_label": basis_label,
+        }
+    )
+    return song
+
+
 def merge_replacement_songs(current, recurring, *, previous_year):
     """Move useful last-year song evidence onto the current-year replacement card.
 
@@ -1666,14 +1748,15 @@ def merge_replacement_songs(current, recurring, *, previous_year):
     """
     merged = {}
     for raw_song in current.get("songs") or []:
-        name = _song_name(raw_song).strip()
-        if not name or name in NON_SONG_LABELS:
+        name = canonical_public_song_name(_song_name(raw_song))
+        if _is_public_non_song_name(name):
             continue
         song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
+        song["name"] = name
         merged[_song_dedupe_key(name)] = song
     for raw_song in recurring.get("songs") or []:
-        name = _song_name(raw_song).strip()
-        if not name or name in NON_SONG_LABELS:
+        name = canonical_public_song_name(_song_name(raw_song))
+        if _is_public_non_song_name(name):
             continue
         if _is_weak_ambiguous_song(raw_song):
             continue
@@ -1681,11 +1764,9 @@ def merge_replacement_songs(current, recurring, *, previous_year):
         if key in merged:
             continue
         song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
+        song["name"] = name
         if str(recurring.get("date") or "").startswith(f"{previous_year}-"):
-            song["basis"] = "past_evidence"
-            song["basis_label"] = f"{previous_year}年ヒント"
-            if song.get("probability") is None:
-                song["probability"] = 80
+            song = _decay_replacement_song(song, previous_year=previous_year)
         merged[key] = song
     current["songs"] = sorted(
         strip_song_internal_fields(merged.values()),
@@ -1825,6 +1906,42 @@ def write_series_split_review(candidates, *, json_path, md_path):
         f.write("\n".join(lines) + "\n")
 
 
+def audit_public_song_projection(events):
+    """Return public-song contract violations that must block publication."""
+    issues = []
+    for event in events:
+        seen = set()
+        for song in event.get("songs") or []:
+            name = canonical_public_song_name(_song_name(song))
+            key = _song_dedupe_key(name)
+            probability = song.get("probability") if isinstance(song, dict) else None
+            basis = song.get("basis") if isinstance(song, dict) else None
+            if _is_public_non_song_name(name):
+                issues.append({"type": "non_song_label", "event": event.get("name"), "song": name})
+            if key in seen:
+                issues.append({"type": "duplicate_song", "event": event.get("name"), "song": name})
+            seen.add(key)
+            if probability is not None and not 0 <= float(probability) <= 100:
+                issues.append(
+                    {"type": "probability_out_of_range", "event": event.get("name"), "song": name}
+                )
+            if probability is not None and float(probability) > 90 and basis in {
+                None,
+                "past_evidence",
+                "current_hint",
+            }:
+                issues.append(
+                    {
+                        "type": "indirect_song_above_exact_threshold",
+                        "event": event.get("name"),
+                        "song": name,
+                        "probability": probability,
+                        "basis": basis,
+                    }
+                )
+    return issues
+
+
 def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
     """Run the production public-event projection without writing output files."""
     projection_today = public_export_today(today)
@@ -1861,11 +1978,19 @@ def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
         today=projection_today,
         prefer_existing_axes=prefer_existing_axes,
     )
+    public_events = strip_public_internal_event_fields(events)
+    song_audit_issues = audit_public_song_projection(public_events)
+    if song_audit_issues:
+        raise ValueError(
+            "public song projection refused invalid rows: "
+            + json.dumps(song_audit_issues[:10], ensure_ascii=False)
+        )
     return {
         "events": events,
-        "public_events": strip_public_internal_event_fields(events),
+        "public_events": public_events,
         "source_map": public_event_source_map(events),
         "prediction_report": prediction_result["report"],
+        "song_audit_issues": song_audit_issues,
     }
 
 
@@ -1877,6 +2002,7 @@ def main(argv=None):
         help="JST date used for public historical-reference expiry checks (YYYY-MM-DD).",
     )
     parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--master-db", default=MASTER_DB)
     args = parser.parse_args(argv)
 
     if PUBLIC_SOURCE in {"notion", "legacy_notion"} and not os.environ.get("NOTION_API_TOKEN"):
@@ -1884,7 +2010,8 @@ def main(argv=None):
         return
     try:
         events, covered, fallback, skipped = build_public_events(
-            target_year=args.target_year
+            target_year=args.target_year,
+            db_path=args.master_db,
         )
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
@@ -1892,7 +2019,7 @@ def main(argv=None):
     projection = project_public_events(
         events,
         target_year=args.target_year,
-        db_path=MASTER_DB,
+        db_path=args.master_db,
         today=args.today,
     )
     events = projection["events"]
