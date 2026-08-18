@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T08:13:43Z",
-  "generated_for_commit": "e9a36d9",
+  "generated_at": "2026-08-18T10:57:38Z",
+  "generated_for_commit": "b0c38ab",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -33,15 +33,17 @@
         "INV-COL-004",
         "INV-COL-005",
         "INV-COL-006",
-        "INV-COL-007"
+        "INV-COL-007",
+        "INV-COL-008"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
         "tests/test_x_collection_health.py",
         "tests/test_collect_no_semantic_exclusion.py",
-        "tests/test_x_search_watermark.py"
+        "tests/test_x_search_watermark.py",
+        "tests/test_x_gap_candidates.py"
       ],
-      "updated_for": "fcb8277",
+      "updated_for": "c2364ab",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         ".github/workflows/collect.yml",
@@ -64,12 +66,17 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 1
+        "commits_since": 1,
+        "files_changed_since": 2
       },
-      "version": "1.6",
-      "revision_count": 7,
+      "version": "1.7",
+      "revision_count": 8,
       "history": [
+        {
+          "commit": "b0c38ab",
+          "date": "2026-08-18",
+          "subject": "Persist and review X event candidate backlog (#239)"
+        },
         {
           "commit": "9bd761e",
           "date": "2026-08-16",
@@ -204,6 +211,9 @@
         "data/review_backlog_decision_overlay.json",
         "data/review_backlog_youtube_decision_overlay.json",
         "data/review_backlog_event_hold_llm_research.json",
+        "data/x_candidate_backlog.json",
+        "data/x_candidate_backlog_alerts.json",
+        "data/x_candidate_backlog_alerts.md",
         "review_console/**",
         "review_console_ops/**",
         "scripts/promote_change_requests_for_review.py",
@@ -211,6 +221,8 @@
         "run_review_inbox_rare_signal_canary.py",
         "run_review_inbox_rare_signal_decision_canary.py",
         "run_review_inbox_low_priority_scheduled.py",
+        "run_review_inbox_x_gap_scheduled.py",
+        "x_candidate_backlog.py",
         "build_rare_signal_backcheck_queue.py",
         "search_rare_signal_backcheck_sources.py",
         "export_rare_signal_backcheck_reviews.py",
@@ -226,7 +238,8 @@
         "build_weekly_harvest_candidates.py",
         "prepare_weekly_harvest_review.py",
         "build_official_source_review.py",
-        "review_inbox_migration_runner.py"
+        "review_inbox_migration_runner.py",
+        "docs/x-candidate-backlog-operations.md"
       ],
       "depends_on": [
         "L1-master"
@@ -251,7 +264,9 @@
         "INV-RVW-017",
         "INV-RVW-018",
         "INV-RVW-019",
-        "INV-RVW-020"
+        "INV-RVW-020",
+        "INV-RVW-021",
+        "INV-RVW-022"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -264,9 +279,11 @@
         "tests/test_x_occurrence_resolution_contract.py",
         "tests/test_review_console.py",
         "tests/test_review_inbox_low_priority_adapters.py",
-        "tests/test_review_inbox_youtube_adapter.py"
+        "tests/test_review_inbox_youtube_adapter.py",
+        "tests/test_x_candidate_backlog.py",
+        "tests/test_run_review_inbox_x_gap_scheduled.py"
       ],
-      "updated_for": "419cd04",
+      "updated_for": "c2364ab",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -281,6 +298,10 @@
         "data/review_backlog_decision_overlay.json",
         "data/review_backlog_event_hold_llm_research.json",
         "data/review_backlog_youtube_decision_overlay.json",
+        "data/x_candidate_backlog.json",
+        "data/x_candidate_backlog_alerts.json",
+        "data/x_candidate_backlog_alerts.md",
+        "docs/x-candidate-backlog-operations.md",
         "export_rare_signal_backcheck_reviews.py",
         "prepare_weekly_harvest_review.py",
         "promote_x_news_digest_reviews.py",
@@ -336,17 +357,24 @@
         "run_review_inbox_rare_signal_canary.py",
         "run_review_inbox_rare_signal_decision_canary.py",
         "run_review_inbox_rare_signal_scheduled.py",
+        "run_review_inbox_x_gap_scheduled.py",
         "scripts/promote_change_requests_for_review.py",
         "search_rare_signal_backcheck_sources.py",
-        "stage_rare_signal_backcheck_reviews.py"
+        "stage_rare_signal_backcheck_reviews.py",
+        "x_candidate_backlog.py"
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 9
+        "files_changed_since": 8
       },
-      "version": "1.11",
-      "revision_count": 12,
+      "version": "1.12",
+      "revision_count": 13,
       "history": [
+        {
+          "commit": "b0c38ab",
+          "date": "2026-08-18",
+          "subject": "Persist and review X event candidate backlog (#239)"
+        },
         {
           "commit": "5c9d608",
           "date": "2026-08-18",
@@ -401,11 +429,6 @@
           "commit": "a855a9a",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
-        },
-        {
-          "commit": "1d2d00d",
-          "date": "2026-08-13",
-          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
       ]
     },
@@ -1524,6 +1547,14 @@
       ],
       "has_test": true
     },
+    "INV-COL-008": {
+      "spec": "L1-collection",
+      "title": "区名のないX告知も既知会場の構造化住所で23区候補にできる",
+      "tests": [
+        "tests/test_x_gap_candidates.py::test_known_tokyo_venue_groups_kyoka_posts_without_a_ward_token"
+      ],
+      "has_test": true
+    },
     "INV-JDG-001": {
       "spec": "L1-judgment",
       "title": "判定には盆踊り文脈と説明可能な採点理由を残す",
@@ -1851,6 +1882,22 @@
       "title": "既存開催回へ完全一致した古い人待ちholdは、内容が変わらない間だけ画面から外す",
       "tests": [
         "tests/test_judgment_j0_adjudication.py::JudgmentJ0AdjudicationTest::test_06c_exact_llm_duplicate_overlay_removes_only_the_matching_hold"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-021": {
+      "spec": "L1-review",
+      "title": "X候補の件数上限は表示量だけを制限し、候補自体を捨てない",
+      "tests": [
+        "tests/test_x_candidate_backlog.py::test_overflow_is_persisted_and_terminal_lifecycle_survives_next_merge"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-022": {
+      "spec": "L1-review",
+      "title": "X候補の日次5件は部分コホートとしてCAS成功後だけ処理中にする",
+      "tests": [
+        "tests/test_x_candidate_backlog.py::test_daily_snapshot_is_an_explicit_partial_cohort_and_queueing_is_post_write"
       ],
       "has_test": true
     },
@@ -2336,6 +2383,10 @@
     "data/review_backlog_decision_overlay.json": "L1-review",
     "data/review_backlog_event_hold_llm_research.json": "L1-review",
     "data/review_backlog_youtube_decision_overlay.json": "L1-review",
+    "data/x_candidate_backlog.json": "L1-review",
+    "data/x_candidate_backlog_alerts.json": "L1-review",
+    "data/x_candidate_backlog_alerts.md": "L1-review",
+    "docs/x-candidate-backlog-operations.md": "L1-review",
     "export_rare_signal_backcheck_reviews.py": "L1-review",
     "prepare_weekly_harvest_review.py": "L1-review",
     "promote_x_news_digest_reviews.py": "L1-review",
@@ -2391,9 +2442,11 @@
     "run_review_inbox_rare_signal_canary.py": "L1-review",
     "run_review_inbox_rare_signal_decision_canary.py": "L1-review",
     "run_review_inbox_rare_signal_scheduled.py": "L1-review",
+    "run_review_inbox_x_gap_scheduled.py": "L1-review",
     "scripts/promote_change_requests_for_review.py": "L1-review",
     "search_rare_signal_backcheck_sources.py": "L1-review",
     "stage_rare_signal_backcheck_reviews.py": "L1-review",
+    "x_candidate_backlog.py": "L1-review",
     "audit_master_rdb.py": "L1-master",
     "data/llm_event_date_prediction_judgments.json": "L1-master",
     "data/official_notice_reports/detail_cleanup_repair_20260816.json": "L1-master",
@@ -2592,8 +2645,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 357,
-    "owned": 260,
+    "tracked_source_files": 359,
+    "owned": 262,
     "unowned": 97,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
