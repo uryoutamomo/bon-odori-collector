@@ -8,6 +8,9 @@ owns:
   - data/review_backlog_decision_overlay.json
   - data/review_backlog_youtube_decision_overlay.json
   - data/review_backlog_event_hold_llm_research.json
+  - data/x_candidate_backlog.json
+  - data/x_candidate_backlog_alerts.json
+  - data/x_candidate_backlog_alerts.md
   - review_console/**
   - review_console_ops/**
   - scripts/promote_change_requests_for_review.py
@@ -15,6 +18,8 @@ owns:
   - run_review_inbox_rare_signal_canary.py
   - run_review_inbox_rare_signal_decision_canary.py
   - run_review_inbox_low_priority_scheduled.py
+  - run_review_inbox_x_gap_scheduled.py
+  - x_candidate_backlog.py
   - build_rare_signal_backcheck_queue.py
   - search_rare_signal_backcheck_sources.py
   - export_rare_signal_backcheck_reviews.py
@@ -31,6 +36,7 @@ owns:
   - prepare_weekly_harvest_review.py
   - build_official_source_review.py
   - review_inbox_migration_runner.py
+  - docs/x-candidate-backlog-operations.md
 depends_on:
   - L1-master
 invariants:
@@ -54,6 +60,8 @@ invariants:
   - INV-RVW-018
   - INV-RVW-019
   - INV-RVW-020
+  - INV-RVW-021
+  - INV-RVW-022
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -66,7 +74,9 @@ verified_by:
   - tests/test_review_console.py
   - tests/test_review_inbox_low_priority_adapters.py
   - tests/test_review_inbox_youtube_adapter.py
-updated_for: 419cd04
+  - tests/test_x_candidate_backlog.py
+  - tests/test_run_review_inbox_x_gap_scheduled.py
+updated_for: c2364ab
 ---
 
 # 人のレビュー運用サブシステム
@@ -103,6 +113,7 @@ updated_for: 419cd04
 | 何を | どこへ |
 |---|---|
 | 受信箱の投影 | `data/review_inbox.json` |
+| X候補の永続ライフサイクルと日次アラート | `data/x_candidate_backlog.json` / `data/x_candidate_backlog_alerts.*` |
 | 人の決定 | `review_inbox_items` の状態更新 |
 | 適用可能な変更リクエスト | 昇格済みの reviewed JSON → [マスタ](04-master.md) |
 
@@ -325,6 +336,41 @@ updated_for: 419cd04
 - **守っているテスト**: `tests/test_judgment_j0_adjudication.py::JudgmentJ0AdjudicationTest::test_06c_exact_llm_duplicate_overlay_removes_only_the_matching_hold`、
   `tests/test_e2_identity_judgment.py::MissingMaterialTest::test_selected_occurrence_without_a_new_venue_needs_no_user_hold`
 
+### INV-RVW-021 X候補の件数上限は表示量だけを制限し、候補自体を捨てない
+
+- **内容**: `x_candidate_backlog.py` は `build_x_gap_candidates.py` の `candidates` と
+  `archived_candidates` を毎日どちらも `data/x_candidate_backlog.json` へ合流する。前日の候補が
+  今日の30件から消えても台帳から削除せず、`未処理 / 処理中 / 登録済み / 却下` の状態を保持する。
+  terminal状態は根拠・主体つきの明示transitionなしに再開しない。開催日が近い候補と公式候補を
+  選出順で優先するが、低優先候補を消さない。
+- **なぜ**: 旧経路では公式新規5件・全体30件の上限超過分を毎日作り直し、同じ古い候補が先頭に
+  残って後続が永久に選ばれなかった。上限は人の処理量を守るために必要だが、持ち越し状態が無いと
+  「処理を遅らせる」が「情報を捨てる」に変わる。
+- **破れたときの症状**: `archived_count` は増えるのに翌日の未処理件数へ反映されず、開催直前の
+  未登録イベントが内田さんの名指し調査まで見つからない。
+- **守っているコード**: `x_candidate_backlog.py` の `build_backlog()`、`transition_status()`、
+  `select_daily_cohort()`
+- **守っているテスト**: `tests/test_x_candidate_backlog.py::test_overflow_is_persisted_and_terminal_lifecycle_survives_next_merge`、
+  `tests/test_x_candidate_backlog.py::test_due_soon_and_official_candidates_are_prioritized_then_selected_five`
+
+### INV-RVW-022 X候補の日次5件は部分コホートとしてCAS成功後だけ処理中にする
+
+- **内容**: 日次投入は最大5件で、adapter snapshotに `selection.mode=cohort` を明記する。
+  `all`（完全スナップショット）や1件だけの `canary` と偽らない。`run_review_inbox_x_gap_scheduled.py` は
+  repository variable、明示environment、CAS、parity、公開投影不変を全て通した後だけ、同じ5件を
+  バックログの `処理中` へ移す。失敗時は `未処理` のまま次回へ残す。信頼度別の自動反映方針は
+  台帳に記録するが、canary期間中は `automatic_publication_enabled=false` で正本factを変更しない。
+- **なぜ**: 部分集合の不在を「現在の全候補から消えた」と誤認すると、以前に積んだpending行を
+  レビュー画面から隠してしまう。先に処理中へ動かすと、S3/CAS失敗だけで候補が再選出されなくなる。
+- **破れたときの症状**: 受信箱へ入っていない候補が処理中になって止まる、または今日の5件に
+  含まれなかった過去候補が自動解決扱いで画面から消える。
+- **守っているコード**: `review_inbox_adapters/x_gap_adapter.py` の
+  `build_daily_cohort_snapshot()`、`run_review_inbox_x_gap_scheduled.py` の `run_scheduled()`、
+  `review_inbox_adapters/source_writer.py` の cohort gate
+- **守っているテスト**: `tests/test_x_candidate_backlog.py::test_daily_snapshot_is_an_explicit_partial_cohort_and_queueing_is_post_write`、
+  `tests/test_run_review_inbox_x_gap_scheduled.py::test_scheduled_cohort_writes_five_and_only_then_marks_them_in_progress`、
+  `tests/test_run_review_inbox_x_gap_scheduled.py::test_cas_conflict_leaves_candidates_unprocessed`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -373,7 +419,7 @@ agent が `awaiting_user` hold を開いた候補だけを、同じレビュー�
 ここが長らく仕様に書かれておらず、**毎日動いているのに触っても逆引きに出てこない状態だった**
 （2026-08-14に配分。それまで `collect.yml` が呼ぶ38本のうち23本がどの仕様にも属していなかった）。
 
-積む入口は4つのレーンに分かれていて、それぞれ独立に有効・無効を切り替えられる。
+積む入口は5つのレーンに分かれていて、それぞれ独立に有効・無効を切り替えられる。
 **スクリプト側の既定はどれも off** で、動かすにはリポジトリ変数のガードと確認句の両方が要る
 （たとえば `--confirm 'RUN SCHEDULED YOUTUBE AGGREGATE DUAL WRITE'` のような句を workflow が渡す）。
 `83bf7d0` 時点で有効なのは稀少シグナル・YouTube集約・低優先の3つで、
@@ -383,6 +429,7 @@ agent が `awaiting_user` hold を開いた候補だけを、同じレビュー�
 
 | レーン | 積む前に作るもの | 受信箱へ流す実行 |
 |---|---|---|
+| X候補の日次コホート | `x_candidate_backlog.py merge` → `x_gap_adapter.py --backlog ... --daily-limit 5` | `run_review_inbox_x_gap_scheduled.py`（`REVIEW_INBOX_X_GAP_DUAL_WRITE_ENABLED`） |
 | 稀少シグナル | `build_rare_signal_backcheck_queue.py` → `export_rare_signal_backcheck_reviews.py` → `stage_rare_signal_backcheck_reviews.py` | `run_review_inbox_rare_signal_scheduled.py` |
 | YouTube集約 | [YouTube取り込み](09-youtube.md)側で用意 | `run_review_inbox_youtube_scheduled.py`（同じくあちら） |
 | 低優先 | `build_missing_venue_review_from_song_associations.py`（会場側）、`build_historical_reference_quality_review.py` | `run_review_inbox_low_priority_scheduled.py` |

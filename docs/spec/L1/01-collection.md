@@ -30,12 +30,14 @@ invariants:
   - INV-COL-005
   - INV-COL-006
   - INV-COL-007
+  - INV-COL-008
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
   - tests/test_collect_no_semantic_exclusion.py
   - tests/test_x_search_watermark.py
-updated_for: fcb8277
+  - tests/test_x_gap_candidates.py
+updated_for: c2364ab
 ---
 
 # 収集サブシステム
@@ -112,6 +114,22 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **守っているコード**: `.github/workflows/collect.yml` のコミット段
 - **守っているテスト**: `tests/test_x_search_watermark.py::XSearchWatermarkPersistenceTest::test_workflow_commits_the_watermark_and_the_cost_ledger`
 
+### INV-COL-008 区名のないX告知も既知会場の構造化住所で23区候補にできる
+
+- **内容**: `build_x_gap_candidates.py` は、投稿本文だけでは東京23区と断定できないとき、任意入力の
+  `data/blog_venue_rows.json` にある十分に長い会場名との完全な正規化部分一致を調べる。その行の
+  `region_hint` / `address` が23区を示す場合だけ地域根拠として採用する。同じ既知会場・同じ初日の
+  非公式投稿は一候補へ束ね、全投稿URLとポスター画像URLを保持する。会場行が無い場合は従来の
+  明示地域シグナルへfail closedする。
+- **なぜ**: 「京華スクエア（八丁堀3-17-9）」のように、人には中央区と分かる詳細な告知でも、
+  本文に「東京都」「中央区」が無いだけで従来のX gapから落ちていた。個別地名を正規表現へ足すと
+  同じ欠落を別会場で繰り返すため、すでに住所を持つ構造化会場行を根拠として再利用する。
+- **破れたときの症状**: 日時・会場・ポスター・複数投稿が揃った未登録イベントが
+  `x_news_digest_for_oto.json` にはあるのに、`x_gap_candidates.json` とReview Inboxへ一度も現れない。
+- **守っているコード**: `build_x_gap_candidates.py` の `known_tokyo23_venue_evidence()`、
+  `known_venue_event_key()`、`build()`
+- **守っているテスト**: `tests/test_x_gap_candidates.py::test_known_tokyo_venue_groups_kyoka_posts_without_a_ward_token`
+
 ## 主要な流れ
 
 1. `collect.py` がRSS・動画・Xを取得し、既読情報と照合する。
@@ -132,8 +150,11 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 
 - `build_x_gap_candidates.py --limit 30` — 収集済みの投稿の中から、
   **公開データに無いイベントの話をしていそうなもの**を選ぶ。「穴」とはこの取りこぼしのことである。
-  選んだ候補は[レビュー](03-review.md)側のアダプタとレーン分けへ渡る。取り出す件数を30に絞ってあるのは、
-  人が裁定できる量を超えて積むと律速工程が詰まるためで、絞りの意味はレビュー側に書いてある。
+  30件は日次表示の上限であり、上限超過分を捨てる境界ではない。`collect.yml` は直後に
+  [レビュー](03-review.md)側の `x_candidate_backlog.py` を呼び、選択分と `archived_candidates` の双方を
+  永続台帳へ合流する。そこから5件だけをReview Inboxの部分コホートにする契約は
+  INV-RVW-021 / INV-RVW-022にある。`build_x_gap_candidates.py` またはこのworkflow配線を触るときは、
+  収集INVだけでなくその2つも確認する。
 - `discover_x_social_graph.py` — いま読んでいるアカウントの周辺から、新しく読むべき相手を探す。
   日次の `collect.yml` ではなく専用の workflow から動く。
 - `sync_x_promoted_members.py` — 人が承認した「読む相手に加える」判断を、Xのメンバー台帳へ反映する。

@@ -29,11 +29,16 @@ from collection_support.tokyo23_scope import (
 DATA = Path("data")
 VOICES = DATA / "voices.json"
 OUT = DATA / "x_gap_candidates.json"
+KNOWN_VENUES = DATA / "blog_venue_rows.json"
 X_SOURCES = {"x", "x_whitelist", "x_proactive", "x_event_history"}
 DATE_RE = re.compile(r"(?:20\d{2}[/-]\d{1,2}[/-]\d{1,2}|\d{1,2}月\d{1,2}日?|\d{1,2}/\d{1,2}|\d{1,2}時)")
 # This deliberately excludes times (for example "18時").  It is used for
 # future-event discovery, where a time must never be mistaken for a date.
 FUTURE_DATE_RE = re.compile(r"(?:(20\d{2})[年/-])?(\d{1,2})月(\d{1,2})日?|(?:(20\d{2})[/-])?(\d{1,2})/(\d{1,2})(?!\d)")
+ELIDED_DAY_RANGE_RE = re.compile(
+    r"(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日?"
+    r"(?:\([^)]+\))?\s*[・･〜～~\-ー–—]\s*(\d{1,2})日?"
+)
 BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|民踊|納涼|夏まつり|夏祭り", re.I)
 CHANGE_RE = re.compile(r"中止|延期|順延|時間変更|開催時間.*変更|取りやめ")
 NON_CHANGE_RE = re.compile(r"(?:順延|延期).{0,12}(?:ない|ありません|ございません)|(?:雨天|少雨)決行|雨天中止")
@@ -193,12 +198,75 @@ def future_dates(text: str, *, year: int, today: date) -> list[date]:
             continue
         if value.year == year and value >= today:
             found.add(value)
+    # Posters often elide the month in the second day: ``8月27日・28日`` or
+    # ``8月27日(金)-28日(土)``.  The general matcher sees only the first day.
+    for match in ELIDED_DAY_RANGE_RE.finditer(text):
+        value_year = int(match.group(1) or year)
+        month = int(match.group(2))
+        for raw_day in match.group(3, 4):
+            try:
+                value = date(value_year, month, int(raw_day))
+            except ValueError:
+                continue
+            if value.year == year and value >= today:
+                found.add(value)
     return sorted(found)
 
 
 def has_positive_tokyo23_signal(text: str, voice: dict[str, Any]) -> bool:
     scope_text = " ".join(str(value or "") for value in (text, voice.get("area"), voice.get("region")))
     return bool(TOKYO_23_RE.search(scope_text) or TOKYO23_LANDMARK_RE.search(scope_text))
+
+
+def known_tokyo23_venue_evidence(
+    text: str, venue_rows: list[dict[str, Any]]
+) -> dict[str, str] | None:
+    """Ground an otherwise ambiguous post in an existing structured venue row.
+
+    A post such as ``京華スクエア（八丁堀3-17-9）`` is clearly local to a
+    human, but it contains neither ``東京都`` nor ``中央区``.  The venue feed
+    already carries that missing geography.  Reuse it instead of maintaining
+    an ever-growing regex of Tokyo neighborhood names.
+    """
+    normalized_text = normalize_text(text)
+    matches: list[dict[str, str]] = []
+    for raw in venue_rows:
+        if not isinstance(raw, dict):
+            continue
+        venue = str(raw.get("venue") or "").strip()
+        normalized_venue = normalize_text(venue)
+        if len(normalized_venue) < 4 or normalized_venue not in normalized_text:
+            continue
+        region = str(raw.get("region_hint") or raw.get("area") or "").strip()
+        address = str(raw.get("address") or "").strip()
+        geography = f"{region} {address}"
+        if is_outside_tokyo_23_scope(geography):
+            continue
+        if not (
+            region in TOKYO_23_WARDS
+            or bool(TOKYO_23_RE.search(geography))
+            or ("東京都" in geography and bool(TOKYO_23_RE.search(geography)))
+        ):
+            continue
+        matches.append(
+            {
+                "venue": venue,
+                "region_hint": region,
+                "address": address,
+                "source_url": str(raw.get("detail_url") or raw.get("source_url") or ""),
+            }
+        )
+    if not matches:
+        return None
+    # Prefer the longest exact venue label.  This avoids a short nested venue
+    # name winning when the post contains a more specific known place.
+    return max(matches, key=lambda row: len(normalize_text(row["venue"])))
+
+
+def known_venue_event_key(evidence: dict[str, str], dates: list[date]) -> str:
+    first_date = dates[0].isoformat() if dates else ""
+    identity = f"{normalize_text(evidence['venue'])}|{first_date}"
+    return "informal-venue:" + hashlib.sha1(identity.encode()).hexdigest()[:16]
 
 
 def informal_event_key(text: str, dates: list[date]) -> str:
@@ -232,8 +300,19 @@ def group_candidates(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
         rows.sort(key=lambda row: row["source_key"])
         representative = dict(rows[0])
         urls = list(dict.fromkeys(str(row.get("source_url") or "") for row in rows if row.get("source_url")))
+        media_urls = list(dict.fromkeys(
+            str(url)
+            for row in rows
+            for url in (
+                (row.get("voice") or {}).get("media_urls")
+                or (row.get("voice") or {}).get("media")
+                or []
+            )
+            if str(url or "")
+        ))
         authors = {str(row.get("source_author") or "").strip() for row in rows if str(row.get("source_author") or "").strip()}
         representative["source_urls"] = urls
+        representative["source_media_urls"] = media_urls
         representative["corroboration_count"] = len(authors) or len(rows)
         representative["source_count"] = len(rows)
         representative["candidate_id"] = "xgap_" + hashlib.sha1(key.encode()).hexdigest()[:16]
@@ -252,6 +331,14 @@ def calendar_dates(text: str, *, year: int) -> list[date]:
             values.add(date(value_year, month, day))
         except ValueError:
             continue
+    for match in ELIDED_DAY_RANGE_RE.finditer(text):
+        value_year = int(match.group(1) or year)
+        month = int(match.group(2))
+        for raw_day in match.group(3, 4):
+            try:
+                values.add(date(value_year, month, int(raw_day)))
+            except ValueError:
+                continue
     return sorted(values)
 
 
@@ -358,8 +445,17 @@ def range_is_explained_by_other_occurrence(
     return False
 
 
-def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, today: date | None=None) -> dict[str, Any]:
+def build(
+    voices: list[dict[str, Any]],
+    db: Path,
+    *,
+    year: int,
+    limit: int = 30,
+    today: date | None = None,
+    known_venues: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
     gaps=catalog(db, year)
+    known_venues = known_venues or []
     today=today or date.today()
     candidates=[]; archived=[]; seen=set()
     for voice in voices:
@@ -380,6 +476,7 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
         officiality=assess_source_officiality({}, voice=voice)
         official=(officiality.get("classification") == "registered_official_social")
         observed_dates=future_dates(text, year=year, today=today)
+        venue_evidence=known_tokyo23_venue_evidence(text, known_venues)
         all_found=[(gap, matches(text, gap)) for gap in gaps]
         all_found=[(gap, names) for gap,names in all_found if names]
         found=list(all_found)
@@ -408,7 +505,9 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
         else:
             missing=[(g,n) for g,n in found if not g["date_start"] and DATE_RE.search(text)]
             if missing: kind="missing_date"; priority=200; gap,names=missing[0]
-            elif official and not found and DATE_RE.search(text) and EVENTISH_RE.search(text) and VENUEISH_RE.search(text): kind="official_new_event"; priority=100
+            elif (official and not found and DATE_RE.search(text) and EVENTISH_RE.search(text)
+                  and (VENUEISH_RE.search(text) or venue_evidence)):
+                kind="official_new_event"; priority=100
             elif found and observed_dates:
                 candidate_gap, candidate_names = found[0]
                 itinerary = is_date_list_itinerary(text)
@@ -432,7 +531,8 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
                     kind="date_range_conflict"; priority=250; gap,names=candidate_gap,candidate_names
                 else: continue
             elif (not found and not official and observed_dates and EVENTISH_RE.search(text)
-                  and VENUEISH_RE.search(text) and has_positive_tokyo23_signal(text, voice)):
+                  and (VENUEISH_RE.search(text) or venue_evidence)
+                  and (has_positive_tokyo23_signal(text, voice) or venue_evidence)):
                 kind="informal_new_event"; priority=80
             elif past_report: kind="past_event_report"; priority=90
             else: continue
@@ -447,7 +547,14 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
           "source_url":voice.get("url") or "", "source_text":text[:500], "source_author":voice.get("account") or voice.get("author") or "",
           "source_officiality":officiality, "date_hints":DATE_RE.findall(text),
           "observed_dates":([value.isoformat() for value in report_dates] if kind == "past_event_report" else [value.isoformat() for value in observed_dates]),
-          "event_group_key":informal_event_key(text, observed_dates) if kind == "informal_new_event" else "",
+          "event_group_key":(
+              known_venue_event_key(venue_evidence, observed_dates)
+              if kind == "informal_new_event" and venue_evidence
+              else informal_event_key(text, observed_dates)
+              if kind == "informal_new_event"
+              else ""
+          ),
+          "known_venue_evidence":venue_evidence,
           "voice":voice})
     existing_archived=archived
     candidates=group_candidates(candidates)
@@ -479,8 +586,8 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
 
 
 def main() -> None:
-    p=argparse.ArgumentParser(); p.add_argument("--voices",type=Path,default=VOICES); p.add_argument("--master-db",type=Path,default=MASTER_DB); p.add_argument("--year",type=int,default=datetime.now().year); p.add_argument("--today",type=date.fromisoformat); p.add_argument("--limit",type=int,default=30); p.add_argument("--out",type=Path,default=OUT); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument("--voices",type=Path,default=VOICES); p.add_argument("--master-db",type=Path,default=MASTER_DB); p.add_argument("--known-venues",type=Path,default=KNOWN_VENUES); p.add_argument("--year",type=int,default=datetime.now().year); p.add_argument("--today",type=date.fromisoformat); p.add_argument("--limit",type=int,default=30); p.add_argument("--out",type=Path,default=OUT); a=p.parse_args()
     if not 1 <= a.limit <= 30: p.error("--limit must be between 1 and 30")
-    payload=build(load(a.voices,[]),a.master_db,year=a.year,limit=a.limit,today=a.today); a.out.parent.mkdir(parents=True,exist_ok=True); a.out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); print(f"x gap candidates: {payload['candidate_count']} -> {a.out}")
+    payload=build(load(a.voices,[]),a.master_db,year=a.year,limit=a.limit,today=a.today,known_venues=load(a.known_venues,[])); a.out.parent.mkdir(parents=True,exist_ok=True); a.out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); print(f"x gap candidates: {payload['candidate_count']} -> {a.out}")
 
 if __name__ == "__main__": main()

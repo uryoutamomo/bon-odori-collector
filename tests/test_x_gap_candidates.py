@@ -114,6 +114,49 @@ def test_informal_new_events_require_future_date_positive_23_scope_and_are_cappe
     assert any(row.get('archive_reason')=='informal_new_event_daily_cap' for row in payload['archived_candidates'])
 
 
+def test_known_tokyo_venue_groups_kyoka_posts_without_a_ward_token(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    venues=[{
+        'venue':'京華スクエア',
+        'region_hint':'中央区',
+        'address':'中央区八丁堀3-17-9',
+        'source_url':'https://example.test/chuo-events',
+    }]
+    voices=[
+        {
+            'source':'x',
+            'tweet_id':'2088167046794326105',
+            'account':'@tukishimanagaya',
+            'date':'2026-08-14',
+            'url':'https://x.com/tukishimanagaya/status/2088167046794326105',
+            'text':'令和8年八丁堀盆踊り納涼大会 2026年8月27日・28日 京華スクエア',
+            'media_urls':['https://pbs.twimg.com/poster.jpg'],
+        },
+        {
+            'source':'x',
+            'tweet_id':'2081881810930442285',
+            'account':'@mu4324',
+            'date':'2026-08-01',
+            'url':'https://x.com/mu4324/status/2081881810930442285',
+            'text':'今年の八丁堀納涼大会 京華スクエア盆踊り 8月27日〜28日',
+        },
+    ]
+    payload=build(
+        voices,
+        db,
+        year=2026,
+        today=date(2026,8,18),
+        known_venues=venues,
+    )
+    rows=[row for row in payload['candidates'] if row['candidate_kind']=='informal_new_event']
+    assert len(rows)==1
+    assert rows[0]['source_count']==2
+    assert rows[0]['corroboration_count']==2
+    assert rows[0]['known_venue_evidence']['region_hint']=='中央区'
+    assert rows[0]['source_media_urls']==['https://pbs.twimg.com/poster.jpg']
+    assert rows[0]['observed_dates']==['2026-08-27','2026-08-28']
+
+
 def test_date_range_conflicts_are_grouped_with_corroborating_sources(tmp_path):
     db=tmp_path/'master.sqlite'; make_db(db)
     conn=sqlite3.connect(db)
@@ -181,7 +224,7 @@ def test_kanda_prefestival_range_conflict_survives_suppression_guards(tmp_path):
     conflicts=[row for row in build([voice],db,year=2026,today=date(2026,6,4))['candidates']
                if row['candidate_kind']=='date_range_conflict']
     assert len(conflicts)==1
-    assert conflicts[0]['observed_dates']==['2026-08-06','2026-08-07']
+    assert conflicts[0]['observed_dates']==['2026-08-06','2026-08-07','2026-08-09']
 
 
 def test_checked_in_2026_x_gap_sources_keep_only_kanda_date_range_conflict(tmp_path):

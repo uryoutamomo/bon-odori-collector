@@ -94,11 +94,15 @@ class SourceWriterFlags:
         )
 
     def require_shadow_run(self, selection_mode: str) -> None:
-        if self.dual_write_mode not in {"off", "canary", "bulk"}:
+        if self.dual_write_mode not in {"off", "canary", "cohort", "bulk"}:
             raise SourceWriterError(f"unsupported dual-write mode: {self.dual_write_mode}")
         if self.dual_write_mode == "off":
             raise SourceWriterError("review inbox dual-write is off")
-        expected_selection = "canary" if self.dual_write_mode == "canary" else "all"
+        expected_selection = {
+            "canary": "canary",
+            "cohort": "cohort",
+            "bulk": "all",
+        }[self.dual_write_mode]
         if selection_mode != expected_selection:
             raise SourceWriterError(
                 f"selection mode {selection_mode!r} does not match "
@@ -132,7 +136,7 @@ def _env_bool(name: str, default: bool) -> bool:
 def _selection_mode(snapshot: dict[str, Any]) -> str:
     selection = snapshot.get("selection") or {}
     mode = str(selection.get("mode") or "all")
-    if mode not in {"canary", "all"}:
+    if mode not in {"canary", "cohort", "all"}:
         raise SourceWriterError(f"unsupported adapter selection mode: {mode}")
     return mode
 

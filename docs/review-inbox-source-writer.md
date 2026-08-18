@@ -27,13 +27,19 @@ B1-2には次を含めない。
 
 | flag | default | B1-2で許す値 |
 |---|---|---|
-| `REVIEW_INBOX_DUAL_WRITE_MODE` | `off` | testで明示した`canary` / `bulk` |
+| `REVIEW_INBOX_DUAL_WRITE_MODE` | `off` | testで明示した`canary` / `cohort` / `bulk` |
 | `REVIEW_INBOX_CAS_PUBLISH_ENABLED` | `false` | testのFakeStoreでのみ`true` |
 | `REVIEW_INBOX_READER_MODE` | `legacy` | `legacy`のみ |
 | `REVIEW_INBOX_LEGACY_WRITER_ENABLED` | `true` | `true`のみ |
 
-canary snapshotは`dual_write_mode=canary`、full snapshotの`selection.mode=all`は
-`dual_write_mode=bulk`にだけ対応する。一つのflagでcanary、bulk、reader、writer停止をまとめて越えない。
+1件のcanary snapshotは`dual_write_mode=canary`、明示的な部分集合の
+`selection.mode=cohort`は`dual_write_mode=cohort`、full snapshotの`selection.mode=all`は
+`dual_write_mode=bulk`にだけ対応する。一つのflagでcanary、cohort、bulk、reader、writer停止をまとめて越えない。
+
+`cohort` はX候補の日次5件のように、正本sourceの一部だけを順に積むためのモードである。
+レビュー画面は `selection.mode=all` の不在だけを表示上の自動解決に使えるため、部分集合を
+`all` と偽ってはならない。writerのparity対象はそのrunの `seen_ids` に限る点は他モードと同じで、
+同sourceの未選択行を削除・closeしない。
 
 ## Current observationとno-op
 
@@ -90,4 +96,4 @@ domain table更新、公開反映へfallbackしない。
 - unseen pendingをstale候補、unseen decidedをlifecycle保持へ分類し、削除しない
 - publish直前のCAS conflictでpublish 0回
 - public projection差分でpublish 0回
-- canary / bulk selectionとflagの不一致を拒否
+- canary / cohort / bulk selectionとflagの不一致を拒否

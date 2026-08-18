@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "generated_by": "x_candidate_backlog.py",
+  "generated_at": "2026-08-18T01:30:00+00:00",
+  "as_of_date": "2026-08-18",
+  "summary": {
+    "event_within_7_days_unresolved": 40,
+    "high_confidence_over_24h_unresolved": 0,
+    "overflow_not_carried": 0,
+    "critical": 0,
+    "warning": 40
+  },
+  "alerts": {
+    "event_within_7_days_unresolved": [
+      {
+        "source_key": "x:2082672552208453855",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/event_checker/status/2082672552208453855"
+      },
+      {
+        "source_key": "x:2083717690775232581",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/COLOGNECHAN/status/2083717690775232581"
+      },
+      {
+        "source_key": "x:2084967015425679844",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/travelroad5/status/2084967015425679844"
+      },
+      {
+        "source_key": "x:2056637018248229108",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/8_chokai/status/2056637018248229108"
+      },
+      {
+        "source_key": "x:2069399177852043484",
+        "status": "unprocessed",
+        "event_date": "2026-08-23",
+        "days_until_event": 5,
+        "source_url": "https://x.com/hebikubojinja/status/2069399177852043484"
+      },
+      {
+        "source_key": "x:2070416039960256961",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/sagami_bon/status/2070416039960256961"
+      },
+      {
+        "source_key": "x:2071528030485594126",
+        "status": "unprocessed",
+        "event_date": "2026-08-24",
+        "days_until_event": 6,
+        "source_url": "https://x.com/jujonakahara1/status/2071528030485594126"
+      },
+      {
+        "source_key": "x:2075836657262330005",
+        "status": "unprocessed",
+        "event_date": "2026-08-20",
+        "days_until_event": 2,
+        "source_url": "https://x.com/ishitejitemple/status/2075836657262330005"
+      },
+      {
+        "source_key": "x:2077545681250931167",
+        "status": "unprocessed",
+        "event_date": "2026-08-19",
+        "days_until_event": 1,
+        "source_url": "https://x.com/kandakankou/status/2077545681250931167"
+      },
+      {
+        "source_key": "x:2079133153332228439",
+        "status": "unprocessed",
+        "event_date": "2026-08-20",
+        "days_until_event": 2,
+        "source_url": "https://x.com/ishitejitemple/status/2079133153332228439"
+      },
+      {
+        "source_key": "x:2079388352336572531",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/cdp_shibata/status/2079388352336572531"
+      },
+      {
+        "source_key": "x:2082142444184023539",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/uchikoshichokai/status/2082142444184023539"
+      },
+      {
+        "source_key": "x:2084474407603552694",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/otafull/status/2084474407603552694"
+      },
+      {
+        "source_key": "x:2085363340889764127",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/KataokaKyoko369/status/2085363340889764127"
+      },
+      {
+        "source_key": "x:2085842037065290183",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/kamikitachuo/status/2085842037065290183"
+      },
+      {
+        "source_key": "x:2086588333879423328",
+        "status": "unprocessed",
+        "event_date": "2026-08-19",
+        "days_until_event": 1,
+        "source_url": "https://x.com/otafull/status/2086588333879423328"
+      },
+      {
+        "source_key": "x:2086747424958328884",
+        "status": "unprocessed",
+        "event_date": "2026-08-18",
+        "days_until_event": 0,
+        "source_url": "https://x.com/sodegauradanchi/status/2086747424958328884"
+      },
+      {
+        "source_key": "x:2087354024819654985",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/sagami_bon/status/2087354024819654985"
+      },
+      {
+        "source_key": "x:2087436148591493598",
+        "status": "unprocessed",
+        "event_date": "2026-08-23",
+        "days_until_event": 5,
+        "source_url": "https://x.com/theaterkura/status/2087436148591493598"
+      },
+      {
+        "source_key": "x:2087811400794083572",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/otafull/status/2087811400794083572"
+      },
+      {
+        "source_key": "x:2088037894145425877",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/otafull/status/2088037894145425877"
+      },
+      {
+        "source_key": "x:2088098286934634663",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/otafull/status/2088098286934634663"
+      },
+      {
+        "source_key": "x:2088122029639864666",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/otafull/status/2088122029639864666"
+      },
+      {
+        "source_key": "x:2088791837897318757",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/sunshinechoukai/status/2088791837897318757"
+      },
+      {
+        "source_key": "x:2078354038559813733",
+        "status": "unprocessed",
+        "event_date": "2026-08-23",
+        "days_until_event": 5,
+        "source_url": "https://x.com/kamatanomi/status/2078354038559813733"
+      },
+      {
+        "source_key": "x:2079441657993613335",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/natsutr_bon/status/2079441657993613335"
+      },
+      {
+        "source_key": "x:2082613391282045394",
+        "status": "unprocessed",
+        "event_date": "2026-08-19",
+        "days_until_event": 1,
+        "source_url": "https://x.com/osakachushin/status/2082613391282045394"
+      },
+      {
+        "source_key": "x:2082728153093701991",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/handmaderey/status/2082728153093701991"
+      },
+      {
+        "source_key": "x:2083457157480190349",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/natsutr_bon/status/2083457157480190349"
+      },
+      {
+        "source_key": "x:2084539602728296711",
+        "status": "unprocessed",
+        "event_date": "2026-08-20",
+        "days_until_event": 2,
+        "source_url": "https://x.com/CUTIEPAI_/status/2084539602728296711"
+      },
+      {
+        "source_key": "x:2085207206358831209",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/googuuganmo/status/2085207206358831209"
+      },
+      {
+        "source_key": "x:2085526731969241484",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/bon__juu/status/2085526731969241484"
+      },
+      {
+        "source_key": "x:2086333746874331146",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/kyopla_koiwa/status/2086333746874331146"
+      },
+      {
+        "source_key": "x:2087369768806625404",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/tamuro_hnakano/status/2087369768806625404"
+      },
+      {
+        "source_key": "x:2088156930279923724",
+        "status": "unprocessed",
+        "event_date": "2026-08-20",
+        "days_until_event": 2,
+        "source_url": "https://x.com/cos9n/status/2088156930279923724"
+      },
+      {
+        "source_key": "x:2088176775822270628",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/natsutr_bon/status/2088176775822270628"
+      },
+      {
+        "source_key": "x:2088209951495954642",
+        "status": "unprocessed",
+        "event_date": "2026-08-23",
+        "days_until_event": 5,
+        "source_url": "https://x.com/2019Varekai/status/2088209951495954642"
+      },
+      {
+        "source_key": "x:2088460671763525885",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/HAMANOYUedoyu/status/2088460671763525885"
+      },
+      {
+        "source_key": "x:2088513508833104362",
+        "status": "unprocessed",
+        "event_date": "2026-08-22",
+        "days_until_event": 4,
+        "source_url": "https://x.com/masako0327/status/2088513508833104362"
+      },
+      {
+        "source_key": "x:a71a690a3f419376",
+        "status": "unprocessed",
+        "event_date": "2026-08-21",
+        "days_until_event": 3,
+        "source_url": "https://x.com/natsutr_bon/status/2061795596592419268"
+      }
+    ],
+    "high_confidence_over_24h_unresolved": [],
+    "overflow_not_carried": []
+  }
+}
