@@ -28,7 +28,8 @@ verified_by:
   - tests/test_e0b_bridge.py
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
-updated_for: 4830e93
+  - tests/test_sync_event_date_predictions_rdb.py
+updated_for: b5e6c0a
 ---
 
 # 公開サブシステム
@@ -148,11 +149,14 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   ローカルJSON側にしか無い予測が1件でも使われた場合、`require_no_prediction_json_fallback()` が `RuntimeError` を投げて処理を止める。
   フォールバック0件のときだけ通る。
 - **なぜ**: RDBと手元JSONの二重管理を許すと、どちらが正しいのか分からなくなる。
-  黙って古いJSONを使うくらいなら、止まって気づいたほうが安全だという判断。
+  黙って古いJSONを使うくらいなら、止まって気づいたほうが安全だという判断。生成JSONからRDBへの
+  日次同期は[INV-MST-013](04-master.md)が担い、このガード自体は緩めない。
 - **破れたときの症状**: RDBを直したのに公開の予測日が変わらない。古い予測が残り続ける。
+  またはYouTube日次の翌日から `collect.yml` がJSONフォールバック検出で停止する。
 - **守っているコード**: `export_public_events.py` の `require_no_prediction_json_fallback()`
 - **守っているテスト**: `tests/test_export_public_events.py::test_json_prediction_fallback_is_a_hard_failure`、
-  `tests/test_export_public_events.py::test_zero_json_prediction_fallback_is_accepted`
+  `tests/test_export_public_events.py::test_zero_json_prediction_fallback_is_accepted`、
+  `tests/test_sync_event_date_predictions_rdb.py::SyncEventDatePredictionsRdbTest::test_sync_closes_public_json_fallback_without_changing_confirmed_date`
 
 ### INV-PUB-007 公開実績からRDBへ戻す候補は、対象IDなしでは作られない
 
@@ -247,4 +251,4 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 
 ---
 
-こと（Claude Code）
+おと（Codex）

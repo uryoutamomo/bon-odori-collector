@@ -19,6 +19,7 @@ owns:
   - master_rdb_freeze_policy.py
   - transition_ended_occurrences.py
   - run_event_state_axes_migration.py
+  - sync_event_date_predictions_rdb.py
   - run_post_batch_maintenance.py
   - run_x_song_identity_migration.py
   - promotion_candidates/build_historical_promotion_candidates.py
@@ -39,6 +40,7 @@ invariants:
   - INV-MST-010
   - INV-MST-011
   - INV-MST-012
+  - INV-MST-013
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -50,7 +52,9 @@ verified_by:
   - tests/test_event_date_prediction_judgment.py
   - tests/test_build_historical_promotion_candidates.py
   - tests/test_reviewed_change_requests_workflow.py
-updated_for: 665424d
+  - tests/test_sync_event_date_predictions_rdb.py
+  - tests/test_collect_event_state_axes_wiring.py
+updated_for: b5e6c0a
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -236,22 +240,48 @@ updated_for: 665424d
 - **守っているテスト**: `tests/test_reviewed_change_requests_workflow.py::test_workflow_dry_runs_before_apply_and_verifies_every_stage`、
   `tests/test_build_historical_promotion_candidates.py::BuildHistoricalPromotionCandidatesTest::test_exact_event_and_venue_match_short_canonical_name`
 
+### INV-MST-013 生成された日付予測は正本RDBへ先に同期し、曖昧な系列へは書かない
+
+- **内容**: `sync_event_date_predictions_rdb.py` は `data/event_date_predictions.json` の対象年予測を、
+  系列の正式名・別名と会場の正式名・別名の組で一意に解決してから
+  `predicted_occurrence_dates` へ同期する。限定的な名称包含を許す場合も会場一致と系列一意性を必須とし、
+  0件または複数系列、または過去年の根拠が2年未満なら全体を停止する。同期対象は
+  `source='event_date_predictions'` の行と、外部キーに必要な最小の履歴候補行の不足分だけで、
+  既存の履歴候補、手動・LLM由来の予測、`event_occurrences` の確定日は変更・削除しない。既定はDBコピーへのdry-runで、
+  executeも同じコピーpreflight、完全性検査、確認句を通す。日次はこの同期を公開射影より前に実行し、
+  CAS publish後の再取得DBが変更0であることを `--check` する。
+- **なぜ**: 2026-08-17・18はYouTube日次がJSON予測を13件から17件へ増やした一方、
+  RDBが13件のまま残ったため、INV-PUB-006が日次収集を2日連続で停止した。
+  ガードを緩めると二重正本へ戻るので、生成物から正本への狭い同期口を復旧する。
+  一方、既存の履歴候補一括再構築を日次化すると、予測以外の派生表まで自動更新して範囲が広すぎる。
+- **破れたときの症状**: YouTube日次は成功するのに、次の `collect.yml` が
+  `public date prediction JSON fallback is forbidden` でcollector実行前に停止する。
+  または同名・類似名の別系列へ予測が付き、予測が開催確定日へ混入する。
+- **守っているコード**: `sync_event_date_predictions_rdb.py`、`.github/workflows/collect.yml` の
+  `Sync date predictions and canonical event-state axes to master RDB` ステップ
+- **守っているテスト**: `tests/test_sync_event_date_predictions_rdb.py`、
+  `tests/test_collect_event_state_axes_wiring.py::CollectEventStateAxesWiringTest::test_prediction_sync_does_not_depend_on_the_state_axes_feature_flag`
+
 ## 主要な流れ
 
 日次では、S3から取得 → 監査 → 各種同期 → 変更があれば publish、という順に進む。
 
 1. **取得** — `master_db_s3_artifact.py fetch --overwrite`。チェックサム検証つき（INV-MST-006）。
 2. **監査** — `audit_master_rdb.py`。取得直後に一度、書き込み後にもう一度走る。
-3. **状態軸の同期** — `event_model/state_axes_migration.py` 系。開催回の状態を正規化する。
+3. **生成予測の同期** — `sync_event_date_predictions_rdb.py`。JSON生成物と
+   `predicted_occurrence_dates` の差をDBコピーでpreflightし、`event_date_predictions` 所有行だけを同期する。
+   状態軸のfeature flagが無効でもこの同期は止めない（INV-MST-013）。
+4. **状態軸の同期** — `event_model/state_axes_migration.py` 系。開催回の状態を正規化する。
    日次の実行入口は `run_event_state_axes_migration.py` で、**既定は dry-run**、
    実際に書くには `--execute` が要る（INV-MST-003と同じ作法）。
    `vars.EVENT_STATE_AXES_ENABLED` が `true` のときだけ動き、書き込む前に
    マニフェストのチェックサムを控えてCASの比較対象にする（INV-MST-004）。
-4. **終了した開催回の遷移** — `transition_ended_occurrences.py`。過ぎた開催回を「終了」へ落とす。
+5. **終了した開催回の遷移** — `transition_ended_occurrences.py`。過ぎた開催回を「終了」へ落とす。
    これが動かないと、終わった行事が公開面に「開催予定」として残る。
-5. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
+6. **変更リクエストの適用** — `report_apply/apply_change_requests.py`。dry-run → レビュー → apply → 再検証（INV-MST-003）。
    曲根拠を足した場合は、確率較正 → 過去実績の日付候補再構築 → 公開JSON検証まで同じDBで終える（INV-MST-012）。
-6. **publish** — 書き込みが起きたときだけ。CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
+7. **publish** — 書き込みが起きたときだけ。生成予測と状態軸は同じSQLite成果物を1回だけpublishし、
+   CAS（INV-MST-004）とスキーマ退行検査（INV-MST-005）を通る。
 
 **通知レポートの再適用**では、`report_apply/apply_official_notice_report.py` が同じ通知の
 evidence link を開催回にすでに持つ場合、`detail_addendum` と `detail_replacement` を再実行しない。
@@ -297,8 +327,9 @@ RDBとローカルのJSON出力を読み、件数と気になる点をまとめ�
 - テーブルのスキーマそのものは[マスタRDBスキーマ契約](../L2/master-schema.md)に書いた
   （`event_series` と `event_occurrences` の関係、`evidence_items` の使われ方はそちらを見る）。
 - `report_apply` には既知のバグが残っている領域がある（詳細は別途）。
-- 予測日（`predicted_occurrence_dates`）は14件と少なく、器はあるが実質的に使われていない。
+- 予測日（`predicted_occurrence_dates`）は公開射影で使われる正本である。生成予測の件数が増えたときは
+  INV-MST-013の同期レポートと、再取得後の変更0チェックを確認する。
 
 ---
 
-こと（Claude Code）
+おと（Codex）

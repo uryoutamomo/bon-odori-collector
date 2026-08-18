@@ -31,13 +31,16 @@ invariants:
   - INV-COL-006
   - INV-COL-007
   - INV-COL-008
+  - INV-COL-009
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
   - tests/test_collect_no_semantic_exclusion.py
   - tests/test_x_search_watermark.py
   - tests/test_x_gap_candidates.py
-updated_for: c2364ab
+  - tests/test_collect_event_state_axes_wiring.py
+  - tests/test_sync_event_date_predictions_rdb.py
+updated_for: b5e6c0a
 ---
 
 # 収集サブシステム
@@ -130,16 +133,33 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
   `known_venue_event_key()`、`build()`
 - **守っているテスト**: `tests/test_x_gap_candidates.py::test_known_tokyo_venue_groups_kyoka_posts_without_a_ward_token`
 
+### INV-COL-009 日次収集は生成日付予測を正本RDBへ同期してから公開射影へ進む
+
+- **内容**: `collect.yml` は取得・監査したMaster RDBに対し、
+  `sync_event_date_predictions_rdb.py` のdry-run → execute → 監査を公開射影とcollectorより前に行う。
+  生成予測の同期は状態軸feature flagから独立して動き、状態軸と同じDB成果物をCASで1回だけpublishする。
+  再取得後は `--check` が変更0でなければ後続へ進まない。
+- **なぜ**: YouTube日次と収集日次は別workflowなので、前者がJSONだけを更新した状態は通常に起こる。
+  正本RDBを同期しないまま公開射影すると安全ガードがcollectorより先に落ち、RSS・X収集も止まる。
+- **破れたときの症状**: `collect.yml` が `event_date_predictions.json` の更新翌日から連続失敗し、
+  X収集健全性レポートやイベント状態の証跡も作られない。
+- **守っているコード**: `.github/workflows/collect.yml` の
+  `Sync date predictions and canonical event-state axes to master RDB` ステップ、
+  `sync_event_date_predictions_rdb.py`
+- **守っているテスト**: `tests/test_collect_event_state_axes_wiring.py`、
+  `tests/test_sync_event_date_predictions_rdb.py::SyncEventDatePredictionsRdbTest::test_sync_closes_public_json_fallback_without_changing_confirmed_date`
+
 ## 主要な流れ
 
-1. `collect.py` がRSS・動画・Xを取得し、既読情報と照合する。
-2. Xは生投稿をアーカイブしてから、候補・声・収集状態へ分ける。
-3. `collect_venue_sites.py` が会場公式サイトを直接見に行き、`venue_sites.json` に登録されたRSS/HTMLから
+1. S3からMaster RDBを取得・監査し、生成済みの日付予測を正本の予測表へ同期する（INV-COL-009）。
+2. `collect.py` がRSS・動画・Xを取得し、既読情報と照合する。
+3. Xは生投稿をアーカイブしてから、候補・声・収集状態へ分ける。
+4. `collect_venue_sites.py` が会場公式サイトを直接見に行き、`venue_sites.json` に登録されたRSS/HTMLから
    お知らせを取る。ニュースメディア経由では拾えない告知がここでしか取れないためで、
    取れたものは `source: "official_venue"` / `confirmed: true` を付けて `latest.json` へ合流する。
    1サイトの失敗が他サイトを止めない作りにしてある。
-4. コストと健全性を記録し、候補は判断工程へ渡す。
-5. `voices_s3_artifact.py`（中身は `collection_support/voices_s3_artifact.py` を呼ぶだけの互換入口）で、
+5. コストと健全性を記録し、候補は判断工程へ渡す。
+6. `voices_s3_artifact.py`（中身は `collection_support/voices_s3_artifact.py` を呼ぶだけの互換入口）で、
    声をS3の成果物として受け渡す。日次の各workflowは処理の最初に `fetch --overwrite`、
    最後に `publish` を実行する。リポジトリに巨大なJSONを置かずに、複数のworkflowが同じ声を見るための仕組みである。
 

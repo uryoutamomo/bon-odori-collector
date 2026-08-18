@@ -54,7 +54,8 @@ verified_by:
   - tests/test_youtube_daily_operations_policy.py
   - tests/test_apply_youtube_setlist_occurrences_rdb.py
   - tests/test_extract_youtube_setlists.py
-updated_for: 5da18e5
+  - tests/test_sync_event_date_predictions_rdb.py
+updated_for: b5e6c0a
 ---
 
 # YouTube取り込みサブシステム
@@ -96,13 +97,15 @@ updated_for: 5da18e5
 - `data/youtube_year_backfill_candidates.json` — 掘り起こしの候補（582件。強一致183・要レビュー48・弱351）
 - `data/youtube_backfill_retry_state.json` — 行ごとの最終検索日、次回検索可能日、直近の成果件数を持つ再試行台帳
 - `data/event_occurrence_observations.json` — 「この系列はこの年に開かれた」という観測（30系列・53観測）
-- `data/event_schedule_rules.json` / `data/event_date_predictions.json` — 観測から導いた開催規則と日付予測（各13件）
+- `data/event_schedule_rules.json` / `data/event_date_predictions.json` — 観測から導いた開催規則と日付予測（2026-08-18時点で予測17件）
 - `data/youtube_setlist_occurrences.json` — 概要欄から取り出したセットリスト（307開催回・延べ2,745曲。うち公開イベントに結びついたもの23件）
 - `data/youtube_active_video_review.json` — レビュー対象の動画一覧（4,618本）
 - `data/youtube_daily_backfill_report.json` / `.md` — 日次の実行記録。GitHubのジョブ要約にも出る
 - `data/pending_mail.json` への催促文（`--mail-reminder`）— [配信サブシステム](06-delivery.md)が拾う
 
-RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、それも既定ではコピーDBにしか書かない。
+このYouTube workflowから直接RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、
+それも既定ではコピーDBにしか書かない。生成した日付予測は、後続の収集日次が
+`predicted_occurrence_dates` へ同期するが、開催回の確定日にはしない（[INV-MST-013](04-master.md)）。
 公開JSONを作るのは[公開サブシステム](05-publication.md)の `export_public_events.py` であり、
 この工程からは呼ばない（INV-YTB-001・INV-YTB-002）。
 
@@ -127,12 +130,12 @@ RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、それ
 - **内容**: `run_daily_youtube_backfill.py` の `regenerate_outputs()` は、観測・開催規則・日付予測までを再生成するが、
   `export_public_events.py`、`apply_public_date_predictions.py`、`apply_public_season_hints.py`、
   `apply_public_historical_references.py` を呼ばない。workflowのcommit対象にも公開日付の適用結果を含めない。
-- **なぜ**: YouTubeから導いた予測は推測であって確定ではない。2026-08-17の本番手動実行では、
-  神田明神納涼祭りの新しい観測を作った直後、公開exportがRDBにないJSON予測を検出し、
-  INV-PUB-006のガードで停止した。ガードを緩めるのではなく、公開物を使わないこの工程から
-  公開exportへの接続自体を外すのが境界として正しい。
-- **破れたときの症状**: YouTube検索は成功してquotaを消費したのに、公開exportのガードで日次全体が失敗し、
-  候補と再試行台帳がcommitされず、翌日に同じ検索を繰り返す。
+- **なぜ**: YouTubeから導いた予測は推測であって確定ではない。2026-08-17・18は
+  このworkflowがJSON予測を増やした後、別workflowの `collect.yml` がRDBにない予測を検出し、
+  INV-PUB-006のガードで2日連続停止した。ガードを緩めたり、この工程から公開物を作ったりせず、
+  後続の日次が予測表だけを同期するのが境界として正しい（INV-MST-013）。
+- **破れたときの症状**: YouTube日次は候補・予測・再試行台帳を正常にcommitしたのに、
+  次の収集日次が公開exportのガードでcollector実行前に停止する。
 - **守っているコード**: `run_daily_youtube_backfill.py` の `regenerate_outputs()` と
   `.github/workflows/youtube_daily_backfill.yml` のcommit対象
 - **守っているテスト**: `tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_regenerate_outputs_does_not_call_public_export`、
@@ -250,7 +253,8 @@ harvest が終わると `regenerate_outputs()` が後段をまとめて回す。
 6. `build_song_occurrences.py`（凍結中のため実質は空振り）
 7. `youtube_backfill.build_month_youtube_backfill_queue` — 翌回に備えて月別のキューを作り直す
 
-ここでは公開exportを呼ばない。観測と予測は判断材料として保存し、公開はRDBの確定層を読む日次収集へ任せる（INV-YTB-002）。
+ここでは公開exportを呼ばない。観測と予測は判断材料として保存し、次の収集日次が予測だけを
+Master RDBへ同期してから公開射影する。`event_occurrences` の確定日は更新しない（INV-YTB-002・INV-MST-013）。
 
 4・5番のPythonスコアは、日付配列から候補規則を機械的に出す**候補生成**であり、公開用の最終確度ではない。
 主催者の明示規則、当年の地域情報、例外・競合を読む最終判断は
@@ -341,14 +345,16 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 - [曲目](08-songs.md) — セットリストが主要な入力のひとつ。ただし上に書いたとおり、いまその経路は止まっている。
 - [レビュー](03-review.md) — 動画由来の要レビュー項目。アダプタ（`review_inbox_adapters/youtube_*.py`）は
   レビュー側の所有物なので、そちらを読む。
-- [マスタ](04-master.md) — 観測と曲の書き込み先。確定へ上げる判断はマスタ側の不変条件が守る。
-- [公開](05-publication.md) — この工程から公開exportは呼ばず、RDBの確定層を読む日次収集へ任せる（INV-YTB-001・002）。
+- [マスタ](04-master.md) — 観測と曲の書き込み先。生成予測は日次の狭い同期口から予測表へ入り、
+  確定へ上げる判断はマスタ側の不変条件が守る（INV-MST-002・013）。
+- [公開](05-publication.md) — この工程から公開exportは呼ばず、RDBへ同期済みの予測と確定層を読む
+  日次収集へ任せる（INV-YTB-001・002）。
 - [配信](06-delivery.md) — `--mail-reminder` が `pending_mail.json` へ催促を書く。
 
-**この工程が壊れても、公開はすぐには壊れない。** 公開JSONの正本は日次収集がRDBから作るもので、
-こちらは推測の材料を増やしているだけだからである。逆に言えば、**止まっていても誰も気づかない**という
-盆助全体の弱点が、ここではいっそう強く出る。実際にセットリスト経路は3週間止まっていて、
-気づいたのはこの仕様書を書くために呼び出し元を検索したときだった。
+**この工程は公開JSONを直接変更しないが、生成予測とRDBの同期契約は次の収集日次に影響する。**
+解決不能な予測が出た場合は、誤った系列へ自動で結ぶよりINV-PUB-006で次の日次を止める。
+一方、YouTube取り込み自体が止まっても既存公開はすぐには変わらないため、気づきにくい弱点は残る。
+実際にセットリスト経路は3週間止まっていて、気づいたのは仕様書を書くために呼び出し元を検索したときだった。
 
 ## 壊れたときの症状
 
@@ -359,6 +365,7 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 | 公開サイトに動画タイトルの断片が曲名として出る | INV-YTB-004、または[INV-SNG-001](08-songs.md) |
 | 一度消した曲名が復活する | INV-YTB-004。無効化した行を再取り込みで拾っている |
 | 予測でしかない日付が確定日として公開される | INV-YTB-002、および[INV-MST-002](04-master.md) |
+| YouTube日次は成功したのに次の収集日次がJSONフォールバックで止まる | [INV-MST-013](04-master.md)。予測の系列・会場が一意に解決できるか |
 | クォータは使い切っているのに候補が増えない | 下の「未解決」の1番目。同じ行を毎日引き直している |
 | セットリストの曲が何週間も増えない | 正常。抽出は手動で、いま止まっている（流れの4） |
 | `youtube_active_video_review.json` が古いまま | 正常。日次で作り直すがコミットしない（流れの3） |
@@ -381,4 +388,4 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 
 ---
 
-こと（Claude Code）
+おと（Codex）

@@ -46,7 +46,7 @@ flowchart TD
 | 自動継続（要監視） | `bon-odori-site/.github/workflows/sync-public-data.yml` | 継続。同期由来の公開は同workflowが担当し、commitには `[skip deploy]` を付けてdeploy-static-siteの二重deployを止める。手動時は `deploy_after_sync=false` でsyncだけ確認できる。 |
 | 自動継続 | `bon-odori-site/.github/workflows/deploy-static-site.yml` | 継続。通常のsite変更をdeployする。`[skip deploy]` 付きcommitは無視する。 |
 | 自動継続 | Public JSON deterministic postprocessors | `export_public_events.py` が `public_json_postprocessors/apply_public_date_predictions.py` / `public_json_postprocessors/apply_public_historical_references.py` / `public_json_postprocessors/apply_public_season_hints.py` を内部で呼び、公開JSON生成口を一本化する。方針は `docs/public-json-postprocessor-operations.md`。 |
-| 自動継続（一部手動確認） | Build / export / report scripts | `export_*`, `audit_*`, review queue builders, local RDB snapshotsは生成物として自動/手動利用可。Master RDB派生テーブルを直接書く2本は `APPLY MASTER RDB ONE-OFF` 必須。方針は `docs/build-export-report-operations.md`。 |
+| 自動継続（一部手動確認） | Build / export / report scripts | `export_*`, `audit_*`, review queue builders, local RDB snapshotsは生成物として自動/手動利用可。Master RDB派生テーブルを一括再構築する2本は `APPLY MASTER RDB ONE-OFF` 必須。例外として `sync_event_date_predictions_rdb.py` は `event_date_predictions` 所有行と不足する外部キー支援行だけを、コピーpreflight・一意照合・監査・CAS・再取得check付きで `collect.yml` が自動同期する。既存履歴候補の更新・削除はしない。方針は `docs/build-export-report-operations.md`。 |
 | 手動維持 | X candidate / social graph workflows | 継続して手動。X API課金とNotion同期が絡むため、定期自動化しない。実行時は確認文字列必須。方針は `docs/x-candidate-workflows-operations.md`。 |
 | 手動維持 | Local review console | `review_console_ops/run_review_console.py` で必要時だけ起動。`127.0.0.1` 専用。レビュー決定は `data/review_console/decisions.json` に保存し、ステージ適用も `data/review_console/staged/` まで。Master RDB/Notion/公開JSONは直接変更しない。方針は `docs/review-console-operations.md`。 |
 | 手動維持 | AWS / S3 / DynamoDB verify workflows | 継続して手動。検証系なので必要時に叩く。方針は `docs/manual-infra-workflows.md`。 |
@@ -71,7 +71,7 @@ flowchart TD
 
 | Workflow | Trigger | Writes | Risk | Recommendation |
 | --- | --- | --- | --- | --- |
-| `.github/workflows/collect.yml` | Daily 15:13 JST + manual | repo data, DynamoDB queue, public JSON, daily X song/glossary review queues; optional manual legacy Notion writes | high | 自動継続。主要収集元として残す。曲/用語候補抽出もここへ統合。レビューは内田さんが任意のタイミングで行い、Notion書き込みは `allow_notion_writes=true` の手動実行時だけ。 |
+| `.github/workflows/collect.yml` | Daily 15:13 JST + manual | repo data, DynamoDB queue, public JSON, daily X song/glossary review queues; generated date-prediction rows in Master RDB; optional manual legacy Notion writes | high | 自動継続。主要収集元として残す。公開射影前に生成予測だけをMaster RDBへ狭く同期し、状態軸と同じ成果物を1回CAS publishする。曲/用語候補抽出もここへ統合。レビューは内田さんが任意のタイミングで行い、Notion書き込みは `allow_notion_writes=true` の手動実行時だけ。 |
 | `.github/workflows/youtube_daily_backfill.yml` | Daily 05:00 JST + manual | automation branch / PR, YouTube candidates, reports | medium-high | 自動継続。YouTube quotaはここへ一本化済み。 |
 | `.github/workflows/weekly_harvest.yml` | manual only | song/glossary review queues, weekly cost dry-run report; optional manual weekly cost Notion sync | medium | 手動fallback。定期実行は廃止し、曲/用語候補抽出は日次 `collect.yml` に統合済み。Notionへの週次コスト反映は `sync_weekly_costs_to_notion=true` の手動実行時だけ。 |
 | `.github/workflows/send_mail.yml` | pending mail push + 18:23/19:23/20:23 JST + manual | sends mail, removes `pending_mail.json` | medium | 自動継続。冪等前提。 |
