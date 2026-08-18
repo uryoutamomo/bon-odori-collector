@@ -1,0 +1,41 @@
+{
+  "generated_by": "scripts/apply_review_backlog_song_projection.py",
+  "generated_at": "2026-08-18T19:15:00+09:00",
+  "mode": "apply",
+  "summary": {
+    "decision_count": 147,
+    "decision_titles_found": 147,
+    "occurrence_count_before": 1856,
+    "occurrence_count_after": 1856,
+    "song_relation_count_before": 28105,
+    "song_relation_count_after": 27356,
+    "changed_occurrence_count": 943,
+    "renamed_song_row_count": 1242,
+    "removed_noise_row_count": 482,
+    "collapsed_duplicate_row_count": 267,
+    "unrelated_occurrences_added": 0,
+    "unrelated_occurrences_removed": 0
+  },
+  "song_master": {
+    "alias_updates": 71,
+    "candidate_additions": 8,
+    "target_bridge_additions": 9,
+    "song_count_before": 789,
+    "song_count_after": 806
+  },
+  "events_public": {
+    "event_count_before": 379,
+    "event_count_after": 379,
+    "changed_event_count": 8,
+    "renamed_song_row_count": 9,
+    "removed_noise_row_count": 5,
+    "collapsed_duplicate_row_count": 4,
+    "non_song_fields_changed": 0
+  },
+  "source_written": "/Users/ryotauchida/.worktrees/oto-review-llm-production-apply-20260818/data/public/event_song_occurrences_public.json",
+  "backup": "/Users/ryotauchida/.worktrees/oto-review-llm-production-apply-20260818/data/public/event_song_occurrences_public.json.pre-llm-review.bak",
+  "song_master_written": "/Users/ryotauchida/.worktrees/oto-review-llm-production-apply-20260818/data/youtube_song_master.json",
+  "song_master_backup": "/Users/ryotauchida/.worktrees/oto-review-llm-production-apply-20260818/data/youtube_song_master.json.pre-llm-review.bak",
+  "events_public_written": "/Users/ryotauchida/.worktrees/oto-review-llm-production-apply-20260818/data/public/events_public.json",
+  "events_public_backup": "/Users/ryotauchida/.worktrees/oto-review-llm-production-apply-20260818/data/public/events_public.json.pre-llm-review.bak"
+}

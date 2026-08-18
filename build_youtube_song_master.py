@@ -6,6 +6,7 @@ import json
 import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
+from functools import lru_cache
 from pathlib import Path
 
 from song_processing.weekly_song_triage import CANONICAL_MAP, NOISE_EXACT
@@ -15,6 +16,7 @@ DATA = Path("data")
 SOURCE = DATA / "song_occurrences.json"
 OUT = DATA / "youtube_song_master.json"
 REPORT = DATA / "youtube_song_master_review.md"
+REVIEWED_SONG_IDENTITIES = DATA / "publication_gap_song_identity_llm_decisions.json"
 
 GOOD_RELIABILITY_KEYS = {
     "complete_numbered_video",
@@ -173,6 +175,29 @@ SUPPRESSED_ALIASES = {
     "000年音頭",
 }
 
+
+@lru_cache(maxsize=1)
+def reviewed_song_identity_rules(path=REVIEWED_SONG_IDENTITIES):
+    path = Path(path)
+    if not path.exists():
+        return {}, set(), set()
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    canonical = {}
+    noise = set()
+    candidates = set()
+    for row in payload.get("decisions") or []:
+        raw_name = clean_name(row.get("raw_song_name"))
+        decision = row.get("decision")
+        if decision in {"既存曲へ統合", "新規曲候補として維持"}:
+            target = clean_name(row.get("target_song_name"))
+            if raw_name and target:
+                canonical[raw_name] = target
+            if decision == "新規曲候補として維持" and target:
+                candidates.add(target)
+        elif decision == "曲名ノイズとして除外" and raw_name:
+            noise.add(raw_name)
+    return canonical, noise, candidates
+
 HARD_NOISE_RE = re.compile(
     r"("
     r"https?://|www\.|"
@@ -246,12 +271,18 @@ def clean_name(value):
 
 def canonical_name(value):
     name = clean_name(value)
-    return CANONICAL_FIXES.get(name, name)
+    reviewed_fixes, _, _ = reviewed_song_identity_rules()
+    return reviewed_fixes.get(name, CANONICAL_FIXES.get(name, name))
 
 
 def hard_reject_reason(name):
+    _, reviewed_noise, reviewed_candidates = reviewed_song_identity_rules()
     if not name:
         return "空の曲名"
+    if name in reviewed_noise:
+        return "LLMレビューで曲名ノイズとして除外"
+    if name in reviewed_candidates:
+        return ""
     if name in MANUAL_REJECT_SONG_NAMES:
         return "手動レビューで曲マスター除外"
     if name in NOISE_EXACT:
@@ -272,6 +303,9 @@ def hard_reject_reason(name):
 
 
 def review_reason(name, stats):
+    _, _, reviewed_candidates = reviewed_song_identity_rules()
+    if name in reviewed_candidates:
+        return "LLMレビュー済み新規曲候補"
     if SOFT_REVIEW_RE.search(name):
         return "曲名か体系名か確認が必要"
     if stats["good_evidence_count"] == 1 and stats["speaker_count"] <= 1:

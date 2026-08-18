@@ -63,6 +63,10 @@ def export_rows(args):
               o.raw_venue_name,
               o.event_year,
               s.raw_song_title,
+              s.normalized_title,
+              s.match_status,
+              master_song.canonical_title AS matched_canonical_title,
+              master_song.status AS matched_song_status,
               s.role,
               s.probability,
               s.evidence_count,
@@ -74,6 +78,10 @@ def export_rows(args):
             FROM observed_occurrences o
             LEFT JOIN observed_occurrence_songs s
               ON s.observed_occurrence_id = o.observed_occurrence_id
+            LEFT JOIN songs master_song
+              ON master_song.song_id = s.matched_song_id
+            WHERE s.observed_occurrence_song_id IS NULL
+               OR s.match_status != 'rejected_llm_review'
             ORDER BY o.event_year, o.raw_venue_name, o.raw_event_name, s.probability DESC, s.raw_song_title
             """
         ).fetchall()
@@ -89,23 +97,43 @@ def export_rows(args):
                 "venue": row["raw_venue_name"] or "",
                 "year": row["event_year"],
                 "songs": [],
+                "_songs_by_name": {},
             },
         )
         if row["raw_song_title"] is None:
             continue
         prediction = parse_json(row["source_payload_json"], {}).get("prediction") or {}
-        occurrence["songs"].append(
-            {
-                "name": row["raw_song_title"],
-                "probability": public_probability(row["probability"]),
-                "basis": prediction.get("basis") or "unknown",
-                "basis_label": prediction.get("basis_label") or "",
-                "evidence_count": row["evidence_count"],
-                "speaker_count": row["speaker_count"],
-                "setlist_complete": bool(row["setlist_complete"]),
-                "prediction_reliability": parse_json(row["prediction_reliability_json"], []),
-                "evidence_urls": parse_json(row["evidence_urls_json"], []),
-            }
+        name = row["matched_canonical_title"] or row["raw_song_title"]
+        key = normalize_text(name)
+        candidate = {
+            "name": name,
+            "probability": public_probability(row["probability"]),
+            "basis": prediction.get("basis") or "unknown",
+            "basis_label": prediction.get("basis_label") or "",
+            "evidence_count": row["evidence_count"],
+            "speaker_count": row["speaker_count"],
+            "setlist_complete": bool(row["setlist_complete"]),
+            "prediction_reliability": parse_json(row["prediction_reliability_json"], []),
+            "evidence_urls": parse_json(row["evidence_urls_json"], []),
+        }
+        current = occurrence["_songs_by_name"].get(key)
+        if current is None:
+            occurrence["_songs_by_name"][key] = candidate
+            occurrence["songs"].append(candidate)
+            continue
+        current["probability"] = max(
+            value for value in (current.get("probability"), candidate.get("probability"))
+            if value is not None
+        ) if any(value is not None for value in (current.get("probability"), candidate.get("probability"))) else None
+        current["evidence_count"] = int(current.get("evidence_count") or 0) + int(candidate.get("evidence_count") or 0)
+        current["speaker_count"] = max(int(current.get("speaker_count") or 0), int(candidate.get("speaker_count") or 0))
+        current["setlist_complete"] = bool(current.get("setlist_complete") or candidate.get("setlist_complete"))
+        current["prediction_reliability"] = sorted(
+            set(current.get("prediction_reliability") or [])
+            | set(candidate.get("prediction_reliability") or [])
+        )
+        current["evidence_urls"] = list(
+            dict.fromkeys((current.get("evidence_urls") or []) + (candidate.get("evidence_urls") or []))
         )
 
     occurrences = sorted(
@@ -113,6 +141,7 @@ def export_rows(args):
         key=lambda row: (row["year"], row["venue"], row["event_name"], row["occurrence_id"]),
     )
     for occurrence in occurrences:
+        occurrence.pop("_songs_by_name", None)
         occurrence["songs"].sort(key=lambda row: (-(row["probability"] or 0), row["name"]))
 
     result = {

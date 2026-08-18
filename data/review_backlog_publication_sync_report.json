@@ -1,0 +1,27 @@
+{
+  "generated_by": "scripts/apply_review_backlog_publication_sync.py",
+  "generated_at": "2026-08-18T19:00:00+09:00",
+  "summary": {
+    "decision_count": 12,
+    "site_term_count_before": 874,
+    "site_term_count_after": 886,
+    "added_count": 12,
+    "removed_count": 0,
+    "added_terms": [
+      "ぼーんとぅ盆踊り",
+      "000年音頭",
+      "古調かわさき・かわさき",
+      "少年八木節",
+      "川崎おどり",
+      "川崎踊り",
+      "郡上かわさき",
+      "郡上節かわさき",
+      "五万石おどり",
+      "夜の踊り子",
+      "岡崎音頭",
+      "馬鹿おどり"
+    ]
+  },
+  "mode": "dry_run",
+  "preview": "data/review_backlog_site_glossary_preview.json"
+}

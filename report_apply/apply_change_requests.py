@@ -27,6 +27,11 @@ from report_apply.event_report_helpers import (
 )
 from master_rdb.master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, stable_id, table_counts
 from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
+from report_apply.review_backlog_change_requests import (
+    CHANGE_TYPES as REVIEW_BACKLOG_CHANGE_TYPES,
+    apply_request as apply_review_backlog_request,
+    validate_request as validate_review_backlog_request,
+)
 
 
 DATA = Path("data")
@@ -45,9 +50,12 @@ CHANGE_TYPES = {
     "add_historical_reference",
     "update_venue",
     "add_song_evidence",
-}
+} | REVIEW_BACKLOG_CHANGE_TYPES
 # These create their target instead of pointing at one, so they carry no occurrence_id.
-TARGETLESS_CHANGE_TYPES = {"create_event_series", "create_current_year_occurrence"}
+TARGETLESS_CHANGE_TYPES = {
+    "create_event_series",
+    "create_current_year_occurrence",
+} | REVIEW_BACKLOG_CHANGE_TYPES
 CURRENT_YEAR_SOURCE_KINDS = {"official_current_year", "organizer_current_year", "trusted_x_current_year"}
 SONG_EVIDENCE_MODES = {
     "official_setlist": {
@@ -115,7 +123,9 @@ def validate_payload(payload):
         if change_type not in TARGETLESS_CHANGE_TYPES and not request.get("occurrence_id"):
             errors.append(f"{prefix}: requires occurrence_id")
         source = request.get("source") or {}
-        if change_type == "create_event_series":
+        if change_type in REVIEW_BACKLOG_CHANGE_TYPES:
+            validate_review_backlog_request(request, errors, prefix)
+        elif change_type == "create_event_series":
             _required(request, "series_name", errors, prefix)
             _required(request, "display_name", errors, prefix)
             _required(request, "date_start", errors, prefix)
@@ -705,6 +715,8 @@ APPLIERS = {
 
 
 def apply_one_request(conn, request, index, now):
+    if request["change_type"] in REVIEW_BACKLOG_CHANGE_TYPES:
+        return apply_review_backlog_request(conn, request, now)
     if request["change_type"] == "create_event_series":
         return apply_create_event_series(conn, request, index, now)
     if request["change_type"] == "create_current_year_occurrence":
@@ -737,10 +749,11 @@ def consistency_checks(conn, applied):
             {"severity": "high", "issue_type": "foreign_key_check_failed", "count": len(fk_rows), "sample": [tuple(row) for row in fk_rows[:10]]}
         )
     for entry in applied.get("requests_applied", []):
-        occurrence_id = entry["occurrence_id"]
-        occ_count = scalar(conn, "SELECT COUNT(*) FROM event_occurrences WHERE occurrence_id = ?", (occurrence_id,))
-        if occ_count != 1:
-            issues.append({"severity": "high", "issue_type": "occurrence_missing_after_apply", "occurrence_id": occurrence_id})
+        occurrence_id = entry.get("occurrence_id")
+        if occurrence_id:
+            occ_count = scalar(conn, "SELECT COUNT(*) FROM event_occurrences WHERE occurrence_id = ?", (occurrence_id,))
+            if occ_count != 1:
+                issues.append({"severity": "high", "issue_type": "occurrence_missing_after_apply", "occurrence_id": occurrence_id})
         evidence_id = entry.get("evidence_id")
         if evidence_id:
             evidence_count = scalar(conn, "SELECT COUNT(*) FROM evidence_items WHERE evidence_id = ?", (evidence_id,))
@@ -780,7 +793,8 @@ def render_markdown(result):
         "",
     ]
     for entry in applied.get("requests_applied", []):
-        lines.append(f"- {entry['request_id']} `{entry['change_type']}` occurrence={entry['occurrence_id']}")
+        target = entry.get("occurrence_id") or entry.get("song_id") or entry.get("evidence_id") or "global"
+        lines.append(f"- {entry['request_id']} `{entry['change_type']}` target={target}")
     if applied.get("requests_unresolved"):
         lines += ["", "## Unresolved requests", ""]
         for request_id in applied["requests_unresolved"]:

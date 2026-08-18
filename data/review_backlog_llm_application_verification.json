@@ -1,0 +1,16 @@
+{
+  "generated_by": "scripts/verify_review_backlog_application.py",
+  "database": "data/review_backlog_llm_apply_dry_run.sqlite",
+  "summary": {
+    "request_count": 394,
+    "change_type_counts": {
+      "retract_song_identity": 55,
+      "merge_song_identity": 84,
+      "register_song_candidate": 8,
+      "record_youtube_review_decision": 247
+    },
+    "error_count": 0,
+    "verified": true
+  },
+  "errors": []
+}
