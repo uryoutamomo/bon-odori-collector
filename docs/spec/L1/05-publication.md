@@ -19,6 +19,7 @@ invariants:
   - INV-PUB-006
   - INV-PUB-007
   - INV-PUB-008
+  - INV-PUB-009
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
@@ -26,6 +27,7 @@ verified_by:
   - tests/test_classify_public_events_diff.py
   - tests/test_e0b_bridge.py
   - tests/test_x_song_materialization_lifecycle.py
+  - tests/test_apply_public_date_predictions.py
 updated_for: 1ca79f4
 ---
 
@@ -177,6 +179,21 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **守っているテスト**: `tests/test_x_song_materialization_lifecycle.py::test_public_export_requires_active_song_and_accepted_evidence_for_x_fact`、
   `tests/test_x_song_materialization_lifecycle.py::test_other_accepted_evidence_keeps_shared_fact_public_on_x_retraction`、
   `tests/test_inherit_song_probabilities_x_safety.py`
+
+### INV-PUB-009 統合確度を規則予測の正規軸と一緒に公開へ運ぶ
+
+- **内容**: `predicted_occurrence_dates.source_payload_json` にある `joint_probability`、百分率、日本語ラベル、
+  意味説明を `date_prediction` と互換用トップレベルへ欠落なく投影する。日付予測を添付した行は
+  `current_event_state=predicted/announced` かつ `date_certainty_tier=rule_predicted` とし、
+  古い `historical_slide` 軸が新しい予測表示を隠さないようにする。
+- **なぜ**: RDBに正しい予測があっても会場や軸が欠けると公開投影から落ち、サイトは弱い昨年スライドへ退行する。
+  また数値だけでは利用者が意味を読めないため、LLM判断と同じ日本語を公開契約に含める必要がある。
+- **破れたときの症状**: 95%の予測がサイトでは「昨年同枠・公式未確認」とだけ表示される。
+  または確度が何の確率か分からない。
+- **守っているコード**: `export_public_events.py::_rdb_prediction_payload`、
+  `public_json_postprocessors/apply_public_date_predictions.py`
+- **守っているテスト**: `tests/test_export_public_events.py::test_load_rdb_public_date_predictions_matches_public_prediction_shape`、
+  `tests/test_apply_public_date_predictions.py::ApplyPublicDatePredictionsTest::test_apply_predictions_adds_date_prediction_without_overwriting_date`
 
 ## 主要な流れ
 

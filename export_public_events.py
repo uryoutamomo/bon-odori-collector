@@ -1304,6 +1304,10 @@ def _rdb_prediction_payload(row):
         "evidence_years": evidence_years,
         "evidence_count": payload.get("evidence_count") or len(evidence_years),
         "evidence_rows": payload.get("evidence_rows") or [],
+        "joint_probability": payload.get("joint_probability"),
+        "probability_percent": payload.get("probability_percent"),
+        "certainty_label": payload.get("certainty_label"),
+        "certainty_meaning": payload.get("certainty_meaning"),
     }
     return {
         "series_key": payload.get("series_key") or row.get("target_series_id") or "",

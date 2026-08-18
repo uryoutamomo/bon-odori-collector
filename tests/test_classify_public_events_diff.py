@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 
 from public_json_postprocessors.classify_public_events_diff import (
+    HIGH_RISK_FIELDS,
     build_classification,
     classify_diff,
     field_family,
@@ -12,6 +13,15 @@ from public_json_postprocessors.classify_public_events_diff import (
 
 
 class ClassifyPublicEventsDiffTest(unittest.TestCase):
+    def test_joint_prediction_certainty_fields_are_high_risk(self):
+        for field in (
+            "prediction_probability",
+            "prediction_probability_percent",
+            "prediction_certainty_label",
+            "prediction_certainty_meaning",
+        ):
+            self.assertIn(field, HIGH_RISK_FIELDS)
+
     def test_fixed_date_rule_is_postprocess_rule_not_detail_review(self):
         self.assertEqual(field_family("detail"), "detail")
         self.assertEqual(field_family("fixed_date_rule"), "fixed_date_rule")

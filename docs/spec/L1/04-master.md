@@ -11,6 +11,8 @@ owns:
   - rdb_builders/**
   - report_apply/**
   - event_model/**
+  - data/llm_event_date_prediction_judgments.json
+  - docs/llm-event-date-certainty-policy.md
   - master_db_s3_artifact.py
   - audit_master_rdb.py
   - data/official_notice_reports/detail_cleanup_repair_20260816.json
@@ -32,6 +34,7 @@ invariants:
   - INV-MST-008
   - INV-MST-009
   - INV-MST-010
+  - INV-MST-011
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -40,6 +43,7 @@ verified_by:
   - tests/test_x_song_identity_migration.py
   - tests/test_x_song_apply_safety.py
   - tests/test_x_song_materialization_lifecycle.py
+  - tests/test_event_date_prediction_judgment.py
 updated_for: fcb8277
 ---
 
@@ -195,6 +199,20 @@ updated_for: fcb8277
 - **守っているテスト**: `tests/test_x_song_apply_safety.py`、
   `tests/test_x_song_materialization_lifecycle.py::test_resolved_helper_fails_closed_on_existing_fact_collision`、
   `tests/test_x_song_null_song_id_linking.py`
+
+### INV-MST-011 LLM日付予測は開催有無と日付一致を1つの確度として裁定し、機械検査を省略しない
+
+- **内容**: LLMの `joint_probability` は「同一イベントが対象年に開催され、かつ予測日範囲と一致する確率」とする。
+  Pythonは有限カレンダー規則から対象年と根拠年の日付を再計算し、凍結ID・名称・会場・対象年・出典URL・競合・
+  根拠別の確率上限を検査する。90%以上は `ほぼ確実` だが、対象年の公式直接証拠が無い限り
+  `predicted × rule_predicted` から `confirmed` へ上げない。適用先は元DBと異なるSQLiteコピーに限定する。
+- **なぜ**: 従来のPythonスコアは過去年の日付配列しか読めず、主催者の明示規則や当年の地域情報を評価できない。
+  一方でLLMの自由な確率だけを受け入れると、系列違い・カレンダー計算違い・根拠不足が高確度表示になる。
+  意味判断をLLM、有限条件と書き込み境界を機械に分ける必要がある。
+- **破れたときの症状**: 強い根拠がある予測が `medium` のまま落ちる。逆に過去年1件だけの候補が
+  `ほぼ確実` と表示される。予測日が確定日としてRDBへ混入する。
+- **守っているコード**: `event_model/event_date_prediction_judgment.py`
+- **守っているテスト**: `tests/test_event_date_prediction_judgment.py`
 
 ## 主要な流れ
 

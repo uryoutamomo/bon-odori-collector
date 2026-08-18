@@ -1,0 +1,65 @@
+{
+  "schema": "llm_event_date_judgment_set_v1",
+  "generated_at": "2026-08-18T00:00:00+09:00",
+  "generated_by": "おと（Codex）",
+  "judgments": [
+    {
+      "schema": "llm_event_date_judgment_v1",
+      "judgment_id": "llmdate_kameari_ginza_2026_v1",
+      "predicted_date_id": "preddate_87c756d15a547fa5",
+      "target_series_id": "ser_a274dbfdb737ab56",
+      "target_event_name": "亀有銀座商店街納涼盆踊り大会",
+      "venue": "亀有ゆうろーど（亀有銀座商店街）",
+      "target_year": 2026,
+      "predicted_date_start": "2026-08-29",
+      "predicted_date_end": "2026-08-30",
+      "calendar_rule": {
+        "type": "last_full_weekend",
+        "month": 8,
+        "duration_days": 2
+      },
+      "organizer_rule": {
+        "source_kind": "organizer_primary",
+        "source_url": "https://www.youroad.com/event.html",
+        "rule_text": "毎年8月の最後の土曜・日曜に開催"
+      },
+      "historical_matches": [
+        {
+          "year": 2023,
+          "date_start": "2023-08-26",
+          "date_end": "2023-08-27",
+          "source_kind": "organizer_archive",
+          "source_url": "https://www.youroad.com/event.html"
+        },
+        {
+          "year": 2024,
+          "date_start": "2024-08-24",
+          "date_end": "2024-08-25",
+          "source_kind": "organizer_archive",
+          "source_url": "https://www.youroad.com/event-bonodori-2024.html"
+        },
+        {
+          "year": 2025,
+          "date_start": "2025-08-30",
+          "date_end": "2025-08-31",
+          "source_kind": "organizer_archive",
+          "source_url": "https://www.youroad.com/event.html"
+        }
+      ],
+      "current_year_signals": [
+        {
+          "source_kind": "community_organization",
+          "source_url": "https://nakanodaipta.com/local-information/3042/",
+          "date_start": "2026-08-29",
+          "date_end": "2026-08-30",
+          "description": "地域PTAの2026年行事案内が同名・同会場・同日程を掲載"
+        }
+      ],
+      "conflicts": [],
+      "official_current_year_confirmation": false,
+      "joint_probability": 0.95,
+      "certainty_label": "ほぼ確実",
+      "reason_summary": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致"
+    }
+  ]
+}

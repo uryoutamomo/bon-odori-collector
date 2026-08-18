@@ -19,6 +19,10 @@ def prediction_row(name="丸の内de盆踊り", venue="行幸通り"):
             "basis": "7月の最終金曜",
             "evidence_years": [2024, 2025],
             "evidence_count": 2,
+            "joint_probability": 0.95,
+            "probability_percent": 95,
+            "certainty_label": "ほぼ確実",
+            "certainty_meaning": "このイベントが、この予測日に開催される確からしさ",
         },
         "actual_observations": [],
     }
@@ -45,6 +49,15 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
         self.assertEqual(result["events"][0]["prediction_basis"], "7月の最終金曜")
         self.assertEqual(result["events"][0]["prediction_confidence"], "medium")
         self.assertEqual(result["events"][0]["prediction_evidence_years"], [2024, 2025])
+        self.assertEqual(result["events"][0]["current_event_state"], "predicted")
+        self.assertEqual(result["events"][0]["date_certainty_tier"], "rule_predicted")
+        self.assertEqual(result["events"][0]["prediction_probability"], 0.95)
+        self.assertEqual(result["events"][0]["prediction_probability_percent"], 95)
+        self.assertEqual(result["events"][0]["prediction_certainty_label"], "ほぼ確実")
+        self.assertEqual(
+            result["events"][0]["date_prediction"]["certainty_meaning"],
+            "このイベントが、この予測日に開催される確からしさ",
+        )
         self.assertEqual(result["report"]["applied"][0]["before"]["date"], "2025-07-25")
         self.assertEqual(result["report"]["applied"][0]["after"]["display_tier"], "rule_predicted")
 
@@ -99,6 +112,21 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
         result = apply_predictions([], {"predictions": [prediction_row()]})
 
         self.assertEqual(result["report"]["unmatched_count"], 1)
+
+    def test_apply_predictions_never_attaches_to_confirmed_state(self):
+        event = {
+            "name": "丸の内de盆踊り",
+            "venue": "行幸通り",
+            "date": "2025-07-25",
+            "current_event_state": "confirmed",
+            "date_certainty_tier": "confirmed",
+        }
+
+        result = apply_predictions([event], {"predictions": [prediction_row()]})
+
+        self.assertEqual(result["report"]["applied_count"], 0)
+        self.assertNotIn("date_prediction", result["events"][0])
+        self.assertEqual(result["events"][0]["date_certainty_tier"], "confirmed")
 
 
 if __name__ == "__main__":

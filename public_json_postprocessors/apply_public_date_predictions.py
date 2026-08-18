@@ -36,7 +36,7 @@ def event_key(name, venue):
 
 def public_prediction(prediction_row):
     prediction = prediction_row["prediction"]
-    return {
+    public = {
         "display_tier": "rule_predicted",
         "target_year": prediction_row["target_year"],
         "date": prediction["predicted_date_start"],
@@ -51,9 +51,21 @@ def public_prediction(prediction_row):
         "evidence_count": prediction["evidence_count"],
         "has_actual_observation": bool(prediction_row.get("actual_observations")),
     }
+    for field in (
+        "joint_probability",
+        "probability_percent",
+        "certainty_label",
+        "certainty_meaning",
+    ):
+        if prediction.get(field) is not None:
+            public[field] = prediction[field]
+    return public
 
 
 def should_attach(event, prediction):
+    state = event.get("current_event_state")
+    if state not in {None, "", "predicted", "announced"}:
+        return False
     target_year = prediction["target_year"]
     date_value = str(event.get("date") or "")
     if date_value.startswith(f"{target_year}-"):
@@ -69,6 +81,10 @@ PREDICTION_EVENT_FIELDS = (
     "prediction_basis",
     "prediction_confidence",
     "prediction_evidence_years",
+    "prediction_probability",
+    "prediction_probability_percent",
+    "prediction_certainty_label",
+    "prediction_certainty_meaning",
 )
 
 
@@ -79,12 +95,22 @@ def clear_public_prediction_fields(event):
 
 def attach_public_prediction_fields(event, public):
     event["date_prediction"] = public
+    event["current_event_state"] = event.get("current_event_state") or "predicted"
+    event["date_certainty_tier"] = "rule_predicted"
     event["display_tier"] = public["display_tier"]
     event["predicted_date"] = public["date"]
     event["predicted_date_end"] = public["date_end"]
     event["prediction_basis"] = public["basis"]
     event["prediction_confidence"] = public["confidence"]
     event["prediction_evidence_years"] = public["evidence_years"]
+    if public.get("joint_probability") is not None:
+        event["prediction_probability"] = public["joint_probability"]
+    if public.get("probability_percent") is not None:
+        event["prediction_probability_percent"] = public["probability_percent"]
+    if public.get("certainty_label"):
+        event["prediction_certainty_label"] = public["certainty_label"]
+    if public.get("certainty_meaning"):
+        event["prediction_certainty_meaning"] = public["certainty_meaning"]
 
 
 def apply_predictions(events, predictions):

@@ -123,7 +123,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                       'predicted', 'weekday_last', '7月の最終金曜',
                       'medium', 0.74, 'candidate_for_2026_occurrence',
                       'event_date_predictions',
-                      '{"series_key":"s1","venue":"行幸通り","evidence_years":[2024,2025]}'
+                      '{"series_key":"s1","venue":"行幸通り","evidence_years":[2024,2025],"joint_probability":0.91,"probability_percent":91,"certainty_label":"ほぼ確実","certainty_meaning":"このイベントが、この予測日に開催される確からしさ"}'
                     )
                     """
                 )
@@ -140,6 +140,9 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual(row["venue"], "行幸通り")
         self.assertEqual(row["prediction"]["predicted_weekday_start"], "金")
         self.assertEqual(row["prediction"]["evidence_count"], 2)
+        self.assertEqual(row["prediction"]["joint_probability"], 0.91)
+        self.assertEqual(row["prediction"]["probability_percent"], 91)
+        self.assertEqual(row["prediction"]["certainty_label"], "ほぼ確実")
 
     def test_merge_prediction_payloads_keeps_json_only_fallback_rows(self):
         primary = {

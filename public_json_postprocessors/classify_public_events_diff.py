@@ -48,6 +48,10 @@ SEASON_FIELDS = {
 DATE_PREDICTION_FIELDS = {
     "date_prediction",
     "prediction_evidence_years",
+    "prediction_probability",
+    "prediction_probability_percent",
+    "prediction_certainty_label",
+    "prediction_certainty_meaning",
     "recurrence_score",
     "recurrence_reasons",
 }
@@ -259,6 +263,10 @@ def rule_prediction_replaces_matching_historical_slide(records):
         "historical_slide_date",
         "historical_slide_date_end",
         "prediction_basis",
+        "prediction_probability",
+        "prediction_probability_percent",
+        "prediction_certainty_label",
+        "prediction_certainty_meaning",
         "prediction_evidence_years",
     }
     if not actionable or any(record["field"] not in allowed_fields for record in actionable):

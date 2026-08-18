@@ -12,10 +12,12 @@ invariants:
   - INV-PJS-001
   - INV-PJS-002
   - INV-PJS-003
+  - INV-PJS-004
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_classify_public_events_diff.py
   - tests/test_public_json_field_sparsity.py
+  - tests/test_apply_public_date_predictions.py
 updated_for: 6537e7f
 ---
 
@@ -64,7 +66,9 @@ updated_for: 6537e7f
 `historical_slide`, `historical_slide_basis`, `historical_slide_date`, `historical_slide_date_end`, `historical_slide_method`
 
 **予測（たぶん今年はこうだろう、を見せる）**
-`date_prediction`, `predicted_date`, `predicted_date_end`, `prediction_basis`, `recurrence_score`, `recurrence_label`, `season_hint`
+`date_prediction`, `predicted_date`, `predicted_date_end`, `prediction_basis`, `prediction_probability`,
+`prediction_probability_percent`, `prediction_certainty_label`, `prediction_certainty_meaning`,
+`recurrence_score`, `recurrence_label`, `season_hint`
 
 **その他**
 `songs`, `source_urls`
@@ -108,6 +112,9 @@ updated_for: 6537e7f
 
 `fixed_date_rule` は差分分類器が監視対象に含めているが、`6537e7f` 時点の実データでは
 保持しているイベントが0件だった。将来使う想定の枠と思われる。
+
+`prediction_probability` は開催可能性と日付一致をまとめた統合確度で、`prediction_certainty_label` は
+その日本語表示である。`date_prediction` の同名フィールドが正規のまとまりで、トップレベルは既存サイト向けの互換投影とする。
 
 ## 不変条件
 
@@ -157,6 +164,21 @@ updated_for: 6537e7f
   （`None` や空文字で埋めるのも「埋めた」に入れて弾く）。公開されている実物では、
   いまも疎であること。**全イベントが同じキー集合を持つようになったら、それは入口が壊れた結果**なので、
   「1件が全フィールドを持つことは無い」「任意フィールドは必ずどこかで欠けている」を検査する。
+
+### INV-PJS-004 予測確度は「開催され、かつその日である」1つの意味で渡す
+
+- **内容**: `date_prediction.joint_probability` とトップレベルの `prediction_probability` は、
+  対象イベントが対象年に開催され、かつ `date_prediction.date..date_end` と一致する統合確度である。
+  `probability_percent`、`certainty_label`、`certainty_meaning` も同じ判断から派生させる。
+  開催有無と日付一致の別スコアを公開JSONへ出さない。
+- **なぜ**: 利用者が知りたいのは「その日に行けば開催されているか」であり、2つの確率を自分で解釈させるべきではない。
+  また単なる規則一致スコアを確率として表示すると、開催中止の可能性が数値から抜け落ちる。
+- **破れたときの症状**: 同じカードに開催確率と日付確率が並び、どちらを信じるか分からない。
+  または `95%` が規則の一致率なのか、実際にその日に開催される確度なのか分からない。
+- **守っているコード**: `event_model/event_date_prediction_judgment.py`、
+  `public_json_postprocessors/apply_public_date_predictions.py`
+- **守っているテスト**: `tests/test_event_date_prediction_judgment.py`、
+  `tests/test_apply_public_date_predictions.py`
 
 ## 気づいた食い違い（`6537e7f` 時点）
 

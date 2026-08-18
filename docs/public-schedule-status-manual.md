@@ -16,6 +16,17 @@
 - 今年の公式HP、自治体/主催発表、信頼できる今年X投稿は、今年の開催日・開催確定の直接証拠にできる。
 - `last_year` や `recurring_last_year` を新しい正規概念にしない。過去年実績は `historical_reference` として扱う。
 
+## 予測日の統合確度
+
+具体的な予測日には、「開催されるか」と「その日か」を分けず、
+**そのイベントが、その予測日に開催される確からしさ**を1つの `joint_probability` で持つ。
+公開日本語は `90%以上=ほぼ確実`、`75%以上=可能性が高い`、`55%以上=可能性あり`、
+`30%以上=参考予測`、それ未満は `可能性は低い` とする。
+
+これは公式確認とは別物である。`ほぼ確実` でも `predicted × rule_predicted` に留め、
+サイトでは必ず `予測` と `公式未確認` を併記する。詳しい根拠上限とLLM契約は
+[LLM開催日予測・統合確度ポリシー](llm-event-date-certainty-policy.md)を参照する。
+
 ## 正本となる2軸
 
 現在の正規入力は `current_event_state × date_certainty_tier` の2軸である。
@@ -76,6 +87,21 @@
   "latest_seen_year": 2025,
   "evidence_years": [2025, 2024],
   "continuity_score": 0.78
+}
+```
+
+規則予測を持つ場合は、さらに `date_prediction` 内へ次を出す。
+
+```json
+{
+  "date_prediction": {
+    "date": "2026-08-29",
+    "date_end": "2026-08-30",
+    "joint_probability": 0.95,
+    "probability_percent": 95,
+    "certainty_label": "ほぼ確実",
+    "certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
+  }
 }
 ```
 
