@@ -322,18 +322,46 @@ def prediction_probability(evidence_items, target_year, params=None):
 
     past = [ev for ev in evidence_items if ev.get("year") and ev.get("year") < target_year]
     if past:
-        latest_year = max(ev["year"] for ev in past)
-        latest = [ev for ev in past if ev["year"] == latest_year]
-        base = noisy_or(reliability_for_evidence(ev, params) for ev in latest) * 100
-        speakers = {speaker_key(ev.get("speaker")) for ev in latest}
-        speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(speakers)))
-        probability = round(base * (float(params["decay_rate"]) ** (target_year - latest_year)) * speaker_factor)
-        kind = max((ev.get("kind") for ev in latest), key=lambda value: {"announced": 3, "observed": 2, "hint": 1}.get(value, 0))
+        by_year = {}
+        for evidence in past:
+            by_year.setdefault(evidence["year"], []).append(evidence)
+        annual_probabilities = []
+        annual_kinds = []
+        for evidence_year in sorted(by_year):
+            annual_evidence = by_year[evidence_year]
+            base = noisy_or(reliability_for_evidence(ev, params) for ev in annual_evidence)
+            annual_speakers = {speaker_key(ev.get("speaker")) for ev in annual_evidence}
+            speaker_factor = min(1.0, 0.65 + 0.15 * max(1, len(annual_speakers)))
+            annual_probabilities.append(
+                base
+                * (float(params["decay_rate"]) ** (target_year - evidence_year))
+                * speaker_factor
+            )
+            annual_kinds.append(
+                max(
+                    (ev.get("kind") for ev in annual_evidence),
+                    key=lambda value: {"announced": 3, "observed": 2, "hint": 1}.get(value, 0),
+                )
+            )
+        probability = round(noisy_or(annual_probabilities) * 100)
+        source_years = sorted(by_year)
+        latest_year = source_years[-1]
+        speakers = {speaker_key(ev.get("speaker")) for ev in past}
+        if len(set(annual_kinds)) == 1:
+            kind_label = {
+                "announced": "告知",
+                "observed": "実測",
+                "hint": "ヒント",
+            }.get(annual_kinds[-1], "実績")
+        else:
+            kind_label = "実績"
+        year_label = "・".join(str(year) for year in source_years)
         return {
             "probability": max(5, min(90, probability)),
             "basis": "past_evidence",
-            "basis_label": f"{latest_year}年{'告知' if kind == 'announced' else '実測' if kind == 'observed' else 'ヒント'}",
+            "basis_label": f"{year_label}年{kind_label}",
             "latest_year": latest_year,
+            "source_years": source_years,
             "speaker_count": len(speakers),
         }
     return {

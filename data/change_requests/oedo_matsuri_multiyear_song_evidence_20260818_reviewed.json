@@ -1,0 +1,230 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "scripts/promote_change_requests_for_review.py",
+  "scope": "oedo_matsuri_multiyear_song_evidence_20260818_reviewed",
+  "requests": [
+    {
+      "request_id": "oedo_matsuri_2024_chuo_kanko_full_setlist",
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "evidence_mode": "historical_curated_report",
+      "event_date": "2024-08-23",
+      "songs": [
+        {
+          "title": "これがお江戸の盆ダンス"
+        },
+        {
+          "title": "東京音頭"
+        },
+        {
+          "title": "チャンチキおけさ"
+        },
+        {
+          "title": "どだればち・サンバ"
+        },
+        {
+          "title": "バハマ・ママ"
+        },
+        {
+          "title": "ダンシング・ヒーロー"
+        },
+        {
+          "title": "2000年音頭"
+        },
+        {
+          "title": "きよしのズンドコ節"
+        },
+        {
+          "title": "大東京音頭"
+        },
+        {
+          "title": "ベイサイド・ブギ"
+        },
+        {
+          "title": "銀座カンカン娘"
+        },
+        {
+          "title": "炭坑節"
+        },
+        {
+          "title": "きよしの数え唄"
+        },
+        {
+          "title": "令和音頭"
+        }
+      ],
+      "source": {
+        "url": "https://tokuhain.chuo-kanko.or.jp/detail.php?id=5194",
+        "platform": "web",
+        "kind": "historical_occurrence_report",
+        "account_key": "chuo-kanko-special-correspondent:sam",
+        "title": "2024 夏を締め括るに相応しい 巨大櫓 盆踊り祭典",
+        "text_excerpt": "第34回中央区大江戸まつり盆おどり大会の現地記録で、櫓周辺に流れた14曲を列挙。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-08-18T12:52:16.316428+00:00",
+      "review_note": "4件の独立ソース、14曲の曲名、2024/2025開催年、dry-run適用、年次別75%残存と複数年noisy-or、公開表示84%/79%を確認。"
+    },
+    {
+      "request_id": "oedo_matsuri_2025_chuo_kanko_full_setlist",
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "evidence_mode": "historical_curated_report",
+      "event_date": "2025-08-22",
+      "songs": [
+        {
+          "title": "これがお江戸の盆ダンス"
+        },
+        {
+          "title": "東京音頭"
+        },
+        {
+          "title": "チャンチキおけさ"
+        },
+        {
+          "title": "どだればち・サンバ"
+        },
+        {
+          "title": "バハマ・ママ"
+        },
+        {
+          "title": "ダンシング・ヒーロー"
+        },
+        {
+          "title": "2000年音頭"
+        },
+        {
+          "title": "きよしのズンドコ節"
+        },
+        {
+          "title": "大東京音頭"
+        },
+        {
+          "title": "ベイサイド・ブギ"
+        },
+        {
+          "title": "銀座カンカン娘"
+        },
+        {
+          "title": "炭坑節"
+        },
+        {
+          "title": "きよしの数え唄"
+        },
+        {
+          "title": "令和音頭"
+        }
+      ],
+      "source": {
+        "url": "https://tokuhain.chuo-kanko.or.jp/detail.php?id=6223",
+        "platform": "web",
+        "kind": "historical_occurrence_report",
+        "account_key": "chuo-kanko-special-correspondent:sam",
+        "title": "2025 夏を締め括る風物詩 大江戸まつり 盆おどり大会",
+        "text_excerpt": "第35回中央区大江戸まつり盆おどり大会の現地記録で、会場に流れた計14曲を列挙。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-08-18T12:52:16.316428+00:00",
+      "review_note": "4件の独立ソース、14曲の曲名、2024/2025開催年、dry-run適用、年次別75%残存と複数年noisy-or、公開表示84%/79%を確認。"
+    },
+    {
+      "request_id": "oedo_matsuri_2025_ja1757_full_setlist",
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "evidence_mode": "historical_firsthand_report",
+      "event_date": "2025-08-22",
+      "songs": [
+        {
+          "title": "これがお江戸の盆ダンス"
+        },
+        {
+          "title": "東京音頭"
+        },
+        {
+          "title": "チャンチキおけさ"
+        },
+        {
+          "title": "どだればち・サンバ"
+        },
+        {
+          "title": "バハマ・ママ"
+        },
+        {
+          "title": "ダンシング・ヒーロー"
+        },
+        {
+          "title": "2000年音頭"
+        },
+        {
+          "title": "きよしのズンドコ節"
+        },
+        {
+          "title": "大東京音頭"
+        },
+        {
+          "title": "ベイサイド・ブギ"
+        },
+        {
+          "title": "銀座カンカン娘"
+        },
+        {
+          "title": "炭坑節"
+        },
+        {
+          "title": "きよしの数え唄"
+        },
+        {
+          "title": "令和音頭"
+        }
+      ],
+      "source": {
+        "url": "https://ja1757.blog.fc2.com/blog-entry-2287.html",
+        "platform": "web",
+        "kind": "historical_occurrence_report",
+        "account_key": "ja1757",
+        "title": "2025年8月22-23日 第35回中央区大江戸まつり盆おどり大会",
+        "text_excerpt": "浜町公園での第35回大会の参加記録で、踊られた14曲を列挙。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-08-18T12:52:16.316428+00:00",
+      "review_note": "4件の独立ソース、14曲の曲名、2024/2025開催年、dry-run適用、年次別75%残存と複数年noisy-or、公開表示84%/79%を確認。"
+    },
+    {
+      "request_id": "oedo_matsuri_2025_partial_youtube_0HXx5_Ie5k8",
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "evidence_mode": "historical_partial_youtube",
+      "event_date": "2025-08-23",
+      "songs": [
+        {
+          "title": "どだればち・サンバ"
+        },
+        {
+          "title": "バハマ・ママ"
+        },
+        {
+          "title": "ダンシング・ヒーロー"
+        },
+        {
+          "title": "銀座カンカン娘"
+        }
+      ],
+      "source": {
+        "url": "https://www.youtube.com/watch?v=0HXx5_Ie5k8",
+        "platform": "youtube",
+        "kind": "historical_occurrence_video",
+        "title": "2025年8月23日 中央区大江戸まつり盆おどり大会 部分動画",
+        "text_excerpt": "浜町公園で撮影された別動画の説明欄から4曲を確認。大会全体の網羅資料としては扱わない。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-08-18T12:52:16.316428+00:00",
+      "review_note": "4件の独立ソース、14曲の曲名、2024/2025開催年、dry-run適用、年次別75%残存と複数年noisy-or、公開表示84%/79%を確認。"
+    }
+  ],
+  "source_generated_by": "おと（Codex）",
+  "reviewed_by": "おと（Codex）",
+  "reviewed_at": "2026-08-18T12:52:16.316428+00:00",
+  "review_note": "4件の独立ソース、14曲の曲名、2024/2025開催年、dry-run適用、年次別75%残存と複数年noisy-or、公開表示84%/79%を確認。",
+  "source_request_count": 4,
+  "approved_request_count": 4
+}

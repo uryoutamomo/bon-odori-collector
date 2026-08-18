@@ -1,6 +1,8 @@
-"""Regression tests for keeping X claims out of ungated inherited predictions."""
+"""Regression tests for safe multi-year song inheritance."""
 
-from inherit_song_probabilities_rdb import find_inheritance_candidates, gather_evidence
+import json
+
+from inherit_song_probabilities_rdb import find_inheritance_candidates, gather_evidence, inherit
 from master_rdb.master_db import init_db
 
 
@@ -101,3 +103,70 @@ def test_inheritance_uses_only_accepted_non_x_claim_evidence(tmp_path):
 
     assert evidence == [{"kind": "hint", "reliability": 0.8, "speaker": "official"}]
 
+
+def test_inheritance_combines_direct_evidence_from_multiple_years(tmp_path):
+    conn = init_db(tmp_path / "master.sqlite")
+    seed_occurrences(conn)
+    conn.execute(
+        """
+        INSERT INTO event_occurrences (
+          occurrence_id, origin, series_id, event_year, display_name, created_at, updated_at
+        ) VALUES ('occ_2024', 'curated', 'series_1', 2024, 'テスト盆踊り 2024', ?, ?)
+        """,
+        (NOW, NOW),
+    )
+    conn.execute(
+        """
+        INSERT INTO occurrence_songs (
+          occurrence_song_id, origin, occurrence_id, song_id, song_title_raw,
+          normalized_title, role, evidence_status, created_at, updated_at
+        ) VALUES (
+          'osong_curated_2024', 'curated', 'occ_2024', 'song_curated',
+          '公式根拠の曲', '公式根拠の曲', 'result', 'observed', ?, ?
+        )
+        """,
+        (NOW, NOW),
+    )
+    conn.executemany(
+        """
+        INSERT INTO evidence_items (
+          evidence_id, platform, evidence_type, source_key, account_key, raw_json
+        ) VALUES (?, 'youtube', 'historical_occurrence_video', ?, ?, '{}')
+        """,
+        [
+            ("evid_2024", "video_2024", "same-channel"),
+            ("evid_2025", "video_2025", "same-channel"),
+        ],
+    )
+    conn.executemany(
+        """
+        INSERT INTO occurrence_song_evidence_links (
+          occurrence_song_id, evidence_id, link_status, confidence
+        ) VALUES (?, ?, 'accepted', 0.85)
+        """,
+        [
+            ("osong_curated_2024", "evid_2024"),
+            ("osong_curated", "evid_2025"),
+        ],
+    )
+
+    first = inherit(conn, 2026, NOW)
+    inherited = conn.execute(
+        """
+        SELECT probability, inherited_from_year, notes
+        FROM occurrence_songs
+        WHERE occurrence_id='occ_2026' AND normalized_title='公式根拠の曲'
+        """
+    ).fetchone()
+
+    assert len(first["created"]) == 1
+    assert first["created"][0]["basis_label"] == "2024・2025年実測"
+    assert inherited[0] == 70
+    assert inherited[1] == 2025
+    notes = json.loads(inherited[2])
+    assert notes["source_years"] == [2024, 2025]
+    assert notes["historical_basis_label"] == "2024・2025年実測"
+
+    second = inherit(conn, 2026, NOW)
+    assert second["created"] == []
+    assert len(second["updated"]) == 1
