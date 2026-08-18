@@ -1861,7 +1861,7 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "浜町公園いっぱいに櫓と提灯が広がる中央区最大の盆踊り。民謡歌手の生歌や子ども盆踊りタイムもある屈指の大規模大会。",
-    "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会",
+    "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会 2025年8月22日のYouTube実績。2026年の公式曲目ではなく、過去実績に基づく予測根拠として追加。",
     "source_urls": [
       {
         "label": "告知投稿あり",
@@ -1876,7 +1876,106 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "2000年音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "きよしの数え唄",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "どだればち・サンバ",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "ダンシング・ヒーロー",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "令和音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "probability": 84,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "ベイサイド・ブギ",
+        "confidence": "hint",
+        "probability": 79,
+        "basis": "past_evidence",
+        "basis_label": "2024・2025年実測"
+      }
+    ],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
@@ -3478,16 +3577,16 @@ const EVENTS = [
     "detail": "妖怪盆踊りを晴盆が担当。入場無料。晴盆の告知投稿より。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-13",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-13",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -3496,7 +3595,7 @@ const EVENTS = [
       "2026-08-13",
       "2026-08-13"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "盆ダンスフェスティバル2023",
@@ -3922,13 +4021,6 @@ const EVENTS = [
       },
       {
         "name": "遊行おどり",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "阿波踊り",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -6288,7 +6380,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
         "kind": "web",
         "count": 1
       }
@@ -6710,7 +6802,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
         "kind": "web",
         "count": 1
       }
@@ -6874,16 +6966,16 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-14〜2026-08-15",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-14〜2026-08-15",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -6892,7 +6984,7 @@ const EVENTS = [
       "2026-08-14",
       "2026-08-15"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "下落合町会知久会 盆踊り",
@@ -7029,7 +7121,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
         "kind": "web",
         "count": 1
       }
@@ -7281,7 +7373,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
         "kind": "web",
         "count": 1
       }
@@ -8878,18 +8970,24 @@ const EVENTS = [
     },
     "description": "上野恩賜公園は、台東区の屋外で踊りの輪を作りやすい会場。 規模は「大」として整理しています、アクセスはJR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ。",
     "detail": "2026年8月7日（金）〜16日（日）の10日間、全日12:00〜21:00。会場は上野恩賜公園の袴腰広場、主催は上野中通商店街振興組合、観覧無料。盆踊りのほか祭りグルメとステージ企画があり、曲目は日替わり。同じ会場の前半3日には「ゐの市盆踊り～不忍夢～」も行われます（別に掲載）。開催期間は情報源によって3日間と10日間に分かれており、主催者自身が10日間と明記した告知はまだ確認できていません。お出かけの際は最新の告知もあわせてご確認ください。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.uenopark.info/2026/ueno-inoichi-bon-odori-2026/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-16",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-07〜2026-08-16",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -9263,6 +9361,13 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "終 ガット・トゥ・ビー・リアル",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "青い珊瑚礁",
         "confidence": "hint",
         "probability": 80,
@@ -9429,13 +9534,6 @@ const EVENTS = [
         "probability": 57,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "終 ガット・トゥ・ビー・リアル",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "confirmed",
@@ -12371,18 +12469,24 @@ const EVENTS = [
     },
     "description": null,
     "detail": "2026年は第2回。盆踊りは8月8日・9日・11日・15日・16日に実施と明記され、その他の日は実施記載なし。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-16",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-08〜2026-08-16",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12430,7 +12534,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "元の告知表記は「夏まつり2026」。17:00〜21:30。盆踊りの実施有無は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -12485,7 +12595,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "盆踊りの実施有無は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -12872,7 +12988,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "15:00〜19:00。盆踊りの実施有無は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -12927,7 +13049,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "9:30〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -13044,7 +13172,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "16:00〜18:00。盆踊りの実施有無は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -13154,7 +13288,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "17:00〜。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -13600,7 +13740,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "11:00〜15:00。盆踊りの実施有無は未確認。昼間開催のため、時間帯からして盆踊りの可能性は低い。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -13659,7 +13805,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "18:30〜。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -13969,7 +14121,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "18:00〜21:00。盆踊りの実施有無は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -14314,7 +14472,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "16:00〜20:00。盆踊りの実施有無は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://minamisuna1.com/37573/",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -14371,16 +14535,16 @@ const EVENTS = [
     "detail": "16:30〜19:00。盆踊りの実施有無は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-14",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-14",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -14389,7 +14553,7 @@ const EVENTS = [
       "2026-08-14",
       "2026-08-14"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大島一・二丁目町会 納涼盆踊り大会",
@@ -14931,6 +15095,11 @@ const EVENTS = [
     "description": "第71回大井どんたく夏まつり 初日 盆踊りは、大井町駅前中央通り周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026年8月22日（土）・23日（日）14:00〜20:00開催、第72回。会場は大井駅前中央通りを中心に、阪急ホテル前・大井光学通りを含む一帯。主催は大井町どんたく実行委員会。日程・時間・会場は公式サイトと天王洲ナビの告知で確認。前年の第71回は2025年8月23日・24日の11:00〜20:00で、品川区商店街連合会の案内では大井銀座商店街振興組合・大井駅前中央通り商店会・大井光学通り商店街が主催として記載されていた。 【盆踊りについて】22日にご当地曲『大井どんたく音頭』を用いた催しが行われる。開始時刻は主催者の一次情報では確認できていないが、盆踊りの情報を発信するXアカウントは22日18:00〜20:00（予定）としている。23日は音楽ステージが中心で、踊る時間の有無は確認できていない。 【まだ確認できていないこと】複数会場のどこで踊るのかは主催者の告知からは特定できていない。会場マップは公式サイトで「公開までおまちください」とされている。お出かけの際は主催者の最新の告知もあわせてご確認ください。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://ooimachi.tokyo/dontaku/",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -16109,20 +16278,6 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
-        "name": "津軽甚句",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "牛深ハイヤ",
         "confidence": "confirmed",
         "probability": 95,
@@ -16152,13 +16307,6 @@ const EVENTS = [
       },
       {
         "name": "紀州白浜音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 繁昌ぶし",
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
@@ -16319,6 +16467,13 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
+        "name": "メガ盆",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "二十一世紀音頭",
         "confidence": "hint",
         "probability": 80,
@@ -16327,6 +16482,13 @@ const EVENTS = [
       },
       {
         "name": "八木節",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夏祭り",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
@@ -16347,42 +16509,21 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
+        "name": "津軽甚句",
+        "confidence": "confirmed",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "相馬盆唄",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 メガヒッツ盆踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 夏祭り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 池袋盆BAND",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 津軽甚句",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 炭坑節",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
@@ -17655,6 +17796,13 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "特設会場周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "RPG",
         "confidence": "hint",
         "probability": 71,
@@ -17737,13 +17885,6 @@ const EVENTS = [
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "特設会場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "ended",
@@ -19840,7 +19981,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-17"
@@ -19863,41 +20004,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-16",
-        "date_end": "2026-08-16",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3日曜を2026年へスライド",
-        "source_date": "2025-08-17",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-17"
     ],
     "historical_reference_label": "2025-08-17実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-08-16",
-      "date_end": "2026-08-16",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3日曜を2026年へスライド",
-      "source_date": "2025-08-17",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-16",
-    "historical_slide_date_end": "2026-08-16",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
-    "predicted_date": "2026-08-16",
-    "predicted_date_end": "2026-08-16",
-    "prediction_basis": "2025年実績の同月第3日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "玉川町会盆おどり大会",
@@ -20368,7 +20484,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-17"
@@ -20389,41 +20505,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-16",
-        "date_end": "2026-08-16",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3日曜を2026年へスライド",
-        "source_date": "2025-08-17",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-17"
     ],
     "historical_reference_label": "2025-08-17実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.56,
-    "historical_slide": {
-      "date": "2026-08-16",
-      "date_end": "2026-08-16",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3日曜を2026年へスライド",
-      "source_date": "2025-08-17",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-16",
-    "historical_slide_date_end": "2026-08-16",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
-    "predicted_date": "2026-08-16",
-    "predicted_date_end": "2026-08-16",
-    "prediction_basis": "2025年実績の同月第3日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.56
   },
   {
     "name": "大蔵本村睦会 「盆踊り大会」",
@@ -21463,7 +21554,7 @@ const EVENTS = [
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21485,9 +21576,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-08-16"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-16"
@@ -21510,41 +21601,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-15",
-        "date_end": "2026-08-15",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3土曜を2026年へスライド",
-        "source_date": "2025-08-16",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-16"
     ],
     "historical_reference_label": "2025-08-16実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-08-15",
-      "date_end": "2026-08-15",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3土曜を2026年へスライド",
-      "source_date": "2025-08-16",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-15",
-    "historical_slide_date_end": "2026-08-15",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "predicted_date": "2026-08-15",
-    "predicted_date_end": "2026-08-15",
-    "prediction_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "からすやま夏まつり 盆踊り大会",
@@ -22945,6 +23011,13 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "阿波踊り",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 48,
@@ -22953,13 +23026,6 @@ const EVENTS = [
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "阿波踊り",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -25108,7 +25174,13 @@ const EVENTS = [
     },
     "description": null,
     "detail": "開催時間：8月22日18:00〜21:00、8月23日17:30〜20:30。主催：坂下一丁目南町会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://itabashi-times.com/archives/matsuri2026.html",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
@@ -25167,18 +25239,24 @@ const EVENTS = [
     },
     "description": null,
     "detail": "開催時間：18:30〜20:30。主催：小豆沢商友会。現地の参加報告は現時点では確認できていない。登録時点では開催予定。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://itabashi-times.com/archives/matsuri2026.html",
+        "kind": "official"
+      }
+    ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26255,7 +26333,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://satoriki.net/blog/8424/",
         "kind": "web",
         "count": 1
       }
@@ -26383,7 +26461,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://satoriki.net/blog/8424/",
         "kind": "web",
         "count": 1
       }
@@ -26515,7 +26593,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://satoriki.net/blog/8424/",
         "kind": "web",
         "count": 1
       }
@@ -26845,7 +26923,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://satoriki.net/blog/8424/",
         "kind": "web",
         "count": 1
       }
@@ -27600,7 +27678,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/higashiayase20-8.html",
         "kind": "web",
         "count": 1
       }
@@ -27798,7 +27876,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/tyuuouhonntyou.html",
         "kind": "web",
         "count": 1
       }
@@ -27860,7 +27938,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html",
         "kind": "web",
         "count": 1
       }
@@ -27922,7 +28000,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/0704umeda.html",
         "kind": "web",
         "count": 1
       }
@@ -28968,7 +29046,7 @@ const EVENTS = [
     "source_urls": [],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "rule_predicted",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -28990,9 +29068,45 @@ const EVENTS = [
       "2025-08-31",
       "2025-08-31"
     ],
-    "display_tier": "historical_slide",
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-08-29",
+      "date_end": "2026-08-30",
+      "weekday_start": "土",
+      "weekday_end": "日",
+      "confidence": "high",
+      "score": 0.95,
+      "rule_type": "last_full_weekend",
+      "basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+      "evidence_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "evidence_count": 3,
+      "has_actual_observation": false,
+      "joint_probability": 0.95,
+      "probability_percent": 95,
+      "certainty_label": "ほぼ確実",
+      "certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
+    },
+    "display_tier": "rule_predicted",
+    "predicted_date": "2026-08-29",
+    "predicted_date_end": "2026-08-30",
+    "prediction_basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+    "prediction_confidence": "high",
+    "prediction_evidence_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "prediction_probability": 0.95,
+    "prediction_probability_percent": 95,
+    "prediction_certainty_label": "ほぼ確実",
+    "prediction_certainty_meaning": "このイベントが、この予測日に開催される確からしさ",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-31",
@@ -29014,18 +29128,10 @@ const EVENTS = [
       ],
       "cautions": [],
       "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-30",
-        "date_end": "2026-08-30",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第5日曜を2026年へスライド",
-        "source_date": "2025-08-31",
-        "source_date_end": "2025-08-31",
-        "duration_days": 1
-      }
+      "has_rule_prediction": true,
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-31",
@@ -29033,24 +29139,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-08-31実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-08-30",
-      "date_end": "2026-08-30",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第5日曜を2026年へスライド",
-      "source_date": "2025-08-31",
-      "source_date_end": "2025-08-31",
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-30",
-    "historical_slide_date_end": "2026-08-30",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第5日曜を2026年へスライド",
-    "predicted_date": "2026-08-30",
-    "predicted_date_end": "2026-08-30",
-    "prediction_basis": "2025年実績の同月第5日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "木根川町会ふれあい盆踊り",
@@ -29279,7 +29368,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29341,7 +29430,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29407,7 +29496,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29415,14 +29504,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29469,7 +29558,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29536,7 +29625,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29664,7 +29753,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29730,22 +29819,22 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-14〜2026-08-15",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-14〜2026-08-15",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29754,7 +29843,7 @@ const EVENTS = [
       "2026-08-14",
       "2026-08-15"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "一南自治会盆踊り",
@@ -29858,7 +29947,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29920,7 +30009,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -29986,7 +30075,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30052,7 +30141,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30118,7 +30207,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30245,7 +30334,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30311,7 +30400,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30319,14 +30408,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30377,7 +30466,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30443,7 +30532,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30509,7 +30598,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30575,7 +30664,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30641,7 +30730,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30703,7 +30792,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30769,7 +30858,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30901,7 +30990,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -30963,7 +31052,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31025,7 +31114,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31157,7 +31246,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31223,7 +31312,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31417,7 +31506,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31488,7 +31577,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31554,7 +31643,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31620,7 +31709,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31752,7 +31841,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31818,7 +31907,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31884,7 +31973,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -31946,7 +32035,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32008,7 +32097,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32206,7 +32295,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32272,7 +32361,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32400,7 +32489,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32528,7 +32617,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32590,7 +32679,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32652,7 +32741,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }
@@ -32784,7 +32873,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
         "kind": "web",
         "count": 1
       }

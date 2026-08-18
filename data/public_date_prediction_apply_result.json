@@ -2,9 +2,9 @@
   "generated_by": "apply_public_date_predictions.py",
   "source": "data/event_date_predictions.json",
   "public_events": "data/public/events_public.json",
-  "applied_count": 3,
-  "skipped_count": 7,
-  "unmatched_count": 3,
+  "applied_count": 4,
+  "skipped_count": 10,
+  "unmatched_count": 4,
   "applied": [
     {
       "event_name": "シタマチ.ふるさと盆踊り大会",
@@ -40,6 +40,47 @@
         ],
         "evidence_count": 2,
         "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "亀有銀座商店街納涼盆踊り大会",
+      "venue": "亀有ゆうろーど（亀有銀座商店街）",
+      "before": {
+        "date": "2025-08-31",
+        "date_end": "2025-08-31",
+        "display_tier": null,
+        "predicted_date": null,
+        "predicted_date_end": null
+      },
+      "after": {
+        "date": "2025-08-31",
+        "date_end": "2025-08-31",
+        "display_tier": "rule_predicted",
+        "predicted_date": "2026-08-29",
+        "predicted_date_end": "2026-08-30"
+      },
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-08-29",
+        "date_end": "2026-08-30",
+        "weekday_start": "土",
+        "weekday_end": "日",
+        "confidence": "high",
+        "score": 0.95,
+        "rule_type": "last_full_weekend",
+        "basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+        "evidence_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "evidence_count": 3,
+        "has_actual_observation": false,
+        "joint_probability": 0.95,
+        "probability_percent": 95,
+        "certainty_label": "ほぼ確実",
+        "certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
       }
     },
     {
@@ -142,6 +183,30 @@
       }
     },
     {
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "reason": "target_year_date_already_present",
+      "date": "2026-08-21",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-08-28",
+        "date_end": "2026-08-29",
+        "weekday_start": "金",
+        "weekday_end": "土",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "8月第4金曜",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
       "event_name": "丸の内de盆踊り",
       "venue": "行幸通り",
       "reason": "target_year_date_already_present",
@@ -160,6 +225,30 @@
         "evidence_years": [
           2024,
           2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "reason": "target_year_date_already_present",
+      "date": "2026-08-21",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-08-29",
+        "date_end": "2026-08-29",
+        "weekday_start": "土",
+        "weekday_end": "土",
+        "confidence": "medium",
+        "score": 0.6,
+        "rule_type": "weekend_near_day",
+        "basis": "8月26日前後の週末",
+        "evidence_years": [
+          2023,
+          2024
         ],
         "evidence_count": 2,
         "has_actual_observation": false
@@ -262,6 +351,30 @@
       }
     },
     {
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "reason": "target_year_date_already_present",
+      "date": "2026-08-01",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-08-01",
+        "date_end": "2026-08-02",
+        "weekday_start": "土",
+        "weekday_end": "日",
+        "confidence": "medium",
+        "score": 0.72,
+        "rule_type": "fixed_date",
+        "basis": "毎年8/1開始",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
       "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "reason": "target_year_date_already_present",
@@ -288,6 +401,28 @@
   ],
   "unmatched": [
     {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-23",
+        "date_end": "2026-07-23",
+        "weekday_start": "木",
+        "weekday_end": "木",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "7月第4木曜",
+        "evidence_years": [
+          2023,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
       "event_name": "赤坂浄土寺盆踊り大会",
       "venue": "浄土寺",
       "date_prediction": {
@@ -301,6 +436,28 @@
         "score": 0.58,
         "rule_type": "date_near",
         "basis": "7月26日前後",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-08-14",
+        "date_end": "2026-08-16",
+        "weekday_start": "金",
+        "weekday_end": "日",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "8月第2金曜",
         "evidence_years": [
           2023,
           2024
@@ -330,36 +487,15 @@
         "evidence_count": 2,
         "has_actual_observation": false
       }
-    },
-    {
-      "event_name": "第28回新橋こいち祭 盆踊り",
-      "venue": "桜田公園",
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-07-23",
-        "date_end": "2026-07-23",
-        "weekday_start": "木",
-        "weekday_end": "木",
-        "confidence": "medium",
-        "score": 0.7,
-        "rule_type": "weekday_nth",
-        "basis": "7月第4木曜",
-        "evidence_years": [
-          2023,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
     }
   ],
   "prediction_input": {
     "source": "master_rdb.predicted_occurrence_dates",
     "summary": {
-      "prediction_count": 13,
+      "prediction_count": 18,
       "source_counts": {
-        "event_date_predictions": 13
+        "event_date_predictions": 17,
+        "llm_event_date_judgment_v1": 1
       },
       "json_fallback_count": 0,
       "json_fallback": []
