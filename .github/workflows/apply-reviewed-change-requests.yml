@@ -1,0 +1,137 @@
+name: Apply reviewed RDB change requests
+
+on:
+  workflow_dispatch:
+    inputs:
+      request_file:
+        description: 'data/change_requests配下の reviewed JSON'
+        required: true
+        type: string
+        default: 'data/change_requests/review_backlog_llm_20260818_reviewed.json'
+      apply:
+        description: 'S3正本へ適用する。falseはdry-runのみ'
+        required: false
+        type: boolean
+        default: false
+      confirm:
+        description: "apply時のみ: APPLY REVIEWED CHANGE REQUESTS と入力する"
+        required: false
+        type: string
+        default: ''
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+      MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+      AWS_REGION: ap-northeast-1
+      REQUEST_FILE: ${{ inputs.request_file }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Validate reviewed request path and confirmation
+        env:
+          CONFIRMATION: ${{ inputs.confirm }}
+          APPLY_REQUESTED: ${{ inputs.apply }}
+        run: |
+          set -euo pipefail
+          case "$REQUEST_FILE" in
+            data/change_requests/*_reviewed.json) ;;
+            *) echo "request_file must be data/change_requests/*_reviewed.json" >&2; exit 1 ;;
+          esac
+          test -f "$REQUEST_FILE"
+          if [ "$APPLY_REQUESTED" = "true" ] && [ "$CONFIRMATION" != "APPLY REVIEWED CHANGE REQUESTS" ]; then
+            echo "apply=true requires confirm='APPLY REVIEWED CHANGE REQUESTS'" >&2
+            exit 1
+          fi
+
+      - name: Fetch master RDB artifact
+        run: python master_db_s3_artifact.py fetch --overwrite
+
+      - name: Record fetched checksum
+        id: fetched
+        run: |
+          SHA="$(python -c 'from master_rdb.master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "- fetched checksum: $SHA" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Dry-run reviewed requests
+        run: |
+          python -m report_apply.apply_change_requests \
+            --requests "$REQUEST_FILE" \
+            --master-db data/bon_odori_master.sqlite \
+            --out-db "$RUNNER_TEMP/reviewed-change-requests-dry-run.sqlite" \
+            --out-json "$RUNNER_TEMP/reviewed-change-requests-dry-run.json" \
+            --out-md "$RUNNER_TEMP/reviewed-change-requests-dry-run.md"
+          python -m scripts.verify_review_backlog_application \
+            --db "$RUNNER_TEMP/reviewed-change-requests-dry-run.sqlite" \
+            --requests "$REQUEST_FILE" \
+            --out "$RUNNER_TEMP/review-backlog-verification-dry-run.json"
+
+      - name: Apply reviewed requests
+        if: ${{ inputs.apply }}
+        run: |
+          python -m report_apply.apply_change_requests \
+            --requests "$REQUEST_FILE" \
+            --master-db data/bon_odori_master.sqlite \
+            --out-db "$RUNNER_TEMP/reviewed-change-requests-unused.sqlite" \
+            --out-json "$RUNNER_TEMP/reviewed-change-requests-apply.json" \
+            --out-md "$RUNNER_TEMP/reviewed-change-requests-apply.md" \
+            --apply \
+            --confirm 'APPLY CHANGE REQUESTS'
+          python -m scripts.verify_review_backlog_application \
+            --db data/bon_odori_master.sqlite \
+            --requests "$REQUEST_FILE" \
+            --out "$RUNNER_TEMP/review-backlog-verification-apply.json"
+
+      - name: Publish Master RDB with CAS
+        if: ${{ inputs.apply }}
+        run: |
+          python master_db_s3_artifact.py publish \
+            --expect-remote-checksum "${{ steps.fetched.outputs.sha }}" \
+            --snapshot-id "reviewed-change-requests-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+      - name: Re-fetch and verify published Master RDB
+        if: ${{ inputs.apply }}
+        run: |
+          python master_db_s3_artifact.py fetch --overwrite
+          python -m scripts.verify_review_backlog_application \
+            --db data/bon_odori_master.sqlite \
+            --requests "$REQUEST_FILE" \
+            --out "$RUNNER_TEMP/review-backlog-verification-refetch.json"
+
+      - name: Upload apply evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: reviewed-change-requests-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/reviewed-change-requests-*.json
+            ${{ runner.temp }}/reviewed-change-requests-*.md
+            ${{ runner.temp }}/review-backlog-verification-*.json
+          if-no-files-found: warn
+          retention-days: 30

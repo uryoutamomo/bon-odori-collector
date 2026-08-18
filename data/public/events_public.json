@@ -1912,7 +1912,7 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "ダンシング・ヒーロー",
+        "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 51,
         "basis": "past_evidence",
@@ -4013,13 +4013,6 @@
       },
       {
         "name": "遊行おどり",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "阿波踊り",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -9399,7 +9392,12 @@
         "confidence": "hint",
         "probability": 57,
         "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis_label": "2025年実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
       },
       {
         "name": "ガールズ・ジャスト・ワナ・ハブ・ファン",
@@ -9526,13 +9524,6 @@
         "probability": 57,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "終 ガット・トゥ・ビー・リアル",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "confirmed",
@@ -16281,14 +16272,24 @@
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
-        "basis_label": "実測"
+        "basis_label": "実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
-        "basis_label": "実測"
+        "basis_label": "実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
       },
       {
         "name": "牛深ハイヤ",
@@ -16326,18 +16327,16 @@
         "basis_label": "実測"
       },
       {
-        "name": "終 繁昌ぶし",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "繁昌ぶし",
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
-        "basis_label": "実測"
+        "basis_label": "実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
       },
       {
         "name": "老坂",
@@ -16487,6 +16486,13 @@
         "basis_label": "実測"
       },
       {
+        "name": "メガ盆",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "二十一世紀音頭",
         "confidence": "hint",
         "probability": 80,
@@ -16495,6 +16501,13 @@
       },
       {
         "name": "八木節",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夏祭り",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
@@ -16516,41 +16529,6 @@
       },
       {
         "name": "相馬盆唄",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 メガヒッツ盆踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 夏祭り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 池袋盆BAND",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 津軽甚句",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "終 炭坑節",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
@@ -17837,7 +17815,7 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "ダンシング・ヒーロー",
+        "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -17905,13 +17883,6 @@
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "特設会場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "ended",
@@ -19899,13 +19870,6 @@
       }
     ],
     "songs": [
-      {
-        "name": "下北沢駅東口周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
       {
         "name": "お嫁サンバ",
         "confidence": "hint",
@@ -22956,7 +22920,7 @@
         "basis_label": "実測"
       },
       {
-        "name": "Y.M.C.A.",
+        "name": "YMCA",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -23096,13 +23060,6 @@
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "阿波踊り",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",

@@ -1,12 +1,12 @@
 {
-  "generated_by": "build_youtube_song_master.py",
-  "generated_at": "2026-06-20T11:39:13.092927+00:00",
+  "generated_by": "scripts/apply_review_backlog_song_projection.py",
+  "generated_at": "2026-08-18T19:15:00+09:00",
   "source": "data/song_occurrences.json",
   "source_occurrence_count": 1856,
   "source_song_relation_count": 28107,
-  "song_count": 789,
+  "song_count": 806,
   "public_ready_count": 687,
-  "review_count": 102,
+  "review_count": 119,
   "rejected_song_row_count": 480,
   "rejected_reasons": {
     "番号だけ": 78,
@@ -61,7 +61,9 @@
   "songs": [
     {
       "song_name": "東京音頭",
-      "aliases": [],
+      "aliases": [
+        "終 東京音頭"
+      ],
       "evidence_count": 1234,
       "good_evidence_count": 1229,
       "years": [
@@ -122,7 +124,10 @@
     },
     {
       "song_name": "炭坑節",
-      "aliases": [],
+      "aliases": [
+        "終 炭坑節",
+        "終 炭坑節 〆太鼓"
+      ],
       "evidence_count": 1061,
       "good_evidence_count": 1059,
       "years": [
@@ -244,7 +249,9 @@
     },
     {
       "song_name": "八木節",
-      "aliases": [],
+      "aliases": [
+        "終 八木節"
+      ],
       "evidence_count": 675,
       "good_evidence_count": 674,
       "years": [
@@ -305,7 +312,10 @@
     {
       "song_name": "ダンシングヒーロー",
       "aliases": [
-        "ダンシング・ヒーロー"
+        "ダンシング・ヒーロー",
+        "ダンシング・ヒーロー(生歌)",
+        "終 ダンシングヒーロー",
+        "終 ダンシング・ヒーロー"
       ],
       "evidence_count": 491,
       "good_evidence_count": 491,
@@ -484,7 +494,9 @@
     },
     {
       "song_name": "チャンチキおけさ",
-      "aliases": [],
+      "aliases": [
+        "終 チャンチキおけさ"
+      ],
       "evidence_count": 295,
       "good_evidence_count": 295,
       "years": [
@@ -537,7 +549,11 @@
     },
     {
       "song_name": "相馬盆唄",
-      "aliases": [],
+      "aliases": [
+        "大人の部",
+        "子どもの部",
+        "終 一般の部"
+      ],
       "evidence_count": 288,
       "good_evidence_count": 288,
       "years": [
@@ -596,7 +612,9 @@
     },
     {
       "song_name": "きよしのズンドコ節",
-      "aliases": [],
+      "aliases": [
+        "終 きよしのズンドコ節"
+      ],
       "evidence_count": 284,
       "good_evidence_count": 284,
       "years": [
@@ -705,7 +723,9 @@
     },
     {
       "song_name": "かがやき音頭",
-      "aliases": [],
+      "aliases": [
+        "終 かがやき音頭"
+      ],
       "evidence_count": 247,
       "good_evidence_count": 247,
       "years": [
@@ -913,7 +933,9 @@
     },
     {
       "song_name": "たいとう音頭",
-      "aliases": [],
+      "aliases": [
+        "終 たいとう音頭"
+      ],
       "evidence_count": 184,
       "good_evidence_count": 184,
       "years": [
@@ -969,7 +991,9 @@
     },
     {
       "song_name": "ジャンボリミッキー",
-      "aliases": [],
+      "aliases": [
+        "終 ジャンボリーミッキー"
+      ],
       "evidence_count": 184,
       "good_evidence_count": 183,
       "years": [
@@ -1023,7 +1047,9 @@
     },
     {
       "song_name": "さくら音頭",
-      "aliases": [],
+      "aliases": [
+        "さくら音頭(生歌)"
+      ],
       "evidence_count": 176,
       "good_evidence_count": 176,
       "years": [
@@ -1244,7 +1270,10 @@
     },
     {
       "song_name": "津軽甚句",
-      "aliases": [],
+      "aliases": [
+        "ドダレバチ(津軽甚句)",
+        "終 津軽甚句"
+      ],
       "evidence_count": 171,
       "good_evidence_count": 171,
       "years": [
@@ -1460,7 +1489,9 @@
     },
     {
       "song_name": "河内おとこ節",
-      "aliases": [],
+      "aliases": [
+        "終 河内おとこ節・〆太鼓"
+      ],
       "evidence_count": 163,
       "good_evidence_count": 163,
       "years": [
@@ -1622,7 +1653,9 @@
     },
     {
       "song_name": "盆ギリ恋歌",
-      "aliases": [],
+      "aliases": [
+        "終 盆ギリ恋歌"
+      ],
       "evidence_count": 151,
       "good_evidence_count": 151,
       "years": [
@@ -1787,7 +1820,9 @@
     },
     {
       "song_name": "ドダレバチ",
-      "aliases": [],
+      "aliases": [
+        "終 ドダレバチ"
+      ],
       "evidence_count": 130,
       "good_evidence_count": 130,
       "years": [
@@ -2638,7 +2673,16 @@
     },
     {
       "song_name": "河内音頭",
-      "aliases": [],
+      "aliases": [
+        "月乃家寿子(河内音頭)",
+        "松原光司(河内音頭)",
+        "松原慎之介(河内音頭)",
+        "生駒みづき (河内音頭)",
+        "生駒一久 河内音頭(一部)",
+        "生駒尚子(河内音頭)",
+        "終 山中一平",
+        "終 生駒竜也(河内音頭)"
+      ],
       "evidence_count": 106,
       "good_evidence_count": 106,
       "years": [
@@ -3305,7 +3349,9 @@
     },
     {
       "song_name": "マツケンサンバII",
-      "aliases": [],
+      "aliases": [
+        "終 マツケンサンバII"
+      ],
       "evidence_count": 85,
       "good_evidence_count": 85,
       "years": [
@@ -3359,7 +3405,9 @@
     },
     {
       "song_name": "常磐ディスコ港町",
-      "aliases": [],
+      "aliases": [
+        "常磐ディスコ港町(生歌)"
+      ],
       "evidence_count": 84,
       "good_evidence_count": 84,
       "years": [
@@ -3511,7 +3559,12 @@
     },
     {
       "song_name": "江州音頭",
-      "aliases": [],
+      "aliases": [
+        "大大和会(江州音頭)",
+        "大大和稔龍(江州音頭)",
+        "月乃家小菊(江州音頭)",
+        "終 江州音頭2"
+      ],
       "evidence_count": 83,
       "good_evidence_count": 83,
       "years": [
@@ -4350,7 +4403,9 @@
     },
     {
       "song_name": "僕の生まれは郡山",
-      "aliases": [],
+      "aliases": [
+        "僕の生まれは郡山(生歌)"
+      ],
       "evidence_count": 72,
       "good_evidence_count": 72,
       "years": [
@@ -4948,7 +5003,9 @@
     },
     {
       "song_name": "Love so sweet",
-      "aliases": [],
+      "aliases": [
+        "LOVE SO SWEET"
+      ],
       "evidence_count": 66,
       "good_evidence_count": 66,
       "years": [
@@ -6334,7 +6391,10 @@
     },
     {
       "song_name": "猫の子",
-      "aliases": [],
+      "aliases": [
+        "猫の子(白鳥)",
+        "猫の子(郡上)"
+      ],
       "evidence_count": 55,
       "good_evidence_count": 55,
       "years": [
@@ -6953,7 +7013,9 @@
     },
     {
       "song_name": "押せ押せ音頭",
-      "aliases": [],
+      "aliases": [
+        "終 押せ押せ音頭"
+      ],
       "evidence_count": 50,
       "good_evidence_count": 50,
       "years": [
@@ -7334,7 +7396,9 @@
     },
     {
       "song_name": "ソーラン節",
-      "aliases": [],
+      "aliases": [
+        "終 ソーラン節"
+      ],
       "evidence_count": 48,
       "good_evidence_count": 48,
       "years": [
@@ -7492,7 +7556,9 @@
     },
     {
       "song_name": "東京名物・人混み",
-      "aliases": [],
+      "aliases": [
+        "東京名物・人混み(生歌)"
+      ],
       "evidence_count": 48,
       "good_evidence_count": 48,
       "years": [
@@ -7998,7 +8064,9 @@
     },
     {
       "song_name": "いわきやっちき",
-      "aliases": [],
+      "aliases": [
+        "いわき やっちき"
+      ],
       "evidence_count": 42,
       "good_evidence_count": 42,
       "years": [
@@ -10534,7 +10602,9 @@
     },
     {
       "song_name": "まつさか",
-      "aliases": [],
+      "aliases": [
+        "終 まつさか"
+      ],
       "evidence_count": 36,
       "good_evidence_count": 36,
       "years": [
@@ -12101,7 +12171,9 @@
     },
     {
       "song_name": "Bling-Bang-Bang-Born",
-      "aliases": [],
+      "aliases": [
+        "終 Bling-Bang-Bang-Born"
+      ],
       "evidence_count": 31,
       "good_evidence_count": 31,
       "years": [
@@ -14770,7 +14842,9 @@
     },
     {
       "song_name": "七福神音頭",
-      "aliases": [],
+      "aliases": [
+        "音頭「七福神」"
+      ],
       "evidence_count": 26,
       "good_evidence_count": 26,
       "years": [
@@ -16062,7 +16136,9 @@
     },
     {
       "song_name": "銀座ときめき音頭",
-      "aliases": [],
+      "aliases": [
+        "終 銀座ときめき音頭"
+      ],
       "evidence_count": 23,
       "good_evidence_count": 23,
       "years": [
@@ -16547,7 +16623,9 @@
     },
     {
       "song_name": "福よ来い",
-      "aliases": [],
+      "aliases": [
+        "音頭「福よ来い」"
+      ],
       "evidence_count": 22,
       "good_evidence_count": 22,
       "years": [
@@ -16799,7 +16877,9 @@
     },
     {
       "song_name": "新浅草橋音頭",
-      "aliases": [],
+      "aliases": [
+        "新浅草橋音頭(生歌)"
+      ],
       "evidence_count": 21,
       "good_evidence_count": 21,
       "years": [
@@ -19714,7 +19794,9 @@
     },
     {
       "song_name": "EZ DO DANCE",
-      "aliases": [],
+      "aliases": [
+        "EZDODANCE"
+      ],
       "evidence_count": 16,
       "good_evidence_count": 16,
       "years": [
@@ -21930,7 +22012,9 @@
     },
     {
       "song_name": "真夏の果実",
-      "aliases": [],
+      "aliases": [
+        "終 真夏の果実"
+      ],
       "evidence_count": 14,
       "good_evidence_count": 14,
       "years": [
@@ -23457,7 +23541,9 @@
     },
     {
       "song_name": "また逢う日まで",
-      "aliases": [],
+      "aliases": [
+        "終 また逢う日まで"
+      ],
       "evidence_count": 10,
       "good_evidence_count": 10,
       "years": [
@@ -23847,7 +23933,9 @@
     },
     {
       "song_name": "川崎おどり",
-      "aliases": [],
+      "aliases": [
+        "終 川崎おどり"
+      ],
       "evidence_count": 10,
       "good_evidence_count": 10,
       "years": [
@@ -25558,7 +25646,9 @@
     },
     {
       "song_name": "ガット・トゥ・ビー・リアル",
-      "aliases": [],
+      "aliases": [
+        "終 ガット・トゥ・ビー・リアル"
+      ],
       "evidence_count": 8,
       "good_evidence_count": 8,
       "years": [
@@ -26365,7 +26455,9 @@
     },
     {
       "song_name": "オー・シャンゼリゼ",
-      "aliases": [],
+      "aliases": [
+        "終 オー・シャンゼリゼ"
+      ],
       "evidence_count": 7,
       "good_evidence_count": 7,
       "years": [
@@ -26506,7 +26598,9 @@
     },
     {
       "song_name": "トラック音頭",
-      "aliases": [],
+      "aliases": [
+        "終 トラック音頭"
+      ],
       "evidence_count": 7,
       "good_evidence_count": 7,
       "years": [
@@ -27165,7 +27259,9 @@
     },
     {
       "song_name": "秋田大黒舞",
-      "aliases": [],
+      "aliases": [
+        "終 秋田大黒舞"
+      ],
       "evidence_count": 6,
       "good_evidence_count": 6,
       "years": [
@@ -27924,7 +28020,9 @@
     },
     {
       "song_name": "東京スカイツリー音頭",
-      "aliases": [],
+      "aliases": [
+        "終 東京スカイツリー音頭"
+      ],
       "evidence_count": 5,
       "good_evidence_count": 5,
       "years": [
@@ -28910,7 +29008,9 @@
     },
     {
       "song_name": "夏祭り",
-      "aliases": [],
+      "aliases": [
+        "終 夏祭り"
+      ],
       "evidence_count": 4,
       "good_evidence_count": 4,
       "years": [
@@ -29445,7 +29545,9 @@
     },
     {
       "song_name": "YMCA",
-      "aliases": [],
+      "aliases": [
+        "Y.M.C.A."
+      ],
       "evidence_count": 3,
       "good_evidence_count": 3,
       "years": [
@@ -29707,7 +29809,9 @@
     },
     {
       "song_name": "ボンゴ天国",
-      "aliases": [],
+      "aliases": [
+        "終 ボンゴ天国〆太鼓"
+      ],
       "evidence_count": 3,
       "good_evidence_count": 3,
       "years": [
@@ -29927,7 +30031,9 @@
     },
     {
       "song_name": "俺ら炭鉱夫",
-      "aliases": [],
+      "aliases": [
+        "終 俺ら炭鉱夫"
+      ],
       "evidence_count": 3,
       "good_evidence_count": 3,
       "years": [
@@ -30014,7 +30120,9 @@
     },
     {
       "song_name": "妖怪盆踊り",
-      "aliases": [],
+      "aliases": [
+        "終 妖怪盆踊り"
+      ],
       "evidence_count": 3,
       "good_evidence_count": 3,
       "years": [
@@ -30624,7 +30732,9 @@
     },
     {
       "song_name": "電電音頭",
-      "aliases": [],
+      "aliases": [
+        "終 電電音頭"
+      ],
       "evidence_count": 3,
       "good_evidence_count": 3,
       "years": [
@@ -32229,7 +32339,9 @@
     },
     {
       "song_name": "男おけさ",
-      "aliases": [],
+      "aliases": [
+        "終 男おけさ~〆太鼓"
+      ],
       "evidence_count": 2,
       "good_evidence_count": 2,
       "years": [
@@ -32515,7 +32627,9 @@
     },
     {
       "song_name": "繁昌ぶし",
-      "aliases": [],
+      "aliases": [
+        "終 繁昌ぶし"
+      ],
       "evidence_count": 2,
       "good_evidence_count": 2,
       "years": [
@@ -33733,7 +33847,9 @@
     },
     {
       "song_name": "TOKIO",
-      "aliases": [],
+      "aliases": [
+        "終 TOKIO"
+      ],
       "evidence_count": 1,
       "good_evidence_count": 1,
       "years": [
@@ -34351,7 +34467,9 @@
     },
     {
       "song_name": "エビカニクス",
-      "aliases": [],
+      "aliases": [
+        "終 エビカニクス"
+      ],
       "evidence_count": 1,
       "good_evidence_count": 1,
       "years": [
@@ -36437,7 +36555,9 @@
     },
     {
       "song_name": "踊れ・どれ・ドラ ドラえもん音頭",
-      "aliases": [],
+      "aliases": [
+        "終 踊れ・どれ・ドラ ドラえもん音頭"
+      ],
       "evidence_count": 1,
       "good_evidence_count": 1,
       "years": [
@@ -37021,6 +37141,784 @@
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=hq9zb0hIWSI"
+      ]
+    },
+    {
+      "song_name": "APT.",
+      "aliases": [],
+      "evidence_count": 83,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 83
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 83
+      },
+      "speaker_count": 1,
+      "occurrence_count": 83,
+      "evidence_url_count": 4,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "APT. 2025年羽田フェスティバル2日目18 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "CHA-LA HEAD-CHA-LA 2025年羽田フェスティバル2日目22 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "Happiness(嵐)(無音) 赤坂冬おどり30",
+        "Love so sweet(嵐) 赤坂冬おどり11",
+        "「APT.」 第9回有明まつり盆踊り33"
+      ],
+      "sample_venues": [
+        "APT. 2025年羽田フェスティバル2日目18 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "CHA-LA HEAD-CHA-LA 2025年羽田フェスティバル2日目22 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "Happiness(嵐)(無音) 赤坂冬おどり30",
+        "Love so sweet(嵐) 赤坂冬おどり11",
+        "「APT.」 第9回有明まつり盆踊り33"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dYhZXz9OxL4",
+        "https://www.youtube.com/watch?v=cxpfcK05iaQ",
+        "https://www.youtube.com/watch?v=M-axiPz48ZE",
+        "https://www.youtube.com/watch?v=wauSFjYibGE"
+      ]
+    },
+    {
+      "song_name": "Livin' On A Prayer",
+      "aliases": [
+        "Livin’On A Prayer",
+        "終 Livin’OnAPrayer"
+      ],
+      "evidence_count": 13,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 13
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 13
+      },
+      "speaker_count": 1,
+      "occurrence_count": 13,
+      "evidence_url_count": 2,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【Lilac】(Mrs. GREEN APPLE) 第19回秋祭りinラゾーナ川崎盆踊12",
+        "【Livin' On A Prayer】(Bon Jovi) 第19回秋祭りinラゾーナ川崎盆踊り10"
+      ],
+      "sample_venues": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【Lilac】(Mrs. GREEN APPLE) 第19回秋祭りinラゾーナ川崎盆踊12",
+        "【Livin' On A Prayer】(Bon Jovi) 第19回秋祭りinラゾーナ川崎盆踊り10"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=k0Nva7YRAqM",
+        "https://www.youtube.com/watch?v=Ajb__XZF9LY"
+      ]
+    },
+    {
+      "song_name": "September",
+      "aliases": [],
+      "evidence_count": 1,
+      "good_evidence_count": 0,
+      "years": [
+        2026
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 1
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 1
+      },
+      "speaker_count": 1,
+      "occurrence_count": 1,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "横浜開港祭 BON ODORI"
+      ],
+      "sample_venues": [
+        "パシフィコ横浜プラザ広場"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cn-J6lcHzoY"
+      ]
+    },
+    {
+      "song_name": "どだればち・サンバ",
+      "aliases": [
+        "おどりはだり2ドダレバチサンバ",
+        "終 おどりはだり6ドダレバチサンバ"
+      ],
+      "evidence_count": 28,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 14
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 14
+      },
+      "speaker_count": 1,
+      "occurrence_count": 14,
+      "evidence_url_count": 2,
+      "status": "有効",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "2025年黒石よされ15 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "2025年黒石よされ17 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "2025年黒石よされ18 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "2025年黒石よされ19 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "どだればちサンバ 2025年黒石よされ16 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り"
+      ],
+      "sample_venues": [
+        "2025年黒石よされ15 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "2025年黒石よされ17 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "2025年黒石よされ18 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "2025年黒石よされ19 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り",
+        "どだればちサンバ 2025年黒石よされ16 おどりはだり 日本三大流し踊りの一つ「黒石よされ」生演奏盆踊り"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=GC8ndEpF7rE",
+        "https://www.youtube.com/watch?v=w_GPuM1OYZw"
+      ]
+    },
+    {
+      "song_name": "バハマ・ママ",
+      "aliases": [],
+      "evidence_count": 126,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 126
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 126
+      },
+      "speaker_count": 1,
+      "occurrence_count": 126,
+      "evidence_url_count": 8,
+      "status": "有効",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "365日の紙飛行機(AKB48) 2025年十条駅前納涼盆踊り大会5 十条駅北口駅前広場",
+        "APT. 2025年羽田フェスティバル2日目18 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "CHA-LA HEAD-CHA-LA 2025年羽田フェスティバル2日目22 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "Y.M.C.A. 2025年羽田フェスティバル2日目3 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り"
+      ],
+      "sample_venues": [
+        "365日の紙飛行機(AKB48) 2025年十条駅前納涼盆踊り大会5 十条駅北口駅前広場",
+        "APT. 2025年羽田フェスティバル2日目18 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "CHA-LA HEAD-CHA-LA 2025年羽田フェスティバル2日目22 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "Y.M.C.A. 2025年羽田フェスティバル2日目3 羽田エアポートガーデン #HanedaFestival #MEGAたんす屋羽田",
+        "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LbDAEb1-G6Y",
+        "https://www.youtube.com/watch?v=pCKbfsuTip8",
+        "https://www.youtube.com/watch?v=vfll5ftNlgo",
+        "https://www.youtube.com/watch?v=c4dQKOeVFys",
+        "https://www.youtube.com/watch?v=mFzG1u84RR4"
+      ]
+    },
+    {
+      "song_name": "白鳥おどり",
+      "aliases": [],
+      "evidence_count": 1,
+      "good_evidence_count": 0,
+      "years": [
+        2026
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 1
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 1
+      },
+      "speaker_count": 1,
+      "occurrence_count": 1,
+      "evidence_url_count": 0,
+      "status": "有効",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "白鳥おどりin池袋"
+      ],
+      "sample_venues": [
+        "中池袋公園"
+      ],
+      "youtube_urls": []
+    },
+    {
+      "song_name": "ultra soul",
+      "aliases": [
+        "終 ultra soul"
+      ],
+      "evidence_count": 3,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 3
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 3
+      },
+      "speaker_count": 1,
+      "occurrence_count": 3,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "sample_venues": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=uqlyRyAfJCU"
+      ]
+    },
+    {
+      "song_name": "メガ盆",
+      "aliases": [
+        "終 メガヒッツ盆踊り"
+      ],
+      "evidence_count": 6,
+      "good_evidence_count": 0,
+      "years": [
+        2025,
+        2026
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 5
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 5
+      },
+      "speaker_count": 2,
+      "occurrence_count": 5,
+      "evidence_url_count": 2,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【メガヒッツ盆踊り(メガ盆)】珍盤亭娯楽師匠 大和町八幡神社大盆踊り会2025年",
+        "ラジオ体操第一 大和町八幡神社大盆踊り会2025年",
+        "大和町八幡神社大盆踊り会2025年 中西レモン&にゃんとこ・ぽん「珍芸漫芸」",
+        "Min-Yoi's盆踊り"
+      ],
+      "sample_venues": [
+        "【メガヒッツ盆踊り(メガ盆)】珍盤亭娯楽師匠 大和町八幡神社大盆踊り会2025年",
+        "ラジオ体操第一 大和町八幡神社大盆踊り会2025年",
+        "大和町八幡神社大盆踊り会2025年 中西レモン&にゃんとこ・ぽん「珍芸漫芸」",
+        "日本民謡会館"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8A51yJ2hNZQ",
+        "https://www.youtube.com/watch?v=-46emh0_BSA"
+      ]
+    },
+    {
+      "song_name": "郡上おどり",
+      "aliases": [],
+      "evidence_count": 32,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 32
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 32
+      },
+      "speaker_count": 1,
+      "occurrence_count": 32,
+      "evidence_url_count": 1,
+      "status": "有効",
+      "public_ready": false,
+      "review_reason": "Master RDBの既存曲へ統合済み。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "かわさき 2025年郡上おどりin青山2日目10 秩父宮ラグビー場駐車場 東京都港区",
+        "かわさき 2025年郡上おどりin青山2日目2 秩父宮ラグビー場駐車場 東京都港区",
+        "かわさき 2025年郡上おどりin青山初日10 秩父宮ラグビー場駐車場",
+        "かわさき 2025年郡上おどりin青山初日14 秩父宮ラグビー場駐車場",
+        "かわさき 2025年郡上おどりin青山初日2 秩父宮ラグビー場駐車場"
+      ],
+      "sample_venues": [
+        "かわさき 2025年郡上おどりin青山2日目10 秩父宮ラグビー場駐車場 東京都港区",
+        "かわさき 2025年郡上おどりin青山2日目2 秩父宮ラグビー場駐車場 東京都港区",
+        "かわさき 2025年郡上おどりin青山初日10 秩父宮ラグビー場駐車場",
+        "かわさき 2025年郡上おどりin青山初日14 秩父宮ラグビー場駐車場",
+        "かわさき 2025年郡上おどりin青山初日2 秩父宮ラグビー場駐車場"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=SuT7DKYt6oQ"
+      ]
+    },
+    {
+      "song_name": "BLUE BLUR",
+      "aliases": [
+        "BLUE BLUR(Live)"
+      ],
+      "evidence_count": 1,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 1
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 1
+      },
+      "speaker_count": 1,
+      "occurrence_count": 1,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "お囃子~打ち上げ花火(浦田甚句~真室川音頭~相馬盆唄) ど田舎にしかた祭り5終 道の駅にしかた西側田んぼ"
+      ],
+      "sample_venues": [
+        "お囃子~打ち上げ花火(浦田甚句~真室川音頭~相馬盆唄) 令和7年ど田舎にしかた祭り5終 道の駅にしかた西側田んぼ"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=I42jODDC7Mk"
+      ]
+    },
+    {
+      "song_name": "ムーンライトステーション",
+      "aliases": [],
+      "evidence_count": 3,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 3
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 3
+      },
+      "speaker_count": 1,
+      "occurrence_count": 3,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "sample_venues": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=UBWK1tbACVg"
+      ]
+    },
+    {
+      "song_name": "ムーンライト伝説",
+      "aliases": [],
+      "evidence_count": 3,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 3
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 3
+      },
+      "speaker_count": 1,
+      "occurrence_count": 3,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "sample_venues": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=H7c7zY1KLbk"
+      ]
+    },
+    {
+      "song_name": "千本櫻",
+      "aliases": [],
+      "evidence_count": 3,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 3
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 3
+      },
+      "speaker_count": 1,
+      "occurrence_count": 3,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "sample_venues": [
+        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=DaxoPQIlPxE"
+      ]
+    },
+    {
+      "song_name": "泉州音頭",
+      "aliases": [
+        "瀧野家秀月(泉州音頭)"
+      ],
+      "evidence_count": 11,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 11
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 11
+      },
+      "speaker_count": 1,
+      "occurrence_count": 11,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "大大和会 江州音頭 2025年東大寺二月堂十七夜盆踊り10",
+        "大大和稔龍 江州音頭 2025年東大寺二月堂十七夜盆踊り9",
+        "月乃家寿子 河内音頭 2025年東大寺二月堂十七夜盆踊り5",
+        "月乃家小菊 江州音頭 2025年東大寺二月堂十七夜盆踊り2",
+        "松原慎之介 河内音頭 2025年東大寺二月堂十七夜盆踊り11"
+      ],
+      "sample_venues": [
+        "大大和会 江州音頭 2025年東大寺二月堂十七夜盆踊り10",
+        "大大和稔龍 江州音頭 2025年東大寺二月堂十七夜盆踊り9",
+        "月乃家寿子 河内音頭 2025年東大寺二月堂十七夜盆踊り5",
+        "月乃家小菊 江州音頭 2025年東大寺二月堂十七夜盆踊り2",
+        "松原慎之介 河内音頭 2025年東大寺二月堂十七夜盆踊り11"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tl8lmrSClEE"
+      ]
+    },
+    {
+      "song_name": "星屑の御堂筋",
+      "aliases": [
+        "生駒尚子(星屑の御堂筋)"
+      ],
+      "evidence_count": 8,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 8
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 8
+      },
+      "speaker_count": 1,
+      "occurrence_count": 8,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "大大和会 江州音頭 2025年東大寺二月堂十七夜盆踊り10",
+        "大大和稔龍 江州音頭 2025年東大寺二月堂十七夜盆踊り9",
+        "月乃家寿子 河内音頭 2025年東大寺二月堂十七夜盆踊り5",
+        "松原慎之介 河内音頭 2025年東大寺二月堂十七夜盆踊り11",
+        "生駒みづき 河内音頭 2025年東大寺二月堂十七夜盆踊り6"
+      ],
+      "sample_venues": [
+        "大大和会 江州音頭 2025年東大寺二月堂十七夜盆踊り10",
+        "大大和稔龍 江州音頭 2025年東大寺二月堂十七夜盆踊り9",
+        "月乃家寿子 河内音頭 2025年東大寺二月堂十七夜盆踊り5",
+        "松原慎之介 河内音頭 2025年東大寺二月堂十七夜盆踊り11",
+        "生駒みづき 河内音頭 2025年東大寺二月堂十七夜盆踊り6"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_RtW3aDANTE"
+      ]
+    },
+    {
+      "song_name": "初音節",
+      "aliases": [
+        "終 初音節2"
+      ],
+      "evidence_count": 1,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 1
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 1
+      },
+      "speaker_count": 1,
+      "occurrence_count": 1,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "この動画は収益化をしていません。"
+      ],
+      "sample_venues": [
+        "この動画は収益化をしていません。"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7YGNKssyk8M"
+      ]
+    },
+    {
+      "song_name": "チョイナ節",
+      "aliases": [
+        "終 津具「チョイナ節」"
+      ],
+      "evidence_count": 18,
+      "good_evidence_count": 0,
+      "years": [
+        2025
+      ],
+      "reliability_counts": {
+        "llm_reviewed_public_occurrence": 18
+      },
+      "source_counts": {
+        "event_song_occurrences_public": 18
+      },
+      "speaker_count": 1,
+      "occurrence_count": 18,
+      "evidence_url_count": 1,
+      "status": "要確認",
+      "public_ready": false,
+      "review_reason": "LLMレビュー済み新規曲候補。公開昇格は別レビュー。",
+      "source_label": "公開イベント曲目 / LLMレビュー",
+      "description": "盆踊り曲目のレビュー済み候補です。",
+      "bon_usage_rank": "要確認",
+      "bon_usage_score": 0,
+      "song_genre_key": "needs_research",
+      "song_genre": "要調査",
+      "genre_confidence": "低",
+      "genre_basis": "レビュー済み候補のため要調査",
+      "genre_review_status": "要調査",
+      "sample_events": [
+        "【ネオン音頭】(のらぼん) 月見夜会盆踊り11",
+        "【江州音頭】(中西レモン)(のらぼん) 月見夜会盆踊り14",
+        "えびすくい音頭(生歌 Min Yoi's) 月見夜会盆踊り6",
+        "じゃこっぺ踊り・伊勢海老祭(生歌 Min Yoi's) 月見夜会盆踊り8",
+        "のらぼん 上三坂ヤッチキ踊り 月見夜会盆踊り17"
+      ],
+      "sample_venues": [
+        "【ネオン音頭】(のらぼん) 月見夜会盆踊り11",
+        "【江州音頭】(中西レモン)(のらぼん) 月見夜会盆踊り14",
+        "えびすくい音頭(生歌 Min Yoi's) 月見夜会盆踊り6",
+        "じゃこっぺ踊り・伊勢海老祭(生歌 Min Yoi's) 月見夜会盆踊り8",
+        "のらぼん 上三坂ヤッチキ踊り 月見夜会盆踊り17"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LSkW19CoChk"
       ]
     }
   ]
