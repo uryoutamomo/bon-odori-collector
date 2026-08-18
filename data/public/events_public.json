@@ -29123,7 +29123,7 @@
     "source_urls": [],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "rule_predicted",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -29145,9 +29145,9 @@
       "2025-08-31",
       "2025-08-31"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "rule_predicted",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-31",
@@ -29169,18 +29169,10 @@
       ],
       "cautions": [],
       "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-30",
-        "date_end": "2026-08-30",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第5日曜を2026年へスライド",
-        "source_date": "2025-08-31",
-        "source_date_end": "2025-08-31",
-        "duration_days": 1
-      }
+      "has_rule_prediction": true,
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-31",
@@ -29189,23 +29181,42 @@
     "historical_reference_label": "2025-08-31実績・今年未確認",
     "historical_reference_confidence": "medium",
     "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-08-30",
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-08-29",
       "date_end": "2026-08-30",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第5日曜を2026年へスライド",
-      "source_date": "2025-08-31",
-      "source_date_end": "2025-08-31",
-      "duration_days": 1
+      "weekday_start": "土",
+      "weekday_end": "日",
+      "confidence": "high",
+      "score": 0.95,
+      "rule_type": "last_full_weekend",
+      "basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+      "evidence_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "evidence_count": 3,
+      "has_actual_observation": false,
+      "joint_probability": 0.95,
+      "probability_percent": 95,
+      "certainty_label": "ほぼ確実",
+      "certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
     },
-    "historical_slide_date": "2026-08-30",
-    "historical_slide_date_end": "2026-08-30",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第5日曜を2026年へスライド",
-    "predicted_date": "2026-08-30",
+    "predicted_date": "2026-08-29",
     "predicted_date_end": "2026-08-30",
-    "prediction_basis": "2025年実績の同月第5日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "prediction_basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+    "prediction_confidence": "high",
+    "prediction_evidence_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "prediction_probability": 0.95,
+    "prediction_probability_percent": 95,
+    "prediction_certainty_label": "ほぼ確実",
+    "prediction_certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
   },
   {
     "name": "木根川町会ふれあい盆踊り",
