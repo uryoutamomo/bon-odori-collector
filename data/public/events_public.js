@@ -1861,7 +1861,7 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "浜町公園いっぱいに櫓と提灯が広がる中央区最大の盆踊り。民謡歌手の生歌や子ども盆踊りタイムもある屈指の大規模大会。",
-    "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会 2025年8月22日のYouTube実績。2026年の公式曲目ではなく、過去実績に基づく予測根拠として追加。",
+    "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会",
     "source_urls": [
       {
         "label": "告知投稿あり",
@@ -8980,14 +8980,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "ended_2026",
+    "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
-    "public_status_label": "開催終了",
-    "public_note": "2026年開催終了: 2026-08-07〜2026-08-16",
-    "recurrence_label": "2026年開催終了",
-    "recurrence_score": 0.98,
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "2026年開催済み"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -9361,13 +9361,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
-        "name": "終 ガット・トゥ・ビー・リアル",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
         "name": "青い珊瑚礁",
         "confidence": "hint",
         "probability": 80,
@@ -9407,7 +9400,12 @@ const EVENTS = [
         "confidence": "hint",
         "probability": 57,
         "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis_label": "2025年実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
       },
       {
         "name": "ガールズ・ジャスト・ワナ・ハブ・ファン",
@@ -12479,14 +12477,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "ended_2026",
+    "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
-    "public_status_label": "開催終了",
-    "public_note": "2026年開催終了: 2026-08-08〜2026-08-16",
-    "recurrence_label": "2026年開催終了",
-    "recurrence_score": 0.98,
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-08〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "2026年開催済み"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -16278,6 +16276,30 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
+        "name": "津軽甚句",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
+      },
+      {
         "name": "牛深ハイヤ",
         "confidence": "confirmed",
         "probability": 95,
@@ -16317,7 +16339,12 @@ const EVENTS = [
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
-        "basis_label": "実測"
+        "basis_label": "実測",
+        "evidence_count": 0,
+        "speaker_count": 0,
+        "setlist_complete": false,
+        "prediction_reliability": [],
+        "evidence_urls": []
       },
       {
         "name": "老坂",
@@ -16504,20 +16531,6 @@ const EVENTS = [
       {
         "name": "池袋西口音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "津軽甚句",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_observed",
         "basis_label": "実測"
@@ -17796,13 +17809,6 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "特設会場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
         "name": "RPG",
         "confidence": "hint",
         "probability": 71,
@@ -17817,7 +17823,7 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "ダンシング・ヒーロー",
+        "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -19873,13 +19879,6 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "下北沢駅東口周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
         "name": "お嫁サンバ",
         "confidence": "hint",
         "probability": 48,
@@ -19981,7 +19980,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_reference",
+      "display_tier": "historical_slide",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-17"
@@ -20004,16 +20003,41 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": null
+      "slide": {
+        "date": "2026-08-16",
+        "date_end": "2026-08-16",
+        "method": "same_weekday",
+        "basis": "2025年実績の同月第3日曜を2026年へスライド",
+        "source_date": "2025-08-17",
+        "source_date_end": null,
+        "duration_days": 1
+      }
     },
-    "historical_display_tier": "historical_reference",
+    "historical_display_tier": "historical_slide",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-17"
     ],
     "historical_reference_label": "2025-08-17実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64
+    "historical_reference_score": 0.64,
+    "historical_slide": {
+      "date": "2026-08-16",
+      "date_end": "2026-08-16",
+      "method": "same_weekday",
+      "basis": "2025年実績の同月第3日曜を2026年へスライド",
+      "source_date": "2025-08-17",
+      "source_date_end": null,
+      "duration_days": 1
+    },
+    "historical_slide_date": "2026-08-16",
+    "historical_slide_date_end": "2026-08-16",
+    "historical_slide_method": "same_weekday",
+    "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
+    "predicted_date": "2026-08-16",
+    "predicted_date_end": "2026-08-16",
+    "prediction_basis": "2025年実績の同月第3日曜を2026年へスライド",
+    "prediction_confidence": "medium"
   },
   {
     "name": "玉川町会盆おどり大会",
@@ -20484,7 +20508,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_reference",
+      "display_tier": "historical_slide",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-17"
@@ -20505,16 +20529,41 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": null
+      "slide": {
+        "date": "2026-08-16",
+        "date_end": "2026-08-16",
+        "method": "same_weekday",
+        "basis": "2025年実績の同月第3日曜を2026年へスライド",
+        "source_date": "2025-08-17",
+        "source_date_end": null,
+        "duration_days": 1
+      }
     },
-    "historical_display_tier": "historical_reference",
+    "historical_display_tier": "historical_slide",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-17"
     ],
     "historical_reference_label": "2025-08-17実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.56
+    "historical_reference_score": 0.56,
+    "historical_slide": {
+      "date": "2026-08-16",
+      "date_end": "2026-08-16",
+      "method": "same_weekday",
+      "basis": "2025年実績の同月第3日曜を2026年へスライド",
+      "source_date": "2025-08-17",
+      "source_date_end": null,
+      "duration_days": 1
+    },
+    "historical_slide_date": "2026-08-16",
+    "historical_slide_date_end": "2026-08-16",
+    "historical_slide_method": "same_weekday",
+    "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
+    "predicted_date": "2026-08-16",
+    "predicted_date_end": "2026-08-16",
+    "prediction_basis": "2025年実績の同月第3日曜を2026年へスライド",
+    "prediction_confidence": "medium"
   },
   {
     "name": "大蔵本村睦会 「盆踊り大会」",
@@ -22879,7 +22928,7 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
-        "name": "Y.M.C.A.",
+        "name": "YMCA",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -23010,13 +23059,6 @@ const EVENTS = [
       }
     ],
     "songs": [
-      {
-        "name": "阿波踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
@@ -25249,14 +25291,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "ended_2026",
+    "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
-    "public_status_label": "開催終了",
-    "public_note": "2026年開催終了: 2026-08-15〜2026-08-16",
-    "recurrence_label": "2026年開催終了",
-    "recurrence_score": 0.98,
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "2026年開催済み"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29068,43 +29110,7 @@ const EVENTS = [
       "2025-08-31",
       "2025-08-31"
     ],
-    "date_prediction": {
-      "display_tier": "rule_predicted",
-      "target_year": 2026,
-      "date": "2026-08-29",
-      "date_end": "2026-08-30",
-      "weekday_start": "土",
-      "weekday_end": "日",
-      "confidence": "high",
-      "score": 0.95,
-      "rule_type": "last_full_weekend",
-      "basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
-      "evidence_years": [
-        2023,
-        2024,
-        2025
-      ],
-      "evidence_count": 3,
-      "has_actual_observation": false,
-      "joint_probability": 0.95,
-      "probability_percent": 95,
-      "certainty_label": "ほぼ確実",
-      "certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
-    },
     "display_tier": "rule_predicted",
-    "predicted_date": "2026-08-29",
-    "predicted_date_end": "2026-08-30",
-    "prediction_basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
-    "prediction_confidence": "high",
-    "prediction_evidence_years": [
-      2023,
-      2024,
-      2025
-    ],
-    "prediction_probability": 0.95,
-    "prediction_probability_percent": 95,
-    "prediction_certainty_label": "ほぼ確実",
-    "prediction_certainty_meaning": "このイベントが、この予測日に開催される確からしさ",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -29139,7 +29145,43 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-08-31実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68
+    "historical_reference_score": 0.68,
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-08-29",
+      "date_end": "2026-08-30",
+      "weekday_start": "土",
+      "weekday_end": "日",
+      "confidence": "high",
+      "score": 0.95,
+      "rule_type": "last_full_weekend",
+      "basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+      "evidence_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "evidence_count": 3,
+      "has_actual_observation": false,
+      "joint_probability": 0.95,
+      "probability_percent": 95,
+      "certainty_label": "ほぼ確実",
+      "certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
+    },
+    "predicted_date": "2026-08-29",
+    "predicted_date_end": "2026-08-30",
+    "prediction_basis": "主催者の明示規則、2023〜2025年の3年連続一致、当年の地域団体情報が一致",
+    "prediction_confidence": "high",
+    "prediction_evidence_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "prediction_probability": 0.95,
+    "prediction_probability_percent": 95,
+    "prediction_certainty_label": "ほぼ確実",
+    "prediction_certainty_meaning": "このイベントが、この予測日に開催される確からしさ"
   },
   {
     "name": "木根川町会ふれあい盆踊り",
@@ -29504,14 +29546,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "ended_2026",
+    "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
-    "public_status_label": "開催終了",
-    "public_note": "2026年開催終了: 2026-08-15〜2026-08-16",
-    "recurrence_label": "2026年開催終了",
-    "recurrence_score": 0.98,
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "2026年開催済み"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30408,14 +30450,14 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "ended_2026",
+    "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
-    "public_status_label": "開催終了",
-    "public_note": "2026年開催終了: 2026-08-15〜2026-08-16",
-    "recurrence_label": "2026年開催終了",
-    "recurrence_score": 0.98,
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-15〜2026-08-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "2026年開催済み"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
