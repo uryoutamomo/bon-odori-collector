@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T14:25:36Z",
-  "generated_for_commit": "916de7d",
+  "generated_at": "2026-08-18T14:32:54Z",
+  "generated_for_commit": "2531a84",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -1353,7 +1353,7 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 7,
+        "commits_since": 8,
         "files_changed_since": 3
       },
       "version": "1.2",
