@@ -7,6 +7,7 @@ owns:
   - review_inbox_adapters/**
   - data/review_backlog_decision_overlay.json
   - data/review_backlog_youtube_decision_overlay.json
+  - data/review_backlog_event_hold_llm_research.json
   - review_console/**
   - review_console_ops/**
   - scripts/promote_change_requests_for_review.py
@@ -52,6 +53,7 @@ invariants:
   - INV-RVW-017
   - INV-RVW-018
   - INV-RVW-019
+  - INV-RVW-020
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -229,10 +231,13 @@ updated_for: 419cd04
 ### INV-RVW-016 名指しされた対象は判定者に見せ、材料の無い候補を「新規」として人へ回さない
 
 - **内容**: レポートが開催回IDを名指ししている候補（`explicit_occurrence_id`。公式お知らせの `confirm_existing` 由来）は、名前を持たず検索に掛からなくても、その開催回と会場を候補集合の先頭に入れる（統合済み `lifecycle_status='merged'` は除く）。あわせて、同一性が `"none"` でも**新規を作る材料（イベント名／会場名）が無ければ** `new_series_requires_confirmation` / `new_venue_requires_confirmation` ではなく `insufficient_evidence` を理由にする。
+  ただし既存開催回を選択済みで、新しい会場名の提案も無い場合は、その開催回が持つ会場で対象が一意なので、
+  `venue_match="none"` だけを理由に人へ回さない。
 - **なぜ**: `confirm_existing` の候補は開催回IDだけを持ち、名前も年も会場名も持たないことが多い（2026-08-15 の実データで112件中55件）。候補集合が空になるため判定者は `"none"` としか答えられず、機械はそれを「新規です」と解釈して人の確認へ回す。ところが**新規を作る材料が無いので、裁定しても何も生まれない**。実際、この日の保留56件は全件が名前も会場名も空で、裁定画面を開いても人は何も判断できなかった。
 - **破れたときの症状**: 対象が分かっているのに「どれとも違う」と判断される。名前も会場も空の項目が裁定待ちに積み上がり、人が見ても処理できない。
 - **守っているコード**: `review_inbox_adapters/build_event_inbox_candidates.py` の `search_targets()`、`apply_judgment_results.py` の `_identity_hold_reason()`
-- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_named_occurrence_is_offered_even_without_a_name`、`tests/test_e2_identity_judgment.py::test_a_merged_occurrence_is_not_offered`、`tests/test_e2_identity_judgment.py::test_no_name_yields_insufficient_evidence_not_new_series`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_named_occurrence_is_offered_even_without_a_name`、`tests/test_e2_identity_judgment.py::test_a_merged_occurrence_is_not_offered`、`tests/test_e2_identity_judgment.py::test_no_name_yields_insufficient_evidence_not_new_series`、
+  `tests/test_e2_identity_judgment.py::test_selected_occurrence_without_a_new_venue_needs_no_user_hold`
 
 ### INV-RVW-017 X曲同定の判断取込は正本factを書かず、見せた候補全体を凍結する
 
@@ -292,6 +297,26 @@ updated_for: 419cd04
   `tests/test_review_inbox_youtube_adapter.py::ReviewInboxYouTubeAdapterTest::test_frozen_agent_decision_filters_only_the_exact_youtube_payload`、
   `tests/test_review_console.py::ReviewConsoleTests::test_exact_overlay_decision_is_attributed_to_agent_and_stale_hash_stays_open`
 
+### INV-RVW-020 既存開催回へ完全一致した古い人待ちholdは、内容が変わらない間だけ画面から外す
+
+- **内容**: `data/review_backlog_event_hold_llm_research.json` に凍結した重複判断は、hold ID、inbox ID、
+  source payload hash、prior agent decision ID、元タイトル、明示された開催回ID、系列ID、会場ID、開始日が
+  現行DBとすべて一致するときだけ、裁定タブの現在集合から外す。prior agentの回答も
+  `occurrence_match` / `series_match` が同じ対象で `venue_match="none"` だったこと、候補payloadの
+  `explicit_occurrence_id` / `resolved_target` が同じ開催回を指すことまで照合する。どれか1つでも変われば
+  fail-closedで人待ちへ再表示する。この投影はhold/queue/decision台帳と正本factを変更しない。
+- **なぜ**: 2026-08-18の監査では人待ち48件すべてが、既存開催回と系列を正しく選択済みなのに、
+  会場候補が空だったため `venue_match="none"` となり `insufficient_evidence` holdへ落ちていた。
+  47件は名称・会場・開始日まで既存published occurrenceと完全一致し、残る1件も明示開催回ID・名称・会場が一致した。
+  人へ採否を尋ねても新しい情報は得られず、同じ対象を二重に確認するだけだった。
+- **破れたときの症状**: 既存イベントのdetail修正48件が人の採否待ちとして残る。逆に、開催回や元候補が
+  更新された後も古いLLM判断でholdが隠れる。
+- **守っているコード**: `review_inbox_adapters/event_hold_decision_overlay.py`、
+  `review_console/data.py` の `load_adjudication_holds()`、
+  `review_inbox_adapters/apply_judgment_results.py` の `_identity_hold_reason()`
+- **守っているテスト**: `tests/test_judgment_j0_adjudication.py::JudgmentJ0AdjudicationTest::test_06c_exact_llm_duplicate_overlay_removes_only_the_matching_hold`、
+  `tests/test_e2_identity_judgment.py::MissingMaterialTest::test_selected_occurrence_without_a_new_venue_needs_no_user_hold`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -313,6 +338,9 @@ E0 が作った `status='candidate'` を `build_judgment_packets.py` が claim �
 ### J0-adjudication の user 裁定レーン
 
 agent が `awaiting_user` hold を開いた候補だけを、同じレビューコンソール（`http://127.0.0.1:8751/` の「裁定」タブ、ショートカット `b`）で人が判断する。画面操作は `data/review_console/adjudications.json` に記録するだけで、判断の台帳は動かさない（唯一の例外は `review_claim_ledger` の作業中リース行）。反映は `apply_user_adjudications.py --apply` の確認フレーズ付きCLIに限定し、それを呼ぶHTTPパスは置かない。反映時はholdの候補集合hash、期限、allowed action、対象IDが候補集合の内側かを再照合し、`build_user_decision` と既存 `judgment_ledger_writer.write_decision` を通す。失敗した記録は消さず `invalidated` と理由を残し、holdは open のままなので裁き直せる。J0-read同様、canonical fact表と `review_inbox_items.status` は変更しない。
+
+既存開催回への完全一致を別途凍結できた古いholdは、INV-RVW-020の全項目が一致する間だけ裁定タブから除外する。
+これはDB上のholdを閉じる操作ではなく、人が今判断すべき集合の投影である。
 
 **裁定で「採用」してもイベントは1件も増えない。** 記録が台帳へ入るだけで、正本factへの反映はE2a以降である。
 

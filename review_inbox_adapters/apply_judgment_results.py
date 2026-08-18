@@ -43,6 +43,12 @@ def _identity_hold_reason(payload,proposal):
  if payload['series_match']==IDENTITY_MATCH_NONE:
   return NEW_SERIES_REASON if (proposal or {}).get('event_name_hint') else NO_MATERIAL_REASON
  if payload['venue_match']==IDENTITY_MATCH_NONE:
+  # A selected existing occurrence already fixes its canonical venue.  When
+  # the proposal contains no new venue, `none` cannot create or overwrite a
+  # venue and therefore is not a question for the user lane.  Forty-eight
+  # detail-cleanup candidates were previously stranded by this exact shape.
+  if payload['occurrence_match']!=IDENTITY_MATCH_NONE and not ((proposal or {}).get('venue') or {}).get('name'):
+   return None
   return NEW_VENUE_REASON if ((proposal or {}).get('venue') or {}).get('name') else NO_MATERIAL_REASON
  return None
 def _migrate(c):migrate_local_judgment_contract(c);migrate_event_inbox_candidate(c);migrate_review_claim_ledger(c)

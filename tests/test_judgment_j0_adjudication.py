@@ -231,6 +231,52 @@ class JudgmentJ0AdjudicationTest(unittest.TestCase):
                 console_data.claim_adjudication_hold("hold-x", "uchida", db_path=missing)
             self.assertFalse(missing.exists())
 
+    def test_06c_exact_llm_duplicate_overlay_removes_only_the_matching_hold(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp); db = self._db(root)
+            hold = self._open_hold(db, root, reason_code="insufficient_evidence")
+            stamp = _now().isoformat()
+            title = "試験盆踊り（試験公園／2099-08-01）"
+            conn = connect_existing(db)
+            conn.execute("INSERT INTO venues (venue_id,origin,canonical_name,normalized_name,area,address,review_status,created_at,updated_at) VALUES ('ven_existing','curated','試験公園','試験公園','','','active',?,?)", (stamp, stamp))
+            conn.execute("INSERT INTO event_series (series_id,origin,series_key,canonical_name,normalized_name,usual_venue_id,status,created_at,updated_at) VALUES ('ser_existing','curated','試験盆踊り','試験盆踊り','試験盆踊り','ven_existing','active',?,?)", (stamp, stamp))
+            conn.execute("INSERT INTO event_occurrences (occurrence_id,origin,series_id,event_year,occurrence_sequence,display_name,venue_id,date_start,date_status,lifecycle_status,created_at,updated_at) VALUES ('occ_existing','curated','ser_existing',2099,1,'試験盆踊り','ven_existing','2099-08-01','confirmed','published',?,?)", (stamp, stamp))
+            conn.execute(
+                "UPDATE review_inbox_items SET title=?,event_name='試験盆踊り',venue='試験公園',event_year=2099,payload_json=? WHERE inbox_id=?",
+                (title, json.dumps({"proposal": {"explicit_occurrence_id": "occ_existing"}, "resolved_target": {"occurrence_id": "occ_existing"}}), hold["inbox_id"]),
+            )
+            conn.execute(
+                "UPDATE canonical_decision_ledger SET payload_json=? WHERE decision_id=?",
+                (json.dumps({"occurrence_match": "occ_existing", "series_match": "ser_existing", "venue_match": "none"}), hold["prior_agent_attempt_id"]),
+            )
+            conn.commit(); conn.close()
+            decision = {
+                "hold_id": hold["hold_id"], "inbox_id": hold["inbox_id"], "title": title,
+                "classification": "duplicate_or_alias", "confidence": "high", "recommended_action": "merge",
+                "reason_detail": "既存開催回と一致", "source_payload_hash": HASH,
+                "prior_agent_attempt_id": hold["prior_agent_attempt_id"],
+                "duplicate_target_occurrence_id": "occ_existing", "target_series_id": "ser_existing",
+                "target_venue_id": "ven_existing", "target_date_start": "2099-08-01",
+                "checked_at": stamp,
+            }
+            overlay = root / "hold-overlay.json"
+            overlay.write_text(json.dumps({
+                "schema_version": 1, "generated_by": "おと（Codex）/Terra",
+                "generated_at": stamp, "decisions": [decision],
+            }, ensure_ascii=False))
+
+            self.assertEqual(self._holds(db, root, decision_overlay_path=overlay), [])
+            audited = self._holds(db, root, decision_overlay_path=overlay, include_auto_resolved=True)
+            self.assertEqual(audited[0]["auto_resolution"]["target_occurrence_id"], "occ_existing")
+            self.assertFalse(audited[0]["actionable"])
+
+            decision["target_date_start"] = "2099-08-02"
+            overlay.write_text(json.dumps({
+                "schema_version": 1, "generated_by": "おと（Codex）/Terra",
+                "generated_at": stamp, "decisions": [decision],
+            }, ensure_ascii=False))
+            self.assertEqual(len(self._holds(db, root, decision_overlay_path=overlay)), 1)
+
     # -------------------------------------------------------- 裁定の記録 7-10
     def test_07_recording_a_decision_does_not_touch_the_master_rdb(self):
         with tempfile.TemporaryDirectory() as temp:
