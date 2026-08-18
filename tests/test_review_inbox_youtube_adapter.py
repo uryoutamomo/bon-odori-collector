@@ -1,4 +1,6 @@
 import copy
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -140,6 +142,42 @@ class ReviewInboxYouTubeAdapterTest(unittest.TestCase):
         duplicate = {**first, "video_url": "https://www.youtube.com/watch?v=duplicate", "title": "Two"}
         with self.assertRaisesRegex(ValueError, "duplicate stable ids"):
             adapt_source_payload(YouTubeActiveVideoAdapter(), {"rows": [first, duplicate]})
+
+    def test_frozen_agent_decision_filters_only_the_exact_youtube_payload(self):
+        baseline = build_snapshot(
+            FIXTURE,
+            known_song_terms=KNOWN_SONGS,
+            decision_overlay_path=None,
+        )
+        item = baseline["items"][1]
+        with tempfile.TemporaryDirectory() as tmp:
+            overlay = Path(tmp) / "youtube-overlay.json"
+            overlay.write_text(
+                json.dumps({
+                    "schema_version": 1,
+                    "decisions": [{
+                        "source_id": item["source_id"],
+                        "source_key": item["source_key"],
+                        "inbox_id": item["inbox_id"],
+                        "source_payload_hash": item_payload_hash(item),
+                        "decision": "採用",
+                        "actor_type": "agent",
+                        "actor_id": "おと（Codex）/Terra",
+                        "decided_at": "2026-08-18T12:31:38+09:00",
+                        "reason_detail": "曲名と会場の対応が明示される。",
+                    }],
+                }, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            decided = build_snapshot(
+                FIXTURE,
+                known_song_terms=KNOWN_SONGS,
+                decision_overlay_path=overlay,
+            )
+
+        self.assertEqual(decided["item_count"], baseline["item_count"] - 1)
+        self.assertEqual(decided["decision_overlay"]["applied_count"], 1)
+        self.assertNotIn(item["inbox_id"], {row["inbox_id"] for row in decided["items"]})
 
 
 if __name__ == "__main__":

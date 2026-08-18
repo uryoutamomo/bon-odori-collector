@@ -38,6 +38,7 @@ STAGE_RESULT_PATH = STAGED_DIR / "stage_apply_result.json"
 STAGE_ACK_PATH = STAGED_DIR / "stage_apply_ack.json"
 SONG_MASTER_PATH = DATA_DIR / "youtube_song_master.json"
 ADJUDICATIONS_PATH = CONSOLE_DIR / "adjudications.json"
+EVENT_HOLD_DECISION_OVERLAY_PATH = DATA_DIR / "review_backlog_event_hold_llm_research.json"
 ADJUDICATION_COMMAND = 'python3 review_inbox_adapters/apply_user_adjudications.py --apply --confirm "APPLY USER ADJUDICATIONS" --actor-id uchida'
 
 _INVENTORY_CACHE: dict[tuple[str, str, str], dict[str, Any]] = {}
@@ -47,6 +48,10 @@ _SONG_TERM_CACHE: dict[str, tuple[tuple[str, int], dict[str, str]]] = {}
 _REVIEW_INBOX_SOURCE_PRESENCE_CACHE: dict[
     str,
     tuple[tuple[tuple[str, int], ...], dict[str, frozenset[str]]],
+] = {}
+_REVIEW_DECISION_OVERLAY_CACHE: dict[
+    str,
+    tuple[tuple[tuple[str, int], ...], dict[tuple[str, str], dict[str, Any]]],
 ] = {}
 
 GENERIC_SONG_TERMS = {
@@ -692,10 +697,22 @@ def _hold_row(conn, hold_id: str):
     return dict(row) if row else None
 
 
-def load_adjudication_holds(db_path: Path | None = None, packets_dir: Path = DATA_DIR / "judgment_packets") -> list[dict[str, Any]]:
+def load_adjudication_holds(
+    db_path: Path | None = None,
+    packets_dir: Path = DATA_DIR / "judgment_packets",
+    decision_overlay_path: Path | None = EVENT_HOLD_DECISION_OVERLAY_PATH,
+    include_auto_resolved: bool = False,
+) -> list[dict[str, Any]]:
+    from review_inbox_adapters.event_hold_decision_overlay import (
+        exact_event_hold_resolution,
+        load_event_hold_overlay,
+        validated_event_hold_index,
+    )
+
     now = datetime.now(timezone.utc)
     if not _adjudication_db(db_path).exists():
         return []
+    overlay_index = validated_event_hold_index(load_event_hold_overlay(decision_overlay_path))
     with _adjudication_connect(db_path) as conn:
         conn.row_factory = sqlite3.Row
         # 本番 master RDB へは J0 の migration をまだ当てていない。台帳が無い間に
@@ -705,16 +722,40 @@ def load_adjudication_holds(db_path: Path | None = None, packets_dir: Path = DAT
             return []
         rows = conn.execute("""SELECT h.*, c.claimed_by, c.claim_kind, c.expires_at AS claim_expires,
           i.title, i.event_name, i.venue, i.event_year, i.source_url,
-          d.packet_id AS prior_packet_id, d.payload_json AS prior_payload_json
+          i.source_payload_hash AS inbox_source_payload_hash,
+          i.payload_json AS inbox_payload_json,
+          d.packet_id AS prior_packet_id, d.payload_json AS prior_payload_json,
+          d.source_payload_hash AS decision_source_payload_hash
           FROM review_hold_ledger h
           LEFT JOIN review_claim_ledger c ON c.inbox_id=h.inbox_id
           LEFT JOIN review_inbox_items i ON i.inbox_id=h.inbox_id
           LEFT JOIN canonical_decision_ledger d ON d.decision_id=h.prior_agent_attempt_id
           WHERE h.status='open' AND h.hold_mode='awaiting_user'
           ORDER BY COALESCE(h.expires_at, '9999-12-31T00:00:00+00:00'), h.opened_at""").fetchall()
+        target_ids = sorted({
+            row["duplicate_target_occurrence_id"]
+            for row in overlay_index.values()
+        })
+        occurrences: dict[str, dict[str, Any]] = {}
+        if target_ids:
+            placeholders = ",".join("?" for _ in target_ids)
+            current_rows = conn.execute(f"""
+                SELECT o.occurrence_id, o.series_id, o.venue_id, o.date_start,
+                       o.display_name, o.event_year, v.canonical_name AS venue_name
+                FROM event_occurrences o
+                LEFT JOIN venues v ON v.venue_id=o.venue_id
+                WHERE o.occurrence_id IN ({placeholders})
+            """, target_ids).fetchall()
+            occurrences = {row["occurrence_id"]: dict(row) for row in current_rows}
     out=[]
     for source in rows:
-        row=dict(source); row["allowed_actions"]=_parse_json(row["allowed_actions"], []); row["candidate_ids"]=_parse_json(row["candidate_ids"], [])
+        row=dict(source)
+        decision = overlay_index.get(row["hold_id"])
+        target = occurrences.get(decision["duplicate_target_occurrence_id"]) if decision else None
+        auto_resolution = exact_event_hold_resolution(row, target, decision)
+        if auto_resolution and not include_auto_resolved:
+            continue
+        row["allowed_actions"]=_parse_json(row["allowed_actions"], []); row["candidate_ids"]=_parse_json(row["candidate_ids"], [])
         expires = row.get("expires_at")
         expired = bool(expires and datetime.fromisoformat(expires.replace("Z", "+00:00")) <= now)
         claim_other = row.get("claim_kind") == "user" and row.get("claim_expires") and datetime.fromisoformat(row["claim_expires"].replace("Z", "+00:00")) > now
@@ -724,8 +765,9 @@ def load_adjudication_holds(db_path: Path | None = None, packets_dir: Path = DAT
                     "expires_in_days": remaining,
                     "target_required": bool(row["candidate_ids"]),
                     "batch_eligible": not row["candidate_ids"],
-                    "actionable": not expired and not claim_other and packet is not None,
-                    "action_disabled_reason": "期限切れ" if expired else ("他の画面で裁定中" if claim_other else ("packet が見つからないため裁定できません" if packet is None else None)),
+                    "actionable": not auto_resolution and not expired and not claim_other and packet is not None,
+                    "action_disabled_reason": "既存開催回に統合済み" if auto_resolution else ("期限切れ" if expired else ("他の画面で裁定中" if claim_other else ("packet が見つからないため裁定できません" if packet is None else None))),
+                    "auto_resolution": auto_resolution,
                     "agent_reason_detail": _parse_json(row.get("prior_payload_json"), {}).get("reason_detail"),
                     "proposal": packet.get("proposal") if packet else None, "targets": packet.get("targets") if packet else None})
         out.append(row)
@@ -1484,10 +1526,11 @@ def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[
         except ValueError:
             continue
         inputs.append((source_id, root / relative_path))
+    decision_overlay_path = root / "data/review_backlog_decision_overlay.json"
     stamp = tuple(
         (str(path), path.stat().st_mtime_ns if path.exists() else -1)
         for _source_id, path in inputs
-    )
+    ) + ((str(decision_overlay_path), decision_overlay_path.stat().st_mtime_ns if decision_overlay_path.exists() else -1),)
     cache_key = str(root.resolve())
     cached = _REVIEW_INBOX_SOURCE_PRESENCE_CACHE.get(cache_key)
     if cached and cached[0] == stamp:
@@ -1498,7 +1541,11 @@ def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[
         if not path.exists():
             continue
         try:
-            snapshot = build_snapshot(source_id, path)
+            snapshot = build_snapshot(
+                source_id,
+                path,
+                decision_overlay_path=decision_overlay_path,
+            )
         except (OSError, TypeError, ValueError):
             # Fail open: an unreadable/incomplete source must not hide inbox work.
             continue
@@ -1513,6 +1560,67 @@ def current_complete_source_inbox_ids(root: Path = ROOT) -> dict[str, frozenset[
         current[source_id] = frozenset(ids)
     _REVIEW_INBOX_SOURCE_PRESENCE_CACHE[cache_key] = (stamp, current)
     return current
+
+
+def current_decision_overlay_index(root: Path = ROOT) -> dict[tuple[str, str], dict[str, Any]]:
+    """Load validated frozen decisions without treating source absence as proof."""
+    from review_inbox_adapters.backlog_decision_overlay import (
+        load_overlay,
+        validated_decision_index,
+    )
+
+    paths = (
+        root / "data/review_backlog_decision_overlay.json",
+        root / "data/review_backlog_youtube_decision_overlay.json",
+    )
+    stamp = tuple(
+        (str(path), path.stat().st_mtime_ns if path.exists() else -1)
+        for path in paths
+    )
+    cache_key = str(root.resolve())
+    cached = _REVIEW_DECISION_OVERLAY_CACHE.get(cache_key)
+    if cached and cached[0] == stamp:
+        return cached[1]
+
+    indexed: dict[tuple[str, str], dict[str, Any]] = {}
+    for path in paths:
+        overlay = load_overlay(path)
+        if overlay is None:
+            continue
+        for key, decision in validated_decision_index(overlay).items():
+            if key in indexed:
+                raise ValueError(f"duplicate frozen decision across overlays: {key!r}")
+            indexed[key] = decision
+    _REVIEW_DECISION_OVERLAY_CACHE[cache_key] = (stamp, indexed)
+    return indexed
+
+
+def decision_overlay_auto_resolution(
+    row: dict[str, Any],
+    root: Path = ROOT,
+) -> dict[str, str] | None:
+    """Close only the exact DB payload frozen by a human/agent decision."""
+    source_id = as_text(row.get("source_id"))
+    source_key = as_text(row.get("source_key"))
+    inbox_id = as_text(row.get("inbox_id"))
+    payload_hash = as_text(row.get("source_payload_hash"))
+    if not all((source_id, source_key, inbox_id, payload_hash)):
+        return None
+    decision = current_decision_overlay_index(root).get((source_id, source_key))
+    if not decision:
+        return None
+    if decision["inbox_id"] != inbox_id or decision["source_payload_hash"] != payload_hash:
+        return None
+    is_agent = decision["actor_type"] == "agent"
+    return {
+        "decision": "auto_frozen_review_decision",
+        "label": "LLM判断済み" if is_agent else "既存判断済み",
+        "reason": as_text(decision["reason_detail"]),
+        "recorded_decision": as_text(decision["decision"]),
+        "actor_type": as_text(decision["actor_type"]),
+        "actor_id": as_text(decision["actor_id"]),
+        "decided_at": as_text(decision["decided_at"]),
+    }
 
 
 def source_snapshot_auto_resolution(
@@ -1623,7 +1731,11 @@ def auto_source_resolution(
     if source.id == "registered_event_investigation":
         return registered_auto_resolution(row, historical_refs)
     if source.id == "review_inbox":
-        return source_snapshot_auto_resolution(row, root) or x_gap_public_auto_resolution(row, root)
+        return (
+            decision_overlay_auto_resolution(row, root)
+            or source_snapshot_auto_resolution(row, root)
+            or x_gap_public_auto_resolution(row, root)
+        )
     return None
 
 

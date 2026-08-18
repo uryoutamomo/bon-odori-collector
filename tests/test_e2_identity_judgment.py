@@ -460,12 +460,13 @@ class MissingMaterialTest(unittest.TestCase):
             row = self._hold_reason(Path(temp), {"occurrence_match": NONE, "series_match": NONE, "venue_match": NONE})
             self.assertEqual(row[0], "insufficient_evidence")
 
-    def test_no_venue_name_yields_insufficient_evidence_not_new_venue(self):
+    def test_selected_occurrence_without_a_new_venue_needs_no_user_hold(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp); db = _seed_confirm_existing(root); packet = _packet(root, db)
             identity = _identity(packet)
-            _report, args = _apply(root, packet, {**identity, "venue_match": NONE})
-            self.assertEqual(sqlite3.connect(args.out_db).execute("SELECT reason_code FROM review_hold_ledger").fetchone()[0], "insufficient_evidence")
+            report, args = _apply(root, packet, {**identity, "venue_match": NONE})
+            self.assertEqual((report["accepted"], report["held_for_user"]), (1, 0))
+            self.assertEqual(sqlite3.connect(args.out_db).execute("SELECT COUNT(*) FROM review_hold_ledger").fetchone()[0], 0)
 
     def test_a_named_proposal_still_reports_new_series(self):
         """材料がある場合は従来どおり「新しい系列の確認」になる。"""

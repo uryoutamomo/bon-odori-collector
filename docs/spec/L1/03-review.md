@@ -5,6 +5,9 @@ title: 人のレビュー運用サブシステム
 owns:
   - review_inbox.py
   - review_inbox_adapters/**
+  - data/review_backlog_decision_overlay.json
+  - data/review_backlog_youtube_decision_overlay.json
+  - data/review_backlog_event_hold_llm_research.json
   - review_console/**
   - review_console_ops/**
   - scripts/promote_change_requests_for_review.py
@@ -49,6 +52,8 @@ invariants:
   - INV-RVW-016
   - INV-RVW-017
   - INV-RVW-018
+  - INV-RVW-019
+  - INV-RVW-020
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -59,7 +64,9 @@ verified_by:
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_review_console.py
-updated_for: 64c874f
+  - tests/test_review_inbox_low_priority_adapters.py
+  - tests/test_review_inbox_youtube_adapter.py
+updated_for: 419cd04
 ---
 
 # 人のレビュー運用サブシステム
@@ -224,10 +231,13 @@ updated_for: 64c874f
 ### INV-RVW-016 名指しされた対象は判定者に見せ、材料の無い候補を「新規」として人へ回さない
 
 - **内容**: レポートが開催回IDを名指ししている候補（`explicit_occurrence_id`。公式お知らせの `confirm_existing` 由来）は、名前を持たず検索に掛からなくても、その開催回と会場を候補集合の先頭に入れる（統合済み `lifecycle_status='merged'` は除く）。あわせて、同一性が `"none"` でも**新規を作る材料（イベント名／会場名）が無ければ** `new_series_requires_confirmation` / `new_venue_requires_confirmation` ではなく `insufficient_evidence` を理由にする。
+  ただし既存開催回を選択済みで、新しい会場名の提案も無い場合は、その開催回が持つ会場で対象が一意なので、
+  `venue_match="none"` だけを理由に人へ回さない。
 - **なぜ**: `confirm_existing` の候補は開催回IDだけを持ち、名前も年も会場名も持たないことが多い（2026-08-15 の実データで112件中55件）。候補集合が空になるため判定者は `"none"` としか答えられず、機械はそれを「新規です」と解釈して人の確認へ回す。ところが**新規を作る材料が無いので、裁定しても何も生まれない**。実際、この日の保留56件は全件が名前も会場名も空で、裁定画面を開いても人は何も判断できなかった。
 - **破れたときの症状**: 対象が分かっているのに「どれとも違う」と判断される。名前も会場も空の項目が裁定待ちに積み上がり、人が見ても処理できない。
 - **守っているコード**: `review_inbox_adapters/build_event_inbox_candidates.py` の `search_targets()`、`apply_judgment_results.py` の `_identity_hold_reason()`
-- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_named_occurrence_is_offered_even_without_a_name`、`tests/test_e2_identity_judgment.py::test_a_merged_occurrence_is_not_offered`、`tests/test_e2_identity_judgment.py::test_no_name_yields_insufficient_evidence_not_new_series`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::test_named_occurrence_is_offered_even_without_a_name`、`tests/test_e2_identity_judgment.py::test_a_merged_occurrence_is_not_offered`、`tests/test_e2_identity_judgment.py::test_no_name_yields_insufficient_evidence_not_new_series`、
+  `tests/test_e2_identity_judgment.py::test_selected_occurrence_without_a_new_venue_needs_no_user_hold`
 
 ### INV-RVW-017 X曲同定の判断取込は正本factを書かず、見せた候補全体を凍結する
 
@@ -260,6 +270,61 @@ updated_for: 64c874f
 - **守っているテスト**: `tests/test_review_console.py::ReviewConsoleTests::test_review_inbox_item_absent_from_complete_current_source_snapshot_is_closed`、
   `tests/test_review_console.py::ReviewConsoleTests::test_x_gap_new_event_already_confirmed_in_public_data_is_closed`
 
+### INV-RVW-019 判断済み候補は、安定IDと内容の指紋が一致するときだけ現在集合から外す
+
+- **内容**: 曲・用語/曲×会場・会場・YouTube曲証拠候補の人/LLM判断は、元JSONのライフサイクル欄へ
+  偽装して書き戻さず、`data/review_backlog_decision_overlay.json` と
+  `data/review_backlog_youtube_decision_overlay.json` に判断主体と理由を残す。完全スナップショットを作る際、
+  `source_id`・`source_key`・`inbox_id`・`source_payload_hash` が現在候補とすべて一致した判断だけを除外する。
+  `保留` は完了判断ではないためoverlayでは受理せず、待ち一覧に残す。
+  安定IDが違えば fail-closed、内容の指紋が変わればその判断を stale として候補を再提示する。
+  YouTube入力はリポジトリ内の版よりDB側が新しい場合があるため、画面上の自動解決はDB行の4項目が
+  overlayと完全一致する行だけに限り、古いファイルからの不在を根拠にしない。
+  この処理は受信箱DBのstatus/decisionと曲・用語・会場の正本factを変更しない。
+- **なぜ**: 2026-08-18の監査では低優先29件のうち、曲3件と会場5件は別ファイルですでに人が判断済み、
+  用語1件も登録済みだった。生成キューが判断記録を引き継がず、同じ意味の候補を別の証拠URLで再発行していたため、
+  LLMに同じ問いを繰り返すだけでなく「レビュー待ち」の実数も水増ししていた。一方、語だけで過去判断を再利用すると、
+  根拠や意味が変わった別候補まで隠すため、判定時の内容全体の指紋を必須にする。
+  同日のYouTubeパイロット43件も同じ契約で凍結し、DB未同期の新着とDB側で内容が変わった行を
+  古い判断で閉じないようにした。
+  続く全件処理では、当時の現在集合に残った505件（YouTube 247、過去実績60、公開差分197、X 1）を
+  同じ完全一致契約で凍結した。公開差分は、曲名84件を既存曲へ統合、55件をタイトル断片として除外、
+  8件を新規曲候補として維持し、2026年日程の直接根拠が無い38件は今年の日付へ転用しなかった。
+  公開辞書未同期12件の `公開同期対象` とX 1件の `公式確認待ち` も、正本factを変更する指示ではなく、
+  現在入力に対するレビュー完了分類である。
+- **破れたときの症状**: 判断済みの曲・会場が日次で再び待ち一覧へ現れる。逆に、証拠内容が変わった候補が
+  過去判断で勝手に消える。LLM判断が人判断として記録される。
+- **守っているコード**: `review_inbox_adapters/backlog_decision_overlay.py`、
+  `review_inbox_adapters/low_priority_adapters.py` と `review_inbox_adapters/youtube_adapter.py` の `build_snapshot()`、
+  `review_console/data.py` の `decision_overlay_auto_resolution()`、
+  `scripts/build_publication_gap_song_identity_llm_decisions.py`、
+  `scripts/build_review_backlog_completion_overlays.py`
+- **守っているテスト**: `tests/test_review_inbox_low_priority_adapters.py::test_exact_decision_overlay_closes_only_the_frozen_payload`、
+  `tests/test_review_inbox_low_priority_adapters.py::test_decision_overlay_fails_closed_on_identity_or_vocabulary_errors`、
+  `tests/test_review_inbox_youtube_adapter.py::ReviewInboxYouTubeAdapterTest::test_frozen_agent_decision_filters_only_the_exact_youtube_payload`、
+  `tests/test_review_console.py::ReviewConsoleTests::test_exact_overlay_decision_is_attributed_to_agent_and_stale_hash_stays_open`、
+  `tests/test_review_backlog_llm_completion.py`
+
+### INV-RVW-020 既存開催回へ完全一致した古い人待ちholdは、内容が変わらない間だけ画面から外す
+
+- **内容**: `data/review_backlog_event_hold_llm_research.json` に凍結した重複判断は、hold ID、inbox ID、
+  source payload hash、prior agent decision ID、元タイトル、明示された開催回ID、系列ID、会場ID、開始日が
+  現行DBとすべて一致するときだけ、裁定タブの現在集合から外す。prior agentの回答も
+  `occurrence_match` / `series_match` が同じ対象で `venue_match="none"` だったこと、候補payloadの
+  `explicit_occurrence_id` / `resolved_target` が同じ開催回を指すことまで照合する。どれか1つでも変われば
+  fail-closedで人待ちへ再表示する。この投影はhold/queue/decision台帳と正本factを変更しない。
+- **なぜ**: 2026-08-18の監査では人待ち48件すべてが、既存開催回と系列を正しく選択済みなのに、
+  会場候補が空だったため `venue_match="none"` となり `insufficient_evidence` holdへ落ちていた。
+  47件は名称・会場・開始日まで既存published occurrenceと完全一致し、残る1件も明示開催回ID・名称・会場が一致した。
+  人へ採否を尋ねても新しい情報は得られず、同じ対象を二重に確認するだけだった。
+- **破れたときの症状**: 既存イベントのdetail修正48件が人の採否待ちとして残る。逆に、開催回や元候補が
+  更新された後も古いLLM判断でholdが隠れる。
+- **守っているコード**: `review_inbox_adapters/event_hold_decision_overlay.py`、
+  `review_console/data.py` の `load_adjudication_holds()`、
+  `review_inbox_adapters/apply_judgment_results.py` の `_identity_hold_reason()`
+- **守っているテスト**: `tests/test_judgment_j0_adjudication.py::JudgmentJ0AdjudicationTest::test_06c_exact_llm_duplicate_overlay_removes_only_the_matching_hold`、
+  `tests/test_e2_identity_judgment.py::MissingMaterialTest::test_selected_occurrence_without_a_new_venue_needs_no_user_hold`
+
 ## 主要な流れ
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
@@ -281,6 +346,9 @@ E0 が作った `status='candidate'` を `build_judgment_packets.py` が claim �
 ### J0-adjudication の user 裁定レーン
 
 agent が `awaiting_user` hold を開いた候補だけを、同じレビューコンソール（`http://127.0.0.1:8751/` の「裁定」タブ、ショートカット `b`）で人が判断する。画面操作は `data/review_console/adjudications.json` に記録するだけで、判断の台帳は動かさない（唯一の例外は `review_claim_ledger` の作業中リース行）。反映は `apply_user_adjudications.py --apply` の確認フレーズ付きCLIに限定し、それを呼ぶHTTPパスは置かない。反映時はholdの候補集合hash、期限、allowed action、対象IDが候補集合の内側かを再照合し、`build_user_decision` と既存 `judgment_ledger_writer.write_decision` を通す。失敗した記録は消さず `invalidated` と理由を残し、holdは open のままなので裁き直せる。J0-read同様、canonical fact表と `review_inbox_items.status` は変更しない。
+
+既存開催回への完全一致を別途凍結できた古いholdは、INV-RVW-020の全項目が一致する間だけ裁定タブから除外する。
+これはDB上のholdを閉じる操作ではなく、人が今判断すべき集合の投影である。
 
 **裁定で「採用」してもイベントは1件も増えない。** 記録が台帳へ入るだけで、正本factへの反映はE2a以降である。
 
@@ -320,6 +388,10 @@ agent が `awaiting_user` hold を開いた候補だけを、同じレビュー�
 | 低優先 | `build_missing_venue_review_from_song_associations.py`（会場側）、`build_historical_reference_quality_review.py` | `run_review_inbox_low_priority_scheduled.py` |
 | X由来 | `build_x_gap_candidates.py`（収集側）→ `review_inbox_adapters/x_gap_adapter.py` → `build_x_review_lanes.py` | 定期の二重書き込みは持たず、整形したJSONを置くところで止まる |
 
+YouTube曲証拠のLLM判断は、現行DB行の内容指紋まで一致したときだけ画面上の判断済みにする。
+入力ファイルは実行時のDBより古いことがあるため、低優先キューのような「現在集合から消えた」だけの自動解決はしない
+（INV-RVW-019）。
+
 X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つの運用レーンへ切り分ける**のが役目で、
 1番目のレーンは意図的に厳しくしてある（登録済みの公式ソースだけを通す）。
 機械が拾った穴をそのまま人へ渡すと、レビュー待ちが人の処理速度を超えて詰まるためである。
@@ -333,6 +405,8 @@ X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つ�
 - **収穫（harvest）** — `build_retrospective_harvest.py` と `build_weekly_harvest_candidates.py --days 3`、
   `prepare_weekly_harvest_review.py` が、用語候補と曲・会場の共起をレビュー用のキューにする。
   名前は「週次」だが**日次で動いている**ので、名前から実行間隔を推測しないこと。
+  低優先の完全スナップショットは、人/LLMの凍結判断overlayと内容の指紋が一致する行を現在のpending集合から除く
+  （INV-RVW-019）。これは判断の投影だけで、正本factへの適用ではない。
 - **掲示物のOCR** — `build_event_poster_ocr_queue.py` が、チラシ・貼り紙の写真が付いた投稿を
   優先度の高いOCRの列にする。曲目表のOCR（`build_song_ocr_queue.py`）は[曲目](08-songs.md)側の別経路である。
 
