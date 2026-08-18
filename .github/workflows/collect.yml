@@ -81,25 +81,42 @@ jobs:
     - name: Build event alias runtime
       run: python build_event_alias_runtime.py
 
-    - name: Sync canonical event-state axes to master RDB
+    - name: Sync date predictions and canonical event-state axes to master RDB
       id: event_state_axes
-      if: ${{ vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
       env:
         MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
         MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
         AWS_REGION: ap-northeast-1
+        EVENT_STATE_AXES_ENABLED: ${{ vars.EVENT_STATE_AXES_ENABLED }}
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
         TARGET_YEAR="${TODAY%%-*}"
         RSTART="$(python -c 'import json; print(json.load(open("data/bon_odori_master_manifest.json"))["database_checksum"])')"
-        python run_event_state_axes_migration.py \
+        python sync_event_date_predictions_rdb.py \
           --db data/bon_odori_master.sqlite \
-          --derive-from-db \
-          --today "$TODAY" \
+          --predictions data/event_date_predictions.json \
+          --target-year "$TARGET_YEAR" \
+          --report-out "$RUNNER_TEMP/event-date-predictions-dry-run.json"
+        python sync_event_date_predictions_rdb.py \
+          --db data/bon_odori_master.sqlite \
+          --predictions data/event_date_predictions.json \
           --target-year "$TARGET_YEAR" \
           --execute \
-          --confirm 'MIGRATE EVENT STATE AXES' \
-          --report-out "$RUNNER_TEMP/event-state-axes-migration.json"
+          --confirm 'SYNC EVENT DATE PREDICTIONS' \
+          --report-out "$RUNNER_TEMP/event-date-predictions-apply.json"
+        if [ "$EVENT_STATE_AXES_ENABLED" = "true" ]; then
+          python run_event_state_axes_migration.py \
+            --db data/bon_odori_master.sqlite \
+            --derive-from-db \
+            --today "$TODAY" \
+            --target-year "$TARGET_YEAR" \
+            --execute \
+            --confirm 'MIGRATE EVENT STATE AXES' \
+            --report-out "$RUNNER_TEMP/event-state-axes-migration.json"
+        else
+          echo "[event-state-axes] disabled; prediction sync still runs"
+        fi
         python audit_master_rdb.py \
           --out-json "$RUNNER_TEMP/event-state-axes-audit.json" \
           --out-md "$RUNNER_TEMP/event-state-axes-audit.md"
@@ -114,12 +131,20 @@ jobs:
           echo "published=false" >> "$GITHUB_OUTPUT"
         fi
         python master_db_s3_artifact.py fetch --overwrite
-        python run_event_state_axes_migration.py \
+        python sync_event_date_predictions_rdb.py \
           --db data/bon_odori_master.sqlite \
-          --derive-from-db \
-          --today "$TODAY" \
+          --predictions data/event_date_predictions.json \
           --target-year "$TARGET_YEAR" \
-          --report-out "$RUNNER_TEMP/event-state-axes-rend.json"
+          --check \
+          --report-out "$RUNNER_TEMP/event-date-predictions-rend.json"
+        if [ "$EVENT_STATE_AXES_ENABLED" = "true" ]; then
+          python run_event_state_axes_migration.py \
+            --db data/bon_odori_master.sqlite \
+            --derive-from-db \
+            --today "$TODAY" \
+            --target-year "$TARGET_YEAR" \
+            --report-out "$RUNNER_TEMP/event-state-axes-rend.json"
+        fi
         echo "ran=true" >> "$GITHUB_OUTPUT"
 
     - name: Transition ended confirmed occurrences
@@ -154,11 +179,14 @@ jobs:
         fi
 
     - name: Upload event-state axes evidence
-      if: ${{ always() && vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      if: ${{ always() && vars.MASTER_DB_S3_BUCKET != '' }}
       uses: actions/upload-artifact@v4
       with:
         name: event-state-axes-${{ github.run_id }}-${{ github.run_attempt }}
         path: |
+          ${{ runner.temp }}/event-date-predictions-dry-run.json
+          ${{ runner.temp }}/event-date-predictions-apply.json
+          ${{ runner.temp }}/event-date-predictions-rend.json
           ${{ runner.temp }}/event-state-axes-migration.json
           ${{ runner.temp }}/event-state-axes-audit.json
           ${{ runner.temp }}/event-state-axes-audit.md
