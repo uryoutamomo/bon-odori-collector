@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T06:11:03Z",
-  "generated_for_commit": "254646b",
+  "generated_at": "2026-08-18T08:10:52Z",
+  "generated_for_commit": "5c9d608",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -201,6 +201,9 @@
       "owns": [
         "review_inbox.py",
         "review_inbox_adapters/**",
+        "data/review_backlog_decision_overlay.json",
+        "data/review_backlog_youtube_decision_overlay.json",
+        "data/review_backlog_event_hold_llm_research.json",
         "review_console/**",
         "review_console_ops/**",
         "scripts/promote_change_requests_for_review.py",
@@ -246,7 +249,9 @@
         "INV-RVW-015",
         "INV-RVW-016",
         "INV-RVW-017",
-        "INV-RVW-018"
+        "INV-RVW-018",
+        "INV-RVW-019",
+        "INV-RVW-020"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -257,9 +262,11 @@
         "tests/test_judgment_j0_read.py",
         "tests/test_x_song_resolution_contract.py",
         "tests/test_x_occurrence_resolution_contract.py",
-        "tests/test_review_console.py"
+        "tests/test_review_console.py",
+        "tests/test_review_inbox_low_priority_adapters.py",
+        "tests/test_review_inbox_youtube_adapter.py"
       ],
-      "updated_for": "64c874f",
+      "updated_for": "419cd04",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -271,6 +278,9 @@
         "build_x_account_console.py",
         "build_x_news_digest_for_oto.py",
         "build_x_review_lanes.py",
+        "data/review_backlog_decision_overlay.json",
+        "data/review_backlog_event_hold_llm_research.json",
+        "data/review_backlog_youtube_decision_overlay.json",
         "export_rare_signal_backcheck_reviews.py",
         "prepare_weekly_harvest_review.py",
         "promote_x_news_digest_reviews.py",
@@ -288,12 +298,14 @@
         "review_inbox_adapters/__init__.py",
         "review_inbox_adapters/apply_judgment_results.py",
         "review_inbox_adapters/apply_user_adjudications.py",
+        "review_inbox_adapters/backlog_decision_overlay.py",
         "review_inbox_adapters/build_change_requests_from_judgment.py",
         "review_inbox_adapters/build_change_requests_from_review_inbox.py",
         "review_inbox_adapters/build_event_inbox_candidates.py",
         "review_inbox_adapters/build_judgment_packets.py",
         "review_inbox_adapters/decision_stage.py",
         "review_inbox_adapters/decision_writer.py",
+        "review_inbox_adapters/event_hold_decision_overlay.py",
         "review_inbox_adapters/event_inbox_writer.py",
         "review_inbox_adapters/historical_reference_adapter.py",
         "review_inbox_adapters/judgment_ledger_writer.py",
@@ -328,10 +340,18 @@
         "search_rare_signal_backcheck_sources.py",
         "stage_rare_signal_backcheck_reviews.py"
       ],
-      "staleness": null,
-      "version": "1.10",
-      "revision_count": 11,
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 9
+      },
+      "version": "1.11",
+      "revision_count": 12,
       "history": [
+        {
+          "commit": "5c9d608",
+          "date": "2026-08-18",
+          "subject": "Complete frozen LLM review backlog (#236)"
+        },
         {
           "commit": "fa94b3a",
           "date": "2026-08-17",
@@ -1817,6 +1837,22 @@
       ],
       "has_test": true
     },
+    "INV-RVW-019": {
+      "spec": "L1-review",
+      "title": "判断済み候補は、安定IDと内容の指紋が一致するときだけ現在集合から外す",
+      "tests": [
+        "tests/test_review_inbox_low_priority_adapters.py::test_exact_decision_overlay_closes_only_the_frozen_payload"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-020": {
+      "spec": "L1-review",
+      "title": "既存開催回へ完全一致した古い人待ちholdは、内容が変わらない間だけ画面から外す",
+      "tests": [
+        "tests/test_judgment_j0_adjudication.py::JudgmentJ0AdjudicationTest::test_06c_exact_llm_duplicate_overlay_removes_only_the_matching_hold"
+      ],
+      "has_test": true
+    },
     "INV-MST-001": {
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
@@ -2296,6 +2332,9 @@
     "build_x_account_console.py": "L1-review",
     "build_x_news_digest_for_oto.py": "L1-review",
     "build_x_review_lanes.py": "L1-review",
+    "data/review_backlog_decision_overlay.json": "L1-review",
+    "data/review_backlog_event_hold_llm_research.json": "L1-review",
+    "data/review_backlog_youtube_decision_overlay.json": "L1-review",
     "export_rare_signal_backcheck_reviews.py": "L1-review",
     "prepare_weekly_harvest_review.py": "L1-review",
     "promote_x_news_digest_reviews.py": "L1-review",
@@ -2313,12 +2352,14 @@
     "review_inbox_adapters/__init__.py": "L1-review",
     "review_inbox_adapters/apply_judgment_results.py": "L1-review",
     "review_inbox_adapters/apply_user_adjudications.py": "L1-review",
+    "review_inbox_adapters/backlog_decision_overlay.py": "L1-review",
     "review_inbox_adapters/build_change_requests_from_judgment.py": "L1-review",
     "review_inbox_adapters/build_change_requests_from_review_inbox.py": "L1-review",
     "review_inbox_adapters/build_event_inbox_candidates.py": "L1-review",
     "review_inbox_adapters/build_judgment_packets.py": "L1-review",
     "review_inbox_adapters/decision_stage.py": "L1-review",
     "review_inbox_adapters/decision_writer.py": "L1-review",
+    "review_inbox_adapters/event_hold_decision_overlay.py": "L1-review",
     "review_inbox_adapters/event_inbox_writer.py": "L1-review",
     "review_inbox_adapters/historical_reference_adapter.py": "L1-review",
     "review_inbox_adapters/judgment_ledger_writer.py": "L1-review",
@@ -2549,9 +2590,9 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 347,
-    "owned": 257,
-    "unowned": 90,
+    "tracked_source_files": 351,
+    "owned": 259,
+    "unowned": 92,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
