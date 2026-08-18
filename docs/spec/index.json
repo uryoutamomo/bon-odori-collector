@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T13:12:19Z",
-  "generated_for_commit": "9f2479f",
+  "generated_at": "2026-08-18T14:17:28Z",
+  "generated_for_commit": "d76c1b9",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -641,7 +641,7 @@
         "tests/test_x_song_materialization_lifecycle.py",
         "tests/test_apply_public_date_predictions.py"
       ],
-      "updated_for": "1ca79f4",
+      "updated_for": "a9432c4",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -663,12 +663,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 3,
-        "files_changed_since": 3
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.10",
-      "revision_count": 11,
+      "version": "1.11",
+      "revision_count": 12,
       "history": [
+        {
+          "commit": "2915f6b",
+          "date": "2026-08-18",
+          "subject": "Fix song certainty across all events"
+        },
         {
           "commit": "0b70acc",
           "date": "2026-08-18",
@@ -870,7 +875,8 @@
         "INV-SNG-004",
         "INV-SNG-005",
         "INV-SNG-006",
-        "INV-SNG-007"
+        "INV-SNG-007",
+        "INV-SNG-008"
       ],
       "verified_by": [
         "tests/test_bon_odori_songs.py",
@@ -884,7 +890,7 @@
         "tests/test_x_occurrence_resolution_contract.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "665424d",
+      "updated_for": "a9432c4",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         "apply_song_candidate_finite_actions.py",
@@ -926,11 +932,16 @@
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 3
+        "files_changed_since": 2
       },
-      "version": "1.8",
-      "revision_count": 9,
+      "version": "1.9",
+      "revision_count": 10,
       "history": [
+        {
+          "commit": "2915f6b",
+          "date": "2026-08-18",
+          "subject": "Fix song certainty across all events"
+        },
         {
           "commit": "ad611a0",
           "date": "2026-08-18",
@@ -2186,6 +2197,14 @@
       "title": "過去年の曲実績は年ごとに減衰させ、複数年ぶんを合算する",
       "tests": [
         "tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_two_consecutive_years_score_higher_than_latest_year_alone"
+      ],
+      "has_test": true
+    },
+    "INV-SNG-008": {
+      "spec": "L1-songs",
+      "title": "「確実」相当は当年の直接根拠だけに限定する",
+      "tests": [
+        "tests/test_export_public_events.py::ExportPublicEventsTest::test_public_song_audit_rejects_indirect_exact_scores"
       ],
       "has_test": true
     },
