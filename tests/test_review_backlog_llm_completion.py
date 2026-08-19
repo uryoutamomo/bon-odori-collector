@@ -6,7 +6,7 @@ from scripts.build_publication_gap_song_identity_llm_decisions import (
     NEW_SONG_TARGETS,
     NOISE_TITLES,
 )
-from review_console.data import build_inventory
+from review_console.data import build_inventory, decision_overlay_auto_resolution
 from review_inbox_adapters.backlog_decision_overlay import ALLOWED_DECISIONS
 
 
@@ -59,9 +59,10 @@ def test_song_identity_judgments_partition_all_147_current_gaps():
     )
 
 
-def test_completion_overlays_leave_no_current_inbox_item_pending():
+def test_completion_overlays_close_exact_items_without_hiding_new_work():
     general = read_json("data/review_backlog_decision_overlay.json")
     youtube = read_json("data/review_backlog_youtube_decision_overlay.json")
+    inbox_rows = read_json("data/review_inbox.json")["items"]
     inventory = build_inventory(root=ROOT, reader_mode="inbox")
 
     assert general["summary"]["new_current_decisions"] == 258
@@ -70,5 +71,23 @@ def test_completion_overlays_leave_no_current_inbox_item_pending():
     assert youtube["summary"]["new_current_decisions"] == 247
     assert youtube["summary"]["prior_current_decisions"] == 27
     assert general["summary"]["new_current_decisions"] + youtube["summary"]["new_current_decisions"] == 505
-    assert inventory["totals"]["pending"] == 0
-    assert inventory["totals"]["closed"] == inventory["totals"]["total"] == 684
+
+    inventory_by_key = {item["key"]: item for item in inventory["items"]}
+    exact_rows = [
+        row
+        for row in inbox_rows
+        if decision_overlay_auto_resolution(row, ROOT) is not None
+    ]
+    assert exact_rows
+    for row in exact_rows:
+        key = "|".join((row["inbox_id"], row["source_id"], row["source_key"]))
+        assert inventory_by_key[key]["status"] == "closed"
+        assert inventory_by_key[key]["auto_resolution"]["decision"] == "auto_frozen_review_decision"
+
+    raw_by_key = {
+        "|".join((row["inbox_id"], row["source_id"], row["source_key"])): row
+        for row in inbox_rows
+    }
+    for item in inventory["items"]:
+        if item["status"] == "pending":
+            assert decision_overlay_auto_resolution(raw_by_key[item["key"]], ROOT) is None
