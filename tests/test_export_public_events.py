@@ -1133,6 +1133,28 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertNotIn("season_hint", rows[0])
         self.assertEqual(rows[1]["description"], "天妙国寺を会場に行われる品川区民まつりの地域イベント。")
 
+    def test_default_override_keeps_unreviewed_oedo_detail_out(self):
+        approved_detail = (
+            "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 "
+            "第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。"
+            "区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、"
+            "パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会"
+        )
+        rows = apply_public_event_overrides(
+            [
+                {
+                    "name": "中央区大江戸まつり盆おどり大会",
+                    "venue": "浜町公園",
+                    "detail": approved_detail
+                    + " 2025年8月22日のYouTube実績。2026年の公式曲目ではなく、過去実績に基づく予測根拠として追加。",
+                    "songs": [{"name": "東京音頭", "probability": 84}],
+                }
+            ]
+        )
+
+        self.assertEqual(rows[0]["detail"], approved_detail)
+        self.assertEqual(rows[0]["songs"], [{"name": "東京音頭", "probability": 84}])
+
     def test_apply_public_event_overrides_skips_reviewed_hold_rows(self):
         rows = apply_public_event_overrides(
             [
