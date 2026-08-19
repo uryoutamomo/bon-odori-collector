@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T23:00:54Z",
-  "generated_for_commit": "2923aa3",
+  "generated_at": "2026-08-19T13:25:29Z",
+  "generated_for_commit": "c2552a5",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -649,7 +649,7 @@
         "tests/test_apply_public_date_predictions.py",
         "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "b5e6c0a",
+      "updated_for": "dda7210",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -670,10 +670,18 @@
         "public_json_postprocessors/review_missing_occurrence_venues.py",
         "venues/export_public_venues.py"
       ],
-      "staleness": null,
-      "version": "1.13",
-      "revision_count": 14,
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      },
+      "version": "1.14",
+      "revision_count": 15,
       "history": [
+        {
+          "commit": "1e2849c",
+          "date": "2026-08-19",
+          "subject": "Document superseded public approvals"
+        },
         {
           "commit": "6083472",
           "date": "2026-08-19",
@@ -728,11 +736,6 @@
           "commit": "33c728c",
           "date": "2026-08-16",
           "subject": "Document E2-S v2 identity contracts"
-        },
-        {
-          "commit": "cd8eb13",
-          "date": "2026-08-15",
-          "subject": "コンソール由来の変更提案を候補器へ付け替える（E0b） (#209)"
         }
       ]
     },
@@ -1361,7 +1364,7 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 8,
+        "commits_since": 9,
         "files_changed_since": 3
       },
       "version": "1.2",
