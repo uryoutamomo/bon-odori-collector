@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-18T23:17:47.530388+00:00",
+  "generated_at": "2026-08-19T07:21:36.420896+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-18T23:17:39.158406+00:00",
+  "source_generated_at": "2026-08-19T07:21:30.388118+00:00",
   "days": 3,
-  "voice_count": 1686,
-  "candidate_count": 160,
+  "voice_count": 1542,
+  "candidate_count": 116,
   "category_counts": {
-    "曲×会場共起": 8,
-    "曲候補": 142,
-    "用語候補": 10
+    "曲×会場共起": 9,
+    "曲候補": 98,
+    "用語候補": 9
   },
   "non_song_review_count": 18,
-  "song_candidate_count": 142,
-  "song_direct_dry_run_count": 92,
-  "song_review_count": 5,
-  "song_rejected_noise_count": 45,
+  "song_candidate_count": 98,
+  "song_direct_dry_run_count": 62,
+  "song_review_count": 3,
+  "song_rejected_noise_count": 33,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -34,19 +34,17 @@
       "活気あふれる踊り × 青山善光寺",
       "炭坑節 × 青山善光寺",
       "Bon踊り × 久富稲荷神社",
-      "根津音頭 × 根津神社",
+      "伊丹音頭や下関漁港節 × 根津神社",
+      "生歌音頭 × 浜町公園",
       "花笠音頭 × 根津神社",
       "練習会",
       "踊り会",
-      "参戦",
-      "ハシゴ"
+      "参戦"
     ],
     "song_review": [
       "たいとう音頭",
       "郡上おどり",
-      "盆ジョビ",
-      "BON踊り",
-      "風流踊り"
+      "盆ジョビ"
     ]
   }
 }

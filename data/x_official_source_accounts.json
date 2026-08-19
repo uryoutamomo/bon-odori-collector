@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-08-19",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -511,6 +511,14 @@
     {
       "handle": "@chikusei_kankou",
       "name": "【公式】筑西市観光協会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@chuo_machi_info",
+      "name": "中央区町会・自治会ネット",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2646,6 +2654,14 @@
     {
       "handle": "@kumagayapr",
       "name": "熊谷市観光協会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@kunisakitakashi",
+      "name": "国崎たかし　東京都議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5250,6 +5266,24 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@tanaehis",
+      "name": "たなえ ひさし／都民ファーストの会／新宿区議会議員",
+      "source_type": "official",
+      "linked_events": [
+        {
+          "series_id": "ser_097893ea5628e504",
+          "series_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+          "ward": "新宿区",
+          "confidence": "confirmed",
+          "evidence_urls": [
+            "https://x.com/tanaehis/status/2089922387919949979"
+          ]
+        }
+      ],
+      "decided_by": "machine",
+      "tier": "dormant"
+    },
+    {
       "handle": "@tanakatakumi15",
       "name": "田中たくみ 渋谷区議会議員",
       "source_type": "official",
@@ -6155,6 +6189,14 @@
     {
       "handle": "@yumioka55",
       "name": "岡 由美🌾寝屋川市議会議員🍚公明党",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@yuri_kan",
+      "name": "由利本荘市観光協会 Yurihonjo City Tourism Association",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
