@@ -1,320 +1,1563 @@
 {
   "items": [
     {
-      "venue_name": "さくら通り三丁目公園",
-      "region": "大田区",
-      "address": "大田区中央3-33-6",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://drive.google.com/file/d/13lzNNRWbW0ZP_KYDG9Wnma3LK6f7XBkL/view?usp=drive_link",
-      "memo": "新井宿六丁目町会「盆踊り大会」 8月29日(土) 19:00-21:00。\n＊雨天中止。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "中",
-      "in_tsukiji": false,
-      "event": {
-        "name": "新井宿六丁目町会「盆踊り大会」 8月29日(土) 19:00-21:00。",
-        "month": "8月",
-        "date_text": "2026 [K22]\n8/29",
-        "source_url": "https://drive.google.com/file/d/13lzNNRWbW0ZP_KYDG9Wnma3LK6f7XBkL/view?usp=drive_link"
-      }
-    },
-    {
-      "venue_name": "下丸子天祖神社",
-      "region": "大田区",
-      "address": "大田区下丸子3-10-8",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://note.com/common_news/n/n4a3de6b9a249",
-      "memo": "下丸子三丁目町会 盆踊り 8月1日(土)-2日(日) 18:00-21:00。\n(8/6掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "下北沢駅東口",
+      "region": "世田谷区",
+      "address": "世田谷区北沢2-23",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://shimokitazawa-east.com/archives/8501",
+      "memo": "あずま通り商店街「下北沢盆踊り2026」 7月25日(土)-26日(日) 13:00-20:00。\n盆踊り 両日 16時-20時(レクチャー有)。\nシモキタ音頭 他 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "小",
       "in_tsukiji": false,
       "event": {
-        "name": "下丸子三丁目町会 盆踊り 8月1日(土)-2日(日) 18:00-21:00。",
-        "month": "8月",
-        "date_text": "2026 [K18]\n8/1 - 2",
-        "source_url": "https://note.com/common_news/n/n4a3de6b9a249"
+        "name": "あずま通り商店街「下北沢盆踊り2026」 7月25日(土)-26日(日) 13:00-20:00。",
+        "month": "7月",
+        "date_text": "2026 [L29]\n7/25 - 26",
+        "source_url": "https://shimokitazawa-east.com/archives/8501"
       }
     },
     {
-      "venue_name": "京浜蒲田商店街協同組合「あすと」アーケード",
-      "region": "大田区",
-      "address": "大田区蒲田4",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/164371",
-      "memo": "京浜蒲田商店街協同組合「あすと納涼流し踊り大会」 7月25日(土) 18:00-19:30。\n(例年、開始の30分前より受付開始) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "松沢小学校",
+      "region": "世田谷区",
+      "address": "世田谷区赤堤4-44-22",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.shimotaka.or.jp/summer2025-3",
+      "memo": "「第56回 しもたかサマーフェスティバル」 8月30日(土)-31日(日) 16:00-20:30。\n・18:00-20:00 しもたか盆踊り(よさこい鳴子踊り、炭坑節、東京音頭、新世田谷音頭、アンパンマン音頭 他)。\n＊主催:下高井戸商店街振興組合・しもたかサマーフェスティバル実行委員会\n＊昨年の会場から変更になっています。\n(8/20 資料を差し替え、会場名を修正しました) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「第56回 しもたかサマーフェスティバル」 8月30日(土)-31日(日) 16:00-20:30。",
+        "month": "8月",
+        "date_text": "2026 [L53]\n8/30 - 31",
+        "source_url": "https://www.shimotaka.or.jp/summer2025-3"
+      }
+    },
+    {
+      "venue_name": "円光院駐車場",
+      "region": "世田谷区",
+      "address": "世田谷区世田谷4-7-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya339.net/seta/maturi/bon1.htm",
+      "memo": "世田谷駅前商店街振興組合「納涼盆踊り大会 」\n7月25日(土)-26日(日) 午後6時-9時。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+        "month": "7月",
+        "date_text": "2026 [L28]\n7/25 - 26",
+        "source_url": "https://setagaya339.net/seta/maturi/bon1.htm"
+      }
+    },
+    {
+      "venue_name": "二子玉川西地区ふれあい広場(246高架下)",
+      "region": "世田谷区",
+      "address": "世田谷区玉川3-24（高架下）",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "玉川町会盆おどり大会 7月24日(金)、25日(土) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "玉川町会盆おどり大会 7月24日(金)、25日(土)",
+        "month": "7月",
+        "date_text": "2026 [L18]\n7/24 - 25",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
+      }
+    },
+    {
+      "venue_name": "京王線芦花公園駅前ロータリー(南口)",
+      "region": "世田谷区",
+      "address": "世田谷区南烏山2-38-16",
+      "access": "最寄駅前",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月24日(金) 17:00-。\n「昔懐かしファミリー盆踊り教室」17:30-。\n「大人向け本格的盆踊り」 19:00-(例年、20:30まで)\n＊雨天中止。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "大",
       "in_tsukiji": false,
       "event": {
-        "name": "京浜蒲田商店街協同組合「あすと納涼流し踊り大会」 7月25日(土) 18:00-19:30。",
+        "name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月24日(金) 17:00-。",
         "month": "7月",
-        "date_text": "2026 [K5]\n7/25",
-        "source_url": "https://otakushoren.com/event/164371"
+        "date_text": "2026 [L16]\n7/24",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
       }
     },
     {
-      "venue_name": "六所神社",
-      "region": "大田区",
-      "address": "大田区下丸子4-16-5",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/164334",
-      "memo": "下丸子四丁目町会「納涼盆踊り大会」7月25日(土)、26(日) 18:30-21:00。\n＊小雨決行 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "代田八幡神社",
+      "region": "世田谷区",
+      "address": "世田谷区代田3-57-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://kotokoto-sasazuka.com/daita-bon2026/",
+      "memo": "代田東町会 納涼おどり大会 7/17日(金)-19日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "小",
       "in_tsukiji": false,
       "event": {
-        "name": "下丸子四丁目町会「納涼盆踊り大会」7月25日(土)、26(日) 18:30-21:00。",
+        "name": "代田東町会 納涼おどり大会 7/17日(金)-19日(日) 19:00-21:00。",
         "month": "7月",
-        "date_text": "2026 [K11]\n7/25 - 26",
-        "source_url": "https://otakushoren.com/event/164334"
+        "date_text": "2026 [L3]\n7/17 - 19",
+        "source_url": "https://kotokoto-sasazuka.com/daita-bon2026/"
       }
     },
     {
-      "venue_name": "南蒲田第二児童公園",
-      "region": "大田区",
-      "address": "大田区南蒲田3-10-12",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/152625",
-      "memo": "南蒲田三丁目町会「盆踊り」7月24日(金)、25日(土) 18:30-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "稲荷森稲荷神社",
+      "region": "世田谷区",
+      "address": "世田谷区桜丘2-29-3",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya.guide/events/summer-bon-odori-festival-chitosefunabashi-sanshokai/",
+      "memo": "千歳船橋参商会商店街振興組合 「納涼盆踊り大会」 7月18日(土)-19日(日) 19:00-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "千歳船橋参商会商店街振興組合 「納涼盆踊り大会」 7月18日(土)-19日(日) 19:00-。",
+        "month": "7月",
+        "date_text": "2026 [L12]\n7/18 - 19",
+        "source_url": "https://setagaya.guide/events/summer-bon-odori-festival-chitosefunabashi-sanshokai/"
+      }
+    },
+    {
+      "venue_name": "大原GOGO公園",
+      "region": "世田谷区",
+      "address": "世田谷区大原1-55-6",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://kotokoto-sasazuka.com/ohara-bon2026/",
+      "memo": "大原北町会納涼盆踊り大会 7月31日(金)-8月1日(土) 18:30-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "中",
       "in_tsukiji": false,
       "event": {
-        "name": "南蒲田三丁目町会「盆踊り」7月24日(金)、25日(土) 18:30-20:30。",
+        "name": "大原北町会納涼盆踊り大会 7月31日(金)-8月1日(土) 18:30-20:30。",
         "month": "7月",
-        "date_text": "2026 [K4]\n7/24 - 25",
-        "source_url": "https://otakushoren.com/event/152625"
+        "date_text": "2026 [L32]\n7/31 - 8/1",
+        "source_url": "https://kotokoto-sasazuka.com/ohara-bon2026/"
       }
     },
     {
-      "venue_name": "大森中八幡神社",
-      "region": "大田区",
-      "address": "大田区大森中3-3-7",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/165057",
-      "memo": "大森中八幡自治会「盆踊り大会」8月1日(土) 18:30-20:00。\n＊雨天の場合8月2日。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "小",
-      "in_tsukiji": false,
-      "event": {
-        "name": "大森中八幡自治会「盆踊り大会」8月1日(土) 18:30-20:00。",
-        "month": "8月",
-        "date_text": "2026 [K15]\n8/1",
-        "source_url": "https://otakushoren.com/event/165057"
-      }
-    },
-    {
-      "venue_name": "大森西7丁目公園",
-      "region": "大田区",
-      "address": "大田区大森西7-9-5",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/164837",
-      "memo": "大森邦西町会「盆踊り大会」7月25日(土) 17:30-20:30。\n(7/25昼掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "太子堂小学校",
+      "region": "世田谷区",
+      "address": "世田谷区太子堂5-5-9",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya.guide/events/taishido-fureai-matsuri/",
+      "memo": "「第60回 太子堂ふれあいまつり」 8月22日(土) 17:00-19:00。\n・太子堂音頭等の盆踊り\n・「入場無料」「ただし、お食事には引換券が必要です」「高校生以下および80歳以上 無料」。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "中",
       "in_tsukiji": false,
       "event": {
-        "name": "大森邦西町会「盆踊り大会」7月25日(土) 17:30-20:30。",
-        "month": "7月",
-        "date_text": "2026 [K6]\n7/25",
-        "source_url": "https://otakushoren.com/event/164837"
+        "name": "「第60回 太子堂ふれあいまつり」 8月22日(土) 17:00-19:00。",
+        "month": "8月",
+        "date_text": "2026 [L49]\n8/22",
+        "source_url": "https://setagaya.guide/events/taishido-fureai-matsuri/"
       }
     },
     {
-      "venue_name": "大森西交通公園",
-      "region": "大田区",
-      "address": "大田区大森西3-4-19",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/152950",
-      "memo": "大森三丁目連合町会 盆踊り 8月1日(土) 18:00-20:30。\n・18:45- 盆踊り。\n＊雨天中止。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "妙法寺",
+      "region": "世田谷区",
+      "address": "世田谷区大蔵5-12-3",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "石井戸会「納涼親睦盆踊り大会」7月25日(土)。\n・盆踊り 18時-20時。\n*例年は雨天時翌日順延。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "石井戸会「納涼親睦盆踊り大会」7月25日(土)。",
+        "month": "7月",
+        "date_text": "2026 [L21]\n7/25",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
+      }
+    },
+    {
+      "venue_name": "宇山稲荷神社",
+      "region": "世田谷区",
+      "address": "世田谷区桜丘4-14-18",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya.guide/events/%e5%ae%87%e5%b1%b1%e6%98%ad%e5%92%8c%e4%bc%9a%e4%b8%bb%e5%82%ac-%e7%b4%8d%e6%b6%bc%e7%9b%86%e8%b8%8a%e3%82%8a%e5%a4%a7%e4%bc%9a/",
+      "memo": "宇山昭和会「納涼盆踊り大会」 7月23日(木)ｰ25日(土) 18:00-21:00。\n＊雨天順延。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "宇山昭和会「納涼盆踊り大会」 7月23日(木)ｰ25日(土) 18:00-21:00。",
+        "month": "7月",
+        "date_text": "2026 [L15]\n7/23 - 25",
+        "source_url": "https://setagaya.guide/events/%e5%ae%87%e5%b1%b1%e6%98%ad%e5%92%8c%e4%bc%9a%e4%b8%bb%e5%82%ac-%e7%b4%8d%e6%b6%bc%e7%9b%86%e8%b8%8a%e3%82%8a%e5%a4%a7%e4%bc%9a/"
+      }
+    },
+    {
+      "venue_name": "小田急線成城学園前南口広場",
+      "region": "世田谷区",
+      "address": "世田谷区小田急線成城学園前駅南口",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya.guide/events/seijo-noryo-bon-odori/",
+      "memo": "成城南商店会 「成城納涼盆踊り」 7月18日(土)-19日(日) 17:30-22:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "中",
       "in_tsukiji": false,
       "event": {
-        "name": "大森三丁目連合町会 盆踊り 8月1日(土) 18:00-20:30。",
-        "month": "8月",
-        "date_text": "2026 [K14]\n8/1",
-        "source_url": "https://otakushoren.com/event/152950"
-      }
-    },
-    {
-      "venue_name": "延命寺",
-      "region": "大田区",
-      "address": "大田区矢口2-26-17",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/164314",
-      "memo": "今泉自治会 盆踊り 7月25日(土)-26日(日) 19:00-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "小",
-      "in_tsukiji": false,
-      "event": {
-        "name": "今泉自治会 盆踊り 7月25日(土)-26日(日) 19:00-。",
+        "name": "成城南商店会 「成城納涼盆踊り」 7月18日(土)-19日(日) 17:30-22:00。",
         "month": "7月",
-        "date_text": "2026 [K10]\n7/25 - 26",
-        "source_url": "https://otakushoren.com/event/164314"
+        "date_text": "2026 [L8]\n7/18 - 19",
+        "source_url": "https://setagaya.guide/events/seijo-noryo-bon-odori/"
       }
     },
     {
-      "venue_name": "東八幡神社",
-      "region": "大田区",
-      "address": "大田区矢口3-17-3",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://note.com/common_news/n/n4a3de6b9a249",
-      "memo": "古市町会 納涼盆踊り大会 8月7日(金)-8日(土) 午後7時-(2019年は午後9時まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "芝信用金庫 尾山台支店前駐車場",
+      "region": "世田谷区",
+      "address": "世田谷区等々力2-18-13",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://note.com/common_news/n/nbcd81bc361f7",
+      "memo": "尾山台商栄会商店街振興組合「ハッピーロード尾山台盆踊り大会」7月25日(土)-26日(日) 17:00-20:30。\n＊雨天中止。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "scale": "小",
       "in_tsukiji": false,
       "event": {
-        "name": "古市町会 納涼盆踊り大会 8月7日(金)-8日(土) 午後7時-(2019年は午後9時まで)。",
-        "month": "8月",
-        "date_text": "2026 [K20]\n8/7 - 8",
-        "source_url": "https://note.com/common_news/n/n4a3de6b9a249"
-      }
-    },
-    {
-      "venue_name": "池上本門寺",
-      "region": "大田区",
-      "address": "大田区池上1-1-1",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://honmonji.jp/news/schedule.html",
-      "memo": "池上本門寺\n「池上本門寺盆おどり みたままつり盆踊り大会」\n8月4日(火)-5日(水) 19時-21時。\n＊雨天の場合は6日まで延期 \n・例年、4日午後6時より、大堂にてみたま祭り法要あり。\n(8/5掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "小",
-      "in_tsukiji": false,
-      "event": {
-        "name": "池上本門寺",
-        "month": "8月",
-        "date_text": "2026 [K19]\n8/4 - 5",
-        "source_url": "https://honmonji.jp/news/schedule.html"
-      }
-    },
-    {
-      "venue_name": "浦守稲荷神社",
-      "region": "大田区",
-      "address": "大田区大森南3-27-8",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/152793",
-      "memo": "大森南自治会\n「納涼盆踊り大会」\n7/23日(木)-24日(金) 19時-21時 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "小",
-      "in_tsukiji": false,
-      "event": {
-        "name": "大森南自治会",
+        "name": "尾山台商栄会商店街振興組合「ハッピーロード尾山台盆踊り大会」7月25日(土)-26日(日) 17:00-20:30。",
         "month": "7月",
-        "date_text": "2026 [K3]\n7/23 - 24",
-        "source_url": "https://otakushoren.com/event/152793"
+        "date_text": "2026 [L30]\n7/25 - 26",
+        "source_url": "https://note.com/common_news/n/nbcd81bc361f7"
+      }
+    },
+    {
+      "venue_name": "希望ヶ丘団地 テニスコート",
+      "region": "世田谷区",
+      "address": "世田谷区船橋7-8-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "「希望ヶ丘団地夏まつり」 7月18日(土)-19日(日)。\n(例年、盆踊りを開催。今年度もあるかは未確認。) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「希望ヶ丘団地夏まつり」 7月18日(土)-19日(日)。",
+        "month": "7月",
+        "date_text": "2026 [L11]\n7/18 - 19",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
+      }
+    },
+    {
+      "venue_name": "明大前駅前",
+      "region": "世田谷区",
+      "address": "世田谷区松原2-46",
+      "access": "最寄駅前",
+      "source_url": "https://meidaimae.jp/news/%E6%98%8E%E5%A4%A7%E5%89%8D%E5%95%86%E5%BA%97%E8%A1%97%E3%81%AE2026%E5%B9%B4%E3%81%AE%E5%B9%B4%E9%96%93%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/",
+      "memo": "明大前商店街振興組合 「明大前 サマーフェスタ＆盆踊り」 8月29日(土)-30日(日)。\n・盆おどり、歌謡ショー、キッズダンス、小学生舞踊(例年)。\n・時間詳細不明 8/15時点(2024年は 午後6時-9時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "明大前商店街振興組合 「明大前 サマーフェスタ＆盆踊り」 8月29日(土)-30日(日)。",
+        "month": "8月",
+        "date_text": "2026 [L52]\n8/29 - 30",
+        "source_url": "https://meidaimae.jp/news/%E6%98%8E%E5%A4%A7%E5%89%8D%E5%95%86%E5%BA%97%E8%A1%97%E3%81%AE2026%E5%B9%B4%E3%81%AE%E5%B9%B4%E9%96%93%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB/"
+      }
+    },
+    {
+      "venue_name": "池ノ上小学校校庭",
+      "region": "世田谷区",
+      "address": "世田谷区代沢2-42-9",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.instagram.com/p/Dapt1rujRJ6/",
+      "memo": "「池ノ上納涼盆踊り大会」 8月1日(土) 14:00-20:30。\n・踊りの詳細不明。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「池ノ上納涼盆踊り大会」 8月1日(土) 14:00-20:30。",
+        "month": "8月",
+        "date_text": "2026 [L35]\n8/1",
+        "source_url": "https://www.instagram.com/p/Dapt1rujRJ6/"
+      }
+    },
+    {
+      "venue_name": "深沢公園",
+      "region": "世田谷区",
+      "address": "世田谷区深沢3-13",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "東深沢夏まつり 7月25日(土) 17:00-20:30。\n・盆踊り 19:00-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東深沢夏まつり 7月25日(土) 17:00-20:30。",
+        "month": "7月",
+        "date_text": "2026 [L20]\n7/25",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
+      }
+    },
+    {
+      "venue_name": "烏山区民センター前広場",
+      "region": "世田谷区",
+      "address": "世田谷区南烏山6-2-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.elmall.or.jp/news/2026/260715_02/",
+      "memo": "烏山駅前通り商店街振興組合「からすやま夏まつり盆踊り大会」7月31日(金)-8月1日(土) 16時-21時。\n・7月31日\n18:30- 盆踊り大会\n19:30- セレモニー\n20:00- 盆踊り大会、\n・8月1日\n18:00- 盆踊り大会\n19:00- 昭和歌謡DJブラッシュ\n20:00- 盆踊り大会 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "烏山駅前通り商店街振興組合「からすやま夏まつり盆踊り大会」7月31日(金)-8月1日(土) 16時-21時。",
+        "month": "7月",
+        "date_text": "2026 [L34]\n7/31 - 8/1",
+        "source_url": "https://www.elmall.or.jp/news/2026/260715_02/"
+      }
+    },
+    {
+      "venue_name": "用賀小学校",
+      "region": "世田谷区",
+      "address": "世田谷区上用賀6-14-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.instagram.com/p/Da7gt_8D1tL/",
+      "memo": "上用賀納涼盆踊り 8月21日(金)-22日(土) 16:30-20:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "上用賀納涼盆踊り 8月21日(金)-22日(土) 16:30-20:00。",
+        "month": "8月",
+        "date_text": "2026 [L45]\n8/21 - 22",
+        "source_url": "https://www.instagram.com/p/Da7gt_8D1tL/"
+      }
+    },
+    {
+      "venue_name": "小田急線祖師ヶ谷大蔵駅前ウルトラマン広場",
+      "region": "世田谷区",
+      "address": "世田谷区祖師谷1-8-12",
+      "access": "最寄駅前",
+      "source_url": "https://soshigaya-minami.tokyo/info/news/2026_natsumatsuri/",
+      "memo": "祖師谷商店街振興組合「そしがや駅前盆踊り」9月5日(土) 16時-21時(仮)。\n・ウルトラマン音頭 他。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "祖師谷商店街振興組合「そしがや駅前盆踊り」9月5日(土) 16時-21時(仮)。",
+        "month": "9月",
+        "date_text": "2026 [L54]\n9/5",
+        "source_url": "https://soshigaya-minami.tokyo/info/news/2026_natsumatsuri/"
+      }
+    },
+    {
+      "venue_name": "祖師谷神明社",
+      "region": "世田谷区",
+      "address": "世田谷区祖師谷5-1-7",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya.guide/events/shoshigaya-shoshinkai-bonodori/",
+      "memo": "祖師谷昇進会商店街(振)盆踊り 7月17日(金)-18日(土) 19:00ｰ21:00。\n小雨決行(例年)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "祖師谷昇進会商店街(振)盆踊り 7月17日(金)-18日(土) 19:00ｰ21:00。",
+        "month": "7月",
+        "date_text": "2026 [L2]\n7/17 - 18",
+        "source_url": "https://setagaya.guide/events/shoshigaya-shoshinkai-bonodori/"
+      }
+    },
+    {
+      "venue_name": "経堂小学校",
+      "region": "世田谷区",
+      "address": "世田谷区桜上水1-23-3",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://oyajinokai-kyodo.jimdofree.com/",
+      "memo": "PTA盆踊り 7/11(土) 17:15-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "PTA盆踊り 7/11(土) 17:15-。",
+        "month": "7月",
+        "date_text": "2026 [L1]\n7/11",
+        "source_url": "https://oyajinokai-kyodo.jimdofree.com/"
+      }
+    },
+    {
+      "venue_name": "野沢龍雲寺 環七駐車場",
+      "region": "世田谷区",
+      "address": "世田谷区野沢3-40",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya339.net/seta/maturi/bon1.htm",
+      "memo": "野沢龍雲寺「野沢龍雲寺納涼盆踊り大会」 7月31日(金)-8月1日(土) 午後7時-9時。\n＊雨天時、順延は日曜日まで(例年) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "野沢龍雲寺「野沢龍雲寺納涼盆踊り大会」 7月31日(金)-8月1日(土) 午後7時-9時。",
+        "month": "7月",
+        "date_text": "2026 [L33]\n7/31 - 8/1",
+        "source_url": "https://setagaya339.net/seta/maturi/bon1.htm"
+      }
+    },
+    {
+      "venue_name": "長圓寺",
+      "region": "世田谷区",
+      "address": "世田谷区岡本1-20-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "岡本自治会「盆踊り大会」8月1日(土)-2日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "岡本自治会「盆踊り大会」8月1日(土)-2日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [L37]\n8/1 - 2",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
+      }
+    },
+    {
+      "venue_name": "駒澤大学 駒沢キャンパス",
+      "region": "世田谷区",
+      "address": "世田谷区駒沢1-23-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+      "memo": "駒澤大学同窓会東京都支部・営友会\n「駒沢ふれあい広場 夏祭り」 8月9日(日) 14:00-20:00。\n各種模擬店、ステージ企画、盆踊り。\n詳細不明。(2023年は「盆踊りは18時から」) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "駒澤大学同窓会東京都支部・営友会",
+        "month": "8月",
+        "date_text": "2026 [L39]\n8/9",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
+      }
+    },
+    {
+      "venue_name": "駒沢小学校",
+      "region": "世田谷区",
+      "address": "世田谷区駒沢2-10-6",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://comorevi.com/event/15136/",
+      "memo": "駒沢信和会「盆踊り大会」 7月18日(土)-19日(日) 18時ｰ21時。\n・盆踊り 18時- 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "駒沢信和会「盆踊り大会」 7月18日(土)-19日(日) 18時ｰ21時。",
+        "month": "7月",
+        "date_text": "2026 [L9]\n7/18 - 19",
+        "source_url": "https://comorevi.com/event/15136/"
+      }
+    },
+    {
+      "venue_name": "くじら児童遊園（JR高架下）",
+      "region": "江戸川区",
+      "address": "江戸川区東小岩22-7",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "五仲自治会 納涼盆踊り大会 8月22日(土)-23日日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "五仲自治会 納涼盆踊り大会 8月22日(土)-23日日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W67]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "瑞江葬儀場 こどもの広場",
+      "region": "江戸川区",
+      "address": "江戸川区春江町3-26-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "椿町会「(仮称)椿フェスティバル 納涼盆踊り」 10月4日(土) 15時-。\n・踊りがあるかどうか未確認(8/18時点)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "椿町会「(仮称)椿フェスティバル 納涼盆踊り」 10月4日(土) 15時-。",
+        "month": "10月",
+        "date_text": "2026 [W78]\n10/4",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "なぎさニュータウン内中央広場",
+      "region": "江戸川区",
+      "address": "江戸川区南葛西7-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+      "memo": "なぎさニュータウン自治会「なぎさ納涼祭」 8月15日(土)-16日(日) 12:00-21:00(17日は20:30まで)。\n・盆踊りは18時00分から 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "なぎさニュータウン自治会「なぎさ納涼祭」 8月15日(土)-16日(日) 12:00-21:00(17日は20:30まで)。",
+        "month": "8月",
+        "date_text": "2026 [W40]\n8/15 - 16",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html"
+      }
+    },
+    {
+      "venue_name": "なでしこ児童遊園（高架下）",
+      "region": "江戸川区",
+      "address": "江戸川区西小松川町30（首都高速下）",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "西小松川町会 盆踊り 8月22日(土)-23日(日) 18:30-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "西小松川町会 盆踊り 8月22日(土)-23日(日) 18:30-20:30。",
+        "month": "8月",
+        "date_text": "2026 [W58]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "ひかり児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区松島3-16-12",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "松島東町会 盆踊り 8月21日(土)-22日(日) 18時30分-21時。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "松島東町会 盆踊り 8月21日(土)-22日(日) 18時30分-21時。",
+        "month": "8月",
+        "date_text": "2026 [W43]\n8/21 - 22",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "上小岩天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区北小岩6-39-22",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "上小岩六東自治会 「納涼盆踊り」 8月8日(土)-9日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "上小岩六東自治会 「納涼盆踊り」 8月8日(土)-9日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W34]\n8/8 - 9",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "下小岩沖天祖神社(南小岩六丁目児童遊園)",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩6-16",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://koiwa-flower.com/?p=13645",
+      "memo": "小岩駅前町会・南小岩神明町会・フラワーロード商店会「第14回 納涼盆踊り大会」 8月29日(土)-30日(日) 18:00-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "小岩駅前町会・南小岩神明町会・フラワーロード商店会「第14回 納涼盆踊り大会」 8月29日(土)-30日(日) 18:00-20:30。",
+        "month": "8月",
+        "date_text": "2026 [W72]\n8/29 - 30",
+        "source_url": "https://koiwa-flower.com/?p=13645"
+      }
+    },
+    {
+      "venue_name": "下鎌田小学校",
+      "region": "江戸川区",
+      "address": "江戸川区東瑞江3-11-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "内手昭和会・親子盆踊り大会 7月25日(土) 18時-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "内手昭和会・親子盆踊り大会 7月25日(土) 18時-。",
+        "month": "7月",
+        "date_text": "2026 [W22]\n7/25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "下鎌田東小学校",
+      "region": "江戸川区",
+      "address": "江戸川区江戸川2-21",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "下鎌田町会 宿和会納涼盆踊り大会 8月22日(土) 17時-(2024年は21時30分まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "下鎌田町会 宿和会納涼盆踊り大会 8月22日(土) 17時-(2024年は21時30分まで)。",
+        "month": "8月",
+        "date_text": "2026 [W52]\n8/22",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "中割天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区東葛西7-17-17",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://voyvoi.com/event/nakamachimachikai-noryo-bon-odori/",
+      "memo": "「仲町町会納涼盆踊り」 8月14日(金)-15日(土) 18:30-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「仲町町会納涼盆踊り」 8月14日(金)-15日(土) 18:30-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W39]\n8/14 - 15",
+        "source_url": "https://voyvoi.com/event/nakamachimachikai-noryo-bon-odori/"
+      }
+    },
+    {
+      "venue_name": "中曽根天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩4-1-5",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://odottar.com/event/cd57be8ce4",
+      "memo": "一南自治会 盆踊り 8月8日(土)-9日(日)。\n踊り開始 19:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "一南自治会 盆踊り 8月8日(土)-9日(日)。",
+        "month": "8月",
+        "date_text": "2026 [W33]\n8/8 - 9",
+        "source_url": "https://odottar.com/event/cd57be8ce4"
+      }
+    },
+    {
+      "venue_name": "二之江さくら公園",
+      "region": "江戸川区",
+      "address": "江戸川区二之江町1371",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+      "memo": "新二之江町会 盆踊り大会 7月18日(土) 18:00-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "新二之江町会 盆踊り大会 7月18日(土) 18:00-20:30。",
+        "month": "7月",
+        "date_text": "2026 [W4]\n7/18",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html"
+      }
+    },
+    {
+      "venue_name": "五分一にまつ公園",
+      "region": "江戸川区",
+      "address": "江戸川区松島2-16-20",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "五分一町会 盆踊り 8月22日(土)ｰ23日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "五分一町会 盆踊り 8月22日(土)ｰ23日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W56]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "五北天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区北小岩5-17-10",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://odottar.com/event/c7b7a13c58",
+      "memo": "北小岩五丁目自治会 「天祖神社祭礼 夏まつり」 8月22日(土)-23日(日) 18:00-21:00。\n・踊りの時間詳細不明(2024年の盆踊り 18:30-)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "北小岩五丁目自治会 「天祖神社祭礼 夏まつり」 8月22日(土)-23日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W53]\n8/22 - 23",
+        "source_url": "https://odottar.com/event/c7b7a13c58"
+      }
+    },
+    {
+      "venue_name": "八雲神社前広場",
+      "region": "江戸川区",
+      "address": "江戸川区東葛西2-34",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "今井町会 納涼盆踊り大会 8月29日(土) 18時-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "今井町会 納涼盆踊り大会 8月29日(土) 18時-。",
+        "month": "8月",
+        "date_text": "2026 [W71]\n8/29",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "江戸川中央公園",
+      "region": "江戸川区",
+      "address": "江戸川区江戸川1-43-87",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "江戸川一丁目町会、共栄商店街「チャリティ盆踊り大会」 7月25日(土)-26日(日) 18時-(例年 20:30まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "江戸川一丁目町会、共栄商店街「チャリティ盆踊り大会」 7月25日(土)-26日(日) 18時-(例年 20:30まで)。",
+        "month": "7月",
+        "date_text": "2026 [W26]\n7/25 - 26",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "船堀団地内広場",
+      "region": "江戸川区",
+      "address": "江戸川区船堀1-1-1（座標は推測です）",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://odottar.com/event/473e41d5ce",
+      "memo": "都営船堀団地自治会「船堀団地 盆踊り大会」 8月21日(金)-22日(土) 19:00-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "都営船堀団地自治会「船堀団地 盆踊り大会」 8月21日(金)-22日(土) 19:00-。",
+        "month": "8月",
+        "date_text": "2026 [W42]\n8/21 - 22",
+        "source_url": "https://odottar.com/event/473e41d5ce"
+      }
+    },
+    {
+      "venue_name": "北小岩小学校",
+      "region": "江戸川区",
+      "address": "江戸川区北小岩2-15-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "六中自治会「六中納涼盆踊り大会」8月22日(土)-23日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "六中自治会「六中納涼盆踊り大会」8月22日(土)-23日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W68]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "北篠崎二丁目児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区北篠崎2-28-2",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://voyvoi.com/event/kitashinozaki-nichome-jichikai-bon-odori/",
+      "memo": "北篠崎二丁目自治会 「盆踊り大会」 8月21日(金)-22日(土) 18:30-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "北篠崎二丁目自治会 「盆踊り大会」 8月21日(金)-22日(土) 18:30-。",
+        "month": "8月",
+        "date_text": "2026 [W46]\n8/21 - 22",
+        "source_url": "https://voyvoi.com/event/kitashinozaki-nichome-jichikai-bon-odori/"
+      }
+    },
+    {
+      "venue_name": "南小岩三丁目第二児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩3-7",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "南小岩司町会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "南小岩司町会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W64]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "南小岩会館",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩3-25",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "扇田自治会「盆踊り」8月15日(土)-16日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "扇田自治会「盆踊り」8月15日(土)-16日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W41]\n8/15 - 16",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "南小岩第二小学校",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩2-16-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "河原田町会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "河原田町会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W63]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "南篠崎公園",
+      "region": "江戸川区",
+      "address": "江戸川区南篠崎町5-12",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "南篠崎スカイハイツ自治会「夏まつり」 7月25日(土) 17時-。\n*踊りがあるか未確認。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "南篠崎スカイハイツ自治会「夏まつり」 7月25日(土) 17時-。",
+        "month": "7月",
+        "date_text": "2026 [W23]\n7/25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "向い天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区一之江1-9-5",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "一之江上親交会 盆踊り 7月24日(金)-25日(土) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "一之江上親交会 盆踊り 7月24日(金)-25日(土) 18:00-21:00。",
+        "month": "7月",
+        "date_text": "2026 [W19]\n7/24 - 25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "善養寺",
+      "region": "江戸川区",
+      "address": "江戸川区東小岩2-24-2",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "巽親和会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "巽親和会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W62]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "四南広場",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩8-19",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "四南自治会 盆踊り大会 8月8日(土)-9日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "四南自治会 盆踊り大会 8月8日(土)-9日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W35]\n8/8 - 9",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "大杉一丁目公園",
+      "region": "江戸川区",
+      "address": "江戸川区大杉1-11",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "大杉町会 盆踊り 7月18日(土)-19日(日) 18:20-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "大杉町会 盆踊り 7月18日(土)-19日(日) 18:20-21:00。",
+        "month": "7月",
+        "date_text": "2026 [W10]\n7/18 - 19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "大杉小学校",
+      "region": "江戸川区",
+      "address": "江戸川区中央2-16-15",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "五南町会「盆踊り大会」 8月21日(金)-22日(土) 19:00-21:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "五南町会「盆踊り大会」 8月21日(金)-22日(土) 19:00-21:30。",
+        "month": "8月",
+        "date_text": "2026 [W45]\n8/21 - 22",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "大杉第二小学校",
+      "region": "江戸川区",
+      "address": "江戸川区大杉3-11-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "五北町会 盆踊り 7月25日(土)-26日(日) 18:30-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "五北町会 盆踊り 7月25日(土)-26日(日) 18:30-21:00。",
+        "month": "7月",
+        "date_text": "2026 [W25]\n7/25 - 26",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "小岩田天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区北小岩7-28-19",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "小岩田自治会「盆踊り」 10月3日(土)-4日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "小岩田自治会「盆踊り」 10月3日(土)-4日(日) 19:00-21:00。",
+        "month": "10月",
+        "date_text": "2026 [W77]\n10/3 - 4",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "山王神社",
+      "region": "江戸川区",
+      "address": "江戸川区江戸川3-5-4",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "下鎌田町会 盆踊り 7月19日(日) 18:00-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "下鎌田町会 盆踊り 7月19日(日) 18:00-。",
+        "month": "7月",
+        "date_text": "2026 [W14]\n7/19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "平井小学校",
+      "region": "江戸川区",
+      "address": "江戸川区平井6-35-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://voyvoi.com/event/hirai-rokuchome-higashi-chokai-noryo-bon-odori-taikai/",
+      "memo": "平井六丁目東町会 盆踊り 8月7日(金)-8日(土) 17時30分から20時30分。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "平井六丁目東町会 盆踊り 8月7日(金)-8日(土) 17時30分から20時30分。",
+        "month": "8月",
+        "date_text": "2026 [W28]\n8/7 - 8",
+        "source_url": "https://voyvoi.com/event/hirai-rokuchome-higashi-chokai-noryo-bon-odori-taikai/"
+      }
+    },
+    {
+      "venue_name": "松江二丁目児童公園(平和公園)",
+      "region": "江戸川区",
+      "address": "江戸川区松江2-26-9",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "松江二丁目町会 「納涼踊り」 7月18日(土)-19日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "松江二丁目町会 「納涼踊り」 7月18日(土)-19日(日) 18:00-21:00。",
+        "month": "7月",
+        "date_text": "2026 [W13]\n7/18 - 19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "椿天祖神社境内(弥生公園隣)",
+      "region": "江戸川区",
+      "address": "江戸川区春江町2-42-20",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "椿親和会 「椿ふるさとまつり」 9月26日(土)-27日(日)。\n・両日とも踊りがあるかは未確認(2025年の踊りは両日 17時-21時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "椿親和会 「椿ふるさとまつり」 9月26日(土)-27日(日)。",
+        "month": "9月",
+        "date_text": "2026 [W75]\n9/26 - 27",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "本一色小学校",
+      "region": "江戸川区",
+      "address": "江戸川区本一色2-10-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "本一色自治会 「納涼盆踊り」 7月24日(金)-25日(土)。\n詳細時間不明(2022年は 18時半-21時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "本一色自治会 「納涼盆踊り」 7月24日(金)-25日(土)。",
+        "month": "7月",
+        "date_text": "2026 [W18]\n7/24 - 25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "東小岩天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区東小岩1-32-3",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "江戸川北東自治会「天祖神社例大祭 奉納踊り」 9月12日(土)-13日(日) 18:00-21:30 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "江戸川北東自治会「天祖神社例大祭 奉納踊り」 9月12日(土)-13日(日) 18:00-21:30",
+        "month": "9月",
+        "date_text": "2026 [W74]\n9/12 - 13",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "東小岩小学校",
+      "region": "江戸川区",
+      "address": "江戸川区東小岩4-12-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "東小岩中央自治会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東小岩中央自治会「盆踊り」 8月22日(土)-23日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W65]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "東小岩滝児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区東小岩5-8-10",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://omatsuri-map.com/f/edogawa-bonodori-higashikoiwa-chuo/",
+      "memo": "東小岩中央自治会 盆踊り大会 8月22日(土)-23日(日) 19:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東小岩中央自治会 盆踊り大会 8月22日(土)-23日(日) 19:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W61]\n8/22 - 23",
+        "source_url": "https://omatsuri-map.com/f/edogawa-bonodori-higashikoiwa-chuo/"
+      }
+    },
+    {
+      "venue_name": "東小松川東公園",
+      "region": "江戸川区",
+      "address": "江戸川区東小松川2-11-6",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "東小松川二丁目町会 盆踊り 7月18日(土) 17:30-21:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東小松川二丁目町会 盆踊り 7月18日(土) 17:30-21:30。",
+        "month": "7月",
+        "date_text": "2026 [W6]\n7/18",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "東小松川白髭神社",
+      "region": "江戸川区",
+      "address": "江戸川区東小松川3-7-20",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://omatsuri-map.com/f/edogawa-chuo-higashikomatsugawa-minami/",
+      "memo": "東小松川南町会 初日 8月22日(土) 18:00-20:30。\n・例年(2024年など)初日のみ踊り。\n＊イベント全体は2日間開催。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東小松川南町会 初日 8月22日(土) 18:00-20:30。",
+        "month": "8月",
+        "date_text": "2026 [W59]\n8/22 - 23",
+        "source_url": "https://omatsuri-map.com/f/edogawa-chuo-higashikomatsugawa-minami/"
+      }
+    },
+    {
+      "venue_name": "東小松川香取神社",
+      "region": "江戸川区",
+      "address": "江戸川区中央4-25-18",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "東四町会 盆踊り 8月21日(土)-22日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東四町会 盆踊り 8月21日(土)-22日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W47]\n8/21 - 22",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "東葛西さくら公園",
+      "region": "江戸川区",
+      "address": "江戸川区東葛西4-10-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://voyvoi.com/event/nagashimamachikai-noryo-bon-odori-taikai/",
+      "memo": "雷町会 夏まつり 8月8日(土)-9日(日) 18:00-21:00。\n*踊りがあるかは未確認。\n(8/14掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "雷町会 夏まつり 8月8日(土)-9日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W32]\n8/8 - 9",
+        "source_url": "https://voyvoi.com/event/nagashimamachikai-noryo-bon-odori-taikai/"
+      }
+    },
+    {
+      "venue_name": "豊田神社東部公園",
+      "region": "江戸川区",
+      "address": "江戸川区東瑞江1-18-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "下鎌田町会 「豊田神社奉納盆踊り大会」 8月8日(土) 18時-(例年 20時30分まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "下鎌田町会 「豊田神社奉納盆踊り大会」 8月8日(土) 18時-(例年 20時30分まで)。",
+        "month": "8月",
+        "date_text": "2026 [W30]\n8/8",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "松本天祖神社",
+      "region": "江戸川区",
+      "address": "江戸川区松本2-37-23",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "松本町会 盆踊り 8月22日(土)-23日(日)\n詳細時間不明(2022年は 19時-)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "松本町会 盆踊り 8月22日(土)-23日(日)",
+        "month": "8月",
+        "date_text": "2026 [W57]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "松江一丁目公園",
+      "region": "江戸川区",
+      "address": "江戸川区松江1-3-18",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "東松一丁目町会 盆踊り 8月22日(土) 17:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東松一丁目町会 盆踊り 8月22日(土) 17:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W49]\n8/22",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "椿ひがし公園",
+      "region": "江戸川区",
+      "address": "江戸川区瑞江3-22",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "椿東町会 盆踊り 7月18日(土) 17時-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "椿東町会 盆踊り 7月18日(土) 17時-。",
+        "month": "7月",
+        "date_text": "2026 [W5]\n7/18",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "江上しらさぎ公園",
+      "region": "江戸川区",
+      "address": "江戸川区西一之江2-1-15",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "西一之江江上町会 盆踊り 8月22日(土) 18:00-21:00。\n*24日(日)は「江上町会会館前」にて開催。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "西一之江江上町会 盆踊り 8月22日(土) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W51]\n8/22",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "浅間神社",
+      "region": "江戸川区",
+      "address": "江戸川区上篠崎1-22-31",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "上篠崎自治会 7月20日(月祝)-21日(火) 。\n・時間詳細不明(2024年は18時-)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "上篠崎自治会 7月20日(月祝)-21日(火) 。",
+        "month": "7月",
+        "date_text": "2026 [W15]\n7/20 - 21",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "片山公園",
+      "region": "江戸川区",
+      "address": "江戸川区南小岩8-8-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "memo": "片山自治会 盆踊り 8月22日(土)-23日(日) 18:00-20:50。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "片山自治会 盆踊り 8月22日(土)-23日(日) 18:00-20:50。",
+        "month": "8月",
+        "date_text": "2026 [W66]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
+      }
+    },
+    {
+      "venue_name": "瑞江公園",
+      "region": "江戸川区",
+      "address": "江戸川区西瑞江3-12-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "瑞江町会「ふれあい祭り」7月24日(金)-25日(土) 18時-。\n・踊りの詳細未確認(2023年の盆踊りは20時まで)。(20時まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "瑞江町会「ふれあい祭り」7月24日(金)-25日(土) 18時-。",
+        "month": "7月",
+        "date_text": "2026 [W20]\n7/24 - 25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
       }
     },
     {
       "venue_name": "白山神社",
-      "region": "大田区",
-      "address": "大田区東嶺町31",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/164607",
-      "memo": "嶺町町会 「盆踊り大会」 7月25日(土)-26日(日) 18:50- 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "region": "江戸川区",
+      "address": "江戸川区松江4-15",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "西一之江原町会 盆踊り 8月17(土)-18日(日) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
       "scale": "小",
       "in_tsukiji": false,
       "event": {
-        "name": "嶺町町会 「盆踊り大会」 7月25日(土)-26日(日) 18:50-",
-        "month": "7月",
-        "date_text": "2026 [K8]\n7/25 - 26",
-        "source_url": "https://otakushoren.com/event/164607"
-      }
-    },
-    {
-      "venue_name": "矢口二丁目公園",
-      "region": "大田区",
-      "address": "大田区矢口2-21-32",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://note.com/common_news/n/n4a3de6b9a249",
-      "memo": "矢口二丁目15号館自治会 盆踊り 8月1日(土)-2日(日) 18:30-21:00。\n(8/6掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "中",
-      "in_tsukiji": false,
-      "event": {
-        "name": "矢口二丁目15号館自治会 盆踊り 8月1日(土)-2日(日) 18:30-21:00。",
+        "name": "西一之江原町会 盆踊り 8月17(土)-18日(日)",
         "month": "8月",
-        "date_text": "2026 [K17]\n8/1 - 2",
-        "source_url": "https://note.com/common_news/n/n4a3de6b9a249"
+        "date_text": "2026 [W60]\n8/22 - 23",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
       }
     },
     {
-      "venue_name": "貴船神社",
-      "region": "大田区",
-      "address": "大田区大森東3-9-19",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/152348",
-      "memo": "貴船神社 「納涼民謡踊り」 7月25日(土)-26日(土) 夜7時ｰ9時。\n・例年、すっきり音頭、胎内音頭、大森甚句 他。\n＊7/24から開催予定でしたが雨天のため順延となりました。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "第二椿児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区春江町2-4-3",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "椿住宅自治会「椿祭り」9月12日(土) 18:00-。\n*踊りがあるかは未確認。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
       "scale": "小",
       "in_tsukiji": false,
       "event": {
-        "name": "貴船神社 「納涼民謡踊り」 7月25日(土)-26日(土) 夜7時ｰ9時。",
-        "month": "7月",
-        "date_text": "2026 [K7]\n7/25 - 26",
-        "source_url": "https://otakushoren.com/event/152348"
+        "name": "椿住宅自治会「椿祭り」9月12日(土) 18:00-。",
+        "month": "9月",
+        "date_text": "2026 [W73]\n9/12",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
       }
     },
     {
-      "venue_name": "道塚小学校",
-      "region": "大田区",
-      "address": "大田区新蒲田3-3-18",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/152970",
-      "memo": "道塚自治会 納涼盆踊り大会 7月30日(木)-31日(金) 18:00-20:00(最終日は19:45まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "篠崎6丁目第二広場",
+      "region": "江戸川区",
+      "address": "江戸川区篠崎町6-12-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "下篠崎町会 盆踊り 8月9日(日)-10日(月) 18:30-(例年 21時まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
       "scale": "中",
       "in_tsukiji": false,
       "event": {
-        "name": "道塚自治会 納涼盆踊り大会 7月30日(木)-31日(金) 18:00-20:00(最終日は19:45まで)。",
-        "month": "7月",
-        "date_text": "2026 [K13]\n7/30 - 31",
-        "source_url": "https://otakushoren.com/event/152970"
-      }
-    },
-    {
-      "venue_name": "雪が谷大塚駅南改札(商店街口)を降りて左側すぐ",
-      "region": "大田区",
-      "address": "大田区南雪谷2-11-24",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/14605",
-      "memo": "雪谷商店街「雪谷盆踊り」 7月25日(土)-26日(日) 。\n盆踊りは 19:00より。\n＊小雨決行、雨天中止 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "大",
-      "in_tsukiji": false,
-      "event": {
-        "name": "雪谷商店街「雪谷盆踊り」 7月25日(土)-26日(日) 。",
-        "month": "7月",
-        "date_text": "2026 [K9]\n7/25 - 26",
-        "source_url": "https://otakushoren.com/event/14605"
-      }
-    },
-    {
-      "venue_name": "養源寺",
-      "region": "大田区",
-      "address": "大田区池上1-31-1",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/165129",
-      "memo": "精霊送り実行委員会「養源寺 精霊送り盆踊り大会」 8月15日(土) 18:00-21:00。\n精霊送り法要/ 予定では初日17:30-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "小",
-      "in_tsukiji": false,
-      "event": {
-        "name": "精霊送り実行委員会「養源寺 精霊送り盆踊り大会」 8月15日(土) 18:00-21:00。",
+        "name": "下篠崎町会 盆踊り 8月9日(日)-10日(月) 18:30-(例年 21時まで)。",
         "month": "8月",
-        "date_text": "2026 [K21]\n8/15",
-        "source_url": "https://otakushoren.com/event/165129"
+        "date_text": "2026 [W37]\n8/9 - 10",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
       }
     },
     {
-      "venue_name": "鵜の木三丁目中央児童公園",
-      "region": "大田区",
-      "address": "大田区鵜の木3-24-16",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://news.p-mom.net/tokyo/ota/2026/07/13/unokibonodori/",
-      "memo": "鵜の木三丁目町会「納涼盆踊り」 7月22日(水)-23日(木) 19:00-21:00。\n予備日 7月24日(金)\n(7/23昼掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "venue_name": "篠崎二丁目公園",
+      "region": "江戸川区",
+      "address": "江戸川区篠崎町2-226",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "篠崎本郷町会 8月7日(金)-8日(土)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
       "scale": "中",
       "in_tsukiji": false,
       "event": {
-        "name": "鵜の木三丁目町会「納涼盆踊り」 7月22日(水)-23日(木) 19:00-21:00。",
+        "name": "篠崎本郷町会 8月7日(金)-8日(土)。",
+        "month": "8月",
+        "date_text": "2026 [W29]\n8/7 - 8",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "篠崎小学校",
+      "region": "江戸川区",
+      "address": "江戸川区篠崎町3-2-18",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "篠崎仲町自治会 7月24日(金)-25日(土) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "篠崎仲町自治会 7月24日(金)-25日(土)",
         "month": "7月",
-        "date_text": "2026 [K2]\n7/22 - 23",
-        "source_url": "https://news.p-mom.net/tokyo/ota/2026/07/13/unokibonodori/"
+        "date_text": "2026 [W17]\n7/24 - 25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "篠崎第四小学校",
+      "region": "江戸川区",
+      "address": "江戸川区篠崎町8-12-8",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "篠崎七丁目町会「篠七盆踊り大会」8月28日(金)-29日(土)。\n時間詳細不明(2020年は午後6時30分-9時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "篠崎七丁目町会「篠七盆踊り大会」8月28日(金)-29日(土)。",
+        "month": "8月",
+        "date_text": "2026 [W70]\n8/28 - 29",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "興宮神社",
+      "region": "江戸川区",
+      "address": "江戸川区興宮町18-26",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://odottar.com/event/1f661a0a41",
+      "memo": "興宮自治会 盆踊り 8月22日(土)-23日(日)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "興宮自治会 盆踊り 8月22日(土)-23日(日)。",
+        "month": "8月",
+        "date_text": "2026 [W54]\n8/22 - 23",
+        "source_url": "https://odottar.com/event/1f661a0a41"
+      }
+    },
+    {
+      "venue_name": "船堀スポーツ公園",
+      "region": "江戸川区",
+      "address": "江戸川区船堀6-6-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://tokyofesta.com/23ku/32554/",
+      "memo": "東京土建一般労働組合 江戸川支部「第36回 東京土建まつり」 8月22日(土) 15:30-20:30。\n盆踊りは17:30-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東京土建一般労働組合 江戸川支部「第36回 東京土建まつり」 8月22日(土) 15:30-20:30。",
+        "month": "8月",
+        "date_text": "2026 [W50]\n8/22",
+        "source_url": "https://tokyofesta.com/23ku/32554/"
+      }
+    },
+    {
+      "venue_name": "西一之江香取神社",
+      "region": "江戸川区",
+      "address": "江戸川区西一之江3-35-22",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://odottar.com/event/334ebfb0e8",
+      "memo": "松江東町会 盆踊り 8月22日(土)-23日(日) 19:00-。\n・22日(土)は盆踊り19:00-21:00、\n・23日(日)は盆踊り18:00-20:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "松江東町会 盆踊り 8月22日(土)-23日(日) 19:00-。",
+        "month": "8月",
+        "date_text": "2026 [W55]\n8/22 - 23",
+        "source_url": "https://odottar.com/event/334ebfb0e8"
+      }
+    },
+    {
+      "venue_name": "西瑞江四丁目第二児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区西瑞江4-18",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "西瑞江四丁目町会 盆踊り 7月25日(土) 17:00-21:00。\n・盆踊りは 18:30-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "西瑞江四丁目町会 盆踊り 7月25日(土) 17:00-21:00。",
+        "month": "7月",
+        "date_text": "2026 [W21]\n7/25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "谷河内みなみ公園",
+      "region": "江戸川区",
+      "address": "江戸川区瑞江1-30-3",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "memo": "谷河内南町会 「盆踊り大会」 10月3日(土) 15時-。\n・踊りの詳細時間不明(2025年の踊りは 18:00-20:30)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "谷河内南町会 「盆踊り大会」 10月3日(土) 15時-。",
+        "month": "10月",
+        "date_text": "2026 [W76]\n10/3",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
+      }
+    },
+    {
+      "venue_name": "谷河内日枝神社",
+      "region": "江戸川区",
+      "address": "江戸川区谷河内1-15-20",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "谷河内北町会 7月18日(土)-19日(日) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "谷河内北町会 7月18日(土)-19日(日)",
+        "month": "7月",
+        "date_text": "2026 [W11]\n7/18 - 19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "貞明児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区松江7-12-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html",
+      "memo": "貞明町会 盆踊り 7月18日(土) 16:00-21:00。\n・盆踊りは 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "貞明町会 盆踊り 7月18日(土) 16:00-21:00。",
+        "month": "7月",
+        "date_text": "2026 [W7]\n7/18",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/chiikicommunity/johokyoku/chuo/event/tyuoutikukakigyoji.html"
+      }
+    },
+    {
+      "venue_name": "長島香取神社境内",
+      "region": "江戸川区",
+      "address": "江戸川区東葛西2-34-20",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://voyvoi.com/event/nagashimamachikai-noryo-bon-odori-taikai/",
+      "memo": "長島町会 納涼盆踊り大会 8月8日(土)-9日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "長島町会 納涼盆踊り大会 8月8日(土)-9日(日) 18:00-21:00。",
+        "month": "8月",
+        "date_text": "2026 [W31]\n8/8 - 9",
+        "source_url": "https://voyvoi.com/event/nagashimamachikai-noryo-bon-odori-taikai/"
+      }
+    },
+    {
+      "venue_name": "高田公園",
+      "region": "江戸川区",
+      "address": "江戸川区新堀2-20-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "新堀町会 7月18日(土)-19日(日)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "新堀町会 7月18日(土)-19日(日)。",
+        "month": "7月",
+        "date_text": "2026 [W8]\n7/18 - 19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "鹿骨一丁目児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区鹿骨1-24-4",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "鹿骨一丁目町会 7月18日(土)-19日(日)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "鹿骨一丁目町会 7月18日(土)-19日(日)。",
+        "month": "7月",
+        "date_text": "2026 [W9]\n7/18 - 19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "鹿骨五丁目児童遊園",
+      "region": "江戸川区",
+      "address": "江戸川区鹿骨5-34-16",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "鹿骨五丁目町会 「盆踊り大会」 7月24日(金)-25日(土)。\n時間詳細不明(2018年は午後6時30分-9時30分)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "鹿骨五丁目町会 「盆踊り大会」 7月24日(金)-25日(土)。",
+        "month": "7月",
+        "date_text": "2026 [W16]\n7/24 - 25",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "鹿骨四丁目公園",
+      "region": "江戸川区",
+      "address": "江戸川区鹿骨4-8-19",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "鹿骨四丁目町会 「納涼盆踊り大会」 7月18日(土)-19日(日)。\n時間詳細不明(2018年は午後6時30分-9時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "鹿骨四丁目町会 「納涼盆踊り大会」 7月18日(土)-19日(日)。",
+        "month": "7月",
+        "date_text": "2026 [W12]\n7/18 - 19",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "鹿骨東小学校",
+      "region": "江戸川区",
+      "address": "江戸川区鹿骨3-7-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "鹿骨三丁目町会 「鹿三盆踊り大会」 7月25日(土)-26日(日)。\n時間詳細不明(2018年は午後6時-9時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "鹿骨三丁目町会 「鹿三盆踊り大会」 7月25日(土)-26日(日)。",
+        "month": "7月",
+        "date_text": "2026 [W24]\n7/25 - 26",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
+      }
+    },
+    {
+      "venue_name": "鹿骨第三広場",
+      "region": "江戸川区",
+      "address": "江戸川区西篠崎2-5-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html",
+      "memo": "西篠崎町会 7月30日(木)-31日(金)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "西篠崎町会 7月30日(木)-31日(金)。",
+        "month": "7月",
+        "date_text": "2026 [W27]\n7/30 - 31",
+        "source_url": "https://www.city.edogawa.tokyo.jp/e037/kurashi/chiikicommunity/johokyoku/shishibone/event/bonodori.html"
       }
     }
   ],
   "missing": [
     {
-      "venue": "おーたふる大田区商店街",
-      "region_hint": "大田区",
+      "venue": "烏山駅前商店街",
+      "region_hint": "世田谷区",
       "status": "research",
       "mapped_to": null,
       "reason": "",
       "priority": "high",
-      "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
-      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
+      "venue": "祖師谷みなみ商店街",
+      "region_hint": "世田谷区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "high",
+      "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
       "in_tsukiji_30min_guess": false
     }
   ]

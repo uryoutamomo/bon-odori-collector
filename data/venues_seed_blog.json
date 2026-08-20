@@ -1,204 +1,15 @@
 [
   {
-    "venue": "京橋エドグラン1階中央通り側広場",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "区立堀留児童公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "十思公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "堀留公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "奉讃会・築地本願寺",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "日本橋小学校",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "日本橋社会教育会館",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "明石小学校",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "月島第二児童公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "浜町公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "箱崎公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "築地本願寺",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "築地社会教育会館",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "鉄砲洲児童公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "雨天時は箱崎川第二公園",
-    "region_hint": "中央区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "和泉公園",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "商店街",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "山王日枝神社",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "神田児童公園",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "芳林公園",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西神田公園",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "靖国神社",
-    "region_hint": "千代田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "おかちまちパンダ広場",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "さかもと朝顔広場",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -217,6 +28,15 @@
   },
   {
     "venue": "上野公園",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "上野小学校",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -253,6 +73,15 @@
   },
   {
     "venue": "御徒町南口駅前広場",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "旧坂本小学校",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -324,1064 +153,1217 @@
     "needs_review": true
   },
   {
-    "venue": "しながわ中央公園",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
+    "venue": "あずま通り商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "上神明小学校",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
+    "venue": "三峰公園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "京陽小学校",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
+    "venue": "上北沢小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "八潮公園",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
+    "venue": "下代田児童遊園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "内ヘリポート広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
+    "venue": "下北沢あずま通り商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "下高井戸商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "世田谷駅前商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "久富稲荷神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "二子玉川西地区ふれあい広場",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "京王線芦花公園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "代田八幡神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "八幡小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
     "venue": "前広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "多目的広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "大井銀座商店街",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "大井駅前中央通り商店街",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "天妙国寺",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "宮前小学校",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "小山八幡神社",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "小山台小学校",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "振興組合・大井光学通り商店街",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "日本民謡会館",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "第二延山小学校",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "第四日野小学校",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "荏原文化センター広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西大井広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西小山駅前広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "鮫洲入江広場",
-    "region_hint": "品川区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "向島百花会館",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "江東橋竪川親水公園",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "立両国中学校",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "錦糸公園",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "錦糸町商店街",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "スポーツエンターテイメント広場",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "亀戸四丁目ふれあい公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "交流広場",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "南砂一丁目北公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "南開橋西側広場",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "大島五丁目公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "川南公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "川南海辺公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "時の鐘広場",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "東砂2丁目団地",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "東砂3丁目第二公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "水神小学校",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "江東公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "江東東砂二郵便局前広場",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "浅間竪川小学校",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "第一大島小学校",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "総合区民センター",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "豊洲3丁目公園",
-    "region_hint": "江東区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "おまつり広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "サカス広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "ハマサイト前広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "元神明宮天祖神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "増上寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "大本山増上寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "大殿前広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "平河浄土寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "御田八幡神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "桜田公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "浄土寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "猿町公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "白金児童遊園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "白金台どんぐり児童遊園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "芝公園",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "芝浦三丁目なぎさ通りお祭り広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西久保八幡神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "豊岡町神輿殿前広場",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "赤坂氷川神社",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "赤坂浄土寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "青山善光寺",
-    "region_hint": "港区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "おーたふる大田区商店街",
-    "region_hint": "大田区",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "さくら通り三丁目公園",
-    "region_hint": "大田区",
+    "venue": "千歳船橋参商会商店街",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "下丸子天祖神社",
-    "region_hint": "大田区",
+    "venue": "千歳船橋駅前広場",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "京浜蒲田商店街",
-    "region_hint": "大田区",
+    "venue": "南口広場",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "六所神社",
-    "region_hint": "大田区",
+    "venue": "大原GOGO公園",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "南蒲田第二児童公園",
-    "region_hint": "大田区",
+    "venue": "大蔵氷川神社",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "大森中八幡神社",
-    "region_hint": "大田区",
+    "venue": "太子堂小学校",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "大森南4丁目公園",
-    "region_hint": "大田区",
+    "venue": "奥沢小学校",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "大森西7丁目公園",
-    "region_hint": "大田区",
+    "venue": "妙法寺",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "大森西交通公園",
-    "region_hint": "大田区",
+    "venue": "宇奈根氷川神社",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "延命寺",
-    "region_hint": "大田区",
+    "venue": "宇山稲荷神社",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "東八幡神社",
-    "region_hint": "大田区",
+    "venue": "小田急線成城学園前南口広場",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "池上本門寺",
-    "region_hint": "大田区",
+    "venue": "尾山台商栄会商店街",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "浦守稲荷神社",
-    "region_hint": "大田区",
+    "venue": "希望ヶ丘団地",
+    "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "廻沢稲荷神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "明大前商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "松沢小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "横根稲荷神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "池ノ上小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "池尻稲荷神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "深沢公園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "瀬田中学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "烏山駅前商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "烏山駅前通り商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "玉川中町公園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "用賀小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "砧八丁目児童遊園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "祖師ヶ谷大蔵駅前ウルトラマン広場",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "祖師谷みなみ商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "祖師谷商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "祖師谷昇進会商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "稲荷森稲荷神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "経堂小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "芦花公園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "通り商店街",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "野毛六所神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "野沢龍雲寺",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "鎌田天神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "長圓寺",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "駒沢ふれあい広場",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "駒沢小学校",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "駒沢緑泉公園",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "くじら児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "こどもの広場",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "なぎさニュータウン内中央広場",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "なでしこ児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "ひかり児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "上小岩天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "下小岩沖天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "下鎌田小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "下鎌田東小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "中割天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "中曽根天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "二之江さくら公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "五分一にまつ公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "五北天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "八雲神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "共栄商店街",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "内広場",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "北小岩小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "北篠崎二丁目児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "北葛西コミュニティ会館",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "南小岩三丁目第二児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "南小岩会館",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "南小岩六丁目児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "南小岩第二小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "南篠崎公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "向い天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "善養寺",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "四南広場",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "大杉一丁目公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "大杉小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "大杉第二小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "小岩田天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "山王神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "平井小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "平和公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "弥生公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "本一色小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東小岩天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東小岩小学校",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東小岩滝児童遊園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東小松川東公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東小松川白髭神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東小松川香取神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東葛西さくら公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "東部公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "松本天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "松江一丁目公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "松江二丁目児童公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "椿ひがし公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "椿天祖神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "江上しらさぎ公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "江上町会会館",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "江戸川中央公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "浅間神社",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "片山公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "瑞江公園",
+    "region_hint": "江戸川区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
     "venue": "白山神社",
-    "region_hint": "大田区",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "矢口二丁目公園",
-    "region_hint": "大田区",
+    "venue": "第二椿児童遊園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "貴船神社",
-    "region_hint": "大田区",
+    "venue": "篠崎6丁目第二広場",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "道塚小学校",
-    "region_hint": "大田区",
+    "venue": "篠崎二丁目公園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "雪谷商店街",
-    "region_hint": "大田区",
+    "venue": "篠崎小学校",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "養源寺",
-    "region_hint": "大田区",
+    "venue": "篠崎第四小学校",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "鵜の木三丁目中央児童公園",
-    "region_hint": "大田区",
+    "venue": "興宮神社",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "本郷小学校",
-    "region_hint": "文京区",
+    "venue": "船堀スポーツ公園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "文京区の盆おどり情報 2026年1月より [Bunkyo-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "根津神社",
-    "region_hint": "文京区",
+    "venue": "船堀団地",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "文京区の盆おどり情報 2026年1月より [Bunkyo-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "くどうの広場",
-    "region_hint": "新宿区",
+    "venue": "西一之江香取神社",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "ファンモアタイム広場",
-    "region_hint": "新宿区",
+    "venue": "西瑞江四丁目第二児童遊園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "三角広場",
-    "region_hint": "新宿区",
+    "venue": "谷河内みなみ公園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "下落合公園",
-    "region_hint": "新宿区",
+    "venue": "谷河内日枝神社",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "北新宿公園",
-    "region_hint": "新宿区",
+    "venue": "豊田神社",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "北柏木公園",
-    "region_hint": "新宿区",
+    "venue": "貞明児童遊園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "大京公園",
-    "region_hint": "新宿区",
+    "venue": "都営船堀団地",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "大京町公園",
-    "region_hint": "新宿区",
+    "venue": "長島香取神社",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "太宗寺",
-    "region_hint": "新宿区",
+    "venue": "高田公園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "新宿中央公園",
-    "region_hint": "新宿区",
+    "venue": "鹿骨一丁目児童遊園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "新宿住友ビル三角広場",
-    "region_hint": "新宿区",
+    "venue": "鹿骨中学校",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "新小川公園",
-    "region_hint": "新宿区",
+    "venue": "鹿骨五丁目児童遊園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "旧四谷第四小学校",
-    "region_hint": "新宿区",
+    "venue": "鹿骨四丁目公園",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "杉大門通り商店街",
-    "region_hint": "新宿区",
+    "venue": "鹿骨東小学校",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   },
   {
-    "venue": "歌舞伎町シネシティ広場",
-    "region_hint": "新宿区",
+    "venue": "鹿骨第三広場",
+    "region_hint": "江戸川区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "歌舞伎町商店街",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "水の広場",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "清水川橋公園",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "神楽坂商店街",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "花園公園",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "花園神社",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "荒木公園",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "落合第二小学校",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "西坂公園",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "都立戸山公園",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "鶴巻小学校",
-    "region_hint": "新宿区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "実相会館",
-    "region_hint": "目黒区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "目黒区の盆おどり情報 2026年1月より [Meguro-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "桜フェスタ商店街",
-    "region_hint": "目黒区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "目黒区の盆おどり情報 2026年1月より [Meguro-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "正覚寺",
-    "region_hint": "目黒区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "目黒区の盆おどり情報 2026年1月より [Meguro-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "目黒川船入場広場",
-    "region_hint": "目黒区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "目黒区の盆おどり情報 2026年1月より [Meguro-q]",
+    "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
     "method": "blog_body",
     "needs_review": true
   }
