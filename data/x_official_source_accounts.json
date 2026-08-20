@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -249,7 +249,7 @@
     },
     {
       "handle": "@akibaruki",
-      "name": "秋葉るき⚡️JK1EYX秋コレ編集長くそみそテクニック公式 秋葉原ウイスキーモデル 講武稲荷御朱印絵",
+      "name": "秋葉るき⚡️JK1EYX秋コレ編集長くそみそ公式 秋葉原神社御朱印＆祭絵師 秋葉原ウイスキーモデル",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -525,6 +525,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@cnnn_ryosenji",
+      "name": "霊山寺公式 ちんねんさん",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@cpyukie",
       "name": "奥村ユキエ 大阪府議会議員",
       "source_type": "official",
@@ -535,6 +543,14 @@
     {
       "handle": "@csakamoto_sakai",
       "name": "坂本ちよこ 堺市議会議員(大阪維新の会)堺市北区",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@cyclesakura",
+      "name": "しきね文裕＠佐倉市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4912,6 +4928,14 @@
     {
       "handle": "@showahatasai",
       "name": "【公式】旗ケ岡祭実行委員会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@showakanko",
+      "name": "昭和村観光協会（福島県）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
