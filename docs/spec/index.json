@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T14:08:01Z",
-  "generated_for_commit": "ecff012",
+  "generated_at": "2026-08-21T13:24:29Z",
+  "generated_for_commit": "708e24a",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -158,7 +158,7 @@
         "tests/test_x_post_extraction_e0x.py",
         "tests/test_x_post_extraction_songs.py"
       ],
-      "updated_for": "d720f46",
+      "updated_for": "0cf9058",
       "path": "docs/spec/L1/02-judgment.md",
       "owned_files": [
         "apply_x_extraction_results.py",
@@ -169,12 +169,17 @@
         "collection_support/x_source_officiality.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.5",
-      "revision_count": 6,
+      "version": "1.6",
+      "revision_count": 7,
       "history": [
+        {
+          "commit": "708e24a",
+          "date": "2026-08-21",
+          "subject": "Fix E0X text date extraction gaps (#250)"
+        },
         {
           "commit": "22a8e7d",
           "date": "2026-08-16",
@@ -1639,7 +1644,7 @@
       "spec": "L1-judgment",
       "title": "本文に無い日付・会場・引用からレポートを作らない",
       "tests": [
-        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event"
+        "tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_machine_dates_extracts_elided_range_endpoints_without_clock_times"
       ],
       "has_test": true
     },
