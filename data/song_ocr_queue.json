@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 84,
+  "count": 85,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1341,6 +1341,24 @@
         "https://pbs.twimg.com/media/HP7KAkEaMAEwBaV.jpg"
       ],
       "text": "8月15日(土)\n#PSJあいち戦国姫隊 演舞\n名古屋城 西之丸A・盆踊り櫓ステージ\n\nセットリスト\n①めでたやの\n②名乗乃口上\n③あいちめいふつかたり（オリジナルver.）\n④あいらぶあいち\n\n先日の「DAKEじゃない」、この日の「めいふつかたり」と今のお身体では稀有な演目が続きます…特に江姫、ご苦労さま。 https://t.co/IBDFSwNTu4",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "f85d1a28a708ca32",
+      "status": "needs_ocr",
+      "account": "@mamimami298",
+      "url": "https://x.com/mamimami298/status/2090425528000065696",
+      "tweet_id": "2090425528000065696",
+      "date": "2026-08-20T13:07:38+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQKu12fakAA5_3H.jpg",
+        "https://t.co/zWQwGaxfwu",
+        "pic.x.com/zWQwGaxfwu",
+        "https://pbs.twimg.com/media/HQKu12rbcAAnPCb.jpg",
+        "https://pbs.twimg.com/media/HQKu12lawAEMmtW.jpg",
+        "https://pbs.twimg.com/media/HQKu12haUAAfBQI.jpg"
+      ],
+      "text": "今日は、JAあきがわ本店の盆踊り！\n各支部の方々が揃いの浴衣に身を包み、入場行進して櫓の周りに輪になり、そのまま盆踊り。\n雨で第3部の２番目、五日市支部までで終了したのが残念。\nセトリの写真はツリーに。 https://t.co/zWQwGaxfwu",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

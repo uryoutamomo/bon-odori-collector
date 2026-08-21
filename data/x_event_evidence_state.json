@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2025-08-25T00:00:00+00:00",
-  "window_end": "2025-08-28T00:00:00+00:00",
+  "window_start": "2025-08-28T00:00:00+00:00",
+  "window_end": "2025-08-31T00:00:00+00:00",
   "selected_handles": [
     "@natsutr_bon",
     "@uja31",
@@ -41,12 +41,12 @@
     0,
     1
   ],
-  "pages_completed": 14,
-  "tweets_scanned": 217,
-  "evidence_detected": 43,
+  "pages_completed": 11,
+  "tweets_scanned": 168,
+  "evidence_detected": 33,
   "pending_evidence": [],
-  "started_at": "2026-08-20T07:11:32.643277+00:00",
-  "updated_at": "2026-08-20T07:12:15.314826+00:00",
+  "started_at": "2026-08-21T07:14:32.902307+00:00",
+  "updated_at": "2026-08-21T07:15:16.384799+00:00",
   "window_history": [
     {
       "window_start": "2025-08-16T00:00:00+00:00",
@@ -80,10 +80,21 @@
       "pages_completed": 12,
       "tweets_scanned": 189,
       "evidence_detected": 49
+    },
+    {
+      "window_start": "2025-08-25T00:00:00+00:00",
+      "window_end": "2025-08-28T00:00:00+00:00",
+      "covered_until": "2025-08-28T00:00:00+00:00",
+      "completed_at": "2026-08-20T07:12:15.318109+00:00",
+      "reviewed_at": "2026-08-21T07:14:32.902307+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 14,
+      "tweets_scanned": 217,
+      "evidence_detected": 43
     }
   ],
-  "previous_covered_until": "2025-08-25T00:00:00+00:00",
-  "completed_at": "2026-08-20T07:12:15.318109+00:00",
-  "covered_until": "2025-08-28T00:00:00+00:00",
-  "pending_cleared_at": "2026-08-20T07:12:20.295253+00:00"
+  "previous_covered_until": "2025-08-28T00:00:00+00:00",
+  "completed_at": "2026-08-21T07:15:16.387499+00:00",
+  "covered_until": "2025-08-31T00:00:00+00:00",
+  "pending_cleared_at": "2026-08-21T07:15:21.828989+00:00"
 }

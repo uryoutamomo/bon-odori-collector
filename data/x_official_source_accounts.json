@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20",
+  "updated_at": "2026-08-21",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -517,6 +517,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@choshi_flat_com",
+      "name": "銚子市観光協会【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@chuo_machi_info",
       "name": "中央区町会・自治会ネット",
       "source_type": "official",
@@ -782,7 +790,7 @@
     },
     {
       "handle": "@fusawajunko",
-      "name": "ふうさわ純子 台東区議会議員 れいわ新選組",
+      "name": "ふうさわ純子 台東区議会議員 いのちの党",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2333,6 +2341,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@kitaku_osaka",
+      "name": "大阪市北区役所",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@kitayamamura",
       "name": "【公式】北山村観光協会",
       "source_type": "official",
@@ -3166,6 +3182,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@minatokuyakusyo",
+      "name": "大阪市港区役所",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@minnanonakama",
       "name": "なかま建二 公明党 東大和市議会議員 元議長 防災士",
       "source_type": "official",
@@ -3833,6 +3857,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@niutsuhimejinja",
+      "name": "【世界遺産】丹生都比売神社",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@niwaka2222",
       "name": "草加高砂八幡神社@に若会",
       "source_type": "official",
@@ -4434,6 +4466,14 @@
       "pending_since": "2026-08-13"
     },
     {
+      "handle": "@rokunakachoukai",
+      "name": "六中自治会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@ruikozuka",
       "name": "Ruiko Kozuka 炎上寺ルイコ",
       "source_type": "official",
@@ -4854,9 +4894,19 @@
       "handle": "@shinagawakanko",
       "name": "しながわ観光協会（東京 品川のおでかけ情報)",
       "source_type": "official",
-      "linked_events": [],
+      "linked_events": [
+        {
+          "series_id": "ser_8169a85a79d78758",
+          "series_name": "大井どんたく夏まつり",
+          "ward": "品川区",
+          "confidence": "confirmed",
+          "evidence_urls": [
+            "https://x.com/shinagawakanko/status/2090641209819881579"
+          ]
+        }
+      ],
       "decided_by": "machine",
-      "tier": "unlinked"
+      "tier": "dormant"
     },
     {
       "handle": "@shingo_nerima",
@@ -4886,6 +4936,14 @@
     {
       "handle": "@shinkotoni_chuo",
       "name": "新琴似中央商店会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@shinkyogoku150",
+      "name": "京都　新京極商店街【公式】",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5046,6 +5104,14 @@
     {
       "handle": "@sumida_official",
       "name": "墨田区役所",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@sumiyoshi_iris",
+      "name": "大阪市住吉区役所",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5422,6 +5488,14 @@
     {
       "handle": "@tochigishikanko",
       "name": "栃木市観光協会【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@tochiokankou",
+      "name": "【公式】(一社)栃尾観光協会",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
