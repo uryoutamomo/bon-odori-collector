@@ -16,6 +16,51 @@ def voice(tweet_id, text, **extra):
 
 
 class XPostExtractionE0XTest(unittest.TestCase):
+    def test_machine_dates_extracts_elided_range_endpoints_without_clock_times(self):
+        cases = {
+            "📅8/21(金)-23(日) 18:00-20:30": ["2026-08-21", "2026-08-23"],
+            "8月22・23日 18時開始": ["2026-08-22", "2026-08-23"],
+            "8/21〜23": ["2026-08-21", "2026-08-23"],
+            "8月20日と21日": ["2026-08-20", "2026-08-21"],
+            "8月22日、23日": ["2026-08-22", "2026-08-23"],
+            "8/19.20開催": ["2026-08-19", "2026-08-20"],
+            "8/29(土)30(日)": ["2026-08-29", "2026-08-30"],
+        }
+        for text, expected in cases.items():
+            with self.subTest(text=text):
+                self.assertEqual(machine_dates(text, "2026-08-19T00:00:00+00:00"), expected)
+        for text in ("18:00-20:30", "8/2-18:00", "8月2日〜18時"):
+            with self.subTest(text=text):
+                expected = ["2026-08-02"] if text.startswith("8") else []
+                self.assertEqual(machine_dates(text, "2026-08-19T00:00:00+00:00"), expected)
+
+    def test_machine_dates_extracts_reiwa_dates_without_posted_year_leakage(self):
+        self.assertEqual(
+            machine_dates("（R8.8.19）と令和8年8月20日", "2025-08-01T00:00:00+00:00"),
+            ["2026-08-19", "2026-08-20"],
+        )
+        self.assertEqual(
+            machine_dates("R8.13.19／令和8年8月32日／令和0年8月19日", "2026-08-01T00:00:00+00:00"),
+            [],
+        )
+
+    def test_machine_dates_extracts_weekday_qualified_compact_dates_only(self):
+        self.assertEqual(machine_dates("開催日 260819(木)", "2026-08-01T00:00:00+00:00"), ["2026-08-19"])
+        self.assertEqual(
+            machine_dates("受付番号260819、投稿ID2090277666263839231", "2026-08-01T00:00:00+00:00"),
+            [],
+        )
+
+    def test_machine_dates_resolves_relative_day_only_from_prior_date(self):
+        self.assertEqual(
+            machine_dates("8/19（水）は初日。明日（20日）はもっと盛り上がる", "2026-08-19T00:00:00+00:00"),
+            ["2026-08-19", "2026-08-20"],
+        )
+        for text in ("明日（20日）は開催", "8/19、本日（20日）も開催", "8/19、明日（21日）も開催"):
+            with self.subTest(text=text):
+                expected = ["2026-08-19"] if "8/19" in text else []
+                self.assertEqual(machine_dates(text, "2026-08-19T00:00:00+00:00"), expected)
+
     def test_build_keeps_non_bon_post_and_state_reissue_rules(self):
         now=datetime(2026,8,16,tzinfo=timezone.utc); voices=[voice("a","普通の投稿"),voice("b","普通の投稿")]
         packets=build(voices,{"tweets":{"a":{"issued_at":"2026-08-16T00:00:00+00:00","batch_id":"old","applied_at":None}}},now=now)

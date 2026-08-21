@@ -34,7 +34,7 @@ verified_by:
   - tests/test_event_evidence.py
   - tests/test_x_post_extraction_e0x.py
   - tests/test_x_post_extraction_songs.py
-updated_for: d720f46
+updated_for: 0cf9058
 ---
 
 # 自動判断サブシステム
@@ -77,8 +77,17 @@ updated_for: d720f46
 
 ### INV-XPE-002 本文に無い日付・会場・引用からレポートを作らない
 
-- **内容**: 照合に失敗したイベントだけを除外し、同じ投稿の他イベントは巻き込まない。
-- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event`
+- **内容**: `machine_extracted_dates` は本文に書かれた通常日付、月を省略した範囲終端、令和表記、曜日つき6桁日付を拾う。
+  日だけの相対表現は、同じ投稿内の直前の日付から翌日だと証明できる場合だけ補う。「本日」「今週末」のように投稿日依存の推測はしない。
+  apply時は照合に失敗したイベントだけを除外し、同じ投稿の他イベントは巻き込まない。
+- **なぜ**: 本文に実在する開催日を機械側が拾えないと正しいLLM回答を `date_not_in_text` で捨てる一方、投稿日から相対日を広く推測すると本文に無い日付を通してしまうため。
+- **破れたときの症状**: 正しい範囲終端・和暦・6桁日付のレポートが大量に却下される／投稿に無い日付の候補がレビュー受信箱へ流れる。
+- **守っているコード**: `build_x_extraction_packets.py` の `machine_dates()`、`apply_x_extraction_results.py` の `apply()`
+- **守っているテスト**: `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_machine_dates_extracts_elided_range_endpoints_without_clock_times`、
+  `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_machine_dates_extracts_reiwa_dates_without_posted_year_leakage`、
+  `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_machine_dates_extracts_weekday_qualified_compact_dates_only`、
+  `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_machine_dates_resolves_relative_day_only_from_prior_date`、
+  `tests/test_x_post_extraction_e0x.py::XPostExtractionE0XTest::test_one_bad_event_does_not_discard_a_second_valid_event`
 
 ### INV-XPE-003 5点未満からE0レポートを作らない
 
