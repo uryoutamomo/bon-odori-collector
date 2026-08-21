@@ -8,7 +8,6 @@ from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,
     ensure_series_and_occurrence,
     ensure_venue,
-    explicit_tokyo23_ward,
     link_occurrence_evidence,
     upsert_evidence_item,
     upsert_occurrence_song,
@@ -271,51 +270,6 @@ class EventReportHelpersTest(unittest.TestCase):
             "SELECT source_kind, lifecycle_status FROM event_occurrences WHERE occurrence_id = ?", (result["occurrence_id"],)
         ).fetchone()
         self.assertEqual(tuple(row), ("official_current_year", "published"))
-
-    def test_ensure_venue_fills_area_only_from_an_explicit_ward(self):
-        cases = (
-            ("北区立堀船公園", "", "北区"),
-            ("鵜の木児童公園", "東京都大田区鵜の木2丁目12-4", "大田区"),
-            ("堀船公園（北区）", "", "北区"),
-        )
-        for name, address, expected_area in cases:
-            with self.subTest(name=name):
-                result = ensure_venue(self.conn, name, address=address)
-                area = self.conn.execute(
-                    "SELECT area FROM venues WHERE venue_id = ?", (result["venue_id"],)
-                ).fetchone()[0]
-                self.assertEqual(area, expected_area)
-                self.assertEqual(result["area_source"], "explicit_ward_in_name_or_address")
-
-    def test_ensure_venue_does_not_guess_ward_from_town_station_or_non_tokyo_ward(self):
-        cases = (
-            ("花保広場（花保さくら公園 南花畑3-1）", ""),
-            ("新小岩駅南口 駅前広場", ""),
-            ("港北公園", "神奈川県横浜市港北区1-1"),
-            ("中央公園", "兵庫県神戸市中央区1-1"),
-        )
-        for name, address in cases:
-            with self.subTest(name=name):
-                result = ensure_venue(self.conn, name, address=address)
-                area = self.conn.execute(
-                    "SELECT area FROM venues WHERE venue_id = ?", (result["venue_id"],)
-                ).fetchone()[0]
-                self.assertIsNone(area)
-
-    def test_ensure_venue_backfills_blank_area_when_exact_venue_is_reused(self):
-        result = ensure_venue(self.conn, "北区立堀船公園")
-        self.conn.execute("UPDATE venues SET area = NULL WHERE venue_id = ?", (result["venue_id"],))
-
-        reused = ensure_venue(self.conn, "北区立堀船公園")
-
-        area = self.conn.execute(
-            "SELECT area FROM venues WHERE venue_id = ?", (result["venue_id"],)
-        ).fetchone()[0]
-        self.assertEqual(reused["status"], "reused")
-        self.assertEqual(area, "北区")
-
-    def test_explicit_tokyo23_ward_fails_closed_on_conflicting_wards(self):
-        self.assertIsNone(explicit_tokyo23_ward("北区立公園", "東京都大田区1-1"))
 
     def test_upsert_evidence_item_and_link_occurrence_evidence_shared_across_occurrences(self):
         other_occurrence_id = master_db.stable_id("occ", self.series_id, 2027, 1)

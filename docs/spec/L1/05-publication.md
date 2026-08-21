@@ -30,7 +30,7 @@ verified_by:
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: 0c260ee
+updated_for: bbf0900
 ---
 
 # 公開サブシステム

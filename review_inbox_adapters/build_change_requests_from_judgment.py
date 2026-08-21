@@ -18,6 +18,7 @@ import sqlite3
 from pathlib import Path
 from typing import Any
 
+from event_model.place_dictionary import TOKYO_23_WARDS
 from master_rdb.master_db import MASTER_DB, stable_id
 from review_inbox_adapters.local_judgment_contract import IDENTITY_MATCH_NONE, IDENTITY_PAYLOAD_FIELDS
 
@@ -83,8 +84,15 @@ def _source_block(report: dict[str, Any]) -> dict[str, Any]:
 def _venue_block(identity: dict[str, str], proposal: dict[str, Any]) -> dict[str, Any]:
     if identity["venue_match"] != IDENTITY_MATCH_NONE:
         return {"venue_id": identity["venue_match"]}
-    name = (proposal.get("venue") or {}).get("name")
-    return {"name": name} if name else {}
+    proposed_venue = proposal.get("venue") or {}
+    name = proposed_venue.get("name")
+    if not name:
+        return {}
+    venue = {"name": name}
+    area = proposed_venue.get("area")
+    if area in TOKYO_23_WARDS:
+        venue["area"] = area
+    return venue
 
 
 def build_request(decision, identity: dict[str, str], candidate: dict[str, Any]) -> tuple[dict[str, Any] | None, str | None]:
