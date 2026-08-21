@@ -1,0 +1,482 @@
+{
+  "accepted": 8,
+  "rejected": 0,
+  "held_for_user": 69,
+  "deferred_for_retry": 0,
+  "noop": 0,
+  "rejected_result": 1,
+  "issues": [
+    {
+      "severity": "medium",
+      "issue_type": "invalid_result",
+      "detail": "payload must be an object",
+      "packet_id": "packet_c99abd8059231db5"
+    }
+  ],
+  "entries": [
+    {
+      "inbox_id": "inbox_6e1ffb5ab0588ed1",
+      "decision_id": "decision:65ce6299292598681e2eb144c663320243a823fc5b80f9236f96626906f8c8e7",
+      "action": "hold",
+      "reason_code": "new_venue_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_6f906454f4723fa2",
+      "decision_id": "decision:a75b69702ee26679999ada2972eab35d025a95bbec4c183881955e7102bd60cd",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_b448b6f90ad0ab2e",
+      "decision_id": "decision:d11f592da127c33f762ac6ee8f42b9b2a74a8ac610deb15ffcb29970d7b9618d",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_ab29e742099ede41",
+      "decision_id": "decision:a238a14d84181a87209b7f7b2324853acf004e343813b138207cac3c1be339d6",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_2240981bde3e59e6",
+      "decision_id": "decision:6f79c6c5c228395c98df2e10ae24af5ae15047789c9cb3c117491a5b6aabfaa0",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_bbd15743dae070d8",
+      "decision_id": "decision:0a2d2e5991358d68e0722d57adf86446f9596ed7a61f61f78baef137bd29fe9b",
+      "action": "hold",
+      "reason_code": "new_venue_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_fc80dcfcef2d4850",
+      "decision_id": "decision:75de6b9faff4a2974890e5ef0ad225f6496f872e0bac2d7d4ab3f3a4883145b8",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_8bcf650eae44293e",
+      "decision_id": "decision:adfc55e07694d009af3174613488c71d54c6518249fa8083b7004b39cb275653",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_0ea7c73375a1e34e",
+      "decision_id": "decision:4f79deb3c1adcb8672b4ff359365bb2d0935ed25bf04fff99eb4588e259ec9e2",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_fdbc7959536e7b1c",
+      "decision_id": "decision:f6fe95dba24b9fd8eb972b27389ba3ed16950f5b2a78f5914cb2152c3defef8e",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_2b4202da4e47e2f0",
+      "decision_id": "decision:81570e0cb1b6c837f6727454b251451946a756185ff914a2e3e3b0bee6db011f",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_d28b42b8f060ee56",
+      "decision_id": "decision:25e30d26eaa6784c9a38fa6554243c671400daf5625c00d3a3f2b3538fffdf3d",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_2d98f34b59544ca3",
+      "decision_id": "decision:0ed387d0f08174781ba8905864e4d96da9eab008ecffa3dbcf50e7264084cb5c",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_a7a53389e3aa6136",
+      "decision_id": "decision:356d52f048e0131894b49c1eee3603cd94aa80b7d6caaa965d7d0239d962de43",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_36bc0d3feccd359d",
+      "decision_id": "decision:2d7512f37418ca5e44e89f40085d5f4e01de1cbe1d6cb003058ba6fd41aee129",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_20c07f6daa152529",
+      "decision_id": "decision:465f9972d1d8dc319b3951a050a7574e780424dbf78a4185a22346e4bfe179ea",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_0b1c0a01627afb7b",
+      "decision_id": "decision:0d0752eb2e061dda3c02032164f1875498157c99fc8c1ee9334c96ba56a93c65",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_9c7bea8edbde3b17",
+      "decision_id": "decision:6690bd412c2070276ebbd7ed3dc2b24919951f7544296a0aa058f5c8e3710609",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_ca467f10763d331a",
+      "decision_id": "decision:09934b8561fa88871ac69a5a2cab3f2a9c3b9d7bc82d2473f0e4ad17d55abc1d",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_6cbc83ec6194dd21",
+      "decision_id": "decision:fc743f28ddd06ac5ef2c040aa96e76aea534a140a545e614c609122331746f52",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_bde0d7a493e63c79",
+      "decision_id": "decision:f5cee344a2f900fbfab0438386625c4ffacc96fcea5404cc27628e589abaa79b",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_6df745e4c3c2fe3b",
+      "decision_id": "decision:27219284b57f1cbf4ae1e0ec41d9c473302485891a09f664a245f61c85a6336f",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_4caa68eaa5258853",
+      "decision_id": "decision:830f4e37415aa3aef5f803cbcd35d5edc74f216eccdc574fb47f2dfd29136292",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_ec02405c60cc3136",
+      "decision_id": "decision:3a0fdd773656283fc75b99ddc874e96d61e88e3e93526dd9d9b0a5036b034ad5",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_990241266f229108",
+      "decision_id": "decision:74183c2911214c7bb621114a25bed6b4e44d7936e5300edbeaa7ec5dadfc0b89",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_92df0438be96c931",
+      "decision_id": "decision:d29080e76977b5549bd3b97b31ab71d63c7bbeff7409fba47969c62a76498c0a",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_7bbf4e64515c5833",
+      "decision_id": "decision:9c4b6a54a543a93b4f9c2f4b0168a4319a01b4fdc33fa5dbd2ca0f5ff86d39ec",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_6ed41d3502330f9d",
+      "decision_id": "decision:def39e4f8fe6169546154d368129e4e86f17d4ed03af33a5b35c6b1d689af066",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_447a53d102735c07",
+      "decision_id": "decision:89b82b4e9657c5aab9faff001b3045dcd31aae9dd3776d66f2efe499b8719048",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_a847a48997f9a9b0",
+      "decision_id": "decision:9c8026d6ba1bb2cd38eb01fc2e8b8e7c9d8e1ed12ab0397f795872311de04705",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_c0d4cf9a376a2a8c",
+      "decision_id": "decision:46bfbe5de1fd723291fc703c2a860fcc9a2cec5153f6c02548702f1615902397",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_e1097729a2cabbb1",
+      "decision_id": "decision:9efeed4ab114bda88650c6acbca876bfa1bb625dd3669a592294e49c64975fbf",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_bf9e65d8a7e2f713",
+      "decision_id": "decision:17e1067f2d5cd85ad28d63f32e26314ae2df22b0f2f435d41ab9e5c978188294",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_521192c88a6a9027",
+      "decision_id": "decision:915f89f0a0dc81be24eca8609de49a2665ec9e5be50bbc59b9a041e25ea95eeb",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_eb73a9bced48aa58",
+      "decision_id": "decision:b015bada4fa7eaa353ff1dab0393cc50c93b4bb774a0e0eecb20071f17fc79ed",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_6d085206da8158b6",
+      "decision_id": "decision:22132aa317f29b79d8fb5c4bf235ecb61988de6965e996bc8bb4562ea49f723d",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_f9ec708cb2f6bf51",
+      "decision_id": "decision:894a2e5c8e570eae688e8e6ddbe2d37d55d19353892086e072a554f01924dd09",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_4818fac73627eb02",
+      "decision_id": "decision:88840e5d49654ecb2ff68f2401d22c666bf2d1fa832d76192c95c1f9c4dc2ef2",
+      "action": "hold",
+      "reason_code": "new_venue_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_deca11d483272b50",
+      "decision_id": "decision:74b34bd6d360875a31a47586dea4f823befd82eccf36c76e6d9d91e86344e8c2",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_b7e18b9aa5e95dae",
+      "decision_id": "decision:6478a8a98217a9c69c7d38e8964ab2b77ad20ff3cc62d98881e666814dbd5474",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_691e65fcb30bb48e",
+      "decision_id": "decision:6d0fd7fe2df521b0ede7a4bb89e629447e7e7ac4e8b5e312e8dc33982ad8e833",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_1779f126cb3cf1a4",
+      "decision_id": "decision:c01dc86a294abc75e9ba893aaf1440267a689498f3f0a7a367ab2b761e251ffc",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_d26eccbe9953598b",
+      "decision_id": "decision:3f1bb91a245fa560d961e0962a24b35200b0d669cffc4739f6afc546489cbfe1",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_e873c443e27d4c1a",
+      "decision_id": "decision:e5cbaf54903a7f670a8f19f32147e84b439c604e4e2b9f60351bf6df865f2fd8",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_8f4e18307eaa7f4e",
+      "decision_id": "decision:eaee265693fdffbbf4865859f870554ff999874f86bf28750c15e5be069312e7",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_b5ec9a2a5f97f20e",
+      "decision_id": "decision:7cc830e05cebf82968fde0cc6b47fb2e5e0d6827c65234128a62fc8327686532",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_faa5f64df333ba11",
+      "decision_id": "decision:33284ed86c63edda5a9281024c1d2d2941d5055e0fde6d9326b2ba9ca71d14e9",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_d6ae649ce9ad540d",
+      "decision_id": "decision:b75b7c1113d18f21ba11834464acf30179646cd3556e2d63b890e1f41181900a",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_9647c469b14a25e5",
+      "decision_id": "decision:784fcfbe83ddd63543731f8c0739e81142754db9739d6074479e4baa4576688b",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_f3729ef273b5b186",
+      "decision_id": "decision:8de97acddd9713f8d39cb6e5105cb48aa7d4d1b2d407a333ecceb84d75fcf25f",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_a5544375b6db5f2c",
+      "decision_id": "decision:fada3e016ff413220c81ca50c4c0918761908965675b9a1acbee1f50781babd3",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_c8cca01aa24dc8c5",
+      "decision_id": "decision:1491550a022c5b9dbd0a27b305303572ce63149ddbda7f16075acda277e938e5",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_73d38cc8da6b06de",
+      "decision_id": "decision:ffcb664ed97a758af122e0d6d87c1383f63610b84596ff4f95b789b47f243ae9",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_e932fdc4e5a964b3",
+      "decision_id": "decision:ff3797d7e1f1335519057d32b6f94d01faadd9403bd9cae5523727663b04c185",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_e62bcf0799bd5876",
+      "decision_id": "decision:a327c445d781649201560cd0073978224725e105e13d676b4caccd3630007703",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_227e37d0e95c9b38",
+      "decision_id": "decision:2655fd2fe73512210f90a52c687d1cde3d798d6cef169e0c1d4ad4226cd70e5c",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_b03d1a1c01d67186",
+      "decision_id": "decision:476cbcfa71d7cebb4858d9c25206b9acc483c89131588b18eb087b3942e2c0f0",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_5606ac1220138c1c",
+      "decision_id": "decision:117136e0c687364aacdfef4b0ad9087d9d78f06938784789ab67083641a8c44f",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_802a08ac227ffcff",
+      "decision_id": "decision:81c5fe7b82e52d2acc7d36735adcbc0e41b3af7ade57aab4fc14e1a5b2fdd7e9",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_b84634daa9ef8ffe",
+      "decision_id": "decision:d1b202249d13ee7d0fb600bc5971d41e8c29b6727d2c1275dcd4f545835ae4bb",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_004d1f28fabf7f33",
+      "decision_id": "decision:11be98496da6305550f7e4d1d30a86e3e0976de73c0c68f93994b4894369bdb7",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_0cd5854c7ecf0755",
+      "decision_id": "decision:676e3e5067bfff10b62e08bad52c5d3e44f2d7546db58ed480f9df6738dbe5c9",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_d5659a868b8bdd9f",
+      "decision_id": "decision:6786085178e463d48737eace849e6c5177a455bde2d77de22f8e6641f1a7156f",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_13875b6cfa432d55",
+      "decision_id": "decision:3cea974cb77bc0828a78c272c81541b68723b0fc253f4bcc7ecd9dfceafed1e0",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_5b1cfac368921bde",
+      "decision_id": "decision:60812ab06456174ee502db546be20dce0d6e99f543911c7e5d8cebfce2ad1568",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_fc7bcf3be5b89b7f",
+      "decision_id": "decision:f437b9ca7bec43853a6bab8a802fa45b645d41a1b8f1896b0a226794064369cc",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_1e9e092d1edbe2c9",
+      "decision_id": "decision:65905819d017990fd2aab144a05800948c6f3ea4d5019a61644bf6136525812d",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_e2dde854017a5032",
+      "decision_id": "decision:ce877686e9ac10b1c4beb9dc1961874763a13bbe8985c588da6d6eccac91dcb1",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_451a81e246349950",
+      "decision_id": "decision:df1c82f2bdd6e7ac8a55c5ac3f58cb8c16ef2e1e02495a7c722e159c93596fa3",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_93ed58bb8867f8e8",
+      "decision_id": "decision:dbd1c414344b7155d421b71b1f4cd18bcc2b1bac2cec0528bb1e3511750abf32",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_fbb2867fd5736288",
+      "decision_id": "decision:f3e8e72c969c358852608527bbeb8566062b5a62300ca5b01528e90bdc839fc6",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_551d29eb96726e08",
+      "decision_id": "decision:e0578120e3c3714ab812e4a32aca380d37d7edf76dbd4479845a9554fc9fbec0",
+      "action": "accept",
+      "reason_code": null
+    },
+    {
+      "inbox_id": "inbox_78ff09831a5d3027",
+      "decision_id": "decision:44363ec52c8ef590fe853ad6d5c0863e126a47948a53deb0f5a7bf4ff1ba456e",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_8bd0302792d2163d",
+      "decision_id": "decision:b6a34427ef485797189425300b6081eecf0ab91b96e7972b0ed9e4141b7b076b",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_aaa2992aeb3f7f2a",
+      "decision_id": "decision:edece243b5b04a42c5b54a7bc524c57406e764c7955cbda4a28f5aca692f3fda",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_4db554436f663d35",
+      "decision_id": "decision:6382464428c78e1d1a8c65dcaf77dcf0b6e15aa2055326135d9efbaee0330439",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    },
+    {
+      "inbox_id": "inbox_913319634af92a36",
+      "decision_id": "decision:ea5a127095d4d557f39f7b7f6b1db2105e9920e665f311d09ee4c6c78405df7f",
+      "action": "hold",
+      "reason_code": "new_series_requires_confirmation"
+    }
+  ],
+  "migrations_applied": [],
+  "claim_scope": "production"
+}

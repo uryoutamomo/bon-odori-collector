@@ -1,0 +1,1356 @@
+{
+  "items": [
+    {
+      "packet_id": "packet_280916ba0447c885",
+      "提案": {
+        "イベント名": "第17回ハマサイトの夏祭り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-21",
+          "2026-08-21"
+        ],
+        "会場名": "浜松町駅北口広場",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。8/21のハマサイトの夏祭りでボンダンス。日時と会場が本文にある\n- 出典URL: https://x.com/ypuf82k_3BSb/status/2090187290597548055"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_adafc394d66073a9",
+          "series_id": "ser_f7b58eebe46b8e99",
+          "display_name": "第16回ハマサイトの夏祭り",
+          "event_year": 2025,
+          "date_start": "2025-08-22",
+          "venue_name": "ハマサイト前広場・汐留ビルディング外構",
+          "date_status": "ended"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_ac743226ac97819f",
+          "canonical_name": "巣鴨駅南口ロータリー",
+          "area": "豊島区",
+          "address": "東京都豊島区巣鴨1丁目16付近"
+        },
+        {
+          "venue_id": "ven_a0f33ce9df12737d",
+          "canonical_name": "JR新小岩駅北口駅前広場",
+          "area": "葛飾区",
+          "address": "東京都葛飾区西新小岩1丁目付近"
+        },
+        {
+          "venue_id": "ven_c4237862262b2ee1",
+          "canonical_name": "下北沢駅東口",
+          "area": "世田谷区",
+          "address": "東京都世田谷区北沢2-23"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_071c3a46bb3a77d3",
+      "提案": {
+        "イベント名": "芳林公園の盆踊り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-20",
+          "2026-08-21"
+        ],
+        "会場名": "芳林公園",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。準備の目撃報告だが開催日と会場が明記されている\n- 出典URL: https://x.com/shimpei2/status/2090330581993480565"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_f0ea1c91592c698e",
+          "series_id": "ser_dfc86a19d7a392ea",
+          "display_name": "札幌中島公園大盆踊り大会",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "中島公園",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_b4377cd29622435e",
+          "series_id": "series_f3ba813a91da36b6",
+          "display_name": "御徒町公園の盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-29",
+          "venue_name": "御徒町公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_157d77e9752e5cea",
+          "series_id": "ser_d02941ec9893ae16",
+          "display_name": "すみだ公園の盆踊り（名称推定）",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "すみだ公園（隅田公園・墨田区側）",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_3d9a8416ad891275",
+          "series_id": "ser_e96e35af4225c211",
+          "display_name": "中之郷公園の盆踊り（名称推定）",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "中之郷公園（中之郷児童遊園）",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_b0ac40639f5d2d5c",
+          "series_id": "ser_7573dc4558c4ee1d",
+          "display_name": "佃島の盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-13",
+          "venue_name": "佃まちかど展示館前",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_8b3890f083a577fa",
+          "series_id": "series_23613bb6b4ada0df",
+          "display_name": "碑文谷公園盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-24",
+          "venue_name": "碑文谷公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_f7aa108e5de9aa8c",
+          "series_id": "ser_c6ad4b5bbf84069a",
+          "display_name": "花園神社 盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-01",
+          "venue_name": "花園神社",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_59180208dc287804",
+          "series_id": "ser_c6ad4b5bbf84069a",
+          "display_name": "花園神社 盆踊り",
+          "event_year": 2025,
+          "date_start": "2025-08-01",
+          "venue_name": "花園神社",
+          "date_status": "ended"
+        },
+        {
+          "occurrence_id": "occ_e5ea459ea88de16c",
+          "series_id": "ser_831393e548a7e944",
+          "display_name": "月島第二児童公園 盆踊り",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "月島第二児童公園",
+          "date_status": "unknown"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_bede4db7f118c064",
+          "canonical_name": "芝公園",
+          "area": "港区",
+          "address": "〒105-0011 東京都港区芝公園"
+        },
+        {
+          "venue_id": "ven_e62a20d8cbf6a80b",
+          "canonical_name": "三峰公園",
+          "area": "世田谷区",
+          "address": "東京都世田谷区砧4-6"
+        },
+        {
+          "venue_id": "ven_a09aa7af3f3b08d3",
+          "canonical_name": "中島公園",
+          "area": "札幌市中央区",
+          "address": "〇064-0931 北海道札幌市中央区中島公列1"
+        },
+        {
+          "venue_id": "venue_b1da1cf34c4d1f5b",
+          "canonical_name": "京橋公園",
+          "area": "中央区",
+          "address": null
+        },
+        {
+          "venue_id": "ven_011d2f1555d9d0bc",
+          "canonical_name": "八潮公園",
+          "area": "品川区",
+          "address": "〒140-0003 東京都品川区八潮5-11-16"
+        },
+        {
+          "venue_id": "venue_b99cd93103830be9",
+          "canonical_name": "北野公園",
+          "area": "足立区",
+          "address": "東京都足立区"
+        },
+        {
+          "venue_id": "venue_514821b202d98edd",
+          "canonical_name": "四南公園",
+          "area": "江戸川区",
+          "address": "東京都江戸川区"
+        },
+        {
+          "venue_id": "venue_6b176a190cf6c6be",
+          "canonical_name": "大京公園",
+          "area": "新宿区",
+          "address": "東京都新宿区大京町14"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_3c0d38fbb4c5d561",
+      "提案": {
+        "イベント名": "外神田文化体育会の納涼大会",
+        "年": 2026,
+        "開催日": [
+          "2026-08-20",
+          "2026-08-21"
+        ],
+        "会場名": "芳林公園",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。納涼大会の告知。日付・会場・主催が明記\n- 出典URL: https://x.com/AkibaTMO_i/status/2090309507096408208"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_472f2827e41b676b",
+          "series_id": "series_bac5098ed8499aa5",
+          "display_name": "千田町会 納涼盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-08-07",
+          "venue_name": "江東公園",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_bede4db7f118c064",
+          "canonical_name": "芝公園",
+          "area": "港区",
+          "address": "〒105-0011 東京都港区芝公園"
+        },
+        {
+          "venue_id": "ven_e62a20d8cbf6a80b",
+          "canonical_name": "三峰公園",
+          "area": "世田谷区",
+          "address": "東京都世田谷区砧4-6"
+        },
+        {
+          "venue_id": "ven_a09aa7af3f3b08d3",
+          "canonical_name": "中島公園",
+          "area": "札幌市中央区",
+          "address": "〇064-0931 北海道札幌市中央区中島公列1"
+        },
+        {
+          "venue_id": "venue_b1da1cf34c4d1f5b",
+          "canonical_name": "京橋公園",
+          "area": "中央区",
+          "address": null
+        },
+        {
+          "venue_id": "ven_011d2f1555d9d0bc",
+          "canonical_name": "八潮公園",
+          "area": "品川区",
+          "address": "〒140-0003 東京都品川区八潮5-11-16"
+        },
+        {
+          "venue_id": "venue_b99cd93103830be9",
+          "canonical_name": "北野公園",
+          "area": "足立区",
+          "address": "東京都足立区"
+        },
+        {
+          "venue_id": "venue_514821b202d98edd",
+          "canonical_name": "四南公園",
+          "area": "江戸川区",
+          "address": "東京都江戸川区"
+        },
+        {
+          "venue_id": "venue_6b176a190cf6c6be",
+          "canonical_name": "大京公園",
+          "area": "新宿区",
+          "address": "東京都新宿区大京町14"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_3ffa68f178963f29",
+      "提案": {
+        "イベント名": "花保町会の盆踊り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-21",
+          "2026-08-21"
+        ],
+        "会場名": "花保広場（花保さくら公園　南花畑３－１）",
+        "区": "足立区",
+        "根拠メモ": "出典：足立区役所のX投稿。日時・会場明記（複数）\n- 出典URL: https://x.com/adachi_city/status/2089981991060210144"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_22bfe7f4f6dd54cb",
+          "series_id": "series_9771037530f84ec2",
+          "display_name": "扇南町会 盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-01",
+          "venue_name": "三嶋神社",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_d2d05c7984bb9f19",
+          "series_id": "series_849fe3c54caf039a",
+          "display_name": "松本町会盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-22",
+          "venue_name": "松本天祖神社",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_ee34fb3bfe68aad1",
+          "series_id": "series_1cb17d5ce3dc2940",
+          "display_name": "興野町会 盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-01",
+          "venue_name": "興野神社",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_2ce79fad1bbb4348",
+          "series_id": "series_8a1be62d95f59220",
+          "display_name": "本木東町会 盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-08",
+          "venue_name": "御嶽神社",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_3735b39e56c45dd5",
+          "series_id": "series_a4df03283832d66b",
+          "display_name": "河原田町会盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-22",
+          "venue_name": "南小岩第二小学校",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_c1d14ab9991f5c74",
+          "series_id": "series_ed7cf525f8169c30",
+          "display_name": "上谷津町会 盆踊り会",
+          "event_year": 2026,
+          "date_start": "2026-07-25",
+          "venue_name": "下赤塚小学校 校庭",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_80a0a37a446cfd3f",
+          "series_id": "series_8d75ad928f9a2226",
+          "display_name": "仲町町会納涼盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-14",
+          "venue_name": "中割天祖神社",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_ff4ada8463063442",
+          "series_id": "series_33c7212571668f7a",
+          "display_name": "南小岩司町会盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-22",
+          "venue_name": "南小岩三丁目第二児童遊園",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_563b5e55f06340d6",
+          "canonical_name": "さくら公園",
+          "area": "",
+          "address": ""
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_c114fbc21a1c5ac9",
+      "提案": {
+        "イベント名": "第17回ハマサイトの夏祭り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-21",
+          "2026-08-21"
+        ],
+        "会場名": "浜松町駅北口駅前広場・汐留ビルディング外構",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。公式告知、日付・時刻・会場・中止規定すべてあり\n- 出典URL: https://x.com/DJKOO_official/status/2089953521101902262"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_adafc394d66073a9",
+          "series_id": "ser_f7b58eebe46b8e99",
+          "display_name": "第16回ハマサイトの夏祭り",
+          "event_year": 2025,
+          "date_start": "2025-08-22",
+          "venue_name": "ハマサイト前広場・汐留ビルディング外構",
+          "date_status": "ended"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_f93cf12a0d740e0d",
+          "canonical_name": "ハマサイト前広場・汐留ビルディング外構",
+          "area": "港区",
+          "address": "東京都港区海岸1-2-34"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_222e170ff1a21acb",
+      "提案": {
+        "イベント名": "綾瀬三丁目盆踊り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-21",
+          "2026-08-22"
+        ],
+        "会場名": "綾瀬駅前はと広場",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。綾瀬三丁目盆踊りの日時・会場を告知\n- 出典URL: https://x.com/Kimono_S_Ryu_09/status/2089877881602412935"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_4a97e6a1c0af5edb",
+          "series_id": "series_c7fa370c2a9dd37a",
+          "display_name": "綾瀬三丁目自治会 納涼盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-08-21",
+          "venue_name": "東綾瀬公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_69ee7abd5466f5fd",
+          "series_id": "ser_1a3ab17f2d87fd89",
+          "display_name": "森下二丁目盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-18",
+          "venue_name": "森下公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_56e51b72ec7acc7e",
+          "series_id": "ser_3ed56e5a3508fa27",
+          "display_name": "入船三丁目町会納涼盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-24",
+          "venue_name": "入船三丁目交差点",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_50741193dbdc6e72",
+          "series_id": "series_5a7f4cb0237b3015",
+          "display_name": "船堀三丁目町会盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-08-08",
+          "venue_name": "船堀三丁目公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_e9c9ae8725fcb43b",
+          "series_id": "series_7b2ed02dae287efd",
+          "display_name": "綾瀬五・六丁目自治会 納涼盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-18",
+          "venue_name": "東綾瀬公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_fc3fc0f450f1cd87",
+          "series_id": "series_c79cce1f4d22de5e",
+          "display_name": "旭町一丁目町会 盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-30",
+          "venue_name": "本覚寺",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_02a3dc6a09e2d814",
+          "series_id": "series_6b7e474e8f3f3d62",
+          "display_name": "深川一丁目 盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-08-01",
+          "venue_name": "深川一丁目児童遊園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_83f20b31372fc670",
+          "series_id": "series_9f79750c94e49740",
+          "display_name": "篠崎七丁目町会盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-28",
+          "venue_name": "篠崎第四小学校",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_142d664c1d52a65a",
+          "canonical_name": "JR苅田駅前広場",
+          "area": "福岡県京都郡苅田町",
+          "address": "〇800-0302 福岡県京都郡苅田町（JR日豊本線「苅田駅」駅前）"
+        },
+        {
+          "venue_id": "ven_21654a5807cb2f10",
+          "canonical_name": "千歳船橋駅前広場",
+          "area": "世田谷区",
+          "address": "東京都世田谷区船橋1"
+        },
+        {
+          "venue_id": "ven_eab29f81b54ebe8d",
+          "canonical_name": "JR日暮里駅前広場",
+          "area": "荒川区",
+          "address": "東京都荒川区西日暮里2-6付近"
+        },
+        {
+          "venue_id": "ven_c4237862262b2ee1",
+          "canonical_name": "下北沢駅東口",
+          "area": "世田谷区",
+          "address": "東京都世田谷区北沢2-23"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_6e664f2ca20e87cd",
+      "提案": {
+        "イベント名": "銚子正調大漁節保存会ひびき連合会 第45回盆踊り大会",
+        "年": 2026,
+        "開催日": [
+          "2026-08-21",
+          "2026-08-22"
+        ],
+        "会場名": "イオンモール銚子",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。日時・会場明記\n- 出典URL: https://x.com/umitouniR/status/2090295355577679914"
+      },
+      "既存の開催回候補": [],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    },
+    {
+      "packet_id": "packet_e5b7c3108e0676e1",
+      "提案": {
+        "イベント名": "板橋区盆踊り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "赤塚七丁目児童遊園",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。板橋区盆踊りの開催日・各会場一覧を紹介\n- 出典URL: https://x.com/takasho06130613/status/2089915742527647994"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_07f775ba65031a6e",
+          "series_id": "ser_e763e24c3496cf82",
+          "display_name": "京橋盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-28",
+          "venue_name": "京橋エドグラン 京橋中央ひろば",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_683fddd5902d3dcf",
+          "series_id": "ser_c6faf066145a8970",
+          "display_name": "馬橋盆踊り",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "馬橋小学校",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_ce162e8dbe6cdf52",
+          "series_id": "ser_3873b1682d366b8f",
+          "display_name": "第7回 渋谷盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-08",
+          "venue_name": "渋谷109前",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_a18730b884f5ae1b",
+          "series_id": "series_680bf3a459c56413",
+          "display_name": "道塚盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-30",
+          "venue_name": "道塚小学校校庭",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_90f1aef84c0ad6f7",
+          "series_id": "ser_57b12dce4d688793",
+          "display_name": "雷門盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-09-05",
+          "venue_name": "浅草雷門前 並木通り",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_67c8a6fd85776a8f",
+          "series_id": "ser_3873b1682d366b8f",
+          "display_name": "第6回 渋谷盆踊り",
+          "event_year": 2025,
+          "date_start": "2025-08-02",
+          "venue_name": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+          "date_status": "ended"
+        },
+        {
+          "occurrence_id": "occ_704e02ef8a303789",
+          "series_id": "series_633979806e8ef526",
+          "display_name": "上板橋二丁目町会 盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-25",
+          "venue_name": "七軒家公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_ccff1fefeb0e6498",
+          "series_id": "ser_3cd68d5b41d0b1ff",
+          "display_name": "下北沢盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-25",
+          "venue_name": "下北沢駅東口",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_b0ac40639f5d2d5c",
+          "series_id": "ser_7573dc4558c4ee1d",
+          "display_name": "佃島の盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-13",
+          "venue_name": "佃まちかど展示館前",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_87782a9d9bb73cfc",
+          "series_id": "ser_3cd68d5b41d0b1ff",
+          "display_name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+          "event_year": 2025,
+          "date_start": "2025-08-09",
+          "venue_name": "下北沢駅東口",
+          "date_status": "ended"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "venue_94bc4e28c78967db",
+          "canonical_name": "梅田七丁目児童遊園",
+          "area": "足立区",
+          "address": "東京都足立区"
+        },
+        {
+          "venue_id": "ven_9426440729a98dc3",
+          "canonical_name": "砧八丁目児童遊園",
+          "area": "世田谷区",
+          "address": "東京都世田谷区砧8-2-21"
+        },
+        {
+          "venue_id": "venue_031e6c8bbc6c4f50",
+          "canonical_name": "平井一丁目児童遊園",
+          "area": "江戸川区",
+          "address": "東京都江戸川区"
+        },
+        {
+          "venue_id": "venue_200ff4b10dd9aa88",
+          "canonical_name": "深川一丁目児童遊園",
+          "area": "江東区",
+          "address": "東京都江東区深川1-3"
+        },
+        {
+          "venue_id": "venue_c987ec7b0c0fd34b",
+          "canonical_name": "南小岩六丁目児童遊園",
+          "area": "江戸川区",
+          "address": "東京都江戸川区"
+        },
+        {
+          "venue_id": "venue_884f4af94cdafd5e",
+          "canonical_name": "西葛西五丁目児童遊園",
+          "area": "江戸川区",
+          "address": "東京都江戸川区"
+        },
+        {
+          "venue_id": "venue_7819336c0756e42f",
+          "canonical_name": "南小岩三丁目第二児童遊園",
+          "area": "江戸川区",
+          "address": "東京都江戸川区"
+        },
+        {
+          "venue_id": "ven_113f36be107e6ad0",
+          "canonical_name": "旭児童遊園",
+          "area": "大田区",
+          "address": "東京都大田区東糀谷4-3-6"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_98cef5165b1f40f2",
+      "提案": {
+        "イベント名": "おいわけ夏まつり",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "野上グラウンド",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。盆踊りを含むおいわけ夏まつりの日付・会場・時刻つき告知\n- 出典URL: https://x.com/hotmantokana/status/2089968961215778995"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_43e59c7df2910b1b",
+          "series_id": "series_70392f451013640e",
+          "display_name": "D館夏まつり",
+          "event_year": 2026,
+          "date_start": "2026-08-23",
+          "venue_name": "リバーウエストD館 駐車スペース",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_a9fa9c73d44ea6bc",
+          "series_id": "series_0396545590547fa9",
+          "display_name": "雷町会夏まつり",
+          "event_year": 2026,
+          "date_start": "2026-08-08",
+          "venue_name": "東葛西さくら公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_38f8a7a86d5518b5",
+          "series_id": "ser_48189e0f29e05d24",
+          "display_name": "桜まつり",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "三田松坂児童遊園",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_72db288004ac72a2",
+          "series_id": "ser_1fa232a11ae249cf",
+          "display_name": "有明まつり",
+          "event_year": 2026,
+          "date_start": "2026-09-12",
+          "venue_name": "有明ガーデン スポーツエンターテイメント広場",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_018fc76d38dcd38f",
+          "series_id": "ser_c9f9939dd70098f3",
+          "display_name": "海岸まつり",
+          "event_year": 2026,
+          "date_start": "2026-07-31",
+          "venue_name": "埠頭公園（港区芝浦港南）",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_76e8c6960af5ceb8",
+          "canonical_name": "四谷ひろばグランド（旧四谷第四小）",
+          "area": "新宿区",
+          "address": "東京都新宿区四谷4-20"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_7ce876492f503668",
+      "提案": {
+        "イベント名": "新小岩銀座 夏まつり 和楽器DEナイト",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "新小岩駅南口 駅前広場",
+        "区": "葛飾区",
+        "根拠メモ": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/natsutr_bon/status/2089973977318064232"
+      },
+      "既存の開催回候補": [],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_a0f33ce9df12737d",
+          "canonical_name": "JR新小岩駅北口駅前広場",
+          "area": "葛飾区",
+          "address": "東京都葛飾区西新小岩1丁目付近"
+        },
+        {
+          "venue_id": "ven_ac743226ac97819f",
+          "canonical_name": "巣鴨駅南口ロータリー",
+          "area": "豊島区",
+          "address": "東京都豊島区巣鴨1丁目16付近"
+        },
+        {
+          "venue_id": "ven_c4237862262b2ee1",
+          "canonical_name": "下北沢駅東口",
+          "area": "世田谷区",
+          "address": "東京都世田谷区北沢2-23"
+        },
+        {
+          "venue_id": "ven_22bbbbeaf5f86358",
+          "canonical_name": "小田急線喜多見駅前 南口広場",
+          "area": "世田谷区",
+          "address": "東京都世田谷区喜多見8-21"
+        },
+        {
+          "venue_id": "ven_a12959db201201d7",
+          "canonical_name": "JR蒲田駅西口駅前広場(駅前会場)",
+          "area": "大田区",
+          "address": "東京都大田区西蒲田7-68"
+        },
+        {
+          "venue_id": "ven_01712946e5b2d6cc",
+          "canonical_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+          "area": "台東区",
+          "address": "台東区上野5-27"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_0fd8456c5cb4a1b6",
+      "提案": {
+        "イベント名": "おしゃれ盆踊り vol.9",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "TOKYO NODE SKY GARDEN &amp; POOL",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。おしゃれ盆踊り vol.9の日時・会場を告知\n- 出典URL: https://x.com/event_fes/status/2089863592338469206"
+      },
+      "既存の開催回候補": [],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    },
+    {
+      "packet_id": "packet_070c578caff464ac",
+      "提案": {
+        "イベント名": "板橋区盆踊り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "徳丸(イルカ)公園",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。板橋区盆踊りの開催日・各会場一覧を紹介\n- 出典URL: https://x.com/takasho06130613/status/2089915742527647994"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_07f775ba65031a6e",
+          "series_id": "ser_e763e24c3496cf82",
+          "display_name": "京橋盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-28",
+          "venue_name": "京橋エドグラン 京橋中央ひろば",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_683fddd5902d3dcf",
+          "series_id": "ser_c6faf066145a8970",
+          "display_name": "馬橋盆踊り",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "馬橋小学校",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_ce162e8dbe6cdf52",
+          "series_id": "ser_3873b1682d366b8f",
+          "display_name": "第7回 渋谷盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-08-08",
+          "venue_name": "渋谷109前",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_a18730b884f5ae1b",
+          "series_id": "series_680bf3a459c56413",
+          "display_name": "道塚盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-30",
+          "venue_name": "道塚小学校校庭",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_90f1aef84c0ad6f7",
+          "series_id": "ser_57b12dce4d688793",
+          "display_name": "雷門盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-09-05",
+          "venue_name": "浅草雷門前 並木通り",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_67c8a6fd85776a8f",
+          "series_id": "ser_3873b1682d366b8f",
+          "display_name": "第6回 渋谷盆踊り",
+          "event_year": 2025,
+          "date_start": "2025-08-02",
+          "venue_name": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+          "date_status": "ended"
+        },
+        {
+          "occurrence_id": "occ_704e02ef8a303789",
+          "series_id": "series_633979806e8ef526",
+          "display_name": "上板橋二丁目町会 盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-25",
+          "venue_name": "七軒家公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_ccff1fefeb0e6498",
+          "series_id": "ser_3cd68d5b41d0b1ff",
+          "display_name": "下北沢盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-25",
+          "venue_name": "下北沢駅東口",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_b0ac40639f5d2d5c",
+          "series_id": "ser_7573dc4558c4ee1d",
+          "display_name": "佃島の盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-07-13",
+          "venue_name": "佃まちかど展示館前",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_87782a9d9bb73cfc",
+          "series_id": "ser_3cd68d5b41d0b1ff",
+          "display_name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+          "event_year": 2025,
+          "date_start": "2025-08-09",
+          "venue_name": "下北沢駅東口",
+          "date_status": "ended"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    },
+    {
+      "packet_id": "packet_aa80120514561c73",
+      "提案": {
+        "イベント名": "赤坂夏おどり事前練習会",
+        "年": 2026,
+        "開催日": [
+          "2026-08-21",
+          "2026-08-22"
+        ],
+        "会場名": "赤坂小学校 体育館",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。日時・会場明記\n- 出典URL: https://x.com/HOSINOK5SAMA/status/2090180469698834779"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_3fa70d14d361b2f3",
+          "series_id": "ser_315f17b13278cf22",
+          "display_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+          "event_year": 2026,
+          "date_start": "2026-08-28",
+          "venue_name": "赤坂サカス広場",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "venue_5dbcfc06d576e499",
+          "canonical_name": "下赤塚小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        },
+        {
+          "venue_id": "ven_0d53c0046e502c30",
+          "canonical_name": "砧小学校",
+          "area": "世田谷区",
+          "address": "東京都世田谷区喜多見6-9-1"
+        },
+        {
+          "venue_id": "ven_792f30ffc1b5675c",
+          "canonical_name": "中和小学校",
+          "area": "墨田区",
+          "address": "〒130-0024 東京都墨田区菊川1丁目18-10"
+        },
+        {
+          "venue_id": "ven_1adf67c22092d96d",
+          "canonical_name": "京陽小学校",
+          "area": "品川区",
+          "address": "東京都品川区平塚2-19-20"
+        },
+        {
+          "venue_id": "ven_c96768719374d201",
+          "canonical_name": "八幡小学校",
+          "area": "世田谷区",
+          "address": "東京都世田谷区玉川田園調布2-17-15"
+        },
+        {
+          "venue_id": "venue_fe4df0e501fd2f9e",
+          "canonical_name": "北野小学校",
+          "area": "板橋区",
+          "address": "東京都板橋区徳丸3-23-1"
+        },
+        {
+          "venue_id": "ven_602364bc7658ab64",
+          "canonical_name": "城南小学校",
+          "area": "品川区",
+          "address": "東京都品川区南品川2丁目8番21号"
+        },
+        {
+          "venue_id": "ven_faf25769ba644d05",
+          "canonical_name": "奥沢小学校",
+          "area": "世田谷区",
+          "address": "東京都世田谷区奥沢3-1-1"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_a5b519a109795d33",
+      "提案": {
+        "イベント名": "青木コミュニティ盆踊り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "青木小学校",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。公式告知、日付・時刻・会場あり\n- 出典URL: https://x.com/horo2cookie/status/2089964380381454834"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_03e803727a62fddb",
+          "series_id": "series_1ff84a76c5b05380",
+          "display_name": "自治会コミニティー5秋まつり",
+          "event_year": 2026,
+          "date_start": "2026-09-20",
+          "venue_name": "葛西東公園",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_0d53c0046e502c30",
+          "canonical_name": "砧小学校",
+          "area": "世田谷区",
+          "address": "東京都世田谷区喜多見6-9-1"
+        },
+        {
+          "venue_id": "venue_dc58497fe2f07997",
+          "canonical_name": "若木小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区若木1-14-1"
+        },
+        {
+          "venue_id": "ven_792f30ffc1b5675c",
+          "canonical_name": "中和小学校",
+          "area": "墨田区",
+          "address": "〒130-0024 東京都墨田区菊川1丁目18-10"
+        },
+        {
+          "venue_id": "ven_1adf67c22092d96d",
+          "canonical_name": "京陽小学校",
+          "area": "品川区",
+          "address": "東京都品川区平塚2-19-20"
+        },
+        {
+          "venue_id": "ven_c96768719374d201",
+          "canonical_name": "八幡小学校",
+          "area": "世田谷区",
+          "address": "東京都世田谷区玉川田園調布2-17-15"
+        },
+        {
+          "venue_id": "venue_fe4df0e501fd2f9e",
+          "canonical_name": "北野小学校",
+          "area": "板橋区",
+          "address": "東京都板橋区徳丸3-23-1"
+        },
+        {
+          "venue_id": "ven_602364bc7658ab64",
+          "canonical_name": "城南小学校",
+          "area": "品川区",
+          "address": "東京都品川区南品川2丁目8番21号"
+        },
+        {
+          "venue_id": "ven_faf25769ba644d05",
+          "canonical_name": "奥沢小学校",
+          "area": "世田谷区",
+          "address": "東京都世田谷区奥沢3-1-1"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_c905c49c2f06fabd",
+      "提案": {
+        "イベント名": "ひまわりBONフェスティバル",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "花菜ガーデン",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。公式告知、日付・会場あり\n- 出典URL: https://x.com/kr_report_Fyoko/status/2089949961345765751"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_c8a8315e105b791a",
+          "series_id": "series_0d98e994a3685e1d",
+          "display_name": "椿フェスティバル",
+          "event_year": 2026,
+          "date_start": "2026-10-04",
+          "venue_name": "瑞江葬儀所裏こどもの広場",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_8ed8d1d8e412defc",
+          "series_id": "ser_e6f42985bd3bf442",
+          "display_name": "BONフェス@常光寺",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "常光寺",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_fbba78bb63034a2f",
+          "series_id": "ser_178493e1c2ec222e",
+          "display_name": "盆ダンスフェスティバル2023",
+          "event_year": 2023,
+          "date_start": "",
+          "venue_name": "白金児童遊園",
+          "date_status": "unknown"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "ven_17414a79f39a769d",
+          "canonical_name": "有明ガーデン スポーツエンターテイメント広場",
+          "area": "江東区",
+          "address": "東京都江東区有明2丁目1-8"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_79e6e042d84d2193",
+      "提案": {
+        "イベント名": "リソルの森 盆女出演",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "リソルの森",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。盆踊り出演のキャンセル告知。日付と会場が読める\n- 出典URL: https://x.com/ohanaaroma/status/2089141146417283531"
+      },
+      "既存の開催回候補": [],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    },
+    {
+      "packet_id": "packet_252334eb56e3683b",
+      "提案": {
+        "イベント名": "大宮夏まつり 第54回指扇まつり大会",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "指扇中学校体育館・滝沼川第二遊水地など",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。大宮夏まつり 第54回指扇まつり大会の日時・会場を告知\n- 出典URL: https://x.com/saitamafes/status/2089864077950808449"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_fbbf1f3dcb7ae7c3",
+          "series_id": "series_30c44ed3c6bfcc52",
+          "display_name": "江東区民まつり 亀戸地区夏まつり大会",
+          "event_year": 2026,
+          "date_start": "2026-08-29",
+          "venue_name": "亀戸中央公園",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_c6e8eaa5b615b0f5",
+          "series_id": "series_7b6d61bd7902b28d",
+          "display_name": "からすやま夏まつり 盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-31",
+          "venue_name": "烏山区民センター前広場",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    },
+    {
+      "packet_id": "packet_db759734b8be6947",
+      "提案": {
+        "イベント名": "地蔵盆法会",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "霊園",
+        "区": null,
+        "根拠メモ": "出典：霊山寺公式 ちんねんさんのX投稿。寺の法会と盆踊りの告知。日付・場所あり\n- 出典URL: https://x.com/cnnn_ryosenji/status/2090307004422369463"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_19b921bc4203d6e7",
+          "series_id": "ser_1a892df80d9e6c96",
+          "display_name": "増上寺 地蔵尊盆踊り大会",
+          "event_year": 2026,
+          "date_start": "2026-07-24",
+          "venue_name": "増上寺（大殿前広場）",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    },
+    {
+      "packet_id": "packet_2f26f08fbf8f08ec",
+      "提案": {
+        "イベント名": "上石神井地区祭・夏まつり",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "上石神井小学校　校庭",
+        "区": "練馬区",
+        "根拠メモ": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/nerikohouse/status/2090017563011142108"
+      },
+      "既存の開催回候補": [
+        {
+          "occurrence_id": "occ_87e5370ab1521e66",
+          "series_id": "series_9ec4d7d31c58a66e",
+          "display_name": "上石神井地区祭",
+          "event_year": 2026,
+          "date_start": "2026-08-22",
+          "venue_name": "上石神井小学校",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_e862dc90f1299f4d",
+          "series_id": "ser_4f62a889a30de860",
+          "display_name": "東灘・茶屋地区 夏まつり＆盆おどり",
+          "event_year": 2026,
+          "date_start": "",
+          "venue_name": "本住吉神社",
+          "date_status": "unknown"
+        },
+        {
+          "occurrence_id": "occ_aa32ae8f8807778d",
+          "series_id": "ser_8169a85a79d78758",
+          "display_name": "大井どんたく夏まつり",
+          "event_year": 2026,
+          "date_start": "2026-08-22",
+          "venue_name": "大井町駅前中央通り",
+          "date_status": "confirmed"
+        },
+        {
+          "occurrence_id": "occ_df9d3c24ba313881",
+          "series_id": "ser_8169a85a79d78758",
+          "display_name": "大井どんたく夏まつり",
+          "event_year": 2025,
+          "date_start": "2025-08-23",
+          "venue_name": "大井町駅前中央通り",
+          "date_status": "ended"
+        },
+        {
+          "occurrence_id": "occ_43e59c7df2910b1b",
+          "series_id": "series_70392f451013640e",
+          "display_name": "D館夏まつり",
+          "event_year": 2026,
+          "date_start": "2026-08-23",
+          "venue_name": "リバーウエストD館 駐車スペース",
+          "date_status": "confirmed"
+        }
+      ],
+      "既存の系列候補": [],
+      "既存の会場候補": [
+        {
+          "venue_id": "venue_fc7d2b5087c6be16",
+          "canonical_name": "上石神井小学校",
+          "area": "練馬区",
+          "address": "東京都練馬区上石神井4-10-9"
+        },
+        {
+          "venue_id": "venue_6b6b05a57bea3192",
+          "canonical_name": "水神小学校校庭",
+          "area": "江東区",
+          "address": "江東区亀戸5-22-22"
+        },
+        {
+          "venue_id": "ven_797b7972516e7af7",
+          "canonical_name": "上神明小学校",
+          "area": "品川区",
+          "address": "東京都品川区二葉４－４－１０"
+        },
+        {
+          "venue_id": "venue_54b64875c96e9f3f",
+          "canonical_name": "紅梅小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        },
+        {
+          "venue_id": "venue_56a17524f0402611",
+          "canonical_name": "舟渡小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        },
+        {
+          "venue_id": "venue_dc58497fe2f07997",
+          "canonical_name": "若木小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区若木1-14-1"
+        },
+        {
+          "venue_id": "venue_b118b57862b39219",
+          "canonical_name": "道塚小学校校庭",
+          "area": "大田区",
+          "address": null
+        },
+        {
+          "venue_id": "venue_5dbcfc06d576e499",
+          "canonical_name": "下赤塚小学校 校庭",
+          "area": "板橋区",
+          "address": "東京都板橋区"
+        }
+      ]
+    },
+    {
+      "packet_id": "packet_59816c61b3f338d9",
+      "提案": {
+        "イベント名": "マーベラス夏祭り",
+        "年": 2026,
+        "開催日": [
+          "2026-08-22",
+          "2026-08-22"
+        ],
+        "会場名": "マーベラス・プロレス道場",
+        "区": null,
+        "根拠メモ": "現地の告知投稿で開催を確認。夏祭りの告知。日時・会場・料金まで明記\n- 出典URL: https://x.com/info_marvelous/status/2090325654273421570"
+      },
+      "既存の開催回候補": [],
+      "既存の系列候補": [],
+      "既存の会場候補": []
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "results": [
+    {
+      "inbox_id": "inbox_bde0d7a493e63c79",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_63f3b9c02a86f3cb",
+      "source_key": "official_notice:x_event_xevent_63f3b9c02a86f3cb#xrevent_47040daf2ce1f9d1",
+      "source_payload_hash": "3c07fabafc24f1629fa4b1d6310d464010cb2e290d7284e2ec1d909d1e000743",
+      "packet_id": "packet_fdcdda056b85af61",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補は1件だけで、行事の名前も土地も提案とまったく異なる別の行事なので同じ回とは言えない。系列候補も会場候補も空で、結びつけられる既存が存在しない",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_6df745e4c3c2fe3b",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_656832c19056b479",
+      "source_key": "official_notice:x_event_xevent_656832c19056b479#xrevent_17d8a738ea4b923f",
+      "source_payload_hash": "588b6ecd74cbd1ae6c4531a9005966202d2cca3fb35d8741c043acd8f85bf1dd",
+      "packet_id": "packet_c4c33bb05b7cb1ed",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はいずれも東京23区内の別団体の行事で、名称も日付も提案と噛み合わない。会場候補が空なので会場も既存には該当しない",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_4caa68eaa5258853",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_658954dce400e1e6",
+      "source_key": "official_notice:x_event_xevent_658954dce400e1e6#xrevent_07c71d89e6133345",
+      "source_payload_hash": "36a33b06e1e364cd68bd5b33602086e0d77e95cd57bb5d9d8e830e6a86808f66",
+      "packet_id": "packet_89215f7bf3885258",
+      "requested_action": "accept",
+      "reason_detail": "唯一の開催回候補は名称も土地も別の行事で、同じ系列の別の年にも当たらない。会場候補が空のため会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_ec02405c60cc3136",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_6612793978dd2d05",
+      "source_key": "official_notice:x_event_xevent_6612793978dd2d05#xrevent_abd771b01ac08a28",
+      "source_payload_hash": "08bb445951157480202b899575d91f74f3f45512f12bac43a849aa91ff32566a",
+      "packet_id": "packet_1963195a9cdd574a",
+      "requested_action": "accept",
+      "reason_detail": "候補には「南」を含む町会・自治会の盆踊りが並ぶが、いずれも主催団体も会場も別で、提案の商店街系の催しとは一致しない。会場候補が空なので会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_990241266f229108",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_6f33988f22524b18",
+      "source_key": "official_notice:x_event_xevent_6f33988f22524b18#xrevent_6fe2f38967e38ba2",
+      "source_payload_hash": "bb1f0d0d5c5120d1f2169950ee33bde6f3b1c5785d61e712b3cb7b4937f5bccf",
+      "packet_id": "packet_ba2197eda4ad62be",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はすべて他区の公園で開かれる別の行事で、提案の区の行事に当たるものがない。会場候補も同じ頭文字の公園が並ぶだけで区も所在地も違うため、同じ場所とは読めない",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_92df0438be96c931",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_8ad5507b0510a501",
+      "source_key": "official_notice:x_event_xevent_8ad5507b0510a501#xrevent_e2712f8c6adf881e",
+      "source_payload_hash": "e2181f708117dde77f1b1eaba2155982e8a3e86cfb98304247a9930fec28b302",
+      "packet_id": "packet_ef640571fc32f5cc",
+      "requested_action": "accept",
+      "reason_detail": "候補の中に同じ区の町会の盆踊りが1件あるが、主催団体も会場も提案とは別物で同じ回にはならない。会場候補は別区の似た種別の施設だけなので該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_7bbf4e64515c5833",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_8d6ac45402af563f",
+      "source_key": "official_notice:x_event_xevent_8d6ac45402af563f#xrevent_051713178d362ef6",
+      "source_payload_hash": "02f137b70998fbc977f2ffc09001ad7e8edcdb00f157f3736ea0b830c3dbbd62",
+      "packet_id": "packet_8bcc0b738111e533",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補も系列候補も空で、照合できる既存がない。会場候補は東京都内の寺社の駐車場2件だけで、提案の土地とは無関係",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_6ed41d3502330f9d",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_a206bb40789c09b5",
+      "source_key": "official_notice:x_event_xevent_a206bb40789c09b5#xrevent_d1b5bda4558f6c45",
+      "source_payload_hash": "95697887a6650618e3a297fcc7cf29a9b73622d98067899aaadfb9a493a3ccc6",
+      "packet_id": "packet_e740cc6d7bf79480",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補には小学校を会場とする行事が複数あるが、いずれも別の区・別の学校で、提案と同じ回にはならない。会場候補の小学校もすべて別の学校で、うち同じ区のものも名前が異なるため該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_447a53d102735c07",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_c2ee711b8e2be050",
+      "source_key": "official_notice:x_event_xevent_c2ee711b8e2be050#xrevent_6f35008f426c2a39",
+      "source_payload_hash": "5e969a35b4061a3092c33c8460d0bc6ead4369ee7aa0cf0452b36a7791c9c75f",
+      "packet_id": "packet_ffbc3ae4a51b40ed",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補に同じ区の町会の盆踊りがあるが会場も主催も別で、同じ回にも同じ系列にも当たらない。会場は候補の1件が同じ区の同名の公園で、末尾の「特設会場」は同じ敷地内での設営を指すと読めるので一致とした",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "venue_d74319944dff227c"
+      }
+    },
+    {
+      "inbox_id": "inbox_a847a48997f9a9b0",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_d19541978c5cf903",
+      "source_key": "official_notice:x_event_xevent_d19541978c5cf903#xrevent_ba9b78646fc9a613",
+      "source_payload_hash": "4d048da854cee2a4e61bea425fff62a3511972ec43116bdbe26472cf569d5c16",
+      "packet_id": "packet_aebd665998570c26",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補も系列候補も空なので、既存のどれとも結びつかない。会場候補は字面の一部が似た公園が並ぶだけで、区も所在地も違うため同じ場所とは読めない",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_c0d4cf9a376a2a8c",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_dc804531911f073e",
+      "source_key": "official_notice:x_event_xevent_dc804531911f073e#xrevent_82da300f098e793a",
+      "source_payload_hash": "b251bc45c65c1b853da83625512503cec5231bce4bbe90244f145a6dea5b1620",
+      "packet_id": "packet_bc5d1b6efac9ecbb",
+      "requested_action": "accept",
+      "reason_detail": "候補の先頭が主催団体名・年・開始日・会場まで提案と一致しており、同じ年の同じ開催と判断した。系列はその候補の series_id をそのまま採り、会場も同じ区の同名の公園が候補にあるので一致とした",
+      "payload": {
+        "occurrence_match": "occ_cf0544b3561983b8",
+        "series_match": "series_7481b2698085ef0b",
+        "venue_match": "venue_be359b4f4ad12812"
+      }
+    },
+    {
+      "inbox_id": "inbox_e1097729a2cabbb1",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_ddeb2e840b8bb071",
+      "source_key": "official_notice:x_event_xevent_ddeb2e840b8bb071#xrevent_0f7822f791148d29",
+      "source_payload_hash": "9097b6c825ffbf54b473733a48199aa719ed418a515c25ca4cd07ec387f5579c",
+      "packet_id": "packet_d3cd3e802b7e2f29",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補に同じ区の町会の盆踊りは含まれるが、会場も主催も提案とは別で同じ回にはならない。会場候補の小学校はいずれも別の学校で、同じ区のものも名前が違うため該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_bf9e65d8a7e2f713",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_ec7bcc4d28cb6026",
+      "source_key": "official_notice:x_event_xevent_ec7bcc4d28cb6026#xrevent_e9c10e8a1cecc504",
+      "source_payload_hash": "359ff7ed747ab8a5ab1038e4756d347d4dd97c484902e26230e1fffb519233e8",
+      "packet_id": "packet_ef04b866c1c510bb",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補は他区の行事か会場の異なる行事ばかりで、同じ回にも同じ系列にも当たらない。会場候補は「◯丁目公園」型の似た名前が並ぶだけで、区も町名も違うので同じ場所ではない",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_521192c88a6a9027",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_f13328a490758085",
+      "source_key": "official_notice:x_event_xevent_f13328a490758085#xrevent_816542878c90c7a6",
+      "source_payload_hash": "e628886f3a6738c0a771c0fd7b243178a17c95a09514886a25972938e563a52e",
+      "packet_id": "packet_b8a3d1292a212f0b",
+      "requested_action": "accept",
+      "reason_detail": "候補に同じ日の行事が1件あるが、主催も会場も土地もまったく別で、日付が重なるだけでは同じ回とは言えない。会場候補が空なので会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_eb73a9bced48aa58",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_ff5bfaacb46a6b97",
+      "source_key": "official_notice:x_event_xevent_ff5bfaacb46a6b97#xrevent_9eb41928e7df2041",
+      "source_payload_hash": "2121e1f2698211f8d3b0458bc41ded897fb6cd88aa992862fe3da4a0d8c35e95",
+      "packet_id": "packet_3f3761ede1ce8543",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はいずれも都内の別の行事で、名称の系統も土地も提案と一致しない。会場候補も別の自治体の公園ばかりで該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_6d085206da8158b6",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_0aa80c66d069de55",
+      "source_key": "official_notice:x_event_xevent_0aa80c66d069de55#xrevent_b3a342535ce49446",
+      "source_payload_hash": "4b0d50a5d874db30ec04d8f74693c527c9820f7c08a0d606f80b4909822fa0ee",
+      "packet_id": "packet_c250dfeba01e5495",
+      "requested_action": "accept",
+      "reason_detail": "候補の2件はどちらも商店街主催の別の催しで、主催も会場も時期も提案と違うため同じ系列とも言えない。会場候補が空なので会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_f9ec708cb2f6bf51",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_0f185e771f51e27b",
+      "source_key": "official_notice:x_event_xevent_0f185e771f51e27b#xrevent_f81b282239fa7c37",
+      "source_payload_hash": "a5d81b396d6b36ff3ed6a1b504ee828d7f0ebf557c592cff7372b1029b6e470b",
+      "packet_id": "packet_40d871c1863223b6",
+      "requested_action": "accept",
+      "reason_detail": "候補には同種の神社を会場とする盆踊りが多数並ぶが、社号が提案と一致するものは1件もない。会場候補の神社もすべて別の社で、区や自治体も異なるため該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_4818fac73627eb02",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_16371767fc28b14f",
+      "source_key": "official_notice:x_event_xevent_16371767fc28b14f#xrevent_3cb1c2478d3a52b2",
+      "source_payload_hash": "230cf399346e3bbfbb073cc2a4661730b22a9151ebf82d6daa00a48283dcb0fd",
+      "packet_id": "packet_b7c89e56d3fa7a2f",
+      "requested_action": "accept",
+      "reason_detail": "候補の先頭が行事名・年・会場とも提案と同一で、記録上の開始日と提案の日付は同じ月内の数日差にすぎず、複数日開催の同じ回を指していると読めるので一致とした。系列はその候補の series_id をそのまま採り、会場候補は空なので会場は該当なし",
+      "payload": {
+        "occurrence_match": "occ_22c38bfed7ff79db",
+        "series_match": "ser_056dc17d1e61d432",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_deca11d483272b50",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_1b1b0d4af9e11d2a",
+      "source_key": "official_notice:x_event_xevent_1b1b0d4af9e11d2a#xrevent_44a1e22fac2e3d3f",
+      "source_payload_hash": "a26d4eff5d5d18b5fb31335b0914a0ba0d26d763105df68a1619b5a0c8327d3b",
+      "packet_id": "packet_5eb8423261083a7d",
+      "requested_action": "accept",
+      "reason_detail": "候補に「宮前」を含む小学校の盆踊りがあるが別の区の別の学校で、名前の一部が似ているだけなので同じ回にも同じ系列にもしない。会場候補の小学校もすべて別区・別校のため該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_b7e18b9aa5e95dae",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_37eb3c170f674a90",
+      "source_key": "official_notice:x_event_xevent_37eb3c170f674a90#xrevent_6772fb163009fc59",
+      "source_payload_hash": "a004b8a2ab83dd81679589cf8b579f9562dd854d139e5f20faddcb3ad0a4eff6",
+      "packet_id": "packet_c525c17c60b9a233",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補も系列候補も空なので、結びつけられる既存がない。会場候補は同じ区の隣接施設だが、遊園地内の広場と屋外の運動場は別に名付けられた場所で同一と確信できないため none にした",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    }
+  ]
+}

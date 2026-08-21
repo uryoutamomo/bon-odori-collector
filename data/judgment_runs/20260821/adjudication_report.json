@@ -1,0 +1,55 @@
+{
+  "applied": 9,
+  "noop": 0,
+  "invalidated": 0,
+  "issues": [],
+  "entries": [
+    {
+      "hold_id": "hold_e4d6dd4a3e6e4b1f",
+      "decision_id": "decision:bd400a94377004d9c201d44e0c6968a2bbbc406b269afe4049fe1afe28c6eb3f",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_2923eca964b812f5",
+      "decision_id": "decision:ae2b37e5dde1f97ec78fdc37ce1fcd7f24cbf5fbeea796d1fa48d9fc3389ddf8",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_b837912f55f7dbf0",
+      "decision_id": "decision:29cce307900d0846e8ea304dc52748082a23bf2f641847cbd960d6b9f8fcb2ad",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_58561f0a57eb217a",
+      "decision_id": "decision:5b247467381a9a0cac47ea3f96e17686471d43fe160ec9bd1b612925d823b7c9",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_bc1593ce8759fca0",
+      "decision_id": "decision:ad40a05a5b2f3668034bea7a7c464984bc1d852c15a2b88be94a974c670fed56",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_f561194e8c67bce7",
+      "decision_id": "decision:f707a80c552d4940ba1798a7387c3dccfc54bddbc37a0fe55e6cadc7d6ae1aa6",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_d721e34323faa326",
+      "decision_id": "decision:782a68d8429999735ad0376c4c198b13a7bf5381b9ce1918969bc4cc86c3cf6d",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_de123373cdfc600c",
+      "decision_id": "decision:20f1333284b4df9602022b51e15ab4ac41c6091c800456cf2980d2ca2eacef2f",
+      "outcome": "written"
+    },
+    {
+      "hold_id": "hold_b81f3c45f3ae3bf0",
+      "decision_id": "decision:ce51f39ed7ae82f734a702b5d77ba9820632d2b44362ef17a9ee4c55aeebcdc4",
+      "outcome": "written"
+    }
+  ],
+  "migrations_applied": [],
+  "claim_scope": "production"
+}

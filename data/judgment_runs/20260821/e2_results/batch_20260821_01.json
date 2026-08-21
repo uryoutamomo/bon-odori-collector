@@ -1,0 +1,324 @@
+{
+  "results": [
+    {
+      "inbox_id": "inbox_6e1ffb5ab0588ed1",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_0402ebbdb378f41d",
+      "source_key": "official_notice:x_event_xevent_0402ebbdb378f41d#xrevent_979e2c5b2d22ba63",
+      "source_payload_hash": "3bc327e6290520c095742272d5ff548b47c71491f3c09f71dcbd8526ba01abbf",
+      "packet_id": "packet_280916ba0447c885",
+      "requested_action": "accept",
+      "reason_detail": "候補の回は前年（2025年）の第16回なので、回としては別。回数が1つ進んだ同じ行事なので系列はその候補のものと同じにした。会場候補はいずれも別の区で該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "ser_f7b58eebe46b8e99",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_6f906454f4723fa2",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_419c05e9cdbcb00c",
+      "source_key": "official_notice:x_event_xevent_419c05e9cdbcb00c#xrevent_b2bbd79b3603fecc",
+      "source_payload_hash": "18306f5c5ff69647f85834554e228d50cc6f2715a33f1d020ef6e81dbcec2b5e",
+      "packet_id": "packet_071c3a46bb3a77d3",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はいずれも別の公園・別の寺社の行事で、名称も会場も一致しない。会場候補にも同名・同所と読めるものがないため三つとも該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_b448b6f90ad0ab2e",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_64d7ad9dc6a6e48e",
+      "source_key": "official_notice:x_event_xevent_64d7ad9dc6a6e48e#xrevent_51dc0a9c44adba67",
+      "source_payload_hash": "582226236c356a473e117a18f73ca5f2ab59004771a05b33e74cca4594b3eb51",
+      "packet_id": "packet_3c0d38fbb4c5d561",
+      "requested_action": "accept",
+      "reason_detail": "唯一の開催回候補は別の町会・別の区の行事で、主催団体も会場も一致しない。会場候補にも該当するものがない",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_ab29e742099ede41",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_665eaedfe3997aa1",
+      "source_key": "official_notice:x_event_xevent_665eaedfe3997aa1#xrevent_90894de4ea960b24",
+      "source_payload_hash": "5cc6d0271db686e0e118e90c2c5535554e825d909586d062ac81fe4c7027d66b",
+      "packet_id": "packet_3ffa68f178963f29",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はどれも別の町会が主催する行事で、主催団体名が一致しない。会場候補は区も住所も空欄で同一敷地か確認できないため、確信が持てず該当なしとした",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_2240981bde3e59e6",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_7fac5cc43c42d204",
+      "source_key": "official_notice:x_event_xevent_7fac5cc43c42d204#xrevent_1596ff7181afeca6",
+      "source_payload_hash": "11ebc2ffde4334b76b9112818fd45b894642bd6d0ff30fb791979c98da021a3a",
+      "packet_id": "packet_c114fbc21a1c5ac9",
+      "requested_action": "accept",
+      "reason_detail": "候補の回は前年の回なので回としては別だが、回数が1つ進んだ同じ行事なので系列は一致させた。会場は表記が違うだけで同じ敷地（同一の外構名を含む港区の住所）と読めるため一致とした",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "ser_f7b58eebe46b8e99",
+        "venue_match": "ven_f93cf12a0d740e0d"
+      }
+    },
+    {
+      "inbox_id": "inbox_bbd15743dae070d8",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_061b77e33d60002a",
+      "source_key": "official_notice:x_event_xevent_061b77e33d60002a#xrevent_e5084f975ad865a0",
+      "source_payload_hash": "e92dafee0befe401051f56ec3ad39fd49d09a35d11fa6f71f795ba63aec1af64",
+      "packet_id": "packet_222e170ff1a21acb",
+      "requested_action": "accept",
+      "reason_detail": "主催の自治会名が同じで、年も開催初日も一致するため同じ回と判断した。ただし候補の会場名とは食い違いがあり、会場候補にも該当するものがないので会場は該当なし",
+      "payload": {
+        "occurrence_match": "occ_4a97e6a1c0af5edb",
+        "series_match": "series_c7fa370c2a9dd37a",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_fc80dcfcef2d4850",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_1130f0c9548dbcce",
+      "source_key": "official_notice:x_event_xevent_1130f0c9548dbcce#xrevent_992d250e1057b25a",
+      "source_payload_hash": "adb70b4eff2d8024b978918e0c8eec7530c0a43c3b8ec23f779c28ad6f1b92cc",
+      "packet_id": "packet_6e664f2ca20e87cd",
+      "requested_action": "accept",
+      "reason_detail": "開催回・系列・会場のいずれも候補が空で、照合できる既存データがないため三つとも該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_8bcf650eae44293e",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_15bbf3e85c163276",
+      "source_key": "official_notice:x_event_xevent_15bbf3e85c163276#xrevent_12afc0bdb9a1229d",
+      "source_payload_hash": "192c70479020efd4529fecb63c347570a0f9dd7a138ab1e0424347c59e0da294",
+      "packet_id": "packet_e5b7c3108e0676e1",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はいずれも別の地域の行事で、会場も一致しない。会場候補は名前の形が似た児童遊園が並ぶだけで、区がすべて異なるため該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_0ea7c73375a1e34e",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_16fb3b75944b339b",
+      "source_key": "official_notice:x_event_xevent_16fb3b75944b339b#xrevent_606fbfab6474d0e5",
+      "source_payload_hash": "1de985ee43973dc5edf133bd86b18de7db507eede45333133779a43c603ed86b",
+      "packet_id": "packet_98cef5165b1f40f2",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補は名称も会場も異なる別の夏まつりばかりで一致しない。会場候補も別の区の施設で該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_fdbc7959536e7b1c",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_1ae6af6ee708ee3e",
+      "source_key": "official_notice:x_event_xevent_1ae6af6ee708ee3e#xrevent_5f3a289b0ea1f269",
+      "source_payload_hash": "2bbbcf9514a1cc807f4404091ba223dccb38de4f39f2e6507343dd319691d49d",
+      "packet_id": "packet_7ce876492f503668",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補が空のため回・系列とも該当なし。会場候補に同じ駅の広場があるが、そちらは北口でこの提案は南口と出口が違い、同一の広場と言い切れないので該当なしとした",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_2b4202da4e47e2f0",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_2187f642b0a406d5",
+      "source_key": "official_notice:x_event_xevent_2187f642b0a406d5#xrevent_bd2992b8b20c68eb",
+      "source_payload_hash": "2c4b6fbb697f4c2ca1da86744f3ce817a6d18904391f0016d8d21c9e7bd9f53a",
+      "packet_id": "packet_0fd8456c5cb4a1b6",
+      "requested_action": "accept",
+      "reason_detail": "開催回・系列・会場のいずれも候補が空で、照合できる既存データがないため三つとも該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_d28b42b8f060ee56",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_27449cf37fa3dbbc",
+      "source_key": "official_notice:x_event_xevent_27449cf37fa3dbbc#xrevent_11a92e413b02b5b0",
+      "source_payload_hash": "e81fdacab4d5ce592e061f3230c496a92bf63429d8074de9488776d660f68894",
+      "packet_id": "packet_070c578caff464ac",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補はいずれも別の地域の行事で会場も一致しない。会場候補は空のため会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_2d98f34b59544ca3",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_31e5b6b8fdb42173",
+      "source_key": "official_notice:x_event_xevent_31e5b6b8fdb42173#xrevent_f1ed335064b836e8",
+      "source_payload_hash": "363c9f3e95ce60d101a1575f0d018d39a621a9330172e628166077fd578b9174",
+      "packet_id": "packet_aa80120514561c73",
+      "requested_action": "accept",
+      "reason_detail": "候補にある同年の回は本祭で、日付も会場も別。この提案は本祭に向けた練習の催しで、候補の系列に同じ年の回がすでにある以上そこへ入れると同年に二重の回ができてしまうため、系列も該当なしとした。会場候補はすべて別の区の学校",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_a7a53389e3aa6136",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_341648189a26da95",
+      "source_key": "official_notice:x_event_xevent_341648189a26da95#xrevent_4027b300f6e8b9f9",
+      "source_payload_hash": "9806ba6f095a781952d493f5c71e11593e854cd9b00ee993c4c03ec50139acea",
+      "packet_id": "packet_a5b519a109795d33",
+      "requested_action": "accept",
+      "reason_detail": "唯一の開催回候補は時期も会場も異なる別の行事で一致しない。会場候補にも同名の学校がなく該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_36bc0d3feccd359d",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_41f679cff8f3491e",
+      "source_key": "official_notice:x_event_xevent_41f679cff8f3491e#xrevent_cb7955f7d5fb595c",
+      "source_payload_hash": "5ce17564109100d7200c9d44e08c0e98d80e147aae82469e20cfdef691afb62d",
+      "packet_id": "packet_c905c49c2f06fabd",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補は名称の一部が似ているだけで会場も主体も別の行事のため一致しない。会場候補も別の施設で該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_20c07f6daa152529",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_4699a26634981b69",
+      "source_key": "official_notice:x_event_xevent_4699a26634981b69#xrevent_94aa29726899dc8c",
+      "source_payload_hash": "199e35648ac39b3e035b7e6481208c1e87f53bf2f0b089ea592a448b48e71b42",
+      "packet_id": "packet_79e6e042d84d2193",
+      "requested_action": "accept",
+      "reason_detail": "開催回・系列・会場のいずれも候補が空で、照合できる既存データがないため三つとも該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_0b1c0a01627afb7b",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_4c03582604977f1d",
+      "source_key": "official_notice:x_event_xevent_4c03582604977f1d#xrevent_b265fa750fe1b4e2",
+      "source_payload_hash": "f2249bcd3f37fc600468561fbfebcee6b91b59bd0e735abc4fbe7e9582149834",
+      "packet_id": "packet_252334eb56e3683b",
+      "requested_action": "accept",
+      "reason_detail": "開催回候補は別の地域の夏まつりで、名称も会場も一致しない。会場候補は空のため会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_9c7bea8edbde3b17",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_59ee4ad05d930a99",
+      "source_key": "official_notice:x_event_xevent_59ee4ad05d930a99#xrevent_40cb8eff7924e439",
+      "source_payload_hash": "1982a4f83e451c150e49797cfd685cb74480826a862d70a221bf2505057117fc",
+      "packet_id": "packet_db759734b8be6947",
+      "requested_action": "accept",
+      "reason_detail": "唯一の開催回候補は別の寺院の行事で、主催する寺も時期も違うため一致しない。会場候補は空のため会場も該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    },
+    {
+      "inbox_id": "inbox_ca467f10763d331a",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_5ff634ef5cbb310b",
+      "source_key": "official_notice:x_event_xevent_5ff634ef5cbb310b#xrevent_6d857ef5724e8451",
+      "source_payload_hash": "d73270b98faf3d6905310d875dbd27a2432503be32d7458f0b0b4dec9e0a92d0",
+      "packet_id": "packet_2f26f08fbf8f08ec",
+      "requested_action": "accept",
+      "reason_detail": "候補に年・開催日・会場がすべて一致する同名の回があり、同じ回と判断した。系列はその候補のものに揃え、会場も同じ区の同名校で住所も整合するため一致とした",
+      "payload": {
+        "occurrence_match": "occ_87e5370ab1521e66",
+        "series_match": "series_9ec4d7d31c58a66e",
+        "venue_match": "venue_fc7d2b5087c6be16"
+      }
+    },
+    {
+      "inbox_id": "inbox_6cbc83ec6194dd21",
+      "domain": "event",
+      "lane": "event_create",
+      "source_id": "official_notice:x_event_xevent_605d7c998314d5a4",
+      "source_key": "official_notice:x_event_xevent_605d7c998314d5a4#xrevent_cf3326e282bef8c9",
+      "source_payload_hash": "478f54111d9a55811135a585eca646e2bab5d6586663b2d5bfdbbd21bf24a9c5",
+      "packet_id": "packet_59816c61b3f338d9",
+      "requested_action": "accept",
+      "reason_detail": "開催回・系列・会場のいずれも候補が空で、照合できる既存データがないため三つとも該当なし",
+      "payload": {
+        "occurrence_match": "none",
+        "series_match": "none",
+        "venue_match": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "build_change_requests_from_judgment.py",
+  "scope": "accepted_identity_judgments",
+  "requests": [
+    {
+      "request_id": "chrq_b266579db9b496ff",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/nerikohouse/status/2090017563011142108",
+        "kind": "official_current_year",
+        "title": "上石神井地区祭・夏まつり（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/nerikohouse/status/2090017563011142108",
+      "decision_id": "decision:09934b8561fa88871ac69a5a2cab3f2a9c3b9d7bc82d2473f0e4ad17d55abc1d",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_87e5370ab1521e66",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22"
+    },
+    {
+      "request_id": "chrq_38e0baf7b1a27e59",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/kotokeizai/status/2090333007714652233",
+        "kind": "official_current_year",
+        "title": "東砂三丁目町会 盆踊大会（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。町会の盆踊大会の開催予定。日付と会場あり\n- 出典URL: https://x.com/kotokeizai/status/2090333007714652233",
+      "decision_id": "decision:46bfbe5de1fd723291fc703c2a860fcc9a2cec5153f6c02548702f1615902397",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_cf0544b3561983b8",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-22"
+    },
+    {
+      "request_id": "chrq_37a6c41f6589a165",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/tanaehis/status/2089922387919949979",
+        "kind": "official_current_year",
+        "title": "納涼盆踊り大会（X投稿より）"
+      },
+      "note": "出典：たなえ ひさし／都民ファーストの会／新宿区議会議員のX投稿。新宿中央公園の納涼盆踊り大会の日時・会場を告知\n- 出典URL: https://x.com/tanaehis/status/2089922387919949979",
+      "decision_id": "decision:6d0fd7fe2df521b0ede7a4bb89e629447e7e7ac4e8b5e312e8dc33982ad8e833",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_99e2dd44bce470e3",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23"
+    },
+    {
+      "request_id": "chrq_7f27a8ba0ec65796",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/tsubuki_staff/status/2090302832046149754",
+        "kind": "official_current_year",
+        "title": "六本木ヒルズ盆踊り2026（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。日時・会場明記\n- 出典URL: https://x.com/tsubuki_staff/status/2090302832046149754",
+      "decision_id": "decision:fada3e016ff413220c81ca50c4c0918761908965675b9a1acbee1f50781babd3",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_2718d1bde62e9a57",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23"
+    },
+    {
+      "request_id": "chrq_7ba68b818791d3ab",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/event_fes/status/2089863551158751708",
+        "kind": "official_current_year",
+        "title": "六本木ヒルズ盆踊り2026（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。六本木ヒルズ盆踊り2026の開催期間・会場を告知\n- 出典URL: https://x.com/event_fes/status/2089863551158751708",
+      "decision_id": "decision:ff3797d7e1f1335519057d32b6f94d01faadd9403bd9cae5523727663b04c185",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_2718d1bde62e9a57",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-23"
+    },
+    {
+      "request_id": "chrq_0daebd969d80ca28",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/c_kankokyokai/status/2089955521985908792",
+        "kind": "official_current_year",
+        "title": "京橋盆踊り2026（X投稿より）"
+      },
+      "note": "出典：中央区観光協会のX投稿。公式告知、日付・時刻・会場すべてあり\n- 出典URL: https://x.com/c_kankokyokai/status/2089955521985908792",
+      "decision_id": "decision:11be98496da6305550f7e4d1d30a86e3e0976de73c0c68f93994b4894369bdb7",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_07f775ba65031a6e",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-29"
+    },
+    {
+      "request_id": "chrq_2d9fcf2ef33da2c7",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/gunsou_bouei64/status/2090122273449767336",
+        "kind": "official_current_year",
+        "title": "雷門盆踊り〜夢灯篭〜（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/gunsou_bouei64/status/2090122273449767336",
+      "decision_id": "decision:e0578120e3c3714ab812e4a32aca380d37d7edf76dbd4479845a9554fc9fbec0",
+      "confidence": "confirmed",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_90f1aef84c0ad6f7",
+      "event_year": 2026,
+      "date_start": "2026-09-05",
+      "date_end": "2026-09-05"
+    },
+    {
+      "request_id": "chrq_9d97a43b46b41afe",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/adachi_city/status/2089981991060210144",
+        "kind": "official_current_year",
+        "title": "花保町会の盆踊り（X投稿より）"
+      },
+      "note": "出典：足立区役所のX投稿。日時・会場明記（複数）\n- 出典URL: https://x.com/adachi_city/status/2089981991060210144",
+      "decision_id": "decision:bd400a94377004d9c201d44e0c6968a2bbbc406b269afe4049fe1afe28c6eb3f",
+      "confidence": "confirmed",
+      "display_name": "花保町会の盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-21",
+      "venue": {
+        "name": "花保広場（花保さくら公園　南花畑３－１）"
+      },
+      "change_type": "create_event_series",
+      "series_name": "花保町会の盆踊り"
+    },
+    {
+      "request_id": "chrq_a96d4992bc30e983",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+        "kind": "official_current_year",
+        "title": "北区立堀船公園の盆踊り（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。和太鼓団体の出演告知。2つの盆踊りの日付と会場が読める\n- 出典URL: https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+      "decision_id": "decision:ae2b37e5dde1f97ec78fdc37ce1fcd7f24cbf5fbeea796d1fa48d9fc3389ddf8",
+      "confidence": "confirmed",
+      "display_name": "北区立堀船公園の盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "北区立堀船公園"
+      },
+      "change_type": "create_event_series",
+      "series_name": "北区立堀船公園の盆踊り"
+    },
+    {
+      "request_id": "chrq_eb77e37a95baab8f",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/WBElectric0521/status/2090040633230848484",
+        "kind": "official_current_year",
+        "title": "多摩川辺り商店会 盆踊り大会（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。日時・住所明記\n- 出典URL: https://x.com/WBElectric0521/status/2090040633230848484\n- 出典URL: https://x.com/web_camera/status/2090028969823518733",
+      "decision_id": "decision:29cce307900d0846e8ea304dc52748082a23bf2f641847cbd960d6b9f8fcb2ad",
+      "confidence": "confirmed",
+      "display_name": "多摩川辺り商店会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "東京都大田区鵜の木2丁目12-4（鵜の木児童公園）"
+      },
+      "change_type": "create_event_series",
+      "series_name": "多摩川辺り商店会 盆踊り大会"
+    },
+    {
+      "request_id": "chrq_07a9d4ac589288f6",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/natsutr_bon/status/2089973977318064232",
+        "kind": "official_current_year",
+        "title": "新小岩銀座 夏まつり 和楽器DEナイト（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/natsutr_bon/status/2089973977318064232",
+      "decision_id": "decision:5b247467381a9a0cac47ea3f96e17686471d43fe160ec9bd1b612925d823b7c9",
+      "confidence": "confirmed",
+      "display_name": "新小岩銀座 夏まつり 和楽器DEナイト",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "新小岩駅南口 駅前広場"
+      },
+      "change_type": "create_event_series",
+      "series_name": "新小岩銀座 夏まつり 和楽器DEナイト"
+    },
+    {
+      "request_id": "chrq_ca9d25965f25f214",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/toshimamirai/status/2090299942787301419",
+        "kind": "official_current_year",
+        "title": "東池袋五丁目東青年会 盆踊り大会（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。会場・日付明記（複数）\n- 出典URL: https://x.com/toshimamirai/status/2090299942787301419",
+      "decision_id": "decision:f707a80c552d4940ba1798a7387c3dccfc54bddbc37a0fe55e6cadc7d6ae1aa6",
+      "confidence": "confirmed",
+      "display_name": "東池袋五丁目東青年会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "東池袋5丁目エリア"
+      },
+      "change_type": "create_event_series",
+      "series_name": "東池袋五丁目東青年会 盆踊り大会"
+    },
+    {
+      "request_id": "chrq_535f787b30df1c79",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/UT_bondanceclub/status/2090290580014415933",
+        "kind": "official_current_year",
+        "title": "文京思い出横丁（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。盆踊りサークルの出演告知。日時・会場が明記\n- 出典URL: https://x.com/UT_bondanceclub/status/2090290580014415933",
+      "decision_id": "decision:782a68d8429999735ad0376c4c198b13a7bf5381b9ce1918969bc4cc86c3cf6d",
+      "confidence": "confirmed",
+      "display_name": "文京思い出横丁",
+      "event_year": 2026,
+      "date_start": "2026-08-23",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "傳通院"
+      },
+      "change_type": "create_event_series",
+      "series_name": "文京思い出横丁"
+    },
+    {
+      "request_id": "chrq_f789cf280b6f2f9f",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/toshimamirai/status/2090299942787301419",
+        "kind": "official_current_year",
+        "title": "駒込六丁目東文化会 盆踊り・縁日（X投稿より）"
+      },
+      "note": "現地の告知投稿で開催を確認。会場・日付明記（複数）\n- 出典URL: https://x.com/toshimamirai/status/2090299942787301419",
+      "decision_id": "decision:20f1333284b4df9602022b51e15ab4ac41c6091c800456cf2980d2ca2eacef2f",
+      "confidence": "confirmed",
+      "display_name": "駒込六丁目東文化会 盆踊り・縁日",
+      "event_year": 2026,
+      "date_start": "2026-08-23",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "駒込六丁目児童遊園"
+      },
+      "change_type": "create_event_series",
+      "series_name": "駒込六丁目東文化会 盆踊り・縁日"
+    },
+    {
+      "request_id": "chrq_8e32c9071f41a33e",
+      "source": {
+        "platform": "web",
+        "url": "https://x.com/otafull/status/2089910221787545811",
+        "kind": "official_current_year",
+        "title": "第40回 団地祭（X投稿より）"
+      },
+      "note": "出典：おーたふる／大田区商店街連合会のX投稿。平和島 第40回団地祭の日時・会場を告知\n- 出典URL: https://x.com/otafull/status/2089910221787545811",
+      "decision_id": "decision:ce51f39ed7ae82f734a702b5d77ba9820632d2b44362ef17a9ee4c55aeebcdc4",
+      "confidence": "confirmed",
+      "display_name": "団地祭",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-30",
+      "venue": {
+        "name": "大森東一丁目第一公園"
+      },
+      "change_type": "create_event_series",
+      "series_name": "団地祭"
+    }
+  ]
+}

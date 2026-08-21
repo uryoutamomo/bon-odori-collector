@@ -1,0 +1,164 @@
+{
+  "decisions": [
+    {
+      "packet_id": "packet_fdcdda056b85af61",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補は1件だけで、行事の名前も土地も提案とまったく異なる別の行事なので同じ回とは言えない。系列候補も会場候補も空で、結びつけられる既存が存在しない"
+    },
+    {
+      "packet_id": "packet_c4c33bb05b7cb1ed",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補はいずれも東京23区内の別団体の行事で、名称も日付も提案と噛み合わない。会場候補が空なので会場も既存には該当しない"
+    },
+    {
+      "packet_id": "packet_89215f7bf3885258",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "唯一の開催回候補は名称も土地も別の行事で、同じ系列の別の年にも当たらない。会場候補が空のため会場も該当なし"
+    },
+    {
+      "packet_id": "packet_1963195a9cdd574a",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補には「南」を含む町会・自治会の盆踊りが並ぶが、いずれも主催団体も会場も別で、提案の商店街系の催しとは一致しない。会場候補が空なので会場も該当なし"
+    },
+    {
+      "packet_id": "packet_ba2197eda4ad62be",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補はすべて他区の公園で開かれる別の行事で、提案の区の行事に当たるものがない。会場候補も同じ頭文字の公園が並ぶだけで区も所在地も違うため、同じ場所とは読めない"
+    },
+    {
+      "packet_id": "packet_ef640571fc32f5cc",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補の中に同じ区の町会の盆踊りが1件あるが、主催団体も会場も提案とは別物で同じ回にはならない。会場候補は別区の似た種別の施設だけなので該当なし"
+    },
+    {
+      "packet_id": "packet_8bcc0b738111e533",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補も系列候補も空で、照合できる既存がない。会場候補は東京都内の寺社の駐車場2件だけで、提案の土地とは無関係"
+    },
+    {
+      "packet_id": "packet_e740cc6d7bf79480",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補には小学校を会場とする行事が複数あるが、いずれも別の区・別の学校で、提案と同じ回にはならない。会場候補の小学校もすべて別の学校で、うち同じ区のものも名前が異なるため該当なし"
+    },
+    {
+      "packet_id": "packet_ffbc3ae4a51b40ed",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "venue_d74319944dff227c",
+      "reason_detail": "開催回候補に同じ区の町会の盆踊りがあるが会場も主催も別で、同じ回にも同じ系列にも当たらない。会場は候補の1件が同じ区の同名の公園で、末尾の「特設会場」は同じ敷地内での設営を指すと読めるので一致とした"
+    },
+    {
+      "packet_id": "packet_aebd665998570c26",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補も系列候補も空なので、既存のどれとも結びつかない。会場候補は字面の一部が似た公園が並ぶだけで、区も所在地も違うため同じ場所とは読めない"
+    },
+    {
+      "packet_id": "packet_bc5d1b6efac9ecbb",
+      "requested_action": "accept",
+      "occurrence_match": "occ_cf0544b3561983b8",
+      "series_match": "series_7481b2698085ef0b",
+      "venue_match": "venue_be359b4f4ad12812",
+      "reason_detail": "候補の先頭が主催団体名・年・開始日・会場まで提案と一致しており、同じ年の同じ開催と判断した。系列はその候補の series_id をそのまま採り、会場も同じ区の同名の公園が候補にあるので一致とした"
+    },
+    {
+      "packet_id": "packet_d3cd3e802b7e2f29",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補に同じ区の町会の盆踊りは含まれるが、会場も主催も提案とは別で同じ回にはならない。会場候補の小学校はいずれも別の学校で、同じ区のものも名前が違うため該当なし"
+    },
+    {
+      "packet_id": "packet_ef04b866c1c510bb",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補は他区の行事か会場の異なる行事ばかりで、同じ回にも同じ系列にも当たらない。会場候補は「◯丁目公園」型の似た名前が並ぶだけで、区も町名も違うので同じ場所ではない"
+    },
+    {
+      "packet_id": "packet_b8a3d1292a212f0b",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補に同じ日の行事が1件あるが、主催も会場も土地もまったく別で、日付が重なるだけでは同じ回とは言えない。会場候補が空なので会場も該当なし"
+    },
+    {
+      "packet_id": "packet_3f3761ede1ce8543",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補はいずれも都内の別の行事で、名称の系統も土地も提案と一致しない。会場候補も別の自治体の公園ばかりで該当なし"
+    },
+    {
+      "packet_id": "packet_c250dfeba01e5495",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補の2件はどちらも商店街主催の別の催しで、主催も会場も時期も提案と違うため同じ系列とも言えない。会場候補が空なので会場も該当なし"
+    },
+    {
+      "packet_id": "packet_40d871c1863223b6",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補には同種の神社を会場とする盆踊りが多数並ぶが、社号が提案と一致するものは1件もない。会場候補の神社もすべて別の社で、区や自治体も異なるため該当なし"
+    },
+    {
+      "packet_id": "packet_b7c89e56d3fa7a2f",
+      "requested_action": "accept",
+      "occurrence_match": "occ_22c38bfed7ff79db",
+      "series_match": "ser_056dc17d1e61d432",
+      "venue_match": "none",
+      "reason_detail": "候補の先頭が行事名・年・会場とも提案と同一で、記録上の開始日と提案の日付は同じ月内の数日差にすぎず、複数日開催の同じ回を指していると読めるので一致とした。系列はその候補の series_id をそのまま採り、会場候補は空なので会場は該当なし"
+    },
+    {
+      "packet_id": "packet_5eb8423261083a7d",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補に「宮前」を含む小学校の盆踊りがあるが別の区の別の学校で、名前の一部が似ているだけなので同じ回にも同じ系列にもしない。会場候補の小学校もすべて別区・別校のため該当なし"
+    },
+    {
+      "packet_id": "packet_c525c17c60b9a233",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補も系列候補も空なので、結びつけられる既存がない。会場候補は同じ区の隣接施設だが、遊園地内の広場と屋外の運動場は別に名付けられた場所で同一と確信できないため none にした"
+    }
+  ]
+}

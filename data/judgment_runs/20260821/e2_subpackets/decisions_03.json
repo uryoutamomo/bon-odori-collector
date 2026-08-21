@@ -1,0 +1,164 @@
+{
+  "decisions": [
+    {
+      "packet_id": "packet_54fd1f0e41b6290e",
+      "requested_action": "accept",
+      "occurrence_match": "occ_99e2dd44bce470e3",
+      "series_match": "ser_097893ea5628e504",
+      "venue_match": "ven_9913801458cc7397",
+      "reason_detail": "候補の先頭が同じ2026年・同じ開始日・同じ会場で、提案の括弧書きは同一敷地の旧称にすぎないため同じ回と判断した。会場候補も区・住所まで一致する。"
+    },
+    {
+      "packet_id": "packet_4ec8cdbc6c809855",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補はいずれも都内の別の行事で、名称も会場も提案と結びつかない。系列候補・会場候補は空なので、すべて該当なしとした。"
+    },
+    {
+      "packet_id": "packet_f400f5e6acd9bf05",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補はどれも別の学校・別の町会の行事で、提案の主体と重ならない。会場候補の小学校はいずれも別の区にあり、同名でもないため一致させなかった。"
+    },
+    {
+      "packet_id": "packet_5074a960cb20d313",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "神社の盆踊り候補は並ぶが、提案の神社と同じものは含まれていない。会場候補の稲荷神社はいずれも別の区の別社なので該当なしとした。"
+    },
+    {
+      "packet_id": "packet_81066c9772c08389",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補の町会・自治会はいずれも提案とは別の区の団体で、同じ主催とは読めない。系列候補・会場候補も空のため該当なしとした。"
+    },
+    {
+      "packet_id": "packet_7a5b6712140c1c00",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回候補・系列候補がともに空で、照合対象がない。会場候補は1件あるが別の区の別施設なので一致させなかった。"
+    },
+    {
+      "packet_id": "packet_c972ff9189c6d457",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回・系列・会場のいずれの候補も空で、照合できる既存データが存在しないため、すべて該当なしとした。"
+    },
+    {
+      "packet_id": "packet_256440b63cb617dd",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回・系列・会場のいずれの候補も空で、照合できる既存データが存在しないため、すべて該当なしとした。"
+    },
+    {
+      "packet_id": "packet_7ce5870d9ebd22d7",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補は「まつり」で名前が終わるだけの別行事ばかりで、主催も土地も提案と重ならない。会場候補2件も別の自治体の施設なので該当なしとした。"
+    },
+    {
+      "packet_id": "packet_eb04c8e279a86cc2",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補はいずれも別の区の町会・商店会の行事で、提案の主催団体と一致しない。会場候補は空のため会場も該当なしとした。"
+    },
+    {
+      "packet_id": "packet_e038a7d4f7b8765c",
+      "requested_action": "accept",
+      "occurrence_match": "occ_2718d1bde62e9a57",
+      "series_match": "ser_519cc51db9e40748",
+      "venue_match": "ven_9498f5900a872ee2",
+      "reason_detail": "同じ2026年・同じ会場の候補があり、提案の日付は複数日開催の後半に収まる範囲なので同じ回と判断した。もう一方の同名候補は前年の回なので採らなかった。"
+    },
+    {
+      "packet_id": "packet_6e2a64ac45fe060f",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補はいずれも別の土地の夏まつりで、提案と同じ行事とは読めない。会場候補の公園はすべて別の自治体にあり、同名でもないため一致させなかった。"
+    },
+    {
+      "packet_id": "packet_3aae7d5b2ae97a05",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補の町会・自治会はいずれも別の区の団体で、提案の主催と結びつかない。会場候補の児童遊園も区がすべて異なるため該当なしとした。"
+    },
+    {
+      "packet_id": "packet_b4061935af2751cf",
+      "requested_action": "accept",
+      "occurrence_match": "occ_2718d1bde62e9a57",
+      "series_match": "ser_519cc51db9e40748",
+      "venue_match": "ven_9498f5900a872ee2",
+      "reason_detail": "2026年の候補と会場が同じで、提案の開催期間の初日も候補の開始日と一致するため同じ回と判断した。同名のもう1件は前年の回なので対象外。"
+    },
+    {
+      "packet_id": "packet_523f34e4236c67b9",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回・系列・会場のいずれの候補も空で、照合できる既存データが存在しないため、すべて該当なしとした。"
+    },
+    {
+      "packet_id": "packet_344c9fe275972ebf",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補は末尾が同じ言い回しの別行事ばかりで、主催も土地も提案と重ならない。会場候補は空なので会場も該当なしとした。"
+    },
+    {
+      "packet_id": "packet_cfb8786661795157",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "候補2件はいずれも都内の別主体の夏祭りで、提案の主催とは無関係。系列候補・会場候補も空のため該当なしとした。"
+    },
+    {
+      "packet_id": "packet_2d69a5af69e86272",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "唯一の候補は季節も主体も異なる別行事で、同じものとは読めない。系列候補・会場候補は空なのですべて該当なしとした。"
+    },
+    {
+      "packet_id": "packet_0f067c1fd003ca9e",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回・系列・会場のいずれの候補も空で、照合対象がない。盆踊りを伴うかは根拠メモから読み取れないが、明らかな誤りとまでは言えないので accept とした。"
+    },
+    {
+      "packet_id": "packet_9e8c427cd37aef20",
+      "requested_action": "accept",
+      "occurrence_match": "none",
+      "series_match": "none",
+      "venue_match": "none",
+      "reason_detail": "開催回・系列・会場のいずれの候補も空で、照合できる既存データが存在しないため、すべて該当なしとした。"
+    }
+  ]
+}
