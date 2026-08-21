@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_656832c19056b479",
+    "title": "石脇夏祭り（X投稿より）",
+    "account_key": "@yuri_kan",
+    "url": "https://x.com/yuri_kan/status/2089928057100607809",
+    "notice_kind": "x_post",
+    "raw_text": "第２回 #石脇夏祭り🏮\n主催:石脇活性化プロジェクト実行委員会\n\n📅8月22日(土)\n🕑14:00～20:45\n📍由利本荘市総合防災公園\n　ナイスアリーナ南側駐車場エリア\n盆踊りをはじめ、歌や演奏、ダンスなどが盛りだくさん！\nキッチンカーや屋台も多数出店予定！\nおたのしみ抽選会も開催！\nぜひお越しください！ https://t.co/IE62J2E364"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_17d8a738ea4b923f",
+      "action": "register_new",
+      "event_name_hint": "石脇夏祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "由利本荘市総合防災公園",
+        "area": ""
+      },
+      "detail_addendum": "出典：由利本荘市観光協会 Yurihonjo City Tourism AssociationのX投稿。石脇夏祭りの日時・会場・主催を告知\n- 出典URL: https://x.com/yuri_kan/status/2089928057100607809"
+    }
+  ]
+}

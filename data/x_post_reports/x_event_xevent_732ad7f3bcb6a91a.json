@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_732ad7f3bcb6a91a",
+    "title": "明星地蔵盆（X投稿より）",
+    "account_key": "@fmuji888",
+    "url": "https://x.com/fmuji888/status/2089878027530551526",
+    "notice_kind": "x_post",
+    "raw_text": "8月29日土曜日、午後6時30分から8時まで、三室戸小学校の隣にある「莵道明星園」で、#明星地蔵盆 が開催されます。\nわたあめ、ポップコーン、かき氷などの定番のお楽しみにのほか、\nみんなで一緒に踊れる「プロジェクション盆踊り」や、夏の夜のお楽しみ「打上げ花火・仕掛け花火」も予定！\nお気軽にご参加を！\n#FMうじ"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_9ce9f54df9de7a69",
+      "action": "register_new",
+      "event_name_hint": "明星地蔵盆",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-29",
+      "venue": {
+        "name": "莵道明星園",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。明星地蔵盆（プロジェクション盆踊り）の日時・会場を告知\n- 出典URL: https://x.com/fmuji888/status/2089878027530551526"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_1ae6af6ee708ee3e",
+    "title": "新小岩銀座 夏まつり 和楽器DEナイト（X投稿より）",
+    "account_key": "@natsutr_bon",
+    "url": "https://x.com/natsutr_bon/status/2089973977318064232",
+    "notice_kind": "x_post",
+    "raw_text": "【新小岩銀座 夏まつり 和楽器DEナイト！】\n🏮8/22(土)⏰18:40〜20:00📍新小岩駅南口 駅前広場(葛飾区)\n\n民謡歌手木津かおりをはじめ津軽三味線、尺八、和太鼓など豪華メンバーで、熊本復興の想いを込めた民謡や生演奏で盆踊り♪\n\n🔔23日(日)は唄花座民謡SHOW(17:00-18:30)🎤\nhttps://t.co/16Vhz5n6v6 https://t.co/t3IqgRUlMO"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_5f3a289b0ea1f269",
+      "action": "register_new",
+      "event_name_hint": "新小岩銀座 夏まつり 和楽器DEナイト",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "新小岩駅南口 駅前広場",
+        "area": "葛飾区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/natsutr_bon/status/2089973977318064232"
+    }
+  ]
+}

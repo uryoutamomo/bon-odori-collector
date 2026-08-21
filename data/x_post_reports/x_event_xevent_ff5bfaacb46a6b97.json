@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_ff5bfaacb46a6b97",
+    "title": "旭川裏盆踊り（X投稿より）",
+    "account_key": "@aumganka",
+    "url": "https://x.com/aumganka/status/2089871457790959823",
+    "notice_kind": "x_post",
+    "raw_text": "おはようございます！今朝の旭川医大からの景色です。天気⛅28→31度、湿度64度夕方小雨の予報です。毎日30度超える日が続いていますね！週末8月22日（土）神楽岡公園で旭川裏盆踊りが開催されるようです🎆月末に盆踊りを催す町内会も多いようで祭囃子が聞こえてきますね♪＃旭川医大 ＃眼科 ＃盆踊り https://t.co/sYf06F1deG"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_9eb41928e7df2041",
+      "action": "register_new",
+      "event_name_hint": "旭川裏盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "神楽岡公園",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。旭川裏盆踊りの日時・会場を告知\n- 出典URL: https://x.com/aumganka/status/2089871457790959823"
+    }
+  ]
+}

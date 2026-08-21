@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_4c03582604977f1d",
+    "title": "大宮夏まつり 第54回指扇まつり大会（X投稿より）",
+    "account_key": "@saitamafes",
+    "url": "https://x.com/saitamafes/status/2089864077950808449",
+    "notice_kind": "x_post",
+    "raw_text": "今週末です‼️ 大宮夏まつり 第54回指扇まつり大会｜8月22日（土）に指扇中学校体育館・滝沼川第二遊水地などで開催！吹奏楽や盆踊り、ダンスを実施 詳細はこちら👉 https://t.co/XxYC65AsUY"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_b265fa750fe1b4e2",
+      "action": "register_new",
+      "event_name_hint": "大宮夏まつり 第54回指扇まつり大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "指扇中学校体育館・滝沼川第二遊水地など",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。大宮夏まつり 第54回指扇まつり大会の日時・会場を告知\n- 出典URL: https://x.com/saitamafes/status/2089864077950808449"
+    }
+  ]
+}

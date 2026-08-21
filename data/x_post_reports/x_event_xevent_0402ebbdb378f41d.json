@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:06.986501+00:00",
+  "source": {
+    "report_id": "x_event_xevent_0402ebbdb378f41d",
+    "title": "第17回ハマサイトの夏祭り（X投稿より）",
+    "account_key": "@ypuf82k_3BSb",
+    "url": "https://x.com/ypuf82k_3BSb/status/2090187290597548055",
+    "notice_kind": "x_post",
+    "raw_text": "爆風スランプ😎サンプラザ中野くん⭐️ピカキン😎の般若心経🙏おトクな朝活配信⭐️2023年3月3日から😎365日毎朝ほぼ6:15スタート☀️3年5ヶ月経過🙆‍♀️\n\n次回08/22(土)29(土)よる8時15分〜サンプラザ中野くんのスーパーファンズリクエストアワー❣️TikTokスーパーファンズ登録募集中🌟\n\n08/21(金)15:59 📺BS11イレブン 『鶴瓶のええ歌やなぁ　アンコール』 【第49回😎サンプラザ中野くん回をアンコール放送】 \n\n😎08/21(金) ステージ18:00「第17回ハマサイトの夏祭り」 オトナもコドモもLet's ボンダンス‼︎ 浜松町駅北口広場\nhttps://t.co/0ELC6sHgpe"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_979e2c5b2d22ba63",
+      "action": "register_new",
+      "event_name_hint": "第17回ハマサイトの夏祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-21",
+      "venue": {
+        "name": "浜松町駅北口広場",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。8/21のハマサイトの夏祭りでボンダンス。日時と会場が本文にある\n- 出典URL: https://x.com/ypuf82k_3BSb/status/2090187290597548055"
+    }
+  ]
+}

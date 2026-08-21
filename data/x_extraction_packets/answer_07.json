@@ -1,0 +1,1773 @@
+{
+  "batch_id": "x_extraction_20260820_07",
+  "scored_by": "koto-subagent",
+  "results": [
+    {
+      "no": 1,
+      "s": 3,
+      "n": "具体行事なし、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 2,
+      "s": 5,
+      "n": "実在イベントのチケット交換告知、日付あり",
+      "events": [
+        {
+          "event_name": "うたプリ夏祭り 盆踊り大会",
+          "quote": "（求）9/19 9/20  入場券 SHINING 2枚 どの枠でも◎",
+          "date_start": "2026-09-19",
+          "date_end": "2026-09-20",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 3,
+      "s": 3,
+      "n": "過去の一般的な参加経験、特定行事なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 4,
+      "s": 5,
+      "n": "公式告知、日付・イベント名・会場あり",
+      "events": [
+        {
+          "event_name": "天高く舞い踊れ！もいわ山盆踊り",
+          "quote": "9/12(土) 『天高く舞い踊れ！もいわ山盆踊り』開催！",
+          "date_start": "2026-09-12",
+          "venue_name": "もいわ山",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 5,
+      "s": 4,
+      "n": "盆踊りへの感想・意見（激しさの比喩）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 6,
+      "s": 2,
+      "n": "ライブのモッシュを盆踊りに例えた比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 7,
+      "s": 2,
+      "n": "「喜びの盆踊り」という比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 8,
+      "s": 5,
+      "n": "実在イベントのチケット交換告知、日付あり",
+      "events": [
+        {
+          "event_name": "うたプリ夏祭り 盆踊り大会",
+          "quote": "（求）9/20 1枠目 入場券 SHINING 2枚",
+          "date_start": "2026-09-20",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 9,
+      "s": 3,
+      "n": "行けない旨のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 10,
+      "s": 3,
+      "n": "盆踊りがあるか不確かな伝聞、材料薄い",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 11,
+      "s": 3,
+      "n": "当選した旨のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 12,
+      "s": 4,
+      "n": "地域文化としての盆踊り継承についての意見交換",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 13,
+      "s": 3,
+      "n": "盆踊りできる喜びのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 14,
+      "s": 3,
+      "n": "時間の余裕の話のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 15,
+      "s": 3,
+      "n": "返信、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 16,
+      "s": 3,
+      "n": "案のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 17,
+      "s": 3,
+      "n": "うたプリ盆踊り落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 18,
+      "s": 4,
+      "n": "曲・アレンジ名への言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "よっしゃあ漢唄",
+              "claim_type": "mentioned",
+              "evidence_quote": "よっしゃあ漢唄の盆踊りアレンジよすぎる"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 19,
+      "s": 5,
+      "n": "具体行事名を含むリスト（会場名を含む行事名2件）",
+      "events": [
+        {
+          "event_name": "中央区大江戸まつり盆おどり大会",
+          "quote": "中央区大江戸まつり盆おどり大会",
+          "venue_name": "中央区",
+          "song_claims": []
+        },
+        {
+          "event_name": "六本木ヒルズ盆踊り",
+          "quote": "六本木ヒルズ盆踊り",
+          "venue_name": "六本木ヒルズ",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 20,
+      "s": 3,
+      "n": "返信、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 21,
+      "s": 5,
+      "n": "会場・行事名・当日開催の情報あり",
+      "events": [
+        {
+          "event_name": "サザンナイト",
+          "quote": "浅草東本願寺ではサザンの曲で盆踊りを踊るサザンナイトが開催されるらしい...今夜！",
+          "venue_name": "浅草東本願寺",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 22,
+      "s": 3,
+      "n": "うたプリ盆踊りに行く予定、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 23,
+      "s": 3,
+      "n": "踊れなかった旨のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 24,
+      "s": 3,
+      "n": "うたプリ盆踊り落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 25,
+      "s": 3,
+      "n": "ハズレたのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 26,
+      "s": 3,
+      "n": "落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 27,
+      "s": 4,
+      "n": "盆踊りの踊り方についてのコメント",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 28,
+      "s": 5,
+      "n": "公式告知、日付・時刻・会場あり",
+      "events": [
+        {
+          "event_name": "青木コミュニティ盆踊り",
+          "quote": "8/22(土)15〜18時\n青木コミュニティ盆踊り@青木小学校",
+          "date_start": "2026-08-22",
+          "venue_name": "青木小学校",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 29,
+      "s": 3,
+      "n": "うたプリ盆踊り全落ちのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 30,
+      "s": 5,
+      "n": "本日開催の時刻情報あり",
+      "events": [
+        {
+          "event_name": "盆踊り",
+          "quote": "今日の盆踊りは18：20頃からやで",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 31,
+      "s": 5,
+      "n": "公式告知、日付・会場・イベント名あり",
+      "events": [
+        {
+          "event_name": "第17回みなとみらい大盆踊り",
+          "quote": "8月28日（金）29日（土）に、臨港パーク・プラザ広場にて「第17回みなとみらい大盆踊り」が開催されます。",
+          "date_start": "2026-08-28",
+          "date_end": "2026-08-29",
+          "venue_name": "臨港パーク・プラザ広場",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 32,
+      "s": 5,
+      "n": "実在イベントのチケット交換告知、日付あり",
+      "events": [
+        {
+          "event_name": "うたプリ夏祭り 盆踊り大会",
+          "quote": "譲 : 9/19 9/20 両日入場券 SHINING２枚",
+          "date_start": "2026-09-19",
+          "date_end": "2026-09-20",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 33,
+      "s": 2,
+      "n": "「盆踊りstyle」という写真の見た目の比喩",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 34,
+      "s": 3,
+      "n": "落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 35,
+      "s": 2,
+      "n": "雨乞い盆踊りという冗談の提案、実在の集まりではない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 36,
+      "s": 3,
+      "n": "うたプリ盆踊りハズレの驚きのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 37,
+      "s": 3,
+      "n": "盆踊りするぞーのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 38,
+      "s": 2,
+      "n": "政治家発言の比喩（たぬきが盆踊り）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 39,
+      "s": 4,
+      "n": "青年団による開催後の御礼・参加報告（感想中心で日付は付随情報）",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "深井北町の盆踊り",
+          "event_quote": "8月15日盆踊りが行われました！",
+          "event_date_start": "2026-08-15",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 40,
+      "s": 3,
+      "n": "行きたいという願望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 41,
+      "s": 3,
+      "n": "抽選枠についての不満、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 42,
+      "s": 5,
+      "n": "本日の出演・演目の告知",
+      "events": [
+        {
+          "event_name": "横濱漢祭2026",
+          "quote": "漢気爆発 盆バイエ「横濱漢祭2026」\n2日目です",
+          "song_claims": [
+            {
+              "song_name": "よっしゃあ漢唄",
+              "claim_type": "announced",
+              "evidence_quote": "よっしゃあ漢唄盆踊りバージョンをレクチャーしますよ♬"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 43,
+      "s": 3,
+      "n": "できない、のみ材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 44,
+      "s": 3,
+      "n": "うたプリ夏祭り落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 45,
+      "s": 2,
+      "n": "キャラクター「盆踊りチャピ」への言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 46,
+      "s": 4,
+      "n": "曲アレンジへの言及（開催回不明の思い出）",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "カルナイ",
+              "claim_type": "mentioned",
+              "evidence_quote": "カルナイの盆踊りバージョン聴いただけでもゆかいだった"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 47,
+      "s": 4,
+      "n": "会場名のみの個人の参加報告",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "荻窪タウンセブン盆踊り大会",
+          "event_quote": "荻窪タウンセブン盆踊り大会、今年も盛会でした",
+          "venue_name": "タウンセブン",
+          "ward": "杉並区",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 48,
+      "s": 2,
+      "n": "ゲーム用語の比喩（ゲノム盆踊り）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 49,
+      "s": 3,
+      "n": "落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 50,
+      "s": 4,
+      "n": "盆踊りの曲の歌詞についての質問（曲名は未確定）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 51,
+      "s": 4,
+      "n": "具体的な盆踊り曲・演目名への言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "子供盆踊り",
+              "claim_type": "mentioned",
+              "evidence_quote": "子供盆踊りと北海盆踊りよ。"
+            },
+            {
+              "song_name": "北海盆踊り",
+              "claim_type": "mentioned",
+              "evidence_quote": "子供盆踊りと北海盆踊りよ。"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 52,
+      "s": 3,
+      "n": "新しい盆踊りの音という漠然とした言及、材料薄い",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 53,
+      "s": 4,
+      "n": "会場名・曲名を含む個人の観察記録",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "本牧の盆踊りってすごい！",
+          "venue_name": "本牧",
+          "song_claims": [
+            {
+              "song_name": "め組のひと",
+              "claim_type": "observed",
+              "evidence_quote": "『め組のひと』\nこの曲で中学生くらいの子が盆踊りで盛り上がっててびっくりした。"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 54,
+      "s": 2,
+      "n": "文脈不明の返信",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 55,
+      "s": 2,
+      "n": "ライブでの掛け声の比喩、界隈語のみ",
+      "events": [],
+      "observations": [],
+      "glossary": [
+        "ドゥドゥドゥシュビドゥバ"
+      ]
+    },
+    {
+      "no": 56,
+      "s": 3,
+      "n": "行きたかったという願望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 57,
+      "s": 3,
+      "n": "他人の盆踊りへの反応、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 58,
+      "s": 3,
+      "n": "行きたいという願望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 59,
+      "s": 4,
+      "n": "盆踊りの由来・神様との関連についての意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 60,
+      "s": 4,
+      "n": "動画で見た曲・踊り名への言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "ダンシングヒーロー盆踊り",
+              "claim_type": "mentioned",
+              "evidence_quote": "「ダンシングヒーロー盆踊り」"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 61,
+      "s": 4,
+      "n": "集落の盆踊りの由来・作法についての詳しい説明",
+      "events": [],
+      "observations": [],
+      "glossary": [
+        "初盆"
+      ]
+    },
+    {
+      "no": 62,
+      "s": 3,
+      "n": "政治的な話題の中の言及、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 63,
+      "s": 2,
+      "n": "踊ってみた動画が盆踊りのようになった、という比喩",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 64,
+      "s": 2,
+      "n": "ゲーム内イベントらしき「盆踊り」への言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 65,
+      "s": 4,
+      "n": "盆踊りでの人物についての個人の記録",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "盆踊りで私たちが勝手に頭領とか大将とか呼んでた人、団長らしい。",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 66,
+      "s": 3,
+      "n": "行きたいという願望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 67,
+      "s": 5,
+      "n": "今週末の出演・演目の告知",
+      "events": [
+        {
+          "event_name": "盆踊り",
+          "quote": "今週末の盆踊りでやります！",
+          "song_claims": [
+            {
+              "song_name": "ダンシング盆踊り",
+              "claim_type": "announced",
+              "evidence_quote": "やりましたダンシング盆踊り！今週末の盆踊りでやります！"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 68,
+      "s": 4,
+      "n": "実行委員会による閉幕の御礼、会場名のみ",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "いわき回転やぐら盆踊り大会",
+          "event_quote": "第71回いわき回転やぐら盆踊り大会が無事に閉幕いたしました！",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 69,
+      "s": 3,
+      "n": "外れましたのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 70,
+      "s": 3,
+      "n": "踊るぞという宣言のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 71,
+      "s": 3,
+      "n": "やりたい事リストの一項目、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 73,
+      "s": 4,
+      "n": "尾張地方の盆踊りの由来と曲への冗談混じりの言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "ダンシング・ヒーロー",
+              "claim_type": "mentioned",
+              "evidence_quote": "『ダンシング・ヒーロー』の浸透"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 72,
+      "s": 3,
+      "n": "踊れなかったという願望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 74,
+      "s": 3,
+      "n": "落選のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 75,
+      "s": 4,
+      "n": "特定歌手の盆踊り曲への言及（曲名は未確定）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 76,
+      "s": 3,
+      "n": "生で見たことがないという感想のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 77,
+      "s": 3,
+      "n": "参加したいという願望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 78,
+      "s": 4,
+      "n": "曲名（クックロビン音頭）の提案",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "クックロビン音頭",
+              "claim_type": "mentioned",
+              "evidence_quote": "クックロビン音頭もいいよ"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 79,
+      "s": 2,
+      "n": "自宅で一人で踊る、という冗談。実在の集まりではない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 80,
+      "s": 3,
+      "n": "配信希望のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 81,
+      "s": 4,
+      "n": "会場名を含む過去の記憶",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "錦町公園で盆踊りやってたやつかな",
+          "venue_name": "錦町公園",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 82,
+      "s": 3,
+      "n": "商工会での盆踊り相談を見かけた話、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 83,
+      "s": 4,
+      "n": "地名を含む個人の感想",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "鹿追町の盆踊り大会",
+          "event_quote": "先日開催された鹿追町の盆踊り大会",
+          "venue_name": "鹿追町",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 84,
+      "s": 5,
+      "n": "本日開催の呼びかけ",
+      "events": [
+        {
+          "event_name": "盆踊り（釧路）",
+          "quote": "今宵は盆踊り。短い釧路の夏を一緒に踊りましょう！",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 85,
+      "s": 5,
+      "n": "今週土曜開催の告知",
+      "events": [
+        {
+          "event_name": "浴衣まつり",
+          "quote": "土曜日は浴衣まつり！",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 86,
+      "s": 2,
+      "n": "コンサートのモッシュを盆踊りに例えた比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 87,
+      "s": 2,
+      "n": "VRChatイベントへの言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 88,
+      "s": 5,
+      "n": "本日開催の練習会、会場・時刻あり",
+      "events": [
+        {
+          "event_name": "第3回目の盆踊り練習会",
+          "quote": "本日19:00から、第3回目の盆踊り練習会です。",
+          "venue_name": "正覚寺 実相会館 別館たちばな",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 89,
+      "s": 2,
+      "n": "AI画像生成のお題、実在の集まりではない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 90,
+      "s": 4,
+      "n": "会場を含む幼少期の個人の記録",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "豪の湖に盆踊り大会で抱っこしてもらったことがあるんです",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 91,
+      "s": 4,
+      "n": "夜店と盆踊りの組み合わせについての意見",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "夜店と盆踊り☺️昔ながらの最高の組み合わせ👍️",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 92,
+      "s": 5,
+      "n": "開催予定の告知（区・内容あり）",
+      "events": [
+        {
+          "event_name": "盆踊り大会",
+          "quote": "東灘区の公園で『盆踊り大会』が開催されるみたい。",
+          "ward": "東灘区",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 93,
+      "s": 3,
+      "n": "北海道各地の櫓準備を見た旨、特定行事なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 94,
+      "s": 5,
+      "n": "明日開催の告知",
+      "events": [
+        {
+          "event_name": "仮装盆踊り大会",
+          "quote": "いよいよ明日は仮装盆踊り大会！",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 95,
+      "s": 5,
+      "n": "公式告知、日付・時刻・会場すべてあり",
+      "events": [
+        {
+          "event_name": "京橋盆踊り2026",
+          "quote": "＃京橋盆踊り 2026 開催🏮",
+          "date_start": "2026-08-28",
+          "date_end": "2026-08-29",
+          "venue_name": "京橋エドグラン 1F 京橋中央ひろば（ガレリア）",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 96,
+      "s": 4,
+      "n": "閉幕報告、会場名のみ",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "笠間納涼盆踊り花火大会2026",
+          "event_quote": "「笠間納涼盆踊り花火大会2026」初の2DAYS開催が大盛況のうちに閉幕しました",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 97,
+      "s": 5,
+      "n": "公式告知、日付・イベント名あり",
+      "events": [
+        {
+          "event_name": "成合地蔵盆踊り",
+          "quote": "8.22（土）OPGマットプロレス大会\n成合地蔵盆踊り",
+          "date_start": "2026-08-22",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 98,
+      "s": 2,
+      "n": "AI生成画像の誤りについての冗談、実在の集まりではない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 99,
+      "s": 4,
+      "n": "開催後の交流・感想中心の参加報告（日付は付随情報）",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "地域の盆踊り",
+          "event_quote": "先日の14日に滝沢三条市長にも参加頂き地域の盆踊りを開催。",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 100,
+      "s": 5,
+      "n": "本日開催の告知、会場あり",
+      "events": [
+        {
+          "event_name": "くしろ市民北海盆踊り",
+          "quote": "本日くしろ市民北海盆踊りも開催されますね☺️北大通が賑わいます",
+          "venue_name": "北大通",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 101,
+      "s": 3,
+      "n": "うろ覚えの話題、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 102,
+      "s": 2,
+      "n": "文脈不明の返信",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 103,
+      "s": 4,
+      "n": "個人の過去の記録",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "2年前に盆踊りを踊ったのが最後だわ",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 104,
+      "s": 5,
+      "n": "公式告知、日付・時刻・会場・中止規定すべてあり",
+      "events": [
+        {
+          "event_name": "第17回ハマサイトの夏祭り",
+          "quote": "8/21（金）第17回ハマサイトの夏祭り 〜オトナもコドモもLet's ボンダンス！！〜",
+          "date_start": "2026-08-21",
+          "venue_name": "浜松町駅北口駅前広場・汐留ビルディング外構",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 105,
+      "s": 2,
+      "n": "行列を横切る冗談、実在の集まりではない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 106,
+      "s": 4,
+      "n": "移民文化と盆踊りの融合についての説明、曲・踊り名への言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "マツリダンス",
+              "claim_type": "mentioned",
+              "evidence_quote": "世代を超えて踊り継いだ盆踊りと、現地文化の融合「マツリダンス」が"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 107,
+      "s": 4,
+      "n": "複数行事を巡った個人の一日記（感想中心、日付は付随情報）",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "ゐのいち盆踊り",
+          "event_quote": "①ゐのいち盆踊り\nに行きたくて…",
+          "event_date_start": "2026-08-16",
+          "song_claims": []
+        },
+        {
+          "event_name": "シタマチふるさと盆踊り",
+          "event_quote": "②シタマチふるさと盆踊り\nの予習って感じ",
+          "event_date_start": "2026-08-16",
+          "song_claims": [
+            {
+              "song_name": "伊丹音頭",
+              "claim_type": "observed",
+              "evidence_quote": "伊丹音頭や下関漁港節踊れて嬉しい"
+            },
+            {
+              "song_name": "下関漁港節",
+              "claim_type": "observed",
+              "evidence_quote": "伊丹音頭や下関漁港節踊れて嬉しい"
+            }
+          ]
+        },
+        {
+          "event_name": "根津神社の盆踊り",
+          "event_quote": "③根津神社 へ\n大好きな根津音頭をもってしても立て直せず…",
+          "event_date_start": "2026-08-16",
+          "venue_name": "根津神社",
+          "song_claims": [
+            {
+              "song_name": "根津音頭",
+              "claim_type": "observed",
+              "evidence_quote": "大好きな根津音頭をもってしても立て直せず"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 108,
+      "s": 5,
+      "n": "ニュース形式の告知、行事名あり",
+      "events": [
+        {
+          "event_name": "下大久保納涼盆踊り大会",
+          "quote": "下大久保『納涼盆踊り大会』でパフォーマンスを披露！",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 109,
+      "s": 3,
+      "n": "地元の盆踊りへの想いのみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 110,
+      "s": 2,
+      "n": "腕の多さを盆踊りに例えた比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 111,
+      "s": 3,
+      "n": "動画を待っているという反応のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 112,
+      "s": 2,
+      "n": "映画タイトルへの言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 113,
+      "s": 4,
+      "n": "具体的な行事名への言及と個人の好み",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "妖怪盆踊り",
+          "event_quote": "妖怪盆踊りとshin-onsai がバチ被りしてて新宿v.s.立川",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 114,
+      "s": 3,
+      "n": "うたプリの盆踊りがあるという月のみの言及、材料薄い",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 115,
+      "s": 4,
+      "n": "移民文化と盆踊りの融合についての説明、曲・踊り名への言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "song_claims": [
+            {
+              "song_name": "マツリダンス",
+              "claim_type": "mentioned",
+              "evidence_quote": "ブラジル移民が踊り継いだ盆踊りと現地文化の融合「マツリダンス」"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 116,
+      "s": 5,
+      "n": "あと2日で開催という告知",
+      "events": [
+        {
+          "event_name": "見取り図盆踊り",
+          "quote": "いよいよ、#見取り図盆踊り まで\nあと2日🏮✨",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 117,
+      "s": 4,
+      "n": "イベント終了の挨拶",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "盆踊りのご挨拶とお見送り…🍈✨",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 118,
+      "s": 5,
+      "n": "公式告知、日付・会場あり",
+      "events": [
+        {
+          "event_name": "ひまわりBONフェスティバル",
+          "quote": "8月22日(土)にはこちらでひまわりBONフェスティバルが開催されます🌻",
+          "date_start": "2026-08-22",
+          "venue_name": "花菜ガーデン",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 119,
+      "s": 2,
+      "n": "ゲーム内の技の俗称としての「盆踊り」",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 120,
+      "s": 4,
+      "n": "行事名を含む写真の投稿",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "一日市盆踊り",
+          "event_quote": "一日市盆踊りでのババヘラ✨",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 121,
+      "s": 4,
+      "n": "祭りの構成についての説明",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "関広見まつり",
+          "event_quote": "盆踊りに終わるお祭りとは？！",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 122,
+      "s": 4,
+      "n": "感想中心の個人の参加報告（日付・主催者名は付随情報）",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "といぬさん主催の盆踊りイベント",
+          "event_quote": "8/8のといぬさん主催の盆踊りイベント参加させて貰いました",
+          "event_date_start": "2026-08-08",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 123,
+      "s": 4,
+      "n": "行事名を含む動画共有",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "琴ヶ浜盆踊り",
+          "event_quote": "琴ヶ浜盆踊り",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 124,
+      "s": 2,
+      "n": "架空の情景をイメージした広告的な創作、実在の集まりではない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 125,
+      "s": 2,
+      "n": "映画タイトルへの言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 126,
+      "s": 2,
+      "n": "トラブル対応を盆踊りに例えた比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 127,
+      "s": 5,
+      "n": "9月6日出演の告知",
+      "events": [
+        {
+          "event_name": "盆踊りイベント",
+          "quote": "9月6日に盆踊りイベントに出るのでぜひ！",
+          "date_start": "2026-09-06",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 128,
+      "s": 5,
+      "n": "本日夜開催の告知、会場・曲名あり",
+      "events": [
+        {
+          "event_name": "北海盆踊り",
+          "quote": "きょうの夜、釧路は中心街で北海盆踊り！",
+          "venue_name": "釧路中心街",
+          "song_claims": [
+            {
+              "song_name": "ドラえもん音頭",
+              "claim_type": "mentioned",
+              "evidence_quote": "ドラリド～ラリの～ドラえもん音頭～！（流れません）"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 129,
+      "s": 4,
+      "n": "盆踊りのリズムについての意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 130,
+      "s": 3,
+      "n": "告知への反応（行きたい）のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 131,
+      "s": 2,
+      "n": "ゲームコミュニティの「盆踊り演奏会」への言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 132,
+      "s": 4,
+      "n": "スタッフとしての参加記録",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "地域の盆踊り❣️自分はスタッフだったよ😂輪投げの担当",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 133,
+      "s": 4,
+      "n": "参加・出演の個人の記録",
+      "events": [],
+      "observations": [
+        {
+          "event_name": null,
+          "event_quote": "2日間思いっきり踊りました〜盆踊りが来ることを楽しみにしていたのに終わってしまうとほんとにさみしいです",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 134,
+      "s": 4,
+      "n": "行事名を含む写真投稿",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "北九州昭和夏まつり2026",
+          "event_quote": "北九州昭和夏まつり2026",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 135,
+      "s": 5,
+      "n": "公式告知、明日開催・荒天時会場あり",
+      "events": [
+        {
+          "event_name": "トカコス裏祭り",
+          "quote": "明日となりました！！！\n雨天の場合、まりむ館2階にある体育館での開催となります！！！！",
+          "venue_name": "まりむ館2階にある体育館",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 136,
+      "s": 4,
+      "n": "ニュースで見た行事名への言及",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "西馬音内の盆踊り",
+          "event_quote": "西馬音内の盆踊りNHKワン?の秋田ローカルニュースで見れたー",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 137,
+      "s": 3,
+      "n": "分からないので教えてほしいという発言のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 138,
+      "s": 5,
+      "n": "日付・会場を含む告知",
+      "events": [
+        {
+          "event_name": "東本願寺の盆踊り",
+          "quote": "8/19,20は東本願寺の盆踊りですよ。",
+          "date_start": "2026-08-19",
+          "date_end": "2026-08-20",
+          "venue_name": "東本願寺",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 139,
+      "s": 3,
+      "n": "踊っていたら新幹線に乗り遅れるという冗談、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 140,
+      "s": 5,
+      "n": "公式告知、日付・会場あり",
+      "events": [
+        {
+          "event_name": "盆踊り大会",
+          "quote": "8/28（金）29（土）でパシフィコ横浜で\n盆踊り大会やるよー‼️",
+          "date_start": "2026-08-28",
+          "date_end": "2026-08-29",
+          "venue_name": "パシフィコ横浜",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 141,
+      "s": 3,
+      "n": "検索の話のみ、材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 142,
+      "s": 5,
+      "n": "公式告知、明日開催",
+      "events": [
+        {
+          "event_name": "仮装盆踊り大会",
+          "quote": "いよいよ明日は仮装盆踊り大会！",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 143,
+      "s": 2,
+      "n": "下ネタの冗談に使われた比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 144,
+      "s": 4,
+      "n": "行政アカウントによる開催報告、会場名のみ",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "佃盆踊り",
+          "event_quote": "先日開催した地域の夏祭りの様子です🏮👘\n老若男女みなさんが、いろんな盆踊りを笑顔で満喫🕺💃✨",
+          "ward": "西淀川区",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 145,
+      "s": 5,
+      "n": "地域の盆踊り運営についての説明、会場・主催あり",
+      "events": [
+        {
+          "event_name": "連合主催の大きな盆踊り",
+          "quote": "8月末に浜町公園で、三段の櫓を立て、連合主催の大きな盆踊りが開催される。",
+          "venue_name": "浜町公園",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 146,
+      "s": 5,
+      "n": "今週末開催の告知、会場あり",
+      "events": [
+        {
+          "event_name": "大江戸まつり盆踊り大会",
+          "quote": "今週末の浜町公園\n大江戸まつり盆踊り大会",
+          "venue_name": "浜町公園",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 147,
+      "s": 4,
+      "n": "過去の出演についてのラジオ告知",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "道頓堀盆おどりインターナショナル2026",
+          "event_quote": "道頓堀盆おどりインターナショナル2026",
+          "song_claims": []
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 148,
+      "s": 4,
+      "n": "行事名・曲の由来を含む動画共有",
+      "events": [],
+      "observations": [
+        {
+          "event_name": "三笠北海盆おどり",
+          "event_quote": "第25回 三笠北海盆おどり 2026｜北海盆唄発祥の地に響く生唄・生演奏と巨大三層櫓",
+          "song_claims": [
+            {
+              "song_name": "北海盆唄",
+              "claim_type": "mentioned",
+              "evidence_quote": "北海盆唄発祥の地に響く生唄・生演奏と巨大三層櫓"
+            }
+          ]
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 149,
+      "s": 5,
+      "n": "本日開催の告知、日付・時刻・会場あり",
+      "events": [
+        {
+          "event_name": "第44回 本町夏まつり",
+          "quote": "本日8月19日（水）16時〜\n「第44回 本町夏まつり」が\n仙台市青葉区本町 錦町公園で\n開催されるみたいです🎉",
+          "date_start": "2026-08-19",
+          "venue_name": "仙台市青葉区本町 錦町公園",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 150,
+      "s": 5,
+      "n": "公式告知、日付・時刻・会場あり",
+      "events": [
+        {
+          "event_name": "平城京まつり",
+          "quote": "8/22(土)・23(日) 16:00〜20:00\n📍平城宮跡歴史公園 朱雀門ひろば",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "平城宮跡歴史公園 朱雀門ひろば",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    }
+  ]
+}

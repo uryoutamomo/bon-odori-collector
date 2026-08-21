@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_0405401308395892",
+    "title": "さつき・くすのき盆踊り大会（X投稿より）",
+    "account_key": "@Itami_city_PR",
+    "url": "https://x.com/Itami_city_PR/status/2089985728902205561",
+    "notice_kind": "x_post",
+    "raw_text": "【さつき・くすのき盆踊り大会】\n\n施設の利用者と地域の皆様が一緒になって楽しめる盆踊りが開催されます❗️\n\n📅8月28日(金)17:30～19:30(小雨決行、荒天中止)\n📍社会福祉法人協同の苑\n　さつき・くすのきグラウンド\n出店：たこ焼き、飲み物、ゲームなど\n\n＜主催＞社会福祉法人協同の苑\n＜後援＞伊丹市 https://t.co/Je2uzQNZyb"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_fe0c167ae2e471e8",
+      "action": "register_new",
+      "event_name_hint": "さつき・くすのき盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-28",
+      "venue": {
+        "name": "社会福祉法人協同の苑　さつき・くすのきグラウンド",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。日時・会場明記\n- 出典URL: https://x.com/Itami_city_PR/status/2089985728902205561"
+    }
+  ]
+}

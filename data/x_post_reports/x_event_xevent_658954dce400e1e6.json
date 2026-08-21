@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.245492+00:00",
+  "source": {
+    "report_id": "x_event_xevent_658954dce400e1e6",
+    "title": "片山津の夏祭り（X投稿より）",
+    "account_key": "@iko_yo_trip",
+    "url": "https://x.com/iko_yo_trip/status/2089955521231290385",
+    "notice_kind": "x_post",
+    "raw_text": "＼湯けむりワクワク！家族で行きたい片山津の夏祭り／\n\n源平勝負御輿の“逆立ち合戦”は大迫力！屋台に獅子舞、歌謡ショー、輪踊り…湯のまちならではの華やかさを満喫できる2日間✨\n\nおすすめポイント\n✅露店が並ぶにぎやかな通りでグルメ＆お土産探し\n✅獅子舞・歌謡ショー・輪踊りで子どもも大興奮\n✅初日の源平勝負御輿・逆立ち合戦は必見！\n\n🗓 2026年8月22日(土)・23日(日)\n📍 石川県加賀市 片山津温泉\n\n誰と行きたい？コメントで教えてね👨‍👩‍👧‍👦 フォローで家族向けおでかけ情報をチェック！\n開催情報📝\nhttps://t.co/D3UP7pMklI"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_07c71d89e6133345",
+      "action": "register_new",
+      "event_name_hint": "片山津の夏祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "片山津温泉",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。輪踊りのある温泉街の夏祭り。日付と会場が本文にある\n- 出典URL: https://x.com/iko_yo_trip/status/2089955521231290385"
+    }
+  ]
+}

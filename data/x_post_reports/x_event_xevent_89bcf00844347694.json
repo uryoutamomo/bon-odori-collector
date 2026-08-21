@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_89bcf00844347694",
+    "title": "盆踊りLIVE JAM 2026「BONJAM」（X投稿より）",
+    "account_key": "@Licht_Creative",
+    "url": "https://x.com/Licht_Creative/status/2089936083085881587",
+    "notice_kind": "x_post",
+    "raw_text": "＼今年もやります🔥／\n盆踊りLIVE JAM 2026「BONJAM」\n\n三味線・和太鼓・DJ・バンドの生演奏でアニソンを踊り倒す【シン・ボンオドリ】\nみんなで踊ろー！\n\n9/19（土） 15:00～20:00\n鶴舞公園 奏楽堂\n入場無料\n\n出演：山口晃司／須崎貴裕／IKKI／笛木良彦／Ola island／カルテット.ほか\n#盆踊り https://t.co/FuwmUtlgY0"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_af4db4f635b4cf80",
+      "action": "register_new",
+      "event_name_hint": "盆踊りLIVE JAM 2026「BONJAM」",
+      "event_year": 2026,
+      "date_start": "2026-09-19",
+      "date_end": "2026-09-19",
+      "venue": {
+        "name": "鶴舞公園 奏楽堂",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。BONJAMの日時・会場を告知\n- 出典URL: https://x.com/Licht_Creative/status/2089936083085881587"
+    }
+  ]
+}

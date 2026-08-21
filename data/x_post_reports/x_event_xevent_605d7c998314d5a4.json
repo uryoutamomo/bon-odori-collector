@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_605d7c998314d5a4",
+    "title": "マーベラス夏祭り（X投稿より）",
+    "account_key": "@info_marvelous",
+    "url": "https://x.com/info_marvelous/status/2090325654273421570",
+    "notice_kind": "x_post",
+    "raw_text": "🎇明後日開催！マーベラス夏祭り🎇\n\nマーベラス道場にて去年と同様に出店や盆踊りを行います🏮\n普段は見れない選手達の浴衣姿も見れちゃいますよ👘\n\nこの夏最高の思い出、マーベラスと作りませんか？\n\n日時　2026年8月22日(土)\n　　　16:30開場／17:00〜19:00\n会場　マーベラス・プロレス道場\n\n《後援会・ファンクラブチケット》\n¥3,000\n※後援会、ファンクラブプレミアム会員・\nスタンダード会員様限定のチケットです。\n《一般》\n¥5,000\n《高校生以下》\n¥1,000\n\n【後援会・ファンクラブチケット】\nhttps://t.co/NlHLUFw1Aw…\n【一般・高校生以下チケット】\nhttps://t.co/JFrzVUFUO7…\n\nマーベラス公式ファンクラブ\n⭐️マベラーズクラブ⭐️\n随時会員募集中❗️❗️\n入会は下記URLから！！\nhttps://t.co/3bfJJ0sMxQ\n\n#マーベラスプロレス"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_cf3326e282bef8c9",
+      "action": "register_new",
+      "event_name_hint": "マーベラス夏祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "マーベラス・プロレス道場",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。夏祭りの告知。日時・会場・料金まで明記\n- 出典URL: https://x.com/info_marvelous/status/2090325654273421570"
+    }
+  ]
+}

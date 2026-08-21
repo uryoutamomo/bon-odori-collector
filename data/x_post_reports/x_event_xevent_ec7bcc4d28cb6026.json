@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_ec7bcc4d28cb6026",
+    "title": "板橋区盆踊り（X投稿より）",
+    "account_key": "@takasho06130613",
+    "url": "https://x.com/takasho06130613/status/2089915742527647994",
+    "notice_kind": "x_post",
+    "raw_text": "@rollingasahi \n8/22(土) 板橋区盆踊り\nこうま幼稚園\n高島平第六小学校\n前野小学校\n小茂根二丁目公園\n志村公園\n徳丸(イルカ)公園\n赤塚七丁目児童遊園"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_e9c10e8a1cecc504",
+      "action": "register_new",
+      "event_name_hint": "板橋区盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "小茂根二丁目公園",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。板橋区盆踊りの開催日・各会場一覧を紹介\n- 出典URL: https://x.com/takasho06130613/status/2089915742527647994"
+    }
+  ]
+}

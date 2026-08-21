@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_678d39521179a834",
+    "title": "桑名盆踊り（X投稿より）",
+    "account_key": "@987sumiyoshi",
+    "url": "https://x.com/987sumiyoshi/status/2090332249862684935",
+    "notice_kind": "x_post",
+    "raw_text": "夏休み最後の夜は、寺町びっくり夜へ&amp;桑名盆踊り🙌\n8/29(土)30(日)18:00〜21:00、寺町通り商店街で開催🎉\n射的、金魚すくい、輪投げ、ビンゴ大会など楽しい縁日が盛りだくさん🙌\nそして29日は九華公園で「桑名盆踊り」も開催👘\n夏休み最後の土日！夏の思い出作りにいかがでしょうか🤗\n楽しみ😋 https://t.co/pdGXJc2WI8"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_09ff3fdf77fc7614",
+      "action": "register_new",
+      "event_name_hint": "桑名盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-29",
+      "venue": {
+        "name": "九華公園",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。縁日と桑名盆踊りの2行事の告知\n- 出典URL: https://x.com/987sumiyoshi/status/2090332249862684935"
+    }
+  ]
+}

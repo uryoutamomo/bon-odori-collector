@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_81b1cf117a66dfe7",
+    "title": "関内北仲キャナルパーク盆踊り（X投稿より）",
+    "account_key": "@ninchishocafe_g",
+    "url": "https://x.com/ninchishocafe_g/status/2089912705981509886",
+    "notice_kind": "x_post",
+    "raw_text": "↓パンフ写真を担当しました\n今年の「関内北仲キャナルパーク盆踊り」は今週末22日（土）です！\n\n★日時　2026年8月22日(土）15:00-21:15   （雨天の場合は8/22の12時に決定し、8/23の同時刻に順延）\n★場所：北仲通北第二公園（北仲キャナルパーク）\n★スケジュール\n・15:00 会場オープン\nはっぱオールスターズ/キッズダンスCLCL\n・16:00 横浜よさこい（横浜よさこいオフィシャルチーム　Ｋ-one動流夢）\n・16:45 サンバチームダンス（サンバ・エゴイスタ）\n・17:30 スイカ割\n・18:00 三宅太鼓\n・18:30 盆踊り\n・20:00 花火\n・20:15 盆踊り\n・21:15 終了\n\nhttps://t.co/yzcNu3OWo5"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_ce7143e32220f976",
+      "action": "register_new",
+      "event_name_hint": "関内北仲キャナルパーク盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "北仲通北第二公園（北仲キャナルパーク）",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。関内北仲キャナルパーク盆踊りの日時・会場・スケジュールを告知\n- 出典URL: https://x.com/ninchishocafe_g/status/2089912705981509886"
+    }
+  ]
+}

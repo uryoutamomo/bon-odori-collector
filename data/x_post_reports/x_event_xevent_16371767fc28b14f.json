@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_16371767fc28b14f",
+    "title": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）（X投稿より）",
+    "account_key": "@WBElectric0521",
+    "url": "https://x.com/WBElectric0521/status/2090041012349812890",
+    "notice_kind": "x_post",
+    "raw_text": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都台東区西浅草1丁目5-5 https://t.co/skzJ5zm8PD"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_3cb1c2478d3a52b2",
+      "action": "register_new",
+      "event_name_hint": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "東京都台東区西浅草1丁目5-5",
+        "area": "台東区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。日時・住所明記\n- 出典URL: https://x.com/WBElectric0521/status/2090041012349812890\n- 出典URL: https://x.com/web_camera/status/2090030434969346231"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.344843+00:00",
+  "source": {
+    "report_id": "x_event_xevent_16fb3b75944b339b",
+    "title": "おいわけ夏まつり（X投稿より）",
+    "account_key": "@hotmantokana",
+    "url": "https://x.com/hotmantokana/status/2089968961215778995",
+    "notice_kind": "x_post",
+    "raw_text": "《8/22 すまいるん♫ 出演のお知らせ👗🎤》\n\n今週の土曜日8/22にうたのおねえさんユニット\n『すまいるん♫』出動です🙌🏻✨\n\n〜・〜・〜・〜・〜\n\nおいわけ夏まつり\nin草津市追分町 野上グラウンド\n開催時間 16:30〜21:00 （※入場無料）\n\n〈トピック〉\n16:30〜17:30  かなりんMC\n17:30〜21:00  ひとみんMC\n🌟18時〜19時のどこか30分 子供向けステージ🎤\n\n〜・〜・〜・〜・〜\n\n念願の夏祭りのお仕事！嬉しいです！！🥹\n町外の方でも来場OKのイベントなので、ご都合が合う方はぜひぜひ！\n縁日、スポーツ、グルメ、ステージ、盆踊り、花火etc…楽しいことが盛りだくさんのお祭りです！\n(追分町公式LINEに登録するとお得なクーポンも🉐)\n\nお待ちしておりますーー！！🙌🏻✨\n\nPS. 町内会の方がすまいるん♫のステージの告知画像を作成してくださいました！かわいい＆嬉しい☺️"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_606fbfab6474d0e5",
+      "action": "register_new",
+      "event_name_hint": "おいわけ夏まつり",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "野上グラウンド",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。盆踊りを含むおいわけ夏まつりの日付・会場・時刻つき告知\n- 出典URL: https://x.com/hotmantokana/status/2089968961215778995"
+    }
+  ]
+}

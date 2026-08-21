@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_77f5ad440c80cef3",
+    "title": "雷門盆踊り〜夢灯篭〜（X投稿より）",
+    "account_key": "@gunsou_bouei64",
+    "url": "https://x.com/gunsou_bouei64/status/2090122273449767336",
+    "notice_kind": "x_post",
+    "raw_text": "■令和8年 雷門盆踊り ～夢灯篭～\n\n・陸上自衛隊 第1音楽隊演奏（16:20～16:40）\n・自衛隊東京地方協力本部ブース\n（自衛隊車両展示等）\n・浅草消防署･浅草警察署PRブース\n　など\n\n日時：2026年9月5日(土)17:30～20:00\n場所：浅草 並木通り界隈（東京都 台東区）\n\nhttps://t.co/V4rgymf5rs https://t.co/OLcI0ZvyEU"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_328b7893afb92742",
+      "action": "register_new",
+      "event_name_hint": "雷門盆踊り〜夢灯篭〜",
+      "event_year": 2026,
+      "date_start": "2026-09-05",
+      "date_end": "2026-09-05",
+      "venue": {
+        "name": "浅草 並木通り界隈",
+        "area": "台東区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。日時・会場・区明記\n- 出典URL: https://x.com/gunsou_bouei64/status/2090122273449767336"
+    }
+  ]
+}

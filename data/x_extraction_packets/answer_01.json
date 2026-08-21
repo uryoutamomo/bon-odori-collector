@@ -1,0 +1,361 @@
+{
+  "batch_id": "x_extraction_20260820_01",
+  "scored_by": "koto-subagent",
+  "results": [
+    { "no": 1, "s": 1, "n": "都市計画審議会の傍聴報告。盆踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 2, "s": 1, "n": "お菓子販売会の告知。盆踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 3, "s": 1, "n": "予定変更のつぶやき。盆踊りへの言及なし", "events": [], "observations": [], "glossary": [] },
+    { "no": 4, "s": 1, "n": "ゲームの話題への返信", "events": [], "observations": [], "glossary": [] },
+    { "no": 5, "s": 1, "n": "生成AIプロンプトの紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 6, "s": 1, "n": "男女平等参画計画の冊子", "events": [], "observations": [], "glossary": [] },
+    { "no": 7, "s": 1, "n": "遺跡の話題への返信", "events": [], "observations": [], "glossary": [] },
+    { "no": 8, "s": 1, "n": "行き先のつぶやき。盆踊りへの言及なし", "events": [], "observations": [], "glossary": [] },
+    { "no": 9, "s": 2, "n": "引用先が分からず本文だけでは文脈不明", "events": [], "observations": [], "glossary": [] },
+    { "no": 10, "s": 1, "n": "夏休みについての手紙ネタ", "events": [], "observations": [], "glossary": [] },
+    { "no": 11, "s": 1, "n": "ポーズ写真の投稿", "events": [], "observations": [], "glossary": [] },
+    { "no": 12, "s": 1, "n": "小学生大絵画展の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 13, "s": 4, "n": "盆踊り会場で会った人々の記録。行事名の言及あり", "events": [], "observations": [], "glossary": ["盆友"] },
+    {
+      "no": 14,
+      "s": 5,
+      "n": "8/19の東本願寺盆踊りの日付つき記録。2部の曲名多数",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "quote": "8/19東本願寺盆踊り",
+          "song_claims": [
+            { "song_name": "エロティカセブン", "claim_type": "observed", "evidence_quote": "2部は好きなエロティカセブンに波ジョニ、新曲ダーリン、桜坂、祭りのあとなどココならでは振りで" },
+            { "song_name": "波ジョニ", "claim_type": "observed", "evidence_quote": "2部は好きなエロティカセブンに波ジョニ、新曲ダーリン、桜坂、祭りのあとなどココならでは振りで" },
+            { "song_name": "ダーリン", "claim_type": "observed", "evidence_quote": "2部は好きなエロティカセブンに波ジョニ、新曲ダーリン、桜坂、祭りのあとなどココならでは振りで" },
+            { "song_name": "桜坂", "claim_type": "observed", "evidence_quote": "2部は好きなエロティカセブンに波ジョニ、新曲ダーリン、桜坂、祭りのあとなどココならでは振りで" },
+            { "song_name": "祭りのあと", "claim_type": "observed", "evidence_quote": "2部は好きなエロティカセブンに波ジョニ、新曲ダーリン、桜坂、祭りのあとなどココならでは振りで" }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": ["当て振り"]
+    },
+    { "no": 15, "s": 2, "n": "返信のみで本文から行事の文脈が読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 16, "s": 1, "n": "子育て講座の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 17, "s": 1, "n": "太鼓の音響についての感想。本文に盆踊りへの言及なし", "events": [], "observations": [], "glossary": [] },
+    { "no": 18, "s": 1, "n": "ファミレスのクーポン情報", "events": [], "observations": [], "glossary": [] },
+    { "no": 19, "s": 1, "n": "弁当のキャンペーン告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 20, "s": 1, "n": "天丼のキャンペーン告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 21, "s": 1, "n": "きこえの相談の案内", "events": [], "observations": [], "glossary": [] },
+    { "no": 22, "s": 1, "n": "パチンコ店のファン感謝デー", "events": [], "observations": [], "glossary": [] },
+    { "no": 23, "s": 1, "n": "中華チェーンのクーポン情報", "events": [], "observations": [], "glossary": [] },
+    { "no": 24, "s": 1, "n": "認知症講演会の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 25, "s": 1, "n": "生活保護の案内", "events": [], "observations": [], "glossary": [] },
+    { "no": 26, "s": 1, "n": "児童館の案内", "events": [], "observations": [], "glossary": [] },
+    { "no": 27, "s": 1, "n": "ベビーマッサージの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 28, "s": 1, "n": "カーブミラー補修の報告", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 29,
+      "s": 5,
+      "n": "8/19の狭山地域納涼盆踊り大会。日付つきの参加記録と曲名3つ",
+      "events": [
+        {
+          "event_name": "狭山地域納涼盆踊り大会",
+          "date_start": "2026-08-19",
+          "quote": "8/19 狭山地域納涼盆踊り大会",
+          "song_claims": [
+            { "song_name": "JAいるま野音頭", "claim_type": "observed", "evidence_quote": "難曲のJAいるま野音頭、ご当地の狭山音頭・狭山茶ばやしを初見" },
+            { "song_name": "狭山音頭", "claim_type": "observed", "evidence_quote": "難曲のJAいるま野音頭、ご当地の狭山音頭・狭山茶ばやしを初見" },
+            { "song_name": "狭山茶ばやし", "claim_type": "observed", "evidence_quote": "難曲のJAいるま野音頭、ご当地の狭山音頭・狭山茶ばやしを初見" }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": ["盆友", "盆踊り休み"]
+    },
+    {
+      "no": 30,
+      "s": 4,
+      "n": "東本願寺サザンDayへ行った記録。曲名1つ。日付・主催の記載はない",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "真夏の果実",
+          "claim_type": "observed",
+          "evidence_quote": "この時期に聞く『真夏の果実』って、グッとくるものがありますね",
+          "event_name": "東本願寺",
+          "venue_name": "東本願寺",
+          "event_quote": "東本願寺に行ってきました。サザンDay"
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 31,
+      "s": 4,
+      "n": "川崎おどりの踊り名への言及と掛け声。行事の特定はできない",
+      "events": [],
+      "observations": [
+        { "song_name": "川崎おどり", "claim_type": "mentioned", "evidence_quote": "川崎おどりフィーバーもLAZONAまで永く空くので", "event_name": null },
+        { "song_name": "いいじゃんかー", "claim_type": "mentioned", "evidence_quote": "踊り忘れないよういいじゃんかー", "event_name": null }
+      ],
+      "glossary": ["はっそれそれそれそれよいよいよいよい", "ソレソレッ"]
+    },
+    {
+      "no": 32,
+      "s": 4,
+      "n": "セットリストの列挙。行事名・日付がなく開催回を特定できない",
+      "events": [],
+      "observations": [
+        { "song_name": "すっきり音頭", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "鵜の木音頭", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "東京音頭", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "大東京音頭", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "炭坑節", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "相馬盆唄", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "ちゃんちきおけさ", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "ズンドコ節", "claim_type": "unknown", "evidence_quote": "セトリはすっきり音頭と鵜の木音頭、東京音頭、大東京音頭、炭坑節、相馬盆唄、ちゃんちきおけさ、ズンドコ節", "event_name": null },
+        { "song_name": "ドラえもん音頭", "claim_type": "unknown", "evidence_quote": "※ドラえもん音頭と北海盆唄は音出しのみ", "event_name": null },
+        { "song_name": "北海盆唄", "claim_type": "unknown", "evidence_quote": "※ドラえもん音頭と北海盆唄は音出しのみ", "event_name": null },
+        { "song_name": "大田囃子", "claim_type": "unknown", "evidence_quote": "花方の鵜の木こども太鼓タイムは大田囃子と多摩の川風を聞き惚れる", "event_name": null },
+        { "song_name": "多摩の川風", "claim_type": "unknown", "evidence_quote": "花方の鵜の木こども太鼓タイムは大田囃子と多摩の川風を聞き惚れる", "event_name": null }
+      ],
+      "glossary": ["セトリ", "音出し", "花方"]
+    },
+    { "no": 33, "s": 3, "n": "盆踊り休みが終わったという近況。取り出せる材料はない", "events": [], "observations": [], "glossary": ["盆踊り休み"] },
+    { "no": 34, "s": 4, "n": "浅草東本願寺盆踊りに参加した記録。具体的な曲名はない", "events": [], "observations": [], "glossary": [] },
+    { "no": 35, "s": 4, "n": "東本願寺1日目に参加した記録", "events": [], "observations": [], "glossary": ["盆友"] },
+    { "no": 36, "s": 3, "n": "中央区の盆踊りとだけ書かれた写真投稿。材料がない", "events": [], "observations": [], "glossary": [] },
+    { "no": 37, "s": 1, "n": "蕎麦屋の感想への返信", "events": [], "observations": [], "glossary": [] },
+    { "no": 38, "s": 1, "n": "図書館の音のゾーニング試行", "events": [], "observations": [], "glossary": [] },
+    { "no": 39, "s": 1, "n": "冷感タオル配布の案内", "events": [], "observations": [], "glossary": [] },
+    { "no": 40, "s": 1, "n": "防犯についての広報", "events": [], "observations": [], "glossary": [] },
+    { "no": 41, "s": 1, "n": "ラーメン店のクーポン紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 42, "s": 1, "n": "ラーメン店のクーポン情報", "events": [], "observations": [], "glossary": [] },
+    { "no": 43, "s": 1, "n": "回転寿司のフェア紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 44, "s": 1, "n": "回転寿司のフェアと懸賞", "events": [], "observations": [], "glossary": [] },
+    { "no": 45, "s": 1, "n": "航空会社のキャンペーン紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 46, "s": 1, "n": "航空会社のキャンペーン詳細", "events": [], "observations": [], "glossary": [] },
+    { "no": 47, "s": 1, "n": "オクトーバーフェストの告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 48, "s": 3, "n": "ハッシュタグのみ。盆踊りには触れるが開催情報として読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 49, "s": 3, "n": "ハッシュタグのみ。界隈語だけ拾える", "events": [], "observations": [], "glossary": ["盆女"] },
+    { "no": 50, "s": 1, "n": "おにぎりの感想", "events": [], "observations": [], "glossary": [] },
+    { "no": 51, "s": 2, "n": "「終了！」のみで本文から文脈が読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 52, "s": 3, "n": "ハッシュタグのみ。会場名らしき語はあるが開催情報とは読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 53, "s": 1, "n": "ビアフェスタの告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 54,
+      "s": 5,
+      "n": "六本木ヒルズ盆踊りの開催告知。日程と曲名あり",
+      "events": [
+        {
+          "event_name": "六本木ヒルズ盆踊り",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-23",
+          "quote": "「六本木ヒルズ盆踊り」開催",
+          "song_claims": [
+            { "song_name": "六本人音頭", "claim_type": "announced", "evidence_quote": "六本人音頭の盆踊り" }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    { "no": 55, "s": 1, "n": "学校の話題への返信", "events": [], "observations": [], "glossary": [] },
+    { "no": 56, "s": 2, "n": "返信のみで本文から文脈が読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 57, "s": 3, "n": "ハッシュタグのみ。取り出せる材料がない", "events": [], "observations": [], "glossary": [] },
+    { "no": 58, "s": 1, "n": "納涼まつりの告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 59, "s": 3, "n": "ハッシュタグのみ。取り出せる材料がない", "events": [], "observations": [], "glossary": [] },
+    { "no": 60, "s": 2, "n": "「本番。」のみで本文から文脈が読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 61, "s": 1, "n": "料理の盛り付けについての返信", "events": [], "observations": [], "glossary": [] },
+    { "no": 62, "s": 1, "n": "回転寿司のフェア告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 63, "s": 1, "n": "南中ソーランの舞台公演。盆踊りではない", "events": [], "observations": [], "glossary": [] },
+    { "no": 64, "s": 1, "n": "そば食べ放題の価格情報", "events": [], "observations": [], "glossary": [] },
+    { "no": 65, "s": 1, "n": "そば食べ放題の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 66, "s": 1, "n": "カレー店の紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 67, "s": 1, "n": "ファストフードの新商品", "events": [], "observations": [], "glossary": [] },
+    { "no": 68, "s": 4, "n": "選曲についての盆踊り論。具体的な曲名はない", "events": [], "observations": [], "glossary": [] },
+    { "no": 69, "s": 1, "n": "祭りのハッシュタグのみ。盆踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 70, "s": 1, "n": "豆乳フェスの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 71, "s": 1, "n": "コーヒー店の開店情報", "events": [], "observations": [], "glossary": [] },
+    { "no": 72, "s": 1, "n": "夏イベントの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 73, "s": 1, "n": "ビアフェスタの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 74, "s": 1, "n": "野外上映会の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 75, "s": 1, "n": "書店の夜間イベント", "events": [], "observations": [], "glossary": [] },
+    { "no": 76, "s": 1, "n": "地域フェスティバルの告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 77, "s": 1, "n": "ライバーイベントの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 78, "s": 1, "n": "野外アニメ上映の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 79, "s": 1, "n": "百貨店の記念展", "events": [], "observations": [], "glossary": [] },
+    { "no": 80, "s": 1, "n": "夜市の告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 81, "s": 1, "n": "アートアワードの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 82, "s": 1, "n": "ビール祭の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 83, "s": 1, "n": "工芸品展の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 84, "s": 1, "n": "写真展の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 85, "s": 1, "n": "物産展の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 86, "s": 1, "n": "記念祭の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 87, "s": 1, "n": "ビアフェスタの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 88, "s": 1, "n": "オクトーバーフェストの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 89, "s": 1, "n": "パフェ企画の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 90, "s": 1, "n": "転職フェアの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 91, "s": 1, "n": "花火演出の告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 92, "s": 1, "n": "昆虫展の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 93, "s": 1, "n": "大俵引きの参加者募集。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 94, "s": 1, "n": "花火大会の告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 95,
+      "s": 5,
+      "n": "民謡流しを含む灯籠行事の開催告知。日時・会場が具体的",
+      "events": [
+        {
+          "event_name": "ザ・灯籠来舞",
+          "date_start": "2026-08-24",
+          "venue_name": "新潟県阿賀野市・水原本町通り（水原代官所周辺）",
+          "quote": "2026/8/24（月）17:00〜22:00（開幕17:00／灯籠来舞19:30〜22:00）",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": ["民謡流し"]
+    },
+    { "no": 96, "s": 1, "n": "花火まつりの告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 97, "s": 1, "n": "花火大会の告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 98, "s": 2, "n": "返信で対象物が分からず文脈不明", "events": [], "observations": [], "glossary": [] },
+    { "no": 99, "s": 1, "n": "鉄道車両の話題", "events": [], "observations": [], "glossary": [] },
+    { "no": 100, "s": 1, "n": "神社の奉納舞の案内。盆踊りではない", "events": [], "observations": [], "glossary": [] },
+    { "no": 101, "s": 1, "n": "フィリピンの歌と踊りの祭典。盆踊りではない", "events": [], "observations": [], "glossary": [] },
+    { "no": 102, "s": 1, "n": "WEB勉強会の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 103, "s": 1, "n": "神社のTシャツ販売", "events": [], "observations": [], "glossary": [] },
+    { "no": 104, "s": 1, "n": "クラシックコンサートの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 105, "s": 1, "n": "ブログ記事の紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 106, "s": 1, "n": "飼い猫の話題", "events": [], "observations": [], "glossary": [] },
+    { "no": 107, "s": 1, "n": "国際政治についての意見", "events": [], "observations": [], "glossary": [] },
+    { "no": 108, "s": 1, "n": "外国人政策についての意見", "events": [], "observations": [], "glossary": [] },
+    { "no": 109, "s": 1, "n": "散策ブログの更新告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 110, "s": 1, "n": "街頭演説の告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 111, "s": 1, "n": "飼い猫の話題", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 112,
+      "s": 5,
+      "n": "墨田区ふじのき公園の盆おどりの記録。日付・会場・区と曲名4つ",
+      "events": [
+        {
+          "event_name": "ふじのき公園の盆おどり",
+          "date_start": "2026-08-19",
+          "venue_name": "ふじのき公園",
+          "ward": "墨田区",
+          "quote": "（R8.8.19）墨田区のふじのき公園の盆おどりにお邪魔しました。",
+          "song_claims": [
+            { "song_name": "すみだ音頭", "claim_type": "observed", "evidence_quote": "まずは地元曲の「すみだ音頭」がかかる。" },
+            { "song_name": "言ちゃん音頭", "claim_type": "observed", "evidence_quote": "その後も「言ちゃん音頭」「業平音頭」「桜橋踊り」などの御当地曲や人気の一般曲が次々とかかる。" },
+            { "song_name": "業平音頭", "claim_type": "observed", "evidence_quote": "その後も「言ちゃん音頭」「業平音頭」「桜橋踊り」などの御当地曲や人気の一般曲が次々とかかる。" },
+            { "song_name": "桜橋踊り", "claim_type": "observed", "evidence_quote": "その後も「言ちゃん音頭」「業平音頭」「桜橋踊り」などの御当地曲や人気の一般曲が次々とかかる。" }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": ["御当地曲", "一般曲"]
+    },
+    { "no": 113, "s": 1, "n": "ライブ続きの近況報告", "events": [], "observations": [], "glossary": [] },
+    { "no": 114, "s": 1, "n": "生成AIと鉄道のブログ", "events": [], "observations": [], "glossary": [] },
+    { "no": 115, "s": 1, "n": "生成AIのブログ更新", "events": [], "observations": [], "glossary": [] },
+    { "no": 116, "s": 1, "n": "都政についての動画紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 117, "s": 1, "n": "御朱印の限定頒布", "events": [], "observations": [], "glossary": [] },
+    { "no": 118, "s": 1, "n": "昔の職場の思い出", "events": [], "observations": [], "glossary": [] },
+    { "no": 119, "s": 1, "n": "飼い猫の写真の話題", "events": [], "observations": [], "glossary": [] },
+    { "no": 120, "s": 1, "n": "酒蔵の蔵開きの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 121, "s": 1, "n": "クラシックコンサートの告知", "events": [], "observations": [], "glossary": [] },
+    { "no": 122, "s": 1, "n": "外国人向け事業への意見", "events": [], "observations": [], "glossary": [] },
+    { "no": 123, "s": 1, "n": "歴史動画の紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 124, "s": 1, "n": "保護猫のニュース", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 125,
+      "s": 5,
+      "n": "町会の盆踊大会の開催予定。日付と会場あり",
+      "events": [
+        {
+          "event_name": "東砂三丁目町会 盆踊大会",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "venue_name": "東砂第二公園",
+          "quote": "・東砂三丁目町会 盆踊大会 8/21・22（東砂第二公園）",
+          "song_claims": []
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    { "no": 126, "s": 2, "n": "返信のみで本文から文脈が読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 127, "s": 1, "n": "検討委員会の傍聴受付", "events": [], "observations": [], "glossary": [] },
+    { "no": 128, "s": 1, "n": "ボランティア募集", "events": [], "observations": [], "glossary": [] },
+    { "no": 129, "s": 1, "n": "写真提供のクレジット", "events": [], "observations": [], "glossary": [] },
+    { "no": 130, "s": 1, "n": "写真提供への謝辞", "events": [], "observations": [], "glossary": [] },
+    { "no": 131, "s": 1, "n": "記念館の入館者数達成", "events": [], "observations": [], "glossary": [] },
+    { "no": 132, "s": 1, "n": "講演会の参加者募集", "events": [], "observations": [], "glossary": [] },
+    { "no": 133, "s": 1, "n": "水族園の風鈴展示", "events": [], "observations": [], "glossary": [] },
+    { "no": 134, "s": 2, "n": "返信のみで行き先が分からず文脈不明", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 135,
+      "s": 5,
+      "n": "町会・神社の踊りの会の記録。日付・会場・主催と曲名2つ",
+      "events": [
+        {
+          "event_name": "東砂五丁目町会 中田稲荷神社",
+          "date_start": "2026-08-19",
+          "date_end": "2026-08-20",
+          "venue_name": "中田稲荷神社",
+          "quote": "8/19（水）#東砂五丁目町会",
+          "song_claims": [
+            { "song_name": "飾ってんでねぇ", "claim_type": "mentioned", "evidence_quote": "お目当ては勿論「飾ってんでねぇ」" },
+            { "song_name": "福よ来い", "claim_type": "observed", "evidence_quote": "この日の締めは｢福よ来い｣ここver" }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    { "no": 136, "s": 1, "n": "水族園のエサの時間中止のお知らせ", "events": [], "observations": [], "glossary": [] },
+    { "no": 137, "s": 4, "n": "浴衣と踊りの見え方についての踊り方の意見", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 138,
+      "s": 4,
+      "n": "浅草東本願寺盆踊りで踊った記録。曲名1つ。日付・会場の記載はない",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "希望の轍",
+          "claim_type": "observed",
+          "evidence_quote": "希望の轍の一体感に泣きそうでした",
+          "event_name": "浅草東本願寺盆踊り",
+          "event_quote": "浅草東本願寺盆踊りで踊ってきたき"
+        }
+      ],
+      "glossary": ["当て振り"]
+    },
+    { "no": 139, "s": 2, "n": "写真についての返信で文脈が読めない", "events": [], "observations": [], "glossary": [] },
+    { "no": 140, "s": 3, "n": "毎年踊り続けているという近況。行事も曲名もない", "events": [], "observations": [], "glossary": [] },
+    { "no": 141, "s": 1, "n": "ドラッグストアの改装情報", "events": [], "observations": [], "glossary": [] },
+    {
+      "no": 142,
+      "s": 5,
+      "n": "三条音頭の踊り方紹介と、日時・場所つきの出演告知",
+      "events": [
+        {
+          "event_name": "三条市宮島小路の踊り",
+          "date_start": "2026-08-22",
+          "venue_name": "三条市本町2丁目の宮島小路",
+          "quote": "8/22（土）20:00前後、三条市本町2丁目の宮島小路で私たちの踊りが見られます",
+          "song_claims": [
+            { "song_name": "三条音頭", "claim_type": "mentioned", "evidence_quote": "と言われる三条音頭ですが、細かいポイントに気をつけると美しく踊れる" },
+            { "song_name": "三条おけさ", "claim_type": "mentioned", "evidence_quote": "#三条おけさ と比べて）簡単な方" }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    { "no": 143, "s": 1, "n": "神社の例大祭の告知。踊りに触れていない", "events": [], "observations": [], "glossary": [] },
+    { "no": 144, "s": 1, "n": "風鈴の物販紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 145, "s": 1, "n": "メディアのサポーター募集", "events": [], "observations": [], "glossary": [] },
+    { "no": 146, "s": 1, "n": "水族園の生き物紹介", "events": [], "observations": [], "glossary": [] },
+    { "no": 147, "s": 4, "n": "地域の盆踊りと民謡の担い手についての意見", "events": [], "observations": [], "glossary": [] },
+    { "no": 148, "s": 1, "n": "駅頭挨拶の報告", "events": [], "observations": [], "glossary": [] },
+    { "no": 149, "s": 1, "n": "地域の事件情報", "events": [], "observations": [], "glossary": [] },
+    { "no": 150, "s": 1, "n": "音楽グッズのレビュー", "events": [], "observations": [], "glossary": [] }
+  ]
+}

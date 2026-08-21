@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_0f185e771f51e27b",
+    "title": "鳴尾八幡神社盆踊り（X投稿より）",
+    "account_key": "@w9rtMFp2gy8oeCc",
+    "url": "https://x.com/w9rtMFp2gy8oeCc/status/2089905977143574538",
+    "notice_kind": "x_post",
+    "raw_text": "はてなブログに投稿しました\n鳴尾｜2026年8月23日（日）に鳴尾八幡神社で「盆踊り」が開催！うちわが作れるワークショップも！ - 西宮さんぽ https://t.co/pxfeviCXv5\n#はてなブログ ＃西宮さんぽ ＃西宮 ＃鳴尾八幡神社 ＃盆踊り ＃西宮夏祭り ＃西宮イベント ＃西宮あそび場 ＃西宮盆踊り ＃夏休み"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_f81b282239fa7c37",
+      "action": "register_new",
+      "event_name_hint": "鳴尾八幡神社盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-23",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "鳴尾八幡神社",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。鳴尾八幡神社の盆踊りの日時・会場を告知\n- 出典URL: https://x.com/w9rtMFp2gy8oeCc/status/2089905977143574538"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_458ea9df8adbdbc2",
+    "title": "北越谷教室 納涼祭（X投稿より）",
+    "account_key": "@pcschool_kita54",
+    "url": "https://x.com/pcschool_kita54/status/2090333639355912426",
+    "notice_kind": "x_post",
+    "raw_text": "北越谷教室、8月の交流会は「納涼祭」です🎵\n8/28(金)12：00～14：00に開催します！\n軽食あり、ゲームあり、盆踊りあり（？！）、の交流会😊\n教室のお仲間やスタッフと楽しいひと時を過ごしませんか？\n#パソコン教室 #スマホ教室 #交流会 #越谷市 #納涼祭 https://t.co/cmB0UxEc0g"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_c5f79e25bbd38aca",
+      "action": "register_new",
+      "event_name_hint": "北越谷教室 納涼祭",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-28",
+      "venue": {
+        "name": "北越谷教室",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。教室の納涼祭の告知。日付・時刻あり\n- 出典URL: https://x.com/pcschool_kita54/status/2090333639355912426"
+    }
+  ]
+}

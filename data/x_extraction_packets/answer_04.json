@@ -1,0 +1,1916 @@
+{
+  "batch_id": "x_extraction_20260820_04",
+  "scored_by": "koto-subagent",
+  "results": [
+    {
+      "no": 1,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 2,
+      "s": 2,
+      "n": "返信で文脈不明",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 3,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "芳林公園納涼大会盆踊り",
+          "venue_name": "芳林公園",
+          "quote": "芳林公園納涼大会盆踊り出店はこんな感じです。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 4,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "六本木ヒルズ盆踊り2026",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "六本木ヒルズアリーナ",
+          "quote": "8月22日（土）・23日（日）\n盆踊り17:00〜20:00\n開催場所： 六本木ヒルズアリーナ"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 5,
+      "s": 4,
+      "n": "会場の様子（記録）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 6,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "芳林公園の納涼大会盆踊り",
+          "venue_name": "芳林公園",
+          "quote": "芳林公園の納涼大会盆踊り！ポスター制作だけでなく、秋コレも協賛してます。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 7,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "水戸浪漫三夜祭",
+          "date_start": "2026-09-06",
+          "venue_name": "三夜さん",
+          "quote": "9月6日は三夜さんに集合❣️\n\n#水戸浪漫三夜祭"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 8,
+      "s": 4,
+      "n": "踊りの名前（思い出）",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "キツネ踊り",
+          "claim_type": "mentioned",
+          "evidence_quote": "姫島出身の友人が小さなライブハウスで「キツネ踊り」を披露してくれて",
+          "event_name": null
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 9,
+      "s": 5,
+      "n": "会場・日付明記",
+      "events": [
+        {
+          "event_name": "皆中稲荷神社の盆踊り",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "皆中稲荷神社",
+          "quote": "今度の土日は、新大久保駅の近くの皆中稲荷神社で開催される盆踊りに内藤とうがらしで出店します🌶️"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 10,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "能登西岸花火大会",
+          "date_start": "2026-08-15",
+          "quote": "先日は能登西岸花火大会への寄付ご協力ありがとうございましたm(_ _)m\n8/15花火大会当日、主催者にお渡ししてきました。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 11,
+      "s": 2,
+      "n": "返信で文脈不明",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 12,
+      "s": 4,
+      "n": "文化・意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 13,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 14,
+      "s": 5,
+      "n": "相対日付＋固有行事名（書き写せず）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 15,
+      "s": 2,
+      "n": "比喩・空想",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 16,
+      "s": 4,
+      "n": "曲名（目撃）",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "クックロビン音頭",
+          "claim_type": "observed",
+          "evidence_quote": "つい先日東京（だったような？）の盆踊りでクックロビン音頭踊ってるの見て笑っちゃいましたけど🤣",
+          "event_name": null
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 17,
+      "s": 5,
+      "n": "会場・日付明記（複数）",
+      "events": [
+        {
+          "event_name": "東池袋五丁目東青年会 盆踊り大会",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "東池袋5丁目エリア",
+          "ward": "豊島区",
+          "quote": "​🔻東池袋五丁目東青年会 盆踊り大会\n📅8/22(土)・23(日)\n📍東池袋5丁目エリア  "
+        },
+        {
+          "event_name": "駒込六丁目東文化会 盆踊り・縁日",
+          "date_start": "2026-08-23",
+          "venue_name": "駒込六丁目児童遊園",
+          "ward": "豊島区",
+          "quote": "​🔻駒込六丁目東文化会 盆踊り・縁日\n📅8/23(日)\n📍駒込六丁目児童遊園  "
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 18,
+      "s": 4,
+      "n": "参加記録",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 19,
+      "s": 3,
+      "n": "材料なし（会場不明記）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 20,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "東本願寺の盆踊り",
+          "venue_name": "東本願寺",
+          "quote": "東本願寺の盆踊りとても良いよ。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 21,
+      "s": 4,
+      "n": "歴史・由来",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 22,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 23,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "秋葉原の盆踊り（芳林公園）",
+          "venue_name": "芳林公園",
+          "quote": "明日秋葉原の盆踊り行きます！\n芳林公園！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 24,
+      "s": 5,
+      "n": "中止情報",
+      "events": [
+        {
+          "event_name": "大崎のイベント内盆踊り",
+          "quote": "盆踊り中止は残念だったけど、それでもステージに出てちょっと披露してくれてありがとう🥰"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 25,
+      "s": 5,
+      "n": "固有行事名（会場は校名相当・相対日付）",
+      "events": [
+        {
+          "event_name": "六中納涼盆踊り大会",
+          "quote": "今週末は六中納涼盆踊り大会で夏の思い出を作ろう🎵"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 26,
+      "s": 2,
+      "n": "仮想の催し",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 27,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "銚子正調大漁節保存会ひびき連合会 第45回盆踊り大会",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "venue_name": "イオンモール銚子",
+          "quote": "イオンモール銚子でひびき連合会の盆踊り大会✨🏮✨\n\n今年も踊るぞ〜🎶\n\n8月21日(土)･22日(日)開催！\n18時〜20時30分"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 28,
+      "s": 5,
+      "n": "相対日付＋固有行事名（書き写せず）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 29,
+      "s": 4,
+      "n": "文化・意見",
+      "events": [],
+      "observations": [],
+      "glossary": [
+        "アニ盆"
+      ]
+    },
+    {
+      "no": 30,
+      "s": 5,
+      "n": "相対日付＋固有行事名（書き写せず）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 31,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 32,
+      "s": 5,
+      "n": "日付明記（周辺市の複数行事）",
+      "events": [
+        {
+          "event_name": "湘南エリア盆踊りイベント6選",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "quote": "【今週末8月22日＆23日開催情報】2026年夏休み後半の週末は「盆踊り」で盛り上がろう♪湘南エリアの盆踊りイベント6選集めました！※随時更新[藤沢市、茅ヶ崎市、平塚市]"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 33,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 34,
+      "s": 5,
+      "n": "日時明記",
+      "events": [
+        {
+          "event_name": "池袋盆BANDの盆踊りライブ",
+          "date_start": "2026-08-23",
+          "quote": "8月23日 日曜日 \n長見順率いる「池袋盆BAND」"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 35,
+      "s": 4,
+      "n": "文化・意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 36,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 37,
+      "s": 2,
+      "n": "返信で文脈不明",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 38,
+      "s": 5,
+      "n": "日時・会場・主催明記",
+      "events": [
+        {
+          "event_name": "みたけ光と実りの収穫祭（盆踊り大会含む）",
+          "date_start": "2026-09-26",
+          "venue_name": "御嵩小学校グラウンド",
+          "quote": "2026年9月26日（土）岐阜県御嵩町「みたけ光と実りの収穫祭」（主催：一般社団法人 可児青年会議所・みたけ・イロヅク・イナサク・プロジェクト）が開催されます🎊"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 39,
+      "s": 3,
+      "n": "行くだけの言及",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 40,
+      "s": 2,
+      "n": "比喩表現",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 41,
+      "s": 5,
+      "n": "会場（町名）明記",
+      "events": [
+        {
+          "event_name": "舞ちゃん夏まつり（舞阪町納涼祭）",
+          "venue_name": "舞阪町",
+          "quote": "【浜松・2026舞ちゃん夏まつり（舞阪町納涼祭）】名物シラス天ぷらなどの地元グルメや盆踊り、抽選会で賑わう恒例イベント。夕方からの開催だから夕涼みにぴったり！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 42,
+      "s": 4,
+      "n": "曲名（練習中）",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "アカペラ音頭",
+          "claim_type": "mentioned",
+          "evidence_quote": "YouTubeで「アカペラ音頭 」のダンス（盆踊り？）予習をした。",
+          "event_name": null
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 43,
+      "s": 2,
+      "n": "比喩・空想",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 44,
+      "s": 5,
+      "n": "会場明記（複数）",
+      "events": [
+        {
+          "event_name": "浅草東本願寺盆踊り",
+          "venue_name": "東本願寺",
+          "quote": "今日は🏮浅草東本願寺盆踊りに行って来ました👍😀\nサザンオールスターズ盆踊り\nめちゃくちゃ盛り上がり楽しすぎた",
+          "song_claims": [
+            {
+              "song_name": "サザンオールスターズ",
+              "claim_type": "observed",
+              "evidence_quote": "サザンオールスターズ盆踊り\nめちゃくちゃ盛り上がり楽しすぎた"
+            }
+          ]
+        },
+        {
+          "event_name": "浜町大江戸盆踊り",
+          "venue_name": "浜町",
+          "quote": "明後日は🏮浜町大江戸盆踊りでーす\n盆踊りも後半楽しみまーす"
+        }
+      ],
+      "observations": [],
+      "glossary": [
+        "盆オドラー"
+      ]
+    },
+    {
+      "no": 45,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "野菜まつり（ヤーサイ）",
+          "venue_name": "藤林寺",
+          "quote": "藤林寺（とうりんじ）で500年以上つづくお盆の祭り「野菜まつり」（通称：ヤーサイ）では土俵のまわりをまわる「竹回し」、歌舞伎の演目を題材におどる「口説き盆踊り」等が有名です。",
+          "song_claims": [
+            {
+              "song_name": "竹回し",
+              "claim_type": "mentioned",
+              "evidence_quote": "土俵のまわりをまわる「竹回し」"
+            },
+            {
+              "song_name": "口説き盆踊り",
+              "claim_type": "mentioned",
+              "evidence_quote": "歌舞伎の演目を題材におどる「口説き盆踊り」等が有名です。"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": [
+        "ヤーサイ"
+      ]
+    },
+    {
+      "no": 46,
+      "s": 5,
+      "n": "会場明記（島名）",
+      "events": [
+        {
+          "event_name": "姫島の盆踊り",
+          "venue_name": "姫島",
+          "quote": "姫島の盆踊りはキツネ踊りに代表される昔からの伝統踊りと近年の創作踊りとがあるが、合わせて50種類以上あるとのことで、演目は毎年変わるので何度も見に来たい盆踊りであります。",
+          "song_claims": [
+            {
+              "song_name": "タヌキ踊り",
+              "claim_type": "observed",
+              "evidence_quote": "きつね踊りと対になる「タヌキ踊り」も子供達が踊ります。"
+            },
+            {
+              "song_name": "キツネ踊り",
+              "claim_type": "mentioned",
+              "evidence_quote": "姫島の盆踊りはキツネ踊りに代表される昔からの伝統踊りと近年の創作踊りとがあるが"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 47,
+      "s": 4,
+      "n": "文化・由来",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 48,
+      "s": 5,
+      "n": "会場・日付明記",
+      "events": [
+        {
+          "event_name": "池田小学校の盆踊り",
+          "date_start": "2026-08-16",
+          "venue_name": "池田小学校",
+          "ward": "神戸市長田区",
+          "quote": "この日は、神戸市長田区の池田小学校へ。地域の中学や大学、クラブチームなども巻き込んだ大きな「盆踊り」が行われるとのことで",
+          "song_claims": [
+            {
+              "song_name": "ヴィッセル音頭",
+              "claim_type": "observed",
+              "evidence_quote": "今年、神戸の盆踊りで流行のヴィッセル音頭など数曲を、1年生・2年生の順、そして最後は混合で約20名程度がやぐらのステージで踊ってみせてくれました。"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": [
+        "コベカツ"
+      ]
+    },
+    {
+      "no": 49,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "北野町和田盆踊り",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "quote": "いよいよ今週8月22日、23日は北野町和田盆踊りです♪"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 50,
+      "s": 5,
+      "n": "会場（支店名）明記",
+      "events": [
+        {
+          "event_name": "忠生支店の盆踊り",
+          "venue_name": "忠生支店",
+          "quote": "忠生支店での盆踊り開催案内に掲載した画像の一部に、意図していない表現が含まれていたため、当該投稿を削除し、掲示しているポスターを撤去しました。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 51,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "大江戸まつり盆おどり大会",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "quote": "【8月21日・22日は大江戸まつり盆おどり大会！】"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 52,
+      "s": 4,
+      "n": "参加記録",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 53,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "芝公園二丁目町会盆踊り",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "quote": "ちなみに今年の芝公園二丁目町会盆踊りは8月21〜22日\n#芝公園二丁目町会盆踊り"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 54,
+      "s": 4,
+      "n": "参加記録",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 55,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "見取り図盆踊り",
+          "date_start": "2026-08-22",
+          "quote": "【譲】8/22 見取り図盆踊り　〜350番\n1-2枚　バラ🉑"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 56,
+      "s": 5,
+      "n": "日付明記",
+      "events": [
+        {
+          "event_name": "東池袋五丁目東青年会盆踊り大会",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "quote": "東池袋五丁目東青年会盆踊り大会   \n令和８年８月２２日、２３日"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 57,
+      "s": 4,
+      "n": "文化・意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 58,
+      "s": 4,
+      "n": "文化・意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 59,
+      "s": 4,
+      "n": "踊りの名前",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "どじょうすくい",
+          "claim_type": "mentioned",
+          "evidence_quote": "「盆踊りってさ、こうだよね」って言いながらどじょうすくいの動きしてきた",
+          "event_name": null
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 60,
+      "s": 3,
+      "n": "材料なし",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 61,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "銀嶺商店街盆踊り",
+          "venue_name": "鵜の木駅ふれあい道路（銀嶺商店街）",
+          "quote": "激に鵜の木駅ふれあい道路の一番アツい夜、銀嶺商店街盆踊りは楽しみです。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 62,
+      "s": 4,
+      "n": "参加記録",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 63,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "東砂五丁目町会盆踊り",
+          "venue_name": "中田稲荷神社",
+          "ward": "江東区",
+          "quote": "なんで地元町会の盆踊りって、\nこんなに楽しいんや😀😆\n#東砂五丁目町会\n#中田稲荷神社\n#江東区"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 64,
+      "s": 3,
+      "n": "材料なし（AI批評）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 65,
+      "s": 3,
+      "n": "材料なし（AI批評）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 66,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "鵜の木銀嶺商店会盆踊り",
+          "venue_name": "鵜の木銀嶺商店会",
+          "quote": "うのきのこちゃんと盆踊りに行ってきたっきー。みんな楽しそうでよかったねってきのこちゃんに言ったら「うのっきーさんが1番楽しそうよ」って😆明日もあるからまた遊びにきてね。町会のみなさん信金のみなさんありがとだっきー"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 67,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "サンシャインの盆踊り",
+          "venue_name": "サンシャイン",
+          "quote": "きちゃった♡なんと毎年サンシャインの盆踊りとウチの町会に来てくれてる方とバッタリ遭遇！挨拶してとりあえず踊る！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 68,
+      "s": 5,
+      "n": "日付・共催明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り大会2026",
+          "date_start": "2026-08-19",
+          "date_end": "2026-08-20",
+          "ward": "台東区",
+          "quote": "東本願寺盆踊り大会2026(8/19-20)、いよいよ開始です！\n西浅草3町会共同開催、多文化共生。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 69,
+      "s": 5,
+      "n": "日時・会場明記（複数）",
+      "events": [
+        {
+          "event_name": "花保町会の盆踊り",
+          "date_start": "2026-08-21",
+          "venue_name": "花保広場（花保さくら公園　南花畑３－１）",
+          "ward": "足立区",
+          "quote": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。"
+        },
+        {
+          "event_name": "保塚町町会・一ツ家二丁目町会の合同盆踊り",
+          "date_start": "2026-08-29",
+          "venue_name": "一ツ家二丁目こどもの広場（一ツ家２－２１）",
+          "ward": "足立区",
+          "quote": "保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 70,
+      "s": 5,
+      "n": "会場（町名）＋相対日付",
+      "events": [
+        {
+          "event_name": "伊奈町の盆踊り大会",
+          "quote": "【盆踊り大会まであと1日！】\n先日、院内で盆踊りの練習会を行いました♪\n 伊奈町のレクリエーション協会の皆さまにご指導いただき、楽しく練習することができました🌟"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 71,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "中目黒の盆踊り",
+          "venue_name": "中目黒",
+          "quote": "【中目黒の盆踊りに向けた練習に参加！】\n\n昨日(8/19)は、夜から盆踊りの練習に参加してきました。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 72,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "夏フェス 2026 〜みんなで踊ろう盆踊り〜",
+          "date_start": "2026-08-23",
+          "venue_name": "まつばらテラス（輝）",
+          "quote": "【松原市】8月23日に夏フェス 2026 〜みんなで踊ろう盆踊り〜がまつばらテラス（輝）で開催",
+          "song_claims": [
+            {
+              "song_name": "河内音頭",
+              "claim_type": "announced",
+              "evidence_quote": "曲目は「河内音頭」、「河内おとこ節」、「江州音頭」を予定。"
+            },
+            {
+              "song_name": "河内おとこ節",
+              "claim_type": "announced",
+              "evidence_quote": "曲目は「河内音頭」、「河内おとこ節」、「江州音頭」を予定。"
+            },
+            {
+              "song_name": "江州音頭",
+              "claim_type": "announced",
+              "evidence_quote": "曲目は「河内音頭」、「河内おとこ節」、「江州音頭」を予定。"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 73,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "赤坂夏おどり事前練習会",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "venue_name": "赤坂小学校 体育館",
+          "quote": "赤坂夏おどり事前練習会\n8月21日(金) 22日(土) 18:00~\n赤坂小学校 体育館"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 74,
+      "s": 4,
+      "n": "参加記録",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 75,
+      "s": 4,
+      "n": "曲名（練習中）",
+      "events": [],
+      "observations": [
+        {
+          "song_name": "ボンジョビ",
+          "claim_type": "announced",
+          "evidence_quote": "新曲ボンジョビとサザン希望の轍\n途中で変化あって難しい",
+          "event_name": null
+        },
+        {
+          "song_name": "希望の轍",
+          "claim_type": "announced",
+          "evidence_quote": "新曲ボンジョビとサザン希望の轍\n途中で変化あって難しい",
+          "event_name": null
+        }
+      ],
+      "glossary": []
+    },
+    {
+      "no": 76,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "久富稲荷神社の盆踊り練習会",
+          "venue_name": "久富稲荷神社",
+          "ward": "世田谷区",
+          "quote": "盆踊り練習会初日ありがとうございました😊\n明日明後日も楽しましょう！\n本番は日曜日！\n#世田谷区　#久富稲荷神社"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 77,
+      "s": 5,
+      "n": "日時・会場明記（複数）",
+      "events": [
+        {
+          "event_name": "淡路市社会福祉協議会の盆踊り練習会",
+          "date_start": "2026-08-08",
+          "venue_name": "岩屋保健センター",
+          "quote": "8月8日、淡路市社会福祉協議会 地域支えあいセンターいわや主催の盆踊りの練習会が、岩屋郷土芸能保存会の協力のもと、岩屋保健センターで開催されました。"
+        },
+        {
+          "event_name": "第5回淡路島岩屋夏まつり",
+          "date_start": "2026-08-23",
+          "quote": "8月23日、#第5回淡路島岩屋夏まつり で一緒に盆踊りを踊りましょう！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 78,
+      "s": 3,
+      "n": "材料なし（雑記中の言及）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 79,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 80,
+      "s": 1,
+      "n": "盆踊りに触れていない（納涼大会のみ）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 81,
+      "s": 1,
+      "n": "盆踊りに触れていない（納涼大会のみ）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 82,
+      "s": 4,
+      "n": "中止の言及だが行事特定できず（返信）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 83,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 84,
+      "s": 4,
+      "n": "文化・意見",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 85,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 86,
+      "s": 4,
+      "n": "行事の歴史への言及（不確か）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 87,
+      "s": 2,
+      "n": "比喩・例え",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 88,
+      "s": 5,
+      "n": "日時・会場・区明記",
+      "events": [
+        {
+          "event_name": "上石神井地区祭・夏まつり",
+          "date_start": "2026-08-22",
+          "venue_name": "上石神井小学校　校庭",
+          "ward": "練馬区",
+          "quote": "【イベント情報】上石神井地区祭・夏まつり\n・8月22日 ※雨天の際は翌23日に順延\n・午後4時から午後8時30分\n・上石神井小学校　校庭\n焼きそばや綿あめなどの模擬店、ダンスやコーラスなどの舞台演舞と櫓の周りで盆踊りが行われます！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 89,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "さつき・くすのき盆踊り大会",
+          "date_start": "2026-08-28",
+          "venue_name": "社会福祉法人協同の苑　さつき・くすのきグラウンド",
+          "quote": "【さつき・くすのき盆踊り大会】\n\n施設の利用者と地域の皆様が一緒になって楽しめる盆踊りが開催されます❗️\n\n📅8月28日(金)17:30～19:30(小雨決行、荒天中止)\n📍社会福祉法人協同の苑\n　さつき・くすのきグラウンド"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 90,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "南二盆踊り",
+          "date_start": "2026-08-22",
+          "venue_name": "トキメックイベント広場",
+          "quote": "【盆踊り情報2026】【京急蒲田】8/22(土)トキメックイベント広場で南蒲田二丁目町内会「南二盆踊り」。子どもたちは人形すくい、ヨーヨー釣りができます！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 91,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "venue_name": "西浅草の東本願寺",
+          "quote": "西浅草の東本願寺の盆踊りに初参戦！",
+          "song_claims": [
+            {
+              "song_name": "サザンオールスターズ",
+              "claim_type": "observed",
+              "evidence_quote": "サザンオールスターズの時間を狙って行きました。これは…！盆踊りという名のディスコですよ！😆"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 92,
+      "s": 5,
+      "n": "会場・区明記（複数）",
+      "events": [
+        {
+          "event_name": "大崎ニューシティ盆踊り大会",
+          "date_start": "2026-08-20",
+          "venue_name": "大崎ニューシティ3F O-歩道橋",
+          "ward": "品川区",
+          "quote": "・大崎ニューシティ盆踊り大会（初日） / 品川区（大崎ニューシティ3F O-歩道橋）"
+        },
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-20",
+          "venue_name": "浅草・東本願寺",
+          "ward": "台東区",
+          "quote": "・東本願寺盆踊り（2日目） / 台東区（浅草・東本願寺）"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 93,
+      "s": 5,
+      "n": "日時・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "date_end": "2026-08-20",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "本日最終日です(8/19-20)「東本願寺盆踊り」台東区・東本願寺"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 94,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "はと広場の納涼盆踊り",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "venue_name": "はと広場",
+          "quote": "明日21日（金）・22日（土）\n稜の目の前のはと広場で納涼盆踊り\n始まりは両日19時からです"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 95,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "2026年8月19日(水)\n東京都台東区／東本願寺\n「東本願寺盆踊り」(1日目)"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 96,
+      "s": 5,
+      "n": "日時・会場・区明記",
+      "events": [
+        {
+          "event_name": "雷門盆踊り〜夢灯篭〜",
+          "date_start": "2026-09-05",
+          "venue_name": "浅草 並木通り界隈",
+          "ward": "台東区",
+          "quote": "■令和8年 雷門盆踊り ～夢灯篭～"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 97,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "2026年8月19日(水)\n東京都台東区／東本願寺\n「東本願寺盆踊り」(1日目)"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 98,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "2026年8月19日(水)\n東京都台東区／東本願寺\n「東本願寺盆踊り」(1日目)\nサザンオールスターズの曲で盆踊り〈2〉",
+          "song_claims": [
+            {
+              "song_name": "サザンオールスターズ",
+              "claim_type": "observed",
+              "evidence_quote": "サザンオールスターズの曲で盆踊り〈2〉"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 99,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "2026年8月19日(水)\n東京都台東区／東本願寺\n「東本願寺盆踊り」(1日目)③\nサザンオールスターズの曲で盆踊り",
+          "song_claims": [
+            {
+              "song_name": "サザンオールスターズ",
+              "claim_type": "observed",
+              "evidence_quote": "サザンオールスターズの曲で盆踊り\n一部の曲では、踊れないから輪に入らない、遠慮がちな雰囲気がありましたが、二部は違いました。"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 100,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "2026年8月19日(水)\n東京都台東区／東本願寺\n「東本願寺盆踊り」(1日目)②"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 101,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "2026年8月19日(水)\n東京都台東区／東本願寺\n「東本願寺盆踊り」(1日目)\nサザンオールスターズの曲で盆踊り。",
+          "song_claims": [
+            {
+              "song_name": "サザンオールスターズ",
+              "claim_type": "observed",
+              "evidence_quote": "サザンオールスターズの曲で盆踊り。\nオリジナリティがありながらも踊りやすい振りで、盆踊り人口増えそうなくらい、見よう見まねで楽しんでいる方が多かったです🤗✨"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 102,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "浅草東本願寺盆踊り",
+          "venue_name": "浅草東本願寺",
+          "quote": "今日の盆踊りは浅草東本願寺盆踊り❣️\n去年初参加で今年２回目ですが、サザン曲で盆踊りはホントに夏🏄☀🍧を感じます🎶",
+          "song_claims": [
+            {
+              "song_name": "サザン",
+              "claim_type": "observed",
+              "evidence_quote": "サザン曲で盆踊りはホントに夏🏄☀🍧を感じます🎶"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 103,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "銀嶺商店街盆踊り",
+          "venue_name": "大田区鵜の木駅へ南北に伸びるふれあい道路（銀嶺商店街）",
+          "quote": "今宵は大田区鵜の木駅へ南北に伸びるふれあい道路の銀嶺商店街盆踊りへ♪"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 104,
+      "s": 5,
+      "n": "日付・会場・区明記",
+      "events": [
+        {
+          "event_name": "曳舟中町会の盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "ふじのき公園",
+          "ward": "墨田区",
+          "quote": "2026年盆踊り31  墨田区　8月19日\n曳舟中町会　ふじのき公園",
+          "song_claims": [
+            {
+              "song_name": "河内おとこ節",
+              "claim_type": "observed",
+              "evidence_quote": "今年は河内おとこ節の手拍子2回を間違えずにやり切りました✌️スカイ🗼を見上げながらのご当地曲最高でした✨"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 105,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "鵜の木の盆踊り",
+          "venue_name": "鵜の木",
+          "ward": "大田区",
+          "quote": "今日は仕事を終え、東京都大田区の #鵜の木 の #盆踊り へ。",
+          "song_claims": [
+            {
+              "song_name": "鵜の木音頭",
+              "claim_type": "observed",
+              "evidence_quote": "ご当地の #鵜の木音頭 は普段なかなか踊る機会が無いですが、踊り方はそんなに難しくないので、去年踊った感覚を思い出してきて、楽しく踊れました😄"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 106,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "東本願寺１日目\nいつもより人が増えてる。奥浅草が流れたせい？"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 107,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "銀嶺会 子供盆踊り大会",
+          "date_start": "2026-08-19",
+          "date_end": "2026-08-20",
+          "venue_name": "鵜の木駅前",
+          "quote": "8/19(水)、20(木)は鵜の木駅前で「銀嶺会 子供盆踊り大会」開催。商店会に踊りの輪が広がっています。"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 108,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "東本願寺盆踊り。途中のバンドタイムから参戦して来ました。\nサザンタイム面白かったです。",
+          "song_claims": [
+            {
+              "song_name": "サザン",
+              "claim_type": "observed",
+              "evidence_quote": "サザンタイム面白かったです。"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 109,
+      "s": 5,
+      "n": "日時・住所明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "東京都台東区西浅草1丁目5-5",
+          "ward": "台東区",
+          "quote": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都台東区西浅草1丁目5-5"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 110,
+      "s": 5,
+      "n": "日時・住所明記",
+      "events": [
+        {
+          "event_name": "多摩川辺り商店会 盆踊り大会",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "東京都大田区鵜の木2丁目12-4（鵜の木児童公園）",
+          "ward": "大田区",
+          "quote": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園）"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 111,
+      "s": 5,
+      "n": "日時・住所明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "東京都台東区西浅草1丁目5-5",
+          "ward": "台東区",
+          "quote": "東本願寺盆踊り（浅草東本願寺 盆踊り大会）\n日程：2026年8月22日（土）～2026年8月23日（日）\n住所：東京都台東区西浅草1丁目5-5"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 112,
+      "s": 5,
+      "n": "会場・区明記（複数）",
+      "events": [
+        {
+          "event_name": "大崎ニューシティ盆踊り大会",
+          "date_start": "2026-08-20",
+          "venue_name": "大崎ニューシティ3F O-歩道橋",
+          "ward": "品川区",
+          "quote": "・大崎ニューシティ盆踊り大会（初日） / 品川区（大崎ニューシティ3F O-歩道橋）"
+        },
+        {
+          "event_name": "東本願寺盆踊り",
+          "date_start": "2026-08-20",
+          "venue_name": "浅草・東本願寺",
+          "ward": "台東区",
+          "quote": "・東本願寺盆踊り（2日目） / 台東区（浅草・東本願寺）"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 113,
+      "s": 5,
+      "n": "日時・住所明記",
+      "events": [
+        {
+          "event_name": "多摩川辺り商店会 盆踊り大会",
+          "date_start": "2026-08-22",
+          "date_end": "2026-08-23",
+          "venue_name": "東京都大田区鵜の木2丁目12-4（鵜の木児童公園）",
+          "ward": "大田区",
+          "quote": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日（土）～2026年8月23日（日）\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園）"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 114,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "多摩川辺り商店会の盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "多摩川辺り商店会（大田区鵜の木）",
+          "quote": "8/19(水) 19:00 〜 21:00　\n盆踊り 大田区ローカル 鵜の木 ＠ 多摩川辺り商店会 "
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 115,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "多摩川辺り商店会の盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "多摩川辺り商店会（大田区鵜の木）",
+          "quote": "【盆踊りライブ配信 】\n8/19(水) 19:00 〜 21:00　ただいま配信中！\n盆踊り 大田区ローカル 鵜の木 ＠ 多摩川辺り商店会"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 116,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "東本願寺盆踊り",
+          "venue_name": "東本願寺",
+          "ward": "台東区",
+          "quote": "本日明日と台東区東本願寺の盆踊り\n賑わっております"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 117,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "浅草東本願寺盆おどり",
+          "venue_name": "浅草東本願寺",
+          "quote": "浅草東本願寺盆おどり！"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 118,
+      "s": 5,
+      "n": "会場明記",
+      "events": [
+        {
+          "event_name": "東本願寺の盆踊り",
+          "venue_name": "浅草の東本願寺",
+          "quote": "今日、明日と浅草の東本願寺で盆踊りがあります😊\nいつもお世話になっている『たこ焼き居酒屋taco44 .』さんが出店しています！🐙🤤"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 119,
+      "s": 5,
+      "n": "会場・区明記",
+      "events": [
+        {
+          "event_name": "鵜の木の盆踊り大会",
+          "venue_name": "鵜の木",
+          "ward": "大田区",
+          "quote": "今日と明日の2日間、鵜の木で盆踊り大会が開催されます✨"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 120,
+      "s": 5,
+      "n": "日時・会場明記",
+      "events": [
+        {
+          "event_name": "多摩川辺り商店会の盆踊り",
+          "date_start": "2026-08-19",
+          "venue_name": "多摩川辺り商店会（大田区鵜の木）",
+          "quote": "【盆踊りライブ配信 】8/19(水) 19:00 〜 21:00\n盆踊り 大田区ローカル 鵜の木 ＠ 多摩川辺り商店会"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 121,
+      "s": 5,
+      "n": "日時・会場・区明記",
+      "events": [
+        {
+          "event_name": "新小岩銀座 夏まつり 和楽器DEナイト",
+          "date_start": "2026-08-22",
+          "venue_name": "新小岩駅南口 駅前広場",
+          "ward": "葛飾区",
+          "quote": "【新小岩銀座 夏まつり 和楽器DEナイト！】\n🏮8/22(土)⏰18:40〜20:00📍新小岩駅南口 駅前広場(葛飾区)\n\n民謡歌手木津かおりをはじめ津軽三味線、尺八、和太鼓など豪華メンバーで、熊本復興の想いを込めた民謡や生演奏で盆踊り♪"
+        }
+      ],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 122,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 123,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 124,
+      "s": 1,
+      "n": "盆踊りに触れていない（明示なし）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 125,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 126,
+      "s": 2,
+      "n": "返信で文脈不明",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 127,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 128,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 129,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 130,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 131,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 132,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 133,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 134,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 135,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 136,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 137,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 138,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 139,
+      "s": 1,
+      "n": "盆踊りに触れていない（明示なし）",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 140,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 141,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 142,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 143,
+      "s": 4,
+      "n": "界隈語・意見",
+      "events": [],
+      "observations": [],
+      "glossary": [
+        "盆オドラー"
+      ]
+    },
+    {
+      "no": 144,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 145,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 146,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 147,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 148,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 149,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    },
+    {
+      "no": 150,
+      "s": 1,
+      "n": "盆踊りに触れていない",
+      "events": [],
+      "observations": [],
+      "glossary": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_665eaedfe3997aa1",
+    "title": "花保町会の盆踊り（X投稿より）",
+    "account_key": "@adachi_city",
+    "url": "https://x.com/adachi_city/status/2089981991060210144",
+    "notice_kind": "x_post",
+    "raw_text": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 https://t.co/FL3xdU1OrP"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_90894de4ea960b24",
+      "action": "register_new",
+      "event_name_hint": "花保町会の盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-21",
+      "venue": {
+        "name": "花保広場（花保さくら公園　南花畑３－１）",
+        "area": "足立区"
+      },
+      "detail_addendum": "出典：足立区役所のX投稿。日時・会場明記（複数）\n- 出典URL: https://x.com/adachi_city/status/2089981991060210144"
+    }
+  ]
+}

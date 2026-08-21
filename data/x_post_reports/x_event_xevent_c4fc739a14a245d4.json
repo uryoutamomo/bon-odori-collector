@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_c4fc739a14a245d4",
+    "title": "多摩川辺り商店会 盆踊り大会（X投稿より）",
+    "account_key": "@WBElectric0521",
+    "url": "https://x.com/WBElectric0521/status/2090040633230848484",
+    "notice_kind": "x_post",
+    "raw_text": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https://t.co/qveQuvni4D"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_98a74b386d71efdd",
+      "action": "register_new",
+      "event_name_hint": "多摩川辺り商店会 盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "東京都大田区鵜の木2丁目12-4（鵜の木児童公園）",
+        "area": "大田区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。日時・住所明記\n- 出典URL: https://x.com/WBElectric0521/status/2090040633230848484\n- 出典URL: https://x.com/web_camera/status/2090028969823518733"
+    }
+  ]
+}

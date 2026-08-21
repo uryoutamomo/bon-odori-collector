@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_2187f642b0a406d5",
+    "title": "おしゃれ盆踊り vol.9（X投稿より）",
+    "account_key": "@event_fes",
+    "url": "https://x.com/event_fes/status/2089863592338469206",
+    "notice_kind": "x_post",
+    "raw_text": "今週末です‼️ おしゃれ盆踊り vol.9｜2026年8月22日（土）にTOKYO NODE SKY GARDEN &amp; POOLで開催！盆踊り×音楽×ファッションの夏祭り 詳細はこちら👉 https://t.co/4KP8b9VJkx"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_bd2992b8b20c68eb",
+      "action": "register_new",
+      "event_name_hint": "おしゃれ盆踊り vol.9",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "TOKYO NODE SKY GARDEN &amp; POOL",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。おしゃれ盆踊り vol.9の日時・会場を告知\n- 出典URL: https://x.com/event_fes/status/2089863592338469206"
+    }
+  ]
+}

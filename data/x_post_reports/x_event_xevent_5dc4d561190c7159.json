@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_5dc4d561190c7159",
+    "title": "皆中稲荷神社の盆踊り（X投稿より）",
+    "account_key": "@news_imada",
+    "url": "https://x.com/news_imada/status/2090302093173424501",
+    "notice_kind": "x_post",
+    "raw_text": "今度の土日は、新大久保駅の近くの皆中稲荷神社で開催される盆踊りに内藤とうがらしで出店します🌶️\n七味など品薄なのでたくさんありませんが、ぜひお越しください🌶️\n#内藤とうがらし #新大久保 #8月22日 #8月23日 #百人町 https://t.co/83kXgFxTir"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_fd10147290a194fd",
+      "action": "register_new",
+      "event_name_hint": "皆中稲荷神社の盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "皆中稲荷神社",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。会場・日付明記\n- 出典URL: https://x.com/news_imada/status/2090302093173424501"
+    }
+  ]
+}

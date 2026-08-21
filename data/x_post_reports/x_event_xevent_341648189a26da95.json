@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.445387+00:00",
+  "source": {
+    "report_id": "x_event_xevent_341648189a26da95",
+    "title": "青木コミュニティ盆踊り（X投稿より）",
+    "account_key": "@horo2cookie",
+    "url": "https://x.com/horo2cookie/status/2089964380381454834",
+    "notice_kind": "x_post",
+    "raw_text": "【那須塩原の皆さんへお知らせ】\n8/22(土)15〜18時\n青木コミュニティ盆踊り@青木小学校\nカーボンニュートラル課、出展します。\n太陽光の力で光るソーラーランタン作りのワークショップです💡\nわたしもいます。お近くの方はよろしければ…！"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_4027b300f6e8b9f9",
+      "action": "register_new",
+      "event_name_hint": "青木コミュニティ盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "青木小学校",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。公式告知、日付・時刻・会場あり\n- 出典URL: https://x.com/horo2cookie/status/2089964380381454834"
+    }
+  ]
+}

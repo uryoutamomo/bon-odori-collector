@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.344843+00:00",
+  "source": {
+    "report_id": "x_event_xevent_4699a26634981b69",
+    "title": "リソルの森 盆女出演（X投稿より）",
+    "account_key": "@ohanaaroma",
+    "url": "https://x.com/ohanaaroma/status/2089141146417283531",
+    "notice_kind": "x_post",
+    "raw_text": "【出演キャンセルのお知らせ】\n千葉県にある「リソルの森」8/22の盆女出演はキャンセルとなりました\n\n今回の大雨により被害に遭われた皆さま、そして地域の皆さまに、心よりお見舞い申し上げます\n\n一日も早く穏やかな日常が戻りますよう、心よりお祈りしております\n\n#盆踊り\n\nhttps://t.co/O3r5CEZ4sf"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_94aa29726899dc8c",
+      "action": "register_new",
+      "event_name_hint": "リソルの森 盆女出演",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "リソルの森",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。盆踊り出演のキャンセル告知。日付と会場が読める\n- 出典URL: https://x.com/ohanaaroma/status/2089141146417283531"
+    }
+  ]
+}

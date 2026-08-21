@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_8d6ac45402af563f",
+    "title": "安心院盆地祭り（X投稿より）",
+    "account_key": "@inavi_oita",
+    "url": "https://x.com/inavi_oita/status/2089908963902992553",
+    "notice_kind": "x_post",
+    "raw_text": "＼安心院の夏を遊びつくそう！／\n\n【第55回 安心院盆地祭り🎆】\n\n📅2026/8/22(土) 16:00～20:30\n📍安心院文化会館前駐車場(#宇佐市)\n🎫入場無料\nhttps://t.co/UzW4LB1CBo\n\n屋台、盆踊り、ビンゴゲームなど楽しい企画が盛りだくさん✨アフリカンサファリからウサギやモルモットもやってきます🐰\n20:20からはフィナーレの打ち上げ花火も\n\n夏の思い出作りにぜひお越しください🤩"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_051713178d362ef6",
+      "action": "register_new",
+      "event_name_hint": "安心院盆地祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "安心院文化会館前駐車場",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。安心院盆地祭りの日時・会場を告知\n- 出典URL: https://x.com/inavi_oita/status/2089908963902992553"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.344843+00:00",
+  "source": {
+    "report_id": "x_event_xevent_6f33988f22524b18",
+    "title": "北区立堀船公園の盆踊り（X投稿より）",
+    "account_key": "@Tokyo_Daiko_J",
+    "url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+    "notice_kind": "x_post",
+    "raw_text": "今週末、盆踊りに参加させていたきます🥁\n▶︎8月21-23日\n@あらかわ遊園運動場  \n▶︎8月22日\n@北区立堀船公園  \nまだまだ暑い日が続きますが、東京太鼓皆んなで力を合わせて頑張ります！お近くの方は是非遊びにいらしてくださいね♪\n#和太鼓教室 #和太鼓 #東京太鼓 #北区 #荒川区"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_6fe2f38967e38ba2",
+      "action": "register_new",
+      "event_name_hint": "北区立堀船公園の盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "北区立堀船公園",
+        "area": "北区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。和太鼓団体の出演告知。2つの盆踊りの日付と会場が読める\n- 出典URL: https://x.com/Tokyo_Daiko_J/status/2089970496700141928"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.344843+00:00",
+  "source": {
+    "report_id": "x_event_xevent_d19541978c5cf903",
+    "title": "BON BON BON 2026 ─ 盆祭・ボンパ ─（X投稿より）",
+    "account_key": "@gokuraku_15",
+    "url": "https://x.com/gokuraku_15/status/2088624452213088330",
+    "notice_kind": "x_post",
+    "raw_text": "#民謡クルセイダーズ\n#こでらんに〜\n#ムンビア\n\n💌💌💌💌💌💌💌💌💌💌💌\n \\\\ 3rd ALBUM 絶賛発売中//\n『日本民謡より愛をこめて』\n - FROM JAPAN WITH LOVE -\n＝＝＝＝＝＝＝＝＝＝＝＝＝\n https://t.co/bdFmOtXsK9\n💌💌💌💌💌💌💌💌💌💌💌\n\n8/20(木)\nフレディ塚本の民謡定期便\nフレディ塚本/中谷豪秀\nしばし\n\n8/22(土)\n不埒不夜 vol.2\n高円寺HoiPoi\n\n8/22(土)\nBON BON BON 2026 \n─ 盆祭・ボンパ ─ \n清見田公園（静岡県焼津市） \nhttps://t.co/vOl0UvMPIh\n\n8/23(日)\n池袋盆BAND！\n10周年記念盆踊り大会\nゲスト：こでらんに〜\n国立REBORN\n@REBORN_iANDi\n@koderanniiiii\n\n8/29(土)\nキンニャモニャ祭り26\n海士町菱浦港\nキンニャモニャセンター駐車場\nhttps://t.co/jNhG63jnSb\n\n9/5(土)\n音楽の宝箱\nマサコ パルファン店\n@JazzKissaMasako\n\n9/6(日)\nMumbia "
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_ba9b78646fc9a613",
+      "action": "register_new",
+      "event_name_hint": "BON BON BON 2026 ─ 盆祭・ボンパ ─",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "清見田公園",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。バンドの出演スケジュール。盆祭と盆踊り大会の日付・会場が読める\n- 出典URL: https://x.com/gokuraku_15/status/2088624452213088330"
+    }
+  ]
+}

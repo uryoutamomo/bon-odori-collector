@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_59ee4ad05d930a99",
+    "title": "地蔵盆法会（X投稿より）",
+    "account_key": "@cnnn_ryosenji",
+    "url": "https://x.com/cnnn_ryosenji/status/2090307004422369463",
+    "notice_kind": "x_post",
+    "raw_text": "こんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがございます。\n\nその後は、盆踊りと打上花火🎇も例年通り行われます。\nよろしくお願い致します😌\n\n #霊山寺"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_40cb8eff7924e439",
+      "action": "register_new",
+      "event_name_hint": "地蔵盆法会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "霊園",
+        "area": ""
+      },
+      "detail_addendum": "出典：霊山寺公式 ちんねんさんのX投稿。寺の法会と盆踊りの告知。日付・場所あり\n- 出典URL: https://x.com/cnnn_ryosenji/status/2090307004422369463"
+    }
+  ]
+}

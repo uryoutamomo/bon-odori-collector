@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.445387+00:00",
+  "source": {
+    "report_id": "x_event_xevent_6ae1ce6b0beaf7ad",
+    "title": "天高く舞い踊れ！もいわ山盆踊り（X投稿より）",
+    "account_key": "@moiwaropeway",
+    "url": "https://x.com/moiwaropeway/status/2089968136854573193",
+    "notice_kind": "x_post",
+    "raw_text": "9/12(土) 『天高く舞い踊れ！もいわ山盆踊り』開催！\n盆踊りをはじめ、忍者ショーや忍者体験、縁日、昔遊び、キッチンカーなど、お子さまから大人まで楽しめるコンテンツが盛りだくさん！\nぜひご家族やご友人と一緒に、秋のもいわ山で楽しいひとときをお過ごしください。\n#札幌もいわ山ロープウェイ https://t.co/pFs8w3wqsB"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_321c5b5b8d338ae3",
+      "action": "register_new",
+      "event_name_hint": "天高く舞い踊れ！もいわ山盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "venue": {
+        "name": "もいわ山",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。公式告知、日付・イベント名・会場あり\n- 出典URL: https://x.com/moiwaropeway/status/2089968136854573193"
+    }
+  ]
+}

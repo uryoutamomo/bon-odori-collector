@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_d3850bf74402a2c1",
+    "title": "三井アウトレットパーク岡崎 開業記念 盆踊り祭り（X投稿より）",
+    "account_key": "@kabukiya4351",
+    "url": "https://x.com/kabukiya4351/status/2090330935682310609",
+    "notice_kind": "x_post",
+    "raw_text": "8月29日(土)に開催される三井アウトレットパーク岡崎 開業記念 盆踊り祭りに参加させていただきます🙂‍↕️\n\n少人数での参加となりますが、会場を盛り上げられるよう踊らせていただきますので、よろしくお願いいたします🙏\n\n#傾奇屋\n#三井アウトレットパーク岡崎 https://t.co/A3exeuxOiK"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_d197d824376de10e",
+      "action": "register_new",
+      "event_name_hint": "三井アウトレットパーク岡崎 開業記念 盆踊り祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-29",
+      "venue": {
+        "name": "三井アウトレットパーク岡崎",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。踊り手としての出演告知。日付・会場あり\n- 出典URL: https://x.com/kabukiya4351/status/2090330935682310609"
+    }
+  ]
+}

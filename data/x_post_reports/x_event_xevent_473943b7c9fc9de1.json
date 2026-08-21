@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_473943b7c9fc9de1",
+    "title": "納涼盆踊り大会（X投稿より）",
+    "account_key": "@tanaehis",
+    "url": "https://x.com/tanaehis/status/2089922387919949979",
+    "notice_kind": "x_post",
+    "raw_text": "祭りの季節ですね。\n今週末の8月22日（土）・23日（日）には、新宿中央公園で「納涼盆踊り大会」が開催されます。\n\n私も当日は、地元の町会の皆さまに混じってお手伝いに参ります。\n\n地域の方々が準備を重ねてくださっている夏の行事です！ぜひお立ち寄りください。\n\n📍新宿中央公園 ファンモアタイムひろば（旧水の広場）\n 🗓 2026年8月22日（土）17時半〜21時、\n      8月23日（日）18時〜20時半\n\n#新宿中央公園 #盆踊り"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_135a22f993ac9352",
+      "action": "register_new",
+      "event_name_hint": "納涼盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "新宿中央公園 ファンモアタイムひろば（旧水の広場）",
+        "area": ""
+      },
+      "detail_addendum": "出典：たなえ ひさし／都民ファーストの会／新宿区議会議員のX投稿。新宿中央公園の納涼盆踊り大会の日時・会場を告知\n- 出典URL: https://x.com/tanaehis/status/2089922387919949979"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_ed16a1ab58750540",
+    "title": "駒込六丁目東文化会 盆踊り・縁日（X投稿より）",
+    "account_key": "@toshimamirai",
+    "url": "https://x.com/toshimamirai/status/2090299942787301419",
+    "notice_kind": "x_post",
+    "raw_text": "🏮今週末の豊島区 盆踊り情報🏮\n\n​🔻東池袋五丁目東青年会 盆踊り大会\n📅8/22(土)・23(日)\n📍東池袋5丁目エリア  \n\n​🔻駒込六丁目東文化会 盆踊り・縁日\n📅8/23(日)\n📍駒込六丁目児童遊園  \n\n​※詳細は主催案内をご確認ください。\n\n#豊島区 #盆踊り"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_ca73b24053db89d6",
+      "action": "register_new",
+      "event_name_hint": "駒込六丁目東文化会 盆踊り・縁日",
+      "event_year": 2026,
+      "date_start": "2026-08-23",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "駒込六丁目児童遊園",
+        "area": "豊島区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。会場・日付明記（複数）\n- 出典URL: https://x.com/toshimamirai/status/2090299942787301419"
+    }
+  ]
+}

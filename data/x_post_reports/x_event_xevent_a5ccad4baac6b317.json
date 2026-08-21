@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_a5ccad4baac6b317",
+    "title": "ぼーんとぅ盆踊り2026夏in TOKYO（X投稿より）",
+    "account_key": "@rina_rina_t",
+    "url": "https://x.com/rina_rina_t/status/2090333565137588330",
+    "notice_kind": "x_post",
+    "raw_text": "【チケットお譲りします】\nぼーんとぅ盆踊り2026夏in TOKYO\n2026年8月28日(金)18:00開演\n場所：豊洲PIT\nオールスタンディング\n整理番号80番以内\n法被付きチケット代12,000円\n入場時に別途1ドリンク代が必要\n\n息子が入院したため、ライブに行けなくなりました。\n定価で買いたい方、コメントください。"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_65c633eaf0e3e3e7",
+      "action": "register_new",
+      "event_name_hint": "ぼーんとぅ盆踊り2026夏in TOKYO",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-28",
+      "venue": {
+        "name": "豊洲PIT",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。チケット譲渡だが日時・会場が明記された告知情報\n- 出典URL: https://x.com/rina_rina_t/status/2090333565137588330"
+    }
+  ]
+}

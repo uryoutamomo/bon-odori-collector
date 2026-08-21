@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_a86273a5448e6ec0",
+    "title": "グリーンカレー（X投稿より）",
+    "account_key": "@osuyachiguwaka1",
+    "url": "https://x.com/osuyachiguwaka1/status/2090303739337011609",
+    "notice_kind": "x_post",
+    "raw_text": "🏮ぜひ遊びにいらして下さい🏮\nグリーホール単独ライブに向けてのミニ単独ライブです！\n\n8/29(土)\n『グリーンカレー』\n@だがしあたーイエスマン\n(南区相模台2-1-8)\n開場17:45  開演18:00 \nネタあり企画ありの約60分公演です🙋‍♂️\n終演後に盆踊りもあります🎊\n#相模原 #おださが　\n\n🏮お待ちしております🏮 https://t.co/6YWYwRnKc2"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_9fb48083b1169848",
+      "action": "register_new",
+      "event_name_hint": "グリーンカレー",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-29",
+      "venue": {
+        "name": "だがしあたーイエスマン",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。ライブ告知。日付・会場・時刻が明記され終演後に盆踊り\n- 出典URL: https://x.com/osuyachiguwaka1/status/2090303739337011609"
+    }
+  ]
+}

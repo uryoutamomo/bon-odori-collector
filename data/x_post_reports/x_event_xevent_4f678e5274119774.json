@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:06.905422+00:00",
+  "source": {
+    "report_id": "x_event_xevent_4f678e5274119774",
+    "title": "ザ・灯籠来舞（X投稿より）",
+    "account_key": "@iko_yo_trip",
+    "url": "https://x.com/iko_yo_trip/status/2090295260891291769",
+    "notice_kind": "x_post",
+    "raw_text": "＼大迫力の灯籠ナイト！／\n\n神楽や獅子の舞に続き、若者たちが大灯籠を担いで押し合う「ザ・灯籠来舞」！光と熱気が交錯する夏のクライマックスを家族で体感しよう✨\n\nおすすめポイント\n✅明治時代から続く伝統の大灯籠の迫力\n✅神楽・獅子・民謡流しで子どもも楽しめる\n✅翌日8/25は瓢湖の大花火大会で2日連続おでかけ◎\n\n🗓2026/8/24（月）17:00〜22:00（開幕17:00／灯籠来舞19:30〜22:00）\n📍新潟県阿賀野市・水原本町通り（水原代官所周辺）\n\n誰と見に行きたい？コメントで教えてね！👨‍👩‍👧‍👦\n開催情報📝\nhttps://t.co/dppwBZqkja"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_e88ff6aa3b51ec0e",
+      "action": "register_new",
+      "event_name_hint": "ザ・灯籠来舞",
+      "event_year": 2026,
+      "date_start": "2026-08-24",
+      "date_end": "2026-08-24",
+      "venue": {
+        "name": "新潟県阿賀野市・水原本町通り（水原代官所周辺）",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。民謡流しを含む灯籠行事の開催告知。日時・会場が具体的\n- 出典URL: https://x.com/iko_yo_trip/status/2090295260891291769"
+    }
+  ]
+}

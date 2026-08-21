@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:06.905422+00:00",
+  "source": {
+    "report_id": "x_event_xevent_63f3b9c02a86f3cb",
+    "title": "三条市宮島小路の踊り（X投稿より）",
+    "account_key": "@kiyo_sato",
+    "url": "https://x.com/kiyo_sato/status/2090264909041086736",
+    "notice_kind": "x_post",
+    "raw_text": "新潟県三条市の民謡、 #三条音頭 の踊り方アドバンスモードを作りました！\n「（ #三条おけさ と比べて）簡単な方」と言われる三条音頭ですが、細かいポイントに気をつけると美しく踊れる、味わいの深い踊りです。\n\n8/22（土）20:00前後、三条市本町2丁目の宮島小路で私たちの踊りが見られます🥰\n来てね https://t.co/RKHRZ7NXMW"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_47040daf2ce1f9d1",
+      "action": "register_new",
+      "event_name_hint": "三条市宮島小路の踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "三条市本町2丁目の宮島小路",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。三条音頭の踊り方紹介と、日時・場所つきの出演告知\n- 出典URL: https://x.com/kiyo_sato/status/2090264909041086736"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.548203+00:00",
+  "source": {
+    "report_id": "x_event_xevent_f13328a490758085",
+    "title": "夏祭り&盆踊り（X投稿より）",
+    "account_key": "@beppinsan2024",
+    "url": "https://x.com/beppinsan2024/status/2089864115930186068",
+    "notice_kind": "x_post",
+    "raw_text": "8/19(水)\n🍀イベントお知らせ🍀\n今週末　8/22(土)　16:30〜20:45\n駒ヶ林小学校グラウンドで夏祭り&amp;盆踊りに出店します！\n※玉子サンドの販売はありません😅\n・カラフルわらび餅\n・サイコロゲーム\n出店は18時までの短時間ですが、お近くの方は是非💕\n#べっぴんさんド\n#玉子サンド\n#EggSandwich https://t.co/hUfIS4zgyH"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_816542878c90c7a6",
+      "action": "register_new",
+      "event_name_hint": "夏祭り&盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "駒ヶ林小学校グラウンド",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。駒ヶ林小学校の夏祭り&盆踊りの日時・会場を告知\n- 出典URL: https://x.com/beppinsan2024/status/2089864115930186068"
+    }
+  ]
+}

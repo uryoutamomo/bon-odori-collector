@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.065416+00:00",
+  "source": {
+    "report_id": "x_event_xevent_8c8f7272f3a71a96",
+    "title": "文京思い出横丁（X投稿より）",
+    "account_key": "@UT_bondanceclub",
+    "url": "https://x.com/UT_bondanceclub/status/2090290580014415933",
+    "notice_kind": "x_post",
+    "raw_text": "8/23(日)、文京思い出横丁にてガイドダンサーを務めます！\n\n【出演時間】18:00〜20:00\n【場所】傳通院（文京区小石川3-14-6）\n\n文京区にちなんだ盆踊りからみんな大好きアニソン盆踊りまで、全12種類の曲を踊る予定です！ぜひご参加ください🙌\n\n#東大盆踊りサークル\n#盆踊り https://t.co/52KAXVUVGX"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_fccee4e6fa926691",
+      "action": "register_new",
+      "event_name_hint": "文京思い出横丁",
+      "event_year": 2026,
+      "date_start": "2026-08-23",
+      "date_end": "2026-08-23",
+      "venue": {
+        "name": "傳通院",
+        "area": "文京区"
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。盆踊りサークルの出演告知。日時・会場が明記\n- 出典URL: https://x.com/UT_bondanceclub/status/2090290580014415933"
+    }
+  ]
+}

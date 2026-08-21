@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:06.905422+00:00",
+  "source": {
+    "report_id": "x_event_xevent_dc804531911f073e",
+    "title": "東砂三丁目町会 盆踊大会（X投稿より）",
+    "account_key": "@kotokeizai",
+    "url": "https://x.com/kotokeizai/status/2090333007714652233",
+    "notice_kind": "x_post",
+    "raw_text": "今週末大島・南砂エリアで開催予定のお祭りは👇\n・東砂三丁目町会 盆踊大会 8/21・22（東砂第二公園）\n・大島三丁目団地自治会 夕涼み会＆花火大会 8/22（大島三丁目団地）\n\n🔻江東区の夏祭り＆花火大会情報\nhttps://t.co/6UUjId0bL2\n\n※開催内容は変更・中止になる場合があります"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_82da300f098e793a",
+      "action": "register_new",
+      "event_name_hint": "東砂三丁目町会 盆踊大会",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "東砂第二公園",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。町会の盆踊大会の開催予定。日付と会場あり\n- 出典URL: https://x.com/kotokeizai/status/2090333007714652233"
+    }
+  ]
+}

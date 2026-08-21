@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.445387+00:00",
+  "source": {
+    "report_id": "x_event_xevent_7fac5cc43c42d204",
+    "title": "第17回ハマサイトの夏祭り（X投稿より）",
+    "account_key": "@DJKOO_official",
+    "url": "https://x.com/DJKOO_official/status/2089953521101902262",
+    "notice_kind": "x_post",
+    "raw_text": "8/21（金）第17回ハマサイトの夏祭り 〜オトナもコドモもLet's ボンダンス！！〜\n\n日時: 2026年8月21日（金）16:00～21:00（ステージは18:00～20:45）\n※荒天・雨天中止（順延なし）\n\n場所: 浜松町駅北口駅前広場・汐留ビルディング外構\n入場料: 無料（フリー観覧）\n\n出演： #DJKOO #サンプラザ中野くん（爆風スランプ） #新浜レオン #陽真 #Rainy。、#鳳蝶美成　　\n\n司会： #前田恵里花（文化放送アナウンサー）　\n\nサァ！夏の終わり！ブチ上がりDO DANCE！！\n\nhttps://t.co/68yYO9IDuR\n\n#ハマサイト \n#夏祭り \n#盆踊り"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_1596ff7181afeca6",
+      "action": "register_new",
+      "event_name_hint": "第17回ハマサイトの夏祭り",
+      "event_year": 2026,
+      "date_start": "2026-08-21",
+      "date_end": "2026-08-21",
+      "venue": {
+        "name": "浜松町駅北口駅前広場・汐留ビルディング外構",
+        "area": ""
+      },
+      "detail_addendum": "現地の告知投稿で開催を確認。公式告知、日付・時刻・会場・中止規定すべてあり\n- 出典URL: https://x.com/DJKOO_official/status/2089953521101902262"
+    }
+  ]
+}

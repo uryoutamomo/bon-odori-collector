@@ -1,0 +1,27 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-08-21T06:54:07.150643+00:00",
+  "source": {
+    "report_id": "x_event_xevent_6612793978dd2d05",
+    "title": "南二盆踊り（X投稿より）",
+    "account_key": "@otafull",
+    "url": "https://x.com/otafull/status/2090286160342090150",
+    "notice_kind": "x_post",
+    "raw_text": "【盆踊り情報2026】【京急蒲田】8/22(土)トキメックイベント広場で南蒲田二丁目町内会「南二盆踊り」。子どもたちは人形すくい、ヨーヨー釣りができます！\nhttps://t.co/u0fv8q2mhM https://t.co/R4s5WQvm6w"
+  },
+  "events": [
+    {
+      "entry_id": "xrevent_abd771b01ac08a28",
+      "action": "register_new",
+      "event_name_hint": "南二盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "venue": {
+        "name": "トキメックイベント広場",
+        "area": ""
+      },
+      "detail_addendum": "出典：おーたふる／大田区商店街連合会のX投稿。日時・会場明記\n- 出典URL: https://x.com/otafull/status/2090286160342090150"
+    }
+  ]
+}
