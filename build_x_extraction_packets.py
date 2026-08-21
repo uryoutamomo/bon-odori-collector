@@ -16,6 +16,26 @@ from master_rdb.master_db import stable_id
 X_SOURCES = {"x", "x_whitelist", "x_proactive", "x_event_history"}
 URL_RE = re.compile(r"https?://\S+")
 CALENDAR_DATE_RE = re.compile(r"(?:(20\d{2})[年/-])?(\d{1,2})月(\d{1,2})日?|(?:(20\d{2})[/-])?(\d{1,2})/(\d{1,2})(?!\d)")
+ELIDED_DAY_RE = re.compile(
+    r"(?:(20\d{2})[年/-])?(\d{1,2})[月/-](\d{1,2})日?"
+    r"(?:\s*[（(][^）)]*[）)])?\s*(?:[・･、,，.．〜～~\-ー–—]|と|＆|&)\s*"
+    r"(\d{1,2})日?(?!\d|\s*[:：時])"
+)
+ADJACENT_WEEKDAY_DAY_RE = re.compile(
+    r"(?:(20\d{2})[年/-])?(\d{1,2})[月/-](\d{1,2})日?"
+    r"\s*[（(][月火水木金土日](?:曜(?:日)?)?[）)]\s*"
+    r"(\d{1,2})日?\s*[（(][月火水木金土日](?:曜(?:日)?)?[）)]"
+)
+REIWA_DATE_RE = re.compile(
+    r"(?<![A-Za-z0-9])(?:R|令和)\s*(\d{1,2})(?:年|[./])\s*"
+    r"(\d{1,2})(?:月|[./])\s*(\d{1,2})日?(?!\d)",
+    re.IGNORECASE,
+)
+COMPACT_DATE_RE = re.compile(
+    r"(?<!\d)([23]\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])"
+    r"\s*[（(][月火水木金土日](?:曜(?:日)?)?[）)]"
+)
+RELATIVE_DAY_RE = re.compile(r"(?:明日|翌日)\s*[（(]\s*(\d{1,2})日\s*[）)]")
 
 
 def load_json(path: Path, default: Any) -> Any:
@@ -40,22 +60,87 @@ def _posted_date(value: str, fallback: date) -> date:
         return fallback
 
 
+def _resolved_date(explicit_year: str | None, month: int, day: int, posted: date) -> date | None:
+    year = int(explicit_year) if explicit_year else posted.year
+    if not explicit_year and month < posted.month - 2:
+        year += 1
+    try:
+        return date(year, month, day)
+    except ValueError:
+        return None
+
+
+def _overlaps(span: tuple[int, int], occupied: list[tuple[int, int]]) -> bool:
+    return any(span[0] < end and start < span[1] for start, end in occupied)
+
+
 def machine_dates(text: str, posted_at: str, *, today: date | None = None) -> list[str]:
-    """Extract calendar dates only; clock times intentionally never match."""
+    """Extract text-grounded calendar dates; clock times never match."""
     today = today or date.today()
     posted = _posted_date(posted_at, today)
     found: set[date] = set()
+    anchors: list[tuple[int, date]] = []
+    occupied: list[tuple[int, int]] = []
+
+    # Era and compact forms carry their own year.  Mark their spans so the
+    # ordinary month/day pass cannot also infer a conflicting posted-at year.
+    for match in REIWA_DATE_RE.finditer(text):
+        era_year = int(match.group(1))
+        value = (
+            _resolved_date(str(2018 + era_year), int(match.group(2)), int(match.group(3)), posted)
+            if era_year else None
+        )
+        if value:
+            found.add(value)
+            anchors.append((match.end(), value))
+        occupied.append(match.span())
+    for match in COMPACT_DATE_RE.finditer(text):
+        value = _resolved_date(str(2000 + int(match.group(1))), int(match.group(2)), int(match.group(3)), posted)
+        if value:
+            found.add(value)
+            anchors.append((match.end(), value))
+        occupied.append(match.span())
+
     for match in CALENDAR_DATE_RE.finditer(text):
+        if _overlaps(match.span(), occupied):
+            continue
         groups = match.groups()
         explicit = groups[0] or groups[3]
         month, day = int(groups[1] or groups[4]), int(groups[2] or groups[5])
-        year = int(explicit) if explicit else posted.year
-        if not explicit and month < posted.month - 2:
-            year += 1
+        value = _resolved_date(explicit, month, day, posted)
+        if value:
+            found.add(value)
+            anchors.append((match.end(), value))
+
+    # A range/list may omit the second month (8/21-23, 8月22・23日).  Only
+    # reuse the explicitly grounded start month, and reject backwards values
+    # rather than guessing a month rollover.
+    for match in (*ELIDED_DAY_RE.finditer(text), *ADJACENT_WEEKDAY_DAY_RE.finditer(text)):
+        if _overlaps(match.span(), occupied):
+            continue
+        start = _resolved_date(match.group(1), int(match.group(2)), int(match.group(3)), posted)
+        if not start:
+            continue
         try:
-            found.add(date(year, month, day))
+            end = date(start.year, start.month, int(match.group(4)))
         except ValueError:
-            pass
+            continue
+        if end < start:
+            continue
+        found.update((start, end))
+        anchors.append((match.end(), end))
+
+    # A day-only relative expression is accepted only when a prior explicit
+    # date in the same post proves the exact next day.  "本日"/"今週末" and a
+    # bare "明日" remain unexpanded because they would depend on posted_at.
+    anchors.sort(key=lambda row: row[0])
+    for match in RELATIVE_DAY_RE.finditer(text):
+        prior = [value for end, value in anchors if end <= match.start()]
+        if not prior:
+            continue
+        expected = prior[-1] + timedelta(days=1)
+        if expected.day == int(match.group(1)):
+            found.add(expected)
     return [value.isoformat() for value in sorted(found)]
 
 
