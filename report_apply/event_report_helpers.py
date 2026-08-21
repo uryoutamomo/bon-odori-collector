@@ -7,15 +7,45 @@ platform/type or occurrence_songs role/evidence_status -- callers supply
 those, keeping the domain-specific vocabulary out of this module.
 """
 
+import re
 import sqlite3
 from datetime import date
 from difflib import SequenceMatcher
 
 from event_model.event_state_axes import update_occurrence_state_axes
+from event_model.place_dictionary import TOKYO_23_WARDS
 from master_rdb.master_db import json_text, normalize_text, now_utc, stable_id
 
 
 FUZZY_MATCH_MIN_SCORE = 0.45
+
+
+def explicit_tokyo23_ward(*values):
+    """Return one explicitly written Tokyo ward, never a locality guess.
+
+    A bare ward is accepted at the start of a value or after a delimiter (for
+    example ``北区立堀船公園`` or ``会場（北区）``).  Elsewhere the ward must
+    be prefixed by ``東京都``.  This deliberately rejects strings such as
+    ``大阪市北区`` and does not infer wards from town or station names.
+    Conflicting explicit wards fail closed.
+    """
+    found = set()
+    for value in values:
+        text = str(value or "").strip()
+        if not text:
+            continue
+        for ward in TOKYO_23_WARDS:
+            if re.search(rf"(?:^|東京都|[\s（(【［[,、・/：:]){re.escape(ward)}", text):
+                found.add(ward)
+    return next(iter(found)) if len(found) == 1 else None
+
+
+def _resolved_venue_area(area, name, address):
+    explicit_area = str(area or "").strip()
+    if explicit_area:
+        return explicit_tokyo23_ward(explicit_area) or explicit_area, "request"
+    inferred = explicit_tokyo23_ward(name, address)
+    return inferred, "explicit_ward_in_name_or_address" if inferred else None
 
 
 def _rows(conn, query, params=()):
@@ -115,13 +145,25 @@ def ensure_venue(conn, name, *, area=None, address=None, access=None, source_url
     """
     now = now or now_utc()
     normalized = normalize_text(name)
+    resolved_area, area_source = _resolved_venue_area(area, name, address)
     exact = _rows(
         conn,
-        "SELECT venue_id, canonical_name FROM venues WHERE normalized_name = ? AND COALESCE(address, '') = ?",
+        "SELECT venue_id, canonical_name, area FROM venues WHERE normalized_name = ? AND COALESCE(address, '') = ?",
         (normalized, address or ""),
     )
     if len(exact) == 1:
-        return {"status": "reused", "venue_id": exact[0]["venue_id"], "candidates": []}
+        if resolved_area and not str(exact[0].get("area") or "").strip():
+            conn.execute(
+                "UPDATE venues SET area = ?, updated_at = ? WHERE venue_id = ? AND COALESCE(TRIM(area), '') = ''",
+                (resolved_area, now, exact[0]["venue_id"]),
+            )
+        return {
+            "status": "reused",
+            "venue_id": exact[0]["venue_id"],
+            "candidates": [],
+            "area": resolved_area or exact[0].get("area"),
+            "area_source": area_source,
+        }
     if len(exact) > 1:
         return {"status": "ambiguous", "venue_id": None, "candidates": exact}
 
@@ -145,7 +187,7 @@ def ensure_venue(conn, name, *, area=None, address=None, access=None, source_url
           review_status='active',
           updated_at=excluded.updated_at
         """,
-        (venue_id, name, normalized, area, address, access, source_url, now, now),
+        (venue_id, name, normalized, resolved_area, address, access, source_url, now, now),
     )
     conn.execute(
         """
@@ -154,7 +196,13 @@ def ensure_venue(conn, name, *, area=None, address=None, access=None, source_url
         """,
         (venue_id, name, normalized),
     )
-    return {"status": "created", "venue_id": venue_id, "candidates": []}
+    return {
+        "status": "created",
+        "venue_id": venue_id,
+        "candidates": [],
+        "area": resolved_area,
+        "area_source": area_source,
+    }
 
 
 def ensure_series_and_occurrence(

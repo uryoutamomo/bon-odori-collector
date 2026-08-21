@@ -41,8 +41,10 @@ invariants:
   - INV-MST-011
   - INV-MST-012
   - INV-MST-013
+  - INV-MST-014
 verified_by:
   - tests/test_apply_change_requests.py
+  - tests/test_event_report_helpers.py
   - tests/test_master_db_s3_artifact.py
   - tests/test_audit_master_rdb.py
   - tests/test_e2_identity_judgment.py
@@ -54,7 +56,7 @@ verified_by:
   - tests/test_reviewed_change_requests_workflow.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
-updated_for: b5e6c0a
+updated_for: 0c260ee
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -261,6 +263,14 @@ updated_for: b5e6c0a
   `Sync date predictions and canonical event-state axes to master RDB` ステップ
 - **守っているテスト**: `tests/test_sync_event_date_predictions_rdb.py`、
   `tests/test_collect_event_state_axes_wiring.py::CollectEventStateAxesWiringTest::test_prediction_sync_does_not_depend_on_the_state_axes_feature_flag`
+
+### INV-MST-014 会場の区は明記された23区名だけから補完する
+
+- **内容**: `ensure_venue()` は `area` が空のとき、会場名・住所の先頭、区切り記号の直後、または `東京都○○区` として23区名が明記されている場合だけ `venues.area` を補完する。町名・駅名からの逆引きはせず、複数区が衝突する場合と東京都外の同名区は空のままにする。正規化名と住所が完全一致する既存会場の `area` が空なら、同じ規則で再利用時に補完する。
+- **なぜ**: 区が空だと確定済み開催回が公開投影から落ちる一方、町名や駅名からの推測は別会場の誤吸収を見えにくくする。安全に確定できる明記だけを機械化し、残りは公開側の監査へ出す必要がある。
+- **破れたときの症状**: 区名入りの会場を登録しても公開から消える／横浜市港北区や神戸市中央区が東京23区として登録される／新小岩などの駅名だけで区が確定扱いになる。
+- **守っているコード**: `report_apply/event_report_helpers.py` の `explicit_tokyo23_ward()` と `ensure_venue()`
+- **守っているテスト**: `tests/test_event_report_helpers.py::EventReportHelpersTest::test_ensure_venue_fills_area_only_from_an_explicit_ward`、`tests/test_event_report_helpers.py::EventReportHelpersTest::test_ensure_venue_does_not_guess_ward_from_town_station_or_non_tokyo_ward`、`tests/test_event_report_helpers.py::EventReportHelpersTest::test_ensure_venue_backfills_blank_area_when_exact_venue_is_reused`
 
 ## 主要な流れ
 

@@ -20,6 +20,7 @@ invariants:
   - INV-PUB-007
   - INV-PUB-008
   - INV-PUB-009
+  - INV-PUB-010
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
@@ -29,7 +30,7 @@ verified_by:
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: dda7210
+updated_for: 0c260ee
 ---
 
 # 公開サブシステム
@@ -210,6 +211,14 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   `public_json_postprocessors/apply_public_date_predictions.py`
 - **守っているテスト**: `tests/test_export_public_events.py::test_load_rdb_public_date_predictions_matches_public_prediction_shape`、
   `tests/test_apply_public_date_predictions.py::ApplyPublicDatePredictionsTest::test_apply_predictions_adds_date_prediction_without_overwriting_date`
+
+### INV-PUB-010 会場の区未設定で公開対象が落ちるときは件数と対象を必ず出す
+
+- **内容**: `export_public_events.py` は、公開投影と同じ origin・series・venue・lifecycle 条件を満たすのに `venues.area` が空でSQL入口から落ちる開催回を別監査する。件数とイベント名・会場名・occurrence/venue IDを標準出力へ出し、GitHub Actions では `GITHUB_STEP_SUMMARY` にも追記する。既存の「23区外・会場なし」集計とは混ぜない。
+- **なぜ**: `WHERE v.area IN (23区)` の外側で落ちる行は従来の `skipped` 集計へ届かず、レビュー・確定済みの開催回が無言で公開から消えた。区を推測できないことより、工程が止まったことに気づけないほうが危険である。
+- **破れたときの症状**: RDBでは `published`・日付確定なのに公開件数が増えず、exportログの除外件数も0のままになる。
+- **守っているコード**: `export_public_events.py` の `load_public_eligible_missing_venue_area()`、`missing_venue_area_report_lines()`、`append_missing_venue_area_github_summary()` と `main()`
+- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_master_export_reports_public_eligible_row_missing_venue_area`、`tests/test_export_public_events.py::ExportPublicEventsTest::test_missing_venue_area_report_is_appended_to_actions_summary`
 
 ## 主要な流れ
 

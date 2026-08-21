@@ -76,6 +76,9 @@ SERIES_SPLIT_REVIEW_MD = os.path.join(
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
 PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
+PUBLIC_EXCLUDED_LIFECYCLE_STATUSES = (
+    "merged", "duplicate", "rejected", "superseded_by_curated"
+)
 PUBLIC_WEEKDAYS = ["月", "火", "水", "木", "金", "土", "日"]
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
@@ -1047,6 +1050,7 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
             else "NULL AS current_event_state, NULL AS date_certainty_tier,"
         )
         ward_placeholders = ",".join("?" for _ in WARD_ORDER)
+        lifecycle_placeholders = ",".join("?" for _ in PUBLIC_EXCLUDED_LIFECYCLE_STATUSES)
         rows = conn.execute(
             f"""
             SELECT
@@ -1104,7 +1108,7 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
               AND v.review_status = 'active'
               AND o.origin = 'curated'
               AND s.status = 'active'
-              AND o.lifecycle_status NOT IN ('merged', 'duplicate', 'rejected', 'superseded_by_curated')
+              AND o.lifecycle_status NOT IN ({lifecycle_placeholders})
             ORDER BY v.area, v.canonical_name, o.display_name, o.event_year
             """,
             [
@@ -1113,6 +1117,7 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
                 f"{previous_year:04d}-01-01",
                 f"{target_year:04d}-01-01",
                 *WARD_ORDER,
+                *PUBLIC_EXCLUDED_LIFECYCLE_STATUSES,
             ],
         ).fetchall()
 
@@ -1198,6 +1203,66 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
 
     events.sort(key=lambda e: (WARD_ORDER[e["area"]], e["venue"], e["name"]))
     return events, len(covered), 0, 0
+
+
+def load_public_eligible_missing_venue_area(db_path=MASTER_DB):
+    """List rows the public projection silently loses only because area is blank."""
+    lifecycle_placeholders = ",".join("?" for _ in PUBLIC_EXCLUDED_LIFECYCLE_STATUSES)
+    with connect_existing(db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(
+            f"""
+            SELECT
+              o.occurrence_id,
+              s.series_id,
+              o.display_name,
+              o.event_year,
+              o.date_start,
+              o.date_end,
+              o.date_status,
+              o.lifecycle_status,
+              o.source_url,
+              v.venue_id,
+              v.canonical_name AS venue,
+              v.address
+            FROM event_occurrences o
+            JOIN event_series s ON s.series_id = o.series_id
+            JOIN venues v ON v.venue_id = o.venue_id
+            WHERE COALESCE(TRIM(v.area), '') = ''
+              AND v.review_status = 'active'
+              AND o.origin = 'curated'
+              AND s.status = 'active'
+              AND o.lifecycle_status NOT IN ({lifecycle_placeholders})
+            ORDER BY o.event_year DESC, o.date_start, o.display_name, o.occurrence_id
+            """,
+            PUBLIC_EXCLUDED_LIFECYCLE_STATUSES,
+        ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def missing_venue_area_report_lines(rows):
+    lines = [
+        "## 会場の区未設定による公開除外",
+        "",
+        f"公開対象の状態だが `venues.area` が空のため除外: **{len(rows)}件**",
+    ]
+    for row in rows:
+        date_text = row.get("date_start") or "日付なし"
+        lines.append(
+            f"- {row.get('display_name')} ({row.get('event_year')}, {date_text}) / "
+            f"{row.get('venue')} — occurrence `{row.get('occurrence_id')}`, "
+            f"venue `{row.get('venue_id')}`"
+        )
+    return lines
+
+
+def append_missing_venue_area_github_summary(rows, summary_path=None):
+    summary_path = summary_path or os.environ.get("GITHUB_STEP_SUMMARY")
+    if not summary_path:
+        return False
+    with open(summary_path, "a", encoding="utf-8") as handle:
+        handle.write("\n".join(missing_venue_area_report_lines(rows)) + "\n")
+    return True
 
 
 def build_public_events(*, target_year, db_path=MASTER_DB):
@@ -2016,6 +2081,11 @@ def main(argv=None):
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
+    missing_venue_area_rows = (
+        []
+        if PUBLIC_SOURCE in {"notion", "legacy_notion"}
+        else load_public_eligible_missing_venue_area(args.master_db)
+    )
     projection = project_public_events(
         events,
         target_year=args.target_year,
@@ -2069,6 +2139,10 @@ def main(argv=None):
     print(f"  Claude Design貼り付け用JS: {OUT_JS}")
     print(f"  イベント名あり: {named} 件（{covered} 会場）/ 名称確認中フォールバック: {fallback} 件")
     print(f"  月情報なし: {no_month} 件 / 23区外・会場なしで除外したイベント: {skipped} 件")
+    print(f"  会場の区未設定で公開対象から除外: {len(missing_venue_area_rows)} 件")
+    for line in missing_venue_area_report_lines(missing_venue_area_rows)[3:]:
+        print(f"    {line}")
+    append_missing_venue_area_github_summary(missing_venue_area_rows)
     print(f"  曲目ヒントあり: {with_songs} 件 → {OUT_SONGS_JSON}")
 
 
