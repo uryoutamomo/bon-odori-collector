@@ -3299,6 +3299,62 @@
       "site_sha256": "d8549d87ae8159506eb9bcf9217f598d09cd2a29d3f9c368dd3921d6fbcf9d58",
       "collector_sha256": "3881b59318cda7fb2576397c4c0818e003e87044fc931b51ef9ae6f0f37f438d",
       "reason": "2026-08-22: 内田さんの承認。2025-08-22の開催予想を2026-08-21の確定へ更新する。出典が港区の盆踊り情報ブログからX投稿へ置き換わる点は説明済みで、日付が正しくなる利得を優先する判断。出典の置換自体は別途直す。"
+    },
+    {
+      "id": "reviewed-update-20260822s-babe047b11a3",
+      "kind": "same_key_update",
+      "event_key": "上石神井地区祭||上石神井小学校",
+      "site_sha256": "de185c92dcf872a9b561f4b15b046f4a50a07513128aa2be0b23762fb7f6d04c",
+      "collector_sha256": "babe047b11a3cff35455c244e05d1ef0968267e3709f34beea459a2b222e70b8",
+      "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
+    },
+    {
+      "id": "reviewed-update-20260822s-28ec2aff5bf5",
+      "kind": "same_key_update",
+      "event_key": "京橋盆踊り||京橋エドグラン 京橋中央ひろば",
+      "site_sha256": "699e9388724f7e279be498ec8efd08ffc05fd64b19554fb7bcf3f0d561fcccec",
+      "collector_sha256": "28ec2aff5bf5fff973351766a5f3a64bc3cbc49baf042e8b16f0c06e47d65b6a",
+      "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
+    },
+    {
+      "id": "reviewed-update-20260818s-f9399f50ecb8",
+      "kind": "same_key_update",
+      "event_key": "六本木ヒルズ盆踊り||六本木ヒルズアリーナ",
+      "site_sha256": "f998e208cd9e69ddd7fd88c40e608faa50b55d24caa37b2d4adc85220521ab94",
+      "collector_sha256": "f9399f50ecb8392bafde33b4de47f5f374049b663e48ae9edb9f53669a94889b",
+      "reason": "2026-08-18 の PR #245『Publish recalculated song probabilities』で入り、すでに本番サイトへ公開済みの値を、承認の基準として記録する。変化は曲のみ（夏祭り／2025年ヒント → ドラえもん音頭／今年告知）で、2026-08-22 に出典付与を公開しようとした際、2026-08-08 の承認との鎖が切れていてhash_mismatch になったため、こと が git 履歴で変更元を特定して追記した。新しい内容を公開するものではなく、公開済みの現状を基準に据えるだけの記録。"
+    },
+    {
+      "id": "reviewed-update-20260822s-0d0138b88c5c",
+      "kind": "same_key_update",
+      "event_key": "六本木ヒルズ盆踊り||六本木ヒルズアリーナ",
+      "site_sha256": "f9399f50ecb8392bafde33b4de47f5f374049b663e48ae9edb9f53669a94889b",
+      "collector_sha256": "0d0138b88c5c1d8ca566378fe64f50060d3b9b2420535625e6fb82975c38a8dd",
+      "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
+    },
+    {
+      "id": "reviewed-update-20260822s-0207cf57bbc7",
+      "kind": "same_key_update",
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイムひろば",
+      "site_sha256": "3c0629ebd0e63f33996d6018a261869f32c812958f2050481c91ea8270c2e46d",
+      "collector_sha256": "0207cf57bbc775440e0f269461c5f5d3dffb05fcd06378ac47d2b5a0800545e4",
+      "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
+    },
+    {
+      "id": "reviewed-update-20260822s-8259d83ebeb5",
+      "kind": "same_key_update",
+      "event_key": "東砂三丁目町会 盆踊大会||東砂第二公園",
+      "site_sha256": "91b8fdd61b13162fb9258d50071945ab01f966d6182ab77380a292cb91d6fc00",
+      "collector_sha256": "8259d83ebeb56670ebf1918b1720be313c9b12b84cc6c37dfcbfb7d3ddc421fd",
+      "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
+    },
+    {
+      "id": "reviewed-update-20260822s-05345fe697bc",
+      "kind": "same_key_update",
+      "event_key": "雷門盆踊り||浅草雷門前 並木通り",
+      "site_sha256": "f84e2a930bf819c7c9e71f02b116bdb12dedf8ec1fd99cd40f5af85cbdc63233",
+      "collector_sha256": "05345fe697bc3cbc5cbfc2f6e91f1ee26214d64ce178be65f294d2067ee21e87",
+      "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
     }
   ]
 }
