@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 85,
+  "count": 88,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1359,6 +1359,56 @@
         "https://pbs.twimg.com/media/HQKu12haUAAfBQI.jpg"
       ],
       "text": "今日は、JAあきがわ本店の盆踊り！\n各支部の方々が揃いの浴衣に身を包み、入場行進して櫓の周りに輪になり、そのまま盆踊り。\n雨で第3部の２番目、五日市支部までで終了したのが残念。\nセトリの写真はツリーに。 https://t.co/zWQwGaxfwu",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "1f99ee0cbdddba54",
+      "status": "needs_ocr",
+      "account": "@mimi33yuyu26na",
+      "url": "https://x.com/mimi33yuyu26na/status/2090764815593799745",
+      "tweet_id": "2090764815593799745",
+      "date": "2026-08-21T11:35:51+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQPjf30aMAAZMWA.jpg",
+        "https://t.co/W3EqhlNYnz",
+        "pic.x.com/W3EqhlNYnz",
+        "https://pbs.twimg.com/media/HQPjf3vbQAAyVXs.jpg",
+        "https://pbs.twimg.com/media/HQPjf3xb0AAHJFT.jpg"
+      ],
+      "text": "8/21(金)\n本日は芝公園2丁目盆踊りにお邪魔しました✨\n知り合いなんて殆どいないだろうと思っていましたが、何名かいらっしゃって会えて一緒に踊れて嬉しい〜❤️\n微妙に振りが知ってるものとは違って新しい発見！\n素敵な太鼓演奏中に雨が降り始め、最後は短縮。。\nでも楽しいセトリで大満足🫶🏻\n↓セトリ https://t.co/W3EqhlNYnz",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ad858e933733a67f",
+      "status": "needs_ocr",
+      "account": "@kugiyamaguchi",
+      "url": "https://x.com/kugiyamaguchi/status/2090790133432004884",
+      "tweet_id": "2090790133432004884",
+      "date": "2026-08-21T13:16:27+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQP6iukbAAAL2vf.jpg",
+        "https://t.co/2vfReZCddl",
+        "pic.x.com/2vfReZCddl"
+      ],
+      "text": "小島公園盆踊り。\n途中から参戦しましたが、休憩後の2曲目が終わったところで雨天中止。\n\n小島公園では明日も盆踊りがおこなわれます。晴れてほしいです。\n\n#台東区\n#盆踊り https://t.co/2vfReZCddl",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "5884d75ca68dea60",
+      "status": "needs_ocr",
+      "account": "@ara_news01",
+      "url": "https://x.com/ara_news01/status/2090815876337651896",
+      "tweet_id": "2090815876337651896",
+      "date": "2026-08-21T14:58:45+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2090815469678911489/img/7KNok1zJagpYKeTG.jpg",
+        "https://t.co/ZEOUBDvxKZ",
+        "pic.x.com/ZEOUBDvxKZ",
+        "https://pbs.twimg.com/media/HQQRl5GbIAATlFT.jpg",
+        "https://pbs.twimg.com/media/HQQRl46acAATqXt.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2090815469754429440/img/T0gfv154-Fkhahti.jpg"
+      ],
+      "text": "埼玉県蕨市の和楽備神社へ。初詣でお参りしたこともある、地元の神社です。\n「ｼﾞｪﾈﾘｯｸ墨田音頭」こと｢わらび音頭｣を始め、ズンドコ（蕨ver.）など。DHや子供向け曲が一切ない硬派なセトリ、嫌いじゃない(🤟 ॑꒳ ॑   )ｲｪｱ\nズンパ音頭は一部ステップが独特だったな。 https://t.co/ZEOUBDvxKZ",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

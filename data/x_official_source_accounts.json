@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21",
+  "updated_at": "2026-08-22",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -62,6 +62,14 @@
     {
       "handle": "@2019fujiidera",
       "name": "藤井寺市長 岡田一樹",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@2525fuchinobe",
+      "name": "にこにこ星ふちのべ商店会",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -193,6 +201,17 @@
       "source_type": "official",
       "linked_events": [
         {
+          "series_id": "series_c0329dae985bf278",
+          "series_name": "花保町会の盆踊り",
+          "ward": "足立区",
+          "confidence": "probable",
+          "evidence_urls": [
+            "https://x.com/adachi_city/status/2089981991060210144",
+            "https://x.com/adachi_city/status/2090344347850191120",
+            "https://x.com/adachi_city/status/2090650162008084612"
+          ]
+        },
+        {
           "series_id": "series_aaa0df387a977001",
           "series_name": "東和二丁目自治会・東和二丁目西自治会 納涼盆踊り大会",
           "ward": "足立区",
@@ -203,8 +222,7 @@
         }
       ],
       "decided_by": "machine",
-      "tier": "pending_review",
-      "pending_since": "2026-08-13"
+      "tier": "active"
     },
     {
       "handle": "@ai__fukumoto",
@@ -225,6 +243,14 @@
     {
       "handle": "@ajw017ogqjk7hrm",
       "name": "大田とみひこ 名古屋市西区市会議員 減税日本",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@ak148usagi",
+      "name": "夏目亜季＠荒川区議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -370,6 +396,14 @@
     {
       "handle": "@ayakayasikida",
       "name": "やしきだ綾香 無所属　江東区議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@ayako_k_arakawa",
+      "name": "北村あや子 🌈荒川区議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1027,6 +1061,14 @@
     {
       "handle": "@haruka_1023",
       "name": "吉村はるか | 衆議院議員 | 福岡10区（門司区・小倉南区・小倉北区）",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@haruka_hasuda",
+      "name": "豊嶋はるか＠蓮田市議会議員（２期目）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1825,6 +1867,14 @@
     {
       "handle": "@jun_taitou",
       "name": "鈴木純(前 東京都議会議員)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@junichi_shimoda",
+      "name": "下田 純一（西東京市議会議員／立憲民主党）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -3116,6 +3166,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@megu5182",
+      "name": "池田めぐみ【さいたま市議会議員】元TBSラジオパーソナリティ",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@meidaisai_nu",
       "name": "名大祭実行委員会",
       "source_type": "official",
@@ -3597,6 +3655,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@nakatsuma",
+      "name": "中妻じょうた 板橋区議会議員(ジモト・コモンズ)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@nakayamashizu",
       "name": "なかやましづ｜東京都議会議員(板橋区選出)",
       "source_type": "official",
@@ -3940,6 +4006,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@numamotosaeka",
+      "name": "沼元さえか【羽曳野市議会議員】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@numata_takako",
       "name": "沼田たか子 葛飾区議会議員",
       "source_type": "official",
@@ -4177,6 +4251,15 @@
       "source_type": "official",
       "linked_events": [
         {
+          "series_id": "series_b1dcdd3f0dd92fcf",
+          "series_name": "団地祭",
+          "ward": "大田区",
+          "confidence": "confirmed",
+          "evidence_urls": [
+            "https://x.com/otafull/status/2089910221787545811"
+          ]
+        },
+        {
           "series_id": "series_62fc7a282c40f31b",
           "series_name": "仲六郷一丁目町会 納涼会",
           "ward": "大田区",
@@ -4219,6 +4302,14 @@
     {
       "handle": "@otakanko2",
       "name": "【公式】大田観光協会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@otani_shige",
+      "name": "大谷しげのり 【松戸市議会議員】",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5598,6 +5689,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@toshiko_nakano",
+      "name": "中野としこ 大阪府議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@toshimakukanko",
       "name": "豊島区観光協会 観光情報センター",
       "source_type": "official",
@@ -5773,6 +5872,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@ueda_politics",
+      "name": "上田かずき｜中央区議",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@uedareiko",
       "name": "上田令子(東京都議/自由を守る会代表）",
       "source_type": "official",
@@ -5855,6 +5962,14 @@
     {
       "handle": "@waseda_yuki",
       "name": "早稲田ゆき 衆議院議員 神奈川4区(鎌倉/逗子/葉山/横浜市栄区) 中道改革連合",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@washidamao",
+      "name": "わしだまお　尼崎市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",

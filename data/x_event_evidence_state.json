@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2025-08-28T00:00:00+00:00",
-  "window_end": "2025-08-31T00:00:00+00:00",
+  "window_start": "2025-08-31T00:00:00+00:00",
+  "window_end": "2025-09-03T00:00:00+00:00",
   "selected_handles": [
     "@natsutr_bon",
     "@uja31",
@@ -35,18 +35,18 @@
     "@okihcim4317"
   ],
   "selection_id": "f6961e85386500a6db070adb9824d65967ce8eccf953bcb89d30ccfe90674bbb",
-  "batch_index": 1,
+  "batch_index": 0,
   "batch_cursors": {},
   "completed_batches": [
     0,
     1
   ],
-  "pages_completed": 11,
-  "tweets_scanned": 168,
-  "evidence_detected": 33,
+  "pages_completed": 8,
+  "tweets_scanned": 106,
+  "evidence_detected": 20,
   "pending_evidence": [],
-  "started_at": "2026-08-21T07:14:32.902307+00:00",
-  "updated_at": "2026-08-21T07:15:16.384799+00:00",
+  "started_at": "2026-08-22T07:07:05.057720+00:00",
+  "updated_at": "2026-08-22T07:07:29.283187+00:00",
   "window_history": [
     {
       "window_start": "2025-08-16T00:00:00+00:00",
@@ -91,10 +91,21 @@
       "pages_completed": 14,
       "tweets_scanned": 217,
       "evidence_detected": 43
+    },
+    {
+      "window_start": "2025-08-28T00:00:00+00:00",
+      "window_end": "2025-08-31T00:00:00+00:00",
+      "covered_until": "2025-08-31T00:00:00+00:00",
+      "completed_at": "2026-08-21T07:15:16.387499+00:00",
+      "reviewed_at": "2026-08-22T07:07:05.057720+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 11,
+      "tweets_scanned": 168,
+      "evidence_detected": 33
     }
   ],
-  "previous_covered_until": "2025-08-28T00:00:00+00:00",
-  "completed_at": "2026-08-21T07:15:16.387499+00:00",
-  "covered_until": "2025-08-31T00:00:00+00:00",
-  "pending_cleared_at": "2026-08-21T07:15:21.828989+00:00"
+  "previous_covered_until": "2025-08-31T00:00:00+00:00",
+  "completed_at": "2026-08-22T07:07:29.285406+00:00",
+  "covered_until": "2025-09-03T00:00:00+00:00",
+  "pending_cleared_at": "2026-08-22T07:07:32.507173+00:00"
 }
