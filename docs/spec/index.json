@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T06:20:48Z",
-  "generated_for_commit": "9b441ad",
+  "generated_at": "2026-08-22T07:52:59Z",
+  "generated_for_commit": "c3f2d25",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -677,9 +677,14 @@
         "venues/export_public_venues.py"
       ],
       "staleness": null,
-      "version": "1.15",
-      "revision_count": 16,
+      "version": "1.16",
+      "revision_count": 17,
       "history": [
+        {
+          "commit": "c3f2d25",
+          "date": "2026-08-22",
+          "subject": "Retire superseded rename approvals (#253)"
+        },
         {
           "commit": "21f9abf",
           "date": "2026-08-22",
@@ -734,11 +739,6 @@
           "commit": "b9ff2f0",
           "date": "2026-08-16",
           "subject": "fix: close X song materialization safety gaps"
-        },
-        {
-          "commit": "87489f5",
-          "date": "2026-08-16",
-          "subject": "Close E2-S replay and publication gates"
         }
       ]
     },
