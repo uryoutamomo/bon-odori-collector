@@ -413,6 +413,87 @@ class ApplyChangeRequestsTests(unittest.TestCase):
             ],
         )
 
+    def test_confirm_current_year_date_does_not_replace_web_source_with_social_post(self):
+        official_url = "https://shinjukuchuo-park.jp/event/bon-odori/"
+        incoming_url = "https://x.com/tanaehis/status/2089922387919949979"
+        self.conn.execute(
+            "UPDATE event_occurrences SET source_url = ? WHERE occurrence_id = 'occ_1'",
+            (official_url,),
+        )
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "keep_official_source",
+                    "change_type": "confirm_current_year_date",
+                    "occurrence_id": "occ_1",
+                    "event_year": 2026,
+                    "date_start": "2026-08-22",
+                    "source": {
+                        "url": incoming_url,
+                        "kind": "official_current_year",
+                        "title": "X投稿で日程を確認",
+                    },
+                }
+            ],
+        }
+
+        applied, issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-08-21T00:00:00+00:00",
+        )
+
+        self.assertEqual(issues, [])
+        occurrence_url = self.conn.execute(
+            "SELECT source_url FROM event_occurrences WHERE occurrence_id = 'occ_1'"
+        ).fetchone()[0]
+        self.assertEqual(occurrence_url, official_url)
+        self.assertNotIn("source_url", applied["requests_applied"][0]["changed_fields"])
+        evidence = self.conn.execute(
+            """
+            SELECT e.url, l.target
+            FROM evidence_items e
+            JOIN occurrence_evidence_links l USING (evidence_id)
+            WHERE l.occurrence_id = 'occ_1' AND e.url = ?
+            """,
+            (incoming_url,),
+        ).fetchone()
+        self.assertEqual(tuple(evidence), (incoming_url, "date_and_venue"))
+
+    def test_confirm_current_year_date_replaces_social_source_with_web_source(self):
+        incoming_url = "https://shinjukuchuo-park.jp/event/bon-odori/"
+        self.conn.execute(
+            "UPDATE event_occurrences SET source_url = ? WHERE occurrence_id = 'occ_1'",
+            ("https://x.com/example/status/1",),
+        )
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "upgrade_to_web_source",
+                    "change_type": "confirm_current_year_date",
+                    "occurrence_id": "occ_1",
+                    "event_year": 2026,
+                    "date_start": "2026-08-22",
+                    "source": {"url": incoming_url, "kind": "official_current_year"},
+                }
+            ],
+        }
+
+        applied, issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-08-21T00:00:00+00:00",
+        )
+
+        self.assertEqual(issues, [])
+        occurrence_url = self.conn.execute(
+            "SELECT source_url FROM event_occurrences WHERE occurrence_id = 'occ_1'"
+        ).fetchone()[0]
+        self.assertEqual(occurrence_url, incoming_url)
+        self.assertIn("source_url", applied["requests_applied"][0]["changed_fields"])
+
     def test_applies_four_finite_change_types(self):
         payload = {
             "request_type": "rdb_change_requests",

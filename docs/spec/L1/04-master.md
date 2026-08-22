@@ -26,6 +26,7 @@ owns:
   - scripts/verify_review_backlog_application.py
   - .github/workflows/apply-reviewed-change-requests.yml
 depends_on:
+  - L1-collection
   - L1-platform
 invariants:
   - INV-MST-001
@@ -41,6 +42,7 @@ invariants:
   - INV-MST-011
   - INV-MST-012
   - INV-MST-013
+  - INV-MST-014
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -261,6 +263,21 @@ updated_for: b5e6c0a
   `Sync date predictions and canonical event-state axes to master RDB` ステップ
 - **守っているテスト**: `tests/test_sync_event_date_predictions_rdb.py`、
   `tests/test_collect_event_state_axes_wiring.py::CollectEventStateAxesWiringTest::test_prediction_sync_does_not_depend_on_the_state_axes_feature_flag`
+
+### INV-MST-014 開催日根拠の追加で公開用の代表出典を格下げしない
+
+- **内容**: `confirm_current_year_date` は新しいURLを `evidence_items` と開催回への根拠リンクへ必ず保存する。
+  ただし単数の `event_occurrences.source_url` は公開用の代表出典として扱い、通常のWebページ、
+  公式・主催者X、未登録SNSの順で品質を比較する。新しいURLの品質が明確に上がる場合だけ差し替え、
+  同等以下なら既存URLを残す。
+- **なぜ**: `source_url` を無条件に上書きすると、公式ページが私人や第三者のX投稿へ置き換わり、
+  公開exportが元の公式URLを復元できない。新しい根拠を記録することと、公開する代表出典を選ぶことは別である。
+- **破れたときの症状**: 開催日を追加確認した後、公開ページの「公式告知あり」が消える、
+  または公式サイトへのリンクがSNS投稿へ置き換わる。
+- **守っているコード**: `report_apply/apply_change_requests.py` の
+  `_preferred_representative_source()` と `apply_confirm_current_year_date()`
+- **守っているテスト**: `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_confirm_current_year_date_does_not_replace_web_source_with_social_post`、
+  `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_confirm_current_year_date_replaces_social_source_with_web_source`
 
 ## 主要な流れ
 
