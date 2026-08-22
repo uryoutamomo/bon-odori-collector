@@ -2645,10 +2645,10 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
-    "public_category": "upcoming",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-08-21",
     "recurrence_label": "2026年開催終了",
@@ -2663,7 +2663,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-21"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "桜まつり",

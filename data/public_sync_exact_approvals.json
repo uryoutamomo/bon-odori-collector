@@ -3355,6 +3355,14 @@
       "site_sha256": "f84e2a930bf819c7c9e71f02b116bdb12dedf8ec1fd99cd40f5af85cbdc63233",
       "collector_sha256": "05345fe697bc3cbc5cbfc2f6e91f1ee26214d64ce178be65f294d2067ee21e87",
       "reason": "2026-08-22: 内田さん承認。X投稿由来の開催確認を出典として追加する。PR #252 により既存の公式URLは代表として保持され、全項目の差分で出典URLが消えるイベントが0件であることを確認済み。"
+    },
+    {
+      "id": "reviewed-update-20260822e-e7823dc11301",
+      "kind": "same_key_update",
+      "event_key": "ハマサイトの夏祭り||ハマサイト前広場・汐留ビルディング外構",
+      "site_sha256": "3881b59318cda7fb2576397c4c0818e003e87044fc931b51ef9ae6f0f37f438d",
+      "collector_sha256": "e7823dc113018c7a161307aed64e990cdad2840a8d3f60c4ffb32f8ec00fe11a",
+      "reason": "2026-08-22: 開催日を過ぎたことによる表示状態の移行（変更項目: current_event_state, display_tier, public_category）。出典・日付・説明は変わらない。内田さんの指示で出典付与7件を当て直した際の同時差分。"
     }
   ]
 }
