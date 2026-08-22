@@ -115,9 +115,12 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   `HIGH_RISK_FIELDS` の差分が0件だと機械確認できたときだけ警告へ下げる。高リスク差分が1件でもある場合、または
   分類結果の必要fieldが欠ける場合は、従来どおり `reviewed_exact_approval_mismatch` で閉じる。承認台帳は追記型なので、
   同じイベントに `A → B → C` の承認履歴がある場合、Cがすでにsiteへ到達すると古い `A → B` は現値と一致しない。
-  このときだけ、後続の同一キー承認が「前のcollector hash = 次のsite hash」で連結し、その後続承認が適用済みだと
-  機械確認できれば、古い承認を `superseded` として失敗数から除外する。現在のcollectorとsiteの差分分類は省略せず、
-  detail・日付・出典などの未承認変更は引き続きblockする。
+  このときだけ、後続の同一キー承認の「event key + site hash」が前の承認の「到達先キー + collector hash」と一致し、
+  その後続承認が適用済みだと機械確認できれば、古い承認を `superseded` として失敗数から除外する。
+  前の承認が `key_replacement` なら到達先には `collector_event_key` を使うため、改名後の同一キー更新へ鎖をつなげられる。
+  hashだけが一致してもevent keyが一致しなければ退役しない。現在のcollectorとsiteの差分分類は省略せず、
+  detail・日付・出典などの未承認変更は引き続きblockする。既存の承認記録は書き換えず、追記された後続承認だけを
+  退役の証拠に使う。
 - **なぜ**: 件数のズレは、後処理のどれかが動かなかったか、想定外の削除が起きたことの最も分かりやすい兆候だから。
   個々の差分を見る前に、まず総数で異常を捕まえる。
 - **破れたときの症状**: 公開件数が急に減る・増える。過去に、日次が止まったまま同期だけ進んで
@@ -126,6 +129,8 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **守っているテスト**: `tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_allows_song_only_update_when_old_exact_approval_hash_is_stale`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_allows_superseded_approval_chain_to_flow_into_ended_transition`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_key_replacement_is_superseded_by_proven_same_key_successor`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_key_replacement_is_not_superseded_without_exact_successor_hash`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_superseded_approval_chain_does_not_hide_current_detail_drift`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_rejects_drift_before_the_reviewed_value_was_published`
 
