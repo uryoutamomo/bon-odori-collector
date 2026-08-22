@@ -69,6 +69,18 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             "collector_sha256": canonical_event_sha256(reviewed_collector),
         }
 
+    def key_replacement_approval(self, reviewed_site, reviewed_collector):
+        return {
+            "id": "replacement-1",
+            "kind": "key_replacement",
+            "site_event_key": f"{reviewed_site['name']}||{reviewed_site['venue']}",
+            "collector_event_key": (
+                f"{reviewed_collector['name']}||{reviewed_collector['venue']}"
+            ),
+            "site_sha256": canonical_event_sha256(reviewed_site),
+            "collector_sha256": canonical_event_sha256(reviewed_collector),
+        }
+
     def published_event(self):
         return {
             "name": "承認済み盆踊り",
@@ -230,6 +242,53 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
 
         self.assertEqual(reviewed["summary"]["status"], "block")
         self.assertEqual(reviewed["summary"]["status_counts"], {"hash_mismatch": 1})
+
+    def test_key_replacement_is_superseded_by_proven_same_key_successor(self):
+        old_site = {"name": "第15回 盆踊り", "venue": "大学", "detail": "旧名"}
+        renamed = {"name": "盆踊り", "venue": "大学", "detail": "改名時"}
+        published = {**renamed, "detail": "後続の承認値"}
+        collector = {**published, "display_tier": "ended"}
+        replacement = self.key_replacement_approval(old_site, renamed)
+        successor = self.same_key_approval(renamed, published)
+        successor["id"] = "review-2"
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [replacement, successor],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([collector], [published], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "pass")
+        self.assertEqual(
+            reviewed["summary"]["status_counts"],
+            {"superseded": 1, "consumed_at_site": 1},
+        )
+        self.assertEqual(
+            reviewed["summary"]["results"][0]["superseded_by"], "review-2"
+        )
+
+    def test_key_replacement_is_not_superseded_without_exact_successor_hash(self):
+        old_site = {"name": "第15回 盆踊り", "venue": "大学", "detail": "旧名"}
+        renamed = {"name": "盆踊り", "venue": "大学", "detail": "改名時"}
+        unrelated_start = {**renamed, "detail": "別の出発値"}
+        published = {**renamed, "detail": "後続の承認値"}
+        collector = {**published, "display_tier": "ended"}
+        replacement = self.key_replacement_approval(old_site, renamed)
+        successor = self.same_key_approval(unrelated_start, published)
+        successor["id"] = "review-2"
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [replacement, successor],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([collector], [published], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "block")
+        self.assertEqual(
+            reviewed["summary"]["status_counts"],
+            {"hash_mismatch": 1, "consumed_at_site": 1},
+        )
+        self.assertNotIn("superseded_by", reviewed["summary"]["results"][0])
 
     def test_exact_addition_approval_adds_collector_only_event_at_pinned_hash(self):
         collector_event = {"name": "新規盆踊り", "venue": "商店街", "display_tier": "confirmed"}

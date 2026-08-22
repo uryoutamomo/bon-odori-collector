@@ -78,9 +78,11 @@ def mark_superseded_same_key_approvals(results, approvals):
     Approval manifests are append-only, so one event can have a chain such as
     A -> B -> C.  Once C is live, the A -> B entry no longer matches either
     current payload.  That is expected history, not unreviewed drift.  Only a
-    later, value-pinned same-key approval whose reviewed site hash is the
-    older collector hash may supersede it.  The latest collector-vs-site drift
-    is still left to the normal high-risk classifier.
+    later, value-pinned same-key approval whose reviewed event key and site
+    hash equal the older approval's arrival key and hash may supersede it.  A
+    key replacement arrives at ``collector_event_key`` instead of
+    ``event_key``; that is the only extra case handled here.  The latest
+    collector-vs-site drift is still left to the normal high-risk classifier.
     """
     proven_successors = {}
     safe_statuses = {"applied", "consumed_at_site", "already_synced", "superseded"}
@@ -88,18 +90,27 @@ def mark_superseded_same_key_approvals(results, approvals):
     for index in range(len(results) - 1, -1, -1):
         approval = approvals[index] if index < len(approvals) else None
         result = results[index]
-        if not isinstance(approval, dict) or approval.get("kind") != "same_key_update":
+        if not isinstance(approval, dict):
             continue
 
-        event_key_value = str(approval.get("event_key") or "")
+        kind = approval.get("kind")
+        if kind == "same_key_update":
+            event_key_value = str(approval.get("event_key") or "")
+            arrival_key = event_key_value
+        elif kind == "key_replacement":
+            event_key_value = ""
+            arrival_key = str(approval.get("collector_event_key") or "")
+        else:
+            continue
+
         site_hash = str(approval.get("site_sha256") or "")
-        collector_hash = str(approval.get("collector_sha256") or "")
+        arrival_hash = str(approval.get("collector_sha256") or "")
         if (
             result.get("status") == "hash_mismatch"
-            and event_key_value
-            and collector_hash
+            and arrival_key
+            and arrival_hash
         ):
-            successor_id = proven_successors.get((event_key_value, collector_hash))
+            successor_id = proven_successors.get((arrival_key, arrival_hash))
             if successor_id:
                 result["status"] = "superseded"
                 result["superseded_by"] = successor_id
