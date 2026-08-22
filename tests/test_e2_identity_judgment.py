@@ -15,7 +15,7 @@ from event_model.local_judgment_migration import migrate_event_inbox_candidate, 
 from master_rdb.master_db import init_db, normalize_text, stable_id
 from report_apply.apply_change_requests import apply_one_request, validate_payload
 from review_inbox_adapters.apply_judgment_results import run as apply_results
-from review_inbox_adapters.build_change_requests_from_judgment import build_payload, main as convert_main, run as convert_run
+from review_inbox_adapters.build_change_requests_from_judgment import _venue_block, build_payload, main as convert_main, run as convert_run
 from review_inbox_adapters.build_event_inbox_candidates import run as build_candidates
 from review_inbox_adapters.build_judgment_packets import run as build_packets
 from review_inbox_adapters.local_judgment_contract import ACTION_REGISTRY, IDENTITY_MATCH_NONE, TRANSITIONS
@@ -26,7 +26,7 @@ STAMP = "2026-01-01T00:00:00+00:00"
 NONE = IDENTITY_MATCH_NONE
 
 
-def _seed(root, *, existing=True, venue_name="試験公園", series_name="試験盆踊り"):
+def _seed(root, *, existing=True, venue_name="試験公園", venue_area=None, series_name="試験盆踊り"):
     db = root / "master.sqlite"
     conn = init_db(db)
     migrate_local_judgment_contract(conn)
@@ -39,7 +39,10 @@ def _seed(root, *, existing=True, venue_name="試験公園", series_name="試験
     conn.commit()
     conn.close()
     notice = root / "notice.json"
-    notice.write_text(json.dumps({"report_type": "official_notice", "source": {"report_id": "notice", "raw_text": "text", "source_url": "https://example.test/notice"}, "events": [{"action": "register_new", "event_name_hint": "試験盆踊り", "event_year": 2099, "date_start": "2099-08-01", "venue": {"name": "試験公園"}}]}, ensure_ascii=False), encoding="utf-8")
+    venue = {"name": venue_name}
+    if venue_area is not None:
+        venue["area"] = venue_area
+    notice.write_text(json.dumps({"report_type": "official_notice", "source": {"report_id": "notice", "raw_text": "text", "source_url": "https://example.test/notice"}, "events": [{"action": "register_new", "event_name_hint": "試験盆踊り", "event_year": 2099, "date_start": "2099-08-01", "venue": venue}]}, ensure_ascii=False), encoding="utf-8")
     build_candidates(SimpleNamespace(report=[notice], report_dir=[], db=db, out_db=db, out_json=root / "c.json", out_md=root / "c.md", max_candidates=10, apply=True, confirm="APPLY EVENT INBOX CANDIDATES", no_auto_migrate=False, include_expired=False))
     return db
 
@@ -236,6 +239,22 @@ class ConversionTest(unittest.TestCase):
             _report, payload = _convert(root, self._accepted(root, occurrence_match=NONE))
             self.assertEqual(payload["requests"][0]["venue"], {"venue_id": "ven_seed"})
 
+    def test_new_venue_carries_only_a_canonical_tokyo_23_area(self):
+        identity = {"occurrence_match": NONE, "series_match": NONE, "venue_match": NONE}
+
+        self.assertEqual(
+            _venue_block(identity, {"venue": {"name": "花保広場", "area": "足立区"}}),
+            {"name": "花保広場", "area": "足立区"},
+        )
+        self.assertEqual(
+            _venue_block(identity, {"venue": {"name": "横浜公園", "area": "横浜市"}}),
+            {"name": "横浜公園"},
+        )
+        self.assertEqual(
+            _venue_block(identity, {"venue": {"name": "区不明公園", "area": ""}}),
+            {"name": "区不明公園"},
+        )
+
     def test_output_carries_no_dry_run_only(self):
         """判断台帳を通っているので、コンソール直通の経路と違い昇格を二重に求めない。"""
         with tempfile.TemporaryDirectory() as temp:
@@ -264,7 +283,7 @@ class ConversionTest(unittest.TestCase):
 
     def test_user_acceptance_of_a_new_series_becomes_create_event_series(self):
         with tempfile.TemporaryDirectory() as temp:
-            root = Path(temp); db = _seed(root, existing=False); packet = _packet(root, db)
+            root = Path(temp); db = _seed(root, existing=False, venue_area="千代田区"); packet = _packet(root, db)
             _report, args = _apply(root, packet, _identity(packet))
             conn = sqlite3.connect(args.out_db); conn.row_factory = sqlite3.Row
             agent = dict(conn.execute("SELECT * FROM canonical_decision_ledger").fetchone())
@@ -284,7 +303,7 @@ class ConversionTest(unittest.TestCase):
             request = payload["requests"][0]
             self.assertEqual(request["change_type"], "create_event_series")
             self.assertEqual(request["series_name"], "試験盆踊り")
-            self.assertEqual(request["venue"], {"name": "試験公園"})
+            self.assertEqual(request["venue"], {"name": "試験公園", "area": "千代田区"})
             validate_payload(payload)
 
 
@@ -315,6 +334,28 @@ class CreateEventSeriesTest(unittest.TestCase):
             self.assertTrue(applied["series_created"])
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM event_series").fetchone()[0], 2)
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM event_occurrences").fetchone()[0], 1)
+
+    def test_create_event_series_persists_the_reviewed_venue_area(self):
+        with tempfile.TemporaryDirectory() as temp:
+            conn = self._db(Path(temp)); conn.row_factory = sqlite3.Row
+            applied, issues = apply_one_request(
+                conn,
+                self._request(venue={"name": "新設公園", "area": "足立区"}),
+                0,
+                STAMP,
+            )
+
+            self.assertEqual(issues, [])
+            area = conn.execute(
+                """
+                SELECT v.area
+                FROM event_occurrences o
+                JOIN venues v ON v.venue_id = o.venue_id
+                WHERE o.occurrence_id = ?
+                """,
+                (applied["occurrence_id"],),
+            ).fetchone()[0]
+            self.assertEqual(area, "足立区")
 
     def test_create_event_series_never_touches_an_existing_series(self):
         """既存 series が1行も書き換わらない（register_new の暗黙上書きとの決定的な違い）。"""

@@ -62,6 +62,7 @@ invariants:
   - INV-RVW-020
   - INV-RVW-021
   - INV-RVW-022
+  - INV-RVW-023
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -76,7 +77,7 @@ verified_by:
   - tests/test_review_inbox_youtube_adapter.py
   - tests/test_x_candidate_backlog.py
   - tests/test_run_review_inbox_x_gap_scheduled.py
-updated_for: c2364ab
+updated_for: bbf0900
 ---
 
 # 人のレビュー運用サブシステム
@@ -370,6 +371,14 @@ updated_for: c2364ab
 - **守っているテスト**: `tests/test_x_candidate_backlog.py::test_daily_snapshot_is_an_explicit_partial_cohort_and_queueing_is_post_write`、
   `tests/test_run_review_inbox_x_gap_scheduled.py::test_scheduled_cohort_writes_five_and_only_then_marks_them_in_progress`、
   `tests/test_run_review_inbox_x_gap_scheduled.py::test_cas_conflict_leaves_candidates_unprocessed`
+
+### INV-RVW-023 新規会場の確認済み23区は変更要求まで欠落なく運ぶ
+
+- **内容**: E2の同一性判定で新規会場を選び、人のacceptを経て変更要求へ変換するとき、`proposal.venue.area` が東京23区の正規名なら `venue.name` と一緒に運ぶ。空欄・23区外・自由記述は運ばず、既存会場を選んだ枝は従来どおり `venue_id` だけを運ぶ。
+- **なぜ**: E0XとE2が区を保持していても、`_venue_block()` が名前だけへ縮めると書き込み直前に区が消え、確定済み開催回が公開の23区フィルタから黙って落ちる。下流で町名や駅名から推測するのではなく、レビュー済みの構造化値を失わず渡す必要がある。
+- **破れたときの症状**: E2パケットには8会場すべての区があるのに、change requestと `venues.area` は空になり、公開イベントが1件も増えない。
+- **守っているコード**: `review_inbox_adapters/build_change_requests_from_judgment.py` の `_venue_block()`
+- **守っているテスト**: `tests/test_e2_identity_judgment.py::ConversionTest::test_new_venue_carries_only_a_canonical_tokyo_23_area`、`tests/test_e2_identity_judgment.py::ConversionTest::test_user_acceptance_of_a_new_series_becomes_create_event_series`、`tests/test_e2_identity_judgment.py::CreateEventSeriesTest::test_create_event_series_persists_the_reviewed_venue_area`
 
 ## 主要な流れ
 

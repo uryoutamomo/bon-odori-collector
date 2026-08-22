@@ -1,4 +1,5 @@
 import json
+import inspect
 import sqlite3
 from contextlib import closing
 import unittest
@@ -20,8 +21,11 @@ from export_public_events import (
     find_series_split_review_candidates,
     fixed_date_rule_from_props,
     load_rdb_public_date_predictions,
+    load_public_eligible_missing_venue_area,
+    main as export_main,
     merge_prediction_payloads,
     merge_song_occurrence_hints,
+    append_missing_venue_area_github_summary,
     parse_youtube_evidence,
     prediction_payload_for_target_year,
     public_export_today,
@@ -295,6 +299,78 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertIsNone(events[0]["date"])
         self.assertIsNone(events[0]["date_end"])
+
+    def test_master_export_reports_public_eligible_row_missing_venue_area(self):
+        with TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            conn = sqlite3.connect(db)
+            try:
+                self._create_minimal_master_export_schema(conn)
+                conn.execute(
+                    "INSERT INTO event_series VALUES ('ser_1', '区未設定盆踊り', '[8]', NULL, 'active')"
+                )
+                conn.execute(
+                    "INSERT INTO venues VALUES ('ven_1', '区未設定公園', '', '中', '', '', '', '', NULL, NULL, 'active')"
+                )
+                conn.execute(
+                    """
+                    INSERT INTO event_occurrences VALUES (
+                      'occ_1', 'ser_1', 'ven_1', '区未設定盆踊り', 2026,
+                      '2026-08-22', NULL, 'confirmed', 'published', 'confirmed',
+                      'official_current_year', 'https://example.com', NULL, '', 'curated'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO event_occurrences VALUES (
+                      'occ_merged', 'ser_1', 'ven_1', '統合済み盆踊り', 2026,
+                      '2026-08-23', NULL, 'confirmed', 'merged', 'confirmed',
+                      'official_current_year', 'https://example.com/merged', NULL, '', 'curated'
+                    )
+                    """
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            events, _, _, skipped = build_public_events_from_master(db, target_year=2026)
+            excluded = load_public_eligible_missing_venue_area(db)
+
+        self.assertEqual(events, [])
+        self.assertEqual(skipped, 0)
+        self.assertEqual(len(excluded), 1)
+        self.assertEqual(excluded[0]["occurrence_id"], "occ_1")
+        self.assertEqual(excluded[0]["venue_id"], "ven_1")
+
+    def test_export_main_wires_missing_venue_area_audit_to_actions_summary(self):
+        source = inspect.getsource(export_main)
+
+        self.assertIn("load_public_eligible_missing_venue_area(args.master_db)", source)
+        self.assertIn("append_missing_venue_area_github_summary(missing_venue_area_rows)", source)
+
+    def test_missing_venue_area_report_is_appended_to_actions_summary(self):
+        with TemporaryDirectory() as tmp:
+            summary = Path(tmp) / "summary.md"
+            written = append_missing_venue_area_github_summary(
+                [{
+                    "display_name": "区未設定盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2026-08-22",
+                    "venue": "区未設定公園",
+                    "occurrence_id": "occ_1",
+                    "venue_id": "ven_1",
+                }],
+                summary,
+            )
+
+            text = summary.read_text(encoding="utf-8")
+
+        self.assertTrue(written)
+        self.assertIn("venues.area", text)
+        self.assertIn("**1件**", text)
+        self.assertIn("区未設定盆踊り", text)
+        self.assertIn("occ_1", text)
 
     def _create_minimal_master_export_schema(self, conn):
         conn.executescript(
