@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T13:24:29Z",
-  "generated_for_commit": "708e24a",
+  "generated_at": "2026-08-22T01:38:53Z",
+  "generated_for_commit": "21f9abf",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -276,7 +276,8 @@
         "INV-RVW-019",
         "INV-RVW-020",
         "INV-RVW-021",
-        "INV-RVW-022"
+        "INV-RVW-022",
+        "INV-RVW-023"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -293,7 +294,7 @@
         "tests/test_x_candidate_backlog.py",
         "tests/test_run_review_inbox_x_gap_scheduled.py"
       ],
-      "updated_for": "c2364ab",
+      "updated_for": "bbf0900",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -373,13 +374,15 @@
         "stage_rare_signal_backcheck_reviews.py",
         "x_candidate_backlog.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 8
-      },
-      "version": "1.12",
-      "revision_count": 13,
+      "staleness": null,
+      "version": "1.13",
+      "revision_count": 14,
       "history": [
+        {
+          "commit": "21f9abf",
+          "date": "2026-08-22",
+          "subject": "E2の会場区を公開経路まで保持し、欠落を可視化する (#251)"
+        },
         {
           "commit": "b0c38ab",
           "date": "2026-08-18",
@@ -434,11 +437,6 @@
           "commit": "8e7de2a",
           "date": "2026-08-14",
           "subject": "ローカル判断の実行経路（J0-read）：候補をLLMへ渡し、判断を台帳へ残す (#206)"
-        },
-        {
-          "commit": "a855a9a",
-          "date": "2026-08-14",
-          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         }
       ]
     },
@@ -642,7 +640,8 @@
         "INV-PUB-006",
         "INV-PUB-007",
         "INV-PUB-008",
-        "INV-PUB-009"
+        "INV-PUB-009",
+        "INV-PUB-010"
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
@@ -654,7 +653,7 @@
         "tests/test_apply_public_date_predictions.py",
         "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "dda7210",
+      "updated_for": "bbf0900",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -675,13 +674,15 @@
         "public_json_postprocessors/review_missing_occurrence_venues.py",
         "venues/export_public_venues.py"
       ],
-      "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
-      },
-      "version": "1.14",
-      "revision_count": 15,
+      "staleness": null,
+      "version": "1.15",
+      "revision_count": 16,
       "history": [
+        {
+          "commit": "21f9abf",
+          "date": "2026-08-22",
+          "subject": "E2の会場区を公開経路まで保持し、欠落を可視化する (#251)"
+        },
         {
           "commit": "1e2849c",
           "date": "2026-08-19",
@@ -736,11 +737,6 @@
           "commit": "87489f5",
           "date": "2026-08-16",
           "subject": "Close E2-S replay and publication gates"
-        },
-        {
-          "commit": "33c728c",
-          "date": "2026-08-16",
-          "subject": "Document E2-S v2 identity contracts"
         }
       ]
     },
@@ -1961,6 +1957,16 @@
       ],
       "has_test": true
     },
+    "INV-RVW-023": {
+      "spec": "L1-review",
+      "title": "新規会場の確認済み23区は変更要求まで欠落なく運ぶ",
+      "tests": [
+        "tests/test_e2_identity_judgment.py::ConversionTest::test_new_venue_carries_only_a_canonical_tokyo_23_area",
+        "tests/test_e2_identity_judgment.py::ConversionTest::test_user_acceptance_of_a_new_series_becomes_create_event_series",
+        "tests/test_e2_identity_judgment.py::CreateEventSeriesTest::test_create_event_series_persists_the_reviewed_venue_area"
+      ],
+      "has_test": true
+    },
     "INV-MST-001": {
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
@@ -2140,6 +2146,15 @@
       "title": "統合確度を規則予測の正規軸と一緒に公開へ運ぶ",
       "tests": [
         "tests/test_export_public_events.py::test_load_rdb_public_date_predictions_matches_public_prediction_shape"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-010": {
+      "spec": "L1-publication",
+      "title": "会場の区未設定で公開対象が落ちるときは件数と対象を必ず出す",
+      "tests": [
+        "tests/test_export_public_events.py::ExportPublicEventsTest::test_master_export_reports_public_eligible_row_missing_venue_area",
+        "tests/test_export_public_events.py::ExportPublicEventsTest::test_missing_venue_area_report_is_appended_to_actions_summary"
       ],
       "has_test": true
     },
