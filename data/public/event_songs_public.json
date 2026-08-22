@@ -876,14 +876,14 @@
     "name": "ハマサイトの夏祭り",
     "venue": "ハマサイト前広場・汐留ビルディング外構",
     "area": "港区",
-    "date": "2025-08-22",
+    "date": "2026-08-21",
     "songs": [
       {
         "name": "ウルトラソウル",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ]
   },

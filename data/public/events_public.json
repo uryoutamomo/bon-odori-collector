@@ -1136,12 +1136,23 @@
       "8": "下旬"
     },
     "description": "京橋盆踊りは、中央区の京橋エドグラン 京橋中央ひろばで行われる盆踊り。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。 2026年は8月28日（金）〜29日（土）開催。京橋エドグラン公式サイトのイベント告知「京橋盆踊り2026」で確認（",
+    "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。 2026年は8月28日（金）〜29日（土）開催。京橋エドグラン公式サイトのイベント告知「京橋盆踊り2026」で確認（ 出典：中央区観光協会のX投稿。公式告知、日付・時刻・会場すべてあり",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://x.com/c_kankokyokai/status/2089955521985908792",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
-        "url": "https://www.edogrand.tokyo/event/6924",
+        "url": "",
         "kind": "web",
+        "count": 1
+      },
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
         "count": 1
       }
     ],
@@ -2596,8 +2607,8 @@
     "address": "東京都港区海岸1-2-34",
     "lat": null,
     "lng": null,
-    "date": "2025-08-22",
-    "date_end": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-21",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -2608,19 +2619,19 @@
     "hints": [
       [
         8,
-        22
+        21
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "第16回ハマサイトの夏祭りは、ハマサイト前広場・汐留ビルディング外構で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-08-22（金）16:00-21:00開催記録。例年、盆踊りの合間にライブ演奏等あり。",
+    "detail": "現地の告知投稿で開催を確認。公式告知、日付・時刻・会場・中止規定すべてあり",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://minato-bon-odori.blogspot.com/2025/01/00c-minato-p.html",
-        "kind": "web",
+        "label": "告知投稿あり",
+        "url": "https://x.com/DJKOO_official/status/2089953521101902262",
+        "kind": "post",
         "count": 1
       }
     ],
@@ -2628,90 +2639,30 @@
       {
         "name": "ウルトラソウル",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-22。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.64,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "upcoming",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:例年",
-      "recurring_word:夏祭り"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-22"
+      "2026-08-21",
+      "2026-08-21"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-22"
-      ],
-      "label": "2025-08-22実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.64,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:例年",
-        "recurring_word:夏祭り"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-28",
-        "date_end": "2026-08-28",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4金曜を2026年へスライド",
-        "source_date": "2025-08-22",
-        "source_date_end": null,
-        "duration_days": 1
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-22"
-    ],
-    "historical_reference_label": "2025-08-22実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-08-28",
-      "date_end": "2026-08-28",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4金曜を2026年へスライド",
-      "source_date": "2025-08-22",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-28",
-    "historical_slide_date_end": "2026-08-28",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
-    "predicted_date": "2026-08-28",
-    "predicted_date_end": "2026-08-28",
-    "prediction_basis": "2025年実績の同月第4金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "桜まつり",
@@ -2841,13 +2792,24 @@
       "8": "下旬"
     },
     "description": "",
-    "detail": "2026年8月21日(金)〜23日(日)開催。主催は六本木ヒルズ自治会、森ビル株式会社。8月21日(金)は前夜祭（縁日屋台17:00〜21:00、楽劇 六本木楽19:00〜20:00）で、盆踊りは実施されない。盆踊りは8月22日(土)・23日(日)の各17:00〜20:00。六本木けやき坂通りでのフードマーケットは8月22日・23日のみ。雨天決行、荒天時は時間変更または中止の場合あり。六本木ヒルズ公式告知より。 出典は六本木ヒルズ公式サイト。",
+    "detail": "2026年8月21日(金)〜23日(日)開催。主催は六本木ヒルズ自治会、森ビル株式会社。8月21日(金)は前夜祭（縁日屋台17:00〜21:00、楽劇 六本木楽19:00〜20:00）で、盆踊りは実施されない。盆踊りは8月22日(土)・23日(日)の各17:00〜20:00。六本木けやき坂通りでのフードマーケットは8月22日・23日のみ。雨天決行、荒天時は時間変更または中止の場合あり。六本木ヒルズ公式告知より。 出典は六本木ヒルズ公式サイト。 現地の告知投稿で開催を確認。日時・会場明記 現地の告知投稿で開催を確認。六本木ヒルズ盆踊り2026の開催期間・会場を告知",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://x.com/event_fes/status/2089863551158751708",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
         "count": 1
+      },
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
+        "count": 2
       }
     ],
     "songs": [
@@ -6515,12 +6477,13 @@
       "8": "下旬"
     },
     "description": "新宿中央公園夏祭り 納涼盆踊り大会は、新宿中央公園 ファンモアタイム広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。[p0_review_20260721] 新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。",
+    "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。[p0_review_20260721] 新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。 出典：たなえ ひさし／都民ファーストの会／新宿区議会議員のX投稿。新宿中央公園の納涼盆踊り大会の日時・会場を告知",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://shinjukuchuo-park.jp/events/event/2026/07/03/%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E3%80%80%E5%A4%8F%E3%81%BE%E3%81%A4%E3%82%8A%EF%BD%9E%E7%9B%86%E8%B8%8A%E3%82%8A%E3%81%A8%E5%90%8C%E6%99%82%E9%96%8B%E5%82%AC%EF%BD%9E-2/",
-        "kind": "official"
+        "label": "告知投稿あり",
+        "url": "https://x.com/tanaehis/status/2089922387919949979",
+        "kind": "post",
+        "count": 1
       }
     ],
     "songs": [],
@@ -7451,6 +7414,68 @@
     "historical_reference_label": "2025-07-12実績・今年未確認",
     "historical_reference_confidence": "medium",
     "historical_reference_score": 0.68
+  },
+  {
+    "name": "文京思い出横丁",
+    "name_confirmed": true,
+    "venue": "傳通院",
+    "area": "文京区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-23",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "現地の告知投稿で開催を確認。盆踊りサークルの出演告知。日時・会場が明記",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/UT_bondanceclub/status/2090290580014415933",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-23",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "根津神社 盆踊り（文京区）",
@@ -9649,19 +9674,24 @@
       "9": "上旬"
     },
     "description": "浅草雷門前の並木通り界隈で開かれる盆踊り。",
-    "detail": "2026年イベント掲載で、2026年9月5日(土)17:30〜20:00、会場: 並木通り界隈（浅草雷門前）、主催: 雷門東部商店会・雷門一之宮商店会を確認。関連URL: /",
+    "detail": "2026年イベント掲載で、2026年9月5日(土)17:30〜20:00、会場: 並木通り界隈（浅草雷門前）、主催: 雷門東部商店会・雷門一之宮商店会を確認。関連URL: / 現地の告知投稿で開催を確認。日時・会場・区明記",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://x.com/gunsou_bouei64/status/2090122273449767336",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 2
+        "count": 1
       },
       {
         "label": "告知投稿あり",
         "url": "",
         "kind": "post",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -13730,12 +13760,13 @@
       "8": "下旬"
     },
     "description": null,
-    "detail": "18:30〜。",
+    "detail": "18:30〜。 現地の告知投稿で開催を確認。町会の盆踊大会の開催予定。日付と会場あり",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://minamisuna1.com/37573/",
-        "kind": "official"
+        "label": "告知投稿あり",
+        "url": "https://x.com/kotokeizai/status/2090333007714652233",
+        "kind": "post",
+        "count": 1
       }
     ],
     "songs": [],
@@ -18198,6 +18229,72 @@
     "historical_reference_score": 0.68
   },
   {
+    "name": "団地祭",
+    "name_confirmed": true,
+    "venue": "大森東一丁目第一公園",
+    "area": "大田区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-29",
+    "date_end": "2026-08-30",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        29
+      ],
+      [
+        8,
+        30
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "出典：おーたふる／大田区商店街連合会のX投稿。平和島 第40回団地祭の日時・会場を告知",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/otafull/status/2089910221787545811",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-29",
+      "2026-08-30"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "仲六郷一丁目町会 納涼会",
     "name_confirmed": true,
     "venue": "大田区シルバー人材センター前",
@@ -18611,6 +18708,77 @@
     "historical_reference_label": "2025-07-18実績・今年未確認",
     "historical_reference_confidence": "medium",
     "historical_reference_score": 0.68
+  },
+  {
+    "name": "多摩川辺り商店会 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "東京都大田区鵜の木2丁目12-4（鵜の木児童公園）",
+    "area": "大田区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "現地の告知投稿で開催を確認。日時・住所明記",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://x.com/WBElectric0521/status/2090040633230848484",
+        "kind": "official"
+      },
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
+        "count": 2
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "堤方東町会「盆踊り大会」",
@@ -23994,6 +24162,196 @@
     "display_tier": "ended"
   },
   {
+    "name": "東池袋五丁目東青年会 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "東池袋5丁目エリア",
+    "area": "豊島区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ],
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "現地の告知投稿で開催を確認。会場・日付明記（複数）",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/toshimamirai/status/2090299942787301419",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "駒込六丁目東文化会 盆踊り・縁日",
+    "name_confirmed": true,
+    "venue": "駒込六丁目児童遊園",
+    "area": "豊島区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-23",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        23
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "現地の告知投稿で開催を確認。会場・日付明記（複数）",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/toshimamirai/status/2090299942787301419",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-23",
+      "2026-08-23"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "北区立堀船公園の盆踊り",
+    "name_confirmed": true,
+    "venue": "北区立堀船公園",
+    "area": "北区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "現地の告知投稿で開催を確認。和太鼓団体の出演告知。2つの盆踊りの日付と会場が読める",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "飛鳥山公園盆踊り会（有志サークル）",
     "name_confirmed": true,
     "venue": "飛鳥山公園",
@@ -26237,12 +26595,23 @@
       "8": "下旬"
     },
     "description": null,
-    "detail": "開催時間：16:00〜20:30。主催：上石神井地区委員会。雨天時は8月23日（日）の同時間に順延。盆踊りの実施有無は未確認。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（",
+    "detail": "開催時間：16:00〜20:30。主催：上石神井地区委員会。雨天時は8月23日（日）の同時間に順延。盆踊りの実施有無は未確認。出典：練馬区議会議員 佐藤力 公式サイトの『【2026年最新】練馬区の盆踊り・夏祭り・お祭り情報一覧』より（ 現地の告知投稿で開催を確認。日時・会場・区明記",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://x.com/nerikohouse/status/2090017563011142108",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
-        "url": "https://satoriki.net/blog/8424/",
+        "url": "",
         "kind": "web",
+        "count": 1
+      },
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
         "count": 1
       }
     ],
@@ -28266,6 +28635,68 @@
     "display_tier": "ended"
   },
   {
+    "name": "花保町会の盆踊り",
+    "name_confirmed": true,
+    "venue": "花保広場（花保さくら公園　南花畑３－１）",
+    "area": "足立区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-21",
+    "date_end": "2026-08-21",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        21
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "出典：足立区役所のX投稿。日時・会場明記（複数）",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/adachi_city/status/2089981991060210144",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-21"
+    ],
+    "display_tier": "ended"
+  },
+  {
     "name": "中央本町若松町会 盆踊り大会",
     "name_confirmed": true,
     "venue": "若松公園",
@@ -29048,6 +29479,68 @@
     "historical_reference_label": "2025-08-31実績・今年未確認",
     "historical_reference_confidence": "medium",
     "historical_reference_score": 0.68
+  },
+  {
+    "name": "新小岩銀座 夏まつり 和楽器DEナイト",
+    "name_confirmed": true,
+    "venue": "新小岩駅南口 駅前広場",
+    "area": "葛飾区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-22",
+    "date_end": "2026-08-22",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        22
+      ]
+    ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": null,
+    "detail": "現地の告知投稿で開催を確認。日時・会場・区明記",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "https://x.com/natsutr_bon/status/2089973977318064232",
+        "kind": "post",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-22",
+      "2026-08-22"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "木根川町会ふれあい盆踊り",
