@@ -3235,6 +3235,70 @@
       "site_sha256": "22d39e39c2eebf99660a4be284e24797b225ca5bf820aca3e6199454cf049f09",
       "collector_sha256": "0a2c5ebe1db04c4478b735fc7933e9f008b9491e19253a2561523b7cc08804eb",
       "reason": "2026-08-16: repaired public export vs site baseline exact approval candidate for this individually reviewed same-key diff."
+    },
+    {
+      "id": "reviewed-addition-20260822-844e6c9136bb",
+      "kind": "addition",
+      "event_key": "文京思い出横丁||傳通院",
+      "collector_sha256": "844e6c9136bbed589357d30b5359bfbbbb4b3a1fc73bdf70f285b0b4c0fde7a9",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-29b4da0b673a",
+      "kind": "addition",
+      "event_key": "団地祭||大森東一丁目第一公園",
+      "collector_sha256": "29b4da0b673a96c268099c2289addc41cd6d1c92dbc09695ed2ef814bbc4dbd7",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-c0f42d852afe",
+      "kind": "addition",
+      "event_key": "多摩川辺り商店会 盆踊り大会||東京都大田区鵜の木2丁目12-4（鵜の木児童公園）",
+      "collector_sha256": "c0f42d852afe1271ffa2ef903f229829922398408624116886b23b725d01b755",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-567397111205",
+      "kind": "addition",
+      "event_key": "東池袋五丁目東青年会 盆踊り大会||東池袋5丁目エリア",
+      "collector_sha256": "567397111205346ea008713b151bdf2224633ec9eaf7b71c6c5529852d74f7fb",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-7dc3e471ef00",
+      "kind": "addition",
+      "event_key": "駒込六丁目東文化会 盆踊り・縁日||駒込六丁目児童遊園",
+      "collector_sha256": "7dc3e471ef0004613f5ac1ac0368eee5bceff09f9eaaae2ae21d6e22245e768a",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-98336539bb26",
+      "kind": "addition",
+      "event_key": "北区立堀船公園の盆踊り||北区立堀船公園",
+      "collector_sha256": "98336539bb26241d258a73581cfb3ca0f958f6303661a85be130c59b774cffe5",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-eb2e50566947",
+      "kind": "addition",
+      "event_key": "花保町会の盆踊り||花保広場（花保さくら公園　南花畑３－１）",
+      "collector_sha256": "eb2e50566947417e252b3c24dab8368401e0eb2f8ab38f215f990457423c8e95",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-addition-20260822-1e1ae71643da",
+      "kind": "addition",
+      "event_key": "新小岩銀座 夏まつり 和楽器DEナイト||新小岩駅南口 駅前広場",
+      "collector_sha256": "1e1ae71643da5be3059fb20f26267bf4ae7a45a4bfba7682a6cd5ff43f47e331",
+      "reason": "2026-08-22: 内田さんが一覧を確認して公開を承認した、X投稿由来の23区の新規盆踊り。E0X→E0→E2 をサブエージェント判定で通し、新系列は本人の裁定を経ている。"
+    },
+    {
+      "id": "reviewed-update-20260822-3881b59318cd",
+      "kind": "same_key_update",
+      "event_key": "ハマサイトの夏祭り||ハマサイト前広場・汐留ビルディング外構",
+      "site_sha256": "d8549d87ae8159506eb9bcf9217f598d09cd2a29d3f9c368dd3921d6fbcf9d58",
+      "collector_sha256": "3881b59318cda7fb2576397c4c0818e003e87044fc931b51ef9ae6f0f37f438d",
+      "reason": "2026-08-22: 内田さんの承認。2025-08-22の開催予想を2026-08-21の確定へ更新する。出典が港区の盆踊り情報ブログからX投稿へ置き換わる点は説明済みで、日付が正しくなる利得を優先する判断。出典の置換自体は別途直す。"
     }
   ]
 }
