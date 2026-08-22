@@ -15,9 +15,14 @@ import argparse
 import json
 from datetime import date, datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 import operation_safety.manual_apply_guards as manual_apply_guards
+from collection_support.x_official_source_accounts import (
+    handle_from_social_url,
+    is_official_social_url,
+)
 from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,
     ensure_venue,
@@ -112,6 +117,15 @@ HISTORICAL_SONG_EVIDENCE_MODES = {
     "historical_curated_report",
     "historical_firsthand_report",
     "historical_partial_youtube",
+}
+LOWER_TRUST_SOCIAL_HOSTS = {
+    "facebook.com",
+    "instagram.com",
+    "m.facebook.com",
+    "mobile.twitter.com",
+    "t.co",
+    "www.facebook.com",
+    "www.instagram.com",
 }
 
 
@@ -313,6 +327,36 @@ def _append_detail(conn, occurrence_id, addendum, now):
     return result["changed_fields"]
 
 
+def _representative_source_rank(url):
+    """Rank a URL only as far as the public attribution policy can prove.
+
+    A normal web page is a stronger public representative than a social post.
+    Registered official/organizer X accounts sit between ordinary web pages and
+    unregistered social accounts.  Equal-rank sources keep the existing URL so
+    adding evidence never churns or silently removes an already-published source.
+    """
+    if not url:
+        return 0
+    if handle_from_social_url(url):
+        return 2 if is_official_social_url(url) else 1
+    try:
+        host = (urlparse(url).hostname or "").lower()
+    except ValueError:
+        return 0
+    if not host:
+        return 0
+    if host in LOWER_TRUST_SOCIAL_HOSTS:
+        return 1
+    return 3
+
+
+def _preferred_representative_source(existing_url, incoming_url):
+    """Keep the public representative unless the incoming URL is clearly better."""
+    if _representative_source_rank(incoming_url) > _representative_source_rank(existing_url):
+        return incoming_url
+    return existing_url or incoming_url
+
+
 def _current_year_date_status(request, now):
     """Return ended only after the event's final JST calendar day."""
     event_end = date.fromisoformat(request.get("date_end") or request["date_start"])
@@ -374,7 +418,11 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         date_basis_note=f"current-year source: {request['source']['url']}",
         now=now,
     )
-    source_url = request["source"]["url"]
+    incoming_source_url = request["source"]["url"]
+    source_url = _preferred_representative_source(
+        occurrence_before[0] if occurrence_before else None,
+        incoming_source_url,
+    )
     conn.execute(
         "UPDATE event_occurrences SET source_url = ?, updated_at = ? WHERE occurrence_id = ?",
         (source_url, now, occurrence_id),
