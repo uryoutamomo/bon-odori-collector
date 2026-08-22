@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T02:08:55Z",
-  "generated_for_commit": "25613b7",
+  "generated_at": "2026-08-22T04:23:25Z",
+  "generated_for_commit": "9b904c3",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -468,6 +468,7 @@
         ".github/workflows/apply-reviewed-change-requests.yml"
       ],
       "depends_on": [
+        "L1-collection",
         "L1-platform"
       ],
       "invariants": [
@@ -483,7 +484,8 @@
         "INV-MST-010",
         "INV-MST-011",
         "INV-MST-012",
-        "INV-MST-013"
+        "INV-MST-013",
+        "INV-MST-014"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
@@ -553,9 +555,14 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": null,
-      "version": "1.15",
-      "revision_count": 16,
+      "version": "1.16",
+      "revision_count": 17,
       "history": [
+        {
+          "commit": "9b904c3",
+          "date": "2026-08-22",
+          "subject": "Preserve stronger event source URLs (#252)"
+        },
         {
           "commit": "6083472",
           "date": "2026-08-19",
@@ -610,11 +617,6 @@
           "commit": "a40d7c4",
           "date": "2026-08-15",
           "subject": "LLMは同一性だけを答え、機械が変更要求へ変換する（E2） (#210)"
-        },
-        {
-          "commit": "a855a9a",
-          "date": "2026-08-14",
-          "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         }
       ]
     },
@@ -2074,6 +2076,14 @@
       "title": "生成された日付予測は正本RDBへ先に同期し、曖昧な系列へは書かない",
       "tests": [
         "tests/test_sync_event_date_predictions_rdb.py"
+      ],
+      "has_test": true
+    },
+    "INV-MST-014": {
+      "spec": "L1-master",
+      "title": "開催日根拠の追加で公開用の代表出典を格下げしない",
+      "tests": [
+        "tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_confirm_current_year_date_does_not_replace_web_source_with_social_post"
       ],
       "has_test": true
     },
