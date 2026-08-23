@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 88,
+  "count": 97,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1409,6 +1409,156 @@
         "https://pbs.twimg.com/amplify_video_thumb/2090815469754429440/img/T0gfv154-Fkhahti.jpg"
       ],
       "text": "埼玉県蕨市の和楽備神社へ。初詣でお参りしたこともある、地元の神社です。\n「ｼﾞｪﾈﾘｯｸ墨田音頭」こと｢わらび音頭｣を始め、ズンドコ（蕨ver.）など。DHや子供向け曲が一切ない硬派なセトリ、嫌いじゃない(🤟 ॑꒳ ॑   )ｲｪｱ\nズンパ音頭は一部ステップが独特だったな。 https://t.co/ZEOUBDvxKZ",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "90df125759975c71",
+      "status": "needs_ocr",
+      "account": "@bonDsuzuki",
+      "url": "https://x.com/bonDsuzuki/status/2091078516540600526",
+      "tweet_id": "2091078516540600526",
+      "date": "2026-08-22T08:22:23+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQUA0RLbkAAmjPm.jpg",
+        "https://t.co/tFMLQa4Wcz",
+        "pic.x.com/tFMLQa4Wcz",
+        "https://pbs.twimg.com/media/HQUA0RQa0AAw_zp.jpg",
+        "https://pbs.twimg.com/media/HQUA0RObkAEvQ5i.jpg",
+        "https://pbs.twimg.com/media/HQUA0RMbYAA93pX.jpg"
+      ],
+      "text": "今回はミャクミャクさん＆概念コスで登場します！😆\n気になる曲目には「ハム太郎MIX〜豊能町スペシャルバージョン」も…！？🐹\nさらに秘密兵器のレコードプレイヤーも持って行きます🎧😎\nどうなるかお楽しみに！\n#チーム秋葉原 #伝承戦隊オドルンジャー #盆踊りDJ鈴木 https://t.co/tFMLQa4Wcz",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "2e69ce184be95b50",
+      "status": "needs_ocr",
+      "account": "@takasho06130613",
+      "url": "https://x.com/takasho06130613/status/2091144154818703503",
+      "tweet_id": "2091144154818703503",
+      "date": "2026-08-22T12:43:12+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQU8ha6aUAAYRky.jpg",
+        "https://t.co/Mun6Wb1ycZ",
+        "pic.x.com/Mun6Wb1ycZ"
+      ],
+      "text": "どしゃ降りの中、板橋区徳丸(イルカ)公園盆踊りセトリ https://t.co/Mun6Wb1ycZ",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "e54a11621428f61b",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2091150290334679103",
+      "tweet_id": "2091150290334679103",
+      "date": "2026-08-22T13:07:35+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2091148027021103104/img/EpALklqzgA__yP5p.jpg",
+        "https://t.co/dhyg9qezlD",
+        "pic.x.com/dhyg9qezlD",
+        "https://pbs.twimg.com/amplify_video_thumb/2091149574551609344/img/nm3Ev__ColRPhMka.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2091149820757233664/img/twTo270zHoNz_J4r.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2091150040542965760/img/Ce6FGmJwKwwFb28J.jpg"
+      ],
+      "text": "2026年8月22日(土)\n千葉県白井市\n／白井市立白井第一小学校\n\n雨降っていましたが、盆踊りは開催されました。\n太鼓のプログラムが中止となり、予定以上に踊れました。\n\n【曲目】\n白井音頭\n日光和楽おどり\nはるみの花笠ばやし\nダンシング・ヒーロー\nバハマ・ママ\n炭坑節\n大東京音頭 https://t.co/dhyg9qezlD",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "874bcb92dff240bd",
+      "status": "needs_ocr",
+      "account": "@5kHfYa5PjKsGGoV",
+      "url": "https://x.com/5kHfYa5PjKsGGoV/status/2091291682759495930",
+      "tweet_id": "2091291682759495930",
+      "date": "2026-08-22T22:29:26+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQXAmhzaQAAPWVc.jpg",
+        "https://t.co/5dc5acLp0p",
+        "pic.x.com/5dc5acLp0p",
+        "https://pbs.twimg.com/media/HQXAmh_bcAAr4P5.jpg",
+        "https://pbs.twimg.com/media/HQXAmh3b0AEBX28.jpg",
+        "https://pbs.twimg.com/media/HQXAmh2akAAX-ns.jpg"
+      ],
+      "text": "昨日はマニアックな291系統のバスに乗り片倉町入口下車、30分ほどこちらで盆踊りを楽しみました。準備中の即席クイズで「犬猫は哺乳類、狐と狸は？」と言われたので「カップラーメン類」と答えたら惜しくも答えは「麺類」w敢闘賞でうまい棒もらえました♪\n悪天により夜の盆踊りは全て中止😭\nセトリ↓ https://t.co/5dc5acLp0p",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "acef0bc269f551fa",
+      "status": "needs_ocr",
+      "account": "@Paris_Myutan",
+      "url": "https://x.com/Paris_Myutan/status/2091302995392975051",
+      "tweet_id": "2091302995392975051",
+      "date": "2026-08-22T23:14:23+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQXM_KdbUAAL-gJ.jpg",
+        "https://t.co/j2DjXRD8a1",
+        "pic.x.com/j2DjXRD8a1",
+        "https://pbs.twimg.com/media/HQXM_KWaIAAhTVT.jpg",
+        "https://pbs.twimg.com/media/HQXM_KVaIAAKDL3.jpg",
+        "https://pbs.twimg.com/media/HQXM_KJa8AAelnn.jpg"
+      ],
+      "text": "盆ダンスデビューで本日午後からセトリのYoutube振付見まくったのに、大雨で中止になったのを知ったのは日比谷線の中でXの投稿にて、まあそのおかげで4年ぶりの餃子にありつけたけど　#盆踊り #大江戸まつり盆踊り #浜町公園 https://t.co/j2DjXRD8a1",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "5091e9d73c26b3ef",
+      "status": "needs_ocr",
+      "account": "@nagoya2020GO",
+      "url": "https://x.com/nagoya2020GO/status/2091308441663152612",
+      "tweet_id": "2091308441663152612",
+      "date": "2026-08-22T23:36:01+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2091308052653981696/img/F9A0fiu3Io63l4Yz.jpg",
+        "https://t.co/snuLa3cGWD",
+        "pic.x.com/snuLa3cGWD"
+      ],
+      "text": "昨日のイベントはこちら\n\n名古屋市中村区\nKITTE名古屋\n\n初めての屋内盆踊り\n雨や暑さの心配はない\n\n主催者の意向を聞き\n会場の雰囲気を考え\n\n選曲、曲順、振り付け\n司会進行はまさにプロフェッショナル\n\n夏の風物詩の盆踊り\n大切にしたい日本の文化\n\nマツケンサンバ動画 https://t.co/snuLa3cGWD",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "846d49d9e2c79520",
+      "status": "needs_ocr",
+      "account": "@nicospiral2",
+      "url": "https://x.com/nicospiral2/status/2091325882720006245",
+      "tweet_id": "2091325882720006245",
+      "date": "2026-08-23T00:45:20+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQXhvEsbwAEewrH.jpg",
+        "https://t.co/s89iMR5NXM",
+        "pic.x.com/s89iMR5NXM",
+        "https://pbs.twimg.com/media/HQXhxpxa8AAu6Em.jpg"
+      ],
+      "text": "DJ盆踊り2026その3\n寺こまさん\n寺こ舞LOVE大好きなんでこの光景が広がった時に「キタァァ」と興奮しました笑確かこの曲作られたのヨッシーさんでしたね✨うーん凄い!!\n二曲目も必死に手拍子しました笑✨\n楽しい演舞でした是非また能代へいらして下さい！\n#寺内こまちはやて組 https://t.co/s89iMR5NXM",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "d6fd22ae9843e3b5",
+      "status": "needs_ocr",
+      "account": "@yOsZnUu1gDYjCGI",
+      "url": "https://x.com/yOsZnUu1gDYjCGI/status/2091342334088896620",
+      "tweet_id": "2091342334088896620",
+      "date": "2026-08-23T01:50:42+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQXww0bagAAvwjX.jpg",
+        "https://t.co/by95B0vj0h",
+        "pic.x.com/by95B0vj0h",
+        "https://pbs.twimg.com/media/HQXww0iagAEE9Lx.jpg",
+        "https://pbs.twimg.com/media/HQXww0ab0AA9D4k.jpg"
+      ],
+      "text": "昨夜は雨でも開催OKな高架下の盆踊り。くじら児童遊園で開催された五仲自治会の盆踊りに参加させていただきました。新しい盆オドラーさんとも出会えてとても楽しい時間でした。母の通院付き添いの疲労で膝が少し痛く、半分くらいの時間しか踊れなかったけど、セトリ1周強できたので満足です🙌 https://t.co/by95B0vj0h",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "8857efab651ba34c",
+      "status": "needs_ocr",
+      "account": "@IID_PSV",
+      "url": "https://x.com/IID_PSV/status/2091411121727275502",
+      "tweet_id": "2091411121727275502",
+      "date": "2026-08-23T06:24:02+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQYvVCHasAAe3Qc.jpg",
+        "https://t.co/MtJTheIBJo",
+        "pic.x.com/MtJTheIBJo"
+      ],
+      "text": "昨日は来週に向けて、つぐみさん振付の曲をいくつか確認しました。\n予想どおりの難曲ぞろいで、振りを追うだけでも精一杯。私も本番までに自宅でもう少し練習しておかないといけません（笑）\n\n来週だけでなく、秋の盆おどりフェスタのスケジュールと曲目もかなり具体的になってきました。これまでスケジュールで悩んでいた部分も昨日クリアになり、良かったです（＾∇＾）\n秋に向けた準備も少しずつ進めていきます。\n\nそして一昨日に続いてKITTEへ。今回は前半まででしたが、前日にはなかった「アラレちゃん音頭」「おどるポンポコリン」「しんちゃん音頭」も踊ることができました。\n相変わらずの人出で踊る場所は狭かったですが、知り合いの方々と一緒に踊れたのもうれしく、前日とはまた違った楽しさのある時間になりました（笑）\nこの日は推しの子とも盆踊りの話がいろいろ広がり、楽しいだけでなく、ありがたいこともありました！\n\n来週の竹芝も、秋の盆おどりフェスタも、ますます楽しみになってきました。まずは難曲の自主練から頑張ります（笑）",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

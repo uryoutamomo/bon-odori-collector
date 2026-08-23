@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "4df4c0e84549010f2315f9558253d2bd6a59d28df7b60723270ca6b6858a0c2a",
-  "input_size_bytes": 1978594,
+  "input_sha256": "4cb6a6e4b9c0b41a063ea73ce6dbab9db87c72681eb0f21227c6d6a10b261f1b",
+  "input_size_bytes": 2082367,
   "item_count": 5,
   "items": [
     {
@@ -10,20 +10,20 @@
       "domain": "X",
       "time_scope": "future",
       "priority_label": "P1",
-      "priority_score": 205,
+      "priority_score": 305,
       "title": "麻布十番納涼盆踊り大会",
       "event_name": "麻布十番納涼盆踊り大会",
       "venue": "網代公園",
       "event_year": 2026,
-      "source_key": "x:2090590395843612755",
-      "source_url": "https://x.com/ibeco_app/status/2090590395843612755",
-      "recommended_action": "confirm_current_year_date",
+      "source_key": "x:2091121714977775792",
+      "source_url": "https://x.com/2019Varekai/status/2091121714977775792",
+      "recommended_action": "review_schedule_change",
       "payload": {
-        "candidate_id": "xgap_d3e8ea85ac04ff7c",
-        "source_key": "x:2090590395843612755",
+        "candidate_id": "xgap_1ed5e67a4cef4579",
+        "source_key": "x:2091121714977775792",
         "lane_hint": "lane2",
-        "candidate_kind": "missing_date",
-        "priority_score": 205,
+        "candidate_kind": "schedule_change",
+        "priority_score": 305,
         "event_year": 2026,
         "matched_occurrence": {
           "occurrence_id": "occ_e4a7eb02f5fed215",
@@ -40,14 +40,14 @@
             "麻布十番納涼盆踊り大会"
           ]
         },
-        "source_url": "https://x.com/ibeco_app/status/2090590395843612755",
-        "source_text": "\n【東京都の週末イベント 8/22-8/23】\n\n1. 第60回 麻布十番納涼まつり（港区） 📅 8/22(土)〜8/23(日)\n2. おしゃれ盆踊りvol.9（港区） 📅 8/22(土) 18:00〜23:00\n3. 第72回大井どんたく夏まつり（品川区） 📅 8/22(土) 14:00〜8/23(日) 20:00 https://t.co/lJIxsp0rwW",
-        "source_author": "@ibeco_app",
+        "source_url": "https://x.com/2019Varekai/status/2091121714977775792",
+        "source_text": "\n⭐️明日2026年8月23日(日曜日)の主要イベント、お祭り・花火！ゲリラ豪雨などで中止になっているところも多いけど、、、なんとか楽しめるようになってほしい！\n\n【東京都】\n・麻布十番納涼まつり（最終日・フィナーレ） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（最終日・本踊り） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・大井どんたく夏まつり（最終日） / 品川区（大井町駅前中央通り）\n・お台場竹ランタン祭り（最終日） / 江東区（シンボルプロムナード公園）\n\n【神奈川県】\n・湯河原温泉海上花火大会（約2,000発・尺玉連発） / 足柄下郡湯河原町（湯河原海岸）\n\n【埼玉県】\n・南越谷阿波踊り（最終日・熱狂の本祭フィナーレ） / 越谷市（新越谷・南越谷駅周辺）\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【千葉県】\n・きらっせ祭り花火大会（約3,400発・尺玉＆水中花火） / 神栖市（波崎海岸）\n・四街道ふるさとまつり（花火大会・本まつり） / 四街道市（中央公園）\n\n【群馬県】\n・おうら祭り花火大会（約8,000発・音楽",
+        "source_author": "@2019Varekai",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@ibeco_app",
-          "account_name": "eveco_weekend",
+          "handle": "@2019varekai",
+          "account_name": "ににょ。👻考える。遊ぶ。気軽に繋がる。雑。",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -56,61 +56,38 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "8/22",
-          "8/23",
-          "8/22",
-          "8/23",
-          "8/22",
-          "8/22",
-          "8/23"
+          "8月23日"
         ],
         "observed_dates": [
-          "2026-08-22",
           "2026-08-23"
         ],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@ibeco_app",
-          "name": "eveco_weekend",
-          "profile_description": "週末のおでかけ先、イベ子が探します🎀\n全国47都道府県のイベント情報を、毎週ゆるっと厳選🗾\n気になるイベントはイベコアプリで詳しくチェック📱\nお祭り・マルシェ・花火・親子イベント探しに👇",
+          "account": "@2019Varekai",
+          "name": "ににょ。👻考える。遊ぶ。気軽に繋がる。雑。",
+          "profile_description": "⭐️朝5時30分と昼12時と夜19時付近に猫を頭に載せた女の子と変なポーズ→　#変なポーズnn 　日常系の漫画もあげるよ！気軽に繋がりましょう！\n⭐️不定期でお手紙シリーズ→ 　#ににょのお手紙ss\nあとは自由に世の中の変と遊んでます🔥\n時事ネタ、ニュース、投資、AI絵、ご飯。サブスクは実験！やめといて。",
           "title": "",
-          "text": "【東京都の週末イベント 8/22-8/23】\n\n1. 第60回 麻布十番納涼まつり（港区） 📅 8/22(土)〜8/23(日)\n2. おしゃれ盆踊りvol.9（港区） 📅 8/22(土) 18:00〜23:00\n3. 第72回大井どんたく夏まつり（品川区） 📅 8/22(土) 14:00〜8/23(日) 20:00 https://t.co/lJIxsp0rwW",
-          "url": "https://x.com/ibeco_app/status/2090590395843612755",
-          "date": "2026-08-21T00:02:46+00:00",
-          "tweet_id": "2090590395843612755",
+          "text": "⭐️明日2026年8月23日(日曜日)の主要イベント、お祭り・花火！ゲリラ豪雨などで中止になっているところも多いけど、、、なんとか楽しめるようになってほしい！\n\n【東京都】\n・麻布十番納涼まつり（最終日・フィナーレ） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（最終日・本踊り） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・大井どんたく夏まつり（最終日） / 品川区（大井町駅前中央通り）\n・お台場竹ランタン祭り（最終日） / 江東区（シンボルプロムナード公園）\n\n【神奈川県】\n・湯河原温泉海上花火大会（約2,000発・尺玉連発） / 足柄下郡湯河原町（湯河原海岸）\n\n【埼玉県】\n・南越谷阿波踊り（最終日・熱狂の本祭フィナーレ） / 越谷市（新越谷・南越谷駅周辺）\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【千葉県】\n・きらっせ祭り花火大会（約3,400発・尺玉＆水中花火） / 神栖市（波崎海岸）\n・四街道ふるさとまつり（花火大会・本まつり） / 四街道市（中央公園）\n\n【群馬県】\n・おうら祭り花火大会（約8,000発・音楽シ",
+          "url": "https://x.com/2019Varekai/status/2091121714977775792",
+          "date": "2026-08-22T11:14:02+00:00",
+          "tweet_id": "2091121714977775792",
           "tags": [
             "🟡関心",
             "q-venue-tokyo-wards"
           ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQNE4Yea0AAOn7c.jpg",
-            "https://t.co/lJIxsp0rwW",
-            "pic.x.com/lJIxsp0rwW",
-            "https://pbs.twimg.com/media/HQNE4lcb0AAdu3C.jpg",
-            "https://pbs.twimg.com/media/HQNE4xbaUAASUqq.jpg"
-          ]
+          "critique_post": false
         },
         "source_urls": [
-          "https://x.com/ibeco_app/status/2090590395843612755"
+          "https://x.com/2019Varekai/status/2091121714977775792"
         ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQNE4Yea0AAOn7c.jpg",
-          "https://t.co/lJIxsp0rwW",
-          "pic.x.com/lJIxsp0rwW",
-          "https://pbs.twimg.com/media/HQNE4lcb0AAdu3C.jpg",
-          "https://pbs.twimg.com/media/HQNE4xbaUAASUqq.jpg"
-        ],
+        "source_media_urls": [],
         "corroboration_count": 1,
-        "source_count": 1,
-        "observed_candidate": {
-          "candidate_key": "occ_e4a7eb02f5fed215"
-        }
+        "source_count": 1
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_a32c6a1043bfe061"
+      "inbox_id": "inbox_826aa923b76e83b4"
     },
     {
       "kind": "x_gap",
@@ -122,12 +99,12 @@
       "event_name": "麻布十番納涼盆踊り大会",
       "venue": "網代公園",
       "event_year": 2026,
-      "source_key": "x:2090591142270431265",
-      "source_url": "https://x.com/KoujiroOhmoto/status/2090591142270431265",
+      "source_key": "x:2090956498730144198",
+      "source_url": "https://x.com/assetformer/status/2090956498730144198",
       "recommended_action": "confirm_current_year_date",
       "payload": {
-        "candidate_id": "xgap_a6feb741705a5b0f",
-        "source_key": "x:2090591142270431265",
+        "candidate_id": "xgap_ca331dc626a71a2e",
+        "source_key": "x:2090956498730144198",
         "lane_hint": "lane2",
         "candidate_kind": "missing_date",
         "priority_score": 205,
@@ -147,14 +124,14 @@
             "麻布十番納涼盆踊り大会"
           ]
         },
-        "source_url": "https://x.com/KoujiroOhmoto/status/2090591142270431265",
-        "source_text": "\nhttps://t.co/vkse4aO9Bb\n\n麻布十番納涼祭り\nAzabu-Juban Noryo Festival\n \nEnglish  Map\nhttps://t.co/vzYV0VgZpm\n\n8月22日土曜と23日日曜、麻布十番納涼まつり、午後３時より９時まで。各県からの名産品販売、商店街による露店、お祭り広場では各種行事あり。\n \n。赤い靴はいてた女の子像\n、赤い靴はいてた女の子は日本が貧しかった時代の実際にあった悲しい物語\n \n同じ日に六本木ヒルズでは夕方より盆踊りが毎年行われているので麻布十番から六本木ヒルズへ行くと両方を楽しめる。盆踊り は午後5時から8時 Azabu-Juban Noryo Festival\n• Dates & Time: Saturday, Aug 22 & Sunday, Aug 23 | 3:00 PM – 9:00 PM\n• Highlights:\n• Stalls featuring regional specialties from various prefectures\n• Food and game stalls run by lo",
-        "source_author": "@KoujiroOhmoto",
+        "source_url": "https://x.com/assetformer/status/2090956498730144198",
+        "source_text": "\n／\n麻布十番納涼まつり｜8/22(土)〜8/23(日)\n【入場無料・予約不要】都内屈指の人気夏祭り！「第60回 麻布十番納涼まつり2026」開催！老舗の名店グルメ屋台＆全国の特産品が集結！！🏮🍻✨\n＼\n\n​🏮 イベント概要\n・【老舗・名店のグルメ屋台】地元・麻布十番の老舗による限定メニューや、国際色豊かな絶品屋台グルメが多数出店！\n・【おらがくに自慢】全国各地の自治体・団体が参加！ご当地グルメや特産品が東京で楽しめる大人気エリア！\n・【ステージ＆キッズ企画】\n　- パティオ十番「ステージ10-BANG」：オープニングセレモニーや音楽ライブ、ダンスなどの多彩なパフォーマンス！\n　- 一の橋公園「ふれあい子供広場（麻布十八番）」：子ども向けの夜店やゲーム、スポーツ体験会などを実施！\n・【公式グッズ】宇野亞喜良氏デザインの「Tシャツ＆竹うちわセット」を商店街加盟店で数量限定販売！\n​📅 開催日程・場所\n2026年8月22日(土) 〜 8月23日(日)\n・時間：各日 15:00 〜 21:00\n📍 場所：麻布十番商店街 一帯\n（都営大江戸線・東京メトロ南北線「麻布十番駅」すぐ）\n💰 料金：入",
+        "source_author": "@assetformer",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@koujiroohmoto",
-          "account_name": "アドバイザーグループ",
+          "handle": "@assetformer",
+          "account_name": "Kong | お得×ライフハック",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -163,45 +140,48 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
+          "8/22",
+          "8/23",
           "8月22日",
-          "３時",
-          "９時",
-          "5時",
-          "8時"
+          "8月23日"
         ],
         "observed_dates": [
-          "2026-08-22"
+          "2026-08-23"
         ],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
-          "source": "x",
-          "account": "@KoujiroOhmoto",
-          "name": "アドバイザーグループ",
-          "profile_description": "",
+          "source": "x_whitelist",
+          "account": "@assetformer",
+          "name": "Kong | お得×ライフハック",
+          "profile_description": "20代商社マンが送るコスパ・タイパ重視のライフハック術｜ポイ活・マイル・イベント情報を整理して発信｜お得・イベント情報サイト【https://t.co/poIJ4T8dM1】運営｜楽天ブラックカード保有💳｜JGC修行中✈️｜Xで紹介しきれない限定情報やキャンペーン・イベント一覧、ポイ活初心者ガイドはサイトにて公開！",
           "title": "",
-          "text": "https://t.co/vkse4aO9Bb\n\n麻布十番納涼祭り\nAzabu-Juban Noryo Festival\n \nEnglish  Map\nhttps://t.co/vzYV0VgZpm\n\n8月22日土曜と23日日曜、麻布十番納涼まつり、午後３時より９時まで。各県からの名産品販売、商店街による露店、お祭り広場では各種行事あり。\n \n。赤い靴はいてた女の子像\n、赤い靴はいてた女の子は日本が貧しかった時代の実際にあった悲しい物語\n \n同じ日に六本木ヒルズでは夕方より盆踊りが毎年行われているので麻布十番から六本木ヒルズへ行くと両方を楽しめる。盆踊り は午後5時から8時 Azabu-Juban Noryo Festival\n• Dates & Time: Saturday, Aug 22 & Sunday, Aug 23 | 3:00 PM – 9:00 PM\n• Highlights:\n• Stalls featuring regional specialties from various prefectures\n• Food and game stalls run by loc",
-          "url": "https://x.com/KoujiroOhmoto/status/2090591142270431265",
-          "date": "2026-08-21T00:05:44+00:00",
-          "tweet_id": "2090591142270431265",
+          "text": "／\n麻布十番納涼まつり｜8/22(土)〜8/23(日)\n【入場無料・予約不要】都内屈指の人気夏祭り！「第60回 麻布十番納涼まつり2026」開催！老舗の名店グルメ屋台＆全国の特産品が集結！！🏮🍻✨\n＼\n\n​🏮 イベント概要\n・【老舗・名店のグルメ屋台】地元・麻布十番の老舗による限定メニューや、国際色豊かな絶品屋台グルメが多数出店！\n・【おらがくに自慢】全国各地の自治体・団体が参加！ご当地グルメや特産品が東京で楽しめる大人気エリア！\n・【ステージ＆キッズ企画】\n　- パティオ十番「ステージ10-BANG」：オープニングセレモニーや音楽ライブ、ダンスなどの多彩なパフォーマンス！\n　- 一の橋公園「ふれあい子供広場（麻布十八番）」：子ども向けの夜店やゲーム、スポーツ体験会などを実施！\n・【公式グッズ】宇野亞喜良氏デザインの「Tシャツ＆竹うちわセット」を商店街加盟店で数量限定販売！\n​📅 開催日程・場所\n2026年8月22日(土) 〜 8月23日(日)\n・時間：各日 15:00 〜 21:00\n📍 場所：麻布十番商店街 一帯\n（都営大江戸線・東京メトロ南北線「麻布十番駅」すぐ）\n💰 料金：入場",
+          "url": "https://x.com/assetformer/status/2090956498730144198",
+          "date": "2026-08-22T00:17:32+00:00",
+          "tweet_id": "2090956498730144198",
           "tags": [
-            "🟡関心",
-            "q-report"
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
           ],
           "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HQNFjl_aIAApPqK.jpg",
-            "https://t.co/2ZqnENCv3A",
-            "pic.x.com/2ZqnENCv3A"
-          ]
+            "https://pbs.twimg.com/media/HQSR2CoaQAAI2LN.jpg",
+            "https://t.co/MLrGKtVEBU",
+            "pic.x.com/MLrGKtVEBU",
+            "https://pbs.twimg.com/media/HQSR2WOacAAHT9L.jpg"
+          ],
+          "value_score": 15.0
         },
         "source_urls": [
-          "https://x.com/KoujiroOhmoto/status/2090591142270431265"
+          "https://x.com/assetformer/status/2090956498730144198"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HQNFjl_aIAApPqK.jpg",
-          "https://t.co/2ZqnENCv3A",
-          "pic.x.com/2ZqnENCv3A"
+          "https://pbs.twimg.com/media/HQSR2CoaQAAI2LN.jpg",
+          "https://t.co/MLrGKtVEBU",
+          "pic.x.com/MLrGKtVEBU",
+          "https://pbs.twimg.com/media/HQSR2WOacAAHT9L.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
@@ -211,7 +191,7 @@
         }
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_384227c4192cf041"
+      "inbox_id": "inbox_37f411435ca44595"
     },
     {
       "kind": "x_gap",
@@ -223,12 +203,12 @@
       "event_name": "麻布十番納涼盆踊り大会",
       "venue": "網代公園",
       "event_year": 2026,
-      "source_key": "x:2090632185363738807",
-      "source_url": "https://x.com/KoujiroOhmoto/status/2090632185363738807",
+      "source_key": "x:2091293744939327964",
+      "source_url": "https://x.com/2019Varekai/status/2091293744939327964",
       "recommended_action": "confirm_current_year_date",
       "payload": {
-        "candidate_id": "xgap_687d1521a1028d10",
-        "source_key": "x:2090632185363738807",
+        "candidate_id": "xgap_49b039f258adc0cd",
+        "source_key": "x:2091293744939327964",
         "lane_hint": "lane2",
         "candidate_kind": "missing_date",
         "priority_score": 205,
@@ -248,109 +228,8 @@
             "麻布十番納涼盆踊り大会"
           ]
         },
-        "source_url": "https://x.com/KoujiroOhmoto/status/2090632185363738807",
-        "source_text": "\nhttps://t.co/vkse4aO9Bb\n\n麻布十番納涼祭り\n Azabu-Juban Noryo Festival\n \nEnglish  Map\nhttps://t.co/vzYV0VgZpm\n\n8月22日土曜と23日日曜、麻布十番納涼まつり、午後３時より９時まで。各県からの名産品販売、商店街による露店、お祭り広場では各種行事あり。\n \n。赤い靴はいてた女の子像\n、赤い靴はいてた女の子は日本が貧しかった時代の実際にあった悲しい物語\n \n同じ日に六本木ヒルズでは夕方より盆踊りが毎年行われているので麻布十番から六本木ヒルズへ行くと両方を楽しめる。盆踊り は午後5時から8時 Azabu-Juban Noryo Festival\n• Dates & Time: Saturday, Aug 22 & Sunday, Aug 23 | 3:00 PM – 9:00 PM\n• Highlights:\n• Stalls featuring regional specialties from various prefectures\n• Food and game stalls run by l",
-        "source_author": "@KoujiroOhmoto",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@koujiroohmoto",
-          "account_name": "アドバイザーグループ",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8月22日",
-          "３時",
-          "９時",
-          "5時",
-          "8時"
-        ],
-        "observed_dates": [
-          "2026-08-22"
-        ],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@KoujiroOhmoto",
-          "name": "アドバイザーグループ",
-          "profile_description": "",
-          "title": "",
-          "text": "https://t.co/vkse4aO9Bb\n\n麻布十番納涼祭り\n Azabu-Juban Noryo Festival\n \nEnglish  Map\nhttps://t.co/vzYV0VgZpm\n\n8月22日土曜と23日日曜、麻布十番納涼まつり、午後３時より９時まで。各県からの名産品販売、商店街による露店、お祭り広場では各種行事あり。\n \n。赤い靴はいてた女の子像\n、赤い靴はいてた女の子は日本が貧しかった時代の実際にあった悲しい物語\n \n同じ日に六本木ヒルズでは夕方より盆踊りが毎年行われているので麻布十番から六本木ヒルズへ行くと両方を楽しめる。盆踊り は午後5時から8時 Azabu-Juban Noryo Festival\n• Dates & Time: Saturday, Aug 22 & Sunday, Aug 23 | 3:00 PM – 9:00 PM\n• Highlights:\n• Stalls featuring regional specialties from various prefectures\n• Food and game stalls run by lo",
-          "url": "https://x.com/KoujiroOhmoto/status/2090632185363738807",
-          "date": "2026-08-21T02:48:49+00:00",
-          "tweet_id": "2090632185363738807",
-          "tags": [
-            "🟡関心",
-            "q-report"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQNq5FgaYAAk6kE.jpg",
-            "https://t.co/di090lilUx",
-            "pic.x.com/di090lilUx"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/KoujiroOhmoto/status/2090632185363738807"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQNq5FgaYAAk6kE.jpg",
-          "https://t.co/di090lilUx",
-          "pic.x.com/di090lilUx"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "event_date_text": "2026\n8/22",
-        "observed_candidate": {
-          "candidate_key": "occ_e4a7eb02f5fed215"
-        }
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_30873d40903d51f6"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 205,
-      "title": "麻布十番納涼盆踊り大会",
-      "event_name": "麻布十番納涼盆踊り大会",
-      "venue": "網代公園",
-      "event_year": 2026,
-      "source_key": "x:2090765903629824226",
-      "source_url": "https://x.com/2019Varekai/status/2090765903629824226",
-      "recommended_action": "confirm_current_year_date",
-      "payload": {
-        "candidate_id": "xgap_837a30a2e8cadead",
-        "source_key": "x:2090765903629824226",
-        "lane_hint": "lane2",
-        "candidate_kind": "missing_date",
-        "priority_score": 205,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_e4a7eb02f5fed215",
-          "event_name": "麻布十番納涼盆踊り大会",
-          "venue": "網代公園",
-          "area": "",
-          "venue_area": "港区",
-          "venue_address": "東京都港区麻布十番2-15-1",
-          "date_start": "",
-          "date_end": "",
-          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-          "matched_aliases": [
-            "麻布十番納涼盆踊り大会",
-            "麻布十番納涼盆踊り大会"
-          ]
-        },
-        "source_url": "https://x.com/2019Varekai/status/2090765903629824226",
-        "source_text": "\n明日2026年8月22日(土曜日)のイベント、お祭り・花火！土曜日はガッツリイベントもりだくさん！たのしみましょー！\n\n【東京都】\n・麻布十番納涼まつり（本番初日） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（本番初日・盆踊り開始） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・中央区大江戸まつり盆おどり大会（本まつり・最終日） / 中央区（浜町公園）\n・大井どんたく夏まつり（初日・大井町駅前中央通り） / 品川区\n・Gタウン夏祭り2026 / 稲城市（東京ジャイアンツタウン スタジアム）\n\n【神奈川県】\n・金沢まつり花火大会（約3,500発・特大スターマイン） / 横浜市金沢区（海の公園）\n\n【埼玉県】\n・南越谷阿波踊り（本番初日・流し踊り＆舞台踊り） / 越谷市（新越谷・南越谷駅周辺）\n・さいたま市花火大会 岩槻文化公園会場 / さいたま市岩槻区\n・伊奈まつり（花火大会・縁日） / 北足立郡伊奈町\n\n【千葉県】\n⭐️中止のため注意してください→八千代ふるさと親子祭（約5,000発・灯籠流し）\n\n【群馬県】\n・高崎まつり / 高崎大花火大会（約15,000発",
+        "source_url": "https://x.com/2019Varekai/status/2091293744939327964",
+        "source_text": "\n【再掲】\n⭐️本日2026年8月23日(日曜日)の主要イベント！\n\n関東は特にゲリラ豪雨、地震の影響に気をつけつつ\n関西以西は暑さに気をつけつつ楽しみましょ！\n\n【東京都】\n・麻布十番納涼まつり（最終日・フィナーレ） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（最終日・本踊り） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・大井どんたく夏まつり（最終日） / 品川区（大井町駅前中央通り）\n・お台場竹ランタン祭り（最終日） / 江東区（シンボルプロムナード公園）\n\n【神奈川県】\n・湯河原温泉海上花火大会（約2,000発・尺玉連発） / 足柄下郡湯河原町（湯河原海岸）\n\n【埼玉県】\n・南越谷阿波踊り（最終日・熱狂の本祭フィナーレ） / 越谷市（新越谷・南越谷駅周辺）\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【千葉県】\n・きらっせ祭り花火大会（約3,400発・尺玉＆水中花火） / 神栖市（波崎海岸）\n・四街道ふるさとまつり（花火大会・本まつり） / 四街道市（中央公園）\n\n【群馬県】\n・おうら祭り花火大会（約8,000発・音楽",
         "source_author": "@2019Varekai",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
@@ -365,10 +244,10 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "8月22日"
+          "8月23日"
         ],
         "observed_dates": [
-          "2026-08-22"
+          "2026-08-23"
         ],
         "event_group_key": "",
         "known_venue_evidence": null,
@@ -378,117 +257,179 @@
           "name": "ににょ。👻考える。遊ぶ。気軽に繋がる。雑。",
           "profile_description": "⭐️朝5時30分と昼12時と夜19時付近に猫を頭に載せた女の子と変なポーズ→　#変なポーズnn 　日常系の漫画もあげるよ！気軽に繋がりましょう！\n⭐️不定期でお手紙シリーズ→ 　#ににょのお手紙ss\nあとは自由に世の中の変と遊んでます🔥\n時事ネタ、ニュース、投資、AI絵、ご飯。サブスクは実験！やめといて。",
           "title": "",
-          "text": "明日2026年8月22日(土曜日)のイベント、お祭り・花火！土曜日はガッツリイベントもりだくさん！たのしみましょー！\n\n【東京都】\n・麻布十番納涼まつり（本番初日） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（本番初日・盆踊り開始） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・中央区大江戸まつり盆おどり大会（本まつり・最終日） / 中央区（浜町公園）\n・大井どんたく夏まつり（初日・大井町駅前中央通り） / 品川区\n・Gタウン夏祭り2026 / 稲城市（東京ジャイアンツタウン スタジアム）\n\n【神奈川県】\n・金沢まつり花火大会（約3,500発・特大スターマイン） / 横浜市金沢区（海の公園）\n\n【埼玉県】\n・南越谷阿波踊り（本番初日・流し踊り＆舞台踊り） / 越谷市（新越谷・南越谷駅周辺）\n・さいたま市花火大会 岩槻文化公園会場 / さいたま市岩槻区\n・伊奈まつり（花火大会・縁日） / 北足立郡伊奈町\n\n【千葉県】\n⭐️中止のため注意してください→八千代ふるさと親子祭（約5,000発・灯籠流し）\n\n【群馬県】\n・高崎まつり / 高崎大花火大会（約15,000発・",
-          "url": "https://x.com/2019Varekai/status/2090765903629824226",
-          "date": "2026-08-21T11:40:10+00:00",
-          "tweet_id": "2090765903629824226",
+          "text": "【再掲】\n⭐️本日2026年8月23日(日曜日)の主要イベント！\n\n関東は特にゲリラ豪雨、地震の影響に気をつけつつ\n関西以西は暑さに気をつけつつ楽しみましょ！\n\n【東京都】\n・麻布十番納涼まつり（最終日・フィナーレ） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（最終日・本踊り） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・大井どんたく夏まつり（最終日） / 品川区（大井町駅前中央通り）\n・お台場竹ランタン祭り（最終日） / 江東区（シンボルプロムナード公園）\n\n【神奈川県】\n・湯河原温泉海上花火大会（約2,000発・尺玉連発） / 足柄下郡湯河原町（湯河原海岸）\n\n【埼玉県】\n・南越谷阿波踊り（最終日・熱狂の本祭フィナーレ） / 越谷市（新越谷・南越谷駅周辺）\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【千葉県】\n・きらっせ祭り花火大会（約3,400発・尺玉＆水中花火） / 神栖市（波崎海岸）\n・四街道ふるさとまつり（花火大会・本まつり） / 四街道市（中央公園）\n\n【群馬県】\n・おうら祭り花火大会（約8,000発・音楽シ",
+          "url": "https://x.com/2019Varekai/status/2091293744939327964",
+          "date": "2026-08-22T22:37:37+00:00",
+          "tweet_id": "2091293744939327964",
           "tags": [
             "🟡関心",
-            "q-venue"
+            "q-venue-tokyo-wards"
           ],
           "critique_post": false
         },
         "source_urls": [
-          "https://x.com/2019Varekai/status/2090765903629824226"
+          "https://x.com/2019Varekai/status/2091293744939327964"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
-        "event_date_text": "2026\n8/22",
+        "event_date_text": "2026\n8/23",
         "observed_candidate": {
           "candidate_key": "occ_e4a7eb02f5fed215"
         }
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_e6ad120ddda358da"
+      "inbox_id": "inbox_7bbff8f41b6bc3eb"
     },
     {
       "kind": "x_gap",
       "domain": "X",
       "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 205,
-      "title": "麻布十番納涼盆踊り大会",
-      "event_name": "麻布十番納涼盆踊り大会",
-      "venue": "網代公園",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "先日、合同盆踊り練習会を共催した\n#北野町和田盆踊り さんは\n#和田公園 にて\n8/22(土)･8/23(日)に開催🏮\n今年は #50周年記念🎉のようですね(ﾟ",
+      "event_name": "",
+      "venue": "",
       "event_year": 2026,
-      "source_key": "x:2090912272269066448",
-      "source_url": "https://x.com/2019Varekai/status/2090912272269066448",
-      "recommended_action": "confirm_current_year_date",
+      "source_key": "x:2082142444184023539",
+      "source_url": "https://x.com/uchikoshichokai/status/2082142444184023539",
+      "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_13be42f8215710c3",
-        "source_key": "x:2090912272269066448",
+        "candidate_id": "xgap_3b4adee6f17c536e",
+        "source_key": "x:2082142444184023539",
         "lane_hint": "lane2",
-        "candidate_kind": "missing_date",
-        "priority_score": 205,
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
         "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_e4a7eb02f5fed215",
-          "event_name": "麻布十番納涼盆踊り大会",
-          "venue": "網代公園",
-          "area": "",
-          "venue_area": "港区",
-          "venue_address": "東京都港区麻布十番2-15-1",
-          "date_start": "",
-          "date_end": "",
-          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-          "matched_aliases": [
-            "麻布十番納涼盆踊り大会",
-            "麻布十番納涼盆踊り大会"
-          ]
-        },
-        "source_url": "https://x.com/2019Varekai/status/2090912272269066448",
-        "source_text": "\n【再掲】2026年8月22日(土曜日)「今日のイベント」\nお祭り・花火！たのしみましょー！たこ焼きお好み焼きわた菓子･:*+.\\(( °ω° ))/.:+\n\n【東京都】\n・麻布十番納涼まつり（本番初日） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（本番初日・盆踊り開始） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・中央区大江戸まつり盆おどり大会（本まつり・最終日） / 中央区（浜町公園）\n・大井どんたく夏まつり（初日・大井町駅前中央通り） / 品川区\n・Gタウン夏祭り2026 / 稲城市（東京ジャイアンツタウン スタジアム）\n\n【神奈川県】\n・金沢まつり花火大会（約3,500発・特大スターマイン） / 横浜市金沢区（海の公園）\n\n【埼玉県】\n・南越谷阿波踊り（本番初日・流し踊り＆舞台踊り） / 越谷市（新越谷・南越谷駅周辺）\n・さいたま市花火大会 岩槻文化公園会場 / さいたま市岩槻区\n・伊奈まつり（花火大会・縁日） / 北足立郡伊奈町\n\n【千葉県】\n⭐️中止のため注意してください→八千代ふるさと親子祭（約5,000発・灯籠流し）\n\n【群馬県】\n・高崎まつり",
-        "source_author": "@2019Varekai",
+        "matched_occurrence": null,
+        "source_url": "https://x.com/uchikoshichokai/status/2082142444184023539",
+        "source_text": "\n先日、合同盆踊り練習会を共催した\n#北野町和田盆踊り さんは\n#和田公園 にて\n8/22(土)･8/23(日)に開催🏮\n今年は #50周年記念🎉のようですね(ﾟﾛﾟ)！\nおめでとうございます(ﾟ∀ﾟﾉﾉﾞﾊﾟﾁﾊﾟﾁﾊﾟﾁ\n模擬店は14時開店\n盆踊りは19時開始\n先日初見だった #北野町小唄\nを再挑戦しようかな😊 https://t.co/8NtZcogidL",
+        "source_author": "@uchikoshichokai",
         "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@2019varekai",
-          "account_name": "ににょ。👻考える。遊ぶ。気軽に繋がる。雑。",
-          "source_type": "",
-          "trust_level": "candidate",
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@uchikoshichokai",
+          "account_name": "打越町会事務局",
+          "source_type": "official",
+          "trust_level": "organizer_official",
           "reasons": [
-            "schedule_post_with_bon_context"
+            "registered_official_source_account"
           ],
-          "recommended_action": "find_independent_confirmation"
+          "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月22日"
+          "8/22",
+          "8/23",
+          "14時",
+          "19時"
         ],
         "observed_dates": [
-          "2026-08-22"
+          "2026-08-23"
         ],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@2019Varekai",
-          "name": "ににょ。👻考える。遊ぶ。気軽に繋がる。雑。",
-          "profile_description": "⭐️朝5時30分と昼12時と夜19時付近に猫を頭に載せた女の子と変なポーズ→　#変なポーズnn 　日常系の漫画もあげるよ！気軽に繋がりましょう！\n⭐️不定期でお手紙シリーズ→ 　#ににょのお手紙ss\nあとは自由に世の中の変と遊んでます🔥\n時事ネタ、ニュース、投資、AI絵、ご飯。サブスクは実験！やめといて。",
+          "account": "@uchikoshichokai",
+          "name": "打越町会事務局",
           "title": "",
-          "text": "【再掲】2026年8月22日(土曜日)「今日のイベント」\nお祭り・花火！たのしみましょー！たこ焼きお好み焼きわた菓子･:*+.\\(( °ω° ))/.:+\n\n【東京都】\n・麻布十番納涼まつり（本番初日） / 港区（麻布十番商店街一帯）\n・六本木ヒルズ盆踊り 2026（本番初日・盆踊り開始） / 港区（六本木ヒルズアリーナ・けやき坂通り）\n・中央区大江戸まつり盆おどり大会（本まつり・最終日） / 中央区（浜町公園）\n・大井どんたく夏まつり（初日・大井町駅前中央通り） / 品川区\n・Gタウン夏祭り2026 / 稲城市（東京ジャイアンツタウン スタジアム）\n\n【神奈川県】\n・金沢まつり花火大会（約3,500発・特大スターマイン） / 横浜市金沢区（海の公園）\n\n【埼玉県】\n・南越谷阿波踊り（本番初日・流し踊り＆舞台踊り） / 越谷市（新越谷・南越谷駅周辺）\n・さいたま市花火大会 岩槻文化公園会場 / さいたま市岩槻区\n・伊奈まつり（花火大会・縁日） / 北足立郡伊奈町\n\n【千葉県】\n⭐️中止のため注意してください→八千代ふるさと親子祭（約5,000発・灯籠流し）\n\n【群馬県】\n・高崎まつり ",
-          "url": "https://x.com/2019Varekai/status/2090912272269066448",
-          "date": "2026-08-21T21:21:47+00:00",
-          "tweet_id": "2090912272269066448",
+          "text": "先日、合同盆踊り練習会を共催した\n#北野町和田盆踊り さんは\n#和田公園 にて\n8/22(土)･8/23(日)に開催🏮\n今年は #50周年記念🎉のようですね(ﾟﾛﾟ)！\nおめでとうございます(ﾟ∀ﾟﾉﾉﾞﾊﾟﾁﾊﾟﾁﾊﾟﾁ\n模擬店は14時開店\n盆踊りは19時開始\n先日初見だった #北野町小唄\nを再挑戦しようかな😊 https://t.co/8NtZcogidL",
+          "url": "https://x.com/uchikoshichokai/status/2082142444184023539",
+          "date": "2026-07-28T16:33:37+00:00",
+          "tweet_id": "2082142444184023539",
           "tags": [
             "🟡関心",
-            "q-venue"
+            "q-poster-flyer"
           ],
-          "critique_post": false
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOU_qIlbsAAoXbM.jpg",
+            "https://t.co/8NtZcogidL",
+            "pic.x.com/8NtZcogidL"
+          ]
         },
         "source_urls": [
-          "https://x.com/2019Varekai/status/2090912272269066448"
+          "https://x.com/uchikoshichokai/status/2082142444184023539"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOU_qIlbsAAoXbM.jpg",
+          "https://t.co/8NtZcogidL",
+          "pic.x.com/8NtZcogidL"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_aebf4f2078a1a5d0"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【盆踊り情報2026】【蒲田】8/29(土)、30(日)に女塚神社で\n8月最後の週末❤️\n両日とも露店が出店しますよ～⛩️\nhttps://t.co/mdqFV",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2084414011412488293",
+      "source_url": "https://x.com/otafull/status/2084414011412488293",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_b817e7b7bfe08e28",
+        "source_key": "x:2084414011412488293",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/otafull/status/2084414011412488293",
+        "source_text": "\n【盆踊り情報2026】【蒲田】8/29(土)、30(日)に女塚神社で\n8月最後の週末❤️\n両日とも露店が出店しますよ～⛩️\nhttps://t.co/mdqFVgB1Zq\n#大田区　#商店街　#蒲田　#盆踊り",
+        "source_author": "@otafull",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8/29"
+        ],
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
+          "title": "",
+          "text": "【盆踊り情報2026】【蒲田】8/29(土)、30(日)に女塚神社で\n8月最後の週末❤️\n両日とも露店が出店しますよ～⛩️\nhttps://t.co/mdqFVgB1Zq\n#大田区　#商店街　#蒲田　#盆踊り",
+          "url": "https://x.com/otafull/status/2084414011412488293",
+          "date": "2026-08-03T23:00:01+00:00",
+          "tweet_id": "2084414011412488293",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/otafull/status/2084414011412488293"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
         "source_count": 1,
-        "event_date_text": "2026\n8/22",
-        "observed_candidate": {
-          "candidate_key": "occ_e4a7eb02f5fed215"
-        }
+        "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_9029c95ac8842046"
+      "inbox_id": "inbox_1f7f9c143502a25b"
     }
   ],
   "selection": {
@@ -496,11 +437,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2090590395843612755",
-      "x:2090591142270431265",
-      "x:2090632185363738807",
-      "x:2090765903629824226",
-      "x:2090912272269066448"
+      "x:2091121714977775792",
+      "x:2090956498730144198",
+      "x:2091293744939327964",
+      "x:2082142444184023539",
+      "x:2084414011412488293"
     ]
   },
   "write_mode": "snapshot_only_default_off",
