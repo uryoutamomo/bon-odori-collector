@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23",
+  "updated_at": "2026-08-24",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -370,6 +370,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@asahina_daiki",
+      "name": "朝比奈 だいき／泉大津市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@asakawayosiharu",
       "name": "浅川義治|日本維新の会元衆議院議員　神奈川1区(横浜市中区・磯子区・金沢区)神奈川維新の会",
       "source_type": "official",
@@ -639,6 +647,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@daichi_kitaya",
+      "name": "北谷大地｜春日部市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@daisen1989",
       "name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
       "source_type": "official",
@@ -657,6 +673,14 @@
     {
       "handle": "@dakespa",
       "name": "岳温泉観光協会【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@dannishio",
+      "name": "流山市議会議員　西尾だん",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1857,6 +1881,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@jasdf_kozoji",
+      "name": "航空自衛隊　高蔵寺分屯基地【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@jichikaihi",
       "name": "ライフコスト総研💸自治会費マップで全国の町内会費を比較！PTAマップ🆕 消防団マップ🆕",
       "source_type": "official",
@@ -1867,6 +1899,14 @@
     {
       "handle": "@jindaijit",
       "name": "浮岳山 深大寺【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@jinjamemo",
+      "name": "御朱印・神社メモ",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -1931,6 +1971,14 @@
     {
       "handle": "@junkokokumin",
       "name": "横溝じゅん子 国民民主党 横浜市議会議員(金沢区)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@junnoguchi5",
+      "name": "野口じゅん@市川市議会議員→千葉県政に挑戦",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2206,6 +2254,14 @@
     {
       "handle": "@kawamoto188cm",
       "name": "川本ひろたけ＠流山市議会議員　🌳🚋 南流山活性化 🚋🌳",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@kawasemigirl",
+      "name": "島田 亜紀　RICE🌾犬山市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -2511,6 +2567,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@koba__masa",
+      "name": "小林まさよし（武蔵野市議会議員、自民党）",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@kobaken_komei",
       "name": "小林けんじ【公明党 東京都議会議員 練馬区選出】",
       "source_type": "official",
@@ -2664,6 +2728,25 @@
       "pending_since": "2026-08-14"
     },
     {
+      "handle": "@kosakaeiji",
+      "name": "小坂英二（日本保守党　衆議院東京都第２９区支部長　前荒川区議）",
+      "source_type": "official",
+      "linked_events": [
+        {
+          "series_id": "ser_33f74ac30a6a48b6",
+          "series_name": "戸越宮前盆踊り",
+          "ward": "品川区",
+          "confidence": "possible",
+          "evidence_urls": [
+            "https://x.com/kosakaeiji/status/2091465830550896764"
+          ]
+        }
+      ],
+      "decided_by": "machine",
+      "tier": "pending_review",
+      "pending_since": "2026-08-24"
+    },
+    {
       "handle": "@kosenbamachi1",
       "name": "小仙波町一丁目自治会",
       "source_type": "official",
@@ -2682,6 +2765,14 @@
     {
       "handle": "@kotogahamabon",
       "name": "琴ヶ浜盆踊保存会",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@koudayuriko",
+      "name": "甲田ゆり子 中野区議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -3031,6 +3122,15 @@
       "source_type": "official",
       "linked_events": [
         {
+          "series_id": "ser_3c52e4c79ea456d0",
+          "series_name": "新町公民会 盆踊り大会 8月17日(日) 17:00- 。",
+          "ward": "世田谷区",
+          "confidence": "possible",
+          "evidence_urls": [
+            "https://x.com/mana_setagaya/status/2091527418582589848"
+          ]
+        },
+        {
           "series_id": "series_7b6d61bd7902b28d",
           "series_name": "からすやま夏まつり 盆踊り大会",
           "ward": "世田谷区",
@@ -3312,15 +3412,15 @@
           "series_id": "ser_599e01836541e6b0",
           "series_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。",
           "ward": "世田谷区",
-          "confidence": "possible",
+          "confidence": "probable",
           "evidence_urls": [
-            "https://x.com/miki_setagaya/status/2091067383293362225"
+            "https://x.com/miki_setagaya/status/2091067383293362225",
+            "https://x.com/miki_setagaya/status/2091444931781136461"
           ]
         }
       ],
       "decided_by": "machine",
-      "tier": "pending_review",
-      "pending_since": "2026-08-23"
+      "tier": "dormant"
     },
     {
       "handle": "@mikiko_uenaka06",
@@ -3491,6 +3591,14 @@
     {
       "handle": "@miyajimaosamu",
       "name": "宮島おさむ🌾 公明 北区議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@miyamoto_shunma",
+      "name": "宮本 しゅんま (荒川区議会議員)",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -3907,6 +4015,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@narita_fudou",
+      "name": "大本山成田山新勝寺【公式】",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@naruko_onsenkyo",
       "name": "鳴子温泉郷観光協会",
       "source_type": "official",
@@ -4091,6 +4207,14 @@
     {
       "handle": "@norihirouehata",
       "name": "うえはた のりひろ神戸市会議員＠東灘区選出 （上畠寛弘）",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@noriko_katagiri",
+      "name": "片桐のり子（日本維新の会・神奈川県会議員/神奈川区）",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -4696,6 +4820,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@roromomon",
+      "name": "高見りょう（維新　衆議院議員　東住吉・阿倍野・平野・生野)",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@ruikozuka",
       "name": "Ruiko Kozuka 炎上寺ルイコ",
       "source_type": "official",
@@ -4749,6 +4881,14 @@
     {
       "handle": "@s_sigeki",
       "name": "杉江 繁樹（愛知県議会議員）",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@s_yuka1",
+      "name": "鈴木ゆか【杉並区議会議員 都民ファーストの会】",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5404,6 +5544,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@suzuki_tomoaki",
+      "name": "鈴木ともあき🌈松戸市議会議員☀公明党",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@suzuki_yumi_",
       "name": "鈴木ゆみ🌾公明党🍚大田区議会議員",
       "source_type": "official",
@@ -5495,6 +5643,14 @@
     {
       "handle": "@takahara_s_100",
       "name": "高原伸一 三原市議会議員 🍚RICE🌾",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@takahashi_0314",
+      "name": "高橋まさとし｜墨田区議会議員｜公明党",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -5620,6 +5776,14 @@
     {
       "handle": "@takoyamatakota",
       "name": "龍胆寺れん",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@takumi_tokyo159",
+      "name": "高橋たくみ【江東区】都議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -6195,6 +6359,14 @@
       "tier": "unlinked"
     },
     {
+      "handle": "@xy4o7wdtmw88184",
+      "name": "わたなべひろみ🌾RICE🍚桶川市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
       "handle": "@yaguchiyasuyuki",
       "name": "矢口やすゆき 自民党杉並区議会議員",
       "source_type": "official",
@@ -6390,9 +6562,20 @@
       "handle": "@ydxsxk96wyjpcr9",
       "name": "松田ともこ🌹公明党荒川区議会議員🌹４期",
       "source_type": "official",
-      "linked_events": [],
+      "linked_events": [
+        {
+          "series_id": "ser_33f74ac30a6a48b6",
+          "series_name": "戸越宮前盆踊り",
+          "ward": "品川区",
+          "confidence": "possible",
+          "evidence_urls": [
+            "https://x.com/YDXSXk96wyJpCR9/status/2091640322485051658"
+          ]
+        }
+      ],
       "decided_by": "machine",
-      "tier": "unlinked"
+      "tier": "pending_review",
+      "pending_since": "2026-08-24"
     },
     {
       "handle": "@yodohime_jinja",
@@ -6461,6 +6644,14 @@
     {
       "handle": "@yomenardo",
       "name": "日原 未知子＠板橋区議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@yoshi_kosa",
+      "name": "小坂よしひさ (台東区議会議員)",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",
@@ -6629,6 +6820,14 @@
     {
       "handle": "@yuyaikeda_mtk",
       "name": "池田有也　三鷹市議会議員",
+      "source_type": "official",
+      "linked_events": [],
+      "decided_by": "machine",
+      "tier": "unlinked"
+    },
+    {
+      "handle": "@yuyatsu0327",
+      "name": "三代川ゆうや　習志野市議会議員",
       "source_type": "official",
       "linked_events": [],
       "decided_by": "machine",

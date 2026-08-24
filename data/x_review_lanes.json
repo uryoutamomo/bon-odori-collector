@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_review_lanes.py",
-  "generated_at": "2026-08-23T07:16:18.055169+00:00",
+  "generated_at": "2026-08-24T07:34:55.791383+00:00",
   "contract": {
     "daily_input_max": 30,
     "lane3_user_review_max": 3,
@@ -95,6 +95,86 @@
     ],
     "lane2_operator_review": [
       {
+        "candidate_id": "xgap_0b5990e1f69d9b27",
+        "source_key": "x:2091410560848175322",
+        "lane_hint": "lane2",
+        "candidate_kind": "schedule_change",
+        "priority_score": 305,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "venue": "網代公園",
+          "area": "",
+          "venue_area": "港区",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "date_start": "",
+          "date_end": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/hakkaisan1922/status/2091410560848175322",
+        "source_text": "\n【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
+        "source_author": "@hakkaisan1922",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@hakkaisan1922",
+          "account_name": "Hakkaisan/八海山公式",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "15時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@hakkaisan1922",
+          "name": "Hakkaisan/八海山公式",
+          "profile_description": "新潟・南魚沼の酒蔵 八海山公式🍶\n食事に寄り添う日本酒を中心に、麹甘酒・クラフトビール・ジン・焼酎、魚沼の里（複合施設）や直営店まで。\n雪国の発酵文化と暮らしを発信中❄️\nフォロー＆お酒情報は20歳以上限定です。\n※公式SNSはX/Instagram2種/Facebook/YouTube",
+          "title": "",
+          "text": "【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
+          "url": "https://x.com/hakkaisan1922/status/2091410560848175322",
+          "date": "2026-08-23T06:21:48+00:00",
+          "tweet_id": "2091410560848175322",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
+            "https://t.co/wQVTDD7ulH",
+            "pic.x.com/wQVTDD7ulH",
+            "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
+            "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/hakkaisan1922/status/2091410560848175322"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
+          "https://t.co/wQVTDD7ulH",
+          "pic.x.com/wQVTDD7ulH",
+          "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
+          "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "lane": "lane3_user_review"
+      },
+      {
         "candidate_id": "xgap_136baf2aafa21680",
         "source_key": "x:2090797259407364200",
         "lane_hint": "lane2",
@@ -162,6 +242,88 @@
           "https://x.com/takasho06130613/status/2090797259407364200"
         ],
         "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "lane": "lane3_user_review"
+      },
+      {
+        "candidate_id": "xgap_bf6ea33203fbbcb2",
+        "source_key": "x:2091782131345506727",
+        "lane_hint": "lane2",
+        "candidate_kind": "date_range_conflict",
+        "priority_score": 255,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_111db14c810ac6dd",
+          "event_name": "中目黒盆踊り大会",
+          "venue": "フナイリバ（目黒川船入場広場）",
+          "area": "",
+          "venue_area": "目黒区",
+          "venue_address": "東京都目黒区中目黒1-11-18",
+          "date_start": "2026-08-29",
+          "date_end": "2026-08-30",
+          "detail": "2026年は第二回。13:00〜21:00開催。中目黒盆踊り大会の公式X告知投稿より。",
+          "matched_aliases": [
+            "中目黒盆踊り大会",
+            "中目黒盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/PIERROT_TAXI/status/2091782131345506727",
+        "source_text": "\n【東京23区 夏祭り瓦版🏮】\n8/24(月)〜8/30(日)\n#ピエロ戦略メモ\n\n8月最後の一週間。\n都内各地で夏祭りが一気に開催🔥\n\n🏮 東京高円寺阿波おどり\n🎐 スーパーよさこい2026\n💃 浅草サンバカーニバル\n🏮 東京大塚阿波おどり\n🎆 田端銀座盆踊り大会\n🏮 赤羽納涼フェスタ2026\n🌙 蒲田夜市\n🎐 用賀サマーフェスティバル2026\n🏮 中目黒盆踊り大会\n🎆 三宿夏祭り2026",
+        "source_author": "@PIERROT_TAXI",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@pierrot_taxi",
+          "account_name": "タクドラピエロ🤡",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/24",
+          "8/30"
+        ],
+        "observed_dates": [
+          "2026-08-24",
+          "2026-08-30"
+        ],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@PIERROT_TAXI",
+          "name": "タクドラピエロ🤡",
+          "profile_description": "@PIERROT_DARKT #ピエロメモ #ピエロ戦略メモ｜都内タクドラ6年目の羽カス🤡✈️｜隔勤遅番｜城南・羽田空港が好き。営業日報、道路・羽田・イベント情報、ピエッピーとのAI営業分析をポスト。成功も失敗も全部公開ぴえ。好きなガンダムは0083。\n#ピエロニュース",
+          "title": "",
+          "text": "【東京23区 夏祭り瓦版🏮】\n8/24(月)〜8/30(日)\n#ピエロ戦略メモ\n\n8月最後の一週間。\n都内各地で夏祭りが一気に開催🔥\n\n🏮 東京高円寺阿波おどり\n🎐 スーパーよさこい2026\n💃 浅草サンバカーニバル\n🏮 東京大塚阿波おどり\n🎆 田端銀座盆踊り大会\n🏮 赤羽納涼フェスタ2026\n🌙 蒲田夜市\n🎐 用賀サマーフェスティバル2026\n🏮 中目黒盆踊り大会\n🎆 三宿夏祭り2026",
+          "url": "https://x.com/PIERROT_TAXI/status/2091782131345506727",
+          "date": "2026-08-24T06:58:18+00:00",
+          "tweet_id": "2091782131345506727",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQeAwVsbwAARPPK.jpg",
+            "https://t.co/00KvVrWmlE",
+            "pic.x.com/00KvVrWmlE",
+            "https://pbs.twimg.com/media/HQeAwuIa0AAwCXT.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/PIERROT_TAXI/status/2091782131345506727"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQeAwVsbwAARPPK.jpg",
+          "https://t.co/00KvVrWmlE",
+          "pic.x.com/00KvVrWmlE",
+          "https://pbs.twimg.com/media/HQeAwuIa0AAwCXT.jpg"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
@@ -286,9 +448,7 @@
         "date_hints": [
           "8月22"
         ],
-        "observed_dates": [
-          "2026-08-23"
-        ],
+        "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
@@ -372,7 +532,6 @@
           "8月2"
         ],
         "observed_dates": [
-          "2026-08-23",
           "2026-08-29",
           "2026-08-30"
         ],
@@ -987,9 +1146,7 @@
           "8/22",
           "8/23"
         ],
-        "observed_dates": [
-          "2026-08-23"
-        ],
+        "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
@@ -1366,9 +1523,7 @@
           "8月22日",
           "8月23日"
         ],
-        "observed_dates": [
-          "2026-08-23"
-        ],
+        "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
@@ -1448,9 +1603,7 @@
         "date_hints": [
           "8月23日"
         ],
-        "observed_dates": [
-          "2026-08-23"
-        ],
+        "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
@@ -1789,143 +1942,91 @@
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
-      },
+      }
+    ],
+    "lane3_user_review": [
       {
-        "candidate_id": "xgap_2276f6430a7977d5",
-        "source_key": "x:2081386011142307988",
-        "lane_hint": "lane2",
-        "candidate_kind": "past_event_report",
-        "priority_score": 95,
+        "candidate_id": "xgap_6a0a76b4c02f91f9",
+        "source_key": "x:2091494482340704270",
+        "lane_hint": "lane1",
+        "candidate_kind": "schedule_change",
+        "priority_score": 325,
         "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/gPVEQeAD9U10257/status/2081386011142307988",
-        "source_text": "\n７月２６日\n南小岩二丁目公園\n昭栄自治会盆踊り🏮\n巣鴨地蔵盆踊りからハシゴ\n⭐地域の盆踊りの普及活動も\n行なっている歌手の\n美濃屋マチコさんは子供達に\n盆踊りを教えて区内を回って\nいます👏偉いです✨\n⭐ダンヒロ　365の紙飛行機\n　盆ギリ　アンパンマン等\n　楽しかった👏\n#盆踊り\n#江戸川区 https://t.co/7vdRAtjIYS",
-        "source_author": "@gPVEQeAD9U10257",
+        "matched_occurrence": {
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "venue": "網代公園",
+          "area": "",
+          "venue_area": "港区",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "date_start": "",
+          "date_end": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/jinjamemo/status/2091494482340704270",
+        "source_text": "\n穴守稲荷神社。大田区羽田。\n東京羽田のお稲荷さん。\n\n8月22日・23日は献灯祭。当日限定の「献灯祭特別御朱印」を頂きました。書き置きのみ。灯明1本付きで灯明台に献灯も。\n\n初日は荒天のため点灯式は中止になってしまったようですが2日目は無事開催。とても賑わっていて楽しいお祭りでした。暗くなるととても幻想的。\n\n行灯も申し込みしておいたのですが自分たちで点灯させてもらいとてもよかったです。色々なイラストでの奉納もあって眺めているだけでも楽しい。\n\n今風に言うとエモい。\n\n色々なお店も出店していたので美味しく楽しく幻想的なお祭り。\n\n例年この日は麻布十番納涼まつりや近くの例大祭と重なるので中々当日に参拝できませんでしたが、やはりとても良いですね。できれば毎年参拝したいなと思わせてくれます。\n\n※画像だと全然伝わらないので雰囲気が伝わる動画も後でpostしておきます。\n\n.....\n\n穴守稲荷神社は文化元年（1804）に創建。羽田浦（現在の羽田空港の敷地内）に創建されたお稲荷様です。\n\n天明年間（1781年-1788年）、羽田猟師町の名主・鈴木弥五右衛門が幕府より開墾の許可を得て要島と呼ば",
+        "source_author": "@jinjamemo",
         "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@gpveqead9u10257",
-          "account_name": "卯ケン",
-          "source_type": "",
-          "trust_level": "candidate",
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@jinjamemo",
+          "account_name": "御朱印・神社メモ",
+          "source_type": "official",
+          "trust_level": "organizer_official",
           "reasons": [
-            "schedule_post_with_bon_context"
+            "registered_official_source_account"
           ],
-          "recommended_action": "find_independent_confirmation"
+          "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "７月２６日"
+          "8月22日"
         ],
-        "observed_dates": [
-          "2026-07-26"
-        ],
+        "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@gPVEQeAD9U10257",
-          "name": "卯ケン",
+          "account": "@jinjamemo",
+          "name": "御朱印・神社メモ",
+          "profile_description": "ブログ「御朱印・神社メモ」のアカウント。都内中心に神社巡り・御朱印を拝受しています。ブログでは神社情報や考察を中心に御朱印をメモ。神社巡りの参考になりましたら幸いです。目黒育ち目黒住み。毎日和服(着物)生活。フォロー・リムーブお気軽に。https://t.co/zEzWaIpWTV",
           "title": "",
-          "text": "７月２６日\n南小岩二丁目公園\n昭栄自治会盆踊り🏮\n巣鴨地蔵盆踊りからハシゴ\n⭐地域の盆踊りの普及活動も\n行なっている歌手の\n美濃屋マチコさんは子供達に\n盆踊りを教えて区内を回って\nいます👏偉いです✨\n⭐ダンヒロ　365の紙飛行機\n　盆ギリ　アンパンマン等\n　楽しかった👏\n#盆踊り\n#江戸川区 https://t.co/7vdRAtjIYS",
-          "url": "https://x.com/gPVEQeAD9U10257/status/2081386011142307988",
-          "date": "2026-07-26T14:27:49+00:00",
-          "tweet_id": "2081386011142307988",
+          "text": "穴守稲荷神社。大田区羽田。\n東京羽田のお稲荷さん。\n\n8月22日・23日は献灯祭。当日限定の「献灯祭特別御朱印」を頂きました。書き置きのみ。灯明1本付きで灯明台に献灯も。\n\n初日は荒天のため点灯式は中止になってしまったようですが2日目は無事開催。とても賑わっていて楽しいお祭りでした。暗くなるととても幻想的。\n\n行灯も申し込みしておいたのですが自分たちで点灯させてもらいとてもよかったです。色々なイラストでの奉納もあって眺めているだけでも楽しい。\n\n今風に言うとエモい。\n\n色々なお店も出店していたので美味しく楽しく幻想的なお祭り。\n\n例年この日は麻布十番納涼まつりや近くの例大祭と重なるので中々当日に参拝できませんでしたが、やはりとても良いですね。できれば毎年参拝したいなと思わせてくれます。\n\n※画像だと全然伝わらないので雰囲気が伝わる動画も後でpostしておきます。\n\n.....\n\n穴守稲荷神社は文化元年（1804）に創建。羽田浦（現在の羽田空港の敷地内）に創建されたお稲荷様です。\n\n天明年間（1781年-1788年）、羽田猟師町の名主・鈴木弥五右衛門が幕府より開墾の許可を得て要島と呼ばれ",
+          "url": "https://x.com/jinjamemo/status/2091494482340704270",
+          "date": "2026-08-23T11:55:17+00:00",
+          "tweet_id": "2091494482340704270",
           "tags": [
-            "🟢一次レポ",
-            "q-poster-flyer"
+            "🟡関心",
+            "q-cancel-change"
           ],
+          "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HOKRcrUboAEumxr.jpg",
-            "https://t.co/7vdRAtjIYS",
-            "pic.x.com/7vdRAtjIYS",
-            "https://pbs.twimg.com/amplify_video_thumb/2081385936244588545/img/tv_EiednWtFWCuES.jpg"
+            "https://pbs.twimg.com/media/HQZ7JJCbMAAumLm.jpg",
+            "https://t.co/dT7bp41AfF",
+            "pic.x.com/dT7bp41AfF",
+            "https://pbs.twimg.com/media/HQZ7JI_aoAAzZGe.jpg",
+            "https://pbs.twimg.com/media/HQZ7JJOasAAmYDq.jpg",
+            "https://pbs.twimg.com/media/HQZ7JJLaUAACcRN.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/gPVEQeAD9U10257/status/2081386011142307988"
+          "https://x.com/jinjamemo/status/2091494482340704270"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HOKRcrUboAEumxr.jpg",
-          "https://t.co/7vdRAtjIYS",
-          "pic.x.com/7vdRAtjIYS",
-          "https://pbs.twimg.com/amplify_video_thumb/2081385936244588545/img/tv_EiednWtFWCuES.jpg"
+          "https://pbs.twimg.com/media/HQZ7JJCbMAAumLm.jpg",
+          "https://t.co/dT7bp41AfF",
+          "pic.x.com/dT7bp41AfF",
+          "https://pbs.twimg.com/media/HQZ7JI_aoAAzZGe.jpg",
+          "https://pbs.twimg.com/media/HQZ7JJOasAAmYDq.jpg",
+          "https://pbs.twimg.com/media/HQZ7JJLaUAACcRN.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "lane": "lane3_user_review"
       },
-      {
-        "candidate_id": "xgap_42ed9afa1ae5f55b",
-        "source_key": "x:2081507393268269352",
-        "lane_hint": "lane2",
-        "candidate_kind": "past_event_report",
-        "priority_score": 95,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/blue_sky_blue_j/status/2081507393268269352",
-        "source_text": "\n#傳通院納涼盆踊り大会 (2026/7/26)\n初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。\n振帳をベースにした橋幸夫の盆ダンスが目玉でした✨ 一休さんかかったのか…間に合わず残念。\n地域のランドマークで催された楽しいフェスでした♪ https://t.co/Bu6RWRAI53",
-        "source_author": "@blue_sky_blue_j",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@blue_sky_blue_j",
-          "account_name": "star_joo (秋山 星司/ Akiyama Joji)",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "2026/7/26"
-        ],
-        "observed_dates": [
-          "2026-07-26"
-        ],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x_whitelist",
-          "account": "@blue_sky_blue_j",
-          "name": "star_joo (秋山 星司/ Akiyama Joji)",
-          "title": "",
-          "text": "#傳通院納涼盆踊り大会 (2026/7/26)\n初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。\n振帳をベースにした橋幸夫の盆ダンスが目玉でした✨ 一休さんかかったのか…間に合わず残念。\n地域のランドマークで催された楽しいフェスでした♪ https://t.co/Bu6RWRAI53",
-          "url": "https://x.com/blue_sky_blue_j/status/2081507393268269352",
-          "date": "2026-07-26T22:30:09+00:00",
-          "tweet_id": "2081507393268269352",
-          "tags": [
-            "⭐盆踊ラー",
-            "📌予定候補",
-            "🟡関心"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOL_2nAaIAAI7D_.jpg",
-            "https://t.co/Bu6RWRAI53",
-            "pic.x.com/Bu6RWRAI53",
-            "https://pbs.twimg.com/amplify_video_thumb/2081507346359218176/img/yua6v-JpcrIp2Hx-.jpg",
-            "https://pbs.twimg.com/media/HOL_7dFb0AA-wlS.jpg",
-            "https://pbs.twimg.com/media/HOL_8JDbAAAlKB5.jpg"
-          ],
-          "value_score": 16.0
-        },
-        "source_urls": [
-          "https://x.com/blue_sky_blue_j/status/2081507393268269352"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HOL_2nAaIAAI7D_.jpg",
-          "https://t.co/Bu6RWRAI53",
-          "pic.x.com/Bu6RWRAI53",
-          "https://pbs.twimg.com/amplify_video_thumb/2081507346359218176/img/yua6v-JpcrIp2Hx-.jpg",
-          "https://pbs.twimg.com/media/HOL_7dFb0AA-wlS.jpg",
-          "https://pbs.twimg.com/media/HOL_8JDbAAAlKB5.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "lane": "lane3_user_review"
-      }
-    ],
-    "lane3_user_review": [
       {
         "candidate_id": "xgap_1ed5e67a4cef4579",
         "source_key": "x:2091121714977775792",
@@ -1966,9 +2067,7 @@
         "date_hints": [
           "8月23日"
         ],
-        "observed_dates": [
-          "2026-08-23"
-        ],
+        "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
@@ -2070,86 +2169,6 @@
           "https://pbs.twimg.com/media/HQYNNvFbQAAHBke.jpg",
           "https://pbs.twimg.com/media/HQYNNvCaYAAl10V.jpg",
           "https://pbs.twimg.com/media/HQYNNvDaYAApUvw.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "lane": "lane3_user_review"
-      },
-      {
-        "candidate_id": "xgap_0b5990e1f69d9b27",
-        "source_key": "x:2091410560848175322",
-        "lane_hint": "lane2",
-        "candidate_kind": "schedule_change",
-        "priority_score": 305,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_e4a7eb02f5fed215",
-          "event_name": "麻布十番納涼盆踊り大会",
-          "venue": "網代公園",
-          "area": "",
-          "venue_area": "港区",
-          "venue_address": "東京都港区麻布十番2-15-1",
-          "date_start": "",
-          "date_end": "",
-          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-          "matched_aliases": [
-            "麻布十番納涼盆踊り大会",
-            "麻布十番納涼盆踊り大会"
-          ]
-        },
-        "source_url": "https://x.com/hakkaisan1922/status/2091410560848175322",
-        "source_text": "\n【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
-        "source_author": "@hakkaisan1922",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@hakkaisan1922",
-          "account_name": "Hakkaisan/八海山公式",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "15時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@hakkaisan1922",
-          "name": "Hakkaisan/八海山公式",
-          "profile_description": "新潟・南魚沼の酒蔵 八海山公式🍶\n食事に寄り添う日本酒を中心に、麹甘酒・クラフトビール・ジン・焼酎、魚沼の里（複合施設）や直営店まで。\n雪国の発酵文化と暮らしを発信中❄️\nフォロー＆お酒情報は20歳以上限定です。\n※公式SNSはX/Instagram2種/Facebook/YouTube",
-          "title": "",
-          "text": "【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
-          "url": "https://x.com/hakkaisan1922/status/2091410560848175322",
-          "date": "2026-08-23T06:21:48+00:00",
-          "tweet_id": "2091410560848175322",
-          "tags": [
-            "🟡関心",
-            "q-cancel-change"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
-            "https://t.co/wQVTDD7ulH",
-            "pic.x.com/wQVTDD7ulH",
-            "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
-            "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/hakkaisan1922/status/2091410560848175322"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
-          "https://t.co/wQVTDD7ulH",
-          "pic.x.com/wQVTDD7ulH",
-          "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
-          "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,

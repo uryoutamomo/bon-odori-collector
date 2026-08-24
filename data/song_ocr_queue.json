@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 97,
+  "count": 106,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -1559,6 +1559,156 @@
         "pic.x.com/MtJTheIBJo"
       ],
       "text": "昨日は来週に向けて、つぐみさん振付の曲をいくつか確認しました。\n予想どおりの難曲ぞろいで、振りを追うだけでも精一杯。私も本番までに自宅でもう少し練習しておかないといけません（笑）\n\n来週だけでなく、秋の盆おどりフェスタのスケジュールと曲目もかなり具体的になってきました。これまでスケジュールで悩んでいた部分も昨日クリアになり、良かったです（＾∇＾）\n秋に向けた準備も少しずつ進めていきます。\n\nそして一昨日に続いてKITTEへ。今回は前半まででしたが、前日にはなかった「アラレちゃん音頭」「おどるポンポコリン」「しんちゃん音頭」も踊ることができました。\n相変わらずの人出で踊る場所は狭かったですが、知り合いの方々と一緒に踊れたのもうれしく、前日とはまた違った楽しさのある時間になりました（笑）\nこの日は推しの子とも盆踊りの話がいろいろ広がり、楽しいだけでなく、ありがたいこともありました！\n\n来週の竹芝も、秋の盆おどりフェスタも、ますます楽しみになってきました。まずは難曲の自主練から頑張ります（笑）",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "617d109239fe39af",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2091497447512265078",
+      "tweet_id": "2091497447512265078",
+      "date": "2026-08-23T12:07:04+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2091496901351030784/img/hN6Unc0ynqF_zVsk.jpg",
+        "https://t.co/RUZcnDdxTc",
+        "pic.x.com/RUZcnDdxTc",
+        "https://pbs.twimg.com/amplify_video_thumb/2091497130456453120/img/DXKY_Z67qwiksyn9.jpg",
+        "https://pbs.twimg.com/media/HQZ91W2bYAAAUL5.jpg",
+        "https://pbs.twimg.com/media/HQZ91rla4AAe6Jy.jpg"
+      ],
+      "text": "2026年8月23日(日)\n茨城県水戸市\n／リリーアリーナMITO\n\n室内イベントで、盆踊りだけでなく、書道パフォーマンス、太鼓、音楽演奏等、様々なステージがありました。\n\n【曲目】\n燃えろ元気水戸まつり\n黄門ばやし\n\n〈子供向けのダンスタイム〉\nみとちゃんダンス\nジャンボリーミッキー\nマツケンサンバII https://t.co/RUZcnDdxTc",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "d38852de5a4255bd",
+      "status": "needs_ocr",
+      "account": "@Atutakamama7034",
+      "url": "https://x.com/Atutakamama7034/status/2091499546329190632",
+      "tweet_id": "2091499546329190632",
+      "date": "2026-08-23T12:15:24+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQZ_uT8aAAEa66n.jpg",
+        "https://t.co/BiYFmIP50V",
+        "pic.x.com/BiYFmIP50V",
+        "https://pbs.twimg.com/media/HQZ_vB3boAAaTD4.jpg",
+        "https://pbs.twimg.com/media/HQZ_vxOakAAJrDv.jpg"
+      ],
+      "text": "移動してきた、久我山。曲目数はそれほど多くはないですが、新しい曲を毎年入れてくださるので、とても楽しく踊らせていただいています。今年は「メリーアン音頭」と「好きすぎて滅」。昨日、雨で中止になり、余るからと大人にまでジュースを配っていただき、有難かったです。 #盆踊り #久我山 https://t.co/BiYFmIP50V",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "a3e968fb4644d20a",
+      "status": "needs_ocr",
+      "account": "@tukishimanagaya",
+      "url": "https://x.com/tukishimanagaya/status/2091518618169463064",
+      "tweet_id": "2091518618169463064",
+      "date": "2026-08-23T13:31:11+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQaOGBIb0AAWcMK.jpg",
+        "https://t.co/S4FndhgA5s",
+        "pic.x.com/S4FndhgA5s",
+        "https://pbs.twimg.com/media/HQaOGBJb0AAzFDX.jpg"
+      ],
+      "text": "🏮第2回DEUX TOURS(ドゥ・トゥール)盆おどり🏮 \n\n✅1日目はイマドキのヒット曲\n→雨天中止☔️\n\n✅2日目は皆様おなじみの選曲\nセットリスト\nこれがお江戸の盆ダンス\n東京音頭\nダンシング・ヒーロー\nきよしのズンドコ節\n銀座カンカン娘\n炭鉱節\nバハマママ\n\n関係者の皆さまありがとうございました！🙏 https://t.co/S4FndhgA5s",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "3daa9ebe51446390",
+      "status": "needs_ocr",
+      "account": "@Ma_umojh",
+      "url": "https://x.com/Ma_umojh/status/2091524603466412346",
+      "tweet_id": "2091524603466412346",
+      "date": "2026-08-23T13:54:58+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQaWilJa0AEVhW3.jpg",
+        "https://t.co/DCdBfZcBGF",
+        "pic.x.com/DCdBfZcBGF"
+      ],
+      "text": "🏮61 東習志野八丁目盆踊り\n\n習志野ご当地を踊りたくて行ってきました。\n30分の滞在でしたがかかりませんでした😇\n曲目は⤵にちょっと渋めの曲が多い🤔それに振り付けも一部違いますね。\n複数町会持ち込み？のためもしかしたら別でかかったかもしれません。\n来年は時間を作り最後まで踊りたいですね。 https://t.co/DCdBfZcBGF",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "477bc92b107b9da5",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2091529098736619817",
+      "tweet_id": "2091529098736619817",
+      "date": "2026-08-23T14:12:50+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2091521337571602432/img/Jp-EODA9T8g0vm_C.jpg",
+        "https://t.co/5gr66advij",
+        "pic.x.com/5gr66advij",
+        "https://pbs.twimg.com/amplify_video_thumb/2091523610305572864/img/_i1J668CGPB7tRac.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2091524365758427136/img/1KTrlA9mkndW__ZI.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2091525071328456704/img/MJMyfsvJUGiUMQnC.jpg"
+      ],
+      "text": "2026年8月23日(日)\n千葉県船橋市／小室公園\n「小室夏まつり」\n\n昔ながらの盆踊りの時期→盆踊りは短く洋楽がBGMで流れる時間が長い時期→子供が喜ぶ曲を取り入れた盆踊りへ変貌していました。\n\n【曲目】\n船橋音頭\n東京音頭\n炭坑節\nアンパンマン音頭\n\nジャンボリーミッキー\n好きすぎて滅！\n爆裂愛してる https://t.co/5gr66advij",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "43d351529d6c0876",
+      "status": "needs_ocr",
+      "account": "@s_yuka1",
+      "url": "https://x.com/s_yuka1/status/2091542582425997820",
+      "tweet_id": "2091542582425997820",
+      "date": "2026-08-23T15:06:25+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQam4KgawAA6aMf.jpg",
+        "https://t.co/lg95ZgOL93",
+        "pic.x.com/lg95ZgOL93",
+        "https://pbs.twimg.com/media/HQam4KhaUAAw_E5.jpg",
+        "https://pbs.twimg.com/media/HQam4KWbgAAGeQQ.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2091542560758247424/img/a_RqlWonu2vKXDsX.jpg"
+      ],
+      "text": "本日は第51回久我山盆踊り大会🏮\n都議のあかねがくぼかよこさんと伺いました。\n定番曲はもちろん「好きすぎて滅」などの新曲も入り盛り上がっていました。今年はAIで曲順を決定されたそうです😆\n\n４枚目は、17日の練習日の様子です。本番でお会いした皆さん、浴衣姿でとても素敵でした！本日はお天気に恵まれ本当に良かったです。\n\n設営、そして昨日の大雨からの会場の復旧に携わられた地元関係者の皆さま、大変お疲れ様でございました。ありがとうございました。\n\n水害状況やハザードマップの正確さについて個別に何件かお声がけをいただいております。日常生活そしてイベントに少しでも寄与できるよう、自分に今できる仕事をしっかりやっていきます。",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "68a73f1335984d62",
+      "status": "needs_ocr",
+      "account": "@ourimiora",
+      "url": "https://x.com/ourimiora/status/2091545458896486784",
+      "tweet_id": "2091545458896486784",
+      "date": "2026-08-23T15:17:51+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQan0fmbIAE0TeA.jpg",
+        "https://t.co/0u15eLW6mF",
+        "pic.x.com/0u15eLW6mF"
+      ],
+      "text": "ミオライブ！終演～🌸\nたくさんのお祝いコメント・メンギフ・スパチャありがとう！！！\n本当に楽しくてすてきな１周年になったよ🥹\nスト６…ミオリートファイターもどうだったかな✊\n２年目も楽しい配信にするね✨\n\n-セトリ-\nPreserved Roses\nシリウス\n迷宮バタフライ -diverse-\nさよーならまたいつか！\n青空 Jumping Heart\n\n＜盆踊り編＞\n夏色えがおで1, 2, Jump!\nビビデバ\nオトノケ\nQuiet Night C.E.73\n\n＜ミオリートファイター編＞\n恋しさと せつなさと 心強さと\n宇宙刑事ギャバン\nゼッタイ歌姫宣言ッ！\nω猫\n\nリフレクティア\nアムリタ\n六等星の夜\n破滅の純情\n\n＜みおらベスト編＞\nFighter\nカザミドリ\nWind Climbing ～風にあそばれて～\n君色シグナル\nコネクト\n\nホシキラ\n明日の私に幸あれ\nHappy my life 〜Thank you for everything!!〜\n#みおrock",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ae4c680e0f84bb67",
+      "status": "needs_ocr",
+      "account": "@ruri_rba1010",
+      "url": "https://x.com/ruri_rba1010/status/2091559225315176738",
+      "tweet_id": "2091559225315176738",
+      "date": "2026-08-23T16:12:33+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQa2BrkaAAAUOC0.jpg",
+        "https://t.co/WnQDg9gM1M",
+        "pic.x.com/WnQDg9gM1M"
+      ],
+      "text": "遅くなりましたが…\nあさがやドラムさん主催【あさがや浴衣まつり】出演させていただきました！\nご来場＆ご視聴ありがとうございました✨\n\n~ #ミツキのセトリ~\n1. アイオライト\n2. 君の知らない物語(cover)\n3. you(cover)\n4. 翼果てのレクイエム\n\n喘息の発作のため急遽アコースティックアレンジにしたり苦悩したところもありましたがその分みんなが歌すごい良かったよ！って言ってくれて泣きたいくらい嬉しかった😢\n駆けつけてくれたり前を向かせてくれる言葉をくれたりいつもいつも支えてくれてありがとう🙏💙\n\n明日のアコースティックライブも楽しみ！一緒に音楽、楽しんでいこうね🎶\n\n今回もステージ装飾可愛すぎましたー！ここでみんなで盆踊りできたの最高の思い出すぎる🥺💎✨⤵︎ ⤵︎",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "0702d3eec7b25a42",
+      "status": "needs_ocr",
+      "account": "@daiju_1021",
+      "url": "https://x.com/daiju_1021/status/2091693592322740287",
+      "tweet_id": "2091693592322740287",
+      "date": "2026-08-24T01:06:28+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HQcwOqXacAAzuw8.jpg",
+        "https://t.co/6DDu2TIuMN",
+        "pic.x.com/6DDu2TIuMN",
+        "https://pbs.twimg.com/media/HQcwOqWbYAAJ3TF.jpg",
+        "https://pbs.twimg.com/media/HQcwOqaaoAA7dV8.jpg",
+        "https://pbs.twimg.com/media/HQcwOqZa4AAzw8N.jpg"
+      ],
+      "text": "／\n  みそなめ地蔵まつり2026\n＼\n\nコロナ明けかは毎年出演をさせていただいている境港市のお祭り「#みそなめ地蔵まつり」に今年も出演させていただきました‼️😆✨㊗️\n\n境港市の馬場崎町の皆さんと光祐寺さんの皆さんで手作りでされているお祭りですが、年々来場者さんの期待値も上がって来て、なんと今年は過去最大来場者数を記録しておりました‼️😂✨\n\nそして今年のテーマは「#盆踊り」ということで、町内からも町外からも、子供も大人もみんな一緒になって盆踊りを踊ってる姿はとても素晴らしい光景でした‼️😊\n\nまた来年も出演できるよう1年間精進して行きます。\n今年もありがとうございました‼️\n\nphoto by IZUMI\n\n【本日のセットリスト】\n\n1.ひまわりの約束（cover）\n2.にじ（cover）\n3.真夏の果実（cover）\n4.夏色（cover）\n5.旅人",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
