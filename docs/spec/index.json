@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T14:41:28Z",
-  "generated_for_commit": "c68891c",
+  "generated_at": "2026-08-24T15:37:50Z",
+  "generated_for_commit": "fab9fb0",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -84,8 +84,8 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 6
+        "commits_since": 3,
+        "files_changed_since": 7
       },
       "version": "1.10",
       "revision_count": 11,
