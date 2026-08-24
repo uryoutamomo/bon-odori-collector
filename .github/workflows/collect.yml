@@ -200,8 +200,9 @@ jobs:
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-        # X(twitterapi.io)収集用。未設定でも collect.py 側で fail-safe スキップする
-        TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+        # 2026-08-25 内田さん指示: おどったー競合により盆助のX収集を一旦休止。再開はこの行をsecret参照へ戻す。
+        # X(twitterapi.io)収集用。空でも collect.py 側で fail-safe スキップする
+        TWITTERAPI_IO_KEY: ''
         # Xの未判定生データは公開物と分離したS3へ先に保存する。キー未設定時は
         # 新規X投稿を見つけた段階で停止し、voices_seen を進めない。
         X_RAW_POSTS_S3_BUCKET: ${{ vars.X_RAW_POSTS_S3_BUCKET }}
