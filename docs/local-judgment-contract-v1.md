@@ -29,6 +29,38 @@ eligible | deferred_retry | awaiting_user | closed
 
 `claimed` は **J0-contract には入れない。** claim/lease は J0-read/adjudication で minimal 版を足す。これは意図的な先送りで、抜け漏れではない。J0-read で `claimed_agent` / `claimed_user` を追加したとき、既存の遷移表を壊さずに差し込めるようにしておくこと（= 状態の集合を定数で持ち、遷移表をデータとして持つ）。
 
+### 1.1 publication scope router（実装前の契約）
+
+23区外であることは候補そのものを棄却する理由ではない。scope router は候補の真偽を裁定せず、
+**現在の公開方針で処理対象かだけ**を次の属性として記録する。
+
+| field | value / rule |
+|---|---|
+| `publication_scope` | `current_scope` / `outside_current_scope` / `undetermined` |
+| `decision` | `route_within_scope` / `hold_outside_scope` / `hold_for_scope_resolution` |
+| `scope_policy_version` | 判定に使った方針の不変な版。必須 |
+| `eligible_regions` | その版で公開対象だった地域の正規化済み集合 |
+| `evaluated_at` | scope 判定時刻。timezone 必須 |
+| `first_seen_at` | 元candidateを最初に観測した時刻。再評価でも維持 |
+| `source_payload_hash` | 元candidateの入力bytesに対するSHA-256。再評価でも同じ入力なら維持 |
+
+`outside_current_scope` の `decision` は **`hold_outside_scope` のみ**で、`accept` / `reject` や
+`closed` へ遷移させてはならない。このholdは `deferred_retry`（時刻による再試行）とも
+`awaiting_user`（人の裁定待ち）とも別の **reopenable scope hold** である。
+
+- candidateの `status` とpayloadを変えない。新しいcandidate revisionも作らない。
+- venue / series / occurrence / song などのcanonical factを変更しない。
+- `scope_policy_version` または `eligible_regions` が変わったとき、同じcandidate IDを再評価する。
+- 再評価で対象内になった場合だけ、systemがholdを解放して通常のagent判断へ戻す。
+- 旧scope判定はlineageとして残す。新判定で上書きして履歴を失わない。
+
+これにより、23区外を現在は公開しない方針と、将来の全国化で同じ観測を再利用することを両立する。
+J0-readが正本factを変えないこと（INV-RVW-005）とcandidateを消費しないこと（INV-RVW-007）は、
+scope routerにもそのまま適用する。
+
+`publication_scope_needed` は、地域が判別不能で本当に方針判断が要る場合の `awaiting_user` として残す。
+明確に `outside_current_scope` と判定できた候補を、人へ送るために使ってはならない。
+
 ## 2. 遷移表（これが全部。ここに無い遷移は validator が必ず拒否する）
 
 | # | before → after | actor_type | action | 必須のもの |
