@@ -168,7 +168,9 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
    最後に `publish` を実行する。リポジトリに巨大なJSONを置かずに、複数のworkflowが同じ声を見るための仕組みである。
 7. `refresh_official_source_review.yml` は薄い8区の `data/ward_official_source_registry.json` を週次巡回する。
    `scan_ward_official_sources.py` は既存の `scan_official_sources()` を再利用し、盆踊り文脈を確認できた区公式ページだけを
-   `ward_official_source_candidates.json` にする。これは候補作成までで、canonical eventや公開JSONは変更しない。
+   `ward_official_source_candidates.json` にする。日付・催事名・会場を見出しで特定できるHTML tableは1行を1候補に分割し、
+   日付と盆踊り語を含むHTML listも1項目を1候補にする。構造を特定できないHTML、PDF、JavaScript描画ページは
+   従来どおりページ単位候補へfallbackする。これは候補作成までで、canonical eventや公開JSONは変更しない。
 
 ### 収集の穴と、読む相手を広げる経路（日次）
 
