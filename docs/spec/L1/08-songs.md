@@ -56,11 +56,12 @@ verified_by:
   - tests/test_calibrate_song_probabilities_rdb.py
   - tests/test_inherit_song_probabilities_x_safety.py
   - tests/test_recalculate_song_probabilities_workflow.py
+  - tests/test_rdb_youtube_setlist_pipeline_workflow.py
   - tests/test_x_post_extraction_songs.py
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: 9539d63
+updated_for: a47769f
 ---
 
 # 曲目サブシステム
