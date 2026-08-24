@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T07:53:57Z",
-  "generated_for_commit": "5be9244",
+  "generated_at": "2026-08-24T06:39:25Z",
+  "generated_for_commit": "9949c8c",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -1434,7 +1434,7 @@
       "depends_on": [],
       "invariants": [],
       "verified_by": [],
-      "updated_for": "2c93cc1",
+      "updated_for": "5416007",
       "path": "docs/spec/README.md",
       "owned_files": [
         "docs/spec/README.md"
@@ -1443,9 +1443,14 @@
         "commits_since": 1,
         "files_changed_since": 1
       },
-      "version": "1.4",
-      "revision_count": 5,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "9949c8c",
+          "date": "2026-08-24",
+          "subject": "L0仕様書に盆助の中核思想を追記 (#254)"
+        },
         {
           "commit": "8fb30c8",
           "date": "2026-08-14",
