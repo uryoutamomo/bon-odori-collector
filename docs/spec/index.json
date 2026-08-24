@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T14:38:02Z",
-  "generated_for_commit": "ea36138",
+  "generated_at": "2026-08-24T14:41:28Z",
+  "generated_for_commit": "c68891c",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -24,6 +24,9 @@
         "sync_x_promoted_members.py",
         "sync_weekly_costs.py",
         ".github/workflows/collect.yml",
+        ".github/workflows/refresh_official_source_review.yml",
+        "scan_ward_official_sources.py",
+        "data/ward_official_source_registry.json",
         ".github/workflows/odottar-coverage-benchmark.yml",
         "build_odottar_coverage_benchmark.py",
         "data/odottar_coverage_history.json"
@@ -49,6 +52,7 @@
         "tests/test_x_gap_candidates.py",
         "tests/test_collect_event_state_axes_wiring.py",
         "tests/test_sync_event_date_predictions_rdb.py",
+        "tests/test_ward_official_source_registry.py",
         "tests/test_odottar_coverage_benchmark.py"
       ],
       "updated_for": "a47769f",
@@ -56,6 +60,7 @@
       "owned_files": [
         ".github/workflows/collect.yml",
         ".github/workflows/odottar-coverage-benchmark.yml",
+        ".github/workflows/refresh_official_source_review.yml",
         "build_odottar_coverage_benchmark.py",
         "build_x_gap_candidates.py",
         "collect.py",
@@ -69,7 +74,9 @@
         "collection_support/x_raw_archive.py",
         "collection_support/x_source_registry.py",
         "data/odottar_coverage_history.json",
+        "data/ward_official_source_registry.json",
         "discover_x_social_graph.py",
+        "scan_ward_official_sources.py",
         "sync_weekly_costs.py",
         "sync_x_promoted_members.py",
         "venue_sites.json",
@@ -77,12 +84,17 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 3
+        "commits_since": 2,
+        "files_changed_since": 6
       },
-      "version": "1.9",
-      "revision_count": 10,
+      "version": "1.10",
+      "revision_count": 11,
       "history": [
+        {
+          "commit": "c68891c",
+          "date": "2026-08-24",
+          "subject": "Add ward official source registry and review routing (#258)"
+        },
         {
           "commit": "ea36138",
           "date": "2026-08-24",
@@ -308,7 +320,8 @@
         "tests/test_review_inbox_low_priority_adapters.py",
         "tests/test_review_inbox_youtube_adapter.py",
         "tests/test_x_candidate_backlog.py",
-        "tests/test_run_review_inbox_x_gap_scheduled.py"
+        "tests/test_run_review_inbox_x_gap_scheduled.py",
+        "tests/test_ward_official_source_registry.py"
       ],
       "updated_for": "a47769f",
       "path": "docs/spec/L1/03-review.md",
@@ -391,12 +404,17 @@
         "x_candidate_backlog.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.14",
-      "revision_count": 15,
+      "version": "1.15",
+      "revision_count": 16,
       "history": [
+        {
+          "commit": "c68891c",
+          "date": "2026-08-24",
+          "subject": "Add ward official source registry and review routing (#258)"
+        },
         {
           "commit": "96a4359",
           "date": "2026-08-24",
@@ -451,11 +469,6 @@
           "commit": "cd8eb13",
           "date": "2026-08-15",
           "subject": "コンソール由来の変更提案を候補器へ付け替える（E0b） (#209)"
-        },
-        {
-          "commit": "1ea0661",
-          "date": "2026-08-14",
-          "subject": "内田さんが保留を裁くレーン（J0-adjudication）：裁定タブと反映CLI (#208)"
         }
       ]
     },
@@ -2515,6 +2528,7 @@
   "file_to_spec": {
     ".github/workflows/collect.yml": "L1-collection",
     ".github/workflows/odottar-coverage-benchmark.yml": "L1-collection",
+    ".github/workflows/refresh_official_source_review.yml": "L1-collection",
     "build_odottar_coverage_benchmark.py": "L1-collection",
     "build_x_gap_candidates.py": "L1-collection",
     "collect.py": "L1-collection",
@@ -2528,7 +2542,9 @@
     "collection_support/x_raw_archive.py": "L1-collection",
     "collection_support/x_source_registry.py": "L1-collection",
     "data/odottar_coverage_history.json": "L1-collection",
+    "data/ward_official_source_registry.json": "L1-collection",
     "discover_x_social_graph.py": "L1-collection",
+    "scan_ward_official_sources.py": "L1-collection",
     "sync_weekly_costs.py": "L1-collection",
     "sync_x_promoted_members.py": "L1-collection",
     "venue_sites.json": "L1-collection",
@@ -2820,8 +2836,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 361,
-    "owned": 266,
+    "tracked_source_files": 362,
+    "owned": 267,
     "unowned": 95,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
