@@ -21,6 +21,9 @@ owns:
   - sync_x_promoted_members.py
   - sync_weekly_costs.py
   - .github/workflows/collect.yml
+  - .github/workflows/odottar-coverage-benchmark.yml
+  - build_odottar_coverage_benchmark.py
+  - data/odottar_coverage_history.json
 depends_on: []
 invariants:
   - INV-COL-001
@@ -32,6 +35,7 @@ invariants:
   - INV-COL-007
   - INV-COL-008
   - INV-COL-009
+  - INV-COL-010
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -40,7 +44,8 @@ verified_by:
   - tests/test_x_gap_candidates.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: b5e6c0a
+  - tests/test_odottar_coverage_benchmark.py
+updated_for: a47769f
 ---
 
 # 収集サブシステム
@@ -148,6 +153,17 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
   `sync_event_date_predictions_rdb.py`
 - **守っているテスト**: `tests/test_collect_event_state_axes_wiring.py`、
   `tests/test_sync_event_date_predictions_rdb.py::SyncEventDatePredictionsRdbTest::test_sync_closes_public_json_fallback_without_changing_confirmed_date`
+
+### INV-COL-010 外部サイトのcoverage計測をイベント候補・正本出典にしない
+
+- **内容**: odottarの週次取得はraw bytesの証跡、SHA-256、盆助との概算coverage差分だけを作る。
+  個別行をReview Inboxへ積まず、canonical eventへ取り込まず、odottar URLをイベントの`source_urls`へ投影しない。
+- **なぜ**: 目的は収集の穴を測ることで、第三者データを公式根拠として使うことではない。
+  同一性の粗いcoverage推定をcanonical mergeへ流すと、別イベントを同一開催回として確定しかねない。
+- **破れたときの症状**: 公式確認のないイベントが候補・公開面に現れる／イベント詳細の「告知HP」にodottar URLが出る。
+- **守っているコード**: `build_odottar_coverage_benchmark.py`、`.github/workflows/odottar-coverage-benchmark.yml`
+- **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates`、
+  `tests/test_odottar_coverage_benchmark.py::test_workflow_archives_raw_but_commits_only_metrics`
 
 ## 主要な流れ
 
