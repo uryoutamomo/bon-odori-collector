@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T06:39:25Z",
-  "generated_for_commit": "9949c8c",
+  "generated_at": "2026-08-24T14:38:02Z",
+  "generated_for_commit": "ea36138",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -23,7 +23,10 @@
         "discover_x_social_graph.py",
         "sync_x_promoted_members.py",
         "sync_weekly_costs.py",
-        ".github/workflows/collect.yml"
+        ".github/workflows/collect.yml",
+        ".github/workflows/odottar-coverage-benchmark.yml",
+        "build_odottar_coverage_benchmark.py",
+        "data/odottar_coverage_history.json"
       ],
       "depends_on": [],
       "invariants": [
@@ -35,7 +38,8 @@
         "INV-COL-006",
         "INV-COL-007",
         "INV-COL-008",
-        "INV-COL-009"
+        "INV-COL-009",
+        "INV-COL-010"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
@@ -44,12 +48,15 @@
         "tests/test_x_search_watermark.py",
         "tests/test_x_gap_candidates.py",
         "tests/test_collect_event_state_axes_wiring.py",
-        "tests/test_sync_event_date_predictions_rdb.py"
+        "tests/test_sync_event_date_predictions_rdb.py",
+        "tests/test_odottar_coverage_benchmark.py"
       ],
-      "updated_for": "b5e6c0a",
+      "updated_for": "a47769f",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         ".github/workflows/collect.yml",
+        ".github/workflows/odottar-coverage-benchmark.yml",
+        "build_odottar_coverage_benchmark.py",
         "build_x_gap_candidates.py",
         "collect.py",
         "collect_venue_sites.py",
@@ -61,6 +68,7 @@
         "collection_support/x_official_source_accounts.py",
         "collection_support/x_raw_archive.py",
         "collection_support/x_source_registry.py",
+        "data/odottar_coverage_history.json",
         "discover_x_social_graph.py",
         "sync_weekly_costs.py",
         "sync_x_promoted_members.py",
@@ -68,10 +76,18 @@
         "voices_s3_artifact.py",
         "x_queries.json"
       ],
-      "staleness": null,
-      "version": "1.8",
-      "revision_count": 9,
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 3
+      },
+      "version": "1.9",
+      "revision_count": 10,
       "history": [
+        {
+          "commit": "ea36138",
+          "date": "2026-08-24",
+          "subject": "Add weekly odottar coverage benchmark (#257)"
+        },
         {
           "commit": "6083472",
           "date": "2026-08-19",
@@ -294,7 +310,7 @@
         "tests/test_x_candidate_backlog.py",
         "tests/test_run_review_inbox_x_gap_scheduled.py"
       ],
-      "updated_for": "bbf0900",
+      "updated_for": "a47769f",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -374,10 +390,18 @@
         "stage_rare_signal_backcheck_reviews.py",
         "x_candidate_backlog.py"
       ],
-      "staleness": null,
-      "version": "1.13",
-      "revision_count": 14,
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      },
+      "version": "1.14",
+      "revision_count": 15,
       "history": [
+        {
+          "commit": "96a4359",
+          "date": "2026-08-24",
+          "subject": "Define reopenable publication scope holds (#255)"
+        },
         {
           "commit": "21f9abf",
           "date": "2026-08-22",
@@ -432,11 +456,6 @@
           "commit": "1ea0661",
           "date": "2026-08-14",
           "subject": "内田さんが保留を裁くレーン（J0-adjudication）：裁定タブと反映CLI (#208)"
-        },
-        {
-          "commit": "8e7de2a",
-          "date": "2026-08-14",
-          "subject": "ローカル判断の実行経路（J0-read）：候補をLLMへ渡し、判断を台帳へ残す (#206)"
         }
       ]
     },
@@ -898,12 +917,13 @@
         "tests/test_calibrate_song_probabilities_rdb.py",
         "tests/test_inherit_song_probabilities_x_safety.py",
         "tests/test_recalculate_song_probabilities_workflow.py",
+        "tests/test_rdb_youtube_setlist_pipeline_workflow.py",
         "tests/test_x_post_extraction_songs.py",
         "tests/test_x_song_resolution_contract.py",
         "tests/test_x_occurrence_resolution_contract.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "9539d63",
+      "updated_for": "a47769f",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         ".github/workflows/recalculate-song-probabilities.yml",
@@ -945,12 +965,17 @@
         "triage_weekly_song_candidates.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.10",
-      "revision_count": 11,
+      "version": "1.11",
+      "revision_count": 12,
       "history": [
+        {
+          "commit": "1cdda18",
+          "date": "2026-08-24",
+          "subject": "Schedule RDB-native YouTube setlist pipeline (#256)"
+        },
         {
           "commit": "916de7d",
           "date": "2026-08-18",
@@ -1043,6 +1068,7 @@
         "scripts/manual/audit_youtube_song_clip_fragments.py",
         "scripts/manual/render_youtube_candidate_report.py",
         ".github/workflows/youtube_daily_backfill.yml",
+        ".github/workflows/rdb-youtube-setlist-pipeline.yml",
         "ops/com.ryotauchida.bon-odori.youtube-daily.plist",
         "docs/youtube-daily-operations.md"
       ],
@@ -1066,11 +1092,13 @@
         "tests/test_youtube_daily_operations_policy.py",
         "tests/test_apply_youtube_setlist_occurrences_rdb.py",
         "tests/test_extract_youtube_setlists.py",
+        "tests/test_rdb_youtube_setlist_pipeline_workflow.py",
         "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "b5e6c0a",
+      "updated_for": "a47769f",
       "path": "docs/spec/L1/09-youtube.md",
       "owned_files": [
+        ".github/workflows/rdb-youtube-setlist-pipeline.yml",
         ".github/workflows/youtube_daily_backfill.yml",
         "apply_curated_youtube_aliases.py",
         "apply_youtube_2025_koto_decisions.py",
@@ -1123,10 +1151,18 @@
         "youtube_channels/discover_youtube_channels.py",
         "youtube_channels/extract_youtube_setlists.py"
       ],
-      "staleness": null,
-      "version": "1.5",
-      "revision_count": 6,
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 1
+      },
+      "version": "1.6",
+      "revision_count": 7,
       "history": [
+        {
+          "commit": "1cdda18",
+          "date": "2026-08-24",
+          "subject": "Schedule RDB-native YouTube setlist pipeline (#256)"
+        },
         {
           "commit": "6083472",
           "date": "2026-08-19",
@@ -1615,6 +1651,14 @@
       "title": "日次収集は生成日付予測を正本RDBへ同期してから公開射影へ進む",
       "tests": [
         "tests/test_collect_event_state_axes_wiring.py"
+      ],
+      "has_test": true
+    },
+    "INV-COL-010": {
+      "spec": "L1-collection",
+      "title": "外部サイトのcoverage計測をイベント候補・正本出典にしない",
+      "tests": [
+        "tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates"
       ],
       "has_test": true
     },
@@ -2470,6 +2514,8 @@
   },
   "file_to_spec": {
     ".github/workflows/collect.yml": "L1-collection",
+    ".github/workflows/odottar-coverage-benchmark.yml": "L1-collection",
+    "build_odottar_coverage_benchmark.py": "L1-collection",
     "build_x_gap_candidates.py": "L1-collection",
     "collect.py": "L1-collection",
     "collect_venue_sites.py": "L1-collection",
@@ -2481,6 +2527,7 @@
     "collection_support/x_official_source_accounts.py": "L1-collection",
     "collection_support/x_raw_archive.py": "L1-collection",
     "collection_support/x_source_registry.py": "L1-collection",
+    "data/odottar_coverage_history.json": "L1-collection",
     "discover_x_social_graph.py": "L1-collection",
     "sync_weekly_costs.py": "L1-collection",
     "sync_x_promoted_members.py": "L1-collection",
@@ -2684,6 +2731,7 @@
     "song_processing/song_occurrences.py": "L1-songs",
     "song_processing/weekly_song_triage.py": "L1-songs",
     "triage_weekly_song_candidates.py": "L1-songs",
+    ".github/workflows/rdb-youtube-setlist-pipeline.yml": "L1-youtube",
     ".github/workflows/youtube_daily_backfill.yml": "L1-youtube",
     "apply_curated_youtube_aliases.py": "L1-youtube",
     "apply_youtube_2025_koto_decisions.py": "L1-youtube",
@@ -2772,8 +2820,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 360,
-    "owned": 265,
+    "tracked_source_files": 361,
+    "owned": 266,
     "unowned": 95,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
