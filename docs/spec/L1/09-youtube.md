@@ -34,6 +34,7 @@ owns:
   - scripts/manual/audit_youtube_song_clip_fragments.py
   - scripts/manual/render_youtube_candidate_report.py
   - .github/workflows/youtube_daily_backfill.yml
+  - .github/workflows/rdb-youtube-setlist-pipeline.yml
   - ops/com.ryotauchida.bon-odori.youtube-daily.plist
   - docs/youtube-daily-operations.md
 depends_on:
@@ -54,8 +55,9 @@ verified_by:
   - tests/test_youtube_daily_operations_policy.py
   - tests/test_apply_youtube_setlist_occurrences_rdb.py
   - tests/test_extract_youtube_setlists.py
+  - tests/test_rdb_youtube_setlist_pipeline_workflow.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: b5e6c0a
+updated_for: a47769f
 ---
 
 # YouTube取り込みサブシステム
@@ -103,8 +105,10 @@ updated_for: b5e6c0a
 - `data/youtube_daily_backfill_report.json` / `.md` — 日次の実行記録。GitHubのジョブ要約にも出る
 - `data/pending_mail.json` への催促文（`--mail-reminder`）— [配信サブシステム](06-delivery.md)が拾う
 
-このYouTube workflowから直接RDBへ書くのは `apply_youtube_setlist_occurrences_rdb.py` だけで、
-それも既定ではコピーDBにしか書かない。生成した日付予測は、後続の収集日次が
+週次の `rdb-youtube-setlist-pipeline.yml` は、セットリスト抽出からRDBへの開催回・曲根拠追加、
+直接確率の校正、過去年実績の継承までを必ずdry-runしてから正本へ適用し、auditとCAS付きS3 publishを行う。
+手動実行は既定でdry-runだけ、定時実行だけがapplyする。公開JSONは監査用の一時ディレクトリにだけ生成し、commitしない。
+生成した日付予測は、後続の収集日次が
 `predicted_occurrence_dates` へ同期するが、開催回の確定日にはしない（[INV-MST-013](04-master.md)）。
 公開JSONを作るのは[公開サブシステム](05-publication.md)の `export_public_events.py` であり、
 この工程からは呼ばない（INV-YTB-001・INV-YTB-002）。

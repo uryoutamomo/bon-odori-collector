@@ -1,0 +1,193 @@
+name: RDB YouTube setlist pipeline
+
+on:
+  schedule:
+    # Weekly Monday 06:00 JST, after the daily YouTube harvest.
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'S3正本へ適用する。falseは全段dry-runのみ'
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  setlist-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      AWS_REGION: ap-northeast-1
+      MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+      MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+      VOICES_S3_BUCKET: ${{ vars.VOICES_S3_BUCKET }}
+      VOICES_S3_PREFIX: ${{ vars.VOICES_S3_PREFIX || 'voices' }}
+      APPLY_REQUESTED: ${{ github.event_name == 'schedule' || inputs.apply }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Fetch source artifacts
+        run: |
+          python voices_s3_artifact.py fetch --overwrite
+          python master_db_s3_artifact.py fetch --overwrite
+
+      - name: Record fetched checksum and target year
+        id: fetched
+        run: |
+          SHA="$(python -c 'from master_rdb.master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
+          TARGET_YEAR="$(TZ=Asia/Tokyo date +%Y)"
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "target_year=$TARGET_YEAR" >> "$GITHUB_OUTPUT"
+          echo "- fetched checksum: $SHA" >> "$GITHUB_STEP_SUMMARY"
+          echo "- target year: $TARGET_YEAR" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Audit fetched master RDB
+        run: |
+          python audit_master_rdb.py \
+            --out-json "$RUNNER_TEMP/master-rdb-fetched-audit.json" \
+            --out-md "$RUNNER_TEMP/master-rdb-fetched-audit.md" \
+            --append-github-summary
+
+      - name: Extract YouTube setlists
+        run: |
+          python -m youtube_channels.extract_youtube_setlists \
+            --voices data/voices.json \
+            --review data/youtube_channel_review.json \
+            --public-events data/public/events_public.json \
+            --out "$RUNNER_TEMP/youtube-setlists.json"
+
+      - name: Dry-run setlist occurrence apply
+        run: |
+          python apply_youtube_setlist_occurrences_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --source "$RUNNER_TEMP/youtube-setlists.json" \
+            --out-db "$RUNNER_TEMP/setlist-dry-run.sqlite" \
+            --out-json "$RUNNER_TEMP/setlist-dry-run.json" \
+            --out-md "$RUNNER_TEMP/setlist-dry-run.md"
+
+      - name: Dry-run direct probability calibration
+        run: |
+          python calibrate_song_probabilities_rdb.py \
+            --master-db "$RUNNER_TEMP/setlist-dry-run.sqlite" \
+            --out-db "$RUNNER_TEMP/calibration-dry-run.sqlite" \
+            --out-json "$RUNNER_TEMP/calibration-dry-run.json" \
+            --out-md "$RUNNER_TEMP/calibration-dry-run.md" \
+            --target-year "${{ steps.fetched.outputs.target_year }}" \
+            --recalculate-existing
+
+      - name: Dry-run historical probability inheritance
+        run: |
+          python inherit_song_probabilities_rdb.py \
+            --master-db "$RUNNER_TEMP/calibration-dry-run.sqlite" \
+            --out-db "$RUNNER_TEMP/inheritance-dry-run.sqlite" \
+            --out-json "$RUNNER_TEMP/inheritance-dry-run.json" \
+            --out-md "$RUNNER_TEMP/inheritance-dry-run.md" \
+            --target-year "${{ steps.fetched.outputs.target_year }}"
+
+      - name: Audit dry-run public projection
+        run: |
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          BON_ODORI_PUBLIC_OUT_DIR="$RUNNER_TEMP/public-dry-run" \
+          BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON="$RUNNER_TEMP/public-dry-run-source-map.json" \
+          BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT="$RUNNER_TEMP/public-dry-run-date-predictions.json" \
+          python export_public_events.py \
+            --master-db "$RUNNER_TEMP/inheritance-dry-run.sqlite" \
+            --target-year "${{ steps.fetched.outputs.target_year }}" \
+            --today "$TODAY"
+
+      - name: Apply setlist occurrences
+        if: ${{ env.APPLY_REQUESTED == 'true' }}
+        run: |
+          python apply_youtube_setlist_occurrences_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --source "$RUNNER_TEMP/youtube-setlists.json" \
+            --out-json "$RUNNER_TEMP/setlist-apply.json" \
+            --out-md "$RUNNER_TEMP/setlist-apply.md" \
+            --apply \
+            --confirm 'APPLY YOUTUBE SETLIST OCCURRENCES RDB'
+
+      - name: Apply direct probability calibration
+        if: ${{ env.APPLY_REQUESTED == 'true' }}
+        run: |
+          python calibrate_song_probabilities_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --out-json "$RUNNER_TEMP/calibration-apply.json" \
+            --out-md "$RUNNER_TEMP/calibration-apply.md" \
+            --target-year "${{ steps.fetched.outputs.target_year }}" \
+            --recalculate-existing \
+            --apply \
+            --confirm 'APPLY SONG PROBABILITY CALIBRATION RDB'
+
+      - name: Apply historical probability inheritance
+        if: ${{ env.APPLY_REQUESTED == 'true' }}
+        run: |
+          python inherit_song_probabilities_rdb.py \
+            --master-db data/bon_odori_master.sqlite \
+            --out-json "$RUNNER_TEMP/inheritance-apply.json" \
+            --out-md "$RUNNER_TEMP/inheritance-apply.md" \
+            --target-year "${{ steps.fetched.outputs.target_year }}" \
+            --apply \
+            --confirm 'APPLY SONG PROBABILITY INHERITANCE RDB'
+
+      - name: Audit applied master RDB
+        if: ${{ env.APPLY_REQUESTED == 'true' }}
+        run: |
+          python audit_master_rdb.py \
+            --out-json "$RUNNER_TEMP/master-rdb-applied-audit.json" \
+            --out-md "$RUNNER_TEMP/master-rdb-applied-audit.md" \
+            --append-github-summary
+
+      - name: Publish Master RDB with CAS
+        if: ${{ env.APPLY_REQUESTED == 'true' }}
+        run: |
+          python master_db_s3_artifact.py publish \
+            --expect-remote-checksum "${{ steps.fetched.outputs.sha }}" \
+            --snapshot-id "youtube-setlist-pipeline-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+      - name: Re-fetch and verify published Master RDB
+        if: ${{ env.APPLY_REQUESTED == 'true' }}
+        run: |
+          python master_db_s3_artifact.py fetch --overwrite
+          python audit_master_rdb.py \
+            --out-json "$RUNNER_TEMP/master-rdb-refetched-audit.json" \
+            --out-md "$RUNNER_TEMP/master-rdb-refetched-audit.md" \
+            --append-github-summary
+
+      - name: Upload pipeline evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: rdb-youtube-setlist-pipeline-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/youtube-setlists.json
+            ${{ runner.temp }}/*-dry-run.json
+            ${{ runner.temp }}/*-dry-run.md
+            ${{ runner.temp }}/*-apply.json
+            ${{ runner.temp }}/*-apply.md
+            ${{ runner.temp }}/master-rdb-*-audit.json
+            ${{ runner.temp }}/master-rdb-*-audit.md
+            ${{ runner.temp }}/public-dry-run/
+          if-no-files-found: warn
+          retention-days: 30

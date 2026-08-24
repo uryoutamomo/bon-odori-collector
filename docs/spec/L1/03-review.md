@@ -109,6 +109,7 @@ updated_for: a47769f
 |---|---|
 | 各種の要レビュー項目 | `review_inbox_adapters/` 配下の各アダプタ経由（X由来の穴、公式ソース、会場欠落、過去実績、YouTube など） |
 | 現在のマスタ状態 | Master RDB の `review_inbox_items` テーブル |
+| 現在の公開範囲 | scope policy の版と対象地域（scope router実装時） |
 
 **出力**
 
@@ -118,6 +119,7 @@ updated_for: a47769f
 | X候補の永続ライフサイクルと日次アラート | `data/x_candidate_backlog.json` / `data/x_candidate_backlog_alerts.*` |
 | 人の決定 | `review_inbox_items` の状態更新 |
 | 適用可能な変更リクエスト | 昇格済みの reviewed JSON → [マスタ](04-master.md) |
+| 公開範囲外の候補 | candidateを消費しない reopenable scope hold（scope router実装時） |
 
 ## 不変条件
 
@@ -170,6 +172,8 @@ updated_for: a47769f
 ### INV-RVW-005 J0-read は正本factを変更しない
 
 - **内容**: event candidate の packet 化と LLM 判断の取り込みは、canonical decision / queue / hold / claim の台帳だけへ記録する。venue、series、occurrence、song とその alias/link 表は変更しない。
+- **scope routerへの適用**: 公開範囲の判定はcandidateのrouting metadataとhold lineageだけへ記録し、
+  23区外という理由でcanonical factを作成・更新・削除しない。
 - **守っているコード**: `build_judgment_packets.py`、`apply_judgment_results.py`、`judgment_ledger_writer.py`
 - **守っているテスト**: `tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged`、`tests/test_judgment_j0_read.py::test_structure_does_not_import_canonical_fact_writers`
 
@@ -181,6 +185,9 @@ updated_for: a47769f
 ### INV-RVW-007 J0-read はcandidateを消費しない
 
 - **内容**: `review_inbox_items.status` は `candidate` のまま維持する。E0 の改訂・再実行を止めないためである。
+- **scope routerへの適用**: 現在の公開対象外でもterminal closeや新しいcandidate revisionにせず、
+  `publication_scope=outside_current_scope` と判定根拠を持つreopenable holdへ置く。
+  方針版が変わったら同じcandidateを再評価する。
 - **守っているテスト**: `tests/test_judgment_j0_read.py::test_apply_keeps_canonical_facts_and_candidate_status_unchanged`
 
 ### INV-RVW-008 裁定画面のボタンは判断台帳を動かさない
