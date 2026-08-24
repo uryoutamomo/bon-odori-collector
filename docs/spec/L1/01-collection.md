@@ -21,6 +21,9 @@ owns:
   - sync_x_promoted_members.py
   - sync_weekly_costs.py
   - .github/workflows/collect.yml
+  - .github/workflows/refresh_official_source_review.yml
+  - scan_ward_official_sources.py
+  - data/ward_official_source_registry.json
 depends_on: []
 invariants:
   - INV-COL-001
@@ -40,7 +43,8 @@ verified_by:
   - tests/test_x_gap_candidates.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: b5e6c0a
+  - tests/test_ward_official_source_registry.py
+updated_for: a47769f
 ---
 
 # 収集サブシステム
@@ -162,6 +166,9 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 6. `voices_s3_artifact.py`（中身は `collection_support/voices_s3_artifact.py` を呼ぶだけの互換入口）で、
    声をS3の成果物として受け渡す。日次の各workflowは処理の最初に `fetch --overwrite`、
    最後に `publish` を実行する。リポジトリに巨大なJSONを置かずに、複数のworkflowが同じ声を見るための仕組みである。
+7. `refresh_official_source_review.yml` は薄い8区の `data/ward_official_source_registry.json` を週次巡回する。
+   `scan_ward_official_sources.py` は既存の `scan_official_sources()` を再利用し、盆踊り文脈を確認できた区公式ページだけを
+   `ward_official_source_candidates.json` にする。これは候補作成までで、canonical eventや公開JSONは変更しない。
 
 ### 収集の穴と、読む相手を広げる経路（日次）
 

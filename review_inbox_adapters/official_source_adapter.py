@@ -14,6 +14,8 @@ from review_inbox_adapters.source_adapter import load_adapted_source, write_adap
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "official_source_review_candidates.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "official_source.json"
+WARD_DEFAULT_INPUT = ROOT / "data" / "ward_official_source_candidates.json"
+WARD_DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "ward_official_source.json"
 YEAR_RE = re.compile(r"(?<!\d)(20\d{2})(?!\d)")
 
 
@@ -66,6 +68,12 @@ class OfficialSourceAdapter:
         }
 
 
+class WardOfficialSourceAdapter(OfficialSourceAdapter):
+    """Keep ward discovery lineage separate from the legacy official-source queue."""
+
+    source_id = "ward_official_source"
+
+
 def numeric_score(value: Any) -> float | None:
     if value is None or value == "":
         return None
@@ -94,13 +102,22 @@ def main() -> None:
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--target-year", type=int, default=2026)
+    parser.add_argument("--ward-registry", action="store_true")
     args = parser.parse_args()
 
-    snapshot = load_adapted_source(OfficialSourceAdapter(args.target_year), args.input)
-    write_adapted_snapshot(snapshot, args.output)
+    if args.ward_registry:
+        adapter = WardOfficialSourceAdapter(args.target_year)
+        input_path = args.input if args.input != DEFAULT_INPUT else WARD_DEFAULT_INPUT
+        output_path = args.output if args.output != DEFAULT_OUTPUT else WARD_DEFAULT_OUTPUT
+    else:
+        adapter = OfficialSourceAdapter(args.target_year)
+        input_path = args.input
+        output_path = args.output
+    snapshot = load_adapted_source(adapter, input_path)
+    write_adapted_snapshot(snapshot, output_path)
     print(
         f"official source inbox snapshot: items={snapshot['item_count']} "
-        f"input_sha256={snapshot['input_sha256']} -> {args.output}"
+        f"input_sha256={snapshot['input_sha256']} -> {output_path}"
     )
 
 

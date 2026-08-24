@@ -47,6 +47,14 @@ jobs:
     - name: Build official source review queue
       run: python build_official_source_review.py
 
+    - name: Scan ward official source registry
+      run: |
+        TARGET_YEAR="$(TZ=Asia/Tokyo date +%Y)"
+        python scan_ward_official_sources.py --year "$TARGET_YEAR"
+        python -m review_inbox_adapters.official_source_adapter \
+          --ward-registry \
+          --target-year "$TARGET_YEAR"
+
     - name: Commit and Push changes
       run: |
         git config --local user.email "action@github.com"
@@ -57,4 +65,7 @@ jobs:
         git add data/blog_registration_candidates.json
         git add data/official_source_review_candidates.json
         git add data/official_source_review_candidates.md
+        git add data/ward_official_source_candidates.json
+        git add data/ward_official_source_candidates.md
+        git add -f data/review_inbox_adapted/ward_official_source.json
         git diff --cached --quiet || (git commit -m "Refresh official source review queue from 東京盆踊りマップ" && git push)

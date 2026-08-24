@@ -77,7 +77,8 @@ verified_by:
   - tests/test_review_inbox_youtube_adapter.py
   - tests/test_x_candidate_backlog.py
   - tests/test_run_review_inbox_x_gap_scheduled.py
-updated_for: bbf0900
+  - tests/test_ward_official_source_registry.py
+updated_for: a47769f
 ---
 
 # 人のレビュー運用サブシステム
@@ -473,6 +474,9 @@ X由来だけ形が違う。`build_x_review_lanes.py` は穴の候補を**3つ�
 日次とは別に、**公式ソースURLのレビュー列**を作る `build_official_source_review.py` が
 `refresh_official_source_review.yml` から動く。毎年開かれる行事の公式URLが古くなっていないかを人が見るための列で、
 公開面で出典を示せるかどうかに直結する（出典を出してよい情報源の線引きは運用側の判断である）。
+同じworkflowの区公式registry巡回は、発見したページを `WardOfficialSourceAdapter` で
+`source_id=ward_official_source` の受信箱snapshotへ変換する。legacy公式URL候補とlineageを混ぜず、
+adapterはcanonical DBへ書かない。人のレビュー後の適用境界は従来の公式ソース経路と同じである。
 
 受信箱のスキーマ移行は `review_inbox_migration_runner.py` が `migrate_review_inbox_v2.yml` から実行する。
 **移行の入口をここに1本だけ置いてあるのは、日常の書き込み経路が副作用でスキーマを変えないようにするため**で、
