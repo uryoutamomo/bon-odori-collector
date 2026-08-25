@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-24T07:44:04.635750+00:00",
+  "generated_at": "2026-08-25T07:16:00.249657+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2323,6 +2323,456 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1a1151a547553758",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【梅屋敷】8/28(金)、29(土)「ぷらもーる納涼盆踊り大会\n流し盆踊りの飛び入り参加大歓迎✨その他にもダンス、大道芸、ちびっこガラポン",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087675500068319733",
+      "source_url": "https://x.com/otafull/status/2087675500068319733",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ce1a7419877c4976fabba0feaf03c218dbe206e33a18282abf612385cb15fbf7",
+      "last_seen_at": "github-32820027788-1",
+      "created_at": "2026-08-25T07:15:30.879917+00:00",
+      "updated_at": "2026-08-25T07:15:30.879917+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_73002f8172eeb9f3",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/28"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-28"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2087675500068319733",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【梅屋敷】8/28(金)、29(土)「ぷらもーる納涼盆踊り大会\n流し盆踊りの飛び入り参加大歓迎✨その他にもダンス、大道芸、ちびっこガラポン大会などなど❣️模擬店もたくさん出ますよ～\nhttps://t.co/QhzuwgbP0s\n#大田区　#商店街　#梅屋敷　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2087675500068319733",
+        "source_urls": [
+          "https://x.com/otafull/status/2087675500068319733"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-12T23:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【梅屋敷】8/28(金)、29(土)「ぷらもーる納涼盆踊り大会\n流し盆踊りの飛び入り参加大歓迎✨その他にもダンス、大道芸、ちびっこガラポン大会などなど❣️模擬店もたくさん出ますよ～\nhttps://t.co/QhzuwgbP0s\n#大田区　#商店街　#梅屋敷　#盆踊り",
+          "title": "",
+          "tweet_id": "2087675500068319733",
+          "url": "https://x.com/otafull/status/2087675500068319733"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_79a74718e9e48c21",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【石川台】2026/8/29(土)・30(日) 石川台希望ヶ丘商店街「盆踊り」開催！\nhttps://t.co/Z7b10WkbSk\n#大田区　#商店街　#石川",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087707681813627128",
+      "source_url": "https://x.com/otafull/status/2087707681813627128",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1c72f6090db81fb5e956fbf1d7c2baa3c01e3d16c016b440ac66b40ea0667f41",
+      "last_seen_at": "github-32820027788-1",
+      "created_at": "2026-08-25T07:15:30.879917+00:00",
+      "updated_at": "2026-08-25T07:15:30.879917+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_b2ec020048da3a41",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/29"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2087707681813627128",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【石川台】2026/8/29(土)・30(日) 石川台希望ヶ丘商店街「盆踊り」開催！\nhttps://t.co/Z7b10WkbSk\n#大田区　#商店街　#石川台　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2087707681813627128",
+        "source_urls": [
+          "https://x.com/otafull/status/2087707681813627128"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-13T01:07:53+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【石川台】2026/8/29(土)・30(日) 石川台希望ヶ丘商店街「盆踊り」開催！\nhttps://t.co/Z7b10WkbSk\n#大田区　#商店街　#石川台　#盆踊り",
+          "title": "",
+          "tweet_id": "2087707681813627128",
+          "url": "https://x.com/otafull/status/2087707681813627128"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_80ae37ba551437b7",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "梅屋敷商店街のお祭り\n8月28日(金)29日(土)開催✨\n\n私は28日の流し盆踊りに参加します😊\n昨夜は練習会に参加してきました🩰\n\n踊りの先生と📸\n\n当日は、",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089492832835002463",
+      "source_url": "https://x.com/suzuki_yumi_/status/2089492832835002463",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9593d01edb8260fab77cd78a2969914e32d915f3429ae03dd532328f93abd906",
+      "last_seen_at": "github-32820027788-1",
+      "created_at": "2026-08-25T07:15:30.879917+00:00",
+      "updated_at": "2026-08-25T07:15:30.879917+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_7fdfb45999f28e6a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月28日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-28"
+        ],
+        "priority_score": 125,
+        "source_author": "@suzuki_yumi_",
+        "source_count": 1,
+        "source_key": "x:2089492832835002463",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP9ep4MasAAY6Dh.jpg",
+          "https://t.co/TAEErcdqsj",
+          "pic.x.com/TAEErcdqsj",
+          "https://pbs.twimg.com/media/HP9ep4BbUAADnme.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "鈴木ゆみ🌾公明党🍚大田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@suzuki_yumi_",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n梅屋敷商店街のお祭り\n8月28日(金)29日(土)開催✨\n\n私は28日の流し盆踊りに参加します😊\n昨夜は練習会に参加してきました🩰\n\n踊りの先生と📸\n\n当日は、大田区の曲″すっきり音頭″など5曲を地域の方と一緒に踊ります✨\n\n京急線梅屋敷駅降りてすぐ、遊びにきてね👍\nhttps://t.co/HahceI1nXj https://t.co/TAEErcdqsj",
+        "source_url": "https://x.com/suzuki_yumi_/status/2089492832835002463",
+        "source_urls": [
+          "https://x.com/suzuki_yumi_/status/2089492832835002463"
+        ],
+        "voice": {
+          "account": "@suzuki_yumi_",
+          "critique_post": false,
+          "date": "2026-08-17T23:21:26+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP9ep4MasAAY6Dh.jpg",
+            "https://t.co/TAEErcdqsj",
+            "pic.x.com/TAEErcdqsj",
+            "https://pbs.twimg.com/media/HP9ep4BbUAADnme.jpg"
+          ],
+          "name": "鈴木ゆみ🌾公明党🍚大田区議会議員",
+          "profile_description": "2023年大田区議会議員選挙に初当選☘️1976年生まれ☘️大田区立新宿小／蒲田中／都立小山台高/創価女子短大10期卒業☘️夫.大4長女.大1長男.両親の6人家族☘️（株）関電工勤続26年☘️ホームページ👉 https://t.co/LZu73wUoiw",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-program-songs-wide"
+          ],
+          "text": "梅屋敷商店街のお祭り\n8月28日(金)29日(土)開催✨\n\n私は28日の流し盆踊りに参加します😊\n昨夜は練習会に参加してきました🩰\n\n踊りの先生と📸\n\n当日は、大田区の曲″すっきり音頭″など5曲を地域の方と一緒に踊ります✨\n\n京急線梅屋敷駅降りてすぐ、遊びにきてね👍\nhttps://t.co/HahceI1nXj https://t.co/TAEErcdqsj",
+          "title": "",
+          "tweet_id": "2089492832835002463",
+          "url": "https://x.com/suzuki_yumi_/status/2089492832835002463"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a9af06074cc95215",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【雪が谷大塚】2026/8/30(日)嶺町特別出張所で「子ども夏まつり」開催！\nかき氷、スイカ割り、水鉄砲射的、ミニゲーム、おばけやしき、手作りコーナー、ヨーヨ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088762665888092377",
+      "source_url": "https://x.com/otafull/status/2088762665888092377",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "429aa08b375f01ac4ef3bb64afb71d83bb36e4e9a7e69dda3cab290e43edb7ef",
+      "last_seen_at": "github-32820027788-1",
+      "created_at": "2026-08-25T07:15:30.879917+00:00",
+      "updated_at": "2026-08-25T07:15:30.879917+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_47bf39fc8845cac4",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/30"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-30"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2088762665888092377",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【雪が谷大塚】2026/8/30(日)嶺町特別出張所で「子ども夏まつり」開催！\nかき氷、スイカ割り、水鉄砲射的、ミニゲーム、おばけやしき、手作りコーナー、ヨーヨー釣り、警察・消防コーナーなどなど、お楽しみがいっぱい🙌💕\nhttps://t.co/XbZFl7LQtL\n#大田区　#商店街　#雪が谷大塚　#お祭り",
+        "source_url": "https://x.com/otafull/status/2088762665888092377",
+        "source_urls": [
+          "https://x.com/otafull/status/2088762665888092377"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-15T23:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📌予定候補",
+            "🟡関心"
+          ],
+          "text": "【雪が谷大塚】2026/8/30(日)嶺町特別出張所で「子ども夏まつり」開催！\nかき氷、スイカ割り、水鉄砲射的、ミニゲーム、おばけやしき、手作りコーナー、ヨーヨー釣り、警察・消防コーナーなどなど、お楽しみがいっぱい🙌💕\nhttps://t.co/XbZFl7LQtL\n#大田区　#商店街　#雪が谷大塚　#お祭り",
+          "title": "",
+          "tweet_id": "2088762665888092377",
+          "url": "https://x.com/otafull/status/2088762665888092377",
+          "value_score": 12.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_adac5e81b072216a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "大田区で今週末に予定されているイベント 🌟\n8月15日（土）【蒲田】大田区平和都市宣言記念事業「平和のつどい」\n8月15日（土）【池上】養源寺　精霊送り　盆踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088037894065688949",
+      "source_url": "https://x.com/otakanko2/status/2088037894065688949",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "65c518de8997117a1007b89d428149c4f61cab531b5a2db3dab0cb2304b7c283",
+      "last_seen_at": "github-32820027788-1",
+      "created_at": "2026-08-25T07:15:30.879917+00:00",
+      "updated_at": "2026-08-25T07:15:30.879917+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_cbef5f49eb8c420a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月15日",
+          "8月15日",
+          "8月15日",
+          "9月13日",
+          "4月21日",
+          "8月16日",
+          "6月20日",
+          "8月23日",
+          "7月1日",
+          "8月31日",
+          "7月30日",
+          "8月31日",
+          "7月1日",
+          "9月5日",
+          "5月23日",
+          "9月6日",
+          "6月24日",
+          "9月13日",
+          "6月27日",
+          "9月13日",
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-31",
+          "2026-09-05",
+          "2026-09-06",
+          "2026-09-13"
+        ],
+        "priority_score": 125,
+        "source_author": "@otakanko2",
+        "source_count": 1,
+        "source_key": "x:2088037894065688949",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPekxSObIAAaT32.jpg",
+          "https://t.co/jdFYkQfkHS",
+          "pic.x.com/jdFYkQfkHS"
+        ],
+        "source_officiality": {
+          "account_name": "【公式】大田観光協会",
+          "classification": "registered_official_social",
+          "handle": "@otakanko2",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n大田区で今週末に予定されているイベント 🌟\n8月15日（土）【蒲田】大田区平和都市宣言記念事業「平和のつどい」\n8月15日（土）【池上】養源寺　精霊送り　盆踊り大会\n8月15日（土）～9月13日（日）【城南島】遠藤保子 個展「ここでおきたことはたぶん説明できない」\n\n4月21日（火）～8月16日（日）【大森】企画展「船模型が語る大田区の海苔養殖」\n6月20日（土）～8月23日（日）【中央】名作展「彩る、生きものたち。 川端龍子の観察と想像」\n7月1日（水）～8月31日（月）【大田区内】京急夏詣キャンペーン2026\n7月30日（木）～8月31日（月）【羽田】第30回大田区小学生大絵画展\n7月1日（水）～9月5日（土）【城南島】小林一夫彫刻展 木のイノチ 石のアソビ\n5月23日（土）～9月6日（日）【馬込】大田区立馬込アートギャラリーMAG展『日々を慈しむ、描く-安西啓明の日本画を中心に-』\n6月24日（水）～9月13日（日）【馬込】特集展示「 大森駅開業前夜－150年前の大森を振り返る－」\n6月27日（土）～9月13日（日）【城南島】加藤智大「In between」\n8月1日（土）～9",
+        "source_url": "https://x.com/otakanko2/status/2088037894065688949",
+        "source_urls": [
+          "https://x.com/otakanko2/status/2088037894065688949"
+        ],
+        "voice": {
+          "account": "@otakanko2",
+          "critique_post": false,
+          "date": "2026-08-13T23:00:02+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPekxSObIAAaT32.jpg",
+            "https://t.co/jdFYkQfkHS",
+            "pic.x.com/jdFYkQfkHS"
+          ],
+          "name": "【公式】大田観光協会",
+          "profile_description": "大田区の観光情報を発信中！\n歴史、グルメ、イベントなど、東京・大田の魅力をお届けします。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "大田区で今週末に予定されているイベント 🌟\n8月15日（土）【蒲田】大田区平和都市宣言記念事業「平和のつどい」\n8月15日（土）【池上】養源寺　精霊送り　盆踊り大会\n8月15日（土）～9月13日（日）【城南島】遠藤保子 個展「ここでおきたことはたぶん説明できない」\n\n4月21日（火）～8月16日（日）【大森】企画展「船模型が語る大田区の海苔養殖」\n6月20日（土）～8月23日（日）【中央】名作展「彩る、生きものたち。 川端龍子の観察と想像」\n7月1日（水）～8月31日（月）【大田区内】京急夏詣キャンペーン2026\n7月30日（木）～8月31日（月）【羽田】第30回大田区小学生大絵画展\n7月1日（水）～9月5日（土）【城南島】小林一夫彫刻展 木のイノチ 石のアソビ\n5月23日（土）～9月6日（日）【馬込】大田区立馬込アートギャラリーMAG展『日々を慈しむ、描く-安西啓明の日本画を中心に-』\n6月24日（水）～9月13日（日）【馬込】特集展示「 大森駅開業前夜－150年前の大森を振り返る－」\n6月27日（土）～9月13日（日）【城南島】加藤智大「In between」\n8月1日（土）～9月",
+          "title": "",
+          "tweet_id": "2088037894065688949",
+          "url": "https://x.com/otakanko2/status/2088037894065688949"
         }
       }
     },
