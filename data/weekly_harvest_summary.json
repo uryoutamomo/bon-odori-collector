@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-24T07:35:17.879332+00:00",
+  "generated_at": "2026-08-25T07:15:01.216229+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-24T07:35:10.909488+00:00",
+  "source_generated_at": "2026-08-25T07:14:55.307653+00:00",
   "days": 3,
-  "voice_count": 2882,
-  "candidate_count": 204,
+  "voice_count": 1894,
+  "candidate_count": 145,
   "category_counts": {
-    "曲×会場共起": 16,
-    "曲候補": 178,
-    "用語候補": 10
+    "曲×会場共起": 7,
+    "曲候補": 129,
+    "用語候補": 9
   },
-  "non_song_review_count": 26,
-  "song_candidate_count": 178,
-  "song_direct_dry_run_count": 119,
-  "song_review_count": 13,
-  "song_rejected_noise_count": 46,
+  "non_song_review_count": 16,
+  "song_candidate_count": 129,
+  "song_direct_dry_run_count": 87,
+  "song_review_count": 11,
+  "song_rejected_noise_count": 31,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -30,30 +30,29 @@
     "non_song_review": [
       "南越谷阿波踊り × 六本木ヒルズアリーナ",
       "南越谷阿波踊り × 大井町駅前中央通り",
-      "六本人音頭 × 六本木ヒルズアリーナ",
-      "南越谷阿波踊り × 浜町公園",
       "最終日・本踊り × 六本木ヒルズアリーナ",
       "最終日・本踊り × 大井町駅前中央通り",
-      "舞台踊り × 六本木ヒルズアリーナ",
-      "舞台踊り × 大井町駅前中央通り",
-      "舞台踊り × 浜町公園",
       "ドラえもん音頭 × 六本木ヒルズアリーナ",
-      "割と普通のナントカ音頭 × 築地本願寺",
-      "大東京音頭 × 浜町公園"
+      "六本人音頭 × 六本木ヒルズアリーナ",
+      "東京五輪音頭 × 晴海ふ頭公園",
+      "踊り会",
+      "練習会",
+      "参戦",
+      "梯子",
+      "踊り納め"
     ],
     "song_review": [
       "たいとう音頭",
       "郡上おどり",
       "盆ジョビ",
       "六本人音頭",
-      "スーダラ節",
-      "ズンパ音頭",
       "常磐炭坑節",
       "東京五輪音頭",
       "板橋音頭",
       "津軽甚句",
       "真室川音頭",
-      "荒川音頭"
+      "荒川音頭",
+      "踊れどれドラドラえもん音頭"
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7991,
+  "count": 7990,
   "summary": {
     "critical": 53,
     "high": 1429,
@@ -36442,27 +36442,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_6c8a5381ba75f632",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@StreamerPress",
-      "account_name": "STREAMER PRESS by ELEGELA",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/StreamerPress/status/2059505223589368307",
-      "tweet_id": "2059505223589368307",
-      "date": "2026-05-27T05:21:23+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HJTVFjbaYAA3T0P.jpg",
-        "https://t.co/YJIb3aghnV",
-        "pic.twitter.com/YJIb3aghnV"
-      ],
-      "text": "渋谷宮下公園で2026/9/26-27『SHIBUYA MIYASHITA PARK BON DANCE』開催🎉 伝統盆踊りとDJライブが融合した無料祭り！フード＆ドリンクにフェスマーケットも登場。夏の終わりを渋谷で熱く踊り明かせ！誰でも参加OK！#盆踊り #渋谷\n\n✨詳細はこちら👇\nhttps://t.co/Ts5PkarfBc https://t.co/YJIb3aghnV",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

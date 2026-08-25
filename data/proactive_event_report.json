@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-24T07:27:24.298058+00:00",
+  "generated_at": "2026-08-25T07:08:56.439625+00:00",
   "year": 2026,
   "items": [
     {
-      "venue": "八潮公園",
-      "event_name": "八潮公園",
+      "venue": "報恩寺境内",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
       "months": [
         9
       ],
@@ -12,164 +12,154 @@
       "evidence": []
     },
     {
-      "venue": "六本木天祖神社",
-      "event_name": "六本木天祖神社",
+      "venue": "大阪・関西万博 フェスティバル・ステーション",
+      "event_name": "大阪・関西万博 フェスティバル・ステーション",
       "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "向島1丁目旧町会会館前",
-      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "埠頭公園（港区芝浦港南）",
-      "event_name": "埠頭公園（港区芝浦港南）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "大豆戸八杉神社",
-      "event_name": "大豆戸八杉神社",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "平塚中央公園",
-      "event_name": "平塚中央公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "御旅公園",
-      "event_name": "御旅公園",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "新宿中央公園 ファンモアタイム広場",
-      "event_name": "新宿中央公園 ファンモアタイム広場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "旗岡八幡神社",
-      "event_name": "旗岡八幡神社",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "旧杜松小学校",
-      "event_name": "旧杜松小学校",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "旧江別小学校",
-      "event_name": "旧江別小学校",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
-      "event_name": "本四三ツ目児童遊園（三つ目児童公園）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "東本願寺（浅草）",
-      "event_name": "東本願寺（浅草）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "森戸海岸（森戸の浜）",
-      "event_name": "森戸海岸（森戸の浜）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "横川小学校",
-      "event_name": "横川小学校",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "江東天祖神社（亀戸天祖神社）",
-      "event_name": "江東天祖神社（亀戸天祖神社）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "池尻稲荷神社",
-      "event_name": "盆踊り(池尻地区)",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "鳥山池公園",
-      "event_name": "鳥山池公園",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "鶴川団地セントラル商店街",
-      "event_name": "鶴川団地セントラル商店街",
-      "months": [
-        8,
         10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小山台公園",
+      "event_name": "小山台公園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小梅児童遊園",
+      "event_name": "小梅児童遊園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "岸根貴雲寺",
+      "event_name": "岸根貴雲寺",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "押上二丁目町会会館前 路上",
+      "event_name": "押上二丁目町会会館前 路上",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "旗の台稲荷通り商店街",
+      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "months": [
+        10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "石一町会会館前",
+      "event_name": "石原一丁目 牛嶋神社 奉納踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "笠松みなと公園",
+      "event_name": "笠松みなと公園",
+      "months": [
+        10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "芝新堀町児童遊園",
+      "event_name": "芝新堀町児童遊園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "豊町一丁目会館前",
+      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "足寄町民センター前グラウンド・駐車場",
+      "event_name": "足寄町民センター前グラウンド・駐車場",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "長円寺",
+      "event_name": "長円寺",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "event_name": "長谷寺（西麻布・麻布大観音）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "青葉公園（港区立）",
+      "event_name": "青葉公園（港区立）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "飛木稲荷神社",
+      "event_name": "飛木稲荷神社",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "months": [
+        9
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -321,6 +311,15 @@
     {
       "venue": "伸成町会会館前 路上",
       "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "八潮公園",
+      "event_name": "八潮公園",
       "months": [
         9
       ],
