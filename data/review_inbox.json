@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-25T07:21:33.146468+00:00",
+  "generated_at": "2026-08-26T07:21:08.251052+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2323,6 +2323,448 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_680f982364e50e4d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "東砂1・2丁目町会、東砂5丁目町会の盆踊りに伺いました！\n\nご挨拶では、日頃から地域を支えてくださっている町会の皆さまへの感謝と、皆さまのご尽力があってこそ、こ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090407320308350995",
+      "source_url": "https://x.com/KINGOYAMASHITA2/status/2090407320308350995",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "22766fe31b097ad9c6d04117e8ee1d58c88337b322d7c89e84043f4311c273c3",
+      "last_seen_at": "github-32941223888-1",
+      "created_at": "2026-08-26T07:20:31.375455+00:00",
+      "updated_at": "2026-08-26T07:20:31.375455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3da37fc39faabc53",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月30日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-30"
+        ],
+        "priority_score": 125,
+        "source_author": "@KINGOYAMASHITA2",
+        "source_count": 1,
+        "source_key": "x:2090407320308350995",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQKeX-9a4AAofGu.jpg",
+          "https://t.co/L7vtdTUB2w",
+          "pic.x.com/L7vtdTUB2w",
+          "https://pbs.twimg.com/media/HQKeX92bkAALKd_.jpg",
+          "https://pbs.twimg.com/media/HQKeX94bwAADrXr.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "山下金吾（江東区議会議員、プロレスラー💪）",
+          "classification": "registered_official_social",
+          "handle": "@kingoyamashita2",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n東砂1・2丁目町会、東砂5丁目町会の盆踊りに伺いました！\n\nご挨拶では、日頃から地域を支えてくださっている町会の皆さまへの感謝と、皆さまのご尽力があってこそ、こうした地域の行事が開催できていることへの御礼をお伝えしました。\n\nまた、8月30日に東砂スポーツセンターで開催する「地域・元気・プロレス サマーフェスタ」についてもご案内させていただきました。\n\n会場では、お子さん連れのパパ・ママや地域の皆さまなど、20人以上の方から「写真撮ってください！」と声をかけていただきました。\n\nSNSを通じて知ってくださっている方が増えていることを実感し、本当にありがたく思います。\n\nお声がけいただいた皆さま、そして盆踊りの開催にご尽力いただいた町会・関係者の皆さま、本当にありがとうございました！\n\n地域のつながりの大切さを改めて感じる夜となりました。",
+        "source_url": "https://x.com/KINGOYAMASHITA2/status/2090407320308350995",
+        "source_urls": [
+          "https://x.com/KINGOYAMASHITA2/status/2090407320308350995"
+        ],
+        "voice": {
+          "account": "@KINGOYAMASHITA2",
+          "critique_post": false,
+          "date": "2026-08-20T11:55:17+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQKeX-9a4AAofGu.jpg",
+            "https://t.co/L7vtdTUB2w",
+            "pic.x.com/L7vtdTUB2w",
+            "https://pbs.twimg.com/media/HQKeX92bkAALKd_.jpg",
+            "https://pbs.twimg.com/media/HQKeX94bwAADrXr.jpg"
+          ],
+          "name": "山下金吾（江東区議会議員、プロレスラー💪）",
+          "profile_description": "39歳で夢を叶えたプロレスラー×江東区議会議員。JADP認定スポーツメンタルトレーナー。就職氷河期世代。子どもたちが夢をあきらめない社会、何歳からでも挑戦できる社会をつくる。消防団所属。認知症サポーター。3児の父。\nプロレスラーとしての発信はこちらから→https://t.co/M7zPgwKlMa",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "東砂1・2丁目町会、東砂5丁目町会の盆踊りに伺いました！\n\nご挨拶では、日頃から地域を支えてくださっている町会の皆さまへの感謝と、皆さまのご尽力があってこそ、こうした地域の行事が開催できていることへの御礼をお伝えしました。\n\nまた、8月30日に東砂スポーツセンターで開催する「地域・元気・プロレス サマーフェスタ」についてもご案内させていただきました。\n\n会場では、お子さん連れのパパ・ママや地域の皆さまなど、20人以上の方から「写真撮ってください！」と声をかけていただきました。\n\nSNSを通じて知ってくださっている方が増えていることを実感し、本当にありがたく思います。\n\nお声がけいただいた皆さま、そして盆踊りの開催にご尽力いただいた町会・関係者の皆さま、本当にありがとうございました！\n\n地域のつながりの大切さを改めて感じる夜となりました。",
+          "title": "",
+          "tweet_id": "2090407320308350995",
+          "url": "https://x.com/KINGOYAMASHITA2/status/2090407320308350995"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cb857f94ba9a714d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【千鳥町】2026/8/29(土)・30(日)「サマージャンボ 抽選会・納涼祭」開催！\n8/29までに千鳥町商栄会でのお買物やご飲食をご利用の方に抽選券を差し上",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089849830453711165",
+      "source_url": "https://x.com/otafull/status/2089849830453711165",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "fd06cbf3aa56e0c6baa8a791bfd645a256d81503f997952faa415d2efcf2679a",
+      "last_seen_at": "github-32941223888-1",
+      "created_at": "2026-08-26T07:20:31.375455+00:00",
+      "updated_at": "2026-08-26T07:20:31.375455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3fd19f6440313a47",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/29",
+          "8/29"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2089849830453711165",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【千鳥町】2026/8/29(土)・30(日)「サマージャンボ 抽選会・納涼祭」開催！\n8/29までに千鳥町商栄会でのお買物やご飲食をご利用の方に抽選券を差し上げています✨抽選会当日までたくさんGETしよう❤️\nhttps://t.co/bjnScrtDBL\n#大田区　#商店街　#千鳥町　#抽選",
+        "source_url": "https://x.com/otafull/status/2089849830453711165",
+        "source_urls": [
+          "https://x.com/otafull/status/2089849830453711165"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-18T23:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "text": "【千鳥町】2026/8/29(土)・30(日)「サマージャンボ 抽選会・納涼祭」開催！\n8/29までに千鳥町商栄会でのお買物やご飲食をご利用の方に抽選券を差し上げています✨抽選会当日までたくさんGETしよう❤️\nhttps://t.co/bjnScrtDBL\n#大田区　#商店街　#千鳥町　#抽選",
+          "title": "",
+          "tweet_id": "2089849830453711165",
+          "url": "https://x.com/otafull/status/2089849830453711165",
+          "value_score": 16.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cbd100df38ff8459",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【梅屋敷】8/28(金)、29(土)「ぷらもーる納涼盆踊り大会」\n28日は流し盆踊り❤️29日はちびっ子ガラポン大会や大道芸など❤️両日と",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090348111692738710",
+      "source_url": "https://x.com/otafull/status/2090348111692738710",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4b84e3c65997ad020c7116504c476767ec8d54ab8d0ea01614a3e47c191c56d3",
+      "last_seen_at": "github-32941223888-1",
+      "created_at": "2026-08-26T07:20:31.375455+00:00",
+      "updated_at": "2026-08-26T07:20:31.375455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_57571e45088d3ba8",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/28"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-28"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2090348111692738710",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【梅屋敷】8/28(金)、29(土)「ぷらもーる納涼盆踊り大会」\n28日は流し盆踊り❤️29日はちびっ子ガラポン大会や大道芸など❤️両日とも多数の模擬店が出店します🙌\nhttps://t.co/QhzuwgbP0s\n#大田区　#商店街　#梅屋敷　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2090348111692738710",
+        "source_urls": [
+          "https://x.com/otafull/status/2090348111692738710"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-20T08:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【梅屋敷】8/28(金)、29(土)「ぷらもーる納涼盆踊り大会」\n28日は流し盆踊り❤️29日はちびっ子ガラポン大会や大道芸など❤️両日とも多数の模擬店が出店します🙌\nhttps://t.co/QhzuwgbP0s\n#大田区　#商店街　#梅屋敷　#盆踊り",
+          "title": "",
+          "tweet_id": "2090348111692738710",
+          "url": "https://x.com/otafull/status/2090348111692738710"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_e8443de2cd98d3aa",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【平和島】2026/8/29(土)・30(日)大森東一丁目第一公園で「第40回 団地祭」開催！\n盆踊りや模擬店、あそびコーナーなどなど❤️\nぜひご来場ください🏮",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089910221787545811",
+      "source_url": "https://x.com/otafull/status/2089910221787545811",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "095adad3affb98f0a5dc163f257428ac12f0be00a41c0d7f1b7f81d80d695696",
+      "last_seen_at": "github-32941223888-1",
+      "created_at": "2026-08-26T07:20:31.375455+00:00",
+      "updated_at": "2026-08-26T07:20:31.375455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e23e3d9623f358db",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/29"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2089910221787545811",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【平和島】2026/8/29(土)・30(日)大森東一丁目第一公園で「第40回 団地祭」開催！\n盆踊りや模擬店、あそびコーナーなどなど❤️\nぜひご来場ください🏮✨\nhttps://t.co/dhozqbnjYA\n#大田区　#商店街　#平和島　#イベント",
+        "source_url": "https://x.com/otafull/status/2089910221787545811",
+        "source_urls": [
+          "https://x.com/otafull/status/2089910221787545811"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-19T03:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【平和島】2026/8/29(土)・30(日)大森東一丁目第一公園で「第40回 団地祭」開催！\n盆踊りや模擬店、あそびコーナーなどなど❤️\nぜひご来場ください🏮✨\nhttps://t.co/dhozqbnjYA\n#大田区　#商店街　#平和島　#イベント",
+          "title": "",
+          "tweet_id": "2089910221787545811",
+          "url": "https://x.com/otafull/status/2089910221787545811"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_fb21f78fcc830cfd",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "へびくぼフェスティバル「デジタルdeスタンプラリー」開催🐍\n【参加方法】\n参加登録のQRコードを読み取って参加スタート！（各イベントの会場内にも掲出します）\nへ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089568332253213136",
+      "source_url": "https://x.com/hebikubojinja/status/2089568332253213136",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "39735d983731782c680d5b15268bec16676ac35874b8dbf34f0b90e75529ea6c",
+      "last_seen_at": "github-32941223888-1",
+      "created_at": "2026-08-26T07:20:31.375455+00:00",
+      "updated_at": "2026-08-26T07:20:31.375455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1892d9b49289b186",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月２３日",
+          "８月２９日",
+          "９月１９日",
+          "９月１９日",
+          "１２時",
+          "１７時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-29",
+          "2026-09-19"
+        ],
+        "priority_score": 125,
+        "source_author": "@hebikubojinja",
+        "source_count": 1,
+        "source_key": "x:2089568332253213136",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP-jUkdbQAAQOX3.jpg",
+          "https://t.co/PkXXj9pXyA",
+          "pic.x.com/PkXXj9pXyA",
+          "https://pbs.twimg.com/media/HP-jUkdawAAXShW.jpg",
+          "https://pbs.twimg.com/media/HP-jUkoacAAyiQT.jpg",
+          "https://pbs.twimg.com/media/HP-jUlLa4AA3juD.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "蛇窪神社　公式",
+          "classification": "registered_official_social",
+          "handle": "@hebikubojinja",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nへびくぼフェスティバル「デジタルdeスタンプラリー」開催🐍\n【参加方法】\n参加登録のQRコードを読み取って参加スタート！（各イベントの会場内にも掲出します）\nへびくぼフェスティバルの各イベント（残り下記の①～③になります）に参加し、各会場に設置されているQRコードを読み取ってデジタルスタンプを集めてください✨\nスタンプは1個から最大5個まで集めることができます。集めたスタンプの数だけ抽選にご参加いただけます⭐️\n①８月２３日（日）つちのとみの市　②  ８月２９日（土） 戸越６丁目町会・大原盆踊り　③９月１９日（土）or２０日（日） 日本白蛇三大聖地集結！しろへびサミットinしながわ\n抽選会　９月１９日（土）２０日（日）しろへびサミットinしながわ　１２時～１７時　品川区・蛇窪のブース\n景品　特賞/山口県岩国市天然記念物しろへび頭部脱皮御守り３名様、１等/群馬県沼田市老神温泉・宿泊補助券３万円分３名様、２等/品川区蛇窪オリジナルクリアファイル１００名様",
+        "source_url": "https://x.com/hebikubojinja/status/2089568332253213136",
+        "source_urls": [
+          "https://x.com/hebikubojinja/status/2089568332253213136"
+        ],
+        "voice": {
+          "account": "@hebikubojinja",
+          "critique_post": false,
+          "date": "2026-08-18T04:21:27+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP-jUkdbQAAQOX3.jpg",
+            "https://t.co/PkXXj9pXyA",
+            "pic.x.com/PkXXj9pXyA",
+            "https://pbs.twimg.com/media/HP-jUkdawAAXShW.jpg",
+            "https://pbs.twimg.com/media/HP-jUkoacAAyiQT.jpg",
+            "https://pbs.twimg.com/media/HP-jUlLa4AA3juD.jpg"
+          ],
+          "name": "蛇窪神社　公式",
+          "profile_description": "東京の白蛇さまと親しまれる、蛇窪大明神の公式X(Twitter)です。日々の神社の日常、年間行事や御朱印についてもお知らせします。#白蛇神社 #蛇窪神社 #祈祷 #財運隆昌 #立身出世 #除災招福 #病気平癒 #白蛇祈願 #御朱印 #白蛇 #白蛇お守り #蛇供養 #銭洗い #財運",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "へびくぼフェスティバル「デジタルdeスタンプラリー」開催🐍\n【参加方法】\n参加登録のQRコードを読み取って参加スタート！（各イベントの会場内にも掲出します）\nへびくぼフェスティバルの各イベント（残り下記の①～③になります）に参加し、各会場に設置されているQRコードを読み取ってデジタルスタンプを集めてください✨\nスタンプは1個から最大5個まで集めることができます。集めたスタンプの数だけ抽選にご参加いただけます⭐️\n①８月２３日（日）つちのとみの市　②  ８月２９日（土） 戸越６丁目町会・大原盆踊り　③９月１９日（土）or２０日（日） 日本白蛇三大聖地集結！しろへびサミットinしながわ\n抽選会　９月１９日（土）２０日（日）しろへびサミットinしながわ　１２時～１７時　品川区・蛇窪のブース\n景品　特賞/山口県岩国市天然記念物しろへび頭部脱皮御守り３名様、１等/群馬県沼田市老神温泉・宿泊補助券３万円分３名様、２等/品川区蛇窪オリジナルクリアファイル１００名様",
+          "title": "",
+          "tweet_id": "2089568332253213136",
+          "url": "https://x.com/hebikubojinja/status/2089568332253213136"
         }
       }
     },

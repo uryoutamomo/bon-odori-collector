@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "generated_by": "x_candidate_backlog.py",
-  "updated_at": "2026-08-26T07:19:26.631583+00:00",
+  "updated_at": "2026-08-26T07:20:15.354237+00:00",
   "source_generated_at": "2026-08-26T07:19:26.509503+00:00",
   "summary": {
     "total": 491,
     "present_in_latest": 401,
     "carried_from_prior_runs": 90,
     "status_counts": {
-      "in_progress": 40,
+      "in_progress": 45,
       "registered": 0,
       "rejected": 0,
-      "unprocessed": 451
+      "unprocessed": 446
     },
     "latest_selected_count": 30,
     "latest_overflow_count": 371,
@@ -1132,9 +1132,9 @@
     {
       "source_key": "x:2089568332253213136",
       "candidate_id": "xgap_1892d9b49289b186",
-      "status": "unprocessed",
-      "status_label": "未処理",
-      "status_updated_at": "2026-08-18T23:17:21.294694+00:00",
+      "status": "in_progress",
+      "status_label": "処理中",
+      "status_updated_at": "2026-08-26T07:20:15.354237+00:00",
       "first_seen_at": "2026-08-18T23:17:21.294694+00:00",
       "last_seen_at": "2026-08-26T07:19:26.631583+00:00",
       "present_in_latest": true,
@@ -1232,17 +1232,17 @@
         "event_date": "2026-08-29",
         "days_until_event": 3
       },
-      "queued_at": null,
-      "review_observation_id": null,
-      "inbox_id": null,
+      "queued_at": "2026-08-26T07:20:15.354237+00:00",
+      "review_observation_id": "github-32941223888-1",
+      "inbox_id": "inbox_fb21f78fcc830cfd",
       "resolution": null
     },
     {
       "source_key": "x:2089849830453711165",
       "candidate_id": "xgap_3fd19f6440313a47",
-      "status": "unprocessed",
-      "status_label": "未処理",
-      "status_updated_at": "2026-08-18T23:17:21.294694+00:00",
+      "status": "in_progress",
+      "status_label": "処理中",
+      "status_updated_at": "2026-08-26T07:20:15.354237+00:00",
       "first_seen_at": "2026-08-18T23:17:21.294694+00:00",
       "last_seen_at": "2026-08-26T07:19:26.631583+00:00",
       "present_in_latest": true,
@@ -1322,17 +1322,17 @@
         "event_date": "2026-08-29",
         "days_until_event": 3
       },
-      "queued_at": null,
-      "review_observation_id": null,
-      "inbox_id": null,
+      "queued_at": "2026-08-26T07:20:15.354237+00:00",
+      "review_observation_id": "github-32941223888-1",
+      "inbox_id": "inbox_cb857f94ba9a714d",
       "resolution": null
     },
     {
       "source_key": "x:2089910221787545811",
       "candidate_id": "xgap_e23e3d9623f358db",
-      "status": "unprocessed",
-      "status_label": "未処理",
-      "status_updated_at": "2026-08-19T07:21:11.049655+00:00",
+      "status": "in_progress",
+      "status_label": "処理中",
+      "status_updated_at": "2026-08-26T07:20:15.354237+00:00",
       "first_seen_at": "2026-08-19T07:21:11.049655+00:00",
       "last_seen_at": "2026-08-26T07:19:26.631583+00:00",
       "present_in_latest": true,
@@ -1409,17 +1409,17 @@
         "event_date": "2026-08-29",
         "days_until_event": 3
       },
-      "queued_at": null,
-      "review_observation_id": null,
-      "inbox_id": null,
+      "queued_at": "2026-08-26T07:20:15.354237+00:00",
+      "review_observation_id": "github-32941223888-1",
+      "inbox_id": "inbox_e8443de2cd98d3aa",
       "resolution": null
     },
     {
       "source_key": "x:2090348111692738710",
       "candidate_id": "xgap_57571e45088d3ba8",
-      "status": "unprocessed",
-      "status_label": "未処理",
-      "status_updated_at": "2026-08-21T07:24:26.081054+00:00",
+      "status": "in_progress",
+      "status_label": "処理中",
+      "status_updated_at": "2026-08-26T07:20:15.354237+00:00",
       "first_seen_at": "2026-08-21T07:24:26.081054+00:00",
       "last_seen_at": "2026-08-26T07:19:26.631583+00:00",
       "present_in_latest": true,
@@ -1496,17 +1496,17 @@
         "event_date": "2026-08-28",
         "days_until_event": 2
       },
-      "queued_at": null,
-      "review_observation_id": null,
-      "inbox_id": null,
+      "queued_at": "2026-08-26T07:20:15.354237+00:00",
+      "review_observation_id": "github-32941223888-1",
+      "inbox_id": "inbox_cbd100df38ff8459",
       "resolution": null
     },
     {
       "source_key": "x:2090407320308350995",
       "candidate_id": "xgap_3da37fc39faabc53",
-      "status": "unprocessed",
-      "status_label": "未処理",
-      "status_updated_at": "2026-08-21T07:24:26.081054+00:00",
+      "status": "in_progress",
+      "status_label": "処理中",
+      "status_updated_at": "2026-08-26T07:20:15.354237+00:00",
       "first_seen_at": "2026-08-21T07:24:26.081054+00:00",
       "last_seen_at": "2026-08-26T07:19:26.631583+00:00",
       "present_in_latest": true,
@@ -1596,9 +1596,9 @@
         "event_date": "2026-08-30",
         "days_until_event": 4
       },
-      "queued_at": null,
-      "review_observation_id": null,
-      "inbox_id": null,
+      "queued_at": "2026-08-26T07:20:15.354237+00:00",
+      "review_observation_id": "github-32941223888-1",
+      "inbox_id": "inbox_680f982364e50e4d",
       "resolution": null
     },
     {
