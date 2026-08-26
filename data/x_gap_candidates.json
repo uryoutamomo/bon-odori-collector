@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-25T07:14:43.291522+00:00",
+  "generated_at": "2026-08-26T07:19:26.509503+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 372,
+  "archived_count": 371,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -24306,65 +24306,6 @@
         "https://pbs.twimg.com/media/HQCXckEbQAA5OT3.jpg",
         "https://pbs.twimg.com/media/HQCXcjSaQAAJN52.jpg"
       ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_01c3b8a1b31a86f2",
-      "source_key": "x:2090257514373726337",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/kotokeizai/status/2090257514373726337",
-      "source_text": "\n明日8/21(金)の神輿御霊入れを皮切りに、亀戸天神社 例大祭開催！\n\n🔻その他の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjIcZDVu\n\n▽ 亀戸天神社 例大祭\n8/21(金) 神輿御霊入れ\n8/22(土) 御鳳輦渡御祭\n8/23(日) 氏子神輿連合宮入\n8/25(火) 例大祭・献灯明",
-      "source_author": "@kotokeizai",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 0,
-        "handle": "@kotokeizai",
-        "account_name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/21",
-        "8/21",
-        "8/22",
-        "8/23",
-        "8/25"
-      ],
-      "observed_dates": [
-        "2026-08-25"
-      ],
-      "event_group_key": "informal:385d5d5026d987cd",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x_whitelist",
-        "account": "@kotokeizai",
-        "name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
-        "profile_description": "“江東区がもっと好きになる”ハッピーニュースを配信する《こと経》の中の人です。新店やイベントなどの情報提供はDMやリプライでも大歓迎！イベント情報中心のポストですが、時に江東区グルメも。リプいただけると小躍りして喜びます！ Instagram→ https://t.co/IIpE2CMlNp",
-        "title": "",
-        "text": "明日8/21(金)の神輿御霊入れを皮切りに、亀戸天神社 例大祭開催！\n\n🔻その他の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjIcZDVu\n\n▽ 亀戸天神社 例大祭\n8/21(金) 神輿御霊入れ\n8/22(土) 御鳳輦渡御祭\n8/23(日) 氏子神輿連合宮入\n8/25(火) 例大祭・献灯明",
-        "url": "https://x.com/kotokeizai/status/2090257514373726337",
-        "date": "2026-08-20T02:00:01+00:00",
-        "tweet_id": "2090257514373726337",
-        "tags": [
-          "⭐盆踊ラー",
-          "📅未来予定",
-          "🟡関心"
-        ],
-        "critique_post": false,
-        "value_score": 16.0
-      },
-      "source_urls": [
-        "https://x.com/kotokeizai/status/2090257514373726337"
-      ],
-      "source_media_urls": [],
       "corroboration_count": 1,
       "source_count": 1,
       "archive_reason": "informal_new_event_daily_cap"
