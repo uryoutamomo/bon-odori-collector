@@ -769,6 +769,93 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             {"ended_transition_downgrade": 1},
         )
 
+    def test_stale_approval_chain_is_retired_when_only_current_diff_is_ended_transition(
+        self,
+    ):
+        published = self.published_event()
+        old_name = {**published, "name": "承認済み盆踊り 旧称", "detail": "改名前"}
+        intermediate = {**published, "detail": "改名承認値"}
+        parallel_predecessor = {**published, "detail": "別の承認前値"}
+        reviewed = {**published, "detail": "最新の承認値"}
+        current_site = {
+            **reviewed,
+            "songs": [{"name": "東京音頭", "probability": 95}],
+        }
+        collector = {
+            **current_site,
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+        replacement = self.key_replacement_approval(old_name, intermediate)
+        duplicate_arrival = self.same_key_approval(parallel_predecessor, intermediate)
+        duplicate_arrival["id"] = "review-2"
+        latest = self.same_key_approval(intermediate, reviewed)
+        latest["id"] = "review-3"
+
+        result = self.run_build(
+            [collector],
+            [current_site],
+            [replacement, duplicate_arrival, latest],
+        )
+
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertNotIn(
+            "reviewed_exact_approval_mismatch", result["decision"]["failures"]
+        )
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"superseded": 2, "retired_after_ended_transition": 1},
+        )
+        approval_results = result["reviewed_exact_approvals"]["results"]
+        self.assertEqual(approval_results[0]["superseded_by"], "review-3")
+        self.assertEqual(approval_results[1]["superseded_by"], "review-3")
+        self.assertEqual(
+            approval_results[2]["retired_by"], "ended_transition_downgrade"
+        )
+        self.assertEqual(
+            result["approved_classification"]["events_by_action"],
+            {"ended_transition_downgrade": 1},
+        )
+
+    def test_stale_approval_chain_still_blocks_when_ended_transition_has_detail_drift(
+        self,
+    ):
+        published = self.published_event()
+        old_name = {**published, "name": "承認済み盆踊り 旧称", "detail": "改名前"}
+        intermediate = {**published, "detail": "改名承認値"}
+        reviewed = {**published, "detail": "最新の承認値"}
+        current_site = {
+            **reviewed,
+            "songs": [{"name": "東京音頭", "probability": 95}],
+        }
+        collector = {
+            **current_site,
+            "detail": "未承認の詳細",
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+        replacement = self.key_replacement_approval(old_name, intermediate)
+        latest = self.same_key_approval(intermediate, reviewed)
+        latest["id"] = "review-2"
+
+        result = self.run_build(
+            [collector], [current_site], [replacement, latest]
+        )
+
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn(
+            "reviewed_exact_approval_mismatch", result["decision"]["failures"]
+        )
+        self.assertIn(
+            "individual_review_diffs_remain", result["decision"]["failures"]
+        )
+        self.assertEqual(
+            result["reviewed_exact_approvals"]["status_counts"],
+            {"hash_mismatch": 2},
+        )
+
     def test_superseded_approval_chain_does_not_hide_current_detail_drift(self):
         published = self.published_event()
         original = {**published, "detail": "最初の公開値"}

@@ -30,7 +30,7 @@ verified_by:
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: bbf0900
+updated_for: 6a34173
 ---
 
 # 公開サブシステム
@@ -119,8 +119,15 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   その後続承認が適用済みだと機械確認できれば、古い承認を `superseded` として失敗数から除外する。
   前の承認が `key_replacement` なら到達先には `collector_event_key` を使うため、改名後の同一キー更新へ鎖をつなげられる。
   hashだけが一致してもevent keyが一致しなければ退役しない。現在のcollectorとsiteの差分分類は省略せず、
-  detail・日付・出典などの未承認変更は引き続きblockする。既存の承認記録は書き換えず、追記された後続承認だけを
-  退役の証拠に使う。
+  detail・日付・出典などの未承認変更は引き続きblockする。
+
+  承認鎖の最新値がsiteへ到達した後、開催終了への自動遷移や低リスクfield更新で完全hashが変わる場合がある。
+  このときは、**現在の後処理済みcollectorとsiteの差分**が厳格な `ended_transition_downgrade` と分類されたイベントに限り、
+  そのイベントの未解決承認鎖の末尾1件を `retired_after_ended_transition` として退役させる。終了日は今日より前、
+  `date` / `date_end` は完全一致、遷移方向は非endedからended、変更fieldは終了表示と同じ状態から生成されるallow-list内、
+  `recurrence_score` は非減少、という既存条件をすべて満たす必要がある。その末尾を安全な後続値としてから、
+  hashで連結できる古い承認だけを `superseded` にする。連結できない古い承認、終了当日、逆遷移、detail・日付・出典の
+  併存差分は `hash_mismatch` のまま残して同期を止める。既存の承認台帳は書き換えない。
 - **なぜ**: 件数のズレは、後処理のどれかが動かなかったか、想定外の削除が起きたことの最も分かりやすい兆候だから。
   個々の差分を見る前に、まず総数で異常を捕まえる。
 - **破れたときの症状**: 公開件数が急に減る・増える。過去に、日次が止まったまま同期だけ進んで
@@ -131,6 +138,8 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_allows_superseded_approval_chain_to_flow_into_ended_transition`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_key_replacement_is_superseded_by_proven_same_key_successor`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_key_replacement_is_not_superseded_without_exact_successor_hash`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_stale_approval_chain_is_retired_when_only_current_diff_is_ended_transition`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_stale_approval_chain_still_blocks_when_ended_transition_has_detail_drift`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_superseded_approval_chain_does_not_hide_current_detail_drift`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_rejects_drift_before_the_reviewed_value_was_published`
 
