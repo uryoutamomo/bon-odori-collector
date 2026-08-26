@@ -85,7 +85,13 @@ def mark_superseded_same_key_approvals(results, approvals):
     collector-vs-site drift is still left to the normal high-risk classifier.
     """
     proven_successors = {}
-    safe_statuses = {"applied", "consumed_at_site", "already_synced", "superseded"}
+    safe_statuses = {
+        "applied",
+        "consumed_at_site",
+        "already_synced",
+        "retired_after_ended_transition",
+        "superseded",
+    }
 
     for index in range(len(results) - 1, -1, -1):
         approval = approvals[index] if index < len(approvals) else None
@@ -119,7 +125,45 @@ def mark_superseded_same_key_approvals(results, approvals):
             proven_successors[(event_key_value, site_hash)] = result.get("id")
 
 
-def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
+def mark_retired_ended_transition_approvals(
+    results, approvals, ended_transition_event_keys
+):
+    """Retire only the latest stale approval for each proven ended transition.
+
+    The current collector/site payload comparison is the safety boundary: the
+    caller supplies only event keys already classified by the strict
+    ``ended_transition_downgrade`` rule.  Retiring the newest matching approval
+    lets the existing hash-linked successor logic supersede older history.
+    Unlinked older approvals remain ``hash_mismatch`` and keep the guard closed.
+    """
+    pending_keys = set(ended_transition_event_keys or ())
+    if not pending_keys:
+        return
+
+    for index in range(len(results) - 1, -1, -1):
+        approval = approvals[index] if index < len(approvals) else None
+        result = results[index]
+        if not isinstance(approval, dict) or result.get("status") != "hash_mismatch":
+            continue
+
+        kind = approval.get("kind")
+        if kind == "same_key_update":
+            arrival_key = str(approval.get("event_key") or "")
+        elif kind == "key_replacement":
+            arrival_key = str(approval.get("collector_event_key") or "")
+        else:
+            continue
+
+        if arrival_key not in pending_keys:
+            continue
+        result["status"] = "retired_after_ended_transition"
+        result["retired_by"] = "ended_transition_downgrade"
+        pending_keys.remove(arrival_key)
+
+
+def apply_reviewed_exact_approvals(
+    collector_rows, site_rows, payload, *, ended_transition_event_keys=None
+):
     """Apply value-pinned review approvals to a comparison-only site copy."""
     approved_site_rows = copy.deepcopy(site_rows)
     results = []
@@ -318,6 +362,12 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
         result["status"] = "hash_mismatch"
         results.append(result)
 
+    # First preserve the normal exact-hash successor path.  Only if a chain
+    # still has no safe tip may a proven current ended transition retire it.
+    mark_superseded_same_key_approvals(results, approvals)
+    mark_retired_ended_transition_approvals(
+        results, approvals, ended_transition_event_keys
+    )
     mark_superseded_same_key_approvals(results, approvals)
     status_counts = dict(Counter(result["status"] for result in results))
     failure_count = sum(
@@ -541,6 +591,11 @@ def build(args):
         postprocessed_events,
         site_events,
         reviewed_approvals_payload,
+        ended_transition_event_keys={
+            row["event_key"]
+            for row in postprocessed["event_rows"]
+            if row["recommended_action"] == "ended_transition_downgrade"
+        },
     )
     approved = classify_rows(postprocessed_events, reviewed["site_rows"], today=today)
     decision = guard_decision(
