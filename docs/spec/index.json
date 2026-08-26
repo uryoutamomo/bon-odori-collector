@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T15:37:50Z",
-  "generated_for_commit": "fab9fb0",
+  "generated_at": "2026-08-26T05:51:42Z",
+  "generated_for_commit": "fd62fca",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -687,7 +687,7 @@
         "tests/test_apply_public_date_predictions.py",
         "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "bbf0900",
+      "updated_for": "6a34173",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -708,10 +708,18 @@
         "public_json_postprocessors/review_missing_occurrence_venues.py",
         "venues/export_public_venues.py"
       ],
-      "staleness": null,
-      "version": "1.16",
-      "revision_count": 17,
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      },
+      "version": "1.17",
+      "revision_count": 18,
       "history": [
+        {
+          "commit": "f86e171",
+          "date": "2026-08-26",
+          "subject": "Document ended-transition approval retirement"
+        },
         {
           "commit": "c3f2d25",
           "date": "2026-08-22",
@@ -766,11 +774,6 @@
           "commit": "9bd761e",
           "date": "2026-08-16",
           "subject": "Add guarded detail cleanup repair job"
-        },
-        {
-          "commit": "b9ff2f0",
-          "date": "2026-08-16",
-          "subject": "fix: close X song materialization safety gaps"
         }
       ]
     },
