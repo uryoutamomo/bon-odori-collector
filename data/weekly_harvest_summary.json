@@ -1,20 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-26T07:19:54.210310+00:00",
+  "generated_at": "2026-08-27T17:50:16.186894+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-26T07:19:47.702576+00:00",
+  "source_generated_at": "2026-08-27T17:50:10.089594+00:00",
   "days": 3,
-  "voice_count": 942,
-  "candidate_count": 91,
+  "voice_count": 47,
+  "candidate_count": 10,
   "category_counts": {
-    "曲候補": 84,
-    "用語候補": 7
+    "曲候補": 10
   },
-  "non_song_review_count": 7,
-  "song_candidate_count": 84,
-  "song_direct_dry_run_count": 58,
-  "song_review_count": 8,
-  "song_rejected_noise_count": 18,
+  "non_song_review_count": 0,
+  "song_candidate_count": 10,
+  "song_direct_dry_run_count": 7,
+  "song_review_count": 3,
+  "song_rejected_noise_count": 0,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -26,23 +25,10 @@
     "python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run"
   ],
   "samples": {
-    "non_song_review": [
-      "踊り会",
-      "参戦",
-      "練習会",
-      "ハシゴ",
-      "梯子",
-      "盆活",
-      "踊り始め"
-    ],
+    "non_song_review": [],
     "song_review": [
+      "らんまん踊り",
       "たいとう音頭",
-      "板橋音頭",
-      "津軽甚句",
-      "盆ジョビ",
-      "真室川音頭",
-      "荒川音頭",
-      "踊れどれドラドラえもん音頭",
       "郡上おどり"
     ]
   }

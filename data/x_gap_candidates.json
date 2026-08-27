@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-26T07:19:26.509503+00:00",
+  "generated_at": "2026-08-27T17:49:48.912898+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
@@ -22006,9 +22006,7 @@
       "date_hints": [
         "８月２６日"
       ],
-      "observed_dates": [
-        "2026-08-26"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {

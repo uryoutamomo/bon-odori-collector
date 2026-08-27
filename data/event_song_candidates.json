@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1580,
+  "count": 1583,
   "public_event_count": 637,
-  "review_count": 943,
+  "review_count": 946,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -146,7 +146,7 @@
       "evidence_count": 1
     },
     {
-      "id": "854deb7ebbe6ea3c",
+      "id": "0840a9673bb1dd03",
       "song_name": "ダンシングヒーロー",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -157,6 +157,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iSi-gPaaUlI",
+          "date": "2026-08-27T09:00:03+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 青山善光寺 盆踊り ダンシングヒーロー｜盆ジョヴィ｜炭坑節 東京音頭 他 / Traditional Japanese Bon dance in Aoyama, Tokyo 2026. 🇯🇵\n東京の青山にある善光寺で「謝恩納涼盆踊り大会」が開催されました。\n日本中で盆踊りのプロデュースをされている鳳蝶美成さんの盆踊りのルーツの場でもある善光寺。日本全国の民謡から定番曲、そして盆ジョヴィやダンシング・ヒーローまで幅広い選曲で盛り上がりました！\n\nA “Bon Odori Festival” was held at Zenko-ji Temple in Aoyama, Tokyo. Zenko-ji Temple is the birthplace of Bon Odori for Bijo Ageha, who produces Bon Odori events throughou"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/Santama_Genjin/status/2084538490717712892",
@@ -183,7 +189,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "89f207395ee05a81",
@@ -442,7 +448,7 @@
       "evidence_count": 23
     },
     {
-      "id": "9e743a0c2ee290f8",
+      "id": "4ec3e82a40b62998",
       "song_name": "東京音頭",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -454,6 +460,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iSi-gPaaUlI",
+          "date": "2026-08-27T09:00:03+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 青山善光寺 盆踊り ダンシングヒーロー｜盆ジョヴィ｜炭坑節 東京音頭 他 / Traditional Japanese Bon dance in Aoyama, Tokyo 2026. 🇯🇵\n東京の青山にある善光寺で「謝恩納涼盆踊り大会」が開催されました。\n日本中で盆踊りのプロデュースをされている鳳蝶美成さんの盆踊りのルーツの場でもある善光寺。日本全国の民謡から定番曲、そして盆ジョヴィやダンシング・ヒーローまで幅広い選曲で盛り上がりました！\n\nA “Bon Odori Festival” was held at Zenko-ji Temple in Aoyama, Tokyo. Zenko-ji Temple is the birthplace of Bon Odori for Bijo Ageha, who produces Bon Odori events throughou"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=J3eU1_Utj_U",
@@ -966,7 +978,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 85
+      "evidence_count": 86
     },
     {
       "id": "0769ecfc6f169e16",
@@ -6479,7 +6491,7 @@
       "evidence_count": 23
     },
     {
-      "id": "1aac14e14cf4af51",
+      "id": "54eb9271f93e4e5a",
       "song_name": "炭坑節",
       "event_name": "歌舞伎町BON ODORI",
       "venue": "歌舞伎町シネシティ広場",
@@ -6491,6 +6503,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=5AAjdKcYdkw",
+          "date": "2026-08-27T07:00:21+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　「歌舞伎町BON ODORI」１　2026年8月14日　東京都新宿区　歌舞伎町　盆踊り\n2026年8月14日、\n眠らない街・新宿歌舞伎町で開催された\n「歌舞伎町BON ODORI」の様子をお届けします！\n\n高層ビルに囲まれた歌舞伎町の中心で、\n響き渡る和太鼓の音と盆踊りの熱気。 \n都会の真ん中とは思えないほどの一体感と、\n新宿ならではの華やかな盛り上がりをぜひご覧ください。\n\n\n【開催概要】 \n日時：2026年8月14日 \n場所：東京都新宿区 歌舞伎町（シネシティ広場周辺） \n内容：歌舞伎町BON ODORI\n\n今後も各地の盆踊りや和太鼓演奏の動画を投稿していきます。 ぜひチャンネル登録・高評価をお願いします！\n\n\n歌舞伎町盆踊り\n１東京音頭　https://youtu.be/5AAjdKcYdkw\n２炭坑節　https://youtu.be/xc5ZfdjBJU0\n３大東京音頭　https://yo"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=tS1c0KLjxe8",
@@ -6517,7 +6535,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "fd596121c65d9530",
@@ -10015,6 +10033,28 @@
       "evidence_count": 1
     },
     {
+      "id": "8e863c5ce050d0e9",
+      "song_name": "らんまん踊り",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iSi-gPaaUlI",
+          "date": "2026-08-27T09:00:03+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 青山善光寺 盆踊り ダンシングヒーロー｜盆ジョヴィ｜炭坑節 東京音頭 他 / Traditional Japanese Bon dance in Aoyama, Tokyo 2026. 🇯🇵\n東京の青山にある善光寺で「謝恩納涼盆踊り大会」が開催されました。\n日本中で盆踊りのプロデュースをされている鳳蝶美成さんの盆踊りのルーツの場でもある善光寺。日本全国の民謡から定番曲、そして盆ジョヴィやダンシング・ヒーローまで幅広い選曲で盛り上がりました！\n\nA “Bon Odori Festival” was held at Zenko-ji Temple in Aoyama, Tokyo. Zenko-ji Temple is the birthplace of Bon Odori for Bijo Ageha, who produces Bon Odori events throughou"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "5f2b107d09b6949a",
       "song_name": "りんご節",
       "event_name": "納涼盆踊り大会",
@@ -12057,6 +12097,28 @@
       "evidence_count": 26
     },
     {
+      "id": "fdf109a585462d7f",
+      "song_name": "浴衣音頭",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iSi-gPaaUlI",
+          "date": "2026-08-27T09:00:03+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 青山善光寺 盆踊り ダンシングヒーロー｜盆ジョヴィ｜炭坑節 東京音頭 他 / Traditional Japanese Bon dance in Aoyama, Tokyo 2026. 🇯🇵\n東京の青山にある善光寺で「謝恩納涼盆踊り大会」が開催されました。\n日本中で盆踊りのプロデュースをされている鳳蝶美成さんの盆踊りのルーツの場でもある善光寺。日本全国の民謡から定番曲、そして盆ジョヴィやダンシング・ヒーローまで幅広い選曲で盛り上がりました！\n\nA “Bon Odori Festival” was held at Zenko-ji Temple in Aoyama, Tokyo. Zenko-ji Temple is the birthplace of Bon Odori for Bijo Ageha, who produces Bon Odori events throughou"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "f65d069731d10865",
       "song_name": "港まつり音頭",
       "event_name": "納涼盆踊り大会",
@@ -12079,7 +12141,7 @@
       "evidence_count": 1
     },
     {
-      "id": "7d76b8aa26fb6c02",
+      "id": "94bdf8f281b6283c",
       "song_name": "炭坑節",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -12091,6 +12153,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iSi-gPaaUlI",
+          "date": "2026-08-27T09:00:03+00:00",
+          "text": "Tokyo Lonely Walker\n[4K] 青山善光寺 盆踊り ダンシングヒーロー｜盆ジョヴィ｜炭坑節 東京音頭 他 / Traditional Japanese Bon dance in Aoyama, Tokyo 2026. 🇯🇵\n東京の青山にある善光寺で「謝恩納涼盆踊り大会」が開催されました。\n日本中で盆踊りのプロデュースをされている鳳蝶美成さんの盆踊りのルーツの場でもある善光寺。日本全国の民謡から定番曲、そして盆ジョヴィやダンシング・ヒーローまで幅広い選曲で盛り上がりました！\n\nA “Bon Odori Festival” was held at Zenko-ji Temple in Aoyama, Tokyo. Zenko-ji Temple is the birthplace of Bon Odori for Bijo Ageha, who produces Bon Odori events throughou"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=J3eU1_Utj_U",
@@ -12507,7 +12575,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 69
+      "evidence_count": 70
     },
     {
       "id": "4c59ab31d6c8dea4",
@@ -33004,6 +33072,28 @@
       "evidence_count": 1
     },
     {
+      "id": "9cf5add4ce2f936d",
+      "song_name": "外国人観光客も踊り",
+      "event_name": "渋谷盆踊り",
+      "venue": "渋谷109前",
+      "area": "渋谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GZllFQldFQTFHZHBMLTBWQmxxX3c0SlZUQnQ3X3J1ZXh3cFdHTlJOWW55WUo3RElGZTRqd2dWVnVlV2pfT0JpbWJSenA4eEk3aVE?oc=5",
+          "date": "Sun, 09 Aug 2026 07:00:00 GMT",
+          "text": "「渋谷盆踊り」に6万7000人 109前に櫓、外国人観光客も踊りの輪に - シブヤ経済新聞"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "015ce4547f974831",
       "song_name": "手繋ぎ渋谷音頭",
       "event_name": "渋谷盆踊り",
@@ -52217,6 +52307,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=5AAjdKcYdkw",
+          "date": "2026-08-27T07:00:21+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　「歌舞伎町BON ODORI」１　2026年8月14日　東京都新宿区　歌舞伎町　盆踊り\n2026年8月14日、\n眠らない街・新宿歌舞伎町で開催された\n「歌舞伎町BON ODORI」の様子をお届けします！\n\n高層ビルに囲まれた歌舞伎町の中心で、\n響き渡る和太鼓の音と盆踊りの熱気。 \n都会の真ん中とは思えないほどの一体感と、\n新宿ならではの華やかな盛り上がりをぜひご覧ください。\n\n\n【開催概要】 \n日時：2026年8月14日 \n場所：東京都新宿区 歌舞伎町（シネシティ広場周辺） \n内容：歌舞伎町BON ODORI\n\n今後も各地の盆踊りや和太鼓演奏の動画を投稿していきます。 ぜひチャンネル登録・高評価をお願いします！\n\n\n歌舞伎町盆踊り\n１東京音頭　https://youtu.be/5AAjdKcYdkw\n２炭坑節　https://youtu.be/xc5ZfdjBJU0\n３大東京音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=tS1c0KLjxe8",
           "date": "2026-08-22T09:00:39+00:00",
           "text": "Tokyo Lonely Walker\n[4K] 新宿歌舞伎町で盆踊り 2026｜ダンシングヒーロー｜東京音頭｜炭坑節｜ドリカム 他 第1部 / Bon Odori in Kabukicho, Shinjuku. 🇯🇵\n東京・新宿の歌舞伎町で行われた「歌舞伎町BON ODORI 2026」\n2部制となっており、1部では各地の民謡などを中心とした古典盆踊りの時間でした。\nただ、途中激しい雨が降り始め中断し、再開はしたものの予定曲よりは少なくなったようです。踊りお手本は、全国各地の盆踊りをプロデュースしている鳳蝶美成さん（日本民踊 鳳蝶流）が担当、和太鼓演奏は和太鼓アイドルユニット・東京おとめ太鼓さん。\n\n“Kabukicho BON ODORI 2026,” held in Kabukicho, Shinjuku, Tokyo This video features a segment of traditional Bon Odo"
@@ -52265,7 +52361,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 8
+      "evidence_count": 9
     },
     {
       "id": "3f8c7f9f96271119",
