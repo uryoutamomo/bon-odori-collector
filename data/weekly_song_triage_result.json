@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 10,
-  "direct_count": 7,
-  "created_count": 4,
-  "updated_count": 3,
+  "song_candidate_count": 8,
+  "direct_count": 5,
+  "created_count": 3,
+  "updated_count": 2,
   "rejected_noise_count": 0,
   "review_count": 3,
   "created": [
@@ -19,14 +19,6 @@
     {
       "song_name": "活気あふれる踊り",
       "source_term": "活気あふれる踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "楽しそうな踊り",
-      "source_term": "楽しそうな踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -57,35 +49,27 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
     }
   ],
   "rejected_noise": [],
   "review": [
     {
       "term": "らんまん踊り",
-      "evidence_count": 7,
+      "evidence_count": 11,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=t62_NIRqAlA"
+      "evidence_url": "https://www.youtube.com/watch?v=902Iq9t6JVc"
+    },
+    {
+      "term": "郡上おどり",
+      "evidence_count": 7,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://www.youtube.com/watch?v=h74I-HZOoX0"
     },
     {
       "term": "たいとう音頭",
       "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=6aj2G1fcjMQ"
-    },
-    {
-      "term": "郡上おどり",
-      "evidence_count": 5,
-      "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=1Msup11lizU"
+      "evidence_url": "https://www.youtube.com/watch?v=hcxn0o6PAr0"
     }
   ]
 }
