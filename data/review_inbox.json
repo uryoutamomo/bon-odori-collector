@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-27T18:01:02.574373+00:00",
+  "generated_at": "2026-08-28T18:54:21.979808+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -595,6 +595,103 @@
           "tweet_id": "2090333007714652233",
           "url": "https://x.com/kotokeizai/status/2090333007714652233",
           "value_score": 20.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_5bead1a4292c70d2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 255.0,
+      "title": "有明まつり",
+      "event_name": "有明まつり",
+      "venue": "有明ガーデン スポーツエンターテイメント広場",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090797259407364200",
+      "source_url": "https://x.com/takasho06130613/status/2090797259407364200",
+      "recommended_action": "review_date_range_conflict",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "00e0cec23aaceee69cae382619c0559dfe76ed5471b9ef5a489e932df3a4bab8",
+      "last_seen_at": "github-33200344207-1",
+      "created_at": "2026-08-28T18:53:44.036207+00:00",
+      "updated_at": "2026-08-28T18:53:44.036207+00:00",
+      "payload": {
+        "candidate_id": "xgap_136baf2aafa21680",
+        "candidate_kind": "date_range_conflict",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9/12",
+          "9/13",
+          "9/12"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": {
+          "area": "江東区",
+          "date_end": "2026-09-12",
+          "date_start": "2026-09-12",
+          "detail": "2026年イベント掲載で、2026年9月12日(土)14:00〜20:30、会場: 有明ガーデン スポーツエンターテイメント広場、主催: 有明街づくりプロジェクトを確認。関連URL: https://www.aripro.tokyo/",
+          "event_name": "有明まつり",
+          "matched_aliases": [
+            "有明まつり",
+            "有明まつり"
+          ],
+          "occurrence_id": "occ_72db288004ac72a2",
+          "venue": "有明ガーデン スポーツエンターテイメント広場",
+          "venue_address": "東京都江東区有明2丁目1-8",
+          "venue_area": "江東区"
+        },
+        "observed_dates": [
+          "2026-09-12",
+          "2026-09-13"
+        ],
+        "priority_score": 255,
+        "source_author": "@takasho06130613",
+        "source_count": 1,
+        "source_key": "x:2090797259407364200",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "たかし🍜",
+          "classification": "unknown_or_personal_social",
+          "handle": "@takasho06130613",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\nまだ悩み中🤔\n9/12(土)有明まつり(江東区)\n9/13(日)杉大門盆踊り(新宿区)\n9/12(土)13(日)緑ヶ丘第二公園盆踊り(板橋区)\n\nさあどれを削るか…",
+        "source_url": "https://x.com/takasho06130613/status/2090797259407364200",
+        "source_urls": [
+          "https://x.com/takasho06130613/status/2090797259407364200"
+        ],
+        "voice": {
+          "account": "@takasho06130613",
+          "critique_post": false,
+          "date": "2026-08-21T13:44:46+00:00",
+          "name": "たかし🍜",
+          "profile_description": "カープとUVERworldと盆踊りが好き\n\nメノニューイヤー・仮面女子・ジュリアナの祟り🥰",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "まだ悩み中🤔\n9/12(土)有明まつり(江東区)\n9/13(日)杉大門盆踊り(新宿区)\n9/12(土)13(日)緑ヶ丘第二公園盆踊り(板橋区)\n\nさあどれを削るか…",
+          "title": "",
+          "tweet_id": "2090797259407364200",
+          "url": "https://x.com/takasho06130613/status/2090797259407364200"
         }
       }
     },
@@ -2428,6 +2525,371 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_7166a8427a621e37",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【お祭り情報2026】【蓮沼】9/5(土)、6(日)熊野神社「例大祭」。6日は盆踊りを開催🏮\n〔9/5〕式典10:00〜/素人演芸会18:00〜\n〔9/6〕神輿",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089185457942995180",
+      "source_url": "https://x.com/otafull/status/2089185457942995180",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "495f79d4a6fd8f703f78a0915115c2aebb752ef937712f2539a9bb8058d98272",
+      "last_seen_at": "github-33200344207-1",
+      "created_at": "2026-08-28T18:53:44.036207+00:00",
+      "updated_at": "2026-08-28T18:53:44.036207+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_89e1ab07d6119976",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9/5",
+          "9/5",
+          "9/6"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-05",
+          "2026-09-06"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2089185457942995180",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【お祭り情報2026】【蓮沼】9/5(土)、6(日)熊野神社「例大祭」。6日は盆踊りを開催🏮\n〔9/5〕式典10:00〜/素人演芸会18:00〜\n〔9/6〕神輿渡御 宮出9:00 宮入13:00\n　　　  盆踊り19:00〜\nhttps://t.co/Mz9exU09Nm\n#大田区　#商店街　#蓮沼　#お祭り",
+        "source_url": "https://x.com/otafull/status/2089185457942995180",
+        "source_urls": [
+          "https://x.com/otafull/status/2089185457942995180"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-17T03:00:03+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【お祭り情報2026】【蓮沼】9/5(土)、6(日)熊野神社「例大祭」。6日は盆踊りを開催🏮\n〔9/5〕式典10:00〜/素人演芸会18:00〜\n〔9/6〕神輿渡御 宮出9:00 宮入13:00\n　　　  盆踊り19:00〜\nhttps://t.co/Mz9exU09Nm\n#大田区　#商店街　#蓮沼　#お祭り",
+          "title": "",
+          "tweet_id": "2089185457942995180",
+          "url": "https://x.com/otafull/status/2089185457942995180"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_93a8fe8a5ba8fae5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "📢【中央区HP更新情報｜直近24時間】\n\n1. 産後ケア、9月から電子クーポン利用へ！\n9月1日以降の利用分から、電子クーポン方式に変更となります。\n申請方法や",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090993311037423693",
+      "source_url": "https://x.com/genki_takahashi/status/2090993311037423693",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c165936abea667e9a2e9695a8a6b7be7f1a96d287078d4cb3db08508652fdb45",
+      "last_seen_at": "github-33200344207-1",
+      "created_at": "2026-08-28T18:53:44.036207+00:00",
+      "updated_at": "2026-08-28T18:53:44.036207+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_15dee1b79cc6cde3",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "24時",
+          "9月1日",
+          "8月27日",
+          "8月27日",
+          "8月22日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中央区日本橋浜町2-59",
+          "region_hint": "中央区",
+          "source_url": "https://nihombashi.keizai.biz/headline/2228/",
+          "venue": "浜町公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-01"
+        ],
+        "priority_score": 125,
+        "source_author": "@genki_takahashi",
+        "source_count": 1,
+        "source_key": "x:2090993311037423693",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQSzVX6aQAAmkm5.jpg",
+          "https://t.co/Cy1ruhnXSy",
+          "pic.x.com/Cy1ruhnXSy"
+        ],
+        "source_officiality": {
+          "account_name": "高橋元気（中央区議会議員/出張鮨パーティー SUSHI WIZ）",
+          "classification": "registered_official_social",
+          "handle": "@genki_takahashi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n📢【中央区HP更新情報｜直近24時間】\n\n1. 産後ケア、9月から電子クーポン利用へ！\n9月1日以降の利用分から、電子クーポン方式に変更となります。\n申請方法や移行対象者など、詳細が案内されています。\n産後ケアの申請をしている方はご確認ください。\n\n中央区公式・産後ケア事業⁠\n\n2. 体育施設予約システム、8月27日深夜に停止！\n8月27日（木）午前1:00〜6:00、メンテナンスのため体育施設の予約システムが停止します。\n区民館等の予約システムには影響ありません。\n\n中央区公式・公共施設の利用予約⁠\n\n3. 第36回 大江戸まつり盆おどり大会は本日予定どおり開催！\n本日8月22日（土）の「大江戸まつり盆おどり大会」は、予定どおり実施！\n\n⏰ 16:00〜21:00\n📍 浜町公園\n\n今後の天候状況によっては、途中で中断・中止になる場合があります。\n\n中央区公式・大江戸まつり盆おどり大会⁠\n\n#中央区\n#中央区最新情報\n#中央区議会議員\n#高橋元気\n#中央区議会議員高橋元気",
+        "source_url": "https://x.com/genki_takahashi/status/2090993311037423693",
+        "source_urls": [
+          "https://x.com/genki_takahashi/status/2090993311037423693"
+        ],
+        "voice": {
+          "account": "@genki_takahashi",
+          "critique_post": false,
+          "date": "2026-08-22T02:43:48+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQSzVX6aQAAmkm5.jpg",
+            "https://t.co/Cy1ruhnXSy",
+            "pic.x.com/Cy1ruhnXSy"
+          ],
+          "name": "高橋元気（中央区議会議員/出張鮨パーティー SUSHI WIZ）",
+          "profile_description": "中央区晴海在住 SFC→慶大法→DHU大学院修士 行政書士 元ドワンゴ社員 筋トレ鮨パンク議員2期目 出張鮨✖︎政治家 ■出張寿司受付https://t.co/pnePcv5ZeB ■Youtube https://t.co/zpsZMZ0Xxg",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "📢【中央区HP更新情報｜直近24時間】\n\n1. 産後ケア、9月から電子クーポン利用へ！\n9月1日以降の利用分から、電子クーポン方式に変更となります。\n申請方法や移行対象者など、詳細が案内されています。\n産後ケアの申請をしている方はご確認ください。\n\n中央区公式・産後ケア事業⁠\n\n2. 体育施設予約システム、8月27日深夜に停止！\n8月27日（木）午前1:00〜6:00、メンテナンスのため体育施設の予約システムが停止します。\n区民館等の予約システムには影響ありません。\n\n中央区公式・公共施設の利用予約⁠\n\n3. 第36回 大江戸まつり盆おどり大会は本日予定どおり開催！\n本日8月22日（土）の「大江戸まつり盆おどり大会」は、予定どおり実施！\n\n⏰ 16:00〜21:00\n📍 浜町公園\n\n今後の天候状況によっては、途中で中断・中止になる場合があります。\n\n中央区公式・大江戸まつり盆おどり大会⁠\n\n#中央区\n#中央区最新情報\n#中央区議会議員\n#高橋元気\n#中央区議会議員高橋元気",
+          "title": "",
+          "tweet_id": "2090993311037423693",
+          "url": "https://x.com/genki_takahashi/status/2090993311037423693"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b4cc52b293296bf6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "「盆踊り練習会」\n\n19時〜20時\n①6/20（土）\n②7/11（土）\n\n今年も短い時間ですが\n祖師谷神明社【7/17(金)-18(土)】\n祖師谷観世音堂【8/",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2067109053738922086",
+      "source_url": "https://x.com/SOSHIGAYASHOTEN/status/2067109053738922086",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a543f2b94e0d292b410bc0a8d4b6aa685c5af82c4800dbe6ba64dd2ee3e25b9e",
+      "last_seen_at": "github-33200344207-1",
+      "created_at": "2026-08-28T18:53:44.036207+00:00",
+      "updated_at": "2026-08-28T18:53:44.036207+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_de088b716d863d0b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "19時",
+          "20時",
+          "6/20",
+          "7/11",
+          "7/17",
+          "8/9",
+          "9/5"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "世田谷区祖師谷1-8-12",
+          "region_hint": "世田谷区",
+          "source_url": "https://setagaya.guide/events/noryo-bonodori-taikai-soshigaya-soshigaya-kanzenondo/",
+          "venue": "祖師谷観世音堂"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-05"
+        ],
+        "priority_score": 125,
+        "source_author": "@SOSHIGAYASHOTEN",
+        "source_count": 1,
+        "source_key": "x:2067109053738922086",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HK_YuQcaYAAqq2v.jpg",
+          "https://t.co/KvhnBBCoyW",
+          "pic.twitter.com/KvhnBBCoyW",
+          "https://pbs.twimg.com/media/HK_YuQfagAAaX2r.jpg",
+          "https://pbs.twimg.com/media/HK_YuQfbwAEshGK.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "祖師谷商店街振興組合(公式)",
+          "classification": "registered_official_social",
+          "handle": "@soshigayashoten",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n「盆踊り練習会」\n\n19時〜20時\n①6/20（土）\n②7/11（土）\n\n今年も短い時間ですが\n祖師谷神明社【7/17(金)-18(土)】\n祖師谷観世音堂【8/9(日)-10(月)】\n祖師ヶ谷大蔵駅前広場【9/5(土)】\n\nにて開催される盆踊りの全曲を駅前広場にて一通り練習します‼️\n\n※雨天中止です\n\n#祖師ヶ谷大蔵\n#祖師谷\n#盆踊り https://t.co/KvhnBBCoyW",
+        "source_url": "https://x.com/SOSHIGAYASHOTEN/status/2067109053738922086",
+        "source_urls": [
+          "https://x.com/SOSHIGAYASHOTEN/status/2067109053738922086"
+        ],
+        "voice": {
+          "account": "@SOSHIGAYASHOTEN",
+          "date": "2026-06-17T04:56:18+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HK_YuQcaYAAqq2v.jpg",
+            "https://t.co/KvhnBBCoyW",
+            "pic.twitter.com/KvhnBBCoyW",
+            "https://pbs.twimg.com/media/HK_YuQfagAAaX2r.jpg",
+            "https://pbs.twimg.com/media/HK_YuQfbwAEshGK.jpg"
+          ],
+          "name": "祖師谷商店街振興組合(公式)",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "「盆踊り練習会」\n\n19時〜20時\n①6/20（土）\n②7/11（土）\n\n今年も短い時間ですが\n祖師谷神明社【7/17(金)-18(土)】\n祖師谷観世音堂【8/9(日)-10(月)】\n祖師ヶ谷大蔵駅前広場【9/5(土)】\n\nにて開催される盆踊りの全曲を駅前広場にて一通り練習します‼️\n\n※雨天中止です\n\n#祖師ヶ谷大蔵\n#祖師谷\n#盆踊り https://t.co/KvhnBBCoyW",
+          "title": "",
+          "tweet_id": "2067109053738922086",
+          "url": "https://x.com/SOSHIGAYASHOTEN/status/2067109053738922086"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c34da14faea3e801",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【お祭り情報2026】【蓮沼】9/5(土)、6(日)熊野神社「例大祭」。6日は盆踊りを開催 https://t.co/Mz9exU09Nm",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086666886146937062",
+      "source_url": "https://x.com/otafull/status/2086666886146937062",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6cb3de9787b7627b677800c4f3f3ab71b4dad2c98c2cd0c6ce9ce657f330abb8",
+      "last_seen_at": "github-33200344207-1",
+      "created_at": "2026-08-28T18:53:44.036207+00:00",
+      "updated_at": "2026-08-28T18:53:44.036207+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_5ab082a091a3147e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9/5"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-05"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2086666886146937062",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【お祭り情報2026】【蓮沼】9/5(土)、6(日)熊野神社「例大祭」。6日は盆踊りを開催 https://t.co/Mz9exU09Nm",
+        "source_url": "https://x.com/otafull/status/2086666886146937062",
+        "source_urls": [
+          "https://x.com/otafull/status/2086666886146937062"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-10T04:12:08+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【お祭り情報2026】【蓮沼】9/5(土)、6(日)熊野神社「例大祭」。6日は盆踊りを開催 https://t.co/Mz9exU09Nm",
+          "title": "",
+          "tweet_id": "2086666886146937062",
+          "url": "https://x.com/otafull/status/2086666886146937062"
         }
       }
     },
