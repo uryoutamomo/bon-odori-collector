@@ -1,11 +1,11 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 8,
-  "direct_count": 5,
-  "created_count": 3,
+  "song_candidate_count": 11,
+  "direct_count": 7,
+  "created_count": 5,
   "updated_count": 2,
-  "rejected_noise_count": 0,
+  "rejected_noise_count": 1,
   "review_count": 3,
   "created": [
     {
@@ -25,11 +25,27 @@
       "dry_run": true
     },
     {
+      "song_name": "ふれおどり",
+      "source_term": "ふれおどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "浴衣音頭",
       "source_term": "浴衣音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "高円寺阿波おどり",
+      "source_term": "高円寺阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     }
   ],
@@ -51,25 +67,30 @@
       "dry_run": true
     }
   ],
-  "rejected_noise": [],
+  "rejected_noise": [
+    {
+      "term": "阿波踊り",
+      "reason": "SongCatalog: RDBで無効と判定済み"
+    }
+  ],
   "review": [
     {
       "term": "らんまん踊り",
-      "evidence_count": 11,
+      "evidence_count": 13,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=902Iq9t6JVc"
-    },
-    {
-      "term": "郡上おどり",
-      "evidence_count": 7,
-      "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=h74I-HZOoX0"
+      "evidence_url": "https://www.youtube.com/watch?v=HEQAC5OADfw"
     },
     {
       "term": "たいとう音頭",
-      "evidence_count": 6,
+      "evidence_count": 8,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=hcxn0o6PAr0"
+      "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
+    },
+    {
+      "term": "郡上おどり",
+      "evidence_count": 8,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://www.youtube.com/watch?v=TaCv9Owl1MA"
     }
   ]
 }

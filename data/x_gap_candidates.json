@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-28T18:52:36.405088+00:00",
+  "generated_at": "2026-08-29T12:52:28.306888+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 378,
+  "archived_count": 373,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -17864,9 +17864,7 @@
       "date_hints": [
         "8/28"
       ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -19333,9 +19331,7 @@
       "date_hints": [
         "8月28日"
       ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -20365,9 +20361,7 @@
       "date_hints": [
         "8/28"
       ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -23754,70 +23748,6 @@
       "archive_reason": "daily_candidate_cap"
     },
     {
-      "candidate_id": "xgap_b612e6de39734b8d",
-      "source_key": "x:2081881810930442285",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 90,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/mu4324/status/2081881810930442285",
-      "source_text": "\nちなみに今年の、\n八丁堀納涼大会\n京華スクエア盆踊り\n8月27〜28日\n#八丁堀京華スクエア盆踊り",
-      "source_author": "@mu4324",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@mu4324",
-        "account_name": "宇佐美",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月27"
-      ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
-      "event_group_key": "informal-venue:6a3006037f7a9f72",
-      "known_venue_evidence": {
-        "venue": "京華スクエア",
-        "region_hint": "中央区",
-        "address": "中央区八丁堀3-17-9",
-        "source_url": "https://www.instagram.com/p/DbPLNi6EzdJ/"
-      },
-      "voice": {
-        "source": "x_whitelist",
-        "account": "@mu4324",
-        "name": "宇佐美",
-        "title": "",
-        "text": "ちなみに今年の、\n八丁堀納涼大会\n京華スクエア盆踊り\n8月27〜28日\n#八丁堀京華スクエア盆踊り",
-        "url": "https://x.com/mu4324/status/2081881810930442285",
-        "date": "2026-07-27T23:17:57+00:00",
-        "tweet_id": "2081881810930442285",
-        "tags": [
-          "⭐盆踊ラー",
-          "🟡関心"
-        ],
-        "value_score": 10.0
-      },
-      "source_urls": [
-        "https://x.com/mu4324/status/2081881810930442285",
-        "https://x.com/tukishimanagaya/status/2088167046794326105"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HPqnrHbbkAAv5uG.jpg",
-        "https://t.co/N1hQ2lEVSe",
-        "pic.x.com/N1hQ2lEVSe"
-      ],
-      "corroboration_count": 2,
-      "source_count": 2,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
       "candidate_id": "xgap_a2ff8bce3c6acd62",
       "source_key": "x:2063865448232636505",
       "lane_hint": "lane2",
@@ -24382,7 +24312,7 @@
       ],
       "corroboration_count": 1,
       "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
+      "archive_reason": "daily_candidate_cap"
     },
     {
       "candidate_id": "xgap_58868fa997355d2b",
@@ -24559,62 +24489,6 @@
       },
       "source_urls": [
         "https://x.com/BonDanceRadio/status/2087325693583745227"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_25f8ad1447d4a52c",
-      "source_key": "x:2088176775822270628",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/natsutr_bon/status/2088176775822270628",
-      "source_text": "\n【赤坂 夏おどり】\n🏮8/28(金)29(土)⏰18:00~(盆踊り)📍TBS 赤坂サカス広場(港区)\n\n夏の赤坂サカスの恒例イベント✨赤坂あかね会による盆踊りは赤坂ご当地曲から有名曲、子ども向けまで幅広く踊れる♪\n\n🔔練習会 8/21(金)22(土)18:00~/赤坂小学校体育館/申込不要、参加費無料\nhttps://t.co/pPP7a4Lqst",
-      "source_author": "@natsutr_bon",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@natsutr_bon",
-        "account_name": "奈津大郎〘ナツタロ〙",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/28",
-        "8/21"
-      ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
-      "event_group_key": "informal:277abaf48aa18a72",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@natsutr_bon",
-        "name": "奈津大郎〘ナツタロ〙",
-        "profile_description": "およそ30年ぶりの炭坑節が楽しすぎて気がついたときには「盆踊りコ」| 基本構成ナツタロ・ナツジロのツーマンセル | 江東区盆踊連合(自称) | 馬鹿盆会 | 🍆寺島茄子之介音頭 | 祭り | 神輿 | 民謡 | 旅 | ヘッダーイラスト @nyantokonyan 様/ @M125M8qgyhWueHS 様",
-        "title": "",
-        "text": "【赤坂 夏おどり】\n🏮8/28(金)29(土)⏰18:00~(盆踊り)📍TBS 赤坂サカス広場(港区)\n\n夏の赤坂サカスの恒例イベント✨赤坂あかね会による盆踊りは赤坂ご当地曲から有名曲、子ども向けまで幅広く踊れる♪\n\n🔔練習会 8/21(金)22(土)18:00~/赤坂小学校体育館/申込不要、参加費無料\nhttps://t.co/pPP7a4Lqst",
-        "url": "https://x.com/natsutr_bon/status/2088176775822270628",
-        "date": "2026-08-14T08:11:54+00:00",
-        "tweet_id": "2088176775822270628",
-        "tags": [
-          "🟡関心",
-          "q-program-songs-wide"
-        ],
-        "critique_post": false
-      },
-      "source_urls": [
-        "https://x.com/natsutr_bon/status/2088176775822270628"
       ],
       "source_media_urls": [],
       "corroboration_count": 1,
@@ -24954,69 +24828,6 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_1f152833a9e3599a",
-      "source_key": "x:2090919371598156225",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/snorken/status/2090919371598156225",
-      "source_text": "\n【メモ】今週開催される盆踊り｜東京・神奈川｜8月22日〜28日\n\n☑️ 8月22日｜日本橋・浜町\n🏮中央区大江戸まつり盆おどり大会\n16:00〜21:00\n浜町駅から徒歩2分。\n大型やぐら、縁日、浜町音頭など。\n当日9:30頃に開催可否を公式発表予定。\n\n☑️8月22日・23日｜六本木\n🏮六本木ヒルズ盆踊り2026\n17:00〜20:00\n六本木ヒルズアリーナ。\n参加無料。東京音頭、花火音頭、六本人音頭。\n荒天時は変更・中止の場合あり。\n\n☑️8月22日・23日｜新宿\n🏮新宿中央公園 夏まつり・納涼盆踊り\n8/22 17:30〜21:00\n8/23 18:00〜20:30\n都庁前駅から徒歩1分。\n申込不要、出店あり。\n\n☑️8月22日・23日｜東京・稲城\n🏮Gタウン夏祭り2026\n14:00〜20:00\nジャイアンツタウンスタジアム。\n入場無料。盆踊り、縁日、屋台、フリマなど。\n荒天中止。\n\n☑️8月22日｜川崎大師\n🏮川崎大師 子ども盆踊り大会\n19:00〜20:30\n川崎大師駅から徒歩約8分。\n無料・申込不要・誰でも参加可。\n今日が最終日。\n\n■8月22日｜神奈川・座間\n🏮第25",
-      "source_author": "@snorken",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@snorken",
-        "account_name": "HIRANO｜Graphic Designer｜手が足りない人の手",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月22日",
-        "8月22日",
-        "8月22日",
-        "8月22日",
-        "8/22",
-        "8/23",
-        "8月22日",
-        "8月22日",
-        "8月22日"
-      ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
-      "event_group_key": "informal:f8c9e28b3db9467a",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@snorken",
-        "name": "HIRANO｜Graphic Designer｜手が足りない人の手",
-        "profile_description": "【Geco Graphic】神奈川県在住←岐阜県出身。出版社を経てフリーランスのエディトリアル・デザイナー／DTPオペ。紙メディア中心に、デジタル媒体も対応可能の何でも屋｜デザイン／アート／ミステリー／歴史／自転車ロードレース／ゲーム／東海エリア／岐阜／東急沿線／人工知能 など。依頼・相談はDMからお気軽に。",
-        "title": "",
-        "text": "【メモ】今週開催される盆踊り｜東京・神奈川｜8月22日〜28日\n\n☑️ 8月22日｜日本橋・浜町\n🏮中央区大江戸まつり盆おどり大会\n16:00〜21:00\n浜町駅から徒歩2分。\n大型やぐら、縁日、浜町音頭など。\n当日9:30頃に開催可否を公式発表予定。\n\n☑️8月22日・23日｜六本木\n🏮六本木ヒルズ盆踊り2026\n17:00〜20:00\n六本木ヒルズアリーナ。\n参加無料。東京音頭、花火音頭、六本人音頭。\n荒天時は変更・中止の場合あり。\n\n☑️8月22日・23日｜新宿\n🏮新宿中央公園 夏まつり・納涼盆踊り\n8/22 17:30〜21:00\n8/23 18:00〜20:30\n都庁前駅から徒歩1分。\n申込不要、出店あり。\n\n☑️8月22日・23日｜東京・稲城\n🏮Gタウン夏祭り2026\n14:00〜20:00\nジャイアンツタウンスタジアム。\n入場無料。盆踊り、縁日、屋台、フリマなど。\n荒天中止。\n\n☑️8月22日｜川崎大師\n🏮川崎大師 子ども盆踊り大会\n19:00〜20:30\n川崎大師駅から徒歩約8分。\n無料・申込不要・誰でも参加可。\n今日が最終日。\n\n■8月22日｜神奈川・座間\n🏮第25回",
-        "url": "https://x.com/snorken/status/2090919371598156225",
-        "date": "2026-08-21T21:50:00+00:00",
-        "tweet_id": "2090919371598156225",
-        "tags": [
-          "🟡関心",
-          "q-venue"
-        ],
-        "critique_post": false
-      },
-      "source_urls": [
-        "https://x.com/snorken/status/2090919371598156225"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
       "candidate_id": "xgap_53ab26fa4a03e256",
       "source_key": "x:2090998447646429261",
       "lane_hint": "lane2",
@@ -25261,129 +25072,6 @@
         "pic.x.com/Zp9HDv3Vdi",
         "https://pbs.twimg.com/media/HQYB9LkaAAESM1V.jpg"
       ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_db5817217f7f3730",
-      "source_key": "x:2091656431389024541",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/komaikai/status/2091656431389024541",
-      "source_text": "\n🏮花園スクールパーク🏮\n新宿3場所目‼️\n8月27日（木）・28日（金）\n\n盆踊り・広々会場・リーズナブルな露店(^^)\nおもいっっっきり楽しみましょう✨️\n是非ご来場お待ちしておりま〜す♪\n\n#盆踊り\n#新宿区\n#花園小学校\n#8月27日\n#8月28日\n#魂舞会 https://t.co/ESZOKvAW4g",
-      "source_author": "@komaikai",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@komaikai",
-        "account_name": "東京盆踊り「魂舞会」",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月27日",
-        "8月27日",
-        "8月28日"
-      ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
-      "event_group_key": "informal:8458f5cf88606cf9",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x_whitelist",
-        "account": "@komaikai",
-        "name": "東京盆踊り「魂舞会」",
-        "profile_description": "盆踊りをこよなく愛すトリオ「魂舞会（こまいかい）」です。 踊りに馴染みのない方でも、気軽に参加して楽しんで頂きたい。 お盆の時期だけでなく一年中、楽しく笑顔で踊る。 そんな自由な盆踊りを広めて行きたいと思っています。",
-        "title": "",
-        "text": "🏮花園スクールパーク🏮\n新宿3場所目‼️\n8月27日（木）・28日（金）\n\n盆踊り・広々会場・リーズナブルな露店(^^)\nおもいっっっきり楽しみましょう✨️\n是非ご来場お待ちしておりま〜す♪\n\n#盆踊り\n#新宿区\n#花園小学校\n#8月27日\n#8月28日\n#魂舞会 https://t.co/ESZOKvAW4g",
-        "url": "https://x.com/komaikai/status/2091656431389024541",
-        "date": "2026-08-23T22:38:48+00:00",
-        "tweet_id": "2091656431389024541",
-        "tags": [
-          "⭐盆踊ラー",
-          "📅未来予定",
-          "🟡関心"
-        ],
-        "critique_post": false,
-        "media_urls": [
-          "https://pbs.twimg.com/media/HQcOb5yaoAAq3L_.jpg",
-          "https://t.co/ESZOKvAW4g",
-          "pic.x.com/ESZOKvAW4g"
-        ],
-        "value_score": 20.0
-      },
-      "source_urls": [
-        "https://x.com/komaikai/status/2091656431389024541"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HQcOb5yaoAAq3L_.jpg",
-        "https://t.co/ESZOKvAW4g",
-        "pic.x.com/ESZOKvAW4g"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_452ba3face130e5b",
-      "source_key": "x:2091726050774671375",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/yoshimoto_me/status/2091726050774671375",
-      "source_text": "\n⚡️いよいよ今週金曜開催⚡️\n＃ぼーんとぅ盆踊り2026夏\n8/28 18:00📍豊洲PIT\n\nさらにイベントを楽しむための\nグッズはこちら😀\n\n👕 ぼーんとぅTシャツ \n🎐 ぼーんとぅうちわ\n🟥 ぼーんとぅタオル \n🧦 ぼーんとぅソックス\n\n🪭 当日14:30〜 会場にて販売！\nぜひ今のうちにチェックしてください👀✨",
-      "source_author": "@yoshimoto_me",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@yoshimoto_me",
-        "account_name": "よしもとミュージック",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/28"
-      ],
-      "observed_dates": [
-        "2026-08-28"
-      ],
-      "event_group_key": "informal:d8489c267d01c0d5",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@yoshimoto_me",
-        "name": "よしもとミュージック",
-        "profile_description": "よしもとミュージックの公式アカウントです。吉本興業グループのコンテンツを中心にDVD・CD・デジタルコンテンツ等の発売／販売に関する最新情報を発信📡⚡ ※お問合せはHPよりお願いいたします。",
-        "title": "",
-        "text": "⚡️いよいよ今週金曜開催⚡️\n＃ぼーんとぅ盆踊り2026夏\n8/28 18:00📍豊洲PIT\n\nさらにイベントを楽しむための\nグッズはこちら😀\n\n👕 ぼーんとぅTシャツ \n🎐 ぼーんとぅうちわ\n🟥 ぼーんとぅタオル \n🧦 ぼーんとぅソックス\n\n🪭 当日14:30〜 会場にて販売！\nぜひ今のうちにチェックしてください👀✨",
-        "url": "https://x.com/yoshimoto_me/status/2091726050774671375",
-        "date": "2026-08-24T03:15:27+00:00",
-        "tweet_id": "2091726050774671375",
-        "tags": [
-          "🟡関心",
-          "q-imminent"
-        ],
-        "critique_post": false
-      },
-      "source_urls": [
-        "https://x.com/yoshimoto_me/status/2091726050774671375"
-      ],
-      "source_media_urls": [],
       "corroboration_count": 1,
       "source_count": 1,
       "archive_reason": "informal_new_event_daily_cap"
