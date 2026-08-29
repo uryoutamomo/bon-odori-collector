@@ -2,11 +2,13 @@ name: bon-odori-send-mail
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'data/pending_mail.json'
   schedule:
-    # GitHub schedule は SLA 無し（遅延・ドロップあり）。1日3回試みて冪等に動く設計。
-    # pending_mail.json を送信後に削除するので、複数回起動しても二重送信しない。
+    # GitHub schedule は SLA 無し（遅延・ドロップあり）なので、未claimの本文を1日3回確認する。
+    # 一度claimした sending_mail.json は自動再送せず、二重送信を避ける。
     - cron: '23 9 * * *'   # 18:23 JST（第1トライ）
     - cron: '23 10 * * *'  # 19:23 JST（第2トライ）
     - cron: '23 11 * * *'  # 20:23 JST（第3トライ）
@@ -25,28 +27,55 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
         python-version: '3.x'
 
-    - name: Send daily mail
+    - name: Claim pending mail before SMTP
+      id: claim
       env:
         MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
         MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
         MAIL_TO: ${{ secrets.MAIL_TO }}
-      run: python send_mail.py
-
-    - name: Remove pending_mail.json after send
       run: |
-        if [ -f data/pending_mail.json ]; then
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git rm data/pending_mail.json
-          git commit -m "chore: メール送信完了 → pending_mail.json を削除"
-          git push
-          echo "[mail] pending_mail.json を削除・プッシュしました。"
-        else
-          echo "[mail] pending_mail.json なし。削除ステップをスキップ。"
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git pull --ff-only origin "$GITHUB_REF_NAME"
+
+        if [ -f data/sending_mail.json ]; then
+          echo "[mail] sending_mail.json が残っています。自動再送せず、前回送信の成否確認を待ちます。"
+          exit 1
         fi
+        if [ ! -f data/pending_mail.json ]; then
+          echo "claimed=false" >> "$GITHUB_OUTPUT"
+          echo "[mail] pending_mail.json なし。送信対象なし。"
+          exit 0
+        fi
+
+        python send_mail.py --draft data/pending_mail.json --check-only
+        git mv data/pending_mail.json data/sending_mail.json
+        git commit -m "chore: メール送信対象をclaim"
+        git push
+        echo "claimed=true" >> "$GITHUB_OUTPUT"
+
+    - name: Send claimed mail once
+      if: steps.claim.outputs.claimed == 'true'
+      env:
+        MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+        MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+        MAIL_TO: ${{ secrets.MAIL_TO }}
+      run: python send_mail.py --draft data/sending_mail.json
+
+    - name: Record successful delivery
+      if: steps.claim.outputs.claimed == 'true'
+      run: |
+        git pull --rebase origin "$GITHUB_REF_NAME"
+        test -f data/sending_mail.json
+        git rm data/sending_mail.json
+        git commit -m "chore: メール送信完了を記録"
+        git push
+        echo "[mail] sending_mail.json を削除し、送信完了を記録しました。"
