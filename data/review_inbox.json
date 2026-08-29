@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-28T19:03:09.636038+00:00",
+  "generated_at": "2026-08-29T12:54:17.317000+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -205,6 +205,111 @@
           "title": "",
           "tweet_id": "2090609552618291315",
           "url": "https://x.com/kamiya_chuo/status/2090609552618291315"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_f5257f7268b34678",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 305.0,
+      "title": "麻布十番納涼盆踊り大会",
+      "event_name": "麻布十番納涼盆踊り大会",
+      "venue": "網代公園",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091410560848175322",
+      "source_url": "https://x.com/hakkaisan1922/status/2091410560848175322",
+      "recommended_action": "review_schedule_change",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f795452a5e7b971a3dacb22130ac0d73fd7cde76466e1fb409455807fe01a1a3",
+      "last_seen_at": "github-33253083806-1",
+      "created_at": "2026-08-29T12:53:34.940340+00:00",
+      "updated_at": "2026-08-29T12:53:34.940340+00:00",
+      "payload": {
+        "candidate_id": "xgap_0b5990e1f69d9b27",
+        "candidate_kind": "schedule_change",
+        "corroboration_count": 1,
+        "date_hints": [
+          "15時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": {
+          "area": "",
+          "date_end": "",
+          "date_start": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ],
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "venue": "網代公園",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "venue_area": "港区"
+        },
+        "observed_dates": [],
+        "priority_score": 305,
+        "source_author": "@hakkaisan1922",
+        "source_count": 1,
+        "source_key": "x:2091410560848175322",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
+          "https://t.co/wQVTDD7ulH",
+          "pic.x.com/wQVTDD7ulH",
+          "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
+          "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "Hakkaisan/八海山公式",
+          "classification": "unknown_or_personal_social",
+          "handle": "@hakkaisan1922",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
+        "source_url": "https://x.com/hakkaisan1922/status/2091410560848175322",
+        "source_urls": [
+          "https://x.com/hakkaisan1922/status/2091410560848175322"
+        ],
+        "voice": {
+          "account": "@hakkaisan1922",
+          "critique_post": false,
+          "date": "2026-08-23T06:21:48+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
+            "https://t.co/wQVTDD7ulH",
+            "pic.x.com/wQVTDD7ulH",
+            "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
+            "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
+          ],
+          "name": "Hakkaisan/八海山公式",
+          "profile_description": "新潟・南魚沼の酒蔵 八海山公式🍶\n食事に寄り添う日本酒を中心に、麹甘酒・クラフトビール・ジン・焼酎、魚沼の里（複合施設）や直営店まで。\n雪国の発酵文化と暮らしを発信中❄️\nフォロー＆お酒情報は20歳以上限定です。\n※公式SNSはX/Instagram2種/Facebook/YouTube",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
+          "title": "",
+          "tweet_id": "2091410560848175322",
+          "url": "https://x.com/hakkaisan1922/status/2091410560848175322"
         }
       }
     },
@@ -799,6 +904,116 @@
           "title": "",
           "tweet_id": "2091782131345506727",
           "url": "https://x.com/PIERROT_TAXI/status/2091782131345506727"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_f64d0ea31d79bd58",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 225.0,
+      "title": "麻布十番納涼盆踊り大会",
+      "event_name": "麻布十番納涼盆踊り大会",
+      "venue": "網代公園",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091365057338687774",
+      "source_url": "https://x.com/kanashindo/status/2091365057338687774",
+      "recommended_action": "confirm_current_year_date",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "314a0d1a4edce733e0bec2e64ef4325af0a70bb80ac91407a5a85cc74b976369",
+      "last_seen_at": "github-33253083806-1",
+      "created_at": "2026-08-29T12:53:34.940340+00:00",
+      "updated_at": "2026-08-29T12:53:34.940340+00:00",
+      "payload": {
+        "candidate_id": "xgap_651e955cebe19e8b",
+        "candidate_kind": "missing_date",
+        "corroboration_count": 1,
+        "date_hints": [
+          "１時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane1",
+        "matched_occurrence": {
+          "area": "",
+          "date_end": "",
+          "date_start": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ],
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "venue": "網代公園",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "venue_area": "港区"
+        },
+        "observed_candidate": {
+          "candidate_key": "occ_e4a7eb02f5fed215"
+        },
+        "observed_dates": [],
+        "priority_score": 225,
+        "source_author": "@kanashindo",
+        "source_count": 1,
+        "source_key": "x:2091365057338687774",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQYFbvpaYAA5r7X.jpg",
+          "https://t.co/5sEDCzKCOS",
+          "pic.x.com/5sEDCzKCOS",
+          "https://pbs.twimg.com/media/HQYFbvqaYAESNsS.jpg",
+          "https://pbs.twimg.com/media/HQYFbvpbwAAbl2t.jpg",
+          "https://pbs.twimg.com/media/HQYFbvrbwAAQd5_.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "新藤加菜🐶港区議会議員🇯🇵",
+          "classification": "registered_official_social",
+          "handle": "@kanashindo",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n麻布十番納涼まつり、1日目お疲れさまでした！\n\nあいにくの大雨でしたが、地元の大きなお祭りということもあり、たくさんの方にお会いでき、地域の皆さまとのつながりを改めて感じる一日となりました。\n\n六本木ヒルズ自治会の盆踊りにも伺い、開会式ではご挨拶もさせていただきました。雨の中、準備・運営にあたられた皆さま、本当にありがとうございました。\n\n昨日は雨で、食べたかったものや行きたかったブースを十分に回れなかったので、本日ゆっくりリベンジしてお祭り楽しみます😋\n\n見かけたらぜひお気軽にお声がけください☺️\n写真ももちろん大丈夫ですが、無断撮影ではなく、一言お声がけいただいてからお願いします📷\n\n写真は特大かき氷🍧いつもは１時間並ぶのですが昨日はすぐに食べられたのでこれも雨の功績ということでチャレンジ🍓\n\nこめおくんも本人がめちゃくちゃ声出して頑張ってていつも一生懸命だなあと元気をもらいました☺️✨",
+        "source_url": "https://x.com/kanashindo/status/2091365057338687774",
+        "source_urls": [
+          "https://x.com/kanashindo/status/2091365057338687774"
+        ],
+        "voice": {
+          "account": "@kanashindo",
+          "critique_post": false,
+          "date": "2026-08-23T03:21:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQYFbvpaYAA5r7X.jpg",
+            "https://t.co/5sEDCzKCOS",
+            "pic.x.com/5sEDCzKCOS",
+            "https://pbs.twimg.com/media/HQYFbvqaYAESNsS.jpg",
+            "https://pbs.twimg.com/media/HQYFbvpbwAAbl2t.jpg",
+            "https://pbs.twimg.com/media/HQYFbvrbwAAQd5_.jpg"
+          ],
+          "name": "新藤加菜🐶港区議会議員🇯🇵",
+          "profile_description": "港区議会議員（無所属・現役最年少）｜東京都動物愛護推進員｜東海大学沖縄地域研究センター研究員｜救う会青年部共同代表\n女子学院▶︎カナダの高校▶︎早稲田法▶︎リクルート\n保護犬ボランティア／exニコニコ生放送 ゆづか姫\n保守・現実路線で是々非々に発信\n📩お問い合わせはHPから",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "麻布十番納涼まつり、1日目お疲れさまでした！\n\nあいにくの大雨でしたが、地元の大きなお祭りということもあり、たくさんの方にお会いでき、地域の皆さまとのつながりを改めて感じる一日となりました。\n\n六本木ヒルズ自治会の盆踊りにも伺い、開会式ではご挨拶もさせていただきました。雨の中、準備・運営にあたられた皆さま、本当にありがとうございました。\n\n昨日は雨で、食べたかったものや行きたかったブースを十分に回れなかったので、本日ゆっくりリベンジしてお祭り楽しみます😋\n\n見かけたらぜひお気軽にお声がけください☺️\n写真ももちろん大丈夫ですが、無断撮影ではなく、一言お声がけいただいてからお願いします📷\n\n写真は特大かき氷🍧いつもは１時間並ぶのですが昨日はすぐに食べられたのでこれも雨の功績ということでチャレンジ🍓\n\nこめおくんも本人がめちゃくちゃ声出して頑張ってていつも一生懸命だなあと元気をもらいました☺️✨",
+          "title": "",
+          "tweet_id": "2091365057338687774",
+          "url": "https://x.com/kanashindo/status/2091365057338687774"
         }
       }
     },
@@ -2525,6 +2740,302 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_12a2b7d5e2b39bc7",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【洗足池】2026/8/29(土)「小池 夏祭り」開催！\nhttps://t.co/qX4SV9Anlj\n#大田区　#商店街　#洗足池　#イベント https:",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091711941479973033",
+      "source_url": "https://x.com/otafull/status/2091711941479973033",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8586b1484403cde7402fbd6c2874f8a5d4cfa1f19279e32ac651acdf1e02ea26",
+      "last_seen_at": "github-33253083806-1",
+      "created_at": "2026-08-29T12:53:34.940340+00:00",
+      "updated_at": "2026-08-29T12:53:34.940340+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1253548890efb888",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/29"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2091711941479973033",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQdA6sxaIAAj-rV.jpg",
+          "https://t.co/aI8q2Dna6Z",
+          "pic.x.com/aI8q2Dna6Z"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【洗足池】2026/8/29(土)「小池 夏祭り」開催！\nhttps://t.co/qX4SV9Anlj\n#大田区　#商店街　#洗足池　#イベント https://t.co/aI8q2Dna6Z",
+        "source_url": "https://x.com/otafull/status/2091711941479973033",
+        "source_urls": [
+          "https://x.com/otafull/status/2091711941479973033"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-24T02:19:23+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQdA6sxaIAAj-rV.jpg",
+            "https://t.co/aI8q2Dna6Z",
+            "pic.x.com/aI8q2Dna6Z"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📌予定候補",
+            "🟡関心"
+          ],
+          "text": "【洗足池】2026/8/29(土)「小池 夏祭り」開催！\nhttps://t.co/qX4SV9Anlj\n#大田区　#商店街　#洗足池　#イベント https://t.co/aI8q2Dna6Z",
+          "title": "",
+          "tweet_id": "2091711941479973033",
+          "url": "https://x.com/otafull/status/2091711941479973033",
+          "value_score": 12.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_52ca865444048888",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2075061948228800554",
+      "source_url": "https://x.com/shinagawakanko/status/2075061948228800554",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e5c7eb3a94f6c69925c41696d3a60cb7d1f58dbfac81866a3a57962f14b5c95d",
+      "last_seen_at": "github-33253083806-1",
+      "created_at": "2026-08-29T12:53:34.940340+00:00",
+      "updated_at": "2026-08-29T12:53:34.940340+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a20b44f06e38e562",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/11",
+          "7/18",
+          "7/18",
+          "7/19",
+          "7/25",
+          "7/25",
+          "9/12",
+          "9/20",
+          "10/10",
+          "10/11",
+          "10/11",
+          "10/18"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "品川区西大井1-4-10",
+          "region_hint": "品川区",
+          "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "venue": "西大井広場公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-12",
+          "2026-09-20",
+          "2026-10-10",
+          "2026-10-11",
+          "2026-10-18"
+        ],
+        "priority_score": 125,
+        "source_author": "@shinagawakanko",
+        "source_count": 1,
+        "source_key": "x:2075061948228800554",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HMwZ1m_bUAAu7zs.jpg",
+          "https://t.co/cNwWHHivBg",
+          "pic.x.com/cNwWHHivBg",
+          "https://pbs.twimg.com/media/HMwZ1m9bsAAKAW2.jpg",
+          "https://pbs.twimg.com/media/HMwZ1m7a0AAFHLB.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "しながわ観光協会（東京 品川のおでかけ情報)",
+          "classification": "registered_official_social",
+          "handle": "@shinagawakanko",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
+        "source_url": "https://x.com/shinagawakanko/status/2075061948228800554",
+        "source_urls": [
+          "https://x.com/shinagawakanko/status/2075061948228800554"
+        ],
+        "voice": {
+          "account": "@shinagawakanko",
+          "date": "2026-07-09T03:38:15+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HMwZ1m_bUAAu7zs.jpg",
+            "https://t.co/cNwWHHivBg",
+            "pic.x.com/cNwWHHivBg",
+            "https://pbs.twimg.com/media/HMwZ1m9bsAAKAW2.jpg",
+            "https://pbs.twimg.com/media/HMwZ1m7a0AAFHLB.jpg"
+          ],
+          "name": "しながわ観光協会（東京 品川のおでかけ情報)",
+          "source": "x_proactive",
+          "tags": [
+            "🔎能動検索",
+            "第四日野小学校"
+          ],
+          "text": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
+          "title": "",
+          "tweet_id": "2075061948228800554",
+          "url": "https://x.com/shinagawakanko/status/2075061948228800554"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6c2a42299c71b7ac",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【久が原】2026/9/5(土)「第16回すえひろ夏祭り」開催！\nhttps://t.co/zJCkHe0Qr2\n#大田区　#商店街　#久が原　#イベント ht",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091721969574302052",
+      "source_url": "https://x.com/otafull/status/2091721969574302052",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d90a9b0e8a4a19ff1ed94379053c6dc5b8813f51612a71eb61f7f54e2ceb8d94",
+      "last_seen_at": "github-33253083806-1",
+      "created_at": "2026-08-29T12:53:34.940340+00:00",
+      "updated_at": "2026-08-29T12:53:34.940340+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_cd90d28d3b74e824",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/9/5"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-05"
+        ],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2091721969574302052",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQdKCcrbcAAfqOI.jpg",
+          "https://t.co/NL553HbcPf",
+          "pic.x.com/NL553HbcPf"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【久が原】2026/9/5(土)「第16回すえひろ夏祭り」開催！\nhttps://t.co/zJCkHe0Qr2\n#大田区　#商店街　#久が原　#イベント https://t.co/NL553HbcPf",
+        "source_url": "https://x.com/otafull/status/2091721969574302052",
+        "source_urls": [
+          "https://x.com/otafull/status/2091721969574302052"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-24T02:59:14+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQdKCcrbcAAfqOI.jpg",
+            "https://t.co/NL553HbcPf",
+            "pic.x.com/NL553HbcPf"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📌予定候補",
+            "🟡関心"
+          ],
+          "text": "【久が原】2026/9/5(土)「第16回すえひろ夏祭り」開催！\nhttps://t.co/zJCkHe0Qr2\n#大田区　#商店街　#久が原　#イベント https://t.co/NL553HbcPf",
+          "title": "",
+          "tweet_id": "2091721969574302052",
+          "url": "https://x.com/otafull/status/2091721969574302052",
+          "value_score": 12.0
         }
       }
     },
