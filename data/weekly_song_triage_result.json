@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 11,
-  "direct_count": 7,
-  "created_count": 5,
+  "song_candidate_count": 10,
+  "direct_count": 6,
+  "created_count": 4,
   "updated_count": 2,
   "rejected_noise_count": 1,
   "review_count": 3,
@@ -30,14 +30,6 @@
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "浴衣音頭",
-      "source_term": "浴衣音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -78,19 +70,19 @@
       "term": "らんまん踊り",
       "evidence_count": 13,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=HEQAC5OADfw"
-    },
-    {
-      "term": "たいとう音頭",
-      "evidence_count": 8,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
+      "evidence_url": "https://www.youtube.com/watch?v=Ve1A2stIN_4"
     },
     {
       "term": "郡上おどり",
-      "evidence_count": 8,
+      "evidence_count": 9,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=TaCv9Owl1MA"
+      "evidence_url": "https://www.youtube.com/watch?v=O8t2RT-_g3c"
+    },
+    {
+      "term": "たいとう音頭",
+      "evidence_count": 5,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
     }
   ]
 }

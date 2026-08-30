@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "891799be9dc6961549718c31c4634fedb19e504ab523b5dbca099d4c7244e8b0",
-  "input_size_bytes": 2184283,
+  "input_sha256": "27a2f74f585acdb5407800c5f7937672c002b3ed52797571693c741897e9bd19",
+  "input_size_bytes": 2190695,
   "item_count": 5,
   "items": [
     {
@@ -10,44 +10,110 @@
       "domain": "X",
       "time_scope": "future",
       "priority_label": "P1",
-      "priority_score": 305,
-      "title": "麻布十番納涼盆踊り大会",
-      "event_name": "麻布十番納涼盆踊り大会",
-      "venue": "網代公園",
+      "priority_score": 85,
+      "title": "妖怪deNight　恒例の妖怪イベント案内です。\n\n●　イベント系\n\n7/12 (東京) 両国妖怪夏祭り‐両国‐ 江戸NOREN 両国妖怪夏祭り 2026 10",
+      "event_name": "",
+      "venue": "",
       "event_year": 2026,
-      "source_key": "x:2091410560848175322",
-      "source_url": "https://x.com/hakkaisan1922/status/2091410560848175322",
-      "recommended_action": "review_schedule_change",
+      "source_key": "x:2074841869834658034",
+      "source_url": "https://x.com/TaroToda/status/2074841869834658034",
+      "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_0b5990e1f69d9b27",
-        "source_key": "x:2091410560848175322",
+        "candidate_id": "xgap_a1ab8ff65d6b7299",
+        "source_key": "x:2074841869834658034",
         "lane_hint": "lane2",
-        "candidate_kind": "schedule_change",
-        "priority_score": 305,
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
         "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_e4a7eb02f5fed215",
-          "event_name": "麻布十番納涼盆踊り大会",
-          "venue": "網代公園",
-          "area": "",
-          "venue_area": "港区",
-          "venue_address": "東京都港区麻布十番2-15-1",
-          "date_start": "",
-          "date_end": "",
-          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-          "matched_aliases": [
-            "麻布十番納涼盆踊り大会",
-            "麻布十番納涼盆踊り大会"
+        "matched_occurrence": null,
+        "source_url": "https://x.com/TaroToda/status/2074841869834658034",
+        "source_text": "\n妖怪deNight　恒例の妖怪イベント案内です。\n\n●　イベント系\n\n7/12 (東京) 両国妖怪夏祭り‐両国‐ 江戸NOREN 両国妖怪夏祭り 2026 10:00～19:00 雨天決行 協力：百鬼夜行\n\n7/17(東京) 「妖怪と踊ろう練習会」上野下谷神社会館 18時半開場 演劇「江戸妖怪探偵社」内イベント 主催：ファントム座\n\n7/19(静岡) 　静岡百鬼夜行は19日のみ　17時〜 青葉ｼﾝﾎﾞﾙﾛｰﾄﾞ(18時半〜)\n申し込みは23日にスタート済み。定員50名　お早めに。\n\n7/19〜7/20(京都）モノノケ市 大将軍八神社　二日とも夜市（15:00〜20:30）\n\n7/25(愛媛)　　妖装行列 #妖怪白昼行in 「#紙祭り」四国中央市\n\n8/1(福島)　　猪苗代町にある中ノ沢温泉で中ノ沢ｺｽﾌﾟﾚｲﾍﾞﾝﾄ開催\n\n8/8-12(滋賀) 三井寺妖怪ナイト　18:00～21:00　入山料1500円　百妖箱様\n\n8/16 (北九州･長玄寺)テラコワ＆妖怪縁日\n←妖怪マルシェや妖怪仮装コンテストなどが開催予定\n\n●太秦映画村\n8/15～8/30　夏の夜まつり17:00～21:00(",
+        "source_author": "@TaroToda",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 0,
+          "handle": "@tarotoda",
+          "account_name": "一笑｜いちえ 7/25 妖怪白昼行 10/24 ﾍﾞﾙﾏｰｼﾞｭの祝祭",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "7/12",
+          "7/17",
+          "18時",
+          "7/19",
+          "17時",
+          "18時",
+          "7/19",
+          "7/20",
+          "7/25",
+          "8/1",
+          "8/8",
+          "8/16",
+          "8/15",
+          "8/30"
+        ],
+        "observed_dates": [
+          "2026-08-30"
+        ],
+        "event_group_key": "informal:8784467996327221",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x_proactive",
+          "account": "@TaroToda",
+          "name": "一笑｜いちえ 7/25 妖怪白昼行 10/24 ﾍﾞﾙﾏｰｼﾞｭの祝祭",
+          "title": "",
+          "text": "妖怪deNight　恒例の妖怪イベント案内です。\n\n●　イベント系\n\n7/12 (東京) 両国妖怪夏祭り‐両国‐ 江戸NOREN 両国妖怪夏祭り 2026 10:00～19:00 雨天決行 協力：百鬼夜行\n\n7/17(東京) 「妖怪と踊ろう練習会」上野下谷神社会館 18時半開場 演劇「江戸妖怪探偵社」内イベント 主催：ファントム座\n\n7/19(静岡) 　静岡百鬼夜行は19日のみ　17時〜 青葉ｼﾝﾎﾞﾙﾛｰﾄﾞ(18時半〜)\n申し込みは23日にスタート済み。定員50名　お早めに。\n\n7/19〜7/20(京都）モノノケ市 大将軍八神社　二日とも夜市（15:00〜20:30）\n\n7/25(愛媛)　　妖装行列 #妖怪白昼行in 「#紙祭り」四国中央市\n\n8/1(福島)　　猪苗代町にある中ノ沢温泉で中ノ沢ｺｽﾌﾟﾚｲﾍﾞﾝﾄ開催\n\n8/8-12(滋賀) 三井寺妖怪ナイト　18:00～21:00　入山料1500円　百妖箱様\n\n8/16 (北九州･長玄寺)テラコワ＆妖怪縁日\n←妖怪マルシェや妖怪仮装コンテストなどが開催予定\n\n●太秦映画村\n8/15～8/30　夏の夜まつり17:00～21:00(踊",
+          "url": "https://x.com/TaroToda/status/2074841869834658034",
+          "date": "2026-07-08T13:03:45+00:00",
+          "tweet_id": "2074841869834658034",
+          "tags": [
+            "🔎能動検索",
+            "-両国-江戸NOREN"
           ]
         },
-        "source_url": "https://x.com/hakkaisan1922/status/2091410560848175322",
-        "source_text": "\n【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
-        "source_author": "@hakkaisan1922",
+        "source_urls": [
+          "https://x.com/TaroToda/status/2074841869834658034"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "daily_candidate_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_63e59a598a1b926a"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "#有楽町プラネタリアTOKYO\n今年は\n#妖怪夏祭り\n8/31まで\n今年はあちこちで妖怪イベントやってますね🏮\n\n#築地本願寺\n盆踊り👘\n知らない音頭も多くて振",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2083249892156387392",
+      "source_url": "https://x.com/aoi323/status/2083249892156387392",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_13a7045096f7122e",
+        "source_key": "x:2083249892156387392",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/aoi323/status/2083249892156387392",
+        "source_text": "\n#有楽町プラネタリアTOKYO\n今年は\n#妖怪夏祭り\n8/31まで\n今年はあちこちで妖怪イベントやってますね🏮\n\n#築地本願寺\n盆踊り👘\n知らない音頭も多くて振付も難易度高めなのに、沢山の方が普通に踊っていて😳皆さん覚えてるのかな👏\n安宅丸でご一緒した\n＃大江戸助六太鼓\nさんの奉納演奏も🎶\n明日まで https://t.co/37xpqEmij1",
+        "source_author": "@aoi323",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@hakkaisan1922",
-          "account_name": "Hakkaisan/八海山公式",
+          "handle": "@aoi323",
+          "account_name": "青井美文",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -56,415 +122,312 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "15時"
+          "8/31"
         ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
+        "observed_dates": [
+          "2026-08-31"
+        ],
+        "event_group_key": "informal-venue:c39d4110157584fe",
+        "known_venue_evidence": {
+          "venue": "築地本願寺",
+          "region_hint": "中央区",
+          "address": "中央区築地3-15-1",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/"
+        },
         "voice": {
           "source": "x",
-          "account": "@hakkaisan1922",
-          "name": "Hakkaisan/八海山公式",
-          "profile_description": "新潟・南魚沼の酒蔵 八海山公式🍶\n食事に寄り添う日本酒を中心に、麹甘酒・クラフトビール・ジン・焼酎、魚沼の里（複合施設）や直営店まで。\n雪国の発酵文化と暮らしを発信中❄️\nフォロー＆お酒情報は20歳以上限定です。\n※公式SNSはX/Instagram2種/Facebook/YouTube",
+          "account": "@aoi323",
+          "name": "青井美文",
           "title": "",
-          "text": "【今日こそ！麻布十番祭り】\n\n昨日は大雨に見舞われ中止となりましたが、\n本日15時より2日目始まりました💪\n\n商店街の多様な店舗の魅力と賑わいを\nぜひ満喫しにいらしてください😊\n麻布千年こうじや前で、美味しい飲み物\nご用意してお待ちしてます🍻🍶🍹\n\n#今日のHakkaisan #麻布十番納涼祭 #クラフトビール #麹甘酒 #日本酒",
-          "url": "https://x.com/hakkaisan1922/status/2091410560848175322",
-          "date": "2026-08-23T06:21:48+00:00",
-          "tweet_id": "2091410560848175322",
+          "text": "#有楽町プラネタリアTOKYO\n今年は\n#妖怪夏祭り\n8/31まで\n今年はあちこちで妖怪イベントやってますね🏮\n\n#築地本願寺\n盆踊り👘\n知らない音頭も多くて振付も難易度高めなのに、沢山の方が普通に踊っていて😳皆さん覚えてるのかな👏\n安宅丸でご一緒した\n＃大江戸助六太鼓\nさんの奉納演奏も🎶\n明日まで https://t.co/37xpqEmij1",
+          "url": "https://x.com/aoi323/status/2083249892156387392",
+          "date": "2026-07-31T17:54:13+00:00",
+          "tweet_id": "2083249892156387392",
           "tags": [
             "🟡関心",
-            "q-cancel-change"
+            "q-venue"
           ],
-          "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
-            "https://t.co/wQVTDD7ulH",
-            "pic.x.com/wQVTDD7ulH",
-            "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
-            "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
+            "https://pbs.twimg.com/media/HOkwsJBbMAAxRMk.jpg",
+            "https://t.co/37xpqEmij1",
+            "pic.x.com/37xpqEmij1",
+            "https://pbs.twimg.com/media/HOkwsI8bMAA5w2t.jpg",
+            "https://pbs.twimg.com/media/HOkwsI9aMAARp9J.jpg",
+            "https://pbs.twimg.com/amplify_video_thumb/2083249837538254848/img/8a1HctlO7IMGZveW.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/hakkaisan1922/status/2091410560848175322"
+          "https://x.com/aoi323/status/2083249892156387392"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HQYu0VPbsAAIjtg.jpg",
-          "https://t.co/wQVTDD7ulH",
-          "pic.x.com/wQVTDD7ulH",
-          "https://pbs.twimg.com/media/HQYu0VPbkAAjD_0.jpg",
-          "https://pbs.twimg.com/media/HQYu0VMaUAAKmKS.jpg"
+          "https://pbs.twimg.com/media/HOkwsJBbMAAxRMk.jpg",
+          "https://t.co/37xpqEmij1",
+          "pic.x.com/37xpqEmij1",
+          "https://pbs.twimg.com/media/HOkwsI8bMAA5w2t.jpg",
+          "https://pbs.twimg.com/media/HOkwsI9aMAARp9J.jpg",
+          "https://pbs.twimg.com/amplify_video_thumb/2083249837538254848/img/8a1HctlO7IMGZveW.jpg"
         ],
         "corroboration_count": 1,
-        "source_count": 1
+        "source_count": 1,
+        "archive_reason": "daily_candidate_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_f5257f7268b34678"
+      "inbox_id": "inbox_e8b63b67224ef80b"
     },
     {
       "kind": "x_gap",
       "domain": "X",
       "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【洗足池】2026/8/29(土)「小池 夏祭り」開催！\nhttps://t.co/qX4SV9Anlj\n#大田区　#商店街　#洗足池　#イベント https:",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "【ワテラス盆踊り】\n🏮9/18(金) 17:00～21:00🏮9/19(土) 15:00～20:00📍ワテラス広場、淡路公園(千代田区)\n\n昨年初開催のワテラス",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2091711941479973033",
-      "source_url": "https://x.com/otafull/status/2091711941479973033",
+      "source_key": "x:2089217526542856567",
+      "source_url": "https://x.com/natsutr_bon/status/2089217526542856567",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_1253548890efb888",
-        "source_key": "x:2091711941479973033",
+        "candidate_id": "xgap_a683baddc41ad446",
+        "source_key": "x:2089217526542856567",
         "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2091711941479973033",
-        "source_text": "\n【洗足池】2026/8/29(土)「小池 夏祭り」開催！\nhttps://t.co/qX4SV9Anlj\n#大田区　#商店街　#洗足池　#イベント https://t.co/aI8q2Dna6Z",
-        "source_author": "@otafull",
+        "source_url": "https://x.com/natsutr_bon/status/2089217526542856567",
+        "source_text": "\n【ワテラス盆踊り】\n🏮9/18(金) 17:00～21:00🏮9/19(土) 15:00～20:00📍ワテラス広場、淡路公園(千代田区)\n\n昨年初開催のワテラス盆踊りが今年も🪭\n千代田区民踊連盟と盆踊り協会のリードで伝統曲からJPOPまで🎶\n\n🔔練習会9/1日(火)18:00〜20:00@ワテラスコモンホール(3F)\nhttps://t.co/MATJ64JvxE https://t.co/nze9H8kkjL",
+        "source_author": "@natsutr_bon",
         "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@natsutr_bon",
+          "account_name": "奈津大郎〘ナツタロ〙",
+          "source_type": "",
+          "trust_level": "candidate",
           "reasons": [
-            "registered_official_source_account"
+            "schedule_post_with_bon_context"
           ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
+          "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "2026/8/29"
+          "9/18",
+          "9/19",
+          "9/1"
         ],
         "observed_dates": [
-          "2026-08-29"
+          "2026-09-01",
+          "2026-09-18",
+          "2026-09-19"
         ],
-        "event_group_key": "",
+        "event_group_key": "informal:0061decec09ad161",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@natsutr_bon",
+          "name": "奈津大郎〘ナツタロ〙",
+          "profile_description": "およそ30年ぶりの炭坑節が楽しすぎて気がついたときには「盆踊りコ」| 基本構成ナツタロ・ナツジロのツーマンセル | 江東区盆踊連合(自称) | 馬鹿盆会 | 🍆寺島茄子之介音頭 | 祭り | 神輿 | 民謡 | 旅 | ヘッダーイラスト @nyantokonyan 様/ @M125M8qgyhWueHS 様",
+          "title": "",
+          "text": "【ワテラス盆踊り】\n🏮9/18(金) 17:00～21:00🏮9/19(土) 15:00～20:00📍ワテラス広場、淡路公園(千代田区)\n\n昨年初開催のワテラス盆踊りが今年も🪭\n千代田区民踊連盟と盆踊り協会のリードで伝統曲からJPOPまで🎶\n\n🔔練習会9/1日(火)18:00〜20:00@ワテラスコモンホール(3F)\nhttps://t.co/MATJ64JvxE https://t.co/nze9H8kkjL",
+          "url": "https://x.com/natsutr_bon/status/2089217526542856567",
+          "date": "2026-08-17T05:07:28+00:00",
+          "tweet_id": "2089217526542856567",
+          "tags": [
+            "🟡関心",
+            "q-program-songs-wide"
+          ],
+          "critique_post": true,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP5jhlDbwAAVNuk.jpg",
+            "https://t.co/nze9H8kkjL",
+            "pic.x.com/nze9H8kkjL"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/natsutr_bon/status/2089217526542856567"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP5jhlDbwAAVNuk.jpg",
+          "https://t.co/nze9H8kkjL",
+          "pic.x.com/nze9H8kkjL"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "informal_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_878a9ac23d263e41"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "パパさんママさん、夏休みは親子で日本の伝統芸能デビューしませんか？🎌✨\n\n2026年8月、関東各地で子供も楽しめる本格体験イベントが目白押し！映画「国宝」で話題",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2089593021050585598",
+      "source_url": "https://x.com/iko_yo_trip/status/2089593021050585598",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_718109ee8e6a17f8",
+        "source_key": "x:2089593021050585598",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/iko_yo_trip/status/2089593021050585598",
+        "source_text": "\nパパさんママさん、夏休みは親子で日本の伝統芸能デビューしませんか？🎌✨\n\n2026年8月、関東各地で子供も楽しめる本格体験イベントが目白押し！映画「国宝」で話題の日本舞踊、迫力満点の和太鼓、熱気あふれる阿波おどりまで…自由研究のテーマにもぴったりですよ📝😊\n\n編集部おすすめ体験イベントはこちら👇\n\n📍東京エリア\n・親子で観よう！能の世界（観世能楽堂）8/30…3歳から鑑賞OK🎵\n・セシオン杉並 納涼夏マルシェ with 阿波おどり 8/29〜8/30…ミストシャワーやかき氷も💧\n\n📍埼玉エリア\n・第40回南越谷阿波踊り…本場徳島・東京高円寺と並ぶ\"日本三大阿波踊り\"のひとつ😲\n\n📍千葉エリア\n・影絵と箏のワークショップ（若葉文化ホール）8/27…Eテレ出演ジャックさんと一緒に🎶",
+        "source_author": "@iko_yo_trip",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@iko_yo_trip",
+          "account_name": "いこーよとりっぷ |地域の個性を親子に届ける体験情報サービス",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/30",
+          "8/29",
+          "8/30",
+          "8/27"
+        ],
+        "observed_dates": [
+          "2026-08-30"
+        ],
+        "event_group_key": "informal:95da58e6b444cb66",
         "known_venue_evidence": null,
         "voice": {
           "source": "x_whitelist",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
-          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "account": "@iko_yo_trip",
+          "name": "いこーよとりっぷ |地域の個性を親子に届ける体験情報サービス",
+          "profile_description": "親子が10年先も思い出せる体験づくりをお手伝い。\nまだあまり知られていない地域の魅力を発信する「いこーよとりっぷ」の公式アカウントです。\n Instagramはこちら→ https://t.co/NFa20Xk27G",
           "title": "",
-          "text": "【洗足池】2026/8/29(土)「小池 夏祭り」開催！\nhttps://t.co/qX4SV9Anlj\n#大田区　#商店街　#洗足池　#イベント https://t.co/aI8q2Dna6Z",
-          "url": "https://x.com/otafull/status/2091711941479973033",
-          "date": "2026-08-24T02:19:23+00:00",
-          "tweet_id": "2091711941479973033",
+          "text": "パパさんママさん、夏休みは親子で日本の伝統芸能デビューしませんか？🎌✨\n\n2026年8月、関東各地で子供も楽しめる本格体験イベントが目白押し！映画「国宝」で話題の日本舞踊、迫力満点の和太鼓、熱気あふれる阿波おどりまで…自由研究のテーマにもぴったりですよ📝😊\n\n編集部おすすめ体験イベントはこちら👇\n\n📍東京エリア\n・親子で観よう！能の世界（観世能楽堂）8/30…3歳から鑑賞OK🎵\n・セシオン杉並 納涼夏マルシェ with 阿波おどり 8/29〜8/30…ミストシャワーやかき氷も💧\n\n📍埼玉エリア\n・第40回南越谷阿波踊り…本場徳島・東京高円寺と並ぶ\"日本三大阿波踊り\"のひとつ😲\n\n📍千葉エリア\n・影絵と箏のワークショップ（若葉文化ホール）8/27…Eテレ出演ジャックさんと一緒に🎶",
+          "url": "https://x.com/iko_yo_trip/status/2089593021050585598",
+          "date": "2026-08-18T05:59:33+00:00",
+          "tweet_id": "2089593021050585598",
           "tags": [
             "⭐盆踊ラー",
-            "📌予定候補",
             "🟡関心"
           ],
           "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HQdA6sxaIAAj-rV.jpg",
-            "https://t.co/aI8q2Dna6Z",
-            "pic.x.com/aI8q2Dna6Z"
+            "https://pbs.twimg.com/media/HP-5xE3aoAAiVZR.png",
+            "https://t.co/YaZep6RRt8",
+            "pic.x.com/YaZep6RRt8"
           ],
-          "value_score": 12.0
+          "value_score": 6.0
         },
         "source_urls": [
-          "https://x.com/otafull/status/2091711941479973033"
+          "https://x.com/iko_yo_trip/status/2089593021050585598"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HQdA6sxaIAAj-rV.jpg",
-          "https://t.co/aI8q2Dna6Z",
-          "pic.x.com/aI8q2Dna6Z"
+          "https://pbs.twimg.com/media/HP-5xE3aoAAiVZR.png",
+          "https://t.co/YaZep6RRt8",
+          "pic.x.com/YaZep6RRt8"
         ],
         "corroboration_count": 1,
         "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
+        "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_12a2b7d5e2b39bc7"
+      "inbox_id": "inbox_1e9c70ec1160e6ab"
     },
     {
       "kind": "x_gap",
       "domain": "X",
       "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【久が原】2026/9/5(土)「第16回すえひろ夏祭り」開催！\nhttps://t.co/zJCkHe0Qr2\n#大田区　#商店街　#久が原　#イベント ht",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "神奈川・相模原で「第53回 相模原納涼花火大会」開催！ 9月5日（土）\n\n会場は相模原市中央区の水郷田名で、開催時間は13時から20時15分まで。花火は19時か",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2091721969574302052",
-      "source_url": "https://x.com/otafull/status/2091721969574302052",
+      "source_key": "x:2089837092050547151",
+      "source_url": "https://x.com/yoshinew25/status/2089837092050547151",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_cd90d28d3b74e824",
-        "source_key": "x:2091721969574302052",
+        "candidate_id": "xgap_7b8b9dec64070ebf",
+        "source_key": "x:2089837092050547151",
         "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2091721969574302052",
-        "source_text": "\n【久が原】2026/9/5(土)「第16回すえひろ夏祭り」開催！\nhttps://t.co/zJCkHe0Qr2\n#大田区　#商店街　#久が原　#イベント https://t.co/NL553HbcPf",
-        "source_author": "@otafull",
+        "source_url": "https://x.com/yoshinew25/status/2089837092050547151",
+        "source_text": "\n神奈川・相模原で「第53回 相模原納涼花火大会」開催！ 9月5日（土）\n\n会場は相模原市中央区の水郷田名で、開催時間は13時から20時15分まで。花火は19時から打ち上げ。\n夜空を彩る約8,000発の花火が、相模原の夏の終わりを華やかに盛り上げます。\nhttps://t.co/sbwkAr1FDJ https://t.co/QhmKxilX5Z",
+        "source_author": "@yoshinew25",
         "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@yoshinew25",
+          "account_name": "旅飯 agogo！",
+          "source_type": "",
+          "trust_level": "candidate",
           "reasons": [
-            "registered_official_source_account"
+            "schedule_post_with_bon_context"
           ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
+          "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "2026/9/5"
+          "9月5日",
+          "13時",
+          "20時",
+          "19時"
         ],
         "observed_dates": [
           "2026-09-05"
         ],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x_whitelist",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
-          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
-          "title": "",
-          "text": "【久が原】2026/9/5(土)「第16回すえひろ夏祭り」開催！\nhttps://t.co/zJCkHe0Qr2\n#大田区　#商店街　#久が原　#イベント https://t.co/NL553HbcPf",
-          "url": "https://x.com/otafull/status/2091721969574302052",
-          "date": "2026-08-24T02:59:14+00:00",
-          "tweet_id": "2091721969574302052",
-          "tags": [
-            "⭐盆踊ラー",
-            "📌予定候補",
-            "🟡関心"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQdKCcrbcAAfqOI.jpg",
-            "https://t.co/NL553HbcPf",
-            "pic.x.com/NL553HbcPf"
-          ],
-          "value_score": 12.0
-        },
-        "source_urls": [
-          "https://x.com/otafull/status/2091721969574302052"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQdKCcrbcAAfqOI.jpg",
-          "https://t.co/NL553HbcPf",
-          "pic.x.com/NL553HbcPf"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_6c2a42299c71b7ac"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 225,
-      "title": "麻布十番納涼盆踊り大会",
-      "event_name": "麻布十番納涼盆踊り大会",
-      "venue": "網代公園",
-      "event_year": 2026,
-      "source_key": "x:2091365057338687774",
-      "source_url": "https://x.com/kanashindo/status/2091365057338687774",
-      "recommended_action": "confirm_current_year_date",
-      "payload": {
-        "candidate_id": "xgap_651e955cebe19e8b",
-        "source_key": "x:2091365057338687774",
-        "lane_hint": "lane1",
-        "candidate_kind": "missing_date",
-        "priority_score": 225,
-        "event_year": 2026,
-        "matched_occurrence": {
-          "occurrence_id": "occ_e4a7eb02f5fed215",
-          "event_name": "麻布十番納涼盆踊り大会",
-          "venue": "網代公園",
-          "area": "",
-          "venue_area": "港区",
-          "venue_address": "東京都港区麻布十番2-15-1",
-          "date_start": "",
-          "date_end": "",
-          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-          "matched_aliases": [
-            "麻布十番納涼盆踊り大会",
-            "麻布十番納涼盆踊り大会"
-          ]
-        },
-        "source_url": "https://x.com/kanashindo/status/2091365057338687774",
-        "source_text": "\n麻布十番納涼まつり、1日目お疲れさまでした！\n\nあいにくの大雨でしたが、地元の大きなお祭りということもあり、たくさんの方にお会いでき、地域の皆さまとのつながりを改めて感じる一日となりました。\n\n六本木ヒルズ自治会の盆踊りにも伺い、開会式ではご挨拶もさせていただきました。雨の中、準備・運営にあたられた皆さま、本当にありがとうございました。\n\n昨日は雨で、食べたかったものや行きたかったブースを十分に回れなかったので、本日ゆっくりリベンジしてお祭り楽しみます😋\n\n見かけたらぜひお気軽にお声がけください☺️\n写真ももちろん大丈夫ですが、無断撮影ではなく、一言お声がけいただいてからお願いします📷\n\n写真は特大かき氷🍧いつもは１時間並ぶのですが昨日はすぐに食べられたのでこれも雨の功績ということでチャレンジ🍓\n\nこめおくんも本人がめちゃくちゃ声出して頑張ってていつも一生懸命だなあと元気をもらいました☺️✨",
-        "source_author": "@kanashindo",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@kanashindo",
-          "account_name": "新藤加菜🐶港区議会議員🇯🇵",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "１時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
+        "event_group_key": "informal:749842d40a9cf47d",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@kanashindo",
-          "name": "新藤加菜🐶港区議会議員🇯🇵",
-          "profile_description": "港区議会議員（無所属・現役最年少）｜東京都動物愛護推進員｜東海大学沖縄地域研究センター研究員｜救う会青年部共同代表\n女子学院▶︎カナダの高校▶︎早稲田法▶︎リクルート\n保護犬ボランティア／exニコニコ生放送 ゆづか姫\n保守・現実路線で是々非々に発信\n📩お問い合わせはHPから",
+          "account": "@yoshinew25",
+          "name": "旅飯 agogo！",
+          "profile_description": "旅と、そこで出会う飯が好き、\n自由で縛られない生活が好き、\n好きなバイクや鉄道に乗って\n自由気ままに生きて行く！\n旅・飯・バイク・写真・晴れた日が好きな\n自由人です！",
           "title": "",
-          "text": "麻布十番納涼まつり、1日目お疲れさまでした！\n\nあいにくの大雨でしたが、地元の大きなお祭りということもあり、たくさんの方にお会いでき、地域の皆さまとのつながりを改めて感じる一日となりました。\n\n六本木ヒルズ自治会の盆踊りにも伺い、開会式ではご挨拶もさせていただきました。雨の中、準備・運営にあたられた皆さま、本当にありがとうございました。\n\n昨日は雨で、食べたかったものや行きたかったブースを十分に回れなかったので、本日ゆっくりリベンジしてお祭り楽しみます😋\n\n見かけたらぜひお気軽にお声がけください☺️\n写真ももちろん大丈夫ですが、無断撮影ではなく、一言お声がけいただいてからお願いします📷\n\n写真は特大かき氷🍧いつもは１時間並ぶのですが昨日はすぐに食べられたのでこれも雨の功績ということでチャレンジ🍓\n\nこめおくんも本人がめちゃくちゃ声出して頑張ってていつも一生懸命だなあと元気をもらいました☺️✨",
-          "url": "https://x.com/kanashindo/status/2091365057338687774",
-          "date": "2026-08-23T03:21:00+00:00",
-          "tweet_id": "2091365057338687774",
+          "text": "神奈川・相模原で「第53回 相模原納涼花火大会」開催！ 9月5日（土）\n\n会場は相模原市中央区の水郷田名で、開催時間は13時から20時15分まで。花火は19時から打ち上げ。\n夜空を彩る約8,000発の花火が、相模原の夏の終わりを華やかに盛り上げます。\nhttps://t.co/sbwkAr1FDJ https://t.co/QhmKxilX5Z",
+          "url": "https://x.com/yoshinew25/status/2089837092050547151",
+          "date": "2026-08-18T22:09:24+00:00",
+          "tweet_id": "2089837092050547151",
           "tags": [
             "🟡関心",
-            "q-poster-flyer"
+            "q-poster-images"
           ],
           "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HQYFbvpaYAA5r7X.jpg",
-            "https://t.co/5sEDCzKCOS",
-            "pic.x.com/5sEDCzKCOS",
-            "https://pbs.twimg.com/media/HQYFbvqaYAESNsS.jpg",
-            "https://pbs.twimg.com/media/HQYFbvpbwAAbl2t.jpg",
-            "https://pbs.twimg.com/media/HQYFbvrbwAAQd5_.jpg"
+            "https://pbs.twimg.com/media/HQCXa07bMAAkzAF.jpg",
+            "https://t.co/QhmKxilX5Z",
+            "pic.x.com/QhmKxilX5Z",
+            "https://pbs.twimg.com/media/HQCXckEbQAA5OT3.jpg",
+            "https://pbs.twimg.com/media/HQCXcjSaQAAJN52.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/kanashindo/status/2091365057338687774"
+          "https://x.com/yoshinew25/status/2089837092050547151"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HQYFbvpaYAA5r7X.jpg",
-          "https://t.co/5sEDCzKCOS",
-          "pic.x.com/5sEDCzKCOS",
-          "https://pbs.twimg.com/media/HQYFbvqaYAESNsS.jpg",
-          "https://pbs.twimg.com/media/HQYFbvpbwAAbl2t.jpg",
-          "https://pbs.twimg.com/media/HQYFbvrbwAAQd5_.jpg"
+          "https://pbs.twimg.com/media/HQCXa07bMAAkzAF.jpg",
+          "https://t.co/QhmKxilX5Z",
+          "pic.x.com/QhmKxilX5Z",
+          "https://pbs.twimg.com/media/HQCXckEbQAA5OT3.jpg",
+          "https://pbs.twimg.com/media/HQCXcjSaQAAJN52.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
-        "observed_candidate": {
-          "candidate_key": "occ_e4a7eb02f5fed215"
-        }
+        "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_f64d0ea31d79bd58"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2075061948228800554",
-      "source_url": "https://x.com/shinagawakanko/status/2075061948228800554",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_a20b44f06e38e562",
-        "source_key": "x:2075061948228800554",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/shinagawakanko/status/2075061948228800554",
-        "source_text": "\n🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
-        "source_author": "@shinagawakanko",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@shinagawakanko",
-          "account_name": "しながわ観光協会（東京 品川のおでかけ情報)",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7/11",
-          "7/18",
-          "7/18",
-          "7/19",
-          "7/25",
-          "7/25",
-          "9/12",
-          "9/20",
-          "10/10",
-          "10/11",
-          "10/11",
-          "10/18"
-        ],
-        "observed_dates": [
-          "2026-09-12",
-          "2026-09-20",
-          "2026-10-10",
-          "2026-10-11",
-          "2026-10-18"
-        ],
-        "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "西大井広場公園",
-          "region_hint": "品川区",
-          "address": "品川区西大井1-4-10",
-          "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
-        },
-        "voice": {
-          "source": "x_proactive",
-          "account": "@shinagawakanko",
-          "name": "しながわ観光協会（東京 品川のおでかけ情報)",
-          "title": "",
-          "text": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
-          "url": "https://x.com/shinagawakanko/status/2075061948228800554",
-          "date": "2026-07-09T03:38:15+00:00",
-          "tweet_id": "2075061948228800554",
-          "tags": [
-            "🔎能動検索",
-            "第四日野小学校"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HMwZ1m_bUAAu7zs.jpg",
-            "https://t.co/cNwWHHivBg",
-            "pic.x.com/cNwWHHivBg",
-            "https://pbs.twimg.com/media/HMwZ1m9bsAAKAW2.jpg",
-            "https://pbs.twimg.com/media/HMwZ1m7a0AAFHLB.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/shinagawakanko/status/2075061948228800554"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HMwZ1m_bUAAu7zs.jpg",
-          "https://t.co/cNwWHHivBg",
-          "pic.x.com/cNwWHHivBg",
-          "https://pbs.twimg.com/media/HMwZ1m9bsAAKAW2.jpg",
-          "https://pbs.twimg.com/media/HMwZ1m7a0AAFHLB.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_52ca865444048888"
+      "inbox_id": "inbox_dbfa85a5186765ba"
     }
   ],
   "selection": {
@@ -472,11 +435,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2091410560848175322",
-      "x:2091711941479973033",
-      "x:2091721969574302052",
-      "x:2091365057338687774",
-      "x:2075061948228800554"
+      "x:2074841869834658034",
+      "x:2083249892156387392",
+      "x:2089217526542856567",
+      "x:2089593021050585598",
+      "x:2089837092050547151"
     ]
   },
   "write_mode": "snapshot_only_default_off",

@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-29T12:52:28.306888+00:00",
+  "generated_at": "2026-08-30T12:02:52.096169+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 373,
+  "archived_count": 371,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -672,7 +672,6 @@
         "8月2"
       ],
       "observed_dates": [
-        "2026-08-29",
         "2026-08-30"
       ],
       "event_group_key": "",
@@ -2209,6 +2208,34 @@
       }
     },
     {
+      "candidate_id": "xgap_a3c803099f04dbf6",
+      "source_key": "x:2087325693583745227",
+      "candidate_kind": "past_event_report",
+      "source_url": "https://x.com/BonDanceRadio/status/2087325693583745227",
+      "source_text": "\n今日から3週に渡り、#盆ラジ は、#東京高円寺阿波踊り 大特集！\n#胡蝶蓮 #志留波阿連 #葵新連 #和樂連 連長にお集まりいただき、#阿波踊り の舞台裏を伺いました。\n高円寺阿波踊りは、8月29（土）、30（日）。\n盆ラジは、水曜22:00から。\nhttps://t.co/3GuGBEE5SD\n#池袋FM  #日本盆踊り協会",
+      "source_author": "@BonDanceRadio",
+      "observed_dates": [
+        "2026-08-29"
+      ],
+      "archive_reason": "multiple_venues_requires_manual_expansion",
+      "voice": {
+        "source": "x",
+        "account": "@BonDanceRadio",
+        "name": "踊る♪ラジオ 「盆踊りですから」～ 公式 池袋FM",
+        "profile_description": "",
+        "title": "",
+        "text": "今日から3週に渡り、#盆ラジ は、#東京高円寺阿波踊り 大特集！\n#胡蝶蓮 #志留波阿連 #葵新連 #和樂連 連長にお集まりいただき、#阿波踊り の舞台裏を伺いました。\n高円寺阿波踊りは、8月29（土）、30（日）。\n盆ラジは、水曜22:00から。\nhttps://t.co/3GuGBEE5SD\n#池袋FM  #日本盆踊り協会",
+        "url": "https://x.com/BonDanceRadio/status/2087325693583745227",
+        "date": "2026-08-11T23:50:00+00:00",
+        "tweet_id": "2087325693583745227",
+        "tags": [
+          "🟡関心",
+          "q-imminent"
+        ],
+        "critique_post": false
+      }
+    },
+    {
       "candidate_id": "xgap_03a5d30478b1dc91",
       "source_key": "x:2084965122188157369",
       "candidate_kind": "past_event_report",
@@ -2773,7 +2800,6 @@
         "１７時"
       ],
       "observed_dates": [
-        "2026-08-29",
         "2026-09-19"
       ],
       "event_group_key": "",
@@ -13105,9 +13131,7 @@
       "date_hints": [
         "8/29"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -14915,9 +14939,7 @@
         "8/29",
         "8月22"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -17800,7 +17822,6 @@
         "17時"
       ],
       "observed_dates": [
-        "2026-08-29",
         "2026-08-30"
       ],
       "event_group_key": "",
@@ -17917,9 +17938,7 @@
       "date_hints": [
         "2026/8/29"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -19465,7 +19484,6 @@
         "１７時"
       ],
       "observed_dates": [
-        "2026-08-29",
         "2026-09-19"
       ],
       "event_group_key": "",
@@ -19668,9 +19686,7 @@
         "2026/8/29",
         "8/29"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -19725,9 +19741,7 @@
       "date_hints": [
         "2026/8/29"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -21762,9 +21776,7 @@
       "date_hints": [
         "2026/8/29"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -22728,9 +22740,7 @@
       "date_hints": [
         "2026/8/29"
       ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -23802,6 +23812,59 @@
       "archive_reason": "daily_candidate_cap"
     },
     {
+      "candidate_id": "xgap_f2b66318f9d9556a",
+      "source_key": "x:2072153234178023452",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/nakamebonodori/status/2072153234178023452",
+      "source_text": "\n【第二回 中目黒盆踊り大会 2026 開催決定！】\n\n今年も「中目黒盆踊り大会」の開催が決定しました🏮\n会場は昨年に続き、「フナイリバ」です。\n\n日程：2026年8月29日(土)・30日(日)\n会場：フナイリバ\n\n開催に向けて、今後こちらの公式Xで最新情報を発信していきます。ぜひフォローしてお待ちください！",
+      "source_author": "@nakamebonodori",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@nakamebonodori",
+        "account_name": "中目黒盆踊り大会",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月29日"
+      ],
+      "observed_dates": [
+        "2026-08-30"
+      ],
+      "event_group_key": "informal:38152e0c34f149f1",
+      "known_venue_evidence": null,
+      "voice": {
+        "source": "x_proactive",
+        "account": "@nakamebonodori",
+        "name": "中目黒盆踊り大会",
+        "title": "",
+        "text": "【第二回 中目黒盆踊り大会 2026 開催決定！】\n\n今年も「中目黒盆踊り大会」の開催が決定しました🏮\n会場は昨年に続き、「フナイリバ」です。\n\n日程：2026年8月29日(土)・30日(日)\n会場：フナイリバ\n\n開催に向けて、今後こちらの公式Xで最新情報を発信していきます。ぜひフォローしてお待ちください！",
+        "url": "https://x.com/nakamebonodori/status/2072153234178023452",
+        "date": "2026-07-01T03:00:04+00:00",
+        "tweet_id": "2072153234178023452",
+        "tags": [
+          "🔎能動検索",
+          "フナイリバ（目黒川船入場広場）"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/nakamebonodori/status/2072153234178023452"
+      ],
+      "source_media_urls": [],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "daily_candidate_cap"
+    },
+    {
       "candidate_id": "xgap_a1ab8ff65d6b7299",
       "source_key": "x:2074841869834658034",
       "lane_hint": "lane2",
@@ -24050,6 +24113,69 @@
       "archive_reason": "daily_candidate_cap"
     },
     {
+      "candidate_id": "xgap_78f758fb781150d0",
+      "source_key": "x:2076939758060593589",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/nakamebonodori/status/2076939758060593589",
+      "source_text": "\n改めて、開催概要をご案内します。\n\n第二回中目黒盆踊り大会 2026は、\n8月29日(土)・30日(日)の2日間で開催します🏮\n\nおどる、つながる、ひとつのまちに。\n今年も中目黒で、皆さまとお会いできることを楽しみにしています。\n\n日時：2026年8月29日(土)・30日(日) 13:00〜21:00\n会場：フナイリバ\n#盆踊り https://t.co/1dSeOcjXBP",
+      "source_author": "@nakamebonodori",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@nakamebonodori",
+        "account_name": "中目黒盆踊り大会",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8月29日",
+        "8月29日"
+      ],
+      "observed_dates": [
+        "2026-08-30"
+      ],
+      "event_group_key": "informal:c7d599565e3bb930",
+      "known_venue_evidence": null,
+      "voice": {
+        "source": "x",
+        "account": "@nakamebonodori",
+        "name": "中目黒盆踊り大会",
+        "title": "",
+        "text": "改めて、開催概要をご案内します。\n\n第二回中目黒盆踊り大会 2026は、\n8月29日(土)・30日(日)の2日間で開催します🏮\n\nおどる、つながる、ひとつのまちに。\n今年も中目黒で、皆さまとお会いできることを楽しみにしています。\n\n日時：2026年8月29日(土)・30日(日) 13:00〜21:00\n会場：フナイリバ\n#盆踊り https://t.co/1dSeOcjXBP",
+        "url": "https://x.com/nakamebonodori/status/2076939758060593589",
+        "date": "2026-07-14T08:00:00+00:00",
+        "tweet_id": "2076939758060593589",
+        "tags": [
+          "🟡関心",
+          "q-base"
+        ],
+        "media_urls": [
+          "https://pbs.twimg.com/media/HNJhFtnbEAAyM4f.jpg",
+          "https://t.co/1dSeOcjXBP",
+          "pic.x.com/1dSeOcjXBP"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/nakamebonodori/status/2076939758060593589"
+      ],
+      "source_media_urls": [
+        "https://pbs.twimg.com/media/HNJhFtnbEAAyM4f.jpg",
+        "https://t.co/1dSeOcjXBP",
+        "pic.x.com/1dSeOcjXBP"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "daily_candidate_cap"
+    },
+    {
       "candidate_id": "xgap_e9d13ee77b561240",
       "source_key": "x:2079394341139947660",
       "lane_hint": "lane2",
@@ -24247,252 +24373,6 @@
       ],
       "corroboration_count": 1,
       "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
-      "candidate_id": "xgap_7a692dd6fc69abf4",
-      "source_key": "x:2084612401178300864",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/ara_news01/status/2084612401178300864",
-      "source_text": "\n駒中通りを歩いていたら、なんかいい感じの街路灯。盆踊りやってたのかな。\nそして新しい盆踊りのチラシが！\n\n弦小ボン踊り\n8月29日(土) 盆踊りは16時から\n第1回だって！ゎ‹((  ◜ᴗ◝))ゎ‹\n神聖なる学舎が会場ですから、校内の飲酒は禁止だよ！o(`･ω´･+o)ｷﾘｯ\n#世田谷区 https://t.co/ewMoFujYaH",
-      "source_author": "@ara_news01",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@ara_news01",
-        "account_name": "arata ／盆踊り／読書／キャリコン",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29日",
-        "16時"
-      ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
-      "event_group_key": "informal:171d6ca2e6d9a86b",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@ara_news01",
-        "name": "arata ／盆踊り／読書／キャリコン",
-        "title": "",
-        "text": "駒中通りを歩いていたら、なんかいい感じの街路灯。盆踊りやってたのかな。\nそして新しい盆踊りのチラシが！\n\n弦小ボン踊り\n8月29日(土) 盆踊りは16時から\n第1回だって！ゎ‹((  ◜ᴗ◝))ゎ‹\n神聖なる学舎が会場ですから、校内の飲酒は禁止だよ！o(`･ω´･+o)ｷﾘｯ\n#世田谷区 https://t.co/ewMoFujYaH",
-        "url": "https://x.com/ara_news01/status/2084612401178300864",
-        "date": "2026-08-04T12:08:21+00:00",
-        "tweet_id": "2084612401178300864",
-        "tags": [
-          "🟡関心",
-          "q-poster-flyer"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HO4H6UgaIAA5eH7.jpg",
-          "https://t.co/ewMoFujYaH",
-          "pic.x.com/ewMoFujYaH",
-          "https://pbs.twimg.com/media/HO4H6UiaYAAH1jp.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/ara_news01/status/2084612401178300864"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HO4H6UgaIAA5eH7.jpg",
-        "https://t.co/ewMoFujYaH",
-        "pic.x.com/ewMoFujYaH",
-        "https://pbs.twimg.com/media/HO4H6UiaYAAH1jp.jpg"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
-      "candidate_id": "xgap_58868fa997355d2b",
-      "source_key": "x:2086010595867033717",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/ysb_/status/2086010595867033717",
-      "source_text": "\n第1回弦小Bon！踊り～\n\n2026年8月29日開催だそうで～\n\n関係ない人は入場できない模様～\n\n20260808～\n\n #世田谷区 #世田谷 #setagaya #弦巻小学校 #弦小 #盆踊り https://t.co/5r4A1IB7pW",
-      "source_author": "@ysb_",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@ysb_",
-        "account_name": "ＹＳＢ（わいえすび～）",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29日"
-      ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
-      "event_group_key": "informal:7a5536f1242b1eeb",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@ysb_",
-        "name": "ＹＳＢ（わいえすび～）",
-        "title": "",
-        "text": "第1回弦小Bon！踊り～\n\n2026年8月29日開催だそうで～\n\n関係ない人は入場できない模様～\n\n20260808～\n\n #世田谷区 #世田谷 #setagaya #弦巻小学校 #弦小 #盆踊り https://t.co/5r4A1IB7pW",
-        "url": "https://x.com/ysb_/status/2086010595867033717",
-        "date": "2026-08-08T08:44:16+00:00",
-        "tweet_id": "2086010595867033717",
-        "tags": [
-          "🟡関心",
-          "q-venue-tokyo-wards"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HPL_cJyboAEukVS.jpg",
-          "https://t.co/5r4A1IB7pW",
-          "pic.x.com/5r4A1IB7pW",
-          "https://pbs.twimg.com/media/HPL_d1vaoAAlq3M.jpg",
-          "https://pbs.twimg.com/media/HPL_ewMaQAAko6x.jpg",
-          "https://pbs.twimg.com/media/HPL_fnCacAAwnAN.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/ysb_/status/2086010595867033717"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HPL_cJyboAEukVS.jpg",
-        "https://t.co/5r4A1IB7pW",
-        "pic.x.com/5r4A1IB7pW",
-        "https://pbs.twimg.com/media/HPL_d1vaoAAlq3M.jpg",
-        "https://pbs.twimg.com/media/HPL_ewMaQAAko6x.jpg",
-        "https://pbs.twimg.com/media/HPL_fnCacAAwnAN.jpg"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_d8c657edcbca9d77",
-      "source_key": "x:2086291719717609890",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/BoniBullTerrier/status/2086291719717609890",
-      "source_text": "\n下高井戸の夏祭り「第56回しもたかサマーフェスティバル」が2026年8月29日(土)30日(日)の2日間、松沢小学校校庭にて開催されます。縁日、ビンゴ大会、しもたか盆踊りなど今年の見どころを紹介。今年の開催場所は「ひまわり広場駐車場」じゃないですよ！\nhttps://t.co/1C2KG1PSRQ",
-      "source_author": "@BoniBullTerrier",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@bonibullterrier",
-        "account_name": "今日の下高井戸🍴坂津田圭",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29日"
-      ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
-      "event_group_key": "informal-venue:6ac017e01ec78eaf",
-      "known_venue_evidence": {
-        "venue": "松沢小学校",
-        "region_hint": "世田谷区",
-        "address": "世田谷区赤堤4-44-22",
-        "source_url": "https://www.shimotaka.or.jp/summer2025-3"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@BoniBullTerrier",
-        "name": "今日の下高井戸🍴坂津田圭",
-        "title": "",
-        "text": "下高井戸の夏祭り「第56回しもたかサマーフェスティバル」が2026年8月29日(土)30日(日)の2日間、松沢小学校校庭にて開催されます。縁日、ビンゴ大会、しもたか盆踊りなど今年の見どころを紹介。今年の開催場所は「ひまわり広場駐車場」じゃないですよ！\nhttps://t.co/1C2KG1PSRQ",
-        "url": "https://x.com/BoniBullTerrier/status/2086291719717609890",
-        "date": "2026-08-09T03:21:22+00:00",
-        "tweet_id": "2086291719717609890",
-        "tags": [
-          "🟡関心",
-          "q-imminent"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/BoniBullTerrier/status/2086291719717609890"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_8bc93080b184032b",
-      "source_key": "x:2087325693583745227",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/BonDanceRadio/status/2087325693583745227",
-      "source_text": "\n今日から3週に渡り、#盆ラジ は、#東京高円寺阿波踊り 大特集！\n#胡蝶蓮 #志留波阿連 #葵新連 #和樂連 連長にお集まりいただき、#阿波踊り の舞台裏を伺いました。\n高円寺阿波踊りは、8月29（土）、30（日）。\n盆ラジは、水曜22:00から。\nhttps://t.co/3GuGBEE5SD\n#池袋FM  #日本盆踊り協会",
-      "source_author": "@BonDanceRadio",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@bondanceradio",
-        "account_name": "踊る♪ラジオ 「盆踊りですから」～ 公式 池袋FM",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29"
-      ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
-      "event_group_key": "informal:7ef47d11d98e6396",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@BonDanceRadio",
-        "name": "踊る♪ラジオ 「盆踊りですから」～ 公式 池袋FM",
-        "profile_description": "",
-        "title": "",
-        "text": "今日から3週に渡り、#盆ラジ は、#東京高円寺阿波踊り 大特集！\n#胡蝶蓮 #志留波阿連 #葵新連 #和樂連 連長にお集まりいただき、#阿波踊り の舞台裏を伺いました。\n高円寺阿波踊りは、8月29（土）、30（日）。\n盆ラジは、水曜22:00から。\nhttps://t.co/3GuGBEE5SD\n#池袋FM  #日本盆踊り協会",
-        "url": "https://x.com/BonDanceRadio/status/2087325693583745227",
-        "date": "2026-08-11T23:50:00+00:00",
-        "tweet_id": "2087325693583745227",
-        "tags": [
-          "🟡関心",
-          "q-imminent"
-        ],
-        "critique_post": false
-      },
-      "source_urls": [
-        "https://x.com/BonDanceRadio/status/2087325693583745227"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
@@ -24564,76 +24444,7 @@
       "archive_reason": "informal_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_cc6dae47975b4f27",
-      "source_key": "x:2089283815235842266",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/jyun_en/status/2089283815235842266",
-      "source_text": "\n先日、築地本願寺の盆踊りに行ってきました。その際、盛り上がっていたのが「これが日本の、盆ダンス」というナンバー（あえてナンバーと言いたい）\n「最後もう１曲踊りたいか〜！」\n「いえー！！！」という掛け声もあり、\nまさかどころか、ここは「ダンスホール」って思ったばかりでした。聖蹟桜ヶ丘、お近くの方はぜひ！\n※写真は築地本願寺盆踊り最終日のもの\nーーーーーーーーーーーーーーーーーーー\n盆踊りとディスコがまさかの融合！「せいせき Bon“盆”Disco」8月29日（土）・30日（日）、聖蹟桜ヶ丘で開催 https://t.co/iNVtsSXFba @PRTIMES_JPより",
-      "source_author": "@jyun_en",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@jyun_en",
-        "account_name": "【公式】巡縁 | 観れば開運! 読めば運気アップ!!",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29日"
-      ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
-      "event_group_key": "informal-venue:158969248e8956a6",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@jyun_en",
-        "name": "【公式】巡縁 | 観れば開運! 読めば運気アップ!!",
-        "profile_description": "人と寺社をつなぐ情報サイト「巡縁」\n「行ってみたい!」全国の寺社をお届けします。\nお寺・神社 | 開運さんぽ| 仏像 | 修験道 | 袈裟\nby足袋やネット・株式会社福生",
-        "title": "",
-        "text": "先日、築地本願寺の盆踊りに行ってきました。その際、盛り上がっていたのが「これが日本の、盆ダンス」というナンバー（あえてナンバーと言いたい）\n「最後もう１曲踊りたいか〜！」\n「いえー！！！」という掛け声もあり、\nまさかどころか、ここは「ダンスホール」って思ったばかりでした。聖蹟桜ヶ丘、お近くの方はぜひ！\n※写真は築地本願寺盆踊り最終日のもの\nーーーーーーーーーーーーーーーーーーー\n盆踊りとディスコがまさかの融合！「せいせき Bon“盆”Disco」8月29日（土）・30日（日）、聖蹟桜ヶ丘で開催 https://t.co/iNVtsSXFba @PRTIMES_JPより",
-        "url": "https://x.com/jyun_en/status/2089283815235842266",
-        "date": "2026-08-17T09:30:53+00:00",
-        "tweet_id": "2089283815235842266",
-        "tags": [
-          "🟢一次レポ",
-          "q-venue"
-        ],
-        "critique_post": false,
-        "media_urls": [
-          "https://pbs.twimg.com/media/HP6gi8IaQAAJxa7.jpg",
-          "https://t.co/uPigAwmW2p",
-          "pic.x.com/uPigAwmW2p"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/jyun_en/status/2089283815235842266"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HP6gi8IaQAAJxa7.jpg",
-        "https://t.co/uPigAwmW2p",
-        "pic.x.com/uPigAwmW2p"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_881ce68e54fb0f67",
+      "candidate_id": "xgap_718109ee8e6a17f8",
       "source_key": "x:2089593021050585598",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -24662,10 +24473,9 @@
         "8/27"
       ],
       "observed_dates": [
-        "2026-08-29",
         "2026-08-30"
       ],
-      "event_group_key": "informal:9cafec42d5e06cbb",
+      "event_group_key": "informal:95da58e6b444cb66",
       "known_venue_evidence": null,
       "voice": {
         "source": "x_whitelist",
@@ -24697,61 +24507,6 @@
         "https://t.co/YaZep6RRt8",
         "pic.x.com/YaZep6RRt8"
       ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_0ea1bec18ded49de",
-      "source_key": "x:2089739361457983573",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/naka16655114/status/2089739361457983573",
-      "source_text": "\n希望ヶ丘サマーデイズ 夏祭り 盆踊り\n📅8/29土-30日 18:00-21:00\n📍#石川台希望ヶ丘商店街(大田区)\n🚃石川台駅\n\n・お茶又はアイスを配布🎁(それぞれ各日200点)\n\nhttps://t.co/I7by5HePP8",
-      "source_author": "@naka16655114",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@naka16655114",
-        "account_name": "東京イベント開拓戦士ゆっきー",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/29"
-      ],
-      "observed_dates": [
-        "2026-08-29"
-      ],
-      "event_group_key": "informal:51b47d34b7e05e10",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@naka16655114",
-        "name": "東京イベント開拓戦士ゆっきー",
-        "profile_description": "東京在住の私が東京神奈川エリアの無料イベントを開拓します。もともと趣味で無料イベント巡りをしていましたが、把握しきれないほどのイベントがあるので備忘録として投稿してみます。",
-        "title": "",
-        "text": "希望ヶ丘サマーデイズ 夏祭り 盆踊り\n📅8/29土-30日 18:00-21:00\n📍#石川台希望ヶ丘商店街(大田区)\n🚃石川台駅\n\n・お茶又はアイスを配布🎁(それぞれ各日200点)\n\nhttps://t.co/I7by5HePP8",
-        "url": "https://x.com/naka16655114/status/2089739361457983573",
-        "date": "2026-08-18T15:41:03+00:00",
-        "tweet_id": "2089739361457983573",
-        "tags": [
-          "🟡関心",
-          "q-venue-tokyo-wards"
-        ],
-        "critique_post": false
-      },
-      "source_urls": [
-        "https://x.com/naka16655114/status/2089739361457983573"
-      ],
-      "source_media_urls": [],
       "corroboration_count": 1,
       "source_count": 1,
       "archive_reason": "informal_new_event_daily_cap"
@@ -25071,6 +24826,73 @@
         "https://t.co/Zp9HDv3Vdi",
         "pic.x.com/Zp9HDv3Vdi",
         "https://pbs.twimg.com/media/HQYB9LkaAAESM1V.jpg"
+      ],
+      "corroboration_count": 1,
+      "source_count": 1,
+      "archive_reason": "informal_new_event_daily_cap"
+    },
+    {
+      "candidate_id": "xgap_ac878d3cb352450c",
+      "source_key": "x:2091782131345506727",
+      "lane_hint": "lane2",
+      "candidate_kind": "informal_new_event",
+      "priority_score": 85,
+      "event_year": 2026,
+      "matched_occurrence": null,
+      "source_url": "https://x.com/PIERROT_TAXI/status/2091782131345506727",
+      "source_text": "\n【東京23区 夏祭り瓦版🏮】\n8/24(月)〜8/30(日)\n#ピエロ戦略メモ\n\n8月最後の一週間。\n都内各地で夏祭りが一気に開催🔥\n\n🏮 東京高円寺阿波おどり\n🎐 スーパーよさこい2026\n💃 浅草サンバカーニバル\n🏮 東京大塚阿波おどり\n🎆 田端銀座盆踊り大会\n🏮 赤羽納涼フェスタ2026\n🌙 蒲田夜市\n🎐 用賀サマーフェスティバル2026\n🏮 中目黒盆踊り大会\n🎆 三宿夏祭り2026",
+      "source_author": "@PIERROT_TAXI",
+      "source_officiality": {
+        "classification": "unknown_or_personal_social",
+        "score": 2,
+        "handle": "@pierrot_taxi",
+        "account_name": "タクドラピエロ🤡",
+        "source_type": "",
+        "trust_level": "candidate",
+        "reasons": [
+          "schedule_post_with_bon_context"
+        ],
+        "recommended_action": "find_independent_confirmation"
+      },
+      "date_hints": [
+        "8/24",
+        "8/30"
+      ],
+      "observed_dates": [
+        "2026-08-30"
+      ],
+      "event_group_key": "informal:c937760e1ed0bb42",
+      "known_venue_evidence": null,
+      "voice": {
+        "source": "x",
+        "account": "@PIERROT_TAXI",
+        "name": "タクドラピエロ🤡",
+        "profile_description": "@PIERROT_DARKT #ピエロメモ #ピエロ戦略メモ｜都内タクドラ6年目の羽カス🤡✈️｜隔勤遅番｜城南・羽田空港が好き。営業日報、道路・羽田・イベント情報、ピエッピーとのAI営業分析をポスト。成功も失敗も全部公開ぴえ。好きなガンダムは0083。\n#ピエロニュース",
+        "title": "",
+        "text": "【東京23区 夏祭り瓦版🏮】\n8/24(月)〜8/30(日)\n#ピエロ戦略メモ\n\n8月最後の一週間。\n都内各地で夏祭りが一気に開催🔥\n\n🏮 東京高円寺阿波おどり\n🎐 スーパーよさこい2026\n💃 浅草サンバカーニバル\n🏮 東京大塚阿波おどり\n🎆 田端銀座盆踊り大会\n🏮 赤羽納涼フェスタ2026\n🌙 蒲田夜市\n🎐 用賀サマーフェスティバル2026\n🏮 中目黒盆踊り大会\n🎆 三宿夏祭り2026",
+        "url": "https://x.com/PIERROT_TAXI/status/2091782131345506727",
+        "date": "2026-08-24T06:58:18+00:00",
+        "tweet_id": "2091782131345506727",
+        "tags": [
+          "🟡関心",
+          "q-base"
+        ],
+        "critique_post": false,
+        "media_urls": [
+          "https://pbs.twimg.com/media/HQeAwVsbwAARPPK.jpg",
+          "https://t.co/00KvVrWmlE",
+          "pic.x.com/00KvVrWmlE",
+          "https://pbs.twimg.com/media/HQeAwuIa0AAwCXT.jpg"
+        ]
+      },
+      "source_urls": [
+        "https://x.com/PIERROT_TAXI/status/2091782131345506727"
+      ],
+      "source_media_urls": [
+        "https://pbs.twimg.com/media/HQeAwVsbwAARPPK.jpg",
+        "https://t.co/00KvVrWmlE",
+        "pic.x.com/00KvVrWmlE",
+        "https://pbs.twimg.com/media/HQeAwuIa0AAwCXT.jpg"
       ],
       "corroboration_count": 1,
       "source_count": 1,

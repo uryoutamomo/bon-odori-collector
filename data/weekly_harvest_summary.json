@@ -1,17 +1,17 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-08-29T12:52:55.999417+00:00",
+  "generated_at": "2026-08-30T12:03:12.476328+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-08-29T12:52:49.429825+00:00",
+  "source_generated_at": "2026-08-30T12:03:06.583673+00:00",
   "days": 3,
-  "voice_count": 82,
-  "candidate_count": 11,
+  "voice_count": 76,
+  "candidate_count": 10,
   "category_counts": {
-    "曲候補": 11
+    "曲候補": 10
   },
   "non_song_review_count": 0,
-  "song_candidate_count": 11,
-  "song_direct_dry_run_count": 7,
+  "song_candidate_count": 10,
+  "song_direct_dry_run_count": 6,
   "song_review_count": 3,
   "song_rejected_noise_count": 1,
   "review_files": {
@@ -28,8 +28,8 @@
     "non_song_review": [],
     "song_review": [
       "らんまん踊り",
-      "たいとう音頭",
-      "郡上おどり"
+      "郡上おどり",
+      "たいとう音頭"
     ]
   }
 }
