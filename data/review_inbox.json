@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-08-30T12:10:34.924897+00:00",
+  "generated_at": "2026-08-31T14:01:03.310797+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -1014,6 +1014,103 @@
           "title": "",
           "tweet_id": "2091365057338687774",
           "url": "https://x.com/kanashindo/status/2091365057338687774"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4a60d0ce7710a4cb",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 205.0,
+      "title": "麻布十番納涼盆踊り大会",
+      "event_name": "麻布十番納涼盆踊り大会",
+      "venue": "網代公園",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088793111304507643",
+      "source_url": "https://x.com/iza_machi_/status/2088793111304507643",
+      "recommended_action": "confirm_current_year_date",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ad5e45553120fba645df9164850273dd7c8f932b003531b1e94465f4555ec0eb",
+      "last_seen_at": "github-33398830625-1",
+      "created_at": "2026-08-31T14:00:20.530331+00:00",
+      "updated_at": "2026-08-31T14:00:20.530331+00:00",
+      "payload": {
+        "candidate_id": "xgap_e644a996333cc093",
+        "candidate_kind": "missing_date",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": {
+          "area": "",
+          "date_end": "",
+          "date_start": "",
+          "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
+          "event_name": "麻布十番納涼盆踊り大会",
+          "matched_aliases": [
+            "麻布十番納涼盆踊り大会",
+            "麻布十番納涼盆踊り大会"
+          ],
+          "occurrence_id": "occ_e4a7eb02f5fed215",
+          "venue": "網代公園",
+          "venue_address": "東京都港区麻布十番2-15-1",
+          "venue_area": "港区"
+        },
+        "observed_candidate": {
+          "candidate_key": "occ_e4a7eb02f5fed215"
+        },
+        "observed_dates": [],
+        "priority_score": 205,
+        "source_author": "@iza_machi_",
+        "source_count": 1,
+        "source_key": "x:2088793111304507643",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "いざまち編集部＠新橋・麻布・赤坂・高輪　港区情報サイト",
+          "classification": "unknown_or_personal_social",
+          "handle": "@iza_machi_",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n今年もこの季節がやってきました。\n港区の夏の風物詩 #麻布十番納涼まつり が、8/22（土）23（日）の2日間開催。\n商店街の名店グルメと各国の屋台がずらりと並び、街全体がおまつり一色に。大変な混雑が予想されるので、時間に余裕をもって公共交通機関でのお越しがおすすめ！\nhttps://t.co/PcXOEiAdjY",
+        "source_url": "https://x.com/iza_machi_/status/2088793111304507643",
+        "source_urls": [
+          "https://x.com/iza_machi_/status/2088793111304507643"
+        ],
+        "voice": {
+          "account": "@iza_machi_",
+          "critique_post": false,
+          "date": "2026-08-16T01:01:00+00:00",
+          "name": "いざまち編集部＠新橋・麻布・赤坂・高輪　港区情報サイト",
+          "profile_description": "“いざまち”は、港区で約30年活動する編集プロダクションが運営している、港区情報サイトです。港区で働く人や暮らす人に話を聞き、 “まち”の変化を紹介しています。\n・MINATOシティープロモーションクルー認定事業\n・港区観光協会会員",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "text": "今年もこの季節がやってきました。\n港区の夏の風物詩 #麻布十番納涼まつり が、8/22（土）23（日）の2日間開催。\n商店街の名店グルメと各国の屋台がずらりと並び、街全体がおまつり一色に。大変な混雑が予想されるので、時間に余裕をもって公共交通機関でのお越しがおすすめ！\nhttps://t.co/PcXOEiAdjY",
+          "title": "",
+          "tweet_id": "2088793111304507643",
+          "url": "https://x.com/iza_machi_/status/2088793111304507643",
+          "value_score": 16.0
         }
       }
     },
@@ -2740,6 +2837,284 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1f9397ceeb402ba4",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "真田の仕掛け\nクラファンページ作成停滞中💦\n９月１９日 #花火\n９月２０日 #お舟まつり\n９月２１日山の神祭\nとりあえずご予定ください!!\n\nと、その前に盆踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084545621344792966",
+      "source_url": "https://x.com/YAMAGA_JINJA/status/2084545621344792966",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "31dd91ae70637d6872749f9e3d070d201d3d05dda3f91c63e8be63e1c5bb6d4c",
+      "last_seen_at": "github-33398830625-1",
+      "created_at": "2026-08-31T14:00:20.530331+00:00",
+      "updated_at": "2026-08-31T14:00:20.530331+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_0261b5438a674e6d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "９月１９日",
+          "９月２０日",
+          "９月２１日",
+          "１７時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-19",
+          "2026-09-20",
+          "2026-09-21"
+        ],
+        "priority_score": 125,
+        "source_author": "@YAMAGA_JINJA",
+        "source_count": 1,
+        "source_key": "x:2084545621344792966",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO3LMXqbMAA6uHi.jpg",
+          "https://t.co/ZDcezJE8lJ",
+          "pic.x.com/ZDcezJE8lJ"
+        ],
+        "source_officiality": {
+          "account_name": "山家神社 真田神社 公式アカウント",
+          "classification": "registered_official_social",
+          "handle": "@yamaga_jinja",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n真田の仕掛け\nクラファンページ作成停滞中💦\n９月１９日 #花火\n９月２０日 #お舟まつり\n９月２１日山の神祭\nとりあえずご予定ください!!\n\nと、その前に盆踊り＆\n杜のコンサート♪\n\n四阿山開山の祖である\n浄定社の例祭は１７時半より\n\n作成途次ページ↓\nhttps://t.co/apZHEC09OG\n\n#山家神社 https://t.co/ZDcezJE8lJ",
+        "source_url": "https://x.com/YAMAGA_JINJA/status/2084545621344792966",
+        "source_urls": [
+          "https://x.com/YAMAGA_JINJA/status/2084545621344792966"
+        ],
+        "voice": {
+          "account": "@YAMAGA_JINJA",
+          "date": "2026-08-04T07:42:59+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO3LMXqbMAA6uHi.jpg",
+            "https://t.co/ZDcezJE8lJ",
+            "pic.x.com/ZDcezJE8lJ"
+          ],
+          "name": "山家神社 真田神社 公式アカウント",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "真田の仕掛け\nクラファンページ作成停滞中💦\n９月１９日 #花火\n９月２０日 #お舟まつり\n９月２１日山の神祭\nとりあえずご予定ください!!\n\nと、その前に盆踊り＆\n杜のコンサート♪\n\n四阿山開山の祖である\n浄定社の例祭は１７時半より\n\n作成途次ページ↓\nhttps://t.co/apZHEC09OG\n\n#山家神社 https://t.co/ZDcezJE8lJ",
+          "title": "",
+          "tweet_id": "2084545621344792966",
+          "url": "https://x.com/YAMAGA_JINJA/status/2084545621344792966"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6487087a45086d8b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "／\n王子本町公園にて夏祭り👘🍧\n＼\n今週8/7〜8/9は「王子本町2丁目・王子神社例大祭」が開催されます！(※王子田楽は9/27)\n\n王子本町公園では、今年も豪",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084085441503105334",
+      "source_url": "https://x.com/prkitajp/status/2084085441503105334",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e3096573168ba0e06988ce780f16aff745eebb14b5d31651c1d0203ff4e24f5a",
+      "last_seen_at": "github-33398830625-1",
+      "created_at": "2026-08-31T14:00:20.530331+00:00",
+      "updated_at": "2026-08-31T14:00:20.530331+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_51b10f0e4ffdf056",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/7",
+          "8/9",
+          "9/27",
+          "8/8",
+          "8/9"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-27"
+        ],
+        "priority_score": 125,
+        "source_author": "@prkitajp",
+        "source_count": 1,
+        "source_key": "x:2084085441503105334",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOwoqZgaQAAXXBM.jpg",
+          "https://t.co/9ZMoPMYaDw",
+          "pic.x.com/9ZMoPMYaDw"
+        ],
+        "source_officiality": {
+          "account_name": "東京北区観光協会 ー PR Station",
+          "classification": "registered_official_social",
+          "handle": "@prkitajp",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n／\n王子本町公園にて夏祭り👘🍧\n＼\n今週8/7〜8/9は「王子本町2丁目・王子神社例大祭」が開催されます！(※王子田楽は9/27)\n\n王子本町公園では、今年も豪華ゲストが参加しますよ✨しぶさわくんも遊びにきます🎩🫶\n\n8/8(土)ゲスト\n#甲冑武者演舞 さん\n#中国雑伎ショー さん\n#ラセーニャス さん\n\n8/9(日)\n#寿BAND さん\n#松本梨香 さん\n#しぶさわくん \n\n屋台や盆踊りとあわせて、夏の夜を楽しみましょう👘🎶\n\n【王子本町二丁目夏祭り】\n📍王子本町2-29\n🕙15:00〜20:30\n主催:王子本町二丁目町会",
+        "source_url": "https://x.com/prkitajp/status/2084085441503105334",
+        "source_urls": [
+          "https://x.com/prkitajp/status/2084085441503105334"
+        ],
+        "voice": {
+          "account": "@prkitajp",
+          "date": "2026-08-03T01:14:24+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOwoqZgaQAAXXBM.jpg",
+            "https://t.co/9ZMoPMYaDw",
+            "pic.x.com/9ZMoPMYaDw"
+          ],
+          "name": "東京北区観光協会 ー PR Station",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "／\n王子本町公園にて夏祭り👘🍧\n＼\n今週8/7〜8/9は「王子本町2丁目・王子神社例大祭」が開催されます！(※王子田楽は9/27)\n\n王子本町公園では、今年も豪華ゲストが参加しますよ✨しぶさわくんも遊びにきます🎩🫶\n\n8/8(土)ゲスト\n#甲冑武者演舞 さん\n#中国雑伎ショー さん\n#ラセーニャス さん\n\n8/9(日)\n#寿BAND さん\n#松本梨香 さん\n#しぶさわくん \n\n屋台や盆踊りとあわせて、夏の夜を楽しみましょう👘🎶\n\n【王子本町二丁目夏祭り】\n📍王子本町2-29\n🕙15:00〜20:30\n主催:王子本町二丁目町会",
+          "title": "",
+          "tweet_id": "2084085441503105334",
+          "url": "https://x.com/prkitajp/status/2084085441503105334"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_e116242ab3a3e6b6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日は寺族女性合唱団「沙羅」の練習で法重寺さんへ伺いました。\n\n9月18日の千鳥ヶ淵全戦没者追悼法要に向けて、心を一つにして練習を重ねています。\n\n築地本願寺で",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083293694179119342",
+      "source_url": "https://x.com/Rocky3full3/status/2083293694179119342",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "cd94d5705d1aad029b449ef684d04c5d5d05cb746706907a04149619a96126c3",
+      "last_seen_at": "github-33398830625-1",
+      "created_at": "2026-08-31T14:00:20.530331+00:00",
+      "updated_at": "2026-08-31T14:00:20.530331+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_b5280379782bd244",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9月18日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中央区築地3-15-1",
+          "region_hint": "中央区",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/",
+          "venue": "築地本願寺"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-18"
+        ],
+        "priority_score": 125,
+        "source_author": "@Rocky3full3",
+        "source_count": 1,
+        "source_key": "x:2083293694179119342",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOlYkYRbwAAfvaw.jpg",
+          "https://t.co/o5bV5YNfG6",
+          "pic.x.com/o5bV5YNfG6"
+        ],
+        "source_officiality": {
+          "account_name": "常念寺　栗平会館【浄土真宗本願寺派】",
+          "classification": "registered_official_social",
+          "handle": "@rocky3full3",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日は寺族女性合唱団「沙羅」の練習で法重寺さんへ伺いました。\n\n9月18日の千鳥ヶ淵全戦没者追悼法要に向けて、心を一つにして練習を重ねています。\n\n築地本願寺では盆踊りが開催されており、今日が最終日です。ご来場待ちしております。\n\n#浄土真宗本願寺派\n#築地本願寺\n#盆踊り https://t.co/o5bV5YNfG6",
+        "source_url": "https://x.com/Rocky3full3/status/2083293694179119342",
+        "source_urls": [
+          "https://x.com/Rocky3full3/status/2083293694179119342"
+        ],
+        "voice": {
+          "account": "@Rocky3full3",
+          "date": "2026-07-31T20:48:17+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOlYkYRbwAAfvaw.jpg",
+            "https://t.co/o5bV5YNfG6",
+            "pic.x.com/o5bV5YNfG6"
+          ],
+          "name": "常念寺　栗平会館【浄土真宗本願寺派】",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "昨日は寺族女性合唱団「沙羅」の練習で法重寺さんへ伺いました。\n\n9月18日の千鳥ヶ淵全戦没者追悼法要に向けて、心を一つにして練習を重ねています。\n\n築地本願寺では盆踊りが開催されており、今日が最終日です。ご来場待ちしております。\n\n#浄土真宗本願寺派\n#築地本願寺\n#盆踊り https://t.co/o5bV5YNfG6",
+          "title": "",
+          "tweet_id": "2083293694179119342",
+          "url": "https://x.com/Rocky3full3/status/2083293694179119342"
         }
       }
     },
@@ -5826,6 +6201,94 @@
           "title": "",
           "tweet_id": "2056637018248229108",
           "url": "https://x.com/8_chokai/status/2056637018248229108"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_56b6084fd25f0c3f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "✨イチオシdiscover✨\n\n今回紹介するのは”盆踊りのボランティア”\n赤羽台の桐ヶ丘地区で9月12日に開催されるよ〜！\n\n会場運営や誘導などを行うみたい！\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2075152227652829682",
+      "source_url": "https://x.com/toyo_app/status/2075152227652829682",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4de9a4ac73ea9aea8a2fd30523dfdc4018a05d3882581780221fafb4f5349010",
+      "last_seen_at": "github-33398830625-1",
+      "created_at": "2026-08-31T14:00:20.530331+00:00",
+      "updated_at": "2026-08-31T14:00:20.530331+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_f171527d5ebd712a",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9月12日"
+        ],
+        "event_group_key": "informal:1729f44445bc57c3",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-12"
+        ],
+        "priority_score": 85,
+        "source_author": "@toyo_app",
+        "source_count": 1,
+        "source_key": "x:2075152227652829682",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HMxQyFob0AAttks.jpg",
+          "https://t.co/OgKwaRnYaD",
+          "pic.x.com/OgKwaRnYaD"
+        ],
+        "source_officiality": {
+          "account_name": "東洋大学公式アプリPR隊【公式】",
+          "classification": "unknown_or_personal_social",
+          "handle": "@toyo_app",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n✨イチオシdiscover✨\n\n今回紹介するのは”盆踊りのボランティア”\n赤羽台の桐ヶ丘地区で9月12日に開催されるよ〜！\n\n会場運営や誘導などを行うみたい！\n実は昨年復刻した盆踊り大会🍧\n\nぜひみんなの力で盛り上げてほしいな〜〜〜！\nDiscoverのポスターに詳細も書いてあるから\nぜひ見てみてね💌 https://t.co/OgKwaRnYaD",
+        "source_url": "https://x.com/toyo_app/status/2075152227652829682",
+        "source_urls": [
+          "https://x.com/toyo_app/status/2075152227652829682"
+        ],
+        "voice": {
+          "account": "@toyo_app",
+          "date": "2026-07-09T09:37:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HMxQyFob0AAttks.jpg",
+            "https://t.co/OgKwaRnYaD",
+            "pic.x.com/OgKwaRnYaD"
+          ],
+          "name": "東洋大学公式アプリPR隊【公式】",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "✨イチオシdiscover✨\n\n今回紹介するのは”盆踊りのボランティア”\n赤羽台の桐ヶ丘地区で9月12日に開催されるよ〜！\n\n会場運営や誘導などを行うみたい！\n実は昨年復刻した盆踊り大会🍧\n\nぜひみんなの力で盛り上げてほしいな〜〜〜！\nDiscoverのポスターに詳細も書いてあるから\nぜひ見てみてね💌 https://t.co/OgKwaRnYaD",
+          "title": "",
+          "tweet_id": "2075152227652829682",
+          "url": "https://x.com/toyo_app/status/2075152227652829682"
         }
       }
     },
