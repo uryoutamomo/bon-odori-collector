@@ -1,0 +1,655 @@
+{
+  "schema_version": 1,
+  "generated_by": "build_odottar_coverage_benchmark.py",
+  "fetched_at": "2026-08-31T00:33:34Z",
+  "source": {
+    "url": "https://odottar.com/events.json",
+    "raw_sha256": "8616190272b9141e9b1cf1382ca969e7f2e57c65d0ebb28d519afa4429a56a71",
+    "row_count": 2256
+  },
+  "safety_boundary": "coverage_benchmark_only: no canonical import, no review-inbox candidate, and no odottar URL projection into event source_urls",
+  "canonical_write_count": 0,
+  "review_inbox_candidate_count": 0,
+  "summary": {
+    "odottar_tokyo23": 693,
+    "bonsuke_tokyo23": 387,
+    "estimated_matched": 179,
+    "odottar_only": 514,
+    "bonsuke_only": 208
+  },
+  "wards": [
+    {
+      "ward": "千代田区",
+      "priority": false,
+      "odottar": 13,
+      "bonsuke": 8,
+      "estimated_matched": 5,
+      "odottar_only": 8,
+      "bonsuke_only": 3
+    },
+    {
+      "ward": "中央区",
+      "priority": false,
+      "odottar": 25,
+      "bonsuke": 17,
+      "estimated_matched": 7,
+      "odottar_only": 18,
+      "bonsuke_only": 10
+    },
+    {
+      "ward": "港区",
+      "priority": false,
+      "odottar": 31,
+      "bonsuke": 23,
+      "estimated_matched": 8,
+      "odottar_only": 23,
+      "bonsuke_only": 15
+    },
+    {
+      "ward": "新宿区",
+      "priority": false,
+      "odottar": 31,
+      "bonsuke": 19,
+      "estimated_matched": 10,
+      "odottar_only": 21,
+      "bonsuke_only": 9
+    },
+    {
+      "ward": "文京区",
+      "priority": false,
+      "odottar": 6,
+      "bonsuke": 3,
+      "estimated_matched": 1,
+      "odottar_only": 5,
+      "bonsuke_only": 2
+    },
+    {
+      "ward": "台東区",
+      "priority": false,
+      "odottar": 29,
+      "bonsuke": 18,
+      "estimated_matched": 6,
+      "odottar_only": 23,
+      "bonsuke_only": 12
+    },
+    {
+      "ward": "墨田区",
+      "priority": false,
+      "odottar": 17,
+      "bonsuke": 25,
+      "estimated_matched": 3,
+      "odottar_only": 14,
+      "bonsuke_only": 22
+    },
+    {
+      "ward": "江東区",
+      "priority": false,
+      "odottar": 55,
+      "bonsuke": 38,
+      "estimated_matched": 24,
+      "odottar_only": 31,
+      "bonsuke_only": 14
+    },
+    {
+      "ward": "品川区",
+      "priority": false,
+      "odottar": 25,
+      "bonsuke": 24,
+      "estimated_matched": 3,
+      "odottar_only": 22,
+      "bonsuke_only": 21
+    },
+    {
+      "ward": "目黒区",
+      "priority": false,
+      "odottar": 6,
+      "bonsuke": 8,
+      "estimated_matched": 2,
+      "odottar_only": 4,
+      "bonsuke_only": 6
+    },
+    {
+      "ward": "大田区",
+      "priority": true,
+      "odottar": 43,
+      "bonsuke": 18,
+      "estimated_matched": 2,
+      "odottar_only": 41,
+      "bonsuke_only": 16
+    },
+    {
+      "ward": "世田谷区",
+      "priority": false,
+      "odottar": 44,
+      "bonsuke": 32,
+      "estimated_matched": 1,
+      "odottar_only": 43,
+      "bonsuke_only": 31
+    },
+    {
+      "ward": "渋谷区",
+      "priority": false,
+      "odottar": 13,
+      "bonsuke": 7,
+      "estimated_matched": 4,
+      "odottar_only": 9,
+      "bonsuke_only": 3
+    },
+    {
+      "ward": "中野区",
+      "priority": false,
+      "odottar": 11,
+      "bonsuke": 3,
+      "estimated_matched": 2,
+      "odottar_only": 9,
+      "bonsuke_only": 1
+    },
+    {
+      "ward": "杉並区",
+      "priority": false,
+      "odottar": 7,
+      "bonsuke": 4,
+      "estimated_matched": 1,
+      "odottar_only": 6,
+      "bonsuke_only": 3
+    },
+    {
+      "ward": "豊島区",
+      "priority": true,
+      "odottar": 20,
+      "bonsuke": 6,
+      "estimated_matched": 2,
+      "odottar_only": 18,
+      "bonsuke_only": 4
+    },
+    {
+      "ward": "北区",
+      "priority": false,
+      "odottar": 6,
+      "bonsuke": 4,
+      "estimated_matched": 0,
+      "odottar_only": 6,
+      "bonsuke_only": 4
+    },
+    {
+      "ward": "荒川区",
+      "priority": true,
+      "odottar": 15,
+      "bonsuke": 3,
+      "estimated_matched": 0,
+      "odottar_only": 15,
+      "bonsuke_only": 3
+    },
+    {
+      "ward": "板橋区",
+      "priority": true,
+      "odottar": 48,
+      "bonsuke": 20,
+      "estimated_matched": 15,
+      "odottar_only": 33,
+      "bonsuke_only": 5
+    },
+    {
+      "ward": "練馬区",
+      "priority": true,
+      "odottar": 25,
+      "bonsuke": 12,
+      "estimated_matched": 9,
+      "odottar_only": 16,
+      "bonsuke_only": 3
+    },
+    {
+      "ward": "足立区",
+      "priority": true,
+      "odottar": 73,
+      "bonsuke": 28,
+      "estimated_matched": 26,
+      "odottar_only": 47,
+      "bonsuke_only": 2
+    },
+    {
+      "ward": "葛飾区",
+      "priority": true,
+      "odottar": 38,
+      "bonsuke": 9,
+      "estimated_matched": 3,
+      "odottar_only": 35,
+      "bonsuke_only": 6
+    },
+    {
+      "ward": "江戸川区",
+      "priority": true,
+      "odottar": 112,
+      "bonsuke": 58,
+      "estimated_matched": 45,
+      "odottar_only": 67,
+      "bonsuke_only": 13
+    }
+  ],
+  "samples": {
+    "odottar_only": [
+      {
+        "stable_key": "23edf5d557",
+        "name": "ふるさと千川 ひろば",
+        "venue": "ふるさと千川 ひろば",
+        "area": "豊島区",
+        "date": "2026-06-05"
+      },
+      {
+        "stable_key": "90655186a6",
+        "name": "JRA馬事公苑 はらっぱステージ メインプロムナード",
+        "venue": "JRA馬事公苑 はらっぱステージ メインプロムナード",
+        "area": "世田谷区",
+        "date": "2026-06-06"
+      },
+      {
+        "stable_key": "247c9c3c25",
+        "name": "鮫洲入江広場 ゆり園",
+        "venue": "鮫洲入江広場 ゆり園",
+        "area": "品川区",
+        "date": "2026-06-06"
+      },
+      {
+        "stable_key": "8428db5fe5",
+        "name": "品川区立宮前小学校及び宮前商店街周辺",
+        "venue": "品川区立宮前小学校及び宮前商店街周辺",
+        "area": "品川区",
+        "date": "2026-06-07"
+      },
+      {
+        "stable_key": "6f161655a1",
+        "name": "五反野コミュニティ公園",
+        "venue": "五反野コミュニティ公園",
+        "area": "足立区",
+        "date": "2026-06-20"
+      },
+      {
+        "stable_key": "763c1725c8",
+        "name": "目黒区立東根小学校",
+        "venue": "目黒区立東根小学校",
+        "area": "目黒区",
+        "date": "2026-06-20"
+      },
+      {
+        "stable_key": "616fc63b3c",
+        "name": "品川区立第二延山小学校 アリーナ",
+        "venue": "品川区立第二延山小学校 アリーナ",
+        "area": "品川区",
+        "date": "2026-06-21"
+      },
+      {
+        "stable_key": "a1a1340712",
+        "name": "鷲在山長國寺",
+        "venue": "鷲在山長國寺",
+        "area": "台東区",
+        "date": "2026-06-21"
+      },
+      {
+        "stable_key": "0e24a2022e",
+        "name": "上野恩賜公園 竹の台広場(噴水広場)",
+        "venue": "上野恩賜公園 竹の台広場(噴水広場)",
+        "area": "台東区",
+        "date": "2026-06-26"
+      },
+      {
+        "stable_key": "dfe4bcd7f7",
+        "name": "郡上おどりin青山 秩父宮ラグビー場 駐車場",
+        "venue": "郡上おどりin青山 秩父宮ラグビー場 駐車場",
+        "area": "港区",
+        "date": "2026-06-26"
+      },
+      {
+        "stable_key": "80f05a5809",
+        "name": "浅草六区ブロードウェイ(ドン・キホーテ 浅草店前のやぐら)",
+        "venue": "浅草六区ブロードウェイ(ドン・キホーテ 浅草店前のやぐら)",
+        "area": "台東区",
+        "date": "2026-06-27"
+      },
+      {
+        "stable_key": "0afce910c4",
+        "name": "隅田公園山谷堀広場",
+        "venue": "隅田公園山谷堀広場",
+        "area": "台東区",
+        "date": "2026-06-27"
+      },
+      {
+        "stable_key": "c7c2f7b5a0",
+        "name": "上野恩賜公園 竹の台広場(噴水広場)",
+        "venue": "上野恩賜公園 竹の台広場(噴水広場)",
+        "area": "台東区",
+        "date": "2026-07-03"
+      },
+      {
+        "stable_key": "533e218ab6",
+        "name": "下町七夕まつり",
+        "venue": "かっぱ橋本通り",
+        "area": "台東区",
+        "date": "2026-07-04"
+      },
+      {
+        "stable_key": "d533d22f8c",
+        "name": "品川区立第一日野小学校",
+        "venue": "品川区立第一日野小学校",
+        "area": "品川区",
+        "date": "2026-07-04"
+      },
+      {
+        "stable_key": "231b83f10e",
+        "name": "小山八幡神社",
+        "venue": "小山八幡神社",
+        "area": "品川区",
+        "date": "2026-07-05"
+      },
+      {
+        "stable_key": "543ae1a8b9",
+        "name": "あさがお祭り盆踊り(入谷南公園)",
+        "venue": "あさがお祭り盆踊り(入谷南公園)",
+        "area": "台東区",
+        "date": "2026-07-06"
+      },
+      {
+        "stable_key": "8a651fdc7f",
+        "name": "田町駅前夏まつり",
+        "venue": "田町駅西口ロータリー（ピアタ前広場）",
+        "area": "港区",
+        "date": "2026-07-09"
+      },
+      {
+        "stable_key": "b9af28bb93",
+        "name": "上池袋さくら公園",
+        "venue": "上池袋さくら公園",
+        "area": "豊島区",
+        "date": "2026-07-10"
+      },
+      {
+        "stable_key": "2c3634c0c6",
+        "name": "大正大学 鴨台(おうだい)盆踊り",
+        "venue": "大正大学 鴨台(おうだい)盆踊り",
+        "area": "豊島区",
+        "date": "2026-07-10"
+      },
+      {
+        "stable_key": "413965babf",
+        "name": "萩中神社",
+        "venue": "萩中神社",
+        "area": "大田区",
+        "date": "2026-07-10"
+      },
+      {
+        "stable_key": "71c1632ca3",
+        "name": "世田谷区立三軒茶屋小学校",
+        "venue": "世田谷区立三軒茶屋小学校",
+        "area": "世田谷区",
+        "date": "2026-07-11"
+      },
+      {
+        "stable_key": "91077277b5",
+        "name": "中田出世稲荷(下赤塚駅前交番裏)",
+        "venue": "中田出世稲荷(下赤塚駅前交番裏)",
+        "area": "板橋区",
+        "date": "2026-07-11"
+      },
+      {
+        "stable_key": "ef4d04b6ee",
+        "name": "亀有リリオパーク",
+        "venue": "亀有リリオパーク",
+        "area": "葛飾区",
+        "date": "2026-07-11"
+      },
+      {
+        "stable_key": "2400578330",
+        "name": "大井競馬場第一駐車場",
+        "venue": "大井競馬場第一駐車場",
+        "area": "品川区",
+        "date": "2026-07-11"
+      },
+      {
+        "stable_key": "0a05e136f3",
+        "name": "東谷北野神社",
+        "venue": "東谷北野神社",
+        "area": "大田区",
+        "date": "2026-07-11"
+      },
+      {
+        "stable_key": "7f08533851",
+        "name": "蛇窪神社(上神明天祖神社)",
+        "venue": "蛇窪神社(上神明天祖神社)",
+        "area": "品川区",
+        "date": "2026-07-11"
+      },
+      {
+        "stable_key": "ed1070e343",
+        "name": "世田谷区立八幡小学校",
+        "venue": "世田谷区立八幡小学校",
+        "area": "世田谷区",
+        "date": "2026-07-12"
+      },
+      {
+        "stable_key": "89f32c8c05",
+        "name": "花の民踊講習会(26-2)",
+        "venue": "品川区中小企業センター3階大会議室",
+        "area": "品川区",
+        "date": "2026-07-12"
+      },
+      {
+        "stable_key": "a01ff10ae1",
+        "name": "佃島の盆踊（佃島盆踊）",
+        "venue": "佃一丁目中央通り 佃1旧佃島渡船場前付近",
+        "area": "中央区",
+        "date": "2026-07-13"
+      }
+    ],
+    "bonsuke_only": [
+      {
+        "stable_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22",
+        "name": "かがやき納涼会＆盆踊り",
+        "venue": "かがやきプラザ1階ひだまりホール",
+        "area": "千代田区",
+        "date": "2026-08-22"
+      },
+      {
+        "stable_key": "秋葉原東部納涼大会|和泉小学校校庭・和泉公園|2026-07-31",
+        "name": "秋葉原東部納涼大会",
+        "venue": "和泉小学校校庭・和泉公園",
+        "area": "千代田区",
+        "date": "2026-07-31"
+      },
+      {
+        "stable_key": "日本テレビ通り振興会 納涼盆踊り大会|番町の森|2026-07-31",
+        "name": "日本テレビ通り振興会 納涼盆踊り大会",
+        "venue": "番町の森",
+        "area": "千代田区",
+        "date": "2026-07-31"
+      },
+      {
+        "stable_key": "大銀座盆踊り|中央通り（銀座1丁目〜8丁目）|2025-08-02",
+        "name": "大銀座盆踊り",
+        "venue": "中央通り（銀座1丁目〜8丁目）",
+        "area": "中央区",
+        "date": "2025-08-02"
+      },
+      {
+        "stable_key": "京橋盆踊り|京橋エドグラン 京橋中央ひろば|2026-08-28",
+        "name": "京橋盆踊り",
+        "venue": "京橋エドグラン 京橋中央ひろば",
+        "area": "中央区",
+        "date": "2026-08-28"
+      },
+      {
+        "stable_key": "佃島の盆踊り|佃まちかど展示館前|2026-07-13",
+        "name": "佃島の盆踊り",
+        "venue": "佃まちかど展示館前",
+        "area": "中央区",
+        "date": "2026-07-13"
+      },
+      {
+        "stable_key": "入船三丁目町会納涼盆踊り|入船三丁目交差点|2026-08-24",
+        "name": "入船三丁目町会納涼盆踊り",
+        "venue": "入船三丁目交差点",
+        "area": "中央区",
+        "date": "2026-08-24"
+      },
+      {
+        "stable_key": "小網神社の盆踊り（名称推定）|小網神社|",
+        "name": "小網神社の盆踊り（名称推定）",
+        "venue": "小網神社",
+        "area": "中央区",
+        "date": ""
+      },
+      {
+        "stable_key": "日本橋小学校の盆踊り（名称推定）|日本橋小学校|2026-07-18",
+        "name": "日本橋小学校の盆踊り（名称推定）",
+        "venue": "日本橋小学校",
+        "area": "中央区",
+        "date": "2026-07-18"
+      },
+      {
+        "stable_key": "大盆踊り祭 with 坂崎守寛|日本橋社会教育会館|2026-02-21",
+        "name": "大盆踊り祭 with 坂崎守寛",
+        "venue": "日本橋社会教育会館",
+        "area": "中央区",
+        "date": "2026-02-21"
+      },
+      {
+        "stable_key": "浜二納涼盆踊り大会|浜町公園|",
+        "name": "浜二納涼盆踊り大会",
+        "venue": "浜町公園",
+        "area": "中央区",
+        "date": ""
+      },
+      {
+        "stable_key": "イベント名未確認（築地社会教育会館）|築地社会教育会館|",
+        "name": "イベント名未確認（築地社会教育会館）",
+        "venue": "築地社会教育会館",
+        "area": "中央区",
+        "date": ""
+      },
+      {
+        "stable_key": "大銀座盆踊り（ゆかたで銀ぶら）|銀座中央通り|2026-08-01",
+        "name": "大銀座盆踊り（ゆかたで銀ぶら）",
+        "venue": "銀座中央通り",
+        "area": "中央区",
+        "date": "2026-08-01"
+      },
+      {
+        "stable_key": "アークヒルズ秋祭り 盆踊り|アーク・カラヤン広場（アークヒルズ）|",
+        "name": "アークヒルズ秋祭り 盆踊り",
+        "venue": "アーク・カラヤン広場（アークヒルズ）",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "桜まつり|三田松坂児童遊園|",
+        "name": "桜まつり",
+        "venue": "三田松坂児童遊園",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り|六本木天祖神社|",
+        "name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+        "venue": "六本木天祖神社",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "海岸まつり|埠頭公園（港区芝浦港南）|2026-07-31",
+        "name": "海岸まつり",
+        "venue": "埠頭公園（港区芝浦港南）",
+        "area": "港区",
+        "date": "2026-07-31"
+      },
+      {
+        "stable_key": "盆ダンスフェスティバル2023|白金児童遊園|",
+        "name": "盆ダンスフェスティバル2023",
+        "venue": "白金児童遊園",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "郡上おどり in 青山|秩父宮ラグビー場駐車場|2026-06-26",
+        "name": "郡上おどり in 青山",
+        "venue": "秩父宮ラグビー場駐車場",
+        "area": "港区",
+        "date": "2026-06-26"
+      },
+      {
+        "stable_key": "麻布十番納涼盆踊り大会|網代公園|",
+        "name": "麻布十番納涼盆踊り大会",
+        "venue": "網代公園",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "みなと区民まつり 盆踊り|芝公園|2026-10-10",
+        "name": "みなと区民まつり 盆踊り",
+        "venue": "芝公園",
+        "area": "港区",
+        "date": "2026-10-10"
+      },
+      {
+        "stable_key": "芝大神宮 大祭 奉納輪踊り|芝新堀町児童遊園|",
+        "name": "芝大神宮 大祭 奉納輪踊り",
+        "venue": "芝新堀町児童遊園",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "西久保八幡神社 盆踊り|西久保八幡神社|2025-08-09",
+        "name": "西久保八幡神社 盆踊り",
+        "venue": "西久保八幡神社",
+        "area": "港区",
+        "date": "2025-08-09"
+      },
+      {
+        "stable_key": "赤坂氷川祭 盆踊り大会|赤坂氷川神社|",
+        "name": "赤坂氷川祭 盆踊り大会",
+        "venue": "赤坂氷川神社",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "上笄町会お祭り 盆踊り|長谷寺（西麻布・麻布大観音）|",
+        "name": "上笄町会お祭り 盆踊り",
+        "venue": "長谷寺（西麻布・麻布大観音）",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "謝恩納涼盆踊り大会（青山善光寺）|青山善光寺|2025-07-27",
+        "name": "謝恩納涼盆踊り大会（青山善光寺）",
+        "venue": "青山善光寺",
+        "area": "港区",
+        "date": "2025-07-27"
+      },
+      {
+        "stable_key": "青山熊野神社例大祭 奉納踊り|青葉公園（港区立）|2025-09-26",
+        "name": "青山熊野神社例大祭 奉納踊り",
+        "venue": "青葉公園（港区立）",
+        "area": "港区",
+        "date": "2025-09-26"
+      },
+      {
+        "stable_key": "麻布氷川神社例大祭 盆踊り|麻布氷川神社|",
+        "name": "麻布氷川神社例大祭 盆踊り",
+        "venue": "麻布氷川神社",
+        "area": "港区",
+        "date": ""
+      },
+      {
+        "stable_key": "大久保まつり パレード 百人町民民謡おどり|JR新大久保駅北側から東方向|2025-10-13",
+        "name": "大久保まつり パレード 百人町民民謡おどり",
+        "venue": "JR新大久保駅北側から東方向",
+        "area": "新宿区",
+        "date": "2025-10-13"
+      },
+      {
+        "stable_key": "あけぼのばし商店街 盆踊り大会|あけぼのばし通り|2026-08-01",
+        "name": "あけぼのばし商店街 盆踊り大会",
+        "venue": "あけぼのばし通り",
+        "area": "新宿区",
+        "date": "2026-08-01"
+      }
+    ]
+  }
+}

@@ -1,4 +1,14 @@
 {
   "schema_version": 1,
-  "snapshots": []
+  "snapshots": [
+    {
+      "fetched_at": "2026-08-31T00:33:34Z",
+      "raw_sha256": "8616190272b9141e9b1cf1382ca969e7f2e57c65d0ebb28d519afa4429a56a71",
+      "odottar_tokyo23": 693,
+      "bonsuke_tokyo23": 387,
+      "estimated_matched": 179,
+      "odottar_only": 514,
+      "bonsuke_only": 208
+    }
+  ]
 }
