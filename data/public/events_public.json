@@ -182,13 +182,6 @@
         "basis_label": "実測"
       },
       {
-        "name": "千代田踊り",
-        "confidence": "confirmed",
-        "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
         "name": "恋をするなら",
         "confidence": "confirmed",
         "probability": 99,
@@ -325,6 +318,24 @@
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "サザンオールスターズ - 盆ギリ恋歌",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "千代田踊り",
+        "confidence": "confirmed",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "橋幸夫 - 恋をするなら",
+        "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       }
@@ -578,6 +589,13 @@
         "basis_label": "2025年実測"
       },
       {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "ドラえもん音頭",
         "confidence": "hint",
         "probability": 48,
@@ -614,6 +632,13 @@
       },
       {
         "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "浜町美人音頭",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -999,13 +1024,6 @@
     ],
     "songs": [
       {
-        "name": "これがお江戸の盆ダンス",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "バハマ・ママ",
         "confidence": "hint",
         "probability": 80,
@@ -1013,39 +1031,52 @@
         "basis_label": "今年ヒント"
       },
       {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ Bahama Mama",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "銀座ときめき音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "銀座カンカン娘",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "銀座音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "predicted",
@@ -1970,6 +2001,12 @@
         "probability": 79,
         "basis": "past_evidence",
         "basis_label": "2024・2025年実測"
+      },
+      {
+        "name": "雨にて途中終了",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -2419,7 +2456,122 @@
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "2000年音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Let'sONDOAgain",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "きよしの数え唄",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "どだればち・サンバ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ズンパ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ベイサイド・ブギ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "中央学園音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "令和音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "少年八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "平成音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋日和",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -2481,7 +2633,74 @@
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "APT.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "かもめが翔んだ日",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座ときめき音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -2873,6 +3092,27 @@
         "name": "踊れ・どれ・ドラ ドラえもん音頭",
         "confidence": "hint",
         "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "1回目の公演",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "2回目の公演",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "太鼓演奏",
+        "confidence": "hint",
+        "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
       }
@@ -3271,6 +3511,13 @@
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "火の国太鼓",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "炭坑節",
@@ -3944,6 +4191,20 @@
       },
       {
         "name": "まつさか",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ヤッチク",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "三本締め",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -6390,6 +6651,12 @@
     ],
     "songs": [
       {
+        "name": "Start Over",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "ultra soul",
         "confidence": "hint",
         "basis": "current_observed",
@@ -6414,7 +6681,43 @@
         "basis_label": "実測"
       },
       {
+        "name": "ハイライト",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "マツケンサンバ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋をするなら",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "牛ちゃんマンボ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "盆ギリ恋歌",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -6813,20 +7116,6 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "Dancing Queen",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "EZ DO DANCE",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "I Was Born To Love You",
         "confidence": "hint",
         "probability": 71,
@@ -6834,35 +7123,7 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "Livin' On A Prayer",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "September",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "YMCA",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "ultra soul",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -6897,11 +7158,100 @@
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "Dancing Queen",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "GET WILD",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "HOT LIMIT",
         "confidence": "hint",
-        "probability": 41,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Livin' On A Prayer",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Shape of You",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Thriller",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "YMCA",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ultra soul",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "アンコール",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ゴジラフィギュア",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "パラダイス銀河",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "君の瞳に恋してる",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "女々しくて",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "残酷な天使のテーゼ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -7125,13 +7475,6 @@
     "source_urls": [],
     "songs": [
       {
-        "name": "八木節",
-        "confidence": "hint",
-        "probability": 74,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "DESIRE -情熱",
         "confidence": "hint",
         "probability": 71,
@@ -7140,13 +7483,6 @@
       },
       {
         "name": "きよしのズンドコ節",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "りんご節",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -7174,13 +7510,6 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "ドンパン節",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 71,
@@ -7189,13 +7518,6 @@
       },
       {
         "name": "宝っこ音頭",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "新宿音頭",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -7216,18 +7538,82 @@
         "basis_label": "2025年実測"
       },
       {
+        "name": "Mela!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ねぶた",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "りんご節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ズンバ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドンパン節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋をするなら",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新しい風",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新宿音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -8917,7 +9303,14 @@
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "26「Get Wild」TM NETWORK",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -9378,13 +9771,6 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "波乗りジョニー",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 71,
@@ -9427,6 +9813,13 @@
         "basis_label": "2025年実測"
       },
       {
+        "name": "DESIRE -情熱",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "Hold Me Now",
         "confidence": "hint",
         "probability": 48,
@@ -9441,7 +9834,63 @@
         "basis_label": "2025年実測"
       },
       {
+        "name": "ONE LOVE - 嵐",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "Romanticが止まらない",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "Runner",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "STAR LIGHT",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "The Power of Love",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ふたりの愛ランド",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ガラスの十代",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ギザギザハートの子守唄",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ジュリアに傷心",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -9455,7 +9904,28 @@
         "basis_label": "2025年実測"
       },
       {
+        "name": "パラダイス銀河",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "リゾ・ラバ",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "嵐",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "親𩱳おどり",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -9467,6 +9937,24 @@
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
+      },
+      {
+        "name": "エロティカセブン",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "桜坂",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -11494,6 +11982,24 @@
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "カオリーニョ藤原 江州音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "山中一平",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "江州音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -17319,16 +17825,16 @@
     "detail": "2026年は第二回。13:00〜21:00開催。中目黒盆踊り大会の公式X告知投稿より。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -17337,7 +17843,7 @@
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "盆踊り in 駒場東大",
@@ -18249,16 +18755,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -18267,7 +18773,7 @@
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "仲六郷一丁目町会 納涼会",
@@ -22608,27 +23114,6 @@
     ],
     "songs": [
       {
-        "name": "おてもやん",
-        "confidence": "hint",
-        "probability": 74,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "Hey Mr 恵比寿",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "YES YES EBISU",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "YES YES YBISU",
         "confidence": "hint",
         "probability": 71,
@@ -22650,11 +23135,79 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "能登島さし音頭",
+        "name": "HEY!! Mr.えびす",
         "confidence": "hint",
-        "probability": 71,
+        "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
+      },
+      {
+        "name": "会場様子",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "Hey Mr 恵比寿",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "YES YES EBISU",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おてもやん",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ラビアンローズ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恵比寿ラビアンローズ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恵比寿音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬盆歌",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "能登島さし音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -23044,6 +23597,27 @@
     ],
     "songs": [
       {
+        "name": "B'z - ultra soul",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "TRF - EZ DO DANCE",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "YOASOBI - 群青",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 48,
@@ -23051,11 +23625,81 @@
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "チェッカーズ - ギザギザハートの子守唄",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ミヤシタパーク",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "一般参加 阿波踊り",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "夢みる渋谷音頭 YOU MAKE SHIBUYA",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "渋谷スクランブル交差点",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "荻野目洋子 - ダンシング・ヒーロー",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "阿波踊り 飛鳥連",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "阿波踊りレッスン",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "confirmed",
@@ -23121,28 +23765,7 @@
     ],
     "songs": [
       {
-        "name": "ダンシングヒーロー",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "大東京音頭",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "河内おとこ節",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -23154,6 +23777,48 @@
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
+      },
+      {
+        "name": "エガちゃん",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夢みる渋谷",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "河内おとこ節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "渋谷百年総踊り",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -23283,7 +23948,80 @@
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "26「Get Wild」TM NETWORK",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "AMEMIYA",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "BOY MEETS GIRL",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "GET WILD",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "WOW WAR TONIGHT",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "survival dAnce",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "アンコール",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "冷やし中華はじめました",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "前説",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "睡蓮花",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "結果発表",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -23434,6 +24172,18 @@
         "name": "生盆",
         "confidence": "confirmed",
         "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "WON'TBELONG",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "祭りになればいい",
+        "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       }
@@ -24851,6 +25601,84 @@
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "おんなの気持ち",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "にっぽんチャチャチャ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "七夕おどり",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "安里屋ゆんた",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "島のブルース",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "川口小唄",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "流転の波止場",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "火の国太鼓",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "火消し若衆",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "男節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "飛鳥山音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "首里城音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "predicted",
@@ -24951,7 +25779,25 @@
     ],
     "songs": [
       {
+        "name": "アンコール",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "生唄炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "音楽ストップ",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -27156,16 +28002,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -27174,7 +28020,7 @@
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "上谷中町自治会 納涼盆踊り大会",
@@ -30823,16 +31669,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30841,7 +31687,7 @@
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "小岩駅前町会盆踊り",
@@ -30889,16 +31735,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30907,7 +31753,7 @@
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "河原田町会盆踊り",

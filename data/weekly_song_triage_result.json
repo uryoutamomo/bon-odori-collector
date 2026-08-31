@@ -1,13 +1,21 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 10,
-  "direct_count": 6,
-  "created_count": 4,
-  "updated_count": 2,
-  "rejected_noise_count": 1,
+  "song_candidate_count": 14,
+  "direct_count": 9,
+  "created_count": 5,
+  "updated_count": 4,
+  "rejected_noise_count": 2,
   "review_count": 3,
   "created": [
+    {
+      "song_name": "高円寺阿波おどり",
+      "source_term": "高円寺阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
     {
       "song_name": "上野音頭",
       "source_term": "上野音頭",
@@ -25,16 +33,16 @@
       "dry_run": true
     },
     {
-      "song_name": "ふれおどり",
-      "source_term": "ふれおどり",
+      "song_name": "阿波おどり",
+      "source_term": "阿波おどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "高円寺阿波おどり",
-      "source_term": "高円寺阿波おどり",
+      "song_name": "ふれおどり",
+      "source_term": "ふれおどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -57,9 +65,29 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "ドンパン節",
+      "source_term": "ドンパン節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
+    {
+      "term": "による息の合った踊り",
+      "reason": "曲名としての形が弱い"
+    },
     {
       "term": "阿波踊り",
       "reason": "SongCatalog: RDBで無効と判定済み"
@@ -68,19 +96,19 @@
   "review": [
     {
       "term": "らんまん踊り",
-      "evidence_count": 13,
+      "evidence_count": 11,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=Ve1A2stIN_4"
+      "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo"
     },
     {
       "term": "郡上おどり",
       "evidence_count": 9,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=O8t2RT-_g3c"
+      "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
     },
     {
       "term": "たいとう音頭",
-      "evidence_count": 5,
+      "evidence_count": 2,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
     }

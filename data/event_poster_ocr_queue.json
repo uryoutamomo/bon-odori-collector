@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7989,
+  "count": 7988,
   "summary": {
     "critical": 53,
     "high": 1429,
@@ -36442,30 +36442,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_ef42bfed59081a5e",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@kaz0045",
-      "account_name": "オレンジ（Mishima Kazuhiro）",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/kaz0045/status/2061487472429932762",
-      "tweet_id": "2061487472429932762",
-      "date": "2026-06-01T16:38:08+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HJvf4G2a8AMGhwZ.jpg",
-        "https://t.co/RoLQhcJrAu",
-        "pic.x.com/RoLQhcJrAu",
-        "https://pbs.twimg.com/media/HJvf4G4a8AMxSHb.jpg",
-        "https://pbs.twimg.com/amplify_video_thumb/2061487409452449792/img/WNHwrUmXwf1NA_wX.jpg",
-        "https://pbs.twimg.com/media/HJvf4G0a8AEyyGe.jpg"
-      ],
-      "text": "6/1（月）#横浜開港祭 #盆踊り\n毎年「横浜開港記念日（6/2）」に合わせて開催される横浜開港祭のプログラムの中の盆踊り。\n仕事を早めに終わらせて（断じてサボってない）2部から参加😌\n久々に推しにも会えて大満足✌🏻\n横浜アラメヤ音頭は他地域でも是非取り入れて欲しいです🙏🏻 https://t.co/RoLQhcJrAu",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

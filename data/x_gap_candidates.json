@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-30T12:02:52.096169+00:00",
+  "generated_at": "2026-08-31T13:59:08.817345+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 371,
+  "archived_count": 366,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -671,9 +671,7 @@
         "8月29日",
         "8月2"
       ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -17821,9 +17819,7 @@
         "8月29日",
         "17時"
       ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -18996,9 +18992,7 @@
       "date_hints": [
         "2026/8/30"
       ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -20492,9 +20486,7 @@
       "date_hints": [
         "8月30日"
       ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -21646,9 +21638,7 @@
         "８月30日",
         "8/23"
       ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -22165,9 +22155,7 @@
       "date_hints": [
         "2026/8/30"
       ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -23812,123 +23800,6 @@
       "archive_reason": "daily_candidate_cap"
     },
     {
-      "candidate_id": "xgap_f2b66318f9d9556a",
-      "source_key": "x:2072153234178023452",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/nakamebonodori/status/2072153234178023452",
-      "source_text": "\n【第二回 中目黒盆踊り大会 2026 開催決定！】\n\n今年も「中目黒盆踊り大会」の開催が決定しました🏮\n会場は昨年に続き、「フナイリバ」です。\n\n日程：2026年8月29日(土)・30日(日)\n会場：フナイリバ\n\n開催に向けて、今後こちらの公式Xで最新情報を発信していきます。ぜひフォローしてお待ちください！",
-      "source_author": "@nakamebonodori",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@nakamebonodori",
-        "account_name": "中目黒盆踊り大会",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29日"
-      ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
-      "event_group_key": "informal:38152e0c34f149f1",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x_proactive",
-        "account": "@nakamebonodori",
-        "name": "中目黒盆踊り大会",
-        "title": "",
-        "text": "【第二回 中目黒盆踊り大会 2026 開催決定！】\n\n今年も「中目黒盆踊り大会」の開催が決定しました🏮\n会場は昨年に続き、「フナイリバ」です。\n\n日程：2026年8月29日(土)・30日(日)\n会場：フナイリバ\n\n開催に向けて、今後こちらの公式Xで最新情報を発信していきます。ぜひフォローしてお待ちください！",
-        "url": "https://x.com/nakamebonodori/status/2072153234178023452",
-        "date": "2026-07-01T03:00:04+00:00",
-        "tweet_id": "2072153234178023452",
-        "tags": [
-          "🔎能動検索",
-          "フナイリバ（目黒川船入場広場）"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/nakamebonodori/status/2072153234178023452"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
-      "candidate_id": "xgap_a1ab8ff65d6b7299",
-      "source_key": "x:2074841869834658034",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/TaroToda/status/2074841869834658034",
-      "source_text": "\n妖怪deNight　恒例の妖怪イベント案内です。\n\n●　イベント系\n\n7/12 (東京) 両国妖怪夏祭り‐両国‐ 江戸NOREN 両国妖怪夏祭り 2026 10:00～19:00 雨天決行 協力：百鬼夜行\n\n7/17(東京) 「妖怪と踊ろう練習会」上野下谷神社会館 18時半開場 演劇「江戸妖怪探偵社」内イベント 主催：ファントム座\n\n7/19(静岡) 　静岡百鬼夜行は19日のみ　17時〜 青葉ｼﾝﾎﾞﾙﾛｰﾄﾞ(18時半〜)\n申し込みは23日にスタート済み。定員50名　お早めに。\n\n7/19〜7/20(京都）モノノケ市 大将軍八神社　二日とも夜市（15:00〜20:30）\n\n7/25(愛媛)　　妖装行列 #妖怪白昼行in 「#紙祭り」四国中央市\n\n8/1(福島)　　猪苗代町にある中ノ沢温泉で中ノ沢ｺｽﾌﾟﾚｲﾍﾞﾝﾄ開催\n\n8/8-12(滋賀) 三井寺妖怪ナイト　18:00～21:00　入山料1500円　百妖箱様\n\n8/16 (北九州･長玄寺)テラコワ＆妖怪縁日\n←妖怪マルシェや妖怪仮装コンテストなどが開催予定\n\n●太秦映画村\n8/15～8/30　夏の夜まつり17:00～21:00(",
-      "source_author": "@TaroToda",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 0,
-        "handle": "@tarotoda",
-        "account_name": "一笑｜いちえ 7/25 妖怪白昼行 10/24 ﾍﾞﾙﾏｰｼﾞｭの祝祭",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "7/12",
-        "7/17",
-        "18時",
-        "7/19",
-        "17時",
-        "18時",
-        "7/19",
-        "7/20",
-        "7/25",
-        "8/1",
-        "8/8",
-        "8/16",
-        "8/15",
-        "8/30"
-      ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
-      "event_group_key": "informal:8784467996327221",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x_proactive",
-        "account": "@TaroToda",
-        "name": "一笑｜いちえ 7/25 妖怪白昼行 10/24 ﾍﾞﾙﾏｰｼﾞｭの祝祭",
-        "title": "",
-        "text": "妖怪deNight　恒例の妖怪イベント案内です。\n\n●　イベント系\n\n7/12 (東京) 両国妖怪夏祭り‐両国‐ 江戸NOREN 両国妖怪夏祭り 2026 10:00～19:00 雨天決行 協力：百鬼夜行\n\n7/17(東京) 「妖怪と踊ろう練習会」上野下谷神社会館 18時半開場 演劇「江戸妖怪探偵社」内イベント 主催：ファントム座\n\n7/19(静岡) 　静岡百鬼夜行は19日のみ　17時〜 青葉ｼﾝﾎﾞﾙﾛｰﾄﾞ(18時半〜)\n申し込みは23日にスタート済み。定員50名　お早めに。\n\n7/19〜7/20(京都）モノノケ市 大将軍八神社　二日とも夜市（15:00〜20:30）\n\n7/25(愛媛)　　妖装行列 #妖怪白昼行in 「#紙祭り」四国中央市\n\n8/1(福島)　　猪苗代町にある中ノ沢温泉で中ノ沢ｺｽﾌﾟﾚｲﾍﾞﾝﾄ開催\n\n8/8-12(滋賀) 三井寺妖怪ナイト　18:00～21:00　入山料1500円　百妖箱様\n\n8/16 (北九州･長玄寺)テラコワ＆妖怪縁日\n←妖怪マルシェや妖怪仮装コンテストなどが開催予定\n\n●太秦映画村\n8/15～8/30　夏の夜まつり17:00～21:00(踊",
-        "url": "https://x.com/TaroToda/status/2074841869834658034",
-        "date": "2026-07-08T13:03:45+00:00",
-        "tweet_id": "2074841869834658034",
-        "tags": [
-          "🔎能動検索",
-          "-両国-江戸NOREN"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/TaroToda/status/2074841869834658034"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
       "candidate_id": "xgap_f171527d5ebd712a",
       "source_key": "x:2075152227652829682",
       "lane_hint": "lane2",
@@ -24108,69 +23979,6 @@
         "https://x.com/SNS66524341/status/2076792900260974804"
       ],
       "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
-      "candidate_id": "xgap_78f758fb781150d0",
-      "source_key": "x:2076939758060593589",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/nakamebonodori/status/2076939758060593589",
-      "source_text": "\n改めて、開催概要をご案内します。\n\n第二回中目黒盆踊り大会 2026は、\n8月29日(土)・30日(日)の2日間で開催します🏮\n\nおどる、つながる、ひとつのまちに。\n今年も中目黒で、皆さまとお会いできることを楽しみにしています。\n\n日時：2026年8月29日(土)・30日(日) 13:00〜21:00\n会場：フナイリバ\n#盆踊り https://t.co/1dSeOcjXBP",
-      "source_author": "@nakamebonodori",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@nakamebonodori",
-        "account_name": "中目黒盆踊り大会",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8月29日",
-        "8月29日"
-      ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
-      "event_group_key": "informal:c7d599565e3bb930",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@nakamebonodori",
-        "name": "中目黒盆踊り大会",
-        "title": "",
-        "text": "改めて、開催概要をご案内します。\n\n第二回中目黒盆踊り大会 2026は、\n8月29日(土)・30日(日)の2日間で開催します🏮\n\nおどる、つながる、ひとつのまちに。\n今年も中目黒で、皆さまとお会いできることを楽しみにしています。\n\n日時：2026年8月29日(土)・30日(日) 13:00〜21:00\n会場：フナイリバ\n#盆踊り https://t.co/1dSeOcjXBP",
-        "url": "https://x.com/nakamebonodori/status/2076939758060593589",
-        "date": "2026-07-14T08:00:00+00:00",
-        "tweet_id": "2076939758060593589",
-        "tags": [
-          "🟡関心",
-          "q-base"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HNJhFtnbEAAyM4f.jpg",
-          "https://t.co/1dSeOcjXBP",
-          "pic.x.com/1dSeOcjXBP"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/nakamebonodori/status/2076939758060593589"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HNJhFtnbEAAyM4f.jpg",
-        "https://t.co/1dSeOcjXBP",
-        "pic.x.com/1dSeOcjXBP"
-      ],
       "corroboration_count": 1,
       "source_count": 1,
       "archive_reason": "daily_candidate_cap"
@@ -24373,7 +24181,7 @@
       ],
       "corroboration_count": 1,
       "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
+      "archive_reason": "daily_candidate_cap"
     },
     {
       "candidate_id": "xgap_a683baddc41ad446",
@@ -24441,75 +24249,7 @@
       ],
       "corroboration_count": 1,
       "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_718109ee8e6a17f8",
-      "source_key": "x:2089593021050585598",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/iko_yo_trip/status/2089593021050585598",
-      "source_text": "\nパパさんママさん、夏休みは親子で日本の伝統芸能デビューしませんか？🎌✨\n\n2026年8月、関東各地で子供も楽しめる本格体験イベントが目白押し！映画「国宝」で話題の日本舞踊、迫力満点の和太鼓、熱気あふれる阿波おどりまで…自由研究のテーマにもぴったりですよ📝😊\n\n編集部おすすめ体験イベントはこちら👇\n\n📍東京エリア\n・親子で観よう！能の世界（観世能楽堂）8/30…3歳から鑑賞OK🎵\n・セシオン杉並 納涼夏マルシェ with 阿波おどり 8/29〜8/30…ミストシャワーやかき氷も💧\n\n📍埼玉エリア\n・第40回南越谷阿波踊り…本場徳島・東京高円寺と並ぶ\"日本三大阿波踊り\"のひとつ😲\n\n📍千葉エリア\n・影絵と箏のワークショップ（若葉文化ホール）8/27…Eテレ出演ジャックさんと一緒に🎶",
-      "source_author": "@iko_yo_trip",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@iko_yo_trip",
-        "account_name": "いこーよとりっぷ |地域の個性を親子に届ける体験情報サービス",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/30",
-        "8/29",
-        "8/30",
-        "8/27"
-      ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
-      "event_group_key": "informal:95da58e6b444cb66",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x_whitelist",
-        "account": "@iko_yo_trip",
-        "name": "いこーよとりっぷ |地域の個性を親子に届ける体験情報サービス",
-        "profile_description": "親子が10年先も思い出せる体験づくりをお手伝い。\nまだあまり知られていない地域の魅力を発信する「いこーよとりっぷ」の公式アカウントです。\n Instagramはこちら→ https://t.co/NFa20Xk27G",
-        "title": "",
-        "text": "パパさんママさん、夏休みは親子で日本の伝統芸能デビューしませんか？🎌✨\n\n2026年8月、関東各地で子供も楽しめる本格体験イベントが目白押し！映画「国宝」で話題の日本舞踊、迫力満点の和太鼓、熱気あふれる阿波おどりまで…自由研究のテーマにもぴったりですよ📝😊\n\n編集部おすすめ体験イベントはこちら👇\n\n📍東京エリア\n・親子で観よう！能の世界（観世能楽堂）8/30…3歳から鑑賞OK🎵\n・セシオン杉並 納涼夏マルシェ with 阿波おどり 8/29〜8/30…ミストシャワーやかき氷も💧\n\n📍埼玉エリア\n・第40回南越谷阿波踊り…本場徳島・東京高円寺と並ぶ\"日本三大阿波踊り\"のひとつ😲\n\n📍千葉エリア\n・影絵と箏のワークショップ（若葉文化ホール）8/27…Eテレ出演ジャックさんと一緒に🎶",
-        "url": "https://x.com/iko_yo_trip/status/2089593021050585598",
-        "date": "2026-08-18T05:59:33+00:00",
-        "tweet_id": "2089593021050585598",
-        "tags": [
-          "⭐盆踊ラー",
-          "🟡関心"
-        ],
-        "critique_post": false,
-        "media_urls": [
-          "https://pbs.twimg.com/media/HP-5xE3aoAAiVZR.png",
-          "https://t.co/YaZep6RRt8",
-          "pic.x.com/YaZep6RRt8"
-        ],
-        "value_score": 6.0
-      },
-      "source_urls": [
-        "https://x.com/iko_yo_trip/status/2089593021050585598"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HP-5xE3aoAAiVZR.png",
-        "https://t.co/YaZep6RRt8",
-        "pic.x.com/YaZep6RRt8"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
+      "archive_reason": "daily_candidate_cap"
     },
     {
       "candidate_id": "xgap_7b8b9dec64070ebf",
@@ -24580,7 +24320,7 @@
       ],
       "corroboration_count": 1,
       "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
+      "archive_reason": "daily_candidate_cap"
     },
     {
       "candidate_id": "xgap_53ab26fa4a03e256",
@@ -24826,73 +24566,6 @@
         "https://t.co/Zp9HDv3Vdi",
         "pic.x.com/Zp9HDv3Vdi",
         "https://pbs.twimg.com/media/HQYB9LkaAAESM1V.jpg"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_ac878d3cb352450c",
-      "source_key": "x:2091782131345506727",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/PIERROT_TAXI/status/2091782131345506727",
-      "source_text": "\n【東京23区 夏祭り瓦版🏮】\n8/24(月)〜8/30(日)\n#ピエロ戦略メモ\n\n8月最後の一週間。\n都内各地で夏祭りが一気に開催🔥\n\n🏮 東京高円寺阿波おどり\n🎐 スーパーよさこい2026\n💃 浅草サンバカーニバル\n🏮 東京大塚阿波おどり\n🎆 田端銀座盆踊り大会\n🏮 赤羽納涼フェスタ2026\n🌙 蒲田夜市\n🎐 用賀サマーフェスティバル2026\n🏮 中目黒盆踊り大会\n🎆 三宿夏祭り2026",
-      "source_author": "@PIERROT_TAXI",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@pierrot_taxi",
-        "account_name": "タクドラピエロ🤡",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/24",
-        "8/30"
-      ],
-      "observed_dates": [
-        "2026-08-30"
-      ],
-      "event_group_key": "informal:c937760e1ed0bb42",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@PIERROT_TAXI",
-        "name": "タクドラピエロ🤡",
-        "profile_description": "@PIERROT_DARKT #ピエロメモ #ピエロ戦略メモ｜都内タクドラ6年目の羽カス🤡✈️｜隔勤遅番｜城南・羽田空港が好き。営業日報、道路・羽田・イベント情報、ピエッピーとのAI営業分析をポスト。成功も失敗も全部公開ぴえ。好きなガンダムは0083。\n#ピエロニュース",
-        "title": "",
-        "text": "【東京23区 夏祭り瓦版🏮】\n8/24(月)〜8/30(日)\n#ピエロ戦略メモ\n\n8月最後の一週間。\n都内各地で夏祭りが一気に開催🔥\n\n🏮 東京高円寺阿波おどり\n🎐 スーパーよさこい2026\n💃 浅草サンバカーニバル\n🏮 東京大塚阿波おどり\n🎆 田端銀座盆踊り大会\n🏮 赤羽納涼フェスタ2026\n🌙 蒲田夜市\n🎐 用賀サマーフェスティバル2026\n🏮 中目黒盆踊り大会\n🎆 三宿夏祭り2026",
-        "url": "https://x.com/PIERROT_TAXI/status/2091782131345506727",
-        "date": "2026-08-24T06:58:18+00:00",
-        "tweet_id": "2091782131345506727",
-        "tags": [
-          "🟡関心",
-          "q-base"
-        ],
-        "critique_post": false,
-        "media_urls": [
-          "https://pbs.twimg.com/media/HQeAwVsbwAARPPK.jpg",
-          "https://t.co/00KvVrWmlE",
-          "pic.x.com/00KvVrWmlE",
-          "https://pbs.twimg.com/media/HQeAwuIa0AAwCXT.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/PIERROT_TAXI/status/2091782131345506727"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HQeAwVsbwAARPPK.jpg",
-        "https://t.co/00KvVrWmlE",
-        "pic.x.com/00KvVrWmlE",
-        "https://pbs.twimg.com/media/HQeAwuIa0AAwCXT.jpg"
       ],
       "corroboration_count": 1,
       "source_count": 1,

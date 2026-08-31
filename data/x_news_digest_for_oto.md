@@ -1,7 +1,7 @@
 # X News Digest For Oto
 
-- generated_at: 2026-08-30T11:57:31+00:00
-- digest_count: 20685
+- generated_at: 2026-08-31T13:52:02+00:00
+- digest_count: 20707
 - status: machine prefilter; Oto interpretation pending
 
 | confidence | type | machine novelty | target | machine summary | machine reason | backcheck | source |
@@ -466,7 +466,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/koushingiken/status/2090842268198744174 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/tatsuokasai/status/2091048792472838296 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/yuwaonkyo_net/status/2090802535334641948 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/blue_sky_blue_j/status/2090414225638502494 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kaz0045/status/2090598473267912714 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/osushinotomomi/status/2090687547370561806 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kame_matsuri/status/2090663404105277778 |
@@ -629,7 +628,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/hidemasa_11/status/2086345872905003088 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kakusim_VRC/status/2086339285486342163 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kishimuu159082/status/2086336332553683158 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/assetformer/status/2086255423632646378 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Thorin_vrc/status/2086342663880785953 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Thorin_vrc/status/2086342660957368419 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Thorin_vrc/status/2086342657983557877 |
@@ -652,7 +650,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/yukari_mantani/status/2086224197626531972 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/13HyDAGU1vdT1GQ/status/2086094623055982937 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Crosta_Kyoto/status/2086310723752456282 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/KasaiSuizokuen/status/2086293893230764353 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/ube_shimin/status/2086292721325818341 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/nippon_edit/status/2085946938386714791 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/osaruna7741/status/2085922304350109926 |
@@ -692,7 +689,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/310shigeyuki/status/2085504852411707670 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/VRCnicobon/status/2085370327090311655 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/marin_one_era_u/status/2085586908172910999 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/okamotoosyou/status/2085290792810426762 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/keyakitaiikukan/status/2085288210545172974 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/agatha_2222/status/2085285604380827981 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/09041343203/status/2085285282874831317 |
@@ -814,7 +810,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/sunshinechoukai/status/2083133882279608550 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/sunshinechoukai/status/2083129907320873193 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/comcom_E_shiga/status/2083126935128064062 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/Tokadai_Komaki/status/2083458180835889610 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/ikegaminirenoki/status/2083339380161491336 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/MJSbsorNnoc0FDF/status/2082965041108947452 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/01ove0/status/2083113517868269799 |
@@ -825,7 +820,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/keiwaen_day/status/2083059410122006654 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/taisei_jutaku_/status/2083037623015367112 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/333Kanamac45333/status/2083070683324833813 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kamisu_kanko/status/2083050802474795406 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/nmnm_sapporo/status/2083020706531713479 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/ixcv9h16tRF83u8/status/2082989105798070732 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/takemasa0103/status/2082964416577106356 |
@@ -901,7 +895,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/morimotoyu1roh/status/2081386831996940458 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/sembamachi3/status/2081343444388356387 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/tetsuykshinoda/status/2081326735396921774 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kurinoyu/status/2079943960408268963 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/toko_noialovel/status/2081618966116712838 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/FutureEarthJP/status/2081139932199072009 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/kazu8603/status/2081632670979924391 |
@@ -1044,7 +1037,6 @@
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/mypl_katsushika/status/2070374778997989851 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/mii070719/status/2070349391853224068 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/JGSDF_MatudoSta/status/2070295983989436603 |
-| high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/hachinohe_camp/status/2070069489358762305 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/StreamerPress/status/2070061457761571096 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/snjphama/status/2069851041068462090 |
 | high | event_poster_ocr_candidate | review_needed | event | 盆踊り関連のX由来情報。画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い。 | 画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補 |  | https://x.com/elegelacom/status/2070056366501417126 |
@@ -1241,7 +1233,6 @@
 | medium | new_song_candidate | new | song | 曲候補「ガッツリ楽しく踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: ガッツリ楽しく踊り | ガッツリ楽しく踊り 新宿区 盆踊り | https://x.com/komaikai/status/2082233470697513244 |
 | medium | new_song_candidate | new | song | 曲候補「交野節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 交野節 | 翠香園ふれあい公園いっぱいの子供たちやそのご家族 江東区 盆踊り; 交野節 江東区 盆踊り | https://x.com/stardustkawachi/status/2084512350577766836 |
 | medium | new_song_candidate | new | song | イベント候補「恵比寿駅前盆踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 恵比寿音頭, といったご当地踊り, といった復興支援の踊り | 恵比寿駅前盆踊り 渋谷区 盆踊り; 恵比寿音頭 渋谷区 盆踊り; といったご当地踊り 渋谷区 盆踊り | https://x.com/tamachan_ota/status/2083202088293605859 |
-| medium | new_song_candidate | new | song | 既存イベント「新橋こいち祭」に関するX由来情報。 | 既存曲マスタにない曲名候補: こいち祭はご当地新橋音頭 | こいち祭はご当地新橋音頭 港区 盆踊り | https://x.com/fried_wakame/status/2080541769658409267 |
 | medium | new_song_candidate | new | song | 既存イベント「巣鴨盆踊り大会」に関するX由来情報。 | 既存曲マスタにない曲名候補: 巣鴨花咲き音頭 | 巣鴨花咲き音頭 豊島区 盆踊り | https://x.com/Oyjl5HlUz0dsiu3/status/2078744988549324968 |
 | medium | new_song_candidate | new | song | 既存イベント「巣鴨盆踊り大会」に関するX由来情報。 | 既存曲マスタにない曲名候補: 巣鴨花咲き音頭 | 巣鴨花咲き音頭 豊島区 盆踊り | https://x.com/Oyjl5HlUz0dsiu3/status/2078365554944164330 |
 | low | new_song_candidate | new | song | 曲候補「続けて流れた成田大音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: 続けて流れた成田大音頭 | 続けて流れた成田大音頭 盆踊り | https://x.com/2tsuo_g/status/2091668172722307518 |
@@ -1437,7 +1428,7 @@
 | low | new_song_candidate | new | song | 曲候補「そりゃ勝手に踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: そりゃ勝手に踊り | そりゃ勝手に踊り 盆踊り | https://x.com/zarame_music2/status/2081597431624749454 |
 | low | new_song_candidate | new | song | 曲候補「アラレちゃん音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: アラレちゃん音頭 | アラレちゃん音頭 盆踊り | https://x.com/HyMvi1/status/2081575194506993973 |
 | low | new_song_candidate | new | song | 曲候補「河内音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: 草加音頭 | 河内音頭 盆踊り; 草加音頭 盆踊り | https://x.com/nakamurarika__/status/2080214785845768297 |
-| low | new_song_candidate | new | song | 曲候補「炭坑節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 炭坑節, 恵比寿音頭, 恵比寿verの八木節 | 炭坑節 盆踊り; 恵比寿音頭 盆踊り | https://x.com/yumiya_pon/status/2079940923644137956 |
+| low | new_song_candidate | new | song | 曲候補「炭坑節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 炭坑節, 恵比寿verの八木節 | 炭坑節 盆踊り; 恵比寿音頭 盆踊り | https://x.com/yumiya_pon/status/2079940923644137956 |
 | low | new_song_candidate | new | song | 曲候補「阿波おどり」に関するX由来情報。 | 既存曲マスタにない曲名候補: 阿波おどり | 阿波おどり 盆踊り | https://x.com/qT3buXzmECas9OO/status/2081220883839115741 |
 | low | new_song_candidate | new | song | 曲候補「大和阿波おどり」に関するX由来情報。 | 既存曲マスタにない曲名候補: 大和阿波おどり | 大和阿波おどり 盆踊り | https://x.com/meme09111201/status/2081012423914565702 |
 | low | new_song_candidate | new | song | 曲候補「子どもにはこういう季節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 子どもにはこういう季節 | 子どもにはこういう季節 盆踊り | https://x.com/qishiyilu71/status/2081001911948644527 |
@@ -1663,6 +1654,7 @@
 | medium | song_usage_candidate | update | song | イベント候補「花園神社盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 花園神社盆踊り 新宿区 盆踊り; 八木節 新宿区 盆踊り | https://x.com/M125M8qgyhWueHS/status/2084170342071955570 |
 | medium | song_usage_candidate | update | song | イベント候補「渋谷盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 渋谷盆踊り 渋谷区 盆踊り; ダンシングヒーロー 渋谷区 盆踊り | https://x.com/tamachan_ota/status/2086243405957591132 |
 | medium | song_usage_candidate | update | song | イベント候補「渋谷盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 渋谷盆踊り 渋谷区 盆踊り; 渋谷音頭 渋谷区 盆踊り | https://x.com/tamachan_ota/status/2086076430774088154 |
+| medium | song_usage_candidate | update | song | 既存イベント「新橋こいち祭」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | こいち祭はご当地新橋音頭 港区 盆踊り | https://x.com/fried_wakame/status/2080541769658409267 |
 | medium | song_usage_candidate | update | song | イベント候補「久しぶりに六本木ヒルズ盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 久しぶりに六本木ヒルズ盆踊り 港区 盆踊り; 六本人音頭 港区 盆踊り | https://x.com/mu4324/status/2090799712656077243 |
 | medium | song_usage_candidate | update | song | イベント候補「巣鴨盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 巣鴨盆踊り 豊島区 盆踊り; 東京音頭 豊島区 盆踊り | https://x.com/oson_kimono/status/2078869883195109433 |
 | low | song_usage_candidate | update | song | 既存イベント「歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/Oyjl5HlUz0dsiu3/status/2088460253759480274 |
@@ -1671,6 +1663,7 @@
 | low | song_usage_candidate | update | song | 既存イベント「駒沢ふれあい広場夏祭り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/mana_setagaya/status/2086428308875677852 |
 | low | song_usage_candidate | update | song | 既存イベント「銀河の夜の盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/yumeetell/status/2085970638133678453 |
 | low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/SHOW_TARO_THR/status/2085218885687726304 |
+| low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/green_alaska6/status/2084218358476812609 |
 | low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/green_alaska6/status/2084216600652374207 |
 | low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/green_alaska6/status/2084214742269468871 |
 | low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/green_alaska6/status/2084212686859202899 |
@@ -1681,6 +1674,7 @@
 | low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/tosyokanmusume/status/2083789254572847577 |
 | low | song_usage_candidate | update | song | 既存イベント「郡上おどり in 青山」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/Oyjl5HlUz0dsiu3/status/2070438308673626165 |
 | low | song_usage_candidate | update | song | 既存イベント「中央区大江戸まつり盆おどり大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/kuma_bot999/status/2069778879980753234 |
+| low | song_usage_candidate | update | song | 既存イベント「中野駅前大盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/Oyjl5HlUz0dsiu3/status/2069089740662669766 |
 | low | song_usage_candidate | update | song | 既存イベント「大銀座盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | ありごめんなさい💦 盆踊り | https://x.com/iWzPxDCCCP30Jb4/status/2083833751537369384 |
 | low | song_usage_candidate | update | song | 既存イベント「とよす夏祭り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | すぐ近く 盆踊り | https://x.com/SKYZandBAYZ/status/2085906832770654513 |
 | low | song_usage_candidate | update | song | イベント候補「中野駅前大盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 中野駅前大盆踊り 盆踊り | https://x.com/takuma_drunker/status/2084131969764651324 |
@@ -1692,6 +1686,7 @@
 | low | song_usage_candidate | update | song | イベント候補「山王音頭と民踊大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 山王音頭と民踊大会 盆踊り | https://x.com/hisbow2/status/2066532492031803893 |
 | low | song_usage_candidate | update | song | イベント候補「新宿・歌舞伎町で開催された 歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 新宿・歌舞伎町で開催された 歌舞伎町BON ODORI 盆踊り | https://x.com/walkingfilmlove/status/2088453127439548892 |
 | low | song_usage_candidate | update | song | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2088415945941516370 |
+| low | song_usage_candidate | update | song | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/masamon314/status/2088497160711291186 |
 | low | song_usage_candidate | update | song | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2088056827003228193 |
 | low | song_usage_candidate | update | song | イベント候補「歌舞伎町BON ODORI」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 歌舞伎町BON ODORI 盆踊り | https://x.com/event_fes/status/2087403393233068258 |
 | low | song_usage_candidate | update | song | イベント候補「歌舞伎町BON ODORI 2026 初日 盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 歌舞伎町BON ODORI 2026 初日 盆踊り 盆踊り | https://x.com/walkingfilmlove/status/2088558817088827769 |
@@ -1705,6 +1700,7 @@
 | low | song_usage_candidate | update | song | イベント候補「納涼盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 納涼盆踊り大会 中央区 盆踊り | https://x.com/YIUYAMA/status/2083707852829733201 |
 | low | song_usage_candidate | update | song | イベント候補「納涼盆踊り大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 納涼盆踊り大会 中央区 盆踊り | https://x.com/YIUYAMA/status/2083338167176818995 |
 | low | song_usage_candidate | update | song | イベント候補「鉄砲洲納涼盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 鉄砲洲納涼盆踊り 中央区 盆踊り | https://x.com/M125M8qgyhWueHS/status/2084284228813074441 |
+| low | song_usage_candidate | update | song | イベント候補「鉄砲洲納涼盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 鉄砲洲納涼盆踊り 中央区 盆踊り | https://x.com/xxxnabekoxxx/status/2084288257517641763 |
 | low | song_usage_candidate | update | song | 既存イベント「神田明神納涼祭り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/myojinnouryo/status/2085893138472964378 |
 | low | song_usage_candidate | update | song | 既存イベント「神田明神納涼祭り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/myojinnouryo/status/2085633437311074395 |
 | low | song_usage_candidate | update | song | 既存イベント「神田明神納涼祭り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 |  | https://x.com/saruma5/status/2085628860193034675 |
@@ -19628,6 +19624,7 @@
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「郡上おどり」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 郡上おどり 盆踊り; 郡上節 盆踊り | https://x.com/magari22480/status/2090994456766124494 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/suieibu_/status/2091057692169400627 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/vitaminc0914/status/2091026912680579227 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/blue_sky_blue_j/status/2090414225638502494 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「阿波踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 阿波踊り 盆踊り | https://x.com/ibeco_app/status/2090612085088751961 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ishitejitemple/status/2090675455104065632 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「太鼓や阿波踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 太鼓や阿波踊り 盆踊り | https://x.com/hajime1826/status/2090597169627910172 |
@@ -19679,10 +19676,12 @@
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sachi_matsu/status/2086414579631042712 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/se_nobu/status/2086381128269865470 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ysb_/status/2086010595867033717 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/assetformer/status/2086255423632646378 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/a_nakamura_0709/status/2086290522063425648 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Jun_no_coffee/status/2086235194508591508 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yutakaya11111/status/2086227674335441006 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/suieibu_/status/2086340353049981265 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/KasaiSuizokuen/status/2086293893230764353 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/iimori_jinja/status/2085964241698447596 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/himigeibun/status/2085939196162936948 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hayasisyouta/status/2085919499644211276 |
@@ -19690,6 +19689,7 @@
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/CpYukie/status/2085379686037950784 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「塩ノ山BON踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 塩ノ山BON踊り 盆踊り | https://x.com/kagamimochi10/status/2085490530365133037 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/_masakari/status/2085195556784410804 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/okamotoosyou/status/2085290792810426762 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ramen_ichimujin/status/2085274685466452420 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/mirafes_kyoto/status/2085226835592568837 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/you_aion/status/2085174414640070956 |
@@ -19727,9 +19727,11 @@
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Mamy_mamy3/status/2083439876545085491 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/166summit/status/2083389467583484261 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ZXrfFk6B1Y3iiqE/status/2083163480685937069 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Tokadai_Komaki/status/2083458180835889610 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/houbokutaro/status/2083446176893014158 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kyotyu1914/status/2083109653265945004 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Nerima_FAMILY/status/2083081009831284940 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kamisu_kanko/status/2083050802474795406 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kawasaki_pr/status/2083024857755713632 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kachinta/status/2083020999726162060 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ishijimahideki/status/2082757634374168992 |
@@ -19756,6 +19758,7 @@
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hetimanomatihe1/status/2081330268963799268 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yamada_mast/status/2081324027512250490 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「板橋音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 板橋音頭 盆踊り | https://x.com/rollingasahi/status/2081306289087639864 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kurinoyu/status/2079943960408268963 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kirin_daiko/status/2081276430529507370 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yuikoginkawa/status/2081040613961826635 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Matsumoto_501/status/2081297060494758378 |
@@ -19795,6 +19798,7 @@
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sekabon298/status/2070447434422173737 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「郡上踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 郡上踊り 盆踊り | https://x.com/gPVEQeAD9U10257/status/2070451837338091585 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sekabon298/status/2070444990061527055 |
+| high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hachinohe_camp/status/2070069489358762305 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/spice_topics/status/2069978923447066625 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/midorijichikyo/status/2069327943147700634 |
 | high | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kotokeizai/status/2069219080230576597 |
@@ -19882,6 +19886,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/konoTunaWD6/status/2090955622154191047 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/qkgpso4tQw85289/status/2090899239400522081 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/PWfnpTHyN914910/status/2091027098848866800 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/gcus_daisakusen/status/2091025463384904181 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「江州音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 江州音頭 盆踊り; 河内音頭 盆踊り | https://x.com/ugougo7575/status/2091021619527569903 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hookahs_bar/status/2091019918452162676 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/NemottyNeronero/status/2090786799258108055 |
@@ -20006,6 +20011,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hideshanbonbon/status/2087359681161519154 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/k_oasis2nd_dash/status/2087127436735754349 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fried_wakame/status/2087183181447626845 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/twoAAbatteries/status/2087444555876704710 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tackntaihendayo/status/2087440487494115810 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/achapin80s/status/2087432737254936819 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kimaguresnufkin/status/2087391334772744338 |
@@ -20060,6 +20066,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「東京音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 東京音頭 盆踊り; 炭坑節 盆踊り | https://x.com/yubibueyubitaro/status/2086693287105290388 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「東京音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 東京音頭 盆踊り | https://x.com/borderpolo0611/status/2086668203858764131 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/komuchan2001/status/2086579557893902652 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/chaki_kirigakre/status/2086369736687055225 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Teruki_Nosaki/status/2086741865773326565 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yukifujitan/status/2086421743456157719 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/7Pky6z/status/2086398965021655372 |
@@ -20103,6 +20110,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/lemonsoda365/status/2085971625372270796 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/goodnightMEGANE/status/2085969325610164253 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「クックロビン音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | クックロビン音頭 盆踊り | https://x.com/noizman/status/2085968423767716195 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/okaken1174/status/2085660235734364367 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/shima_repair_w/status/2085975374312415315 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/b30366b7b92d485/status/2085693948421603792 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/koonth/status/2085977602318270855 |
@@ -20129,6 +20137,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/nakazawatakeshi/status/2085287826292404290 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「炭坑節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 炭坑節 盆踊り | https://x.com/fmS9jJGCX121418/status/2085278029128106053 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/2PmUS7GB9iY0CI6/status/2085276116881907887 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kakunino_tamago/status/2085269735965704437 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ginzaofficialjp/status/2085268376591782221 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kenmarai0128/status/2085260139830132966 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/asobii_shonan/status/2085252638673867162 |
@@ -20142,6 +20151,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/otafull/status/2085244483952947447 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/DCT_BABYS/status/2085222329160995039 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/metagame_hakata/status/2085220066866716676 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/5kHfYa5PjKsGGoV/status/2085208441514320283 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/k_oasis2nd_dash/status/2085198861648441528 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/oedo_hakozaki/status/2085189750412263468 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/gh_atena5565/status/2085246689372483710 |
@@ -20169,6 +20179,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/aricia43/status/2084748902704763036 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/morunoV2/status/2084747817223168282 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/m_hirosan_56/status/2084705925265527256 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ft025ki_6/status/2084655035020099605 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/_yumemigati/status/2084502821576036515 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/5kHfYa5PjKsGGoV/status/2084419154137026859 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kaz0045/status/2084279157534630114 |
@@ -20223,6 +20234,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/rusty1222/status/2083828503326405085 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/chakku01tkbr/status/2083827506952503773 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tomony_op/status/2083827081675473027 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/96sugitaLOV/status/2083814304202277121 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/mariemarietrip/status/2083813645029712044 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/chanboo36/status/2083813005926846664 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Nagakura_K/status/2083797821443145764 |
@@ -20332,6 +20344,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/mio_miochin/status/2082248502382596405 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/AtelierKocho/status/2082248133120311332 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/6XmGWa99dVCVGLo/status/2082244150339293470 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Locoty_Portal/status/2082300077322952859 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/osaka_fes/status/2082249524890968303 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/event_fes/status/2082243395989475834 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ZMEw7O74tAJuWev/status/2082242705258881267 |
@@ -20352,6 +20365,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/knorrsoups_/status/2082005971891835249 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/rindachato/status/2082002465873105068 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「ダンシングヒーロー」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | ダンシングヒーロー 盆踊り | https://x.com/rdlf/status/2082001325857112575 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/_AMASTAGE_kako/status/2081997514136498398 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tb773kntikoj/status/2081954703504818384 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/gs_pochi/status/2081948149242057014 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/miwakong305305/status/2081927190548242549 |
@@ -20382,6 +20396,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yoshiyukiuemura/status/2081632866220609758 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tricia_maxy/status/2081612486391030210 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sazae3com/status/2081556203973583233 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/himeji_fes/status/2081528113780146405 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/osaka_fes/status/2081527746510151961 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/midorijichikyo/status/2081372630297567579 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/conejo8376/status/2079926244330909712 |
@@ -20551,6 +20566,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/mchmch_hana/status/2071132803140628913 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/SapphireBlueSF/status/2071031879034384482 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「八木節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 八木節 盆踊り | https://x.com/tap23pa/status/2070779886281846888 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/M125M8qgyhWueHS/status/2070767776340591090 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/asaduki__rei/status/2070766244115202056 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「八木節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 八木節 盆踊り | https://x.com/flowerHOKObud/status/2070760940686250171 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/n_saram62kj/status/2070745153158185292 |
@@ -20584,6 +20600,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「郡上踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 郡上踊り 盆踊り; した郡上踊り 盆踊り | https://x.com/_masakari/status/2069245850531094863 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/BonOdoriJapan/status/2068941082587746812 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「ダンシングヒーロー」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | ダンシングヒーロー 盆踊り | https://x.com/8DBaFyLW3Gb4gZ5/status/2069048128645538038 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yossy_e_1101/status/2068996903191376163 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/cyberzerosystem/status/2069061882556944550 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「河内音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 河内音頭 盆踊り; 江州音頭 盆踊り | https://x.com/undinereika/status/2068906958728642675 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「シモキタ音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | シモキタ音頭 盆踊り | https://x.com/natsutr_bon/status/2068642986880324034 |
@@ -20613,6 +20630,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/ytokyo1/status/2066437510725771536 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/shamisen_taiyo/status/2066148333450920134 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/dandan_tabacchi/status/2065605402562269274 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/NANIMONO_idol/status/2031988863548510364 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sekikanko/status/2065341319015432435 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/mei_llan/status/2063295761245471092 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/nerikohouse/status/2064869766612050383 |
@@ -20621,6 +20639,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「郡上踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 郡上踊り 盆踊り | https://x.com/sig0088/status/2065459611428438115 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/2VQeoYtdET56756/status/2065395446164627646 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/EIKIS_5751v/status/2065063264657240486 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/OKT_otokonoko/status/2065060148201304066 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「郡上踊り」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 郡上踊り 盆踊り | https://x.com/sktrxxx/status/2065058698641510784 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kuzunavi/status/2064981309462880333 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/mu4324/status/2064895143925436578 |
@@ -20639,6 +20658,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/uratyranohoshi/status/2064369373637451869 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hanasakisuirei/status/2064366256615301155 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/bakatare2001/status/2064347557174907156 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/koi_dou/status/2064337998553248227 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/poponsan1212/status/2064336215915241732 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「ソーラン節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | ソーラン節 盆踊り | https://x.com/hina_hako_piyo_/status/2064333961275547652 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「ソーラン節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | ソーラン節 盆踊り | https://x.com/bokumike/status/2064196241857413297 |
@@ -20680,6 +20700,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「駒澤大学 駒沢キャンパス」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fromsetagaya/status/2084033076787814477 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「築地本願寺」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/shiho_2710/status/2082821544670339344 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「浜町公園」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/QTjittan/status/1998365487928103104 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「靖国神社」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fried_wakame/status/2078158071973736923 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「靖国神社」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fried_wakame/status/2077217634802889131 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「靖国神社」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/tunagate/status/2065391293539529004 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「東本願寺（浅草）」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/BoteroBotero244/status/2090953709803213243 |
@@ -20691,3 +20712,4 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「太宗寺」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fried_wakame/status/2078157734965555342 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「中島公園」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/34862f64b13a4b2/status/2084121937467630067 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 既存会場「高島平七丁目第二公園」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/yumibe/status/2081756306600546330 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 会場候補「大正大学 巣鴨校舎」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 大正大学 巣鴨校舎 豊島区 盆踊り | https://x.com/taisho_bukkyo/status/1677165333151629312 |
