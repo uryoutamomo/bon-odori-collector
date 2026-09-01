@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7988,
+  "count": 7987,
   "summary": {
     "critical": 53,
     "high": 1429,
@@ -36442,28 +36442,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_afc51f4f22ae68d8",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@nyantokonyan",
-      "account_name": "にゃんとこ",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/nyantokonyan/status/2062100653489676741",
-      "tweet_id": "2062100653489676741",
-      "date": "2026-06-03T09:14:42+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HJ4NnUHagAEK5UA.jpg",
-        "https://t.co/gCbTmGpNMJ",
-        "pic.twitter.com/gCbTmGpNMJ",
-        "https://pbs.twimg.com/media/HJ4NnT9awAANxFh.jpg"
-      ],
-      "text": "🎋七夕夜会2026🎋\n2026年7月7日(火)\n17:00〜パラクシュ(民謡DJ)\n18:00〜フレンチ盆踊り／KUMI SOLO(From Paris)\n18:30〜Min-Yoi's／生歌生演奏盆踊り\n(途中19:07に乾杯タイムあり)\n19:30〜パラクシュ(民謡DJ)\n20:00〜のらぼん／にゃんとこwith宇宙軒北星\n21:00  終了\n隅田公園そよ風広場\n入場無料 https://t.co/gCbTmGpNMJ",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

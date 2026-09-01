@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-08-31T13:59:08.817345+00:00",
+  "generated_at": "2026-09-01T11:49:56.495263+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 366,
+  "archived_count": 365,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -18131,7 +18131,6 @@
         "8月1日"
       ],
       "observed_dates": [
-        "2026-08-31",
         "2026-09-05",
         "2026-09-06",
         "2026-09-13"
@@ -20877,9 +20876,7 @@
         "24時",
         "8月21日"
       ],
-      "observed_dates": [
-        "2026-08-31"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": {
         "venue": "浜町公園",
@@ -24044,79 +24041,6 @@
       "archive_reason": "daily_candidate_cap"
     },
     {
-      "candidate_id": "xgap_13a7045096f7122e",
-      "source_key": "x:2083249892156387392",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/aoi323/status/2083249892156387392",
-      "source_text": "\n#有楽町プラネタリアTOKYO\n今年は\n#妖怪夏祭り\n8/31まで\n今年はあちこちで妖怪イベントやってますね🏮\n\n#築地本願寺\n盆踊り👘\n知らない音頭も多くて振付も難易度高めなのに、沢山の方が普通に踊っていて😳皆さん覚えてるのかな👏\n安宅丸でご一緒した\n＃大江戸助六太鼓\nさんの奉納演奏も🎶\n明日まで https://t.co/37xpqEmij1",
-      "source_author": "@aoi323",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@aoi323",
-        "account_name": "青井美文",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "8/31"
-      ],
-      "observed_dates": [
-        "2026-08-31"
-      ],
-      "event_group_key": "informal-venue:c39d4110157584fe",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@aoi323",
-        "name": "青井美文",
-        "title": "",
-        "text": "#有楽町プラネタリアTOKYO\n今年は\n#妖怪夏祭り\n8/31まで\n今年はあちこちで妖怪イベントやってますね🏮\n\n#築地本願寺\n盆踊り👘\n知らない音頭も多くて振付も難易度高めなのに、沢山の方が普通に踊っていて😳皆さん覚えてるのかな👏\n安宅丸でご一緒した\n＃大江戸助六太鼓\nさんの奉納演奏も🎶\n明日まで https://t.co/37xpqEmij1",
-        "url": "https://x.com/aoi323/status/2083249892156387392",
-        "date": "2026-07-31T17:54:13+00:00",
-        "tweet_id": "2083249892156387392",
-        "tags": [
-          "🟡関心",
-          "q-venue"
-        ],
-        "media_urls": [
-          "https://pbs.twimg.com/media/HOkwsJBbMAAxRMk.jpg",
-          "https://t.co/37xpqEmij1",
-          "pic.x.com/37xpqEmij1",
-          "https://pbs.twimg.com/media/HOkwsI8bMAA5w2t.jpg",
-          "https://pbs.twimg.com/media/HOkwsI9aMAARp9J.jpg",
-          "https://pbs.twimg.com/amplify_video_thumb/2083249837538254848/img/8a1HctlO7IMGZveW.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/aoi323/status/2083249892156387392"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HOkwsJBbMAAxRMk.jpg",
-        "https://t.co/37xpqEmij1",
-        "pic.x.com/37xpqEmij1",
-        "https://pbs.twimg.com/media/HOkwsI8bMAA5w2t.jpg",
-        "https://pbs.twimg.com/media/HOkwsI9aMAARp9J.jpg",
-        "https://pbs.twimg.com/amplify_video_thumb/2083249837538254848/img/8a1HctlO7IMGZveW.jpg"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
       "candidate_id": "xgap_5e7005dccdc29b2e",
       "source_key": "x:2083523934356742227",
       "lane_hint": "lane2",
@@ -24375,7 +24299,7 @@
       "source_media_urls": [],
       "corroboration_count": 1,
       "source_count": 1,
-      "archive_reason": "informal_new_event_daily_cap"
+      "archive_reason": "daily_candidate_cap"
     },
     {
       "candidate_id": "xgap_0a1de2291010df0e",

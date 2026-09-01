@@ -1,7 +1,186 @@
 {
-  "generated_at": "2026-08-31T13:49:12.450506+00:00",
+  "generated_at": "2026-09-01T11:40:05.422054+00:00",
   "year": 2026,
   "items": [
+    {
+      "venue": "上神明小学校",
+      "event_name": "上神明小学校",
+      "months": [
+        11
+      ],
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "x_proactive",
+          "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
+          "text": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
+          "url": "https://x.com/shinagawakanko/status/2075061948228800554"
+        }
+      ]
+    },
+    {
+      "venue": "東京大学駒場キャンパス 学生会館東",
+      "event_name": "盆踊り in 駒場東大",
+      "months": [
+        11
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "馬橋小学校",
+      "event_name": "馬橋小学校",
+      "months": [
+        11
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "六本木天祖神社",
+      "event_name": "六本木天祖神社",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "向島1丁目旧町会会館前",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "平塚中央公園",
+      "event_name": "平塚中央公園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "旗岡八幡神社",
+      "event_name": "旗岡八幡神社",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "event_name": "本四三ツ目児童遊園（三つ目児童公園）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "event_name": "江東天祖神社（亀戸天祖神社）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "鶴川団地セントラル商店街",
+      "event_name": "鶴川団地セントラル商店街",
+      "months": [
+        8,
+        10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "JR新大久保駅北側から東方向",
+      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
+      "months": [
+        10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "JR日暮里駅前広場",
+      "event_name": "JR日暮里駅前広場",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
+      "event_name": "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "event_name": "すみだ公園（隅田公園・墨田区側）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "event_name": "アーク・カラヤン広場（アークヒルズ）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "中之郷公園（中之郷児童遊園）",
+      "event_name": "中之郷公園（中之郷児童遊園）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "中和小学校",
+      "event_name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "伸成町会会館前 路上",
+      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "八潮公園",
+      "event_name": "八潮公園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
     {
       "venue": "報恩寺境内",
       "event_name": "太平一丁目 牛嶋神社 奉納踊り",
@@ -34,15 +213,6 @@
       "event_name": "小梅児童遊園",
       "months": [
         9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "岸根貴雲寺",
-      "event_name": "岸根貴雲寺",
-      "months": [
-        8
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -111,24 +281,6 @@
       "evidence": []
     },
     {
-      "venue": "足寄町民センター前グラウンド・駐車場",
-      "event_name": "足寄町民センター前グラウンド・駐車場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "長円寺",
-      "event_name": "長円寺",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
       "venue": "長谷寺（西麻布・麻布大観音）",
       "event_name": "長谷寺（西麻布・麻布大観音）",
       "months": [
@@ -165,166 +317,62 @@
       "evidence": []
     },
     {
-      "venue": "JR新大久保駅北側から東方向",
-      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
+      "venue": "宮下公園",
+      "event_name": "宮下公園",
       "months": [
-        10
+        5,
+        6,
+        9
       ],
-      "status": "unconfirmed",
-      "evidence": []
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "news_proactive",
+          "title": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！ - straightpress.jp",
+          "text": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！ - straightpress.jp",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sOXhIU0hUUEtoaWh1YjBNSkNaUmxGQ2JINnBwT0xNLUFNRE5YTjUxQzBEcGZUbWZEOTRVMlkzT21KRkRLUGEwcmxSYUNoZWNGU2Vz?oc=5"
+        },
+        {
+          "source": "x_proactive",
+          "title": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」",
+          "text": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！\nhttps://t.co/VkpIdeKBDp https://t.co/bIaolpryFY",
+          "url": "https://x.com/straightpress/status/2061326882050867380"
+        },
+        {
+          "source": "x_proactive",
+          "title": "渋谷宮下公園で2026/9/26-27『SHIBUYA MIYASHITA PARK BON DANCE』開催🎉 伝統盆踊りとDJライブが融合した無料祭り！フー",
+          "text": "渋谷宮下公園で2026/9/26-27『SHIBUYA MIYASHITA PARK BON DANCE』開催🎉 伝統盆踊りとDJライブが融合した無料祭り！フード＆ドリンクにフェスマーケットも登場。夏の終わりを渋谷で熱く踊り明かせ！誰でも参加OK！#盆踊り #渋谷\n\n✨詳細はこちら👇\nhttps://t.co/Ts5PkarfBc https://t.co/YJIb3aghnV",
+          "url": "https://x.com/StreamerPress/status/2059505223589368307"
+        }
+      ]
     },
     {
-      "venue": "JR日暮里駅前広場",
-      "event_name": "JR日暮里駅前広場",
+      "venue": "大横川親水公園",
+      "event_name": "大横川親水公園",
       "months": [
         9
       ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "JR苅田駅前広場",
-      "event_name": "JR苅田駅前広場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
-      "event_name": "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
-      "event_name": "SHIBUYA109前〜道玄坂・文化村通り一帯",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
-      "event_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
-      "event_name": "坂本町会 納涼祭",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "すみだ公園（隅田公園・墨田区側）",
-      "event_name": "すみだ公園（隅田公園・墨田区側）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "アーク・カラヤン広場（アークヒルズ）",
-      "event_name": "アーク・カラヤン広場（アークヒルズ）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "ハマサイト前広場・汐留ビルディング外構",
-      "event_name": "第16回ハマサイトの夏祭り",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "フナイリバ（目黒川船入場広場）",
-      "event_name": "中目黒盆踊り大会 2025",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "上野原市役所センタープラザ（もみじホール）",
-      "event_name": "上野原市役所センタープラザ（もみじホール）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "中之郷公園（中之郷児童遊園）",
-      "event_name": "中之郷公園（中之郷児童遊園）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "中和小学校",
-      "event_name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "中央通り（銀座1丁目〜8丁目）",
-      "event_name": "中央通り（銀座1丁目〜8丁目）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "京橋エドグラン 京橋中央ひろば",
-      "event_name": "京橋エドグラン 京橋中央ひろば",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "伸成町会会館前 路上",
-      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "八潮公園",
-      "event_name": "八潮公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "youtube",
+          "title": "炭坑節　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）３終　2025年10月19日　東京都墨田区　大横川親水公園",
+          "text": "2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすくい音頭　https://youtu.be/3el7fMzGgso\n７江州音頭　https://youtu.be/a884NDQZEKs\n８じゃこっぺ踊り　https://youtu.be/dJQ4a5RSsCc\n９黒石よされ節　https://youtu.be/GTiBQgMU5cY\n10終　津軽甚句　https://youtu.be/e7gDmAe6cU0\n\n亀四太鼓\n１すみだ音頭　https://youtu.be/-7u1Kb4X-Jc\n２二十一世紀音頭　https://youtu.be/9LTwaw6cr9E\n３東京音頭　https://youtu.be/SJpEf6GOpGs\n４オバＱ音頭　https://youtu.be/JiBjrlyKVK8\n５にんにん忍たま音頭　https://youtu.be/VH1DaLKNJ9A\n６炭坑節　https://youtu.be/BiIAKny8m5Y\n７マツケンサンバⅡ　https://youtu.be/O2Bt_y1aG40\n８八木節　https://youtu.be/zYxO_UK-dgU\n９花まつり　https://youtu.be/8Dm52V9vTU0\n10終　夏祭り　https://youtu.be/XVM-HC8ZqNI\n\nDJ岸野雄一\n１子供盆踊り唄　https://youtu.be/ZqjY80dzBcU\n２終　メガヒッツ盆踊り　https://youtu.be/-46emh0_BSA\n\n池袋盆BAND\n１池袋西口音頭　https://youtu.be/ta2U2nUvAK8\n２相馬盆唄　https://youtu.be/IiWTkaAhMx8\n３ええじゃないか音頭　https://youtu.be/eC_nwyxZwLM\n４Isn't She Lovely　https://youtu.be/3renuAXwTpE\n５終　池袋盆BAND　https://youtu.be/mmPpyGYwFa0\n\nこでらんに～\n１相馬盆唄　https://youtu.be/sdS6Y5moiPQ\n２とらじょさま　https://youtu.be/XNkOTLjq2Z4\n３終　炭坑節　https://youtu.be/IDvJLis4DGc",
+          "url": "https://www.youtube.com/watch?v=IDvJLis4DGc"
+        },
+        {
+          "source": "youtube",
+          "title": "とらじょさま　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園",
+          "text": "2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすくい音頭　https://youtu.be/3el7fMzGgso\n７江州音頭　https://youtu.be/a884NDQZEKs\n８じゃこっぺ踊り　https://youtu.be/dJQ4a5RSsCc\n９黒石よされ節　https://youtu.be/GTiBQgMU5cY\n10終　津軽甚句　https://youtu.be/e7gDmAe6cU0\n\n亀四太鼓\n１すみだ音頭　https://youtu.be/-7u1Kb4X-Jc\n２二十一世紀音頭　https://youtu.be/9LTwaw6cr9E\n３東京音頭　https://youtu.be/SJpEf6GOpGs\n４オバＱ音頭　https://youtu.be/JiBjrlyKVK8\n５にんにん忍たま音頭　https://youtu.be/VH1DaLKNJ9A\n６炭坑節　https://youtu.be/BiIAKny8m5Y\n７マツケンサンバⅡ　https://youtu.be/O2Bt_y1aG40\n８八木節　https://youtu.be/zYxO_UK-dgU\n９花まつり　https://youtu.be/8Dm52V9vTU0\n10終　夏祭り　https://youtu.be/XVM-HC8ZqNI\n\nDJ岸野雄一\n１子供盆踊り唄　https://youtu.be/ZqjY80dzBcU\n２終　メガヒッツ盆踊り　https://youtu.be/-46emh0_BSA\n\n池袋盆BAND\n１池袋西口音頭　https://youtu.be/ta2U2nUvAK8\n２相馬盆唄　https://youtu.be/IiWTkaAhMx8\n３ええじゃないか音頭　https://youtu.be/eC_nwyxZwLM\n４Isn't She Lovely　https://youtu.be/3renuAXwTpE\n５終　池袋盆BAND　https://youtu.be/mmPpyGYwFa0\n\nこでらんに～\n１相馬盆唄　https://youtu.be/sdS6Y5moiPQ\n２とらじょさま　https://youtu.be/XNkOTLjq2Z4\n３終　炭坑節　https://youtu.be/IDvJLis4DGc",
+          "url": "https://www.youtube.com/watch?v=XNkOTLjq2Z4"
+        },
+        {
+          "source": "youtube",
+          "title": "相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園",
+          "text": "2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすくい音頭　https://youtu.be/3el7fMzGgso\n７江州音頭　https://youtu.be/a884NDQZEKs\n８じゃこっぺ踊り　https://youtu.be/dJQ4a5RSsCc\n９黒石よされ節　https://youtu.be/GTiBQgMU5cY\n10終　津軽甚句　https://youtu.be/e7gDmAe6cU0\n\n亀四太鼓\n１すみだ音頭　https://youtu.be/-7u1Kb4X-Jc\n２二十一世紀音頭　https://youtu.be/9LTwaw6cr9E\n３東京音頭　https://youtu.be/SJpEf6GOpGs\n４オバＱ音頭　https://youtu.be/JiBjrlyKVK8\n５にんにん忍たま音頭　https://youtu.be/VH1DaLKNJ9A\n６炭坑節　https://youtu.be/BiIAKny8m5Y\n７マツケンサンバⅡ　https://youtu.be/O2Bt_y1aG40\n８八木節　https://youtu.be/zYxO_UK-dgU\n９花まつり　https://youtu.be/8Dm52V9vTU0\n10終　夏祭り　https://youtu.be/XVM-HC8ZqNI\n\nDJ岸野雄一\n１子供盆踊り唄　https://youtu.be/ZqjY80dzBcU\n２終　メガヒッツ盆踊り　https://youtu.be/-46emh0_BSA\n\n池袋盆BAND\n１池袋西口音頭　https://youtu.be/ta2U2nUvAK8\n２相馬盆唄　https://youtu.be/IiWTkaAhMx8\n３ええじゃないか音頭　https://youtu.be/eC_nwyxZwLM\n４Isn't She Lovely　https://youtu.be/3renuAXwTpE\n５終　池袋盆BAND　https://youtu.be/mmPpyGYwFa0\n\nこでらんに～\n１相馬盆唄　https://youtu.be/sdS6Y5moiPQ\n２とらじょさま　https://youtu.be/XNkOTLjq2Z4\n３終　炭坑節　https://youtu.be/IDvJLis4DGc",
+          "url": "https://www.youtube.com/watch?v=sdS6Y5moiPQ"
+        }
+      ]
     }
   ]
 }

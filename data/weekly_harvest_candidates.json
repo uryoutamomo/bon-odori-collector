@@ -1,10 +1,10 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-08-31T13:59:29.907548+00:00",
-  "since": "2026-08-28T13:59:29.907548+00:00",
+  "generated_at": "2026-09-01T11:50:16.210391+00:00",
+  "since": "2026-08-29T11:50:16.210391+00:00",
   "days": 3,
-  "voice_count": 64,
-  "candidate_count": 14,
+  "voice_count": 44,
+  "candidate_count": 11,
   "rows": [
     {
       "category": "曲候補",
@@ -13,7 +13,7 @@
       "interpretation": "東京音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context",
-      "evidence_count": 14,
+      "evidence_count": 10,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=NIlySlX-syo",
@@ -56,7 +56,7 @@
       "interpretation": "炭坑節",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 14,
+      "evidence_count": 10,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=NIlySlX-syo",
@@ -85,49 +85,6 @@
         {
           "url": "https://www.youtube.com/watch?v=Ve1A2stIN_4",
           "date": "2026-08-30T11:00:18+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
-        }
-      ],
-      "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-      "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "らんまん踊り",
-      "interpretation": "らんまん踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 11,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-          "date": "2026-08-31T10:30:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg",
-          "date": "2026-08-31T10:00:33+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI",
-          "date": "2026-08-31T09:00:33+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Ve1A2stIN_4",
-          "date": "2026-08-30T11:00:18+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Fc61n9mDJ50",
-          "date": "2026-08-30T10:30:31+00:00",
           "account": "@wadaikoCH",
           "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
         }
@@ -181,12 +138,67 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "らんまん踊り",
+      "interpretation": "らんまん踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 8,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=NIlySlX-syo",
+          "date": "2026-08-31T10:30:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg",
+          "date": "2026-08-31T10:00:33+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI",
+          "date": "2026-08-31T09:00:33+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ve1A2stIN_4",
+          "date": "2026-08-30T11:00:18+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Fc61n9mDJ50",
+          "date": "2026-08-30T10:30:31+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y"
+        }
+      ],
+      "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+      "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "による息の合った踊り",
       "interpretation": "による息の合った踊り",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 3,
+      "evidence_count": 5,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=yoBih1ozaVc",
+          "date": "2026-09-01T10:30:19+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PnpwOeLu6_w",
+          "date": "2026-09-01T10:00:33+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/"
+        },
         {
           "url": "https://www.youtube.com/watch?v=4LpbOVIRo-g",
           "date": "2026-08-31T13:00:25+00:00",
@@ -206,8 +218,8 @@
           "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」を、 会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/yXDqaqpga_Q"
         }
       ],
-      "evidence_text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」を、 会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/yXDqaqpga_Q",
-      "evidence_url": "https://www.youtube.com/watch?v=4LpbOVIRo-g"
+      "evidence_text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/",
+      "evidence_url": "https://www.youtube.com/watch?v=yoBih1ozaVc"
     },
     {
       "category": "曲候補",
@@ -216,8 +228,20 @@
       "interpretation": "ドンパン節",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 3,
+      "evidence_count": 5,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=yoBih1ozaVc",
+          "date": "2026-09-01T10:30:19+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PnpwOeLu6_w",
+          "date": "2026-09-01T10:00:33+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/"
+        },
         {
           "url": "https://www.youtube.com/watch?v=4LpbOVIRo-g",
           "date": "2026-08-31T13:00:25+00:00",
@@ -237,8 +261,8 @@
           "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」を、 会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/yXDqaqpga_Q"
         }
       ],
-      "evidence_text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」を、 会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/yXDqaqpga_Q",
-      "evidence_url": "https://www.youtube.com/watch?v=4LpbOVIRo-g"
+      "evidence_text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/",
+      "evidence_url": "https://www.youtube.com/watch?v=yoBih1ozaVc"
     },
     {
       "category": "曲候補",
@@ -247,8 +271,20 @@
       "interpretation": "品川音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 3,
+      "evidence_count": 5,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=yoBih1ozaVc",
+          "date": "2026-09-01T10:30:19+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PnpwOeLu6_w",
+          "date": "2026-09-01T10:00:33+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/"
+        },
         {
           "url": "https://www.youtube.com/watch?v=4LpbOVIRo-g",
           "date": "2026-08-31T13:00:25+00:00",
@@ -268,145 +304,8 @@
           "text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」を、 会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/yXDqaqpga_Q"
         }
       ],
-      "evidence_text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」を、 会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/yXDqaqpga_Q",
-      "evidence_url": "https://www.youtube.com/watch?v=4LpbOVIRo-g"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "阿波踊り",
-      "interpretation": "阿波踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 3,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=TWVhUXyj_hc",
-          "date": "2026-08-31T12:05:45+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=YC3H1cGF7G0",
-          "date": "2026-08-31T08:14:18+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=h7lHUTNBaNc",
-          "date": "2026-08-29T08:00:20+00:00",
-          "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京・高円寺で「東京高円寺阿波おどり」の「ふれおどり」が開催されました。 本大会は100万人を超える観客を集める超人気イベントです。 「ふれおどり」は本大会の前夜に行われ、高円寺の各商店街を高円寺阿波おどり連協会に所属する連がひと足早く阿波踊りの熱で盛り上げます！ 商店街という限られた空間の中を踊りながら練り歩く姿は本当に素晴らしく、身体に振動がくるほどの鳴り物に心躍る一時でした！ The “Fure Odori” event, part of the “Tokyo Koenji Awa Odori,” was held in Koenji, Tokyo. The main festival is an extremely popular event that draws over 1 million spectators. The “Fure Odori” takes place the night before the main festival, bringing the excitement of the Awa Odori to Koenji’s shopping distr"
-        }
-      ],
-      "evidence_text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り\n---\n【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り\n---\n東京・高円寺で「東京高円寺阿波おどり」の「ふれおどり」が開催されました。 本大会は100万人を超える観客を集める超人気イベントです。 「ふれおどり」は本大会の前夜に行われ、高円寺の各商店街を高円寺阿波おどり連協会に所属する連がひと足早く阿波踊りの熱で盛り上げます！ 商店街という限られた空間の中を踊りながら練り歩く姿は本当に素晴らしく、身体に振動がくるほどの鳴り物に心躍る一時でした！ The “Fure Odori” event, part of the “Tokyo Koenji Awa Odori,” was held in Koenji, Tokyo. The main festival is an extremely popular event that draws over 1 million spectators. The “Fure Odori” takes place the night before the main festival, bringing the excitement of the Awa Odori to Koenji’s shopping distr",
-      "evidence_url": "https://www.youtube.com/watch?v=TWVhUXyj_hc"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "高円寺阿波おどり",
-      "interpretation": "高円寺阿波おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 3,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=TWVhUXyj_hc",
-          "date": "2026-08-31T12:05:45+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=YC3H1cGF7G0",
-          "date": "2026-08-31T08:14:18+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=h7lHUTNBaNc",
-          "date": "2026-08-29T08:00:20+00:00",
-          "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京・高円寺で「東京高円寺阿波おどり」の「ふれおどり」が開催されました。 本大会は100万人を超える観客を集める超人気イベントです。 「ふれおどり」は本大会の前夜に行われ、高円寺の各商店街を高円寺阿波おどり連協会に所属する連がひと足早く阿波踊りの熱で盛り上げます！ 商店街という限られた空間の中を踊りながら練り歩く姿は本当に素晴らしく、身体に振動がくるほどの鳴り物に心躍る一時でした！ The “Fure Odori” event, part of the “Tokyo Koenji Awa Odori,” was held in Koenji, Tokyo. The main festival is an extremely popular event that draws over 1 million spectators. The “Fure Odori” takes place the night before the main festival, bringing the excitement of the Awa Odori to Koenji’s shopping distr"
-        }
-      ],
-      "evidence_text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り\n---\n【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り\n---\n東京・高円寺で「東京高円寺阿波おどり」の「ふれおどり」が開催されました。 本大会は100万人を超える観客を集める超人気イベントです。 「ふれおどり」は本大会の前夜に行われ、高円寺の各商店街を高円寺阿波おどり連協会に所属する連がひと足早く阿波踊りの熱で盛り上げます！ 商店街という限られた空間の中を踊りながら練り歩く姿は本当に素晴らしく、身体に振動がくるほどの鳴り物に心躍る一時でした！ The “Fure Odori” event, part of the “Tokyo Koenji Awa Odori,” was held in Koenji, Tokyo. The main festival is an extremely popular event that draws over 1 million spectators. The “Fure Odori” takes place the night before the main festival, bringing the excitement of the Awa Odori to Koenji’s shopping distr",
-      "evidence_url": "https://www.youtube.com/watch?v=TWVhUXyj_hc"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "たいとう音頭",
-      "interpretation": "たいとう音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=R9vjlCcs0m4",
-          "date": "2026-08-29T10:30:27+00:00",
-          "account": "@wadaikoCH",
-          "text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=xRBpsiU3bB8",
-          "date": "2026-08-29T10:00:05+00:00",
-          "account": "@wadaikoCH",
-          "text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J"
-        }
-      ],
-      "evidence_text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J\n---\n「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J",
-      "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "上野音頭",
-      "interpretation": "上野音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=R9vjlCcs0m4",
-          "date": "2026-08-29T10:30:27+00:00",
-          "account": "@wadaikoCH",
-          "text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=xRBpsiU3bB8",
-          "date": "2026-08-29T10:00:05+00:00",
-          "account": "@wadaikoCH",
-          "text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J"
-        }
-      ],
-      "evidence_text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J\n---\n「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J",
-      "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "活気あふれる踊り",
-      "interpretation": "活気あふれる踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=R9vjlCcs0m4",
-          "date": "2026-08-29T10:30:27+00:00",
-          "account": "@wadaikoCH",
-          "text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=xRBpsiU3bB8",
-          "date": "2026-08-29T10:00:05+00:00",
-          "account": "@wadaikoCH",
-          "text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J"
-        }
-      ],
-      "evidence_text": "「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J\n---\n「こちらの動画以降、カメラ熱暴走により動画ファイルが破損しており、数曲抜けております。」 2026年8月16日に開催された、 上野御徒町パンダ広場の「シタマチ ふるさと盆踊り大会」の映像です！ 最初の曲は、地元・上野の定番「上野音頭」。 夕暮れ時のパンダ広場に響き渡る太鼓の音と、 皆さんの活気あふれる踊りをぜひお楽しみください。 このチャンネルでは、 和太鼓の演奏や各地の盆踊り・お祭りの熱気を配信しています。 お祭り好きの方は、 ぜひ【チャンネル登録】と【高評価】で応援していただけると嬉しいです！ ■ 開催情報 日時：2026年8月16日（日） 場所：御徒町南口駅前広場（おかちまちパンダ広場） ■ チャンネル登録はこちら https://www.youtube.com/@wadaiko_matsuri #盆踊り #上野音頭 #パンダ広場 #御徒町 #シタマチふるさと盆踊り大会 #和太鼓 #日本の祭り #BonOdori #2026年 パンダ広場盆踊り １上野音頭 https://youtu.be/OqHLp2KPjhQ ２たいとう音頭 https://youtu.be/LRO2MJ6J",
-      "evidence_url": "https://www.youtube.com/watch?v=R9vjlCcs0m4"
+      "evidence_text": "2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/\n---\n2026年8月29日、 荏原町公園で開催された 「Happy Summer Fes in えばらまち商店街」の盆踊りステージ 「盆ROCK」の様子です！ 品川区のご当地ソング「品川音頭」をはじめ、 生歌生演奏による会場の熱気そのままにお届けします。 「盆踊りのりんりん」による息の合った踊りと、エネルギッシュなステージをぜひお楽しみください！ 夏の締めくくりにふさわしい、最高に盛り上がった一夜をプレイバック！ #盆踊り #盆踊りのりんりん #品川音頭 #盆ROCK #荏原町公園 #えばらまち商店街 #和太鼓 #夏祭り #品川区 荏原町公園「盆ROCK」 １品川音頭 https://youtu.be/ZtvqzIuWlSU ２Ob-La-Di,Ob-La-Da https://youtu.be/Z3zPLRV8Y8c ３東京音頭 https://youtu.be/4LpbOVIRo-g ４My Sharona https://youtu.be/PnpwOeLu6_w ５盆踊りステージ https://youtu.be/yoBih1ozaVc ６ドンパン節 https://youtu.be/",
+      "evidence_url": "https://www.youtube.com/watch?v=yoBih1ozaVc"
     },
     {
       "category": "曲候補",
@@ -436,21 +335,71 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "ふれおどり",
-      "interpretation": "ふれおどり",
+      "term": "阿波踊り",
+      "interpretation": "阿波踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=TWVhUXyj_hc",
+          "date": "2026-08-31T12:05:45+00:00",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YC3H1cGF7G0",
+          "date": "2026-08-31T08:14:18+00:00",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
+        }
+      ],
+      "evidence_text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り\n---\n【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り",
+      "evidence_url": "https://www.youtube.com/watch?v=TWVhUXyj_hc"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "高円寺阿波おどり",
+      "interpretation": "高円寺阿波おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=TWVhUXyj_hc",
+          "date": "2026-08-31T12:05:45+00:00",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YC3H1cGF7G0",
+          "date": "2026-08-31T08:14:18+00:00",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り"
+        }
+      ],
+      "evidence_text": "【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 江戸っ子連 02:46 八咫烏 04:12 アジア連 06:25 かほり連 08:02 胡蝶連 10:28 さくらさくら 12:23 若駒連 14:48 伍楽連 17:22 写楽連 20:13 美踊連 22:26 華純連 25:17 粋西連 27:24 紅連 30:34 さくら連 32:59 和樂連 35:18 舞蝶連 38:49 むさし南連 40:53 びっくり連 44:24 さざんか連 46:56 ひさご連 49:41 緑舞連 51:42 ひよっこ連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り\n---\n【第67回東京高円寺阿波おどり】 開催日時：2026年8月29日(土)・30日(日) 17時から20時 開催場所：JR高円寺駅・東京メトロ新高円寺駅周辺 00:00 ハイライト 01:07 大和連 03:19 弁慶連 05:38 八王子千人連 07:50 イワシ・東洋合同連 09:45 天翔連 13:17 板橋区役所けやき連 14:54 葵新連 17:41 MUFG連 19:06 志留波阿連 21:20 新粋連 22:38 国分寺連 24:05 江戸歌舞伎連 28:34 彩芽連 30:43 吹鼓連(すいこ連) 34:19 じゃじゃ馬連 36:09 飛鳥連 41:44 情熱艶舞連 43:40 新のんき連 46:08 中村新橋連 48:33 しらいし連 50:44 東洲斎 52:41 りずむ連 54:58 小六 58:33 東京えびす連 1:00:40 ほおずき連 1:02:22 遊夏連 1:04:19 のびゆく連 1:06:06 ぽんぽこ連 1:09:01 誠連 #高円寺阿波おどり #高円寺 #江戸っ子連 #阿波おどり #阿波踊り",
+      "evidence_url": "https://www.youtube.com/watch?v=TWVhUXyj_hc"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "しあわせ音頭",
+      "interpretation": "しあわせ音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=h7lHUTNBaNc",
-          "date": "2026-08-29T08:00:20+00:00",
+          "url": "https://www.youtube.com/watch?v=ZJg4naLBliY",
+          "date": "2026-09-01T09:00:26+00:00",
           "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京・高円寺で「東京高円寺阿波おどり」の「ふれおどり」が開催されました。 本大会は100万人を超える観客を集める超人気イベントです。 「ふれおどり」は本大会の前夜に行われ、高円寺の各商店街を高円寺阿波おどり連協会に所属する連がひと足早く阿波踊りの熱で盛り上げます！ 商店街という限られた空間の中を踊りながら練り歩く姿は本当に素晴らしく、身体に振動がくるほどの鳴り物に心躍る一時でした！ The “Fure Odori” event, part of the “Tokyo Koenji Awa Odori,” was held in Koenji, Tokyo. The main festival is an extremely popular event that draws over 1 million spectators. The “Fure Odori” takes place the night before the main festival, bringing the excitement of the Awa Odori to Koenji’s shopping distr"
+          "text": "みなとみらいの臨港パーク・プラザ広場で「第17回 みなとみらい大盆踊り」が開催されました。 地元曲も多く、多彩なセットリストでとても楽しい会場でした！ 小雨が降る中熱気ある踊りは続き、ラストまでテンション高く盛り上がり続けました！ The “17th Minato Mirai Grand Bon Odori” was held at Rinko Park Plaza in Minato Mirai. With a diverse set list featuring many local songs, the event was a lot of fun! Despite the light rain, the energetic dancing continued, and the excitement remained high right up until the very end! 2026.8.29 Sat 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channel よろしけれ"
         }
       ],
-      "evidence_text": "東京・高円寺で「東京高円寺阿波おどり」の「ふれおどり」が開催されました。 本大会は100万人を超える観客を集める超人気イベントです。 「ふれおどり」は本大会の前夜に行われ、高円寺の各商店街を高円寺阿波おどり連協会に所属する連がひと足早く阿波踊りの熱で盛り上げます！ 商店街という限られた空間の中を踊りながら練り歩く姿は本当に素晴らしく、身体に振動がくるほどの鳴り物に心躍る一時でした！ The “Fure Odori” event, part of the “Tokyo Koenji Awa Odori,” was held in Koenji, Tokyo. The main festival is an extremely popular event that draws over 1 million spectators. The “Fure Odori” takes place the night before the main festival, bringing the excitement of the Awa Odori to Koenji’s shopping distr",
-      "evidence_url": "https://www.youtube.com/watch?v=h7lHUTNBaNc"
+      "evidence_text": "みなとみらいの臨港パーク・プラザ広場で「第17回 みなとみらい大盆踊り」が開催されました。 地元曲も多く、多彩なセットリストでとても楽しい会場でした！ 小雨が降る中熱気ある踊りは続き、ラストまでテンション高く盛り上がり続けました！ The “17th Minato Mirai Grand Bon Odori” was held at Rinko Park Plaza in Minato Mirai. With a diverse set list featuring many local songs, the event was a lot of fun! Despite the light rain, the energetic dancing continued, and the excitement remained high right up until the very end! 2026.8.29 Sat 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channel よろしけれ",
+      "evidence_url": "https://www.youtube.com/watch?v=ZJg4naLBliY"
     }
   ]
 }
