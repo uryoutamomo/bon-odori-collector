@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-01T11:57:47.370661+00:00",
+  "generated_at": "2026-09-01T12:00:26.684320+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -8354,6 +8354,77 @@
       }
     },
     {
+      "inbox_id": "inbox_63e08c680984b4d3",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "らんまん踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:らんまん踊り",
+      "source_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a7ff4b11fce7245507a2cb7f3a0ccd798295722bb8138dcc521a746bbc1fd9b0",
+      "last_seen_at": "github-33503443272-1-daily_song_candidate",
+      "created_at": "2026-08-06T09:29:28.322473+00:00",
+      "updated_at": "2026-09-01T11:58:05.159397+00:00",
+      "payload": {
+        "canonical_song_name": "らんまん踊り",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T10:30:25+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=NIlySlX-syo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T10:00:33+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T09:00:33+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-30T11:00:18+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=Ve1A2stIN_4"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-30T10:30:31+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=Fc61n9mDJ50"
+          }
+        ],
+        "evidence_count": 8,
+        "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+        "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
+        "interpretation": "らんまん踊り",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "らんまん踊り",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_0f5649e2c8b3a988",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -8573,77 +8644,6 @@
         "interpretation": "たいとう音頭",
         "reason": "曲名抽出器で検出: song_suffix_near_context",
         "term": "たいとう音頭",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
-      }
-    },
-    {
-      "inbox_id": "inbox_63e08c680984b4d3",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "らんまん踊り",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:らんまん踊り",
-      "source_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "b458b28a82f8a958e4578a0882b85ee6cf64e404752fede73965a2cd4ca12d7f",
-      "last_seen_at": "github-33398830625-1-daily_song_candidate",
-      "created_at": "2026-08-06T09:29:28.322473+00:00",
-      "updated_at": "2026-08-31T14:07:30.103500+00:00",
-      "payload": {
-        "canonical_song_name": "らんまん踊り",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T10:30:25+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=NIlySlX-syo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T10:00:33+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T09:00:33+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T11:00:18+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=Ve1A2stIN_4"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T10:30:31+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=Fc61n9mDJ50"
-          }
-        ],
-        "evidence_count": 11,
-        "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-        "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-        "interpretation": "らんまん踊り",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "らんまん踊り",
         "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
         "type": "曲名"
       }
