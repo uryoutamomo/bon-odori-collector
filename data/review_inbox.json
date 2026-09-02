@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-01T12:00:26.684320+00:00",
+  "generated_at": "2026-09-02T11:32:22.804703+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,412 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_15c7b013a7090c2e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "2026盆踊り情報【糀谷】7/10(金)、11(土)萩中神社\n18:30〜20:30🏮盆踊りを楽しみましょう♪\nhttps://t.co/I05qTe7dIx\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2066657006174244873",
+      "source_url": "https://x.com/otafull/status/2066657006174244873",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4f32a7a0a9f1b4c5fa10e7245ced9f6a8e3ff89b59eff18828950cda58c0ed7b",
+      "last_seen_at": "github-33623733996-1",
+      "created_at": "2026-09-02T11:31:43.865185+00:00",
+      "updated_at": "2026-09-02T11:31:43.865185+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ae6c596eb50309be",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/10"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2066657006174244873",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HK054BrbIAAHkTZ.jpg",
+          "https://t.co/6UfOLMjsrO",
+          "pic.twitter.com/6UfOLMjsrO"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n2026盆踊り情報【糀谷】7/10(金)、11(土)萩中神社\n18:30〜20:30🏮盆踊りを楽しみましょう♪\nhttps://t.co/I05qTe7dIx\n＃大田区　#商店街　#萩中　#盆踊り https://t.co/6UfOLMjsrO",
+        "source_url": "https://x.com/otafull/status/2066657006174244873",
+        "source_urls": [
+          "https://x.com/otafull/status/2066657006174244873"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-15T23:00:01+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HK054BrbIAAHkTZ.jpg",
+            "https://t.co/6UfOLMjsrO",
+            "pic.twitter.com/6UfOLMjsrO"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x_proactive",
+          "tags": [
+            "🔎能動検索",
+            "萩中神社"
+          ],
+          "text": "2026盆踊り情報【糀谷】7/10(金)、11(土)萩中神社\n18:30〜20:30🏮盆踊りを楽しみましょう♪\nhttps://t.co/I05qTe7dIx\n＃大田区　#商店街　#萩中　#盆踊り https://t.co/6UfOLMjsrO",
+          "title": "",
+          "tweet_id": "2066657006174244873",
+          "url": "https://x.com/otafull/status/2066657006174244873"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1da5d4d1f16acde4",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "ステージプログラム❗️\n\n5月23日(土)\n\n盆踊\n〜しながわ中央公園\nヘリポート広場 2026 〜\n\nイベント時間 10:30〜18:30\n盆踊り16:30〜",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2056307952542441671",
+      "source_url": "https://x.com/mizu516AforReal/status/2056307952542441671",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8de417f470817ba354c9302bbfd359c03ac180048084b5c5b214f68ce1e5cffd",
+      "last_seen_at": "github-33623733996-1",
+      "created_at": "2026-09-02T11:31:43.865185+00:00",
+      "updated_at": "2026-09-02T11:31:43.865185+00:00",
+      "payload": {
+        "candidate_id": "xgap_f9d08d538d728df5",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "5月23日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@mizu516AforReal",
+        "source_count": 1,
+        "source_key": "x:2056307952542441671",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "庄司みずき 8/8(土)橋本七夕祭り17:20〜くらサイゼリア駐輪場8/9大井町会館ライブ",
+          "classification": "registered_official_social",
+          "handle": "@mizu516aforreal",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nステージプログラム❗️\n\n5月23日(土)\n\n盆踊\n〜しながわ中央公園\nヘリポート広場 2026 〜\n\nイベント時間 10:30〜18:30\n盆踊り16:30〜18:30\n\n【催し物】\n盆踊り/ステージ / ﾌｰﾄﾞ販売/哥麿会ﾃﾞｺﾄﾗ展示/ﾌﾘﾏ/子供体験遊びｺｰﾅｰ/大道芸/わんちゃんふれあいetc\n\n下神明駅 1分 大井町西口 10分 https://t.co/3G7Om2yv0E",
+        "source_url": "https://x.com/mizu516AforReal/status/2056307952542441671",
+        "source_urls": [
+          "https://x.com/mizu516AforReal/status/2056307952542441671"
+        ],
+        "voice": {
+          "account": "@mizu516AforReal",
+          "date": "2026-05-18T09:36:34+00:00",
+          "name": "庄司みずき 6/12(金)下北沢BRETH6/14(日)大井蔵王権現神社前",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-song-program"
+          ],
+          "text": "ステージプログラム❗️\n\n5月23日(土)\n\n盆踊\n〜しながわ中央公園\nヘリポート広場 2026 〜\n\nイベント時間 10:30〜18:30\n盆踊り16:30〜18:30\n\n【催し物】\n盆踊り/ステージ / ﾌｰﾄﾞ販売/哥麿会ﾃﾞｺﾄﾗ展示/ﾌﾘﾏ/子供体験遊びｺｰﾅｰ/大道芸/わんちゃんふれあいetc\n\n下神明駅 1分 大井町西口 10分 https://t.co/3G7Om2yv0E",
+          "title": "",
+          "tweet_id": "2056307952542441671",
+          "url": "https://x.com/mizu516AforReal/status/2056307952542441671"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_39f267537220a92a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "現在の人気イベントはこちら💡\nNo.1\n7/5(日)の[上野公園] 懐かしの J-POP de 盆踊り  with 大量グルメカー  [昨年No.1夏祭り企画を",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2065391293539529004",
+      "source_url": "https://x.com/tunagate/status/2065391293539529004",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8966047c6be8641d218ce8912a577d747dfb2d9683c19bbeda67a8d0c158026f",
+      "last_seen_at": "github-33623733996-1",
+      "created_at": "2026-09-02T11:31:43.865185+00:00",
+      "updated_at": "2026-09-02T11:31:43.865185+00:00",
+      "payload": {
+        "candidate_id": "xgap_6650a0a5cd818725",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/5",
+          "6/13",
+          "6/13",
+          "6/13",
+          "8/8"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@tunagate",
+        "source_count": 1,
+        "source_key": "x:2065391293539529004",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "つなげーと公式",
+          "classification": "registered_official_social",
+          "handle": "@tunagate",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n現在の人気イベントはこちら💡\nNo.1\n7/5(日)の[上野公園] 懐かしの J-POP de 盆踊り  with 大量グルメカー  [昨年No.1夏祭り企画をもう1度！]\nhttps://t.co/E9fHMKpvj9\n\nNo.2\n6/13(土)の【20代30代限定】3000株の紫陽花を見に行こ〜🌺🌺🌺\nhttps://t.co/Sb5s60JO9V\n\nNo.3\n6/13(土)の【通常回 30代まで】カラオケオフ会！🎤✨\nhttps://t.co/V2PQMukkPJ\n\nNo.4\n6/13(土)の朝活｜ウォーキング、ついでにゴミ拾い🗑️\nhttps://t.co/up9nuxyozZ\n\nNo.5\n8/8(土)の【学んでから参拝＋博物館へ】靖国神社に行こう（勉強会＋史料館見学）\nhttps://t.co/tOsfZrACaU\n\n#つなげーと #趣味活",
+        "source_url": "https://x.com/tunagate/status/2065391293539529004",
+        "source_urls": [
+          "https://x.com/tunagate/status/2065391293539529004"
+        ],
+        "voice": {
+          "account": "@tunagate",
+          "date": "2026-06-12T11:10:32+00:00",
+          "name": "つなげーと公式｜趣味友アプリ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "現在の人気イベントはこちら💡\nNo.1\n7/5(日)の[上野公園] 懐かしの J-POP de 盆踊り  with 大量グルメカー  [昨年No.1夏祭り企画をもう1度！]\nhttps://t.co/E9fHMKpvj9\n\nNo.2\n6/13(土)の【20代30代限定】3000株の紫陽花を見に行こ〜🌺🌺🌺\nhttps://t.co/Sb5s60JO9V\n\nNo.3\n6/13(土)の【通常回 30代まで】カラオケオフ会！🎤✨\nhttps://t.co/V2PQMukkPJ\n\nNo.4\n6/13(土)の朝活｜ウォーキング、ついでにゴミ拾い🗑️\nhttps://t.co/up9nuxyozZ\n\nNo.5\n8/8(土)の【学んでから参拝＋博物館へ】靖国神社に行こう（勉強会＋史料館見学）\nhttps://t.co/tOsfZrACaU\n\n#つなげーと #趣味活",
+          "title": "",
+          "tweet_id": "2065391293539529004",
+          "url": "https://x.com/tunagate/status/2065391293539529004"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_78d78087b0523b41",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "#西馬音内盆踊り は本日19時45分から、#エリアなかいち 会場で演舞となります。\n\n本日最後のステージプログラムとなりますので、ぜひエリアなかいち会場へお越し",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2060657371937153093",
+      "source_url": "https://x.com/maru_akitahaku/status/2060657371937153093",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "fcfb0ef5af23c74b6f9f68830e4a020dcaa604d4e09aa6b01cf7695e6ff5f574",
+      "last_seen_at": "github-33623733996-1",
+      "created_at": "2026-09-02T11:31:43.865185+00:00",
+      "updated_at": "2026-09-02T11:31:43.865185+00:00",
+      "payload": {
+        "candidate_id": "xgap_70a26bb3f0c71b05",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@maru_akitahaku",
+        "source_count": 1,
+        "source_key": "x:2060657371937153093",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "まるっと秋田博実行委員会",
+          "classification": "registered_official_social",
+          "handle": "@maru_akitahaku",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n#西馬音内盆踊り は本日19時45分から、#エリアなかいち 会場で演舞となります。\n\n本日最後のステージプログラムとなりますので、ぜひエリアなかいち会場へお越しください✨\nお待ちしております！\n\n#まるっと秋田博2026 https://t.co/83Bw67EbUg",
+        "source_url": "https://x.com/maru_akitahaku/status/2060657371937153093",
+        "source_urls": [
+          "https://x.com/maru_akitahaku/status/2060657371937153093"
+        ],
+        "voice": {
+          "account": "@maru_akitahaku",
+          "date": "2026-05-30T09:39:37+00:00",
+          "name": "まるっと秋田博実行委員会",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-song-program"
+          ],
+          "text": "#西馬音内盆踊り は本日19時45分から、#エリアなかいち 会場で演舞となります。\n\n本日最後のステージプログラムとなりますので、ぜひエリアなかいち会場へお越しください✨\nお待ちしております！\n\n#まるっと秋田博2026 https://t.co/83Bw67EbUg",
+          "title": "",
+          "tweet_id": "2060657371937153093",
+          "url": "https://x.com/maru_akitahaku/status/2060657371937153093"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_e8042dabd01dd3de",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "2026年5月23日(土)\nしながわ中央公園ヘリポート広場 盆踊\n無事に第3回目も終え\n\n昨日は次年度開催にむけ\nわくわくするお話をいっぱいいたしました🙆‍♀️",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2066802689531576409",
+      "source_url": "https://x.com/mizu516AforReal/status/2066802689531576409",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4c3a49475938f4482121fb33e7baaccee91d8ef76b6f62bb1b3a99428205ca44",
+      "last_seen_at": "github-33623733996-1",
+      "created_at": "2026-09-02T11:31:43.865185+00:00",
+      "updated_at": "2026-09-02T11:31:43.865185+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3b06c1e7ed0ea66a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "5月23日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@mizu516AforReal",
+        "source_count": 1,
+        "source_key": "x:2066802689531576409",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HK7CFQEbgAAcJg-.jpg",
+          "https://t.co/XrYMYZmybb",
+          "pic.twitter.com/XrYMYZmybb",
+          "https://pbs.twimg.com/media/HK7CFQIbQAAviVS.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "庄司みずき 8/8(土)橋本七夕祭り17:20〜くらサイゼリア駐輪場8/9大井町会館ライブ",
+          "classification": "registered_official_social",
+          "handle": "@mizu516aforreal",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n2026年5月23日(土)\nしながわ中央公園ヘリポート広場 盆踊\n無事に第3回目も終え\n\n昨日は次年度開催にむけ\nわくわくするお話をいっぱいいたしました🙆‍♀️💃🏮✨\n\n盆踊りの「輪」は【ご縁の輪】ですね\n\n「来年まで待てません❗️」と、思わず言ってしまいました。笑\n\n素敵な最強メンバーと過ごす時間は最幸です https://t.co/XrYMYZmybb",
+        "source_url": "https://x.com/mizu516AforReal/status/2066802689531576409",
+        "source_urls": [
+          "https://x.com/mizu516AforReal/status/2066802689531576409"
+        ],
+        "voice": {
+          "account": "@mizu516AforReal",
+          "date": "2026-06-16T08:38:55+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HK7CFQEbgAAcJg-.jpg",
+            "https://t.co/XrYMYZmybb",
+            "pic.twitter.com/XrYMYZmybb",
+            "https://pbs.twimg.com/media/HK7CFQIbQAAviVS.jpg"
+          ],
+          "name": "庄司みずき 6/19(金)名古屋 静かの海 20(土)Philippine EXPO 名古屋",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "2026年5月23日(土)\nしながわ中央公園ヘリポート広場 盆踊\n無事に第3回目も終え\n\n昨日は次年度開催にむけ\nわくわくするお話をいっぱいいたしました🙆‍♀️💃🏮✨\n\n盆踊りの「輪」は【ご縁の輪】ですね\n\n「来年まで待てません❗️」と、思わず言ってしまいました。笑\n\n素敵な最強メンバーと過ごす時間は最幸です https://t.co/XrYMYZmybb",
+          "title": "",
+          "tweet_id": "2066802689531576409",
+          "url": "https://x.com/mizu516AforReal/status/2066802689531576409"
         }
       }
     },
