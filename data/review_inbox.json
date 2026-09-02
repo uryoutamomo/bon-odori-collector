@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-02T11:38:29.085695+00:00",
+  "generated_at": "2026-09-02T11:41:08.427367+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -8760,6 +8760,130 @@
       }
     },
     {
+      "inbox_id": "inbox_01bb7cc038021f36",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "郡上おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:郡上おどり",
+      "source_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "aef44c02bac3f5f0202ef107b90875618a04cb559861dde1ed94bf90d0502775",
+      "last_seen_at": "github-33623733996-1-daily_song_candidate",
+      "created_at": "2026-07-25T15:31:52.165690+00:00",
+      "updated_at": "2026-09-02T11:38:52.108998+00:00",
+      "payload": {
+        "canonical_song_name": "郡上おどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T11:30:14+00:00",
+            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+            "url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T11:00:38+00:00",
+            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+            "url": "https://www.youtube.com/watch?v=PFQNWIViqvo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-30T12:30:08+00:00",
+            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+            "url": "https://www.youtube.com/watch?v=gwderAltGU4"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-30T12:00:11+00:00",
+            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+            "url": "https://www.youtube.com/watch?v=6qyTjTknSOU"
+          }
+        ],
+        "evidence_count": 4,
+        "evidence_text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h\n---\n2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h\n---\n2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+        "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
+        "interpretation": "郡上おどり",
+        "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context",
+        "term": "郡上おどり",
+        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
+        "type": "曲名"
+      }
+    },
+    {
+      "inbox_id": "inbox_63e08c680984b4d3",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "らんまん踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:らんまん踊り",
+      "source_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c3186dd3a448fa7c947a4284616266637b469d902fb8bb01a4749c3e7a9c2261",
+      "last_seen_at": "github-33623733996-1-daily_song_candidate",
+      "created_at": "2026-08-06T09:29:28.322473+00:00",
+      "updated_at": "2026-09-02T11:38:52.108998+00:00",
+      "payload": {
+        "canonical_song_name": "らんまん踊り",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T10:30:25+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=NIlySlX-syo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T10:00:33+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T09:00:33+00:00",
+            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+            "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
+        "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
+        "interpretation": "らんまん踊り",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "らんまん踊り",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_1feb61f407adcc7f",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -8907,77 +9031,6 @@
       }
     },
     {
-      "inbox_id": "inbox_63e08c680984b4d3",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "らんまん踊り",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:らんまん踊り",
-      "source_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "a7ff4b11fce7245507a2cb7f3a0ccd798295722bb8138dcc521a746bbc1fd9b0",
-      "last_seen_at": "github-33503443272-1-daily_song_candidate",
-      "created_at": "2026-08-06T09:29:28.322473+00:00",
-      "updated_at": "2026-09-01T11:58:05.159397+00:00",
-      "payload": {
-        "canonical_song_name": "らんまん踊り",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T10:30:25+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=NIlySlX-syo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T10:00:33+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T09:00:33+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T11:00:18+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=Ve1A2stIN_4"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T10:30:31+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=Fc61n9mDJ50"
-          }
-        ],
-        "evidence_count": 8,
-        "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-        "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-        "interpretation": "らんまん踊り",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "らんまん踊り",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
-      }
-    },
-    {
       "inbox_id": "inbox_0f5649e2c8b3a988",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -9075,77 +9128,6 @@
         ],
         "video_id": "yoBih1ozaVc",
         "video_url": "https://www.youtube.com/watch?v=yoBih1ozaVc"
-      }
-    },
-    {
-      "inbox_id": "inbox_01bb7cc038021f36",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "郡上おどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:郡上おどり",
-      "source_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "8c57bef09a79427f6e60be3cb126c393cb5139251a5eb5f4a75f91f7e4f6f3e2",
-      "last_seen_at": "github-33398830625-1-daily_song_candidate",
-      "created_at": "2026-07-25T15:31:52.165690+00:00",
-      "updated_at": "2026-08-31T14:07:30.103500+00:00",
-      "payload": {
-        "canonical_song_name": "郡上おどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T11:30:14+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T11:00:38+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=PFQNWIViqvo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T12:30:08+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=gwderAltGU4"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T12:00:11+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=6qyTjTknSOU"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T11:30:13+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=O8t2RT-_g3c"
-          }
-        ],
-        "evidence_count": 9,
-        "evidence_text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h\n---\n2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h\n---\n2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-        "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
-        "interpretation": "郡上おどり",
-        "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context",
-        "term": "郡上おどり",
-        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
-        "type": "曲名"
       }
     },
     {
