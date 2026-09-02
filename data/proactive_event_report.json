@@ -1,105 +1,7 @@
 {
-  "generated_at": "2026-09-01T11:40:05.422054+00:00",
+  "generated_at": "2026-09-02T11:18:56.801265+00:00",
   "year": 2026,
   "items": [
-    {
-      "venue": "上神明小学校",
-      "event_name": "上神明小学校",
-      "months": [
-        11
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_proactive",
-          "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
-          "text": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
-          "url": "https://x.com/shinagawakanko/status/2075061948228800554"
-        }
-      ]
-    },
-    {
-      "venue": "東京大学駒場キャンパス 学生会館東",
-      "event_name": "盆踊り in 駒場東大",
-      "months": [
-        11
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "馬橋小学校",
-      "event_name": "馬橋小学校",
-      "months": [
-        11
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "六本木天祖神社",
-      "event_name": "六本木天祖神社",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "向島1丁目旧町会会館前",
-      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "平塚中央公園",
-      "event_name": "平塚中央公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "旗岡八幡神社",
-      "event_name": "旗岡八幡神社",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
-      "event_name": "本四三ツ目児童遊園（三つ目児童公園）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "江東天祖神社（亀戸天祖神社）",
-      "event_name": "江東天祖神社（亀戸天祖神社）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "鶴川団地セントラル商店街",
-      "event_name": "鶴川団地セントラル商店街",
-      "months": [
-        8,
-        10
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
     {
       "venue": "JR新大久保駅北側から東方向",
       "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
@@ -182,6 +84,24 @@
       "evidence": []
     },
     {
+      "venue": "六本木天祖神社",
+      "event_name": "六本木天祖神社",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "向島1丁目旧町会会館前",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
       "venue": "報恩寺境内",
       "event_name": "太平一丁目 牛嶋神社 奉納踊り",
       "months": [
@@ -218,6 +138,15 @@
       "evidence": []
     },
     {
+      "venue": "平塚中央公園",
+      "event_name": "平塚中央公園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
       "venue": "戸越八幡神社",
       "event_name": "戸越八幡神社例大祭 盆踊り",
       "months": [
@@ -240,6 +169,42 @@
       "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
       "months": [
         10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "旗岡八幡神社",
+      "event_name": "旗岡八幡神社",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "event_name": "本四三ツ目児童遊園（三つ目児童公園）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "東京大学駒場キャンパス 学生会館東",
+      "event_name": "盆踊り in 駒場東大",
+      "months": [
+        11
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "event_name": "江東天祖神社（亀戸天祖神社）",
+      "months": [
+        9
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -308,6 +273,25 @@
       "evidence": []
     },
     {
+      "venue": "馬橋小学校",
+      "event_name": "馬橋小学校",
+      "months": [
+        11
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "鶴川団地セントラル商店街",
+      "event_name": "鶴川団地セントラル商店街",
+      "months": [
+        8,
+        10
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
       "venue": "麻布氷川神社",
       "event_name": "麻布氷川神社例大祭 盆踊り",
       "months": [
@@ -317,60 +301,69 @@
       "evidence": []
     },
     {
-      "venue": "宮下公園",
-      "event_name": "宮下公園",
+      "venue": "日進公園",
+      "event_name": "日進公園",
       "months": [
-        5,
-        6,
         9
       ],
       "status": "confirmed",
       "evidence": [
         {
-          "source": "news_proactive",
-          "title": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！ - straightpress.jp",
-          "text": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！ - straightpress.jp",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sOXhIU0hUUEtoaWh1YjBNSkNaUmxGQ2JINnBwT0xNLUFNRE5YTjUxQzBEcGZUbWZEOTRVMlkzT21KRkRLUGEwcmxSYUNoZWNGU2Vz?oc=5"
+          "source": "x",
+          "title": "＜日進町界隈掲示板情報＞\n\n★日進町1丁目自治会\n　（於：日進公園）\n・ラジオ体操 前期7/21(火)～\n　　　　　　 後期8/17(月)～\n・夏祭り＆盆踊り　",
+          "text": "＜日進町界隈掲示板情報＞\n\n★日進町1丁目自治会\n　（於：日進公園）\n・ラジオ体操 前期7/21(火)～\n　　　　　　 後期8/17(月)～\n・夏祭り＆盆踊り　7/25（土）\n\n※詳細は下記ご参照\nhttps://t.co/bGvaG26CS2\nhttps://t.co/HaCh5JIszF https://t.co/jp0MQsAmEe",
+          "url": "https://x.com/keijirou1/status/2077208702483091659"
         },
         {
-          "source": "x_proactive",
-          "title": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」",
-          "text": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！\nhttps://t.co/VkpIdeKBDp https://t.co/bIaolpryFY",
-          "url": "https://x.com/straightpress/status/2061326882050867380"
-        },
-        {
-          "source": "x_proactive",
-          "title": "渋谷宮下公園で2026/9/26-27『SHIBUYA MIYASHITA PARK BON DANCE』開催🎉 伝統盆踊りとDJライブが融合した無料祭り！フー",
-          "text": "渋谷宮下公園で2026/9/26-27『SHIBUYA MIYASHITA PARK BON DANCE』開催🎉 伝統盆踊りとDJライブが融合した無料祭り！フード＆ドリンクにフェスマーケットも登場。夏の終わりを渋谷で熱く踊り明かせ！誰でも参加OK！#盆踊り #渋谷\n\n✨詳細はこちら👇\nhttps://t.co/Ts5PkarfBc https://t.co/YJIb3aghnV",
-          "url": "https://x.com/StreamerPress/status/2059505223589368307"
+          "source": "x",
+          "title": "＜日進町界隈掲示板情報＞\n\n★7/12（日）夏祭り（内野本郷）\n（宮原町一丁目）自治会館\n★7/10（土）～盆踊り練習会\n★7/19（日）夏祭り\n（日進町一丁目",
+          "text": "＜日進町界隈掲示板情報＞\n\n★7/12（日）夏祭り（内野本郷）\n（宮原町一丁目）自治会館\n★7/10（土）～盆踊り練習会\n★7/19（日）夏祭り\n（日進町一丁目）日進公園\n★7/21（火）～ラジオ体操開催\n★7/25（土）夏祭り＆盆踊り\n\n※詳細は下記ご参照\nhttps://t.co/bGvaG26CS2\nhttps://t.co/HaCh5JIszF https://t.co/P4iO7vmaaZ",
+          "url": "https://x.com/keijirou1/status/2069390555927421203"
         }
       ]
     },
     {
-      "venue": "大横川親水公園",
-      "event_name": "大横川親水公園",
+      "venue": "牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
       "months": [
         9
       ],
       "status": "confirmed",
       "evidence": [
         {
-          "source": "youtube",
-          "title": "炭坑節　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）３終　2025年10月19日　東京都墨田区　大横川親水公園",
-          "text": "2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすくい音頭　https://youtu.be/3el7fMzGgso\n７江州音頭　https://youtu.be/a884NDQZEKs\n８じゃこっぺ踊り　https://youtu.be/dJQ4a5RSsCc\n９黒石よされ節　https://youtu.be/GTiBQgMU5cY\n10終　津軽甚句　https://youtu.be/e7gDmAe6cU0\n\n亀四太鼓\n１すみだ音頭　https://youtu.be/-7u1Kb4X-Jc\n２二十一世紀音頭　https://youtu.be/9LTwaw6cr9E\n３東京音頭　https://youtu.be/SJpEf6GOpGs\n４オバＱ音頭　https://youtu.be/JiBjrlyKVK8\n５にんにん忍たま音頭　https://youtu.be/VH1DaLKNJ9A\n６炭坑節　https://youtu.be/BiIAKny8m5Y\n７マツケンサンバⅡ　https://youtu.be/O2Bt_y1aG40\n８八木節　https://youtu.be/zYxO_UK-dgU\n９花まつり　https://youtu.be/8Dm52V9vTU0\n10終　夏祭り　https://youtu.be/XVM-HC8ZqNI\n\nDJ岸野雄一\n１子供盆踊り唄　https://youtu.be/ZqjY80dzBcU\n２終　メガヒッツ盆踊り　https://youtu.be/-46emh0_BSA\n\n池袋盆BAND\n１池袋西口音頭　https://youtu.be/ta2U2nUvAK8\n２相馬盆唄　https://youtu.be/IiWTkaAhMx8\n３ええじゃないか音頭　https://youtu.be/eC_nwyxZwLM\n４Isn't She Lovely　https://youtu.be/3renuAXwTpE\n５終　池袋盆BAND　https://youtu.be/mmPpyGYwFa0\n\nこでらんに～\n１相馬盆唄　https://youtu.be/sdS6Y5moiPQ\n２とらじょさま　https://youtu.be/XNkOTLjq2Z4\n３終　炭坑節　https://youtu.be/IDvJLis4DGc",
-          "url": "https://www.youtube.com/watch?v=IDvJLis4DGc"
+          "source": "x",
+          "title": "東京都墨田区、2023年牛嶋神社大祭の亀沢四の盆踊り\n映像ではわかりにくいですが、良い音と楽しい音楽があると「地域に住んではいるが、普段外に出てこない、職場と自",
+          "text": "東京都墨田区、2023年牛嶋神社大祭の亀沢四の盆踊り\n映像ではわかりにくいですが、良い音と楽しい音楽があると「地域に住んではいるが、普段外に出てこない、職場と自宅を往復している方々」も外に出てきてたんですよね\nそういった方々を街の賑わいに参加させる仕組みとして盆踊りは素晴らしいんです https://t.co/ZxNdOvGDps",
+          "url": "https://x.com/isesakipop/status/2081225462005858495"
         },
         {
-          "source": "youtube",
-          "title": "とらじょさま　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園",
-          "text": "2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすくい音頭　https://youtu.be/3el7fMzGgso\n７江州音頭　https://youtu.be/a884NDQZEKs\n８じゃこっぺ踊り　https://youtu.be/dJQ4a5RSsCc\n９黒石よされ節　https://youtu.be/GTiBQgMU5cY\n10終　津軽甚句　https://youtu.be/e7gDmAe6cU0\n\n亀四太鼓\n１すみだ音頭　https://youtu.be/-7u1Kb4X-Jc\n２二十一世紀音頭　https://youtu.be/9LTwaw6cr9E\n３東京音頭　https://youtu.be/SJpEf6GOpGs\n４オバＱ音頭　https://youtu.be/JiBjrlyKVK8\n５にんにん忍たま音頭　https://youtu.be/VH1DaLKNJ9A\n６炭坑節　https://youtu.be/BiIAKny8m5Y\n７マツケンサンバⅡ　https://youtu.be/O2Bt_y1aG40\n８八木節　https://youtu.be/zYxO_UK-dgU\n９花まつり　https://youtu.be/8Dm52V9vTU0\n10終　夏祭り　https://youtu.be/XVM-HC8ZqNI\n\nDJ岸野雄一\n１子供盆踊り唄　https://youtu.be/ZqjY80dzBcU\n２終　メガヒッツ盆踊り　https://youtu.be/-46emh0_BSA\n\n池袋盆BAND\n１池袋西口音頭　https://youtu.be/ta2U2nUvAK8\n２相馬盆唄　https://youtu.be/IiWTkaAhMx8\n３ええじゃないか音頭　https://youtu.be/eC_nwyxZwLM\n４Isn't She Lovely　https://youtu.be/3renuAXwTpE\n５終　池袋盆BAND　https://youtu.be/mmPpyGYwFa0\n\nこでらんに～\n１相馬盆唄　https://youtu.be/sdS6Y5moiPQ\n２とらじょさま　https://youtu.be/XNkOTLjq2Z4\n３終　炭坑節　https://youtu.be/IDvJLis4DGc",
-          "url": "https://www.youtube.com/watch?v=XNkOTLjq2Z4"
+          "source": "x",
+          "title": "🏮 坂井ユカコの「墨田区盆踊り探訪」\n\n墨田区は、都内でも屈指の「盆踊りのまち」です。\n\n東京のお盆にあたる7月中旬から、区内各地で盆踊りが始まり、地域の皆さん",
+          "text": "🏮 坂井ユカコの「墨田区盆踊り探訪」\n\n墨田区は、都内でも屈指の「盆踊りのまち」です。\n\n東京のお盆にあたる7月中旬から、区内各地で盆踊りが始まり、地域の皆さんが世代を超えて交流する、かけがえのない時間が生まれます。\n\nそして9月の牛嶋神社祭礼では、氏子五十数町会のうち30を超える町会が同じ夜に一斉に盆踊りを開催。その櫓を次々と巡る盆踊りファンの間では、その過密さから「牛島心中」と呼ばれるほど、全国的にも珍しい光景が広がります。\n\nさらに、錦糸町では44年にわたり「錦糸町河内音頭大盆踊り」が開催され、本場・大阪からも踊り手や演者が集う、全国屈指の河内音頭の祭典として親しまれています。\n\nこれほど身近に、これほど多彩な盆踊りを楽しめる環境は、他の地域から見れば本当に恵まれた、誇るべき地域文化ではないでしょうか。\n\nこのシリーズでは、一つひとつの盆踊り大会を訪ねながら、その地域ならではの魅力や、人と人とのつながり、そして墨田区が大切に育んできた盆踊り文化を皆さんと一緒に記録し、未来へつないでいきたいと思います。\n\nそれでは、今日の盆踊り探訪へ。\n\n墨田区盆踊り探訪 その1　押上西和町会\n\n",
+          "url": "https://x.com/sakaiyukako/status/2077926148793893006"
         },
         {
-          "source": "youtube",
-          "title": "相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園",
-          "text": "2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすくい音頭　https://youtu.be/3el7fMzGgso\n７江州音頭　https://youtu.be/a884NDQZEKs\n８じゃこっぺ踊り　https://youtu.be/dJQ4a5RSsCc\n９黒石よされ節　https://youtu.be/GTiBQgMU5cY\n10終　津軽甚句　https://youtu.be/e7gDmAe6cU0\n\n亀四太鼓\n１すみだ音頭　https://youtu.be/-7u1Kb4X-Jc\n２二十一世紀音頭　https://youtu.be/9LTwaw6cr9E\n３東京音頭　https://youtu.be/SJpEf6GOpGs\n４オバＱ音頭　https://youtu.be/JiBjrlyKVK8\n５にんにん忍たま音頭　https://youtu.be/VH1DaLKNJ9A\n６炭坑節　https://youtu.be/BiIAKny8m5Y\n７マツケンサンバⅡ　https://youtu.be/O2Bt_y1aG40\n８八木節　https://youtu.be/zYxO_UK-dgU\n９花まつり　https://youtu.be/8Dm52V9vTU0\n10終　夏祭り　https://youtu.be/XVM-HC8ZqNI\n\nDJ岸野雄一\n１子供盆踊り唄　https://youtu.be/ZqjY80dzBcU\n２終　メガヒッツ盆踊り　https://youtu.be/-46emh0_BSA\n\n池袋盆BAND\n１池袋西口音頭　https://youtu.be/ta2U2nUvAK8\n２相馬盆唄　https://youtu.be/IiWTkaAhMx8\n３ええじゃないか音頭　https://youtu.be/eC_nwyxZwLM\n４Isn't She Lovely　https://youtu.be/3renuAXwTpE\n５終　池袋盆BAND　https://youtu.be/mmPpyGYwFa0\n\nこでらんに～\n１相馬盆唄　https://youtu.be/sdS6Y5moiPQ\n２とらじょさま　https://youtu.be/XNkOTLjq2Z4\n３終　炭坑節　https://youtu.be/IDvJLis4DGc",
-          "url": "https://www.youtube.com/watch?v=sdS6Y5moiPQ"
+          "source": "x",
+          "title": "【 7/7(火) 七夕夜会 】開催🔥\nクラフトビールや台湾夜市ゲーム、盆踊りメインの音楽プログラムなど、個性豊かなコンテンツが大集合。\n願いごとを書いた短冊はイ",
+          "text": "【 7/7(火) 七夕夜会 】開催🔥\nクラフトビールや台湾夜市ゲーム、盆踊りメインの音楽プログラムなど、個性豊かなコンテンツが大集合。\n願いごとを書いた短冊はイベント後、牛嶋神社でお焚き上げをしていただきます❗️\n\n🕔17:00 ～ 21:00 \n📍 隅田公園そよ風ひろば\n\n🔗https://t.co/Rt3AWmDVEd https://t.co/z6MpjKv1mT",
+          "url": "https://x.com/BarAmbience/status/2072961527611891880"
+        }
+      ]
+    },
+    {
+      "venue": "小山台小学校",
+      "event_name": "小山台小学校",
+      "months": [
+        7,
+        10
+      ],
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "x_proactive",
+          "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
+          "text": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
+          "url": "https://x.com/shinagawakanko/status/2075061948228800554"
         }
       ]
     }

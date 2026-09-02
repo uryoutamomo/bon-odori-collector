@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 11,
-  "direct_count": 7,
-  "created_count": 3,
-  "updated_count": 4,
+  "song_candidate_count": 13,
+  "direct_count": 9,
+  "created_count": 4,
+  "updated_count": 5,
   "rejected_noise_count": 2,
   "review_count": 2,
   "created": [
@@ -31,9 +31,33 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "響き渡る音頭",
+      "source_term": "響き渡る音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "updated": [
+    {
+      "song_name": "ドンパン節",
+      "source_term": "ドンパン節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
     {
       "song_name": "東京音頭",
       "source_term": "東京音頭",
@@ -51,16 +75,8 @@
       "dry_run": true
     },
     {
-      "song_name": "ドンパン節",
-      "source_term": "ドンパン節",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "品川音頭",
-      "source_term": "品川音頭",
+      "song_name": "江州音頭",
+      "source_term": "江州音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -80,13 +96,13 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 9,
+      "evidence_count": 4,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
     },
     {
       "term": "らんまん踊り",
-      "evidence_count": 8,
+      "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo"
     }
