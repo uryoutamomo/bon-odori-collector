@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-02T11:41:08.427367+00:00",
+  "generated_at": "2026-09-03T11:26:24.150541+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,434 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_28bf5002063fed2c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "今夜は、榎校区自治連合会6月定例会(町会長会議)\n\n榎校区盆踊り大会は、\n7/18(土)19時〜　榎元町公園\n＊雨天時は7/19(日) https://t.co",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2067199079353110798",
+      "source_url": "https://x.com/IsekiTakashi/status/2067199079353110798",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0773b60c7fca6f3dbe0cb26f901bd05134e33aa1c793175c4f9e3cb35828c097",
+      "last_seen_at": "github-33748408611-1",
+      "created_at": "2026-09-03T11:25:46.750784+00:00",
+      "updated_at": "2026-09-03T11:25:46.750784+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_0c991d1df1588502",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/18",
+          "19時",
+          "7/19"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@IsekiTakashi",
+        "source_count": 1,
+        "source_key": "x:2067199079353110798",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLAqmh1bkAAezjc.jpg",
+          "https://t.co/2h5oGIKuF4",
+          "pic.twitter.com/2h5oGIKuF4"
+        ],
+        "source_officiality": {
+          "account_name": "井関 貴史 TAKASHI Iseki 堺市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@isekitakashi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n今夜は、榎校区自治連合会6月定例会(町会長会議)\n\n榎校区盆踊り大会は、\n7/18(土)19時〜　榎元町公園\n＊雨天時は7/19(日) https://t.co/2h5oGIKuF4",
+        "source_url": "https://x.com/IsekiTakashi/status/2067199079353110798",
+        "source_urls": [
+          "https://x.com/IsekiTakashi/status/2067199079353110798"
+        ],
+        "voice": {
+          "account": "@IsekiTakashi",
+          "date": "2026-06-17T10:54:01+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLAqmh1bkAAezjc.jpg",
+            "https://t.co/2h5oGIKuF4",
+            "pic.twitter.com/2h5oGIKuF4"
+          ],
+          "name": "井関 貴史 TAKASHI Iseki 堺市議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "今夜は、榎校区自治連合会6月定例会(町会長会議)\n\n榎校区盆踊り大会は、\n7/18(土)19時〜　榎元町公園\n＊雨天時は7/19(日) https://t.co/2h5oGIKuF4",
+          "title": "",
+          "tweet_id": "2067199079353110798",
+          "url": "https://x.com/IsekiTakashi/status/2067199079353110798"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_30bd7213a6ff85bd",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【中止のお知らせ】\n6/20（土）に予定しておりました\n祖師ヶ谷大蔵駅前広場での\n盆踊り練習会ですが\n\n雨天の可能性が非常に高い為\n主催者判断で《中止》とさせて",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2067929757560537481",
+      "source_url": "https://x.com/SOSHIGAYASHOTEN/status/2067929757560537481",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "311c271a2afdbecbb310b3dc21bac1e1618520cf52a0fc8281894a1c3884e5db",
+      "last_seen_at": "github-33748408611-1",
+      "created_at": "2026-09-03T11:25:46.750784+00:00",
+      "updated_at": "2026-09-03T11:25:46.750784+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_710eac0e4f2c857c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "6/20",
+          "7/11"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@SOSHIGAYASHOTEN",
+        "source_count": 1,
+        "source_key": "x:2067929757560537481",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLLDJzkawAAoITw.jpg",
+          "https://t.co/wD98p2bjtB",
+          "pic.twitter.com/wD98p2bjtB"
+        ],
+        "source_officiality": {
+          "account_name": "祖師谷商店街振興組合(公式)",
+          "classification": "registered_official_social",
+          "handle": "@soshigayashoten",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【中止のお知らせ】\n6/20（土）に予定しておりました\n祖師ヶ谷大蔵駅前広場での\n盆踊り練習会ですが\n\n雨天の可能性が非常に高い為\n主催者判断で《中止》とさせて頂きます。\n楽しみにされていた皆様には申し訳ございませんが、次回は7/11(土)に開催いたしますのでよろしくお願い申し上げます。\n\n#盆踊り https://t.co/wD98p2bjtB",
+        "source_url": "https://x.com/SOSHIGAYASHOTEN/status/2067929757560537481",
+        "source_urls": [
+          "https://x.com/SOSHIGAYASHOTEN/status/2067929757560537481"
+        ],
+        "voice": {
+          "account": "@SOSHIGAYASHOTEN",
+          "date": "2026-06-19T11:17:29+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLLDJzkawAAoITw.jpg",
+            "https://t.co/wD98p2bjtB",
+            "pic.twitter.com/wD98p2bjtB"
+          ],
+          "name": "祖師谷商店街振興組合(公式)",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【中止のお知らせ】\n6/20（土）に予定しておりました\n祖師ヶ谷大蔵駅前広場での\n盆踊り練習会ですが\n\n雨天の可能性が非常に高い為\n主催者判断で《中止》とさせて頂きます。\n楽しみにされていた皆様には申し訳ございませんが、次回は7/11(土)に開催いたしますのでよろしくお願い申し上げます。\n\n#盆踊り https://t.co/wD98p2bjtB",
+          "title": "",
+          "tweet_id": "2067929757560537481",
+          "url": "https://x.com/SOSHIGAYASHOTEN/status/2067929757560537481"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3ac00f74123c0fc6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "🔴地元 木場一、六町会 役員会 へ\n#神輿 #盆踊り #ラジオ体操 … 🏮\n★夏は 大切な 町会行事が 多い ☝️ \n#高市総理 #高市首相 と前に 🇯🇵 \n\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2068801379041476772",
+      "source_url": "https://x.com/oyanetakumi/status/2068801379041476772",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1e874632739e70d5a7ddf8c6f780d9d24ae731a62bb7fb148229249f5d61a20a",
+      "last_seen_at": "github-33748408611-1",
+      "created_at": "2026-09-03T11:25:46.750784+00:00",
+      "updated_at": "2026-09-03T11:25:46.750784+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_4e27b4bb6c2bbd3d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@oyanetakumi",
+        "source_count": 1,
+        "source_key": "x:2068801379041476772",
+        "source_media_urls": [
+          "https://pbs.twimg.com/ext_tw_video_thumb/2068675202360475648/pu/img/ndh0zh0jl8KqVzw2.jpg",
+          "https://t.co/hSxFT0ctuW",
+          "pic.twitter.com/hSxFT0ctuW",
+          "https://pbs.twimg.com/media/HLVpQwVaEAADnyJ.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大矢根(おおやね)匠（自民党・江東区議会議員）",
+          "classification": "registered_official_social",
+          "handle": "@oyanetakumi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n🔴地元 木場一、六町会 役員会 へ\n#神輿 #盆踊り #ラジオ体操 … 🏮\n★夏は 大切な 町会行事が 多い ☝️ \n#高市総理 #高市首相 と前に 🇯🇵 \n\n🟡#ワールドカップ #サッカー ⚽️ \n★#日本代表 🇯🇵 チュニジアに快勝\n#上田綺世「前回の悔しい思いを\nようやく晴らせた」… 私も同感🤭\n次は スウェーデン🇸🇪 金曜日 ８時\n\n🔵 言語や文化が違っても … \n世界中が同じ試合に一喜一憂 ⚽️ \n#スポーツ は人をつなぐ力がある  \n★ 国を背負って戦う姿に感動 🇯🇵  \n\n#匠 #自民党 \n#おおやね匠議員 #おおやね議員\n#おおやね匠区議 #おおやね区議\n#江東区議会議員 #おおやね匠 \n#江東区議会 #江東区 #大矢根匠",
+        "source_url": "https://x.com/oyanetakumi/status/2068801379041476772",
+        "source_urls": [
+          "https://x.com/oyanetakumi/status/2068801379041476772"
+        ],
+        "voice": {
+          "account": "@oyanetakumi",
+          "date": "2026-06-21T21:00:59+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/ext_tw_video_thumb/2068675202360475648/pu/img/ndh0zh0jl8KqVzw2.jpg",
+            "https://t.co/hSxFT0ctuW",
+            "pic.twitter.com/hSxFT0ctuW",
+            "https://pbs.twimg.com/media/HLVpQwVaEAADnyJ.jpg"
+          ],
+          "name": "大矢根(おおやね)匠（自民党・江東区議会議員）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "🔴地元 木場一、六町会 役員会 へ\n#神輿 #盆踊り #ラジオ体操 … 🏮\n★夏は 大切な 町会行事が 多い ☝️ \n#高市総理 #高市首相 と前に 🇯🇵 \n\n🟡#ワールドカップ #サッカー ⚽️ \n★#日本代表 🇯🇵 チュニジアに快勝\n#上田綺世「前回の悔しい思いを\nようやく晴らせた」… 私も同感🤭\n次は スウェーデン🇸🇪 金曜日 ８時\n\n🔵 言語や文化が違っても … \n世界中が同じ試合に一喜一憂 ⚽️ \n#スポーツ は人をつなぐ力がある  \n★ 国を背負って戦う姿に感動 🇯🇵  \n\n#匠 #自民党 \n#おおやね匠議員 #おおやね議員\n#おおやね匠区議 #おおやね区議\n#江東区議会議員 #おおやね匠 \n#江東区議会 #江東区 #大矢根匠",
+          "title": "",
+          "tweet_id": "2068801379041476772",
+          "url": "https://x.com/oyanetakumi/status/2068801379041476772"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6a7762e3faa7806a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大森】7/18(土)、19(日)入新井盆踊り大会✨\n当日に向けて盆踊り練習会もあります🙌\n▼日時：6/26(金)、7/9(木) 両日とも",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2068529346910814305",
+      "source_url": "https://x.com/otafull/status/2068529346910814305",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5c0423e72ddb2fc5a496fc2cbd1ceb32a0a5b28c5bfad0ea57844fece2c60ff7",
+      "last_seen_at": "github-33748408611-1",
+      "created_at": "2026-09-03T11:25:46.750784+00:00",
+      "updated_at": "2026-09-03T11:25:46.750784+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e7276336d1e900bb",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/18",
+          "6/26",
+          "7/9"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2068529346910814305",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大森】7/18(土)、19(日)入新井盆踊り大会✨\n当日に向けて盆踊り練習会もあります🙌\n▼日時：6/26(金)、7/9(木) 両日とも19:00～20:00\n▼会場：Luz大森4階 入新井集会室\nhttps://t.co/aJinwapHgl\n#大田区　#商店街　#大森　#お祭り",
+        "source_url": "https://x.com/otafull/status/2068529346910814305",
+        "source_urls": [
+          "https://x.com/otafull/status/2068529346910814305"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-21T03:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【大森】7/18(土)、19(日)入新井盆踊り大会✨\n当日に向けて盆踊り練習会もあります🙌\n▼日時：6/26(金)、7/9(木) 両日とも19:00～20:00\n▼会場：Luz大森4階 入新井集会室\nhttps://t.co/aJinwapHgl\n#大田区　#商店街　#大森　#お祭り",
+          "title": "",
+          "tweet_id": "2068529346910814305",
+          "url": "https://x.com/otafull/status/2068529346910814305"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_891c68d5640fff27",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "6/21（日）にJR郡山駅1階おみやげ館前にて、\n「阿波踊り体験会」が開催されます🕺\nお囃子に合わせて、阿波踊りで体を動かしてみませんか？\n阿波踊りの楽しさをぜ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2067897284927664204",
+      "source_url": "https://x.com/visit_koriyama/status/2067897284927664204",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d74bf74badf4d49350000e81eeb35eff52692cd95d8e9ca3b8ffda992256fc58",
+      "last_seen_at": "github-33748408611-1",
+      "created_at": "2026-09-03T11:25:46.750784+00:00",
+      "updated_at": "2026-09-03T11:25:46.750784+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3704a406e554fb91",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "6/21"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@visit_koriyama",
+        "source_count": 1,
+        "source_key": "x:2067897284927664204",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLKlntTasAAiFXS.jpg",
+          "https://t.co/KAJbsqqXku",
+          "pic.twitter.com/KAJbsqqXku"
+        ],
+        "source_officiality": {
+          "account_name": "郡山市観光協会【公式】",
+          "classification": "registered_official_social",
+          "handle": "@visit_koriyama",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n6/21（日）にJR郡山駅1階おみやげ館前にて、\n「阿波踊り体験会」が開催されます🕺\nお囃子に合わせて、阿波踊りで体を動かしてみませんか？\n阿波踊りの楽しさをぜひ体感してください🎶\nまた、今回はふくしまディスティネーションキャンペーンにともない、三春盆踊りもご紹介いたします✨\n\n↓ https://t.co/KAJbsqqXku",
+        "source_url": "https://x.com/visit_koriyama/status/2067897284927664204",
+        "source_urls": [
+          "https://x.com/visit_koriyama/status/2067897284927664204"
+        ],
+        "voice": {
+          "account": "@visit_koriyama",
+          "date": "2026-06-19T09:08:27+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLKlntTasAAiFXS.jpg",
+            "https://t.co/KAJbsqqXku",
+            "pic.twitter.com/KAJbsqqXku"
+          ],
+          "name": "郡山市観光協会【公式】",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "6/21（日）にJR郡山駅1階おみやげ館前にて、\n「阿波踊り体験会」が開催されます🕺\nお囃子に合わせて、阿波踊りで体を動かしてみませんか？\n阿波踊りの楽しさをぜひ体感してください🎶\nまた、今回はふくしまディスティネーションキャンペーンにともない、三春盆踊りもご紹介いたします✨\n\n↓ https://t.co/KAJbsqqXku",
+          "title": "",
+          "tweet_id": "2067897284927664204",
+          "url": "https://x.com/visit_koriyama/status/2067897284927664204"
         }
       }
     },
