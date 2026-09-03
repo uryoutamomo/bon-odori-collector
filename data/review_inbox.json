@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-03T11:32:28.175226+00:00",
+  "generated_at": "2026-09-03T11:35:19.375108+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -9188,6 +9188,53 @@
       }
     },
     {
+      "inbox_id": "inbox_01bb7cc038021f36",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "郡上おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:郡上おどり",
+      "source_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5e8afbeb763c2ee764f69969c3502f5e7626a3028930fd44ee90cc8f7594484e",
+      "last_seen_at": "github-33748408611-1-daily_song_candidate",
+      "created_at": "2026-07-25T15:31:52.165690+00:00",
+      "updated_at": "2026-09-03T11:32:47.929749+00:00",
+      "payload": {
+        "canonical_song_name": "郡上おどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-08-31T11:30:14+00:00",
+            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+            "url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
+        "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
+        "interpretation": "郡上おどり",
+        "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context",
+        "term": "郡上おどり",
+        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_3f4807ee53073d99",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -9285,71 +9332,6 @@
         ],
         "video_id": "e_Edo0VNmWo",
         "video_url": "https://www.youtube.com/watch?v=e_Edo0VNmWo"
-      }
-    },
-    {
-      "inbox_id": "inbox_01bb7cc038021f36",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "郡上おどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:郡上おどり",
-      "source_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "aef44c02bac3f5f0202ef107b90875618a04cb559861dde1ed94bf90d0502775",
-      "last_seen_at": "github-33623733996-1-daily_song_candidate",
-      "created_at": "2026-07-25T15:31:52.165690+00:00",
-      "updated_at": "2026-09-02T11:38:52.108998+00:00",
-      "payload": {
-        "canonical_song_name": "郡上おどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T11:30:14+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T11:00:38+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=PFQNWIViqvo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T12:30:08+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=gwderAltGU4"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-30T12:00:11+00:00",
-            "text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-            "url": "https://www.youtube.com/watch?v=6qyTjTknSOU"
-          }
-        ],
-        "evidence_count": 4,
-        "evidence_text": "2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h\n---\n2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h\n---\n2026年8月24日、 岐阜県郡上市八幡町で開催された「郡上おどり」の様子です。 この日は上桝形町にて「桝形地蔵祭」が行われ、 情緒あふれる町並みの中で熱気ある踊りが繰り広げられました。 郡上八幡の夏の風物詩である郡上おどりの、独特のリズムと一体感をぜひお楽しみください！ 【開催日】2026年8月24日 【場所】岐阜県郡上市八幡町 上桝形町（桝形地蔵祭） 【曲目】郡上おどり #郡上おどり #郡上八幡 #盆踊り #桝形地蔵祭 #岐阜県 #日本の祭り 郡上おどり（上桝形町・桝形地蔵祭） １かわさき https://youtu.be/9KAbDwlS_zE ２三百 https://youtu.be/QmCMGSFYLUw ３春駒 https://youtu.be/eYwurEYtssw 保存会 ４古調かわさき https://youtu.be/zx_cU7xxApc ５かわさき https://youtu.be/5LkENXKqHVg ６三百 https://youtu.be/1Msup11lizU ７やっちく https://youtu.be/6hPAKxb1CZE ８げんげんばらばら h",
-        "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA",
-        "interpretation": "郡上おどり",
-        "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context",
-        "term": "郡上おどり",
-        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
-        "type": "曲名"
       }
     },
     {
