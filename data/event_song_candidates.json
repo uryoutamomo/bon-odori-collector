@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1714,
+  "count": 1715,
   "public_event_count": 776,
-  "review_count": 938,
+  "review_count": 939,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -5922,7 +5922,7 @@
       "evidence_count": 24
     },
     {
-      "id": "4f60548d20c00625",
+      "id": "c62aea7a871e9225",
       "song_name": "東京音頭",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -5934,6 +5934,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BzhuMm2ezYw",
+          "date": "2026-09-02T12:30:20+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　新宿花園町会納涼踊り大会２　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VwqYXbO8N0Y",
+          "date": "2026-09-02T12:00:01+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　新宿花園町会納涼踊り大会１　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　https"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=hG9RNim5jro",
@@ -6104,7 +6116,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 28
+      "evidence_count": 30
     },
     {
       "id": "1a090d5182a74952",
@@ -29069,6 +29081,34 @@
       "evidence_count": 1
     },
     {
+      "id": "e596b06ec0640c7e",
+      "song_name": "新宿花園町会納涼踊り",
+      "event_name": "花園町会納涼踊り大会",
+      "venue": "花園小学校",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BzhuMm2ezYw",
+          "date": "2026-09-02T12:30:20+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　新宿花園町会納涼踊り大会２　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VwqYXbO8N0Y",
+          "date": "2026-09-02T12:00:01+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　新宿花園町会納涼踊り大会１　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　https"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
       "id": "cb31541e66c18e28",
       "song_name": "新宿音頭",
       "event_name": "花園町会納涼踊り大会",
@@ -29397,7 +29437,7 @@
       "evidence_count": 11
     },
     {
-      "id": "33c0f366de874c8a",
+      "id": "bbf140f0993d6562",
       "song_name": "炭坑節",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -29409,6 +29449,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BzhuMm2ezYw",
+          "date": "2026-09-02T12:30:20+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　新宿花園町会納涼踊り大会２　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VwqYXbO8N0Y",
+          "date": "2026-09-02T12:00:01+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　新宿花園町会納涼踊り大会１　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　https"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=hG9RNim5jro",
@@ -29579,7 +29631,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 28
+      "evidence_count": 30
     },
     {
       "id": "8cf63c8af77f2e99",

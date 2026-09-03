@@ -2,23 +2,15 @@
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
   "song_candidate_count": 13,
-  "direct_count": 9,
-  "created_count": 4,
+  "direct_count": 10,
+  "created_count": 5,
   "updated_count": 5,
   "rejected_noise_count": 2,
-  "review_count": 2,
+  "review_count": 1,
   "created": [
     {
-      "song_name": "阿波おどり",
-      "source_term": "阿波おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "高円寺阿波おどり",
-      "source_term": "高円寺阿波おどり",
+      "song_name": "新宿花園町会納涼踊り",
+      "source_term": "新宿花園町会納涼踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -33,8 +25,24 @@
       "dry_run": true
     },
     {
+      "song_name": "阿波おどり",
+      "source_term": "阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "響き渡る音頭",
       "source_term": "響き渡る音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "高円寺阿波おどり",
+      "source_term": "高円寺阿波おどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -96,15 +104,9 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 4,
+      "evidence_count": 1,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
-    },
-    {
-      "term": "らんまん踊り",
-      "evidence_count": 3,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo"
     }
   ]
 }
