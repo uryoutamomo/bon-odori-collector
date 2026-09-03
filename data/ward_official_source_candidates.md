@@ -2,7 +2,7 @@
 
 - safety: official-source review candidates only; no canonical or public event write
 - registry sources: 21
-- candidates: 181
+- candidates: 176
 
 | 区 | ページ | URL | 日付候補 |
 |---|---|---|---|
@@ -29,18 +29,13 @@
 | 江戸川区 | 豊田神社奉納盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月8日（土曜日） / 18時から |
 | 江戸川区 | 下篠崎町会盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月9日（日曜日） / 8月10日（月曜日） / 18時30分から |
 | 江戸川区 | 宿和会納涼盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月22日（土曜日） / 17時から |
-| 江戸川区 | 今井町会納涼盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月29日（土曜日） / 18時から |
+| 江戸川区 | 今井町会納涼盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月30日（日曜日） / 18時から / (29日から変更になりました。) |
 | 江戸川区 | 谷河内南町会盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 10月3日（土曜日） / 15時から |
 | 荒川区 | 区から町会・自治会へのお知らせ／荒川区公式サイト | [link](https://www.city.arakawa.tokyo.jp/a009/chiikikatsudou/tyoukai/choukaikoukanbin.html) | 2026-08-17 |
-| 葛飾区 | 令和8年度夏まつり・盆踊り・イベント情報（令和8年8月17日現在） （PDF 345.6KB） | [link](https://www.city.katsushika.lg.jp/information/1030313/1028707.html) | 8月17日 |
+| 葛飾区 | 令和8年度夏まつり・盆踊り・イベント情報（令和8年9月2日現在） （PDF 346.9KB） | [link](https://www.city.katsushika.lg.jp/information/1030313/1028707.html) | 9月2日 |
 | 葛飾区 | 身近で活動しています！葛飾の自治町会｜葛飾区公式サイト | [link](https://www.city.katsushika.lg.jp/information/1030313/1033649.html) | 2026-05-13, 2026-12-29, 2026-01-03 |
 | 葛飾区 | 葛飾区地域力向上事業費助成金について｜葛飾区公式サイト | [link](https://www.city.katsushika.lg.jp/information/1030313/1036131.html) |  |
 | 葛飾区 | 葛飾区地区まつり助成金について｜葛飾区公式サイト | [link](https://www.city.katsushika.lg.jp/information/1030313/1042050.html) |  |
-| 豊島区 | 盆踊り・縁日（駒込六丁目東文化会）｜豊島区公式ホームページ | [link](https://www.city.toshima.lg.jp/117/2607071514.html) |  |
-| 豊島区 | 高松三丁目町会 盆踊り大会｜豊島区公式ホームページ | [link](https://www.city.toshima.lg.jp/120/seibukuminjimusyo/2607141815.html) |  |
-| 豊島区 | 南長崎五丁目町会 盆踊り大会｜豊島区公式ホームページ | [link](https://www.city.toshima.lg.jp/120/seibukuminjimusyo/2607151032.html) |  |
-| 豊島区 | 南長崎三丁目南部町会 納涼盆踊り大会｜豊島区公式ホームページ | [link](https://www.city.toshima.lg.jp/120/seibukuminjimusyo/2607191652.html) |  |
-| 豊島区 | イベントカレンダー｜豊島区公式ホームページ | [link](https://www.city.toshima.lg.jp/cgi-bin/event_cal/calendar.cgi) |  |
 | 足立区 | 西綾瀬町会 / (夏まつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 6月20日 / (土曜日) / 16時 |
 | 足立区 | 青少年対策第五地区委員会 / 第五地区町会連合会 / (第五地区子ども祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 6月27日 / (土曜日) / ※荒天により中止 / 14時30分 |
 | 足立区 | 東淵江自治会 / (納涼盆踊り大会) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 7月10日 / (金曜日) / 7月11日 / (土曜日) / 18時 |
@@ -143,7 +138,7 @@
 | 足立区 | 千住緑町町会 / (千住神社神輿) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
 | 足立区 | 千住桜木町町会 / (元宿堰稲荷神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
 | 足立区 | 千住二丁目町会 / (千住神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
-| 足立区 | 狭間町会 / (はざままつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時30分 |
+| 足立区 | 狭間町会 / (はざままつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 13時 |
 | 足立区 | 千住四丁目町会 / (千住四丁目氷川神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 10時 |
 | 足立区 | 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼) / (元宿堰稲荷神社祭礼神輿、山車渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 10時 / 13時30分 |
 | 足立区 | 千住宮元町町会 / (八幡神社例祭本宮大人神輿、子供神輿、山車渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 未定 |
