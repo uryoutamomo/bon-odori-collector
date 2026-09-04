@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 13,
-  "direct_count": 10,
-  "created_count": 5,
+  "song_candidate_count": 10,
+  "direct_count": 8,
+  "created_count": 3,
   "updated_count": 5,
   "rejected_noise_count": 2,
-  "review_count": 1,
+  "review_count": 0,
   "created": [
     {
       "song_name": "新宿花園町会納涼踊り",
@@ -17,19 +17,11 @@
       "dry_run": true
     },
     {
-      "song_name": "しあわせ音頭",
-      "source_term": "しあわせ音頭",
+      "song_name": "朝顔音頭",
+      "source_term": "朝顔音頭",
       "target": "create",
       "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "阿波おどり",
-      "source_term": "阿波おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -39,33 +31,9 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "高円寺阿波おどり",
-      "source_term": "高円寺阿波おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "updated": [
-    {
-      "song_name": "ドンパン節",
-      "source_term": "ドンパン節",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "品川音頭",
-      "source_term": "品川音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
     {
       "song_name": "東京音頭",
       "source_term": "東京音頭",
@@ -77,6 +45,22 @@
     {
       "song_name": "炭坑節",
       "source_term": "炭坑節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "ドンパン節",
+      "source_term": "ドンパン節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -97,16 +81,9 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "阿波踊り",
-      "reason": "SongCatalog: RDBで無効と判定済み"
+      "term": "入谷朝顔音頭踊り",
+      "reason": "曲名としての形が弱い"
     }
   ],
-  "review": [
-    {
-      "term": "郡上おどり",
-      "evidence_count": 1,
-      "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=QqsO8QgmKzA"
-    }
-  ]
+  "review": []
 }

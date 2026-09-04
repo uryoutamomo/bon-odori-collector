@@ -1,17 +1,17 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-09-03T11:25:08.608006+00:00
+- 生成時刻: 2026-09-04T11:28:08.904686+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 29件
-- 候補総数: 13件
+- 対象voices: 24件
+- 候補総数: 10件
 
 ## 内訳
-- 曲候補: 13件
+- 曲候補: 10件
 
 ## レビュー対象
 - 用語・共起レビュー: 0件
-- 曲候補レビュー: 1件
-- 曲の明白候補 dry-run: 10件
+- 曲候補レビュー: 0件
+- 曲の明白候補 dry-run: 8件
 - 曲ノイズ除外: 2件
 
 ## 生成物
@@ -23,6 +23,3 @@
 ## 反映コマンド
 - `python apply_weekly_song_review_decisions.py --dry-run`
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
-
-## 曲レビュー例
-- 郡上おどり

@@ -1,18 +1,18 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-03T11:25:08.608006+00:00",
+  "generated_at": "2026-09-04T11:28:08.904686+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-03T11:25:02.695271+00:00",
+  "source_generated_at": "2026-09-04T11:28:02.358441+00:00",
   "days": 3,
-  "voice_count": 29,
-  "candidate_count": 13,
+  "voice_count": 24,
+  "candidate_count": 10,
   "category_counts": {
-    "曲候補": 13
+    "曲候補": 10
   },
   "non_song_review_count": 0,
-  "song_candidate_count": 13,
-  "song_direct_dry_run_count": 10,
-  "song_review_count": 1,
+  "song_candidate_count": 10,
+  "song_direct_dry_run_count": 8,
+  "song_review_count": 0,
   "song_rejected_noise_count": 2,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
@@ -26,8 +26,6 @@
   ],
   "samples": {
     "non_song_review": [],
-    "song_review": [
-      "郡上おどり"
-    ]
+    "song_review": []
   }
 }
