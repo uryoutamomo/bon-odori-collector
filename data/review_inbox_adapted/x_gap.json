@@ -1,85 +1,92 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "03b06a5d0e8479fca5107fe7addcf0a69b9fcb969cad998c802221d6408046eb",
-  "input_size_bytes": 2180068,
+  "input_sha256": "200a04355bb77e27de1867e21e560bc7f6f1d82400240a9a3317c6eac4a3d6ab",
+  "input_size_bytes": 2180443,
   "item_count": 5,
   "items": [
     {
       "kind": "x_gap",
       "domain": "X",
       "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【永明寺盆まつり】\n2026年7月26日（日）17：00～\n\n夜は長いぜ\nのんびりやろう\n踊ることには\nりゆうはいらない\n子どもも大人も盆まつり\n\nみんな永明寺",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "帰り道の収穫〜\n9月19.20日\n志村第六小学校盆踊り大会\nまあ\n知ってたけど😂\n板橋区盆踊らさんに\n踊り来て\n言われているヤツや😂\n#板橋区\n#盆踊り htt",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2069598296176578987",
-      "source_url": "https://x.com/matsuzakichikai/status/2069598296176578987",
+      "source_key": "x:2083523934356742227",
+      "source_url": "https://x.com/rollingasahi/status/2083523934356742227",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_1c704155270de429",
-        "source_key": "x:2069598296176578987",
+        "candidate_id": "xgap_5e7005dccdc29b2e",
+        "source_key": "x:2083523934356742227",
         "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/matsuzakichikai/status/2069598296176578987",
-        "source_text": "\n【永明寺盆まつり】\n2026年7月26日（日）17：00～\n\n夜は長いぜ\nのんびりやろう\n踊ることには\nりゆうはいらない\n子どもも大人も盆まつり\n\nみんな永明寺にあつまれぇ！\n\n#盆ダンスしようぜ\n#盆踊り https://t.co/6CdIepYwGJ",
-        "source_author": "@matsuzakichikai",
+        "source_url": "https://x.com/rollingasahi/status/2083523934356742227",
+        "source_text": "\n帰り道の収穫〜\n9月19.20日\n志村第六小学校盆踊り大会\nまあ\n知ってたけど😂\n板橋区盆踊らさんに\n踊り来て\n言われているヤツや😂\n#板橋区\n#盆踊り https://t.co/lpU5xEVEGx",
+        "source_author": "@rollingasahi",
         "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@matsuzakichikai",
-          "account_name": "松崎智海(浄土真宗本願寺派永明寺）",
-          "source_type": "official",
-          "trust_level": "organizer_official",
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@rollingasahi",
+          "account_name": "ローリングあさひ",
+          "source_type": "",
+          "trust_level": "candidate",
           "reasons": [
-            "registered_official_source_account"
+            "schedule_post_with_bon_context"
           ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
+          "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "7月26日"
+          "9月19"
         ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
+        "observed_dates": [
+          "2026-09-19"
+        ],
+        "event_group_key": "informal-venue:038d771a18400959",
+        "known_venue_evidence": {
+          "venue": "志村第六小学校",
+          "region_hint": "板橋区",
+          "address": "板橋区坂下2-18-1",
+          "source_url": "https://www.chokai.info/hasunehigashi/038150.php"
+        },
         "voice": {
           "source": "x",
-          "account": "@matsuzakichikai",
-          "name": "松崎智海(浄土真宗本願寺派永明寺）",
+          "account": "@rollingasahi",
+          "name": "ローリングあさひ",
           "title": "",
-          "text": "【永明寺盆まつり】\n2026年7月26日（日）17：00～\n\n夜は長いぜ\nのんびりやろう\n踊ることには\nりゆうはいらない\n子どもも大人も盆まつり\n\nみんな永明寺にあつまれぇ！\n\n#盆ダンスしようぜ\n#盆踊り https://t.co/6CdIepYwGJ",
-          "url": "https://x.com/matsuzakichikai/status/2069598296176578987",
-          "date": "2026-06-24T01:47:39+00:00",
-          "tweet_id": "2069598296176578987",
+          "text": "帰り道の収穫〜\n9月19.20日\n志村第六小学校盆踊り大会\nまあ\n知ってたけど😂\n板橋区盆踊らさんに\n踊り来て\n言われているヤツや😂\n#板橋区\n#盆踊り https://t.co/lpU5xEVEGx",
+          "url": "https://x.com/rollingasahi/status/2083523934356742227",
+          "date": "2026-08-01T12:03:10+00:00",
+          "tweet_id": "2083523934356742227",
           "tags": [
             "🟡関心",
-            "q-report"
+            "q-venue-tokyo-wards"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HLirHEYb0AAWpzN.jpg",
-            "https://t.co/6CdIepYwGJ",
-            "pic.twitter.com/6CdIepYwGJ"
+            "https://pbs.twimg.com/media/HOop9q3aUAMsLRI.jpg",
+            "https://t.co/lpU5xEVEGx",
+            "pic.x.com/lpU5xEVEGx"
           ]
         },
         "source_urls": [
-          "https://x.com/matsuzakichikai/status/2069598296176578987"
+          "https://x.com/rollingasahi/status/2083523934356742227"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HLirHEYb0AAWpzN.jpg",
-          "https://t.co/6CdIepYwGJ",
-          "pic.twitter.com/6CdIepYwGJ"
+          "https://pbs.twimg.com/media/HOop9q3aUAMsLRI.jpg",
+          "https://t.co/lpU5xEVEGx",
+          "pic.x.com/lpU5xEVEGx"
         ],
         "corroboration_count": 1,
         "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
+        "archive_reason": "daily_candidate_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_61dac60fd66c4167"
+      "inbox_id": "inbox_9b0bcbfef9744671"
     },
     {
       "kind": "x_gap",
@@ -87,29 +94,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "港区議会も明日で閉会。本日は事務整理日でした。その後は浄土寺盆踊り大会の世話人会でした。本番に向けて準備が続きます。\nちなみに7月8日、17日の二日間、盆踊り大",
+      "title": "【2026盆踊り情報】【糀谷】7/10(金)、11(土)萩中神社で盆踊り大会開催🏮\n〔盆踊り練習日程〕\n▼日時：6/28(日)、7/5(日)13:00～14:0",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2069747107603665109",
-      "source_url": "https://x.com/mitaakira3710/status/2069747107603665109",
+      "source_key": "x:2070054390040350720",
+      "source_url": "https://x.com/otafull/status/2070054390040350720",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_0af755d386022122",
-        "source_key": "x:2069747107603665109",
+        "candidate_id": "xgap_2a51652e2f270e27",
+        "source_key": "x:2070054390040350720",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/mitaakira3710/status/2069747107603665109",
-        "source_text": "\n港区議会も明日で閉会。本日は事務整理日でした。その後は浄土寺盆踊り大会の世話人会でした。本番に向けて準備が続きます。\nちなみに7月8日、17日の二日間、盆踊り大会に向けて赤坂の盆踊りを練習する機会を設けました。ぜひご参加ください！\n#浄土寺盆踊り大会　#赤坂　#三田あきら https://t.co/3dvCm8hdVl",
-        "source_author": "@mitaakira3710",
+        "source_url": "https://x.com/otafull/status/2070054390040350720",
+        "source_text": "\n【2026盆踊り情報】【糀谷】7/10(金)、11(土)萩中神社で盆踊り大会開催🏮\n〔盆踊り練習日程〕\n▼日時：6/28(日)、7/5(日)13:00～14:00\n▼場所：萩中新宿東町会会館2F(萩中神社となり)\nhttps://t.co/I05qTe7dIx\n#大田区　#商店街　#糀谷　#お祭り",
+        "source_author": "@otafull",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@mitaakira3710",
-          "account_name": "三田あきら@港区議会議員",
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -118,181 +125,29 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "7月8日"
+          "7/10",
+          "6/28",
+          "7/5"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@mitaakira3710",
-          "name": "三田あきら@港区議会議員",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
           "title": "",
-          "text": "港区議会も明日で閉会。本日は事務整理日でした。その後は浄土寺盆踊り大会の世話人会でした。本番に向けて準備が続きます。\nちなみに7月8日、17日の二日間、盆踊り大会に向けて赤坂の盆踊りを練習する機会を設けました。ぜひご参加ください！\n#浄土寺盆踊り大会　#赤坂　#三田あきら https://t.co/3dvCm8hdVl",
-          "url": "https://x.com/mitaakira3710/status/2069747107603665109",
-          "date": "2026-06-24T11:38:59+00:00",
-          "tweet_id": "2069747107603665109",
-          "tags": [
-            "🟡関心",
-            "q-program-songs-wide"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HLk4BRZbgAAOF8X.jpg",
-            "https://t.co/3dvCm8hdVl",
-            "pic.twitter.com/3dvCm8hdVl"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/mitaakira3710/status/2069747107603665109"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HLk4BRZbgAAOF8X.jpg",
-          "https://t.co/3dvCm8hdVl",
-          "pic.twitter.com/3dvCm8hdVl"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_51db927e3c354d3a"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【20260624-②号】仙波町三丁目自治会広報部です\nこの夏の自治会主催 #納涼盆踊り大会 は長徳寺で以下の通り実施致します。\n日時：令和8年8月8日（土）1",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2069759463029105001",
-      "source_url": "https://x.com/sembamachi3/status/2069759463029105001",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_fd9e5819f411b82d",
-        "source_key": "x:2069759463029105001",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/sembamachi3/status/2069759463029105001",
-        "source_text": "\n【20260624-②号】仙波町三丁目自治会広報部です\nこの夏の自治会主催 #納涼盆踊り大会 は長徳寺で以下の通り実施致します。\n日時：令和8年8月8日（土）18:30～\n※雨天の場合、翌9日（日）に順延\n場所： #長徳寺 境内\nご家族の皆様、ご近所の皆様お誘い合わせの上、遊びにお越しくださいませ。 https://t.co/oQd20PS0yK",
-        "source_author": "@sembamachi3",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@sembamachi3",
-          "account_name": "仙波町三丁目自治会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8月8日"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@sembamachi3",
-          "name": "仙波町三丁目自治会",
-          "title": "",
-          "text": "【20260624-②号】仙波町三丁目自治会広報部です\nこの夏の自治会主催 #納涼盆踊り大会 は長徳寺で以下の通り実施致します。\n日時：令和8年8月8日（土）18:30～\n※雨天の場合、翌9日（日）に順延\n場所： #長徳寺 境内\nご家族の皆様、ご近所の皆様お誘い合わせの上、遊びにお越しくださいませ。 https://t.co/oQd20PS0yK",
-          "url": "https://x.com/sembamachi3/status/2069759463029105001",
-          "date": "2026-06-24T12:28:04+00:00",
-          "tweet_id": "2069759463029105001",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HLlDNc9XIAABaMe.jpg",
-            "https://t.co/oQd20PS0yK",
-            "pic.twitter.com/oQd20PS0yK"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/sembamachi3/status/2069759463029105001"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HLlDNc9XIAABaMe.jpg",
-          "https://t.co/oQd20PS0yK",
-          "pic.twitter.com/oQd20PS0yK"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_c69489fb5d2c87f3"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "6月24日（水）第51回浄土寺盆踊り大会　世話人会が開催されました。（代表世話人　赤坂一ツ木町会）\n　開催日時：7月23日（木）・24日（金）午後6時30分",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2069932544456573345",
-      "source_url": "https://x.com/shin5tw99/status/2069932544456573345",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_5eae5fd72ba5b210",
-        "source_key": "x:2069932544456573345",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/shin5tw99/status/2069932544456573345",
-        "source_text": "\n6月24日（水）第51回浄土寺盆踊り大会　世話人会が開催されました。（代表世話人　赤坂一ツ木町会）\n　開催日時：7月23日（木）・24日（金）午後6時30分",
-        "source_author": "@shin5tw99",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@shin5tw99",
-          "account_name": "赤坂新町五丁目町会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "6月24日",
-          "7月23日",
-          "6時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@shin5tw99",
-          "name": "赤坂新町五丁目町会",
-          "title": "",
-          "text": "6月24日（水）第51回浄土寺盆踊り大会　世話人会が開催されました。（代表世話人　赤坂一ツ木町会）\n　開催日時：7月23日（木）・24日（金）午後6時30分",
-          "url": "https://x.com/shin5tw99/status/2069932544456573345",
-          "date": "2026-06-24T23:55:50+00:00",
-          "tweet_id": "2069932544456573345",
+          "text": "【2026盆踊り情報】【糀谷】7/10(金)、11(土)萩中神社で盆踊り大会開催🏮\n〔盆踊り練習日程〕\n▼日時：6/28(日)、7/5(日)13:00～14:00\n▼場所：萩中新宿東町会会館2F(萩中神社となり)\nhttps://t.co/I05qTe7dIx\n#大田区　#商店街　#糀谷　#お祭り",
+          "url": "https://x.com/otafull/status/2070054390040350720",
+          "date": "2026-06-25T08:00:00+00:00",
+          "tweet_id": "2070054390040350720",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ]
         },
         "source_urls": [
-          "https://x.com/shin5tw99/status/2069932544456573345"
+          "https://x.com/otafull/status/2070054390040350720"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -300,7 +155,7 @@
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_b3217bb6e221b7c8"
+      "inbox_id": "inbox_7ec447c1650bffb2"
     },
     {
       "kind": "x_gap",
@@ -308,30 +163,30 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "鉄砲洲納涼盆踊り\n2026年は鉄砲洲公園にて\n8月3日(月)・4日(火)・5日(水)\n18:45〜21:00\n開催予定です\n\n盆踊り好きの皆様ぜひお越しください",
+      "title": "【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」 https://t.co/7azou5ehgO",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2069959259895496872",
-      "source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+      "source_key": "x:2071091351559778435",
+      "source_url": "https://x.com/otafull/status/2071091351559778435",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_d9abbc9401255956",
-        "source_key": "x:2069959259895496872",
+        "candidate_id": "xgap_4dda18698e71be2d",
+        "source_key": "x:2071091351559778435",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/iri2choukai/status/2069959259895496872",
-        "source_text": "\n鉄砲洲納涼盆踊り\n2026年は鉄砲洲公園にて\n8月3日(月)・4日(火)・5日(水)\n18:45〜21:00\n開催予定です\n\n盆踊り好きの皆様ぜひお越しください\n\n#盆踊り\n#鉄砲洲\n#鉄砲洲公園",
-        "source_author": "@iri2choukai",
+        "source_url": "https://x.com/otafull/status/2071091351559778435",
+        "source_text": "\n【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」 https://t.co/7azou5ehgO",
+        "source_author": "@otafull",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@iri2choukai",
-          "account_name": "入船二丁目町会",
-          "source_type": "official_or_organizer_social",
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
+          "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
             "registered_official_source_account"
@@ -339,27 +194,27 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月3日"
+          "7/13"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@iri2choukai",
-          "name": "入船二丁目町会",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
           "title": "",
-          "text": "鉄砲洲納涼盆踊り\n2026年は鉄砲洲公園にて\n8月3日(月)・4日(火)・5日(水)\n18:45〜21:00\n開催予定です\n\n盆踊り好きの皆様ぜひお越しください\n\n#盆踊り\n#鉄砲洲\n#鉄砲洲公園",
-          "url": "https://x.com/iri2choukai/status/2069959259895496872",
-          "date": "2026-06-25T01:42:00+00:00",
-          "tweet_id": "2069959259895496872",
+          "text": "【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」 https://t.co/7azou5ehgO",
+          "url": "https://x.com/otafull/status/2071091351559778435",
+          "date": "2026-06-28T04:40:31+00:00",
+          "tweet_id": "2071091351559778435",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ]
         },
         "source_urls": [
-          "https://x.com/iri2choukai/status/2069959259895496872"
+          "https://x.com/otafull/status/2071091351559778435"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -367,7 +222,150 @@
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_b316a1fcd1232c7a"
+      "inbox_id": "inbox_9c9566d8ed8672d5"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【盆踊り情報2026】【京急蒲田】2026/7/18(土)、19(日)薭田神社で盆踊りを6年ぶりに開催！ https://t.co/wZnGyUQsYm",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2071133329517396250",
+      "source_url": "https://x.com/otafull/status/2071133329517396250",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_172d6de7f7d4ae0e",
+        "source_key": "x:2071133329517396250",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/otafull/status/2071133329517396250",
+        "source_text": "\n【盆踊り情報2026】【京急蒲田】2026/7/18(土)、19(日)薭田神社で盆踊りを6年ぶりに開催！ https://t.co/wZnGyUQsYm",
+        "source_author": "@otafull",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "2026/7/18"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
+          "title": "",
+          "text": "【盆踊り情報2026】【京急蒲田】2026/7/18(土)、19(日)薭田神社で盆踊りを6年ぶりに開催！ https://t.co/wZnGyUQsYm",
+          "url": "https://x.com/otafull/status/2071133329517396250",
+          "date": "2026-06-28T07:27:20+00:00",
+          "tweet_id": "2071133329517396250",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/otafull/status/2071133329517396250"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_26fbd9df1581610e"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【盆踊り情報2026】【大森】7/11(土)北野青年会「ぼんおどり大会」\n模擬店も多数出店予定❤️盆踊りの前にヒップホップのダンスステージもありますよ～🙌\nht",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2071368045725921603",
+      "source_url": "https://x.com/otafull/status/2071368045725921603",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_52d9597d95bd528f",
+        "source_key": "x:2071368045725921603",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/otafull/status/2071368045725921603",
+        "source_text": "\n【盆踊り情報2026】【大森】7/11(土)北野青年会「ぼんおどり大会」\n模擬店も多数出店予定❤️盆踊りの前にヒップホップのダンスステージもありますよ～🙌\nhttps://t.co/TA3alfRJRL\n#大田区　#商店街　#大森　#お祭り https://t.co/6MITcrLvcD",
+        "source_author": "@otafull",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "7/11"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
+          "title": "",
+          "text": "【盆踊り情報2026】【大森】7/11(土)北野青年会「ぼんおどり大会」\n模擬店も多数出店予定❤️盆踊りの前にヒップホップのダンスステージもありますよ～🙌\nhttps://t.co/TA3alfRJRL\n#大田区　#商店街　#大森　#お祭り https://t.co/6MITcrLvcD",
+          "url": "https://x.com/otafull/status/2071368045725921603",
+          "date": "2026-06-28T23:00:00+00:00",
+          "tweet_id": "2071368045725921603",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLohB1ObQAAj-1v.jpg",
+            "https://t.co/6MITcrLvcD",
+            "pic.twitter.com/6MITcrLvcD"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/otafull/status/2071368045725921603"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLohB1ObQAAj-1v.jpg",
+          "https://t.co/6MITcrLvcD",
+          "pic.twitter.com/6MITcrLvcD"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_71687d5ccb712de3"
     }
   ],
   "selection": {
@@ -375,11 +373,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2069598296176578987",
-      "x:2069747107603665109",
-      "x:2069759463029105001",
-      "x:2069932544456573345",
-      "x:2069959259895496872"
+      "x:2083523934356742227",
+      "x:2070054390040350720",
+      "x:2071091351559778435",
+      "x:2071133329517396250",
+      "x:2071368045725921603"
     ]
   },
   "write_mode": "snapshot_only_default_off",
