@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-04T11:37:38.825296+00:00",
+  "generated_at": "2026-09-05T10:46:48.055424+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,325 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_26fbd9df1581610e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【京急蒲田】2026/7/18(土)、19(日)薭田神社で盆踊りを6年ぶりに開催！ https://t.co/wZnGyUQsYm",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2071133329517396250",
+      "source_url": "https://x.com/otafull/status/2071133329517396250",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9346620f093718073d56f0235dcc67aa132177b663cdbe3af49cd8d69692616d",
+      "last_seen_at": "github-33960969397-1",
+      "created_at": "2026-09-05T10:46:08.981936+00:00",
+      "updated_at": "2026-09-05T10:46:08.981936+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_172d6de7f7d4ae0e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/7/18"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2071133329517396250",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【京急蒲田】2026/7/18(土)、19(日)薭田神社で盆踊りを6年ぶりに開催！ https://t.co/wZnGyUQsYm",
+        "source_url": "https://x.com/otafull/status/2071133329517396250",
+        "source_urls": [
+          "https://x.com/otafull/status/2071133329517396250"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-28T07:27:20+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【京急蒲田】2026/7/18(土)、19(日)薭田神社で盆踊りを6年ぶりに開催！ https://t.co/wZnGyUQsYm",
+          "title": "",
+          "tweet_id": "2071133329517396250",
+          "url": "https://x.com/otafull/status/2071133329517396250"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_71687d5ccb712de3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大森】7/11(土)北野青年会「ぼんおどり大会」\n模擬店も多数出店予定❤️盆踊りの前にヒップホップのダンスステージもありますよ～🙌\nht",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2071368045725921603",
+      "source_url": "https://x.com/otafull/status/2071368045725921603",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e9c8a2f2d8f24b92bfec94d5a697c49bedbacc2356906fbd44210b9449e44de9",
+      "last_seen_at": "github-33960969397-1",
+      "created_at": "2026-09-05T10:46:08.981936+00:00",
+      "updated_at": "2026-09-05T10:46:08.981936+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_52d9597d95bd528f",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/11"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2071368045725921603",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLohB1ObQAAj-1v.jpg",
+          "https://t.co/6MITcrLvcD",
+          "pic.twitter.com/6MITcrLvcD"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大森】7/11(土)北野青年会「ぼんおどり大会」\n模擬店も多数出店予定❤️盆踊りの前にヒップホップのダンスステージもありますよ～🙌\nhttps://t.co/TA3alfRJRL\n#大田区　#商店街　#大森　#お祭り https://t.co/6MITcrLvcD",
+        "source_url": "https://x.com/otafull/status/2071368045725921603",
+        "source_urls": [
+          "https://x.com/otafull/status/2071368045725921603"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-28T23:00:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLohB1ObQAAj-1v.jpg",
+            "https://t.co/6MITcrLvcD",
+            "pic.twitter.com/6MITcrLvcD"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【大森】7/11(土)北野青年会「ぼんおどり大会」\n模擬店も多数出店予定❤️盆踊りの前にヒップホップのダンスステージもありますよ～🙌\nhttps://t.co/TA3alfRJRL\n#大田区　#商店街　#大森　#お祭り https://t.co/6MITcrLvcD",
+          "title": "",
+          "tweet_id": "2071368045725921603",
+          "url": "https://x.com/otafull/status/2071368045725921603"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_7ec447c1650bffb2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【2026盆踊り情報】【糀谷】7/10(金)、11(土)萩中神社で盆踊り大会開催🏮\n〔盆踊り練習日程〕\n▼日時：6/28(日)、7/5(日)13:00～14:0",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2070054390040350720",
+      "source_url": "https://x.com/otafull/status/2070054390040350720",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "30c3ba51a33505194144d9beac948bc56e63a64e2f4c5610c2dff21531432a8e",
+      "last_seen_at": "github-33960969397-1",
+      "created_at": "2026-09-05T10:46:08.981936+00:00",
+      "updated_at": "2026-09-05T10:46:08.981936+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2a51652e2f270e27",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/10",
+          "6/28",
+          "7/5"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2070054390040350720",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【2026盆踊り情報】【糀谷】7/10(金)、11(土)萩中神社で盆踊り大会開催🏮\n〔盆踊り練習日程〕\n▼日時：6/28(日)、7/5(日)13:00～14:00\n▼場所：萩中新宿東町会会館2F(萩中神社となり)\nhttps://t.co/I05qTe7dIx\n#大田区　#商店街　#糀谷　#お祭り",
+        "source_url": "https://x.com/otafull/status/2070054390040350720",
+        "source_urls": [
+          "https://x.com/otafull/status/2070054390040350720"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-25T08:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【2026盆踊り情報】【糀谷】7/10(金)、11(土)萩中神社で盆踊り大会開催🏮\n〔盆踊り練習日程〕\n▼日時：6/28(日)、7/5(日)13:00～14:00\n▼場所：萩中新宿東町会会館2F(萩中神社となり)\nhttps://t.co/I05qTe7dIx\n#大田区　#商店街　#糀谷　#お祭り",
+          "title": "",
+          "tweet_id": "2070054390040350720",
+          "url": "https://x.com/otafull/status/2070054390040350720"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9c9566d8ed8672d5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」 https://t.co/7azou5ehgO",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2071091351559778435",
+      "source_url": "https://x.com/otafull/status/2071091351559778435",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d574abb918c0a9fdea91ef6baee70e8c322c29bf965bdd590290a7d132ee3736",
+      "last_seen_at": "github-33960969397-1",
+      "created_at": "2026-09-05T10:46:08.981936+00:00",
+      "updated_at": "2026-09-05T10:46:08.981936+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_4dda18698e71be2d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/13"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2071091351559778435",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」 https://t.co/7azou5ehgO",
+        "source_url": "https://x.com/otafull/status/2071091351559778435",
+        "source_urls": [
+          "https://x.com/otafull/status/2071091351559778435"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-28T04:40:31+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」 https://t.co/7azou5ehgO",
+          "title": "",
+          "tweet_id": "2071091351559778435",
+          "url": "https://x.com/otafull/status/2071091351559778435"
         }
       }
     },
@@ -7525,6 +7844,99 @@
           "title": "",
           "tweet_id": "2056637018248229108",
           "url": "https://x.com/8_chokai/status/2056637018248229108"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9b0bcbfef9744671",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "帰り道の収穫〜\n9月19.20日\n志村第六小学校盆踊り大会\nまあ\n知ってたけど😂\n板橋区盆踊らさんに\n踊り来て\n言われているヤツや😂\n#板橋区\n#盆踊り htt",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083523934356742227",
+      "source_url": "https://x.com/rollingasahi/status/2083523934356742227",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6c21a26506a9233a0bcd16e4fba4f6620b6e1c40925fad0dde62b766c7db71cb",
+      "last_seen_at": "github-33960969397-1",
+      "created_at": "2026-09-05T10:46:08.981936+00:00",
+      "updated_at": "2026-09-05T10:46:08.981936+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_5e7005dccdc29b2e",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9月19"
+        ],
+        "event_group_key": "informal-venue:038d771a18400959",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "板橋区坂下2-18-1",
+          "region_hint": "板橋区",
+          "source_url": "https://www.chokai.info/hasunehigashi/038150.php",
+          "venue": "志村第六小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-19"
+        ],
+        "priority_score": 85,
+        "source_author": "@rollingasahi",
+        "source_count": 1,
+        "source_key": "x:2083523934356742227",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOop9q3aUAMsLRI.jpg",
+          "https://t.co/lpU5xEVEGx",
+          "pic.x.com/lpU5xEVEGx"
+        ],
+        "source_officiality": {
+          "account_name": "ローリングあさひ",
+          "classification": "unknown_or_personal_social",
+          "handle": "@rollingasahi",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n帰り道の収穫〜\n9月19.20日\n志村第六小学校盆踊り大会\nまあ\n知ってたけど😂\n板橋区盆踊らさんに\n踊り来て\n言われているヤツや😂\n#板橋区\n#盆踊り https://t.co/lpU5xEVEGx",
+        "source_url": "https://x.com/rollingasahi/status/2083523934356742227",
+        "source_urls": [
+          "https://x.com/rollingasahi/status/2083523934356742227"
+        ],
+        "voice": {
+          "account": "@rollingasahi",
+          "date": "2026-08-01T12:03:10+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOop9q3aUAMsLRI.jpg",
+            "https://t.co/lpU5xEVEGx",
+            "pic.x.com/lpU5xEVEGx"
+          ],
+          "name": "ローリングあさひ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "帰り道の収穫〜\n9月19.20日\n志村第六小学校盆踊り大会\nまあ\n知ってたけど😂\n板橋区盆踊らさんに\n踊り来て\n言われているヤツや😂\n#板橋区\n#盆踊り https://t.co/lpU5xEVEGx",
+          "title": "",
+          "tweet_id": "2083523934356742227",
+          "url": "https://x.com/rollingasahi/status/2083523934356742227"
         }
       }
     },
