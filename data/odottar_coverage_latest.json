@@ -1,192 +1,192 @@
 {
   "schema_version": 1,
   "generated_by": "build_odottar_coverage_benchmark.py",
-  "fetched_at": "2026-08-31T00:33:34Z",
+  "fetched_at": "2026-09-06T23:50:35Z",
   "source": {
     "url": "https://odottar.com/events.json",
-    "raw_sha256": "8616190272b9141e9b1cf1382ca969e7f2e57c65d0ebb28d519afa4429a56a71",
-    "row_count": 2256
+    "raw_sha256": "35ebf2cc1b1018a17ee103ece79e250d0f5c69e7a77ae4bc8a77754c699f4219",
+    "row_count": 2510
   },
   "safety_boundary": "coverage_benchmark_only: no canonical import, no review-inbox candidate, and no odottar URL projection into event source_urls",
   "canonical_write_count": 0,
   "review_inbox_candidate_count": 0,
   "summary": {
-    "odottar_tokyo23": 693,
+    "odottar_tokyo23": 763,
     "bonsuke_tokyo23": 387,
-    "estimated_matched": 179,
-    "odottar_only": 514,
-    "bonsuke_only": 208
+    "estimated_matched": 185,
+    "odottar_only": 578,
+    "bonsuke_only": 202
   },
   "wards": [
     {
       "ward": "千代田区",
       "priority": false,
-      "odottar": 13,
+      "odottar": 15,
       "bonsuke": 8,
-      "estimated_matched": 5,
-      "odottar_only": 8,
-      "bonsuke_only": 3
+      "estimated_matched": 6,
+      "odottar_only": 9,
+      "bonsuke_only": 2
     },
     {
       "ward": "中央区",
       "priority": false,
-      "odottar": 25,
+      "odottar": 28,
       "bonsuke": 17,
       "estimated_matched": 7,
-      "odottar_only": 18,
+      "odottar_only": 21,
       "bonsuke_only": 10
     },
     {
       "ward": "港区",
       "priority": false,
-      "odottar": 31,
+      "odottar": 37,
       "bonsuke": 23,
       "estimated_matched": 8,
-      "odottar_only": 23,
+      "odottar_only": 29,
       "bonsuke_only": 15
     },
     {
       "ward": "新宿区",
       "priority": false,
-      "odottar": 31,
+      "odottar": 32,
       "bonsuke": 19,
       "estimated_matched": 10,
-      "odottar_only": 21,
+      "odottar_only": 22,
       "bonsuke_only": 9
     },
     {
       "ward": "文京区",
       "priority": false,
-      "odottar": 6,
+      "odottar": 9,
       "bonsuke": 3,
       "estimated_matched": 1,
-      "odottar_only": 5,
+      "odottar_only": 8,
       "bonsuke_only": 2
     },
     {
       "ward": "台東区",
       "priority": false,
-      "odottar": 29,
+      "odottar": 30,
       "bonsuke": 18,
       "estimated_matched": 6,
-      "odottar_only": 23,
+      "odottar_only": 24,
       "bonsuke_only": 12
     },
     {
       "ward": "墨田区",
       "priority": false,
-      "odottar": 17,
+      "odottar": 21,
       "bonsuke": 25,
       "estimated_matched": 3,
-      "odottar_only": 14,
+      "odottar_only": 18,
       "bonsuke_only": 22
     },
     {
       "ward": "江東区",
       "priority": false,
-      "odottar": 55,
+      "odottar": 57,
       "bonsuke": 38,
-      "estimated_matched": 24,
-      "odottar_only": 31,
-      "bonsuke_only": 14
+      "estimated_matched": 25,
+      "odottar_only": 32,
+      "bonsuke_only": 13
     },
     {
       "ward": "品川区",
       "priority": false,
-      "odottar": 25,
+      "odottar": 33,
       "bonsuke": 24,
       "estimated_matched": 3,
-      "odottar_only": 22,
+      "odottar_only": 30,
       "bonsuke_only": 21
     },
     {
       "ward": "目黒区",
       "priority": false,
-      "odottar": 6,
+      "odottar": 8,
       "bonsuke": 8,
-      "estimated_matched": 2,
-      "odottar_only": 4,
-      "bonsuke_only": 6
+      "estimated_matched": 3,
+      "odottar_only": 5,
+      "bonsuke_only": 5
     },
     {
       "ward": "大田区",
       "priority": true,
-      "odottar": 43,
+      "odottar": 44,
       "bonsuke": 18,
       "estimated_matched": 2,
-      "odottar_only": 41,
+      "odottar_only": 42,
       "bonsuke_only": 16
     },
     {
       "ward": "世田谷区",
       "priority": false,
-      "odottar": 44,
+      "odottar": 46,
       "bonsuke": 32,
       "estimated_matched": 1,
-      "odottar_only": 43,
+      "odottar_only": 45,
       "bonsuke_only": 31
     },
     {
       "ward": "渋谷区",
       "priority": false,
-      "odottar": 13,
+      "odottar": 11,
       "bonsuke": 7,
       "estimated_matched": 4,
-      "odottar_only": 9,
+      "odottar_only": 7,
       "bonsuke_only": 3
     },
     {
       "ward": "中野区",
       "priority": false,
-      "odottar": 11,
+      "odottar": 15,
       "bonsuke": 3,
       "estimated_matched": 2,
-      "odottar_only": 9,
+      "odottar_only": 13,
       "bonsuke_only": 1
     },
     {
       "ward": "杉並区",
       "priority": false,
-      "odottar": 7,
+      "odottar": 13,
       "bonsuke": 4,
-      "estimated_matched": 1,
-      "odottar_only": 6,
-      "bonsuke_only": 3
+      "estimated_matched": 2,
+      "odottar_only": 11,
+      "bonsuke_only": 2
     },
     {
       "ward": "豊島区",
       "priority": true,
-      "odottar": 20,
+      "odottar": 22,
       "bonsuke": 6,
       "estimated_matched": 2,
-      "odottar_only": 18,
+      "odottar_only": 20,
       "bonsuke_only": 4
     },
     {
       "ward": "北区",
       "priority": false,
-      "odottar": 6,
+      "odottar": 10,
       "bonsuke": 4,
       "estimated_matched": 0,
-      "odottar_only": 6,
+      "odottar_only": 10,
       "bonsuke_only": 4
     },
     {
       "ward": "荒川区",
       "priority": true,
-      "odottar": 15,
+      "odottar": 21,
       "bonsuke": 3,
       "estimated_matched": 0,
-      "odottar_only": 15,
+      "odottar_only": 21,
       "bonsuke_only": 3
     },
     {
       "ward": "板橋区",
       "priority": true,
-      "odottar": 48,
+      "odottar": 55,
       "bonsuke": 20,
       "estimated_matched": 15,
-      "odottar_only": 33,
+      "odottar_only": 40,
       "bonsuke_only": 5
     },
     {
@@ -201,10 +201,10 @@
     {
       "ward": "足立区",
       "priority": true,
-      "odottar": 73,
+      "odottar": 78,
       "bonsuke": 28,
       "estimated_matched": 26,
-      "odottar_only": 47,
+      "odottar_only": 52,
       "bonsuke_only": 2
     },
     {
@@ -219,11 +219,11 @@
     {
       "ward": "江戸川区",
       "priority": true,
-      "odottar": 112,
+      "odottar": 115,
       "bonsuke": 58,
-      "estimated_matched": 45,
-      "odottar_only": 67,
-      "bonsuke_only": 13
+      "estimated_matched": 47,
+      "odottar_only": 68,
+      "bonsuke_only": 11
     }
   ],
   "samples": {
@@ -255,6 +255,20 @@
         "venue": "品川区立宮前小学校及び宮前商店街周辺",
         "area": "品川区",
         "date": "2026-06-07"
+      },
+      {
+        "stable_key": "575f439428",
+        "name": "第69回 民踊大会（第二回盆踊りコンクール）",
+        "venue": "銀座ブロッサム 中央会館ホール",
+        "area": "中央区",
+        "date": "2026-06-07"
+      },
+      {
+        "stable_key": "c209133b45",
+        "name": "第五回 ゆるっと徹夜で盆踊りの集い2026",
+        "venue": "乃木坂駅近郊",
+        "area": "港区",
+        "date": "2026-06-13"
       },
       {
         "stable_key": "6f161655a1",
@@ -418,25 +432,11 @@
         "date": "2026-07-11"
       },
       {
-        "stable_key": "ed1070e343",
-        "name": "世田谷区立八幡小学校",
-        "venue": "世田谷区立八幡小学校",
-        "area": "世田谷区",
-        "date": "2026-07-12"
-      },
-      {
-        "stable_key": "89f32c8c05",
-        "name": "花の民踊講習会(26-2)",
-        "venue": "品川区中小企業センター3階大会議室",
-        "area": "品川区",
-        "date": "2026-07-12"
-      },
-      {
-        "stable_key": "a01ff10ae1",
-        "name": "佃島の盆踊（佃島盆踊）",
-        "venue": "佃一丁目中央通り 佃1旧佃島渡船場前付近",
-        "area": "中央区",
-        "date": "2026-07-13"
+        "stable_key": "8a95452896",
+        "name": "サマーファミリーフェスティバル＆盆踊り大会",
+        "venue": "文京区立柳町小学校 校庭",
+        "area": "文京区",
+        "date": "2026-07-11"
       }
     ],
     "bonsuke_only": [
@@ -451,13 +451,6 @@
         "stable_key": "秋葉原東部納涼大会|和泉小学校校庭・和泉公園|2026-07-31",
         "name": "秋葉原東部納涼大会",
         "venue": "和泉小学校校庭・和泉公園",
-        "area": "千代田区",
-        "date": "2026-07-31"
-      },
-      {
-        "stable_key": "日本テレビ通り振興会 納涼盆踊り大会|番町の森|2026-07-31",
-        "name": "日本テレビ通り振興会 納涼盆踊り大会",
-        "venue": "番町の森",
         "area": "千代田区",
         "date": "2026-07-31"
       },
@@ -649,6 +642,13 @@
         "venue": "あけぼのばし通り",
         "area": "新宿区",
         "date": "2026-08-01"
+      },
+      {
+        "stable_key": "下落合四丁目町会 盆踊り大会|下落合公園|2025-07-19",
+        "name": "下落合四丁目町会 盆踊り大会",
+        "venue": "下落合公園",
+        "area": "新宿区",
+        "date": "2025-07-19"
       }
     ]
   }
