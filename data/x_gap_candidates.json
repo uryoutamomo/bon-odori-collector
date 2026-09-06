@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-09-05T10:45:04.856299+00:00",
+  "generated_at": "2026-09-06T11:03:50.643232+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 359,
+  "archived_count": 358,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -2405,9 +2405,7 @@
         "8/9",
         "9/5"
       ],
-      "observed_dates": [
-        "2026-09-05"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -16463,9 +16461,7 @@
       "date_hints": [
         "9/5"
       ],
-      "observed_dates": [
-        "2026-09-05"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -17747,7 +17743,6 @@
         "8月1日"
       ],
       "observed_dates": [
-        "2026-09-05",
         "2026-09-06",
         "2026-09-13"
       ],
@@ -18797,7 +18792,6 @@
         "9/6"
       ],
       "observed_dates": [
-        "2026-09-05",
         "2026-09-06"
       ],
       "event_group_key": "",
@@ -22363,9 +22357,7 @@
       "date_hints": [
         "2026/9/5"
       ],
-      "observed_dates": [
-        "2026-09-05"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": null,
       "voice": {
@@ -23658,77 +23650,6 @@
         "https://pbs.twimg.com/media/HP5jhlDbwAAVNuk.jpg",
         "https://t.co/nze9H8kkjL",
         "pic.x.com/nze9H8kkjL"
-      ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
-      "candidate_id": "xgap_7b8b9dec64070ebf",
-      "source_key": "x:2089837092050547151",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/yoshinew25/status/2089837092050547151",
-      "source_text": "\n神奈川・相模原で「第53回 相模原納涼花火大会」開催！ 9月5日（土）\n\n会場は相模原市中央区の水郷田名で、開催時間は13時から20時15分まで。花火は19時から打ち上げ。\n夜空を彩る約8,000発の花火が、相模原の夏の終わりを華やかに盛り上げます。\nhttps://t.co/sbwkAr1FDJ https://t.co/QhmKxilX5Z",
-      "source_author": "@yoshinew25",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@yoshinew25",
-        "account_name": "旅飯 agogo！",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "9月5日",
-        "13時",
-        "20時",
-        "19時"
-      ],
-      "observed_dates": [
-        "2026-09-05"
-      ],
-      "event_group_key": "informal:749842d40a9cf47d",
-      "known_venue_evidence": null,
-      "voice": {
-        "source": "x",
-        "account": "@yoshinew25",
-        "name": "旅飯 agogo！",
-        "profile_description": "旅と、そこで出会う飯が好き、\n自由で縛られない生活が好き、\n好きなバイクや鉄道に乗って\n自由気ままに生きて行く！\n旅・飯・バイク・写真・晴れた日が好きな\n自由人です！",
-        "title": "",
-        "text": "神奈川・相模原で「第53回 相模原納涼花火大会」開催！ 9月5日（土）\n\n会場は相模原市中央区の水郷田名で、開催時間は13時から20時15分まで。花火は19時から打ち上げ。\n夜空を彩る約8,000発の花火が、相模原の夏の終わりを華やかに盛り上げます。\nhttps://t.co/sbwkAr1FDJ https://t.co/QhmKxilX5Z",
-        "url": "https://x.com/yoshinew25/status/2089837092050547151",
-        "date": "2026-08-18T22:09:24+00:00",
-        "tweet_id": "2089837092050547151",
-        "tags": [
-          "🟡関心",
-          "q-poster-images"
-        ],
-        "critique_post": false,
-        "media_urls": [
-          "https://pbs.twimg.com/media/HQCXa07bMAAkzAF.jpg",
-          "https://t.co/QhmKxilX5Z",
-          "pic.x.com/QhmKxilX5Z",
-          "https://pbs.twimg.com/media/HQCXckEbQAA5OT3.jpg",
-          "https://pbs.twimg.com/media/HQCXcjSaQAAJN52.jpg"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/yoshinew25/status/2089837092050547151"
-      ],
-      "source_media_urls": [
-        "https://pbs.twimg.com/media/HQCXa07bMAAkzAF.jpg",
-        "https://t.co/QhmKxilX5Z",
-        "pic.x.com/QhmKxilX5Z",
-        "https://pbs.twimg.com/media/HQCXckEbQAA5OT3.jpg",
-        "https://pbs.twimg.com/media/HQCXcjSaQAAJN52.jpg"
       ],
       "corroboration_count": 1,
       "source_count": 1,
