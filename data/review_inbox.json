@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-05T10:55:02.273513+00:00",
+  "generated_at": "2026-09-06T11:05:13.568191+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,423 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_112acbbff8c8254d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\nhttps://t.co/VtURaUw8kq\n#大田区　#商店街　",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2075066673389076708",
+      "source_url": "https://x.com/otafull/status/2075066673389076708",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "78667e8e097ebddea3f3092b5b66343459396bccc52738eb40c88da64b14bf67",
+      "last_seen_at": "github-34028713736-1",
+      "created_at": "2026-09-06T11:04:42.838800+00:00",
+      "updated_at": "2026-09-06T11:04:42.838800+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ebececbd9b68705f",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/28"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2075066673389076708",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HMweI4CbgAAbPdm.jpg",
+          "https://t.co/DKAbwoUcGM",
+          "pic.x.com/DKAbwoUcGM"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\nhttps://t.co/VtURaUw8kq\n#大田区　#商店街　#大森南　#盆踊り https://t.co/DKAbwoUcGM",
+        "source_url": "https://x.com/otafull/status/2075066673389076708",
+        "source_urls": [
+          "https://x.com/otafull/status/2075066673389076708"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-09T03:57:02+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HMweI4CbgAAbPdm.jpg",
+            "https://t.co/DKAbwoUcGM",
+            "pic.x.com/DKAbwoUcGM"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x_proactive",
+          "tags": [
+            "🔎能動検索",
+            "大森南4丁目公園"
+          ],
+          "text": "【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\nhttps://t.co/VtURaUw8kq\n#大田区　#商店街　#大森南　#盆踊り https://t.co/DKAbwoUcGM",
+          "title": "",
+          "tweet_id": "2075066673389076708",
+          "url": "https://x.com/otafull/status/2075066673389076708"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_47b2736d66ebd74c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7/17（金）,18（土）,19（日）に巣鴨駅南口ロータリーにて、盆踊り大会が開催されます。\n仰高小学校によるヨサコイソーランを皮切りに、金曜日の夕方から土曜、",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2071489526049210554",
+      "source_url": "https://x.com/toshimakukanko/status/2071489526049210554",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c4b6a3390b2b9777b2f77d0553bf83213db3569f2d8dcfdae6fcbe3ebb8e71bb",
+      "last_seen_at": "github-34028713736-1",
+      "created_at": "2026-09-06T11:04:42.838800+00:00",
+      "updated_at": "2026-09-06T11:04:42.838800+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ddc73b7637d427bb",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/17"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@toshimakukanko",
+        "source_count": 1,
+        "source_key": "x:2071489526049210554",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HL9oFE0bsAAUwVE.jpg",
+          "https://t.co/cgS2n05hXy",
+          "pic.twitter.com/cgS2n05hXy"
+        ],
+        "source_officiality": {
+          "account_name": "豊島区観光協会 観光情報センター",
+          "classification": "registered_official_social",
+          "handle": "@toshimakukanko",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7/17（金）,18（土）,19（日）に巣鴨駅南口ロータリーにて、盆踊り大会が開催されます。\n仰高小学校によるヨサコイソーランを皮切りに、金曜日の夕方から土曜、日曜と３日間行われ、夜の盆踊りを中心に盛り上がります！\n夏の夕涼みに是非お越し下さい！！\n\n #巣鴨盆踊り #巣鴨大鳥神社商店街 https://t.co/cgS2n05hXy",
+        "source_url": "https://x.com/toshimakukanko/status/2071489526049210554",
+        "source_urls": [
+          "https://x.com/toshimakukanko/status/2071489526049210554"
+        ],
+        "voice": {
+          "account": "@toshimakukanko",
+          "date": "2026-06-29T07:02:44+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HL9oFE0bsAAUwVE.jpg",
+            "https://t.co/cgS2n05hXy",
+            "pic.twitter.com/cgS2n05hXy"
+          ],
+          "name": "豊島区観光協会 観光情報センター",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "7/17（金）,18（土）,19（日）に巣鴨駅南口ロータリーにて、盆踊り大会が開催されます。\n仰高小学校によるヨサコイソーランを皮切りに、金曜日の夕方から土曜、日曜と３日間行われ、夜の盆踊りを中心に盛り上がります！\n夏の夕涼みに是非お越し下さい！！\n\n #巣鴨盆踊り #巣鴨大鳥神社商店街 https://t.co/cgS2n05hXy",
+          "title": "",
+          "tweet_id": "2071489526049210554",
+          "url": "https://x.com/toshimakukanko/status/2071489526049210554"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4b1d7583fe042bf6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」\n露店も出店しますよ✨夏の思い出にぜひお出かけください🫶\nhtt",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2072153219355312620",
+      "source_url": "https://x.com/otafull/status/2072153219355312620",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d78ea375565492f3d34aaad5622e56bbc715cd22adb8cfaab55101bcdcf3ebf5",
+      "last_seen_at": "github-34028713736-1",
+      "created_at": "2026-09-06T11:04:42.838800+00:00",
+      "updated_at": "2026-09-06T11:04:42.838800+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2e5de1e32bcb8566",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/13"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2072153219355312620",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」\n露店も出店しますよ✨夏の思い出にぜひお出かけください🫶\nhttps://t.co/7azou5ehgO\n#大田区　#商店街　#大鳥居　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2072153219355312620",
+        "source_urls": [
+          "https://x.com/otafull/status/2072153219355312620"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-01T03:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x_proactive",
+          "tags": [
+            "🔎能動検索",
+            "羽田神社"
+          ],
+          "text": "【盆踊り情報2026】【大鳥居】7/13(月)〜15(水)羽田神社で羽田青年連合会「納涼盆踊り」\n露店も出店しますよ✨夏の思い出にぜひお出かけください🫶\nhttps://t.co/7azou5ehgO\n#大田区　#商店街　#大鳥居　#盆踊り",
+          "title": "",
+          "tweet_id": "2072153219355312620",
+          "url": "https://x.com/otafull/status/2072153219355312620"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a093159edbc0519a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "区長の春木です。\n7/8は民謡研究部の「夏の盆踊り講習会」へ!三日連続の講習会の中日の7/8も、約50人が8/9の「東成区民まつり　夏の盆踊りの部」(今年は今里",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2075127818753896711",
+      "source_url": "https://x.com/higashinariku/status/2075127818753896711",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b9f4fb03560ab4c0a8d6316a66944a37196cdd2a970ac42147ed8b6cb819b47f",
+      "last_seen_at": "github-34028713736-1",
+      "created_at": "2026-09-06T11:04:42.838800+00:00",
+      "updated_at": "2026-09-06T11:04:42.838800+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_22ffc9fa829529f7",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/8",
+          "7/8",
+          "8/9",
+          "8/9"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@higashinariku",
+        "source_count": 1,
+        "source_key": "x:2075127818753896711",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HMv0GR1b0AAwZxL.jpg",
+          "https://t.co/RywR9P4rov",
+          "pic.x.com/RywR9P4rov",
+          "https://pbs.twimg.com/media/HMv0H7ybAAA6eUt.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大阪市東成区役所　区民の皆様へ",
+          "classification": "registered_official_social",
+          "handle": "@higashinariku",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n区長の春木です。\n7/8は民謡研究部の「夏の盆踊り講習会」へ!三日連続の講習会の中日の7/8も、約50人が8/9の「東成区民まつり　夏の盆踊りの部」(今年は今里盆踊りの二日目)に向けて熱心に練習されていました。僕も挑戦しましたが2ステップに苦戦。区民の皆さん、8/9はぜひ今里小学校へお越しください! https://t.co/RywR9P4rov",
+        "source_url": "https://x.com/higashinariku/status/2075127818753896711",
+        "source_urls": [
+          "https://x.com/higashinariku/status/2075127818753896711"
+        ],
+        "voice": {
+          "account": "@higashinariku",
+          "date": "2026-07-09T08:00:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HMv0GR1b0AAwZxL.jpg",
+            "https://t.co/RywR9P4rov",
+            "pic.x.com/RywR9P4rov",
+            "https://pbs.twimg.com/media/HMv0H7ybAAA6eUt.jpg"
+          ],
+          "name": "大阪市東成区役所　区民の皆様へ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-program-songs-wide"
+          ],
+          "text": "区長の春木です。\n7/8は民謡研究部の「夏の盆踊り講習会」へ!三日連続の講習会の中日の7/8も、約50人が8/9の「東成区民まつり　夏の盆踊りの部」(今年は今里盆踊りの二日目)に向けて熱心に練習されていました。僕も挑戦しましたが2ステップに苦戦。区民の皆さん、8/9はぜひ今里小学校へお越しください! https://t.co/RywR9P4rov",
+          "title": "",
+          "tweet_id": "2075127818753896711",
+          "url": "https://x.com/higashinariku/status/2075127818753896711"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_f1d0f6416e16fb96",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【お祭り情報2026】【蓮沼】7/18(土)、19(日) 御園神社\n昼間はお神輿✨夜は盆踊り✨両日とも境内に露店が出店しますよ～❤️\nhttps://t.co/",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2071428444039373260",
+      "source_url": "https://x.com/otafull/status/2071428444039373260",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "30c67cacf0e5e1a67d233f8cede67e5f8bd504b6f87ea020a746eb511fe96c41",
+      "last_seen_at": "github-34028713736-1",
+      "created_at": "2026-09-06T11:04:42.838800+00:00",
+      "updated_at": "2026-09-06T11:04:42.838800+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6a8a29c904608334",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/18"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2071428444039373260",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【お祭り情報2026】【蓮沼】7/18(土)、19(日) 御園神社\n昼間はお神輿✨夜は盆踊り✨両日とも境内に露店が出店しますよ～❤️\nhttps://t.co/CvB8le8izf\n#大田区　#商店街　#蓮沼　#お祭り",
+        "source_url": "https://x.com/otafull/status/2071428444039373260",
+        "source_urls": [
+          "https://x.com/otafull/status/2071428444039373260"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-06-29T03:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【お祭り情報2026】【蓮沼】7/18(土)、19(日) 御園神社\n昼間はお神輿✨夜は盆踊り✨両日とも境内に露店が出店しますよ～❤️\nhttps://t.co/CvB8le8izf\n#大田区　#商店街　#蓮沼　#お祭り",
+          "title": "",
+          "tweet_id": "2071428444039373260",
+          "url": "https://x.com/otafull/status/2071428444039373260"
         }
       }
     },
