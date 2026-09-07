@@ -3682,6 +3682,62 @@
     ]
   },
   {
+    "name": "雷門盆踊り",
+    "venue": "浅草雷門前 並木通り",
+    "area": "台東区",
+    "date": "2026-09-05",
+    "songs": [
+      {
+        "name": "GOT TO BE REAL",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "たいとう音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "スカイツリー音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京スカイツリー音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "輝け日本富士山おどり",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ]
+  },
+  {
     "name": "田原de盆踊り",
     "venue": "田原小学校",
     "area": "台東区",

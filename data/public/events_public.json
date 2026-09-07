@@ -4001,7 +4001,7 @@
       }
     ],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -4021,9 +4021,9 @@
     "last_seen_dates": [
       "2025-09-07"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-09-07"
@@ -4044,41 +4044,16 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-09-06",
-        "date_end": "2026-09-06",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第1日曜を2026年へスライド",
-        "source_date": "2025-09-07",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-09-07"
     ],
     "historical_reference_label": "2025-09-07実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-09-06",
-      "date_end": "2026-09-06",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第1日曜を2026年へスライド",
-      "source_date": "2025-09-07",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-09-06",
-    "historical_slide_date_end": "2026-09-06",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第1日曜を2026年へスライド",
-    "predicted_date": "2026-09-06",
-    "predicted_date_end": "2026-09-06",
-    "prediction_basis": "2025年実績の同月第1日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "郡上おどり in 青山",
@@ -10157,7 +10132,56 @@
         "count": 2
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "GOT TO BE REAL",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "たいとう音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "スカイツリー音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京スカイツリー音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "輝け日本富士山おどり",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",

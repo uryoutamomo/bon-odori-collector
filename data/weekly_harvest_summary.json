@@ -1,10 +1,10 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-06T11:04:12.271228+00:00",
+  "generated_at": "2026-09-07T12:41:14.038635+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-06T11:04:06.226552+00:00",
+  "source_generated_at": "2026-09-07T12:41:07.956697+00:00",
   "days": 3,
-  "voice_count": 39,
+  "voice_count": 44,
   "candidate_count": 10,
   "category_counts": {
     "曲候補": 10

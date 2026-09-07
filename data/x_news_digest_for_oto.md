@@ -1,7 +1,7 @@
 # X News Digest For Oto
 
-- generated_at: 2026-09-06T10:58:43+00:00
-- digest_count: 20707
+- generated_at: 2026-09-07T12:34:44+00:00
+- digest_count: 20708
 - status: machine prefilter; Oto interpretation pending
 
 | confidence | type | machine novelty | target | machine summary | machine reason | backcheck | source |
@@ -1286,7 +1286,7 @@
 | low | new_song_candidate | new | song | 曲候補「巨大やぐら囲み総踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 巨大やぐら囲み総踊り | 巨大やぐら囲み総踊り 盆踊り | https://x.com/bonDbonT/status/2088711486311145572 |
 | low | new_song_candidate | new | song | 曲候補「のデカンショ踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: のデカンショ踊り | のデカンショ踊り 盆踊り | https://x.com/kanamenyan1125/status/2088737114402001400 |
 | low | new_song_candidate | new | song | 曲候補「は先日踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: は先日踊り, うちの踊り | は先日踊り 盆踊り; うちの踊り 盆踊り | https://x.com/kuzunavi/status/2088620131761221920 |
-| low | new_song_candidate | new | song | 曲候補「炭坑節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 流山市民音頭, 1.流山市民音頭 | 炭坑節 盆踊り; 流山市民音頭 盆踊り | https://x.com/Ma_umojh/status/2088617364413993299 |
+| low | new_song_candidate | new | song | 曲候補「炭坑節」に関するX由来情報。 | 既存曲マスタにない曲名候補: 炭坑節, 流山市民音頭, 1.流山市民音頭 | 炭坑節 盆踊り; 流山市民音頭 盆踊り | https://x.com/Ma_umojh/status/2088617364413993299 |
 | low | new_song_candidate | new | song | 曲候補「盆ギリ恋唄」に関するX由来情報。 | 既存曲マスタにない曲名候補: 盆ギリ恋唄 | 盆ギリ恋唄 盆踊り | https://x.com/mamimami298/status/2088789165567799781 |
 | low | new_song_candidate | new | song | 曲候補「他の出場者は皆さん踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 他の出場者は皆さん踊り | 他の出場者は皆さん踊り 盆踊り | https://x.com/ara_news01/status/2088628956404846928 |
 | low | new_song_candidate | new | song | 曲候補「未知の音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: 未知の音頭 | 未知の音頭 盆踊り | https://x.com/koi_dou/status/2088612456348442778 |
@@ -19836,6 +19836,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/bjvbiMpM0SQWrmy/status/2091543360809160869 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/a_nkmr_Ya/status/2091522056789934341 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「深川音頭」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 深川音頭 盆踊り | https://x.com/mamimami298/status/2091541270632321334 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kaz0045/status/2091522687080583592 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sasurai_3/status/2091788626296533362 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Pw9SKrdCfYJfxfv/status/2091549431707672873 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/8ahiruchan8/status/2091781541924078060 |

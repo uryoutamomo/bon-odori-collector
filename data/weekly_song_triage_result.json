@@ -9,14 +9,6 @@
   "review_count": 1,
   "created": [
     {
-      "song_name": "新宿花園町会納涼踊り",
-      "source_term": "新宿花園町会納涼踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "アンパンマン音頭",
       "source_term": "アンパンマン音頭",
       "target": "create",
@@ -30,6 +22,14 @@
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "新宿花園町会納涼踊り",
+      "source_term": "新宿花園町会納涼踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     },
     {
