@@ -1,9 +1,9 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-09-07T12:41:07.956697+00:00",
-  "since": "2026-09-04T12:41:07.956697+00:00",
+  "generated_at": "2026-09-08T11:28:57.008227+00:00",
+  "since": "2026-09-05T11:28:57.008227+00:00",
   "days": 3,
-  "voice_count": 44,
+  "voice_count": 46,
   "candidate_count": 10,
   "rows": [
     {
@@ -13,8 +13,26 @@
       "interpretation": "東京音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 16,
+      "evidence_count": 17,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=iciMYIeSZlg",
+          "date": "2026-09-08T10:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VKFS2RKFWDY",
+          "date": "2026-09-08T10:00:22+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9lL1NbALkUI",
+          "date": "2026-09-07T13:00:22+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月5日、 浅草の象徴である雷門前で開催された 「雷門盆踊り～夢灯篭～」の様子をお届けします。 伝統ある「東京音頭」の調べに乗せて、 和太鼓の力強い響きと、踊り手たちの熱気が一体となった特別な一日をぜひお楽しみください。 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや和太鼓の演奏を、 臨場感あふれる映像で発信しています。 日本の文化、お祭りの楽しさを世界中に広めるために活動しています！ 【ぜひチャンネル登録・高評価をお願いします！】 動画が気に入ったら、ぜひチャンネル登録と高評価で応援していただけると励みになります。 コメント欄で、皆さんの好きなお祭りや盆踊りの思い出もぜひ教えてください！ #和太鼓 #盆踊り #東京音頭 #浅草 #雷門 #夢灯篭 #日本文化 #夏祭り #浅草雷門 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/p"
+        },
         {
           "url": "https://www.youtube.com/watch?v=SlA-Xh5Mw4U",
           "date": "2026-09-07T10:30:18+00:00",
@@ -26,28 +44,10 @@
           "date": "2026-09-07T10:00:35+00:00",
           "account": "@wadaikoCH",
           "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=qbfytaL8b4k",
-          "date": "2026-09-07T08:00:13+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=V0XnPnABt2o",
-          "date": "2026-09-07T03:00:07+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=yE8grG8xcDo",
-          "date": "2026-09-06T22:00:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ"
         }
       ],
-      "evidence_text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ",
-      "evidence_url": "https://www.youtube.com/watch?v=SlA-Xh5Mw4U"
+      "evidence_text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年9月5日、 浅草の象徴である雷門前で開催された 「雷門盆踊り～夢灯篭～」の様子をお届けします。 伝統ある「東京音頭」の調べに乗せて、 和太鼓の力強い響きと、踊り手たちの熱気が一体となった特別な一日をぜひお楽しみください。 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや和太鼓の演奏を、 臨場感あふれる映像で発信しています。 日本の文化、お祭りの楽しさを世界中に広めるために活動しています！ 【ぜひチャンネル登録・高評価をお願いします！】 動画が気に入ったら、ぜひチャンネル登録と高評価で応援していただけると励みになります。 コメント欄で、皆さんの好きなお祭りや盆踊りの思い出もぜひ教えてください！ #和太鼓 #盆踊り #東京音頭 #浅草 #雷門 #夢灯篭 #日本文化 #夏祭り #浅草雷門 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/p",
+      "evidence_url": "https://www.youtube.com/watch?v=iciMYIeSZlg"
     },
     {
       "category": "曲候補",
@@ -56,8 +56,26 @@
       "interpretation": "炭坑節",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 16,
+      "evidence_count": 17,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=iciMYIeSZlg",
+          "date": "2026-09-08T10:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VKFS2RKFWDY",
+          "date": "2026-09-08T10:00:22+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9lL1NbALkUI",
+          "date": "2026-09-07T13:00:22+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月5日、 浅草の象徴である雷門前で開催された 「雷門盆踊り～夢灯篭～」の様子をお届けします。 伝統ある「東京音頭」の調べに乗せて、 和太鼓の力強い響きと、踊り手たちの熱気が一体となった特別な一日をぜひお楽しみください。 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや和太鼓の演奏を、 臨場感あふれる映像で発信しています。 日本の文化、お祭りの楽しさを世界中に広めるために活動しています！ 【ぜひチャンネル登録・高評価をお願いします！】 動画が気に入ったら、ぜひチャンネル登録と高評価で応援していただけると励みになります。 コメント欄で、皆さんの好きなお祭りや盆踊りの思い出もぜひ教えてください！ #和太鼓 #盆踊り #東京音頭 #浅草 #雷門 #夢灯篭 #日本文化 #夏祭り #浅草雷門 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/p"
+        },
         {
           "url": "https://www.youtube.com/watch?v=SlA-Xh5Mw4U",
           "date": "2026-09-07T10:30:18+00:00",
@@ -69,28 +87,10 @@
           "date": "2026-09-07T10:00:35+00:00",
           "account": "@wadaikoCH",
           "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=qbfytaL8b4k",
-          "date": "2026-09-07T08:00:13+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=V0XnPnABt2o",
-          "date": "2026-09-07T03:00:07+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=yE8grG8xcDo",
-          "date": "2026-09-06T22:00:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ"
         }
       ],
-      "evidence_text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年9月5日に浅草雷門で開催された 「雷門盆踊り～夢灯篭～」での、陸上自衛隊第1師団第1音楽隊による演奏パレードの様子です。 パレードの幕開けを飾る第1弾は、 M!LKの人気楽曲『好きすぎて、滅！』。 浅草の歴史ある街並みに響き渡る力強い吹奏楽の音色と、 統制のとれた美しい行進をぜひお楽しみください。 #陸上自衛隊 #第1音楽隊 #浅草 #雷門盆踊り #夢灯篭 #パレード #吹奏楽 #MILK #好きすぎて滅 陸上自衛隊音楽隊演奏パレード １好きすぎて滅！ https://youtu.be/yE8grG8xcDo ２パレード行進 https://youtu.be/V0XnPnABt2o ３爆裂愛してる https://youtu.be/qbfytaL8b4k 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/pfQZLghEpiE ５東京スカイツリ",
-      "evidence_url": "https://www.youtube.com/watch?v=SlA-Xh5Mw4U"
+      "evidence_text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年9月5日、 浅草の象徴である雷門前で開催された 「雷門盆踊り～夢灯篭～」の様子をお届けします。 伝統ある「東京音頭」の調べに乗せて、 和太鼓の力強い響きと、踊り手たちの熱気が一体となった特別な一日をぜひお楽しみください。 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや和太鼓の演奏を、 臨場感あふれる映像で発信しています。 日本の文化、お祭りの楽しさを世界中に広めるために活動しています！ 【ぜひチャンネル登録・高評価をお願いします！】 動画が気に入ったら、ぜひチャンネル登録と高評価で応援していただけると励みになります。 コメント欄で、皆さんの好きなお祭りや盆踊りの思い出もぜひ教えてください！ #和太鼓 #盆踊り #東京音頭 #浅草 #雷門 #夢灯篭 #日本文化 #夏祭り #浅草雷門 浅草雷門盆踊り １東京音頭 https://youtu.be/vcoAkDLGVSU ２炭坑節 https://youtu.be/E4bcWQozW94 ３たいとう音頭 https://youtu.be/tchCxCoJMk8 ４輝け日本富士山おどり https://youtu.be/p",
+      "evidence_url": "https://www.youtube.com/watch?v=iciMYIeSZlg"
     },
     {
       "category": "曲候補",
@@ -99,8 +99,14 @@
       "interpretation": "アンパンマン音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 8,
+      "evidence_count": 9,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=4ZhW_4Mq3WA",
+          "date": "2026-09-07T12:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm"
+        },
         {
           "url": "https://www.youtube.com/watch?v=rxiCiGUwfik",
           "date": "2026-09-07T12:00:16+00:00",
@@ -124,16 +130,10 @@
           "date": "2026-09-06T12:00:39+00:00",
           "account": "@wadaikoCH",
           "text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=95TpvORjsjc",
-          "date": "2026-09-06T11:30:16+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm"
         }
       ],
       "evidence_text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm\n---\n2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm\n---\n2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm",
-      "evidence_url": "https://www.youtube.com/watch?v=rxiCiGUwfik"
+      "evidence_url": "https://www.youtube.com/watch?v=4ZhW_4Mq3WA"
     },
     {
       "category": "曲候補",
@@ -142,8 +142,14 @@
       "interpretation": "楽しそうな踊り",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 8,
+      "evidence_count": 9,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=4ZhW_4Mq3WA",
+          "date": "2026-09-07T12:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm"
+        },
         {
           "url": "https://www.youtube.com/watch?v=rxiCiGUwfik",
           "date": "2026-09-07T12:00:16+00:00",
@@ -167,16 +173,10 @@
           "date": "2026-09-06T12:00:39+00:00",
           "account": "@wadaikoCH",
           "text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=95TpvORjsjc",
-          "date": "2026-09-06T11:30:16+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm"
         }
       ],
       "evidence_text": "2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm\n---\n2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm\n---\n2026年8月30日に開催された 「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！ 亀有銀座商店街振興組合（ゆうろーど）が主催する、 地元の方々に愛される活気あふれる盆踊り大会です。 商店街のあたたかい雰囲気の中、 響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。 和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！ 【開催概要】 ■日時：2026年8月30日 ■場所：亀有銀座商店街（ゆうろーど） ■主催：亀有銀座商店街振興組合 【和太鼓お祭りチャンネルについて】 このチャンネルでは、 全国各地のお祭りや和太鼓演奏の様子を発信しています。 日本の伝統的な文化や、 お祭りの熱気を感じていただけたら嬉しいです。 ぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いします！ コメントもお待ちしております。 #和太鼓 #盆踊り #亀有 #ゆうろーど #亀有銀座商店街 #夏祭り #日本の祭り 亀有ゆうろーど盆踊り １アンパンマン音頭 https://youtu.be/nDF57s-CwZk ２葛飾音頭 https://youtu.be/oXD-3Btsm",
-      "evidence_url": "https://www.youtube.com/watch?v=rxiCiGUwfik"
+      "evidence_url": "https://www.youtube.com/watch?v=4ZhW_4Mq3WA"
     },
     {
       "category": "曲候補",
@@ -187,6 +187,18 @@
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=iciMYIeSZlg",
+          "date": "2026-09-08T10:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VKFS2RKFWDY",
+          "date": "2026-09-08T10:00:22+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
+        },
         {
           "url": "https://www.youtube.com/watch?v=SlA-Xh5Mw4U",
           "date": "2026-09-07T10:30:18+00:00",
@@ -204,22 +216,10 @@
           "date": "2026-09-06T10:30:26+00:00",
           "account": "@wadaikoCH",
           "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=3m5g34THKyQ",
-          "date": "2026-09-06T10:00:03+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=FpY-UOtEb7U",
-          "date": "2026-09-05T10:30:12+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM"
         }
       ],
       "evidence_text": "2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内\n---\n2026年8月28日に開催された 「新宿花園町会納涼踊り大会」の様子です。 会場：花園公園・花園スクールパーク（東京都新宿区） 和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。 #盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓 新宿花園公園盆踊り １東京音頭 https://youtu.be/VwqYXbO8N0Y ２炭坑節 https://youtu.be/BzhuMm2ezYw ３大東京音頭 https://youtu.be/Q1niAfhGdFg ４八木節 https://youtu.be/lvkEpvj-kX4 ５ドンパン節 https://youtu.be/D0T-IkDuMvo ６東京音頭 https://youtu.be/zf5PCZA9anc ７炭坑節 https://youtu.be/SDoFdQ-lB2Y ８八木節 https://youtu.be/FpY-UOtEb7U ９ダンシングヒーロー https://youtu.be/3m5g34THKyQ 10焼酎天国 https://youtu.be/mfgmo1MMiHM 11河内",
-      "evidence_url": "https://www.youtube.com/watch?v=SlA-Xh5Mw4U"
+      "evidence_url": "https://www.youtube.com/watch?v=iciMYIeSZlg"
     },
     {
       "category": "曲候補",
@@ -231,6 +231,12 @@
       "evidence_count": 3,
       "evidence": [
         {
+          "url": "https://www.youtube.com/watch?v=d5jTH7muM9Y",
+          "date": "2026-09-08T11:00:26+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=5h8xki6tRaw",
           "date": "2026-09-07T11:00:15+00:00",
           "account": "@wadaikoCH",
@@ -241,16 +247,10 @@
           "date": "2026-09-06T11:00:08+00:00",
           "account": "@wadaikoCH",
           "text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=LNdmSdVQWyA",
-          "date": "2026-09-05T11:00:28+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑"
         }
       ],
-      "evidence_text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑",
-      "evidence_url": "https://www.youtube.com/watch?v=5h8xki6tRaw"
+      "evidence_text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑",
+      "evidence_url": "https://www.youtube.com/watch?v=d5jTH7muM9Y"
     },
     {
       "category": "曲候補",
@@ -262,6 +262,12 @@
       "evidence_count": 3,
       "evidence": [
         {
+          "url": "https://www.youtube.com/watch?v=d5jTH7muM9Y",
+          "date": "2026-09-08T11:00:26+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=5h8xki6tRaw",
           "date": "2026-09-07T11:00:15+00:00",
           "account": "@wadaikoCH",
@@ -272,16 +278,10 @@
           "date": "2026-09-06T11:00:08+00:00",
           "account": "@wadaikoCH",
           "text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=LNdmSdVQWyA",
-          "date": "2026-09-05T11:00:28+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑"
         }
       ],
-      "evidence_text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑",
-      "evidence_url": "https://www.youtube.com/watch?v=5h8xki6tRaw"
+      "evidence_text": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw ６少年八木節 https://youtu.be/d5jTH7muM9Y ７台東区の歌 https://youtu.be/JEe4A8xIMKg ８小町の台東音頭 htt\n---\n2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。 下町の夏の風物詩である 「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。 地元の方々や、 朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。 入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！ #盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル 入谷朝顔盆踊り３日目 １朝顔音頭 https://youtu.be/P47OFjucNOw ２東京音頭 https://youtu.be/IGbQacBQvpU ３炭坑節 https://youtu.be/LNdmSdVQWyA ４河内おとこ節 https://youtu.be/aZ76Y6t7sbs ５大東京音頭 https://youtu.be/5h8xki6tRaw 入谷朝顔盆踊り1日目 １朝顔音頭 https://youtu.be/1m7tU-I8rsA ２東京音頭 https://youtu.be/pmNaC6_nFrk ３炭坑",
+      "evidence_url": "https://www.youtube.com/watch?v=d5jTH7muM9Y"
     },
     {
       "category": "曲候補",
