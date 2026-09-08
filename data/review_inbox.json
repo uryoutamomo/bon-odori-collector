@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-07T12:49:28.086587+00:00",
+  "generated_at": "2026-09-08T11:30:26.041709+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,424 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_13f12c6d4b16c7b5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "いよいよ今週末に迫った芝山夏祭り！\n本日は会場の中心に、盆踊りの舞台となる「やぐら」を組み立てました。曇りの中でしたが午前中は気温も高く、熱中症に気をつけながら",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2076568840411246613",
+      "source_url": "https://x.com/satoryotasibaya/status/2076568840411246613",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f39941bbb8d59dca66d481d63997c66494079b5ed02ba455477609e190805183",
+      "last_seen_at": "github-34219839901-1",
+      "created_at": "2026-09-08T11:29:44.375504+00:00",
+      "updated_at": "2026-09-08T11:29:44.375504+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_9a0b7a3d02563ca6",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/18"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@satoryotasibaya",
+        "source_count": 1,
+        "source_key": "x:2076568840411246613",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNF0WqGa8AAJ8tX.jpg",
+          "https://t.co/xIemy3nUGc",
+          "pic.x.com/xIemy3nUGc",
+          "https://pbs.twimg.com/media/HNF0WrabUAAgvaJ.jpg",
+          "https://pbs.twimg.com/media/HNF0WtxbIAA62s3.jpg",
+          "https://pbs.twimg.com/media/HNF0WvxbAAADhnd.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "佐藤良太　芝山町議会議員",
+          "classification": "registered_official_social",
+          "handle": "@satoryotasibaya",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nいよいよ今週末に迫った芝山夏祭り！\n本日は会場の中心に、盆踊りの舞台となる「やぐら」を組み立てました。曇りの中でしたが午前中は気温も高く、熱中症に気をつけながら皆で楽しく準備しました。\n芝山 #夏祭り 2026 開催🥁\n場所: #航空科学博物館\n日時: 7/18(土)16:30〜20:30\n#成田空港 南 https://t.co/xIemy3nUGc",
+        "source_url": "https://x.com/satoryotasibaya/status/2076568840411246613",
+        "source_urls": [
+          "https://x.com/satoryotasibaya/status/2076568840411246613"
+        ],
+        "voice": {
+          "account": "@satoryotasibaya",
+          "date": "2026-07-13T07:26:06+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNF0WqGa8AAJ8tX.jpg",
+            "https://t.co/xIemy3nUGc",
+            "pic.x.com/xIemy3nUGc",
+            "https://pbs.twimg.com/media/HNF0WrabUAAgvaJ.jpg",
+            "https://pbs.twimg.com/media/HNF0WtxbIAA62s3.jpg",
+            "https://pbs.twimg.com/media/HNF0WvxbAAADhnd.jpg"
+          ],
+          "name": "佐藤良太　芝山町議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "いよいよ今週末に迫った芝山夏祭り！\n本日は会場の中心に、盆踊りの舞台となる「やぐら」を組み立てました。曇りの中でしたが午前中は気温も高く、熱中症に気をつけながら皆で楽しく準備しました。\n芝山 #夏祭り 2026 開催🥁\n場所: #航空科学博物館\n日時: 7/18(土)16:30〜20:30\n#成田空港 南 https://t.co/xIemy3nUGc",
+          "title": "",
+          "tweet_id": "2076568840411246613",
+          "url": "https://x.com/satoryotasibaya/status/2076568840411246613"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2199fa8ec44551a3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日の掲示板\n鉄砲洲納涼盆踊り\n８月３日（月）～５日（水）１８：４５～２１：００\n会場　鉄砲洲児童公園\n湊一丁目町会、湊二丁目町会、入船一丁目町会、入船二丁目町",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2076259548881650008",
+      "source_url": "https://x.com/iri2choukai/status/2076259548881650008",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0db64cf393925db2a14d432a32280810b3b1a3965a41837b61329e0aaf8f5e01",
+      "last_seen_at": "github-34219839901-1",
+      "created_at": "2026-09-08T11:29:44.375504+00:00",
+      "updated_at": "2026-09-08T11:29:44.375504+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6fd350519a1d4e6c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月３日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@iri2choukai",
+        "source_count": 1,
+        "source_key": "x:2076259548881650008",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNBaldybAAAPd-l.jpg",
+          "https://t.co/vmCAfq8Sjt",
+          "pic.x.com/vmCAfq8Sjt"
+        ],
+        "source_officiality": {
+          "account_name": "入船二丁目町会",
+          "classification": "registered_official_social",
+          "handle": "@iri2choukai",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official_or_organizer_social",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日の掲示板\n鉄砲洲納涼盆踊り\n８月３日（月）～５日（水）１８：４５～２１：００\n会場　鉄砲洲児童公園\n湊一丁目町会、湊二丁目町会、入船一丁目町会、入船二丁目町会 https://t.co/vmCAfq8Sjt",
+        "source_url": "https://x.com/iri2choukai/status/2076259548881650008",
+        "source_urls": [
+          "https://x.com/iri2choukai/status/2076259548881650008"
+        ],
+        "voice": {
+          "account": "@iri2choukai",
+          "date": "2026-07-12T10:57:06+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNBaldybAAAPd-l.jpg",
+            "https://t.co/vmCAfq8Sjt",
+            "pic.x.com/vmCAfq8Sjt"
+          ],
+          "name": "入船二丁目町会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "本日の掲示板\n鉄砲洲納涼盆踊り\n８月３日（月）～５日（水）１８：４５～２１：００\n会場　鉄砲洲児童公園\n湊一丁目町会、湊二丁目町会、入船一丁目町会、入船二丁目町会 https://t.co/vmCAfq8Sjt",
+          "title": "",
+          "tweet_id": "2076259548881650008",
+          "url": "https://x.com/iri2choukai/status/2076259548881650008"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_8ce38c451071c7a4",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【糀谷】7/20(月)、21日(火)西仲天祖神社で西糀谷四丁目町会「盆踊り大会」\nアイスキャンディの無料配布もありますよ～❤️\nhttps",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2076501873960624619",
+      "source_url": "https://x.com/otafull/status/2076501873960624619",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e11e8523518f1eac71fdf7aa50abb502ec837cbb156e9c05efa7f937282a7459",
+      "last_seen_at": "github-34219839901-1",
+      "created_at": "2026-09-08T11:29:44.375504+00:00",
+      "updated_at": "2026-09-08T11:29:44.375504+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_75472bc59d74154b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/20"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2076501873960624619",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【糀谷】7/20(月)、21日(火)西仲天祖神社で西糀谷四丁目町会「盆踊り大会」\nアイスキャンディの無料配布もありますよ～❤️\nhttps://t.co/GN7yEXINtd\n#大田区　#商店街　#糀谷　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2076501873960624619",
+        "source_urls": [
+          "https://x.com/otafull/status/2076501873960624619"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-13T03:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "【盆踊り情報2026】【糀谷】7/20(月)、21日(火)西仲天祖神社で西糀谷四丁目町会「盆踊り大会」\nアイスキャンディの無料配布もありますよ～❤️\nhttps://t.co/GN7yEXINtd\n#大田区　#商店街　#糀谷　#盆踊り",
+          "title": "",
+          "tweet_id": "2076501873960624619",
+          "url": "https://x.com/otafull/status/2076501873960624619"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cdcc726570751a5e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "第59回「ふるさと大師盆おどり」のポスターが貼り出されました！掲示にご協力いただいている地域の皆さま、本当にありがとうございます。\n\n嬉しくてポスターの写真を撮",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2076314160519106868",
+      "source_url": "https://x.com/gotou_masami/status/2076314160519106868",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "37a7448e1a084854ef8d82815d2c4961f43728a12ad59bc446c772156a433edb",
+      "last_seen_at": "github-34219839901-1",
+      "created_at": "2026-09-08T11:29:44.375504+00:00",
+      "updated_at": "2026-09-08T11:29:44.375504+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_abbaf8948b88f64b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月13日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@gotou_masami",
+        "source_count": 1,
+        "source_key": "x:2076314160519106868",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNCMt8naYAA2vhZ.jpg",
+          "https://t.co/CBvhX66OTm",
+          "pic.x.com/CBvhX66OTm"
+        ],
+        "source_officiality": {
+          "account_name": "後藤まさみ日本共産党川崎市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@gotou_masami",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n第59回「ふるさと大師盆おどり」のポスターが貼り出されました！掲示にご協力いただいている地域の皆さま、本当にありがとうございます。\n\n嬉しくてポスターの写真を撮っていたら、近くにいた親子連れが「あっ、盆おどり！写真撮ろう〜！」とパチリ。\n思わず嬉しくなって、「ぜひ来てください！あ、実はこれ……わたしなんです🤭」と、副実行委員長として載っているポスターの自分を指さししたら、\n「えっ！本人！？」とびっくりされましたが、名刺をお渡しして楽しくお話しができ嬉しい出会いでした。\n\nそして、暑い中ポスターの貼り出し作業をしてくれた地域の方にも、心から感謝です。「子どもの夏休み前に貼らなきゃね！」とがんばってくれました。\n\nみんなの想いが詰まったお祭り、ぜひ遊びに来てくださいね！\n\n🏮 第59回 ふるさと大師盆おどり 🏮\n🗓️ 日時：8月13日（金）・14日（土）・15日（日）\n⏰ 時間：18:30 〜 21:00\n📍 場所：大師公園\n\n🛠️ 【ボランティア大募集中！】\n櫓（やぐら）組み、焼き鳥屋さん、当日の片付けなど、一緒に盛り上げてくれる仲間を大募集しています！未経験でも大歓迎です。少しでも興",
+        "source_url": "https://x.com/gotou_masami/status/2076314160519106868",
+        "source_urls": [
+          "https://x.com/gotou_masami/status/2076314160519106868"
+        ],
+        "voice": {
+          "account": "@gotou_masami",
+          "date": "2026-07-12T14:34:06+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNCMt8naYAA2vhZ.jpg",
+            "https://t.co/CBvhX66OTm",
+            "pic.x.com/CBvhX66OTm"
+          ],
+          "name": "後藤 まさみ日本共産党川崎市議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "第59回「ふるさと大師盆おどり」のポスターが貼り出されました！掲示にご協力いただいている地域の皆さま、本当にありがとうございます。\n\n嬉しくてポスターの写真を撮っていたら、近くにいた親子連れが「あっ、盆おどり！写真撮ろう〜！」とパチリ。\n思わず嬉しくなって、「ぜひ来てください！あ、実はこれ……わたしなんです🤭」と、副実行委員長として載っているポスターの自分を指さししたら、\n「えっ！本人！？」とびっくりされましたが、名刺をお渡しして楽しくお話しができ嬉しい出会いでした。\n\nそして、暑い中ポスターの貼り出し作業をしてくれた地域の方にも、心から感謝です。「子どもの夏休み前に貼らなきゃね！」とがんばってくれました。\n\nみんなの想いが詰まったお祭り、ぜひ遊びに来てくださいね！\n\n🏮 第59回 ふるさと大師盆おどり 🏮\n🗓️ 日時：8月13日（金）・14日（土）・15日（日）\n⏰ 時間：18:30 〜 21:00\n📍 場所：大師公園\n\n🛠️ 【ボランティア大募集中！】\n櫓（やぐら）組み、焼き鳥屋さん、当日の片付けなど、一緒に盛り上げてくれる仲間を大募集しています！未経験でも大歓迎です。少しでも興味",
+          "title": "",
+          "tweet_id": "2076314160519106868",
+          "url": "https://x.com/gotou_masami/status/2076314160519106868"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_d1e8a1653fc20829",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【雪が谷大塚】7/25(土)、26(日)雪谷商店街「雪谷盆踊り」\nみんなで踊って盛り上がりましょう💕屋台もたくさん出店しますよ～🏮✨\nht",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2076577375526244515",
+      "source_url": "https://x.com/otafull/status/2076577375526244515",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "70617644c75a20c1d1e4aec4e46e53ea696c86574298130b65510e5f450064c3",
+      "last_seen_at": "github-34219839901-1",
+      "created_at": "2026-09-08T11:29:44.375504+00:00",
+      "updated_at": "2026-09-08T11:29:44.375504+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_5425b472e6b08d93",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/25"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2076577375526244515",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【雪が谷大塚】7/25(土)、26(日)雪谷商店街「雪谷盆踊り」\nみんなで踊って盛り上がりましょう💕屋台もたくさん出店しますよ～🏮✨\nhttps://t.co/JV4toXIMxy\n#大田区　#商店街　#雪が谷大塚　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2076577375526244515",
+        "source_urls": [
+          "https://x.com/otafull/status/2076577375526244515"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-13T08:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "【盆踊り情報2026】【雪が谷大塚】7/25(土)、26(日)雪谷商店街「雪谷盆踊り」\nみんなで踊って盛り上がりましょう💕屋台もたくさん出店しますよ～🏮✨\nhttps://t.co/JV4toXIMxy\n#大田区　#商店街　#雪が谷大塚　#盆踊り",
+          "title": "",
+          "tweet_id": "2076577375526244515",
+          "url": "https://x.com/otafull/status/2076577375526244515"
         }
       }
     },
