@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-09T11:30:49.435428+00:00",
+  "generated_at": "2026-09-09T11:34:54.312958+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -12111,6 +12111,55 @@
           "url": "https://www.youtube.com/watch?v=Vfqp-bccT3Y"
         },
         "video_id": "Vfqp-bccT3Y"
+      }
+    },
+    {
+      "inbox_id": "inbox_596847162c33da2b",
+      "kind": "youtube_evidence",
+      "domain": "YouTube",
+      "priority_label": "P2",
+      "priority_score": null,
+      "title": "台東区の歌（旧 台東音頭）　「入谷朝顔音頭踊り大会」3日目７　2026年7月8日　入谷朝顔まつり盆踊り　入谷南公園",
+      "event_name": "台東区の歌（旧 台東音頭）",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "youtube_evidence",
+      "source_key": "video:JEe4A8xIMKg|year:2026",
+      "source_url": "https://www.youtube.com/watch?v=JEe4A8xIMKg",
+      "recommended_action": "add_song_evidence",
+      "status": "pending",
+      "time_scope": "historical",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "68af0ff0209b891c06858f6cafd2141aa1d353c4cbcda78ce8be11b3f3640334",
+      "last_seen_at": "github-34345052626-1",
+      "created_at": "2026-09-09T11:34:23.598939+00:00",
+      "updated_at": "2026-09-09T11:34:23.598939+00:00",
+      "payload": {
+        "action": "review_video_evidence",
+        "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+        "channel_title": "和太鼓お祭りCH",
+        "description_excerpt": "2026年7月8日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」３日目の様子です。\n\n下町の夏の風物詩である\n「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。\n地元の方々や、\n朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。\n\n入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！\n\n\n#盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル\n\n入谷朝顔盆踊り",
+        "detected_event_date": "2026-07-08",
+        "has_bon_context": true,
+        "matched_public_event": null,
+        "official_urls": [],
+        "out_of_scope": false,
+        "parent_event_component": null,
+        "priority": "normal",
+        "published_at": "2026-09-09T11:00:25+00:00",
+        "setlist_occurrences": [],
+        "source_url": "https://www.youtube.com/watch?v=JEe4A8xIMKg",
+        "title": "台東区の歌（旧 台東音頭）　「入谷朝顔音頭踊り大会」3日目７　2026年7月8日　入谷朝顔まつり盆踊り　入谷南公園",
+        "title_event_name_candidate": "台東区の歌（旧 台東音頭）",
+        "title_song_candidates": [
+          "入谷朝顔音頭踊り大会"
+        ],
+        "video_id": "JEe4A8xIMKg",
+        "video_url": "https://www.youtube.com/watch?v=JEe4A8xIMKg"
       }
     },
     {
