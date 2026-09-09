@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1715,
-  "public_event_count": 784,
-  "review_count": 931,
+  "count": 1694,
+  "public_event_count": 762,
+  "review_count": 932,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -6574,7 +6574,7 @@
       "evidence_count": 25
     },
     {
-      "id": "64f62c4a7fc0ce74",
+      "id": "77a65c0651df5f2a",
       "song_name": "東京音頭",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -6586,6 +6586,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=aY1OF0_ta7E",
+          "date": "2026-09-09T10:30:04+00:00",
+          "text": "和太鼓お祭りCH\nマツケンサンバⅡ（松平健）　新宿花園町会納涼踊り大会16　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4pcUibO0-Uk",
+          "date": "2026-09-09T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\n花園音頭　新宿花園町会納涼踊り大会15　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　http"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=iciMYIeSZlg",
@@ -6840,7 +6852,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 42
+      "evidence_count": 44
     },
     {
       "id": "1a090d5182a74952",
@@ -29474,7 +29486,7 @@
       "evidence_count": 1
     },
     {
-      "id": "6187e6691fa1a98b",
+      "id": "038da2bb2604a746",
       "song_name": "新宿花園町会納涼踊り",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -29485,6 +29497,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=aY1OF0_ta7E",
+          "date": "2026-09-09T10:30:04+00:00",
+          "text": "和太鼓お祭りCH\nマツケンサンバⅡ（松平健）　新宿花園町会納涼踊り大会16　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4pcUibO0-Uk",
+          "date": "2026-09-09T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\n花園音頭　新宿花園町会納涼踊り大会15　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　http"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=iciMYIeSZlg",
@@ -29571,7 +29595,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 14
+      "evidence_count": 16
     },
     {
       "id": "cb31541e66c18e28",
@@ -29924,7 +29948,7 @@
       "evidence_count": 1
     },
     {
-      "id": "4f0f32deeac77dc8",
+      "id": "7871b80eed1965ee",
       "song_name": "炭坑節",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -29936,6 +29960,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=aY1OF0_ta7E",
+          "date": "2026-09-09T10:30:04+00:00",
+          "text": "和太鼓お祭りCH\nマツケンサンバⅡ（松平健）　新宿花園町会納涼踊り大会16　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4pcUibO0-Uk",
+          "date": "2026-09-09T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\n花園音頭　新宿花園町会納涼踊り大会15　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　http"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=iciMYIeSZlg",
@@ -30190,7 +30226,29 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 42
+      "evidence_count": 44
+    },
+    {
+      "id": "6292d9eddc81f3c9",
+      "song_name": "花園音頭",
+      "event_name": "花園町会納涼踊り大会",
+      "venue": "花園小学校",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4pcUibO0-Uk",
+          "date": "2026-09-09T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\n花園音頭　新宿花園町会納涼踊り大会15　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9anc\n７炭坑節　http"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "8cf63c8af77f2e99",
@@ -38456,21 +38514,6 @@
       "evidence_count": 0
     },
     {
-      "id": "0177fc56de866910",
-      "song_name": "雨にて途中終了",
-      "event_name": "中央区大江戸まつり盆おどり大会",
-      "venue": "浜町公園",
-      "area": "中央区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "830f5eeb7aed84a3",
       "song_name": "あさりときりみのおだいどこ音頭",
       "event_name": "築地本願寺納涼盆踊り大会",
@@ -39903,21 +39946,6 @@
       "evidence_count": 0
     },
     {
-      "id": "d3082716eb6f1647",
-      "song_name": "AMEMIYA",
-      "event_name": "中野駅前大盆踊り大会",
-      "venue": "中野セントラルパーク",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "fe1c493567e58749",
       "song_name": "BOY MEETS GIRL",
       "event_name": "中野駅前大盆踊り大会",
@@ -39993,21 +40021,6 @@
       "evidence_count": 0
     },
     {
-      "id": "137653f6ba36046b",
-      "song_name": "アンコール",
-      "event_name": "中野駅前大盆踊り大会",
-      "venue": "中野セントラルパーク",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "2442cf1e7aab102c",
       "song_name": "冷やし中華はじめました",
       "event_name": "中野駅前大盆踊り大会",
@@ -40023,38 +40036,8 @@
       "evidence_count": 0
     },
     {
-      "id": "161ba8b2e91e38e2",
-      "song_name": "前説",
-      "event_name": "中野駅前大盆踊り大会",
-      "venue": "中野セントラルパーク",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "f2ba54a828af40c9",
       "song_name": "睡蓮花",
-      "event_name": "中野駅前大盆踊り大会",
-      "venue": "中野セントラルパーク",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "36d84a1932f3089f",
-      "song_name": "結果発表",
       "event_name": "中野駅前大盆踊り大会",
       "venue": "中野セントラルパーク",
       "area": "中野区",
@@ -51411,21 +51394,6 @@
       "evidence_count": 0
     },
     {
-      "id": "adee7f7fd5db322e",
-      "song_name": "山中一平",
-      "event_name": "すみだ錦糸町河内音頭大盆踊り",
-      "venue": "江東橋竪川親水公園",
-      "area": "墨田区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "ff15f5474c9c00cf",
       "song_name": "江州音頭",
       "event_name": "すみだ錦糸町河内音頭大盆踊り",
@@ -52768,21 +52736,6 @@
       "evidence_count": 1
     },
     {
-      "id": "1e10370ba3ab8fba",
-      "song_name": "ハイライト",
-      "event_name": "新宿二丁目太宗寺盆踊り大会",
-      "venue": "太宗寺",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "258695dd39b22de0",
       "song_name": "バハマ・ママ",
       "event_name": "新宿二丁目太宗寺盆踊り大会",
@@ -53827,38 +53780,8 @@
       "evidence_count": 0
     },
     {
-      "id": "b3ca19882d31e3cc",
-      "song_name": "アンコール",
-      "event_name": "歌舞伎町BON ODORI",
-      "venue": "歌舞伎町シネシティ広場",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "1d2e93c1ca2d1df2",
       "song_name": "ウルトラソウル",
-      "event_name": "歌舞伎町BON ODORI",
-      "venue": "歌舞伎町シネシティ広場",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "7cb08ebcd9a770d3",
-      "song_name": "ゴジラフィギュア",
       "event_name": "歌舞伎町BON ODORI",
       "venue": "歌舞伎町シネシティ広場",
       "area": "新宿区",
@@ -55145,21 +55068,6 @@
       "evidence_count": 0
     },
     {
-      "id": "fff273ad0de3515a",
-      "song_name": "会場様子",
-      "event_name": "恵比寿駅前盆踊り大会",
-      "venue": "JR恵比寿駅西口広場",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "36858bdd000caac8",
       "song_name": "八木節",
       "event_name": "恵比寿駅前盆踊り大会",
@@ -55600,36 +55508,6 @@
       "evidence_count": 0
     },
     {
-      "id": "5fb994c942807693",
-      "song_name": "ミヤシタパーク",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "venue": "宮下公園",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "af0f384336c9a268",
-      "song_name": "一般参加 阿波踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "venue": "宮下公園",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "fa248aed2c1b2098",
       "song_name": "八木節",
       "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
@@ -55690,21 +55568,6 @@
       "evidence_count": 2
     },
     {
-      "id": "7a998a2ea90dcf00",
-      "song_name": "渋谷スクランブル交差点",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "venue": "宮下公園",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "040fc8ef8f9612b7",
       "song_name": "炭坑節",
       "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
@@ -55733,51 +55596,6 @@
       "song_name": "荻野目洋子 - ダンシング・ヒーロー",
       "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "272fba8f563327b1",
-      "song_name": "阿波踊り 飛鳥連",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "venue": "宮下公園",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "59bcb76d4fdd15d8",
-      "song_name": "阿波踊りレッスン",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "venue": "宮下公園",
-      "area": "渋谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "2abbcc38134add3f",
-      "song_name": "エガちゃん",
-      "event_name": "渋谷盆踊り",
-      "venue": "渋谷109前",
       "area": "渋谷区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -56313,36 +56131,6 @@
       "evidence_count": 0
     },
     {
-      "id": "64e804267feffe2d",
-      "song_name": "1回目の公演",
-      "event_name": "六本木ヒルズ盆踊り",
-      "venue": "六本木ヒルズアリーナ",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "fef3609b0c7c1713",
-      "song_name": "2回目の公演",
-      "event_name": "六本木ヒルズ盆踊り",
-      "venue": "六本木ヒルズアリーナ",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "b3b48a3779bf2262",
       "song_name": "ドラえもん音頭",
       "event_name": "六本木ヒルズ盆踊り",
@@ -56511,21 +56299,6 @@
     {
       "id": "bb7c37adabaae289",
       "song_name": "夏祭り",
-      "event_name": "六本木ヒルズ盆踊り",
-      "venue": "六本木ヒルズアリーナ",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "1ffda09f228db828",
-      "song_name": "太鼓演奏",
       "event_name": "六本木ヒルズ盆踊り",
       "venue": "六本木ヒルズアリーナ",
       "area": "港区",
@@ -58234,21 +58007,6 @@
     {
       "id": "b86ba3f21a3e1aa6",
       "song_name": "ヤッチク",
-      "event_name": "郡上おどり in 青山",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "fb0f6422bae55a8b",
-      "song_name": "三本締め",
       "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
@@ -59972,21 +59730,6 @@
       "evidence_count": 0
     },
     {
-      "id": "657b677579af1272",
-      "song_name": "アンコール",
-      "event_name": "にっぽり炭坑節まつり",
-      "venue": "JR日暮里駅前広場",
-      "area": "荒川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "2e4bc305a77fc744",
       "song_name": "炭坑節",
       "event_name": "にっぽり炭坑節まつり",
@@ -60032,21 +59775,6 @@
       ],
       "already_public": true,
       "evidence_count": 1
-    },
-    {
-      "id": "f78367282b0705b4",
-      "song_name": "音楽ストップ",
-      "event_name": "にっぽり炭坑節まつり",
-      "venue": "JR日暮里駅前広場",
-      "area": "荒川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
     },
     {
       "id": "57df7804a2cf3d67",

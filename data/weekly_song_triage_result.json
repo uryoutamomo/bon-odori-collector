@@ -1,11 +1,11 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 10,
-  "direct_count": 8,
-  "created_count": 5,
+  "song_candidate_count": 8,
+  "direct_count": 7,
+  "created_count": 4,
   "updated_count": 3,
-  "rejected_noise_count": 2,
+  "rejected_noise_count": 1,
   "review_count": 0,
   "created": [
     {
@@ -39,14 +39,6 @@
       "venue_relations": 0,
       "event_relations": 1,
       "dry_run": true
-    },
-    {
-      "song_name": "の組踊り",
-      "source_term": "の組踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "updated": [
@@ -79,10 +71,6 @@
     {
       "term": "入谷朝顔音頭踊り",
       "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "阿波踊り",
-      "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
   "review": []
