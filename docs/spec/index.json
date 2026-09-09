@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T10:44:49Z",
-  "generated_for_commit": "fffefc8",
+  "generated_at": "2026-09-09T12:42:21Z",
+  "generated_for_commit": "8399d8a",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -525,6 +525,7 @@
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
+        "tests/test_verify_review_backlog_application.py",
         "tests/test_master_db_s3_artifact.py",
         "tests/test_capture_public_projection_inputs.py",
         "tests/test_audit_master_rdb.py",
@@ -539,7 +540,7 @@
         "tests/test_collect_event_state_axes_wiring.py",
         "tests/test_scoped_song_retraction.py"
       ],
-      "updated_for": "68cd2f5",
+      "updated_for": "01b1616",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -595,12 +596,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 4
+        "commits_since": 1,
+        "files_changed_since": 2
       },
-      "version": "1.19",
-      "revision_count": 20,
+      "version": "1.20",
+      "revision_count": 21,
       "history": [
+        {
+          "commit": "ba3b36d",
+          "date": "2026-09-09",
+          "subject": "Refresh 11 events from official 2026 notices with guarded corrections"
+        },
         {
           "commit": "d3b0808",
           "date": "2026-09-09",
@@ -655,11 +661,6 @@
           "commit": "b9ff2f0",
           "date": "2026-08-16",
           "subject": "fix: close X song materialization safety gaps"
-        },
-        {
-          "commit": "33c728c",
-          "date": "2026-08-16",
-          "subject": "Document E2-S v2 identity contracts"
         }
       ]
     },
@@ -1444,7 +1445,7 @@
         "tests/test_public_json_field_sparsity.py",
         "tests/test_apply_public_date_predictions.py"
       ],
-      "updated_for": "30a743f",
+      "updated_for": "01b1616",
       "path": "docs/spec/L2/public-json.md",
       "owned_files": [
         "data/public/event_songs_public.json",
@@ -1452,12 +1453,17 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 3
       },
-      "version": "1.4",
-      "revision_count": 5,
+      "version": "1.5",
+      "revision_count": 6,
       "history": [
+        {
+          "commit": "ba3b36d",
+          "date": "2026-09-09",
+          "subject": "Refresh 11 events from official 2026 notices with guarded corrections"
+        },
         {
           "commit": "1fda725",
           "date": "2026-09-09",
@@ -2086,7 +2092,7 @@
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
       "tests": [
-        "tests/test_apply_change_requests.py::test_applies_four_finite_change_types"
+        "tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_applies_four_finite_change_types"
       ],
       "has_test": true
     },
@@ -2110,7 +2116,7 @@
       "spec": "L1-master",
       "title": "既定は dry-run。実DBへの書き込みには確認句が要る",
       "tests": [
-        "tests/test_apply_change_requests.py::test_apply_refuses_dry_run_only_requests"
+        "tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_apply_refuses_dry_run_only_requests"
       ],
       "has_test": true
     },
@@ -2197,7 +2203,7 @@
     },
     "INV-MST-012": {
       "spec": "L1-master",
-      "title": "レビュー済み曲根拠は派生値まで確定してから正本DBを公開する",
+      "title": "レビュー済み変更は適用結果と派生値を検証してから正本DBを公開する",
       "tests": [
         "tests/test_reviewed_change_requests_workflow.py::test_workflow_dry_runs_before_apply_and_verifies_every_stage"
       ],
