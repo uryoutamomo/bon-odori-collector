@@ -18,7 +18,7 @@ verified_by:
   - tests/test_classify_public_events_diff.py
   - tests/test_public_json_field_sparsity.py
   - tests/test_apply_public_date_predictions.py
-updated_for: 30a743f
+updated_for: 01b1616
 ---
 
 # 公開JSONのフィールド契約
@@ -41,6 +41,11 @@ updated_for: 30a743f
 [曲目L1のINV-SNG-002/007/008](../L1/08-songs.md)を参照する。
 最新の正本取得run `34340430748` によるR2前後の9ケース・4出力はbyte一致した。
 以下の379件・参照field数は `6537e7f` 当時の分析値で、最新件数の意味ではない。
+
+2026-09-09の公式情報更新候補は394件（新規7件、既存更新4件、削除0件）。
+`data/change_requests/official_refresh_20260909_reviewed.json` の当年根拠から生成し、
+過去開催回はRDBへ保持する。フィールド契約は変えず、催し全体の時間と盆踊りの時間は
+公開detailで区別する。適用と公開の証跡は `docs/official-data-refresh-20260909.md` を参照。
 
 ## 全体像
 

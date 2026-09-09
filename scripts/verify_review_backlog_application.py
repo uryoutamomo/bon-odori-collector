@@ -29,6 +29,90 @@ def scalar(conn, query, params=()):
     return conn.execute(query, params).fetchone()[0]
 
 
+def _error(errors, request_id, error, **details):
+    errors.append({"request_id": request_id, "error": error, **details})
+
+
+def _verify_current_year_evidence(connection, request, occurrence_id, errors):
+    """Verify the evidence and link every current-year schedule writer creates."""
+    request_id = request["request_id"]
+    evidence_id = _source_evidence_id(request)
+    row = connection.execute(
+        """
+        SELECT e.url, e.evidence_type, e.detected_event_date, l.link_status
+        FROM evidence_items e
+        LEFT JOIN occurrence_evidence_links l
+          ON l.evidence_id = e.evidence_id
+         AND l.occurrence_id = ?
+         AND l.target = 'date_and_venue'
+        WHERE e.evidence_id = ?
+        """,
+        (occurrence_id, evidence_id),
+    ).fetchone()
+    expected = (request["source"]["url"], request["source"]["kind"], request["date_start"])
+    actual = tuple(row[:3]) if row else None
+    if actual != expected or not row or row[3] != "accepted":
+        _error(
+            errors,
+            request_id,
+            "current_year_evidence_mismatch",
+            evidence_id=evidence_id,
+            expected={"url": expected[0], "kind": expected[1], "date_start": expected[2], "link_status": "accepted"},
+            actual={
+                "url": actual[0] if actual else None,
+                "kind": actual[1] if actual else None,
+                "date_start": actual[2] if actual else None,
+                "link_status": row[3] if row else None,
+            },
+        )
+
+
+def _verify_current_year_occurrence(connection, request, occurrence_id, errors, *, series_id):
+    """Check the durable schedule/venue contract shared by the three event actions."""
+    request_id = request["request_id"]
+    occurrence = connection.execute(
+        """
+        SELECT series_id, event_year, occurrence_sequence, venue_id, date_start, date_end,
+               date_status, lifecycle_status, current_event_state, date_certainty_tier, source_kind, detail
+        FROM event_occurrences WHERE occurrence_id = ?
+        """,
+        (occurrence_id,),
+    ).fetchone()
+    expected_end = request.get("date_end") or request["date_start"]
+    expected = (series_id, int(request["event_year"]), 1, request["date_start"], expected_end, request["source"]["kind"])
+    if not occurrence:
+        _error(errors, request_id, "current_year_occurrence_missing", occurrence_id=occurrence_id)
+        return
+    actual = (occurrence[0], occurrence[1], occurrence[2], occurrence[4], occurrence[5], occurrence[10])
+    if actual != expected:
+        _error(errors, request_id, "current_year_occurrence_mismatch", occurrence_id=occurrence_id, expected=expected, actual=actual)
+    if occurrence[6] not in {"confirmed", "ended"} or occurrence[7] != "published" or occurrence[8] != occurrence[6] or occurrence[9] != "confirmed":
+        _error(
+            errors, request_id, "current_year_occurrence_state_mismatch", occurrence_id=occurrence_id,
+            actual={"date_status": occurrence[6], "lifecycle_status": occurrence[7], "current_event_state": occurrence[8], "date_certainty_tier": occurrence[9]},
+        )
+    if request.get("detail_replacement") is not None and occurrence[11] != request["detail_replacement"].strip():
+        _error(
+            errors, request_id, "detail_replacement_mismatch", occurrence_id=occurrence_id,
+            expected=request["detail_replacement"].strip(), actual=occurrence[11],
+        )
+    if "expected_source_url" in request:
+        actual_source = connection.execute("SELECT source_url FROM event_occurrences WHERE occurrence_id = ?", (occurrence_id,)).fetchone()[0]
+        if actual_source != request["source"]["url"]:
+            _error(errors, request_id, "representative_source_url_mismatch", expected=request["source"]["url"], actual=actual_source)
+    venue = request.get("venue") or {}
+    if venue.get("venue_id"):
+        if occurrence[3] != venue["venue_id"]:
+            _error(errors, request_id, "venue_id_mismatch", expected=venue["venue_id"], actual=occurrence[3])
+    elif venue.get("name"):
+        venue_row = connection.execute("SELECT canonical_name FROM venues WHERE venue_id = ?", (occurrence[3],)).fetchone()
+        if not venue_row or venue_row[0] != venue["name"]:
+            _error(errors, request_id, "venue_name_mismatch", expected=venue["name"], actual=venue_row[0] if venue_row else None)
+    else:
+        _error(errors, request_id, "venue_missing")
+    _verify_current_year_evidence(connection, request, occurrence_id, errors)
+
+
 def verify(db: Path, payload: dict) -> dict:
     errors = []
     counts = {}
@@ -265,6 +349,35 @@ def verify(db: Path, payload: dict) -> dict:
                                     "actual": linked[0],
                                 }
                             )
+            elif change_type == "create_event_series":
+                series_key = normalize_text(request["series_name"])
+                series_id = stable_id("series", series_key)
+                series = connection.execute(
+                    "SELECT series_id, series_key, canonical_name, source_url FROM event_series WHERE series_id = ?",
+                    (series_id,),
+                ).fetchone()
+                expected_series = (series_id, series_key, request["series_name"], request["source"]["url"])
+                if not series or tuple(series) != expected_series:
+                    _error(errors, request_id, "created_series_mismatch", expected=expected_series, actual=tuple(series) if series else None)
+                    continue
+                occurrence_id = stable_id("occ", series_id, int(request["event_year"]), 1)
+                _verify_current_year_occurrence(connection, request, occurrence_id, errors, series_id=series_id)
+            elif change_type == "create_current_year_occurrence":
+                series_id = request["series_id"]
+                occurrence_id = stable_id("occ", series_id, int(request["event_year"]), 1)
+                _verify_current_year_occurrence(connection, request, occurrence_id, errors, series_id=series_id)
+            elif change_type == "confirm_current_year_date":
+                target = connection.execute(
+                    "SELECT series_id FROM event_occurrences WHERE occurrence_id = ?",
+                    (request["occurrence_id"],),
+                ).fetchone()
+                _verify_current_year_occurrence(
+                    connection,
+                    request,
+                    request["occurrence_id"],
+                    errors,
+                    series_id=target[0] if target else None,
+                )
             else:
                 errors.append({"request_id": request_id, "error": "unsupported_type"})
 

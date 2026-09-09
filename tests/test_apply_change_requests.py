@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import json
 import sqlite3
 import tempfile
@@ -108,6 +109,76 @@ class ApplyChangeRequestsTests(unittest.TestCase):
 
                 with self.assertRaisesRegex(ValueError, "requires occurrence_id"):
                     validate_payload(payload)
+
+    def _detail_correction_request(self):
+        return {
+            "request_id": "date_correction", "change_type": "confirm_current_year_date",
+            "occurrence_id": "occ_1", "event_year": 2026, "date_start": "2026-08-30",
+            "date_end": "2026-08-30", "detail_replacement": "8月30日18時開始。",
+            "expected_detail_sha256": hashlib.sha256("8月29日開催。".encode()).hexdigest(),
+            "source": {"url": "https://example.test/correction", "kind": "official_current_year", "platform": "web"},
+            "note": "公式告知の日程変更を確認。",
+        }
+
+    def test_date_confirmation_replaces_reviewed_detail_and_is_idempotent(self):
+        self.conn.execute("UPDATE event_occurrences SET detail='8月29日開催。' WHERE occurrence_id='occ_1'")
+        self.conn.commit()
+        payload = {"request_type": "rdb_change_requests", "requests": [self._detail_correction_request()]}
+        validate_payload(payload)
+        for _ in range(2):
+            applied, issues = apply_payload(self.conn, payload, "2026-09-09T00:00:00+00:00")
+            self.conn.commit()
+            self.assertFalse(issues)
+            self.assertEqual(len(applied["requests_applied"]), 1)
+        self.assertEqual(tuple(self.conn.execute("SELECT date_start, detail FROM event_occurrences WHERE occurrence_id='occ_1'").fetchone()), ("2026-08-30", "8月30日18時開始。"))
+        self.assertEqual(self.conn.execute("SELECT COUNT(*) FROM occurrence_evidence_links").fetchone()[0], 1)
+
+    def test_date_confirmation_refuses_stale_detail_before_any_changes(self):
+        self.conn.execute("UPDATE event_occurrences SET detail='後から確認した中止情報' WHERE occurrence_id='occ_1'")
+        self.conn.commit()
+        before = list(self.conn.iterdump())
+        request = self._detail_correction_request()
+        request["venue"] = {"name": "新会場", "area": "中央区"}
+        applied, issues = apply_payload(self.conn, {"requests": [request]}, "2026-09-09T00:00:00+00:00")
+        self.assertEqual(applied["requests_applied"], [])
+        self.assertEqual(issues[0]["issue_type"], "detail_snapshot_mismatch")
+        self.assertEqual(issues[0]["severity"], "high")
+        self.assertEqual(list(self.conn.iterdump()), before)
+
+    def test_detail_replacement_requires_reviewed_hash_and_date_confirmation(self):
+        for changes in ({"expected_detail_sha256": None}, {"detail_replacement": ""}, {"change_type": "update_venue", "venue": {"venue_id": "venue_old"}}):
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                validate_payload({"request_type": "rdb_change_requests", "requests": [{**self._detail_correction_request(), **changes}]})
+
+    def test_reviewed_source_replacement_updates_last_year_page_and_refuses_drift(self):
+        request = self._detail_correction_request()
+        request.pop("detail_replacement")
+        request.pop("expected_detail_sha256")
+        request["expected_source_url"] = "https://example.test/2025"
+        payload = {"request_type": "rdb_change_requests", "requests": [request]}
+        validate_payload(payload)
+        self.conn.execute("UPDATE event_occurrences SET source_url=? WHERE occurrence_id='occ_1'", (request["expected_source_url"],))
+        self.conn.commit()
+        for _ in range(2):
+            applied, issues = apply_payload(self.conn, payload, "2026-09-09T00:00:00+00:00")
+            self.conn.commit()
+            self.assertFalse(issues)
+            self.assertEqual(len(applied["requests_applied"]), 1)
+        self.assertEqual(self.conn.execute("SELECT source_url FROM event_occurrences WHERE occurrence_id='occ_1'").fetchone()[0], request["source"]["url"])
+        self.conn.execute("UPDATE event_occurrences SET source_url='https://example.test/cancelled' WHERE occurrence_id='occ_1'")
+        self.conn.commit()
+        before = list(self.conn.iterdump())
+        applied, issues = apply_payload(self.conn, payload, "2026-09-09T00:00:00+00:00")
+        self.assertEqual(applied["requests_applied"], [])
+        self.assertEqual(issues[0]["issue_type"], "source_url_snapshot_mismatch")
+        self.assertEqual(list(self.conn.iterdump()), before)
+
+    def test_reviewed_source_replacement_rejects_social_downgrade(self):
+        request = self._detail_correction_request()
+        request["expected_source_url"] = "https://example.test/2025"
+        request["source"]["url"] = "https://x.com/someone/status/1"
+        with self.assertRaisesRegex(ValueError, "official current-year web page"):
+            validate_payload({"request_type": "rdb_change_requests", "requests": [request]})
 
     def test_apply_payload_does_not_resolve_existing_target_from_match_hint(self):
         request = {

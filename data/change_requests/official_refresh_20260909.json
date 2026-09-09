@@ -1,0 +1,252 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "おと（Codex）",
+  "scope": "official_refresh_20260909",
+  "purpose": "公式当年根拠による新規7系列、既存3開催回修正、既存1系列の2026開催回追加。2025開催回は保持する。",
+  "requests": [
+    {
+      "request_id": "official_refresh_20260909_01",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "source": {
+        "url": "https://www.arkhills.com/events/2026/09/0221.html",
+        "kind": "organizer_current_year",
+        "platform": "web",
+        "title": "アークヒルズ秋祭り 盆踊り",
+        "text_excerpt": "公式ページは盆踊りを9月12日18:00〜20:00、アーク・カラヤン広場と記載。"
+      },
+      "note": "2026年の盆踊りは9月12日（土）18:00〜20:00、アーク・カラヤン広場で開催。秋祭り全体は9月11〜13日ですが、盆踊りは12日のみです。入場無料。雨天決行・荒天中止。",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_c7619656781592c0",
+      "venue": {
+        "venue_id": "ven_1cf7f5098bab239b"
+      },
+      "detail_replacement": "2026年の盆踊りは9月12日（土）18:00〜20:00、アーク・カラヤン広場で開催。秋祭り全体は9月11〜13日ですが、盆踊りは12日のみです。入場無料。雨天決行・荒天中止。",
+      "expected_detail_sha256": "a5fb7f33359aa33c5cb7782bad1282fae7add7e363de6a76cb2944a3241630ed",
+      "expected_source_url": "https://www.arkhills.com/events/regular_events.html"
+    },
+    {
+      "request_id": "official_refresh_20260909_02",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-09-11",
+      "date_end": "2026-09-13",
+      "source": {
+        "url": "https://www.akasakahikawa.or.jp/hikawasai-r08/",
+        "kind": "organizer_current_year",
+        "platform": "web",
+        "title": "赤坂氷川祭 盆踊り大会",
+        "text_excerpt": "神社が盆踊り3日間と各日の時刻、境内会場を明記。"
+      },
+      "note": "2026年9月11日（金）・12日（土）は18:30〜21:00、13日（日）は19:00〜21:00に赤坂氷川神社境内で盆踊りを開催。露店は3日間とも15:00〜21:00。",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_566324ef4cc023fc",
+      "venue": {
+        "venue_id": "ven_60821b746fd13c5e"
+      },
+      "expected_source_url": "https://www.akasakahikawa.or.jp/hikawasai-r07/"
+    },
+    {
+      "request_id": "official_refresh_20260909_03",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "source": {
+        "url": "https://www.shibuya-hikawa.com/page3",
+        "kind": "organizer_current_year",
+        "platform": "web",
+        "title": "氷川神社例大祭 氷川参道櫓まつり",
+        "text_excerpt": "渋谷氷川町会の最新表は民謡踊りを18:00〜20:55と明記。"
+      },
+      "note": "2026年9月12日（土）、氷川参道櫓まつりの民謡踊りは18:00〜20:55。前半18:00〜19:15、生演奏19:15〜20:00、後半20:00〜20:55。17:00から式典、17:20〜17:55は練習会。主催者の8月22日更新の進行表で確認。",
+      "change_type": "create_event_series",
+      "series_name": "氷川神社例大祭 氷川参道櫓まつり",
+      "display_name": "氷川神社例大祭 氷川参道櫓まつり",
+      "venue": {
+        "name": "渋谷氷川神社参道",
+        "area": "渋谷区"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_04",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "source": {
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/webkohoshi/080901html/shina_20260901_14_03.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "品川納涼祭",
+        "text_excerpt": "区報は10月3日11:00〜18:00、盆踊りを内容として掲載。"
+      },
+      "note": "2026年10月3日（土）11:00〜18:00、西大井広場公園で開催。盆踊り、歌やダンスのステージ、模擬店、物産展など。11:00〜18:00は催し全体の時間で、盆踊りの開始・終了時刻は未掲載。",
+      "change_type": "create_event_series",
+      "series_name": "品川納涼祭",
+      "display_name": "品川納涼祭",
+      "venue": {
+        "venue_id": "ven_99338bade7fe3bbe"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_05",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-09-19",
+      "date_end": "2026-09-19",
+      "source": {
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/webkohoshi/080901html/shina_20260901_14_03.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "BONDANCEフェスティバル",
+        "text_excerpt": "区報は第14回を9月19日11:00〜20:30、盆踊りを内容として掲載。"
+      },
+      "note": "2026年9月19日（土）11:00〜20:30、旗の台東口メイン通りで開催。盆踊りのほか、ステージ、ダンス、マジック、露店販売など。11:00〜20:30は催し全体の時間で、盆踊りの開始・終了時刻は未掲載。",
+      "change_type": "create_event_series",
+      "series_name": "BONDANCEフェスティバル",
+      "display_name": "BONDANCEフェスティバル",
+      "venue": {
+        "name": "旗の台東口メイン通り",
+        "area": "品川区"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_06",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-09-06",
+      "date_end": "2026-09-06",
+      "source": {
+        "url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2026/202607/20260715top/03.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "白金台どんぐり児童遊園 納涼盆踊り大会",
+        "text_excerpt": "区の夏イベント一覧は盆踊り、9月6日16:00〜19:30を掲載。"
+      },
+      "note": "2026年の開催日は9月6日（日）16:00〜19:30。会場は白金台どんぐり児童遊園。港区の夏のイベント一覧で確認。",
+      "change_type": "create_current_year_occurrence",
+      "series_id": "ser_65e9579530960384",
+      "display_name": "白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": {
+        "venue_id": "ven_511a7a9d0635c174"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_07",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-07-19",
+      "date_end": "2026-07-19",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "椿東町会盆踊り大会",
+        "text_excerpt": "区の2026年一覧に7月19日17時から、会場・主催を掲載。"
+      },
+      "note": "2026年07月19日 17:00開始。会場は椿ひがし公園。江戸川区の公式一覧で開催日と開始時刻を確認。終了時刻は未掲載。",
+      "change_type": "create_event_series",
+      "series_name": "椿東町会盆踊り大会",
+      "display_name": "椿東町会盆踊り大会",
+      "venue": {
+        "name": "椿ひがし公園",
+        "area": "江戸川区",
+        "address": "東京都江戸川区瑞江3-22-1"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_08",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-07-19",
+      "date_end": "2026-07-19",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "山王神社盆踊り",
+        "text_excerpt": "区の2026年一覧に7月19日18時から、山王神社と掲載。"
+      },
+      "note": "2026年07月19日 18:00開始。会場は山王神社。江戸川区の公式一覧で開催日と開始時刻を確認。終了時刻は未掲載。",
+      "change_type": "create_event_series",
+      "series_name": "山王神社盆踊り",
+      "display_name": "山王神社盆踊り",
+      "venue": {
+        "name": "山王神社",
+        "area": "江戸川区",
+        "address": "東京都江戸川区江戸川3-5-6"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_09",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "内手昭和会・親子盆踊り大会",
+        "text_excerpt": "区の2026年一覧に7月25日18時から、下鎌田小学校と掲載。"
+      },
+      "note": "2026年07月25日 18:00開始。会場は下鎌田小学校。江戸川区の公式一覧で開催日と開始時刻を確認。終了時刻は未掲載。",
+      "change_type": "create_event_series",
+      "series_name": "内手昭和会・親子盆踊り大会",
+      "display_name": "内手昭和会・親子盆踊り大会",
+      "venue": {
+        "name": "下鎌田小学校",
+        "area": "江戸川区",
+        "address": "東京都江戸川区東瑞江3-11-1"
+      }
+    },
+    {
+      "request_id": "official_refresh_20260909_10",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-08-30",
+      "date_end": "2026-08-30",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "今井町会納涼盆踊り大会",
+        "text_excerpt": "区の2026年一覧は8月30日18時からとし、29日から変更と明記。"
+      },
+      "note": "2026年の開催日は8月30日（日）18:00開始、八雲神社前広場。江戸川区の公式一覧で、8月29日から30日への日程変更が案内されています。終了時刻と雨天時の扱いは未掲載。",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_856e14213350713d",
+      "venue": {
+        "venue_id": "venue_366b338cf09a8635"
+      },
+      "detail_replacement": "2026年の開催日は8月30日（日）18:00開始、八雲神社前広場。江戸川区の公式一覧で、8月29日から30日への日程変更が案内されています。終了時刻と雨天時の扱いは未掲載。",
+      "expected_detail_sha256": "3f54de588a52a6e32a9324d4332b683af64eb32b711a7cb935804608a1b87795"
+    },
+    {
+      "request_id": "official_refresh_20260909_11",
+      "dry_run_only": true,
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会",
+        "text_excerpt": "区の2026年一覧に7月25日・26日18時からと掲載。"
+      },
+      "note": "2026年07月25日 18:00開始、07月26日 18:00開始。会場は江戸川中央公園。江戸川区の公式一覧で開催日と開始時刻を確認。終了時刻は未掲載。",
+      "change_type": "create_event_series",
+      "series_name": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会",
+      "display_name": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会",
+      "venue": {
+        "name": "江戸川中央公園",
+        "area": "江戸川区",
+        "address": "東京都江戸川区江戸川1-9-32"
+      }
+    }
+  ]
+}

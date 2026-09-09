@@ -1,0 +1,115 @@
+[
+  {
+    "request_id": "official_refresh_20260909_01",
+    "name": "アークヒルズ秋祭り 盆踊り",
+    "change_type": "confirm_current_year_date",
+    "dates": [
+      "2026-09-12"
+    ],
+    "source": "https://www.arkhills.com/events/2026/09/0221.html",
+    "decision": "2026-09-12と盆踊り時刻を確定し、2026年当年公式URLへ差し替え。"
+  },
+  {
+    "request_id": "official_refresh_20260909_02",
+    "name": "赤坂氷川祭 盆踊り大会",
+    "change_type": "confirm_current_year_date",
+    "dates": [
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13"
+    ],
+    "source": "https://www.akasakahikawa.or.jp/hikawasai-r08/",
+    "decision": "9月11日〜13日の開催日と日別時刻を確定。"
+  },
+  {
+    "request_id": "official_refresh_20260909_03",
+    "name": "氷川神社例大祭 氷川参道櫓まつり",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-09-12"
+    ],
+    "source": "https://www.shibuya-hikawa.com/page3",
+    "decision": "公開JSONに名称類似・会場類似の一致なし。17:00の式典・練習会とは分け、民謡踊りの18:00〜20:55を盆踊り時刻として採用。住所は公式告知に未掲載のため保留。"
+  },
+  {
+    "request_id": "official_refresh_20260909_04",
+    "name": "品川納涼祭",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-10-03"
+    ],
+    "source": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/webkohoshi/080901html/shina_20260901_14_03.html",
+    "decision": "会場は既存開催回と同じだが、2026年公式区報の名称は『品川納涼祭』、主催は二葉中央商店会。現在の根拠だけでは同一系列と断定せず、新規系列候補として保留付きで扱う。公式区報は公園住所を掲載していない。"
+  },
+  {
+    "request_id": "official_refresh_20260909_05",
+    "name": "BONDANCEフェスティバル",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-09-19"
+    ],
+    "source": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/webkohoshi/080901html/shina_20260901_14_03.html",
+    "decision": "公開JSONと本番RDBに同名一致なし。公式区報は通りの番地を掲載していない。"
+  },
+  {
+    "request_id": "official_refresh_20260909_06",
+    "name": "白金台どんぐり児童遊園 納涼盆踊り大会",
+    "change_type": "create_current_year_occurrence",
+    "dates": [
+      "2026-09-06"
+    ],
+    "source": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2026/202607/20260715top/03.html",
+    "decision": "前年日付を2026-09-06へ更新し、時刻と港区公式URLを追加。"
+  },
+  {
+    "request_id": "official_refresh_20260909_07",
+    "name": "椿東町会盆踊り大会",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-07-19"
+    ],
+    "source": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+    "decision": "公開JSONに名称一致なし。住所は同区の前年公式一覧で同会場の所在地を確認した補助情報。"
+  },
+  {
+    "request_id": "official_refresh_20260909_08",
+    "name": "山王神社盆踊り",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-07-19"
+    ],
+    "source": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+    "decision": "公開JSONに名称一致なし。住所は同区の前年公式一覧で同会場の所在地を確認した補助情報。"
+  },
+  {
+    "request_id": "official_refresh_20260909_09",
+    "name": "内手昭和会・親子盆踊り大会",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-07-25"
+    ],
+    "source": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+    "decision": "公開JSONに名称一致なし。住所は同区の前年公式一覧で同会場の所在地を確認した補助情報。"
+  },
+  {
+    "request_id": "official_refresh_20260909_10",
+    "name": "今井町会納涼盆踊り大会",
+    "change_type": "confirm_current_year_date",
+    "dates": [
+      "2026-08-30"
+    ],
+    "source": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+    "decision": "開催日を2026-08-29から2026-08-30へ訂正し、開始時刻を追加。"
+  },
+  {
+    "request_id": "official_refresh_20260909_11",
+    "name": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会",
+    "change_type": "create_event_series",
+    "dates": [
+      "2026-07-25",
+      "2026-07-26"
+    ],
+    "source": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+    "decision": "公開JSONに名称一致なし。住所は同区の前年公式一覧で同会場の所在地を確認した補助情報。"
+  }
+]

@@ -49,6 +49,7 @@ invariants:
   - INV-MST-016
 verified_by:
   - tests/test_apply_change_requests.py
+  - tests/test_verify_review_backlog_application.py
   - tests/test_master_db_s3_artifact.py
   - tests/test_capture_public_projection_inputs.py
   - tests/test_audit_master_rdb.py
@@ -62,7 +63,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_scoped_song_retraction.py
-updated_for: 68cd2f5
+updated_for: 01b1616
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -106,15 +107,22 @@ updated_for: 68cd2f5
 ### INV-MST-001 RDBへの反映は有限の変更種別だけを通す
 
 - **内容**: `report_apply/apply_change_requests.py` が受け付ける変更は
-  `create_current_year_occurrence` / `confirm_current_year_date` / `add_historical_reference` /
-  `update_venue` / `add_song_evidence` / `retract_occurrence_song` に限られる（`CHANGE_TYPES`）。
+  `create_event_series` / `create_current_year_occurrence` / `confirm_current_year_date` /
+  `add_historical_reference` / `update_venue` / `add_song_evidence` と、
+  `report_apply/review_backlog_change_requests.py` の `CHANGE_TYPES` が定める
+  `merge_song_identity` / `retract_song_identity` / `retract_occurrence_song` /
+  `register_song_candidate` / `record_youtube_review_decision` に限られる。
+  新規系列は `create_event_series`、既存系列の別年開催回は `create_current_year_occurrence`、
+  既存の当年開催回の日程確認は `confirm_current_year_date` で区別する。
+  `create_event_series` は同じ正規化系列名が存在したら既存系列を変更せず拒否する。
   未知の種別は検証で弾かれ、自由記述のパッチは受け付けない。
 - **なぜ**: 「何でも書ける口」を1つ用意すると、種別ごとに必要な根拠を強制できなくなるから。
   種別を絞ることで、たとえば「今年の開催日を確定する」には今年のソースが要る、という規則を機械が守れる。
 - **破れたときの症状**: 根拠のない値がRDBへ入り、どの情報が確定でどれが推測か区別できなくなる。
   イベント個別の `apply_*.py` が増殖し、それぞれ違う検証をするようになる。
 - **守っているコード**: `report_apply/apply_change_requests.py` の `CHANGE_TYPES` と検証処理
-- **守っているテスト**: `tests/test_apply_change_requests.py::test_applies_four_finite_change_types`
+- **守っているテスト**: `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_applies_four_finite_change_types`、
+  `tests/test_e2_identity_judgment.py::CreateEventSeriesTest::test_create_event_series_never_touches_an_existing_series`
 
 ### INV-MST-016 曲目の撤回は開催回・根拠・観測行を固定してからだけ行う
 
@@ -156,11 +164,18 @@ updated_for: 68cd2f5
 - **内容**: `apply_change_requests.py` は既定でコピーDB（`data/change_requests_apply_dry_run.sqlite`）にだけ書く。
   実DBへ反映するには `--apply` と、`manual_apply_guards.CHANGE_REQUESTS_CONFIRMATION` の確認句が要る。
   さらに `dry_run_only` が付いたリクエストが1件でも含まれていれば、`--apply` を拒否する。
+  当年の日程確認と同時に古い案内文を直す場合は、`confirm_current_year_date` に
+  `detail_replacement` と旧本文のUTF-8 SHA-256 `expected_detail_sha256` を添える。
+  書込みトランザクション内で旧本文の一致を確認し、不一致なら日程・会場・根拠も変更せず
+  high issueで停止する。既に本文が置換後の文面と一致する場合だけ再実行を許す。
 - **なぜ**: RDBは公開・メール・レビューすべての土台なので、壊れたときの影響範囲が最も広い。
   「試すつもりが本番に入った」を構造的に起こせなくしてある。
 - **破れたときの症状**: 検証目的の実行が本番RDBを書き換える。
 - **守っているコード**: `report_apply/apply_change_requests.py` の `main()` と `require_confirmation()` 呼び出し
-- **守っているテスト**: `tests/test_apply_change_requests.py::test_apply_refuses_dry_run_only_requests`
+- **守っているテスト**: `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_apply_refuses_dry_run_only_requests`、
+  `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_date_confirmation_replaces_reviewed_detail_and_is_idempotent`、
+  `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_date_confirmation_refuses_stale_detail_before_any_changes`、
+  `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_detail_replacement_requires_reviewed_hash_and_date_confirmation`
 
 ### INV-MST-004 S3の latest を上書きするときは、期待するチェックサムと一致させる
 
@@ -261,12 +276,16 @@ updated_for: 68cd2f5
 - **守っているコード**: `event_model/event_date_prediction_judgment.py`
 - **守っているテスト**: `tests/test_event_date_prediction_judgment.py`
 
-### INV-MST-012 レビュー済み曲根拠は派生値まで確定してから正本DBを公開する
+### INV-MST-012 レビュー済み変更は適用結果と派生値を検証してから正本DBを公開する
 
 - **内容**: `apply-reviewed-change-requests.yml` はレビュー済み変更要求をコピーDBへdry-runした後、
   正本候補へ適用する。`add_song_evidence` が含まれる場合は対象開催回の曲確率を再計算し、
   過去実績からの日付候補を再構築し、RDBだけを入力にした公開JSON出力と適用内容の検証を通す。
   その同じSQLite成果物だけをCASでS3へpublishし、再取得後にも適用検証と公開JSON出力を繰り返す。
+  `create_event_series` / `create_current_year_occurrence` / `confirm_current_year_date` では、
+  verifierが系列・当年開催回の同一性、開催日、会場、状態軸、当年根拠と開催回へのリンクを照合する。
+  `detail_replacement` があれば置換後本文も一致を確認する。代表URLは既存の強い出典を保持できるため、
+  incoming URLは根拠itemとリンクで検証する。
 - **なぜ**: 曲根拠だけを書いて確率を古いまま残す、または公開JSONの旧フォールバックだけで見た目を直すと、
   次の正本同期で表示が戻る。日付候補の照合が短い正式名を取りこぼすと、RDBが正しくても公開出力が失敗する。
 - **破れたときの症状**: RDBには根拠があるのに曲の確率が空または更新前のままになる。
@@ -275,7 +294,9 @@ updated_for: 68cd2f5
   `promotion_candidates/build_historical_promotion_candidates.py`、
   `scripts/verify_review_backlog_application.py`
 - **守っているテスト**: `tests/test_reviewed_change_requests_workflow.py::test_workflow_dry_runs_before_apply_and_verifies_every_stage`、
-  `tests/test_build_historical_promotion_candidates.py::BuildHistoricalPromotionCandidatesTest::test_exact_event_and_venue_match_short_canonical_name`
+  `tests/test_build_historical_promotion_candidates.py::BuildHistoricalPromotionCandidatesTest::test_exact_event_and_venue_match_short_canonical_name`、
+  `tests/test_verify_review_backlog_application.py::test_verifier_accepts_all_current_year_event_change_types`、
+  `tests/test_verify_review_backlog_application.py::test_verifier_rejects_current_year_confirmation_mutations`
 
 ### INV-MST-013 生成された日付予測は正本RDBへ先に同期し、曖昧な系列へは書かない
 
@@ -305,6 +326,10 @@ updated_for: 68cd2f5
   ただし単数の `event_occurrences.source_url` は公開用の代表出典として扱い、通常のWebページ、
   公式・主催者X、未登録SNSの順で品質を比較する。新しいURLの品質が明確に上がる場合だけ差し替え、
   同等以下なら既存URLを残す。
+  前年の告知や一般一覧から当年の公式ページへ明示的に更新する場合だけ、レビュー時の旧URLを
+  `expected_source_url` として指定できる。旧URLが一致（または既に同じ新URL）し、incomingが
+  公式・主催者の当年Webページで品質を下げない場合にだけ差し替える。不一致は変更前に停止する。
+  verifierはこの明示指定がある場合、新しい代表URLとの完全一致も検査する。
 - **なぜ**: `source_url` を無条件に上書きすると、公式ページが私人や第三者のX投稿へ置き換わり、
   公開exportが元の公式URLを復元できない。新しい根拠を記録することと、公開する代表出典を選ぶことは別である。
 - **破れたときの症状**: 開催日を追加確認した後、公開ページの「公式告知あり」が消える、
@@ -313,6 +338,8 @@ updated_for: 68cd2f5
   `_preferred_representative_source()` と `apply_confirm_current_year_date()`
 - **守っているテスト**: `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_confirm_current_year_date_does_not_replace_web_source_with_social_post`、
   `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_confirm_current_year_date_replaces_social_source_with_web_source`
+  、`tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_reviewed_source_replacement_updates_last_year_page_and_refuses_drift`、
+  `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_reviewed_source_replacement_rejects_social_downgrade`
 
 ## 主要な流れ
 
