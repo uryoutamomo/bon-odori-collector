@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T02:44:05Z",
-  "generated_for_commit": "f6d0be4",
+  "generated_at": "2026-09-09T03:08:59Z",
+  "generated_for_commit": "73f3634",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -481,6 +481,7 @@
         "master_rdb/freeze_policy.py",
         "master_rdb/s3_artifact.py",
         "master_rdb/capture_public_projection_inputs.py",
+        ".github/workflows/capture-public-projection-inputs.yml",
         "master_rdb/unified_model_audit.py",
         "rdb_builders/**",
         "report_apply/**",
@@ -536,10 +537,11 @@
         "tests/test_sync_event_date_predictions_rdb.py",
         "tests/test_collect_event_state_axes_wiring.py"
       ],
-      "updated_for": "f6d0be4",
+      "updated_for": "06049ba",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
+        ".github/workflows/capture-public-projection-inputs.yml",
         "audit_master_rdb.py",
         "data/llm_event_date_prediction_judgments.json",
         "data/official_notice_reports/detail_cleanup_repair_20260816.json",
@@ -591,12 +593,22 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.16",
-      "revision_count": 17,
+      "version": "1.18",
+      "revision_count": 19,
       "history": [
+        {
+          "commit": "f989c78",
+          "date": "2026-09-09",
+          "subject": "Enable encrypted public projection input capture workflow"
+        },
+        {
+          "commit": "06049ba",
+          "date": "2026-09-09",
+          "subject": "Prepare verified encrypted inputs and complete public projection comparison checks"
+        },
         {
           "commit": "9b904c3",
           "date": "2026-08-22",
@@ -646,16 +658,6 @@
           "commit": "28a8012",
           "date": "2026-08-15",
           "subject": "確からしさは名指しなら下げられるようにする（#211 の直し過ぎを戻す） (#212)"
-        },
-        {
-          "commit": "dcb2f01",
-          "date": "2026-08-15",
-          "subject": "確からしさを日付確認のついでに下げない（E2実地試行で見つかった穴） (#211)"
-        },
-        {
-          "commit": "a40d7c4",
-          "date": "2026-08-15",
-          "subject": "LLMは同一性だけを答え、機械が変更要求へ変換する（E2） (#210)"
         }
       ]
     },
@@ -698,7 +700,7 @@
         "tests/test_sync_event_date_predictions_rdb.py",
         "tests/test_compare_public_export_postprocessors.py"
       ],
-      "updated_for": "c729024",
+      "updated_for": "f6d0be4",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "docs/public-json-rdb-projection-migration-plan.md",
@@ -722,12 +724,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 2,
+        "files_changed_since": 2
       },
-      "version": "1.18",
-      "revision_count": 19,
+      "version": "1.19",
+      "revision_count": 20,
       "history": [
+        {
+          "commit": "06049ba",
+          "date": "2026-09-09",
+          "subject": "Prepare verified encrypted inputs and complete public projection comparison checks"
+        },
         {
           "commit": "ff2ef6c",
           "date": "2026-09-09",
@@ -782,11 +789,6 @@
           "commit": "1bd1ad3",
           "date": "2026-08-17",
           "subject": "Allow derived source URL representation changes"
-        },
-        {
-          "commit": "5892ac4",
-          "date": "2026-08-17",
-          "subject": "Fix detail projection direct imports"
         }
       ]
     },
@@ -1380,10 +1382,7 @@
       "owned_files": [
         "master_rdb/master_db.py"
       ],
-      "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
-      },
+      "staleness": null,
       "version": "1.2",
       "revision_count": 3,
       "history": [
@@ -2671,6 +2670,7 @@
     "stage_rare_signal_backcheck_reviews.py": "L1-review",
     "x_candidate_backlog.py": "L1-review",
     ".github/workflows/apply-reviewed-change-requests.yml": "L1-master",
+    ".github/workflows/capture-public-projection-inputs.yml": "L1-master",
     "audit_master_rdb.py": "L1-master",
     "data/llm_event_date_prediction_judgments.json": "L1-master",
     "data/official_notice_reports/detail_cleanup_repair_20260816.json": "L1-master",
