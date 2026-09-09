@@ -6,6 +6,8 @@ owns:
   - export_public_events.py
   - public_json_postprocessors/**
   - public_export_support/**
+  - scripts/compare_public_export_postprocessors.py
+  - docs/public-json-rdb-projection-migration-plan.md
   - guard_site_public_event_additions.py
   - venues/export_public_venues.py
 depends_on:
@@ -21,6 +23,7 @@ invariants:
   - INV-PUB-008
   - INV-PUB-009
   - INV-PUB-010
+  - INV-PUB-011
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
@@ -30,7 +33,8 @@ verified_by:
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: c729024
+  - tests/test_compare_public_export_postprocessors.py
+updated_for: f6d0be4
 ---
 
 # 公開サブシステム
@@ -250,6 +254,14 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **破れたときの症状**: RDBでは `published`・日付確定なのに公開件数が増えず、exportログの除外件数も0のままになる。
 - **守っているコード**: `export_public_events.py` の `load_public_eligible_missing_venue_area()`、`missing_venue_area_report_lines()`、`append_missing_venue_area_github_summary()` と `main()`
 - **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_master_export_reports_public_eligible_row_missing_venue_area`、`tests/test_export_public_events.py::ExportPublicEventsTest::test_missing_venue_area_report_is_appended_to_actions_summary`
+
+### INV-PUB-011 公開投影の比較は同じ入力組と全出力で判定する
+
+- **内容**: `scripts/compare_public_export_postprocessors.py` は正本DBとmanifestのchecksum一致、固定した補助JSON、曲目occurrence fallback、`today`、`target_year`、collector commitを比較の根拠にする。出力先変更でfallbackを欠落させず、events JSON・JS・曲目JSON・内部source mapのすべてで一致を確認する。fallbackは生成物ではなく入力である。
+- **なぜ**: 一部の入力や出力を省くと、実運用と違う条件で差分ゼロになり、移行時の曲目欠落や対応IDのずれを見逃す。
+- **破れたときの症状**: events JSONの比較は通るのに曲目やsource mapが変わる、または比較専用実行だけ曲目が減る。
+- **守っているコード**: `scripts/compare_public_export_postprocessors.py`。比較基準の取得は `master_rdb/capture_public_projection_inputs.py`、移行の終了条件は `docs/public-json-rdb-projection-migration-plan.md`。
+- **守っているテスト**: `tests/test_compare_public_export_postprocessors.py`。
 
 ## 主要な流れ
 
