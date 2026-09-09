@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T05:51:42Z",
-  "generated_for_commit": "fd62fca",
+  "generated_at": "2026-09-09T00:16:38Z",
+  "generated_for_commit": "5416f5f",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -687,7 +687,7 @@
         "tests/test_apply_public_date_predictions.py",
         "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "6a34173",
+      "updated_for": "c729024",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "export_public_events.py",
@@ -712,9 +712,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.17",
-      "revision_count": 18,
+      "version": "1.18",
+      "revision_count": 19,
       "history": [
+        {
+          "commit": "ff2ef6c",
+          "date": "2026-09-09",
+          "subject": "docs: specify event-scoped song sync approval checks"
+        },
         {
           "commit": "f86e171",
           "date": "2026-08-26",
@@ -769,11 +774,6 @@
           "commit": "5892ac4",
           "date": "2026-08-17",
           "subject": "Fix detail projection direct imports"
-        },
-        {
-          "commit": "9bd761e",
-          "date": "2026-08-16",
-          "subject": "Add guarded detail cleanup repair job"
         }
       ]
     },
@@ -2172,7 +2172,7 @@
       "spec": "L1-publication",
       "title": "collector と site で件数とキー集合が一致しないと、一括同期しない",
       "tests": [
-        "tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync"
+        "tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_event_count_mismatch_blocks_wholesale_sync"
       ],
       "has_test": true
     },
