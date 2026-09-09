@@ -30,9 +30,9 @@ RDBや公開JSONを直接書く手動one-offは、dry-run/reportを確認して�
 
 These are not classified as manual one-offs:
 
-- `public_json_postprocessors/apply_public_date_predictions.py`
-- `public_json_postprocessors/apply_public_historical_references.py`
-- `public_json_postprocessors/apply_public_season_hints.py`
+- `public_export_support/date_predictions.py`
+- `public_export_support/historical_references.py`
+- `public_export_support/season_hints.py`
 - `public_json_postprocessors/apply_public_display_tiers.py`
 
 They are deterministic public-export postprocessors and are called by

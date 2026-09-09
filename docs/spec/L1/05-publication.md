@@ -7,7 +7,9 @@ owns:
   - public_json_postprocessors/**
   - public_export_support/**
   - scripts/compare_public_export_postprocessors.py
+  - scripts/compare_public_projection_revisions.py
   - docs/public-json-rdb-projection-migration-plan.md
+  - docs/r2-public-projection-verification-20260909.md
   - guard_site_public_event_additions.py
   - venues/export_public_venues.py
 depends_on:
@@ -24,6 +26,7 @@ invariants:
   - INV-PUB-009
   - INV-PUB-010
   - INV-PUB-011
+  - INV-PUB-012
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
@@ -34,7 +37,9 @@ verified_by:
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_compare_public_export_postprocessors.py
-updated_for: 0389e83
+  - tests/test_compare_public_projection_revisions.py
+  - tests/test_public_projection_purity.py
+updated_for: 8424f07
 ---
 
 # 公開サブシステム
@@ -134,7 +139,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   detail・日付・出典などの未承認変更は引き続きblockする。
 
   承認鎖の最新値がsiteへ到達した後、開催終了への自動遷移や低リスクfield更新で完全hashが変わる場合がある。
-  このときは、**現在の後処理済みcollectorとsiteの差分**が厳格な `ended_transition_downgrade` と分類されたイベントに限り、
+  このときは、**現在のcollector生入力とsiteの差分**が厳格な `ended_transition_downgrade` と分類されたイベントに限り、
   そのイベントの未解決承認鎖の末尾1件を `retired_after_ended_transition` として退役させる。終了日は今日より前、
   `date` / `date_end` は完全一致、遷移方向は非endedからended、変更fieldは終了表示と同じ状態から生成されるallow-list内、
   `recurrence_score` は非減少、という既存条件をすべて満たす必要がある。その末尾を安全な後続値としてから、
@@ -243,7 +248,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **破れたときの症状**: 95%の予測がサイトでは「昨年同枠・公式未確認」とだけ表示される。
   または確度が何の確率か分からない。
 - **守っているコード**: `export_public_events.py::_rdb_prediction_payload`、
-  `public_json_postprocessors/apply_public_date_predictions.py`
+  `public_export_support/date_predictions.py`
 - **守っているテスト**: `tests/test_export_public_events.py::test_load_rdb_public_date_predictions_matches_public_prediction_shape`、
   `tests/test_apply_public_date_predictions.py::ApplyPublicDatePredictionsTest::test_apply_predictions_adds_date_prediction_without_overwriting_date`
 
@@ -258,21 +263,37 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 ### INV-PUB-011 公開投影の比較は同じ入力組と全出力で判定する
 
 - **内容**: `scripts/compare_public_export_postprocessors.py` は正本DBとmanifestのchecksum一致、固定した補助JSON、曲目occurrence fallback、`today`、`target_year`、collector commitを比較の根拠にする。出力先変更でfallbackを欠落させず、events JSON・JS・曲目JSON・内部source mapのすべてで一致を確認する。fallbackは生成物ではなく入力である。
+  構造整理の合格判定は `scripts/compare_public_projection_revisions.py` で旧版と新版を固定して行う。
+  通常日・終了前日/当日/翌日・過去実績のスライド期限・年末年始を同じ入力で比較する。
+  旧後処理を再適用する重ね掛け比較だけでは、整理前後の差分ゼロを証明できない。
+  baseline commitは常にbundle metadataのcollector commitと完全一致させる。
+  独立した不具合修正を前提に再比較する場合だけ、`--shared-code-fix` に単親・Pythonファイルのみの
+  修正commit全桁を明示し、同一patchを両隔離snapshotへ1回ずつ適用できる。適用不能・既適用は拒否する。
+  この結果は `shared_code_fix_parity` としてcommit・patch SHA・両source適用前後hashを記録し、
+  通常の `original_parity` と区別する。修正なしの比較結果や元bundleを書き換えず、元比較の合格に読み替えない。
   曲目混入の修正は構造整理の差分ゼロ比較より先に独立して検証する。出典文脈に依存する
   撤回は[マスタ INV-MST-016](04-master.md)の開催回限定要求を使い、同名全件撤回で代用しない。
 - **なぜ**: 一部の入力や出力を省くと、実運用と違う条件で差分ゼロになり、移行時の曲目欠落や対応IDのずれを見逃す。
 - **破れたときの症状**: events JSONの比較は通るのに曲目やsource mapが変わる、または比較専用実行だけ曲目が減る。
-- **守っているコード**: `scripts/compare_public_export_postprocessors.py`。比較基準の取得は `master_rdb/capture_public_projection_inputs.py`、移行の終了条件は `docs/public-json-rdb-projection-migration-plan.md`。
-- **守っているテスト**: `tests/test_compare_public_export_postprocessors.py`。
+- **守っているコード**: `scripts/compare_public_projection_revisions.py`、`scripts/compare_public_export_postprocessors.py`。比較基準の取得は `master_rdb/capture_public_projection_inputs.py`、移行の終了条件は `docs/public-json-rdb-projection-migration-plan.md`。
+- **守っているテスト**: `tests/test_compare_public_projection_revisions.py`、`tests/test_compare_public_export_postprocessors.py`。
+
+### INV-PUB-012 表示計算と入出力を分け、同期ガードは入力を補正しない
+
+- **内容**: `load_public_projection_inputs()` が読んだ予測・上書き・固定日ルールを、明示した対象年と判定日とともに `project_public_events()` へ渡す。計算中はDB/ファイル/環境を読まず、呼出元の入力を変えない。`write_public_projection()` は計算結果を4出力と内部レポートへ書く。同期ガードはcollector生入力を比較し、欠落した過去実績・季節表示を再生成しない。
+- **なぜ**: 比較途中に別世代の補助入力を読んだり、ガードだけが表示欠落を救済すると、検査した値と実際に同期する値が違ってしまう。
+- **破れたときの症状**: 同じ入力で計算結果が変わる、再実行で入力が壊れる、未完成の公開JSONが同期を通る。
+- **守っているコード**: `export_public_events.py` の3関数、`public_json_postprocessors/guard_public_events_sync.py::build`。
+- **守っているテスト**: `tests/test_public_projection_purity.py`、`tests/test_guard_public_events_sync.py`。
 
 ## 主要な流れ
 
 1. **RDBから素の公開イベントを組み立てる** — `export_public_events.py`。`--target-year` と `--today` が必須。
    dry-run連鎖では `--master-db` で較正・継承後のコピーを指定し、本番DBを差し替えずに公開結果まで検証する。
-2. **後処理を重ねる** — `public_json_postprocessors/` 配下。順序に意味がある。
+2. **明示入力から表示内容を計算し、まとめて書く** — `project_public_events()` が `public_export_support/` の純粋な表示規則を使う。順序に意味がある。
    `apply_public_historical_references`（過去実績）→ `apply_public_display_tiers`（表示段）→
    `apply_public_season_hints`（季節ヒント）→ 再度 `apply_public_display_tiers`。
-   最後にもう一度表示段を計算し直すのは、季節ヒントが表示段の判断材料になるため。
+   最後にもう一度表示段を計算し直すのは、季節ヒントが表示段の判断材料になるため。旧3 CLIは `legacy/public_projection/` の比較用にだけ残す。
 3. **差分を分類する** — `classify_public_events_diff.py`。全フィールドではなく `HIGH_RISK_FIELDS`
    （過去実績・季節・日付予測・日程・詳細・出典・固定日ルール）に絞って見る。
 4. **2つのガードで止める** — 一括同期の可否は `guard_public_events_sync.py`、

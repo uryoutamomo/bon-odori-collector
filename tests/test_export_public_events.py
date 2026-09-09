@@ -86,7 +86,7 @@ class ExportPublicEventsTest(unittest.TestCase):
         }]
 
         result = apply_public_site_postprocessors(
-            events, target_year=2026, today="2026-06-26"
+            events, target_year=2026, today="2026-06-26", fixed_date_rules={}
         )
 
         self.assertEqual(result[0]["historical_display_tier"], "historical_reference")

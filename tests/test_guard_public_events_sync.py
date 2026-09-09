@@ -7,6 +7,13 @@ from datetime import date
 from pathlib import Path
 from types import SimpleNamespace
 
+from legacy.public_projection.apply_public_historical_references import (
+    apply_historical_references as legacy_apply_historical_references,
+)
+from legacy.public_projection.apply_public_season_hints import (
+    apply_season_hints as legacy_apply_season_hints,
+)
+from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 from public_json_postprocessors.guard_public_events_sync import (
     DATA,
     REVIEWED_APPROVALS,
@@ -94,6 +101,34 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             "current_event_state": "confirmed",
             "date_certainty_tier": "confirmed",
         }
+
+    def legacy_postprocessed_rows(self, rows, *, target_year, today):
+        """Reproduce the removed guard repair path only to construct fixtures."""
+        repaired = copy.deepcopy(rows)
+        repaired = legacy_apply_historical_references(
+            repaired,
+            target_year=target_year,
+            today=date.fromisoformat(today),
+            fixed_date_rules={},
+        )["events"]
+        repaired = apply_display_tiers(repaired, target_year=target_year)
+        repaired = legacy_apply_season_hints(
+            repaired, target_year=target_year
+        )["events"]
+        return apply_display_tiers(repaired, target_year=target_year)
+
+    def assert_removed_repair_would_have_passed(self, raw_rows, site_rows, *, today):
+        repaired_rows = self.legacy_postprocessed_rows(
+            raw_rows, target_year=2026, today=today
+        )
+        self.assertEqual(repaired_rows, site_rows)
+        repaired_classification = classify_rows(
+            repaired_rows, site_rows, today=date.fromisoformat(today)
+        )
+        legacy_decision = guard_decision(
+            {"summary": {}}, repaired_classification, allow_individual_review=False
+        )
+        self.assertEqual(legacy_decision["status"], "pass")
 
     def consumed_same_key_approval(self, published_event):
         reviewed_site = {**published_event, "detail": "承認前の値"}
@@ -668,6 +703,101 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             classified["summary"]["events_by_action"],
             {"expired_historical_slide_downgrade": 1},
         )
+
+    def test_build_blocks_raw_recurring_historical_fields_that_legacy_repair_would_match(self):
+        today = "2026-06-17"
+        collector = {
+            "name": "過去実績のみの盆踊り",
+            "venue": "確認公園",
+            "date": "2025-08-08",
+            "date_end": "2025-08-09",
+            "public_category": "recurring_last_year",
+            "public_status": "expected_medium",
+            "recurrence_score": 0.67,
+            "last_seen_year": 2025,
+            "last_seen_dates": ["2025-08-08", "2025-08-09"],
+        }
+        site = self.legacy_postprocessed_rows([collector], target_year=2026, today=today)[0]
+        self.assertNotIn("historical_reference", collector)
+        self.assertIn("historical_reference", site)
+        inputs = ([collector], [site], [])
+        original = copy.deepcopy(inputs)
+
+        self.assert_removed_repair_would_have_passed(*inputs[:2], today=today)
+        result = self.run_build(*inputs, today=today)
+
+        self.assertEqual(inputs, original)
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn(
+            "collector_restore_candidates_remain", result["decision"]["failures"]
+        )
+        self.assertEqual(
+            result["raw_classification"], result["postprocessed_classification"]
+        )
+        self.assertTrue(result["postprocessed_classification_deprecated"])
+        self.assertTrue(result["parameters"]["deprecated_fixed_date_rules_ignored"])
+        self.assertEqual(result["raw_classification"]["events_by_action"], {
+            "restore_collector_from_site_or_reenable_export_postprocess": 1,
+        })
+
+    def test_build_blocks_raw_date_unknown_season_fields_that_legacy_repair_would_match(self):
+        today = "2026-06-17"
+        collector = {
+            "name": "月だけ分かる盆踊り",
+            "venue": "確認広場",
+            "public_category": "date_unknown",
+            "months": [7, 8],
+            "jun": {"7": "下旬", "8": "上旬"},
+            "hints": [[7, 3], [8, 1]],
+        }
+        site = self.legacy_postprocessed_rows([collector], target_year=2026, today=today)[0]
+        self.assertNotIn("season_hint", collector)
+        self.assertIn("season_hint", site)
+        inputs = ([collector], [site], [])
+        original = copy.deepcopy(inputs)
+
+        self.assert_removed_repair_would_have_passed(*inputs[:2], today=today)
+        result = self.run_build(*inputs, today=today)
+
+        self.assertEqual(inputs, original)
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn(
+            "collector_restore_candidates_remain", result["decision"]["failures"]
+        )
+        self.assertEqual(result["raw_classification"]["events_by_action"], {
+            "restore_collector_from_site_or_reenable_export_postprocess": 1,
+        })
+
+    def test_other_safe_ended_transition_cannot_rescue_raw_missing_projection_fields(self):
+        missing_collector = self.published_event()
+        missing_site = {
+            **missing_collector,
+            "historical_reference": {"label": "2025実績・今年未確認"},
+            "historical_display_tier": "historical_reference",
+            "season_hint": "7月下旬",
+        }
+        ended_site = {**self.published_event(), "name": "終了済みの別イベント"}
+        ended_collector = {
+            **ended_site,
+            "public_category": "ended",
+            "display_tier": "ended",
+            "current_event_state": "ended",
+        }
+        inputs = ([missing_collector, ended_collector], [missing_site, ended_site], [])
+        original = copy.deepcopy(inputs)
+
+        result = self.run_build(*inputs)
+
+        self.assertEqual(inputs, original)
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn(
+            "collector_restore_candidates_remain", result["decision"]["failures"]
+        )
+        self.assertEqual(result["ended_transition_downgrades"], [{
+            "event_name": "終了済みの別イベント",
+            "venue": "確認公園",
+            "ended_on": "2026-07-29",
+        }])
 
     def test_past_ended_transition_is_automatically_allowed(self):
         site = {

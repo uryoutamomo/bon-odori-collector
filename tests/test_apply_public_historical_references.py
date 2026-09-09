@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from public_json_postprocessors.apply_public_historical_references import apply_historical_references
+from public_export_support.historical_references import apply_historical_references
 
 
 TARGET_YEAR = 2026

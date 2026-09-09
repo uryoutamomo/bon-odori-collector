@@ -11,6 +11,7 @@ venues/export_public_venues.py と同じ方針。出力は data/public/events_pu
 """
 
 import argparse
+import copy
 import json
 import os
 import re
@@ -24,13 +25,18 @@ from song_processing.song_occurrences import DEFAULT_PREDICTION_PARAMS
 from event_model.event_series_normalization import public_series_name
 from event_model.year_context import normalize_target_year
 from master_rdb.master_db import MASTER_DB, connect_existing
-from public_json_postprocessors.apply_public_date_predictions import (
+from public_export_support.date_predictions import (
     OUT_REPORT as DATE_PREDICTION_REPORT,
     PREDICTIONS as DATE_PREDICTIONS,
     apply_predictions as apply_public_date_predictions,
-    load_json as load_public_date_prediction_json,
-    write_json as write_public_date_prediction_json,
 )
+from public_export_support.projection_inputs import (
+    PublicProjectionInputs,
+    fixed_date_rules_from_payload,
+    load_json as load_public_date_prediction_json,
+)
+from public_export_support.historical_references import apply_historical_references
+from public_export_support.season_hints import apply_season_hints
 from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 import notion_support.notion_config as notion_config
 from public_export_support.score_event_recurrence import build_rows, enrich_public_events
@@ -75,6 +81,7 @@ SERIES_SPLIT_REVIEW_MD = os.path.join(
 )
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
+PUBLIC_FIXED_DATE_RULES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_fixed_date_rules.json")
 PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
 PUBLIC_EXCLUDED_LIFECYCLE_STATUSES = (
     "merged", "duplicate", "rejected", "superseded_by_curated"
@@ -1315,20 +1322,14 @@ def apply_public_recurrence_metadata(events, *, target_year, today):
 
 
 def apply_public_site_postprocessors(
-    events, *, target_year, today, prefer_existing_axes=False
+    events, *, target_year, today, fixed_date_rules, prefer_existing_axes=False
 ):
-    """Apply the public-site-only fields that used to be run as separate steps."""
-    from public_json_postprocessors.apply_public_historical_references import (
-        apply_historical_references,
-        load_fixed_date_rules,
-    )
-    from public_json_postprocessors.apply_public_season_hints import apply_season_hints
-
+    """Compute display fields from explicit values, without reading files."""
     events = apply_historical_references(
         events,
         target_year=target_year,
         today=public_export_today(today),
-        fixed_date_rules=load_fixed_date_rules(),
+        fixed_date_rules=fixed_date_rules,
     )["events"]
     events = apply_display_tiers(
         events, prefer_existing_axes=prefer_existing_axes, target_year=target_year
@@ -2037,20 +2038,37 @@ def audit_public_song_projection(events):
     return issues
 
 
-def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
-    """Run the production public-event projection without writing output files."""
-    projection_today = public_export_today(today)
-    events = apply_public_event_overrides(sanitize_public_event_details(events))
+def load_public_projection_inputs(*, target_year, db_path=MASTER_DB):
+    """Read all auxiliary inputs before entering the pure projection."""
+    return PublicProjectionInputs(
+        prediction_payload=load_public_date_predictions_for_export(
+            target_year=target_year, db_path=db_path,
+        ),
+        overrides=_load_json_file(PUBLIC_EVENT_OVERRIDES_JSON, {}),
+        fixed_date_rules=fixed_date_rules_from_payload(
+            _load_json_file(PUBLIC_FIXED_DATE_RULES_JSON, {})
+        ),
+    )
+
+
+def project_public_events(events, *, target_year, today, inputs):
+    """Compute all four public outputs without I/O or changing input values."""
+    target_year = normalize_target_year(target_year)
+    # The pure entrypoint never falls back to the process environment.
+    projection_today = parse_iso_public_date(today)
+    if projection_today is None:
+        raise ValueError("public projection today is required (YYYY-MM-DD)")
+    events = apply_public_event_overrides(
+        sanitize_public_event_details(copy.deepcopy(events)),
+        overrides=copy.deepcopy(inputs.overrides),
+    )
     events = suppress_replaced_recurring_events(
         apply_public_recurrence_metadata(
             events, target_year=target_year, today=projection_today
         ),
         target_year=target_year,
     )
-    prediction_payload = load_public_date_predictions_for_export(
-        target_year=target_year,
-        db_path=db_path,
-    )
+    prediction_payload = copy.deepcopy(inputs.prediction_payload)
     prediction_result = apply_public_date_predictions(events, prediction_payload)
     prediction_result["report"]["prediction_input"] = {
         "source": prediction_payload.get("source") or str(DATE_PREDICTIONS),
@@ -2071,6 +2089,7 @@ def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
         events,
         target_year=target_year,
         today=projection_today,
+        fixed_date_rules=inputs.fixed_date_rules,
         prefer_existing_axes=prefer_existing_axes,
     )
     public_events = strip_public_internal_event_fields(events)
@@ -2084,9 +2103,44 @@ def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
         "events": events,
         "public_events": public_events,
         "source_map": public_event_source_map(events),
+        "song_rows": [
+            {key: event[key] for key in ("name", "venue", "area", "date", "songs")}
+            for event in public_events if event.get("songs")
+        ],
         "prediction_report": prediction_result["report"],
         "song_audit_issues": song_audit_issues,
+        "series_split_candidates": find_series_split_review_candidates(
+            events, target_year=target_year
+        ),
     }
+
+
+def write_public_projection(
+    projection, *, out_dir, source_map_path, prediction_report_path,
+    series_split_json_path, series_split_md_path,
+):
+    """Write the computed artifacts; all destinations are caller-owned."""
+    def write_json(path, value, *, newline=False):
+        parent = os.path.dirname(path)
+        if parent:
+            os.makedirs(parent, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as handle:
+            json.dump(value, handle, ensure_ascii=False, indent=2)
+            if newline:
+                handle.write("\n")
+
+    write_json(prediction_report_path, projection["prediction_report"], newline=True)
+    series_split_candidates = projection["series_split_candidates"]
+    write_series_split_review(
+        series_split_candidates,
+        json_path=series_split_json_path, md_path=series_split_md_path,
+    )
+    os.makedirs(out_dir, exist_ok=True)
+    write_json(os.path.join(out_dir, "events_public.json"), projection["public_events"])
+    write_public_js(os.path.join(out_dir, "events_public.js"), projection["public_events"])
+    write_json(source_map_path, projection["source_map"])
+    write_json(os.path.join(out_dir, "event_songs_public.json"), projection["song_rows"])
+    return series_split_candidates
 
 
 def main(argv=None):
@@ -2119,48 +2173,24 @@ def main(argv=None):
     projection = project_public_events(
         events,
         target_year=args.target_year,
-        db_path=args.master_db,
         today=args.today,
+        inputs=load_public_projection_inputs(
+            target_year=args.target_year, db_path=args.master_db,
+        ),
     )
-    events = projection["events"]
-    source_map = projection["source_map"]
     public_events = projection["public_events"]
-    write_public_date_prediction_json(DATE_PREDICTION_REPORT, projection["prediction_report"])
-
-    series_split_candidates = find_series_split_review_candidates(
-        events, target_year=args.target_year
-    )
-    write_series_split_review(
-        series_split_candidates,
-        json_path=SERIES_SPLIT_REVIEW_JSON,
-        md_path=SERIES_SPLIT_REVIEW_MD,
+    series_split_candidates = write_public_projection(
+        projection, out_dir=OUT_DIR,
+        source_map_path=PUBLIC_EVENT_SOURCE_MAP_JSON,
+        prediction_report_path=DATE_PREDICTION_REPORT,
+        series_split_json_path=SERIES_SPLIT_REVIEW_JSON,
+        series_split_md_path=SERIES_SPLIT_REVIEW_MD,
     )
     if series_split_candidates:
         print(
             f"  系列分裂レビュー候補: {len(series_split_candidates)} 件 "
             f"→ {SERIES_SPLIT_REVIEW_MD}（要目視レビュー）"
         )
-
-    os.makedirs(OUT_DIR, exist_ok=True)
-    with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(public_events, f, ensure_ascii=False, indent=2)
-    write_public_js(OUT_JS, public_events)
-    os.makedirs(os.path.dirname(PUBLIC_EVENT_SOURCE_MAP_JSON), exist_ok=True)
-    with open(PUBLIC_EVENT_SOURCE_MAP_JSON, "w", encoding="utf-8") as f:
-        json.dump(source_map, f, ensure_ascii=False, indent=2)
-    song_rows = [
-        {
-            "name": e["name"],
-            "venue": e["venue"],
-            "area": e["area"],
-            "date": e["date"],
-            "songs": e["songs"],
-        }
-        for e in public_events
-        if e.get("songs")
-    ]
-    with open(OUT_SONGS_JSON, "w", encoding="utf-8") as f:
-        json.dump(song_rows, f, ensure_ascii=False, indent=2)
 
     named = sum(1 for e in public_events if e["name_confirmed"])
     no_month = sum(1 for e in public_events if not e["months"])

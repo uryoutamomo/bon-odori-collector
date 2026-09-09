@@ -211,7 +211,7 @@ def apply_legacy_overlay(
         [
             python,
             "-m",
-            "public_json_postprocessors.apply_public_date_predictions",
+            "legacy.public_projection.apply_public_date_predictions",
             "--public-events",
             str(events_path),
             "--out-json",
@@ -231,7 +231,7 @@ def apply_legacy_overlay(
         [
             python,
             "-m",
-            "public_json_postprocessors.apply_public_historical_references",
+            "legacy.public_projection.apply_public_historical_references",
             "--public-events",
             str(events_path),
             "--out-json",
@@ -253,7 +253,7 @@ def apply_legacy_overlay(
         [
             python,
             "-m",
-            "public_json_postprocessors.apply_public_season_hints",
+            "legacy.public_projection.apply_public_season_hints",
             "--public-events",
             str(events_path),
             "--out-json",
