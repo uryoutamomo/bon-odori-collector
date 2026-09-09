@@ -18,7 +18,7 @@ verified_by:
   - tests/test_classify_public_events_diff.py
   - tests/test_public_json_field_sparsity.py
   - tests/test_apply_public_date_predictions.py
-updated_for: e762549
+updated_for: 30a743f
 ---
 
 # 公開JSONのフィールド契約
@@ -35,6 +35,12 @@ updated_for: e762549
 
 この文書は、`6537e7f` 時点の実データ（379件）と `bon-odori-site` の `app.js` / `updates.js` を
 突き合わせて確かめた結果である。推測ではなく、実際に数えた。
+
+2026-09-09のR2公開投影では387件。年越し修正により13過去カード155曲の確率・根拠表示を
+更新し、曲名・曲数・他イベント項目・内部source mapは維持した。曲目の意味は
+[曲目L1のINV-SNG-002/007/008](../L1/08-songs.md)を参照する。
+最新の正本取得run `34340430748` によるR2前後の9ケース・4出力はbyte一致した。
+以下の379件・参照field数は `6537e7f` 当時の分析値で、最新件数の意味ではない。
 
 ## 全体像
 
@@ -189,6 +195,9 @@ collector 側の `data/public/events_public.json` は379件、
 この状態で一括同期をかけると止まる。サイト側が未同期なだけと思われるが、**確認していない。**
 放置すると差が広がるので、公開反映の前に確かめる必要がある。
 
+上記は当時の未同期記録。2026-09-09の本番反映前検査ではcollector・siteとも387件で
+件数・キーの差分は0。R2の公開候補も同じ387件で、生JSONの同期ガードと公開ガードを通過した。
+
 ## 未解決・注意点
 
 - **この仕様が公開JSONそのものを `owns` しているのは意図的である。** 生成物なので一見すると
@@ -198,8 +207,10 @@ collector 側の `data/public/events_public.json` は379件、
   外さないこと。
 - **判断理由を公開面で使っていない**（上述）。作ったものが届いていない状態。
 - **安定IDが無い**（INV-PJS-001）。名前を直すだけで別イベント扱いになる構造は、根本的には設計の宿題。
-- **欠損が正常であることを検査するテストが無い**（INV-PJS-003）。
-- `events_public.js` は JSON と同内容のJS版だが、両者がずれないことを保証する仕組みを確認していない。
+- 欠損が正常であることはINV-PJS-003に記載した生成入口・公開実物の両テストで検査している。
+- `events_public.js` はJSONと同内容を同じ計算結果から出力し、R2比較器がevents JSON/JS・曲目JSON・
+  内部source mapの全4出力を比較する。`tests/test_public_projection_purity.py` と
+  `tests/test_compare_public_projection_revisions.py` がこの経路を検査する。
 - 曲目の `data/public/event_songs_public.json` は本文書で扱えていない。別途必要。
 
 ---

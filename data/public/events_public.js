@@ -1027,57 +1027,65 @@ const EVENTS = [
       {
         "name": "バハマ・ママ",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "これがお江戸の盆ダンス",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "バハマ・ママ Bahama Mama",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "銀座ときめき音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "銀座カンカン娘",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "銀座音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       }
     ],
     "current_event_state": "predicted",
@@ -3899,79 +3907,79 @@ const EVENTS = [
       {
         "name": "きよしのズンドコ節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "そうらん節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ジャンボリミッキー",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "一円玉の旅がらす",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東京五輪音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "花火音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "predicted",
@@ -4493,248 +4501,248 @@ const EVENTS = [
     "songs": [
       {
         "name": "1+1の音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "サザエさん",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ステテコシャンシャン",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ダンシングヒーロー",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "チャンチキおけさ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ニッポンワッショイ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "バハマ・ママ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ヨッ!太鼓持ち",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "夜に駆ける",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "大江戸東京音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "好きになった人",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "恋のブギウギナイト",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "新二十一世紀音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "日本の夏ごよみ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "日本よいとこ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東京ばやし",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東京タワー音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "火の国太鼓",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "百年桜",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "盆ギリ恋歌",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "福よ来い",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "銀座カンカン娘",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "お富さん",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "さくら",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "さくら音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ひろしのさくら音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "まつの木小唄",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ドラえもん音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ドンパン節",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ハワイ音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "八木節",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "花笠音頭",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "predicted",
@@ -5178,74 +5186,86 @@ const EVENTS = [
       {
         "name": "MY HOME TOWN",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "おこさ節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "ハワイ音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "八木節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "日本チャチャチャ",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "東京みなと音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "相馬盆唄",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       }
     ],
     "current_event_state": "predicted",
@@ -5658,9 +5678,9 @@ const EVENTS = [
       {
         "name": "百人町民民謡おどり",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "predicted",
@@ -7960,65 +7980,65 @@ const EVENTS = [
       {
         "name": "Fun! Fun! Fun!",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "かわいいだけじゃだめですか?",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "げんき音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "江州音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "predicted",
@@ -10361,38 +10381,38 @@ const EVENTS = [
     "songs": [
       {
         "name": "妖怪人間ベム",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "妖怪盆踊り",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "妖怪道中",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東京音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "炭坑節",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "predicted",
@@ -10588,9 +10608,9 @@ const EVENTS = [
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "predicted",
@@ -16223,65 +16243,65 @@ const EVENTS = [
       {
         "name": "オブ・ラ・ディ、オブ・ラ・ダ",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ジョニー・B、グッド",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ドンパン節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "バスケット・ケース",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "品川甚句",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "current_event_state": "predicted",
@@ -23409,50 +23429,58 @@ const EVENTS = [
       {
         "name": "BOY MEETS GIRL",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "EZ DO DANCE",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "GET WILD",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "YMCA",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "survival dAnce",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "とっとこハム太郎",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "わたしの一番かわいいところ",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       }
     ],
     "current_event_state": "predicted",
@@ -24995,94 +25023,94 @@ const EVENTS = [
     "songs": [
       {
         "name": "おんなの気持ち",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "さくら音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "にっぽんチャチャチャ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ソーラン北海",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "俺ら炭鉱夫",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "川口小唄",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東西南北音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "沖縄よいとこ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "火の国太鼓",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "男おけさ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "百年桜",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "相馬盆唄",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "蟹工船",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "predicted",
@@ -25310,270 +25338,283 @@ const EVENTS = [
     "songs": [
       {
         "name": "いいもんだな故郷は",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "さくら音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ふるさと北区",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ゆかた音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "スーダラ節",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ソーラン北海",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "佐渡の恋唄",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "俺ら炭鉱夫",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "千恵っ子よされ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "大東京音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "大江戸東京音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "少年八木節",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "東西南北音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "松島の斉太郎さん",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "沖縄よいとこ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "牛ちゃんマンボ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "男おけさ",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "百年桜",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "相馬盆唄",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "美子の三味線ドンパン",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "蟹工船",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "言ちゃん音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "黒潮太鼓",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "confidence": "hint",
+        "probability": 57,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "ジャンボリミッキー",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ジンギスカン",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "好きになった人",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "盆ギリ恋歌",
-        "confidence": "confirmed",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "おんなの気持ち",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "にっぽんチャチャチャ",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "七夕おどり",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "安里屋ゆんた",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "島のブルース",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "川口小唄",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "流転の波止場",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "火の国太鼓",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "火消し若衆",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "男節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "飛鳥山音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "首里城音頭",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       }
     ],
     "current_event_state": "predicted",
@@ -25676,14 +25717,16 @@ const EVENTS = [
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       },
       {
         "name": "生唄炭坑節",
         "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年実測",
+        "probability": 48
       }
     ],
     "current_event_state": "predicted",
