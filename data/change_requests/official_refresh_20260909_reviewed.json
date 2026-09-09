@@ -11,7 +11,7 @@
       "date_end": "2026-09-12",
       "source": {
         "url": "https://www.arkhills.com/events/2026/09/0221.html",
-        "kind": "organizer_current_year",
+        "kind": "official_current_year",
         "platform": "web",
         "title": "アークヒルズ秋祭り 盆踊り",
         "text_excerpt": "公式ページは盆踊りを9月12日18:00〜20:00、アーク・カラヤン広場と記載。"
@@ -26,8 +26,8 @@
       "expected_detail_sha256": "a5fb7f33359aa33c5cb7782bad1282fae7add7e363de6a76cb2944a3241630ed",
       "expected_source_url": "https://www.arkhills.com/events/regular_events.html",
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_02",
@@ -36,7 +36,7 @@
       "date_end": "2026-09-13",
       "source": {
         "url": "https://www.akasakahikawa.or.jp/hikawasai-r08/",
-        "kind": "organizer_current_year",
+        "kind": "official_current_year",
         "platform": "web",
         "title": "赤坂氷川祭 盆踊り大会",
         "text_excerpt": "神社が盆踊り3日間と各日の時刻、境内会場を明記。"
@@ -49,8 +49,8 @@
       },
       "expected_source_url": "https://www.akasakahikawa.or.jp/hikawasai-r07/",
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_03",
@@ -59,7 +59,7 @@
       "date_end": "2026-09-12",
       "source": {
         "url": "https://www.shibuya-hikawa.com/page3",
-        "kind": "organizer_current_year",
+        "kind": "official_current_year",
         "platform": "web",
         "title": "氷川神社例大祭 氷川参道櫓まつり",
         "text_excerpt": "渋谷氷川町会の最新表は民謡踊りを18:00〜20:55と明記。"
@@ -73,8 +73,8 @@
         "area": "渋谷区"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_04",
@@ -96,8 +96,8 @@
         "venue_id": "ven_99338bade7fe3bbe"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_05",
@@ -120,8 +120,8 @@
         "area": "品川区"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_06",
@@ -143,8 +143,8 @@
         "venue_id": "ven_511a7a9d0635c174"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_07",
@@ -168,8 +168,8 @@
         "address": "東京都江戸川区瑞江3-22-1"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_08",
@@ -193,8 +193,8 @@
         "address": "東京都江戸川区江戸川3-5-6"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_09",
@@ -218,8 +218,8 @@
         "address": "東京都江戸川区東瑞江3-11-1"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_10",
@@ -242,8 +242,8 @@
       "detail_replacement": "2026年の開催日は8月30日（日）18:00開始、八雲神社前広場。江戸川区の公式一覧で、8月29日から30日への日程変更が案内されています。終了時刻と雨天時の扱いは未掲載。",
       "expected_detail_sha256": "3f54de588a52a6e32a9324d4332b683af64eb32b711a7cb935804608a1b87795",
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     },
     {
       "request_id": "official_refresh_20260909_11",
@@ -267,14 +267,14 @@
         "address": "東京都江戸川区江戸川1-9-32"
       },
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-      "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。"
+      "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+      "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。"
     }
   ],
   "source_generated_by": "おと（Codex）",
   "reviewed_by": "おと（Codex）",
-  "reviewed_at": "2026-09-09T12:28:20.085549+00:00",
-  "review_note": "公式ページ確認、最新S3取得DBで系列・会場照合、11件dry-run/監査0、独立サブエージェントレビュー合格。2025開催回を保持。当年説明/代表URLの更新は旧値一致条件つき。",
+  "reviewed_at": "2026-09-09T12:39:08.197168+00:00",
+  "review_note": "当年一次資料、対象ID、会場、旧開催回保持、writer/verifierと公開差分を独立サブエージェントが確認。主催者公式3件のofficial_current_year分類も独立再確認済み。おとがcopy dry-runと画面を確認。",
   "source_request_count": 11,
   "approved_request_count": 11
 }

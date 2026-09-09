@@ -3368,7 +3368,7 @@
       "id": "official-refresh-20260909-01",
       "kind": "same_key_update",
       "event_key": "アークヒルズ秋祭り 盆踊り||アーク・カラヤン広場（アークヒルズ）",
-      "collector_sha256": "6b74dadcb2eab145caee566c36742945202ac3cf32ec4b8228678b6fca9183e8",
+      "collector_sha256": "d3ab78675fe7b1b261c8aec63bb3af764cdb0572e865364fa25d8c70cffc1a5b",
       "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。",
       "site_sha256": "5aff60c36c4ab2f08fd34aef11e12f640a2559bf1d38f8f04ec6c3e1c4ccdbb3"
     },
@@ -3392,7 +3392,7 @@
       "id": "official-refresh-20260909-04",
       "kind": "same_key_update",
       "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
-      "collector_sha256": "88c4e38c6cc3810c23d90680ee3666c491307baa2344f48ead6795e29a697d38",
+      "collector_sha256": "045ceed09c1ce1fee48504138191192bbe881c3561c51c19492989282660e20a",
       "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。",
       "site_sha256": "eeca29fa41f028acdd8e4640ec6b2f4dfde181a96f61cd7ab5be0b7e7d133e9c"
     },
@@ -3435,7 +3435,7 @@
       "id": "official-refresh-20260909-10",
       "kind": "addition",
       "event_key": "氷川神社例大祭 氷川参道櫓まつり||渋谷氷川神社参道",
-      "collector_sha256": "30394ee76ca7587cd0be19c124ad3545a3edeef5cb1c904d80441a5ec6593311",
+      "collector_sha256": "e8ec2fd4702cba9d09c896bc565b212828f9a065c50cde58b5ade66ff825d5b3",
       "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
     },
     {

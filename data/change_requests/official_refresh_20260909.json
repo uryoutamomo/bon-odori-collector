@@ -12,7 +12,7 @@
       "date_end": "2026-09-12",
       "source": {
         "url": "https://www.arkhills.com/events/2026/09/0221.html",
-        "kind": "organizer_current_year",
+        "kind": "official_current_year",
         "platform": "web",
         "title": "アークヒルズ秋祭り 盆踊り",
         "text_excerpt": "公式ページは盆踊りを9月12日18:00〜20:00、アーク・カラヤン広場と記載。"
@@ -35,7 +35,7 @@
       "date_end": "2026-09-13",
       "source": {
         "url": "https://www.akasakahikawa.or.jp/hikawasai-r08/",
-        "kind": "organizer_current_year",
+        "kind": "official_current_year",
         "platform": "web",
         "title": "赤坂氷川祭 盆踊り大会",
         "text_excerpt": "神社が盆踊り3日間と各日の時刻、境内会場を明記。"
@@ -56,7 +56,7 @@
       "date_end": "2026-09-12",
       "source": {
         "url": "https://www.shibuya-hikawa.com/page3",
-        "kind": "organizer_current_year",
+        "kind": "official_current_year",
         "platform": "web",
         "title": "氷川神社例大祭 氷川参道櫓まつり",
         "text_excerpt": "渋谷氷川町会の最新表は民謡踊りを18:00〜20:55と明記。"
