@@ -63,10 +63,12 @@ legacy曲目fallbackの入力であり、このexporterの生成物ではない�
 既存Actions artifactには正本DBが含まれないため、既存のS3 fetch経路で同世代の
 DBとmanifestを取得する必要がある。
 
-取得案は `docs/workflow-proposals/capture-public-projection-inputs.yml` に置く。
-このファイルは稼働workflowではない。取得処理はS3正本を書き換えず、公開repositoryの
+正規取得は手動専用の `.github/workflows/capture-public-projection-inputs.yml` を使う。
+`recipient_certificate`（公開鍵を含むPEM証明書）、`today`、`target_year` を指定する。
+取得処理はS3正本を書き換えず、公開repositoryの
 artifactには受取人宛に暗号化したbundleだけを渡す。DB、manifest、補助入力、hashは
-bundle内部に保持する。復号後は入力hashを照合し、同じcollector commitで比較する。
+bundle内部に保持する。秘密鍵は取得側だけで保管し、workflowへ渡さない。
+保持期間は3日。復号後は入力hashを照合し、同じcollector commitで比較する。
 
 R2本体では `project_public_events()` の入力読込・意味計算・出力書込を分け、現役の
 後処理呼出元を移す。同じ入力で通常日、終了前日・当日・翌日、過去実績期限切れ、

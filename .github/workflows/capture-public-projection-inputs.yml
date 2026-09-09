@@ -1,5 +1,3 @@
-# Proposal only. This file is intentionally outside .github/workflows until an
-# explicit workflow-change approval is recorded.
 name: capture-public-projection-inputs
 
 on:

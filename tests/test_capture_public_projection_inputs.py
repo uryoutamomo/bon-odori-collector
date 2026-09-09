@@ -1,11 +1,14 @@
 import io
 import json
+import os
 import shutil
 import sqlite3
 import subprocess
+import sys
 import tarfile
 import tempfile
 import unittest
+import yaml
 from pathlib import Path
 
 from master_rdb.capture_public_projection_inputs import CaptureError, capture
@@ -185,3 +188,66 @@ class CapturePublicProjectionInputsTest(unittest.TestCase):
         with self.assertRaisesRegex(CaptureError, "CMS encryption failed"):
             capture(args)
         self.assertFalse(args.output.exists())
+
+    def workflow(self):
+        path = self.repo / ".github/workflows/capture-public-projection-inputs.yml"
+        return yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+
+    def test_workflow_limits_to_manual_encrypted_reads(self):
+        workflow = self.workflow()
+        self.assertEqual(set(workflow["on"]), {"workflow_dispatch"})
+        self.assertEqual(workflow["concurrency"], {
+            "group": "bon-odori-master-rdb", "cancel-in-progress": "false",
+        })
+        self.assertEqual(set(workflow["jobs"]), {"capture"})
+        job = workflow["jobs"]["capture"]
+        self.assertEqual(job["permissions"], {"contents": "read", "id-token": "write"})
+        steps = job["steps"]
+        commands = [step["run"] for step in steps if "run" in step]
+        self.assertEqual(len(commands), 3)
+        self.assertEqual(commands[0], "pip install -r requirements.txt")
+        self.assertEqual(commands[1], "python master_db_s3_artifact.py fetch --overwrite")
+        self.assertTrue(all("${{ inputs." not in command for command in commands))
+        uploads = [step for step in steps if step.get("uses", "").startswith("actions/upload-artifact@")]
+        self.assertEqual(len(uploads), 1)
+        self.assertEqual(uploads[0]["with"]["path"], "${{ runner.temp }}/public-projection-inputs.cms")
+        self.assertEqual(uploads[0]["with"]["retention-days"], "3")
+        self.assertEqual(uploads[0]["with"]["if-no-files-found"], "error")
+        self.assertNotIn("if", uploads[0])
+
+    @unittest.skipUnless(OPENSSL, "openssl is required for workflow round-trip")
+    def test_workflow_encryption_step_runs_real_cli_and_rejects_shell_input(self):
+        repository, _ = self.fixture_repository()
+        script = repository / "master_rdb/capture_public_projection_inputs.py"
+        script.parent.mkdir()
+        shutil.copyfile(self.repo / "master_rdb/capture_public_projection_inputs.py", script)
+        shutil.copyfile(self.db, repository / "data/bon_odori_master.sqlite")
+        shutil.copyfile(self.manifest, repository / "data/bon_odori_master_manifest.json")
+        runner_temp = self.root / "runner"
+        runner_temp.mkdir()
+        executable_dir = self.root / "bin"
+        executable_dir.mkdir()
+        (executable_dir / "python").symlink_to(sys.executable)
+        env = dict(os.environ, PATH=str(executable_dir) + os.pathsep + os.environ["PATH"],
+                   RUNNER_TEMP=str(runner_temp), RECIPIENT_CERTIFICATE=self.cert.read_text(),
+                   COMPARISON_TODAY="2026-09-09", COMPARISON_TARGET_YEAR="2026")
+        command = next(step["run"] for step in self.workflow()["jobs"]["capture"]["steps"]
+                       if step.get("name") == "Encrypt comparison inputs for the named recipient")
+        result = subprocess.run(["bash", "-e", "-o", "pipefail", "-c", command],
+                                cwd=repository, env=env, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        artifact = runner_temp / "public-projection-inputs.cms"
+        self.assertEqual([path.name for path in runner_temp.iterdir()], [artifact.name])
+        plaintext = self.root / "workflow-decrypted.tar.gz"
+        subprocess.run([OPENSSL, "cms", "-decrypt", "-inform", "DER", "-binary", "-in", str(artifact),
+                        "-recip", str(self.cert), "-inkey", str(self.key), "-out", str(plaintext)],
+                       check=True, capture_output=True)
+        with tarfile.open(plaintext, "r:gz") as archive:
+            metadata = json.load(archive.extractfile("bundle-metadata.json"))
+        self.assertEqual(metadata["inputs"]["database"]["sha256"], file_sha256(self.db))
+        artifact.unlink()
+        env["COMPARISON_TODAY"] = '2026-09-09$(touch "$RUNNER_TEMP/injected")'
+        result = subprocess.run(["bash", "-e", "-o", "pipefail", "-c", command],
+                                cwd=repository, env=env, capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(list(runner_temp.iterdir()), [])
