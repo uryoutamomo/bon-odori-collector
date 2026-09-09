@@ -5,11 +5,8 @@
 
 ## Purpose
 
-Some scripts named `apply_public_*` are normal deterministic postprocessors for
-`data/public/events_public.json`. Others are one-off cleanup tools.
-
-This document separates the two so scheduled public data generation does not
-break, while ad hoc public JSON edits still require explicit intent.
+Public display rules run inside one exporter. Input reading, pure projection,
+and artifact writing are separate stages; ad hoc JSON edits remain manual.
 
 ## Automatic Postprocessors
 
@@ -17,27 +14,34 @@ Keep these automatic:
 
 | Script | Why automatic |
 | --- | --- |
-| `public_json_postprocessors/apply_public_date_predictions.py` | attaches reviewed rule predictions to public JSON after export |
-| `public_json_postprocessors/apply_public_historical_references.py` | attaches historical-reference display fields after export |
-| `public_json_postprocessors/apply_public_season_hints.py` | attaches low-confidence season hints after export |
+| `public_export_support/date_predictions.py` | computes reviewed prediction display fields |
+| `public_export_support/historical_references.py` | computes historical reference and slide fields |
+| `public_export_support/season_hints.py` | computes season display hints |
 
-They are called inside `export_public_events.py`. Scheduled workflows and local
-YouTube backfill maintenance call `export_public_events.py` as the single public
-JSON generation path, rather than running these scripts as a follow-up chain.
+`export_public_events.py` loads `PublicProjectionInputs`, passes explicit values
+to `project_public_events()`, then calls `write_public_projection()`. The pure
+projection does not read files or DB, consult the environment, or mutate inputs.
+Scheduled workflows, review-inbox digest, and state-axis migration use this same
+projection. The three rule modules have no standalone writer CLI.
 
-They write repo-local public JSON/JS only. They do not write Notion, S3,
-CloudFront, or Master RDB. Public deploy remains guarded separately by the site
-sync/deploy workflows.
+The writer produces events JSON/JS, song JSON, and an internal source-map sidecar.
+Public deploy remains guarded separately by the site sync/deploy workflows.
+The sync guard compares the actual collector JSON and cannot regenerate missing
+historical/season fields to rescue a failing input.
 
-Before changing this chain or moving these fields into the RDB-side public
-projection, run the diff-zero comparison:
+For a structural refactor, compare frozen old/new code with the same captured
+input bundle using `scripts/compare_public_projection_revisions.py`; see the
+[migration plan](public-json-rdb-projection-migration-plan.md). The additional
+overlay idempotence check remains available:
 
 ```sh
 python3 scripts/compare_public_export_postprocessors.py --today 2026-07-16
 ```
 
-The comparison writes only to temporary directories and reports whether the
-current export and the legacy overlay produce identical public event JSON.
+The comparison writes to temporary directories and compares all four artifacts.
+The old `apply_public_date_predictions.py`, `apply_public_historical_references.py`,
+and `apply_public_season_hints.py` CLIs live only under `legacy/public_projection/`
+as frozen comparison fixtures. They are not production entrypoints.
 In a temporary worktree without `data/bon_odori_master.sqlite`, pass
 `--master-db /path/to/bon_odori_master.sqlite`.
 
@@ -67,8 +71,9 @@ Keep them manual:
 
 ```mermaid
 flowchart TD
-  export[Public export\nexport_public_events.py] --> auto[Automatic deterministic postprocessors\ncalled in-process]
-  auto --> repo[Repo public JSON/JS]
+  export[Read DB and explicit inputs] --> auto[Pure public projection]
+  auto --> writer[Write four artifacts]
+  writer --> repo[Repo public JSON/JS]
   repo --> guard[Public sync guard]
   guard --> site[Site sync/deploy policy]
 
@@ -85,4 +90,4 @@ flowchart TD
 Do not add schedules around manual public JSON one-offs or Master RDB one-offs.
 
 If a manual public JSON cleanup becomes a normal invariant, move it into
-`export_public_events.py` or the automatic postprocessor chain with tests.
+the pure projection in `export_public_events.py` with tests.

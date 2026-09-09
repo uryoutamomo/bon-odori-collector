@@ -1,8 +1,9 @@
 """Guard public events JSON before any wholesale sync or deploy.
 
-This script is read-only. It compares collector and site public events, then
-simulates the existing public post-processors to verify whether site-only
-historical/season fields are regenerated before sync.
+This script is read-only. It compares the raw collector public JSON with the
+site public JSON.  It never regenerates historical or season fields: missing
+collector values must block wholesale sync until the collector projection is
+fixed.
 """
 
 import argparse
@@ -12,16 +13,9 @@ import json
 import os
 import sys
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
-from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
-from public_json_postprocessors.apply_public_historical_references import (
-    apply_historical_references,
-    load_fixed_date_rules,
-    parse_iso_date,
-)
-from public_json_postprocessors.apply_public_season_hints import apply_season_hints
 from public_json_postprocessors.classify_public_events_diff import (
     HIGH_RISK_FIELDS,
     changed_fields,
@@ -70,6 +64,14 @@ def canonical_event_sha256(event):
         separators=(",", ":"),
     ).encode("utf-8")
     return hashlib.sha256(payload).hexdigest()
+
+
+def parse_iso_date(value):
+    """Parse the guard's CLI date without importing a legacy postprocessor."""
+    try:
+        return date.fromisoformat(str(value))
+    except (TypeError, ValueError):
+        return None
 
 
 def song_only_stale_approval_warnings(collector_rows, site_rows, payload, results):
@@ -562,37 +564,23 @@ def classify_rows(collector_rows, site_rows, today=None):
     }
 
 
-def apply_required_postprocessors(events, target_year, today, fixed_date_rules_path):
-    processed = copy.deepcopy(events)
-    processed = apply_historical_references(
-        processed,
-        target_year=target_year,
-        today=today,
-        fixed_date_rules=load_fixed_date_rules(fixed_date_rules_path),
-    )["events"]
-    processed = apply_display_tiers(processed, target_year=target_year)
-    processed = apply_season_hints(processed, target_year=target_year)["events"]
-    return apply_display_tiers(processed, target_year=target_year)
-
-
-def guard_decision(raw, postprocessed, allow_individual_review, approval_summary=None,
+def guard_decision(raw, classified, allow_individual_review, approval_summary=None,
                    *, collector_rows=None, site_rows=None, approval_payload=None):
     failures = []
     warnings = []
     song_warnings = []
-    raw_summary = raw.get("summary") or {}
-    post_summary = postprocessed["summary"]
-    if post_summary["collector_event_count"] != post_summary["site_event_count"]:
+    classified_summary = classified["summary"]
+    if classified_summary["collector_event_count"] != classified_summary["site_event_count"]:
         failures.append("event_count_mismatch")
-    if post_summary["collector_only_count"] or post_summary["site_only_count"]:
+    if classified_summary["collector_only_count"] or classified_summary["site_only_count"]:
         failures.append("event_key_mismatch")
 
-    post_actions = post_summary.get("events_by_action") or {}
-    restore_count = post_actions.get("restore_collector_from_site_or_reenable_export_postprocess", 0)
-    individual_count = post_actions.get("individual_review", 0)
-    site_update_count = post_actions.get("site_update_candidate_after_review", 0)
+    actions = classified_summary.get("events_by_action") or {}
+    restore_count = actions.get("restore_collector_from_site_or_reenable_export_postprocess", 0)
+    individual_count = actions.get("individual_review", 0)
+    site_update_count = actions.get("site_update_candidate_after_review", 0)
     if restore_count:
-        failures.append("restore_candidates_remain_after_required_postprocessors")
+        failures.append("collector_restore_candidates_remain")
     if individual_count and not allow_individual_review:
         failures.append("individual_review_diffs_remain")
     if site_update_count and not allow_individual_review:
@@ -610,10 +598,6 @@ def guard_decision(raw, postprocessed, allow_individual_review, approval_summary
             warnings.append("stale_reviewed_approval_hashes_songs_only")
         if approval_summary["failure_count"] != len(song_warnings):
             failures.append("reviewed_exact_approval_mismatch")
-
-    raw_actions = raw_summary.get("events_by_action") or {}
-    if raw_actions.get("restore_collector_from_site_or_reenable_export_postprocess", 0) and not restore_count:
-        warnings.append("raw_restore_candidates_resolved_by_required_postprocessors")
 
     status = "pass" if not failures else "block"
     deploy_note = (
@@ -639,25 +623,18 @@ def build(args):
         raise SystemExit(f"invalid --today: {args.today}")
 
     raw = classify_rows(collector_events, site_events, today=today)
-    postprocessed_events = apply_required_postprocessors(
-        collector_events,
-        args.target_year,
-        today,
-        args.fixed_date_rules,
-    )
-    postprocessed = classify_rows(postprocessed_events, site_events, today=today)
     reviewed_approvals_payload = load_json(args.reviewed_approvals, {})
     reviewed = apply_reviewed_exact_approvals(
-        postprocessed_events,
+        collector_events,
         site_events,
         reviewed_approvals_payload,
         ended_transition_event_keys={
             row["event_key"]
-            for row in postprocessed["event_rows"]
+            for row in raw["event_rows"]
             if row["recommended_action"] == "ended_transition_downgrade"
         },
     )
-    approved = classify_rows(postprocessed_events, reviewed["site_rows"], today=today)
+    approved = classify_rows(collector_events, reviewed["site_rows"], today=today)
     decision = guard_decision(
         raw,
         approved,
@@ -681,7 +658,7 @@ def build(args):
         "sources": {
             "collector_events": str(args.collector_events),
             "site_events": str(args.site_events),
-            "fixed_date_rules": str(args.fixed_date_rules),
+            "deprecated_ignored_fixed_date_rules": str(args.fixed_date_rules),
             "master_db": str(args.master_db),
             "publication_gap_review": str(args.publication_gap_review),
             "reviewed_approvals": str(args.reviewed_approvals),
@@ -690,11 +667,15 @@ def build(args):
             "target_year": args.target_year,
             "today": args.today,
             "allow_individual_review": bool(args.allow_individual_review),
+            "deprecated_fixed_date_rules_ignored": True,
         },
         "decision": decision,
         "procedure_warnings": procedure_warnings,
         "raw_classification": raw["summary"],
-        "postprocessed_classification": postprocessed["summary"],
+        # Kept for report consumers during the R2 transition. It is exactly
+        # the raw classification because this guard no longer postprocesses.
+        "postprocessed_classification": raw["summary"],
+        "postprocessed_classification_deprecated": True,
         "reviewed_exact_approvals": reviewed["summary"],
         "approved_classification": approved["summary"],
         "ended_transition_downgrades": [
@@ -757,7 +738,8 @@ def render_markdown(data):
     )
     for key, value in data["raw_classification"].items():
         lines.append(f"- {key}: {value}")
-    lines.extend(["", "## After Required Public Postprocessors", ""])
+    lines.extend(["", "## Deprecated Postprocessor Compatibility View", ""])
+    lines.append("- This is the raw collector classification. No historical, season, or display-tier postprocessor runs in this guard.")
     for key, value in data["postprocessed_classification"].items():
         lines.append(f"- {key}: {value}")
     lines.extend(["", "## Reviewed Exact Approvals", ""])
@@ -815,7 +797,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--collector-events", default=str(COLLECTOR_EVENTS))
     parser.add_argument("--site-events", default=str(SITE_EVENTS))
-    parser.add_argument("--fixed-date-rules", default=str(FIXED_DATE_RULES))
+    parser.add_argument(
+        "--fixed-date-rules",
+        default=str(FIXED_DATE_RULES),
+        help="deprecated compatibility option; ignored because the guard compares raw collector JSON",
+    )
     parser.add_argument("--master-db", default=str(MASTER_DB))
     parser.add_argument("--publication-gap-review", default=str(PUBLICATION_GAP_REVIEW))
     parser.add_argument("--reviewed-approvals", default=str(REVIEWED_APPROVALS))

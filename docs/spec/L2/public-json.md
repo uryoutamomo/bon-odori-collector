@@ -18,7 +18,7 @@ verified_by:
   - tests/test_classify_public_events_diff.py
   - tests/test_public_json_field_sparsity.py
   - tests/test_apply_public_date_predictions.py
-updated_for: 6537e7f
+updated_for: e762549
 ---
 
 # 公開JSONのフィールド契約
@@ -176,7 +176,7 @@ updated_for: 6537e7f
 - **破れたときの症状**: 同じカードに開催確率と日付確率が並び、どちらを信じるか分からない。
   または `95%` が規則の一致率なのか、実際にその日に開催される確度なのか分からない。
 - **守っているコード**: `event_model/event_date_prediction_judgment.py`、
-  `public_json_postprocessors/apply_public_date_predictions.py`
+  `public_export_support/date_predictions.py`
 - **守っているテスト**: `tests/test_event_date_prediction_judgment.py`、
   `tests/test_apply_public_date_predictions.py`
 

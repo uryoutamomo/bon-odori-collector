@@ -17,6 +17,7 @@ import master_rdb.master_db as master_db
 from master_rdb import s3_artifact
 from export_public_events import (
     build_public_events_from_master,
+    load_public_projection_inputs,
     project_public_events,
 )
 from review_inbox_adapters.source_writer import ArtifactState, SourceWriterError
@@ -107,7 +108,8 @@ def build_public_projection(
         db_path, target_year=target_year
     )
     return project_public_events(
-        events, target_year=target_year, db_path=db_path, today=today
+        events, target_year=target_year, today=today,
+        inputs=load_public_projection_inputs(target_year=target_year, db_path=db_path),
     )["public_events"]
 
 

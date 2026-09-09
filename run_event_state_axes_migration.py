@@ -32,7 +32,10 @@ def run(
 ):
     db_path = Path(db_path)
     if derive_from_db:
-        from export_public_events import build_public_events_from_master, project_public_events
+        from export_public_events import (
+            build_public_events_from_master, load_public_projection_inputs,
+            project_public_events,
+        )
 
         raw_events, *_ = build_public_events_from_master(
             db_path, target_year=target_year
@@ -48,8 +51,8 @@ def run(
         projection = project_public_events(
             raw_events,
             target_year=target_year,
-            db_path=db_path,
             today=today,
+            inputs=load_public_projection_inputs(target_year=target_year, db_path=db_path),
         )
         events = projection["public_events"]
         source_map = projection["source_map"]

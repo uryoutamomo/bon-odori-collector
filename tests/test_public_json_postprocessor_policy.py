@@ -8,17 +8,20 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublicJsonPostprocessorPolicyTest(unittest.TestCase):
-    def test_scheduled_postprocessors_remain_automatic(self):
+    def test_projection_rules_have_no_standalone_writing_entrypoint(self):
         scripts = [
-            "public_json_postprocessors/apply_public_date_predictions.py",
-            "public_json_postprocessors/apply_public_historical_references.py",
-            "public_json_postprocessors/apply_public_season_hints.py",
+            "public_export_support/date_predictions.py",
+            "public_export_support/historical_references.py",
+            "public_export_support/season_hints.py",
         ]
 
         for filename in scripts:
             with self.subTest(filename=filename):
                 script = (ROOT / filename).read_text(encoding="utf-8")
                 self.assertNotIn("PUBLIC_JSON_ONE_OFF_CONFIRMATION", script)
+                self.assertNotIn("def main(", script)
+                self.assertNotIn("def write_json(", script)
+                self.assertNotIn("def load_json(", script)
 
         collect = (ROOT / ".github" / "workflows" / "collect.yml").read_text(
             encoding="utf-8"

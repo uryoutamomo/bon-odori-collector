@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T08:07:03Z",
-  "generated_for_commit": "9385c3d",
+  "generated_at": "2026-09-09T09:23:59Z",
+  "generated_for_commit": "e762549",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -671,7 +671,9 @@
         "public_json_postprocessors/**",
         "public_export_support/**",
         "scripts/compare_public_export_postprocessors.py",
+        "scripts/compare_public_projection_revisions.py",
         "docs/public-json-rdb-projection-migration-plan.md",
+        "docs/r2-public-projection-verification-20260909.md",
         "guard_site_public_event_additions.py",
         "venues/export_public_venues.py"
       ],
@@ -689,7 +691,8 @@
         "INV-PUB-008",
         "INV-PUB-009",
         "INV-PUB-010",
-        "INV-PUB-011"
+        "INV-PUB-011",
+        "INV-PUB-012"
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
@@ -700,34 +703,39 @@
         "tests/test_x_song_materialization_lifecycle.py",
         "tests/test_apply_public_date_predictions.py",
         "tests/test_sync_event_date_predictions_rdb.py",
-        "tests/test_compare_public_export_postprocessors.py"
+        "tests/test_compare_public_export_postprocessors.py",
+        "tests/test_compare_public_projection_revisions.py",
+        "tests/test_public_projection_purity.py"
       ],
-      "updated_for": "68cd2f5",
+      "updated_for": "e762549",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "docs/public-json-rdb-projection-migration-plan.md",
+        "docs/r2-public-projection-verification-20260909.md",
         "export_public_events.py",
         "guard_site_public_event_additions.py",
         "public_export_support/__init__.py",
         "public_export_support/build_public_historical_reference_change_requests.py",
         "public_export_support/build_publication_gap_review.py",
+        "public_export_support/date_predictions.py",
+        "public_export_support/historical_references.py",
+        "public_export_support/projection_inputs.py",
         "public_export_support/score_event_recurrence.py",
+        "public_export_support/season_hints.py",
         "public_json_postprocessors/__init__.py",
-        "public_json_postprocessors/apply_public_date_predictions.py",
         "public_json_postprocessors/apply_public_display_tiers.py",
-        "public_json_postprocessors/apply_public_historical_references.py",
-        "public_json_postprocessors/apply_public_season_hints.py",
         "public_json_postprocessors/classify_public_events_diff.py",
         "public_json_postprocessors/compare_event_state_axes.py",
         "public_json_postprocessors/compare_public_projection_sources.py",
         "public_json_postprocessors/guard_public_events_sync.py",
         "public_json_postprocessors/review_missing_occurrence_venues.py",
         "scripts/compare_public_export_postprocessors.py",
+        "scripts/compare_public_projection_revisions.py",
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 1
+        "commits_since": 0,
+        "files_changed_since": 0
       },
       "version": "1.20",
       "revision_count": 21,
@@ -1391,7 +1399,10 @@
       "owned_files": [
         "master_rdb/master_db.py"
       ],
-      "staleness": null,
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 1
+      },
       "version": "1.2",
       "revision_count": 3,
       "history": [
@@ -1435,7 +1446,7 @@
         "tests/test_public_json_field_sparsity.py",
         "tests/test_apply_public_date_predictions.py"
       ],
-      "updated_for": "6537e7f",
+      "updated_for": "e762549",
       "path": "docs/spec/L2/public-json.md",
       "owned_files": [
         "data/public/event_songs_public.json",
@@ -1443,8 +1454,8 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 14,
-        "files_changed_since": 3
+        "commits_since": 0,
+        "files_changed_since": 0
       },
       "version": "1.2",
       "revision_count": 3,
@@ -2280,7 +2291,17 @@
       "spec": "L1-publication",
       "title": "公開投影の比較は同じ入力組と全出力で判定する",
       "tests": [
+        "tests/test_compare_public_projection_revisions.py",
         "tests/test_compare_public_export_postprocessors.py"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-012": {
+      "spec": "L1-publication",
+      "title": "表示計算と入出力を分け、同期ガードは入力を補正しない",
+      "tests": [
+        "tests/test_public_projection_purity.py",
+        "tests/test_guard_public_events_sync.py"
       ],
       "has_test": true
     },
@@ -2746,23 +2767,26 @@
     "sync_event_date_predictions_rdb.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
     "docs/public-json-rdb-projection-migration-plan.md": "L1-publication",
+    "docs/r2-public-projection-verification-20260909.md": "L1-publication",
     "export_public_events.py": "L1-publication",
     "guard_site_public_event_additions.py": "L1-publication",
     "public_export_support/__init__.py": "L1-publication",
     "public_export_support/build_public_historical_reference_change_requests.py": "L1-publication",
     "public_export_support/build_publication_gap_review.py": "L1-publication",
+    "public_export_support/date_predictions.py": "L1-publication",
+    "public_export_support/historical_references.py": "L1-publication",
+    "public_export_support/projection_inputs.py": "L1-publication",
     "public_export_support/score_event_recurrence.py": "L1-publication",
+    "public_export_support/season_hints.py": "L1-publication",
     "public_json_postprocessors/__init__.py": "L1-publication",
-    "public_json_postprocessors/apply_public_date_predictions.py": "L1-publication",
     "public_json_postprocessors/apply_public_display_tiers.py": "L1-publication",
-    "public_json_postprocessors/apply_public_historical_references.py": "L1-publication",
-    "public_json_postprocessors/apply_public_season_hints.py": "L1-publication",
     "public_json_postprocessors/classify_public_events_diff.py": "L1-publication",
     "public_json_postprocessors/compare_event_state_axes.py": "L1-publication",
     "public_json_postprocessors/compare_public_projection_sources.py": "L1-publication",
     "public_json_postprocessors/guard_public_events_sync.py": "L1-publication",
     "public_json_postprocessors/review_missing_occurrence_venues.py": "L1-publication",
     "scripts/compare_public_export_postprocessors.py": "L1-publication",
+    "scripts/compare_public_projection_revisions.py": "L1-publication",
     "venues/export_public_venues.py": "L1-publication",
     ".github/workflows/send_mail.yml": "L1-delivery",
     ".github/workflows/send_mail_watchdog.yml": "L1-delivery",
@@ -2902,8 +2926,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 363,
-    "owned": 269,
+    "tracked_source_files": 365,
+    "owned": 271,
     "unowned": 94,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",

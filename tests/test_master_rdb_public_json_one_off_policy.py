@@ -66,9 +66,9 @@ class MasterRdbPublicJsonOneOffPolicyTest(unittest.TestCase):
         ).read_text(encoding="utf-8")
 
         self.assertIn("Automated Public Postprocessors", runbook)
-        self.assertIn("apply_public_date_predictions.py", runbook)
-        self.assertIn("apply_public_historical_references.py", runbook)
-        self.assertIn("apply_public_season_hints.py", runbook)
+        self.assertIn("public_export_support/date_predictions.py", runbook)
+        self.assertIn("public_export_support/historical_references.py", runbook)
+        self.assertIn("public_export_support/season_hints.py", runbook)
 
     def test_runbook_inventory_and_policy_document_boundary(self):
         runbook = (
