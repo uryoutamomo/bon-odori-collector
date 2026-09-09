@@ -2,9 +2,10 @@
 
 2026-09-09 / おと（Codex）
 
-R2の実装は完了した。固定入力による9ケースの検証では8ケース・4出力がbyte一致した。
-対象年を2027へ進める1ケースは旧版・新版とも同じ曲目監査で拒否されたため、
-全ケースの差分ゼロゲートは **blocked** のままである。merge・本番切替の完了証拠にしない。
+R2の実装は完了した。修正なしの元比較は8ケース・4出力がbyte一致し、2027年切替は
+旧版・新版とも同じ監査拒否で **blocked** だった。この元記録は保持する。
+その後、独立した曲目年越し修正を共通適用した比較では **9ケース・4出力（36比較）がbyte一致** した。
+修正を前提とした `shared_code_fix_parity` であり、修正なしの比較やmerge・本番切替の完了証拠にはしない。
 
 ## 変更内容
 
@@ -58,7 +59,7 @@ DB SHA-256は `14d0b6f08cb46cdbd9ba4c8086d9f51d1a1cb94d173c95f81aadd29ded5faf0e`
 site main `770a061` の387件と意味内容が一致し、補正を除いた同期ガードは
 `pass / failures=[] / warnings=[]` だった。サイトへの同期や公開は行っていない。
 
-## 年切替で残る問題
+## 修正前の年切替の問題
 
 2027ケースでは、2025年の「四谷納涼踊り大会」にある「四谷納涼踊り」の
 `predicted / probability=95 / inherited_from_year=null / basis=current_hint` が
@@ -69,10 +70,37 @@ site main `770a061` の387件と意味内容が一致し、補正を除いた同
 これは安全停止の一致であって、4出力の一致ではない。監査閾値の緩和、DBの手修正、
 開催回の年窓変更をR2の構造整理に混ぜていない。
 
-残りは、古い開催回の公開候補選択と曲目の年次扱いを別の意味変更として設計・検証し、
-その結果を固定基準にして2027切替を含む4出力比較を再実行すること。
+この問題は独立したコード修正 `0389e838b3b1bfbf4ffa16e0ba1deba8b57cf8e9` で対処した。
+古い開催回と曲名を残し、置換後の残存カードにある曲を開催回の年から対象年へ換算する。
+当年へ継承済みなら追加減衰せず、間接根拠90%超の監査は維持する。
 
-## 検査と証跡
+## 共通修正を前提にした再比較
+
+元bundleを変更せず、上記Python-only単親commitの同一patchを両隔離snapshotへ適用した。
+通常比較のbaseline commitとcapture metadataの完全一致条件は緩めていない。
+比較モード・commit/parent・patch SHA・両source適用前後hashを結果に記録した。
+
+```sh
+python3 scripts/compare_public_projection_revisions.py \
+  --input-bundle /path/to/verified \
+  --baseline-revision c0718033ad7bd736bda561a102247ea54e523fb2 \
+  --shared-code-fix 0389e838b3b1bfbf4ffa16e0ba1deba8b57cf8e9 \
+  --today 2026-09-09 --target-year 2026 \
+  --out-json /path/to/private-evidence/shared-revision-comparison.json --quiet
+```
+
+9ケースすべてで4出力がbyte一致した。最初の8ケースは387件、対象年を2027へ進めたケースは409件。
+同じ修正を外した元の2027比較は引き続き監査拒否であり、その結果を上書きしていない。
+修正単体の2026年への意味差分は、13過去カード155曲の確率・根拠表示。曲名・その他イベント項目・
+source mapは不変。R2構造整理による差分と別に確認した。
+
+組合せ全体テストは **1,900 passed / 240 subtests passed**。年越し6 mutationと、
+共有patchを片側だけへ適用する負例を検出した。独立レビューの指摘に合わせ、CLIにも比較modeと
+修正commitを明示した（比較実行時snapshotからの変更はこのCLI結果表示のみ）。
+比較JSON SHA-256は `32d145190a0541753096bd1d4f53f92fb28d713cfee8ee74d230a90c8d04a601`。
+詳細証跡は `bonsuke-r2-20260909/rollover-fix/` に保存した。
+
+## 元比較の検査と証跡
 
 - 全体pytest: **1,888 passed / 238 subtests passed**。
 - 9 mutationを別コピーへ適用し、すべて狙った行動テストがred。

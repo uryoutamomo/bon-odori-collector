@@ -98,6 +98,12 @@ R2本体は入力読込の `load_public_projection_inputs()`、意味計算の
 比較用としてのみ隔離する。同期ガードは入力の過去実績・季節ヒントを補正しない。
 同じ入力で通常日、終了前日・当日・翌日、過去実績期限切れ、年越しを比較する。
 既存の重ね掛け検査は、整理前後のコードを固定した比較の代わりにはしない。
+baselineはbundle metadataのcollector commitと完全一致させる。
+独立したコード修正を前提にする再比較では、`--shared-code-fix <40桁commit>` で
+単親・Pythonファイルのみのcommitを両隔離snapshotへ同一適用する。仕様変更は同じPRの別commitに置く。
+適用不能・既適用は拒否し、commit/parent/patch SHA・両source適用前後hashを記録する。
+この `shared_code_fix_parity` は修正後の整理前後比較であり、修正なしの `original_parity`
+を合格へ読み替える証拠ではない。元bundleと元比較結果は変更しない。
 
 比較の実行例（入力は復号・検証済みbundle directoryを指定）:
 

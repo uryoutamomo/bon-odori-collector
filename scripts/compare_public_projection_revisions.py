@@ -100,6 +100,47 @@ def git_revision(repository: Path, revision: str) -> str:
     return value
 
 
+def shared_code_fix(repository: Path, revision: str) -> dict[str, Any]:
+    """Return a narrow, reproducible patch which is safe to apply to both sides."""
+    if not re.fullmatch(r"[0-9a-f]{40}", revision):
+        raise ComparisonError("--shared-code-fix must be a full 40-character commit")
+    commit = git_revision(repository, revision)
+    parents = git_output(repository, "rev-list", "--parents", "-n", "1", commit).split()
+    if len(parents) != 2:
+        raise ComparisonError("--shared-code-fix must name a single-parent commit")
+    parent = parents[1]
+    changed = git_output(repository, "diff-tree", "--no-commit-id", "--name-only", "-r", parent, commit).splitlines()
+    if not changed or any(not path.endswith(".py") for path in changed):
+        raise ComparisonError("--shared-code-fix must contain one or more Python-only path changes")
+    try:
+        patch = subprocess.check_output(["git", "-C", str(repository), "diff", "--binary", parent, commit])
+    except subprocess.CalledProcessError as exc:
+        raise ComparisonError("could not generate --shared-code-fix patch") from exc
+    if not patch:
+        raise ComparisonError("--shared-code-fix has no patch")
+    return {
+        "commit": commit,
+        "parent": parent,
+        "paths": changed,
+        "selection_contract": "single-parent commit with Python-only path changes, applied identically to both isolated snapshots",
+        "patch": patch,
+        "patch_sha256": hashlib.sha256(patch).hexdigest(),
+    }
+
+
+def apply_shared_code_fix(root: Path, patch_path: Path, label: str) -> None:
+    """Apply exactly once; a pre-applied or incompatible patch is a refusal."""
+    for check in (True, False):
+        command = ["git", "apply"]
+        if check:
+            command.append("--check")
+        command.append(str(patch_path))
+        result = subprocess.run(command, cwd=root, text=True, capture_output=True)
+        if result.returncode:
+            detail = (result.stderr or result.stdout).strip()
+            raise ComparisonError(f"shared code fix is already applied or cannot apply to {label}: {detail}")
+
+
 def load_json(path: Path) -> Any:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -398,13 +439,14 @@ def date_matrix(seed_events: list[dict[str, Any]], *, today: str, target_year: i
     ]
 
 
-def compare(*, input_bundle: Path, baseline_revision: str, candidate_repo: Path, today: str, target_year: int, python: str, quiet: bool) -> dict[str, Any]:
+def compare(*, input_bundle: Path, baseline_revision: str, candidate_repo: Path, today: str, target_year: int, python: str, quiet: bool, shared_code_fix_revision: str | None = None) -> dict[str, Any]:
     candidate_repo = candidate_repo.resolve()
     bundle = verify_bundle(input_bundle, today=today, target_year=target_year)
     baseline_sha = git_revision(candidate_repo, baseline_revision)
     if bundle["metadata"]["git_sha"] != baseline_sha:
-        raise ComparisonError("baseline revision must match the input bundle collector commit")
+        raise ComparisonError("baseline revision must match input bundle metadata git_sha exactly")
     candidate_sha = git_revision(candidate_repo, "HEAD")
+    shared_fix = shared_code_fix(candidate_repo, shared_code_fix_revision) if shared_code_fix_revision else None
     source_hashes_before = dict(bundle["hashes"])
     with tempfile.TemporaryDirectory(prefix="public-projection-revisions-") as raw:
         temp = Path(raw)
@@ -416,10 +458,29 @@ def compare(*, input_bundle: Path, baseline_revision: str, candidate_repo: Path,
             db = temp / "inputs" / label / "bon_odori_master.sqlite"
             manifest = copy_bundle_inputs(input_bundle, root, db)
             isolated_inputs[label] = (root, db, manifest)
-        source_snapshots = {
+        source_snapshots_before = {
             label: snapshot_manifest(root)
             for label, (root, _db, _manifest) in isolated_inputs.items()
         }
+        shared_fix_snapshots = None
+        if shared_fix:
+            patch_path = temp / "shared-code-fix.patch"
+            patch_path.write_bytes(shared_fix["patch"])
+            for label, (root, _db, _manifest) in isolated_inputs.items():
+                apply_shared_code_fix(root, patch_path, label)
+            source_snapshots = {
+                label: snapshot_manifest(root)
+                for label, (root, _db, _manifest) in isolated_inputs.items()
+            }
+            shared_fix_snapshots = {
+                label: {
+                    "source_sha256_before": manifest_digest(source_snapshots_before[label]),
+                    "source_sha256_after": manifest_digest(source_snapshots[label]),
+                }
+                for label in isolated_inputs
+            }
+        else:
+            source_snapshots = source_snapshots_before
         runtime_sources = {
             label: runtime_source_manifest(root)
             for label, (root, _db, _manifest) in isolated_inputs.items()
@@ -481,6 +542,7 @@ def compare(*, input_bundle: Path, baseline_revision: str, candidate_repo: Path,
     status = "pass" if passed else "fail" if any(case["status"] == "fail" for case in cases) else "blocked"
     return {
         "status": status,
+        "comparison_mode": "shared_code_fix_parity" if shared_fix else "original_parity",
         "full_four_output_parity": passed,
         "generated_by": "scripts/compare_public_projection_revisions.py",
         "baseline_revision": baseline_sha,
@@ -494,6 +556,9 @@ def compare(*, input_bundle: Path, baseline_revision: str, candidate_repo: Path,
             }
             for label, manifest in source_snapshots.items()
         },
+        "shared_code_fix": None if not shared_fix else {
+            key: value for key, value in shared_fix.items() if key != "patch"
+        } | {"snapshots": shared_fix_snapshots},
         "today": today,
         "target_year": target_year,
         "input_bundle": {"path": bundle["bundle"], "metadata": bundle["metadata"], "sha256": source_hashes_before},
@@ -505,6 +570,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input-bundle", required=True, type=Path, help="verified, decrypted input-bundle directory")
     parser.add_argument("--baseline-revision", required=True, help="fixed old exporter commit")
+    parser.add_argument("--shared-code-fix", help="full single-parent Python-only commit applied identically to both isolated snapshots")
     parser.add_argument("--candidate-repo", type=Path, default=ROOT, help="new checkout, including uncommitted implementation")
     parser.add_argument("--today", required=True, help="must match bundle metadata YYYY-MM-DD")
     parser.add_argument("--target-year", required=True, type=int, help="must match bundle metadata")
@@ -517,13 +583,18 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     try:
-        report = compare(input_bundle=args.input_bundle, baseline_revision=args.baseline_revision, candidate_repo=args.candidate_repo, today=args.today, target_year=args.target_year, python=args.python, quiet=args.quiet)
+        report = compare(input_bundle=args.input_bundle, baseline_revision=args.baseline_revision, candidate_repo=args.candidate_repo, today=args.today, target_year=args.target_year, python=args.python, quiet=args.quiet, shared_code_fix_revision=args.shared_code_fix)
     except ComparisonError as exc:
         print(f"comparison refused: {exc}", file=sys.stderr)
         return 2
     args.out_json.parent.mkdir(parents=True, exist_ok=True)
     args.out_json.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"public projection revision comparison: status={report['status']} cases={len(report['matrix'])}")
+    fix = report.get("shared_code_fix")
+    print(
+        f"public projection revision comparison: mode={report['comparison_mode']} "
+        f"status={report['status']} cases={len(report['matrix'])} "
+        f"shared_code_fix={fix['commit'] if fix else 'none'}"
+    )
     return {"pass": 0, "fail": 1, "blocked": 2}[report["status"]]
 
 

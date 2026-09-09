@@ -39,7 +39,7 @@ verified_by:
   - tests/test_compare_public_export_postprocessors.py
   - tests/test_compare_public_projection_revisions.py
   - tests/test_public_projection_purity.py
-updated_for: e762549
+updated_for: be49a58
 ---
 
 # 公開サブシステム
@@ -266,6 +266,11 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   構造整理の合格判定は `scripts/compare_public_projection_revisions.py` で旧版と新版を固定して行う。
   通常日・終了前日/当日/翌日・過去実績のスライド期限・年末年始を同じ入力で比較する。
   旧後処理を再適用する重ね掛け比較だけでは、整理前後の差分ゼロを証明できない。
+  baseline commitは常にbundle metadataのcollector commitと完全一致させる。
+  独立した不具合修正を前提に再比較する場合だけ、`--shared-code-fix` に単親・Pythonファイルのみの
+  修正commit全桁を明示し、同一patchを両隔離snapshotへ1回ずつ適用できる。適用不能・既適用は拒否する。
+  この結果は `shared_code_fix_parity` としてcommit・patch SHA・両source適用前後hashを記録し、
+  通常の `original_parity` と区別する。修正なしの比較結果や元bundleを書き換えず、元比較の合格に読み替えない。
   曲目混入の修正は構造整理の差分ゼロ比較より先に独立して検証する。出典文脈に依存する
   撤回は[マスタ INV-MST-016](04-master.md)の開催回限定要求を使い、同名全件撤回で代用しない。
 - **なぜ**: 一部の入力や出力を省くと、実運用と違う条件で差分ゼロになり、移行時の曲目欠落や対応IDのずれを見逃す。

@@ -7,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -209,6 +210,77 @@ open(os.path.join(out, \"public_event_source_map.json\"), \"w\").write(drift(\"p
         repository, baseline = self.fixture_repository()
         with self.assertRaisesRegex(MODULE.ComparisonError, "baseline revision must match"):
             MODULE.compare(input_bundle=bundle, baseline_revision=baseline, candidate_repo=repository, today="2026-09-09", target_year=2026, python=sys.executable, quiet=True)
+
+    def test_shared_python_fix_applies_to_both_snapshots_and_is_reported(self):
+        bundle = self.write_bundle()
+        repository, baseline = self.fixture_repository()
+        self.pair_bundle(bundle, baseline)
+        exporter = repository / "export_public_events.py"
+        exporter.write_text(
+            exporter.read_text(encoding="utf-8").replace(
+                '"target_year": a.target_year}]',
+                '"target_year": a.target_year, "shared_fix": "applied"}]',
+            ),
+            encoding="utf-8",
+        )
+        subprocess.run(["git", "-C", str(repository), "commit", "-am", "shared Python fix"], check=True)
+        fix = MODULE.git_revision(repository, "HEAD")
+        subprocess.run(["git", "-C", str(repository), "checkout", "-q", baseline], check=True)
+        before = {path.relative_to(bundle): hashlib.sha256(path.read_bytes()).hexdigest() for path in bundle.rglob("*") if path.is_file()}
+        report = MODULE.compare(input_bundle=bundle, baseline_revision=baseline, candidate_repo=repository, today="2026-09-09", target_year=2026, python=sys.executable, quiet=True, shared_code_fix_revision=fix)
+        after = {path.relative_to(bundle): hashlib.sha256(path.read_bytes()).hexdigest() for path in bundle.rglob("*") if path.is_file()}
+        self.assertEqual(report["comparison_mode"], "shared_code_fix_parity")
+        self.assertEqual(report["status"], "pass")
+        self.assertEqual(report["shared_code_fix"]["commit"], fix)
+        self.assertNotEqual(report["shared_code_fix"]["snapshots"]["baseline"]["source_sha256_before"], report["shared_code_fix"]["snapshots"]["baseline"]["source_sha256_after"])
+        self.assertNotEqual(report["shared_code_fix"]["snapshots"]["candidate"]["source_sha256_before"], report["shared_code_fix"]["snapshots"]["candidate"]["source_sha256_after"])
+        self.assertEqual(before, after)
+
+    def test_shared_fix_applied_to_only_one_snapshot_fails_output_parity(self):
+        bundle = self.write_bundle()
+        repository, baseline = self.fixture_repository()
+        self.pair_bundle(bundle, baseline)
+        exporter = repository / "export_public_events.py"
+        exporter.write_text(
+            exporter.read_text(encoding="utf-8").replace(
+                '"target_year": a.target_year}]',
+                '"target_year": a.target_year, "shared_fix": "applied"}]',
+            ),
+            encoding="utf-8",
+        )
+        subprocess.run(["git", "-C", str(repository), "commit", "-am", "shared Python fix"], check=True)
+        fix = MODULE.git_revision(repository, "HEAD")
+        subprocess.run(["git", "-C", str(repository), "checkout", "-q", baseline], check=True)
+        original_apply = MODULE.apply_shared_code_fix
+
+        def apply_to_baseline_only(root, patch_path, label):
+            if label == "baseline":
+                original_apply(root, patch_path, label)
+
+        with patch.object(MODULE, "apply_shared_code_fix", side_effect=apply_to_baseline_only):
+            report = MODULE.compare(input_bundle=bundle, baseline_revision=baseline, candidate_repo=repository, today="2026-09-09", target_year=2026, python=sys.executable, quiet=True, shared_code_fix_revision=fix)
+        self.assertEqual(report["comparison_mode"], "shared_code_fix_parity")
+        self.assertEqual(report["status"], "fail")
+        self.assertTrue(any(not row["artifacts"]["events_public.json"]["equal"] for row in report["matrix"]))
+
+    def test_shared_fix_rejects_preapplied_or_non_python_commit(self):
+        bundle = self.write_bundle()
+        repository, baseline = self.fixture_repository()
+        self.pair_bundle(bundle, baseline)
+        exporter = repository / "export_public_events.py"
+        exporter.write_text(exporter.read_text(encoding="utf-8") + "\n# shared audit fix\n", encoding="utf-8")
+        subprocess.run(["git", "-C", str(repository), "commit", "-am", "shared Python fix"], check=True)
+        preapplied = MODULE.git_revision(repository, "HEAD")
+        with self.assertRaisesRegex(MODULE.ComparisonError, "already applied or cannot apply"):
+            MODULE.compare(input_bundle=bundle, baseline_revision=baseline, candidate_repo=repository, today="2026-09-09", target_year=2026, python=sys.executable, quiet=True, shared_code_fix_revision=preapplied)
+
+        subprocess.run(["git", "-C", str(repository), "checkout", "-q", baseline], check=True)
+        (repository / "notes.md").write_text("not Python\n", encoding="utf-8")
+        subprocess.run(["git", "-C", str(repository), "add", "notes.md"], check=True)
+        subprocess.run(["git", "-C", str(repository), "commit", "-qm", "non Python fix"], check=True)
+        non_python = MODULE.git_revision(repository, "HEAD")
+        with self.assertRaisesRegex(MODULE.ComparisonError, "Python-only"):
+            MODULE.compare(input_bundle=bundle, baseline_revision=baseline, candidate_repo=repository, today="2026-09-09", target_year=2026, python=sys.executable, quiet=True, shared_code_fix_revision=non_python)
 
     def test_matching_safe_refusal_is_blocked_never_four_output_pass(self):
         bundle = self.write_bundle()
