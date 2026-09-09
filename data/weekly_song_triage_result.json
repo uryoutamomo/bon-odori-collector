@@ -2,11 +2,11 @@
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
   "song_candidate_count": 10,
-  "direct_count": 7,
+  "direct_count": 8,
   "created_count": 5,
-  "updated_count": 2,
+  "updated_count": 3,
   "rejected_noise_count": 2,
-  "review_count": 1,
+  "review_count": 0,
   "created": [
     {
       "song_name": "アンパンマン音頭",
@@ -65,6 +65,14 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "八木節",
+      "source_term": "八木節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 2,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -77,12 +85,5 @@
       "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
-  "review": [
-    {
-      "term": "たいとう音頭",
-      "evidence_count": 1,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=6gAu35CiCQE"
-    }
-  ]
+  "review": []
 }
