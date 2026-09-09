@@ -34,7 +34,7 @@ verified_by:
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_compare_public_export_postprocessors.py
-updated_for: f6d0be4
+updated_for: 68cd2f5
 ---
 
 # 公開サブシステム
@@ -258,6 +258,8 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 ### INV-PUB-011 公開投影の比較は同じ入力組と全出力で判定する
 
 - **内容**: `scripts/compare_public_export_postprocessors.py` は正本DBとmanifestのchecksum一致、固定した補助JSON、曲目occurrence fallback、`today`、`target_year`、collector commitを比較の根拠にする。出力先変更でfallbackを欠落させず、events JSON・JS・曲目JSON・内部source mapのすべてで一致を確認する。fallbackは生成物ではなく入力である。
+  曲目混入の修正は構造整理の差分ゼロ比較より先に独立して検証する。出典文脈に依存する
+  撤回は[マスタ INV-MST-016](04-master.md)の開催回限定要求を使い、同名全件撤回で代用しない。
 - **なぜ**: 一部の入力や出力を省くと、実運用と違う条件で差分ゼロになり、移行時の曲目欠落や対応IDのずれを見逃す。
 - **破れたときの症状**: events JSONの比較は通るのに曲目やsource mapが変わる、または比較専用実行だけ曲目が減る。
 - **守っているコード**: `scripts/compare_public_export_postprocessors.py`。比較基準の取得は `master_rdb/capture_public_projection_inputs.py`、移行の終了条件は `docs/public-json-rdb-projection-migration-plan.md`。

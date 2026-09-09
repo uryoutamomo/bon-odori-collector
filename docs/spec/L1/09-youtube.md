@@ -50,14 +50,16 @@ invariants:
   - INV-YTB-004
   - INV-YTB-005
   - INV-YTB-006
+  - INV-YTB-007
 verified_by:
   - tests/test_run_daily_youtube_backfill.py
   - tests/test_youtube_daily_operations_policy.py
   - tests/test_apply_youtube_setlist_occurrences_rdb.py
   - tests/test_extract_youtube_setlists.py
+  - tests/test_youtube_reviewed_reimport.py
   - tests/test_rdb_youtube_setlist_pipeline_workflow.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: a47769f
+updated_for: 68cd2f5
 ---
 
 # YouTube取り込みサブシステム
@@ -215,6 +217,24 @@ updated_for: a47769f
   `test_retry_cooldown_suppresses_row_until_due_date`、`test_unseen_rows_across_focus_months_precede_retries`、
   `test_run_harvest_batches_stops_after_consecutive_no_yield`、
   `tests/test_youtube_daily_operations_policy.py::YouTubeDailyOperationsPolicyTest::test_workflow_prioritizes_current_month_and_bounds_empty_retries`
+
+### INV-YTB-007 進行ラベルと撤回済みの観測を曲目へ再昇格させない
+
+- **内容**: 時刻付き章からの抽出では、公演回数・太鼓演奏枠・会場様子・音楽ストップなどの
+  明確な進行ラベルを除く。判定は章の項目全体に適用し、「アンコール」「ハイライト」や
+  「前説音頭」などを文字列の部分一致で一律に落とさない。
+  現役のセットリストRDB取込は、同一 `observed_occurrence_song_id` が
+  `rejected_llm_review` なら曲マスタの候補が残っていても開催回の曲へ再昇格させない。
+  新しく届いた出典も原文層へ保存し、再採用は別のレビューを必要とする。
+  別の観測ID・開催回にある同名曲への採否は変更しない。
+- **なぜ**: 2026-09-09に「1回目の公演」等が曲目へ混入し、曲行だけを削除しても
+  定期取込が再作成する経路を確認した。曲名単位の無効化では同名の実曲を巻き込む。
+- **破れたときの症状**: 公開曲目欄に進行項目が載る／撤回した項目が次の定期取込で復活する。
+- **守っているコード**: `youtube_channels/extract_youtube_setlists.py` の
+  `extract_chapter_setlist()`、`apply_youtube_setlist_occurrences_rdb.py` の `apply_occurrence()`。
+- **守っているテスト**: `tests/test_extract_youtube_setlists.py::ExtractYoutubeSetlistsTest::test_chapter_program_labels_do_not_become_songs`、
+  `tests/test_extract_youtube_setlists.py::ExtractYoutubeSetlistsTest::test_chapter_filter_keeps_ambiguous_and_similarly_named_real_song_candidates`、
+  `tests/test_youtube_reviewed_reimport.py::test_reimport_preserves_rejection_but_keeps_same_title_at_other_occurrence`。
 
 ## 主要な流れ
 

@@ -899,6 +899,8 @@ def render_markdown(result):
 
 
 def run(args):
+    if Path(args.out_db).resolve() == Path(args.master_db).resolve():
+        raise ValueError("--out-db must not equal --master-db (including through a symlink)")
     if args.apply:
         manual_apply_guards.require_confirmation(
             args.apply,
@@ -906,8 +908,6 @@ def run(args):
             manual_apply_guards.CHANGE_REQUESTS_CONFIRMATION,
             "apply_change_requests.py --apply",
         )
-        if Path(args.out_db) == Path(args.master_db):
-            raise ValueError("--out-db must not equal --master-db")
 
     payload = json.loads(Path(args.requests).read_text(encoding="utf-8"))
     validate_payload(payload)

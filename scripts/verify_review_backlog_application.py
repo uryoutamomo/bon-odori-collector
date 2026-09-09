@@ -9,6 +9,11 @@ import sqlite3
 from pathlib import Path
 
 from master_rdb.master_db import normalize_text, stable_id
+from report_apply.review_backlog_change_requests import (
+    SCOPED_RETRACTION_OBSERVED_MUTABLE_COLUMNS,
+    _snapshot_sha256,
+    evidence_snapshot,
+)
 from report_apply.apply_change_requests import (
     HISTORICAL_SONG_EVIDENCE_MODES,
     SONG_EVIDENCE_MODES,
@@ -28,6 +33,7 @@ def verify(db: Path, payload: dict) -> dict:
     errors = []
     counts = {}
     connection = sqlite3.connect(f"file:{db.resolve()}?mode=ro", uri=True)
+    connection.row_factory = sqlite3.Row
     try:
         for request in payload.get("requests") or []:
             change_type = request["change_type"]
@@ -82,6 +88,56 @@ def verify(db: Path, payload: dict) -> dict:
                                 "request_id": request_id,
                                 "error": "raw_canonical_rows_remain",
                                 "count": raw_canonical,
+                            }
+                        )
+            elif change_type == "retract_occurrence_song":
+                occurrence_song_id = request["occurrence_song_id"]
+                canonical = scalar(
+                    connection,
+                    "SELECT COUNT(*) FROM occurrence_songs WHERE occurrence_song_id = ?",
+                    (occurrence_song_id,),
+                )
+                if canonical:
+                    errors.append(
+                        {
+                            "request_id": request_id,
+                            "error": "scoped_retraction_canonical_remains",
+                            "occurrence_song_id": occurrence_song_id,
+                        }
+                    )
+                for expected in request["expected_evidence"]:
+                    row = connection.execute(
+                        "SELECT * FROM evidence_items WHERE evidence_id = ?",
+                        (expected["evidence_id"],),
+                    ).fetchone()
+                    if not row or row["url"] != expected["url"] or _snapshot_sha256(evidence_snapshot(row)) != expected["snapshot_sha256"]:
+                        errors.append(
+                            {
+                                "request_id": request_id,
+                                "error": "scoped_retraction_evidence_changed",
+                                "evidence_id": expected["evidence_id"],
+                            }
+                        )
+                for expected in request["expected_observed"]:
+                    row = connection.execute(
+                        "SELECT * FROM observed_occurrence_songs WHERE observed_occurrence_song_id = ?",
+                        (expected["observed_occurrence_song_id"],),
+                    ).fetchone()
+                    retained_snapshot = row and _snapshot_sha256(
+                        {
+                            key: row[key]
+                            for key in row.keys()
+                            if key not in SCOPED_RETRACTION_OBSERVED_MUTABLE_COLUMNS
+                        }
+                    )
+                    preserved = retained_snapshot == expected["retained_fields_sha256"]
+                    retracted = row and row["occurrence_song_id"] is None and row["matched_song_id"] is None and row["match_status"] == "rejected_llm_review"
+                    if not preserved or not retracted:
+                        errors.append(
+                            {
+                                "request_id": request_id,
+                                "error": "scoped_retraction_observed_mismatch",
+                                "observed_occurrence_song_id": expected["observed_occurrence_song_id"],
                             }
                         )
             elif change_type == "retract_song_identity":
