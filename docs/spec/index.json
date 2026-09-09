@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T10:34:04Z",
-  "generated_for_commit": "30a743f",
+  "generated_at": "2026-09-09T10:37:31Z",
+  "generated_for_commit": "1fda725",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -734,7 +734,7 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 4,
+        "commits_since": 5,
         "files_changed_since": 10
       },
       "version": "1.23",
@@ -1444,7 +1444,7 @@
         "tests/test_public_json_field_sparsity.py",
         "tests/test_apply_public_date_predictions.py"
       ],
-      "updated_for": "e762549",
+      "updated_for": "30a743f",
       "path": "docs/spec/L2/public-json.md",
       "owned_files": [
         "data/public/event_songs_public.json",
@@ -1452,12 +1452,17 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 3
       },
-      "version": "1.3",
-      "revision_count": 4,
+      "version": "1.4",
+      "revision_count": 5,
       "history": [
+        {
+          "commit": "1fda725",
+          "date": "2026-09-09",
+          "subject": "Publish verified R2 projection with historical song year correction"
+        },
         {
           "commit": "be49a58",
           "date": "2026-09-09",
