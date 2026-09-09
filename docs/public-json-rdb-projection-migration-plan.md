@@ -21,13 +21,14 @@ C本丸では、公開JSONだけに後付けしている以下の表示フィー
 python3 scripts/compare_public_export_postprocessors.py --today 2026-07-16
 ```
 
-この比較は一時ディレクトリだけに出力し、`data/public/events_public.json` は更新しない。
-一時worktreeなど `data/bon_odori_master.sqlite` がない場所では、ローカルのmaster DBを明示できる。
+この比較は一時ディレクトリだけに公開成果物を出力し、`data/public/events_public.json` は更新しない。
+DBには `database_checksum` が一致するmanifestが必須。正規fetchした組を明示する。
 
 ```sh
 python3 scripts/compare_public_export_postprocessors.py \
   --today 2026-07-16 \
-  --master-db /Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite
+  --master-db /path/to/fetched/bon_odori_master.sqlite \
+  --master-manifest /path/to/fetched/bon_odori_master_manifest.json
 ```
 
 比較対象:
@@ -43,6 +44,40 @@ python3 scripts/compare_public_export_postprocessors.py \
 - `deep_equal == true`
 - `event_count_current == event_count_legacy_overlay`
 - `current_sha256 == legacy_overlay_sha256`
+
+events JSONだけでなく、`events_public.js`、`event_songs_public.json`、内部用
+`public_event_source_map.json` も比較する。`event_song_occurrences_public.json` は
+legacy曲目fallbackの入力であり、このexporterの生成物ではない。各実行に隔離した
+入力コピーを渡し、出力先変更による暗黙の空fallbackを許さない。
+
+補助入力は `event_date_predictions.json`、`event_date_update_candidates.json`、
+`public_event_overrides.json`、`public_fixed_date_rules.json`、
+`song_master_initial_registration.json`、`rdb_song_review_source.json` と上記fallback。
+各hash・DB/manifestのhash・判定日・対象年・ソースcommitを比較レポートに残す。
+`BON_ODORI_PUBLIC_SOURCE=master_rdb` を強制し、環境のNotion設定で比較元を変えない。
+
+## R2開始前の残件（2026-09-09）
+
+手元の古いDBとmanifestの組はchecksum不一致だった。これを修復して一致と見せたり、
+合成DBのテストを本番相当の差分ゼロ判定に代用したりしない。
+既存Actions artifactには正本DBが含まれないため、既存のS3 fetch経路で同世代の
+DBとmanifestを取得する必要がある。
+
+取得案は `docs/workflow-proposals/capture-public-projection-inputs.yml` に置く。
+このファイルは稼働workflowではない。取得処理はS3正本を書き換えず、公開repositoryの
+artifactには受取人宛に暗号化したbundleだけを渡す。DB、manifest、補助入力、hashは
+bundle内部に保持する。復号後は入力hashを照合し、同じcollector commitで比較する。
+
+R2本体では `project_public_events()` の入力読込・意味計算・出力書込を分け、現役の
+後処理呼出元を移す。同じ入力で通常日、終了前日・当日・翌日、過去実績期限切れ、
+年越しを比較してから、同期ガードが入力を補正して救済する経路と旧CLIを撤去する。
+既存の「export後に旧処理を再適用する比較」は重ね掛けの検査であり、整理前後の
+コードを固定して比較する検査の代わりにはしない。
+
+曲名への進行ラベル混入は別のデータ修正として扱う。元DBの曲行・evidence・同名の
+全影響範囲を確認し、既存 `retract_song_identity` へのreviewed change requestと
+dry-runで修正する。修正前後の入力組を別々に保存し、意図した曲目変更をR2の
+純粋な構造整理の差分ゼロ条件へ混ぜない。
 
 ## Internal ID Sidecar
 

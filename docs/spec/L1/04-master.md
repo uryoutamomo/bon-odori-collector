@@ -7,6 +7,7 @@ owns:
   - master_rdb/audit.py
   - master_rdb/freeze_policy.py
   - master_rdb/s3_artifact.py
+  - master_rdb/capture_public_projection_inputs.py
   - master_rdb/unified_model_audit.py
   - rdb_builders/**
   - report_apply/**
@@ -43,9 +44,11 @@ invariants:
   - INV-MST-012
   - INV-MST-013
   - INV-MST-014
+  - INV-MST-015
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
+  - tests/test_capture_public_projection_inputs.py
   - tests/test_audit_master_rdb.py
   - tests/test_e2_identity_judgment.py
   - tests/test_x_song_identity_migration.py
@@ -56,7 +59,7 @@ verified_by:
   - tests/test_reviewed_change_requests_workflow.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
-updated_for: b5e6c0a
+updated_for: f6d0be4
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -171,6 +174,14 @@ updated_for: b5e6c0a
 - **破れたときの症状**: 公開件数が理由なく減る。監査だけが異常を示す。
 - **守っているコード**: `master_rdb/s3_artifact.py` の `verify_checksum()` と fetch 経路
 - **守っているテスト**: `tests/test_master_db_s3_artifact.py::test_fetch_verifies_checksum_and_writes_local_manifest`
+
+### INV-MST-015 比較用の正本DB入力は検証してから受取人だけへ暗号化する
+
+- **内容**: `master_rdb/capture_public_projection_inputs.py` は、manifest の `database_checksum` とDB SHA-256の一致、SQLite immutable read-only `PRAGMA integrity_check = ok`、WAL/SHM/journal不在、固定7件の補助JSONの存在・JSON妥当性・HEAD blob一致を確認する。全入力を一時コピーしてから同じ検査を行い、そのコピーのDB・manifest・補助JSON・各hash・commit SHA・`today`・`target_year` だけを一つのtarへ束ねる。そのtarは PEM X.509 recipient certificate 宛の OpenSSL CMS AES-256-CBC DER としてだけ出力する。検証または暗号化に失敗した場合は最終出力を作らない。
+- **なぜ**: 正本DBとmanifest、レビューに必要な補助入力を公開artifactへ平文で出すと、公開repoから誰でも取得できる。古いDBや不一致のDBで比較しても、投影差分の原因を追跡できない。
+- **破れたときの症状**: 公開artifactから正本DBまたは内部入力が取得できる／比較結果がどのDB・日付・補助JSONに基づくものか復元できない／壊れたDBで比較が始まる。
+- **守っているコード**: `master_rdb/capture_public_projection_inputs.py` の `capture()`
+- **守っているテスト**: `tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_round_trip_contains_hashed_inputs_and_context`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_checksum_mismatch_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_missing_supplemental_input_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_recipient_certificate_creates_no_artifact`
 
 ### INV-MST-007 会場は正規化名と住所の完全一致でのみ再利用する
 

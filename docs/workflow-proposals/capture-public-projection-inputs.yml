@@ -1,0 +1,87 @@
+# Proposal only. This file is intentionally outside .github/workflows until an
+# explicit workflow-change approval is recorded.
+name: capture-public-projection-inputs
+
+on:
+  workflow_dispatch:
+    inputs:
+      recipient_certificate:
+        description: PEM X.509 certificate that holds the comparison recipient public key
+        required: true
+        type: string
+      today:
+        description: Fixed comparison date in YYYY-MM-DD form
+        required: true
+        type: string
+      target_year:
+        description: Fixed comparison target year
+        required: true
+        type: string
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials for authoritative read
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Fetch authoritative master RDB
+        env:
+          MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+          MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+          AWS_REGION: ap-northeast-1
+        run: python master_db_s3_artifact.py fetch --overwrite
+
+      - name: Encrypt comparison inputs for the named recipient
+        env:
+          RECIPIENT_CERTIFICATE: ${{ inputs.recipient_certificate }}
+          COMPARISON_TODAY: ${{ inputs.today }}
+          COMPARISON_TARGET_YEAR: ${{ inputs.target_year }}
+        run: |
+          umask 077
+          certificate="$RUNNER_TEMP/r2-comparison-recipient.pem"
+          trap 'rm -f "$certificate"' EXIT
+          printf '%s' "$RECIPIENT_CERTIFICATE" > "$certificate"
+          python master_rdb/capture_public_projection_inputs.py \
+            --db data/bon_odori_master.sqlite \
+            --manifest data/bon_odori_master_manifest.json \
+            --input data/event_date_predictions.json \
+            --input data/event_date_update_candidates.json \
+            --input data/public_event_overrides.json \
+            --input data/public_fixed_date_rules.json \
+            --input data/song_master_initial_registration.json \
+            --input data/rdb_song_review_source.json \
+            --input data/public/event_song_occurrences_public.json \
+            --today "$COMPARISON_TODAY" \
+            --target-year "$COMPARISON_TARGET_YEAR" \
+            --recipient-cert "$certificate" \
+            --output "$RUNNER_TEMP/public-projection-inputs.cms"
+
+      - name: Upload encrypted comparison inputs
+        uses: actions/upload-artifact@v7
+        with:
+          name: public-projection-inputs-encrypted
+          path: ${{ runner.temp }}/public-projection-inputs.cms
+          if-no-files-found: error
+          retention-days: 3

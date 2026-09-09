@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T00:16:38Z",
-  "generated_for_commit": "5416f5f",
+  "generated_at": "2026-09-09T02:44:05Z",
+  "generated_for_commit": "f6d0be4",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -480,6 +480,7 @@
         "master_rdb/audit.py",
         "master_rdb/freeze_policy.py",
         "master_rdb/s3_artifact.py",
+        "master_rdb/capture_public_projection_inputs.py",
         "master_rdb/unified_model_audit.py",
         "rdb_builders/**",
         "report_apply/**",
@@ -517,11 +518,13 @@
         "INV-MST-011",
         "INV-MST-012",
         "INV-MST-013",
-        "INV-MST-014"
+        "INV-MST-014",
+        "INV-MST-015"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
         "tests/test_master_db_s3_artifact.py",
+        "tests/test_capture_public_projection_inputs.py",
         "tests/test_audit_master_rdb.py",
         "tests/test_e2_identity_judgment.py",
         "tests/test_x_song_identity_migration.py",
@@ -533,7 +536,7 @@
         "tests/test_sync_event_date_predictions_rdb.py",
         "tests/test_collect_event_state_axes_wiring.py"
       ],
-      "updated_for": "b5e6c0a",
+      "updated_for": "f6d0be4",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -554,6 +557,7 @@
         "master_db_s3_artifact.py",
         "master_rdb/__init__.py",
         "master_rdb/audit.py",
+        "master_rdb/capture_public_projection_inputs.py",
         "master_rdb/freeze_policy.py",
         "master_rdb/s3_artifact.py",
         "master_rdb/unified_model_audit.py",
@@ -586,7 +590,10 @@
         "sync_event_date_predictions_rdb.py",
         "transition_ended_occurrences.py"
       ],
-      "staleness": null,
+      "staleness": {
+        "commits_since": 0,
+        "files_changed_since": 0
+      },
       "version": "1.16",
       "revision_count": 17,
       "history": [
@@ -659,6 +666,8 @@
         "export_public_events.py",
         "public_json_postprocessors/**",
         "public_export_support/**",
+        "scripts/compare_public_export_postprocessors.py",
+        "docs/public-json-rdb-projection-migration-plan.md",
         "guard_site_public_event_additions.py",
         "venues/export_public_venues.py"
       ],
@@ -675,7 +684,8 @@
         "INV-PUB-007",
         "INV-PUB-008",
         "INV-PUB-009",
-        "INV-PUB-010"
+        "INV-PUB-010",
+        "INV-PUB-011"
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
@@ -685,11 +695,13 @@
         "tests/test_e0b_bridge.py",
         "tests/test_x_song_materialization_lifecycle.py",
         "tests/test_apply_public_date_predictions.py",
-        "tests/test_sync_event_date_predictions_rdb.py"
+        "tests/test_sync_event_date_predictions_rdb.py",
+        "tests/test_compare_public_export_postprocessors.py"
       ],
       "updated_for": "c729024",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
+        "docs/public-json-rdb-projection-migration-plan.md",
         "export_public_events.py",
         "guard_site_public_event_additions.py",
         "public_export_support/__init__.py",
@@ -706,6 +718,7 @@
         "public_json_postprocessors/compare_public_projection_sources.py",
         "public_json_postprocessors/guard_public_events_sync.py",
         "public_json_postprocessors/review_missing_occurrence_venues.py",
+        "scripts/compare_public_export_postprocessors.py",
         "venues/export_public_venues.py"
       ],
       "staleness": {
@@ -1367,7 +1380,10 @@
       "owned_files": [
         "master_rdb/master_db.py"
       ],
-      "staleness": null,
+      "staleness": {
+        "commits_since": 1,
+        "files_changed_since": 1
+      },
       "version": "1.2",
       "revision_count": 3,
       "history": [
@@ -2084,6 +2100,17 @@
       ],
       "has_test": true
     },
+    "INV-MST-015": {
+      "spec": "L1-master",
+      "title": "比較用の正本DB入力は検証してから受取人だけへ暗号化する",
+      "tests": [
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_round_trip_contains_hashed_inputs_and_context",
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_checksum_mismatch_creates_no_artifact",
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_missing_supplemental_input_creates_no_artifact",
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_recipient_certificate_creates_no_artifact"
+      ],
+      "has_test": true
+    },
     "INV-MST-007": {
       "spec": "L1-master",
       "title": "会場は正規化名と住所の完全一致でのみ再利用する",
@@ -2230,6 +2257,14 @@
       "tests": [
         "tests/test_export_public_events.py::ExportPublicEventsTest::test_master_export_reports_public_eligible_row_missing_venue_area",
         "tests/test_export_public_events.py::ExportPublicEventsTest::test_missing_venue_area_report_is_appended_to_actions_summary"
+      ],
+      "has_test": true
+    },
+    "INV-PUB-011": {
+      "spec": "L1-publication",
+      "title": "公開投影の比較は同じ入力組と全出力で判定する",
+      "tests": [
+        "tests/test_compare_public_export_postprocessors.py"
       ],
       "has_test": true
     },
@@ -2653,6 +2688,7 @@
     "master_db_s3_artifact.py": "L1-master",
     "master_rdb/__init__.py": "L1-master",
     "master_rdb/audit.py": "L1-master",
+    "master_rdb/capture_public_projection_inputs.py": "L1-master",
     "master_rdb/freeze_policy.py": "L1-master",
     "master_rdb/s3_artifact.py": "L1-master",
     "master_rdb/unified_model_audit.py": "L1-master",
@@ -2684,6 +2720,7 @@
     "scripts/verify_review_backlog_application.py": "L1-master",
     "sync_event_date_predictions_rdb.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
+    "docs/public-json-rdb-projection-migration-plan.md": "L1-publication",
     "export_public_events.py": "L1-publication",
     "guard_site_public_event_additions.py": "L1-publication",
     "public_export_support/__init__.py": "L1-publication",
@@ -2700,6 +2737,7 @@
     "public_json_postprocessors/compare_public_projection_sources.py": "L1-publication",
     "public_json_postprocessors/guard_public_events_sync.py": "L1-publication",
     "public_json_postprocessors/review_missing_occurrence_venues.py": "L1-publication",
+    "scripts/compare_public_export_postprocessors.py": "L1-publication",
     "venues/export_public_venues.py": "L1-publication",
     ".github/workflows/send_mail.yml": "L1-delivery",
     ".github/workflows/send_mail_watchdog.yml": "L1-delivery",
@@ -2839,9 +2877,9 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 362,
-    "owned": 267,
-    "unowned": 95,
+    "tracked_source_files": 363,
+    "owned": 269,
+    "unowned": 94,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
