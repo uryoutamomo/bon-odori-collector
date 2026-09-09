@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T03:08:59Z",
-  "generated_for_commit": "73f3634",
+  "generated_at": "2026-09-09T07:58:24Z",
+  "generated_for_commit": "d3b0808",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -520,7 +520,8 @@
         "INV-MST-012",
         "INV-MST-013",
         "INV-MST-014",
-        "INV-MST-015"
+        "INV-MST-015",
+        "INV-MST-016"
       ],
       "verified_by": [
         "tests/test_apply_change_requests.py",
@@ -535,9 +536,10 @@
         "tests/test_build_historical_promotion_candidates.py",
         "tests/test_reviewed_change_requests_workflow.py",
         "tests/test_sync_event_date_predictions_rdb.py",
-        "tests/test_collect_event_state_axes_wiring.py"
+        "tests/test_collect_event_state_axes_wiring.py",
+        "tests/test_scoped_song_retraction.py"
       ],
-      "updated_for": "06049ba",
+      "updated_for": "68cd2f5",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -594,11 +596,16 @@
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 1
+        "files_changed_since": 3
       },
-      "version": "1.18",
-      "revision_count": 19,
+      "version": "1.19",
+      "revision_count": 20,
       "history": [
+        {
+          "commit": "d3b0808",
+          "date": "2026-09-09",
+          "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
+        },
         {
           "commit": "f989c78",
           "date": "2026-09-09",
@@ -653,11 +660,6 @@
           "commit": "33c728c",
           "date": "2026-08-16",
           "subject": "Document E2-S v2 identity contracts"
-        },
-        {
-          "commit": "28a8012",
-          "date": "2026-08-15",
-          "subject": "確からしさは名指しなら下げられるようにする（#211 の直し過ぎを戻す） (#212)"
         }
       ]
     },
@@ -700,7 +702,7 @@
         "tests/test_sync_event_date_predictions_rdb.py",
         "tests/test_compare_public_export_postprocessors.py"
       ],
-      "updated_for": "f6d0be4",
+      "updated_for": "68cd2f5",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "docs/public-json-rdb-projection-migration-plan.md",
@@ -724,12 +726,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 2
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.19",
-      "revision_count": 20,
+      "version": "1.20",
+      "revision_count": 21,
       "history": [
+        {
+          "commit": "d3b0808",
+          "date": "2026-09-09",
+          "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
+        },
         {
           "commit": "06049ba",
           "date": "2026-09-09",
@@ -784,11 +791,6 @@
           "commit": "01db7c0",
           "date": "2026-08-17",
           "subject": "Finalize detail cleanup repair"
-        },
-        {
-          "commit": "1bd1ad3",
-          "date": "2026-08-17",
-          "subject": "Allow derived source URL representation changes"
         }
       ]
     },
@@ -1116,17 +1118,19 @@
         "INV-YTB-003",
         "INV-YTB-004",
         "INV-YTB-005",
-        "INV-YTB-006"
+        "INV-YTB-006",
+        "INV-YTB-007"
       ],
       "verified_by": [
         "tests/test_run_daily_youtube_backfill.py",
         "tests/test_youtube_daily_operations_policy.py",
         "tests/test_apply_youtube_setlist_occurrences_rdb.py",
         "tests/test_extract_youtube_setlists.py",
+        "tests/test_youtube_reviewed_reimport.py",
         "tests/test_rdb_youtube_setlist_pipeline_workflow.py",
         "tests/test_sync_event_date_predictions_rdb.py"
       ],
-      "updated_for": "a47769f",
+      "updated_for": "68cd2f5",
       "path": "docs/spec/L1/09-youtube.md",
       "owned_files": [
         ".github/workflows/rdb-youtube-setlist-pipeline.yml",
@@ -1184,11 +1188,16 @@
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 1
+        "files_changed_since": 2
       },
-      "version": "1.6",
-      "revision_count": 7,
+      "version": "1.7",
+      "revision_count": 8,
       "history": [
+        {
+          "commit": "d3b0808",
+          "date": "2026-09-09",
+          "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
+        },
         {
           "commit": "1cdda18",
           "date": "2026-08-24",
@@ -2057,6 +2066,14 @@
       ],
       "has_test": true
     },
+    "INV-MST-016": {
+      "spec": "L1-master",
+      "title": "曲目の撤回は開催回・根拠・観測行を固定してからだけ行う",
+      "tests": [
+        "tests/test_scoped_song_retraction.py::test_scoped_retraction_only_changes_the_reviewed_occurrence_and_preserves_raw_rows"
+      ],
+      "has_test": true
+    },
     "INV-MST-002": {
       "spec": "L1-master",
       "title": "今年の開催日の確定には、今年のソースを要求する",
@@ -2417,6 +2434,14 @@
       "title": "検索済みの薄い行を毎日引き直さない",
       "tests": [
         "tests/test_run_daily_youtube_backfill.py::RunDailyYoutubeBackfillTest::test_bootstrap_puts_existing_searches_on_cooldown"
+      ],
+      "has_test": true
+    },
+    "INV-YTB-007": {
+      "spec": "L1-youtube",
+      "title": "進行ラベルと撤回済みの観測を曲目へ再昇格させない",
+      "tests": [
+        "tests/test_extract_youtube_setlists.py::ExtractYoutubeSetlistsTest::test_chapter_program_labels_do_not_become_songs"
       ],
       "has_test": true
     },
