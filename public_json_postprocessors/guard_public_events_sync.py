@@ -72,6 +72,78 @@ def canonical_event_sha256(event):
     return hashlib.sha256(payload).hexdigest()
 
 
+def song_only_stale_approval_warnings(collector_rows, site_rows, payload, results):
+    """Explain current songs-only mismatches without retiring old approvals.
+
+    Use the original rows, not postprocessed or approval-adjusted copies.
+    Canonical comparison preserves missing/null and JSON type differences;
+    the normal classifier's source/history normalization is not an exemption.
+    """
+    if not isinstance(payload, dict) or payload.get("schema") != REVIEWED_APPROVALS_SCHEMA:
+        return []
+    approvals = payload.get("approvals")
+    if not isinstance(approvals, list) or len(approvals) != len(results):
+        return []
+    collector_by_key = defaultdict(list)
+    site_by_key = defaultdict(list)
+    for row in collector_rows:
+        collector_by_key[event_key(row)].append(row)
+    for row in site_rows:
+        site_by_key[event_key(row)].append(row)
+
+    warnings = []
+    for approval, result in zip(approvals, results):
+        if not isinstance(approval, dict) or result.get("status") != "hash_mismatch":
+            continue
+        if (not isinstance(approval.get("id"), str) or not approval["id"].strip()
+                or result.get("id") != approval["id"]):
+            continue
+        if not all(
+            isinstance(approval.get(field), str)
+            and len(approval[field]) == 64
+            and all(char in "0123456789abcdef" for char in approval[field])
+            for field in ("site_sha256", "collector_sha256")
+        ):
+            continue
+        kind = approval.get("kind")
+        if kind == "same_key_update":
+            key = approval.get("event_key")
+        elif kind == "key_replacement":
+            key = approval.get("collector_event_key")
+            old_key = approval.get("site_event_key")
+            if (not isinstance(old_key, str) or not old_key or old_key == key
+                    or collector_by_key.get(old_key) or site_by_key.get(old_key)):
+                continue
+        else:
+            continue
+        if not isinstance(key, str) or not key:
+            continue
+        if len(collector_by_key.get(key, [])) != 1 or len(site_by_key.get(key, [])) != 1:
+            continue
+        collector = collector_by_key[key][0]
+        site = site_by_key[key][0]
+        if not isinstance(collector.get("songs"), list) or not isinstance(site.get("songs"), list):
+            continue
+        collector_hash = canonical_event_sha256(collector)
+        site_hash = canonical_event_sha256(site)
+        if collector_hash == site_hash:
+            continue
+        collector_without_songs = {k: v for k, v in collector.items() if k != "songs"}
+        site_without_songs = {k: v for k, v in site.items() if k != "songs"}
+        if canonical_event_sha256(collector_without_songs) != canonical_event_sha256(site_without_songs):
+            continue
+        warnings.append({
+            "id": result["id"],
+            "kind": kind,
+            "event_key": key,
+            "reason": "current_event_diff_is_songs_only",
+            "changed_fields": ["songs"],
+            "raw_collector_sha256": collector_hash,
+            "raw_site_sha256": site_hash,
+        })
+    return warnings
+
+
 def mark_superseded_same_key_approvals(results, approvals):
     """Retire an older exact approval after a later approved value reached site.
 
@@ -503,9 +575,11 @@ def apply_required_postprocessors(events, target_year, today, fixed_date_rules_p
     return apply_display_tiers(processed, target_year=target_year)
 
 
-def guard_decision(raw, postprocessed, allow_individual_review, approval_summary=None):
+def guard_decision(raw, postprocessed, allow_individual_review, approval_summary=None,
+                   *, collector_rows=None, site_rows=None, approval_payload=None):
     failures = []
     warnings = []
+    song_warnings = []
     raw_summary = raw.get("summary") or {}
     post_summary = postprocessed["summary"]
     if post_summary["collector_event_count"] != post_summary["site_event_count"]:
@@ -524,32 +598,17 @@ def guard_decision(raw, postprocessed, allow_individual_review, approval_summary
     if site_update_count and not allow_individual_review:
         failures.append("site_update_candidates_remain")
     if approval_summary and approval_summary.get("failure_count"):
-        # Exact approvals pin the complete event payload, while this guard's
-        # review boundary intentionally covers only event identity and
-        # HIGH_RISK_FIELDS.  A reviewed event's song list can therefore make
-        # an old full-payload hash stale even when the current collector/site
-        # diff contains no field that requires that approval.  Ignore only
-        # that explicitly proven low-risk case; missing summary keys remain
-        # fail-closed so callers cannot bypass the approval check accidentally.
-        raw_low_risk_only = (
-            all(
-                key in raw_summary
-                for key in (
-                    "collector_event_count",
-                    "site_event_count",
-                    "collector_only_count",
-                    "site_only_count",
-                    "high_risk_diff_record_count",
-                )
+        # Only mismatches individually proven against the original rows may
+        # become warnings. Other events' normal transitions do not affect this
+        # decision, and invalid approvals remain failures even with zero diffs.
+        if collector_rows is not None and site_rows is not None:
+            song_warnings = song_only_stale_approval_warnings(
+                collector_rows, site_rows, approval_payload,
+                approval_summary.get("results", []),
             )
-            and raw_summary["collector_event_count"] == raw_summary["site_event_count"]
-            and raw_summary["collector_only_count"] == 0
-            and raw_summary["site_only_count"] == 0
-            and raw_summary["high_risk_diff_record_count"] == 0
-        )
-        if raw_low_risk_only:
-            warnings.append("stale_reviewed_approval_hashes_low_risk_only")
-        else:
+        if song_warnings:
+            warnings.append("stale_reviewed_approval_hashes_songs_only")
+        if approval_summary["failure_count"] != len(song_warnings):
             failures.append("reviewed_exact_approval_mismatch")
 
     raw_actions = raw_summary.get("events_by_action") or {}
@@ -565,6 +624,7 @@ def guard_decision(raw, postprocessed, allow_individual_review, approval_summary
         "status": status,
         "failures": failures,
         "warnings": warnings,
+        "song_only_approval_warnings": song_warnings,
         "safe_to_wholesale_sync": status == "pass",
         "public_deploy_requires_separate_approval": True,
         "deploy_approval_note": deploy_note,
@@ -603,6 +663,9 @@ def build(args):
         approved,
         args.allow_individual_review,
         approval_summary=reviewed["summary"],
+        collector_rows=collector_events,
+        site_rows=site_events,
+        approval_payload=reviewed_approvals_payload,
     )
     procedure_warnings = flow_artifact_warnings(
         args.master_db,
@@ -701,6 +764,10 @@ def render_markdown(data):
     approval_summary = data["reviewed_exact_approvals"]
     for key in ["schema", "status", "approval_count", "status_counts", "failure_count"]:
         lines.append(f"- {key}: {approval_summary.get(key)}")
+    song_warnings = data["decision"]["song_only_approval_warnings"]
+    lines.append(f"- current_songs_only_warning_count: {len(song_warnings)}")
+    for warning in song_warnings:
+        lines.append(f"  - {warning['id']}: {warning['event_key']} ({warning['reason']})")
     lines.extend(["", "## After Reviewed Exact Approvals", ""])
     for key, value in data["approved_classification"].items():
         lines.append(f"- {key}: {value}")

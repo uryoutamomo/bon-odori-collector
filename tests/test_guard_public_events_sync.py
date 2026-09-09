@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import tempfile
@@ -20,7 +21,8 @@ from public_json_postprocessors.guard_public_events_sync import (
 
 
 class PublicEventsSyncGuardTest(unittest.TestCase):
-    def run_build(self, collector_rows, site_rows, approvals, *, today="2026-07-31"):
+    def run_build(self, collector_rows, site_rows, approvals, *, today="2026-07-31",
+                  approval_schema="public_sync_exact_approvals_v1"):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             collector_events = tmp / "collector.json"
@@ -37,7 +39,7 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             reviewed_approvals.write_text(
                 json.dumps(
                     {
-                        "schema": "public_sync_exact_approvals_v1",
+                        "schema": approval_schema,
                         "approvals": approvals,
                     },
                     ensure_ascii=False,
@@ -509,7 +511,7 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(decision["status"], "block")
         self.assertIn("reviewed_exact_approval_mismatch", decision["failures"])
 
-    def test_stale_approval_hash_does_not_block_proven_low_risk_only_diff(self):
+    def test_low_risk_summary_alone_cannot_waive_approval_failures(self):
         raw = {
             "summary": {
                 "collector_event_count": 1,
@@ -537,11 +539,14 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             approval_summary={"failure_count": 1},
         )
 
-        self.assertEqual(decision["status"], "pass")
-        self.assertEqual(decision["failures"], [])
-        self.assertIn(
-            "stale_reviewed_approval_hashes_low_risk_only", decision["warnings"]
+        self.assertEqual(decision["status"], "block")
+        self.assertIn("reviewed_exact_approval_mismatch", decision["failures"])
+
+        forged = guard_decision(
+            raw, approved, allow_individual_review=False,
+            approval_summary={"failure_count": 1, "song_only_warnings": [{}]},
         )
+        self.assertEqual(forged["status"], "block")
 
     def test_pass_still_requires_separate_public_deploy_approval(self):
         raw = {"summary": {"events_by_action": {}}}
@@ -1080,9 +1085,168 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         )
         self.assertEqual(result["decision"]["status"], "pass")
         self.assertIn(
-            "stale_reviewed_approval_hashes_low_risk_only",
+            "stale_reviewed_approval_hashes_songs_only",
             result["decision"]["warnings"],
         )
+
+    def stale_song_update(self, *, renamed=False):
+        published = self.published_event()
+        site = {**published, "songs": [{"name": "東京音頭", "probability": 95}]}
+        collector = {**published, "songs": [{"name": "東京音頭", "probability": 71}]}
+        old = {**published, "detail": "承認前の値"}
+        arrival = {**published, "detail": "以前承認した値"}
+        if renamed:
+            old["name"] = "改名前の盆踊り"
+            approval = self.key_replacement_approval(old, arrival)
+        else:
+            approval = self.same_key_approval(old, arrival)
+        return collector, site, approval
+
+    def test_song_only_stale_approvals_coexist_with_other_ended_transitions(self):
+        for renamed in (False, True):
+            with self.subTest(renamed=renamed):
+                collector, site, approval = self.stale_song_update(renamed=renamed)
+                other_site = {**self.published_event(), "name": "別の盆踊り"}
+                other_collector = {
+                    **other_site, "public_category": "ended",
+                    "display_tier": "ended", "current_event_state": "ended",
+                }
+                inputs = ([collector, other_collector], [site, other_site], [approval])
+                original = copy.deepcopy(inputs)
+                result = self.run_build(*inputs)
+                self.assertEqual(inputs, original)
+                self.assertEqual(result["decision"]["status"], "pass")
+                self.assertEqual(result["approved_classification"]["events_by_action"],
+                                 {"ended_transition_downgrade": 1})
+                summary = result["reviewed_exact_approvals"]
+                self.assertEqual(summary["status_counts"], {"hash_mismatch": 1})
+                self.assertEqual(summary["failure_count"], 1)
+                self.assertEqual(result["decision"]["song_only_approval_warnings"][0]["id"], approval["id"])
+                self.assertEqual(result["decision"]["song_only_approval_warnings"][0]["changed_fields"], ["songs"])
+                self.assertEqual(result["approved_classification"],
+                                 result["postprocessed_classification"])
+
+    def test_song_only_exception_rejects_every_additional_raw_field_difference(self):
+        differences = {
+            "date": "2026-07-27", "date_end": "2026-07-30",
+            "detail": "未承認の詳細", "source_urls": ["https://example.org/new"],
+            "display_tier": "ended", "unknown_field": "new",
+            # Presence and JSON types matter even when Python values compare equal.
+            "unknown_null": None, "unknown_number": True,
+            "source_urls_normalized": [{"url": "https://example.org/source"}],
+        }
+        for renamed in (False, True):
+            for field, value in differences.items():
+                with self.subTest(renamed=renamed, field=field):
+                    collector, site, approval = self.stale_song_update(renamed=renamed)
+                    if field == "unknown_number":
+                        site[field] = 1
+                    if field == "source_urls_normalized":
+                        field = "source_urls"
+                        site[field] = [*value, {"url": "https://example.org/extra"}]
+                    collector[field] = value
+                    result = self.run_build([collector], [site], [approval])
+                    self.assertIn("reviewed_exact_approval_mismatch",
+                                  result["decision"]["failures"])
+
+    def test_song_only_exception_requires_unique_current_rows_on_both_sides(self):
+        for renamed in (False, True):
+            for duplicate_side in ("collector", "site", "both"):
+                with self.subTest(renamed=renamed, duplicate_side=duplicate_side):
+                    collector, site, approval = self.stale_song_update(renamed=renamed)
+                    collector_rows = [collector] * (2 if duplicate_side != "site" else 1)
+                    site_rows = [site] * (2 if duplicate_side != "collector" else 1)
+                    result = self.run_build(collector_rows, site_rows, [approval])
+                    self.assertIn("reviewed_exact_approval_mismatch",
+                                  result["decision"]["failures"])
+
+    def test_song_only_rename_exception_rejects_old_key_on_either_side(self):
+        for old_key_side in ("collector", "site", "both"):
+            with self.subTest(old_key_side=old_key_side):
+                collector, site, approval = self.stale_song_update(renamed=True)
+                old = {**site, "name": "改名前の盆踊り"}
+                collector_rows = [collector] + ([old] if old_key_side != "site" else [])
+                site_rows = [site] + ([old] if old_key_side != "collector" else [])
+                result = self.run_build(collector_rows, site_rows, [approval])
+                self.assertIn("reviewed_exact_approval_mismatch",
+                              result["decision"]["failures"])
+
+    def test_song_only_exception_rejects_missing_rows(self):
+        for renamed in (False, True):
+            for missing_side in ("collector", "site"):
+                with self.subTest(renamed=renamed, missing_side=missing_side):
+                    collector, site, approval = self.stale_song_update(renamed=renamed)
+                    result = self.run_build(
+                        [] if missing_side == "collector" else [collector],
+                        [] if missing_side == "site" else [site], [approval])
+                    self.assertEqual(result["decision"]["status"], "block")
+
+    def test_song_only_exception_never_waives_invalid_approval_records(self):
+        collector, site, approval = self.stale_song_update()
+        invalid_entries = [None, {}, {**approval, "kind": "unknown"},
+                           {**approval, "id": ""},
+                           {**approval, "id": 123},
+                           {**approval, "site_sha256": ""},
+                           {**approval, "collector_sha256": "not-a-hash"}]
+        for invalid in invalid_entries:
+            with self.subTest(invalid=invalid):
+                result = self.run_build([collector], [site], [invalid])
+                self.assertIn("reviewed_exact_approval_mismatch",
+                              result["decision"]["failures"])
+        result = self.run_build([collector], [site], [approval, approval])
+        self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+        result = self.run_build([collector], [site], [approval], approval_schema="invalid")
+        self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+
+    def test_song_only_exception_requires_song_arrays_on_both_sides(self):
+        for side in ("collector", "site"):
+            for invalid_songs in (None, True, "東京音頭", {}):
+                with self.subTest(side=side, invalid_songs=invalid_songs):
+                    collector, site, approval = self.stale_song_update()
+                    (collector if side == "collector" else site)["songs"] = invalid_songs
+                    result = self.run_build([collector], [site], [approval])
+                    self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+            collector, site, approval = self.stale_song_update()
+            (collector if side == "collector" else site).pop("songs")
+            result = self.run_build([collector], [site], [approval])
+            self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+
+    def test_song_only_exception_does_not_hide_other_unapproved_changes(self):
+        collector, site, approval = self.stale_song_update()
+        other_site = {**self.published_event(), "name": "別の盆踊り"}
+        for field, value in (("date", "2026-07-27"), ("detail", "未承認")):
+            with self.subTest(field=field):
+                result = self.run_build([collector, {**other_site, field: value}],
+                                        [site, other_site], [approval])
+                self.assertEqual(result["decision"]["status"], "block")
+                self.assertEqual(len(result["decision"]["song_only_approval_warnings"]), 1)
+                self.assertNotIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+
+    def test_song_only_exception_does_not_waive_unapproved_additions_or_removals(self):
+        collector, site, approval = self.stale_song_update()
+        other = {**self.published_event(), "name": "別の盆踊り"}
+        for kind in ("addition", "removal"):
+            with self.subTest(kind=kind):
+                invalid_hash = {
+                    "id": "other", "kind": kind, "event_key": "別の盆踊り||確認公園",
+                    "collector_sha256": "0" * 64, "site_sha256": "0" * 64,
+                }
+                result = self.run_build(
+                    [collector] + ([other] if kind == "addition" else []),
+                    [site] + ([other] if kind == "removal" else []),
+                    [approval, invalid_hash])
+                self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+
+    def test_song_only_exception_is_not_needed_after_sync_or_reused_for_future_drift(self):
+        for renamed in (False, True):
+            with self.subTest(renamed=renamed):
+                collector, _, approval = self.stale_song_update(renamed=renamed)
+                synced = self.run_build([collector], [collector], [approval])
+                self.assertEqual(synced["decision"]["status"], "pass")
+                self.assertEqual(synced["reviewed_exact_approvals"]["status_counts"],
+                                 {"already_synced": 1})
+                drifted = self.run_build([{**collector, "detail": "未承認"}], [collector], [approval])
+                self.assertIn("reviewed_exact_approval_mismatch", drifted["decision"]["failures"])
 
     def test_ended_transition_on_today_still_requires_review(self):
         site = {

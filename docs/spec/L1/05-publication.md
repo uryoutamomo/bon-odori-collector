@@ -30,7 +30,7 @@ verified_by:
   - tests/test_x_song_materialization_lifecycle.py
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
-updated_for: 6a34173
+updated_for: c729024
 ---
 
 # 公開サブシステム
@@ -111,9 +111,17 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **内容**: `public_json_postprocessors/guard_public_events_sync.py` の `guard_decision()` は、
   collector 側と site 側でイベント件数が違えば `event_count_mismatch`、
   片側にしか無いキーがあれば `event_key_mismatch` として `block` する。個別承認はイベント全体のhashを固定するため、
-  後から曲目のような低リスクfieldだけが変わっても古いhashは不一致になる。この場合は、**現在の**件数・キー集合が一致し、
-  `HIGH_RISK_FIELDS` の差分が0件だと機械確認できたときだけ警告へ下げる。高リスク差分が1件でもある場合、または
-  分類結果の必要fieldが欠ける場合は、従来どおり `reviewed_exact_approval_mismatch` で閉じる。承認台帳は追記型なので、
+  後から曲目だけが変わっても古いhashは不一致になる。既存の承認鎖・終了遷移の処理後に残った正常な
+  `same_key_update` / `key_replacement` の `hash_mismatch` は、**対象イベントごとの今回の元入力**で検査する。
+  両側に同一キーが1行ずつ存在し、両側の `songs` が配列で、songsを除く全fieldがcanonical JSONで完全一致する場合だけ
+  今回の同期の警告へ下げる。改名承認は旧キーが両側から消え、新キーが両側で一意に存在することも必要。
+  未知field、欠落とnull、JSON型、出典配列の差も省略・正規化しない。ID・hash等が不正な承認、重複キー、欠落行には適用しない。
+  判定には元のcollector/site行と承認台帳・結果を要し、分類summaryや警告件数だけでは免除できない。
+  台帳と比較用siteコピー、承認結果の `status` / `failure_count` はそのまま残し、
+  `decision.song_only_approval_warnings` に承認ID・対象キー・今回の両hash・理由を記録する。永続的な退役状態は作らない。
+  別イベントの正常な終了・期限切れ遷移はこの適格性を妨げず、別イベントの未承認差分やその他の承認失敗は引き続きblockする。
+  同期後の同値行は既存の `already_synced` となり、次回に曲目以外が変われば再検査でblockする。
+  承認台帳は追記型なので、
   同じイベントに `A → B → C` の承認履歴がある場合、Cがすでにsiteへ到達すると古い `A → B` は現値と一致しない。
   このときだけ、後続の同一キー承認の「event key + site hash」が前の承認の「到達先キー + collector hash」と一致し、
   その後続承認が適用済みだと機械確認できれば、古い承認を `superseded` として失敗数から除外する。
@@ -131,9 +139,18 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **なぜ**: 件数のズレは、後処理のどれかが動かなかったか、想定外の削除が起きたことの最も分かりやすい兆候だから。
   個々の差分を見る前に、まず総数で異常を捕まえる。
 - **破れたときの症状**: 公開件数が急に減る・増える。過去に、日次が止まったまま同期だけ進んで
-  終了済み38件が「開催予定」のまま残り続けた事故がある。
-- **守っているコード**: `public_json_postprocessors/guard_public_events_sync.py` の `guard_decision()`
-- **守っているテスト**: `tests/test_guard_public_events_sync.py::test_event_count_mismatch_blocks_wholesale_sync`、
+  終了済み38件が「開催予定」のまま残り続けた事故がある。2026-09-08の固定入力では、曲目だけが違う8イベントの
+  古い承認11項目が、別9イベントの正常遷移に巻き込まれてblockした。全体の高リスク差分件数で免除する旧判定が原因だった。
+- **守っているコード**: `public_json_postprocessors/guard_public_events_sync.py` の `guard_decision()`、`song_only_stale_approval_warnings()`
+- **守っているテスト**: `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_event_count_mismatch_blocks_wholesale_sync`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_stale_approvals_coexist_with_other_ended_transitions`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_exception_rejects_every_additional_raw_field_difference`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_exception_requires_unique_current_rows_on_both_sides`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_rename_exception_rejects_old_key_on_either_side`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_exception_never_waives_invalid_approval_records`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_exception_requires_song_arrays_on_both_sides`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_song_only_exception_does_not_hide_other_unapproved_changes`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_low_risk_summary_alone_cannot_waive_approval_failures`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_allows_song_only_update_when_old_exact_approval_hash_is_stale`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_allows_superseded_approval_chain_to_flow_into_ended_transition`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_key_replacement_is_superseded_by_proven_same_key_successor`、
