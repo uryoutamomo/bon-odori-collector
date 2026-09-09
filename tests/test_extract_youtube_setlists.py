@@ -3,6 +3,7 @@ import unittest
 from youtube_channels.extract_youtube_setlists import (
     attach_public_event_matches,
     extract_occurrences,
+    extract_chapter_setlist,
     extract_setlist,
     parse_youtube_event_date,
     setlist_from_title,
@@ -12,6 +13,23 @@ from youtube_channels.extract_youtube_setlists import (
 
 
 class ExtractYoutubeSetlistsTest(unittest.TestCase):
+    def test_chapter_program_labels_do_not_become_songs(self):
+        text = "\n".join([
+            "00:00 太鼓演奏（白梅太鼓）", "03:02 １回目の公演（18時30分～）",
+            "27:45 ２回目の公演（18時30分～）", "30:00 会場様子",
+            "31:00 前説", "32:00 結果発表", "33:00 音楽ストップ",
+            "34:00 三本締め", "35:00 雨にて途中終了", "36:00 阿波踊りレッスン",
+            "37:00 一般参加 阿波踊り", "38:00 東京音頭", "40:00 炭坑節",
+        ])
+        self.assertEqual(
+            [row["title"] for row in extract_chapter_setlist(text)], ["東京音頭", "炭坑節"]
+        )
+
+    def test_chapter_filter_keeps_ambiguous_and_similarly_named_real_song_candidates(self):
+        titles = ["アンコール", "ハイライト", "前説音頭", "太鼓演奏の唄", "三本締め音頭"]
+        text = "\n".join(f"{index}:00 {title}" for index, title in enumerate(titles))
+        self.assertEqual([row["title"] for row in extract_chapter_setlist(text)], titles)
+
     def test_extracts_numbered_setlist_with_urls(self):
         text = "\n".join([
             "飛鳥山公園盆踊り（舞ことり）",

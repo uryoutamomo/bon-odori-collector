@@ -9,6 +9,8 @@ reviewed evidence records but never invent an occurrence or song link.
 from __future__ import annotations
 
 import json
+import hashlib
+import sqlite3
 
 from master_rdb.master_db import json_text, normalize_text, stable_id
 
@@ -16,16 +18,94 @@ from master_rdb.master_db import json_text, normalize_text, stable_id
 CHANGE_TYPES = {
     "merge_song_identity",
     "retract_song_identity",
+    "retract_occurrence_song",
     "register_song_candidate",
     "record_youtube_review_decision",
 }
 SONG_STATUSES = {"active", "candidate"}
 YOUTUBE_DECISIONS = {"accepted", "rejected"}
+SCOPED_RETRACTION_OBSERVED_MUTABLE_COLUMNS = {
+    "occurrence_song_id",
+    "matched_song_id",
+    "match_status",
+    "updated_at",
+}
 
 
 def _required(request, field, errors, prefix):
     if not request.get(field):
         errors.append(f"{prefix}: missing required field: {field}")
+
+
+def _snapshot_sha256(value):
+    """Hash a review-time snapshot without relying on SQLite row ordering."""
+    encoded = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
+
+
+def _is_sha256(value):
+    return isinstance(value, str) and len(value) == 64 and all(char in "0123456789abcdef" for char in value.lower())
+
+
+def evidence_snapshot(row):
+    """Return the content-addressed fields a scoped retraction must freeze."""
+    return {key: row[key] for key in row.keys()}
+
+
+def observed_snapshot(row):
+    """Return the row identity and state that a scoped retraction may change."""
+    return {
+        "observed_occurrence_song_id": row["observed_occurrence_song_id"],
+        "observed_occurrence_id": row["observed_occurrence_id"],
+        "occurrence_song_id": row["occurrence_song_id"],
+        "raw_song_title": row["raw_song_title"],
+        "normalized_title": row["normalized_title"],
+        "matched_song_id": row["matched_song_id"],
+        "match_status": row["match_status"],
+        "role": row["role"],
+        "evidence_status": row["evidence_status"],
+        "source_payload_sha256": _snapshot_sha256(row["source_payload_json"]),
+        "row_snapshot_sha256": _snapshot_sha256(
+            {key: row[key] for key in row.keys()}
+        ),
+        "retained_fields_sha256": _snapshot_sha256(
+            {
+                key: row[key]
+                for key in row.keys()
+                if key not in SCOPED_RETRACTION_OBSERVED_MUTABLE_COLUMNS
+            }
+        ),
+    }
+
+
+def _validate_scoped_snapshot(entries, required_keys, errors, prefix):
+    if not isinstance(entries, list) or not entries:
+        errors.append(f"{prefix}: must be a non-empty list")
+        return
+    seen = set()
+    for index, entry in enumerate(entries):
+        item_prefix = f"{prefix}[{index}]"
+        if not isinstance(entry, dict):
+            errors.append(f"{item_prefix}: must be an object")
+            continue
+        for key in required_keys:
+            if key not in entry:
+                errors.append(f"{item_prefix}: missing required field: {key}")
+        identity = entry.get(required_keys[0])
+        if not identity:
+            errors.append(f"{item_prefix}: {required_keys[0]} must not be empty")
+        if identity in seen:
+            errors.append(f"{item_prefix}: duplicate {required_keys[0]}: {identity!r}")
+        seen.add(identity)
+        for key in (
+            "snapshot_sha256",
+            "link_snapshot_sha256",
+            "source_payload_sha256",
+            "row_snapshot_sha256",
+            "retained_fields_sha256",
+        ):
+            if key in entry and not _is_sha256(entry[key]):
+                errors.append(f"{item_prefix}: {key} must be a SHA-256 hex digest")
 
 
 def validate_request(request, errors, prefix):
@@ -37,6 +117,46 @@ def validate_request(request, errors, prefix):
             errors.append(f"{prefix}: target_status must be one of {sorted(SONG_STATUSES)}")
     elif change_type == "retract_song_identity":
         _required(request, "raw_song_name", errors, prefix)
+    elif change_type == "retract_occurrence_song":
+        for field in ("occurrence_id", "occurrence_song_id", "raw_song_name"):
+            _required(request, field, errors, prefix)
+        _validate_scoped_snapshot(
+            request.get("expected_evidence"),
+            ("evidence_id", "url", "snapshot_sha256", "link_snapshot_sha256"),
+            errors,
+            f"{prefix}.expected_evidence",
+        )
+        _validate_scoped_snapshot(
+            request.get("expected_observed"),
+            (
+                "observed_occurrence_song_id",
+                "observed_occurrence_id",
+                "occurrence_song_id",
+                "raw_song_title",
+                "normalized_title",
+                "match_status",
+                "role",
+                "evidence_status",
+                "source_payload_sha256",
+            "row_snapshot_sha256",
+            "retained_fields_sha256",
+            ),
+            errors,
+            f"{prefix}.expected_observed",
+        )
+        for index, entry in enumerate(request.get("expected_observed") or []):
+            if isinstance(entry, dict) and "matched_song_id" not in entry:
+                errors.append(
+                    f"{prefix}.expected_observed[{index}]: missing required field: matched_song_id"
+                )
+        if not _is_sha256(request.get("expected_canonical_sha256")):
+            errors.append(f"{prefix}: expected_canonical_sha256 must be a SHA-256 hex digest")
+        review = request.get("review")
+        if not isinstance(review, dict):
+            errors.append(f"{prefix}.review: must be an object")
+        else:
+            _required(review, "reason", errors, f"{prefix}.review")
+            _required(review, "source_context", errors, f"{prefix}.review")
     elif change_type == "register_song_candidate":
         _required(request, "raw_song_name", errors, prefix)
         _required(request, "target_song_name", errors, prefix)
@@ -296,6 +416,143 @@ def apply_retract_song_identity(conn, request, now):
     }, []
 
 
+def _scoped_evidence(conn, occurrence_song_id):
+    rows = conn.execute(
+        """
+        SELECT e.*, link.occurrence_song_id AS link_occurrence_song_id,
+               link.evidence_id AS link_evidence_id, link.link_status AS link_status,
+               link.confidence AS link_confidence, link.notes AS link_notes
+        FROM occurrence_song_evidence_links AS link
+        JOIN evidence_items AS e ON e.evidence_id = link.evidence_id
+        WHERE link.occurrence_song_id = ?
+        ORDER BY e.evidence_id
+        """,
+        (occurrence_song_id,),
+    ).fetchall()
+    return [
+        {
+            "evidence_id": evidence["evidence_id"],
+            "url": evidence["url"],
+            "snapshot_sha256": _snapshot_sha256(evidence),
+            "link_snapshot_sha256": _snapshot_sha256(
+                {
+                    "occurrence_song_id": row["link_occurrence_song_id"],
+                    "evidence_id": row["link_evidence_id"],
+                    "link_status": row["link_status"],
+                    "confidence": row["link_confidence"],
+                    "notes": row["link_notes"],
+                }
+            ),
+        }
+        for row in rows
+        for evidence in (evidence_snapshot({
+            key: row[key] for key in row.keys() if not key.startswith("link_")
+        }),)
+    ]
+
+
+def _scoped_observed(conn, occurrence_song_id):
+    rows = conn.execute(
+        """
+        SELECT * FROM observed_occurrence_songs
+        WHERE occurrence_song_id = ?
+        ORDER BY observed_occurrence_song_id
+        """,
+        (occurrence_song_id,),
+    ).fetchall()
+    return [observed_snapshot(row) for row in rows]
+
+
+def _require_exact_snapshot(name, expected, actual):
+    if expected != actual:
+        raise ValueError(
+            f"scoped retraction refused: {name} changed since review "
+            f"(expected {len(expected)}, actual {len(actual)})"
+        )
+
+
+def apply_retract_occurrence_song(conn, request, now):
+    """Retract one reviewed canonical row, never a title across every occurrence.
+
+    Every linked evidence item and observed row is supplied by the review request.
+    Comparing whole sets before deleting makes newly collected evidence, changed source
+    content, and partial selections fail closed.
+    """
+    # Lock before reading: snapshot comparison and the destructive DML must see
+    # one write-serialized database state.  Do not commit a caller transaction.
+    if conn.in_transaction:
+        # A caller may have opened a read-only explicit transaction.  This no-op
+        # DML upgrades it to a writer without changing a row.
+        conn.execute("UPDATE occurrence_songs SET updated_at = updated_at WHERE 0")
+    else:
+        conn.execute("BEGIN IMMEDIATE")
+
+    previous_row_factory = conn.row_factory
+    conn.row_factory = sqlite3.Row
+    try:
+        canonical = conn.execute(
+            """
+            SELECT * FROM occurrence_songs
+            WHERE occurrence_song_id = ? AND occurrence_id = ?
+            """,
+            (request["occurrence_song_id"], request["occurrence_id"]),
+        ).fetchone()
+        if not canonical:
+            raise ValueError("scoped retraction refused: occurrence_song_id does not belong to occurrence_id")
+        if canonical["song_title_raw"] != request["raw_song_name"]:
+            raise ValueError("scoped retraction refused: raw_song_name does not exactly match canonical row")
+        if canonical["normalized_title"] != normalize_text(request["raw_song_name"]):
+            raise ValueError("scoped retraction refused: raw_song_name normalization mismatch")
+        if _snapshot_sha256({key: canonical[key] for key in canonical.keys()}) != request["expected_canonical_sha256"]:
+            raise ValueError("scoped retraction refused: canonical row changed since review")
+
+        _require_exact_snapshot(
+            "evidence links",
+            sorted(request["expected_evidence"], key=lambda item: item["evidence_id"]),
+            _scoped_evidence(conn, canonical["occurrence_song_id"]),
+        )
+        _require_exact_snapshot(
+            "observed rows",
+            sorted(request["expected_observed"], key=lambda item: item["observed_occurrence_song_id"]),
+            _scoped_observed(conn, canonical["occurrence_song_id"]),
+        )
+        occurrence_song_id = canonical["occurrence_song_id"]
+        occurrence_id = canonical["occurrence_id"]
+    finally:
+        conn.row_factory = previous_row_factory
+
+    observed_updated = conn.execute(
+        """
+        UPDATE observed_occurrence_songs
+        SET matched_song_id = NULL,
+            occurrence_song_id = NULL,
+            match_status = 'rejected_llm_review',
+            updated_at = ?
+        WHERE occurrence_song_id = ?
+        """,
+        (now, occurrence_song_id),
+    ).rowcount
+    evidence_deleted = conn.execute(
+        "DELETE FROM occurrence_song_evidence_links WHERE occurrence_song_id = ?",
+        (occurrence_song_id,),
+    ).rowcount
+    canonical_deleted = conn.execute(
+        "DELETE FROM occurrence_songs WHERE occurrence_song_id = ? AND occurrence_id = ?",
+        (occurrence_song_id, occurrence_id),
+    ).rowcount
+    if canonical_deleted != 1:
+        raise AssertionError("scoped retraction deleted an unexpected number of canonical rows")
+    return {
+        "request_id": request["request_id"],
+        "change_type": request["change_type"],
+        "occurrence_id": occurrence_id,
+        "occurrence_song_id": occurrence_song_id,
+        "observed_rows_marked_rejected": observed_updated,
+        "evidence_links_retracted": evidence_deleted,
+        "canonical_rows_retracted": canonical_deleted,
+    }, []
+
+
 def apply_register_song_candidate(conn, request, now):
     candidate_request = dict(request, target_status="candidate")
     target = ensure_song(conn, candidate_request, now, force_candidate=True)
@@ -384,6 +641,7 @@ def apply_record_youtube_review_decision(conn, request, now):
 APPLIERS = {
     "merge_song_identity": apply_merge_song_identity,
     "retract_song_identity": apply_retract_song_identity,
+    "retract_occurrence_song": apply_retract_occurrence_song,
     "register_song_candidate": apply_register_song_candidate,
     "record_youtube_review_decision": apply_record_youtube_review_decision,
 }

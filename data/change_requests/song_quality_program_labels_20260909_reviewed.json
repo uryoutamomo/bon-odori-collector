@@ -1,0 +1,911 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "scripts/promote_change_requests_for_review.py",
+  "source_database_sha256": "bad3140892682ae7ab3f6cb19eea82a5179618d4383132fd0f5b9a0327488e0b",
+  "scope": "song_quality_program_labels_20260909_reviewed",
+  "requests": [
+    {
+      "request_id": "song-quality-20260909-ocs_9fff4520f23b9fbf",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_f50ea02c13ee9d07",
+      "occurrence_song_id": "ocs_9fff4520f23b9fbf",
+      "raw_song_name": "1回目の公演",
+      "expected_canonical_sha256": "46c18f345f2bf725928b5fb4e5a758d5e771dc9c46bdca7dfa60db064a048900",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_a87a939ee672d48d",
+          "url": "https://www.youtube.com/watch?v=Iuw5CwPNUxY",
+          "snapshot_sha256": "26b391fec9bb1a21b3fcf85b3f36bbe86ba6adccedde599e1fa0642660263b5d",
+          "link_snapshot_sha256": "6025e734245f4f662514c96994c757e12b40a07ce594b3bc1991efe75e6bc185"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_1a3a9ebe96b9cb03",
+          "observed_occurrence_id": "obsocc_c31b958e51fbaf6c",
+          "occurrence_song_id": "ocs_9fff4520f23b9fbf",
+          "raw_song_title": "1回目の公演(18時30分~)",
+          "normalized_title": "1回目の公演18時30分",
+          "matched_song_id": "song_cand_1e2582081b01c353",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "ca8367e8680eb24095d00e1f3000979d1eade447442481b9720f432e7f44d2e0",
+          "retained_fields_sha256": "7c40f75d2b0271fc6f4a3bae438bbbf6d68ef91f0c21c747b5e2b287260c55a3"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく進行枠。",
+        "source_context": "時刻付き『1回目の公演（18時30分〜）』。開始枠。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_306cdead74cffce0",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_f50ea02c13ee9d07",
+      "occurrence_song_id": "ocs_306cdead74cffce0",
+      "raw_song_name": "2回目の公演",
+      "expected_canonical_sha256": "bf50419c0231e08c9854eb16e007afa5925a6230155fe3c668c9d3fd3a698781",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_91255b2c24fb414e",
+          "url": "https://www.youtube.com/watch?v=Iuw5CwPNUxY",
+          "snapshot_sha256": "d5229a46d8644f24ffae5941d20d81f791e5c90ac44e232351f2d5096af7c0e3",
+          "link_snapshot_sha256": "24214a7302beb75d183617e44fb0a5357f6488dc3a21d76a86855f59efbedf31"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_db9b911d457f1e15",
+          "observed_occurrence_id": "obsocc_c31b958e51fbaf6c",
+          "occurrence_song_id": "ocs_306cdead74cffce0",
+          "raw_song_title": "2回目の公演(18時30分~)",
+          "normalized_title": "2回目の公演18時30分",
+          "matched_song_id": "song_cand_5336ab0b21c6aaeb",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "4cf36b25429aa5252692e914a3986eb4d2e2de7554a1d17ca7d2f96abb421544",
+          "retained_fields_sha256": "349e2c9dfa13aa6d54acb3f870daaeefe842d75c19655b374d0317db80423c61"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく進行枠。",
+        "source_context": "時刻付き『2回目の公演（18時30分〜）』。開始枠。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_a0cdebf191923beb",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_f50ea02c13ee9d07",
+      "occurrence_song_id": "ocs_a0cdebf191923beb",
+      "raw_song_name": "太鼓演奏",
+      "expected_canonical_sha256": "3982b0defc440dfc96782b2843c0f1f0b2ae6e9c47d957bb67bb0de165c6969c",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_bd725f8bceb9bf98",
+          "url": "https://www.youtube.com/watch?v=Iuw5CwPNUxY",
+          "snapshot_sha256": "3c157f3926be0306fcb383a4bac056c5999506c3b6d0f08ec73106b59eeed017",
+          "link_snapshot_sha256": "65896dd9470c5c752f211e009aa91cfbac78ed1be98d08aaeecb9d7d18517c4f"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_d21008d8afd43b11",
+          "observed_occurrence_id": "obsocc_c31b958e51fbaf6c",
+          "occurrence_song_id": "ocs_a0cdebf191923beb",
+          "raw_song_title": "太鼓演奏(白梅太鼓)",
+          "normalized_title": "太鼓演奏白梅太鼓",
+          "matched_song_id": "song_cand_1e011c3dd82ada2f",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "305491b207b2f36b40f133c8225ceeebb1db648642fae5dc4321f6e06e58132e",
+          "retained_fields_sha256": "536c31d12c5d876cf7ef57fb59d53cce965ac07db5227a169b78719efc664efb"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく演奏区分。",
+        "source_context": "『太鼓演奏（白梅太鼓）』と出演団体を伴うステージ項目。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_f9d2b59790d5204d",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_47fe4ad246321896",
+      "occurrence_song_id": "ocs_f9d2b59790d5204d",
+      "raw_song_name": "AMEMIYA",
+      "expected_canonical_sha256": "2a5c68fc43f4714c7e82af9b22f23ecb38ff4c8025926ed792f1db4d19b4f723",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_670a6d296f82225f",
+          "url": "https://www.youtube.com/watch?v=_JCllYmTjr8",
+          "snapshot_sha256": "d1d7134392c485f7dbdb2ae09eecb786c2a36491dbb3aa78ac79e57562029844",
+          "link_snapshot_sha256": "fd3c352aed89718a18dc7bdd3809d32eadd48d3d22e7c04f3c06012f9909cc7e"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_f40f3f02065a081c",
+          "observed_occurrence_id": "obsocc_a86bc741eab29c98",
+          "occurrence_song_id": "ocs_f9d2b59790d5204d",
+          "raw_song_title": "AMEMIYA",
+          "normalized_title": "amemiya",
+          "matched_song_id": "song_cand_e3da6abe86109c69",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "a39cf02739c259dbd478b36814c31e6bf9fe86a363696460b880d4bcd9496d11",
+          "row_snapshot_sha256": "79eae00e259457a2d46d500e31e905ea8174b62bd730e915550bdd81c4d0b631",
+          "retained_fields_sha256": "d0b632f5820e632ada64ac4bf2fd87537c921255b84845c95a1732728a58f1d1"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく出演者。",
+        "source_context": "お笑いライブの時刻項目。AMEMIYAは出演者名。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_659ed2db406eef00",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_47fe4ad246321896",
+      "occurrence_song_id": "ocs_659ed2db406eef00",
+      "raw_song_name": "前説",
+      "expected_canonical_sha256": "379f26638ae7c3645058538dee551cbade768bac27f1a07672883c0601cb5211",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_e932a8fa6e9cdcb3",
+          "url": "https://www.youtube.com/watch?v=_JCllYmTjr8",
+          "snapshot_sha256": "d103d746ca189696a8094856843d11e4282a238de5c9c1e82493139edd7eed44",
+          "link_snapshot_sha256": "298bcc46a5bdf41d86e0cbb421cb5fb203b5941379dc06d7251c436cf74bc3dd"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_5c7385321b0c8e32",
+          "observed_occurrence_id": "obsocc_a86bc741eab29c98",
+          "occurrence_song_id": "ocs_659ed2db406eef00",
+          "raw_song_title": "前説",
+          "normalized_title": "前説",
+          "matched_song_id": "song_cand_2925edaa1e68f336",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "a39cf02739c259dbd478b36814c31e6bf9fe86a363696460b880d4bcd9496d11",
+          "row_snapshot_sha256": "364bed3bef75fe17b5e146ecedb1a6ac98f33d82a360908dc9f8204e699eb815",
+          "retained_fields_sha256": "bb7df0a45b19e93da4c05f6611a9e146385863ab187de2e38aaf94902a600144"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく進行。",
+        "source_context": "お笑いライブの時刻項目『前説』。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_91992d204a039a13",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_47fe4ad246321896",
+      "occurrence_song_id": "ocs_91992d204a039a13",
+      "raw_song_name": "結果発表",
+      "expected_canonical_sha256": "50cc620a0c0dd866c5719af5ae8de7c5997be5057867fa4f6fbef02839699a38",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_da1905c668159ce2",
+          "url": "https://www.youtube.com/watch?v=_JCllYmTjr8",
+          "snapshot_sha256": "a78b8399c6590d98042edd19f30ceb63e2a7076b7c75fe10a33b55e5c8c1afe7",
+          "link_snapshot_sha256": "ae9928c0392f2d35c019c18d7b7b4cd136eafceb241e099716f67a8389e57f2a"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_37bd52b251a36ae6",
+          "observed_occurrence_id": "obsocc_a86bc741eab29c98",
+          "occurrence_song_id": "ocs_91992d204a039a13",
+          "raw_song_title": "結果発表",
+          "normalized_title": "結果発表",
+          "matched_song_id": "song_cand_81ddcf35e8639148",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "a39cf02739c259dbd478b36814c31e6bf9fe86a363696460b880d4bcd9496d11",
+          "row_snapshot_sha256": "d1bb86e4d1ff8222ab312b2869d8705ab34bbdee82d6f373737eaa1aa3f88454",
+          "retained_fields_sha256": "421c1817fca80291bccd4b9e5480b5c2de26aa963bb72ddcc7e304ede7d614b9"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく進行。",
+        "source_context": "お笑いライブの時刻項目『結果発表』。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_2f6089f255a965ad",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_47fe4ad246321896",
+      "occurrence_song_id": "ocs_2f6089f255a965ad",
+      "raw_song_name": "アンコール",
+      "expected_canonical_sha256": "21cff16a22499d67fc4c4fbce126fba29d1ba1ba5ae69ad30aa9ed755bce06e9",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_7e94d6df0cc04821",
+          "url": "https://www.youtube.com/watch?v=liR0FHAcuds",
+          "snapshot_sha256": "c05cc94b218dc85f27770a65dbe2c60243eeb528bfbd035a215ecc84b4753694",
+          "link_snapshot_sha256": "2abf6b53ce7098d99400ba8fb0b77522af5c2e949c4bda13d68b470746fb8e9e"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_20a2dbda9110689d",
+          "observed_occurrence_id": "obsocc_caf13d13e2eb3cfc",
+          "occurrence_song_id": "ocs_2f6089f255a965ad",
+          "raw_song_title": "アンコール",
+          "normalized_title": "アンコール",
+          "matched_song_id": "song_cand_14582fca692b3238",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "e59ca6a2e245331e6c68d2d8537aca61c28cdabd2d10dd0fd0acee532736a383",
+          "retained_fields_sha256": "db60f059a311fae4af9a30be8268fe47de2d555fbb3514eaa452d1664c71195b"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく再演進行。",
+        "source_context": "動画題名はDJ KOOとフィナーレ後のアンコールを示す。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_8103042cceabcda9",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_ad6bd712a4d6aeb6",
+      "occurrence_song_id": "ocs_8103042cceabcda9",
+      "raw_song_name": "アンコール",
+      "expected_canonical_sha256": "395836b74a92804383e8b027c5a81b14d3ea32853d2d83a8daa78e47502ef43e",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_c6d1b052f76e81bf",
+          "url": "https://www.youtube.com/watch?v=nGu-gyMm1YQ",
+          "snapshot_sha256": "92b7dd725d1e029e5315510c5731ad15c7898a2f2a90be4a8383df9ef1c7a525",
+          "link_snapshot_sha256": "ee455c9a99f14cd03a28bcc3cea511a1a2e19e7e3de1fcce543c94d2c20c25f3"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_e0e617ea3cb8ab65",
+          "observed_occurrence_id": "obsocc_ac111f17d8a17a57",
+          "occurrence_song_id": "ocs_8103042cceabcda9",
+          "raw_song_title": "アンコール",
+          "normalized_title": "アンコール",
+          "matched_song_id": "song_cand_14582fca692b3238",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "b9d41a8125dc9605af7927bcea219664392385ebcc5cf5e477a79fa458a2f227",
+          "retained_fields_sha256": "d4d8a8f292c709c6b6db1bd0db9a8c26a3de063c0717e3ddc80a98058dfe506e"
+        }
+      ],
+      "review": {
+        "reason": "同じ曲の1回目と2回目の間にある03:27の再演要求の章。曲名は前後ともultra soul。",
+        "source_context": "同じ曲の1回目と2回目の間にある03:27の再演要求の章。曲名は前後ともultra soul。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_a52713d5b59784b6",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_48ddfc15fd4a2cb1",
+      "occurrence_song_id": "ocs_a52713d5b59784b6",
+      "raw_song_name": "アンコール",
+      "expected_canonical_sha256": "de08299f1a08874bbbb02c6078919c65090b812df89c1d5262d0780ca10a1305",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_a4c49370767a48cb",
+          "url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
+          "snapshot_sha256": "3908a7703480de57328e410d19511a5a4fa8be8ff18c57b6682bba7624a8a282",
+          "link_snapshot_sha256": "816e6109a4f3f603947026729d57d502332c345289b89dfe896a409d73e73c8e"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_629ea64e1a60be95",
+          "observed_occurrence_id": "obsocc_b564f5eccc2d1a97",
+          "occurrence_song_id": "ocs_a52713d5b59784b6",
+          "raw_song_title": "アンコール",
+          "normalized_title": "アンコール",
+          "matched_song_id": "song_cand_14582fca692b3238",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "17a0ae6093a2c68641f54c7ddd4ed398e6087ea08297e6599bbbda6eeaa104a1",
+          "retained_fields_sha256": "cf9f572dda7e78d5e18b63c9afd5965f0432fdb30be4185cb863158fca2e7c2f"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく再演進行。",
+        "source_context": "『ultra soul』の後の時刻項目『アンコール』。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_d2d9242bec1eb0cc",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_090e320504061682",
+      "occurrence_song_id": "ocs_d2d9242bec1eb0cc",
+      "raw_song_name": "アンコール",
+      "expected_canonical_sha256": "747407bd43d596bdfe21a661c0702e78bc629262918109a86d1a969968b716d1",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_0f781824fe732345",
+          "url": "https://www.youtube.com/watch?v=gNT-uZbbI04",
+          "snapshot_sha256": "5ed96b3882462c047cb8a742cd70cf305285193f76fa13d727ee648f0737b565",
+          "link_snapshot_sha256": "c0664ce0e63113e056b4f63097152fda3afcf8dcabbaadb39d42e531f5f36d25"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_6de69d4b85d7d4ba",
+          "observed_occurrence_id": "obsocc_e70305143ca52c94",
+          "occurrence_song_id": "ocs_d2d9242bec1eb0cc",
+          "raw_song_title": "アンコール",
+          "normalized_title": "アンコール",
+          "matched_song_id": "song_cand_14582fca692b3238",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "1a956184c92297418023bc57ba8ad23a9b253577c1a564c7308c7760b96bc548",
+          "retained_fields_sha256": "ed7438c2bf6b280a2b1203901e38db8c5bbc85d754291d9a5ab4895ba3e0396e"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく再演進行。",
+        "source_context": "題名は『炭坑節』を曲名として引用し、末尾のアンコールは出来事。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_1c3d3d3adb325fe8",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_090e320504061682",
+      "occurrence_song_id": "ocs_1c3d3d3adb325fe8",
+      "raw_song_name": "音楽ストップ",
+      "expected_canonical_sha256": "38969c33c3cf1900e34bfdc9fedc65f49b5991672a0ee92a0466207ab5651e9d",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_7c68356a9ec27dd5",
+          "url": "https://www.youtube.com/watch?v=gNT-uZbbI04",
+          "snapshot_sha256": "d0ee81b06a3fabd0e4103a4dfdfc672a2c81387e2284a622f6a1fca2cc12061d",
+          "link_snapshot_sha256": "37ca4fd97767d4a1a43f9099886a141654714087f46c45347c56b719a6ee9f3a"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_249c30ab648f8a71",
+          "observed_occurrence_id": "obsocc_e70305143ca52c94",
+          "occurrence_song_id": "ocs_1c3d3d3adb325fe8",
+          "raw_song_title": "音楽ストップ",
+          "normalized_title": "音楽ストップ",
+          "matched_song_id": "song_cand_b1b65045a66be10e",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "259a92ee3ad7278dbd2d1389183eaa85b5ad76320b856f6b4133bfac5959f1c3",
+          "retained_fields_sha256": "517801149d22553d736449066f906046d55f5cccc2f1e6a184a80ab61d45f46a"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなくトラブルと対応。",
+        "source_context": "題名の『暑さで音楽ストップも生唄に切替』。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_b6b175419e0ceb70",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_ad6bd712a4d6aeb6",
+      "occurrence_song_id": "ocs_b6b175419e0ceb70",
+      "raw_song_name": "ゴジラフィギュア",
+      "expected_canonical_sha256": "1ecde2c7f38cabfbb345e2f708d578809f4988d9edacea50ba555b6076f816c2",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_3b6dbfc8dbf5c9a7",
+          "url": "https://www.youtube.com/watch?v=nGu-gyMm1YQ",
+          "snapshot_sha256": "569edb28c19c13445ae3ea1c5c38d32dddf60a90b094f06e3744f94f91c50033",
+          "link_snapshot_sha256": "a61ffdc1b318d71e9a5491509f333b15e8efbcc4c2ba6134d138ac4dcd201253"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_b6edb04d6505b131",
+          "observed_occurrence_id": "obsocc_ac111f17d8a17a57",
+          "occurrence_song_id": "ocs_b6b175419e0ceb70",
+          "raw_song_title": "ゴジラフィギュア",
+          "normalized_title": "ゴジラフィギュア",
+          "matched_song_id": "song_cand_2e8a4a5e10fa2d06",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "ffa13dccf5e31400ebae33ab1f6c35978f9972d93e2b357485b90a35cde9f4de",
+          "retained_fields_sha256": "733da10a1594f0b00b73d975e7403b4a31e5a0a50f1e6592836e6e8ff7b5eee8"
+        }
+      ],
+      "review": {
+        "reason": "ultra soulの再演後、09:48に置かれた物品名の章見出し。原文の章構成から情景・物品のラベルと判断した。映像を視聴した判定ではない。",
+        "source_context": "ultra soulの再演後、09:48に置かれた物品名の章見出し。原文の章構成から情景・物品のラベルと判断した。映像を視聴した判定ではない。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_6ebcfd257e32d244",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_bce4bf06d478ea22",
+      "occurrence_song_id": "ocs_6ebcfd257e32d244",
+      "raw_song_name": "ハイライト",
+      "expected_canonical_sha256": "17e630b0dd88eded2a9d779f4711ca73eaa33dc984993c054941f1302654b6d0",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_36b978cc578ea66a",
+          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+          "snapshot_sha256": "93eb4bf8ab52bede80211e6abda0213e3790965a08fd18164e06e01847597dbb",
+          "link_snapshot_sha256": "8c096b6ac4a6dce37e023afc3f52aa7ab089a7b168f43c424aa159fb16c6e1e8"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_b9f58f6bcabf2ea5",
+          "observed_occurrence_id": "obsocc_eb9fbb18fb98197d",
+          "occurrence_song_id": "ocs_6ebcfd257e32d244",
+          "raw_song_title": "ハイライト",
+          "normalized_title": "ハイライト",
+          "matched_song_id": "song_cand_15668bc4f2e9f827",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "d7f8e1aeb3a03b82a50efcf997c889cf1a5efef7ac9d4832c364d451a2911da8",
+          "retained_fields_sha256": "88fa201ea9d07af1942a0be93195626f87b661f8126c8a62de3435ac794d6ebe"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく動画編集区分。",
+        "source_context": "00:00の導入ハイライトの後に10曲の曲目が続く。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_709d802ef53903a4",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_4ccbc7b0f0c890db",
+      "occurrence_song_id": "ocs_709d802ef53903a4",
+      "raw_song_name": "ミヤシタパーク",
+      "expected_canonical_sha256": "2cc3a9a3c920936ddecff7e21ade145891f2b7bbf63563c25d2dd6ba5119544c",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_7d34ac8cf8dbede4",
+          "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
+          "snapshot_sha256": "ccaa81e3d92c41c4a5bc46b5bba23147d9ac134d5c946565a649b8d60ee17525",
+          "link_snapshot_sha256": "dfbd005e2f2253d50aed6fdd77d4c5744f92c2bd68ddaeb41547fc52adc22cf2"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_f0c911f7b8925a0a",
+          "observed_occurrence_id": "obsocc_f42b6269246837ac",
+          "occurrence_song_id": "ocs_709d802ef53903a4",
+          "raw_song_title": "ミヤシタパーク",
+          "normalized_title": "ミヤシタパーク",
+          "matched_song_id": "song_cand_3376f6633a8b74d0",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "84452a0b9549ef6e08d7764b09c94c262aee54a3dead438447c45e7a5eedd0d7",
+          "retained_fields_sha256": "a198958699daa6fe6abf3b45d78aa68583ed71a49f360040743743215154845f"
+        }
+      ],
+      "review": {
+        "reason": "会場名。",
+        "source_context": "説明は開催場所・イベント名として宮下公園を示す。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_055cf510632bd39d",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_4ccbc7b0f0c890db",
+      "occurrence_song_id": "ocs_055cf510632bd39d",
+      "raw_song_name": "一般参加 阿波踊り",
+      "expected_canonical_sha256": "37e962674788c3381a13585a082b4a9deaa5c8d48c9b57f0150ce91f5b06b595",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_0466a1d21a3b88c0",
+          "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
+          "snapshot_sha256": "af991afdd069ca5d84ce6206df3394e2365a80187d15c925b611de5758d0e2ff",
+          "link_snapshot_sha256": "c2b4ac6009642aa22074213cb3b73946924dea6795019277c0e5c576a8af72d2"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_1cb7ac20b0473303",
+          "observed_occurrence_id": "obsocc_f42b6269246837ac",
+          "occurrence_song_id": "ocs_055cf510632bd39d",
+          "raw_song_title": "一般参加 阿波踊り",
+          "normalized_title": "一般参加阿波踊り",
+          "matched_song_id": "song_cand_a150dc2f2ce8d9ce",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "daa0e671b7e0ecca95187a6cfded605cf72cc1b5f4eed50b84d14ef7c3182b7d",
+          "retained_fields_sha256": "a75020cdaf7f5aa00d21d5bb574ffbd04c04f67af42b69b32e76ddac5594b117"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく参加プログラム。",
+        "source_context": "飛鳥連の演舞後、観客も一緒に阿波踊りをした参加枠。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_59e314f8855090bb",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_4ccbc7b0f0c890db",
+      "occurrence_song_id": "ocs_59e314f8855090bb",
+      "raw_song_name": "渋谷スクランブル交差点",
+      "expected_canonical_sha256": "e8ef6e88ff161eb69caf8f0050724d553606599cc3e561c4db2673f9adb04978",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_5a7482d4359709f4",
+          "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
+          "snapshot_sha256": "8bfc3e4f6521d22ece670c246bce54cfac985b52a4ec9c70b0fdf21d7a31f176",
+          "link_snapshot_sha256": "9403ff6154bce996f4ce79e44e4aa998efa5d3ad588be1af1a15bc64fc9009c2"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_baa4eb77fe5d2e73",
+          "observed_occurrence_id": "obsocc_f42b6269246837ac",
+          "occurrence_song_id": "ocs_59e314f8855090bb",
+          "raw_song_title": "渋谷スクランブル交差点",
+          "normalized_title": "渋谷スクランブル交差点",
+          "matched_song_id": "song_cand_9f1c9035491f0280",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "93be03eea9fa97a96c29efeed6bf0f55c7db092d206cbff9277c57c019b7aaa9",
+          "retained_fields_sha256": "3e70735e0b8da2d65a16a1b003c137430c1e3ec6ba642a09b08963a8382b8082"
+        }
+      ],
+      "review": {
+        "reason": "0:13の交差点の場所紹介。次が会場、3:53以降が演舞であり、演舞前の景観の章。",
+        "source_context": "0:13の交差点の場所紹介。次が会場、3:53以降が演舞であり、演舞前の景観の章。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_75503b91ca24cddf",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_4ccbc7b0f0c890db",
+      "occurrence_song_id": "ocs_75503b91ca24cddf",
+      "raw_song_name": "阿波踊り 飛鳥連",
+      "expected_canonical_sha256": "5d5c50ad8821b8b59c241fa46c91a637148243c40e07e6e1aa5473ad550b8f8a",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_fbe2404c86d74d16",
+          "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
+          "snapshot_sha256": "a49629cb8523f81dd933d64f1cf4c00afa3486cc0104bac87bedadca76af1127",
+          "link_snapshot_sha256": "d19934ca8220af36c1fb562750f5fa5daf6aee7c50deddc1d5f6c9543acc7b31"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_a5d41a5b44567bc2",
+          "observed_occurrence_id": "obsocc_f42b6269246837ac",
+          "occurrence_song_id": "ocs_75503b91ca24cddf",
+          "raw_song_title": "阿波踊り 飛鳥連",
+          "normalized_title": "阿波踊り飛鳥連",
+          "matched_song_id": "song_cand_b74c3cdbf2d5fb87",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "b807111a22615d1562134e8e24fdfad0ef5ef3678c4b44f2d374278472e39937",
+          "retained_fields_sha256": "b121c043cee5a30308354f528611d95e7863a04ac0693e092c7b91c0ce64f3a4"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく出演連。",
+        "source_context": "高円寺連協会所属の飛鳥連が演舞を披露。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_297ef879201a0f8b",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_4ccbc7b0f0c890db",
+      "occurrence_song_id": "ocs_297ef879201a0f8b",
+      "raw_song_name": "阿波踊りレッスン",
+      "expected_canonical_sha256": "51f92a7fef671203109378642cd482095107c6725aa5c0595b260590f31ef512",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_c9afc0faf3e62a5d",
+          "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
+          "snapshot_sha256": "e1cf67a841e13e851a49a5febf84d2777bba29cc6c6bb1c48bba3007dd244285",
+          "link_snapshot_sha256": "422801e8ba6fb17294df1b1e063273e9cd4554108a22c3a30f2bc14d462043b3"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_7e8b97cf9a71a141",
+          "observed_occurrence_id": "obsocc_f42b6269246837ac",
+          "occurrence_song_id": "ocs_297ef879201a0f8b",
+          "raw_song_title": "阿波踊りレッスン",
+          "normalized_title": "阿波踊りレッスン",
+          "matched_song_id": "song_cand_47c705f5a4a14610",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "109bfa2b89ae88f03f8f89bf44a80260722001da843aef9e67d7ffb378cd768f",
+          "retained_fields_sha256": "8c2ada12cea87f63eb16adc51c097a4268a19ed9ef5b8baf9c047fb01652428e"
+        }
+      ],
+      "review": {
+        "reason": "9:33の練習・体験枠。投稿者の英訳もpracticeで、次が一般参加の演舞。独立した曲名ではない。",
+        "source_context": "9:33の練習・体験枠。投稿者の英訳もpracticeで、次が一般参加の演舞。独立した曲名ではない。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_16631eae8fabba8c",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_56d48c1deeded4ab",
+      "occurrence_song_id": "ocs_16631eae8fabba8c",
+      "raw_song_name": "三本締め",
+      "expected_canonical_sha256": "0a4f899206dd2a32df1ceda4ef334ebd9c40e6067927e53441f9367f54480952",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_889a33851bd97af6",
+          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
+          "snapshot_sha256": "08c57a95f2de0f52da1c5bc37248b6a4052d6880e7972b860ef9e7b2463a4d26",
+          "link_snapshot_sha256": "aa5767bdf1d6f5b91f0f2166e149456a54ca4f5cbbaf6173730ec2bfb3dbe06a"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_b07a780c96772bff",
+          "observed_occurrence_id": "obsocc_d6a67f194bfd7d42",
+          "occurrence_song_id": "ocs_16631eae8fabba8c",
+          "raw_song_title": "三本締め",
+          "normalized_title": "三本締め",
+          "matched_song_id": "song_cand_18511b104dde69fc",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "129c20e642a19baca72c7a61b0f65d572aa1c071b9ceb496d09cca6cf0ecf5b2",
+          "retained_fields_sha256": "74b83d588c4cb49e578e62eae96fe0626a76e07168d6d495580ae4639e4c0169"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく締めの儀礼。",
+        "source_context": "実曲時刻列の最後に『三本締め』。動画題名も最終日フィナーレ。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_319ba45b5befa74d",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_ec5e648358bf8afc",
+      "occurrence_song_id": "ocs_319ba45b5befa74d",
+      "raw_song_name": "会場様子",
+      "expected_canonical_sha256": "2906ac3dc1e44e1844f56e68fa8757820913df9e379cf39488b9e705bb80d6b1",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_1cb9547dd3b54636",
+          "url": "https://www.youtube.com/watch?v=lgTsSlUBHUc",
+          "snapshot_sha256": "b03f9aa8af1ace5c7d4983049e39a60008bb36f3b05c9c1d9934d786f52f9e76",
+          "link_snapshot_sha256": "647808a86819c51ac7462802094444d1b42242c1d477e85dede6d168849f1882"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_f740ee55f572c2b3",
+          "observed_occurrence_id": "obsocc_cfdaddbd46479c58",
+          "occurrence_song_id": "ocs_319ba45b5befa74d",
+          "raw_song_title": "会場様子",
+          "normalized_title": "会場様子",
+          "matched_song_id": "song_cand_06e6ef1e702fa704",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "bfebe3d3b183bf9b3c863bd6c402cd173ce77c4f4feda1eb9117dff361626f21",
+          "retained_fields_sha256": "edc5b776d95407d37a27c029294c8855a5363963e6f34df9e446c9ae692f2f91"
+        }
+      ],
+      "review": {
+        "reason": "0:13の会場紹介。投稿者の英訳がvenue atmosphereで、最初の曲は4:45の東京音頭。",
+        "source_context": "0:13の会場紹介。投稿者の英訳がvenue atmosphereで、最初の曲は4:45の東京音頭。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_97951b2caad2aec9",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_368d6231a208af34",
+      "occurrence_song_id": "ocs_97951b2caad2aec9",
+      "raw_song_name": "山中一平",
+      "expected_canonical_sha256": "5bccec90dcc03b0bb1332bee54c379ab9ae932f0a0830e029b1831212e46425f",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_98dc6ba36bc5bd32",
+          "url": "https://www.youtube.com/watch?v=QznGUNIdJKY",
+          "snapshot_sha256": "0d504c71594d3314c501c5c10f281ee643daf32f2e341f07804446ff32461697",
+          "link_snapshot_sha256": "9906317d2cbcde9741a83c128fcb4928e75d3116539ba259b23b3353c225f2d9"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_8cab546afbfc36c1",
+          "observed_occurrence_id": "obsocc_cd3f4251bca53ea8",
+          "occurrence_song_id": "ocs_97951b2caad2aec9",
+          "raw_song_title": "山中一平",
+          "normalized_title": "山中一平",
+          "matched_song_id": "song_cand_d62f2d9dff6183dc",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "a39cf02739c259dbd478b36814c31e6bf9fe86a363696460b880d4bcd9496d11",
+          "row_snapshot_sha256": "5b622cb992fe14e4e1fdbc5a85704e55429e4a05e09aabbc5b91856fc8919d50",
+          "retained_fields_sha256": "93a936ea39553754ed30232de0d39faa6c30250df6ab23eb4d6352190048a6ac"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく出演者。",
+        "source_context": "『江州音頭』の出演者列で、時刻23:22に山中一平。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_b45939a53bf357d8",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_ce162e8dbe6cdf52",
+      "occurrence_song_id": "ocs_b45939a53bf357d8",
+      "raw_song_name": "エガちゃん",
+      "expected_canonical_sha256": "77d75abb5d4941d8f67b82a1524ed7576f5b379e9fd295b07fcdfb425de5837c",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_c1c8ded0a5abb731",
+          "url": "https://www.youtube.com/watch?v=giMeVQxY56g",
+          "snapshot_sha256": "b2ef50b692d837b76849ac24968de730296cd31893fc26e5574cb61ba77067fc",
+          "link_snapshot_sha256": "a9c3156e0db10dd607a51fae2a834a3b3a36fec78321e0d2ba18204c4f76d4fb"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_b8d81555f4cad76e",
+          "observed_occurrence_id": "obsocc_f7637f12630b64c1",
+          "occurrence_song_id": "ocs_b45939a53bf357d8",
+          "raw_song_title": "エガちゃん",
+          "normalized_title": "エガちゃん",
+          "matched_song_id": "song_cand_1d935dcbad7d8b7c",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "4817b55148668daa29985db9a3ba3c76402e3ebef6372675c8c0da357fa8584b",
+          "retained_fields_sha256": "233fca7dc5a7daa89d63ac4570caa4537a4967d5cc3536ece80cd488bd98c3fc"
+        }
+      ],
+      "review": {
+        "reason": "元動画の04:45は人物名の章。同日同会場の別の現地動画fZgzboRUq8Qがスペシャルゲストとしてのエガちゃん出演を明記し、曲名としての誤抽出と判断した。",
+        "source_context": "元動画の04:45は人物名の章。同日同会場の別の現地動画fZgzboRUq8Qがスペシャルゲストとしてのエガちゃん出演を明記し、曲名としての誤抽出と判断した。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    },
+    {
+      "request_id": "song-quality-20260909-ocs_2c0a44ff60b92702",
+      "change_type": "retract_occurrence_song",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "occurrence_song_id": "ocs_2c0a44ff60b92702",
+      "raw_song_name": "雨にて途中終了",
+      "expected_canonical_sha256": "a184ecadffbc189aa983a1c142e9c3f844a5d551b94a5e10b44f4755e26f0c9c",
+      "expected_evidence": [
+        {
+          "evidence_id": "ev_404d6342428d572f",
+          "url": "https://www.youtube.com/watch?v=Pl3HQ86O2Hk",
+          "snapshot_sha256": "bd2c2e56e885228aa5448f5f9c179b4accfd86e9d14bab60e5b0ae11e4fd695e",
+          "link_snapshot_sha256": "be32f940a32258f9a1c0b855d6a8bc8de31d2f14b176a13b07ac97c6c5e1e7d8"
+        }
+      ],
+      "expected_observed": [
+        {
+          "observed_occurrence_song_id": "obsocs_e7bbafb8e9c786ff",
+          "observed_occurrence_id": "obsocc_f9d4f5a8de133faa",
+          "occurrence_song_id": "ocs_2c0a44ff60b92702",
+          "raw_song_title": "雨にて途中終了",
+          "normalized_title": "雨にて途中終了",
+          "matched_song_id": "song_cand_7912a3b76b4b2e0f",
+          "match_status": "matched_song",
+          "role": "result",
+          "evidence_status": "observed",
+          "source_payload_sha256": "fc9f027408dadfdb560dc309ef1b7ee2343d1365e11a6da7d1312bfef418f3e0",
+          "row_snapshot_sha256": "6bd31a8a1841032de471c7b1385d503e0e4b558433b32635547127e23276e894",
+          "retained_fields_sha256": "73e7758585fc7ac435426c04ddb5982e69627050b3ec81fe93f4e7b010e50d2e"
+        }
+      ],
+      "review": {
+        "reason": "曲名でなく開催中断。",
+        "source_context": "既知の実曲時刻列の後に『雨にて途中終了』。"
+      },
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+      "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。"
+    }
+  ],
+  "source_generated_by": "source-reviewed scoped retraction preparation",
+  "reviewed_by": "おと（Codex）",
+  "reviewed_at": "2026-09-09T04:53:17.502732+00:00",
+  "review_note": "23行の開催回・全出典・観測を固定DBへ照合。取得済み一次資料と正規YouTube APIの説明欄で進行・人物・場所ラベルを個別確認。code独立レビューの2指摘修正後に再合格。DBコピーのdry-run・全テーブル差分・公開4出力・観測再取込を検証。本番操作のGOとは別の内容レビュー。",
+  "source_request_count": 23,
+  "approved_request_count": 23
+}

@@ -31,6 +31,12 @@ CHAPTER_NON_SONG_RE = re.compile(
     r"^(?:OP|OPENING|END|ENDING|会場(?:雰囲気)?|屋台|フード|休憩|トーク|MC)(?:\b|[・／/]|$)",
     re.I,
 )
+CHAPTER_PROGRAM_RE = re.compile(
+    r"^(?:[0-9]+回目の公演(?:\s*\([^)]*\))?"
+    r"|太鼓演奏(?:\s*\([^)]*\))?"
+    r"|会場(?:の)?様子|音楽ストップ|三本締め|結果発表|前説"
+    r"|雨にて途中終了|阿波踊りレッスン|一般参加\s+阿波踊り)$"
+)
 EVENT_LINE_STOP_RE = re.compile(r"^[0-9０-９]{1,2}\s*\S.*https?://")
 PARENS_RE = re.compile(r"[「」『』【】\[\]（）()]")
 SPACE_RE = re.compile(r"\s+")
@@ -201,7 +207,8 @@ def extract_chapter_setlist(text, video_url=""):
             continue
         timestamp, raw_title = match.groups()
         title = chapter_title(raw_title)
-        if not title or CHAPTER_NON_SONG_RE.search(title) or EVENT_CONTEXT_RE.search(title):
+        if (not title or CHAPTER_NON_SONG_RE.search(title)
+                or CHAPTER_PROGRAM_RE.fullmatch(title) or EVENT_CONTEXT_RE.search(title)):
             continue
         if not title_looks_like_song(title):
             continue

@@ -539,16 +539,27 @@ def apply_occurrence(conn, occurrence, now):
             continue
         normalized = normalize_text(title)
         role = "result"
+        observed_occurrence_song_id = stable_id("obsocs", observed_occurrence_id, normalized, role)
+        prior_observation = conn.execute(
+            "SELECT match_status FROM observed_occurrence_songs WHERE observed_occurrence_song_id = ?",
+            (observed_occurrence_song_id,),
+        ).fetchone()
         # ラベル除去は曲名の解決にだけ使う。observed 層は生の証拠を保つ設計で、
         # observed_occurrence_song_id も生タイトル由来なので、ここを書き換えると
         # 既存行と重複した行が増えて冪等性が崩れる。
-        song_id, display_title, verdict = resolve_song(
-            conn,
-            strip_shared_label(title, shared_label),
-            venue_name,
-            now,
-            register_candidate=bool(matched_occurrence_id),
-        )
+        # A reviewed rejection belongs to this observation, not to every song
+        # with the same title. Preserve raw evidence below, but do not promote
+        # the rejected observation again (even when a candidate song remains).
+        if prior_observation and prior_observation[0] == "rejected_llm_review":
+            song_id, display_title, verdict = None, None, "rejected"
+        else:
+            song_id, display_title, verdict = resolve_song(
+                conn,
+                strip_shared_label(title, shared_label),
+                venue_name,
+                now,
+                register_candidate=bool(matched_occurrence_id),
+            )
         if verdict == "candidate_new":
             candidate_song_count += 1
         occurrence_song_id = None
@@ -622,7 +633,6 @@ def apply_occurrence(conn, occurrence, now):
         elif verdict == "rejected":
             rejected_title_count += 1
 
-        observed_occurrence_song_id = stable_id("obsocs", observed_occurrence_id, normalized, role)
         conn.execute(
             """
             INSERT OR IGNORE INTO observed_occurrence_songs(

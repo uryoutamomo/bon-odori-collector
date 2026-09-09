@@ -77,7 +77,9 @@ R2本体では `project_public_events()` の入力読込・意味計算・出力
 コードを固定して比較する検査の代わりにはしない。
 
 曲名への進行ラベル混入は別のデータ修正として扱う。元DBの曲行・evidence・同名の
-全影響範囲を確認し、既存 `retract_song_identity` へのreviewed change requestと
+全影響範囲を確認する。曲名単位の `retract_song_identity` は別開催回の同名実曲も
+撤回するため、出典文脈に依存する修正には使わない。開催回の曲行と全出典・観測の
+レビュー時点を固定する `retract_occurrence_song` のreviewed change requestと
 dry-runで修正する。修正前後の入力組を別々に保存し、意図した曲目変更をR2の
 純粋な構造整理の差分ゼロ条件へ混ぜない。
 

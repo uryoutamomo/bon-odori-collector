@@ -46,6 +46,7 @@ invariants:
   - INV-MST-013
   - INV-MST-014
   - INV-MST-015
+  - INV-MST-016
 verified_by:
   - tests/test_apply_change_requests.py
   - tests/test_master_db_s3_artifact.py
@@ -60,7 +61,8 @@ verified_by:
   - tests/test_reviewed_change_requests_workflow.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
-updated_for: 06049ba
+  - tests/test_scoped_song_retraction.py
+updated_for: 68cd2f5
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -105,7 +107,7 @@ updated_for: 06049ba
 
 - **内容**: `report_apply/apply_change_requests.py` が受け付ける変更は
   `create_current_year_occurrence` / `confirm_current_year_date` / `add_historical_reference` /
-  `update_venue` / `add_song_evidence` に限られる（`CHANGE_TYPES`）。
+  `update_venue` / `add_song_evidence` / `retract_occurrence_song` に限られる（`CHANGE_TYPES`）。
   未知の種別は検証で弾かれ、自由記述のパッチは受け付けない。
 - **なぜ**: 「何でも書ける口」を1つ用意すると、種別ごとに必要な根拠を強制できなくなるから。
   種別を絞ることで、たとえば「今年の開催日を確定する」には今年のソースが要る、という規則を機械が守れる。
@@ -113,6 +115,27 @@ updated_for: 06049ba
   イベント個別の `apply_*.py` が増殖し、それぞれ違う検証をするようになる。
 - **守っているコード**: `report_apply/apply_change_requests.py` の `CHANGE_TYPES` と検証処理
 - **守っているテスト**: `tests/test_apply_change_requests.py::test_applies_four_finite_change_types`
+
+### INV-MST-016 曲目の撤回は開催回・根拠・観測行を固定してからだけ行う
+
+- **内容**: `retract_occurrence_song` は `occurrence_id` と `occurrence_song_id`、元の曲名、
+  canonical行のSHA-256、リンク済み根拠全件（根拠内容とリンク状態のSHA-256）、リンク済み観測行全件
+  （適用前の全行SHA-256と、適用後に変更を許す4列を除いた保持列SHA-256）を要求する。適用時にいずれかが
+  レビュー時の集合・内容と異なれば変更せず失敗する。照合開始前にSQLiteの書込みロックを取得し、照合と撤回を
+  同じトランザクションで行う。
+  一致した場合だけ対象のcanonical曲行と根拠リンクを消し、その行にリンクされた観測行だけを
+  `rejected_llm_review` にする。raw観測・根拠item・曲辞書・別開催回の同名曲は残す。
+- **なぜ**: タイトルだけで撤回すると、別年の同じ祭りや別会場の同名実曲まで消える。レビュー後に根拠や
+  観測が増えた場合も、古い判断だけで新しい事実を捨ててはならない。
+- **破れたときの症状**: ある開催回のノイズを取り除いた後、別開催回の実曲が公開から消える／後から見つかった
+  出典が理由なく消え、raw層から追跡できなくなる。
+- **守っているコード**: `report_apply/review_backlog_change_requests.py` の
+  `apply_retract_occurrence_song()`、`scripts/verify_review_backlog_application.py` の `verify()`
+- **守っているテスト**: `tests/test_scoped_song_retraction.py::test_scoped_retraction_only_changes_the_reviewed_occurrence_and_preserves_raw_rows`、
+  `tests/test_scoped_song_retraction.py::test_scoped_retraction_fails_closed_without_mutation`、
+  `tests/test_scoped_song_retraction.py::test_verifier_rejects_any_retained_observed_field_mutation`、
+  `tests/test_scoped_song_retraction.py::test_verifier_rejects_an_unknown_retained_observed_column`、
+  `tests/test_scoped_song_retraction.py::test_scoped_retraction_locks_before_snapshot_and_preserves_caller_transaction`
 
 ### INV-MST-002 今年の開催日の確定には、今年のソースを要求する
 
