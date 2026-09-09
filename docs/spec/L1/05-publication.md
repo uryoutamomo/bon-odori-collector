@@ -34,7 +34,7 @@ verified_by:
   - tests/test_apply_public_date_predictions.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_compare_public_export_postprocessors.py
-updated_for: 68cd2f5
+updated_for: 0389e83
 ---
 
 # 公開サブシステム
@@ -290,7 +290,10 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 
 **曲目まわりだけ、約束の置き場所がここではない。** `export_public_events.py` はこの仕様が `owns` しているが、
 その中の `merge_song_occurrence_hints()` と `_song_from_rdb()`（曲の抑制・重複整理・根拠ラベル）が守っているのは
-[曲目サブシステム](08-songs.md)の INV-SNG-001 と INV-SNG-002 である。曲は収集から公開まで縦に貫くドメインなので、
+[曲目サブシステム](08-songs.md)の INV-SNG-001 / INV-SNG-002 / INV-SNG-007 / INV-SNG-008 である。
+過去開催回の曲は、当年カードへの置換を終えた後、`project_retained_historical_songs()` で
+開催回の年から対象年へ換算する。表示日から年を推測せず、当年へ継承済みの確率を二重に減衰させない。
+曲は収集から公開まで縦に貫くドメインなので、
 約束をそちらへ集めてある。**この2つの関数を触るときは、逆引きに出てこなくても 08-songs を開くこと。**
 
 ## 壊れたときの症状

@@ -53,6 +53,7 @@ verified_by:
   - tests/test_song_catalog.py
   - tests/test_weekly_song_triage.py
   - tests/test_export_public_events.py
+  - tests/test_public_song_year_rollover.py
   - tests/test_calibrate_song_probabilities_rdb.py
   - tests/test_inherit_song_probabilities_x_safety.py
   - tests/test_recalculate_song_probabilities_workflow.py
@@ -61,7 +62,7 @@ verified_by:
   - tests/test_x_song_resolution_contract.py
   - tests/test_x_occurrence_resolution_contract.py
   - tests/test_x_song_materialization_lifecycle.py
-updated_for: a47769f
+updated_for: 0389e83
 ---
 
 # 曲目サブシステム
@@ -141,13 +142,18 @@ updated_for: a47769f
 - **内容**: `occurrence_songs` の行を公開形へ変換するとき、`evidence_status` と `inherited_from_year` から
   `basis` / `basis_label` を決める。今年告知は「今年告知」、実測は「実測」、今年のヒントだけなら「今年ヒント」、
   過去年からの継承なら継承元の年と種別（「2025年実測」など）を出す。
+  公開に残る過去開催回は、その開催回の年から対象年へ曲目を換算し、直接根拠にも
+  「2025年告知」「2025年実測」「2025年ヒント」のように年を添える。
+  年の判断はRDBの `event_year` を使う。表示日が過去実績日でも当年開催回なら再換算しない。
 - **なぜ**: 曲目には確定・告知・推測が必ず混ざる。ラベルが無ければ、去年踊っていただけの曲が今年の予定に見える。
   実際にRDB移行のとき、今年のヒントしか無い行が「過去実績」と表示される取り違えが起きた。
   逆に継承元の種別を落とすと、前年に実測された曲まで「ヒント」扱いになり、正しい情報の信頼度を不当に下げてしまう。
 - **破れたときの症状**: 公開ページの曲目に付く根拠ラベルが実態とずれる。
   去年の曲が今年の告知として読まれる、または実測済みの曲が推測に見える。
-- **守っているコード**: `export_public_events.py` の `_song_from_rdb()`
-- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_song_from_rdb_labels_basis_by_evidence_status`
+- **守っているコード**: `export_public_events.py` の `_song_from_rdb()` / `project_retained_historical_songs()`
+- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_song_from_rdb_labels_basis_by_evidence_status`、
+  `tests/test_public_song_year_rollover.py::PublicSongYearRolloverTest::test_past_occurrence_without_date_is_aged_from_its_event_year`、
+  `tests/test_public_song_year_rollover.py::PublicSongYearRolloverTest::test_target_or_future_occurrence_with_old_display_date_is_not_aged_or_hidden_from_audit`
 
 ### INV-SNG-003 レビュー未了・無効・状態不明の曲を「確認済み」として扱わない
 
@@ -216,18 +222,26 @@ updated_for: a47769f
   過去の移行行にaccepted根拠リンクが無い場合は、その開催年ですでにレビュー済みの確率を年寄与の代替値として使い、
   同じ話者係数・減衰・年どうしの合算を行う。前年カードを公開カードへ補完する最終フォールバックも、
   生の80%/95%をコピーせず、同じ75%減衰を掛ける。
+  置換されずに残る古い開催回も、開催回の年から対象年まで `0.75 ** 年差` で換算する。
+  直接根拠には話者係数を1回だけ掛け、すでに `past_evidence` の行には追加の年減衰だけを掛ける。
+  丸めは換算の最後に1回、公開フォールバックの範囲は従来どおり5〜90%。
+  当年カードへの置換・曲目補完を終えた後に残存カードを換算し、二重減衰を防ぐ。
+  古い開催回・曲名・根拠ラベルは削除せず、DBと固定入力は書き換えない。
 - **なぜ**: 最新の過去年だけを見ると、毎年続いている曲と1回だけ出た曲が同じ確率になる。
   逆に根拠の本数を年を無視して足すと、同一年の転載や複数動画を連年実績のように数えてしまう。
   現在の75%は実測で確定した係数ではなく暫定の初期値であり、将来の較正とは分けて扱う。
 - **破れたときの症状**: 2年以上連続して踊られた曲の確率が前年だけの曲と同じになる、または
   同じ年の動画が増えただけで連年実績より高くなる。公開根拠ラベルから古い採用年が消える。
-- **守っているコード**: `calibrate_song_probabilities_rdb.py` の `compute_historical_probability()`、
+- **守っているコード**: `export_public_events.py` の `project_retained_historical_songs()` / `_decay_replacement_song()`、
+  `calibrate_song_probabilities_rdb.py` の `compute_historical_probability()`、
   `inherit_song_probabilities_rdb.py` の過去年継承、`song_processing/song_occurrences.py` の凍結旧経路
 - **守っているテスト**: `tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_two_consecutive_years_score_higher_than_latest_year_alone`、
   `tests/test_calibrate_song_probabilities_rdb.py::CalibrateHistoricalSongProbabilityTest::test_legacy_annual_probabilities_also_accumulate_across_years`、
   `tests/test_inherit_song_probabilities_x_safety.py::test_inheritance_combines_direct_evidence_from_multiple_years`、
   `tests/test_inherit_song_probabilities_x_safety.py::test_inheritance_combines_legacy_probabilities_when_links_are_missing`、
-  `tests/test_export_public_events.py::ExportPublicEventsTest::test_previous_year_direct_result_is_decayed_and_keeps_result_label`
+  `tests/test_export_public_events.py::ExportPublicEventsTest::test_previous_year_direct_result_is_decayed_and_keeps_result_label`、
+  `tests/test_public_song_year_rollover.py::PublicSongYearRolloverTest::test_replacement_merge_is_not_aged_twice_while_another_old_series_is_retained`、
+  `tests/test_public_song_year_rollover.py::PublicSongYearRolloverTest::test_inherited_multiyear_label_is_preserved_without_second_speaker_penalty`
 
 ### INV-SNG-008 「確実」相当は当年の直接根拠だけに限定する
 
@@ -236,11 +250,16 @@ updated_for: a47769f
   `current_announced` または `current_observed` の当年開催回に限る。過去実績・看板曲prior・過去年カードは
   数値が90%以上でも「かなり有力」までとする。
 - **なぜ**: 前年のYouTube実測95%が減衰なしで今年へコピーされ、「2025年ヒント」なのに「確実」と表示された。
+  2026-09-09の固定入力では、2027年へ対象年を進めると、それまで置換で隠れていた2025年開催回の
+  `current_hint=95` が再び候補になり、全4出力の書き出しを止めた。過去開催回の曲を対象年へ換算して直す。
+  当年の `current_hint=95` は引き続き監査で拒否し、0〜100の範囲外値も減衰で隠さず拒否する。
   数値だけを見る表示では、推測と直接確認の違いを利用者が判別できない。
 - **破れたときの症状**: 去年しか踊られていない曲や会場の看板曲が「確実」になり、今年の公式曲目より上に並ぶ。
 - **守っているコード**: `export_public_events.py` の `audit_public_song_projection()`、
   `bon-odori-site/app.js` の `songCertaintyLabel()`
-- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_public_song_audit_rejects_indirect_exact_scores`
+- **守っているテスト**: `tests/test_export_public_events.py::ExportPublicEventsTest::test_public_song_audit_rejects_indirect_exact_scores`、
+  `tests/test_public_song_year_rollover.py::PublicSongYearRolloverTest::test_project_public_events_ages_retained_song_in_legacy_and_r2_signatures`、
+  `tests/test_public_song_year_rollover.py::PublicSongYearRolloverTest::test_invalid_probability_is_rejected_before_public_song_audit`
 
 ## 主要な流れ
 
