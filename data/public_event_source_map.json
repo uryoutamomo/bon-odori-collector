@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 387,
-  "mapped_count": 387,
+  "public_event_count": 394,
+  "mapped_count": 394,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -305,11 +305,11 @@
       "venue_id": "ven_746ab78353b23a57"
     },
     {
-      "public_event_key": "アークヒルズ秋祭り 盆踊り|アーク・カラヤン広場（アークヒルズ）||",
+      "public_event_key": "アークヒルズ秋祭り 盆踊り|アーク・カラヤン広場（アークヒルズ）|2026-09-12|2026-09-12",
       "name": "アークヒルズ秋祭り 盆踊り",
       "venue": "アーク・カラヤン広場（アークヒルズ）",
-      "date": "",
-      "date_end": "",
+      "date": "2026-09-12",
+      "date_end": "2026-09-12",
       "source": "master_rdb",
       "occurrence_id": "occ_c7619656781592c0",
       "series_id": "ser_250d7b2950ce3a19",
@@ -437,15 +437,15 @@
       "venue_id": "ven_eebf969aa7da759d"
     },
     {
-      "public_event_key": "白金台どんぐり児童遊園 納涼盆踊り大会|白金台どんぐり児童遊園|2025-09-07|",
+      "public_event_key": "白金台どんぐり児童遊園 納涼盆踊り大会|白金台どんぐり児童遊園|2026-09-06|2026-09-06",
       "name": "白金台どんぐり児童遊園 納涼盆踊り大会",
       "venue": "白金台どんぐり児童遊園",
-      "date": "2025-09-07",
-      "date_end": "",
+      "date": "2026-09-06",
+      "date_end": "2026-09-06",
       "source": "master_rdb",
-      "occurrence_id": "occ_c6080641c46d846a",
+      "occurrence_id": "occ_b3e279c001ef448b",
       "series_id": "ser_65e9579530960384",
-      "event_year": 2025,
+      "event_year": 2026,
       "venue_id": "ven_511a7a9d0635c174"
     },
     {
@@ -521,11 +521,11 @@
       "venue_id": "ven_2b922b1146373c1f"
     },
     {
-      "public_event_key": "赤坂氷川祭 盆踊り大会|赤坂氷川神社||",
+      "public_event_key": "赤坂氷川祭 盆踊り大会|赤坂氷川神社|2026-09-11|2026-09-13",
       "name": "赤坂氷川祭 盆踊り大会",
       "venue": "赤坂氷川神社",
-      "date": "",
-      "date_end": "",
+      "date": "2026-09-11",
+      "date_end": "2026-09-13",
       "source": "master_rdb",
       "occurrence_id": "occ_566324ef4cc023fc",
       "series_id": "ser_c0d3f2ef079eb29e",
@@ -1973,6 +1973,18 @@
       "venue_id": "ven_cc188bf24fed1255"
     },
     {
+      "public_event_key": "BONDANCEフェスティバル|旗の台東口メイン通り|2026-09-19|2026-09-19",
+      "name": "BONDANCEフェスティバル",
+      "venue": "旗の台東口メイン通り",
+      "date": "2026-09-19",
+      "date_end": "2026-09-19",
+      "source": "master_rdb",
+      "occurrence_id": "occ_fcfe99cbc260fc36",
+      "series_id": "series_661f76cb21c98917",
+      "event_year": 2026,
+      "venue_id": "venue_1f1981137d257d6a"
+    },
+    {
       "public_event_key": "旗の台稲荷通り商店会盆踊り 盆ROCK|旗の台稲荷通り商店街|2025-10-18|",
       "name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
       "venue": "旗の台稲荷通り商店街",
@@ -2078,6 +2090,18 @@
       "occurrence_id": "occ_faf96d43cd44df8d",
       "series_id": "ser_766109b5cf85a5af",
       "event_year": 2025,
+      "venue_id": "ven_99338bade7fe3bbe"
+    },
+    {
+      "public_event_key": "品川納涼祭|西大井広場公園|2026-10-03|2026-10-03",
+      "name": "品川納涼祭",
+      "venue": "西大井広場公園",
+      "date": "2026-10-03",
+      "date_end": "2026-10-03",
+      "source": "master_rdb",
+      "occurrence_id": "occ_0688b2fe3ccda2db",
+      "series_id": "series_be99524b90a25e57",
+      "event_year": 2026,
       "venue_id": "ven_99338bade7fe3bbe"
     },
     {
@@ -2871,6 +2895,18 @@
       "series_id": "ser_3873b1682d366b8f",
       "event_year": 2026,
       "venue_id": "ven_6b60c1dff5e10ea0"
+    },
+    {
+      "public_event_key": "氷川神社例大祭 氷川参道櫓まつり|渋谷氷川神社参道|2026-09-12|2026-09-12",
+      "name": "氷川神社例大祭 氷川参道櫓まつり",
+      "venue": "渋谷氷川神社参道",
+      "date": "2026-09-12",
+      "date_end": "2026-09-12",
+      "source": "master_rdb",
+      "occurrence_id": "occ_1954e21bebf147eb",
+      "series_id": "series_801dda7da96bc277",
+      "event_year": 2026,
+      "venue_id": "venue_0b5deded51bde843"
     },
     {
       "public_event_key": "道盆 DOUBON III|渋谷道玄坂教会|2026-08-08|2026-08-08",
@@ -4025,6 +4061,18 @@
       "venue_id": "venue_d0dbbd5bb54a7e5f"
     },
     {
+      "public_event_key": "内手昭和会・親子盆踊り大会|下鎌田小学校|2026-07-25|2026-07-25",
+      "name": "内手昭和会・親子盆踊り大会",
+      "venue": "下鎌田小学校",
+      "date": "2026-07-25",
+      "date_end": "2026-07-25",
+      "source": "master_rdb",
+      "occurrence_id": "occ_d59269ec9a27853c",
+      "series_id": "series_6b9769bcac44c29c",
+      "event_year": 2026,
+      "venue_id": "venue_eb735a488996ce41"
+    },
+    {
       "public_event_key": "宿和会納涼盆踊り大会|下鎌田東小学校|2026-08-22|2026-08-22",
       "name": "宿和会納涼盆踊り大会",
       "venue": "下鎌田東小学校",
@@ -4061,11 +4109,11 @@
       "venue_id": "venue_8bbd8a9537d4eec7"
     },
     {
-      "public_event_key": "今井町会納涼盆踊り大会|八雲神社前広場|2026-08-29|2026-08-29",
+      "public_event_key": "今井町会納涼盆踊り大会|八雲神社前広場|2026-08-30|2026-08-30",
       "name": "今井町会納涼盆踊り大会",
       "venue": "八雲神社前広場",
-      "date": "2026-08-29",
-      "date_end": "2026-08-29",
+      "date": "2026-08-30",
+      "date_end": "2026-08-30",
       "source": "master_rdb",
       "occurrence_id": "occ_856e14213350713d",
       "series_id": "series_17dcf8f2a77a760f",
@@ -4265,6 +4313,18 @@
       "venue_id": "venue_f7627e5a9abe718b"
     },
     {
+      "public_event_key": "山王神社盆踊り|山王神社|2026-07-19|2026-07-19",
+      "name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "date": "2026-07-19",
+      "date_end": "2026-07-19",
+      "source": "master_rdb",
+      "occurrence_id": "occ_31fcdaf3e1cca97f",
+      "series_id": "series_37d65038230a160d",
+      "event_year": 2026,
+      "venue_id": "venue_d530cfa3aec84842"
+    },
+    {
       "public_event_key": "平井一丁目南親会夏祭り|平井一丁目児童遊園|2026-08-22|2026-08-22",
       "name": "平井一丁目南親会夏祭り",
       "venue": "平井一丁目児童遊園",
@@ -4419,6 +4479,30 @@
       "series_id": "series_849fe3c54caf039a",
       "event_year": 2026,
       "venue_id": "venue_4426fc2ae407c711"
+    },
+    {
+      "public_event_key": "椿東町会盆踊り大会|椿ひがし公園|2026-07-19|2026-07-19",
+      "name": "椿東町会盆踊り大会",
+      "venue": "椿ひがし公園",
+      "date": "2026-07-19",
+      "date_end": "2026-07-19",
+      "source": "master_rdb",
+      "occurrence_id": "occ_2deb04ad3d2ad3f6",
+      "series_id": "series_558f34b9f49a1ee9",
+      "event_year": 2026,
+      "venue_id": "venue_c3ccd7764c87cd88"
+    },
+    {
+      "public_event_key": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会|江戸川中央公園|2026-07-25|2026-07-26",
+      "name": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会",
+      "venue": "江戸川中央公園",
+      "date": "2026-07-25",
+      "date_end": "2026-07-26",
+      "source": "master_rdb",
+      "occurrence_id": "occ_cf587f599b7ed96f",
+      "series_id": "series_2ed41a829eea4f68",
+      "event_year": 2026,
+      "venue_id": "venue_f6875a5211227c3a"
     },
     {
       "public_event_key": "西小岩六西自治会盆踊り|江戸川区立福祉作業所|2026-08-21|2026-08-22",

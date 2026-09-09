@@ -3363,6 +3363,103 @@
       "site_sha256": "3881b59318cda7fb2576397c4c0818e003e87044fc931b51ef9ae6f0f37f438d",
       "collector_sha256": "e7823dc113018c7a161307aed64e990cdad2840a8d3f60c4ffb32f8ec00fe11a",
       "reason": "2026-08-22: 開催日を過ぎたことによる表示状態の移行（変更項目: current_event_state, display_tier, public_category）。出典・日付・説明は変わらない。内田さんの指示で出典付与7件を当て直した際の同時差分。"
+    },
+    {
+      "id": "official-refresh-20260909-01",
+      "kind": "same_key_update",
+      "event_key": "アークヒルズ秋祭り 盆踊り||アーク・カラヤン広場（アークヒルズ）",
+      "collector_sha256": "d3ab78675fe7b1b261c8aec63bb3af764cdb0572e865364fa25d8c70cffc1a5b",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。",
+      "site_sha256": "5aff60c36c4ab2f08fd34aef11e12f640a2559bf1d38f8f04ec6c3e1c4ccdbb3"
+    },
+    {
+      "id": "official-refresh-20260909-02",
+      "kind": "same_key_update",
+      "event_key": "今井町会納涼盆踊り大会||八雲神社前広場",
+      "collector_sha256": "ec03a4b944511252fd94445cceb254ec7bde8bd79082fee9f02f9445a2bc39e8",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。",
+      "site_sha256": "cc54b9382c286043fc56d94710cd6bad3d7fd58148467d7116943559c25a13c8"
+    },
+    {
+      "id": "official-refresh-20260909-03",
+      "kind": "same_key_update",
+      "event_key": "白金台どんぐり児童遊園 納涼盆踊り大会||白金台どんぐり児童遊園",
+      "collector_sha256": "4fccd402a96bcfbb83c365dd27b4f981d34ebe7c87aa6b6b6978d3e6c7ee5e31",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。",
+      "site_sha256": "5a5c6ec1b7f028456b9657b895974c8bef02507b1835362af5431a5dae2c5192"
+    },
+    {
+      "id": "official-refresh-20260909-04",
+      "kind": "same_key_update",
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "collector_sha256": "045ceed09c1ce1fee48504138191192bbe881c3561c51c19492989282660e20a",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。",
+      "site_sha256": "eeca29fa41f028acdd8e4640ec6b2f4dfde181a96f61cd7ab5be0b7e7d133e9c"
+    },
+    {
+      "id": "official-refresh-20260909-05",
+      "kind": "addition",
+      "event_key": "BONDANCEフェスティバル||旗の台東口メイン通り",
+      "collector_sha256": "9689546ce0eb18007483a92b400d5b9b8c1749a1bc8d016d6943ecfb830ef341",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-06",
+      "kind": "addition",
+      "event_key": "内手昭和会・親子盆踊り大会||下鎌田小学校",
+      "collector_sha256": "2f04852f9d19ad3f1d9f5ef5119d17f8c5679a24e4680da47a2355847458262f",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-07",
+      "kind": "addition",
+      "event_key": "品川納涼祭||西大井広場公園",
+      "collector_sha256": "9ba53849f20f1374e83613aac14a03f7a6d2b0206e263003e94dd93d379eb95d",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-08",
+      "kind": "addition",
+      "event_key": "山王神社盆踊り||山王神社",
+      "collector_sha256": "2400cc8192b9d83faff877e5aedaf1ea801a327818aa30261b761638a4a00269",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-09",
+      "kind": "addition",
+      "event_key": "椿東町会盆踊り大会||椿ひがし公園",
+      "collector_sha256": "a530af8d099638bb0658fab3aae7cba8af337bf5cceb16eddce5b4fa4dece09b",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-10",
+      "kind": "addition",
+      "event_key": "氷川神社例大祭 氷川参道櫓まつり||渋谷氷川神社参道",
+      "collector_sha256": "e8ec2fd4702cba9d09c896bc565b212828f9a065c50cde58b5ade66ff825d5b3",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-11",
+      "kind": "addition",
+      "event_key": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会||江戸川中央公園",
+      "collector_sha256": "b784e2ceb96ba88fbb924f952443dfdd1144ef413330d8cdc86b97171ff453c8",
+      "reason": "2026-09-09 おと（Codex）: 当年公式資料と独立レビューに基づく11件限定の追加・更新。data/change_requests/official_refresh_20260909_reviewed.json参照。元DBのcopy dry-run/監査/適用後検証に合格。"
+    },
+    {
+      "id": "official-refresh-20260909-history-shirokanedai",
+      "kind": "same_key_update",
+      "event_key": "白金台どんぐり児童遊園 納涼盆踊り大会||白金台どんぐり児童遊園",
+      "site_sha256": "c3838a55702635d3d6119321da37e09aaeb3bee9dbe0f933385e354d69758682",
+      "collector_sha256": "4fccd402a96bcfbb83c365dd27b4f981d34ebe7c87aa6b6b6978d3e6c7ee5e31",
+      "reason": "2026-09-09 おと（Codex）: 旧承認 reviewed-update-renamed-607b86d8a716 の到達値から、今回全項目を確認した2026年公式根拠付きの公開値への追認。現在siteの実値からの差分は official-refresh-20260909 の個別承認で別途固定。旧承認を消さず、同一キー・完全hash一致の後続証跡として残す。"
+    },
+    {
+      "id": "official-refresh-20260909-history-imai",
+      "kind": "same_key_update",
+      "event_key": "今井町会納涼盆踊り大会||八雲神社前広場",
+      "site_sha256": "03d5b6eebbabadc27f804be64b11883046734f64c6b050c07725e7fe339030cc",
+      "collector_sha256": "ec03a4b944511252fd94445cceb254ec7bde8bd79082fee9f02f9445a2bc39e8",
+      "reason": "2026-09-09 おと（Codex）: 旧承認 reviewed-update-20260816-cdc4871dd6a6 の到達値から、今回全項目を確認した2026年公式根拠付きの公開値への追認。現在siteの実値からの差分は official-refresh-20260909 の個別承認で別途固定。旧承認を消さず、同一キー・完全hash一致の後続証跡として残す。"
     }
   ]
 }

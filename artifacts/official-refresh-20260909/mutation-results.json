@@ -1,0 +1,18 @@
+[
+  {
+    "mutation": "detail_cas_removed",
+    "target_matches": 1,
+    "baseline_pass": true,
+    "mutation_detected": true,
+    "failures": 1,
+    "errors": 0
+  },
+  {
+    "mutation": "source_cas_removed",
+    "target_matches": 1,
+    "baseline_pass": true,
+    "mutation_detected": true,
+    "failures": 1,
+    "errors": 0
+  }
+]

@@ -14,6 +14,21 @@
       "current_name": "グリーン アイルランド フェスティバル アイリッシュ盆踊り",
       "current_date": "2026-03-15",
       "current_date_end": null
+    },
+    {
+      "area": "品川区",
+      "venue": "西大井広場公園",
+      "name_similarity": 0.0,
+      "past_occurrence_id": "occ_faf96d43cd44df8d",
+      "past_series_id": "ser_766109b5cf85a5af",
+      "past_name": "品川区民まつり 西大井広場公園 盆踊り",
+      "past_date": "2025-09-27",
+      "past_date_end": null,
+      "current_occurrence_id": "occ_0688b2fe3ccda2db",
+      "current_series_id": "series_be99524b90a25e57",
+      "current_name": "品川納涼祭",
+      "current_date": "2026-10-03",
+      "current_date_end": "2026-10-03"
     }
   ]
 }

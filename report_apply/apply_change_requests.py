@@ -12,6 +12,7 @@ free-form patch language.
 """
 
 import argparse
+import hashlib
 import json
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -164,9 +165,23 @@ def validate_payload(payload):
         if change_type not in CHANGE_TYPES:
             errors.append(f"{prefix}: invalid change_type: {change_type!r}")
             continue
+        if "detail_replacement" in request or "expected_detail_sha256" in request:
+            replacement = request.get("detail_replacement")
+            expected = request.get("expected_detail_sha256")
+            if change_type != "confirm_current_year_date":
+                errors.append(f"{prefix}: detail_replacement requires confirm_current_year_date")
+            if not isinstance(replacement, str) or not replacement.strip():
+                errors.append(f"{prefix}: detail_replacement must be a non-empty string")
+            if not isinstance(expected, str) or len(expected) != 64 or any(c not in "0123456789abcdef" for c in expected):
+                errors.append(f"{prefix}: expected_detail_sha256 must be a lowercase SHA-256")
         if change_type not in TARGETLESS_CHANGE_TYPES and not request.get("occurrence_id"):
             errors.append(f"{prefix}: requires occurrence_id")
         source = request.get("source") or {}
+        if "expected_source_url" in request:
+            if change_type != "confirm_current_year_date" or not isinstance(request["expected_source_url"], str) or not request["expected_source_url"]:
+                errors.append(f"{prefix}: expected_source_url requires an existing URL and confirm_current_year_date")
+            if source.get("kind") not in {"official_current_year", "organizer_current_year"} or _representative_source_rank(source.get("url")) != 3:
+                errors.append(f"{prefix}: explicit source replacement requires an official current-year web page")
         if change_type in REVIEW_BACKLOG_CHANGE_TYPES:
             validate_review_backlog_request(request, errors, prefix)
         elif change_type == "create_event_series":
@@ -392,10 +407,30 @@ def _resolve_venue(conn, request, now):
 
 
 def apply_confirm_current_year_date(conn, request, occurrence_id, now):
+    replacement = request.get("detail_replacement")
+    expected_source = request.get("expected_source_url")
+    if (replacement is not None or expected_source is not None) and not conn.in_transaction:
+        conn.execute("BEGIN IMMEDIATE")
     occurrence_before = conn.execute(
-        "SELECT source_url FROM event_occurrences WHERE occurrence_id = ?",
+        "SELECT source_url, detail FROM event_occurrences WHERE occurrence_id = ?",
         (occurrence_id,),
     ).fetchone()
+    if expected_source is not None:
+        current_source = occurrence_before[0] if occurrence_before else None
+        incoming = request["source"]["url"]
+        if current_source not in {expected_source, incoming} or _representative_source_rank(incoming) < _representative_source_rank(current_source):
+            return None, [{
+                "severity": "high", "issue_type": "source_url_snapshot_mismatch",
+                "request_id": request["request_id"], "occurrence_id": occurrence_id,
+            }]
+    if replacement is not None:
+        current_detail = (occurrence_before[1] or "") if occurrence_before else ""
+        current_hash = hashlib.sha256(current_detail.encode("utf-8")).hexdigest()
+        if current_hash != request.get("expected_detail_sha256") and current_detail != replacement.strip():
+            return None, [{
+                "severity": "high", "issue_type": "detail_snapshot_mismatch",
+                "request_id": request["request_id"], "occurrence_id": occurrence_id,
+            }]
     venue_id, venue_status, venue_issues = _resolve_venue(conn, request, now)
     if venue_issues:
         return None, venue_issues
@@ -414,12 +449,13 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         # 要求が確からしさを名指ししていれば、下げる指定でもそのまま通す。
         confidence_is_explicit=bool(request.get("confidence")),
         source_kind=request["source"]["kind"],
-        detail_addendum=request.get("note"),
+        detail_addendum=request.get("note") if replacement is None else None,
+        detail_replacement=replacement,
         date_basis_note=f"current-year source: {request['source']['url']}",
         now=now,
     )
     incoming_source_url = request["source"]["url"]
-    source_url = _preferred_representative_source(
+    source_url = incoming_source_url if expected_source is not None else _preferred_representative_source(
         occurrence_before[0] if occurrence_before else None,
         incoming_source_url,
     )
