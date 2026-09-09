@@ -17,6 +17,8 @@ C本丸では、公開JSONだけに後付けしている以下の表示フィー
 
 R2実装と2026-09-09固定入力の比較結果は
 [検証記録](r2-public-projection-verification-20260909.md)を参照する。
+PR #265・#264のmergeと本番反映も完了した。
+[本番反映記録](r2-production-release-20260909.md)に最新captureでの比較、実行run、本番hashと画面確認をまとめた。
 修正なしの元比較は8ケース一致、対象年2027への切替は旧版・新版とも既存曲目監査で
 拒否され、`original_parity` はblockedだった。別PR #265の年越し修正を両側へ同一適用した
 `shared_code_fix_parity` は9ケース・4出力すべてbyte一致した。修正を前提にした結果であり、

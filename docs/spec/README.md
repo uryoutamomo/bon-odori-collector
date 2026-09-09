@@ -7,7 +7,7 @@ owns:
 depends_on: []
 invariants: []
 verified_by: []
-updated_for: 5416007
+updated_for: 1fda725
 ---
 
 # 盆助 全体地図
@@ -167,6 +167,12 @@ L1が「何に責任を持ち、何を壊してはいけないか」なのに対
 そのときは呼ぶ側のworkflowと一緒に、どのL1の持ち物かを決める。
 
 ## 実物の規模（`6537e7f` 時点）
+
+最新公開検証は2026-09-09。公開イベント387件、R2投影と曲目年越し修正を反映済み。
+公開経路はsiteの `sync-public-data.yml` と `deploy-static-site.yml`。
+最終デプロイrun `34341419526` が成功し、本番JSON・HTML・JSのhash一致を確認した。
+根拠・対象commit・テストは[本番反映記録](../r2-production-release-20260909.md)を参照する。
+下表は過去時点の規模の記録である。
 
 | | |
 |---|---|
