@@ -2001,12 +2001,6 @@
         "probability": 79,
         "basis": "past_evidence",
         "basis_label": "2024・2025年実測"
-      },
-      {
-        "name": "雨にて途中終了",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -3094,27 +3088,6 @@
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "1回目の公演",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "2回目の公演",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "太鼓演奏",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "ended",
@@ -4173,13 +4146,6 @@
       },
       {
         "name": "ヤッチク",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "三本締め",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -6656,12 +6622,6 @@
         "basis_label": "実測"
       },
       {
-        "name": "ハイライト",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "バハマ・ママ",
         "confidence": "hint",
         "basis": "current_observed",
@@ -7182,18 +7142,6 @@
       },
       {
         "name": "ultra soul",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "アンコール",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "ゴジラフィギュア",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -12009,12 +11957,6 @@
       },
       {
         "name": "カオリーニョ藤原 江州音頭",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "山中一平",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -23166,13 +23108,6 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "会場様子",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "相馬盆唄",
         "confidence": "hint",
         "probability": 48,
@@ -23656,20 +23591,6 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "ミヤシタパーク",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "一般参加 阿波踊り",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "八木節",
         "confidence": "hint",
         "probability": 48,
@@ -23691,13 +23612,6 @@
         "basis_label": "2025年ヒント"
       },
       {
-        "name": "渋谷スクランブル交差点",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 48,
@@ -23706,20 +23620,6 @@
       },
       {
         "name": "荻野目洋子 - ダンシング・ヒーロー",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "阿波踊り 飛鳥連",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "阿波踊りレッスン",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -23801,12 +23701,6 @@
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
-      },
-      {
-        "name": "エガちゃん",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
       },
       {
         "name": "ダンシングヒーロー",
@@ -23980,12 +23874,6 @@
         "basis_label": "実測"
       },
       {
-        "name": "AMEMIYA",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "BOY MEETS GIRL",
         "confidence": "hint",
         "basis": "current_observed",
@@ -24016,31 +23904,13 @@
         "basis_label": "実測"
       },
       {
-        "name": "アンコール",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "冷やし中華はじめました",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
-        "name": "前説",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "睡蓮花",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "結果発表",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -25803,12 +25673,6 @@
     ],
     "songs": [
       {
-        "name": "アンコール",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "炭坑節",
         "confidence": "hint",
         "basis": "current_observed",
@@ -25816,12 +25680,6 @@
       },
       {
         "name": "生唄炭坑節",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "音楽ストップ",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"

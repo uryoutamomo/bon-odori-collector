@@ -56,7 +56,7 @@ legacy曲目fallbackの入力であり、このexporterの生成物ではない�
 各hash・DB/manifestのhash・判定日・対象年・ソースcommitを比較レポートに残す。
 `BON_ODORI_PUBLIC_SOURCE=master_rdb` を強制し、環境のNotion設定で比較元を変えない。
 
-## R2開始前の残件（2026-09-09）
+## R2開始前の入力取得と曲目修正（2026-09-09）
 
 手元の古いDBとmanifestの組はchecksum不一致だった。これを修復して一致と見せたり、
 合成DBのテストを本番相当の差分ゼロ判定に代用したりしない。
@@ -69,6 +69,22 @@ DBとmanifestを取得する必要がある。
 artifactには受取人宛に暗号化したbundleだけを渡す。DB、manifest、補助入力、hashは
 bundle内部に保持する。秘密鍵は取得側だけで保管し、workflowへ渡さない。
 保持期間は3日。復号後は入力hashを照合し、同じcollector commitで比較する。
+
+PR #263の開催回限定撤回23件は、[本番適用run 34326696223](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/34326696223)
+でdry-run、監査、CAS publish、再取得検証まで完了した。
+[修正後の取得run 34326836379](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/34326836379)
+はcommit `c0718033ad7bd736bda561a102247ea54e523fb2`、判定日2026-09-09、対象年2026の
+DB・manifest・固定7補助入力を取得した。DB SHA-256は
+`14d0b6f08cb46cdbd9ba4c8086d9f51d1a1cb94d173c95f81aadd29ded5faf0e`。
+受信artifactのdigest、復号後の各hash、SQLite integrity/FK、23件の撤回状態を検証済み。
+同じ入力の4出力は事前検証とbyte一致し、387イベントを維持したまま11イベントの22項目だけを除く。
+
+既存apply workflowのhistorical promotion後処理は、候補19行の時刻と予測17行の
+`source_payload_json`・時刻も再生成する。予測の日付・確度・公開投影は不変だが、
+payloadの `actual_observations` / `candidate_rules` / `evidence_count` が落ちる既存の
+provenance上の制限がある。曲目以外のDB全列が不変だったとは扱わない。
+元の観測・根拠テーブルと修正前bundleは保持し、R2では修正後bundleを固定基準にする。
+この完了はR2本体の整理前後比較・期限境界検証の合格を意味しない。
 
 R2本体では `project_public_events()` の入力読込・意味計算・出力書込を分け、現役の
 後処理呼出元を移す。同じ入力で通常日、終了前日・当日・翌日、過去実績期限切れ、

@@ -35,16 +35,16 @@ const EVENTS = [
     "detail": "投稿原文の時刻表記は「1時〜3時（2時〜3時は盆踊りタイム！）」であり、13:00〜15:00と読めるが原文以上には断定しない。4階活動室も利用。対象は千代田区在住の方、申込不要。千代田区社会福祉協議会の告知投稿より。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -53,7 +53,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "秋葉原東部納涼大会",
@@ -181,13 +181,6 @@ const EVENTS = [
         "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
-      },
-      {
-        "name": "千代田踊り",
-        "confidence": "confirmed",
-        "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
       },
       {
         "name": "恋をするなら",
@@ -326,6 +319,24 @@ const EVENTS = [
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "サザンオールスターズ - 盆ギリ恋歌",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "千代田踊り",
+        "confidence": "confirmed",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "橋幸夫 - 恋をするなら",
+        "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       }
@@ -579,6 +590,13 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "ドラえもん音頭",
         "confidence": "hint",
         "probability": 48,
@@ -615,6 +633,13 @@ const EVENTS = [
       },
       {
         "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "浜町美人音頭",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -1000,13 +1025,6 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "これがお江戸の盆ダンス",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "バハマ・ママ",
         "confidence": "hint",
         "probability": 80,
@@ -1014,39 +1032,52 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       },
       {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ Bahama Mama",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "銀座ときめき音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "銀座カンカン娘",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "銀座音頭",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "predicted",
@@ -1158,16 +1189,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -1176,7 +1207,7 @@ const EVENTS = [
       "2026-08-28",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
@@ -1347,16 +1378,16 @@ const EVENTS = [
     "detail": "18:30-21:00。屋台やきそば・かき氷等、飲み物ビール・ラムネ等(さらに地域の飲食店からのメニューを提供)。（令和8年納涼マップ京橋五の部より。2024年の過去実績曲目は引き続き参照可）",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-24〜2026-08-25",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-24〜2026-08-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -1365,7 +1396,7 @@ const EVENTS = [
       "2026-08-24",
       "2026-08-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "小網神社の盆踊り（名称推定）",
@@ -1973,16 +2004,16 @@ const EVENTS = [
         "basis_label": "2024・2025年実測"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -1991,7 +2022,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "浜二納涼盆踊り大会",
@@ -2420,7 +2451,122 @@ const EVENTS = [
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "2000年音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Let'sONDOAgain",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "きよしの数え唄",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "どだればち・サンバ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ズンパ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ベイサイド・ブギ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "中央学園音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "令和音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "少年八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "平成音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋日和",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -2482,7 +2628,74 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "APT.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "かもめが翔んだ日",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座ときめき音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -2878,16 +3091,16 @@ const EVENTS = [
         "basis_label": "2025年実測"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -2896,7 +3109,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
@@ -3272,6 +3485,13 @@ const EVENTS = [
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "火の国太鼓",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       },
       {
         "name": "炭坑節",
@@ -3755,7 +3975,7 @@ const EVENTS = [
       }
     ],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -3775,9 +3995,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-09-07"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-09-07"
@@ -3798,41 +4018,16 @@ const EVENTS = [
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-09-06",
-        "date_end": "2026-09-06",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第1日曜を2026年へスライド",
-        "source_date": "2025-09-07",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-09-07"
     ],
     "historical_reference_label": "2025-09-07実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-09-06",
-      "date_end": "2026-09-06",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第1日曜を2026年へスライド",
-      "source_date": "2025-09-07",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-09-06",
-    "historical_slide_date_end": "2026-09-06",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第1日曜を2026年へスライド",
-    "predicted_date": "2026-09-06",
-    "predicted_date_end": "2026-09-06",
-    "prediction_basis": "2025年実績の同月第1日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "郡上おどり in 青山",
@@ -3945,6 +4140,13 @@ const EVENTS = [
       },
       {
         "name": "まつさか",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ヤッチク",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -4667,16 +4869,16 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -4685,7 +4887,7 @@ const EVENTS = [
       "2026-08-28",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "赤坂氷川祭 盆踊り大会",
@@ -6324,16 +6526,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -6342,7 +6544,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "新宿二丁目太宗寺盆踊り大会",
@@ -6391,6 +6593,12 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "Start Over",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "ultra soul",
         "confidence": "hint",
         "basis": "current_observed",
@@ -6415,7 +6623,37 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "マツケンサンバ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋をするなら",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "牛ちゃんマンボ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "盆ギリ恋歌",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -6488,16 +6726,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -6506,7 +6744,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "三角広場まつり「居酒屋盆踊り」",
@@ -6814,20 +7052,6 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "Dancing Queen",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "EZ DO DANCE",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "I Was Born To Love You",
         "confidence": "hint",
         "probability": 71,
@@ -6835,35 +7059,7 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "Livin' On A Prayer",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "September",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "YMCA",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "ultra soul",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -6898,11 +7094,88 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "Dancing Queen",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "GET WILD",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "HOT LIMIT",
         "confidence": "hint",
-        "probability": 41,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Livin' On A Prayer",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Shape of You",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Thriller",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "YMCA",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ultra soul",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "パラダイス銀河",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "君の瞳に恋してる",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "女々しくて",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "残酷な天使のテーゼ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -7066,16 +7339,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-27〜2026-08-28",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-27〜2026-08-28",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -7084,7 +7357,7 @@ const EVENTS = [
       "2026-08-27",
       "2026-08-28"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "花園神社 盆踊り",
@@ -7126,13 +7399,6 @@ const EVENTS = [
     "source_urls": [],
     "songs": [
       {
-        "name": "八木節",
-        "confidence": "hint",
-        "probability": 74,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "DESIRE -情熱",
         "confidence": "hint",
         "probability": 71,
@@ -7141,13 +7407,6 @@ const EVENTS = [
       },
       {
         "name": "きよしのズンドコ節",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "りんご節",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -7175,13 +7434,6 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "ドンパン節",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 71,
@@ -7190,13 +7442,6 @@ const EVENTS = [
       },
       {
         "name": "宝っこ音頭",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "新宿音頭",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -7217,18 +7462,82 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
+        "name": "Mela!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ねぶた",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "りんご節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ズンバ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドンパン節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋をするなら",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新しい風",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新宿音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -7458,16 +7767,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -7476,7 +7785,7 @@ const EVENTS = [
       "2026-08-23",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "根津神社 盆踊り（文京区）",
@@ -7834,7 +8143,7 @@ const EVENTS = [
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -7854,9 +8163,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-08-23"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-23"
@@ -7877,41 +8186,16 @@ const EVENTS = [
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-22",
-        "date_end": "2026-08-22",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-08-23",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-23"
     ],
     "historical_reference_label": "2025-08-23実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-08-22",
-      "date_end": "2026-08-22",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-08-23",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-22",
-    "historical_slide_date_end": "2026-08-22",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-08-22",
-    "predicted_date_end": "2026-08-22",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "マロニエまつり盆踊り大会",
@@ -8943,7 +9227,14 @@ const EVENTS = [
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "26「Get Wild」TM NETWORK",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -9404,13 +9695,6 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "波乗りジョニー",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 71,
@@ -9453,6 +9737,13 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
+        "name": "DESIRE -情熱",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "Hold Me Now",
         "confidence": "hint",
         "probability": 48,
@@ -9467,7 +9758,63 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
+        "name": "ONE LOVE - 嵐",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "Romanticが止まらない",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "Runner",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "STAR LIGHT",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "The Power of Love",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ふたりの愛ランド",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ガラスの十代",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ギザギザハートの子守唄",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "ジュリアに傷心",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -9481,7 +9828,28 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
+        "name": "パラダイス銀河",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "リゾ・ラバ",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "嵐",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "親𩱳おどり",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
@@ -9493,6 +9861,24 @@ const EVENTS = [
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
+      },
+      {
+        "name": "エロティカセブン",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "桜坂",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -9695,17 +10081,66 @@ const EVENTS = [
         "count": 2
       }
     ],
-    "songs": [],
-    "current_event_state": "confirmed",
+    "songs": [
+      {
+        "name": "GOT TO BE REAL",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "たいとう音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "スカイツリー音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京スカイツリー音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "輝け日本富士山おどり",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-05",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-05",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -9714,7 +10149,7 @@ const EVENTS = [
       "2026-09-05",
       "2026-09-05"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "田原de盆踊り",
@@ -11520,6 +11955,18 @@ const EVENTS = [
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "カオリーニョ藤原 江州音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "江州音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -12499,16 +12946,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12517,7 +12964,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "江東区民まつり 亀戸地区夏まつり大会",
@@ -12560,16 +13007,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12578,7 +13025,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "亀戸二丁目団地 ここがふるさと夏まつり",
@@ -13014,16 +13461,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -13032,7 +13479,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大島スカイハイツ 夏まつり",
@@ -13137,16 +13584,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -13155,7 +13602,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大島三丁目町会 お祭り広場",
@@ -13253,16 +13700,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -13271,7 +13718,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "海辺町会 納涼盆踊り大会",
@@ -13771,16 +14218,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -13789,7 +14236,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "枝川二・三丁目町会 枝川の夏まつり",
@@ -14087,16 +14534,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -14105,7 +14552,7 @@ const EVENTS = [
       "2026-08-28",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "江東天祖神社の盆踊り（名称推定）",
@@ -14438,16 +14885,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-05",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-05",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -14456,7 +14903,7 @@ const EVENTS = [
       "2026-09-05",
       "2026-09-05"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "石島町会 夏祭り",
@@ -15108,16 +15555,16 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -15126,7 +15573,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大井蔵王権現神社の盆踊り（名称推定）",
@@ -17345,16 +17792,16 @@ const EVENTS = [
     "detail": "2026年は第二回。13:00〜21:00開催。中目黒盆踊り大会の公式X告知投稿より。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -17363,7 +17810,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "盆踊り in 駒場東大",
@@ -18275,16 +18722,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -18293,7 +18740,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "仲六郷一丁目町会 納涼会",
@@ -18761,16 +19208,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -18779,7 +19226,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "堤方東町会「盆踊り大会」",
@@ -19733,7 +20180,7 @@ const EVENTS = [
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19755,9 +20202,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-08-23"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-23"
@@ -19780,41 +20227,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-22",
-        "date_end": "2026-08-22",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-08-23",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-23"
     ],
     "historical_reference_label": "2025-08-23実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-08-22",
-      "date_end": "2026-08-22",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-08-23",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-22",
-    "historical_slide_date_end": "2026-08-22",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-08-22",
-    "predicted_date_end": "2026-08-22",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
@@ -22659,27 +23081,6 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "おてもやん",
-        "confidence": "hint",
-        "probability": 74,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "Hey Mr 恵比寿",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "YES YES EBISU",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "YES YES YBISU",
         "confidence": "hint",
         "probability": 71,
@@ -22701,11 +23102,72 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "能登島さし音頭",
+        "name": "HEY!! Mr.えびす",
         "confidence": "hint",
-        "probability": 71,
+        "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "Hey Mr 恵比寿",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "YES YES EBISU",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おてもやん",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ラビアンローズ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恵比寿ラビアンローズ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恵比寿音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬盆歌",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "能登島さし音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -23095,6 +23557,27 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "B'z - ultra soul",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "TRF - EZ DO DANCE",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "YOASOBI - 群青",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 48,
@@ -23102,11 +23585,46 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "チェッカーズ - ギザギザハートの子守唄",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "夢みる渋谷音頭 YOU MAKE SHIBUYA",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "荻野目洋子 - ダンシング・ヒーロー",
+        "confidence": "hint",
+        "probability": 48,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "confirmed",
@@ -23172,28 +23690,7 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "ダンシングヒーロー",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "大東京音頭",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 71,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "河内おとこ節",
         "confidence": "hint",
         "probability": 71,
         "basis": "past_evidence",
@@ -23205,6 +23702,42 @@ const EVENTS = [
         "probability": 71,
         "basis": "past_evidence",
         "basis_label": "2025年実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夢みる渋谷",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "河内おとこ節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "渋谷百年総踊り",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "ended",
@@ -23334,7 +23867,56 @@ const EVENTS = [
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "26「Get Wild」TM NETWORK",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "BOY MEETS GIRL",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "GET WILD",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "WOW WAR TONIGHT",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "survival dAnce",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "冷やし中華はじめました",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "睡蓮花",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -23485,6 +24067,18 @@ const EVENTS = [
         "name": "生盆",
         "confidence": "confirmed",
         "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "WON'TBELONG",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "祭りになればいい",
+        "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       }
@@ -24208,16 +24802,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -24226,7 +24820,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "駒込六丁目東文化会 盆踊り・縁日",
@@ -24270,16 +24864,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -24288,7 +24882,7 @@ const EVENTS = [
       "2026-08-23",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "北区立堀船公園の盆踊り",
@@ -24332,16 +24926,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -24350,7 +24944,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -24902,6 +25496,84 @@ const EVENTS = [
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "おんなの気持ち",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "にっぽんチャチャチャ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "七夕おどり",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "安里屋ゆんた",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "島のブルース",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "川口小唄",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "流転の波止場",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "火の国太鼓",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "火消し若衆",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "男節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "飛鳥山音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "首里城音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "current_event_state": "predicted",
@@ -25003,6 +25675,12 @@ const EVENTS = [
     "songs": [
       {
         "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "生唄炭坑節",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -25449,16 +26127,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -25467,7 +26145,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "小豆沢商友会 納涼盆踊り大会",
@@ -26617,16 +27295,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26635,7 +27313,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "北新井公園 納涼盆踊大会",
@@ -26745,16 +27423,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26763,7 +27441,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "大松氷川神社 納涼盆踊り大会",
@@ -26877,16 +27555,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -26895,7 +27573,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "北大泉商栄会 納涼盆踊り大会",
@@ -27207,16 +27885,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -27225,7 +27903,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "上谷中町自治会 納涼盆踊り大会",
@@ -27962,16 +28640,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -27980,7 +28658,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "綾瀬五・六丁目自治会 納涼盆踊り大会",
@@ -28160,16 +28838,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -28178,7 +28856,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "コープ野村梅島自治会 盆踊り大会",
@@ -28222,16 +28900,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -28240,7 +28918,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "梅田神明町自治会 盆踊り",
@@ -28284,16 +28962,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-05",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-05",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -28302,7 +28980,7 @@ const EVENTS = [
       "2026-09-05",
       "2026-09-05"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "梅田本町自治会 納涼盆踊り",
@@ -29523,16 +30201,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29541,7 +30219,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "木根川町会ふれあい盆踊り",
@@ -29776,16 +30454,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29794,7 +30472,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "ハイラーク船堀自治会秋まつり",
@@ -30033,16 +30711,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30051,7 +30729,7 @@ const EVENTS = [
       "2026-08-23",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "上小岩六東自治会盆踊り",
@@ -30161,16 +30839,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30179,7 +30857,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "仲町町会納涼盆踊り",
@@ -30355,16 +31033,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30373,7 +31051,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "公社東葛西第一住宅自治会住宅祭",
@@ -30483,16 +31161,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30501,7 +31179,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "六中自治会盆踊り",
@@ -30549,16 +31227,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30567,7 +31245,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "北篠崎二丁目自治会盆踊り",
@@ -30615,16 +31293,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30633,7 +31311,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "倉雀会(くらすずめかい)",
@@ -30742,16 +31420,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30760,7 +31438,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "扇子田自治会盆踊り",
@@ -30874,16 +31552,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30892,7 +31570,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "小岩駅前町会盆踊り",
@@ -30940,16 +31618,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29〜2026-08-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29〜2026-08-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -30958,7 +31636,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "河原田町会盆踊り",
@@ -31006,16 +31684,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31024,7 +31702,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "南篠崎天祖神社例大祭",
@@ -31138,16 +31816,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31156,7 +31834,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "小松川四丁目親交会ふるさと小松川夏祭り",
@@ -31266,16 +31944,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31284,7 +31962,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "四南自治会盆踊り",
@@ -31460,16 +32138,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31478,7 +32156,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "平井6丁目23号棟自治会納涼大会",
@@ -31522,16 +32200,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31540,7 +32218,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "平井六丁目東町会納涼盆踊り大会",
@@ -31654,16 +32332,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -31672,7 +32350,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "椿ふるさとまつり",
@@ -32046,16 +32724,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32064,7 +32742,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "東小岩中央自治会盆踊り",
@@ -32112,16 +32790,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32130,7 +32808,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "雷町会夏まつり",
@@ -32244,16 +32922,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32262,7 +32940,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "西小岩六西自治会盆踊り",
@@ -32310,16 +32988,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32328,7 +33006,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "片山自治会盆踊り",
@@ -32376,16 +33054,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32394,7 +33072,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "椿フェスティバル",
@@ -32698,16 +33376,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32716,7 +33394,7 @@ const EVENTS = [
       "2026-08-28",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "興宮自治会盆踊り",
@@ -32764,16 +33442,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32782,7 +33460,7 @@ const EVENTS = [
       "2026-08-22",
       "2026-08-23"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "船堀三丁目町会盆踊り大会",
@@ -33082,16 +33760,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-29",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -33100,7 +33778,7 @@ const EVENTS = [
       "2026-08-29",
       "2026-08-29"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "谷河内南町会盆踊り大会",
@@ -33276,16 +33954,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -33294,7 +33972,7 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "長島町会納涼盆踊り大会",
