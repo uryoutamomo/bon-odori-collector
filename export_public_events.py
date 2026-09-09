@@ -1767,23 +1767,29 @@ def _historical_kind_label(song):
     return "ヒント"
 
 
-def _decay_replacement_song(song, *, previous_year):
-    """Turn a previous-year public row into a conservative historical hint."""
+def _decay_replacement_song(song, *, previous_year, target_year=None):
+    """Advance an occurrence's song probability to the requested target year."""
     song = dict(song)
     probability = song.get("probability")
     if probability is None:
         probability = 80
+    if not 0 <= float(probability) <= 100:
+        raise ValueError("historical song probability must be between 0 and 100")
+    years = (target_year if target_year is not None else previous_year + 1) - previous_year
+    if years < 1:
+        raise ValueError("historical song target year must follow occurrence year")
+    decay = SONG_YEAR_DECAY_RATE ** years
 
     if song.get("basis") == "past_evidence":
         # The source row was already speaker-adjusted and decayed into the
         # previous year. Moving it forward one more year must apply only the
         # additional year decay, not a second speaker penalty.
-        decayed = float(probability) * SONG_YEAR_DECAY_RATE
+        decayed = float(probability) * decay
         basis_label = song.get("basis_label") or f"{previous_year - 1}年ヒント"
     else:
         source_count = max(1, int(song.get("source_count") or 1))
         speaker_factor = min(1.0, 0.65 + 0.15 * source_count)
-        decayed = float(probability) * SONG_YEAR_DECAY_RATE * speaker_factor
+        decayed = float(probability) * decay * speaker_factor
         basis_label = f"{previous_year}年{_historical_kind_label(song)}"
 
     song.update(
@@ -1795,6 +1801,29 @@ def _decay_replacement_song(song, *, previous_year):
         }
     )
     return song
+
+
+def project_retained_historical_songs(events, *, target_year):
+    """Age songs on retained RDB occurrences without removing historical cards.
+
+    Use the owning occurrence's year, never its display date: a target-year
+    occurrence can display an older historical-reference date while its songs
+    have already been calibrated for the target year. Run after replacement
+    merging so that inherited songs on a current card are not decayed twice.
+    """
+    for event in events:
+        occurrence_year = event.get("_event_year")
+        if type(occurrence_year) is not int or occurrence_year >= target_year:
+            continue
+        event["songs"] = [
+            _decay_replacement_song(
+                {"name": raw_song} if isinstance(raw_song, str) else raw_song,
+                previous_year=occurrence_year,
+                target_year=target_year,
+            )
+            for raw_song in event.get("songs") or []
+        ]
+    return events
 
 
 def merge_replacement_songs(current, recurring, *, previous_year):
@@ -1854,7 +1883,7 @@ def suppress_replaced_recurring_events(events, *, target_year):
         if key is not None:
             current_by_key[key] = event
     if not current_by_key:
-        return events
+        return project_retained_historical_songs(events, target_year=target_year)
     for event in events:
         if event.get("public_category") != "recurring_last_year":
             continue
@@ -1862,7 +1891,7 @@ def suppress_replaced_recurring_events(events, *, target_year):
         current = current_by_key.get(key) if key is not None else None
         if current:
             merge_replacement_songs(current, event, previous_year=target_year - 1)
-    return [
+    retained = [
         event for event in events
         if not (
             event.get("public_category") == "recurring_last_year"
@@ -1870,6 +1899,7 @@ def suppress_replaced_recurring_events(events, *, target_year):
             and public_series_key(event) in current_by_key
         )
     ]
+    return project_retained_historical_songs(retained, target_year=target_year)
 
 
 def _name_trigram_similarity(name_a, name_b):
