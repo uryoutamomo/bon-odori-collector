@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T09:23:59Z",
-  "generated_for_commit": "e762549",
+  "generated_at": "2026-09-09T10:30:57Z",
+  "generated_for_commit": "39488cc",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -404,8 +404,8 @@
         "x_candidate_backlog.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 2,
+        "files_changed_since": 2
       },
       "version": "1.15",
       "revision_count": 16,
@@ -595,8 +595,8 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 3
+        "commits_since": 2,
+        "files_changed_since": 4
       },
       "version": "1.19",
       "revision_count": 20,
@@ -707,7 +707,7 @@
         "tests/test_compare_public_projection_revisions.py",
         "tests/test_public_projection_purity.py"
       ],
-      "updated_for": "e762549",
+      "updated_for": "8424f07",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "docs/public-json-rdb-projection-migration-plan.md",
@@ -734,12 +734,27 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 4,
+        "files_changed_since": 10
       },
-      "version": "1.20",
-      "revision_count": 21,
+      "version": "1.23",
+      "revision_count": 24,
       "history": [
+        {
+          "commit": "12fff4f",
+          "date": "2026-09-09",
+          "subject": "Compare public revisions with an explicit shared code fix"
+        },
+        {
+          "commit": "876e9a6",
+          "date": "2026-09-09",
+          "subject": "Document historical song rollover contract and fixed-input verification"
+        },
+        {
+          "commit": "be49a58",
+          "date": "2026-09-09",
+          "subject": "Separate public projection stages and compare frozen revision outputs"
+        },
         {
           "commit": "d3b0808",
           "date": "2026-09-09",
@@ -784,21 +799,6 @@
           "commit": "590b43b",
           "date": "2026-08-18",
           "subject": "Allow verified low-risk public data syncs (#246)"
-        },
-        {
-          "commit": "2915f6b",
-          "date": "2026-08-18",
-          "subject": "Fix song certainty across all events"
-        },
-        {
-          "commit": "0b70acc",
-          "date": "2026-08-18",
-          "subject": "Add LLM joint certainty for event date predictions"
-        },
-        {
-          "commit": "01db7c0",
-          "date": "2026-08-17",
-          "subject": "Finalize detail cleanup repair"
         }
       ]
     },
@@ -955,6 +955,7 @@
         "tests/test_song_catalog.py",
         "tests/test_weekly_song_triage.py",
         "tests/test_export_public_events.py",
+        "tests/test_public_song_year_rollover.py",
         "tests/test_calibrate_song_probabilities_rdb.py",
         "tests/test_inherit_song_probabilities_x_safety.py",
         "tests/test_recalculate_song_probabilities_workflow.py",
@@ -964,7 +965,7 @@
         "tests/test_x_occurrence_resolution_contract.py",
         "tests/test_x_song_materialization_lifecycle.py"
       ],
-      "updated_for": "a47769f",
+      "updated_for": "0389e83",
       "path": "docs/spec/L1/08-songs.md",
       "owned_files": [
         ".github/workflows/recalculate-song-probabilities.yml",
@@ -1009,9 +1010,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.11",
-      "revision_count": 12,
+      "version": "1.12",
+      "revision_count": 13,
       "history": [
+        {
+          "commit": "876e9a6",
+          "date": "2026-09-09",
+          "subject": "Document historical song rollover contract and fixed-input verification"
+        },
         {
           "commit": "1cdda18",
           "date": "2026-08-24",
@@ -1066,11 +1072,6 @@
           "commit": "3b43069",
           "date": "2026-08-14",
           "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
-        },
-        {
-          "commit": "958c6db",
-          "date": "2026-08-14",
-          "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
         }
       ]
     },
@@ -1457,9 +1458,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.2",
-      "revision_count": 3,
+      "version": "1.3",
+      "revision_count": 4,
       "history": [
+        {
+          "commit": "be49a58",
+          "date": "2026-09-09",
+          "subject": "Separate public projection stages and compare frozen revision outputs"
+        },
         {
           "commit": "0b70acc",
           "date": "2026-08-18",
