@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "generated_by": "scan_ward_official_sources.py",
-  "generated_at": "2026-09-03T11:37:33.530068+00:00",
+  "generated_at": "2026-09-10T11:43:29.913820+00:00",
   "target_year": 2026,
   "safety_boundary": "official-source review candidates only; no canonical or public event write",
   "canonical_write_count": 0,
   "registry_source_count": 21,
-  "candidate_count": 176,
+  "candidate_count": 178,
   "ward_counts": {
     "大田区": 1,
     "江戸川区": 24,
     "荒川区": 1,
     "葛飾区": 4,
-    "足立区": 146
+    "足立区": 148
   },
   "source_reports": [
     {
@@ -91,7 +91,7 @@
       "url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
       "checked_count": 1,
       "confirmed_count": 1,
-      "structured_candidate_count": 146,
+      "structured_candidate_count": 148,
       "page_fallback_count": 0,
       "status": "confirmed"
     },
@@ -169,7 +169,7 @@
       "source_registry_id": "toshima-event-calendar",
       "ward": "豊島区",
       "url": "https://www.city.toshima.lg.jp/cgi-bin/event_cal/calendar.cgi",
-      "checked_count": 13,
+      "checked_count": 10,
       "confirmed_count": 0,
       "structured_candidate_count": 0,
       "page_fallback_count": 0,
@@ -2948,7 +2948,7 @@
       "source_row_index": 10080
     },
     {
-      "id": "ward-official-77ae9318b4f04f00",
+      "id": "ward-official-168358ba96333d02",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -2963,10 +2963,10 @@
       "festival_name": "六木四丁目町会 こども祭り",
       "region": "足立区",
       "event_year": 2026,
-      "event_date_text": "9月6日 / (日曜日) / 10時",
+      "event_date_text": "9月6日 / (日曜日) / 9月13日 / （日曜日） / 10時",
       "address": "六木4-5-3（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月6日 / (日曜日) / 10時 / 六木四丁目町会 / (六木四丁目町会 こども祭り) / 六木四丁目町会 子供広場 / 六木4-5-3（外部サイトへリンク） / 佐野区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月6日 / (日曜日) / 9月13日 / （日曜日） / 10時 / 六木四丁目町会 / (六木四丁目町会 こども祭り) / 六木四丁目町会 子供広場 / 六木4-5-3（外部サイトへリンク） / 佐野区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
@@ -3023,7 +3023,7 @@
       "source_row_index": 10083
     },
     {
-      "id": "ward-official-fdbed54ebbc3019e",
+      "id": "ward-official-6324f102a19193ae",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3033,15 +3033,15 @@
       "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
       "source_domain": "www.city.adachi.tokyo.jp",
       "venue": "千住緑町会館前",
-      "event_name": "千住緑町町会 / (千住神社祭礼宵宮子供神輿) / (千住神社祭礼宵宮大人神輿、山車渡御)",
+      "event_name": "千住緑町町会 / (千住神社祭礼宵宮大人神輿)",
       "organizer": "千住緑町町会",
-      "festival_name": "千住神社祭礼宵宮子供神輿 / 千住神社祭礼宵宮大人神輿、山車渡御",
+      "festival_name": "千住神社祭礼宵宮大人神輿",
       "region": "足立区",
       "event_year": 2026,
-      "event_date_text": "9月12日 / (土曜日) / 13時 / 18時",
+      "event_date_text": "9月12日 / (土曜日) / 17時15分",
       "address": "千住緑町2-26-17（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 13時 / 18時 / 千住緑町町会 / (千住神社祭礼宵宮子供神輿) / (千住神社祭礼宵宮大人神輿、山車渡御) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 17時15分 / 千住緑町町会 / (千住神社祭礼宵宮大人神輿) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
@@ -3148,7 +3148,7 @@
       "source_row_index": 10088
     },
     {
-      "id": "ward-official-6eb771a9946f60a7",
+      "id": "ward-official-feafa9106c4ab336",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3163,17 +3163,17 @@
       "festival_name": "元宿堰稲荷神社祭礼宵宮",
       "region": "足立区",
       "event_year": 2026,
-      "event_date_text": "9月12日 / (土曜日) / 未定",
+      "event_date_text": "9月12日 / (土曜日) / 10時",
       "address": "千住桜木2-12-2（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 未定 / 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼宵宮) / 千住桜木二丁目町会々館 / 千住桜木2-12-2（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 10時 / 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼宵宮) / 千住桜木二丁目町会々館 / 千住桜木2-12-2（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
       "source_row_index": 10089
     },
     {
-      "id": "ward-official-2e56c217e46f3cf9",
+      "id": "ward-official-d63da68cdf7b52b0",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3188,10 +3188,10 @@
       "festival_name": "八幡神社例祭宵宮大人神輿渡御",
       "region": "足立区",
       "event_year": 2026,
-      "event_date_text": "9月12日 / (土曜日) / 未定",
+      "event_date_text": "9月12日 / (土曜日) / 18時30分",
       "address": "千住中居町27-18（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 未定 / 千住宮元町町会 / (八幡神社例祭宵宮大人神輿渡御) / 東日本銀行 / 千住中居町27-18（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 18時30分 / 千住宮元町町会 / (八幡神社例祭宵宮大人神輿渡御) / 東日本銀行 / 千住中居町27-18（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
@@ -3323,7 +3323,7 @@
       "source_row_index": 10095
     },
     {
-      "id": "ward-official-be21a8b002e9b1eb",
+      "id": "ward-official-9419268c41c169a0",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3332,16 +3332,16 @@
       "source_registry_id": "adachi-bonfes-2026",
       "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
       "source_domain": "www.city.adachi.tokyo.jp",
-      "venue": "東日本銀行前",
+      "venue": "東日本銀行前 / 中居町会館",
       "event_name": "千住中居町会 / (千住神社祭禮)",
       "organizer": "千住中居町会",
       "festival_name": "千住神社祭禮",
       "region": "足立区",
       "event_year": 2026,
       "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時30分(土曜日) / 9時(日曜日)",
-      "address": "千住中居町27-18（外部サイトへリンク）",
+      "address": "千住中居町27-18（外部サイトへリンク） / 千住中居町12-23（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時30分(土曜日) / 9時(日曜日) / 千住中居町会 / (千住神社祭禮) / 東日本銀行前 / 千住中居町27-18（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時30分(土曜日) / 9時(日曜日) / 千住中居町会 / (千住神社祭禮) / 東日本銀行前 / 中居町会館 / 千住中居町27-18（外部サイトへリンク） / 千住中居町12-23（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
@@ -3498,6 +3498,56 @@
       "source_row_index": 10102
     },
     {
+      "id": "ward-official-177ae9d1ab7e719b",
+      "decision": "pending",
+      "suggested_source_type": "official",
+      "suggested_score": 92,
+      "reason": "区公式イベント一覧から行単位で抽出",
+      "source_origin": "ward_official_source_registry",
+      "source_registry_id": "adachi-bonfes-2026",
+      "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+      "source_domain": "www.city.adachi.tokyo.jp",
+      "venue": "千住緑町会館前",
+      "event_name": "千住緑町祭礼 / (千住神社祭礼)",
+      "organizer": "千住緑町祭礼",
+      "festival_name": "千住神社祭礼",
+      "region": "足立区",
+      "event_year": 2026,
+      "event_date_text": "9月13日 / (日曜日) / 9時",
+      "address": "千住緑町2-26-17（外部サイトへリンク）",
+      "status_hint": "",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時 / 千住緑町祭礼 / (千住神社祭礼) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
+      "registry_source_type": "event_calendar",
+      "registry_format": "html_table",
+      "parse_mode": "html_table_row",
+      "source_row_index": 10103
+    },
+    {
+      "id": "ward-official-e0b45a2b88693ac8",
+      "decision": "pending",
+      "suggested_source_type": "official",
+      "suggested_score": 92,
+      "reason": "区公式イベント一覧から行単位で抽出",
+      "source_origin": "ward_official_source_registry",
+      "source_registry_id": "adachi-bonfes-2026",
+      "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+      "source_domain": "www.city.adachi.tokyo.jp",
+      "venue": "慈眼寺駐車場出発",
+      "event_name": "千住一丁目町会 / (千住神社祭礼)",
+      "organizer": "千住一丁目町会",
+      "festival_name": "千住神社祭礼",
+      "region": "足立区",
+      "event_year": 2026,
+      "event_date_text": "9月13日 / (日曜日) / 10時",
+      "address": "千住1-2-9（外部サイトへリンク）",
+      "status_hint": "",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 10時 / 千住一丁目町会 / (千住神社祭礼) / 慈眼寺駐車場出発 / 千住1-2-9（外部サイトへリンク） / 千住区民事務所",
+      "registry_source_type": "event_calendar",
+      "registry_format": "html_table",
+      "parse_mode": "html_table_row",
+      "source_row_index": 10104
+    },
+    {
       "id": "ward-official-ad5baba3ad5cb1bf",
       "decision": "pending",
       "suggested_source_type": "official",
@@ -3520,7 +3570,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10103
+      "source_row_index": 10105
     },
     {
       "id": "ward-official-27f2b3e6635ddb6b",
@@ -3545,7 +3595,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10104
+      "source_row_index": 10106
     },
     {
       "id": "ward-official-02e7c3918b5ebe93",
@@ -3570,10 +3620,10 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10105
+      "source_row_index": 10107
     },
     {
-      "id": "ward-official-40610116c9364460",
+      "id": "ward-official-2724546289bc475b",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3588,14 +3638,14 @@
       "festival_name": "八幡神社例祭本宮大人神輿、子供神輿、山車渡御",
       "region": "足立区",
       "event_year": 2026,
-      "event_date_text": "9月13日 / (日曜日) / 未定",
+      "event_date_text": "9月13日 / (日曜日) / 9時30分",
       "address": "千住宮元町3-8（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 未定 / 千住宮元町町会 / (八幡神社例祭本宮大人神輿、子供神輿、山車渡御) / 八幡神社 / 千住宮元町3-8（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時30分 / 千住宮元町町会 / (八幡神社例祭本宮大人神輿、子供神輿、山車渡御) / 八幡神社 / 千住宮元町3-8（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10106
+      "source_row_index": 10108
     },
     {
       "id": "ward-official-7d9b9aa4d2fc8a44",
@@ -3620,10 +3670,10 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10107
+      "source_row_index": 10109
     },
     {
-      "id": "ward-official-0777e2471153aee6",
+      "id": "ward-official-5a8a69d252124cb7",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3633,19 +3683,19 @@
       "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
       "source_domain": "www.city.adachi.tokyo.jp",
       "venue": "柳原稲荷神社",
-      "event_name": "柳原西町会 / (柳原稲荷神社祭礼)",
+      "event_name": "柳原西町会 / (こども御輿)",
       "organizer": "柳原西町会",
-      "festival_name": "柳原稲荷神社祭礼",
+      "festival_name": "こども御輿",
       "region": "足立区",
       "event_year": 2026,
       "event_date_text": "9月19日 / (土曜日) / 10時",
       "address": "柳原2-38-1（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 10時 / 柳原西町会 / (柳原稲荷神社祭礼) / 柳原稲荷神社 / 柳原2-38-1（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 10時 / 柳原西町会 / (こども御輿) / 柳原稲荷神社 / 柳原2-38-1（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10108
+      "source_row_index": 10110
     },
     {
       "id": "ward-official-63d96ed6eb694a3c",
@@ -3670,7 +3720,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10109
+      "source_row_index": 10111
     },
     {
       "id": "ward-official-7b7ce6fcd69a1886",
@@ -3695,7 +3745,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10110
+      "source_row_index": 10112
     },
     {
       "id": "ward-official-e0d83ba7ceaf286d",
@@ -3720,7 +3770,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10111
+      "source_row_index": 10113
     },
     {
       "id": "ward-official-670e7add3c6a4bc4",
@@ -3745,7 +3795,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10112
+      "source_row_index": 10114
     },
     {
       "id": "ward-official-44e3bf3695481e92",
@@ -3770,10 +3820,10 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10113
+      "source_row_index": 10115
     },
     {
-      "id": "ward-official-323239f70537f17b",
+      "id": "ward-official-5f0a99b604afaf28",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3789,13 +3839,13 @@
       "region": "足立区",
       "event_year": 2026,
       "event_date_text": "9月19日 / (土曜日) / 9月20日 / (日曜日) / 19時",
-      "address": "千住旭町30（外部サイトへリンク）",
+      "address": "千住旭町30-1（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 9月20日 / (日曜日) / 19時 / 日ノ出町自治会 / (盆踊り大会) / 千住旭公園 / 千住旭町30（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 9月20日 / (日曜日) / 19時 / 日ノ出町自治会 / (盆踊り大会) / 千住旭公園 / 千住旭町30-1（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10114
+      "source_row_index": 10116
     },
     {
       "id": "ward-official-58de58a79c632761",
@@ -3820,7 +3870,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10115
+      "source_row_index": 10117
     },
     {
       "id": "ward-official-d2fb664a6b7f2f48",
@@ -3845,10 +3895,10 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10116
+      "source_row_index": 10118
     },
     {
-      "id": "ward-official-af159eb3467fc60b",
+      "id": "ward-official-ef3d4d421ea2a237",
       "decision": "pending",
       "suggested_source_type": "official",
       "suggested_score": 92,
@@ -3858,19 +3908,19 @@
       "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
       "source_domain": "www.city.adachi.tokyo.jp",
       "venue": "東二丁目自治会館前出発",
-      "event_name": "千住旭町自治会 / 千住旭町会 / 千住東二丁目自治会 / (三町連合神輿渡御)",
-      "organizer": "千住旭町自治会 / 千住旭町会 / 千住東二丁目自治会",
+      "event_name": "千住旭町自治会 / 千住旭町会 / 東二 / ※東二＝千住東町町会と千住東二丁目自治会合同の祭礼員会 / (三町連合神輿渡御)",
+      "organizer": "千住旭町自治会 / 千住旭町会 / 東二 / ※東二＝千住東町町会と千住東二丁目自治会合同の祭礼員会",
       "festival_name": "三町連合神輿渡御",
       "region": "足立区",
       "event_year": 2026,
       "event_date_text": "9月20日 / (日曜日) / 14時",
       "address": "千住東2-20-14（外部サイトへリンク）",
       "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月20日 / (日曜日) / 14時 / 千住旭町自治会 / 千住旭町会 / 千住東二丁目自治会 / (三町連合神輿渡御) / 東二丁目自治会館前出発 / 千住東2-20-14（外部サイトへリンク） / 千住区民事務所",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月20日 / (日曜日) / 14時 / 千住旭町自治会 / 千住旭町会 / 東二 / ※東二＝千住東町町会と千住東二丁目自治会合同の祭礼員会 / (三町連合神輿渡御) / 東二丁目自治会館前出発 / 千住東2-20-14（外部サイトへリンク） / 千住区民事務所",
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10117
+      "source_row_index": 10119
     },
     {
       "id": "ward-official-e33bdb4a8d72c100",
@@ -3895,7 +3945,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10118
+      "source_row_index": 10120
     },
     {
       "id": "ward-official-e05a4d8d815cbd2e",
@@ -3920,7 +3970,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10119
+      "source_row_index": 10121
     },
     {
       "id": "ward-official-33d4dc0e55688b87",
@@ -3945,7 +3995,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10120
+      "source_row_index": 10122
     },
     {
       "id": "ward-official-076519c26a512cf7",
@@ -3970,7 +4020,32 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10121
+      "source_row_index": 10123
+    },
+    {
+      "id": "ward-official-a7b95dd17a852454",
+      "decision": "pending",
+      "suggested_source_type": "official",
+      "suggested_score": 92,
+      "reason": "区公式イベント一覧から行単位で抽出",
+      "source_origin": "ward_official_source_registry",
+      "source_registry_id": "adachi-bonfes-2026",
+      "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+      "source_domain": "www.city.adachi.tokyo.jp",
+      "venue": "橋戸稲荷神社",
+      "event_name": "千住橋戸町自治会 / (橋戸稲荷神社祭礼)",
+      "organizer": "千住橋戸町自治会",
+      "festival_name": "橋戸稲荷神社祭礼",
+      "region": "足立区",
+      "event_year": 2026,
+      "event_date_text": "9月27日 / (日曜日) / 9時",
+      "address": "千住橋戸町25-1（外部サイトへリンク）",
+      "status_hint": "",
+      "memo": "ward registry: adachi-bonfes-2026 / 9月27日 / (日曜日) / 9時 / 千住橋戸町自治会 / (橋戸稲荷神社祭礼) / 橋戸稲荷神社 / 千住橋戸町25-1（外部サイトへリンク） / 千住区民事務所",
+      "registry_source_type": "event_calendar",
+      "registry_format": "html_table",
+      "parse_mode": "html_table_row",
+      "source_row_index": 10124
     },
     {
       "id": "ward-official-26ce51fb1fea7e71",
@@ -3995,32 +4070,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10122
-    },
-    {
-      "id": "ward-official-0909fadd667372bd",
-      "decision": "pending",
-      "suggested_source_type": "official",
-      "suggested_score": 92,
-      "reason": "区公式イベント一覧から行単位で抽出",
-      "source_origin": "ward_official_source_registry",
-      "source_registry_id": "adachi-bonfes-2026",
-      "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
-      "source_domain": "www.city.adachi.tokyo.jp",
-      "venue": "橋戸稲荷神社",
-      "event_name": "千住橋戸町自治会 / (橋戸稲荷神社祭礼)",
-      "organizer": "千住橋戸町自治会",
-      "festival_name": "橋戸稲荷神社祭礼",
-      "region": "足立区",
-      "event_year": 2026,
-      "event_date_text": "9月27日 / (日曜日) / 未定",
-      "address": "千住橋戸町25-1（外部サイトへリンク）",
-      "status_hint": "",
-      "memo": "ward registry: adachi-bonfes-2026 / 9月27日 / (日曜日) / 未定 / 千住橋戸町自治会 / (橋戸稲荷神社祭礼) / 橋戸稲荷神社 / 千住橋戸町25-1（外部サイトへリンク） / 千住区民事務所",
-      "registry_source_type": "event_calendar",
-      "registry_format": "html_table",
-      "parse_mode": "html_table_row",
-      "source_row_index": 10123
+      "source_row_index": 10125
     },
     {
       "id": "ward-official-5301db5550cdca89",
@@ -4045,7 +4095,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10124
+      "source_row_index": 10126
     },
     {
       "id": "ward-official-1cd973d8b126130c",
@@ -4070,7 +4120,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10125
+      "source_row_index": 10127
     },
     {
       "id": "ward-official-c7f129c45bd5a171",
@@ -4095,7 +4145,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10126
+      "source_row_index": 10128
     },
     {
       "id": "ward-official-6e76ffd8e6c0d29c",
@@ -4120,7 +4170,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10127
+      "source_row_index": 10129
     },
     {
       "id": "ward-official-50a3e97fb5f735af",
@@ -4145,7 +4195,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10128
+      "source_row_index": 10130
     },
     {
       "id": "ward-official-7349b63d2f925f91",
@@ -4170,7 +4220,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10129
+      "source_row_index": 10131
     },
     {
       "id": "ward-official-4ee45599e99e7931",
@@ -4195,7 +4245,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10130
+      "source_row_index": 10132
     },
     {
       "id": "ward-official-e86950841070ece0",
@@ -4220,7 +4270,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10131
+      "source_row_index": 10133
     },
     {
       "id": "ward-official-9bc66d83ede8302d",
@@ -4245,7 +4295,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10132
+      "source_row_index": 10134
     },
     {
       "id": "ward-official-02261925282ca984",
@@ -4270,7 +4320,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10133
+      "source_row_index": 10135
     },
     {
       "id": "ward-official-19d6a6f7c4199e4a",
@@ -4295,7 +4345,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10134
+      "source_row_index": 10136
     },
     {
       "id": "ward-official-6438870853407730",
@@ -4320,7 +4370,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10135
+      "source_row_index": 10137
     },
     {
       "id": "ward-official-f91846b13ca62560",
@@ -4345,7 +4395,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10136
+      "source_row_index": 10138
     },
     {
       "id": "ward-official-8bd8a2e3f582abbf",
@@ -4370,7 +4420,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10137
+      "source_row_index": 10139
     },
     {
       "id": "ward-official-93cf7114be47aac0",
@@ -4395,7 +4445,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10138
+      "source_row_index": 10140
     },
     {
       "id": "ward-official-ed7d3a24e6e96f2e",
@@ -4420,7 +4470,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10139
+      "source_row_index": 10141
     },
     {
       "id": "ward-official-16b86ac97a62e690",
@@ -4445,7 +4495,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10140
+      "source_row_index": 10142
     },
     {
       "id": "ward-official-0e3873bb4e9a9e26",
@@ -4470,7 +4520,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10141
+      "source_row_index": 10143
     },
     {
       "id": "ward-official-6f69aa5d9eb72b5c",
@@ -4495,7 +4545,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10142
+      "source_row_index": 10144
     },
     {
       "id": "ward-official-ecd450ee8cf1ef52",
@@ -4520,7 +4570,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10143
+      "source_row_index": 10145
     },
     {
       "id": "ward-official-a6531ac8bd9a432c",
@@ -4545,7 +4595,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10144
+      "source_row_index": 10146
     },
     {
       "id": "ward-official-fac2820c9082698a",
@@ -4570,7 +4620,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10145
+      "source_row_index": 10147
     },
     {
       "id": "ward-official-7a586a706ef07282",
@@ -4595,7 +4645,7 @@
       "registry_source_type": "event_calendar",
       "registry_format": "html_table",
       "parse_mode": "html_table_row",
-      "source_row_index": 10146
+      "source_row_index": 10148
     }
   ]
 }

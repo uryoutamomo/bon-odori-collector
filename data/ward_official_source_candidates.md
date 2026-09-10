@@ -2,7 +2,7 @@
 
 - safety: official-source review candidates only; no canonical or public event write
 - registry sources: 21
-- candidates: 176
+- candidates: 178
 
 | 区 | ページ | URL | 日付候補 |
 |---|---|---|---|
@@ -116,16 +116,16 @@
 | 足立区 | 保塚町町会 / 一ツ家二丁目町会 / (盆踊り大会) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 8月29日 / (土曜日) / ※雨天延期 / 8月30日 / (日曜日) / 18時 |
 | 足立区 | 千住中居町会 / (縁日) / (奉納踊り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月5日 / (土曜日) / 17時30分 / 18時30分 |
 | 足立区 | 梅田神明町自治会 / (盆踊り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月5日 / (土曜日) / 18時 |
-| 足立区 | 六木四丁目町会 / (六木四丁目町会 こども祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月6日 / (日曜日) / 10時 |
+| 足立区 | 六木四丁目町会 / (六木四丁目町会 こども祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月6日 / (日曜日) / 9月13日 / （日曜日） / 10時 |
 | 足立区 | 千住関屋町会 / (夏のお楽しみ会) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月6日 / (日曜日) / 11時 |
 | 足立区 | 西新井緑町会 / (西新井緑町会夏まつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月6日 / (日曜日) / 15時 |
-| 足立区 | 千住緑町町会 / (千住神社祭礼宵宮子供神輿) / (千住神社祭礼宵宮大人神輿、山車渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 13時 / 18時 |
+| 足立区 | 千住緑町町会 / (千住神社祭礼宵宮大人神輿) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 17時15分 |
 | 足立区 | 大谷田上自治会 / (オータムフェスタ) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 14時 |
 | 足立区 | 千住桜木町町会 / (元宿堰稲荷神社祭礼宵宮) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 17時 |
 | 足立区 | 千住一丁目町会、千住二丁目町会、千住三丁目町会、千住四丁目町会、千住五丁目町会 / (千住本町五町会連合宵宮) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 17時45分 |
 | 足立区 | 千住大川町、千住元町町会、千住柳町々会、千住寿町、千住中居町会、千住宮元町町会 / (千住祭連絡会宵宮) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 18時 |
-| 足立区 | 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼宵宮) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 未定 |
-| 足立区 | 千住宮元町町会 / (八幡神社例祭宵宮大人神輿渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 未定 |
+| 足立区 | 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼宵宮) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 10時 |
+| 足立区 | 千住宮元町町会 / (八幡神社例祭宵宮大人神輿渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 18時30分 |
 | 足立区 | 千住五丁目町会 / 千住大川町 / (氷川神社大祭) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 9時13日 / (日曜日) / 各町会ごとに開始(土曜日) / 8時30分(日曜日) |
 | 足立区 | 鹿浜古内町会 / (本祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 9月13日 / (日曜日) / 9時(土曜日) / 8時(日曜日) |
 | 足立区 | 椿町会 / (陰祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月12日 / (土曜日) / 9月13日 / (日曜日) / 9時(土曜日) / 10時(日曜日) |
@@ -138,12 +138,14 @@
 | 足立区 | 千住緑町町会 / (千住神社神輿) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
 | 足立区 | 千住桜木町町会 / (元宿堰稲荷神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
 | 足立区 | 千住二丁目町会 / (千住神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
+| 足立区 | 千住緑町祭礼 / (千住神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時 |
+| 足立区 | 千住一丁目町会 / (千住神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 10時 |
 | 足立区 | 狭間町会 / (はざままつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 13時 |
 | 足立区 | 千住四丁目町会 / (千住四丁目氷川神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 10時 |
 | 足立区 | 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼) / (元宿堰稲荷神社祭礼神輿、山車渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 10時 / 13時30分 |
-| 足立区 | 千住宮元町町会 / (八幡神社例祭本宮大人神輿、子供神輿、山車渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 未定 |
+| 足立区 | 千住宮元町町会 / (八幡神社例祭本宮大人神輿、子供神輿、山車渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月13日 / (日曜日) / 9時30分 |
 | 足立区 | 柳原北町会 / 柳原南町会 / 柳原西町会 / 柳原東町会 / (柳原稲荷神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月17日 / (木曜日) / 9月18日 / (金曜日) / 9月19日 / (土曜日) / 18時30分 |
-| 足立区 | 柳原西町会 / (柳原稲荷神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月19日 / (土曜日) / 10時 |
+| 足立区 | 柳原西町会 / (こども御輿) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月19日 / (土曜日) / 10時 |
 | 足立区 | 六木三丁目町会 / (六木三丁目町会 子ども祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月19日 / (土曜日) / 16時 |
 | 足立区 | 足立高砂町会 / (三町連合万灯神輿渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月19日 / (土曜日) / 18時 |
 | 足立区 | 扇三丁目町会 / (秋祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月19日 / (土曜日) / 9月20日 / (日曜日) / 9時 |
@@ -152,13 +154,13 @@
 | 足立区 | 日ノ出町自治会 / (盆踊り大会) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月19日 / (土曜日) / 9月20日 / (日曜日) / 19時 |
 | 足立区 | 足立高砂町会 / (高砂神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月20日 / (日曜日) / 9時 |
 | 足立区 | 千住仲町会 / (仲町氷川神社祭礼) / (仲町氷川神社祭礼神輿渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月20日 / (日曜日) / 10時 / 13時 |
-| 足立区 | 千住旭町自治会 / 千住旭町会 / 千住東二丁目自治会 / (三町連合神輿渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月20日 / (日曜日) / 14時 |
+| 足立区 | 千住旭町自治会 / 千住旭町会 / 東二 / ※東二＝千住東町町会と千住東二丁目自治会合同の祭礼員会 / (三町連合神輿渡御) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月20日 / (日曜日) / 14時 |
 | 足立区 | 鹿浜団地自治会 / (鹿浜団地まつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月26日 / (土曜日) / 10時 |
 | 足立区 | 千住橋戸町自治会 / (演芸会) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月26日 / (土曜日) / 18時 |
 | 足立区 | 栗原町会 / (栗原町会第3・5・11支部合同子供夏まつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月26日 / (土曜日) / 9月27日 / (日曜日) / 9時 |
 | 足立区 | 古千谷本町町会 / (古千谷氷川神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月26日 / (土曜日) / 9月27日 / (日曜日) / 18時 |
+| 足立区 | 千住橋戸町自治会 / (橋戸稲荷神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月27日 / (日曜日) / 9時 |
 | 足立区 | 水神町会 / (水神町会ふれあい祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月27日 / (日曜日) / 11時 |
-| 足立区 | 千住橋戸町自治会 / (橋戸稲荷神社祭礼) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 9月27日 / (日曜日) / 未定 |
 | 足立区 | 西新井中央町会 / (町会祭り) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 10月3日 / (土曜日) / 10月4日 / (日曜日) / 13時 |
 | 足立区 | 千住東一丁目町会 / (仲町氷川神社例祭) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 10月4日 / (日曜日) / 9時15分 |
 | 足立区 | 都住加賀二丁目自治会 / (キッチンカーフェスティバル) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 10月4日 / (日曜日) / 11時 |
