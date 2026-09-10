@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7986,
+  "count": 7985,
   "summary": {
     "critical": 53,
-    "high": 1428,
+    "high": 1427,
     "trusted_informant": 58,
     "already_read": 3,
     "date_gap_matched": 126
@@ -5303,27 +5303,6 @@
         "https://pbs.twimg.com/amplify_video_thumb/2091751337616969728/img/0jaBXmgbTrZvLjUV.jpg"
       ],
       "text": "8/23①新小岩銀座 夏まつり\n\n木津かおりさんらの民謡ユニット、唄花座ステージ🎶\n\n伊勢音頭、こきりこ節、日光和楽踊り、秋田おばこなど、重なり合う唄声と演奏と踊りに魅了されました✨とくに瞽女唄かわいがらんせは圧巻！\n\n真室川音頭やおてもやん、郡上白鳥、炭坑節などでは踊りも楽しめました〜🙌 https://t.co/aEapH0beOJ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_2fceccb9cf71b23c",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@Rabbit_san777",
-      "account_name": "ラビットさん",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/Rabbit_san777/status/2065296491825217669",
-      "tweet_id": "2065296491825217669",
-      "date": "2026-06-12T04:53:49+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HKloNjGbAAAV-2i.jpg",
-        "https://t.co/iKNQyk9VU7",
-        "pic.x.com/iKNQyk9VU7"
-      ],
-      "text": "8/2開催のDJ盆踊りポスター協力店さんを募集中‼️\n店内＆店外にDJ盆踊りポスターを貼らせて頂ける飲食店・お店・ヘアサロン..etc\nありましたらDMよろしくお願い申し上げます❣️\n\n後日ポスター持って伺います🙏全員参加型★みんなで作る夏祭り\n\nみなさんのお力をどうか🐰にお貸しください🙇‍♂️✨\n#淀川音楽祭 https://t.co/iKNQyk9VU7",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

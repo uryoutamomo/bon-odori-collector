@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-10",
   "updated_by": "machine:x_source_registry_v2",
   "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
   "accounts": [
@@ -4856,11 +4856,28 @@
           "evidence_urls": [
             "https://x.com/ryoichiezoe/status/2086404078180184254"
           ]
+        },
+        {
+          "series_id": "series_2ed41a829eea4f68",
+          "series_name": "江戸川一丁目町会・江戸川共栄商店街 チャリティ盆踊り大会",
+          "ward": "江戸川区",
+          "confidence": "possible",
+          "evidence_urls": [
+            "https://x.com/ryoichiezoe/status/2081352196852240703"
+          ]
+        },
+        {
+          "series_id": "series_6b9769bcac44c29c",
+          "series_name": "内手昭和会・親子盆踊り大会",
+          "ward": "江戸川区",
+          "confidence": "possible",
+          "evidence_urls": [
+            "https://x.com/ryoichiezoe/status/2081000627304546525"
+          ]
         }
       ],
       "decided_by": "machine",
-      "tier": "pending_review",
-      "pending_since": "2026-08-13"
+      "tier": "active"
     },
     {
       "handle": "@ryoikarashi662",
