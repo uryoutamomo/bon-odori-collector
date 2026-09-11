@@ -1,9 +1,9 @@
 # 運用メトリクス最新
 
-- snapshot_date: 2026-09-11
-- collected_at: 2026-09-10T22:16:31.834082+00:00
+- snapshot_date: 2026-09-12
+- collected_at: 2026-09-11T22:16:37.650253+00:00
 - youtube_run_status: no_rows
-- youtube_run_generated_at: 2026-09-10T22:16:31.686997+00:00
+- youtube_run_generated_at: 2026-09-11T22:16:37.513987+00:00
 
 | 指標 | 現在 | 前回差分 |
 | --- | ---: | ---: |
