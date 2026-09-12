@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-11T11:31:55.488638+00:00",
+  "generated_at": "2026-09-12T10:57:54.395688+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,444 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_403adc5435a7635b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大森南】7/23(木)、24(金)浦守稲荷神社で大森南自治会「納涼盆おどり大会」\n盆踊りの季節ですね～🏮✨遠くから聞こえてくる太鼓の音を",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079038594434629919",
+      "source_url": "https://x.com/otafull/status/2079038594434629919",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6b3ee11f6ee3222e6608e6f2fd82dfa5580ec2368edb9ce3a54d30a62c0685b6",
+      "last_seen_at": "github-34689214273-1",
+      "created_at": "2026-09-12T10:57:14.412822+00:00",
+      "updated_at": "2026-09-12T10:57:14.412822+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e1ccd8519853fd6e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/23"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区大森南3-27-8",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/152793",
+          "venue": "浦守稲荷神社"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2079038594434629919",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大森南】7/23(木)、24(金)浦守稲荷神社で大森南自治会「納涼盆おどり大会」\n盆踊りの季節ですね～🏮✨遠くから聞こえてくる太鼓の音を想像するだけで、なんだかワクワクしちゃいます💕\nhttps://t.co/PjRtcYo7g5\n#大田区　#商店街　#大森南　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2079038594434629919",
+        "source_urls": [
+          "https://x.com/otafull/status/2079038594434629919"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-20T03:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【大森南】7/23(木)、24(金)浦守稲荷神社で大森南自治会「納涼盆おどり大会」\n盆踊りの季節ですね～🏮✨遠くから聞こえてくる太鼓の音を想像するだけで、なんだかワクワクしちゃいます💕\nhttps://t.co/PjRtcYo7g5\n#大田区　#商店街　#大森南　#盆踊り",
+          "title": "",
+          "tweet_id": "2079038594434629919",
+          "url": "https://x.com/otafull/status/2079038594434629919"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_72004f04fef77b14",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7月18日（土）、当神社にて地元自治会主催の「茅の輪くぐり」神事が無事執り行われました。\nまずご社殿にて神事を奉仕し、続いて茅の輪を、宮司の先導に続いて参列の皆",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079032957864714548",
+      "source_url": "https://x.com/Yodohime_Jinja/status/2079032957864714548",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "02d0d2be170e8d773cf513f84cbf8e4930c9a3975485389f1bf4a6a36966937e",
+      "last_seen_at": "github-34689214273-1",
+      "created_at": "2026-09-12T10:57:14.412822+00:00",
+      "updated_at": "2026-09-12T10:57:14.412822+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_98af67481fd078ec",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月18日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Yodohime_Jinja",
+        "source_count": 1,
+        "source_key": "x:2079032957864714548",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNo1amfasAAgtrJ.jpg",
+          "https://t.co/wyisGaLSsi",
+          "pic.x.com/wyisGaLSsi",
+          "https://pbs.twimg.com/media/HNo1amdbwAAScwX.jpg",
+          "https://pbs.twimg.com/media/HNo1amZasAASRax.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "與止日女神社",
+          "classification": "registered_official_social",
+          "handle": "@yodohime_jinja",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7月18日（土）、当神社にて地元自治会主催の「茅の輪くぐり」神事が無事執り行われました。\nまずご社殿にて神事を奉仕し、続いて茅の輪を、宮司の先導に続いて参列の皆さまも三度くぐり、無病息災を祈念しました。続いて自治会女性部による盆踊りも行われるなど、和やかなひとときとなりました。 https://t.co/wyisGaLSsi",
+        "source_url": "https://x.com/Yodohime_Jinja/status/2079032957864714548",
+        "source_urls": [
+          "https://x.com/Yodohime_Jinja/status/2079032957864714548"
+        ],
+        "voice": {
+          "account": "@Yodohime_Jinja",
+          "date": "2026-07-20T02:37:38+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNo1amfasAAgtrJ.jpg",
+            "https://t.co/wyisGaLSsi",
+            "pic.x.com/wyisGaLSsi",
+            "https://pbs.twimg.com/media/HNo1amdbwAAScwX.jpg",
+            "https://pbs.twimg.com/media/HNo1amZasAASRax.jpg"
+          ],
+          "name": "與止日女神社",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "7月18日（土）、当神社にて地元自治会主催の「茅の輪くぐり」神事が無事執り行われました。\nまずご社殿にて神事を奉仕し、続いて茅の輪を、宮司の先導に続いて参列の皆さまも三度くぐり、無病息災を祈念しました。続いて自治会女性部による盆踊りも行われるなど、和やかなひとときとなりました。 https://t.co/wyisGaLSsi",
+          "title": "",
+          "tweet_id": "2079032957864714548",
+          "url": "https://x.com/Yodohime_Jinja/status/2079032957864714548"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_74d29a0c839dd43e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/1(土)に盆踊りが予定されている万福寺おやしろ公園で、準備を兼ねた草刈りが行われました。\n\n町会関係者に加え、アジア航測（株）社員の皆さんがご家族と参加され",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2078969091378102624",
+      "source_url": "https://x.com/Kobatake1980/status/2078969091378102624",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ef1313c08e489efc8455191a266e0ab6d25f21397cf3eff4f3705d0fceafbeee",
+      "last_seen_at": "github-34689214273-1",
+      "created_at": "2026-09-12T10:57:14.412822+00:00",
+      "updated_at": "2026-09-12T10:57:14.412822+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3b096f4403b0baa5",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Kobatake1980",
+        "source_count": 1,
+        "source_key": "x:2078969091378102624",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2078969027444314112/img/RKjSzFp4k_0RPKzR.jpg",
+          "https://t.co/c7MdZlTEsg",
+          "pic.x.com/c7MdZlTEsg"
+        ],
+        "source_officiality": {
+          "account_name": "小林たけし　神奈川県議会議員【川崎市麻生区】（自民党）",
+          "classification": "registered_official_social",
+          "handle": "@kobatake1980",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/1(土)に盆踊りが予定されている万福寺おやしろ公園で、準備を兼ねた草刈りが行われました。\n\n町会関係者に加え、アジア航測（株）社員の皆さんがご家族と参加されるなど和気あいあいの作業となりました。\n\nその他にも小田急電鉄（株）、三井グループ、区役所などの関係者も集まりました。\n\n万福寺町内会は、新百合ヶ丘駅前の事業者の協力を得ながら上手く町会活動を展開されていると思います。",
+        "source_url": "https://x.com/Kobatake1980/status/2078969091378102624",
+        "source_urls": [
+          "https://x.com/Kobatake1980/status/2078969091378102624"
+        ],
+        "voice": {
+          "account": "@Kobatake1980",
+          "date": "2026-07-19T22:23:51+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2078969027444314112/img/RKjSzFp4k_0RPKzR.jpg",
+            "https://t.co/c7MdZlTEsg",
+            "pic.x.com/c7MdZlTEsg"
+          ],
+          "name": "小林たけし　神奈川県議会議員【川崎市麻生区】（自民党）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "8/1(土)に盆踊りが予定されている万福寺おやしろ公園で、準備を兼ねた草刈りが行われました。\n\n町会関係者に加え、アジア航測（株）社員の皆さんがご家族と参加されるなど和気あいあいの作業となりました。\n\nその他にも小田急電鉄（株）、三井グループ、区役所などの関係者も集まりました。\n\n万福寺町内会は、新百合ヶ丘駅前の事業者の協力を得ながら上手く町会活動を展開されていると思います。",
+          "title": "",
+          "tweet_id": "2078969091378102624",
+          "url": "https://x.com/Kobatake1980/status/2078969091378102624"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a3f477d2cb03ce9d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日は、7月25日（土）に開催される野崎第一自治会盆踊り大会に向けて、櫓組をはじめとした会場準備を行いました😊\n\n皆さんと協力しながら、盆踊り当日に向けて一つひ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2078759991172083886",
+      "source_url": "https://x.com/goodjobkomei/status/2078759991172083886",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0667e57ea2b25c4fbc8a26fe174b0fc1e6e35eac18fb0fe0102f5d93fe74a156",
+      "last_seen_at": "github-34689214273-1",
+      "created_at": "2026-09-12T10:57:14.412822+00:00",
+      "updated_at": "2026-09-12T10:57:14.412822+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2343dd624077410e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月25日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@goodjobkomei",
+        "source_count": 1,
+        "source_key": "x:2078759991172083886",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNk9MMzaAAAdvPH.jpg",
+          "https://t.co/gZbkphQhAT",
+          "pic.x.com/gZbkphQhAT",
+          "https://pbs.twimg.com/media/HNk9MMlaoAAj69H.jpg",
+          "https://pbs.twimg.com/media/HNk9MMubAAAuTLX.jpg",
+          "https://pbs.twimg.com/media/HNk9MMjboAABat-.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "あずま健太郎 大東市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@goodjobkomei",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日は、7月25日（土）に開催される野崎第一自治会盆踊り大会に向けて、櫓組をはじめとした会場準備を行いました😊\n\n皆さんと協力しながら、盆踊り当日に向けて一つひとつ準備を進めました。\n\n暑い中での作業となりましたが、皆さんと声を掛け合いながら汗を流し、地域の温かいつながりを感じる一日となりました☀️💪\n\nいよいよ本番まであとわずかです🎆\n\n当日は、盆踊りをはじめ、模擬店やくじ引き、おかしすくい、キッチンカーなど、ご家族皆さんで楽しめる催しが予定されています🍧✨\n\nぜひ、ご家族やご友人とお誘い合わせのうえ、お越しください😊",
+        "source_url": "https://x.com/goodjobkomei/status/2078759991172083886",
+        "source_urls": [
+          "https://x.com/goodjobkomei/status/2078759991172083886"
+        ],
+        "voice": {
+          "account": "@goodjobkomei",
+          "date": "2026-07-19T08:32:58+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNk9MMzaAAAdvPH.jpg",
+            "https://t.co/gZbkphQhAT",
+            "pic.x.com/gZbkphQhAT",
+            "https://pbs.twimg.com/media/HNk9MMlaoAAj69H.jpg",
+            "https://pbs.twimg.com/media/HNk9MMubAAAuTLX.jpg",
+            "https://pbs.twimg.com/media/HNk9MMjboAABat-.jpg"
+          ],
+          "name": "あずま健太郎 大東市議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "本日は、7月25日（土）に開催される野崎第一自治会盆踊り大会に向けて、櫓組をはじめとした会場準備を行いました😊\n\n皆さんと協力しながら、盆踊り当日に向けて一つひとつ準備を進めました。\n\n暑い中での作業となりましたが、皆さんと声を掛け合いながら汗を流し、地域の温かいつながりを感じる一日となりました☀️💪\n\nいよいよ本番まであとわずかです🎆\n\n当日は、盆踊りをはじめ、模擬店やくじ引き、おかしすくい、キッチンカーなど、ご家族皆さんで楽しめる催しが予定されています🍧✨\n\nぜひ、ご家族やご友人とお誘い合わせのうえ、お越しください😊",
+          "title": "",
+          "tweet_id": "2078759991172083886",
+          "url": "https://x.com/goodjobkomei/status/2078759991172083886"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_fb90bc6ed7d96a42",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "廻澤稲荷神社にて納涼盆踊り大会が昨日と今日開催されています。18時からの盆踊り前に関係者の皆様にご挨拶してきました。ご盛会を祈念します。#世田谷区　#盆踊り　#",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2078749772656345447",
+      "source_url": "https://x.com/mana_setagaya/status/2078749772656345447",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "47e677f4767b2745828cea858919223eeed6975fa5039d2f93a58f1a972d225c",
+      "last_seen_at": "github-34689214273-1",
+      "created_at": "2026-09-12T10:57:14.412822+00:00",
+      "updated_at": "2026-09-12T10:57:14.412822+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_074d31d22565b8ff",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@mana_setagaya",
+        "source_count": 1,
+        "source_key": "x:2078749772656345447",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNkzWVPawAAqrtg.jpg",
+          "https://t.co/xRS3y0dhnF",
+          "pic.x.com/xRS3y0dhnF",
+          "https://pbs.twimg.com/media/HNkzWWKaIAAfEoZ.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "藤井まな：世田谷区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@mana_setagaya",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n廻澤稲荷神社にて納涼盆踊り大会が昨日と今日開催されています。18時からの盆踊り前に関係者の皆様にご挨拶してきました。ご盛会を祈念します。#世田谷区　#盆踊り　#納涼盆踊り大会　#廻澤　#廻澤稲荷神社　#千歳台　#世田谷区千歳台　#夏祭り　#廻澤神社 https://t.co/xRS3y0dhnF",
+        "source_url": "https://x.com/mana_setagaya/status/2078749772656345447",
+        "source_urls": [
+          "https://x.com/mana_setagaya/status/2078749772656345447"
+        ],
+        "voice": {
+          "account": "@mana_setagaya",
+          "date": "2026-07-19T07:52:21+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNkzWVPawAAqrtg.jpg",
+            "https://t.co/xRS3y0dhnF",
+            "pic.x.com/xRS3y0dhnF",
+            "https://pbs.twimg.com/media/HNkzWWKaIAAfEoZ.jpg"
+          ],
+          "name": "藤井まな：世田谷区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "廻澤稲荷神社にて納涼盆踊り大会が昨日と今日開催されています。18時からの盆踊り前に関係者の皆様にご挨拶してきました。ご盛会を祈念します。#世田谷区　#盆踊り　#納涼盆踊り大会　#廻澤　#廻澤稲荷神社　#千歳台　#世田谷区千歳台　#夏祭り　#廻澤神社 https://t.co/xRS3y0dhnF",
+          "title": "",
+          "tweet_id": "2078749772656345447",
+          "url": "https://x.com/mana_setagaya/status/2078749772656345447"
         }
       }
     },
