@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "a425d1da5b06a71131f4570284ec80830168cc1fded5ae697521a7ac97c5e531",
-  "input_size_bytes": 2195772,
+  "input_sha256": "91ef64bf7b99ca51901c26de3f77306eac2fdc54846e7455a886e889a3bdcd38",
+  "input_size_bytes": 2196124,
   "item_count": 5,
   "items": [
     {
@@ -11,334 +11,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【盆踊り情報2026】【池上】7/19(日)堤方東町会「盆ダンス＆プロレスRevolution in 堤方東」開催\n🌟明日17:00 Open・18:00 St",
+      "title": "廻澤稲荷神社にて納涼盆踊り大会が昨日と今日開催されています。18時からの盆踊り前に関係者の皆様にご挨拶してきました。ご盛会を祈念します。#世田谷区　#盆踊り　#",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2078389313423986953",
-      "source_url": "https://x.com/otafull/status/2078389313423986953",
+      "source_key": "x:2078749772656345447",
+      "source_url": "https://x.com/mana_setagaya/status/2078749772656345447",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_f2097fc8feaabbb6",
-        "source_key": "x:2078389313423986953",
+        "candidate_id": "xgap_074d31d22565b8ff",
+        "source_key": "x:2078749772656345447",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2078389313423986953",
-        "source_text": "\n【盆踊り情報2026】【池上】7/19(日)堤方東町会「盆ダンス＆プロレスRevolution in 堤方東」開催\n🌟明日17:00 Open・18:00 Start🌟\n会場は池上第二小学校校庭(東門)です❣️\nhttps://t.co/zRPM4vZoyZ\n#大田区　#商店街　#池上　#盆踊り",
-        "source_author": "@otafull",
+        "source_url": "https://x.com/mana_setagaya/status/2078749772656345447",
+        "source_text": "\n廻澤稲荷神社にて納涼盆踊り大会が昨日と今日開催されています。18時からの盆踊り前に関係者の皆様にご挨拶してきました。ご盛会を祈念します。#世田谷区　#盆踊り　#納涼盆踊り大会　#廻澤　#廻澤稲荷神社　#千歳台　#世田谷区千歳台　#夏祭り　#廻澤神社 https://t.co/xRS3y0dhnF",
+        "source_author": "@mana_setagaya",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7/19"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
-          "title": "",
-          "text": "【盆踊り情報2026】【池上】7/19(日)堤方東町会「盆ダンス＆プロレスRevolution in 堤方東」開催\n🌟明日17:00 Open・18:00 Start🌟\n会場は池上第二小学校校庭(東門)です❣️\nhttps://t.co/zRPM4vZoyZ\n#大田区　#商店街　#池上　#盆踊り",
-          "url": "https://x.com/otafull/status/2078389313423986953",
-          "date": "2026-07-18T08:00:01+00:00",
-          "tweet_id": "2078389313423986953",
-          "tags": [
-            "🟡関心",
-            "q-base"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/otafull/status/2078389313423986953"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_06f898a3cd0fd915"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "盆踊りの準備、着々と進んでいます！\n先日、天王公園にて、町会関係者の皆さまと今週末に開催する納涼盆踊り大会の準備を行いました。\n\n納涼盆踊り大会は、7月24日（",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2078649707254211032",
-      "source_url": "https://x.com/sato_todacity/status/2078649707254211032",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_73b510c891f1c252",
-        "source_key": "x:2078649707254211032",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/sato_todacity/status/2078649707254211032",
-        "source_text": "\n盆踊りの準備、着々と進んでいます！\n先日、天王公園にて、町会関係者の皆さまと今週末に開催する納涼盆踊り大会の準備を行いました。\n\n納涼盆踊り大会は、7月24日（金）・25日（土）に天王公園で開催します。\n\n皆さまのご来場を心よりお待ちしております。\n\n#盆踊り #町会 #戸田市 #佐藤太信 https://t.co/VIk97nsNAo",
-        "source_author": "@sato_todacity",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@sato_todacity",
-          "account_name": "佐藤太信（戸田市議会議員）",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7月24日"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@sato_todacity",
-          "name": "佐藤太信（戸田市議会議員）",
-          "title": "",
-          "text": "盆踊りの準備、着々と進んでいます！\n先日、天王公園にて、町会関係者の皆さまと今週末に開催する納涼盆踊り大会の準備を行いました。\n\n納涼盆踊り大会は、7月24日（金）・25日（土）に天王公園で開催します。\n\n皆さまのご来場を心よりお待ちしております。\n\n#盆踊り #町会 #戸田市 #佐藤太信 https://t.co/VIk97nsNAo",
-          "url": "https://x.com/sato_todacity/status/2078649707254211032",
-          "date": "2026-07-19T01:14:44+00:00",
-          "tweet_id": "2078649707254211032",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HNjY4xvaEAA164U.jpg",
-            "https://t.co/VIk97nsNAo",
-            "pic.x.com/VIk97nsNAo"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/sato_todacity/status/2078649707254211032"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HNjY4xvaEAA164U.jpg",
-          "https://t.co/VIk97nsNAo",
-          "pic.x.com/VIk97nsNAo"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_a81e5e515d29042d"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "🍉夏休みスタート！\n\n昨晩、八雲小学校の盆踊り大会へ🏮\n\n紙芝居の読み聞かせや子どもたちの太鼓演奏など、「学校だからこそ」の温かい企画がいっぱい😊\n\n町会・住区",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2078662722259177484",
-      "source_url": "https://x.com/hama_yoko_/status/2078662722259177484",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_cbd39607dd88990e",
-        "source_key": "x:2078662722259177484",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/hama_yoko_/status/2078662722259177484",
-        "source_text": "\n🍉夏休みスタート！\n\n昨晩、八雲小学校の盆踊り大会へ🏮\n\n紙芝居の読み聞かせや子どもたちの太鼓演奏など、「学校だからこそ」の温かい企画がいっぱい😊\n\n町会・住区の皆さんが焼きそばやかき氷を準備し、地域みんなで子どもたちの夏を盛り上げていました✨\n\nそして今日は、7/24・25開催の碑文谷公園盆踊り大会の櫓組み立てへ！\n\n夏の思い出づくりに、ぜひ遊びに来てください🎐\n地域の皆さんと一緒にお待ちしています😊\n\n#目黒区 #八雲小学校 #碑文谷公園 #盆踊り",
-        "source_author": "@hama_yoko_",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@hama_yoko_",
-          "account_name": "はま よう子🌾公明党目黒区議会議員🌾RICE🍚",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7/24"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@hama_yoko_",
-          "name": "はま よう子🌾公明党目黒区議会議員🌾RICE🍚",
-          "title": "",
-          "text": "🍉夏休みスタート！\n\n昨晩、八雲小学校の盆踊り大会へ🏮\n\n紙芝居の読み聞かせや子どもたちの太鼓演奏など、「学校だからこそ」の温かい企画がいっぱい😊\n\n町会・住区の皆さんが焼きそばやかき氷を準備し、地域みんなで子どもたちの夏を盛り上げていました✨\n\nそして今日は、7/24・25開催の碑文谷公園盆踊り大会の櫓組み立てへ！\n\n夏の思い出づくりに、ぜひ遊びに来てください🎐\n地域の皆さんと一緒にお待ちしています😊\n\n#目黒区 #八雲小学校 #碑文谷公園 #盆踊り",
-          "url": "https://x.com/hama_yoko_/status/2078662722259177484",
-          "date": "2026-07-19T02:06:27+00:00",
-          "tweet_id": "2078662722259177484",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HNjkqOGagAAfQ5N.jpg",
-            "https://t.co/8KWzg4kIxT",
-            "pic.x.com/8KWzg4kIxT",
-            "https://pbs.twimg.com/media/HNjkqN8aEAAOXyB.jpg",
-            "https://pbs.twimg.com/media/HNjkqOGacAAaJpl.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/hama_yoko_/status/2078662722259177484"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HNjkqOGagAAfQ5N.jpg",
-          "https://t.co/8KWzg4kIxT",
-          "pic.x.com/8KWzg4kIxT",
-          "https://pbs.twimg.com/media/HNjkqN8aEAAOXyB.jpg",
-          "https://pbs.twimg.com/media/HNjkqOGacAAaJpl.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_7c6d8107ea17b9de"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "昨日7月18日(土)、河内長野市および富田林市における夏祭りの様子を見に伺いました。一部、大雨となりましたが、お会いできた方々と一緒に写真撮影させていただきまし",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2078712463726686565",
-      "source_url": "https://x.com/TomoakiShimada/status/2078712463726686565",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_0dc1383a73137344",
-        "source_key": "x:2078712463726686565",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/TomoakiShimada/status/2078712463726686565",
-        "source_text": "\n昨日7月18日(土)、河内長野市および富田林市における夏祭りの様子を見に伺いました。一部、大雨となりましたが、お会いできた方々と一緒に写真撮影させていただきました。\n　伺った順番に上げておきます。「千代田神社 宵宮祭」「美加の台夏まつり」「川西小学校夏祭り」「地車ふれあい盆踊り大会」「加賀田サマーフェスタ」「桜井町会盆踊り大会」。",
-        "source_author": "@TomoakiShimada",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@tomoakishimada",
-          "account_name": "島田智明 衆議院議員 自由民主党 大阪15区",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7月18日"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@TomoakiShimada",
-          "name": "島田智明 衆議院議員 自由民主党 大阪15区",
-          "title": "",
-          "text": "昨日7月18日(土)、河内長野市および富田林市における夏祭りの様子を見に伺いました。一部、大雨となりましたが、お会いできた方々と一緒に写真撮影させていただきました。\n　伺った順番に上げておきます。「千代田神社 宵宮祭」「美加の台夏まつり」「川西小学校夏祭り」「地車ふれあい盆踊り大会」「加賀田サマーフェスタ」「桜井町会盆踊り大会」。",
-          "url": "https://x.com/TomoakiShimada/status/2078712463726686565",
-          "date": "2026-07-19T05:24:06+00:00",
-          "tweet_id": "2078712463726686565",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HNkR9qkasAApKRr.jpg",
-            "https://t.co/4QBOsiP1rp",
-            "pic.x.com/4QBOsiP1rp",
-            "https://pbs.twimg.com/media/HNkR9qoaoAAYjeC.jpg",
-            "https://pbs.twimg.com/media/HNkR9qgbIAAZ9sv.jpg",
-            "https://pbs.twimg.com/media/HNkR9qjbYAAeuJg.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/TomoakiShimada/status/2078712463726686565"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HNkR9qkasAApKRr.jpg",
-          "https://t.co/4QBOsiP1rp",
-          "pic.x.com/4QBOsiP1rp",
-          "https://pbs.twimg.com/media/HNkR9qoaoAAYjeC.jpg",
-          "https://pbs.twimg.com/media/HNkR9qgbIAAZ9sv.jpg",
-          "https://pbs.twimg.com/media/HNkR9qjbYAAeuJg.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_a39b1efefb6e1264"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "昨日から準備を進めていた馬場南部自治会の盆踊りがいよいよ今夜18時半から、建功寺前の臨港バス折り返し地点で行います！\n今日は無理よという方も大丈夫。明日もやって",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2078746345054322987",
-      "source_url": "https://x.com/kisaki_tadamasa/status/2078746345054322987",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_0dc1809dbdcc5e06",
-        "source_key": "x:2078746345054322987",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/kisaki_tadamasa/status/2078746345054322987",
-        "source_text": "\n昨日から準備を進めていた馬場南部自治会の盆踊りがいよいよ今夜18時半から、建功寺前の臨港バス折り返し地点で行います！\n今日は無理よという方も大丈夫。明日もやってます！ https://t.co/Cti3ZYUASF",
-        "source_author": "@kisaki_tadamasa",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@kisaki_tadamasa",
-          "account_name": "木佐木ただまさ 日本共産党　神奈川県議会議員(鶴見区選出)",
+          "handle": "@mana_setagaya",
+          "account_name": "藤井まな：世田谷区議会議員",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -354,39 +49,349 @@
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@kisaki_tadamasa",
-          "name": "木佐木ただまさ 日本共産党　神奈川県議会議員(鶴見区選出)",
+          "account": "@mana_setagaya",
+          "name": "藤井まな：世田谷区議会議員",
           "title": "",
-          "text": "昨日から準備を進めていた馬場南部自治会の盆踊りがいよいよ今夜18時半から、建功寺前の臨港バス折り返し地点で行います！\n今日は無理よという方も大丈夫。明日もやってます！ https://t.co/Cti3ZYUASF",
-          "url": "https://x.com/kisaki_tadamasa/status/2078746345054322987",
-          "date": "2026-07-19T07:38:44+00:00",
-          "tweet_id": "2078746345054322987",
+          "text": "廻澤稲荷神社にて納涼盆踊り大会が昨日と今日開催されています。18時からの盆踊り前に関係者の皆様にご挨拶してきました。ご盛会を祈念します。#世田谷区　#盆踊り　#納涼盆踊り大会　#廻澤　#廻澤稲荷神社　#千歳台　#世田谷区千歳台　#夏祭り　#廻澤神社 https://t.co/xRS3y0dhnF",
+          "url": "https://x.com/mana_setagaya/status/2078749772656345447",
+          "date": "2026-07-19T07:52:21+00:00",
+          "tweet_id": "2078749772656345447",
           "tags": [
             "🟡関心",
-            "q-poster-flyer"
+            "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HNkwwxFbIAA1W9S.jpg",
-            "https://t.co/Cti3ZYUASF",
-            "pic.x.com/Cti3ZYUASF",
-            "https://pbs.twimg.com/media/HNkwxfPbcAELfZQ.jpg"
+            "https://pbs.twimg.com/media/HNkzWVPawAAqrtg.jpg",
+            "https://t.co/xRS3y0dhnF",
+            "pic.x.com/xRS3y0dhnF",
+            "https://pbs.twimg.com/media/HNkzWWKaIAAfEoZ.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/kisaki_tadamasa/status/2078746345054322987"
+          "https://x.com/mana_setagaya/status/2078749772656345447"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HNkwwxFbIAA1W9S.jpg",
-          "https://t.co/Cti3ZYUASF",
-          "pic.x.com/Cti3ZYUASF",
-          "https://pbs.twimg.com/media/HNkwxfPbcAELfZQ.jpg"
+          "https://pbs.twimg.com/media/HNkzWVPawAAqrtg.jpg",
+          "https://t.co/xRS3y0dhnF",
+          "pic.x.com/xRS3y0dhnF",
+          "https://pbs.twimg.com/media/HNkzWWKaIAAfEoZ.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_42299b80b52d2a66"
+      "inbox_id": "inbox_fb90bc6ed7d96a42"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "本日は、7月25日（土）に開催される野崎第一自治会盆踊り大会に向けて、櫓組をはじめとした会場準備を行いました😊\n\n皆さんと協力しながら、盆踊り当日に向けて一つひ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2078759991172083886",
+      "source_url": "https://x.com/goodjobkomei/status/2078759991172083886",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_2343dd624077410e",
+        "source_key": "x:2078759991172083886",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/goodjobkomei/status/2078759991172083886",
+        "source_text": "\n本日は、7月25日（土）に開催される野崎第一自治会盆踊り大会に向けて、櫓組をはじめとした会場準備を行いました😊\n\n皆さんと協力しながら、盆踊り当日に向けて一つひとつ準備を進めました。\n\n暑い中での作業となりましたが、皆さんと声を掛け合いながら汗を流し、地域の温かいつながりを感じる一日となりました☀️💪\n\nいよいよ本番まであとわずかです🎆\n\n当日は、盆踊りをはじめ、模擬店やくじ引き、おかしすくい、キッチンカーなど、ご家族皆さんで楽しめる催しが予定されています🍧✨\n\nぜひ、ご家族やご友人とお誘い合わせのうえ、お越しください😊",
+        "source_author": "@goodjobkomei",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@goodjobkomei",
+          "account_name": "あずま健太郎 大東市議会議員",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "7月25日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@goodjobkomei",
+          "name": "あずま健太郎 大東市議会議員",
+          "title": "",
+          "text": "本日は、7月25日（土）に開催される野崎第一自治会盆踊り大会に向けて、櫓組をはじめとした会場準備を行いました😊\n\n皆さんと協力しながら、盆踊り当日に向けて一つひとつ準備を進めました。\n\n暑い中での作業となりましたが、皆さんと声を掛け合いながら汗を流し、地域の温かいつながりを感じる一日となりました☀️💪\n\nいよいよ本番まであとわずかです🎆\n\n当日は、盆踊りをはじめ、模擬店やくじ引き、おかしすくい、キッチンカーなど、ご家族皆さんで楽しめる催しが予定されています🍧✨\n\nぜひ、ご家族やご友人とお誘い合わせのうえ、お越しください😊",
+          "url": "https://x.com/goodjobkomei/status/2078759991172083886",
+          "date": "2026-07-19T08:32:58+00:00",
+          "tweet_id": "2078759991172083886",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNk9MMzaAAAdvPH.jpg",
+            "https://t.co/gZbkphQhAT",
+            "pic.x.com/gZbkphQhAT",
+            "https://pbs.twimg.com/media/HNk9MMlaoAAj69H.jpg",
+            "https://pbs.twimg.com/media/HNk9MMubAAAuTLX.jpg",
+            "https://pbs.twimg.com/media/HNk9MMjboAABat-.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/goodjobkomei/status/2078759991172083886"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNk9MMzaAAAdvPH.jpg",
+          "https://t.co/gZbkphQhAT",
+          "pic.x.com/gZbkphQhAT",
+          "https://pbs.twimg.com/media/HNk9MMlaoAAj69H.jpg",
+          "https://pbs.twimg.com/media/HNk9MMubAAAuTLX.jpg",
+          "https://pbs.twimg.com/media/HNk9MMjboAABat-.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_a3f477d2cb03ce9d"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "8/1(土)に盆踊りが予定されている万福寺おやしろ公園で、準備を兼ねた草刈りが行われました。\n\n町会関係者に加え、アジア航測（株）社員の皆さんがご家族と参加され",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2078969091378102624",
+      "source_url": "https://x.com/Kobatake1980/status/2078969091378102624",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_3b096f4403b0baa5",
+        "source_key": "x:2078969091378102624",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/Kobatake1980/status/2078969091378102624",
+        "source_text": "\n8/1(土)に盆踊りが予定されている万福寺おやしろ公園で、準備を兼ねた草刈りが行われました。\n\n町会関係者に加え、アジア航測（株）社員の皆さんがご家族と参加されるなど和気あいあいの作業となりました。\n\nその他にも小田急電鉄（株）、三井グループ、区役所などの関係者も集まりました。\n\n万福寺町内会は、新百合ヶ丘駅前の事業者の協力を得ながら上手く町会活動を展開されていると思います。",
+        "source_author": "@Kobatake1980",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@kobatake1980",
+          "account_name": "小林たけし　神奈川県議会議員【川崎市麻生区】（自民党）",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8/1"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@Kobatake1980",
+          "name": "小林たけし　神奈川県議会議員【川崎市麻生区】（自民党）",
+          "title": "",
+          "text": "8/1(土)に盆踊りが予定されている万福寺おやしろ公園で、準備を兼ねた草刈りが行われました。\n\n町会関係者に加え、アジア航測（株）社員の皆さんがご家族と参加されるなど和気あいあいの作業となりました。\n\nその他にも小田急電鉄（株）、三井グループ、区役所などの関係者も集まりました。\n\n万福寺町内会は、新百合ヶ丘駅前の事業者の協力を得ながら上手く町会活動を展開されていると思います。",
+          "url": "https://x.com/Kobatake1980/status/2078969091378102624",
+          "date": "2026-07-19T22:23:51+00:00",
+          "tweet_id": "2078969091378102624",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2078969027444314112/img/RKjSzFp4k_0RPKzR.jpg",
+            "https://t.co/c7MdZlTEsg",
+            "pic.x.com/c7MdZlTEsg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/Kobatake1980/status/2078969091378102624"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2078969027444314112/img/RKjSzFp4k_0RPKzR.jpg",
+          "https://t.co/c7MdZlTEsg",
+          "pic.x.com/c7MdZlTEsg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_74d29a0c839dd43e"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "7月18日（土）、当神社にて地元自治会主催の「茅の輪くぐり」神事が無事執り行われました。\nまずご社殿にて神事を奉仕し、続いて茅の輪を、宮司の先導に続いて参列の皆",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2079032957864714548",
+      "source_url": "https://x.com/Yodohime_Jinja/status/2079032957864714548",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_98af67481fd078ec",
+        "source_key": "x:2079032957864714548",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/Yodohime_Jinja/status/2079032957864714548",
+        "source_text": "\n7月18日（土）、当神社にて地元自治会主催の「茅の輪くぐり」神事が無事執り行われました。\nまずご社殿にて神事を奉仕し、続いて茅の輪を、宮司の先導に続いて参列の皆さまも三度くぐり、無病息災を祈念しました。続いて自治会女性部による盆踊りも行われるなど、和やかなひとときとなりました。 https://t.co/wyisGaLSsi",
+        "source_author": "@Yodohime_Jinja",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@yodohime_jinja",
+          "account_name": "與止日女神社",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "7月18日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@Yodohime_Jinja",
+          "name": "與止日女神社",
+          "title": "",
+          "text": "7月18日（土）、当神社にて地元自治会主催の「茅の輪くぐり」神事が無事執り行われました。\nまずご社殿にて神事を奉仕し、続いて茅の輪を、宮司の先導に続いて参列の皆さまも三度くぐり、無病息災を祈念しました。続いて自治会女性部による盆踊りも行われるなど、和やかなひとときとなりました。 https://t.co/wyisGaLSsi",
+          "url": "https://x.com/Yodohime_Jinja/status/2079032957864714548",
+          "date": "2026-07-20T02:37:38+00:00",
+          "tweet_id": "2079032957864714548",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNo1amfasAAgtrJ.jpg",
+            "https://t.co/wyisGaLSsi",
+            "pic.x.com/wyisGaLSsi",
+            "https://pbs.twimg.com/media/HNo1amdbwAAScwX.jpg",
+            "https://pbs.twimg.com/media/HNo1amZasAASRax.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/Yodohime_Jinja/status/2079032957864714548"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNo1amfasAAgtrJ.jpg",
+          "https://t.co/wyisGaLSsi",
+          "pic.x.com/wyisGaLSsi",
+          "https://pbs.twimg.com/media/HNo1amdbwAAScwX.jpg",
+          "https://pbs.twimg.com/media/HNo1amZasAASRax.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_72004f04fef77b14"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【盆踊り情報2026】【大森南】7/23(木)、24(金)浦守稲荷神社で大森南自治会「納涼盆おどり大会」\n盆踊りの季節ですね～🏮✨遠くから聞こえてくる太鼓の音を",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2079038594434629919",
+      "source_url": "https://x.com/otafull/status/2079038594434629919",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_e1ccd8519853fd6e",
+        "source_key": "x:2079038594434629919",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/otafull/status/2079038594434629919",
+        "source_text": "\n【盆踊り情報2026】【大森南】7/23(木)、24(金)浦守稲荷神社で大森南自治会「納涼盆おどり大会」\n盆踊りの季節ですね～🏮✨遠くから聞こえてくる太鼓の音を想像するだけで、なんだかワクワクしちゃいます💕\nhttps://t.co/PjRtcYo7g5\n#大田区　#商店街　#大森南　#盆踊り",
+        "source_author": "@otafull",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "7/23"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": {
+          "venue": "浦守稲荷神社",
+          "region_hint": "大田区",
+          "address": "大田区大森南3-27-8",
+          "source_url": "https://otakushoren.com/event/152793"
+        },
+        "voice": {
+          "source": "x",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
+          "title": "",
+          "text": "【盆踊り情報2026】【大森南】7/23(木)、24(金)浦守稲荷神社で大森南自治会「納涼盆おどり大会」\n盆踊りの季節ですね～🏮✨遠くから聞こえてくる太鼓の音を想像するだけで、なんだかワクワクしちゃいます💕\nhttps://t.co/PjRtcYo7g5\n#大田区　#商店街　#大森南　#盆踊り",
+          "url": "https://x.com/otafull/status/2079038594434629919",
+          "date": "2026-07-20T03:00:02+00:00",
+          "tweet_id": "2079038594434629919",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/otafull/status/2079038594434629919"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_403adc5435a7635b"
     }
   ],
   "selection": {
@@ -394,11 +399,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2078389313423986953",
-      "x:2078649707254211032",
-      "x:2078662722259177484",
-      "x:2078712463726686565",
-      "x:2078746345054322987"
+      "x:2078749772656345447",
+      "x:2078759991172083886",
+      "x:2078969091378102624",
+      "x:2079032957864714548",
+      "x:2079038594434629919"
     ]
   },
   "write_mode": "snapshot_only_default_off",

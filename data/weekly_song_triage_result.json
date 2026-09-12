@@ -1,24 +1,16 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 8,
-  "direct_count": 7,
-  "created_count": 4,
-  "updated_count": 3,
+  "song_candidate_count": 10,
+  "direct_count": 9,
+  "created_count": 5,
+  "updated_count": 4,
   "rejected_noise_count": 1,
   "review_count": 0,
   "created": [
     {
       "song_name": "アンパンマン音頭",
       "source_term": "アンパンマン音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "楽しそうな踊り",
-      "source_term": "楽しそうな踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -33,8 +25,24 @@
       "dry_run": true
     },
     {
+      "song_name": "楽しそうな踊り",
+      "source_term": "楽しそうな踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
       "song_name": "朝顔音頭",
       "source_term": "朝顔音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "西新井大師音頭",
+      "source_term": "西新井大師音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -64,6 +72,14 @@
       "target": "update",
       "venue_relations": 0,
       "event_relations": 2,
+      "dry_run": true
+    },
+    {
+      "song_name": "ダンシングヒーロー",
+      "source_term": "ダンシングヒーロー",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     }
   ],
