@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-12T11:04:01.959034+00:00",
+  "generated_at": "2026-09-12T11:06:46.314816+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -13413,6 +13413,62 @@
           "url": "https://www.youtube.com/watch?v=Vfqp-bccT3Y"
         },
         "video_id": "Vfqp-bccT3Y"
+      }
+    },
+    {
+      "inbox_id": "inbox_943483fa9975e1ec",
+      "kind": "historical_quality",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "太平一丁目 牛嶋神社 奉納踊り",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+      "venue": "報恩寺境内",
+      "event_year": null,
+      "source_id": "historical_reference_quality",
+      "source_key": "quality:hrq_cb90264ae7c094a8",
+      "source_url": "",
+      "recommended_action": "needs_song_research",
+      "status": "pending",
+      "time_scope": "historical",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1a1ee11c7244df035a859b36f0612a0065e3a6c2461528026e7e2938ed939962",
+      "last_seen_at": "github-34689214273-1-historical_reference_quality",
+      "created_at": "2026-07-25T15:33:20.885261+00:00",
+      "updated_at": "2026-09-12T11:05:38.889725+00:00",
+      "payload": {
+        "area": "墨田区",
+        "display_tier": "historical_reference",
+        "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+        "historical_dates": [
+          "2025-09-12"
+        ],
+        "historical_dates_label": "2025-09-12（金）",
+        "historical_last_seen_year": 2025,
+        "historical_reference_confidence": "medium",
+        "historical_reference_label": "2025-09-12実績・今年未確認",
+        "historical_reference_score": 0.64,
+        "historical_weekdays_label": "金",
+        "issue_codes": [
+          "historical_songs_missing"
+        ],
+        "issue_summary": "曲なし",
+        "name": "太平一丁目 牛嶋神社 奉納踊り",
+        "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+        "priority_label": "P1",
+        "priority_score": 6,
+        "public_category": "recurring_last_year",
+        "public_status": "expected_medium",
+        "quality_review_id": "hrq_cb90264ae7c094a8",
+        "recommended_action": "review_missing_historical_songs",
+        "song_count": 0,
+        "songs_sample": [],
+        "source_url": "",
+        "venue": "報恩寺境内"
       }
     },
     {
@@ -48836,62 +48892,6 @@
         "songs_sample": [],
         "source_url": "",
         "venue": "JR目黒駅西口前"
-      }
-    },
-    {
-      "inbox_id": "inbox_943483fa9975e1ec",
-      "kind": "historical_quality",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "太平一丁目 牛嶋神社 奉納踊り",
-      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
-      "venue": "報恩寺境内",
-      "event_year": null,
-      "source_id": "historical_reference_quality",
-      "source_key": "quality:hrq_cb90264ae7c094a8",
-      "source_url": "",
-      "recommended_action": "needs_song_research",
-      "status": "pending",
-      "time_scope": "historical",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "22f98320c753c05bc6cab9de56267fa5ac3770ac781f9a3818429ee283cb4043",
-      "last_seen_at": "github-30163620417-1-historical_reference_quality",
-      "created_at": "2026-07-25T15:33:20.885261+00:00",
-      "updated_at": "2026-07-25T15:33:20.885261+00:00",
-      "payload": {
-        "area": "墨田区",
-        "display_tier": "historical_slide",
-        "event_name": "太平一丁目 牛嶋神社 奉納踊り",
-        "historical_dates": [
-          "2025-09-12"
-        ],
-        "historical_dates_label": "2025-09-12（金）",
-        "historical_last_seen_year": 2025,
-        "historical_reference_confidence": "medium",
-        "historical_reference_label": "2025-09-12実績・今年未確認",
-        "historical_reference_score": 0.64,
-        "historical_weekdays_label": "金",
-        "issue_codes": [
-          "historical_songs_missing"
-        ],
-        "issue_summary": "曲なし",
-        "name": "太平一丁目 牛嶋神社 奉納踊り",
-        "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
-        "priority_label": "P1",
-        "priority_score": 6,
-        "public_category": "recurring_last_year",
-        "public_status": "expected_medium",
-        "quality_review_id": "hrq_cb90264ae7c094a8",
-        "recommended_action": "review_missing_historical_songs",
-        "song_count": 0,
-        "songs_sample": [],
-        "source_url": "",
-        "venue": "報恩寺境内"
       }
     },
     {
