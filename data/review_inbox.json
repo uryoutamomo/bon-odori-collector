@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-12T11:06:46.314816+00:00",
+  "generated_at": "2026-09-13T12:00:51.886855+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,338 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_0f25885e320dbe82",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/7〜9十条駅前盆踊りでは\n上二町会青少年部、仲一町会青少年部共同で生ビール屋さんやります！\n注ぎたてサッポロ黒ラベルと賑やかな夏の夜をお楽しみください\n\n売",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079056517698072830",
+      "source_url": "https://x.com/jujonakahara1/status/2079056517698072830",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "3227d9d7d13ad62d731075c2df7279e2e5241ecf4bc0f35163245a68f5f0c767",
+      "last_seen_at": "github-34755443261-1",
+      "created_at": "2026-09-13T12:00:22.147703+00:00",
+      "updated_at": "2026-09-13T12:00:22.147703+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_67add985ab9a42fd",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/7"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@jujonakahara1",
+        "source_count": 1,
+        "source_key": "x:2079056517698072830",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNpK4jxbMAE18sQ.jpg",
+          "https://t.co/VLsGjAjLai",
+          "pic.x.com/VLsGjAjLai"
+        ],
+        "source_officiality": {
+          "account_name": "十条仲原一丁目町会青少年部",
+          "classification": "registered_official_social",
+          "handle": "@jujonakahara1",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/7〜9十条駅前盆踊りでは\n上二町会青少年部、仲一町会青少年部共同で生ビール屋さんやります！\n注ぎたてサッポロ黒ラベルと賑やかな夏の夜をお楽しみください\n\n売上は祭礼費用に活用させていただきます\n長くこの街に、子どもたちの夏休みに、祭と街の元気を残していけるように！ https://t.co/VLsGjAjLai",
+        "source_url": "https://x.com/jujonakahara1/status/2079056517698072830",
+        "source_urls": [
+          "https://x.com/jujonakahara1/status/2079056517698072830"
+        ],
+        "voice": {
+          "account": "@jujonakahara1",
+          "date": "2026-07-20T04:11:15+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNpK4jxbMAE18sQ.jpg",
+            "https://t.co/VLsGjAjLai",
+            "pic.x.com/VLsGjAjLai"
+          ],
+          "name": "十条仲原一丁目町会青少年部",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "8/7〜9十条駅前盆踊りでは\n上二町会青少年部、仲一町会青少年部共同で生ビール屋さんやります！\n注ぎたてサッポロ黒ラベルと賑やかな夏の夜をお楽しみください\n\n売上は祭礼費用に活用させていただきます\n長くこの街に、子どもたちの夏休みに、祭と街の元気を残していけるように！ https://t.co/VLsGjAjLai",
+          "title": "",
+          "tweet_id": "2079056517698072830",
+          "url": "https://x.com/jujonakahara1/status/2079056517698072830"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_32c2b5d9e2721822",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7月18日(土)16:00～20:00まで関北夏まつり2026を関町北小学校で実施しました。大勢の方々がご来場下さりありがとうございました。ゲームや食べ物、石神",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079081792104284591",
+      "source_url": "https://x.com/sekikita45/status/2079081792104284591",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f6ff0a8c620407f47fa618e0810adc8a78f339e71a46cf8a6680b934203d73bd",
+      "last_seen_at": "github-34755443261-1",
+      "created_at": "2026-09-13T12:00:22.147703+00:00",
+      "updated_at": "2026-09-13T12:00:22.147703+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_28aaeb96fbae1a9f",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月18日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@sekikita45",
+        "source_count": 1,
+        "source_key": "x:2079081792104284591",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNph2chbAAA4Dka.jpg",
+          "https://t.co/ZdugAXsidS",
+          "pic.x.com/ZdugAXsidS",
+          "https://pbs.twimg.com/media/HNph21zaoAAAOol.jpg",
+          "https://pbs.twimg.com/media/HNph3TFa8AABRvx.jpg",
+          "https://pbs.twimg.com/media/HNph3pMbQAAFd5f.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "練馬区関町北四·五丁目町会",
+          "classification": "registered_official_social",
+          "handle": "@sekikita45",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7月18日(土)16:00～20:00まで関北夏まつり2026を関町北小学校で実施しました。大勢の方々がご来場下さりありがとうございました。ゲームや食べ物、石神井高等学校・英明フロンティア高等学校のダンスパフォーマンス、関町鶴寿会盆踊りなど大変盛り上がりました。来年も実施が予定されています!! https://t.co/ZdugAXsidS",
+        "source_url": "https://x.com/sekikita45/status/2079081792104284591",
+        "source_urls": [
+          "https://x.com/sekikita45/status/2079081792104284591"
+        ],
+        "voice": {
+          "account": "@sekikita45",
+          "date": "2026-07-20T05:51:41+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNph2chbAAA4Dka.jpg",
+            "https://t.co/ZdugAXsidS",
+            "pic.x.com/ZdugAXsidS",
+            "https://pbs.twimg.com/media/HNph21zaoAAAOol.jpg",
+            "https://pbs.twimg.com/media/HNph3TFa8AABRvx.jpg",
+            "https://pbs.twimg.com/media/HNph3pMbQAAFd5f.jpg"
+          ],
+          "name": "練馬区関町北四·五丁目町会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "7月18日(土)16:00～20:00まで関北夏まつり2026を関町北小学校で実施しました。大勢の方々がご来場下さりありがとうございました。ゲームや食べ物、石神井高等学校・英明フロンティア高等学校のダンスパフォーマンス、関町鶴寿会盆踊りなど大変盛り上がりました。来年も実施が予定されています!! https://t.co/ZdugAXsidS",
+          "title": "",
+          "tweet_id": "2079081792104284591",
+          "url": "https://x.com/sekikita45/status/2079081792104284591"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4424af07682256cd",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "今年で52回目を迎える「第52回 吉祥寺ふれあい夏まつり」が\n7月23日(木)・24日(金)の2日間\n東急百貨店吉祥寺店の北側広場で開催されます✨\n\n食べ物、ゲ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079446230191739336",
+      "source_url": "https://x.com/kichijojime/status/2079446230191739336",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "289c00dbcafa1f2e433e5854bf686d721c3b862bab5ea7e7609df496991f4593",
+      "last_seen_at": "github-34755443261-1",
+      "created_at": "2026-09-13T12:00:22.147703+00:00",
+      "updated_at": "2026-09-13T12:00:22.147703+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_0d973c57e3c56adf",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月23日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kichijojime",
+        "source_count": 1,
+        "source_key": "x:2079446230191739336",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "吉祥寺.me",
+          "classification": "registered_official_social",
+          "handle": "@kichijojime",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n今年で52回目を迎える「第52回 吉祥寺ふれあい夏まつり」が\n7月23日(木)・24日(金)の2日間\n東急百貨店吉祥寺店の北側広場で開催されます✨\n\n食べ物、ゲームがいろいろ楽しめる縁日や、夜には参加自由の盆踊りも♪\n#吉祥寺ふれあい夏まつり #吉祥寺me\nhttps://t.co/ymb9NDjFKr",
+        "source_url": "https://x.com/kichijojime/status/2079446230191739336",
+        "source_urls": [
+          "https://x.com/kichijojime/status/2079446230191739336"
+        ],
+        "voice": {
+          "account": "@kichijojime",
+          "date": "2026-07-21T05:59:50+00:00",
+          "name": "吉祥寺.me",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "今年で52回目を迎える「第52回 吉祥寺ふれあい夏まつり」が\n7月23日(木)・24日(金)の2日間\n東急百貨店吉祥寺店の北側広場で開催されます✨\n\n食べ物、ゲームがいろいろ楽しめる縁日や、夜には参加自由の盆踊りも♪\n#吉祥寺ふれあい夏まつり #吉祥寺me\nhttps://t.co/ymb9NDjFKr",
+          "title": "",
+          "tweet_id": "2079446230191739336",
+          "url": "https://x.com/kichijojime/status/2079446230191739336"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_517680eb12616b1b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\n会場は大森南四丁目公園ですよ～❤️\nhttps://t.co/VtU",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079114090778386618",
+      "source_url": "https://x.com/otafull/status/2079114090778386618",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "32eb332fe7746f12c170149d7fbe946b35e72ad6b78225315605019939155894",
+      "last_seen_at": "github-34755443261-1",
+      "created_at": "2026-09-13T12:00:22.147703+00:00",
+      "updated_at": "2026-09-13T12:00:22.147703+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1294b1e6133d2573",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/28"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2079114090778386618",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\n会場は大森南四丁目公園ですよ～❤️\nhttps://t.co/VtURaUw8kq\n#大田区　#商店街　#大森南　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2079114090778386618",
+        "source_urls": [
+          "https://x.com/otafull/status/2079114090778386618"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-20T08:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\n会場は大森南四丁目公園ですよ～❤️\nhttps://t.co/VtURaUw8kq\n#大田区　#商店街　#大森南　#盆踊り",
+          "title": "",
+          "tweet_id": "2079114090778386618",
+          "url": "https://x.com/otafull/status/2079114090778386618"
         }
       }
     },
@@ -11246,6 +11578,99 @@
           "title": "",
           "tweet_id": "2056637018248229108",
           "url": "https://x.com/8_chokai/status/2056637018248229108"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_594f8cf93026e3d1",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "#葛飾区　#まいぷれ葛飾\n\n【イベント情報】\n#新小岩北口盆踊りフェスタ\n\n#ゲーム や\n#塙町 #朝取れ新鮮野菜\n#スイーツ販売\n#調理パン販売 など\n\n✅9",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083029254187712515",
+      "source_url": "https://x.com/mypl_katsushika/status/2083029254187712515",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "16b0ebc7d41d9d654405143c2f68eb10a4637378f53235e5fb8b1ab4da444832",
+      "last_seen_at": "github-34755443261-1",
+      "created_at": "2026-09-13T12:00:22.147703+00:00",
+      "updated_at": "2026-09-13T12:00:22.147703+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_2925e081c3e18d6e",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "9月12日",
+          "13時",
+          "20時",
+          "9月13日",
+          "11時",
+          "19時"
+        ],
+        "event_group_key": "informal:86c19af2e1c40d5e",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-09-13"
+        ],
+        "priority_score": 85,
+        "source_author": "@mypl_katsushika",
+        "source_count": 1,
+        "source_key": "x:2083029254187712515",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOhoEJFbQAAmbVu.jpg",
+          "https://t.co/xnekeWdwis",
+          "pic.x.com/xnekeWdwis"
+        ],
+        "source_officiality": {
+          "account_name": "まいぷれ葛飾",
+          "classification": "unknown_or_personal_social",
+          "handle": "@mypl_katsushika",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n#葛飾区　#まいぷれ葛飾\n\n【イベント情報】\n#新小岩北口盆踊りフェスタ\n\n#ゲーム や\n#塙町 #朝取れ新鮮野菜\n#スイーツ販売\n#調理パン販売 など\n\n✅9月12日（土）13時～20時30分\n✅9月13日（日）11時～19時30分\n#JR新小岩駅 北口駅前広場\n#新小岩\n\nhttps://t.co/ffSSANzGdT https://t.co/xnekeWdwis",
+        "source_url": "https://x.com/mypl_katsushika/status/2083029254187712515",
+        "source_urls": [
+          "https://x.com/mypl_katsushika/status/2083029254187712515"
+        ],
+        "voice": {
+          "account": "@mypl_katsushika",
+          "date": "2026-07-31T03:17:29+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOhoEJFbQAAmbVu.jpg",
+            "https://t.co/xnekeWdwis",
+            "pic.x.com/xnekeWdwis"
+          ],
+          "name": "まいぷれ葛飾",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "#葛飾区　#まいぷれ葛飾\n\n【イベント情報】\n#新小岩北口盆踊りフェスタ\n\n#ゲーム や\n#塙町 #朝取れ新鮮野菜\n#スイーツ販売\n#調理パン販売 など\n\n✅9月12日（土）13時～20時30分\n✅9月13日（日）11時～19時30分\n#JR新小岩駅 北口駅前広場\n#新小岩\n\nhttps://t.co/ffSSANzGdT https://t.co/xnekeWdwis",
+          "title": "",
+          "tweet_id": "2083029254187712515",
+          "url": "https://x.com/mypl_katsushika/status/2083029254187712515"
         }
       }
     },
