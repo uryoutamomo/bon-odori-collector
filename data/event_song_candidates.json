@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1716,
+  "count": 1718,
   "public_event_count": 762,
-  "review_count": 954,
+  "review_count": 956,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -129,7 +129,7 @@
       "evidence_count": 2
     },
     {
-      "id": "01ed73fe78cbb74b",
+      "id": "0a9de31f9136a8ae",
       "song_name": "アンパンマン音頭",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -141,6 +141,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VxhNjE0Fbfw",
+          "date": "2026-09-13T11:30:31+00:00",
+          "text": "和太鼓お祭りCH\n春駒ばやし　亀有ゆうろーど納涼盆踊り大会24　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】で応援をよろしくお願い"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KfLdCo0iXHg",
+          "date": "2026-09-12T12:00:10+00:00",
+          "text": "和太鼓お祭りCH\n亀有音頭　亀有ゆうろーど納涼盆踊り大会23　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いし"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Ehfx6Eypn-o",
+          "date": "2026-09-12T11:30:28+00:00",
+          "text": "和太鼓お祭りCH\n「大東京音頭」（金沢明子橋幸夫）　亀有ゆうろーど納涼盆踊り大会22　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=cZAurXSzLF4",
@@ -269,7 +287,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 21
+      "evidence_count": 24
     },
     {
       "id": "a37dd4208ef9aacc",
@@ -442,7 +460,7 @@
       "evidence_count": 14
     },
     {
-      "id": "2230d3dcfd7a8f40",
+      "id": "afe4e47a56577475",
       "song_name": "大東京音頭",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -454,6 +472,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Ehfx6Eypn-o",
+          "date": "2026-09-12T11:30:28+00:00",
+          "text": "和太鼓お祭りCH\n「大東京音頭」（金沢明子橋幸夫）　亀有ゆうろーど納涼盆踊り大会22　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/GOB7qpuaaOFitmF/status/2088611271088452010",
@@ -594,7 +618,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 23
+      "evidence_count": 24
     },
     {
       "id": "0769ecfc6f169e16",
@@ -5933,7 +5957,7 @@
       "evidence_count": 2
     },
     {
-      "id": "4ec9835f828430d6",
+      "id": "67c5d65593099029",
       "song_name": "大東京音頭",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -5945,6 +5969,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hpj0SlHO93U",
+          "date": "2026-09-13T10:30:01+00:00",
+          "text": "和太鼓お祭りCH\n【大東京音頭】（金沢明子橋幸夫）　新宿花園町会納涼踊り大会24　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9a"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Q1niAfhGdFg",
@@ -6097,10 +6127,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 25
+      "evidence_count": 26
     },
     {
-      "id": "b42f3838fe525461",
+      "id": "6a33c1f331bbf10f",
       "song_name": "東京音頭",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -6112,6 +6142,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hpj0SlHO93U",
+          "date": "2026-09-13T10:30:01+00:00",
+          "text": "和太鼓お祭りCH\n【大東京音頭】（金沢明子橋幸夫）　新宿花園町会納涼踊り大会24　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9a"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kBh7C1IGwWY",
+          "date": "2026-09-13T10:00:32+00:00",
+          "text": "和太鼓お祭りCH\n平成新宿音頭　新宿花園町会納涼踊り大会23　2026年8月28日　花園公園・花園スクールパーク　 #盆踊り #新宿花園町会 #和太鼓\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=C2YBZUJtkFE",
@@ -6414,7 +6456,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 50
+      "evidence_count": 52
     },
     {
       "id": "1a090d5182a74952",
@@ -9937,6 +9979,28 @@
       "evidence_count": 1
     },
     {
+      "id": "fc8452282276fc4e",
+      "song_name": "亀有音頭",
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KfLdCo0iXHg",
+          "date": "2026-09-12T12:00:10+00:00",
+          "text": "和太鼓お祭りCH\n亀有音頭　亀有ゆうろーど納涼盆踊り大会23　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いし"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "cb09aa7ea3e6735d",
       "song_name": "五中ソーラン",
       "event_name": "納涼盆踊り大会",
@@ -11754,7 +11818,7 @@
       "evidence_count": 1
     },
     {
-      "id": "3026987d78f55428",
+      "id": "e99c773347156a6b",
       "song_name": "楽しそうな踊り",
       "event_name": "納涼盆踊り大会",
       "venue": "玉川中町公園",
@@ -11765,6 +11829,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VxhNjE0Fbfw",
+          "date": "2026-09-13T11:30:31+00:00",
+          "text": "和太鼓お祭りCH\n春駒ばやし　亀有ゆうろーど納涼盆踊り大会24　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】で応援をよろしくお願い"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KfLdCo0iXHg",
+          "date": "2026-09-12T12:00:10+00:00",
+          "text": "和太鼓お祭りCH\n亀有音頭　亀有ゆうろーど納涼盆踊り大会23　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】で応援をよろしくお願いし"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Ehfx6Eypn-o",
+          "date": "2026-09-12T11:30:28+00:00",
+          "text": "和太鼓お祭りCH\n「大東京音頭」（金沢明子橋幸夫）　亀有ゆうろーど納涼盆踊り大会22　2026年8月30日　亀有銀座商店街振興組合\n2026年8月30日に開催された\n「亀有ゆうろーど納涼盆踊り大会」の様子をお届けします！\n\n亀有銀座商店街振興組合（ゆうろーど）が主催する、\n地元の方々に愛される活気あふれる盆踊り大会です。\n商店街のあたたかい雰囲気の中、\n響き渡る和太鼓の音色と、皆さんの楽しそうな踊りをぜひお楽しみください。\n\n和太鼓の力強いリズムが、夏の夜をより一層盛り上げてくれました！\n\n【開催概要】\n ■日時：2026年8月30日 \n■場所：亀有銀座商店街（ゆうろーど）\n ■主催：亀有銀座商店街振興組合\n\n【和太鼓お祭りチャンネルについて】\n このチャンネルでは、\n全国各地のお祭りや和太鼓演奏の様子を発信しています。 \n日本の伝統的な文化や、\nお祭りの熱気を感じていただけたら嬉しいです。\n\nぜひ【チャンネル登録】と【高評価】"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=cZAurXSzLF4",
@@ -11893,7 +11975,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 21
+      "evidence_count": 24
     },
     {
       "id": "168e30b69c89910b",
@@ -29729,6 +29811,28 @@
       "evidence_count": 1
     },
     {
+      "id": "373f8b3832dae738",
+      "song_name": "平成新宿音頭",
+      "event_name": "花園町会納涼踊り大会",
+      "venue": "花園小学校",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kBh7C1IGwWY",
+          "date": "2026-09-13T10:00:32+00:00",
+          "text": "和太鼓お祭りCH\n平成新宿音頭　新宿花園町会納涼踊り大会23　2026年8月28日　花園公園・花園スクールパーク　 #盆踊り #新宿花園町会 #和太鼓\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "ebdef945208f84d4",
       "song_name": "幸わいわい音頭",
       "event_name": "花園町会納涼踊り大会",
@@ -29773,7 +29877,7 @@
       "evidence_count": 1
     },
     {
-      "id": "46f49363bf09bdcb",
+      "id": "17591167ad95397b",
       "song_name": "新宿花園町会納涼踊り",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -29784,6 +29888,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hpj0SlHO93U",
+          "date": "2026-09-13T10:30:01+00:00",
+          "text": "和太鼓お祭りCH\n【大東京音頭】（金沢明子橋幸夫）　新宿花園町会納涼踊り大会24　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9a"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kBh7C1IGwWY",
+          "date": "2026-09-13T10:00:32+00:00",
+          "text": "和太鼓お祭りCH\n平成新宿音頭　新宿花園町会納涼踊り大会23　2026年8月28日　花園公園・花園スクールパーク　 #盆踊り #新宿花園町会 #和太鼓\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=C2YBZUJtkFE",
@@ -29918,7 +30034,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 22
+      "evidence_count": 24
     },
     {
       "id": "cb31541e66c18e28",
@@ -30271,7 +30387,7 @@
       "evidence_count": 1
     },
     {
-      "id": "556968db4ad6af09",
+      "id": "4c11b206a7e2aa5b",
       "song_name": "炭坑節",
       "event_name": "花園町会納涼踊り大会",
       "venue": "花園小学校",
@@ -30283,6 +30399,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hpj0SlHO93U",
+          "date": "2026-09-13T10:30:01+00:00",
+          "text": "和太鼓お祭りCH\n【大東京音頭】（金沢明子橋幸夫）　新宿花園町会納涼踊り大会24　2026年8月28日　花園公園・花園スクールパーク\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/zf5PCZA9a"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kBh7C1IGwWY",
+          "date": "2026-09-13T10:00:32+00:00",
+          "text": "和太鼓お祭りCH\n平成新宿音頭　新宿花園町会納涼踊り大会23　2026年8月28日　花園公園・花園スクールパーク　 #盆踊り #新宿花園町会 #和太鼓\n2026年8月28日に開催された\n「新宿花園町会納涼踊り大会」の様子です。 \n会場：花園公園・花園スクールパーク（東京都新宿区）\n\n和太鼓の響きとともに盛り上がる、新宿の夏の夜をお楽しみください。\n\n#盆踊り #新宿花園町会納涼踊り大会 #花園公園 #新宿区 #和太鼓\n\n新宿花園公園盆踊り\n１東京音頭　https://youtu.be/VwqYXbO8N0Y\n２炭坑節　https://youtu.be/BzhuMm2ezYw\n３大東京音頭　https://youtu.be/Q1niAfhGdFg\n４八木節　https://youtu.be/lvkEpvj-kX4\n５ドンパン節　https://youtu.be/D0T-IkDuMvo\n６東京音頭　https://youtu.be/"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=C2YBZUJtkFE",
@@ -30585,7 +30713,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 50
+      "evidence_count": 52
     },
     {
       "id": "6292d9eddc81f3c9",
@@ -36005,7 +36133,7 @@
       "evidence_count": 1
     },
     {
-      "id": "884dcd3ba6c7cbcb",
+      "id": "98f692e482bb8df0",
       "song_name": "八木節",
       "event_name": "自由が丘納涼盆踊り大会",
       "venue": "自由が丘駅前ロータリー 特設会場",
@@ -36016,6 +36144,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=I5ZywCjFfeE",
+          "date": "2026-09-12T12:30:10+00:00",
+          "text": "和太鼓お祭りCH\n【東京音頭】（水前寺清子）　「自由が丘納涼盆踊り大会」５　自由が丘駅駅前ロータリー　2026年7月19日\n2026年7月19日、\n東京都目黒区の自由が丘駅前ロータリーで開催された\n「自由が丘納涼盆踊り大会」の様子です。\n\n駅前の特設会場が活気に包まれ、\n多くの来場者とともに盛り上がる初日の熱気をお届けします。\n和太鼓の響きと盆踊りのリズムで、\n自由が丘の夏が鮮やかに彩られる瞬間をぜひお楽しみください。\n\n【開催情報】 \nイベント名：自由が丘納涼盆踊り大会 \n開催日：2026年7月19日 \n場所：自由が丘駅前ロータリー（東京都目黒区）\n\n#自由が丘 #盆踊り #自由が丘納涼盆踊り大会 #夏祭り #和太鼓 #伝統芸能\n\n\n自由が丘盆踊り\n１北海盆唄　https://youtu.be/-DNQW4LBWK8\n２八木節　https://youtu.be/_dh8_DZmpfw\n３ダンシング・ヒーロー　https://y"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=HV-nICfLG8E",
@@ -36042,7 +36176,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "c1178a7810096d2e",
@@ -60255,6 +60389,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=I5ZywCjFfeE",
+          "date": "2026-09-12T12:30:10+00:00",
+          "text": "和太鼓お祭りCH\n【東京音頭】（水前寺清子）　「自由が丘納涼盆踊り大会」５　自由が丘駅駅前ロータリー　2026年7月19日\n2026年7月19日、\n東京都目黒区の自由が丘駅前ロータリーで開催された\n「自由が丘納涼盆踊り大会」の様子です。\n\n駅前の特設会場が活気に包まれ、\n多くの来場者とともに盛り上がる初日の熱気をお届けします。\n和太鼓の響きと盆踊りのリズムで、\n自由が丘の夏が鮮やかに彩られる瞬間をぜひお楽しみください。\n\n【開催情報】 \nイベント名：自由が丘納涼盆踊り大会 \n開催日：2026年7月19日 \n場所：自由が丘駅前ロータリー（東京都目黒区）\n\n#自由が丘 #盆踊り #自由が丘納涼盆踊り大会 #夏祭り #和太鼓 #伝統芸能\n\n\n自由が丘盆踊り\n１北海盆唄　https://youtu.be/-DNQW4LBWK8\n２八木節　https://youtu.be/_dh8_DZmpfw\n３ダンシング・ヒーロー　https://y"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=bvSoQBaEgUQ",
           "date": "2025-07-26T12:30:45Z",
           "text": "和太鼓お祭りチャンネル\nＲＰＧ（SEKAI NO OWARI）　2025年自由が丘納涼盆踊り大会3日目18終　東京都目黒区\n2025年7月21日に、自由が丘駅前で行われました、\n「自由が丘納涼盆踊り大会」の様子です。\n\n\n自由が丘盆踊り\n１東京音頭　https://youtu.be/uD2Vi2HADbY\n２ホイップるん音頭　https://youtu.be/7rAwNEaBU7Y\n３夜に駆ける　https://youtu.be/J9OIs_LHk3Q\n４自由が丘小唄　https://youtu.be/BY_GmnNAtFU\n５希望の轍　https://youtu.be/BFJxknJzfDc\n６やる気で音頭　https://youtu.be/vCXqCiHJLrA\n７RPG　https://youtu.be/-4rG0Idq1hM\n８ダンシング・ヒーロー　https://youtu.be/mvHqQY2ISJE\n９東京音頭　h"
@@ -60363,7 +60503,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 18
+      "evidence_count": 19
     },
     {
       "id": "b61e2d08b4501a5f",
