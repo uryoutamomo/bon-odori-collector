@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-14T13:04:20.983841+00:00",
+  "generated_at": "2026-09-14T13:07:32.347955+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -14258,6 +14258,247 @@
       }
     },
     {
+      "inbox_id": "inbox_15757c4856718298",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "赤坂音頭 × 赤坂氷川神社",
+      "event_name": "",
+      "venue": "赤坂氷川神社",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:赤坂音頭|venue:赤坂氷川神社",
+      "source_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "20540f41e069deaf8b915c43aada74b7759862d9bf0972251c2f57514e2c9f2c",
+      "last_seen_at": "github-34845017167-1-daily_term_candidate",
+      "created_at": "2026-09-14T13:05:28.896316+00:00",
+      "updated_at": "2026-09-14T13:05:28.896316+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [],
+        "evidence": [
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-09-14T09:00:02+00:00",
+            "text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+            "url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+        "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+        "interpretation": "赤坂氷川神社で赤坂音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "赤坂音頭",
+        "term": "赤坂音頭 × 赤坂氷川神社",
+        "type": "共起",
+        "venue": "赤坂氷川神社"
+      }
+    },
+    {
+      "inbox_id": "inbox_9e8813a0631729c3",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "踊り会",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
+      "source_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "81051d0d20f1b370de71b0630d2e42aa2a607f921af29089f9f01308fa3a1914",
+      "last_seen_at": "github-34845017167-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-09-14T13:05:28.896316+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-09-14T09:00:02+00:00",
+            "text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+            "url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+          },
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-09-13T13:14:30+00:00",
+            "text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ この動画では先行して嵐の「Happiness」の様子を紹介します！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 ",
+            "url": "https://www.youtube.com/watch?v=ORYaa0UdVZI"
+          }
+        ],
+        "evidence_count": 2,
+        "evidence_text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa\n---\n東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ この動画では先行して嵐の「Happiness」の様子を紹介します！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 ",
+        "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+        "interpretation": "盆踊りや輪踊りの会",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "踊り会",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_cc0de460b2d0c67b",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "らんまん踊り × 赤坂氷川神社",
+      "event_name": "",
+      "venue": "赤坂氷川神社",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:らんまん踊り|venue:赤坂氷川神社",
+      "source_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4b0ea4b156bfebbeed94b1f8c89373e083b95160ffec224a2e22baa5f4a92013",
+      "last_seen_at": "github-34845017167-1-daily_term_candidate",
+      "created_at": "2026-09-14T13:05:28.896316+00:00",
+      "updated_at": "2026-09-14T13:05:28.896316+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [],
+        "evidence": [
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-09-14T09:00:02+00:00",
+            "text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+            "url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+        "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+        "interpretation": "赤坂氷川神社でらんまん踊りが言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "らんまん踊り",
+        "term": "らんまん踊り × 赤坂氷川神社",
+        "type": "共起",
+        "venue": "赤坂氷川神社"
+      }
+    },
+    {
+      "inbox_id": "inbox_63e08c680984b4d3",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "らんまん踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:らんまん踊り",
+      "source_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "236d18bffbf390b97c44f53b3f0444849a0c335ab0679895941dbf97fcc40a14",
+      "last_seen_at": "github-34845017167-1-daily_song_candidate",
+      "created_at": "2026-08-06T09:29:28.322473+00:00",
+      "updated_at": "2026-09-14T13:04:38.972251+00:00",
+      "payload": {
+        "canonical_song_name": "らんまん踊り",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-09-14T09:00:02+00:00",
+            "text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+            "url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+        "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+        "interpretation": "らんまん踊り",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "らんまん踊り",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
+      "inbox_id": "inbox_96f48f7f7a67bf6b",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "赤坂音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:赤坂音頭",
+      "source_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f589a8cbbee85651a6989acb13212abe001f36b2cbac0b1aa6249e32a7d5e3ba",
+      "last_seen_at": "github-34845017167-1-daily_song_candidate",
+      "created_at": "2026-09-14T13:04:38.972251+00:00",
+      "updated_at": "2026-09-14T13:04:38.972251+00:00",
+      "payload": {
+        "canonical_song_name": "赤坂音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "UCKCspf_NrY16rUnODmBqOWA",
+            "date": "2026-09-14T09:00:02+00:00",
+            "text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+            "url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "東京の赤坂氷川神社で「令和八年 赤坂氷川祭」が開催されました。 最高の雰囲気で踊れる盆踊り会場！ 最終日のこの日も多くの人で賑わいました！ Akasaka Hikawa Festival was held at Akasaka Hikawa Shrine in Tokyo. A Bon Odori dance was held at the shrine. 2026.9.13 Sun 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscribe to my channe よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.goo.gl/3w1zgt6XyubXsVaT6 Akasaka Hikawa Shrine 10-12, Akasa",
+        "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w",
+        "interpretation": "赤坂音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "赤坂音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_04fe52a08b9a94e9",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -16690,65 +16931,6 @@
         ],
         "video_id": "e_Edo0VNmWo",
         "video_url": "https://www.youtube.com/watch?v=e_Edo0VNmWo"
-      }
-    },
-    {
-      "inbox_id": "inbox_63e08c680984b4d3",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "らんまん踊り",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:らんまん踊り",
-      "source_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "c3186dd3a448fa7c947a4284616266637b469d902fb8bb01a4749c3e7a9c2261",
-      "last_seen_at": "github-33623733996-1-daily_song_candidate",
-      "created_at": "2026-08-06T09:29:28.322473+00:00",
-      "updated_at": "2026-09-02T11:38:52.108998+00:00",
-      "payload": {
-        "canonical_song_name": "らんまん踊り",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T10:30:25+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=NIlySlX-syo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T10:00:33+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=WRFk6Vs9GKg"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-31T09:00:33+00:00",
-            "text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-            "url": "https://www.youtube.com/watch?v=oiyPv9z1JXI"
-          }
-        ],
-        "evidence_count": 3,
-        "evidence_text": "東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y\n---\n東京都千代田区、秋葉原の芳林公園で開催された「外神田納涼大会」での盆踊りの様子です。 1曲目は盆踊りの定番「東京音頭」をお届けします。 都会の真ん中で響き渡る和太鼓の音色と、熱気あふれる会場の雰囲気をお楽しみください！ 【開催概要】 行事名：外神田納涼大会（盆踊り） 開催地：芳林公園（東京都千代田区外神田） 【おすすめの関連動画】 和太鼓お祭りチャンネルでは、 各地の盆踊りや和太鼓演奏の動画をアップロードしています。 ぜひチャンネル登録をお願いします！ https://www.youtube.com/@WADAIKO-MATSURI #盆踊り #東京音頭 #外神田納涼大会 #芳林公園 #秋葉原 #和太鼓 #日本の祭り #BonOdori #akihabara 芳林公園盆踊り １東京音頭 https://youtu.be/dqzO8IFA3dg ２炭坑節 https://youtu.be/v1OJmVPuuAo ３千代田おどり https://youtu.be/MNhxR2Y0qpk ４花笠おどり https://youtu.be/ynUyNFLi7GI ５ゆかた音頭 https://y",
-        "evidence_url": "https://www.youtube.com/watch?v=NIlySlX-syo",
-        "interpretation": "らんまん踊り",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "らんまん踊り",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
       }
     },
     {
@@ -19402,75 +19584,6 @@
         "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
         "term": "梯子",
         "type": "行動語"
-      }
-    },
-    {
-      "inbox_id": "inbox_9e8813a0631729c3",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "踊り会",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
-      "source_url": "https://www.youtube.com/watch?v=A74xwDGSBrI",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "db6cea5b14fe3fdf6de45e09872f2a0cdd8c95f97b4fead32a22e1f9951ba77e",
-      "last_seen_at": "github-32941223888-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-08-26T07:28:10.362201+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-24T13:00:11+00:00",
-            "text": "2026年8月15日、「グランドニッコー東京ベイ舞浜」にて開催された「夏フェス」盆踊り会場の様子です。 浦安舞鼓連のみなさんによる演舞をお届けします。 ホテルの華やかな雰囲気の中で踊る盆踊り1曲目、ぜひお楽しみください！ 【詳細】 開催日：2026年8月15日 会場：グランドニッコー東京ベイ舞浜（千葉県浦安市） 出演：浦安舞鼓連 #盆踊り #大東京音頭 #浦安舞鼓連 #グランドニッコー東京ベイ舞浜 #夏フェス #和太鼓お祭りチャンネル グランドニッコー東京ベイ舞浜 夏フェス盆踊り2日目 １大東京音頭 https://youtu.be/3rwZOgMPVRo ２郡上節かわさき https://youtu.be/vMawJX3H2rc ３少年八木節 https://youtu.be/XQI3Vamc-YU ４終 マツケンサンバⅡ https://youtu.be/A74xwDGSBrI 夏フェス盆踊り1日目 １大東京音頭 https://youtu.be/JmIaLge5z8o ２ドンパン節 https://youtu.be/qyZiOls_BHQ ３少年八木節 https://youtu",
-            "url": "https://www.youtube.com/watch?v=A74xwDGSBrI"
-          },
-          {
-            "account": "@Tomika41890851",
-            "date": "2026-08-23T10:15:49+00:00",
-            "text": "後ろ髪を引かれる思いで、 盆踊り会場をあとにして お祭りの総会に出席。",
-            "url": "https://x.com/Tomika41890851/status/2091469451694911630"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-23T13:00:09+00:00",
-            "text": "2026年8月15日、「グランドニッコー東京ベイ舞浜」にて開催された「夏フェス」盆踊り会場の様子です。 浦安舞鼓連のみなさんによる演舞をお届けします。 ホテルの華やかな雰囲気の中で踊る盆踊り1曲目、ぜひお楽しみください！ 【詳細】 開催日：2026年8月15日 会場：グランドニッコー東京ベイ舞浜（千葉県浦安市） 出演：浦安舞鼓連 #盆踊り #大東京音頭 #浦安舞鼓連 #グランドニッコー東京ベイ舞浜 #夏フェス #和太鼓お祭りチャンネル グランドニッコー東京ベイ舞浜 夏フェス盆踊り2日目 １大東京音頭 https://youtu.be/3rwZOgMPVRo ２郡上節かわさき https://youtu.be/vMawJX3H2rc ３少年八木節 https://youtu.be/XQI3Vamc-YU ４終 マツケンサンバⅡ https://youtu.be/A74xwDGSBrI 夏フェス盆踊り1日目 １大東京音頭 https://youtu.be/JmIaLge5z8o ２ドンパン節 https://youtu.be/qyZiOls_BHQ ３少年八木節 https://youtu",
-            "url": "https://www.youtube.com/watch?v=XQI3Vamc-YU"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-08-23T08:00:19+00:00",
-            "text": "2026年8月15日、「グランドニッコー東京ベイ舞浜」にて開催された「夏フェス」盆踊り会場の様子です。 浦安舞鼓連のみなさんによる演舞をお届けします。 ホテルの華やかな雰囲気の中で踊る盆踊り1曲目、ぜひお楽しみください！ 【詳細】 開催日：2026年8月15日 会場：グランドニッコー東京ベイ舞浜（千葉県浦安市） 出演：浦安舞鼓連 #盆踊り #大東京音頭 #浦安舞鼓連 #グランドニッコー東京ベイ舞浜 #夏フェス #和太鼓お祭りチャンネル グランドニッコー東京ベイ舞浜 夏フェス盆踊り2日目 １大東京音頭 https://youtu.be/3rwZOgMPVRo ２郡上節かわさき https://youtu.be/vMawJX3H2rc ３少年八木節 https://youtu.be/XQI3Vamc-YU ４終 マツケンサンバⅡ https://youtu.be/A74xwDGSBrI 夏フェス盆踊り1日目 １大東京音頭 https://youtu.be/JmIaLge5z8o ２ドンパン節 https://youtu.be/qyZiOls_BHQ ３少年八木節 https://youtu",
-            "url": "https://www.youtube.com/watch?v=vMawJX3H2rc"
-          },
-          {
-            "account": "@bonkyodora_",
-            "date": "2026-08-24T05:36:33+00:00",
-            "text": "@7376GgBw1gwxUM3 たしかに、学校が盆踊り会場の時は入口の予想が外れて、反対側だったりしますね。 早く輪に入って踊りたいのに、盆踊り曲がよく聞こえている状況でお預け状態。酷な状況。 何処かに隙間はないか無駄な確認しながら、足早に入口探しに必死になっています。",
-            "url": "https://x.com/bonkyodora_/status/2091761560406647041"
-          }
-        ],
-        "evidence_count": 10,
-        "evidence_text": "2026年8月15日、「グランドニッコー東京ベイ舞浜」にて開催された「夏フェス」盆踊り会場の様子です。 浦安舞鼓連のみなさんによる演舞をお届けします。 ホテルの華やかな雰囲気の中で踊る盆踊り1曲目、ぜひお楽しみください！ 【詳細】 開催日：2026年8月15日 会場：グランドニッコー東京ベイ舞浜（千葉県浦安市） 出演：浦安舞鼓連 #盆踊り #大東京音頭 #浦安舞鼓連 #グランドニッコー東京ベイ舞浜 #夏フェス #和太鼓お祭りチャンネル グランドニッコー東京ベイ舞浜 夏フェス盆踊り2日目 １大東京音頭 https://youtu.be/3rwZOgMPVRo ２郡上節かわさき https://youtu.be/vMawJX3H2rc ３少年八木節 https://youtu.be/XQI3Vamc-YU ４終 マツケンサンバⅡ https://youtu.be/A74xwDGSBrI 夏フェス盆踊り1日目 １大東京音頭 https://youtu.be/JmIaLge5z8o ２ドンパン節 https://youtu.be/qyZiOls_BHQ ３少年八木節 https://youtu\n---\n後ろ髪を引かれる思いで、 盆踊り会場をあとにして お祭りの総会に出席。\n---\n2026年8月15日、「グランドニッコー東京ベイ舞浜」にて開催された「夏フェス」盆踊り会場の様子です。 浦安舞鼓連のみなさんによる演舞をお届けします。 ホテルの華やかな雰囲気の中で踊る盆踊り1曲目、ぜひお楽しみください！ 【詳細】 開催日：2026年8月15日 会場：グランドニッコー東京ベイ舞浜（千葉県浦安市） 出演：浦安舞鼓連 #盆踊り #大東京音頭 #浦安舞鼓連 #グランドニッコー東京ベイ舞浜 #夏フェス #和太鼓お祭りチャンネル グランドニッコー東京ベイ舞浜 夏フェス盆踊り2日目 １大東京音頭 https://youtu.be/3rwZOgMPVRo ２郡上節かわさき https://youtu.be/vMawJX3H2rc ３少年八木節 https://youtu.be/XQI3Vamc-YU ４終 マツケンサンバⅡ https://youtu.be/A74xwDGSBrI 夏フェス盆踊り1日目 １大東京音頭 https://youtu.be/JmIaLge5z8o ２ドンパン節 https://youtu.be/qyZiOls_BHQ ３少年八木節 https://youtu",
-        "evidence_url": "https://www.youtube.com/watch?v=A74xwDGSBrI",
-        "interpretation": "盆踊りや輪踊りの会",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "踊り会",
-        "type": "準公式用語"
       }
     },
     {
