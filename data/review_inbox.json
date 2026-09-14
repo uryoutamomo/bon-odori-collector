@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-13T12:07:49.977876+00:00",
+  "generated_at": "2026-09-14T12:58:01.528213+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,423 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2b00486b70820dc8",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日と明日、ようが夏まつりを開催いたします！会場マップとステージプログラムはこちら✨\n⚫︎日時　2026年7月22日(水)・23(木)\n 両日  17:00〜2",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079711700388139026",
+      "source_url": "https://x.com/YOGAS_tw/status/2079711700388139026",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "638b4992b698a4c0a6fedd514b487a12e74cfafd316e7bfcb80613096193c714",
+      "last_seen_at": "github-34845017167-1",
+      "created_at": "2026-09-14T12:57:21.989297+00:00",
+      "updated_at": "2026-09-14T12:57:21.989297+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_56480226808e06b1",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月22日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@YOGAS_tw",
+        "source_count": 1,
+        "source_key": "x:2079711700388139026",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNyexOnaMAAHAHa.jpg",
+          "https://t.co/mHDtyQLYpd",
+          "pic.x.com/mHDtyQLYpd",
+          "https://pbs.twimg.com/media/HNyexO0bsAAOm7n.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "用賀商店街広報",
+          "classification": "registered_official_social",
+          "handle": "@yogas_tw",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日と明日、ようが夏まつりを開催いたします！会場マップとステージプログラムはこちら✨\n⚫︎日時　2026年7月22日(水)・23(木)\n 両日  17:00〜21:00 雨天決行(順延なし)\n⚫︎場所　用賀くすのき公園(SBS北側)\nおいしい屋台やミニ縁日、盆踊りを楽しもう！ https://t.co/mHDtyQLYpd",
+        "source_url": "https://x.com/YOGAS_tw/status/2079711700388139026",
+        "source_urls": [
+          "https://x.com/YOGAS_tw/status/2079711700388139026"
+        ],
+        "voice": {
+          "account": "@YOGAS_tw",
+          "date": "2026-07-21T23:34:43+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNyexOnaMAAHAHa.jpg",
+            "https://t.co/mHDtyQLYpd",
+            "pic.x.com/mHDtyQLYpd",
+            "https://pbs.twimg.com/media/HNyexO0bsAAOm7n.jpg"
+          ],
+          "name": "用賀商店街広報",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-song-program"
+          ],
+          "text": "本日と明日、ようが夏まつりを開催いたします！会場マップとステージプログラムはこちら✨\n⚫︎日時　2026年7月22日(水)・23(木)\n 両日  17:00〜21:00 雨天決行(順延なし)\n⚫︎場所　用賀くすのき公園(SBS北側)\nおいしい屋台やミニ縁日、盆踊りを楽しもう！ https://t.co/mHDtyQLYpd",
+          "title": "",
+          "tweet_id": "2079711700388139026",
+          "url": "https://x.com/YOGAS_tw/status/2079711700388139026"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_65f8374b1a306ceb",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【社会教育部】夏祭り盆踊り大会を前に盆踊り練習会を開催します。ご希望の方は7/24の19:00に日の出小中庭にお集まりください。",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079450059775816171",
+      "source_url": "https://x.com/hinode_machi/status/2079450059775816171",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "80195e7fa8b8df684cc31842f378eb7464445f67743176cacc1086c7634ed5ae",
+      "last_seen_at": "github-34845017167-1",
+      "created_at": "2026-09-14T12:57:21.989297+00:00",
+      "updated_at": "2026-09-14T12:57:21.989297+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_845148f6f16bb311",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/24"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@hinode_machi",
+        "source_count": 1,
+        "source_key": "x:2079450059775816171",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "日の出町自治会",
+          "classification": "registered_official_social",
+          "handle": "@hinode_machi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【社会教育部】夏祭り盆踊り大会を前に盆踊り練習会を開催します。ご希望の方は7/24の19:00に日の出小中庭にお集まりください。",
+        "source_url": "https://x.com/hinode_machi/status/2079450059775816171",
+        "source_urls": [
+          "https://x.com/hinode_machi/status/2079450059775816171"
+        ],
+        "voice": {
+          "account": "@hinode_machi",
+          "date": "2026-07-21T06:15:03+00:00",
+          "name": "日の出町自治会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【社会教育部】夏祭り盆踊り大会を前に盆踊り練習会を開催します。ご希望の方は7/24の19:00に日の出小中庭にお集まりください。",
+          "title": "",
+          "tweet_id": "2079450059775816171",
+          "url": "https://x.com/hinode_machi/status/2079450059775816171"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6b69c6f4edd415e5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n焼きそば、フランクフルト、飲み物など模擬店も多数出店しますよ～❤️\nhttps://t.",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079476476223652027",
+      "source_url": "https://x.com/otafull/status/2079476476223652027",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9e66047be0c25197ea1ab935cb0c0cb3cbea48892a5339155914e615291c55f3",
+      "last_seen_at": "github-34845017167-1",
+      "created_at": "2026-09-14T12:57:21.989297+00:00",
+      "updated_at": "2026-09-14T12:57:21.989297+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e7e78a61b5dd797e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2079476476223652027",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n焼きそば、フランクフルト、飲み物など模擬店も多数出店しますよ～❤️\nhttps://t.co/Sf3Cv2oK1D\n#大田区　#商店街　#蒲田　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2079476476223652027",
+        "source_urls": [
+          "https://x.com/otafull/status/2079476476223652027"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-21T08:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n焼きそば、フランクフルト、飲み物など模擬店も多数出店しますよ～❤️\nhttps://t.co/Sf3Cv2oK1D\n#大田区　#商店街　#蒲田　#盆踊り",
+          "title": "",
+          "tweet_id": "2079476476223652027",
+          "url": "https://x.com/otafull/status/2079476476223652027"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a6229dae34931b06",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【蒲田】7/30(木)、7/31(金)に道塚自治会が道塚小学校で「盆踊り大会」\n太鼓をたたきたい方は17:45までに会場のやぐらの下に来て",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079763379250499965",
+      "source_url": "https://x.com/otafull/status/2079763379250499965",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2ce76b7dd55888f4b136da8796ba29f473efc291c4f923011f0af2afcd687210",
+      "last_seen_at": "github-34845017167-1",
+      "created_at": "2026-09-14T12:57:21.989297+00:00",
+      "updated_at": "2026-09-14T12:57:21.989297+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_570555068b4d6a51",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/30",
+          "7/31"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区新蒲田3-3-18",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/152970",
+          "venue": "道塚小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2079763379250499965",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【蒲田】7/30(木)、7/31(金)に道塚自治会が道塚小学校で「盆踊り大会」\n太鼓をたたきたい方は17:45までに会場のやぐらの下に来てくださいね❣️\nhttps://t.co/ASm218jIAB\n#大田区　#商店街　#蒲田　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2079763379250499965",
+        "source_urls": [
+          "https://x.com/otafull/status/2079763379250499965"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-22T03:00:04+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "【盆踊り情報2026】【蒲田】7/30(木)、7/31(金)に道塚自治会が道塚小学校で「盆踊り大会」\n太鼓をたたきたい方は17:45までに会場のやぐらの下に来てくださいね❣️\nhttps://t.co/ASm218jIAB\n#大田区　#商店街　#蒲田　#盆踊り",
+          "title": "",
+          "tweet_id": "2079763379250499965",
+          "url": "https://x.com/otafull/status/2079763379250499965"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cd2d5551e212b0ef",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "第79回 #築地本願寺納涼盆踊り大会 開催✨\n\nやぐらを囲む大きな踊りの輪と、\n築地場外市場の名店が集う屋台グルメが\n夏の夜を華やかに彩ります🏮\n\n📅2026/",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079808660453413316",
+      "source_url": "https://x.com/c_kankokyokai/status/2079808660453413316",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4eacd07ff829c099709ff46ec1318eac976e02dec237c39f41aedfb76896c81c",
+      "last_seen_at": "github-34845017167-1",
+      "created_at": "2026-09-14T12:57:21.989297+00:00",
+      "updated_at": "2026-09-14T12:57:21.989297+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ecd82d8ace180ba0",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/7/29",
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中央区築地3-15-1",
+          "region_hint": "中央区",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/",
+          "venue": "築地本願寺"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@c_kankokyokai",
+        "source_count": 1,
+        "source_key": "x:2079808660453413316",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNaCoVdaIAA2DuT.jpg",
+          "https://t.co/nXx0x5qrCf",
+          "pic.x.com/nXx0x5qrCf"
+        ],
+        "source_officiality": {
+          "account_name": "中央区観光協会",
+          "classification": "registered_official_social",
+          "handle": "@c_kankokyokai",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n第79回 #築地本願寺納涼盆踊り大会 開催✨\n\nやぐらを囲む大きな踊りの輪と、\n築地場外市場の名店が集う屋台グルメが\n夏の夜を華やかに彩ります🏮\n\n📅2026/7/29（水）～8/1（土）\n🕖19:00～21:00（最終日のみ18:00～20:30）\n📍築地本願寺\n\n公式HP🔽\nhttps://t.co/fMZuli3wOD https://t.co/nXx0x5qrCf",
+        "source_url": "https://x.com/c_kankokyokai/status/2079808660453413316",
+        "source_urls": [
+          "https://x.com/c_kankokyokai/status/2079808660453413316"
+        ],
+        "voice": {
+          "account": "@c_kankokyokai",
+          "date": "2026-07-22T06:00:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNaCoVdaIAA2DuT.jpg",
+            "https://t.co/nXx0x5qrCf",
+            "pic.x.com/nXx0x5qrCf"
+          ],
+          "name": "中央区観光協会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "第79回 #築地本願寺納涼盆踊り大会 開催✨\n\nやぐらを囲む大きな踊りの輪と、\n築地場外市場の名店が集う屋台グルメが\n夏の夜を華やかに彩ります🏮\n\n📅2026/7/29（水）～8/1（土）\n🕖19:00～21:00（最終日のみ18:00～20:30）\n📍築地本願寺\n\n公式HP🔽\nhttps://t.co/fMZuli3wOD https://t.co/nXx0x5qrCf",
+          "title": "",
+          "tweet_id": "2079808660453413316",
+          "url": "https://x.com/c_kankokyokai/status/2079808660453413316"
         }
       }
     },
