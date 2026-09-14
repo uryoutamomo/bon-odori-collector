@@ -1,18 +1,20 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-09-13T11:59:49.118574+00:00
+- 生成時刻: 2026-09-14T12:56:41.215438+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 33件
-- 候補総数: 10件
+- 対象voices: 39件
+- 候補総数: 18件
 
 ## 内訳
-- 曲候補: 10件
+- 曲×会場共起: 2件
+- 曲候補: 15件
+- 用語候補: 1件
 
 ## レビュー対象
-- 用語・共起レビュー: 0件
-- 曲候補レビュー: 0件
-- 曲の明白候補 dry-run: 9件
-- 曲ノイズ除外: 1件
+- 用語・共起レビュー: 3件
+- 曲候補レビュー: 2件
+- 曲の明白候補 dry-run: 11件
+- 曲ノイズ除外: 2件
 
 ## 生成物
 - non_song_json: `data/weekly_harvest_review_candidates.json`
@@ -23,3 +25,12 @@
 ## 反映コマンド
 - `python apply_weekly_song_review_decisions.py --dry-run`
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
+
+## 用語・共起レビュー例
+- らんまん踊り × 赤坂氷川神社
+- 赤坂音頭 × 赤坂氷川神社
+- 踊り会
+
+## 曲レビュー例
+- らんまん踊り
+- 赤坂音頭

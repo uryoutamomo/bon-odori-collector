@@ -1426,6 +1426,48 @@
     "date": "2026-09-06",
     "songs": [
       {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "東京五輪音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "花火音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "きよしのズンドコ節",
         "confidence": "hint",
         "probability": 48,
@@ -1459,48 +1501,6 @@
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "東京五輪音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "花火音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "花笠音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
       }
     ]
   },
@@ -3674,6 +3674,18 @@
         "basis_label": "実測"
       },
       {
+        "name": "パレード行進",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "好きすぎて滅!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京スカイツリー音頭",
         "confidence": "hint",
         "basis": "current_observed",
@@ -3693,6 +3705,12 @@
       },
       {
         "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "爆裂愛してる",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"

@@ -1,19 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-13T11:59:49.118574+00:00",
+  "generated_at": "2026-09-14T12:56:41.215438+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-13T11:59:43.754256+00:00",
+  "source_generated_at": "2026-09-14T12:56:33.786520+00:00",
   "days": 3,
-  "voice_count": 33,
-  "candidate_count": 10,
+  "voice_count": 39,
+  "candidate_count": 18,
   "category_counts": {
-    "曲候補": 10
+    "曲×会場共起": 2,
+    "曲候補": 15,
+    "用語候補": 1
   },
-  "non_song_review_count": 0,
-  "song_candidate_count": 10,
-  "song_direct_dry_run_count": 9,
-  "song_review_count": 0,
-  "song_rejected_noise_count": 1,
+  "non_song_review_count": 3,
+  "song_candidate_count": 15,
+  "song_direct_dry_run_count": 11,
+  "song_review_count": 2,
+  "song_rejected_noise_count": 2,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -25,7 +27,14 @@
     "python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run"
   ],
   "samples": {
-    "non_song_review": [],
-    "song_review": []
+    "non_song_review": [
+      "らんまん踊り × 赤坂氷川神社",
+      "赤坂音頭 × 赤坂氷川神社",
+      "踊り会"
+    ],
+    "song_review": [
+      "らんまん踊り",
+      "赤坂音頭"
+    ]
   }
 }

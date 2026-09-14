@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 10,
-  "direct_count": 9,
-  "created_count": 5,
+  "song_candidate_count": 15,
+  "direct_count": 11,
+  "created_count": 7,
   "updated_count": 4,
-  "rejected_noise_count": 1,
-  "review_count": 0,
+  "rejected_noise_count": 2,
+  "review_count": 2,
   "created": [
     {
       "song_name": "アンパンマン音頭",
@@ -47,6 +47,22 @@
       "venue_relations": 0,
       "event_relations": 1,
       "dry_run": true
+    },
+    {
+      "song_name": "第三回高一中央通り商店街阿波踊り",
+      "source_term": "第三回高一中央通り商店街阿波踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "阿波おどり",
+      "source_term": "阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "updated": [
@@ -55,7 +71,7 @@
       "source_term": "東京音頭",
       "target": "update",
       "venue_relations": 0,
-      "event_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -87,7 +103,24 @@
     {
       "term": "入谷朝顔音頭踊り",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "阿波踊り",
+      "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
-  "review": []
+  "review": [
+    {
+      "term": "らんまん踊り",
+      "evidence_count": 1,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+    },
+    {
+      "term": "赤坂音頭",
+      "evidence_count": 1,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=mHDF6K_P20w"
+    }
+  ]
 }

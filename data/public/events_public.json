@@ -3872,6 +3872,48 @@
     ],
     "songs": [
       {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "東京五輪音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "花火音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "probability": 71,
+        "basis": "past_evidence",
+        "basis_label": "2025年実測"
+      },
+      {
         "name": "きよしのズンドコ節",
         "confidence": "hint",
         "probability": 48,
@@ -3905,48 +3947,6 @@
         "probability": 48,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "東京五輪音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "花火音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "花笠音頭",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
       }
     ],
     "current_event_state": "ended",
@@ -4877,16 +4877,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-11〜2026-09-13",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-11〜2026-09-13",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -4895,7 +4895,7 @@
       "2026-09-11",
       "2026-09-13"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "上笄町会お祭り 盆踊り",
@@ -6871,16 +6871,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-13",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-13",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -6889,7 +6889,7 @@
       "2026-09-13",
       "2026-09-13"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "歌舞伎町BON ODORI",
@@ -9987,6 +9987,18 @@
         "basis_label": "実測"
       },
       {
+        "name": "パレード行進",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "好きすぎて滅!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京スカイツリー音頭",
         "confidence": "hint",
         "basis": "current_observed",
@@ -10006,6 +10018,12 @@
       },
       {
         "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "爆裂愛してる",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -25654,7 +25672,7 @@
       }
     ],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -25673,9 +25691,9 @@
       "2025-09-14",
       "2025-09-15"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-09-14",
@@ -25695,17 +25713,9 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-09-13",
-        "date_end": "2026-09-14",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第2日曜を2026年へスライド",
-        "source_date": "2025-09-14",
-        "source_date_end": "2025-09-15",
-        "duration_days": 2
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-09-14",
@@ -25713,24 +25723,7 @@
     ],
     "historical_reference_label": "2025-09-14〜2025-09-15実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.55,
-    "historical_slide": {
-      "date": "2026-09-13",
-      "date_end": "2026-09-14",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第2日曜を2026年へスライド",
-      "source_date": "2025-09-14",
-      "source_date_end": "2025-09-15",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-09-13",
-    "historical_slide_date_end": "2026-09-14",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第2日曜を2026年へスライド",
-    "predicted_date": "2026-09-13",
-    "predicted_date_end": "2026-09-14",
-    "prediction_basis": "2025年実績の同月第2日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.55
   },
   {
     "name": "あらかわ青年大会 アリストック",
@@ -29781,16 +29774,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-12〜2026-09-13",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-12〜2026-09-13",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -29799,7 +29792,7 @@
       "2026-09-12",
       "2026-09-13"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "お花茶屋ふるさとまつり",
@@ -32746,16 +32739,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-09-12〜2026-09-13",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-09-12〜2026-09-13",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32764,7 +32757,7 @@
       "2026-09-12",
       "2026-09-13"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "小岩二東町会盆踊り",
