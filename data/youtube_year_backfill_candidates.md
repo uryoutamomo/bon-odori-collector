@@ -1,10 +1,10 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-08-17T20:25:50.340905+00:00
+- 生成: 2026-09-15T22:43:53.950107+00:00
 - selected_queue_count: 210
-- candidate_count: 749
-- strong: 238
-- review: 60
+- candidate_count: 765
+- strong: 240
+- review: 62
 
 | status | score | year | event | venue | detected | channel | title | url |
 | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |
@@ -22,6 +22,7 @@
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 東京音頭　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目１　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=iwpON-POUyo |
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 東京音頭　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目１６　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=w6u_8TI66Xw |
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 東京音頭　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目１７終　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=gXpQ1npVauI |
+| strong | 100 | 2023 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2023-08-19 | Tokyo Lonely Walker | [4K]🇯🇵 歌舞伎町 BON ODORI 1部 古典盆踊り東京おとめ太鼓 / Bon dance in Shinjuku Kabukicho. Traditional Japanese dance. | https://www.youtube.com/watch?v=yPirt13uxo4 |
 | strong | 100 | 2023 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2023-08-11 | 和太鼓お祭りチャンネル | 神田明神音頭（生歌）　2023年神田明神納涼祭り　アニソン盆踊り１３終 | https://www.youtube.com/watch?v=Jev8P9VyOWI |
 | strong | 100 | 2023 | 第15回 鴨台盆踊り | 大正大学 | 2023-07-08 | 和太鼓お祭りチャンネル | スターダスト河内　交野節　２０２３年大正大学鴨台盆踊り２日目１ | https://www.youtube.com/watch?v=FcLa-B7sWqs |
 | strong | 100 | 2023 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2023-08-03 | 祭のきせき　MatsuriNoKiseki | ゆかた音頭 　築地本願寺納涼盆踊り大会 20230803 | https://www.youtube.com/watch?v=Drph1QicthQ |
@@ -87,4 +88,3 @@
 | strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | Tokyo Lonely Walker | [4K]🇯🇵 奥浅草盆踊り大会 『波乗りジョニー』『エロティカセブン』全14曲 / Traditional Japanese Bon dance in Asakusa, Tokyo. 2024 | https://www.youtube.com/watch?v=Bun2O56igYo |
 | strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | 和太鼓お祭りチャンネル | ふるさと音頭　2024年第2回奥浅草盆踊り大会15　隅田公園山谷堀広場　東京都台東区　下町台東盆踊り協議会　浅草たいこばん | https://www.youtube.com/watch?v=JDiIosnLZWI |
 | strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | オールデイズGOGO | 奥浅草盆踊り大会①　2024/6/29 | https://www.youtube.com/watch?v=IU9n1sHSChI |
-| strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | オールデイズGOGO | 奥浅草盆踊り大会②　2024/6/29 | https://www.youtube.com/watch?v=dXD5SLYyCgM |

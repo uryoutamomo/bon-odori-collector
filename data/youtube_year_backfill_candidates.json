@@ -1,20 +1,20 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-08-17T20:25:50.340905+00:00",
+  "generated_at": "2026-09-15T22:43:53.950107+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 3,
+  "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 749,
+    "candidate_count": 765,
     "status_counts": {
-      "review": 60,
-      "strong": 238,
-      "weak": 451
+      "review": 62,
+      "strong": 240,
+      "weak": 463
     },
-    "strong_count": 238,
-    "review_count": 60
+    "strong_count": 240,
+    "review_count": 62
   },
   "selected_queue_rows": [
     {
@@ -263,7 +263,7 @@
       "recurrence_label": "昨年開催・継続性 中",
       "recurrence_score": 0.6,
       "source_url_count": 0,
-      "song_count": 25,
+      "song_count": 11,
       "priority_reasons": [
         "youtube_observed_series",
         "recent_youtube_observation",
@@ -7942,6 +7942,83 @@
       "score": 100,
       "reasons": [
         "event_name_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:eea19cdecf0895b9",
+      "target_year": 2023,
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "detected_event_date": "2023-08-19",
+      "video_id": "yPirt13uxo4",
+      "video_url": "https://www.youtube.com/watch?v=yPirt13uxo4",
+      "title": "[4K]🇯🇵 歌舞伎町 BON ODORI 1部 古典盆踊り東京おとめ太鼓 / Bon dance in Shinjuku Kabukicho. Traditional Japanese dance.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2023-08-20T03:00:24Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/yPirt13uxo4/sddefault.jpg",
+      "query": "歌舞伎町BON ODORI 2023 YouTube 盆踊り",
+      "setlist_count": 8,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭/ Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節 / Tankou Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "八木節 / Yagi Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "相馬盆唄 / Souma Bon Uta",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "郡上おどり かわさき / Gujyo Odori Kawasaki",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "鹿児島おはら節 / Kagoshima Ohara Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "ダンシング・ヒーロー / Eat You Up",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "和太鼓アイドル-東京おとめ太鼓 / TOKYO OTOME DAIKO",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "新宿歌舞伎町で盆踊りが開催されました。1部が「古典盆踊り」2部が「盆DANCE」という構成で、今回は1部の古典盆踊りの動画になります。 鳳蝶美成 (アゲハビジョウ）さんがナビゲーターを務め、太鼓は和太鼓アイドルの東京おとめ太鼓さんが担当。1部の終わりには東京おとめ太鼓さんのパフォーマンスタイムもあり、圧巻の演奏を披露し会場を大いに盛り上げていました!! Bon dance was held in Shinjuku Kabukicho. 1 part was \"Classic Bon Dance\" and 2 parts were \"Bon DANCE\", and this time it is a video of 1 part Classic Bon Dance.The taiko performance will be by Tokyo Otome Daiko. 2023.8.19 Sat 4K60fps virtual walking tour ーーー ▽Please Subscribe to my channe/よろしければ登録お願いします https://www.youtu…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
         "venue_in_video",
         "target_year_in_video",
         "target_year_date_detected",
@@ -14870,6 +14947,40 @@
         "target_year_date_detected",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:eea19cdecf0895b9",
+      "target_year": 2023,
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "detected_event_date": "2023-08-19",
+      "video_id": "TIdS4xv_N8Q",
+      "video_url": "https://www.youtube.com/watch?v=TIdS4xv_N8Q",
+      "title": "[4K]🇯🇵 歌舞伎町 BON ODORI 2部 盆DANCE 東京おとめ太鼓 / Bon dance in Shinjuku Kabukicho. Bon Odori with pop music.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2023-08-26T08:00:11Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/TIdS4xv_N8Q/sddefault.jpg",
+      "query": "歌舞伎町BON ODORI 歌舞伎町シネシティ広場 新宿区 2023 盆踊り",
+      "setlist_count": 1,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "ダンシング・ヒーロー / Eat You Up",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "新宿歌舞伎町で盆踊りが開催されました。1部が「古典盆踊り」2部が「盆DANCE」という構成で、今回は2部の盆DANCEの動画になります。 QUEENやBon Jovi、YOASOBIにUTA（ADO）、椎名林檎に荻野目洋子、TRFにTM NETWORKなどなど本当に幅広いポップやロックで踊る盆踊りでした!! でも、振付は1部の古典盆踊りで踊った振付で踊るという配慮もあり、みんなが踊れる素晴らしい盆踊りでした。 鳳蝶美成 (アゲハビジョウ）さんがナビゲーターを務め、太鼓は和太鼓アイドルの東京おとめ太鼓さんが担当。東京おとめ太鼓さんの太鼓の迫力はすごかったです!! Bon dance was held in Shinjuku Kabukicho. 1 part was \"Classic Bon Dance\" and 2 parts were \"Bon DANCE\", and this time it is a video of the 2nd part, Bon DANCE. *Bon dance is a Bon Odori dance danced to recent songs s…"
+    },
+    {
+      "status": "strong",
+      "score": 98,
+      "reasons": [
+        "event_name_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:d424afab54d4ffc5",
       "target_year": 2023,
       "event_name": "神田明神納涼祭り アニソン盆踊り",
@@ -19145,6 +19256,32 @@
         "target_year_in_video",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:eea19cdecf0895b9",
+      "target_year": 2023,
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "detected_event_date": "",
+      "video_id": "Z6hacGlbWpg",
+      "video_url": "https://www.youtube.com/watch?v=Z6hacGlbWpg",
+      "title": "ダンシング・ヒーロー_歌舞伎町 BON ODORI 2023【Eat You Up / Bon Odori】",
+      "channel_id": "UCTkknp9OjRXszrLTAZ4I0mQ",
+      "channel_title": "catzaurus",
+      "published_at": "2023-08-19T14:35:51Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Z6hacGlbWpg/hqdefault.jpg",
+      "query": "歌舞伎町BON ODORI 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "初めて歌舞伎町 BON ODORIに行きました。 今年開業した東急歌舞伎町タワーの正面で繰り広げられる盆踊り大会は とても新鮮で見応えがあり 訪日外国人観光客と思われるみなさまも存分にBon Odoriをお楽しみの様子でした。 東京おとめ太鼓さまの舞うように打つ太鼓の演奏も最高でした♪"
+    },
+    {
+      "status": "review",
+      "score": 68,
+      "reasons": [
+        "event_name_in_video",
+        "target_year_in_video",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:d424afab54d4ffc5",
       "target_year": 2023,
       "event_name": "神田明神納涼祭り アニソン盆踊り",
@@ -20136,6 +20273,31 @@
         "event_name_in_video",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:eea19cdecf0895b9",
+      "target_year": 2023,
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "detected_event_date": "",
+      "video_id": "AE46zrzKXyU",
+      "video_url": "https://www.youtube.com/watch?v=AE46zrzKXyU",
+      "title": "【歌舞伎町 BON ODORI 2024】Kabukicho Bon Festival dance 2024",
+      "channel_id": "UCTYnG-X3-RWCnTeJVKdD3OQ",
+      "channel_title": "JAPAN Videos Walk",
+      "published_at": "2024-08-22T10:52:53Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/AE46zrzKXyU/maxresdefault.jpg",
+      "query": "歌舞伎町BON ODORI 歌舞伎町シネシティ広場 新宿区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "今年も新宿歌舞伎町のシネシティ広場が盆踊りの熱気に包まれました。 This year too, Cinecity Square in Shinjuku Kabukicho was filled with the excitement of Bon Odori."
+    },
+    {
+      "status": "review",
+      "score": 50,
+      "reasons": [
+        "event_name_in_video",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:d9b05a50d359ed54",
       "target_year": 2023,
       "event_name": "納涼盆踊り大会",
@@ -20579,7 +20741,7 @@
       "channel_title": "Tokyo Lonely Walker",
       "published_at": "2024-09-06T09:00:50Z",
       "thumbnail_url": "https://i.ytimg.com/vi/mk72RwvRBz4/maxresdefault.jpg",
-      "query": "歌舞伎町BON ODORI 歌舞伎町シネシティ広場 新宿区 2023 盆踊り",
+      "query": "歌舞伎町BON ODORI 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "東京・新宿の歌舞伎町で「歌舞伎町BON ODORI」が開催されました。 新宿歌舞伎町の真ん中で行われた盆踊りの第2部はJ-POPや洋楽中心で盛り上がりました！ この動画ではその中から大いに湧いたB'zのultra soulを抜粋！ ※過去にイベント全体をアップした動画が配信不可の楽曲が入っていたため配信自体がブロックとなり削除されたため、いくつかに細分化した形で再アップいたしました。どれかがまたブロックになる可能性もありますのでご容赦ください。 Kabukicho BON ODORI” was held in Kabukicho, Shinjuku, Tokyo. This video shows the second half of the event. The second half of the event was a lot of fun, with people dancing to pop and rock songs and traditional Japanese Bon Odori Dance choreography. This video presents “U…"
@@ -20606,7 +20768,7 @@
       "channel_title": "Tokyo Lonely Walker",
       "published_at": "2024-08-20T08:38:44Z",
       "thumbnail_url": "https://i.ytimg.com/vi/5c4jwXCsQzM/maxresdefault.jpg",
-      "query": "歌舞伎町BON ODORI 歌舞伎町シネシティ広場 新宿区 2023 盆踊り",
+      "query": "歌舞伎町BON ODORI 2023 YouTube 盆踊り",
       "setlist_count": 3,
       "setlist_sample": [
         {
@@ -20672,6 +20834,33 @@
       "venue": "歌舞伎町シネシティ広場",
       "area": "新宿区",
       "detected_event_date": "2024-08-17",
+      "video_id": "dkSfidFAlQE",
+      "video_url": "https://www.youtube.com/watch?v=dkSfidFAlQE",
+      "title": "【歌舞伎町 BON ODORI 2024】「Livin' On A Prayer」- Bon Jovi / 新宿トー横 鳳蝶美成 盆踊り",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2024-08-21T06:00:15Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/dkSfidFAlQE/maxresdefault.jpg",
+      "query": "歌舞伎町BON ODORI 歌舞伎町シネシティ広場 新宿区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#歌舞伎町BONODRI #トー横 #盆踊り #歌舞伎町 #鳳蝶美成 #新宿 #祭り #東京おとめ太鼓 #ABBA #TRF #livinonaprayer Dance to the Pop Music at Shinjyuku Kabukicho City Square. This is the Japanese traditional dance called \"Bon Odori\" . 開催日時：2024年8月17日(土) 18時 ~20時 開催場所：歌舞伎町 シネシティ広場 https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu 1部 古典踊り…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:eea19cdecf0895b9",
+      "target_year": 2023,
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "detected_event_date": "2024-08-17",
       "video_id": "BrJvE1FXqUc",
       "video_url": "https://www.youtube.com/watch?v=BrJvE1FXqUc",
       "title": "【歌舞伎町 BON ODORI 2024】「Y.M.C.A.」- Village People /  Japanese Traditional Dance Called \"Bon Odori\".",
@@ -20680,6 +20869,33 @@
       "published_at": "2024-08-21T03:00:13Z",
       "thumbnail_url": "https://i.ytimg.com/vi/BrJvE1FXqUc/maxresdefault.jpg",
       "query": "歌舞伎町BON ODORI 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#歌舞伎町BONODRI #トー横 #盆踊り #歌舞伎町 #鳳蝶美成 #新宿 #祭り #東京おとめ太鼓 #ABBA #ダンシングクイーン #Dancing Queen Dance to the Pop Music at Shinjyuku Kabukicho City Square. This is the Japanese traditional dance called \"Bon Odori\" . 開催日時：2024年8月17日(土) 18時 ~20時 開催場所：歌舞伎町 シネシティ広場 https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu 1部…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:eea19cdecf0895b9",
+      "target_year": 2023,
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "detected_event_date": "2024-08-17",
+      "video_id": "EvjlNgvCE3o",
+      "video_url": "https://www.youtube.com/watch?v=EvjlNgvCE3o",
+      "title": "【歌舞伎町 BON ODORI 2024】「あゝ無情」- アン・ルイス /  新宿トー横 鳳蝶美成 盆踊り",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2024-08-20T15:34:14Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/EvjlNgvCE3o/maxresdefault.jpg",
+      "query": "歌舞伎町BON ODORI 歌舞伎町シネシティ広場 新宿区 2023 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "#歌舞伎町BONODRI #トー横 #盆踊り #歌舞伎町 #鳳蝶美成 #新宿 #祭り #東京おとめ太鼓 #ABBA #ダンシングクイーン #Dancing Queen Dance to the Pop Music at Shinjyuku Kabukicho City Square. This is the Japanese traditional dance called \"Bon Odori\" . 開催日時：2024年8月17日(土) 18時 ~20時 開催場所：歌舞伎町 シネシティ広場 https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu 1部…"
@@ -22861,6 +23077,31 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "JR板橋駅近くの板橋駅前公園のバーリントン広場にて板橋一丁目町会盆踊り大会2023が華やかに盛大に開催されました。 @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2023-08-14",
+      "video_id": "E2B7t_rEPS8",
+      "video_url": "https://www.youtube.com/watch?v=E2B7t_rEPS8",
+      "title": "2023/08/14 (B)みぃみぃ(鈴木みなよ )トウホク カワイイフェスティバル!! 2023",
+      "channel_id": "UC-mzyf9fGwGJv3irrPexQfw",
+      "channel_title": "どさんこもっちゃん",
+      "published_at": "2023-08-14T19:34:25Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/E2B7t_rEPS8/hqdefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "0:00 SE 0:49 推してみなよ 4:44 MC 5:53 あなたへ 10:12 イイ日だパンダ 14:33 MC"
     },
     {
       "status": "weak",
@@ -25458,6 +25699,32 @@
       "reasons": [
         "target_year_in_video",
         "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "target_year": 2023,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2023-08-25",
+      "video_id": "a9dNx2pra8s",
+      "video_url": "https://www.youtube.com/watch?v=a9dNx2pra8s",
+      "title": "happy🎵 / despicable me 2｜ハマサイトの夏祭り(浜松町)盆踊り",
+      "channel_id": "UCHWaWqhbpfRj9guzccyVzHA",
+      "channel_title": "アキバ系チャンネル",
+      "published_at": "2023-08-25T14:14:52Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/a9dNx2pra8s/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/Fcfc56M8HJM https://youtu.be/Uc8sw4NBkUs https://youtu.be/SMaDmUlNWYU https://youtu.be/a9dNx2pra8s https://youtu.be/_SdwMEKdNMk 4年ぶりに盆踊りが復活 「第14回ハマサイトの夏祭り」2023年8/25(金)開催 DJ KOO、早見優、はるならが浜松町の夏の夜を盛り上げる！ 2023年は、恒例の盆踊りがコロナ禍を経て4年ぶりに復活。TRFのリーダー・DJ KOOが登場、スペシャルゲストとして早見優も登場し「夏色のナンシー 盆踊りバージョン」を披露するなど、他の盆踊りでは見られないステージ展開しました。 ✨秋葉原メイドカフェランキング https://akiba-maid.biz/ ✨スピリチュアルアドバイザー https://www.spiritual-adviser.com/ ✨スピリチュアルカウンセラー.net https://www.spiritual-counselor.net/ ✨トラック重機一括査定 https:/…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
         "bon_context",
         "setlist_detected"
       ],
@@ -25497,6 +25764,32 @@
         }
       ],
       "description_excerpt": "【第14回ハマサイトの夏祭り】 盆ナビ：鳳蝶美成 (アゲハビジョウ） 曲名 00:00 東京音頭 03:16 河内音頭 07:11 September (Earth, Wind & Fire) 11:00 Happy (Pharrell Williams) 15:00 ダンシング・ヒーロー Hamamatsucho Tokyo Japan 2023.8.25"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "target_year": 2023,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2023-08-25",
+      "video_id": "_SdwMEKdNMk",
+      "video_url": "https://www.youtube.com/watch?v=_SdwMEKdNMk",
+      "title": "河内音頭 🎵｜ハマサイトの夏祭り(浜松町)盆踊り",
+      "channel_id": "UCHWaWqhbpfRj9guzccyVzHA",
+      "channel_title": "アキバ系チャンネル",
+      "published_at": "2023-08-25T14:12:38Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/_SdwMEKdNMk/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/Fcfc56M8HJM https://youtu.be/Uc8sw4NBkUs https://youtu.be/SMaDmUlNWYU https://youtu.be/a9dNx2pra8s https://youtu.be/_SdwMEKdNMk 4年ぶりに盆踊りが復活 「第14回ハマサイトの夏祭り」2023年8/25(金)開催 DJ KOO、早見優、はるならが浜松町の夏の夜を盛り上げる！ 2023年は、恒例の盆踊りがコロナ禍を経て4年ぶりに復活。TRFのリーダー・DJ KOOが登場、スペシャルゲストとして早見優も登場し「夏色のナンシー 盆踊りバージョン」を披露するなど、他の盆踊りでは見られないステージ展開しました。 ✨秋葉原メイドカフェランキング https://akiba-maid.biz/ ✨スピリチュアルアドバイザー https://www.spiritual-adviser.com/ ✨スピリチュアルカウンセラー.net https://www.spiritual-counselor.net/ ✨トラック重機一括査定 https:/…"
     },
     {
       "status": "weak",
@@ -28167,6 +28460,119 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "@２０２４年２月２３日@盆女（ぼんじょ）@鬼滅の刃の曲「絆ノ奇跡（きずなのきせき）」で炭坑節@絆ノ奇跡（きずなのきせき）@盆踊りライブ@第６回SAMURAIフェス2024@上野公園竹の台広場@14:59 盆女（ぼんじょ）さんの盆踊りライブ 鬼滅の刃の曲「絆ノ奇跡（きずなのきせき）」で炭坑節を踊ります 盆女（ぼんじょ） 一般社団法人日本盆踊り協会 理事 「盆女」は 日本舞踊経験のある女性メンバーによるアーティストグループ。伝統を崩さず、DJやLIVEバンドと共に「魅せる盆踊り」と「踊る盆踊り」をテーマに活動。「ふるさと祭り 2019」では、東京ド ームでの司会の他、鳳蝶美成×DJKOO コラボステージ共演等、様々な舞台で マルチに活躍中。 （ 東京 新宿の体験型エンターテイメント居酒屋「盆踊り居酒屋」 で不定期にライブを行っています 新宿産直横丁 住所 東京都新宿区歌舞伎町1-27-5 APMビル6階 問い合わせ先一般社団法人日本盆踊り協会・事務局 電話： 03-6820-2267 （受付時間・平日11:00－18:00） Mail： info@bon-odori.net…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:4d18fac47934371c",
+      "target_year": 2024,
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "WtQhEQH5fQ0",
+      "video_url": "https://www.youtube.com/watch?v=WtQhEQH5fQ0",
+      "title": "【夢芝居】　2024年秋祭りinラゾーナ３　ラゾーナ川崎盆踊り",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2025-01-17T10:00:41Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/WtQhEQH5fQ0/sddefault.jpg",
+      "query": "世田谷駅前商店街振興組合「納涼盆踊り大会」 円光院駐車場 世田谷区 2024 盆踊り",
+      "setlist_count": 52,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "多慶屋音頭",
+          "url": "https://www.youtube.com/watch?v=3Xip-7hTGiQ",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=Mpdekksis2I",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "新宿音頭",
+          "url": "https://www.youtube.com/watch?v=SKTS7Go4JoI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=Qeym6890h3I",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "築地音頭",
+          "url": "https://www.youtube.com/watch?v=vCXaFtE-ztY",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "ズンパ音頭",
+          "url": "https://www.youtube.com/watch?v=BZ9FpGtlgXM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "ダンシング・ヒーロー",
+          "url": "https://www.youtube.com/watch?v=ccB5NxYLamQ",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "根津音頭",
+          "url": "https://www.youtube.com/watch?v=kTZK01ez8vc",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=XKOVeAXx_Fw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "終 ダンシング・ヒーロー",
+          "url": "https://www.youtube.com/watch?v=Uihw5aiCtQI",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年、神奈川県川崎市にありますラゾーナ川崎で行われました、 「秋祭りinラゾーナ」盆踊りの様子です。 ラゾーナ川崎盆踊り １東京音頭 https://youtu.be/Qeym6890h3I ２ﾊﾟﾌﾟﾘｶ https://youtu.be/axSjGD93Hpc ３夢芝居 https://youtu.be/WtQhEQH5fQ0 ４川崎おどり https://youtu.be/-NV3-tqehqc その他盆踊り 田端銀座商店街盆踊り １東京音頭 https://youtu.be/lOOZxri_uJY ２炭坑節 https://youtu.be/XKOVeAXx_Fw ３大東京音頭 https://youtu.be/DyfqhlY-eXU ４少年八木節 https://youtu.be/TynH3zMuzlg ５きよしのズンドコ節 https://youtu.be/Y4snm7ID9wg ６東京音頭 https://youtu.be/pfmAACc4-xE ７炭坑節 https://youtu.be/ersL6m2vdYg ８大東京音頭 https://youtu.be/g…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:4d18fac47934371c",
+      "target_year": 2024,
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "detected_event_date": "2024-08-25",
+      "video_id": "idYyEVEuaaw",
+      "video_url": "https://www.youtube.com/watch?v=idYyEVEuaaw",
+      "title": "盆踊り｜世田谷音頭｜下北沢盆踊り2024 / Traditional Japanese Bon dance in Shimokitazawa \"Setagaya Ondo” [4K]",
+      "channel_id": "UCOscyclqwbx_tGR7yWs1RVQ",
+      "channel_title": "Tokyo Dance Storage",
+      "published_at": "2024-11-23T09:00:49Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/idYyEVEuaaw/maxresdefault.jpg",
+      "query": "世田谷駅前商店街振興組合「納涼盆踊り大会」 円光院駐車場 世田谷区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【2024年 盆踊りの記録】 日時：2024年8月25日(金) イベント名：下北沢盆踊り ▼下北沢盆踊り ダンシングヒーロー｜マツケンサンバⅡ｜他 https://youtu.be/37bU4IHu1bU #盆踊り"
     },
     {
       "status": "weak",
@@ -34115,6 +34521,103 @@
       "reasons": [
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:4d18fac47934371c",
+      "target_year": 2024,
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "1ccWQYvGt6g",
+      "video_url": "https://www.youtube.com/watch?v=1ccWQYvGt6g",
+      "title": "2025年7月　若林夏祭り盆踊り大会",
+      "channel_id": "UCNgrhlyrbxpWVOk48mPlsFQ",
+      "channel_title": "若林町会",
+      "published_at": "2025-08-15T00:45:58Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/1ccWQYvGt6g/maxresdefault.jpg",
+      "query": "世田谷駅前商店街振興組合「納涼盆踊り大会」 円光院駐車場 世田谷区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2025年7月に開催された若林夏祭り盆踊り大会の様子です。 7月26日（土）・27日（日）の2日間の開催。 初の試みとして盆ディスコが実施されました。 #世田谷区若林 #盆踊り #若林町会 #盆ディスコ #世田谷笑in若林 #ultrasoul"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:4d18fac47934371c",
+      "target_year": 2024,
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "LAx_v-B2_p0",
+      "video_url": "https://www.youtube.com/watch?v=LAx_v-B2_p0",
+      "title": "世田谷「下北沢盆踊り」　令和７年（2025年）",
+      "channel_id": "UCgSNf-_1z48D0jXe45iUYgg",
+      "channel_title": "YOKOSUKA2021",
+      "published_at": "2025-08-10T07:46:48Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/LAx_v-B2_p0/maxresdefault.jpg",
+      "query": "世田谷駅前商店街振興組合「納涼盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "令和７年８月９日サンバ隊参加の「下北沢盆踊り」 ＃マツケンサンバ ＃ダンシングヒーロー ＃お嫁サンバ ＃きよしのズンドコ節 ＃Samba ＃下北沢盆踊り"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:4d18fac47934371c",
+      "target_year": 2024,
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "detected_event_date": "2025-07-26",
+      "video_id": "taawJQrqlfg",
+      "video_url": "https://www.youtube.com/watch?v=taawJQrqlfg",
+      "title": "二子玉川 玉川町会盆踊り 2025/07/26 LUMIX S5IIx #祭り #お祭り #夏祭り #イベント #futakotamagawa #二子玉川 #盆踊り #世田谷 #festival",
+      "channel_id": "UCFuibMn7r7BEnh_6Iv7SaCg",
+      "channel_title": "Nakamura Takeshi",
+      "published_at": "2025-07-27T01:41:24Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/taawJQrqlfg/maxresdefault.jpg",
+      "query": "世田谷駅前商店街振興組合「納涼盆踊り大会」 円光院駐車場 世田谷区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "二子玉川で開催されていた玉川町会盆踊りを撮影に行ってきました。 皆さん楽しそうに盆踊りをされていました。 熱気がありましたが、気持ちは涼しく過ごせました。 世田谷区 玉川町会ホームページ https://setagayatamagawa.com/ Panasonic LUMIX S5IIx DC-S5M2X LUMIX S PRO 50mm F1.4 S-X50 LUMIX S PRO 16-35mm F4 S-R1635 Blackmagic Video Assist 5\" 12G HDR Davinci Resolve 20 Music:Natural"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:4d18fac47934371c",
+      "target_year": 2024,
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "olw_L23aPOI",
+      "video_url": "https://www.youtube.com/watch?v=olw_L23aPOI",
+      "title": "東京盆踊りベスト７選 Bon Odori Dances in Tokyo #盆踊り#東京盆踊り#Bon Dances",
+      "channel_id": "UC2TVKHmfay8tpr_kii8xGRw",
+      "channel_title": "Discover Nippon",
+      "published_at": "2025-08-08T08:38:42Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/olw_L23aPOI/maxresdefault.jpg",
+      "query": "世田谷駅前商店街振興組合「納涼盆踊り大会」 円光院駐車場 世田谷区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "盆踊りは、お盆の時期（8月中旬）に行われる日本の伝統的な踊りのお祭りです。元々は先祖の霊を迎え、供養するための宗教的な行事でしたが、現在では地域コミュニティの楽しいイベントとして親しまれています。子どもから大人まで一緒に太鼓や笛などの楽器演奏に合わせて踊り、コミュニティの絆を深める大切な機会となっています。 渋谷盆踊り（渋谷区）Shibuya Bon Odori 増上寺地蔵尊盆踊り大会（港区）Zojoji Jizo Bon Odori Festival 花園神社ぼんおどり（新宿区）Hanazono Shrine Bon Odori 神田明神納涼祭り（千代田区）Kanda Myojin Shrine Summer Festival 池上本門寺納涼盆踊り大会（大田区）Ikegami Honmonji Summer Bon Odori Festival 築地本願寺納涼盆踊り大会（中央区）Tsukiji Honganji Summer Bon Odori Festival 巣鴨納涼盆踊り（豊島区）Sugamo Summer Bon Odori"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:e281db4d7322a660",
       "target_year": 2024,
       "event_name": "玉川町会盆おどり大会",
@@ -34410,6 +34913,28 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "★チャンネル登録まだの方は、こちらからよろしくお願いします https://www.youtube.com/channel/UC2iYZBVlTFLnIwhwOwQfajQ/featured ＃高校野球 ＃西東京大会 ＃選手権大会 ＃夏の大会 ＃日大三 ＃小倉監督 ＃全国高校野球選手権大会"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "NOn8uRAZ5Es",
+      "video_url": "https://www.youtube.com/watch?v=NOn8uRAZ5Es",
+      "title": "緊急ホタテまつり@御徒町駅前パンダ広場",
+      "channel_id": "UC6NZA8gL4wOKyGg6s2lsbjA",
+      "channel_title": " トウキョウ ウォークアバウト 〜わからなさを楽しむ時間",
+      "published_at": "2023-10-04T23:34:01Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/NOn8uRAZ5Es/maxresdefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "緊急開催。例のホタテ在庫処分の一環かとおもいます。3日間開催される緊急なまつりでした。さて、ホタテはいかに！"
     },
     {
       "status": "weak",
@@ -35820,5 +36345,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-08-17T20:25:49.534127+00:00"
+  "merged_from": "2026-09-15T22:43:53.257084+00:00"
 }

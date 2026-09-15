@@ -1,22 +1,72 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-09-14T22:57:47.993558+00:00
-- status: no_rows
+- generated_at: 2026-09-15T22:43:40.009045+00:00
+- status: harvested_no_yield_limit
 - month: 8
-- selected_rows: 0
-- completed_batches: 0
-- remaining_rows_before: 0
-- remaining_rows_after: 0
-- estimated_search_calls: 0
+- selected_rows: 20
+- completed_batches: 20
+- remaining_rows_before: 85
+- remaining_rows_after: 65
+- estimated_search_calls: 40
 - candidates_before: 749
-- candidates_after: 749
-- new_candidates: 0
-- candidates_per_estimated_search: 0.0
-- consecutive_no_yield: 0
-- cooldown_suppressed_rows: 115
+- candidates_after: 765
+- new_candidates: 16
+- candidates_per_estimated_search: 0.4
+- consecutive_no_yield: 10
+- cooldown_suppressed_rows: 30
 - retry_state_bootstrapped_rows: 0
-- strong_after: 238
-- review_after: 60
+- strong_after: 240
+- review_after: 62
 - schedule_rule_count: 17
 - schedule_rule_confidence_counts: {'high': 1, 'medium': 16}
 - schedule_rule_axis_counts: {'date': 2, 'near_date': 2, 'weekday': 8, 'weekday_near_date': 2, 'weekend_near_date': 3}
+
+## selected
+
+| priority | score | year | event | venue | dates |
+| --- | ---: | ---: | --- | --- | --- |
+| high | 86 | 2024 | 第16回ハマサイトの夏祭り | ハマサイト前広場・汐留ビルディング外構 | 2025-08-22 |
+| high | 86 | 2023 | 第16回ハマサイトの夏祭り | ハマサイト前広場・汐留ビルディング外構 | 2025-08-22 |
+| high | 89 | 2023 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 2025-08-16 |
+| high | 86 | 2023 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2025-08-16 |
+| high | 87 | 2024 | イベント名未確認（晴海ふ頭公園） | 晴海ふ頭公園 | 2025-07-12 |
+| high | 87 | 2023 | イベント名未確認（晴海ふ頭公園） | 晴海ふ頭公園 | 2025-07-12 |
+| low | 16 | 2024 | 祖師谷昇進会商店街(振)盆踊り | 祖師谷神明社 | 2025-07-18 |
+| low | 16 | 2023 | 祖師谷昇進会商店街(振)盆踊り | 祖師谷神明社 | 2025-07-18 |
+| low | 16 | 2024 | 芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 | 京王線芦花公園駅前ロータリー(南口) | 2025-07-25 |
+| low | 16 | 2024 | 世田谷駅前商店街振興組合「納涼盆踊り大会」 | 円光院駐車場 | 2025-07-26 |
+| low | 15 | 2024 | ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 | 上野恩賜公園 | 2026-07-03, 2026-07-05 |
+| low | 15 | 2023 | ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 | 上野恩賜公園 | 2026-07-03, 2026-07-05 |
+| low | 15 | 2024 | 第90回 祐天寺み魂まつり こども盆踊り大会 | 祐天寺境内 | 2025-07-16 |
+| low | 8 | 2024 | 萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 | 萩中神社 | 2025-07-11 |
+| low | 8 | 2023 | 萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 | 萩中神社 | 2025-07-11 |
+| low | 8 | 2024 | 東糀谷四・五・六町会 納涼盆踊り大会 | 旭児童遊園 | 2025-07-18 |
+| low | 8 | 2024 | 千歳台廻沢地区盆踊り | 廻沢稲荷神社 | 2025-07-19 |
+| low | 8 | 2024 | 宇奈根町会 盆踊り大会 | 宇奈根氷川神社 | 2025-07-19 |
+| low | 8 | 2024 | 希望ヶ丘団地夏まつり | 希望ヶ丘団地 テニスコート | 2025-07-19 |
+| low | 8 | 2024 | 砧小学校「第38回砧っ子夏祭り」 | 砧小学校 | 2025-07-19 |
+
+## batches
+
+| batch | month | selected | new | no-yield streak | candidates | strong | review |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 8 | 1 | 0 | 1 | 749 | 238 | 60 |
+| 2 | 8 | 1 | 2 | 0 | 751 | 238 | 60 |
+| 3 | 8 | 1 | 2 | 0 | 753 | 238 | 60 |
+| 4 | 8 | 1 | 6 | 0 | 759 | 240 | 62 |
+| 5 | 7 | 1 | 0 | 1 | 759 | 240 | 62 |
+| 6 | 7 | 1 | 0 | 2 | 759 | 240 | 62 |
+| 7 | 7 | 1 | 0 | 3 | 759 | 240 | 62 |
+| 8 | 7 | 1 | 0 | 4 | 759 | 240 | 62 |
+| 9 | 7 | 1 | 0 | 5 | 759 | 240 | 62 |
+| 10 | 7 | 1 | 6 | 0 | 765 | 240 | 62 |
+| 11 | 7 | 1 | 0 | 1 | 765 | 240 | 62 |
+| 12 | 7 | 1 | 0 | 2 | 765 | 240 | 62 |
+| 13 | 7 | 1 | 0 | 3 | 765 | 240 | 62 |
+| 14 | 7 | 1 | 0 | 4 | 765 | 240 | 62 |
+| 15 | 7 | 1 | 0 | 5 | 765 | 240 | 62 |
+| 16 | 7 | 1 | 0 | 6 | 765 | 240 | 62 |
+| 17 | 7 | 1 | 0 | 7 | 765 | 240 | 62 |
+| 18 | 7 | 1 | 0 | 8 | 765 | 240 | 62 |
+| 19 | 7 | 1 | 0 | 9 | 765 | 240 | 62 |
+| 20 | 7 | 1 | 0 | 10 | 765 | 240 | 62 |

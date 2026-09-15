@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-08-17T20:25:50.720683+00:00",
+  "generated_at": "2026-09-15T22:43:54.246872+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
@@ -33,8 +33,8 @@
       }
     },
     "backfill_apply": {
-      "added": 8,
-      "updated": 30,
+      "added": 0,
+      "updated": 38,
       "source": "data/event_occurrence_backfill_plan.json",
       "source_observation_count": 38
     }

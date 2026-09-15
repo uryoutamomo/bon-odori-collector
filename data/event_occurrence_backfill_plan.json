@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-08-17T20:25:50.580713+00:00",
+  "generated_at": "2026-09-15T22:43:54.114795+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
     "observation_count": 38,
@@ -11,8 +11,8 @@
     },
     "observations_with_songs": 34,
     "manual_accepted_low_observation_count": 4,
-    "excluded_low_observation_count": 16,
-    "excluded_low_source_video_count": 19
+    "excluded_low_observation_count": 17,
+    "excluded_low_source_video_count": 21
   },
   "observations": [
     {
@@ -5367,6 +5367,102 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=u6-qkx30GLw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "a2bae3e7d2d933b7",
+      "series_key": "ebf98ce37bb4",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "year": 2023,
+      "date_start": "2023-08-19",
+      "date_end": "2023-08-19",
+      "observed_dates": [
+        "2023-08-19"
+      ],
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "Tokyo Lonely Walker"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=yPirt13uxo4",
+          "video_id": "yPirt13uxo4",
+          "title": "[4K]🇯🇵 歌舞伎町 BON ODORI 1部 古典盆踊り東京おとめ太鼓 / Bon dance in Shinjuku Kabukicho. Traditional Japanese dance.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2023-08-20T03:00:24Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TIdS4xv_N8Q",
+          "video_id": "TIdS4xv_N8Q",
+          "title": "[4K]🇯🇵 歌舞伎町 BON ODORI 2部 盆DANCE 東京おとめ太鼓 / Bon dance in Shinjuku Kabukicho. Bon Odori with pop music.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2023-08-26T08:00:11Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ダンシング・ヒーロー / Eat You Up",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=TIdS4xv_N8Q",
+            "https://www.youtube.com/watch?v=yPirt13uxo4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節 / Tankou Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yPirt13uxo4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "八木節 / Yagi Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yPirt13uxo4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "相馬盆唄 / Souma Bon Uta",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yPirt13uxo4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "郡上おどり かわさき / Gujyo Odori Kawasaki",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yPirt13uxo4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "鹿児島おはら節 / Kagoshima Ohara Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yPirt13uxo4"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"

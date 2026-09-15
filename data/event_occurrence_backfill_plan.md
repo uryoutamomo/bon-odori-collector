@@ -1,10 +1,10 @@
 # 年次開催回バックフィル追加プラン
 
-- 生成: 2026-08-17T20:25:50.580713+00:00
+- 生成: 2026-09-15T22:43:54.114795+00:00
 - observation_count: 38
 - source_video_count: 200
 - observations_with_songs: 34
-- excluded_low_observation_count: 16
+- excluded_low_observation_count: 17
 
 | confidence | year | date | event | venue | videos | channels | songs |
 | --- | ---: | --- | --- | --- | ---: | ---: | ---: |
