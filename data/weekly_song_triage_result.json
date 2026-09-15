@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 15,
-  "direct_count": 11,
-  "created_count": 7,
-  "updated_count": 4,
+  "song_candidate_count": 16,
+  "direct_count": 12,
+  "created_count": 9,
+  "updated_count": 3,
   "rejected_noise_count": 2,
   "review_count": 2,
   "created": [
@@ -63,6 +63,22 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "東京谷端さくら音頭",
+      "source_term": "東京谷端さくら音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "滝野川八幡神社御祭禮音頭",
+      "source_term": "滝野川八幡神社御祭禮音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "updated": [
@@ -88,14 +104,6 @@
       "target": "update",
       "venue_relations": 0,
       "event_relations": 2,
-      "dry_run": true
-    },
-    {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
       "dry_run": true
     }
   ],
