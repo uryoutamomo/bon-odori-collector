@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-14T13:07:32.347955+00:00",
+  "generated_at": "2026-09-15T11:56:59.825876+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,453 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_297a2d02c109a73b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日、17時より内手昭和会・青年部主催親子盆踊り大会が下鎌田小学校校庭で開催されました。\n雨の予報が出ていたので、心配でしたが\n多くの地域の方々や子どもたちが来",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081000627304546525",
+      "source_url": "https://x.com/ryoichiezoe/status/2081000627304546525",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "fbabb1ec7ce463940ccee2110a54581106113c8f1b473d8b96aad2e44550a9a5",
+      "last_seen_at": "github-34964725224-1",
+      "created_at": "2026-09-15T11:56:21.047610+00:00",
+      "updated_at": "2026-09-15T11:56:21.047610+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_705f5c30877626f3",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "17時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "江戸川区東瑞江3-11-1",
+          "region_hint": "江戸川区",
+          "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+          "venue": "下鎌田小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@ryoichiezoe",
+        "source_count": 1,
+        "source_key": "x:2081000627304546525",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOEzBK-aUAAAHjy.jpg",
+          "https://t.co/78lRwu17Hl",
+          "pic.x.com/78lRwu17Hl",
+          "https://pbs.twimg.com/media/HOEzBuAawAAAv9m.jpg",
+          "https://pbs.twimg.com/media/HOEzCYubcAEtHCq.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "えぞえ亮一 元江戸川区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@ryoichiezoe",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日、17時より内手昭和会・青年部主催親子盆踊り大会が下鎌田小学校校庭で開催されました。\n雨の予報が出ていたので、心配でしたが\n多くの地域の方々や子どもたちが来場してくださり、無事に終了しました。\n明日は後片付けを早朝より行います。\n#江戸川 #盆踊り #夏祭り https://t.co/78lRwu17Hl",
+        "source_url": "https://x.com/ryoichiezoe/status/2081000627304546525",
+        "source_urls": [
+          "https://x.com/ryoichiezoe/status/2081000627304546525"
+        ],
+        "voice": {
+          "account": "@ryoichiezoe",
+          "date": "2026-07-25T12:56:27+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOEzBK-aUAAAHjy.jpg",
+            "https://t.co/78lRwu17Hl",
+            "pic.x.com/78lRwu17Hl",
+            "https://pbs.twimg.com/media/HOEzBuAawAAAv9m.jpg",
+            "https://pbs.twimg.com/media/HOEzCYubcAEtHCq.jpg"
+          ],
+          "name": "えぞえ亮一 元江戸川区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "本日、17時より内手昭和会・青年部主催親子盆踊り大会が下鎌田小学校校庭で開催されました。\n雨の予報が出ていたので、心配でしたが\n多くの地域の方々や子どもたちが来場してくださり、無事に終了しました。\n明日は後片付けを早朝より行います。\n#江戸川 #盆踊り #夏祭り https://t.co/78lRwu17Hl",
+          "title": "",
+          "tweet_id": "2081000627304546525",
+          "url": "https://x.com/ryoichiezoe/status/2081000627304546525"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3d6100ab51603a0f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "７月２５日（土）、２６日（日）に第六天公園で１８時から「合同盆踊り大会」が行われます。東和二丁目自治会と東和二丁目西自治会が合同で開催し、子ども会の屋台等も出店",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079808866779595107",
+      "source_url": "https://x.com/adachi_city/status/2079808866779595107",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "532e68043fbf925131c683856d3cb98c3dc718f0cf5ea64ae268b60b73751783",
+      "last_seen_at": "github-34964725224-1",
+      "created_at": "2026-09-15T11:56:21.047610+00:00",
+      "updated_at": "2026-09-15T11:56:21.047610+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2eee7beac7c8d5c4",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "７月２５日",
+          "１８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "足立区東和4-3-18",
+          "region_hint": "足立区",
+          "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+          "venue": "第六天公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@adachi_city",
+        "source_count": 1,
+        "source_key": "x:2079808866779595107",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNz3I_daIAARXXJ.jpg",
+          "https://t.co/Qef8hYQRn0",
+          "pic.x.com/Qef8hYQRn0"
+        ],
+        "source_officiality": {
+          "account_name": "足立区役所",
+          "classification": "registered_official_social",
+          "handle": "@adachi_city",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n７月２５日（土）、２６日（日）に第六天公園で１８時から「合同盆踊り大会」が行われます。東和二丁目自治会と東和二丁目西自治会が合同で開催し、子ども会の屋台等も出店します！ぜひご来場ください。※雨天の場合は、中止となります。\n#夏祭り#盆踊り https://t.co/Qef8hYQRn0",
+        "source_url": "https://x.com/adachi_city/status/2079808866779595107",
+        "source_urls": [
+          "https://x.com/adachi_city/status/2079808866779595107"
+        ],
+        "voice": {
+          "account": "@adachi_city",
+          "date": "2026-07-22T06:00:49+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNz3I_daIAARXXJ.jpg",
+            "https://t.co/Qef8hYQRn0",
+            "pic.x.com/Qef8hYQRn0"
+          ],
+          "name": "足立区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "７月２５日（土）、２６日（日）に第六天公園で１８時から「合同盆踊り大会」が行われます。東和二丁目自治会と東和二丁目西自治会が合同で開催し、子ども会の屋台等も出店します！ぜひご来場ください。※雨天の場合は、中止となります。\n#夏祭り#盆踊り https://t.co/Qef8hYQRn0",
+          "title": "",
+          "tweet_id": "2079808866779595107",
+          "url": "https://x.com/adachi_city/status/2079808866779595107"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6af8745efc511515",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "かなくぼ🌷です\n\n＼高田富士🗻登頂ご報告7月20日／\n\n年に一度の高田富士のご開山、西早稲田は水稲荷神社⛩️の富士塚に入山、無事に登頂しましたことをご報告致しま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081003410766340546",
+      "source_url": "https://x.com/Naxako75/status/2081003410766340546",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1ce051b0e693d2be288da92af4fbe33c96ef013fbcb768b681a68be4bf5c1c24",
+      "last_seen_at": "github-34964725224-1",
+      "created_at": "2026-09-15T11:56:21.047610+00:00",
+      "updated_at": "2026-09-15T11:56:21.047610+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_22ec10315a3c0fd3",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月20日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Naxako75",
+        "source_count": 1,
+        "source_key": "x:2081003410766340546",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOEzCNua8AA_x9H.jpg",
+          "https://t.co/qOMihKq3vY",
+          "pic.x.com/qOMihKq3vY",
+          "https://pbs.twimg.com/media/HOEzCNsbIAE96VF.jpg",
+          "https://pbs.twimg.com/media/HOEzCNxbgAAgNKr.jpg",
+          "https://pbs.twimg.com/media/HOEzCNsbIAITYBR.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "かなくぼ なな子🌷新宿区議会議員/国民民主党/元区役所非正規職員",
+          "classification": "registered_official_social",
+          "handle": "@naxako75",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nかなくぼ🌷です\n\n＼高田富士🗻登頂ご報告7月20日／\n\n年に一度の高田富士のご開山、西早稲田は水稲荷神社⛩️の富士塚に入山、無事に登頂しましたことをご報告致します🗻！\n\nと言っても、ものの1分程で登れてしまうのですが😅\n本家本元の富士山には登ったことがないので、本物の富士山の岩から造られた高田の富士塚に登頂出来て、登ってみたい願望がちょっぴり満たされ、そして御利益が得られそうな気がしました😌\n\n下山後は和光太鼓の皆様の迫力ある演奏と共に、地域の方々と盆踊りを楽しんで来ました😊\n\n#かなくぼなな子 \n#新宿区議会議員\n#国民民主党　\n\n写真1枚目・富士塚山頂にて\nお尻から火🔥が出てるみたい😅\n\n以下は↓チラシの文中より引用↓\nむかし植木職人藤四郎は仲間の富士講の人たちと、しろい行衣で身じたくをして、ふじ山頂より運んだ岩土で富士塚（約十メートル）を築き、大評判となり満した。そのご、それを真似て江戸中のあちこちに富士塚が造られました。\n本物の富士山に登れない人達が大勢来てそれはく大変なにぎわいでした。このミニチュワ富士に登って山頭の後を「カーン、カーン、カン、カン」とたたきますと今年一年の",
+        "source_url": "https://x.com/Naxako75/status/2081003410766340546",
+        "source_urls": [
+          "https://x.com/Naxako75/status/2081003410766340546"
+        ],
+        "voice": {
+          "account": "@Naxako75",
+          "date": "2026-07-25T13:07:30+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOEzCNua8AA_x9H.jpg",
+            "https://t.co/qOMihKq3vY",
+            "pic.x.com/qOMihKq3vY",
+            "https://pbs.twimg.com/media/HOEzCNsbIAE96VF.jpg",
+            "https://pbs.twimg.com/media/HOEzCNxbgAAgNKr.jpg",
+            "https://pbs.twimg.com/media/HOEzCNsbIAITYBR.jpg"
+          ],
+          "name": "かなくぼ なな子🌷新宿区議会議員/国民民主党/元区役所非正規職員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "かなくぼ🌷です\n\n＼高田富士🗻登頂ご報告7月20日／\n\n年に一度の高田富士のご開山、西早稲田は水稲荷神社⛩️の富士塚に入山、無事に登頂しましたことをご報告致します🗻！\n\nと言っても、ものの1分程で登れてしまうのですが😅\n本家本元の富士山には登ったことがないので、本物の富士山の岩から造られた高田の富士塚に登頂出来て、登ってみたい願望がちょっぴり満たされ、そして御利益が得られそうな気がしました😌\n\n下山後は和光太鼓の皆様の迫力ある演奏と共に、地域の方々と盆踊りを楽しんで来ました😊\n\n#かなくぼなな子 \n#新宿区議会議員\n#国民民主党　\n\n写真1枚目・富士塚山頂にて\nお尻から火🔥が出てるみたい😅\n\n以下は↓チラシの文中より引用↓\nむかし植木職人藤四郎は仲間の富士講の人たちと、しろい行衣で身じたくをして、ふじ山頂より運んだ岩土で富士塚（約十メートル）を築き、大評判となり満した。そのご、それを真似て江戸中のあちこちに富士塚が造られました。\n本物の富士山に登れない人達が大勢来てそれはく大変なにぎわいでした。このミニチュワ富士に登って山頭の後を「カーン、カーン、カン、カン」とたたきますと今年一年の幸",
+          "title": "",
+          "tweet_id": "2081003410766340546",
+          "url": "https://x.com/Naxako75/status/2081003410766340546"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a3b4a7f69a47f07f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日も各地の盆踊り。\nその後、地元の新城中央町会の事前練習会。毎年、新城の盆踊りの前に必ず参加しています。今日は6曲を練習。\n成果は8/1の盆踊りでご覧ください",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2080634653988499910",
+      "source_url": "https://x.com/Sohno_Hajime/status/2080634653988499910",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "903be7ce68633532a9e677702fb4805d37073ac7bdfab58d4cc36926b6688d28",
+      "last_seen_at": "github-34964725224-1",
+      "created_at": "2026-09-15T11:56:21.047610+00:00",
+      "updated_at": "2026-09-15T11:56:21.047610+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d083442b8d271d39",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Sohno_Hajime",
+        "source_count": 1,
+        "source_key": "x:2080634653988499910",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HN_mMHybcAAp7Ne.jpg",
+          "https://t.co/KZKT5Ggywf",
+          "pic.x.com/KZKT5Ggywf"
+        ],
+        "source_officiality": {
+          "account_name": "そうの創｜前衆議院議員｜宗野創｜中道改革連合神奈川18区(中原区・高津区)総支部長",
+          "classification": "registered_official_social",
+          "handle": "@sohno_hajime",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日も各地の盆踊り。\nその後、地元の新城中央町会の事前練習会。毎年、新城の盆踊りの前に必ず参加しています。今日は6曲を練習。\n成果は8/1の盆踊りでご覧ください🙌\n#神奈川18区　#高津区　#中原区　#盆踊り https://t.co/KZKT5Ggywf",
+        "source_url": "https://x.com/Sohno_Hajime/status/2080634653988499910",
+        "source_urls": [
+          "https://x.com/Sohno_Hajime/status/2080634653988499910"
+        ],
+        "voice": {
+          "account": "@Sohno_Hajime",
+          "date": "2026-07-24T12:42:12+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HN_mMHybcAAp7Ne.jpg",
+            "https://t.co/KZKT5Ggywf",
+            "pic.x.com/KZKT5Ggywf"
+          ],
+          "name": "そうの創｜前衆議院議員｜宗野創｜中道改革連合神奈川18区(中原区・高津区)総支部長",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-program-songs-wide"
+          ],
+          "text": "本日も各地の盆踊り。\nその後、地元の新城中央町会の事前練習会。毎年、新城の盆踊りの前に必ず参加しています。今日は6曲を練習。\n成果は8/1の盆踊りでご覧ください🙌\n#神奈川18区　#高津区　#中原区　#盆踊り https://t.co/KZKT5Ggywf",
+          "title": "",
+          "tweet_id": "2080634653988499910",
+          "url": "https://x.com/Sohno_Hajime/status/2080634653988499910"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_f5e149320338844e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7/23（木）　大森南自治会納涼盆おどり大会＠浦守稲荷神社に初参加　初めて踊る演目も多く、参加者同士の楽しい交流も｜庄嶋たかひろ 大田区議会議員 @Takahi",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2080530796486738291",
+      "source_url": "https://x.com/TakahiroShojima/status/2080530796486738291",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ac63a4b4982506847db56294d82780d54631baaf426d4a58ea9a43a9c5b5906f",
+      "last_seen_at": "github-34964725224-1",
+      "created_at": "2026-09-15T11:56:21.047610+00:00",
+      "updated_at": "2026-09-15T11:56:21.047610+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_fd2b3bf8a6545103",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/23"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区大森南3-27-8",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/152793",
+          "venue": "浦守稲荷神社"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@TakahiroShojima",
+        "source_count": 1,
+        "source_key": "x:2080530796486738291",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "庄嶋たかひろ 大田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@takahiroshojima",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7/23（木）　大森南自治会納涼盆おどり大会＠浦守稲荷神社に初参加　初めて踊る演目も多く、参加者同士の楽しい交流も｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/3wsjB3VaOh",
+        "source_url": "https://x.com/TakahiroShojima/status/2080530796486738291",
+        "source_urls": [
+          "https://x.com/TakahiroShojima/status/2080530796486738291"
+        ],
+        "voice": {
+          "account": "@TakahiroShojima",
+          "date": "2026-07-24T05:49:30+00:00",
+          "name": "庄嶋たかひろ 大田区議会議員",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-program-songs-wide"
+          ],
+          "text": "7/23（木）　大森南自治会納涼盆おどり大会＠浦守稲荷神社に初参加　初めて踊る演目も多く、参加者同士の楽しい交流も｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/3wsjB3VaOh",
+          "title": "",
+          "tweet_id": "2080530796486738291",
+          "url": "https://x.com/TakahiroShojima/status/2080530796486738291"
         }
       }
     },
