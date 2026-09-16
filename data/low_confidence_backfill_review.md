@@ -1,12 +1,13 @@
 # 低信頼バックフィル候補レビュー
 
 - source: data/youtube_year_backfill_candidates.json
-- rows: 17
+- rows: 18
 - decided_in_rows: 12
 - decisions_total: 16
 
 | decision | action | year | date | event | venue | videos | channels | songs | sample | reason |
 | --- | --- | ---: | --- | --- | --- | ---: | ---: | ---: | --- | --- |
+|  | hold | 2023 | 2023-08-06 | あずま通り商店街「下北沢盆踊り2025」 | 下北沢駅東口 | 1 | 1 | 0 | 4K【下北沢の盆踊り】下北沢駅東口 シモキタ音頭 2023 東京 Japan https://www.youtube.com/watch?v=0Rr-Kzj9zFk |  |
 | hold | hold | 2023 | 2023-07-16 | 下落合四丁目町会 盆踊り大会 | 下落合公園 | 1 | 1 | 0 | 下落合公園盆踊り（2023年7月16日） https://www.youtube.com/watch?v=AtULsIDQpXU | 単一動画のみ。タイトル一致はあるが曲目や別チャンネル補強がないため保留 |
 |  | review_promote | 2023 | 2023-08-19 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2 | 1 | 6 | [4K]🇯🇵 歌舞伎町 BON ODORI 1部 古典盆踊り東京おとめ太鼓 / Bon dance in Shinjuku Kabukicho. Traditional Japanese dance. https://www.youtube.com/watch?v=yPirt13uxo4 |  |
 | reject | hold | 2023 | 2023-07-22 | 納涼盆踊り大会 | 玉川中町公園 | 1 | 1 | 0 | ４K🏮＃ダンシングヒーロー🎎＃桜川納涼盆踊り大会2023＃DancingHero＃日本の夏祭り＃2023年7月22日 https://www.youtube.com/watch?v=TC2X6JGHABM | 桜川納涼盆踊り大会動画で、玉川中町公園の開催回ではない |

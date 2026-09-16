@@ -1,13 +1,14 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-09-15T22:43:53.950107+00:00
+- 生成: 2026-09-16T22:40:18.847028+00:00
 - selected_queue_count: 210
-- candidate_count: 765
-- strong: 240
-- review: 62
+- candidate_count: 819
+- strong: 241
+- review: 63
 
 | status | score | year | event | venue | detected | channel | title | url |
 | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |
+| strong | 100 | 2023 | あずま通り商店街「下北沢盆踊り2025」 | 下北沢駅東口 | 2023-08-06 | akkz01 | 4K【下北沢の盆踊り】下北沢駅東口 シモキタ音頭 2023 東京 Japan | https://www.youtube.com/watch?v=0Rr-Kzj9zFk |
 | strong | 100 | 2023 | みたままつり 納涼民踊のつどい | 靖国神社 | 2023-07-13 | 和太鼓お祭りチャンネル | 東京スカツリー音頭　2023年靖国神社みたままつり１２終　納涼民踊の集い　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=QWKzHTEtE3s |
 | strong | 100 | 2023 | みたままつり 納涼民踊のつどい | 靖国神社 | 2023-07-13 | 和太鼓お祭りチャンネル | 炭坑節　2023年靖国神社みたままつり４　納涼民踊の集い　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=HrMUdjNNT90 |
 | strong | 100 | 2023 | みたままつり 納涼民踊のつどい | 靖国神社 | 2023-07-13 | 和太鼓お祭りチャンネル | 龍馬おどり　2023年靖国神社みたままつり１０　納涼民踊の集い　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=-vYmlkMnm3Y |
@@ -87,4 +88,3 @@
 | strong | 100 | 2024 | 大銀座盆踊り | 中央通り（銀座1丁目〜8丁目） | 2024-08-03 | akkz01 | 4K60【大銀座盆踊り】銀座通り 夜の歩行者天国 2024 東京 Japan | https://www.youtube.com/watch?v=cSYyXjUtnFk |
 | strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | Tokyo Lonely Walker | [4K]🇯🇵 奥浅草盆踊り大会 『波乗りジョニー』『エロティカセブン』全14曲 / Traditional Japanese Bon dance in Asakusa, Tokyo. 2024 | https://www.youtube.com/watch?v=Bun2O56igYo |
 | strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | 和太鼓お祭りチャンネル | ふるさと音頭　2024年第2回奥浅草盆踊り大会15　隅田公園山谷堀広場　東京都台東区　下町台東盆踊り協議会　浅草たいこばん | https://www.youtube.com/watch?v=JDiIosnLZWI |
-| strong | 100 | 2024 | 奥浅草盆踊り | 隅田公園 | 2024-06-29 | オールデイズGOGO | 奥浅草盆踊り大会①　2024/6/29 | https://www.youtube.com/watch?v=IU9n1sHSChI |

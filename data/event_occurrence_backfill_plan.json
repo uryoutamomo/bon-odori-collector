@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-09-15T22:43:54.114795+00:00",
+  "generated_at": "2026-09-16T22:40:19.027686+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
     "observation_count": 38,
@@ -11,8 +11,8 @@
     },
     "observations_with_songs": 34,
     "manual_accepted_low_observation_count": 4,
-    "excluded_low_observation_count": 17,
-    "excluded_low_source_video_count": 21
+    "excluded_low_observation_count": 18,
+    "excluded_low_source_video_count": 22
   },
   "observations": [
     {
@@ -5096,6 +5096,38 @@
     }
   ],
   "excluded_low_observations": [
+    {
+      "observation_id": "50befcee5cb40b97",
+      "series_key": "d247c16007d5",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "year": 2023,
+      "date_start": "2023-08-06",
+      "date_end": "2023-08-06",
+      "observed_dates": [
+        "2023-08-06"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 1,
+      "source_channels": [
+        "akkz01"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=0Rr-Kzj9zFk",
+          "video_id": "0Rr-Kzj9zFk",
+          "title": "4K【下北沢の盆踊り】下北沢駅東口 シモキタ音頭 2023 東京 Japan",
+          "channel": "akkz01",
+          "published_at": "2023-08-07T07:39:45Z",
+          "score": 100
+        }
+      ],
+      "songs": []
+    },
     {
       "observation_id": "0c462a707432387b",
       "series_key": "76ad35a78278",

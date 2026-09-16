@@ -1,20 +1,20 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-09-15T22:43:53.950107+00:00",
+  "generated_at": "2026-09-16T22:40:18.847028+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 765,
+    "candidate_count": 819,
     "status_counts": {
-      "review": 62,
-      "strong": 240,
-      "weak": 463
+      "review": 63,
+      "strong": 241,
+      "weak": 515
     },
-    "strong_count": 240,
-    "review_count": 62
+    "strong_count": 241,
+    "review_count": 63
   },
   "selected_queue_rows": [
     {
@@ -6834,6 +6834,65 @@
     }
   ],
   "candidates": [
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:86054631154e1cf1",
+      "target_year": 2023,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2023-08-06",
+      "video_id": "0Rr-Kzj9zFk",
+      "video_url": "https://www.youtube.com/watch?v=0Rr-Kzj9zFk",
+      "title": "4K【下北沢の盆踊り】下北沢駅東口 シモキタ音頭 2023 東京 Japan",
+      "channel_id": "UC2fuOvqX4_gh4DRS2TOvlyw",
+      "channel_title": "akkz01",
+      "published_at": "2023-08-07T07:39:45Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/0Rr-Kzj9zFk/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2023 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "下北沢盆踊り シモキタ音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "盆踊り曲 シモキタ音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "盆踊り曲 池の上音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "盆踊り曲 ダンシングヒーロー",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "盆踊り曲 シモキタ音頭（上階から眺望撮影）",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "【東京祭り散歩】下北沢盆踊り 下北沢駅東口駅前広場 4年ぶりの復活 シモキタ音頭 夜散歩。 2023年8月6日 日曜日19時ごろからの様子、 自然音と散歩目線で今の東京を撮ってきたものです。 ※目次（チャプター）からも、お好みのシーンをご覧いただけます。 ↓↓↓ ▼※目次（チャプター）table of contents 00:00 下北沢駅 00:35 下北沢駅東口 01:14 下北沢盆踊り シモキタ音頭 05:55 盆踊り曲 シモキタ音頭 10:52 盆踊り曲 池の上音頭 14:39 盆踊り曲 シモキタ音頭 20:13 盆踊り曲 ダンシングヒーロー 25:06 盆踊り曲 シモキタ音頭 31:59 盆踊り曲 シモキタ音頭（上階から眺望撮影） 39:53 ミカン下北 チャンネル登録と👍いただけると、とてもうれしいです😊。https://www.youtube.com/channel/UC2fuOvqX4_gh4DRS2TOvlyw?sub_confirmation=1 MAP： https://www.google.co.jp/maps/search/%E4%B8%8B%E5%8C%9…"
+    },
     {
       "status": "strong",
       "score": 100,
@@ -20404,6 +20463,31 @@
       "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
       "area": "渋谷区",
       "detected_event_date": "",
+      "video_id": "xyrgFRgOQbE",
+      "video_url": "https://www.youtube.com/watch?v=xyrgFRgOQbE",
+      "title": "第6回 渋谷盆踊り 2025スクランブル交差点でダンシング・ヒーロー♪Shibuya Bon Odori 2025   Scramble! Tourists Join the Fun",
+      "channel_id": "UCRdUZ8PUSPD_I4TCRuvfUHA",
+      "channel_title": "トーキョーまっぷ",
+      "published_at": "2025-08-03T04:01:10Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/xyrgFRgOQbE/maxresdefault.jpg",
+      "query": "第6回 渋谷盆踊り SHIBUYA109前〜道玄坂・文化村通り一帯 渋谷区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "Japanese festival dances are explored by international YouTubers in this video. The cultural exchange and the joy of learning traditional moves are captured. The 6th Shibuya Bon Odori Festival lit up Tokyo’s famous scramble crossing once again in 2025! Locals and international visitors came together to dance to the iconic 'Dancing Hero' in the heart of the city. Experience a one-of-a-kind summer night where tradition meets pop culture—only in Shibuya! #ShibuyaBonOdori #DancingHero #DanceInJapan"
+    },
+    {
+      "status": "review",
+      "score": 50,
+      "reasons": [
+        "event_name_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:a36fda4bdb097963",
+      "target_year": 2024,
+      "event_name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "detected_event_date": "",
       "video_id": "7sAumRsekbQ",
       "video_url": "https://www.youtube.com/watch?v=7sAumRsekbQ",
       "title": "＼第6回渋谷盆踊り／#渋谷 #盆踊り #盆踊り大会 #お祭り #縁日 #キッチンカー #櫓 #おすすめ #交流 #交流の場 #夏 #渋谷情報発信 #イベント情報発信",
@@ -21521,6 +21605,32 @@
         }
       ],
       "description_excerpt": "2025年8月22日(金)～23(土)、東京都中央区、浜町公園で「第35回 中央区大江戸まつり盆おどり大会」が実施。 浜町公園は中央区立公園で一番広い公園、会場はサッカーもできる運動場で凄く広いです。 関東大震災の震災復興3大公園のひとつだそう。 地下鉄の浜町駅目の前ですが、東日本橋・馬喰横山・人形町どこからでも徒歩10分以下です。 ※一部楽曲はカットしています。 他にもイベントやお祭りの動画も含めて概要欄下部↓などからぜひご覧ください。 === Bon Dance will be held at Hamacho Park,Tokyo. 0:00 会場・2000年音頭 6:00 ダンシングヒ－ロー 8:20 きよしのズンドコ節 13:26 チャンチキおけさ 16:48 東京音頭 21:12 ベイサイド・ブギ 23:05 2000年音頭 30:48 ダンシングヒ－ロー 34:52 きよしの数え唄 37:33 どだればちサンバ 44:25 これがお江戸の盆ダンス ご視聴いただきありがとうございました。 ぜひチャンネル登録・高評価、お願いいたします。 コメントもぜひ。 Thank you …"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:11103cae5c109fc8",
+      "target_year": 2024,
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "detected_event_date": "2025-09-05",
+      "video_id": "bntxk2-Y5Z0",
+      "video_url": "https://www.youtube.com/watch?v=bntxk2-Y5Z0",
+      "title": "中目黒盆踊り大会2025  【地モトNEWS】 2025/9/5 放送",
+      "channel_id": "UCPPFGmTUyM4iDIgp2_zJi5g",
+      "channel_title": "iTSCOM",
+      "published_at": "2025-09-13T10:00:56Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/bntxk2-Y5Z0/maxresdefault.jpg",
+      "query": "中目黒盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "地モトの様々な情報をお届けするイッツコム地モトNEWS 「目黒区」の 中目黒盆踊り大会2025 をお届けします！ ==================================================== ■ 取材日 2025/8/30 ■ 放送日 2025/9/5 ■ 中目黒盆踊り大会2025 ■ 場所： 目黒区中目黒 8月30日と31日、目黒区の、目黒川船入場で、 「中目黒盆踊り大会」がおこなわれました。 船入場広場がイベントスペースとして整備されたことをうけ、 初めて開催された盆踊り大会です。 地域に「新しい夏の風物詩」をつくろうと、 中目黒にある4つの商店街や町会、住区などが協力して行われました。 ■中目黒商店街連合会 会長 本橋健明さん 「この「フナイリバ」と言われるこの場所が、初めて我々地元が使えるような環境になりましたのでね、 ここをなんとか活性化しなくちゃいけない、そのための1つの手段として、この盆踊りを考えました。 普段なかなか 話をして、仲良く暮らしていきたいと、 街の発展のためにみんなでがんばっていきたいと、そういう思いではじめております。」 階段…"
     },
     {
       "status": "weak",
@@ -23083,6 +23193,64 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:86054631154e1cf1",
+      "target_year": 2023,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2024-08-25",
+      "video_id": "irmUdXpeOYw",
+      "video_url": "https://www.youtube.com/watch?v=irmUdXpeOYw",
+      "title": "[4K]🇯🇵 下北沢盆踊り 真島茂樹さん追悼でシモキタ音頭を踊る｜世田谷音頭 他ご当地曲 / Bon dance in Shimokitazawa. Local song excerpt ver.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-08-27T09:20:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/irmUdXpeOYw/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2023 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "シモキタ音頭 / Shimokita Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "世田谷音頭 / Setagaya Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "池ノ上音頭 -大人Ver.- / Ikenoue Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "代田ダイダラボッチ音頭 / Daita Daidarabotchi Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "追悼 真島茂樹さん シモキタ音頭 / Memorial to Shimokita Ondo Choreographer",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "東京の下北沢で「下北沢盆踊り2024」が開催されました。 下北沢はご当地曲として「シモキタ音頭」のほか「世田谷音頭」「池ノ上音頭」「代田ダイダラボッチ音頭」と地元曲が充実している盆踊り会場です。 「シモキタ音頭」は今年5月に亡くなられた真島茂樹さんが振付を担当されており、 毎年下北沢盆踊りにボランティアで出演されていました。そのため、盆踊り終盤に追悼の意味を込めてみんなでシモキタ音頭を踊り、哀悼の意を捧げました。 Bon dance in Shimokitazawa, Tokyo. Shimokitazawa is a venue with many local songs. Mr. Majima, the choreographer of “Shimokita Ondo,” passed away in May of this year. Therefore, a memorial dance was held at this Bon Odori. 2024.8.25 Sun 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Pleas…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected"
       ],
       "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
@@ -24157,6 +24325,31 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:b12bebfc362b7060",
+      "target_year": 2023,
+      "event_name": "大蔵本村睦会 「盆踊り大会」",
+      "venue": "大蔵氷川神社",
+      "area": "世田谷区",
+      "detected_event_date": "2023-10-14",
+      "video_id": "OjzVULCc1fs",
+      "video_url": "https://www.youtube.com/watch?v=OjzVULCc1fs",
+      "title": "二子玉川　瀬田玉川神社　例大祭　宵宮　二子玉川rise　2023年10月14日(土)",
+      "channel_id": "UC-TbS1VuBJhro2YD6t_M2Xg",
+      "channel_title": "神戸裕雄",
+      "published_at": "2023-10-14T10:03:35Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/OjzVULCc1fs/maxresdefault.jpg",
+      "query": "大蔵本村睦会 「盆踊り大会」 大蔵氷川神社 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "二子玉川 瀬田玉川神社 例大祭 宵宮 二子玉川rise 2023年10月14日(土)"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected",
         "bon_context"
       ],
@@ -24255,6 +24448,32 @@
       "event_name": "大銀座盆踊り",
       "venue": "中央通り（銀座1丁目〜8丁目）",
       "area": "中央区",
+      "detected_event_date": "2023-08-09",
+      "video_id": "inh4ZW3Gdbw",
+      "video_url": "https://www.youtube.com/watch?v=inh4ZW3Gdbw",
+      "title": "盆踊り　銀座カンカン娘 　東京大神宮納涼盆踊大会 20230809",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-09T16:03:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/inh4ZW3Gdbw/sddefault.jpg",
+      "query": "大銀座盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/O6F3OGAb2ss https://youtu.be/VuraEkum6_k https://youtu.be/z4aWCiG5rVE https://youtu.be/n0CdpnD1IEc https://youtu.be/UGk0FqT5zAU https://youtu.be/TVQCM4MrFUE https://youtu.be/z--UdXdqe5Q https://youtu.be/IcYkpYe7Qhg https://youtu.be/0LREDyrIVSk https://youtu.be/zHtS80aby1w https://youtu.be/rWqODLWeD4w https://youtu.be/Z8OoCaMSEJg https://youtu.be/5JuUJpMQUrQ https://youtu.be/X3Uxu7j99ds https://youtu.be/JMjvc5TqjjI https://youtu.be/NGHYA2CrtA4 https://youtu.be/wIE-3KoFLqw https:…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
+      "target_year": 2023,
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
       "detected_event_date": "2023-08-26",
       "video_id": "dcqB54nYGn8",
       "video_url": "https://www.youtube.com/watch?v=dcqB54nYGn8",
@@ -24289,7 +24508,7 @@
       "channel_title": "盆踊りチャンネル",
       "published_at": "2023-08-29T09:00:29Z",
       "thumbnail_url": "https://i.ytimg.com/vi/zb7bQvR5zrc/sddefault.jpg",
-      "query": "大銀座盆踊り 2023 YouTube 盆踊り",
+      "query": "大銀座盆踊り 中央通り（銀座1丁目〜8丁目） 中央区 2023 盆踊り",
       "setlist_count": 1,
       "setlist_sample": [
         {
@@ -24333,6 +24552,58 @@
         }
       ],
       "description_excerpt": "2023年8月8日に行われた東京大神宮盆踊りの様子です。 https://youtu.be/MC4pmb6ovzg https://youtu.be/S4XOoYVRLko https://youtu.be/7hdsyMPpYp8 https://youtu.be/y8VFGKrjMjk https://youtu.be/YPN2orbfTpA https://youtu.be/MZiiiVE2-0g https://youtu.be/6iyQG_GlfE4 https://youtu.be/eX6TDKKTUtI https://youtu.be/DCOxpISl06E https://youtu.be/ztAGs_4uoP8 https://youtu.be/fyRQ0c53geY https://youtu.be/X8IMrCCJxdk https://youtu.be/o54n48iQwvs https://youtu.be/oHd2P6gHNTA https://youtu.be/vxa5EPH8_4k https://youtu.be/zQq-rwdBDqk https:…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
+      "target_year": 2023,
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "detected_event_date": "2023-07-29",
+      "video_id": "9cVxuWAG2cs",
+      "video_url": "https://www.youtube.com/watch?v=9cVxuWAG2cs",
+      "title": "銀座カンカン娘（中央区ver） 京橋公園盆踊り大会 20230729",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-07-29T18:22:02Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/9cVxuWAG2cs/maxresdefault.jpg",
+      "query": "大銀座盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/hacYMaF204E https://youtu.be/QxW8xSeOztk https://youtu.be/frLvnEw3X4g https://youtu.be/pxSaJd4BnnA https://youtu.be/dN_yZdM_4T8 https://youtu.be/1JyEfd4ZZ78 https://youtu.be/r5iqvCIO5Cs https://youtu.be/b6WqK2O-0JU https://youtu.be/8Ks3UmmQyJE https://youtu.be/la3bJLZGbwo https://youtu.be/o0buI9jrwQU https://youtu.be/B-Jdwmbqw3c https://youtu.be/9cVxuWAG2cs https://youtu.be/L6qD6xRYiCs https://youtu.be/zc_pLiqh0hw https://youtu.be/aKNDeubhxIE"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
+      "target_year": 2023,
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "detected_event_date": "2023-08-25",
+      "video_id": "s1E1Q9WsTxo",
+      "video_url": "https://www.youtube.com/watch?v=s1E1Q9WsTxo",
+      "title": "🏮＃銀座カンカン娘 2️⃣＃中央区大江戸まつり盆踊り大会2023＃日本 ＃2023年8月25日＃GinzaKankanMusume",
+      "channel_id": "UCNkvIGUPWOAxjHgjcu9Vvdg",
+      "channel_title": "山崎茂雄",
+      "published_at": "2023-08-29T00:31:09Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/s1E1Q9WsTxo/maxresdefault.jpg",
+      "query": "大銀座盆踊り 中央通り（銀座1丁目〜8丁目） 中央区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "地下鉄 浜町駅２分の浜町公園にて中央区大江戸まつり盆踊り大会2023 が華やかに盛大に開催されました。 @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
     },
     {
       "status": "weak",
@@ -24709,6 +24980,58 @@
         "target_year_date_detected",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:53436bcc9d9d42c2",
+      "target_year": 2023,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "2023-09-01",
+      "video_id": "Qyo_qhGSzfI",
+      "video_url": "https://www.youtube.com/watch?v=Qyo_qhGSzfI",
+      "title": "2023 おわら風の盆 西新町 輪踊り 壱",
+      "channel_id": "UCf22ohR_xDkm2CPv7KiKUXw",
+      "channel_title": "りんぷーの動画倉庫",
+      "published_at": "2023-09-02T23:00:15Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Qyo_qhGSzfI/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023年9月1日 公式時間帯、西新町の輪踊りの様子です ブログ：https://ameblo.jp/reorinp/entry-12821299710.html"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:53436bcc9d9d42c2",
+      "target_year": 2023,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "2023-09-03",
+      "video_id": "V8Hp-4NPb6Y",
+      "video_url": "https://www.youtube.com/watch?v=V8Hp-4NPb6Y",
+      "title": "おわら風の盆 下新町 男女混合踊りと中学生の部それぞれ少しだけ。 最終日  2023.09.03  20時",
+      "channel_id": "UCekTPfHdjpbbu9gDOmhv_3Q",
+      "channel_title": "Tiyon Tube",
+      "published_at": "2023-09-11T12:57:46Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/V8Hp-4NPb6Y/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "下新町に移動した始まってました。途中からの撮影です。次の回も見ましたが撮影は少しだけ。"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:166c563107e08890",
       "target_year": 2023,
       "event_name": "柏木地区6町会盆踊り大会",
@@ -24776,6 +25099,31 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "#浅草 #三社祭 #お囃子 #和太鼓 #お神輿 #二之宮 #寿 #町内神輿 #西浅草一丁目 #田原町駅 #asakusa #sanjyamatsuri #ohayashi #wadaiko #mikoshi #tokyo #japanesefestival 横浜和太鼓音や 大人から子供まで メンバー募集中です!! 体験随時OKです🎵 #旭区 #保土ヶ谷区 #戸塚区 #今井地区センター #和太鼓 #和太鼓チーム #和太鼓教室 #和太鼓サークル #横浜和太鼓音や #子供太鼓 #幼稚園児 #小学生 #中学生 #高校"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:c4ca2667a8147ce3",
+      "target_year": 2023,
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "detected_event_date": "2023-08-27",
+      "video_id": "-ZBk6JvFsRI",
+      "video_url": "https://www.youtube.com/watch?v=-ZBk6JvFsRI",
+      "title": "2023/08/27 令和5年 日暮里諏方神社 神幸祭 本社神輿渡御(西日暮里駅前～開成高校前)(Nippori Suwa-jinja Reitaisai Festival)",
+      "channel_id": "UCjHj3ggXI6LpylrJVysOKRQ",
+      "channel_title": "Yuji(神輿)",
+      "published_at": "2023-08-27T11:50:29Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/-ZBk6JvFsRI/maxresdefault.jpg",
+      "query": "瀬田商店会 瀬田納涼盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "Nishinippori, Tokyo, Japan 8K UHD(7680×4320), 30p, ALL-I, Canon EOS R5 + RF24-105mm F4 L IS USM with image stabilization: level low"
     },
     {
       "status": "weak",
@@ -25011,6 +25359,31 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:17cc861343390d99",
+      "target_year": 2023,
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "2023-05-21",
+      "video_id": "movEigKTw3w",
+      "video_url": "https://www.youtube.com/watch?v=movEigKTw3w",
+      "title": "横浜和太鼓音や 浅草 三社祭 西浅草一丁目  2023.05.21 前半",
+      "channel_id": "UCCzJMK67VmdB8uXl5YW1kzA",
+      "channel_title": "横浜和太鼓音や",
+      "published_at": "2023-05-21T12:23:03Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/movEigKTw3w/maxresdefault.jpg",
+      "query": "盆踊り(池尻地区) 池尻稲荷神社 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#浅草 #三社祭 #お囃子 #和太鼓 #お神輿 #二之宮 #寿 #町内神輿 #西浅草一丁目 #田原町駅 #asakusa #sanjyamatsuri #ohayashi #wadaiko #mikoshi #tokyo #japanesefestival 横浜和太鼓音や 大人から子供まで メンバー募集中です!! 体験随時OKです🎵 #旭区 #保土ヶ谷区 #戸塚区 #今井地区センター #和太鼓 #和太鼓チーム #和太鼓教室 #和太鼓サークル #横浜和太鼓音や #子供太鼓 #幼稚園児 #小学生 #中学生 #高校"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected",
         "bon_context"
       ],
@@ -25031,6 +25404,32 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:17cc861343390d99",
+      "target_year": 2023,
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "2023-08-13",
+      "video_id": "feMo0gHkz2o",
+      "video_url": "https://www.youtube.com/watch?v=feMo0gHkz2o",
+      "title": "河内音頭　秀喜会秀菊　♬額町青年団盆踊り大会♬　2023.08.13　秀喜会",
+      "channel_id": "UC0cutQhH7b8UKQPUzKdIT3w",
+      "channel_title": "泉州まめだ",
+      "published_at": "2023-08-14T08:13:50Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/feMo0gHkz2o/maxresdefault.jpg",
+      "query": "盆踊り(池尻地区) 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "岸和田市額町地車庫前にて"
     },
     {
       "status": "weak",
@@ -26168,6 +26567,94 @@
       "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
       "area": "渋谷区",
       "detected_event_date": "2023-09-10",
+      "video_id": "rFsY9TM0Rnc",
+      "video_url": "https://www.youtube.com/watch?v=rFsY9TM0Rnc",
+      "title": "[4K]🇯🇵 渋谷 盆踊り 全踊り『ダンシング・ヒーロー』『ギザギザハートの子守唄』『Livin' On A Prayer』 SHIBUYA MIYASHITA PARK BON DANCE 2023",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2023-09-13T09:00:44Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/rFsY9TM0Rnc/maxresdefault.jpg",
+      "query": "第6回 渋谷盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 10,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "渋谷音頭 / Shibuya Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "オリンピック渋谷音頭 / Olympic Shibuya Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "東京音頭 / Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "炭坑節 / Tanko Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "夢見る渋谷 YOU MAKE SHIBUYA 盆踊りver",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "ダンシング・ヒーロー / Eat You Up",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "ギザギザハートの子守唄 / Gizagizahāto no komori-uta",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "大東京音頭 / Dai Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 9,
+          "title": "夢見る渋谷 YOU MAKE SHIBUYA 盆踊りver ②",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 10,
+          "title": "ダンシング・ヒーロー ② / Eat You Up ②",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "東京・渋谷にあるミヤシタパーク（宮下公園）で盆踊りが開催されました。 かなりの人で賑わう渋谷駅前から向かってみました。 踊りは中野の「盆ジョビ」「盆ダンス」のし掛け人としても有名な舞踊家・鳳蝶美成さん。 盆踊りは2部構成で行われ、渋谷の街らしく若者からご年配の方、海外の方と多様な踊り手さんが楽しい時間を過ごしていました。 定番曲の『東京音頭』や『炭坑節』に加え、渋谷ゆかりの『渋谷音頭』やカジヒデキ作曲・野宮真貴がボーカルの楽曲『夢見る渋谷 YOU MAKE SHIBUYA』 そして、今や盆踊り（盆ダンス）の定番曲となった荻野目洋子の『ダンシング・ヒーロー』やBon Joviの『Livin' On A Prayer』。チェッカーズの往年の名曲『ギザギザハートの子守唄』と様々な曲で盛り上がっていました。 The Bon Odori dance was held at Miyashita Park (Miyashita Park) in Shibuya, Tokyo. I headed there from in front of Shibuya Station, which was qu…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:fa219506b6c10603",
+      "target_year": 2023,
+      "event_name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "detected_event_date": "2023-09-10",
       "video_id": "C96ECQk_D1g",
       "video_url": "https://www.youtube.com/watch?v=C96ECQk_D1g",
       "title": "[4K]🇯🇵 渋谷 盆踊り『ダンシング・ヒーロー』 ボンジョビ『Livin' On A Prayer』 SHIBUYA MIYASHITA PARK BON DANCE 2023",
@@ -26855,6 +27342,32 @@
       "venue": "千歳船橋駅前広場",
       "area": "世田谷区",
       "detected_event_date": "2023-09-16",
+      "video_id": "i4XkwFviPtE",
+      "video_url": "https://www.youtube.com/watch?v=i4XkwFviPtE",
+      "title": "バハマ・ママ　盆踊り　麻布十番 網代公園 20230916",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-09-18T07:27:01Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/i4XkwFviPtE/maxresdefault.jpg",
+      "query": "船橋会 盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "麻布十番駅の近く網代公園での盆踊り大会。麻布は夜の街のイメージがありますが普通に山の手町内会の盆踊りです。 https://youtu.be/kDTnmf99gGc https://youtu.be/mlZ3spgXOKc https://youtu.be/rS2I2DFnnv8 https://youtu.be/Rnd6FDN76Xc https://youtu.be/BFMUfHxsOkc https://youtu.be/FAUym31fu3c https://youtu.be/KqRp1XGBW1I https://youtu.be/UnbAaWEl7lo https://youtu.be/PonyAZkBn-k https://youtu.be/i4XkwFviPtE https://youtu.be/5Q98V-BwTUs https://youtu.be/SY9rLH_VP1E"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:f0782f74b4286e36",
+      "target_year": 2023,
+      "event_name": "船橋会 盆踊り",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "detected_event_date": "2023-09-16",
       "video_id": "FAUym31fu3c",
       "video_url": "https://www.youtube.com/watch?v=FAUym31fu3c",
       "title": "八木節　盆踊り　麻布十番 網代公園 20230916",
@@ -26862,7 +27375,7 @@
       "channel_title": "祭のきせき　MatsuriNoKiseki",
       "published_at": "2023-09-18T07:27:01Z",
       "thumbnail_url": "https://i.ytimg.com/vi/FAUym31fu3c/maxresdefault.jpg",
-      "query": "船橋会 盆踊り 千歳船橋駅前広場 世田谷区 2023 盆踊り",
+      "query": "船橋会 盆踊り 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "麻布十番駅の近く網代公園での盆踊り大会。麻布は夜の街のイメージがありますが普通に山の手町内会の盆踊りです。 https://youtu.be/kDTnmf99gGc https://youtu.be/mlZ3spgXOKc https://youtu.be/rS2I2DFnnv8 https://youtu.be/Rnd6FDN76Xc https://youtu.be/BFMUfHxsOkc https://youtu.be/FAUym31fu3c https://youtu.be/KqRp1XGBW1I https://youtu.be/UnbAaWEl7lo https://youtu.be/PonyAZkBn-k https://youtu.be/i4XkwFviPtE https://youtu.be/5Q98V-BwTUs https://youtu.be/SY9rLH_VP1E"
@@ -28311,6 +28824,178 @@
       "reasons": [
         "target_year_in_video",
         "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2024-08-25",
+      "video_id": "irmUdXpeOYw",
+      "video_url": "https://www.youtube.com/watch?v=irmUdXpeOYw",
+      "title": "[4K]🇯🇵 下北沢盆踊り 真島茂樹さん追悼でシモキタ音頭を踊る｜世田谷音頭 他ご当地曲 / Bon dance in Shimokitazawa. Local song excerpt ver.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-08-27T09:20:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/irmUdXpeOYw/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2024 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "シモキタ音頭 / Shimokita Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "世田谷音頭 / Setagaya Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "池ノ上音頭 -大人Ver.- / Ikenoue Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "代田ダイダラボッチ音頭 / Daita Daidarabotchi Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "追悼 真島茂樹さん シモキタ音頭 / Memorial to Shimokita Ondo Choreographer",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "東京の下北沢で「下北沢盆踊り2024」が開催されました。 下北沢はご当地曲として「シモキタ音頭」のほか「世田谷音頭」「池ノ上音頭」「代田ダイダラボッチ音頭」と地元曲が充実している盆踊り会場です。 「シモキタ音頭」は今年5月に亡くなられた真島茂樹さんが振付を担当されており、 毎年下北沢盆踊りにボランティアで出演されていました。そのため、盆踊り終盤に追悼の意味を込めてみんなでシモキタ音頭を踊り、哀悼の意を捧げました。 Bon dance in Shimokitazawa, Tokyo. Shimokitazawa is a venue with many local songs. Mr. Majima, the choreographer of “Shimokita Ondo,” passed away in May of this year. Therefore, a memorial dance was held at this Bon Odori. 2024.8.25 Sun 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Pleas…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2025-08-09",
+      "video_id": "tb-2Z4Z4uQ8",
+      "video_url": "https://www.youtube.com/watch?v=tb-2Z4Z4uQ8",
+      "title": "[4K]🇯🇵 下北沢盆踊り2025 ダンシングヒーロー｜マツケンサンバⅡ｜サンバダンサー登場  / Japanese Bon dance in Shimokitazawa, Tokyo. 2025",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2025-08-10T08:01:08Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/tb-2Z4Z4uQ8/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2024 盆踊り",
+      "setlist_count": 12,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "馬浪マラカス団 生演奏（シモキタ音頭） / Umanami Maracasdan ”Shimokita Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "東京音頭 / Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "シモキタ音頭 / Shimokita Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "シモキタ音頭［サンバショー］ / Shimokita Ondo［Samba Show］",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "炭坑節 / Tanko Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "世田谷音頭 / Setagaya Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "きよしのズンドコ節 / Kiyoshi no Zundoko Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "ダンシング・ヒーロー / Eat You Up",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 9,
+          "title": "大東京音頭 / Dai Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 10,
+          "title": "阿佐ヶ谷スパイダース｜アサスパ音頭 振付紹介/ Asasupa Ondo Choreography Introduction",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "東京の下北沢で「下北沢盆踊り2025」が開催されました。 駅前の再開発により、昨年までとは違った形の会場になっていました。 この会場の特徴の1つがサンバと盆踊りのコラボレーション。下北沢が地元で、本場ブラジルでも活躍するサンバダンサーのPIETER with ESQUINAが会場の熱気をさらにあげます！ 今年もMCのMikaさんのテンポ良い進行のもと、地元曲のシモキタ音頭を中心にラストまで大いに盛り上がりました！ Bon Odori in Shimokitazawa, Tokyo. A collaboration of Bon Odori and Samba was also held. The samba was performed by PIETER, who performs at the Samba Carnival in Brazil. 2025.8.9 Sat 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Please Subscribe to my channel よろしければ登録お願いします https://www.y…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2024-08-25",
+      "video_id": "mJL0np6WVD4",
+      "video_url": "https://www.youtube.com/watch?v=mJL0np6WVD4",
+      "title": "盆踊り｜シモキタ音頭｜下北沢盆踊り2024 / Traditional Japanese Bon dance in Shimokitazawa \"Shimokita Ondo” [4K]",
+      "channel_id": "UCOscyclqwbx_tGR7yWs1RVQ",
+      "channel_title": "Tokyo Dance Storage",
+      "published_at": "2024-11-23T09:00:46Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/mJL0np6WVD4/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【2024年 盆踊りの記録】 日時：2024年8月25日(金) イベント名：下北沢盆踊り ▼下北沢盆踊り ダンシングヒーロー｜マツケンサンバⅡ｜他 https://youtu.be/37bU4IHu1bU #盆踊り"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
         "bon_context"
       ],
       "queue_id": "youtube-year-backfill:2cdfb4bd79dd4e73",
@@ -29382,6 +30067,83 @@
         }
       ],
       "description_excerpt": "2024年東京都中央区、人形町二丁目で行われました盆踊りの様子です。 人形町２丁目盆踊り １ﾊﾞﾊﾏ･ﾏﾏ https://youtu.be/zLKx1DFWSzc ２大東京音頭 https://youtu.be/mLRAVToWHcE ３ベイサイドブギ https://youtu.be/oxpjnnUkZoc ４銀座カンカン娘 https://youtu.be/yaqG-MDlNgw ５ﾀﾞﾝｼﾝｸﾞ･ﾋｰﾛｰ https://youtu.be/69PBMV0245w ６終 東京五輪音頭2020 https://youtu.be/6Dr2T3kZOGs その他おすすめ動画 #両国国技館駅前大通り盆踊り １ﾊﾞﾊﾏﾏﾏ https://youtu.be/hYELaPve5eI ２炭坑節 https://youtu.be/k_9R5HA6vW4 ３ｽｶｲﾂﾘｰ音頭 https://youtu.be/PE_mEvOrtuk ４きよしのズンドコ節 https://youtu.be/tCukDxQjQPk ５ﾀﾞﾝｼﾝｸﾞ･ﾋｰﾛｰ https://youtu.be/zGasy9MMXNM …"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:887907bebfbba367",
+      "target_year": 2024,
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "detected_event_date": "2024-06-29",
+      "video_id": "nZUPyo-96wo",
+      "video_url": "https://www.youtube.com/watch?v=nZUPyo-96wo",
+      "title": "暴走車が突っ込んできて怒号が飛び交う、緊張感溢れる野堂東組の曳行！【平野郷だんじり　試験曳き】2024.6.29 Danjiri Test Day",
+      "channel_id": "UCablWT1ngw9ww9Bt3TuKPvg",
+      "channel_title": "hiro T",
+      "published_at": "2024-07-02T22:30:10Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/nZUPyo-96wo/maxresdefault.jpg",
+      "query": "岡本自治会「盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "7月の『平野郷(大阪市平野区) 前夜祭』を前にしての、2024年6月29日に各町のだんじり試験曳きを実施 【参加だんじり】 野堂町南組/野堂東組/野堂北組/馬場町/泥堂町/西脇組/脊戸口町/市町/流町"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:a2afeb24a3ec3e0b",
+      "target_year": 2024,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "2024-09-03",
+      "video_id": "SopV47KG3HU",
+      "video_url": "https://www.youtube.com/watch?v=SopV47KG3HU",
+      "title": "【おわら風の盆2024】西新町の町流しと舞台踊り　― 2024.9.3",
+      "channel_id": "UCO3k-Z2WzBiniPnan45_rLw",
+      "channel_title": "栄兄",
+      "published_at": "2024-09-04T03:00:30Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/SopV47KG3HU/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "毎年恒例のおわら風の盆に行ってきました。 おわら11支部の中で最も南に位置する西新町の町流しと公民館付近での踊りです。 #富山 #おわら風の盆 #祭り"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:a2afeb24a3ec3e0b",
+      "target_year": 2024,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "2024-09-02",
+      "video_id": "okQBC93RHTU",
+      "video_url": "https://www.youtube.com/watch?v=okQBC93RHTU",
+      "title": "【下新町 夜】- 八尾おわら風の盆 2024年9月2日 [富山の４K映像]",
+      "channel_id": "UCvI3qtvOimj5Ii7JfFlS1qg",
+      "channel_title": "とやまのすてーじ",
+      "published_at": "2024-09-18T11:03:41Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/okQBC93RHTU/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "下新町公民館前にて。 【八尾 下新町】 八尾町の鎮守社、八幡社のある町です。風の盆の期間には境内に舞台を設け、特に夜はこの舞台での踊りを中心に行事が行われます。鳥居を背景に色鮮やかな衣装が夕闇に照らされて踊る姿は幽玄な趣を醸し出します。 引用：Webサイト『おわら保存会：組織・概要：支部紹介』より → http://owarahozonkai.jp/organization_c.html おわら風の盆（Owara kazenobon）は、富山県富山市八尾地区で、毎年9月1日から3日にかけて行われている富山県を代表する行事です。 越中おわら節の哀切感に満ちた旋律にのって、坂が多い町の道筋で無言の踊り手たちが洗練された踊りを披露します。艶やかで優雅な女踊り、勇壮な男踊り、哀調のある音色を奏でる胡弓の調べなどが来訪者を魅了します。 おわら風の盆が行なわれる3日間、たいへん多くの見物客が八尾を訪れ、町はたいへんな賑わいをみせます。 2006年（平成18年）に、「とやまの文化財百選（とやまの祭り百選部門）」に選定されました。 Kaze-no-Bon (風の盆) is a Japanese fe…"
     },
     {
       "status": "weak",
@@ -31273,6 +32035,38 @@
         "target_year_in_video",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:eb63ef3c5e274965",
+      "target_year": 2023,
+      "event_name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "F2hVC8bcW08",
+      "video_url": "https://www.youtube.com/watch?v=F2hVC8bcW08",
+      "title": "たいとう音頭　2023年台東区　坂本町会　旧坂本小学校跡地広場盆踊り　ショート #たいとう音頭 #盆踊り #dance",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-01-01T10:30:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/F2hVC8bcW08/maxresdefault.jpg",
+      "query": "坂本町会 納涼祭 2023 YouTube 盆踊り",
+      "setlist_count": 1,
+      "setlist_sample": [
+        {
+          "number": 20,
+          "title": "23年坂本町会盆踊り",
+          "url": "https://www.youtube.com/playlist?list=PLykeSsDm2Wty6rnnC2u8wQGX9_fyjOZPa",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2023年坂本町会盆踊り。 https://www.youtube.com/playlist?list=PLykeSsDm2Wty6rnnC2u8wQGX9_fyjOZPa"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
       "target_year": 2023,
       "event_name": "大銀座盆踊り",
@@ -31373,6 +32167,31 @@
         "target_year_in_video",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
+      "target_year": 2023,
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "detected_event_date": "",
+      "video_id": "FGIwBB1Qajs",
+      "video_url": "https://www.youtube.com/watch?v=FGIwBB1Qajs",
+      "title": "👸🎶銀座カンカン娘①💐🏮大江戸まつり盆踊り大会2023💑🎆🌴#Shorts🌸",
+      "channel_id": "UCNkvIGUPWOAxjHgjcu9Vvdg",
+      "channel_title": "山崎茂雄",
+      "published_at": "2023-08-30T11:24:48Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/FGIwBB1Qajs/maxresdefault.jpg",
+      "query": "大銀座盆踊り 中央通り（銀座1丁目〜8丁目） 中央区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:65631588a7239bb3",
       "target_year": 2023,
       "event_name": "宇奈根町会 盆踊り大会",
@@ -31422,6 +32241,56 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "「盆ギリ恋歌」サザンオールスターズ ♪次の盆踊り定番曲はこれだ♪【江戸川区 椿天祖神社 椿ふるさとまつり 2023】盆踊り Bon Dance Part3 江戸川区椿天祖神社「椿ふるさとまつり」にお邪魔しました。今年の町盆踊りの中で一番の盛り上がりで太鼓も最高でした。来年も開催されるそうなので、機会があればぜひ訪れてみてはいかがでしょうか。 ------------------------------------------------------------- 関連動画 ●Livin' On A Prayer - ボンジョビで盆踊り【秋祭り in ラゾーナ川崎 2023】 Livin' On A Prayer ／ Bon Jovi https://youtu.be/mR2EIiKWWGE ●マツケンサンバⅡ 盆踊り【秋祭り in ラゾーナ川崎 2023】 松平健 https://youtu.be/naMnywMvbTc ●『ダンシングヒーロー 』荻野目洋子 盆踊り【赤坂 氷川神社 2023】 Bon Dance 赤坂氷川祭 https://youtu.be/GH5n9_BK7m4 …"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:53436bcc9d9d42c2",
+      "target_year": 2023,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "YYDi-J90Ynw",
+      "video_url": "https://www.youtube.com/watch?v=YYDi-J90Ynw",
+      "title": "越中八尾おわら風の盆2023 下新町輪踊り",
+      "channel_id": "UCrcUV6NMu5sIIO2tN8AGYdQ",
+      "channel_title": "Dilettante",
+      "published_at": "2023-09-05T03:25:29Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/YYDi-J90Ynw/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#おわら風の盆 #越中八尾 #越中おわら節 #富山県 八尾八幡社での舞台を終えて、公民館の前で輪踊りをしていました。"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:53436bcc9d9d42c2",
+      "target_year": 2023,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "bK9_erpJEl8",
+      "video_url": "https://www.youtube.com/watch?v=bK9_erpJEl8",
+      "title": "越中八尾おわら風の盆2023 東新町公民館前",
+      "channel_id": "UCrcUV6NMu5sIIO2tN8AGYdQ",
+      "channel_title": "Dilettante",
+      "published_at": "2023-09-08T09:37:54Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/bK9_erpJEl8/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#越中八尾おわら風の盆 #富山県 #越中おわら節 9月3日最終日の東新町の踊り。艶やかで美しいですね。みんな頑張ってました。"
     },
     {
       "status": "weak",
@@ -31728,6 +32597,32 @@
       "score": 33,
       "reasons": [
         "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:fa219506b6c10603",
+      "target_year": 2023,
+      "event_name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "detected_event_date": "2024-10-02",
+      "video_id": "Nf7BDa4Jqc4",
+      "video_url": "https://www.youtube.com/watch?v=Nf7BDa4Jqc4",
+      "title": "8/3の第5回渋谷盆踊りにサプライズ出演し初披露した新曲！#渋谷百年総踊り #BEGIN #ビギン #盆踊り #渋谷",
+      "channel_id": "UCkn4RZNbITpBEHWdS_pzGEg",
+      "channel_title": "BEGIN ch",
+      "published_at": "2024-08-05T04:00:24Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Nf7BDa4Jqc4/maxresdefault.jpg",
+      "query": "第6回 渋谷盆踊り SHIBUYA109前〜道玄坂・文化村通り一帯 渋谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "🎉NEWアルバム「ビギンの盆マルシャ」2024年10月2日発売決定🎉 そして「マルシャライブ2024」開催決定！ 詳細⇒ https://www.begin1990.com/ アルバム「ビギンの盆マルシャ」から新曲『渋谷百年総踊り』を8月14日先行配信！ 8月3日に開催された第5回渋谷盆踊りにサプライズ出演し初披露。 BEGINが \"第二の故郷\" と語る「渋谷」への恩返しとして書き下ろした楽曲です！ ＊＊＊ BEGIN 配信シングル「東京音頭」「炭坑節」 2024年8月2日（金）リリース!! \"盆マルシャ\" アレンジによる盆踊りの定番曲2曲を配信リリース!! 「東京音頭」「炭坑節」は共に言わずと知れた盆踊りの定番曲ですが、 本作は、BEGINオリジナルの \"盆マルシャ\" アレンジに乗せて、 思わず踊り出さずにはいられない軽快な仕上がりとなっています。 楽曲へのリスペクトを感じさせる深みのある歌いぶりも必聴です。 この「東京音頭」「炭坑節」は2024年6月まで開催していた 「お天気祭りツアー2024」でもライブ披露されていたお馴染みの曲で、 お祭りの熱気がファンの間で大変な反響を呼んで…"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
         "bon_context"
       ],
       "queue_id": "youtube-year-backfill:151caf0613f4e5a4",
@@ -31797,6 +32692,31 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "​ @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:f0782f74b4286e36",
+      "target_year": 2023,
+      "event_name": "船橋会 盆踊り",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "NZB9ZH5MFIc",
+      "video_url": "https://www.youtube.com/watch?v=NZB9ZH5MFIc",
+      "title": "2023年鎌ヶ谷駅前夏祭り#shortvideo #夏祭り #盆踊り #鎌ケ谷市",
+      "channel_id": "UCxV1jXrvkNtpxLIj07QqaYw",
+      "channel_title": "ラージa広貴",
+      "published_at": "2023-08-03T09:45:56Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/NZB9ZH5MFIc/maxresdefault.jpg",
+      "query": "船橋会 盆踊り 千歳船橋駅前広場 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
     },
     {
       "status": "weak",
@@ -32123,6 +33043,31 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "奥浅草盆踊り大会2025 芙蓉一翔先生民謡18曲4分30秒！！ 奥浅草盆踊り大会が開催されました。日本舞踊 芙蓉流 芙蓉一翔先生の踊りが美しくて踊る人も見る人も楽しくなってしまいます。 チャンネル登録🔔と高評価👍いただけると、とってもうれしいです😊💖。 おすすめ関連動画 Recommended Related Videos 【奥浅草盆踊り大会】エロティカ・セブン波乗りジョニー https://youtu.be/6eY65qrLAmY 【浅草】第2回奥浅草盆踊り大会2024 スカイツリーを背景に踊る！https://youtu.be/wSiiCqRrNTM #奥浅草盆踊り #奥浅草盆踊り大会"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:11103cae5c109fc8",
+      "target_year": 2024,
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "detected_event_date": "",
+      "video_id": "umq1u8recBg",
+      "video_url": "https://www.youtube.com/watch?v=umq1u8recBg",
+      "title": "新目黒音頭_目黒駅前地域のふれあい盆踊り大会 2024【Shinmeguro Ondo / Bon Odori】",
+      "channel_id": "UCTkknp9OjRXszrLTAZ4I0mQ",
+      "channel_title": "catzaurus",
+      "published_at": "2024-07-28T14:09:35Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/umq1u8recBg/hqdefault.jpg",
+      "query": "中目黒盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "初めて目黒駅前地域のふれあい盆踊り大会に行きました。 踊らにゃそんそん とばかりにみなさまが踊りの輪に加わり とても盛り上がりました。"
     },
     {
       "status": "weak",
@@ -32822,6 +33767,144 @@
         "bon_context",
         "setlist_detected"
       ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2025-08-10",
+      "video_id": "WNW90kngfSE",
+      "video_url": "https://www.youtube.com/watch?v=WNW90kngfSE",
+      "title": "😆Rain Can’t Stop the Fun! Shimokitazawa Bon Odori 2025 in Setagaya Tokyo 4K60",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2025-08-11T08:00:41Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/WNW90kngfSE/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2024 盆踊り",
+      "setlist_count": 4,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "Kiyoshi No Zundoko Bushi\" by Kiyoshi Hikawa / Dance with Sun Flowers",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "Shimokita Ondo\" by Umanami Maracas Dan / Dance with Sun Flowers",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "Asaspa Ondo\" / Dance with Asagaya Spiders",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "Shimokita Ondo\" by Umanami Maracas Dan/ Dance with Asagaya Spiders",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "🌈👘Want to see more Bon Odori videos? 👉https://www.youtube.com/watch?v=WzcxpMJuynA&list=PLR3ncRAlbZV5I2wMNLWs18qd5IWXegJSu 🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/watch?v=4wlXGTAssAI&list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD 4K/60fps footages of😆Rain Can’t Stop the Fun! Shimokitazawa Bon Odori 2025 in Setagaya, Tokyo Japan on Sunday night, August 10th, 2025 ☔/ 25℃. Thank you for watching! I'd be very happy if you would thumbs up and subscribe to my channel!!😊 00:00 - \"Kiyoshi N…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2025-08-09",
+      "video_id": "PEJl7y1IOSw",
+      "video_url": "https://www.youtube.com/watch?v=PEJl7y1IOSw",
+      "title": "🤩Surprisingly Global! Giant Circle Dance at Shimokitazawa Bon Odori 2025 in Setagaya Tokyo 4K60",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2025-08-10T08:00:22Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/PEJl7y1IOSw/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2024 盆踊り",
+      "setlist_count": 11,
+      "setlist_sample": [
+        {
+          "number": 4,
+          "title": "th song in the following video of my sub channel \"TokyoHzMusic\"!!⬇",
+          "url": "https://www.youtube.com/watch?v=3XzR36od_TM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "How to Dance \"Shimokita Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "Shimokita Ondo\" Live Performance by Umanami Maracas Dan",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "Shimokita Ondo\" by Umanami Maracas Dan",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "Shimokita Ondo\" by Umanami Maracas Dan, Dance by Esquina led by PIETER",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "Dai Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "Asaspa Ondo\" with Asagaya Spiders",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "Daita Daidarabotchi Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 9,
+          "title": "Kiyoshi No Zundoko Bushi\" by Kiyoshi Hikawa",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "🌈👘Want to see more Bon Odori videos? 👉https://www.youtube.com/watch?v=WzcxpMJuynA&list=PLR3ncRAlbZV5I2wMNLWs18qd5IWXegJSu 🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/watch?v=4wlXGTAssAI&list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD 4K/60fps footages of 🤩Surprisingly Global! Giant Circle Dance at Shimokitazawa Bon Odori 2025 in Setagaya, Tokyo Japan on Saturday evening, August 9th, 2025 🌞→🌙/ 30℃. Thank you for watching! I'd be very happy if you would thumbs up and subscribe to my chann…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
       "queue_id": "youtube-year-backfill:11103cae5c109fc8",
       "target_year": 2024,
       "event_name": "中目黒盆踊り大会",
@@ -32970,6 +34053,30 @@
       "reasons": [
         "target_year_in_video"
       ],
+      "queue_id": "youtube-year-backfill:b4732eefa45630fc",
+      "target_year": 2023,
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "detected_event_date": "",
+      "video_id": "gHnLVuAhhL8",
+      "video_url": "https://www.youtube.com/watch?v=gHnLVuAhhL8",
+      "title": "江戸とんび連　中目黒夏まつり 2023",
+      "channel_id": "UC0FbVPfGu-KEe4pB3OYHw1A",
+      "channel_title": "darekahdkamerakure",
+      "published_at": "2023-08-06T01:31:38Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/gHnLVuAhhL8/sddefault.jpg",
+      "query": "中目黒盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 21,
+      "reasons": [
+        "target_year_in_video"
+      ],
       "queue_id": "youtube-year-backfill:a2050ee9324f2232",
       "target_year": 2023,
       "event_name": "丸の内de盆踊り",
@@ -33059,6 +34166,78 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "2023.5/26 ★Everlyコンサート2023 6/17小金井宮地楽器ホール・大ホール 7/16和光市民文化センター・大ホール 7/17武蔵野市民文化会館・大ホール ■Everlyトークルーム「魔法の時間」へのお便りは、メール info.everly.jp@gmail.comまで ・メッセージ ・リクエスト ・なかそ涅槃のお悩みコーナーへのお悩み相談内容 など #JAPAN #PubicElementarySchool"
+    },
+    {
+      "status": "weak",
+      "score": 21,
+      "reasons": [
+        "target_year_in_video"
+      ],
+      "queue_id": "youtube-year-backfill:53436bcc9d9d42c2",
+      "target_year": 2023,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "935JU34Xx1s",
+      "video_url": "https://www.youtube.com/watch?v=935JU34Xx1s",
+      "title": "【2023】キレッキレの男踊に刮目せよ！ 西新町のおわら風の盆  - Owara Kaze no Bon festival , JAPAN in 8K",
+      "channel_id": "UCP8cSomNWc3H2jHArmKKlyA",
+      "channel_title": "異世界ひとり旅 ～Deep spot Japan～",
+      "published_at": "2023-09-02T13:00:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/935JU34Xx1s/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "00:00 おわら風の盆(西新町) おわら風の盆2023（諏訪町）：https://www.youtube.com/watch?v=HkqF_91ZKzU おわらの風の盆2022鏡町：https://www.youtube.com/watch?v=b9DVV701FVI&t=227s 【使用機材&SNS】 機材一覧：https://lit.link/isekaihitoritabi 【Camera】 メインカメラ：https://www.amazon.co.jp/s?k=Canon+R5&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=OC09XGNK0JB5&sprefix=canon+r5%2Caps%2C248&linkCode=ll2&tag=bousaiou-22&linkId=28fac7d60599daaa7f6e1c9fc8b44a26&language=ja_JP&ref_=as_li_ss_tl 広角ズームレンズ：https://www.amazon.co.jp/s?k=Canon+RF14-35mm+F4…"
+    },
+    {
+      "status": "weak",
+      "score": 21,
+      "reasons": [
+        "target_year_in_video"
+      ],
+      "queue_id": "youtube-year-backfill:17cc861343390d99",
+      "target_year": 2023,
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "8RYVCFO7Uls",
+      "video_url": "https://www.youtube.com/watch?v=8RYVCFO7Uls",
+      "title": "大蛇が町に！生麦　蛇も蚊も祭2023",
+      "channel_id": "UCdEYN4Q-pMJrabtCthd2jkw",
+      "channel_title": "東みちよ　横浜市会議員ーみっちゃんねる",
+      "published_at": "2023-06-11T10:25:41Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/8RYVCFO7Uls/maxresdefault.jpg",
+      "query": "盆踊り(池尻地区) 池尻稲荷神社 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "長さ27m！老若男女が担いだ大蛇が町をゆく！ 悪疫退散！豊年大漁を願って 古来から鶴見区生麦で行われてきた伝統行事 「蛇も蚊も祭り」が4年ぶりの本格開催となり 私もコロナ退散！国家安全の祈りを込めて参加しました。 祭りを通じて、これからも 生麦の皆さんが希望あふれる町づくりを 楽しんでいけますように！ 詳細はアメブロ参照ください。 https://ameblo.jp/azumamici/entry-12807130457.html"
+    },
+    {
+      "status": "weak",
+      "score": 21,
+      "reasons": [
+        "target_year_in_video"
+      ],
+      "queue_id": "youtube-year-backfill:17cc861343390d99",
+      "target_year": 2023,
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "VhncYxwMLbY",
+      "video_url": "https://www.youtube.com/watch?v=VhncYxwMLbY",
+      "title": "日野市立日野第三小学校・校歌",
+      "channel_id": "UCW7TJqjfNFiyzDbgiYxx2nw",
+      "channel_title": "EverlyOfficialEverly",
+      "published_at": "2023-02-15T05:43:15Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/VhncYxwMLbY/maxresdefault.jpg",
+      "query": "盆踊り(池尻地区) 池尻稲荷神社 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023.2/15 ★Everlyコンサート2023 4/1たましんRISURU(立川)・大ホール 6/17小金井宮地楽器ホール・大ホール 7/16和光市民文化センター・大ホール 7/17武蔵野市民文化会館・大ホール ■Everlyトークルーム「魔法の時間」へのお便りは、メール info.everly.jp@gmail.comまで ・メッセージ ・リクエスト ・なかそ涅槃のお悩みコーナーへのお悩み相談内容 など #JAPAN #PubicElementarySchool"
     },
     {
       "status": "weak",
@@ -33275,6 +34454,79 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "みんなで踊ろう！倍速盆踊り【東京音頭】 お問い合わせ https://forms.gle/RAZAf69hLAiPtEm86 各種制作や盆踊り大会の開催協力も承っております。 #倍速盆踊り #東京音頭 #盆踊りの会 Worldwide BonOdori Association-東京盆踊りの会- https://bon-odori.jimdofree.com/ https://www.tokyobonodori.com/"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:86054631154e1cf1",
+      "target_year": 2023,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "epWhUptGTZ0",
+      "video_url": "https://www.youtube.com/watch?v=epWhUptGTZ0",
+      "title": "下北沢 盆踊り！",
+      "channel_id": "UCW5VjldBkB4nVPjUanc2vLQ",
+      "channel_title": "timyo",
+      "published_at": "2023-08-12T02:42:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/epWhUptGTZ0/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:86054631154e1cf1",
+      "target_year": 2023,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "OkUc7UhXm_0",
+      "video_url": "https://www.youtube.com/watch?v=OkUc7UhXm_0",
+      "title": "下北沢　盆踊り！",
+      "channel_id": "UCxiQOHdWTxP71rTuBN0HqBw",
+      "channel_title": "リアペン☆チャンネル",
+      "published_at": "2023-08-06T09:39:56Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/OkUc7UhXm_0/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:86054631154e1cf1",
+      "target_year": 2023,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2024-08-25",
+      "video_id": "mJL0np6WVD4",
+      "video_url": "https://www.youtube.com/watch?v=mJL0np6WVD4",
+      "title": "盆踊り｜シモキタ音頭｜下北沢盆踊り2024 / Traditional Japanese Bon dance in Shimokitazawa \"Shimokita Ondo” [4K]",
+      "channel_id": "UCOscyclqwbx_tGR7yWs1RVQ",
+      "channel_title": "Tokyo Dance Storage",
+      "published_at": "2024-11-23T09:00:46Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/mJL0np6WVD4/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 下北沢駅東口 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【2024年 盆踊りの記録】 日時：2024年8月25日(金) イベント名：下北沢盆踊り ▼下北沢盆踊り ダンシングヒーロー｜マツケンサンバⅡ｜他 https://youtu.be/37bU4IHu1bU #盆踊り"
     },
     {
       "status": "weak",
@@ -33764,6 +35016,102 @@
       "reasons": [
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:c59a1cd2c52270d8",
+      "target_year": 2023,
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "detected_event_date": "",
+      "video_id": "bJC56xol8ZU",
+      "video_url": "https://www.youtube.com/watch?v=bJC56xol8ZU",
+      "title": "[覚えよう] ＃銀座カンカン娘 ３曲~＃西久保八幡神社盆踊り＃緑ヶ丘第二公園盆踊り＃大江戸まつり盆おどり＃GinzaKankanMusume",
+      "channel_id": "UCNkvIGUPWOAxjHgjcu9Vvdg",
+      "channel_title": "山崎茂雄",
+      "published_at": "2023-05-20T12:48:44Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/bJC56xol8ZU/maxresdefault.jpg",
+      "query": "大銀座盆踊り 中央通り（銀座1丁目〜8丁目） 中央区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。 ＠山崎茂雄 ツイッター＃https://twitter.com/yama_shigeochan"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:33d86adc56ea7500",
+      "target_year": 2023,
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "p9am57m16sQ",
+      "video_url": "https://www.youtube.com/watch?v=p9am57m16sQ",
+      "title": "〈夏祭りvlog〉屋台で食べまくる｜盆踊り｜築地本願寺の人混みがやばすぎた【Bon Dance】",
+      "channel_id": "UCRk91bh9zinHYk4JqwbXiSQ",
+      "channel_title": "ここあ / COCOA",
+      "published_at": "2023-09-22T08:00:33Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/p9am57m16sQ/maxresdefault.jpg",
+      "query": "岡本自治会「盆踊り大会」 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "🐥ご覧いただきありがとうございました🐥 チャンネル登録&グッドボタンお願いします☆彡 https://youtube.com/channel/UCRk91bh9zinHYk4JqwbXiSQ 【オススメ動画】 ・美容DAY vlog https://youtu.be/iJ87wvihtok?si=yybfrz4S3qZvjWoP ・最新ホテル！三井ガーデンホテル横浜みなとみらいプレミアエグゼクティブコーナーツインルームツアー https://youtu.be/VP497yQ-1hI?si=-EUTAMeAf5gOKMkS ・WBC 東京ドーム野球観戦vlog https://youtu.be/ijpTtEkISQ8?si=Yfno7CNr3n9NkxRl ・セール！ジェラピケ購入品紹介 https://youtu.be/Mde8BzF7vD4?si=iygYumr6R8-CZtXs ・お台場vlog https://youtu.be/5qRbuc3_Za0?si=LGTVKXAjoDZ-207M ・ディズニーvlog https://youtu.be/GYH8B7YI46I?si=w…"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:33d86adc56ea7500",
+      "target_year": 2023,
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "c1xlEAuiJLk",
+      "video_url": "https://www.youtube.com/watch?v=c1xlEAuiJLk",
+      "title": "【盆ギリ恋歌】盆踊り用振付動画",
+      "channel_id": "UCJ8PLwvPvHm8X0uQtLOfmiA",
+      "channel_title": "日本舞踊 桜雅〜sakura miyavi〜",
+      "published_at": "2023-08-06T14:36:17Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/c1xlEAuiJLk/maxresdefault.jpg",
+      "query": "岡本自治会「盆踊り大会」 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "横浜を拠点に活動している日本舞踊教室の桜雅がサザンの新曲で盆踊り🏖☀️ この曲を踊ることを快諾くださり、当日は一緒になって盛り上げてくださった #西菅田団地 自治会の皆様、本当にありがとうございました！ 振付の全貌がわかる動画もアップ予定なので、ぜひチャンネル登録してお待ちください。 また来年もこの曲で踊ります🙌✨ 皆様もぜひ遊びにいらしてください🥰"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:33d86adc56ea7500",
+      "target_year": 2023,
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "RiaZTiU8Jhg",
+      "video_url": "https://www.youtube.com/watch?v=RiaZTiU8Jhg",
+      "title": "戯青会(ぎしょうかい) 220730 永山屯田まつり 盆踊り",
+      "channel_id": "UCyRigHqTxftaEjJAbc-ue0Q",
+      "channel_title": "永山屯田まつり戯青会",
+      "published_at": "2023-08-12T14:49:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/RiaZTiU8Jhg/maxresdefault.jpg",
+      "query": "岡本自治会「盆踊り大会」 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:33d86adc56ea7500",
       "target_year": 2023,
       "event_name": "岡本自治会「盆踊り大会」",
@@ -33805,6 +35153,30 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "​ @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:166c563107e08890",
+      "target_year": 2023,
+      "event_name": "柏木地区6町会盆踊り大会",
+      "venue": "北新宿公園",
+      "area": "新宿区",
+      "detected_event_date": "",
+      "video_id": "gmPcZF34wzM",
+      "video_url": "https://www.youtube.com/watch?v=gmPcZF34wzM",
+      "title": "長沢自治会 夏祭り＆納涼盆踊り大会　ライブステージ配信",
+      "channel_id": "UCJziwIZTKGD4ZO9u2PJCXkA",
+      "channel_title": "KomachiChannel",
+      "published_at": "2023-07-29T23:06:33Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/gmPcZF34wzM/maxresdefault.jpg",
+      "query": "柏木地区6町会盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "長沢自治会 夏祭り＆納涼盆踊り大会でのライブステージを、屋外から映像配信を行いました。 【タイムライン】 4:50 横浜純情小町☆ 23:50 川崎純情小町☆ ※黒背景・無音声部分をカット編集いたしました。 【イベント情報】 催事：長沢自治会 夏祭り＆納涼盆踊り大会 場所：聖マリアンナ医科大学病院職員駐車場 ステージ：18〜20時 盆踊り：20〜21時 ※雨天中止 ※観覧無料 ※写真撮影OK、動画撮影NG 【オンラインストア】 ・当日チェキをお求め頂けます。 https://www.whitewolf-online.com/items/71567168 ・DVDやグッズなどはこちらから https://www.whitewolf-online.com/ 【ツイキャスプレミアム配信】 川崎純情小町☆、横浜純情小町☆のライブは、ツイキャスプレミアム配信でもご覧頂けます。ライブハウスから、マルチカメラアングルによる高画質配信をお届けします。 https://twitcasting.tv/c:whitewolf_official/shop/"
     },
     {
       "status": "weak",
@@ -34163,10 +35535,35 @@
       "channel_title": "Japan Festival 【 Union Monthly 】",
       "published_at": "2024-08-03T13:44:03Z",
       "thumbnail_url": "https://i.ytimg.com/vi/9kEHFtc9Ilw/maxresdefault.jpg",
-      "query": "第6回 渋谷盆踊り SHIBUYA109前〜道玄坂・文化村通り一帯 渋谷区 2023 盆踊り",
+      "query": "第6回 渋谷盆踊り 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "00:00 BEGIN サプライズ登場 01:13 BEGIN 島人ぬ宝 渋谷盆踊り2024が8/3土曜日に開催。最後にBEGINがサプライズ登場で歌を披露され、浴衣姿の人や外国人観光客がそのパフォーマンスに魅了されていました。 The Shibuya Bon Odori 2024 was held on Saturday, August 1st. At the end, BEGIN made a surprise appearance and performed, and people in yukata and foreign tourists enjoyed their performance. #渋谷盆踊り #BEGIN #島人ぬ宝"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:fa219506b6c10603",
+      "target_year": 2023,
+      "event_name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "detected_event_date": "2024-08-03",
+      "video_id": "y7tLaC6sr7g",
+      "video_url": "https://www.youtube.com/watch?v=y7tLaC6sr7g",
+      "title": "【渋谷盆踊り 2024】「夢みる渋谷 YOU MAKE SHIBUYA」- 野宮真貴 \"ご当地音頭をインバウンド外国人と踊る盆踊り”  Shibuya Bon Dance Festival",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2024-08-09T07:00:29Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/y7tLaC6sr7g/maxresdefault.jpg",
+      "query": "第6回 渋谷盆踊り SHIBUYA109前〜道玄坂・文化村通り一帯 渋谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#渋谷盆踊り #渋谷 #大東京音頭 #盆踊り #shibuya 【渋谷盆踊り 2024】 開催日程：2024年8月3日(土) 開催場所：渋谷109前 https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu [関連動画] 「渋谷盆踊り BEGIN シークレットライブ」 https://youtu.be/yEiKUz6BHSc https://youtu.be/0Q2y3WHva2c https://youtu.be/Rnv1sRSIRkI https://youtu.be/Rnv1sRSIRkI https://youtu.be/wz5X4R9i4sI https://youtu.be/iUpytnv32Lc"
     },
     {
       "status": "weak",
@@ -34313,6 +35710,30 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "#おとひめChannel #おとひめ #夏祭り 米軍基地 で 盆踊り の お祭り が開催されて、その際は 基地 を解放するイベントを聞いて参加してみました！ちょっと レアな 夏祭り 体験！パスポート 不要 の プチアメリカ旅行気分 で参加ｗ 子供の遊び場も広々としていて、子供も退屈はしなさそうでした！おとひめ は怖がってやりませんでしたが... 本当はヘリなどにも乗れるはずだったのですが、急遽キャンセルになってしまったそうなので、 また今度リベンジしにいこうね！それまでに 花火 見れるようになるかな？ おとひめ はまだ 花火 が苦手なので、夜には帰りましたが、すごく楽しかったようです！ 普段買えないようなものも売っていたので、オススメです！ただ円安の影響でどれも正直高い... 【目次】 0:00 ｜アメリカにしゅっぱ～つ！ 0:20 ｜入場ゲートに到着！ 0:53 ｜関門：荷物検査 と 金属探知機検査！ 1:37 ｜無事入国？入場？できましたぁ！ 2:10 ｜お店が見えてきました！ 2:47 ｜メイン会場に到着！ 3:06 ｜ビールとランチ候補を物色！ 3:59 ｜子供の遊び場も広く…"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:f0782f74b4286e36",
+      "target_year": 2023,
+      "event_name": "船橋会 盆踊り",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "HqvA3x8hfpU",
+      "video_url": "https://www.youtube.com/watch?v=HqvA3x8hfpU",
+      "title": "北習志野で盆踊り【千葉・船橋】夏祭りはいくつになっても良い",
+      "channel_id": "UCZlcW8i7zQFEAZ_fn8RYiEw",
+      "channel_title": "船橋のはじっこ",
+      "published_at": "2024-07-28T02:00:11Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/HqvA3x8hfpU/maxresdefault.jpg",
+      "query": "船橋会 盆踊り 千歳船橋駅前広場 世田谷区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "北習志野の第五号公園(かっぱ公園)で盆踊り 7月27日(土)〜28日(日)で開催 やっぱり夏祭りはいいですね 夏って感じがします #北習志野 #盆踊り #夏祭り #船橋のはじっこ"
     },
     {
       "status": "weak",
@@ -34490,6 +35911,55 @@
         "other_year_date_detected",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "2025-08-09",
+      "video_id": "HCtkRnDfa24",
+      "video_url": "https://www.youtube.com/watch?v=HCtkRnDfa24",
+      "title": "【下北沢 盆踊り 2025】「シモキタ音頭」生歌生演奏で盆踊り / 馬浪マラカス団 Shimokitazawa Bon Dance 2025 盆踊り 下北沢",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2025-08-10T02:00:26Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/HCtkRnDfa24/sddefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#シモキタ音頭 #下北沢 #馬浪マラカス団 #下北沢盆踊り #祭り 【下北沢 盆踊り 2025】 開催日程：2025年8月9日(土)-8月10日(日) 開催場所：下北沢駅前 https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D 【神田明神アニソン盆踊り 2025 二部】 「おジャ魔女カーニバル」 https://youtu.be/fi_f4gx16sM 「ダンシングヒーロー」 https://youtu.be/0-A3lT1xayQ 「クックロビン音頭」 https://youtu.be/Zl9dxMIy30g 「おそ松くん音…"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:fcf9a15959dc7e92",
+      "target_year": 2024,
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "IY6VbsQyphU",
+      "video_url": "https://www.youtube.com/watch?v=IY6VbsQyphU",
+      "title": "下北沢盆踊りサンバ 2025  3",
+      "channel_id": "UCUmJg9houT6eVvi7Z5MnCKA",
+      "channel_title": "FUSION SOUL🔰",
+      "published_at": "2025-08-23T13:53:13Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/IY6VbsQyphU/maxresdefault.jpg",
+      "query": "あずま通り商店街「下北沢盆踊り2025」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:2cdfb4bd79dd4e73",
       "target_year": 2024,
       "event_name": "三角広場まつり「居酒屋盆踊り」",
@@ -34611,6 +36081,61 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "盆踊りは、お盆の時期（8月中旬）に行われる日本の伝統的な踊りのお祭りです。元々は先祖の霊を迎え、供養するための宗教的な行事でしたが、現在では地域コミュニティの楽しいイベントとして親しまれています。子どもから大人まで一緒に太鼓や笛などの楽器演奏に合わせて踊り、コミュニティの絆を深める大切な機会となっています。 渋谷盆踊り（渋谷区）Shibuya Bon Odori 増上寺地蔵尊盆踊り大会（港区）Zojoji Jizo Bon Odori Festival 花園神社ぼんおどり（新宿区）Hanazono Shrine Bon Odori 神田明神納涼祭り（千代田区）Kanda Myojin Shrine Summer Festival 池上本門寺納涼盆踊り大会（大田区）Ikegami Honmonji Summer Bon Odori Festival 築地本願寺納涼盆踊り大会（中央区）Tsukiji Honganji Summer Bon Odori Festival 巣鴨納涼盆踊り（豊島区）Sugamo Summer Bon Odori"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:11103cae5c109fc8",
+      "target_year": 2024,
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "detected_event_date": "",
+      "video_id": "w1y4mkb6kR8",
+      "video_url": "https://www.youtube.com/watch?v=w1y4mkb6kR8",
+      "title": "【東京音頭！目黒駅前盆踊り💜】 #東京音頭 #目黒駅 #目黒駅前盆踊り #目黒 #目黒駅前地域のふれあい盆踊り大会 #ふれあい盆踊り大会 #盆踊り大会",
+      "channel_id": "UCaNrIvOHHBTxnTU_tlL9Ucw",
+      "channel_title": "ファンキーOL奈々",
+      "published_at": "2024-07-31T21:37:05Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/w1y4mkb6kR8/maxresdefault.jpg",
+      "query": "中目黒盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:2ab855e49e95c6f7",
+      "target_year": 2024,
+      "event_name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "F2hVC8bcW08",
+      "video_url": "https://www.youtube.com/watch?v=F2hVC8bcW08",
+      "title": "たいとう音頭　2023年台東区　坂本町会　旧坂本小学校跡地広場盆踊り　ショート #たいとう音頭 #盆踊り #dance",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-01-01T10:30:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/F2hVC8bcW08/maxresdefault.jpg",
+      "query": "坂本町会 納涼祭 2024 YouTube 盆踊り",
+      "setlist_count": 1,
+      "setlist_sample": [
+        {
+          "number": 20,
+          "title": "23年坂本町会盆踊り",
+          "url": "https://www.youtube.com/playlist?list=PLykeSsDm2Wty6rnnC2u8wQGX9_fyjOZPa",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2023年坂本町会盆踊り。 https://www.youtube.com/playlist?list=PLykeSsDm2Wty6rnnC2u8wQGX9_fyjOZPa"
     },
     {
       "status": "weak",
@@ -35562,6 +37087,72 @@
       "venue": "瀬田中学校",
       "area": "世田谷区",
       "detected_event_date": "",
+      "video_id": "VyEZDwBgWeM",
+      "video_url": "https://www.youtube.com/watch?v=VyEZDwBgWeM",
+      "title": "【高画質FHDライブカメラ】等々力渓谷　田園調布散歩　Todoroki Valley Denenchofu walk【live camera】",
+      "channel_id": "UCfY-A_dkXI8gse1uOe9SqGg",
+      "channel_title": "CHANNEL TokyoTown",
+      "published_at": "2023-09-02T09:45:17Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/VyEZDwBgWeM/maxresdefault.jpg",
+      "query": "瀬田商店会 瀬田納涼盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "使用機器 スマホ Google Pixel 6プロ ソフトバンク５Ｇ回線 【ライブ配信の注意事項】 風景鑑賞を皆さんと楽しく行うために楽しいコメントをお待ちしております。 熱暴走や回線の関係で画質が悪くなることがあります。 その場合は、画質が悪いとコメント下さい。 コメントに関して他者を悪く書くことは止めて下さい。 お互いに気持ちよく鑑賞できるようご協力宜しくお願い申し上げます。 他者や当チャンネルへの攻撃的なコメントは削除させていただくことがあります。また、あまりにも度を越す場合には、然るべき対処のため保存する場合があります。 [Precautions for live distribution] We are looking forward to your pleasant comments so that we can enjoy the scenery with everyone. Image quality may be degraded due to thermal runaway or connection. In that case, please comment i…"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:c4ca2667a8147ce3",
+      "target_year": 2023,
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "LQEED1ymFzg",
+      "video_url": "https://www.youtube.com/watch?v=LQEED1ymFzg",
+      "title": "やっぱり夏はお祭りですね。これぞ日本です。 #祭り #神輿 #神奈川 #横浜 #夏 #japan",
+      "channel_id": "UCvG7myiZZdYNGp8XAVkZO1Q",
+      "channel_title": "わこはるちゃんねる",
+      "published_at": "2023-09-12T09:51:28Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/LQEED1ymFzg/maxresdefault.jpg",
+      "query": "瀬田商店会 瀬田納涼盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:c4ca2667a8147ce3",
+      "target_year": 2023,
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "AIEE_daHbRs",
+      "video_url": "https://www.youtube.com/watch?v=AIEE_daHbRs",
+      "title": "六所神社給田囃子連 【世田谷 郷土芸能大会】",
+      "channel_id": "UCp65ywAuoTqcO0rOcsjC-Jw",
+      "channel_title": "祭囃子 - Matsuri Bayashi",
+      "published_at": "2023-09-17T23:00:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/AIEE_daHbRs/maxresdefault.jpg",
+      "query": "瀬田商店会 瀬田納涼盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "六所神社給田囃子連 世田谷 郷土芸能大会 【祭囃子のSNS】 Instagram：https://www.instagram.com/ohayashi_japan/ Facebook：https://www.facebook.com/matsuriohayashi X【Twitter】：https://twitter.com/ohayashi_japan threads：https://www.threads.net/@ohayashi_japan #六所神社給田囃子連 #世田谷郷土芸能大会"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:c4ca2667a8147ce3",
+      "target_year": 2023,
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "detected_event_date": "",
       "video_id": "5NOG-87amyM",
       "video_url": "https://www.youtube.com/watch?v=5NOG-87amyM",
       "title": "愛知県　小牧駅から　小牧市藤島町",
@@ -35573,6 +37164,28 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "大衆焼肉酒場 ニューコマキ 〒485-0029 愛知県小牧市中央１丁目３６１ https://goo.gl/maps/EEzMsVB1p4GtUv6V6 オリエンタルグリーンクラブ小牧 〒485-0061 愛知県小牧市藤島町向江44 https://goo.gl/maps/qrcYoPSBivJ28VCN7"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:17cc861343390d99",
+      "target_year": 2023,
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "z8DI3f_AMNg",
+      "video_url": "https://www.youtube.com/watch?v=z8DI3f_AMNg",
+      "title": "令和5年10月8日　岸和田市八木だんじり祭　灯入れ曳行　池尻町　久米田",
+      "channel_id": "UCD-N7IsyeJM-Gt9iscsOpXQ",
+      "channel_title": "Teamカンカン場",
+      "published_at": "2023-10-19T03:45:04Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/z8DI3f_AMNg/maxresdefault.jpg",
+      "query": "盆踊り(池尻地区) 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#池尻 #だんじり #灯入れ曳行 #八木 #岸和田 #久米田 #shorts"
     },
     {
       "status": "weak",
@@ -36002,6 +37615,28 @@
       "venue": "久富稲荷神社",
       "area": "世田谷区",
       "detected_event_date": "",
+      "video_id": "DQWd98ThVC0",
+      "video_url": "https://www.youtube.com/watch?v=DQWd98ThVC0",
+      "title": "㊗️100万再生!!制服が可愛すぎる小学校TOP18 #制服 #可愛い #小学校 #ランキング",
+      "channel_id": "UCA3F-FW88QNJvzEmhbIogYA",
+      "channel_title": "御体リョウ, Ryo Okarada",
+      "published_at": "2025-06-13T12:00:20Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/DQWd98ThVC0/maxresdefault.jpg",
+      "query": "新町公民会 盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:a2afeb24a3ec3e0b",
+      "target_year": 2024,
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
       "video_id": "0hX6I5pkGo4",
       "video_url": "https://www.youtube.com/watch?v=0hX6I5pkGo4",
       "title": "沖縄県民か見分けますw #沖縄 #沖縄あるある #shorts",
@@ -36057,6 +37692,28 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:e79f8c730bbc5386",
+      "target_year": 2024,
+      "event_name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "2Gq7BacupPc",
+      "video_url": "https://www.youtube.com/watch?v=2Gq7BacupPc",
+      "title": "【月曜から夜ふかし】だんじり 全国放送にて紹介される #岸和田だんじり #貝塚だんじり #だんじり",
+      "channel_id": "UCZFVhYlnhv5kV9jhwDR5ZrA",
+      "channel_title": "cocoron",
+      "published_at": "2024-12-03T12:20:44Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/2Gq7BacupPc/maxresdefault.jpg",
+      "query": "盆踊り(池尻地区) 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【月曜から夜ふかし】 令和6年11月25日放送日の月曜から夜更かしにて、貝塚だんじりの久保町が紹介されていました。 0:28の祭り後に紹介されている、男性2人組のやり取りが凄く面白かったので最後まで視聴して頂けると幸いです。 直撮りなので、声が聞き取りづらいのと、少しテレビ周りが映っていますがご愛嬌ください🙇‍♂️ ＃だんしり ＃岸和田だんじり #貝塚だんじり #月曜から夜ふかし"
     },
     {
       "status": "weak",
@@ -36345,5 +38002,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-09-15T22:43:53.257084+00:00"
+  "merged_from": "2026-09-16T22:40:18.390089+00:00"
 }
