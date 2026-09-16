@@ -9,19 +9,19 @@
   "review_count": 2,
   "created": [
     {
-      "song_name": "アンパンマン音頭",
-      "source_term": "アンパンマン音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
       "song_name": "新宿花園町会納涼踊り",
       "source_term": "新宿花園町会納涼踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "アンパンマン音頭",
+      "source_term": "アンパンマン音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -41,19 +41,19 @@
       "dry_run": true
     },
     {
-      "song_name": "西新井大師音頭",
-      "source_term": "西新井大師音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
       "song_name": "第三回高一中央通り商店街阿波踊り",
       "source_term": "第三回高一中央通り商店街阿波踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "西新井大師音頭",
+      "source_term": "西新井大師音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
