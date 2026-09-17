@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-16T11:45:10.883346+00:00",
+  "generated_at": "2026-09-17T11:53:09.769423+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,442 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1c393ff0f4424fb9",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "早朝から、旭町一丁目町会の盆踊り設営に参加しています🏮\n朝から厳しい暑さですが、町会の皆さんと協力して準備中です💪\n\n開催は7月30日・31日、会場は本覚寺。\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081174786630410466",
+      "source_url": "https://x.com/SatoRiki_Nerima/status/2081174786630410466",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d684c94956edbf35d8b76a2958d5cdec3bcfb2fd14f53531d8a23f1718a707ed",
+      "last_seen_at": "github-35216825950-1",
+      "created_at": "2026-09-17T11:52:32.289698+00:00",
+      "updated_at": "2026-09-17T11:52:32.289698+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e4fc92ad52cebefe",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月30日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@SatoRiki_Nerima",
+        "source_count": 1,
+        "source_key": "x:2081174786630410466",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOHRbWAa8AAqLom.jpg",
+          "https://t.co/WBSsccXr0W",
+          "pic.x.com/WBSsccXr0W",
+          "https://pbs.twimg.com/media/HOHRbbgaUAA9HkA.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "佐藤 力 💪 練馬区議会議員｜練馬の力",
+          "classification": "registered_official_social",
+          "handle": "@satoriki_nerima",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n早朝から、旭町一丁目町会の盆踊り設営に参加しています🏮\n朝から厳しい暑さですが、町会の皆さんと協力して準備中です💪\n\n開催は7月30日・31日、会場は本覚寺。\n詳細はこちら👇\nhttps://t.co/e5UAD85426\n\n#練馬区 #旭町 #盆踊り #本覚寺 https://t.co/WBSsccXr0W",
+        "source_url": "https://x.com/SatoRiki_Nerima/status/2081174786630410466",
+        "source_urls": [
+          "https://x.com/SatoRiki_Nerima/status/2081174786630410466"
+        ],
+        "voice": {
+          "account": "@SatoRiki_Nerima",
+          "date": "2026-07-26T00:28:30+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOHRbWAa8AAqLom.jpg",
+            "https://t.co/WBSsccXr0W",
+            "pic.x.com/WBSsccXr0W",
+            "https://pbs.twimg.com/media/HOHRbbgaUAA9HkA.jpg"
+          ],
+          "name": "佐藤 力 💪 練馬区議会議員｜練馬の力",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "早朝から、旭町一丁目町会の盆踊り設営に参加しています🏮\n朝から厳しい暑さですが、町会の皆さんと協力して準備中です💪\n\n開催は7月30日・31日、会場は本覚寺。\n詳細はこちら👇\nhttps://t.co/e5UAD85426\n\n#練馬区 #旭町 #盆踊り #本覚寺 https://t.co/WBSsccXr0W",
+          "title": "",
+          "tweet_id": "2081174786630410466",
+          "url": "https://x.com/SatoRiki_Nerima/status/2081174786630410466"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b52bb7251f6bbc0a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7/27(月)、28(火)は、深大寺 深沙の杜にて盆踊り大会が行われます🎐\n18:00〜21:00です。\nおそば屋さんに貼り出されているポスターがどれもとても可",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081266940182700534",
+      "source_url": "https://x.com/JindaijiT/status/2081266940182700534",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5276f7203f0a73f9ad551406276a26e2048128f1b09d155e18542f51471c4da5",
+      "last_seen_at": "github-35216825950-1",
+      "created_at": "2026-09-17T11:52:32.289698+00:00",
+      "updated_at": "2026-09-17T11:52:32.289698+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d36f3554cfc1216c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/27"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@JindaijiT",
+        "source_count": 1,
+        "source_key": "x:2081266940182700534",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOIlQCKasAALAhj.jpg",
+          "https://t.co/yWcWGao9du",
+          "pic.x.com/yWcWGao9du",
+          "https://pbs.twimg.com/media/HOIlQCPawAAgJAF.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "浮岳山 深大寺【公式】",
+          "classification": "registered_official_social",
+          "handle": "@jindaijit",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7/27(月)、28(火)は、深大寺 深沙の杜にて盆踊り大会が行われます🎐\n18:00〜21:00です。\nおそば屋さんに貼り出されているポスターがどれもとても可愛いんですよ。\n#夏の深大寺 https://t.co/yWcWGao9du",
+        "source_url": "https://x.com/JindaijiT/status/2081266940182700534",
+        "source_urls": [
+          "https://x.com/JindaijiT/status/2081266940182700534"
+        ],
+        "voice": {
+          "account": "@JindaijiT",
+          "date": "2026-07-26T06:34:41+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOIlQCKasAALAhj.jpg",
+            "https://t.co/yWcWGao9du",
+            "pic.x.com/yWcWGao9du",
+            "https://pbs.twimg.com/media/HOIlQCPawAAgJAF.jpg"
+          ],
+          "name": "浮岳山 深大寺【公式】",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "7/27(月)、28(火)は、深大寺 深沙の杜にて盆踊り大会が行われます🎐\n18:00〜21:00です。\nおそば屋さんに貼り出されているポスターがどれもとても可愛いんですよ。\n#夏の深大寺 https://t.co/yWcWGao9du",
+          "title": "",
+          "tweet_id": "2081266940182700534",
+          "url": "https://x.com/JindaijiT/status/2081266940182700534"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c3417b235b99eb77",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7日間のラジオ体操、最終日。 地域のつながりを、次の世代へ。 なぜ、地域行事が大切なのでしょうか。\nおはようございます。 2026年7月26日（日）。\n今朝も母",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081182488869904876",
+      "source_url": "https://x.com/HOrikiriNEnjin/status/2081182488869904876",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "32477f618e88c1e572120a49598fb0283e06fdae6e35acf7da36036e74a52384",
+      "last_seen_at": "github-35216825950-1",
+      "created_at": "2026-09-17T11:52:32.289698+00:00",
+      "updated_at": "2026-09-17T11:52:32.289698+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ecacab2faf015e4e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月26日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@HOrikiriNEnjin",
+        "source_count": 1,
+        "source_key": "x:2081182488869904876",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2081182361287593984/img/RYkCt9qM82cAWqD1.jpg",
+          "https://t.co/9GyikNQZpA",
+          "pic.x.com/9GyikNQZpA"
+        ],
+        "source_officiality": {
+          "account_name": "堀切ねんじん 渋谷区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@horikirinenjin",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7日間のラジオ体操、最終日。 地域のつながりを、次の世代へ。 なぜ、地域行事が大切なのでしょうか。\nおはようございます。 2026年7月26日（日）。\n今朝も母校・西原小学校の 夏休みラジオ体操に参加しました。\n本日は7日目、いよいよ最終日です。\n子どもたちから地域の皆さんまで、 多くの方が集まりました。\n「おはようございます」の一言から始まり、 みんなで元気に体を動かす。\nこうした何気ない交流こそ、 地域の大切な財産だと感じます。\n昨日25日の夕方は、 参宮橋商店街と代々木四丁目町会の 地域のお祭りにも伺いました。\n緑の芝生に座ったり、寝そべったり。 家族でピクニックを楽しむ姿もありました。\n参宮橋自慢のお店も屋台を出店。 地域ならではのおいしいものが並びました。\nその後は地元へ戻り、 6号坂通り商店街の盆踊り大会へ。\n楽しそうに踊る子どもたち。 地域の皆さんによる盆踊り。 商店街のおいしい食事。\n昔ながらの夏の風景が、 今もしっかり受け継がれています。\n幡ヶ谷・本町地域には、 人と人が顔を合わせる文化があります。\nお祭りも、盆踊りも、ラジオ体操も、世代を超えて人がつながる場所です",
+        "source_url": "https://x.com/HOrikiriNEnjin/status/2081182488869904876",
+        "source_urls": [
+          "https://x.com/HOrikiriNEnjin/status/2081182488869904876"
+        ],
+        "voice": {
+          "account": "@HOrikiriNEnjin",
+          "date": "2026-07-26T00:59:06+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2081182361287593984/img/RYkCt9qM82cAWqD1.jpg",
+            "https://t.co/9GyikNQZpA",
+            "pic.x.com/9GyikNQZpA"
+          ],
+          "name": "堀切ねんじん 渋谷区議会議員",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "7日間のラジオ体操、最終日。 地域のつながりを、次の世代へ。 なぜ、地域行事が大切なのでしょうか。\nおはようございます。 2026年7月26日（日）。\n今朝も母校・西原小学校の 夏休みラジオ体操に参加しました。\n本日は7日目、いよいよ最終日です。\n子どもたちから地域の皆さんまで、 多くの方が集まりました。\n「おはようございます」の一言から始まり、 みんなで元気に体を動かす。\nこうした何気ない交流こそ、 地域の大切な財産だと感じます。\n昨日25日の夕方は、 参宮橋商店街と代々木四丁目町会の 地域のお祭りにも伺いました。\n緑の芝生に座ったり、寝そべったり。 家族でピクニックを楽しむ姿もありました。\n参宮橋自慢のお店も屋台を出店。 地域ならではのおいしいものが並びました。\nその後は地元へ戻り、 6号坂通り商店街の盆踊り大会へ。\n楽しそうに踊る子どもたち。 地域の皆さんによる盆踊り。 商店街のおいしい食事。\n昔ながらの夏の風景が、 今もしっかり受け継がれています。\n幡ヶ谷・本町地域には、 人と人が顔を合わせる文化があります。\nお祭りも、盆踊りも、ラジオ体操も、世代を超えて人がつながる場所です。",
+          "title": "",
+          "tweet_id": "2081182488869904876",
+          "url": "https://x.com/HOrikiriNEnjin/status/2081182488869904876"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_d449055182b88fe5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081172157506433380",
+      "source_url": "https://x.com/katsu373minami/status/2081172157506433380",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b38d8cabe1bb54216acece3a4f4a3ad22903db7b9be6c5cc3bae12ac84bfcc24",
+      "last_seen_at": "github-35216825950-1",
+      "created_at": "2026-09-17T11:52:32.289698+00:00",
+      "updated_at": "2026-09-17T11:52:32.289698+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ad624dd2f1e20344",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@katsu373minami",
+        "source_count": 1,
+        "source_key": "x:2081172157506433380",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOHKi5lbkAABnqy.jpg",
+          "https://t.co/XpyfANYcUA",
+          "pic.x.com/XpyfANYcUA",
+          "https://pbs.twimg.com/media/HOHKi5vbsAAmwD8.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "南かつひこ | 中野区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@katsu373minami",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ました。皆さんのように、なかなか上手く踊れないですね。振り付けが難しい。皆さんも良い汗をかかれたのだと思います。午後8時前から雨がポツリと降り始めました。この後、私は別会場へ。途中本降りになりました。大気の不安定が数日続きそうですね。",
+        "source_url": "https://x.com/katsu373minami/status/2081172157506433380",
+        "source_urls": [
+          "https://x.com/katsu373minami/status/2081172157506433380"
+        ],
+        "voice": {
+          "account": "@katsu373minami",
+          "date": "2026-07-26T00:18:03+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOHKi5lbkAABnqy.jpg",
+            "https://t.co/XpyfANYcUA",
+            "pic.x.com/XpyfANYcUA",
+            "https://pbs.twimg.com/media/HOHKi5vbsAAmwD8.jpg"
+          ],
+          "name": "南かつひこ | 中野区議会議員",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ました。皆さんのように、なかなか上手く踊れないですね。振り付けが難しい。皆さんも良い汗をかかれたのだと思います。午後8時前から雨がポツリと降り始めました。この後、私は別会場へ。途中本降りになりました。大気の不安定が数日続きそうですね。",
+          "title": "",
+          "tweet_id": "2081172157506433380",
+          "url": "https://x.com/katsu373minami/status/2081172157506433380"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_e2e7bc8cc161c67e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【本日7/26(日)開催🏮】松本浩一です！\n\n『松ノ木地域納涼大会』本日2日目（最終日）です✨\n\n会場では美味しい模擬店や太鼓の演奏も実施されます！盆踊りは天気",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081297060494758378",
+      "source_url": "https://x.com/Matsumoto_501/status/2081297060494758378",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "adfb8edea3b8c4eb1d56dab64124302b68219d9ce5d82250f56b654551a407bc",
+      "last_seen_at": "github-35216825950-1",
+      "created_at": "2026-09-17T11:52:32.289698+00:00",
+      "updated_at": "2026-09-17T11:52:32.289698+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_13991e3ee41917a3",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/26"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Matsumoto_501",
+        "source_count": 1,
+        "source_key": "x:2081297060494758378",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2081296920157544449/img/0oItP0krQAbFAY42.jpg",
+          "https://t.co/d0m6axmTvV",
+          "pic.x.com/d0m6axmTvV"
+        ],
+        "source_officiality": {
+          "account_name": "松本浩一 杉並区議会議員 立憲民主党",
+          "classification": "registered_official_social",
+          "handle": "@matsumoto_501",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【本日7/26(日)開催🏮】松本浩一です！\n\n『松ノ木地域納涼大会』本日2日目（最終日）です✨\n\n会場では美味しい模擬店や太鼓の演奏も実施されます！盆踊りは天気の状況次第です。\n\nご家族・ご友人と夏の思い出作りにぜひお越しください😊\n熱中症対策はお忘れなく！\n\n#杉並区 #松ノ木 #納涼大会 #夏祭り https://t.co/d0m6axmTvV",
+        "source_url": "https://x.com/Matsumoto_501/status/2081297060494758378",
+        "source_urls": [
+          "https://x.com/Matsumoto_501/status/2081297060494758378"
+        ],
+        "voice": {
+          "account": "@Matsumoto_501",
+          "date": "2026-07-26T08:34:22+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2081296920157544449/img/0oItP0krQAbFAY42.jpg",
+            "https://t.co/d0m6axmTvV",
+            "pic.x.com/d0m6axmTvV"
+          ],
+          "name": "松本浩一 杉並区議会議員 立憲民主党",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【本日7/26(日)開催🏮】松本浩一です！\n\n『松ノ木地域納涼大会』本日2日目（最終日）です✨\n\n会場では美味しい模擬店や太鼓の演奏も実施されます！盆踊りは天気の状況次第です。\n\nご家族・ご友人と夏の思い出作りにぜひお越しください😊\n熱中症対策はお忘れなく！\n\n#杉並区 #松ノ木 #納涼大会 #夏祭り https://t.co/d0m6axmTvV",
+          "title": "",
+          "tweet_id": "2081297060494758378",
+          "url": "https://x.com/Matsumoto_501/status/2081297060494758378"
         }
       }
     },
