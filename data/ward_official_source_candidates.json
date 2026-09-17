@@ -1,16 +1,15 @@
 {
   "schema_version": 1,
   "generated_by": "scan_ward_official_sources.py",
-  "generated_at": "2026-09-10T11:43:29.913820+00:00",
+  "generated_at": "2026-09-17T12:03:58.500825+00:00",
   "target_year": 2026,
   "safety_boundary": "official-source review candidates only; no canonical or public event write",
   "canonical_write_count": 0,
   "registry_source_count": 21,
-  "candidate_count": 178,
+  "candidate_count": 177,
   "ward_counts": {
     "大田区": 1,
     "江戸川区": 24,
-    "荒川区": 1,
     "葛飾区": 4,
     "足立区": 148
   },
@@ -169,7 +168,7 @@
       "source_registry_id": "toshima-event-calendar",
       "ward": "豊島区",
       "url": "https://www.city.toshima.lg.jp/cgi-bin/event_cal/calendar.cgi",
-      "checked_count": 10,
+      "checked_count": 8,
       "confirmed_count": 0,
       "structured_candidate_count": 0,
       "page_fallback_count": 0,
@@ -190,10 +189,10 @@
       "ward": "荒川区",
       "url": "https://www.city.arakawa.tokyo.jp/a009/chiikikatsudou/tyoukai/choukaikoukanbin.html",
       "checked_count": 3,
-      "confirmed_count": 1,
+      "confirmed_count": 0,
       "structured_candidate_count": 0,
-      "page_fallback_count": 1,
-      "status": "confirmed"
+      "page_fallback_count": 0,
+      "status": "no_bon_context_found"
     },
     {
       "source_registry_id": "arakawa-koho",
@@ -209,7 +208,7 @@
       "source_registry_id": "nerima-tsunagaru-festa",
       "ward": "練馬区",
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/tunafes/reiwa6tunafes.html",
-      "checked_count": 3,
+      "checked_count": 4,
       "confirmed_count": 0,
       "structured_candidate_count": 0,
       "page_fallback_count": 0,
@@ -847,25 +846,6 @@
       "source_row_index": 15
     },
     {
-      "id": "ward-official-edd37ad626e8b949",
-      "decision": "pending",
-      "suggested_source_type": "official",
-      "suggested_score": 90,
-      "reason": "区公式source registryから盆踊り文脈を発見",
-      "source_origin": "ward_official_source_registry",
-      "source_registry_id": "arakawa-community-circulars",
-      "source_url": "https://www.city.arakawa.tokyo.jp/a009/chiikikatsudou/tyoukai/choukaikoukanbin.html",
-      "source_domain": "www.city.arakawa.tokyo.jp",
-      "venue": "",
-      "event_name": "区から町会・自治会へのお知らせ／荒川区公式サイト",
-      "region": "荒川区",
-      "event_year": 2026,
-      "event_date_text": "2026-08-17",
-      "memo": "ward registry: arakawa-community-circulars / ージ > 地域活動・コミュニティ > 町会・自治会 > 区から町会・自治会へのお知らせ ページID：32711 更新日：2026年8月17日 ここから本文です。 区から町会・自治会へのお知らせ 町会掲示板や回覧板でお知らせしている内容をPDFデータで掲載します。（毎月10日頃更新） また、区と町会・自治会の情報交換の場として開催している会議の資料も掲載します。（毎月15日頃更新） 令和8年8月 チラシ・ポスター チラシ等一式（PDF：13,877KB） 防犯啓発チラシ（PDF：1,283KB） あらんてあ（PDF：18,374KB） 町会連合会会議資料 しばらくお待ちください 令和8年7月 チラシ・ポスター チラシ等一式（PDF：8,782KB） 防犯啓発チラシ（PDF：1,348KB） 受験生チャレンジポスター（PDF：332KB） 盆踊り大会ポスター（PDF：1,407KB） ころばん体操（PDF：214KB） エアコン助成（PDF：75KB） あらんてあ（PDF：5,283KB） 町会連合会会議資料 町会連合会定例会資料（PDF：3,587KB） 関連情報 荒川区防災地図（地震版 / 毎月10日前後の掲示・回覧PDFを監視する。",
-      "registry_source_type": "community",
-      "registry_format": "html_pdf"
-    },
-    {
       "id": "ward-official-5b4c7667426760a2",
       "decision": "pending",
       "suggested_source_type": "official",
@@ -924,7 +904,7 @@
       "region": "葛飾区",
       "event_year": 2026,
       "event_date_text": "",
-      "memo": "ward registry: katsushika-neighborhood-associations / 会連合会に属する自治町会 2 対象事業 （1） 地域活性化の取組 （1）-1 子育て世代や若年世代との関係づくり 〔例〕盆踊り、子どもまつり、季節のまつり、餅つき等 子育て・若者世代を含む地域住民全体を対象としたイベント、子ども会のイベントをサポート、 イベント実施の担い手として若年世代を勧誘等 （1）-2 自治町会活動を知ってもらう取組 〔例〕レクリエーション交流会、防災フェスタ等 イベント開催時の自治町会活動PR、町会だよりの発行等 （2） 運営改善の取組 （2）-1 負担軽減の取組 〔例〕事務局業務・会計事務・補助金申請事務の委託、運営改善提案委託、テント・やぐら設営委託、 資源ごみ集団回収運搬委託、運搬用台車購入等 （2）-2 事務事業の標準化 〔例〕会議・行事の運営マニュアルの作成等 （3） デジタル化の取組 （3）-1 新たに行うデジタル技術を活用した事業（新規事業） （3）-2 自らの活動目的のために既に行っているデジタル技術を活用した事業（既存事業） 〔例〕タブレット端末・パソコン・モバイルルーター等の危機の購入又はリースに要する経費、 システムの調達及びWebサービス / 自治町会のデジタル発信への公式導線として使う。",
+      "memo": "ward registry: katsushika-neighborhood-associations / 会連合会に属する自治町会 2 対象事業 （1） 地域活性化の取組 （1）-1 子育て世代や若年世代との関係づくり 〔例〕盆踊り、子どもまつり、季節のまつり、餅つき等 子育て・若者世代を含む地域住民全体を対象としたイベント、子ども会のイベントをサポート、 イベント実施の担い手として若年世代を勧誘等 （1）-2 自治町会活動を知ってもらう取組 〔例〕レクリエーション交流会、防災フェスタ等 イベント開催時の自治町会活動PR、町会だよりの発行等 （2） 運営改善の取組 （2）-1 負担軽減の取組 〔例〕事務局業務・会計事務・補助金申請事務の委託、運営改善提案委託、テント・やぐら設営委託、 資源ごみ集団回収運搬委託、運搬用台車購入等 （2）-2 事務事業の標準化 〔例〕会議・行事の運営マニュアルの作成等 （3） デジタル化の取組 （3）-1 新たに行うデジタル技術を活用した事業（新規事業） （3）-2 自らの活動目的のために既に行っているデジタル技術を活用した事業（既存事業） 〔例〕タブレット端末・パソコン・モバイルルーター等の機器の購入又はリースに要する経費、 システムの調達及びWebサービス / 自治町会のデジタル発信への公式導線として使う。",
       "registry_source_type": "community",
       "registry_format": "html"
     },

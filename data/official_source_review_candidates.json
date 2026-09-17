@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T11:41:48.583335+00:00",
+  "generated_at": "2026-09-17T12:02:29.759386+00:00",
   "generated_by": "build_official_source_review.py",
   "review_policy": {
     "decision_values": [
@@ -17,16 +17,16 @@
   },
   "source_counts": {
     "official": 102,
-    "hp": 81,
-    "post": 10
+    "hp": 82,
+    "post": 11
   },
-  "candidate_count": 193,
+  "candidate_count": 195,
   "decision_counts": {
-    "pending": 187,
+    "pending": 189,
     "hold": 2,
     "official": 4
   },
-  "preserved_decision_count": 15,
+  "preserved_decision_count": 191,
   "rows": [
     {
       "id": "4649f4cf3db5",
@@ -2192,7 +2192,7 @@
       "memo": "「 新中野祭事会 氷川・天神両杜御祭禮 奉納踊り」 9月18日(金)-20日(日) 18:00-21:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00n-nakano-q.html"
     },
     {
-      "id": "97270ef7b456",
+      "id": "a4c1f60e1d5d",
       "decision": "pending",
       "suggested_source_type": "hp",
       "suggested_score": 50,
@@ -2202,12 +2202,12 @@
       "source_domain": "pc.tamemap.net",
       "already_registered": false,
       "venue": "本一公園",
-      "event_name": "「相生まつり 盆踊り・夜店」9月11日(金)-12日(土) 17:00-21:00。",
+      "event_name": "【お知らせ】",
       "region": "中野区",
       "scale": "中",
       "event_month": "9月",
-      "event_date_text": "2026 [N11]\n9/11 - 12",
-      "memo": "「相生まつり 盆踊り・夜店」9月11日(金)-12日(土) 17:00-21:00。\n・踊りの時間詳細不明(2018年、2019年の踊りは19:00-)。\n＊主催:相生まつり実行委員会、本一相生町会青年部\n＊9/4(金)-5(土)開催予定でしたが荒天予想のため延期となったイベントです。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00n-nakano-q.html"
+      "event_date_text": "2026 [N10]\n9/4-5 --",
+      "memo": "【お知らせ】\n「相生まつり 盆踊り・夜店」9月4日(金)-5日(土) 17:00-21:00。\n・踊りの時間詳細不明(2018年、2019年の踊りは19:00-)。\n＊主催:相生まつり実行委員会、本一相生町会青年部\n→荒天予想のため、9月11日(金)-12日(土) に延期となりました。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00n-nakano-q.html"
     },
     {
       "id": "c822416af02c",
@@ -2334,24 +2334,6 @@
       "event_month": "7月",
       "event_date_text": "2026 [K7]\n7/25",
       "memo": "大森邦西町会「盆踊り大会」7月25日(土) 17:30-20:30。\n(7/25昼掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html"
-    },
-    {
-      "id": "1cbe6bbf9354",
-      "decision": "pending",
-      "suggested_source_type": "hp",
-      "suggested_score": 50,
-      "reason": "紹介HPまたは公式HP候補",
-      "source_origin": "blog_registration_candidates",
-      "source_url": "https://otakushoren.com/event/164607",
-      "source_domain": "otakushoren.com",
-      "already_registered": false,
-      "venue": "白山神社",
-      "event_name": "嶺町町会 「盆踊り大会」 7月25日(土)-26日(日) 18:50-",
-      "region": "大田区",
-      "scale": "小",
-      "event_month": "7月",
-      "event_date_text": "2026 [K10]\n7/25 - 26",
-      "memo": "嶺町町会 「盆踊り大会」 7月25日(土)-26日(日) 18:50- 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html"
     },
     {
       "id": "429b8e365441",
@@ -2782,8 +2764,26 @@
       "region": "大田区",
       "scale": "小",
       "event_month": "9月",
-      "event_date_text": "2026 [K42]\n9/26",
+      "event_date_text": "2026 [K43]\n9/26",
       "memo": "「安方神社 フェス＆盆ダンス」 9月26日(土)。\n・16:00-19:30 フェス。\n・19:30-20:30 盆ダンス。\n＊小雨決行。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html"
+    },
+    {
+      "id": "66f27c2125df",
+      "decision": "pending",
+      "suggested_source_type": "hp",
+      "suggested_score": 50,
+      "reason": "紹介HPまたは公式HP候補",
+      "source_origin": "blog_registration_candidates",
+      "source_url": "https://otakushoren.com/event/166805",
+      "source_domain": "otakushoren.com",
+      "already_registered": false,
+      "venue": "矢口氷川神社",
+      "event_name": "氷川神社「盆踊り大会」 9月25日(金)-26日(日) 19:00-(例年21:00まで)。",
+      "region": "大田区",
+      "scale": "小",
+      "event_month": "9月",
+      "event_date_text": "2026 [K42]\n9/25 - 26",
+      "memo": "氷川神社「盆踊り大会」 9月25日(金)-26日(日) 19:00-(例年21:00まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html"
     },
     {
       "id": "8210e7c6d84e",
@@ -3125,7 +3125,25 @@
       "scale": "小",
       "event_month": "9月",
       "event_date_text": "2026 [V50]\n9/11 - 12",
-      "memo": "祟敬会・原町会 「原稲荷神社例大祭 奉納おどり」 9月11日(金)-12日(土) 18:00-21:00(12日(土) は20:00まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00v-katsusika-q.html"
+      "memo": "祟敬会・原町会 「原稲荷神社例大祭 奉納おどり」 9月11日(金)-12日(土) 18:00-21:00(12日(土) は20:00まで)。\n(9/12朝 リンク「曲」を追記) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00v-katsusika-q.html"
+    },
+    {
+      "id": "bd84a2b5d482",
+      "decision": "pending",
+      "suggested_source_type": "hp",
+      "suggested_score": 50,
+      "reason": "紹介HPまたは公式HP候補",
+      "source_origin": "blog_registration_candidates",
+      "source_url": "https://mugendaiko.com/history",
+      "source_domain": "mugendaiko.com",
+      "already_registered": false,
+      "venue": "立石七丁目公園",
+      "event_name": "立石仲町会「盆踊り」 9月12日(土)-13日(日) 18:30-20:30(両日)。",
+      "region": "葛飾区",
+      "scale": "中",
+      "event_month": "9月",
+      "event_date_text": "2026 [V52]\n9/12 - 13",
+      "memo": "立石仲町会「盆踊り」 9月12日(土)-13日(日) 18:30-20:30(両日)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00v-katsusika-q.html"
     },
     {
       "id": "e0cec96dbc3f",
@@ -3288,6 +3306,24 @@
       "event_month": "9月",
       "event_date_text": "2026 [L54]\n9/19",
       "memo": "「世田谷八幡宮例大祭 初日 民謡流し踊り」 9月19日(土)。\n・踊りの時間詳細不明(2019年は 19:00-21:00頃、一般参加可能)。\n・練習日(4) 9/4(金)、(5) 9/7(月)、(6) 9/14(月)。各19:30-21:00、要うちわ。情報元を参照。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html"
+    },
+    {
+      "id": "f78c50aca62f",
+      "decision": "pending",
+      "suggested_source_type": "post",
+      "suggested_score": 35,
+      "reason": "SNS投稿候補",
+      "source_origin": "blog_registration_candidates",
+      "source_url": "https://www.instagram.com/hanegi_chou/",
+      "source_domain": "www.instagram.com",
+      "already_registered": false,
+      "venue": "羽根木神社",
+      "event_name": "「羽根木神社 秋季例大祭」 9月26日(土)-27日(日)。",
+      "region": "世田谷区",
+      "scale": "小",
+      "event_month": "9月",
+      "event_date_text": "2026 [L56]\n9/26 - 27",
+      "memo": "「羽根木神社 秋季例大祭」 9月26日(土)-27日(日)。\n・26日(土) 18:00-20:45(19:00-19:45に小中学生向けビンゴ大会により中断)。\n・27日(日) 17:30-20:45。\nマツケンサンバ(道具あり)、ダンシングヒーロー、他。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html"
     },
     {
       "id": "e178bea665bc",

@@ -2,7 +2,7 @@
 
 - safety: official-source review candidates only; no canonical or public event write
 - registry sources: 21
-- candidates: 178
+- candidates: 177
 
 | 区 | ページ | URL | 日付候補 |
 |---|---|---|---|
@@ -31,7 +31,6 @@
 | 江戸川区 | 宿和会納涼盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月22日（土曜日） / 17時から |
 | 江戸川区 | 今井町会納涼盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 8月30日（日曜日） / 18時から / (29日から変更になりました。) |
 | 江戸川区 | 谷河内南町会盆踊り大会 | [link](https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html) | 10月3日（土曜日） / 15時から |
-| 荒川区 | 区から町会・自治会へのお知らせ／荒川区公式サイト | [link](https://www.city.arakawa.tokyo.jp/a009/chiikikatsudou/tyoukai/choukaikoukanbin.html) | 2026-08-17 |
 | 葛飾区 | 令和8年度夏まつり・盆踊り・イベント情報（令和8年9月2日現在） （PDF 346.9KB） | [link](https://www.city.katsushika.lg.jp/information/1030313/1028707.html) | 9月2日 |
 | 葛飾区 | 身近で活動しています！葛飾の自治町会｜葛飾区公式サイト | [link](https://www.city.katsushika.lg.jp/information/1030313/1033649.html) | 2026-05-13, 2026-12-29, 2026-01-03 |
 | 葛飾区 | 葛飾区地域力向上事業費助成金について｜葛飾区公式サイト | [link](https://www.city.katsushika.lg.jp/information/1030313/1036131.html) |  |

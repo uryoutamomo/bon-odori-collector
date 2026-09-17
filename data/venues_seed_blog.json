@@ -99,6 +99,15 @@
     "needs_review": true
   },
   {
+    "venue": "波除神社",
+    "region_hint": "中央区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "浜町公園",
     "region_hint": "中央区",
     "in_tsukiji_30min_guess": true,
@@ -153,6 +162,15 @@
     "needs_review": true
   },
   {
+    "venue": "ワテラス広場",
+    "region_hint": "千代田区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "和泉公園",
     "region_hint": "千代田区",
     "in_tsukiji_30min_guess": true,
@@ -163,6 +181,15 @@
   },
   {
     "venue": "商店街",
+    "region_hint": "千代田区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "外濠公園",
     "region_hint": "千代田区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -297,6 +324,15 @@
     "needs_review": true
   },
   {
+    "venue": "噴水前広場",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "山谷堀広場",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
@@ -342,6 +378,15 @@
     "needs_review": true
   },
   {
+    "venue": "池之端四丁目町会会館",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "田原小学校",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
@@ -370,6 +415,15 @@
   },
   {
     "venue": "谷中銀座商店街",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "隅田公園",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -801,15 +855,6 @@
     "needs_review": true
   },
   {
-    "venue": "天祖神社",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "小村井香取神社",
     "region_hint": "墨田区",
     "in_tsukiji_30min_guess": true,
@@ -955,15 +1000,6 @@
   },
   {
     "venue": "長浦神社",
-    "region_hint": "墨田区",
-    "in_tsukiji_30min_guess": true,
-    "source": "blogspot",
-    "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "隅田公園",
     "region_hint": "墨田区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -1324,6 +1360,24 @@
   },
   {
     "venue": "桜田公園",
+    "region_hint": "港区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "正面玄関前広場",
+    "region_hint": "港区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "泉岳寺",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -1917,6 +1971,15 @@
     "needs_review": true
   },
   {
+    "venue": "羽根木神社",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "芦花公園",
     "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
@@ -2439,7 +2502,7 @@
     "needs_review": true
   },
   {
-    "venue": "白山神社",
+    "venue": "矢口二丁目公園",
     "region_hint": "大田区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
@@ -2448,7 +2511,7 @@
     "needs_review": true
   },
   {
-    "venue": "矢口二丁目公園",
+    "venue": "矢口氷川神社",
     "region_hint": "大田区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
@@ -2574,6 +2637,15 @@
     "needs_review": true
   },
   {
+    "venue": "白山神社",
+    "region_hint": "文京区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "文京区の盆おどり情報 2026年1月より [Bunkyo-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "立柳町小学校",
     "region_hint": "文京区",
     "in_tsukiji_30min_guess": false,
@@ -2656,6 +2728,15 @@
   },
   {
     "venue": "大京町公園",
+    "region_hint": "新宿区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "天祖神社",
     "region_hint": "新宿区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
@@ -3006,6 +3087,15 @@
     "needs_review": true
   },
   {
+    "venue": "かぼちゃ公園",
+    "region_hint": "板橋区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "板橋区の盆おどり情報 2026年1月より [Itabashi-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "ハッピーロード大山商店街",
     "region_hint": "板橋区",
     "in_tsukiji_30min_guess": false,
@@ -3258,7 +3348,7 @@
     "needs_review": true
   },
   {
-    "venue": "板橋駅前本通り商店街",
+    "venue": "板谷公園",
     "region_hint": "板橋区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
@@ -3267,7 +3357,7 @@
     "needs_review": true
   },
   {
-    "venue": "板谷公園",
+    "venue": "氷川神社",
     "region_hint": "板橋区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
@@ -4275,15 +4365,6 @@
     "needs_review": true
   },
   {
-    "venue": "氷川神社",
-    "region_hint": "渋谷区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "渋谷区の盆おどり情報 2026年1月より [Shibuya-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
     "venue": "渋谷氷川神社",
     "region_hint": "渋谷区",
     "in_tsukiji_30min_guess": false,
@@ -4906,6 +4987,15 @@
   },
   {
     "venue": "砂原第一公園",
+    "region_hint": "葛飾区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "葛飾区の盆おどり情報 2026年1月より [Katsusika-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "立石七丁目公園",
     "region_hint": "葛飾区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",

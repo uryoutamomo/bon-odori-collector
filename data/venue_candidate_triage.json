@@ -1,7 +1,7 @@
 {
   "counts": {
     "registered_alias": 15,
-    "research": 523,
+    "research": 533,
     "registered": 83,
     "noise": 10
   },
@@ -327,6 +327,17 @@
     },
     {
       "venue": "経堂小学校",
+      "region_hint": "世田谷区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "high",
+      "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
+      "venue": "羽根木神社",
       "region_hint": "世田谷区",
       "status": "research",
       "mapped_to": null,
@@ -810,7 +821,7 @@
       "in_tsukiji_30min_guess": false
     },
     {
-      "venue": "白山神社",
+      "venue": "矢口二丁目公園",
       "region_hint": "大田区",
       "status": "research",
       "mapped_to": null,
@@ -821,7 +832,7 @@
       "in_tsukiji_30min_guess": false
     },
     {
-      "venue": "矢口二丁目公園",
+      "venue": "矢口氷川神社",
       "region_hint": "大田区",
       "status": "research",
       "mapped_to": null,
@@ -2130,6 +2141,17 @@
       "in_tsukiji_30min_guess": false
     },
     {
+      "venue": "立石七丁目公園",
+      "region_hint": "葛飾区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "high",
+      "source_title": "葛飾区の盆おどり情報 2026年1月より [Katsusika-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00v-katsusika-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
       "venue": "立石諏訪神社",
       "region_hint": "葛飾区",
       "status": "research",
@@ -2493,6 +2515,17 @@
       "in_tsukiji_30min_guess": true
     },
     {
+      "venue": "波除神社",
+      "region_hint": "中央区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "中央区の盆おどり情報 2026年1月より [Chuo-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00b-chuo-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
       "venue": "箱崎公園",
       "region_hint": "中央区",
       "status": "research",
@@ -2614,7 +2647,29 @@
       "in_tsukiji_30min_guess": false
     },
     {
+      "venue": "ワテラス広場",
+      "region_hint": "千代田区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00a-chiyoda-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
       "venue": "和泉公園",
+      "region_hint": "千代田区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "千代田区の盆おどり情報 2026年1月より [Chiyoda-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00a-chiyoda-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "外濠公園",
       "region_hint": "千代田区",
       "status": "research",
       "mapped_to": null,
@@ -2735,6 +2790,17 @@
       "in_tsukiji_30min_guess": true
     },
     {
+      "venue": "噴水前広場",
+      "region_hint": "台東区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00f-taito-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
       "venue": "山谷堀広場",
       "region_hint": "台東区",
       "status": "research",
@@ -2747,6 +2813,17 @@
     },
     {
       "venue": "池之端七倉稲荷神社",
+      "region_hint": "台東区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00f-taito-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "池之端四丁目町会会館",
       "region_hint": "台東区",
       "status": "research",
       "mapped_to": null,
@@ -3197,6 +3274,17 @@
       "in_tsukiji_30min_guess": false
     },
     {
+      "venue": "白山神社",
+      "region_hint": "文京区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "文京区の盆おどり情報 2026年1月より [Bunkyo-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00e-bunkyo-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
       "venue": "立柳町小学校",
       "region_hint": "文京区",
       "status": "research",
@@ -3615,6 +3703,17 @@
       "in_tsukiji_30min_guess": false
     },
     {
+      "venue": "かぼちゃ公園",
+      "region_hint": "板橋区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "板橋区の盆おどり情報 2026年1月より [Itabashi-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00s-itabashi-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
       "venue": "ハッピーロード大山商店街",
       "region_hint": "板橋区",
       "status": "research",
@@ -3912,7 +4011,7 @@
       "in_tsukiji_30min_guess": false
     },
     {
-      "venue": "板橋駅前本通り商店街",
+      "venue": "板谷公園",
       "region_hint": "板橋区",
       "status": "research",
       "mapped_to": null,
@@ -3923,7 +4022,7 @@
       "in_tsukiji_30min_guess": false
     },
     {
-      "venue": "板谷公園",
+      "venue": "氷川神社",
       "region_hint": "板橋区",
       "status": "research",
       "mapped_to": null,
@@ -4550,17 +4649,6 @@
       "in_tsukiji_30min_guess": false
     },
     {
-      "venue": "氷川神社",
-      "region_hint": "渋谷区",
-      "status": "research",
-      "mapped_to": null,
-      "reason": "",
-      "priority": "normal",
-      "source_title": "渋谷区の盆おどり情報 2026年1月より [Shibuya-q]",
-      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00m-shibuya-q.html",
-      "in_tsukiji_30min_guess": false
-    },
-    {
       "venue": "渋谷氷川神社",
       "region_hint": "渋谷区",
       "status": "research",
@@ -4672,6 +4760,28 @@
     },
     {
       "venue": "御田八幡神社",
+      "region_hint": "港区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00c-minato-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "正面玄関前広場",
+      "region_hint": "港区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00c-minato-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "泉岳寺",
       "region_hint": "港区",
       "status": "research",
       "mapped_to": null,
@@ -6178,6 +6288,17 @@
       "in_tsukiji_30min_guess": true
     },
     {
+      "venue": "隅田公園",
+      "region_hint": "台東区",
+      "status": "registered",
+      "mapped_to": "隅田公園",
+      "reason": "exact_match",
+      "priority": "skip",
+      "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00f-taito-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
       "venue": "しながわ中央公園",
       "region_hint": "品川区",
       "status": "registered",
@@ -6435,17 +6556,6 @@
       "region_hint": "墨田区",
       "status": "registered",
       "mapped_to": "錦糸公園",
-      "reason": "exact_match",
-      "priority": "skip",
-      "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00g-sumida-q.html",
-      "in_tsukiji_30min_guess": true
-    },
-    {
-      "venue": "隅田公園",
-      "region_hint": "墨田区",
-      "status": "registered",
-      "mapped_to": "隅田公園",
       "reason": "exact_match",
       "priority": "skip",
       "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
@@ -6860,17 +6970,6 @@
       "in_tsukiji_30min_guess": true
     },
     {
-      "venue": "天祖神社",
-      "region_hint": "墨田区",
-      "status": "registered_alias",
-      "mapped_to": "六本木天祖神社",
-      "reason": "known_alias",
-      "priority": "skip",
-      "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00g-sumida-q.html",
-      "in_tsukiji_30min_guess": true
-    },
-    {
       "venue": "江東亀戸天祖神社",
       "region_hint": "墨田区",
       "status": "registered_alias",
@@ -6880,6 +6979,17 @@
       "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
       "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00g-sumida-q.html",
       "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "天祖神社",
+      "region_hint": "新宿区",
+      "status": "registered_alias",
+      "mapped_to": "六本木天祖神社",
+      "reason": "known_alias",
+      "priority": "skip",
+      "source_title": "新宿区の盆おどり情報 2026年1月より [Shinjuku-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00d-shinjuku-q.html",
+      "in_tsukiji_30min_guess": false
     },
     {
       "venue": "アーク・カラヤン広場",
