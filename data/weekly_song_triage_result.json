@@ -25,22 +25,6 @@
       "dry_run": true
     },
     {
-      "song_name": "新宿花園町会納涼踊り",
-      "source_term": "新宿花園町会納涼踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "朝顔音頭",
-      "source_term": "朝顔音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
       "song_name": "東京谷端さくら音頭",
       "source_term": "東京谷端さくら音頭",
       "target": "create",
@@ -59,6 +43,22 @@
     {
       "song_name": "西新井大師音頭",
       "source_term": "西新井大師音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "新宿花園町会納涼踊り",
+      "source_term": "新宿花園町会納涼踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "朝顔音頭",
+      "source_term": "朝顔音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
