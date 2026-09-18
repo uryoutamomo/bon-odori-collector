@@ -1,7 +1,7 @@
 # 低信頼バックフィル候補レビュー
 
 - source: data/youtube_year_backfill_candidates.json
-- rows: 18
+- rows: 19
 - decided_in_rows: 12
 - decisions_total: 16
 
@@ -25,3 +25,4 @@
 |  | hold | 2024 | 2024-08-14 | 納涼盆踊り大会 | 駒沢緑泉公園 | 1 | 1 | 1 | 【浦安 納涼盆踊り大会 2024】「花火音頭」- 橋幸夫 / 浦安小学校 盆踊り 新二十一世紀音頭 https://www.youtube.com/watch?v=TUpDtzeudLE |  |
 |  | hold | 2024 | 2024-09-21 | 納涼盆踊り大会 | 駒沢緑泉公園 | 1 | 1 | 0 | サザエさんの街でサザエさんのねぶた！桜新町 ねぶたまつり 2024 ねぷた Tokyo,Sakura-shinmachi Nebuta Festival https://www.youtube.com/watch?v=M7yLsNcqLbc |  |
 | reject | hold | 2024 | 2024-07-24 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 1 | 1 | 1 | 自由が丘納涼 盆踊り大会【地モトNEWS】2024/7/24放送 https://www.youtube.com/watch?v=qNhz2yoaBL0 | 地モトNEWSの放送日が検出されており、自由が丘2024開催日は既に2024-07-13〜15として高めの証拠で整理済み |
+|  | hold | 2024 | 2024-08-11 | 飛鳥山盆踊り | 飛鳥山公園 | 1 | 1 | 1 | 【王子 飛鳥山盆踊り】「Bling-Bang-Bang-Born」- Creepy Nuts / Asukayama Park Bon Dance Festival　盆踊り https://www.youtube.com/watch?v=MxafwsgxQnY |  |

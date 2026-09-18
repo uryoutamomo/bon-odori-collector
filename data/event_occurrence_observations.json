@@ -1,14 +1,14 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-09-17T22:42:05.095954+00:00",
+  "generated_at": "2026-09-18T22:19:54.172695+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
   },
   "summary": {
-    "observation_count": 62,
+    "observation_count": 63,
     "series_count": 35,
-    "source_video_count": 757,
+    "source_video_count": 760,
     "observed_years": [
       "2023",
       "2024",
@@ -17,12 +17,12 @@
     ],
     "observations_by_year": {
       "2023": 18,
-      "2024": 20,
+      "2024": 21,
       "2025": 22,
       "2026": 2
     },
     "series_with_3year_window": 4,
-    "observations_with_songs": 37,
+    "observations_with_songs": 38,
     "active_review_skipped": {
       "missing_event_venue_or_date": 3665
     },
@@ -33,10 +33,10 @@
       }
     },
     "backfill_apply": {
-      "added": 0,
+      "added": 1,
       "updated": 38,
       "source": "data/event_occurrence_backfill_plan.json",
-      "source_observation_count": 38
+      "source_observation_count": 39
     }
   },
   "series": [
@@ -45,11 +45,14 @@
       "canonical_name": "飛鳥山盆踊り",
       "usual_venue": "飛鳥山公園",
       "observed_years": [
+        2024,
         2025
       ],
-      "observation_count": 2,
+      "observation_count": 3,
       "has_3year_window": false,
-      "song_years": []
+      "song_years": [
+        2024
+      ]
     },
     {
       "series_key": "065d5830a8cc",
@@ -5588,6 +5591,82 @@
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "observed"
+        }
+      ]
+    },
+    {
+      "observation_id": "97f9eb6d7ed0b47c",
+      "series_key": "00083613a8ec",
+      "event_name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "year": 2024,
+      "date_start": "2024-04-21",
+      "date_end": "2024-04-21",
+      "observed_dates": [
+        "2024-04-21"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 3,
+      "source_channels": [
+        "盆踊りチャンネル"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=VXBDiUzqjtY",
+          "video_id": "VXBDiUzqjtY",
+          "title": "【少年八木節】　2024年4月21日第13回飛鳥山公園盆踊り会９　東京都北区",
+          "channel": "盆踊りチャンネル",
+          "published_at": "2024-04-26T09:30:09Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hxKU9jZC700",
+          "video_id": "hxKU9jZC700",
+          "title": "江戸っ子囃子　2024年4月21日第13回飛鳥山公園盆踊り会12　東京都北区",
+          "channel": "盆踊りチャンネル",
+          "published_at": "2024-04-28T09:00:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XDdtZWgdZt0",
+          "video_id": "XDdtZWgdZt0",
+          "title": "飛鳥山音頭　2024年4月21日第13回飛鳥山公園盆踊り会７　東京都北区",
+          "channel": "盆踊りチャンネル",
+          "published_at": "2024-04-25T09:30:06Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "少年八木節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=VXBDiUzqjtY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "江戸っ子囃子",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=hxKU9jZC700"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "飛鳥山音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=XDdtZWgdZt0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
         }
       ]
     },

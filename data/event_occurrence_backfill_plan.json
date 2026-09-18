@@ -1,18 +1,18 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-09-17T22:42:04.993959+00:00",
+  "generated_at": "2026-09-18T22:19:54.049225+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
-    "observation_count": 38,
-    "source_video_count": 200,
+    "observation_count": 39,
+    "source_video_count": 203,
     "observations_by_year": {
       "2023": 18,
-      "2024": 20
+      "2024": 21
     },
-    "observations_with_songs": 34,
+    "observations_with_songs": 35,
     "manual_accepted_low_observation_count": 4,
-    "excluded_low_observation_count": 18,
-    "excluded_low_source_video_count": 22
+    "excluded_low_observation_count": 19,
+    "excluded_low_source_video_count": 23
   },
   "observations": [
     {
@@ -5093,6 +5093,82 @@
           "confidence": "observed"
         }
       ]
+    },
+    {
+      "observation_id": "97f9eb6d7ed0b47c",
+      "series_key": "00083613a8ec",
+      "event_name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "year": 2024,
+      "date_start": "2024-04-21",
+      "date_end": "2024-04-21",
+      "observed_dates": [
+        "2024-04-21"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 3,
+      "source_channels": [
+        "盆踊りチャンネル"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=VXBDiUzqjtY",
+          "video_id": "VXBDiUzqjtY",
+          "title": "【少年八木節】　2024年4月21日第13回飛鳥山公園盆踊り会９　東京都北区",
+          "channel": "盆踊りチャンネル",
+          "published_at": "2024-04-26T09:30:09Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hxKU9jZC700",
+          "video_id": "hxKU9jZC700",
+          "title": "江戸っ子囃子　2024年4月21日第13回飛鳥山公園盆踊り会12　東京都北区",
+          "channel": "盆踊りチャンネル",
+          "published_at": "2024-04-28T09:00:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XDdtZWgdZt0",
+          "video_id": "XDdtZWgdZt0",
+          "title": "飛鳥山音頭　2024年4月21日第13回飛鳥山公園盆踊り会７　東京都北区",
+          "channel": "盆踊りチャンネル",
+          "published_at": "2024-04-25T09:30:06Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "少年八木節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=VXBDiUzqjtY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "江戸っ子囃子",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=hxKU9jZC700"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "飛鳥山音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=XDdtZWgdZt0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
     }
   ],
   "excluded_low_observations": [
@@ -6011,6 +6087,48 @@
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "observed"
+        }
+      ]
+    },
+    {
+      "observation_id": "e9cbea4c1b865c7e",
+      "series_key": "00083613a8ec",
+      "event_name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "year": 2024,
+      "date_start": "2024-08-11",
+      "date_end": "2024-08-11",
+      "observed_dates": [
+        "2024-08-11"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 1,
+      "source_channels": [
+        "Urban Walk"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=MxafwsgxQnY",
+          "video_id": "MxafwsgxQnY",
+          "title": "【王子 飛鳥山盆踊り】「Bling-Bang-Bang-Born」- Creepy Nuts / Asukayama Park Bon Dance Festival　盆踊り",
+          "channel": "Urban Walk",
+          "published_at": "2024-08-14T01:00:10Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "Bling-Bang-Bang-Born",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=MxafwsgxQnY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
         }
       ]
     }

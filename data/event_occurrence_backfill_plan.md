@@ -1,10 +1,10 @@
 # 年次開催回バックフィル追加プラン
 
-- 生成: 2026-09-17T22:42:04.993959+00:00
-- observation_count: 38
-- source_video_count: 200
-- observations_with_songs: 34
-- excluded_low_observation_count: 18
+- 生成: 2026-09-18T22:19:54.049225+00:00
+- observation_count: 39
+- source_video_count: 203
+- observations_with_songs: 35
+- excluded_low_observation_count: 19
 
 | confidence | year | date | event | venue | videos | channels | songs |
 | --- | ---: | --- | --- | --- | ---: | ---: | ---: |
@@ -46,3 +46,4 @@
 | medium | 2024 | 2024-08-09 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 8 | 1 | 10 |
 | high | 2024 | 2024-07-25〜2024-07-26 | 赤坂浄土寺盆踊り大会 | 浄土寺 | 7 | 3 | 11 |
 | high | 2024 | 2024-06-14 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 11 | 3 | 3 |
+| medium | 2024 | 2024-04-21 | 飛鳥山盆踊り | 飛鳥山公園 | 3 | 1 | 3 |

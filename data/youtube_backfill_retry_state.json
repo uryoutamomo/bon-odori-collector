@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-17T22:42:04.850004+00:00",
+  "updated_at": "2026-09-18T22:19:53.945264+00:00",
   "attempts": {
     "youtube-year-backfill:0454aac7cd9268b6": {
       "attempt_count": 0,
@@ -451,12 +451,12 @@
       "last_result": "no_yield"
     },
     "youtube-year-backfill:5d621815eb017848": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
-      "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 0,
+      "consecutive_no_yield": 1,
+      "last_result": "no_yield"
     },
     "youtube-year-backfill:5e5f0c26bcc43343": {
       "attempt_count": 0,
@@ -555,12 +555,12 @@
       "last_result": "no_yield"
     },
     "youtube-year-backfill:6d89cba1356d49ef": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 8,
       "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "last_result": "new_candidates"
     },
     "youtube-year-backfill:6db0ecf647ca99c3": {
       "attempt_count": 1,
@@ -683,12 +683,12 @@
       "last_result": "bootstrap_existing"
     },
     "youtube-year-backfill:951bd3f3ec631ab9": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 7,
       "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "last_result": "new_candidates"
     },
     "youtube-year-backfill:962de78a1821ca84": {
       "attempt_count": 1,
@@ -763,12 +763,12 @@
       "last_result": "no_yield"
     },
     "youtube-year-backfill:a2050ee9324f2232": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 5,
       "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "last_result": "new_candidates"
     },
     "youtube-year-backfill:a44c8b218c309ef3": {
       "attempt_count": 0,
@@ -1011,12 +1011,12 @@
       "last_result": "bootstrap_existing"
     },
     "youtube-year-backfill:cfa284cec3c4474b": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 6,
       "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "last_result": "new_candidates"
     },
     "youtube-year-backfill:d2e9901cbde9e55a": {
       "attempt_count": 0,
@@ -1027,12 +1027,12 @@
       "last_result": "bootstrap_existing"
     },
     "youtube-year-backfill:d3162970b8c87ea4": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 6,
       "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "last_result": "new_candidates"
     },
     "youtube-year-backfill:d424afab54d4ffc5": {
       "attempt_count": 0,
@@ -1259,12 +1259,12 @@
       "last_result": "bootstrap_existing"
     },
     "youtube-year-backfill:f2c264b6fa352911": {
-      "attempt_count": 0,
-      "last_attempted_on": "2026-08-17",
-      "next_retry_on": "2026-09-16",
-      "last_new_candidate_count": null,
+      "attempt_count": 1,
+      "last_attempted_on": "2026-09-19",
+      "next_retry_on": "2026-10-19",
+      "last_new_candidate_count": 2,
       "consecutive_no_yield": 0,
-      "last_result": "bootstrap_existing"
+      "last_result": "new_candidates"
     },
     "youtube-year-backfill:f5f2d06d4bbfaeeb": {
       "attempt_count": 1,
