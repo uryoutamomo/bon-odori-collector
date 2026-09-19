@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-19T11:12:41.268963+00:00",
+  "generated_at": "2026-09-19T11:14:47.061574+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -16683,6 +16683,53 @@
       }
     },
     {
+      "inbox_id": "inbox_cce43bdfeb8f677e",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ゆかた音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:ゆかた音頭",
+      "source_url": "https://www.youtube.com/watch?v=bxWX-KxRIWQ",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8db23b7283a4bdc5e7b6925efb1b6e5796f12c1874f9973a755138bdf9af2f3c",
+      "last_seen_at": "github-35438758488-1-daily_song_candidate",
+      "created_at": "2026-08-10T09:33:14.602009+00:00",
+      "updated_at": "2026-09-19T11:12:56.051612+00:00",
+      "payload": {
+        "canonical_song_name": "ゆかた音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+            "date": "2026-09-19T02:08:23+00:00",
+            "text": "#大東京音頭 #炭坑節 #盆踊り #八木節 #ゆかた音頭 #ワテラス盆踊り 【ワテラス盆踊り2026】 開催日時：9/18(金) 17:00～21:00、9/19(土) 15:00～20:00 開催場所：ワテラス広場、淡路公園 00:00 大東京音頭 03:09 炭坑節 06:24 八木節 09:31 郡上節 かわさき 12:51 ゆかた音頭 ------------------------------------------------------------------------- 「ジンギスカン」Dschinghis Khan https://youtu.be/OY4Ty2ungIQ 「プレイバックPart2」山口百恵 https://youtu.be/xai9QqOy6EU 「U.S.A.」DA PUMP https://youtu.be/FH0NHomd6Ww",
+            "url": "https://www.youtube.com/watch?v=bxWX-KxRIWQ"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "#大東京音頭 #炭坑節 #盆踊り #八木節 #ゆかた音頭 #ワテラス盆踊り 【ワテラス盆踊り2026】 開催日時：9/18(金) 17:00～21:00、9/19(土) 15:00～20:00 開催場所：ワテラス広場、淡路公園 00:00 大東京音頭 03:09 炭坑節 06:24 八木節 09:31 郡上節 かわさき 12:51 ゆかた音頭 ------------------------------------------------------------------------- 「ジンギスカン」Dschinghis Khan https://youtu.be/OY4Ty2ungIQ 「プレイバックPart2」山口百恵 https://youtu.be/xai9QqOy6EU 「U.S.A.」DA PUMP https://youtu.be/FH0NHomd6Ww",
+        "evidence_url": "https://www.youtube.com/watch?v=bxWX-KxRIWQ",
+        "interpretation": "ゆかた音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "ゆかた音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_132f4a555b35e617",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -30088,53 +30135,6 @@
         "interpretation": "まんまる音頭",
         "reason": "曲名抽出器で検出: song_suffix_near_context",
         "term": "まんまる音頭",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
-      }
-    },
-    {
-      "inbox_id": "inbox_cce43bdfeb8f677e",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "ゆかた音頭",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:ゆかた音頭",
-      "source_url": "https://x.com/mackn_mackn/status/2087908253393105183",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "d72b32aba72405c8f12e7e6f3cab43c193ad3404625bb353660032d0dc1a72b4",
-      "last_seen_at": "github-31781390550-1-daily_song_candidate",
-      "created_at": "2026-08-10T09:33:14.602009+00:00",
-      "updated_at": "2026-08-14T08:16:04.595973+00:00",
-      "payload": {
-        "canonical_song_name": "ゆかた音頭",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@mackn_mackn",
-            "date": "2026-08-13T14:24:53+00:00",
-            "text": "明日から短い夏休み。雷雨をBGMに盆踊りの自主練習。 椿音頭 ゆかた音頭 まんまる音頭 鞠と殿様 令和音頭 月島音頭",
-            "url": "https://x.com/mackn_mackn/status/2087908253393105183"
-          }
-        ],
-        "evidence_count": 1,
-        "evidence_text": "明日から短い夏休み。雷雨をBGMに盆踊りの自主練習。 椿音頭 ゆかた音頭 まんまる音頭 鞠と殿様 令和音頭 月島音頭",
-        "evidence_url": "https://x.com/mackn_mackn/status/2087908253393105183",
-        "interpretation": "ゆかた音頭",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "ゆかた音頭",
         "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
         "type": "曲名"
       }
