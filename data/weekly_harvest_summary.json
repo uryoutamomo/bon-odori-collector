@@ -1,19 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-18T11:22:00.019295+00:00",
+  "generated_at": "2026-09-19T11:06:47.666193+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-18T11:21:52.084130+00:00",
+  "source_generated_at": "2026-09-19T11:06:41.705078+00:00",
   "days": 3,
-  "voice_count": 54,
-  "candidate_count": 14,
+  "voice_count": 50,
+  "candidate_count": 12,
   "category_counts": {
-    "曲候補": 14
+    "曲候補": 12
   },
   "non_song_review_count": 0,
-  "song_candidate_count": 14,
-  "song_direct_dry_run_count": 12,
-  "song_review_count": 0,
-  "song_rejected_noise_count": 2,
+  "song_candidate_count": 12,
+  "song_direct_dry_run_count": 10,
+  "song_review_count": 1,
+  "song_rejected_noise_count": 1,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -26,6 +26,8 @@
   ],
   "samples": {
     "non_song_review": [],
-    "song_review": []
+    "song_review": [
+      "ゆかた音頭"
+    ]
   }
 }

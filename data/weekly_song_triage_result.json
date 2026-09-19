@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 14,
-  "direct_count": 12,
-  "created_count": 9,
-  "updated_count": 3,
-  "rejected_noise_count": 2,
-  "review_count": 0,
+  "song_candidate_count": 12,
+  "direct_count": 10,
+  "created_count": 6,
+  "updated_count": 4,
+  "rejected_noise_count": 1,
+  "review_count": 1,
   "created": [
     {
       "song_name": "アンパンマン音頭",
@@ -49,35 +49,11 @@
       "dry_run": true
     },
     {
-      "song_name": "新宿花園町会納涼踊り",
-      "source_term": "新宿花園町会納涼踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "朝顔音頭",
       "source_term": "朝顔音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "第三回高一中央通り商店街阿波踊り",
-      "source_term": "第三回高一中央通り商店街阿波踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "阿波おどり",
-      "source_term": "阿波おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
       "dry_run": true
     }
   ],
@@ -99,6 +75,14 @@
       "dry_run": true
     },
     {
+      "song_name": "大東京音頭",
+      "source_term": "大東京音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "炭坑節",
       "source_term": "炭坑節",
       "target": "update",
@@ -111,11 +95,14 @@
     {
       "term": "入谷朝顔音頭踊り",
       "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "阿波踊り",
-      "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
-  "review": []
+  "review": [
+    {
+      "term": "ゆかた音頭",
+      "evidence_count": 1,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=bxWX-KxRIWQ"
+    }
+  ]
 }

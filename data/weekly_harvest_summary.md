@@ -1,18 +1,18 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-09-18T11:22:00.019295+00:00
+- 生成時刻: 2026-09-19T11:06:47.666193+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 54件
-- 候補総数: 14件
+- 対象voices: 50件
+- 候補総数: 12件
 
 ## 内訳
-- 曲候補: 14件
+- 曲候補: 12件
 
 ## レビュー対象
 - 用語・共起レビュー: 0件
-- 曲候補レビュー: 0件
-- 曲の明白候補 dry-run: 12件
-- 曲ノイズ除外: 2件
+- 曲候補レビュー: 1件
+- 曲の明白候補 dry-run: 10件
+- 曲ノイズ除外: 1件
 
 ## 生成物
 - non_song_json: `data/weekly_harvest_review_candidates.json`
@@ -23,3 +23,6 @@
 ## 反映コマンド
 - `python apply_weekly_song_review_decisions.py --dry-run`
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
+
+## 曲レビュー例
+- ゆかた音頭

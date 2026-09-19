@@ -1,92 +1,90 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "599eb7b16bea1ba2e29573ef1d820a1c93cc3b580728230464d5fa6ac07c5c9b",
-  "input_size_bytes": 2202289,
+  "input_sha256": "90f206196774964eb0822574173daecc7af6f4ccac3bc894bca4ad02b927567a",
+  "input_size_bytes": 2202603,
   "item_count": 5,
   "items": [
     {
       "kind": "x_gap",
       "domain": "X",
       "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【7/24-25 碑文谷公園盆踊り大会】\n雨予報を押し返し、今年も碑文谷公園盆踊り大会を2日間開催できました！\n\n2日目は天候を考慮して1時間早めの終了となりま",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "第２回晴海ふ頭公園盆踊り大会2026\n２日目✌️\n\nゆかたお直し会場で着崩れた浴衣のお直し。\n民族衣裳文化普及協会さん、素敵な帯にしてくださってありがとうござい",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081322111566856246",
-      "source_url": "https://x.com/take_a_chance23/status/2081322111566856246",
+      "source_key": "x:2076346727154815267",
+      "source_url": "https://x.com/tukishimanagaya/status/2076346727154815267",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_c1e435d8d81ec4ba",
-        "source_key": "x:2081322111566856246",
+        "candidate_id": "xgap_720a11df5400d57f",
+        "source_key": "x:2076346727154815267",
         "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/take_a_chance23/status/2081322111566856246",
-        "source_text": "\n【7/24-25 碑文谷公園盆踊り大会】\n雨予報を押し返し、今年も碑文谷公園盆踊り大会を2日間開催できました！\n\n2日目は天候を考慮して1時間早めの終了となりましたが、会場は最後まで子どもも大人も大にぎわい。\n\n私も運営のお手伝いをしながら、\n雄心と一緒に地域の皆さんと夏の思い出をつくることができました。\n\n開催を支えてくださった実行委員会、\n町会・自治会、ボランティアの皆さま、\nご来場いただいた皆さま、\n本当にありがとうございました。\n\nまた来年も碑文谷公園でお会いしましょう！\n\n#碑文谷公園\n#盆踊り\n#鷹番住区\n#中央町一丁目町会\n#竹村ゆうい",
-        "source_author": "@take_a_chance23",
+        "source_url": "https://x.com/tukishimanagaya/status/2076346727154815267",
+        "source_text": "\n第２回晴海ふ頭公園盆踊り大会2026\n２日目✌️\n\nゆかたお直し会場で着崩れた浴衣のお直し。\n民族衣裳文化普及協会さん、素敵な帯にしてくださってありがとうございました！🙏\n\n10/3(土)13時〜月島社会教育会館にてきものショーを開催👘\nステージモデルさん募集中とのこと。\nご興味ありましたらぜひ！ https://t.co/fM0yxtZSrv",
+        "source_author": "@tukishimanagaya",
         "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@take_a_chance23",
-          "account_name": "竹村 ゆうい【目黒区議会議員】",
-          "source_type": "official",
-          "trust_level": "organizer_official",
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@tukishimanagaya",
+          "account_name": "月島長屋",
+          "source_type": "",
+          "trust_level": "candidate",
           "reasons": [
-            "registered_official_source_account"
+            "schedule_post_with_bon_context"
           ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
+          "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "7/24",
-          "1時"
+          "10/3",
+          "13時"
         ],
-        "observed_dates": [],
-        "event_group_key": "",
+        "observed_dates": [
+          "2026-10-03"
+        ],
+        "event_group_key": "informal:fefee2bdf13bdae4",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@take_a_chance23",
-          "name": "竹村 ゆうい【目黒区議会議員】",
+          "account": "@tukishimanagaya",
+          "name": "月島長屋",
           "title": "",
-          "text": "【7/24-25 碑文谷公園盆踊り大会】\n雨予報を押し返し、今年も碑文谷公園盆踊り大会を2日間開催できました！\n\n2日目は天候を考慮して1時間早めの終了となりましたが、会場は最後まで子どもも大人も大にぎわい。\n\n私も運営のお手伝いをしながら、\n雄心と一緒に地域の皆さんと夏の思い出をつくることができました。\n\n開催を支えてくださった実行委員会、\n町会・自治会、ボランティアの皆さま、\nご来場いただいた皆さま、\n本当にありがとうございました。\n\nまた来年も碑文谷公園でお会いしましょう！\n\n#碑文谷公園\n#盆踊り\n#鷹番住区\n#中央町一丁目町会\n#竹村ゆうい",
-          "url": "https://x.com/take_a_chance23/status/2081322111566856246",
-          "date": "2026-07-26T10:13:55+00:00",
-          "tweet_id": "2081322111566856246",
+          "text": "第２回晴海ふ頭公園盆踊り大会2026\n２日目✌️\n\nゆかたお直し会場で着崩れた浴衣のお直し。\n民族衣裳文化普及協会さん、素敵な帯にしてくださってありがとうございました！🙏\n\n10/3(土)13時〜月島社会教育会館にてきものショーを開催👘\nステージモデルさん募集中とのこと。\nご興味ありましたらぜひ！ https://t.co/fM0yxtZSrv",
+          "url": "https://x.com/tukishimanagaya/status/2076346727154815267",
+          "date": "2026-07-12T16:43:31+00:00",
+          "tweet_id": "2076346727154815267",
           "tags": [
             "🟡関心",
-            "q-poster-flyer"
+            "q-venue"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOJXZbragAA7DoT.jpg",
-            "https://t.co/gP6O50HGME",
-            "pic.x.com/gP6O50HGME",
-            "https://pbs.twimg.com/media/HOJXZ-wasAA3u_7.jpg",
-            "https://pbs.twimg.com/media/HOJXahzacAAuhIb.jpg",
-            "https://pbs.twimg.com/media/HOJXbHwbAAAwGsu.jpg"
+            "https://pbs.twimg.com/media/HNCoQoUbcAAHVX1.jpg",
+            "https://t.co/fM0yxtZSrv",
+            "pic.x.com/fM0yxtZSrv",
+            "https://pbs.twimg.com/media/HNCoTnIbMAEF-Hf.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/take_a_chance23/status/2081322111566856246"
+          "https://x.com/tukishimanagaya/status/2076346727154815267"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HOJXZbragAA7DoT.jpg",
-          "https://t.co/gP6O50HGME",
-          "pic.x.com/gP6O50HGME",
-          "https://pbs.twimg.com/media/HOJXZ-wasAA3u_7.jpg",
-          "https://pbs.twimg.com/media/HOJXahzacAAuhIb.jpg",
-          "https://pbs.twimg.com/media/HOJXbHwbAAAwGsu.jpg"
+          "https://pbs.twimg.com/media/HNCoQoUbcAAHVX1.jpg",
+          "https://t.co/fM0yxtZSrv",
+          "pic.x.com/fM0yxtZSrv",
+          "https://pbs.twimg.com/media/HNCoTnIbMAEF-Hf.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
+        "archive_reason": "daily_candidate_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_903323ec98566c7e"
+      "inbox_id": "inbox_8a0115904ca70899"
     },
     {
       "kind": "x_gap",
@@ -94,29 +92,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "習志野台８丁目自治協議会（８自協）は７月25日、習志野台８丁目会館で2026習志野台８丁目夏祭り納涼盆踊りの運営についての会議を開きました。習志野台８丁目東公園",
+      "title": "【壱分東子ども会】\n7/21から7/23の3日間、おさき公園で朝のラジオ体操とふれあい祭りの盆踊りの練習を行いました。\n暑い中多くの方々が来てくださりました。あ",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081328151712641202",
-      "source_url": "https://x.com/8_chokai/status/2081328151712641202",
+      "source_key": "x:2081532001522503846",
+      "source_url": "https://x.com/ichibu_higashi/status/2081532001522503846",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_cca9917e96825630",
-        "source_key": "x:2081328151712641202",
+        "candidate_id": "xgap_5d386a87297ba77a",
+        "source_key": "x:2081532001522503846",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/8_chokai/status/2081328151712641202",
-        "source_text": "\n習志野台８丁目自治協議会（８自協）は７月25日、習志野台８丁目会館で2026習志野台８丁目夏祭り納涼盆踊りの運営についての会議を開きました。習志野台８丁目東公園に駐輪できるようにすることや、クリーン・ゴミ対策、防犯対策、熱中症対策などを検討しました。各対策の担当を確認しました。",
-        "source_author": "@8_chokai",
+        "source_url": "https://x.com/ichibu_higashi/status/2081532001522503846",
+        "source_text": "\n【壱分東子ども会】\n7/21から7/23の3日間、おさき公園で朝のラジオ体操とふれあい祭りの盆踊りの練習を行いました。\n暑い中多くの方々が来てくださりました。ありがとうございました！ https://t.co/uAtQYwui6b",
+        "source_author": "@ichibu_higashi",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@8_chokai",
-          "account_name": "習志野台８丁目町会",
+          "handle": "@ichibu_higashi",
+          "account_name": "壱分町東自治会",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -125,27 +123,184 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "７月25日"
+          "7/21",
+          "7/23"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@8_chokai",
-          "name": "習志野台８丁目町会",
+          "account": "@ichibu_higashi",
+          "name": "壱分町東自治会",
           "title": "",
-          "text": "習志野台８丁目自治協議会（８自協）は７月25日、習志野台８丁目会館で2026習志野台８丁目夏祭り納涼盆踊りの運営についての会議を開きました。習志野台８丁目東公園に駐輪できるようにすることや、クリーン・ゴミ対策、防犯対策、熱中症対策などを検討しました。各対策の担当を確認しました。",
-          "url": "https://x.com/8_chokai/status/2081328151712641202",
-          "date": "2026-07-26T10:37:55+00:00",
-          "tweet_id": "2081328151712641202",
+          "text": "【壱分東子ども会】\n7/21から7/23の3日間、おさき公園で朝のラジオ体操とふれあい祭りの盆踊りの練習を行いました。\n暑い中多くの方々が来てくださりました。ありがとうございました！ https://t.co/uAtQYwui6b",
+          "url": "https://x.com/ichibu_higashi/status/2081532001522503846",
+          "date": "2026-07-27T00:07:56+00:00",
+          "tweet_id": "2081532001522503846",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOMWUniboAAdsuj.jpg",
+            "https://t.co/uAtQYwui6b",
+            "pic.x.com/uAtQYwui6b",
+            "https://pbs.twimg.com/media/HOMWUnoagAAmWy2.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/ichibu_higashi/status/2081532001522503846"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOMWUniboAAdsuj.jpg",
+          "https://t.co/uAtQYwui6b",
+          "pic.x.com/uAtQYwui6b",
+          "https://pbs.twimg.com/media/HOMWUnoagAAmWy2.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_8c55120687927627"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【#TSUGA盆2026】開催のお知らせ \n第49回つが市民盆踊り大会＆第26回花火大会\n 日時＊8 月1 日（土）17時～20時\n 会場＊都賀市民運動場\nお囃",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2081571642501955593",
+      "source_url": "https://x.com/tochigishikanko/status/2081571642501955593",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_922cdd000ff6e51e",
+        "source_key": "x:2081571642501955593",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/tochigishikanko/status/2081571642501955593",
+        "source_text": "\n【#TSUGA盆2026】開催のお知らせ \n第49回つが市民盆踊り大会＆第26回花火大会\n 日時＊8 月1 日（土）17時～20時\n 会場＊都賀市民運動場\nお囃子・盆踊り・花火　夏祭り満喫しよう！ \n 詳細はこちら↓ https://t.co/mRcVQ2xsaa https://t.co/uwZha2H5jU",
+        "source_author": "@tochigishikanko",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@tochigishikanko",
+          "account_name": "栃木市観光協会【公式】",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "17時",
+          "20時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@tochigishikanko",
+          "name": "栃木市観光協会【公式】",
+          "title": "",
+          "text": "【#TSUGA盆2026】開催のお知らせ \n第49回つが市民盆踊り大会＆第26回花火大会\n 日時＊8 月1 日（土）17時～20時\n 会場＊都賀市民運動場\nお囃子・盆踊り・花火　夏祭り満喫しよう！ \n 詳細はこちら↓ https://t.co/mRcVQ2xsaa https://t.co/uwZha2H5jU",
+          "url": "https://x.com/tochigishikanko/status/2081571642501955593",
+          "date": "2026-07-27T02:45:27+00:00",
+          "tweet_id": "2081571642501955593",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOM6UfMacAA21LS.jpg",
+            "https://t.co/uwZha2H5jU",
+            "pic.x.com/uwZha2H5jU"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/tochigishikanko/status/2081571642501955593"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOM6UfMacAA21LS.jpg",
+          "https://t.co/uwZha2H5jU",
+          "pic.x.com/uwZha2H5jU"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_74a124fa523b6bae"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【社会教育部】「夏祭り盆踊り大会」8/1の８:00～11:00会場設営、15:30～17:30出店準備・会場準備、16:30～21:00出店係などの大会運営、8",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2081597405024465200",
+      "source_url": "https://x.com/hinode_machi/status/2081597405024465200",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_6f403a66233666b4",
+        "source_key": "x:2081597405024465200",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/hinode_machi/status/2081597405024465200",
+        "source_text": "\n【社会教育部】「夏祭り盆踊り大会」8/1の８:00～11:00会場設営、15:30～17:30出店準備・会場準備、16:30～21:00出店係などの大会運営、8/2の8:00～11:00会場撤収です。短時間でも加勢していただけると助かります。ご協力よろしくお願いします。",
+        "source_author": "@hinode_machi",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@hinode_machi",
+          "account_name": "日の出町自治会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8/1",
+          "8/2"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@hinode_machi",
+          "name": "日の出町自治会",
+          "title": "",
+          "text": "【社会教育部】「夏祭り盆踊り大会」8/1の８:00～11:00会場設営、15:30～17:30出店準備・会場準備、16:30～21:00出店係などの大会運営、8/2の8:00～11:00会場撤収です。短時間でも加勢していただけると助かります。ご協力よろしくお願いします。",
+          "url": "https://x.com/hinode_machi/status/2081597405024465200",
+          "date": "2026-07-27T04:27:50+00:00",
+          "tweet_id": "2081597405024465200",
           "tags": [
             "🟡関心",
             "q-poster-flyer"
           ]
         },
         "source_urls": [
-          "https://x.com/8_chokai/status/2081328151712641202"
+          "https://x.com/hinode_machi/status/2081597405024465200"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -153,7 +308,7 @@
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_8424d5e922bdf054"
+      "inbox_id": "inbox_5b39297da36a86ac"
     },
     {
       "kind": "x_gap",
@@ -161,29 +316,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【20260726号】仙波町三丁目自治会広報部です\n本日午前中、来月8日に #長徳寺 で開催する #納涼盆踊り大会 の #盆踊り練習会 が行われました。\n多くの",
+      "title": "【８月８日（土）は苅田町に盆踊りが帰ってくる！？盆ダンスが開催されます！】\n\nあの楽しかった夏が、ついに帰ってきますー\n夕暮れとともに会場に灯りがともり、あちこ",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081343444388356387",
-      "source_url": "https://x.com/sembamachi3/status/2081343444388356387",
+      "source_key": "x:2081620168661492097",
+      "source_url": "https://x.com/kandakankou/status/2081620168661492097",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_f143a82b56487f3e",
-        "source_key": "x:2081343444388356387",
+        "candidate_id": "xgap_8d7a47427bf01a09",
+        "source_key": "x:2081620168661492097",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/sembamachi3/status/2081343444388356387",
-        "source_text": "\n【20260726号】仙波町三丁目自治会広報部です\n本日午前中、来月8日に #長徳寺 で開催する #納涼盆踊り大会 の #盆踊り練習会 が行われました。\n多くの子供たちが参加し #仙波町三丁目盆踊りの会 の皆様よりご指導を頂きました。\n次回の練習会は8月1日（土） #仙波会館 で午前10時から実施します。 https://t.co/f73qSkn5fH",
-        "source_author": "@sembamachi3",
+        "source_url": "https://x.com/kandakankou/status/2081620168661492097",
+        "source_text": "\n【８月８日（土）は苅田町に盆踊りが帰ってくる！？盆ダンスが開催されます！】\n\nあの楽しかった夏が、ついに帰ってきますー\n夕暮れとともに会場に灯りがともり、あちこちから聞こえる笑い声。キッチンカーや屋台のいい匂いに誘われて、自然と人が集まってくる。 https://t.co/kfWODPvMJP",
+        "source_author": "@kandakankou",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@sembamachi3",
-          "account_name": "仙波町三丁目自治会",
+          "handle": "@kandakankou",
+          "account_name": "一般社団法人　苅田まちづくり観光協会【公式】",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -192,196 +347,44 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月1日",
-          "10時"
+          "８月８日"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@sembamachi3",
-          "name": "仙波町三丁目自治会",
+          "account": "@kandakankou",
+          "name": "一般社団法人　苅田まちづくり観光協会【公式】",
           "title": "",
-          "text": "【20260726号】仙波町三丁目自治会広報部です\n本日午前中、来月8日に #長徳寺 で開催する #納涼盆踊り大会 の #盆踊り練習会 が行われました。\n多くの子供たちが参加し #仙波町三丁目盆踊りの会 の皆様よりご指導を頂きました。\n次回の練習会は8月1日（土） #仙波会館 で午前10時から実施します。 https://t.co/f73qSkn5fH",
-          "url": "https://x.com/sembamachi3/status/2081343444388356387",
-          "date": "2026-07-26T11:38:41+00:00",
-          "tweet_id": "2081343444388356387",
+          "text": "【８月８日（土）は苅田町に盆踊りが帰ってくる！？盆ダンスが開催されます！】\n\nあの楽しかった夏が、ついに帰ってきますー\n夕暮れとともに会場に灯りがともり、あちこちから聞こえる笑い声。キッチンカーや屋台のいい匂いに誘われて、自然と人が集まってくる。 https://t.co/kfWODPvMJP",
+          "url": "https://x.com/kandakankou/status/2081620168661492097",
+          "date": "2026-07-27T05:58:17+00:00",
+          "tweet_id": "2081620168661492097",
           "tags": [
             "🟢一次レポ",
-            "q-poster-flyer"
+            "q-report"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOJqy5Fa0AA7san.jpg",
-            "https://t.co/f73qSkn5fH",
-            "pic.x.com/f73qSkn5fH"
+            "https://pbs.twimg.com/media/HONmgcZbUAArPQD.jpg",
+            "https://t.co/kfWODPvMJP",
+            "pic.x.com/kfWODPvMJP"
           ]
         },
         "source_urls": [
-          "https://x.com/sembamachi3/status/2081343444388356387"
+          "https://x.com/kandakankou/status/2081620168661492097"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HOJqy5Fa0AA7san.jpg",
-          "https://t.co/f73qSkn5fH",
-          "pic.x.com/f73qSkn5fH"
+          "https://pbs.twimg.com/media/HONmgcZbUAArPQD.jpg",
+          "https://t.co/kfWODPvMJP",
+          "pic.x.com/kfWODPvMJP"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_8acd563a74ae5ae3"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【からすやま夏まつり🌻　#盆踊り大会】\n\n2026/07/31(金)〜8/1(土)\n皆様、今年も楽しんでくださ〜い😊\n\n#烏山区民センター前広場\n#えるもーる烏",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2081496803502108861",
-      "source_url": "https://x.com/midori_kawamura/status/2081496803502108861",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_0f29251cd57c1888",
-        "source_key": "x:2081496803502108861",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/midori_kawamura/status/2081496803502108861",
-        "source_text": "\n【からすやま夏まつり🌻　#盆踊り大会】\n\n2026/07/31(金)〜8/1(土)\n皆様、今年も楽しんでくださ〜い😊\n\n#烏山区民センター前広場\n#えるもーる烏山\n#烏山駅前通り商店街振興組合\n#せたがやPay\n#世田谷区 https://t.co/7XOCMuCHIL",
-        "source_author": "@midori_kawamura",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@midori_kawamura",
-          "account_name": "河村みどり🌿🍚🌾世田谷区議会議員",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "2026/07/31",
-          "8/1"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "烏山区民センター前広場",
-          "region_hint": "世田谷区",
-          "address": "世田谷区南烏山6-2-19",
-          "source_url": "https://www.elmall.or.jp/news/2026/260715_02/"
-        },
-        "voice": {
-          "source": "x",
-          "account": "@midori_kawamura",
-          "name": "河村みどり🌿🍚🌾世田谷区議会議員",
-          "title": "",
-          "text": "【からすやま夏まつり🌻　#盆踊り大会】\n\n2026/07/31(金)〜8/1(土)\n皆様、今年も楽しんでくださ〜い😊\n\n#烏山区民センター前広場\n#えるもーる烏山\n#烏山駅前通り商店街振興組合\n#せたがやPay\n#世田谷区 https://t.co/7XOCMuCHIL",
-          "url": "https://x.com/midori_kawamura/status/2081496803502108861",
-          "date": "2026-07-26T21:48:04+00:00",
-          "tweet_id": "2081496803502108861",
-          "tags": [
-            "🟡関心",
-            "q-venue-tokyo-wards"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOL2SlPbgAENewP.jpg",
-            "https://t.co/7XOCMuCHIL",
-            "pic.x.com/7XOCMuCHIL",
-            "https://pbs.twimg.com/media/HOL2SlAaEAAzne4.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/midori_kawamura/status/2081496803502108861"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HOL2SlPbgAENewP.jpg",
-          "https://t.co/7XOCMuCHIL",
-          "pic.x.com/7XOCMuCHIL",
-          "https://pbs.twimg.com/media/HOL2SlAaEAAzne4.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_70fb996a61c2d28b"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\n明日＆明後日19:00～21:00🏮✨\n大森南四丁目公園にて❣️\nみ",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2081514904872231030",
-      "source_url": "https://x.com/otafull/status/2081514904872231030",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_79539ceed621f65f",
-        "source_key": "x:2081514904872231030",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2081514904872231030",
-        "source_text": "\n【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\n明日＆明後日19:00～21:00🏮✨\n大森南四丁目公園にて❣️\nみんなで踊って夏を満喫しましょう〜\nhttps://t.co/VtURaUvAuS\n#大田区　#商店街　#大森南　#盆踊り",
-        "source_author": "@otafull",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7/28"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
-          "title": "",
-          "text": "【盆踊り情報2026】【大森南】7/28(火)、29(水)に森ヶ崎自治会「納涼盆踊り大会」\n明日＆明後日19:00～21:00🏮✨\n大森南四丁目公園にて❣️\nみんなで踊って夏を満喫しましょう〜\nhttps://t.co/VtURaUvAuS\n#大田区　#商店街　#大森南　#盆踊り",
-          "url": "https://x.com/otafull/status/2081514904872231030",
-          "date": "2026-07-26T23:00:00+00:00",
-          "tweet_id": "2081514904872231030",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/otafull/status/2081514904872231030"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_d58bc5ecd333f194"
+      "inbox_id": "inbox_595caf7f410a52c0"
     }
   ],
   "selection": {
@@ -389,11 +392,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2081322111566856246",
-      "x:2081328151712641202",
-      "x:2081343444388356387",
-      "x:2081496803502108861",
-      "x:2081514904872231030"
+      "x:2076346727154815267",
+      "x:2081532001522503846",
+      "x:2081571642501955593",
+      "x:2081597405024465200",
+      "x:2081620168661492097"
     ]
   },
   "write_mode": "snapshot_only_default_off",
