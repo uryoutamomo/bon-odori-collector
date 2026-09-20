@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "90f206196774964eb0822574173daecc7af6f4ccac3bc894bca4ad02b927567a",
-  "input_size_bytes": 2202603,
+  "input_sha256": "6a1cfbdf39eb35cb71626ccd383d290edc7fca791ae43f4eba79e40e8620b755",
+  "input_size_bytes": 2202884,
   "item_count": 5,
   "items": [
     {
@@ -10,30 +10,30 @@
       "domain": "X",
       "time_scope": "future",
       "priority_label": "P1",
-      "priority_score": 85,
-      "title": "第２回晴海ふ頭公園盆踊り大会2026\n２日目✌️\n\nゆかたお直し会場で着崩れた浴衣のお直し。\n民族衣裳文化普及協会さん、素敵な帯にしてくださってありがとうござい",
+      "priority_score": 90,
+      "title": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2076346727154815267",
-      "source_url": "https://x.com/tukishimanagaya/status/2076346727154815267",
+      "source_key": "x:2067765707643949227",
+      "source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_720a11df5400d57f",
-        "source_key": "x:2076346727154815267",
+        "candidate_id": "xgap_3df932a8a34c037d",
+        "source_key": "x:2067765707643949227",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
-        "priority_score": 85,
+        "priority_score": 90,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/tukishimanagaya/status/2076346727154815267",
-        "source_text": "\n第２回晴海ふ頭公園盆踊り大会2026\n２日目✌️\n\nゆかたお直し会場で着崩れた浴衣のお直し。\n民族衣裳文化普及協会さん、素敵な帯にしてくださってありがとうございました！🙏\n\n10/3(土)13時〜月島社会教育会館にてきものショーを開催👘\nステージモデルさん募集中とのこと。\nご興味ありましたらぜひ！ https://t.co/fM0yxtZSrv",
-        "source_author": "@tukishimanagaya",
+        "source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
+        "source_text": "\n【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東京信金 三筋支店周辺)路上✨\n\n盆踊り(17:30-19:00)は鳳蝶流 鳳蝶美成さんが演出し、伝統曲から老若男女が楽しめる盆ダンスまで♪\nhttps://t.co/iU8wENhYUg",
+        "source_author": "@natsutr_bon",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@tukishimanagaya",
-          "account_name": "月島長屋",
+          "handle": "@natsutr_bon",
+          "account_name": "奈津大郎〘ナツタロ〙",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -42,205 +42,124 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "10/3",
-          "13時"
+          "10/4"
         ],
         "observed_dates": [
-          "2026-10-03"
+          "2026-10-04"
         ],
-        "event_group_key": "informal:fefee2bdf13bdae4",
-        "known_venue_evidence": null,
+        "event_group_key": "informal-venue:25f305e29588661f",
+        "known_venue_evidence": {
+          "venue": "新堀通り",
+          "region_hint": "台東区",
+          "address": "台東区三筋2-15",
+          "source_url": "https://www.instagram.com/p/DZvrSolE_ec/"
+        },
         "voice": {
           "source": "x",
-          "account": "@tukishimanagaya",
-          "name": "月島長屋",
+          "account": "@natsutr_bon",
+          "name": "奈津大郎〘ナツタロ〙",
           "title": "",
-          "text": "第２回晴海ふ頭公園盆踊り大会2026\n２日目✌️\n\nゆかたお直し会場で着崩れた浴衣のお直し。\n民族衣裳文化普及協会さん、素敵な帯にしてくださってありがとうございました！🙏\n\n10/3(土)13時〜月島社会教育会館にてきものショーを開催👘\nステージモデルさん募集中とのこと。\nご興味ありましたらぜひ！ https://t.co/fM0yxtZSrv",
-          "url": "https://x.com/tukishimanagaya/status/2076346727154815267",
-          "date": "2026-07-12T16:43:31+00:00",
-          "tweet_id": "2076346727154815267",
+          "text": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東京信金 三筋支店周辺)路上✨\n\n盆踊り(17:30-19:00)は鳳蝶流 鳳蝶美成さんが演出し、伝統曲から老若男女が楽しめる盆ダンスまで♪\nhttps://t.co/iU8wENhYUg",
+          "url": "https://x.com/natsutr_bon/status/2067765707643949227",
+          "date": "2026-06-19T00:25:36+00:00",
+          "tweet_id": "2067765707643949227",
           "tags": [
             "🟡関心",
-            "q-venue"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HNCoQoUbcAAHVX1.jpg",
-            "https://t.co/fM0yxtZSrv",
-            "pic.x.com/fM0yxtZSrv",
-            "https://pbs.twimg.com/media/HNCoTnIbMAEF-Hf.jpg"
+            "q-future-schedule"
           ]
         },
         "source_urls": [
-          "https://x.com/tukishimanagaya/status/2076346727154815267"
+          "https://x.com/natsutr_bon/status/2067765707643949227",
+          "https://x.com/toshi4532toshi/status/2067804572953829880"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HNCoQoUbcAAHVX1.jpg",
-          "https://t.co/fM0yxtZSrv",
-          "pic.x.com/fM0yxtZSrv",
-          "https://pbs.twimg.com/media/HNCoTnIbMAEF-Hf.jpg"
+          "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+          "https://t.co/th2pQ2RvCk",
+          "pic.twitter.com/th2pQ2RvCk"
         ],
-        "corroboration_count": 1,
-        "source_count": 1,
+        "corroboration_count": 2,
+        "source_count": 2,
         "archive_reason": "daily_candidate_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_8a0115904ca70899"
+      "inbox_id": "inbox_0fe2591205f0b80a"
     },
     {
       "kind": "x_gap",
       "domain": "X",
       "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【壱分東子ども会】\n7/21から7/23の3日間、おさき公園で朝のラジオ体操とふれあい祭りの盆踊りの練習を行いました。\n暑い中多くの方々が来てくださりました。あ",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "🏮トラシグお祭りLIVE出演決定🏮\n\n蔵前つながる盆ダンス 2026\n-世代をこえて、まちがひとつになる夜-\n\n伝統的な盆踊り楽曲に加え、老若男女が楽しめる「盆",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081532001522503846",
-      "source_url": "https://x.com/ichibu_higashi/status/2081532001522503846",
+      "source_key": "x:2067804572953829880",
+      "source_url": "https://x.com/toshi4532toshi/status/2067804572953829880",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_5d386a87297ba77a",
-        "source_key": "x:2081532001522503846",
+        "candidate_id": "xgap_2b5fdb08b450876b",
+        "source_key": "x:2067804572953829880",
         "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/ichibu_higashi/status/2081532001522503846",
-        "source_text": "\n【壱分東子ども会】\n7/21から7/23の3日間、おさき公園で朝のラジオ体操とふれあい祭りの盆踊りの練習を行いました。\n暑い中多くの方々が来てくださりました。ありがとうございました！ https://t.co/uAtQYwui6b",
-        "source_author": "@ichibu_higashi",
+        "source_url": "https://x.com/toshi4532toshi/status/2067804572953829880",
+        "source_text": "\n🏮トラシグお祭りLIVE出演決定🏮\n\n蔵前つながる盆ダンス 2026\n-世代をこえて、まちがひとつになる夜-\n\n伝統的な盆踊り楽曲に加え、老若男女が楽しめる「盆ダンス」と\n台東区にゆかりあるアーティスト・伝統芸能者が、地元からパワーある発信！\n蔵前がひとつになる夜！\n\n日 時：2026年10月4日(日) 15:00~19:00\n会 場：新堀通り\n司 会：さいとう千晶\n出 演：若山社中・清水百恵・TORAfic☆signALL・サスケ\n盆踊り演出：鳳蝶美成（日本民踊鳳蝶流 家元・師範)\n\n主 催：蔵前盆踊り実行委員会(蔵前商店街・蔵前三桂町会)\n協 力：蔵前三桂町会青少年部\n後 援 : 台東区\n\n入場無料です",
+        "source_author": "@toshi4532toshi",
         "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@ichibu_higashi",
-          "account_name": "壱分町東自治会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@toshi4532toshi",
+          "account_name": "GA-HA- 芳賀俊和 (トラシグ)",
+          "source_type": "",
+          "trust_level": "candidate",
           "reasons": [
-            "registered_official_source_account"
+            "schedule_post_with_bon_context"
           ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
+          "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "7/21",
-          "7/23"
+          "10月4日"
         ],
-        "observed_dates": [],
-        "event_group_key": "",
+        "observed_dates": [
+          "2026-10-04"
+        ],
+        "event_group_key": "informal:1408035734a888d7",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@ichibu_higashi",
-          "name": "壱分町東自治会",
+          "account": "@toshi4532toshi",
+          "name": "GA-HA- 芳賀俊和 (トラシグ)",
           "title": "",
-          "text": "【壱分東子ども会】\n7/21から7/23の3日間、おさき公園で朝のラジオ体操とふれあい祭りの盆踊りの練習を行いました。\n暑い中多くの方々が来てくださりました。ありがとうございました！ https://t.co/uAtQYwui6b",
-          "url": "https://x.com/ichibu_higashi/status/2081532001522503846",
-          "date": "2026-07-27T00:07:56+00:00",
-          "tweet_id": "2081532001522503846",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOMWUniboAAdsuj.jpg",
-            "https://t.co/uAtQYwui6b",
-            "pic.x.com/uAtQYwui6b",
-            "https://pbs.twimg.com/media/HOMWUnoagAAmWy2.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/ichibu_higashi/status/2081532001522503846"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HOMWUniboAAdsuj.jpg",
-          "https://t.co/uAtQYwui6b",
-          "pic.x.com/uAtQYwui6b",
-          "https://pbs.twimg.com/media/HOMWUnoagAAmWy2.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_8c55120687927627"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【#TSUGA盆2026】開催のお知らせ \n第49回つが市民盆踊り大会＆第26回花火大会\n 日時＊8 月1 日（土）17時～20時\n 会場＊都賀市民運動場\nお囃",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2081571642501955593",
-      "source_url": "https://x.com/tochigishikanko/status/2081571642501955593",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_922cdd000ff6e51e",
-        "source_key": "x:2081571642501955593",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/tochigishikanko/status/2081571642501955593",
-        "source_text": "\n【#TSUGA盆2026】開催のお知らせ \n第49回つが市民盆踊り大会＆第26回花火大会\n 日時＊8 月1 日（土）17時～20時\n 会場＊都賀市民運動場\nお囃子・盆踊り・花火　夏祭り満喫しよう！ \n 詳細はこちら↓ https://t.co/mRcVQ2xsaa https://t.co/uwZha2H5jU",
-        "source_author": "@tochigishikanko",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@tochigishikanko",
-          "account_name": "栃木市観光協会【公式】",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "17時",
-          "20時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@tochigishikanko",
-          "name": "栃木市観光協会【公式】",
-          "title": "",
-          "text": "【#TSUGA盆2026】開催のお知らせ \n第49回つが市民盆踊り大会＆第26回花火大会\n 日時＊8 月1 日（土）17時～20時\n 会場＊都賀市民運動場\nお囃子・盆踊り・花火　夏祭り満喫しよう！ \n 詳細はこちら↓ https://t.co/mRcVQ2xsaa https://t.co/uwZha2H5jU",
-          "url": "https://x.com/tochigishikanko/status/2081571642501955593",
-          "date": "2026-07-27T02:45:27+00:00",
-          "tweet_id": "2081571642501955593",
+          "text": "🏮トラシグお祭りLIVE出演決定🏮\n\n蔵前つながる盆ダンス 2026\n-世代をこえて、まちがひとつになる夜-\n\n伝統的な盆踊り楽曲に加え、老若男女が楽しめる「盆ダンス」と\n台東区にゆかりあるアーティスト・伝統芸能者が、地元からパワーある発信！\n蔵前がひとつになる夜！\n\n日 時：2026年10月4日(日) 15:00~19:00\n会 場：新堀通り\n司 会：さいとう千晶\n出 演：若山社中・清水百恵・TORAfic☆signALL・サスケ\n盆踊り演出：鳳蝶美成（日本民踊鳳蝶流 家元・師範)\n\n主 催：蔵前盆踊り実行委員会(蔵前商店街・蔵前三桂町会)\n協 力：蔵前三桂町会青少年部\n後 援 : 台東区\n\n入場無料です",
+          "url": "https://x.com/toshi4532toshi/status/2067804572953829880",
+          "date": "2026-06-19T03:00:02+00:00",
+          "tweet_id": "2067804572953829880",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOM6UfMacAA21LS.jpg",
-            "https://t.co/uwZha2H5jU",
-            "pic.x.com/uwZha2H5jU"
+            "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+            "https://t.co/th2pQ2RvCk",
+            "pic.twitter.com/th2pQ2RvCk"
           ]
         },
         "source_urls": [
-          "https://x.com/tochigishikanko/status/2081571642501955593"
+          "https://x.com/toshi4532toshi/status/2067804572953829880"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HOM6UfMacAA21LS.jpg",
-          "https://t.co/uwZha2H5jU",
-          "pic.x.com/uwZha2H5jU"
+          "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+          "https://t.co/th2pQ2RvCk",
+          "pic.twitter.com/th2pQ2RvCk"
         ],
         "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
+        "source_count": 1
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_74a124fa523b6bae"
+      "inbox_id": "inbox_adda85ff12631175"
     },
     {
       "kind": "x_gap",
@@ -248,29 +167,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【社会教育部】「夏祭り盆踊り大会」8/1の８:00～11:00会場設営、15:30～17:30出店準備・会場準備、16:30～21:00出店係などの大会運営、8",
+      "title": "【こんにちは、区長です！】７月19日（日） 全天候型広場Platzで開催された「ボッシュ フォーラム つづき 夏まつり」に伺いました。ボッシュ ホール主催の初開",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081597405024465200",
-      "source_url": "https://x.com/hinode_machi/status/2081597405024465200",
+      "source_key": "x:2081635705428836402",
+      "source_url": "https://x.com/tz_yokohama/status/2081635705428836402",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_6f403a66233666b4",
-        "source_key": "x:2081597405024465200",
+        "candidate_id": "xgap_4a7849f01e82321a",
+        "source_key": "x:2081635705428836402",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/hinode_machi/status/2081597405024465200",
-        "source_text": "\n【社会教育部】「夏祭り盆踊り大会」8/1の８:00～11:00会場設営、15:30～17:30出店準備・会場準備、16:30～21:00出店係などの大会運営、8/2の8:00～11:00会場撤収です。短時間でも加勢していただけると助かります。ご協力よろしくお願いします。",
-        "source_author": "@hinode_machi",
+        "source_url": "https://x.com/tz_yokohama/status/2081635705428836402",
+        "source_text": "\n【こんにちは、区長です！】７月19日（日） 全天候型広場Platzで開催された「ボッシュ フォーラム つづき 夏まつり」に伺いました。ボッシュ ホール主催の初開催イベントで、センター北・中川中央町内会や地域の皆さまとの協働で開催され、模擬店や盆踊り大会など、会場は大変な賑わいでした。\n#都筑区 https://t.co/kQQvbvb4v0",
+        "source_author": "@tz_yokohama",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@hinode_machi",
-          "account_name": "日の出町自治会",
+          "handle": "@tz_yokohama",
+          "account_name": "横浜市都筑区役所",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -279,36 +198,46 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8/1",
-          "8/2"
+          "７月19日"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@hinode_machi",
-          "name": "日の出町自治会",
+          "account": "@tz_yokohama",
+          "name": "横浜市都筑区役所",
           "title": "",
-          "text": "【社会教育部】「夏祭り盆踊り大会」8/1の８:00～11:00会場設営、15:30～17:30出店準備・会場準備、16:30～21:00出店係などの大会運営、8/2の8:00～11:00会場撤収です。短時間でも加勢していただけると助かります。ご協力よろしくお願いします。",
-          "url": "https://x.com/hinode_machi/status/2081597405024465200",
-          "date": "2026-07-27T04:27:50+00:00",
-          "tweet_id": "2081597405024465200",
+          "text": "【こんにちは、区長です！】７月19日（日） 全天候型広場Platzで開催された「ボッシュ フォーラム つづき 夏まつり」に伺いました。ボッシュ ホール主催の初開催イベントで、センター北・中川中央町内会や地域の皆さまとの協働で開催され、模擬店や盆踊り大会など、会場は大変な賑わいでした。\n#都筑区 https://t.co/kQQvbvb4v0",
+          "url": "https://x.com/tz_yokohama/status/2081635705428836402",
+          "date": "2026-07-27T07:00:01+00:00",
+          "tweet_id": "2081635705428836402",
           "tags": [
             "🟡関心",
-            "q-poster-flyer"
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOMZvz0a0AArwzf.jpg",
+            "https://t.co/kQQvbvb4v0",
+            "pic.x.com/kQQvbvb4v0",
+            "https://pbs.twimg.com/media/HOMZv0NbkAA_kp1.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/hinode_machi/status/2081597405024465200"
+          "https://x.com/tz_yokohama/status/2081635705428836402"
         ],
-        "source_media_urls": [],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOMZvz0a0AArwzf.jpg",
+          "https://t.co/kQQvbvb4v0",
+          "pic.x.com/kQQvbvb4v0",
+          "https://pbs.twimg.com/media/HOMZv0NbkAA_kp1.jpg"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_5b39297da36a86ac"
+      "inbox_id": "inbox_2f2817db2a75e0c9"
     },
     {
       "kind": "x_gap",
@@ -316,29 +245,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【８月８日（土）は苅田町に盆踊りが帰ってくる！？盆ダンスが開催されます！】\n\nあの楽しかった夏が、ついに帰ってきますー\n夕暮れとともに会場に灯りがともり、あちこ",
+      "title": "おだか夏まつり2026 開催！\n\n8月14日（金）13:00〜20:00\n浮舟文化会館前（小雨決行）\n露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバ",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081620168661492097",
-      "source_url": "https://x.com/kandakankou/status/2081620168661492097",
+      "source_key": "x:2081650317624824128",
+      "source_url": "https://x.com/odakakankou/status/2081650317624824128",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_8d7a47427bf01a09",
-        "source_key": "x:2081620168661492097",
+        "candidate_id": "xgap_5f2c5fefcc34c339",
+        "source_key": "x:2081650317624824128",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/kandakankou/status/2081620168661492097",
-        "source_text": "\n【８月８日（土）は苅田町に盆踊りが帰ってくる！？盆ダンスが開催されます！】\n\nあの楽しかった夏が、ついに帰ってきますー\n夕暮れとともに会場に灯りがともり、あちこちから聞こえる笑い声。キッチンカーや屋台のいい匂いに誘われて、自然と人が集まってくる。 https://t.co/kfWODPvMJP",
-        "source_author": "@kandakankou",
+        "source_url": "https://x.com/odakakankou/status/2081650317624824128",
+        "source_text": "\nおだか夏まつり2026 開催！\n\n8月14日（金）13:00〜20:00\n浮舟文化会館前（小雨決行）\n露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバル、相馬野馬追太鼓、盆踊り大抽選会、投げ餅\nぜひお越しください\n\n主催／小高商工会\n#南相馬市 #小高 #夏まつり https://t.co/kG13ER2co7",
+        "source_author": "@odakakankou",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@kandakankou",
-          "account_name": "一般社団法人　苅田まちづくり観光協会【公式】",
+          "handle": "@odakakankou",
+          "account_name": "小高観光協会（福島県南相馬市）",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -347,44 +276,127 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "８月８日"
+          "8月14日"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@kandakankou",
-          "name": "一般社団法人　苅田まちづくり観光協会【公式】",
+          "account": "@odakakankou",
+          "name": "小高観光協会（福島県南相馬市）",
           "title": "",
-          "text": "【８月８日（土）は苅田町に盆踊りが帰ってくる！？盆ダンスが開催されます！】\n\nあの楽しかった夏が、ついに帰ってきますー\n夕暮れとともに会場に灯りがともり、あちこちから聞こえる笑い声。キッチンカーや屋台のいい匂いに誘われて、自然と人が集まってくる。 https://t.co/kfWODPvMJP",
-          "url": "https://x.com/kandakankou/status/2081620168661492097",
-          "date": "2026-07-27T05:58:17+00:00",
-          "tweet_id": "2081620168661492097",
+          "text": "おだか夏まつり2026 開催！\n\n8月14日（金）13:00〜20:00\n浮舟文化会館前（小雨決行）\n露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバル、相馬野馬追太鼓、盆踊り大抽選会、投げ餅\nぜひお越しください\n\n主催／小高商工会\n#南相馬市 #小高 #夏まつり https://t.co/kG13ER2co7",
+          "url": "https://x.com/odakakankou/status/2081650317624824128",
+          "date": "2026-07-27T07:58:05+00:00",
+          "tweet_id": "2081650317624824128",
           "tags": [
-            "🟢一次レポ",
+            "🟡関心",
             "q-report"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HONmgcZbUAArPQD.jpg",
-            "https://t.co/kfWODPvMJP",
-            "pic.x.com/kfWODPvMJP"
+            "https://pbs.twimg.com/media/HOOB2ksbwAAEn0z.jpg",
+            "https://t.co/kG13ER2co7",
+            "pic.x.com/kG13ER2co7",
+            "https://pbs.twimg.com/media/HOOB2kvbkAATskr.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/kandakankou/status/2081620168661492097"
+          "https://x.com/odakakankou/status/2081650317624824128"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HONmgcZbUAArPQD.jpg",
-          "https://t.co/kfWODPvMJP",
-          "pic.x.com/kfWODPvMJP"
+          "https://pbs.twimg.com/media/HOOB2ksbwAAEn0z.jpg",
+          "https://t.co/kG13ER2co7",
+          "pic.x.com/kG13ER2co7",
+          "https://pbs.twimg.com/media/HOOB2kvbkAATskr.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_595caf7f410a52c0"
+      "inbox_id": "inbox_313e0121ed8fe7b5"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "あさって7月29日から始まる\n #築地本願寺納涼盆踊り大会 の準備も\n着々と進んでいます🕺🪩 https://t.co/t3cWhxHR7F",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2081656733995503830",
+      "source_url": "https://x.com/Shisui_Tsukiji/status/2081656733995503830",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_79f2d92aff3ed5c7",
+        "source_key": "x:2081656733995503830",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/Shisui_Tsukiji/status/2081656733995503830",
+        "source_text": "\nあさって7月29日から始まる\n #築地本願寺納涼盆踊り大会 の準備も\n着々と進んでいます🕺🪩 https://t.co/t3cWhxHR7F",
+        "source_author": "@Shisui_Tsukiji",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@shisui_tsukiji",
+          "account_name": "築地本願寺 日本料理 紫水",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "7月29日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": {
+          "venue": "築地本願寺",
+          "region_hint": "中央区",
+          "address": "中央区築地3-15-1",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/"
+        },
+        "voice": {
+          "source": "x",
+          "account": "@Shisui_Tsukiji",
+          "name": "築地本願寺 日本料理 紫水",
+          "title": "",
+          "text": "あさって7月29日から始まる\n #築地本願寺納涼盆踊り大会 の準備も\n着々と進んでいます🕺🪩 https://t.co/t3cWhxHR7F",
+          "url": "https://x.com/Shisui_Tsukiji/status/2081656733995503830",
+          "date": "2026-07-27T08:23:35+00:00",
+          "tweet_id": "2081656733995503830",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2081655294971846656/img/tYrMo1WBfB9fEhRo.jpg",
+            "https://t.co/t3cWhxHR7F",
+            "pic.x.com/t3cWhxHR7F"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/Shisui_Tsukiji/status/2081656733995503830"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2081655294971846656/img/tYrMo1WBfB9fEhRo.jpg",
+          "https://t.co/t3cWhxHR7F",
+          "pic.x.com/t3cWhxHR7F"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_e5dbc540353c85cf"
     }
   ],
   "selection": {
@@ -392,11 +404,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2076346727154815267",
-      "x:2081532001522503846",
-      "x:2081571642501955593",
-      "x:2081597405024465200",
-      "x:2081620168661492097"
+      "x:2067765707643949227",
+      "x:2067804572953829880",
+      "x:2081635705428836402",
+      "x:2081650317624824128",
+      "x:2081656733995503830"
     ]
   },
   "write_mode": "snapshot_only_default_off",

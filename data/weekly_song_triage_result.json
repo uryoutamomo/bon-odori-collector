@@ -1,29 +1,13 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 12,
-  "direct_count": 10,
-  "created_count": 6,
+  "song_candidate_count": 11,
+  "direct_count": 9,
+  "created_count": 5,
   "updated_count": 4,
   "rejected_noise_count": 1,
   "review_count": 1,
   "created": [
-    {
-      "song_name": "アンパンマン音頭",
-      "source_term": "アンパンマン音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "楽しそうな踊り",
-      "source_term": "楽しそうな踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
     {
       "song_name": "東京谷端さくら音頭",
       "source_term": "東京谷端さくら音頭",
@@ -49,8 +33,16 @@
       "dry_run": true
     },
     {
-      "song_name": "朝顔音頭",
-      "source_term": "朝顔音頭",
+      "song_name": "アンパンマン音頭",
+      "source_term": "アンパンマン音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "楽しそうな踊り",
+      "source_term": "楽しそうな踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -93,7 +85,7 @@
   ],
   "rejected_noise": [
     {
-      "term": "入谷朝顔音頭踊り",
+      "term": "信濃町ふるさと音頭",
       "reason": "曲名としての形が弱い"
     }
   ],
