@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-19T11:14:47.061574+00:00",
+  "generated_at": "2026-09-20T11:35:25.404085+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,273 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2f2817db2a75e0c9",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【こんにちは、区長です！】７月19日（日） 全天候型広場Platzで開催された「ボッシュ フォーラム つづき 夏まつり」に伺いました。ボッシュ ホール主催の初開",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081635705428836402",
+      "source_url": "https://x.com/tz_yokohama/status/2081635705428836402",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ae9efce1785c781c3b0b22d3c5c64b386d673c31da46559f6acb93725741743f",
+      "last_seen_at": "github-35507587728-1",
+      "created_at": "2026-09-20T11:34:41.758479+00:00",
+      "updated_at": "2026-09-20T11:34:41.758479+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_4a7849f01e82321a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "７月19日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@tz_yokohama",
+        "source_count": 1,
+        "source_key": "x:2081635705428836402",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOMZvz0a0AArwzf.jpg",
+          "https://t.co/kQQvbvb4v0",
+          "pic.x.com/kQQvbvb4v0",
+          "https://pbs.twimg.com/media/HOMZv0NbkAA_kp1.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "横浜市都筑区役所",
+          "classification": "registered_official_social",
+          "handle": "@tz_yokohama",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【こんにちは、区長です！】７月19日（日） 全天候型広場Platzで開催された「ボッシュ フォーラム つづき 夏まつり」に伺いました。ボッシュ ホール主催の初開催イベントで、センター北・中川中央町内会や地域の皆さまとの協働で開催され、模擬店や盆踊り大会など、会場は大変な賑わいでした。\n#都筑区 https://t.co/kQQvbvb4v0",
+        "source_url": "https://x.com/tz_yokohama/status/2081635705428836402",
+        "source_urls": [
+          "https://x.com/tz_yokohama/status/2081635705428836402"
+        ],
+        "voice": {
+          "account": "@tz_yokohama",
+          "date": "2026-07-27T07:00:01+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOMZvz0a0AArwzf.jpg",
+            "https://t.co/kQQvbvb4v0",
+            "pic.x.com/kQQvbvb4v0",
+            "https://pbs.twimg.com/media/HOMZv0NbkAA_kp1.jpg"
+          ],
+          "name": "横浜市都筑区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【こんにちは、区長です！】７月19日（日） 全天候型広場Platzで開催された「ボッシュ フォーラム つづき 夏まつり」に伺いました。ボッシュ ホール主催の初開催イベントで、センター北・中川中央町内会や地域の皆さまとの協働で開催され、模擬店や盆踊り大会など、会場は大変な賑わいでした。\n#都筑区 https://t.co/kQQvbvb4v0",
+          "title": "",
+          "tweet_id": "2081635705428836402",
+          "url": "https://x.com/tz_yokohama/status/2081635705428836402"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_313e0121ed8fe7b5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "おだか夏まつり2026 開催！\n\n8月14日（金）13:00〜20:00\n浮舟文化会館前（小雨決行）\n露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081650317624824128",
+      "source_url": "https://x.com/odakakankou/status/2081650317624824128",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4a67051d406dfe5a0f27da6b6fc8567a352f53e907a3006aeb65903132d5e75f",
+      "last_seen_at": "github-35507587728-1",
+      "created_at": "2026-09-20T11:34:41.758479+00:00",
+      "updated_at": "2026-09-20T11:34:41.758479+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_5f2c5fefcc34c339",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月14日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@odakakankou",
+        "source_count": 1,
+        "source_key": "x:2081650317624824128",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOOB2ksbwAAEn0z.jpg",
+          "https://t.co/kG13ER2co7",
+          "pic.x.com/kG13ER2co7",
+          "https://pbs.twimg.com/media/HOOB2kvbkAATskr.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "小高観光協会（福島県南相馬市）",
+          "classification": "registered_official_social",
+          "handle": "@odakakankou",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nおだか夏まつり2026 開催！\n\n8月14日（金）13:00〜20:00\n浮舟文化会館前（小雨決行）\n露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバル、相馬野馬追太鼓、盆踊り大抽選会、投げ餅\nぜひお越しください\n\n主催／小高商工会\n#南相馬市 #小高 #夏まつり https://t.co/kG13ER2co7",
+        "source_url": "https://x.com/odakakankou/status/2081650317624824128",
+        "source_urls": [
+          "https://x.com/odakakankou/status/2081650317624824128"
+        ],
+        "voice": {
+          "account": "@odakakankou",
+          "date": "2026-07-27T07:58:05+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOOB2ksbwAAEn0z.jpg",
+            "https://t.co/kG13ER2co7",
+            "pic.x.com/kG13ER2co7",
+            "https://pbs.twimg.com/media/HOOB2kvbkAATskr.jpg"
+          ],
+          "name": "小高観光協会（福島県南相馬市）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "おだか夏まつり2026 開催！\n\n8月14日（金）13:00〜20:00\n浮舟文化会館前（小雨決行）\n露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバル、相馬野馬追太鼓、盆踊り大抽選会、投げ餅\nぜひお越しください\n\n主催／小高商工会\n#南相馬市 #小高 #夏まつり https://t.co/kG13ER2co7",
+          "title": "",
+          "tweet_id": "2081650317624824128",
+          "url": "https://x.com/odakakankou/status/2081650317624824128"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_e5dbc540353c85cf",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "あさって7月29日から始まる\n #築地本願寺納涼盆踊り大会 の準備も\n着々と進んでいます🕺🪩 https://t.co/t3cWhxHR7F",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081656733995503830",
+      "source_url": "https://x.com/Shisui_Tsukiji/status/2081656733995503830",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0ea69e515bb9715d21a7566984bed4e353b7748298349e9e3521bcca1632f6fa",
+      "last_seen_at": "github-35507587728-1",
+      "created_at": "2026-09-20T11:34:41.758479+00:00",
+      "updated_at": "2026-09-20T11:34:41.758479+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_79f2d92aff3ed5c7",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月29日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中央区築地3-15-1",
+          "region_hint": "中央区",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/",
+          "venue": "築地本願寺"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Shisui_Tsukiji",
+        "source_count": 1,
+        "source_key": "x:2081656733995503830",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2081655294971846656/img/tYrMo1WBfB9fEhRo.jpg",
+          "https://t.co/t3cWhxHR7F",
+          "pic.x.com/t3cWhxHR7F"
+        ],
+        "source_officiality": {
+          "account_name": "築地本願寺 日本料理 紫水",
+          "classification": "registered_official_social",
+          "handle": "@shisui_tsukiji",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nあさって7月29日から始まる\n #築地本願寺納涼盆踊り大会 の準備も\n着々と進んでいます🕺🪩 https://t.co/t3cWhxHR7F",
+        "source_url": "https://x.com/Shisui_Tsukiji/status/2081656733995503830",
+        "source_urls": [
+          "https://x.com/Shisui_Tsukiji/status/2081656733995503830"
+        ],
+        "voice": {
+          "account": "@Shisui_Tsukiji",
+          "date": "2026-07-27T08:23:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2081655294971846656/img/tYrMo1WBfB9fEhRo.jpg",
+            "https://t.co/t3cWhxHR7F",
+            "pic.x.com/t3cWhxHR7F"
+          ],
+          "name": "築地本願寺 日本料理 紫水",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "あさって7月29日から始まる\n #築地本願寺納涼盆踊り大会 の準備も\n着々と進んでいます🕺🪩 https://t.co/t3cWhxHR7F",
+          "title": "",
+          "tweet_id": "2081656733995503830",
+          "url": "https://x.com/Shisui_Tsukiji/status/2081656733995503830"
         }
       }
     },
@@ -14007,6 +14274,182 @@
       }
     },
     {
+      "inbox_id": "inbox_0fe2591205f0b80a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 90.0,
+      "title": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2067765707643949227",
+      "source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "518e581b2956ac08a793279fc1cc25c9b73492cec5c04d5e06f4ae2e9ae1c685",
+      "last_seen_at": "github-35507587728-1",
+      "created_at": "2026-08-07T09:53:20.982318+00:00",
+      "updated_at": "2026-09-20T11:34:41.758479+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_3df932a8a34c037d",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 2,
+        "date_hints": [
+          "10/4"
+        ],
+        "event_group_key": "informal-venue:25f305e29588661f",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "台東区三筋2-15",
+          "region_hint": "台東区",
+          "source_url": "https://www.instagram.com/p/DZvrSolE_ec/",
+          "venue": "新堀通り"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-10-04"
+        ],
+        "priority_score": 90,
+        "source_author": "@natsutr_bon",
+        "source_count": 2,
+        "source_key": "x:2067765707643949227",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+          "https://t.co/th2pQ2RvCk",
+          "pic.twitter.com/th2pQ2RvCk"
+        ],
+        "source_officiality": {
+          "account_name": "奈津大郎〘ナツタロ〙",
+          "classification": "unknown_or_personal_social",
+          "handle": "@natsutr_bon",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東京信金 三筋支店周辺)路上✨\n\n盆踊り(17:30-19:00)は鳳蝶流 鳳蝶美成さんが演出し、伝統曲から老若男女が楽しめる盆ダンスまで♪\nhttps://t.co/iU8wENhYUg",
+        "source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
+        "source_urls": [
+          "https://x.com/natsutr_bon/status/2067765707643949227",
+          "https://x.com/toshi4532toshi/status/2067804572953829880"
+        ],
+        "voice": {
+          "account": "@natsutr_bon",
+          "date": "2026-06-19T00:25:36+00:00",
+          "name": "奈津大郎〘ナツタロ〙",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東京信金 三筋支店周辺)路上✨\n\n盆踊り(17:30-19:00)は鳳蝶流 鳳蝶美成さんが演出し、伝統曲から老若男女が楽しめる盆ダンスまで♪\nhttps://t.co/iU8wENhYUg",
+          "title": "",
+          "tweet_id": "2067765707643949227",
+          "url": "https://x.com/natsutr_bon/status/2067765707643949227"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_adda85ff12631175",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "🏮トラシグお祭りLIVE出演決定🏮\n\n蔵前つながる盆ダンス 2026\n-世代をこえて、まちがひとつになる夜-\n\n伝統的な盆踊り楽曲に加え、老若男女が楽しめる「盆",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2067804572953829880",
+      "source_url": "https://x.com/toshi4532toshi/status/2067804572953829880",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9dae2e549e80bd35393dd221cc3bddec518c26c463e97b646c26bfe246321cdd",
+      "last_seen_at": "github-35507587728-1",
+      "created_at": "2026-09-20T11:34:41.758479+00:00",
+      "updated_at": "2026-09-20T11:34:41.758479+00:00",
+      "payload": {
+        "candidate_id": "xgap_2b5fdb08b450876b",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "10月4日"
+        ],
+        "event_group_key": "informal:1408035734a888d7",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-10-04"
+        ],
+        "priority_score": 85,
+        "source_author": "@toshi4532toshi",
+        "source_count": 1,
+        "source_key": "x:2067804572953829880",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+          "https://t.co/th2pQ2RvCk",
+          "pic.twitter.com/th2pQ2RvCk"
+        ],
+        "source_officiality": {
+          "account_name": "GA-HA- 芳賀俊和 (トラシグ)",
+          "classification": "unknown_or_personal_social",
+          "handle": "@toshi4532toshi",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n🏮トラシグお祭りLIVE出演決定🏮\n\n蔵前つながる盆ダンス 2026\n-世代をこえて、まちがひとつになる夜-\n\n伝統的な盆踊り楽曲に加え、老若男女が楽しめる「盆ダンス」と\n台東区にゆかりあるアーティスト・伝統芸能者が、地元からパワーある発信！\n蔵前がひとつになる夜！\n\n日 時：2026年10月4日(日) 15:00~19:00\n会 場：新堀通り\n司 会：さいとう千晶\n出 演：若山社中・清水百恵・TORAfic☆signALL・サスケ\n盆踊り演出：鳳蝶美成（日本民踊鳳蝶流 家元・師範)\n\n主 催：蔵前盆踊り実行委員会(蔵前商店街・蔵前三桂町会)\n協 力：蔵前三桂町会青少年部\n後 援 : 台東区\n\n入場無料です",
+        "source_url": "https://x.com/toshi4532toshi/status/2067804572953829880",
+        "source_urls": [
+          "https://x.com/toshi4532toshi/status/2067804572953829880"
+        ],
+        "voice": {
+          "account": "@toshi4532toshi",
+          "date": "2026-06-19T03:00:02+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HLIzsXZasAAIxKD.jpg",
+            "https://t.co/th2pQ2RvCk",
+            "pic.twitter.com/th2pQ2RvCk"
+          ],
+          "name": "GA-HA- 芳賀俊和 (トラシグ)",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "🏮トラシグお祭りLIVE出演決定🏮\n\n蔵前つながる盆ダンス 2026\n-世代をこえて、まちがひとつになる夜-\n\n伝統的な盆踊り楽曲に加え、老若男女が楽しめる「盆ダンス」と\n台東区にゆかりあるアーティスト・伝統芸能者が、地元からパワーある発信！\n蔵前がひとつになる夜！\n\n日 時：2026年10月4日(日) 15:00~19:00\n会 場：新堀通り\n司 会：さいとう千晶\n出 演：若山社中・清水百恵・TORAfic☆signALL・サスケ\n盆踊り演出：鳳蝶美成（日本民踊鳳蝶流 家元・師範)\n\n主 催：蔵前盆踊り実行委員会(蔵前商店街・蔵前三桂町会)\n協 力：蔵前三桂町会青少年部\n後 援 : 台東区\n\n入場無料です",
+          "title": "",
+          "tweet_id": "2067804572953829880",
+          "url": "https://x.com/toshi4532toshi/status/2067804572953829880"
+        }
+      }
+    },
+    {
       "inbox_id": "inbox_8a0115904ca70899",
       "kind": "x_gap",
       "domain": "X",
@@ -15283,83 +15726,6 @@
           "title": "",
           "tweet_id": "2083249892156387392",
           "url": "https://x.com/aoi323/status/2083249892156387392"
-        }
-      }
-    },
-    {
-      "inbox_id": "inbox_0fe2591205f0b80a",
-      "kind": "x_gap",
-      "domain": "X",
-      "priority_label": "P1",
-      "priority_score": 85.0,
-      "title": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_id": "x_gap",
-      "source_key": "x:2067765707643949227",
-      "source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
-      "recommended_action": "review_new_event",
-      "status": "pending",
-      "time_scope": "future",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "eb92f006160b76daea35db0be49c0febbd64df122940e354f74b548e5f0aff08",
-      "last_seen_at": "x-gap-canary-kuramae-bondance-20260807",
-      "created_at": "2026-08-07T09:53:20.982318+00:00",
-      "updated_at": "2026-08-07T09:53:20.982318+00:00",
-      "payload": {
-        "candidate_id": "xgap_218371cdb07ae22d",
-        "candidate_kind": "informal_new_event",
-        "corroboration_count": 1,
-        "date_hints": [
-          "10/4"
-        ],
-        "event_group_key": "informal:e5fff6f9da3e5d4c",
-        "event_year": 2026,
-        "lane": "lane3_user_review",
-        "lane_hint": "lane2",
-        "matched_occurrence": null,
-        "observed_dates": [
-          "2026-10-04"
-        ],
-        "priority_score": 85,
-        "source_author": "@natsutr_bon",
-        "source_count": 1,
-        "source_key": "x:2067765707643949227",
-        "source_officiality": {
-          "account_name": "奈津大郎〘ナツタロ〙",
-          "classification": "unknown_or_personal_social",
-          "handle": "@natsutr_bon",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation",
-          "score": 2,
-          "source_type": "",
-          "trust_level": "candidate"
-        },
-        "source_text": "\n【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東京信金 三筋支店周辺)路上✨\n\n盆踊り(17:30-19:00)は鳳蝶流 鳳蝶美成さんが演出し、伝統曲から老若男女が楽しめる盆ダンスまで♪\nhttps://t.co/iU8wENhYUg",
-        "source_url": "https://x.com/natsutr_bon/status/2067765707643949227",
-        "source_urls": [
-          "https://x.com/natsutr_bon/status/2067765707643949227"
-        ],
-        "voice": {
-          "account": "@natsutr_bon",
-          "date": "2026-06-19T00:25:36+00:00",
-          "name": "奈津大郎〘ナツタロ〙",
-          "source": "x",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "text": "【蔵前つながる盆ダンス】\n🏮10/4(日)🕓 15:00~19:00📍新堀通り(台東区)\n\n新たな盆踊りイベントが台東区蔵前エリアで開催🎊\n会場は新堀通り(東東京信金 三筋支店周辺)路上✨\n\n盆踊り(17:30-19:00)は鳳蝶流 鳳蝶美成さんが演出し、伝統曲から老若男女が楽しめる盆ダンスまで♪\nhttps://t.co/iU8wENhYUg",
-          "title": "",
-          "tweet_id": "2067765707643949227",
-          "url": "https://x.com/natsutr_bon/status/2067765707643949227"
         }
       }
     },
