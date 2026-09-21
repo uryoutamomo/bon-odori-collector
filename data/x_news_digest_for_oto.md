@@ -1,6 +1,6 @@
 # X News Digest For Oto
 
-- generated_at: 2026-09-20T11:26:27+00:00
+- generated_at: 2026-09-21T12:51:04+00:00
 - digest_count: 20719
 - status: machine prefilter; Oto interpretation pending
 
@@ -1318,7 +1318,7 @@
 | low | new_song_candidate | new | song | 曲候補「うちの町の先輩が音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: うちの町の先輩が音頭 | うちの町の先輩が音頭 盆踊り | https://x.com/m_m_i_m0826/status/2087376633816809502 |
 | low | new_song_candidate | new | song | 曲候補「歌い踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 歌い踊り | 歌い踊り 盆踊り | https://x.com/k4AcPDPpA4x7UMG/status/2087353009642840399 |
 | low | new_song_candidate | new | song | 曲候補「歌える踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 歌える踊り | 歌える踊り 盆踊り | https://x.com/kame_matsuri/status/2086941437611147746 |
-| low | new_song_candidate | new | song | 曲候補「東京音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: つばめ音頭, 松の木小唄 | 東京音頭 盆踊り; 深川音頭 盆踊り | https://x.com/kaz0045/status/2086835673370329168 |
+| low | new_song_candidate | new | song | 曲候補「東京音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: つばめ音頭 | 東京音頭 盆踊り; 深川音頭 盆踊り | https://x.com/kaz0045/status/2086835673370329168 |
 | low | new_song_candidate | new | song | 曲候補「さくら音頭」に関するX由来情報。 | 既存曲マスタにない曲名候補: にっぽん花咲音頭 | さくら音頭 盆踊り; 八木節 盆踊り | https://x.com/kaz0045/status/2086834445504639451 |
 | low | new_song_candidate | new | song | 曲候補「まつりが踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: まつりが踊り, ラストまつりが踊り, ダイナミック琉球踊り | まつりが踊り 盆踊り; ラストまつりが踊り 盆踊り | https://x.com/M125M8qgyhWueHS/status/2086943871330848784 |
 | low | new_song_candidate | new | song | 曲候補「歌詞通りの踊り」に関するX由来情報。 | 既存曲マスタにない曲名候補: 歌詞通りの踊り, キョロちゃん音頭 | 歌詞通りの踊り 盆踊り; キョロちゃん音頭 盆踊り | https://x.com/fried_wakame/status/2086806308129476802 |

@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 11,
-  "direct_count": 9,
-  "created_count": 5,
+  "song_candidate_count": 10,
+  "direct_count": 7,
+  "created_count": 3,
   "updated_count": 4,
   "rejected_noise_count": 1,
-  "review_count": 1,
+  "review_count": 2,
   "created": [
     {
       "song_name": "東京谷端さくら音頭",
@@ -27,22 +27,6 @@
     {
       "song_name": "西新井大師音頭",
       "source_term": "西新井大師音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "アンパンマン音頭",
-      "source_term": "アンパンマン音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "楽しそうな踊り",
-      "source_term": "楽しそうな踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -90,6 +74,12 @@
     }
   ],
   "review": [
+    {
+      "term": "水戸黄門おどり",
+      "evidence_count": 4,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=U9wkWQaVNIY"
+    },
     {
       "term": "ゆかた音頭",
       "evidence_count": 1,

@@ -1,17 +1,17 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-09-20T11:34:01.550910+00:00
+- 生成時刻: 2026-09-21T12:58:50.936712+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 52件
-- 候補総数: 11件
+- 対象voices: 48件
+- 候補総数: 10件
 
 ## 内訳
-- 曲候補: 11件
+- 曲候補: 10件
 
 ## レビュー対象
 - 用語・共起レビュー: 0件
-- 曲候補レビュー: 1件
-- 曲の明白候補 dry-run: 9件
+- 曲候補レビュー: 2件
+- 曲の明白候補 dry-run: 7件
 - 曲ノイズ除外: 1件
 
 ## 生成物
@@ -25,4 +25,5 @@
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
 
 ## 曲レビュー例
+- 水戸黄門おどり
 - ゆかた音頭
