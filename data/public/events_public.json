@@ -6204,7 +6204,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6225,9 +6225,9 @@
     "last_seen_dates": [
       "2025-09-15"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-09-15"
@@ -6249,41 +6249,16 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-09-21",
-        "date_end": "2026-09-21",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3月曜を2026年へスライド",
-        "source_date": "2025-09-15",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-09-15"
     ],
     "historical_reference_label": "2025-09-15実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-09-21",
-      "date_end": "2026-09-21",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3月曜を2026年へスライド",
-      "source_date": "2025-09-15",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-09-21",
-    "historical_slide_date_end": "2026-09-21",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3月曜を2026年へスライド",
-    "predicted_date": "2026-09-21",
-    "predicted_date_end": "2026-09-21",
-    "prediction_basis": "2025年実績の同月第3月曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "四谷納涼踊り大会",

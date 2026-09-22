@@ -1,18 +1,18 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-21T12:58:50.936712+00:00",
+  "generated_at": "2026-09-22T11:46:34.997712+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-21T12:58:41.024954+00:00",
+  "source_generated_at": "2026-09-22T11:46:27.983006+00:00",
   "days": 3,
-  "voice_count": 48,
-  "candidate_count": 10,
+  "voice_count": 45,
+  "candidate_count": 6,
   "category_counts": {
-    "曲候補": 10
+    "曲候補": 6
   },
   "non_song_review_count": 0,
-  "song_candidate_count": 10,
-  "song_direct_dry_run_count": 7,
-  "song_review_count": 2,
+  "song_candidate_count": 6,
+  "song_direct_dry_run_count": 4,
+  "song_review_count": 1,
   "song_rejected_noise_count": 1,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
@@ -27,8 +27,7 @@
   "samples": {
     "non_song_review": [],
     "song_review": [
-      "水戸黄門おどり",
-      "ゆかた音頭"
+      "水戸黄門おどり"
     ]
   }
 }

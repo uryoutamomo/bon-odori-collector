@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "3ffcd3386b007c766d4cc5064dd6f119d411a61fb5c06247101dc7aed5787012",
-  "input_size_bytes": 2203211,
+  "input_sha256": "5a68a5b6fb92ef1e618426a01acb2d103af9ca3471ba770164f9899d47489d16",
+  "input_size_bytes": 2203553,
   "item_count": 5,
   "items": [
     {
@@ -11,29 +11,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "間違っていたポスター修正！\nもう間違いないはず\n\n仲一のお祭り2026\n王子神社祭禮\n8/8土\n子ども山車・神輿、大人中神輿\n8/9日\n子ども縁日、大人中神輿\n",
+      "title": "８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊り",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081691162432450562",
-      "source_url": "https://x.com/jujonakahara1/status/2081691162432450562",
+      "source_key": "x:2081945309396308295",
+      "source_url": "https://x.com/adachi_city/status/2081945309396308295",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_63a7191ffe828f3e",
-        "source_key": "x:2081691162432450562",
+        "candidate_id": "xgap_134d249d5de9ff41",
+        "source_key": "x:2081945309396308295",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/jujonakahara1/status/2081691162432450562",
-        "source_text": "\n間違っていたポスター修正！\nもう間違いないはず\n\n仲一のお祭り2026\n王子神社祭禮\n8/8土\n子ども山車・神輿、大人中神輿\n8/9日\n子ども縁日、大人中神輿\n十条銀座などを巡行！\n縁日チケット500円\n\n十条駅前盆踊りは8/7〜9\n上二仲一両青少年部で生ビール販売します\n\n陰祭ですが是非遊びにいらしてください https://t.co/Gl5RWHoV9U",
-        "source_author": "@jujonakahara1",
+        "source_url": "https://x.com/adachi_city/status/2081945309396308295",
+        "source_text": "\n８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊りで出演！多数の夜店やキッチンカーも出ます！ぜひご来場ください。※雨天の場合は中止となります\n#夏祭り #盆踊り https://t.co/IkYpHt2niO",
+        "source_author": "@adachi_city",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@jujonakahara1",
-          "account_name": "十条仲原一丁目町会青少年部",
+          "handle": "@adachi_city",
+          "account_name": "足立区役所",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -42,52 +42,45 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8/8",
-          "8/9",
-          "8/7"
+          "８月１日",
+          "１８時"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@jujonakahara1",
-          "name": "十条仲原一丁目町会青少年部",
+          "account": "@adachi_city",
+          "name": "足立区役所",
           "title": "",
-          "text": "間違っていたポスター修正！\nもう間違いないはず\n\n仲一のお祭り2026\n王子神社祭禮\n8/8土\n子ども山車・神輿、大人中神輿\n8/9日\n子ども縁日、大人中神輿\n十条銀座などを巡行！\n縁日チケット500円\n\n十条駅前盆踊りは8/7〜9\n上二仲一両青少年部で生ビール販売します\n\n陰祭ですが是非遊びにいらしてください https://t.co/Gl5RWHoV9U",
-          "url": "https://x.com/jujonakahara1/status/2081691162432450562",
-          "date": "2026-07-27T10:40:23+00:00",
-          "tweet_id": "2081691162432450562",
+          "text": "８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊りで出演！多数の夜店やキッチンカーも出ます！ぜひご来場ください。※雨天の場合は中止となります\n#夏祭り #盆踊り https://t.co/IkYpHt2niO",
+          "url": "https://x.com/adachi_city/status/2081945309396308295",
+          "date": "2026-07-28T03:30:17+00:00",
+          "tweet_id": "2081945309396308295",
           "tags": [
             "🟡関心",
-            "q-poster-flyer"
+            "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOOnFBRaUAAJQFM.jpg",
-            "https://t.co/Gl5RWHoV9U",
-            "pic.x.com/Gl5RWHoV9U",
-            "https://pbs.twimg.com/media/HOOnFBUbgAAEohj.jpg",
-            "https://pbs.twimg.com/media/HOOnFBSa0AAFejX.jpg",
-            "https://pbs.twimg.com/media/HOOnFBRacAEkQPE.jpg"
+            "https://pbs.twimg.com/media/HOSOOVnWIAAbWeZ.jpg",
+            "https://t.co/IkYpHt2niO",
+            "pic.x.com/IkYpHt2niO"
           ]
         },
         "source_urls": [
-          "https://x.com/jujonakahara1/status/2081691162432450562"
+          "https://x.com/adachi_city/status/2081945309396308295"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HOOnFBRaUAAJQFM.jpg",
-          "https://t.co/Gl5RWHoV9U",
-          "pic.x.com/Gl5RWHoV9U",
-          "https://pbs.twimg.com/media/HOOnFBUbgAAEohj.jpg",
-          "https://pbs.twimg.com/media/HOOnFBSa0AAFejX.jpg",
-          "https://pbs.twimg.com/media/HOOnFBRacAEkQPE.jpg"
+          "https://pbs.twimg.com/media/HOSOOVnWIAAbWeZ.jpg",
+          "https://t.co/IkYpHt2niO",
+          "pic.x.com/IkYpHt2niO"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_2852144f624d6763"
+      "inbox_id": "inbox_495bd4512186aba0"
     },
     {
       "kind": "x_gap",
@@ -95,23 +88,108 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "7月27日(月)松本浩一の動画報告🎥\n\n25〜29日すぎはち公園(6時30分〜)にてラジオ体操が行われています。今朝も参加、地域の皆さんと汗を流しました✨\n\n週",
+      "title": "【花畑地区の盆踊り大会】\n今年も８月１日(土)に花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081718569780621644",
-      "source_url": "https://x.com/Matsumoto_501/status/2081718569780621644",
+      "source_key": "x:2081961083590586446",
+      "source_url": "https://x.com/adachi_city/status/2081961083590586446",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_d5d0014b8302b53e",
-        "source_key": "x:2081718569780621644",
+        "candidate_id": "xgap_2af8d23766f8367a",
+        "source_key": "x:2081961083590586446",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/Matsumoto_501/status/2081718569780621644",
-        "source_text": "\n7月27日(月)松本浩一の動画報告🎥\n\n25〜29日すぎはち公園(6時30分〜)にてラジオ体操が行われています。今朝も参加、地域の皆さんと汗を流しました✨\n\n週末25・26日の松ノ木地域納涼大会（盆踊り）は大盛況でした。ご参加ありがとうございました😊\n\n今週も元気に頑張りましょう！\n\n#杉並区 #ラジオ体操 https://t.co/LC4F7owiBa",
+        "source_url": "https://x.com/adachi_city/status/2081961083590586446",
+        "source_text": "\n【花畑地区の盆踊り大会】\n今年も８月１日(土)に花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(９時終了予定)\n模擬店も多数出店！\nご来場お待ちしてます。\n問合せ先　花畑区民事務所　03(3884)4451 https://t.co/8Qiv4U7mfu",
+        "source_author": "@adachi_city",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@adachi_city",
+          "account_name": "足立区役所",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "８月１日",
+          "４時",
+          "５時",
+          "６時",
+          "９時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": {
+          "venue": "花畑公園",
+          "region_hint": "足立区",
+          "address": "足立区花畑4-40-1",
+          "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
+        },
+        "voice": {
+          "source": "x",
+          "account": "@adachi_city",
+          "name": "足立区役所",
+          "title": "",
+          "text": "【花畑地区の盆踊り大会】\n今年も８月１日(土)に花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(９時終了予定)\n模擬店も多数出店！\nご来場お待ちしてます。\n問合せ先　花畑区民事務所　03(3884)4451 https://t.co/8Qiv4U7mfu",
+          "url": "https://x.com/adachi_city/status/2081961083590586446",
+          "date": "2026-07-28T04:32:57+00:00",
+          "tweet_id": "2081961083590586446",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOSckhqaEAAu9na.jpg",
+            "https://t.co/8Qiv4U7mfu",
+            "pic.x.com/8Qiv4U7mfu"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/adachi_city/status/2081961083590586446"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOSckhqaEAAu9na.jpg",
+          "https://t.co/8Qiv4U7mfu",
+          "pic.x.com/8Qiv4U7mfu"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_ab955ea73d310d22"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "8/1(土)は梅里中央公園へ🏮盆踊り大会が開催されます！\n松ノ木中ダンス部や胡蝶連の阿波踊り、模擬店など見どころ満載✨\n\nもちろんメインは盆踊り！\n\n松本浩一は",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2081999337375371775",
+      "source_url": "https://x.com/Matsumoto_501/status/2081999337375371775",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_aaad705d156b0f66",
+        "source_key": "x:2081999337375371775",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/Matsumoto_501/status/2081999337375371775",
+        "source_text": "\n8/1(土)は梅里中央公園へ🏮盆踊り大会が開催されます！\n松ノ木中ダンス部や胡蝶連の阿波踊り、模擬店など見どころ満載✨\n\nもちろんメインは盆踊り！\n\n松本浩一は、今回も櫓（やぐら）の警備を担当します💪\n\n安全第一で全力サポート！会場でお会いしましょう😊\n#杉並区 #盆踊り https://t.co/6Vi2Au9dcn",
         "source_author": "@Matsumoto_501",
         "source_officiality": {
           "classification": "registered_official_social",
@@ -126,8 +204,7 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "7月27日",
-          "6時"
+          "8/1"
         ],
         "observed_dates": [],
         "event_group_key": "",
@@ -137,34 +214,40 @@
           "account": "@Matsumoto_501",
           "name": "松本浩一 杉並区議会議員 立憲民主党",
           "title": "",
-          "text": "7月27日(月)松本浩一の動画報告🎥\n\n25〜29日すぎはち公園(6時30分〜)にてラジオ体操が行われています。今朝も参加、地域の皆さんと汗を流しました✨\n\n週末25・26日の松ノ木地域納涼大会（盆踊り）は大盛況でした。ご参加ありがとうございました😊\n\n今週も元気に頑張りましょう！\n\n#杉並区 #ラジオ体操 https://t.co/LC4F7owiBa",
-          "url": "https://x.com/Matsumoto_501/status/2081718569780621644",
-          "date": "2026-07-27T12:29:18+00:00",
-          "tweet_id": "2081718569780621644",
+          "text": "8/1(土)は梅里中央公園へ🏮盆踊り大会が開催されます！\n松ノ木中ダンス部や胡蝶連の阿波踊り、模擬店など見どころ満載✨\n\nもちろんメインは盆踊り！\n\n松本浩一は、今回も櫓（やぐら）の警備を担当します💪\n\n安全第一で全力サポート！会場でお会いしましょう😊\n#杉並区 #盆踊り https://t.co/6Vi2Au9dcn",
+          "url": "https://x.com/Matsumoto_501/status/2081999337375371775",
+          "date": "2026-07-28T07:04:58+00:00",
+          "tweet_id": "2081999337375371775",
           "tags": [
             "🟡関心",
-            "q-venue-tokyo-wards"
+            "q-base"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/amplify_video_thumb/2081718352742146048/img/WIp_16xMsEHPaFSy.jpg",
-            "https://t.co/LC4F7owiBa",
-            "pic.x.com/LC4F7owiBa"
+            "https://pbs.twimg.com/media/HOS_W95bUAA7sru.jpg",
+            "https://t.co/6Vi2Au9dcn",
+            "pic.x.com/6Vi2Au9dcn",
+            "https://pbs.twimg.com/media/HOS_W95agAAfe_s.jpg",
+            "https://pbs.twimg.com/media/HOS_W96akAA1ujM.jpg",
+            "https://pbs.twimg.com/media/HOS_W9ta0AAvusp.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/Matsumoto_501/status/2081718569780621644"
+          "https://x.com/Matsumoto_501/status/2081999337375371775"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/amplify_video_thumb/2081718352742146048/img/WIp_16xMsEHPaFSy.jpg",
-          "https://t.co/LC4F7owiBa",
-          "pic.x.com/LC4F7owiBa"
+          "https://pbs.twimg.com/media/HOS_W95bUAA7sru.jpg",
+          "https://t.co/6Vi2Au9dcn",
+          "pic.x.com/6Vi2Au9dcn",
+          "https://pbs.twimg.com/media/HOS_W95agAAfe_s.jpg",
+          "https://pbs.twimg.com/media/HOS_W96akAA1ujM.jpg",
+          "https://pbs.twimg.com/media/HOS_W9ta0AAvusp.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_7499c8a87b9579c5"
+      "inbox_id": "inbox_88d74d4a434b6f64"
     },
     {
       "kind": "x_gap",
@@ -172,29 +255,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "7/25,26喜多見駅前の盆踊り大会でした‼️今年も、盆ダンサーズの一員として参加🥰\n\n商店街の皆さまによる夏の一大イベント✨ずっと雨が心配で…結局途中降られて",
+      "title": "【盆踊り情報2026】【梅屋敷】8/1(土)大森中八幡自治会が八幡神社で「盆踊り」\n18:30～20:00で開催です⛩️\n太鼓の音に合わせて、みんなで楽しく踊り",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2081729669867753892",
-      "source_url": "https://x.com/Kuroda_Aiko/status/2081729669867753892",
+      "source_key": "x:2082013193598058889",
+      "source_url": "https://x.com/otafull/status/2082013193598058889",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_4994079a2157f0de",
-        "source_key": "x:2081729669867753892",
+        "candidate_id": "xgap_e34dd57cf48e11ac",
+        "source_key": "x:2082013193598058889",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/Kuroda_Aiko/status/2081729669867753892",
-        "source_text": "\n7/25,26喜多見駅前の盆踊り大会でした‼️今年も、盆ダンサーズの一員として参加🥰\n\n商店街の皆さまによる夏の一大イベント✨ずっと雨が心配で…結局途中降られて中断しましたが、雨が止んで再開、二日間とも最後までやり切ることができました💖\n老若男女、皆さまとたくさん踊れて楽しかったです！！\n\n写真1枚目、太鼓を叩いていた桃野芳文区議と😆\n2枚目、雨で中断中のもぐもぐタイムで焼そば😋\n3枚目、各地を回っていらっしゃった佐藤ひろと区議と📸\n4枚目、祭りラストでかき氷🍧",
-        "source_author": "@Kuroda_Aiko",
+        "source_url": "https://x.com/otafull/status/2082013193598058889",
+        "source_text": "\n【盆踊り情報2026】【梅屋敷】8/1(土)大森中八幡自治会が八幡神社で「盆踊り」\n18:30～20:00で開催です⛩️\n太鼓の音に合わせて、みんなで楽しく踊りましょう🏮\nhttps://t.co/fKPz8pRYNs\n#大田区　#商店街　#梅屋敷　#盆踊り",
+        "source_author": "@otafull",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@kuroda_aiko",
-          "account_name": "くろだあいこ 世田谷区議会議員",
+          "handle": "@otafull",
+          "account_name": "おーたふる／大田区商店街連合会",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -203,202 +286,113 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "7/25"
+          "8/1"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@Kuroda_Aiko",
-          "name": "くろだあいこ 世田谷区議会議員",
+          "account": "@otafull",
+          "name": "おーたふる／大田区商店街連合会",
           "title": "",
-          "text": "7/25,26喜多見駅前の盆踊り大会でした‼️今年も、盆ダンサーズの一員として参加🥰\n\n商店街の皆さまによる夏の一大イベント✨ずっと雨が心配で…結局途中降られて中断しましたが、雨が止んで再開、二日間とも最後までやり切ることができました💖\n老若男女、皆さまとたくさん踊れて楽しかったです！！\n\n写真1枚目、太鼓を叩いていた桃野芳文区議と😆\n2枚目、雨で中断中のもぐもぐタイムで焼そば😋\n3枚目、各地を回っていらっしゃった佐藤ひろと区議と📸\n4枚目、祭りラストでかき氷🍧",
-          "url": "https://x.com/Kuroda_Aiko/status/2081729669867753892",
-          "date": "2026-07-27T13:13:24+00:00",
-          "tweet_id": "2081729669867753892",
-          "tags": [
-            "🟢一次レポ",
-            "q-venue-tokyo-wards"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOPKGbPaAAAEom2.jpg",
-            "https://t.co/6bFgFbWsbD",
-            "pic.x.com/6bFgFbWsbD",
-            "https://pbs.twimg.com/media/HOPKGbWaYAAney6.jpg",
-            "https://pbs.twimg.com/media/HOPKGbMbgAASHP_.jpg",
-            "https://pbs.twimg.com/media/HOPKGbSbMAAnwDj.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/Kuroda_Aiko/status/2081729669867753892"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HOPKGbPaAAAEom2.jpg",
-          "https://t.co/6bFgFbWsbD",
-          "pic.x.com/6bFgFbWsbD",
-          "https://pbs.twimg.com/media/HOPKGbWaYAAney6.jpg",
-          "https://pbs.twimg.com/media/HOPKGbMbgAASHP_.jpg",
-          "https://pbs.twimg.com/media/HOPKGbSbMAAnwDj.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_49c53868d5638729"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "昨日に引き続き、今朝も過ごしやすい気候ですね🍀\n今朝は王子小学校でのラジオ体操と、公団王子五丁目団地での盆踊り練習に参加してきました！涼しくて、いつもより快適に",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2081874577597296994",
-      "source_url": "https://x.com/heartfulshinobu/status/2081874577597296994",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_b45f021bcd182a0f",
-        "source_key": "x:2081874577597296994",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/heartfulshinobu/status/2081874577597296994",
-        "source_text": "\n昨日に引き続き、今朝も過ごしやすい気候ですね🍀\n今朝は王子小学校でのラジオ体操と、公団王子五丁目団地での盆踊り練習に参加してきました！涼しくて、いつもより快適に運動できました。\n\n王子地区の夏休みラジオ体操前半は7月31日まで開催中です📣\n毎朝子どもたちのために早朝から準備を進めてくださる青少年地区委員の皆様、本当にありがとうございます！\n\nみなさんも素敵な一日をお過ごしください😊✨",
-        "source_author": "@heartfulshinobu",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@heartfulshinobu",
-          "account_name": "ふるた しのぶ 🌼北区議会議員",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7月31日"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@heartfulshinobu",
-          "name": "ふるた しのぶ 🌼北区議会議員",
-          "title": "",
-          "text": "昨日に引き続き、今朝も過ごしやすい気候ですね🍀\n今朝は王子小学校でのラジオ体操と、公団王子五丁目団地での盆踊り練習に参加してきました！涼しくて、いつもより快適に運動できました。\n\n王子地区の夏休みラジオ体操前半は7月31日まで開催中です📣\n毎朝子どもたちのために早朝から準備を進めてくださる青少年地区委員の皆様、本当にありがとうございます！\n\nみなさんも素敵な一日をお過ごしください😊✨",
-          "url": "https://x.com/heartfulshinobu/status/2081874577597296994",
-          "date": "2026-07-27T22:49:13+00:00",
-          "tweet_id": "2081874577597296994",
-          "tags": [
-            "🟢一次レポ",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HORN5JHaAAA-raQ.jpg",
-            "https://t.co/HwwFnnBix2",
-            "pic.x.com/HwwFnnBix2"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/heartfulshinobu/status/2081874577597296994"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HORN5JHaAAA-raQ.jpg",
-          "https://t.co/HwwFnnBix2",
-          "pic.x.com/HwwFnnBix2"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_73a0b82cfe244d87"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "おはようございます。\n今年もお祭りの季節となってきましたね。\n\n私が実行委員として運営にも関わらさせていただいております【第4回夏の盆踊り大会】のチラシも出来上",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2081887928503136557",
-      "source_url": "https://x.com/GihuHashimawo/status/2081887928503136557",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_46d229ca090c9e1d",
-        "source_key": "x:2081887928503136557",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/GihuHashimawo/status/2081887928503136557",
-        "source_text": "\nおはようございます。\n今年もお祭りの季節となってきましたね。\n\n私が実行委員として運営にも関わらさせていただいております【第4回夏の盆踊り大会】のチラシも出来上がってまいりました。\n\n令和8年8月8日にBLOCK47さんの芝生広場をお借りして行います。\n是非皆様遊びに来てくださいね✨ https://t.co/KOMH9Rt2WT",
-        "source_author": "@GihuHashimawo",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@gihuhashimawo",
-          "account_name": "かわさき周平:羽島市議会議員",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8月8日"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@GihuHashimawo",
-          "name": "かわさき周平:羽島市議会議員",
-          "title": "",
-          "text": "おはようございます。\n今年もお祭りの季節となってきましたね。\n\n私が実行委員として運営にも関わらさせていただいております【第4回夏の盆踊り大会】のチラシも出来上がってまいりました。\n\n令和8年8月8日にBLOCK47さんの芝生広場をお借りして行います。\n是非皆様遊びに来てくださいね✨ https://t.co/KOMH9Rt2WT",
-          "url": "https://x.com/GihuHashimawo/status/2081887928503136557",
-          "date": "2026-07-27T23:42:16+00:00",
-          "tweet_id": "2081887928503136557",
+          "text": "【盆踊り情報2026】【梅屋敷】8/1(土)大森中八幡自治会が八幡神社で「盆踊り」\n18:30～20:00で開催です⛩️\n太鼓の音に合わせて、みんなで楽しく踊りましょう🏮\nhttps://t.co/fKPz8pRYNs\n#大田区　#商店街　#梅屋敷　#盆踊り",
+          "url": "https://x.com/otafull/status/2082013193598058889",
+          "date": "2026-07-28T08:00:01+00:00",
+          "tweet_id": "2082013193598058889",
           "tags": [
             "🟡関心",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HORaBgLa0AA3bQB.jpg",
-            "https://t.co/KOMH9Rt2WT",
-            "pic.x.com/KOMH9Rt2WT"
+            "q-base"
           ]
         },
         "source_urls": [
-          "https://x.com/GihuHashimawo/status/2081887928503136557"
+          "https://x.com/otafull/status/2082013193598058889"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_bdb0759eb3645a0d"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "■「鍛冶谷（かじや）町会盆おどり」、本日7月29日（水）、明日30日（木）17時から開催。8年ぶりの復活開催です。\n\nおはようございます。\n前戸田市議会議員の林",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2082208004456530318",
+      "source_url": "https://x.com/fuyu884/status/2082208004456530318",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_7a17431bb64daeb1",
+        "source_key": "x:2082208004456530318",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/fuyu884/status/2082208004456530318",
+        "source_text": "\n■「鍛冶谷（かじや）町会盆おどり」、本日7月29日（水）、明日30日（木）17時から開催。8年ぶりの復活開催です。\n\nおはようございます。\n前戸田市議会議員の林冬彦です。\n\n夏の夜を彩る、戸田市鍛冶谷（かじや）町会の盆踊りが、いよいよ今年復活します！\n\n本日・令和8年7月29日（水）、明日30日（木）の2日間、場所はかじや町公園。8年ぶりの開催です！\n\n鍛冶谷町会は私が22年間住んでいる町会。長く地域の皆さんに親しまれてきた盆踊りが再び開催されることを、とても嬉しく思います。\n￼\n会場では、みんなで輪になって踊る盆踊りはもちろん、キッチンカーや焼きそばなどのテント販売、子ども向けゲームなども予定されています。\n\n浴衣で参加すれば、夏祭り気分もさらに盛り上がりますよ！\n\n小さなお子さんからご年配の方まで、家族や友人、ご近所の皆さんと一緒に楽しめる、地域ならではのあたたかなお祭りです。\n\n夏休みの思い出づくりにもぴったり。\n近隣の方もぜひ足を運んでください。\n\n私は音響を担当しています。もちろん、踊りますよ！\n\nこれまで、近隣の町会の盆踊りにお邪魔して踊っていましたが（今年もお邪魔します",
+        "source_author": "@fuyu884",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@fuyu884",
+          "account_name": "林冬彦（政治家・前戸田市議会議員）",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "7月29日",
+          "17時",
+          "7月29日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@fuyu884",
+          "name": "林冬彦（政治家・前戸田市議会議員）",
+          "title": "",
+          "text": "■「鍛冶谷（かじや）町会盆おどり」、本日7月29日（水）、明日30日（木）17時から開催。8年ぶりの復活開催です。\n\nおはようございます。\n前戸田市議会議員の林冬彦です。\n\n夏の夜を彩る、戸田市鍛冶谷（かじや）町会の盆踊りが、いよいよ今年復活します！\n\n本日・令和8年7月29日（水）、明日30日（木）の2日間、場所はかじや町公園。8年ぶりの開催です！\n\n鍛冶谷町会は私が22年間住んでいる町会。長く地域の皆さんに親しまれてきた盆踊りが再び開催されることを、とても嬉しく思います。\n￼\n会場では、みんなで輪になって踊る盆踊りはもちろん、キッチンカーや焼きそばなどのテント販売、子ども向けゲームなども予定されています。\n\n浴衣で参加すれば、夏祭り気分もさらに盛り上がりますよ！\n\n小さなお子さんからご年配の方まで、家族や友人、ご近所の皆さんと一緒に楽しめる、地域ならではのあたたかなお祭りです。\n\n夏休みの思い出づくりにもぴったり。\n近隣の方もぜひ足を運んでください。\n\n私は音響を担当しています。もちろん、踊りますよ！\n\nこれまで、近隣の町会の盆踊りにお邪魔して踊っていましたが（今年もお邪魔します）",
+          "url": "https://x.com/fuyu884/status/2082208004456530318",
+          "date": "2026-07-28T20:54:08+00:00",
+          "tweet_id": "2082208004456530318",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOV9JLwbAAA7FDh.jpg",
+            "https://t.co/jpqza4un28",
+            "pic.x.com/jpqza4un28"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/fuyu884/status/2082208004456530318"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HORaBgLa0AA3bQB.jpg",
-          "https://t.co/KOMH9Rt2WT",
-          "pic.x.com/KOMH9Rt2WT"
+          "https://pbs.twimg.com/media/HOV9JLwbAAA7FDh.jpg",
+          "https://t.co/jpqza4un28",
+          "pic.x.com/jpqza4un28"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_eff17d5c8d931faa"
+      "inbox_id": "inbox_ab409077532cf58a"
     }
   ],
   "selection": {
@@ -406,11 +400,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2081691162432450562",
-      "x:2081718569780621644",
-      "x:2081729669867753892",
-      "x:2081874577597296994",
-      "x:2081887928503136557"
+      "x:2081945309396308295",
+      "x:2081961083590586446",
+      "x:2081999337375371775",
+      "x:2082013193598058889",
+      "x:2082208004456530318"
     ]
   },
   "write_mode": "snapshot_only_default_off",

@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 10,
-  "direct_count": 7,
+  "song_candidate_count": 6,
+  "direct_count": 4,
   "created_count": 3,
-  "updated_count": 4,
+  "updated_count": 1,
   "rejected_noise_count": 1,
-  "review_count": 2,
+  "review_count": 1,
   "created": [
     {
       "song_name": "東京谷端さくら音頭",
@@ -39,30 +39,6 @@
       "source_term": "東京音頭",
       "target": "update",
       "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "八木節",
-      "source_term": "八木節",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 2,
-      "dry_run": true
-    },
-    {
-      "song_name": "大東京音頭",
-      "source_term": "大東京音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "炭坑節",
-      "source_term": "炭坑節",
-      "target": "update",
-      "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     }
@@ -76,15 +52,9 @@
   "review": [
     {
       "term": "水戸黄門おどり",
-      "evidence_count": 4,
+      "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=U9wkWQaVNIY"
-    },
-    {
-      "term": "ゆかた音頭",
-      "evidence_count": 1,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=bxWX-KxRIWQ"
+      "evidence_url": "https://www.youtube.com/watch?v=uZEAwywvC04"
     }
   ]
 }
