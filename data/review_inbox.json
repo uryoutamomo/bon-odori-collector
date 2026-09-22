@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-21T13:09:55.593705+00:00",
+  "generated_at": "2026-09-22T11:47:46.455333+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,445 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_495bd4512186aba0",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081945309396308295",
+      "source_url": "https://x.com/adachi_city/status/2081945309396308295",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0012f7cb470ce34895d25065d34396721be21908f1bcf4e78fd6b4cc9c0f264c",
+      "last_seen_at": "github-35722328643-1",
+      "created_at": "2026-09-22T11:47:10.461414+00:00",
+      "updated_at": "2026-09-22T11:47:10.461414+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_134d249d5de9ff41",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月１日",
+          "１８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@adachi_city",
+        "source_count": 1,
+        "source_key": "x:2081945309396308295",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOSOOVnWIAAbWeZ.jpg",
+          "https://t.co/IkYpHt2niO",
+          "pic.x.com/IkYpHt2niO"
+        ],
+        "source_officiality": {
+          "account_name": "足立区役所",
+          "classification": "registered_official_social",
+          "handle": "@adachi_city",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊りで出演！多数の夜店やキッチンカーも出ます！ぜひご来場ください。※雨天の場合は中止となります\n#夏祭り #盆踊り https://t.co/IkYpHt2niO",
+        "source_url": "https://x.com/adachi_city/status/2081945309396308295",
+        "source_urls": [
+          "https://x.com/adachi_city/status/2081945309396308295"
+        ],
+        "voice": {
+          "account": "@adachi_city",
+          "date": "2026-07-28T03:30:17+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOSOOVnWIAAbWeZ.jpg",
+            "https://t.co/IkYpHt2niO",
+            "pic.x.com/IkYpHt2niO"
+          ],
+          "name": "足立区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊りで出演！多数の夜店やキッチンカーも出ます！ぜひご来場ください。※雨天の場合は中止となります\n#夏祭り #盆踊り https://t.co/IkYpHt2niO",
+          "title": "",
+          "tweet_id": "2081945309396308295",
+          "url": "https://x.com/adachi_city/status/2081945309396308295"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_88d74d4a434b6f64",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/1(土)は梅里中央公園へ🏮盆踊り大会が開催されます！\n松ノ木中ダンス部や胡蝶連の阿波踊り、模擬店など見どころ満載✨\n\nもちろんメインは盆踊り！\n\n松本浩一は",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081999337375371775",
+      "source_url": "https://x.com/Matsumoto_501/status/2081999337375371775",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4e0e40c45b21669601a68e0e1e5c8e1c86971b66ef184b0db2022438a797b90a",
+      "last_seen_at": "github-35722328643-1",
+      "created_at": "2026-09-22T11:47:10.461414+00:00",
+      "updated_at": "2026-09-22T11:47:10.461414+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_aaad705d156b0f66",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Matsumoto_501",
+        "source_count": 1,
+        "source_key": "x:2081999337375371775",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOS_W95bUAA7sru.jpg",
+          "https://t.co/6Vi2Au9dcn",
+          "pic.x.com/6Vi2Au9dcn",
+          "https://pbs.twimg.com/media/HOS_W95agAAfe_s.jpg",
+          "https://pbs.twimg.com/media/HOS_W96akAA1ujM.jpg",
+          "https://pbs.twimg.com/media/HOS_W9ta0AAvusp.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "松本浩一 杉並区議会議員 立憲民主党",
+          "classification": "registered_official_social",
+          "handle": "@matsumoto_501",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/1(土)は梅里中央公園へ🏮盆踊り大会が開催されます！\n松ノ木中ダンス部や胡蝶連の阿波踊り、模擬店など見どころ満載✨\n\nもちろんメインは盆踊り！\n\n松本浩一は、今回も櫓（やぐら）の警備を担当します💪\n\n安全第一で全力サポート！会場でお会いしましょう😊\n#杉並区 #盆踊り https://t.co/6Vi2Au9dcn",
+        "source_url": "https://x.com/Matsumoto_501/status/2081999337375371775",
+        "source_urls": [
+          "https://x.com/Matsumoto_501/status/2081999337375371775"
+        ],
+        "voice": {
+          "account": "@Matsumoto_501",
+          "date": "2026-07-28T07:04:58+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOS_W95bUAA7sru.jpg",
+            "https://t.co/6Vi2Au9dcn",
+            "pic.x.com/6Vi2Au9dcn",
+            "https://pbs.twimg.com/media/HOS_W95agAAfe_s.jpg",
+            "https://pbs.twimg.com/media/HOS_W96akAA1ujM.jpg",
+            "https://pbs.twimg.com/media/HOS_W9ta0AAvusp.jpg"
+          ],
+          "name": "松本浩一 杉並区議会議員 立憲民主党",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "8/1(土)は梅里中央公園へ🏮盆踊り大会が開催されます！\n松ノ木中ダンス部や胡蝶連の阿波踊り、模擬店など見どころ満載✨\n\nもちろんメインは盆踊り！\n\n松本浩一は、今回も櫓（やぐら）の警備を担当します💪\n\n安全第一で全力サポート！会場でお会いしましょう😊\n#杉並区 #盆踊り https://t.co/6Vi2Au9dcn",
+          "title": "",
+          "tweet_id": "2081999337375371775",
+          "url": "https://x.com/Matsumoto_501/status/2081999337375371775"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ab409077532cf58a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "■「鍛冶谷（かじや）町会盆おどり」、本日7月29日（水）、明日30日（木）17時から開催。8年ぶりの復活開催です。\n\nおはようございます。\n前戸田市議会議員の林",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082208004456530318",
+      "source_url": "https://x.com/fuyu884/status/2082208004456530318",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9536d7c19c2d35a4c5a6a37cd09cf84c85d861b84faafc71b5fd309c8d2abfaf",
+      "last_seen_at": "github-35722328643-1",
+      "created_at": "2026-09-22T11:47:10.461414+00:00",
+      "updated_at": "2026-09-22T11:47:10.461414+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_7a17431bb64daeb1",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月29日",
+          "17時",
+          "7月29日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@fuyu884",
+        "source_count": 1,
+        "source_key": "x:2082208004456530318",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOV9JLwbAAA7FDh.jpg",
+          "https://t.co/jpqza4un28",
+          "pic.x.com/jpqza4un28"
+        ],
+        "source_officiality": {
+          "account_name": "林冬彦（政治家・前戸田市議会議員）",
+          "classification": "registered_official_social",
+          "handle": "@fuyu884",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n■「鍛冶谷（かじや）町会盆おどり」、本日7月29日（水）、明日30日（木）17時から開催。8年ぶりの復活開催です。\n\nおはようございます。\n前戸田市議会議員の林冬彦です。\n\n夏の夜を彩る、戸田市鍛冶谷（かじや）町会の盆踊りが、いよいよ今年復活します！\n\n本日・令和8年7月29日（水）、明日30日（木）の2日間、場所はかじや町公園。8年ぶりの開催です！\n\n鍛冶谷町会は私が22年間住んでいる町会。長く地域の皆さんに親しまれてきた盆踊りが再び開催されることを、とても嬉しく思います。\n￼\n会場では、みんなで輪になって踊る盆踊りはもちろん、キッチンカーや焼きそばなどのテント販売、子ども向けゲームなども予定されています。\n\n浴衣で参加すれば、夏祭り気分もさらに盛り上がりますよ！\n\n小さなお子さんからご年配の方まで、家族や友人、ご近所の皆さんと一緒に楽しめる、地域ならではのあたたかなお祭りです。\n\n夏休みの思い出づくりにもぴったり。\n近隣の方もぜひ足を運んでください。\n\n私は音響を担当しています。もちろん、踊りますよ！\n\nこれまで、近隣の町会の盆踊りにお邪魔して踊っていましたが（今年もお邪魔します",
+        "source_url": "https://x.com/fuyu884/status/2082208004456530318",
+        "source_urls": [
+          "https://x.com/fuyu884/status/2082208004456530318"
+        ],
+        "voice": {
+          "account": "@fuyu884",
+          "date": "2026-07-28T20:54:08+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOV9JLwbAAA7FDh.jpg",
+            "https://t.co/jpqza4un28",
+            "pic.x.com/jpqza4un28"
+          ],
+          "name": "林冬彦（政治家・前戸田市議会議員）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "■「鍛冶谷（かじや）町会盆おどり」、本日7月29日（水）、明日30日（木）17時から開催。8年ぶりの復活開催です。\n\nおはようございます。\n前戸田市議会議員の林冬彦です。\n\n夏の夜を彩る、戸田市鍛冶谷（かじや）町会の盆踊りが、いよいよ今年復活します！\n\n本日・令和8年7月29日（水）、明日30日（木）の2日間、場所はかじや町公園。8年ぶりの開催です！\n\n鍛冶谷町会は私が22年間住んでいる町会。長く地域の皆さんに親しまれてきた盆踊りが再び開催されることを、とても嬉しく思います。\n￼\n会場では、みんなで輪になって踊る盆踊りはもちろん、キッチンカーや焼きそばなどのテント販売、子ども向けゲームなども予定されています。\n\n浴衣で参加すれば、夏祭り気分もさらに盛り上がりますよ！\n\n小さなお子さんからご年配の方まで、家族や友人、ご近所の皆さんと一緒に楽しめる、地域ならではのあたたかなお祭りです。\n\n夏休みの思い出づくりにもぴったり。\n近隣の方もぜひ足を運んでください。\n\n私は音響を担当しています。もちろん、踊りますよ！\n\nこれまで、近隣の町会の盆踊りにお邪魔して踊っていましたが（今年もお邪魔します）",
+          "title": "",
+          "tweet_id": "2082208004456530318",
+          "url": "https://x.com/fuyu884/status/2082208004456530318"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ab955ea73d310d22",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【花畑地区の盆踊り大会】\n今年も８月１日(土)に花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081961083590586446",
+      "source_url": "https://x.com/adachi_city/status/2081961083590586446",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f7cc6777e4ffcb43602f67d94fd7ac1acd01678d6fbc2facb249950ff7bae224",
+      "last_seen_at": "github-35722328643-1",
+      "created_at": "2026-09-22T11:47:10.461414+00:00",
+      "updated_at": "2026-09-22T11:47:10.461414+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2af8d23766f8367a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月１日",
+          "４時",
+          "５時",
+          "６時",
+          "９時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "足立区花畑4-40-1",
+          "region_hint": "足立区",
+          "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+          "venue": "花畑公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@adachi_city",
+        "source_count": 1,
+        "source_key": "x:2081961083590586446",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOSckhqaEAAu9na.jpg",
+          "https://t.co/8Qiv4U7mfu",
+          "pic.x.com/8Qiv4U7mfu"
+        ],
+        "source_officiality": {
+          "account_name": "足立区役所",
+          "classification": "registered_official_social",
+          "handle": "@adachi_city",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【花畑地区の盆踊り大会】\n今年も８月１日(土)に花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(９時終了予定)\n模擬店も多数出店！\nご来場お待ちしてます。\n問合せ先　花畑区民事務所　03(3884)4451 https://t.co/8Qiv4U7mfu",
+        "source_url": "https://x.com/adachi_city/status/2081961083590586446",
+        "source_urls": [
+          "https://x.com/adachi_city/status/2081961083590586446"
+        ],
+        "voice": {
+          "account": "@adachi_city",
+          "date": "2026-07-28T04:32:57+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOSckhqaEAAu9na.jpg",
+            "https://t.co/8Qiv4U7mfu",
+            "pic.x.com/8Qiv4U7mfu"
+          ],
+          "name": "足立区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【花畑地区の盆踊り大会】\n今年も８月１日(土)に花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(９時終了予定)\n模擬店も多数出店！\nご来場お待ちしてます。\n問合せ先　花畑区民事務所　03(3884)4451 https://t.co/8Qiv4U7mfu",
+          "title": "",
+          "tweet_id": "2081961083590586446",
+          "url": "https://x.com/adachi_city/status/2081961083590586446"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_bdb0759eb3645a0d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【梅屋敷】8/1(土)大森中八幡自治会が八幡神社で「盆踊り」\n18:30～20:00で開催です⛩️\n太鼓の音に合わせて、みんなで楽しく踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082013193598058889",
+      "source_url": "https://x.com/otafull/status/2082013193598058889",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "686c3001ff9f42ecbba030b43f081a1961bf033a64e7372a1233384ce1609973",
+      "last_seen_at": "github-35722328643-1",
+      "created_at": "2026-09-22T11:47:10.461414+00:00",
+      "updated_at": "2026-09-22T11:47:10.461414+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e34dd57cf48e11ac",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2082013193598058889",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【梅屋敷】8/1(土)大森中八幡自治会が八幡神社で「盆踊り」\n18:30～20:00で開催です⛩️\n太鼓の音に合わせて、みんなで楽しく踊りましょう🏮\nhttps://t.co/fKPz8pRYNs\n#大田区　#商店街　#梅屋敷　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2082013193598058889",
+        "source_urls": [
+          "https://x.com/otafull/status/2082013193598058889"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-28T08:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【盆踊り情報2026】【梅屋敷】8/1(土)大森中八幡自治会が八幡神社で「盆踊り」\n18:30～20:00で開催です⛩️\n太鼓の音に合わせて、みんなで楽しく踊りましょう🏮\nhttps://t.co/fKPz8pRYNs\n#大田区　#商店街　#梅屋敷　#盆踊り",
+          "title": "",
+          "tweet_id": "2082013193598058889",
+          "url": "https://x.com/otafull/status/2082013193598058889"
         }
       }
     },
