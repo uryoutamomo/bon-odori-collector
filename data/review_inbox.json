@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-23T11:57:48.879237+00:00",
+  "generated_at": "2026-09-24T11:53:06.010011+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,444 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_068f9861aaf6637a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "築地本願寺で執り行われた「築地町会物故者追悼法要」に参列させていただきました。\n\n法要の後は、「日本一美味しい盆踊り」へ。\n築地場外市場の名店が軒を連ね、どのブ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082608159190036936",
+      "source_url": "https://x.com/ishijimahideki/status/2082608159190036936",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6d4764797655e881788960a87f28c6cfeea821e806adc687f5fbc09c0d463e1b",
+      "last_seen_at": "github-35994704617-1",
+      "created_at": "2026-09-24T11:52:35.231336+00:00",
+      "updated_at": "2026-09-24T11:52:35.231336+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_9309dd5d51d41493",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中央区築地3-15-1",
+          "region_hint": "中央区",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/",
+          "venue": "築地本願寺"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@ishijimahideki",
+        "source_count": 1,
+        "source_key": "x:2082608159190036936",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HObpFHIagAAdRsv.jpg",
+          "https://t.co/sY29tTgmlw",
+          "pic.x.com/sY29tTgmlw",
+          "https://pbs.twimg.com/media/HObpFG7b0AAIa_Z.jpg",
+          "https://pbs.twimg.com/media/HObpFG8bEAAHSJT.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "石島ひでき 前 東京都議会議員（中央区）",
+          "classification": "registered_official_social",
+          "handle": "@ishijimahideki",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n築地本願寺で執り行われた「築地町会物故者追悼法要」に参列させていただきました。\n\n法要の後は、「日本一美味しい盆踊り」へ。\n築地場外市場の名店が軒を連ね、どのブースも長蛇の列で大盛況！会場は多くの来場者で大いに賑わっていました。\n開催は 8月1日まで。\nぜひ、築地ならではの夏の風物詩をお楽しみください！\n\n#築地本願寺 #物故者追悼法要 #盆踊り #築地場外市場 #食のまち",
+        "source_url": "https://x.com/ishijimahideki/status/2082608159190036936",
+        "source_urls": [
+          "https://x.com/ishijimahideki/status/2082608159190036936"
+        ],
+        "voice": {
+          "account": "@ishijimahideki",
+          "date": "2026-07-29T23:24:12+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HObpFHIagAAdRsv.jpg",
+            "https://t.co/sY29tTgmlw",
+            "pic.x.com/sY29tTgmlw",
+            "https://pbs.twimg.com/media/HObpFG7b0AAIa_Z.jpg",
+            "https://pbs.twimg.com/media/HObpFG8bEAAHSJT.jpg"
+          ],
+          "name": "石島ひでき 前 東京都議会議員（中央区）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "築地本願寺で執り行われた「築地町会物故者追悼法要」に参列させていただきました。\n\n法要の後は、「日本一美味しい盆踊り」へ。\n築地場外市場の名店が軒を連ね、どのブースも長蛇の列で大盛況！会場は多くの来場者で大いに賑わっていました。\n開催は 8月1日まで。\nぜひ、築地ならではの夏の風物詩をお楽しみください！\n\n#築地本願寺 #物故者追悼法要 #盆踊り #築地場外市場 #食のまち",
+          "title": "",
+          "tweet_id": "2082608159190036936",
+          "url": "https://x.com/ishijimahideki/status/2082608159190036936"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_221fbd4e215e0727",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "築地本願寺納涼盆踊り大会へ🎐7/29(水)から8/1（土）までの4日間。17時頃から盆太鼓の演奏、17時半頃から築地場外市場の屋台、18時半頃から本堂にてお菓子",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082469201760129047",
+      "source_url": "https://x.com/yamarie0324/status/2082469201760129047",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "abdf75670ee6e13e462631013eec69c51bb33ab2a337f60c34fc99513015d67d",
+      "last_seen_at": "github-35994704617-1",
+      "created_at": "2026-09-24T11:52:35.231336+00:00",
+      "updated_at": "2026-09-24T11:52:35.231336+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_4459bbc80b254c7d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/29",
+          "8/1",
+          "17時",
+          "17時",
+          "18時",
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中央区築地3-15-1",
+          "region_hint": "中央区",
+          "source_url": "https://tsukijihongwanji.jp/news/11529/",
+          "venue": "築地本願寺"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@yamarie0324",
+        "source_count": 1,
+        "source_key": "x:2082469201760129047",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOZqsrvboAE5RFg.jpg",
+          "https://t.co/LWxz6cFKyj",
+          "pic.x.com/LWxz6cFKyj"
+        ],
+        "source_officiality": {
+          "account_name": "山本 理恵 中央区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@yamarie0324",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n築地本願寺納涼盆踊り大会へ🎐7/29(水)から8/1（土）までの4日間。17時頃から盆太鼓の演奏、17時半頃から築地場外市場の屋台、18時半頃から本堂にてお菓子配布（事前チケット配布なし）、19時頃から盆踊りが楽しめる♪今年はテーブルではなくブルーシートになり、子ども達はゆったりまったりのんびり🍧 https://t.co/LWxz6cFKyj",
+        "source_url": "https://x.com/yamarie0324/status/2082469201760129047",
+        "source_urls": [
+          "https://x.com/yamarie0324/status/2082469201760129047"
+        ],
+        "voice": {
+          "account": "@yamarie0324",
+          "date": "2026-07-29T14:12:02+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOZqsrvboAE5RFg.jpg",
+            "https://t.co/LWxz6cFKyj",
+            "pic.x.com/LWxz6cFKyj"
+          ],
+          "name": "山本 理恵 中央区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "築地本願寺納涼盆踊り大会へ🎐7/29(水)から8/1（土）までの4日間。17時頃から盆太鼓の演奏、17時半頃から築地場外市場の屋台、18時半頃から本堂にてお菓子配布（事前チケット配布なし）、19時頃から盆踊りが楽しめる♪今年はテーブルではなくブルーシートになり、子ども達はゆったりまったりのんびり🍧 https://t.co/LWxz6cFKyj",
+          "title": "",
+          "tweet_id": "2082469201760129047",
+          "url": "https://x.com/yamarie0324/status/2082469201760129047"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_33db4d251337e60a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "明日31日(金)は、中区大須商店街連盟が「第75回大須夏まつり」の前夜祭を午後6時から午後9時まで開催。盆踊り大会や屋台の出店があります。 https://t.",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082662573510664629",
+      "source_url": "https://x.com/kinsyachi_com/status/2082662573510664629",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a7da4a08b3c877f94aa5189e6ffe3009f52247da620c5771141c5192bc327953",
+      "last_seen_at": "github-35994704617-1",
+      "created_at": "2026-09-24T11:52:35.231336+00:00",
+      "updated_at": "2026-09-24T11:52:35.231336+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_de91d26fc0d6d9b6",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "6時",
+          "9時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kinsyachi_com",
+        "source_count": 1,
+        "source_key": "x:2082662573510664629",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "なごや金シャチ商店街",
+          "classification": "registered_official_social",
+          "handle": "@kinsyachi_com",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n明日31日(金)は、中区大須商店街連盟が「第75回大須夏まつり」の前夜祭を午後6時から午後9時まで開催。盆踊り大会や屋台の出店があります。 https://t.co/SFjrkElOe8 #nagoya #名古屋 #商店街 #夏祭り",
+        "source_url": "https://x.com/kinsyachi_com/status/2082662573510664629",
+        "source_urls": [
+          "https://x.com/kinsyachi_com/status/2082662573510664629"
+        ],
+        "voice": {
+          "account": "@kinsyachi_com",
+          "date": "2026-07-30T03:00:26+00:00",
+          "name": "なごや金シャチ商店街",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "明日31日(金)は、中区大須商店街連盟が「第75回大須夏まつり」の前夜祭を午後6時から午後9時まで開催。盆踊り大会や屋台の出店があります。 https://t.co/SFjrkElOe8 #nagoya #名古屋 #商店街 #夏祭り",
+          "title": "",
+          "tweet_id": "2082662573510664629",
+          "url": "https://x.com/kinsyachi_com/status/2082662573510664629"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_8f953b7f9cdb6ed1",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "宮津燈籠流しは、日本三大燈籠流しの一つで江戸時代から続く伝統行事。\n精霊船と紅白の追っ掛け燈籠が海面を漂い、約2,000発の打上花火も見ごたえ十分。\n\n※本大会",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082375575986114605",
+      "source_url": "https://x.com/amahashi_tour/status/2082375575986114605",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "00213360b458d720c2951acb9432962b404e0c50c8fec625c3080e6025d0d521",
+      "last_seen_at": "github-35994704617-1",
+      "created_at": "2026-09-24T11:52:35.231336+00:00",
+      "updated_at": "2026-09-24T11:52:35.231336+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6cae10d8dd08334a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月16日",
+          "6時",
+          "7時",
+          "7時",
+          "7時",
+          "8時",
+          "9時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@amahashi_tour",
+        "source_count": 1,
+        "source_key": "x:2082375575986114605",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HNuIkxUaIAAYZbZ.jpg",
+          "https://t.co/K9jnCj9TBI",
+          "pic.x.com/K9jnCj9TBI"
+        ],
+        "source_officiality": {
+          "account_name": "【公式】天橋立観光協会",
+          "classification": "registered_official_social",
+          "handle": "@amahashi_tour",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n宮津燈籠流しは、日本三大燈籠流しの一つで江戸時代から続く伝統行事。\n精霊船と紅白の追っ掛け燈籠が海面を漂い、約2,000発の打上花火も見ごたえ十分。\n\n※本大会では、会場内での喫煙、テント・三脚などの使用・ドローン飛行を禁止しています。\n\n■宮津燈籠流し花火大会　スケジュール\n\n　　📅令和8年８月16日（日）\n　　📍宮津市島崎公園及び宮津湾周辺　\n\n　　御詠歌　　　　　午後6時30分～\n　　精霊船流し　　　午後7時20分～\n　　燈籠流し　　　　午後7時20分～\n　　花火打上　　　　午後7時50分～午後8時35分\n　　盆おどり大会　　花火終了後～午後9時35分\n\n※なお、気象状況により事業内容は変更になる場合があります。\n\n▼詳細は下記リンクよりご確認ください。\nhttps://t.co/BMbOxRx1Ex\n\n#海の京都 ＃宮津 #夏のイベント ＃燈籠流し #花火",
+        "source_url": "https://x.com/amahashi_tour/status/2082375575986114605",
+        "source_urls": [
+          "https://x.com/amahashi_tour/status/2082375575986114605"
+        ],
+        "voice": {
+          "account": "@amahashi_tour",
+          "date": "2026-07-29T08:00:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HNuIkxUaIAAYZbZ.jpg",
+            "https://t.co/K9jnCj9TBI",
+            "pic.x.com/K9jnCj9TBI"
+          ],
+          "name": "【公式】天橋立観光協会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "宮津燈籠流しは、日本三大燈籠流しの一つで江戸時代から続く伝統行事。\n精霊船と紅白の追っ掛け燈籠が海面を漂い、約2,000発の打上花火も見ごたえ十分。\n\n※本大会では、会場内での喫煙、テント・三脚などの使用・ドローン飛行を禁止しています。\n\n■宮津燈籠流し花火大会　スケジュール\n\n　　📅令和8年８月16日（日）\n　　📍宮津市島崎公園及び宮津湾周辺　\n\n　　御詠歌　　　　　午後6時30分～\n　　精霊船流し　　　午後7時20分～\n　　燈籠流し　　　　午後7時20分～\n　　花火打上　　　　午後7時50分～午後8時35分\n　　盆おどり大会　　花火終了後～午後9時35分\n\n※なお、気象状況により事業内容は変更になる場合があります。\n\n▼詳細は下記リンクよりご確認ください。\nhttps://t.co/BMbOxRx1Ex\n\n#海の京都 ＃宮津 #夏のイベント ＃燈籠流し #花火",
+          "title": "",
+          "tweet_id": "2082375575986114605",
+          "url": "https://x.com/amahashi_tour/status/2082375575986114605"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_aa25a45c39b4ee3d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【大森町】8/1(土)大森三丁目連合町会「盆踊り大会」\n🏮18:15〜模擬店販売\n🏮18:45〜盆踊り\n🏮19:25〜19:40ジュース配",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082375582260797828",
+      "source_url": "https://x.com/otafull/status/2082375582260797828",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "3d8fe76ccb6490c9e3e9893c679422bcdb20a5af9b3411ac7ee1e39778ac3609",
+      "last_seen_at": "github-35994704617-1",
+      "created_at": "2026-09-24T11:52:35.231336+00:00",
+      "updated_at": "2026-09-24T11:52:35.231336+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_7db1cf89bb91fa29",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2082375582260797828",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【大森町】8/1(土)大森三丁目連合町会「盆踊り大会」\n🏮18:15〜模擬店販売\n🏮18:45〜盆踊り\n🏮19:25〜19:40ジュース配布(子供のみ)\nhttps://t.co/hXnf13wgue\n#大田区　#商店街　#大森町　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2082375582260797828",
+        "source_urls": [
+          "https://x.com/otafull/status/2082375582260797828"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-29T08:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【盆踊り情報2026】【大森町】8/1(土)大森三丁目連合町会「盆踊り大会」\n🏮18:15〜模擬店販売\n🏮18:45〜盆踊り\n🏮19:25〜19:40ジュース配布(子供のみ)\nhttps://t.co/hXnf13wgue\n#大田区　#商店街　#大森町　#盆踊り",
+          "title": "",
+          "tweet_id": "2082375582260797828",
+          "url": "https://x.com/otafull/status/2082375582260797828"
         }
       }
     },
