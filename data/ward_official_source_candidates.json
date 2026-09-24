@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generated_by": "scan_ward_official_sources.py",
-  "generated_at": "2026-09-17T12:03:58.500825+00:00",
+  "generated_at": "2026-09-24T12:06:21.695608+00:00",
   "target_year": 2026,
   "safety_boundary": "official-source review candidates only; no canonical or public event write",
   "canonical_write_count": 0,
@@ -208,7 +208,7 @@
       "source_registry_id": "nerima-tsunagaru-festa",
       "ward": "練馬区",
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/tunafes/reiwa6tunafes.html",
-      "checked_count": 4,
+      "checked_count": 3,
       "confirmed_count": 0,
       "structured_candidate_count": 0,
       "page_fallback_count": 0,

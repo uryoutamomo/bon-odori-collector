@@ -630,6 +630,15 @@
     "needs_review": true
   },
   {
+    "venue": "清水台小学校",
+    "region_hint": "品川区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "第二延山小学校",
     "region_hint": "品川区",
     "in_tsukiji_30min_guess": true,
@@ -2466,6 +2475,15 @@
     "needs_review": true
   },
   {
+    "venue": "氷川神社",
+    "region_hint": "大田区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "池上本門寺",
     "region_hint": "大田区",
     "in_tsukiji_30min_guess": false,
@@ -3349,15 +3367,6 @@
   },
   {
     "venue": "板谷公園",
-    "region_hint": "板橋区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "板橋区の盆おどり情報 2026年1月より [Itabashi-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "氷川神社",
     "region_hint": "板橋区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",

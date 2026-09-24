@@ -1,7 +1,7 @@
 {
   "counts": {
     "registered_alias": 15,
-    "research": 533,
+    "research": 534,
     "registered": 83,
     "noise": 10
   },
@@ -767,6 +767,17 @@
     },
     {
       "venue": "東八幡神社",
+      "region_hint": "大田区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "high",
+      "source_title": "大田区の盆おどり情報 2026年1月より [Ota-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
+      "venue": "氷川神社",
       "region_hint": "大田区",
       "status": "research",
       "mapped_to": null,
@@ -2955,6 +2966,17 @@
       "in_tsukiji_30min_guess": true
     },
     {
+      "venue": "清水台小学校",
+      "region_hint": "品川区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "品川区の盆おどり情報 2026年1月より [Sinagawa-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00i-sinagawa-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
       "venue": "聖蹟公園",
       "region_hint": "品川区",
       "status": "research",
@@ -4012,17 +4034,6 @@
     },
     {
       "venue": "板谷公園",
-      "region_hint": "板橋区",
-      "status": "research",
-      "mapped_to": null,
-      "reason": "",
-      "priority": "normal",
-      "source_title": "板橋区の盆おどり情報 2026年1月より [Itabashi-q]",
-      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00s-itabashi-q.html",
-      "in_tsukiji_30min_guess": false
-    },
-    {
-      "venue": "氷川神社",
       "region_hint": "板橋区",
       "status": "research",
       "mapped_to": null,

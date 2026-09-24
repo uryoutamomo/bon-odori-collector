@@ -913,6 +913,22 @@
       }
     },
     {
+      "venue_name": "矢口氷川神社",
+      "region": "大田区",
+      "address": "大田区矢口1-27-7",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://otakushoren.com/event/166805",
+      "memo": "氷川神社「盆踊り大会」 9月25日(金)-26日(日) 19:00-(例年21:00まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "氷川神社「盆踊り大会」 9月25日(金)-26日(日) 19:00-(例年21:00まで)。",
+        "month": "9月",
+        "date_text": "2026 [K42]\n9/25 - 26",
+        "source_url": "https://otakushoren.com/event/166805"
+      }
+    },
+    {
       "venue_name": "池上本門寺",
       "region": "大田区",
       "address": "大田区池上1-1-1",
@@ -990,22 +1006,6 @@
         "month": "8月",
         "date_text": "2026 [K19]\n8/1 - 2",
         "source_url": "https://note.com/common_news/n/n4a3de6b9a249"
-      }
-    },
-    {
-      "venue_name": "矢口氷川神社",
-      "region": "大田区",
-      "address": "大田区矢口1-27-7",
-      "access": "大田区内。詳細アクセスは出典URLを参照",
-      "source_url": "https://otakushoren.com/event/166805",
-      "memo": "氷川神社「盆踊り大会」 9月25日(金)-26日(日) 19:00-(例年21:00まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00k-ota-q.html",
-      "scale": "小",
-      "in_tsukiji": false,
-      "event": {
-        "name": "氷川神社「盆踊り大会」 9月25日(金)-26日(日) 19:00-(例年21:00まで)。",
-        "month": "9月",
-        "date_text": "2026 [K42]\n9/25 - 26",
-        "source_url": "https://otakushoren.com/event/166805"
       }
     },
     {
