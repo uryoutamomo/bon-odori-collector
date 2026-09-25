@@ -1,17 +1,18 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-09-24T11:52:03.474999+00:00
+- 生成時刻: 2026-09-25T11:58:39.989463+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 48件
-- 候補総数: 6件
+- 対象voices: 51件
+- 候補総数: 8件
 
 ## 内訳
-- 曲候補: 6件
+- 曲×会場共起: 1件
+- 曲候補: 7件
 
 ## レビュー対象
-- 用語・共起レビュー: 0件
+- 用語・共起レビュー: 1件
 - 曲候補レビュー: 1件
-- 曲の明白候補 dry-run: 4件
+- 曲の明白候補 dry-run: 5件
 - 曲ノイズ除外: 1件
 
 ## 生成物
@@ -23,6 +24,9 @@
 ## 反映コマンド
 - `python apply_weekly_song_review_decisions.py --dry-run`
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
+
+## 用語・共起レビュー例
+- 河内音頭 × 中和小学校
 
 ## 曲レビュー例
 - 水戸黄門おどり

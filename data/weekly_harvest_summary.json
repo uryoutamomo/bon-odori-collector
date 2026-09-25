@@ -1,17 +1,18 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-24T11:52:03.474999+00:00",
+  "generated_at": "2026-09-25T11:58:39.989463+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-24T11:51:55.971467+00:00",
+  "source_generated_at": "2026-09-25T11:58:33.247852+00:00",
   "days": 3,
-  "voice_count": 48,
-  "candidate_count": 6,
+  "voice_count": 51,
+  "candidate_count": 8,
   "category_counts": {
-    "曲候補": 6
+    "曲×会場共起": 1,
+    "曲候補": 7
   },
-  "non_song_review_count": 0,
-  "song_candidate_count": 6,
-  "song_direct_dry_run_count": 4,
+  "non_song_review_count": 1,
+  "song_candidate_count": 7,
+  "song_direct_dry_run_count": 5,
   "song_review_count": 1,
   "song_rejected_noise_count": 1,
   "review_files": {
@@ -25,7 +26,9 @@
     "python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run"
   ],
   "samples": {
-    "non_song_review": [],
+    "non_song_review": [
+      "河内音頭 × 中和小学校"
+    ],
     "song_review": [
       "水戸黄門おどり"
     ]
