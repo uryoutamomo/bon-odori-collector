@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-24T11:58:46.856152+00:00",
+  "generated_at": "2026-09-25T11:59:42.885702+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,332 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3d665d73ef5cb3be",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日は、中入りで区議会の皆さんと一緒にステージからご挨拶させていただきました\n本日も17時から竪川親水公園（錦糸町駅南側首都高7号線高架下）で開催です\n皆さんぜ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082704029575229823",
+      "source_url": "https://x.com/endomiho_sumida/status/2082704029575229823",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ecb99ac10f3c1b4512a70c1df0648a603207f9cdc01a26a99eeb3feb0d4a3287",
+      "last_seen_at": "github-36131458194-1",
+      "created_at": "2026-09-25T11:59:12.551134+00:00",
+      "updated_at": "2026-09-25T11:59:12.551134+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_f385a6a4cfafacb2",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "17時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@endomiho_sumida",
+        "source_count": 1,
+        "source_key": "x:2082704029575229823",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOc_xzqawAA3_3G.jpg",
+          "https://t.co/E9yuJX5WGh",
+          "pic.x.com/E9yuJX5WGh"
+        ],
+        "source_officiality": {
+          "account_name": "えんどうミホ🫛墨田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@endomiho_sumida",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日は、中入りで区議会の皆さんと一緒にステージからご挨拶させていただきました\n本日も17時から竪川親水公園（錦糸町駅南側首都高7号線高架下）で開催です\n皆さんぜひ遊びに来てくださいね\n\n坂井ゆかこ議長を囲んで女性議員で撮影\n#すみだ錦糸町河内音頭大盆踊り #河内音頭 #墨田区 #盆踊り #祭り https://t.co/E9yuJX5WGh",
+        "source_url": "https://x.com/endomiho_sumida/status/2082704029575229823",
+        "source_urls": [
+          "https://x.com/endomiho_sumida/status/2082704029575229823"
+        ],
+        "voice": {
+          "account": "@endomiho_sumida",
+          "date": "2026-07-30T05:45:10+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOc_xzqawAA3_3G.jpg",
+            "https://t.co/E9yuJX5WGh",
+            "pic.x.com/E9yuJX5WGh"
+          ],
+          "name": "えんどうミホ🫛墨田区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "昨日は、中入りで区議会の皆さんと一緒にステージからご挨拶させていただきました\n本日も17時から竪川親水公園（錦糸町駅南側首都高7号線高架下）で開催です\n皆さんぜひ遊びに来てくださいね\n\n坂井ゆかこ議長を囲んで女性議員で撮影\n#すみだ錦糸町河内音頭大盆踊り #河内音頭 #墨田区 #盆踊り #祭り https://t.co/E9yuJX5WGh",
+          "title": "",
+          "tweet_id": "2082704029575229823",
+          "url": "https://x.com/endomiho_sumida/status/2082704029575229823"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a69fcff7c3d8196d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "ゲリラ豪雨で開催が心配でしたが、御徒町公園の盆踊りは19時半からおこなうみたいです。\n\n#台東区\n#御徒町公園",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082772633486299288",
+      "source_url": "https://x.com/kugiyamaguchi/status/2082772633486299288",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f53521fd1857eba47e72eebcc62028b9c824a48a57f3e7deb5412626c9ebd9b4",
+      "last_seen_at": "github-36131458194-1",
+      "created_at": "2026-09-25T11:59:12.551134+00:00",
+      "updated_at": "2026-09-25T11:59:12.551134+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_c347dca3d6a030ea",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kugiyamaguchi",
+        "source_count": 1,
+        "source_key": "x:2082772633486299288",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "前台東区議@山口銀次郎",
+          "classification": "registered_official_social",
+          "handle": "@kugiyamaguchi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nゲリラ豪雨で開催が心配でしたが、御徒町公園の盆踊りは19時半からおこなうみたいです。\n\n#台東区\n#御徒町公園",
+        "source_url": "https://x.com/kugiyamaguchi/status/2082772633486299288",
+        "source_urls": [
+          "https://x.com/kugiyamaguchi/status/2082772633486299288"
+        ],
+        "voice": {
+          "account": "@kugiyamaguchi",
+          "date": "2026-07-30T10:17:46+00:00",
+          "name": "前台東区議@山口銀次郎",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "ゲリラ豪雨で開催が心配でしたが、御徒町公園の盆踊りは19時半からおこなうみたいです。\n\n#台東区\n#御徒町公園",
+          "title": "",
+          "tweet_id": "2082772633486299288",
+          "url": "https://x.com/kugiyamaguchi/status/2082772633486299288"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ce3d82c888c6540a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "８月８日土曜日の防犯パトロールですが、当日松浪小学校にて盆踊り大会開催のため中止いたします。\n\n当日パトロール当番の皆様\nよろしくお願いいたします！\n\n２２日土",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082832978305335402",
+      "source_url": "https://x.com/1matsunami/status/2082832978305335402",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "794f7a8b27b9fea42188bf1ea4a0198cb9610b2ba726c4001c336ab83a687d55",
+      "last_seen_at": "github-36131458194-1",
+      "created_at": "2026-09-25T11:59:12.551134+00:00",
+      "updated_at": "2026-09-25T11:59:12.551134+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d142c32390e837d1",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月８日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@1matsunami",
+        "source_count": 1,
+        "source_key": "x:2082832978305335402",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "湘南　茅ヶ崎　松浪一丁目自治会　防災会（正式名称）",
+          "classification": "registered_official_social",
+          "handle": "@1matsunami",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n８月８日土曜日の防犯パトロールですが、当日松浪小学校にて盆踊り大会開催のため中止いたします。\n\n当日パトロール当番の皆様\nよろしくお願いいたします！\n\n２２日土曜日は通常通りパトロール予定ですが、雷雨や荒天など悪天候の場合中止です。",
+        "source_url": "https://x.com/1matsunami/status/2082832978305335402",
+        "source_urls": [
+          "https://x.com/1matsunami/status/2082832978305335402"
+        ],
+        "voice": {
+          "account": "@1matsunami",
+          "date": "2026-07-30T14:17:33+00:00",
+          "name": "湘南　茅ヶ崎　松浪一丁目自治会　防災会（正式名称）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "８月８日土曜日の防犯パトロールですが、当日松浪小学校にて盆踊り大会開催のため中止いたします。\n\n当日パトロール当番の皆様\nよろしくお願いいたします！\n\n２２日土曜日は通常通りパトロール予定ですが、雷雨や荒天など悪天候の場合中止です。",
+          "title": "",
+          "tweet_id": "2082832978305335402",
+          "url": "https://x.com/1matsunami/status/2082832978305335402"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_df92c0e068f6bb4c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "御徒町公園の盆踊りは予定より30分遅れでスタートし、本日も無事開催されました。\n18時半くらいからのゲリラ豪雨が凄かったので開催出来るか心配でしたが、無事最後ま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082810500942069847",
+      "source_url": "https://x.com/kugiyamaguchi/status/2082810500942069847",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ecbe5b454b277cc5ef997be121fcb7c7bd03788a609a4a0f80934822c77020ed",
+      "last_seen_at": "github-36131458194-1",
+      "created_at": "2026-09-25T11:59:12.551134+00:00",
+      "updated_at": "2026-09-25T11:59:12.551134+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_592f6615b954ba2e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kugiyamaguchi",
+        "source_count": 1,
+        "source_key": "x:2082810500942069847",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOehHDXakAA9Bm3.jpg",
+          "https://t.co/P4y7QJHOwM",
+          "pic.x.com/P4y7QJHOwM"
+        ],
+        "source_officiality": {
+          "account_name": "前台東区議@山口銀次郎",
+          "classification": "registered_official_social",
+          "handle": "@kugiyamaguchi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n御徒町公園の盆踊りは予定より30分遅れでスタートし、本日も無事開催されました。\n18時半くらいからのゲリラ豪雨が凄かったので開催出来るか心配でしたが、無事最後まで出来て良かったです。\n明日は最終日です。\n\n#台東区\n#御徒町公園 https://t.co/P4y7QJHOwM",
+        "source_url": "https://x.com/kugiyamaguchi/status/2082810500942069847",
+        "source_urls": [
+          "https://x.com/kugiyamaguchi/status/2082810500942069847"
+        ],
+        "voice": {
+          "account": "@kugiyamaguchi",
+          "date": "2026-07-30T12:48:14+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOehHDXakAA9Bm3.jpg",
+            "https://t.co/P4y7QJHOwM",
+            "pic.x.com/P4y7QJHOwM"
+          ],
+          "name": "前台東区議@山口銀次郎",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "御徒町公園の盆踊りは予定より30分遅れでスタートし、本日も無事開催されました。\n18時半くらいからのゲリラ豪雨が凄かったので開催出来るか心配でしたが、無事最後まで出来て良かったです。\n明日は最終日です。\n\n#台東区\n#御徒町公園 https://t.co/P4y7QJHOwM",
+          "title": "",
+          "tweet_id": "2082810500942069847",
+          "url": "https://x.com/kugiyamaguchi/status/2082810500942069847"
         }
       }
     },
@@ -16100,6 +16426,92 @@
           "title": "",
           "tweet_id": "2067765707643949227",
           "url": "https://x.com/natsutr_bon/status/2067765707643949227"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9c8ac72573e36fed",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "【下町盆踊りフェス2026】\n🏮10/9(金)-12(月祝)📍上野恩賜公園 噴水前広場(台東区)\n\n昨年Tokyo江戸ウィークで行われた下町盆踊りフェスが今年も",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090998447646429261",
+      "source_url": "https://x.com/natsutr_bon/status/2090998447646429261",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a7f69a033d33b9e1aa914bcb5cbe8c999ba4b912a6a75bb30f7afa081edd2c17",
+      "last_seen_at": "github-36131458194-1",
+      "created_at": "2026-09-25T11:59:12.551134+00:00",
+      "updated_at": "2026-09-25T11:59:12.551134+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_1d3d0fc54be5073c",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "10/9"
+        ],
+        "event_group_key": "informal-venue:301624e8aac988ce",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "台東区上野公園5",
+          "region_hint": "台東区",
+          "source_url": "https://tokyofesta.com/23ku/32976/",
+          "venue": "上野恩賜公園 噴水前広場"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-10-09"
+        ],
+        "priority_score": 85,
+        "source_author": "@natsutr_bon",
+        "source_count": 1,
+        "source_key": "x:2090998447646429261",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "奈津大郎〘ナツタロ〙",
+          "classification": "unknown_or_personal_social",
+          "handle": "@natsutr_bon",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n【下町盆踊りフェス2026】\n🏮10/9(金)-12(月祝)📍上野恩賜公園 噴水前広場(台東区)\n\n昨年Tokyo江戸ウィークで行われた下町盆踊りフェスが今年も🎶\n今回はSPECIALゲスト荻野目洋子さん(9日20:00〜)/DJ KOOさん(12日19:30〜)が登場🎊協力:日本盆踊り協会\n\n🔔詳細は今後発表予定\nhttps://t.co/cvY40NmbiA",
+        "source_url": "https://x.com/natsutr_bon/status/2090998447646429261",
+        "source_urls": [
+          "https://x.com/natsutr_bon/status/2090998447646429261"
+        ],
+        "voice": {
+          "account": "@natsutr_bon",
+          "critique_post": false,
+          "date": "2026-08-22T03:04:13+00:00",
+          "name": "奈津大郎〘ナツタロ〙",
+          "profile_description": "およそ30年ぶりの炭坑節が楽しすぎて気がついたときには「盆踊りコ」| 基本構成ナツタロ・ナツジロのツーマンセル | 江東区盆踊連合(自称) | 馬鹿盆会 | 🍆寺島茄子之介音頭 | 祭り | 神輿 | 民謡 | 旅 | ヘッダーイラスト @nyantokonyan 様/ @M125M8qgyhWueHS 様",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【下町盆踊りフェス2026】\n🏮10/9(金)-12(月祝)📍上野恩賜公園 噴水前広場(台東区)\n\n昨年Tokyo江戸ウィークで行われた下町盆踊りフェスが今年も🎶\n今回はSPECIALゲスト荻野目洋子さん(9日20:00〜)/DJ KOOさん(12日19:30〜)が登場🎊協力:日本盆踊り協会\n\n🔔詳細は今後発表予定\nhttps://t.co/cvY40NmbiA",
+          "title": "",
+          "tweet_id": "2090998447646429261",
+          "url": "https://x.com/natsutr_bon/status/2090998447646429261"
         }
       }
     },
