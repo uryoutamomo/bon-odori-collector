@@ -5267,7 +5267,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5289,9 +5289,9 @@
       "2025-09-26",
       "2025-09-27"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-09-26",
@@ -5314,17 +5314,9 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-09-25",
-        "date_end": "2026-09-26",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4金曜を2026年へスライド",
-        "source_date": "2025-09-26",
-        "source_date_end": "2025-09-27",
-        "duration_days": 2
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-09-26",
@@ -5332,24 +5324,7 @@
     ],
     "historical_reference_label": "2025-09-26〜2025-09-27実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.67,
-    "historical_slide": {
-      "date": "2026-09-25",
-      "date_end": "2026-09-26",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4金曜を2026年へスライド",
-      "source_date": "2025-09-26",
-      "source_date_end": "2025-09-27",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-09-25",
-    "historical_slide_date_end": "2026-09-26",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
-    "predicted_date": "2026-09-25",
-    "predicted_date_end": "2026-09-26",
-    "prediction_basis": "2025年実績の同月第4金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.67
   },
   {
     "name": "麻布氷川神社例大祭 盆踊り",
