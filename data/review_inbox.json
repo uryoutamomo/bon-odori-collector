@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-25T12:06:29.812737+00:00",
+  "generated_at": "2026-09-26T11:36:40.818336+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,412 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_167aa876f927072c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "神田佐久間町三丁目町会\n第44回秋葉原東部納涼大会が本日から開催されます\n7月31日〜8月1日両日、和泉公園&amp;和泉小学校にての盆フェスタ\n地元秋葉原グル",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083017973284147388",
+      "source_url": "https://x.com/kandasaku3/status/2083017973284147388",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "69dda3fdd17a79ef740a094c45bbaba000c12033631e838191b3bd356420989e",
+      "last_seen_at": "github-36238639567-1",
+      "created_at": "2026-09-26T11:36:04.750219+00:00",
+      "updated_at": "2026-09-26T11:36:04.750219+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_40534c7a139e1f32",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月31日",
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kandasaku3",
+        "source_count": 1,
+        "source_key": "x:2083017973284147388",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "神田佐久間町三丁目町会",
+          "classification": "registered_official_social",
+          "handle": "@kandasaku3",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n神田佐久間町三丁目町会\n第44回秋葉原東部納涼大会が本日から開催されます\n7月31日〜8月1日両日、和泉公園&amp;和泉小学校にての盆フェスタ\n地元秋葉原グルメフェス風の屋台もあるよ\nみんなで和になって踊りましょう\n⇩詳しくわこちら⇩\nhttps://t.co/vh1ALXsmB6\n#納涼\n#盆踊り\n#秋葉原",
+        "source_url": "https://x.com/kandasaku3/status/2083017973284147388",
+        "source_urls": [
+          "https://x.com/kandasaku3/status/2083017973284147388"
+        ],
+        "voice": {
+          "account": "@kandasaku3",
+          "date": "2026-07-31T02:32:40+00:00",
+          "name": "神田佐久間町三丁目町会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "神田佐久間町三丁目町会\n第44回秋葉原東部納涼大会が本日から開催されます\n7月31日〜8月1日両日、和泉公園&amp;和泉小学校にての盆フェスタ\n地元秋葉原グルメフェス風の屋台もあるよ\nみんなで和になって踊りましょう\n⇩詳しくわこちら⇩\nhttps://t.co/vh1ALXsmB6\n#納涼\n#盆踊り\n#秋葉原",
+          "title": "",
+          "tweet_id": "2083017973284147388",
+          "url": "https://x.com/kandasaku3/status/2083017973284147388"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_26e50386eafd672a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "８月１日（土）・２日（日）新田稲荷公園にて足立区新田町会主催の納涼盆踊り大会を両日午後６時から８時３０分まで開催！\nご近所の方、新田地区以外にお住まいの方もぜひ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083006340340023698",
+      "source_url": "https://x.com/adachi_city/status/2083006340340023698",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8e1a91b80d5f7abc9640e763b048b1e5757dc7cfc9222417ca2fce40d0fc38dd",
+      "last_seen_at": "github-36238639567-1",
+      "created_at": "2026-09-26T11:36:04.750219+00:00",
+      "updated_at": "2026-09-26T11:36:04.750219+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_02c2b16e588c7665",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月１日",
+          "６時",
+          "８時",
+          "８月１日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "足立区新田1-18-5",
+          "region_hint": "足立区",
+          "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+          "venue": "新田稲荷公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@adachi_city",
+        "source_count": 1,
+        "source_key": "x:2083006340340023698",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "足立区役所",
+          "classification": "registered_official_social",
+          "handle": "@adachi_city",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n８月１日（土）・２日（日）新田稲荷公園にて足立区新田町会主催の納涼盆踊り大会を両日午後６時から８時３０分まで開催！\nご近所の方、新田地区以外にお住まいの方もぜひご来場ください！\n※８月１日（土）雨天中止の場合２日（日）のみ開催。１・２日とも中止→３日（月）開催予定。",
+        "source_url": "https://x.com/adachi_city/status/2083006340340023698",
+        "source_urls": [
+          "https://x.com/adachi_city/status/2083006340340023698"
+        ],
+        "voice": {
+          "account": "@adachi_city",
+          "date": "2026-07-31T01:46:26+00:00",
+          "name": "足立区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "８月１日（土）・２日（日）新田稲荷公園にて足立区新田町会主催の納涼盆踊り大会を両日午後６時から８時３０分まで開催！\nご近所の方、新田地区以外にお住まいの方もぜひご来場ください！\n※８月１日（土）雨天中止の場合２日（日）のみ開催。１・２日とも中止→３日（月）開催予定。",
+          "title": "",
+          "tweet_id": "2083006340340023698",
+          "url": "https://x.com/adachi_city/status/2083006340340023698"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_28b74e48176ddbd4",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "会長の荒木です。８月１日(土)納涼盆踊り大会開催！新宿町公園で午後４時３０分から納涼お楽しみタイム、６時から盆踊りです。是非お越しください。#新宿町五丁目自治会",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083035008466612628",
+      "source_url": "https://x.com/arajyuku5/status/2083035008466612628",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e8561bfa36cf6766bdf06bb0c1879262385c5f2b27109e7dcf7b85f2cc5d5bb5",
+      "last_seen_at": "github-36238639567-1",
+      "created_at": "2026-09-26T11:36:04.750219+00:00",
+      "updated_at": "2026-09-26T11:36:04.750219+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3fa06bf843b975da",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月１日",
+          "４時",
+          "６時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@arajyuku5",
+        "source_count": 1,
+        "source_key": "x:2083035008466612628",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOhtPMfasAAVeEC.jpg",
+          "https://t.co/EgxoKOlsWO",
+          "pic.x.com/EgxoKOlsWO"
+        ],
+        "source_officiality": {
+          "account_name": "新宿町五丁目自治会",
+          "classification": "registered_official_social",
+          "handle": "@arajyuku5",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n会長の荒木です。８月１日(土)納涼盆踊り大会開催！新宿町公園で午後４時３０分から納涼お楽しみタイム、６時から盆踊りです。是非お越しください。#新宿町五丁目自治会 #新宿町5丁目自治会 #自治会 #川越市 #地域 #盆踊り https://t.co/EgxoKOlsWO",
+        "source_url": "https://x.com/arajyuku5/status/2083035008466612628",
+        "source_urls": [
+          "https://x.com/arajyuku5/status/2083035008466612628"
+        ],
+        "voice": {
+          "account": "@arajyuku5",
+          "date": "2026-07-31T03:40:21+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOhtPMfasAAVeEC.jpg",
+            "https://t.co/EgxoKOlsWO",
+            "pic.x.com/EgxoKOlsWO"
+          ],
+          "name": "新宿町五丁目自治会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "会長の荒木です。８月１日(土)納涼盆踊り大会開催！新宿町公園で午後４時３０分から納涼お楽しみタイム、６時から盆踊りです。是非お越しください。#新宿町五丁目自治会 #新宿町5丁目自治会 #自治会 #川越市 #地域 #盆踊り https://t.co/EgxoKOlsWO",
+          "title": "",
+          "tweet_id": "2083035008466612628",
+          "url": "https://x.com/arajyuku5/status/2083035008466612628"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a1cff48cefa85e8f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【沼部】8/1(土)田園調布南町会が密蔵院で「夏祭り ダンス＆子供盆踊り大会」\n太鼓演奏やフラダンス、バンド演奏に子ども盆踊りなど楽しいス",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082964462932218081",
+      "source_url": "https://x.com/otafull/status/2082964462932218081",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "dfeb8633341951de06fe99ba640e848b8f7b8971c8439ceadb824750afe55c26",
+      "last_seen_at": "github-36238639567-1",
+      "created_at": "2026-09-26T11:36:04.750219+00:00",
+      "updated_at": "2026-09-26T11:36:04.750219+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_7a0615dc397ca164",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2082964462932218081",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【沼部】8/1(土)田園調布南町会が密蔵院で「夏祭り ダンス＆子供盆踊り大会」\n太鼓演奏やフラダンス、バンド演奏に子ども盆踊りなど楽しいステージが満載です🫶\nhttps://t.co/ySZMWmCmCy\n#大田区　#商店街　#沼部　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2082964462932218081",
+        "source_urls": [
+          "https://x.com/otafull/status/2082964462932218081"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-30T23:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【沼部】8/1(土)田園調布南町会が密蔵院で「夏祭り ダンス＆子供盆踊り大会」\n太鼓演奏やフラダンス、バンド演奏に子ども盆踊りなど楽しいステージが満載です🫶\nhttps://t.co/ySZMWmCmCy\n#大田区　#商店街　#沼部　#盆踊り",
+          "title": "",
+          "tweet_id": "2082964462932218081",
+          "url": "https://x.com/otafull/status/2082964462932218081"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cf785821f8d954f4",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n模擬店多数出店しますよ～✨\n🗓️ 8/1(土) 17:00〜20:00\n📍大田区シルバー",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083024864248504751",
+      "source_url": "https://x.com/otafull/status/2083024864248504751",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a993af63ea90ec3ef56f3bea68b27b3cf98763fd21a860773a632275d21f4356",
+      "last_seen_at": "github-36238639567-1",
+      "created_at": "2026-09-26T11:36:04.750219+00:00",
+      "updated_at": "2026-09-26T11:36:04.750219+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_b4191fc3c86cafa0",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1",
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2083024864248504751",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n模擬店多数出店しますよ～✨\n🗓️ 8/1(土) 17:00〜20:00\n📍大田区シルバー人材センター前\nhttps://t.co/Sf3Cv2oK1D\n#大田区　#商店街　#蒲田　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2083024864248504751",
+        "source_urls": [
+          "https://x.com/otafull/status/2083024864248504751"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-31T03:00:03+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n模擬店多数出店しますよ～✨\n🗓️ 8/1(土) 17:00〜20:00\n📍大田区シルバー人材センター前\nhttps://t.co/Sf3Cv2oK1D\n#大田区　#商店街　#蒲田　#盆踊り",
+          "title": "",
+          "tweet_id": "2083024864248504751",
+          "url": "https://x.com/otafull/status/2083024864248504751"
         }
       }
     },
