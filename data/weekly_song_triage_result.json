@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 7,
-  "direct_count": 5,
+  "song_candidate_count": 8,
+  "direct_count": 6,
   "created_count": 3,
-  "updated_count": 2,
+  "updated_count": 3,
   "rejected_noise_count": 1,
   "review_count": 1,
   "created": [
@@ -49,6 +49,14 @@
       "venue_relations": 1,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "ダンシングヒーロー",
+      "source_term": "ダンシングヒーロー",
+      "target": "update",
+      "venue_relations": 1,
+      "event_relations": 3,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -60,9 +68,9 @@
   "review": [
     {
       "term": "水戸黄門おどり",
-      "evidence_count": 5,
+      "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=WJ75z1W8rVA"
+      "evidence_url": "https://www.youtube.com/watch?v=xpAyTYFPR8g"
     }
   ]
 }

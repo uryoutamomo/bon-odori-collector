@@ -1,18 +1,18 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-09-26T11:35:28.489614+00:00",
+  "generated_at": "2026-09-27T12:09:48.418966+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-09-26T11:35:21.873365+00:00",
+  "source_generated_at": "2026-09-27T12:09:42.263775+00:00",
   "days": 3,
-  "voice_count": 50,
-  "candidate_count": 8,
+  "voice_count": 49,
+  "candidate_count": 10,
   "category_counts": {
-    "曲×会場共起": 1,
-    "曲候補": 7
+    "曲×会場共起": 2,
+    "曲候補": 8
   },
-  "non_song_review_count": 1,
-  "song_candidate_count": 7,
-  "song_direct_dry_run_count": 5,
+  "non_song_review_count": 2,
+  "song_candidate_count": 8,
+  "song_direct_dry_run_count": 6,
   "song_review_count": 1,
   "song_rejected_noise_count": 1,
   "review_files": {
@@ -27,7 +27,8 @@
   ],
   "samples": {
     "non_song_review": [
-      "河内音頭 × 中和小学校"
+      "河内音頭 × 中和小学校",
+      "ダンシングヒーロー × 宮下公園"
     ],
     "song_review": [
       "水戸黄門おどり"

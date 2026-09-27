@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "faeb0369870ed88388ea824dda09baa67910f4494e24ad97615f8d8ba5f7e384",
-  "input_size_bytes": 2205046,
+  "input_sha256": "7d709407117b8884409ac22a819f42dcb0c9e7d7da23ec2ebb4ee3635673f3f0",
+  "input_size_bytes": 2205421,
   "item_count": 5,
   "items": [
     {
@@ -11,29 +11,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【盆踊り情報2026】【沼部】8/1(土)田園調布南町会が密蔵院で「夏祭り ダンス＆子供盆踊り大会」\n太鼓演奏やフラダンス、バンド演奏に子ども盆踊りなど楽しいス",
+      "title": "🎋かみす七夕まつり開催🎋\n今年もかみす七夕まつりが開催されます！\n8月1日（土）・2日（日）に港南通り・すずらん通り商店街は歩行者天国になります✨\n大人神輿や子",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2082964462932218081",
-      "source_url": "https://x.com/otafull/status/2082964462932218081",
+      "source_key": "x:2083050802474795406",
+      "source_url": "https://x.com/kamisu_kanko/status/2083050802474795406",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_7a0615dc397ca164",
-        "source_key": "x:2082964462932218081",
+        "candidate_id": "xgap_7841458800a27520",
+        "source_key": "x:2083050802474795406",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2082964462932218081",
-        "source_text": "\n【盆踊り情報2026】【沼部】8/1(土)田園調布南町会が密蔵院で「夏祭り ダンス＆子供盆踊り大会」\n太鼓演奏やフラダンス、バンド演奏に子ども盆踊りなど楽しいステージが満載です🫶\nhttps://t.co/ySZMWmCmCy\n#大田区　#商店街　#沼部　#盆踊り",
-        "source_author": "@otafull",
+        "source_url": "https://x.com/kamisu_kanko/status/2083050802474795406",
+        "source_text": "\n🎋かみす七夕まつり開催🎋\n今年もかみす七夕まつりが開催されます！\n8月1日（土）・2日（日）に港南通り・すずらん通り商店街は歩行者天国になります✨\n大人神輿や子ども神輿、山車が練り歩くほか、盆踊りや太鼓演奏など、さまざまなパフォーマンスが祭りを盛り上げます😊 https://t.co/s50beFzU2V",
+        "source_author": "@kamisu_kanko",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
+          "handle": "@kamisu_kanko",
+          "account_name": "神栖市観光協会【公式】",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -42,35 +42,44 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8/1"
+          "8月1日"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
+          "account": "@kamisu_kanko",
+          "name": "神栖市観光協会【公式】",
           "title": "",
-          "text": "【盆踊り情報2026】【沼部】8/1(土)田園調布南町会が密蔵院で「夏祭り ダンス＆子供盆踊り大会」\n太鼓演奏やフラダンス、バンド演奏に子ども盆踊りなど楽しいステージが満載です🫶\nhttps://t.co/ySZMWmCmCy\n#大田区　#商店街　#沼部　#盆踊り",
-          "url": "https://x.com/otafull/status/2082964462932218081",
-          "date": "2026-07-30T23:00:02+00:00",
-          "tweet_id": "2082964462932218081",
+          "text": "🎋かみす七夕まつり開催🎋\n今年もかみす七夕まつりが開催されます！\n8月1日（土）・2日（日）に港南通り・すずらん通り商店街は歩行者天国になります✨\n大人神輿や子ども神輿、山車が練り歩くほか、盆踊りや太鼓演奏など、さまざまなパフォーマンスが祭りを盛り上げます😊 https://t.co/s50beFzU2V",
+          "url": "https://x.com/kamisu_kanko/status/2083050802474795406",
+          "date": "2026-07-31T04:43:07+00:00",
+          "tweet_id": "2083050802474795406",
           "tags": [
             "🟡関心",
-            "q-venue-tokyo-wards"
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOh7qiBbAAA7ubg.jpg",
+            "https://t.co/s50beFzU2V",
+            "pic.x.com/s50beFzU2V"
           ]
         },
         "source_urls": [
-          "https://x.com/otafull/status/2082964462932218081"
+          "https://x.com/kamisu_kanko/status/2083050802474795406"
         ],
-        "source_media_urls": [],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOh7qiBbAAA7ubg.jpg",
+          "https://t.co/s50beFzU2V",
+          "pic.x.com/s50beFzU2V"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_a1cff48cefa85e8f"
+      "inbox_id": "inbox_f8fa75dbcdc27e4d"
     },
     {
       "kind": "x_gap",
@@ -78,23 +87,23 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "８月１日（土）・２日（日）新田稲荷公園にて足立区新田町会主催の納涼盆踊り大会を両日午後６時から８時３０分まで開催！\nご近所の方、新田地区以外にお住まいの方もぜひ",
+      "title": "【花畑地区の盆踊り大会】\n８月１日(土)花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2083006340340023698",
-      "source_url": "https://x.com/adachi_city/status/2083006340340023698",
+      "source_key": "x:2083063419033583664",
+      "source_url": "https://x.com/adachi_city/status/2083063419033583664",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_02c2b16e588c7665",
-        "source_key": "x:2083006340340023698",
+        "candidate_id": "xgap_b7c9c934dad10e96",
+        "source_key": "x:2083063419033583664",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/adachi_city/status/2083006340340023698",
-        "source_text": "\n８月１日（土）・２日（日）新田稲荷公園にて足立区新田町会主催の納涼盆踊り大会を両日午後６時から８時３０分まで開催！\nご近所の方、新田地区以外にお住まいの方もぜひご来場ください！\n※８月１日（土）雨天中止の場合２日（日）のみ開催。１・２日とも中止→３日（月）開催予定。",
+        "source_url": "https://x.com/adachi_city/status/2083063419033583664",
+        "source_text": "\n【花畑地区の盆踊り大会】\n８月１日(土)花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(9時終了予定)\n模擬店も多数出店！\nご来場お待ちしてます。\n問合せ先　花畑区民事務所　03(3884)4451 https://t.co/uupWeglFEB",
         "source_author": "@adachi_city",
         "source_officiality": {
           "classification": "registered_official_social",
@@ -110,16 +119,17 @@
         },
         "date_hints": [
           "８月１日",
+          "４時",
+          "５時",
           "６時",
-          "８時",
-          "８月１日"
+          "9時"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": {
-          "venue": "新田稲荷公園",
+          "venue": "花畑公園",
           "region_hint": "足立区",
-          "address": "足立区新田1-18-5",
+          "address": "足立区花畑4-40-1",
           "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
         },
         "voice": {
@@ -127,239 +137,272 @@
           "account": "@adachi_city",
           "name": "足立区役所",
           "title": "",
-          "text": "８月１日（土）・２日（日）新田稲荷公園にて足立区新田町会主催の納涼盆踊り大会を両日午後６時から８時３０分まで開催！\nご近所の方、新田地区以外にお住まいの方もぜひご来場ください！\n※８月１日（土）雨天中止の場合２日（日）のみ開催。１・２日とも中止→３日（月）開催予定。",
-          "url": "https://x.com/adachi_city/status/2083006340340023698",
-          "date": "2026-07-31T01:46:26+00:00",
-          "tweet_id": "2083006340340023698",
-          "tags": [
-            "🟡関心",
-            "q-cancel-change"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/adachi_city/status/2083006340340023698"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_26e50386eafd672a"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "神田佐久間町三丁目町会\n第44回秋葉原東部納涼大会が本日から開催されます\n7月31日〜8月1日両日、和泉公園&amp;和泉小学校にての盆フェスタ\n地元秋葉原グル",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2083017973284147388",
-      "source_url": "https://x.com/kandasaku3/status/2083017973284147388",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_40534c7a139e1f32",
-        "source_key": "x:2083017973284147388",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/kandasaku3/status/2083017973284147388",
-        "source_text": "\n神田佐久間町三丁目町会\n第44回秋葉原東部納涼大会が本日から開催されます\n7月31日〜8月1日両日、和泉公園&amp;和泉小学校にての盆フェスタ\n地元秋葉原グルメフェス風の屋台もあるよ\nみんなで和になって踊りましょう\n⇩詳しくわこちら⇩\nhttps://t.co/vh1ALXsmB6\n#納涼\n#盆踊り\n#秋葉原",
-        "source_author": "@kandasaku3",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@kandasaku3",
-          "account_name": "神田佐久間町三丁目町会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "7月31日",
-          "8月1日"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@kandasaku3",
-          "name": "神田佐久間町三丁目町会",
-          "title": "",
-          "text": "神田佐久間町三丁目町会\n第44回秋葉原東部納涼大会が本日から開催されます\n7月31日〜8月1日両日、和泉公園&amp;和泉小学校にての盆フェスタ\n地元秋葉原グルメフェス風の屋台もあるよ\nみんなで和になって踊りましょう\n⇩詳しくわこちら⇩\nhttps://t.co/vh1ALXsmB6\n#納涼\n#盆踊り\n#秋葉原",
-          "url": "https://x.com/kandasaku3/status/2083017973284147388",
-          "date": "2026-07-31T02:32:40+00:00",
-          "tweet_id": "2083017973284147388",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/kandasaku3/status/2083017973284147388"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_167aa876f927072c"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n模擬店多数出店しますよ～✨\n🗓️ 8/1(土) 17:00〜20:00\n📍大田区シルバー",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2083024864248504751",
-      "source_url": "https://x.com/otafull/status/2083024864248504751",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_b4191fc3c86cafa0",
-        "source_key": "x:2083024864248504751",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2083024864248504751",
-        "source_text": "\n【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n模擬店多数出店しますよ～✨\n🗓️ 8/1(土) 17:00〜20:00\n📍大田区シルバー人材センター前\nhttps://t.co/Sf3Cv2oK1D\n#大田区　#商店街　#蒲田　#盆踊り",
-        "source_author": "@otafull",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8/1",
-          "8/1"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
-          "title": "",
-          "text": "【盆踊り情報2026】【蒲田】8/1(土)仲六郷一丁目町会が「納涼会」\n模擬店多数出店しますよ～✨\n🗓️ 8/1(土) 17:00〜20:00\n📍大田区シルバー人材センター前\nhttps://t.co/Sf3Cv2oK1D\n#大田区　#商店街　#蒲田　#盆踊り",
-          "url": "https://x.com/otafull/status/2083024864248504751",
-          "date": "2026-07-31T03:00:03+00:00",
-          "tweet_id": "2083024864248504751",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/otafull/status/2083024864248504751"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_cf785821f8d954f4"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "会長の荒木です。８月１日(土)納涼盆踊り大会開催！新宿町公園で午後４時３０分から納涼お楽しみタイム、６時から盆踊りです。是非お越しください。#新宿町五丁目自治会",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2083035008466612628",
-      "source_url": "https://x.com/arajyuku5/status/2083035008466612628",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_3fa06bf843b975da",
-        "source_key": "x:2083035008466612628",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/arajyuku5/status/2083035008466612628",
-        "source_text": "\n会長の荒木です。８月１日(土)納涼盆踊り大会開催！新宿町公園で午後４時３０分から納涼お楽しみタイム、６時から盆踊りです。是非お越しください。#新宿町五丁目自治会 #新宿町5丁目自治会 #自治会 #川越市 #地域 #盆踊り https://t.co/EgxoKOlsWO",
-        "source_author": "@arajyuku5",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@arajyuku5",
-          "account_name": "新宿町五丁目自治会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "８月１日",
-          "４時",
-          "６時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@arajyuku5",
-          "name": "新宿町五丁目自治会",
-          "title": "",
-          "text": "会長の荒木です。８月１日(土)納涼盆踊り大会開催！新宿町公園で午後４時３０分から納涼お楽しみタイム、６時から盆踊りです。是非お越しください。#新宿町五丁目自治会 #新宿町5丁目自治会 #自治会 #川越市 #地域 #盆踊り https://t.co/EgxoKOlsWO",
-          "url": "https://x.com/arajyuku5/status/2083035008466612628",
-          "date": "2026-07-31T03:40:21+00:00",
-          "tweet_id": "2083035008466612628",
+          "text": "【花畑地区の盆踊り大会】\n８月１日(土)花畑公園で花畑地区納涼盆踊り大会が開催されます。\n午後４時～　子ども盆踊り\n午後５時～　開会式\n午後６時～　盆踊り開始(9時終了予定)\n模擬店も多数出店！\nご来場お待ちしてます。\n問合せ先　花畑区民事務所　03(3884)4451 https://t.co/uupWeglFEB",
+          "url": "https://x.com/adachi_city/status/2083063419033583664",
+          "date": "2026-07-31T05:33:15+00:00",
+          "tweet_id": "2083063419033583664",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOhtPMfasAAVeEC.jpg",
-            "https://t.co/EgxoKOlsWO",
-            "pic.x.com/EgxoKOlsWO"
+            "https://pbs.twimg.com/media/HOiHI70bUAAE349.jpg",
+            "https://t.co/uupWeglFEB",
+            "pic.x.com/uupWeglFEB"
           ]
         },
         "source_urls": [
-          "https://x.com/arajyuku5/status/2083035008466612628"
+          "https://x.com/adachi_city/status/2083063419033583664"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HOhtPMfasAAVeEC.jpg",
-          "https://t.co/EgxoKOlsWO",
-          "pic.x.com/EgxoKOlsWO"
+          "https://pbs.twimg.com/media/HOiHI70bUAAE349.jpg",
+          "https://t.co/uupWeglFEB",
+          "pic.x.com/uupWeglFEB"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_28b74e48176ddbd4"
+      "inbox_id": "inbox_9b5476f76ea5dd44"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "8月2日は北高森の納涼祭です。\n（株）スタック様にやぐらの準備をしていただきました。\nお気軽にご参加ください。\n\n#盆踊り　#納涼祭　#高森　#神社 https",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2083086834817790266",
+      "source_url": "https://x.com/Takamori_Shrine/status/2083086834817790266",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_6bcc641dca20dfbb",
+        "source_key": "x:2083086834817790266",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/Takamori_Shrine/status/2083086834817790266",
+        "source_text": "\n8月2日は北高森の納涼祭です。\n（株）スタック様にやぐらの準備をしていただきました。\nお気軽にご参加ください。\n\n#盆踊り　#納涼祭　#高森　#神社 https://t.co/UCGr6xLEP1",
+        "source_author": "@Takamori_Shrine",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@takamori_shrine",
+          "account_name": "高森神社(公式)",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8月2日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@Takamori_Shrine",
+          "name": "高森神社(公式)",
+          "title": "",
+          "text": "8月2日は北高森の納涼祭です。\n（株）スタック様にやぐらの準備をしていただきました。\nお気軽にご参加ください。\n\n#盆踊り　#納涼祭　#高森　#神社 https://t.co/UCGr6xLEP1",
+          "url": "https://x.com/Takamori_Shrine/status/2083086834817790266",
+          "date": "2026-07-31T07:06:17+00:00",
+          "tweet_id": "2083086834817790266",
+          "tags": [
+            "🟡関心",
+            "q-poster-images"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOicampbYAAsMNr.jpg",
+            "https://t.co/UCGr6xLEP1",
+            "pic.x.com/UCGr6xLEP1",
+            "https://pbs.twimg.com/media/HOicamcaoAAMQ60.jpg",
+            "https://pbs.twimg.com/media/HOicamoagAAXkgG.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/Takamori_Shrine/status/2083086834817790266"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOicampbYAAsMNr.jpg",
+          "https://t.co/UCGr6xLEP1",
+          "pic.x.com/UCGr6xLEP1",
+          "https://pbs.twimg.com/media/HOicamcaoAAMQ60.jpg",
+          "https://pbs.twimg.com/media/HOicamoagAAXkgG.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_405e37519beea4d8"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "早いですね明日からもう八月。夏祭りのシーズンですね。伊豆山日枝神社（里社）には、お神輿が鎮座して、こんな神社も良いですね。8/3（月）は第76回伊豆山温泉納涼海",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2083087551393599907",
+      "source_url": "https://x.com/atamiizusanspa/status/2083087551393599907",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_962dc72f63fd9244",
+        "source_key": "x:2083087551393599907",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/atamiizusanspa/status/2083087551393599907",
+        "source_text": "\n早いですね明日からもう八月。夏祭りのシーズンですね。伊豆山日枝神社（里社）には、お神輿が鎮座して、こんな神社も良いですね。8/3（月）は第76回伊豆山温泉納涼海上花火大会が伊豆山港を会場に20:20より行われます。\n＃お祭り ＃神輿 ＃花火 ＃花火大会 ＃伊豆山 ＃伊豆山港 ＃伊豆山温泉 https://t.co/L5hTV0lDGk",
+        "source_author": "@atamiizusanspa",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@atamiizusanspa",
+          "account_name": "熱海伊豆山温泉観光協会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8/3"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@atamiizusanspa",
+          "name": "熱海伊豆山温泉観光協会",
+          "title": "",
+          "text": "早いですね明日からもう八月。夏祭りのシーズンですね。伊豆山日枝神社（里社）には、お神輿が鎮座して、こんな神社も良いですね。8/3（月）は第76回伊豆山温泉納涼海上花火大会が伊豆山港を会場に20:20より行われます。\n＃お祭り ＃神輿 ＃花火 ＃花火大会 ＃伊豆山 ＃伊豆山港 ＃伊豆山温泉 https://t.co/L5hTV0lDGk",
+          "url": "https://x.com/atamiizusanspa/status/2083087551393599907",
+          "date": "2026-07-31T07:09:08+00:00",
+          "tweet_id": "2083087551393599907",
+          "tags": [
+            "🟡関心",
+            "q-poster-images"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOic2cMbEAAb7GP.jpg",
+            "https://t.co/L5hTV0lDGk",
+            "pic.x.com/L5hTV0lDGk",
+            "https://pbs.twimg.com/media/HOic5DaagAEth1e.jpg",
+            "https://pbs.twimg.com/media/HOidAh5aQAACPns.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/atamiizusanspa/status/2083087551393599907"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOic2cMbEAAb7GP.jpg",
+          "https://t.co/L5hTV0lDGk",
+          "pic.x.com/L5hTV0lDGk",
+          "https://pbs.twimg.com/media/HOic5DaagAEth1e.jpg",
+          "https://pbs.twimg.com/media/HOidAh5aQAACPns.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_f72575324e2e0b2b"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "本日も、旭町1丁目町会主催の盆踊り大会が開催されます🏮✨\n\n📍本覚寺（練馬区旭町1丁目26-5）\n🕖19時スタート\n\n夏の夜を、地域の皆さんと一緒に楽しみましょ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2083107899597861179",
+      "source_url": "https://x.com/SatoRiki_Nerima/status/2083107899597861179",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_dd03e59fcb9256ac",
+        "source_key": "x:2083107899597861179",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/SatoRiki_Nerima/status/2083107899597861179",
+        "source_text": "\n本日も、旭町1丁目町会主催の盆踊り大会が開催されます🏮✨\n\n📍本覚寺（練馬区旭町1丁目26-5）\n🕖19時スタート\n\n夏の夜を、地域の皆さんと一緒に楽しみましょう！\nぜひお越しください😊\n\n練馬区内の盆踊り・お祭り情報はこちら👇\nhttps://t.co/e5UAD84wcy\n\n#練馬区 #旭町 #盆踊り #本覚寺 #夏祭り https://t.co/k1SlYJOkTl",
+        "source_author": "@SatoRiki_Nerima",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@satoriki_nerima",
+          "account_name": "佐藤 力 💪 練馬区議会議員｜練馬の力",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "19時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@SatoRiki_Nerima",
+          "name": "佐藤 力 💪 練馬区議会議員｜練馬の力",
+          "title": "",
+          "text": "本日も、旭町1丁目町会主催の盆踊り大会が開催されます🏮✨\n\n📍本覚寺（練馬区旭町1丁目26-5）\n🕖19時スタート\n\n夏の夜を、地域の皆さんと一緒に楽しみましょう！\nぜひお越しください😊\n\n練馬区内の盆踊り・お祭り情報はこちら👇\nhttps://t.co/e5UAD84wcy\n\n#練馬区 #旭町 #盆踊り #本覚寺 #夏祭り https://t.co/k1SlYJOkTl",
+          "url": "https://x.com/SatoRiki_Nerima/status/2083107899597861179",
+          "date": "2026-07-31T08:30:00+00:00",
+          "tweet_id": "2083107899597861179",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOhbT0Za4AAx4OU.jpg",
+            "https://t.co/k1SlYJOkTl",
+            "pic.x.com/k1SlYJOkTl",
+            "https://pbs.twimg.com/media/HOhbT0jasAEx9Fh.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/SatoRiki_Nerima/status/2083107899597861179"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOhbT0Za4AAx4OU.jpg",
+          "https://t.co/k1SlYJOkTl",
+          "pic.x.com/k1SlYJOkTl",
+          "https://pbs.twimg.com/media/HOhbT0jasAEx9Fh.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_96895a7c24e964f6"
     }
   ],
   "selection": {
@@ -367,11 +410,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2082964462932218081",
-      "x:2083006340340023698",
-      "x:2083017973284147388",
-      "x:2083024864248504751",
-      "x:2083035008466612628"
+      "x:2083050802474795406",
+      "x:2083063419033583664",
+      "x:2083086834817790266",
+      "x:2083087551393599907",
+      "x:2083107899597861179"
     ]
   },
   "write_mode": "snapshot_only_default_off",
