@@ -1,7 +1,7 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1748,
-  "public_event_count": 803,
+  "count": 1762,
+  "public_event_count": 817,
   "review_count": 945,
   "candidates": [
     {
@@ -57108,6 +57108,216 @@
       "song_name": "ライオン",
       "event_name": "LP26まつり",
       "venue": "ライオンズプラザ西葛西マンション内公園",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "ca3d96aa11c27249",
+      "song_name": "365日の紙飛行機",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "9954a35f9c287d75",
+      "song_name": "いわきやっちき",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "d3a3e205087695c5",
+      "song_name": "ゆかた音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "277d655c833a42e0",
+      "song_name": "よろこび音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "448a314c360afd88",
+      "song_name": "八木節",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "56e8700d2ecfea38",
+      "song_name": "大東京音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f4a2cbad88c40f5a",
+      "song_name": "恋するフォーチュンクッキー",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e29e8c576e6e5aa1",
+      "song_name": "恋をするなら",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e7e75b1d35d58e55",
+      "song_name": "文京音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "02d281a1ba182dfe",
+      "song_name": "東京音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "6c8e3bf965860919",
+      "song_name": "白山よいさっさ",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "1d60412131f3bf45",
+      "song_name": "白浜音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f47808768047cfda",
+      "song_name": "盆ダンス",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
+      "area": "江戸川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3506bf9ad54dfdb8",
+      "song_name": "真室川音頭",
+      "event_name": "山王神社盆踊り",
+      "venue": "山王神社",
       "area": "江戸川区",
       "status": "公開済み",
       "confidence": "公開済み",

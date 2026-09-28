@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7450,
+  "count": 7449,
   "summary": {
     "critical": 48,
     "high": 1330,
@@ -33696,27 +33696,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_cfa120e1648239d0",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@hii_twi",
-      "account_name": "Hii🦊7/12合同生誕祭🫱🏻7/31コバラ梅田QUATTRO",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/hii_twi/status/2071852795725218233",
-      "tweet_id": "2071852795725218233",
-      "date": "2026-06-30T07:06:14+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/amplify_video_thumb/2071852704859660288/img/YR3fWZn-veid88fE.jpg",
-        "https://t.co/e9Nw9Ra4PJ",
-        "pic.x.com/e9Nw9Ra4PJ"
-      ],
-      "text": "7/1お昼12:00頃\nBellicism Art Factory\n7月生まれ合同生誕祭\n🦖JULY-SIC SESSION🦖\n曲目発表🥳\n\n振り付け練習の様子をチラリ🫣\n(高速盆踊り)\n\n何の曲か予想してくださいね🌟⋆꙳ https://t.co/e9Nw9Ra4PJ",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

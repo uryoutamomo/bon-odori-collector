@@ -1,16 +1,16 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-09-27T12:09:48.418966+00:00
+- 生成時刻: 2026-09-28T14:04:47.239389+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 49件
-- 候補総数: 10件
+- 対象voices: 45件
+- 候補総数: 9件
 
 ## 内訳
-- 曲×会場共起: 2件
+- 曲×会場共起: 1件
 - 曲候補: 8件
 
 ## レビュー対象
-- 用語・共起レビュー: 2件
+- 用語・共起レビュー: 1件
 - 曲候補レビュー: 1件
 - 曲の明白候補 dry-run: 6件
 - 曲ノイズ除外: 1件
@@ -26,7 +26,6 @@
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
 
 ## 用語・共起レビュー例
-- 河内音頭 × 中和小学校
 - ダンシングヒーロー × 宮下公園
 
 ## 曲レビュー例

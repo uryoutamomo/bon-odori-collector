@@ -3,8 +3,8 @@
   "source": "data/weekly_harvest_candidates.json",
   "song_candidate_count": 8,
   "direct_count": 6,
-  "created_count": 3,
-  "updated_count": 3,
+  "created_count": 4,
+  "updated_count": 2,
   "rejected_noise_count": 1,
   "review_count": 1,
   "created": [
@@ -31,6 +31,14 @@
       "venue_relations": 0,
       "event_relations": 1,
       "dry_run": true
+    },
+    {
+      "song_name": "忍岡音頭",
+      "source_term": "忍岡音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "updated": [
@@ -39,14 +47,6 @@
       "source_term": "東京音頭",
       "target": "update",
       "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "河内音頭",
-      "source_term": "河内音頭",
-      "target": "update",
-      "venue_relations": 1,
       "event_relations": 0,
       "dry_run": true
     },
@@ -70,7 +70,7 @@
       "term": "水戸黄門おどり",
       "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=xpAyTYFPR8g"
+      "evidence_url": "https://www.youtube.com/watch?v=buJacn6XEWQ"
     }
   ]
 }
