@@ -9,6 +9,14 @@
   "review_count": 1,
   "created": [
     {
+      "song_name": "忍岡音頭",
+      "source_term": "忍岡音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "東京谷端さくら音頭",
       "source_term": "東京谷端さくら音頭",
       "target": "create",
@@ -30,14 +38,6 @@
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
-      "dry_run": true
-    },
-    {
-      "song_name": "忍岡音頭",
-      "source_term": "忍岡音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
       "dry_run": true
     }
   ],
@@ -70,7 +70,7 @@
       "term": "水戸黄門おどり",
       "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=buJacn6XEWQ"
+      "evidence_url": "https://www.youtube.com/watch?v=T55BX5nzZJ8"
     }
   ]
 }
