@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-28T14:15:48.250343+00:00",
+  "generated_at": "2026-09-29T13:04:31.898166+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,435 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_443546549f7755e9",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【清荒神自治会　盆踊り大会】\n\n年々、参加してくれる子どもたちも増えてきて、今年も大盛況でした😆✨\nでも会場的にもう上限値かも💦\n\nですが事故などはなく、無事に",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083317555146699065",
+      "source_url": "https://x.com/kenzaburou5908/status/2083317555146699065",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "023c2f1b3c4abb33fbad59be170bdf9cce8d097666ca38dc77f27188bb8a6de9",
+      "last_seen_at": "github-36570801981-1",
+      "created_at": "2026-09-29T13:03:48.332433+00:00",
+      "updated_at": "2026-09-29T13:03:48.332433+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d3ce3afddbc4f12e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kenzaburou5908",
+        "source_count": 1,
+        "source_key": "x:2083317555146699065",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOluRDtakAA7l1_.jpg",
+          "https://t.co/bmFtrYB7PW",
+          "pic.x.com/bmFtrYB7PW"
+        ],
+        "source_officiality": {
+          "account_name": "桑原健三郎(宝塚市議会議員)",
+          "classification": "registered_official_social",
+          "handle": "@kenzaburou5908",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【清荒神自治会　盆踊り大会】\n\n年々、参加してくれる子どもたちも増えてきて、今年も大盛況でした😆✨\nでも会場的にもう上限値かも💦\n\nですが事故などはなく、無事に1日目を終えることができました。\n\n踊る方が多い、踊りがメインの盆踊り大会も貴重な存在になってきているのではないかと思います。\n2日目の今日も19時から開始しますので、いっぱい踊りたい！という方はぜひお越しください😆\n\nでも地元の方がやっている出店もいっぱいあるので、踊らない方も十分お楽しみいただけますのでお越しくださいね🍺🍗🪀🍿🧃\n\n#清荒神自治会　#盆踊り大会　#宝塚市　#地元の楽しみ想い出作り　#これこそ地域力だ",
+        "source_url": "https://x.com/kenzaburou5908/status/2083317555146699065",
+        "source_urls": [
+          "https://x.com/kenzaburou5908/status/2083317555146699065"
+        ],
+        "voice": {
+          "account": "@kenzaburou5908",
+          "date": "2026-07-31T22:23:05+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOluRDtakAA7l1_.jpg",
+            "https://t.co/bmFtrYB7PW",
+            "pic.x.com/bmFtrYB7PW"
+          ],
+          "name": "桑原健三郎(宝塚市議会議員)",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "【清荒神自治会　盆踊り大会】\n\n年々、参加してくれる子どもたちも増えてきて、今年も大盛況でした😆✨\nでも会場的にもう上限値かも💦\n\nですが事故などはなく、無事に1日目を終えることができました。\n\n踊る方が多い、踊りがメインの盆踊り大会も貴重な存在になってきているのではないかと思います。\n2日目の今日も19時から開始しますので、いっぱい踊りたい！という方はぜひお越しください😆\n\nでも地元の方がやっている出店もいっぱいあるので、踊らない方も十分お楽しみいただけますのでお越しくださいね🍺🍗🪀🍿🧃\n\n#清荒神自治会　#盆踊り大会　#宝塚市　#地元の楽しみ想い出作り　#これこそ地域力だ",
+          "title": "",
+          "tweet_id": "2083317555146699065",
+          "url": "https://x.com/kenzaburou5908/status/2083317555146699065"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6ac9fa8ae0d8d857",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "寺谷熊野神社夏祭り、初日の宵宮は大盛況で終了しました。明日8/1(土)は午前10時より子供神輿と山車が町内を一周し、夕方18時頃より模擬店営業、19時より盆踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083191650134921261",
+      "source_url": "https://x.com/teraya_info/status/2083191650134921261",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b719127b71b79462672bf6eb07c093b688722c13cb2b14d820c20e0cb2e8d0d9",
+      "last_seen_at": "github-36570801981-1",
+      "created_at": "2026-09-29T13:03:48.332433+00:00",
+      "updated_at": "2026-09-29T13:03:48.332433+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_0112548b0d8ccb33",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1",
+          "10時",
+          "18時",
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区西蒲田6-13",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/165965",
+          "venue": "熊野神社"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@teraya_info",
+        "source_count": 1,
+        "source_key": "x:2083191650134921261",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOj7w0QagAAo3l0.jpg",
+          "https://t.co/lmu7ihQMxD",
+          "pic.x.com/lmu7ihQMxD",
+          "https://pbs.twimg.com/media/HOj7w0OaMAE_WNO.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "寺谷自治会＠横浜市鶴見区",
+          "classification": "registered_official_social",
+          "handle": "@teraya_info",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n寺谷熊野神社夏祭り、初日の宵宮は大盛況で終了しました。明日8/1(土)は午前10時より子供神輿と山車が町内を一周し、夕方18時頃より模擬店営業、19時より盆踊り大会です。\n明日もお待ちしています！ https://t.co/lmu7ihQMxD",
+        "source_url": "https://x.com/teraya_info/status/2083191650134921261",
+        "source_urls": [
+          "https://x.com/teraya_info/status/2083191650134921261"
+        ],
+        "voice": {
+          "account": "@teraya_info",
+          "date": "2026-07-31T14:02:47+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOj7w0QagAAo3l0.jpg",
+            "https://t.co/lmu7ihQMxD",
+            "pic.x.com/lmu7ihQMxD",
+            "https://pbs.twimg.com/media/HOj7w0OaMAE_WNO.jpg"
+          ],
+          "name": "寺谷自治会＠横浜市鶴見区",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "寺谷熊野神社夏祭り、初日の宵宮は大盛況で終了しました。明日8/1(土)は午前10時より子供神輿と山車が町内を一周し、夕方18時頃より模擬店営業、19時より盆踊り大会です。\n明日もお待ちしています！ https://t.co/lmu7ihQMxD",
+          "title": "",
+          "tweet_id": "2083191650134921261",
+          "url": "https://x.com/teraya_info/status/2083191650134921261"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9a97372b1d7f6e2d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【矢口渡】矢口の渡商店街が8/2(日)に名物「わたし盆踊り」開催🏮✨\n🕔17:00～20:00\nわたし盆踊りで夏の夜を楽しみましょう💕\nh",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083357041700286626",
+      "source_url": "https://x.com/otafull/status/2083357041700286626",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "cec09d5b66a979fe113932c7ec167cee5e85f5600a5b61ddd1599fe0e567b05e",
+      "last_seen_at": "github-36570801981-1",
+      "created_at": "2026-09-29T13:03:48.332433+00:00",
+      "updated_at": "2026-09-29T13:03:48.332433+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_fa4073c30cd39670",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/2"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2083357041700286626",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【矢口渡】矢口の渡商店街が8/2(日)に名物「わたし盆踊り」開催🏮✨\n🕔17:00～20:00\nわたし盆踊りで夏の夜を楽しみましょう💕\nhttps://t.co/6M5wRIur2O\n#大田区　#商店街　#矢口渡　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2083357041700286626",
+        "source_urls": [
+          "https://x.com/otafull/status/2083357041700286626"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-01T01:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【矢口渡】矢口の渡商店街が8/2(日)に名物「わたし盆踊り」開催🏮✨\n🕔17:00～20:00\nわたし盆踊りで夏の夜を楽しみましょう💕\nhttps://t.co/6M5wRIur2O\n#大田区　#商店街　#矢口渡　#盆踊り",
+          "title": "",
+          "tweet_id": "2083357041700286626",
+          "url": "https://x.com/otafull/status/2083357041700286626"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ca70ce1daa977182",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "屋台が多数出店します。踊ってくれたちびっ子にはお菓子のプレゼントも！【盆踊り情報2026】【大岡山】8/7(金)、8(土)の2日間、大岡山北口商店街で「盆踊り」",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083333049861968193",
+      "source_url": "https://x.com/otafull/status/2083333049861968193",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6b00d57e6a9463386779c0225979f1d6792ac525b689c91828f5363feeb6956e",
+      "last_seen_at": "github-36570801981-1",
+      "created_at": "2026-09-29T13:03:48.332433+00:00",
+      "updated_at": "2026-09-29T13:03:48.332433+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a967942b50ed91a8",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/7"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2083333049861968193",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n屋台が多数出店します。踊ってくれたちびっ子にはお菓子のプレゼントも！【盆踊り情報2026】【大岡山】8/7(金)、8(土)の2日間、大岡山北口商店街で「盆踊り」 https://t.co/DUMw07lcNp",
+        "source_url": "https://x.com/otafull/status/2083333049861968193",
+        "source_urls": [
+          "https://x.com/otafull/status/2083333049861968193"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-07-31T23:24:40+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "屋台が多数出店します。踊ってくれたちびっ子にはお菓子のプレゼントも！【盆踊り情報2026】【大岡山】8/7(金)、8(土)の2日間、大岡山北口商店街で「盆踊り」 https://t.co/DUMw07lcNp",
+          "title": "",
+          "tweet_id": "2083333049861968193",
+          "url": "https://x.com/otafull/status/2083333049861968193"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cae657b62eccc7fa",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "かなくぼ🌷です\n\n＼新小川公園盆踊り大会・雨天中止7月26日／\n\n残念ながら行ったらやってなくて😭\nそして僕は途方に暮れていたら(「そして僕は途方に暮れる」19",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083211226977558705",
+      "source_url": "https://x.com/Naxako75/status/2083211226977558705",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "549727ed30c2d3578e87bbdd04d58a45745674f2c3401f37663a7e2fe364c21d",
+      "last_seen_at": "github-36570801981-1",
+      "created_at": "2026-09-29T13:03:48.332433+00:00",
+      "updated_at": "2026-09-29T13:03:48.332433+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_4142e6223fd38a4b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月26日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "新宿区新小川町3-31",
+          "region_hint": "新宿区",
+          "source_url": "https://www.city.shinjuku.lg.jp/kusei/kashiwagi01_000001_00037.html",
+          "venue": "新小川公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Naxako75",
+        "source_count": 1,
+        "source_key": "x:2083211226977558705",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOkMVDLakAAUZMe.jpg",
+          "https://t.co/MdkWGPHN5d",
+          "pic.x.com/MdkWGPHN5d",
+          "https://pbs.twimg.com/media/HOkMVDPa4AAfnIm.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "かなくぼ なな子🌷新宿区議会議員/国民民主党/元区役所非正規職員",
+          "classification": "registered_official_social",
+          "handle": "@naxako75",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nかなくぼ🌷です\n\n＼新小川公園盆踊り大会・雨天中止7月26日／\n\n残念ながら行ったらやってなくて😭\nそして僕は途方に暮れていたら(「そして僕は途方に暮れる」1984年大沢誉志幸)、\n\n凄いグッドタイミングで救世主が現れ、次の盆踊り会場までひとっ飛び🚙\nありがとうございました🙇‍♀️\n\n車って便利だなぁ、欲しいなぁ\n20代の頃ホンダプリモ、30代でBMWのショールームレディをやってました\n(BMWの面接、最初は落ちたのですが、どうしてもやりたいとリベンジして合格しました✌️)\n\n#かなくぼなな子\n#新宿区議会議員\n#国民民主党",
+        "source_url": "https://x.com/Naxako75/status/2083211226977558705",
+        "source_urls": [
+          "https://x.com/Naxako75/status/2083211226977558705"
+        ],
+        "voice": {
+          "account": "@Naxako75",
+          "date": "2026-07-31T15:20:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOkMVDLakAAUZMe.jpg",
+            "https://t.co/MdkWGPHN5d",
+            "pic.x.com/MdkWGPHN5d",
+            "https://pbs.twimg.com/media/HOkMVDPa4AAfnIm.jpg"
+          ],
+          "name": "かなくぼ なな子🌷新宿区議会議員/国民民主党/元区役所非正規職員",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-cancel-change"
+          ],
+          "text": "かなくぼ🌷です\n\n＼新小川公園盆踊り大会・雨天中止7月26日／\n\n残念ながら行ったらやってなくて😭\nそして僕は途方に暮れていたら(「そして僕は途方に暮れる」1984年大沢誉志幸)、\n\n凄いグッドタイミングで救世主が現れ、次の盆踊り会場までひとっ飛び🚙\nありがとうございました🙇‍♀️\n\n車って便利だなぁ、欲しいなぁ\n20代の頃ホンダプリモ、30代でBMWのショールームレディをやってました\n(BMWの面接、最初は落ちたのですが、どうしてもやりたいとリベンジして合格しました✌️)\n\n#かなくぼなな子\n#新宿区議会議員\n#国民民主党",
+          "title": "",
+          "tweet_id": "2083211226977558705",
+          "url": "https://x.com/Naxako75/status/2083211226977558705"
         }
       }
     },
