@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-09-29T13:14:16.284085+00:00",
+  "generated_at": "2026-09-30T12:44:16.226829+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,453 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_019312fa868033a3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日の村中区盆踊り大会リハーサルです。動画を撮ったら、曲が終わりました（笑）\n\n本日の村中区盆踊り大会は、午後7時〜8時半、玉林寺で開催です。\nバザーのみたらし",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083430407450816658",
+      "source_url": "https://x.com/mayumi_ogawa/status/2083430407450816658",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1f664b4352743d8da0dc00b562a411fd68bb55bc08b4643e29959acfe40154ed",
+      "last_seen_at": "github-36715388904-1",
+      "created_at": "2026-09-30T12:43:43.585528+00:00",
+      "updated_at": "2026-09-30T12:43:43.585528+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_944a33e7723cda1e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7時",
+          "8時",
+          "6時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@mayumi_ogawa",
+        "source_count": 1,
+        "source_key": "x:2083430407450816658",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2083430352010559488/img/uYcRsmLLv0rfYbfu.jpg",
+          "https://t.co/7THDhGKBRg",
+          "pic.x.com/7THDhGKBRg"
+        ],
+        "source_officiality": {
+          "account_name": "小牧市議会議員 小川まゆみ",
+          "classification": "registered_official_social",
+          "handle": "@mayumi_ogawa",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日の村中区盆踊り大会リハーサルです。動画を撮ったら、曲が終わりました（笑）\n\n本日の村中区盆踊り大会は、午後7時〜8時半、玉林寺で開催です。\nバザーのみたらし・かき氷・飲料などは、午後6時半より販売です。\n\n皆さん、楽しく踊って地域の絆も大切に！関係者の皆様もありがとうございます。 https://t.co/7THDhGKBRg",
+        "source_url": "https://x.com/mayumi_ogawa/status/2083430407450816658",
+        "source_urls": [
+          "https://x.com/mayumi_ogawa/status/2083430407450816658"
+        ],
+        "voice": {
+          "account": "@mayumi_ogawa",
+          "date": "2026-08-01T05:51:32+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2083430352010559488/img/uYcRsmLLv0rfYbfu.jpg",
+            "https://t.co/7THDhGKBRg",
+            "pic.x.com/7THDhGKBRg"
+          ],
+          "name": "小牧市議会議員 小川まゆみ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "昨日の村中区盆踊り大会リハーサルです。動画を撮ったら、曲が終わりました（笑）\n\n本日の村中区盆踊り大会は、午後7時〜8時半、玉林寺で開催です。\nバザーのみたらし・かき氷・飲料などは、午後6時半より販売です。\n\n皆さん、楽しく踊って地域の絆も大切に！関係者の皆様もありがとうございます。 https://t.co/7THDhGKBRg",
+          "title": "",
+          "tweet_id": "2083430407450816658",
+          "url": "https://x.com/mayumi_ogawa/status/2083430407450816658"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_37864a173684b551",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "な盆踊りイベント（8/1・2中心）\n\n【汐入納涼盆踊り】\n日時：8月1日（土）16:00頃〜21:00頃（模擬店16時〜、盆踊り18:00〜20:30頃、スイカ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083455138841165926",
+      "source_url": "https://x.com/gohhog1/status/2083455138841165926",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4e3a4c1630fd7ee3fbff96e4423051cf7e885f2dc57d57036f9b73c052cba81b",
+      "last_seen_at": "github-36715388904-1",
+      "created_at": "2026-09-30T12:43:43.585528+00:00",
+      "updated_at": "2026-09-30T12:43:43.585528+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_0881875ca1825a20",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1",
+          "8月1日",
+          "16時",
+          "8月2日",
+          "8月1日",
+          "8月2日",
+          "7時",
+          "8月1日",
+          "14時",
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "荒川区東日暮里3-10-5",
+          "region_hint": "荒川区",
+          "source_url": "https://www.city.arakawa.tokyo.jp/documents/45496/20260721_00.pdf",
+          "venue": "第三日暮里小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@gohhog1",
+        "source_count": 1,
+        "source_key": "x:2083455138841165926",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "山本剛(ごう)荒川区議🗳️『減税 政治家』元参議院議員政策秘書無所属",
+          "classification": "registered_official_social",
+          "handle": "@gohhog1",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nな盆踊りイベント（8/1・2中心）\n\n【汐入納涼盆踊り】\n日時：8月1日（土）16:00頃〜21:00頃（模擬店16時〜、盆踊り18:00〜20:30頃、スイカ無料配布20:30〜）\n\n場所：都立汐入公園 噴水広場周辺（南千住8丁目）\n\n主催：リバーパーク汐入町会\n雨天時は8月2日に順延の可能性あり。屋台ありでスカイツリーも見えます。 \n\rhttps://t.co/jz01zorcNA\n\n【東日暮里一丁目アパート自治会 盆踊り大会】\n日時：8月1日（土）18:00〜21:00（雨天時は8月2日）\n\n場所：日暮里一丁目公園\n主催：東日暮里一丁目アパート自治会\n午後7時45分頃から飲料配布の記載あり\n\n【原町会の盆踊り】\n日時：8月1日（土）・2日（日）18:30〜20:30\n場所：町屋五丁目南公園\n主催：原町会\n\n関連：1日正午〜14時頃に原中学校校庭でプール＆どじょうつかみ、2日は神輿・山車巡行などもあります。 \n\n【親と子の盆踊り大会】\n日時：8月1日（土）・2日（日）18:50頃〜21:00頃\n場所：第三日暮里小学校校庭\n主催：東日暮里1・2丁目町会ほか複数町会\n組太鼓演奏などの",
+        "source_url": "https://x.com/gohhog1/status/2083455138841165926",
+        "source_urls": [
+          "https://x.com/gohhog1/status/2083455138841165926"
+        ],
+        "voice": {
+          "account": "@gohhog1",
+          "date": "2026-08-01T07:29:48+00:00",
+          "name": "山本剛(ごう)荒川区議🗳️『減税 政治家』元参議院議員政策秘書無所属",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "な盆踊りイベント（8/1・2中心）\n\n【汐入納涼盆踊り】\n日時：8月1日（土）16:00頃〜21:00頃（模擬店16時〜、盆踊り18:00〜20:30頃、スイカ無料配布20:30〜）\n\n場所：都立汐入公園 噴水広場周辺（南千住8丁目）\n\n主催：リバーパーク汐入町会\n雨天時は8月2日に順延の可能性あり。屋台ありでスカイツリーも見えます。 \n\rhttps://t.co/jz01zorcNA\n\n【東日暮里一丁目アパート自治会 盆踊り大会】\n日時：8月1日（土）18:00〜21:00（雨天時は8月2日）\n\n場所：日暮里一丁目公園\n主催：東日暮里一丁目アパート自治会\n午後7時45分頃から飲料配布の記載あり\n\n【原町会の盆踊り】\n日時：8月1日（土）・2日（日）18:30〜20:30\n場所：町屋五丁目南公園\n主催：原町会\n\n関連：1日正午〜14時頃に原中学校校庭でプール＆どじょうつかみ、2日は神輿・山車巡行などもあります。 \n\n【親と子の盆踊り大会】\n日時：8月1日（土）・2日（日）18:50頃〜21:00頃\n場所：第三日暮里小学校校庭\n主催：東日暮里1・2丁目町会ほか複数町会\n組太鼓演奏などの記",
+          "title": "",
+          "tweet_id": "2083455138841165926",
+          "url": "https://x.com/gohhog1/status/2083455138841165926"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4bb5d7df0c7b6550",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "とうすみ盆踊り大会は、本日も18時から開催予定です。法政通り商店街では、フライドポテト、焼ちくわ、綿菓子、ヨーヨー等販売します\n熱中症対策をして、お越しください",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083413277208703358",
+      "source_url": "https://x.com/InfoHouseidori/status/2083413277208703358",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "40b597823011e777bafef5266990794a38c98c55c1c9fbf929089e9e6a1035b5",
+      "last_seen_at": "github-36715388904-1",
+      "created_at": "2026-09-30T12:43:43.585528+00:00",
+      "updated_at": "2026-09-30T12:43:43.585528+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_c05b8035884eedbf",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@InfoHouseidori",
+        "source_count": 1,
+        "source_key": "x:2083413277208703358",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOnFVPQbkAI4C_o.jpg",
+          "https://t.co/lHaPWzAjjj",
+          "pic.x.com/lHaPWzAjjj",
+          "https://pbs.twimg.com/media/HOnFVPTbwAABt01.jpg",
+          "https://pbs.twimg.com/media/HOnFVPOaEAAS7Ww.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "武蔵小杉 法政通り商店街",
+          "classification": "registered_official_social",
+          "handle": "@infohouseidori",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nとうすみ盆踊り大会は、本日も18時から開催予定です。法政通り商店街では、フライドポテト、焼ちくわ、綿菓子、ヨーヨー等販売します\n熱中症対策をして、お越しください https://t.co/lHaPWzAjjj",
+        "source_url": "https://x.com/InfoHouseidori/status/2083413277208703358",
+        "source_urls": [
+          "https://x.com/InfoHouseidori/status/2083413277208703358"
+        ],
+        "voice": {
+          "account": "@InfoHouseidori",
+          "date": "2026-08-01T04:43:27+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOnFVPQbkAI4C_o.jpg",
+            "https://t.co/lHaPWzAjjj",
+            "pic.x.com/lHaPWzAjjj",
+            "https://pbs.twimg.com/media/HOnFVPTbwAABt01.jpg",
+            "https://pbs.twimg.com/media/HOnFVPOaEAAS7Ww.jpg"
+          ],
+          "name": "武蔵小杉 法政通り商店街",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "とうすみ盆踊り大会は、本日も18時から開催予定です。法政通り商店街では、フライドポテト、焼ちくわ、綿菓子、ヨーヨー等販売します\n熱中症対策をして、お越しください https://t.co/lHaPWzAjjj",
+          "title": "",
+          "tweet_id": "2083413277208703358",
+          "url": "https://x.com/InfoHouseidori/status/2083413277208703358"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b5bfd61c3c23177b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【本日8/1(土)17:00〜 盆踊り開催！🏮】\n\n地域で盆踊りが開催されます！厳しい暑さが続いていますので、しっかり水分補給をして熱中症にはくれぐれもご注意く",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083400180041384005",
+      "source_url": "https://x.com/Matsumoto_501/status/2083400180041384005",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5bac7ff97808a162a2bbda0bf8683a86219f4481903e21fcbc23fdd6ce20e1d9",
+      "last_seen_at": "github-36715388904-1",
+      "created_at": "2026-09-30T12:43:43.585528+00:00",
+      "updated_at": "2026-09-30T12:43:43.585528+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a6a57c6c454cd751",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/1"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Matsumoto_501",
+        "source_count": 1,
+        "source_key": "x:2083400180041384005",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOm5a1faoAAv3Sg.jpg",
+          "https://t.co/kWDGkkz8Ei",
+          "pic.x.com/kWDGkkz8Ei"
+        ],
+        "source_officiality": {
+          "account_name": "松本浩一 杉並区議会議員 立憲民主党",
+          "classification": "registered_official_social",
+          "handle": "@matsumoto_501",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【本日8/1(土)17:00〜 盆踊り開催！🏮】\n\n地域で盆踊りが開催されます！厳しい暑さが続いていますので、しっかり水分補給をして熱中症にはくれぐれもご注意ください。\n\n私も会場に伺いますので、見かけたらぜひ声をかけてくださいね😊 一緒に夏を楽しみましょう！\n\n#杉並区 #松本浩一 https://t.co/kWDGkkz8Ei",
+        "source_url": "https://x.com/Matsumoto_501/status/2083400180041384005",
+        "source_urls": [
+          "https://x.com/Matsumoto_501/status/2083400180041384005"
+        ],
+        "voice": {
+          "account": "@Matsumoto_501",
+          "date": "2026-08-01T03:51:25+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOm5a1faoAAv3Sg.jpg",
+            "https://t.co/kWDGkkz8Ei",
+            "pic.x.com/kWDGkkz8Ei"
+          ],
+          "name": "松本浩一 杉並区議会議員 立憲民主党",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【本日8/1(土)17:00〜 盆踊り開催！🏮】\n\n地域で盆踊りが開催されます！厳しい暑さが続いていますので、しっかり水分補給をして熱中症にはくれぐれもご注意ください。\n\n私も会場に伺いますので、見かけたらぜひ声をかけてくださいね😊 一緒に夏を楽しみましょう！\n\n#杉並区 #松本浩一 https://t.co/kWDGkkz8Ei",
+          "title": "",
+          "tweet_id": "2083400180041384005",
+          "url": "https://x.com/Matsumoto_501/status/2083400180041384005"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_dcac51f398dcd613",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "#墨田区\n19時スタートの盆踊り前の子どもイベントに参加。シャボン玉遊び、ウレタン廃材を利用した水遊びなど多彩。抹茶蜜のかき氷を食べるとと頭痛が…。\n会場の公園",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083452357527175603",
+      "source_url": "https://x.com/ooks_katu/status/2083452357527175603",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5a1cf336e31fd4636b63c73a10001ebf51f53a7b7c61c6d7727953950fa46058",
+      "last_seen_at": "github-36715388904-1",
+      "created_at": "2026-09-30T12:43:43.585528+00:00",
+      "updated_at": "2026-09-30T12:43:43.585528+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_13b62e2405bead9b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@ooks_katu",
+        "source_count": 1,
+        "source_key": "x:2083452357527175603",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOno4BZakAA74Er.jpg",
+          "https://t.co/eFQdUkVVyC",
+          "pic.x.com/eFQdUkVVyC",
+          "https://pbs.twimg.com/media/HOno4BaaIAEqemC.jpg",
+          "https://pbs.twimg.com/media/HOno4BZbEAAmEtU.jpg",
+          "https://pbs.twimg.com/media/HOno4Bqa0AAzydQ.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "おおこし勝広　墨田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@ooks_katu",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n#墨田区\n19時スタートの盆踊り前の子どもイベントに参加。シャボン玉遊び、ウレタン廃材を利用した水遊びなど多彩。抹茶蜜のかき氷を食べるとと頭痛が…。\n会場の公園トイレがリニューアルされ、公園トイレ外壁の色は盆踊り参加者の声で決まるらしい。やるじゃん、公園課。今日も小林区議と一緒 https://t.co/eFQdUkVVyC",
+        "source_url": "https://x.com/ooks_katu/status/2083452357527175603",
+        "source_urls": [
+          "https://x.com/ooks_katu/status/2083452357527175603"
+        ],
+        "voice": {
+          "account": "@ooks_katu",
+          "date": "2026-08-01T07:18:45+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOno4BZakAA74Er.jpg",
+            "https://t.co/eFQdUkVVyC",
+            "pic.x.com/eFQdUkVVyC",
+            "https://pbs.twimg.com/media/HOno4BaaIAEqemC.jpg",
+            "https://pbs.twimg.com/media/HOno4BZbEAAmEtU.jpg",
+            "https://pbs.twimg.com/media/HOno4Bqa0AAzydQ.jpg"
+          ],
+          "name": "おおこし勝広　墨田区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-imminent"
+          ],
+          "text": "#墨田区\n19時スタートの盆踊り前の子どもイベントに参加。シャボン玉遊び、ウレタン廃材を利用した水遊びなど多彩。抹茶蜜のかき氷を食べるとと頭痛が…。\n会場の公園トイレがリニューアルされ、公園トイレ外壁の色は盆踊り参加者の声で決まるらしい。やるじゃん、公園課。今日も小林区議と一緒 https://t.co/eFQdUkVVyC",
+          "title": "",
+          "tweet_id": "2083452357527175603",
+          "url": "https://x.com/ooks_katu/status/2083452357527175603"
         }
       }
     },
