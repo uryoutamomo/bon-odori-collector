@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7449,
+  "count": 7447,
   "summary": {
     "critical": 48,
     "high": 1330,
@@ -33696,52 +33696,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_126528de5fa8b708",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@natsumoude",
-      "account_name": "【公式】夏詣",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/natsumoude/status/2072633669450453094",
-      "tweet_id": "2072633669450453094",
-      "date": "2026-07-02T10:49:09+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMN4Zi9acAE7RVy.jpg",
-        "https://t.co/wKS7yKfLXW",
-        "pic.x.com/wKS7yKfLXW",
-        "https://pbs.twimg.com/media/HMN4buLbEAAR9_P.jpg",
-        "https://pbs.twimg.com/media/HMN4gi9bcAAz7g8.jpg"
-      ],
-      "text": "🌌7/3(金)の浅草神社 #夏詣 プログラム\n\n👘＜女性＞浴衣着付け・髪結いサービス 12:00〜17:00\n🪈雅楽演奏 16:00〜\n🪭【無料】夏詣盆をどり18:00〜19:30\nエントリー募集中！ぜひ、手ぬぐいをご持参ください。\n\n🔽詳細・盆をどりエントリーはリプ欄をチェック🔽\n\n#盆踊り\n#浅草神社 https://t.co/wKS7yKfLXW",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_4479aa75705c7004",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@yoshinew25",
-      "account_name": "旅飯 agogo！",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/yoshinew25/status/2072641973174112402",
-      "tweet_id": "2072641973174112402",
-      "date": "2026-07-02T11:22:08+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMOALmTaMAA2VPN.jpg",
-        "https://t.co/FRxP3bIE8q",
-        "pic.x.com/FRxP3bIE8q",
-        "https://pbs.twimg.com/media/HMOAM8_aoAA5zt0.jpg",
-        "https://pbs.twimg.com/media/HMOAM89bsAAgaqA.jpg"
-      ],
-      "text": "東京駅前で夏祭り「大手町・丸の内・有楽町 夏祭り」\n開催します！ 7月24日～\n\n■「丸の内盆踊り2026」\n日時：7月24日  16:00～22:30 \n場所：行幸通り\n■大手町縁日2026\n日時：7月30・31日  17:00～21:00 \n場所：大手町仲通り、大手町フィナンシャルシティ1階・2階、川端緑道\nhttps://t.co/kBGSzGM9Xe https://t.co/FRxP3bIE8q",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 8,
-  "direct_count": 6,
-  "created_count": 4,
+  "song_candidate_count": 5,
+  "direct_count": 3,
+  "created_count": 1,
   "updated_count": 2,
   "rejected_noise_count": 1,
   "review_count": 1,
@@ -14,30 +14,6 @@
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "東京谷端さくら音頭",
-      "source_term": "東京谷端さくら音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "滝野川八幡神社御祭禮音頭",
-      "source_term": "滝野川八幡神社御祭禮音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "西新井大師音頭",
-      "source_term": "西新井大師音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 1,
       "dry_run": true
     }
   ],
@@ -54,8 +30,8 @@
       "song_name": "ダンシングヒーロー",
       "source_term": "ダンシングヒーロー",
       "target": "update",
-      "venue_relations": 1,
-      "event_relations": 3,
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     }
   ],
@@ -70,7 +46,7 @@
       "term": "水戸黄門おどり",
       "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=T55BX5nzZJ8"
+      "evidence_url": "https://www.youtube.com/watch?v=o4AzzoIqStI"
     }
   ]
 }
