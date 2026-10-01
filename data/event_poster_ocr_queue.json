@@ -1,12 +1,12 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7447,
+  "count": 7443,
   "summary": {
     "critical": 48,
     "high": 1330,
     "trusted_informant": 51,
     "already_read": 3,
-    "date_gap_matched": 110
+    "date_gap_matched": 109
   },
   "items": [
     {
@@ -450,35 +450,6 @@
           "event_name": "浜二納涼盆踊り大会",
           "venue_name": "浜町公園",
           "matched_keyword": "浜町公園"
-        }
-      ]
-    },
-    {
-      "id": "xposter_387580b5a7f9fb29",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@BarAmbience",
-      "account_name": "BARアンビエンス",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/BarAmbience/status/2072961527611891880",
-      "tweet_id": "2072961527611891880",
-      "date": "2026-07-03T08:31:56+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMSjDwfbUAAL_lg.jpg",
-        "https://t.co/z6MpjKv1mT",
-        "pic.x.com/z6MpjKv1mT"
-      ],
-      "text": "【 7/7(火) 七夕夜会 】開催🔥\nクラフトビールや台湾夜市ゲーム、盆踊りメインの音楽プログラムなど、個性豊かなコンテンツが大集合。\n願いごとを書いた短冊はイベント後、牛嶋神社でお焚き上げをしていただきます❗️\n\n🕔17:00 ～ 21:00 \n📍 隅田公園そよ風ひろば\n\n🔗https://t.co/Rt3AWmDVEd https://t.co/z6MpjKv1mT",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_0c0916e2c7e2372e",
-          "event_name": "牛嶋神社祭礼 奉納踊り",
-          "venue_name": "牛嶋神社",
-          "matched_keyword": "牛嶋神社"
         }
       ]
     },
@@ -33696,69 +33667,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_0ad364792c55d80f",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@natsumoude",
-      "account_name": "【公式】夏詣",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/natsumoude/status/2072696055154766219",
-      "tweet_id": "2072696055154766219",
-      "date": "2026-07-02T14:57:03+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMOyE4ybEAE-ux8.jpg",
-        "https://t.co/Vf1MacfoQd",
-        "pic.x.com/Vf1MacfoQd"
-      ],
-      "text": "＼曲目、発表します！／\n7/3(金)の浅草神社 #夏詣 盆をどり\n18:00〜19:30\n\n無くても大丈夫ですが、団扇・手ぬぐいがあれば楽しさ倍増です☺️\n\n#盆踊り https://t.co/Vf1MacfoQd",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_980466ff6ad57432",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@gunsou_bouei64",
-      "account_name": "陸自調査団",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/gunsou_bouei64/status/2072714358984200500",
-      "tweet_id": "2072714358984200500",
-      "date": "2026-07-02T16:09:47+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMPCYG3bcAEp74g.jpg",
-        "https://t.co/5GWoq753Xf",
-        "pic.x.com/5GWoq753Xf"
-      ],
-      "text": "■令和8年度 伊丹･川西駐屯地 合同納涼夏祭り\n\n・音楽演奏\n・盆踊りコンテスト\n・太鼓演奏\n・部外ダンスチーム\n・総踊り\n・野外売店\n　など\n\n日時：2026年8月5日(水)17:00～20:00\n場所：陸上自衛隊 伊丹駐屯地（兵庫県 伊丹市）\n\nhttps://t.co/BCfF5MaQJ2 https://t.co/5GWoq753Xf",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_2ebb1cd1ea86e757",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@highway_mapple",
-      "account_name": "ハイウェイまっぷる",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/highway_mapple/status/2072923397278126286",
-      "tweet_id": "2072923397278126286",
-      "date": "2026-07-03T06:00:25+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMSA1rLbAAAYURZ.jpg",
-        "https://t.co/lneSaecoMA",
-        "pic.x.com/lneSaecoMA"
-      ],
-      "text": "◤ 鬼平江戸処で夏を満喫🏮 ◢\n東北道 #羽生PA (上り)では、毎月江戸大道芸を開催中✨\n\n7月は盆踊りや白山太鼓など、子どもから大人まで楽しめる演目が勢ぞろいします👀\n観て楽しい！食べて楽しい！鬼平江戸処へぜひお立ち寄りください🚗\n\n📆令和8年7月の演目（場所：屋外中庭広場）\n・5日(日)『盆踊り』\n・12日(日)『白山太鼓』\n・20日(月祝)『飴細工』\n・26日(日)『江戸太神楽獅子舞』\n\n※当日の状況により公演内容が変更となる場合があります。\n※演目により館内を回遊することもございます。\n\n#ハイウェイまっぷる",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

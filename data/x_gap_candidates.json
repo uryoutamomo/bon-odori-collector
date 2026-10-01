@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-09-30T12:42:45.117384+00:00",
+  "generated_at": "2026-10-01T13:22:55.665534+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
@@ -23779,7 +23779,7 @@
       "archive_reason": "daily_candidate_cap"
     },
     {
-      "candidate_id": "xgap_7ed7747cc66e43ec",
+      "candidate_id": "xgap_04c1aea0258e5f94",
       "source_key": "x:2076792900260974804",
       "lane_hint": "lane2",
       "candidate_kind": "informal_new_event",
@@ -23808,10 +23808,9 @@
         "2026/8/11"
       ],
       "observed_dates": [
-        "2026-09-30",
         "2026-10-12"
       ],
-      "event_group_key": "informal:c69c898e40a3cdd3",
+      "event_group_key": "informal:cecb362178a973a4",
       "known_venue_evidence": null,
       "voice": {
         "source": "x",

@@ -559,10 +559,10 @@
         7,
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "confirmed",
-      "confirmed_count": 8,
-      "checked_count": 14
+      "confirmed_count": 9,
+      "checked_count": 15
     },
     "小田急線喜多見駅前南口広場|喜多見盆踊り大会": {
       "venue": "小田急線喜多見駅前 南口広場",
@@ -1445,10 +1445,10 @@
         8,
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 61
+      "checked_count": 62
     },
     "鶴巻小学校|鶴巻小学校納涼盆踊り大会＆子ども祭り": {
       "venue": "鶴巻小学校",
@@ -1874,10 +1874,10 @@
       "months": [
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 62
+      "checked_count": 63
     },
     "京陽小学校|京陽小学校": {
       "venue": "京陽小学校",
@@ -1885,10 +1885,10 @@
       "months": [
         10
       ],
-      "last_checked_at": "2026-09-27T12:01:50.021352+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "confirmed",
-      "confirmed_count": 7,
-      "checked_count": 7
+      "confirmed_count": 8,
+      "checked_count": 8
     },
     "大阪・関西万博フェスティバル・ステーション|大阪・関西万博フェスティバル・ステーション": {
       "venue": "大阪・関西万博 フェスティバル・ステーション",
@@ -1896,10 +1896,10 @@
       "months": [
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 47
+      "checked_count": 48
     },
     "旗の台稲荷通り商店街|旗の台稲荷通り商店会盆踊り盆rock": {
       "venue": "旗の台稲荷通り商店街",
@@ -1907,10 +1907,10 @@
       "months": [
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 47
+      "checked_count": 48
     },
     "笠松みなと公園|笠松みなと公園": {
       "venue": "笠松みなと公園",
@@ -1918,10 +1918,10 @@
       "months": [
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 47
+      "checked_count": 48
     },
     "芝公園|みなと区民まつり盆踊り": {
       "venue": "芝公園",
@@ -1929,10 +1929,10 @@
       "months": [
         10
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "confirmed",
-      "confirmed_count": 7,
-      "checked_count": 7
+      "confirmed_count": 8,
+      "checked_count": 8
     },
     "上神明小学校|上神明小学校": {
       "venue": "上神明小学校",
@@ -1940,10 +1940,10 @@
       "months": [
         11
       ],
-      "last_checked_at": "2026-09-29T12:52:42.221078+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "confirmed",
-      "confirmed_count": 7,
-      "checked_count": 7
+      "confirmed_count": 8,
+      "checked_count": 8
     },
     "東京大学駒場キャンパス学生会館東|盆踊りin駒場東大": {
       "venue": "東京大学駒場キャンパス 学生会館東",
@@ -1951,10 +1951,10 @@
       "months": [
         11
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 31
+      "checked_count": 32
     },
     "馬橋小学校|馬橋小学校": {
       "venue": "馬橋小学校",
@@ -1962,11 +1962,11 @@
       "months": [
         11
       ],
-      "last_checked_at": "2026-09-30T12:34:39.832005+00:00",
+      "last_checked_at": "2026-10-01T13:13:08.390440+00:00",
       "last_status": "unconfirmed",
       "confirmed_count": 0,
-      "checked_count": 31
+      "checked_count": 32
     }
   },
-  "updated_at": "2026-09-30T12:34:39.832005+00:00"
+  "updated_at": "2026-10-01T13:13:08.390440+00:00"
 }

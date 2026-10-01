@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T12:34:39.834615+00:00",
+  "generated_at": "2026-10-01T13:13:08.392909+00:00",
   "year": 2026,
   "items": [
     {
@@ -7,96 +7,6 @@
       "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
       "months": [
         10
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "JR日暮里駅前広場",
-      "event_name": "JR日暮里駅前広場",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
-      "event_name": "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "すみだ公園（隅田公園・墨田区側）",
-      "event_name": "すみだ公園（隅田公園・墨田区側）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "アーク・カラヤン広場（アークヒルズ）",
-      "event_name": "アーク・カラヤン広場（アークヒルズ）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "中之郷公園（中之郷児童遊園）",
-      "event_name": "中之郷公園（中之郷児童遊園）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "伸成町会会館前 路上",
-      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "八潮公園",
-      "event_name": "八潮公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "六本木天祖神社",
-      "event_name": "六本木天祖神社",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "向島1丁目旧町会会館前",
-      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "報恩寺境内",
-      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
-      "months": [
-        9
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -111,73 +21,10 @@
       "evidence": []
     },
     {
-      "venue": "小山台公園",
-      "event_name": "小山台公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "小梅児童遊園",
-      "event_name": "小梅児童遊園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "平塚中央公園",
-      "event_name": "平塚中央公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "戸越八幡神社",
-      "event_name": "戸越八幡神社例大祭 盆踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "押上二丁目町会会館前 路上",
-      "event_name": "押上二丁目町会会館前 路上",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
       "venue": "旗の台稲荷通り商店街",
       "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
       "months": [
         10
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "旗岡八幡神社",
-      "event_name": "旗岡八幡神社",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
-      "event_name": "本四三ツ目児童遊園（三つ目児童公園）",
-      "months": [
-        9
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -192,73 +39,10 @@
       "evidence": []
     },
     {
-      "venue": "江東天祖神社（亀戸天祖神社）",
-      "event_name": "江東天祖神社（亀戸天祖神社）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "石一町会会館前",
-      "event_name": "石原一丁目 牛嶋神社 奉納踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
       "venue": "笠松みなと公園",
       "event_name": "笠松みなと公園",
       "months": [
         10
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "芝新堀町児童遊園",
-      "event_name": "芝新堀町児童遊園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "豊町一丁目会館前",
-      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "長谷寺（西麻布・麻布大観音）",
-      "event_name": "長谷寺（西麻布・麻布大観音）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "青葉公園（港区立）",
-      "event_name": "青葉公園（港区立）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "飛木稲荷神社",
-      "event_name": "飛木稲荷神社",
-      "months": [
-        9
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -283,28 +67,13 @@
       "evidence": []
     },
     {
-      "venue": "麻布氷川神社",
-      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "京陽小学校",
+      "event_name": "京陽小学校",
       "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "西大井広場公園",
-      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
-      "months": [
-        9
+        10
       ],
       "status": "confirmed",
       "evidence": [
-        {
-          "source": "collected",
-          "title": "【品川区】盆踊り・模擬店など「品川納涼祭」西大井広場公園で10/3(土)開催 - 号外NET 品川区",
-          "text": "【品川区】盆踊り・模擬店など「品川納涼祭」西大井広場公園で10/3(土)開催 - 号外NET 品川区",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1aWUNsM1BBX2x4b0xqNDVzOFFSdGRodWlZQUR0S2tjMHNzUjFjY3I3WFdMSnpOc1VZMEV3bkNVMzdZT0szTTVfcmxNUzhURXhCYjc1cV9jM3V3SVRtSTlDTUVZTQ?oc=5"
-        },
         {
           "source": "x_proactive",
           "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
@@ -314,32 +83,18 @@
       ]
     },
     {
-      "venue": "宮下公園",
-      "event_name": "宮下公園",
+      "venue": "上神明小学校",
+      "event_name": "上神明小学校",
       "months": [
-        5,
-        6,
-        9
+        11
       ],
       "status": "confirmed",
       "evidence": [
         {
-          "source": "collected",
-          "title": "宮下公園で祭りイベント「BON DANCE」 盆踊りやブース出店など（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
-          "text": "宮下公園で祭りイベント「BON DANCE」 盆踊りやブース出店など（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZdjJRSTkzdEF2bEw5MWEyTEU4YWdac25raE50Yi1Tdk00TVhVeG1qUUZZemt6OWNHTFAwUEdBNHdnYWdraFM3Qm1fbXN2QnI5SVhyLTJwRFByb25wakFLcXJDYzYtSUhkNTVCUHVaVzk3TlA5dkI5RXFMRWpUYWM?oc=5"
-        },
-        {
-          "source": "news_proactive",
-          "title": "宮下公園で祭りイベント「BON DANCE」 盆踊りやブース出店など - シブヤ経済新聞",
-          "text": "宮下公園で祭りイベント「BON DANCE」 盆踊りやブース出店など - シブヤ経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9md2FJQjFmNm5vZ3BZVkhNai1SeHBqd1c5VWdHX2V6MW45T3k3WUc1MWlma2NjTUdMTkRZUmFnMEQxZVd6XzkwZ2hseUdlanNwTlE?oc=5"
-        },
-        {
-          "source": "news_proactive",
-          "title": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！ - STRAIGHT PRESS",
-          "text": "【東京都渋谷区】盆踊りとDJが「祭り」で融合。宮下公園でBON DANCEイベント「SHIBUYA MIYASHITA PARK BON DANCE 2026」開催！ - STRAIGHT PRESS",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sOXhIU0hUUEtoaWh1YjBNSkNaUmxGQ2JINnBwT0xNLUFNRE5YTjUxQzBEcGZUbWZEOTRVMlkzT21KRkRLUGEwcmxSYUNoZWNGU2Vz?oc=5"
+          "source": "x_proactive",
+          "title": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7",
+          "text": "🌈品川区民まつり2026🌈\nお祭りシーズン到来！家族やお友達と地域のおまつりを楽しんでみませんか。今週末～10月まで、楽しい区民まつりが続きます💁\n🎋7月\n・7/11㈯　大井競馬場（第一駐車場）『盆踊り大会』\n・7/18㈯　第三日野小学校\n・7/18㈯,19㈰　杜松ホーム\n・7/19㈰　品川学園「しなフェス」\n・7/25㈯　第四日野小学校\n・7/25㈯,26㈰　天妙国寺\n\n🍉8月（開催無し）\n\n🍹9月\n・9/12㈯　西大井広場公園\n・9/20㈰　八潮多目的広場・八潮学園第二体育館\n\n🍂10月\n・10/10㈯　小山台小学校\n・10/11㈰　清水台小学校\n・10/11㈰　上神明小学校\n・10/18㈰　京陽小学校・ひらさん広場\n\n特集記事《随時更新》：\n出会い! ふれあい! 「品川区民まつり 2026」\nhttps://t.co/jN8LYtsXRj\n#しあわせ多彩区 #盆踊り #品川区",
+          "url": "https://x.com/shinagawakanko/status/2075061948228800554"
         }
       ]
     },
