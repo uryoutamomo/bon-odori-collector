@@ -1,9 +1,9 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-10-01T13:23:16.177259+00:00",
-  "since": "2026-09-28T13:23:16.177259+00:00",
+  "generated_at": "2026-10-02T12:41:47.437785+00:00",
+  "since": "2026-09-29T12:41:47.437785+00:00",
   "days": 3,
-  "voice_count": 38,
+  "voice_count": 35,
   "candidate_count": 6,
   "rows": [
     {
@@ -37,8 +37,20 @@
       "interpretation": "忍岡音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 14,
+      "evidence_count": 13,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=8Jc1kdE3EUg",
+          "date": "2026-10-02T12:30:03+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2OSmQbE6Zyo",
+          "date": "2026-10-02T12:00:40+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
+        },
         {
           "url": "https://www.youtube.com/watch?v=YhohiAakTQY",
           "date": "2026-10-01T12:30:04+00:00",
@@ -56,22 +68,10 @@
           "date": "2026-10-01T08:00:10+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=OJtkcPbRjRQ",
-          "date": "2026-10-01T03:00:20+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=pY7CmVPYXWE",
-          "date": "2026-09-30T22:00:33+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
         }
       ],
       "evidence_text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV\n---\n2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV\n---\n2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV",
-      "evidence_url": "https://www.youtube.com/watch?v=YhohiAakTQY"
+      "evidence_url": "https://www.youtube.com/watch?v=8Jc1kdE3EUg"
     },
     {
       "category": "曲候補",
@@ -82,6 +82,18 @@
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=w8M7uvYHcKs",
+          "date": "2026-10-02T10:30:08+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SxX1by000n8",
+          "date": "2026-10-02T10:00:21+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
+        },
         {
           "url": "https://www.youtube.com/watch?v=vigCMQmaWmA",
           "date": "2026-10-01T10:30:24+00:00",
@@ -99,22 +111,10 @@
           "date": "2026-09-30T10:30:03+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=4zTm94zLFSo",
-          "date": "2026-09-30T10:00:18+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=LWlxJkL33s0",
-          "date": "2026-09-29T10:30:23+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
         }
       ],
       "evidence_text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G\n---\n2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G\n---\n2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G",
-      "evidence_url": "https://www.youtube.com/watch?v=vigCMQmaWmA"
+      "evidence_url": "https://www.youtube.com/watch?v=w8M7uvYHcKs"
     },
     {
       "category": "曲候補",
@@ -126,6 +126,18 @@
       "evidence_count": 6,
       "evidence": [
         {
+          "url": "https://www.youtube.com/watch?v=R0aLsvFWU_Y",
+          "date": "2026-10-02T11:30:17+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=P21FnkgcrFI",
+          "date": "2026-10-02T11:00:37+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=kZCRTO4iwNs",
           "date": "2026-10-01T11:30:12+00:00",
           "account": "@wadaikoCH",
@@ -142,22 +154,10 @@
           "date": "2026-09-30T11:30:07+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=3J5K63JsscU",
-          "date": "2026-09-30T11:00:32+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=T55BX5nzZJ8",
-          "date": "2026-09-29T11:30:01+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
         }
       ],
       "evidence_text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-      "evidence_url": "https://www.youtube.com/watch?v=kZCRTO4iwNs"
+      "evidence_url": "https://www.youtube.com/watch?v=R0aLsvFWU_Y"
     },
     {
       "category": "曲候補",
@@ -169,6 +169,18 @@
       "evidence_count": 6,
       "evidence": [
         {
+          "url": "https://www.youtube.com/watch?v=R0aLsvFWU_Y",
+          "date": "2026-10-02T11:30:17+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=P21FnkgcrFI",
+          "date": "2026-10-02T11:00:37+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=kZCRTO4iwNs",
           "date": "2026-10-01T11:30:12+00:00",
           "account": "@wadaikoCH",
@@ -185,22 +197,10 @@
           "date": "2026-09-30T11:30:07+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=3J5K63JsscU",
-          "date": "2026-09-30T11:00:32+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=T55BX5nzZJ8",
-          "date": "2026-09-29T11:30:01+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL"
         }
       ],
       "evidence_text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-      "evidence_url": "https://www.youtube.com/watch?v=kZCRTO4iwNs"
+      "evidence_url": "https://www.youtube.com/watch?v=R0aLsvFWU_Y"
     },
     {
       "category": "曲候補",

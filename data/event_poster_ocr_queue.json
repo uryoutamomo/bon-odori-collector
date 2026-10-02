@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7443,
+  "count": 7441,
   "summary": {
     "critical": 48,
-    "high": 1330,
+    "high": 1329,
     "trusted_informant": 51,
     "already_read": 3,
     "date_gap_matched": 109
@@ -4592,27 +4592,6 @@
         "https://pbs.twimg.com/amplify_video_thumb/2091751337616969728/img/0jaBXmgbTrZvLjUV.jpg"
       ],
       "text": "8/23①新小岩銀座 夏まつり\n\n木津かおりさんらの民謡ユニット、唄花座ステージ🎶\n\n伊勢音頭、こきりこ節、日光和楽踊り、秋田おばこなど、重なり合う唄声と演奏と踊りに魅了されました✨とくに瞽女唄かわいがらんせは圧巻！\n\n真室川音頭やおてもやん、郡上白鳥、炭坑節などでは踊りも楽しめました〜🙌 https://t.co/aEapH0beOJ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_a33fbe6e17cf87f0",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@cheer_re_mans",
-      "account_name": "チアリーマンズ(Cheer Re-Man's)",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/cheer_re_mans/status/2073195082048532525",
-      "tweet_id": "2073195082048532525",
-      "date": "2026-07-04T00:00:00+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMUPqlma4AAcKLT.jpg",
-        "https://t.co/Xy1vIgLAUZ",
-        "pic.x.com/Xy1vIgLAUZ"
-      ],
-      "text": "📣イベント出演のお知らせ📣\n\n「#丸の内盆踊り2026」のオープニングセレモニーに出演します✨\n\n📅7/24(金) 17:50頃～ ※雨天中止\n📍行幸通り\n\n夏の丸の内を一緒に盛り上げましょう❗️\n皆さまのご来場をお待ちしています🎐\n\n🔗https://t.co/oOeVL4CsAv https://t.co/Xy1vIgLAUZ",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -33667,27 +33646,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_6b1307751b7b55f0",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@bonodori_tais",
-      "account_name": "第16回 鴨台盆踊り 2026",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/bonodori_tais/status/2073376440058626207",
-      "tweet_id": "2073376440058626207",
-      "date": "2026-07-04T12:00:39+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMYc4hfbIAAgpL0.jpg",
-        "https://t.co/7PPZ08XTrF",
-        "pic.x.com/7PPZ08XTrF"
-      ],
-      "text": "第16回鴨台盆踊り実行委員会です🏮\n\n📣【日中盆踊り曲目発表】📣\n\n今年初開催の日中盆踊りの曲目を発表します！\n日中盆踊りは、2日目の14時スタート💖\n明るい時間から盆踊りを楽しみましょう！\n\n熱中症対策もお忘れなく🥤\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　#盆オドラー https://t.co/7PPZ08XTrF",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

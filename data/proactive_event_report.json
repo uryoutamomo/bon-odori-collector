@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T13:13:08.392909+00:00",
+  "generated_at": "2026-10-02T12:34:01.125810+00:00",
   "year": 2026,
   "items": [
     {
@@ -67,10 +67,10 @@
       "evidence": []
     },
     {
-      "venue": "京陽小学校",
-      "event_name": "京陽小学校",
+      "venue": "上神明小学校",
+      "event_name": "上神明小学校",
       "months": [
-        10
+        11
       ],
       "status": "confirmed",
       "evidence": [
@@ -83,10 +83,10 @@
       ]
     },
     {
-      "venue": "上神明小学校",
-      "event_name": "上神明小学校",
+      "venue": "京陽小学校",
+      "event_name": "京陽小学校",
       "months": [
-        11
+        10
       ],
       "status": "confirmed",
       "evidence": [
