@@ -9,6 +9,9 @@ owns:
   - scripts/compare_public_export_postprocessors.py
   - scripts/compare_public_projection_revisions.py
   - scripts/verify_occurrence_identity_migration.py
+  - scripts/verify_official_source_link_projection.py
+  - data/public_official_source_links.json
+  - data/public_source_kind_corrections_20261003.json
   - sync_public_event_detail_source_to_site.py
   - sync_public_event_source_urls_to_site.py
   - sync_public_event_songs_to_site.py
@@ -34,6 +37,7 @@ invariants:
   - INV-PUB-012
   - INV-PUB-013
   - INV-PUB-014
+  - INV-PUB-015
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
@@ -49,6 +53,7 @@ verified_by:
   - tests/test_occurrence_identity.py
   - tests/test_verify_occurrence_identity_migration.py
   - tests/test_public_event_sync_occurrence_identity.py
+  - tests/test_verify_official_source_link_projection.py
 updated_for: 3be992d7
 ---
 
@@ -320,6 +325,15 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **破れたときの症状**: 別年への承認再利用、同名の行消失、ID追加と一緒に内容が勝手に変わる。
 - **守っているコード**: `guard_public_events_sync.py`、`paired_indexes()`、`scripts/verify_occurrence_identity_migration.py`。
 - **守っているテスト**: `tests/test_guard_public_events_sync.py`、`tests/test_occurrence_identity.py::test_legacy_bridge_never_overwrites_an_existing_identity_on_either_side`、`tests/test_verify_occurrence_identity_migration.py::test_migration_refuses_unrelated_change_and_wrong_binding`。
+
+### INV-PUB-015 当年のtyped公式Web出典を公開へ保持する
+
+- **内容**: RDB `official_current_year` の公開可能なWeb URLは、`data/public_official_source_links.json` の確認済み開催回ID・年・日付・URL組と完全一致した場合だけ `source_urls` のofficial primaryへ昇格する。同URLのweb/単独匿名web count1は昇格し、複数匿名countは保持する。古い長い公式URLに後処理が戻さない。一般web/Notion/X/YouTube/除外URLから公式を推測しない。未確認typed分類だけでは昇格させず、既存非公式countを推測減算しない。Xの旧official誤分類は公開クリック導線から外す。noticeはhostnameの完全一致またはサブドメイン境界で判定する。
+- **なぜ**: current-year official分類がexportの早期returnでwebへ落ちると、公開カードの公式告知ボタンから主催者・自治体の最新情報へ辿れないため。
+- **破れたときの症状**: 公式当年根拠がRDBにあってもリンクが隠れる、古い根拠を開く、非公式リンクを公式と誤認する。
+- **守っているコード**: `export_public_events.py::_rdb_source_urls/collapse_public_source_urls`。DB-bound固定入力検証は `scripts/verify_official_source_link_projection.py`。
+- **守っているテスト**: `tests/test_export_public_events.py` の typed公式・primary再collapse・非公式/除外負例、`tests/test_verify_official_source_link_projection.py`。9日付境界・4出力でsource_urls以外、songs/source_map、入力DB/補助入力/runtimeの不変を検査する。レビューregistryと有限のkind訂正manifestも版固定し、そのhash不変を確認する。
+
 
 ## 主要な流れ
 

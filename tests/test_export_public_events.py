@@ -9,6 +9,7 @@ from unittest.mock import patch
 
 from export_public_events import (
     _song_from_rdb,
+    _rdb_source_urls,
     audit_public_song_projection,
     apply_public_recurrence_metadata,
     apply_public_site_postprocessors,
@@ -31,6 +32,7 @@ from export_public_events import (
     public_export_today,
     public_event_source_map,
     public_detail_text,
+    project_public_events,
     sanitize_public_event_details,
     strip_public_internal_event_fields,
     strip_song_internal_fields,
@@ -38,9 +40,243 @@ from export_public_events import (
     require_no_prediction_json_fallback,
     write_public_js,
 )
+from public_export_support.projection_inputs import PublicProjectionInputs
+from public_export_support.official_source_links import (
+    EMPTY_REGISTRY,
+    OfficialSourceLinkRegistry,
+    is_legacy_preserved_official_source_link,
+    is_reviewed_official_source_link,
+    load_reviewed_official_source_links,
+)
 
 
 class ExportPublicEventsTest(unittest.TestCase):
+    def test_typed_official_promotes_same_url_web_source(self):
+        url = "https://official.example/current"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "告知HPあり", "url": url, "kind": "web", "count": 1}
+        ]):
+            sources = _rdb_source_urls("ignored", url, "official_current_year", reviewed_official=True)
+        self.assertEqual(sources, [{"label": "公式告知あり", "url": url, "kind": "official"}])
+
+    def test_typed_official_promotes_sole_anonymous_web_source(self):
+        url = "https://official.example/current"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "告知HPあり", "url": "", "kind": "web", "count": 1}
+        ]):
+            sources = _rdb_source_urls("ignored", url, "official_current_year", reviewed_official=True)
+        self.assertEqual(sources, [{"label": "公式告知あり", "url": url, "kind": "official"}])
+
+    def test_typed_primary_official_wins_over_longer_detail_official(self):
+        primary = "https://official.example/2026"
+        older = "https://official.example/news/older/long/path"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "公式告知あり", "url": older, "kind": "official"}
+        ]):
+            sources = _rdb_source_urls("ignored", primary, "official_current_year", reviewed_official=True)
+        self.assertEqual(sources, [{"label": "公式告知あり", "url": primary, "kind": "official"}])
+
+    def test_typed_primary_survives_sanitize_and_projection_over_longer_official(self):
+        primary = "https://official.example/2026"
+        older = "https://official.example/news/older/long/path"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "公式告知あり", "url": older, "kind": "official"}
+        ]):
+            sources = _rdb_source_urls("ignored", primary, "official_current_year", reviewed_official=True)
+        row = {
+            "name": "公式URL優先盆踊り", "venue": "中央公園", "area": "中央区",
+            "name_confirmed": True, "date": "2026-08-15", "date_end": "2026-08-15",
+            "status": "確定", "months": [8], "detail": "公式発表済み。",
+            "source_urls": sources, "songs": [], "_source": "master_rdb",
+            "_occurrence_id": "occ-primary-official", "_series_id": "ser-primary-official",
+            "_venue_id": "ven-primary-official", "_event_year": 2026,
+        }
+        self.assertEqual(sanitize_public_event_details([row])[0]["source_urls"][0]["url"], primary)
+        projected = project_public_events(
+            [row], target_year=2026, today="2026-07-01",
+            inputs=PublicProjectionInputs(prediction_payload={}, overrides={}, fixed_date_rules={}),
+        )
+        self.assertEqual(projected["public_events"][0]["source_urls"], [
+            {"label": "公式告知あり", "url": primary, "kind": "official"}
+        ])
+
+    def test_unreviewed_typed_url_preserves_detail_official_and_adds_only_web(self):
+        primary = "https://third-party.example/current"
+        older = "https://official.example/news/older"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "公式告知あり", "url": older, "kind": "official"}
+        ]):
+            sources = _rdb_source_urls("ignored", primary, "official_current_year")
+        self.assertEqual(sources, [
+            {"label": "公式告知あり", "url": older, "kind": "official"},
+            {"label": "告知HPあり", "url": primary, "kind": "web", "count": 1},
+        ])
+
+    def test_reviewed_typed_url_keeps_unknown_web_count_when_replacing_detail_official(self):
+        primary = "https://official.example/2026"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "公式告知あり", "url": "https://official.example/old", "kind": "official"},
+            {"label": "告知HPあり", "url": "", "kind": "web", "count": 1},
+        ]):
+            sources = _rdb_source_urls(
+                "ignored", primary, "official_current_year", reviewed_official=True,
+            )
+        self.assertEqual(sources, [
+            {"label": "公式告知あり", "url": primary, "kind": "official"},
+            {"label": "告知HPあり", "url": "", "kind": "web", "count": 1},
+        ])
+
+    def test_legacy_preserved_typed_url_keeps_only_its_exact_existing_official(self):
+        url = "https://official.example/legacy"
+        with patch("export_public_events.extract_public_source_urls", return_value=[]):
+            preserved = _rdb_source_urls(
+                "ignored", url, "official_current_year", legacy_preserved_official=True,
+            )
+        self.assertEqual(preserved, [{"label": "公式告知あり", "url": url, "kind": "official"}])
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "告知HPあり", "url": "", "kind": "web", "count": 1},
+        ]):
+            anonymous = _rdb_source_urls(
+                "ignored", url, "official_current_year", legacy_preserved_official=True,
+            )
+        self.assertEqual(anonymous, [{
+            "label": "告知HPあり", "url": url, "kind": "web", "count": 1,
+        }])
+
+    def test_reviewed_official_link_requires_full_occurrence_year_date_url_identity(self):
+        key = ("occ_1", 2026, "2026-08-01", "2026-08-02", "https://official.example/2026")
+        reviews = frozenset({key})
+        self.assertTrue(is_reviewed_official_source_link(
+            reviews, occurrence_id=key[0], event_year=key[1], date_start=key[2], date_end=key[3], source_url=key[4],
+        ))
+        for field, value in (
+            ("occurrence_id", "occ_other"), ("event_year", 2025),
+            ("date_start", "2026-08-03"), ("date_end", "2026-08-03"),
+            ("source_url", "https://official.example/other"),
+        ):
+            candidate = dict(zip(("occurrence_id", "event_year", "date_start", "date_end", "source_url"), key))
+            candidate[field] = value
+            self.assertFalse(is_reviewed_official_source_link(reviews, **candidate), field)
+
+    def test_reviewed_official_link_loader_missing_is_empty_and_invalid_is_refused(self):
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp) / "official-links.json"
+            self.assertEqual(load_reviewed_official_source_links(path), EMPTY_REGISTRY)
+            path.write_text(json.dumps({"schema": "wrong", "reviews": []}), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "schema"):
+                load_reviewed_official_source_links(path)
+            row = {
+                "occurrence_id": "occ_1", "event_year": 2026,
+                "date_start": "2026-08-01", "date_end": "", "source_url": "https://official.example/",
+            }
+            path.write_text(json.dumps({
+                "schema": "public_official_source_links_v1", "reviews": [row, row],
+            }), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "duplicate"):
+                load_reviewed_official_source_links(path)
+            row["event_year"] = "2026"
+            path.write_text(json.dumps({
+                "schema": "public_official_source_links_v1", "reviews": [row],
+            }), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "event_year"):
+                load_reviewed_official_source_links(path)
+            row.pop("source_url")
+            path.write_text(json.dumps({
+                "schema": "public_official_source_links_v1", "reviews": [row],
+            }), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "missing"):
+                load_reviewed_official_source_links(path)
+
+    def test_legacy_preserved_link_is_exact_and_never_overlaps_review(self):
+        key = ("occ_legacy", 2026, "2026-08-01", "", "https://official.example/legacy")
+        registry = OfficialSourceLinkRegistry(frozenset(), frozenset({key}))
+        self.assertTrue(is_legacy_preserved_official_source_link(
+            registry, occurrence_id=key[0], event_year=key[1], date_start=key[2], date_end=key[3], source_url=key[4],
+        ))
+        self.assertFalse(is_legacy_preserved_official_source_link(
+            registry, occurrence_id=key[0], event_year=key[1], date_start=key[2], date_end=key[3],
+            source_url="https://official.example/new",
+        ))
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp) / "official-links.json"
+            row = dict(zip(("occurrence_id", "event_year", "date_start", "date_end", "source_url"), key))
+            path.write_text(json.dumps({
+                "schema": "public_official_source_links_v1", "reviews": [row], "legacy_preserved": [row],
+            }), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "overlap"):
+                load_reviewed_official_source_links(path)
+
+    def test_non_typed_and_excluded_or_video_urls_are_not_promoted(self):
+        web_url = "https://third-party.example/listing"
+        with patch("export_public_events.extract_public_source_urls", side_effect=lambda _detail: []):
+            web_sources = _rdb_source_urls("ignored", web_url, "web")
+            notion_sources = _rdb_source_urls("ignored", web_url, "notion_events")
+            youtube_sources = _rdb_source_urls(
+                "ignored", "https://www.youtube.com/watch?v=abc", "official_current_year"
+            )
+            x_sources = _rdb_source_urls(
+                "ignored", "https://x.com/example/status/1", "x"
+            )
+            mistyped_x_sources = _rdb_source_urls(
+                "ignored", "https://x.com/example/status/1", "official_current_year"
+            )
+            excluded_sources = _rdb_source_urls(
+                "ignored", "https://tsukijihongwanji.jp/news/10279/", "official_current_year"
+            )
+        self.assertEqual(web_sources, [{"label": "告知HPあり", "url": web_url, "kind": "web", "count": 1}])
+        self.assertEqual(notion_sources, web_sources)
+        self.assertEqual(youtube_sources, [])
+        self.assertEqual(x_sources, [{
+            "label": "告知HPあり", "url": "https://x.com/example/status/1", "kind": "web", "count": 1,
+        }])
+        self.assertNotEqual(x_sources[0]["kind"], "official")
+        self.assertEqual(mistyped_x_sources, [{
+            "label": "告知投稿あり", "url": "", "kind": "post", "count": 1,
+        }])
+        known_typed_x_sources = _rdb_source_urls(
+            "- 出典URL: https://x.com/example/status/1",
+            "https://x.com/example/status/1", "official_current_year",
+        )
+        self.assertEqual(known_typed_x_sources, mistyped_x_sources)
+        self.assertEqual(excluded_sources, [])
+
+    def test_typed_official_host_boundary_promotes_blogspot_but_not_x_hosts(self):
+        with patch("export_public_events.extract_public_source_urls", return_value=[]):
+            blogspot = _rdb_source_urls(
+                "ignored", "https://minato-bon-odori.blogspot.com/", "official_current_year", reviewed_official=True
+            )
+            notices = [
+                _rdb_source_urls("ignored", url, "official_current_year", reviewed_official=True)
+                for url in (
+                    "https://x.com/example/status/1",
+                    "https://mobile.twitter.com/example/status/1",
+                    "https://t.co/short",
+                )
+            ]
+            lookalikes = [
+                _rdb_source_urls("ignored", url, "official_current_year", reviewed_official=True)
+                for url in (
+                    "https://x.com.example/official",
+                    "https://examplex.com/official",
+                )
+            ]
+        self.assertEqual(blogspot, [{
+            "label": "公式告知あり", "url": "https://minato-bon-odori.blogspot.com/", "kind": "official",
+        }])
+        for sources in notices:
+            self.assertFalse(any(source["kind"] == "official" for source in sources))
+        for sources in lookalikes:
+            self.assertEqual(sources[0]["kind"], "official")
+
+    def test_typed_official_keeps_aggregated_unknown_web_count(self):
+        url = "https://official.example/current"
+        with patch("export_public_events.extract_public_source_urls", return_value=[
+            {"label": "告知HPあり", "url": "", "kind": "web", "count": 2}
+        ]):
+            sources = _rdb_source_urls("ignored", url, "official_current_year", reviewed_official=True)
+        self.assertEqual(sources[0]["kind"], "official")
+        self.assertEqual(sources[1], {"label": "告知HPあり", "url": "", "kind": "web", "count": 2})
+
     def test_historical_observation_exports_as_past_hint(self):
         song = _song_from_rdb(
             {
@@ -254,6 +490,38 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertEqual(events[0]["date"], "2026-07-19")
         self.assertIsNone(events[0]["date_end"])
+
+    def test_master_export_injects_only_exact_reviewed_official_link(self):
+        with TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            conn = sqlite3.connect(db)
+            try:
+                self._create_minimal_master_export_schema(conn)
+                conn.execute("INSERT INTO event_series VALUES ('ser_1', '確認済み盆踊り', '[7]', NULL, 'active')")
+                conn.execute("INSERT INTO venues VALUES ('ven_1', '確認済み公園', '江東区', '中', '', '', '', '', NULL, NULL, 'active')")
+                conn.execute("""
+                    INSERT INTO event_occurrences VALUES (
+                      'occ_1', 'ser_1', 'ven_1', '確認済み盆踊り', 2026,
+                      '2026-07-19', '2026-07-20', 'confirmed', 'published',
+                      'high', 'official_current_year', 'https://official.example/2026', NULL, '', 'curated'
+                    )
+                """)
+                conn.commit()
+            finally:
+                conn.close()
+            review = frozenset({
+                ("occ_1", 2026, "2026-07-19", "2026-07-20", "https://official.example/2026")
+            })
+            approved, _, _, _ = build_public_events_from_master(
+                db, target_year=2026, reviewed_official_links=review, legacy_preserved_official_links=frozenset(),
+            )
+            denied, _, _, _ = build_public_events_from_master(
+                db, target_year=2026, reviewed_official_links=frozenset(), legacy_preserved_official_links=frozenset(),
+            )
+        self.assertEqual(approved[0]["source_urls"][0]["kind"], "official")
+        self.assertEqual(denied[0]["source_urls"], [{
+            "label": "告知HPあり", "url": "https://official.example/2026", "kind": "web", "count": 1,
+        }])
 
     def test_master_export_ignores_historical_references_before_previous_year(self):
         with TemporaryDirectory() as tmp:

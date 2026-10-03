@@ -1,0 +1,544 @@
+{
+  "schema": "public_official_source_links_v1",
+  "purpose": "確認済み開催回・年・日付・当年URLの完全一致だけ公式クリック導線へ昇格する。未登録はRDBのtyped分類だけでは昇格させない。",
+  "reviews": [
+    {
+      "occurrence_id": "occ_0688b2fe3ccda2db",
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/webkohoshi/080901html/shina_20260901_14_03.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008781+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_38c6babc32b4801c",
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008831+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_400f1f551ca689a7",
+      "event_year": 2026,
+      "date_start": "2026-10-11",
+      "date_end": "",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008568+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_40cdf5e107977db7",
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008922+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_79864f8d8b03a4bd",
+      "event_year": 2026,
+      "date_start": "2026-10-04",
+      "date_end": "2026-10-04",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008850+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_7dd5908e2fc8e6f7",
+      "event_year": 2026,
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-11",
+      "source_url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008376+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_92814d322c8159a0",
+      "event_year": 2026,
+      "date_start": "2026-10-25",
+      "date_end": "2026-10-25",
+      "source_url": "https://sumiyume.jp/event-page/odori2026/",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008540+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_973dd6c3a8f3c4ac",
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-04",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008887+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_ba6a308f4bcbfff2",
+      "event_year": 2026,
+      "date_start": "2026-10-18",
+      "date_end": "",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008744+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_c8a8315e105b791a",
+      "event_year": 2026,
+      "date_start": "2026-10-04",
+      "date_end": "2026-10-04",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008905+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_f5ebfb06f4b5905e",
+      "event_year": 2026,
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008868+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_f729492551d41981",
+      "event_year": 2026,
+      "date_start": "2026-10-11",
+      "date_end": "2026-10-11",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-03T05:44:38.008815+00:00",
+      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    }
+  ],
+  "legacy_preserved": [
+    {
+      "occurrence_id": "occ_018fc76d38dcd38f",
+      "event_year": 2026,
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-01",
+      "source_url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2025/202507/20250701top/01.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_07f775ba65031a6e",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-29",
+      "source_url": "https://www.edogrand.tokyo/event/6924",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_0ee14ffbf15fd0cf",
+      "event_year": 2026,
+      "date_start": "2026-08-07",
+      "date_end": "2026-08-09",
+      "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_0feacbf90906637b",
+      "event_year": 2026,
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-24",
+      "source_url": "https://www.marunouchi.com/pickup/event/9833/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_10d1650413afccf4",
+      "event_year": 2026,
+      "date_start": "2026-09-20",
+      "date_end": "",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_144344004e460a1a",
+      "event_year": 2026,
+      "date_start": "2026-09-20",
+      "date_end": "2026-09-20",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_1836f1823070d2e3",
+      "event_year": 2026,
+      "date_start": "2026-07-17",
+      "date_end": "2026-07-19",
+      "source_url": "http://suichishoutenkai.com/event/bonodori_2026",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_1954e21bebf147eb",
+      "event_year": 2026,
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "source_url": "https://www.shibuya-hikawa.com/page3",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_19b921bc4203d6e7",
+      "event_year": 2026,
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-25",
+      "source_url": "https://www.zojoji.or.jp/event/ev_bonodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_1dc35224d0d3fd14",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_225f239652267ed9",
+      "event_year": 2026,
+      "date_start": "2026-07-17",
+      "date_end": "2026-07-18",
+      "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_2704892d424f61c1",
+      "event_year": 2026,
+      "date_start": "2026-07-13",
+      "date_end": "2026-07-16",
+      "source_url": "https://www.yasukuni.or.jp/schedule/saiji.html#saiji03",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_2deb04ad3d2ad3f6",
+      "event_year": 2026,
+      "date_start": "2026-07-19",
+      "date_end": "2026-07-19",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_31fcdaf3e1cca97f",
+      "event_year": 2026,
+      "date_start": "2026-07-19",
+      "date_end": "2026-07-19",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_368d6231a208af34",
+      "event_year": 2026,
+      "date_start": "2026-07-29",
+      "date_end": "2026-07-30",
+      "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1058",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_3fa70d14d361b2f3",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-29",
+      "source_url": "https://sacas.tokyoevent.net/natsuodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_47fe4ad246321896",
+      "event_year": 2026,
+      "date_start": "2026-08-01",
+      "date_end": "2026-08-02",
+      "source_url": "https://nakabon.jp/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_4816ef9a03c3b9c1",
+      "event_year": 2026,
+      "date_start": "2026-07-29",
+      "date_end": "2026-08-01",
+      "source_url": "https://tsukijihongwanji.jp/news/11529/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_4ed149af2fc84735",
+      "event_year": 2026,
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-26",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_5375fcfc19ab3505",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_566324ef4cc023fc",
+      "event_year": 2026,
+      "date_start": "2026-09-11",
+      "date_end": "2026-09-13",
+      "source_url": "https://www.akasakahikawa.or.jp/hikawasai-r08/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_5df32308eae3f789",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_63ae1b3a246f34f0",
+      "event_year": 2026,
+      "date_start": "2026-07-10",
+      "date_end": "2026-07-11",
+      "source_url": "https://www.tais.ac.jp/guide/latest_news/20260703/96605/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_64e9d25c0c48cc6b",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-29",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_7a555fbc00d0c059",
+      "event_year": 2026,
+      "date_start": "2026-07-23",
+      "date_end": "2026-07-24",
+      "source_url": "http://www.shinbashi.net/top/koichi/2026/greeting/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_856e14213350713d",
+      "event_year": 2026,
+      "date_start": "2026-08-30",
+      "date_end": "2026-08-30",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_87e5370ab1521e66",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "source_url": "https://satoriki.net/blog/8424/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_90f1aef84c0ad6f7",
+      "event_year": 2026,
+      "date_start": "2026-09-05",
+      "date_end": "2026-09-05",
+      "source_url": "https://tokyofesta.com/23ku/31702/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_950d73869e1a34de",
+      "event_year": 2026,
+      "date_start": "2026-08-15",
+      "date_end": "2026-08-16",
+      "source_url": "https://itabashi-times.com/archives/matsuri2026.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_96854e6c02eba84d",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "source_url": "https://itabashi-times.com/archives/matsuri2026.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_a576d93013c35505",
+      "event_year": 2026,
+      "date_start": "2026-05-16",
+      "date_end": "",
+      "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_aa32ae8f8807778d",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "source_url": "https://ooimachi.tokyo/dontaku/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_abb418f2c5aa2158",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-18",
+      "source_url": "https://minato-bon-odori.blogspot.com/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_b0ac40639f5d2d5c",
+      "event_year": 2026,
+      "date_start": "2026-07-13",
+      "date_end": "2026-07-15",
+      "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_b223cacd3b0c84eb",
+      "event_year": 2026,
+      "date_start": "2026-09-05",
+      "date_end": "2026-09-05",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_b3e279c001ef448b",
+      "event_year": 2026,
+      "date_start": "2026-09-06",
+      "date_end": "2026-09-06",
+      "source_url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2026/202607/20260715top/03.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_bf608105456f35f4",
+      "event_year": 2026,
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-27",
+      "source_url": "https://miyashita-bondance.jp/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_c144b96d770e3b9e",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-23",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_c269edeedf7a5b71",
+      "event_year": 2026,
+      "date_start": "2026-08-07",
+      "date_end": "2026-08-16",
+      "source_url": "https://www.uenopark.info/2026/ueno-inoichi-bon-odori-2026/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_c7619656781592c0",
+      "event_year": 2026,
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "source_url": "https://www.arkhills.com/events/2026/09/0221.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_c806d3f5bce38efa",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "source_url": "https://toyo1tyokai.1net.jp/schedule.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_cf587f599b7ed96f",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_d4f2f14192a4ef64",
+      "event_year": 2026,
+      "date_start": "2026-08-22",
+      "date_end": "2026-08-22",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_d59269ec9a27853c",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-25",
+      "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_da7ddce69ae96791",
+      "event_year": 2026,
+      "date_start": "2026-07-25",
+      "date_end": "2026-07-26",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_e3afc61ae62aa5f3",
+      "event_year": 2026,
+      "date_start": "2026-07-03",
+      "date_end": "2026-07-05",
+      "source_url": "https://www.furusatotokyofes.com/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_ebe2be50bfd7b761",
+      "event_year": 2026,
+      "date_start": "2026-05-23",
+      "date_end": "",
+      "source_url": "https://shinagawa-kanko.or.jp/event/bondo2026/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_ef53e510c8842afb",
+      "event_year": 2026,
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-29",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_f13cbee67f9cb225",
+      "event_year": 2026,
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-18",
+      "source_url": "https://satakeshotengai.com/satakeodori/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_fbbf1f3dcb7ae7c3",
+      "event_year": 2026,
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-29",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_fcfe99cbc260fc36",
+      "event_year": 2026,
+      "date_start": "2026-09-19",
+      "date_end": "2026-09-19",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/webkohoshi/080901html/shina_20260901_14_03.html",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    },
+    {
+      "occurrence_id": "occ_fd1c503d3f6538d5",
+      "event_year": 2026,
+      "date_start": "2026-08-08",
+      "date_end": "2026-08-16",
+      "source_url": "https://minamisuna1.com/37573/",
+      "preservation_note": "改善前に公開済みのofficial URLの同じ開催回内だけの互換保持。今回の新規確認済みとは扱わず、別URL/別年/別日には流用しない。"
+    }
+  ]
+}

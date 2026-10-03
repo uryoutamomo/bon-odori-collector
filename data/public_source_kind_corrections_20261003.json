@@ -1,0 +1,327 @@
+{
+  "schema": "public_source_kind_corrections_v1",
+  "reviewed_by": "おと（Codex）",
+  "purpose": "有限13開催回の旧誤分類・非公式X URLだけを訂正し、他payloadと任意URL/IDへの一般化を許さない。",
+  "corrections": [
+    {
+      "occurrence_id": "occ_1a4d1fa95a29cc39",
+      "event_year": 2026,
+      "source_kind": "third_party_current_year",
+      "source_url": "https://tokyofesta.com/23ku/25652/",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://tokyofesta.com/23ku/25652/",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知HPあり",
+          "url": "https://tokyofesta.com/23ku/25652/",
+          "kind": "web",
+          "count": 1
+        }
+      ],
+      "reason": "blogspot.com / shimokitazawa-east.com のt.co部分一致を訂正。非公式Webとして維持し公式リンクへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+      "old_source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://x.com/iri2choukai/status/2069959259895496872",
+          "kind": "official"
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "XクリックURLの旧official誤分類を匿名postへ降格し既存の非公式countを保持。"
+    },
+    {
+      "occurrence_id": "occ_2718d1bde62e9a57",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/tsubuki_staff/status/2090302832046149754",
+      "old_source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://x.com/tsubuki_staff/status/2090302832046149754",
+          "kind": "official"
+        },
+        {
+          "label": "告知HPあり",
+          "url": "",
+          "kind": "web",
+          "count": 1
+        },
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 2
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知HPあり",
+          "url": "",
+          "kind": "web",
+          "count": 1
+        },
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 2
+        }
+      ],
+      "reason": "XクリックURLの旧official誤分類を匿名postへ降格し既存の非公式countを保持。"
+    },
+    {
+      "occurrence_id": "occ_77e6f30468af7b1b",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/WBElectric0521/status/2090040633230848484",
+      "old_source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://x.com/WBElectric0521/status/2090040633230848484",
+          "kind": "official"
+        },
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 2
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 2
+        }
+      ],
+      "reason": "XクリックURLの旧official誤分類を匿名postへ降格し既存の非公式countを保持。"
+    },
+    {
+      "occurrence_id": "occ_ccff1fefeb0e6498",
+      "event_year": 2026,
+      "source_kind": "third_party_current_year",
+      "source_url": "https://tokyofesta.com/23ku/31306/",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://tokyofesta.com/23ku/31306/",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知HPあり",
+          "url": "https://tokyofesta.com/23ku/31306/",
+          "kind": "web",
+          "count": 1
+        }
+      ],
+      "reason": "blogspot.com / shimokitazawa-east.com のt.co部分一致を訂正。非公式Webとして維持し公式リンクへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_286659874187199c",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/DJKOO_official/status/2089953521101902262",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/DJKOO_official/status/2089953521101902262",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_a8f65b59d93d06b5",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/UT_bondanceclub/status/2090290580014415933",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/UT_bondanceclub/status/2090290580014415933",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_fdc664afdc8686e7",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/otafull/status/2089910221787545811",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/otafull/status/2089910221787545811",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_a30a658ca8fd6108",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/toshimamirai/status/2090299942787301419",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/toshimamirai/status/2090299942787301419",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_ff7db0504ea704ea",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/toshimamirai/status/2090299942787301419",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/toshimamirai/status/2090299942787301419",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_c661ae873368843e",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_e36122c5979e0537",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/adachi_city/status/2089981991060210144",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/adachi_city/status/2089981991060210144",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_a41160da64babf50",
+      "event_year": 2026,
+      "source_kind": "official_current_year",
+      "source_url": "https://x.com/natsutr_bon/status/2089973977318064232",
+      "old_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "https://x.com/natsutr_bon/status/2089973977318064232",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "new_source_urls": [
+        {
+          "label": "告知投稿あり",
+          "url": "",
+          "kind": "post",
+          "count": 1
+        }
+      ],
+      "reason": "既存Xの非公式post項目のURLだけ匿名化。label/kind/countを完全保持し、公式ボタンへは昇格しない。"
+    }
+  ]
+}

@@ -252,3 +252,13 @@ collector 側の `data/public/events_public.json` は379件、
 ---
 
 こと（Claude Code）
+
+## 公式リンクの分類（2026-10-03）
+
+`source_urls` はpublicな公式Webボタンとリンクを公開しない出典件数を区別する。RDB `source_kind=official_current_year` かつ `data/public_official_source_links.json` のレビュー済み開催回・年・日付・URLが完全一致する公開可能な非notice Web URLなら `{label: 公式告知あり, url: 当年primaryURL, kind: official}` を先頭に一つ保持する。同URLの旧web項目と単独匿名web count1は重複させない。複数匿名の出典件数を推測減算しない。レビュー済みなら詳細に古いofficial URLがあっても当年primaryを優先し、後段sanitizeで逆転させない。未レビューのtyped分類だけで新公式リンクを作らない。登録は実ページとの照合後に行い、期限や別開催回への横流用をしない。
+
+Notion由来・一般Web・X・YouTube・除外URLはホスト名だけでofficialへ昇格しない。公開導線はofficialのみをクリック可能とする既存site方針を守る。この分類は日程出典の分類であり、時刻の構造化根拠を生成せず公式確認時間の要件を置き換えない。INV-PUB-015と [改善記録6](../../system-improvements-20261003.md#6-当年の公式リンク) を参照。
+
+registryの`reviews`は今回確認済み12組。`legacy_preserved`は改善前に公開済みだった52組を同じRDB source URL・ID・年・日付内だけで保持する互換入口で、新規確認済みとは数えない。旧detail内の公式根拠は元の出典分類を維持する。Xの旧official3組と既存post8組はクリックURLを匿名化し、出典件数を残す。notice hostは完全一致/サブドメイン境界で判定し、`blogspot.com`や`shimokitazawa-east.com`を`t.co`へ誤分類しない。この分類訂正2組も含め、13組の旧/new source payloadは有限manifestで固定して検証する。
+
+review入力はbuild_public_events_from_masterのI/O境界で一度読み、純粋なproject_public_eventsへI/Oを持ち込まない。registryの開催日終了が未設定なら空文字で表し、RDB/publicのNULLと同じ欠損として照合する。schema破損・型不正・重複・review/legacy overlapは拒否する。新URLや別年・別日へ旧保持権限を横流用しない。
