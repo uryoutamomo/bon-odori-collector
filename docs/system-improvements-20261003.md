@@ -15,8 +15,8 @@
 | 1 | 過去年の時間が今年の公式確認済み情報として表示される | 完了 | 時間の年・開催回・根拠を検証し、過去/不明の時間へ公式確認を付けない。実例3件と当年の正例を検証し、公開面を照合する |
 | 2 | 収集が成功しても公開データが更新されない | 完了 | 最新collector→site→snapshot→liveの内容一致を確認し、同期停止の検出・復旧手順を整える |
 | 3 | 収集失敗が情報なし・確認済み探索へ置き換わる | 完了 | success / empty / skipped / failedを区別し、失敗入力で下流の候補・探索履歴を更新しない。障害注入で確認する |
-| 4 | 日次監視の誤警報と会場データの監視漏れ | 未着手 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
-| 5 | 開催回の識別がイベント名＋会場名に依存する | 未着手 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
+| 4 | 日次監視の誤警報と会場データの監視漏れ | 完了 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
+| 5 | 開催回の識別がイベント名＋会場名に依存する | 実装・検証中 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
 | 6 | 最新の公式告知へ辿れる導線が少ない | 未着手 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
 | 7 | 巨大な収集処理と重複する共通規則 | 未着手 | 収集レーンと結果契約を分離し、YouTube URL解釈を統一。固定入力の挙動比較と失敗境界テストを通す |
 
@@ -102,7 +102,37 @@ failed-lane gateを外す変異が統合検査に検知されることも独立�
 証跡: `bonsuke-system-improvements-evidence-20261003/step3-tests.log`。
 実APIを追加実行する検査ではなく、隔離した故障注入による検証。次の自然scheduleの結果は別途観測する。
 
-## 4〜7. 次工程
+## 4. 日次監視のcycleと公開投影
 
-3の完了後、上の一覧の順で着手する。正本RDBの修正が必要な場合はmanifest/checksum・backup・dry-run・
+状態: 完了。[site PR20](https://github.com/uryoutamomo/bon-odori-site/pull/20)、main `dc93577`。
+17:47 JSTをcycleの締切とし、深夜・翌日へ遅れたscheduleは締切前なら前日cycleで検査する。
+開始と完了は独立のtimestampから確認し、欠落・未来・逆順・対象窓外を拒否する。
+collector/siteのevents・venues・geo元入力、生成snapshot/liveのevents・geo、会場一覧と全詳細HTMLを検査する。
+manifestのschema/version、全unique path、HTTP 200、空error、保存したlive bytesのSHA-256も必須とし、空の会場/geo投影を拒否する。
+
+独立レビュー、全unittest70件・focused20件を通過。manifest hash・venue nonempty gateを外す変異を負例が検知。
+2026-10-03 13:46 JST、[手動health run37097601332](https://github.com/uryoutamomo/bon-odori-site/actions/runs/37097601332)成功。
+対象cycle `2026-10-02`、events394・venues176・geo160、公開probe179pathを全件照合し、異常0件。
+既存アラートはworkflowが復旧close。翌日の自然scheduleの成功とは区別する。
+証跡: `bonsuke-system-improvements-evidence-20261003/step4-tests.log`、`step4-health/`、`step4-health.log`。
+
+## 5. 開催回IDの移行
+
+状態: 実装・検証済み、main反映と公開照合待ち。
+全RDB公開行に安定した`occurrence_id`と実開催回の`event_year`を保持する。日程予測・recurrence・差分ガード・直接同期writerもIDで結び、同名別年・年内複数回を上書きしない。
+一意なlegacy aliasだけ移行互換とし、既存IDへ衝突するbridge、異ID、曖昧alias、不正metadataを拒否する。
+旧461件の承認は保持。追加2metadataだけを外すv1 hash互換と、IDと全payload hashを固定する新承認を区別する。
+曲だけの警告・終了・期限切れ・承認鎖もidentity scopeを広げない。誤IDや年変更を旧承認で流す負例を検査した。
+
+独立レビュー合格、collector全pytest1,991件・subtests246件、site全unittest79件を通過。
+正本取得[run37098657888](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/37098657888)でDBと7補助入力のhash不変を確認。manifestの変更は取得時刻のみ。
+同じverified bundleの9日付境界・4出力を比較し、既存全項目不変、ID/年は全source-map行と一致、songs/source-mapはbyte不変。
+実394件の旧形式siteとの移行guardはpass、承認不一致0件。ID付きsiteの79検査・snapshot hygiene・SEOも合格。
+siteの既存一意event URLを維持し、衝突だけIDから分離。正規Sync/Deploy/HealthではID必須として全metadata消失も拒否する。
+証跡: `step5-migration.json`、`step5-guard.json`、`step5-collector-tests.log`、`step5-site-ids-tests.log`、`step5-snapshot/`。
+公開完了は正規Syncとsource/snapshot/live照合の後に記録する。
+
+## 6〜7. 次工程
+
+5の公開照合完了後、上の一覧の順で着手する。正本RDBの修正が必要な場合はmanifest/checksum・backup・dry-run・
 レビュー・apply後再検証を行う。根拠のない時間やURLを補うために推測を確定情報へ昇格させない。

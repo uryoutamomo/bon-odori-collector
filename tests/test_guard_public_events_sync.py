@@ -21,9 +21,12 @@ from public_json_postprocessors.guard_public_events_sync import (
     append_github_summary,
     build,
     canonical_event_sha256,
+    full_event_sha256,
     classify_rows,
     flow_artifact_warnings,
     guard_decision,
+    mark_retired_temporal_approvals,
+    mark_superseded_same_key_approvals,
 )
 
 
@@ -1522,6 +1525,86 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         classified = classify_rows([collector], [site], today=date(2026, 7, 31))
 
         self.assertEqual(classified["event_rows"][0]["recommended_action"], "individual_review")
+
+
+    def test_v1_hash_adapter_removes_only_identity_metadata(self):
+        row = {"name": "台帳", "venue": "公園", "unknown": None, "typed": [1, {"x": False}], "occurrence_id": "id_2026", "event_year": 2026}
+        legacy = {key: value for key, value in row.items() if key not in {"occurrence_id", "event_year"}}
+        self.assertEqual(canonical_event_sha256(row), canonical_event_sha256(legacy))
+        self.assertNotEqual(full_event_sha256(row), full_event_sha256(legacy))
+
+    def test_occurrence_approval_rejects_wrong_id_even_with_matching_alias(self):
+        site = {"name": "同名", "venue": "広場", "occurrence_id": "right", "event_year": 2026, "detail": "old"}
+        collector = {**site, "detail": "new"}
+        approval = {"id": "wrong", "kind": "same_key_update", "occurrence_id": "other", "site_sha256": full_event_sha256(site), "collector_sha256": full_event_sha256(collector)}
+        result = apply_reviewed_exact_approvals([collector], [site], {"schema": "public_sync_exact_approvals_v1", "approvals": [approval]})
+        self.assertEqual(result["summary"]["status"], "block")
+        self.assertIn(result["summary"]["results"][0]["status"], {"hash_mismatch", "invalid_approval"})
+
+    def test_legacy_approval_refuses_ambiguous_same_alias_occurrences(self):
+        site = {"name": "同名", "venue": "広場", "detail": "old"}
+        collector = [
+            {"name": "同名", "venue": "広場", "occurrence_id": "a", "event_year": 2025, "detail": "new"},
+            {"name": "同名", "venue": "広場", "occurrence_id": "b", "event_year": 2026, "detail": "new"},
+        ]
+        approval = {"id": "legacy", "kind": "same_key_update", "event_key": "同名||広場", "site_sha256": canonical_event_sha256(site), "collector_sha256": canonical_event_sha256(collector[0])}
+        result = apply_reviewed_exact_approvals(collector, [site], {"schema": "public_sync_exact_approvals_v1", "approvals": [approval]})
+        self.assertEqual(result["summary"]["status_counts"], {"invalid_approval": 1})
+
+
+    def test_v1_approval_bridges_one_unique_source_id_to_legacy_site(self):
+        site = {"name": "移行", "venue": "公園", "detail": "old"}
+        collector = {**site, "detail": "new", "occurrence_id": "migration_2026", "event_year": 2026}
+        approval = {"id": "v1", "kind": "same_key_update", "event_key": "移行||公園", "site_sha256": canonical_event_sha256(site), "collector_sha256": canonical_event_sha256(collector)}
+        result = apply_reviewed_exact_approvals([collector], [site], {"schema": "public_sync_exact_approvals_v1", "approvals": [approval]})
+        self.assertEqual(result["summary"]["status_counts"], {"applied": 1})
+        self.assertEqual(result["site_rows"][0]["occurrence_id"], "migration_2026")
+
+
+    def test_occurrence_scoped_temporal_and_successor_exemptions_do_not_cross_ids(self):
+        approvals = [
+            {"id": "old", "kind": "same_key_update", "occurrence_id": "occ_2025", "site_sha256": "a" * 64, "collector_sha256": "b" * 64},
+            {"id": "other", "kind": "same_key_update", "occurrence_id": "occ_2026", "site_sha256": "b" * 64, "collector_sha256": "c" * 64},
+        ]
+        results = [{"id": "old", "status": "hash_mismatch"}, {"id": "other", "status": "applied"}]
+        mark_superseded_same_key_approvals(results, approvals)
+        mark_retired_temporal_approvals(results, approvals, {"occurrence:occ_2026"}, set())
+        self.assertEqual(results[0]["status"], "hash_mismatch")
+
+    def test_event_year_is_validated_but_not_bound_to_cli_target_year(self):
+        # Historical occurrences remain in a current-year public projection.
+        from public_export_support.occurrence_identity import index_events
+        rows = [{"name": "過去開催", "venue": "公園", "occurrence_id": "past_2025", "event_year": 2025}]
+        self.assertEqual(len(index_events(rows, require_identity=True)), 1)
+
+
+    def test_wrong_v2_id_cannot_be_waived_as_a_songs_only_warning(self):
+        site = {"name": "同名", "venue": "公園", "occurrence_id": "real_2026", "event_year": 2026, "songs": [{"name": "旧曲"}]}
+        collector = {**site, "songs": [{"name": "新曲"}]}
+        approval = {"id": "wrong-v2", "kind": "same_key_update", "occurrence_id": "other_2026", "event_key": "同名||公園",
+                    "site_sha256": full_event_sha256(site), "collector_sha256": full_event_sha256(collector)}
+        result = self.run_build([collector], [site], [approval])
+        self.assertEqual(result["decision"]["status"], "block")
+        self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+        self.assertEqual(result["decision"]["song_only_approval_warnings"], [])
+
+    def test_v1_approval_cannot_change_year_for_an_existing_stable_id(self):
+        site = {"name": "同一発生", "venue": "公園", "occurrence_id": "stable", "event_year": 2025, "detail": "old"}
+        collector = {**site, "event_year": 2026, "detail": "reviewed"}
+        approval = {"id": "v1-year", "kind": "same_key_update", "event_key": "同一発生||公園",
+                    "site_sha256": canonical_event_sha256(site), "collector_sha256": canonical_event_sha256(collector)}
+        result = apply_reviewed_exact_approvals([collector], [site], {"schema": "public_sync_exact_approvals_v1", "approvals": [approval]})
+        self.assertEqual(result["summary"]["status"], "block")
+        self.assertEqual(result["summary"]["status_counts"], {"invalid_approval": 1})
+        self.assertEqual(result["site_rows"][0]["event_year"], 2025)
+
+    def test_unknown_occurrence_replacement_is_not_inactive_history(self):
+        approval = {"id": "unknown-v2-replacement", "kind": "key_replacement", "occurrence_id": "marker",
+                    "site_occurrence_id": "old_missing", "collector_occurrence_id": "new_missing",
+                    "site_sha256": "0" * 64, "collector_sha256": "1" * 64}
+        result = apply_reviewed_exact_approvals([], [], {"schema": "public_sync_exact_approvals_v1", "approvals": [approval]})
+        self.assertEqual(result["summary"]["status"], "block")
+        self.assertEqual(result["summary"]["status_counts"], {"hash_mismatch": 1})
 
 
 if __name__ == "__main__":

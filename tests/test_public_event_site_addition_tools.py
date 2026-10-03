@@ -37,6 +37,7 @@ class PublicEventSiteAdditionToolsTest(unittest.TestCase):
             result,
             [
                 {"name": "既存盆踊り", "venue": "広場", "date": "2026-07-01"},
+                {"name": "更新対象", "venue": "旧会場", "date": "2026-07-02"},
                 {"name": "更新対象", "venue": "新会場", "date": "2026-07-03"},
                 {"name": "追加盆踊り", "venue": "公園", "date": "2026-08-01"},
             ],
@@ -83,7 +84,7 @@ class PublicEventSiteAdditionToolsTest(unittest.TestCase):
         self.assertEqual(default_decision["status"], "block")
         self.assertEqual(allowed_decision["status"], "pass")
 
-    def test_existing_event_date_change_blocks_as_removal(self):
+    def test_existing_event_date_change_blocks_as_modification(self):
         base = [{"name": "既存盆踊り", "venue": "広場", "date": "2026-07-01"}]
         current = [{"name": "既存盆踊り", "venue": "広場", "date": "2026-07-02"}]
 
@@ -91,9 +92,9 @@ class PublicEventSiteAdditionToolsTest(unittest.TestCase):
         decision = guard_decision(diff, [])
 
         self.assertEqual(decision["status"], "block")
-        self.assertIn("removed_existing_public_events", decision["failures"])
+        self.assertIn("modified_existing_public_events", decision["failures"])
 
-    def test_reviewed_replacement_passes_with_expected_removed_names(self):
+    def test_reviewed_replacement_without_stable_id_blocks_as_modification(self):
         base = [
             {"name": "日程昇格盆踊り", "venue": "広場", "date": None},
             {"name": "既存盆踊り", "venue": "公園", "date": "2026-07-01"},
@@ -106,7 +107,8 @@ class PublicEventSiteAdditionToolsTest(unittest.TestCase):
         diff = classify_addition_diff(base, current)
         decision = guard_decision(diff, ["日程昇格盆踊り"], ["日程昇格盆踊り"])
 
-        self.assertEqual(decision["status"], "pass")
+        self.assertEqual(decision["status"], "block")
+        self.assertIn("modified_existing_public_events", decision["failures"])
 
     def test_reviewed_replacement_blocks_unexpected_removed_names(self):
         base = [

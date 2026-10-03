@@ -144,6 +144,7 @@ class ExportPublicEventsTest(unittest.TestCase):
         row = payload["predictions"][0]
         self.assertEqual(row["event_name"], "丸の内de盆踊り")
         self.assertEqual(row["venue"], "行幸通り")
+        self.assertEqual(row["target_occurrence_id"], "occ_1")
         self.assertEqual(row["prediction"]["predicted_weekday_start"], "金")
         self.assertEqual(row["prediction"]["evidence_count"], 2)
         self.assertEqual(row["prediction"]["joint_probability"], 0.91)

@@ -13,12 +13,13 @@ invariants:
   - INV-PJS-002
   - INV-PJS-003
   - INV-PJS-004
+  - INV-PJS-005
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_classify_public_events_diff.py
   - tests/test_public_json_field_sparsity.py
   - tests/test_apply_public_date_predictions.py
-updated_for: 807affe
+updated_for: 3be992d7
 ---
 
 # 公開JSONのフィールド契約
@@ -64,7 +65,9 @@ updated_for: 807affe
 消すと公開サイトの表示が壊れる。変更する場合は `bon-odori-site` 側も同時に直す必要がある。
 
 **同一性と基本情報**
-`name`, `display_name`, `venue`, `address`, `access`, `area`, `lat`, `lng`, `description`, `detail`, `scale`, `edition_number`, `name_confirmed`
+`occurrence_id`, `event_year`, `name`, `display_name`, `venue`, `address`, `access`, `area`, `lat`, `lng`, `description`, `detail`, `scale`, `edition_number`, `name_confirmed`
+
+2026-10-03のID移行では全RDB公開行に`occurrence_id`と`event_year`を追加する。IDはASCII英数字/underscore/hyphen 1〜128文字で一意、年は1〜9999の非bool int。年は実開催回を表し、`--target-year`とは一致しない過去実績カードもある。内部`_series_id`/`_venue_id`や非公開根拠は公開しない。
 
 **日程**
 `date`, `date_end`, `date_candidates`, `date_certainty_tier`, `months`, `jun`, `hints`
@@ -148,6 +151,8 @@ siteが当年日付と結び付く詳細文から導出する `time_reference` �
 
 ### INV-PJS-001 同一性は `name` と `venue` の組で決まり、それ以外にIDは無い
 
+**新しい同一性の判定としては廃止（2026-10-03）。** 以下は旧契約。現在はINV-PJS-005を使い、旧aliasは一意なv1承認の互換にのみ使う。
+
 - **内容**: 公開JSONにはイベントの安定IDが無い。差分の突き合わせは `f"{name}||{venue}"` で行う。
   したがって `name` か `venue` を変えると、機械には別イベントに見える。
 - **なぜ**: 公開JSONはRDBの主キーを外へ出していない。外向けの識別子を持たない設計のまま運用が進んだため、
@@ -207,6 +212,15 @@ siteが当年日付と結び付く詳細文から導出する `time_reference` �
   `public_export_support/date_predictions.py`
 - **守っているテスト**: `tests/test_event_date_prediction_judgment.py`、
   `tests/test_apply_public_date_predictions.py`
+
+### INV-PJS-005 開催回IDと実開催回年は全RDB公開行で必須
+
+- **内容**: `occurrence_id`は全公開行を一意に識別し、`event_year`は表示日や予測対象年ではなくその開催回のRDB年を表す。同名・同会場の別IDを上書きせず、移行時に追加する公開項目はこの2つだけとする。siteはmetadataが1件でも存在すれば全行の型・ID重複を検査し、metadataを公開JSONまで保持する。
+- **なぜ**: IDを内部source mapにだけ残すと、collector/site差分と静的ページで別開催回を識別できない。
+- **破れたときの症状**: 年を跨いで行が消える、日付予測や曲リンクが別開催回へ付く。
+- **守っているコード**: `export_public_events.py::strip_public_internal_event_fields`、`public_export_support/occurrence_identity.py`、siteのsnapshotとdeploy guard。
+- **守っているテスト**: `tests/test_public_projection_purity.py`、`tests/test_occurrence_identity.py`、`tests/test_verify_occurrence_identity_migration.py`。site側はtest_public_occurrence_identity.pyを参照する。
+- **関連**: INV-PUB-013/014。旧承認の互換と現行394件のURL維持はcollector/siteの移行検査で確認する。
 
 ## 気づいた食い違い（`6537e7f` 時点）
 

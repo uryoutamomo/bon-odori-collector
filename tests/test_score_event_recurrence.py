@@ -118,6 +118,24 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         self.assertEqual(enriched[0]["public_category"], "upcoming")
         self.assertIn("public_note", enriched[0])
 
+    def test_same_dateless_name_and_venue_with_distinct_ids_do_not_cross_enrich(self):
+        events = [
+            {
+                "occurrence_id": "occ_month_hint", "name": "同名盆踊り", "venue": "同じ会場",
+                "area": "足立区", "months": [8], "status": "未確認",
+            },
+            {
+                "occurrence_id": "occ_no_hint", "name": "同名盆踊り", "venue": "同じ会場",
+                "area": "足立区", "status": "未確認",
+            },
+        ]
+        rows = build_rows(events, target_year=TARGET_YEAR, today=TODAY)
+        enriched = enrich_public_events(events, rows)
+        self.assertEqual(rows[0]["event_key"], "occurrence:occ_month_hint")
+        self.assertEqual(rows[1]["event_key"], "occurrence:occ_no_hint")
+        self.assertEqual(enriched[0]["recurrence_score"], 0.25)
+        self.assertEqual(enriched[1]["recurrence_score"], 0.15)
+
     def test_2027_context_uses_2026_as_previous_year(self):
         event = {
             "name": "第71回 恵比寿駅前盆踊り大会",

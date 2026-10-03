@@ -285,5 +285,29 @@ class ClassifyPublicEventsDiffTest(unittest.TestCase):
         )
 
 
+    def test_occurrence_identity_keeps_same_alias_occurrences_separate(self):
+        left = [
+            {"name": "同名祭り", "venue": "広場", "occurrence_id": "a_2025", "event_year": 2025, "detail": "old"},
+            {"name": "同名祭り", "venue": "広場", "occurrence_id": "a_2026", "event_year": 2026, "detail": "new"},
+        ]
+        right = [{**row, "detail": "site"} for row in left]
+        with tempfile.TemporaryDirectory() as directory:
+            cp, sp = Path(directory) / "c.json", Path(directory) / "s.json"
+            write_json(cp, left); write_json(sp, right)
+            result = build_classification(cp, sp)
+        self.assertEqual(result["summary"]["high_risk_event_count"], 2)
+        self.assertEqual({row["identity_key"] for row in result["event_rows"]}, {"occurrence:a_2025", "occurrence:a_2026"})
+
+    def test_same_occurrence_rename_is_individual_review(self):
+        collector = [{"name": "新名称", "venue": "新会場", "occurrence_id": "same", "event_year": 2026}]
+        site = [{"name": "旧名称", "venue": "旧会場", "occurrence_id": "same", "event_year": 2026}]
+        with tempfile.TemporaryDirectory() as directory:
+            cp, sp = Path(directory) / "c.json", Path(directory) / "s.json"
+            write_json(cp, collector); write_json(sp, site)
+            result = build_classification(cp, sp)
+        self.assertEqual(result["event_rows"][0]["recommended_action"], "individual_review")
+        self.assertEqual(set(result["event_rows"][0]["fields"]), {"name", "venue"})
+
+
 if __name__ == "__main__":
     unittest.main()

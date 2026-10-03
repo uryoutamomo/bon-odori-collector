@@ -11,6 +11,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from public_export_support.occurrence_identity import identity_key, index_events as identity_index_events, paired_indexes
+
 
 ROOT = Path(__file__).resolve().parent
 SITE_REPO = ROOT.parent / "bon-odori-site"
@@ -40,32 +42,15 @@ def git_show_json(repo: Path, ref_path: str) -> list[dict[str, Any]]:
 
 
 def event_key(event: dict[str, Any]) -> str:
-    return "\u241f".join(
-        [
-            str(event.get("name") or ""),
-            str(event.get("venue") or ""),
-            str(event.get("date") or ""),
-            str(event.get("date_end") or ""),
-        ]
-    )
+    return identity_key(event)
 
 
 def index_events(events: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    indexed: dict[str, dict[str, Any]] = {}
-    duplicates: list[str] = []
-    for event in events:
-        key = event_key(event)
-        if key in indexed:
-            duplicates.append(key)
-        indexed[key] = event
-    if duplicates:
-        raise ValueError(f"duplicate event keys: {duplicates[:5]}")
-    return indexed
+    return identity_index_events(events)
 
 
 def classify_addition_diff(base_events: list[dict[str, Any]], current_events: list[dict[str, Any]]) -> dict[str, Any]:
-    base = index_events(base_events)
-    current = index_events(current_events)
+    base, current = paired_indexes(base_events, current_events)
     base_keys = set(base)
     current_keys = set(current)
     added_keys = sorted(current_keys - base_keys)

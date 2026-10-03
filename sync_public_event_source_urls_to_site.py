@@ -10,6 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from public_export_support.occurrence_identity import identity_key, paired_indexes
+
 
 ROOT = Path(__file__).resolve().parent
 COLLECTOR_EVENTS = ROOT / "data" / "public" / "events_public.json"
@@ -32,6 +34,11 @@ def write_json(path: Path, payload: Any) -> None:
 
 
 def event_key(event: dict[str, Any]) -> str:
+    return identity_key(event)
+
+
+def report_event_key(event: dict[str, Any]) -> str:
+    """Keep the legacy U+241F report format while comparisons use stable IDs."""
     return f"{event.get('name') or ''}\u241f{event.get('venue') or ''}"
 
 
@@ -79,13 +86,14 @@ def build_site_events(
     collector_events: list[dict[str, Any]],
     site_events: list[dict[str, Any]],
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[str]]:
-    collector_by_key = {event_key(event): event for event in collector_events}
+    collector_by_key, site_by_key = paired_indexes(collector_events, site_events)
+    site_keys_by_object = {id(event): key for key, event in site_by_key.items()}
     updated_events: list[dict[str, Any]] = []
     updated_rows: list[dict[str, Any]] = []
     missing_site_keys: list[str] = []
 
     for site_event in site_events:
-        key = event_key(site_event)
+        key = site_keys_by_object[id(site_event)]
         collector_event = collector_by_key.get(key)
         if not collector_event:
             updated_events.append(site_event)
@@ -107,10 +115,10 @@ def build_site_events(
         else:
             updated_events.append(site_event)
 
-    site_keys = {event_key(event) for event in site_events}
+    site_keys = set(site_by_key)
     for key in sorted(set(collector_by_key) - site_keys):
         if any(has_source_url(source) for source in collector_by_key[key].get("source_urls") or []):
-            missing_site_keys.append(key)
+            missing_site_keys.append(report_event_key(collector_by_key[key]))
     return updated_events, updated_rows, missing_site_keys
 
 

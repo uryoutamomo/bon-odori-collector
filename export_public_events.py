@@ -30,6 +30,11 @@ from public_export_support.date_predictions import (
     PREDICTIONS as DATE_PREDICTIONS,
     apply_predictions as apply_public_date_predictions,
 )
+from public_export_support.occurrence_identity import (
+    event_year as public_event_year,
+    index_events as index_public_events,
+    occurrence_id as public_occurrence_id,
+)
 from public_export_support.projection_inputs import (
     PublicProjectionInputs,
     fixed_date_rules_from_payload,
@@ -1402,6 +1407,7 @@ def _rdb_prediction_payload(row):
         "series_key": payload.get("series_key") or row.get("target_series_id") or "",
         "event_name": payload.get("event_name") or row.get("target_event_name") or "",
         "venue": payload.get("venue") or "",
+        "target_occurrence_id": row.get("target_occurrence_id"),
         "target_year": row.get("predicted_year"),
         "prediction": prediction,
         "candidate_rules": payload.get("candidate_rules") or [prediction],
@@ -1721,9 +1727,22 @@ def public_event_source_map(events):
 
 
 def strip_public_internal_event_fields(events):
+    rdb_events = [event for event in events if event.get("_source") == "master_rdb"]
+    index_public_events(rdb_events, include_internal=True, require_identity=True)
+    identified_events = [
+        event for event in events
+        if public_occurrence_id(event, include_internal=True) is not None
+    ]
+    index_public_events(identified_events, include_internal=True, require_identity=True)
     cleaned = []
     for event in events:
         item = strip_internal_public_fields(event)
+        occurrence_id = public_occurrence_id(event, include_internal=True)
+        if occurrence_id:
+            item["occurrence_id"] = occurrence_id
+            item["event_year"] = public_event_year(
+                event, include_internal=True, required=True
+            )
         for key in (
             "_source",
             "_occurrence_id",
