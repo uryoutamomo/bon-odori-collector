@@ -1,0 +1,92 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "おと（Codex）",
+  "scope": "official_source_links_20261003",
+  "purpose": "未来4開催回の誤った東部地区URLを当年の葛西/小岩地区公式根拠に訂正。開催日・会場・詳細・時刻は変更しない。",
+  "requests": [
+    {
+      "request_id": "official_source_links_20261003_01",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_f729492551d41981",
+      "event_year": 2026,
+      "date_start": "2026-10-11",
+      "date_end": "2026-10-11",
+      "confidence": "confirmed",
+      "venue": {
+        "venue_id": "venue_de19b52711929244"
+      },
+      "expected_source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "江戸川区 令和8年 町会・自治会盆踊り情報",
+        "text_excerpt": "江戸川区の2026年一覧でハイラーク船堀自治会秋まつりの開催日と会場を照合。別地区への出典URLだけを修正し、既存日付・会場・詳細・時刻は保持。"
+      },
+      "dry_run_only": true
+    },
+    {
+      "request_id": "official_source_links_20261003_02",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_38c6babc32b4801c",
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "confidence": "confirmed",
+      "venue": {
+        "venue_id": "venue_a850f3f2c8767de1"
+      },
+      "expected_source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "江戸川区 令和8年 町会・自治会盆踊り情報",
+        "text_excerpt": "江戸川区の2026年一覧でLP26まつりの開催日と会場を照合。別地区への出典URLだけを修正し、既存日付・会場・詳細・時刻は保持。"
+      },
+      "dry_run_only": true
+    },
+    {
+      "request_id": "official_source_links_20261003_03",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_79864f8d8b03a4bd",
+      "event_year": 2026,
+      "date_start": "2026-10-04",
+      "date_end": "2026-10-04",
+      "confidence": "confirmed",
+      "venue": {
+        "venue_id": "venue_d1f337a7e59a9822"
+      },
+      "expected_source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "江戸川区 令和8年 町会・自治会盆踊り情報",
+        "text_excerpt": "江戸川区の2026年一覧で公社東葛西第一住宅自治会住宅祭の開催日と会場を照合。別地区への出典URLだけを修正し、既存日付・会場・詳細・時刻は保持。"
+      },
+      "dry_run_only": true
+    },
+    {
+      "request_id": "official_source_links_20261003_04",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_973dd6c3a8f3c4ac",
+      "event_year": 2026,
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-04",
+      "confidence": "confirmed",
+      "venue": {
+        "venue_id": "venue_f7627e5a9abe718b"
+      },
+      "expected_source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
+      "source": {
+        "url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "江戸川区 令和8年 町会・自治会盆踊り情報",
+        "text_excerpt": "江戸川区の2026年一覧で小岩田自治会盆踊りの開催日と会場を照合。別地区への出典URLだけを修正し、既存日付・会場・詳細・時刻は保持。"
+      },
+      "dry_run_only": true
+    }
+  ]
+}

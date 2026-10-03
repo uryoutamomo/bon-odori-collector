@@ -16,8 +16,8 @@
 | 2 | 収集が成功しても公開データが更新されない | 完了 | 最新collector→site→snapshot→liveの内容一致を確認し、同期停止の検出・復旧手順を整える |
 | 3 | 収集失敗が情報なし・確認済み探索へ置き換わる | 完了 | success / empty / skipped / failedを区別し、失敗入力で下流の候補・探索履歴を更新しない。障害注入で確認する |
 | 4 | 日次監視の誤警報と会場データの監視漏れ | 完了 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
-| 5 | 開催回の識別がイベント名＋会場名に依存する | 実装・検証中 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
-| 6 | 最新の公式告知へ辿れる導線が少ない | 未着手 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
+| 5 | 開催回の識別がイベント名＋会場名に依存する | 完了 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
+| 6 | 最新の公式告知へ辿れる導線が少ない | 実装・検証中 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
 | 7 | 巨大な収集処理と重複する共通規則 | 未着手 | 収集レーンと結果契約を分離し、YouTube URL解釈を統一。固定入力の挙動比較と失敗境界テストを通す |
 
 ## 調査時の根拠
@@ -118,7 +118,7 @@ manifestのschema/version、全unique path、HTTP 200、空error、保存したl
 
 ## 5. 開催回IDの移行
 
-状態: 実装・検証済み、main反映と公開照合待ち。
+状態: 完了。[collector PR272](https://github.com/uryoutamomo/bon-odori-collector/pull/272)、[site PR21](https://github.com/uryoutamomo/bon-odori-site/pull/21)。
 全RDB公開行に安定した`occurrence_id`と実開催回の`event_year`を保持する。日程予測・recurrence・差分ガード・直接同期writerもIDで結び、同名別年・年内複数回を上書きしない。
 一意なlegacy aliasだけ移行互換とし、既存IDへ衝突するbridge、異ID、曖昧alias、不正metadataを拒否する。
 旧461件の承認は保持。追加2metadataだけを外すv1 hash互換と、IDと全payload hashを固定する新承認を区別する。
@@ -130,9 +130,19 @@ manifestのschema/version、全unique path、HTTP 200、空error、保存したl
 実394件の旧形式siteとの移行guardはpass、承認不一致0件。ID付きsiteの79検査・snapshot hygiene・SEOも合格。
 siteの既存一意event URLを維持し、衝突だけIDから分離。正規Sync/Deploy/HealthではID必須として全metadata消失も拒否する。
 証跡: `step5-migration.json`、`step5-guard.json`、`step5-collector-tests.log`、`step5-site-ids-tests.log`、`step5-snapshot/`。
-公開完了は正規Syncとsource/snapshot/live照合の後に記録する。
+2026-10-03 14:16 JST、正規[Sync run37099179223](https://github.com/uryoutamomo/bon-odori-site/actions/runs/37099179223)が成功し、collector/siteの394行完全一致、snapshot/liveのevents/geoとapp/index/venues.html一致を確認。公開394行すべてID一意、実開催年は2023/2025/2026。公開events hash `12fc2cab2dd8a7d4040c2dfa9ca382b2bc6d17fc8537fd3d5398e473e2e011d9`。続く[health run37099283011](https://github.com/uryoutamomo/bon-odori-site/actions/runs/37099283011)も成功し、179path・全176会場詳細の一致と異常0を確認。証跡: `step5-live/verification.json`、`step5-health/`。
 
-## 6〜7. 次工程
+## 6. 当年の公式リンク
 
-5の公開照合完了後、上の一覧の順で着手する。正本RDBの修正が必要な場合はmanifest/checksum・backup・dry-run・
-レビュー・apply後再検証を行う。根拠のない時間やURLを補うために推測を確定情報へ昇格させない。
+状態: 実装・検証中。typed `official_current_year` の公開Web URLを公式出典へ通し、RDBの当年primaryを古い長いURLより優先する。Notion由来、Web一般、X、YouTube、除外URLは推測昇格しない。公式リンクの追加だけでは時間確認済みにならない。
+
+実ページ照合で、未来の江戸川4件が誤って東部地区ページを共用していた。開催日・会場は正しい葛西/小岩の令和8年公式一覧と一致し、URLだけを訂正する。canonical `confirm_current_year_date` と `expected_source_url` を用い、競合時は停止する。
+
+- [葛西の2026年一覧](https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html): LP26まつり10/3、公社東葛西第一住宅自治会住宅祭10/4、ハイラーク船堀自治会秋まつり10/11。
+- [小岩の令和8年一覧](https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html): 小岩田自治会盆踊り10/3〜4。
+
+依頼JSON: `data/change_requests/official_source_links_20261003.json`。copy dry-run 4適用・未解決0・監査異常0。詳細・時刻・日付・会場を変えず、根拠行と参照を記録する。reviewed promotion、正本backup/CAS、再取得検証、公開差分のID単位承認とlive照合を順に実施する。
+
+## 7. 次工程
+
+6の公開照合完了後に着手する。収集レーンの結果契約とYouTube URL解釈を共通化し、挙動比較と故障境界を検査する。
