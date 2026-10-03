@@ -232,6 +232,16 @@ class CollectOutcomeMainTest(unittest.TestCase):
             self.assertFalse(voices.exists())
             self.assertFalse(seen.exists())
 
+    def test_voice_snapshot_facade_commits_fixed_input_bytes(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            voices, seen = root / "voices.json", root / "seen.json"
+            collect._commit_voice_snapshot(voices, [{"url": "fixed", "title": "固定"}], seen, ["fixed"])
+            self.assertEqual(
+                voices.read_bytes(), '[\n  {\n    "url": "fixed",\n    "title": "固定"\n  }\n]\n'.encode("utf-8"),
+            )
+            self.assertEqual(seen.read_bytes(), b'[\n  "fixed"\n]\n')
+
     def test_voice_snapshot_rollback_restores_existing_bytes(self):
         with tempfile.TemporaryDirectory() as raw:
             root = Path(raw)

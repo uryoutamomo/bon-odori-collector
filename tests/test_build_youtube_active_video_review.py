@@ -18,6 +18,30 @@ class BuildYoutubeActiveVideoReviewTest(unittest.TestCase):
             "abc123",
         )
 
+    def test_review_row_uses_shared_parser_for_mobile_shorts_url(self):
+        review = build_review(
+            [{"source": "youtube", "youtube_channel_id": "UC_ACTIVE", "title": "盆踊り", "text": "盆踊り",
+              "url": "https://m.youtube.com/shorts/u1?feature=share"}],
+            {"channels": [{"channel_id": "UC_ACTIVE", "status": "active", "collection_enabled": True}]},
+            [], {"occurrences": []},
+        )
+        self.assertEqual(review["rows"][0]["video_id"], "u1")
+
+    def test_review_uses_raw_url_for_video_id_before_compacting(self):
+        review = build_review(
+            [
+                {"source": "youtube", "youtube_channel_id": "UC_ACTIVE", "title": "盆踊り", "text": "盆踊り",
+                 "url": "https://evil.example/path/youtu.be/abc123"},
+                {"source": "youtube", "youtube_channel_id": "UC_ACTIVE", "title": "盆踊り", "text": "盆踊り",
+                 "url": "https://youtu.be/u1#fragment"},
+            ],
+            {"channels": [{"channel_id": "UC_ACTIVE", "status": "active", "collection_enabled": True}]},
+            [], {"occurrences": []},
+        )
+        ids_by_source = {row["source_url"]: row["video_id"] for row in review["rows"]}
+        self.assertEqual(ids_by_source["https://evil.example/path/youtu.be/abc123"], "")
+        self.assertEqual(ids_by_source["https://youtu.be/u1#fragment"], "u1")
+
     def test_splits_youtube_title_into_event_and_songs(self):
         self.assertEqual(
             split_youtube_title("【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子 / #盆踊り"),

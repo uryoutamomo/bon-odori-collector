@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from youtube_channels.extract_youtube_setlists import compact_url
+from youtube_channels.video_urls import video_id_from_url
 from collection_support.voices_s3_artifact import require_writable_local_voices
 
 
@@ -53,17 +54,6 @@ def load_env_value(name, env_path=".env"):
         key, value = line.split("=", 1)
         if key.strip() == name:
             return value.strip().strip('"').strip("'")
-    return ""
-
-
-def video_id_from_url(url):
-    url = compact_url(url)
-    parsed = urllib.parse.urlparse(url)
-    if parsed.hostname == "youtu.be":
-        return parsed.path.strip("/")
-    if parsed.hostname in {"www.youtube.com", "youtube.com"}:
-        query = urllib.parse.parse_qs(parsed.query)
-        return (query.get("v") or [""])[0]
     return ""
 
 

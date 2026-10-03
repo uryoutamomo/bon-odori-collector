@@ -146,6 +146,19 @@ class BuildYoutubeRdbTest(unittest.TestCase):
                 with self.assertRaises(sqlite3.ProgrammingError):
                     conn.execute("SELECT 1")
 
+    def test_does_not_persist_foreign_url_with_embedded_youtu_be_path_as_video(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out_db = Path(tmp) / "youtube.sqlite"
+            summary = build_youtube_rdb(
+                voices=[{
+                    "source": "youtube", "account": "foreign", "title": "foreign",
+                    "url": "https://evil.example/path/youtu.be/abc123",
+                }],
+                registry={"channels": []}, active_review={"rows": []}, setlists={"occurrences": []},
+                out_db=out_db, out_summary=Path(tmp) / "summary.json",
+            )
+            self.assertEqual(summary["table_counts"]["videos"], 0)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -51,6 +51,7 @@ invariants:
   - INV-YTB-005
   - INV-YTB-006
   - INV-YTB-007
+  - INV-YTB-008
 verified_by:
   - tests/test_run_daily_youtube_backfill.py
   - tests/test_youtube_daily_operations_policy.py
@@ -59,6 +60,10 @@ verified_by:
   - tests/test_youtube_reviewed_reimport.py
   - tests/test_rdb_youtube_setlist_pipeline_workflow.py
   - tests/test_sync_event_date_predictions_rdb.py
+  - tests/test_youtube_video_urls.py
+  - tests/test_build_youtube_active_video_review.py
+  - tests/test_youtube_description_backfill.py
+  - tests/test_build_youtube_rdb.py
 updated_for: 68cd2f5
 ---
 
@@ -235,6 +240,14 @@ updated_for: 68cd2f5
 - **守っているテスト**: `tests/test_extract_youtube_setlists.py::ExtractYoutubeSetlistsTest::test_chapter_program_labels_do_not_become_songs`、
   `tests/test_extract_youtube_setlists.py::ExtractYoutubeSetlistsTest::test_chapter_filter_keeps_ambiguous_and_similarly_named_real_song_candidates`、
   `tests/test_youtube_reviewed_reimport.py::test_reimport_preserves_rejection_but_keeps_same_title_at_other_occurrence`。
+
+### INV-YTB-008 動画URLからのID抽出は全入口で同じ規則を使う
+
+- **内容**: active reviewとdescription backfillは `youtube_channels/video_urls.py::video_id_from_url` を共有する。HTTP(S)のyoutube.com/www/mとyoutu.beだけを受理し、watchのv・shorts・短縮動画URLを同じIDへ解決する。channel/handle/playlist、類似ドメインや不正IDには動画IDを付与しない。既存の短いfixture IDも保持し、11文字固定にしない。ID判定はraw URLで行い、`compact_url()`も同じ判定と実hostnameを通った短縮URLだけcanonical化する。URL内の部分文字列から正規YouTube URLを生成しない。
+- **なぜ**: 二重のURL解釈では、reviewで認識したshortsをbackfill側が取り落とす。
+- **破れたときの症状**: 同じ動画が入口によって消える、外部サイトのURLをYouTube動画と誤認する。
+- **守っているコード**: `youtube_channels/video_urls.py` と両consumerのimport/re-export。
+- **守っているテスト**: 共通URL表と `tests/test_build_youtube_active_video_review.py`、`tests/test_youtube_description_backfill.py` の固定入力。外部APIはmockする。
 
 ## 主要な流れ
 

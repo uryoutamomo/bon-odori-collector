@@ -17,8 +17,8 @@
 | 3 | 収集失敗が情報なし・確認済み探索へ置き換わる | 完了 | success / empty / skipped / failedを区別し、失敗入力で下流の候補・探索履歴を更新しない。障害注入で確認する |
 | 4 | 日次監視の誤警報と会場データの監視漏れ | 完了 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
 | 5 | 開催回の識別がイベント名＋会場名に依存する | 完了 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
-| 6 | 最新の公式告知へ辿れる導線が少ない | 実装・検証中 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
-| 7 | 巨大な収集処理と重複する共通規則 | 未着手 | 収集レーンと結果契約を分離し、YouTube URL解釈を統一。固定入力の挙動比較と失敗境界テストを通す |
+| 6 | 最新の公式告知へ辿れる導線が少ない | 完了 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
+| 7 | 巨大な収集処理と重複する共通規則 | 実装・検証完了（main反映待ち） | 収集レーンと結果契約を分離し、YouTube URL解釈を統一。固定入力の挙動比較と失敗境界テストを通す |
 
 ## 調査時の根拠
 
@@ -134,7 +134,7 @@ siteの既存一意event URLを維持し、衝突だけIDから分離。正規Sy
 
 ## 6. 当年の公式リンク
 
-状態: 実装・検証中。typed `official_current_year` の公開Web URLを公式出典へ通し、RDBの当年primaryを古い長いURLより優先する。Notion由来、Web一般、X、YouTube、除外URLは推測昇格しない。公式リンクの追加だけでは時間確認済みにならない。
+状態: 完了。typed `official_current_year` の公開Web URLを公式出典へ通し、RDBの当年primaryを古い長いURLより優先する。Notion由来、Web一般、X、YouTube、除外URLは推測昇格しない。公式リンクの追加だけでは時間確認済みにならない。
 
 実ページ照合で、未来の江戸川4件が誤って東部地区ページを共用していた。開催日・会場は正しい葛西/小岩の令和8年公式一覧と一致し、URLだけを訂正する。canonical `confirm_current_year_date` と `expected_source_url` を用い、競合時は停止する。
 
@@ -147,6 +147,14 @@ siteの既存一意event URLを維持し、衝突だけIDから分離。正規Sy
 
 年越し・期限切れを含む9境界で4出力を固定入力比較し、すべて通過した。full suiteは2016 passed/246 subtests、guard関連は108 passed/62 subtests。旧461承認を保持し、新21承認はIDと全payload hashを固定した。実guardはpre/post-syncともpass。旧v1の残存mismatch5件は、今回適用された同ID v2と最終全payload一致を条件に再評価する限定修正で解消した。別ID・不正hash・曖昧aliasはblockを維持する。公開・live照合へ進む。
 
-## 7. 次工程
+公開: PR #274（merge `5a6310fe`）、Sync `37102631755` success、site `51d4344`。2026-10-03 15:20 JSTにcollector/site events394件のcanonical SHA `170e2688d97880cf7e6ed4fbdb72d717f18c436492c92629bbfea51b39705b39`、snapshot/live SHA `4ddc3cd17dc5c9ab7d2f29b0f81e9e0f3b64315a844bc6182874ee34b14dc509`一致を確認。geo160、venues176、全会場176ページ、app/index/venuesも一致。hygiene/SEO通過。最終full suite2022 passed/246 subtests、CI full/spec成功。実ブラウザで小岩田の公式ボタンが小岩の令和8年一覧を指し、時刻は未確認を維持した。Health `37102741827` success、全179公開probeを検査。
 
-6の公開照合完了後に着手する。収集レーンの結果契約とYouTube URL解釈を共通化し、挙動比較と故障境界を検査する。
+## 7. 収集責務の分離と共通規則
+
+状態: 実装・検証中。6の公開照合完了後に着手した。RSS収集・outcome・2ファイル保存を独立moduleへ移し、mainは各レーンの結果を束ねて下流gateする。既存APIとpatch入口を薄いfacadeで保持する。YouTube動画URLは単一pure parserへ統一し、固定入力の挙動比較と故障境界を検査する。
+
+RSSは `collection_support/rss_voices.py` へ移設し、collect.pyを4692→4492行にした。取得outcome、entry変換、registry/feed、2ファイル保存を一つのレーン責務として切り出し、parser/feed/entry parserのpatch入口を互換facadeから注入する。旧 `5a6310fe` のRSS関数をAST隔離して、成功・部分失敗のitems/seen/failureと保存bytesの完全一致を確認した。正常emptyでは下流へ進み、RSS/X失敗では候補・探索履歴などを更新しない。2回目replace失敗で既存bytes/初回不存在を復元する。failed帰還を外す隔離mutationは負例が検出した。
+
+YouTube ID抽出を `youtube_channels/video_urls.py` へ統一した。watch/shorts/短縮URLを両consumerで扱い、既存の短IDは保持する。HTTP(S)・実hostname・非空ASCII IDを検査し、複数v/foreign/類似ドメインを拒否する。raw URLを先に判定し、compact_urlの部分文字列判定も除去した。外部URL内のyoutu.be文字列が正規動画へ化けないことを実RDB consumerで検証した。関連focused83 passed/21 subtests、独立レビュー合格。公開データ・正本DB・API予算・workflowは変更せず、実収集/APIを追加実行していない。
+
+証跡: `bonsuke-system-improvements-evidence-20261003/step7-rss-facade-parity.json`、`step7-exact-final-tests.log`。main反映後に全7件の完了を確定する。

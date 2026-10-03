@@ -9,9 +9,11 @@ import unicodedata
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from song_processing.song_occurrences import parse_event_date
 from youtube_backfill.event_aliases import find_event_alias, find_venue_alias
+from youtube_channels.video_urls import video_id_from_url
 
 
 DATA = Path("data")
@@ -119,9 +121,14 @@ def normalize_key(value):
 
 
 def compact_url(url):
+    """Canonicalize an actual short YouTube URL without recognizing substrings."""
     url = str(url or "").strip()
-    if "youtu.be/" in url:
-        video_id = url.split("youtu.be/", 1)[1].split("?", 1)[0].split("&", 1)[0]
+    try:
+        parsed = urlsplit(url)
+    except ValueError:
+        return url
+    video_id = video_id_from_url(url)
+    if video_id and parsed.hostname == "youtu.be":
         return f"https://www.youtube.com/watch?v={video_id}"
     return url
 

@@ -4,6 +4,7 @@ layer: L1
 title: 収集サブシステム
 owns:
   - collect.py
+  - collection_support/rss_voices.py
   - collection_support/proactive_search.py
   - x_queries.json
   - collection_support/x_raw_archive.py
@@ -41,6 +42,7 @@ invariants:
   - INV-COL-009
   - INV-COL-010
   - INV-COL-011
+  - INV-COL-012
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -180,6 +182,14 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **なぜ**: 外部取得の失敗を「投稿なし」「未確認の確認完了」とすると、候補が静かに消え、次回探索の優先度まで下がる。
 - **守っているコード**: `collect.py` の `collect_voices_outcome()` とsnapshot gate、`collection_support/proactive_search.py` の `scan_official_sources_outcome()` / `update_state_from_report()`。
 - **守っているテスト**: `tests/test_collect_voices.py::CollectVoicesTest::test_partial_rss_failure_does_not_advance_seen_or_return_partial_items`、`tests/test_collect_voices.py::CollectVoicesTest::test_invalid_existing_youtube_registry_is_a_failed_outcome`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_proactive_without_budget_or_api_access`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_whitelist_without_budget_or_api_access`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_non_dict_x_config_is_recorded_as_lane_failure`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_invalid_existing_snapshot_never_reaches_voice_derived_downstream`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_empty_completed_lanes_reach_voice_derived_downstream`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_x_partial_failure_closes_every_voice_derived_gate`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_broken_x_config_is_failed_and_closes_voice_derived_gates`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_score_write_failure_closes_later_voice_gates`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_voice_snapshot_rollback_removes_new_first_file_when_second_replace_fails`、`tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history`、`tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_restores_state_when_report_replace_fails`、`tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_removes_new_files_when_report_replace_fails`。
+
+### INV-COL-012 RSSレーンを独立部品で扱い、結果と保存の契約を保つ
+
+- **内容**: RSS feed合成・entry変換・取得outcome・voices/seen保存は `collection_support/rss_voices.py` が担当する。`collect.py` は互換facadeとレーン集約を担当し、既存のparser/feed設定の差し替え入口を保持する。取得failedで部分RSS行やseen位置を確定せず、2ファイル保存の失敗では元のbytesまたは不存在へ戻す。正常emptyと設定上skippedを区別する。
+- **なぜ**: mainに取得・変換・保存を重ねると、一レーンの変更が下流の候補更新や別レーンへ影響する。
+- **破れたときの症状**: 部分取得を成功扱いする、既読位置だけが進む、保存片方だけが更新される、既存呼出しやfault注入入口が壊れる。
+- **守っているコード**: `collection_support/rss_voices.py`、`collect.py::collect_voices_outcome/collect_voices/main`。
+- **守っているテスト**: `tests/test_collect_voices.py`、`tests/test_collect_outcomes_main.py`。固定入力で旧新のitems/seen/保存bytesを比較し、RSS失敗・2回目replace失敗と正常emptyの下流境界を検証する。
 
 ## 主要な流れ
 
