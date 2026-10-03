@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-10-03T06:19:11Z",
-  "generated_for_commit": "5a6310f",
+  "generated_at": "2026-10-03T06:33:57Z",
+  "generated_for_commit": "1339c0f0",
   "specs": {
     "L1-collection": {
       "layer": "L1",
       "title": "収集サブシステム",
       "owns": [
         "collect.py",
+        "collection_support/rss_voices.py",
         "collection_support/proactive_search.py",
         "x_queries.json",
         "collection_support/x_raw_archive.py",
@@ -44,7 +45,8 @@
         "INV-COL-008",
         "INV-COL-009",
         "INV-COL-010",
-        "INV-COL-011"
+        "INV-COL-011",
+        "INV-COL-012"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
@@ -71,6 +73,7 @@
         "collect.py",
         "collect_venue_sites.py",
         "collection_support/proactive_search.py",
+        "collection_support/rss_voices.py",
         "collection_support/voices_s3_artifact.py",
         "collection_support/x_author_profile.py",
         "collection_support/x_budget_guard.py",
@@ -90,71 +93,71 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 3
+        "commits_since": 2,
+        "files_changed_since": 4
       },
-      "version": "1.11",
-      "revision_count": 12,
+      "version": "1.12",
+      "revision_count": 13,
       "history": [
         {
-          "commit": "6a78284",
+          "commit": "1339c0f0",
+          "date": "2026-10-03",
+          "subject": "Separate RSS collection and unify YouTube video URL identity (#275)"
+        },
+        {
+          "commit": "6a78284e",
           "date": "2026-10-03",
           "subject": "Distinguish collection failures from empty and skipped inputs (#271)"
         },
         {
-          "commit": "c68891c",
+          "commit": "c68891ca",
           "date": "2026-08-24",
           "subject": "Add ward official source registry and review routing (#258)"
         },
         {
-          "commit": "ea36138",
+          "commit": "ea361380",
           "date": "2026-08-24",
           "subject": "Add weekly odottar coverage benchmark (#257)"
         },
         {
-          "commit": "6083472",
+          "commit": "60834720",
           "date": "2026-08-19",
           "subject": "日次予測同期の仕様と運用境界を記録する"
         },
         {
-          "commit": "b0c38ab",
+          "commit": "b0c38abd",
           "date": "2026-08-18",
           "subject": "Persist and review X event candidate backlog (#239)"
         },
         {
-          "commit": "9bd761e",
+          "commit": "9bd761e7",
           "date": "2026-08-16",
           "subject": "Add guarded detail cleanup repair job"
         },
         {
-          "commit": "e3aa365",
+          "commit": "e3aa365f",
           "date": "2026-08-16",
           "subject": "検索クエリに読み取り位置(since_time)を持たせ、既読分の再課金を止める (#220)"
         },
         {
-          "commit": "5f28266",
+          "commit": "5f28266a",
           "date": "2026-08-15",
           "subject": "収集の関門から除外語を廃止する（曲目情報を捨てていた） (#215)"
         },
         {
-          "commit": "a855a9a",
+          "commit": "a855a9ad",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         },
         {
-          "commit": "958c6db",
+          "commit": "958c6db0",
           "date": "2026-08-14",
           "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
         },
         {
-          "commit": "bf4f70d",
+          "commit": "bf4f70d9",
           "date": "2026-08-13",
           "subject": "Test five previously unguarded data invariants (#196)"
-        },
-        {
-          "commit": "1d2d00d",
-          "date": "2026-08-13",
-          "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
       ]
     },
@@ -215,37 +218,37 @@
       "revision_count": 7,
       "history": [
         {
-          "commit": "708e24a",
+          "commit": "708e24a9",
           "date": "2026-08-21",
           "subject": "Fix E0X text date extraction gaps (#250)"
         },
         {
-          "commit": "22a8e7d",
+          "commit": "22a8e7dc",
           "date": "2026-08-16",
           "subject": "Align claim-family specifications"
         },
         {
-          "commit": "863486b",
+          "commit": "863486b3",
           "date": "2026-08-16",
           "subject": "Refresh specs for E0X-S v2"
         },
         {
-          "commit": "f00d58e",
+          "commit": "f00d58e9",
           "date": "2026-08-16",
           "subject": "Implement E0X-S v2 claim extraction"
         },
         {
-          "commit": "1b7e548",
+          "commit": "1b7e5483",
           "date": "2026-08-16",
           "subject": "X投稿から曲名・界隈語の観測台帳を作る (#224)"
         },
         {
-          "commit": "d7d5f3f",
+          "commit": "d7d5f3f6",
           "date": "2026-08-16",
           "subject": "X投稿からE0レポートを作る器を新設する（意味判定層の退場・第0段） (#223)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -422,62 +425,62 @@
       "revision_count": 16,
       "history": [
         {
-          "commit": "c68891c",
+          "commit": "c68891ca",
           "date": "2026-08-24",
           "subject": "Add ward official source registry and review routing (#258)"
         },
         {
-          "commit": "96a4359",
+          "commit": "96a4359d",
           "date": "2026-08-24",
           "subject": "Define reopenable publication scope holds (#255)"
         },
         {
-          "commit": "21f9abf",
+          "commit": "21f9abf1",
           "date": "2026-08-22",
           "subject": "E2の会場区を公開経路まで保持し、欠落を可視化する (#251)"
         },
         {
-          "commit": "b0c38ab",
+          "commit": "b0c38abd",
           "date": "2026-08-18",
           "subject": "Persist and review X event candidate backlog (#239)"
         },
         {
-          "commit": "5c9d608",
+          "commit": "5c9d6080",
           "date": "2026-08-18",
           "subject": "Complete frozen LLM review backlog (#236)"
         },
         {
-          "commit": "fa94b3a",
+          "commit": "fa94b3ae",
           "date": "2026-08-17",
           "subject": "Improve review inbox next-action triage"
         },
         {
-          "commit": "87489f5",
+          "commit": "87489f55",
           "date": "2026-08-16",
           "subject": "Close E2-S replay and publication gates"
         },
         {
-          "commit": "33c728c",
+          "commit": "33c728cd",
           "date": "2026-08-16",
           "subject": "Document E2-S v2 identity contracts"
         },
         {
-          "commit": "b30445d",
+          "commit": "b30445d4",
           "date": "2026-08-15",
           "subject": "名指しされた対象を判定者に見せ、材料の無い候補を「新規」として人へ回さない (#214)"
         },
         {
-          "commit": "0efb933",
+          "commit": "0efb933e",
           "date": "2026-08-15",
           "subject": "判定に見せる候補集合を判定直前に引き直し、取り込み時に照合する (#213)"
         },
         {
-          "commit": "a40d7c4",
+          "commit": "a40d7c45",
           "date": "2026-08-15",
           "subject": "LLMは同一性だけを答え、機械が変更要求へ変換する（E2） (#210)"
         },
         {
-          "commit": "cd8eb13",
+          "commit": "cd8eb131",
           "date": "2026-08-15",
           "subject": "コンソール由来の変更提案を候補器へ付け替える（E0b） (#209)"
         }
@@ -614,62 +617,62 @@
       "revision_count": 21,
       "history": [
         {
-          "commit": "ba3b36d",
+          "commit": "ba3b36d0",
           "date": "2026-09-09",
           "subject": "Refresh 11 events from official 2026 notices with guarded corrections"
         },
         {
-          "commit": "d3b0808",
+          "commit": "d3b08083",
           "date": "2026-09-09",
           "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
         },
         {
-          "commit": "f989c78",
+          "commit": "f989c78f",
           "date": "2026-09-09",
           "subject": "Enable encrypted public projection input capture workflow"
         },
         {
-          "commit": "06049ba",
+          "commit": "06049ba4",
           "date": "2026-09-09",
           "subject": "Prepare verified encrypted inputs and complete public projection comparison checks"
         },
         {
-          "commit": "9b904c3",
+          "commit": "9b904c33",
           "date": "2026-08-22",
           "subject": "Preserve stronger event source URLs (#252)"
         },
         {
-          "commit": "6083472",
+          "commit": "60834720",
           "date": "2026-08-19",
           "subject": "日次予測同期の仕様と運用境界を記録する"
         },
         {
-          "commit": "ad611a0",
+          "commit": "ad611a05",
           "date": "2026-08-18",
           "subject": "Combine multi-year song evidence"
         },
         {
-          "commit": "0b70acc",
+          "commit": "0b70acc7",
           "date": "2026-08-18",
           "subject": "Add LLM joint certainty for event date predictions"
         },
         {
-          "commit": "01db7c0",
+          "commit": "01db7c04",
           "date": "2026-08-17",
           "subject": "Finalize detail cleanup repair"
         },
         {
-          "commit": "9bd761e",
+          "commit": "9bd761e7",
           "date": "2026-08-16",
           "subject": "Add guarded detail cleanup repair job"
         },
         {
-          "commit": "fcb8277",
+          "commit": "fcb82778",
           "date": "2026-08-16",
           "subject": "Prevent notice replay from restoring curated details"
         },
         {
-          "commit": "b9ff2f0",
+          "commit": "b9ff2f06",
           "date": "2026-08-16",
           "subject": "fix: close X song materialization safety gaps"
         }
@@ -778,62 +781,62 @@
       "revision_count": 27,
       "history": [
         {
-          "commit": "5a6310f",
+          "commit": "5a6310fe",
           "date": "2026-10-03",
           "subject": "改善6: 当年の公式リンクを開催回単位で検証して公開 (#274)"
         },
         {
-          "commit": "249539c",
+          "commit": "249539cf",
           "date": "2026-10-03",
           "subject": "Carry stable occurrence identity through publication and sync guards (#272)"
         },
         {
-          "commit": "35e6e68",
+          "commit": "35e6e687",
           "date": "2026-10-03",
           "subject": "Retire stale approval after verified slide expiry (#267)"
         },
         {
-          "commit": "12fff4f",
+          "commit": "12fff4f7",
           "date": "2026-09-09",
           "subject": "Compare public revisions with an explicit shared code fix"
         },
         {
-          "commit": "876e9a6",
+          "commit": "876e9a6c",
           "date": "2026-09-09",
           "subject": "Document historical song rollover contract and fixed-input verification"
         },
         {
-          "commit": "be49a58",
+          "commit": "be49a580",
           "date": "2026-09-09",
           "subject": "Separate public projection stages and compare frozen revision outputs"
         },
         {
-          "commit": "d3b0808",
+          "commit": "d3b08083",
           "date": "2026-09-09",
           "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
         },
         {
-          "commit": "06049ba",
+          "commit": "06049ba4",
           "date": "2026-09-09",
           "subject": "Prepare verified encrypted inputs and complete public projection comparison checks"
         },
         {
-          "commit": "ff2ef6c",
+          "commit": "ff2ef6cd",
           "date": "2026-09-09",
           "subject": "docs: specify event-scoped song sync approval checks"
         },
         {
-          "commit": "f86e171",
+          "commit": "f86e1711",
           "date": "2026-08-26",
           "subject": "Document ended-transition approval retirement"
         },
         {
-          "commit": "c3f2d25",
+          "commit": "c3f2d25f",
           "date": "2026-08-22",
           "subject": "Retire superseded rename approvals (#253)"
         },
         {
-          "commit": "21f9abf",
+          "commit": "21f9abf1",
           "date": "2026-08-22",
           "subject": "E2の会場区を公開経路まで保持し、欠落を可視化する (#251)"
         }
@@ -873,12 +876,12 @@
       "revision_count": 2,
       "history": [
         {
-          "commit": "c0f3ad8",
+          "commit": "c0f3ad86",
           "date": "2026-08-13",
           "subject": "配信と公開JSONの不変条件4件に回帰テストを付ける (#197)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -924,12 +927,12 @@
       "revision_count": 2,
       "history": [
         {
-          "commit": "a855a9a",
+          "commit": "a855a9ad",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -1051,62 +1054,62 @@
       "revision_count": 13,
       "history": [
         {
-          "commit": "876e9a6",
+          "commit": "876e9a6c",
           "date": "2026-09-09",
           "subject": "Document historical song rollover contract and fixed-input verification"
         },
         {
-          "commit": "1cdda18",
+          "commit": "1cdda18e",
           "date": "2026-08-24",
           "subject": "Schedule RDB-native YouTube setlist pipeline (#256)"
         },
         {
-          "commit": "916de7d",
+          "commit": "916de7d3",
           "date": "2026-08-18",
           "subject": "Add guarded song probability recalculation workflow (#244)"
         },
         {
-          "commit": "2915f6b",
+          "commit": "2915f6bd",
           "date": "2026-08-18",
           "subject": "Fix song certainty across all events"
         },
         {
-          "commit": "ad611a0",
+          "commit": "ad611a05",
           "date": "2026-08-18",
           "subject": "Combine multi-year song evidence"
         },
         {
-          "commit": "f50c4ce",
+          "commit": "f50c4cee",
           "date": "2026-08-16",
           "subject": "Harden E2-S event and rollback boundaries"
         },
         {
-          "commit": "87489f5",
+          "commit": "87489f55",
           "date": "2026-08-16",
           "subject": "Close E2-S replay and publication gates"
         },
         {
-          "commit": "33c728c",
+          "commit": "33c728cd",
           "date": "2026-08-16",
           "subject": "Document E2-S v2 identity contracts"
         },
         {
-          "commit": "863486b",
+          "commit": "863486b3",
           "date": "2026-08-16",
           "subject": "Refresh specs for E0X-S v2"
         },
         {
-          "commit": "f00d58e",
+          "commit": "f00d58e9",
           "date": "2026-08-16",
           "subject": "Implement E0X-S v2 claim extraction"
         },
         {
-          "commit": "1b7e548",
+          "commit": "1b7e5483",
           "date": "2026-08-16",
           "subject": "X投稿から曲名・界隈語の観測台帳を作る (#224)"
         },
         {
-          "commit": "3b43069",
+          "commit": "3b430691",
           "date": "2026-08-14",
           "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
         }
@@ -1165,7 +1168,8 @@
         "INV-YTB-004",
         "INV-YTB-005",
         "INV-YTB-006",
-        "INV-YTB-007"
+        "INV-YTB-007",
+        "INV-YTB-008"
       ],
       "verified_by": [
         "tests/test_run_daily_youtube_backfill.py",
@@ -1174,7 +1178,11 @@
         "tests/test_extract_youtube_setlists.py",
         "tests/test_youtube_reviewed_reimport.py",
         "tests/test_rdb_youtube_setlist_pipeline_workflow.py",
-        "tests/test_sync_event_date_predictions_rdb.py"
+        "tests/test_sync_event_date_predictions_rdb.py",
+        "tests/test_youtube_video_urls.py",
+        "tests/test_build_youtube_active_video_review.py",
+        "tests/test_youtube_description_backfill.py",
+        "tests/test_build_youtube_rdb.py"
       ],
       "updated_for": "68cd2f5",
       "path": "docs/spec/L1/09-youtube.md",
@@ -1230,52 +1238,58 @@
         "youtube_channels/active_video_review.py",
         "youtube_channels/backfill_youtube_descriptions.py",
         "youtube_channels/discover_youtube_channels.py",
-        "youtube_channels/extract_youtube_setlists.py"
+        "youtube_channels/extract_youtube_setlists.py",
+        "youtube_channels/video_urls.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 2
+        "commits_since": 2,
+        "files_changed_since": 5
       },
-      "version": "1.7",
-      "revision_count": 8,
+      "version": "1.8",
+      "revision_count": 9,
       "history": [
         {
-          "commit": "d3b0808",
+          "commit": "1339c0f0",
+          "date": "2026-10-03",
+          "subject": "Separate RSS collection and unify YouTube video URL identity (#275)"
+        },
+        {
+          "commit": "d3b08083",
           "date": "2026-09-09",
           "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
         },
         {
-          "commit": "1cdda18",
+          "commit": "1cdda18e",
           "date": "2026-08-24",
           "subject": "Schedule RDB-native YouTube setlist pipeline (#256)"
         },
         {
-          "commit": "6083472",
+          "commit": "60834720",
           "date": "2026-08-19",
           "subject": "日次予測同期の仕様と運用境界を記録する"
         },
         {
-          "commit": "0b70acc",
+          "commit": "0b70acc7",
           "date": "2026-08-18",
           "subject": "Add LLM joint certainty for event date predictions"
         },
         {
-          "commit": "8fead11",
+          "commit": "8fead111",
           "date": "2026-08-17",
           "subject": "Document YouTube publication boundary"
         },
         {
-          "commit": "56440f5",
+          "commit": "56440f57",
           "date": "2026-08-17",
           "subject": "Document YouTube retry quota guards"
         },
         {
-          "commit": "a855a9a",
+          "commit": "a855a9ad",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         },
         {
-          "commit": "3b43069",
+          "commit": "3b430691",
           "date": "2026-08-14",
           "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
         }
@@ -1340,7 +1354,7 @@
       "revision_count": 1,
       "history": [
         {
-          "commit": "dae4079",
+          "commit": "dae40799",
           "date": "2026-08-14",
           "subject": "会場サブシステムのL1仕様を書く (#203)"
         }
@@ -1401,12 +1415,12 @@
       "revision_count": 2,
       "history": [
         {
-          "commit": "1b7e548",
+          "commit": "1b7e5483",
           "date": "2026-08-16",
           "subject": "X投稿から曲名・界隈語の観測台帳を作る (#224)"
         },
         {
-          "commit": "2c93cc1",
+          "commit": "2c93cc14",
           "date": "2026-08-14",
           "subject": "用語集・別名サブシステムのL1仕様を書く (#204)"
         }
@@ -1442,22 +1456,22 @@
       "revision_count": 4,
       "history": [
         {
-          "commit": "c6daccf",
+          "commit": "c6daccfb",
           "date": "2026-10-03",
           "subject": "Correct four current official source URLs with reviewed requests (#273)"
         },
         {
-          "commit": "33c728c",
+          "commit": "33c728cd",
           "date": "2026-08-16",
           "subject": "Document E2-S v2 identity contracts"
         },
         {
-          "commit": "bf4f70d",
+          "commit": "bf4f70d9",
           "date": "2026-08-13",
           "subject": "Test five previously unguarded data invariants (#196)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -1502,47 +1516,47 @@
       "revision_count": 9,
       "history": [
         {
-          "commit": "5a6310f",
+          "commit": "5a6310fe",
           "date": "2026-10-03",
           "subject": "改善6: 当年の公式リンクを開催回単位で検証して公開 (#274)"
         },
         {
-          "commit": "249539c",
+          "commit": "249539cf",
           "date": "2026-10-03",
           "subject": "Carry stable occurrence identity through publication and sync guards (#272)"
         },
         {
-          "commit": "8886c20",
+          "commit": "8886c203",
           "date": "2026-10-03",
           "subject": "Document current occurrence time evidence contract and verification (#269)"
         },
         {
-          "commit": "ba3b36d",
+          "commit": "ba3b36d0",
           "date": "2026-09-09",
           "subject": "Refresh 11 events from official 2026 notices with guarded corrections"
         },
         {
-          "commit": "1fda725",
+          "commit": "1fda725e",
           "date": "2026-09-09",
           "subject": "Publish verified R2 projection with historical song year correction"
         },
         {
-          "commit": "be49a58",
+          "commit": "be49a580",
           "date": "2026-09-09",
           "subject": "Separate public projection stages and compare frozen revision outputs"
         },
         {
-          "commit": "0b70acc",
+          "commit": "0b70acc7",
           "date": "2026-08-18",
           "subject": "Add LLM joint certainty for event date predictions"
         },
         {
-          "commit": "c0f3ad8",
+          "commit": "c0f3ad86",
           "date": "2026-08-13",
           "subject": "配信と公開JSONの不変条件4件に回帰テストを付ける (#197)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -1577,7 +1591,7 @@
       "revision_count": 1,
       "history": [
         {
-          "commit": "a855a9a",
+          "commit": "a855a9ad",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         }
@@ -1605,42 +1619,42 @@
       "revision_count": 8,
       "history": [
         {
-          "commit": "807affe",
+          "commit": "807affe5",
           "date": "2026-10-03",
           "subject": "Record ordered Bonsuke system improvements (#268)"
         },
         {
-          "commit": "fffefc8",
+          "commit": "fffefc89",
           "date": "2026-09-09",
           "subject": "Record verified R2 production release and update specification entrypoint"
         },
         {
-          "commit": "9949c8c",
+          "commit": "9949c8c7",
           "date": "2026-08-24",
           "subject": "L0仕様書に盆助の中核思想を追記 (#254)"
         },
         {
-          "commit": "8fb30c8",
+          "commit": "8fb30c80",
           "date": "2026-08-14",
           "subject": "L0を4本のmerge後の実態へ合わせる (#205)"
         },
         {
-          "commit": "a855a9a",
+          "commit": "a855a9ad",
           "date": "2026-08-14",
           "subject": "日次で走っているのに未記述だったスクリプトを既存L1へ配分する (#202)"
         },
         {
-          "commit": "3b43069",
+          "commit": "3b430691",
           "date": "2026-08-14",
           "subject": "YouTube取り込みのL1仕様を書き、未記述の実態をL0へ書き直す (#201)"
         },
         {
-          "commit": "958c6db",
+          "commit": "958c6db0",
           "date": "2026-08-14",
           "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -1680,27 +1694,27 @@
       "revision_count": 5,
       "history": [
         {
-          "commit": "afdc80d",
+          "commit": "afdc80d8",
           "date": "2026-08-14",
           "subject": "仕様書の閲覧版にバージョンと更新履歴を表示する (#207)"
         },
         {
-          "commit": "958c6db",
+          "commit": "958c6db0",
           "date": "2026-08-14",
           "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
         },
         {
-          "commit": "f8e1f21",
+          "commit": "f8e1f212",
           "date": "2026-08-13",
           "subject": "仕様書の機械検査の限界に「使われないコードを引く」穴を書き足す (#198)"
         },
         {
-          "commit": "c0f3ad8",
+          "commit": "c0f3ad86",
           "date": "2026-08-13",
           "subject": "配信と公開JSONの不変条件4件に回帰テストを付ける (#197)"
         },
         {
-          "commit": "1d2d00d",
+          "commit": "1d2d00dd",
           "date": "2026-08-13",
           "subject": "盆助の階層型仕様書（L0 / L1×7 / L2×2）と自動更新の仕組み (#191)"
         }
@@ -1814,6 +1828,15 @@
         "tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history",
         "tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_restores_state_when_report_replace_fails",
         "tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_removes_new_files_when_report_replace_fails"
+      ],
+      "has_test": true
+    },
+    "INV-COL-012": {
+      "spec": "L1-collection",
+      "title": "RSSレーンを独立部品で扱い、結果と保存の契約を保つ",
+      "tests": [
+        "tests/test_collect_voices.py",
+        "tests/test_collect_outcomes_main.py"
       ],
       "has_test": true
     },
@@ -2599,6 +2622,15 @@
       ],
       "has_test": true
     },
+    "INV-YTB-008": {
+      "spec": "L1-youtube",
+      "title": "動画URLからのID抽出は全入口で同じ規則を使う",
+      "tests": [
+        "tests/test_build_youtube_active_video_review.py",
+        "tests/test_youtube_description_backfill.py"
+      ],
+      "has_test": true
+    },
     "INV-VEN-001": {
       "spec": "L1-venues",
       "title": "レビュー済みの新規会場は開催回と系列へ一貫して結ぶ",
@@ -2760,6 +2792,7 @@
     "collect.py": "L1-collection",
     "collect_venue_sites.py": "L1-collection",
     "collection_support/proactive_search.py": "L1-collection",
+    "collection_support/rss_voices.py": "L1-collection",
     "collection_support/voices_s3_artifact.py": "L1-collection",
     "collection_support/x_author_profile.py": "L1-collection",
     "collection_support/x_budget_guard.py": "L1-collection",
@@ -3043,6 +3076,7 @@
     "youtube_channels/backfill_youtube_descriptions.py": "L1-youtube",
     "youtube_channels/discover_youtube_channels.py": "L1-youtube",
     "youtube_channels/extract_youtube_setlists.py": "L1-youtube",
+    "youtube_channels/video_urls.py": "L1-youtube",
     "apply_ph2_shinagawa_second_venue_review.py": "L1-venues",
     "apply_retrospective_ready_venue_events.py": "L1-venues",
     "apply_reviewed_missing_occurrence_venues.py": "L1-venues",
@@ -3080,8 +3114,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 369,
-    "owned": 280,
+    "tracked_source_files": 371,
+    "owned": 282,
     "unowned": 89,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
