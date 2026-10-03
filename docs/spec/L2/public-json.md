@@ -18,7 +18,7 @@ verified_by:
   - tests/test_classify_public_events_diff.py
   - tests/test_public_json_field_sparsity.py
   - tests/test_apply_public_date_predictions.py
-updated_for: 01b1616
+updated_for: 807affe
 ---
 
 # 公開JSONのフィールド契約
@@ -83,6 +83,23 @@ updated_for: 01b1616
 
 **その他**
 `songs`, `source_urls`
+
+## 時刻の表示根拠（2026-10-03）
+
+`date` が今年でも、`detail` には過去開催回の時刻が残り得る。旧 `time_text` や
+出典リストの存在だけでは、当年の時刻を公式確認済みとして表示できない。
+
+siteの正式契約は [イベント時刻の根拠](https://github.com/uryoutamomo/bon-odori-site/blob/main/docs/spec/L2/event-time-evidence.md)。
+任意の `time_evidence` は `text`、`event_date`、`event_date_end`、`source_url`、
+`source_kind: official`、`scope: event|bon_odori` を持ち、イベント本体の開催日・終了日と
+同じイベントのofficial URLへ完全一致しなければ表示根拠にならない。現行RDB/exporterは
+この構造化根拠を生成していないため、欠損を推測で埋めない。
+
+siteが当年日付と結び付く詳細文から導出する `time_reference` は、常に参考・未確認とする。
+イベント全体の時間と盆踊りだけの時間、最終日などの例外を混同しない。
+過去年・別開催回の時刻は詳細の履歴として保持するが、当年の時間欄には使わない。
+実装はsiteの `scripts/build_public_snapshot.py::sanitize_event`、`app.js::timeEvidence` と
+静的イベントページ。回帰検査はsiteの `tests/test_event_time_evidence.py`。
 
 ## サイトが参照していないフィールド（16種類）
 
