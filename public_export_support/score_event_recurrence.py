@@ -11,6 +11,7 @@ from datetime import date
 from pathlib import Path
 
 from event_model.year_context import EventYearContext
+from public_export_support.occurrence_identity import occurrence_id
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -87,6 +88,11 @@ def event_text(event: dict) -> str:
 
 
 def event_key(event: dict) -> str:
+    identifier = occurrence_id(event, include_internal=True)
+    if identifier:
+        return f"occurrence:{identifier}"
+    # The recurrence report historically distinguished legacy rows by date.
+    # Keep that contract until they have a stable occurrence identity.
     return "|".join(str(event.get(key) or "") for key in ["name", "venue", "date"])
 
 

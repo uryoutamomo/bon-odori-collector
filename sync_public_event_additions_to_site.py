@@ -15,6 +15,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from public_export_support.occurrence_identity import identity_key, index_events, paired_indexes
+
 
 ROOT = Path(__file__).resolve().parent
 COLLECTOR_EVENTS = ROOT / "data" / "public" / "events_public.json"
@@ -54,10 +56,13 @@ def git_has_worktree_diff(repo: Path, path: Path) -> bool:
 
 
 def event_key(event: dict[str, Any]) -> str:
-    return f"{event.get('name') or ''}\u241f{event.get('venue') or ''}"
+    return identity_key(event)
 
 
-def selected_collector_events(events: list[dict[str, Any]], names: list[str]) -> tuple[list[dict[str, Any]], list[str], list[str]]:
+def selected_collector_events(
+    events: list[dict[str, Any]], names: list[str], occurrence_ids: list[str] | None = None
+) -> tuple[list[dict[str, Any]], list[str], list[str]]:
+    by_key = index_events(events)
     selected: list[dict[str, Any]] = []
     missing: list[str] = []
     ambiguous: list[str] = []
@@ -69,12 +74,26 @@ def selected_collector_events(events: list[dict[str, Any]], names: list[str]) ->
             ambiguous.append(name)
         else:
             selected.append(matches[0])
+    for occurrence_id in occurrence_ids or []:
+        event = by_key.get(f"occurrence:{occurrence_id}")
+        if event is None:
+            missing.append(f"occurrence:{occurrence_id}")
+        else:
+            selected.append(event)
+    selected_keys = [event_key(event) for event in selected]
+    if len(selected_keys) != len(set(selected_keys)):
+        raise ValueError("the same event was selected more than once")
     return selected, missing, ambiguous
 
 
 def build_site_events(base_events: list[dict[str, Any]], additions: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    addition_names = {event["name"] for event in additions}
-    base_without_selected_names = [event for event in base_events if event.get("name") not in addition_names]
+    base_by_key, additions_by_key = paired_indexes(base_events, additions)
+    replaced = {
+        id(base_by_key[key])
+        for key in additions_by_key
+        if key in base_by_key
+    }
+    base_without_selected_names = [event for event in base_events if id(event) not in replaced]
     return [*base_without_selected_names, *additions]
 
 
@@ -118,14 +137,16 @@ def render_markdown(result: dict[str, Any]) -> str:
 def run(args: argparse.Namespace) -> dict[str, Any]:
     if args.write and args.confirm != CONFIRM:
         raise ValueError(f"--write requires --confirm {CONFIRM!r}")
-    if not args.event_name:
-        raise ValueError("at least one --event-name is required")
+    if not args.event_name and not args.occurrence_id:
+        raise ValueError("at least one --event-name or --occurrence-id is required")
 
     collector_events = load_json(args.collector_events, [])
     if not isinstance(collector_events, list):
         raise ValueError(f"{args.collector_events} is not a JSON array")
     site_head_events = git_show_json(args.site_repo, str(args.site_events_rel))
-    additions, missing, ambiguous = selected_collector_events(collector_events, args.event_name)
+    additions, missing, ambiguous = selected_collector_events(
+        collector_events, args.event_name, args.occurrence_id
+    )
     proposed_events = build_site_events(site_head_events, additions)
     site_events_path = args.site_repo / args.site_events_rel
     local_diff_before = git_has_worktree_diff(args.site_repo, args.site_events_rel)
@@ -158,6 +179,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             "site_local_data_diff_before_sync": local_diff_before,
         },
         "requested_event_names": args.event_name,
+        "requested_occurrence_ids": args.occurrence_id,
         "missing_event_names": missing,
         "ambiguous_event_names": ambiguous,
         "selected_event_keys": [event_key(event) for event in additions],
@@ -174,6 +196,7 @@ def main() -> int:
     parser.add_argument("--site-repo", type=Path, default=SITE_REPO)
     parser.add_argument("--site-events-rel", type=Path, default=SITE_EVENTS_REL)
     parser.add_argument("--event-name", action="append", default=[])
+    parser.add_argument("--occurrence-id", action="append", default=[])
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
     parser.add_argument("--write", action="store_true")

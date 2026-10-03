@@ -8,6 +8,11 @@ owns:
   - public_export_support/**
   - scripts/compare_public_export_postprocessors.py
   - scripts/compare_public_projection_revisions.py
+  - scripts/verify_occurrence_identity_migration.py
+  - sync_public_event_detail_source_to_site.py
+  - sync_public_event_source_urls_to_site.py
+  - sync_public_event_songs_to_site.py
+  - sync_public_event_additions_to_site.py
   - docs/public-json-rdb-projection-migration-plan.md
   - docs/r2-public-projection-verification-20260909.md
   - guard_site_public_event_additions.py
@@ -27,6 +32,8 @@ invariants:
   - INV-PUB-010
   - INV-PUB-011
   - INV-PUB-012
+  - INV-PUB-013
+  - INV-PUB-014
 verified_by:
   - tests/test_export_public_events.py
   - tests/test_guard_public_events_sync.py
@@ -39,7 +46,10 @@ verified_by:
   - tests/test_compare_public_export_postprocessors.py
   - tests/test_compare_public_projection_revisions.py
   - tests/test_public_projection_purity.py
-updated_for: 8424f07
+  - tests/test_occurrence_identity.py
+  - tests/test_verify_occurrence_identity_migration.py
+  - tests/test_public_event_sync_occurrence_identity.py
+updated_for: 3be992d7
 ---
 
 # 公開サブシステム
@@ -90,6 +100,8 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 ## 不変条件
 
 ### INV-PUB-001 公開イベントの同一性は「名前 + 会場」で決まる
+
+**新しい同一性の判定としては廃止（2026-10-03）。** 以下は旧契約の記録。v1承認の一意なlegacy aliasとしてのみ残す。現在はINV-PUB-013/014を使う。
 
 - **内容**: 公開JSON上のイベントの同一性は `f"{name}||{venue}"` で判定される（`public_json_postprocessors/classify_public_events_diff.py` の `event_key()`）。
   したがって**イベント名か会場名を変えると、機械には「古いイベントが消えて、別の新しいイベントが増えた」と見える。**
@@ -293,6 +305,22 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **守っているコード**: `export_public_events.py` の3関数、`public_json_postprocessors/guard_public_events_sync.py::build`。
 - **守っているテスト**: `tests/test_public_projection_purity.py`、`tests/test_guard_public_events_sync.py`。
 
+### INV-PUB-013 公開・予測・同期を開催回IDで結び、同名別開催回を上書きしない
+
+- **内容**: RDB公開投影は全行に`occurrence_id`（ASCII英数字/underscore/hyphen 1〜128文字）と実開催回の`event_year`（1〜9999、非bool int）を持ち、IDを重複させない。年は対象年から推測せずRDBの開催回年を使う。recurrenceと日付予測も公開前の内部IDを優先し、明示予測IDが見つからない場合に名前へfallbackしない。名前・会場だけの旧入力は一意な場合のみ対応できる。
+- **なぜ**: 同名・同会場は複数年や年内複数回で再利用され、dictのkeyにすると一行を失う。
+- **破れたときの症状**: 別年の行が消える、別開催回に日程予測・曲目・出典が付く。
+- **守っているコード**: `public_export_support/occurrence_identity.py`、exporter、recurrence/date_predictions、差分classifier/guard、直接site同期writer。
+- **守っているテスト**: `tests/test_occurrence_identity.py::test_same_name_multiple_years_and_occurrences_remain_distinct`、`tests/test_public_projection_purity.py`、`tests/test_public_event_sync_occurrence_identity.py`。
+
+### INV-PUB-014 ID移行で既存承認を広げず、旧公開項目を変更しない
+
+- **内容**: stable IDと旧name/venueは両側で一意なaliasだけ橋渡しし、既存の異なるID同士や既存IDを上書きする橋渡しを拒否する。v1承認のhash互換は追加した`occurrence_id`と`event_year`だけを除外し、それ以外の型・未知field・欠落/nullを保持する。IDを持つ新承認はIDと全payload hashを固定する。旧台帳は削除・書き換えず、曖昧な旧承認はblockする。終了・期限切れ・曲だけの例外の適用範囲も広げない。
+- **なぜ**: ID追加を理由に旧hash検査全体を緩めると、未レビューの日程や出典変更まで流れる。
+- **破れたときの症状**: 別年への承認再利用、同名の行消失、ID追加と一緒に内容が勝手に変わる。
+- **守っているコード**: `guard_public_events_sync.py`、`paired_indexes()`、`scripts/verify_occurrence_identity_migration.py`。
+- **守っているテスト**: `tests/test_guard_public_events_sync.py`、`tests/test_occurrence_identity.py::test_legacy_bridge_never_overwrites_an_existing_identity_on_either_side`、`tests/test_verify_occurrence_identity_migration.py::test_migration_refuses_unrelated_change_and_wrong_binding`。
+
 ## 主要な流れ
 
 1. **RDBから素の公開イベントを組み立てる** — `export_public_events.py`。`--target-year` と `--today` が必須。
@@ -330,14 +358,13 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 |---|---|
 | 公開件数が急に減った・増えた | `data/public_events_sync_guard.md` の `failures` |
 | 終わった行事が「開催予定」のまま | 日次が止まっていないか。次に開催回の状態遷移 |
-| イベントが二重に出ている | INV-PUB-001。名前か会場を変えていないか |
+| 別開催回が消える・混ざる | INV-PUB-013。IDが欠けたか、legacy aliasを曖昧に解決していないか |
 | RDBを直したのに公開が変わらない | 後処理のどれかが上書きしている。または INV-PUB-006 で止まっている |
 | 実行するたび結果が違う | INV-PUB-005。`--today` を渡しているか |
 
 ## 未解決・注意点
 
-- **公開JSONのフィールド契約がどこにも書かれていない。** `bon-odori-site` との間の暗黙の合意になっている。L2として切り出したい。
-- **`event_key` が名前依存**（INV-PUB-001）。安定IDへの移行は設計上の宿題として残っている。
+- 公開JSONのフィールド契約は[L2](../L2/public-json.md)に置く。名前依存の旧identityはINV-PUB-013/014へ移行し、v1承認の一意なaliasだけ残す。
 - **公開JSONの `display_name` が薄く、同名イベントが区別なく並ぶ**問題が未解決。
 - ガード出力の `data/*.json` は成果物としてコミットされるため、差分レビュー時にノイズになりやすい。
 

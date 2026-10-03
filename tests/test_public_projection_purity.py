@@ -7,7 +7,11 @@ from unittest.mock import patch
 
 import pytest
 
-from export_public_events import project_public_events, write_public_projection
+from export_public_events import (
+    project_public_events,
+    strip_public_internal_event_fields,
+    write_public_projection,
+)
 from public_export_support.projection_inputs import PublicProjectionInputs, fixed_date_rules_from_payload
 
 
@@ -29,7 +33,13 @@ def inputs():
 
 
 def test_projection_performs_no_io_and_preserves_all_inputs():
-    rows = [event(), event(name="恒例夏祭り", date="2025-08-15", date_end="2025-08-16")]
+    rows = [
+        event(),
+        event(
+            _occurrence_id="occ_2", name="恒例夏祭り",
+            date="2025-08-15", date_end="2025-08-16",
+        ),
+    ]
     values = inputs()
     before = copy.deepcopy((rows, values))
     with ExitStack() as stack:
@@ -43,6 +53,36 @@ def test_projection_performs_no_io_and_preserves_all_inputs():
     assert (rows, values) == before
     result["public_events"][0]["songs"][0]["name"] = "changed"
     assert (rows, values) == before
+
+
+def test_rdb_identity_is_public_metadata_and_internal_identity_is_removed():
+    projected = strip_public_internal_event_fields([event(_source="master_rdb")])[0]
+    assert projected["occurrence_id"] == "occ_1"
+    assert projected["event_year"] == 2026
+    assert "_occurrence_id" not in projected
+    assert "_event_year" not in projected
+
+
+@pytest.mark.parametrize("changes", [
+    {"_occurrence_id": ""},
+    {"_event_year": "2026"},
+])
+def test_rdb_identity_rejects_missing_or_invalid_metadata(changes):
+    with pytest.raises(ValueError):
+        strip_public_internal_event_fields([event(_source="master_rdb", **changes)])
+
+
+def test_rdb_identity_rejects_duplicate_occurrence_ids():
+    with pytest.raises(ValueError, match="duplicate event identity"):
+        strip_public_internal_event_fields([
+            event(_source="master_rdb"),
+            event(_source="master_rdb", name="別イベント"),
+        ])
+
+
+def test_all_identified_public_rows_reject_duplicate_occurrence_ids():
+    with pytest.raises(ValueError, match="duplicate event identity"):
+        strip_public_internal_event_fields([event(), event(name="別イベント")])
 
 
 @pytest.mark.parametrize("today", [None, "", "not-a-date", "2026-02-30"])
@@ -80,6 +120,29 @@ def test_projection_consumes_explicit_prediction_and_override_without_aliasing()
     projected["date_prediction"]["evidence_years"].append(1900)
     result["prediction_report"]["applied"][0]["date_prediction"]["evidence_years"].append(1901)
     assert values == before
+
+
+def test_projection_applies_explicit_prediction_to_internal_occurrence_identity():
+    values = PublicProjectionInputs(
+        prediction_payload={"predictions": [{
+            "event_name": "町会盆踊り", "venue": "中央公園", "target_occurrence_id": "occ_1",
+            "target_year": 2026, "actual_observations": [],
+            "prediction": {
+                "predicted_date_start": "2026-08-15", "predicted_date_end": "2026-08-16",
+                "predicted_weekday_start": "土", "predicted_weekday_end": "日",
+                "confidence": "high", "score": 0.8, "rule_type": "fixed",
+                "basis": "主催者ルール", "evidence_years": [2024, 2025], "evidence_count": 2,
+            },
+        }]},
+        overrides={}, fixed_date_rules={},
+    )
+    result = project_public_events(
+        [event(date="2025-08-15", date_end="2025-08-16")],
+        target_year=2026, today="2026-08-01", inputs=values,
+    )
+    assert result["prediction_report"]["applied_count"] == 1
+    assert result["prediction_report"]["applied"][0]["occurrence_id"] == "occ_1"
+    assert result["public_events"][0]["date_prediction"]["date"] == "2026-08-15"
 
 
 @pytest.mark.parametrize("today,category", [

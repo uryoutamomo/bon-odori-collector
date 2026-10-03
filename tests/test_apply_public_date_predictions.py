@@ -128,6 +128,40 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
         self.assertNotIn("date_prediction", result["events"][0])
         self.assertEqual(result["events"][0]["date_certainty_tier"], "confirmed")
 
+    def test_explicit_occurrence_id_selects_only_its_matching_event(self):
+        events = [
+            {"occurrence_id": "occ_first", "name": "同名盆踊り", "venue": "同じ会場", "date": "2025-08-01"},
+            {"occurrence_id": "occ_second", "name": "同名盆踊り", "venue": "同じ会場", "date": "2025-08-02"},
+        ]
+        prediction = prediction_row("同名盆踊り", "同じ会場")
+        prediction["target_occurrence_id"] = "occ_second"
+        result = apply_predictions(events, {"predictions": [prediction]})
+        self.assertEqual(result["report"]["applied_count"], 1)
+        self.assertNotIn("date_prediction", result["events"][0])
+        self.assertEqual(result["events"][1]["date_prediction"]["date"], "2026-07-31")
+        self.assertEqual(result["report"]["applied"][0]["resolution"], "target_occurrence_id")
+
+    def test_unknown_explicit_occurrence_id_does_not_fall_back_to_name(self):
+        event = {"occurrence_id": "occ_actual", "name": "丸の内de盆踊り", "venue": "行幸通り", "date": "2025-07-25"}
+        prediction = prediction_row()
+        prediction["target_occurrence_id"] = "occ_missing"
+        result = apply_predictions([event], {"predictions": [prediction]})
+        self.assertEqual(result["report"]["unmatched_count"], 1)
+        self.assertEqual(result["report"]["unmatched"][0]["reason"], "target_occurrence_id_not_found")
+        self.assertNotIn("date_prediction", result["events"][0])
+
+    def test_ambiguous_legacy_name_and_venue_is_not_applied(self):
+        events = [
+            {"occurrence_id": "occ_one", "name": "同名盆踊り", "venue": "同じ会場", "date": "2025-08-01"},
+            {"occurrence_id": "occ_two", "name": "同名盆踊り", "venue": "同じ会場", "date": "2025-08-02"},
+        ]
+        result = apply_predictions(events, {"predictions": [prediction_row("同名盆踊り", "同じ会場")]})
+        self.assertEqual(result["report"]["applied_count"], 0)
+        self.assertEqual(result["report"]["skipped_count"], 1)
+        self.assertEqual(result["report"]["skipped"][0]["reason"], "ambiguous_legacy_identity")
+        self.assertNotIn("date_prediction", result["events"][0])
+        self.assertNotIn("date_prediction", result["events"][1])
+
 
 if __name__ == "__main__":
     unittest.main()

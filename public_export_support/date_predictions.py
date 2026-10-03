@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from event_model.year_context import normalize_target_year
+from public_export_support.occurrence_identity import legacy_event_key, occurrence_id
 
 
 DATA = Path("data")
@@ -96,21 +97,48 @@ def attach_public_prediction_fields(event, public):
 
 
 def apply_predictions(events, predictions):
-    by_key = {
-        event_key(row.get("name"), row.get("venue")): row
-        for row in events
-    }
+    by_occurrence_id = {}
+    by_legacy_key = {}
+    for event in events:
+        identifier = occurrence_id(event, include_internal=True)
+        if identifier:
+            if identifier in by_occurrence_id:
+                raise ValueError(f"duplicate occurrence_id: {identifier}")
+            by_occurrence_id[identifier] = event
+        by_legacy_key.setdefault(legacy_event_key(event), []).append(event)
     applied = []
     skipped = []
     unmatched = []
     for row in predictions.get("predictions") or []:
-        key = event_key(row.get("event_name"), row.get("venue"))
-        event = by_key.get(key)
+        target_occurrence_id = row.get("target_occurrence_id")
+        if target_occurrence_id not in (None, ""):
+            identifier = occurrence_id({"occurrence_id": target_occurrence_id})
+            event = by_occurrence_id.get(identifier)
+            resolution = "target_occurrence_id"
+        else:
+            key = legacy_event_key({"name": row.get("event_name"), "venue": row.get("venue")})
+            candidates = by_legacy_key.get(key, [])
+            if len(candidates) > 1:
+                skipped.append({
+                    "event_name": row.get("event_name"),
+                    "venue": row.get("venue"),
+                    "reason": "ambiguous_legacy_identity",
+                    "candidate_count": len(candidates),
+                    "date_prediction": public_prediction(row),
+                })
+                continue
+            event = candidates[0] if candidates else None
+            resolution = "legacy_name_venue"
         public = public_prediction(row)
         if not event:
             unmatched.append({
                 "event_name": row.get("event_name"),
                 "venue": row.get("venue"),
+                "target_occurrence_id": target_occurrence_id or None,
+                "reason": (
+                    "target_occurrence_id_not_found"
+                    if target_occurrence_id not in (None, "") else "legacy_name_venue_not_found"
+                ),
                 "date_prediction": public,
             })
             continue
@@ -145,6 +173,8 @@ def apply_predictions(events, predictions):
         applied.append({
             "event_name": event.get("name"),
             "venue": event.get("venue"),
+            "occurrence_id": occurrence_id(event, include_internal=True),
+            "resolution": resolution,
             "before": before,
             "after": {
                 "date": event.get("date"),

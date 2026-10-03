@@ -16,6 +16,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from public_export_support.occurrence_identity import identity_key, legacy_event_key, paired_indexes
+
 
 ROOT = Path(__file__).resolve().parent
 COLLECTOR_EVENTS = ROOT / "data" / "public" / "events_public.json"
@@ -38,7 +40,34 @@ def write_json(path: Path, payload: Any) -> None:
 
 
 def event_key(event: dict[str, Any]) -> str:
-    return f"{event.get('name') or ''}␟{event.get('venue') or ''}"
+    return identity_key(event)
+
+
+def resolve_allowed_event_keys(
+    allowed: set[str] | None,
+    collector_events: list[dict[str, Any]],
+    site_events: list[dict[str, Any]],
+    collector_by_key: dict[str, dict[str, Any]],
+    site_by_key: dict[str, dict[str, Any]],
+) -> set[str] | None:
+    if allowed is None:
+        return None
+    all_keys = set(collector_by_key) | set(site_by_key)
+    alias_keys: dict[str, set[str]] = {}
+    for indexed in (collector_by_key, site_by_key):
+        for key, event in indexed.items():
+            alias_keys.setdefault(legacy_event_key(event), set()).add(key)
+    resolved = set()
+    for raw in allowed:
+        if raw in all_keys:
+            resolved.add(raw)
+            continue
+        alias = raw.replace("␟", "||")
+        candidates = alias_keys.get(alias, set())
+        if len(candidates) != 1:
+            raise ValueError(f"ambiguous or unknown legacy event key: {raw}")
+        resolved.update(candidates)
+    return resolved
 
 
 def build_site_events(
@@ -46,12 +75,16 @@ def build_site_events(
     site_events: list[dict[str, Any]],
     allowed_event_keys: set[str] | None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    collector_by_key = {event_key(event): event for event in collector_events}
+    collector_by_key, site_by_key = paired_indexes(collector_events, site_events)
+    allowed_event_keys = resolve_allowed_event_keys(
+        allowed_event_keys, collector_events, site_events, collector_by_key, site_by_key
+    )
+    site_keys_by_object = {id(event): key for key, event in site_by_key.items()}
     updated_events: list[dict[str, Any]] = []
     updated_rows: list[dict[str, Any]] = []
 
     for site_event in site_events:
-        key = event_key(site_event)
+        key = site_keys_by_object[id(site_event)]
         collector_event = collector_by_key.get(key)
         if not collector_event or (allowed_event_keys is not None and key not in allowed_event_keys):
             updated_events.append(site_event)

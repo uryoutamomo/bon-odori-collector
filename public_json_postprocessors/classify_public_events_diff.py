@@ -11,6 +11,10 @@ from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+from public_export_support.occurrence_identity import (
+    identity_key, index_events, legacy_event_key, occurrence_id, event_year, paired_indexes,
+)
+
 
 DATA = Path("data")
 COLLECTOR_EVENTS = DATA / "public" / "events_public.json"
@@ -65,6 +69,7 @@ SOURCE_FIELDS = {
 POSTPROCESSOR_RULE_FIELDS = {
     "fixed_date_rule",
 }
+IDENTITY_FIELDS = {"name", "venue", "event_year", "occurrence_id"}
 
 HIGH_RISK_FIELDS = (
     HISTORICAL_FIELDS
@@ -75,6 +80,7 @@ HIGH_RISK_FIELDS = (
     | DETAIL_FIELDS
     | SOURCE_FIELDS
     | POSTPROCESSOR_RULE_FIELDS
+    | IDENTITY_FIELDS
 )
 
 
@@ -92,12 +98,8 @@ def write_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def event_key(row):
-    return f"{row.get('name') or ''}||{row.get('venue') or ''}"
-
-
-def index_events(rows):
-    return {event_key(row): row for row in rows}
+# v1 approval manifests bind this legacy display alias.  Comparison uses identity_key.
+event_key = legacy_event_key
 
 
 def field_family(field):
@@ -117,6 +119,8 @@ def field_family(field):
         return "source"
     if field in POSTPROCESSOR_RULE_FIELDS:
         return "fixed_date_rule"
+    if field in IDENTITY_FIELDS:
+        return "identity"
     return "other"
 
 
@@ -161,6 +165,9 @@ def recurrence_score_bucket(value):
 def classify_diff(field, collector_value, site_value):
     family = field_family(field)
     side = value_side(collector_value, site_value)
+
+    if field in IDENTITY_FIELDS:
+        return "individual_review"
 
     if field == "recurrence_reasons":
         return "low_priority_or_unclassified"
@@ -490,39 +497,40 @@ def compact_value(value):
     return value
 
 
+def _migration_metadata_only(field, collector, site):
+    """A unique ID-to-legacy bridge may omit only the two new identity fields."""
+    return (
+        field in {"occurrence_id", "event_year"}
+        and (occurrence_id(collector) is None) != (occurrence_id(site) is None)
+    )
+
+
 def build_classification(collector_path, site_path, today=None):
     collector_rows = load_json(collector_path, [])
     site_rows = load_json(site_path, [])
-    collector = index_events(collector_rows)
-    site = index_events(site_rows)
+    collector, site = paired_indexes(collector_rows, site_rows)
     common = sorted(set(collector) & set(site))
 
     records = []
     for key in common:
-        left = collector[key]
-        right = site[key]
+        left, right = collector[key], site[key]
         for field in changed_fields(left, right):
-            if field not in HIGH_RISK_FIELDS:
+            if field not in HIGH_RISK_FIELDS or _migration_metadata_only(field, left, right):
                 continue
-            family = field_family(field)
-            action = classify_diff(field, left.get(field), right.get(field))
-            records.append(
-                {
-                    "event_key": key,
-                    "event_name": left.get("name") or right.get("name") or "",
-                    "venue": left.get("venue") or right.get("venue") or "",
-                    "field": field,
-                    "family": family,
-                    "side": value_side(left.get(field), right.get(field)),
-                    "recommended_action": action,
-                    "collector_value": compact_value(left.get(field)),
-                    "site_value": compact_value(right.get(field)),
-                }
-            )
+            records.append({
+                "event_key": event_key(left), "identity_key": key,
+                "event_name": left.get("name") or right.get("name") or "",
+                "venue": left.get("venue") or right.get("venue") or "",
+                "field": field, "family": field_family(field),
+                "side": value_side(left.get(field), right.get(field)),
+                "recommended_action": classify_diff(field, left.get(field), right.get(field)),
+                "collector_value": compact_value(left.get(field)),
+                "site_value": compact_value(right.get(field)),
+            })
 
     event_actions = defaultdict(lambda: {"fields": [], "families": set(), "actions": Counter(), "records": []})
     for record in records:
-        item = event_actions[record["event_key"]]
+        item = event_actions[record["identity_key"]]
         item["fields"].append(record["field"])
         item["families"].add(record["family"])
         item["actions"][record["recommended_action"]] += 1
@@ -530,41 +538,25 @@ def build_classification(collector_path, site_path, today=None):
 
     event_rows = []
     for key, item in event_actions.items():
-        actions = item["actions"]
-        event_action = recommended_event_action(
-            actions, item["records"], collector[key], site[key], today or date.today()
-        )
-        sample = next(record for record in records if record["event_key"] == key)
-        event_rows.append(
-            {
-                "event_key": key,
-                "event_name": sample["event_name"],
-                "venue": sample["venue"],
-                "recommended_action": event_action,
-                "families": sorted(item["families"]),
-                "field_count": len(item["fields"]),
-                "fields": sorted(item["fields"]),
-                "actions": dict(actions),
-            }
-        )
+        sample = item["records"][0]
+        event_rows.append({
+            "event_key": sample["event_key"], "identity_key": key,
+            "event_name": sample["event_name"], "venue": sample["venue"],
+            "recommended_action": recommended_event_action(item["actions"], item["records"], collector[key], site[key], today or date.today()),
+            "families": sorted(item["families"]), "field_count": len(item["fields"]),
+            "fields": sorted(item["fields"]), "actions": dict(item["actions"]),
+        })
 
-    event_rows.sort(key=lambda row: (row["recommended_action"], row["event_name"], row["venue"]))
+    event_rows.sort(key=lambda row: (row["recommended_action"], row["event_name"], row["venue"], row["identity_key"]))
     summary = {
-        "collector_event_count": len(collector_rows),
-        "site_event_count": len(site_rows),
-        "collector_only_count": len(set(collector) - set(site)),
-        "site_only_count": len(set(site) - set(collector)),
-        "high_risk_diff_record_count": len(records),
-        "high_risk_event_count": len(event_rows),
+        "collector_event_count": len(collector_rows), "site_event_count": len(site_rows),
+        "collector_only_count": len(set(collector) - set(site)), "site_only_count": len(set(site) - set(collector)),
+        "high_risk_diff_record_count": len(records), "high_risk_event_count": len(event_rows),
         "records_by_family": dict(Counter(record["family"] for record in records)),
         "records_by_action": dict(Counter(record["recommended_action"] for record in records)),
         "events_by_action": dict(Counter(row["recommended_action"] for row in event_rows)),
     }
-    return {
-        "summary": summary,
-        "event_rows": event_rows,
-        "records": records,
-    }
+    return {"summary": summary, "event_rows": event_rows, "records": records}
 
 
 def build(args):
@@ -681,9 +673,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--collector-events", default=str(COLLECTOR_EVENTS))
     parser.add_argument("--site-events", default=str(SITE_EVENTS))
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
     args = parser.parse_args()
+    try:
+        source_rows = load_json(args.collector_events, [])
+        index_events(source_rows, require_identity=True)
+    except (TypeError, ValueError) as error:
+        parser.error(f"invalid production occurrence identity: {error}")
     data = build(args)
     print(
         "public events diff classification: "
