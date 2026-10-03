@@ -5,10 +5,27 @@ import unittest
 from unittest.mock import patch
 
 import collect
+from collection_support import rss_voices
 from collect import VOICE_TEXT_MAX_CHARS, _load_active_youtube_registry_feeds, _parse_voice_entry, _voice_feeds
 
 
 class CollectVoicesTest(unittest.TestCase):
+    def test_facade_and_core_match_fixed_rss_input(self):
+        feeds = [{"name": "fixture", "rss_url": "https://fixture.test/rss", "source": "youtube", "account": "a"}]
+        entry = {"title": "new", "link": "https://youtube.test/new", "summary": "text"}
+        parsed = type("Feed", (), {"bozo": False, "entries": [entry]})()
+        parser = type("Parser", (), {"parse": staticmethod(lambda _url: parsed)})()
+        expected = rss_voices.collect_voices_outcome(
+            {"https://old.test"}, has_feedparser=True, feeds_loader=lambda: feeds, parser=parser,
+        )
+        with (
+            patch.object(collect, "_HAS_FEEDPARSER", True),
+            patch.object(collect, "_voice_feeds", return_value=feeds),
+            patch.object(collect, "feedparser", parser, create=True),
+        ):
+            actual = collect.collect_voices_outcome({"https://old.test"})
+        self.assertEqual(actual, expected)
+
     def test_partial_rss_failure_does_not_advance_seen_or_return_partial_items(self):
         feeds = [
             {"name": "good", "rss_url": "https://good.test", "source": "youtube", "account": "a"},

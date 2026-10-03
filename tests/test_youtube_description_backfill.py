@@ -18,6 +18,24 @@ class YoutubeDescriptionBackfillTest(unittest.TestCase):
         self.assertEqual(len(plan), 1)
         self.assertEqual(plan[0]["video_id"], "abc123")
 
+    def test_plan_uses_shared_parser_for_shorts_url(self):
+        plan = plan_backfill([
+            {"source": "youtube", "url": "https://m.youtube.com/shorts/u1?feature=share", "text": "short"},
+            {"source": "youtube", "url": "https://www.youtube.com/channel/UCabc", "text": "channel"},
+        ])
+        self.assertEqual([(row["video_id"], row["url"]) for row in plan], [
+            ("u1", "https://m.youtube.com/shorts/u1?feature=share"),
+        ])
+
+    def test_plan_rejects_embedded_short_url_text_but_keeps_short_url_fragment(self):
+        plan = plan_backfill([
+            {"source": "youtube", "url": "https://evil.example/path/youtu.be/abc123", "text": "foreign"},
+            {"source": "youtube", "url": "https://youtu.be/u1#fragment", "text": "short"},
+        ])
+        self.assertEqual([(row["video_id"], row["url"]) for row in plan], [
+            ("u1", "https://www.youtube.com/watch?v=u1"),
+        ])
+
     def test_applies_description_without_touching_non_youtube(self):
         voices = [
             {"source": "youtube", "url": "https://youtu.be/abc123", "text": "short"},

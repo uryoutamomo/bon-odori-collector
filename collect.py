@@ -3,15 +3,12 @@ import re
 import sys
 import json
 import hashlib
-import html
 import math
 import sqlite3
 import urllib.request
 import urllib.parse
 import urllib.error
 import xml.etree.ElementTree as ET
-import tempfile
-from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -45,6 +42,7 @@ from collection_support.x_source_registry import (
 from collection_support.x_author_profile import PROBE as X_PROFILE_PROBE, author_profile_description
 from collection_support.x_raw_archive import RawXArchiveError, capture_raw_x_posts
 from collection_support.voices_s3_artifact import require_writable_local_voices
+from collection_support import rss_voices
 from collection_support import x_cost_ledger
 from collection_support.x_collection_health import (
     check_health_report,
@@ -426,34 +424,20 @@ VOICE_FEEDS = [
 ]
 YOUTUBE_CHANNEL_REGISTRY_FILE = "data/youtube_channel_registry.json"
 
-# voices スキーマ:
-# { source, account, name, title, text, url, date (ISO8601), tags, media_urls? }
-VOICE_TEXT_MAX_CHARS = 3000
-
-
-@dataclass
-class VoiceCollectionResult:
-    """One RSS lane result.  Failed lanes never contribute partial rows."""
-
-    state: str
-    items: list = field(default_factory=list)
-    seen_urls: list = field(default_factory=list)
-    failures: list = field(default_factory=list)
-
-
-class VoiceCollectionError(RuntimeError):
-    pass
-
+# voices スキーマは collection_support.rss_voices が所有する。既存の collect.py
+# import / monkeypatch 点を保つため、ここでは依存を渡す薄い facade だけを公開する。
+VOICE_TEXT_MAX_CHARS = rss_voices.VOICE_TEXT_MAX_CHARS
+VoiceCollectionResult = rss_voices.VoiceCollectionResult
+VoiceCollectionError = rss_voices.VoiceCollectionError
 
 def _read_json_list(path):
-    if not os.path.exists(path):
-        return []
-    with open(path, "r", encoding="utf-8") as handle:
-        value = json.load(handle)
-    if not isinstance(value, list):
-        raise ValueError(f"{path} must contain a JSON array")
-    return value
+    return rss_voices.read_json_list(path)
 
+def _atomic_write_json(path, value):
+    return rss_voices._atomic_write_json(path, value)
+
+def _commit_voice_snapshot(voices_file, voices, seen_file, seen):
+    return rss_voices.commit_voice_snapshot(voices_file, voices, seen_file, seen)
 
 def _write_collection_outcome(outcome):
     """Make degraded collection visible without adding a workflow artifact."""
@@ -472,45 +456,6 @@ def _write_collection_outcome(outcome):
         print(f"[voices] outcome summary保存エラー: {exc}")
 
 
-def _atomic_write_json(path, value):
-    path = Path(path)
-    with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as handle:
-        json.dump(value, handle, ensure_ascii=False, indent=2)
-        handle.write("\n")
-        temp_name = handle.name
-    return Path(temp_name)
-
-
-def _commit_voice_snapshot(voices_file, voices, seen_file, seen):
-    """Commit both state files, restoring the first if the second replace fails."""
-    voices_file, seen_file = Path(voices_file), Path(seen_file)
-    old_voices = voices_file.read_bytes() if voices_file.exists() else None
-    old_seen = seen_file.read_bytes() if seen_file.exists() else None
-    voices_temp = _atomic_write_json(voices_file, voices)
-    seen_temp = _atomic_write_json(seen_file, seen)
-    try:
-        voices_temp.replace(voices_file)
-        seen_temp.replace(seen_file)
-    except Exception:
-        if old_voices is not None:
-            restore = voices_file.with_name(voices_file.name + ".restore")
-            restore.write_bytes(old_voices)
-            restore.replace(voices_file)
-        elif voices_file.exists():
-            voices_file.unlink()
-        if old_seen is not None:
-            restore = seen_file.with_name(seen_file.name + ".restore")
-            restore.write_bytes(old_seen)
-            restore.replace(seen_file)
-        elif seen_file.exists():
-            seen_file.unlink()
-        raise
-    finally:
-        for path in (voices_temp, seen_temp):
-            if path.exists():
-                path.unlink()
-
-
 def _x_lane_state(health, lane_name, items):
     """Use collector health, rather than an empty return, as lane truth."""
     lane = (health.get("lanes") or {}).get(lane_name)
@@ -526,172 +471,27 @@ def _x_lane_state(health, lane_name, items):
 
 
 def _load_active_youtube_registry_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
-    """Load active YouTube channel RSS feeds from the registry if it exists."""
-    if not os.path.exists(path):
-        return []
-    try:
-        with open(path, encoding="utf-8") as f:
-            registry = json.load(f)
-    except Exception as e:
-        raise VoiceCollectionError(f"youtube_registry:{type(e).__name__}") from e
-
-    feeds = []
-    for channel in registry.get("channels") or []:
-        if channel.get("status") != "active" or not channel.get("collection_enabled"):
-            continue
-        channel_id = channel.get("channel_id") or ""
-        rss_url = channel.get("rss_url") or (
-            f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}" if channel_id else ""
-        )
-        if not rss_url:
-            continue
-        feeds.append({
-            "source": "youtube",
-            "account": channel.get("account") or channel_id,
-            "name": channel.get("channel_title") or channel_id,
-            "rss_url": rss_url,
-            "channel_id": channel_id,
-        })
-    return feeds
-
+    return rss_voices.load_active_youtube_registry_feeds(path)
 
 def _voice_feeds(path=None):
-    """Merge static feeds with active YouTube registry feeds, de-duplicated by RSS URL."""
-    path = path or YOUTUBE_CHANNEL_REGISTRY_FILE
-    feeds = []
-    seen_rss = set()
-    for feed in VOICE_FEEDS + _load_active_youtube_registry_feeds(path):
-        rss_url = feed.get("rss_url")
-        if not rss_url or rss_url in seen_rss:
-            continue
-        feeds.append(feed)
-        seen_rss.add(rss_url)
-    return feeds
-
+    return rss_voices.voice_feeds(VOICE_FEEDS, path or YOUTUBE_CHANNEL_REGISTRY_FILE)
 
 def _extract_urls(text):
-    """Extract unique http(s) URLs from raw RSS text, including HTML href values."""
-    urls = []
-    for match in re.finditer(r"https?://[^\s\"'<>]+", text or ""):
-        url = html.unescape(match.group(0)).rstrip(")、。，.,)")
-        if url and url not in urls:
-            urls.append(url)
-    return urls
+    return rss_voices.extract_urls(text)
 
 def _parse_voice_entry(entry, feed_meta):
-    """feedparser の entry を voices スキーマに変換する。"""
-    title = entry.get("title", "")
-    url = entry.get("link", "")
-
-    # 本文: summary → content → "" の順
-    text = ""
-    if "summary" in entry:
-        text = entry["summary"]
-    elif "content" in entry and entry["content"]:
-        text = entry["content"][0].get("value", "")
-    media_urls = _extract_urls(text)
-    # HTMLタグを除去し、YouTube概要欄のセットリストが欠落しない程度に保持する
-    text = html.unescape(re.sub(r"<[^>]+>", " ", text)).strip()[:VOICE_TEXT_MAX_CHARS]
-
-    # 日付
-    date_str = ""
-    if "published_parsed" in entry and entry["published_parsed"]:
-        from time import mktime
-        dt = datetime.fromtimestamp(mktime(entry["published_parsed"]), tz=timezone.utc)
-        date_str = dt.isoformat()
-    elif "updated_parsed" in entry and entry["updated_parsed"]:
-        from time import mktime
-        dt = datetime.fromtimestamp(mktime(entry["updated_parsed"]), tz=timezone.utc)
-        date_str = dt.isoformat()
-
-    tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
-
-    voice = {
-        "source": feed_meta["source"],
-        "account": feed_meta["account"],
-        "name": feed_meta["name"],
-        "title": title,
-        "text": text,
-        "url": url,
-        "date": date_str,
-        "tags": tags,
-    }
-    if media_urls:
-        voice["media_urls"] = media_urls
-    if feed_meta.get("channel_id"):
-        voice["youtube_channel_id"] = feed_meta["channel_id"]
-        voice["youtube_channel_title"] = feed_meta["name"]
-    return voice
-
+    return rss_voices.parse_voice_entry(entry, feed_meta)
 
 def collect_voices_outcome(seen_urls: set) -> VoiceCollectionResult:
-    """
-    VOICE_FEEDS とYouTubeチャンネル台帳からRSSを取得して outcome を返す。
-    feedparser不在・feed不在は ``skipped``、全取得成功で0件は ``empty``、
-    RSSまたは既存台帳の読込失敗は既読位置を保った ``failed`` とする。
-    """
-    original_seen = list(seen_urls)
-    if not _HAS_FEEDPARSER:
-        print("[voices] feedparser がインストールされていないためスキップします")
-        return VoiceCollectionResult("skipped", seen_urls=original_seen)
-
-    try:
-        feeds = _voice_feeds()
-    except VoiceCollectionError as exc:
-        print(f"[voices] YouTubeチャンネル台帳を読めません: {exc}")
-        return VoiceCollectionResult("failed", seen_urls=original_seen, failures=[str(exc)])
-    if not feeds:
-        print("[voices] RSS feed がないためスキップします")
-        return VoiceCollectionResult("skipped", seen_urls=original_seen)
-
-    new_items = []
-    new_seen = list(seen_urls)
-    failures = []
-
-    for feed_meta in feeds:
-        rss_url = feed_meta["rss_url"]
-        print(f"[voices] 取得中: {feed_meta['name']} ({rss_url})")
-        try:
-            parsed = feedparser.parse(rss_url)
-            status = getattr(parsed, "status", None)
-            if status is None and hasattr(parsed, "get"):
-                status = parsed.get("status")
-            if (status is not None and int(status) >= 400) or parsed.bozo:
-                failure = f"rss:{feed_meta['name']}:" + (f"http_{status}" if status else "bozo")
-                failures.append(failure)
-                print(f"[voices] 取得失敗: {feed_meta['name']} ({failure.rsplit(':', 1)[-1]})")
-                continue
-
-            count = 0
-            for entry in parsed.entries:
-                url = entry.get("link", "")
-                if not url or url in seen_urls or url in new_seen:
-                    continue
-                item = _parse_voice_entry(entry, feed_meta)
-                new_items.append(item)
-                new_seen.append(url)
-                count += 1
-
-            print(f"[voices] {feed_meta['name']}: {count} 件追加")
-
-        except Exception as e:
-            print(f"[voices] エラー ({feed_meta['name']}): {e}")
-            failures.append(f"rss:{feed_meta['name']}:{type(e).__name__}")
-
-    if failures:
-        # A partial RSS view must not look like a complete, empty snapshot.
-        return VoiceCollectionResult("failed", seen_urls=original_seen, failures=failures)
-    return VoiceCollectionResult(
-        "success" if new_items else "empty", items=new_items, seen_urls=new_seen
+    return rss_voices.collect_voices_outcome(
+        seen_urls,
+        has_feedparser=_HAS_FEEDPARSER,
+        feeds_loader=_voice_feeds,
+        parser=globals().get("feedparser"),
+        entry_parser=_parse_voice_entry,
     )
 
-
 def collect_voices(seen_urls: set) -> tuple[list, list]:
-    """Compatibility API for manual refresh tools.
-
-    The orchestrator uses :func:`collect_voices_outcome` so it can distinguish
-    an empty completed scan from a skipped or failed one.
-    """
     result = collect_voices_outcome(seen_urls)
     if result.state == "failed":
         raise VoiceCollectionError("; ".join(result.failures))

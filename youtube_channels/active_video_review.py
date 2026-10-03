@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from youtube_channels.extract_youtube_setlists import compact_url, parse_youtube_event_date, primary_description_text
+from youtube_channels.video_urls import video_id_from_url
 from youtube_backfill.plan_youtube_event_updates import is_out_of_scope, match_public_event
 from youtube_backfill.youtube_title_parts import split_youtube_title
 
@@ -93,19 +94,6 @@ def atomic_write_text(path, text):
         handle.write(text)
         tmp_name = handle.name
     Path(tmp_name).replace(path)
-
-
-def video_id_from_url(url):
-    parsed = urllib.parse.urlparse(str(url or ""))
-    host = parsed.hostname or ""
-    if host == "youtu.be":
-        return parsed.path.strip("/")
-    if host in {"www.youtube.com", "youtube.com", "m.youtube.com"}:
-        if parsed.path.startswith("/shorts/"):
-            return parsed.path.split("/shorts/", 1)[1].split("/", 1)[0]
-        query = urllib.parse.parse_qs(parsed.query)
-        return (query.get("v") or [""])[0]
-    return ""
 
 
 def active_channel_ids(registry):
@@ -402,7 +390,10 @@ def build_review(voices, registry, public_events, youtube_setlists, max_per_chan
         if not date_matches_public_event(detected_event_date, matched_public_event):
             matched_public_event = None
         row = {
-            "video_id": video_id_from_url(url),
+            # Keep compact_url for output/setlist matching, but validate the
+            # original URL.  compact_url recognizes embedded youtu.be text,
+            # which must not turn a foreign URL into a YouTube video ID.
+            "video_id": video_id_from_url(voice.get("url")),
             "video_url": url,
             "source_url": voice.get("url") or "",
             "title": title,
