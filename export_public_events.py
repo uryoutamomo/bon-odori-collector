@@ -19,6 +19,7 @@ import sqlite3
 import unicodedata
 import urllib.error
 import urllib.request
+from urllib.parse import urlsplit
 
 from song_processing.bon_odori_songs import extract_song_hints, is_suppressed_song
 from song_processing.song_occurrences import DEFAULT_PREDICTION_PARAMS
@@ -39,6 +40,11 @@ from public_export_support.projection_inputs import (
     PublicProjectionInputs,
     fixed_date_rules_from_payload,
     load_json as load_public_date_prediction_json,
+)
+from public_export_support.official_source_links import (
+    is_legacy_preserved_official_source_link,
+    is_reviewed_official_source_link,
+    load_reviewed_official_source_links,
 )
 from public_export_support.historical_references import apply_historical_references
 from public_export_support.season_hints import apply_season_hints
@@ -87,6 +93,9 @@ SERIES_SPLIT_REVIEW_MD = os.path.join(
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
 PUBLIC_FIXED_DATE_RULES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_fixed_date_rules.json")
+PUBLIC_OFFICIAL_SOURCE_LINKS_JSON = os.path.join(
+    os.path.dirname(__file__), "data", "public_official_source_links.json"
+)
 PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
 PUBLIC_EXCLUDED_LIFECYCLE_STATUSES = (
     "merged", "duplicate", "rejected", "superseded_by_curated"
@@ -210,8 +219,14 @@ def _is_public_source_url(url):
 
 
 def _is_notice_url(url):
-    host = _url_host(url)
-    return any(notice_host in host for notice_host in NOTICE_HOSTS)
+    # Match complete hosts (or their DNS subdomains), never arbitrary string
+    # fragments: minato-bon-odori.blogspot.com contains ``t.co`` but is a
+    # normal organizer site, not an X short URL.
+    try:
+        host = (urlsplit(url or "").hostname or "").lower().rstrip(".")
+    except ValueError:
+        return False
+    return any(host == notice_host or host.endswith(f".{notice_host}") for notice_host in NOTICE_HOSTS)
 
 
 def _source_item(key, url):
@@ -316,15 +331,21 @@ def fixed_date_rule_from_props(props):
     }
 
 
-def collapse_public_source_urls(sources):
+def collapse_public_source_urls(sources, primary_official_url=None):
     """Keep public evidence buttons compact; one official button is enough."""
-    best_official = None
+    best_official = (
+        {"label": "公式告知あり", "url": primary_official_url, "kind": "official"}
+        if primary_official_url else None
+    )
     note_counts = {}
     note_labels = {}
     note_first = {}
     for source in sources or []:
         if source.get("kind") == "official":
-            if best_official is None or _source_rank(source) > _source_rank(best_official):
+            if (
+                best_official is None
+                or (not primary_official_url and _source_rank(source) > _source_rank(best_official))
+            ):
                 best_official = source
             continue
         kind = source.get("kind") or "web"
@@ -568,9 +589,55 @@ def _public_confidence_from_rdb(date, date_status):
     return unknown_confidence()
 
 
-def _rdb_source_urls(detail, source_url, source_kind):
+def _rdb_source_urls(
+    detail, source_url, source_kind, *, reviewed_official=False, legacy_preserved_official=False,
+):
     sources = extract_public_source_urls(detail)
+    sole_anonymous_web = (
+        len(sources) == 1
+        and sources[0].get("kind") == "web"
+        and not sources[0].get("url")
+        and int(sources[0].get("count") or 1) == 1
+    )
+    typed_official = (
+        (reviewed_official or legacy_preserved_official)
+        and source_kind == "official_current_year"
+        and source_url
+        and _is_public_source_url(source_url)
+        and not _is_notice_url(source_url)
+        # A legacy list preserves a previously-public bare RDB official URL;
+        # it must not convert the old anonymous-web fallback into an official.
+        and not (legacy_preserved_official and not reviewed_official and sole_anonymous_web)
+    )
+    if typed_official:
+        # An authoritative typed RDB source may correct an older detail URL.
+        # Keep that selection stable through sanitize_public_event_details(),
+        # which intentionally collapses source rows again without RDB context.
+        # Do not reinterpret unrelated web/post/video rows as official evidence.
+        had_detail_official = any(source.get("kind") == "official" for source in sources)
+        sources = [
+            source for source in sources
+            if source.get("kind") != "official" and source.get("url") != source_url
+        ]
+        if (
+            len(sources) == 1
+            and not had_detail_official
+            and sources[0].get("kind") == "web"
+            and not sources[0].get("url")
+            and int(sources[0].get("count") or 1) == 1
+        ):
+            sources = []
+        return collapse_public_source_urls(sources, primary_official_url=source_url)
+    # Preserve the legacy aggregation for every unreviewed source. A typed
+    # field alone is not evidence that the URL is this occurrence's organizer.
     if source_url and _is_public_source_url(source_url):
+        if source_kind == "official_current_year" and _is_notice_url(source_url):
+            # The RDB field is malformed for an organizer URL, but the evidence
+            # remains visible as an anonymous social-post count. Never expose a
+            # tracking/social click target from this typed field.
+            if source_url not in URL_RE.findall(detail or ""):
+                sources.append({"label": "告知投稿あり", "url": "", "kind": "post", "count": 1})
+            return collapse_public_source_urls(sources)
         if any(source.get("url") == source_url for source in sources):
             return collapse_public_source_urls(sources)
         if (
@@ -581,7 +648,11 @@ def _rdb_source_urls(detail, source_url, source_kind):
         ):
             sources[0]["url"] = source_url
             return collapse_public_source_urls(sources)
-        key = "公式URL" if source_kind == "official_current_year" else "出典URL"
+        key = (
+            "公式URL"
+            if reviewed_official and source_kind == "official_current_year" and not _is_notice_url(source_url)
+            else "出典URL"
+        )
         sources.append(_source_item(key, source_url))
     return collapse_public_source_urls(sources)
 
@@ -1040,8 +1111,17 @@ def build_public_events_from_notion(*, target_year):
     return events, len(covered), fallback, skipped
 
 
-def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
+def build_public_events_from_master(
+    db_path=MASTER_DB, *, target_year, reviewed_official_links=None,
+    legacy_preserved_official_links=None, official_source_links_path=PUBLIC_OFFICIAL_SOURCE_LINKS_JSON,
+):
     target_year = normalize_target_year(target_year)
+    if reviewed_official_links is None or legacy_preserved_official_links is None:
+        registry = load_reviewed_official_source_links(official_source_links_path)
+        if reviewed_official_links is None:
+            reviewed_official_links = registry
+        if legacy_preserved_official_links is None:
+            legacy_preserved_official_links = registry
     previous_year = target_year - 1
     song_occurrences = load_song_occurrences()
     date_candidates_by_event = load_date_candidates()
@@ -1205,7 +1285,27 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
             "jun": {str(m): j for m, j in jun.items()},
             "description": description,
             "detail": public_detail_text(raw_detail),
-            "source_urls": _rdb_source_urls(raw_detail, row["source_url"], row["source_kind"]),
+            "source_urls": _rdb_source_urls(
+                raw_detail,
+                row["source_url"],
+                row["source_kind"],
+                reviewed_official=is_reviewed_official_source_link(
+                    reviewed_official_links,
+                    occurrence_id=row["occurrence_id"],
+                    event_year=int(row["event_year"] or target_year),
+                    date_start=row["date_start"] or "",
+                    date_end=row["date_end"] or "",
+                    source_url=row["source_url"],
+                ),
+                legacy_preserved_official=is_legacy_preserved_official_source_link(
+                    legacy_preserved_official_links,
+                    occurrence_id=row["occurrence_id"],
+                    event_year=int(row["event_year"] or target_year),
+                    date_start=row["date_start"] or "",
+                    date_end=row["date_end"] or "",
+                    source_url=row["source_url"],
+                ),
+            ),
             "songs": songs,
         })
         if has_canonical_axes:
