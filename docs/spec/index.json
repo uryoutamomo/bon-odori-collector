@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-10-03T03:52:55Z",
-  "generated_for_commit": "192a500",
+  "generated_at": "2026-10-03T04:26:08Z",
+  "generated_for_commit": "6a78284",
   "specs": {
     "L1-collection": {
       "layer": "L1",
       "title": "収集サブシステム",
       "owns": [
         "collect.py",
+        "collection_support/proactive_search.py",
         "x_queries.json",
         "collection_support/x_raw_archive.py",
         "collection_support/x_budget_guard.py",
@@ -42,7 +43,8 @@
         "INV-COL-007",
         "INV-COL-008",
         "INV-COL-009",
-        "INV-COL-010"
+        "INV-COL-010",
+        "INV-COL-011"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
@@ -51,11 +53,14 @@
         "tests/test_x_search_watermark.py",
         "tests/test_x_gap_candidates.py",
         "tests/test_collect_event_state_axes_wiring.py",
+        "tests/test_collect_outcomes_main.py",
+        "tests/test_collect_voices.py",
+        "tests/test_proactive_search.py",
         "tests/test_sync_event_date_predictions_rdb.py",
         "tests/test_ward_official_source_registry.py",
         "tests/test_odottar_coverage_benchmark.py"
       ],
-      "updated_for": "a47769f",
+      "updated_for": "7a8cd7c0",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         ".github/workflows/collect.yml",
@@ -65,6 +70,7 @@
         "build_x_gap_candidates.py",
         "collect.py",
         "collect_venue_sites.py",
+        "collection_support/proactive_search.py",
         "collection_support/voices_s3_artifact.py",
         "collection_support/x_author_profile.py",
         "collection_support/x_budget_guard.py",
@@ -84,12 +90,17 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 3,
-        "files_changed_since": 7
+        "commits_since": 1,
+        "files_changed_since": 3
       },
-      "version": "1.10",
-      "revision_count": 11,
+      "version": "1.11",
+      "revision_count": 12,
       "history": [
+        {
+          "commit": "6a78284",
+          "date": "2026-10-03",
+          "subject": "Distinguish collection failures from empty and skipped inputs (#271)"
+        },
         {
           "commit": "c68891c",
           "date": "2026-08-24",
@@ -1676,8 +1687,10 @@
       "spec": "L1-collection",
       "title": "収集不能・受理0件を正常な「投稿なし」として扱わない",
       "tests": [
-        "tests/test_x_collection_health.py::test_successful_but_zero_item_run_is_unhealthy",
-        "tests/test_x_collection_health.py::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items"
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_successful_but_zero_item_run_is_unhealthy",
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items",
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_failed_config_is_unhealthy_even_when_collection_is_disabled",
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_partial_request_failure_is_unhealthy_despite_accepted_items"
       ],
       "has_test": true
     },
@@ -1739,6 +1752,27 @@
       "title": "外部サイトのcoverage計測をイベント候補・正本出典にしない",
       "tests": [
         "tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates"
+      ],
+      "has_test": true
+    },
+    "INV-COL-011": {
+      "spec": "L1-collection",
+      "title": "取得失敗を空の収集結果として下流へ渡さない",
+      "tests": [
+        "tests/test_collect_voices.py::CollectVoicesTest::test_partial_rss_failure_does_not_advance_seen_or_return_partial_items",
+        "tests/test_collect_voices.py::CollectVoicesTest::test_invalid_existing_youtube_registry_is_a_failed_outcome",
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_proactive_without_budget_or_api_access",
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_whitelist_without_budget_or_api_access",
+        "tests/test_x_collection_health.py::XCollectionHealthTest::test_non_dict_x_config_is_recorded_as_lane_failure",
+        "tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_invalid_existing_snapshot_never_reaches_voice_derived_downstream",
+        "tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_empty_completed_lanes_reach_voice_derived_downstream",
+        "tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_x_partial_failure_closes_every_voice_derived_gate",
+        "tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_broken_x_config_is_failed_and_closes_voice_derived_gates",
+        "tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_score_write_failure_closes_later_voice_gates",
+        "tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_voice_snapshot_rollback_removes_new_first_file_when_second_replace_fails",
+        "tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history",
+        "tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_restores_state_when_report_replace_fails",
+        "tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_removes_new_files_when_report_replace_fails"
       ],
       "has_test": true
     },
@@ -2645,6 +2679,7 @@
     "build_x_gap_candidates.py": "L1-collection",
     "collect.py": "L1-collection",
     "collect_venue_sites.py": "L1-collection",
+    "collection_support/proactive_search.py": "L1-collection",
     "collection_support/voices_s3_artifact.py": "L1-collection",
     "collection_support/x_author_profile.py": "L1-collection",
     "collection_support/x_budget_guard.py": "L1-collection",
@@ -2956,8 +2991,8 @@
   },
   "coverage": {
     "tracked_source_files": 365,
-    "owned": 271,
-    "unowned": 94,
+    "owned": 272,
+    "unowned": 93,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
       "apply_notion_drift_source_url_resolutions.py",
