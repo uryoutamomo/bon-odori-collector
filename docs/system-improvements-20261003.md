@@ -12,8 +12,8 @@
 
 | 番号 | 課題 | 状態 | 完了条件 |
 | --- | --- | --- | --- |
-| 1 | 過去年の時間が今年の公式確認済み情報として表示される | 実装中 | 時間の年・開催回・根拠を検証し、過去/不明の時間へ公式確認を付けない。実例3件と当年の正例を検証し、公開面を照合する |
-| 2 | 収集が成功しても公開データが更新されない | 未着手 | 最新collector→site→snapshot→liveの内容一致を確認し、同期停止の検出・復旧手順を整える |
+| 1 | 過去年の時間が今年の公式確認済み情報として表示される | 完了 | 時間の年・開催回・根拠を検証し、過去/不明の時間へ公式確認を付けない。実例3件と当年の正例を検証し、公開面を照合する |
+| 2 | 収集が成功しても公開データが更新されない | 完了 | 最新collector→site→snapshot→liveの内容一致を確認し、同期停止の検出・復旧手順を整える |
 | 3 | 収集失敗が情報なし・確認済み探索へ置き換わる | 未着手 | success / empty / skipped / failedを区別し、失敗入力で下流の候補・探索履歴を更新しない。障害注入で確認する |
 | 4 | 日次監視の誤警報と会場データの監視漏れ | 未着手 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
 | 5 | 開催回の識別がイベント名＋会場名に依存する | 未着手 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
@@ -48,7 +48,7 @@
 
 ## 1. 時間情報の対象年と根拠
 
-状態: 公開検証中。[site PR18](https://github.com/uryoutamomo/bon-odori-site/pull/18)。
+状態: 完了。[site PR18](https://github.com/uryoutamomo/bon-odori-site/pull/18)、collector契約記録[PR269](https://github.com/uryoutamomo/bon-odori-collector/pull/269)。
 
 当年の開催日・終了日・official URL・時間の範囲を個別に検査する構造化根拠を導入。
 旧time_text単独は使わず、当年の開催日まで明記された安全な詳細だけを参考・未確認として残す。
@@ -60,7 +60,29 @@
 公式構造化時間0件。荏原第四の実ブラウザは時間未確認、SUMIBONは参考・未確認、390×844でも表示確認。
 荏原第四・第三・第一の負例と、丸の内の2種類の時間・築地の最終日例外の正例を固定入力で検査する。
 
-公開照合結果はデプロイ完了後に追記する。
+2026-10-03 12:43 JST、[deploy run37093988493](https://github.com/uryoutamomo/bon-odori-site/actions/runs/37093988493)成功。
+cache-busted liveのevents394件、geo160件は生成snapshotとcanonical SHA-256一致。
+app.js・index.html・venues.htmlもbyte一致。eventsのhashは
+`0891352685930a076f4be6d36f7dcaf2652225840bd46833e5204c21f171bb4f`。
+この時点のcollector/site差分22行は2番の復旧対象として残り、時間表示修正の公開照合とは区別する。
+証跡: `bonsuke-system-improvements-evidence-20261003/step1-live/verification.json`。
+
+## 2. 公開同期の復旧
+
+状態: 完了。ガードを緩めず、PR267の限定された期限切れ承認修正を用いて正規Sync workflowを実行した。
+venue source JSONは公開では会場HTMLへ変換され、同名JSONそのものを配信しない。
+events・geoのJSONに加え、venues.htmlの公開投影を照合する。
+
+2026-10-03 12:47 JST、[Sync run37094231477](https://github.com/uryoutamomo/bon-odori-site/actions/runs/37094231477)成功。
+入力collector SHA `a3d95d92aa0dd62f07494ef49b16949038c14784`、出力site SHA
+`829c646e1992a9722f688b9311e7b38c00f55f84`。14終了遷移・5期限切れスライドを限定許可した。
+events394・venues176・geo160のcollector/site元JSON完全一致。
+eventsとgeoは生成snapshot/liveのcanonical hash一致、app・index・venues.htmlはbyte一致。
+公開終了済み258→272、開催予定28→14。他に過去実績73、日程不明35。
+公開events hash `9d8d0a6a4e9c926bf475256381f12e576a351a0de42701c144a6ed015c6e4681`。
+証跡: `bonsuke-system-improvements-evidence-20261003/step2-live/verification.json`、`step2-sync.log`。
+siteの `docs/public-sync-deploy-runbook.md` へ、Syncの停止理由確認、入力固定、公開投影照合と記録を追加した。
+手動復旧の成功であり、翌日の自然schedule成功を確認したとは扱わない。
 
 ## 2〜7. 次工程
 
