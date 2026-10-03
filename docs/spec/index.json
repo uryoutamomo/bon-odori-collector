@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T05:31:35Z",
-  "generated_for_commit": "c6daccf",
+  "generated_at": "2026-10-03T06:19:11Z",
+  "generated_for_commit": "5a6310f",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -685,6 +685,9 @@
         "scripts/compare_public_export_postprocessors.py",
         "scripts/compare_public_projection_revisions.py",
         "scripts/verify_occurrence_identity_migration.py",
+        "scripts/verify_official_source_link_projection.py",
+        "data/public_official_source_links.json",
+        "data/public_source_kind_corrections_20261003.json",
         "sync_public_event_detail_source_to_site.py",
         "sync_public_event_source_urls_to_site.py",
         "sync_public_event_songs_to_site.py",
@@ -711,7 +714,8 @@
         "INV-PUB-011",
         "INV-PUB-012",
         "INV-PUB-013",
-        "INV-PUB-014"
+        "INV-PUB-014",
+        "INV-PUB-015"
       ],
       "verified_by": [
         "tests/test_export_public_events.py",
@@ -727,11 +731,14 @@
         "tests/test_public_projection_purity.py",
         "tests/test_occurrence_identity.py",
         "tests/test_verify_occurrence_identity_migration.py",
-        "tests/test_public_event_sync_occurrence_identity.py"
+        "tests/test_public_event_sync_occurrence_identity.py",
+        "tests/test_verify_official_source_link_projection.py"
       ],
       "updated_for": "3be992d7",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
+        "data/public_official_source_links.json",
+        "data/public_source_kind_corrections_20261003.json",
         "docs/public-json-rdb-projection-migration-plan.md",
         "docs/r2-public-projection-verification-20260909.md",
         "export_public_events.py",
@@ -742,6 +749,7 @@
         "public_export_support/date_predictions.py",
         "public_export_support/historical_references.py",
         "public_export_support/occurrence_identity.py",
+        "public_export_support/official_source_links.py",
         "public_export_support/projection_inputs.py",
         "public_export_support/score_event_recurrence.py",
         "public_export_support/season_hints.py",
@@ -755,6 +763,7 @@
         "scripts/compare_public_export_postprocessors.py",
         "scripts/compare_public_projection_revisions.py",
         "scripts/verify_occurrence_identity_migration.py",
+        "scripts/verify_official_source_link_projection.py",
         "sync_public_event_additions_to_site.py",
         "sync_public_event_detail_source_to_site.py",
         "sync_public_event_songs_to_site.py",
@@ -762,12 +771,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 12
+        "commits_since": 2,
+        "files_changed_since": 16
       },
-      "version": "1.25",
-      "revision_count": 26,
+      "version": "1.26",
+      "revision_count": 27,
       "history": [
+        {
+          "commit": "5a6310f",
+          "date": "2026-10-03",
+          "subject": "改善6: 当年の公式リンクを開催回単位で検証して公開 (#274)"
+        },
         {
           "commit": "249539c",
           "date": "2026-10-03",
@@ -822,11 +836,6 @@
           "commit": "21f9abf",
           "date": "2026-08-22",
           "subject": "E2の会場区を公開経路まで保持し、欠落を可視化する (#251)"
-        },
-        {
-          "commit": "1e2849c",
-          "date": "2026-08-19",
-          "subject": "Document superseded public approvals"
         }
       ]
     },
@@ -1486,12 +1495,17 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 1,
+        "commits_since": 2,
         "files_changed_since": 2
       },
-      "version": "1.7",
-      "revision_count": 8,
+      "version": "1.8",
+      "revision_count": 9,
       "history": [
+        {
+          "commit": "5a6310f",
+          "date": "2026-10-03",
+          "subject": "改善6: 当年の公式リンクを開催回単位で検証して公開 (#274)"
+        },
         {
           "commit": "249539c",
           "date": "2026-10-03",
@@ -2415,6 +2429,15 @@
       ],
       "has_test": true
     },
+    "INV-PUB-015": {
+      "spec": "L1-publication",
+      "title": "当年のtyped公式Web出典を公開へ保持する",
+      "tests": [
+        "tests/test_export_public_events.py",
+        "tests/test_verify_official_source_link_projection.py"
+      ],
+      "has_test": true
+    },
     "INV-DLV-001": {
       "spec": "L1-delivery",
       "title": "`pending_mail.json` が無いときは、何もせず正常終了する",
@@ -2887,6 +2910,8 @@
     "scripts/verify_review_backlog_application.py": "L1-master",
     "sync_event_date_predictions_rdb.py": "L1-master",
     "transition_ended_occurrences.py": "L1-master",
+    "data/public_official_source_links.json": "L1-publication",
+    "data/public_source_kind_corrections_20261003.json": "L1-publication",
     "docs/public-json-rdb-projection-migration-plan.md": "L1-publication",
     "docs/r2-public-projection-verification-20260909.md": "L1-publication",
     "export_public_events.py": "L1-publication",
@@ -2897,6 +2922,7 @@
     "public_export_support/date_predictions.py": "L1-publication",
     "public_export_support/historical_references.py": "L1-publication",
     "public_export_support/occurrence_identity.py": "L1-publication",
+    "public_export_support/official_source_links.py": "L1-publication",
     "public_export_support/projection_inputs.py": "L1-publication",
     "public_export_support/score_event_recurrence.py": "L1-publication",
     "public_export_support/season_hints.py": "L1-publication",
@@ -2910,6 +2936,7 @@
     "scripts/compare_public_export_postprocessors.py": "L1-publication",
     "scripts/compare_public_projection_revisions.py": "L1-publication",
     "scripts/verify_occurrence_identity_migration.py": "L1-publication",
+    "scripts/verify_official_source_link_projection.py": "L1-publication",
     "sync_public_event_additions_to_site.py": "L1-publication",
     "sync_public_event_detail_source_to_site.py": "L1-publication",
     "sync_public_event_songs_to_site.py": "L1-publication",
@@ -3053,8 +3080,8 @@
     "tests/test_spec_index.py": "SPEC-GUIDE"
   },
   "coverage": {
-    "tracked_source_files": 367,
-    "owned": 278,
+    "tracked_source_files": 369,
+    "owned": 280,
     "unowned": 89,
     "unowned_samples": [
       "apply_notion_drift_public_intro.py",
