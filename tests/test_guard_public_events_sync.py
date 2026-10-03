@@ -27,6 +27,7 @@ from public_json_postprocessors.guard_public_events_sync import (
     guard_decision,
     mark_retired_temporal_approvals,
     mark_superseded_same_key_approvals,
+    revalidate_legacy_mismatches_after_applied_occurrence_approval,
 )
 
 
@@ -1605,6 +1606,80 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         result = apply_reviewed_exact_approvals([], [], {"schema": "public_sync_exact_approvals_v1", "approvals": [approval]})
         self.assertEqual(result["summary"]["status"], "block")
         self.assertEqual(result["summary"]["status_counts"], {"hash_mismatch": 1})
+
+    def test_applied_v2_revalidates_only_stale_v1_history_for_same_final_occurrence(self):
+        original = {
+            "name": "時刻経過の盆踊り", "venue": "公園", "occurrence_id": "occ_same",
+            "event_year": 2026, "detail": "旧承認値", "display_tier": "confirmed",
+        }
+        old_arrival = {**original, "detail": "旧承認の到着値"}
+        site_after_time = {**old_arrival, "display_tier": "ended"}
+        collector = {**site_after_time, "source_urls": [{"label": "公式告知あり", "url": "https://official.example/new", "kind": "official"}]}
+        legacy = {
+            "id": "v1-history", "kind": "same_key_update",
+            "event_key": "時刻経過の盆踊り||公園",
+            "site_sha256": canonical_event_sha256(original),
+            "collector_sha256": canonical_event_sha256(old_arrival),
+        }
+        v2 = {
+            "id": "v2-source", "kind": "same_key_update", "occurrence_id": "occ_same",
+            "site_sha256": full_event_sha256(site_after_time),
+            "collector_sha256": full_event_sha256(collector),
+        }
+        result = apply_reviewed_exact_approvals(
+            [collector], [site_after_time],
+            {"schema": "public_sync_exact_approvals_v1", "approvals": [legacy, v2]},
+        )
+        self.assertEqual(result["summary"]["status"], "pass")
+        self.assertEqual(result["summary"]["status_counts"], {"already_synced": 1, "applied": 1})
+        self.assertEqual(result["summary"]["results"][0]["revalidated_by"], "v2-source")
+
+    def test_applied_v2_for_other_occurrence_cannot_revalidate_legacy_mismatch(self):
+        original = {"name": "同名", "venue": "公園", "occurrence_id": "occ_real", "event_year": 2026, "detail": "old"}
+        site = {**original, "display_tier": "ended"}
+        collector = {**site, "source_urls": [{"url": "https://unreviewed.example"}]}
+        other_site = {"name": "別件", "venue": "別公園", "occurrence_id": "occ_other", "event_year": 2026, "detail": "old"}
+        other_collector = {**other_site, "detail": "approved"}
+        legacy = {"id": "v1-real", "kind": "same_key_update", "event_key": "同名||公園",
+                  "site_sha256": canonical_event_sha256(original), "collector_sha256": canonical_event_sha256(original)}
+        v2_other = {"id": "v2-other", "kind": "same_key_update", "occurrence_id": "occ_other",
+                    "site_sha256": full_event_sha256(other_site), "collector_sha256": full_event_sha256(other_collector)}
+        result = apply_reviewed_exact_approvals(
+            [collector, other_collector], [site, other_site],
+            {"schema": "public_sync_exact_approvals_v1", "approvals": [legacy, v2_other]},
+        )
+        self.assertEqual(result["summary"]["status"], "block")
+        self.assertEqual(result["summary"]["results"][0]["status"], "hash_mismatch")
+        self.assertNotIn("revalidated_by", result["summary"]["results"][0])
+
+    def test_wrong_full_hash_v2_for_same_occurrence_cannot_revalidate_legacy_mismatch(self):
+        original = {"name": "同一ID", "venue": "公園", "occurrence_id": "occ_same", "event_year": 2026, "detail": "old"}
+        old_arrival = {**original, "detail": "approved-old"}
+        site = {**old_arrival, "display_tier": "ended"}
+        collector = {**site, "source_urls": [{"url": "https://unreviewed.example"}]}
+        legacy = {"id": "v1-history", "kind": "same_key_update", "event_key": "同一ID||公園",
+                  "site_sha256": canonical_event_sha256(original), "collector_sha256": canonical_event_sha256(old_arrival)}
+        v2 = {"id": "wrong-v2-hash", "kind": "same_key_update", "occurrence_id": "occ_same",
+              "site_sha256": full_event_sha256(site), "collector_sha256": "0" * 64}
+        result = apply_reviewed_exact_approvals(
+            [collector], [site],
+            {"schema": "public_sync_exact_approvals_v1", "approvals": [legacy, v2]},
+        )
+        self.assertEqual(result["summary"]["status"], "block")
+        self.assertEqual(result["summary"]["status_counts"], {"hash_mismatch": 2})
+        self.assertNotIn("revalidated_by", result["summary"]["results"][0])
+
+
+    def test_revalidation_requires_v2_applied_not_merely_already_synced(self):
+        row = {"name": "純粋境界", "venue": "公園", "occurrence_id": "same", "event_year": 2026, "detail": "final"}
+        approvals = [
+            {"id": "legacy", "kind": "same_key_update", "event_key": "純粋境界||公園"},
+            {"id": "v2", "kind": "same_key_update", "occurrence_id": "same"},
+        ]
+        results = [{"id": "legacy", "status": "hash_mismatch"}, {"id": "v2", "status": "already_synced"}]
+        revalidate_legacy_mismatches_after_applied_occurrence_approval(results, approvals, [row], [dict(row)])
+        self.assertEqual(results[0]["status"], "hash_mismatch")
+        self.assertNotIn("revalidated_by", results[0])
 
 
 if __name__ == "__main__":

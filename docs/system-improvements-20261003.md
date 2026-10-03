@@ -141,7 +141,11 @@ siteの既存一意event URLを維持し、衝突だけIDから分離。正規Sy
 - [葛西の2026年一覧](https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html): LP26まつり10/3、公社東葛西第一住宅自治会住宅祭10/4、ハイラーク船堀自治会秋まつり10/11。
 - [小岩の令和8年一覧](https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html): 小岩田自治会盆踊り10/3〜4。
 
-依頼JSON: `data/change_requests/official_source_links_20261003.json`。copy dry-run 4適用・未解決0・監査異常0。詳細・時刻・日付・会場を変えず、根拠行と参照を記録する。reviewed promotion、正本backup/CAS、再取得検証、公開差分のID単位承認とlive照合を順に実施する。
+依頼JSON: `data/change_requests/official_source_links_20261003.json`。PR #273をmergeし、remote dry-run `37100075788`、正本適用 `37100172205` を完了した。backup/CAS/再取得検証で4適用・未解決0・監査異常0。取得し直した固定入力 `37100270399` のDB checksumは `ff7c0e8ffa5606a8ea0867c4dbf9eb64b4af38757c930ea8c73fabba08ff85ea`。詳細・時刻・日付・会場を変えず、根拠行と参照を記録した。
+
+12開催回の公式ページを当年の日付・会場と照合し、ID・年・日付・URLをregistryへ固定した。既存公開リンク52組の保持は新規確認済みと区別する。旧Xリンク11組を匿名化し、hostname部分一致で誤分類された一般Web2組を訂正する。公開差分は394件中21件の `source_urls` だけで、曲目/source_mapはbyte一致、その他の全項目は同値。直近14件の公式導線は4件から12件へ増える。時刻の公式確認済み件数は0のまま。
+
+年越し・期限切れを含む9境界で4出力を固定入力比較し、すべて通過した。full suiteは2016 passed/246 subtests、guard関連は108 passed/62 subtests。旧461承認を保持し、新21承認はIDと全payload hashを固定した。実guardはpre/post-syncともpass。旧v1の残存mismatch5件は、今回適用された同ID v2と最終全payload一致を条件に再評価する限定修正で解消した。別ID・不正hash・曖昧aliasはblockを維持する。公開・live照合へ進む。
 
 ## 7. 次工程
 

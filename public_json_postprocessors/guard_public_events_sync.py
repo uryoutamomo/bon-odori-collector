@@ -312,6 +312,80 @@ def mark_retired_temporal_approvals(
         result["retired_by"] = action
 
 
+def revalidate_legacy_mismatches_after_applied_occurrence_approval(
+    results, approvals, collector_rows, approved_site_rows,
+):
+    """Retain v1 history after this run reached its exact v2 successor.
+
+    A v1 alias/hash entry can predate an automatic state transition.  If a
+    later v2 approval has *applied* a full-row, occurrence-scoped replacement
+    in this invocation, the final comparison copy is the only safe evidence
+    for treating that stale v1 mismatch as synchronized history.  This never
+    compares v1 and v2 hashes or bridges their selectors: the final row must
+    still resolve uniquely by the old alias to the exact v2 occurrence.
+    """
+    applied_v2 = {}
+    for approval, result in zip(approvals, results):
+        if (
+            isinstance(approval, dict)
+            and approval.get("kind") == "same_key_update"
+            and _approval_is_occurrence_scoped(approval)
+            and result.get("status") == "applied"
+        ):
+            try:
+                identifier = occurrence_id({"occurrence_id": approval.get("occurrence_id")})
+            except ValueError:
+                continue
+            applied_v2[identifier] = result.get("id")
+    if not applied_v2:
+        return
+
+    try:
+        final_collector, final_positions = _comparison_positions(
+            collector_rows, approved_site_rows
+        )
+    except ValueError:
+        return
+
+    for approval, result in zip(approvals, results):
+        if (
+            not isinstance(approval, dict)
+            or _approval_is_occurrence_scoped(approval)
+            or approval.get("kind") != "same_key_update"
+            or result.get("status") != "hash_mismatch"
+        ):
+            continue
+        alias = approval.get("event_key")
+        if not isinstance(alias, str) or not alias:
+            continue
+        collector_key = _legacy_unique_key(collector_rows, alias)
+        site_key = _legacy_unique_key(approved_site_rows, alias)
+        if (
+            collector_key is None
+            or site_key is None
+            or collector_key != site_key
+            or not collector_key.startswith("occurrence:")
+            or collector_key not in final_collector
+            or collector_key not in final_positions
+        ):
+            continue
+        collector_event = final_collector[collector_key]
+        final_site_event = approved_site_rows[final_positions[collector_key]]
+        try:
+            identifier = occurrence_id(collector_event)
+            if (
+                identifier not in applied_v2
+                or occurrence_id(final_site_event) != identifier
+                or event_year(final_site_event) != event_year(collector_event)
+                or full_event_sha256(final_site_event) != full_event_sha256(collector_event)
+            ):
+                continue
+        except ValueError:
+            continue
+        result["status"] = "already_synced"
+        result["revalidated_by"] = applied_v2[identifier]
+
+
 def verified_expired_slide_keys(collector_rows, site_rows, classified, today):
     """Allow stale approval retirement only for an expired, content-identical slide.
 
@@ -502,6 +576,9 @@ def apply_reviewed_exact_approvals(
             result["status"] = "invalid_approval"
         results.append(result)
 
+    revalidate_legacy_mismatches_after_applied_occurrence_approval(
+        results, approvals, collector_rows, approved_site_rows,
+    )
     mark_superseded_same_key_approvals(results, approvals)
     mark_retired_temporal_approvals(results, approvals, ended_transition_event_keys, expired_slide_event_keys)
     mark_superseded_same_key_approvals(results, approvals)

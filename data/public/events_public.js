@@ -2204,9 +2204,9 @@ const EVENTS = [
     "detail": "2026年9月26日（土）開催、予備日9月27日。主催：浜町音頭保存会。時刻は未確認のため未登録。根拠： （2026年度一覧・出典表記は日本橋経済新聞）。",
     "source_urls": [
       {
-        "label": "告知投稿あり",
+        "label": "告知HPあり",
         "url": "https://tokyofesta.com/23ku/25652/",
-        "kind": "post",
+        "kind": "web",
         "count": 1
       }
     ],
@@ -2500,9 +2500,10 @@ const EVENTS = [
     "detail": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。 5日(水)が中止の場合は6日(木)に順延。（令和8年納涼マップ京橋五の部より）",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://x.com/iri2choukai/status/2069959259895496872",
-        "kind": "official"
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
+        "count": 1
       }
     ],
     "songs": [
@@ -2873,7 +2874,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/DJKOO_official/status/2089953521101902262",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -3041,11 +3042,6 @@ const EVENTS = [
     "description": "",
     "detail": "2026年8月21日(金)〜23日(日)開催。主催は六本木ヒルズ自治会、森ビル株式会社。8月21日(金)は前夜祭（縁日屋台17:00〜21:00、楽劇 六本木楽19:00〜20:00）で、盆踊りは実施されない。盆踊りは8月22日(土)・23日(日)の各17:00〜20:00。六本木けやき坂通りでのフードマーケットは8月22日・23日のみ。雨天決行、荒天時は時間変更または中止の場合あり。六本木ヒルズ公式告知より。 出典は六本木ヒルズ公式サイト。 現地の告知投稿で開催を確認。日時・会場明記 現地の告知投稿で開催を確認。六本木ヒルズ盆踊り2026の開催期間・会場を告知",
     "source_urls": [
-      {
-        "label": "公式告知あり",
-        "url": "https://x.com/tsubuki_staff/status/2090302832046149754",
-        "kind": "official"
-      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -7795,10 +7791,9 @@ const EVENTS = [
     "detail": "荒木町町会サイトが公開している四谷地域の盆踊り情報（令和8年度）に、2026-10-10・2026-10-11・17:00〜20:30・会場「荒木公園」・主催「荒木町青年会」として掲載されている。 【情報の確かさについて】このページは、四谷地域センターのボランティアが各地域の関係者から集めた情報としてまとめられたもので、主催団体自身が出した告知ではない。日程・時間は変更される可能性がある。ページにも「ご参加の際は、開催日時や内容等について、事前に最新情報をご確認ください」と注記がある。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.arakicho-chokai.com/post/bon-yotsuya2026",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -7961,7 +7956,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/UT_bondanceclub/status/2090290580014415933",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -19123,7 +19118,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/otafull/status/2089910221787545811",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -19614,11 +19609,6 @@ const EVENTS = [
     "description": null,
     "detail": "現地の告知投稿で開催を確認。日時・住所明記",
     "source_urls": [
-      {
-        "label": "公式告知あり",
-        "url": "https://x.com/WBElectric0521/status/2090040633230848484",
-        "kind": "official"
-      },
       {
         "label": "告知投稿あり",
         "url": "",
@@ -20823,9 +20813,9 @@ const EVENTS = [
     "detail": "2026年イベント掲載で、2026年7月25日(土)〜26日(日)13:00〜20:00、盆踊り16:00〜20:00、会場: 下北沢東口駅前広場、主催: しもきた商店街振興組合・下北沢東会・下北沢南口商店街振興組合を確認。関連URL:",
     "source_urls": [
       {
-        "label": "告知投稿あり",
+        "label": "告知HPあり",
         "url": "https://tokyofesta.com/23ku/31306/",
-        "kind": "post",
+        "kind": "web",
         "count": 1
       }
     ],
@@ -25404,7 +25394,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/toshimamirai/status/2090299942787301419",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -25468,7 +25458,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/toshimamirai/status/2090299942787301419",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -25532,7 +25522,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -30071,7 +30061,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/adachi_city/status/2089981991060210144",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -30941,7 +30931,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知投稿あり",
-        "url": "https://x.com/natsutr_bon/status/2089973977318064232",
+        "url": "",
         "kind": "post",
         "count": 1
       }
@@ -31265,10 +31255,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-10-11・会場「しらさぎ児童遊園」・実施団体「ハイラーク船堀自治会」として掲載されている。 【名称について】区公式一覧では「秋まつり」とだけ記載。実施団体「ハイラーク船堀自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -31397,10 +31386,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-10-03・会場「ライオンズプラザ西葛西マンション内公園」・実施団体「ライオンズプラザ西葛西自治会」として掲載されている。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+        "kind": "official"
       }
     ],
     "songs": [
@@ -31924,10 +31912,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの葛西地区 盆踊り日程一覧（令和8年度）に、2026-10-04・会場「公社東葛西第一住宅団地内公園」・実施団体「公社東葛西第一住宅自治会」として掲載されている。 【名称について】区公式一覧では「住宅祭」とだけ記載。実施団体「公社東葛西第一住宅自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -32599,10 +32586,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-10-24〜2026-10-25・会場「南篠崎天祖神社」・実施団体「南篠崎町会他」として掲載されている。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -32935,10 +32921,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの小岩地区 盆踊り日程一覧（令和8年度）に、2026-10-03〜2026-10-04・会場「小岩田天祖神社」・実施団体「小岩田自治会」として掲載されている。 【名称について】区公式一覧では「盆踊り」とだけ記載。実施団体「小岩田自治会」を冠して区別できる名前にした。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -34285,10 +34270,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-10-04・会場「瑞江葬儀所裏こどもの広場」・実施団体「椿町会」として掲載されている。 【名称について】区公式一覧では「（仮称）椿フェスティバル」と仮称表記。名称は確定していない可能性がある。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -35013,10 +34997,9 @@ const EVENTS = [
     "detail": "江戸川区公式サイトの東部地区 盆踊り日程一覧（令和8年度）に、2026-10-03・会場「谷河内みなみ公園」・実施団体「谷河内南町会」として掲載されている。 【まだ確認できていないこと】区の一覧には開始・終了時刻の記載がなく、当日の進行や雨天時の扱いも分からない。町会・自治会が主催する地域の盆踊りのため、詳しい案内は現地の掲示や主催団体の告知で出されることが多い。お出かけの際は最新の告知もあわせてご確認ください。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
