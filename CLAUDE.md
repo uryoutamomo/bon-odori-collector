@@ -95,9 +95,11 @@ GitHub ActionsのAWS認証は長期アクセスキーではなくOIDCロール�
 ## メール配信
 
 - 配信本文は `data/pending_mail.json` に置く。
-- `send_mail.py` は `pending_mail.json` が存在する時だけ送信する。
-- 送信成功後、`send_mail.yml` が `pending_mail.json` を削除してコミット・プッシュする（二重送信防止）。
-- `pending_mail.json` が存在するのに設定不足・本文空などで送信できない場合は非ゼロ終了し、ファイルを残す。
+- `send_mail.yml` は設定と本文を事前検査し、`pending_mail.json` を `sending_mail.json` へ移してcommit・pushしてから送信する。
+- `send_mail.py` はclaim済みの `sending_mail.json` だけを送信し、送信成功後にworkflowが削除をcommit・pushする。
+- `pending_mail.json` が存在するのに設定不足・本文空などで送信できない場合は非ゼロ終了し、pendingのまま残す。
+- `sending_mail.json` が残った場合はSMTP成否が曖昧なので自動再送しない。Gmailの送信済みを確認して人が解消する。
+- 宛先はGitHub Secret `MAIL_TO` だけから読み、コード内の既定宛先は持たない。
 
 ## X(twitterapi.io) 収集
 

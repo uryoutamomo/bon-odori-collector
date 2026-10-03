@@ -41,7 +41,7 @@ flowchart TD
 | 自動継続（Notion書き込みは手動） | `collect.yml` | 継続。ただしMaster RDB監査と公開guardを前提にする。RSS/X収集とDynamoDB候補生成は自動、legacy Notion変更は `allow_notion_writes=true` の手動実行時だけ。 |
 | 自動化候補 | X news digest for Oto / rare_signal builder | まず既取得X由来ニュースを既存DBと照合して `x_news_digest_for_oto` を作り、おとが読んだ後に新規情報または差分だけを `rare_signal` レビュー候補へ昇格する。固定キーワード検知を主役にしない。X API探索拡大やNotion/公開JSON直書きはしない。方針は `docs/rare-signal-discovery-design.md`。 |
 | 自動継続 | `youtube_daily_backfill.yml` | 継続。ローカルLaunchAgentは停止済みで、Actionsが唯一の自動実行元。 |
-| 自動継続 | `send_mail.yml` / `send_mail_watchdog.yml` | 継続。`pending_mail.json` の有無で冪等に動く。 |
+| 自動継続 | `send_mail.yml` / `send_mail_watchdog.yml` | 継続。送信前に `sending_mail.json` へclaimし、曖昧状態は自動再送しない。 |
 | 手動fallback（Notion書き込みも手動） | `weekly_harvest.yml` | 旧週次workflow。定期実行は廃止済みで、曲/用語候補抽出は日次 `collect.yml` に統合済み。週次コストのNotion反映は `sync_weekly_costs_to_notion=true` の手動実行時だけ。 |
 | 自動継続（要監視） | `bon-odori-site/.github/workflows/sync-public-data.yml` | 継続。同期由来の公開は同workflowが担当し、commitには `[skip deploy]` を付けてdeploy-static-siteの二重deployを止める。手動時は `deploy_after_sync=false` でsyncだけ確認できる。 |
 | 自動継続 | `bon-odori-site/.github/workflows/deploy-static-site.yml` | 継続。通常のsite変更をdeployする。`[skip deploy]` 付きcommitは無視する。 |
@@ -74,7 +74,7 @@ flowchart TD
 | `.github/workflows/collect.yml` | Daily 15:13 JST + manual | repo data, DynamoDB queue, public JSON, daily X song/glossary review queues; generated date-prediction rows in Master RDB; optional manual legacy Notion writes | high | 自動継続。主要収集元として残す。公開射影前に生成予測だけをMaster RDBへ狭く同期し、状態軸と同じ成果物を1回CAS publishする。曲/用語候補抽出もここへ統合。レビューは内田さんが任意のタイミングで行い、Notion書き込みは `allow_notion_writes=true` の手動実行時だけ。 |
 | `.github/workflows/youtube_daily_backfill.yml` | Daily 05:00 JST + manual | automation branch / PR, YouTube candidates, reports | medium-high | 自動継続。YouTube quotaはここへ一本化済み。 |
 | `.github/workflows/weekly_harvest.yml` | manual only | song/glossary review queues, weekly cost dry-run report; optional manual weekly cost Notion sync | medium | 手動fallback。定期実行は廃止し、曲/用語候補抽出は日次 `collect.yml` に統合済み。Notionへの週次コスト反映は `sync_weekly_costs_to_notion=true` の手動実行時だけ。 |
-| `.github/workflows/send_mail.yml` | pending mail push + 18:23/19:23/20:23 JST + manual | sends mail, removes `pending_mail.json` | medium | 自動継続。冪等前提。 |
+| `.github/workflows/send_mail.yml` | mainへのpending mail push + 18:23/19:23/20:23 JST + manual | claims pending mail, sends once, records completion | medium | 自動継続。`sending_mail.json` 残留時は人が成否確認。 |
 | `.github/workflows/send_mail_watchdog.yml` | 19:07 JST + manual | triggers mail workflow | low | 自動継続。GitHub側の保険。 |
 | `.github/workflows/review_x_candidate_posts.yml` | manual only | X review data or legacy Notion sync | medium | 手動維持。通常レビューは `REVIEW X CANDIDATES`、Notion同期は `SYNC APPROVED X MEMBERS` の確認文字列必須。 |
 | `.github/workflows/discover_x_social_graph.yml` | manual only | X candidate data | medium | 手動維持。X API課金があるため定期化しない。`DISCOVER X SOCIAL GRAPH` の確認文字列必須。 |
