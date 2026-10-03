@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T12:42:21Z",
-  "generated_for_commit": "8399d8a",
+  "generated_at": "2026-10-03T02:31:13Z",
+  "generated_for_commit": "35e6e68",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -735,12 +735,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 6,
+        "commits_since": 7,
         "files_changed_since": 10
       },
-      "version": "1.23",
-      "revision_count": 24,
+      "version": "1.24",
+      "revision_count": 25,
       "history": [
+        {
+          "commit": "35e6e68",
+          "date": "2026-10-03",
+          "subject": "Retire stale approval after verified slide expiry (#267)"
+        },
         {
           "commit": "12fff4f",
           "date": "2026-09-09",
@@ -795,11 +800,6 @@
           "commit": "6083472",
           "date": "2026-08-19",
           "subject": "日次予測同期の仕様と運用境界を記録する"
-        },
-        {
-          "commit": "590b43b",
-          "date": "2026-08-18",
-          "subject": "Allow verified low-risk public data syncs (#246)"
         }
       ]
     },
