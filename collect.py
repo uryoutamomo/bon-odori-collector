@@ -10,6 +10,8 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import xml.etree.ElementTree as ET
+import tempfile
+from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -17,6 +19,7 @@ from collection_support.proactive_search import (
     build_queries,
     build_report,
     check_official_sources,
+    scan_official_sources_outcome,
     is_target_confirmation,
     load_targets,
     load_state as load_proactive_state,
@@ -427,6 +430,82 @@ YOUTUBE_CHANNEL_REGISTRY_FILE = "data/youtube_channel_registry.json"
 VOICE_TEXT_MAX_CHARS = 3000
 
 
+@dataclass
+class VoiceCollectionResult:
+    """One RSS lane result.  Failed lanes never contribute partial rows."""
+
+    state: str
+    items: list = field(default_factory=list)
+    seen_urls: list = field(default_factory=list)
+    failures: list = field(default_factory=list)
+
+
+class VoiceCollectionError(RuntimeError):
+    pass
+
+
+def _read_json_list(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as handle:
+        value = json.load(handle)
+    if not isinstance(value, list):
+        raise ValueError(f"{path} must contain a JSON array")
+    return value
+
+
+def _write_collection_outcome(outcome):
+    """Make degraded collection visible without adding a workflow artifact."""
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not summary:
+        return
+    try:
+        with open(summary, "a", encoding="utf-8") as handle:
+            handle.write("\n### voices collection outcome\n\n")
+            handle.write(f"- snapshot: `{outcome['snapshot']}`\n")
+            for name, state in outcome["lanes"].items():
+                handle.write(f"- {name}: `{state}`\n")
+            for failure in outcome.get("failures", []):
+                handle.write(f"- failure: `{failure}`\n")
+    except OSError as exc:
+        print(f"[voices] outcome summary保存エラー: {exc}")
+
+
+def _atomic_write_json(path, value):
+    path = Path(path)
+    with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as handle:
+        json.dump(value, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+        temp_name = handle.name
+    return Path(temp_name)
+
+
+def _commit_voice_snapshot(voices_file, voices, seen_file, seen):
+    """Commit both state files, restoring the first if the second replace fails."""
+    voices_file, seen_file = Path(voices_file), Path(seen_file)
+    old_voices = voices_file.read_bytes() if voices_file.exists() else None
+    old_seen = seen_file.read_bytes() if seen_file.exists() else None
+    voices_temp = _atomic_write_json(voices_file, voices)
+    seen_temp = _atomic_write_json(seen_file, seen)
+    try:
+        voices_temp.replace(voices_file)
+        seen_temp.replace(seen_file)
+    except Exception:
+        if old_voices is not None:
+            restore = voices_file.with_name(voices_file.name + ".restore")
+            restore.write_bytes(old_voices)
+            restore.replace(voices_file)
+        if old_seen is not None:
+            restore = seen_file.with_name(seen_file.name + ".restore")
+            restore.write_bytes(old_seen)
+            restore.replace(seen_file)
+        raise
+    finally:
+        for path in (voices_temp, seen_temp):
+            if path.exists():
+                path.unlink()
+
+
 def _load_active_youtube_registry_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
     """Load active YouTube channel RSS feeds from the registry if it exists."""
     if not os.path.exists(path):
@@ -526,26 +605,38 @@ def _parse_voice_entry(entry, feed_meta):
     return voice
 
 
-def collect_voices(seen_urls: set) -> tuple[list, list]:
+def collect_voices_outcome(seen_urls: set) -> VoiceCollectionResult:
     """
     VOICE_FEEDS から RSS を取得して voices エントリを返す。
     戻り値: (new_items, all_seen_urls_updated)
     feedparser 未インストール or RSS 取得失敗でも空リストを返す（fail-safe）。
     """
+    original_seen = list(seen_urls)
     if not _HAS_FEEDPARSER:
         print("[voices] feedparser がインストールされていないためスキップします")
-        return [], list(seen_urls)
+        return VoiceCollectionResult("skipped", seen_urls=original_seen)
+
+    feeds = _voice_feeds()
+    if not feeds:
+        print("[voices] RSS feed がないためスキップします")
+        return VoiceCollectionResult("skipped", seen_urls=original_seen)
 
     new_items = []
     new_seen = list(seen_urls)
+    failures = []
 
-    for feed_meta in _voice_feeds():
+    for feed_meta in feeds:
         rss_url = feed_meta["rss_url"]
         print(f"[voices] 取得中: {feed_meta['name']} ({rss_url})")
         try:
             parsed = feedparser.parse(rss_url)
-            if parsed.bozo and not parsed.entries:
-                print(f"[voices] スキップ (取得失敗 or 空): {feed_meta['name']}")
+            status = getattr(parsed, "status", None)
+            if status is None and hasattr(parsed, "get"):
+                status = parsed.get("status")
+            if (status is not None and int(status) >= 400) or parsed.bozo:
+                failure = f"rss:{feed_meta['name']}:" + (f"http_{status}" if status else "bozo")
+                failures.append(failure)
+                print(f"[voices] 取得失敗: {feed_meta['name']} ({failure.rsplit(':', 1)[-1]})")
                 continue
 
             count = 0
@@ -562,9 +653,26 @@ def collect_voices(seen_urls: set) -> tuple[list, list]:
 
         except Exception as e:
             print(f"[voices] エラー ({feed_meta['name']}): {e}")
-            # fail-safe: このソースの失敗は他ソースに影響させない
+            failures.append(f"rss:{feed_meta['name']}:{type(e).__name__}")
 
-    return new_items, new_seen
+    if failures:
+        # A partial RSS view must not look like a complete, empty snapshot.
+        return VoiceCollectionResult("failed", seen_urls=original_seen, failures=failures)
+    return VoiceCollectionResult(
+        "success" if new_items else "empty", items=new_items, seen_urls=new_seen
+    )
+
+
+def collect_voices(seen_urls: set) -> tuple[list, list]:
+    """Compatibility API for manual refresh tools.
+
+    The orchestrator uses :func:`collect_voices_outcome` so it can distinguish
+    an empty completed scan from a skipped or failed one.
+    """
+    result = collect_voices_outcome(seen_urls)
+    if result.state == "failed":
+        raise VoiceCollectionError("; ".join(result.failures))
+    return result.items, result.seen_urls
 
 
 # --- X(twitterapi.io) 収集：改善ループの最小ループ(A+B) ---
@@ -4234,19 +4342,19 @@ def main():
 
     print(f"完了: 全 {len(latest_items)} 件を記録しました。")
 
-    # --- voices 収集（fail-safe: 失敗してもニュース収集結果に影響しない）---
-    deduped_voices = []  # 後段のレポート生成で使うため、try の外で確実に定義
+    # --- voices collection: failed RSS never becomes an empty input. ---
+    deduped_voices = None
+    voice_snapshot_ready = False
+    voice_outcome = {"snapshot": "failed", "lanes": {}, "failures": []}
     try:
         voices_seen_file = 'data/voices_seen.json'
-        voices_seen_urls = set()
-        if os.path.exists(voices_seen_file):
-            try:
-                with open(voices_seen_file, 'r', encoding='utf-8') as f:
-                    voices_seen_urls = set(json.load(f))
-            except Exception:
-                pass
-
-        voice_items, updated_voices_seen = collect_voices(voices_seen_urls)
+        voices_file = 'data/voices.json'
+        voices_seen_urls = set(_read_json_list(voices_seen_file))
+        existing_voices = _read_json_list(voices_file)
+        rss = collect_voices_outcome(voices_seen_urls)
+        voice_outcome["lanes"]["rss"] = rss.state
+        voice_outcome["failures"].extend(rss.failures)
+        voice_items, updated_voices_seen = list(rss.items), list(rss.seen_urls)
 
         # X(twitterapi.io) からの「人の言葉」も同じ voices_seen を共有して収集（fail-safe）
         try:
@@ -4255,11 +4363,16 @@ def main():
                 health=x_health,
             )
             voice_items = voice_items + x_items
+            voice_outcome["lanes"]["x_keyword"] = (
+                "skipped" if not TWITTERAPI_IO_KEY else ("success" if x_items else "empty")
+            )
         except RawXArchiveError:
             raise
         except Exception as e:
             record_attempt(x_health, "keyword", "collector-unexpected-error")
             record_failure(x_health, "keyword", "collector-unexpected-error", error=e)
+            voice_outcome["lanes"]["x_keyword"] = "failed"
+            voice_outcome["failures"].append(f"x_keyword:{type(e).__name__}")
             print(f"[x] 予期せぬエラー（他収集には影響なし）: {e}")
 
         # 定番イベントを会場名＋年で能動検索（fail-safe）
@@ -4271,11 +4384,17 @@ def main():
                 health=x_health,
             )
             voice_items = proactive_x + voice_items
+            voice_outcome["lanes"]["x_proactive"] = (
+                "skipped" if not TWITTERAPI_IO_KEY or not proactive_targets else
+                ("success" if proactive_x else "empty")
+            )
         except RawXArchiveError:
             raise
         except Exception as e:
             record_attempt(x_health, "proactive", "collector-unexpected-error")
             record_failure(x_health, "proactive", "collector-unexpected-error", error=e)
+            voice_outcome["lanes"]["x_proactive"] = "failed"
+            voice_outcome["failures"].append(f"x_proactive:{type(e).__name__}")
             print(f"[proactive/x] 予期せぬエラー（他収集には影響なし）: {e}")
 
         # A. ホワイトリスト（X メンバーリスト）収集。⭐盆踊ラーを最優先ソースとして追加（fail-safe）
@@ -4285,24 +4404,20 @@ def main():
                 health=x_health,
             )
             voice_items = wl_items + voice_items  # 盆踊ラーを先頭に
+            voice_outcome["lanes"]["x_whitelist"] = (
+                "skipped" if not TWITTERAPI_IO_KEY else ("success" if wl_items else "empty")
+            )
         except RawXArchiveError:
             raise
         except Exception as e:
             record_attempt(x_health, "whitelist", "collector-unexpected-error")
             record_failure(x_health, "whitelist", "collector-unexpected-error", error=e)
+            voice_outcome["lanes"]["x_whitelist"] = "failed"
+            voice_outcome["failures"].append(f"x_whitelist:{type(e).__name__}")
             print(f"[whitelist] 予期せぬエラー（他収集には影響なし）: {e}")
 
-        # voices.json: 全件スナップショット（seen に入っていない新規のみ追加）
-        voices_file = 'data/voices.json'
-        existing_voices = []
-        if os.path.exists(voices_file):
-            try:
-                with open(voices_file, 'r', encoding='utf-8') as f:
-                    existing_voices = json.load(f)
-            except Exception:
-                pass
-
-        # 既存 + 新規（新規を先頭に）
+        # Existing + complete lanes only.  A failed RSS lane keeps its original
+        # seen position but does not prevent an independently completed X lane.
         merged_voices = voice_items + existing_voices
         # URL で重複排除（順序を保持）
         seen_in_merge = set()
@@ -4312,26 +4427,40 @@ def main():
                 deduped_voices.append(v)
                 seen_in_merge.add(v["url"])
 
-        require_writable_local_voices(voices_file)
-        with open(voices_file, 'w', encoding='utf-8') as f:
-            json.dump(deduped_voices, f, ensure_ascii=False, indent=2)
-
-        with open(voices_seen_file, 'w', encoding='utf-8') as f:
-            json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
+        rss_complete = rss.state in {"success", "empty"}
+        completed = set(voice_outcome["lanes"].values()).intersection({"success", "empty"})
+        voice_outcome["snapshot"] = (
+            "failed" if rss.state == "failed" else
+            ("success" if voice_items else ("empty" if completed else "skipped"))
+        )
+        if not completed:
+            deduped_voices = None
+        else:
+            require_writable_local_voices(voices_file)
+            _commit_voice_snapshot(
+                voices_file, deduped_voices, voices_seen_file, updated_voices_seen
+            )
+        voice_snapshot_ready = rss_complete and bool(completed)
 
         # Where the bio came from, printed before the scores are rebuilt.  An
         # all-empty run is a real finding here, not an absence of output.
-        print(X_PROFILE_PROBE.report())
+        if voice_snapshot_ready:
+            print(X_PROFILE_PROBE.report())
+            _save_x_account_scores(deduped_voices, _load_x_config() or {})
+            _refresh_official_source_registry(deduped_voices)
 
-        _save_x_account_scores(deduped_voices, _load_x_config() or {})
-        _refresh_official_source_registry(deduped_voices)
-
-        print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
+        print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices or [])} 件")
     except RawXArchiveError:
         print("[x] 生データ保存に失敗したため、voices_seen は更新せず収集を停止します")
         raise
     except Exception as e:
+        deduped_voices = None
+        voice_snapshot_ready = False
+        voice_outcome["snapshot"] = "failed"
+        voice_outcome["failures"].append(f"snapshot:{type(e).__name__}")
         print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
+
+    _write_collection_outcome(voice_outcome)
 
     finalize_health_report(x_health)
     try:
@@ -4360,12 +4489,20 @@ def main():
 
     # --- B. 会場検知 → 裏取りキュー（fail-safe: 失敗しても他処理に影響しない）---
     try:
-        detected = detect_venues_for_queue(deduped_voices, latest_items)
+        if not voice_snapshot_ready:
+            print("[queue] voices snapshot が未保存のため候補探索をスキップ")
+            detected = None
+        else:
+            detected = detect_venues_for_queue(deduped_voices, latest_items)
+        if detected is None:
+            raise StopIteration
         for candidate in detected:
             candidate["type"] = QUEUE_TYPE_VENUE
         push_torimochi_queue(detected)
         # 掃除ループ: こわが『該当なし』にした行を自動アーカイブ
         archive_resolved_queue()
+    except StopIteration:
+        pass
     except Exception as e:
         print(f"[queue] 予期せぬエラー（他処理には影響なし）: {e}")
 
@@ -4373,6 +4510,8 @@ def main():
     sokuho_list = []
     event_signal_list = []
     try:
+        if not voice_snapshot_ready:
+            raise StopIteration
         # 会場マスタの初期投入（用語集が空の場合のみ実行）
         bootstrap_glossary_if_empty(venue_master_raw)
 
@@ -4386,21 +4525,34 @@ def main():
                 print(f"[signals] イベント確度変化シグナル {len(event_signal_list)} 件")
             if sokuho_list:
                 print(f"[sokuho] 速報候補 {len(sokuho_list)} 件")
+    except StopIteration:
+        print("[sokuho/signals] voices snapshot が未保存のためスキップ")
     except Exception as e:
         print(f"[sokuho/signals] 予期せぬエラー（他処理には影響なし）: {e}")
 
     # --- 定番イベントの公式情報源確認・抜け漏れレポート（fail-safe）---
     try:
+        if not voice_snapshot_ready:
+            raise StopIteration
         official_evidence = []
+        official_outcomes = {}
         for target in proactive_targets:
+            outcome = scan_official_sources_outcome(target, current_year)
+            official_outcomes[target["venue"]] = outcome
             official_evidence.extend(
-                check_official_sources(target, current_year)
+                row["evidence"] for row in outcome.rows
+                if row.get("status") == "confirmed"
             )
         proactive_report = build_report(
             proactive_targets,
             latest_items + deduped_voices + official_evidence,
             current_year,
         )
+        for item in proactive_report:
+            outcome = official_outcomes.get(item["venue"])
+            if outcome:
+                item["official_scan_state"] = outcome.state
+                item["official_scan_failures"] = outcome.failures
         proactive_state = update_state_from_report(
             load_proactive_state(),
             proactive_targets,
@@ -4423,6 +4575,8 @@ def main():
             f"[proactive/report] 対象 {len(proactive_report)} 件、"
             f"未確認 {unconfirmed} 件"
         )
+    except StopIteration:
+        print("[proactive/report] voices snapshot が未保存のため探索履歴を更新しない")
     except Exception as e:
         print(f"[proactive/report] 作成失敗（スキップ）: {e}")
 
@@ -4453,7 +4607,7 @@ def main():
     # X由来の「人の言葉」を直近7日で抽出してサマリー投稿素材にする
     # （⭐盆踊ラー→🟢一次レポを優先。deduped_voices は新規が先頭）
     x_voices_all = [
-        v for v in deduped_voices
+        v for v in (deduped_voices or [])
         if v.get("source") in ("x", "x_whitelist")
         and (_parse_date(v.get("date")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
     ]
@@ -4488,9 +4642,12 @@ def main():
     except Exception as e:
         print(f"[cost] コスト集計エラー（表示スキップ）: {e}")
 
-    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at,
-                   x_voices_recent, x_cost, sokuho_list, event_signal_list,
-                   proactive_report)
+    if voice_snapshot_ready:
+        push_to_notion(recent_items if recent_items else latest_items[:30], updated_at,
+                       x_voices_recent, x_cost, sokuho_list, event_signal_list,
+                       proactive_report)
+    else:
+        print("[notion] voices snapshot が未保存のためサマリー素材を更新しない")
 
 def _run_cli(argv=None):
     argv = list(argv or sys.argv)

@@ -4,6 +4,7 @@ import os
 import re
 import urllib.parse
 import urllib.request
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
 
@@ -15,6 +16,15 @@ DATE_RE = re.compile(
     r"(?:(20\d{2})年)?\s*(\d{1,2})月\s*(\d{1,2})日"
     r"|(?:(20\d{2})[-/])?(\d{1,2})[-/](\d{1,2})"
 )
+
+
+@dataclass
+class OfficialScanOutcome:
+    state: str
+    rows: list = field(default_factory=list)
+    failures: list = field(default_factory=list)
+    attempted_sources: int = 0
+    succeeded_sources: int = 0
 
 
 def parse_months(value):
@@ -170,6 +180,8 @@ def update_state_from_report(state, targets, report, now=None):
     for target in targets or []:
         key = target_key(target)
         item = report_by_key.get(key) or {}
+        if item.get("official_scan_state") in {"failed", "skipped"}:
+            continue
         previous = records.get(key) or {}
         records[key] = {
             **previous,
@@ -213,31 +225,41 @@ def check_official_sources(target, year, timeout=20):
     ]
 
 
-def scan_official_sources(target, year, timeout=20, max_links_per_source=8):
-    results = []
-    for url in target.get("official_sources") or []:
+def scan_official_sources_outcome(target, year, timeout=20, max_links_per_source=8):
+    """Return rows plus completion state; partial reads never imply checked."""
+    urls = list(target.get("official_sources") or [])
+    if not urls:
+        return OfficialScanOutcome("skipped")
+    rows, failures, succeeded = [], [], 0
+    for url in urls:
         try:
             page = fetch_html_page(url, timeout=timeout)
             if not page:
+                failures.append({"url": url, "reason": "empty_response"})
                 continue
             pages = [page]
             pages.extend(
                 linked_page
-                for linked_page in discover_relevant_pages(page, target, year, timeout=timeout)[:max_links_per_source]
+                for linked_page in discover_relevant_pages(
+                    page, target, year, timeout=timeout, failures=failures
+                )[:max_links_per_source]
                 if linked_page.get("url") != page.get("url")
             )
             for candidate_page in pages:
-                item = {
-                    "title": candidate_page.get("title") or "",
-                    "text": candidate_page.get("text") or "",
-                    "url": candidate_page.get("url") or "",
-                }
+                item = {"title": candidate_page.get("title") or "", "text": candidate_page.get("text") or "", "url": candidate_page.get("url") or ""}
                 status = "confirmed" if is_target_confirmation(item, target, year) else "unconfirmed"
-                candidate = build_official_source_candidate(target, item, year, status)
-                results.append(candidate)
+                rows.append(build_official_source_candidate(target, item, year, status))
+            succeeded += 1
         except Exception as exc:
             print(f"[proactive] 公式URL確認失敗（{url}）: {exc}")
-    return dedupe_scan_results(results)
+            failures.append({"url": url, "reason": type(exc).__name__})
+    rows = dedupe_scan_results(rows)
+    state = "failed" if failures else ("success" if any(row.get("status") == "confirmed" for row in rows) else "empty")
+    return OfficialScanOutcome(state, rows, failures, len(urls), succeeded)
+
+
+def scan_official_sources(target, year, timeout=20, max_links_per_source=8):
+    return scan_official_sources_outcome(target, year, timeout, max_links_per_source).rows
 
 
 def fetch_html_page(url, timeout=20):
@@ -258,7 +280,7 @@ def fetch_html_page(url, timeout=20):
     }
 
 
-def discover_relevant_pages(page, target, year, timeout=20):
+def discover_relevant_pages(page, target, year, timeout=20, failures=None):
     pages = []
     scored_links = []
     terms = _unique(
@@ -292,6 +314,8 @@ def discover_relevant_pages(page, target, year, timeout=20):
                 pages.append(fetched)
         except Exception as exc:
             print(f"[proactive] 関連ページ取得失敗（{link['url']}）: {exc}")
+            if failures is not None:
+                failures.append({"url": link["url"], "reason": type(exc).__name__})
     return pages
 
 

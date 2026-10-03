@@ -4,6 +4,7 @@ layer: L1
 title: 収集サブシステム
 owns:
   - collect.py
+  - collection_support/proactive_search.py
   - x_queries.json
   - collection_support/x_raw_archive.py
   - collection_support/x_budget_guard.py
@@ -39,6 +40,7 @@ invariants:
   - INV-COL-008
   - INV-COL-009
   - INV-COL-010
+  - INV-COL-011
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -168,6 +170,13 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **守っているコード**: `build_odottar_coverage_benchmark.py`、`.github/workflows/odottar-coverage-benchmark.yml`
 - **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates`、
   `tests/test_odottar_coverage_benchmark.py::test_workflow_archives_raw_but_commits_only_metrics`
+
+### INV-COL-011 取得失敗を空の収集結果として下流へ渡さない
+
+- **内容**: RSSは `success` / `empty` / `skipped` / `failed` を明示する。部分失敗のRSS行と既読位置は保存せず、完了した独立Xレーンだけは保存できる。snapshotの読込・保存失敗時は、会場候補、Xアカウント台帳、速報、定番探索履歴、Notionサマリー素材を更新しない。公式巡回もtargetごとの状態を残し、`failed` / `skipped` のtargetは探索履歴を進めない。
+- **なぜ**: 外部取得の失敗を「投稿なし」「未確認の確認完了」とすると、候補が静かに消え、次回探索の優先度まで下がる。
+- **守っているコード**: `collect.py` の `collect_voices_outcome()` とsnapshot gate、`collection_support/proactive_search.py` の `scan_official_sources_outcome()` / `update_state_from_report()`。
+- **守っているテスト**: `tests/test_collect_voices.py::CollectVoicesTest::test_partial_rss_failure_does_not_advance_seen_or_return_partial_items`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_invalid_existing_snapshot_never_reaches_voice_derived_downstream`、`tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history`。
 
 ## 主要な流れ
 

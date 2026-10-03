@@ -2,11 +2,44 @@ import json
 import os
 import tempfile
 import unittest
+from unittest.mock import patch
 
+import collect
 from collect import VOICE_TEXT_MAX_CHARS, _load_active_youtube_registry_feeds, _parse_voice_entry, _voice_feeds
 
 
 class CollectVoicesTest(unittest.TestCase):
+    def test_partial_rss_failure_does_not_advance_seen_or_return_partial_items(self):
+        feeds = [
+            {"name": "good", "rss_url": "https://good.test", "source": "youtube", "account": "a"},
+            {"name": "bad", "rss_url": "https://bad.test", "source": "youtube", "account": "b"},
+        ]
+        entry = {"title": "new", "link": "https://youtube.test/new", "summary": "text"}
+        good = type("Feed", (), {"bozo": False, "entries": [entry]})()
+        parser = type("Parser", (), {"parse": staticmethod(lambda _url: None)})()
+        with (
+            patch.object(collect, "_HAS_FEEDPARSER", True),
+            patch.object(collect, "_voice_feeds", return_value=feeds),
+            patch.object(collect, "feedparser", parser, create=True),
+            patch.object(parser, "parse", side_effect=[good, OSError("down")]),
+        ):
+            result = collect.collect_voices_outcome({"https://old.test"})
+        self.assertEqual(result.state, "failed")
+        self.assertEqual(result.items, [])
+        self.assertEqual(result.seen_urls, ["https://old.test"])
+
+    def test_missing_parser_is_explicit_skip(self):
+        with patch.object(collect, "_HAS_FEEDPARSER", False):
+            result = collect.collect_voices_outcome({"https://old.test"})
+        self.assertEqual(result.state, "skipped")
+        self.assertEqual(result.seen_urls, ["https://old.test"])
+
+    def test_compatibility_collector_does_not_turn_failure_into_empty_result(self):
+        with patch.object(collect, "collect_voices_outcome", return_value=collect.VoiceCollectionResult(
+            "failed", failures=["rss:test:bozo"]
+        )):
+            with self.assertRaises(collect.VoiceCollectionError):
+                collect.collect_voices(set())
     def test_voice_text_keeps_youtube_setlist_beyond_old_500_char_limit(self):
         long_setlist = "\n".join(f"{i} 東京音頭{i}" for i in range(1, 180))
         entry = {

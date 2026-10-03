@@ -2,6 +2,7 @@ import json
 import os
 import tempfile
 import unittest
+from unittest.mock import patch
 from datetime import datetime, timezone
 
 from collection_support.proactive_search import (
@@ -15,11 +16,33 @@ from collection_support.proactive_search import (
     select_targets_for_run,
     target_key,
     update_state_from_report,
+    scan_official_sources_outcome,
 )
 from sync_venue_master import _prop
 
 
 class ProactiveSearchTest(unittest.TestCase):
+    def test_official_failure_preserves_target_history(self):
+        target = {"venue": "会場", "event_name": "催事", "months": [6], "official_sources": ["https://example.test/"]}
+        with patch("collection_support.proactive_search.fetch_html_page", side_effect=OSError("down")):
+            outcome = scan_official_sources_outcome(target, 2026)
+        self.assertEqual(outcome.state, "failed")
+        state = update_state_from_report(
+            {"targets": {target_key(target): {"last_checked_at": "old", "checked_count": 4, "last_status": "confirmed"}}},
+            [target], [{"venue": "会場", "event_name": "催事", "status": "unconfirmed", "official_scan_state": outcome.state}],
+            now=datetime(2026, 6, 13, tzinfo=timezone.utc),
+        )
+        self.assertEqual(state["targets"][target_key(target)]["checked_count"], 4)
+        self.assertEqual(state["targets"][target_key(target)]["last_status"], "confirmed")
+
+    def test_official_partial_failure_keeps_rows_but_is_not_complete(self):
+        target = {"venue": "会場", "event_name": "催事", "months": [6], "official_sources": ["https://one.test/", "https://two.test/"]}
+        page = {"url": "https://one.test/", "title": "催事 2026 盆踊り", "text": "催事 2026 盆踊り", "links": []}
+        with patch("collection_support.proactive_search.fetch_html_page", side_effect=[page, OSError("down")]):
+            outcome = scan_official_sources_outcome(target, 2026)
+        self.assertEqual(outcome.state, "failed")
+        self.assertEqual(len(outcome.rows), 1)
+        self.assertEqual(outcome.succeeded_sources, 1)
     def test_parse_months_accepts_notion_shapes(self):
         self.assertEqual(parse_months(6), [6])
         self.assertEqual(parse_months("6月、7月"), [6, 7])
