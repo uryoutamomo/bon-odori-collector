@@ -4,6 +4,7 @@ layer: L1
 title: 収集サブシステム
 owns:
   - collect.py
+  - collection_support/proactive_search.py
   - x_queries.json
   - collection_support/x_raw_archive.py
   - collection_support/x_budget_guard.py
@@ -39,6 +40,7 @@ invariants:
   - INV-COL-008
   - INV-COL-009
   - INV-COL-010
+  - INV-COL-011
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -46,10 +48,13 @@ verified_by:
   - tests/test_x_search_watermark.py
   - tests/test_x_gap_candidates.py
   - tests/test_collect_event_state_axes_wiring.py
+  - tests/test_collect_outcomes_main.py
+  - tests/test_collect_voices.py
+  - tests/test_proactive_search.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_ward_official_source_registry.py
   - tests/test_odottar_coverage_benchmark.py
-updated_for: a47769f
+updated_for: 7a8cd7c0
 ---
 
 # 収集サブシステム
@@ -88,11 +93,11 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 
 ### INV-COL-003 収集不能・受理0件を正常な「投稿なし」として扱わない
 
-- **内容**: `collect_x_voices()` はキー・設定・予算が欠けると理由つきで安全にスキップする。さらに `finalize_health_report()` は、収集が必要なのに無効だった場合と、成功扱いでも受理0件だった場合を `unhealthy` にする。
+- **内容**: `collect_x_voices()` はキー・意図的な無効設定・予算が欠けると理由つきで安全にスキップする。設定読込やAPIに失敗記録があれば、enabled値や成功した別レーンの受理件数にかかわらず `finalize_health_report()` は `unhealthy` にする。収集が必要なのに無効だった場合と、有効な収集でも受理0件だった場合も `unhealthy` にする。
 - **なぜ**: 2026-08-10のtwitterapi.io課金切れでは、HTTP上は成功しても取得が空だった。止めるだけでは障害を「投稿なし」と取り違えるため、空を異常として見える化しなければならない。
 - **破れたときの症状**: API費用が予想外に増える、または収集停止・受理0件が正常終了に見えて探索の穴が何日も続く。
 - **守っているコード**: `collect.py` の `collect_x_voices()`、`collection_support/x_budget_guard.py`、`collection_support/x_collection_health.py` の `finalize_health_report()`
-- **守っているテスト**: `tests/test_x_collection_health.py::test_successful_but_zero_item_run_is_unhealthy`、`tests/test_x_collection_health.py::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items`
+- **守っているテスト**: `tests/test_x_collection_health.py::XCollectionHealthTest::test_successful_but_zero_item_run_is_unhealthy`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_failed_config_is_unhealthy_even_when_collection_is_disabled`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_partial_request_failure_is_unhealthy_despite_accepted_items`
 
 ### INV-COL-004 未完了のホワイトリスト収集では since_time を進めない
 
@@ -168,6 +173,13 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **守っているコード**: `build_odottar_coverage_benchmark.py`、`.github/workflows/odottar-coverage-benchmark.yml`
 - **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates`、
   `tests/test_odottar_coverage_benchmark.py::test_workflow_archives_raw_but_commits_only_metrics`
+
+### INV-COL-011 取得失敗を空の収集結果として下流へ渡さない
+
+- **内容**: RSSは `success` / `empty` / `skipped` / `failed` を明示する。部分失敗のRSS行と既読位置は保存せず、完了した独立Xレーンだけは保存できる。snapshotの読込・保存失敗時は、会場候補、Xアカウント台帳、速報、定番探索履歴、Notionサマリー素材を更新しない。公式巡回もtargetごとの状態を残し、`failed` / `skipped` のtargetは探索履歴を進めない。Xレーンの正常な0件は `empty`、設定上の未実行は `skipped`、healthの失敗・未完了は `failed` とする。これはINV-COL-003の「collection-requiredで受理0件は全体unhealthy」とは別に、各レーンが空を失敗と偽らない契約である。
+- **なぜ**: 外部取得の失敗を「投稿なし」「未確認の確認完了」とすると、候補が静かに消え、次回探索の優先度まで下がる。
+- **守っているコード**: `collect.py` の `collect_voices_outcome()` とsnapshot gate、`collection_support/proactive_search.py` の `scan_official_sources_outcome()` / `update_state_from_report()`。
+- **守っているテスト**: `tests/test_collect_voices.py::CollectVoicesTest::test_partial_rss_failure_does_not_advance_seen_or_return_partial_items`、`tests/test_collect_voices.py::CollectVoicesTest::test_invalid_existing_youtube_registry_is_a_failed_outcome`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_proactive_without_budget_or_api_access`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_whitelist_without_budget_or_api_access`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_non_dict_x_config_is_recorded_as_lane_failure`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_invalid_existing_snapshot_never_reaches_voice_derived_downstream`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_empty_completed_lanes_reach_voice_derived_downstream`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_x_partial_failure_closes_every_voice_derived_gate`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_broken_x_config_is_failed_and_closes_voice_derived_gates`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_score_write_failure_closes_later_voice_gates`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_voice_snapshot_rollback_removes_new_first_file_when_second_replace_fails`、`tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history`、`tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_restores_state_when_report_replace_fails`、`tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_removes_new_files_when_report_replace_fails`。
 
 ## 主要な流れ
 

@@ -2,6 +2,8 @@ import json
 import os
 import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 from datetime import datetime, timezone
 
 from collection_support.proactive_search import (
@@ -15,11 +17,68 @@ from collection_support.proactive_search import (
     select_targets_for_run,
     target_key,
     update_state_from_report,
+    scan_official_sources_outcome,
+    commit_state_and_report,
 )
 from sync_venue_master import _prop
 
 
 class ProactiveSearchTest(unittest.TestCase):
+    def test_state_and_report_commit_removes_new_files_when_report_replace_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path, report_path = Path(tmp) / "state.json", Path(tmp) / "report.json"
+            original_replace = Path.replace
+            calls = []
+            def fail_report(source, target):
+                calls.append((source, target))
+                if len(calls) == 2:
+                    raise OSError("report replace")
+                return original_replace(source, target)
+            with patch.object(Path, "replace", fail_report):
+                with self.assertRaises(OSError):
+                    commit_state_and_report({}, state_path, report_path, {})
+            self.assertFalse(state_path.exists())
+            self.assertFalse(report_path.exists())
+
+    def test_state_and_report_commit_restores_state_when_report_replace_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path, report_path = Path(tmp) / "state.json", Path(tmp) / "report.json"
+            state_path.write_bytes(b"old-state")
+            report_path.write_bytes(b"old-report")
+            original_replace = Path.replace
+            calls = []
+            def fail_report(source, target):
+                calls.append((source, target))
+                if len(calls) == 2:
+                    raise OSError("report replace")
+                return original_replace(source, target)
+            with patch.object(Path, "replace", fail_report):
+                with self.assertRaises(OSError):
+                    commit_state_and_report({}, state_path, report_path, {})
+            self.assertEqual(state_path.read_bytes(), b"old-state")
+            self.assertEqual(report_path.read_bytes(), b"old-report")
+
+    def test_official_failure_preserves_target_history(self):
+        target = {"venue": "会場", "event_name": "催事", "months": [6], "official_sources": ["https://example.test/"]}
+        with patch("collection_support.proactive_search.fetch_html_page", side_effect=OSError("down")):
+            outcome = scan_official_sources_outcome(target, 2026)
+        self.assertEqual(outcome.state, "failed")
+        state = update_state_from_report(
+            {"targets": {target_key(target): {"last_checked_at": "old", "checked_count": 4, "last_status": "confirmed"}}},
+            [target], [{"venue": "会場", "event_name": "催事", "status": "unconfirmed", "official_scan_state": outcome.state}],
+            now=datetime(2026, 6, 13, tzinfo=timezone.utc),
+        )
+        self.assertEqual(state["targets"][target_key(target)]["checked_count"], 4)
+        self.assertEqual(state["targets"][target_key(target)]["last_status"], "confirmed")
+
+    def test_official_partial_failure_keeps_rows_but_is_not_complete(self):
+        target = {"venue": "会場", "event_name": "催事", "months": [6], "official_sources": ["https://one.test/", "https://two.test/"]}
+        page = {"url": "https://one.test/", "title": "催事 2026 盆踊り", "text": "催事 2026 盆踊り", "links": []}
+        with patch("collection_support.proactive_search.fetch_html_page", side_effect=[page, OSError("down")]):
+            outcome = scan_official_sources_outcome(target, 2026)
+        self.assertEqual(outcome.state, "failed")
+        self.assertEqual(len(outcome.rows), 1)
+        self.assertEqual(outcome.succeeded_sources, 1)
     def test_parse_months_accepts_notion_shapes(self):
         self.assertEqual(parse_months(6), [6])
         self.assertEqual(parse_months("6月、7月"), [6, 7])

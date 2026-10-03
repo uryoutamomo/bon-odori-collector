@@ -14,7 +14,7 @@
 | --- | --- | --- | --- |
 | 1 | 過去年の時間が今年の公式確認済み情報として表示される | 完了 | 時間の年・開催回・根拠を検証し、過去/不明の時間へ公式確認を付けない。実例3件と当年の正例を検証し、公開面を照合する |
 | 2 | 収集が成功しても公開データが更新されない | 完了 | 最新collector→site→snapshot→liveの内容一致を確認し、同期停止の検出・復旧手順を整える |
-| 3 | 収集失敗が情報なし・確認済み探索へ置き換わる | 未着手 | success / empty / skipped / failedを区別し、失敗入力で下流の候補・探索履歴を更新しない。障害注入で確認する |
+| 3 | 収集失敗が情報なし・確認済み探索へ置き換わる | 完了 | success / empty / skipped / failedを区別し、失敗入力で下流の候補・探索履歴を更新しない。障害注入で確認する |
 | 4 | 日次監視の誤警報と会場データの監視漏れ | 未着手 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
 | 5 | 開催回の識別がイベント名＋会場名に依存する | 未着手 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
 | 6 | 最新の公式告知へ辿れる導線が少ない | 未着手 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
@@ -83,8 +83,26 @@ eventsとgeoは生成snapshot/liveのcanonical hash一致、app・index・venues
 証跡: `bonsuke-system-improvements-evidence-20261003/step2-live/verification.json`、`step2-sync.log`。
 siteの `docs/public-sync-deploy-runbook.md` へ、Syncの停止理由確認、入力固定、公開投影照合と記録を追加した。
 手動復旧の成功であり、翌日の自然schedule成功を確認したとは扱わない。
+公開会場詳細176ページも生成snapshot/liveのbyte一致を全件確認した。
+証跡: `bonsuke-system-improvements-evidence-20261003/step2-venues-live/verification.json`。
 
-## 2〜7. 次工程
+## 3. 取得失敗と正常な0件の分離
 
-1の完了後、上の一覧の順で着手する。正本RDBの修正が必要な場合はmanifest/checksum・backup・dry-run・
+状態: 完了（[PR271](https://github.com/uryoutamomo/bon-odori-collector/pull/271)のmain反映時点）。RSSと各Xレーンの結果を `success` / `empty` / `skipped` / `failed`
+で記録し、内部で捕捉したXエラーや未完了もmainの下流gateへ通す。失敗時は候補・score・公式台帳・速報・
+探索履歴・Notion素材を更新しない。正常に取得したXデータはRSS失敗時にも保存し、未完了snapshotとして下流を閉じる。
+
+意図的なX無効化・任意設定不存在はskip、設定破損はfailed。失敗があれば全体healthもunhealthyとなる。
+公式トップ・関連ページ取得失敗と巡回skipでは確認日時・回数を進めない。
+voices/seenと探索state/reportは、二本目の置換失敗時に旧bytesまたは元の不存在へ復元する。
+
+独立レビュー合格、focused51件、全pytest1,941件・subtests246件、仕様check、diff checkを通過。
+正常emptyが下流へ到達する正例と、X障害・設定破損・score保存障害で停止する実mainの負例を検査した。
+failed-lane gateを外す変異が統合検査に検知されることも独立確認した。
+証跡: `bonsuke-system-improvements-evidence-20261003/step3-tests.log`。
+実APIを追加実行する検査ではなく、隔離した故障注入による検証。次の自然scheduleの結果は別途観測する。
+
+## 4〜7. 次工程
+
+3の完了後、上の一覧の順で着手する。正本RDBの修正が必要な場合はmanifest/checksum・backup・dry-run・
 レビュー・apply後再検証を行う。根拠のない時間やURLを補うために推測を確定情報へ昇格させない。
