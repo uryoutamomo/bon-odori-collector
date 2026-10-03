@@ -84,11 +84,11 @@ eventsとgeoは生成snapshot/liveのcanonical hash一致、app・index・venues
 siteの `docs/public-sync-deploy-runbook.md` へ、Syncの停止理由確認、入力固定、公開投影照合と記録を追加した。
 手動復旧の成功であり、翌日の自然schedule成功を確認したとは扱わない。
 公開会場詳細176ページも生成snapshot/liveのbyte一致を全件確認した。
-証跡: `bonsuke-system-improvements-evidence-20261003/step2-live/venue-pages-verification.json`。
+証跡: `bonsuke-system-improvements-evidence-20261003/step2-venues-live/verification.json`。
 
 ## 3. 取得失敗と正常な0件の分離
 
-状態: 完了（本変更のmain反映時点）。RSSと各Xレーンの結果を `success` / `empty` / `skipped` / `failed`
+状態: 完了（[PR271](https://github.com/uryoutamomo/bon-odori-collector/pull/271)のmain反映時点）。RSSと各Xレーンの結果を `success` / `empty` / `skipped` / `failed`
 で記録し、内部で捕捉したXエラーや未完了もmainの下流gateへ通す。失敗時は候補・score・公式台帳・速報・
 探索履歴・Notion素材を更新しない。正常に取得したXデータはRSS失敗時にも保存し、未完了snapshotとして下流を閉じる。
 
