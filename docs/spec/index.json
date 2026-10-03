@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T03:10:53Z",
-  "generated_for_commit": "807affe",
+  "generated_at": "2026-10-03T03:44:09Z",
+  "generated_for_commit": "8886c20",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -1445,7 +1445,7 @@
         "tests/test_public_json_field_sparsity.py",
         "tests/test_apply_public_date_predictions.py"
       ],
-      "updated_for": "01b1616",
+      "updated_for": "807affe",
       "path": "docs/spec/L2/public-json.md",
       "owned_files": [
         "data/public/event_songs_public.json",
@@ -1453,12 +1453,17 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 3
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.5",
-      "revision_count": 6,
+      "version": "1.6",
+      "revision_count": 7,
       "history": [
+        {
+          "commit": "8886c20",
+          "date": "2026-10-03",
+          "subject": "Document current occurrence time evidence contract and verification (#269)"
+        },
         {
           "commit": "ba3b36d",
           "date": "2026-09-09",
