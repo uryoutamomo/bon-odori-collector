@@ -18,7 +18,7 @@
 | 4 | 日次監視の誤警報と会場データの監視漏れ | 完了 | 日付跨ぎの遅延を誤判定せず、events・venues・geoのsource/snapshot/liveを監視する |
 | 5 | 開催回の識別がイベント名＋会場名に依存する | 完了 | 安定した開催回IDを公開と差分検査まで通し、複数年/年内複数回の行を上書きしない。既存承認との互換を安全に移行する |
 | 6 | 最新の公式告知へ辿れる導線が少ない | 完了 | 主催者・自治体の公式根拠を検証可能な形で公開へ通す。非公式リンクの公開方針を守り、根拠不足を可視化する |
-| 7 | 巨大な収集処理と重複する共通規則 | 実装・検証完了（main反映待ち） | 収集レーンと結果契約を分離し、YouTube URL解釈を統一。固定入力の挙動比較と失敗境界テストを通す |
+| 7 | 巨大な収集処理と重複する共通規則 | 完了 | 収集レーンと結果契約を分離し、YouTube URL解釈を統一。固定入力の挙動比較と失敗境界テストを通す |
 
 ## 調査時の根拠
 
@@ -151,10 +151,18 @@ siteの既存一意event URLを維持し、衝突だけIDから分離。正規Sy
 
 ## 7. 収集責務の分離と共通規則
 
-状態: 実装・検証中。6の公開照合完了後に着手した。RSS収集・outcome・2ファイル保存を独立moduleへ移し、mainは各レーンの結果を束ねて下流gateする。既存APIとpatch入口を薄いfacadeで保持する。YouTube動画URLは単一pure parserへ統一し、固定入力の挙動比較と故障境界を検査する。
+状態: 完了。6の公開照合完了後に着手した。RSS収集・outcome・2ファイル保存を独立moduleへ移し、mainは各レーンの結果を束ねて下流gateする。既存APIとpatch入口を薄いfacadeで保持する。YouTube動画URLは単一pure parserへ統一し、固定入力の挙動比較と故障境界を検査する。
 
 RSSは `collection_support/rss_voices.py` へ移設し、collect.pyを4692→4492行にした。取得outcome、entry変換、registry/feed、2ファイル保存を一つのレーン責務として切り出し、parser/feed/entry parserのpatch入口を互換facadeから注入する。旧 `5a6310fe` のRSS関数をAST隔離して、成功・部分失敗のitems/seen/failureと保存bytesの完全一致を確認した。正常emptyでは下流へ進み、RSS/X失敗では候補・探索履歴などを更新しない。2回目replace失敗で既存bytes/初回不存在を復元する。failed帰還を外す隔離mutationは負例が検出した。
 
 YouTube ID抽出を `youtube_channels/video_urls.py` へ統一した。watch/shorts/短縮URLを両consumerで扱い、既存の短IDは保持する。HTTP(S)・実hostname・非空ASCII IDを検査し、複数v/foreign/類似ドメインを拒否する。raw URLを先に判定し、compact_urlの部分文字列判定も除去した。外部URL内のyoutu.be文字列が正規動画へ化けないことを実RDB consumerで検証した。関連focused83 passed/21 subtests、独立レビュー合格。公開データ・正本DB・API予算・workflowは変更せず、実収集/APIを追加実行していない。
 
-証跡: `bonsuke-system-improvements-evidence-20261003/step7-rss-facade-parity.json`、`step7-exact-final-tests.log`。main反映後に全7件の完了を確定する。
+証跡: `bonsuke-system-improvements-evidence-20261003/step7-rss-facade-parity.json`、`step7-exact-final-tests.log`。PR #275を2026-10-03 15:33 JSTにmergeした（`1339c0f0`）。最終full suite2032 passed/267 subtests、CI `37103335993`（full）・`37103336025`（spec）が成功。全7件の実装・検証・必要な公開反映を完了した。
+
+## 完了時の確認範囲
+
+1→7の順に進め、各課題の完了条件を満たした。公開面は最後の変更6でcollector→site→snapshot→liveを照合し、394開催回/176会場/160座標、全179probeが一致した。7は内部責務とURL規則の変更で、公開JSON・workflow・正本DBに差分はない。
+
+実収集APIの再実行は行っていない。2026-10-03分の自然scheduleは完了時点で未観測であり、手動Sync/Healthの成功と区別する。次回の実運用結果はGitHub Actionsと日次監視が確認する。既存のdirty checkoutを保ち、隔離worktreeで実装・レビュー・mergeした。
+
+完了記録: おと（Codex）
