@@ -111,3 +111,7 @@ observed_occurrences ──< observed_occurrence_songs
 ---
 
 おと（Codex）
+
+## 当年公式URLの訂正（2026-10-03）
+
+`official_source_links_20261003[_reviewed].json` は既存4開催回の当年出典URLを訂正する有限入力。既存ID・開催年・日付・会場・confidenceを固定し、`expected_source_url`と一致した場合だけcanonical `confirm_current_year_date` を適用する。詳細・時刻は追加しない。出典とdate_and_venue根拠参照は記録する。dry-run→独立レビュー→reviewed promotion→backup/CAS→再取得検証を行う。証跡と一次資料は [改善記録6](../../system-improvements-20261003.md#6-当年の公式リンク) を正本とする。
