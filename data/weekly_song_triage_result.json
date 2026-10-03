@@ -1,16 +1,64 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 5,
-  "direct_count": 3,
-  "created_count": 1,
-  "updated_count": 2,
-  "rejected_noise_count": 1,
-  "review_count": 1,
+  "song_candidate_count": 12,
+  "direct_count": 8,
+  "created_count": 7,
+  "updated_count": 1,
+  "rejected_noise_count": 2,
+  "review_count": 2,
   "created": [
     {
       "song_name": "忍岡音頭",
       "source_term": "忍岡音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "南越谷阿波踊り",
+      "source_term": "南越谷阿波踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "渋谷阿波おどり",
+      "source_term": "渋谷阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "舞台おどり",
+      "source_term": "舞台おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "舞台踊り",
+      "source_term": "舞台踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "阿波おどり",
+      "source_term": "阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "高円寺阿波おどり",
+      "source_term": "高円寺阿波おどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -25,20 +73,16 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "rejected_noise": [
     {
       "term": "信濃町ふるさと音頭",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "阿波踊り",
+      "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
   "review": [
@@ -46,7 +90,13 @@
       "term": "水戸黄門おどり",
       "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=R0aLsvFWU_Y"
+      "evidence_url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo"
+    },
+    {
+      "term": "ズンパ音頭",
+      "evidence_count": 1,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=2srwsDXe6og"
     }
   ]
 }

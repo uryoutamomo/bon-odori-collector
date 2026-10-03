@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7441,
+  "count": 7438,
   "summary": {
     "critical": 48,
-    "high": 1329,
+    "high": 1328,
     "trusted_informant": 51,
     "already_read": 3,
     "date_gap_matched": 109
@@ -4592,27 +4592,6 @@
         "https://pbs.twimg.com/amplify_video_thumb/2091751337616969728/img/0jaBXmgbTrZvLjUV.jpg"
       ],
       "text": "8/23①新小岩銀座 夏まつり\n\n木津かおりさんらの民謡ユニット、唄花座ステージ🎶\n\n伊勢音頭、こきりこ節、日光和楽踊り、秋田おばこなど、重なり合う唄声と演奏と踊りに魅了されました✨とくに瞽女唄かわいがらんせは圧巻！\n\n真室川音頭やおてもやん、郡上白鳥、炭坑節などでは踊りも楽しめました〜🙌 https://t.co/aEapH0beOJ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_d25ee7743ddc1f6b",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@musako_higako",
-      "account_name": "武蔵小金井・東小金井の街情報",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/musako_higako/status/2073560745552621898",
-      "tweet_id": "2073560745552621898",
-      "date": "2026-07-05T00:13:01+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMbEgJebQAAYuSz.jpg",
-        "https://t.co/ijDttzVc2C",
-        "pic.x.com/ijDttzVc2C"
-      ],
-      "text": "【イベント情報】\n7/19(日)、梶野公園で「梶野町夏まつり」が開催されます！\n特設ステージでのダンスやものまね、プロレスといった演目に屋台や縁日、そして今年は盆踊りもありますので、気になる方は是非お越しください！\n\n(概要)\nイベント名:梶野町夏まつり\n日時:7/19(日)15:00-20:05\n会場:梶野公園\nその他:雨天(小雨)決行\n主催:梶野町会\n協賛:ヒガコ北口商店会",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -33646,51 +33625,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_544a622f3d4c7038",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@natsumoude",
-      "account_name": "【公式】夏詣",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/natsumoude/status/2073421683122393144",
-      "tweet_id": "2073421683122393144",
-      "date": "2026-07-04T15:00:26+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMZFiVXaIAA8EvO.jpg",
-        "https://t.co/tSR49Oyuft",
-        "pic.x.com/tSR49Oyuft"
-      ],
-      "text": "＼2日目の曲目、発表します！／ \n7/5(日)の浅草神社 #夏詣 盆をどり\n18:00〜19:30 \n\nまた🗼東京パラダイス🌆を踊りましょう！\n🌂少しお天気が心配ですが、開催の可否についてはSNSでご連絡します。\n\n#盆踊り https://t.co/tSR49Oyuft",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_f006169d6478f4d8",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@fried_wakame",
-      "account_name": "ゆかりこ",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/fried_wakame/status/2073545987856150780",
-      "tweet_id": "2073545987856150780",
-      "date": "2026-07-04T23:14:22+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMa3FFZbUAAtj_l.jpg",
-        "https://t.co/wbxFhsdhRS",
-        "pic.x.com/wbxFhsdhRS",
-        "https://pbs.twimg.com/media/HMa3FFba4AARY-F.jpg",
-        "https://pbs.twimg.com/media/HMa3FFZaAAAh-ED.jpg",
-        "https://pbs.twimg.com/media/HMa3FFZbsAAiVzf.jpg"
-      ],
-      "text": "土曜日は第一回いたみええじゃないかへ🏮\n初めての伊丹駅！芝生ふわふわ🌱\n\n先生にわっしょい伊丹麦わら音頭摂津音頭を教えていただき嬉しい🥰\n初見のビューティフルサンデー2025北部？ver.やマカレナもレクチャーありで手足こんがりつつ楽しかったです✨\n雨の中開催いただきありがとうございました！ https://t.co/wbxFhsdhRS",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
