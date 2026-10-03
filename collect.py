@@ -18,6 +18,7 @@ from pathlib import Path
 from collection_support.proactive_search import (
     build_queries,
     build_report,
+    commit_state_and_report,
     check_official_sources,
     scan_official_sources_outcome,
     is_target_confirmation,
@@ -495,15 +496,33 @@ def _commit_voice_snapshot(voices_file, voices, seen_file, seen):
             restore = voices_file.with_name(voices_file.name + ".restore")
             restore.write_bytes(old_voices)
             restore.replace(voices_file)
+        elif voices_file.exists():
+            voices_file.unlink()
         if old_seen is not None:
             restore = seen_file.with_name(seen_file.name + ".restore")
             restore.write_bytes(old_seen)
             restore.replace(seen_file)
+        elif seen_file.exists():
+            seen_file.unlink()
         raise
     finally:
         for path in (voices_temp, seen_temp):
             if path.exists():
                 path.unlink()
+
+
+def _x_lane_state(health, lane_name, items):
+    """Use collector health, rather than an empty return, as lane truth."""
+    lane = (health.get("lanes") or {}).get(lane_name)
+    if lane is None:
+        return "failed"
+    if lane.get("failed_requests", 0) or (
+        lane.get("planned_units", 0) and lane.get("completed_units", 0) < lane.get("planned_units", 0)
+    ):
+        return "failed"
+    if lane.get("skipped_reason"):
+        return "skipped"
+    return "success" if items else "empty"
 
 
 def _load_active_youtube_registry_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
@@ -514,8 +533,7 @@ def _load_active_youtube_registry_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
         with open(path, encoding="utf-8") as f:
             registry = json.load(f)
     except Exception as e:
-        print(f"[voices] YouTubeチャンネル台帳を読めないためスキップ: {e}")
-        return []
+        raise VoiceCollectionError(f"youtube_registry:{type(e).__name__}") from e
 
     feeds = []
     for channel in registry.get("channels") or []:
@@ -537,8 +555,9 @@ def _load_active_youtube_registry_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
     return feeds
 
 
-def _voice_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
+def _voice_feeds(path=None):
     """Merge static feeds with active YouTube registry feeds, de-duplicated by RSS URL."""
+    path = path or YOUTUBE_CHANNEL_REGISTRY_FILE
     feeds = []
     seen_rss = set()
     for feed in VOICE_FEEDS + _load_active_youtube_registry_feeds(path):
@@ -607,16 +626,20 @@ def _parse_voice_entry(entry, feed_meta):
 
 def collect_voices_outcome(seen_urls: set) -> VoiceCollectionResult:
     """
-    VOICE_FEEDS から RSS を取得して voices エントリを返す。
-    戻り値: (new_items, all_seen_urls_updated)
-    feedparser 未インストール or RSS 取得失敗でも空リストを返す（fail-safe）。
+    VOICE_FEEDS とYouTubeチャンネル台帳からRSSを取得して outcome を返す。
+    feedparser不在・feed不在は ``skipped``、全取得成功で0件は ``empty``、
+    RSSまたは既存台帳の読込失敗は既読位置を保った ``failed`` とする。
     """
     original_seen = list(seen_urls)
     if not _HAS_FEEDPARSER:
         print("[voices] feedparser がインストールされていないためスキップします")
         return VoiceCollectionResult("skipped", seen_urls=original_seen)
 
-    feeds = _voice_feeds()
+    try:
+        feeds = _voice_feeds()
+    except VoiceCollectionError as exc:
+        print(f"[voices] YouTubeチャンネル台帳を読めません: {exc}")
+        return VoiceCollectionResult("failed", seen_urls=original_seen, failures=[str(exc)])
     if not feeds:
         print("[voices] RSS feed がないためスキップします")
         return VoiceCollectionResult("skipped", seen_urls=original_seen)
@@ -681,8 +704,8 @@ def collect_voices(seen_urls: set) -> tuple[list, list]:
 # B. 取得→ルールベース自動仕分け→「🐦 X収集ログ DB」へ1行ずつ蓄積
 # 安全装置: 予算上限ガード／429ウェイト／例外で他収集に影響させない fail-safe
 
-def _load_x_config():
-    """x_queries.json を読む。無ければ None（=X収集スキップ）。"""
+def _load_x_config(health=None, lane_name=None):
+    """Read X config; missing/disabled is skipped, malformed config is a lane failure."""
     try:
         with open(X_QUERIES_FILE, "r", encoding="utf-8") as f:
             cfg = json.load(f)
@@ -693,7 +716,10 @@ def _load_x_config():
         print(f"[x] {X_QUERIES_FILE} が無いため X 収集をスキップ")
         return None
     except Exception as e:
-        print(f"[x] 設定読み込みエラー（X収集スキップ）: {e}")
+        print(f"[x] 設定読み込みエラー: {e}")
+        if health is not None and lane_name:
+            record_attempt(health, lane_name, "config-read")
+            record_failure(health, lane_name, "config-read", error=e)
         return None
 
 
@@ -963,7 +989,7 @@ def collect_x_voices(seen_urls: set, health=None) -> tuple[list, list]:
         print("[x] TWITTERAPI_IO_KEY 未設定のため X 収集をスキップ")
         mark_lane_skipped(health, "keyword", "api_key_missing")
         return [], list(seen_urls)
-    cfg = _load_x_config()
+    cfg = _load_x_config(health=health, lane_name="keyword")
     if not cfg:
         mark_lane_skipped(health, "keyword", "config_missing")
         return [], list(seen_urls)
@@ -1167,7 +1193,10 @@ def collect_proactive_x(targets, seen_urls, config, health=None):
     if not targets:
         mark_lane_skipped(health, "proactive", "no_targets")
         return [], list(seen_urls)
-    x_cfg = _load_x_config() or {}
+    x_cfg = _load_x_config(health=health, lane_name="proactive")
+    if not x_cfg:
+        mark_lane_skipped(health, "proactive", "config_missing")
+        return [], list(seen_urls)
     budget = x_cfg.get("budget", {})
     cost_per_tweet = budget.get("cost_per_tweet_usd", 0.00015)
     daily_cap = budget.get("daily_usd", 0.3)
@@ -2061,17 +2090,14 @@ def _load_x_account_scores(cfg=None):
 
 
 def _save_x_account_scores(voices, cfg=None):
-    try:
-        scores = _build_x_account_scores(voices, cfg)
-        os.makedirs("data", exist_ok=True)
-        with open(X_ACCOUNT_SCORES_FILE, "w", encoding="utf-8") as f:
-            json.dump(scores, f, ensure_ascii=False, indent=2)
-        stats = scores.get("accounts", {})
-        muted = sum(1 for r in stats.values() if r.get("status") == "muted")
-        trusted = sum(1 for r in stats.values() if r.get("status") == "trusted")
-        print(f"[rank] Xアカウントスコア更新: {len(stats)}件（trusted {trusted} / muted {muted}）")
-    except Exception as e:
-        print(f"[rank] Xアカウントスコア保存エラー（継続）: {e}")
+    scores = _build_x_account_scores(voices, cfg)
+    os.makedirs("data", exist_ok=True)
+    with open(X_ACCOUNT_SCORES_FILE, "w", encoding="utf-8") as f:
+        json.dump(scores, f, ensure_ascii=False, indent=2)
+    stats = scores.get("accounts", {})
+    muted = sum(1 for r in stats.values() if r.get("status") == "muted")
+    trusted = sum(1 for r in stats.values() if r.get("status") == "trusted")
+    print(f"[rank] Xアカウントスコア更新: {len(stats)}件（trusted {trusted} / muted {muted}）")
 
 
 def _refresh_official_source_registry(voices, db_path="data/bon_odori_master.sqlite"):
@@ -2762,7 +2788,10 @@ def collect_x_whitelist(seen_urls, health=None):
         print("[whitelist] TWITTERAPI_IO_KEY 未設定のためスキップ")
         mark_lane_skipped(health, "whitelist", "api_key_missing")
         return [], list(seen_urls)
-    cfg = _load_x_config() or {}
+    cfg = _load_x_config(health=health, lane_name="whitelist")
+    if not cfg:
+        mark_lane_skipped(health, "whitelist", "config_missing")
+        return [], list(seen_urls)
     accounts = load_whitelist_accounts(cfg)
     if not accounts:
         print("[whitelist] ホワイトリストが空のためスキップ")
@@ -4363,9 +4392,7 @@ def main():
                 health=x_health,
             )
             voice_items = voice_items + x_items
-            voice_outcome["lanes"]["x_keyword"] = (
-                "skipped" if not TWITTERAPI_IO_KEY else ("success" if x_items else "empty")
-            )
+            voice_outcome["lanes"]["x_keyword"] = _x_lane_state(x_health, "keyword", x_items)
         except RawXArchiveError:
             raise
         except Exception as e:
@@ -4384,10 +4411,7 @@ def main():
                 health=x_health,
             )
             voice_items = proactive_x + voice_items
-            voice_outcome["lanes"]["x_proactive"] = (
-                "skipped" if not TWITTERAPI_IO_KEY or not proactive_targets else
-                ("success" if proactive_x else "empty")
-            )
+            voice_outcome["lanes"]["x_proactive"] = _x_lane_state(x_health, "proactive", proactive_x)
         except RawXArchiveError:
             raise
         except Exception as e:
@@ -4404,9 +4428,7 @@ def main():
                 health=x_health,
             )
             voice_items = wl_items + voice_items  # 盆踊ラーを先頭に
-            voice_outcome["lanes"]["x_whitelist"] = (
-                "skipped" if not TWITTERAPI_IO_KEY else ("success" if wl_items else "empty")
-            )
+            voice_outcome["lanes"]["x_whitelist"] = _x_lane_state(x_health, "whitelist", wl_items)
         except RawXArchiveError:
             raise
         except Exception as e:
@@ -4429,8 +4451,9 @@ def main():
 
         rss_complete = rss.state in {"success", "empty"}
         completed = set(voice_outcome["lanes"].values()).intersection({"success", "empty"})
+        failed_lanes = [name for name, state in voice_outcome["lanes"].items() if state == "failed"]
         voice_outcome["snapshot"] = (
-            "failed" if rss.state == "failed" else
+            "failed" if failed_lanes else
             ("success" if voice_items else ("empty" if completed else "skipped"))
         )
         if not completed:
@@ -4440,7 +4463,7 @@ def main():
             _commit_voice_snapshot(
                 voices_file, deduped_voices, voices_seen_file, updated_voices_seen
             )
-        voice_snapshot_ready = rss_complete and bool(completed)
+        voice_snapshot_ready = rss_complete and bool(completed) and not failed_lanes
 
         # Where the bio came from, printed before the scores are rebuilt.  An
         # all-empty run is a real finding here, not an absence of output.
@@ -4558,15 +4581,17 @@ def main():
             proactive_targets,
             proactive_report,
         )
-        save_proactive_state(proactive_state)
-        with open(
-            "data/proactive_event_report.json", "w", encoding="utf-8"
-        ) as f:
-            json.dump({
-                "generated_at": datetime.now(timezone.utc).isoformat(),
-                "year": current_year,
-                "items": proactive_report,
-            }, f, ensure_ascii=False, indent=2)
+        report_payload = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "year": current_year,
+            "items": proactive_report,
+        }
+        commit_state_and_report(
+            proactive_state,
+            "data/proactive_search_state.json",
+            "data/proactive_event_report.json",
+            report_payload,
+        )
         unconfirmed = sum(
             1 for item in proactive_report
             if item["status"] == "unconfirmed"

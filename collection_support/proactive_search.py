@@ -4,6 +4,8 @@ import os
 import re
 import urllib.parse
 import urllib.request
+import tempfile
+from pathlib import Path
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
@@ -134,6 +136,39 @@ def save_state(state, path=DEFAULT_STATE):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
+
+
+def commit_state_and_report(state, state_path, report_path, report):
+    """Replace state/report together; restore both paths if either replace fails."""
+    state_path, report_path = Path(state_path), Path(report_path)
+    old = {path: path.read_bytes() if path.exists() else None for path in (state_path, report_path)}
+    payloads = {
+        state_path: json.dumps(state, ensure_ascii=False, indent=2).encode() + b"\n",
+        report_path: json.dumps(report, ensure_ascii=False, indent=2).encode() + b"\n",
+    }
+    temps = {}
+    for path, value in payloads.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.NamedTemporaryFile(dir=path.parent, delete=False) as handle:
+            handle.write(value)
+            temps[path] = Path(handle.name)
+    try:
+        for path in (state_path, report_path):
+            temps[path].replace(path)
+    except Exception:
+        for path, previous in old.items():
+            if previous is None:
+                if path.exists():
+                    path.unlink()
+            else:
+                restore = path.with_name(path.name + ".restore")
+                restore.write_bytes(previous)
+                restore.replace(path)
+        raise
+    finally:
+        for path in temps.values():
+            if path.exists():
+                path.unlink()
 
 
 def select_targets_for_run(targets, state=None, limit=12, now=None):

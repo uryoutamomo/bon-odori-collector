@@ -34,6 +34,22 @@ class CollectVoicesTest(unittest.TestCase):
         self.assertEqual(result.state, "skipped")
         self.assertEqual(result.seen_urls, ["https://old.test"])
 
+    def test_invalid_existing_youtube_registry_is_a_failed_outcome(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            registry = os.path.join(tmp, "registry.json")
+            with open(registry, "w", encoding="utf-8") as handle:
+                handle.write("{invalid")
+            with (
+                patch.object(collect, "_HAS_FEEDPARSER", True),
+                patch.object(collect, "YOUTUBE_CHANNEL_REGISTRY_FILE", registry),
+                patch.object(collect, "VOICE_FEEDS", []),
+            ):
+                result = collect.collect_voices_outcome({"https://old.test"})
+        self.assertEqual(result.state, "failed")
+        self.assertEqual(result.seen_urls, ["https://old.test"])
+        self.assertEqual(result.items, [])
+        self.assertEqual(result.failures, ["youtube_registry:JSONDecodeError"])
+
     def test_compatibility_collector_does_not_turn_failure_into_empty_result(self):
         with patch.object(collect, "collect_voices_outcome", return_value=collect.VoiceCollectionResult(
             "failed", failures=["rss:test:bozo"]

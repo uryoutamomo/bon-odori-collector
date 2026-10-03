@@ -48,10 +48,13 @@ verified_by:
   - tests/test_x_search_watermark.py
   - tests/test_x_gap_candidates.py
   - tests/test_collect_event_state_axes_wiring.py
+  - tests/test_collect_outcomes_main.py
+  - tests/test_collect_voices.py
+  - tests/test_proactive_search.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_ward_official_source_registry.py
   - tests/test_odottar_coverage_benchmark.py
-updated_for: a47769f
+updated_for: d73085bd
 ---
 
 # 収集サブシステム
@@ -173,10 +176,10 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 
 ### INV-COL-011 取得失敗を空の収集結果として下流へ渡さない
 
-- **内容**: RSSは `success` / `empty` / `skipped` / `failed` を明示する。部分失敗のRSS行と既読位置は保存せず、完了した独立Xレーンだけは保存できる。snapshotの読込・保存失敗時は、会場候補、Xアカウント台帳、速報、定番探索履歴、Notionサマリー素材を更新しない。公式巡回もtargetごとの状態を残し、`failed` / `skipped` のtargetは探索履歴を進めない。
+- **内容**: RSSは `success` / `empty` / `skipped` / `failed` を明示する。部分失敗のRSS行と既読位置は保存せず、完了した独立Xレーンだけは保存できる。snapshotの読込・保存失敗時は、会場候補、Xアカウント台帳、速報、定番探索履歴、Notionサマリー素材を更新しない。公式巡回もtargetごとの状態を残し、`failed` / `skipped` のtargetは探索履歴を進めない。Xレーンの正常な0件は `empty`、設定上の未実行は `skipped`、healthの失敗・未完了は `failed` とする。これはINV-COL-003の「collection-requiredで受理0件は全体unhealthy」とは別に、各レーンが空を失敗と偽らない契約である。
 - **なぜ**: 外部取得の失敗を「投稿なし」「未確認の確認完了」とすると、候補が静かに消え、次回探索の優先度まで下がる。
 - **守っているコード**: `collect.py` の `collect_voices_outcome()` とsnapshot gate、`collection_support/proactive_search.py` の `scan_official_sources_outcome()` / `update_state_from_report()`。
-- **守っているテスト**: `tests/test_collect_voices.py::CollectVoicesTest::test_partial_rss_failure_does_not_advance_seen_or_return_partial_items`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_invalid_existing_snapshot_never_reaches_voice_derived_downstream`、`tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history`。
+- **守っているテスト**: `tests/test_collect_voices.py::CollectVoicesTest::test_partial_rss_failure_does_not_advance_seen_or_return_partial_items`、`tests/test_collect_voices.py::CollectVoicesTest::test_invalid_existing_youtube_registry_is_a_failed_outcome`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_proactive_without_budget_or_api_access`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_disabled_config_skips_whitelist_without_budget_or_api_access`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_non_dict_x_config_is_recorded_as_lane_failure`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_invalid_existing_snapshot_never_reaches_voice_derived_downstream`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_empty_completed_lanes_reach_voice_derived_downstream`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_x_partial_failure_closes_every_voice_derived_gate`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_broken_x_config_is_failed_and_closes_voice_derived_gates`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_main_score_write_failure_closes_later_voice_gates`、`tests/test_collect_outcomes_main.py::CollectOutcomeMainTest::test_voice_snapshot_rollback_removes_new_first_file_when_second_replace_fails`、`tests/test_proactive_search.py::ProactiveSearchTest::test_official_failure_preserves_target_history`、`tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_restores_state_when_report_replace_fails`、`tests/test_proactive_search.py::ProactiveSearchTest::test_state_and_report_commit_removes_new_files_when_report_replace_fails`。
 
 ## 主要な流れ
 
