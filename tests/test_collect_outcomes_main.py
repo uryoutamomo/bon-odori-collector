@@ -102,7 +102,7 @@ class CollectOutcomeMainTest(unittest.TestCase):
                     patch.object(collect, "scan_official_sources_outcome") as official,
                     patch.object(collect, "push_to_notion") as notion,
                     patch.object(collect, "_write_collection_outcome") as outcome,
-                    patch.object(collect, "write_health_report"),
+                    patch.object(collect, "write_health_report") as health_report,
                 ):
                     collect.main()
             finally:
@@ -113,6 +113,9 @@ class CollectOutcomeMainTest(unittest.TestCase):
                 mocked.assert_not_called()
             saved = outcome.call_args.args[0]
             self.assertEqual(saved["snapshot"], "failed")
+            health = health_report.call_args.args[0]
+            self.assertEqual(health["status"], "unhealthy")
+            self.assertIn("x_request_failures:3", health["failure_reasons"])
             self.assertEqual(
                 {saved["lanes"][name] for name in ("x_keyword", "x_proactive", "x_whitelist")},
                 {"failed"},

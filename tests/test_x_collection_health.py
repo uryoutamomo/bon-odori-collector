@@ -140,6 +140,21 @@ class XCollectionHealthTest(unittest.TestCase):
         self.assertEqual(health["lanes"]["keyword"]["completed_units"], 1)
         self.assertIn("x_items_accepted_zero", health["failure_reasons"])
 
+    def test_failed_config_is_unhealthy_even_when_collection_is_disabled(self):
+        health = new_health_report(collection_enabled=False)
+        record_failure(health, "keyword", "config-read", error="invalid JSON")
+        finalize_health_report(health)
+        self.assertEqual(health["status"], "unhealthy")
+        self.assertIn("x_request_failures:1", health["failure_reasons"])
+
+    def test_partial_request_failure_is_unhealthy_despite_accepted_items(self):
+        health = new_health_report(collection_enabled=True)
+        record_accepted(health, "keyword", "complete", 1)
+        record_failure(health, "keyword", "failed", error="timeout")
+        finalize_health_report(health)
+        self.assertEqual(health["status"], "unhealthy")
+        self.assertIn("x_request_failures:1", health["failure_reasons"])
+
     def test_required_collection_fails_when_api_is_disabled(self):
         health = new_health_report(
             collection_enabled=False,

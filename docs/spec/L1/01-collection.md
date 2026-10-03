@@ -54,7 +54,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_ward_official_source_registry.py
   - tests/test_odottar_coverage_benchmark.py
-updated_for: d73085bd
+updated_for: 7a8cd7c0
 ---
 
 # 収集サブシステム
@@ -93,11 +93,11 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 
 ### INV-COL-003 収集不能・受理0件を正常な「投稿なし」として扱わない
 
-- **内容**: `collect_x_voices()` はキー・設定・予算が欠けると理由つきで安全にスキップする。さらに `finalize_health_report()` は、収集が必要なのに無効だった場合と、成功扱いでも受理0件だった場合を `unhealthy` にする。
+- **内容**: `collect_x_voices()` はキー・意図的な無効設定・予算が欠けると理由つきで安全にスキップする。設定読込やAPIに失敗記録があれば、enabled値や成功した別レーンの受理件数にかかわらず `finalize_health_report()` は `unhealthy` にする。収集が必要なのに無効だった場合と、有効な収集でも受理0件だった場合も `unhealthy` にする。
 - **なぜ**: 2026-08-10のtwitterapi.io課金切れでは、HTTP上は成功しても取得が空だった。止めるだけでは障害を「投稿なし」と取り違えるため、空を異常として見える化しなければならない。
 - **破れたときの症状**: API費用が予想外に増える、または収集停止・受理0件が正常終了に見えて探索の穴が何日も続く。
 - **守っているコード**: `collect.py` の `collect_x_voices()`、`collection_support/x_budget_guard.py`、`collection_support/x_collection_health.py` の `finalize_health_report()`
-- **守っているテスト**: `tests/test_x_collection_health.py::test_successful_but_zero_item_run_is_unhealthy`、`tests/test_x_collection_health.py::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items`
+- **守っているテスト**: `tests/test_x_collection_health.py::XCollectionHealthTest::test_successful_but_zero_item_run_is_unhealthy`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_measured_scheduled_outage_is_unhealthy_for_402_and_zero_items`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_failed_config_is_unhealthy_even_when_collection_is_disabled`、`tests/test_x_collection_health.py::XCollectionHealthTest::test_partial_request_failure_is_unhealthy_despite_accepted_items`
 
 ### INV-COL-004 未完了のホワイトリスト収集では since_time を進めない
 

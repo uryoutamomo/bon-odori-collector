@@ -157,6 +157,10 @@ def finalize_health_report(report, *, finished_at=None):
     }
     failures = []
     warnings = []
+    # A configuration/read failure can make collection_enabled false.  It
+    # remains a failure, rather than becoming an intentional disabled run.
+    if totals["failed_requests"]:
+        failures.append(f"x_request_failures:{totals['failed_requests']}")
     if report.get("collection_required") and not report.get("collection_enabled"):
         failures.append("x_collection_required_but_disabled")
     if report.get("collection_enabled"):
