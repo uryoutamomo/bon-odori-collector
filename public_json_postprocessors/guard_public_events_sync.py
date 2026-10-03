@@ -164,6 +164,7 @@ def mark_superseded_same_key_approvals(results, approvals):
         "consumed_at_site",
         "already_synced",
         "retired_after_ended_transition",
+        "retired_after_expired_slide",
         "superseded",
     }
 
@@ -199,18 +200,25 @@ def mark_superseded_same_key_approvals(results, approvals):
             proven_successors[(event_key_value, site_hash)] = result.get("id")
 
 
-def mark_retired_ended_transition_approvals(
-    results, approvals, ended_transition_event_keys
+def mark_retired_temporal_approvals(
+    results, approvals, ended_transition_event_keys, expired_slide_event_keys
 ):
-    """Retire only the latest stale approval for each proven ended transition.
+    """Retire only the latest stale approval for each proven time-only change.
 
     The current collector/site payload comparison is the safety boundary: the
-    caller supplies only event keys already classified by the strict
-    ``ended_transition_downgrade`` rule.  Retiring the newest matching approval
-    lets the existing hash-linked successor logic supersede older history.
-    Unlinked older approvals remain ``hash_mismatch`` and keep the guard closed.
+    caller supplies ended events and independently verified expired slides.
+    Retiring the newest matching approval lets the existing hash-linked
+    successor logic supersede older history. Unlinked older approvals remain
+    ``hash_mismatch`` and keep the guard closed.
     """
-    pending_keys = set(ended_transition_event_keys or ())
+    pending_keys = {
+        key: "ended_transition_downgrade"
+        for key in (ended_transition_event_keys or ())
+    }
+    pending_keys.update({
+        key: "expired_historical_slide_downgrade"
+        for key in (expired_slide_event_keys or ())
+    })
     if not pending_keys:
         return
 
@@ -230,13 +238,83 @@ def mark_retired_ended_transition_approvals(
 
         if arrival_key not in pending_keys:
             continue
-        result["status"] = "retired_after_ended_transition"
-        result["retired_by"] = "ended_transition_downgrade"
-        pending_keys.remove(arrival_key)
+        if pending_keys[arrival_key] == "expired_historical_slide_downgrade" and not all(
+            isinstance(approval.get(field), str)
+            and len(approval[field]) == 64
+            and all(char in "0123456789abcdef" for char in approval[field])
+            for field in ("site_sha256", "collector_sha256")
+        ):
+            continue
+        action = pending_keys.pop(arrival_key)
+        result["status"] = (
+            "retired_after_expired_slide"
+            if action == "expired_historical_slide_downgrade"
+            else "retired_after_ended_transition"
+        )
+        result["retired_by"] = action
+
+
+def verified_expired_slide_keys(collector_rows, site_rows, classified, today):
+    """Allow stale approval retirement only for an expired, content-identical slide.
+
+    The normal classifier recognizes a historical-slide downgrade but does not
+    check the date or all public fields. Those extra checks are required before
+    retiring a value-pinned approval whose old hash no longer matches.
+    """
+    collector = index_events(collector_rows)
+    site = index_events(site_rows)
+    collector_counts = Counter(event_key(row) for row in collector_rows)
+    site_counts = Counter(event_key(row) for row in site_rows)
+    allowed_fields = {
+        "date_certainty_tier", "display_tier", "historical_display_tier",
+        "historical_reference", "historical_slide", "historical_slide_basis",
+        "historical_slide_date", "historical_slide_date_end",
+        "historical_slide_method", "predicted_date", "predicted_date_end",
+        "prediction_basis", "prediction_confidence",
+    }
+    verified = set()
+    for row in classified["event_rows"]:
+        if row["recommended_action"] != "expired_historical_slide_downgrade":
+            continue
+        key = row["event_key"]
+        if collector_counts[key] != 1 or site_counts[key] != 1:
+            continue
+        left, right = collector.get(key), site.get(key)
+        if not left or not right:
+            continue
+        if any(left.get(field) != right.get(field)
+               for field in set(left) | set(right) if field not in allowed_fields):
+            continue
+        left_ref, right_ref = left.get("historical_reference"), right.get("historical_reference")
+        if not isinstance(left_ref, dict) or not isinstance(right_ref, dict):
+            continue
+        if ({k: v for k, v in left_ref.items() if k not in {"display_tier", "slide"}}
+                != {k: v for k, v in right_ref.items() if k not in {"display_tier", "slide"}}):
+            continue
+        slide = right.get("historical_slide") or right_ref.get("slide")
+        if (not isinstance(slide, dict) or left.get("historical_slide")
+                or left_ref.get("slide")):
+            continue
+        if right.get("historical_slide") and right_ref.get("slide") != slide:
+            continue
+        end_date = parse_iso_date(slide.get("date_end") or slide.get("date"))
+        if (not end_date or end_date >= today
+                or right_ref.get("display_tier") != "historical_slide"
+                or left_ref.get("display_tier") != "historical_reference"):
+            continue
+        if any(
+            (left.get(field) not in (None, "historical_reference")
+             or right.get(field) not in (None, "historical_slide"))
+            for field in ("display_tier", "historical_display_tier", "date_certainty_tier")
+        ):
+            continue
+        verified.add(key)
+    return verified
 
 
 def apply_reviewed_exact_approvals(
-    collector_rows, site_rows, payload, *, ended_transition_event_keys=None
+    collector_rows, site_rows, payload, *, ended_transition_event_keys=None,
+    expired_slide_event_keys=None,
 ):
     """Apply value-pinned review approvals to a comparison-only site copy."""
     approved_site_rows = copy.deepcopy(site_rows)
@@ -436,11 +514,11 @@ def apply_reviewed_exact_approvals(
         result["status"] = "hash_mismatch"
         results.append(result)
 
-    # First preserve the normal exact-hash successor path.  Only if a chain
-    # still has no safe tip may a proven current ended transition retire it.
+    # First preserve the normal exact-hash successor path. Only if a chain
+    # still has no safe tip may a proven current temporal change retire it.
     mark_superseded_same_key_approvals(results, approvals)
-    mark_retired_ended_transition_approvals(
-        results, approvals, ended_transition_event_keys
+    mark_retired_temporal_approvals(
+        results, approvals, ended_transition_event_keys, expired_slide_event_keys
     )
     mark_superseded_same_key_approvals(results, approvals)
     status_counts = dict(Counter(result["status"] for result in results))
@@ -633,6 +711,9 @@ def build(args):
             for row in raw["event_rows"]
             if row["recommended_action"] == "ended_transition_downgrade"
         },
+        expired_slide_event_keys=verified_expired_slide_keys(
+            collector_events, site_events, raw, today
+        ),
     )
     approved = classify_rows(collector_events, reviewed["site_rows"], today=today)
     decision = guard_decision(

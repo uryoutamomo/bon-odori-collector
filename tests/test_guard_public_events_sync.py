@@ -704,6 +704,64 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
             {"expired_historical_slide_downgrade": 1},
         )
 
+    def test_stale_rename_approval_retires_only_for_verified_expired_slide(self):
+        slide = {"date": "2026-09-13", "date_end": "2026-09-14"}
+        reviewed = {
+            "name": "にっぽり炭坑節まつり", "venue": "JR日暮里駅前広場",
+            "detail": "確認済みの説明", "songs": [],
+            "display_tier": "historical_slide",
+            "historical_display_tier": "historical_slide",
+            "historical_reference": {"display_tier": "historical_slide", "slide": slide, "score": 0.55},
+            "historical_slide": slide,
+        }
+        old_name = {**reviewed, "name": "第11回 にっぽり炭坑節まつり"}
+        site = {**reviewed, "songs": [{"name": "炭坑節"}]}
+        collector = copy.deepcopy(site)
+        collector["display_tier"] = "historical_reference"
+        collector["historical_display_tier"] = "historical_reference"
+        collector["historical_reference"] = {"display_tier": "historical_reference", "score": 0.55}
+        collector.pop("historical_slide")
+        approval = self.key_replacement_approval(old_name, reviewed)
+
+        passed = self.run_build([collector], [site], [approval], today="2026-10-03")
+        self.assertEqual(passed["decision"]["status"], "pass")
+        self.assertEqual(
+            passed["reviewed_exact_approvals"]["results"][0]["status"],
+            "retired_after_expired_slide",
+        )
+        self.assertEqual(
+            passed["reviewed_exact_approvals"]["results"][0]["retired_by"],
+            "expired_historical_slide_downgrade",
+        )
+
+        for name, changed_collector, today in (
+            ("slide has not expired", collector, "2026-09-14"),
+            ("unreviewed detail", {**collector, "detail": "別の説明"}, "2026-10-03"),
+            ("historical label drift", {
+                **collector,
+                "historical_reference": {
+                    "display_tier": "historical_reference", "score": 0.55,
+                    "label": "別の説明",
+                },
+            }, "2026-10-03"),
+        ):
+            with self.subTest(name=name):
+                blocked = self.run_build(
+                    [changed_collector], [site], [approval], today=today
+                )
+                self.assertEqual(blocked["decision"]["status"], "block")
+                self.assertIn(
+                    "reviewed_exact_approval_mismatch", blocked["decision"]["failures"]
+                )
+
+        malformed = self.run_build(
+            [collector], [site], [{**approval, "collector_sha256": "broken"}],
+            today="2026-10-03",
+        )
+        self.assertIn(
+            "reviewed_exact_approval_mismatch", malformed["decision"]["failures"]
+        )
+
     def test_build_blocks_raw_recurring_historical_fields_that_legacy_repair_would_match(self):
         today = "2026-06-17"
         collector = {

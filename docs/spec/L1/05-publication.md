@@ -145,6 +145,12 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   `recurrence_score` は非減少、という既存条件をすべて満たす必要がある。その末尾を安全な後続値としてから、
   hashで連結できる古い承認だけを `superseded` にする。連結できない古い承認、終了当日、逆遷移、detail・日付・出典の
   併存差分は `hash_mismatch` のまま残して同期を止める。既存の承認台帳は書き換えない。
+
+  過去実績の仮日付が期限切れになった場合も、元の両行が一意で、サイト側の仮日付の終了日が今日より前、
+  `historical_slide` から `historical_reference` への一方向の表示変更だけで、説明・曲目・出典など
+  その他の全fieldと過去実績の根拠が一致するときに限り、末尾の古い承認1件を
+  `retired_after_expired_slide` として退役させる。期限前や内容差分の併存時は退役させない。
+  判定は比較時だけで、承認台帳の履歴は書き換えない。
 - **なぜ**: 件数のズレは、後処理のどれかが動かなかったか、想定外の削除が起きたことの最も分かりやすい兆候だから。
   個々の差分を見る前に、まず総数で異常を捕まえる。
 - **破れたときの症状**: 公開件数が急に減る・増える。過去に、日次が止まったまま同期だけ進んで
@@ -166,6 +172,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_key_replacement_is_not_superseded_without_exact_successor_hash`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_stale_approval_chain_is_retired_when_only_current_diff_is_ended_transition`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_stale_approval_chain_still_blocks_when_ended_transition_has_detail_drift`、
+  `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_stale_rename_approval_retires_only_for_verified_expired_slide`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_superseded_approval_chain_does_not_hide_current_detail_drift`、
   `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_build_rejects_drift_before_the_reviewed_value_was_published`
 
