@@ -3712,6 +3712,38 @@
       "reviewed_collector_revision": "c0a7b5ad747c989a7b1951cb45af596fde828f1c",
       "reviewed_site_revision": "b9ea55dce5362573f80b5a0f8a1f7ddff46a7341",
       "source_input_checksum": "ff7c0e8ffa5606a8ea0867c4dbf9eb64b4af38757c930ea8c73fabba08ff85ea"
+    },
+    {
+      "id": "reviewed-ended-transition-20261004-occ_38c6babc32b4801c",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_38c6babc32b4801c",
+      "event_key": "LP26まつり||ライオンズプラザ西葛西マンション内公園",
+      "site_sha256": "1d2d476479658872551543bf736f88c26ac7a14733bc9aa5975a7b61cf47c1b7",
+      "collector_sha256": "9ad237ad81a8e8337e71bf60fa89ce2bc76d44a3cb0f6ccaa9fbd3e6d5e29762",
+      "reason": "2026-10-04 ユーザー明示承認。公式予定日2026-10-03が過ぎたことに基づく終了表示への更新。実施報告の追加確認ではない。3件（LP26まつり・谷河内南町会盆踊り大会・品川納涼祭）の終了更新と必要承認記録追加の範囲。新規追加/削除なし、日付・会場・本文・出典・時刻・曲・ID/年は不変。既存終了遷移9フィールドのexact差分のみ。旧承認履歴を保持。",
+      "reviewed_collector_revision": "21cd6824fc4326054214250c01a1a70994e4c688",
+      "reviewed_site_revision": "6c4837792b58538bf21aad72526b8437feee2a29",
+      "source_input_checksum": "d0fde334bb9ff8d86f4cf1f379bec4e7b85c0c7dbc73de16719b8e5c011aa41d",
+      "approval_request_message_id": "Sentinel_8609d8f35e1481918eb833d6343c2dc7",
+      "user_approval_message_id": "Sentinel_0c7f3c44d3388191b893dfe9b816a5ce",
+      "user_approval_received_at": "2026-10-04T23:35+09:00",
+      "reviewed_by": "user_via_uta"
+    },
+    {
+      "id": "reviewed-ended-transition-20261004-occ_40cdf5e107977db7",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_40cdf5e107977db7",
+      "event_key": "谷河内南町会盆踊り大会||谷河内みなみ公園",
+      "site_sha256": "f1451f6fa8f5de528e8159e4f9296214b56ccfb19cc025295d7d41aa4265e106",
+      "collector_sha256": "f957887529ec7dd0573eed3b2ba333a66ba28b7239f812f6875c4e56fa44276f",
+      "reason": "2026-10-04 ユーザー明示承認。公式予定日2026-10-03が過ぎたことに基づく終了表示への更新。実施報告の追加確認ではない。3件（LP26まつり・谷河内南町会盆踊り大会・品川納涼祭）の終了更新と必要承認記録追加の範囲。新規追加/削除なし、日付・会場・本文・出典・時刻・曲・ID/年は不変。既存終了遷移9フィールドのexact差分のみ。旧承認履歴を保持。",
+      "reviewed_collector_revision": "21cd6824fc4326054214250c01a1a70994e4c688",
+      "reviewed_site_revision": "6c4837792b58538bf21aad72526b8437feee2a29",
+      "source_input_checksum": "d0fde334bb9ff8d86f4cf1f379bec4e7b85c0c7dbc73de16719b8e5c011aa41d",
+      "approval_request_message_id": "Sentinel_8609d8f35e1481918eb833d6343c2dc7",
+      "user_approval_message_id": "Sentinel_0c7f3c44d3388191b893dfe9b816a5ce",
+      "user_approval_received_at": "2026-10-04T23:35+09:00",
+      "reviewed_by": "user_via_uta"
     }
   ]
 }
