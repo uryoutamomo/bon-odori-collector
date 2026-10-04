@@ -25,10 +25,13 @@ depends_on:
 invariants:
   - INV-VEN-001
   - INV-VEN-002
+  - INV-VEN-003
+  - INV-VEN-004
 verified_by:
   - tests/test_apply_reviewed_missing_occurrence_venues.py
   - tests/test_apply_ph2_shinagawa_second_venue_review.py
-updated_for: 83bf7d0
+  - tests/test_geocode_venues.py
+updated_for: e4a15037
 ---
 
 # 会場サブシステム
@@ -87,6 +90,22 @@ updated_for: 83bf7d0
 - **守っているテスト**: `tests/test_apply_ph2_shinagawa_second_venue_review.py::ApplyPh2ShinagawaSecondVenueReviewTest::test_apply_is_rdb_only_and_does_not_queue_notion_sync_job`。
 
 このテストが実際に検査しているのは Ph2 の1本だけである。`apply_reviewed_missing_occurrence_venues.py` と `apply_reviewed_venue_field_fixes.py` の「Notion同期なし／公開JSONなし」には、現時点で対応するテストがない。広い約束に見合うテストを追加することは、この仕様追加ではなく別変更として扱う。
+
+### INV-VEN-003 手動座標生成は実行場所によらずリポジトリ直下の入出力を使う
+
+- **内容**: `scripts/manual/geocode_venues.py` はスクリプトの配置からリポジトリのルートを解決し、`data/public/venues_public.json` を読み、同じ場所の `venues_geo.json` へ出力する。作業ディレクトリにある同名入力や `scripts/manual/data/` は使わない。入力が無ければAPI呼び出しと出力の置換より前に停止する。
+- **なぜ**: 手動コマンドを移設したとき、スクリプトのある場所をデータのルートと誤認すると既存入力を読めなくなる。実行場所へ依存させると、別のデータを処理しても気づきにくい。
+- **破れたときの症状**: 正しい公開会場入力があるのに座標を生成できない、または別ディレクトリの会場へ座標を付けてしまう。
+- **守っているコード**: `scripts/manual/geocode_venues.py` の `BASE_DIR`、`IN_JSON`、`OUT_JSON` と `main()`。
+- **守っているテスト**: `tests/test_geocode_venues.py::GeocodeVenuesTests::test_main_uses_repository_data_from_an_unrelated_working_directory`、`tests/test_geocode_venues.py::GeocodeVenuesTests::test_missing_repository_input_does_not_call_api_or_replace_output`。
+
+### INV-VEN-004 座標出力の失敗で既存の成果を壊さない
+
+- **内容**: 出力先と同じディレクトリの一時ファイルへJSONを完成させてから `os.replace()` で置換する。直列化や置換の失敗では既存の `venues_geo.json` を残し、一時ファイルを片付ける。
+- **なぜ**: 出力先を直接開いて書き始めると、後半で失敗しただけでも既存の有効な座標を失う。
+- **破れたときの症状**: 手動生成が失敗した後、既存JSONが空または途中までの内容になる。
+- **守っているコード**: `scripts/manual/geocode_venues.py` の `main()` の一時出力と置換。
+- **守っているテスト**: `tests/test_geocode_venues.py::GeocodeVenuesTests::test_serialization_failure_keeps_existing_output_and_cleans_temporary_file`、`tests/test_geocode_venues.py::GeocodeVenuesTests::test_replace_failure_keeps_existing_output_and_cleans_temporary_file`。
 
 会場の「同じものを再利用してよい条件」はこの仕様のINVではない。`report_apply/event_report_helpers.py` の `ensure_venue()` を変える場合は、必ず[INV-MST-007](04-master.md#inv-mst-007-会場は正規化名と住所の完全一致でのみ再利用する)を先に読む。似た名称の部分一致へ広げることは禁じられている。
 
@@ -153,7 +172,7 @@ one-off apply は通常の収集・レビュー・公開を置き換えない。
 
 ### 5. 公開用の地理データは別経路である
 
-`scripts/manual/geocode_venues.py` は `data/public/venues_public.json` を国土地理院住所検索へ送り `venues_geo.json` を作る意図の手動ツールである。2026-08-14 の検索ではworkflow・Python importが見つからない。実装は `scripts/manual/data/public/venues_public.json` を組み立てるが、その `scripts/manual/data` ディレクトリは存在しない。したがって**現状では入力ファイルが見つからず動かない**。公開経路に含めず、修正は別変更で扱う。
+`scripts/manual/geocode_venues.py` はリポジトリ直下の `data/public/venues_public.json` を国土地理院住所検索へ送り、同じディレクトリの `venues_geo.json` を作る手動ツールである。2026-10-03 の確認ではworkflowからの呼び出しは見つからない。スクリプト配置からリポジトリのルートを解決するため、実行時の作業ディレクトリに依存しない（INV-VEN-003）。以前は存在しない `scripts/manual/data/public/venues_public.json` を参照していたが、入力パスを修正した。実APIの結果・座標品質・公開反映は未確認であり、公開経路への接続は別変更で扱う。
 
 会場公開の `venues/export_public_venues.py` と、公開JSONの欠落会場後処理 `public_json_postprocessors/review_missing_occurrence_venues.py` は、この仕様の所有物ではない。前者は[公開](05-publication.md)、後者も公開側の責務である。公式サイトを直接監視する `collect_venue_sites.py` は[収集](01-collection.md)、レビュー受信箱アダプタ `review_inbox_adapters/missing_venue_adapter.py` は[レビュー](03-review.md)を読む。
 
@@ -186,7 +205,7 @@ RDBから公開JSONへの投影、公開側の欠落会場レビュー、サイ�
 | Blogspot候補が急に空、または少ない | `refresh_official_source_review.yml` のfeed取得、HTML形式変更、接尾辞抽出 |
 | Blogspot候補の既登録判定が古い | `venue_master.json` は休眠 `sync_venue_master.py` 由来で、鮮度を保証できない |
 | 局所会場修正の後にNotion同期や公開差分が出た | INV-VEN-002。RDB-only one-off の経路から漏れていないか |
-| geocode結果が作られない／入力が読めない | `scripts/manual/data` が存在しないため、`geocode_venues.py` は現状必ず入力を開けない |
+| geocode結果が作られない／入力が読めない | リポジトリ直下の `data/public/venues_public.json` の存在・形式と、国土地理院APIへの接続を確認する（INV-VEN-003） |
 
 ## 未解決・注意点
 
@@ -195,7 +214,7 @@ RDBから公開JSONへの投影、公開側の欠落会場レビュー、サイ�
 - **Blogspotの抽出と構造化行の二経路は統合されていない。** 前者は候補名中心、後者は住所・日付文を含む。どちらをレビュー入力の正本にするかは未確認である。
 - **`venues/extract_venues.py` は2026-05-31のStep0のまま休眠している。** テストや抽出規則を整えても、workflowへ繋がるまで公開件数は増えない。
 - **RDB適用スクリプトは one-off である。** `apply_reviewed_missing_occurrence_venues.py`、`apply_reviewed_venue_field_fixes.py`、`apply_ph2_shinagawa_second_venue_review.py` を日次へ足すには、レビュー済み入力の由来、dry-run、backup、再検証を含む設計が必要である。
-- **地理座標の生成は現状壊れている。** `geocode_venues.py` のdocstringはリポジトリ直下の `data/public/venues_public.json` を指すが、実装は存在しない `scripts/manual/data/public/...` を読む。修正と公開経路への接続は別変更で扱う。
+- **地理座標生成の入力パスは修正済みだが、公開経路への接続は未実施。** `geocode_venues.py` はリポジトリ直下の `data/public/` を読み書きする手動ツールである。隔離した入力とAPI代替で検査しており、実APIの結果・座標品質・既存公開データとの整合は別途確認する。入力パスの修正だけを、実データ生成や公開の完了とは扱わない。
 - **会場の同一性をこの仕様に複製しない。** 変更時は必ず INV-MST-007 を確認し、正規化名と住所の完全一致以外での自動再利用を追加しない。
 
 レビュー対象が多いときも、会場名だけで一括acceptしない。

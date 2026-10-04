@@ -63,6 +63,8 @@ invariants:
   - INV-RVW-021
   - INV-RVW-022
   - INV-RVW-023
+  - INV-RVW-024
+  - INV-RVW-025
 verified_by:
   - tests/test_review_inbox_decision_writer.py
   - tests/test_promote_change_requests_for_review.py
@@ -78,7 +80,9 @@ verified_by:
   - tests/test_x_candidate_backlog.py
   - tests/test_run_review_inbox_x_gap_scheduled.py
   - tests/test_ward_official_source_registry.py
-updated_for: a47769f
+  - tests/test_review_ingress_audit.py
+  - tests/test_event_inbox_e0.py
+updated_for: e4a15037
 ---
 
 # 人のレビュー運用サブシステム
@@ -388,7 +392,29 @@ updated_for: a47769f
 - **守っているコード**: `review_inbox_adapters/build_change_requests_from_judgment.py` の `_venue_block()`
 - **守っているテスト**: `tests/test_e2_identity_judgment.py::ConversionTest::test_new_venue_carries_only_a_canonical_tokyo_23_area`、`tests/test_e2_identity_judgment.py::ConversionTest::test_user_acceptance_of_a_new_series_becomes_create_event_series`、`tests/test_e2_identity_judgment.py::CreateEventSeriesTest::test_create_event_series_persists_the_reviewed_venue_area`
 
+### INV-RVW-024 入口監査は候補・選出順・判断台帳を変更しない
+
+- **内容**: `x_candidate_backlog.py audit` は既存snapshotに保存されたpriorityで日次コホートを再現し、未処理・選出・繰越数、信頼度、明示された開催回の地域、待機時間をstdoutへ出すだけである。snapshot・アラート・正本DBを書かず、入力欠落や破損を0件として扱わない。地域や時刻の不明値は推測で埋めない。
+- **なぜ**: 件数制限や公平性を検討する前に、実際に何が選ばれ、何が待つかを確認する必要がある。監査自体が候補を消したり再投入したりすると、元の問題を再現できなくなる。
+- **破れたときの症状**: 入口の量を確認しただけなのに候補が消える、または監査で0件と出たため入力障害を見逃す。
+- **守っているコード**: `x_candidate_backlog.py` の `build_ingress_audit()` とaudit CLI。
+- **守っているテスト**: `tests/test_review_ingress_audit.py::test_audit_explains_existing_cohort_and_capacity_without_mutation`、`tests/test_review_ingress_audit.py::test_audit_cli_only_prints_and_does_not_write_snapshot_or_alerts`、`tests/test_review_ingress_audit.py::test_missing_and_malformed_audit_inputs_are_not_empty_queues`、`tests/test_review_ingress_audit.py::test_unknown_geography_and_invalid_age_are_reported_without_guessing`。
+
+### INV-RVW-025 不正な入力を新規イベント提案として候補化しない
+
+- **内容**: E0イベント入口はreport・source・entry・venue・match_hintのobject形とevents配列を検査し、不正ならhigh severity `invalid_report` として候補書き込みを止める。official actionは既存の5種だけを受け付け、タイプミスや欠落を `event_create` へ暗黙変換しない。正しい入力の選別、ID、hash、revisionの規則は変えない。
+- **なぜ**: 知らないactionを「confirm以外だからcreate」と扱うと、壊れた入力が判断待ちを増やす。形の不正でtracebackだけが出ると、どのreportを直すべきかの実行報告も失われる。
+- **破れたときの症状**: タイプミスしたactionの候補が新規登録として現れる、またはinvalid_reportを出さず入口が例外終了する。
+- **守っているコード**: `review_inbox_adapters/build_event_inbox_candidates.py` の `_report_entries()`、`_validate_entry_shape()`。
+- **守っているテスト**: `tests/test_event_inbox_e0.py::EventInboxE0Test::test_unknown_official_action_rejects_the_batch_without_candidates`、`tests/test_event_inbox_e0.py::EventInboxE0Test::test_invalid_report_shapes_fail_as_value_errors`。既存の `tests/test_event_inbox_e0.py::EventInboxE0Test::test_display_name_change_does_not_create_revision` は表示名変更だけで重複候補を作らない境界を守る。
+
 ## 主要な流れ
+
+日次X候補の入口を調べるときは、`python3 x_candidate_backlog.py audit --daily-limit 5` で
+現在の選出プレビュー・信頼度別件数・明示された開催回地域別件数・待機時間をstdoutのJSONへ出す。
+この監査は候補や選出方針を変更しない（INV-RVW-024）。`source_updated_at` と監査時刻を区別し、
+順位はその入力に保存されたpriorityを使う。新着なしで全未処理を一度ずつ処理する最少バッチ数は容量の目安であり、
+完了予定日ではない。backlogの `処理中` は人の未レビュー状態の証明ではなく、正本の受信箱と判断台帳の照合が別途必要である。
 
 1. **各アダプタが受信箱へ積む** — `review_inbox_adapters/` 配下。X由来の穴、公式ソース、
    会場欠落、過去実績、YouTube など、種類ごとに別アダプタになっている。
@@ -511,6 +537,8 @@ adapterはcanonical DBへ書かない。HTML table/listから分割した候補�
 
 - **受信箱に積む選別基準の作り直しが未着手。** いまは積まれる量が人の処理量を上回りうる。
   律速工程に対して入口を絞らないままなので、根本的にはここが宿題になっている。
+  X入口の読み取り専用監査（INV-RVW-024）で量と選出の偏りを確認できるが、
+  地域別枠・長期待機枠・日次の総量・信頼度別枠の変更は未実施。候補の廃棄や根拠なしの自動採用で容量を減らさない。
 - ~~レビューコンソールの「次に何をすべきか」の提示が弱く、優先順位が人の記憶に依存している。~~
   **2026-08-17に次アクション別表示、未来情報の先頭表示、完全な現在集合から消えた残骸の表示上の自動解決を実装した。**
   ただしYouTube入力は実行時だけ生成されるため、リポジトリ内で完全性を再現できず、この自動解決の対象外である。

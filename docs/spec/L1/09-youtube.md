@@ -64,7 +64,7 @@ verified_by:
   - tests/test_build_youtube_active_video_review.py
   - tests/test_youtube_description_backfill.py
   - tests/test_build_youtube_rdb.py
-updated_for: 68cd2f5
+updated_for: e4a15037
 ---
 
 # YouTube取り込みサブシステム
@@ -326,19 +326,23 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 リポジトリの `youtube_active_video_review.json` が2026-07-20で止まって見えるのはそのためで、
 壊れているわけではない。ここを取り違えると「YouTubeのレビュー入口が1か月止まっている」と誤診する。
 
-### 4. 概要欄からセットリストを取り出す（**手動。2026-07-25で止まっている**）
+### 4. 概要欄からセットリストを取り出す（週次RDBパイプライン）
 
 `youtube_channels/extract_youtube_setlists.py` が `voices.json` のYouTube投稿を読み、
 番号付きの曲目リスト、タイトル中の引用符つき曲名、章立て（チャプター）などから曲を取り出して
 `data/youtube_setlist_occurrences.json` を作る。同じイベントの複数動画を、会場・日付・投稿者でまとめる処理も入っている。
 
-**このスクリプトはどのworkflowからも呼ばれていない。** 出力の生成時刻は2026-07-25で止まっており、
-つまり**曲目サブシステムの主要な入力のひとつが、3週間更新されていない**。
-テストは24件あって手厚いが、テストが通ることと動いていることは別である。
+`rdb-youtube-setlist-pipeline.yml` が毎週月曜06:00 JSTに抽出器を呼び、
+`$RUNNER_TEMP/youtube-setlists.json` を後続へ渡す。リポジトリ内の旧
+`data/youtube_setlist_occurrences.json` の生成時刻だけでは、週次の稼働状態を判断できない。
+2026-10-03の確認では、直近の[2026-09-28 JSTのschedule実行](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/36358851856)は成功している。
+workflow成功は個々の曲の採用・公開を保証しないため、実行artifactの抽出・適用レポートとRDBの根拠を別途確認する。
 
 取り出したセットリストをRDBへ入れるのが `apply_youtube_setlist_occurrences_rdb.py` で、
-これも手動である（呼び出し元は `calibrate_song_probabilities_rdb.py` のみ。それ自体も手動実行）。
+これは同じ週次workflowから呼ばれる。
 既定ではコピーDBにしか書かず、本番RDBへ入れるには `--apply` と確認句が要る（[INV-MST-003](04-master.md)と同じ作法）。
+週次scheduleは適用を要求し、手動dispatchは `apply=false` が既定である。workflowは抽出後に
+コピーDBへの適用・確率校正・過去年継承・公開投影の検査を行い、適用要求があるときだけ本番適用へ進む。
 曲名の検査は INV-YTB-004 に書いた。**確率の計算はこのスクリプトの仕事ではない**点も重要で、
 観測された事実だけをRDBへ上げ、確率は別パスの `calibrate_song_probabilities_rdb.py` が計算する。
 ここで確率を作ってしまうと、根拠の無い数字が観測に見えてしまうためである。
@@ -404,14 +408,14 @@ run_review_inbox_youtube_scheduled.py --execute --confirm 'RUN SCHEDULED YOUTUBE
 | 予測でしかない日付が確定日として公開される | INV-YTB-002、および[INV-MST-002](04-master.md) |
 | YouTube日次は成功したのに次の収集日次がJSONフォールバックで止まる | [INV-MST-013](04-master.md)。予測の系列・会場が一意に解決できるか |
 | クォータは使い切っているのに候補が増えない | 下の「未解決」の1番目。同じ行を毎日引き直している |
-| セットリストの曲が何週間も増えない | 正常。抽出は手動で、いま止まっている（流れの4） |
+| セットリストの曲が何週間も増えない | 週次RDBパイプラインの抽出・適用レポートとRDBを確認する。旧JSONの生成時刻だけで停止と判断しない（流れの4） |
 | `youtube_active_video_review.json` が古いまま | 正常。日次で作り直すがコミットしない（流れの3） |
 
 ## 未解決・注意点
 
-- **セットリスト抽出が2026-07-25から止まっている。** 曲目の主要な入力なのに、
-  `extract_youtube_setlists.py` はどのworkflowにも入っていない。
-  自動化すべきかどうかは未決。手厚いテスト（24件）があるので、繋ぐこと自体は難しくない。
+- **セットリスト抽出は週次workflowへ接続済み。** `rdb-youtube-setlist-pipeline.yml` が抽出から
+  RDB適用・確率処理まで担当する。旧JSONの鮮度と週次artifact・RDBの鮮度は別であり、
+  schedule成功だけで曲目の増加や公開反映の完了とは扱わない。
 - **チャンネル台帳も2026-06-29から止まっている。** 読む相手が7チャンネルのままなので、
   掘り起こしの入力そのものが増えない。[X盆踊ラーの再評価](../../x-bonodorer-reevaluation-20260811.md)と
   同じ「誰を読むか」の問題だが、YouTube側は手つかずである。
