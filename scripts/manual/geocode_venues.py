@@ -12,12 +12,15 @@
 import json
 import os
 import re
+import tempfile
 import time
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
 
-BASE_DIR = os.path.dirname(__file__)
+# The command lives two directories below the repository data directory.
+BASE_DIR = str(Path(__file__).resolve().parents[2])
 IN_JSON = os.path.join(BASE_DIR, "data", "public", "venues_public.json")
 OUT_JSON = os.path.join(BASE_DIR, "data", "public", "venues_geo.json")
 GSI_ENDPOINT = "https://msearch.gsi.go.jp/address-search/AddressSearch"
@@ -81,8 +84,21 @@ def main():
         time.sleep(0.1)
 
     os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=os.path.dirname(OUT_JSON),
+            prefix=".venues_geo.", suffix=".tmp", delete=False,
+        ) as f:
+            temporary_path = f.name
+            json.dump(output, f, ensure_ascii=False, indent=2)
+        os.replace(temporary_path, OUT_JSON)
+    finally:
+        if temporary_path is not None:
+            try:
+                os.unlink(temporary_path)
+            except FileNotFoundError:
+                pass
 
     print(f"geocoded: {len(output) - len(failed)} / {len(output)} -> {OUT_JSON}")
     if failed:

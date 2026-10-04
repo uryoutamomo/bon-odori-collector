@@ -358,6 +358,78 @@ def select_daily_cohort(
     return pending[:max_items]
 
 
+def build_ingress_audit(
+    backlog: Mapping[str, Any], *, now: datetime, max_items: int = 5
+) -> dict[str, Any]:
+    """Explain the existing selection without changing candidates or policy."""
+    if backlog is None:
+        raise BacklogError("audit requires an existing backlog snapshot")
+    _validated_existing(backlog)
+    selected = select_daily_cohort(backlog, max_items=max_items)
+    selected_keys = {row["source_key"] for row in selected}
+    pending = [row for row in backlog["items"] if row["status"] == "unprocessed"]
+    now_utc = _parse_datetime(_iso(now))
+    rows = []
+    invalid_timestamps = 0
+    by_confidence: dict[str, Counter] = {}
+    by_area: dict[str, Counter] = {}
+    for row in pending:
+        first_seen = _parse_datetime(row.get("first_seen_at"))
+        if first_seen is None or first_seen > now_utc:
+            age_hours = None
+            invalid_timestamps += 1
+        else:
+            age_hours = round((now_utc - first_seen).total_seconds() / 3600, 1)
+        match = (row.get("candidate") or {}).get("matched_occurrence") or {}
+        # Keep unknown geography visible; do not infer it from post text.
+        area = str(match.get("venue_area") or match.get("area") or "unknown")
+        tier = str((row.get("confidence") or {}).get("tier") or "unknown")
+        chosen = row["source_key"] in selected_keys
+        old = first_seen is not None and first_seen <= now_utc - timedelta(hours=24)
+        for groups, label in ((by_confidence, tier), (by_area, area)):
+            counts = groups.setdefault(label, Counter())
+            counts["unprocessed"] += 1
+            counts["selected"] += int(chosen)
+            counts["waiting_over_24h"] += int(old)
+        rows.append({
+            "source_key": row["source_key"],
+            "confidence": tier,
+            "explicit_area": area,
+            "wait_hours": age_hours,
+            "stored_priority": (row.get("priority") or {}).get("score"),
+            "event_date": (row.get("priority") or {}).get("event_date"),
+            "selected": chosen,
+        })
+    by_key = {row["source_key"]: row for row in rows}
+    deferred = sorted(
+        (row for row in rows if not row["selected"] and row["wait_hours"] is not None),
+        key=lambda row: (-row["wait_hours"], row["source_key"]),
+    )
+    return {
+        "schema_version": 1,
+        "generated_by": "x_candidate_backlog.py audit",
+        "generated_at": _iso(now),
+        "source_updated_at": backlog.get("updated_at"),
+        "scope": "x_candidate_backlog_snapshot_only",
+        "canonical_review_inbox_status_checked": False,
+        "ranking_basis": "stored_priorities_from_snapshot",
+        "automatic_publication_enabled": False,
+        "summary": {
+            "status_counts": dict(sorted(Counter(row["status"] for row in backlog["items"]).items())),
+            "daily_limit": max_items,
+            "unprocessed": len(pending),
+            "selected": len(selected),
+            "deferred": len(pending) - len(selected),
+            "minimum_batches_without_new_arrivals": (len(pending) + max_items - 1) // max_items,
+            "unknown_or_future_first_seen": invalid_timestamps,
+        },
+        "by_confidence": {label: dict(counts) for label, counts in sorted(by_confidence.items())},
+        "by_explicit_area": {label: dict(counts) for label, counts in sorted(by_area.items())},
+        "selected": [by_key[row["source_key"]] for row in selected],
+        "oldest_deferred": deferred[:10],
+    }
+
+
 def mark_in_progress(
     backlog: Mapping[str, Any],
     selected_items: Iterable[Mapping[str, Any]],
@@ -569,6 +641,11 @@ def build_parser() -> argparse.ArgumentParser:
     merge.add_argument("--now", type=datetime.fromisoformat)
     merge.add_argument("--append-github-summary", action="store_true")
 
+    audit = sub.add_parser("audit", help="report the existing X review selection without writing the backlog")
+    audit.add_argument("--backlog", type=Path, default=DEFAULT_BACKLOG)
+    audit.add_argument("--daily-limit", type=int, default=5)
+    audit.add_argument("--now", type=datetime.fromisoformat)
+
     transition = sub.add_parser("transition", help="record an explicit lifecycle transition")
     transition.add_argument("--backlog", type=Path, default=DEFAULT_BACKLOG)
     transition.add_argument("--source-key", required=True)
@@ -584,6 +661,12 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     now = args.now or datetime.now(timezone.utc)
+    if args.command == "audit":
+        # Missing or malformed input must not look like an empty queue.
+        backlog = json.loads(args.backlog.read_text(encoding="utf-8"))
+        report = build_ingress_audit(backlog, now=now, max_items=args.daily_limit)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0
     if args.command == "merge":
         today = args.today or now.date()
         payload = load_json(args.input, {})

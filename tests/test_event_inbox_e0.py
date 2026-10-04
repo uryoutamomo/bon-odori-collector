@@ -7,11 +7,46 @@ from pathlib import Path
 
 from event_model.local_judgment_migration import migrate_event_inbox_candidate, migrate_local_judgment_contract
 from master_rdb.master_db import init_db
-from review_inbox_adapters.build_event_inbox_candidates import main as cli_main, run
+from review_inbox_adapters.build_event_inbox_candidates import _report_entries, main as cli_main, run
 from review_inbox_adapters.event_inbox_writer import insert_candidate
 
 
 class EventInboxE0Test(unittest.TestCase):
+    def test_invalid_report_shapes_fail_as_value_errors(self):
+        reports = [
+            [],
+            {"report_type": []},
+            {"report_type": "official_notice", "source": ["invalid"], "events": []},
+            {"report_type": "official_notice", "source": {"report_id": "n", "raw_text": "text"}, "events": [None]},
+            {"report_type": "review_console_change_request", "source": {"report_id": "n", "raw_text": "text"}, "events": ["invalid"]},
+            {"report_type": "new_event", "match_hint": ["invalid"]},
+            {"report_type": "new_event", "venue": "invalid"},
+        ]
+        with tempfile.TemporaryDirectory() as temp:
+            report = Path(temp) / "notice.json"
+            for value in reports:
+                with self.subTest(report=value):
+                    report.write_text(json.dumps(value), encoding="utf-8")
+                    with self.assertRaises(ValueError):
+                        _report_entries(report)
+
+    def test_unknown_official_action_rejects_the_batch_without_candidates(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            db = root / "master.sqlite"
+            init_db(db).close()
+            before = db.read_bytes()
+            valid = {"action": "register_new", "event_name_hint": "試験盆踊り", "event_year": 2099, "date_start": "2099-08-01", "venue": {"name": "試験公園"}}
+            report = root / "notice.json"
+            report.write_text(json.dumps({"report_type": "official_notice", "source": {"report_id": "notice", "raw_text": "text"}, "events": [valid, {**valid, "entry_id": "typo", "action": "register_neew"}]}), encoding="utf-8")
+            args = type("Args", (), {"report": [report], "report_dir": [], "db": db, "out_db": root / "dry.sqlite", "out_json": root / "report.json", "out_md": root / "report.md", "max_candidates": 200, "apply": False, "confirm": "", "no_auto_migrate": False, "include_expired": False})()
+            result = run(args)
+            self.assertTrue(any(i["severity"] == "high" and i["issue_type"] == "invalid_report" for i in result["issues"]))
+            self.assertEqual(result["summary"]["created"], 0)
+            with sqlite3.connect(root / "dry.sqlite") as conn:
+                self.assertEqual(conn.execute("SELECT COUNT(*) FROM review_inbox_items").fetchone()[0], 0)
+            self.assertEqual(db.read_bytes(), before)
+
     def test_structure_does_not_import_canonical_writers(self):
         source = Path("review_inbox_adapters/build_event_inbox_candidates.py").read_text()
         for name in ("ensure_venue", "ensure_series_and_occurrence", "confirm_occurrence_schedule_venue", "upsert_occurrence_song", "link_occurrence_evidence"):

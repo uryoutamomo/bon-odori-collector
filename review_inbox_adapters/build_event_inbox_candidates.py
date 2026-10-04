@@ -26,6 +26,7 @@ EVENT_INBOX_CANDIDATE_CONFIRMATION = "APPLY EVENT INBOX CANDIDATES"
 REVIEW_CONSOLE = "review_console_change_request"
 # Review console change_request actions (decision_stage.CHANGE_REQUEST_TYPES values).
 CONSOLE_ACTIONS = ("confirm_current_year_date", "add_historical_reference", "update_venue")
+OFFICIAL_ACTIONS = ("confirm_existing", "register_new", "add_occurrence_to_existing_series", "rename_series_and_register_new", "merge_existing_series")
 SOURCE_PREFIXES = {"official_notice": "official_notice:", REVIEW_CONSOLE: "review_console:"}
 REPORT_LABELS = {"official_notice": "official_notice", REVIEW_CONSOLE: REVIEW_CONSOLE}
 
@@ -37,15 +38,38 @@ def table_counts(conn): return {t: conn.execute(f"SELECT COUNT(*) FROM {t}").fet
 def _issue(issues, severity, issue_type, **extra): issues.append({"severity": severity, "issue_type": issue_type, **extra})
 
 
+def _validate_entry_shape(entry):
+    if not isinstance(entry, dict):
+        raise ValueError("report entry must be an object")
+    for field in ("match_hint", "venue"):
+        if entry.get(field) is not None and not isinstance(entry[field], dict):
+            raise ValueError(f"report entry {field} must be an object")
+
+
 def _report_entries(path):
     report = json.loads(Path(path).read_text(encoding="utf-8"))
+    if not isinstance(report, dict):
+        raise ValueError("report must be an object")
+    if not isinstance(report.get("report_type"), str):
+        raise ValueError("report_type must be a string")
+    if report.get("report_type") in {"official_notice", REVIEW_CONSOLE}:
+        if not isinstance(report.get("source"), dict):
+            raise ValueError("report source must be an object")
+        if not isinstance(report.get("events"), list):
+            raise ValueError("report events must be a list")
+        for event in report["events"]:
+            _validate_entry_shape(event)
     if report.get("report_type") == "official_notice":
         source = report.get("source") or {}
         if not source.get("report_id") or not source.get("raw_text") or not isinstance(report.get("events"), list):
             raise ValueError("official report missing source.report_id, source.raw_text, or events")
+        for event in report["events"]:
+            if event.get("action") not in OFFICIAL_ACTIONS:
+                raise ValueError(f"unsupported official action: {event.get('action')!r}")
         base = {"report_type": "official_notice", "report_id": source["report_id"], "source": source, "path": str(path)}
         return [(base, event) for event in report["events"]]
     if report.get("report_type") in {"new_event", "existing_event_songs"}:
+        _validate_entry_shape(report)
         base = {"report_type": report["report_type"], "report_id": Path(path).stem, "source": report, "path": str(path)}
         return [(base, report)]
     if report.get("report_type") == REVIEW_CONSOLE:
