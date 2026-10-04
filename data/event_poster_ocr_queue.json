@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7438,
+  "count": 7434,
   "summary": {
     "critical": 48,
     "high": 1328,
@@ -33625,95 +33625,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_b12956c6c09b3084",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@KishinoYUICHI",
-      "account_name": "岸野雄一",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/KishinoYUICHI/status/2073771734868931035",
-      "tweet_id": "2073771734868931035",
-      "date": "2026-07-05T14:11:25+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMeEZMDbAAAk0fc.jpg",
-        "https://t.co/8umv5zggIa",
-        "pic.x.com/8umv5zggIa"
-      ],
-      "text": "🏮七夕夜会＜音楽プログラム⏳タイムテーブル＞\n17:00 民謡DJ パラクシュ \n18:00 フレンチ盆踊り KUMI SOLO (From Paris)\n18:30 Min-Yoi’s / 宇宙軒明星、澤田響紀、ほか \n※19:07に🍻乾杯タイムあり\n19:30 MEGA HITS BON DANCE \n20:00 のらぼん / にゃんとこwith 宇宙軒北星\n21:00終了 https://t.co/8umv5zggIa",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_2c426a4c40595e29",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@nakatake_yu",
-      "account_name": "中武優",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/nakatake_yu/status/2073779024971825635",
-      "tweet_id": "2073779024971825635",
-      "date": "2026-07-05T14:40:23+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/amplify_video_thumb/2073778716959002624/img/mHZvELdQfZ6MzPgJ.jpg",
-        "https://t.co/1aJ4dXKStB",
-        "pic.x.com/1aJ4dXKStB"
-      ],
-      "text": "7月12日（日）\n『両国‐ 江戸NOREN　両国妖怪夏祭り 2026』\nというイベントが開催されます\n\n面白そうなので、私も見に行きます。\n\nこのイベントで盆踊り的な事をやるそうで\nその振付は、こんな感じだそうです\n\n参加される方は、覚えておくと良いかもしれません\n\n#両国妖怪夏祭り\n#盆踊り https://t.co/1aJ4dXKStB",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_2600d972faf9a13e",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@BarAmbience",
-      "account_name": "BARアンビエンス",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/BarAmbience/status/2073978673611583701",
-      "tweet_id": "2073978673611583701",
-      "date": "2026-07-06T03:53:43+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMg__XpasAEdsWS.jpg",
-        "https://t.co/L5Qi4qJMAQ",
-        "pic.x.com/L5Qi4qJMAQ",
-        "https://pbs.twimg.com/media/HMhABpubAAAmFhi.jpg",
-        "https://pbs.twimg.com/media/HMhADdVbcAAVtbF.jpg"
-      ],
-      "text": "【 7/7(火)「七夕夜会」開催🔥】\n天気は大丈夫❗️の判断で予定通り開催します‼️\n\nクラフトビールや占い、台湾夜市ゲームなどの個性豊かな夜店と、盆踊りをメインとした音楽プログラムをぜひお楽しみください🎋✨\n\n「七夕夜会2026」\n🗓️ 7月7日（火）\n🕔17時 ～ 21時［入場無料］\n📍 隅田公園そよ風ひろば https://t.co/L5Qi4qJMAQ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_e8fa97926028ed8a",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@cocorume_event",
-      "account_name": "ココロに残るイベント図鑑",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/cocorume_event/status/2074086707121754421",
-      "tweet_id": "2074086707121754421",
-      "date": "2026-07-06T11:03:00+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMNz5bmbcAE7n4_.jpg",
-        "https://t.co/o8ylwV8W22",
-        "pic.x.com/o8ylwV8W22",
-        "https://pbs.twimg.com/media/HMNz5bkbUAA1f-f.jpg",
-        "https://pbs.twimg.com/media/HMNz5blbEAAUvK7.jpg",
-        "https://pbs.twimg.com/media/HMNz5bpbEAAVwBo.jpg"
-      ],
-      "text": "【東京・丸の内エリア(大手町・丸の内・有楽町)】\n7月24日(金)に行幸通りで\n『丸の内盆踊り2026』\n7月30日(木)・31日(金)に大手町仲通りほかで\n『大手町縁日2026』\nが開催されます✨\n会場には祭り櫓(まつりやぐら)が立ち、参加者は櫓を囲んで盆踊りを楽しむことができます💡 https://t.co/o8ylwV8W22",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
