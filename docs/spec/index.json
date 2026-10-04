@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T06:37:10Z",
-  "generated_for_commit": "fadbc531",
+  "generated_at": "2026-10-04T11:16:40Z",
+  "generated_for_commit": "790a4852",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -319,7 +319,9 @@
         "INV-RVW-020",
         "INV-RVW-021",
         "INV-RVW-022",
-        "INV-RVW-023"
+        "INV-RVW-023",
+        "INV-RVW-024",
+        "INV-RVW-025"
       ],
       "verified_by": [
         "tests/test_review_inbox_decision_writer.py",
@@ -335,9 +337,11 @@
         "tests/test_review_inbox_youtube_adapter.py",
         "tests/test_x_candidate_backlog.py",
         "tests/test_run_review_inbox_x_gap_scheduled.py",
-        "tests/test_ward_official_source_registry.py"
+        "tests/test_ward_official_source_registry.py",
+        "tests/test_review_ingress_audit.py",
+        "tests/test_event_inbox_e0.py"
       ],
-      "updated_for": "a47769f",
+      "updated_for": "e4a15037",
       "path": "docs/spec/L1/03-review.md",
       "owned_files": [
         "build_event_poster_ocr_queue.py",
@@ -418,12 +422,17 @@
         "x_candidate_backlog.py"
       ],
       "staleness": {
-        "commits_since": 2,
+        "commits_since": 1,
         "files_changed_since": 2
       },
-      "version": "1.15",
-      "revision_count": 16,
+      "version": "1.16",
+      "revision_count": 17,
       "history": [
+        {
+          "commit": "790a4852",
+          "date": "2026-10-04",
+          "subject": "Fix geocode input and validate review ingress with audit support (#277)"
+        },
         {
           "commit": "c68891ca",
           "date": "2026-08-24",
@@ -478,11 +487,6 @@
           "commit": "a40d7c45",
           "date": "2026-08-15",
           "subject": "LLMは同一性だけを答え、機械が変更要求へ変換する（E2） (#210)"
-        },
-        {
-          "commit": "cd8eb131",
-          "date": "2026-08-15",
-          "subject": "コンソール由来の変更提案を候補器へ付け替える（E0b） (#209)"
         }
       ]
     },
@@ -1184,7 +1188,7 @@
         "tests/test_youtube_description_backfill.py",
         "tests/test_build_youtube_rdb.py"
       ],
-      "updated_for": "68cd2f5",
+      "updated_for": "e4a15037",
       "path": "docs/spec/L1/09-youtube.md",
       "owned_files": [
         ".github/workflows/rdb-youtube-setlist-pipeline.yml",
@@ -1242,12 +1246,17 @@
         "youtube_channels/video_urls.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 5
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.8",
-      "revision_count": 9,
+      "version": "1.9",
+      "revision_count": 10,
       "history": [
+        {
+          "commit": "790a4852",
+          "date": "2026-10-04",
+          "subject": "Fix geocode input and validate review ingress with audit support (#277)"
+        },
         {
           "commit": "1339c0f0",
           "date": "2026-10-03",
@@ -1322,13 +1331,16 @@
       ],
       "invariants": [
         "INV-VEN-001",
-        "INV-VEN-002"
+        "INV-VEN-002",
+        "INV-VEN-003",
+        "INV-VEN-004"
       ],
       "verified_by": [
         "tests/test_apply_reviewed_missing_occurrence_venues.py",
-        "tests/test_apply_ph2_shinagawa_second_venue_review.py"
+        "tests/test_apply_ph2_shinagawa_second_venue_review.py",
+        "tests/test_geocode_venues.py"
       ],
-      "updated_for": "83bf7d0",
+      "updated_for": "e4a15037",
       "path": "docs/spec/L1/10-venues.md",
       "owned_files": [
         "apply_ph2_shinagawa_second_venue_review.py",
@@ -1347,12 +1359,17 @@
         "venues/extract_venues.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.0",
-      "revision_count": 1,
+      "version": "1.1",
+      "revision_count": 2,
       "history": [
+        {
+          "commit": "790a4852",
+          "date": "2026-10-04",
+          "subject": "Fix geocode input and validate review ingress with audit support (#277)"
+        },
         {
           "commit": "dae40799",
           "date": "2026-08-14",
@@ -2196,6 +2213,27 @@
       ],
       "has_test": true
     },
+    "INV-RVW-024": {
+      "spec": "L1-review",
+      "title": "入口監査は候補・選出順・判断台帳を変更しない",
+      "tests": [
+        "tests/test_review_ingress_audit.py::test_audit_explains_existing_cohort_and_capacity_without_mutation",
+        "tests/test_review_ingress_audit.py::test_audit_cli_only_prints_and_does_not_write_snapshot_or_alerts",
+        "tests/test_review_ingress_audit.py::test_missing_and_malformed_audit_inputs_are_not_empty_queues",
+        "tests/test_review_ingress_audit.py::test_unknown_geography_and_invalid_age_are_reported_without_guessing"
+      ],
+      "has_test": true
+    },
+    "INV-RVW-025": {
+      "spec": "L1-review",
+      "title": "不正な入力を新規イベント提案として候補化しない",
+      "tests": [
+        "tests/test_event_inbox_e0.py::EventInboxE0Test::test_unknown_official_action_rejects_the_batch_without_candidates",
+        "tests/test_event_inbox_e0.py::EventInboxE0Test::test_invalid_report_shapes_fail_as_value_errors",
+        "tests/test_event_inbox_e0.py::EventInboxE0Test::test_display_name_change_does_not_create_revision"
+      ],
+      "has_test": true
+    },
     "INV-MST-001": {
       "spec": "L1-master",
       "title": "RDBへの反映は有限の変更種別だけを通す",
@@ -2644,6 +2682,24 @@
       "title": "会場のRDB one-off適用はNotion同期と公開JSONを書かない",
       "tests": [
         "tests/test_apply_ph2_shinagawa_second_venue_review.py::ApplyPh2ShinagawaSecondVenueReviewTest::test_apply_is_rdb_only_and_does_not_queue_notion_sync_job"
+      ],
+      "has_test": true
+    },
+    "INV-VEN-003": {
+      "spec": "L1-venues",
+      "title": "手動座標生成は実行場所によらずリポジトリ直下の入出力を使う",
+      "tests": [
+        "tests/test_geocode_venues.py::GeocodeVenuesTests::test_main_uses_repository_data_from_an_unrelated_working_directory",
+        "tests/test_geocode_venues.py::GeocodeVenuesTests::test_missing_repository_input_does_not_call_api_or_replace_output"
+      ],
+      "has_test": true
+    },
+    "INV-VEN-004": {
+      "spec": "L1-venues",
+      "title": "座標出力の失敗で既存の成果を壊さない",
+      "tests": [
+        "tests/test_geocode_venues.py::GeocodeVenuesTests::test_serialization_failure_keeps_existing_output_and_cleans_temporary_file",
+        "tests/test_geocode_venues.py::GeocodeVenuesTests::test_replace_failure_keeps_existing_output_and_cleans_temporary_file"
       ],
       "has_test": true
     },
