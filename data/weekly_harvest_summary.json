@@ -1,8 +1,8 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-04T12:29:27.347954+00:00",
+  "generated_at": "2026-10-05T14:46:56.127225+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-04T12:29:20.138381+00:00",
+  "source_generated_at": "2026-10-05T14:46:49.354707+00:00",
   "days": 3,
   "voice_count": 31,
   "candidate_count": 12,
@@ -27,8 +27,8 @@
   "samples": {
     "non_song_review": [],
     "song_review": [
-      "水戸黄門おどり",
-      "ズンパ音頭"
+      "ズンパ音頭",
+      "水戸黄門おどり"
     ]
   }
 }
