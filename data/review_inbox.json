@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-05T14:55:21.841121+00:00",
+  "generated_at": "2026-10-05T14:58:26.285906+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -23566,6 +23566,118 @@
       }
     },
     {
+      "inbox_id": "inbox_0f3b70d40a53a2d8",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ズンパ音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:ズンパ音頭",
+      "source_url": "https://www.youtube.com/watch?v=RMcrafOQTNQ",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "28b16e590bdb053ac519d7c2ae60536d425a682582310981731b836eadeabc30",
+      "last_seen_at": "github-37325788070-1-daily_song_candidate",
+      "created_at": "2026-08-11T08:04:51.717363+00:00",
+      "updated_at": "2026-10-05T14:55:42.428228+00:00",
+      "payload": {
+        "canonical_song_name": "ズンパ音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-05T00:00:23+00:00",
+            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+            "url": "https://www.youtube.com/watch?v=RMcrafOQTNQ"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-04T00:00:20+00:00",
+            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+            "url": "https://www.youtube.com/watch?v=vDYP8fIBg0s"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-03T00:00:23+00:00",
+            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+            "url": "https://www.youtube.com/watch?v=2srwsDXe6og"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+        "evidence_url": "https://www.youtube.com/watch?v=RMcrafOQTNQ",
+        "interpretation": "ズンパ音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "ズンパ音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
+      "inbox_id": "inbox_7742d0e44a1cb44f",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "水戸黄門おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:水戸黄門おどり",
+      "source_url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "683051ebf5f53438b12182a06966f1cc9ef68172cd742f278bb27acc104e7d98",
+      "last_seen_at": "github-37325788070-1-daily_song_candidate",
+      "created_at": "2026-09-21T13:07:12.284663+00:00",
+      "updated_at": "2026-10-05T14:55:42.428228+00:00",
+      "payload": {
+        "canonical_song_name": "水戸黄門おどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-03T11:30:40+00:00",
+            "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
+            "url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-03T11:00:07+00:00",
+            "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
+            "url": "https://www.youtube.com/watch?v=2LCQlFYd9Kg"
+          }
+        ],
+        "evidence_count": 2,
+        "evidence_text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
+        "evidence_url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo",
+        "interpretation": "水戸黄門おどり",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "水戸黄門おどり",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_12673a7caf8c0e1e",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -23858,124 +23970,6 @@
         ],
         "video_id": "uwKkv9nYrB0",
         "video_url": "https://www.youtube.com/watch?v=uwKkv9nYrB0"
-      }
-    },
-    {
-      "inbox_id": "inbox_0f3b70d40a53a2d8",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "ズンパ音頭",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:ズンパ音頭",
-      "source_url": "https://www.youtube.com/watch?v=vDYP8fIBg0s",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "7036271a9d2a8295e680046dee404ee2ff84b5538e6c564304e07f4446aa7201",
-      "last_seen_at": "github-37201715638-1-daily_song_candidate",
-      "created_at": "2026-08-11T08:04:51.717363+00:00",
-      "updated_at": "2026-10-04T12:35:59.894252+00:00",
-      "payload": {
-        "canonical_song_name": "ズンパ音頭",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-04T00:00:20+00:00",
-            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-            "url": "https://www.youtube.com/watch?v=vDYP8fIBg0s"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-03T00:00:23+00:00",
-            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-            "url": "https://www.youtube.com/watch?v=2srwsDXe6og"
-          }
-        ],
-        "evidence_count": 2,
-        "evidence_text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-        "evidence_url": "https://www.youtube.com/watch?v=vDYP8fIBg0s",
-        "interpretation": "ズンパ音頭",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "ズンパ音頭",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
-      }
-    },
-    {
-      "inbox_id": "inbox_7742d0e44a1cb44f",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "水戸黄門おどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:水戸黄門おどり",
-      "source_url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "dddc5c3e4abe2c5153fcd81c1c56bed2c6e943ff237fc50fe06674fd76950163",
-      "last_seen_at": "github-37201715638-1-daily_song_candidate",
-      "created_at": "2026-09-21T13:07:12.284663+00:00",
-      "updated_at": "2026-10-04T12:35:59.894252+00:00",
-      "payload": {
-        "canonical_song_name": "水戸黄門おどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-03T11:30:40+00:00",
-            "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-            "url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-03T11:00:07+00:00",
-            "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-            "url": "https://www.youtube.com/watch?v=2LCQlFYd9Kg"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-02T11:30:17+00:00",
-            "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-            "url": "https://www.youtube.com/watch?v=R0aLsvFWU_Y"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-02T11:00:37+00:00",
-            "text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-            "url": "https://www.youtube.com/watch?v=P21FnkgcrFI"
-          }
-        ],
-        "evidence_count": 4,
-        "evidence_text": "2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL\n---\n2026年9月12日に東京都新宿区若松町にて開催された、 穴八幡宮祭禮「若戸フェスタ盆踊り」の様子です。 地域の方々や踊り手の皆様による、熱気あふれる盆踊りの模様をぜひお楽しみください！ 【開催概要】 ・イベント名：若戸フェスタ盆踊り（穴八幡宮祭禮） ・開催日：2026年9月12日 ・場所：東京都新宿区若松町 チャンネル登録や高評価もぜひよろしくお願いいたします！ #盆踊り #若戸フェスタ #穴八幡宮 #穴八幡宮祭禮 #新宿区 #若松町 #和太鼓お祭りチャンネル #夏祭り #日本の祭り 若戸フェスタ盆踊り １東京音頭 https://youtu.be/BpZqjRcQKLg ２水戸黄門おどり https://youtu.be/CbY6Q7l5_nw ３炭坑節 https://youtu.be/0dOxuYQXsrc ４ズンパ音頭 https://youtu.be/U9wkWQaVNIY ５八木節 https://youtu.be/Mbol155Hp_8 ６大東京音頭 https://youtu.be/uZEAwywvC04 ７さくら音頭 https://youtu.be/j4LXnIL",
-        "evidence_url": "https://www.youtube.com/watch?v=NYN3ltbe5Eo",
-        "interpretation": "水戸黄門おどり",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "水戸黄門おどり",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
       }
     },
     {
