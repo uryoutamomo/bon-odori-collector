@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7433,
+  "count": 7432,
   "summary": {
     "critical": 48,
     "high": 1328,
@@ -33625,28 +33625,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_4c6cdf8cf27c5898",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@bon__juu",
-      "account_name": "盆獣 ・Bonjū",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/bon__juu/status/2074748210380447931",
-      "tweet_id": "2074748210380447931",
-      "date": "2026-07-08T06:51:34+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMr7CrVa8AA8Zc_.jpg",
-        "https://t.co/2Fth8RY2Xy",
-        "pic.x.com/2Fth8RY2Xy",
-        "https://pbs.twimg.com/amplify_video_thumb/2074747528915132416/img/gowgNQb1AiGEOZ4C.jpg"
-      ],
-      "text": "7/7 七夕夜会\n\n踊るのも見るのも楽しい演目多数。\n日本語や母国語の生歌(どっちも聴解困難😅)、ネオン音頭、一日市盆踊り(体の試練になる2曲は勝手に命名:三角筋踊り&amp;片足立ち踊り)など～\n地元の人も遠方の人も東海の🥷🏼もいた交流会でもあった🍻\n締めにのら拝殿踊りへ乱入\n盛りだくさんの一夜だった❣️ https://t.co/2Fth8RY2Xy",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
