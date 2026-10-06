@@ -3744,6 +3744,54 @@
       "user_approval_message_id": "Sentinel_0c7f3c44d3388191b893dfe9b816a5ce",
       "user_approval_received_at": "2026-10-04T23:35+09:00",
       "reviewed_by": "user_via_uta"
+    },
+    {
+      "id": "reviewed-ended-transition-20261006-occ_79864f8d8b03a4bd",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_79864f8d8b03a4bd",
+      "event_key": "公社東葛西第一住宅自治会住宅祭||公社東葛西第一住宅団地内公園",
+      "site_sha256": "1d5227a7e8ab38fb262e0f32a1c53c541a083e34284b1e9a62a1b48fb6fed30b",
+      "collector_sha256": "8f81139247bb03b138a92b83e7dbaa851ed9546f2f302bbdc98691133d55af7a",
+      "reason": "2026-10-06 ユーザー明示承認。予定終了日2026-10-04の経過に基づく終了表示9項目だけの更新。実際の開催を確認したという変更ではない。対象は公社東葛西第一住宅自治会住宅祭・小岩田自治会盆踊り（10/3〜10/4）・椿フェスティバルの3件。公開394件で追加/削除なし。日時・会場・本文・出典・曲・ID/年は不変。既存承認履歴を保持。",
+      "reviewed_collector_revision": "429bd1c7b33b03960aaed2beda5f44ce26385ac1",
+      "reviewed_site_revision": "6b3132c3cb30ade98577450a779cc80505bb962a",
+      "source_input_checksum": "60d03eacd3d61dd018639b194f0dd60d207658c2e04cbdb970fd389f232b552d",
+      "approval_request_message_id": "Sentinel_95e5f6b704b8819193c568cd43bf83a5",
+      "user_approval_message_id": "Sentinel_00a07bc9b8c08191ae42275c6ea990ea",
+      "user_approval_received_at": "2026-10-06T13:40+09:00",
+      "reviewed_by": "user_via_uta"
+    },
+    {
+      "id": "reviewed-ended-transition-20261006-occ_973dd6c3a8f3c4ac",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_973dd6c3a8f3c4ac",
+      "event_key": "小岩田自治会盆踊り||小岩田天祖神社",
+      "site_sha256": "e29fe005b07991ffd2eae8a1583e0334e5d2bf6c8a90777de8059b80753a7f36",
+      "collector_sha256": "d9a4f424602db72c3d7aa144cdb8a5a1da19419f00965c599838d5c1f7fe8cf7",
+      "reason": "2026-10-06 ユーザー明示承認。予定終了日2026-10-04の経過に基づく終了表示9項目だけの更新。実際の開催を確認したという変更ではない。対象は公社東葛西第一住宅自治会住宅祭・小岩田自治会盆踊り（10/3〜10/4）・椿フェスティバルの3件。公開394件で追加/削除なし。日時・会場・本文・出典・曲・ID/年は不変。既存承認履歴を保持。",
+      "reviewed_collector_revision": "429bd1c7b33b03960aaed2beda5f44ce26385ac1",
+      "reviewed_site_revision": "6b3132c3cb30ade98577450a779cc80505bb962a",
+      "source_input_checksum": "60d03eacd3d61dd018639b194f0dd60d207658c2e04cbdb970fd389f232b552d",
+      "approval_request_message_id": "Sentinel_95e5f6b704b8819193c568cd43bf83a5",
+      "user_approval_message_id": "Sentinel_00a07bc9b8c08191ae42275c6ea990ea",
+      "user_approval_received_at": "2026-10-06T13:40+09:00",
+      "reviewed_by": "user_via_uta"
+    },
+    {
+      "id": "reviewed-ended-transition-20261006-occ_c8a8315e105b791a",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_c8a8315e105b791a",
+      "event_key": "椿フェスティバル||瑞江葬儀所裏こどもの広場",
+      "site_sha256": "fa940f6ae430bdc4f7d4647f26fc9b3e7a84a0c8877bbf4b8af7fb7726c4065b",
+      "collector_sha256": "4a26245dbfaae51d05783913a12fb5a64f3b62abc495573890a0a8064c2e9e06",
+      "reason": "2026-10-06 ユーザー明示承認。予定終了日2026-10-04の経過に基づく終了表示9項目だけの更新。実際の開催を確認したという変更ではない。対象は公社東葛西第一住宅自治会住宅祭・小岩田自治会盆踊り（10/3〜10/4）・椿フェスティバルの3件。公開394件で追加/削除なし。日時・会場・本文・出典・曲・ID/年は不変。既存承認履歴を保持。",
+      "reviewed_collector_revision": "429bd1c7b33b03960aaed2beda5f44ce26385ac1",
+      "reviewed_site_revision": "6b3132c3cb30ade98577450a779cc80505bb962a",
+      "source_input_checksum": "60d03eacd3d61dd018639b194f0dd60d207658c2e04cbdb970fd389f232b552d",
+      "approval_request_message_id": "Sentinel_95e5f6b704b8819193c568cd43bf83a5",
+      "user_approval_message_id": "Sentinel_00a07bc9b8c08191ae42275c6ea990ea",
+      "user_approval_received_at": "2026-10-06T13:40+09:00",
+      "reviewed_by": "user_via_uta"
     }
   ]
 }
