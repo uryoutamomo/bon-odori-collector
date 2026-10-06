@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-05T14:58:26.285906+00:00",
+  "generated_at": "2026-10-06T13:26:26.580727+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,444 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_467f994cbdbcb6b6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8月9日（日）、駒澤大学駒沢キャンパスで「駒沢ふれあい広場・第24回夏祭り」が開催されます。地域の方と大学生が一体となって盛り上げる夏の風物詩で、模擬店や盆踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084526888979218459",
+      "source_url": "https://x.com/ShinHatake1008/status/2084526888979218459",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "98fae6c22b39f79d446592935e71e28276317a3ff35eb10e31a3af6b1d2040fe",
+      "last_seen_at": "github-37469518874-1",
+      "created_at": "2026-10-06T13:25:54.826709+00:00",
+      "updated_at": "2026-10-06T13:25:54.826709+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_44899bcee18fe8c4",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月9日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@ShinHatake1008",
+        "source_count": 1,
+        "source_key": "x:2084526888979218459",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "畠山 しんいち 世田谷区議会議員7期 🇯🇵Shinichi Hatakeyama",
+          "classification": "registered_official_social",
+          "handle": "@shinhatake1008",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8月9日（日）、駒澤大学駒沢キャンパスで「駒沢ふれあい広場・第24回夏祭り」が開催されます。地域の方と大学生が一体となって盛り上げる夏の風物詩で、模擬店や盆踊りも行われるそうです。ぜひお出かけください。",
+        "source_url": "https://x.com/ShinHatake1008/status/2084526888979218459",
+        "source_urls": [
+          "https://x.com/ShinHatake1008/status/2084526888979218459"
+        ],
+        "voice": {
+          "account": "@ShinHatake1008",
+          "date": "2026-08-04T06:28:33+00:00",
+          "name": "畠山 しんいち 世田谷区議会議員7期 🇯🇵Shinichi Hatakeyama",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "8月9日（日）、駒澤大学駒沢キャンパスで「駒沢ふれあい広場・第24回夏祭り」が開催されます。地域の方と大学生が一体となって盛り上げる夏の風物詩で、模擬店や盆踊りも行われるそうです。ぜひお出かけください。",
+          "title": "",
+          "tweet_id": "2084526888979218459",
+          "url": "https://x.com/ShinHatake1008/status/2084526888979218459"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_63c53bf40bfaff18",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【イベント情報】第38回ふるさと納涼祭\n今年も夏の風物詩ふるさと納涼祭が開催されます🏮✨\nつるビーと一緒に楽しみましょう♪\n日時:8月8日(土)15時〜20時3",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084506292962599143",
+      "source_url": "https://x.com/tsurub/status/2084506292962599143",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1981ef267ecfa90f553c7dc53543062929945ea85f14aa7a6355ae182d05935d",
+      "last_seen_at": "github-37469518874-1",
+      "created_at": "2026-10-06T13:25:54.826709+00:00",
+      "updated_at": "2026-10-06T13:25:54.826709+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_8c3d7cbd2d3960ea",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月8日",
+          "15時",
+          "20時",
+          "18時",
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@tsurub",
+        "source_count": 1,
+        "source_key": "x:2084506292962599143",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO2nbIYbcAA86Qo.jpg",
+          "https://t.co/FDj8ijTgBD",
+          "pic.x.com/FDj8ijTgBD"
+        ],
+        "source_officiality": {
+          "account_name": "つるビー＠都留市観光協会【公式】",
+          "classification": "registered_official_social",
+          "handle": "@tsurub",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【イベント情報】第38回ふるさと納涼祭\n今年も夏の風物詩ふるさと納涼祭が開催されます🏮✨\nつるビーと一緒に楽しみましょう♪\n日時:8月8日(土)15時〜20時30分\n会場:谷村第一小学校校庭\n【つるビーに会える時間】\nちびっこ盆おどりに参加します💚\n①18時40分〜②19時20分〜\nhttps://t.co/QChZX3dson https://t.co/FDj8ijTgBD",
+        "source_url": "https://x.com/tsurub/status/2084506292962599143",
+        "source_urls": [
+          "https://x.com/tsurub/status/2084506292962599143"
+        ],
+        "voice": {
+          "account": "@tsurub",
+          "date": "2026-08-04T05:06:43+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO2nbIYbcAA86Qo.jpg",
+            "https://t.co/FDj8ijTgBD",
+            "pic.x.com/FDj8ijTgBD"
+          ],
+          "name": "つるビー＠都留市観光協会【公式】",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-future-schedule"
+          ],
+          "text": "【イベント情報】第38回ふるさと納涼祭\n今年も夏の風物詩ふるさと納涼祭が開催されます🏮✨\nつるビーと一緒に楽しみましょう♪\n日時:8月8日(土)15時〜20時30分\n会場:谷村第一小学校校庭\n【つるビーに会える時間】\nちびっこ盆おどりに参加します💚\n①18時40分〜②19時20分〜\nhttps://t.co/QChZX3dson https://t.co/FDj8ijTgBD",
+          "title": "",
+          "tweet_id": "2084506292962599143",
+          "url": "https://x.com/tsurub/status/2084506292962599143"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6cc11bfdc9aaf4b5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "設営完了！\n午後5時15分より北とぴあ玄関前で太鼓演奏。\n13階の飛鳥ホールでの盆踊りは、午後5時30分開始です。 https://t.co/FyIBntuQR",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084514424539500555",
+      "source_url": "https://x.com/ojiginza/status/2084514424539500555",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f024066124f4ca29c093e593f183c46ae4b2f00db5325d619298f81a52b4570e",
+      "last_seen_at": "github-37469518874-1",
+      "created_at": "2026-10-06T13:25:54.826709+00:00",
+      "updated_at": "2026-10-06T13:25:54.826709+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_9ceb72548207aa56",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "5時",
+          "5時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@ojiginza",
+        "source_count": 1,
+        "source_key": "x:2084514424539500555",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO2uzyya8AAiCeE.jpg",
+          "https://t.co/FyIBntuQRK",
+          "pic.x.com/FyIBntuQRK"
+        ],
+        "source_officiality": {
+          "account_name": "王子銀座商店街振興組合",
+          "classification": "registered_official_social",
+          "handle": "@ojiginza",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n設営完了！\n午後5時15分より北とぴあ玄関前で太鼓演奏。\n13階の飛鳥ホールでの盆踊りは、午後5時30分開始です。 https://t.co/FyIBntuQRK",
+        "source_url": "https://x.com/ojiginza/status/2084514424539500555",
+        "source_urls": [
+          "https://x.com/ojiginza/status/2084514424539500555"
+        ],
+        "voice": {
+          "account": "@ojiginza",
+          "date": "2026-08-04T05:39:01+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO2uzyya8AAiCeE.jpg",
+            "https://t.co/FyIBntuQRK",
+            "pic.x.com/FyIBntuQRK"
+          ],
+          "name": "王子銀座商店街振興組合",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-images"
+          ],
+          "text": "設営完了！\n午後5時15分より北とぴあ玄関前で太鼓演奏。\n13階の飛鳥ホールでの盆踊りは、午後5時30分開始です。 https://t.co/FyIBntuQRK",
+          "title": "",
+          "tweet_id": "2084514424539500555",
+          "url": "https://x.com/ojiginza/status/2084514424539500555"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_72081b72142c17f5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "夏の縁日まつりのご案内🎆\n\n8月7日(金) 大通り緑地・大通り公園にて \n17：30～売店OPEN　※売り切れ次第終了 \n17：30～18：00　浜田小学校児童",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084483331803197588",
+      "source_url": "https://x.com/oodori53/status/2084483331803197588",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "bfc9dfd7891eba94c34e8889d37a8b1baea5966e4f2114961ef62d28acca1fe9",
+      "last_seen_at": "github-37469518874-1",
+      "created_at": "2026-10-06T13:25:54.826709+00:00",
+      "updated_at": "2026-10-06T13:25:54.826709+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d67e3d4d5850e093",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月7日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@oodori53",
+        "source_count": 1,
+        "source_key": "x:2084483331803197588",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO2SPJabsAA0flo.jpg",
+          "https://t.co/hk01YoGltk",
+          "pic.x.com/hk01YoGltk",
+          "https://pbs.twimg.com/media/HO2SbqJasAAwSOj.jpg",
+          "https://pbs.twimg.com/media/HO2SdOfbQAA9LXt.jpg",
+          "https://pbs.twimg.com/media/HO2SiHBbQAAvEk3.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大通り商店街振興組合",
+          "classification": "registered_official_social",
+          "handle": "@oodori53",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n夏の縁日まつりのご案内🎆\n\n8月7日(金) 大通り緑地・大通り公園にて \n17：30～売店OPEN　※売り切れ次第終了 \n17：30～18：00　浜田小学校児童の伝統芸能公演 \n18：00～20：45　酒田の盆踊り・甚句踊り＆S-Jinku  \n\n美味しいフランクフルト食べに来てね✨ \n#大通り商店街 #伝統芸能 #甚句 #盆踊り https://t.co/hk01YoGltk",
+        "source_url": "https://x.com/oodori53/status/2084483331803197588",
+        "source_urls": [
+          "https://x.com/oodori53/status/2084483331803197588"
+        ],
+        "voice": {
+          "account": "@oodori53",
+          "date": "2026-08-04T03:35:28+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO2SPJabsAA0flo.jpg",
+            "https://t.co/hk01YoGltk",
+            "pic.x.com/hk01YoGltk",
+            "https://pbs.twimg.com/media/HO2SbqJasAAwSOj.jpg",
+            "https://pbs.twimg.com/media/HO2SdOfbQAA9LXt.jpg",
+            "https://pbs.twimg.com/media/HO2SiHBbQAAvEk3.jpg"
+          ],
+          "name": "大通り商店街振興組合",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-images"
+          ],
+          "text": "夏の縁日まつりのご案内🎆\n\n8月7日(金) 大通り緑地・大通り公園にて \n17：30～売店OPEN　※売り切れ次第終了 \n17：30～18：00　浜田小学校児童の伝統芸能公演 \n18：00～20：45　酒田の盆踊り・甚句踊り＆S-Jinku  \n\n美味しいフランクフルト食べに来てね✨ \n#大通り商店街 #伝統芸能 #甚句 #盆踊り https://t.co/hk01YoGltk",
+          "title": "",
+          "tweet_id": "2084483331803197588",
+          "url": "https://x.com/oodori53/status/2084483331803197588"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_da9324c6ddda3296",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "2026年8月1日\n\n「からすやま夏まつり」\n\n私は今年もドリンクコーナーのお手伝い。\n昭和歌謡DJブラッシュのダンスタイムなど盛りだくさんの夏まつり。\n日本女",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084483193282212276",
+      "source_url": "https://x.com/naonao773703/status/2084483193282212276",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1c1deee55202c90ef63bd0607780bab3ab73c6061b4385391a60257570f84d68",
+      "last_seen_at": "github-37469518874-1",
+      "created_at": "2026-10-06T13:25:54.826709+00:00",
+      "updated_at": "2026-10-06T13:25:54.826709+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_5328aff6d0d82b0d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@naonao773703",
+        "source_count": 1,
+        "source_key": "x:2084483193282212276",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO2SaWpasAAQQlU.jpg",
+          "https://t.co/y6LaVr2ZOv",
+          "pic.x.com/y6LaVr2ZOv",
+          "https://pbs.twimg.com/media/HO2SaWobUAI_ooJ.jpg",
+          "https://pbs.twimg.com/media/HO2SaWobsAALeSg.jpg",
+          "https://pbs.twimg.com/media/HO2SaWrasAASCn6.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "石川ナオミ（世田谷区議会議員）",
+          "classification": "registered_official_social",
+          "handle": "@naonao773703",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n2026年8月1日\n\n「からすやま夏まつり」\n\n私は今年もドリンクコーナーのお手伝い。\n昭和歌謡DJブラッシュのダンスタイムなど盛りだくさんの夏まつり。\n日本女子体育大学の学生がキレッキレの\n盆踊りで、えるくん・もーるちゃんと\n一緒に盛り上げてくれました。\n\n#千歳烏山\n#烏山駅前通り商店街振興組合 https://t.co/y6LaVr2ZOv",
+        "source_url": "https://x.com/naonao773703/status/2084483193282212276",
+        "source_urls": [
+          "https://x.com/naonao773703/status/2084483193282212276"
+        ],
+        "voice": {
+          "account": "@naonao773703",
+          "date": "2026-08-04T03:34:55+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO2SaWpasAAQQlU.jpg",
+            "https://t.co/y6LaVr2ZOv",
+            "pic.x.com/y6LaVr2ZOv",
+            "https://pbs.twimg.com/media/HO2SaWobUAI_ooJ.jpg",
+            "https://pbs.twimg.com/media/HO2SaWobsAALeSg.jpg",
+            "https://pbs.twimg.com/media/HO2SaWrasAASCn6.jpg"
+          ],
+          "name": "石川ナオミ（世田谷区議会議員）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "2026年8月1日\n\n「からすやま夏まつり」\n\n私は今年もドリンクコーナーのお手伝い。\n昭和歌謡DJブラッシュのダンスタイムなど盛りだくさんの夏まつり。\n日本女子体育大学の学生がキレッキレの\n盆踊りで、えるくん・もーるちゃんと\n一緒に盛り上げてくれました。\n\n#千歳烏山\n#烏山駅前通り商店街振興組合 https://t.co/y6LaVr2ZOv",
+          "title": "",
+          "tweet_id": "2084483193282212276",
+          "url": "https://x.com/naonao773703/status/2084483193282212276"
         }
       }
     },
