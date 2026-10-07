@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-06T13:32:58.310806+00:00",
+  "generated_at": "2026-10-07T13:34:27.168287+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,444 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_0d137adf5e05027b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日8/4と明日8/5は池上本門寺の「みたま祭り・納涼盆踊り大会」。夕方に行ってみると櫓の準備が整っていました。天候にも恵まれ、人出もかなり多くなるでしょう。盆",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084562211142598970",
+      "source_url": "https://x.com/otafull/status/2084562211142598970",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8f55f51bb5dfe724285ef15916e4815867db520a71f094ae8a9904c3bd9e4222",
+      "last_seen_at": "github-37627705409-1",
+      "created_at": "2026-10-07T13:33:44.690910+00:00",
+      "updated_at": "2026-10-07T13:33:44.690910+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_edeb2c584aa33d6d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/4",
+          "8/5"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2084562211142598970",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO3Zg0AbMAAMAVz.jpg",
+          "https://t.co/rXIsPvfp01",
+          "pic.x.com/rXIsPvfp01",
+          "https://pbs.twimg.com/media/HO3ZiSAbYAAakXg.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日8/4と明日8/5は池上本門寺の「みたま祭り・納涼盆踊り大会」。夕方に行ってみると櫓の準備が整っていました。天候にも恵まれ、人出もかなり多くなるでしょう。盆踊りの写真は以前に撮影したものです。\nhttps://t.co/ccen9SDVRg https://t.co/rXIsPvfp01",
+        "source_url": "https://x.com/otafull/status/2084562211142598970",
+        "source_urls": [
+          "https://x.com/otafull/status/2084562211142598970"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-04T08:48:55+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO3Zg0AbMAAMAVz.jpg",
+            "https://t.co/rXIsPvfp01",
+            "pic.x.com/rXIsPvfp01",
+            "https://pbs.twimg.com/media/HO3ZiSAbYAAakXg.jpg"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "本日8/4と明日8/5は池上本門寺の「みたま祭り・納涼盆踊り大会」。夕方に行ってみると櫓の準備が整っていました。天候にも恵まれ、人出もかなり多くなるでしょう。盆踊りの写真は以前に撮影したものです。\nhttps://t.co/ccen9SDVRg https://t.co/rXIsPvfp01",
+          "title": "",
+          "tweet_id": "2084562211142598970",
+          "url": "https://x.com/otafull/status/2084562211142598970"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2653250bc8c8482b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【神路地域担当です】7月31日・8月1日に神路ふれあいまつりが開催されました。\n盆踊りや模擬店はもちろんのこと、相生中学校吹奏楽部による演奏や子どもたちのダンス",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084552147006640202",
+      "source_url": "https://x.com/higashinariku/status/2084552147006640202",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "649837e376b3d464655963d709f437d5cdc7d48924a1882599b4d18b336d02f4",
+      "last_seen_at": "github-37627705409-1",
+      "created_at": "2026-10-07T13:33:44.690910+00:00",
+      "updated_at": "2026-10-07T13:33:44.690910+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_7a99d30c1dfe7ebe",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月31日",
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@higashinariku",
+        "source_count": 1,
+        "source_key": "x:2084552147006640202",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO3OwljbsAAeaZO.jpg",
+          "https://t.co/qNDQrAZsta",
+          "pic.x.com/qNDQrAZsta",
+          "https://pbs.twimg.com/media/HO3RCvca0AACiUH.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大阪市東成区役所　区民の皆様へ",
+          "classification": "registered_official_social",
+          "handle": "@higashinariku",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【神路地域担当です】7月31日・8月1日に神路ふれあいまつりが開催されました。\n盆踊りや模擬店はもちろんのこと、相生中学校吹奏楽部による演奏や子どもたちのダンス披露もあり、多くの人が訪れた大盛り上がりの2日間でした。是非、皆様も思いやりあふれる神路地域の輪に加わってみてください！ https://t.co/qNDQrAZsta",
+        "source_url": "https://x.com/higashinariku/status/2084552147006640202",
+        "source_urls": [
+          "https://x.com/higashinariku/status/2084552147006640202"
+        ],
+        "voice": {
+          "account": "@higashinariku",
+          "date": "2026-08-04T08:08:55+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO3OwljbsAAeaZO.jpg",
+            "https://t.co/qNDQrAZsta",
+            "pic.x.com/qNDQrAZsta",
+            "https://pbs.twimg.com/media/HO3RCvca0AACiUH.jpg"
+          ],
+          "name": "大阪市東成区役所　区民の皆様へ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【神路地域担当です】7月31日・8月1日に神路ふれあいまつりが開催されました。\n盆踊りや模擬店はもちろんのこと、相生中学校吹奏楽部による演奏や子どもたちのダンス披露もあり、多くの人が訪れた大盛り上がりの2日間でした。是非、皆様も思いやりあふれる神路地域の輪に加わってみてください！ https://t.co/qNDQrAZsta",
+          "title": "",
+          "tweet_id": "2084552147006640202",
+          "url": "https://x.com/higashinariku/status/2084552147006640202"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_51b0d6364ce4f18f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8月9日(日)の駒沢ふれあい広場、世田谷警察署、世田谷消防署に行事届出申請を行いました。これですでに申請を済ませていた保健所と合わせて私の事前準備は終了。当日お",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084569063498690833",
+      "source_url": "https://x.com/mana_setagaya/status/2084569063498690833",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "91525485f938b4164ba46cfb637d512ca232fff6d61125e93b2309bc5f32952a",
+      "last_seen_at": "github-37627705409-1",
+      "created_at": "2026-10-07T13:33:44.690910+00:00",
+      "updated_at": "2026-10-07T13:33:44.690910+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_5d2b3e3d2f9397f0",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月9日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@mana_setagaya",
+        "source_count": 1,
+        "source_key": "x:2084569063498690833",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO3ggOeboAAsh4F.jpg",
+          "https://t.co/8F6ioZx5Ao",
+          "pic.x.com/8F6ioZx5Ao"
+        ],
+        "source_officiality": {
+          "account_name": "藤井まな：世田谷区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@mana_setagaya",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8月9日(日)の駒沢ふれあい広場、世田谷警察署、世田谷消防署に行事届出申請を行いました。これですでに申請を済ませていた保健所と合わせて私の事前準備は終了。当日お待ちしております。\n#行事開催届　#世田谷警察署　#世田谷消防署　#警察署　#消防署　#保健所　#夏祭り　#盆踊り https://t.co/8F6ioZx5Ao",
+        "source_url": "https://x.com/mana_setagaya/status/2084569063498690833",
+        "source_urls": [
+          "https://x.com/mana_setagaya/status/2084569063498690833"
+        ],
+        "voice": {
+          "account": "@mana_setagaya",
+          "date": "2026-08-04T09:16:08+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO3ggOeboAAsh4F.jpg",
+            "https://t.co/8F6ioZx5Ao",
+            "pic.x.com/8F6ioZx5Ao"
+          ],
+          "name": "藤井まな：世田谷区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "8月9日(日)の駒沢ふれあい広場、世田谷警察署、世田谷消防署に行事届出申請を行いました。これですでに申請を済ませていた保健所と合わせて私の事前準備は終了。当日お待ちしております。\n#行事開催届　#世田谷警察署　#世田谷消防署　#警察署　#消防署　#保健所　#夏祭り　#盆踊り https://t.co/8F6ioZx5Ao",
+          "title": "",
+          "tweet_id": "2084569063498690833",
+          "url": "https://x.com/mana_setagaya/status/2084569063498690833"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_759d0a7b13028411",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【池上】8/8(土)、9(日)に太田神社で市野倉北町会「納涼盆踊り大会」開催\nhttps://t.co/k09Zi4TId6 https:",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084570022366880118",
+      "source_url": "https://x.com/otafull/status/2084570022366880118",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "782086158a7f1c135af6a221e304cba6e14ad190621a3d0787f99e9a7f017e78",
+      "last_seen_at": "github-37627705409-1",
+      "created_at": "2026-10-07T13:33:44.690910+00:00",
+      "updated_at": "2026-10-07T13:33:44.690910+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_c1e660c2d01e9e26",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/8"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2084570022366880118",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO3hSpwakAAdHRk.jpg",
+          "https://t.co/A49xtBMcVd",
+          "pic.x.com/A49xtBMcVd"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【池上】8/8(土)、9(日)に太田神社で市野倉北町会「納涼盆踊り大会」開催\nhttps://t.co/k09Zi4TId6 https://t.co/A49xtBMcVd",
+        "source_url": "https://x.com/otafull/status/2084570022366880118",
+        "source_urls": [
+          "https://x.com/otafull/status/2084570022366880118"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-04T09:19:57+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO3hSpwakAAdHRk.jpg",
+            "https://t.co/A49xtBMcVd",
+            "pic.x.com/A49xtBMcVd"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【池上】8/8(土)、9(日)に太田神社で市野倉北町会「納涼盆踊り大会」開催\nhttps://t.co/k09Zi4TId6 https://t.co/A49xtBMcVd",
+          "title": "",
+          "tweet_id": "2084570022366880118",
+          "url": "https://x.com/otafull/status/2084570022366880118"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_845f1165be04ccc5",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【宝栄地域担当です】８月１日に宝栄小学校で「宝栄納涼の夕べ」が開催され、会場は多くの来場者で大いに賑わいました！盆踊りや屋台など、夏らしい催しを楽しむ笑顔であふ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084553181665882513",
+      "source_url": "https://x.com/higashinariku/status/2084553181665882513",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d345d0d926b7a28fdc92b28c836738127d9fc22327084f2e6d8912ddbcabfc5e",
+      "last_seen_at": "github-37627705409-1",
+      "created_at": "2026-10-07T13:33:44.690910+00:00",
+      "updated_at": "2026-10-07T13:33:44.690910+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a686bee4e4ed9e71",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月１日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@higashinariku",
+        "source_count": 1,
+        "source_key": "x:2084553181665882513",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO3R-99bAAAhHoB.jpg",
+          "https://t.co/9WDLO1Ho7H",
+          "pic.x.com/9WDLO1Ho7H",
+          "https://pbs.twimg.com/media/HO3SA05awAAiCp6.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大阪市東成区役所　区民の皆様へ",
+          "classification": "registered_official_social",
+          "handle": "@higashinariku",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【宝栄地域担当です】８月１日に宝栄小学校で「宝栄納涼の夕べ」が開催され、会場は多くの来場者で大いに賑わいました！盆踊りや屋台など、夏らしい催しを楽しむ笑顔であふれ、幅広い世代が一緒に楽しめる素敵な時間となりました！皆様もぜひ、宝栄地域のイベントに足を運んでみてください！！！！！ https://t.co/9WDLO1Ho7H",
+        "source_url": "https://x.com/higashinariku/status/2084553181665882513",
+        "source_urls": [
+          "https://x.com/higashinariku/status/2084553181665882513"
+        ],
+        "voice": {
+          "account": "@higashinariku",
+          "date": "2026-08-04T08:13:02+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO3R-99bAAAhHoB.jpg",
+            "https://t.co/9WDLO1Ho7H",
+            "pic.x.com/9WDLO1Ho7H",
+            "https://pbs.twimg.com/media/HO3SA05awAAiCp6.jpg"
+          ],
+          "name": "大阪市東成区役所　区民の皆様へ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "【宝栄地域担当です】８月１日に宝栄小学校で「宝栄納涼の夕べ」が開催され、会場は多くの来場者で大いに賑わいました！盆踊りや屋台など、夏らしい催しを楽しむ笑顔であふれ、幅広い世代が一緒に楽しめる素敵な時間となりました！皆様もぜひ、宝栄地域のイベントに足を運んでみてください！！！！！ https://t.co/9WDLO1Ho7H",
+          "title": "",
+          "tweet_id": "2084553181665882513",
+          "url": "https://x.com/higashinariku/status/2084553181665882513"
         }
       }
     },
