@@ -1,16 +1,32 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 5,
-  "direct_count": 2,
-  "created_count": 1,
-  "updated_count": 1,
-  "rejected_noise_count": 2,
+  "song_candidate_count": 7,
+  "direct_count": 5,
+  "created_count": 3,
+  "updated_count": 2,
+  "rejected_noise_count": 1,
   "review_count": 1,
   "created": [
     {
       "song_name": "忍岡音頭",
       "source_term": "忍岡音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "賑やかな踊り",
+      "source_term": "賑やかな踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "高円寺の阿波踊り",
+      "source_term": "高円寺の阿波踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -25,16 +41,20 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "八木節",
+      "source_term": "八木節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
     {
       "term": "信濃町ふるさと音頭",
       "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "阿波踊り",
-      "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
   "review": [
@@ -42,7 +62,7 @@
       "term": "ズンパ音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=Zule95o11Oo"
+      "evidence_url": "https://www.youtube.com/watch?v=RUxBw0woP20"
     }
   ]
 }

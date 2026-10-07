@@ -1,10 +1,10 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-10-06T13:25:15.250381+00:00",
-  "since": "2026-10-03T13:25:15.250381+00:00",
+  "generated_at": "2026-10-07T13:32:53.890950+00:00",
+  "since": "2026-10-04T13:32:53.890950+00:00",
   "days": 3,
-  "voice_count": 31,
-  "candidate_count": 5,
+  "voice_count": 35,
+  "candidate_count": 7,
   "rows": [
     {
       "category": "曲候補",
@@ -15,6 +15,18 @@
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=hRmuludPVbk",
+          "date": "2026-10-07T10:30:18+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=697aWDFdHVg",
+          "date": "2026-10-07T10:00:24+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
+        },
         {
           "url": "https://www.youtube.com/watch?v=_lVGAF3oO6A",
           "date": "2026-10-06T10:30:24+00:00",
@@ -32,22 +44,10 @@
           "date": "2026-10-05T10:30:06+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=tEYs_Gw4UqU",
-          "date": "2026-10-05T10:00:16+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=X2DCZmTCiPk",
-          "date": "2026-10-04T10:30:30+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G"
         }
       ],
       "evidence_text": "2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G\n---\n2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G\n---\n2026年9月19日に開催された、 信濃町町会「小さな盆踊り」の様子です。 地域のみなさんと一緒に輪になって踊る、 温かく活気あふれるお祭りの雰囲気をぜひお楽しみください！ 太鼓の響きと情緒ある音頭のリズムが会場を盛り上げています。 お祭りの熱気や和太鼓の演奏が少しでも伝われば嬉しいです。 よろしければ高評価とチャンネル登録をよろしくお願いいたします！ 【開催概要】 ・イベント名：信濃町町会「小さな盆踊り」 ・開催日：2026年9月19日 ・撮影：和太鼓お祭りチャンネル #盆踊り #信濃町 #信濃町ふるさと音頭 #和太鼓 #夏祭り #秋祭り #日本の祭り 信濃町小さな盆踊り １信濃町ふるさと音頭 https://youtu.be/VnjiOlXCJMw ２炭坑節 https://youtu.be/hCjvV9y7xzA ３東京音頭 https://youtu.be/1-SDmce6SIU ４八木節 https://youtu.be/hi06KF8S3Lc ５相馬盆唄 https://youtu.be/jlL3KQpfqxo ６大東京音頭 https://youtu.be/Tyiuj3G",
-      "evidence_url": "https://www.youtube.com/watch?v=_lVGAF3oO6A"
+      "evidence_url": "https://www.youtube.com/watch?v=hRmuludPVbk"
     },
     {
       "category": "曲候補",
@@ -58,6 +58,18 @@
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=vKhwFsyigHI",
+          "date": "2026-10-07T11:30:12+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Hbc2IEbnCe0",
+          "date": "2026-10-07T11:00:19+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
+        },
         {
           "url": "https://www.youtube.com/watch?v=HLjmf2bUmVw",
           "date": "2026-10-06T11:30:06+00:00",
@@ -75,22 +87,53 @@
           "date": "2026-10-05T11:30:03+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=uwKkv9nYrB0",
-          "date": "2026-10-05T11:00:17+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=SpbQ8pLxvJ0",
-          "date": "2026-10-04T11:30:05+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV"
         }
       ],
       "evidence_text": "2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV\n---\n2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV\n---\n2026年9月26日、 上野池之端の七倉稲荷神社にて開催された 「御遷座150年記念奉納踊り」の奉納踊りの演目を収録しています。 地域の皆様の熱気と太鼓の響き、風情ある盆踊りの雰囲気をぜひお楽しみください！ 【開催日】2026年9月26日 【場所】上野池之端 七倉稲荷神社 #盆踊り #七倉稲荷神社 #忍岡音頭 #上野 #和太鼓 #お祭り #日本の祭り #奉納踊り 七倉稲荷神社盆踊り １忍岡音頭 https://youtu.be/sE7QmUCswSQ ２踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/JFeOoY_YGnk ３恋するフォーチュンクッキー https://youtu.be/ZuBqu2bGkok ４少年八木節 https://youtu.be/-UzCUXYHSxY ５好きすぎて滅！ https://youtu.be/TB1_BazulZ0 ６炭坑節 https://youtu.be/zAaNgly7wvk ７となりのトトロ https://youtu.be/XoEWeRA5yc4 ８ホームラン音頭 https://youtu.be/JiqOBwTzV",
-      "evidence_url": "https://www.youtube.com/watch?v=HLjmf2bUmVw"
+      "evidence_url": "https://www.youtube.com/watch?v=vKhwFsyigHI"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "東京音頭",
+      "interpretation": "東京音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "evidence_count": 6,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=vXw-RfV5YLE",
+          "date": "2026-10-07T13:00:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gxd3g3n5Q2E",
+          "date": "2026-10-07T12:30:29+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=insxtUX1ikI",
+          "date": "2026-10-07T12:00:28+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RUxBw0woP20",
+          "date": "2026-10-07T00:00:35+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Zule95o11Oo",
+          "date": "2026-10-06T00:00:16+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
+        }
+      ],
+      "evidence_text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout\n---\n2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout\n---\n2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+      "evidence_url": "https://www.youtube.com/watch?v=vXw-RfV5YLE"
     },
     {
       "category": "曲候補",
@@ -102,6 +145,12 @@
       "evidence_count": 3,
       "evidence": [
         {
+          "url": "https://www.youtube.com/watch?v=RUxBw0woP20",
+          "date": "2026-10-07T00:00:35+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
+        },
+        {
           "url": "https://www.youtube.com/watch?v=Zule95o11Oo",
           "date": "2026-10-06T00:00:16+00:00",
           "account": "@wadaikoCH",
@@ -112,66 +161,91 @@
           "date": "2026-10-05T00:00:23+00:00",
           "account": "@wadaikoCH",
           "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=vDYP8fIBg0s",
-          "date": "2026-10-04T00:00:20+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
         }
       ],
       "evidence_text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-      "evidence_url": "https://www.youtube.com/watch?v=Zule95o11Oo"
+      "evidence_url": "https://www.youtube.com/watch?v=RUxBw0woP20"
     },
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "東京音頭",
-      "interpretation": "東京音頭",
+      "term": "八木節",
+      "interpretation": "八木節",
       "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 3,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=Zule95o11Oo",
-          "date": "2026-10-06T00:00:16+00:00",
+          "url": "https://www.youtube.com/watch?v=vXw-RfV5YLE",
+          "date": "2026-10-07T13:00:05+00:00",
           "account": "@wadaikoCH",
-          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
         },
         {
-          "url": "https://www.youtube.com/watch?v=RMcrafOQTNQ",
-          "date": "2026-10-05T00:00:23+00:00",
+          "url": "https://www.youtube.com/watch?v=gxd3g3n5Q2E",
+          "date": "2026-10-07T12:30:29+00:00",
           "account": "@wadaikoCH",
-          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
         },
         {
-          "url": "https://www.youtube.com/watch?v=vDYP8fIBg0s",
-          "date": "2026-10-04T00:00:20+00:00",
+          "url": "https://www.youtube.com/watch?v=insxtUX1ikI",
+          "date": "2026-10-07T12:00:28+00:00",
           "account": "@wadaikoCH",
-          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ"
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
         }
       ],
-      "evidence_text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-      "evidence_url": "https://www.youtube.com/watch?v=Zule95o11Oo"
+      "evidence_text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout\n---\n2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout\n---\n2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+      "evidence_url": "https://www.youtube.com/watch?v=vXw-RfV5YLE"
     },
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "阿波踊り",
-      "interpretation": "阿波踊り",
+      "term": "賑やかな踊り",
+      "interpretation": "賑やかな踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 3,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=vXw-RfV5YLE",
+          "date": "2026-10-07T13:00:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gxd3g3n5Q2E",
+          "date": "2026-10-07T12:30:29+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=insxtUX1ikI",
+          "date": "2026-10-07T12:00:28+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout"
+        }
+      ],
+      "evidence_text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout\n---\n2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout\n---\n2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+      "evidence_url": "https://www.youtube.com/watch?v=vXw-RfV5YLE"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "高円寺の阿波踊り",
+      "interpretation": "高円寺の阿波踊り",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=p6WpCBDTCwY",
-          "date": "2026-10-04T09:00:05+00:00",
+          "url": "https://www.youtube.com/watch?v=rRUFTCWKKBY",
+          "date": "2026-10-07T09:00:10+00:00",
           "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京の渋谷・青山で今年で「Shibu Ao祭り2026」が開催されました。 地域のにぎわい創出と商店会の活性化を目的に、今年で開催5回目となります。 ステージでは、高円寺を中心に活動をされている阿波踊り連「八咫烏 YATAGARASU」が圧巻のパフォーマンスを見せ、観客を大いに盛り上げました！ The “Shibu Ao Festival 2026” was held this year in Shibuya and Aoyama, Tokyo. Now in its fifth year, the festival aims to bring vibrancy to the community and revitalize the local merchants’ association. On stage, the Awa Odori dance team “YATAGARASU,” based in Koenji, put on a spectacular performance that really got the crowd going! 2026.10.3 Sat 4K6"
+          "text": "渋谷青山通り商店会が主催するイベント「Shibu Ao祭り」が開催 イベントのラストは盆踊りで盛り上がりました！ 生唄 生演奏を担当するのは、民謡ユニット「こでらんに〜」から、ちゃんゆかさんとミカド香奈子さん、そして津軽三味線の全国大会で優勝経験を持つ椿俊太郎さん。 さらに、高円寺の阿波踊り連・八咫烏の皆さんが出番の後も会場に残り、一緒に踊るコラボスタイル。 笑顔が溢れる素敵な時間でした！ The “Shibu Ao Festival,” an event organized by the Shibuya Aoyama-dori Merchants' Association, took place. The event wrapped up with a lively Bon dance! We had a wonderful time enjoying live singing and live music! 2026.10.3 Sat 4K60fps virtual walking tour Osmo Pocket 4P Osmo Pocket 3 ーーー ▽Please Subs"
         }
       ],
-      "evidence_text": "東京の渋谷・青山で今年で「Shibu Ao祭り2026」が開催されました。 地域のにぎわい創出と商店会の活性化を目的に、今年で開催5回目となります。 ステージでは、高円寺を中心に活動をされている阿波踊り連「八咫烏 YATAGARASU」が圧巻のパフォーマンスを見せ、観客を大いに盛り上げました！ The “Shibu Ao Festival 2026” was held this year in Shibuya and Aoyama, Tokyo. Now in its fifth year, the festival aims to bring vibrancy to the community and revitalize the local merchants’ association. On stage, the Awa Odori dance team “YATAGARASU,” based in Koenji, put on a spectacular performance that really got the crowd going! 2026.10.3 Sat 4K6",
-      "evidence_url": "https://www.youtube.com/watch?v=p6WpCBDTCwY"
+      "evidence_text": "渋谷青山通り商店会が主催するイベント「Shibu Ao祭り」が開催 イベントのラストは盆踊りで盛り上がりました！ 生唄 生演奏を担当するのは、民謡ユニット「こでらんに〜」から、ちゃんゆかさんとミカド香奈子さん、そして津軽三味線の全国大会で優勝経験を持つ椿俊太郎さん。 さらに、高円寺の阿波踊り連・八咫烏の皆さんが出番の後も会場に残り、一緒に踊るコラボスタイル。 笑顔が溢れる素敵な時間でした！ The “Shibu Ao Festival,” an event organized by the Shibuya Aoyama-dori Merchants' Association, took place. The event wrapped up with a lively Bon dance! We had a wonderful time enjoying live singing and live music! 2026.10.3 Sat 4K60fps virtual walking tour Osmo Pocket 4P Osmo Pocket 3 ーーー ▽Please Subs",
+      "evidence_url": "https://www.youtube.com/watch?v=rRUFTCWKKBY"
     }
   ]
 }
