@@ -2,11 +2,10 @@
 
 - safety: official-source review candidates only; no canonical or public event write
 - registry sources: 21
-- candidates: 177
+- candidates: 176
 
 | 区 | ページ | URL | 日付候補 |
 |---|---|---|---|
-| 大田区 | 大田区ホームページ：矢口地区自治会町会等 夏の行事カレンダー | [link](https://www.city.ota.tokyo.jp/kamata/ts_yaguchi/oshirase_event/summercalendar.html) | 2026-07-14, 2026-07-19, 2026-07-22, 2026-07-25, 2026-09-19, 2026-09-26, 2026-09-27, 2026-07-21 |
 | 江戸川区 | 新二之江町会 | [link](https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html) | 7月18日 18時00分～20時30分 |
 | 江戸川区 | 臨海町五丁目アパート自治会 | [link](https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html) | 7月18日 15時00分～20時00分 |
 | 江戸川区 | 小島町会 | [link](https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/index.html) | 7月18日 16時30分～20時00分 |

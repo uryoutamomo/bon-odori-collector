@@ -1,14 +1,13 @@
 {
   "schema_version": 1,
   "generated_by": "scan_ward_official_sources.py",
-  "generated_at": "2026-10-01T13:47:12.108979+00:00",
+  "generated_at": "2026-10-08T13:54:04.676190+00:00",
   "target_year": 2026,
   "safety_boundary": "official-source review candidates only; no canonical or public event write",
   "canonical_write_count": 0,
   "registry_source_count": 21,
-  "candidate_count": 177,
+  "candidate_count": 176,
   "ward_counts": {
-    "大田区": 1,
     "江戸川区": 24,
     "葛飾区": 4,
     "足立区": 148
@@ -148,11 +147,11 @@
       "source_registry_id": "ota-yaguchi-summer",
       "ward": "大田区",
       "url": "https://www.city.ota.tokyo.jp/kamata/ts_yaguchi/oshirase_event/summercalendar.html",
-      "checked_count": 2,
-      "confirmed_count": 1,
+      "checked_count": 0,
+      "confirmed_count": 0,
       "structured_candidate_count": 0,
-      "page_fallback_count": 1,
-      "status": "confirmed"
+      "page_fallback_count": 0,
+      "status": "no_bon_context_found"
     },
     {
       "source_registry_id": "ota-koho",
@@ -168,7 +167,7 @@
       "source_registry_id": "toshima-event-calendar",
       "ward": "豊島区",
       "url": "https://www.city.toshima.lg.jp/cgi-bin/event_cal/calendar.cgi",
-      "checked_count": 9,
+      "checked_count": 8,
       "confirmed_count": 0,
       "structured_candidate_count": 0,
       "page_fallback_count": 0,
@@ -208,7 +207,7 @@
       "source_registry_id": "nerima-tsunagaru-festa",
       "ward": "練馬区",
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/tunafes/reiwa6tunafes.html",
-      "checked_count": 3,
+      "checked_count": 4,
       "confirmed_count": 0,
       "structured_candidate_count": 0,
       "page_fallback_count": 0,
@@ -226,25 +225,6 @@
     }
   ],
   "rows": [
-    {
-      "id": "ward-official-31ccfda910cfec9d",
-      "decision": "pending",
-      "suggested_source_type": "official",
-      "suggested_score": 90,
-      "reason": "区公式source registryから盆踊り文脈を発見",
-      "source_origin": "ward_official_source_registry",
-      "source_registry_id": "ota-yaguchi-summer",
-      "source_url": "https://www.city.ota.tokyo.jp/kamata/ts_yaguchi/oshirase_event/summercalendar.html",
-      "source_domain": "www.city.ota.tokyo.jp",
-      "venue": "",
-      "event_name": "大田区ホームページ：矢口地区自治会町会等 夏の行事カレンダー",
-      "region": "大田区",
-      "event_year": 2026,
-      "event_date_text": "2026-07-14, 2026-07-19, 2026-07-22, 2026-07-25, 2026-09-19, 2026-09-26, 2026-09-27, 2026-07-21",
-      "memo": "ward registry: ota-yaguchi-summer / 等 夏の行事カレンダー 本文ここから 矢口地区自治会町会等 夏の行事カレンダー ページ番号：253708808 更新日：2026年7月14日 矢口地区 夏の行事のご案内 矢口地区自治会・町会の夏のイベントカレンダーです 。 予定は変更になる可能性がありますので、詳細については直接自治会町会等へお問い合わせください。 2026年 自治会町会名 行 事 ラジオ体操 今泉自治会 7月19日(日曜日) \"社会を明るくする運動\"住民集会 午後6時から いずみえん 7月22日(水曜日)から31日(金曜日) 午前6時30分から 今泉保育園 7月25日(土曜日)・26日(日曜日) 盆踊り 午後7時から午後9時 今泉延命寺境内 9月19日(土曜日)・20日(日曜日) 例大祭 午前8時から 今泉神社 矢口北町会 9月26日(土曜日) 宮出し 午後9時から 氷川神社 9月27日(日曜日) 例大祭 午前8時30分から午後4時 氷川神社 7月21日(火曜日)から25日(土曜日) 午前6時30分から 千鳥三丁目児童公園 矢口中町会 7月21日(火曜日)から25日(土曜日) 午前6時15分から ちどりみなみ児童公園 / 地区・季節限定。開催直前に再取得する。",
-      "registry_source_type": "event_calendar",
-      "registry_format": "html"
-    },
     {
       "id": "ward-official-bc0f8b3d832d870f",
       "decision": "pending",
