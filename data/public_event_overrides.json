@@ -124,6 +124,42 @@
         "venue": "月島第二児童公園"
       },
       "skip": true
+    },
+    {
+      "id": "minato_official_bon_odori_time_20261008",
+      "reason": "2026-10-08 内田さん承認。公式時間表を目視照合。開催日範囲と公式URLの完全一致をsite sanitizerで検査する既存time_evidence形式。終了時刻を推測しない。",
+      "match": {
+        "name": "みなと区民まつり 盆踊り",
+        "venue": "芝公園"
+      },
+      "set": {
+        "time_evidence": {
+          "text": "両日15:15開始（終了時刻未確認）",
+          "event_date": "2026-10-10",
+          "event_date_end": "2026-10-11",
+          "source_url": "https://www.kissport.or.jp/matsuri/2026/",
+          "source_kind": "official",
+          "scope": "bon_odori"
+        }
+      }
+    },
+    {
+      "id": "shitamachi_official_event_hours_20261008",
+      "reason": "2026-10-08 内田さん承認。主催公式の催事全体営業時間としてscope:eventを明示。盆踊り個別時刻は未確認。",
+      "match": {
+        "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+        "venue": "上野恩賜公園"
+      },
+      "set": {
+        "time_evidence": {
+          "text": "催事全体11:00〜21:00（最終日は20:00まで）。盆踊りの個別時刻は未確認。",
+          "event_date": "2026-10-09",
+          "event_date_end": "2026-10-12",
+          "source_url": "https://shitamachi-bonodori.com/",
+          "source_kind": "official",
+          "scope": "event"
+        }
+      }
     }
   ]
 }

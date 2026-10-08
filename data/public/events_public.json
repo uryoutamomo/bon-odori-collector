@@ -4314,7 +4314,7 @@
     "lat": null,
     "lng": null,
     "date": "2026-10-10",
-    "date_end": "2026-10-12",
+    "date_end": "2026-10-11",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -4329,29 +4329,36 @@
       ],
       [
         10,
-        12
+        11
       ]
     ],
     "jun": {
       "10": "中旬"
     },
     "description": "芝公園一帯で開かれる、みなと区民まつりの盆踊り。秋の区民まつりならではの多彩な催しと一緒に楽しめる。",
-    "detail": "",
+    "detail": "2026年10月10日・11日の盆踊りは、両日15:15開始。会場は都立芝公園エリアの芸能ステージG。終了時刻は未確認。10月12日は別会場のスポーツ・体育祭で、盆踊りの日程には含みません。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.kissport.or.jp/matsuri/",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.kissport.or.jp/matsuri/2026/",
+        "kind": "official"
       }
     ],
     "songs": [],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
+    "time_evidence": {
+      "text": "両日15:15開始（終了時刻未確認）",
+      "event_date": "2026-10-10",
+      "event_date_end": "2026-10-11",
+      "source_url": "https://www.kissport.or.jp/matsuri/2026/",
+      "source_kind": "official",
+      "scope": "bon_odori"
+    },
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-10-10〜2026-10-12",
+    "public_note": "2026年日程確認済み: 2026-10-10〜2026-10-11",
     "recurrence_label": "2026年確認済み",
     "recurrence_score": 0.95,
     "recurrence_reasons": [
@@ -4362,7 +4369,7 @@
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-10-10",
-      "2026-10-12"
+      "2026-10-11"
     ],
     "display_tier": "confirmed",
     "occurrence_id": "occ_f31959e29f133806",
@@ -9156,99 +9163,65 @@
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-10-09",
+    "date_end": "2026-10-12",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
-        6,
-        15
-      ],
-      [
-        7,
-        15
-      ],
-      [
-        8,
-        15
+        10,
+        9
       ],
       [
         10,
-        15
+        12
       ]
     ],
     "jun": {
-      "6": "中旬",
-      "7": "中旬",
-      "8": "中旬",
       "10": "中旬"
     },
     "description": "江戸文化をテーマにした「Tokyo江戸ウィーク」の盆踊りフェス。上野の杜で、浴衣やグルメとともに下町の踊りを満喫できる。",
-    "detail": "",
+    "detail": "2026年10月9日〜12日、上野恩賜公園 竹の台広場（噴水前広場）で開催。催事全体は11:00〜21:00、最終日は20:00まで。盆踊りの個別開始・終了時刻は未確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.uenopark.info/2025/edo-week-ueno-2025/",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://shitamachi-bonodori.com/",
+        "kind": "official"
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "time_evidence": {
+      "text": "催事全体11:00〜21:00（最終日は20:00まで）。盆踊りの個別時刻は未確認。",
+      "event_date": "2026-10-09",
+      "event_date_end": "2026-10-12",
+      "source_url": "https://shitamachi-bonodori.com/",
+      "source_kind": "official",
+      "scope": "event"
+    },
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-09〜2026-10-12",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        10
-      ],
-      "jun": {
-        "10": "中旬"
-      },
-      "hints": [
-        [
-          10,
-          15
-        ]
-      ],
-      "label": "10月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      10
+    "last_seen_dates": [
+      "2026-10-09",
+      "2026-10-12"
     ],
-    "season_jun": {
-      "10": "中旬"
-    },
-    "season_hint_label": "10月中旬",
-    "season_confidence": "lowest",
+    "display_tier": "confirmed",
     "occurrence_id": "occ_2eb9d3179e731fbe",
     "event_year": 2026
   },

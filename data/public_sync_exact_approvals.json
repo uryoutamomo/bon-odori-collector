@@ -3792,6 +3792,28 @@
       "user_approval_message_id": "Sentinel_00a07bc9b8c08191ae42275c6ea990ea",
       "user_approval_received_at": "2026-10-06T13:40+09:00",
       "reviewed_by": "user_via_uta"
+    },
+    {
+      "id": "official-two-20261008-occ_2eb9d3179e731fbe",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_2eb9d3179e731fbe",
+      "event_year": 2026,
+      "site_sha256": "e0c03efea1cf5546891f90c54adb32a9421c8a409b5db78286b6ae0d8409b85d",
+      "collector_sha256": "0d83651f8ba464561955ea0638bf261fc350e5ab508a390041795f854ed96009",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-08T11:11:44.031473+00:00",
+      "reason": "2026-10-08 内田さんが対象2件の公式確認による更新と本番反映を承認。既存開催IDを保持し、日程・公式URL・詳細とみなとの公式開始時刻だけを更新。"
+    },
+    {
+      "id": "official-two-20261008-occ_f31959e29f133806",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_f31959e29f133806",
+      "event_year": 2026,
+      "site_sha256": "a6570accc49c797b0515919855d8d151bfe11581587cb6045fd73fc964cef7a7",
+      "collector_sha256": "52f5e7fa8ee854f49a518fb91068bf87840c4830d4776bfaf3d1b8d7d89dc6ea",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-08T11:11:44.031808+00:00",
+      "reason": "2026-10-08 内田さんが対象2件の公式確認による更新と本番反映を承認。既存開催IDを保持し、日程・公式URL・詳細とみなとの公式開始時刻だけを更新。"
     }
   ]
 }

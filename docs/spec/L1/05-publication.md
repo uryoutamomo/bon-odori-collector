@@ -11,6 +11,7 @@ owns:
   - scripts/verify_occurrence_identity_migration.py
   - scripts/verify_official_source_link_projection.py
   - data/public_official_source_links.json
+  - data/public_event_overrides.json
   - data/public_source_kind_corrections_20261003.json
   - sync_public_event_detail_source_to_site.py
   - sync_public_event_source_urls_to_site.py
@@ -54,7 +55,7 @@ verified_by:
   - tests/test_verify_occurrence_identity_migration.py
   - tests/test_public_event_sync_occurrence_identity.py
   - tests/test_verify_official_source_link_projection.py
-updated_for: 3be992d7
+updated_for: 32463702
 ---
 
 # 公開サブシステム
@@ -87,6 +88,8 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 | レビュー済みの公開専用上書き | `data/public_event_overrides.json` |
 | 同期の個別承認台帳 | `data/public_sync_exact_approvals.json` |
 | 「今日」 | 引数 `--today` または環境変数 `BON_ODORI_PUBLIC_TODAY`（**既定値は無い**） |
+
+時刻の公式確認には、公開専用上書きの `time_evidence` を使える。開始・終了日と公式出典URLを明示し、siteの `sanitized_time_evidence()` が現在の開催日範囲と `source_urls` の公式URLの完全一致を検査する。`scope: bon_odori` は盆踊り個別時間、`scope: event` は催事全体時間であり、催事全体の営業時間から踊り個別時間を推測しない。2026-10-08のみなと区民まつりの確認は、公式時間表の両日15:15開始だけを `bon_odori` として公開し、終了時刻は未確認とする。下町盆踊りフェスは全体営業時間を詳細に明記し、踊り個別時刻は未確認とする。
 
 **出力**
 
