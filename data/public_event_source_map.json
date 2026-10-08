@@ -473,11 +473,11 @@
       "venue_id": "ven_5bab93fc3ff9b304"
     },
     {
-      "public_event_key": "みなと区民まつり 盆踊り|芝公園|2026-10-10|2026-10-12",
+      "public_event_key": "みなと区民まつり 盆踊り|芝公園|2026-10-10|2026-10-11",
       "name": "みなと区民まつり 盆踊り",
       "venue": "芝公園",
       "date": "2026-10-10",
-      "date_end": "2026-10-12",
+      "date_end": "2026-10-11",
       "source": "master_rdb",
       "occurrence_id": "occ_f31959e29f133806",
       "series_id": "ser_a52721b6eee9ef2e",
@@ -905,11 +905,11 @@
       "venue_id": "ven_2c7e944e2b1af336"
     },
     {
-      "public_event_key": "Tokyo江戸ウィーク～下町盆踊りフェス～|上野恩賜公園||",
+      "public_event_key": "Tokyo江戸ウィーク～下町盆踊りフェス～|上野恩賜公園|2026-10-09|2026-10-12",
       "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
       "venue": "上野恩賜公園",
-      "date": "",
-      "date_end": "",
+      "date": "2026-10-09",
+      "date_end": "2026-10-12",
       "source": "master_rdb",
       "occurrence_id": "occ_2eb9d3179e731fbe",
       "series_id": "ser_0fb4fb61ec4f1249",

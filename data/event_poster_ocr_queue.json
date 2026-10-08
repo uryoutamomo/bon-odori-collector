@@ -1,12 +1,12 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 7417,
+  "count": 7385,
   "summary": {
     "critical": 48,
-    "high": 1322,
+    "high": 1313,
     "trusted_informant": 51,
     "already_read": 3,
-    "date_gap_matched": 108
+    "date_gap_matched": 107
   },
   "items": [
     {
@@ -32,12 +32,6 @@
       "text": "【ゐの市盆踊り】\n🏮8/7(金)-16(日)📍上野恩賜公園 袴腰広場(台東区)\n\n第7回を迎える上野の夏まつり恒例の盆踊り♪\n今年は7日から16日まで毎日開催🐗\n\n★7(金)-9(日)19:00-20:00\n★10(月)-14(金)19:00-20:30\n★15(土)18:00-20:30(DJダイノジ)\n★16(日)12:00-15:00\n(予定)\nhttps://t.co/6U3b973sLq https://t.co/jZTecR4CeN",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -257,12 +251,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -320,12 +308,6 @@
       "text": "『上野ゐの市盆踊り』\n@上野恩賜公園 袴腰広場\nありがとうございました🙇‍♀️❤️‍🔥\n\n台風が近づく中\n雨風ももってくれて\n無事に歌わせて頂けたことに感謝🥹✨\n\n今日の100%で\nお届けしました💐\n\n聴いてくださった皆様に\n心から感謝😭🕊️\n\n皆様この後も\nお気をつけながらお楽しみください🎶\n\n会場に出店中の\n『麺恋屋』さんがお声がけくださって\nNEWデジタルsingleのチラシを\n貼ってくださっています😍\n皆様ぜひ『麺恋屋』で\nお腹いっぱいに食べてくださいな🫶\nめっちゃんこ美味しいよ😋",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -454,35 +436,6 @@
       ]
     },
     {
-      "id": "xposter_cce55686bdaa5ba4",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@itsu22mem",
-      "account_name": "いつめん",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/itsu22mem/status/2075554106052342004",
-      "tweet_id": "2075554106052342004",
-      "date": "2026-07-10T12:13:55+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3ZdfIb0AATo6f.jpg",
-        "https://t.co/iF0VfjOSdv",
-        "pic.x.com/iF0VfjOSdv"
-      ],
-      "text": "✨ #おでかけ公ちゃんズ からのおしらせ✨\n\nはむはー！🌻\nこのあと22時から2025年8月2日(土)に開催された【アキコス×うえのはら盆踊り】の演目を公開します！\nもう夏‼️‼️\n🐹ちゃんたちの衣装も夏バージョンでお届けしております😊✨\nhttps://t.co/TGudWM7g53\n\n #いつめん2025  #アキコス https://t.co/iF0VfjOSdv",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_0544277c16ebe157",
-          "event_name": "うえのはら盆踊り",
-          "venue_name": "上野原市役所センタープラザ（もみじホール）",
-          "matched_keyword": "うえのはら盆踊り"
-        }
-      ]
-    },
-    {
       "id": "xposter_da61c029f95add53",
       "status": "needs_ocr",
       "priority": "medium",
@@ -505,12 +458,6 @@
       "text": "【ゐの市盆踊り～不忍夢～2026に彩りを添える沢山のゲスト！昼ステージ班の概要・意気込みです！！】\n\nステージから沢山のゲストがこの夏祭りを盛り上げていきます！\n\n日時 2026年8月7（金）.8（土）.9（日）日\n場所 上野恩賜公園 袴腰広場\n\n#上野 #夏祭り\n#学生団体おりがみ #ゐの市盆踊り https://t.co/Kby7OcYvdB",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -874,12 +821,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -909,12 +850,6 @@
       "text": "【情報解禁】\n\n上野ゐの市盆踊り\n2026年8月7日(金)〜8月16日(日)\n\n開催時間　全日 12:00〜21:00\n場所 上野恩賜公園 袴腰広場\n料金 無料\n\n鈴音ひとみ出演時間\n8月10日(月)　12:00〜\n8月15日(土)　12:00〜\n\n持ち時間は各30分間\n出演後特典会あり✨ https://t.co/veHmExWorx",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -946,12 +881,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -981,12 +910,6 @@
       "text": "＼ 出演情報 ／\n\n上野ゐの市 盆踊り🏮✨\n【日付】2026年8月16日(日)\n【会場】上野恩賜公園 袴腰広場\n【料金】観覧無料\n【小野亜里沙出演】\n18:30〜\n\n＜開催期間＞\n2026年8月7日(金)〜8月16日(日)\n12:00〜21:00\n\n夏の上野でお会いできるのを楽しみにしています。\nぜひお越しください🌻✨ https://t.co/tiubYEpmRC",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1018,12 +941,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1053,12 +970,6 @@
       "text": "こちらの出演が決まりました🎉✨\n\n上野ゐの市盆踊りに出演させていただきます！\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜21:00（全日）\n📍会場\n上野恩賜公園 袴腰広場\n\n🎤前田有加里出演\n8月12日(水) 17:00〜\n8月14日(金) 13:00〜\n\n夏の上野でお会いできるのを楽しみにしています🥰\nぜひ遊びに来てください🫶",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1118,12 +1029,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1152,12 +1057,6 @@
       "text": "[西村加奈 新着イベント出演情報]\n\n8/11(火祝) 上野恩賜公園 [東京]\n8/12(水) 上野恩賜公園 [東京]\n\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n共演：多数\n\n※西村加奈は、２日間とも18:00〜出演予定 https://t.co/i8RVqqlDJv",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1188,12 +1087,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1222,12 +1115,6 @@
       "text": "8/12(水) 上野恩賜公園 [東京]\n\n[無料イベント / ツイキャス配信予定有]\n\n「上野ゐの市盆踊り」\n12:00〜2100\n観覧無料 / 袴腰広場 / 荒天中止\n共演：前田有加里 / 海老沢茜 / ほか\n\n※西村加奈は18:00〜出演予定\n※19:00〜盆踊り https://t.co/9PALKGXWhA",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1287,12 +1174,6 @@
       "text": "【Live Info】\n\n🏮ゐの市盆踊り🏮\n\n開催期間･場所\n＠上野恩賜公園 袴腰広場\n8/7〜8/16\n\n･真理出演日時\n\n🍧8/10 18:00\n🍧8/11 14:00\n🍧8/13 16:00\n\n※フリー観覧 https://t.co/tCWt6ROIBj",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1356,12 +1237,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1390,12 +1265,6 @@
       "text": "2026年7月5日（日）\n上野恩賜公園 竹の台広場（噴水広場）（東京都台東区上野公園）\nメガ盛り MAX-Live@ビールと浴衣で盆踊りin上野\n\n（当時）\n#GACHU!!!\n#水咲ひな さん(1)\n#ひなまる日記 https://t.co/IAB3A1TjHS",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1426,12 +1295,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1460,12 +1323,6 @@
       "text": "2026年7月5日（日）\n上野恩賜公園 竹の台広場（噴水広場）（東京都台東区上野公園）\nメガ盛り MAX-Live@ビールと浴衣で盆踊りin上野\n\n（当時）\n#GACHU!!!\n#小桜にやり さん(1)\n#みやりでニヤり https://t.co/v355nSfcu4",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1555,12 +1412,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1589,12 +1440,6 @@
       "text": "おはようございます！\n#横浜マリンタワー #ストパフォ\n#会津若松 まちなか夏Festa\n→台風の影響で中止\n#川崎ルフロン #クラフトビール総選挙\n#おかちまちガチ道フェス\n#上野恩賜公園 #上野ゐの市盆踊り\n#イオンモール柏 KASHIWA MUSIC DAY\n→天候調査中orいっとけ開催？\n※防災対策を忘れずに！！ https://t.co/MRoQS1orG6",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1626,12 +1471,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1661,12 +1500,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1695,12 +1528,6 @@
       "text": "#ひいらぎ繭@上野恩賜公園\n\n『上野ゐの市盆踊り』\n\nみんなの願いが通じて雨も耐えてくれた🙏\n\n「花月」\n通りすがりの方々も一緒に踊ってくれました🎶\n「さよなら、今、逢いたい人」\n気付くと沢山の方が足をとめてくれています。\n想いよ届け✨️\n\n盆踊りの中止は残念でしたが今日も聴けて良かったです😌 https://t.co/hVNGJaoMHz",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1732,12 +1559,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1766,12 +1587,6 @@
       "text": "明日はこちら💁‍♀️\n\n🏮出演致情報🏮\n\n8月12日(水) 13:00〜\n「上野ゐの市盆踊り」\n上野恩賜公園 袴腰広場\n※雨天決行・荒天中止\n\n台風の影響による天候状況によっては、開催について当日の判断となる場合がございます。ご来場予定の皆さまは、最新情報をご確認のうえお越しください🙇‍♀️ https://t.co/RBXETgZpoJ",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1802,12 +1617,6 @@
       "text": "本日はこちら💁‍♀️✨\n今日と14日に出演させていただきます🎶\n雨でもなんとか決行してくださると思うので皆さまぜひお集まりください🥹\n\n上野ゐの市盆踊り\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜21:00（全日）\n📍会場\n上野恩賜公園 袴腰広場\n\n🎤前田有加里出演\n8月12日(水) 17:00〜\n8月14日(金) 13:00〜",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1840,12 +1649,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1874,12 +1677,6 @@
       "text": "2026-08-10 伊谷亜子さん♪／上野ゐの市盆踊り 上野恩賜公園 袴腰広場\n#伊谷亜子 https://t.co/3KYeOE9QZ6",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1911,12 +1708,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1946,12 +1737,6 @@
       "text": "ハロー🌞\n今日は18:00〜\n上野ゐの市盆踊り出演です✨\n\n雨が降ったり止んだりな感じですが、\n空にパワーを送っておきますので\nぜひお待ちしてます🧚‍♂️🌈\n\n一緒に楽しみましょう〜っ .ᐟ.ᐟ\n\n🎪8/13(木)上野恩賜公園 袴腰広場 上野ゐの市盆踊り  🎸出演 18:00〜 https://t.co/4HuBxBtz0N",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -1985,12 +1770,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2022,12 +1801,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2057,12 +1830,6 @@
       "text": "#上野ゐの市盆踊り(2026/8/13)\n#上野恩賜公園袴腰広場\n#彩之會\nアニメの日。早目に行ってみました。\n☂️大雨の中、フライングスタート。6曲かかり19:00に中止が決定して終了。\n猛者12～3名がザーザー降りの中、オドレナリン全開で踊らせていただく。それがまた楽し。\n感謝ですm(_ _)m https://t.co/Vfk4XoKtgC",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -2123,12 +1890,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2157,12 +1918,6 @@
       "text": "2026-08-13 大森真理子さん♪／上野ゐの市盆踊り 上野恩賜公園 袴腰広場\n#大森真理子 https://t.co/Ybt2iXnhqf",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -2255,12 +2010,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2322,12 +2071,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2387,12 +2130,6 @@
       "text": "上野ゐの市盆踊り\n上野恩賜公園 袴腰広場\nたくさんの方が立ち止まって聞いて下さり\n大感謝の時間でした💓💐💓💐\n\n鹿野のステージ、\n強くあれ！ぐらいから、\nどばーっ！！！と雨に降られて\n雨も滴るいい女になりました🤣www\n雨にも負けず聞いて頂けてうれぴみです❤️\n\nお飲み物や食べ物のお差し入れも\nとっても感謝でした☺️\n美味しくもぐもぐさせて頂きましたん🤩\n\n上村叶恵さんにも\n久しぶりにお会いできましたー🫎💓嬉\n\nてんきゅー！！！",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -2457,12 +2194,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2492,12 +2223,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2526,12 +2251,6 @@
       "text": "２０２６年８月１４日（金）、上野恩賜公園袴腰広場でのライブ。\n\n１３時からは前田有加里さん。\n急に雲が増えてきて不安になりましたが、天気もセーフ。\n盆踊りのシーズンにふさわしい動ける曲メインで盛り上がって楽しかったですね。\n最後の翼も沁みました。\nセミにたじろぐゆかりさんも意外でした。 https://t.co/3AViQdFEoW",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -2626,12 +2345,6 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
         {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -2663,12 +2376,6 @@
       "text": "2026.8.16\nゐの市盆踊り@上野恩賜公園\n#伊藤さくら\n\n雨天の中決行したイベンター様ありがとうございます☔誕生日以降の雨ライブは私が参加してるだけで既に3件、姐さんは晴れ女返上か…！\n\n開演前の待ち時間に撮った蓮と水天宮を添えて🌺\n\nライブ写真はこちら\n↓\nhttps://t.co/UcMEy8Fszz https://t.co/3EwFJ82jcv",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
       "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
         {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
@@ -4561,206 +4268,6 @@
         "https://pbs.twimg.com/amplify_video_thumb/2091751337616969728/img/0jaBXmgbTrZvLjUV.jpg"
       ],
       "text": "8/23①新小岩銀座 夏まつり\n\n木津かおりさんらの民謡ユニット、唄花座ステージ🎶\n\n伊勢音頭、こきりこ節、日光和楽踊り、秋田おばこなど、重なり合う唄声と演奏と踊りに魅了されました✨とくに瞽女唄かわいがらんせは圧巻！\n\n真室川音頭やおてもやん、郡上白鳥、炭坑節などでは踊りも楽しめました〜🙌 https://t.co/aEapH0beOJ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_a2eaa0750046a952",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@masanao2019",
-      "account_name": "原島まさ直🇯🇵",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/masanao2019/status/2075217594202873946",
-      "tweet_id": "2075217594202873946",
-      "date": "2026-07-09T13:56:44+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMynZiqbYAA5Qdj.jpg",
-        "https://t.co/w7BlWrFnfM",
-        "pic.x.com/w7BlWrFnfM"
-      ],
-      "text": "本日は地元の盆踊り大会の会議でした。\n昨年から若干変更がありますが、今年も開催出来そうです👍\n\n会議中は私の質問に進行役の回答の応酬が繰り広げられていて、他の参加者には申し訳ございませんでしたm(__)m\n\n仮ポスターが出来上がりってます(若干変更あります)\n\n当日のご来場お待ちしてます！ https://t.co/w7BlWrFnfM",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_0691c935fc357d73",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@shakyo_komono",
-      "account_name": "菰野町社会福祉協議会",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/shakyo_komono/status/2075361861625868639",
-      "tweet_id": "2075361861625868639",
-      "date": "2026-07-09T23:30:00+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HLFQ7O9agAISmtY.jpg",
-        "https://t.co/2XlcQN3mEM",
-        "pic.x.com/2XlcQN3mEM"
-      ],
-      "text": "たすけあい♡竹永「盆踊り」\n盆踊りを楽しみ、地域の方と交流しませんか？\n当日に向けての練習もあります。ぜひこの機会にご参加ください。\n日時：8/8（土）午後5：00～\n場所：竹永地区コミュニティセンター\n※詳しくは写真のチラシをご確認ください。\n#盆踊り\n#菰野町社協\n#たすけあい竹永\n#けやき https://t.co/2XlcQN3mEM",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_7c77022ebc131360",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@pantaloon",
-      "account_name": "muchos pantaloons",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/pantaloon/status/2075376570013999362",
-      "tweet_id": "2075376570013999362",
-      "date": "2026-07-10T00:28:27+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM03_YBaIAAZ5ZB.jpg",
-        "https://t.co/MpYmjKJBco",
-        "pic.x.com/MpYmjKJBco",
-        "https://pbs.twimg.com/media/HM03_Y_aIAAPvww.jpg"
-      ],
-      "text": "阿佐ヶ谷バリ舞踊と同じ日程で北新宿盆踊りが有るみたい。成田東5で火事に遭って逃げ込んだマンスリーオフィスは日本語学校、通った銭湯はバイリンガル保育になった大久保の神田川方向場末の柏木町。個人的巡礼としては、気になるんだよね。チラシもバイリンガルだし https://t.co/MpYmjKJBco",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_11790765a314dabb",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@shingutensyu",
-      "account_name": "清荒神参道商店会",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/shingutensyu/status/2075435862121402754",
-      "tweet_id": "2075435862121402754",
-      "date": "2026-07-10T04:24:03+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM1t5iFbQAA-9i5.jpg",
-        "https://t.co/rhwM5XFHPC",
-        "pic.x.com/rhwM5XFHPC",
-        "https://pbs.twimg.com/media/HM1t5iGboAAn4UO.jpg",
-        "https://pbs.twimg.com/media/HM1t5iHacAACDdd.jpg",
-        "https://pbs.twimg.com/media/HM1t5iMaYAA5COI.jpg"
-      ],
-      "text": "清荒神参道地区の盆踊り大会、今年も開催されます。\n\n７月３１日（金）、８月１日（土）１９時～２２時、雨天中止\n※両日とも雨天の場合は中止。\n\n清荒神 八坂神社さま北隣の特設会場（茶谷駐車場）\n\n美味しい楽しい夜店も出店します！！\n\n※詳しくはポスター・チラシ等をご覧ください。 https://t.co/rhwM5XFHPC",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_e9cf2148aba53108",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@TYOparaathlete",
-      "account_name": "令和8年度パラスポーツ次世代選手発掘事業",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/TYOparaathlete/status/2075505312107548891",
-      "tweet_id": "2075505312107548891",
-      "date": "2026-07-10T09:00:02+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2KJmtaMAE5TFK.jpg",
-        "https://t.co/poYiJ01Uhf",
-        "pic.x.com/poYiJ01Uhf",
-        "https://pbs.twimg.com/media/HM2KJmua8AAMcq6.jpg"
-      ],
-      "text": "みなさまこんにちは😊\n\n8月1日(土)講習会のご案内、本日は「盆パラビクス」をご紹介します🎶\n盆踊りとパラパラ、エアロビクスを組み合わせた「盆パラビクス」。\n\n立っても座ってもできる体操なので、どなたでも楽しく体を動かせます！\n\n講師は、健康運動指導士の鈴木孝一氏（健康向上企画 代表）です。\n参加無料／13:00〜16:00／東京都多摩障害者スポーツセンター\n\nお申し込みはプロフィールのリンクから！\n\n#東京都パラスポーツ #パラスポーツ #次世代ホープ発掘 #東京都障害者スポーツ協会 #障害者スポーツ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_f38a6efded9c558d",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@kotogahamabon",
-      "account_name": "琴ヶ浜盆踊保存会",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/kotogahamabon/status/2075505317849579886",
-      "tweet_id": "2075505317849579886",
-      "date": "2026-07-10T09:00:03+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMUOoOobAAA5yco.jpg",
-        "https://t.co/6cmJl13W82",
-        "pic.x.com/6cmJl13W82",
-        "https://pbs.twimg.com/media/HMUOoOobAAI3_f3.jpg"
-      ],
-      "text": "チラシが出来上がりました！\n\n・大田市の広報発行にあわせて配布予定\n・協賛や後援など、ありがとうございます\n\n#琴ヶ浜盆踊保存会 #琴ヶ浜盆踊り #琴ヶ浜 #盆踊り #チラシ https://t.co/6cmJl13W82",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_95efdbe4d99c6580",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@iammai0823",
-      "account_name": "藤寿々 舞🌸舞踊家🌸",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/iammai0823/status/2075509695784402996",
-      "tweet_id": "2075509695784402996",
-      "date": "2026-07-10T09:17:27+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2xDs6a4AA-25A.jpg",
-        "https://t.co/1C6PalD3CP",
-        "pic.x.com/1C6PalD3CP"
-      ],
-      "text": "🌸【参加無料】夏休み限定！🌸\n\n日本舞踊 子ども教室を開催します✨\n\n✅ 小学生〜中学生対象\n✅ 初心者歓迎\n✅ 浴衣貸出あり\n✅ 全6回\n✅ 最後は盆踊り大会で発表🎐\n\n夏休みに、日本の伝統文化を楽しく体験してみませんか？\n\n詳細はチラシをご覧ください😊\n\n#日本舞踊 #子ども教室 #夏休み #横浜 https://t.co/1C6PalD3CP",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_54a49ec04d5201e2",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@47hanakaido",
-      "account_name": "しながわ花海道",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/47hanakaido/status/2075519488800575588",
-      "tweet_id": "2075519488800575588",
-      "date": "2026-07-10T09:56:22+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM25-NTacAAQv_j.jpg",
-        "https://t.co/Ovj5pChxxk",
-        "pic.x.com/Ovj5pChxxk",
-        "https://pbs.twimg.com/media/HM25-NUaoAAEvVw.jpg",
-        "https://pbs.twimg.com/media/HM25-NWa4AAU66Z.jpg"
-      ],
-      "text": "お疲れさまです☺︎\n鮫洲駅前にある、こちらの掲示板🪧\n←4月17日に塗り直しました🎨\n→7月10日お手紙が掲示されています✨\n4月には…トイストーリーの公開があるとは知らずこのデザイン☁️🩵\nわくわくしちゃう♪\n明日は、盆踊り大会もあるそうです🏮\n→３枚目の写真をご覧ください😊📸✨ https://t.co/Ovj5pChxxk",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_d234cd70a5c61458",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@kuyamasanori",
-      "account_name": "くやまさのり　大阪維新の会/大阪府議会議員",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/kuyamasanori/status/2075566611738873988",
-      "tweet_id": "2075566611738873988",
-      "date": "2026-07-10T13:03:37+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3kzaVbsAALe82.jpg",
-        "https://t.co/oSvwT953yC",
-        "pic.x.com/oSvwT953yC",
-        "https://pbs.twimg.com/media/HM3kz5ha0AAccnd.jpg",
-        "https://pbs.twimg.com/media/HM3k0VwaAAAwN5U.jpg",
-        "https://pbs.twimg.com/media/HM3k093bMAA1vxl.jpg"
-      ],
-      "text": "自宅にお届け物をしてくれた嬉しい天使とパチリ。\nいつも笑顔で懐いてくれます。\nかわいいね。\nその後、中崎町夏祭り神輿入魂式に参加しました。\nこれまでは単一の町会で運営されていましたが、今年からは中崎町の夏祭としてバージョンアップしました。\n私も幼少の時に参加したお祭りです。\nミャクミャクと受け継いで参りたいと思います。\n次に用事で露天神社へ。\n来週斎行の夏大祭の準備や練習で境内は賑わっていました。\n梵天を持って回しましたが「下手くそー」と怒られました。\n下っ端から頑張ります。\n用事を済ませて、グランフロント大阪で開催されている「梅田ゆかたまつり」にお邪魔しました。\n踊り慣れている北区女性会の方の手ほどきが良いお陰で、踊った事がないという女性も見様見真似で輪に溶込み、踊っておられました。\n北区の盆踊り（BONダンス）も今日を皮切りにスタートです。\n#くやまさのり\n#大阪維新の会\n#大阪府議会議員\n#大阪市北区",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -33466,490 +32973,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_717973a182d61422",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@Todoke4Minna2",
-      "account_name": "森田あやね（大阪府議会議員・東成区）",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/Todoke4Minna2/status/2075214286440587619",
-      "tweet_id": "2075214286440587619",
-      "date": "2026-07-09T13:43:36+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HMykZHYakAINHqZ.jpg",
-        "https://t.co/7h4KkRSivA",
-        "pic.x.com/7h4KkRSivA",
-        "https://pbs.twimg.com/media/HMykZHgaEAANP5n.jpg",
-        "https://pbs.twimg.com/media/HMykZHTbIAAOUT1.jpg",
-        "https://pbs.twimg.com/media/HMykZHcb0AAWSm8.jpg"
-      ],
-      "text": "地域のご意見への対応結果をご報告に伺い「また #維新 応援するね」とのお言葉を頂き大変嬉しく感じました\nポスターの張り替えもご協力いただき感謝🙇‍♀️\nその後は事務所の大掃除とオンライン勉強会\n3日間民踊の練習で帰宅が遅くなり家族には申し訳なく思いつつも、温かい理解に感謝民踊楽しかったです💕 https://t.co/7h4KkRSivA",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_25a311655cd53391",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@2tsuo_g",
-      "account_name": "ミツマヨ",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/2tsuo_g/status/2075351769652375828",
-      "tweet_id": "2075351769652375828",
-      "date": "2026-07-09T22:49:54+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM0hbrYb0AAiWa4.jpg",
-        "https://t.co/dxMMacLPYM",
-        "pic.x.com/dxMMacLPYM",
-        "https://pbs.twimg.com/media/HM0hbrOawAAoV7w.jpg"
-      ],
-      "text": "100件目 入新井盆踊り大会 練習会\n(7/9)去年良くしていただいた人達に会う意味も込めて参加するも会えず😭\n30分早く着いたら既に始めていて、予定時刻よりも遅く終わったのでそこそこ踊れました！練習会場は去年より狭くて窮屈だった https://t.co/dxMMacLPYM",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_b1d2db7c8246ccbc",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@ogazz",
-      "account_name": "ogazz",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/ogazz/status/2075385150842798546",
-      "tweet_id": "2075385150842798546",
-      "date": "2026-07-10T01:02:33+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM0_yq6b0AA1f8z.jpg",
-        "https://t.co/ewsg0NCYUu",
-        "pic.x.com/ewsg0NCYUu",
-        "https://pbs.twimg.com/media/HM0_yq5bcAAeh7Q.jpg",
-        "https://pbs.twimg.com/media/HM0_yrabwAEvUJs.jpg",
-        "https://pbs.twimg.com/media/HM0_yq9bAAE7Tfv.jpg"
-      ],
-      "text": "人形町、六文そば\n\nスカロケで関東梅雨明けたと言ってたのに\nニュースになってない、なぜなぜ🤔な朝の五目天\n今日も安定の美味しさ\n\n昨夜は盆踊り大会直前の町会役員会\nからの山本亭飲み\nメニューが基本定食のおかずなので\n1口米を欲する物多し😆\nこのビル地下2階は 日比谷線の電車音響くw\n26.7.10 https://t.co/ewsg0NCYUu",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_ed641094eb9b3bbd",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@kissamaco",
-      "account_name": "喫茶マコ",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/kissamaco/status/2075399700510126309",
-      "tweet_id": "2075399700510126309",
-      "date": "2026-07-10T02:00:22+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM1NBevbMAAgxls.jpg",
-        "https://t.co/aJ6Q4DQqjL",
-        "pic.x.com/aJ6Q4DQqjL"
-      ],
-      "text": "おはようございます☀\n徐々に夏本番を迎える陽気になってまいりました、体調など崩してはないでしょうか？\n今年も7月11日（土）・12日（日）の2日間晴海ふ頭で開催される、盆踊り大会に出展させていただきます🏮\n晴海ふ頭公園にて開催！\n【出展店舗】\n伊勢正\n喫茶マコ\n築地ペッパーズカフェ https://t.co/aJ6Q4DQqjL",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_91b4b393b9785643",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@kinkado1905",
-      "account_name": "御徒町の画材額縁専門店㈱田中金華堂",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/kinkado1905/status/2075401976192565556",
-      "tweet_id": "2075401976192565556",
-      "date": "2026-07-10T02:09:24+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM1PF8UaEAACSgM.jpg",
-        "https://t.co/FMFVqu7fk8",
-        "pic.x.com/FMFVqu7fk8"
-      ],
-      "text": "ポスターかわいい。\n\n地元商店街の催し物。楽しそうですね。\n\n#画材いね #盆踊り #佐竹商店街 https://t.co/FMFVqu7fk8",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_ea98eb05dd18dbff",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@event_checker",
-      "account_name": "イベントチェッカー製作委員会",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/event_checker/status/2075420002748924166",
-      "tweet_id": "2075420002748924166",
-      "date": "2026-07-10T03:21:02+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM1ffaiWgAA_Ko5.jpg",
-        "https://t.co/0QwwhmDzRl",
-        "pic.x.com/0QwwhmDzRl",
-        "https://pbs.twimg.com/media/HM1ffnTWYAAAEnl.jpg",
-        "https://pbs.twimg.com/media/HM1fff7XUAA_ArA.jpg",
-        "https://pbs.twimg.com/media/HM1ffpDWYAAUdp1.jpg"
-      ],
-      "text": "🏮日本一美味しい盆踊り！\n\n築地本願寺で\n「納涼盆踊り大会」開催\n\n築地の名店が屋台で集結🍢 \n食べて、踊って、夏を満喫！\n\n📅 7/29(水)-8/1(土)\n💰 参加無料\n\n→ https://t.co/ECx0JZ8Paa https://t.co/0QwwhmDzRl",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_41b49ec68bf1e3f7",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@tamanolib_clc",
-      "account_name": "玉野市立図書館・中央公民館【公式】",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/tamanolib_clc/status/2075425237102137739",
-      "tweet_id": "2075425237102137739",
-      "date": "2026-07-10T03:41:50+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM1jxCqaMAAh06O.png",
-        "https://t.co/noQjPN66uj",
-        "pic.x.com/noQjPN66uj"
-      ],
-      "text": "【玉野の盆おどりを踊ろう！】\n玉野の盆おどり、\n地踊り「かっからか」の練習会を開催します。\n\nどんな方でも安心してご参加ください！\n申し込みなしでも大歓迎！\nぜひご参加ください。\n\n≪練習日時≫\n7月23日（木）10時～11時\n25日（土）17時～18時\n31日（金）10時～11時\n\n≪場所≫\n多目的室（大） https://t.co/noQjPN66uj",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_e39eba59b4910340",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@nerimajmpy",
-      "account_name": "練馬ジモピー局-タクシー探検隊-",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/nerimajmpy/status/2075436397067120941",
-      "tweet_id": "2075436397067120941",
-      "date": "2026-07-10T04:26:11+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM1uW3ebEAAne4_.jpg",
-        "https://t.co/E97BIwtcm7",
-        "pic.x.com/E97BIwtcm7",
-        "https://pbs.twimg.com/media/HM1uXp6bUAAR_ic.jpg",
-        "https://pbs.twimg.com/media/HM1uYQpbEAA4Uk9.jpg",
-        "https://pbs.twimg.com/media/HM1uZCZbwAAjpwC.jpg"
-      ],
-      "text": "こんにちは！練馬区の老舗タクシー会社が練馬のオススメスポットを紹介する練馬ジモピー局です！\n\n2026年7月18日(土)、19日(日)「第37回納涼盆踊大会」が北新井公園で開催されます！\n\n※盆踊り練習会は7月11日(土)・17日(金)です。\nhttps://t.co/Uicv11i6HT\n#練馬 #練馬イベント #江古田 https://t.co/E97BIwtcm7",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_6ddc32a3aee64bc2",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@Rosaliamr418",
-      "account_name": "RosaliaAdriana",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/Rosaliamr418/status/2075496140343226513",
-      "tweet_id": "2075496140343226513",
-      "date": "2026-07-10T08:23:35+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2kulFboAAVrj4.jpg",
-        "https://t.co/x9ItxkQdgk",
-        "pic.x.com/x9ItxkQdgk",
-        "https://pbs.twimg.com/media/HM2kum0bYAA2wZH.jpg",
-        "https://pbs.twimg.com/media/HM2kusDaUAAToPj.jpg",
-        "https://pbs.twimg.com/media/HM2ku1zaEAAjf1r.jpg"
-      ],
-      "text": "正門良規氏『てくてく絶景』東京編で、\n正門君が行来した聖路加シティ,築地各地の中には、\n築地本願寺もあった。\n\n正門君が築地本願寺の真横の横断歩道の前の道を歩いていた事が、今も確かに思い出される。\nその場所が、何故か印象に残っていた。\n\n盆踊り、気になるところ。\n\nhttps://t.co/dGNXg7VQUH https://t.co/x9ItxkQdgk",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_305df0875d27ba13",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@YOGAS_tw",
-      "account_name": "用賀商店街広報",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/YOGAS_tw/status/2075501022156661221",
-      "tweet_id": "2075501022156661221",
-      "date": "2026-07-10T08:42:59+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2pLfeaIAAXDDS.jpg",
-        "https://t.co/DQHOFBFXlh",
-        "pic.x.com/DQHOFBFXlh"
-      ],
-      "text": "こんにちは！用賀商店街です😊今年もようが夏まつり&amp;スタンプラリー開催します！　\n①ようが夏まつり\n屋台やステージプログラム、盆踊りを楽しもう！\n＊開催日時　2026年7月22日水・7月23日木\n　　　　　　17〜21時まで　\n＊開催場所　くすのき公園(用賀駅徒歩すぐ) https://t.co/DQHOFBFXlh",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_864d180df607960f",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@nijigame_taiko",
-      "account_name": "虹亀",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/nijigame_taiko/status/2075503483437174939",
-      "tweet_id": "2075503483437174939",
-      "date": "2026-07-10T08:52:46+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2ra1QbUAAVM7-.jpg",
-        "https://t.co/PpZmlohl1B",
-        "pic.x.com/PpZmlohl1B"
-      ],
-      "text": "言葉メインの盆踊りのポスターだけど、なんか　惹かれるなー https://t.co/PpZmlohl1B",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_d0e8266bd522399c",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@wan_navi",
-      "account_name": "湾ナビ－湾岸マンション価格ナビ－",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/wan_navi/status/2075505308445593857",
-      "tweet_id": "2075505308445593857",
-      "date": "2026-07-10T09:00:01+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2AeVPaIAA_UhC.jpg",
-        "https://t.co/4sPpIBkFkD",
-        "pic.x.com/4sPpIBkFkD"
-      ],
-      "text": "【第2回・晴海ふ頭公園盆踊り大会】\nマンションカウンターチームと一緒に参加いたします！\n・7/11(土)、12(日)　16:00～20:30\n\n⚾ストラックアウト⚾\n参加費：100円\nパーフェクト賞にはマンマニくんをプレゼント！\n\n皆様ご来場お待ちしております！\nhttps://t.co/AQrf94QbtG\n\n＃HARUMIFLAG\n＃晴海フラッグ\n＃盆踊り大会",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_a9fe4b558ed5f0fc",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@megarebo1962",
-      "account_name": "megarebo",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/megarebo1962/status/2075507421179736228",
-      "tweet_id": "2075507421179736228",
-      "date": "2026-07-10T09:08:24+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2u_3qbMAE7q-V.jpg",
-        "https://t.co/IEV2DOJwhV",
-        "pic.x.com/IEV2DOJwhV"
-      ],
-      "text": "晴海ふ頭公園盆踊り大会の会場設置完了☑️\n今年はタワー棟もできて住人が増えたし晴海地区のマンションの協賛等も増えてるらしいのでキャパシティオーバーによる混雑や混乱が心配です🫨 https://t.co/IEV2DOJwhV",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_75a5ec24d3e8cddf",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@ichiran_satsuki",
-      "account_name": "五月家一蘭（河内音頭関係アカウント）",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/ichiran_satsuki/status/2075516603853336840",
-      "tweet_id": "2075516603853336840",
-      "date": "2026-07-10T09:44:54+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM23WVuaMAATJt3.jpg",
-        "https://t.co/2iChBu6WEM",
-        "pic.x.com/2iChBu6WEM"
-      ],
-      "text": "明日7月11日は古市の盆踊り大会に五月会が出演！18:00-21:00のもりだくさんなプログラムです。近鉄古市駅前白鳥神社にて！ https://t.co/2iChBu6WEM",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_e46dc17e4edf5c65",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@Sacchin_luvnpvv",
-      "account_name": "さっちん𓃠🐾",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/Sacchin_luvnpvv/status/2075519803121623218",
-      "tweet_id": "2075519803121623218",
-      "date": "2026-07-10T09:57:37+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM26QwzagAAzMs1.jpg",
-        "https://t.co/ladGZFgrO6",
-        "pic.x.com/ladGZFgrO6"
-      ],
-      "text": "我が町内会の盆踊りメンバーに今年は数人の新人さんが加入。そこで町内会浴衣を持参して、\n\n先月、オーナに講師になっていただき、町内会として初めての浴衣着付け教室を開催。\n\nその成果を兼ねての浴衣お茶会をすることに👘\n\n数年前から浴衣着付けに励むが、毎年覚えていない…私は…練習あるのみ😅 https://t.co/ladGZFgrO6",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_dbe1fbc7969588cd",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@fuyukapi",
-      "account_name": "冬里かぴ子",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/fuyukapi/status/2075525526660489419",
-      "tweet_id": "2075525526660489419",
-      "date": "2026-07-10T10:20:21+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM2_dqKa8AArwAW.jpg",
-        "https://t.co/T6shtv9r1b",
-        "pic.x.com/T6shtv9r1b"
-      ],
-      "text": "西久保八幡神社（セミ神社）盆踊りのポスター出てたでー！\n\n港区神谷町です。\n絶対行く！\n\n#盆踊り https://t.co/T6shtv9r1b",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_470edb9187121276",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@YasuYasukawa",
-      "account_name": "yasu!(1号機) チタン芸人🍘",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/YasuYasukawa/status/2075533877050065118",
-      "tweet_id": "2075533877050065118",
-      "date": "2026-07-10T10:53:32+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3HD7tbYAA1H3f.jpg",
-        "https://t.co/AuCVxJW0CS",
-        "pic.x.com/AuCVxJW0CS"
-      ],
-      "text": "#小林さんちのメイドラゴン の音頭も作ってほしいw というのも舞台の一つであるこの公園。うちの町内会の自治会館の前で、毎年ここで櫓を建てて盆踊り納涼会をやっているんですw ぜひ、ここで #メイドラゴン音頭 を流して、おばちゃん連中に踊らせたいですw #越谷市 https://t.co/AuCVxJW0CS",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_0d6e532fe39e0c05",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@tsukijichousei",
-      "account_name": "長生庵",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/tsukijichousei/status/2075546671279472941",
-      "tweet_id": "2075546671279472941",
-      "date": "2026-07-10T11:44:22+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3SskDa8AE_2Ew.jpg",
-        "https://t.co/qmdRGBO4LF",
-        "pic.x.com/qmdRGBO4LF"
-      ],
-      "text": "🏮第2回 晴海ふ頭公園盆踊り大会🏮\n7月11日（土）・12日（日）16:00〜21:00\n晴海ふ頭公園にて開催！\n今年は「築地はしご酒」から\n伊勢正／喫茶マコ／築地ペッパーズカフェ／ジェラートミキ築地／The Dashi Standが出店します！\n築地グルメと一緒に、海辺の盆踊りをお楽しみください🎵 https://t.co/qmdRGBO4LF",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_6e7f6823dc74b076",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@seisei_ai_1st",
-      "account_name": "聖星あい＠AI研究家",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/seisei_ai_1st/status/2075553196744077803",
-      "tweet_id": "2075553196744077803",
-      "date": "2026-07-10T12:10:18+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3YnibaMAADFYl.jpg",
-        "https://t.co/x9T4l85ppZ",
-        "pic.x.com/x9T4l85ppZ",
-        "https://pbs.twimg.com/media/HM3Yn6XagAAXEkO.jpg",
-        "https://pbs.twimg.com/media/HM3YoTUaEAAOGow.jpg"
-      ],
-      "text": "【今日の日本イベント・祭り・フェスで\n　　　　いま伸びてる話題TOP3】\n１位はあえて伏せる。画像がヒント\n\n🥉第3位\n福山本通り商店街七夕祭り\n\n🥈第2位\n晴海ふ頭公園盆踊り大会2026\n\n🥇第1位\n↓リプ欄 https://t.co/x9T4l85ppZ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_89959e60a97f5718",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@mansionmania",
-      "account_name": "マンションマニア",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/mansionmania/status/2075554486014345471",
-      "tweet_id": "2075554486014345471",
-      "date": "2026-07-10T12:15:26+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3Zzk-bYAEIsVi.jpg",
-        "https://t.co/vu1i39gbO6",
-        "pic.x.com/vu1i39gbO6"
-      ],
-      "text": "晴海ふ頭公園盆踊り大会\n・7/11(土)、12(日)　16:00～20:30\n\nマンションカウンターはストラックアウトで出店させていただきます！\n\nパーフェクトでマンマニくん人形をプレゼント！！\n\nご参加お待ちしております！！\nhttps://t.co/RJBv4ALJDx https://t.co/vu1i39gbO6",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_14117e8107d9d4fc",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@tanakatakeshi",
-      "account_name": "田中健(たけし)／質実剛健の会",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/tanakatakeshi/status/2075556628586459388",
-      "tweet_id": "2075556628586459388",
-      "date": "2026-07-10T12:23:56+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM3bvO-bMAAsIhB.jpg",
-        "https://t.co/DE7aFvMVLd",
-        "pic.x.com/DE7aFvMVLd",
-        "https://pbs.twimg.com/media/HM3bvOzaQAASqlW.jpg",
-        "https://pbs.twimg.com/media/HM3bvO2aQAAmmYN.jpg"
-      ],
-      "text": "【盆踊り練習会①】\n\n昭和地区で10年ぶりに盆踊りが復活します🏮。\n今日から、踊りの輪の中心になる、踊り子の皆さんに向けての、練習会が始まりました。\n\n主に自治会の役員さんとお仲間の皆さんに集まっていただきましたが、師範の先生のわかりやすい丁寧なご指導のおかげで、少しずつ上達してきました。\n\n引き続き、頑張ってまいりましょう！\n\n#質実剛健\n#田中健\n#知立市\n#未来共創\n#地域密着",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_ac0a9a2bdefca02c",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@Ma_umojh",
-      "account_name": "Ma-",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/Ma_umojh/status/2075571940690186443",
-      "tweet_id": "2075571940690186443",
-      "date": "2026-07-10T13:24:47+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/amplify_video_thumb/2075571842723741696/img/KuHvkHxPHWCaba5x.jpg",
-        "https://t.co/as1iMSSRkg",
-        "pic.x.com/as1iMSSRkg",
-        "https://pbs.twimg.com/media/HM3pmBna4AAaW6A.jpg",
-        "https://pbs.twimg.com/media/HM3pmBfaUAAdSef.jpg"
-      ],
-      "text": "🏮24 東淵江自治会盆踊り大会\n\n去年に引き続き参加させていただきました。\n各町会持ち込みのため、決まった曲はないのがワクワク感があって楽しいですね。\n\n一休さんですがお誘いを受けまして櫓の上で踊らせていただきました。\n初櫓上だったりします(かなり緊張してました) https://t.co/as1iMSSRkg",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {

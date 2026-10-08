@@ -9,16 +9,16 @@
   "review_count": 1,
   "created": [
     {
-      "song_name": "忍岡音頭",
-      "source_term": "忍岡音頭",
+      "song_name": "賑やかな踊り",
+      "source_term": "賑やかな踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "賑やかな踊り",
-      "source_term": "賑やかな踊り",
+      "song_name": "忍岡音頭",
+      "source_term": "忍岡音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -62,7 +62,7 @@
       "term": "ズンパ音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=RUxBw0woP20"
+      "evidence_url": "https://www.youtube.com/watch?v=F5FLXwlrTvU"
     }
   ]
 }
