@@ -121,6 +121,26 @@
       "reviewed_by": "おと（Codex）",
       "reviewed_at": "2026-10-03T05:44:38.008815+00:00",
       "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+    },
+    {
+      "occurrence_id": "occ_f31959e29f133806",
+      "event_year": 2026,
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-11",
+      "source_url": "https://www.kissport.or.jp/matsuri/2026/",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-08T11:11:32.999607+00:00",
+      "review_note": "公式2026年案内と公式時間表（芸能ステージG）を照合。時間表は10/10・10/11とも15:15 盆踊り。案内先 /matsuri/news/7274/ は現在404のため、取得できる当年公式ページを代表出典とする。"
+    },
+    {
+      "occurrence_id": "occ_2eb9d3179e731fbe",
+      "event_year": 2026,
+      "date_start": "2026-10-09",
+      "date_end": "2026-10-12",
+      "source_url": "https://shitamachi-bonodori.com/",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-08T11:11:32.999607+00:00",
+      "review_note": "主催公式サイトの開催日時・場所を照合。既存2026開催回を確認し、2025年非公式出典を置換。催事全体営業時間を盆踊りの個別時間にはしない。"
     }
   ],
   "legacy_preserved": [

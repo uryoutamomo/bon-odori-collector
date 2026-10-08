@@ -1,0 +1,56 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "おと（Codex）",
+  "scope": "official_two_events_20261008",
+  "purpose": "内田さん2026-10-08承認の2既存開催回だけを公式根拠で更新。新規開催回・系列を作成しない。",
+  "requests": [
+    {
+      "request_id": "official_two_20261008_minato",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_f31959e29f133806",
+      "event_year": 2026,
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-11",
+      "confidence": "confirmed",
+      "venue": {
+        "venue_id": "ven_bede4db7f118c064"
+      },
+      "expected_source_url": "https://www.kissport.or.jp/matsuri/",
+      "detail_replacement": "2026年10月10日・11日の盆踊りは、両日15:15開始。会場は都立芝公園エリアの芸能ステージG。終了時刻は未確認。10月12日は別会場のスポーツ・体育祭で、盆踊りの日程には含みません。",
+      "expected_detail_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "url": "https://www.kissport.or.jp/matsuri/2026/",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "2026年 公式開催案内",
+        "text_excerpt": "公式2026年案内と公式時間表（芸能ステージG）を照合。時間表は10/10・10/11とも15:15 盆踊り。案内先 /matsuri/news/7274/ は現在404のため、取得できる当年公式ページを代表出典とする。"
+      },
+      "note": "公式2026年案内と公式時間表（芸能ステージG）を照合。時間表は10/10・10/11とも15:15 盆踊り。案内先 /matsuri/news/7274/ は現在404のため、取得できる当年公式ページを代表出典とする。",
+      "dry_run_only": true
+    },
+    {
+      "request_id": "official_two_20261008_shitamachi",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_2eb9d3179e731fbe",
+      "event_year": 2026,
+      "date_start": "2026-10-09",
+      "date_end": "2026-10-12",
+      "confidence": "confirmed",
+      "venue": {
+        "venue_id": "ven_2c7e944e2b1af336"
+      },
+      "expected_source_url": "https://www.uenopark.info/2025/edo-week-ueno-2025/",
+      "detail_replacement": "2026年10月9日〜12日、上野恩賜公園 竹の台広場（噴水前広場）で開催。催事全体は11:00〜21:00、最終日は20:00まで。盆踊りの個別開始・終了時刻は未確認。",
+      "expected_detail_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "url": "https://shitamachi-bonodori.com/",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "2026年 公式開催案内",
+        "text_excerpt": "主催公式サイトの開催日時・場所を照合。既存2026開催回を確認し、2025年非公式出典を置換。催事全体営業時間を盆踊りの個別時間にはしない。"
+      },
+      "note": "主催公式サイトの開催日時・場所を照合。既存2026開催回を確認し、2025年非公式出典を置換。催事全体営業時間を盆踊りの個別時間にはしない。",
+      "dry_run_only": true
+    }
+  ]
+}
