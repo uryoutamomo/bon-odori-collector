@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 7,
-  "direct_count": 5,
+  "song_candidate_count": 9,
+  "direct_count": 6,
   "created_count": 3,
-  "updated_count": 2,
+  "updated_count": 3,
   "rejected_noise_count": 1,
-  "review_count": 1,
+  "review_count": 2,
   "created": [
     {
       "song_name": "賑やかな踊り",
@@ -49,6 +49,14 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "大東京音頭",
+      "source_term": "大東京音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -62,7 +70,13 @@
       "term": "ズンパ音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=F5FLXwlrTvU"
+      "evidence_url": "https://www.youtube.com/watch?v=0tsKP0hOuMM"
+    },
+    {
+      "term": "荒川音頭",
+      "evidence_count": 2,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=RY-4q9gj5tk"
     }
   ]
 }

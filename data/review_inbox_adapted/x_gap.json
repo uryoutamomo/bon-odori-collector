@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "ab003f02a86691d9ead1c825c5f445d6307975a7aa1b9dd00970e1225ceb72f2",
-  "input_size_bytes": 2194765,
+  "input_sha256": "f7817afaac987959a1d3436d4d1bd3eddb81d6915dead27b85e45a242415b81a",
+  "input_size_bytes": 2209660,
   "item_count": 5,
   "items": [
     {
@@ -11,29 +11,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "今年も流山セントラルパークで「第二回八木夏まつり」を開催します✨\n\n去年大盛り上がりだった🍉スイカ早食い大会🍉\n志村けんを知らない子どもたちが、早食いなのに味わ",
+      "title": "今週、来週は盆おどり、夏祭りが開催されます🏮\n\n【#道頓堀盆おどりインターナショナル2026 】\n8/8(土) 12：00～21：00（盆おどり18：00～）\n",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2084609585370063034",
-      "source_url": "https://x.com/rocio0825/status/2084609585370063034",
+      "source_key": "x:2084882173870661845",
+      "source_url": "https://x.com/dotonbori_jp/status/2084882173870661845",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_e74272ecd13ea606",
-        "source_key": "x:2084609585370063034",
+        "candidate_id": "xgap_d9838de27552ee82",
+        "source_key": "x:2084882173870661845",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/rocio0825/status/2084609585370063034",
-        "source_text": "\n今年も流山セントラルパークで「第二回八木夏まつり」を開催します✨\n\n去年大盛り上がりだった🍉スイカ早食い大会🍉\n志村けんを知らない子どもたちが、早食いなのに味わって食べていてとても可愛らしかったのが印象的でした笑！ \nチャレンジャーのお越しをお待ちしております！\n\n浴衣や甚平など、和装でのご来場大歓迎👘✨\n\n【開催概要】 \n📅 日時：2026年8月8日(土) 15:00〜21:00 \n📍 場所：流山セントラルパーク（公園内ピクニック広場）\n\n【プログラム】 \n15:00〜 開演太鼓、太鼓体験会、スイカ早食い大会🍉 (@yutakaya11111) \n16:00〜 カラオケ🎤 (第3コミュニティホーム)\n17:00〜 よさこい💃 (@shinbaru_yosakoi) \n17:30〜 フラダンス🌺（Malino Hula 流山） \n18:00〜 盆踊り🏮（盆踊り同好会） \n〜21:00まで 和太鼓・盆踊り・フラダンス\n\n屋台や縁日ゲーム、キッチンカーも多数登場！🚚🍧 みなさまのご来場を心よりお待ちしております！\n\n#八木夏まつり #流山セントラルパーク #流山イベント #夏祭り #盆踊",
-        "source_author": "@rocio0825",
+        "source_url": "https://x.com/dotonbori_jp/status/2084882173870661845",
+        "source_text": "\n今週、来週は盆おどり、夏祭りが開催されます🏮\n\n【#道頓堀盆おどりインターナショナル2026 】\n8/8(土) 12：00～21：00（盆おどり18：00～）\nとんぼりリバーウォーク戎橋下\n\n【第43回 #法善寺横丁まつり2026 】\n8/10(月)＆11(火祝) \n夜店17：00頃～\nJAZZ STREET \n10日18：30開演\n11日18：00開演 https://t.co/8VpivGOLAe",
+        "source_author": "@dotonbori_jp",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@rocio0825",
-          "account_name": "うた桜子🌸流山市議会議員",
+          "handle": "@dotonbori_jp",
+          "account_name": "道頓堀商店会",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -42,111 +42,47 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月8日"
+          "8/8",
+          "8/10"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@rocio0825",
-          "name": "うた桜子🌸流山市議会議員",
+          "account": "@dotonbori_jp",
+          "name": "道頓堀商店会",
           "title": "",
-          "text": "今年も流山セントラルパークで「第二回八木夏まつり」を開催します✨\n\n去年大盛り上がりだった🍉スイカ早食い大会🍉\n志村けんを知らない子どもたちが、早食いなのに味わって食べていてとても可愛らしかったのが印象的でした笑！ \nチャレンジャーのお越しをお待ちしております！\n\n浴衣や甚平など、和装でのご来場大歓迎👘✨\n\n【開催概要】 \n📅 日時：2026年8月8日(土) 15:00〜21:00 \n📍 場所：流山セントラルパーク（公園内ピクニック広場）\n\n【プログラム】 \n15:00〜 開演太鼓、太鼓体験会、スイカ早食い大会🍉 (@yutakaya11111) \n16:00〜 カラオケ🎤 (第3コミュニティホーム)\n17:00〜 よさこい💃 (@shinbaru_yosakoi) \n17:30〜 フラダンス🌺（Malino Hula 流山） \n18:00〜 盆踊り🏮（盆踊り同好会） \n〜21:00まで 和太鼓・盆踊り・フラダンス\n\n屋台や縁日ゲーム、キッチンカーも多数登場！🚚🍧 みなさまのご来場を心よりお待ちしております！\n\n#八木夏まつり #流山セントラルパーク #流山イベント #夏祭り #盆踊り",
-          "url": "https://x.com/rocio0825/status/2084609585370063034",
-          "date": "2026-08-04T11:57:09+00:00",
-          "tweet_id": "2084609585370063034",
-          "tags": [
-            "🟢一次レポ",
-            "q-song-program"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HO4FXgSa0AAeghe.jpg",
-            "https://t.co/Una2wdOLRb",
-            "pic.x.com/Una2wdOLRb"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/rocio0825/status/2084609585370063034"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HO4FXgSa0AAeghe.jpg",
-          "https://t.co/Una2wdOLRb",
-          "pic.x.com/Una2wdOLRb"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_074b421d9998f34d"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "8/1（土）　市野倉南町会盆踊り＠市野倉南児童公園に初参加　雨で早めの終了も、こどもたちのお手本となり楽しく踊る｜庄嶋たかひろ 大田区議会議員 @Takahir",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2084754642869899522",
-      "source_url": "https://x.com/TakahiroShojima/status/2084754642869899522",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_b09f51186482e9d5",
-        "source_key": "x:2084754642869899522",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/TakahiroShojima/status/2084754642869899522",
-        "source_text": "\n8/1（土）　市野倉南町会盆踊り＠市野倉南児童公園に初参加　雨で早めの終了も、こどもたちのお手本となり楽しく踊る｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/ucGzfZGqSS",
-        "source_author": "@TakahiroShojima",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@takahiroshojima",
-          "account_name": "庄嶋たかひろ 大田区議会議員",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8/1"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@TakahiroShojima",
-          "name": "庄嶋たかひろ 大田区議会議員",
-          "title": "",
-          "text": "8/1（土）　市野倉南町会盆踊り＠市野倉南児童公園に初参加　雨で早めの終了も、こどもたちのお手本となり楽しく踊る｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/ucGzfZGqSS",
-          "url": "https://x.com/TakahiroShojima/status/2084754642869899522",
-          "date": "2026-08-04T21:33:34+00:00",
-          "tweet_id": "2084754642869899522",
+          "text": "今週、来週は盆おどり、夏祭りが開催されます🏮\n\n【#道頓堀盆おどりインターナショナル2026 】\n8/8(土) 12：00～21：00（盆おどり18：00～）\nとんぼりリバーウォーク戎橋下\n\n【第43回 #法善寺横丁まつり2026 】\n8/10(月)＆11(火祝) \n夜店17：00頃～\nJAZZ STREET \n10日18：30開演\n11日18：00開演 https://t.co/8VpivGOLAe",
+          "url": "https://x.com/dotonbori_jp/status/2084882173870661845",
+          "date": "2026-08-05T06:00:20+00:00",
+          "tweet_id": "2084882173870661845",
           "tags": [
             "🟡関心",
-            "q-venue-tokyo-wards"
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO79SPiaMAAuTPT.jpg",
+            "https://t.co/8VpivGOLAe",
+            "pic.x.com/8VpivGOLAe",
+            "https://pbs.twimg.com/media/HO79SPhagAAV-CP.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/TakahiroShojima/status/2084754642869899522"
+          "https://x.com/dotonbori_jp/status/2084882173870661845"
         ],
-        "source_media_urls": [],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO79SPiaMAAuTPT.jpg",
+          "https://t.co/8VpivGOLAe",
+          "pic.x.com/8VpivGOLAe",
+          "https://pbs.twimg.com/media/HO79SPhagAAV-CP.jpg"
+        ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_d1b205ff4b9d53b9"
+      "inbox_id": "inbox_44252051c06da7ae"
     },
     {
       "kind": "x_gap",
@@ -154,29 +90,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【盆踊り情報2026】【大岡山】8/7(金)、8(土)の2日間、大岡山北口商店街で「盆踊り」\n踊ってくれたお子様にはお菓子のプレゼントがありますよ～🎁💕\nhtt",
+      "title": "【こんにちは、区長です！】７月19日(日) に加賀原ぎんなん公園で行われた「加賀原二丁目納涼大会」に伺いました。たくさんの模擬店が並んだほか、伝統芸能の獅子舞や",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2084836795338924470",
-      "source_url": "https://x.com/otafull/status/2084836795338924470",
+      "source_key": "x:2084897190804086969",
+      "source_url": "https://x.com/tz_yokohama/status/2084897190804086969",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_eca3ac29399d7814",
-        "source_key": "x:2084836795338924470",
+        "candidate_id": "xgap_13a2a0d088958a6d",
+        "source_key": "x:2084897190804086969",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2084836795338924470",
-        "source_text": "\n【盆踊り情報2026】【大岡山】8/7(金)、8(土)の2日間、大岡山北口商店街で「盆踊り」\n踊ってくれたお子様にはお菓子のプレゼントがありますよ～🎁💕\nhttps://t.co/DUMw07kEXR\n#大田区　#商店街　#大岡山　#盆踊り",
-        "source_author": "@otafull",
+        "source_url": "https://x.com/tz_yokohama/status/2084897190804086969",
+        "source_text": "\n【こんにちは、区長です！】７月19日(日) に加賀原ぎんなん公園で行われた「加賀原二丁目納涼大会」に伺いました。たくさんの模擬店が並んだほか、伝統芸能の獅子舞や、多くのこどもたちが参加したこども神輿が披露されるなど、会場はとても多くの方々で賑わい、私も楽しませていただきました。#都筑区 https://t.co/QsiE7zmHo8",
+        "source_author": "@tz_yokohama",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@otafull",
-          "account_name": "おーたふる／大田区商店街連合会",
+          "handle": "@tz_yokohama",
+          "account_name": "横浜市都筑区役所",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -185,27 +121,189 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8/7"
+          "７月19日"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@otafull",
-          "name": "おーたふる／大田区商店街連合会",
+          "account": "@tz_yokohama",
+          "name": "横浜市都筑区役所",
           "title": "",
-          "text": "【盆踊り情報2026】【大岡山】8/7(金)、8(土)の2日間、大岡山北口商店街で「盆踊り」\n踊ってくれたお子様にはお菓子のプレゼントがありますよ～🎁💕\nhttps://t.co/DUMw07kEXR\n#大田区　#商店街　#大岡山　#盆踊り",
-          "url": "https://x.com/otafull/status/2084836795338924470",
-          "date": "2026-08-05T03:00:01+00:00",
-          "tweet_id": "2084836795338924470",
+          "text": "【こんにちは、区長です！】７月19日(日) に加賀原ぎんなん公園で行われた「加賀原二丁目納涼大会」に伺いました。たくさんの模擬店が並んだほか、伝統芸能の獅子舞や、多くのこどもたちが参加したこども神輿が披露されるなど、会場はとても多くの方々で賑わい、私も楽しませていただきました。#都筑区 https://t.co/QsiE7zmHo8",
+          "url": "https://x.com/tz_yokohama/status/2084897190804086969",
+          "date": "2026-08-05T07:00:00+00:00",
+          "tweet_id": "2084897190804086969",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-images"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO7I89pbkAAyOBO.jpg",
+            "https://t.co/QsiE7zmHo8",
+            "pic.x.com/QsiE7zmHo8",
+            "https://pbs.twimg.com/media/HO7I89QaIAAF-Oe.jpg",
+            "https://pbs.twimg.com/media/HO7I89gboAAsT0i.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/tz_yokohama/status/2084897190804086969"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO7I89pbkAAyOBO.jpg",
+          "https://t.co/QsiE7zmHo8",
+          "pic.x.com/QsiE7zmHo8",
+          "https://pbs.twimg.com/media/HO7I89QaIAAF-Oe.jpg",
+          "https://pbs.twimg.com/media/HO7I89gboAAsT0i.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_3e23727fca477fec"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "今日と明日の19時から21時まで、若草納涼祭が若草町三区公民館前（開拓公園）で開催されます。やぐらを組んでの昔ながらの盆踊り。夜店も出ます。駐車場はありませんが",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2084902885398323463",
+      "source_url": "https://x.com/KamichoJ/status/2084902885398323463",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_c4879e8685081654",
+        "source_key": "x:2084902885398323463",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/KamichoJ/status/2084902885398323463",
+        "source_text": "\n今日と明日の19時から21時まで、若草納涼祭が若草町三区公民館前（開拓公園）で開催されます。やぐらを組んでの昔ながらの盆踊り。夜店も出ます。駐車場はありませんが、遊びに行ってはいかがでしょうか。（画像は昨年の風景） https://t.co/YiPdTtxfIb",
+        "source_author": "@KamichoJ",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@kamichoj",
+          "account_name": "上戸祭町自治会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "19時",
+          "21時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@KamichoJ",
+          "name": "上戸祭町自治会",
+          "title": "",
+          "text": "今日と明日の19時から21時まで、若草納涼祭が若草町三区公民館前（開拓公園）で開催されます。やぐらを組んでの昔ながらの盆踊り。夜店も出ます。駐車場はありませんが、遊びに行ってはいかがでしょうか。（画像は昨年の風景） https://t.co/YiPdTtxfIb",
+          "url": "https://x.com/KamichoJ/status/2084902885398323463",
+          "date": "2026-08-05T07:22:38+00:00",
+          "tweet_id": "2084902885398323463",
           "tags": [
             "🟡関心",
             "q-report"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HO8QGAsawAA8Kck.jpg",
+            "https://t.co/YiPdTtxfIb",
+            "pic.x.com/YiPdTtxfIb"
           ]
         },
         "source_urls": [
-          "https://x.com/otafull/status/2084836795338924470"
+          "https://x.com/KamichoJ/status/2084902885398323463"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HO8QGAsawAA8Kck.jpg",
+          "https://t.co/YiPdTtxfIb",
+          "pic.x.com/YiPdTtxfIb"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_a299b95847a00268"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "＼⋱夏の恒例！SHIBUYA109前で盆踊り⋰／\n\n✨🏮第7回渋谷盆踊り2026🏮✨\n\n📆 8月８日（土）18:00〜21:30 \n📍渋谷109イベントスペース",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2085177951457619990",
+      "source_url": "https://x.com/playshibuya/status/2085177951457619990",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_123b98d593233a76",
+        "source_key": "x:2085177951457619990",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/playshibuya/status/2085177951457619990",
+        "source_text": "\n＼⋱夏の恒例！SHIBUYA109前で盆踊り⋰／\n\n✨🏮第7回渋谷盆踊り2026🏮✨\n\n📆 8月８日（土）18:00〜21:30 \n📍渋谷109イベントスペース、他周辺道路（道玄坂、文化村通り）\n\n※荒天の場合は中止となる場合あり。\n※16:30～22:30の間交通規制となります。\n\nhttps://t.co/AhrbYaZkbl",
+        "source_author": "@playshibuya",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@playshibuya",
+          "account_name": "渋谷区観光協会/ShibuyaCityTourismAssociation",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8月８日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": {
+          "venue": "道玄坂・文化村通り",
+          "region_hint": "渋谷区",
+          "address": "渋谷区道玄坂2丁目辺り一帯",
+          "source_url": "https://www.shibuyadeohara.jp/about-ohara-matsuri/29-shibuya-kagoshima-ohara-matsuri.html"
+        },
+        "voice": {
+          "source": "x",
+          "account": "@playshibuya",
+          "name": "渋谷区観光協会/ShibuyaCityTourismAssociation",
+          "title": "",
+          "text": "＼⋱夏の恒例！SHIBUYA109前で盆踊り⋰／\n\n✨🏮第7回渋谷盆踊り2026🏮✨\n\n📆 8月８日（土）18:00〜21:30 \n📍渋谷109イベントスペース、他周辺道路（道玄坂、文化村通り）\n\n※荒天の場合は中止となる場合あり。\n※16:30～22:30の間交通規制となります。\n\nhttps://t.co/AhrbYaZkbl",
+          "url": "https://x.com/playshibuya/status/2085177951457619990",
+          "date": "2026-08-06T01:35:39+00:00",
+          "tweet_id": "2085177951457619990",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/playshibuya/status/2085177951457619990"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -213,7 +311,7 @@
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_b34cddf2272b7831"
+      "inbox_id": "inbox_89520909ca1ab7ae"
     },
     {
       "kind": "x_gap",
@@ -221,29 +319,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "📣今週末開催！東急プラザ蒲田の「かまたえん空祭り」🌻\n\n🏮子ども神輿担ぎ体験\n🥁盆踊り・子ども和太鼓体験\n🎯射的や輪投げなどのレトロ縁日広場\n\n縁日でスタンプを",
+      "title": "8月8・9日は「蔵王温泉大盆踊り」の開催に伴い、霊泉広場駐車場は終日ご利用いただけません。\n\n共同浴場をご利用のお客様は、蔵王体育館前「上の台第一駐車場」をご利",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2084836806629937153",
-      "source_url": "https://x.com/otakanko2/status/2084836806629937153",
+      "source_key": "x:2085188195344609478",
+      "source_url": "https://x.com/zao_sightseeing/status/2085188195344609478",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_818f613d274416b9",
-        "source_key": "x:2084836806629937153",
+        "candidate_id": "xgap_eee659f4d38d41ac",
+        "source_key": "x:2085188195344609478",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/otakanko2/status/2084836806629937153",
-        "source_text": "\n📣今週末開催！東急プラザ蒲田の「かまたえん空祭り」🌻\n\n🏮子ども神輿担ぎ体験\n🥁盆踊り・子ども和太鼓体験\n🎯射的や輪投げなどのレトロ縁日広場\n\n縁日でスタンプを集めると、光るアイテムが当たるくじにも挑戦できます✨\n\n📅8月8日(土)・9日(日)\n📍東急プラザ蒲田 屋上「かまたえん」\n\n夏ならではの催しが盛りだくさん！ぜひご家族やお友達とお出かけください😊\n\nhttps://t.co/Ch2YXOHMQy",
-        "source_author": "@otakanko2",
+        "source_url": "https://x.com/zao_sightseeing/status/2085188195344609478",
+        "source_text": "\n8月8・9日は「蔵王温泉大盆踊り」の開催に伴い、霊泉広場駐車場は終日ご利用いただけません。\n\n共同浴場をご利用のお客様は、蔵王体育館前「上の台第一駐車場」をご利用ください。\nナビでは 「蔵王体育館」 と検索するとスムーズです。\n\nご不便をおかけしますが、ご理解とご協力をお願いいたします。 https://t.co/JEiZPhuQC8",
+        "source_author": "@zao_sightseeing",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@otakanko2",
-          "account_name": "【公式】大田観光協会",
+          "handle": "@zao_sightseeing",
+          "account_name": "蔵王温泉観光協会【公式】",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -252,120 +350,44 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月8日"
+          "8月8"
         ],
         "observed_dates": [],
         "event_group_key": "",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@otakanko2",
-          "name": "【公式】大田観光協会",
+          "account": "@zao_sightseeing",
+          "name": "蔵王温泉観光協会【公式】",
           "title": "",
-          "text": "📣今週末開催！東急プラザ蒲田の「かまたえん空祭り」🌻\n\n🏮子ども神輿担ぎ体験\n🥁盆踊り・子ども和太鼓体験\n🎯射的や輪投げなどのレトロ縁日広場\n\n縁日でスタンプを集めると、光るアイテムが当たるくじにも挑戦できます✨\n\n📅8月8日(土)・9日(日)\n📍東急プラザ蒲田 屋上「かまたえん」\n\n夏ならではの催しが盛りだくさん！ぜひご家族やお友達とお出かけください😊\n\nhttps://t.co/Ch2YXOHMQy",
-          "url": "https://x.com/otakanko2/status/2084836806629937153",
-          "date": "2026-08-05T03:00:03+00:00",
-          "tweet_id": "2084836806629937153",
+          "text": "8月8・9日は「蔵王温泉大盆踊り」の開催に伴い、霊泉広場駐車場は終日ご利用いただけません。\n\n共同浴場をご利用のお客様は、蔵王体育館前「上の台第一駐車場」をご利用ください。\nナビでは 「蔵王体育館」 と検索するとスムーズです。\n\nご不便をおかけしますが、ご理解とご協力をお願いいたします。 https://t.co/JEiZPhuQC8",
+          "url": "https://x.com/zao_sightseeing/status/2085188195344609478",
+          "date": "2026-08-06T02:16:21+00:00",
+          "tweet_id": "2085188195344609478",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HO6w2eOboAA2qFC.jpg",
-            "https://t.co/DDBRjeP4GJ",
-            "pic.x.com/DDBRjeP4GJ"
+            "https://pbs.twimg.com/media/HPATm9LagAAD46R.jpg",
+            "https://t.co/JEiZPhuQC8",
+            "pic.x.com/JEiZPhuQC8"
           ]
         },
         "source_urls": [
-          "https://x.com/otakanko2/status/2084836806629937153"
+          "https://x.com/zao_sightseeing/status/2085188195344609478"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HO6w2eOboAA2qFC.jpg",
-          "https://t.co/DDBRjeP4GJ",
-          "pic.x.com/DDBRjeP4GJ"
+          "https://pbs.twimg.com/media/HPATm9LagAAD46R.jpg",
+          "https://t.co/JEiZPhuQC8",
+          "pic.x.com/JEiZPhuQC8"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_74212f32d4fcf88c"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【北区平和祈念週間 🕊️】\n昨日から「北区平和祈念週間」が始まりました。\n\n初日は区初となる戦争体験講話をはじめ、VRでの原爆被害体験、戦時下の北区やドナルド・",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2084837276744630570",
-      "source_url": "https://x.com/heartfulshinobu/status/2084837276744630570",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_7fc36ed0149a2eb0",
-        "source_key": "x:2084837276744630570",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/heartfulshinobu/status/2084837276744630570",
-        "source_text": "\n【北区平和祈念週間 🕊️】\n昨日から「北区平和祈念週間」が始まりました。\n\n初日は区初となる戦争体験講話をはじめ、VRでの原爆被害体験、戦時下の北区やドナルド・キーン氏のパネル展示、献花、商店街の皆様による具だくさんすいとん、そして平和祈念の納涼盆踊りなど、盛りだくさんな内容でした。\n\n戦争の記憶を風化させず、平和の尊さを次世代へ繋いでいく大切さを改めて実感しました。\n\n8/8(金)まで開催されていますので、ぜひ足をお運びください！\n\n#北区 #平和祈念",
-        "source_author": "@heartfulshinobu",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@heartfulshinobu",
-          "account_name": "ふるた しのぶ 🌼北区議会議員",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8/8"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@heartfulshinobu",
-          "name": "ふるた しのぶ 🌼北区議会議員",
-          "title": "",
-          "text": "【北区平和祈念週間 🕊️】\n昨日から「北区平和祈念週間」が始まりました。\n\n初日は区初となる戦争体験講話をはじめ、VRでの原爆被害体験、戦時下の北区やドナルド・キーン氏のパネル展示、献花、商店街の皆様による具だくさんすいとん、そして平和祈念の納涼盆踊りなど、盛りだくさんな内容でした。\n\n戦争の記憶を風化させず、平和の尊さを次世代へ繋いでいく大切さを改めて実感しました。\n\n8/8(金)まで開催されていますので、ぜひ足をお運びください！\n\n#北区 #平和祈念",
-          "url": "https://x.com/heartfulshinobu/status/2084837276744630570",
-          "date": "2026-08-05T03:01:55+00:00",
-          "tweet_id": "2084837276744630570",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/amplify_video_thumb/2084837226341597184/img/KRpjgEPzBpLfeCMI.jpg",
-            "https://t.co/5KNQ3SKTxa",
-            "pic.x.com/5KNQ3SKTxa"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/heartfulshinobu/status/2084837276744630570"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/amplify_video_thumb/2084837226341597184/img/KRpjgEPzBpLfeCMI.jpg",
-          "https://t.co/5KNQ3SKTxa",
-          "pic.x.com/5KNQ3SKTxa"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_e248c0323d434a4e"
+      "inbox_id": "inbox_f739e771187a09a5"
     }
   ],
   "selection": {
@@ -373,11 +395,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2084609585370063034",
-      "x:2084754642869899522",
-      "x:2084836795338924470",
-      "x:2084836806629937153",
-      "x:2084837276744630570"
+      "x:2084882173870661845",
+      "x:2084897190804086969",
+      "x:2084902885398323463",
+      "x:2085177951457619990",
+      "x:2085188195344609478"
     ]
   },
   "write_mode": "snapshot_only_default_off",
