@@ -3,7 +3,7 @@
   "generated_by": "おと（Codex）",
   "scope": "ebara_official_20261010",
   "purpose": "2026-10-10 16:54 JST明示承認の荏原第一・第三・第四の3既存開催回のみ。前年detailを2026年公式確認値へ置換。",
-  "preflight_note": "expected_detail_sha256はcollector main c3f007c36063fcd97896484d529a8c4d16d8e501の公開detailから作成。S3正本の最新detailとの照合・dry-run・レビュー・promoteは未実施。正本のハッシュを再確認してから進める。",
+  "preflight_note": "expected_detail_sha256はS3正本の限定診断run 38043810829で得た3件の本文ハッシュ。公開本文は既存変換で別途照合する。detail_and_source_onlyにより日付・会場・状態・確度を維持。成功dry-runと手動レビュー・promoteが必要。",
   "requests": [
     {
       "request_id": "ebara_official_20261010_occ_35fcf0374711a3bd",
@@ -11,9 +11,8 @@
       "occurrence_id": "occ_35fcf0374711a3bd",
       "event_year": 2026,
       "date_start": "2026-10-10",
-      "confidence": "confirmed",
       "detail_replacement": "2026年10月10日（土）、小山台小学校で開催。催事全体は13:00〜18:00。盆踊りの個別開始・終了時刻は未確認。",
-      "expected_detail_sha256": "0deed563f19fa981f1ae186998e06d4b2766b63cd7a5a16030ec4bd250c38439",
+      "expected_detail_sha256": "6d75459be118c1b8442cc9e645211cbf97b738ca643295f6eb4ac7997207d072",
       "source": {
         "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
         "kind": "official_current_year",
@@ -21,7 +20,8 @@
         "title": "品川区民まつり2026（令和8年6月12日更新）",
         "text_excerpt": "荏原第一地区の日時は10月10日（土）午後1時～午後6時、会場は小山台小学校。内容に盆踊りを含む。盆踊りの個別時刻は掲載されていない。"
       },
-      "dry_run_only": true
+      "dry_run_only": true,
+      "detail_and_source_only": true
     },
     {
       "request_id": "ebara_official_20261010_occ_ba6a308f4bcbfff2",
@@ -29,9 +29,8 @@
       "occurrence_id": "occ_ba6a308f4bcbfff2",
       "event_year": 2026,
       "date_start": "2026-10-18",
-      "confidence": "confirmed",
       "detail_replacement": "2026年10月18日（日）、京陽小学校で開催。催事全体は11:00〜15:00。盆踊りの個別開始・終了時刻は未確認。",
-      "expected_detail_sha256": "98b3fd713504c0578cc05d546ced596e5fa8e00cda0fede64634ba77a569dbc2",
+      "expected_detail_sha256": "9c0b17986f7639be8dd90dfd18a197257e49a6255e5c7f8fb74db15cea3630d9",
       "source": {
         "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
         "kind": "official_current_year",
@@ -39,7 +38,8 @@
         "title": "品川区民まつり2026（令和8年6月12日更新）",
         "text_excerpt": "荏原第三地区の日時は10月18日（日）午前11時～午後3時、会場は京陽小学校。内容に盆踊りを含む。盆踊りの個別時刻は掲載されていない。"
       },
-      "dry_run_only": true
+      "dry_run_only": true,
+      "detail_and_source_only": true
     },
     {
       "request_id": "ebara_official_20261010_occ_400f1f551ca689a7",
@@ -47,9 +47,8 @@
       "occurrence_id": "occ_400f1f551ca689a7",
       "event_year": 2026,
       "date_start": "2026-10-11",
-      "confidence": "confirmed",
       "detail_replacement": "2026年10月11日（日）、上神明小学校校庭で開催。催事全体は10:00〜12:00と16:00〜19:30。盆踊りは18:30〜19:15。雨天などによる順延なし。",
-      "expected_detail_sha256": "6497284390b69d85c024add6cc000fbecadb1f59fa0eaca5bd923ba4e372eabb",
+      "expected_detail_sha256": "ba47b63e2674ecc16bfb4ffd642e62b452acbdba553e1a063eb04ac58b5bed24",
       "source": {
         "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/shisetsu-kuyakusyo-chiiki-eba4/shisetsu-kuyakusyo-chiiki-eba4-oshirase/20260911090941.html",
         "kind": "official_current_year",
@@ -57,7 +56,8 @@
         "title": "第48回 荏原第四地区子どもまつり（品川区民まつり）開催のお知らせ（令和8年9月14日更新）",
         "text_excerpt": "令和8年10月11日（日）、上神明小学校校庭。前半10時から正午、後半16時から19時30分。盆踊り18時30分から19時15分。雨天などによる順延なし。"
       },
-      "dry_run_only": true
+      "dry_run_only": true,
+      "detail_and_source_only": true
     }
   ]
 }
