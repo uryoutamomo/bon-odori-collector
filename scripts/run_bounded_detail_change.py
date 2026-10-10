@@ -77,7 +77,8 @@ def validate_requests(control, path):
         source = request["source"]
         require(source["kind"] == "official_current_year" and source["url"] == (FOURTH_URL if identifier == "occ_400f1f551ca689a7" else SUMMARY_URL), "source outside approved official evidence")
         approved = control["scope"][identifier]
-        require(request["detail_replacement"] == approved["detail_replacement"] and request["expected_detail_sha256"] == approved["expected_master_detail_sha256"], "detail differs from approved snapshot")
+        replacement = approved["detail_replacement"] + "\n- 公式URL: " + source["url"]
+        require(request["detail_replacement"] == replacement and request["expected_detail_sha256"] == approved["expected_master_detail_sha256"], "detail differs from approved snapshot")
     if control["stage"] == "apply":
         validate_apply_allowed(payload)
         require(payload.get("reviewed_by") == control["reviewed_by"], "reviewer mismatch")
@@ -107,13 +108,14 @@ def diagnose_master(db, today):
     diagnostics = []
     with sqlite3.connect(db) as conn:
         for identifier, (expected_date, expected_venue) in ALLOWED.items():
-            row = conn.execute("SELECT o.date_start, o.date_end, v.canonical_name, o.detail, o.event_year FROM event_occurrences o LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.occurrence_id=?", (identifier,)).fetchone()
+            row = conn.execute("SELECT o.date_start, o.date_end, v.canonical_name, o.detail, o.event_year, o.source_kind FROM event_occurrences o LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.occurrence_id=?", (identifier,)).fetchone()
             public = projected.get(identifier)
             diagnostics.append({
                 "occurrence_id": identifier,
                 "expected": {"date_start": expected_date, "venue": expected_venue, "event_year": 2026},
                 "master": None if row is None else {"date_start": row[0], "date_end": row[1],
                     "venue": row[2], "event_year": row[4],
+                    "source_kind": row[5],
                     "detail_sha256": hashlib.sha256((row[3] or "").encode()).hexdigest()},
                 "public_projection": None if public is None else {"date_start": public.get("date"),
                     "date_end": public.get("date_end"), "venue": public.get("venue"),
@@ -182,7 +184,7 @@ def bounded_public_rows(before, after, baseline, requests):
         require((target["date"], target["venue"]) == ALLOWED[identifier], f"published identity mismatch: {identifier}")
         request = request_by_id[identifier]
         require(old[identifier]["detail"] == target["detail"], f"master public detail differs from published snapshot: {identifier}")
-        require(new[identifier]["detail"] == request["detail_replacement"], f"replacement did not reach public projection: {identifier}")
+        require(new[identifier]["detail"] == public_detail_text(clean_public_text(request["detail_replacement"])), f"replacement did not reach public projection: {identifier}")
         require(any(source.get("url") == request["source"]["url"] and source.get("kind") == "official" for source in new[identifier]["source_urls"]), f"approved official source absent from projection: {identifier}")
         result.append({"occurrence_id": identifier, "detail": new[identifier]["detail"], "source_urls": new[identifier]["source_urls"]})
     require(len(result) == 3, "public scope incomplete")
