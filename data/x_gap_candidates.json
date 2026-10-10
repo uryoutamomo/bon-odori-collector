@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-10-09T13:26:33.708106+00:00",
+  "generated_at": "2026-10-10T12:41:29.583288+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 354,
+  "archived_count": 353,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -23700,66 +23700,6 @@
       },
       "source_urls": [
         "https://x.com/SNS66524341/status/2076792900260974804"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "daily_candidate_cap"
-    },
-    {
-      "candidate_id": "xgap_1d3d0fc54be5073c",
-      "source_key": "x:2090998447646429261",
-      "lane_hint": "lane2",
-      "candidate_kind": "informal_new_event",
-      "priority_score": 85,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/natsutr_bon/status/2090998447646429261",
-      "source_text": "\n【下町盆踊りフェス2026】\n🏮10/9(金)-12(月祝)📍上野恩賜公園 噴水前広場(台東区)\n\n昨年Tokyo江戸ウィークで行われた下町盆踊りフェスが今年も🎶\n今回はSPECIALゲスト荻野目洋子さん(9日20:00〜)/DJ KOOさん(12日19:30〜)が登場🎊協力:日本盆踊り協会\n\n🔔詳細は今後発表予定\nhttps://t.co/cvY40NmbiA",
-      "source_author": "@natsutr_bon",
-      "source_officiality": {
-        "classification": "unknown_or_personal_social",
-        "score": 2,
-        "handle": "@natsutr_bon",
-        "account_name": "奈津大郎〘ナツタロ〙",
-        "source_type": "",
-        "trust_level": "candidate",
-        "reasons": [
-          "schedule_post_with_bon_context"
-        ],
-        "recommended_action": "find_independent_confirmation"
-      },
-      "date_hints": [
-        "10/9"
-      ],
-      "observed_dates": [
-        "2026-10-09"
-      ],
-      "event_group_key": "informal-venue:301624e8aac988ce",
-      "known_venue_evidence": {
-        "venue": "上野恩賜公園 噴水前広場",
-        "region_hint": "台東区",
-        "address": "台東区上野公園5",
-        "source_url": "https://tokyofesta.com/23ku/32976/"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@natsutr_bon",
-        "name": "奈津大郎〘ナツタロ〙",
-        "profile_description": "およそ30年ぶりの炭坑節が楽しすぎて気がついたときには「盆踊りコ」| 基本構成ナツタロ・ナツジロのツーマンセル | 江東区盆踊連合(自称) | 馬鹿盆会 | 🍆寺島茄子之介音頭 | 祭り | 神輿 | 民謡 | 旅 | ヘッダーイラスト @nyantokonyan 様/ @M125M8qgyhWueHS 様",
-        "title": "",
-        "text": "【下町盆踊りフェス2026】\n🏮10/9(金)-12(月祝)📍上野恩賜公園 噴水前広場(台東区)\n\n昨年Tokyo江戸ウィークで行われた下町盆踊りフェスが今年も🎶\n今回はSPECIALゲスト荻野目洋子さん(9日20:00〜)/DJ KOOさん(12日19:30〜)が登場🎊協力:日本盆踊り協会\n\n🔔詳細は今後発表予定\nhttps://t.co/cvY40NmbiA",
-        "url": "https://x.com/natsutr_bon/status/2090998447646429261",
-        "date": "2026-08-22T03:04:13+00:00",
-        "tweet_id": "2090998447646429261",
-        "tags": [
-          "🟡関心",
-          "q-future-schedule"
-        ],
-        "critique_post": false
-      },
-      "source_urls": [
-        "https://x.com/natsutr_bon/status/2090998447646429261"
       ],
       "source_media_urls": [],
       "corroboration_count": 1,

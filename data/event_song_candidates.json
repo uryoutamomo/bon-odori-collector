@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1762,
+  "count": 1764,
   "public_event_count": 817,
-  "review_count": 945,
+  "review_count": 947,
   "candidates": [
     {
       "id": "4fbaa26988db7546",
@@ -71,6 +71,57 @@
           "url": "https://x.com/bonodori_tais/status/2071598413871989091",
           "date": "2026-06-29T14:15:24+00:00",
           "text": "第16回 鴨台盆踊り 2026\n第16回鴨台盆踊り実行委員会です🏮\n\n📣【今年の曲目発表】📣\n\n第16回鴨台盆踊り当日の曲目を発表します！\n今年は曲目が増えたほか、あっぱれ音頭や正調よさこいなど新たな楽曲、試みもあります💖\nぜひ踊りに来てください🕺\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　#盆オドラー https://t.co/T8LJwgc2UG"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "5b9949c5071ab30b",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "盆踊りフェス",
+      "venue": "ゆうぽうと世田谷レクセンター 駐車場",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=8enYl7qDNt0",
+          "date": "2026-10-09T22:00:36+00:00",
+          "text": "和太鼓お祭りCH\n【荻野目洋子 本人登場・生歌で大熱狂！】盆踊り終了後のダンシング・ヒーローで会場さらに大盛り上がり！　上野公園 「下町盆踊りフェス」　2026年10月9日\n2026年10月9日に上野恩賜公園で開催された「下町盆踊りフェス」の様子です。\nなんと荻野目洋子さんご本人が登場！ （撮影NG）\n大ヒット曲「コーヒールンバ」「ダンシング・ヒーロー」の生歌を披露され、会場全体が一体となって最高潮の熱気に包まれました。\n 生歌終了後の熱気あふれる盆踊り会場の雰囲気をぜひお楽しみください！\n\n【イベント詳細】 \n・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園 \n・曲名：ダンシング・ヒーロー（荻野目洋子）\n\n和太鼓お祭りチャンネルでは、\n日本各地のお祭りや盆踊り、\n和太鼓演奏の熱気をお届けしています。 \nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n#ダンシングヒーロー #荻野"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "1f34b35f316ab01b",
+      "song_name": "東京音頭",
+      "event_name": "盆踊りフェス",
+      "venue": "ゆうぽうと世田谷レクセンター 駐車場",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BeND29eEKGs",
+          "date": "2026-10-10T12:00:24+00:00",
+          "text": "和太鼓お祭りCH\n【マツケンサンバⅡ】（松平健）　上野公園「下町盆踊りフェス」２　2026年10月9日　東京都台東区\n2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eE"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0cdzD9xAmWA",
+          "date": "2026-10-10T09:00:09+00:00",
+          "text": "和太鼓お祭りCH\n【東京音頭】（原田直之）　上野公園「下町盆踊りフェス」１　2026年10月9日　東京都台東区\n2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs"
         }
       ],
       "already_public": false,
@@ -57811,6 +57862,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=nYktVpHWdYQ",
+          "date": "2026-10-10T09:30:23+00:00",
+          "text": "Tokyo Lonely Walker\n[4K]渋谷 盆ダンス Bon Jovi ｜夜の踊り子｜ダンシングヒーロー｜東京音頭｜炭坑節 他 鳳蝶美成 / SHIBUYA MIYASHITA PARK BON DANCE 2026 🇯🇵\n渋谷のミヤシタパークで「SHIBUYA MIYASHITA PARK BON DANCE 2026」が開催されました！\n鳳蝶美成さんによる盆踊り（盆ジョヴィ）には今年も多くの人が集まり、大いに盛り上がりました！\n\n“SHIBUYA MIYASHITA PARK BON DANCE 2026” was held at Miyashita Park in Shibuya! Once again this year, a large crowd gathered for the Bon dance led by Bijyo Ageha, and the atmosphere was electric! \n"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/shorts/G-7qMEVYWWU",
           "date": "2026-09-29T13:00:12+00:00",
           "text": "Tokyo Hz\n😆The Floor Was Shaking from All the Dancing! | SHIBUYA MIYASHITA PARK BON DANCE 2026 in Tokyo\n🎵You can listen to Tokyo Hz's songs on Spotify and other music streaming platforms!\nhttps://linktr.ee/tokyohertz\n\n#Tokyo #Japan #MiyashitaPark #MiyashitaParkBonDance #MiyashitaParkBonDance2026 #Shibuya #ShibuyaBonDance #ShibuyaBonOdori #BonDance #BonOdori #SummerFestival #SummerEvent #FallEvent #AutumnEvent #Festiva"
@@ -57859,7 +57916,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 8
+      "evidence_count": 9
     },
     {
       "id": "c2b7361f744a8487",
@@ -57922,6 +57979,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=nYktVpHWdYQ",
+          "date": "2026-10-10T09:30:23+00:00",
+          "text": "Tokyo Lonely Walker\n[4K]渋谷 盆ダンス Bon Jovi ｜夜の踊り子｜ダンシングヒーロー｜東京音頭｜炭坑節 他 鳳蝶美成 / SHIBUYA MIYASHITA PARK BON DANCE 2026 🇯🇵\n渋谷のミヤシタパークで「SHIBUYA MIYASHITA PARK BON DANCE 2026」が開催されました！\n鳳蝶美成さんによる盆踊り（盆ジョヴィ）には今年も多くの人が集まり、大いに盛り上がりました！\n\n“SHIBUYA MIYASHITA PARK BON DANCE 2026” was held at Miyashita Park in Shibuya! Once again this year, a large crowd gathered for the Bon dance led by Bijyo Ageha, and the atmosphere was electric! \n"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=t64KZSUomf4",
           "date": "2025-09-28T06:00:47Z",
           "text": "Urban Walk\n渋谷宮下パークBON DANCE 2025 / 治安の悪い渋谷の公園も今は昔!! 人が集まる一大スポットに!! / SHIBUYA MIYASHITA PARK BON DANCE 2025\n#宮下パーク盆踊り #ultrasoul #盆踊り #Bz #渋谷 #宮下公園 #bondance \n\n00:00　渋谷宮下パーク盆踊り\n00:21　夢見る渋谷\n05:55　レクチャー\n07:25　September\n11:57　レクチャー\n12:40　群青\n17:39　炭坑節\n21:21　ギザギザハートの子守歌\n26:20　八木節\n29:53　EZ DO DANCE\n34:26　ultra soul\n37:56　東京音頭\n41:29　レクチャー\n42:29　ダンシングヒーロー\n46:45　Livin' On A Prayer\n\n\n【渋谷宮下パーク盆踊り 2025】\n開催日：2025年9月27日 - 9月28日\n場所："
@@ -57934,7 +57997,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "id": "040fc8ef8f9612b7",
@@ -57952,13 +58015,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=nYktVpHWdYQ",
+          "date": "2026-10-10T09:30:23+00:00",
+          "text": "Tokyo Lonely Walker\n[4K]渋谷 盆ダンス Bon Jovi ｜夜の踊り子｜ダンシングヒーロー｜東京音頭｜炭坑節 他 鳳蝶美成 / SHIBUYA MIYASHITA PARK BON DANCE 2026 🇯🇵\n渋谷のミヤシタパークで「SHIBUYA MIYASHITA PARK BON DANCE 2026」が開催されました！\n鳳蝶美成さんによる盆踊り（盆ジョヴィ）には今年も多くの人が集まり、大いに盛り上がりました！\n\n“SHIBUYA MIYASHITA PARK BON DANCE 2026” was held at Miyashita Park in Shibuya! Once again this year, a large crowd gathered for the Bon dance led by Bijyo Ageha, and the atmosphere was electric! \n"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=t64KZSUomf4",
           "date": "2025-09-28T06:00:47Z",
           "text": "Urban Walk\n渋谷宮下パークBON DANCE 2025 / 治安の悪い渋谷の公園も今は昔!! 人が集まる一大スポットに!! / SHIBUYA MIYASHITA PARK BON DANCE 2025\n#宮下パーク盆踊り #ultrasoul #盆踊り #Bz #渋谷 #宮下公園 #bondance \n\n00:00　渋谷宮下パーク盆踊り\n00:21　夢見る渋谷\n05:55　レクチャー\n07:25　September\n11:57　レクチャー\n12:40　群青\n17:39　炭坑節\n21:21　ギザギザハートの子守歌\n26:20　八木節\n29:53　EZ DO DANCE\n34:26　ultra soul\n37:56　東京音頭\n41:29　レクチャー\n42:29　ダンシングヒーロー\n46:45　Livin' On A Prayer\n\n\n【渋谷宮下パーク盆踊り 2025】\n開催日：2025年9月27日 - 9月28日\n場所："
         }
       ],
       "already_public": true,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "cf8dd0a53640fcf8",
