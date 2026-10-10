@@ -1,9 +1,9 @@
 {
   "operation": "ebara_official_20261010",
-  "stage": "dry_run",
-  "request_ref": "6684d63d2e076e05539186faca09c4a88d13fed3",
-  "request_path": "data/change_requests/ebara_official_20261010.json",
-  "request_sha256": "62c97d5ca3d223d8477a1d2a5f8b8db991f6604c32c9e0a01fc96bd50c8771be",
+  "stage": "apply",
+  "request_ref": "b3c9c47a1754a6544d92d17bbf03d71589de8765",
+  "request_path": "data/change_requests/ebara_official_20261010_reviewed.json",
+  "request_sha256": "d293974d197f01f9de0c535ea58bfd349e89e9a5a5a4895f2c5c1bf967300df5",
   "collector_public_sha256": "ed36b9f51cb685a7177f460bd3e54eac60f34ad2543fc572ef91a71e62117769",
   "scope": {
     "occ_35fcf0374711a3bd": {
@@ -21,5 +21,9 @@
       "expected_detail_sha256": "6497284390b69d85c024add6cc000fbecadb1f59fa0eaca5bd923ba4e372eabb",
       "expected_master_detail_sha256": "ba47b63e2674ecc16bfb4ffd642e62b452acbdba553e1a063eb04ac58b5bed24"
     }
-  }
+  },
+  "expected_remote_checksum": "835e32c8541f6418f8d43307c876ee4042d3d8ecf28973a82f85dbbe967876ee",
+  "reviewed_run_id": 38045440808,
+  "reviewed_by": "おと（Codex）",
+  "review_note": "実正本dry-run 38045440808成功とreceiptを照合。3件の変更はdetail/updated_at、第四のみsource_urlも変更。公式根拠・リンク各3件追加。日程表・日付・会場・状態・確度・source_kind・対象外DBは無変更。公開差分detail/source_urlsのみ。本人承認済み本番適用。"
 }
