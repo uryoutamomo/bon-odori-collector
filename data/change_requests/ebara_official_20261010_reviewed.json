@@ -1,0 +1,75 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_by": "scripts/promote_change_requests_for_review.py",
+  "scope": "ebara_official_20261010_reviewed",
+  "purpose": "2026-10-10 16:54 JST明示承認の荏原第一・第三・第四の3既存開催回のみ。前年detailを2026年公式確認値へ置換。",
+  "preflight_note": "expected_detail_sha256はS3正本の限定診断run 38043810829の3件の本文ハッシュ。公開本文は既存変換で別照合。公式URL行は既存の公式根拠抽出契約を使い、公開本文には含まれない。detail_and_source_onlyで日付・会場・状態・確度・source_kindを維持。成功dry-runと手動レビュー・promoteが必要。",
+  "requests": [
+    {
+      "request_id": "ebara_official_20261010_occ_35fcf0374711a3bd",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_35fcf0374711a3bd",
+      "event_year": 2026,
+      "date_start": "2026-10-10",
+      "detail_replacement": "2026年10月10日（土）、小山台小学校で開催。催事全体は13:00〜18:00。盆踊りの個別開始・終了時刻は未確認。\n- 公式URL: https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "expected_detail_sha256": "6d75459be118c1b8442cc9e645211cbf97b738ca643295f6eb4ac7997207d072",
+      "source": {
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "品川区民まつり2026（令和8年6月12日更新）",
+        "text_excerpt": "荏原第一地区の日時は10月10日（土）午後1時～午後6時、会場は小山台小学校。内容に盆踊りを含む。盆踊りの個別時刻は掲載されていない。"
+      },
+      "detail_and_source_only": true,
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:41:18.318469+00:00",
+      "review_note": "実正本dry-run 38045440808成功とreceiptを照合。3件の変更はdetail/updated_at、第四のみsource_urlも変更。公式根拠・リンク各3件追加。日程表・日付・会場・状態・確度・source_kind・対象外DBは無変更。公開差分detail/source_urlsのみ。本人承認済み本番適用。"
+    },
+    {
+      "request_id": "ebara_official_20261010_occ_ba6a308f4bcbfff2",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_ba6a308f4bcbfff2",
+      "event_year": 2026,
+      "date_start": "2026-10-18",
+      "detail_replacement": "2026年10月18日（日）、京陽小学校で開催。催事全体は11:00〜15:00。盆踊りの個別開始・終了時刻は未確認。\n- 公式URL: https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "expected_detail_sha256": "9c0b17986f7639be8dd90dfd18a197257e49a6255e5c7f8fb74db15cea3630d9",
+      "source": {
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "品川区民まつり2026（令和8年6月12日更新）",
+        "text_excerpt": "荏原第三地区の日時は10月18日（日）午前11時～午後3時、会場は京陽小学校。内容に盆踊りを含む。盆踊りの個別時刻は掲載されていない。"
+      },
+      "detail_and_source_only": true,
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:41:18.318469+00:00",
+      "review_note": "実正本dry-run 38045440808成功とreceiptを照合。3件の変更はdetail/updated_at、第四のみsource_urlも変更。公式根拠・リンク各3件追加。日程表・日付・会場・状態・確度・source_kind・対象外DBは無変更。公開差分detail/source_urlsのみ。本人承認済み本番適用。"
+    },
+    {
+      "request_id": "ebara_official_20261010_occ_400f1f551ca689a7",
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_400f1f551ca689a7",
+      "event_year": 2026,
+      "date_start": "2026-10-11",
+      "detail_replacement": "2026年10月11日（日）、上神明小学校校庭で開催。催事全体は10:00〜12:00と16:00〜19:30。盆踊りは18:30〜19:15。雨天などによる順延なし。\n- 公式URL: https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/shisetsu-kuyakusyo-chiiki-eba4/shisetsu-kuyakusyo-chiiki-eba4-oshirase/20260911090941.html",
+      "expected_detail_sha256": "ba47b63e2674ecc16bfb4ffd642e62b452acbdba553e1a063eb04ac58b5bed24",
+      "source": {
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/shisetsu-kuyakusyo-chiiki-eba4/shisetsu-kuyakusyo-chiiki-eba4-oshirase/20260911090941.html",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "第48回 荏原第四地区子どもまつり（品川区民まつり）開催のお知らせ（令和8年9月14日更新）",
+        "text_excerpt": "令和8年10月11日（日）、上神明小学校校庭。前半10時から正午、後半16時から19時30分。盆踊り18時30分から19時15分。雨天などによる順延なし。"
+      },
+      "detail_and_source_only": true,
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:41:18.318469+00:00",
+      "review_note": "実正本dry-run 38045440808成功とreceiptを照合。3件の変更はdetail/updated_at、第四のみsource_urlも変更。公式根拠・リンク各3件追加。日程表・日付・会場・状態・確度・source_kind・対象外DBは無変更。公開差分detail/source_urlsのみ。本人承認済み本番適用。"
+    }
+  ],
+  "source_generated_by": "おと（Codex）",
+  "reviewed_by": "おと（Codex）",
+  "reviewed_at": "2026-10-10T10:41:18.318469+00:00",
+  "review_note": "実正本dry-run 38045440808成功とreceiptを照合。3件の変更はdetail/updated_at、第四のみsource_urlも変更。公式根拠・リンク各3件追加。日程表・日付・会場・状態・確度・source_kind・対象外DBは無変更。公開差分detail/source_urlsのみ。本人承認済み本番適用。",
+  "source_request_count": 3,
+  "approved_request_count": 3
+}
