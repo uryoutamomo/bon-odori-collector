@@ -23,7 +23,10 @@ def control():
     value.update(stage='dry_run', request_path='data/change_requests/ebara_official_20261010.json')
     for key in ('expected_remote_checksum', 'reviewed_run_id', 'reviewed_by', 'review_note'):
         value.pop(key, None)
-    for scope in value['scope'].values():
+    published = {row['occurrence_id']: row for row in json.loads((ROOT / 'data/public/events_public.json').read_text())}
+    # Fixture snapshots follow the current public data, independently of the frozen operation pins.
+    for identifier, scope in value['scope'].items():
+        scope['expected_detail_sha256'] = hashlib.sha256(published[identifier]['detail'].encode()).hexdigest()
         scope['expected_master_detail_sha256'] = scope['expected_detail_sha256']
     return value
 

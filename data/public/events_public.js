@@ -15574,11 +15574,11 @@ const EVENTS = [
       "10": "中旬"
     },
     "description": "上神明小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-11-02 開催実績。2025 11/2。「品川区民まつり 荏原第四地区」11月2日(日) 10時-12時、16時-19:30。 「オープニングイベント・模擬店・盆踊り・子どもコーナー・花火 ほか」。 踊りは18:30-19:15。 (10/17 踊りの時間を追記)",
+    "detail": "2026年10月11日（日）、上神明小学校校庭で開催。催事全体は10:00〜12:00と16:00〜19:30。盆踊りは18:30〜19:15。雨天などによる順延なし。",
     "source_urls": [
       {
         "label": "公式告知あり",
-        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/shisetsu-kuyakusyo-chiiki-eba4/shisetsu-kuyakusyo-chiiki-eba4-oshirase/20260911090941.html",
         "kind": "official"
       }
     ],
@@ -15636,7 +15636,7 @@ const EVENTS = [
       "10": "中旬"
     },
     "description": "京陽小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-10-19 開催実績。2025 10/19。「品川区民まつり 荏原第三地区」10月19日(日) 11時-15:30。 「模擬店・盆踊り ほか」。 盆踊りは ①12:00-12:30、 ②12:50-13:20、 ③14:35-15:05。 (10/16 踊りの時間帯を追記)",
+    "detail": "2026年10月18日（日）、京陽小学校で開催。催事全体は11:00〜15:00。盆踊りの個別開始・終了時刻は未確認。",
     "source_urls": [
       {
         "label": "公式告知あり",
@@ -16199,13 +16199,12 @@ const EVENTS = [
       "10": "上旬"
     },
     "description": "小山台小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 荏原第一地区」7月26日(土) 14時-19時。 盆踊りは17:30-18:30。",
+    "detail": "2026年10月10日（土）、小山台小学校で開催。催事全体は13:00〜18:00。盆踊りの個別開始・終了時刻は未確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
