@@ -105,6 +105,7 @@ def test_projection_guard_preserves_membership_and_rejects_unrelated_fields():
     indexed = {row['occurrence_id']: row for row in proposed}
     for request in requests:
         indexed[request['occurrence_id']]['detail'] = request['detail_replacement']
+        indexed[request['occurrence_id']]['source_urls'] = [{'url': request['source']['url'], 'kind': 'official'}]
     rows = bounded_public_rows(current, proposed, current, requests)
     assert len(rows) == 3
     scoped = indexed[requests[0]['occurrence_id']]
@@ -201,6 +202,9 @@ def integration_fixture(tmp_path, monkeypatch, stage):
             for row in result:
                 raw = conn.execute('SELECT detail FROM event_occurrences WHERE occurrence_id=?', (row['occurrence_id'],)).fetchone()[0]
                 row['detail'] = public_detail_text(clean_public_text(raw))
+                source_url = conn.execute('SELECT source_url FROM event_occurrences WHERE occurrence_id=?', (row['occurrence_id'],)).fetchone()[0]
+                if source_url:
+                    row['source_urls'] = [{'url': source_url, 'kind': 'official'}]
         return result
     monkeypatch.setattr(module, 'project', projected)
     calls = []

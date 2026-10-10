@@ -183,6 +183,7 @@ def bounded_public_rows(before, after, baseline, requests):
         request = request_by_id[identifier]
         require(old[identifier]["detail"] == target["detail"], f"master public detail differs from published snapshot: {identifier}")
         require(new[identifier]["detail"] == request["detail_replacement"], f"replacement did not reach public projection: {identifier}")
+        require(any(source.get("url") == request["source"]["url"] and source.get("kind") == "official" for source in new[identifier]["source_urls"]), f"approved official source absent from projection: {identifier}")
         result.append({"occurrence_id": identifier, "detail": new[identifier]["detail"], "source_urls": new[identifier]["source_urls"]})
     require(len(result) == 3, "public scope incomplete")
     return sorted(result, key=lambda r: r["occurrence_id"])

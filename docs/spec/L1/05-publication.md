@@ -55,7 +55,7 @@ verified_by:
   - tests/test_verify_occurrence_identity_migration.py
   - tests/test_public_event_sync_occurrence_identity.py
   - tests/test_verify_official_source_link_projection.py
-updated_for: 32463702
+updated_for: ec23ff300613fc9f8be3a27ac2cb4d74656116a3
 ---
 
 # 公開サブシステム
@@ -332,7 +332,7 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 
 ### INV-PUB-015 当年のtyped公式Web出典を公開へ保持する
 
-- **内容**: RDB `official_current_year` の公開可能なWeb URLは、`data/public_official_source_links.json` の確認済み開催回ID・年・日付・URL組と完全一致した場合だけ `source_urls` のofficial primaryへ昇格する。同URLのweb/単独匿名web count1は昇格し、複数匿名countは保持する。古い長い公式URLに後処理が戻さない。一般web/Notion/X/YouTube/除外URLから公式を推測しない。未確認typed分類だけでは昇格させず、既存非公式countを推測減算しない。Xの旧official誤分類は公開クリック導線から外す。noticeはhostnameの完全一致またはサブドメイン境界で判定する。
+- **内容**: RDB `official_current_year` の公開可能なWeb URLは、`data/public_official_source_links.json` の確認済み開催回ID・年・日付・URL組と完全一致した場合だけ `source_urls` のofficial primaryへ昇格する。同URLのweb/単独匿名web count1は昇格し、複数匿名countは保持する。古い長い公式URLに後処理が戻さない。一般web/Notion/X/YouTube/除外URLから公式を推測しない。荏原3件の2026年説明訂正では、第一の当年一覧URLと第四の当年詳細URLを対象開催回だけのレビュー記録へ登録し、第三の既存記録を維持する。bounded detail receiptは3件の承認済み公式URLが公開projectionに届くことも検証する。未確認typed分類だけでは昇格させず、既存非公式countを推測減算しない。Xの旧official誤分類は公開クリック導線から外す。noticeはhostnameの完全一致またはサブドメイン境界で判定する。
 - **なぜ**: current-year official分類がexportの早期returnでwebへ落ちると、公開カードの公式告知ボタンから主催者・自治体の最新情報へ辿れないため。
 - **破れたときの症状**: 公式当年根拠がRDBにあってもリンクが隠れる、古い根拠を開く、非公式リンクを公式と誤認する。
 - **守っているコード**: `export_public_events.py::_rdb_source_urls/collapse_public_source_urls`。DB-bound固定入力検証は `scripts/verify_official_source_link_projection.py`。

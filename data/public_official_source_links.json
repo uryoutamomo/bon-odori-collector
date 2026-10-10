@@ -27,10 +27,10 @@
       "event_year": 2026,
       "date_start": "2026-10-11",
       "date_end": "",
-      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/shisetsu-kuyakusyo-chiiki-eba4/shisetsu-kuyakusyo-chiiki-eba4-oshirase/20260911090941.html",
       "reviewed_by": "おと（Codex）",
-      "reviewed_at": "2026-10-03T05:44:38.008568+00:00",
-      "review_note": "当年の主催者・自治体一次ページで行事・日付・会場を照合。時刻の確認根拠へは昇格しない。"
+      "reviewed_at": "2026-10-10T10:18:51.546555+00:00",
+      "review_note": "2026年9月14日更新の区公式ページで当年の開催日・会場・催事時間・盆踊り時間を照合。承認済み3件の説明・公式根拠訂正。"
     },
     {
       "occurrence_id": "occ_40cdf5e107977db7",
@@ -141,6 +141,16 @@
       "reviewed_by": "おと（Codex）",
       "reviewed_at": "2026-10-08T11:11:32.999607+00:00",
       "review_note": "主催公式サイトの開催日時・場所を照合。既存2026開催回を確認し、2025年非公式出典を置換。催事全体営業時間を盆踊りの個別時間にはしない。"
+    },
+    {
+      "occurrence_id": "occ_35fcf0374711a3bd",
+      "event_year": 2026,
+      "date_start": "2026-10-10",
+      "date_end": "",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:18:51.546555+00:00",
+      "review_note": "2026年6月12日更新の区公式一覧で当年の開催日・会場・催事全体の時間を照合。盆踊り個別時刻は未確認。承認済み3件の説明・公式根拠訂正。"
     }
   ],
   "legacy_preserved": [
