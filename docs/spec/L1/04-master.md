@@ -68,7 +68,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_scoped_song_retraction.py
-updated_for: afd79fdcef5783db5340281b4b2069cfa4c38beb
+updated_for: ec23ff300613fc9f8be3a27ac2cb4d74656116a3
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -173,6 +173,9 @@ updated_for: afd79fdcef5783db5340281b4b2069cfa4c38beb
   `detail_replacement` と旧本文のUTF-8 SHA-256 `expected_detail_sha256` を添える。
   書込みトランザクション内で旧本文の一致を確認し、不一致なら日程・会場・根拠も変更せず
   high issueで停止する。既に本文が置換後の文面と一致する場合だけ再実行を許す。
+  `detail_and_source_only: true` は、当年日付が既存値と意味上同一の場合に限り、
+  detail/source_url/updated_atと公式根拠だけを更新する。日付・会場・状態・確度と
+  occurrence_datesは更新しない。confidence・venue・prediction等の併用を拒否する。
 - **なぜ**: RDBは公開・メール・レビューすべての土台なので、壊れたときの影響範囲が最も広い。
   「試すつもりが本番に入った」を構造的に起こせなくしてある。
 - **破れたときの症状**: 検証目的の実行が本番RDBを書き換える。
@@ -351,8 +354,11 @@ updated_for: afd79fdcef5783db5340281b4b2069cfa4c38beb
 - **内容**: `bounded-detail-change.yml` はmainへの専用workflow・control変更push、またはmainの手動dispatchで起動する。通常CIと本番操作を混同しない。初期controlは `dry_run`。固定commitのJSONだけを読み、正本の既存detail hash・日付・会場を照合してから既存 `apply_change_requests` でコピーへ適用する。正本の成功dry-run証跡をこと、またはおとが代替レビューした後に既存promote処理を手動実行し、reviewed JSON、レビューrun ID・担当者・理由・正本checksumを明記したapply controlをレビューしてmainへ反映する。apply時も再dry-run・全DB対象外差分・公開projection差分を検査し、CASと再取得checksum/parity検証を通す。
 - **なぜ**: 手動dispatchできない接続でも、既存のmain限定AWSロールで工程を明示的に実行できる。機械検査だけを人レビュー済みと誤認せず、並行作業の正本変更と無関係な公開更新を拒否する。
 - **破れたときの症状**: 古いsnapshotを正本へ上書きする／荏原以外の公開記述まで変わる／dry-runのつもりで本番更新する。
-- **守っているコード**: `scripts/run_bounded_detail_change.py` の `validate_control`、`validate_requests`、`inspect_master`、`verify_db_scope`、`bounded_public_rows`、`execute`。本番のSQLite操作は新造せず `report_apply.apply_change_requests` に委譲する。許容DB差分は3開催回とその日程・根拠のみ、公開差分は3件のdetail/source_urlsのみ。SQLiteをartifactへ含めず、成功receiptの3公開行をcollector/siteのレビュー済みcommitと既存deployへ渡す。workflow自体は公開・収集・メール送信をしない。
+- **守っているコード**: `scripts/run_bounded_detail_change.py` の `validate_control`、`validate_requests`、`inspect_master`、`verify_db_scope`、`bounded_public_rows`、`execute`。本番のSQLite操作は新造せず `report_apply.apply_change_requests` に委譲する。許容DB差分は3開催回のdetail/source_url/updated_atと今回の根拠のみ。日程表・その他の開催回列は値も維持、公開差分は3件のdetail/source_urlsのみ。SQLiteをartifactへ含めず、成功receiptの3公開行をcollector/siteのレビュー済みcommitと既存deployへ渡す。workflow自体は公開・収集・メール送信をしない。
 - **守っているテスト**: `tests/test_bounded_detail_change.py::test_control_rejects_apply_without_review_and_expansion`、`tests/test_bounded_detail_change.py::test_requests_are_pinned_and_no_new_venue_or_date_changes`、`tests/test_bounded_detail_change.py::test_whole_database_guard_detects_unrelated_mutation_and_deletion`、`tests/test_bounded_detail_change.py::test_projection_guard_preserves_membership_and_rejects_unrelated_fields`、`tests/test_bounded_detail_change.py::test_master_snapshot_requires_old_hash_and_verified_venue`、`tests/test_bounded_detail_change.py::test_cloud_dry_run_does_not_publish_or_mutate_master`、`tests/test_bounded_detail_change.py::test_cloud_apply_uses_cas_and_refetch_without_collection`、`tests/test_bounded_detail_change.py::test_cloud_apply_rejects_remote_change_since_manual_review`、`tests/test_bounded_detail_change.py::test_dedicated_workflow_has_only_existing_permissions_and_main_triggers`
+
+正本本文のCAS hashと公開本文hashを区別し、既存のclean_public_text/public_detail_text変換と全projectionの結果を既存公開本文へ照合する。未設定date_endの空文字は受け入れるが、その値も更新しない。receiptには3件の変更列名と一致判定だけを記録する。
+`test_guard_rejects_fact_changes_within_approved_occurrences`、`test_detail_only_mode_refuses_schedule_change_before_evidence`、`test_master_public_comparison_refuses_changed_public_detail` がこの制約を検証する。
 
 不一致時もapply前に止める。`diagnose_master` は許可された3開催回だけの
 日付・会場・年・detail SHA-256と、同じ公開projectionの値を出す。本文やDB全体は

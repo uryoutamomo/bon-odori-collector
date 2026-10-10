@@ -17,7 +17,7 @@ from master_rdb.master_db import file_sha256
 from report_apply.apply_change_requests import (
     _source_evidence_id, run as apply_requests, validate_apply_allowed, validate_payload,
 )
-from export_public_events import build_public_events, load_public_projection_inputs, project_public_events
+from export_public_events import build_public_events, load_public_projection_inputs, project_public_events, clean_public_text, public_detail_text
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,6 +50,9 @@ def validate_control(control):
     require(set(control.get("scope", {})) == set(ALLOWED), "scope must contain exactly the three approved occurrences")
     for field in ("request_sha256", "collector_public_sha256"):
         require(re.fullmatch(r"[0-9a-f]{64}", control.get(field, "")), f"invalid {field}")
+    for scope in control["scope"].values():
+        for field in ("expected_detail_sha256", "expected_master_detail_sha256"):
+            require(re.fullmatch(r"[0-9a-f]{64}", scope.get(field, "")), f"invalid scoped {field}")
     if control["stage"] == "apply":
         require(control["request_path"].endswith("_reviewed.json"), "apply requires reviewed requests")
         require(re.fullmatch(r"[0-9a-f]{64}", control.get("expected_remote_checksum", "")), "apply requires reviewed remote checksum")
@@ -68,13 +71,13 @@ def validate_requests(control, path):
         identifier = request["occurrence_id"]
         require(request["change_type"] == "confirm_current_year_date", "only finite date/detail confirmation is supported")
         require(request["event_year"] == 2026 and request["date_start"] == ALLOWED[identifier][0], "date changes are outside scope")
-        require(request.get("confidence") == "confirmed", "confidence changes are outside scope")
+        require(request.get("detail_and_source_only") is True and "confidence" not in request, "occurrence facts must be preserved")
         require(request.get("date_end") in {None, request["date_start"]}, "date range changes are outside scope")
         require(not any(k in request for k in ("venue", "predicted_date_id", "expected_source_url")), "unsupported side effects")
         source = request["source"]
         require(source["kind"] == "official_current_year" and source["url"] == (FOURTH_URL if identifier == "occ_400f1f551ca689a7" else SUMMARY_URL), "source outside approved official evidence")
         approved = control["scope"][identifier]
-        require(request["detail_replacement"] == approved["detail_replacement"] and request["expected_detail_sha256"] == approved["expected_detail_sha256"], "detail differs from approved snapshot")
+        require(request["detail_replacement"] == approved["detail_replacement"] and request["expected_detail_sha256"] == approved["expected_master_detail_sha256"], "detail differs from approved snapshot")
     if control["stage"] == "apply":
         validate_apply_allowed(payload)
         require(payload.get("reviewed_by") == control["reviewed_by"], "reviewer mismatch")
@@ -83,15 +86,18 @@ def validate_requests(control, path):
     return payload
 
 
-def inspect_master(db, requests):
+def inspect_master(db, requests, approved=None):
     with sqlite3.connect(db) as conn:
         for request in requests:
             identifier = request["occurrence_id"]
             row = conn.execute("SELECT o.date_start, o.date_end, v.canonical_name, o.detail, o.event_year FROM event_occurrences o LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.occurrence_id=?", (identifier,)).fetchone()
             require(row is not None, f"missing occurrence: {identifier}")
-            require((row[0], row[2]) == ALLOWED[identifier] and row[1] in {None, row[0]} and row[4] == 2026, f"master date/venue mismatch: {identifier}")
+            require((row[0], row[2]) == ALLOWED[identifier] and row[1] in {None, "", row[0]} and row[4] == 2026, f"master date/venue mismatch: {identifier}")
             current_hash = hashlib.sha256((row[3] or "").encode()).hexdigest()
             require(current_hash == request["expected_detail_sha256"], f"master detail hash mismatch: {identifier}")
+            if approved is not None:
+                public_hash = hashlib.sha256(public_detail_text(clean_public_text(row[3])).encode()).hexdigest()
+                require(public_hash == approved[identifier]["expected_detail_sha256"], f"master public detail mismatch: {identifier}")
 
 
 def diagnose_master(db, today):
@@ -123,7 +129,6 @@ def verify_db_scope(before, after, requests):
     evidence_ids = sorted(_source_evidence_id(r) for r in requests)
     restrictions = {
         "event_occurrences": ("occurrence_id", identifiers),
-        "occurrence_dates": ("occurrence_id", identifiers),
         "occurrence_evidence_links": ("occurrence_id", identifiers),
         "evidence_items": ("evidence_id", evidence_ids),
     }
@@ -142,6 +147,13 @@ def verify_db_scope(before, after, requests):
             count = conn.execute(f"SELECT COUNT(*) FROM (SELECT * FROM main.{quoted} EXCEPT SELECT * FROM before.{quoted})").fetchone()[0]
             if count:
                 differences[table] = count
+        for identifier in identifiers:
+            conn.row_factory = sqlite3.Row
+            old = conn.execute("SELECT * FROM before.event_occurrences WHERE occurrence_id=?", (identifier,)).fetchone()
+            new = conn.execute("SELECT * FROM main.event_occurrences WHERE occurrence_id=?", (identifier,)).fetchone()
+            require(old is not None and new is not None, f"occurrence membership changed: {identifier}")
+            changed = sorted(key for key in old.keys() if old[key] != new[key])
+            require(set(changed) <= {"detail", "source_url", "updated_at"}, f"occurrence fact changed: {identifier}")
     return differences
 
 
@@ -169,7 +181,7 @@ def bounded_public_rows(before, after, baseline, requests):
         target = published[identifier]
         require((target["date"], target["venue"]) == ALLOWED[identifier], f"published identity mismatch: {identifier}")
         request = request_by_id[identifier]
-        require(hashlib.sha256(target["detail"].encode()).hexdigest() == request["expected_detail_sha256"], f"published detail snapshot mismatch: {identifier}")
+        require(old[identifier]["detail"] == target["detail"], f"master public detail differs from published snapshot: {identifier}")
         require(new[identifier]["detail"] == request["detail_replacement"], f"replacement did not reach public projection: {identifier}")
         result.append({"occurrence_id": identifier, "detail": new[identifier]["detail"], "source_urls": new[identifier]["source_urls"]})
     require(len(result) == 3, "public scope incomplete")
@@ -189,7 +201,7 @@ def execute(args):
     diagnostics = diagnose_master(args.master_db, args.today)
     (args.output / "diagnostics.json").write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n")
     print("BOUNDED_DETAIL_DIAGNOSTICS=" + json.dumps(diagnostics, ensure_ascii=False, separators=(",", ":")), flush=True)
-    inspect_master(args.master_db, payload["requests"])
+    inspect_master(args.master_db, payload["requests"], control["scope"])
     baseline_db = args.output / "before.sqlite"
     shutil.copy2(args.master_db, baseline_db)
     dry_db = args.output / "dry-run.sqlite"
@@ -202,9 +214,17 @@ def execute(args):
     require(not result["issues"] and not result["audit"]["issues_by_severity"].get("high")
         and len(result["applied"]["requests_applied"]) == 3, "dry-run did not resolve exactly three requests or audit failed")
     db_changes = verify_db_scope(baseline_db, dry_db, payload["requests"])
+    with sqlite3.connect(dry_db) as conn:
+        conn.row_factory = sqlite3.Row
+        conn.execute("ATTACH DATABASE ? AS before", (str(baseline_db),))
+        occurrence_columns = {}
+        for identifier in ALLOWED:
+            old = conn.execute("SELECT * FROM before.event_occurrences WHERE occurrence_id=?", (identifier,)).fetchone()
+            new = conn.execute("SELECT * FROM main.event_occurrences WHERE occurrence_id=?", (identifier,)).fetchone()
+            occurrence_columns[identifier] = sorted(key for key in old.keys() if old[key] != new[key])
     baseline_projection = project(baseline_db, args.today)
     rows = bounded_public_rows(baseline_projection, project(dry_db, args.today), read(ROOT / "data/public/events_public.json"), payload["requests"])
-    receipt = {"stage": control["stage"], "request_ref": control["request_ref"], "request_sha256": control["request_sha256"], "fetched_checksum": checksum, "db_changes": db_changes, "public_rows": rows}
+    receipt = {"stage": control["stage"], "request_ref": control["request_ref"], "request_sha256": control["request_sha256"], "fetched_checksum": checksum, "db_changes": db_changes, "occurrence_changed_columns": occurrence_columns, "master_public_detail_matches": True, "public_rows": rows}
     if control["stage"] == "apply":
         applied = apply_to(False)
         require(not applied["issues"] and applied["write_guard"]["db_committed"], "apply failed")
