@@ -177,6 +177,13 @@ def validate_payload(payload):
         if change_type not in TARGETLESS_CHANGE_TYPES and not request.get("occurrence_id"):
             errors.append(f"{prefix}: requires occurrence_id")
         source = request.get("source") or {}
+        if "detail_and_source_only" in request:
+            if request["detail_and_source_only"] is not True or change_type != "confirm_current_year_date" or not request.get("detail_replacement"):
+                errors.append(f"{prefix}: detail_and_source_only requires a detail replacement confirmation")
+            if any(key in request for key in ("venue", "predicted_date_id", "confidence", "expected_source_url")):
+                errors.append(f"{prefix}: detail_and_source_only cannot change occurrence facts")
+            if source.get("kind") not in {"official_current_year", "organizer_current_year"} or source.get("platform") != "web" or _representative_source_rank(source.get("url")) != 3:
+                errors.append(f"{prefix}: detail_and_source_only requires current-year official web evidence")
         if "expected_source_url" in request:
             if change_type != "confirm_current_year_date" or not isinstance(request["expected_source_url"], str) or not request["expected_source_url"]:
                 errors.append(f"{prefix}: expected_source_url requires an existing URL and confirm_current_year_date")
@@ -431,6 +438,17 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
                 "severity": "high", "issue_type": "detail_snapshot_mismatch",
                 "request_id": request["request_id"], "occurrence_id": occurrence_id,
             }]
+    if request.get("detail_and_source_only"):
+        facts = conn.execute("SELECT event_year, date_start, date_end FROM event_occurrences WHERE occurrence_id=?", (occurrence_id,)).fetchone()
+        if not facts or facts[0] != request["event_year"] or facts[1] != request["date_start"] or (facts[2] or facts[1]) != (request.get("date_end") or request["date_start"]):
+            return None, [{"severity": "high", "issue_type": "detail_only_schedule_mismatch", "request_id": request["request_id"], "occurrence_id": occurrence_id}]
+        evidence_id = _upsert_source_evidence(conn, request, now, detected_event_date=request["date_start"])
+        source_url = request["source"]["url"]
+        conn.execute("UPDATE event_occurrences SET detail=?, source_url=?, updated_at=? WHERE occurrence_id=?", (replacement.strip(), source_url, now, occurrence_id))
+        link_occurrence_evidence(conn, occurrence_id, evidence_id, "detail_correction", confidence=1.0, notes=request.get("note") or "公式情報による説明の更新。")
+        return {"request_id": request["request_id"], "change_type": request["change_type"], "occurrence_id": occurrence_id, "evidence_id": evidence_id,
+            "changed_fields": [key for key, old, new in (("detail", occurrence_before[1], replacement.strip()), ("source_url", occurrence_before[0], source_url)) if old != new],
+            "venue_status": "unchanged", "date_status": "unchanged"}, []
     venue_id, venue_status, venue_issues = _resolve_venue(conn, request, now)
     if venue_issues:
         return None, venue_issues

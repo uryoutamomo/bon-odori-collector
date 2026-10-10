@@ -23,6 +23,8 @@ def control():
     value.update(stage='dry_run', request_path='data/change_requests/ebara_official_20261010.json')
     for key in ('expected_remote_checksum', 'reviewed_run_id', 'reviewed_by', 'review_note'):
         value.pop(key, None)
+    for scope in value['scope'].values():
+        scope['expected_master_detail_sha256'] = scope['expected_detail_sha256']
     return value
 
 
@@ -30,8 +32,8 @@ def payload():
     return {'request_type': 'rdb_change_requests', 'requests': [
         {'request_id': 'ebara_official_20261010_' + key,
          'change_type': 'confirm_current_year_date', 'occurrence_id': key,
-         'event_year': 2026, 'date_start': ALLOWED[key][0], 'confidence': 'confirmed',
-         **values, 'source': {'kind': 'official_current_year', 'platform': 'web',
+         'event_year': 2026, 'date_start': ALLOWED[key][0], 'detail_and_source_only': True,
+         'detail_replacement': values['detail_replacement'], 'expected_detail_sha256': values['expected_master_detail_sha256'], 'source': {'kind': 'official_current_year', 'platform': 'web',
              'url': FOURTH_URL if key == 'occ_400f1f551ca689a7' else SUMMARY_URL},
          'dry_run_only': True}
         for key, values in control()['scope'].items()]}
@@ -103,6 +105,7 @@ def test_projection_guard_preserves_membership_and_rejects_unrelated_fields():
     indexed = {row['occurrence_id']: row for row in proposed}
     for request in requests:
         indexed[request['occurrence_id']]['detail'] = request['detail_replacement']
+        indexed[request['occurrence_id']]['source_urls'] = [{'url': request['source']['url'], 'kind': 'official'}]
     rows = bounded_public_rows(current, proposed, current, requests)
     assert len(rows) == 3
     scoped = indexed[requests[0]['occurrence_id']]
@@ -127,7 +130,7 @@ def test_master_snapshot_requires_old_hash_and_verified_venue(tmp_path):
         for request in requests:
             key = request['occurrence_id']
             conn.execute('INSERT INTO venues VALUES (?,?)', (key, ALLOWED[key][1]))
-            conn.execute('INSERT INTO event_occurrences VALUES (?,?,?,?,?,2026)', (key, key, ALLOWED[key][0], None, public[key]['detail']))
+            conn.execute('INSERT INTO event_occurrences VALUES (?,?,?,?,?,2026)', (key, key, ALLOWED[key][0], '', public[key]['detail']))
     inspect_master(db, requests)
     with sqlite3.connect(db) as conn:
         conn.execute('UPDATE event_occurrences SET detail=? WHERE occurrence_id=?', ('changed', requests[0]['occurrence_id']))
@@ -166,12 +169,17 @@ def integration_fixture(tmp_path, monkeypatch, stage):
             key = row['occurrence_id']
             conn.execute("INSERT INTO venues (venue_id,canonical_name,normalized_name,area,address,review_status,created_at,updated_at) VALUES (?,?,?,?,?,'active','now','now')", (key,row['venue'],row['venue'],'品川区',row['address']))
             conn.execute("INSERT INTO event_series (series_id,series_key,canonical_name,normalized_name,status,created_at,updated_at) VALUES (?,?,?,?,'active','now','now')", (key,key,row['name'],row['name']))
-            conn.execute("INSERT INTO event_occurrences (occurrence_id,series_id,venue_id,event_year,display_name,date_start,date_end,date_status,lifecycle_status,current_event_state,date_certainty_tier,confidence,detail,created_at,updated_at) VALUES (?,?,?,2026,?,?,?,'confirmed','published','confirmed','confirmed','confirmed',?,'now','now')", (key,key,key,row['name'],row['date'],row['date'],row['detail']))
-            conn.execute("INSERT INTO occurrence_dates (occurrence_date_id,occurrence_id,date_start,date_end,date_type,confidence,basis,created_at) VALUES (?,?,?,?,'confirmed','confirmed','old','now')", (key,key,row['date'],row['date']))
+            conn.execute("INSERT INTO event_occurrences (occurrence_id,series_id,venue_id,event_year,display_name,date_start,date_end,date_status,lifecycle_status,current_event_state,date_certainty_tier,confidence,detail,created_at,updated_at) VALUES (?,?,?,2026,?,?,?,'confirmed','published','confirmed','confirmed','high',?,'now','now')", (key,key,key,row['name'],row['date'],'',row['detail'] + ' 追加証拠 PRIVATE INTERNAL EVIDENCE'))
+            conn.execute("INSERT INTO occurrence_dates (occurrence_date_id,occurrence_id,date_start,date_end,date_type,confidence,basis,created_at) VALUES (?,?,?,?,'confirmed','high','old','now')", (key,key,row['date'],''))
     p = payload()
     c = control()
     c['stage'] = stage
     c['collector_public_sha256'] = hashlib.sha256(public_path.read_bytes()).hexdigest()
+    with sqlite3.connect(db) as conn:
+        for request in p['requests']:
+            raw = conn.execute('SELECT detail FROM event_occurrences WHERE occurrence_id=?', (request['occurrence_id'],)).fetchone()[0]
+            request['expected_detail_sha256'] = hashlib.sha256(raw.encode()).hexdigest()
+            c['scope'][request['occurrence_id']]['expected_master_detail_sha256'] = request['expected_detail_sha256']
     if stage == 'apply':
         p, _ = promote_payload(p, reviewed_by='おと（Codex）', review_note='Reviewed integration dry-run')
         c.update(request_path='data/change_requests/ebara_official_20261010_reviewed.json',
@@ -188,10 +196,15 @@ def integration_fixture(tmp_path, monkeypatch, stage):
     refresh = apply_module.refresh_manifest_database_state
     monkeypatch.setattr(apply_module, 'refresh_manifest_database_state', lambda path, updated_at: refresh(path, manifest_path=tmp_path / 'manifest.json', updated_at=updated_at))
     def projected(path, today):
+        from export_public_events import public_detail_text, clean_public_text
         result = copy.deepcopy(published)
         with sqlite3.connect(path) as conn:
             for row in result:
-                row['detail'] = conn.execute('SELECT detail FROM event_occurrences WHERE occurrence_id=?', (row['occurrence_id'],)).fetchone()[0]
+                raw = conn.execute('SELECT detail FROM event_occurrences WHERE occurrence_id=?', (row['occurrence_id'],)).fetchone()[0]
+                row['detail'] = public_detail_text(clean_public_text(raw))
+                source_url = conn.execute('SELECT source_url FROM event_occurrences WHERE occurrence_id=?', (row['occurrence_id'],)).fetchone()[0]
+                if source_url:
+                    row['source_urls'] = [{'url': source_url, 'kind': 'official'}]
         return result
     monkeypatch.setattr(module, 'project', projected)
     calls = []
@@ -216,7 +229,11 @@ def test_cloud_dry_run_does_not_publish_or_mutate_master(tmp_path, monkeypatch):
     receipt = execute(args)
     assert args.master_db.read_bytes() == original
     assert calls == [] and len(receipt['public_rows']) == 3
-    assert set(receipt['db_changes']) <= {'event_occurrences','occurrence_dates','evidence_items','occurrence_evidence_links'}
+    assert set(receipt['db_changes']) <= {'event_occurrences','evidence_items','occurrence_evidence_links'}
+    assert receipt['master_public_detail_matches'] is True
+    assert all(set(columns) <= {'detail','source_url','updated_at'} for columns in receipt['occurrence_changed_columns'].values())
+    with sqlite3.connect(args.output / 'dry-run.sqlite') as conn:
+        assert conn.execute("SELECT COUNT(*) FROM event_occurrences WHERE date_end='' AND confidence='high'").fetchone()[0] == 3
 
 
 def test_cloud_apply_uses_cas_and_refetch_without_collection(tmp_path, monkeypatch):
@@ -261,3 +278,38 @@ def test_mismatched_master_is_diagnosed_but_still_blocks_before_apply(tmp_path, 
     assert args.master_db.read_bytes() == original and calls == []
     assert 'BOUNDED_DETAIL_DIAGNOSTICS=' in capsys.readouterr().out
     assert (args.output / 'diagnostics.json').exists()
+
+
+def test_guard_rejects_fact_changes_within_approved_occurrences(tmp_path, monkeypatch):
+    args, _, _ = integration_fixture(tmp_path, monkeypatch, 'dry_run')
+    changed = tmp_path / 'changed.sqlite'
+    shutil.copy2(args.master_db, changed)
+    with sqlite3.connect(changed) as conn:
+        conn.execute("UPDATE event_occurrences SET date_end=date_start WHERE occurrence_id=?", (next(iter(ALLOWED)),))
+    with pytest.raises(ValueError, match='occurrence fact changed'):
+        verify_db_scope(args.master_db, changed, read_requests(args))
+
+
+def read_requests(args):
+    return json.loads(args.requests.read_text())['requests']
+
+
+def test_detail_only_mode_refuses_schedule_change_before_evidence(tmp_path, monkeypatch):
+    from report_apply.apply_change_requests import apply_payload
+    args, _, _ = integration_fixture(tmp_path, monkeypatch, 'dry_run')
+    requests = read_requests(args)
+    requests[0]['date_start'] = '2026-10-12'
+    with sqlite3.connect(args.master_db) as conn:
+        conn.row_factory = sqlite3.Row
+        before = list(conn.iterdump())
+        applied, issues = apply_payload(conn, {'requests': [requests[0]]}, '2026-10-10T00:00:00Z')
+        assert applied['requests_applied'] == [] and issues[0]['issue_type'] == 'detail_only_schedule_mismatch'
+        assert list(conn.iterdump()) == before
+
+
+def test_master_public_comparison_refuses_changed_public_detail(tmp_path, monkeypatch):
+    args, _, _ = integration_fixture(tmp_path, monkeypatch, 'dry_run')
+    c = json.loads(args.control.read_text())
+    c['scope'][next(iter(ALLOWED))]['expected_detail_sha256'] = '0' * 64
+    with pytest.raises(ValueError, match='master public detail mismatch'):
+        inspect_master(args.master_db, read_requests(args), c['scope'])
