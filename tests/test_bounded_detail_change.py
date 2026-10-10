@@ -11,14 +11,19 @@ import yaml
 
 from scripts.run_bounded_detail_change import (
     ALLOWED, bounded_public_rows, inspect_master, validate_control,
-    validate_requests, verify_db_scope, SUMMARY_URL, FOURTH_URL, execute,
+    validate_requests, verify_db_scope, SUMMARY_URL, FOURTH_URL, execute, diagnose_master,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def control():
-    return json.loads((ROOT / 'data/change_requests/ebara_official_20261010_cloud_control.json').read_text())
+    value = json.loads((ROOT / 'data/change_requests/ebara_official_20261010_cloud_control.json').read_text())
+    # Test each stage independently of the current reviewed operational stage.
+    value.update(stage='dry_run', request_path='data/change_requests/ebara_official_20261010.json')
+    for key in ('expected_remote_checksum', 'reviewed_run_id', 'reviewed_by', 'review_note'):
+        value.pop(key, None)
+    return value
 
 
 def payload():
@@ -230,3 +235,29 @@ def test_cloud_apply_rejects_remote_change_since_manual_review(tmp_path, monkeyp
     with pytest.raises(ValueError, match='master changed'):
         execute(args)
     assert calls == []
+
+
+def test_diagnostics_only_show_three_authorized_facts_and_hashes(tmp_path, monkeypatch):
+    args, calls, _ = integration_fixture(tmp_path, monkeypatch, 'dry_run')
+    with sqlite3.connect(args.master_db) as conn:
+        conn.execute('UPDATE event_occurrences SET detail=? WHERE occurrence_id=?', ('PRIVATE INTERNAL TEXT', next(iter(ALLOWED))))
+    result = diagnose_master(args.master_db, args.today)
+    assert {row['occurrence_id'] for row in result} == set(ALLOWED)
+    for row in result:
+        assert set(row) == {'occurrence_id','expected','master','public_projection'}
+        assert set(row['master']) == {'date_start','date_end','venue','event_year','detail_sha256'}
+        assert set(row['public_projection']) == set(row['master'])
+    assert 'PRIVATE INTERNAL TEXT' not in json.dumps(result)
+    assert calls == []
+
+
+def test_mismatched_master_is_diagnosed_but_still_blocks_before_apply(tmp_path, monkeypatch, capsys):
+    args, calls, _ = integration_fixture(tmp_path, monkeypatch, 'dry_run')
+    with sqlite3.connect(args.master_db) as conn:
+        conn.execute('UPDATE event_occurrences SET date_start=? WHERE occurrence_id=?', ('2026-10-12', next(iter(ALLOWED))))
+    original = args.master_db.read_bytes()
+    with pytest.raises(ValueError, match='master date/venue mismatch'):
+        execute(args)
+    assert args.master_db.read_bytes() == original and calls == []
+    assert 'BOUNDED_DETAIL_DIAGNOSTICS=' in capsys.readouterr().out
+    assert (args.output / 'diagnostics.json').exists()

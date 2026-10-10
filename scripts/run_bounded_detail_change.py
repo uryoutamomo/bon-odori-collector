@@ -94,6 +94,29 @@ def inspect_master(db, requests):
             require(current_hash == request["expected_detail_sha256"], f"master detail hash mismatch: {identifier}")
 
 
+def diagnose_master(db, today):
+    """Only the authorized three identities and public facts/hashes leave the runner."""
+    projected = {row["occurrence_id"]: row for row in project(db, today)
+        if row["occurrence_id"] in ALLOWED}
+    diagnostics = []
+    with sqlite3.connect(db) as conn:
+        for identifier, (expected_date, expected_venue) in ALLOWED.items():
+            row = conn.execute("SELECT o.date_start, o.date_end, v.canonical_name, o.detail, o.event_year FROM event_occurrences o LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.occurrence_id=?", (identifier,)).fetchone()
+            public = projected.get(identifier)
+            diagnostics.append({
+                "occurrence_id": identifier,
+                "expected": {"date_start": expected_date, "venue": expected_venue, "event_year": 2026},
+                "master": None if row is None else {"date_start": row[0], "date_end": row[1],
+                    "venue": row[2], "event_year": row[4],
+                    "detail_sha256": hashlib.sha256((row[3] or "").encode()).hexdigest()},
+                "public_projection": None if public is None else {"date_start": public.get("date"),
+                    "date_end": public.get("date_end"), "venue": public.get("venue"),
+                    "event_year": public.get("event_year"),
+                    "detail_sha256": hashlib.sha256((public.get("detail") or "").encode()).hexdigest()},
+            })
+    return diagnostics
+
+
 def verify_db_scope(before, after, requests):
     """Reject differences anywhere outside the three occurrences and their evidence."""
     identifiers = sorted(ALLOWED)
@@ -162,8 +185,11 @@ def execute(args):
     checksum = file_sha256(args.master_db)
     if control["stage"] == "apply":
         require(checksum == control["expected_remote_checksum"], "master changed since reviewed dry-run; repeat review")
-    inspect_master(args.master_db, payload["requests"])
     args.output.mkdir(parents=True, exist_ok=True)
+    diagnostics = diagnose_master(args.master_db, args.today)
+    (args.output / "diagnostics.json").write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n")
+    print("BOUNDED_DETAIL_DIAGNOSTICS=" + json.dumps(diagnostics, ensure_ascii=False, separators=(",", ":")), flush=True)
+    inspect_master(args.master_db, payload["requests"])
     baseline_db = args.output / "before.sqlite"
     shutil.copy2(args.master_db, baseline_db)
     dry_db = args.output / "dry-run.sqlite"
