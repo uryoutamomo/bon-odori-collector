@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-09T13:37:27.641075+00:00",
+  "generated_at": "2026-10-10T12:43:16.250520+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,433 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4085ef0d8a9a2bfb",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【夏祭り情報2026】【矢口渡】8/9(日)東八幡神社例大祭。盆踊りは8/7(金)、8/8(土)\n\n金曜日＆土曜日19:00～21:00、盆踊り❤️\nお神輿は日",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2085244483952947447",
+      "source_url": "https://x.com/otafull/status/2085244483952947447",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "55b4f382b02854f1a40938e0976eac6b953d3ba390ecaba67b1937b69a0860c6",
+      "last_seen_at": "github-38052132466-1",
+      "created_at": "2026-10-10T12:42:35.379266+00:00",
+      "updated_at": "2026-10-10T12:42:35.379266+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6e51018ed3c9a1ca",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/9",
+          "8/7",
+          "8/8"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区矢口3-17-3",
+          "region_hint": "大田区",
+          "source_url": "https://note.com/common_news/n/n4a3de6b9a249",
+          "venue": "東八幡神社"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2085244483952947447",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【夏祭り情報2026】【矢口渡】8/9(日)東八幡神社例大祭。盆踊りは8/7(金)、8/8(土)\n\n金曜日＆土曜日19:00～21:00、盆踊り❤️\nお神輿は日曜日の午前9:00～ですよ❤️\nhttps://t.co/M3rrJFdC8f\n#大田区　#商店街　#矢口渡　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2085244483952947447",
+        "source_urls": [
+          "https://x.com/otafull/status/2085244483952947447"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-06T06:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【夏祭り情報2026】【矢口渡】8/9(日)東八幡神社例大祭。盆踊りは8/7(金)、8/8(土)\n\n金曜日＆土曜日19:00～21:00、盆踊り❤️\nお神輿は日曜日の午前9:00～ですよ❤️\nhttps://t.co/M3rrJFdC8f\n#大田区　#商店街　#矢口渡　#盆踊り",
+          "title": "",
+          "tweet_id": "2085244483952947447",
+          "url": "https://x.com/otafull/status/2085244483952947447"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_54f8db02fb26a0e3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "🌿 8月7日（金）は、こんな一日！ 🌿\n\n多賀神社例大祭 宵宮祭を彩る、夏のひとときをお楽しみください⛩️✨\n\n夕暮れの境内で、子ども盆踊り、キッチンカーグルメ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2085289285754995188",
+      "source_url": "https://x.com/gokoku_sapporo/status/2085289285754995188",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "fe756820e03ea99f13a6c8510161b90abc08ad187b6c80bde8c6f22ef2072fb5",
+      "last_seen_at": "github-38052132466-1",
+      "created_at": "2026-10-10T12:42:35.379266+00:00",
+      "updated_at": "2026-10-10T12:42:35.379266+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_f5287a726a96865e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月7日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@gokoku_sapporo",
+        "source_count": 1,
+        "source_key": "x:2085289285754995188",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPBvff7aMAAGMf9.jpg",
+          "https://t.co/HSXSrd9tcm",
+          "pic.x.com/HSXSrd9tcm"
+        ],
+        "source_officiality": {
+          "account_name": "札幌護国神社　多賀神社　公式",
+          "classification": "registered_official_social",
+          "handle": "@gokoku_sapporo",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n🌿 8月7日（金）は、こんな一日！ 🌿\n\n多賀神社例大祭 宵宮祭を彩る、夏のひとときをお楽しみください⛩️✨\n\n夕暮れの境内で、子ども盆踊り、キッチンカーグルメ、幻想的な花手水・キャンドルナイトまで、一日を通して楽しめる催しをご用意しています。 https://t.co/HSXSrd9tcm",
+        "source_url": "https://x.com/gokoku_sapporo/status/2085289285754995188",
+        "source_urls": [
+          "https://x.com/gokoku_sapporo/status/2085289285754995188"
+        ],
+        "voice": {
+          "account": "@gokoku_sapporo",
+          "date": "2026-08-06T08:58:03+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPBvff7aMAAGMf9.jpg",
+            "https://t.co/HSXSrd9tcm",
+            "pic.x.com/HSXSrd9tcm"
+          ],
+          "name": "札幌護国神社　多賀神社　公式",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "🌿 8月7日（金）は、こんな一日！ 🌿\n\n多賀神社例大祭 宵宮祭を彩る、夏のひとときをお楽しみください⛩️✨\n\n夕暮れの境内で、子ども盆踊り、キッチンカーグルメ、幻想的な花手水・キャンドルナイトまで、一日を通して楽しめる催しをご用意しています。 https://t.co/HSXSrd9tcm",
+          "title": "",
+          "tweet_id": "2085289285754995188",
+          "url": "https://x.com/gokoku_sapporo/status/2085289285754995188"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_611123839102f579",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【京急蒲田】2026/8/8(土)、8/9(日)南蒲田一丁目町会が北野神社で「南一夏祭り」\n模擬店の出店は8日(17:00～)のみですよ～🫶\n【子ども神輿＆引き",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2085274676960629183",
+      "source_url": "https://x.com/otafull/status/2085274676960629183",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f1c4e3689ce314a1e64f480531f1d3b690303e9a800170fc188e782067ebd992",
+      "last_seen_at": "github-38052132466-1",
+      "created_at": "2026-10-10T12:42:35.379266+00:00",
+      "updated_at": "2026-10-10T12:42:35.379266+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_16da345ffe0a1ee0",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/8",
+          "8/9",
+          "8/8",
+          "8/9"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2085274676960629183",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【京急蒲田】2026/8/8(土)、8/9(日)南蒲田一丁目町会が北野神社で「南一夏祭り」\n模擬店の出店は8日(17:00～)のみですよ～🫶\n【子ども神輿＆引き太鼓】\n🌟8/8(土)10:30出発\n🌟8/9(日)10:00出発\nhttps://t.co/tPvLevuDDr\n#大田区　#商店街　#京急蒲田　#お祭り",
+        "source_url": "https://x.com/otafull/status/2085274676960629183",
+        "source_urls": [
+          "https://x.com/otafull/status/2085274676960629183"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-06T08:00:00+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "🟡関心"
+          ],
+          "text": "【京急蒲田】2026/8/8(土)、8/9(日)南蒲田一丁目町会が北野神社で「南一夏祭り」\n模擬店の出店は8日(17:00～)のみですよ～🫶\n【子ども神輿＆引き太鼓】\n🌟8/8(土)10:30出発\n🌟8/9(日)10:00出発\nhttps://t.co/tPvLevuDDr\n#大田区　#商店街　#京急蒲田　#お祭り",
+          "title": "",
+          "tweet_id": "2085274676960629183",
+          "url": "https://x.com/otafull/status/2085274676960629183",
+          "value_score": 7.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c005e145958c8c8b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "／／\n８月８日（土）\n鹿手袋納涼盆踊り大会　開催📣\n＼＼\n\n昔ながらの盆踊りから、ノリノリのダンス🕺も！\n\nみんなで楽しい夏の思い出をつくりましょう🌻\n\n時間：",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2085217453601427484",
+      "source_url": "https://x.com/MinamiSCPR/status/2085217453601427484",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0b946a8e3ef92aa84febb5c9410fa31fba948492e98882ef5eac2fb648ce51ba",
+      "last_seen_at": "github-38052132466-1",
+      "created_at": "2026-10-10T12:42:35.379266+00:00",
+      "updated_at": "2026-10-10T12:42:35.379266+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_974b7bfe07c33d45",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月８日",
+          "１８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@MinamiSCPR",
+        "source_count": 1,
+        "source_key": "x:2085217453601427484",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPAuOG8aYAATf2j.jpg",
+          "https://t.co/9rXeXUimkB",
+          "pic.x.com/9rXeXUimkB",
+          "https://pbs.twimg.com/media/HPAuOHZbAAAxU_5.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "さいたま市南区役所",
+          "classification": "registered_official_social",
+          "handle": "@minamiscpr",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n／／\n８月８日（土）\n鹿手袋納涼盆踊り大会　開催📣\n＼＼\n\n昔ながらの盆踊りから、ノリノリのダンス🕺も！\n\nみんなで楽しい夏の思い出をつくりましょう🌻\n\n時間：１８時から\n場所：鹿手袋会館前広場（南区鹿手袋６－４－１１）\n\n#盆踊り #鹿手袋 https://t.co/9rXeXUimkB",
+        "source_url": "https://x.com/MinamiSCPR/status/2085217453601427484",
+        "source_urls": [
+          "https://x.com/MinamiSCPR/status/2085217453601427484"
+        ],
+        "voice": {
+          "account": "@MinamiSCPR",
+          "date": "2026-08-06T04:12:37+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPAuOG8aYAATf2j.jpg",
+            "https://t.co/9rXeXUimkB",
+            "pic.x.com/9rXeXUimkB",
+            "https://pbs.twimg.com/media/HPAuOHZbAAAxU_5.jpg"
+          ],
+          "name": "さいたま市南区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "text": "／／\n８月８日（土）\n鹿手袋納涼盆踊り大会　開催📣\n＼＼\n\n昔ながらの盆踊りから、ノリノリのダンス🕺も！\n\nみんなで楽しい夏の思い出をつくりましょう🌻\n\n時間：１８時から\n場所：鹿手袋会館前広場（南区鹿手袋６－４－１１）\n\n#盆踊り #鹿手袋 https://t.co/9rXeXUimkB",
+          "title": "",
+          "tweet_id": "2085217453601427484",
+          "url": "https://x.com/MinamiSCPR/status/2085217453601427484"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_dd137839679fc7fc",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8月の最終日曜日は、毎年浜町一丁目町会の納涼盆踊り大会です。\n夕方16時30分から皆さんで、盆踊りを楽しみましょう。\n会場では、14時から焼き鳥や焼きそば、ビー",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2085196809165848623",
+      "source_url": "https://x.com/hamaichikai/status/2085196809165848623",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2a5159e3978d4c434b81edf4b1996c66838e064c29247592ee434ba93bfd7a25",
+      "last_seen_at": "github-38052132466-1",
+      "created_at": "2026-10-10T12:42:35.379266+00:00",
+      "updated_at": "2026-10-10T12:42:35.379266+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3e87006bb0d31d32",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "16時",
+          "14時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@hamaichikai",
+        "source_count": 1,
+        "source_key": "x:2085196809165848623",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPAbcDXaIAALVtc.jpg",
+          "https://t.co/VcM5zgxcuL",
+          "pic.x.com/VcM5zgxcuL"
+        ],
+        "source_officiality": {
+          "account_name": "浜町一丁目町会",
+          "classification": "registered_official_social",
+          "handle": "@hamaichikai",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8月の最終日曜日は、毎年浜町一丁目町会の納涼盆踊り大会です。\n夕方16時30分から皆さんで、盆踊りを楽しみましょう。\n会場では、14時から焼き鳥や焼きそば、ビールやジュースなどの飲食（有料）や、射的や輪投げなどのお子様向けのゲームもございます。\n夏休み最後の週末に思い出作りご参加ください。 https://t.co/VcM5zgxcuL",
+        "source_url": "https://x.com/hamaichikai/status/2085196809165848623",
+        "source_urls": [
+          "https://x.com/hamaichikai/status/2085196809165848623"
+        ],
+        "voice": {
+          "account": "@hamaichikai",
+          "date": "2026-08-06T02:50:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPAbcDXaIAALVtc.jpg",
+            "https://t.co/VcM5zgxcuL",
+            "pic.x.com/VcM5zgxcuL"
+          ],
+          "name": "浜町一丁目町会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "8月の最終日曜日は、毎年浜町一丁目町会の納涼盆踊り大会です。\n夕方16時30分から皆さんで、盆踊りを楽しみましょう。\n会場では、14時から焼き鳥や焼きそば、ビールやジュースなどの飲食（有料）や、射的や輪投げなどのお子様向けのゲームもございます。\n夏休み最後の週末に思い出作りご参加ください。 https://t.co/VcM5zgxcuL",
+          "title": "",
+          "tweet_id": "2085196809165848623",
+          "url": "https://x.com/hamaichikai/status/2085196809165848623"
         }
       }
     },
