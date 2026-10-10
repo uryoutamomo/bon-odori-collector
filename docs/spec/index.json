@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T10:23:23Z",
-  "generated_for_commit": "66fee3aa",
+  "generated_at": "2026-10-10T10:36:12Z",
+  "generated_for_commit": "662cfc6d",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -563,7 +563,7 @@
         "tests/test_collect_event_state_axes_wiring.py",
         "tests/test_scoped_song_retraction.py"
       ],
-      "updated_for": "ec23ff300613fc9f8be3a27ac2cb4d74656116a3",
+      "updated_for": "24db24549ef1d285544c319f2c2e8d23368ce479",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -622,12 +622,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 3
+        "commits_since": 1,
+        "files_changed_since": 2
       },
-      "version": "1.23",
-      "revision_count": 24,
+      "version": "1.24",
+      "revision_count": 25,
       "history": [
+        {
+          "commit": "02fce09d",
+          "date": "2026-10-10",
+          "subject": "Use the established official URL contract without changing Ebara facts"
+        },
         {
           "commit": "a2618a45",
           "date": "2026-10-10",
@@ -682,11 +687,6 @@
           "commit": "0b70acc7",
           "date": "2026-08-18",
           "subject": "Add LLM joint certainty for event date predictions"
-        },
-        {
-          "commit": "01db7c04",
-          "date": "2026-08-17",
-          "subject": "Finalize detail cleanup repair"
         }
       ]
     },
@@ -750,7 +750,7 @@
         "tests/test_public_event_sync_occurrence_identity.py",
         "tests/test_verify_official_source_link_projection.py"
       ],
-      "updated_for": "ec23ff300613fc9f8be3a27ac2cb4d74656116a3",
+      "updated_for": "24db24549ef1d285544c319f2c2e8d23368ce479",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "data/public_event_overrides.json",
@@ -788,12 +788,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 1,
-        "files_changed_since": 1
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.28",
-      "revision_count": 29,
+      "version": "1.29",
+      "revision_count": 30,
       "history": [
+        {
+          "commit": "02fce09d",
+          "date": "2026-10-10",
+          "subject": "Use the established official URL contract without changing Ebara facts"
+        },
         {
           "commit": "8427ab78",
           "date": "2026-10-10",
@@ -848,11 +853,6 @@
           "commit": "ff2ef6cd",
           "date": "2026-09-09",
           "subject": "docs: specify event-scoped song sync approval checks"
-        },
-        {
-          "commit": "f86e1711",
-          "date": "2026-08-26",
-          "subject": "Document ended-transition approval retirement"
         }
       ]
     },
