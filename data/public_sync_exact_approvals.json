@@ -3814,6 +3814,39 @@
       "reviewed_by": "おと（Codex）",
       "reviewed_at": "2026-10-08T11:11:44.031808+00:00",
       "reason": "2026-10-08 内田さんが対象2件の公式確認による更新と本番反映を承認。既存開催IDを保持し、日程・公式URL・詳細とみなとの公式開始時刻だけを更新。"
+    },
+    {
+      "id": "ebara-official-20261010-occ_35fcf0374711a3bd",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_35fcf0374711a3bd",
+      "event_year": 2026,
+      "site_sha256": "915ca904a1892b7cb18ee7d0f27ee93f876c98b1350616fa61d5c6faccd15d31",
+      "collector_sha256": "e3977d7a7b9a791c206bf23fa04d71efbc9eb6f8630875c8ec71f0aad8ee7af6",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:54:25.553373+00:00",
+      "reason": "本人2026-10-10 16:54 JST承認の説明・公式根拠訂正。正本apply run 38046061880成功・再取得receiptと照合。変更列はdetail,source_urlsのみ。日付・会場・表示終了ロジックと対象外行は維持。"
+    },
+    {
+      "id": "ebara-official-20261010-occ_400f1f551ca689a7",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_400f1f551ca689a7",
+      "event_year": 2026,
+      "site_sha256": "e58414b62a59651f1bd6f90c6ce407e3d716ed940ad80b5836ea14edd397923f",
+      "collector_sha256": "3f38d3d15259f240f21152f8de6abffd02fb5e3eebeb27fa7662efbf7b641157",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:54:25.553373+00:00",
+      "reason": "本人2026-10-10 16:54 JST承認の説明・公式根拠訂正。正本apply run 38046061880成功・再取得receiptと照合。変更列はdetail,source_urlsのみ。日付・会場・表示終了ロジックと対象外行は維持。"
+    },
+    {
+      "id": "ebara-official-20261010-occ_ba6a308f4bcbfff2",
+      "kind": "same_key_update",
+      "occurrence_id": "occ_ba6a308f4bcbfff2",
+      "event_year": 2026,
+      "site_sha256": "f868100613022e53f2607f8dec176bbc2ec75c003c2194051b7d32e654627027",
+      "collector_sha256": "58d9b9b4a965f683c6196a7275e4d46442500590a58e3750673c23094fa89f4b",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-10-10T10:54:25.553373+00:00",
+      "reason": "本人2026-10-10 16:54 JST承認の説明・公式根拠訂正。正本apply run 38046061880成功・再取得receiptと照合。変更列はdetailのみ。日付・会場・表示終了ロジックと対象外行は維持。"
     }
   ]
 }
