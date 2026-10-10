@@ -11,7 +11,7 @@ import yaml
 
 from scripts.run_bounded_detail_change import (
     ALLOWED, bounded_public_rows, inspect_master, validate_control,
-    validate_requests, verify_db_scope, SUMMARY_URL, FOURTH_URL, execute, diagnose_master,
+    validate_requests, verify_db_scope, SUMMARY_URL, FOURTH_URL, execute, diagnose_master, project as real_project,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,7 +33,7 @@ def payload():
         {'request_id': 'ebara_official_20261010_' + key,
          'change_type': 'confirm_current_year_date', 'occurrence_id': key,
          'event_year': 2026, 'date_start': ALLOWED[key][0], 'detail_and_source_only': True,
-         'detail_replacement': values['detail_replacement'], 'expected_detail_sha256': values['expected_master_detail_sha256'], 'source': {'kind': 'official_current_year', 'platform': 'web',
+         'detail_replacement': values['detail_replacement'] + '\n- 公式URL: ' + (FOURTH_URL if key == 'occ_400f1f551ca689a7' else SUMMARY_URL), 'expected_detail_sha256': values['expected_master_detail_sha256'], 'source': {'kind': 'official_current_year', 'platform': 'web',
              'url': FOURTH_URL if key == 'occ_400f1f551ca689a7' else SUMMARY_URL},
          'dry_run_only': True}
         for key, values in control()['scope'].items()]}
@@ -104,7 +104,8 @@ def test_projection_guard_preserves_membership_and_rejects_unrelated_fields():
     proposed = copy.deepcopy(current)
     indexed = {row['occurrence_id']: row for row in proposed}
     for request in requests:
-        indexed[request['occurrence_id']]['detail'] = request['detail_replacement']
+        from export_public_events import clean_public_text, public_detail_text
+        indexed[request['occurrence_id']]['detail'] = public_detail_text(clean_public_text(request['detail_replacement']))
         indexed[request['occurrence_id']]['source_urls'] = [{'url': request['source']['url'], 'kind': 'official'}]
     rows = bounded_public_rows(current, proposed, current, requests)
     assert len(rows) == 3
@@ -262,8 +263,8 @@ def test_diagnostics_only_show_three_authorized_facts_and_hashes(tmp_path, monke
     assert {row['occurrence_id'] for row in result} == set(ALLOWED)
     for row in result:
         assert set(row) == {'occurrence_id','expected','master','public_projection'}
-        assert set(row['master']) == {'date_start','date_end','venue','event_year','detail_sha256'}
-        assert set(row['public_projection']) == set(row['master'])
+        assert set(row['master']) == {'date_start','date_end','venue','event_year','detail_sha256','source_kind'}
+        assert set(row['public_projection']) == set(row['master']) - {'source_kind'}
     assert 'PRIVATE INTERNAL TEXT' not in json.dumps(result)
     assert calls == []
 
@@ -313,3 +314,31 @@ def test_master_public_comparison_refuses_changed_public_detail(tmp_path, monkey
     c['scope'][next(iter(ALLOWED))]['expected_detail_sha256'] = '0' * 64
     with pytest.raises(ValueError, match='master public detail mismatch'):
         inspect_master(args.master_db, read_requests(args), c['scope'])
+
+
+@pytest.mark.parametrize('source_kind', [None, 'curated', 'official_current_year'])
+def test_existing_source_contract_extracts_three_official_urls(source_kind):
+    from export_public_events import _rdb_source_urls, public_detail_text, clean_public_text, sanitize_public_event_details
+    for request in payload()['requests']:
+        raw = clean_public_text(request['detail_replacement'])
+        expected = control()['scope'][request['occurrence_id']]['detail_replacement']
+        assert public_detail_text(raw) == expected
+        sources = _rdb_source_urls(raw, request['source']['url'], source_kind)
+        event = sanitize_public_event_details([{'detail': raw, 'source_urls': sources}])[0]
+        assert event['detail'] == expected
+        assert any(source['url'] == request['source']['url'] and source['kind'] == 'official' for source in event['source_urls'])
+
+
+def test_real_export_projection_preserves_facts_and_three_official_urls(tmp_path, monkeypatch):
+    import scripts.run_bounded_detail_change as module
+    import export_public_events
+    args, calls, _ = integration_fixture(tmp_path, monkeypatch, 'dry_run')
+    # The fixture has only these three confirmed rows; isolate unrelated prediction inputs.
+    predictions = tmp_path / 'predictions.json'
+    predictions.write_text('{"predictions": []}')
+    monkeypatch.setattr(export_public_events, 'DATE_PREDICTIONS', str(predictions))
+    monkeypatch.setattr(module, 'project', real_project)
+    receipt = execute(args)
+    assert calls == [] and len(receipt['public_rows']) == 3
+    assert set(receipt['db_changes']) <= {'event_occurrences', 'evidence_items', 'occurrence_evidence_links'}
+    assert receipt['master_public_detail_matches'] is True

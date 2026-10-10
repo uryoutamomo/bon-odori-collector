@@ -68,7 +68,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_scoped_song_retraction.py
-updated_for: ec23ff300613fc9f8be3a27ac2cb4d74656116a3
+updated_for: 24db24549ef1d285544c319f2c2e8d23368ce479
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -357,11 +357,11 @@ updated_for: ec23ff300613fc9f8be3a27ac2cb4d74656116a3
 - **守っているコード**: `scripts/run_bounded_detail_change.py` の `validate_control`、`validate_requests`、`inspect_master`、`verify_db_scope`、`bounded_public_rows`、`execute`。本番のSQLite操作は新造せず `report_apply.apply_change_requests` に委譲する。許容DB差分は3開催回のdetail/source_url/updated_atと今回の根拠のみ。日程表・その他の開催回列は値も維持、公開差分は3件のdetail/source_urlsのみ。SQLiteをartifactへ含めず、成功receiptの3公開行をcollector/siteのレビュー済みcommitと既存deployへ渡す。workflow自体は公開・収集・メール送信をしない。
 - **守っているテスト**: `tests/test_bounded_detail_change.py::test_control_rejects_apply_without_review_and_expansion`、`tests/test_bounded_detail_change.py::test_requests_are_pinned_and_no_new_venue_or_date_changes`、`tests/test_bounded_detail_change.py::test_whole_database_guard_detects_unrelated_mutation_and_deletion`、`tests/test_bounded_detail_change.py::test_projection_guard_preserves_membership_and_rejects_unrelated_fields`、`tests/test_bounded_detail_change.py::test_master_snapshot_requires_old_hash_and_verified_venue`、`tests/test_bounded_detail_change.py::test_cloud_dry_run_does_not_publish_or_mutate_master`、`tests/test_bounded_detail_change.py::test_cloud_apply_uses_cas_and_refetch_without_collection`、`tests/test_bounded_detail_change.py::test_cloud_apply_rejects_remote_change_since_manual_review`、`tests/test_bounded_detail_change.py::test_dedicated_workflow_has_only_existing_permissions_and_main_triggers`
 
-正本本文のCAS hashと公開本文hashを区別し、既存のclean_public_text/public_detail_text変換と全projectionの結果を既存公開本文へ照合する。未設定date_endの空文字は受け入れるが、その値も更新しない。receiptには3件の変更列名と一致判定だけを記録する。
+正本本文のCAS hashと公開本文hashを区別し、既存のclean_public_text/public_detail_text変換と全projectionの結果を既存公開本文へ照合する。未設定date_endの空文字は受け入れるが、その値も更新しない。receiptには3件の変更列名と一致判定だけを記録する。承認済み本文へ既存契約の `- 公式URL: URL` 行だけを添え、公開本文変換では除去し公式source_urlsへ抽出する。source_kind列は更新しない。`test_existing_source_contract_extracts_three_official_urls` と `test_real_export_projection_preserves_facts_and_three_official_urls` は実際の抽出・公開projectionでこの契約を確認する。
 `test_guard_rejects_fact_changes_within_approved_occurrences`、`test_detail_only_mode_refuses_schedule_change_before_evidence`、`test_master_public_comparison_refuses_changed_public_detail` がこの制約を検証する。
 
 不一致時もapply前に止める。`diagnose_master` は許可された3開催回だけの
-日付・会場・年・detail SHA-256と、同じ公開projectionの値を出す。本文やDB全体は
+日付・会場・年・source_kind・detail SHA-256と、同じ公開projectionの値を出す。本文やDB全体は
 出力しない。`tests/test_bounded_detail_change.py::test_diagnostics_only_show_three_authorized_facts_and_hashes`
 と `tests/test_bounded_detail_change.py::test_mismatched_master_is_diagnosed_but_still_blocks_before_apply`
 が、診断後も不一致を拒否して正本を変えないことを確認する。
