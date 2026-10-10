@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T10:46:50Z",
-  "generated_for_commit": "f2d16b02",
+  "generated_at": "2026-10-10T12:49:04Z",
+  "generated_for_commit": "c6d22c13",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -563,7 +563,7 @@
         "tests/test_collect_event_state_axes_wiring.py",
         "tests/test_scoped_song_retraction.py"
       ],
-      "updated_for": "24db24549ef1d285544c319f2c2e8d23368ce479",
+      "updated_for": "89970c4adec040111f5b062115c17918258f905e",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -622,12 +622,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 2
+        "commits_since": 0,
+        "files_changed_since": 0
       },
-      "version": "1.24",
-      "revision_count": 25,
+      "version": "1.25",
+      "revision_count": 26,
       "history": [
+        {
+          "commit": "c2a7b7fb",
+          "date": "2026-10-10",
+          "subject": "Export only the three applied Ebara official descriptions and source links"
+        },
         {
           "commit": "02fce09d",
           "date": "2026-10-10",
@@ -682,11 +687,6 @@
           "commit": "ad611a05",
           "date": "2026-08-18",
           "subject": "Combine multi-year song evidence"
-        },
-        {
-          "commit": "0b70acc7",
-          "date": "2026-08-18",
-          "subject": "Add LLM joint certainty for event date predictions"
         }
       ]
     },
@@ -750,7 +750,7 @@
         "tests/test_public_event_sync_occurrence_identity.py",
         "tests/test_verify_official_source_link_projection.py"
       ],
-      "updated_for": "24db24549ef1d285544c319f2c2e8d23368ce479",
+      "updated_for": "89970c4adec040111f5b062115c17918258f905e",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "data/public_event_overrides.json",
@@ -791,9 +791,14 @@
         "commits_since": 0,
         "files_changed_since": 0
       },
-      "version": "1.29",
-      "revision_count": 30,
+      "version": "1.30",
+      "revision_count": 31,
       "history": [
+        {
+          "commit": "c2a7b7fb",
+          "date": "2026-10-10",
+          "subject": "Export only the three applied Ebara official descriptions and source links"
+        },
         {
           "commit": "02fce09d",
           "date": "2026-10-10",
@@ -848,11 +853,6 @@
           "commit": "06049ba4",
           "date": "2026-09-09",
           "subject": "Prepare verified encrypted inputs and complete public projection comparison checks"
-        },
-        {
-          "commit": "ff2ef6cd",
-          "date": "2026-09-09",
-          "subject": "docs: specify event-scoped song sync approval checks"
         }
       ]
     },
@@ -1536,7 +1536,7 @@
         "data/public/events_public.json"
       ],
       "staleness": {
-        "commits_since": 3,
+        "commits_since": 4,
         "files_changed_since": 2
       },
       "version": "1.8",
