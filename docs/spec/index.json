@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T09:55:36Z",
-  "generated_for_commit": "d91442bb",
+  "generated_at": "2026-10-10T10:08:05Z",
+  "generated_for_commit": "fad48124",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -563,7 +563,7 @@
         "tests/test_collect_event_state_axes_wiring.py",
         "tests/test_scoped_song_retraction.py"
       ],
-      "updated_for": "c3f007c36063fcd97896484d529a8c4d16d8e501",
+      "updated_for": "afd79fdcef5783db5340281b4b2069cfa4c38beb",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -623,11 +623,16 @@
       ],
       "staleness": {
         "commits_since": 1,
-        "files_changed_since": 3
+        "files_changed_since": 1
       },
-      "version": "1.21",
-      "revision_count": 22,
+      "version": "1.22",
+      "revision_count": 23,
       "history": [
+        {
+          "commit": "335863a4",
+          "date": "2026-10-10",
+          "subject": "Diagnose three approved Ebara master facts before strict validation"
+        },
         {
           "commit": "a34c7fae",
           "date": "2026-10-10",
@@ -682,11 +687,6 @@
           "commit": "9bd761e7",
           "date": "2026-08-16",
           "subject": "Add guarded detail cleanup repair job"
-        },
-        {
-          "commit": "fcb82778",
-          "date": "2026-08-16",
-          "subject": "Prevent notice replay from restoring curated details"
         }
       ]
     },
