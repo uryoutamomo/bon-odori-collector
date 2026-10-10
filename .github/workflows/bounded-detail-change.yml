@@ -1,0 +1,103 @@
+name: Bounded official detail correction
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/bounded-detail-change.yml
+      - scripts/run_bounded_detail_change.py
+      - data/change_requests/ebara_official_20261010_cloud_control.json
+  workflow_dispatch:
+
+# Same permissions as the existing reviewed-RDB apply workflow.
+# Private SQLite never leaves the runner; only scoped review evidence is uploaded.
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  correction:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      CONTROL: data/change_requests/ebara_official_20261010_cloud_control.json
+      MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+      MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+      AWS_REGION: ap-northeast-1
+    steps:
+      - name: Checkout trusted main code
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install test dependencies
+        run: pip install -r requirements-test.txt
+      - name: Run full tests before production access
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q
+      - name: Validate explicit operation and immutable request ref
+        id: control
+        run: |
+          python -m scripts.run_bounded_detail_change --control "$CONTROL" --validate-only
+          python - "$CONTROL" >> "$GITHUB_OUTPUT" <<'PY'
+          import json, sys
+          control = json.load(open(sys.argv[1], encoding='utf-8'))
+          print('request_ref=' + control['request_ref'])
+          print('request_path=' + control['request_path'])
+          print('stage=' + control['stage'])
+          PY
+      - name: Checkout pinned request data only
+        uses: actions/checkout@v6
+        with:
+          repository: uryoutamomo/bon-odori-collector
+          ref: ${{ steps.control.outputs.request_ref }}
+          path: request-snapshot
+          persist-credentials: false
+      - name: Configure existing AWS role
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+      - name: Fetch authoritative master RDB
+        run: python master_db_s3_artifact.py fetch --overwrite
+      - name: Guarded dry-run or manually reviewed apply and CAS
+        env:
+          REQUEST_PATH: ${{ steps.control.outputs.request_path }}
+        run: |
+          TODAY="$(TZ=Asia/Tokyo date +%F)"
+          python -m scripts.run_bounded_detail_change \
+            --control "$CONTROL" \
+            --requests "request-snapshot/$REQUEST_PATH" \
+            --output "$RUNNER_TEMP/bounded-detail" \
+            --today "$TODAY" \
+            --snapshot-id "bounded-detail-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+      - name: Record explicit result and publication handoff
+        env:
+          STAGE: ${{ steps.control.outputs.stage }}
+        run: |
+          python - "$RUNNER_TEMP/bounded-detail/receipt.json" >> "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json, sys
+          r = json.load(open(sys.argv[1], encoding='utf-8'))
+          print('## Bounded official detail correction')
+          print('- stage: ' + r['stage'])
+          print('- fetched checksum: ' + r['fetched_checksum'])
+          print('- request ref: ' + r['request_ref'])
+          print('- exactly three scoped public rows; no collection or mail')
+          print('- public commit/site sync/deploy require the reviewed handoff; this workflow does not deploy')
+          PY
+      - name: Upload review evidence without private SQLite
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bounded-detail-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/bounded-detail/*.json
+            ${{ runner.temp }}/bounded-detail/*.md
+          if-no-files-found: warn
+          retention-days: 30

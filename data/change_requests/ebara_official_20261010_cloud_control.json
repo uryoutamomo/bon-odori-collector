@@ -1,0 +1,22 @@
+{
+  "operation": "ebara_official_20261010",
+  "stage": "dry_run",
+  "request_ref": "708d42c6ec5d8ad6f9e18e8a17748a340f2cf5f3",
+  "request_path": "data/change_requests/ebara_official_20261010.json",
+  "request_sha256": "f219d6b575a4fc944cb91936d4650191418edfeaf32e0124da722e7d3ed1bf1a",
+  "collector_public_sha256": "ed36b9f51cb685a7177f460bd3e54eac60f34ad2543fc572ef91a71e62117769",
+  "scope": {
+    "occ_35fcf0374711a3bd": {
+      "detail_replacement": "2026年10月10日（土）、小山台小学校で開催。催事全体は13:00〜18:00。盆踊りの個別開始・終了時刻は未確認。",
+      "expected_detail_sha256": "0deed563f19fa981f1ae186998e06d4b2766b63cd7a5a16030ec4bd250c38439"
+    },
+    "occ_ba6a308f4bcbfff2": {
+      "detail_replacement": "2026年10月18日（日）、京陽小学校で開催。催事全体は11:00〜15:00。盆踊りの個別開始・終了時刻は未確認。",
+      "expected_detail_sha256": "98b3fd713504c0578cc05d546ced596e5fa8e00cda0fede64634ba77a569dbc2"
+    },
+    "occ_400f1f551ca689a7": {
+      "detail_replacement": "2026年10月11日（日）、上神明小学校校庭で開催。催事全体は10:00〜12:00と16:00〜19:30。盆踊りは18:30〜19:15。雨天などによる順延なし。",
+      "expected_detail_sha256": "6497284390b69d85c024add6cc000fbecadb1f59fa0eaca5bd923ba4e372eabb"
+    }
+  }
+}

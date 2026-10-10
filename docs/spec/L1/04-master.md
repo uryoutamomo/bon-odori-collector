@@ -27,6 +27,9 @@ owns:
   - promotion_candidates/build_historical_promotion_candidates.py
   - scripts/verify_review_backlog_application.py
   - .github/workflows/apply-reviewed-change-requests.yml
+  - .github/workflows/bounded-detail-change.yml
+  - scripts/run_bounded_detail_change.py
+  - data/change_requests/ebara_official_20261010_cloud_control.json
 depends_on:
   - L1-collection
   - L1-platform
@@ -47,8 +50,10 @@ invariants:
   - INV-MST-014
   - INV-MST-015
   - INV-MST-016
+  - INV-MST-017
 verified_by:
   - tests/test_apply_change_requests.py
+  - tests/test_bounded_detail_change.py
   - tests/test_verify_review_backlog_application.py
   - tests/test_master_db_s3_artifact.py
   - tests/test_capture_public_projection_inputs.py
@@ -63,7 +68,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_scoped_song_retraction.py
-updated_for: 01b1616
+updated_for: c3f007c36063fcd97896484d529a8c4d16d8e501
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -340,6 +345,14 @@ updated_for: 01b1616
   `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_confirm_current_year_date_replaces_social_source_with_web_source`
   、`tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_reviewed_source_replacement_updates_last_year_page_and_refuses_drift`、
   `tests/test_apply_change_requests.py::ApplyChangeRequestsTests::test_reviewed_source_replacement_rejects_social_downgrade`
+
+### INV-MST-017 クラウドの詳細訂正は手動レビューの前後を分け、承認済み3件以外を変えない
+
+- **内容**: `bounded-detail-change.yml` はmainへの専用workflow・control変更push、またはmainの手動dispatchで起動する。通常CIと本番操作を混同しない。初期controlは `dry_run`。固定commitのJSONだけを読み、正本の既存detail hash・日付・会場を照合してから既存 `apply_change_requests` でコピーへ適用する。正本の成功dry-run証跡をこと、またはおとが代替レビューした後に既存promote処理を手動実行し、reviewed JSON、レビューrun ID・担当者・理由・正本checksumを明記したapply controlをレビューしてmainへ反映する。apply時も再dry-run・全DB対象外差分・公開projection差分を検査し、CASと再取得checksum/parity検証を通す。
+- **なぜ**: 手動dispatchできない接続でも、既存のmain限定AWSロールで工程を明示的に実行できる。機械検査だけを人レビュー済みと誤認せず、並行作業の正本変更と無関係な公開更新を拒否する。
+- **破れたときの症状**: 古いsnapshotを正本へ上書きする／荏原以外の公開記述まで変わる／dry-runのつもりで本番更新する。
+- **守っているコード**: `scripts/run_bounded_detail_change.py` の `validate_control`、`validate_requests`、`inspect_master`、`verify_db_scope`、`bounded_public_rows`、`execute`。本番のSQLite操作は新造せず `report_apply.apply_change_requests` に委譲する。許容DB差分は3開催回とその日程・根拠のみ、公開差分は3件のdetail/source_urlsのみ。SQLiteをartifactへ含めず、成功receiptの3公開行をcollector/siteのレビュー済みcommitと既存deployへ渡す。workflow自体は公開・収集・メール送信をしない。
+- **守っているテスト**: `tests/test_bounded_detail_change.py::test_control_rejects_apply_without_review_and_expansion`、`tests/test_bounded_detail_change.py::test_requests_are_pinned_and_no_new_venue_or_date_changes`、`tests/test_bounded_detail_change.py::test_whole_database_guard_detects_unrelated_mutation_and_deletion`、`tests/test_bounded_detail_change.py::test_projection_guard_preserves_membership_and_rejects_unrelated_fields`、`tests/test_bounded_detail_change.py::test_master_snapshot_requires_old_hash_and_verified_venue`、`tests/test_bounded_detail_change.py::test_cloud_dry_run_does_not_publish_or_mutate_master`、`tests/test_bounded_detail_change.py::test_cloud_apply_uses_cas_and_refetch_without_collection`、`tests/test_bounded_detail_change.py::test_cloud_apply_rejects_remote_change_since_manual_review`、`tests/test_bounded_detail_change.py::test_dedicated_workflow_has_only_existing_permissions_and_main_triggers`
 
 ## 主要な流れ
 
