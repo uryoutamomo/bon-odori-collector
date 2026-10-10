@@ -68,7 +68,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_scoped_song_retraction.py
-updated_for: c3f007c36063fcd97896484d529a8c4d16d8e501
+updated_for: afd79fdcef5783db5340281b4b2069cfa4c38beb
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -353,6 +353,12 @@ updated_for: c3f007c36063fcd97896484d529a8c4d16d8e501
 - **破れたときの症状**: 古いsnapshotを正本へ上書きする／荏原以外の公開記述まで変わる／dry-runのつもりで本番更新する。
 - **守っているコード**: `scripts/run_bounded_detail_change.py` の `validate_control`、`validate_requests`、`inspect_master`、`verify_db_scope`、`bounded_public_rows`、`execute`。本番のSQLite操作は新造せず `report_apply.apply_change_requests` に委譲する。許容DB差分は3開催回とその日程・根拠のみ、公開差分は3件のdetail/source_urlsのみ。SQLiteをartifactへ含めず、成功receiptの3公開行をcollector/siteのレビュー済みcommitと既存deployへ渡す。workflow自体は公開・収集・メール送信をしない。
 - **守っているテスト**: `tests/test_bounded_detail_change.py::test_control_rejects_apply_without_review_and_expansion`、`tests/test_bounded_detail_change.py::test_requests_are_pinned_and_no_new_venue_or_date_changes`、`tests/test_bounded_detail_change.py::test_whole_database_guard_detects_unrelated_mutation_and_deletion`、`tests/test_bounded_detail_change.py::test_projection_guard_preserves_membership_and_rejects_unrelated_fields`、`tests/test_bounded_detail_change.py::test_master_snapshot_requires_old_hash_and_verified_venue`、`tests/test_bounded_detail_change.py::test_cloud_dry_run_does_not_publish_or_mutate_master`、`tests/test_bounded_detail_change.py::test_cloud_apply_uses_cas_and_refetch_without_collection`、`tests/test_bounded_detail_change.py::test_cloud_apply_rejects_remote_change_since_manual_review`、`tests/test_bounded_detail_change.py::test_dedicated_workflow_has_only_existing_permissions_and_main_triggers`
+
+不一致時もapply前に止める。`diagnose_master` は許可された3開催回だけの
+日付・会場・年・detail SHA-256と、同じ公開projectionの値を出す。本文やDB全体は
+出力しない。`tests/test_bounded_detail_change.py::test_diagnostics_only_show_three_authorized_facts_and_hashes`
+と `tests/test_bounded_detail_change.py::test_mismatched_master_is_diagnosed_but_still_blocks_before_apply`
+が、診断後も不一致を拒否して正本を変えないことを確認する。
 
 ## 主要な流れ
 
