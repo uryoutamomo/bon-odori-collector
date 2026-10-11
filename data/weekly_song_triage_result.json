@@ -2,23 +2,15 @@
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
   "song_candidate_count": 9,
-  "direct_count": 6,
-  "created_count": 2,
+  "direct_count": 5,
+  "created_count": 1,
   "updated_count": 4,
   "rejected_noise_count": 1,
-  "review_count": 2,
+  "review_count": 3,
   "created": [
     {
       "song_name": "賑やかな踊り",
       "source_term": "賑やかな踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "忍岡音頭",
-      "source_term": "忍岡音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -61,22 +53,28 @@
   ],
   "rejected_noise": [
     {
-      "term": "信濃町ふるさと音頭",
+      "term": "伝統の踊り",
       "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
     {
       "term": "荒川音頭",
-      "evidence_count": 4,
+      "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=Kzx2KgAPIc8"
+      "evidence_url": "https://www.youtube.com/watch?v=QLddt_CA3fo"
     },
     {
       "term": "ズンパ音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=ZZSFzCjrohw"
+      "evidence_url": "https://www.youtube.com/watch?v=NoqJ1sivnuc"
+    },
+    {
+      "term": "郡上おどり",
+      "evidence_count": 3,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://www.youtube.com/watch?v=xmQcHOpbs7A"
     }
   ]
 }
