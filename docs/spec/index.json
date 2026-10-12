@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10T12:49:04Z",
-  "generated_for_commit": "c6d22c13",
+  "generated_at": "2026-10-12T23:33:02Z",
+  "generated_for_commit": "711d2057",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -750,7 +750,7 @@
         "tests/test_public_event_sync_occurrence_identity.py",
         "tests/test_verify_official_source_link_projection.py"
       ],
-      "updated_for": "89970c4adec040111f5b062115c17918258f905e",
+      "updated_for": "1c31077ec6f79299598d8b024b4247b0edb8a987",
       "path": "docs/spec/L1/05-publication.md",
       "owned_files": [
         "data/public_event_overrides.json",
@@ -788,12 +788,17 @@
         "venues/export_public_venues.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.30",
-      "revision_count": 31,
+      "version": "1.31",
+      "revision_count": 32,
       "history": [
+        {
+          "commit": "fb479c0c",
+          "date": "2026-10-12",
+          "subject": "Bind legacy temporal approvals to their exact occurrence"
+        },
         {
           "commit": "c2a7b7fb",
           "date": "2026-10-10",
@@ -848,11 +853,6 @@
           "commit": "d3b08083",
           "date": "2026-09-09",
           "subject": "Retract source-scoped non-song labels and preserve review decisions on reimport (#263)"
-        },
-        {
-          "commit": "06049ba4",
-          "date": "2026-09-09",
-          "subject": "Prepare verified encrypted inputs and complete public projection comparison checks"
         }
       ]
     },
@@ -2510,7 +2510,9 @@
       "spec": "L1-publication",
       "title": "ID移行で既存承認を広げず、旧公開項目を変更しない",
       "tests": [
-        "tests/test_guard_public_events_sync.py",
+        "tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_identified_legacy_chain_retires_after_ended_transition_with_consumed_v2",
+        "tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_identified_legacy_rename_retires_only_for_verified_expired_slide",
+        "tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_legacy_temporal_binding_rejects_ambiguous_other_year_and_invalid_hash",
         "tests/test_occurrence_identity.py::test_legacy_bridge_never_overwrites_an_existing_identity_on_either_side",
         "tests/test_verify_occurrence_identity_migration.py::test_migration_refuses_unrelated_change_and_wrong_binding"
       ],
