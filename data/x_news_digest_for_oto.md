@@ -1,7 +1,7 @@
 # X News Digest For Oto
 
-- generated_at: 2026-10-11T12:50:15+00:00
-- digest_count: 20738
+- generated_at: 2026-10-12T15:24:25+00:00
+- digest_count: 20741
 - status: machine prefilter; Oto interpretation pending
 
 | confidence | type | machine novelty | target | machine summary | machine reason | backcheck | source |
@@ -1679,6 +1679,7 @@
 | low | song_usage_candidate | update | song | イベント候補「中野駅前大盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 中野駅前大盆踊り 盆踊り | https://x.com/takuma_drunker/status/2084131969764651324 |
 | low | song_usage_candidate | update | song | イベント候補「中野駅前大盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 中野駅前大盆踊り 盆踊り; 中野駅前大盆踊り大会 盆踊り | https://x.com/MAGiPUNofficial/status/2083831116805583353 |
 | low | song_usage_candidate | update | song | イベント候補「中野駅前大盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 中野駅前大盆踊り 盆踊り; 中野駅前大盆踊り大会2026 盆踊り | https://x.com/withU4ever2023/status/2083810071604248734 |
+| low | song_usage_candidate | update | song | イベント候補「中野駅前大盆踊り大会 今日ドリカムの盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 中野駅前大盆踊り大会 今日ドリカムの盆踊り 盆踊り | https://x.com/5vKVcEZIO660gKa/status/2083470321987006803 |
 | low | song_usage_candidate | update | song | イベント候補「六本木ヒルズ盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 六本木ヒルズ盆踊り 盆踊り | https://x.com/247kazumi/status/2081278853876719961 |
 | low | song_usage_candidate | update | song | イベント候補「土曜日からは山王音頭と民踊大会」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 土曜日からは山王音頭と民踊大会 盆踊り | https://x.com/fried_wakame/status/2066447118848729435 |
 | low | song_usage_candidate | update | song | イベント候補「奥浅草盆踊り」に関するX由来情報。曲目または踊られた曲の証拠になる可能性がある。 | 既存曲が既存イベントで使われる可能性 | 奥浅草盆踊り 盆踊り | https://x.com/STBA_Bonodori/status/2055458018914091157 |
@@ -20221,6 +20222,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/SSqq47356585/status/2084214394972713317 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/fried_wakame/status/2084138894862459076 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/jHdbnQbAFz69470/status/2084217740139933835 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/SSqq47356585/status/2084215926690644467 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Mayagoofy1/status/2084202691518206212 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/neo_solaris/status/2084194359323545891 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/Mayagoofy1/status/2084183060992700555 |
@@ -20244,6 +20246,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/dino_no4or5/status/2083833866712965258 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/sandalwood220/status/2083833203358625946 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/white_magnolia2/status/2083832419057349051 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/pinky_bob_shery/status/2083831714351394868 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/b_c_kuro/status/2083829057465254044 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/rusty1222/status/2083828503326405085 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/chakku01tkbr/status/2083827506952503773 |

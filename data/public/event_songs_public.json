@@ -3503,6 +3503,50 @@
     ]
   },
   {
+    "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+    "venue": "上野恩賜公園",
+    "area": "台東区",
+    "date": "2026-10-09",
+    "songs": [
+      {
+        "name": "YMCA",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "あなたとトゥラッタッタ♪",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "世界でいちばん熱い夏",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ]
+  },
+  {
     "name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
     "venue": "上野恩賜公園",
     "area": "台東区",
@@ -4958,20 +5002,6 @@
     "date": "2026-09-26",
     "songs": [
       {
-        "name": "B'z - ultra soul",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
-        "name": "TRF - EZ DO DANCE",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "YOASOBI - 群青",
         "confidence": "hint",
         "probability": 48,
@@ -4993,13 +5023,6 @@
         "basis_label": "2025年実測"
       },
       {
-        "name": "八木節",
-        "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "夢みる渋谷音頭 YOU MAKE SHIBUYA",
         "confidence": "hint",
         "probability": 48,
@@ -5007,25 +5030,64 @@
         "basis_label": "2025年実測"
       },
       {
+        "name": "B'z - ultra soul",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "TRF - EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "アンコール",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "サカナクション - 夜の踊り子",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節 振付",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夢みる渋谷 YOU MAKE SHIBUYA",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "荻野目洋子 - ダンシング・ヒーロー",
         "confidence": "hint",
-        "probability": 48,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ]
   },

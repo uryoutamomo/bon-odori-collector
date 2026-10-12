@@ -1,16 +1,32 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 9,
-  "direct_count": 5,
-  "created_count": 1,
+  "song_candidate_count": 14,
+  "direct_count": 7,
+  "created_count": 3,
   "updated_count": 4,
-  "rejected_noise_count": 1,
+  "rejected_noise_count": 4,
   "review_count": 3,
   "created": [
     {
       "song_name": "賑やかな踊り",
       "source_term": "賑やかな踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "浅草阿波おどり",
+      "source_term": "浅草阿波おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "阿波おどり",
+      "source_term": "阿波おどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -55,6 +71,18 @@
     {
       "term": "伝統の踊り",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "阿波踊り",
+      "reason": "SongCatalog: RDBで無効と判定済み"
+    },
+    {
+      "term": "各連の踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "第5回浅草阿波踊り",
+      "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
@@ -62,19 +90,19 @@
       "term": "荒川音頭",
       "evidence_count": 6,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=QLddt_CA3fo"
+      "evidence_url": "https://www.youtube.com/watch?v=2AIj2YqzSnY"
+    },
+    {
+      "term": "郡上おどり",
+      "evidence_count": 4,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://www.youtube.com/watch?v=9U2yNAYXMfk"
     },
     {
       "term": "ズンパ音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=NoqJ1sivnuc"
-    },
-    {
-      "term": "郡上おどり",
-      "evidence_count": 3,
-      "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=xmQcHOpbs7A"
+      "evidence_url": "https://www.youtube.com/watch?v=2mCS_L_FyMA"
     }
   ]
 }

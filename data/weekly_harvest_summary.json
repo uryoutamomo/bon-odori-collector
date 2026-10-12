@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-11T12:55:01.190458+00:00",
+  "generated_at": "2026-10-12T15:29:06.839823+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-11T12:54:55.745574+00:00",
+  "source_generated_at": "2026-10-12T15:29:00.151286+00:00",
   "days": 3,
-  "voice_count": 42,
-  "candidate_count": 12,
+  "voice_count": 52,
+  "candidate_count": 17,
   "category_counts": {
     "曲×会場共起": 2,
-    "曲候補": 9,
+    "曲候補": 14,
     "用語候補": 1
   },
   "non_song_review_count": 3,
-  "song_candidate_count": 9,
-  "song_direct_dry_run_count": 5,
+  "song_candidate_count": 14,
+  "song_direct_dry_run_count": 7,
   "song_review_count": 3,
-  "song_rejected_noise_count": 1,
+  "song_rejected_noise_count": 4,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -34,8 +34,8 @@
     ],
     "song_review": [
       "荒川音頭",
-      "ズンパ音頭",
-      "郡上おどり"
+      "郡上おどり",
+      "ズンパ音頭"
     ]
   }
 }

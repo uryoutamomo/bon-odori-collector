@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-10-11T12:54:43.875436+00:00",
+  "generated_at": "2026-10-12T15:28:47.415681+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
@@ -3672,7 +3672,6 @@
         "10/18"
       ],
       "observed_dates": [
-        "2026-10-11",
         "2026-10-18"
       ],
       "event_group_key": "",

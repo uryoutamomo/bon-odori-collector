@@ -1,7 +1,7 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1765,
-  "public_event_count": 817,
+  "count": 1775,
+  "public_event_count": 827,
   "review_count": 948,
   "candidates": [
     {
@@ -99,7 +99,7 @@
       "evidence_count": 1
     },
     {
-      "id": "86b0025dffeab6b5",
+      "id": "434b96d5171f36e9",
       "song_name": "東京音頭",
       "event_name": "盆踊りフェス",
       "venue": "ゆうぽうと世田谷レクセンター 駐車場",
@@ -111,6 +111,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_rwwVn3kG60",
+          "date": "2026-10-12T12:00:31+00:00",
+          "text": "和太鼓お祭りCH\n【世界でいちばん熱い夏】（プリンセス プリンセス）　上野公園「下町盆踊りフェス」６　2026年10月9日　東京都台東区\n2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yMDFoujd7Ug",
+          "date": "2026-10-12T08:00:05+00:00",
+          "text": "和太鼓お祭りCH\n【あなたとトゥラッタッタ♪】（DREAMS COME TRUE）　上野公園「下町盆踊りフェス」５　2026年10月9日　東京都台東区\n2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yM5FdyULscw",
+          "date": "2026-10-12T06:00:22+00:00",
+          "text": "和太鼓お祭りCH\n【Y.M.C.A.】（Village People）　上野公園「下町盆踊りフェス」４　2026年10月9日　東京都台東区\n2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu."
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=rEBP9mMIXF4",
@@ -131,7 +149,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 6
     },
     {
       "id": "60b5319772c266b4",
@@ -47952,6 +47970,36 @@
       "evidence_count": 0
     },
     {
+      "id": "1408ae0f982cceeb",
+      "song_name": "YMCA",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "cc1d716df74d2131",
+      "song_name": "あなたとトゥラッタッタ♪",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "914980f20434a3d4",
       "song_name": "ダンシングヒーロー",
       "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
@@ -47967,9 +48015,69 @@
       "evidence_count": 0
     },
     {
+      "id": "7fd5ba54a64116c0",
+      "song_name": "マツケンサンバII",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e09277d05bd8d061",
+      "song_name": "世界でいちばん熱い夏",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "a0dceb5ef86bfa7d",
       "song_name": "勇気100%",
       "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "0c52ea669e8cb2f0",
+      "song_name": "東京音頭",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "cbd6be14cc053f4f",
+      "song_name": "炭坑節",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
       "venue": "上野恩賜公園",
       "area": "台東区",
       "status": "公開済み",
@@ -57862,6 +57970,36 @@
       "evidence_count": 0
     },
     {
+      "id": "2f175ac6e74538db",
+      "song_name": "アンコール",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "c9becac983b0b7bc",
+      "song_name": "サカナクション - 夜の踊り子",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "998e131046cb4043",
       "song_name": "ダンシングヒーロー",
       "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
@@ -57965,6 +58103,36 @@
     {
       "id": "fa248aed2c1b2098",
       "song_name": "八木節",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "485bb568354b092b",
+      "song_name": "八木節 振付",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "4e6c21508d417a59",
+      "song_name": "夢みる渋谷 YOU MAKE SHIBUYA",
       "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",

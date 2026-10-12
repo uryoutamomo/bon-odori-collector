@@ -1,20 +1,20 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-10-11T12:54:47.123859+00:00",
+  "generated_at": "2026-10-12T15:28:50.862946+00:00",
   "source": "data/voices.json",
-  "voice_count": 45435,
-  "classified_event_evidence_count": 11072,
-  "candidate_count": 9460,
+  "voice_count": 45454,
+  "classified_event_evidence_count": 11082,
+  "candidate_count": 9466,
   "counts": {
     "by_kind": {
-      "event": 5217,
-      "song": 2802,
+      "event": 5218,
+      "song": 2807,
       "venue": 1441
     },
     "by_tier": {
-      "hold": 2357,
-      "promote": 875,
-      "review": 6228
+      "hold": 2358,
+      "promote": 876,
+      "review": 6232
     },
     "suppressed_event_hint_count": 1092,
     "venue_month_grouped_count": 1508
@@ -51611,10 +51611,112 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 3,
+      "evidence_count": 6,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:53726d0e50ae9574b4b88f6ed2632f0c840ea57d2dcb01ab0547af12d773516b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_rwwVn3kG60",
+          "text": "2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs\n３炭坑節　https://youtu.be/rEBP9mMIXF4\n４YMCA　https://youtu.be/yM5FdyULscw\n５あなたとトゥラッタッタ♪　https://youtu.be/yMDFoujd7Ug\n６世界でいちばん熱い夏　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T12:00:31+00:00",
+          "observed_at": "2026-10-12T12:00:31+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "下町盆踊り",
+          "normalized_event": "下町",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:b0d4425e2cc7380cd66fab4a7b39585b90393f6399a4ec8fae25df17673c82ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=yMDFoujd7Ug",
+          "text": "2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs\n３炭坑節　https://youtu.be/rEBP9mMIXF4\n４YMCA　https://youtu.be/yM5FdyULscw\n５あなたとトゥラッタッタ♪　https://youtu.be/yMDFoujd7Ug\n６世界でいちばん熱い夏　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T08:00:05+00:00",
+          "observed_at": "2026-10-12T08:00:05+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "下町盆踊り",
+          "normalized_event": "下町",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:46f870ab16636b4a0e6f219ce0cf9159b58fe20d71ad25664a7abb38d2307d25",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=yM5FdyULscw",
+          "text": "2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs\n３炭坑節　https://youtu.be/rEBP9mMIXF4\n４YMCA　https://youtu.be/yM5FdyULscw\n５あなたとトゥラッタッタ♪　https://youtu.be/yMDFoujd7Ug\n６世界でいちばん熱い夏　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T06:00:22+00:00",
+          "observed_at": "2026-10-12T06:00:22+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "下町盆踊り",
+          "normalized_event": "下町",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:8c9a4e9435e2f74f912099bebf262f098972311241bf200c67dccc5a409d24f6",
           "tweet_id": "",
@@ -57315,10 +57417,84 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 6,
+      "evidence_count": 8,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:a8acf8eb84432f1d378f60f421f0bd7224e71f7d2c92b875dc27810f3e9e3c34",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2AIj2YqzSnY",
+          "text": "2026年9月5日、\n南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。\n\nグラウンドに鳴り響く大太鼓の力強い轟音と、\n熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！\n\n【開催概要】 \nイベント名：荒川区文化祭 大太鼓盆踊り大会\n 開催日：2026年9月5日（土） \n場所：南千住野球場（東京都荒川区）\n\n動画をお楽しみいただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！ \n皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。\n\n#大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓\n\n\n荒川区大太鼓盆踊り\n１大東京音頭　https://youtu.be/XC0xMR-0bls\n２荒川音頭　https://youtu.be/RY-4q9gj5tk\n３東京音頭　https://youtu.be/AQ8luKOTx5I\n４炭坑節　https://youtu.be/Kzx2KgAPIc8\n５少年八木節　https://youtu.be/GIalvZLODCw\n６し",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T11:30:22+00:00",
+          "observed_at": "2026-10-12T11:30:22+00:00",
+          "patterns": [
+            "B",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "大太鼓盆踊り大会",
+          "normalized_event": "大太鼓",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:2f27f81ffb767b3de335141f869f83528ff02d2723f691a85fb4e65549039196",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Fce6xbPvRc8",
+          "text": "2026年9月5日、\n南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。\n\nグラウンドに鳴り響く大太鼓の力強い轟音と、\n熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！\n\n【開催概要】 \nイベント名：荒川区文化祭 大太鼓盆踊り大会\n 開催日：2026年9月5日（土） \n場所：南千住野球場（東京都荒川区）\n\n動画をお楽しみいただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！ \n皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。\n\n#大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓\n\n\n荒川区大太鼓盆踊り\n１大東京音頭　https://youtu.be/XC0xMR-0bls\n２荒川音頭　https://youtu.be/RY-4q9gj5tk\n３東京音頭　https://youtu.be/AQ8luKOTx5I\n４炭坑節　https://youtu.be/Kzx2KgAPIc8\n５少年八木節　https://youtu.be/GIalvZLODCw\n６し",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T11:00:39+00:00",
+          "observed_at": "2026-10-12T11:00:39+00:00",
+          "patterns": [
+            "B",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "大太鼓盆踊り大会",
+          "normalized_event": "大太鼓",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:e27e3cd9d7c0862ba5547c2a038ebeb6b5ebb691582f1f6091c516eb17e92115",
           "tweet_id": "",
@@ -75306,10 +75482,82 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 12,
+      "evidence_count": 14,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:5b36f5eb4c0ac04c36e68c1a966fad21e3466c109a34639f76ddf2f37d5679ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2FLdpyaSLOg",
+          "text": "2026年10月4日、\n東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。\n地域の方々の熱気と、\n響き渡る太鼓やお囃子の音色、\n賑やかな踊りの雰囲気をぜひお楽しみください！\n\n【開催概要】\n\nイベント名：白山まつり 盆踊り\n開催日：2026年10月4日（日）\n場所：東京都文京区 白山上向丘商店街\n\n動画をお楽しみいただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n皆さまの好きな盆踊り曲や感想なども、\nぜひコメント欄で教えてください。\n\n#白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り\n\n\n\n白山まつり盆踊り\n１東京音頭　https://youtu.be/insxtUX1ikI\n２八木節　https://youtu.be/gxd3g3n5Q2E\n３文京音頭　https://youtu.be/vXw-RfV5YLE\n４アンパンマン音頭　https://youtu.be/Rc8xDP9kOjw\n５きよしのソーラン節　https://youtu.be/VNWGWbvddOk\n６365日の紙飛行機　http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T10:30:38+00:00",
+          "observed_at": "2026-10-12T10:30:38+00:00",
+          "patterns": [
+            "B",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "白山まつり",
+          "normalized_event": "白山",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:e72ad6846d7956e79535bdb793c6f717ba56822edc39a5311a85f34b7ad9dd19",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1pA0N4--vE8",
+          "text": "2026年10月4日、\n東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。\n地域の方々の熱気と、\n響き渡る太鼓やお囃子の音色、\n賑やかな踊りの雰囲気をぜひお楽しみください！\n\n【開催概要】\n\nイベント名：白山まつり 盆踊り\n開催日：2026年10月4日（日）\n場所：東京都文京区 白山上向丘商店街\n\n動画をお楽しみいただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n皆さまの好きな盆踊り曲や感想なども、\nぜひコメント欄で教えてください。\n\n#白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り\n\n\n\n白山まつり盆踊り\n１東京音頭　https://youtu.be/insxtUX1ikI\n２八木節　https://youtu.be/gxd3g3n5Q2E\n３文京音頭　https://youtu.be/vXw-RfV5YLE\n４アンパンマン音頭　https://youtu.be/Rc8xDP9kOjw\n５きよしのソーラン節　https://youtu.be/VNWGWbvddOk\n６365日の紙飛行機　http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T10:00:25+00:00",
+          "observed_at": "2026-10-12T10:00:25+00:00",
+          "patterns": [
+            "B",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "白山まつり",
+          "normalized_event": "白山",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:b349a3fb877686df677b02d4d574609f5a42f24c131e97385bd821282519e471",
           "tweet_id": "",
@@ -75840,10 +76088,46 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 9,
+      "evidence_count": 10,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:3faa23db771240811eba066e8fc895839f37d877292af0441301371d9281068b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2mCS_L_FyMA",
+          "text": "2026年9月25日、\n東京都大田区の矢口氷川神社にて行われた矢口南町会\n「矢口氷川神社例大祭盆踊り」の様子です。\n\n神社の境内に響き渡る和太鼓の音色と、\n地域の皆様による活気あふれる盆踊りの熱気をお届けします！\n\n【開催情報】 \n・日時：2026年9月25日 \n・行事：矢口氷川神社例大祭 盆踊り \n・主催：矢口南町会 \n・場所：東京都大田区 矢口氷川神社\n\n\nご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。\n\n#盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り\n\n\n矢口氷川神社盆踊り\n１東京音頭　https://youtu.be/2srwsDXe6og\n２ズンパ音頭　https://youtu.be/vDYP8fIBg0s\n３すっきり音頭　https://youtu.be/RMcrafOQTNQ\n４火の国太鼓　https://youtu.be/Zule95o11Oo\n５大東京音頭　https://youtu.be/RUxBw0woP20\n６チャンチキおけさ　https://youtu.be/F5F",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T00:00:04+00:00",
+          "observed_at": "2026-10-12T00:00:04+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "例大祭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "矢口氷川神社例大祭盆踊り",
+          "normalized_event": "矢口氷川神社例大祭",
+          "estimated_venue": "矢口氷川神社",
+          "time_hints": [
+            "2026年9月25日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:13d0a657105c39735324ef2de6d538aec166e5741981c8a707596011b9936672",
           "tweet_id": "",
@@ -211007,10 +211291,41 @@
       ],
       "score": 20,
       "tier": "review",
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:e2ffbcfe3c810f0c47cb48881f8ee227c85744d81149606808285b0d21d21f01",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=9U2yNAYXMfk",
+          "text": "2026年10月10日に開催された\n「港区制80周年記念 みなと区民まつり」より、増上寺大殿前ステージで行われた【町田春駒会】による「郡上おどり」の演舞の模様です。\n唄い手は、郡上八幡の吉村建治さん（通称：ゴンタさん）。\n\n歴史ある増上寺の大殿を背景に、\n心地よいお囃子の音色と踊り手の皆さんの熱気あふれる素晴らしい演舞が繰り広げられました。\n伝統の踊りの魅力と、お祭りの活気ある雰囲気をぜひお楽しみください！\n\n【開催概要】\n ・イベント名：港区制80周年記念 みなと区民まつり\n ・開催日：2026年10月10日（土）\n ・会場：増上寺 大殿前ステージ \n・出演：町田春駒会 （吉村建治さん（通称：ゴンタさん））\n・演目：郡上おどり\n\n\n動画が気に入っていただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n 皆様からのコメントや感想もお待ちしております。\n\n#みなと区民まつり #増上寺 #郡上おどり #町田春駒会 #日本の祭り #和太鼓お祭りチャンネル\n\nみなと区民まつり（郡上おどり）\n１かわさき　https://youtu.be/6ht8LKVSfcU\n２三百　ht",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-12T03:00:10+00:00",
+          "observed_at": "2026-10-12T03:00:10+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "みなと区民まつり",
+          "normalized_event": "みなと区民",
+          "estimated_venue": "増上寺",
+          "time_hints": [
+            "2026年10月10日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:768676994ca14f11b23273d63d97311bb28bd8fb2b4bc9c315a2d563e58f811d",
           "tweet_id": "",
@@ -306406,6 +306721,62 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:8046332c94c3fe6537d3a8b020c43d6a5a8921c62b44e9a37b5b0bbbc2033877",
+      "display_name": "和太鼓やお祭り",
+      "normalized_event": "和太鼓やお",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "2026年10月11日",
+      "year": 2026,
+      "hashtags": [
+        "浅草阿波おどり",
+        "総踊り",
+        "浅草六区",
+        "阿波踊り",
+        "浅草"
+      ],
+      "score": 13,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:2a430ba69f72642071d6e87830a2bbfb50d878d9bed4102edc572a606956acc8",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=RzgbuuR_TkY",
+          "text": "2026年10月11日、\n東京都台東区の浅草六区にて開催された\n「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。\n\n熱気あふれるお囃子の響きと、\n各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！\n\n【イベント詳細】 \n・イベント名：第5回 浅草阿波おどり\n ・演舞：総踊り \n・開催日時：2026年10月11日（日） \n・開催場所：東京都台東区 浅草六区ブロードウェイ\n\n◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！\n#浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa \n\n\n第5回浅草阿波踊り\n１総踊り　https://youtu.be/RzgbuuR_TkY",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-11T22:00:15+00:00",
+          "observed_at": "2026-10-11T22:00:15+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月11日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:2bb29c1811a8422f2bc1c66f985af71a9ec480b5962b7d558d2ec8be99ac708d",
       "display_name": "和文字焼きまつり",
       "normalized_event": "和文字焼き",
@@ -347163,6 +347534,25 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:3faa23db771240811eba066e8fc895839f37d877292af0441301371d9281068b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2mCS_L_FyMA",
+          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T00:00:04+00:00",
+          "score": 17,
+          "song_name": "ズンパ音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "矢口氷川神社例大祭盆踊り",
+          "estimated_venue": "矢口氷川神社",
+          "time_hints": [
+            "2026年9月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:13d0a657105c39735324ef2de6d538aec166e5741981c8a707596011b9936672",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=NoqJ1sivnuc",
@@ -347338,7 +347728,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 9,
+      "evidence_count": 10,
       "speaker_count": 1
     },
     {
@@ -359997,6 +360387,25 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:e2ffbcfe3c810f0c47cb48881f8ee227c85744d81149606808285b0d21d21f01",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=9U2yNAYXMfk",
+          "text": "2026年10月10日に開催された 「港区制80周年記念 みなと区民まつり」より、増上寺大殿前ステージで行われた【町田春駒会】による「郡上おどり」の演舞の模様です。 唄い手は、郡上八幡の吉村建治さん（通称：ゴンタさん）。 歴史ある増上寺の大殿を背景に、 心地よいお囃子の音色と踊り手の皆さんの熱気あふれる素晴らしい演舞が繰り広げられました。 伝統の踊りの魅力と、お祭りの活気ある雰囲気をぜひお楽しみください！ 【開催概要】 ・イベント名：港区制80周年記念 みなと区民まつり ・開催日：2026年10月10日（土） ・会場：増上寺 大殿前ステージ ・出演：町田春駒会 （吉村建治さん（通称：ゴンタさん）） ・演目：郡上おどり 動画が気に入っていただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆様からのコメントや感想もお待ちしております。 #みなと区民まつり #増上寺 #郡上おどり #町田春駒会 #日本の祭り #和太鼓お祭りチャンネル みなと区民まつり（郡上おどり） １かわさき https://youtu.be/6ht8LKVSfcU ２三百 https://youtu",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T03:00:10+00:00",
+          "score": 12,
+          "song_name": "伝統の踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "みなと区民まつり",
+          "estimated_venue": "増上寺",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:768676994ca14f11b23273d63d97311bb28bd8fb2b4bc9c315a2d563e58f811d",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=xmQcHOpbs7A",
@@ -360058,7 +360467,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1
     },
     {
@@ -361904,6 +362313,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:5b36f5eb4c0ac04c36e68c1a966fad21e3466c109a34639f76ddf2f37d5679ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2FLdpyaSLOg",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:30:38+00:00",
+          "score": 17,
+          "song_name": "八木節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e72ad6846d7956e79535bdb793c6f717ba56822edc39a5311a85f34b7ad9dd19",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1pA0N4--vE8",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:00:25+00:00",
+          "score": 17,
+          "song_name": "八木節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:b349a3fb877686df677b02d4d574609f5a42f24c131e97385bd821282519e471",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=CkevMWxp0Ws",
@@ -362136,7 +362583,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 12,
+      "evidence_count": 14,
       "speaker_count": 1
     },
     {
@@ -373854,6 +374301,46 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:a8acf8eb84432f1d378f60f421f0bd7224e71f7d2c92b875dc27810f3e9e3c34",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2AIj2YqzSnY",
+          "text": "2026年9月5日、 南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。 グラウンドに鳴り響く大太鼓の力強い轟音と、 熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！ 【開催概要】 イベント名：荒川区文化祭 大太鼓盆踊り大会 開催日：2026年9月5日（土） 場所：南千住野球場（東京都荒川区） 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。 #大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓 荒川区大太鼓盆踊り １大東京音頭 https://youtu.be/XC0xMR-0bls ２荒川音頭 https://youtu.be/RY-4q9gj5tk ３東京音頭 https://youtu.be/AQ8luKOTx5I ４炭坑節 https://youtu.be/Kzx2KgAPIc8 ５少年八木節 https://youtu.be/GIalvZLODCw ６しあわせ通り 荒川区商",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T11:30:22+00:00",
+          "score": 17,
+          "song_name": "大東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "大太鼓盆踊り大会",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:2f27f81ffb767b3de335141f869f83528ff02d2723f691a85fb4e65549039196",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Fce6xbPvRc8",
+          "text": "2026年9月5日、 南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。 グラウンドに鳴り響く大太鼓の力強い轟音と、 熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！ 【開催概要】 イベント名：荒川区文化祭 大太鼓盆踊り大会 開催日：2026年9月5日（土） 場所：南千住野球場（東京都荒川区） 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。 #大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓 荒川区大太鼓盆踊り １大東京音頭 https://youtu.be/XC0xMR-0bls ２荒川音頭 https://youtu.be/RY-4q9gj5tk ３東京音頭 https://youtu.be/AQ8luKOTx5I ４炭坑節 https://youtu.be/Kzx2KgAPIc8 ５少年八木節 https://youtu.be/GIalvZLODCw ６しあわせ通り 荒川区商",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T11:00:39+00:00",
+          "score": 17,
+          "song_name": "大東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "大太鼓盆踊り大会",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:e27e3cd9d7c0862ba5547c2a038ebeb6b5ebb691582f1f6091c516eb17e92115",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=QLddt_CA3fo",
@@ -373979,7 +374466,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 6,
+      "evidence_count": 8,
       "speaker_count": 1
     },
     {
@@ -387598,6 +388085,26 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:3faa23db771240811eba066e8fc895839f37d877292af0441301371d9281068b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2mCS_L_FyMA",
+          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T00:00:04+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "矢口氷川神社例大祭盆踊り",
+          "estimated_venue": "矢口氷川神社",
+          "time_hints": [
+            "2026年9月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:13d0a657105c39735324ef2de6d538aec166e5741981c8a707596011b9936672",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=NoqJ1sivnuc",
@@ -387783,7 +388290,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 9,
+      "evidence_count": 10,
       "speaker_count": 1
     },
     {
@@ -405805,6 +406312,46 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:5b36f5eb4c0ac04c36e68c1a966fad21e3466c109a34639f76ddf2f37d5679ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2FLdpyaSLOg",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:30:38+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e72ad6846d7956e79535bdb793c6f717ba56822edc39a5311a85f34b7ad9dd19",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1pA0N4--vE8",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:00:25+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:b349a3fb877686df677b02d4d574609f5a42f24c131e97385bd821282519e471",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=CkevMWxp0Ws",
@@ -406050,7 +406597,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 12,
+      "evidence_count": 14,
       "speaker_count": 1
     },
     {
@@ -406980,6 +407527,66 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:53726d0e50ae9574b4b88f6ed2632f0c840ea57d2dcb01ab0547af12d773516b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_rwwVn3kG60",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T12:00:31+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:b0d4425e2cc7380cd66fab4a7b39585b90393f6399a4ec8fae25df17673c82ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=yMDFoujd7Ug",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T08:00:05+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:46f870ab16636b4a0e6f219ce0cf9159b58fe20d71ad25664a7abb38d2307d25",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=yM5FdyULscw",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T06:00:22+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:8c9a4e9435e2f74f912099bebf262f098972311241bf200c67dccc5a409d24f6",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=rEBP9mMIXF4",
@@ -407045,7 +407652,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
+      "evidence_count": 6,
       "speaker_count": 1
     },
     {
@@ -439915,6 +440522,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:a8acf8eb84432f1d378f60f421f0bd7224e71f7d2c92b875dc27810f3e9e3c34",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2AIj2YqzSnY",
+          "text": "2026年9月5日、 南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。 グラウンドに鳴り響く大太鼓の力強い轟音と、 熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！ 【開催概要】 イベント名：荒川区文化祭 大太鼓盆踊り大会 開催日：2026年9月5日（土） 場所：南千住野球場（東京都荒川区） 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。 #大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓 荒川区大太鼓盆踊り １大東京音頭 https://youtu.be/XC0xMR-0bls ２荒川音頭 https://youtu.be/RY-4q9gj5tk ３東京音頭 https://youtu.be/AQ8luKOTx5I ４炭坑節 https://youtu.be/Kzx2KgAPIc8 ５少年八木節 https://youtu.be/GIalvZLODCw ６しあわせ通り 荒川区商",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T11:30:22+00:00",
+          "score": 17,
+          "song_name": "荒川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "大太鼓盆踊り大会",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:2f27f81ffb767b3de335141f869f83528ff02d2723f691a85fb4e65549039196",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Fce6xbPvRc8",
+          "text": "2026年9月5日、 南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。 グラウンドに鳴り響く大太鼓の力強い轟音と、 熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！ 【開催概要】 イベント名：荒川区文化祭 大太鼓盆踊り大会 開催日：2026年9月5日（土） 場所：南千住野球場（東京都荒川区） 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。 #大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓 荒川区大太鼓盆踊り １大東京音頭 https://youtu.be/XC0xMR-0bls ２荒川音頭 https://youtu.be/RY-4q9gj5tk ３東京音頭 https://youtu.be/AQ8luKOTx5I ４炭坑節 https://youtu.be/Kzx2KgAPIc8 ５少年八木節 https://youtu.be/GIalvZLODCw ６しあわせ通り 荒川区商",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T11:00:39+00:00",
+          "score": 17,
+          "song_name": "荒川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "大太鼓盆踊り大会",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:e27e3cd9d7c0862ba5547c2a038ebeb6b5ebb691582f1f6091c516eb17e92115",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=QLddt_CA3fo",
@@ -440033,7 +440678,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 6,
+      "evidence_count": 8,
       "speaker_count": 1
     },
     {
@@ -440450,6 +441095,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:5b36f5eb4c0ac04c36e68c1a966fad21e3466c109a34639f76ddf2f37d5679ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2FLdpyaSLOg",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:30:38+00:00",
+          "score": 17,
+          "song_name": "賑やかな踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e72ad6846d7956e79535bdb793c6f717ba56822edc39a5311a85f34b7ad9dd19",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1pA0N4--vE8",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:00:25+00:00",
+          "score": 17,
+          "song_name": "賑やかな踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:b349a3fb877686df677b02d4d574609f5a42f24c131e97385bd821282519e471",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=CkevMWxp0Ws",
@@ -440682,7 +441365,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 12,
+      "evidence_count": 14,
       "speaker_count": 1
     },
     {
@@ -443903,6 +444586,27 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:e2ffbcfe3c810f0c47cb48881f8ee227c85744d81149606808285b0d21d21f01",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=9U2yNAYXMfk",
+          "text": "2026年10月10日に開催された 「港区制80周年記念 みなと区民まつり」より、増上寺大殿前ステージで行われた【町田春駒会】による「郡上おどり」の演舞の模様です。 唄い手は、郡上八幡の吉村建治さん（通称：ゴンタさん）。 歴史ある増上寺の大殿を背景に、 心地よいお囃子の音色と踊り手の皆さんの熱気あふれる素晴らしい演舞が繰り広げられました。 伝統の踊りの魅力と、お祭りの活気ある雰囲気をぜひお楽しみください！ 【開催概要】 ・イベント名：港区制80周年記念 みなと区民まつり ・開催日：2026年10月10日（土） ・会場：増上寺 大殿前ステージ ・出演：町田春駒会 （吉村建治さん（通称：ゴンタさん）） ・演目：郡上おどり 動画が気に入っていただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆様からのコメントや感想もお待ちしております。 #みなと区民まつり #増上寺 #郡上おどり #町田春駒会 #日本の祭り #和太鼓お祭りチャンネル みなと区民まつり（郡上おどり） １かわさき https://youtu.be/6ht8LKVSfcU ２三百 https://youtu",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T03:00:10+00:00",
+          "score": 12,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "みなと区民まつり",
+          "estimated_venue": "増上寺",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:768676994ca14f11b23273d63d97311bb28bd8fb2b4bc9c315a2d563e58f811d",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=xmQcHOpbs7A",
@@ -443972,7 +444676,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1
     },
     {
@@ -446518,6 +447222,57 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1bi8gl1HJyA",
+          "text": "【浅草阿波おどり 2026】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 コロナ禍あけに、14年ぶりに復活した浅草阿波おどり。2026年10月11日（日）に「第5回」が開催され、過去最多の15団体に増え、非常に豪華なラインナップとなりました。 00:00 さくら連 03:12 藍響連 05:50 みたか連 08:47 点睛連 11:13 新粋連 13:18 江戸歌舞伎連 15:20 華純連 18:47 粋西連 21:35 炎士 23:52 浅草雷連 27:08 東京無双 32:10 堀切あやめ連 33:00 いなせ連 34:43 波奴連 【総踊り】浅草阿波おどり 2026 / Asakusa Awa Odori 5th https://youtu.be/4OoPhBNHALA #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #組踊り #浅草雷連 #江戸歌舞伎連 #炎士 #華純連",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-12T09:57:34+00:00",
+          "score": 0,
+          "song_name": "阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=aMf9vw7otaI",
+          "text": "【浅草阿波おどり 2026】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 コロナ禍あけに、14年ぶりに復活した浅草阿波おどり。2026年10月11日（日）に「第5回」が開催され、過去最多の15団体に増え、非常に豪華なラインナップとなりました。 00:00 ハイライト 01:05 華純連 09:49 阿波踊りレジェンド 12:34 炎士 26:25 浅草雷連 37:30 江戸歌舞伎連 【総踊り】浅草阿波おどり 2026 / Asakusa Awa Odori 5th https://youtu.be/4OoPhBNHALA #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #組踊り #浅草雷連 #江戸歌舞伎連 #炎士 #華純連",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-12T04:38:21+00:00",
+          "score": 0,
+          "song_name": "阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=4OoPhBNHALA",
+          "text": "【浅草阿波おどり】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #総踊り",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-11T14:37:50+00:00",
+          "score": 0,
+          "song_name": "阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=tA-bdMsVQGQ",
           "text": "【渋谷阿波おどり】 開催日時：2026年10月3日(土) 00:00 ハイライト 03:33 徳島阿波おどり振興協会選抜連 12:56 高円寺阿波おどり連協会合同連 21:31 大和連 舞台踊り 26:41 舞台おどり 南越谷阿波踊り振興会合同連 43:26 舞台おどり 高円寺 48:42 流し踊り 高円寺 #渋谷阿波おどり #徳島 #高円寺 #阿波おどり #阿波踊り # 南越谷",
           "account": "UCWz2tM7PAFGT7xSL5OAEllg",
@@ -446998,7 +447753,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 28,
+      "evidence_count": 31,
       "speaker_count": 12
     },
     {
@@ -447208,6 +447963,57 @@
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1bi8gl1HJyA",
+          "text": "【浅草阿波おどり 2026】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 コロナ禍あけに、14年ぶりに復活した浅草阿波おどり。2026年10月11日（日）に「第5回」が開催され、過去最多の15団体に増え、非常に豪華なラインナップとなりました。 00:00 さくら連 03:12 藍響連 05:50 みたか連 08:47 点睛連 11:13 新粋連 13:18 江戸歌舞伎連 15:20 華純連 18:47 粋西連 21:35 炎士 23:52 浅草雷連 27:08 東京無双 32:10 堀切あやめ連 33:00 いなせ連 34:43 波奴連 【総踊り】浅草阿波おどり 2026 / Asakusa Awa Odori 5th https://youtu.be/4OoPhBNHALA #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #組踊り #浅草雷連 #江戸歌舞伎連 #炎士 #華純連",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-12T09:57:34+00:00",
+          "score": 0,
+          "song_name": "阿波踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=aMf9vw7otaI",
+          "text": "【浅草阿波おどり 2026】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 コロナ禍あけに、14年ぶりに復活した浅草阿波おどり。2026年10月11日（日）に「第5回」が開催され、過去最多の15団体に増え、非常に豪華なラインナップとなりました。 00:00 ハイライト 01:05 華純連 09:49 阿波踊りレジェンド 12:34 炎士 26:25 浅草雷連 37:30 江戸歌舞伎連 【総踊り】浅草阿波おどり 2026 / Asakusa Awa Odori 5th https://youtu.be/4OoPhBNHALA #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #組踊り #浅草雷連 #江戸歌舞伎連 #炎士 #華純連",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-12T04:38:21+00:00",
+          "score": 0,
+          "song_name": "阿波踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=4OoPhBNHALA",
+          "text": "【浅草阿波おどり】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #総踊り",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-11T14:37:50+00:00",
+          "score": 0,
+          "song_name": "阿波踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
         {
           "identity": "",
           "tweet_id": "",
@@ -449425,7 +450231,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 130,
+      "evidence_count": 133,
       "speaker_count": 37
     },
     {
@@ -495564,6 +496370,79 @@
       ],
       "suppressed_event_hints": [],
       "evidence_count": 26,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:7739d818d68a4dad0012b13fec6f249a67fc26fb8bc8a52f9330267e787fc188",
+      "display_name": "浅草阿波おどり",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1bi8gl1HJyA",
+          "text": "【浅草阿波おどり 2026】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 コロナ禍あけに、14年ぶりに復活した浅草阿波おどり。2026年10月11日（日）に「第5回」が開催され、過去最多の15団体に増え、非常に豪華なラインナップとなりました。 00:00 さくら連 03:12 藍響連 05:50 みたか連 08:47 点睛連 11:13 新粋連 13:18 江戸歌舞伎連 15:20 華純連 18:47 粋西連 21:35 炎士 23:52 浅草雷連 27:08 東京無双 32:10 堀切あやめ連 33:00 いなせ連 34:43 波奴連 【総踊り】浅草阿波おどり 2026 / Asakusa Awa Odori 5th https://youtu.be/4OoPhBNHALA #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #組踊り #浅草雷連 #江戸歌舞伎連 #炎士 #華純連",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-12T09:57:34+00:00",
+          "score": 0,
+          "song_name": "浅草阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=aMf9vw7otaI",
+          "text": "【浅草阿波おどり 2026】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 コロナ禍あけに、14年ぶりに復活した浅草阿波おどり。2026年10月11日（日）に「第5回」が開催され、過去最多の15団体に増え、非常に豪華なラインナップとなりました。 00:00 ハイライト 01:05 華純連 09:49 阿波踊りレジェンド 12:34 炎士 26:25 浅草雷連 37:30 江戸歌舞伎連 【総踊り】浅草阿波おどり 2026 / Asakusa Awa Odori 5th https://youtu.be/4OoPhBNHALA #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #組踊り #浅草雷連 #江戸歌舞伎連 #炎士 #華純連",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-12T04:38:21+00:00",
+          "score": 0,
+          "song_name": "浅草阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=4OoPhBNHALA",
+          "text": "【浅草阿波おどり】 開催日時：2026年10月11日（日）16:00〜18:30 開催場所：浅草六区ブロードウェイ、浅草西参道商店街 #浅草阿波おどり #浅草寺 #阿波おどり #阿波踊り #総踊り",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-10-11T14:37:50+00:00",
+          "score": 0,
+          "song_name": "浅草阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 3,
       "speaker_count": 1
     },
     {
@@ -557759,6 +558638,47 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:5c962e99657bebca0135ee01d9e669519871a2162ad07b1646be9b3b5129629d",
+      "display_name": "各連の踊り",
+      "normalized_event": "和太鼓やお",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:2a430ba69f72642071d6e87830a2bbfb50d878d9bed4102edc572a606956acc8",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=RzgbuuR_TkY",
+          "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：総踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-11T22:00:15+00:00",
+          "score": 12,
+          "song_name": "各連の踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月11日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:213a0dabcdab34f1219db50fc6315106d9d1d70950dcbfa797d809db45a84398",
       "display_name": "吉川なまず音頭",
       "normalized_event": "",
@@ -576219,6 +577139,47 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:12781c687305c64934e0fe48f99e29770e77d72625f4f26576f8b59d1839af91",
+      "display_name": "浅草阿波おどり",
+      "normalized_event": "和太鼓やお",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:2a430ba69f72642071d6e87830a2bbfb50d878d9bed4102edc572a606956acc8",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=RzgbuuR_TkY",
+          "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：総踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-11T22:00:15+00:00",
+          "score": 12,
+          "song_name": "浅草阿波おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月11日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:33f5ee3acb30db948b6ad388d82f13249efeed9f294d31e023be82a07eb3291b",
       "display_name": "浅虫音頭",
       "normalized_event": "",
@@ -581822,6 +582783,47 @@
           "estimated_event": "",
           "estimated_venue": "",
           "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:95244bb79218b127c031cf3f0fd98c641200da56a5e0b9a6337d4e86d39c3e73",
+      "display_name": "第5回浅草阿波踊り",
+      "normalized_event": "和太鼓やお",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:2a430ba69f72642071d6e87830a2bbfb50d878d9bed4102edc572a606956acc8",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=RzgbuuR_TkY",
+          "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：総踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-11T22:00:15+00:00",
+          "score": 12,
+          "song_name": "第5回浅草阿波踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月11日"
+          ]
         }
       ],
       "reasons": [
@@ -589104,6 +590106,47 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:c0162284c56cb3cffe1d7ca8feae0d0fd3f1fd49ed5504a4b3f6183c96d654d2",
+      "display_name": "阿波踊り",
+      "normalized_event": "和太鼓やお",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:2a430ba69f72642071d6e87830a2bbfb50d878d9bed4102edc572a606956acc8",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=RzgbuuR_TkY",
+          "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：総踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-11T22:00:15+00:00",
+          "score": 12,
+          "song_name": "阿波踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月11日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:fca2b88688302a4573d6d4cd85b3fdd88f33dccb7d21e3cb4c3cef5203794172",
       "display_name": "陽気な兄さんたちの踊り",
       "normalized_event": "",
@@ -594369,6 +595412,51 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:53726d0e50ae9574b4b88f6ed2632f0c840ea57d2dcb01ab0547af12d773516b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_rwwVn3kG60",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T12:00:31+00:00",
+          "score": 15,
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:b0d4425e2cc7380cd66fab4a7b39585b90393f6399a4ec8fae25df17673c82ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=yMDFoujd7Ug",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T08:00:05+00:00",
+          "score": 15,
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:46f870ab16636b4a0e6f219ce0cf9159b58fe20d71ad25664a7abb38d2307d25",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=yM5FdyULscw",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T06:00:22+00:00",
+          "score": 15,
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:8c9a4e9435e2f74f912099bebf262f098972311241bf200c67dccc5a409d24f6",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=rEBP9mMIXF4",
@@ -594445,7 +595533,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 8,
       "speaker_count": 2
     },
     {
@@ -605813,6 +606901,21 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:e2ffbcfe3c810f0c47cb48881f8ee227c85744d81149606808285b0d21d21f01",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=9U2yNAYXMfk",
+          "text": "2026年10月10日に開催された 「港区制80周年記念 みなと区民まつり」より、増上寺大殿前ステージで行われた【町田春駒会】による「郡上おどり」の演舞の模様です。 唄い手は、郡上八幡の吉村建治さん（通称：ゴンタさん）。 歴史ある増上寺の大殿を背景に、 心地よいお囃子の音色と踊り手の皆さんの熱気あふれる素晴らしい演舞が繰り広げられました。 伝統の踊りの魅力と、お祭りの活気ある雰囲気をぜひお楽しみください！ 【開催概要】 ・イベント名：港区制80周年記念 みなと区民まつり ・開催日：2026年10月10日（土） ・会場：増上寺 大殿前ステージ ・出演：町田春駒会 （吉村建治さん（通称：ゴンタさん）） ・演目：郡上おどり 動画が気に入っていただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆様からのコメントや感想もお待ちしております。 #みなと区民まつり #増上寺 #郡上おどり #町田春駒会 #日本の祭り #和太鼓お祭りチャンネル みなと区民まつり（郡上おどり） １かわさき https://youtu.be/6ht8LKVSfcU ２三百 https://youtu",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T03:00:10+00:00",
+          "score": 12,
+          "estimated_event": "みなと区民まつり",
+          "estimated_venue": "増上寺",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:768676994ca14f11b23273d63d97311bb28bd8fb2b4bc9c315a2d563e58f811d",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=xmQcHOpbs7A",
@@ -605859,7 +606962,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1
     },
     {
@@ -608636,6 +609739,36 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:5b36f5eb4c0ac04c36e68c1a966fad21e3466c109a34639f76ddf2f37d5679ac",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2FLdpyaSLOg",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:30:38+00:00",
+          "score": 17,
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e72ad6846d7956e79535bdb793c6f717ba56822edc39a5311a85f34b7ad9dd19",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1pA0N4--vE8",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T10:00:25+00:00",
+          "score": 17,
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:b349a3fb877686df677b02d4d574609f5a42f24c131e97385bd821282519e471",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=CkevMWxp0Ws",
@@ -608817,7 +609950,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 12,
+      "evidence_count": 14,
       "speaker_count": 1
     },
     {
@@ -609478,6 +610611,21 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:3faa23db771240811eba066e8fc895839f37d877292af0441301371d9281068b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2mCS_L_FyMA",
+          "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T00:00:04+00:00",
+          "score": 17,
+          "estimated_event": "矢口氷川神社例大祭盆踊り",
+          "estimated_venue": "矢口氷川神社",
+          "time_hints": [
+            "2026年9月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:13d0a657105c39735324ef2de6d538aec166e5741981c8a707596011b9936672",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=NoqJ1sivnuc",
@@ -609614,7 +610762,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 9,
+      "evidence_count": 10,
       "speaker_count": 1
     },
     {
@@ -610580,6 +611728,36 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:a8acf8eb84432f1d378f60f421f0bd7224e71f7d2c92b875dc27810f3e9e3c34",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2AIj2YqzSnY",
+          "text": "2026年9月5日、 南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。 グラウンドに鳴り響く大太鼓の力強い轟音と、 熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！ 【開催概要】 イベント名：荒川区文化祭 大太鼓盆踊り大会 開催日：2026年9月5日（土） 場所：南千住野球場（東京都荒川区） 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。 #大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓 荒川区大太鼓盆踊り １大東京音頭 https://youtu.be/XC0xMR-0bls ２荒川音頭 https://youtu.be/RY-4q9gj5tk ３東京音頭 https://youtu.be/AQ8luKOTx5I ４炭坑節 https://youtu.be/Kzx2KgAPIc8 ５少年八木節 https://youtu.be/GIalvZLODCw ６しあわせ通り 荒川区商",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T11:30:22+00:00",
+          "score": 17,
+          "estimated_event": "大太鼓盆踊り大会",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:2f27f81ffb767b3de335141f869f83528ff02d2723f691a85fb4e65549039196",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Fce6xbPvRc8",
+          "text": "2026年9月5日、 南千住野球場にて開催された荒川区文化祭「大太鼓盆踊り大会」の様子です。 グラウンドに鳴り響く大太鼓の力強い轟音と、 熱気あふれる盆踊りの盛り上がりをぜひ映像でお楽しみください！ 【開催概要】 イベント名：荒川区文化祭 大太鼓盆踊り大会 開催日：2026年9月5日（土） 場所：南千住野球場（東京都荒川区） 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲やお祭りの思い出なども、ぜひコメント欄で教えてください。 #大太鼓盆踊り大会 #荒川区文化祭 #盆踊り #南千住野球場 #荒川区 #和太鼓 #日本の祭り #大太鼓 荒川区大太鼓盆踊り １大東京音頭 https://youtu.be/XC0xMR-0bls ２荒川音頭 https://youtu.be/RY-4q9gj5tk ３東京音頭 https://youtu.be/AQ8luKOTx5I ４炭坑節 https://youtu.be/Kzx2KgAPIc8 ５少年八木節 https://youtu.be/GIalvZLODCw ６しあわせ通り 荒川区商",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-12T11:00:39+00:00",
+          "score": 17,
+          "estimated_event": "大太鼓盆踊り大会",
+          "estimated_venue": "荒川区商店街",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:e27e3cd9d7c0862ba5547c2a038ebeb6b5ebb691582f1f6091c516eb17e92115",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=QLddt_CA3fo",
@@ -610671,7 +611849,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 6,
+      "evidence_count": 8,
       "speaker_count": 1
     },
     {
