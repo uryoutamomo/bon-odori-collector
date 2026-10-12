@@ -55,7 +55,7 @@ verified_by:
   - tests/test_verify_occurrence_identity_migration.py
   - tests/test_public_event_sync_occurrence_identity.py
   - tests/test_verify_official_source_link_projection.py
-updated_for: 89970c4adec040111f5b062115c17918258f905e
+updated_for: 1c31077ec6f79299598d8b024b4247b0edb8a987
 ---
 
 # 公開サブシステム
@@ -326,9 +326,11 @@ Master RDB に溜まった事実を、公開サイト bonsuke.jp が読む形（
 - **内容**: stable IDと旧name/venueは両側で一意なaliasだけ橋渡しし、既存の異なるID同士や既存IDを上書きする橋渡しを拒否する。v1承認のhash互換は追加した`occurrence_id`と`event_year`だけを除外し、それ以外の型・未知field・欠落/nullを保持する。IDを持つ新承認はIDと全payload hashを固定する。旧台帳は削除・書き換えず、曖昧な旧承認はblockする。終了・期限切れ・曲だけの例外の適用範囲も広げない。
 - **なぜ**: ID追加を理由に旧hash検査全体を緩めると、未レビューの日程や出典変更まで流れる。
 - **旧承認の再評価**: 同じ実行でID指定・全payload hash固定のv2更新を実際に適用した後だけ、旧v1のhash mismatchを再評価する。旧aliasが両側で一意に同じIDへ解決し、最終site/collectorのID・年・全payload hashが一致する場合だけ同期済みとする。別ID・異年・曖昧alias・不正hash・未適用承認は救済しない。旧承認は書き換えず、`revalidated_by`に適用済みv2を記録する。
+- **旧承認の時間経過による退役**: 終了・期限切れの分類キーが開催回IDで、旧承認の到達先がname/venueの場合、元のcollector/siteの到達先aliasが両側で一意に同じID・明示年へ解決し、承認の両hashが正しい形式であるときだけ、そのIDの既存退役判定へ渡す。改名承認は到達先aliasを使う。末尾1件の退役と同じ旧キー・hashで連結された履歴のsuperseded判定を維持する。別ID・異年・曖昧alias・不正hash・未承認detail/日付/出典変更はblockし、v2が`consumed_at_site`であることだけで旧承認を免除しない。台帳も比較用データも書き換えない。
+- **事故の症状**: 2026-10-12のsite sync run `38274237823`では、終了・期限切れだけの差分に旧承認のaliasが開催回IDとして照合されず、荒木町・ハイラークの旧承認各2件と大久保の旧改名承認が`reviewed_exact_approval_mismatch`となり公開同期を止めた。
 - **破れたときの症状**: 別年への承認再利用、同名の行消失、ID追加と一緒に内容が勝手に変わる。
 - **守っているコード**: `guard_public_events_sync.py`、`paired_indexes()`、`scripts/verify_occurrence_identity_migration.py`。
-- **守っているテスト**: `tests/test_guard_public_events_sync.py`、`tests/test_occurrence_identity.py::test_legacy_bridge_never_overwrites_an_existing_identity_on_either_side`、`tests/test_verify_occurrence_identity_migration.py::test_migration_refuses_unrelated_change_and_wrong_binding`。
+- **守っているテスト**: `tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_identified_legacy_chain_retires_after_ended_transition_with_consumed_v2`、`tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_identified_legacy_rename_retires_only_for_verified_expired_slide`、`tests/test_guard_public_events_sync.py::PublicEventsSyncGuardTest::test_legacy_temporal_binding_rejects_ambiguous_other_year_and_invalid_hash`、`tests/test_occurrence_identity.py::test_legacy_bridge_never_overwrites_an_existing_identity_on_either_side`、`tests/test_verify_occurrence_identity_migration.py::test_migration_refuses_unrelated_change_and_wrong_binding`。
 
 ### INV-PUB-015 当年のtyped公式Web出典を公開へ保持する
 

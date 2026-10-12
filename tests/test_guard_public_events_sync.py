@@ -1572,6 +1572,71 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         mark_retired_temporal_approvals(results, approvals, {"occurrence:occ_2026"}, set())
         self.assertEqual(results[0]["status"], "hash_mismatch")
 
+    def test_identified_legacy_chain_retires_after_ended_transition_with_consumed_v2(self):
+        site = {**self.published_event(), "occurrence_id": "occ_same", "event_year": 2026,
+                "detail": "current"}
+        first = self.same_key_approval({**site, "detail": "original"}, {**site, "detail": "middle"})
+        second = self.same_key_approval({**site, "detail": "middle"}, {**site, "detail": "reviewed"})
+        second["id"] = "review-2"
+        v2 = {"id": "v2-current", "kind": "same_key_update", "occurrence_id": "occ_same",
+              "site_sha256": full_event_sha256({**site, "detail": "reviewed"}),
+              "collector_sha256": full_event_sha256(site)}
+        collector = {**site, "public_category": "ended", "display_tier": "ended",
+                     "current_event_state": "ended"}
+        approvals = [first, second, v2]
+        snapshot = copy.deepcopy(approvals)
+        result = self.run_build([collector], [site], approvals)
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertEqual(result["reviewed_exact_approvals"]["status_counts"],
+                         {"superseded": 1, "retired_after_ended_transition": 1, "consumed_at_site": 1})
+        self.assertEqual(result["reviewed_exact_approvals"]["results"][0]["superseded_by"], "review-2")
+        self.assertEqual(approvals, snapshot)
+        for field, value in (("detail", "unreviewed"), ("date", "2026-07-27"),
+                             ("source_urls", [{"url": "https://unreviewed.example"}])):
+            with self.subTest(field=field):
+                blocked = self.run_build([{**collector, field: value}], [site], approvals)
+                self.assertEqual(blocked["decision"]["status"], "block")
+                self.assertIn("reviewed_exact_approval_mismatch", blocked["decision"]["failures"])
+
+    def test_identified_legacy_rename_retires_only_for_verified_expired_slide(self):
+        slide = {"date": "2026-07-28", "date_end": "2026-07-29"}
+        reviewed = {"name": "renamed", "venue": "park", "occurrence_id": "occ_same", "event_year": 2025,
+                    "detail": "reviewed", "display_tier": "historical_slide",
+                    "historical_display_tier": "historical_slide", "historical_slide": slide,
+                    "historical_reference": {"display_tier": "historical_slide", "slide": slide, "score": 0.6}}
+        approval = self.key_replacement_approval({**reviewed, "name": "old name"}, reviewed)
+        site = {**reviewed, "detail": "current"}
+        collector = {**site, "display_tier": "historical_reference", "historical_display_tier": "historical_reference",
+                     "historical_reference": {"display_tier": "historical_reference", "score": 0.6}}
+        collector.pop("historical_slide")
+        result = self.run_build([collector], [site], [approval])
+        self.assertEqual(result["decision"]["status"], "pass")
+        self.assertEqual(result["reviewed_exact_approvals"]["status_counts"], {"retired_after_expired_slide": 1})
+        for changed, today in ((collector, "2026-07-29"), ({**collector, "detail": "unreviewed"}, "2026-07-31"),
+                               ({**collector, "event_year": 2026}, "2026-07-31")):
+            with self.subTest(changed=changed, today=today):
+                result = self.run_build([changed], [site], [approval], today=today)
+                self.assertEqual(result["decision"]["status"], "block")
+
+    def test_legacy_temporal_binding_rejects_ambiguous_other_year_and_invalid_hash(self):
+        site = {**self.published_event(), "occurrence_id": "occ_same", "event_year": 2026}
+        collector = {**site, "public_category": "ended", "display_tier": "ended", "current_event_state": "ended"}
+        approval = self.same_key_approval({**site, "detail": "old"}, {**site, "detail": "reviewed"})
+        for collector_rows, site_rows, request in (
+            ([{**collector, "event_year": 2025}], [site], approval),
+            ([{**collector, "occurrence_id": "occ_other"}], [site], approval),
+            ([collector, {**collector, "occurrence_id": "occ_other", "event_year": 2025}],
+             [site, {**site, "occurrence_id": "occ_other", "event_year": 2025}], approval),
+            ([collector], [site], {**approval, "site_sha256": "broken"}),
+            ([collector], [site], {**approval, "collector_sha256": "broken"}),
+        ):
+            with self.subTest(collector_rows=collector_rows, request=request):
+                result = self.run_build(collector_rows, site_rows, [request])
+                self.assertEqual(result["decision"]["status"], "block")
+                self.assertIn("reviewed_exact_approval_mismatch", result["decision"]["failures"])
+                self.assertFalse(any(row["status"].startswith("retired_")
+                                     for row in result["reviewed_exact_approvals"]["results"]))
+
     def test_event_year_is_validated_but_not_bound_to_cli_target_year(self):
         # Historical occurrences remain in a current-year public projection.
         from public_export_support.occurrence_identity import index_events

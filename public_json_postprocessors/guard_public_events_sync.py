@@ -261,7 +261,8 @@ def mark_superseded_same_key_approvals(results, approvals):
 
 
 def mark_retired_temporal_approvals(
-    results, approvals, ended_transition_event_keys, expired_slide_event_keys
+    results, approvals, ended_transition_event_keys, expired_slide_event_keys,
+    *, collector_rows=None, site_rows=None,
 ):
     """Retire only the latest stale approval for each proven time-only change.
 
@@ -293,6 +294,34 @@ def mark_retired_temporal_approvals(
             arrival_key = _approval_scope(approval, arrival=True)
         else:
             continue
+
+        if (
+            arrival_key not in pending_keys
+            and not _approval_is_occurrence_scoped(approval)
+            and collector_rows is not None and site_rows is not None
+        ):
+            # v1 history names a unique alias; temporal classification names
+            # an occurrence. Bind only an extant, identical ID/year pair.
+            # Never infer a year or join differing IDs by their display name.
+            try:
+                collector_key = _legacy_unique_key(collector_rows, arrival_key)
+                site_key = _legacy_unique_key(site_rows, arrival_key)
+                if not collector_key or collector_key != site_key or not collector_key.startswith("occurrence:"):
+                    continue
+                collector_event = next(row for row in collector_rows if identity_key(row) == collector_key)
+                site_event = next(row for row in site_rows if identity_key(row) == site_key)
+                if event_year(collector_event, required=True) != event_year(site_event, required=True):
+                    continue
+            except (TypeError, ValueError):
+                continue
+            if not all(
+                isinstance(approval.get(field), str)
+                and len(approval[field]) == 64
+                and all(char in "0123456789abcdef" for char in approval[field])
+                for field in ("site_sha256", "collector_sha256")
+            ):
+                continue
+            arrival_key = collector_key
 
         if arrival_key not in pending_keys:
             continue
@@ -580,7 +609,10 @@ def apply_reviewed_exact_approvals(
         results, approvals, collector_rows, approved_site_rows,
     )
     mark_superseded_same_key_approvals(results, approvals)
-    mark_retired_temporal_approvals(results, approvals, ended_transition_event_keys, expired_slide_event_keys)
+    mark_retired_temporal_approvals(
+        results, approvals, ended_transition_event_keys, expired_slide_event_keys,
+        collector_rows=collector_rows, site_rows=site_rows,
+    )
     mark_superseded_same_key_approvals(results, approvals)
     status_counts = dict(Counter(result["status"] for result in results))
     failure_count = sum(count for status, count in status_counts.items() if status in {"invalid_approval", "hash_mismatch"})
