@@ -1,19 +1,18 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-12T15:29:06.839823+00:00",
+  "generated_at": "2026-10-13T14:21:53.907914+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-12T15:29:00.151286+00:00",
+  "source_generated_at": "2026-10-13T14:21:49.127190+00:00",
   "days": 3,
-  "voice_count": 52,
-  "candidate_count": 17,
+  "voice_count": 46,
+  "candidate_count": 14,
   "category_counts": {
-    "曲×会場共起": 2,
-    "曲候補": 14,
-    "用語候補": 1
+    "曲×会場共起": 1,
+    "曲候補": 13
   },
-  "non_song_review_count": 3,
-  "song_candidate_count": 14,
-  "song_direct_dry_run_count": 7,
+  "non_song_review_count": 1,
+  "song_candidate_count": 13,
+  "song_direct_dry_run_count": 6,
   "song_review_count": 3,
   "song_rejected_noise_count": 4,
   "review_files": {
@@ -28,9 +27,7 @@
   ],
   "samples": {
     "non_song_review": [
-      "東京音頭 × 上野恩賜公園",
-      "ダンシングヒーロー × 上野恩賜公園",
-      "踊り会"
+      "東京音頭 × 上野恩賜公園"
     ],
     "song_review": [
       "荒川音頭",

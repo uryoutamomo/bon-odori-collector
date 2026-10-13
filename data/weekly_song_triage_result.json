@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 14,
-  "direct_count": 7,
+  "song_candidate_count": 13,
+  "direct_count": 6,
   "created_count": 3,
-  "updated_count": 4,
+  "updated_count": 3,
   "rejected_noise_count": 4,
   "review_count": 3,
   "created": [
@@ -57,14 +57,6 @@
       "venue_relations": 0,
       "event_relations": 1,
       "dry_run": true
-    },
-    {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 1,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -88,7 +80,7 @@
   "review": [
     {
       "term": "荒川音頭",
-      "evidence_count": 6,
+      "evidence_count": 4,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://www.youtube.com/watch?v=2AIj2YqzSnY"
     },
@@ -102,7 +94,7 @@
       "term": "ズンパ音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=2mCS_L_FyMA"
+      "evidence_url": "https://www.youtube.com/watch?v=pnhXf0dmn5M"
     }
   ]
 }
