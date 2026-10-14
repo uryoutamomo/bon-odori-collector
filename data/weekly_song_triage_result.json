@@ -61,12 +61,12 @@
   ],
   "rejected_noise": [
     {
-      "term": "伝統の踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
       "term": "阿波踊り",
       "reason": "SongCatalog: RDBで無効と判定済み"
+    },
+    {
+      "term": "伝統の踊り",
+      "reason": "曲名としての形が弱い"
     },
     {
       "term": "各連の踊り",
@@ -79,22 +79,22 @@
   ],
   "review": [
     {
+      "term": "ズンパ音頭",
+      "evidence_count": 3,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=2wYCbhHMNTE"
+    },
+    {
       "term": "荒川音頭",
-      "evidence_count": 4,
+      "evidence_count": 2,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://www.youtube.com/watch?v=2AIj2YqzSnY"
     },
     {
       "term": "郡上おどり",
-      "evidence_count": 4,
+      "evidence_count": 1,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://www.youtube.com/watch?v=9U2yNAYXMfk"
-    },
-    {
-      "term": "ズンパ音頭",
-      "evidence_count": 3,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=pnhXf0dmn5M"
     }
   ]
 }
