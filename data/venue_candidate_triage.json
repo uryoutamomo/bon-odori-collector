@@ -3,7 +3,7 @@
     "registered_alias": 15,
     "research": 535,
     "registered": 83,
-    "noise": 10
+    "noise": 11
   },
   "items": [
     {
@@ -6000,6 +6000,17 @@
       "source_title": "渋谷区の盆おどり情報 2026年1月より [Shibuya-q]",
       "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00m-shibuya-q.html",
       "in_tsukiji_30min_guess": false
+    },
+    {
+      "venue": "区民まつり芸能部会ステージ前広場",
+      "region_hint": "港区",
+      "status": "noise",
+      "mapped_to": null,
+      "reason": "generic_or_fragment",
+      "priority": "skip",
+      "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00c-minato-q.html",
+      "in_tsukiji_30min_guess": true
     },
     {
       "venue": "三峰公園",

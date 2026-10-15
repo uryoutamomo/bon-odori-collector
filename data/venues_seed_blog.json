@@ -1305,6 +1305,15 @@
     "needs_review": true
   },
   {
+    "venue": "区民まつり芸能部会ステージ前広場",
+    "region_hint": "港区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "区立青葉公園",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
