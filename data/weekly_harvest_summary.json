@@ -1,20 +1,20 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-14T12:00:35.544467+00:00",
+  "generated_at": "2026-10-15T11:35:44.761481+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-14T12:00:29.793462+00:00",
+  "source_generated_at": "2026-10-15T11:35:37.873132+00:00",
   "days": 3,
-  "voice_count": 35,
-  "candidate_count": 14,
+  "voice_count": 26,
+  "candidate_count": 9,
   "category_counts": {
     "曲×会場共起": 1,
-    "曲候補": 13
+    "曲候補": 8
   },
   "non_song_review_count": 1,
-  "song_candidate_count": 13,
-  "song_direct_dry_run_count": 6,
-  "song_review_count": 3,
-  "song_rejected_noise_count": 4,
+  "song_candidate_count": 8,
+  "song_direct_dry_run_count": 7,
+  "song_review_count": 1,
+  "song_rejected_noise_count": 0,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -30,9 +30,7 @@
       "東京音頭 × 上野恩賜公園"
     ],
     "song_review": [
-      "ズンパ音頭",
-      "荒川音頭",
-      "郡上おどり"
+      "ズンパ音頭"
     ]
   }
 }
