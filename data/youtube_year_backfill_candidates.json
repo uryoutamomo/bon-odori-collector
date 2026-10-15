@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-09-18T22:19:53.876107+00:00",
+  "generated_at": "2026-10-15T22:54:53.707655+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 3,
+  "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 925,
+    "candidate_count": 927,
     "status_counts": {
       "review": 74,
       "strong": 245,
-      "weak": 606
+      "weak": 608
     },
     "strong_count": 245,
     "review_count": 74
@@ -38291,6 +38291,30 @@
       "status": "weak",
       "score": 15,
       "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "target_year": 2023,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "",
+      "video_id": "qMWFiqP0ZdQ",
+      "video_url": "https://www.youtube.com/watch?v=qMWFiqP0ZdQ",
+      "title": "雷門盆踊りが始まったぞー#雷門#浅草",
+      "channel_id": "UCn3_xFWZmWueQZBb7CD1n8Q",
+      "channel_title": "どんびろ",
+      "published_at": "2023-09-09T08:50:52Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/qMWFiqP0ZdQ/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "浅草雷門前で盆踊りが始まりました 屋台も出てるよ 撮影機器：OPPO FindX3Pro 編集：ライブ"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
         "other_year_date_detected",
         "bon_context"
       ],
@@ -39503,6 +39527,30 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "★チャンネル登録まだの方は、こちらからよろしくお願いします https://www.youtube.com/channel/UC2iYZBVlTFLnIwhwOwQfajQ/featured ＃高校野球 ＃西東京大会 ＃選手権大会 ＃夏の大会 ＃日大三 ＃小倉監督 ＃全国高校野球選手権大会"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [
+        "other_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2022-08-21",
+      "video_id": "5rJvJ4OAH20",
+      "video_url": "https://www.youtube.com/watch?v=5rJvJ4OAH20",
+      "title": "伊藤ゆい＆DJHINA(expiece) ：2022/8/21 パンダ広場 #shorts",
+      "channel_id": "UCBgI0zy4Pb49cwv-rsopQ8w",
+      "channel_title": "テスプムービー",
+      "published_at": "2023-01-01T08:25:28Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/5rJvJ4OAH20/maxresdefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#伊藤ゆい #DJHINA #expiece"
     },
     {
       "status": "weak",
@@ -41355,5 +41403,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-09-18T22:19:53.067463+00:00"
+  "merged_from": "2026-10-15T22:54:53.178868+00:00"
 }
