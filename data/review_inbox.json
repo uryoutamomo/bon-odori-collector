@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-14T12:09:56.991804+00:00",
+  "generated_at": "2026-10-15T11:36:51.379440+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,443 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_01ca94bd5b6cca07",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/4（火）・5（水）　池上本門寺みたま祭り納涼盆踊り大会　池上音頭、本門寺音頭など毎年楽しみにしているご当地音頭も　「合掌ポーズ」などがお初の方に新鮮🙏｜庄嶋",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086243169600163997",
+      "source_url": "https://x.com/TakahiroShojima/status/2086243169600163997",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ae2a89c36d5c769ff25dc3c4fb3f836a628536e67e62babb496e156f712d9680",
+      "last_seen_at": "github-38727299991-1",
+      "created_at": "2026-10-15T11:36:19.688863+00:00",
+      "updated_at": "2026-10-15T11:36:19.688863+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_95908c171c820222",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/4"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区池上1-1-1",
+          "region_hint": "大田区",
+          "source_url": "https://honmonji.jp/news/schedule.html",
+          "venue": "池上本門寺"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@TakahiroShojima",
+        "source_count": 1,
+        "source_key": "x:2086243169600163997",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "庄嶋たかひろ 大田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@takahiroshojima",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/4（火）・5（水）　池上本門寺みたま祭り納涼盆踊り大会　池上音頭、本門寺音頭など毎年楽しみにしているご当地音頭も　「合掌ポーズ」などがお初の方に新鮮🙏｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/uWjS4cAu9C",
+        "source_url": "https://x.com/TakahiroShojima/status/2086243169600163997",
+        "source_urls": [
+          "https://x.com/TakahiroShojima/status/2086243169600163997"
+        ],
+        "voice": {
+          "account": "@TakahiroShojima",
+          "date": "2026-08-09T00:08:26+00:00",
+          "name": "庄嶋たかひろ 大田区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "8/4（火）・5（水）　池上本門寺みたま祭り納涼盆踊り大会　池上音頭、本門寺音頭など毎年楽しみにしているご当地音頭も　「合掌ポーズ」などがお初の方に新鮮🙏｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/uWjS4cAu9C",
+          "title": "",
+          "tweet_id": "2086243169600163997",
+          "url": "https://x.com/TakahiroShojima/status/2086243169600163997"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_25e2f58b75eda3d0",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日の #盆おどり にはたくさんの方がお越しくださいました。ありがとうございました。盛り上がりましたね♪　今朝の公園ごみ拾いで落とし物がありました。お心当たりの",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086255334121980224",
+      "source_url": "https://x.com/sodegauradanchi/status/2086255334121980224",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1a73da10c361921e86f2beea982364854cc6b0e2cb9ddfc42f00b5090913f7bb",
+      "last_seen_at": "github-38727299991-1",
+      "created_at": "2026-10-15T11:36:19.688863+00:00",
+      "updated_at": "2026-10-15T11:36:19.688863+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1bd0dad83d23b0d1",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "17時",
+          "21時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@sodegauradanchi",
+        "source_count": 1,
+        "source_key": "x:2086255334121980224",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPPeJ7zbcAAiV-Y.jpg",
+          "https://t.co/XkzKqAzUby",
+          "pic.x.com/XkzKqAzUby",
+          "https://pbs.twimg.com/media/HPPeKlQaAAAl9aO.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "袖ケ浦団地自治会",
+          "classification": "registered_official_social",
+          "handle": "@sodegauradanchi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日の #盆おどり にはたくさんの方がお越しくださいました。ありがとうございました。盛り上がりましたね♪　今朝の公園ごみ拾いで落とし物がありました。お心当たりの方、本日本部テントにお越しください。本日も17時〜21時までです。 #袖ケ浦団地 #袖ヶ浦 #習志野市 #自治会 #落とし物 https://t.co/XkzKqAzUby",
+        "source_url": "https://x.com/sodegauradanchi/status/2086255334121980224",
+        "source_urls": [
+          "https://x.com/sodegauradanchi/status/2086255334121980224"
+        ],
+        "voice": {
+          "account": "@sodegauradanchi",
+          "date": "2026-08-09T00:56:47+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPPeJ7zbcAAiV-Y.jpg",
+            "https://t.co/XkzKqAzUby",
+            "pic.x.com/XkzKqAzUby",
+            "https://pbs.twimg.com/media/HPPeKlQaAAAl9aO.jpg"
+          ],
+          "name": "袖ケ浦団地自治会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "昨日の #盆おどり にはたくさんの方がお越しくださいました。ありがとうございました。盛り上がりましたね♪　今朝の公園ごみ拾いで落とし物がありました。お心当たりの方、本日本部テントにお越しください。本日も17時〜21時までです。 #袖ケ浦団地 #袖ヶ浦 #習志野市 #自治会 #落とし物 https://t.co/XkzKqAzUby",
+          "title": "",
+          "tweet_id": "2086255334121980224",
+          "url": "https://x.com/sodegauradanchi/status/2086255334121980224"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3166e67a539ec02a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日は、柳橋自治会の納涼盆踊り大会へ #谷口かずふみ 県議と一緒に参加しご挨拶をさせていただきました🤗\nこちらでも多くの方々からの貴重なご意見と #公明党 に対",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086227832615887073",
+      "source_url": "https://x.com/MToribuchi/status/2086227832615887073",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "846e4bc7911e8a44c6abd47671cd09935c3048bf676ee06436cea3e9a2b2ff83",
+      "last_seen_at": "github-38727299991-1",
+      "created_at": "2026-10-15T11:36:19.688863+00:00",
+      "updated_at": "2026-10-15T11:36:19.688863+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_c8c7247456f7ee97",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "６時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@MToribuchi",
+        "source_count": 1,
+        "source_key": "x:2086227832615887073",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPPFJ8caAAAmFRh.jpg",
+          "https://t.co/ITtB4JHecJ",
+          "pic.x.com/ITtB4JHecJ",
+          "https://pbs.twimg.com/media/HPPFJ8caMAA3e4M.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "とりぶち 優 大和市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@mtoribuchi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日は、柳橋自治会の納涼盆踊り大会へ #谷口かずふみ 県議と一緒に参加しご挨拶をさせていただきました🤗\nこちらでも多くの方々からの貴重なご意見と #公明党 に対しての励ましのお言葉😊感謝、感謝です😊\n\nさて今朝は、早朝６時より地元夏祭りの会場周辺の樹木の剪定🌳自治会役員有志に加え、親和クラブ(老人会)の大先輩方も応援に駆けつけてくださいました😃90歳の大先輩は園芸三脚持参😃気がつけば20名近くの参加🥹\n休憩タイムには冷えたバナナ🍌と麦茶まで🥹\n桜ヶ丘親和会😃本当に素敵な自治会です🤗\n皆様、早朝より本当にありがとうございました😊",
+        "source_url": "https://x.com/MToribuchi/status/2086227832615887073",
+        "source_urls": [
+          "https://x.com/MToribuchi/status/2086227832615887073"
+        ],
+        "voice": {
+          "account": "@MToribuchi",
+          "date": "2026-08-08T23:07:30+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPPFJ8caAAAmFRh.jpg",
+            "https://t.co/ITtB4JHecJ",
+            "pic.x.com/ITtB4JHecJ",
+            "https://pbs.twimg.com/media/HPPFJ8caMAA3e4M.jpg"
+          ],
+          "name": "とりぶち 優 大和市議会議員",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "昨日は、柳橋自治会の納涼盆踊り大会へ #谷口かずふみ 県議と一緒に参加しご挨拶をさせていただきました🤗\nこちらでも多くの方々からの貴重なご意見と #公明党 に対しての励ましのお言葉😊感謝、感謝です😊\n\nさて今朝は、早朝６時より地元夏祭りの会場周辺の樹木の剪定🌳自治会役員有志に加え、親和クラブ(老人会)の大先輩方も応援に駆けつけてくださいました😃90歳の大先輩は園芸三脚持参😃気がつけば20名近くの参加🥹\n休憩タイムには冷えたバナナ🍌と麦茶まで🥹\n桜ヶ丘親和会😃本当に素敵な自治会です🤗\n皆様、早朝より本当にありがとうございました😊",
+          "title": "",
+          "tweet_id": "2086227832615887073",
+          "url": "https://x.com/MToribuchi/status/2086227832615887073"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_bd6bf0ae095f7c75",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "本日は14時〜20時\n駒澤大学駒沢キャンパス\n駒沢ふれあい広場夏祭り\nです！\n他にもお祭の予定がありますが、駒大にはり付いておりますので伺えません。申し訳ござい",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086237515137356237",
+      "source_url": "https://x.com/mana_setagaya/status/2086237515137356237",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2b7b1f3068970f9c3f4dbb4b9f319a5b3e42e85a01f9e4fd4efda21ab931f8a6",
+      "last_seen_at": "github-38727299991-1",
+      "created_at": "2026-10-15T11:36:19.688863+00:00",
+      "updated_at": "2026-10-15T11:36:19.688863+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_abbeaf8f550ff914",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "14時",
+          "20時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "世田谷区駒沢1-23-1",
+          "region_hint": "世田谷区",
+          "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+          "venue": "駒澤大学 駒沢キャンパス"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@mana_setagaya",
+        "source_count": 1,
+        "source_key": "x:2086237515137356237",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPPN9gebkAA0VTS.jpg",
+          "https://t.co/PRoRGfJEWl",
+          "pic.x.com/PRoRGfJEWl"
+        ],
+        "source_officiality": {
+          "account_name": "藤井まな：世田谷区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@mana_setagaya",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n本日は14時〜20時\n駒澤大学駒沢キャンパス\n駒沢ふれあい広場夏祭り\nです！\n他にもお祭の予定がありますが、駒大にはり付いておりますので伺えません。申し訳ございません！\n#駒澤大学　#駒沢　#駒大　#駒沢ふれあい広場　#駒沢ふれあい広場夏祭り　#夏祭り　#盆踊り　#駒沢キャンパス https://t.co/PRoRGfJEWl",
+        "source_url": "https://x.com/mana_setagaya/status/2086237515137356237",
+        "source_urls": [
+          "https://x.com/mana_setagaya/status/2086237515137356237"
+        ],
+        "voice": {
+          "account": "@mana_setagaya",
+          "date": "2026-08-08T23:45:58+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPPN9gebkAA0VTS.jpg",
+            "https://t.co/PRoRGfJEWl",
+            "pic.x.com/PRoRGfJEWl"
+          ],
+          "name": "藤井まな：世田谷区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "本日は14時〜20時\n駒澤大学駒沢キャンパス\n駒沢ふれあい広場夏祭り\nです！\n他にもお祭の予定がありますが、駒大にはり付いておりますので伺えません。申し訳ございません！\n#駒澤大学　#駒沢　#駒大　#駒沢ふれあい広場　#駒沢ふれあい広場夏祭り　#夏祭り　#盆踊り　#駒沢キャンパス https://t.co/PRoRGfJEWl",
+          "title": "",
+          "tweet_id": "2086237515137356237",
+          "url": "https://x.com/mana_setagaya/status/2086237515137356237"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c3b4da902b36c381",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【池上】8/8(土)、9(日)に太田神社で市野倉北町会「納涼盆踊り大会」開催\n本日18:30～❤️みんなで一緒に踊って夏の思い出を作りまし",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086286349787664649",
+      "source_url": "https://x.com/otafull/status/2086286349787664649",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "339a529405da6022d801f1e8f03fa7b2529fb6c8dd6fc1fcc8edb20308c8479c",
+      "last_seen_at": "github-38727299991-1",
+      "created_at": "2026-10-15T11:36:19.688863+00:00",
+      "updated_at": "2026-10-15T11:36:19.688863+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1b8eb38e947bff85",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/8"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2086286349787664649",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPFRdiNbYAEi0tz.jpg",
+          "https://t.co/lkvT9xHN8N",
+          "pic.x.com/lkvT9xHN8N"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【池上】8/8(土)、9(日)に太田神社で市野倉北町会「納涼盆踊り大会」開催\n本日18:30～❤️みんなで一緒に踊って夏の思い出を作りましょう🏮✨\nhttps://t.co/k09Zi4Tany\n#大田区　#商店街　#池上　#盆踊り https://t.co/lkvT9xHN8N",
+        "source_url": "https://x.com/otafull/status/2086286349787664649",
+        "source_urls": [
+          "https://x.com/otafull/status/2086286349787664649"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "date": "2026-08-09T03:00:01+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPFRdiNbYAEi0tz.jpg",
+            "https://t.co/lkvT9xHN8N",
+            "pic.x.com/lkvT9xHN8N"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-imminent"
+          ],
+          "text": "【盆踊り情報2026】【池上】8/8(土)、9(日)に太田神社で市野倉北町会「納涼盆踊り大会」開催\n本日18:30～❤️みんなで一緒に踊って夏の思い出を作りましょう🏮✨\nhttps://t.co/k09Zi4Tany\n#大田区　#商店街　#池上　#盆踊り https://t.co/lkvT9xHN8N",
+          "title": "",
+          "tweet_id": "2086286349787664649",
+          "url": "https://x.com/otafull/status/2086286349787664649"
         }
       }
     },
