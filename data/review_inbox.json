@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-16T11:38:25.579042+00:00",
+  "generated_at": "2026-10-16T11:41:26.123875+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -28347,6 +28347,121 @@
       }
     },
     {
+      "inbox_id": "inbox_b5b90d9ea913dd96",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "東京音頭 × 上野恩賜公園",
+      "event_name": "",
+      "venue": "上野恩賜公園",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:東京音頭|venue:上野恩賜公園",
+      "source_url": "https://www.youtube.com/watch?v=tChxDNOsyVs",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f823d11d1210605d7c13f97ade03d007f6653faf211ba2650073ffdc65edf2e9",
+      "last_seen_at": "github-38893173285-1-daily_term_candidate",
+      "created_at": "2026-08-12T08:16:06.743901+00:00",
+      "updated_at": "2026-10-16T11:39:32.800921+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "盆踊りフェス"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-16T11:00:29+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=tChxDNOsyVs"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-15T11:00:10+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=n97vq4F4y3o"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-14T11:00:31+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=AT22epG3Oio"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+        "evidence_url": "https://www.youtube.com/watch?v=tChxDNOsyVs",
+        "interpretation": "上野恩賜公園で東京音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "東京音頭",
+        "term": "東京音頭 × 上野恩賜公園",
+        "type": "共起",
+        "venue": "上野恩賜公園"
+      }
+    },
+    {
+      "inbox_id": "inbox_0f3b70d40a53a2d8",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ズンパ音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:ズンパ音頭",
+      "source_url": "https://www.youtube.com/watch?v=At-CI1KZJBU",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "39aff9258f2951e95a53dcb16cd2642a7bf096062586872b6a48c5ab68db73f3",
+      "last_seen_at": "github-38893173285-1-daily_song_candidate",
+      "created_at": "2026-08-11T08:04:51.717363+00:00",
+      "updated_at": "2026-10-16T11:38:45.340963+00:00",
+      "payload": {
+        "canonical_song_name": "ズンパ音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-15T00:00:37+00:00",
+            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+            "url": "https://www.youtube.com/watch?v=At-CI1KZJBU"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-14T00:00:24+00:00",
+            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+            "url": "https://www.youtube.com/watch?v=2wYCbhHMNTE"
+          }
+        ],
+        "evidence_count": 2,
+        "evidence_text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
+        "evidence_url": "https://www.youtube.com/watch?v=At-CI1KZJBU",
+        "interpretation": "ズンパ音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "ズンパ音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_696d391fcb2bd80d",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -28536,133 +28651,6 @@
         ],
         "video_id": "t8a_g3GNHeY",
         "video_url": "https://www.youtube.com/watch?v=t8a_g3GNHeY"
-      }
-    },
-    {
-      "inbox_id": "inbox_b5b90d9ea913dd96",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "東京音頭 × 上野恩賜公園",
-      "event_name": "",
-      "venue": "上野恩賜公園",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:東京音頭|venue:上野恩賜公園",
-      "source_url": "https://www.youtube.com/watch?v=n97vq4F4y3o",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "685e2c2e672d256d01aa30cd40b4d86beea9bbe416a9166ab1254252ce144207",
-      "last_seen_at": "github-38727299991-1-daily_term_candidate",
-      "created_at": "2026-08-12T08:16:06.743901+00:00",
-      "updated_at": "2026-10-15T11:42:13.521008+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "盆踊りフェス"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-15T11:00:10+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=n97vq4F4y3o"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-14T11:00:31+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=AT22epG3Oio"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-13T11:00:21+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=7BCqf33xnFI"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-12T12:00:31+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=_rwwVn3kG60"
-          }
-        ],
-        "evidence_count": 4,
-        "evidence_text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-        "evidence_url": "https://www.youtube.com/watch?v=n97vq4F4y3o",
-        "interpretation": "上野恩賜公園で東京音頭が言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "東京音頭",
-        "term": "東京音頭 × 上野恩賜公園",
-        "type": "共起",
-        "venue": "上野恩賜公園"
-      }
-    },
-    {
-      "inbox_id": "inbox_0f3b70d40a53a2d8",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "ズンパ音頭",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:ズンパ音頭",
-      "source_url": "https://www.youtube.com/watch?v=At-CI1KZJBU",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "99bc040baa9eb7e40deb67a9730d6804a1055857d4a1b35f1de59dafcc54378e",
-      "last_seen_at": "github-38727299991-1-daily_song_candidate",
-      "created_at": "2026-08-11T08:04:51.717363+00:00",
-      "updated_at": "2026-10-15T11:41:32.839917+00:00",
-      "payload": {
-        "canonical_song_name": "ズンパ音頭",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-15T00:00:37+00:00",
-            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-            "url": "https://www.youtube.com/watch?v=At-CI1KZJBU"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-14T00:00:24+00:00",
-            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-            "url": "https://www.youtube.com/watch?v=2wYCbhHMNTE"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-13T00:00:21+00:00",
-            "text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-            "url": "https://www.youtube.com/watch?v=pnhXf0dmn5M"
-          }
-        ],
-        "evidence_count": 3,
-        "evidence_text": "2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ\n---\n2026年9月25日、 東京都大田区の矢口氷川神社にて行われた矢口南町会 「矢口氷川神社例大祭盆踊り」の様子です。 神社の境内に響き渡る和太鼓の音色と、 地域の皆様による活気あふれる盆踊りの熱気をお届けします！ 【開催情報】 ・日時：2026年9月25日 ・行事：矢口氷川神社例大祭 盆踊り ・主催：矢口南町会 ・場所：東京都大田区 矢口氷川神社 ご視聴ありがとうございます！ 動画が良いなと思ったら、ぜひ高評価・チャンネル登録をよろしくお願いいたします。 #盆踊り #和太鼓 #矢口氷川神社 #大田区 #例大祭 #お祭り #日本の祭り 矢口氷川神社盆踊り １東京音頭 https://youtu.be/2srwsDXe6og ２ズンパ音頭 https://youtu.be/vDYP8fIBg0s ３すっきり音頭 https://youtu.be/RMcrafOQTNQ ４火の国太鼓 https://youtu.be/Zule95o11Oo ５大東京音頭 https://youtu.be/RUxBw0woP20 ６チャンチキおけさ https://youtu.be/F5FLXwlrTvU ７ダ",
-        "evidence_url": "https://www.youtube.com/watch?v=At-CI1KZJBU",
-        "interpretation": "ズンパ音頭",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "ズンパ音頭",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
       }
     },
     {
