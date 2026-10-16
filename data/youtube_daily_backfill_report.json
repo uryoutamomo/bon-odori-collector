@@ -1,100 +1,245 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-10-15T22:54:45.242195+00:00",
+  "generated_at": "2026-10-16T22:33:38.937391+00:00",
   "status": "harvested_no_yield_limit",
   "month": 8,
   "target_year": 2026,
-  "selected_rows": 13,
-  "remaining_rows_before": 19,
-  "remaining_rows_after": 6,
-  "estimated_search_calls": 26,
-  "candidates_before": 925,
+  "selected_rows": 10,
+  "remaining_rows_before": 44,
+  "remaining_rows_after": 34,
+  "estimated_search_calls": 20,
+  "candidates_before": 927,
   "selected": [
     {
-      "queue_id": "youtube-year-backfill:6a444090c6dab475",
+      "queue_id": "youtube-year-backfill:2a98360a047732bf",
       "target_year": 2024,
-      "priority_score": 86,
-      "priority": "high",
-      "event_name": "第16回ハマサイトの夏祭り",
-      "venue": "ハマサイト前広場・汐留ビルディング外構",
-      "area": "港区",
-      "series_key": "efdb6c5dda5e",
-      "observed_years": [
-        2025
-      ],
-      "observed_source_video_count": 8,
-      "public_date": "2025-08-22",
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "series_key": "bb825e2a409e",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
       "public_date_end": "",
       "last_seen_year": 2025,
       "last_seen_dates": [
-        "2025-08-22"
+        "2025-08-23"
       ],
       "recurrence_label": "昨年開催・継続性 高",
       "recurrence_score": 0.78,
       "source_url_count": 0,
-      "song_count": 1,
+      "song_count": 6,
       "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
         "medium_recurrence_score",
         "has_song_data"
       ],
       "search_queries": [
-        "第16回ハマサイトの夏祭り ハマサイト前広場・汐留ビルディング外構 港区 2024 盆踊り",
-        "第16回ハマサイトの夏祭り 2024 YouTube 盆踊り",
-        "ハマサイト前広場・汐留ビルディング外構 2024 盆踊り"
+        "第71回大井どんたく夏まつり 初日 盆踊り 大井町駅前中央通り 品川区 2024 盆踊り",
+        "第71回大井どんたく夏まつり 初日 盆踊り 2024 YouTube 盆踊り",
+        "大井町駅前中央通り 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "queue_id": "youtube-year-backfill:eb0009ffa921cecb",
       "target_year": 2023,
-      "priority_score": 86,
-      "priority": "high",
-      "event_name": "第16回ハマサイトの夏祭り",
-      "venue": "ハマサイト前広場・汐留ビルディング外構",
-      "area": "港区",
-      "series_key": "efdb6c5dda5e",
-      "observed_years": [
-        2025
-      ],
-      "observed_source_video_count": 8,
-      "public_date": "2025-08-22",
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "series_key": "bb825e2a409e",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-23",
       "public_date_end": "",
       "last_seen_year": 2025,
       "last_seen_dates": [
-        "2025-08-22"
+        "2025-08-23"
       ],
       "recurrence_label": "昨年開催・継続性 高",
       "recurrence_score": 0.78,
       "source_url_count": 0,
-      "song_count": 1,
+      "song_count": 6,
       "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
         "medium_recurrence_score",
         "has_song_data"
       ],
       "search_queries": [
-        "第16回ハマサイトの夏祭り ハマサイト前広場・汐留ビルディング外構 港区 2023 盆踊り",
-        "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
-        "ハマサイト前広場・汐留ビルディング外構 2023 盆踊り"
+        "第71回大井どんたく夏まつり 初日 盆踊り 大井町駅前中央通り 品川区 2023 盆踊り",
+        "第71回大井どんたく夏まつり 初日 盆踊り 2023 YouTube 盆踊り",
+        "大井町駅前中央通り 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
-      "target_year": 2023,
-      "priority_score": 89,
-      "priority": "high",
-      "event_name": "シタマチ.ふるさと盆踊り大会",
-      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
-      "area": "台東区",
-      "series_key": "c9953a983451",
-      "observed_years": [
-        2025
+      "queue_id": "youtube-year-backfill:a4575cc6dcfdd493",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "法人格砧町自治会「納涼盆踊り大会」",
+      "venue": "砧八丁目児童遊園",
+      "area": "世田谷区",
+      "series_key": "de39cf75cb79",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
       ],
-      "observed_source_video_count": 79,
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "法人格砧町自治会「納涼盆踊り大会」 砧八丁目児童遊園 世田谷区 2024 盆踊り",
+        "法人格砧町自治会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+        "砧八丁目児童遊園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:09165d31a5ebc17f",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "法人格砧町自治会「納涼盆踊り大会」",
+      "venue": "砧八丁目児童遊園",
+      "area": "世田谷区",
+      "series_key": "de39cf75cb79",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-01",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "法人格砧町自治会「納涼盆踊り大会」 砧八丁目児童遊園 世田谷区 2023 盆踊り",
+        "法人格砧町自治会「納涼盆踊り大会」 2023 YouTube 盆踊り",
+        "砧八丁目児童遊園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:63ea4fdc0f484060",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "市野倉南町会 盆踊り",
+      "venue": "市野倉南児童公園",
+      "area": "大田区",
+      "series_key": "274a013ace92",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-02",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "市野倉南町会 盆踊り 市野倉南児童公園 大田区 2024 盆踊り",
+        "市野倉南町会 盆踊り 2024 YouTube 盆踊り",
+        "市野倉南児童公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:8dbd4a9f3fabb72a",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "駒澤大学同窓会東京都支部・営友会",
+      "venue": "駒澤大学 駒沢キャンパス",
+      "area": "世田谷区",
+      "series_key": "7f6306842f4b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-10",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-10"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.56,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "駒澤大学同窓会東京都支部・営友会 駒澤大学 駒沢キャンパス 世田谷区 2024 盆踊り",
+        "駒澤大学同窓会東京都支部・営友会 2024 YouTube 盆踊り",
+        "駒澤大学 駒沢キャンパス 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5c12fe234e96383c",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "駒澤大学同窓会東京都支部・営友会",
+      "venue": "駒澤大学 駒沢キャンパス",
+      "area": "世田谷区",
+      "series_key": "7f6306842f4b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-08-10",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-10"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.56,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "駒澤大学同窓会東京都支部・営友会 駒澤大学 駒沢キャンパス 世田谷区 2023 盆踊り",
+        "駒澤大学同窓会東京都支部・営友会 2023 YouTube 盆踊り",
+        "駒澤大学 駒沢キャンパス 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:458c0bf1425b5a71",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "series_key": "58ecbe69a3cd",
+      "observed_years": [],
+      "observed_source_video_count": 0,
       "public_date": "2025-08-16",
       "public_date_end": "",
       "last_seen_year": 2025,
@@ -102,352 +247,86 @@
         "2025-08-16"
       ],
       "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
+      "recurrence_score": 0.64,
       "source_url_count": 0,
-      "song_count": 11,
+      "song_count": 0,
       "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
-        "medium_recurrence_score",
-        "has_song_data"
+        "medium_recurrence_score"
       ],
       "search_queries": [
-        "シタマチ.ふるさと盆踊り大会 おかちまちパンダ広場（御徒町駅南口駅前広場） 台東区 2023 盆踊り",
-        "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
-        "おかちまちパンダ広場（御徒町駅南口駅前広場） 2023 盆踊り"
+        "瀬田商店会 瀬田納涼盆踊り 瀬田中学校 世田谷区 2024 盆踊り",
+        "瀬田商店会 瀬田納涼盆踊り 2024 YouTube 盆踊り",
+        "瀬田中学校 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:ebcc516defd404f4",
+      "queue_id": "youtube-year-backfill:3cccc47e9a919d8e",
       "target_year": 2024,
-      "priority_score": 87,
-      "priority": "high",
-      "event_name": "イベント名未確認（晴海ふ頭公園）",
-      "venue": "晴海ふ頭公園",
-      "area": "中央区",
-      "series_key": "e4c1795aae24",
-      "observed_years": [
-        2025
-      ],
-      "observed_source_video_count": 24,
-      "public_date": "2025-07-12",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-12"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.51,
-      "source_url_count": 0,
-      "song_count": 6,
-      "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "イベント名未確認（晴海ふ頭公園） 晴海ふ頭公園 中央区 2024 盆踊り",
-        "イベント名未確認（晴海ふ頭公園） 2024 YouTube 盆踊り",
-        "晴海ふ頭公園 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:fdf392bb34e54e20",
-      "target_year": 2023,
-      "priority_score": 87,
-      "priority": "high",
-      "event_name": "イベント名未確認（晴海ふ頭公園）",
-      "venue": "晴海ふ頭公園",
-      "area": "中央区",
-      "series_key": "e4c1795aae24",
-      "observed_years": [
-        2025
-      ],
-      "observed_source_video_count": 24,
-      "public_date": "2025-07-12",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-12"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.51,
-      "source_url_count": 0,
-      "song_count": 6,
-      "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "イベント名未確認（晴海ふ頭公園） 晴海ふ頭公園 中央区 2023 盆踊り",
-        "イベント名未確認（晴海ふ頭公園） 2023 YouTube 盆踊り",
-        "晴海ふ頭公園 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:c07fb77b2ba2d9c7",
-      "target_year": 2024,
-      "priority_score": 16,
+      "priority_score": 8,
       "priority": "low",
-      "event_name": "祖師谷昇進会商店街(振)盆踊り",
-      "venue": "祖師谷神明社",
+      "event_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "venue": "上北沢小学校",
       "area": "世田谷区",
-      "series_key": "711f08fdb76d",
+      "series_key": "6eee69235ad3",
       "observed_years": [],
       "observed_source_video_count": 0,
-      "public_date": "2025-07-18",
+      "public_date": "2025-08-23",
       "public_date_end": "",
       "last_seen_year": 2025,
       "last_seen_dates": [
-        "2025-07-18"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
-      "source_url_count": 0,
-      "song_count": 1,
-      "priority_reasons": [
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "祖師谷昇進会商店街(振)盆踊り 祖師谷神明社 世田谷区 2024 盆踊り",
-        "祖師谷昇進会商店街(振)盆踊り 2024 YouTube 盆踊り",
-        "祖師谷神明社 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:41013ad9ad3efb9f",
-      "target_year": 2023,
-      "priority_score": 16,
-      "priority": "low",
-      "event_name": "祖師谷昇進会商店街(振)盆踊り",
-      "venue": "祖師谷神明社",
-      "area": "世田谷区",
-      "series_key": "711f08fdb76d",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-18",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-18"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
-      "source_url_count": 0,
-      "song_count": 1,
-      "priority_reasons": [
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "祖師谷昇進会商店街(振)盆踊り 祖師谷神明社 世田谷区 2023 盆踊り",
-        "祖師谷昇進会商店街(振)盆踊り 2023 YouTube 盆踊り",
-        "祖師谷神明社 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:ff10c67b4be54652",
-      "target_year": 2024,
-      "priority_score": 16,
-      "priority": "low",
-      "event_name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」",
-      "venue": "京王線芦花公園駅前ロータリー(南口)",
-      "area": "世田谷区",
-      "series_key": "92579e0f5c57",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-25",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-25"
+        "2025-08-23"
       ],
       "recurrence_label": "昨年開催・継続性 中",
       "recurrence_score": 0.64,
       "source_url_count": 0,
-      "song_count": 1,
-      "priority_reasons": [
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 京王線芦花公園駅前ロータリー(南口) 世田谷区 2024 盆踊り",
-        "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 2024 YouTube 盆踊り",
-        "京王線芦花公園駅前ロータリー(南口) 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:c915a52297989336",
-      "target_year": 2024,
-      "priority_score": 15,
-      "priority": "low",
-      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
-      "venue": "上野恩賜公園",
-      "area": "台東区",
-      "series_key": "d75f8a8c3c04",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2026-07-03",
-      "public_date_end": "2026-07-05",
-      "last_seen_year": null,
-      "last_seen_dates": [
-        "2026-07-03",
-        "2026-07-05"
-      ],
-      "recurrence_label": "2026年確認済み",
-      "recurrence_score": 0.95,
-      "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
-        "high_recurrence_score"
+        "medium_recurrence_score"
       ],
       "search_queries": [
-        "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2024 盆踊り",
-        "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2024 YouTube 盆踊り",
-        "上野恩賜公園 2024 盆踊り"
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 上北沢小学校 世田谷区 2024 盆踊り",
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 2024 YouTube 盆踊り",
+        "上北沢小学校 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "queue_id": "youtube-year-backfill:a481c8b8cd180fc0",
       "target_year": 2023,
-      "priority_score": 15,
-      "priority": "low",
-      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
-      "venue": "上野恩賜公園",
-      "area": "台東区",
-      "series_key": "d75f8a8c3c04",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2026-07-03",
-      "public_date_end": "2026-07-05",
-      "last_seen_year": null,
-      "last_seen_dates": [
-        "2026-07-03",
-        "2026-07-05"
-      ],
-      "recurrence_label": "2026年確認済み",
-      "recurrence_score": 0.95,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "high_recurrence_score"
-      ],
-      "search_queries": [
-        "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2023 盆踊り",
-        "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2023 YouTube 盆踊り",
-        "上野恩賜公園 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:f025dad9f2e0fde4",
-      "target_year": 2024,
-      "priority_score": 15,
-      "priority": "low",
-      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
-      "venue": "祐天寺境内",
-      "area": "目黒区",
-      "series_key": "ffabb09f44db",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-16",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-16"
-      ],
-      "recurrence_label": "昨年開催・継続性 高",
-      "recurrence_score": 0.86,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "high_recurrence_score"
-      ],
-      "search_queries": [
-        "第90回 祐天寺み魂まつり こども盆踊り大会 祐天寺境内 目黒区 2024 盆踊り",
-        "第90回 祐天寺み魂まつり こども盆踊り大会 2024 YouTube 盆踊り",
-        "祐天寺境内 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:dc700f89d251499c",
-      "target_year": 2024,
       "priority_score": 8,
       "priority": "low",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
-      "venue": "萩中神社",
-      "area": "大田区",
-      "series_key": "bc32ef7e53ff",
+      "event_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "venue": "上北沢小学校",
+      "area": "世田谷区",
+      "series_key": "6eee69235ad3",
       "observed_years": [],
       "observed_source_video_count": 0,
-      "public_date": "2025-07-11",
+      "public_date": "2025-08-23",
       "public_date_end": "",
       "last_seen_year": 2025,
       "last_seen_dates": [
-        "2025-07-11"
+        "2025-08-23"
       ],
       "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.72,
+      "recurrence_score": 0.64,
       "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
         "medium_recurrence_score"
       ],
       "search_queries": [
-        "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 萩中神社 大田区 2024 盆踊り",
-        "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 2024 YouTube 盆踊り",
-        "萩中神社 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:c5e22d93b8313416",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
-      "venue": "萩中神社",
-      "area": "大田区",
-      "series_key": "bc32ef7e53ff",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-11",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-11"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.72,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 萩中神社 大田区 2023 盆踊り",
-        "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 2023 YouTube 盆踊り",
-        "萩中神社 2023 盆踊り"
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 上北沢小学校 世田谷区 2023 盆踊り",
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 2023 YouTube 盆踊り",
+        "上北沢小学校 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 13,
-  "new_candidates": 2,
+  "completed_batches": 10,
+  "new_candidates": 0,
   "consecutive_no_yield": 10,
-  "cooldown_suppressed_rows": 81,
+  "cooldown_suppressed_rows": 56,
   "retry_state_bootstrapped_rows": 0,
   "batches": [
     {
@@ -455,70 +334,7 @@
       "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:6a444090c6dab475"
-      ],
-      "fresh_summary": {
-        "candidate_count": 5,
-        "status_counts": {
-          "weak": 5
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "new_candidates": 0,
-      "consecutive_no_yield": 1,
-      "candidate_count": 925,
-      "strong_count": 245,
-      "review_count": 74
-    },
-    {
-      "batch": 2,
-      "month": 8,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:3e4ee38c87feffbe"
-      ],
-      "fresh_summary": {
-        "candidate_count": 5,
-        "status_counts": {
-          "weak": 5
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "new_candidates": 1,
-      "consecutive_no_yield": 0,
-      "candidate_count": 926,
-      "strong_count": 245,
-      "review_count": 74
-    },
-    {
-      "batch": 3,
-      "month": 8,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:6db0ecf647ca99c3"
-      ],
-      "fresh_summary": {
-        "candidate_count": 6,
-        "status_counts": {
-          "weak": 6
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "new_candidates": 1,
-      "consecutive_no_yield": 0,
-      "candidate_count": 927,
-      "strong_count": 245,
-      "review_count": 74
-    },
-    {
-      "batch": 4,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:ebcc516defd404f4"
+        "youtube-year-backfill:2a98360a047732bf"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -533,11 +349,11 @@
       "review_count": 74
     },
     {
-      "batch": 5,
-      "month": 7,
+      "batch": 2,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:fdf392bb34e54e20"
+        "youtube-year-backfill:eb0009ffa921cecb"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -552,11 +368,11 @@
       "review_count": 74
     },
     {
-      "batch": 6,
-      "month": 7,
+      "batch": 3,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:c07fb77b2ba2d9c7"
+        "youtube-year-backfill:a4575cc6dcfdd493"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -571,11 +387,11 @@
       "review_count": 74
     },
     {
-      "batch": 7,
-      "month": 7,
+      "batch": 4,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:41013ad9ad3efb9f"
+        "youtube-year-backfill:09165d31a5ebc17f"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -590,11 +406,11 @@
       "review_count": 74
     },
     {
-      "batch": 8,
-      "month": 7,
+      "batch": 5,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:ff10c67b4be54652"
+        "youtube-year-backfill:63ea4fdc0f484060"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -609,11 +425,11 @@
       "review_count": 74
     },
     {
-      "batch": 9,
-      "month": 7,
+      "batch": 6,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:c915a52297989336"
+        "youtube-year-backfill:8dbd4a9f3fabb72a"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -628,11 +444,11 @@
       "review_count": 74
     },
     {
-      "batch": 10,
-      "month": 7,
+      "batch": 7,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:0f55ad07c1d5f92a"
+        "youtube-year-backfill:5c12fe234e96383c"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -647,11 +463,11 @@
       "review_count": 74
     },
     {
-      "batch": 11,
-      "month": 7,
+      "batch": 8,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:f025dad9f2e0fde4"
+        "youtube-year-backfill:458c0bf1425b5a71"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -666,11 +482,11 @@
       "review_count": 74
     },
     {
-      "batch": 12,
-      "month": 7,
+      "batch": 9,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:dc700f89d251499c"
+        "youtube-year-backfill:3cccc47e9a919d8e"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -685,11 +501,11 @@
       "review_count": 74
     },
     {
-      "batch": 13,
-      "month": 7,
+      "batch": 10,
+      "month": 8,
       "selected_rows": 1,
       "queue_ids": [
-        "youtube-year-backfill:c5e22d93b8313416"
+        "youtube-year-backfill:a481c8b8cd180fc0"
       ],
       "fresh_summary": {
         "candidate_count": 0,
@@ -704,7 +520,7 @@
       "review_count": 74
     }
   ],
-  "candidates_per_estimated_search": 0.0769,
+  "candidates_per_estimated_search": 0.0,
   "regenerated": [
     "event occurrence backfill plan: observations=39 videos=203 with_songs=35",
     "low confidence backfill review: rows=19 -> data/low_confidence_backfill_review.md",
@@ -730,5 +546,5 @@
     "weekend_near_date": 3
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-10-16 youtube_candidates=927 review=74 history_rows=112"
+  "ops_metrics": "ops metrics: date=2026-10-17 youtube_candidates=927 review=74 history_rows=113"
 }
