@@ -1,10 +1,10 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-15T11:35:44.761481+00:00",
+  "generated_at": "2026-10-16T11:32:11.908940+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-15T11:35:37.873132+00:00",
+  "source_generated_at": "2026-10-16T11:32:06.508728+00:00",
   "days": 3,
-  "voice_count": 26,
+  "voice_count": 28,
   "candidate_count": 9,
   "category_counts": {
     "曲×会場共起": 1,
