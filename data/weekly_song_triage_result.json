@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 8,
-  "direct_count": 7,
-  "created_count": 3,
+  "song_candidate_count": 9,
+  "direct_count": 8,
+  "created_count": 4,
   "updated_count": 4,
   "rejected_noise_count": 0,
   "review_count": 1,
@@ -31,28 +31,20 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "そして活気あふれる踊り",
+      "source_term": "そして活気あふれる踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "updated": [
     {
-      "song_name": "東京音頭",
-      "source_term": "東京音頭",
-      "target": "update",
-      "venue_relations": 1,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "さくら音頭",
       "source_term": "さくら音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "八木節",
-      "source_term": "八木節",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -65,13 +57,29 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "東京音頭",
+      "source_term": "東京音頭",
+      "target": "update",
+      "venue_relations": 1,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "八木節",
+      "source_term": "八木節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "rejected_noise": [],
   "review": [
     {
       "term": "ズンパ音頭",
-      "evidence_count": 2,
+      "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://www.youtube.com/watch?v=At-CI1KZJBU"
     }
