@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-16T11:41:26.123875+00:00",
+  "generated_at": "2026-10-17T10:53:23.692845+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,445 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_56024302ee9f368a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "金沢市内 夏祭り\n\n週末、地域の熱さを感じる夏祭りを巡ってきました！\n\n8月8日（金）\n此花町公民館主催の「納涼盆踊り大会」に伺いました。\n​\n今年は、ちょうど",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086731899410722886",
+      "source_url": "https://x.com/takuokomori_1/status/2086731899410722886",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "43129683ec4d189e110e895f765736a545810a2b3987d1b0910da528adf3adc6",
+      "last_seen_at": "github-39025858294-1",
+      "created_at": "2026-10-17T10:52:47.728197+00:00",
+      "updated_at": "2026-10-17T10:52:47.728197+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_076c0fbb764cdaec",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月8日",
+          "8月9日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@takuokomori_1",
+        "source_count": 1,
+        "source_key": "x:2086731899410722886",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2086731701796196352/img/m3jyA6qHVsqOQG12.jpg",
+          "https://t.co/BvT054mTGP",
+          "pic.x.com/BvT054mTGP"
+        ],
+        "source_officiality": {
+          "account_name": "小森たくお（衆議院議員｜石川1区）",
+          "classification": "registered_official_social",
+          "handle": "@takuokomori_1",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n金沢市内 夏祭り\n\n週末、地域の熱さを感じる夏祭りを巡ってきました！\n\n8月8日（金）\n此花町公民館主催の「納涼盆踊り大会」に伺いました。\n​\n今年は、ちょうどお祭りが始まるタイミングに伺いました。早速、踊りが始まり、子どもからご年配の方まで輪を作って踊りを楽しんでいました。\n　\n地域の絆を守っている実行委員の皆様のご尽力に、心より敬意を表します。\n\n8月9日（土）\n・伏見台サマーフェスタ2026\n・第5回中央校区 大夏祭り2026\n・しんたて盆踊りDE夏まつり2026\n\n土曜日は、あいにく途中から局所的な大雨に見舞われました💦\n\nピロティに会場を移したり、順延の判断がなされたりと、各会場で対応が取られていました。当日の渋滞のため、やむなく私が参加を断念した場所もありました。\n\n悪天候の中、最後まで開催に向けて尽力された関係者の皆様、本当にお疲れ様でした❗️\n雨に濡れたり、また、急激な天候の変化もあったりしましたので、皆様どうかお体には十分お気を付けください。\n\n#小森たくお #金沢市 #夏祭り #大雨 #盆踊り",
+        "source_url": "https://x.com/takuokomori_1/status/2086731899410722886",
+        "source_urls": [
+          "https://x.com/takuokomori_1/status/2086731899410722886"
+        ],
+        "voice": {
+          "account": "@takuokomori_1",
+          "date": "2026-08-10T08:30:29+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2086731701796196352/img/m3jyA6qHVsqOQG12.jpg",
+            "https://t.co/BvT054mTGP",
+            "pic.x.com/BvT054mTGP"
+          ],
+          "name": "小森たくお（衆議院議員｜石川1区）",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "金沢市内 夏祭り\n\n週末、地域の熱さを感じる夏祭りを巡ってきました！\n\n8月8日（金）\n此花町公民館主催の「納涼盆踊り大会」に伺いました。\n​\n今年は、ちょうどお祭りが始まるタイミングに伺いました。早速、踊りが始まり、子どもからご年配の方まで輪を作って踊りを楽しんでいました。\n　\n地域の絆を守っている実行委員の皆様のご尽力に、心より敬意を表します。\n\n8月9日（土）\n・伏見台サマーフェスタ2026\n・第5回中央校区 大夏祭り2026\n・しんたて盆踊りDE夏まつり2026\n\n土曜日は、あいにく途中から局所的な大雨に見舞われました💦\n\nピロティに会場を移したり、順延の判断がなされたりと、各会場で対応が取られていました。当日の渋滞のため、やむなく私が参加を断念した場所もありました。\n\n悪天候の中、最後まで開催に向けて尽力された関係者の皆様、本当にお疲れ様でした❗️\n雨に濡れたり、また、急激な天候の変化もあったりしましたので、皆様どうかお体には十分お気を付けください。\n\n#小森たくお #金沢市 #夏祭り #大雨 #盆踊り",
+          "title": "",
+          "tweet_id": "2086731899410722886",
+          "url": "https://x.com/takuokomori_1/status/2086731899410722886"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_7612636a1105d550",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【8/9(日) サマーフェスタ苗穂】\n\n8/9(日)、苗穂会館南側広場で開催された「第14回サマーフェスタ苗穂&子ども盆踊り」に子ども達と一緒に参加させて頂きま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086718818408439808",
+      "source_url": "https://x.com/Daisen1989/status/2086718818408439808",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c7c405b124140555103e0eaefe7e4b363b0723f05f20b36c59961be95bc28d09",
+      "last_seen_at": "github-39025858294-1",
+      "created_at": "2026-10-17T10:52:47.728197+00:00",
+      "updated_at": "2026-10-17T10:52:47.728197+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_416c7b24b983d26b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/9",
+          "8/9"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Daisen1989",
+        "source_count": 1,
+        "source_key": "x:2086718818408439808",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPWDtFdaAAAlHxX.jpg",
+          "https://t.co/73ON5dOzFJ",
+          "pic.x.com/73ON5dOzFJ"
+        ],
+        "source_officiality": {
+          "account_name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
+          "classification": "registered_official_social",
+          "handle": "@daisen1989",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【8/9(日) サマーフェスタ苗穂】\n\n8/9(日)、苗穂会館南側広場で開催された「第14回サマーフェスタ苗穂&子ども盆踊り」に子ども達と一緒に参加させて頂きました。\n\n恒例のラムネ早飲み大会や縁日、子どもゲーム、盆踊りなどで会場は大変賑わっていました。\n「ソーレ ソレソレ お祭りだ〜」の曲に合わせた創作太鼓も圧巻でした。\n\n主催する苗穂連合町内会の皆さまや中央児童会館、クラーク記念国際高校の皆さま等、力を尽くされる方々に心より敬意を表します。",
+        "source_url": "https://x.com/Daisen1989/status/2086718818408439808",
+        "source_urls": [
+          "https://x.com/Daisen1989/status/2086718818408439808"
+        ],
+        "voice": {
+          "account": "@Daisen1989",
+          "date": "2026-08-10T07:38:30+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPWDtFdaAAAlHxX.jpg",
+            "https://t.co/73ON5dOzFJ",
+            "pic.x.com/73ON5dOzFJ"
+          ],
+          "name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【8/9(日) サマーフェスタ苗穂】\n\n8/9(日)、苗穂会館南側広場で開催された「第14回サマーフェスタ苗穂&子ども盆踊り」に子ども達と一緒に参加させて頂きました。\n\n恒例のラムネ早飲み大会や縁日、子どもゲーム、盆踊りなどで会場は大変賑わっていました。\n「ソーレ ソレソレ お祭りだ〜」の曲に合わせた創作太鼓も圧巻でした。\n\n主催する苗穂連合町内会の皆さまや中央児童会館、クラーク記念国際高校の皆さま等、力を尽くされる方々に心より敬意を表します。",
+          "title": "",
+          "tweet_id": "2086718818408439808",
+          "url": "https://x.com/Daisen1989/status/2086718818408439808"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_944fd4a6443ace27",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "◤　生演奏で盆踊り　◢\n\n楽団の生演奏で盛り上がる「駅の盆」✨\n和太鼓や獅子舞、ソーラン節、縁日屋台など見どころ満載！\n※台風接近のため、開催情報は実行委員会I",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086721717632974952",
+      "source_url": "https://x.com/sakae_yokohama/status/2086721717632974952",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b0e713ff8aefd8d962035be87be4ea1822e66e6af61e3c7e8592372236b1d2a0",
+      "last_seen_at": "github-39025858294-1",
+      "created_at": "2026-10-17T10:52:47.728197+00:00",
+      "updated_at": "2026-10-17T10:52:47.728197+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_eede46837f5ee4e8",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/11",
+          "8/12"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@sakae_yokohama",
+        "source_count": 1,
+        "source_key": "x:2086721717632974952",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPWEv6IbMAAyUzW.jpg",
+          "https://t.co/2pGzSMxjo9",
+          "pic.x.com/2pGzSMxjo9"
+        ],
+        "source_officiality": {
+          "account_name": "横浜市栄区役所",
+          "classification": "registered_official_social",
+          "handle": "@sakae_yokohama",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n◤　生演奏で盆踊り　◢\n\n楽団の生演奏で盛り上がる「駅の盆」✨\n和太鼓や獅子舞、ソーラン節、縁日屋台など見どころ満載！\n※台風接近のため、開催情報は実行委員会Instagramにてご確認ください。\n\n🗓️8/11（火）11:00～20:00\n☔雨天時は8/12（水）\nhttps://t.co/8J0Uk1zozz\n#栄区 #本郷台駅前広場 https://t.co/2pGzSMxjo9",
+        "source_url": "https://x.com/sakae_yokohama/status/2086721717632974952",
+        "source_urls": [
+          "https://x.com/sakae_yokohama/status/2086721717632974952"
+        ],
+        "voice": {
+          "account": "@sakae_yokohama",
+          "date": "2026-08-10T07:50:01+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPWEv6IbMAAyUzW.jpg",
+            "https://t.co/2pGzSMxjo9",
+            "pic.x.com/2pGzSMxjo9"
+          ],
+          "name": "横浜市栄区役所",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "◤　生演奏で盆踊り　◢\n\n楽団の生演奏で盛り上がる「駅の盆」✨\n和太鼓や獅子舞、ソーラン節、縁日屋台など見どころ満載！\n※台風接近のため、開催情報は実行委員会Instagramにてご確認ください。\n\n🗓️8/11（火）11:00～20:00\n☔雨天時は8/12（水）\nhttps://t.co/8J0Uk1zozz\n#栄区 #本郷台駅前広場 https://t.co/2pGzSMxjo9",
+          "title": "",
+          "tweet_id": "2086721717632974952",
+          "url": "https://x.com/sakae_yokohama/status/2086721717632974952"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_94727183da02f5a2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "やぐらの撤去作業も終え #袖ケ浦西近隣公園 の清掃作業も終わりました。\n最後の落とし物です。お問合せは  #袖ケ浦団地自治会 047-453-6560 まで。8",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086747424958328884",
+      "source_url": "https://x.com/sodegauradanchi/status/2086747424958328884",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "34289e96d60e38d3880e4bf40bcf9baffa3ed01d346a8a18031a3a9475967646",
+      "last_seen_at": "github-39025858294-1",
+      "created_at": "2026-10-17T10:52:47.728197+00:00",
+      "updated_at": "2026-10-17T10:52:47.728197+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_51d28a9fd9da296f",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/18"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@sodegauradanchi",
+        "source_count": 1,
+        "source_key": "x:2086747424958328884",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPWduGfaEAAVTMB.jpg",
+          "https://t.co/zq1crKL7MJ",
+          "pic.x.com/zq1crKL7MJ"
+        ],
+        "source_officiality": {
+          "account_name": "袖ケ浦団地自治会",
+          "classification": "registered_official_social",
+          "handle": "@sodegauradanchi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nやぐらの撤去作業も終え #袖ケ浦西近隣公園 の清掃作業も終わりました。\n最後の落とし物です。お問合せは  #袖ケ浦団地自治会 047-453-6560 まで。8/18以降、火・木・土　9:30〜12:00　にご連絡ください。 #袖ヶ浦 #習志野市 #盆おどり https://t.co/zq1crKL7MJ",
+        "source_url": "https://x.com/sodegauradanchi/status/2086747424958328884",
+        "source_urls": [
+          "https://x.com/sodegauradanchi/status/2086747424958328884"
+        ],
+        "voice": {
+          "account": "@sodegauradanchi",
+          "date": "2026-08-10T09:32:10+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPWduGfaEAAVTMB.jpg",
+            "https://t.co/zq1crKL7MJ",
+            "pic.x.com/zq1crKL7MJ"
+          ],
+          "name": "袖ケ浦団地自治会",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "やぐらの撤去作業も終え #袖ケ浦西近隣公園 の清掃作業も終わりました。\n最後の落とし物です。お問合せは  #袖ケ浦団地自治会 047-453-6560 まで。8/18以降、火・木・土　9:30〜12:00　にご連絡ください。 #袖ヶ浦 #習志野市 #盆おどり https://t.co/zq1crKL7MJ",
+          "title": "",
+          "tweet_id": "2086747424958328884",
+          "url": "https://x.com/sodegauradanchi/status/2086747424958328884"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_be64d42982997dba",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8月8日、夕方から藤江2号公園で開催された「藤が丘自治会の夏まつり」に金尾議員と参加してきました🏮\n\n公園にはたくさんの地域の皆さんが集まり、輪投げなどのゲーム",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086767259775553610",
+      "source_url": "https://x.com/yuji_y13/status/2086767259775553610",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "3b263077d0ac3360ab3bc46c094416f7d824a6b7ed0c9a1a3d646e92f0d3832c",
+      "last_seen_at": "github-39025858294-1",
+      "created_at": "2026-10-17T10:52:47.728197+00:00",
+      "updated_at": "2026-10-17T10:52:47.728197+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_8f4056f2710e33fc",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月8日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@yuji_y13",
+        "source_count": 1,
+        "source_key": "x:2086767259775553610",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPWvvB2boAA9dhm.jpg",
+          "https://t.co/lMKi1mX7gn",
+          "pic.x.com/lMKi1mX7gn",
+          "https://pbs.twimg.com/media/HPWvvBvakAEH0Ep.jpg",
+          "https://pbs.twimg.com/media/HPWvvBuaoAAeFzs.jpg",
+          "https://pbs.twimg.com/media/HPWvvB1bgAAVJz3.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "山中 ゆうじ （明石市議会議員）",
+          "classification": "registered_official_social",
+          "handle": "@yuji_y13",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8月8日、夕方から藤江2号公園で開催された「藤が丘自治会の夏まつり」に金尾議員と参加してきました🏮\n\n公園にはたくさんの地域の皆さんが集まり、輪投げなどのゲームや盆踊りなど、子どもから大人まで楽しめる夏まつりで大変賑わっていました😊\n\nまた先月、藤江小学校で政治についての授業をした時の子どもたちにも再会！\n\nこうした地域のつながりや、子どもたちの笑顔をこれからも大切にしていきたいと思います。\n\n#藤が丘\n#夏祭り",
+        "source_url": "https://x.com/yuji_y13/status/2086767259775553610",
+        "source_urls": [
+          "https://x.com/yuji_y13/status/2086767259775553610"
+        ],
+        "voice": {
+          "account": "@yuji_y13",
+          "date": "2026-08-10T10:50:59+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPWvvB2boAA9dhm.jpg",
+            "https://t.co/lMKi1mX7gn",
+            "pic.x.com/lMKi1mX7gn",
+            "https://pbs.twimg.com/media/HPWvvBvakAEH0Ep.jpg",
+            "https://pbs.twimg.com/media/HPWvvBuaoAAeFzs.jpg",
+            "https://pbs.twimg.com/media/HPWvvB1bgAAVJz3.jpg"
+          ],
+          "name": "山中 ゆうじ （明石市議会議員）",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "8月8日、夕方から藤江2号公園で開催された「藤が丘自治会の夏まつり」に金尾議員と参加してきました🏮\n\n公園にはたくさんの地域の皆さんが集まり、輪投げなどのゲームや盆踊りなど、子どもから大人まで楽しめる夏まつりで大変賑わっていました😊\n\nまた先月、藤江小学校で政治についての授業をした時の子どもたちにも再会！\n\nこうした地域のつながりや、子どもたちの笑顔をこれからも大切にしていきたいと思います。\n\n#藤が丘\n#夏祭り",
+          "title": "",
+          "tweet_id": "2086767259775553610",
+          "url": "https://x.com/yuji_y13/status/2086767259775553610"
         }
       }
     },
