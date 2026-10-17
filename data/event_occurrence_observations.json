@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-10-16T22:33:44.991016+00:00",
+  "generated_at": "2026-10-17T21:58:58.645341+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
