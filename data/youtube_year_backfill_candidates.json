@@ -1,11 +1,11 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-10-17T21:58:58.332919+00:00",
+  "generated_at": "2026-10-18T22:14:05.995796+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 2,
+  "api_request_count_estimate": 3,
   "summary": {
     "candidate_count": 940,
     "status_counts": {
@@ -41778,5 +41778,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-10-17T21:58:57.948534+00:00"
+  "merged_from": "2026-10-18T22:14:05.283612+00:00"
 }
