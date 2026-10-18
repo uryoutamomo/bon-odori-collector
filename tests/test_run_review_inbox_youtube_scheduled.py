@@ -60,9 +60,9 @@ def test_all_inputs_and_evidence_paths_must_be_distinct():
     with tempfile.TemporaryDirectory() as tmp:
         args = args_for(tmp)
         with pytest.raises(SourceWriterError, match="inputs must be distinct"):
-            run_scheduled(args_for(tmp, year_input=args.active_input), environ=ENABLED_ENV, store_factory=lambda _:pytest.fail("store"))
+            run_scheduled(args_for(tmp, year_input=args.active_input), environ=ENABLED_ENV, now=datetime(2026,7,20,15,13,tzinfo=JST), store_factory=lambda _:pytest.fail("store"))
         with pytest.raises(SourceWriterError, match="paths must be distinct"):
-            run_scheduled(args_for(tmp, user_input=Path(tmp)/"snapshot.json"), environ=ENABLED_ENV, store_factory=lambda _:pytest.fail("store"))
+            run_scheduled(args_for(tmp, user_input=Path(tmp)/"snapshot.json"), environ=ENABLED_ENV, now=datetime(2026,7,20,15,13,tzinfo=JST), store_factory=lambda _:pytest.fail("store"))
 
 
 def test_complete_aggregate_is_written_with_all_queue_lineage():
