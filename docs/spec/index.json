@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T23:33:02Z",
-  "generated_for_commit": "711d2057",
+  "generated_at": "2026-10-18T11:44:10Z",
+  "generated_for_commit": "576839e2",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -563,7 +563,7 @@
         "tests/test_collect_event_state_axes_wiring.py",
         "tests/test_scoped_song_retraction.py"
       ],
-      "updated_for": "89970c4adec040111f5b062115c17918258f905e",
+      "updated_for": "d5f5220d0352151580cc42afdb3b55785f526821",
       "path": "docs/spec/L1/04-master.md",
       "owned_files": [
         ".github/workflows/apply-reviewed-change-requests.yml",
@@ -622,12 +622,17 @@
         "transition_ended_occurrences.py"
       ],
       "staleness": {
-        "commits_since": 0,
-        "files_changed_since": 0
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.25",
-      "revision_count": 26,
+      "version": "1.26",
+      "revision_count": 27,
       "history": [
+        {
+          "commit": "576839e2",
+          "date": "2026-10-18",
+          "subject": "Accept browser single-line PEM for encrypted master capture (#289)"
+        },
         {
           "commit": "c2a7b7fb",
           "date": "2026-10-10",
@@ -682,11 +687,6 @@
           "commit": "60834720",
           "date": "2026-08-19",
           "subject": "日次予測同期の仕様と運用境界を記録する"
-        },
-        {
-          "commit": "ad611a05",
-          "date": "2026-08-18",
-          "subject": "Combine multi-year song evidence"
         }
       ]
     },
@@ -2309,7 +2309,9 @@
         "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_round_trip_contains_hashed_inputs_and_context",
         "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_checksum_mismatch_creates_no_artifact",
         "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_missing_supplemental_input_creates_no_artifact",
-        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_recipient_certificate_creates_no_artifact"
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_recipient_certificate_creates_no_artifact",
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_single_line_pem_creates_no_artifact",
+        "tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_workflow_encryption_step_runs_real_cli_and_rejects_shell_input"
       ],
       "has_test": true
     },
