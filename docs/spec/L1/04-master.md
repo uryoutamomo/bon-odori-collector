@@ -68,7 +68,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_collect_event_state_axes_wiring.py
   - tests/test_scoped_song_retraction.py
-updated_for: 89970c4adec040111f5b062115c17918258f905e
+updated_for: d5f5220d0352151580cc42afdb3b55785f526821
 ---
 
 # マスタ（Master RDB）サブシステム
@@ -225,10 +225,11 @@ updated_for: 89970c4adec040111f5b062115c17918258f905e
 ### INV-MST-015 比較用の正本DB入力は検証してから受取人だけへ暗号化する
 
 - **内容**: `master_rdb/capture_public_projection_inputs.py` は、manifest の `database_checksum` とDB SHA-256の一致、SQLite immutable read-only `PRAGMA integrity_check = ok`、WAL/SHM/journal不在、固定7件の補助JSONの存在・JSON妥当性・HEAD blob一致を確認する。全入力を一時コピーしてから同じ検査を行い、そのコピーのDB・manifest・補助JSON・各hash・commit SHA・`today`・`target_year` だけを一つのtarへ束ねる。そのtarは PEM X.509 recipient certificate 宛の OpenSSL CMS AES-256-CBC DER としてだけ出力する。検証または暗号化に失敗した場合は最終出力を作らない。
+  GitHubブラウザーの1行入力でPEMの改行が除去された場合は、単一のCERTIFICATE envelopeとBase64本文を検査して64文字ごとの改行を一時コピーに復元し、その同じコピーをOpenSSL X.509検証とCMS暗号化に使う。通常の複数行PEMも受け付ける。元の受信者証明書は変更せず、証明書・秘密鍵はbundleへ追加しない。壊れたBase64、証明書でないDER、複数証明書は拒否する。workflowの権限・認証・S3読み取り専用動作は変えない。
 - **なぜ**: 正本DBとmanifest、レビューに必要な補助入力を公開artifactへ平文で出すと、公開repoから誰でも取得できる。古いDBや不一致のDBで比較しても、投影差分の原因を追跡できない。
 - **破れたときの症状**: 公開artifactから正本DBまたは内部入力が取得できる／比較結果がどのDB・日付・補助JSONに基づくものか復元できない／壊れたDBで比較が始まる。
 - **守っているコード**: `master_rdb/capture_public_projection_inputs.py` の `capture()`、手動専用 `.github/workflows/capture-public-projection-inputs.yml`。workflowは既存S3 fetchだけを実行し、`bon-odori-master-rdb` の共有排他を使う。暗号文CMSファイルだけを3日保持のartifactへ出力し、DB publish・公開JSON変更・サイト同期は行わない。
-- **守っているテスト**: `tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_round_trip_contains_hashed_inputs_and_context`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_checksum_mismatch_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_missing_supplemental_input_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_recipient_certificate_creates_no_artifact`
+- **守っているテスト**: `tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_round_trip_contains_hashed_inputs_and_context`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_checksum_mismatch_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_missing_supplemental_input_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_recipient_certificate_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_invalid_single_line_pem_creates_no_artifact`、`tests/test_capture_public_projection_inputs.py::CapturePublicProjectionInputsTest::test_workflow_encryption_step_runs_real_cli_and_rejects_shell_input`
 
 ### INV-MST-007 会場は正規化名と住所の完全一致でのみ再利用する
 

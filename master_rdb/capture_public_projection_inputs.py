@@ -7,6 +7,7 @@ Only the resulting CMS DER file is written to the requested output path.
 """
 
 import argparse
+import base64
 import datetime as dt
 import hashlib
 import io
@@ -126,6 +127,24 @@ def git_blob_matches_head(repository, path, relative_path):
         raise CaptureError(f"supplemental input differs from HEAD: {relative_path}")
 
 
+def normalized_recipient_pem(certificate):
+    """Restore PEM line breaks removed by GitHub's single-line dispatch input."""
+    begin = "-----BEGIN CERTIFICATE-----"
+    end = "-----END CERTIFICATE-----"
+    try:
+        value = Path(certificate).read_text(encoding="ascii").strip()
+        if not value.startswith(begin) or not value.endswith(end):
+            raise ValueError("expected one PEM certificate")
+        body = "".join(value[len(begin):-len(end)].split())
+        if not body:
+            raise ValueError("empty certificate")
+        base64.b64decode(body, validate=True)
+    except (OSError, UnicodeError, ValueError) as exc:
+        raise CaptureError("recipient certificate is not a valid PEM X.509 certificate") from exc
+    lines = "\n".join(body[offset:offset + 64] for offset in range(0, len(body), 64))
+    return f"{begin}\n{lines}\n{end}\n"
+
+
 def validate_recipient_certificate(openssl, certificate):
     try:
         subprocess.run(
@@ -188,13 +207,16 @@ def capture(args):
         raise CaptureError(f"repository is missing: {repository}")
     repository = repository_root(repository)
     commit = git_sha(repository)
-    validate_recipient_certificate(args.openssl, certificate_path)
+    recipient_pem = normalized_recipient_pem(certificate_path)
     reject_sqlite_sidecars(db_path)
     supplemental_paths = required_supplemental_paths(repository, args.input)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="r2-projection-inputs-") as temp_dir:
         temp_dir = Path(temp_dir)
+        normalized_certificate = temp_dir / "recipient.pem"
+        normalized_certificate.write_text(recipient_pem, encoding="ascii")
+        validate_recipient_certificate(args.openssl, normalized_certificate)
         copied_db = temp_dir / "bon_odori_master.sqlite"
         copied_manifest = temp_dir / "bon_odori_master_manifest.json"
         shutil.copyfile(db_path, copied_db)
@@ -257,7 +279,7 @@ def capture(args):
                     "-out",
                     str(encrypted),
                     "-recip",
-                    str(certificate_path),
+                    str(normalized_certificate),
                 ],
                 check=True,
                 stdout=subprocess.DEVNULL,
