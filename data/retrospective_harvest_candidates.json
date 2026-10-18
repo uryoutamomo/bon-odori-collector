@@ -1,23 +1,23 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-10-17T10:51:52.702391+00:00",
+  "generated_at": "2026-10-18T11:14:43.999801+00:00",
   "source": "data/voices.json",
-  "voice_count": 45503,
-  "classified_event_evidence_count": 11105,
-  "candidate_count": 9471,
+  "voice_count": 45516,
+  "classified_event_evidence_count": 11110,
+  "candidate_count": 9473,
   "counts": {
     "by_kind": {
-      "event": 5221,
+      "event": 5222,
       "song": 2809,
-      "venue": 1441
+      "venue": 1442
     },
     "by_tier": {
-      "hold": 2359,
+      "hold": 2360,
       "promote": 877,
-      "review": 6235
+      "review": 6236
     },
     "suppressed_event_hint_count": 1092,
-    "venue_month_grouped_count": 1508
+    "venue_month_grouped_count": 1510
   },
   "candidates": [
     {
@@ -51611,10 +51611,44 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 10,
+      "evidence_count": 11,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:b4a283102aae6f924de25ecce9e245f82ea515ea9148b4b7715201be65e50518",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=f1qcAzbjB8w",
+          "text": "2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs\n３炭坑節　https://youtu.be/rEBP9mMIXF4\n４YMCA　https://youtu.be/yM5FdyULscw\n５あなたとトゥラッタッタ♪　https://youtu.be/yMDFoujd7Ug\n６世界でいちばん熱い夏　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-17T11:00:05+00:00",
+          "observed_at": "2026-10-17T11:00:05+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "下町盆踊り",
+          "normalized_event": "下町",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:85391ba33a081dd1542a446f870ebaf05c04a521d945ffb6367df22db3dd1104",
           "tweet_id": "",
@@ -61114,10 +61148,45 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 4,
+      "evidence_count": 5,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:9b68b5f813e4eb005b61f03b51be75205462cbe89ceacd2940d0c5cb17c3c8c8",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=SOptf-XquyE",
+          "text": "2026年10月3日に\n群馬県太田市の「太田強戸スマートIC入口特設会場」で開催された\n【強戸のまつり】での盆踊りの様子です！\n\n会場が一体となって盛り上がった活気あふれるお祭りの熱気をぜひお楽しみください。\n\n【開催情報】 \n・イベント名：強戸のまつり \n・開催日：2026年10月3日 \n・開催場所：群馬県太田市 太田強戸スマートIC入口特設会場\n\n\n動画への「高評価」や「コメント」、チャンネル登録をしていただけると励みになります！ \n感想や「この曲が好き！」などのコメントもお待ちしております。\n\n#強戸のまつり #太田市 #盆踊り #和太鼓 #お祭り #群馬県\n\n\n\n第1回「強戸の祭り」\n１Bling-Bang-Bang-Born　https://youtu.be/YzrYFpD8rTk\n２上毛かるたの唄　https://youtu.be/37F_2YPr-1o\n３マツケンサンバⅡ　https://youtu.be/t8a_g3GNHeY\n４一休さん　https://youtu.be/h8TyB0Lh1Pk\n５東京音頭　https://youtu.be/SOptf-XquyE\n６B",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-17T11:30:14+00:00",
+          "observed_at": "2026-10-17T11:30:14+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "強戸のまつり",
+          "normalized_event": "強戸の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:159e66926d9443ee86b191030cd90e448489aee785419cd32673b31fa0e6a808",
           "tweet_id": "",
@@ -75783,10 +75852,82 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 24,
+      "evidence_count": 26,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:115067bfe759a3248b4b13d821cd350e45202d092e162705ec3c73f288cf0a2c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ghmj8ipTWEU",
+          "text": "2026年10月4日、\n東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。\n地域の方々の熱気と、\n響き渡る太鼓やお囃子の音色、\n賑やかな踊りの雰囲気をぜひお楽しみください！\n\n【開催概要】\n\nイベント名：白山まつり 盆踊り\n開催日：2026年10月4日（日）\n場所：東京都文京区 白山上向丘商店街\n\n動画をお楽しみいただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n皆さまの好きな盆踊り曲や感想なども、\nぜひコメント欄で教えてください。\n\n#白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り\n\n\n\n白山まつり盆踊り\n１東京音頭　https://youtu.be/insxtUX1ikI\n２八木節　https://youtu.be/gxd3g3n5Q2E\n３文京音頭　https://youtu.be/vXw-RfV5YLE\n４アンパンマン音頭　https://youtu.be/Rc8xDP9kOjw\n５きよしのソーラン節　https://youtu.be/VNWGWbvddOk\n６365日の紙飛行機　http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-18T10:30:09+00:00",
+          "observed_at": "2026-10-18T10:30:09+00:00",
+          "patterns": [
+            "B",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "白山まつり",
+          "normalized_event": "白山",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:7e9e77021f1863ea61c60cf4becbeb9cf9eda519fd1815491502d8261bf6c671",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eD9YTTX9Y9E",
+          "text": "2026年10月4日、\n東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。\n地域の方々の熱気と、\n響き渡る太鼓やお囃子の音色、\n賑やかな踊りの雰囲気をぜひお楽しみください！\n\n【開催概要】\n\nイベント名：白山まつり 盆踊り\n開催日：2026年10月4日（日）\n場所：東京都文京区 白山上向丘商店街\n\n動画をお楽しみいただけましたら、\nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n皆さまの好きな盆踊り曲や感想なども、\nぜひコメント欄で教えてください。\n\n#白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り\n\n\n\n白山まつり盆踊り\n１東京音頭　https://youtu.be/insxtUX1ikI\n２八木節　https://youtu.be/gxd3g3n5Q2E\n３文京音頭　https://youtu.be/vXw-RfV5YLE\n４アンパンマン音頭　https://youtu.be/Rc8xDP9kOjw\n５きよしのソーラン節　https://youtu.be/VNWGWbvddOk\n６365日の紙飛行機　http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-18T10:00:29+00:00",
+          "observed_at": "2026-10-18T10:00:29+00:00",
+          "patterns": [
+            "B",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "白山まつり",
+          "normalized_event": "白山",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:051e272458a2863b19ab4229425ec62dcaa4e2f7482e46129fb828a4961a7f84",
           "tweet_id": "",
@@ -320349,6 +320490,60 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:a35c63166e99fad290a295b5aad45a7f29caeb7e61e4b02a1934dd3409c58db5",
+      "display_name": "キャロットタワーのプラザ広場の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "キャロットタワーのプラザ広場",
+      "venue_key": "660477c35ba1625888dfd150856cd1fd5f787b5a44d35ebdb17e456e66628521",
+      "month": "04",
+      "estimated_date": "4-1",
+      "year": 2026,
+      "hashtags": [
+        "Japan",
+        "Tokyo",
+        "大道芸"
+      ],
+      "score": 5,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4c88f33b44ebee37ca86cedb3f2c7a19a3d90dca07e07264de0087a17e53c2e5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DcuZoo1yt7c",
+          "text": "東京の三軒茶屋で「世田谷アートタウン2026 三茶 de 大道芸」が開催されました。\nキャロットタワーのプラザ広場では、姉妹音楽ユニット「チャラン・ポ・ランタン」が多くのお客さんを盛り上げる素晴らしいパフォーマンス！今回もラストは大道芸らしく投げ銭タイム。気持ちよくお支払いができる演出で、最後の最後まで素晴らしい時間を堪能しました！\n\n“Setagaya Art Town 2026: Street Performances in Sangenjaya” was held in Sangenjaya, Tokyo. At the Carrot Tower Plaza, the sister music duo “Charan-Po-Rantan” put on a fantastic performance that got the crowd fired up! True to the spirit of street performances, the event concluded with a tip-jar round. The way it was staged made i",
+          "account": "UCKCspf_NrY16rUnODmBqOWA",
+          "dancer_key": "@uckcspf_nry16runodmbqowa",
+          "spoken_at": "2026-10-18T08:00:12+00:00",
+          "observed_at": "2026-10-18T08:00:12+00:00",
+          "patterns": [
+            "B"
+          ],
+          "bon_context_hits": [],
+          "source_score": 8,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "",
+          "normalized_event": "",
+          "estimated_venue": "キャロットタワーのプラザ広場",
+          "time_hints": [
+            "4-1",
+            "54-00"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:d554f3a9ddd3e13d4c687f8a02311297f324dc6003e0cee7f1b5e11702be1989",
       "display_name": "セットリスト担当寺の盆踊り（名称未確定）",
       "normalized_event": "",
@@ -339961,6 +340156,74 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=v3XYEALGDWo",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T03:00:04+00:00",
+          "score": 0,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=WanvUHjQB9c",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T22:00:18+00:00",
+          "score": 0,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZyKvNpzLR2o",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:30:28+00:00",
+          "score": 0,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=d2Ip3nJI4Rk",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:00:19+00:00",
+          "score": 0,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=gHrhjiilkGQ",
           "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
           "account": "@wadaikoCH",
@@ -340201,7 +340464,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 14,
+      "evidence_count": 18,
       "speaker_count": 5
     },
     {
@@ -363423,6 +363686,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:115067bfe759a3248b4b13d821cd350e45202d092e162705ec3c73f288cf0a2c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ghmj8ipTWEU",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:30:09+00:00",
+          "score": 17,
+          "song_name": "八木節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:7e9e77021f1863ea61c60cf4becbeb9cf9eda519fd1815491502d8261bf6c671",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eD9YTTX9Y9E",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:00:29+00:00",
+          "score": 17,
+          "song_name": "八木節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:051e272458a2863b19ab4229425ec62dcaa4e2f7482e46129fb828a4961a7f84",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=cxPpJ88Odww",
@@ -363883,7 +364184,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 24,
+      "evidence_count": 26,
       "speaker_count": 1
     },
     {
@@ -368364,6 +368665,74 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=v3XYEALGDWo",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T03:00:04+00:00",
+          "score": 0,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=WanvUHjQB9c",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T22:00:18+00:00",
+          "score": 0,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZyKvNpzLR2o",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:30:28+00:00",
+          "score": 0,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=d2Ip3nJI4Rk",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:00:19+00:00",
+          "score": 0,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=gHrhjiilkGQ",
           "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
           "account": "@wadaikoCH",
@@ -368944,7 +369313,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 34,
+      "evidence_count": 38,
       "speaker_count": 5
     },
     {
@@ -407842,6 +408211,46 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:115067bfe759a3248b4b13d821cd350e45202d092e162705ec3c73f288cf0a2c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ghmj8ipTWEU",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:30:09+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:7e9e77021f1863ea61c60cf4becbeb9cf9eda519fd1815491502d8261bf6c671",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eD9YTTX9Y9E",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:00:29+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:051e272458a2863b19ab4229425ec62dcaa4e2f7482e46129fb828a4961a7f84",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=cxPpJ88Odww",
@@ -408327,7 +408736,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 24,
+      "evidence_count": 26,
       "speaker_count": 1
     },
     {
@@ -409257,6 +409666,26 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:b4a283102aae6f924de25ecce9e245f82ea515ea9148b4b7715201be65e50518",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=f1qcAzbjB8w",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T11:00:05+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:85391ba33a081dd1542a446f870ebaf05c04a521d945ffb6367df22db3dd1104",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=tChxDNOsyVs",
@@ -409462,7 +409891,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 10,
+      "evidence_count": 11,
       "speaker_count": 1
     },
     {
@@ -423624,6 +424053,74 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=v3XYEALGDWo",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T03:00:04+00:00",
+          "score": 0,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=WanvUHjQB9c",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T22:00:18+00:00",
+          "score": 0,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZyKvNpzLR2o",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:30:28+00:00",
+          "score": 0,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=d2Ip3nJI4Rk",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:00:19+00:00",
+          "score": 0,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=gHrhjiilkGQ",
           "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
           "account": "@wadaikoCH",
@@ -423847,7 +424344,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 13,
+      "evidence_count": 17,
       "speaker_count": 4
     },
     {
@@ -443075,6 +443572,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:115067bfe759a3248b4b13d821cd350e45202d092e162705ec3c73f288cf0a2c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ghmj8ipTWEU",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:30:09+00:00",
+          "score": 17,
+          "song_name": "賑やかな踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:7e9e77021f1863ea61c60cf4becbeb9cf9eda519fd1815491502d8261bf6c671",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eD9YTTX9Y9E",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:00:29+00:00",
+          "score": 17,
+          "song_name": "賑やかな踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:051e272458a2863b19ab4229425ec62dcaa4e2f7482e46129fb828a4961a7f84",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=cxPpJ88Odww",
@@ -443535,7 +444070,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 24,
+      "evidence_count": 26,
       "speaker_count": 1
     },
     {
@@ -487467,6 +488002,78 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=v3XYEALGDWo",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T03:00:04+00:00",
+          "score": 0,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=WanvUHjQB9c",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T22:00:18+00:00",
+          "score": 0,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZyKvNpzLR2o",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:30:28+00:00",
+          "score": 0,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=d2Ip3nJI4Rk",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T12:00:19+00:00",
+          "score": 0,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=gHrhjiilkGQ",
           "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
           "account": "@wadaikoCH",
@@ -487650,7 +488257,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 10,
+      "evidence_count": 14,
       "speaker_count": 1
     },
     {
@@ -597826,6 +598433,21 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:b4a283102aae6f924de25ecce9e245f82ea515ea9148b4b7715201be65e50518",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=f1qcAzbjB8w",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-17T11:00:05+00:00",
+          "score": 15,
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:85391ba33a081dd1542a446f870ebaf05c04a521d945ffb6367df22db3dd1104",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=tChxDNOsyVs",
@@ -598007,7 +598629,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 12,
+      "evidence_count": 13,
       "speaker_count": 2
     },
     {
@@ -612213,6 +612835,36 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:115067bfe759a3248b4b13d821cd350e45202d092e162705ec3c73f288cf0a2c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ghmj8ipTWEU",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:30:09+00:00",
+          "score": 17,
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:7e9e77021f1863ea61c60cf4becbeb9cf9eda519fd1815491502d8261bf6c671",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eD9YTTX9Y9E",
+          "text": "2026年10月4日、 東京都文京区の白山上向丘商店街にて開催された「白山まつり」盆踊りの様子です。 地域の方々の熱気と、 響き渡る太鼓やお囃子の音色、 賑やかな踊りの雰囲気をぜひお楽しみください！ 【開催概要】 イベント名：白山まつり 盆踊り 開催日：2026年10月4日（日） 場所：東京都文京区 白山上向丘商店街 動画をお楽しみいただけましたら、 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ 皆さまの好きな盆踊り曲や感想なども、 ぜひコメント欄で教えてください。 #白山まつり #盆踊り #文京区 #白山上向丘商店街 #お祭り #和太鼓 #日本の祭り 白山まつり盆踊り １東京音頭 https://youtu.be/insxtUX1ikI ２八木節 https://youtu.be/gxd3g3n5Q2E ３文京音頭 https://youtu.be/vXw-RfV5YLE ４アンパンマン音頭 https://youtu.be/Rc8xDP9kOjw ５きよしのソーラン節 https://youtu.be/VNWGWbvddOk ６365日の紙飛行機 https://yout",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-18T10:00:29+00:00",
+          "score": 17,
+          "estimated_event": "白山まつり",
+          "estimated_venue": "白山上向丘商店街",
+          "time_hints": [
+            "2026年10月4日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:051e272458a2863b19ab4229425ec62dcaa4e2f7482e46129fb828a4961a7f84",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=cxPpJ88Odww",
@@ -612574,7 +613226,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 24,
+      "evidence_count": 26,
       "speaker_count": 1
     },
     {
@@ -625241,6 +625893,41 @@
           "estimated_venue": "キッズ広場",
           "time_hints": [
             "2026年8月22日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:3da5b5b9bcc38a1ffc27b3b55a88ef4727e78e4b45ff511c6d18081498c14560",
+      "display_name": "キャロットタワーのプラザ広場",
+      "normalized_event": "",
+      "venue": "キャロットタワーのプラザ広場",
+      "venue_key": "660477c35ba1625888dfd150856cd1fd5f787b5a44d35ebdb17e456e66628521",
+      "month": "04",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4c88f33b44ebee37ca86cedb3f2c7a19a3d90dca07e07264de0087a17e53c2e5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DcuZoo1yt7c",
+          "text": "東京の三軒茶屋で「世田谷アートタウン2026 三茶 de 大道芸」が開催されました。 キャロットタワーのプラザ広場では、姉妹音楽ユニット「チャラン・ポ・ランタン」が多くのお客さんを盛り上げる素晴らしいパフォーマンス！今回もラストは大道芸らしく投げ銭タイム。気持ちよくお支払いができる演出で、最後の最後まで素晴らしい時間を堪能しました！ “Setagaya Art Town 2026: Street Performances in Sangenjaya” was held in Sangenjaya, Tokyo. At the Carrot Tower Plaza, the sister music duo “Charan-Po-Rantan” put on a fantastic performance that got the crowd fired up! True to the spirit of street performances, the event concluded with a tip-jar round. The way it was staged made it",
+          "account": "UCKCspf_NrY16rUnODmBqOWA",
+          "dancer_key": "@uckcspf_nry16runodmbqowa",
+          "observed_at": "2026-10-18T08:00:12+00:00",
+          "score": 8,
+          "estimated_event": "",
+          "estimated_venue": "キャロットタワーのプラザ広場",
+          "time_hints": [
+            "4-1",
+            "54-00"
           ]
         }
       ],
