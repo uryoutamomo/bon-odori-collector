@@ -146,6 +146,21 @@ class CapturePublicProjectionInputsTest(unittest.TestCase):
             capture(args)
         self.assertFalse(args.output.exists())
 
+    def test_invalid_single_line_pem_creates_no_artifact(self):
+        certificate = self.cert.read_text()
+        for value in (
+            "-----BEGIN CERTIFICATE-----$(touch injected)-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----bm90IGEgeDUwOSBjZXJ0aWZpY2F0ZQ==-----END CERTIFICATE-----",
+            certificate.replace("\n", "") + certificate.replace("\n", ""),
+        ):
+            with self.subTest(value=value[:45]):
+                self.cert.write_text(value)
+                args = self.args()
+                with self.assertRaisesRegex(CaptureError, "valid PEM X.509"):
+                    capture(args)
+                self.assertFalse(args.output.exists())
+                self.assertEqual(self.cert.read_text(), value)
+
     def test_dirty_supplemental_input_creates_no_artifact(self):
         repository, inputs = self.fixture_repository(dirty=True)
         args = self.args(repo=repository, input=inputs)
@@ -233,19 +248,28 @@ class CapturePublicProjectionInputsTest(unittest.TestCase):
                    COMPARISON_TODAY="2026-09-09", COMPARISON_TARGET_YEAR="2026")
         command = next(step["run"] for step in self.workflow()["jobs"]["capture"]["steps"]
                        if step.get("name") == "Encrypt comparison inputs for the named recipient")
-        result = subprocess.run(["bash", "-e", "-o", "pipefail", "-c", command],
-                                cwd=repository, env=env, capture_output=True, text=True)
-        self.assertEqual(result.returncode, 0, result.stderr)
         artifact = runner_temp / "public-projection-inputs.cms"
-        self.assertEqual([path.name for path in runner_temp.iterdir()], [artifact.name])
         plaintext = self.root / "workflow-decrypted.tar.gz"
-        subprocess.run([OPENSSL, "cms", "-decrypt", "-inform", "DER", "-binary", "-in", str(artifact),
-                        "-recip", str(self.cert), "-inkey", str(self.key), "-out", str(plaintext)],
-                       check=True, capture_output=True)
-        with tarfile.open(plaintext, "r:gz") as archive:
-            metadata = json.load(archive.extractfile("bundle-metadata.json"))
-        self.assertEqual(metadata["inputs"]["database"]["sha256"], file_sha256(self.db))
-        artifact.unlink()
+        original_certificate = self.cert.read_text()
+        for label, certificate in (
+            ("multiline", original_certificate),
+            ("browser-single-line", original_certificate.replace("\n", "")),
+        ):
+            with self.subTest(certificate=label):
+                env["RECIPIENT_CERTIFICATE"] = certificate
+                result = subprocess.run(["bash", "-e", "-o", "pipefail", "-c", command],
+                                        cwd=repository, env=env, capture_output=True, text=True)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertEqual([path.name for path in runner_temp.iterdir()], [artifact.name])
+                subprocess.run([OPENSSL, "cms", "-decrypt", "-inform", "DER", "-binary", "-in", str(artifact),
+                                "-recip", str(self.cert), "-inkey", str(self.key), "-out", str(plaintext)],
+                               check=True, capture_output=True)
+                with tarfile.open(plaintext, "r:gz") as archive:
+                    metadata = json.load(archive.extractfile("bundle-metadata.json"))
+                    self.assertNotIn("recipient.pem", archive.getnames())
+                self.assertEqual(metadata["inputs"]["database"]["sha256"], file_sha256(self.db))
+                self.assertEqual(self.cert.read_text(), original_certificate)
+                artifact.unlink()
         env["COMPARISON_TODAY"] = '2026-09-09$(touch "$RUNNER_TEMP/injected")'
         result = subprocess.run(["bash", "-e", "-o", "pipefail", "-c", command],
                                 cwd=repository, env=env, capture_output=True, text=True)

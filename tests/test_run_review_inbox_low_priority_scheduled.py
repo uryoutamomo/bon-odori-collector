@@ -50,7 +50,7 @@ def test_default_off_and_incomplete_source_set_stop_before_store():
     with tempfile.TemporaryDirectory() as tmp:
         args=setup(tmp)
         with pytest.raises(SourceWriterError,match="execution is off"): run_scheduled(Namespace(**{**vars(args),"execute":False,"confirm":""}),environ={},store_factory=lambda _:pytest.fail("store"))
-        with pytest.raises(SourceWriterError,match="requires all B4 sources"): run_scheduled(Namespace(**{**vars(args),"source":args.source[:-1]}),environ=ENV,store_factory=lambda _:pytest.fail("store"))
+        with pytest.raises(SourceWriterError,match="requires all B4 sources"): run_scheduled(Namespace(**{**vars(args),"source":args.source[:-1]}),environ=ENV,now=datetime(2026,7,20,15,13,tzinfo=JST),store_factory=lambda _:pytest.fail("store"))
 
 def test_cutover_pair_is_recorded_in_every_source_report():
     with tempfile.TemporaryDirectory() as tmp:
@@ -67,7 +67,7 @@ def test_malformed_later_source_stops_before_remote_artifact_access():
         gap=Path(next(value.split("=",1)[1] for value in args.source if value.startswith("publication_gap=")))
         gap.write_text(json.dumps({"rows":[{"gap_id":"g","recommended_action":"publish"}]}))
         with pytest.raises(SourceWriterError,match="unsupported publication gap action"):
-            run_scheduled(args,environ=ENV,store_factory=lambda _:pytest.fail("store"))
+            run_scheduled(args,environ=ENV,now=datetime(2026,7,20,15,13,tzinfo=JST),store_factory=lambda _:pytest.fail("store"))
 
 def test_cron_window_stops_before_store():
     with tempfile.TemporaryDirectory() as tmp:
