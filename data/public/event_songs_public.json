@@ -3509,6 +3509,12 @@
     "date": "2026-10-09",
     "songs": [
       {
+        "name": "Runner",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "YMCA",
         "confidence": "hint",
         "basis": "current_observed",
@@ -3521,7 +3527,25 @@
         "basis_label": "実測"
       },
       {
+        "name": "そんなヒロシに騙されて",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "エロティカセブン",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マンピーのG★SPOT",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -3533,7 +3557,43 @@
         "basis_label": "実測"
       },
       {
+        "name": "勇気100%",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "希望の轍",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "弥栄牡丹ステージ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "弥栄牡丹ステージ1",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "弥栄牡丹ステージ2",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "波乗りジョニー",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"

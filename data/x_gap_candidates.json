@@ -1,6 +1,6 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-10-18T11:14:39.465582+00:00",
+  "generated_at": "2026-10-19T13:22:59.026605+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
@@ -3671,9 +3671,7 @@
         "10/11",
         "10/18"
       ],
-      "observed_dates": [
-        "2026-10-18"
-      ],
+      "observed_dates": [],
       "event_group_key": "",
       "known_venue_evidence": {
         "venue": "第四日野小学校",

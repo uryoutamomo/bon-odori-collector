@@ -1,7 +1,7 @@
 # X News Digest For Oto
 
-- generated_at: 2026-10-18T11:07:02+00:00
-- digest_count: 20741
+- generated_at: 2026-10-19T13:15:41+00:00
+- digest_count: 20742
 - status: machine prefilter; Oto interpretation pending
 
 | confidence | type | machine novelty | target | machine summary | machine reason | backcheck | source |
@@ -19896,6 +19896,7 @@
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/hookahs_bar/status/2091019918452162676 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/NemottyNeronero/status/2090786799258108055 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/rollingasahi/status/2090759777379066094 |
+| hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/BaK_ao52/status/2090754985139011608 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/7376GgBw1gwxUM3/status/2090418067952353658 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 曲候補「炭坑節」に関するX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き | 炭坑節 盆踊り; ズンパ音頭 盆踊り | https://x.com/kaz0045/status/2090613181941170235 |
 | hold | atmosphere_or_scale_evidence | known | existing_evidence | 盆踊り関連のX由来情報。 | 既存情報に近く、新規候補ではなく証拠追加向き |  | https://x.com/kaikai73034175/status/2090697262502654280 |

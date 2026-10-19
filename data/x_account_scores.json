@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:03:43.682520+00:00",
+  "generated_at": "2026-10-19T13:12:36.669846+00:00",
   "accounts": {
     "2019varekai": {
       "handle": "@2019varekai",
@@ -1833,7 +1833,7 @@
       "change_count": 2,
       "onsite23_count": 2,
       "photo23_count": 2,
-      "song_count": 9,
+      "song_count": 10,
       "place_count": 3,
       "bon23_ratio": 0.3667,
       "listy_ratio": 0.0167,
@@ -1843,7 +1843,7 @@
       "media_ratio": 0.5667,
       "onsite23_ratio": 0.0533,
       "photo23_ratio": 0.0556,
-      "song_ratio": 0.2167,
+      "song_ratio": 0.2389,
       "place_ratio": 0.0833,
       "url_ratio": 0.675,
       "bon_ratio": 0.525,
@@ -1853,7 +1853,7 @@
       "gap_credits": 0,
       "is_area_bot": false,
       "announce_score": 9.53,
-      "record_score": 10.13
+      "record_score": 10.34
     },
     "bakushin339711": {
       "handle": "@bakushin339711",
