@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-18T11:26:04.773637+00:00",
+  "generated_at": "2026-10-19T13:24:43.363409+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,442 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3448d0ef2004d75b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "晴明丘地域担当です。\n8月15日土曜日、18時～20時に晴明丘中央公園にて、晴明丘地域活動協議会主催の「納涼盆おどり大会」が開催されます。\n縁日は18時からです",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087807261196583112",
+      "source_url": "https://x.com/abenoku_abenon/status/2087807261196583112",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "fbacb729fce647752899d459cf4252977bc1d7dca0370f74128957ebbd52c1c7",
+      "last_seen_at": "github-39257960020-1",
+      "created_at": "2026-10-19T13:24:05.338712+00:00",
+      "updated_at": "2026-10-19T13:24:05.338712+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a918504b066c854e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月15日",
+          "18時",
+          "20時",
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@abenoku_abenon",
+        "source_count": 1,
+        "source_key": "x:2087807261196583112",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPlhouPbEAAYlhr.jpg",
+          "https://t.co/qLQYdQnRcB",
+          "pic.x.com/qLQYdQnRcB"
+        ],
+        "source_officiality": {
+          "account_name": "大阪市阿倍野区役所",
+          "classification": "registered_official_social",
+          "handle": "@abenoku_abenon",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n晴明丘地域担当です。\n8月15日土曜日、18時～20時に晴明丘中央公園にて、晴明丘地域活動協議会主催の「納涼盆おどり大会」が開催されます。\n縁日は18時からです。みなさま、参加して楽しんでください( ´∀｀) https://t.co/qLQYdQnRcB",
+        "source_url": "https://x.com/abenoku_abenon/status/2087807261196583112",
+        "source_urls": [
+          "https://x.com/abenoku_abenon/status/2087807261196583112"
+        ],
+        "voice": {
+          "account": "@abenoku_abenon",
+          "critique_post": false,
+          "date": "2026-08-13T07:43:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPlhouPbEAAYlhr.jpg",
+            "https://t.co/qLQYdQnRcB",
+            "pic.x.com/qLQYdQnRcB"
+          ],
+          "name": "大阪市阿倍野区役所",
+          "profile_description": "こんにちは！大阪市阿倍野区役所の公式アカウントです。「誰もが住みたい、住み続けたいまち“あべの”の実現」に向けさまざまな取組をしています。広報紙、HP等に加え、エックスで行政や地域の情報などを積極的に発信します。 フォロー･返信は行いませんのでご了承ください。運用方針はこちらhttps://t.co/jGXpnUwyjF",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-future-schedule"
+          ],
+          "text": "晴明丘地域担当です。\n8月15日土曜日、18時～20時に晴明丘中央公園にて、晴明丘地域活動協議会主催の「納涼盆おどり大会」が開催されます。\n縁日は18時からです。みなさま、参加して楽しんでください( ´∀｀) https://t.co/qLQYdQnRcB",
+          "title": "",
+          "tweet_id": "2087807261196583112",
+          "url": "https://x.com/abenoku_abenon/status/2087807261196583112"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_49e70066362e5aff",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/9（日）　市野倉北町会納涼盆踊り大会＠太田神社　演目の充実ぶりにこどもも大人も嬉しい振る舞い　防空壕の思い出を伺いながら平和の大切さを胸に踊る｜庄嶋たかひろ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087137404281053420",
+      "source_url": "https://x.com/TakahiroShojima/status/2087137404281053420",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b7dbea127e2273c259b29ea2879b2c17eb27c851081ae6deac0ad7fee1c1c497",
+      "last_seen_at": "github-39257960020-1",
+      "created_at": "2026-10-19T13:24:05.338712+00:00",
+      "updated_at": "2026-10-19T13:24:05.338712+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6deec66135017ca4",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/9"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@TakahiroShojima",
+        "source_count": 1,
+        "source_key": "x:2087137404281053420",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "庄嶋たかひろ 大田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@takahiroshojima",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/9（日）　市野倉北町会納涼盆踊り大会＠太田神社　演目の充実ぶりにこどもも大人も嬉しい振る舞い　防空壕の思い出を伺いながら平和の大切さを胸に踊る｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/9I3owTrAnm",
+        "source_url": "https://x.com/TakahiroShojima/status/2087137404281053420",
+        "source_urls": [
+          "https://x.com/TakahiroShojima/status/2087137404281053420"
+        ],
+        "voice": {
+          "account": "@TakahiroShojima",
+          "critique_post": false,
+          "date": "2026-08-11T11:21:48+00:00",
+          "name": "庄嶋たかひろ 大田区議会議員",
+          "profile_description": "",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-song-program"
+          ],
+          "text": "8/9（日）　市野倉北町会納涼盆踊り大会＠太田神社　演目の充実ぶりにこどもも大人も嬉しい振る舞い　防空壕の思い出を伺いながら平和の大切さを胸に踊る｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/9I3owTrAnm",
+          "title": "",
+          "tweet_id": "2087137404281053420",
+          "url": "https://x.com/TakahiroShojima/status/2087137404281053420"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4e26f81b145594d9",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "８月２２日のイベントスケジュールです\n　16:30～　お囃子（国分囃子保存会）\n　17:00～　子供工作教室\n　18:00～　こども抽選会\n　　（先着２００名、",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087354024819654985",
+      "source_url": "https://x.com/sagami_bon/status/2087354024819654985",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9966670241ca243c8dda2cfd2b52e9aeb0d5bdaa7c0507748a1bd6f31213c670",
+      "last_seen_at": "github-39257960020-1",
+      "created_at": "2026-10-19T13:24:05.338712+00:00",
+      "updated_at": "2026-10-19T13:24:05.338712+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_f5e00f368572c0cd",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月２２日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@sagami_bon",
+        "source_count": 1,
+        "source_key": "x:2087354024819654985",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPfD9TTbgAA2kfF.jpg",
+          "https://t.co/vkAhO53oVo",
+          "pic.x.com/vkAhO53oVo"
+        ],
+        "source_officiality": {
+          "account_name": "相模国分寺盆踊り 2026",
+          "classification": "registered_official_social",
+          "handle": "@sagami_bon",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n８月２２日のイベントスケジュールです\n　16:30～　お囃子（国分囃子保存会）\n　17:00～　子供工作教室\n　18:00～　こども抽選会\n　　（先着２００名、小学生以下対象）\n　18:30～　盆踊り\n　消防車の展示、おこじゅうサロンも実施\n皆様ぜひ遊びに来てください♪\n\n#相模国分寺盆踊り\n#海老名\n#盆踊り https://t.co/vkAhO53oVo",
+        "source_url": "https://x.com/sagami_bon/status/2087354024819654985",
+        "source_urls": [
+          "https://x.com/sagami_bon/status/2087354024819654985"
+        ],
+        "voice": {
+          "account": "@sagami_bon",
+          "critique_post": false,
+          "date": "2026-08-12T01:42:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPfD9TTbgAA2kfF.jpg",
+            "https://t.co/vkAhO53oVo",
+            "pic.x.com/vkAhO53oVo"
+          ],
+          "name": "相模国分寺盆踊り 2026",
+          "profile_description": "",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "８月２２日のイベントスケジュールです\n　16:30～　お囃子（国分囃子保存会）\n　17:00～　子供工作教室\n　18:00～　こども抽選会\n　　（先着２００名、小学生以下対象）\n　18:30～　盆踊り\n　消防車の展示、おこじゅうサロンも実施\n皆様ぜひ遊びに来てください♪\n\n#相模国分寺盆踊り\n#海老名\n#盆踊り https://t.co/vkAhO53oVo",
+          "title": "",
+          "tweet_id": "2087354024819654985",
+          "url": "https://x.com/sagami_bon/status/2087354024819654985"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_a5c1a713c2832b01",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【8/11(火) 行啓通ふれあい盆踊りまつり】\n\n8/11(火)、行啓通商店街で開催された「2026 行啓通ふれあい盆踊りまつり」に参加させて頂きました。\n\n歩",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087376327133601967",
+      "source_url": "https://x.com/Daisen1989/status/2087376327133601967",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b5bc125682f4e381a4eef0618192c8efee13666b59cae70508cb21a1764460e4",
+      "last_seen_at": "github-39257960020-1",
+      "created_at": "2026-10-19T13:24:05.338712+00:00",
+      "updated_at": "2026-10-19T13:24:05.338712+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_465d6faf0c2e9eda",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/11",
+          "8/11"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Daisen1989",
+        "source_count": 1,
+        "source_key": "x:2087376327133601967",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPfZsAwbkAA6w1p.jpg",
+          "https://t.co/CwvjGEiSeC",
+          "pic.x.com/CwvjGEiSeC"
+        ],
+        "source_officiality": {
+          "account_name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
+          "classification": "registered_official_social",
+          "handle": "@daisen1989",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【8/11(火) 行啓通ふれあい盆踊りまつり】\n\n8/11(火)、行啓通商店街で開催された「2026 行啓通ふれあい盆踊りまつり」に参加させて頂きました。\n\n歩行者天国となった行啓通商店街が、ビアガーデンやポップコーン、かき氷、輪投げ等の縁日で賑わい、子供盆踊りと北海盆踊りが行われました。\n\n主催される行啓通商店街振興組合の皆さまや町内会の皆さまに、心より敬意を表します。",
+        "source_url": "https://x.com/Daisen1989/status/2087376327133601967",
+        "source_urls": [
+          "https://x.com/Daisen1989/status/2087376327133601967"
+        ],
+        "voice": {
+          "account": "@Daisen1989",
+          "critique_post": false,
+          "date": "2026-08-12T03:11:12+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPfZsAwbkAA6w1p.jpg",
+            "https://t.co/CwvjGEiSeC",
+            "pic.x.com/CwvjGEiSeC"
+          ],
+          "name": "はだ だいせん(波田大専)【札幌市議会議員/中央区/日本維新の会】",
+          "profile_description": "",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "【8/11(火) 行啓通ふれあい盆踊りまつり】\n\n8/11(火)、行啓通商店街で開催された「2026 行啓通ふれあい盆踊りまつり」に参加させて頂きました。\n\n歩行者天国となった行啓通商店街が、ビアガーデンやポップコーン、かき氷、輪投げ等の縁日で賑わい、子供盆踊りと北海盆踊りが行われました。\n\n主催される行啓通商店街振興組合の皆さまや町内会の皆さまに、心より敬意を表します。",
+          "title": "",
+          "tweet_id": "2087376327133601967",
+          "url": "https://x.com/Daisen1989/status/2087376327133601967"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cea9dcbb079aae9c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "▼盆踊り大会\n\n　#三坂神社 では、毎年8月14日に盆踊り大会を行っています。\n\n　盆踊り大会は地域住民の皆様のためのお祭りにはなりますが、翌日の #写真まつり",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087390492120244255",
+      "source_url": "https://x.com/misakajinja/status/2087390492120244255",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4bc4348b91a9d327ff6d098a06bb4d4e91fc0c83f1860b3218cdffacfbc9ce99",
+      "last_seen_at": "github-39257960020-1",
+      "created_at": "2026-10-19T13:24:05.338712+00:00",
+      "updated_at": "2026-10-19T13:24:05.338712+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a54b5f3f23e97e6c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月14日",
+          "8月15日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@misakajinja",
+        "source_count": 1,
+        "source_key": "x:2087390492120244255",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPfmlZfb0AEfQGP.jpg",
+          "https://t.co/awrYfLDe1P",
+          "pic.x.com/awrYfLDe1P"
+        ],
+        "source_officiality": {
+          "account_name": "三坂神社（弾除け神社）公式",
+          "classification": "registered_official_social",
+          "handle": "@misakajinja",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n▼盆踊り大会\n\n　#三坂神社 では、毎年8月14日に盆踊り大会を行っています。\n\n　盆踊り大会は地域住民の皆様のためのお祭りにはなりますが、翌日の #写真まつり（8月15日）の前夜祭としての側面も持っています。\n\n　※各地にお住まいの皆様には、どなたでもご参加できる写真まつりに是非お越し下さい。 https://t.co/awrYfLDe1P",
+        "source_url": "https://x.com/misakajinja/status/2087390492120244255",
+        "source_urls": [
+          "https://x.com/misakajinja/status/2087390492120244255"
+        ],
+        "voice": {
+          "account": "@misakajinja",
+          "critique_post": false,
+          "date": "2026-08-12T04:07:29+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPfmlZfb0AEfQGP.jpg",
+            "https://t.co/awrYfLDe1P",
+            "pic.x.com/awrYfLDe1P"
+          ],
+          "name": "三坂神社（弾除け神社）公式",
+          "profile_description": "",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-images"
+          ],
+          "text": "▼盆踊り大会\n\n　#三坂神社 では、毎年8月14日に盆踊り大会を行っています。\n\n　盆踊り大会は地域住民の皆様のためのお祭りにはなりますが、翌日の #写真まつり（8月15日）の前夜祭としての側面も持っています。\n\n　※各地にお住まいの皆様には、どなたでもご参加できる写真まつりに是非お越し下さい。 https://t.co/awrYfLDe1P",
+          "title": "",
+          "tweet_id": "2087390492120244255",
+          "url": "https://x.com/misakajinja/status/2087390492120244255"
         }
       }
     },
