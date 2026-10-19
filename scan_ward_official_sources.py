@@ -132,6 +132,69 @@ HEADER_PATTERNS = {
     "venue": ("会場", "場所"),
     "address": ("住所", "所在地"),
 }
+PROGRAMME_DATE_RE = re.compile(r"(?:(20\d{2})年\s*)?(\d{1,2})\s*月\s*(\d{1,2})\s*日")
+PROGRAMME_TIME_RE = re.compile(r"(\d{1,2})[:：](\d{2})\s*[〜～~\-－–—]\s*(\d{1,2})[:：](\d{2})")
+PROGRAMME_WITHHELD_RE = re.compile(r"未定|未確定|調整中|後日|別途|非公表|未発表|中止|延期|ではありません|ではない|を除く|以外")
+BON_PROGRAMME_RE = re.compile("|".join(re.escape(word) for word in BON_KEYWORDS))
+
+
+def _dance_programme_schedule(text: str, year: int) -> tuple[str, str, str] | None:
+    """Scope explicit programme facts; never borrow another programme's date."""
+    schedules = set()
+    for clause in re.split(r"\s+/\s+|[。；;\n]", text):
+        keyword = BON_PROGRAMME_RE.search(clause)
+        if not keyword:
+            continue
+        after = clause[keyword.end():]
+        labelled = re.match(r"\s*(?:[:：]|は|の(?:開催)?日(?:時)?は)", after)
+        dates_in_clause = list(PROGRAMME_DATE_RE.finditer(clause))
+        if not (labelled or PROGRAMME_TIME_RE.search(clause) or PROGRAMME_WITHHELD_RE.search(clause) or len(dates_in_clause) > 1):
+            continue  # Preserve ordinary single-event list/table extraction.
+        scope = after if labelled or PROGRAMME_DATE_RE.search(after) else clause
+        if re.search(r"市全体|市場|マーケット|イベント全体|市[:：]|神輿|ステージ", clause[:keyword.start()]):
+            scope = after
+        dates = list(PROGRAMME_DATE_RE.finditer(scope))
+        if PROGRAMME_WITHHELD_RE.search(scope) or not dates:
+            return "", "", "ambiguous"
+        values = {(int(match[2]), int(match[3])) for match in dates}
+        extra_days = {int(day) for day in re.findall(r"(\d{1,2})\s*日", scope)} - {day for _month, day in values}
+        if len(values) != 1 or extra_days or any(match[1] and int(match[1]) != year for match in dates):
+            return "", "", "ambiguous"
+        month, day = next(iter(values))
+        try:
+            datetime(year, month, day)
+        except ValueError:
+            return "", "", "ambiguous"
+        times = {tuple(map(int, match)) for match in PROGRAMME_TIME_RE.findall(scope)}
+        if len(times) > 1:
+            return "", "", "ambiguous"
+        time_text = ""
+        if times:
+            first_hour, first_minute, last_hour, last_minute = next(iter(times))
+            clocks = {tuple(map(int, match)) for match in re.findall(r"(\d{1,2})[:：](\d{2})", scope)}
+            if (not (0 <= first_hour <= last_hour < 24 and 0 <= first_minute < 60 and 0 <= last_minute < 60)
+                    or (first_hour, first_minute) >= (last_hour, last_minute)
+                    or clocks - {(first_hour, first_minute), (last_hour, last_minute)}):
+                return "", "", "ambiguous"
+            time_text = f"{first_hour:02}:{first_minute:02}〜{last_hour:02}:{last_minute:02}"
+        schedules.add((f"{month}月{day}日", time_text))
+    if not schedules:
+        return None
+    if len(schedules) != 1:
+        return "", "", "ambiguous"
+    date_text, time_text = next(iter(schedules))
+    return date_text, time_text, "explicit" if time_text else "date_only"
+
+
+def _programme_fields(schedule: tuple[str, str, str] | None) -> dict:
+    if schedule is None:
+        return {}
+    date_text, time_text, status = schedule
+    fields = {"event_date_text": " / ".join(value for value in (date_text, time_text) if value),
+              "schedule_scope": "bon_odori", "schedule_review_status": status}
+    if status == "ambiguous":
+        fields["reason"] = "盆踊りの日程を特定できず保留。催事全体の日付は転用しない。"
+    return fields
 
 
 def _header_mapping(row: list[dict]) -> dict[str, int]:
@@ -151,7 +214,9 @@ def _field(cells: list[str], mapping: dict[str, int], role: str) -> str:
 
 def _structured_candidate(source: dict, url: str, year: int, *, parse_mode: str, row_index: int,
                           event_name: str, date_text: str, time_text: str = "", venue: str = "",
-                          address: str = "", raw_text: str = "") -> dict:
+                          address: str = "", raw_text: str = "", programme_schedule=None) -> dict:
+    if programme_schedule is not None:
+        date_text, time_text, _status = programme_schedule
     combined_date = " / ".join(value for value in (date_text, time_text) if value)
     row_key = "|".join((event_name, combined_date, venue, address))
     status_hint = "cancelled" if "中止" in raw_text else ""
@@ -182,6 +247,7 @@ def _structured_candidate(source: dict, url: str, year: int, *, parse_mode: str,
         "registry_format": source.get("format") or "",
         "parse_mode": parse_mode,
         "source_row_index": row_index,
+        **_programme_fields(programme_schedule),
     }
 
 
@@ -207,7 +273,8 @@ def extract_structured_event_rows(raw_html: str, source: dict, url: str, year: i
             raw_text = " / ".join(value for value in cells if value)
             date_text = _field(cells, mapping, "date")
             event_name = _field(cells, mapping, "name")
-            if not date_text or not event_name or not re.search(r"\d{1,2}\s*月\s*\d{1,2}\s*日", date_text):
+            programme_schedule = _dance_programme_schedule(raw_text, year)
+            if programme_schedule is None and (not date_text or not event_name or not PROGRAMME_DATE_RE.search(date_text)):
                 continue
             if not trust_listing_context and not any(keyword in raw_text for keyword in BON_KEYWORDS):
                 continue
@@ -215,27 +282,30 @@ def extract_structured_event_rows(raw_html: str, source: dict, url: str, year: i
                 source, url, year,
                 parse_mode="html_table_row",
                 row_index=table_index * 10000 + row_index,
-                event_name=event_name,
+                event_name=event_name or source["title"],
                 date_text=date_text,
                 time_text=_field(cells, mapping, "time"),
                 venue=_field(cells, mapping, "venue"),
                 address=_field(cells, mapping, "address"),
                 raw_text=raw_text,
+                programme_schedule=programme_schedule,
             ))
 
     for row_index, value in enumerate(parser.list_items):
         if not any(keyword in value for keyword in BON_KEYWORDS):
             continue
         date_match = re.search(r"\d{1,2}\s*月\s*\d{1,2}\s*日", value)
-        if not date_match:
+        programme_schedule = _dance_programme_schedule(value, year)
+        if not date_match and programme_schedule is None:
             continue
         candidates.append(_structured_candidate(
             source, url, year,
             parse_mode="html_list_item",
             row_index=row_index,
             event_name=value,
-            date_text=date_match.group(0),
+            date_text=date_match.group(0) if date_match else "",
             raw_text=value,
+            programme_schedule=programme_schedule,
         ))
     return list({row["id"]: row for row in candidates}.values())
 
@@ -277,6 +347,7 @@ def candidate_row(source: dict, scan: dict, year: int) -> dict:
         "memo": memo,
         "registry_source_type": source.get("source_type") or "",
         "registry_format": source.get("format") or "",
+        **_programme_fields(_dance_programme_schedule(str(evidence.get("text") or ""), year)),
     }
 
 
@@ -289,6 +360,7 @@ def scan_registry(sources: list[dict], year: int, *, timeout: int = 20, scan_fn=
         confirmed = [row for row in scanned if row.get("status") == "confirmed"]
         structured_count = 0
         fallback_count = 0
+        ambiguous_count = 0
         for row in confirmed:
             url = str(row.get("source_url") or source["url"])
             structured_rows = []
@@ -299,11 +371,16 @@ def scan_registry(sources: list[dict], year: int, *, timeout: int = 20, scan_fn=
             except Exception as exc:
                 print(f"[ward-official] 行単位抽出失敗（{url}）: {exc}")
             if structured_rows:
+                # Held rows are deliberately nonempty so page dates cannot leak
+                # back through the ordinary page-level fallback.
                 rows.extend(structured_rows)
                 structured_count += len(structured_rows)
+                ambiguous_count += sum(item.get("schedule_review_status") == "ambiguous" for item in structured_rows)
             else:
-                rows.append(candidate_row(source, row, year))
+                fallback = candidate_row(source, row, year)
+                rows.append(fallback)
                 fallback_count += 1
+                ambiguous_count += int(fallback.get("schedule_review_status") == "ambiguous")
         source_reports.append(
             {
                 "source_registry_id": source["id"],
@@ -313,6 +390,7 @@ def scan_registry(sources: list[dict], year: int, *, timeout: int = 20, scan_fn=
                 "confirmed_count": len(confirmed),
                 "structured_candidate_count": structured_count,
                 "page_fallback_count": fallback_count,
+                "ambiguous_schedule_count": ambiguous_count,
                 "status": "confirmed" if confirmed else "no_bon_context_found",
             }
         )
