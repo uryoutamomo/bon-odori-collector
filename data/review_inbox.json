@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-19T13:34:03.411762+00:00",
+  "generated_at": "2026-10-20T11:47:32.620274+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,427 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1c773e9ca4650eef",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【御嶽山】8/22(土)・23(日)「盆踊り大会」開催♪\n盆踊りに参加してくれた方には、アイスキャンディーの配布がありますよ～❤️\nhtt",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088098286934634663",
+      "source_url": "https://x.com/otafull/status/2088098286934634663",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ae7b22d937bfca6bdc37ffbd47c8a662a26c78eb7f94497fb65b76d241d46395",
+      "last_seen_at": "github-39415792319-1",
+      "created_at": "2026-10-20T11:46:49.310015+00:00",
+      "updated_at": "2026-10-20T11:46:49.310015+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3480e2492c18ad2b",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2088098286934634663",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【御嶽山】8/22(土)・23(日)「盆踊り大会」開催♪\n盆踊りに参加してくれた方には、アイスキャンディーの配布がありますよ～❤️\nhttps://t.co/SJTO8KhXAS\n#大田区　#商店街　#御嶽山　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2088098286934634663",
+        "source_urls": [
+          "https://x.com/otafull/status/2088098286934634663"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-14T03:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-future-schedule"
+          ],
+          "text": "【盆踊り情報2026】【御嶽山】8/22(土)・23(日)「盆踊り大会」開催♪\n盆踊りに参加してくれた方には、アイスキャンディーの配布がありますよ～❤️\nhttps://t.co/SJTO8KhXAS\n#大田区　#商店街　#御嶽山　#盆踊り",
+          "title": "",
+          "tweet_id": "2088098286934634663",
+          "url": "https://x.com/otafull/status/2088098286934634663"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_39acad7419951175",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【西馬込】8/21(金)、22(土)南馬込西一会が「納涼盆踊り大会」。文士村商店会が協賛\n両日とも18:30～20:30⏰\n湯殿公園に集ま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2087811400794083572",
+      "source_url": "https://x.com/otafull/status/2087811400794083572",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "54e1e2f7a876474add598fd91541bbe70c7beafb5ddb39b5641f8a51deac9a6a",
+      "last_seen_at": "github-39415792319-1",
+      "created_at": "2026-10-20T11:46:49.310015+00:00",
+      "updated_at": "2026-10-20T11:46:49.310015+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_146de25c408ae1fb",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/21"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区南馬込5-18",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/153377",
+          "venue": "湯殿公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2087811400794083572",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【西馬込】8/21(金)、22(土)南馬込西一会が「納涼盆踊り大会」。文士村商店会が協賛\n両日とも18:30～20:30⏰\n湯殿公園に集まれ～❤️\nhttps://t.co/6n77bgfehe\n#大田区　#商店街　#西馬込　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2087811400794083572",
+        "source_urls": [
+          "https://x.com/otafull/status/2087811400794083572"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-13T08:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【西馬込】8/21(金)、22(土)南馬込西一会が「納涼盆踊り大会」。文士村商店会が協賛\n両日とも18:30～20:30⏰\n湯殿公園に集まれ～❤️\nhttps://t.co/6n77bgfehe\n#大田区　#商店街　#西馬込　#盆踊り",
+          "title": "",
+          "tweet_id": "2087811400794083572",
+          "url": "https://x.com/otafull/status/2087811400794083572"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6c372868aee61e11",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【下丸子】8/22(土)、23(日)下丸子東町会が工和会館周辺で「夏祭り・盆踊り大会」\nかき氷やフランクフルトは100円❣️\nお子さまのお",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088037894145425877",
+      "source_url": "https://x.com/otafull/status/2088037894145425877",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "26cc6b1afcb45fb26e0285343fa8fcc7b89272dea69820e2e320f143ff23dc0b",
+      "last_seen_at": "github-39415792319-1",
+      "created_at": "2026-10-20T11:46:49.310015+00:00",
+      "updated_at": "2026-10-20T11:46:49.310015+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_aab1e9d9933c536c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2088037894145425877",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【下丸子】8/22(土)、23(日)下丸子東町会が工和会館周辺で「夏祭り・盆踊り大会」\nかき氷やフランクフルトは100円❣️\nお子さまのおこづかいでも安心して楽しめるワンコイン価格ですね❤️\nhttps://t.co/Pj4rlvMGFC\n#大田区　#商店街　#下丸子　#お祭り",
+        "source_url": "https://x.com/otafull/status/2088037894145425877",
+        "source_urls": [
+          "https://x.com/otafull/status/2088037894145425877"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-13T23:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【下丸子】8/22(土)、23(日)下丸子東町会が工和会館周辺で「夏祭り・盆踊り大会」\nかき氷やフランクフルトは100円❣️\nお子さまのおこづかいでも安心して楽しめるワンコイン価格ですね❤️\nhttps://t.co/Pj4rlvMGFC\n#大田区　#商店街　#下丸子　#お祭り",
+          "title": "",
+          "tweet_id": "2088037894145425877",
+          "url": "https://x.com/otafull/status/2088037894145425877"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_98fa1272c6602e7f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "🏮 南流山連合納涼祭2026 🏮\n\n開催するかどうかの判断は明日１４時に決定します！\n\n豪雨から一転、暑い中での作業となりましたが、提灯付けも完了。後はこの後の",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088092174143611185",
+      "source_url": "https://x.com/kawamoto188cm/status/2088092174143611185",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "986d6c272948bcadb99e33c9ab0bd2881cc01474ebad27e28ca9ab995612cc48",
+      "last_seen_at": "github-39415792319-1",
+      "created_at": "2026-10-20T11:46:49.310015+00:00",
+      "updated_at": "2026-10-20T11:46:49.310015+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_244a25ac3b1ea145",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "１４時",
+          "８月１５日",
+          "２１時",
+          "８月１６日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@kawamoto188cm",
+        "source_count": 1,
+        "source_key": "x:2088092174143611185",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPpjDGZa0AA5ZQF.jpg",
+          "https://t.co/B2ZP96KsFb",
+          "pic.x.com/B2ZP96KsFb"
+        ],
+        "source_officiality": {
+          "account_name": "川本ひろたけ＠流山市議会議員　🌳🚋 南流山活性化 🚋🌳",
+          "classification": "registered_official_social",
+          "handle": "@kawamoto188cm",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n🏮 南流山連合納涼祭2026 🏮\n\n開催するかどうかの判断は明日１４時に決定します！\n\n豪雨から一転、暑い中での作業となりましたが、提灯付けも完了。後はこの後の天候を祈るばかりです！！\n\n⚫日時：８月１５日（土）１７～２１時\n　※雨天時は８月１６日（日）に順延\n\n⚫会場：南流山中央公園\n　※南流山駅徒歩2分\n\nみなさま、昨晩の豪雨は大丈夫でしたでしょうか。被害に見舞われた方へお見舞い申し上げます。\n\n#南流山連合納涼祭\n#南流山連合納涼祭2026\n#南流山中央公園\n#南流山自治会\n#木自治会\n#コープ野村南流山壱番街自治会\n#南流山弐番街自治会\n#南流山\n#南流山駅\n#南流山活性化\n#盆踊り\n#納涼祭\n#夏祭り\n#流山市",
+        "source_url": "https://x.com/kawamoto188cm/status/2088092174143611185",
+        "source_urls": [
+          "https://x.com/kawamoto188cm/status/2088092174143611185"
+        ],
+        "voice": {
+          "account": "@kawamoto188cm",
+          "critique_post": false,
+          "date": "2026-08-14T02:35:43+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPpjDGZa0AA5ZQF.jpg",
+            "https://t.co/B2ZP96KsFb",
+            "pic.x.com/B2ZP96KsFb"
+          ],
+          "name": "川本ひろたけ＠流山市議会議員　🌳🚋 南流山活性化 🚋🌳",
+          "profile_description": "流山市議会議員\n川本ひろたけ市政会 / 市政について学び、自身の発信につなげていけるよう / 保険代理店（保険業界25年） / 流山ロータリークラブ / 流山ＪＣシニアクラブ / 松戸法人会 / Twitter初心者",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "🏮 南流山連合納涼祭2026 🏮\n\n開催するかどうかの判断は明日１４時に決定します！\n\n豪雨から一転、暑い中での作業となりましたが、提灯付けも完了。後はこの後の天候を祈るばかりです！！\n\n⚫日時：８月１５日（土）１７～２１時\n　※雨天時は８月１６日（日）に順延\n\n⚫会場：南流山中央公園\n　※南流山駅徒歩2分\n\nみなさま、昨晩の豪雨は大丈夫でしたでしょうか。被害に見舞われた方へお見舞い申し上げます。\n\n#南流山連合納涼祭\n#南流山連合納涼祭2026\n#南流山中央公園\n#南流山自治会\n#木自治会\n#コープ野村南流山壱番街自治会\n#南流山弐番街自治会\n#南流山\n#南流山駅\n#南流山活性化\n#盆踊り\n#納涼祭\n#夏祭り\n#流山市",
+          "title": "",
+          "tweet_id": "2088092174143611185",
+          "url": "https://x.com/kawamoto188cm/status/2088092174143611185"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_f791ab1cde008a5a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "盆踊りと模擬店で楽しみましょう！【梅屋敷】8/22(土)東蒲小学校で東蒲田1、2丁目の4町会合同「夏祭り・盆踊り大会」\nhttps://t.co/qXCENxu",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088122029639864666",
+      "source_url": "https://x.com/otafull/status/2088122029639864666",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1b1a82b4f53a096506cb206ef6ab8e4454e82604935f769f66b723e1111e9150",
+      "last_seen_at": "github-39415792319-1",
+      "created_at": "2026-10-20T11:46:49.310015+00:00",
+      "updated_at": "2026-10-20T11:46:49.310015+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_88846d173a84c39d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2088122029639864666",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPp_3JDbAAAk48c.jpg",
+          "https://t.co/YMRr4PM9fI",
+          "pic.x.com/YMRr4PM9fI"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n盆踊りと模擬店で楽しみましょう！【梅屋敷】8/22(土)東蒲小学校で東蒲田1、2丁目の4町会合同「夏祭り・盆踊り大会」\nhttps://t.co/qXCENxuxhP https://t.co/YMRr4PM9fI",
+        "source_url": "https://x.com/otafull/status/2088122029639864666",
+        "source_urls": [
+          "https://x.com/otafull/status/2088122029639864666"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-14T04:34:21+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPp_3JDbAAAk48c.jpg",
+            "https://t.co/YMRr4PM9fI",
+            "pic.x.com/YMRr4PM9fI"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "盆踊りと模擬店で楽しみましょう！【梅屋敷】8/22(土)東蒲小学校で東蒲田1、2丁目の4町会合同「夏祭り・盆踊り大会」\nhttps://t.co/qXCENxuxhP https://t.co/YMRr4PM9fI",
+          "title": "",
+          "tweet_id": "2088122029639864666",
+          "url": "https://x.com/otafull/status/2088122029639864666"
         }
       }
     },
