@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-20T11:57:30.411598+00:00",
+  "generated_at": "2026-10-21T11:58:50.628357+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,453 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1ca8cf24c0d290c7",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【池上】8/15(土)養源寺で「精霊送り 盆踊り大会」\n明日18:00～21:00(精霊送り法要は17:30～)\nゲームコーナーや飲食店も",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088173785564299643",
+      "source_url": "https://x.com/otafull/status/2088173785564299643",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "36ce9780085178c83beca7648c208c3fe3d35a50c5d5de3836c64155f6b5b188",
+      "last_seen_at": "github-39594390740-1",
+      "created_at": "2026-10-21T11:58:22.256394+00:00",
+      "updated_at": "2026-10-21T11:58:22.256394+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_4ef29e786a974e6f",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/15"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2088173785564299643",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【池上】8/15(土)養源寺で「精霊送り 盆踊り大会」\n明日18:00～21:00(精霊送り法要は17:30～)\nゲームコーナーや飲食店もありますよ～🫶\nhttps://t.co/GxMKoYElO6\n#大田区　#商店街　#池上　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2088173785564299643",
+        "source_urls": [
+          "https://x.com/otafull/status/2088173785564299643"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-14T08:00:01+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【池上】8/15(土)養源寺で「精霊送り 盆踊り大会」\n明日18:00～21:00(精霊送り法要は17:30～)\nゲームコーナーや飲食店もありますよ～🫶\nhttps://t.co/GxMKoYElO6\n#大田区　#商店街　#池上　#盆踊り",
+          "title": "",
+          "tweet_id": "2088173785564299643",
+          "url": "https://x.com/otafull/status/2088173785564299643"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_33aaf2c8e8217348",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "元祖アンティファ盆おどり\n2日目14日（金）も開催します。\n（大師公園　18時半から21時予定）\n\n昨日のように大雨の場合は開催途中に早めに短縮など判断します。",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088151040990535935",
+      "source_url": "https://x.com/gotou_masami/status/2088151040990535935",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "f44d0fe8ba880b659b0d5fb1986fc0d07a92ee0a2fa5504c10f86c9af7253f3d",
+      "last_seen_at": "github-39594390740-1",
+      "created_at": "2026-10-21T11:58:22.256394+00:00",
+      "updated_at": "2026-10-21T11:58:22.256394+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_aad61b9b7a22a944",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "18時",
+          "21時",
+          "17時",
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@gotou_masami",
+        "source_count": 1,
+        "source_key": "x:2088151040990535935",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2088150891694329856/img/QIwLFF6JJTbfEpm4.jpg",
+          "https://t.co/yCivAjnLnP",
+          "pic.x.com/yCivAjnLnP"
+        ],
+        "source_officiality": {
+          "account_name": "後藤まさみ日本共産党川崎市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@gotou_masami",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n元祖アンティファ盆おどり\n2日目14日（金）も開催します。\n（大師公園　18時半から21時予定）\n\n昨日のように大雨の場合は開催途中に早めに短縮など判断します。まだ足もとが濡れていますのでお気をつけてお越しください。\n\n焼き鳥焼き手さんは17時ごろ売り手さんは18時ごろから。ボランティアさんも引き続き募集しています。\n\nみなさんと一緒に楽しみながら成功させます！！\n\n#大師公園　#盆踊り",
+        "source_url": "https://x.com/gotou_masami/status/2088151040990535935",
+        "source_urls": [
+          "https://x.com/gotou_masami/status/2088151040990535935"
+        ],
+        "voice": {
+          "account": "@gotou_masami",
+          "critique_post": false,
+          "date": "2026-08-14T06:29:38+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2088150891694329856/img/QIwLFF6JJTbfEpm4.jpg",
+            "https://t.co/yCivAjnLnP",
+            "pic.x.com/yCivAjnLnP"
+          ],
+          "name": "後藤まさみ日本共産党川崎市議会議員",
+          "profile_description": "日本共産党川崎市議会議員（川崎区選出） です。ひとりひとりが大切にされ安心して暮らしていくために、くらし福祉最優先の市政へ切り替えていきましょう！みなさんの声を聞き、つなぎ、広げ、届けていきます！憲法9条の改悪許さない！多文化共生の街、みんなが仲良く暮らす街づくりをみなさんとすすめます。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "元祖アンティファ盆おどり\n2日目14日（金）も開催します。\n（大師公園　18時半から21時予定）\n\n昨日のように大雨の場合は開催途中に早めに短縮など判断します。まだ足もとが濡れていますのでお気をつけてお越しください。\n\n焼き鳥焼き手さんは17時ごろ売り手さんは18時ごろから。ボランティアさんも引き続き募集しています。\n\nみなさんと一緒に楽しみながら成功させます！！\n\n#大師公園　#盆踊り",
+          "title": "",
+          "tweet_id": "2088151040990535935",
+          "url": "https://x.com/gotou_masami/status/2088151040990535935"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b1a0dd6557fce90f",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/14(金)\n田口地区盆踊り、準備はほぼ完了しました　\nこのあと18:30からスタートです\n\n皆さんお誘い合わせのうえ、お気軽にお越しください\n会場でお待ちし",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088170408663216182",
+      "source_url": "https://x.com/nakanohiroshi02/status/2088170408663216182",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2fac2c916317d1a83c351f666d5568405af3552561f36923c536de6255d5c11e",
+      "last_seen_at": "github-39594390740-1",
+      "created_at": "2026-10-21T11:58:22.256394+00:00",
+      "updated_at": "2026-10-21T11:58:22.256394+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_5dd0111e2179a054",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/14"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@nakanohiroshi02",
+        "source_count": 1,
+        "source_key": "x:2088170408663216182",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPqr6tebYAAKKnH.jpg",
+          "https://t.co/TNebJyY8rg",
+          "pic.x.com/TNebJyY8rg"
+        ],
+        "source_officiality": {
+          "account_name": "【大洲市議会議員】中野ひろし",
+          "classification": "registered_official_social",
+          "handle": "@nakanohiroshi02",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/14(金)\n田口地区盆踊り、準備はほぼ完了しました　\nこのあと18:30からスタートです\n\n皆さんお誘い合わせのうえ、お気軽にお越しください\n会場でお待ちしています！　\n　\n#大洲市 #田口地区 #盆踊り #夏祭り #中野ひろし https://t.co/TNebJyY8rg",
+        "source_url": "https://x.com/nakanohiroshi02/status/2088170408663216182",
+        "source_urls": [
+          "https://x.com/nakanohiroshi02/status/2088170408663216182"
+        ],
+        "voice": {
+          "account": "@nakanohiroshi02",
+          "critique_post": false,
+          "date": "2026-08-14T07:46:36+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPqr6tebYAAKKnH.jpg",
+            "https://t.co/TNebJyY8rg",
+            "pic.x.com/TNebJyY8rg"
+          ],
+          "name": "【大洲市議会議員】中野ひろし",
+          "profile_description": "大洲市議会議員｜2002年初当選・7期｜自由クラブ会派長｜議会改革・情報公開・市政の見える化｜現場の声を制度・予算・改善へ｜子育て支援・防災に重点｜YouTubeで議会と市政を発信",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "8/14(金)\n田口地区盆踊り、準備はほぼ完了しました　\nこのあと18:30からスタートです\n\n皆さんお誘い合わせのうえ、お気軽にお越しください\n会場でお待ちしています！　\n　\n#大洲市 #田口地区 #盆踊り #夏祭り #中野ひろし https://t.co/TNebJyY8rg",
+          "title": "",
+          "tweet_id": "2088170408663216182",
+          "url": "https://x.com/nakanohiroshi02/status/2088170408663216182"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_d1f587e943ee074a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【本日14日（2日目）開催決定！】第59回 ふるさと大師盆おどり✨\n\nお待たせいたしました！\n実行委員会のメンバーが大師公園に集まり協議を行った結果、本日14日",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088135926577009137",
+      "source_url": "https://x.com/gotou_masami/status/2088135926577009137",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ba262e96b9046c202a5a03e91fda15cb90ec248cf002bc4721f215cd7cadf912",
+      "last_seen_at": "github-39594390740-1",
+      "created_at": "2026-10-21T11:58:22.256394+00:00",
+      "updated_at": "2026-10-21T11:58:22.256394+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_da4eba14c536c995",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "18時",
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@gotou_masami",
+        "source_count": 1,
+        "source_key": "x:2088135926577009137",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPqMjazboAAtkgd.jpg",
+          "https://t.co/rFIcaYlF5i",
+          "pic.x.com/rFIcaYlF5i",
+          "https://pbs.twimg.com/media/HPqMja2asAEVGCz.jpg",
+          "https://pbs.twimg.com/media/HPqMjawbQAAgq38.jpg",
+          "https://pbs.twimg.com/media/HPqMja0aMAATRki.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "後藤まさみ日本共産党川崎市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@gotou_masami",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【本日14日（2日目）開催決定！】第59回 ふるさと大師盆おどり✨\n\nお待たせいたしました！\n実行委員会のメンバーが大師公園に集まり協議を行った結果、本日14日（2日目）も「第59回 ふるさと大師盆おどり」を開催することに決定いたしました！🎉\n\n昨日の大雨に続き、本日も少しお天気が読みにくい状況ではありますが、地域のみなさんに少しでも盆踊りの時間を楽しんでいただきたいという思いで準備を進めています。\n\n本日につきましては、天候の影響を考慮し、以下のような柔軟な形で運営してまいります。\n【本日の運営について】\n⚫️ 出店店舗について\n各店舗の判断で、予定時間より少し早めに販売をスタートする場合があります。「少し早めに行って買い物しておこうかな」も大歓迎です！\n\n⚫️ 開催時間について\n18時半以降に強い雨が降ってきた場合は、状況を見ながら早めの時間短縮（19時半ごろ判断）を行う可能性がございます。\n\nお天気の様子を伺いながらの開催となりますが、ぜひ無理のない範囲で、足元に気をつけてお越しくださいね！\n\n昨日同様、みんなで知恵と力を合わせて、安全に楽しく2日目を締めくりたいと思います。皆",
+        "source_url": "https://x.com/gotou_masami/status/2088135926577009137",
+        "source_urls": [
+          "https://x.com/gotou_masami/status/2088135926577009137"
+        ],
+        "voice": {
+          "account": "@gotou_masami",
+          "critique_post": false,
+          "date": "2026-08-14T05:29:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPqMjazboAAtkgd.jpg",
+            "https://t.co/rFIcaYlF5i",
+            "pic.x.com/rFIcaYlF5i",
+            "https://pbs.twimg.com/media/HPqMja2asAEVGCz.jpg",
+            "https://pbs.twimg.com/media/HPqMjawbQAAgq38.jpg",
+            "https://pbs.twimg.com/media/HPqMja0aMAATRki.jpg"
+          ],
+          "name": "後藤まさみ日本共産党川崎市議会議員",
+          "profile_description": "日本共産党川崎市議会議員（川崎区選出） です。ひとりひとりが大切にされ安心して暮らしていくために、くらし福祉最優先の市政へ切り替えていきましょう！みなさんの声を聞き、つなぎ、広げ、届けていきます！憲法9条の改悪許さない！多文化共生の街、みんなが仲良く暮らす街づくりをみなさんとすすめます。",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-report"
+          ],
+          "text": "【本日14日（2日目）開催決定！】第59回 ふるさと大師盆おどり✨\n\nお待たせいたしました！\n実行委員会のメンバーが大師公園に集まり協議を行った結果、本日14日（2日目）も「第59回 ふるさと大師盆おどり」を開催することに決定いたしました！🎉\n\n昨日の大雨に続き、本日も少しお天気が読みにくい状況ではありますが、地域のみなさんに少しでも盆踊りの時間を楽しんでいただきたいという思いで準備を進めています。\n\n本日につきましては、天候の影響を考慮し、以下のような柔軟な形で運営してまいります。\n【本日の運営について】\n⚫️ 出店店舗について\n各店舗の判断で、予定時間より少し早めに販売をスタートする場合があります。「少し早めに行って買い物しておこうかな」も大歓迎です！\n\n⚫️ 開催時間について\n18時半以降に強い雨が降ってきた場合は、状況を見ながら早めの時間短縮（19時半ごろ判断）を行う可能性がございます。\n\nお天気の様子を伺いながらの開催となりますが、ぜひ無理のない範囲で、足元に気をつけてお越しくださいね！\n\n昨日同様、みんなで知恵と力を合わせて、安全に楽しく2日目を締めくりたいと思います。皆様",
+          "title": "",
+          "tweet_id": "2088135926577009137",
+          "url": "https://x.com/gotou_masami/status/2088135926577009137"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_fb1ad248f7598818",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【8月1日　地域の納涼祭へ🏮】\n\n花田三丁目・四丁目、東越谷9丁目、東越谷三・四丁目自治会、東越谷二丁目の納涼祭へ伺いました。\n\nどの会場も多くの方でにぎわい、",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088245701084131529",
+      "source_url": "https://x.com/tsuchiya_raimu/status/2088245701084131529",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e8e4c88f7e6d66b2f163bf2c6e4777ca734f9f03cce319410fba4c5c2f2dc874",
+      "last_seen_at": "github-39594390740-1",
+      "created_at": "2026-10-21T11:58:22.256394+00:00",
+      "updated_at": "2026-10-21T11:58:22.256394+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d9e5559abed4ae46",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月1日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@tsuchiya_raimu",
+        "source_count": 1,
+        "source_key": "x:2088245701084131529",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPrwYgjagAAecIb.jpg",
+          "https://t.co/JvccJYmIsx",
+          "pic.x.com/JvccJYmIsx",
+          "https://pbs.twimg.com/media/HPrwYgjbYAA7ME-.jpg",
+          "https://pbs.twimg.com/media/HPrwYgiawAAG9GZ.jpg",
+          "https://pbs.twimg.com/media/HPrwYgjaIAA_UDq.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "土屋らいむ 【越谷市議会議員】",
+          "classification": "registered_official_social",
+          "handle": "@tsuchiya_raimu",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【8月1日　地域の納涼祭へ🏮】\n\n花田三丁目・四丁目、東越谷9丁目、東越谷三・四丁目自治会、東越谷二丁目の納涼祭へ伺いました。\n\nどの会場も多くの方でにぎわい、私も盆踊りの輪に入れていただき、皆さんと一緒に楽しく踊らせていただきました😊\n\n年齢や立場を越えて、自然に同じ輪で楽しめるのが地域のお祭りの魅力ですね。\n\n暑い中、準備・運営に携わられた皆さま、本当にありがとうございました🎐\n\n#越谷市 #花田 #東越谷 #納涼祭 #盆踊り",
+        "source_url": "https://x.com/tsuchiya_raimu/status/2088245701084131529",
+        "source_urls": [
+          "https://x.com/tsuchiya_raimu/status/2088245701084131529"
+        ],
+        "voice": {
+          "account": "@tsuchiya_raimu",
+          "critique_post": false,
+          "date": "2026-08-14T12:45:47+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPrwYgjagAAecIb.jpg",
+            "https://t.co/JvccJYmIsx",
+            "pic.x.com/JvccJYmIsx",
+            "https://pbs.twimg.com/media/HPrwYgjbYAA7ME-.jpg",
+            "https://pbs.twimg.com/media/HPrwYgiawAAG9GZ.jpg",
+            "https://pbs.twimg.com/media/HPrwYgjaIAA_UDq.jpg"
+          ],
+          "name": "土屋らいむ 【越谷市議会議員】",
+          "profile_description": "市政がもっと身近な存在に。  #越谷市 #越谷 #土屋らいむ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "【8月1日　地域の納涼祭へ🏮】\n\n花田三丁目・四丁目、東越谷9丁目、東越谷三・四丁目自治会、東越谷二丁目の納涼祭へ伺いました。\n\nどの会場も多くの方でにぎわい、私も盆踊りの輪に入れていただき、皆さんと一緒に楽しく踊らせていただきました😊\n\n年齢や立場を越えて、自然に同じ輪で楽しめるのが地域のお祭りの魅力ですね。\n\n暑い中、準備・運営に携わられた皆さま、本当にありがとうございました🎐\n\n#越谷市 #花田 #東越谷 #納涼祭 #盆踊り",
+          "title": "",
+          "tweet_id": "2088245701084131529",
+          "url": "https://x.com/tsuchiya_raimu/status/2088245701084131529"
         }
       }
     },
