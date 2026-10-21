@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-21T12:03:58.798228+00:00",
+  "generated_at": "2026-10-21T12:06:15.553455+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -30530,6 +30530,121 @@
       }
     },
     {
+      "inbox_id": "inbox_b5b90d9ea913dd96",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "東京音頭 × 上野恩賜公園",
+      "event_name": "",
+      "venue": "上野恩賜公園",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:東京音頭|venue:上野恩賜公園",
+      "source_url": "https://www.youtube.com/watch?v=xk-v64ePftQ",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "bd8b49fc8f11461602fb5cbbcfb0f0e2050dc3fbaae6d72bdb3ec8001d746035",
+      "last_seen_at": "github-39594390740-1-daily_term_candidate",
+      "created_at": "2026-08-12T08:16:06.743901+00:00",
+      "updated_at": "2026-10-21T12:04:49.631813+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "盆踊りフェス"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-21T11:00:09+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=xk-v64ePftQ"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-20T11:00:00+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=1QXIS2NXUdQ"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-19T11:00:23+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=_FzHI9__1Hs"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+        "evidence_url": "https://www.youtube.com/watch?v=xk-v64ePftQ",
+        "interpretation": "上野恩賜公園で東京音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "東京音頭",
+        "term": "東京音頭 × 上野恩賜公園",
+        "type": "共起",
+        "venue": "上野恩賜公園"
+      }
+    },
+    {
+      "inbox_id": "inbox_268219928d0199ea",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "流しおどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:流しおどり",
+      "source_url": "https://www.youtube.com/watch?v=irxLQ3WQmsk",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6693fbcd3a05aac866c603720be1cb3cc444b917592adf203c74fc17de342523",
+      "last_seen_at": "github-39594390740-1-daily_song_candidate",
+      "created_at": "2026-10-20T11:54:23.299471+00:00",
+      "updated_at": "2026-10-21T12:04:13.394352+00:00",
+      "payload": {
+        "canonical_song_name": "流しおどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-21T06:00:26+00:00",
+            "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：流し踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY ２流しおどりダイジェスト版 https://youtu.be/3RUVvr6Pnow ３流し踊り（堀切あやめ連） https://youtu.be/irxLQ3WQmsk ４組み踊り（大塚新粋連） https://you",
+            "url": "https://www.youtube.com/watch?v=irxLQ3WQmsk"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-20T06:00:28+00:00",
+            "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：流し踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY ２流しおどりダイジェスト版 https://youtu.be/3RUVvr6Pnow ３流し踊り（堀切あやめ連） https://youtu.be/irxLQ3WQmsk ４組み踊り（大塚新粋連） https://you",
+            "url": "https://www.youtube.com/watch?v=3RUVvr6Pnow"
+          }
+        ],
+        "evidence_count": 2,
+        "evidence_text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：流し踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY ２流しおどりダイジェスト版 https://youtu.be/3RUVvr6Pnow ３流し踊り（堀切あやめ連） https://youtu.be/irxLQ3WQmsk ４組み踊り（大塚新粋連） https://you\n---\n2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：流し踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY ２流しおどりダイジェスト版 https://youtu.be/3RUVvr6Pnow ３流し踊り（堀切あやめ連） https://youtu.be/irxLQ3WQmsk ４組み踊り（大塚新粋連） https://you",
+        "evidence_url": "https://www.youtube.com/watch?v=irxLQ3WQmsk",
+        "interpretation": "流しおどり",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "流しおどり",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_044426f9d6b9a04b",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -30773,115 +30888,6 @@
         ],
         "video_id": "xk-v64ePftQ",
         "video_url": "https://www.youtube.com/watch?v=xk-v64ePftQ"
-      }
-    },
-    {
-      "inbox_id": "inbox_b5b90d9ea913dd96",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "東京音頭 × 上野恩賜公園",
-      "event_name": "",
-      "venue": "上野恩賜公園",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:東京音頭|venue:上野恩賜公園",
-      "source_url": "https://www.youtube.com/watch?v=1QXIS2NXUdQ",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "85539cd07b113355d30d9c6d15396c684b4c4e2056e3d09912fc3a596d2f7cf1",
-      "last_seen_at": "github-39415792319-1-daily_term_candidate",
-      "created_at": "2026-08-12T08:16:06.743901+00:00",
-      "updated_at": "2026-10-20T11:55:18.715568+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "盆踊りフェス"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-20T11:00:00+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=1QXIS2NXUdQ"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-19T11:00:23+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=_FzHI9__1Hs"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-18T11:00:23+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=KOI59XmIlCQ"
-          }
-        ],
-        "evidence_count": 3,
-        "evidence_text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-        "evidence_url": "https://www.youtube.com/watch?v=1QXIS2NXUdQ",
-        "interpretation": "上野恩賜公園で東京音頭が言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "東京音頭",
-        "term": "東京音頭 × 上野恩賜公園",
-        "type": "共起",
-        "venue": "上野恩賜公園"
-      }
-    },
-    {
-      "inbox_id": "inbox_268219928d0199ea",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "流しおどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:流しおどり",
-      "source_url": "https://www.youtube.com/watch?v=3RUVvr6Pnow",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "7ae7c463768c401d73579b90e066f16c856c3fa204ce8940ebc3076c99a3d2d2",
-      "last_seen_at": "github-39415792319-1-daily_song_candidate",
-      "created_at": "2026-10-20T11:54:23.299471+00:00",
-      "updated_at": "2026-10-20T11:54:23.299471+00:00",
-      "payload": {
-        "canonical_song_name": "流しおどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-20T06:00:28+00:00",
-            "text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：流し踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY ２流しおどりダイジェスト版 https://youtu.be/3RUVvr6Pnow ３流し踊り（堀切あやめ連） https://youtu.be/irxLQ3WQmsk ４組み踊り（大塚新粋連） https://you",
-            "url": "https://www.youtube.com/watch?v=3RUVvr6Pnow"
-          }
-        ],
-        "evidence_count": 1,
-        "evidence_text": "2026年10月11日、 東京都台東区の浅草六区にて開催された 「第5回 浅草阿波おどり」のフィナーレを飾る【総踊り】の様子です。 熱気あふれるお囃子の響きと、 各連の踊り手・鳴り物が一体となった大迫力の演舞をぜひお楽しみください！ 【イベント詳細】 ・イベント名：第5回 浅草阿波おどり ・演舞：流し踊り ・開催日時：2026年10月11日（日） ・開催場所：東京都台東区 浅草六区ブロードウェイ ◆ チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭りの迫力ある映像を随時配信しています。 ベルマーク通知をONにして最新動画をお見逃しなく！ #浅草阿波おどり #総踊り #浅草六区 #阿波踊り #浅草 #日本の祭り #和太鼓お祭りチャンネル #AwaOdori #asakusa 第5回浅草阿波踊り １総踊り https://youtu.be/RzgbuuR_TkY ２流しおどりダイジェスト版 https://youtu.be/3RUVvr6Pnow ３流し踊り（堀切あやめ連） https://youtu.be/irxLQ3WQmsk ４組み踊り（大塚新粋連） https://you",
-        "evidence_url": "https://www.youtube.com/watch?v=3RUVvr6Pnow",
-        "interpretation": "流しおどり",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "流しおどり",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
       }
     },
     {
