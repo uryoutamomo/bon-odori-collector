@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 13,
-  "direct_count": 9,
-  "created_count": 5,
-  "updated_count": 4,
+  "song_candidate_count": 15,
+  "direct_count": 11,
+  "created_count": 6,
+  "updated_count": 5,
   "rejected_noise_count": 3,
   "review_count": 1,
   "created": [
@@ -47,6 +47,14 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "きよしのズンドコ節",
+      "source_term": "きよしのズンドコ節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "updated": [
@@ -81,6 +89,14 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "ダンシングヒーロー",
+      "source_term": "ダンシングヒーロー",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -100,9 +116,9 @@
   "review": [
     {
       "term": "流しおどり",
-      "evidence_count": 1,
+      "evidence_count": 2,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=3RUVvr6Pnow"
+      "evidence_url": "https://www.youtube.com/watch?v=irxLQ3WQmsk"
     }
   ]
 }
