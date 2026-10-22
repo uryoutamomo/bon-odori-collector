@@ -1,11 +1,11 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 15,
-  "direct_count": 11,
-  "created_count": 6,
+  "song_candidate_count": 20,
+  "direct_count": 15,
+  "created_count": 10,
   "updated_count": 5,
-  "rejected_noise_count": 3,
+  "rejected_noise_count": 4,
   "review_count": 1,
   "created": [
     {
@@ -19,6 +19,22 @@
     {
       "song_name": "港北音頭",
       "source_term": "港北音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "べったら音頭",
+      "source_term": "べったら音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "宝田恵比寿べったら音頭",
+      "source_term": "宝田恵比寿べったら音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -51,6 +67,22 @@
     {
       "song_name": "きよしのズンドコ節",
       "source_term": "きよしのズンドコ節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "小伝馬町音頭",
+      "source_term": "小伝馬町音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "日本橋音頭",
+      "source_term": "日本橋音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -101,6 +133,10 @@
   ],
   "rejected_noise": [
     {
+      "term": "揃いの踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "各連の踊り",
       "reason": "曲名としての形が弱い"
     },
@@ -116,9 +152,9 @@
   "review": [
     {
       "term": "流しおどり",
-      "evidence_count": 2,
+      "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=irxLQ3WQmsk"
+      "evidence_url": "https://www.youtube.com/watch?v=xoHElrCSpL8"
     }
   ]
 }

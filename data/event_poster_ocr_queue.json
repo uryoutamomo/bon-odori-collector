@@ -1,12 +1,12 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 6328,
+  "count": 6319,
   "summary": {
-    "critical": 40,
-    "high": 1046,
-    "trusted_informant": 43,
+    "critical": 39,
+    "high": 1045,
+    "trusted_informant": 42,
     "already_read": 0,
-    "date_gap_matched": 99
+    "date_gap_matched": 96
   },
   "items": [
     {
@@ -307,95 +307,6 @@
           "event_name": "浜二納涼盆踊り大会",
           "venue_name": "浜町公園",
           "matched_keyword": "浜町公園"
-        }
-      ]
-    },
-    {
-      "id": "xposter_8b3bf5c003d0b161",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@Shop_MiSHKeT",
-      "account_name": "雑貨屋 MiSHKeT",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/Shop_MiSHKeT/status/2080523035984224414",
-      "tweet_id": "2080523035984224414",
-      "date": "2026-07-24T05:18:40+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/amplify_video_thumb/2080523000420745216/img/GJXEUwolMGvME3I_.jpg",
-        "https://t.co/mvfp4v5r3P",
-        "pic.x.com/mvfp4v5r3P"
-      ],
-      "text": "⳹ いよいよ明日から！⳼\n みどりまち盆踊り2026\n\n7/25(土)-26(日) 16-21時 緑町公園周辺にて開催！\n当店ブースは【HELLO GARDEN】エリア内🙌\n\nᝰ✍︎꙳⋆\n\n本日7/24(金)は、13-18時まで営業です。\nイベント出店と休業日が続くので、次の営業日は7/29(水)です。\n\n皆さまのご来店をお待ちしております🤗 https://t.co/mvfp4v5r3P",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_01cf7a28d077f15a",
-          "event_name": "亀沢1、2丁目合同 牛嶋神社 奉納踊り",
-          "venue_name": "緑町公園",
-          "matched_keyword": "緑町公園"
-        }
-      ]
-    },
-    {
-      "id": "xposter_2cb608ebeaa4771e",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@higashinada_jou",
-      "account_name": "東灘ジャーナル",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/higashinada_jou/status/2080584242409676983",
-      "tweet_id": "2080584242409676983",
-      "date": "2026-07-24T09:21:53+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HN-4UM3akAAryGD.jpg",
-        "https://t.co/P52xqmilnB",
-        "pic.x.com/P52xqmilnB"
-      ],
-      "text": "東灘・茶屋地区「夏まつり・盆おどり」が2026年8月8日（土）に本住吉神社 境内にて開催予定だよ \n\n#東灘区 #夏祭り #盆おどり #イベント #茶屋地区 \n\nhttps://t.co/kmLbztHSST https://t.co/P52xqmilnB",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_e862dc90f1299f4d",
-          "event_name": "東灘・茶屋地区 夏まつり＆盆おどり",
-          "venue_name": "本住吉神社",
-          "matched_keyword": "本住吉神社"
-        }
-      ]
-    },
-    {
-      "id": "xposter_43d22590c9ca539a",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@ushinohiroba",
-      "account_name": "千葉ウシノヒロバ｜牛が暮らすキャンプ場",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/ushinohiroba/status/2080593842412343373",
-      "tweet_id": "2080593842412343373",
-      "date": "2026-07-24T10:00:02+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HNvQPI1acAAMTVE.png",
-        "https://t.co/DOgp62EjMf",
-        "pic.x.com/DOgp62EjMf",
-        "https://pbs.twimg.com/media/HNvQx7HacAACcJS.jpg",
-        "https://pbs.twimg.com/media/HNvQx7ZaIAAFNTI.jpg"
-      ],
-      "text": "7/25(土)・26(日)に開催される「みどりまち盆踊り2026」に、千葉ウシノヒロバ ミルクバースタンドが出店いたします🐄🍹🍦\n\n日時：2026年7月25日(土)・26日(日) 16:00-21:00\n場所：緑町公園・ZOZOの広場・HELLO GARDEN・学園通り\n\n▼詳しくはこちら\nhttps://t.co/dVFehj3TV7 https://t.co/DOgp62EjMf",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_01cf7a28d077f15a",
-          "event_name": "亀沢1、2丁目合同 牛嶋神社 奉納踊り",
-          "venue_name": "緑町公園",
-          "matched_keyword": "緑町公園"
         }
       ]
     },
@@ -2980,28 +2891,6 @@
       ]
     },
     {
-      "id": "xposter_6e3fbec989ac8ec1",
-      "status": "needs_ocr",
-      "priority": "critical",
-      "evidence_type": "trusted_field_reporter_poster_image",
-      "assumed_source_confidence": "high",
-      "account": "@gPVEQeAD9U10257",
-      "account_name": "卯ケン",
-      "trusted_informant": true,
-      "trusted_informant_rank": "S",
-      "url": "https://x.com/gPVEQeAD9U10257/status/2080272465817965021",
-      "tweet_id": "2080272465817965021",
-      "date": "2026-07-23T12:43:00+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/amplify_video_thumb/2080272133125799936/img/0wHvzrsAdYnf1aHc.jpg",
-        "https://t.co/zx3cYrriqS",
-        "pic.x.com/zx3cYrriqS",
-        "https://pbs.twimg.com/amplify_video_thumb/2080272420389429248/img/AiA2k_HxGycDqad7.jpg"
-      ],
-      "text": "７月２３日 その１\n新橋こいち祭り\n①桜田公園→②柳通りの順に\n踊り場の繰り返し\n新しい曲も有り楽しく１時間半\n踊って赤坂浄土寺へハシゴ🚃\n#盆踊り\n#新橋こいち祭り\n#港区 https://t.co/zx3cYrriqS",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
       "id": "xposter_f18b5b38adf6abda",
       "status": "needs_ocr",
       "priority": "critical",
@@ -3838,27 +3727,6 @@
         "https://pbs.twimg.com/amplify_video_thumb/2091751337616969728/img/0jaBXmgbTrZvLjUV.jpg"
       ],
       "text": "8/23①新小岩銀座 夏まつり\n\n木津かおりさんらの民謡ユニット、唄花座ステージ🎶\n\n伊勢音頭、こきりこ節、日光和楽踊り、秋田おばこなど、重なり合う唄声と演奏と踊りに魅了されました✨とくに瞽女唄かわいがらんせは圧巻！\n\n真室川音頭やおてもやん、郡上白鳥、炭坑節などでは踊りも楽しめました〜🙌 https://t.co/aEapH0beOJ",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_f6243962d4459f12",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@arimataikoteam",
-      "account_name": "有馬こども会 楽鼓隊と鼓音 広報係",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/arimataikoteam/status/2080479313951088867",
-      "tweet_id": "2080479313951088867",
-      "date": "2026-07-24T02:24:56+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HN9Y6GWbAAAnmyD.jpg",
-        "https://t.co/RN48LZljSF",
-        "pic.x.com/RN48LZljSF"
-      ],
-      "text": "本日と明日、地元有馬町会の盆踊りです！\n楽鼓隊と鼓音は寄せ太鼓を担当。\n土曜日は寄せ太鼓の一部として演目の披露をします。\nお時間ある方はぜひ来てください！ https://t.co/RN48LZljSF",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -26794,97 +26662,6 @@
         "pic.x.com/iSsYdSAcEA"
       ],
       "text": "第31回「新城まつり」及び「新城商工振興会盆踊り大会」(8月22日)\n新城地区の夏の恒例行事の地域に愛されている「新城まつり」が今年も開催されました。市内では地域コミュニティの活性化を図るこのような催しが各地域で行われています。町会の皆様をはじめ各団体の皆様のご健勝・ご活躍を祈念します。",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_466e613220f72cd9",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@FunatsuKatvlt",
-      "account_name": "ふなつ",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/FunatsuKatvlt/status/2080273700432289903",
-      "tweet_id": "2080273700432289903",
-      "date": "2026-07-23T12:47:54+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HN6d4k-bEAA4FXf.jpg",
-        "https://t.co/oeDAFZGqBC",
-        "pic.x.com/oeDAFZGqBC",
-        "https://pbs.twimg.com/media/HN6d4k3bsAASd22.jpg"
-      ],
-      "text": "川口市弥平一丁目公園盆踊り\nNo.1\n\n埼玉高速鉄道・川口元郷駅から徒歩20分\n帰りはバスに乗ろうと思いましたが、バスの待ち時間が20分くらいだったので結局帰りも駅まで歩きました\n\n盆友の江橋さんが太鼓を叩いてました\nお世辞抜きで､力強くて見事なバチ捌きでした。\n\n曲目は､No.2へ https://t.co/oeDAFZGqBC",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_a54043332a51563f",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@twiclut",
-      "account_name": "あるある@CLUT",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/twiclut/status/2080299632073248853",
-      "tweet_id": "2080299632073248853",
-      "date": "2026-07-23T14:30:57+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HN61ZzXaEAAZf3L.jpg",
-        "https://t.co/md33RWRoBs",
-        "pic.x.com/md33RWRoBs",
-        "https://pbs.twimg.com/media/HN61Zzna4AE3xdt.jpg",
-        "https://pbs.twimg.com/media/HN61Zz1bEAA7vpc.jpg",
-        "https://pbs.twimg.com/media/HN61Z5saQAAJOhk.jpg"
-      ],
-      "text": "😗でも、盆踊りって\n地域性高くて踊れてナンボ\nよそ者は入って行きにくいというか…？\n\n😆ご心配には及びません\nそのご近所感、盆踊りを\n盛り上げるいち要素ですが \n\n#どんぱんだーFES2026\n\n練習場を 24時間体制で\n解放しております\n\nまさに どんぱん町内会\n目指せ達人🤣\n\n#盆踊り #VR盆踊り #cluster https://t.co/md33RWRoBs",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_b8fe5090c6c007eb",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@mitsuefujikawa",
-      "account_name": "🪻藤川みつえ調布市議会議員🌾RICE",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/mitsuefujikawa/status/2080398668818170224",
-      "tweet_id": "2080398668818170224",
-      "date": "2026-07-23T21:04:29+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HN8Pj6LbIAA6BYc.jpg",
-        "https://t.co/YppXzm2KYo",
-        "pic.x.com/YppXzm2KYo"
-      ],
-      "text": "【お祭り情報🏮】\n\n7月26日(日)、27(月)は\nよってんべ〜つつじヶ丘ふれあい\n夏まつり🎇\n時間:17:00-21:00\n場所:創価学会調布平和会館駐車場\n（つつじヶ丘駅から徒歩約5分）\n\n舞台では子どもから大人まで様々な演目があり、美味しいお店やゲームのテントも盛りだくさん🤗\nみんなで盆踊りも踊りましょう👘\n\n是非、どなたでもお越しくださいませ🏮",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
-    },
-    {
-      "id": "xposter_1d726219d2099a06",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@beppuartmonth",
-      "account_name": "ベップ・アート・マンス",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/beppuartmonth/status/2080468652034511234",
-      "tweet_id": "2080468652034511234",
-      "date": "2026-07-24T01:42:34+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HN9PD8nbsAApFZl.jpg",
-        "https://t.co/KZvcN66qpX",
-        "pic.x.com/KZvcN66qpX",
-        "https://pbs.twimg.com/media/HN9PD8sbsAERSss.jpg",
-        "https://pbs.twimg.com/media/HN9PD8qbwAAFZiI.jpg",
-        "https://pbs.twimg.com/media/HN9PD8kaAAA69DZ.jpg"
-      ],
-      "text": "🪭つくろう会 盆踊り編🪭\n\n納涼音頭大会に向けて、みんなで盆踊りを練習！\n最初は初心者ばかりでしたが、講師の方にも教わりながら、竹バチづくりや本番を想定した練習を重ねてきました。\nいよいよ本番！\n楽しみながら踊ってきます🙌\n\n#ベップアートマンス\n#ベップアートマンス2026\n#つくろう会\n#別府 https://t.co/KZvcN66qpX",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
