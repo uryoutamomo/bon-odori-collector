@@ -2,7 +2,7 @@
   "counts": {
     "registered_alias": 15,
     "research": 535,
-    "registered": 83,
+    "registered": 84,
     "noise": 11
   },
   "items": [
@@ -6759,6 +6759,17 @@
       "source_title": "江戸川区の盆おどり情報 2026年1月より [Edogawa-q]",
       "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
       "in_tsukiji_30min_guess": false
+    },
+    {
+      "venue": "六本木天祖神社",
+      "region_hint": "港区",
+      "status": "registered",
+      "mapped_to": "六本木天祖神社",
+      "reason": "exact_match",
+      "priority": "skip",
+      "source_title": "港区の盆おどり情報 2026年1月より [Minato-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00c-minato-q.html",
+      "in_tsukiji_30min_guess": true
     },
     {
       "venue": "桜田公園",

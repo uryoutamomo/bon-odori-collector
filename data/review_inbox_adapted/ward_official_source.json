@@ -1,7 +1,7 @@
 {
   "source_id": "ward_official_source",
   "input_path": "/home/runner/work/bon-odori-collector/bon-odori-collector/data/ward_official_source_candidates.json",
-  "input_sha256": "8aa6306cccf0673e522287e5d84ad7d96f63fa1f3cfb54a9b2259b601ac2388f",
+  "input_sha256": "e2f67952207b4023372a61eaff16e6a70a2327c44207f7016d2efae3cf3c5db6",
   "input_size_bytes": 253482,
   "item_count": 183,
   "items": [
