@@ -1,8 +1,8 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-22T12:01:52.796649+00:00",
+  "generated_at": "2026-10-23T11:44:10.662754+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-22T12:01:45.229720+00:00",
+  "source_generated_at": "2026-10-23T11:44:04.490590+00:00",
   "days": 3,
   "voice_count": 44,
   "candidate_count": 22,
