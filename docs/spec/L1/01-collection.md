@@ -43,6 +43,7 @@ invariants:
   - INV-COL-010
   - INV-COL-011
   - INV-COL-012
+  - INV-COL-014
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -55,8 +56,9 @@ verified_by:
   - tests/test_proactive_search.py
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_ward_official_source_registry.py
+  - tests/test_bettara_candidate_discovery_gap_20261019.py
   - tests/test_odottar_coverage_benchmark.py
-updated_for: 7a8cd7c0
+updated_for: 6b7d24c0a09e44aa6ac7ab74fca4197ff8dcc460
 ---
 
 # 収集サブシステム
@@ -176,6 +178,15 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates`、
   `tests/test_odottar_coverage_benchmark.py::test_workflow_archives_raw_but_commits_only_metrics`
 
+### INV-COL-014 混在告知の盆踊り日程へ市全体の日程を転用しない
+
+- **内容**: `scan_ward_official_sources.py` は、箇条書き・table行またはpage fallbackの根拠本文に明示された盆踊りプログラムがあれば、その部分の日付・時刻を優先する。年・月日を一意に特定できない、日程未定・否定・延期等の留保がある、複数の日付/時刻が競合する場合は、`decision=pending` を維持したまま `schedule_review_status=ambiguous`、日程欄を空にして保留候補を残す。この候補が存在する場合はpage fallbackへ落とさず、fallback自身も同じscope検査で市場の日付を再導入しない。元本文・source URL・registry IDは保持し、従来の区公式ドメイン検証は変更しない。
+  明示日付のみ分かる場合は `date_only` とし、周囲の市場時刻を補わない。通常の単独告知は従来の抽出を継続する。候補は引き続き人レビュー用で、canonical/publicへの直接書込みは行わない。
+- **なぜ**: 市全体が19・20日、盆踊りが20日だけの告知で最初の月日を採ると、19日を盆踊り日としてレビューへ渡してしまう。曖昧行を消すだけでも、ページ単位の日付集合から再混入する。
+- **破れたときの症状**: 市場の日程・時間が盆踊り候補に付く／日程保留がfallbackで消える。
+- **守っているコード**: `scan_ward_official_sources.py` の `_dance_programme_schedule()` / `_programme_fields()` / `extract_structured_event_rows()` / `candidate_row()` / `scan_registry()`。
+- **守っているテスト**: `tests/test_bettara_candidate_discovery_gap_20261019.py::test_mixed_market_programme_uses_only_the_explicit_bon_dance_date_and_hours`、`tests/test_bettara_candidate_discovery_gap_20261019.py::test_ambiguous_or_withheld_programme_is_held_without_page_date_fallback`、`tests/test_bettara_candidate_discovery_gap_20261019.py::test_page_fallback_scopes_evidence_instead_of_using_detected_market_dates`、`tests/test_bettara_candidate_discovery_gap_20261019.py::test_mixed_table_cannot_override_programme_with_market_columns`、`tests/test_bettara_candidate_discovery_gap_20261019.py::test_ordinary_single_event_list_table_and_fallback_keep_their_dates`、`tests/test_bettara_candidate_discovery_gap_20261019.py::test_tourism_page_is_not_admitted_by_the_ward_domain_gate`。
+
 ### INV-COL-011 取得失敗を空の収集結果として下流へ渡さない
 
 - **内容**: RSSは `success` / `empty` / `skipped` / `failed` を明示する。部分失敗のRSS行と既読位置は保存せず、完了した独立Xレーンだけは保存できる。snapshotの読込・保存失敗時は、会場候補、Xアカウント台帳、速報、定番探索履歴、Notionサマリー素材を更新しない。公式巡回もtargetごとの状態を残し、`failed` / `skipped` のtargetは探索履歴を進めない。Xレーンの正常な0件は `empty`、設定上の未実行は `skipped`、healthの失敗・未完了は `failed` とする。これはINV-COL-003の「collection-requiredで受理0件は全体unhealthy」とは別に、各レーンが空を失敗と偽らない契約である。
@@ -208,7 +219,9 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
    `scan_ward_official_sources.py` は既存の `scan_official_sources()` を再利用し、盆踊り文脈を確認できた区公式ページだけを
    `ward_official_source_candidates.json` にする。日付・催事名・会場を見出しで特定できるHTML tableは1行を1候補に分割し、
    日付と盆踊り語を含むHTML listも1項目を1候補にする。構造を特定できないHTML、PDF、JavaScript描画ページは
-   従来どおりページ単位候補へfallbackする。これは候補作成までで、canonical eventや公開JSONは変更しない。
+   従来どおりページ単位候補へfallbackする。混在するプログラム日程はINV-COL-014でscopeを限定し、
+   日程が曖昧な場合は空欄の保留候補を残して、市場の日付へfallbackしない。
+   これは候補作成までで、canonical eventや公開JSONは変更しない。
 
 ### 収集の穴と、読む相手を広げる経路（日次）
 
