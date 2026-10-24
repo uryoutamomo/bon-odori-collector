@@ -28,6 +28,7 @@ owns:
   - data/ward_official_source_registry.json
   - .github/workflows/odottar-coverage-benchmark.yml
   - build_odottar_coverage_benchmark.py
+  - docs/odottar-coverage-window-20261018.md
   - data/odottar_coverage_history.json
 depends_on: []
 invariants:
@@ -43,6 +44,7 @@ invariants:
   - INV-COL-010
   - INV-COL-011
   - INV-COL-012
+  - INV-COL-013
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -56,7 +58,7 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_ward_official_source_registry.py
   - tests/test_odottar_coverage_benchmark.py
-updated_for: 7a8cd7c0
+updated_for: e662a3388328b8a1f906e9e128f30055eba49f30
 ---
 
 # 収集サブシステム
@@ -175,6 +177,15 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **守っているコード**: `build_odottar_coverage_benchmark.py`、`.github/workflows/odottar-coverage-benchmark.yml`
 - **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates`、
   `tests/test_odottar_coverage_benchmark.py::test_workflow_archives_raw_but_commits_only_metrics`
+
+### INV-COL-013 coverage比較は期間・イベント単位・確定性・入力鮮度を固定して表示する
+
+- **内容**: schema v2の23区比較は基準日を含むJSTの30暦日を既定とし、`--as-of`で固定可能な開始日以上・開始日+days未満に限定する。source ID（odottar eid / 盆助occurrence_id）を優先し、同一IDの開催日を集合化する。IDなしは完全同一行だけを重複排除し、名称だけで別イベントを結合しない。イベント数とイベント×日付の開催日数を分ける。過去実績/hintを未来へスライドせず、盆助の明示予測日・講習会・種別不明は祭事主表と分ける。競合の確認状態は不明と表示する。不正な日程・identity衝突は診断に出す。
+  集計生成時刻と入力取得時刻を区別し、未提供の取得時刻を現在時刻で埋めない。8日以上前・基準日より後・時刻不明の入力を明示し、掲載更新時刻が不明であることも表示する。旧schema v1の無期間集計は履歴に残し、v2と同じ指標として増減比較しない。
+- **なぜ**: 過去分・講習会・再掲を含む全行数と当年の盆踊りを比べると、収集の欠落を測れない。古いsnapshotの再集計を現在の掲載数と呼ぶと誤った改善判断になる。
+- **破れたときの症状**: 過去イベントや重複で件数が膨らむ／開催日数がイベント数になる／9月入力を現在のcoverageとして報告する。
+- **守っているコード**: `build_odottar_coverage_benchmark.py` の `calendar_day()` / `schedule()` / `prepare_events()` / `build_report()` / `freshness()` / `append_history()`。
+- **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_window_includes_as_of_and_last_day_but_excludes_next_midnight`、`tests/test_odottar_coverage_benchmark.py::test_aware_timestamps_use_jst_and_naive_dates_are_jst`、`tests/test_odottar_coverage_benchmark.py::test_multiday_and_noncontiguous_listings_union_dates_without_inflation`、`tests/test_odottar_coverage_benchmark.py::test_exact_duplicates_without_ids_are_removed_and_different_events_stay_distinct`、`tests/test_odottar_coverage_benchmark.py::test_workshops_are_separate_from_festivals_and_unclassified_names`、`tests/test_odottar_coverage_benchmark.py::test_historical_references_are_not_slid_and_predictions_stay_separate`、`tests/test_odottar_coverage_benchmark.py::test_stale_snapshot_is_not_presented_as_current_or_confirmation_evidence`、`tests/test_odottar_coverage_benchmark.py::test_history_preserves_legacy_unbounded_results_and_separate_windows`。
 
 ### INV-COL-011 取得失敗を空の収集結果として下流へ渡さない
 
