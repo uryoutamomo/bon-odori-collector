@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-23T11:51:17.141394+00:00",
+  "generated_at": "2026-10-24T11:07:33.405840+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,453 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_67de2c5266ea74bb",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "今週末8/22(土)は、どかんと農業まつり！\n「収穫祭」と「仮装盆踊り」が一緒になった、夏の一大イベントです。\n町内外のお店の出店や、野菜詰め選手権、お笑いライ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089500225132233147",
+      "source_url": "https://x.com/Okanomachi_biei/status/2089500225132233147",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a0579e79b8fb83a50c7517d9f4d2f257076fc7636111211b75a7e0dddcf9f3d1",
+      "last_seen_at": "github-40087892995-1",
+      "created_at": "2026-10-24T11:06:58.324572+00:00",
+      "updated_at": "2026-10-24T11:06:58.324572+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_24cd21142290dff9",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Okanomachi_biei",
+        "source_count": 1,
+        "source_key": "x:2089500225132233147",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP9kV29aQAAhvqM.jpg",
+          "https://t.co/DhfxV0ZuJf",
+          "pic.x.com/DhfxV0ZuJf",
+          "https://pbs.twimg.com/media/HP9lXhtbAAAdGlu.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "美瑛町観光協会＠美瑛子",
+          "classification": "registered_official_social",
+          "handle": "@okanomachi_biei",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n今週末8/22(土)は、どかんと農業まつり！\n「収穫祭」と「仮装盆踊り」が一緒になった、夏の一大イベントです。\n町内外のお店の出店や、野菜詰め選手権、お笑いライブに歌謡ショー等々、楽しい催しが盛りだくさん。\n夜には花火大会も。\n※会場周辺での交通規制にご理解下さい\n詳しくはチラシにて\n#美瑛 https://t.co/DhfxV0ZuJf",
+        "source_url": "https://x.com/Okanomachi_biei/status/2089500225132233147",
+        "source_urls": [
+          "https://x.com/Okanomachi_biei/status/2089500225132233147"
+        ],
+        "voice": {
+          "account": "@Okanomachi_biei",
+          "critique_post": false,
+          "date": "2026-08-17T23:50:49+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP9kV29aQAAhvqM.jpg",
+            "https://t.co/DhfxV0ZuJf",
+            "pic.x.com/DhfxV0ZuJf",
+            "https://pbs.twimg.com/media/HP9lXhtbAAAdGlu.jpg"
+          ],
+          "name": "美瑛町観光協会＠美瑛子",
+          "profile_description": "美瑛の今！を、お届けしてまいります。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "今週末8/22(土)は、どかんと農業まつり！\n「収穫祭」と「仮装盆踊り」が一緒になった、夏の一大イベントです。\n町内外のお店の出店や、野菜詰め選手権、お笑いライブに歌謡ショー等々、楽しい催しが盛りだくさん。\n夜には花火大会も。\n※会場周辺での交通規制にご理解下さい\n詳しくはチラシにて\n#美瑛 https://t.co/DhfxV0ZuJf",
+          "title": "",
+          "tweet_id": "2089500225132233147",
+          "url": "https://x.com/Okanomachi_biei/status/2089500225132233147"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b1575618d5fdc379",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "祭りの季節ですね。\n今週末の8月22日（土）・23日（日）には、新宿中央公園で「納涼盆踊り大会」が開催されます。\n\n私も当日は、地元の町会の皆さまに混じってお手",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089922387919949979",
+      "source_url": "https://x.com/tanaehis/status/2089922387919949979",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "be649fb32b235136bfcf3a731836e52b142835df01c2a3a5eb0d345cf88a8520",
+      "last_seen_at": "github-40087892995-1",
+      "created_at": "2026-10-24T11:06:58.324572+00:00",
+      "updated_at": "2026-10-24T11:06:58.324572+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_26ce0d3642f3fd4c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月22日",
+          "8月22日",
+          "17時",
+          "21時",
+          "8月23日",
+          "18時",
+          "20時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@tanaehis",
+        "source_count": 1,
+        "source_key": "x:2089922387919949979",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQDlVUDboAAYpls.jpg",
+          "https://t.co/1d1Vg1PHs6",
+          "pic.x.com/1d1Vg1PHs6"
+        ],
+        "source_officiality": {
+          "account_name": "たなえ ひさし／都民ファーストの会／新宿区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@tanaehis",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n祭りの季節ですね。\n今週末の8月22日（土）・23日（日）には、新宿中央公園で「納涼盆踊り大会」が開催されます。\n\n私も当日は、地元の町会の皆さまに混じってお手伝いに参ります。\n\n地域の方々が準備を重ねてくださっている夏の行事です！ぜひお立ち寄りください。\n\n📍新宿中央公園 ファンモアタイムひろば（旧水の広場）\n 🗓 2026年8月22日（土）17時半〜21時、\n      8月23日（日）18時〜20時半\n\n#新宿中央公園 #盆踊り",
+        "source_url": "https://x.com/tanaehis/status/2089922387919949979",
+        "source_urls": [
+          "https://x.com/tanaehis/status/2089922387919949979"
+        ],
+        "voice": {
+          "account": "@tanaehis",
+          "critique_post": false,
+          "date": "2026-08-19T03:48:20+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQDlVUDboAAYpls.jpg",
+            "https://t.co/1d1Vg1PHs6",
+            "pic.x.com/1d1Vg1PHs6"
+          ],
+          "name": "たなえ ひさし／都民ファーストの会／新宿区議会議員",
+          "profile_description": "#新宿区　#都民ファーストの会　\n2040年代に向け、新宿を世界から人モノ資本を呼び寄せ日本を牽引する都市へと飛躍させます。\n小池都知事との連携を強固に、人に焦点を当て、多様性を強みとする、希望あふれる安全安心の街づくりを進めます。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "祭りの季節ですね。\n今週末の8月22日（土）・23日（日）には、新宿中央公園で「納涼盆踊り大会」が開催されます。\n\n私も当日は、地元の町会の皆さまに混じってお手伝いに参ります。\n\n地域の方々が準備を重ねてくださっている夏の行事です！ぜひお立ち寄りください。\n\n📍新宿中央公園 ファンモアタイムひろば（旧水の広場）\n 🗓 2026年8月22日（土）17時半〜21時、\n      8月23日（日）18時〜20時半\n\n#新宿中央公園 #盆踊り",
+          "title": "",
+          "tweet_id": "2089922387919949979",
+          "url": "https://x.com/tanaehis/status/2089922387919949979"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c6dc0d98a97448f2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【鵜の木】8/19(水)、20(木)に「銀嶺会 子供盆踊り大会」開催\n明日＆明後日🏮踊ってくれたお子様にはアイスやお菓子の配布がありますよ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089487445406765395",
+      "source_url": "https://x.com/otafull/status/2089487445406765395",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c327d9a8d3324286c441437246f4e31bc7a4a1a9a92e6da5964b7a131f84acd0",
+      "last_seen_at": "github-40087892995-1",
+      "created_at": "2026-10-24T11:06:58.324572+00:00",
+      "updated_at": "2026-10-24T11:06:58.324572+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_f760a498e6f0a0fc",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/19"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2089487445406765395",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【鵜の木】8/19(水)、20(木)に「銀嶺会 子供盆踊り大会」開催\n明日＆明後日🏮踊ってくれたお子様にはアイスやお菓子の配布がありますよ💕\nhttps://t.co/avfoWNLifC\n#大田区　#商店街　#鵜の木　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2089487445406765395",
+        "source_urls": [
+          "https://x.com/otafull/status/2089487445406765395"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-17T23:00:02+00:00",
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【鵜の木】8/19(水)、20(木)に「銀嶺会 子供盆踊り大会」開催\n明日＆明後日🏮踊ってくれたお子様にはアイスやお菓子の配布がありますよ💕\nhttps://t.co/avfoWNLifC\n#大田区　#商店街　#鵜の木　#盆踊り",
+          "title": "",
+          "tweet_id": "2089487445406765395",
+          "url": "https://x.com/otafull/status/2089487445406765395"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_e73ba658830eb011",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8月18日(火) 愛子駅前にて朝活しました。\n通勤・部活や夏期講習に向かう皆さんと挨拶。\n先日の上町夏まつりで焼きそばを担当していましたが労いの言葉をいただきま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089635298493780234",
+      "source_url": "https://x.com/huku812/status/2089635298493780234",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "87ba8ced37a2d4f91a535c418e3d06c84ec2e6bd3d45280b48a1db6f6c5628c5",
+      "last_seen_at": "github-40087892995-1",
+      "created_at": "2026-10-24T11:06:58.324572+00:00",
+      "updated_at": "2026-10-24T11:06:58.324572+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_c7727e10c4fc5119",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月18日",
+          "8月19日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@huku812",
+        "source_count": 1,
+        "source_key": "x:2089635298493780234",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP_fvzUbUAEmkZ5.jpg",
+          "https://t.co/UkyM7LFfoY",
+          "pic.x.com/UkyM7LFfoY",
+          "https://pbs.twimg.com/media/HP_fw1Cb0AAAlha.jpg",
+          "https://pbs.twimg.com/amplify_video_thumb/2089634864371040256/img/5d4fSbWJJhvVQOmE.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "福井たかまさ 前宮城県議会議員【仙台市青葉区】",
+          "classification": "registered_official_social",
+          "handle": "@huku812",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8月18日(火) 愛子駅前にて朝活しました。\n通勤・部活や夏期講習に向かう皆さんと挨拶。\n先日の上町夏まつりで焼きそばを担当していましたが労いの言葉をいただきました。またカユーガダックのパトラッシュくんとご主人に協力いただきました。ありがとうございます。\n今日も元気に活動できることに感謝しながら駅周辺のゴミ拾いを実施。\n\n直近のイベントをお知らせ致します。\n錦町公園にて\n8月19日(水)16:00から\n第44回本町夏まつりが開催されます✨\n櫓を組んで盆踊り。\n毎年恒例、商店街の美味しいお店が一日限りで出店しますよ☺\nキッチンカーや子どもたちが楽しめる縁日もあります。\n荒天日は翌日順延を予定\nたくさんのご来場をお待ちしております。",
+        "source_url": "https://x.com/huku812/status/2089635298493780234",
+        "source_urls": [
+          "https://x.com/huku812/status/2089635298493780234"
+        ],
+        "voice": {
+          "account": "@huku812",
+          "critique_post": false,
+          "date": "2026-08-18T08:47:33+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP_fvzUbUAEmkZ5.jpg",
+            "https://t.co/UkyM7LFfoY",
+            "pic.x.com/UkyM7LFfoY",
+            "https://pbs.twimg.com/media/HP_fw1Cb0AAAlha.jpg",
+            "https://pbs.twimg.com/amplify_video_thumb/2089634864371040256/img/5d4fSbWJJhvVQOmE.jpg"
+          ],
+          "name": "福井たかまさ 前宮城県議会議員【仙台市青葉区】",
+          "profile_description": "15年間 衆議院議員土井とおる先生の秘書を経験 山形県新庄市出身 東北工大卒 仙台青年会議所OB 光のページェント実行委員会 仙台市内のまちづくりボランティアに参画 三人の父 子育て世代 ※後援会スタッフも投稿します",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "8月18日(火) 愛子駅前にて朝活しました。\n通勤・部活や夏期講習に向かう皆さんと挨拶。\n先日の上町夏まつりで焼きそばを担当していましたが労いの言葉をいただきました。またカユーガダックのパトラッシュくんとご主人に協力いただきました。ありがとうございます。\n今日も元気に活動できることに感謝しながら駅周辺のゴミ拾いを実施。\n\n直近のイベントをお知らせ致します。\n錦町公園にて\n8月19日(水)16:00から\n第44回本町夏まつりが開催されます✨\n櫓を組んで盆踊り。\n毎年恒例、商店街の美味しいお店が一日限りで出店しますよ☺\nキッチンカーや子どもたちが楽しめる縁日もあります。\n荒天日は翌日順延を予定\nたくさんのご来場をお待ちしております。",
+          "title": "",
+          "tweet_id": "2089635298493780234",
+          "url": "https://x.com/huku812/status/2089635298493780234"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ed6cab8045d2d43d",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "💃8/17 五葉盆踊り練習会\n\n筑西市商工会で地元・日本舞踊の第一人者、星宮先生のご指導のもと「五葉音頭」「明野音頭」「寺上野盆太鼓踊り」を練習😊\n\n五葉音頭は",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089723546599878931",
+      "source_url": "https://x.com/funfunmiyukids/status/2089723546599878931",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "86c20468ded0e36e712138df8e4f402925d011b6c7a8b8711160e933f70c4f32",
+      "last_seen_at": "github-40087892995-1",
+      "created_at": "2026-10-24T11:06:58.324572+00:00",
+      "updated_at": "2026-10-24T11:06:58.324572+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1bc0f9f2b3644f2f",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/17",
+          "8月24日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@funfunmiyukids",
+        "source_count": 1,
+        "source_key": "x:2089723546599878931",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQAwfVWa4AAUwq9.jpg",
+          "https://t.co/3xjG72wQtH",
+          "pic.x.com/3xjG72wQtH",
+          "https://pbs.twimg.com/media/HQAwfVga4AAN-0j.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "水柿 美幸　筑西市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@funfunmiyukids",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n💃8/17 五葉盆踊り練習会\n\n筑西市商工会で地元・日本舞踊の第一人者、星宮先生のご指導のもと「五葉音頭」「明野音頭」「寺上野盆太鼓踊り」を練習😊\n\n五葉音頭はちょっぴり難しいけれど、みんなで踊ると楽しい！\n\n商工会女性部さんが準備してくださった練習会は\n8月24日（月）18:30〜が最後の練習日！ https://t.co/3xjG72wQtH",
+        "source_url": "https://x.com/funfunmiyukids/status/2089723546599878931",
+        "source_urls": [
+          "https://x.com/funfunmiyukids/status/2089723546599878931"
+        ],
+        "voice": {
+          "account": "@funfunmiyukids",
+          "critique_post": false,
+          "date": "2026-08-18T14:38:13+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQAwfVWa4AAUwq9.jpg",
+            "https://t.co/3xjG72wQtH",
+            "pic.x.com/3xjG72wQtH",
+            "https://pbs.twimg.com/media/HQAwfVga4AAN-0j.jpg"
+          ],
+          "name": "水柿 美幸　筑西市議会議員",
+          "profile_description": "",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-program-songs-wide"
+          ],
+          "text": "💃8/17 五葉盆踊り練習会\n\n筑西市商工会で地元・日本舞踊の第一人者、星宮先生のご指導のもと「五葉音頭」「明野音頭」「寺上野盆太鼓踊り」を練習😊\n\n五葉音頭はちょっぴり難しいけれど、みんなで踊ると楽しい！\n\n商工会女性部さんが準備してくださった練習会は\n8月24日（月）18:30〜が最後の練習日！ https://t.co/3xjG72wQtH",
+          "title": "",
+          "tweet_id": "2089723546599878931",
+          "url": "https://x.com/funfunmiyukids/status/2089723546599878931"
         }
       }
     },
