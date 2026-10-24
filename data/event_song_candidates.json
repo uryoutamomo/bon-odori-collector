@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1787,
+  "count": 1788,
   "public_event_count": 837,
-  "review_count": 950,
+  "review_count": 951,
   "candidates": [
     {
       "id": "4fbaa26988db7546",
@@ -17540,6 +17540,28 @@
       "evidence_count": 1
     },
     {
+      "id": "d0735a52a604be25",
+      "song_name": "お江戸チョイチョイ節",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wEdbGQa7t1Q",
+          "date": "2026-10-23T12:00:34+00:00",
+          "text": "和太鼓お祭りCH\nお江戸チョイチョイ節　飛鳥山公園盆踊り（五月女会輪踊り）３　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https:"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "ccaac9216e577953",
       "song_name": "たいとう音頭",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -17650,7 +17672,7 @@
       "evidence_count": 1
     },
     {
-      "id": "c04db480abb56fb8",
+      "id": "7d15ecbb1e9d7cd4",
       "song_name": "五月女会輪踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -17661,6 +17683,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wEdbGQa7t1Q",
+          "date": "2026-10-23T12:00:34+00:00",
+          "text": "和太鼓お祭りCH\nお江戸チョイチョイ節　飛鳥山公園盆踊り（五月女会輪踊り）３　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https:"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=aj93eLhn370",
@@ -17675,7 +17703,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "id": "d616462a171afe72",

@@ -9,24 +9,16 @@
   "review_count": 1,
   "created": [
     {
-      "song_name": "出演・踊り",
-      "source_term": "出演・踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "港北音頭",
-      "source_term": "港北音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "べったら音頭",
       "source_term": "べったら音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "出演・踊り",
+      "source_term": "出演・踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -41,8 +33,8 @@
       "dry_run": true
     },
     {
-      "song_name": "賑やかな踊り",
-      "source_term": "賑やかな踊り",
+      "song_name": "港北音頭",
+      "source_term": "港北音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -51,6 +43,22 @@
     {
       "song_name": "きよしのズンドコ節",
       "source_term": "きよしのズンドコ節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "小伝馬町音頭",
+      "source_term": "小伝馬町音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "日本橋音頭",
+      "source_term": "日本橋音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -73,16 +81,8 @@
       "dry_run": true
     },
     {
-      "song_name": "小伝馬町音頭",
-      "source_term": "小伝馬町音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "日本橋音頭",
-      "source_term": "日本橋音頭",
+      "song_name": "賑やかな踊り",
+      "source_term": "賑やかな踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -115,16 +115,16 @@
       "dry_run": true
     },
     {
-      "song_name": "八木節",
-      "source_term": "八木節",
+      "song_name": "ダンシングヒーロー",
+      "source_term": "ダンシングヒーロー",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
+      "song_name": "八木節",
+      "source_term": "八木節",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -152,7 +152,7 @@
   "review": [
     {
       "term": "流しおどり",
-      "evidence_count": 2,
+      "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
       "evidence_url": "https://www.youtube.com/watch?v=xoHElrCSpL8"
     }
