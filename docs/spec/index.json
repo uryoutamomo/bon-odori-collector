@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T11:44:10Z",
-  "generated_for_commit": "576839e2",
+  "generated_at": "2026-10-25T16:50:26Z",
+  "generated_for_commit": "628eee13",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -46,7 +46,8 @@
         "INV-COL-009",
         "INV-COL-010",
         "INV-COL-011",
-        "INV-COL-012"
+        "INV-COL-012",
+        "INV-COL-015"
       ],
       "verified_by": [
         "tests/test_x_raw_archive.py",
@@ -62,7 +63,7 @@
         "tests/test_ward_official_source_registry.py",
         "tests/test_odottar_coverage_benchmark.py"
       ],
-      "updated_for": "7a8cd7c0",
+      "updated_for": "d5feeb7a91a351c1a7684fe7c21b4da161ee3887",
       "path": "docs/spec/L1/01-collection.md",
       "owned_files": [
         ".github/workflows/collect.yml",
@@ -93,12 +94,17 @@
         "x_queries.json"
       ],
       "staleness": {
-        "commits_since": 2,
-        "files_changed_since": 4
+        "commits_since": 1,
+        "files_changed_since": 1
       },
-      "version": "1.12",
-      "revision_count": 13,
+      "version": "1.13",
+      "revision_count": 14,
       "history": [
+        {
+          "commit": "628eee13",
+          "date": "2026-10-26",
+          "subject": "Keep date-specific cancellations scoped to review (#292)"
+        },
         {
           "commit": "1339c0f0",
           "date": "2026-10-03",
@@ -153,11 +159,6 @@
           "commit": "958c6db0",
           "date": "2026-08-14",
           "subject": "曲目サブシステムのL1仕様を書き、未記述領域をL0へ明示する (#200)"
-        },
-        {
-          "commit": "bf4f70d9",
-          "date": "2026-08-13",
-          "subject": "Test five previously unguarded data invariants (#196)"
         }
       ]
     },
@@ -1834,6 +1835,17 @@
       "title": "外部サイトのcoverage計測をイベント候補・正本出典にしない",
       "tests": [
         "tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates"
+      ],
+      "has_test": true
+    },
+    "INV-COL-015": {
+      "spec": "L1-collection",
+      "title": "一部日付の中止を催事全体の中止へ拡張しない",
+      "tests": [
+        "tests/test_ward_official_source_registry.py::test_date_specific_cancellation_does_not_cancel_the_whole_candidate",
+        "tests/test_ward_official_source_registry.py::test_explicit_partial_date_notes_require_review",
+        "tests/test_ward_official_source_registry.py::test_full_cancellation_hints_remain_unchanged",
+        "tests/test_ward_official_source_registry.py::test_non_cancellation_notes_are_not_relabelled"
       ],
       "has_test": true
     },
