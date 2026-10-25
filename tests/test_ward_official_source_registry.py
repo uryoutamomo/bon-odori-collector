@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import pytest
 
 from review_inbox_adapters.official_source_adapter import WardOfficialSourceAdapter
 from review_inbox_adapters.source_adapter import adapt_source_payload
@@ -13,6 +14,63 @@ from scan_ward_official_sources import (
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data/ward_official_source_registry.json"
+
+
+def _adachi_cancellation_row(date_cell, time_cell="18時"):
+    source = next(row for row in load_registry(REGISTRY) if row["id"] == "adachi-bonfes-2026")
+    raw = f"""<table><tr><th>開催日</th><th>開始時間</th><th>町会・自治会名（祭名称）</th><th>会場</th><th>住所</th></tr>
+    <tr><td>{date_cell}</td><td>{time_cell}</td><td>普賢寺自治会<br>(納涼盆踊り大会)</td><td>北野公園</td><td>綾瀬2-15（外部サイトへリンク）</td></tr></table>"""
+    row, = extract_structured_event_rows(raw, source, source["url"], 2026)
+    return row
+
+
+def test_date_specific_cancellation_does_not_cancel_the_whole_candidate():
+    # Reconstruct the recorded 2026-10-22 ward candidate, not a new live fetch:
+    # data/ward_official_source_candidates.json, ward-official-1c321907fe247f9b.
+    row = _adachi_cancellation_row(
+        "7月24日<br>(金曜日)<br>※荒天により7月24日(金曜日)は中止<br>7月25日<br>(土曜日)",
+        "19時(金曜日)<br>18時(土曜日)")
+    assert row["id"] == "ward-official-1c321907fe247f9b"
+    assert row["event_date_text"] == "7月24日 / (金曜日) / ※荒天により7月24日(金曜日)は中止 / 7月25日 / (土曜日) / 19時(金曜日) / 18時(土曜日)"
+    assert row["decision"] == "pending"
+    assert "7月24日(金曜日)は中止" in row["memo"]
+    assert row["source_url"] == "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
+    assert row["status_hint"] == ""
+    assert row["cancellation_scope"] == "date_specific"
+    item, = adapt_source_payload(WardOfficialSourceAdapter(2026), {"rows": [row]})
+    assert item["payload"]["cancellation_scope"] == "date_specific"
+    assert item["payload"]["decision"] == "pending"
+    assert "status" not in item
+
+
+@pytest.mark.parametrize("date_cell", [
+    "7月24日<br>7月25日<br>7月24日は中止",
+    "7月24日<br>7月25日<br>7月24日（金曜日）の開催は中止",
+    "7月24日<br>7月25日<br>7月24日のみ中止",
+])
+def test_explicit_partial_date_notes_require_review(date_cell):
+    row = _adachi_cancellation_row(date_cell)
+    assert row["status_hint"] == ""
+    assert row["cancellation_scope"] == "date_specific"
+    assert "7月24日" in row["event_date_text"] and "7月25日" in row["event_date_text"]
+
+
+@pytest.mark.parametrize("date_cell", [
+    "6月27日<br>※荒天により中止",
+    "7月25日<br>7月26日<br>※中止",
+    "7月24日は中止<br>7月25日は中止",
+])
+def test_full_cancellation_hints_remain_unchanged(date_cell):
+    row = _adachi_cancellation_row(date_cell)
+    assert row["status_hint"] == "cancelled"
+    assert "cancellation_scope" not in row
+    assert row["decision"] == "pending"
+
+
+def test_non_cancellation_notes_are_not_relabelled():
+    row = _adachi_cancellation_row("7月18日<br>※雨天延期<br>7月19日")
+    assert row["status_hint"] == ""
+    assert "cancellation_scope" not in row
 
 
 def test_registry_seeds_exactly_the_eight_priority_wards_with_official_urls() -> None:

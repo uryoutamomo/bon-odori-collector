@@ -43,6 +43,7 @@ invariants:
   - INV-COL-010
   - INV-COL-011
   - INV-COL-012
+  - INV-COL-015
 verified_by:
   - tests/test_x_raw_archive.py
   - tests/test_x_collection_health.py
@@ -56,12 +57,16 @@ verified_by:
   - tests/test_sync_event_date_predictions_rdb.py
   - tests/test_ward_official_source_registry.py
   - tests/test_odottar_coverage_benchmark.py
-updated_for: 7a8cd7c0
+updated_for: d5feeb7a91a351c1a7684fe7c21b4da161ee3887
 ---
 
 # 収集サブシステム
 
 > 上位は[全体地図](../README.md)。収集は候補と観測を集める工程であり、採否を決める工程ではない。
+
+候補レビューでは「祭礼の日付が公式に分かること」「その催事で盆踊りを行うこと」「中止注記の対象範囲」を分けて確認する。
+「お祭り・盆踊り情報」という見出しや祭礼日程だけを盆踊り実施の確定根拠にせず、実施未確認を不開催とも断定しない。
+第三者サイトの分類変更だけでcanonical/publicを変更しない。この区別はレビュー原則であり、現行scannerの `confirmed` はsource文脈の検出を示す。盆踊り実施を自動確定する別軸を追加したものではない。
 
 ## この工程は何のためにあるか
 
@@ -175,6 +180,15 @@ mainのOIDC信頼を緩めず、merge済みmainのSHA・S3 checksum・確認文�
 - **守っているコード**: `build_odottar_coverage_benchmark.py`、`.github/workflows/odottar-coverage-benchmark.yml`
 - **守っているテスト**: `tests/test_odottar_coverage_benchmark.py::test_report_hashes_raw_bytes_and_never_creates_candidates`、
   `tests/test_odottar_coverage_benchmark.py::test_workflow_archives_raw_but_commits_only_metrics`
+
+### INV-COL-015 一部日付の中止を催事全体の中止へ拡張しない
+
+- **内容**: 区公式の行単位候補では、複数の月日が列挙され、その一部に「7月24日(金曜日)は中止」のような明示日付付きの中止注記がある場合、全体の `status_hint=cancelled` を付けず、`cancellation_scope=date_specific` で人レビューへ渡す。日程・時刻・本文・URL・候補ID・`decision=pending` は保持する。残る日を開催確定と推定せず、日付の削除やcanonical/publicへの直接反映はしない。
+  単日中止、日付を限定しない一覧行の中止、列挙した全月日それぞれの中止は従来のヒントを保持する。この判別は明示された月日と限定表現に限り、一般的な中止文の意味判定ではない。
+- **なぜ**: 2026-10-22取得済みの足立区候補 `ward-official-1c321907fe247f9b` では、7/24のみの注記と7/25の日程が同じ行にあるのに、単語「中止」の存在だけで全体中止ヒントが付いていた。
+- **破れたときの症状**: 一部日付だけの変更が全体中止の候補としてレビューへ渡る。
+- **守っているコード**: `scan_ward_official_sources.py` の `_cancellation_fields()` / `_structured_candidate()`。
+- **守っているテスト**: `tests/test_ward_official_source_registry.py::test_date_specific_cancellation_does_not_cancel_the_whole_candidate`、`tests/test_ward_official_source_registry.py::test_explicit_partial_date_notes_require_review`、`tests/test_ward_official_source_registry.py::test_full_cancellation_hints_remain_unchanged`、`tests/test_ward_official_source_registry.py::test_non_cancellation_notes_are_not_relabelled`。
 
 ### INV-COL-011 取得失敗を空の収集結果として下流へ渡さない
 

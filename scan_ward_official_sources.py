@@ -132,6 +132,24 @@ HEADER_PATTERNS = {
     "venue": ("会場", "場所"),
     "address": ("住所", "所在地"),
 }
+CALENDAR_DATE_RE = re.compile(r"(\d{1,2})\s*月\s*(\d{1,2})\s*日")
+DATE_SCOPED_CANCELLATION_RE = re.compile(
+    CALENDAR_DATE_RE.pattern + r"(?:\s*[（(][^）)\n/]{1,8}[）)])?\s*(?:は|の開催は|のみ|だけ)\s*中止"
+)
+
+
+def _cancellation_fields(raw_text: str) -> dict:
+    if "中止" not in raw_text:
+        return {"status_hint": ""}
+    listed_dates = {tuple(map(int, value)) for value in CALENDAR_DATE_RE.findall(raw_text)}
+    cancelled_dates = {tuple(map(int, value)) for value in DATE_SCOPED_CANCELLATION_RE.findall(raw_text)}
+    if cancelled_dates and cancelled_dates < listed_dates:
+        return {
+            "status_hint": "",
+            "cancellation_scope": "date_specific",
+            "reason": "一部日付の中止注記あり。催事全体の中止とせず日程を人レビューする。",
+        }
+    return {"status_hint": "cancelled"}
 
 
 def _header_mapping(row: list[dict]) -> dict[str, int]:
@@ -154,7 +172,6 @@ def _structured_candidate(source: dict, url: str, year: int, *, parse_mode: str,
                           address: str = "", raw_text: str = "") -> dict:
     combined_date = " / ".join(value for value in (date_text, time_text) if value)
     row_key = "|".join((event_name, combined_date, venue, address))
-    status_hint = "cancelled" if "中止" in raw_text else ""
     name_parts = [part.strip() for part in event_name.split(" / ") if part.strip()]
     festival_parts = [part.strip("()（） ") for part in name_parts if part.startswith(("(", "（"))]
     organizer_parts = [part for part in name_parts if not part.startswith(("(", "（"))]
@@ -176,12 +193,12 @@ def _structured_candidate(source: dict, url: str, year: int, *, parse_mode: str,
         "event_year": year,
         "event_date_text": combined_date,
         "address": address,
-        "status_hint": status_hint,
         "memo": f"ward registry: {source['id']} / {raw_text[:1000]}",
         "registry_source_type": source.get("source_type") or "",
         "registry_format": source.get("format") or "",
         "parse_mode": parse_mode,
         "source_row_index": row_index,
+        **_cancellation_fields(raw_text),
     }
 
 
