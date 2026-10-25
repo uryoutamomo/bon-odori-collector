@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-24T11:15:11.618430+00:00",
+  "generated_at": "2026-10-25T11:38:43.953538+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,455 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_35e11653ae2c4fb9",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "第２回 #石脇夏祭り🏮\n主催:石脇活性化プロジェクト実行委員会\n\n📅8月22日(土)\n🕑14:00～20:45\n📍由利本荘市総合防災公園\n　ナイスアリーナ南側駐",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089928057100607809",
+      "source_url": "https://x.com/yuri_kan/status/2089928057100607809",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4248531caa4a6cbfcd1e53375b224d39e2e53d55790534dc0d89a6e1f80e6ae2",
+      "last_seen_at": "github-40188754990-1",
+      "created_at": "2026-10-25T11:38:05.131231+00:00",
+      "updated_at": "2026-10-25T11:38:05.131231+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_1936d4f55b2e763e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月22日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@yuri_kan",
+        "source_count": 1,
+        "source_key": "x:2089928057100607809",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQDp_nYakAA_sVE.jpg",
+          "https://t.co/IE62J2E364",
+          "pic.x.com/IE62J2E364"
+        ],
+        "source_officiality": {
+          "account_name": "由利本荘市観光協会 Yurihonjo City Tourism Association",
+          "classification": "registered_official_social",
+          "handle": "@yuri_kan",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n第２回 #石脇夏祭り🏮\n主催:石脇活性化プロジェクト実行委員会\n\n📅8月22日(土)\n🕑14:00～20:45\n📍由利本荘市総合防災公園\n　ナイスアリーナ南側駐車場エリア\n盆踊りをはじめ、歌や演奏、ダンスなどが盛りだくさん！\nキッチンカーや屋台も多数出店予定！\nおたのしみ抽選会も開催！\nぜひお越しください！ https://t.co/IE62J2E364",
+        "source_url": "https://x.com/yuri_kan/status/2089928057100607809",
+        "source_urls": [
+          "https://x.com/yuri_kan/status/2089928057100607809"
+        ],
+        "voice": {
+          "account": "@yuri_kan",
+          "critique_post": false,
+          "date": "2026-08-19T04:10:52+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQDp_nYakAA_sVE.jpg",
+            "https://t.co/IE62J2E364",
+            "pic.x.com/IE62J2E364"
+          ],
+          "name": "由利本荘市観光協会 Yurihonjo City Tourism Association",
+          "profile_description": "秋田県由利本荘市の観光・イベント情報などを発信しています📢 📷写真の鳥海山🏔と日本海🌊に囲まれた秋田県で一番面積が大きなまちです。 お問い合わせは公式サイトの「お問い合わせフォーム」からお願いします。 インスタもチェック！ https://t.co/lu6skQzEC7",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "第２回 #石脇夏祭り🏮\n主催:石脇活性化プロジェクト実行委員会\n\n📅8月22日(土)\n🕑14:00～20:45\n📍由利本荘市総合防災公園\n　ナイスアリーナ南側駐車場エリア\n盆踊りをはじめ、歌や演奏、ダンスなどが盛りだくさん！\nキッチンカーや屋台も多数出店予定！\nおたのしみ抽選会も開催！\nぜひお越しください！ https://t.co/IE62J2E364",
+          "title": "",
+          "tweet_id": "2089928057100607809",
+          "url": "https://x.com/yuri_kan/status/2089928057100607809"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_57fa2974b4fdd385",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8/19(水)、20(木)は鵜の木駅前で「銀嶺会 子供盆踊り大会」開催。商店会に踊りの輪が広がっています。参加した子どもたちにはアイスやお菓子のプレゼントも！\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090067655168590268",
+      "source_url": "https://x.com/otafull/status/2090067655168590268",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6e3547bd08c9a28f4a444ef03efd38c1622784b80ad5400d0103eaab9f70e3ba",
+      "last_seen_at": "github-40188754990-1",
+      "created_at": "2026-10-25T11:38:05.131231+00:00",
+      "updated_at": "2026-10-25T11:38:05.131231+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2c86b1c14070ff35",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/19"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2090067655168590268",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQFpMNfbIAAXceX.jpg",
+          "https://t.co/h6qNH4f3rS",
+          "pic.x.com/h6qNH4f3rS"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8/19(水)、20(木)は鵜の木駅前で「銀嶺会 子供盆踊り大会」開催。商店会に踊りの輪が広がっています。参加した子どもたちにはアイスやお菓子のプレゼントも！\nhttps://t.co/avfoWNLifC https://t.co/h6qNH4f3rS",
+        "source_url": "https://x.com/otafull/status/2090067655168590268",
+        "source_urls": [
+          "https://x.com/otafull/status/2090067655168590268"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-19T13:25:35+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQFpMNfbIAAXceX.jpg",
+            "https://t.co/h6qNH4f3rS",
+            "pic.x.com/h6qNH4f3rS"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "8/19(水)、20(木)は鵜の木駅前で「銀嶺会 子供盆踊り大会」開催。商店会に踊りの輪が広がっています。参加した子どもたちにはアイスやお菓子のプレゼントも！\nhttps://t.co/avfoWNLifC https://t.co/h6qNH4f3rS",
+          "title": "",
+          "tweet_id": "2090067655168590268",
+          "url": "https://x.com/otafull/status/2090067655168590268"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_730a8fd67794b645",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【盆踊り情報2026】【京急蒲田】8/22(土)トキメックイベント広場で南蒲田二丁目町内会「南二盆踊り」。子どもたちは人形すくい、ヨーヨー釣りができます！\nht",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090286160342090150",
+      "source_url": "https://x.com/otafull/status/2090286160342090150",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1b120e84ab23fa43abda93df2589c029283721043f76f5759c58f83d75c47283",
+      "last_seen_at": "github-40188754990-1",
+      "created_at": "2026-10-25T11:38:05.131231+00:00",
+      "updated_at": "2026-10-25T11:38:05.131231+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_ce81db1462b44388",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@otafull",
+        "source_count": 1,
+        "source_key": "x:2090286160342090150",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQIv9rsaMAAEa7X.jpg",
+          "https://t.co/R4s5WQvm6w",
+          "pic.x.com/R4s5WQvm6w"
+        ],
+        "source_officiality": {
+          "account_name": "おーたふる／大田区商店街連合会",
+          "classification": "registered_official_social",
+          "handle": "@otafull",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【盆踊り情報2026】【京急蒲田】8/22(土)トキメックイベント広場で南蒲田二丁目町内会「南二盆踊り」。子どもたちは人形すくい、ヨーヨー釣りができます！\nhttps://t.co/u0fv8q2mhM https://t.co/R4s5WQvm6w",
+        "source_url": "https://x.com/otafull/status/2090286160342090150",
+        "source_urls": [
+          "https://x.com/otafull/status/2090286160342090150"
+        ],
+        "voice": {
+          "account": "@otafull",
+          "critique_post": false,
+          "date": "2026-08-20T03:53:50+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQIv9rsaMAAEa7X.jpg",
+            "https://t.co/R4s5WQvm6w",
+            "pic.x.com/R4s5WQvm6w"
+          ],
+          "name": "おーたふる／大田区商店街連合会",
+          "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "【盆踊り情報2026】【京急蒲田】8/22(土)トキメックイベント広場で南蒲田二丁目町内会「南二盆踊り」。子どもたちは人形すくい、ヨーヨー釣りができます！\nhttps://t.co/u0fv8q2mhM https://t.co/R4s5WQvm6w",
+          "title": "",
+          "tweet_id": "2090286160342090150",
+          "url": "https://x.com/otafull/status/2090286160342090150"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_8bdbf156b71cd61b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "東本願寺盆踊り大会2026(8/19-20)、いよいよ開始です！\n西浅草3町会共同開催、多文化共生。\n青鹿区議、お疲れ様です。\n#台東区 #東京都地域の底力発展",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089994857414832388",
+      "source_url": "https://x.com/hosakamasahiro/status/2089994857414832388",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0f1a7c94125ea7088a86b9a60e4df43c36ff6abdde0bb862316fef2929139ebd",
+      "last_seen_at": "github-40188754990-1",
+      "created_at": "2026-10-25T11:38:05.131231+00:00",
+      "updated_at": "2026-10-25T11:38:05.131231+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3eac5899501afdbe",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/19"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@hosakamasahiro",
+        "source_count": 1,
+        "source_key": "x:2089994857414832388",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQEnPelakAAw6eM.jpg",
+          "https://t.co/ub9j48HwMq",
+          "pic.x.com/ub9j48HwMq",
+          "https://pbs.twimg.com/media/HQEnPelboAAKwPW.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "保坂まさひろ 東京都議会議員 都民ファーストの会(台東区)",
+          "classification": "registered_official_social",
+          "handle": "@hosakamasahiro",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n東本願寺盆踊り大会2026(8/19-20)、いよいよ開始です！\n西浅草3町会共同開催、多文化共生。\n青鹿区議、お疲れ様です。\n#台東区 #東京都地域の底力発展事業助成 https://t.co/ub9j48HwMq",
+        "source_url": "https://x.com/hosakamasahiro/status/2089994857414832388",
+        "source_urls": [
+          "https://x.com/hosakamasahiro/status/2089994857414832388"
+        ],
+        "voice": {
+          "account": "@hosakamasahiro",
+          "critique_post": false,
+          "date": "2026-08-19T08:36:18+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQEnPelakAAw6eM.jpg",
+            "https://t.co/ub9j48HwMq",
+            "pic.x.com/ub9j48HwMq",
+            "https://pbs.twimg.com/media/HQEnPelboAAKwPW.jpg"
+          ],
+          "name": "保坂まさひろ 東京都議会議員 都民ファーストの会(台東区)",
+          "profile_description": "都議会議員 保坂まさひろ公式ページです。環境•建設委員会、東京都道路整備保全公社評議員。台東区消防団連絡会委員。台東区上野軟式野球連盟理事長。忍岡小学校、上野中学校、東海大学付属高輪台高校、東海大学卒、米WVウエズリアン大学院MBA修了、全日空、バンダイ駒形本社を経て #台東区 議、東京都議へ。限りなき挑戦！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "東本願寺盆踊り大会2026(8/19-20)、いよいよ開始です！\n西浅草3町会共同開催、多文化共生。\n青鹿区議、お疲れ様です。\n#台東区 #東京都地域の底力発展事業助成 https://t.co/ub9j48HwMq",
+          "title": "",
+          "tweet_id": "2089994857414832388",
+          "url": "https://x.com/hosakamasahiro/status/2089994857414832388"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9008695819f303e3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089981991060210144",
+      "source_url": "https://x.com/adachi_city/status/2089981991060210144",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "7d760ab54a42096a5209928d505c3635be6923aa1fa5b2bcfc4bc9ec3442e779",
+      "last_seen_at": "github-40188754990-1",
+      "created_at": "2026-10-25T11:38:05.131231+00:00",
+      "updated_at": "2026-10-25T11:38:05.131231+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_3f9a60124a300939",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月２１日",
+          "１９時",
+          "１８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "足立区一ツ家2-21",
+          "region_hint": "足立区",
+          "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html",
+          "venue": "一ツ家二丁目こどもの広場"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@adachi_city",
+        "source_count": 1,
+        "source_key": "x:2089981991060210144",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQEbhijb0AALBTf.jpg",
+          "https://t.co/FL3xdU1OrP",
+          "pic.x.com/FL3xdU1OrP"
+        ],
+        "source_officiality": {
+          "account_name": "足立区役所",
+          "classification": "registered_official_social",
+          "handle": "@adachi_city",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 https://t.co/FL3xdU1OrP",
+        "source_url": "https://x.com/adachi_city/status/2089981991060210144",
+        "source_urls": [
+          "https://x.com/adachi_city/status/2089981991060210144"
+        ],
+        "voice": {
+          "account": "@adachi_city",
+          "critique_post": false,
+          "date": "2026-08-19T07:45:11+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQEbhijb0AALBTf.jpg",
+            "https://t.co/FL3xdU1OrP",
+            "pic.x.com/FL3xdU1OrP"
+          ],
+          "name": "足立区役所",
+          "profile_description": "足立区の公式アカウントです。\n当アカウントは情報発信専用につきフォローやリプライは行いません。足立区に対するご意見等は区のホームページより報道広報課にお寄せください。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 https://t.co/FL3xdU1OrP",
+          "title": "",
+          "tweet_id": "2089981991060210144",
+          "url": "https://x.com/adachi_city/status/2089981991060210144"
         }
       }
     },
