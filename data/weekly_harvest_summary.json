@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-10-24T11:06:24.933545+00:00",
+  "generated_at": "2026-10-25T11:37:28.703575+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-10-24T11:06:19.478621+00:00",
+  "source_generated_at": "2026-10-25T11:37:23.642558+00:00",
   "days": 3,
-  "voice_count": 41,
-  "candidate_count": 22,
+  "voice_count": 38,
+  "candidate_count": 14,
   "category_counts": {
     "曲×会場共起": 1,
-    "曲候補": 20,
+    "曲候補": 12,
     "用語候補": 1
   },
   "non_song_review_count": 2,
-  "song_candidate_count": 20,
-  "song_direct_dry_run_count": 15,
-  "song_review_count": 1,
-  "song_rejected_noise_count": 4,
+  "song_candidate_count": 12,
+  "song_direct_dry_run_count": 11,
+  "song_review_count": 0,
+  "song_rejected_noise_count": 1,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -31,8 +31,6 @@
       "東京音頭 × 上野恩賜公園",
       "輪踊り"
     ],
-    "song_review": [
-      "流しおどり"
-    ]
+    "song_review": []
   }
 }

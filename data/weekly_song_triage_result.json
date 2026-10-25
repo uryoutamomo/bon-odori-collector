@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 20,
-  "direct_count": 15,
-  "created_count": 10,
-  "updated_count": 5,
-  "rejected_noise_count": 4,
-  "review_count": 1,
+  "song_candidate_count": 12,
+  "direct_count": 11,
+  "created_count": 7,
+  "updated_count": 4,
+  "rejected_noise_count": 1,
+  "review_count": 0,
   "created": [
     {
       "song_name": "べったら音頭",
@@ -63,30 +63,6 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "浅草阿波おどり",
-      "source_term": "浅草阿波おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "組み踊り",
-      "source_term": "組み踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "賑やかな踊り",
-      "source_term": "賑やかな踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "updated": [
@@ -121,40 +97,13 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "八木節",
-      "source_term": "八木節",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "rejected_noise": [
     {
       "term": "揃いの踊り",
       "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "各連の踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "第5回浅草阿波踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "阿波踊り",
-      "reason": "SongCatalog: RDBで無効と判定済み"
     }
   ],
-  "review": [
-    {
-      "term": "流しおどり",
-      "evidence_count": 1,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=xoHElrCSpL8"
-    }
-  ]
+  "review": []
 }
