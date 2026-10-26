@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-25T11:48:08.633464+00:00",
+  "generated_at": "2026-10-26T13:12:55.134973+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,454 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2c880219d97b4bda",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "今朝は浦和駅東口にて駅頭活動。4時50分から5時50分まで。\n\nその後、浦和区倫理法人会モーニングセミナーへ。8月末の年度締めを前に、会員スピーチリレーでした。",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090568056930218325",
+      "source_url": "https://x.com/hideki2040/status/2090568056930218325",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a2b0844c7a78fa4b54e8f5b2cf28deb8722daf940fe10317914182386f0f0905",
+      "last_seen_at": "github-40326729392-1",
+      "created_at": "2026-10-26T13:12:12.604040+00:00",
+      "updated_at": "2026-10-26T13:12:12.604040+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d4c955023afe4734",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "4時",
+          "5時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@hideki2040",
+        "source_count": 1,
+        "source_key": "x:2090568056930218325",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQMwjsra0AAPWrM.jpg",
+          "https://t.co/SyAzR0dGFa",
+          "pic.x.com/SyAzR0dGFa",
+          "https://pbs.twimg.com/media/HQMwjsjacAABC7j.jpg",
+          "https://pbs.twimg.com/media/HQMwjskaYAA4Ptc.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "堤 ひでき(日出喜) さいたま市議会議員(緑区選出)立憲民主党",
+          "classification": "registered_official_social",
+          "handle": "@hideki2040",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n今朝は浦和駅東口にて駅頭活動。4時50分から5時50分まで。\n\nその後、浦和区倫理法人会モーニングセミナーへ。8月末の年度締めを前に、会員スピーチリレーでした。\n\nこれから明日開催の東浦和7丁目自治会盆踊りの設営をお手伝いします。\n\n今日もコツコツと。\n\n#社会的弱者のための政治を\n#堤ひでき https://t.co/SyAzR0dGFa",
+        "source_url": "https://x.com/hideki2040/status/2090568056930218325",
+        "source_urls": [
+          "https://x.com/hideki2040/status/2090568056930218325"
+        ],
+        "voice": {
+          "account": "@hideki2040",
+          "critique_post": false,
+          "date": "2026-08-20T22:34:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQMwjsra0AAPWrM.jpg",
+            "https://t.co/SyAzR0dGFa",
+            "pic.x.com/SyAzR0dGFa",
+            "https://pbs.twimg.com/media/HQMwjsjacAABC7j.jpg",
+            "https://pbs.twimg.com/media/HQMwjskaYAA4Ptc.jpg"
+          ],
+          "name": "堤 ひでき(日出喜) さいたま市議会議員(緑区選出)立憲民主党",
+          "profile_description": "◼️2007年駅頭活動スタート(通算13年0ヶ月)◼2度の落選を経て2023年初当選■大牧小学校／東浦和中学校 卒業 ■ミシガン大学 政治学部／経済学部 卒業 ■資格…防災士、宅地建物取引士 ■元衆議院議員武正公一秘書 ■さいたま市消防団 尾間木第2分団 ■浦和東交通安全協会 尾間木支部■浅間神社氏子■中尾ライガース",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "今朝は浦和駅東口にて駅頭活動。4時50分から5時50分まで。\n\nその後、浦和区倫理法人会モーニングセミナーへ。8月末の年度締めを前に、会員スピーチリレーでした。\n\nこれから明日開催の東浦和7丁目自治会盆踊りの設営をお手伝いします。\n\n今日もコツコツと。\n\n#社会的弱者のための政治を\n#堤ひでき https://t.co/SyAzR0dGFa",
+          "title": "",
+          "tweet_id": "2090568056930218325",
+          "url": "https://x.com/hideki2040/status/2090568056930218325"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_744fa9244defed43",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "『かつらぎ夏まつり』\n来る8月22日（土）に鎮座地かつらぎ町の夏をいろどる「かつらぎ夏まつり」が開催されます。\n\n会場となるのは、平和祈念の巨大なお地蔵様がそび",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090403901115871493",
+      "source_url": "https://x.com/niutsuhimejinja/status/2090403901115871493",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1df638aa3c571058c0d2a3cbc6f803c758c6175c5947569b27712f9ee931278b",
+      "last_seen_at": "github-40326729392-1",
+      "created_at": "2026-10-26T13:12:12.604040+00:00",
+      "updated_at": "2026-10-26T13:12:12.604040+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e4f79290cd61c732",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月22日",
+          "5時",
+          "8時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@niutsuhimejinja",
+        "source_count": 1,
+        "source_key": "x:2090403901115871493",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQKbRKXbIAEUP-M.jpg",
+          "https://t.co/HZDsv4aW3z",
+          "pic.x.com/HZDsv4aW3z"
+        ],
+        "source_officiality": {
+          "account_name": "【世界遺産】丹生都比売神社",
+          "classification": "registered_official_social",
+          "handle": "@niutsuhimejinja",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n『かつらぎ夏まつり』\n来る8月22日（土）に鎮座地かつらぎ町の夏をいろどる「かつらぎ夏まつり」が開催されます。\n\n会場となるのは、平和祈念の巨大なお地蔵様がそびえる「かつらぎ公園グラウンド」。JR和歌山線の妙寺駅より徒歩4分の、紀ノ川に面したグラウンドです。\n\n午後5時よりダンスや夜店に盆踊り、午後8時からは花火の打ち上げも盛大に行われます。\n\nなお、駐車場はすぐに満車となり例年混乱が生じるため、電車や徒歩での来場をお願いしますとの事です。（帰宅時間帯に和歌山線の臨時列車が運行されます） \n\n川の向こう岸は、当社の御祭神・丹生都比売大神が高天原より降臨した地と伝わる丹生酒殿神社。大神様も参詣道・三谷坂を下りて見物に行かれるかもしれません。\n\n丹生都比売大神と平和祈念のお地蔵様が見守るかつらぎの夏まつり。是非ともお越しください。\n※雨天時は２3日（日）に順延されます。",
+        "source_url": "https://x.com/niutsuhimejinja/status/2090403901115871493",
+        "source_urls": [
+          "https://x.com/niutsuhimejinja/status/2090403901115871493"
+        ],
+        "voice": {
+          "account": "@niutsuhimejinja",
+          "critique_post": false,
+          "date": "2026-08-20T11:41:42+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQKbRKXbIAEUP-M.jpg",
+            "https://t.co/HZDsv4aW3z",
+            "pic.x.com/HZDsv4aW3z"
+          ],
+          "name": "【世界遺産】丹生都比売神社",
+          "profile_description": "世界遺産登録の丹生都比売神社の公式アカウントです。あらゆる災厄を祓い、弘法大師へ高野山を授けた丹の女神・ニウツヒメをお祀りします。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "『かつらぎ夏まつり』\n来る8月22日（土）に鎮座地かつらぎ町の夏をいろどる「かつらぎ夏まつり」が開催されます。\n\n会場となるのは、平和祈念の巨大なお地蔵様がそびえる「かつらぎ公園グラウンド」。JR和歌山線の妙寺駅より徒歩4分の、紀ノ川に面したグラウンドです。\n\n午後5時よりダンスや夜店に盆踊り、午後8時からは花火の打ち上げも盛大に行われます。\n\nなお、駐車場はすぐに満車となり例年混乱が生じるため、電車や徒歩での来場をお願いしますとの事です。（帰宅時間帯に和歌山線の臨時列車が運行されます） \n\n川の向こう岸は、当社の御祭神・丹生都比売大神が高天原より降臨した地と伝わる丹生酒殿神社。大神様も参詣道・三谷坂を下りて見物に行かれるかもしれません。\n\n丹生都比売大神と平和祈念のお地蔵様が見守るかつらぎの夏まつり。是非ともお越しください。\n※雨天時は２3日（日）に順延されます。",
+          "title": "",
+          "tweet_id": "2090403901115871493",
+          "url": "https://x.com/niutsuhimejinja/status/2090403901115871493"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_98edc9e635249bbf",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090344347850191120",
+      "source_url": "https://x.com/adachi_city/status/2090344347850191120",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "13d0e87deac8914aa1869147cfd13fbc12fa15bd6097ff8e8fd5aebc99a80289",
+      "last_seen_at": "github-40326729392-1",
+      "created_at": "2026-10-26T13:12:12.604040+00:00",
+      "updated_at": "2026-10-26T13:12:12.604040+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_31c104122ea1216d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月２１日",
+          "１９時",
+          "１８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "足立区一ツ家2-21",
+          "region_hint": "足立区",
+          "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html",
+          "venue": "一ツ家二丁目こどもの広場"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@adachi_city",
+        "source_count": 1,
+        "source_key": "x:2090344347850191120",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQJlGoMa0AADGvj.jpg",
+          "https://t.co/Z5yqqsfN03",
+          "pic.x.com/Z5yqqsfN03"
+        ],
+        "source_officiality": {
+          "account_name": "足立区役所",
+          "classification": "registered_official_social",
+          "handle": "@adachi_city",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 #盆踊り https://t.co/Z5yqqsfN03",
+        "source_url": "https://x.com/adachi_city/status/2090344347850191120",
+        "source_urls": [
+          "https://x.com/adachi_city/status/2090344347850191120"
+        ],
+        "voice": {
+          "account": "@adachi_city",
+          "critique_post": false,
+          "date": "2026-08-20T07:45:03+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQJlGoMa0AADGvj.jpg",
+            "https://t.co/Z5yqqsfN03",
+            "pic.x.com/Z5yqqsfN03"
+          ],
+          "name": "足立区役所",
+          "profile_description": "足立区の公式アカウントです。\n当アカウントは情報発信専用につきフォローやリプライは行いません。足立区に対するご意見等は区のホームページより報道広報課にお寄せください。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 #盆踊り https://t.co/Z5yqqsfN03",
+          "title": "",
+          "tweet_id": "2090344347850191120",
+          "url": "https://x.com/adachi_city/status/2090344347850191120"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c0207b970bc04245",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "2026習志野台８丁目夏祭り納涼盆踊り会場の設営作業が８月20日、始まりました。会場の習志野台８丁目公園に櫓（やぐら）と、たこ焼きなど露店の設営が行われました（",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090447215731044706",
+      "source_url": "https://x.com/8_chokai/status/2090447215731044706",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5a2b4e06fc17ddec89c8b7385a2fcca1ef7b1daebfebb81e6c1d0d11468dc7fb",
+      "last_seen_at": "github-40326729392-1",
+      "created_at": "2026-10-26T13:12:12.604040+00:00",
+      "updated_at": "2026-10-26T13:12:12.604040+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_750c50ab44a24d49",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月20日",
+          "６時",
+          "８時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@8_chokai",
+        "source_count": 1,
+        "source_key": "x:2090447215731044706",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2090447177172815872/img/jYdaA-ISO-vJ9kmz.jpg",
+          "https://t.co/REIPJNkoY6",
+          "pic.x.com/REIPJNkoY6"
+        ],
+        "source_officiality": {
+          "account_name": "習志野台８丁目町会",
+          "classification": "registered_official_social",
+          "handle": "@8_chokai",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n2026習志野台８丁目夏祭り納涼盆踊り会場の設営作業が８月20日、始まりました。会場の習志野台８丁目公園に櫓（やぐら）と、たこ焼きなど露店の設営が行われました（動画）。設営の完了は22日正午。夏祭りの開会は同日午後６時、閉会は23日午後８時30分。 https://t.co/REIPJNkoY6",
+        "source_url": "https://x.com/8_chokai/status/2090447215731044706",
+        "source_urls": [
+          "https://x.com/8_chokai/status/2090447215731044706"
+        ],
+        "voice": {
+          "account": "@8_chokai",
+          "critique_post": false,
+          "date": "2026-08-20T14:33:49+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2090447177172815872/img/jYdaA-ISO-vJ9kmz.jpg",
+            "https://t.co/REIPJNkoY6",
+            "pic.x.com/REIPJNkoY6"
+          ],
+          "name": "習志野台８丁目町会",
+          "profile_description": "千葉県船橋市「習志野台８丁目町会」は2026年4月19日現在1075会員・事業者)で構成している地縁法人認可住民自治組織です。町会は協力し合って「近所づきあいを力にして安全で安心して暮らせるまちづくり」に取り組んでいます。習志野台８丁目と近隣のようす、住民自治に関わる情報を伝えます。",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "2026習志野台８丁目夏祭り納涼盆踊り会場の設営作業が８月20日、始まりました。会場の習志野台８丁目公園に櫓（やぐら）と、たこ焼きなど露店の設営が行われました（動画）。設営の完了は22日正午。夏祭りの開会は同日午後６時、閉会は23日午後８時30分。 https://t.co/REIPJNkoY6",
+          "title": "",
+          "tweet_id": "2090447215731044706",
+          "url": "https://x.com/8_chokai/status/2090447215731044706"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_db61c5499f74c943",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "こんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがござい",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090307004422369463",
+      "source_url": "https://x.com/cnnn_ryosenji/status/2090307004422369463",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c57b5a2096da0a93863f0440396317842d4dbebd332ab61d325b3a945d458275",
+      "last_seen_at": "github-40326729392-1",
+      "created_at": "2026-10-26T13:12:12.604040+00:00",
+      "updated_at": "2026-10-26T13:12:12.604040+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6ca5a098a6ebe65d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月20日",
+          "8月22日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@cnnn_ryosenji",
+        "source_count": 1,
+        "source_key": "x:2090307004422369463",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "霊山寺公式 ちんねんさん",
+          "classification": "registered_official_social",
+          "handle": "@cnnn_ryosenji",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nこんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがございます。\n\nその後は、盆踊りと打上花火🎇も例年通り行われます。\nよろしくお願い致します😌\n\n #霊山寺",
+        "source_url": "https://x.com/cnnn_ryosenji/status/2090307004422369463",
+        "source_urls": [
+          "https://x.com/cnnn_ryosenji/status/2090307004422369463"
+        ],
+        "voice": {
+          "account": "@cnnn_ryosenji",
+          "critique_post": false,
+          "date": "2026-08-20T05:16:40+00:00",
+          "name": "霊山寺公式 ちんねんさん",
+          "profile_description": "大和國登美山鼻高霊山寺公式アカウント。\nSNS広報X担当ちんねんさんがお寺の色々な情報を発信します。\n #霊山寺   #ちんねんさんの気まぐれ写真館   #寺cafe花美津姫  #薬師湯殿  #霊山寺霊園",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "こんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがございます。\n\nその後は、盆踊りと打上花火🎇も例年通り行われます。\nよろしくお願い致します😌\n\n #霊山寺",
+          "title": "",
+          "tweet_id": "2090307004422369463",
+          "url": "https://x.com/cnnn_ryosenji/status/2090307004422369463"
         }
       }
     },
