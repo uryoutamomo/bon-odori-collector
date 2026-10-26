@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-26T13:19:30.784871+00:00",
+  "generated_at": "2026-10-26T13:22:34.133950+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -32732,6 +32732,125 @@
       }
     },
     {
+      "inbox_id": "inbox_575ed41367b2de92",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "輪踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:輪踊り",
+      "source_url": "https://www.youtube.com/watch?v=r68Cd7HzDIo",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "03b160b2a684d5550478e495bd2eb1bf1f40ac61f8890fe8d837058d91c433c2",
+      "last_seen_at": "github-40326729392-1-daily_term_candidate",
+      "created_at": "2026-07-27T10:22:18.965554+00:00",
+      "updated_at": "2026-10-26T13:20:21.535438+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-26T12:00:26+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=r68Cd7HzDIo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-25T12:00:02+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=463XWbgHDfo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-24T12:00:21+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=kq6cV8NLzik"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+        "evidence_url": "https://www.youtube.com/watch?v=r68Cd7HzDIo",
+        "interpretation": "櫓や中心を囲んで輪になって踊る形式",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "輪踊り",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_b5b90d9ea913dd96",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "東京音頭 × 上野恩賜公園",
+      "event_name": "",
+      "venue": "上野恩賜公園",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:東京音頭|venue:上野恩賜公園",
+      "source_url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "7f55b65c74c8a8317d961169cc01a12e1e2fb280a8ebf4d3f94f7ba003d68edc",
+      "last_seen_at": "github-40326729392-1-daily_term_candidate",
+      "created_at": "2026-08-12T08:16:06.743901+00:00",
+      "updated_at": "2026-10-26T13:20:21.535438+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "盆踊りフェス"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-26T11:00:17+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=GTZCmHxrIDE"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-25T11:00:23+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=B_PJlvrB3ZY"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-10-24T11:00:01+00:00",
+            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+            "url": "https://www.youtube.com/watch?v=whvsSXnk35M"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+        "evidence_url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
+        "interpretation": "上野恩賜公園で東京音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "東京音頭",
+        "term": "東京音頭 × 上野恩賜公園",
+        "type": "共起",
+        "venue": "上野恩賜公園"
+      }
+    },
+    {
       "inbox_id": "inbox_28dc2fc10370a5d7",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -33207,125 +33326,6 @@
         ],
         "video_id": "0IPHTBhSILI",
         "video_url": "https://www.youtube.com/watch?v=0IPHTBhSILI"
-      }
-    },
-    {
-      "inbox_id": "inbox_575ed41367b2de92",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "輪踊り",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:輪踊り",
-      "source_url": "https://www.youtube.com/watch?v=kq6cV8NLzik",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "fcfcdcd6472ff0af659ac1c6f82af9e4f43cc75291f16cbf4e69eb61aaa390e5",
-      "last_seen_at": "github-40188754990-1-daily_term_candidate",
-      "created_at": "2026-07-27T10:22:18.965554+00:00",
-      "updated_at": "2026-10-25T11:46:03.817496+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-24T12:00:21+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=kq6cV8NLzik"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-23T12:00:34+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=wEdbGQa7t1Q"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-22T12:30:28+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=aj93eLhn370"
-          }
-        ],
-        "evidence_count": 3,
-        "evidence_text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-        "evidence_url": "https://www.youtube.com/watch?v=kq6cV8NLzik",
-        "interpretation": "櫓や中心を囲んで輪になって踊る形式",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "輪踊り",
-        "type": "準公式用語"
-      }
-    },
-    {
-      "inbox_id": "inbox_b5b90d9ea913dd96",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "東京音頭 × 上野恩賜公園",
-      "event_name": "",
-      "venue": "上野恩賜公園",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:東京音頭|venue:上野恩賜公園",
-      "source_url": "https://www.youtube.com/watch?v=B_PJlvrB3ZY",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "3920d06bf481bd75cfc14f4a9fd15e330b85b9a86dc2ae61d4318cf1feb47d37",
-      "last_seen_at": "github-40188754990-1-daily_term_candidate",
-      "created_at": "2026-08-12T08:16:06.743901+00:00",
-      "updated_at": "2026-10-25T11:46:03.817496+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "盆踊りフェス"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-25T11:00:23+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=B_PJlvrB3ZY"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-24T11:00:01+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=whvsSXnk35M"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-10-23T11:00:09+00:00",
-            "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-            "url": "https://www.youtube.com/watch?v=-ItHjZsjVsQ"
-          }
-        ],
-        "evidence_count": 3,
-        "evidence_text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV\n---\n2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
-        "evidence_url": "https://www.youtube.com/watch?v=B_PJlvrB3ZY",
-        "interpretation": "上野恩賜公園で東京音頭が言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "東京音頭",
-        "term": "東京音頭 × 上野恩賜公園",
-        "type": "共起",
-        "venue": "上野恩賜公園"
       }
     },
     {
