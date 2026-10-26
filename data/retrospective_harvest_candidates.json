@@ -1,9 +1,9 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-10-25T11:37:05.770785+00:00",
+  "generated_at": "2026-10-26T13:11:06.916283+00:00",
   "source": "data/voices.json",
-  "voice_count": 45612,
-  "classified_event_evidence_count": 11160,
+  "voice_count": 45627,
+  "classified_event_evidence_count": 11171,
   "candidate_count": 9487,
   "counts": {
     "by_kind": {
@@ -43881,10 +43881,112 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 8,
+      "evidence_count": 11,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:8eb2331df8b3fc42e91a3d787a1cc1a6132d4956884b836994cdc94f85a3ad33",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=PKXSYT524ss",
+          "text": "2026年10月12日に新横浜公園で開催された\n「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 \n横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！\n\n\n【開催概要】 \n・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り \n・出演・踊り：横浜みなと会 \n・開催日：2026年10月12日（月・祝） \n・会場：新横浜公園（神奈川県横浜市港北区）\n\n\n◆チャンネル登録・高評価よろしくお願いします！ \n和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。\n\n\n#盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓\n\n横浜スポーツレクリエーションフェスティバル 盆踊り\n１港北音頭　https://youtu.be/pNgBhLQHw2A\n２日本の夏ごよみ　https://youtu.be/g9NgSgKmVEo\n３神奈川おどり　https://youtu.be/P4WJIdNYyaM\n４横浜花博花だより　https://youtu.be/gPaNdVtWR",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T10:30:03+00:00",
+          "observed_at": "2026-10-26T10:30:03+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "での盆踊り",
+          "normalized_event": "で",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:aa221db8d6278dcbff3cae461b4edeebbba9d208a1c0fd7b2d50321f6cbfbb43",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=bcpuaw3rmbc",
+          "text": "2026年10月12日に新横浜公園で開催された\n「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 \n横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！\n\n\n【開催概要】 \n・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り \n・出演・踊り：横浜みなと会 \n・開催日：2026年10月12日（月・祝） \n・会場：新横浜公園（神奈川県横浜市港北区）\n\n\n◆チャンネル登録・高評価よろしくお願いします！ \n和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。\n\n\n#盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓\n\n横浜スポーツレクリエーションフェスティバル 盆踊り\n１港北音頭　https://youtu.be/pNgBhLQHw2A\n２日本の夏ごよみ　https://youtu.be/g9NgSgKmVEo\n３神奈川おどり　https://youtu.be/P4WJIdNYyaM\n４横浜花博花だより　https://youtu.be/gPaNdVtWR",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T10:00:04+00:00",
+          "observed_at": "2026-10-26T10:00:04+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "での盆踊り",
+          "normalized_event": "で",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:06c96a70a108dbdbebb0fdf1238ec1185d8cc27e0c692529d3fbb15975aa7163",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Eaommh72Y00",
+          "text": "2026年10月12日に新横浜公園で開催された\n「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 \n横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！\n\n\n【開催概要】 \n・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り \n・出演・踊り：横浜みなと会 \n・開催日：2026年10月12日（月・祝） \n・会場：新横浜公園（神奈川県横浜市港北区）\n\n\n◆チャンネル登録・高評価よろしくお願いします！ \n和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。\n\n\n#盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓\n\n横浜スポーツレクリエーションフェスティバル 盆踊り\n１港北音頭　https://youtu.be/pNgBhLQHw2A\n２日本の夏ごよみ　https://youtu.be/g9NgSgKmVEo\n３神奈川おどり　https://youtu.be/P4WJIdNYyaM\n４横浜花博花だより　https://youtu.be/gPaNdVtWR",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-25T22:00:10+00:00",
+          "observed_at": "2026-10-25T22:00:10+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "での盆踊り",
+          "normalized_event": "で",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:be9552b50bb6f27e7545835361ac421bc218654dd2c64e00995e95bc93a940be",
           "tweet_id": "",
@@ -51908,10 +52010,44 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 19,
+      "evidence_count": 20,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:999ce57303b04e849009623a29e3d3d6651dd7b4273d1529b84c966434a84e1b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
+          "text": "2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs\n３炭坑節　https://youtu.be/rEBP9mMIXF4\n４YMCA　https://youtu.be/yM5FdyULscw\n５あなたとトゥラッタッタ♪　https://youtu.be/yMDFoujd7Ug\n６世界でいちばん熱い夏　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T11:00:17+00:00",
+          "observed_at": "2026-10-26T11:00:17+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "下町盆踊り",
+          "normalized_event": "下町",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:4a60e83601534abd1425f3646b4fda56dad40c36d6ca357c3b72a2c0fd1e7038",
           "tweet_id": "",
@@ -56417,10 +56553,190 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 15,
+      "evidence_count": 20,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T12:30:04+00:00",
+          "observed_at": "2026-10-26T12:30:04+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:84e24b673f197438ceaa8e3fbc66be55a39c00a4ddc5aecee35ce10cd65e4cd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZDaDRJhSVMc",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T08:00:19+00:00",
+          "observed_at": "2026-10-26T08:00:19+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:66321ac4526e59f7ed77d3dfab22a0098501a87e6a51636ed6efb0459336dd87",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u94SQY6l7Fc",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T06:00:29+00:00",
+          "observed_at": "2026-10-26T06:00:29+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:30076986556076b500abdff16fbd78565815ad9630758adb53d8374ecb2ebd9a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=L_mwsNJBP08",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-25T13:00:23+00:00",
+          "observed_at": "2026-10-25T13:00:23+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:200aa78ebc77217d880427d9ecba6f7747e6fd238338eb877c32d80dc656e48a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1Jdorh-OW0Y",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-25T12:30:33+00:00",
+          "observed_at": "2026-10-25T12:30:33+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:d401b0da69b5b902087331419d67cfcdad02a1cce6d66119bf86ac0fa19222db",
           "tweet_id": "",
@@ -62282,10 +62598,80 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 12,
+      "evidence_count": 14,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:30b9b95306770237500092e0706b9e4e806c9766b68bd13e3790e3fab78d87f9",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=XdS0iuRpQE8",
+          "text": "2026年10月3日に\n群馬県太田市の「太田強戸スマートIC入口特設会場」で開催された\n【強戸のまつり】での盆踊りの様子です！\n\n会場が一体となって盛り上がった活気あふれるお祭りの熱気をぜひお楽しみください。\n\n【開催情報】 \n・イベント名：強戸のまつり \n・開催日：2026年10月3日 \n・開催場所：群馬県太田市 太田強戸スマートIC入口特設会場\n\n\n動画への「高評価」や「コメント」、チャンネル登録をしていただけると励みになります！ \n感想や「この曲が好き！」などのコメントもお待ちしております。\n\n#強戸のまつり #太田市 #盆踊り #和太鼓 #お祭り #群馬県\n\n\n\n第1回「強戸の祭り」\n１Bling-Bang-Bang-Born　https://youtu.be/YzrYFpD8rTk\n２上毛かるたの唄　https://youtu.be/37F_2YPr-1o\n３マツケンサンバⅡ　https://youtu.be/t8a_g3GNHeY\n４一休さん　https://youtu.be/h8TyB0Lh1Pk\n５東京音頭　https://youtu.be/SOptf-XquyE\n６B",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T11:30:34+00:00",
+          "observed_at": "2026-10-26T11:30:34+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "強戸のまつり",
+          "normalized_event": "強戸の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:4568014fdc5cd181efd3428074003380565b1ed6295120149de4c55d839d3b4c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0IPHTBhSILI",
+          "text": "2026年10月3日に\n群馬県太田市の「太田強戸スマートIC入口特設会場」で開催された\n【強戸のまつり】での盆踊りの様子です！\n\n会場が一体となって盛り上がった活気あふれるお祭りの熱気をぜひお楽しみください。\n\n【開催情報】 \n・イベント名：強戸のまつり \n・開催日：2026年10月3日 \n・開催場所：群馬県太田市 太田強戸スマートIC入口特設会場\n\n\n動画への「高評価」や「コメント」、チャンネル登録をしていただけると励みになります！ \n感想や「この曲が好き！」などのコメントもお待ちしております。\n\n#強戸のまつり #太田市 #盆踊り #和太鼓 #お祭り #群馬県\n\n\n\n第1回「強戸の祭り」\n１Bling-Bang-Bang-Born　https://youtu.be/YzrYFpD8rTk\n２上毛かるたの唄　https://youtu.be/37F_2YPr-1o\n３マツケンサンバⅡ　https://youtu.be/t8a_g3GNHeY\n４一休さん　https://youtu.be/h8TyB0Lh1Pk\n５東京音頭　https://youtu.be/SOptf-XquyE\n６B",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-25T11:30:15+00:00",
+          "observed_at": "2026-10-25T11:30:15+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "強戸のまつり",
+          "normalized_event": "強戸の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:16459b17fa406b250ffea599096619f668ae0855edb2267bc00883bbb56cb567",
           "tweet_id": "",
@@ -342652,6 +343038,63 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:8eb2331df8b3fc42e91a3d787a1cc1a6132d4956884b836994cdc94f85a3ad33",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=PKXSYT524ss",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:30:03+00:00",
+          "score": 15,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:aa221db8d6278dcbff3cae461b4edeebbba9d208a1c0fd7b2d50321f6cbfbb43",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=bcpuaw3rmbc",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:00:04+00:00",
+          "score": 15,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:06c96a70a108dbdbebb0fdf1238ec1185d8cc27e0c692529d3fbb15975aa7163",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Eaommh72Y00",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T22:00:10+00:00",
+          "score": 15,
+          "song_name": "さくら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:be9552b50bb6f27e7545835361ac421bc218654dd2c64e00995e95bc93a940be",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=qK-H9ipnEd8",
@@ -342808,7 +343251,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 8,
+      "evidence_count": 11,
       "speaker_count": 1
     },
     {
@@ -346363,6 +346806,101 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T12:30:04+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:84e24b673f197438ceaa8e3fbc66be55a39c00a4ddc5aecee35ce10cd65e4cd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZDaDRJhSVMc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T08:00:19+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:66321ac4526e59f7ed77d3dfab22a0098501a87e6a51636ed6efb0459336dd87",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u94SQY6l7Fc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T06:00:29+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:30076986556076b500abdff16fbd78565815ad9630758adb53d8374ecb2ebd9a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=L_mwsNJBP08",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T13:00:23+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:200aa78ebc77217d880427d9ecba6f7747e6fd238338eb877c32d80dc656e48a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1Jdorh-OW0Y",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T12:30:33+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d401b0da69b5b902087331419d67cfcdad02a1cce6d66119bf86ac0fa19222db",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=yYUf8XptW9Y",
@@ -346652,7 +347190,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 15,
+      "evidence_count": 20,
       "speaker_count": 1
     },
     {
@@ -368907,6 +369445,66 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:8eb2331df8b3fc42e91a3d787a1cc1a6132d4956884b836994cdc94f85a3ad33",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=PKXSYT524ss",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:30:03+00:00",
+          "score": 15,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:aa221db8d6278dcbff3cae461b4edeebbba9d208a1c0fd7b2d50321f6cbfbb43",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=bcpuaw3rmbc",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:00:04+00:00",
+          "score": 15,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:06c96a70a108dbdbebb0fdf1238ec1185d8cc27e0c692529d3fbb15975aa7163",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Eaommh72Y00",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T22:00:10+00:00",
+          "score": 15,
+          "song_name": "出演・踊り",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:be9552b50bb6f27e7545835361ac421bc218654dd2c64e00995e95bc93a940be",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=qK-H9ipnEd8",
@@ -369072,7 +369670,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 8,
+      "evidence_count": 11,
       "speaker_count": 1
     },
     {
@@ -371681,6 +372279,63 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:8eb2331df8b3fc42e91a3d787a1cc1a6132d4956884b836994cdc94f85a3ad33",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=PKXSYT524ss",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:30:03+00:00",
+          "score": 15,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:aa221db8d6278dcbff3cae461b4edeebbba9d208a1c0fd7b2d50321f6cbfbb43",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=bcpuaw3rmbc",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:00:04+00:00",
+          "score": 15,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:06c96a70a108dbdbebb0fdf1238ec1185d8cc27e0c692529d3fbb15975aa7163",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Eaommh72Y00",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T22:00:10+00:00",
+          "score": 15,
+          "song_name": "四季の花踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:be9552b50bb6f27e7545835361ac421bc218654dd2c64e00995e95bc93a940be",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=qK-H9ipnEd8",
@@ -371837,7 +372492,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 8,
+      "evidence_count": 11,
       "speaker_count": 1
     },
     {
@@ -380570,6 +381225,101 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T12:30:04+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:84e24b673f197438ceaa8e3fbc66be55a39c00a4ddc5aecee35ce10cd65e4cd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZDaDRJhSVMc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T08:00:19+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:66321ac4526e59f7ed77d3dfab22a0098501a87e6a51636ed6efb0459336dd87",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u94SQY6l7Fc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T06:00:29+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:30076986556076b500abdff16fbd78565815ad9630758adb53d8374ecb2ebd9a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=L_mwsNJBP08",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T13:00:23+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:200aa78ebc77217d880427d9ecba6f7747e6fd238338eb877c32d80dc656e48a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1Jdorh-OW0Y",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T12:30:33+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d401b0da69b5b902087331419d67cfcdad02a1cce6d66119bf86ac0fa19222db",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=yYUf8XptW9Y",
@@ -380859,7 +381609,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 15,
+      "evidence_count": 20,
       "speaker_count": 1
     },
     {
@@ -387161,6 +387911,101 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T12:30:04+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:84e24b673f197438ceaa8e3fbc66be55a39c00a4ddc5aecee35ce10cd65e4cd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZDaDRJhSVMc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T08:00:19+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:66321ac4526e59f7ed77d3dfab22a0098501a87e6a51636ed6efb0459336dd87",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u94SQY6l7Fc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T06:00:29+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:30076986556076b500abdff16fbd78565815ad9630758adb53d8374ecb2ebd9a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=L_mwsNJBP08",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T13:00:23+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:200aa78ebc77217d880427d9ecba6f7747e6fd238338eb877c32d80dc656e48a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1Jdorh-OW0Y",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T12:30:33+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d401b0da69b5b902087331419d67cfcdad02a1cce6d66119bf86ac0fa19222db",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=yYUf8XptW9Y",
@@ -387450,7 +388295,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 15,
+      "evidence_count": 20,
       "speaker_count": 1
     },
     {
@@ -413918,6 +414763,26 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:999ce57303b04e849009623a29e3d3d6651dd7b4273d1529b84c966434a84e1b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T11:00:17+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:4a60e83601534abd1425f3646b4fda56dad40c36d6ca357c3b72a2c0fd1e7038",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=B_PJlvrB3ZY",
@@ -414303,7 +415168,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 19,
+      "evidence_count": 20,
       "speaker_count": 1
     },
     {
@@ -429080,6 +429945,63 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:8eb2331df8b3fc42e91a3d787a1cc1a6132d4956884b836994cdc94f85a3ad33",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=PKXSYT524ss",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:30:03+00:00",
+          "score": 15,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:aa221db8d6278dcbff3cae461b4edeebbba9d208a1c0fd7b2d50321f6cbfbb43",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=bcpuaw3rmbc",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:00:04+00:00",
+          "score": 15,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:06c96a70a108dbdbebb0fdf1238ec1185d8cc27e0c692529d3fbb15975aa7163",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Eaommh72Y00",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T22:00:10+00:00",
+          "score": 15,
+          "song_name": "港北音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:be9552b50bb6f27e7545835361ac421bc218654dd2c64e00995e95bc93a940be",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=qK-H9ipnEd8",
@@ -429236,7 +430158,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 8,
+      "evidence_count": 11,
       "speaker_count": 1
     },
     {
@@ -604270,6 +605192,21 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:999ce57303b04e849009623a29e3d3d6651dd7b4273d1529b84c966434a84e1b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T11:00:17+00:00",
+          "score": 15,
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:4a60e83601534abd1425f3646b4fda56dad40c36d6ca357c3b72a2c0fd1e7038",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=B_PJlvrB3ZY",
@@ -604586,7 +605523,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 21,
+      "evidence_count": 22,
       "speaker_count": 2
     },
     {
@@ -616207,6 +617144,81 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T12:30:04+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:84e24b673f197438ceaa8e3fbc66be55a39c00a4ddc5aecee35ce10cd65e4cd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZDaDRJhSVMc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T08:00:19+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:66321ac4526e59f7ed77d3dfab22a0098501a87e6a51636ed6efb0459336dd87",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u94SQY6l7Fc",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T06:00:29+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:30076986556076b500abdff16fbd78565815ad9630758adb53d8374ecb2ebd9a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=L_mwsNJBP08",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T13:00:23+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:200aa78ebc77217d880427d9ecba6f7747e6fd238338eb877c32d80dc656e48a",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=1Jdorh-OW0Y",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T12:30:33+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d401b0da69b5b902087331419d67cfcdad02a1cce6d66119bf86ac0fa19222db",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=yYUf8XptW9Y",
@@ -616433,7 +617445,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 15,
+      "evidence_count": 20,
       "speaker_count": 1
     },
     {
@@ -617012,6 +618024,51 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:8eb2331df8b3fc42e91a3d787a1cc1a6132d4956884b836994cdc94f85a3ad33",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=PKXSYT524ss",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:30:03+00:00",
+          "score": 15,
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:aa221db8d6278dcbff3cae461b4edeebbba9d208a1c0fd7b2d50321f6cbfbb43",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=bcpuaw3rmbc",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T10:00:04+00:00",
+          "score": 15,
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:06c96a70a108dbdbebb0fdf1238ec1185d8cc27e0c692529d3fbb15975aa7163",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Eaommh72Y00",
+          "text": "2026年10月12日に新横浜公園で開催された 「YOKOHAMAスポーツレクリエーションフェスティバル」での盆踊りの様子です。 横浜みなと会の皆様による活気あふれる踊りと演奏をお届けします！ 【開催概要】 ・イベント名：YOKOHAMAスポーツレクリエーションフェスティバル ・演目：盆踊り ・出演・踊り：横浜みなと会 ・開催日：2026年10月12日（月・祝） ・会場：新横浜公園（神奈川県横浜市港北区） ◆チャンネル登録・高評価よろしくお願いします！ 和太鼓やお祭り、各地の盆踊りの熱気をお届けしています。 #盆踊り #YOKOHAMAスポーツレクリエーションフェスティバル #横浜みなと会 #新横浜公園 #祭り #和太鼓 横浜スポーツレクリエーションフェスティバル 盆踊り １港北音頭 https://youtu.be/pNgBhLQHw2A ２日本の夏ごよみ https://youtu.be/g9NgSgKmVEo ３神奈川おどり https://youtu.be/P4WJIdNYyaM ４横浜花博花だより https://youtu.be/gPaNdVtWRHw ５港南ひまわり音頭 ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-25T22:00:10+00:00",
+          "score": 15,
+          "estimated_event": "での盆踊り",
+          "estimated_venue": "新横浜公園",
+          "time_hints": [
+            "2026年10月12日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:be9552b50bb6f27e7545835361ac421bc218654dd2c64e00995e95bc93a940be",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=qK-H9ipnEd8",
@@ -617133,7 +618190,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 8,
+      "evidence_count": 11,
       "speaker_count": 1
     },
     {

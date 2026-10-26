@@ -9171,6 +9171,12 @@
     ],
     "songs": [
       {
+        "name": "APT.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "Runner",
         "confidence": "hint",
         "basis": "current_observed",
@@ -9201,6 +9207,24 @@
         "basis_label": "実測"
       },
       {
+        "name": "オトナノススメ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "カリスマックス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ホテルパシフィック",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "マツケンサンバII",
         "confidence": "hint",
         "basis": "current_observed",
@@ -9214,6 +9238,12 @@
       },
       {
         "name": "世界でいちばん熱い夏",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -9249,6 +9279,12 @@
         "basis_label": "実測"
       },
       {
+        "name": "恋愛レボリューション21",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
         "basis": "current_observed",
@@ -9262,6 +9298,12 @@
       },
       {
         "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "盆ギリ恋歌",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -12826,16 +12868,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-10-25",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-10-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12844,7 +12886,7 @@
       "2026-10-25",
       "2026-10-25"
     ],
-    "display_tier": "confirmed",
+    "display_tier": "ended",
     "occurrence_id": "occ_92814d322c8159a0",
     "event_year": 2026
   },
@@ -32628,16 +32670,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-10-24〜2026-10-25",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-10-24〜2026-10-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -32646,7 +32688,7 @@
       "2026-10-24",
       "2026-10-25"
     ],
-    "display_tier": "confirmed",
+    "display_tier": "ended",
     "occurrence_id": "occ_f5ebfb06f4b5905e",
     "event_year": 2026
   },

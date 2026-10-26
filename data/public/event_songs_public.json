@@ -3509,6 +3509,12 @@
     "date": "2026-10-09",
     "songs": [
       {
+        "name": "APT.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "Runner",
         "confidence": "hint",
         "basis": "current_observed",
@@ -3539,6 +3545,24 @@
         "basis_label": "実測"
       },
       {
+        "name": "オトナノススメ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "カリスマックス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ホテルパシフィック",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "マツケンサンバII",
         "confidence": "hint",
         "basis": "current_observed",
@@ -3552,6 +3576,12 @@
       },
       {
         "name": "世界でいちばん熱い夏",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
@@ -3587,6 +3617,12 @@
         "basis_label": "実測"
       },
       {
+        "name": "恋愛レボリューション21",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
         "basis": "current_observed",
@@ -3600,6 +3636,12 @@
       },
       {
         "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "盆ギリ恋歌",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
