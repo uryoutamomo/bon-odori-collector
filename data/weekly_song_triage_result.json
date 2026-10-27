@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 8,
-  "direct_count": 7,
-  "created_count": 4,
+  "song_candidate_count": 13,
+  "direct_count": 9,
+  "created_count": 6,
   "updated_count": 3,
-  "rejected_noise_count": 1,
-  "review_count": 0,
+  "rejected_noise_count": 3,
+  "review_count": 1,
   "created": [
     {
       "song_name": "べったら音頭",
@@ -35,6 +35,22 @@
     {
       "song_name": "港北音頭",
       "source_term": "港北音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "女将no郡上おどり",
+      "source_term": "女将no郡上おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "女将の郡上おどり",
+      "source_term": "女将の郡上おどり",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -71,7 +87,22 @@
     {
       "term": "揃いの踊り",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "での演奏・踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "第3回女将no郡上おどり",
+      "reason": "曲名としての形が弱い"
     }
   ],
-  "review": []
+  "review": [
+    {
+      "term": "郡上おどり",
+      "evidence_count": 4,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://www.youtube.com/watch?v=Hs132tuSZOk"
+    }
+  ]
 }

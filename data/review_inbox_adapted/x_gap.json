@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "1615273d43c883a0e8608b00b5e808a2a251abc38669fa51f1c9cc7b3ee68b11",
-  "input_size_bytes": 2215871,
+  "input_sha256": "bb7dfc00b76406ba5e8c8c072ab6b0cd5f198189f92c25d2d36845e9864da127",
+  "input_size_bytes": 2216212,
   "item_count": 5,
   "items": [
     {
@@ -11,29 +11,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "こんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがござい",
+      "title": "8/22(土)開催の「【女性主催】！新宿中央公園　夏まつり～盆踊り♪30代から50代歓迎♪」、ラスト1枠が空いています。心地よい輪に入っていただけるのをお待ちし",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2090307004422369463",
-      "source_url": "https://x.com/cnnn_ryosenji/status/2090307004422369463",
+      "source_key": "x:2090583854432272854",
+      "source_url": "https://x.com/tunagate/status/2090583854432272854",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_6ca5a098a6ebe65d",
-        "source_key": "x:2090307004422369463",
+        "candidate_id": "xgap_6270adefa1c3f73f",
+        "source_key": "x:2090583854432272854",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/cnnn_ryosenji/status/2090307004422369463",
-        "source_text": "\nこんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがございます。\n\nその後は、盆踊りと打上花火🎇も例年通り行われます。\nよろしくお願い致します😌\n\n #霊山寺",
-        "source_author": "@cnnn_ryosenji",
+        "source_url": "https://x.com/tunagate/status/2090583854432272854",
+        "source_text": "\n8/22(土)開催の「【女性主催】！新宿中央公園　夏まつり～盆踊り♪30代から50代歓迎♪」、ラスト1枠が空いています。心地よい輪に入っていただけるのをお待ちしています🌱\nhttps://t.co/XyG1eu8OIu\n#つなげーと #趣味活 https://t.co/wf7Kp1CLqG",
+        "source_author": "@tunagate",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@cnnn_ryosenji",
-          "account_name": "霊山寺公式 ちんねんさん",
+          "handle": "@tunagate",
+          "account_name": "つなげーと公式",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -42,7 +42,85 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月20日",
+          "8/22"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@tunagate",
+          "name": "つなげーと公式｜趣味友アプリ",
+          "profile_description": "趣味をきっかけに人が会い、\n結果として友達が生まれる場をつくっています。\n\n週末・余暇の趣味イベントでつながる\n国内No.1の友達作りプラットフォーム「つなげーと」公式。",
+          "title": "",
+          "text": "8/22(土)開催の「【女性主催】！新宿中央公園　夏まつり～盆踊り♪30代から50代歓迎♪」、ラスト1枠が空いています。心地よい輪に入っていただけるのをお待ちしています🌱\nhttps://t.co/XyG1eu8OIu\n#つなげーと #趣味活 https://t.co/wf7Kp1CLqG",
+          "url": "https://x.com/tunagate/status/2090583854432272854",
+          "date": "2026-08-20T23:36:46+00:00",
+          "tweet_id": "2090583854432272854",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQM-7-SacAALbgK.png",
+            "https://t.co/wf7Kp1CLqG",
+            "pic.x.com/wf7Kp1CLqG"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/tunagate/status/2090583854432272854"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQM-7-SacAALbgK.png",
+          "https://t.co/wf7Kp1CLqG",
+          "pic.x.com/wf7Kp1CLqG"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_b8f699d1ef67caaa"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "『第45回ひびき連合会大盆踊り大会』開催‼️鳴り物演奏や跳ね込み太鼓、早打ち太鼓など披露！出店や屋台もありますよ！\n\n日にち：2026年8月21日（金）、\n　　",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090586832287490225",
+      "source_url": "https://x.com/choshi_flat_com/status/2090586832287490225",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_348e2d2bfd6488b9",
+        "source_key": "x:2090586832287490225",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/choshi_flat_com/status/2090586832287490225",
+        "source_text": "\n『第45回ひびき連合会大盆踊り大会』開催‼️鳴り物演奏や跳ね込み太鼓、早打ち太鼓など披露！出店や屋台もありますよ！\n\n日にち：2026年8月21日（金）、\n　　　　8月22日（土）2日間\n時間：18:00〜20:30\n場所：イオンモール銚子　海側駐車場\n\n※雨天時は「いるかの広場」前にて鳴り物の演奏を行います。 https://t.co/fjp2smIHLb",
+        "source_author": "@choshi_flat_com",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@choshi_flat_com",
+          "account_name": "銚子市観光協会【公式】",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8月21日",
           "8月22日"
         ],
         "observed_dates": [],
@@ -50,22 +128,265 @@
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@cnnn_ryosenji",
-          "name": "霊山寺公式 ちんねんさん",
-          "profile_description": "大和國登美山鼻高霊山寺公式アカウント。\nSNS広報X担当ちんねんさんがお寺の色々な情報を発信します。\n #霊山寺   #ちんねんさんの気まぐれ写真館   #寺cafe花美津姫  #薬師湯殿  #霊山寺霊園",
+          "account": "@choshi_flat_com",
+          "name": "銚子市観光協会【公式】",
+          "profile_description": "銚子駅中にある観光案内所から、銚子の観光情報や、地球の丸く見える丘展望館、銚子ポートタワーの情報を発信します。銚子市観光協会のオンラインショップ、【おちょうしもん】の商品も紹介してまいります。銚子にお越しの際はお気軽にお立ち寄りくださいね(*･ω･)",
           "title": "",
-          "text": "こんにちは☀️\n\n本日は8月20日木曜日です。\n寺cafe花美津姫☕、薬師湯殿♨️共に営業中です。\n\n明後日8月22日土曜日は、\n「地蔵盆法会」@霊園\nがございます。\n\nその後は、盆踊りと打上花火🎇も例年通り行われます。\nよろしくお願い致します😌\n\n #霊山寺",
-          "url": "https://x.com/cnnn_ryosenji/status/2090307004422369463",
-          "date": "2026-08-20T05:16:40+00:00",
-          "tweet_id": "2090307004422369463",
+          "text": "『第45回ひびき連合会大盆踊り大会』開催‼️鳴り物演奏や跳ね込み太鼓、早打ち太鼓など披露！出店や屋台もありますよ！\n\n日にち：2026年8月21日（金）、\n　　　　8月22日（土）2日間\n時間：18:00〜20:30\n場所：イオンモール銚子　海側駐車場\n\n※雨天時は「いるかの広場」前にて鳴り物の演奏を行います。 https://t.co/fjp2smIHLb",
+          "url": "https://x.com/choshi_flat_com/status/2090586832287490225",
+          "date": "2026-08-20T23:48:36+00:00",
+          "tweet_id": "2090586832287490225",
           "tags": [
             "🟡関心",
-            "q-base"
+            "q-future-schedule"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQNBo8SaEAAYAsh.jpg",
+            "https://t.co/fjp2smIHLb",
+            "pic.x.com/fjp2smIHLb",
+            "https://pbs.twimg.com/media/HQNBo8HbwAAqw5K.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/choshi_flat_com/status/2090586832287490225"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQNBo8SaEAAYAsh.jpg",
+          "https://t.co/fjp2smIHLb",
+          "pic.x.com/fjp2smIHLb",
+          "https://pbs.twimg.com/media/HQNBo8HbwAAqw5K.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_1fc6f0e4143326e2"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "『ラストサマーオープニングステージ』ひびき連合会大盆踊り大会2日目にて、ステージライブを開催✨「元•銚子元気娘。」の「ちーね」が登場しMC担当致して、会場を盛り",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090588825009762579",
+      "source_url": "https://x.com/choshi_flat_com/status/2090588825009762579",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_c172dc0333ad7811",
+        "source_key": "x:2090588825009762579",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/choshi_flat_com/status/2090588825009762579",
+        "source_text": "\n『ラストサマーオープニングステージ』ひびき連合会大盆踊り大会2日目にて、ステージライブを開催✨「元•銚子元気娘。」の「ちーね」が登場しMC担当致して、会場を盛り上げます！\n\n日にち：2026年8月22日（土）\n時間：15:00〜17:30\n場所：イオンモール銚子 海側駐車場\n\n#銚子 https://t.co/uQ9ueb5NA6",
+        "source_author": "@choshi_flat_com",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@choshi_flat_com",
+          "account_name": "銚子市観光協会【公式】",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8月22日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@choshi_flat_com",
+          "name": "銚子市観光協会【公式】",
+          "profile_description": "銚子駅中にある観光案内所から、銚子の観光情報や、地球の丸く見える丘展望館、銚子ポートタワーの情報を発信します。銚子市観光協会のオンラインショップ、【おちょうしもん】の商品も紹介してまいります。銚子にお越しの際はお気軽にお立ち寄りくださいね(*･ω･)",
+          "title": "",
+          "text": "『ラストサマーオープニングステージ』ひびき連合会大盆踊り大会2日目にて、ステージライブを開催✨「元•銚子元気娘。」の「ちーね」が登場しMC担当致して、会場を盛り上げます！\n\n日にち：2026年8月22日（土）\n時間：15:00〜17:30\n場所：イオンモール銚子 海側駐車場\n\n#銚子 https://t.co/uQ9ueb5NA6",
+          "url": "https://x.com/choshi_flat_com/status/2090588825009762579",
+          "date": "2026-08-20T23:56:31+00:00",
+          "tweet_id": "2090588825009762579",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQNDdJcbcAAokfa.jpg",
+            "https://t.co/uQ9ueb5NA6",
+            "pic.x.com/uQ9ueb5NA6"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/choshi_flat_com/status/2090588825009762579"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQNDdJcbcAAokfa.jpg",
+          "https://t.co/uQ9ueb5NA6",
+          "pic.x.com/uQ9ueb5NA6"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_20e944adecb7047e"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【豊崎東納涼盆踊り・カーニバル】\n8/8（土）豊崎東小学校にて、夏の恒例行事である盆踊り・カーニバルが開催されました。ゲームコーナーや食べ物屋台がずらりと並び、",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090609445546115079",
+      "source_url": "https://x.com/kitaku_osaka/status/2090609445546115079",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_88c6c63419e9476b",
+        "source_key": "x:2090609445546115079",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/kitaku_osaka/status/2090609445546115079",
+        "source_text": "\n【豊崎東納涼盆踊り・カーニバル】\n8/8（土）豊崎東小学校にて、夏の恒例行事である盆踊り・カーニバルが開催されました。ゲームコーナーや食べ物屋台がずらりと並び、楽しい催し満載！昨年は雨によって途中打ち切りとなった盆踊りでしたが、今年は予定どおり行われ最後までにぎわったようです。 https://t.co/VyrAuTS4GB",
+        "source_author": "@kitaku_osaka",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@kitaku_osaka",
+          "account_name": "大阪市北区役所",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8/8"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@kitaku_osaka",
+          "name": "大阪市北区役所",
+          "profile_description": "大阪市北区役所の公式Xページです。北区のイベント・行事、区政の情報を発信します。",
+          "title": "",
+          "text": "【豊崎東納涼盆踊り・カーニバル】\n8/8（土）豊崎東小学校にて、夏の恒例行事である盆踊り・カーニバルが開催されました。ゲームコーナーや食べ物屋台がずらりと並び、楽しい催し満載！昨年は雨によって途中打ち切りとなった盆踊りでしたが、今年は予定どおり行われ最後までにぎわったようです。 https://t.co/VyrAuTS4GB",
+          "url": "https://x.com/kitaku_osaka/status/2090609445546115079",
+          "date": "2026-08-21T01:18:28+00:00",
+          "tweet_id": "2090609445546115079",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQNWABiaUAAVfI_.jpg",
+            "https://t.co/VyrAuTS4GB",
+            "pic.x.com/VyrAuTS4GB",
+            "https://pbs.twimg.com/media/HQNWDXzaoAAsHdk.jpg",
+            "https://pbs.twimg.com/media/HQNWIJtbEAANMAJ.jpg",
+            "https://pbs.twimg.com/media/HQNWL0ibYAAxqMU.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/kitaku_osaka/status/2090609445546115079"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQNWABiaUAAVfI_.jpg",
+          "https://t.co/VyrAuTS4GB",
+          "pic.x.com/VyrAuTS4GB",
+          "https://pbs.twimg.com/media/HQNWDXzaoAAsHdk.jpg",
+          "https://pbs.twimg.com/media/HQNWIJtbEAANMAJ.jpg",
+          "https://pbs.twimg.com/media/HQNWL0ibYAAxqMU.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_56366e4558ba143a"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【地域のイベント紹介】いよいよ地域の夏祭りも終盤🌻\n明日８月22日（土）17時から苅田小学校で苅田地域の盆踊りが開催されます。夏の夜、地域のみなさんと一緒に踊っ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090627120657793417",
+      "source_url": "https://x.com/sumiyoshi_iris/status/2090627120657793417",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_194f3657ade1ea3c",
+        "source_key": "x:2090627120657793417",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/sumiyoshi_iris/status/2090627120657793417",
+        "source_text": "\n【地域のイベント紹介】いよいよ地域の夏祭りも終盤🌻\n明日８月22日（土）17時から苅田小学校で苅田地域の盆踊りが開催されます。夏の夜、地域のみなさんと一緒に踊って、笑って、楽しいひとときを過ごしませんか？最後まで住吉の夏を楽しみましょう🎐",
+        "source_author": "@sumiyoshi_iris",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@sumiyoshi_iris",
+          "account_name": "大阪市住吉区役所",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "８月22日",
+          "17時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@sumiyoshi_iris",
+          "name": "大阪市住吉区役所",
+          "profile_description": "こんにちは。大阪市住吉区役所公式アカウントです。住吉区のイベント情報、健診情報、防災・防犯情報及び住吉区内の地域活動情報などをお知らせします。アカウント運用方針はこちらhttp://t.co/U3IcU8o3",
+          "title": "",
+          "text": "【地域のイベント紹介】いよいよ地域の夏祭りも終盤🌻\n明日８月22日（土）17時から苅田小学校で苅田地域の盆踊りが開催されます。夏の夜、地域のみなさんと一緒に踊って、笑って、楽しいひとときを過ごしませんか？最後まで住吉の夏を楽しみましょう🎐",
+          "url": "https://x.com/sumiyoshi_iris/status/2090627120657793417",
+          "date": "2026-08-21T02:28:42+00:00",
+          "tweet_id": "2090627120657793417",
+          "tags": [
+            "🟡関心",
+            "q-report"
           ],
           "critique_post": false
         },
         "source_urls": [
-          "https://x.com/cnnn_ryosenji/status/2090307004422369463"
+          "https://x.com/sumiyoshi_iris/status/2090627120657793417"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -73,335 +394,7 @@
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_db61c5499f74c943"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090344347850191120",
-      "source_url": "https://x.com/adachi_city/status/2090344347850191120",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_31c104122ea1216d",
-        "source_key": "x:2090344347850191120",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/adachi_city/status/2090344347850191120",
-        "source_text": "\n花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 #盆踊り https://t.co/Z5yqqsfN03",
-        "source_author": "@adachi_city",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@adachi_city",
-          "account_name": "足立区役所",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "８月２１日",
-          "１９時",
-          "１８時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "一ツ家二丁目こどもの広場",
-          "region_hint": "足立区",
-          "address": "足立区一ツ家2-21",
-          "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html"
-        },
-        "voice": {
-          "source": "x",
-          "account": "@adachi_city",
-          "name": "足立区役所",
-          "profile_description": "足立区の公式アカウントです。\n当アカウントは情報発信専用につきフォローやリプライは行いません。足立区に対するご意見等は区のホームページより報道広報課にお寄せください。",
-          "title": "",
-          "text": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 #盆踊り https://t.co/Z5yqqsfN03",
-          "url": "https://x.com/adachi_city/status/2090344347850191120",
-          "date": "2026-08-20T07:45:03+00:00",
-          "tweet_id": "2090344347850191120",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQJlGoMa0AADGvj.jpg",
-            "https://t.co/Z5yqqsfN03",
-            "pic.x.com/Z5yqqsfN03"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/adachi_city/status/2090344347850191120"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQJlGoMa0AADGvj.jpg",
-          "https://t.co/Z5yqqsfN03",
-          "pic.x.com/Z5yqqsfN03"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_98edc9e635249bbf"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "『かつらぎ夏まつり』\n来る8月22日（土）に鎮座地かつらぎ町の夏をいろどる「かつらぎ夏まつり」が開催されます。\n\n会場となるのは、平和祈念の巨大なお地蔵様がそび",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090403901115871493",
-      "source_url": "https://x.com/niutsuhimejinja/status/2090403901115871493",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_e4f79290cd61c732",
-        "source_key": "x:2090403901115871493",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/niutsuhimejinja/status/2090403901115871493",
-        "source_text": "\n『かつらぎ夏まつり』\n来る8月22日（土）に鎮座地かつらぎ町の夏をいろどる「かつらぎ夏まつり」が開催されます。\n\n会場となるのは、平和祈念の巨大なお地蔵様がそびえる「かつらぎ公園グラウンド」。JR和歌山線の妙寺駅より徒歩4分の、紀ノ川に面したグラウンドです。\n\n午後5時よりダンスや夜店に盆踊り、午後8時からは花火の打ち上げも盛大に行われます。\n\nなお、駐車場はすぐに満車となり例年混乱が生じるため、電車や徒歩での来場をお願いしますとの事です。（帰宅時間帯に和歌山線の臨時列車が運行されます） \n\n川の向こう岸は、当社の御祭神・丹生都比売大神が高天原より降臨した地と伝わる丹生酒殿神社。大神様も参詣道・三谷坂を下りて見物に行かれるかもしれません。\n\n丹生都比売大神と平和祈念のお地蔵様が見守るかつらぎの夏まつり。是非ともお越しください。\n※雨天時は２3日（日）に順延されます。",
-        "source_author": "@niutsuhimejinja",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@niutsuhimejinja",
-          "account_name": "【世界遺産】丹生都比売神社",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8月22日",
-          "5時",
-          "8時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@niutsuhimejinja",
-          "name": "【世界遺産】丹生都比売神社",
-          "profile_description": "世界遺産登録の丹生都比売神社の公式アカウントです。あらゆる災厄を祓い、弘法大師へ高野山を授けた丹の女神・ニウツヒメをお祀りします。",
-          "title": "",
-          "text": "『かつらぎ夏まつり』\n来る8月22日（土）に鎮座地かつらぎ町の夏をいろどる「かつらぎ夏まつり」が開催されます。\n\n会場となるのは、平和祈念の巨大なお地蔵様がそびえる「かつらぎ公園グラウンド」。JR和歌山線の妙寺駅より徒歩4分の、紀ノ川に面したグラウンドです。\n\n午後5時よりダンスや夜店に盆踊り、午後8時からは花火の打ち上げも盛大に行われます。\n\nなお、駐車場はすぐに満車となり例年混乱が生じるため、電車や徒歩での来場をお願いしますとの事です。（帰宅時間帯に和歌山線の臨時列車が運行されます） \n\n川の向こう岸は、当社の御祭神・丹生都比売大神が高天原より降臨した地と伝わる丹生酒殿神社。大神様も参詣道・三谷坂を下りて見物に行かれるかもしれません。\n\n丹生都比売大神と平和祈念のお地蔵様が見守るかつらぎの夏まつり。是非ともお越しください。\n※雨天時は２3日（日）に順延されます。",
-          "url": "https://x.com/niutsuhimejinja/status/2090403901115871493",
-          "date": "2026-08-20T11:41:42+00:00",
-          "tweet_id": "2090403901115871493",
-          "tags": [
-            "🟡関心",
-            "q-cancel-change"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQKbRKXbIAEUP-M.jpg",
-            "https://t.co/HZDsv4aW3z",
-            "pic.x.com/HZDsv4aW3z"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/niutsuhimejinja/status/2090403901115871493"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQKbRKXbIAEUP-M.jpg",
-          "https://t.co/HZDsv4aW3z",
-          "pic.x.com/HZDsv4aW3z"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_744fa9244defed43"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "2026習志野台８丁目夏祭り納涼盆踊り会場の設営作業が８月20日、始まりました。会場の習志野台８丁目公園に櫓（やぐら）と、たこ焼きなど露店の設営が行われました（",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090447215731044706",
-      "source_url": "https://x.com/8_chokai/status/2090447215731044706",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_750c50ab44a24d49",
-        "source_key": "x:2090447215731044706",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/8_chokai/status/2090447215731044706",
-        "source_text": "\n2026習志野台８丁目夏祭り納涼盆踊り会場の設営作業が８月20日、始まりました。会場の習志野台８丁目公園に櫓（やぐら）と、たこ焼きなど露店の設営が行われました（動画）。設営の完了は22日正午。夏祭りの開会は同日午後６時、閉会は23日午後８時30分。 https://t.co/REIPJNkoY6",
-        "source_author": "@8_chokai",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@8_chokai",
-          "account_name": "習志野台８丁目町会",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "８月20日",
-          "６時",
-          "８時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@8_chokai",
-          "name": "習志野台８丁目町会",
-          "profile_description": "千葉県船橋市「習志野台８丁目町会」は2026年4月19日現在1075会員・事業者)で構成している地縁法人認可住民自治組織です。町会は協力し合って「近所づきあいを力にして安全で安心して暮らせるまちづくり」に取り組んでいます。習志野台８丁目と近隣のようす、住民自治に関わる情報を伝えます。",
-          "title": "",
-          "text": "2026習志野台８丁目夏祭り納涼盆踊り会場の設営作業が８月20日、始まりました。会場の習志野台８丁目公園に櫓（やぐら）と、たこ焼きなど露店の設営が行われました（動画）。設営の完了は22日正午。夏祭りの開会は同日午後６時、閉会は23日午後８時30分。 https://t.co/REIPJNkoY6",
-          "url": "https://x.com/8_chokai/status/2090447215731044706",
-          "date": "2026-08-20T14:33:49+00:00",
-          "tweet_id": "2090447215731044706",
-          "tags": [
-            "🟢一次レポ",
-            "q-poster-flyer"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/amplify_video_thumb/2090447177172815872/img/jYdaA-ISO-vJ9kmz.jpg",
-            "https://t.co/REIPJNkoY6",
-            "pic.x.com/REIPJNkoY6"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/8_chokai/status/2090447215731044706"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/amplify_video_thumb/2090447177172815872/img/jYdaA-ISO-vJ9kmz.jpg",
-          "https://t.co/REIPJNkoY6",
-          "pic.x.com/REIPJNkoY6"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_c0207b970bc04245"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "今朝は浦和駅東口にて駅頭活動。4時50分から5時50分まで。\n\nその後、浦和区倫理法人会モーニングセミナーへ。8月末の年度締めを前に、会員スピーチリレーでした。",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090568056930218325",
-      "source_url": "https://x.com/hideki2040/status/2090568056930218325",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_d4c955023afe4734",
-        "source_key": "x:2090568056930218325",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/hideki2040/status/2090568056930218325",
-        "source_text": "\n今朝は浦和駅東口にて駅頭活動。4時50分から5時50分まで。\n\nその後、浦和区倫理法人会モーニングセミナーへ。8月末の年度締めを前に、会員スピーチリレーでした。\n\nこれから明日開催の東浦和7丁目自治会盆踊りの設営をお手伝いします。\n\n今日もコツコツと。\n\n#社会的弱者のための政治を\n#堤ひでき https://t.co/SyAzR0dGFa",
-        "source_author": "@hideki2040",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@hideki2040",
-          "account_name": "堤 ひでき(日出喜) さいたま市議会議員(緑区選出)立憲民主党",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "4時",
-          "5時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@hideki2040",
-          "name": "堤 ひでき(日出喜) さいたま市議会議員(緑区選出)立憲民主党",
-          "profile_description": "◼️2007年駅頭活動スタート(通算13年0ヶ月)◼2度の落選を経て2023年初当選■大牧小学校／東浦和中学校 卒業 ■ミシガン大学 政治学部／経済学部 卒業 ■資格…防災士、宅地建物取引士 ■元衆議院議員武正公一秘書 ■さいたま市消防団 尾間木第2分団 ■浦和東交通安全協会 尾間木支部■浅間神社氏子■中尾ライガース",
-          "title": "",
-          "text": "今朝は浦和駅東口にて駅頭活動。4時50分から5時50分まで。\n\nその後、浦和区倫理法人会モーニングセミナーへ。8月末の年度締めを前に、会員スピーチリレーでした。\n\nこれから明日開催の東浦和7丁目自治会盆踊りの設営をお手伝いします。\n\n今日もコツコツと。\n\n#社会的弱者のための政治を\n#堤ひでき https://t.co/SyAzR0dGFa",
-          "url": "https://x.com/hideki2040/status/2090568056930218325",
-          "date": "2026-08-20T22:34:00+00:00",
-          "tweet_id": "2090568056930218325",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQMwjsra0AAPWrM.jpg",
-            "https://t.co/SyAzR0dGFa",
-            "pic.x.com/SyAzR0dGFa",
-            "https://pbs.twimg.com/media/HQMwjsjacAABC7j.jpg",
-            "https://pbs.twimg.com/media/HQMwjskaYAA4Ptc.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/hideki2040/status/2090568056930218325"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQMwjsra0AAPWrM.jpg",
-          "https://t.co/SyAzR0dGFa",
-          "pic.x.com/SyAzR0dGFa",
-          "https://pbs.twimg.com/media/HQMwjsjacAABC7j.jpg",
-          "https://pbs.twimg.com/media/HQMwjskaYAA4Ptc.jpg"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_2c880219d97b4bda"
+      "inbox_id": "inbox_beb3b1bbfcecdcb4"
     }
   ],
   "selection": {
@@ -409,11 +402,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2090307004422369463",
-      "x:2090344347850191120",
-      "x:2090403901115871493",
-      "x:2090447215731044706",
-      "x:2090568056930218325"
+      "x:2090583854432272854",
+      "x:2090586832287490225",
+      "x:2090588825009762579",
+      "x:2090609445546115079",
+      "x:2090627120657793417"
     ]
   },
   "write_mode": "snapshot_only_default_off",

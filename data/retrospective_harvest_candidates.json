@@ -1,20 +1,20 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-10-26T13:11:06.916283+00:00",
+  "generated_at": "2026-10-27T12:16:20.340930+00:00",
   "source": "data/voices.json",
-  "voice_count": 45627,
-  "classified_event_evidence_count": 11171,
-  "candidate_count": 9487,
+  "voice_count": 45639,
+  "classified_event_evidence_count": 11179,
+  "candidate_count": 9493,
   "counts": {
     "by_kind": {
-      "event": 5225,
-      "song": 2818,
+      "event": 5226,
+      "song": 2823,
       "venue": 1444
     },
     "by_tier": {
       "hold": 2359,
-      "promote": 893,
-      "review": 6235
+      "promote": 898,
+      "review": 6236
     },
     "suppressed_event_hint_count": 1092,
     "venue_month_grouped_count": 1514
@@ -52010,10 +52010,44 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 20,
+      "evidence_count": 21,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:dcf7527444dcc4b3d2663e05e2b3143718cbc8156d06f2018f5823a0eb60b609",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=7Oj6Og8_Lpc",
+          "text": "2026年10月9日に\n東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。\n\n秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！\n\n【開催情報】\n ・イベント名：下町盆踊りフェス\n ・開催日：2026年10月9日 \n・会場：上野恩賜公園（東京都台東区） \n\n◆チャンネル登録・高評価よろしくお願いいたします！ \n皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。\n\n#盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori \n\n下町盆踊りフェス\n１東京音頭　https://youtu.be/0cdzD9xAmWA\n２マツケンサンバⅡ　https://youtu.be/BeND29eEKGs\n３炭坑節　https://youtu.be/rEBP9mMIXF4\n４YMCA　https://youtu.be/yM5FdyULscw\n５あなたとトゥラッタッタ♪　https://youtu.be/yMDFoujd7Ug\n６世界でいちばん熱い夏　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T11:00:39+00:00",
+          "observed_at": "2026-10-27T11:00:39+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "下町盆踊り",
+          "normalized_event": "下町",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:999ce57303b04e849009623a29e3d3d6651dd7b4273d1529b84c966434a84e1b",
           "tweet_id": "",
@@ -56553,10 +56587,82 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 20,
+      "evidence_count": 22,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:689d68b77aa9f8ffb4de34f55e6e15807909509864ebf93560588c2ea062aae1",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=cq2tK8RLkFI",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T12:00:03+00:00",
+          "observed_at": "2026-10-27T12:00:03+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:ca6993ddd5f6a25ce7bccd1a77bc870636f035a216708476e15ee6424da1fa62",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fEq77fWvzRg",
+          "text": "2026年10月20日、\n日本橋本町・宝田恵比寿神社周辺で開催された\n「日本橋べったら市」にて行われた\n「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。\n\n活気あふれるべったら市の賑わいの中、\n響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！\n\n【開催日】2026年10月20日\n【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区）\n【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」\n\n--------------------------------------------------\n\n和太鼓やお祭りの魅力をこれからも発信していきます！\n動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！\n\n#日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\nべったら市盆踊り\n１べったら音頭　https://youtu.be/a9-iTVPO_U4\n２小伝馬町音頭　https://youtu.be/xE51tkHf-30\n３日本橋音頭　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-26T13:00:12+00:00",
+          "observed_at": "2026-10-26T13:00:12+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "盆ダンス"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "normalized_event": "和太鼓やお",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
           "tweet_id": "",
@@ -62598,10 +62704,45 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 14,
+      "evidence_count": 15,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:f9c0119373b30a2b82ec43a2ec3490bd202048bbafe06e1e3536b007d156e532",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=oEomyFd7OAs",
+          "text": "2026年10月3日に\n群馬県太田市の「太田強戸スマートIC入口特設会場」で開催された\n【強戸のまつり】での盆踊りの様子です！\n\n会場が一体となって盛り上がった活気あふれるお祭りの熱気をぜひお楽しみください。\n\n【開催情報】 \n・イベント名：強戸のまつり \n・開催日：2026年10月3日 \n・開催場所：群馬県太田市 太田強戸スマートIC入口特設会場\n\n\n動画への「高評価」や「コメント」、チャンネル登録をしていただけると励みになります！ \n感想や「この曲が好き！」などのコメントもお待ちしております。\n\n#強戸のまつり #太田市 #盆踊り #和太鼓 #お祭り #群馬県\n\n\n\n第1回「強戸の祭り」\n１Bling-Bang-Bang-Born　https://youtu.be/YzrYFpD8rTk\n２上毛かるたの唄　https://youtu.be/37F_2YPr-1o\n３マツケンサンバⅡ　https://youtu.be/t8a_g3GNHeY\n４一休さん　https://youtu.be/h8TyB0Lh1Pk\n５東京音頭　https://youtu.be/SOptf-XquyE\n６B",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T11:30:29+00:00",
+          "observed_at": "2026-10-27T11:30:29+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "強戸のまつり",
+          "normalized_event": "強戸の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:30b9b95306770237500092e0706b9e4e806c9766b68bd13e3790e3fab78d87f9",
           "tweet_id": "",
@@ -67082,6 +67223,163 @@
           "estimated_venue": "",
           "time_hints": [
             "2026年8月24日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:a54de629314ac17316b44c9fcd8cb872c1c0fe82d44ad62ea15cc337217b1799",
+      "display_name": "日本の祭り",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "2026年10月25日",
+      "year": 2026,
+      "hashtags": [
+        "古調かわさき",
+        "郡上おどり",
+        "女将no郡上おどりdeマルシェ",
+        "踊月夜",
+        "雅"
+      ],
+      "score": 40,
+      "tier": "review",
+      "evidence_count": 4,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4efca759ffd37a31117292266df1235a804ebed591526b2949b9034c24db18cb",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Hs132tuSZOk",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された\n『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。\n\n「踊月夜」と「雅」による息の合った華やかなステージと、\n秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。\n\n\n【イベント概要】\n ・イベント名：第3回女将no郡上おどりdeマルシェ \n・出演：踊月夜 / 雅 / ジュニアクラブ\n・開催日：2026年10月25日 \n・開催地：岐阜県郡上八幡\n\nチャンネル登録・高評価もよろしくお願いいたします！\n\n#古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り\n\n\n女将の郡上おどりマルシェ\n１古調かわさき　https://youtu.be/0srFYCdkuiA\n２かわさき　https://youtu.be/_ZUmbl3HWRI\n３三百　https://youtu.be/DlGv6Vav99s\n４源助さん　https://youtu.be/Hs132tuSZOk\n５神代　https://youtu.be/thrhneF71iM",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T09:00:20+00:00",
+          "observed_at": "2026-10-27T09:00:20+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:fb45610a30e0296a8a5327010f6d280232cba2b13ccd766da622801e54246083",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DlGv6Vav99s",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された\n『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。\n\n「踊月夜」と「雅」による息の合った華やかなステージと、\n秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。\n\n\n【イベント概要】\n ・イベント名：第3回女将no郡上おどりdeマルシェ \n・出演：踊月夜 / 雅 / ジュニアクラブ\n・開催日：2026年10月25日 \n・開催地：岐阜県郡上八幡\n\nチャンネル登録・高評価もよろしくお願いいたします！\n\n#古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り\n\n\n女将の郡上おどりマルシェ\n１古調かわさき　https://youtu.be/0srFYCdkuiA\n２かわさき　https://youtu.be/_ZUmbl3HWRI\n３三百　https://youtu.be/DlGv6Vav99s\n４源助さん　https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T07:00:30+00:00",
+          "observed_at": "2026-10-27T07:00:30+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:936fb31797687e90a6a7b72b688aba68f9cffc3dbae8fb754d473b50c8081b15",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_ZUmbl3HWRI",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された\n『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。\n\n「踊月夜」と「雅」による息の合った華やかなステージと、\n秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。\n\n\n【イベント概要】\n ・イベント名：第3回女将no郡上おどりdeマルシェ \n・出演：踊月夜 / 雅 / ジュニアクラブ\n・開催日：2026年10月25日 \n・開催地：岐阜県郡上八幡\n\nチャンネル登録・高評価もよろしくお願いいたします！\n\n#古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り\n\n\n女将の郡上おどりマルシェ\n１古調かわさき　https://youtu.be/0srFYCdkuiA\n２かわさき　https://youtu.be/_ZUmbl3HWRI\n３三百　https://youtu.be/DlGv6Vav99s\n４源助さん　https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T05:00:23+00:00",
+          "observed_at": "2026-10-27T05:00:23+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:f2d3ec0e3eeeeee0d9843ae42e4938f1910ea6d06b5d5fccd9ee34295c5123a5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0srFYCdkuiA",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された\n『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。\n\n「踊月夜」と「雅」による息の合った華やかなステージと、\n秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。\n\n\n【イベント概要】\n ・イベント名：第3回女将no郡上おどりdeマルシェ \n・出演：踊月夜 / 雅 / ジュニアクラブ\n・開催日：2026年10月25日 \n・開催地：岐阜県郡上八幡\n\nチャンネル登録・高評価もよろしくお願いいたします！\n\n#古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り\n\n\n女将の郡上おどりマルシェ\n１古調かわさき　https://youtu.be/0srFYCdkuiA\n２かわさき　https://youtu.be/_ZUmbl3HWRI\n３三百　https://youtu.be/DlGv6Vav99s\n４源助さん　https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-10-27T03:00:06+00:00",
+          "observed_at": "2026-10-27T03:00:06+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
           ],
           "year_signals": [],
           "year": 2026
@@ -346806,6 +347104,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:689d68b77aa9f8ffb4de34f55e6e15807909509864ebf93560588c2ea062aae1",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=cq2tK8RLkFI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T12:00:03+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:ca6993ddd5f6a25ce7bccd1a77bc870636f035a216708476e15ee6424da1fa62",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fEq77fWvzRg",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T13:00:12+00:00",
+          "score": 17,
+          "song_name": "べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
@@ -347190,7 +347526,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 20,
+      "evidence_count": 22,
       "speaker_count": 1
     },
     {
@@ -381225,6 +381561,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:689d68b77aa9f8ffb4de34f55e6e15807909509864ebf93560588c2ea062aae1",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=cq2tK8RLkFI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T12:00:03+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:ca6993ddd5f6a25ce7bccd1a77bc870636f035a216708476e15ee6424da1fa62",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fEq77fWvzRg",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T13:00:12+00:00",
+          "score": 17,
+          "song_name": "宝田恵比寿べったら音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
@@ -381609,7 +381983,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 20,
+      "evidence_count": 22,
       "speaker_count": 1
     },
     {
@@ -387911,6 +388285,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:689d68b77aa9f8ffb4de34f55e6e15807909509864ebf93560588c2ea062aae1",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=cq2tK8RLkFI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T12:00:03+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:ca6993ddd5f6a25ce7bccd1a77bc870636f035a216708476e15ee6424da1fa62",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fEq77fWvzRg",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T13:00:12+00:00",
+          "score": 17,
+          "song_name": "揃いの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
@@ -388295,7 +388707,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 20,
+      "evidence_count": 22,
       "speaker_count": 1
     },
     {
@@ -414763,6 +415175,26 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:dcf7527444dcc4b3d2663e05e2b3143718cbc8156d06f2018f5823a0eb60b609",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=7Oj6Og8_Lpc",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T11:00:39+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:999ce57303b04e849009623a29e3d3d6651dd7b4273d1529b84c966434a84e1b",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
@@ -415168,7 +415600,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 20,
+      "evidence_count": 21,
       "speaker_count": 1
     },
     {
@@ -487516,6 +487948,104 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:a7b12c9dd91c776dc51fb27bf5f33db1e37efab131715635c2080d24e522ade0",
+      "display_name": "での演奏・踊り",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4efca759ffd37a31117292266df1235a804ebed591526b2949b9034c24db18cb",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Hs132tuSZOk",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T09:00:20+00:00",
+          "score": 15,
+          "song_name": "での演奏・踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:fb45610a30e0296a8a5327010f6d280232cba2b13ccd766da622801e54246083",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DlGv6Vav99s",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T07:00:30+00:00",
+          "score": 15,
+          "song_name": "での演奏・踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:936fb31797687e90a6a7b72b688aba68f9cffc3dbae8fb754d473b50c8081b15",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_ZUmbl3HWRI",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T05:00:23+00:00",
+          "score": 15,
+          "song_name": "での演奏・踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f2d3ec0e3eeeeee0d9843ae42e4938f1910ea6d06b5d5fccd9ee34295c5123a5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0srFYCdkuiA",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T03:00:06+00:00",
+          "score": 15,
+          "song_name": "での演奏・踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 4,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:3ccd620f775f0dd8a88978dd0977ef43be2e06eec1aa9b8924739f3ababeb72c",
       "display_name": "でも踊り",
       "normalized_event": "",
@@ -497824,6 +498354,202 @@
       "suppressed_event_hints": [],
       "evidence_count": 2,
       "speaker_count": 2
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:e872d0a7b156eda68a73031dfec6935c42bf86895b1971ac45b23f0deb91077d",
+      "display_name": "女将no郡上おどり",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4efca759ffd37a31117292266df1235a804ebed591526b2949b9034c24db18cb",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Hs132tuSZOk",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T09:00:20+00:00",
+          "score": 15,
+          "song_name": "女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:fb45610a30e0296a8a5327010f6d280232cba2b13ccd766da622801e54246083",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DlGv6Vav99s",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T07:00:30+00:00",
+          "score": 15,
+          "song_name": "女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:936fb31797687e90a6a7b72b688aba68f9cffc3dbae8fb754d473b50c8081b15",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_ZUmbl3HWRI",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T05:00:23+00:00",
+          "score": 15,
+          "song_name": "女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f2d3ec0e3eeeeee0d9843ae42e4938f1910ea6d06b5d5fccd9ee34295c5123a5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0srFYCdkuiA",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T03:00:06+00:00",
+          "score": 15,
+          "song_name": "女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 4,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:dadd0d89d58cab1f7b82873f5ba80cd05295cbb7a4233e3bac0db21baf2082b6",
+      "display_name": "女将の郡上おどり",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4efca759ffd37a31117292266df1235a804ebed591526b2949b9034c24db18cb",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Hs132tuSZOk",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T09:00:20+00:00",
+          "score": 15,
+          "song_name": "女将の郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:fb45610a30e0296a8a5327010f6d280232cba2b13ccd766da622801e54246083",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DlGv6Vav99s",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T07:00:30+00:00",
+          "score": 15,
+          "song_name": "女将の郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:936fb31797687e90a6a7b72b688aba68f9cffc3dbae8fb754d473b50c8081b15",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_ZUmbl3HWRI",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T05:00:23+00:00",
+          "score": 15,
+          "song_name": "女将の郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f2d3ec0e3eeeeee0d9843ae42e4938f1910ea6d06b5d5fccd9ee34295c5123a5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0srFYCdkuiA",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T03:00:06+00:00",
+          "score": 15,
+          "song_name": "女将の郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 4,
+      "speaker_count": 1
     },
     {
       "kind": "song",
@@ -508387,6 +509113,104 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:4b96c7bb04e718b57e123916981974d8becb961651fc810db26d1f047a4d1b21",
+      "display_name": "第3回女将no郡上おどり",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4efca759ffd37a31117292266df1235a804ebed591526b2949b9034c24db18cb",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Hs132tuSZOk",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T09:00:20+00:00",
+          "score": 15,
+          "song_name": "第3回女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:fb45610a30e0296a8a5327010f6d280232cba2b13ccd766da622801e54246083",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DlGv6Vav99s",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T07:00:30+00:00",
+          "score": 15,
+          "song_name": "第3回女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:936fb31797687e90a6a7b72b688aba68f9cffc3dbae8fb754d473b50c8081b15",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_ZUmbl3HWRI",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T05:00:23+00:00",
+          "score": 15,
+          "song_name": "第3回女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f2d3ec0e3eeeeee0d9843ae42e4938f1910ea6d06b5d5fccd9ee34295c5123a5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0srFYCdkuiA",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T03:00:06+00:00",
+          "score": 15,
+          "song_name": "第3回女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 4,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:15427c3a9a9df2c45841681b59623cc37b42977ea947433a54698342a3e7c23f",
       "display_name": "第4回浅草阿波おどり",
       "normalized_event": "",
@@ -511069,6 +511893,109 @@
       "suppressed_event_hints": [],
       "evidence_count": 2,
       "speaker_count": 2
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:a72e744a57158d12a46b4b162c5cf2b96c4dff8b37bbdcfcbe3b5c2c3658d5eb",
+      "display_name": "郡上おどり",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:4efca759ffd37a31117292266df1235a804ebed591526b2949b9034c24db18cb",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Hs132tuSZOk",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T09:00:20+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:fb45610a30e0296a8a5327010f6d280232cba2b13ccd766da622801e54246083",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DlGv6Vav99s",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T07:00:30+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:936fb31797687e90a6a7b72b688aba68f9cffc3dbae8fb754d473b50c8081b15",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=_ZUmbl3HWRI",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T05:00:23+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f2d3ec0e3eeeeee0d9843ae42e4938f1910ea6d06b5d5fccd9ee34295c5123a5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=0srFYCdkuiA",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T03:00:06+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        }
+      ],
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 4,
+      "speaker_count": 1
     },
     {
       "kind": "song",
@@ -605192,6 +606119,21 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:dcf7527444dcc4b3d2663e05e2b3143718cbc8156d06f2018f5823a0eb60b609",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=7Oj6Og8_Lpc",
+          "text": "2026年10月9日に 東京都台東区の上野恩賜公園（上野公園）で開催された「下町盆踊りフェス」の様子です。 秋の爽やかな空気の中、皆様の熱気あふれる演舞をぜひお楽しみください！ 【開催情報】 ・イベント名：下町盆踊りフェス ・開催日：2026年10月9日 ・会場：上野恩賜公園（東京都台東区） ◆チャンネル登録・高評価よろしくお願いいたします！ 皆様のコメントや応援が励みになります。ぜひ感想などもお気軽にコメント欄へお寄せください。 #盆踊り #下町盆踊りフェス #上野公園 #台東区 #和太鼓 #お祭り #日本の祭り #bonodori 下町盆踊りフェス １東京音頭 https://youtu.be/0cdzD9xAmWA ２マツケンサンバⅡ https://youtu.be/BeND29eEKGs ３炭坑節 https://youtu.be/rEBP9mMIXF4 ４YMCA https://youtu.be/yM5FdyULscw ５あなたとトゥラッタッタ♪ https://youtu.be/yMDFoujd7Ug ６世界でいちばん熱い夏 https://youtu.be/_rwwV",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T11:00:39+00:00",
+          "score": 15,
+          "estimated_event": "下町盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "2026年10月9日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:999ce57303b04e849009623a29e3d3d6651dd7b4273d1529b84c966434a84e1b",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=GTZCmHxrIDE",
@@ -605523,7 +606465,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 22,
+      "evidence_count": 23,
       "speaker_count": 2
     },
     {
@@ -617144,6 +618086,36 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:689d68b77aa9f8ffb4de34f55e6e15807909509864ebf93560588c2ea062aae1",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=cq2tK8RLkFI",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-27T12:00:03+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:ca6993ddd5f6a25ce7bccd1a77bc870636f035a216708476e15ee6424da1fa62",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fEq77fWvzRg",
+          "text": "2026年10月20日、 日本橋本町・宝田恵比寿神社周辺で開催された 「日本橋べったら市」にて行われた 「宝田恵比寿べったら音頭大会（盆踊り）」の様子です。 活気あふれるべったら市の賑わいの中、 響き渡る和太鼓の音色と、揃いの踊りの熱気をぜひお楽しみください！ 【開催日】2026年10月20日 【場所】日本橋本町・宝田恵比寿神社周辺（東京都中央区） 【催事】日本橋べったら市「宝田恵比寿べったら音頭大会」 -------------------------------------------------- 和太鼓やお祭りの魅力をこれからも発信していきます！ 動画をお楽しみいただけましたら、ぜひ【高評価】と【チャンネル登録】をよろしくお願いいたします！ #日本橋べったら市 #べったら市 #宝田恵比寿神社 #盆踊り #べったら音頭 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル べったら市盆踊り １べったら音頭 https://youtu.be/a9-iTVPO_U4 ２小伝馬町音頭 https://youtu.be/xE51tkHf-30 ３日本橋音頭 https://youtu.be/",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-10-26T13:00:12+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓やお祭り",
+          "estimated_venue": "宝田恵比寿神社",
+          "time_hints": [
+            "2026年10月20日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:88a282d22b5a03748e1d3612a35c2c82ec7f56341b56ea9bfe054e8a7fcdaf09",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=Z_YnT3NtKRI",
@@ -617445,7 +618417,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 20,
+      "evidence_count": 22,
       "speaker_count": 1
     },
     {
