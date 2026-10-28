@@ -1,6 +1,6 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-10-27T23:31:45.326229+00:00",
+  "generated_at": "2026-10-28T23:53:29.079026+00:00",
   "status": "no_rows",
   "month": 8,
   "target_year": 2026,
@@ -33,5 +33,5 @@
     "weekend_near_date": 3
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-10-28 youtube_candidates=972 review=74 history_rows=124"
+  "ops_metrics": "ops metrics: date=2026-10-29 youtube_candidates=972 review=74 history_rows=125"
 }
