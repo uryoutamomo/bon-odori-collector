@@ -333,6 +333,15 @@
     "needs_review": true
   },
   {
+    "venue": "大噴水広場",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "山谷堀広場",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
@@ -388,6 +397,15 @@
   },
   {
     "venue": "田原小学校",
+    "region_hint": "台東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "祭典in上野公園",
     "region_hint": "台東区",
     "in_tsukiji_30min_guess": true,
     "source": "blogspot",
@@ -1260,6 +1278,15 @@
     "needs_review": true
   },
   {
+    "venue": "豊洲公園",
+    "region_hint": "江東区",
+    "in_tsukiji_30min_guess": true,
+    "source": "blogspot",
+    "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "おまつり広場",
     "region_hint": "港区",
     "in_tsukiji_30min_guess": true,
@@ -1765,15 +1792,6 @@
   },
   {
     "venue": "奥沢小学校",
-    "region_hint": "世田谷区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "妙法寺",
     "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
@@ -3051,6 +3069,15 @@
     "needs_review": true
   },
   {
+    "venue": "妙法寺",
+    "region_hint": "杉並区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "杉並区の盆おどり情報 2026年1月より [Suginami-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "成宗白山神社",
     "region_hint": "杉並区",
     "in_tsukiji_30min_guess": false,
@@ -3097,6 +3124,15 @@
   },
   {
     "venue": "郡上おどりin永福町北口商店街",
+    "region_hint": "杉並区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "杉並区の盆おどり情報 2026年1月より [Suginami-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
+    "venue": "馬橋小学校",
     "region_hint": "杉並区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",

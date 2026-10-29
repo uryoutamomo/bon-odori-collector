@@ -1,8 +1,8 @@
 {
   "source_id": "ward_official_source",
   "input_path": "/home/runner/work/bon-odori-collector/bon-odori-collector/data/ward_official_source_candidates.json",
-  "input_sha256": "e2f67952207b4023372a61eaff16e6a70a2327c44207f7016d2efae3cf3c5db6",
-  "input_size_bytes": 253482,
+  "input_sha256": "0750c66db002bd4807ef50f1bdca086270ce613999435c70cbc5334305d62ab8",
+  "input_size_bytes": 253646,
   "item_count": 183,
   "items": [
     {
@@ -36,12 +36,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 18時00分～20時30分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月18日 18時00分～20時30分 / 新二之江町会 / 納涼盆踊り大会 / 二之江さくら公園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10001
+        "source_row_index": 10001,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b6637138875d3508"
@@ -77,12 +77,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 15時00分～20時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月18日 15時00分～20時00分 / 臨海町五丁目アパート自治会 / 臨五祭り（今年から盆踊りではなく、小中学生のダンスを実施） / 臨海町五丁目児童遊園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10002
+        "source_row_index": 10002,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_1135f348f3a1b8ab"
@@ -118,12 +118,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 16時30分～20時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月18日 16時30分～20時00分 / 小島町会 / 盆踊り大会 / 小島公園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10003
+        "source_row_index": 10003,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_177eb983338ce434"
@@ -159,12 +159,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 17時00分～20時30分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月18日 17時00分～20時30分 / 宇喜田七軒自治会 / 盆踊り大会 / 北葛西一丁目児童遊園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10004
+        "source_row_index": 10004,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_609a5b25acc09b0e"
@@ -200,12 +200,12 @@
         "event_year": 2026,
         "event_date_text": "7月19日 17時00分～21時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月19日 17時00分～21時00分 / 桑川町親和会 / 盆踊り大会 / 桑川神社境内",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10006
+        "source_row_index": 10006,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9df2928372af6e86"
@@ -241,12 +241,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 17時30分～20時30分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月25日 17時30分～20時30分 / 宇喜田十四軒自治会 / 盆踊り大会 / さくら公園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10007
+        "source_row_index": 10007,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_92dbf1d59865475c"
@@ -282,12 +282,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 18時30分～21時00分 / 7月26日 17時00分～20時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月25日 18時30分～21時00分 / 7月26日 17時00分～20時00分 / 宇喜田十八軒自治会 / 納涼盆踊り大会 / 行船公園噴水広場",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10008
+        "source_row_index": 10008,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c942931a5a005be2"
@@ -323,12 +323,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 17時00分～20時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 7月25日 17時00分～20時00分 / 清新北ハイツ自治会 / 夏休み盆踊り大会 / 清新北ハイツ管理事務所付近",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10009
+        "source_row_index": 10009,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_cf2073842fa61f67"
@@ -364,12 +364,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日、8月2 / 日 各日18時30分～21時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月1日、8月2 / 日 各日18時30分～21時00分 / シティコープ清新自治会 / 清新プラザ自治会 / 清新中央ハイツ自治会 / 納涼盆踊り大会 / 清新町緑道",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10011
+        "source_row_index": 10011,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ea6d689d0cd31ad1"
@@ -405,12 +405,12 @@
         "event_year": 2026,
         "event_date_text": "8月7日、8月8 / 日 各日19時00分～21時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月7日、8月8 / 日 各日19時00分～21時00分 / 船堀七丁目町会 / 盆踊り大会 / 新川さくら館広場",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10012
+        "source_row_index": 10012,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3a41e7a6d491d926"
@@ -446,12 +446,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日、8月9 / 日 各日17時00分～20時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月8日、8月9 / 日 各日17時00分～20時00分 / 船堀三丁目町会 / 盆踊り大会 / 船堀三丁目公園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10013
+        "source_row_index": 10013,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_0a41c4efe1dbc439"
@@ -487,12 +487,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日 18時00分～21時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月8日 18時00分～21時00分 / 新田町会 / 盆踊り大会 / 新田公園",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10014
+        "source_row_index": 10014,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_29313d722af016d2"
@@ -528,12 +528,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日、8月9日 各日18時00分～21時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月8日、8月9日 各日18時00分～21時00分 / 長島町会 / 納涼盆踊り大会 / 長島香取神宮境内",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10015
+        "source_row_index": 10015,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_0f9768575f062a13"
@@ -569,12 +569,12 @@
         "event_year": 2026,
         "event_date_text": "8月14日、8月15日 / 各日18時30分～21時00分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月14日、8月15日 / 各日18時30分～21時00分 / 仲町町会 / 納涼盆踊り / 中割天祖神社",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10017
+        "source_row_index": 10017,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_109c44fd366b5233"
@@ -610,12 +610,12 @@
         "event_year": 2026,
         "event_date_text": "8月15日 12時00分～21時00分 / 8月16日 12時00分～20時30分",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-kasai-events / 8月15日 12時00分～21時00分 / 8月16日 12時00分～20時30分 / なぎさニュータウン自治会 / なぎさ納涼祭（盆踊りは18時00分から） / なぎさニュータウン内中央広場",
         "registry_source_type": "event_calendar",
         "registry_format": "html",
         "parse_mode": "html_table_row",
-        "source_row_index": 10018
+        "source_row_index": 10018,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_52044346a297d07c"
@@ -651,12 +651,12 @@
         "event_year": 2026,
         "event_date_text": "7月19日（日曜日） / 17時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 7月19日（日曜日） / 17時から / 椿東町会盆踊り大会 / 椿ひがし公園 / 椿東町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 2
+        "source_row_index": 2,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b041b29e923953e7"
@@ -692,12 +692,12 @@
         "event_year": 2026,
         "event_date_text": "7月19日（日曜日） / 18時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 7月19日（日曜日） / 18時から / 山王神社盆踊り / 山王神社 / 下鎌田町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 3
+        "source_row_index": 3,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_4d791bc69c83bef5"
@@ -733,12 +733,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日（土曜日） / 18時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 7月25日（土曜日） / 18時から / 内手昭和会・親子盆踊り大会 / 下鎌田小学校 / 下鎌田町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 5
+        "source_row_index": 5,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c09c8633fd87a429"
@@ -774,12 +774,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日（土曜日） / 7月26日（日曜日） / 18時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 7月25日（土曜日） / 7月26日（日曜日） / 18時から / 江戸川一丁目町会・ / 江戸川共栄商店街 / チャリティ盆踊り大会 / 江戸川中央公園 / 江戸川一丁目町会 / 江戸川共栄商店街",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 7
+        "source_row_index": 7,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c5a7985b56cc3d17"
@@ -815,12 +815,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日（土曜日） / 18時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 8月8日（土曜日） / 18時から / 豊田神社奉納盆踊り大会 / 豊田神社・東部公園 / 下鎌田町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 8
+        "source_row_index": 8,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_30b91ed1cb44a35a"
@@ -856,12 +856,12 @@
         "event_year": 2026,
         "event_date_text": "8月9日（日曜日） / 8月10日（月曜日） / 18時30分から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 8月9日（日曜日） / 8月10日（月曜日） / 18時30分から / 下篠崎町会盆踊り大会 / 篠崎六丁目第二広場 / 下篠崎町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 9
+        "source_row_index": 9,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9a5c7168e6bc307e"
@@ -897,12 +897,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日（土曜日） / 17時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 8月22日（土曜日） / 17時から / 宿和会納涼盆踊り大会 / 下鎌田東小学校 / 下鎌田町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 10
+        "source_row_index": 10,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ca919a1c7a0fb756"
@@ -938,12 +938,12 @@
         "event_year": 2026,
         "event_date_text": "8月30日（日曜日） / 18時から / (29日から変更になりました。)",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 8月30日（日曜日） / 18時から / (29日から変更になりました。) / 今井町会納涼盆踊り大会 / 八雲神社前広場 / 今井町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 11
+        "source_row_index": 11,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e3eec538542affb6"
@@ -979,12 +979,12 @@
         "event_year": 2026,
         "event_date_text": "10月3日（土曜日） / 15時から",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: edogawa-tobu-bonodori / 10月3日（土曜日） / 15時から / 谷河内南町会盆踊り大会 / 谷河内みなみ公園 / 谷河内南町会",
         "registry_source_type": "event_calendar",
         "registry_format": "html_pdf",
         "parse_mode": "html_table_row",
-        "source_row_index": 15
+        "source_row_index": 15,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_2cbb389601719048"
@@ -1020,12 +1020,12 @@
         "event_year": 2026,
         "event_date_text": "9月2日",
         "address": "",
-        "status_hint": "",
         "memo": "ward registry: katsushika-neighborhood-associations / 令和8年度夏まつり・盆踊り・イベント情報（令和8年9月2日現在） （PDF 346.9KB）",
         "registry_source_type": "community",
         "registry_format": "html",
         "parse_mode": "html_list_item",
-        "source_row_index": 13
+        "source_row_index": 13,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b44111f1c5891c3f"
@@ -1166,12 +1166,12 @@
         "event_year": 2026,
         "event_date_text": "6月20日 / (土曜日) / 16時",
         "address": "西綾瀬2-1-8（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 6月20日 / (土曜日) / 16時 / 西綾瀬町会 / (夏まつり) / 五反野コミュニティ公園 / 西綾瀬2-1-8（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10001
+        "source_row_index": 10001,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c7505046516670ed"
@@ -1207,12 +1207,12 @@
         "event_year": 2026,
         "event_date_text": "6月27日 / (土曜日) / ※荒天により中止 / 14時30分",
         "address": "千住大川町35（外部サイトへリンク）",
-        "status_hint": "cancelled",
         "memo": "ward registry: adachi-bonfes-2026 / 6月27日 / (土曜日) / ※荒天により中止 / 14時30分 / 青少年対策第五地区委員会 / 第五地区町会連合会 / (第五地区子ども祭り) / 千住公園 / 千住大川町35（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10002
+        "source_row_index": 10002,
+        "status_hint": "cancelled"
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_544d0db4b2433cf9"
@@ -1248,12 +1248,12 @@
         "event_year": 2026,
         "event_date_text": "7月10日 / (金曜日) / 7月11日 / (土曜日) / 18時",
         "address": "東和5-9（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月10日 / (金曜日) / 7月11日 / (土曜日) / 18時 / 東淵江自治会 / (納涼盆踊り大会) / 稗田公園 / 東和5-9（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10003
+        "source_row_index": 10003,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_0526110bbc797da6"
@@ -1289,12 +1289,12 @@
         "event_year": 2026,
         "event_date_text": "7月17日 / (金曜日) / 7月18日 / (土曜日) / 18時30分",
         "address": "大谷田5-4-18（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月17日 / (金曜日) / 7月18日 / (土曜日) / 18時30分 / 大谷田五丁目町会 / (夏の祭典) / 柳田公園 / 大谷田5-4-18（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10004
+        "source_row_index": 10004,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_bb821d364e32d17e"
@@ -1330,12 +1330,12 @@
         "event_year": 2026,
         "event_date_text": "7月17日 / (金曜日) / 7月18日 / (土曜日) / 18時30分",
         "address": "関原2-13-12（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月17日 / (金曜日) / 7月18日 / (土曜日) / 18時30分 / 梅田正和町会 / (納涼盆踊り) / 関原中央公園 / 関原2-13-12（外部サイトへリンク） / 梅田区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10005
+        "source_row_index": 10005,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_aa90bed238d78c16"
@@ -1371,12 +1371,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 18時",
         "address": "東伊興3-23（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 18時 / 伊興東町会 / (納涼盆踊り大会) / 伊興公園 / 東伊興3-23（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10006
+        "source_row_index": 10006,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ee0f9f6bb9c97873"
@@ -1412,12 +1412,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / ※予備日 / 7月19日 / (日曜日) / 18時",
         "address": "千住桜木2-16-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / ※予備日 / 7月19日 / (日曜日) / 18時 / 千住桜木二丁目町会 / 都営桜木町アパート二号棟自治会 / (納涼おどり) / 尾竹橋公園 / 千住桜木2-16-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10007
+        "source_row_index": 10007,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_88862ed95d0cc34a"
@@ -1453,12 +1453,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / ※雨天延期 / 7月19日 / (日曜日) / 18時",
         "address": "一ツ家3-15（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / ※雨天延期 / 7月19日 / (日曜日) / 18時 / 一ツ家三丁目町会 / (盆踊り大会) / 一ツ家中央公園(タコ公園) / 一ツ家3-15（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10008
+        "source_row_index": 10008,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_dbe384bcf91ce6a0"
@@ -1494,12 +1494,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時",
         "address": "東和1-15（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時 / 東和一丁目自治会 / (納涼盆踊り大会) / 西沼公園 / 東和1-15（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10009
+        "source_row_index": 10009,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e0a2e6dcff9ca618"
@@ -1535,12 +1535,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 7月19日 / (日曜日) / 17時",
         "address": "椿2-21（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 7月19日 / (日曜日) / 17時 / 椿町会 / (輪踊り) / 東椿公園 / 椿2-21（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10010
+        "source_row_index": 10010,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e9ce5ec0447f25e3"
@@ -1576,12 +1576,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時",
         "address": "皿沼2-25（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時 / 皿沼町会 / (納涼盆踊り大会) / 皿沼公園 / 皿沼2-25（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10011
+        "source_row_index": 10011,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_89369ca4e7c3cc6f"
@@ -1617,12 +1617,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時",
         "address": "伊興5-21（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時 / 伊興西町会 / (納涼盆踊り大会) / 伊興ファミリー公園 / 伊興5-21（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10012
+        "source_row_index": 10012,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_62bd7ba1bd4a7463"
@@ -1658,12 +1658,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時",
         "address": "綾瀬5-3（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時 / 綾瀬五・六丁目自治会 / (納涼盆踊り大会) / 東綾瀬公園 / 綾瀬5-3（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10013
+        "source_row_index": 10013,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_529c747c43374bed"
@@ -1699,12 +1699,12 @@
         "event_year": 2026,
         "event_date_text": "7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時30分",
         "address": "佐野2-31-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月18日 / (土曜日) / 7月19日 / (日曜日) / 18時30分 / 佐野二丁目北町会 / (納涼盆踊り大会) / 佐野第二公園 / 佐野2-31-1（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10014
+        "source_row_index": 10014,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_a887b3572bfdb738"
@@ -1740,12 +1740,12 @@
         "event_year": 2026,
         "event_date_text": "7月19日 / (日曜日) / 18時",
         "address": "小台1-22-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月19日 / (日曜日) / 18時 / 尾久橋スカイハイツ自治会 / (夏祭り) / 尾久橋スカイハイツ敷地内 / 小台1-22-2（外部サイトへリンク） / 江南区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10015
+        "source_row_index": 10015,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e3c256d40ee6bb8b"
@@ -1781,12 +1781,12 @@
         "event_year": 2026,
         "event_date_text": "7月24日 / (金曜日) / 7月25日 / (土曜日) / 17時",
         "address": "鹿浜2-18-20（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月24日 / (金曜日) / 7月25日 / (土曜日) / 17時 / 鹿浜糀屋町会 / (盆踊り) / 糀屋氷川神社 / 鹿浜2-18-20（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10016
+        "source_row_index": 10016,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_91c779c82d140b43"
@@ -1822,12 +1822,12 @@
         "event_year": 2026,
         "event_date_text": "7月24日 / (金曜日) / 7月25日 / (土曜日) / 17時30分",
         "address": "西新井本町4-9-27（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月24日 / (金曜日) / 7月25日 / (土曜日) / 17時30分 / 興野北町会 / (興野北町会夏まつり) / 西新井小学校校庭 / 西新井本町4-9-27（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10017
+        "source_row_index": 10017,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_39c71376909b660c"
@@ -1850,7 +1850,7 @@
         "decision": "pending",
         "suggested_source_type": "official",
         "suggested_score": 92,
-        "reason": "区公式イベント一覧から行単位で抽出",
+        "reason": "一部日付の中止注記あり。催事全体の中止とせず日程を人レビューする。",
         "source_origin": "ward_official_source_registry",
         "source_registry_id": "adachi-bonfes-2026",
         "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
@@ -1863,12 +1863,13 @@
         "event_year": 2026,
         "event_date_text": "7月24日 / (金曜日) / ※荒天により7月24日(金曜日)は中止 / 7月25日 / (土曜日) / 19時(金曜日) / 18時(土曜日)",
         "address": "綾瀬2-15（外部サイトへリンク）",
-        "status_hint": "cancelled",
         "memo": "ward registry: adachi-bonfes-2026 / 7月24日 / (金曜日) / ※荒天により7月24日(金曜日)は中止 / 7月25日 / (土曜日) / 19時(金曜日) / 18時(土曜日) / 普賢寺自治会 / (納涼盆踊り大会) / 北野公園 / 綾瀬2-15（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10018
+        "source_row_index": 10018,
+        "status_hint": "",
+        "cancellation_scope": "date_specific"
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_2120f78c93137342"
@@ -1904,12 +1905,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 18時",
         "address": "東綾瀬2-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 18時 / パークタウン東綾瀬自治会 / (夏祭り) / 東綾瀬公園 / 東綾瀬2-10（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10019
+        "source_row_index": 10019,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ef934957cce8a021"
@@ -1945,12 +1946,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 18時",
         "address": "東伊興1-4-15（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 18時 / 伊興北町会 / (納涼盆踊り大会) / 東伊興小学校校庭 / 東伊興1-4-15（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10020
+        "source_row_index": 10020,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_898ba53dafbc5125"
@@ -1986,12 +1987,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時",
         "address": "本木北町14-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時 / 本木北町みのり町会 / (盆踊り) / 田中稲荷神社 / 本木北町14-1（外部サイトへリンク） / 興本区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10021
+        "source_row_index": 10021,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b90509f7dcdd42f3"
@@ -2027,12 +2028,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / ※中止 / 18時",
         "address": "西新井4-26（外部サイトへリンク）",
-        "status_hint": "cancelled",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / ※中止 / 18時 / 西新井四丁目自治会 / (納涼盆踊り大会) / 諏訪木第三公園 / 西新井4-26（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10022
+        "source_row_index": 10022,
+        "status_hint": "cancelled"
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_2b8fb55b7ede5d72"
@@ -2068,12 +2069,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時",
         "address": "入谷4-16（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時 / 入谷町会 / (納涼盆踊り大会) / 入谷中央公園 / 入谷4-16（外部サイトへリンク） / 舎人区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10023
+        "source_row_index": 10023,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_351bdb851a354a5c"
@@ -2109,12 +2110,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時",
         "address": "東和2-27（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時 / 東和二丁目自治会 / 東和二丁目西自治会 / (納涼盆踊り大会) / 区立第六天公園 / 東和2-27（外部サイトへリンク） / 中川区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10024
+        "source_row_index": 10024,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_655680564a954ceb"
@@ -2150,12 +2151,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時30分",
         "address": "東和3-8（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時30分 / 蒲原自治会 / (納涼盆踊り大会) / 宮元公園 / 東和3-8（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10025
+        "source_row_index": 10025,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e4a7f37a95c6577f"
@@ -2191,12 +2192,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時30分",
         "address": "竹の塚6-12-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時30分 / 竹の塚上町会 / (盆踊り大会) / 竹塚神社境内 / 竹の塚6-12-1（外部サイトへリンク） / 竹の塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10026
+        "source_row_index": 10026,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_dac1053408ce3252"
@@ -2232,12 +2233,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時30分",
         "address": "綾瀬1-16（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 18時30分 / 綾瀬自治会 / (納涼盆踊り大会) / 伊藤谷公園 / 綾瀬1-16（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10027
+        "source_row_index": 10027,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3448b89b128968a0"
@@ -2273,12 +2274,12 @@
         "event_year": 2026,
         "event_date_text": "7月25日 / (土曜日) / 7月26日 / (日曜日) / 19時(土曜日) / 18時30分(日曜日)",
         "address": "千住旭町22周辺（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月25日 / (土曜日) / 7月26日 / (日曜日) / 19時(土曜日) / 18時30分(日曜日) / 千住旭町会 / (納涼盆踊り大会) / 学園東通り(路上) / 千住旭町22周辺（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10028
+        "source_row_index": 10028,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9ce09e8c7c07a79b"
@@ -2314,12 +2315,12 @@
         "event_year": 2026,
         "event_date_text": "7月26日 / (日曜日) / 15時",
         "address": "足立4-35-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月26日 / (日曜日) / 15時 / 足立四丁目町会 / (こども夏まつり) / 末若氷川神社 / 足立4-35-10（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10029
+        "source_row_index": 10029,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_8b75dbc84c84247e"
@@ -2355,12 +2356,12 @@
         "event_year": 2026,
         "event_date_text": "7月31日 / (金曜日) / 8月1日 / (土曜日) / 17時30分",
         "address": "梅田3-13-24（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月31日 / (金曜日) / 8月1日 / (土曜日) / 17時30分 / 梅田本町自治会 / (納涼盆踊り) / 梅田南公園 / 梅田3-13-24（外部サイトへリンク） / 梅田区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10030
+        "source_row_index": 10030,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_91266787ddf9a18f"
@@ -2396,12 +2397,12 @@
         "event_year": 2026,
         "event_date_text": "7月31日 / (金曜日) / 8月1日 / (土曜日) / 18時30分",
         "address": "綾瀬4-26（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 7月31日 / (金曜日) / 8月1日 / (土曜日) / 18時30分 / 綾瀬東町会 / (納涼盆踊り大会) / 蛭沼公園 / 綾瀬4-26（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10031
+        "source_row_index": 10031,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_87e9729172651ce1"
@@ -2437,12 +2438,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 17時",
         "address": "東和4-3-18（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 17時 / 東和四丁目自治会 / (納涼祭) / 聖フランシスコ幼稚園 / 東和4-3-18（外部サイトへリンク） / 中川区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10032
+        "source_row_index": 10032,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_225a30bf5aae8587"
@@ -2478,12 +2479,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 17時",
         "address": "花畑4-40-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 17時 / 花畑地区町会自治会連合会 / (花畑地区納涼盆踊り大会) / 花畑公園 / 花畑4-40-1（外部サイトへリンク） / 花畑区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10033
+        "source_row_index": 10033,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b22970b7e708d6f3"
@@ -2519,12 +2520,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 18時",
         "address": "東伊興2-12-6（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 18時 / 東伊興町会 / (納涼盆踊り大会) / 東伊興氷川神社 / 東伊興2-12-6（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10034
+        "source_row_index": 10034,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_064b65fec92116b6"
@@ -2560,12 +2561,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 18時",
         "address": "千住東1-30-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 18時 / 千住東一丁目町会 / (納涼大会) / 海外産業人材育成協会研修センター / 千住東1-30-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10035
+        "source_row_index": 10035,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_010253be32888953"
@@ -2601,12 +2602,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / ※雨天延期 / 8月2日 / (日曜日) / 18時",
         "address": "竹の塚2-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / ※雨天延期 / 8月2日 / (日曜日) / 18時 / 竹の塚南町会 / (夕涼み会) / 竹の塚第九公園 / 竹の塚2-4（外部サイトへリンク） / 竹の塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10036
+        "source_row_index": 10036,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_427e0d0b446bc79e"
@@ -2642,12 +2643,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 19時",
         "address": "中央本町2-4-26（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 19時 / 中央本町若松町会 / (盆踊り大会) / 若松公園 / 中央本町2-4-26（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10037
+        "source_row_index": 10037,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ca4b48d83332426a"
@@ -2683,12 +2684,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時",
         "address": "中川5-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時 / 大谷田東自治会 / 隅田自治会 / 長門北部自治会 / ファミール亀有壱番館自治会 / (中川納涼大盆踊り大会) / 都立中川公園ふれあい広場 / 中川5-1（外部サイトへリンク） / 中川区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10038
+        "source_row_index": 10038,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ff91d3406deeea2f"
@@ -2724,12 +2725,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時",
         "address": "扇1-6-3（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時 / 扇一丁目寺地明和会 / (盆踊り) / 扇南公園 / 扇1-6-3（外部サイトへリンク） / 興本区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10039
+        "source_row_index": 10039,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_5923d5aaabc0c75c"
@@ -2765,12 +2766,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時",
         "address": "興野2-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時 / 興野町会 / (盆踊り) / 興野神社境内 / 興野2-1（外部サイトへリンク） / 興本区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10040
+        "source_row_index": 10040,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f99eb4cccac0a24b"
@@ -2806,12 +2807,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時",
         "address": "扇2-9-3（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時 / 扇南町会 / (盆踊り) / 三嶋神社 / 扇2-9-3（外部サイトへリンク） / 興本区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10041
+        "source_row_index": 10041,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_1dc85ca6abb70b77"
@@ -2847,12 +2848,12 @@
         "event_year": 2026,
         "event_date_text": "8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時(予定)",
         "address": "新田1-8-5（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月1日 / (土曜日) / 8月2日 / (日曜日) / 18時(予定) / 足立区新田町会 / (協力) / 都営新田一丁目アパート自治会 / 新田二丁目第二自治会 / グランスイートハートアイランド自治会 / オーベルグランディオハートアイランド自治会 / (納涼盆踊り大会) / 新田稲荷公園 / 新田1-8-5（外部サイトへリンク） / 新田区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10042
+        "source_row_index": 10042,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_2ea7b129d302a680"
@@ -2888,12 +2889,12 @@
         "event_year": 2026,
         "event_date_text": "8月2日 / (日曜日) / 18時",
         "address": "千住緑町2-26-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月2日 / (日曜日) / 18時 / 千住緑町町会 / (納涼盆踊り大会) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10043
+        "source_row_index": 10043,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_27f954e0fd498f14"
@@ -2929,12 +2930,12 @@
         "event_year": 2026,
         "event_date_text": "8月2日 / (日曜日) / ※雨天決行 / 10時",
         "address": "六町3-2-29（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月2日 / (日曜日) / ※雨天決行 / 10時 / 六町三丁目町会 / (子どもお楽しみ会) / 六町三丁目町会会館 / 六町3-2-29（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10044
+        "source_row_index": 10044,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_aeb86ad47b0de22e"
@@ -2970,12 +2971,12 @@
         "event_year": 2026,
         "event_date_text": "8月2日 / (日曜日) / 10時",
         "address": "足立1-27-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月2日 / (日曜日) / 10時 / 足立高砂町会 / (こども祭り) / 高砂神社 / 足立1-27-17（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10045
+        "source_row_index": 10045,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3f3cdf131a7a76a3"
@@ -3011,12 +3012,12 @@
         "event_year": 2026,
         "event_date_text": "8月2日 / (日曜日) / ※雨天決行 / 13時",
         "address": "南花畑3-14-7（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月2日 / (日曜日) / ※雨天決行 / 13時 / 榎戸町会 / (納涼祭り) / 南花畑住区センター / 南花畑3-14-7（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10046
+        "source_row_index": 10046,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_bfc3d7f788449d0d"
@@ -3052,12 +3053,12 @@
         "event_year": 2026,
         "event_date_text": "8月2日 / (日曜日) / 14時",
         "address": "千住橋戸町25-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月2日 / (日曜日) / 14時 / 千住橋戸町自治会 / (こども夏まつり(縁日)) / 橋戸稲荷神社 / 千住橋戸町25-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10047
+        "source_row_index": 10047,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_088c6afe5cdf3d8e"
@@ -3093,12 +3094,12 @@
         "event_year": 2026,
         "event_date_text": "8月2日 / (日曜日) / 8月3日 / (月曜日) / 18時",
         "address": "谷中2-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月2日 / (日曜日) / 8月3日 / (月曜日) / 18時 / 上谷中町自治会 / (納涼盆踊り大会) / しょうぶ沼公園 / 谷中2-4（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10048
+        "source_row_index": 10048,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_bcb683ff91344fb9"
@@ -3134,12 +3135,12 @@
         "event_year": 2026,
         "event_date_text": "8月6日 / (木曜日) / 8月7日 / (金曜日) / 19時",
         "address": "東綾瀬2-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月6日 / (木曜日) / 8月7日 / (金曜日) / 19時 / 東綾瀬自治会 / (納涼盆踊り大会) / 東綾瀬公園 / 東綾瀬2-10（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10049
+        "source_row_index": 10049,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_a1c5ce7e376bb722"
@@ -3175,12 +3176,12 @@
         "event_year": 2026,
         "event_date_text": "8月7日 / (金曜日) / 8月8日 / (土曜日) / 18時",
         "address": "島根4-25-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月7日 / (金曜日) / 8月8日 / (土曜日) / 18時 / 島根町会 / (納涼盆踊り) / 鷲神社 / 島根4-25-1（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10050
+        "source_row_index": 10050,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ea055e8b19e98960"
@@ -3216,12 +3217,12 @@
         "event_year": 2026,
         "event_date_text": "8月7日 / (金曜日) / 8月8日 / (土曜日) / 18時30分",
         "address": "加平3-5-9（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月7日 / (金曜日) / 8月8日 / (土曜日) / 18時30分 / 加平町会 / (加平町会盆踊り大会) / 加平第二公園 / 加平3-5-9（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10051
+        "source_row_index": 10051,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_74227a94d2b9c35e"
@@ -3257,12 +3258,12 @@
         "event_year": 2026,
         "event_date_text": "8月7日 / (金曜日) / 8月8日 / (土曜日) / 18時30分",
         "address": "西新井本町2-25-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月7日 / (金曜日) / 8月8日 / (土曜日) / 18時30分 / 西新井本町二丁目町会 / (納涼盆おどり大会) / 高野公園 / 西新井本町2-25-1（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10052
+        "source_row_index": 10052,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_a99af4d081860c3d"
@@ -3298,12 +3299,12 @@
         "event_year": 2026,
         "event_date_text": "8月7日 / (金曜日) / 8月8日 / (土曜日) / 19時",
         "address": "神明3-18-18（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月7日 / (金曜日) / 8月8日 / (土曜日) / 19時 / 神明東町会 / (神明東町会 盆踊り) / 南蔵院 駐車場 / 神明3-18-18（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10053
+        "source_row_index": 10053,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9ed51d89df940c7f"
@@ -3339,12 +3340,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日 / (土曜日) / 18時30分",
         "address": "千住5-6-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月8日 / (土曜日) / 18時30分 / 千住四丁目町会 / 千住五丁目町会 / (千住本町五町会盆踊り大会) / 千住本町住区センター前(板垣通り) / 千住5-6-2（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10054
+        "source_row_index": 10054,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f360d2122b197a4d"
@@ -3380,12 +3381,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日 / (土曜日) / 19時",
         "address": "辰沼2-11（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月8日 / (土曜日) / 19時 / 辰沼町会 / (辰沼町会盆踊り) / 辰沼二丁目公園 / 辰沼2-11（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10055
+        "source_row_index": 10055,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_871ced41b9a3cd2b"
@@ -3421,12 +3422,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日 / (土曜日) / 8月9日 / (日曜日) / 18時30分",
         "address": "東綾瀬3-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月8日 / (土曜日) / 8月9日 / (日曜日) / 18時30分 / 蒲谷自治会 / (納涼盆踊り大会) / 東綾瀬公園 / 東綾瀬3-4（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10056
+        "source_row_index": 10056,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_7ceaf37eb925fa48"
@@ -3462,12 +3463,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日 / (土曜日) / 8月9日 / (日曜日) / 18時",
         "address": "西新井本町2-32（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月8日 / (土曜日) / 8月9日 / (日曜日) / 18時 / 高野町会 / (高野町会盆踊り大会) / 高野胡録神社 / 西新井本町2-32（外部サイトへリンク） / 江北区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10057
+        "source_row_index": 10057,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_03c3e5bb10d2c37f"
@@ -3503,12 +3504,12 @@
         "event_year": 2026,
         "event_date_text": "8月8日 / (土曜日) / 8月9日 / (日曜日) / 19時",
         "address": "本木東町12-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月8日 / (土曜日) / 8月9日 / (日曜日) / 19時 / 本木東町会 / (盆踊り) / 御嶽神社 / 本木東町12-17（外部サイトへリンク） / 興本区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10058
+        "source_row_index": 10058,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f826917863213448"
@@ -3544,12 +3545,12 @@
         "event_year": 2026,
         "event_date_text": "8月9日 / (日曜日) / ※雨天決行 / 16時30分",
         "address": "南花畑3-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月9日 / (日曜日) / ※雨天決行 / 16時30分 / 花保町会 / (子ども向け流しそうめん夏祭り) / 花保広場(花保さくら公園) / 南花畑3-1（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10059
+        "source_row_index": 10059,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3c2c315cfca32330"
@@ -3585,12 +3586,12 @@
         "event_year": 2026,
         "event_date_text": "8月21日 / (金曜日) / ※雨天延期 / 8月22日 / (土曜日) / 19時",
         "address": "南花畑3-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月21日 / (金曜日) / ※雨天延期 / 8月22日 / (土曜日) / 19時 / 花保町会 / (盆踊り大会) / 花保広場(花保さくら公園) / 南花畑3-1（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10060
+        "source_row_index": 10060,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f19c2531c82234cb"
@@ -3626,12 +3627,12 @@
         "event_year": 2026,
         "event_date_text": "8月21日 / (金曜日) / 8月22日 / (土曜日) / 18時",
         "address": "伊興2-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月21日 / (金曜日) / 8月22日 / (土曜日) / 18時 / 伊興南町会 / (納涼踊り大会) / 第14リーグ少年野球場 / 伊興2-4（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10061
+        "source_row_index": 10061,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_12c58555a523d8ff"
@@ -3667,12 +3668,12 @@
         "event_year": 2026,
         "event_date_text": "8月21日 / (金曜日) / 8月22日 / (土曜日) / 18時30分",
         "address": "千住仲町28（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月21日 / (金曜日) / 8月22日 / (土曜日) / 18時30分 / 千住仲町会 / (仲町盆踊り大会) / 千住仲町公園 / 千住仲町28（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10062
+        "source_row_index": 10062,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_011c436acbc7eb6f"
@@ -3708,12 +3709,12 @@
         "event_year": 2026,
         "event_date_text": "8月21日 / (金曜日) / 8月22日 / (土曜日) / 19時",
         "address": "綾瀬3-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月21日 / (金曜日) / 8月22日 / (土曜日) / 19時 / 綾瀬三丁目自治会 / (納涼盆踊り大会) / 東綾瀬公園(はと広場) / 綾瀬3-10（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10063
+        "source_row_index": 10063,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_2ddaafe7216a34ed"
@@ -3749,12 +3750,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日 / (土曜日) / 15時",
         "address": "東和4-6（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月22日 / (土曜日) / 15時 / 大谷田二丁目自治会 / (夕涼みの会) / 区立東和親水公園 / 東和4-6（外部サイトへリンク） / 中川区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10064
+        "source_row_index": 10064,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b5a593571117a25d"
@@ -3790,12 +3791,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日 / (土曜日) / 18時",
         "address": "鹿浜2-28-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月22日 / (土曜日) / 18時 / 鹿浜島町会 / (輪踊り) / 島氷川神社 / 鹿浜2-28-4（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10065
+        "source_row_index": 10065,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_aa5ca816542db2f9"
@@ -3831,12 +3832,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日 / (土曜日) / 18時30分",
         "address": "梅田7-25-13（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月22日 / (土曜日) / 18時30分 / コープ野村梅島自治会 / (盆踊り大会) / 梅田七丁目児童遊園 / 梅田7-25-13（外部サイトへリンク） / 梅田区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10066
+        "source_row_index": 10066,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_7079ed7c78d9231f"
@@ -3872,12 +3873,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日 / (土曜日) / 8月23日 / (日曜日) / 17時",
         "address": "西新井1-15-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月22日 / (土曜日) / 8月23日 / (日曜日) / 17時 / 西新井町会 / (大師夏まつり2026) / 西新井大師境内 / 西新井1-15-1（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10067
+        "source_row_index": 10067,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e4c4b2d2a4dd5663"
@@ -3913,12 +3914,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日 / (土曜日) / 8月23日 / (日曜日) / 18時30分",
         "address": "大谷田4-4-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月22日 / (土曜日) / 8月23日 / (日曜日) / 18時30分 / 大谷田西部自治会 / (夏の納涼盆踊り大会) / 大谷田公園 / 大谷田4-4-1（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10068
+        "source_row_index": 10068,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_2a97e190c547e7ca"
@@ -3954,12 +3955,12 @@
         "event_year": 2026,
         "event_date_text": "8月22日 / (土曜日) / 8月23日 / (日曜日) / 19時",
         "address": "梅島3-2-5（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月22日 / (土曜日) / 8月23日 / (日曜日) / 19時 / 梅島町会 / (盆踊り大会) / 梅島天満宮 / 梅島3-2-5（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10069
+        "source_row_index": 10069,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b6b3c5a53d41b5a2"
@@ -3995,12 +3996,12 @@
         "event_year": 2026,
         "event_date_text": "8月23日 / (日曜日) / 16時",
         "address": "柳原2-42（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月23日 / (日曜日) / 16時 / 柳原北町会 / (納涼大会) / 柳原二丁目児童遊園 / 柳原2-42（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10070
+        "source_row_index": 10070,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_0624ef3a0d7ac58f"
@@ -4036,12 +4037,12 @@
         "event_year": 2026,
         "event_date_text": "8月23日 / (日曜日) / ※雨天延期 / 8月30日 / (日曜日) / 18時30分",
         "address": "一ツ家4-16-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月23日 / (日曜日) / ※雨天延期 / 8月30日 / (日曜日) / 18時30分 / 六町二丁目町会 / (子ども花火大会) / 一ツ家第一公園 / 一ツ家4-16-1（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10071
+        "source_row_index": 10071,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ceb15a1fbfcf493a"
@@ -4077,12 +4078,12 @@
         "event_year": 2026,
         "event_date_text": "8月28日 / (金曜日) / 8月29日 / (土曜日) / 18時",
         "address": "小台2-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月28日 / (金曜日) / 8月29日 / (土曜日) / 18時 / 小台町会 / ラ・セーヌ小台自治会 / ライオンズマンション荒川遊園アクアステージ自治会 / (夏祭り) / 小台公園 / 小台2-2（外部サイトへリンク） / 江南区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10072
+        "source_row_index": 10072,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3499ab6185c45d4f"
@@ -4118,12 +4119,12 @@
         "event_year": 2026,
         "event_date_text": "8月29日 / (土曜日) / 12時30分",
         "address": "伊興本町2-1-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月29日 / (土曜日) / 12時30分 / 伊興北根町会 / (子どもまつり＆芸能大会) / 神の家族 主イエス・キリスト教会 / 伊興本町2-1-10（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10073
+        "source_row_index": 10073,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_8124f50410bbf41c"
@@ -4159,12 +4160,12 @@
         "event_year": 2026,
         "event_date_text": "8月29日 / (土曜日) / 16時",
         "address": "西新井本町3-6-9（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月29日 / (土曜日) / 16時 / 西新井15部町会 / (サマフェス) / 西新井第二児童遊園 / 西新井本町3-6-9（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10074
+        "source_row_index": 10074,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b9c3784e44d463ed"
@@ -4200,12 +4201,12 @@
         "event_year": 2026,
         "event_date_text": "8月29日 / (土曜日) / 16時",
         "address": "柳原1-1-19（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月29日 / (土曜日) / 16時 / 柳原南町会 / (スイカ割・水風船合戦) / 柳原南児童遊園 / 柳原1-1-19（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10075
+        "source_row_index": 10075,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_d7834710d295ec89"
@@ -4241,12 +4242,12 @@
         "event_year": 2026,
         "event_date_text": "8月29日 / (土曜日) / 17時",
         "address": "中川1-19-32（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月29日 / (土曜日) / 17時 / 隅田自治会(1班) / 長門南部町会 / 長門東部自治会 / 長門西町会 / (長門小学校こども夏祭り) / 長門小学校 / 中川1-19-32（外部サイトへリンク） / 中川区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10076
+        "source_row_index": 10076,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_af3cea4367f951bc"
@@ -4282,12 +4283,12 @@
         "event_year": 2026,
         "event_date_text": "8月29日 / (土曜日) / 8月30日 / (日曜日) / 18時 / (8月30日は10時から神輿渡御)",
         "address": "伊興2-12-22（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月29日 / (土曜日) / 8月30日 / (日曜日) / 18時 / (8月30日は10時から神輿渡御) / 伊興中央町会 / (奉納踊り大会) / 伊興若宮八幡宮 / (神輿渡御は西伊興1丁目から2丁目付近) / 伊興2-12-22（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10077
+        "source_row_index": 10077,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ac7bfe436db85398"
@@ -4323,12 +4324,12 @@
         "event_year": 2026,
         "event_date_text": "8月29日 / (土曜日) / ※雨天延期 / 8月30日 / (日曜日) / 18時",
         "address": "一ツ家2-21（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 8月29日 / (土曜日) / ※雨天延期 / 8月30日 / (日曜日) / 18時 / 保塚町町会 / 一ツ家二丁目町会 / (盆踊り大会) / 一ツ家二丁目子供の広場 / 一ツ家2-21（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10078
+        "source_row_index": 10078,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_1a6f3aa214fcda31"
@@ -4364,12 +4365,12 @@
         "event_year": 2026,
         "event_date_text": "9月5日 / (土曜日) / 17時30分 / 18時30分",
         "address": "千住中居町24（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月5日 / (土曜日) / 17時30分 / 18時30分 / 千住中居町会 / (縁日) / (奉納踊り) / 千住中居町公園 / 千住中居町24（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10079
+        "source_row_index": 10079,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_883057b272ba446e"
@@ -4405,12 +4406,12 @@
         "event_year": 2026,
         "event_date_text": "9月5日 / (土曜日) / 18時",
         "address": "梅田6-26-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月5日 / (土曜日) / 18時 / 梅田神明町自治会 / (盆踊り) / 梅田公園 / 梅田6-26-1（外部サイトへリンク） / 梅田区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10080
+        "source_row_index": 10080,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9ce74e3ac4461e3c"
@@ -4446,12 +4447,12 @@
         "event_year": 2026,
         "event_date_text": "9月6日 / (日曜日) / 9月13日 / （日曜日） / 10時",
         "address": "六木4-5-3（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月6日 / (日曜日) / 9月13日 / （日曜日） / 10時 / 六木四丁目町会 / (六木四丁目町会 こども祭り) / 六木四丁目町会 子供広場 / 六木4-5-3（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10081
+        "source_row_index": 10081,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_06ae245810309f87"
@@ -4487,12 +4488,12 @@
         "event_year": 2026,
         "event_date_text": "9月6日 / (日曜日) / 11時",
         "address": "千住関屋町10-16（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月6日 / (日曜日) / 11時 / 千住関屋町会 / (夏のお楽しみ会) / 千住関屋町会館前 / 千住関屋町10-16（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10082
+        "source_row_index": 10082,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_8de6fbd0820b96e2"
@@ -4528,12 +4529,12 @@
         "event_year": 2026,
         "event_date_text": "9月6日 / (日曜日) / 15時",
         "address": "西新井5-28-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月6日 / (日曜日) / 15時 / 西新井緑町会 / (西新井緑町会夏まつり) / 西新井みどり公園 / 西新井5-28-1（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10083
+        "source_row_index": 10083,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_989d99dcc8395543"
@@ -4569,12 +4570,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 17時15分",
         "address": "千住緑町2-26-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 17時15分 / 千住緑町町会 / (千住神社祭礼宵宮大人神輿) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10084
+        "source_row_index": 10084,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_223ad22ea0f3e570"
@@ -4610,12 +4611,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 14時",
         "address": "大谷田2-1-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 14時 / 大谷田上自治会 / (オータムフェスタ) / 中川東小学校校庭 / 大谷田2-1-10（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10085
+        "source_row_index": 10085,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f62178996b181841"
@@ -4651,12 +4652,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 17時",
         "address": "千住桜木1-7（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 17時 / 千住桜木町町会 / (元宿堰稲荷神社祭礼宵宮) / 千住桜木町公園 / 千住桜木1-7（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10086
+        "source_row_index": 10086,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_36a32fa799c78403"
@@ -4692,12 +4693,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 17時45分",
         "address": "千住5-6-2（外部サイトへリンク） / 千住1-4-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 17時45分 / 千住一丁目町会、千住二丁目町会、千住三丁目町会、千住四丁目町会、千住五丁目町会 / (千住本町五町会連合宵宮) / 千住本町住区センター / 東京芸術センター前 / 千住5-6-2（外部サイトへリンク） / 千住1-4-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10087
+        "source_row_index": 10087,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_945538b0414b2b00"
@@ -4733,12 +4734,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 18時",
         "address": "千住中居町27-18（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 18時 / 千住大川町、千住元町町会、千住柳町々会、千住寿町、千住中居町会、千住宮元町町会 / (千住祭連絡会宵宮) / 東日本銀行前 / ※東日本銀行前を出発し、大正通りを通って神輿渡御 / 千住中居町27-18（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10088
+        "source_row_index": 10088,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_23f5e83c663868b7"
@@ -4774,12 +4775,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 10時",
         "address": "千住桜木2-12-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 10時 / 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼宵宮) / 千住桜木二丁目町会々館 / 千住桜木2-12-2（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10089
+        "source_row_index": 10089,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ca73addaa866e580"
@@ -4815,12 +4816,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 18時30分",
         "address": "千住中居町27-18（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 18時30分 / 千住宮元町町会 / (八幡神社例祭宵宮大人神輿渡御) / 東日本銀行 / 千住中居町27-18（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10090
+        "source_row_index": 10090,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_fbaf4ca5305d473b"
@@ -4856,12 +4857,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9時13日 / (日曜日) / 各町会ごとに開始(土曜日) / 8時30分(日曜日)",
         "address": "千住大川町12（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9時13日 / (日曜日) / 各町会ごとに開始(土曜日) / 8時30分(日曜日) / 千住五丁目町会 / 千住大川町 / (氷川神社大祭) / 五丁目大川町氷川神社 / 千住大川町12（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10091
+        "source_row_index": 10091,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_34c3160c611d0754"
@@ -4897,12 +4898,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 9時(土曜日) / 8時(日曜日)",
         "address": "鹿浜3-12-3（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 9時(土曜日) / 8時(日曜日) / 鹿浜古内町会 / (本祭り) / 天祖神社 / 鹿浜3-12-3（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10092
+        "source_row_index": 10092,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_eb4ed89c23157526"
@@ -4938,12 +4939,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 9時(土曜日) / 10時(日曜日)",
         "address": "椿2-10-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 9時(土曜日) / 10時(日曜日) / 椿町会 / (陰祭り) / 日枝神社 / 椿2-10-4（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10093
+        "source_row_index": 10093,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_68b995a7c4ec82eb"
@@ -4979,12 +4980,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 10時 / (9月13日は7時10分から大人神輿渡御)",
         "address": "千住3-22（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 10時 / (9月13日は7時10分から大人神輿渡御) / 千住三丁目町会 / (千住本氷川神社礼祭) / 千住本氷川神社 / 千住三丁目町内 / 千住3-22（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10094
+        "source_row_index": 10094,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b6f560f8b29a2c2c"
@@ -5020,12 +5021,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時(土曜日) / 9時30分(日曜日)",
         "address": "鹿浜2-18-20（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時(土曜日) / 9時30分(日曜日) / 鹿浜糀屋町会 / (陰祭り) / 糀屋氷川神社 / 鹿浜2-18-20（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10095
+        "source_row_index": 10095,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ccbb3463bb627625"
@@ -5061,12 +5062,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時30分(土曜日) / 9時(日曜日)",
         "address": "千住中居町27-18（外部サイトへリンク） / 千住中居町12-23（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 13時30分(土曜日) / 9時(日曜日) / 千住中居町会 / (千住神社祭禮) / 東日本銀行前 / 中居町会館 / 千住中居町27-18（外部サイトへリンク） / 千住中居町12-23（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10096
+        "source_row_index": 10096,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_78d3d5a8f34a94e5"
@@ -5102,12 +5103,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 14時(土曜日) / 12時(日曜日)",
         "address": "千住龍田町9-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 14時(土曜日) / 12時(日曜日) / 千住龍田町町会 / (千住神社祭礼) / 防災ひろば(小広場) / 千住龍田町9-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10097
+        "source_row_index": 10097,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9be377fe568796bc"
@@ -5143,12 +5144,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 15時(土曜日) / 10時(日曜日)",
         "address": "千住元町33（外部サイトへリンク） / ※千住元町町会の町内",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 15時(土曜日) / 10時(日曜日) / 千住元町町会 / (元宿神社祭礼) / 元宿神社 / 千住元町33（外部サイトへリンク） / ※千住元町町会の町内 / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10098
+        "source_row_index": 10098,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_523e9e75521a5f63"
@@ -5184,12 +5185,12 @@
         "event_year": 2026,
         "event_date_text": "9月12日 / (土曜日) / 9月13日 / (日曜日) / 16時(土曜日) / 10時(日曜日)",
         "address": "鹿浜2-28-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月12日 / (土曜日) / 9月13日 / (日曜日) / 16時(土曜日) / 10時(日曜日) / 鹿浜島町会 / (陰祭り) / 島氷川神社 / 鹿浜2-28-4（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10099
+        "source_row_index": 10099,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_165f394814154d6e"
@@ -5225,12 +5226,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 9時",
         "address": "千住緑町2-26-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時 / 千住緑町町会 / (千住神社神輿) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10100
+        "source_row_index": 10100,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_9bbd3ae6468415de"
@@ -5266,12 +5267,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 9時",
         "address": "千住桜木1-9-9（外部サイトへリンク） / 千住桜木1-8-15（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時 / 千住桜木町町会 / (元宿堰稲荷神社祭礼) / 千住龍田町交差点 / 千寿桜小学校 / 千住桜木1-9-9（外部サイトへリンク） / 千住桜木1-8-15（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10101
+        "source_row_index": 10101,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_46b9af73f0e095bd"
@@ -5307,12 +5308,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 9時",
         "address": "千住2-11（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時 / 千住二丁目町会 / (千住神社祭礼) / 勝専寺(赤門寺)出発 / 千住2-11（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10102
+        "source_row_index": 10102,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_73c69b5636ddaa83"
@@ -5348,12 +5349,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 9時",
         "address": "千住緑町2-26-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時 / 千住緑町祭礼 / (千住神社祭礼) / 千住緑町会館前 / 千住緑町2-26-17（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10103
+        "source_row_index": 10103,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3b44a82b14b61942"
@@ -5389,12 +5390,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 10時",
         "address": "千住1-2-9（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 10時 / 千住一丁目町会 / (千住神社祭礼) / 慈眼寺駐車場出発 / 千住1-2-9（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10104
+        "source_row_index": 10104,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e9534b575778c056"
@@ -5430,12 +5431,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 13時",
         "address": "東伊興4-9-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 13時 / 狭間町会 / (はざままつり) / 神輿渡御 / 伊興遺跡公園前から町会エリア一周 / 東伊興4-9-1（外部サイトへリンク） / 伊興区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10105
+        "source_row_index": 10105,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_edcfd5643f7e7ce2"
@@ -5471,12 +5472,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 10時",
         "address": "千住4-31（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 10時 / 千住四丁目町会 / (千住四丁目氷川神社祭礼) / 千住四丁目氷川神社 / 千住4-31（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10106
+        "source_row_index": 10106,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f88d0cd95ece856d"
@@ -5512,12 +5513,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 10時 / 13時30分",
         "address": "千住桜木2-12-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 10時 / 13時30分 / 千住桜木二丁目町会 / (元宿堰稲荷神社祭礼) / (元宿堰稲荷神社祭礼神輿、山車渡御) / 千住桜木二丁目町会々館 / 千住桜木2-12-2（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10107
+        "source_row_index": 10107,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_1f0682ac8ab86f1e"
@@ -5553,12 +5554,12 @@
         "event_year": 2026,
         "event_date_text": "9月13日 / (日曜日) / 9時30分",
         "address": "千住宮元町3-8（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月13日 / (日曜日) / 9時30分 / 千住宮元町町会 / (八幡神社例祭本宮大人神輿、子供神輿、山車渡御) / 八幡神社 / 千住宮元町3-8（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10108
+        "source_row_index": 10108,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_38eb409775df91bc"
@@ -5594,12 +5595,12 @@
         "event_year": 2026,
         "event_date_text": "9月17日 / (木曜日) / 9月18日 / (金曜日) / 9月19日 / (土曜日) / 18時30分",
         "address": "柳原2-38-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月17日 / (木曜日) / 9月18日 / (金曜日) / 9月19日 / (土曜日) / 18時30分 / 柳原北町会 / 柳原南町会 / 柳原西町会 / 柳原東町会 / (柳原稲荷神社祭礼) / 柳原稲荷神社 / 柳原2-38-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10109
+        "source_row_index": 10109,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_814926fb31861c46"
@@ -5635,12 +5636,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 10時",
         "address": "柳原2-38-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 10時 / 柳原西町会 / (こども御輿) / 柳原稲荷神社 / 柳原2-38-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10110
+        "source_row_index": 10110,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_56bc0641548c15cb"
@@ -5676,12 +5677,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 16時",
         "address": "六木3-26-8（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 16時 / 六木三丁目町会 / (六木三丁目町会 子ども祭り) / 諏訪神社境内 / 六木3-26-8（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10111
+        "source_row_index": 10111,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b626f7f0e6660c61"
@@ -5717,12 +5718,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 18時",
         "address": "足立3-34（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 18時 / 足立高砂町会 / (三町連合万灯神輿渡御) / 五反野駅周辺 / 足立3-34（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10112
+        "source_row_index": 10112,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c6cc3afafe455105"
@@ -5758,12 +5759,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 9月20日 / (日曜日) / 9時",
         "address": "扇3-12-11（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 9月20日 / (日曜日) / 9時 / 扇三丁目町会 / (秋祭り) / 扇三丁目公民館広場 / 扇3-12-11（外部サイトへリンク） / 興本区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10113
+        "source_row_index": 10113,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c80235343d74c608"
@@ -5799,12 +5800,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 9月20日 / (日曜日) / 14時(土曜日) / 9時(日曜日)",
         "address": "梅田1-20-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 9月20日 / (日曜日) / 14時(土曜日) / 9時(日曜日) / 千住八千代町会 / (こども模擬店) / (こども引き太鼓) / 八千代公民館 / 梅田1-20-1（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10114
+        "source_row_index": 10114,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_a76283b4bf17a0b6"
@@ -5840,12 +5841,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 9月20日 / (日曜日) / 18時",
         "address": "舎人5-21（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 9月20日 / (日曜日) / 18時 / 舎人町会 / (舎人氷川神社大祭) / 舎人氷川神社境内 / 舎人5-21（外部サイトへリンク） / 舎人区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10115
+        "source_row_index": 10115,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_30a9a0f02824866c"
@@ -5881,12 +5882,12 @@
         "event_year": 2026,
         "event_date_text": "9月19日 / (土曜日) / 9月20日 / (日曜日) / 19時",
         "address": "千住旭町30-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月19日 / (土曜日) / 9月20日 / (日曜日) / 19時 / 日ノ出町自治会 / (盆踊り大会) / 千住旭公園 / 千住旭町30-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10116
+        "source_row_index": 10116,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_978d1d95f9e41689"
@@ -5922,12 +5923,12 @@
         "event_year": 2026,
         "event_date_text": "9月20日 / (日曜日) / 9時",
         "address": "足立1-27-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月20日 / (日曜日) / 9時 / 足立高砂町会 / (高砂神社祭礼) / 高砂神社 / 足立1-27-17（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10117
+        "source_row_index": 10117,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_d31ab6ef501f62e6"
@@ -5963,12 +5964,12 @@
         "event_year": 2026,
         "event_date_text": "9月20日 / (日曜日) / 10時 / 13時",
         "address": "千住仲町48-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月20日 / (日曜日) / 10時 / 13時 / 千住仲町会 / (仲町氷川神社祭礼) / (仲町氷川神社祭礼神輿渡御) / 仲町氷川神社 / 千住仲町48-2（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10118
+        "source_row_index": 10118,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f5a5542e6bb6accb"
@@ -6004,12 +6005,12 @@
         "event_year": 2026,
         "event_date_text": "9月20日 / (日曜日) / 14時",
         "address": "千住東2-20-14（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月20日 / (日曜日) / 14時 / 千住旭町自治会 / 千住旭町会 / 東二 / ※東二＝千住東町町会と千住東二丁目自治会合同の祭礼員会 / (三町連合神輿渡御) / 東二丁目自治会館前出発 / 千住東2-20-14（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10119
+        "source_row_index": 10119,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_0b42f4eae5b8ea77"
@@ -6045,12 +6046,12 @@
         "event_year": 2026,
         "event_date_text": "9月26日 / (土曜日) / 10時",
         "address": "鹿浜2-39（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月26日 / (土曜日) / 10時 / 鹿浜団地自治会 / (鹿浜団地まつり) / 鹿浜団地集会所横 / 鹿浜2-39（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10120
+        "source_row_index": 10120,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_d90a4fce86b6b09f"
@@ -6086,12 +6087,12 @@
         "event_year": 2026,
         "event_date_text": "9月26日 / (土曜日) / 18時",
         "address": "千住橋戸町25-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月26日 / (土曜日) / 18時 / 千住橋戸町自治会 / (演芸会) / 橋戸稲荷神社 / 千住橋戸町25-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10121
+        "source_row_index": 10121,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c7d214307152a47a"
@@ -6127,12 +6128,12 @@
         "event_year": 2026,
         "event_date_text": "9月26日 / (土曜日) / 9月27日 / (日曜日) / 9時",
         "address": "栗原3-7-1（外部サイトへリンク） 他",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月26日 / (土曜日) / 9月27日 / (日曜日) / 9時 / 栗原町会 / (栗原町会第3・5・11支部合同子供夏まつり) / 栗原町会会館、集会所、他周辺道路 / 栗原3-7-1（外部サイトへリンク） 他 / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10122
+        "source_row_index": 10122,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_45ad7430d7a3c08c"
@@ -6168,12 +6169,12 @@
         "event_year": 2026,
         "event_date_text": "9月26日 / (土曜日) / 9月27日 / (日曜日) / 18時",
         "address": "古千谷本町2-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月26日 / (土曜日) / 9月27日 / (日曜日) / 18時 / 古千谷本町町会 / (古千谷氷川神社祭礼) / 古千谷氷川神社境内 / 古千谷本町2-2（外部サイトへリンク） / 舎人区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10123
+        "source_row_index": 10123,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b264fbd5c2d11520"
@@ -6209,12 +6210,12 @@
         "event_year": 2026,
         "event_date_text": "9月26日 / (土曜日) / 9月27日 / (日曜日) / 18時(土曜日) / 9時(日曜日)",
         "address": "東和2-5-24（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月26日 / (土曜日) / 9月27日 / (日曜日) / 18時(土曜日) / 9時(日曜日) / 東和一丁目自治会 / 東和二丁目自治会 / 東和二丁目西自治会 / 東綾瀬自治会 / (北三谷稲荷神社大祭) / 北三谷稲荷神社 / 東和2-5-24（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10124
+        "source_row_index": 10124,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_7e6b2a73e7951477"
@@ -6250,12 +6251,12 @@
         "event_year": 2026,
         "event_date_text": "9月27日 / (日曜日) / 9時",
         "address": "千住橋戸町25-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月27日 / (日曜日) / 9時 / 千住橋戸町自治会 / (橋戸稲荷神社祭礼) / 橋戸稲荷神社 / 千住橋戸町25-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10125
+        "source_row_index": 10125,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f9b68e56e63cee58"
@@ -6291,12 +6292,12 @@
         "event_year": 2026,
         "event_date_text": "9月27日 / (日曜日) / 11時",
         "address": "保木間5-32-4（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 9月27日 / (日曜日) / 11時 / 水神町会 / (水神町会ふれあい祭り) / 水神橋公園 / 保木間5-32-4（外部サイトへリンク） / 竹の塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10126
+        "source_row_index": 10126,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_7f4c1060c238830f"
@@ -6332,12 +6333,12 @@
         "event_year": 2026,
         "event_date_text": "10月3日 / (土曜日) / 10月4日 / (日曜日) / 13時",
         "address": "西新井1-29-15（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月3日 / (土曜日) / 10月4日 / (日曜日) / 13時 / 西新井中央町会 / (町会祭り) / 中郷公園 / 西新井1-29-15（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10127
+        "source_row_index": 10127,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_3ec5df74b56af0df"
@@ -6373,12 +6374,12 @@
         "event_year": 2026,
         "event_date_text": "10月3日 / (土曜日) / 10月4日 / (日曜日) / 16時(土曜日) / 13時(日曜日)",
         "address": "綾瀬2-23-14（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月3日 / (土曜日) / 10月4日 / (日曜日) / 16時(土曜日) / 13時(日曜日) / 普賢寺自治会 / (北野神社祭礼) / 綾瀬北野神社 / 綾瀬2-23-14（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10128
+        "source_row_index": 10128,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_bbb258018bce45ef"
@@ -6414,12 +6415,12 @@
         "event_year": 2026,
         "event_date_text": "10月4日 / (日曜日) / 9時15分",
         "address": "千住東1-24-5（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月4日 / (日曜日) / 9時15分 / 千住東一丁目町会 / (仲町氷川神社例祭) / 千住東一丁目会館前出発 / 千住東1-24-5（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10129
+        "source_row_index": 10129,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_1630b1fbc25692b6"
@@ -6455,12 +6456,12 @@
         "event_year": 2026,
         "event_date_text": "10月4日 / (日曜日) / 11時",
         "address": "加賀2-31（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月4日 / (日曜日) / 11時 / 都住加賀二丁目自治会 / (キッチンカーフェスティバル) / 加賀二丁目団地遊歩道広場 / 加賀2-31（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10130
+        "source_row_index": 10130,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_47b471924bb92b32"
@@ -6496,12 +6497,12 @@
         "event_year": 2026,
         "event_date_text": "10月4日 / (日曜日) / 11時",
         "address": "大谷田3-7-17（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月4日 / (日曜日) / 11時 / 大谷田西部自治会 / (秋まつり) / 五丁田公園 / 大谷田3-7-17（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10131
+        "source_row_index": 10131,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_8309fab07992d856"
@@ -6537,12 +6538,12 @@
         "event_year": 2026,
         "event_date_text": "10月4日 / (日曜日) / 13時",
         "address": "竹の塚2-25（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月4日 / (日曜日) / 13時 / 竹の塚中町会 / (竹の塚中町会こどもフェスティバル) / 竹の塚第六公園野球場 / 竹の塚2-25（外部サイトへリンク） / 竹の塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10132
+        "source_row_index": 10132,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_60d403c3e2862e9c"
@@ -6578,12 +6579,12 @@
         "event_year": 2026,
         "event_date_text": "10月10日 / (土曜日) / 13時",
         "address": "千住河原町10-13（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月10日 / (土曜日) / 13時 / 千住河原町自治会 / (かわら子ども縁日) / 河原町稲荷神社内 / 千住河原町10-13（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10133
+        "source_row_index": 10133,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_4faef4bcd0319882"
@@ -6619,12 +6620,12 @@
         "event_year": 2026,
         "event_date_text": "10月10日 / (土曜日) / 10月11日 / (日曜日) / 13時30分(土曜日) / 9時30分(日曜日)",
         "address": "小台2-9（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月10日 / (土曜日) / 10月11日 / (日曜日) / 13時30分(土曜日) / 9時30分(日曜日) / 小台町会 / ラ・セーヌ小台自治会 / ライオンズマンション荒川遊園アクアステージ自治会 / (小台天祖神社例大祭) / 小台天祖神社 / 小台2-9（外部サイトへリンク） / 江南区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10134
+        "source_row_index": 10134,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f097958746179860"
@@ -6660,12 +6661,12 @@
         "event_year": 2026,
         "event_date_text": "10月10日 / (土曜日) / 10月11日 / (日曜日) / 16時(土曜日) / 8時(日曜日)",
         "address": "足立4-35-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月10日 / (土曜日) / 10月11日 / (日曜日) / 16時(土曜日) / 8時(日曜日) / 足立四丁目町会 / (末若氷川神社祭礼) / 末若氷川神社 / 足立4-35-10（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10135
+        "source_row_index": 10135,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_f1b7d0b6bf78e552"
@@ -6701,12 +6702,12 @@
         "event_year": 2026,
         "event_date_text": "10月10日 / (土曜日) / 10月11日 / (日曜日) / 9時",
         "address": "宮城1-38（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月10日 / (土曜日) / 10月11日 / (日曜日) / 9時 / 宮城町会 / (秋祭り) / 氷川神社 / 宮城公園 / 宮城1-38（外部サイトへリンク） / 江南区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10136
+        "source_row_index": 10136,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_e33936c9b014fa2c"
@@ -6742,12 +6743,12 @@
         "event_year": 2026,
         "event_date_text": "10月10日 / (土曜日) / 10月11日 / (日曜日) / 18時",
         "address": "西新井2-27-2（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月10日 / (土曜日) / 10月11日 / (日曜日) / 18時 / 西新井東町会 / (秋まつり・盆踊り大会) / いかづち公園 / 西新井2-27-2（外部サイトへリンク） / 西新井区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10137
+        "source_row_index": 10137,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_50e81f2a33108dd8"
@@ -6783,12 +6784,12 @@
         "event_year": 2026,
         "event_date_text": "10月10日 / (土曜日) / 10月11日 / (日曜日) / 未定",
         "address": "江北2-43-8（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月10日 / (土曜日) / 10月11日 / (日曜日) / 未定 / 下沼田町会 / (下沼田町会江北氷川神社例大祭) / 江北氷川神社 / 江北2-43-8（外部サイトへリンク） / 江北区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10138
+        "source_row_index": 10138,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_a3f4f54c2dd0d855"
@@ -6824,12 +6825,12 @@
         "event_year": 2026,
         "event_date_text": "10月11日 / (日曜日) / 10時",
         "address": "江北6-30-22（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月11日 / (日曜日) / 10時 / 日本住宅公団江北六丁目団地自治会 / (江北六丁目団地縁日) / 江北六丁目地内児童遊園 / 江北6-30-22（外部サイトへリンク） / 鹿浜区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10139
+        "source_row_index": 10139,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_ebee48bea0680458"
@@ -6865,12 +6866,12 @@
         "event_year": 2026,
         "event_date_text": "10月11日 / (日曜日) / 11時",
         "address": "千住河原町10-13（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月11日 / (日曜日) / 11時 / 千住河原町自治会 / (河原町稲荷神社祭礼子供神輿、山車渡御(予定)) / 河原町稲荷神社内 / 千住河原町10-13（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10140
+        "source_row_index": 10140,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_d394d621a82bd358"
@@ -6906,12 +6907,12 @@
         "event_year": 2026,
         "event_date_text": "10月11日 / (日曜日) / 11時",
         "address": "西保木間4-12（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月11日 / (日曜日) / 11時 / 東京都住宅供給公社西保木間住宅自治会 / (公社秋祭り) / 公社内児童遊園 / 西保木間4-12（外部サイトへリンク） / 竹の塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10141
+        "source_row_index": 10141,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_086f33b4f7590758"
@@ -6947,12 +6948,12 @@
         "event_year": 2026,
         "event_date_text": "10月12日 / (月曜日) / 10時",
         "address": "千住曙町40-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月12日 / (月曜日) / 10時 / イニシア千住曙町自治会 / (イニシアの秋まつり) / イニシア千住曙町敷地内 / 千住曙町40-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10142
+        "source_row_index": 10142,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_587fde5e5f573b87"
@@ -6988,12 +6989,12 @@
         "event_year": 2026,
         "event_date_text": "10月17日 / (土曜日) / 12時",
         "address": "大谷田2-3-35（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月17日 / (土曜日) / 12時 / ボナハイツ中川自治会 / (ボナまつり) / ボナハイツ中川自治会敷地内 / 大谷田2-3-35（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10143
+        "source_row_index": 10143,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_7dcf2a012e93dd07"
@@ -7029,12 +7030,12 @@
         "event_year": 2026,
         "event_date_text": "10月17日 / (土曜日) / 15時",
         "address": "神明3-19（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月17日 / (土曜日) / 15時 / 神明仲町会 / (子どもまつり) / 神明天祖神社 社務所前広場 / 神明3-19（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10144
+        "source_row_index": 10144,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b497982d388e1b93"
@@ -7070,12 +7071,12 @@
         "event_year": 2026,
         "event_date_text": "10月17日 / (土曜日) / 18時",
         "address": "大谷田1-1-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月17日 / (土曜日) / 18時 / 大谷田一丁目団地自治会 / (秋まつり(宵宮)) / 大谷田一丁目団地敷地内 / 大谷田1-1-10（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10145
+        "source_row_index": 10145,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_99d3dc56c0ab9909"
@@ -7111,12 +7112,12 @@
         "event_year": 2026,
         "event_date_text": "10月17日 / (土曜日) / 10月18日 / (日曜日) / 17時(土曜日) / 9時(日曜日)",
         "address": "中川5-7-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月17日 / (土曜日) / 10月18日 / (日曜日) / 17時(土曜日) / 9時(日曜日) / 東淵江自治会 / 大谷田東自治会 / 隅田自治会 / 大谷田二丁目自治会 / 大谷田上自治会 / 大谷田西部自治会 / 大谷田一丁目団地自治会 / (大谷田氷川神社祭礼) / 大谷田氷川神社 / 中川5-7-10（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10146
+        "source_row_index": 10146,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_7fc953f6d6e9df3c"
@@ -7152,12 +7153,12 @@
         "event_year": 2026,
         "event_date_text": "10月17日 / (土曜日) / 10月18日 / (日曜日) / 18時30分(土曜日) / 8時(日曜日)",
         "address": "綾瀬4-9-9（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月17日 / (土曜日) / 10月18日 / (日曜日) / 18時30分(土曜日) / 8時(日曜日) / 綾瀬東町会 / (綾瀬稲荷神社大祭) / 綾瀬稲荷神社 / 綾瀬4-9-9（外部サイトへリンク） / 東綾瀬区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10147
+        "source_row_index": 10147,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_38d35fd43246091a"
@@ -7193,12 +7194,12 @@
         "event_year": 2026,
         "event_date_text": "10月18日 / (日曜日) / 8時",
         "address": "大谷田1-1-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月18日 / (日曜日) / 8時 / 大谷田一丁目団地自治会 / (秋まつり) / 大谷田一丁目団地敷地内 / 大谷田1-1-10（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10148
+        "source_row_index": 10148,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_d5ffe227797543f7"
@@ -7234,12 +7235,12 @@
         "event_year": 2026,
         "event_date_text": "10月18日 / (日曜日) / 9時",
         "address": "南花畑2-41-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月18日 / (日曜日) / 9時 / 花保親交町会 / (運動会) / 花保中学校 / 南花畑2-41-1（外部サイトへリンク） / 保塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10149
+        "source_row_index": 10149,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_56fa4f6d5d32a3a5"
@@ -7275,12 +7276,12 @@
         "event_year": 2026,
         "event_date_text": "10月18日 / (日曜日) / 12時",
         "address": "東保木間2-13（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月18日 / (日曜日) / 12時 / 東保木間町会 / (秋祭り) / 東保木間公園 / 東保木間2-13（外部サイトへリンク） / 竹の塚区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10150
+        "source_row_index": 10150,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_07320e561b51c0aa"
@@ -7316,12 +7317,12 @@
         "event_year": 2026,
         "event_date_text": "10月25日 / (日曜日) / 10時",
         "address": "千住宮元町24-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月25日 / (日曜日) / 10時 / 千住一丁目町会、千住二丁目町会、千住寿町南町会、千住寿町北町会、千住柳町々会、千住龍田町町会、千住中居町会、千住緑町町会、千住宮元町町会 / (千住神社1100周年記念縁日) / 千住神社 / 千住宮元町24-1（外部サイトへリンク） / 千住区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10151
+        "source_row_index": 10151,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_35a6e40300edf49f"
@@ -7357,12 +7358,12 @@
         "event_year": 2026,
         "event_date_text": "10月25日 / (日曜日) / 13時",
         "address": "青井6-2-1（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月25日 / (日曜日) / 13時 / 青井六丁目アパート自治会 / (ファミリー祭) / 自治会集会所 / 青井6-2-1（外部サイトへリンク） / 中央本町区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10152
+        "source_row_index": 10152,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b3796c7ad5b33b5d"
@@ -7398,12 +7399,12 @@
         "event_year": 2026,
         "event_date_text": "10月31日 / (土曜日) / 13時(宮城小学校) / 16時(南宮城公園)",
         "address": "宮城1-27-25（外部サイトへリンク） / 宮城1-13-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 10月31日 / (土曜日) / 13時(宮城小学校) / 16時(南宮城公園) / 小台町会 / (ハッピーイベント) / 宮城小学校 / 南宮城公園 / 宮城1-27-25（外部サイトへリンク） / 宮城1-13-10（外部サイトへリンク） / 江南区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10153
+        "source_row_index": 10153,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_c3d460b1070b0e96"
@@ -7414,15 +7415,15 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 92.0,
-      "title": "佐野一丁目町会 / (こどもまつり(仮))",
-      "event_name": "佐野一丁目町会 / (こどもまつり(仮))",
-      "venue": "未定",
+      "title": "佐野一丁目町会 / (こどもまつり)",
+      "event_name": "佐野一丁目町会 / (こどもまつり)",
+      "venue": "八百免公園",
       "event_year": 2026,
-      "source_key": "ward-official-fac2820c9082698a",
+      "source_key": "ward-official-6c09b83687d7cbf8",
       "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
       "recommended_action": "review_official_source",
       "payload": {
-        "id": "ward-official-fac2820c9082698a",
+        "id": "ward-official-6c09b83687d7cbf8",
         "decision": "pending",
         "suggested_source_type": "official",
         "suggested_score": 92,
@@ -7431,23 +7432,23 @@
         "source_registry_id": "adachi-bonfes-2026",
         "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
         "source_domain": "www.city.adachi.tokyo.jp",
-        "venue": "未定",
-        "event_name": "佐野一丁目町会 / (こどもまつり(仮))",
+        "venue": "八百免公園",
+        "event_name": "佐野一丁目町会 / (こどもまつり)",
         "organizer": "佐野一丁目町会",
-        "festival_name": "こどもまつり(仮",
+        "festival_name": "こどもまつり",
         "region": "足立区",
         "event_year": 2026,
-        "event_date_text": "11月3日 / (火曜日) / 未定",
-        "address": "未定",
-        "status_hint": "",
-        "memo": "ward registry: adachi-bonfes-2026 / 11月3日 / (火曜日) / 未定 / 佐野一丁目町会 / (こどもまつり(仮)) / 未定 / 未定 / 佐野区民事務所",
+        "event_date_text": "11月23日 / (月曜日) / 10時",
+        "address": "佐野1-5-1（外部サイトへリンク）",
+        "memo": "ward registry: adachi-bonfes-2026 / 11月23日 / (月曜日) / 10時 / 佐野一丁目町会 / (こどもまつり) / 八百免公園 / 佐野1-5-1（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10154
+        "source_row_index": 10154,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
-      "inbox_id": "inbox_1c994cd8e8bf41f2"
+      "inbox_id": "inbox_e05a40ba8a814a07"
     },
     {
       "kind": "official_source",
@@ -7480,12 +7481,12 @@
         "event_year": 2026,
         "event_date_text": "11月23日 / (月曜日) / 10時",
         "address": "大谷田1-1-10（外部サイトへリンク）",
-        "status_hint": "",
         "memo": "ward registry: adachi-bonfes-2026 / 11月23日 / (月曜日) / 10時 / 大谷田一丁目団地自治会 / (もちつき大会) / 大谷田一丁目団地敷地内 / 大谷田1-1-10（外部サイトへリンク） / 佐野区民事務所",
         "registry_source_type": "event_calendar",
         "registry_format": "html_table",
         "parse_mode": "html_table_row",
-        "source_row_index": 10155
+        "source_row_index": 10155,
+        "status_hint": ""
       },
       "source_id": "ward_official_source",
       "inbox_id": "inbox_b021a1a409f09f7a"

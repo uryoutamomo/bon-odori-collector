@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:15:22.927183+00:00",
+  "generated_at": "2026-10-29T13:31:49.050666+00:00",
   "generated_by": "build_official_source_review.py",
   "review_policy": {
     "decision_values": [
@@ -16,17 +16,17 @@
     "hold": "保留"
   },
   "source_counts": {
-    "official": 102,
+    "official": 101,
     "hp": 82,
     "post": 12
   },
-  "candidate_count": 196,
+  "candidate_count": 195,
   "decision_counts": {
-    "pending": 190,
+    "pending": 189,
     "hold": 2,
     "official": 4
   },
-  "preserved_decision_count": 196,
+  "preserved_decision_count": 195,
   "rows": [
     {
       "id": "4649f4cf3db5",
@@ -81,24 +81,6 @@
       "event_month": "7月",
       "event_date_text": "2026 [L18]\n7/24 - 25",
       "memo": "玉川町会盆おどり大会 7月24日(金)、25日(土) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html"
-    },
-    {
-      "id": "b977b2e6f87d",
-      "decision": "pending",
-      "suggested_source_type": "official",
-      "suggested_score": 85,
-      "reason": "自治体・公的ドメイン",
-      "source_origin": "blog_registration_candidates",
-      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
-      "source_domain": "www.city.setagaya.lg.jp",
-      "already_registered": false,
-      "venue": "妙法寺",
-      "event_name": "石井戸会「納涼親睦盆踊り大会」7月25日(土)。",
-      "region": "世田谷区",
-      "scale": "小",
-      "event_month": "7月",
-      "event_date_text": "2026 [L21]\n7/25",
-      "memo": "石井戸会「納涼親睦盆踊り大会」7月25日(土)。\n・盆踊り 18時-20時。\n*例年は雨天時翌日順延。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html"
     },
     {
       "id": "c8f012b551d2",

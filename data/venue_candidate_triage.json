@@ -1,8 +1,8 @@
 {
   "counts": {
-    "registered_alias": 15,
-    "research": 535,
-    "registered": 84,
+    "registered_alias": 17,
+    "research": 536,
+    "registered": 85,
     "noise": 11
   },
   "items": [
@@ -129,17 +129,6 @@
     },
     {
       "venue": "太子堂小学校",
-      "region_hint": "世田谷区",
-      "status": "research",
-      "mapped_to": null,
-      "reason": "",
-      "priority": "high",
-      "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
-      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00l-setagaya-q.html",
-      "in_tsukiji_30min_guess": false
-    },
-    {
-      "venue": "妙法寺",
       "region_hint": "世田谷区",
       "status": "research",
       "mapped_to": null,
@@ -3637,6 +3626,17 @@
       "in_tsukiji_30min_guess": false
     },
     {
+      "venue": "妙法寺",
+      "region_hint": "杉並区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "杉並区の盆おどり情報 2026年1月より [Suginami-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00o-suginami-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
       "venue": "成宗白山神社",
       "region_hint": "杉並区",
       "status": "research",
@@ -4595,6 +4595,17 @@
     },
     {
       "venue": "豊洲3丁目公園",
+      "region_hint": "江東区",
+      "status": "research",
+      "mapped_to": null,
+      "reason": "",
+      "priority": "normal",
+      "source_title": "江東区の盆おどり情報 2026年1月より [Koto-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00h-koto-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "豊洲公園",
       "region_hint": "江東区",
       "status": "research",
       "mapped_to": null,
@@ -6728,6 +6739,17 @@
       "in_tsukiji_30min_guess": false
     },
     {
+      "venue": "馬橋小学校",
+      "region_hint": "杉並区",
+      "status": "registered",
+      "mapped_to": "馬橋小学校",
+      "reason": "exact_match",
+      "priority": "skip",
+      "source_title": "杉並区の盆おどり情報 2026年1月より [Suginami-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00o-suginami-q.html",
+      "in_tsukiji_30min_guess": false
+    },
+    {
       "venue": "宮下公園",
       "region_hint": "板橋区",
       "status": "registered",
@@ -6970,6 +6992,17 @@
       "in_tsukiji_30min_guess": true
     },
     {
+      "venue": "大噴水広場",
+      "region_hint": "台東区",
+      "status": "registered_alias",
+      "mapped_to": "上野恩賜公園",
+      "reason": "known_alias",
+      "priority": "skip",
+      "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00f-taito-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
       "venue": "御徒町南口駅前広場",
       "region_hint": "台東区",
       "status": "registered_alias",
@@ -6996,6 +7029,17 @@
       "region_hint": "台東区",
       "status": "registered_alias",
       "mapped_to": "東本願寺（浅草）",
+      "reason": "known_alias",
+      "priority": "skip",
+      "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",
+      "source_url": "http://minato-bon-odori.blogspot.com/2026/01/00f-taito-q.html",
+      "in_tsukiji_30min_guess": true
+    },
+    {
+      "venue": "祭典in上野公園",
+      "region_hint": "台東区",
+      "status": "registered_alias",
+      "mapped_to": "上野恩賜公園",
       "reason": "known_alias",
       "priority": "skip",
       "source_title": "台東区の盆おどり情報 2026年1月より [Taito-q]",

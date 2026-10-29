@@ -187,5 +187,5 @@
 | 足立区 | 千住一丁目町会、千住二丁目町会、千住寿町南町会、千住寿町北町会、千住柳町々会、千住龍田町町会、千住中居町会、千住緑町町会、千住宮元町町会 / (千住神社1100周年記念縁日) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 10月25日 / (日曜日) / 10時 |
 | 足立区 | 青井六丁目アパート自治会 / (ファミリー祭) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 10月25日 / (日曜日) / 13時 |
 | 足立区 | 小台町会 / (ハッピーイベント) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 10月31日 / (土曜日) / 13時(宮城小学校) / 16時(南宮城公園) |
-| 足立区 | 佐野一丁目町会 / (こどもまつり(仮)) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 11月3日 / (火曜日) / 未定 |
+| 足立区 | 佐野一丁目町会 / (こどもまつり) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 11月23日 / (月曜日) / 10時 |
 | 足立区 | 大谷田一丁目団地自治会 / (もちつき大会) | [link](https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html) | 11月23日 / (月曜日) / 10時 |
