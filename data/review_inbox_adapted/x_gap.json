@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "959cc35a266b411ac4439dcd0dd60946aa359cea39f9d25336cf1a1ca7601824",
-  "input_size_bytes": 2216552,
+  "input_sha256": "b9ee46a73fd229885fd650e4483b702f0a21e91c5ff42566f187a44369066d61",
+  "input_size_bytes": 2216892,
   "item_count": 5,
   "items": [
     {
@@ -11,182 +11,23 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "🌞8/22,23 第72回 大井どんたく🌞\n大井町駅前中央通りで大井どんたくが開催されます。音楽ステージや盆踊りやダンス、バラエティ豊かなグルメコーナー、屋台の",
+      "title": "【盆踊り情報2026】【下丸子】8/22(土)、23(日)下丸子東町会が工和会館周辺で「夏祭り・盆踊り大会」\nかき氷やフランクフルト、景品付きくじ引きがなんとA",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2090641209819881579",
-      "source_url": "https://x.com/shinagawakanko/status/2090641209819881579",
+      "source_key": "x:2090710504847397233",
+      "source_url": "https://x.com/otafull/status/2090710504847397233",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_7b6261a384b9def8",
-        "source_key": "x:2090641209819881579",
+        "candidate_id": "xgap_97825a869ad96337",
+        "source_key": "x:2090710504847397233",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/shinagawakanko/status/2090641209819881579",
-        "source_text": "\n🌞8/22,23 第72回 大井どんたく🌞\n大井町駅前中央通りで大井どんたくが開催されます。音楽ステージや盆踊りやダンス、バラエティ豊かなグルメコーナー、屋台の出店など、さまざまなイベントが行われます。\nhttps://t.co/XKDDxD2irl\n#大井町 #品川区",
-        "source_author": "@shinagawakanko",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@shinagawakanko",
-          "account_name": "しながわ観光協会（東京 品川のおでかけ情報)",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "8/22"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "大井町駅前中央通り",
-          "region_hint": "品川区",
-          "address": "品川区大井1丁目付近",
-          "source_url": "https://www.enjoytokyo.jp/event/356760/"
-        },
-        "voice": {
-          "source": "x",
-          "account": "@shinagawakanko",
-          "name": "しながわ観光協会（東京 品川のおでかけ情報)",
-          "profile_description": "品川エリアのイベントやグルメ、観光スポットなど最旬情報をお届けします。 一般社団法人しながわ観光協会の公式アカウントです。 © 2026 SANRIO CO., LTD. APPROVAL NO. L664723",
-          "title": "",
-          "text": "🌞8/22,23 第72回 大井どんたく🌞\n大井町駅前中央通りで大井どんたくが開催されます。音楽ステージや盆踊りやダンス、バラエティ豊かなグルメコーナー、屋台の出店など、さまざまなイベントが行われます。\nhttps://t.co/XKDDxD2irl\n#大井町 #品川区",
-          "url": "https://x.com/shinagawakanko/status/2090641209819881579",
-          "date": "2026-08-21T03:24:41+00:00",
-          "tweet_id": "2090641209819881579",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "critique_post": false
-        },
-        "source_urls": [
-          "https://x.com/shinagawakanko/status/2090641209819881579"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_3553d77464052b81"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090650162008084612",
-      "source_url": "https://x.com/adachi_city/status/2090650162008084612",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_7908a3dc8a816e57",
-        "source_key": "x:2090650162008084612",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/adachi_city/status/2090650162008084612",
-        "source_text": "\n花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 #盆踊り https://t.co/0ohuJfYwBf",
-        "source_author": "@adachi_city",
-        "source_officiality": {
-          "classification": "registered_official_social",
-          "score": 100,
-          "handle": "@adachi_city",
-          "account_name": "足立区役所",
-          "source_type": "official",
-          "trust_level": "organizer_official",
-          "reasons": [
-            "registered_official_source_account"
-          ],
-          "recommended_action": "use_as_confirmed_source_after_post_review"
-        },
-        "date_hints": [
-          "８月２１日",
-          "１９時",
-          "１８時"
-        ],
-        "observed_dates": [],
-        "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "一ツ家二丁目こどもの広場",
-          "region_hint": "足立区",
-          "address": "足立区一ツ家2-21",
-          "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html"
-        },
-        "voice": {
-          "source": "x",
-          "account": "@adachi_city",
-          "name": "足立区役所",
-          "profile_description": "足立区の公式アカウントです。\n当アカウントは情報発信専用につきフォローやリプライは行いません。足立区に対するご意見等は区のホームページより報道広報課にお寄せください。",
-          "title": "",
-          "text": "花保町会の盆踊りが８月２１日金曜日に花保広場（花保さくら公園　南花畑３－１）で１９時から開催されます。また、保塚町町会・一ツ家二丁目町会の合同盆踊りが２９日土曜日に一ツ家二丁目こどもの広場（一ツ家２－２１）で１８時から始まります。どなたでも参加できますよ！ \n#盆踊り足立区 #盆踊り https://t.co/0ohuJfYwBf",
-          "url": "https://x.com/adachi_city/status/2090650162008084612",
-          "date": "2026-08-21T04:00:15+00:00",
-          "tweet_id": "2090650162008084612",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQN7O8sagAA5Gct.jpg",
-            "https://t.co/0ohuJfYwBf",
-            "pic.x.com/0ohuJfYwBf"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/adachi_city/status/2090650162008084612"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQN7O8sagAA5Gct.jpg",
-          "https://t.co/0ohuJfYwBf",
-          "pic.x.com/0ohuJfYwBf"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "official_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_545ec4619f86c965"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P0",
-      "priority_score": 125,
-      "title": "【盆踊り情報2026】【御嶽山】8/22(土)・23(日)「盆踊り大会」開催♪\n踊り参加者にはアイスキャンディーをプレゼント🫶 美味しい模擬店やゲーム、23日(",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090680299038425360",
-      "source_url": "https://x.com/otafull/status/2090680299038425360",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_49dd1e91d102fc56",
-        "source_key": "x:2090680299038425360",
-        "lane_hint": "lane2",
-        "candidate_kind": "official_new_event",
-        "priority_score": 125,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/otafull/status/2090680299038425360",
-        "source_text": "\n【盆踊り情報2026】【御嶽山】8/22(土)・23(日)「盆踊り大会」開催♪\n踊り参加者にはアイスキャンディーをプレゼント🫶 美味しい模擬店やゲーム、23日(日)には阿波踊りもありますよ～🏮✨\nhttps://t.co/SJTO8KhXAS\n#大田区　#商店街　#御嶽山　#盆踊り",
+        "source_url": "https://x.com/otafull/status/2090710504847397233",
+        "source_text": "\n【盆踊り情報2026】【下丸子】8/22(土)、23(日)下丸子東町会が工和会館周辺で「夏祭り・盆踊り大会」\nかき氷やフランクフルト、景品付きくじ引きがなんとALL100円🙌💕\nhttps://t.co/Pj4rlvNeva\n#大田区　#商店街　#下丸子　#盆踊り",
         "source_author": "@otafull",
         "source_officiality": {
           "classification": "registered_official_social",
@@ -212,18 +53,18 @@
           "name": "おーたふる／大田区商店街連合会",
           "profile_description": "東京都大田区内の新店舗、イベントやグルメ、おすすめスポット、お得情報の紹介などを中心につぶやいています。",
           "title": "",
-          "text": "【盆踊り情報2026】【御嶽山】8/22(土)・23(日)「盆踊り大会」開催♪\n踊り参加者にはアイスキャンディーをプレゼント🫶 美味しい模擬店やゲーム、23日(日)には阿波踊りもありますよ～🏮✨\nhttps://t.co/SJTO8KhXAS\n#大田区　#商店街　#御嶽山　#盆踊り",
-          "url": "https://x.com/otafull/status/2090680299038425360",
-          "date": "2026-08-21T06:00:00+00:00",
-          "tweet_id": "2090680299038425360",
+          "text": "【盆踊り情報2026】【下丸子】8/22(土)、23(日)下丸子東町会が工和会館周辺で「夏祭り・盆踊り大会」\nかき氷やフランクフルト、景品付きくじ引きがなんとALL100円🙌💕\nhttps://t.co/Pj4rlvNeva\n#大田区　#商店街　#下丸子　#盆踊り",
+          "url": "https://x.com/otafull/status/2090710504847397233",
+          "date": "2026-08-21T08:00:02+00:00",
+          "tweet_id": "2090710504847397233",
           "tags": [
             "🟡関心",
-            "q-base"
+            "q-venue-tokyo-wards"
           ],
           "critique_post": false
         },
         "source_urls": [
-          "https://x.com/otafull/status/2090680299038425360"
+          "https://x.com/otafull/status/2090710504847397233"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -231,7 +72,7 @@
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_26f8a8ac07e7c539"
+      "inbox_id": "inbox_20b6c98165afccaf"
     },
     {
       "kind": "x_gap",
@@ -239,29 +80,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "子ども達は、もうすぐ夏休み☀️ 築地本願寺納涼盆踊り大会は、7/29(水)～8/1(土)までの4日間🌽https://t.co/4Zpe8nPHBA\n中央区大江",
+      "title": "【習８夏まつり納涼盆踊りの開催について】\n\n８月22日(土),23日(日)開催予定の習８夏まつり納涼盆踊りですが、予定通り開催いたします。\n８月22日(土)の朝",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2077625579999019099",
-      "source_url": "https://x.com/yamarie0324/status/2077625579999019099",
+      "source_key": "x:2090746208843399485",
+      "source_url": "https://x.com/8_chokai/status/2090746208843399485",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_d97180f99ace93d7",
-        "source_key": "x:2077625579999019099",
+        "candidate_id": "xgap_db7b7237e61258be",
+        "source_key": "x:2090746208843399485",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/yamarie0324/status/2077625579999019099",
-        "source_text": "\n子ども達は、もうすぐ夏休み☀️ 築地本願寺納涼盆踊り大会は、7/29(水)～8/1(土)までの4日間🌽https://t.co/4Zpe8nPHBA\n中央区大江戸まつり盆おどり大会は、8/21(金)、22(土)16時から。どちらも中央区の夏の風物詩ですね🎐https://t.co/3M5NVMFLGQ\n\n#盆踊り大会 https://t.co/WWI2rS7ybO",
-        "source_author": "@yamarie0324",
+        "source_url": "https://x.com/8_chokai/status/2090746208843399485",
+        "source_text": "\n【習８夏まつり納涼盆踊りの開催について】\n\n８月22日(土),23日(日)開催予定の習８夏まつり納涼盆踊りですが、予定通り開催いたします。\n８月22日(土)の朝８時より会場設営も予定通り実施いたしますので、班長ならびに関係者の皆様はご協力をお願いします。 https://t.co/I63b9hIOT6",
+        "source_author": "@8_chokai",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@yamarie0324",
-          "account_name": "山本 理恵 中央区議会議員",
+          "handle": "@8_chokai",
+          "account_name": "習志野台８丁目町会",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -270,52 +111,48 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "7/29",
-          "8/1",
-          "8/21",
-          "16時"
+          "８月22日",
+          "８月22日",
+          "８時"
         ],
         "observed_dates": [],
         "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "築地本願寺",
-          "region_hint": "中央区",
-          "address": "中央区築地3-15-1",
-          "source_url": "https://tsukijihongwanji.jp/news/11529/"
-        },
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@yamarie0324",
-          "name": "山本 理恵 中央区議会議員",
+          "account": "@8_chokai",
+          "name": "習志野台８丁目町会",
+          "profile_description": "千葉県船橋市「習志野台８丁目町会」は2026年4月19日現在1075会員・事業者)で構成している地縁法人認可住民自治組織です。町会は協力し合って「近所づきあいを力にして安全で安心して暮らせるまちづくり」に取り組んでいます。習志野台８丁目と近隣のようす、住民自治に関わる情報を伝えます。",
           "title": "",
-          "text": "子ども達は、もうすぐ夏休み☀️ 築地本願寺納涼盆踊り大会は、7/29(水)～8/1(土)までの4日間🌽https://t.co/4Zpe8nPHBA\n中央区大江戸まつり盆おどり大会は、8/21(金)、22(土)16時から。どちらも中央区の夏の風物詩ですね🎐https://t.co/3M5NVMFLGQ\n\n#盆踊り大会 https://t.co/WWI2rS7ybO",
-          "url": "https://x.com/yamarie0324/status/2077625579999019099",
-          "date": "2026-07-16T05:25:13+00:00",
-          "tweet_id": "2077625579999019099",
+          "text": "【習８夏まつり納涼盆踊りの開催について】\n\n８月22日(土),23日(日)開催予定の習８夏まつり納涼盆踊りですが、予定通り開催いたします。\n８月22日(土)の朝８時より会場設営も予定通り実施いたしますので、班長ならびに関係者の皆様はご協力をお願いします。 https://t.co/I63b9hIOT6",
+          "url": "https://x.com/8_chokai/status/2090746208843399485",
+          "date": "2026-08-21T10:21:55+00:00",
+          "tweet_id": "2090746208843399485",
           "tags": [
             "🟡関心",
-            "q-venue"
+            "q-poster-flyer"
           ],
+          "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HNU1cfPb0AAP_1K.jpg",
-            "https://t.co/WWI2rS7ybO",
-            "pic.x.com/WWI2rS7ybO"
+            "https://pbs.twimg.com/media/HQPShj9b0AAQciQ.jpg",
+            "https://t.co/I63b9hIOT6",
+            "pic.x.com/I63b9hIOT6"
           ]
         },
         "source_urls": [
-          "https://x.com/yamarie0324/status/2077625579999019099"
+          "https://x.com/8_chokai/status/2090746208843399485"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HNU1cfPb0AAP_1K.jpg",
-          "https://t.co/WWI2rS7ybO",
-          "pic.x.com/WWI2rS7ybO"
+          "https://pbs.twimg.com/media/HQPShj9b0AAQciQ.jpg",
+          "https://t.co/I63b9hIOT6",
+          "pic.x.com/I63b9hIOT6"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_a470525aacabcc73"
+      "inbox_id": "inbox_29dd3bd9516bcef5"
     },
     {
       "kind": "x_gap",
@@ -323,29 +160,29 @@
       "time_scope": "future",
       "priority_label": "P0",
       "priority_score": 125,
-      "title": "【中央区大江戸まつり盆おどり大会】\n令和8年8月21日(金)・22日(土)16時～21時\n区立浜町公園で開催\n今回は中央区制施行80周年記念、中央区・東根市友好",
+      "title": "🎈週末のイベント情報🎈\n\n8/22(土)\n🌈大井どんたく(23日まで)\n⛩️居木神社例大祭(23日まで)\n🏝️天王洲ハーバーマーケット\n『夏夜祭』\n🌃目黒川夢ま",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2089910238321217797",
-      "source_url": "https://x.com/chuo_machi_info/status/2089910238321217797",
+      "source_key": "x:2090964731058389273",
+      "source_url": "https://x.com/shinagawakanko/status/2090964731058389273",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_4ba5be66eaf9a877",
-        "source_key": "x:2089910238321217797",
+        "candidate_id": "xgap_8ede23c5d1389e19",
+        "source_key": "x:2090964731058389273",
         "lane_hint": "lane2",
         "candidate_kind": "official_new_event",
         "priority_score": 125,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/chuo_machi_info/status/2089910238321217797",
-        "source_text": "\n【中央区大江戸まつり盆おどり大会】\n令和8年8月21日(金)・22日(土)16時～21時\n区立浜町公園で開催\n今回は中央区制施行80周年記念、中央区・東根市友好都市提携35周年記念大会です\n盆おどりや縁日コーナー等をぜひご堪能ください！\n\n↓詳しくは画像と区HPへ↓\nhttps://t.co/2FvS7qlflm https://t.co/ehrBRS74d1",
-        "source_author": "@chuo_machi_info",
+        "source_url": "https://x.com/shinagawakanko/status/2090964731058389273",
+        "source_text": "\n🎈週末のイベント情報🎈\n\n8/22(土)\n🌈大井どんたく(23日まで)\n⛩️居木神社例大祭(23日まで)\n🏝️天王洲ハーバーマーケット\n『夏夜祭』\n🌃目黒川夢まつり\n🏮大崎ニューシティ盆踊り大会\n\n＼開催中／\n👘品川歴史館企画展「学芸員のイチオシ！」\n🐟️しながわ水族館特別展「エリック・カールと いのちの色」\n\nイベント情報はこちら💁https://t.co/5xGyvAeTGp\n#盆踊り #品川区",
+        "source_author": "@shinagawakanko",
         "source_officiality": {
           "classification": "registered_official_social",
           "score": 100,
-          "handle": "@chuo_machi_info",
-          "account_name": "中央区町会・自治会ネット",
+          "handle": "@shinagawakanko",
+          "account_name": "しながわ観光協会（東京 品川のおでかけ情報)",
           "source_type": "official",
           "trust_level": "organizer_official",
           "reasons": [
@@ -354,55 +191,214 @@
           "recommended_action": "use_as_confirmed_source_after_post_review"
         },
         "date_hints": [
-          "8月21日",
-          "16時",
-          "21時"
+          "8/22"
         ],
         "observed_dates": [],
         "event_group_key": "",
-        "known_venue_evidence": {
-          "venue": "浜町公園",
-          "region_hint": "中央区",
-          "address": "中央区日本橋浜町2-59",
-          "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
-        },
+        "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@chuo_machi_info",
-          "name": "中央区町会・自治会ネット",
-          "profile_description": "東京都中央区区民部地域振興課が運営するアカウントです。区内の町会・自治会や地域に関する情報を主にツイートします。当アカウントは情報発信専用ですので、リプライ、ダイレクトメッセージ等には対応しません。ご質問等は当課へ直接お問い合せください（リンク先に連絡先記載あります）。",
+          "account": "@shinagawakanko",
+          "name": "しながわ観光協会（東京 品川のおでかけ情報)",
+          "profile_description": "品川エリアのイベントやグルメ、観光スポットなど最旬情報をお届けします。 一般社団法人しながわ観光協会の公式アカウントです。 © 2026 SANRIO CO., LTD. APPROVAL NO. L664723",
           "title": "",
-          "text": "【中央区大江戸まつり盆おどり大会】\n令和8年8月21日(金)・22日(土)16時～21時\n区立浜町公園で開催\n今回は中央区制施行80周年記念、中央区・東根市友好都市提携35周年記念大会です\n盆おどりや縁日コーナー等をぜひご堪能ください！\n\n↓詳しくは画像と区HPへ↓\nhttps://t.co/2FvS7qlflm https://t.co/ehrBRS74d1",
-          "url": "https://x.com/chuo_machi_info/status/2089910238321217797",
-          "date": "2026-08-19T03:00:04+00:00",
-          "tweet_id": "2089910238321217797",
+          "text": "🎈週末のイベント情報🎈\n\n8/22(土)\n🌈大井どんたく(23日まで)\n⛩️居木神社例大祭(23日まで)\n🏝️天王洲ハーバーマーケット\n『夏夜祭』\n🌃目黒川夢まつり\n🏮大崎ニューシティ盆踊り大会\n\n＼開催中／\n👘品川歴史館企画展「学芸員のイチオシ！」\n🐟️しながわ水族館特別展「エリック・カールと いのちの色」\n\nイベント情報はこちら💁https://t.co/5xGyvAeTGp\n#盆踊り #品川区",
+          "url": "https://x.com/shinagawakanko/status/2090964731058389273",
+          "date": "2026-08-22T00:50:14+00:00",
+          "tweet_id": "2090964731058389273",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQSZUE0bsAA6rb_.jpg",
+            "https://t.co/hpbmQrv3lB",
+            "pic.x.com/hpbmQrv3lB",
+            "https://pbs.twimg.com/media/HQSZUmXaMAAz7PI.jpg",
+            "https://pbs.twimg.com/media/HQSZU8_acAA93qm.jpg",
+            "https://pbs.twimg.com/media/HQSZVqja0AAM97e.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/shinagawakanko/status/2090964731058389273"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQSZUE0bsAA6rb_.jpg",
+          "https://t.co/hpbmQrv3lB",
+          "pic.x.com/hpbmQrv3lB",
+          "https://pbs.twimg.com/media/HQSZUmXaMAAz7PI.jpg",
+          "https://pbs.twimg.com/media/HQSZU8_acAA93qm.jpg",
+          "https://pbs.twimg.com/media/HQSZVqja0AAM97e.jpg"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_4087decb4d42282e"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "【🍉🪷第37回はすだ市民まつりのご案内🪷🌻】\nいよいよ本日、8月22日（土）14:00〜20:00✨\nのくぼ通りにて「第37回はすだ市民まつり」が開催されます🎉",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090984373600526678",
+      "source_url": "https://x.com/haruka_hasuda/status/2090984373600526678",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_fdd10edb62f10206",
+        "source_key": "x:2090984373600526678",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/haruka_hasuda/status/2090984373600526678",
+        "source_text": "\n【🍉🪷第37回はすだ市民まつりのご案内🪷🌻】\nいよいよ本日、8月22日（土）14:00〜20:00✨\nのくぼ通りにて「第37回はすだ市民まつり」が開催されます🎉\n\n今年もテント村をはじめ、よさこい＆ダンス、小学校こてき隊演奏、盆踊りinはすだ2026など、楽しいイベントが盛りだくさん😊✨\n\nはすだ広報大使のみなさまも登場します🎤♪\n\n夏の一日、ぜひご家族やお友達と一緒に、はすだ市民まつりをお楽しみください☀️✨\n\n暑い一日となりそうですので、熱中症対策もお忘れなく😊\n\n📍第37回はすだ市民まつり\n2026年8月22日（土）14:00〜20:00\n会場：のくぼ通り\n※雨天決行・荒天中止\n\n詳しくは蓮田市ホームページをご覧ください\nhttps://t.co/aCR9gO7QQS\n\n#蓮田市\n#豊嶋はるか\n#はすだ市民まつり",
+        "source_author": "@haruka_hasuda",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@haruka_hasuda",
+          "account_name": "豊嶋はるか＠蓮田市議会議員（２期目）",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8月22日",
+          "8月22日"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@haruka_hasuda",
+          "name": "豊嶋はるか＠蓮田市議会議員（２期目）",
+          "profile_description": "平成2年生まれ☆蓮田市議会議員【2022/5/16〜】「蓮田 はばたく」/蓮田市都市計画審議会委員/蓮田市行政改革推進委員会委員/青少年問題協議会委員/暴力排除推進協議会委員/蓮田市商工会青年部 総務広報委員長/蓮田市消防団/特定行政書士/NTTドコモ消費生活アドバイザー活動メンバー/防災士/自民党公認",
+          "title": "",
+          "text": "【🍉🪷第37回はすだ市民まつりのご案内🪷🌻】\nいよいよ本日、8月22日（土）14:00〜20:00✨\nのくぼ通りにて「第37回はすだ市民まつり」が開催されます🎉\n\n今年もテント村をはじめ、よさこい＆ダンス、小学校こてき隊演奏、盆踊りinはすだ2026など、楽しいイベントが盛りだくさん😊✨\n\nはすだ広報大使のみなさまも登場します🎤♪\n\n夏の一日、ぜひご家族やお友達と一緒に、はすだ市民まつりをお楽しみください☀️✨\n\n暑い一日となりそうですので、熱中症対策もお忘れなく😊\n\n📍第37回はすだ市民まつり\n2026年8月22日（土）14:00〜20:00\n会場：のくぼ通り\n※雨天決行・荒天中止\n\n詳しくは蓮田市ホームページをご覧ください\nhttps://t.co/aCR9gO7QQS\n\n#蓮田市\n#豊嶋はるか\n#はすだ市民まつり",
+          "url": "https://x.com/haruka_hasuda/status/2090984373600526678",
+          "date": "2026-08-22T02:08:17+00:00",
+          "tweet_id": "2090984373600526678",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ],
           "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/media/HP94acTaIAA-yGd.jpg",
-            "https://t.co/ehrBRS74d1",
-            "pic.x.com/ehrBRS74d1",
-            "https://pbs.twimg.com/media/HP94b-TakAIyR0G.jpg"
+            "https://pbs.twimg.com/media/HQSrNGAaAAAMtDw.jpg",
+            "https://t.co/wj7oQ0MGi1",
+            "pic.x.com/wj7oQ0MGi1",
+            "https://pbs.twimg.com/media/HQSrNGRbUAA5-rY.jpg",
+            "https://pbs.twimg.com/media/HQSrNGMa0AAKih_.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/chuo_machi_info/status/2089910238321217797"
+          "https://x.com/haruka_hasuda/status/2090984373600526678"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/media/HP94acTaIAA-yGd.jpg",
-          "https://t.co/ehrBRS74d1",
-          "pic.x.com/ehrBRS74d1",
-          "https://pbs.twimg.com/media/HP94b-TakAIyR0G.jpg"
+          "https://pbs.twimg.com/media/HQSrNGAaAAAMtDw.jpg",
+          "https://t.co/wj7oQ0MGi1",
+          "pic.x.com/wj7oQ0MGi1",
+          "https://pbs.twimg.com/media/HQSrNGRbUAA5-rY.jpg",
+          "https://pbs.twimg.com/media/HQSrNGMa0AAKih_.jpg"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "official_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_cc70674a13f6d065"
+      "inbox_id": "inbox_84ec34dca3935aa4"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P0",
+      "priority_score": 125,
+      "title": "習志野台８丁目夏祭り納涼盆踊りの会場設営が8月22日朝、行われました。習志野台８丁目町会の班長、役員、会員と日大習志野高校、日大理工学部交通システ厶工学科、習志",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090987269826183235",
+      "source_url": "https://x.com/8_chokai/status/2090987269826183235",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_a895cc1085f31e8a",
+        "source_key": "x:2090987269826183235",
+        "lane_hint": "lane2",
+        "candidate_kind": "official_new_event",
+        "priority_score": 125,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/8_chokai/status/2090987269826183235",
+        "source_text": "\n習志野台８丁目夏祭り納涼盆踊りの会場設営が8月22日朝、行われました。習志野台８丁目町会の班長、役員、会員と日大習志野高校、日大理工学部交通システ厶工学科、習志野台中学校のボランティアがテント建てはじめ会場設営作業をしました。夏祭りは午後６時開会です。 https://t.co/AUc1qZXgoT",
+        "source_author": "@8_chokai",
+        "source_officiality": {
+          "classification": "registered_official_social",
+          "score": 100,
+          "handle": "@8_chokai",
+          "account_name": "習志野台８丁目町会",
+          "source_type": "official",
+          "trust_level": "organizer_official",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review"
+        },
+        "date_hints": [
+          "8月22日",
+          "６時"
+        ],
+        "observed_dates": [],
+        "event_group_key": "",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@8_chokai",
+          "name": "習志野台８丁目町会",
+          "profile_description": "千葉県船橋市「習志野台８丁目町会」は2026年4月19日現在1075会員・事業者)で構成している地縁法人認可住民自治組織です。町会は協力し合って「近所づきあいを力にして安全で安心して暮らせるまちづくり」に取り組んでいます。習志野台８丁目と近隣のようす、住民自治に関わる情報を伝えます。",
+          "title": "",
+          "text": "習志野台８丁目夏祭り納涼盆踊りの会場設営が8月22日朝、行われました。習志野台８丁目町会の班長、役員、会員と日大習志野高校、日大理工学部交通システ厶工学科、習志野台中学校のボランティアがテント建てはじめ会場設営作業をしました。夏祭りは午後６時開会です。 https://t.co/AUc1qZXgoT",
+          "url": "https://x.com/8_chokai/status/2090987269826183235",
+          "date": "2026-08-22T02:19:48+00:00",
+          "tweet_id": "2090987269826183235",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "critique_post": false,
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2090987085176164352/img/VzPuN7uOV7qK1_gS.jpg",
+            "https://t.co/AUc1qZXgoT",
+            "pic.x.com/AUc1qZXgoT"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/8_chokai/status/2090987269826183235"
+        ],
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2090987085176164352/img/VzPuN7uOV7qK1_gS.jpg",
+          "https://t.co/AUc1qZXgoT",
+          "pic.x.com/AUc1qZXgoT"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "official_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_61495b8a3c8dee03"
     }
   ],
   "selection": {
@@ -410,11 +406,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2090641209819881579",
-      "x:2090650162008084612",
-      "x:2090680299038425360",
-      "x:2077625579999019099",
-      "x:2089910238321217797"
+      "x:2090710504847397233",
+      "x:2090746208843399485",
+      "x:2090964731058389273",
+      "x:2090984373600526678",
+      "x:2090987269826183235"
     ]
   },
   "write_mode": "snapshot_only_default_off",

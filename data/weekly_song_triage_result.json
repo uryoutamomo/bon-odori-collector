@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 13,
-  "direct_count": 9,
-  "created_count": 6,
-  "updated_count": 3,
+  "song_candidate_count": 10,
+  "direct_count": 6,
+  "created_count": 4,
+  "updated_count": 2,
   "rejected_noise_count": 3,
   "review_count": 1,
   "created": [
@@ -39,44 +39,20 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "出演・踊り",
-      "source_term": "出演・踊り",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "港北音頭",
-      "source_term": "港北音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "updated": [
     {
-      "song_name": "さくら音頭",
-      "source_term": "さくら音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "四季の花踊り",
-      "source_term": "四季の花踊り",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "東京音頭",
       "source_term": "東京音頭",
+      "target": "update",
+      "venue_relations": 1,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
       "target": "update",
       "venue_relations": 1,
       "event_relations": 0,
@@ -100,9 +76,9 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 10,
+      "evidence_count": 17,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=i6gMaivZDJ0"
+      "evidence_url": "https://www.youtube.com/watch?v=k2by6t0Uty4"
     }
   ]
 }
