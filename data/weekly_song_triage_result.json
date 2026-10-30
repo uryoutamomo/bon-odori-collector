@@ -43,16 +43,16 @@
   ],
   "updated": [
     {
-      "song_name": "東京音頭",
-      "source_term": "東京音頭",
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
       "target": "update",
       "venue_relations": 1,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "品川音頭",
-      "source_term": "品川音頭",
+      "song_name": "東京音頭",
+      "source_term": "東京音頭",
       "target": "update",
       "venue_relations": 1,
       "event_relations": 0,
@@ -76,9 +76,9 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 17,
+      "evidence_count": 18,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=k2by6t0Uty4"
+      "evidence_url": "https://www.youtube.com/watch?v=5l00XYDxcAI"
     }
   ]
 }

@@ -1,8 +1,8 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-10-29T13:08:22.979716+00:00
+- 生成時刻: 2026-10-30T13:04:42.109944+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 45件
+- 対象voices: 47件
 - 候補総数: 13件
 
 ## 内訳
@@ -27,8 +27,8 @@
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
 
 ## 用語・共起レビュー例
-- 東京音頭 × 上野恩賜公園
 - 品川音頭 × 旗の台稲荷通り商店街
+- 東京音頭 × 上野恩賜公園
 - 輪踊り
 
 ## 曲レビュー例
