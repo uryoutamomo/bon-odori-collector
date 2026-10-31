@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1800,
+  "count": 1801,
   "public_event_count": 844,
-  "review_count": 956,
+  "review_count": 957,
   "candidates": [
     {
       "id": "4fbaa26988db7546",
@@ -17786,7 +17786,7 @@
       "evidence_count": 1
     },
     {
-      "id": "e51f8d9900a4ce4b",
+      "id": "82c4e9d84157c495",
       "song_name": "五月女会輪踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -17797,6 +17797,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_8MMJ0uvXRQ",
+          "date": "2026-10-31T10:30:08+00:00",
+          "text": "和太鼓お祭りCH\n黒潮太鼓　飛鳥山公園盆踊り（五月女会輪踊り）16　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7E0qu1onhMg",
+          "date": "2026-10-31T10:00:22+00:00",
+          "text": "和太鼓お祭りCH\n開運招福音頭　飛鳥山公園盆踊り（五月女会輪踊り）15　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://y"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=DvkNN5sExEQ",
@@ -17883,7 +17895,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 14
+      "evidence_count": 16
     },
     {
       "id": "6da30728d1c9f711",
@@ -18150,6 +18162,28 @@
           "url": "https://www.youtube.com/watch?v=3IiyNS82SyE",
           "date": "2025-11-10T08:00:04Z",
           "text": "和太鼓お祭りチャンネル\n【飛鳥山公園五月女会盆踊り】　2025年11月9日　（曲名は説明欄に）\n2025年11月9日に行われました、\n飛鳥山公園「五月女会盆踊り」の様子です。\n\n\n目次\n00:00　七夕おどり\n00:30　花笠音頭\n00:42　男おけさ\n01:55　首里城音頭\n04:47　火消し若衆\n07:21　百年桜\n08:55　男節\n11:29　流転の波止場\n13:30　安里屋ゆんた\n15:17　島のブルース\n17:59　飛鳥山音頭"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "01045e13011a7df9",
+      "song_name": "開運招福音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7E0qu1onhMg",
+          "date": "2026-10-31T10:00:22+00:00",
+          "text": "和太鼓お祭りCH\n開運招福音頭　飛鳥山公園盆踊り（五月女会輪踊り）15　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://y"
         }
       ],
       "already_public": false,
@@ -50597,11 +50631,19 @@
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
-        "already_public"
+        "already_public",
+        "song_suffix_near_context"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2ZPWEA5GjWY",
+          "date": "2026-10-31T11:30:33+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節　旗の台稲荷通り商店会盆踊り（盆ROCK）６　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://youtu.be/9oLLc0WaFq"
+        }
+      ],
       "already_public": true,
-      "evidence_count": 0
+      "evidence_count": 1
     },
     {
       "id": "1d9bc70a624c59b5",
@@ -50654,6 +50696,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2ZPWEA5GjWY",
+          "date": "2026-10-31T11:30:33+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節　旗の台稲荷通り商店会盆踊り（盆ROCK）６　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://youtu.be/9oLLc0WaFq"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=QzKtVf4q8vA",
+          "date": "2026-10-30T13:30:14+00:00",
+          "text": "和太鼓お祭りCH\n東京ばやし　旗の台稲荷通り商店会盆踊り（盆ROCK）５　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://youtu.be/9oLLc0WaFq"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=AJwmZOSn6dc",
@@ -50794,7 +50848,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 23
+      "evidence_count": 25
     },
     {
       "id": "5435202dea967a34",
