@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-30T13:15:46.822333+00:00",
+  "generated_at": "2026-10-31T12:33:04.051573+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,471 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_43dd8fbf6fa30d7b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "🔵⭐昨日の夕方、約1時間に約100ミリの猛烈な記録的大雨が降り\n\n一時中止も検討されましたが、何とか収まり\n\n高架下の会場に沢山の子ども達や高齢者の皆さんが参加",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091330243906969814",
+      "source_url": "https://x.com/inagaki2001/status/2091330243906969814",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9de9872226095cdac28b838861ca157193637c793bf6e5dd3cef7f9798ec9ddb",
+      "last_seen_at": "github-41200992305-1",
+      "created_at": "2026-10-31T12:32:40.228462+00:00",
+      "updated_at": "2026-10-31T12:32:40.228462+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_a5b7626421cc477a",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "1時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@inagaki2001",
+        "source_count": 1,
+        "source_key": "x:2091330243906969814",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQXltOJawAAFLvN.jpg",
+          "https://t.co/wi8mBr4WcJ",
+          "pic.x.com/wi8mBr4WcJ",
+          "https://pbs.twimg.com/media/HQXluSwaYAAuQau.jpg",
+          "https://pbs.twimg.com/media/HQXlvT3aEAAYuVj.jpg",
+          "https://pbs.twimg.com/media/HQXlwrUbcAEggSt.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "いながき浩|北区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@inagaki2001",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n🔵⭐昨日の夕方、約1時間に約100ミリの猛烈な記録的大雨が降り\n\n一時中止も検討されましたが、何とか収まり\n\n高架下の会場に沢山の子ども達や高齢者の皆さんが参加され\n\n予定より早く終わりましたが「納涼涼盆踊り大会」は無事に終了しました‼️\n\n連日、浮間睦会や関係者の皆様、大変にお疲れ様でした😃 https://t.co/wi8mBr4WcJ",
+        "source_url": "https://x.com/inagaki2001/status/2091330243906969814",
+        "source_urls": [
+          "https://x.com/inagaki2001/status/2091330243906969814"
+        ],
+        "voice": {
+          "account": "@inagaki2001",
+          "critique_post": false,
+          "date": "2026-08-23T01:02:39+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQXltOJawAAFLvN.jpg",
+            "https://t.co/wi8mBr4WcJ",
+            "pic.x.com/wi8mBr4WcJ",
+            "https://pbs.twimg.com/media/HQXluSwaYAAuQau.jpg",
+            "https://pbs.twimg.com/media/HQXlvT3aEAAYuVj.jpg",
+            "https://pbs.twimg.com/media/HQXlwrUbcAEggSt.jpg"
+          ],
+          "name": "いながき浩|北区議会議員",
+          "profile_description": "東京都北区議会議員| 5期20年目|公明党所属|「やる気・元気・いながき！」| 「あなたのために地域を走る。皆さんの声が、わたしの仕事です❗」\n保護司、消防団員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "🔵⭐昨日の夕方、約1時間に約100ミリの猛烈な記録的大雨が降り\n\n一時中止も検討されましたが、何とか収まり\n\n高架下の会場に沢山の子ども達や高齢者の皆さんが参加され\n\n予定より早く終わりましたが「納涼涼盆踊り大会」は無事に終了しました‼️\n\n連日、浮間睦会や関係者の皆様、大変にお疲れ様でした😃 https://t.co/wi8mBr4WcJ",
+          "title": "",
+          "tweet_id": "2091330243906969814",
+          "url": "https://x.com/inagaki2001/status/2091330243906969814"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_6bc46740b4f66ffa",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日、予定されていました\n「勝頼盆踊り」は、天候により、\n今日8/23㈰に順延されました\n\n17:00〜模擬店等も出ますので、\nぜひ勝頼集会所（榛名神社隣り）へ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091411677598425274",
+      "source_url": "https://x.com/yoshiko_fujimi/status/2091411677598425274",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "885db67ec9cab0197b5c2a6d2912c2348a8e54da36084769ac5e10aae815b073",
+      "last_seen_at": "github-41200992305-1",
+      "created_at": "2026-10-31T12:32:40.228462+00:00",
+      "updated_at": "2026-10-31T12:32:40.228462+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_f56fb515a4f1db2e",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/23"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@yoshiko_fujimi",
+        "source_count": 1,
+        "source_key": "x:2091411677598425274",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQYv09PbMAAhXEB.jpg",
+          "https://t.co/bvcfh8opek",
+          "pic.x.com/bvcfh8opek"
+        ],
+        "source_officiality": {
+          "account_name": "山下 よしこ(淑子)🌾公明党 富士見市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@yoshiko_fujimi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日、予定されていました\n「勝頼盆踊り」は、天候により、\n今日8/23㈰に順延されました\n\n17:00〜模擬店等も出ますので、\nぜひ勝頼集会所（榛名神社隣り）へ\nお寄りください✨\n\n私も踊りのメンバーに加わります✨✨\n\n#富士見市 https://t.co/bvcfh8opek",
+        "source_url": "https://x.com/yoshiko_fujimi/status/2091411677598425274",
+        "source_urls": [
+          "https://x.com/yoshiko_fujimi/status/2091411677598425274"
+        ],
+        "voice": {
+          "account": "@yoshiko_fujimi",
+          "critique_post": false,
+          "date": "2026-08-23T06:26:15+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQYv09PbMAAhXEB.jpg",
+            "https://t.co/bvcfh8opek",
+            "pic.x.com/bvcfh8opek"
+          ],
+          "name": "山下 よしこ(淑子)🌾公明党 富士見市議会議員",
+          "profile_description": "公明党 富士見市議会議員の山下よしこ（淑子）です。\n日々の活動などを発信いたします。\n家族構成は、夫、私、長男、次男、リッキー🐶♂です。\n2021年3月28日に初当選🌸 現在２期目",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "昨日、予定されていました\n「勝頼盆踊り」は、天候により、\n今日8/23㈰に順延されました\n\n17:00〜模擬店等も出ますので、\nぜひ勝頼集会所（榛名神社隣り）へ\nお寄りください✨\n\n私も踊りのメンバーに加わります✨✨\n\n#富士見市 https://t.co/bvcfh8opek",
+          "title": "",
+          "tweet_id": "2091411677598425274",
+          "url": "https://x.com/yoshiko_fujimi/status/2091411677598425274"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_bdeeaaa11a2a9750",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "2026年8月23日（本日）\n岳温泉観光仮装盆踊りが、昨日に引き続き、開催かれます。\n\n♪みなさまのご参加心よりお待ちしております♪\n\nまた本日は、コンテストも",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091356928404508743",
+      "source_url": "https://x.com/Dakespa/status/2091356928404508743",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e9f63c8e2d89042c74f9739c3456df24d63754da00bb665bc977356f76946fd0",
+      "last_seen_at": "github-41200992305-1",
+      "created_at": "2026-10-31T12:32:40.228462+00:00",
+      "updated_at": "2026-10-31T12:32:40.228462+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6ff213b0cb28ed0d",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月23日",
+          "18時",
+          "19時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@Dakespa",
+        "source_count": 1,
+        "source_key": "x:2091356928404508743",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQX-BSDakAE6KW5.jpg",
+          "https://t.co/w6DGXvVmbq",
+          "pic.x.com/w6DGXvVmbq",
+          "https://pbs.twimg.com/media/HQX-BR5bsAAjLfP.jpg",
+          "https://pbs.twimg.com/media/HQX-BSCbUAA_YOX.jpg",
+          "https://pbs.twimg.com/media/HQX-BR4bYAA3_lC.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "岳温泉観光協会【公式】",
+          "classification": "registered_official_social",
+          "handle": "@dakespa",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n2026年8月23日（本日）\n岳温泉観光仮装盆踊りが、昨日に引き続き、開催かれます。\n\n♪みなさまのご参加心よりお待ちしております♪\n\nまた本日は、コンテストもございます。\n⭐️仮装コンテスト\n⭐️浴衣コンテスト\n受付は岳温泉交流広場（ニコニコ広場）にて、18時〜19時まで。\n\n#岳温泉　#盆踊り　#お祭り https://t.co/w6DGXvVmbq",
+        "source_url": "https://x.com/Dakespa/status/2091356928404508743",
+        "source_urls": [
+          "https://x.com/Dakespa/status/2091356928404508743"
+        ],
+        "voice": {
+          "account": "@Dakespa",
+          "critique_post": false,
+          "date": "2026-08-23T02:48:41+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQX-BSDakAE6KW5.jpg",
+            "https://t.co/w6DGXvVmbq",
+            "pic.x.com/w6DGXvVmbq",
+            "https://pbs.twimg.com/media/HQX-BR5bsAAjLfP.jpg",
+            "https://pbs.twimg.com/media/HQX-BSCbUAA_YOX.jpg",
+            "https://pbs.twimg.com/media/HQX-BR4bYAA3_lC.jpg"
+          ],
+          "name": "岳温泉観光協会【公式】",
+          "profile_description": "一般社団法人岳温泉観光協会の公式Twitterアカウントです🤗もっと岳温泉を知ってほしい！ もっと岳温泉を好きになってほしい！ そんな思いをのせて発信致します◎",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "2026年8月23日（本日）\n岳温泉観光仮装盆踊りが、昨日に引き続き、開催かれます。\n\n♪みなさまのご参加心よりお待ちしております♪\n\nまた本日は、コンテストもございます。\n⭐️仮装コンテスト\n⭐️浴衣コンテスト\n受付は岳温泉交流広場（ニコニコ広場）にて、18時〜19時まで。\n\n#岳温泉　#盆踊り　#お祭り https://t.co/w6DGXvVmbq",
+          "title": "",
+          "tweet_id": "2091356928404508743",
+          "url": "https://x.com/Dakespa/status/2091356928404508743"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_df435c1e9d5ec3b6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "昨日、荒天により途中で延期決定となった上北沢小学校の盆踊り。今日午後2時から開催で、開会式もあり、ご挨拶させて頂きました。校長先生が「夏休みもあと8日となりまし",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091444931781136461",
+      "source_url": "https://x.com/miki_setagaya/status/2091444931781136461",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "56d22bddeab8f0616cf45dee186fdf6aad17d06d1a058fdf4d0937dce8afe7ab",
+      "last_seen_at": "github-41200992305-1",
+      "created_at": "2026-10-31T12:32:40.228462+00:00",
+      "updated_at": "2026-10-31T12:32:40.228462+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_6c6c5dd183f618cf",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "世田谷区上北沢4-22-29",
+          "region_hint": "世田谷区",
+          "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf",
+          "venue": "上北沢小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@miki_setagaya",
+        "source_count": 1,
+        "source_key": "x:2091444931781136461",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQZOE_xacAA_yH9.jpg",
+          "https://t.co/8tA5JynUFm",
+          "pic.x.com/8tA5JynUFm"
+        ],
+        "source_officiality": {
+          "account_name": "佐藤美樹 (Miki Sato 国民民主党　世田谷区議会議員）",
+          "classification": "registered_official_social",
+          "handle": "@miki_setagaya",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n昨日、荒天により途中で延期決定となった上北沢小学校の盆踊り。今日午後2時から開催で、開会式もあり、ご挨拶させて頂きました。校長先生が「夏休みもあと8日となりました」と挨拶で触れると、子どもたちから様々な声が上がりました。\n\n#世田谷区 #上北沢小学校 #かみきた https://t.co/8tA5JynUFm",
+        "source_url": "https://x.com/miki_setagaya/status/2091444931781136461",
+        "source_urls": [
+          "https://x.com/miki_setagaya/status/2091444931781136461"
+        ],
+        "voice": {
+          "account": "@miki_setagaya",
+          "critique_post": false,
+          "date": "2026-08-23T08:38:23+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQZOE_xacAA_yH9.jpg",
+            "https://t.co/8tA5JynUFm",
+            "pic.x.com/8tA5JynUFm"
+          ],
+          "name": "佐藤美樹 (Miki Sato 国民民主党　世田谷区議会議員）",
+          "profile_description": "世田谷区議会議員（4期目）。慶應義塾大学卒/U.C.berkeley Extension (Business Administrationコース）米国公認会計士/保育士。現役世代の負担や世代間格差の課題、教育改革テーマを地域で掘り下げています。千歳船橋在住。https://t.co/TsSE045NOQ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "昨日、荒天により途中で延期決定となった上北沢小学校の盆踊り。今日午後2時から開催で、開会式もあり、ご挨拶させて頂きました。校長先生が「夏休みもあと8日となりました」と挨拶で触れると、子どもたちから様々な声が上がりました。\n\n#世田谷区 #上北沢小学校 #かみきた https://t.co/8tA5JynUFm",
+          "title": "",
+          "tweet_id": "2091444931781136461",
+          "url": "https://x.com/miki_setagaya/status/2091444931781136461"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_eb020daf0ceb3f46",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【柴マリン納涼祭2026のご案内】\n今年も夏のイベント「柴マリン納涼祭」の季節がやってきました！ \n日頃より地域の活動にご理解とご協力をいただき、誠にありがとう",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091338575753445523",
+      "source_url": "https://x.com/asakawayosiharu/status/2091338575753445523",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2d79481f452a58c70d242fc24295ba7b8681755207ef9f49d5ea4a08b817854a",
+      "last_seen_at": "github-41200992305-1",
+      "created_at": "2026-10-31T12:32:40.228462+00:00",
+      "updated_at": "2026-10-31T12:32:40.228462+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_943b27f20fb3ef38",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月23日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@asakawayosiharu",
+        "source_count": 1,
+        "source_key": "x:2091338575753445523",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQXtWTQbsAEGCCN.jpg",
+          "https://t.co/6ZORG3BONP",
+          "pic.x.com/6ZORG3BONP",
+          "https://pbs.twimg.com/media/HQXtWTdacAA9L5I.jpg",
+          "https://pbs.twimg.com/media/HQXtWTcaYAA5M0h.jpg",
+          "https://pbs.twimg.com/media/HQXtWTQagAA5EL4.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "浅川義治|日本維新の会元衆議院議員　神奈川1区(横浜市中区・磯子区・金沢区)神奈川維新の会",
+          "classification": "registered_official_social",
+          "handle": "@asakawayosiharu",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【柴マリン納涼祭2026のご案内】\n今年も夏のイベント「柴マリン納涼祭」の季節がやってきました！ \n日頃より地域の活動にご理解とご協力をいただき、誠にありがとうございます。子どもから大人まで、みんなが笑顔になれる夏のひとときを一緒に過ごしませんか？ \n■ 開催概要\n日時： 8月23日(日) 15:00～20:00（雨天中止）\n場所： 柴団地公開空地・カメギ根公園（金沢区柴町367） \n(Google map)\nhttps://t.co/1bVqiiP1CT\n(八景島駅〜カメギ根公園道順動画)\nhttps://t.co/xZMbsQkClP\n\n■ お楽しみの見どころ\nグルメ＆お酒（のんべぇメニュー）： やきとり、やきそば、シュラスコ、から揚げ、フランクフルト、春巻き、かき氷、生ビール、ハイボール、ラムネなど盛りだくさん！\nスペシャルステージ： Hawaiian entertainer YURiCoさんによる素敵なステージをお届けします🌺\n恒例！手持ち花火大会： 19:00スタート！みんなで夜空に綺麗な花火を灯しましょう（※小学3年生以下は保護者同伴でお願いします）。\n自治会に入っていな",
+        "source_url": "https://x.com/asakawayosiharu/status/2091338575753445523",
+        "source_urls": [
+          "https://x.com/asakawayosiharu/status/2091338575753445523"
+        ],
+        "voice": {
+          "account": "@asakawayosiharu",
+          "critique_post": false,
+          "date": "2026-08-23T01:35:46+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQXtWTQbsAEGCCN.jpg",
+            "https://t.co/6ZORG3BONP",
+            "pic.x.com/6ZORG3BONP",
+            "https://pbs.twimg.com/media/HQXtWTdacAA9L5I.jpg",
+            "https://pbs.twimg.com/media/HQXtWTcaYAA5M0h.jpg",
+            "https://pbs.twimg.com/media/HQXtWTQagAA5EL4.jpg"
+          ],
+          "name": "浅川義治|日本維新の会元衆議院議員　神奈川1区(横浜市中区・磯子区・金沢区)神奈川維新の会",
+          "profile_description": "#日本維新の会 #衆議院 #神奈川1区■#減税 #規制改革 #行政改革 #UAP #信念を貫く #情報公開 #道州制■ #UFO 問題に政治が取り組む時が来たと思います。判別できない何かの領空侵犯は、問題です。#情報公開 と #安全保障 のバランスを含めて皆様の声をお待ちしています。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "【柴マリン納涼祭2026のご案内】\n今年も夏のイベント「柴マリン納涼祭」の季節がやってきました！ \n日頃より地域の活動にご理解とご協力をいただき、誠にありがとうございます。子どもから大人まで、みんなが笑顔になれる夏のひとときを一緒に過ごしませんか？ \n■ 開催概要\n日時： 8月23日(日) 15:00～20:00（雨天中止）\n場所： 柴団地公開空地・カメギ根公園（金沢区柴町367） \n(Google map)\nhttps://t.co/1bVqiiP1CT\n(八景島駅〜カメギ根公園道順動画)\nhttps://t.co/xZMbsQkClP\n\n■ お楽しみの見どころ\nグルメ＆お酒（のんべぇメニュー）： やきとり、やきそば、シュラスコ、から揚げ、フランクフルト、春巻き、かき氷、生ビール、ハイボール、ラムネなど盛りだくさん！\nスペシャルステージ： Hawaiian entertainer YURiCoさんによる素敵なステージをお届けします🌺\n恒例！手持ち花火大会： 19:00スタート！みんなで夜空に綺麗な花火を灯しましょう（※小学3年生以下は保護者同伴でお願いします）。\n自治会に入っていない",
+          "title": "",
+          "tweet_id": "2091338575753445523",
+          "url": "https://x.com/asakawayosiharu/status/2091338575753445523"
         }
       }
     },
