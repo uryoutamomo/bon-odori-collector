@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-25T16:50:26Z",
-  "generated_for_commit": "628eee13",
+  "generated_at": "2026-11-01T07:52:14Z",
+  "generated_for_commit": "66ec7e8c",
   "specs": {
     "L1-collection": {
       "layer": "L1",
@@ -1344,14 +1344,16 @@
         "INV-VEN-001",
         "INV-VEN-002",
         "INV-VEN-003",
-        "INV-VEN-004"
+        "INV-VEN-004",
+        "INV-VEN-005"
       ],
       "verified_by": [
         "tests/test_apply_reviewed_missing_occurrence_venues.py",
         "tests/test_apply_ph2_shinagawa_second_venue_review.py",
-        "tests/test_geocode_venues.py"
+        "tests/test_geocode_venues.py",
+        "tests/test_triage_blog_venue_regions.py"
       ],
-      "updated_for": "e4a15037",
+      "updated_for": "4ca9f5ccaffd5281ebcf172944ae461cf274d939",
       "path": "docs/spec/L1/10-venues.md",
       "owned_files": [
         "apply_ph2_shinagawa_second_venue_review.py",
@@ -1373,9 +1375,14 @@
         "commits_since": 1,
         "files_changed_since": 1
       },
-      "version": "1.1",
-      "revision_count": 2,
+      "version": "1.2",
+      "revision_count": 3,
       "history": [
+        {
+          "commit": "66ec7e8c",
+          "date": "2026-11-01",
+          "subject": "Keep cross-region blog venue matches in review (#293)"
+        },
         {
           "commit": "790a4852",
           "date": "2026-10-04",
@@ -2742,6 +2749,14 @@
       "tests": [
         "tests/test_geocode_venues.py::GeocodeVenuesTests::test_serialization_failure_keeps_existing_output_and_cleans_temporary_file",
         "tests/test_geocode_venues.py::GeocodeVenuesTests::test_replace_failure_keeps_existing_output_and_cleans_temporary_file"
+      ],
+      "has_test": true
+    },
+    "INV-VEN-005": {
+      "spec": "L1-venues",
+      "title": "Blogspot仕分けの名前一致だけで別地域を登録済みにしない",
+      "tests": [
+        "tests/test_triage_blog_venue_regions.py"
       ],
       "has_test": true
     },
