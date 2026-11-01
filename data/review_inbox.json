@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-10-31T12:38:20.610767+00:00",
+  "generated_at": "2026-11-01T13:33:12.441947+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,464 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2de86495c3e9410a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "8月23日、新宿中央公園の盆踊りに大山都議と参加。22日は、豪雨のため中止。すごい人。チャンチャンカと音楽に合わせて踊ってきました。ぎこちない(笑) https",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091649769085210721",
+      "source_url": "https://x.com/keiichi1958/status/2091649769085210721",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4d2105c23dee29922b755483d8705fd13c8c230c4f2ab49f9c845cd00153facf",
+      "last_seen_at": "github-41310714810-1",
+      "created_at": "2026-11-01T13:32:32.010455+00:00",
+      "updated_at": "2026-11-01T13:32:32.010455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_2e3608b40e561ee4",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月23日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@keiichi1958",
+        "source_count": 1,
+        "source_key": "x:2091649769085210721",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQcIULwbAAAQjjB.jpg",
+          "https://t.co/CHaCUYlYoB",
+          "pic.x.com/CHaCUYlYoB",
+          "https://pbs.twimg.com/media/HQcIXeHasAAnnYV.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "佐藤佳一(さとうけいいち)日本共産党新宿区議",
+          "classification": "registered_official_social",
+          "handle": "@keiichi1958",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n8月23日、新宿中央公園の盆踊りに大山都議と参加。22日は、豪雨のため中止。すごい人。チャンチャンカと音楽に合わせて踊ってきました。ぎこちない(笑) https://t.co/CHaCUYlYoB",
+        "source_url": "https://x.com/keiichi1958/status/2091649769085210721",
+        "source_urls": [
+          "https://x.com/keiichi1958/status/2091649769085210721"
+        ],
+        "voice": {
+          "account": "@keiichi1958",
+          "critique_post": false,
+          "date": "2026-08-23T22:12:20+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQcIULwbAAAQjjB.jpg",
+            "https://t.co/CHaCUYlYoB",
+            "pic.x.com/CHaCUYlYoB",
+            "https://pbs.twimg.com/media/HQcIXeHasAAnnYV.jpg"
+          ],
+          "name": "佐藤佳一(さとうけいいち)日本共産党新宿区議",
+          "profile_description": "日本共産党新宿区議会議員。趣味：スキー、料理。 家族：妻、１男、１女。新宿区北新宿在住。消費税５％減税！、憲法９条守れ！脱原発、高すぎる国保料の引き下げ、羽田新飛行ルートの中止、課税世帯にも支援金、各種支援金のサポートしています。よろしくお願いします。携帯09026418431",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "8月23日、新宿中央公園の盆踊りに大山都議と参加。22日は、豪雨のため中止。すごい人。チャンチャンカと音楽に合わせて踊ってきました。ぎこちない(笑) https://t.co/CHaCUYlYoB",
+          "title": "",
+          "tweet_id": "2091649769085210721",
+          "url": "https://x.com/keiichi1958/status/2091649769085210721"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3d4d8971a525c861",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "令和８年８月２３日、芝中夏祭り二日目は阿波踊りで盛り上がり、玉川太鼓、盆踊り、子ども花火まで全て無事終了しました。一日目は、ゲリラ豪雨で途中で中止になりましたが",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091490846252441759",
+      "source_url": "https://x.com/hajime1826/status/2091490846252441759",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0ea578f44aec52ecc47894262c64f678637551054f42e9ddb3e82a9949d42099",
+      "last_seen_at": "github-41310714810-1",
+      "created_at": "2026-11-01T13:32:32.010455+00:00",
+      "updated_at": "2026-11-01T13:32:32.010455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_32ecedf65f0998ff",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月２３日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@hajime1826",
+        "source_count": 1,
+        "source_key": "x:2091490846252441759",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQZ3p-laUAAJ7hx.jpg",
+          "https://t.co/2hsag5cDk1",
+          "pic.x.com/2hsag5cDk1",
+          "https://pbs.twimg.com/media/HQZ3q0YaEAElJnM.jpg",
+          "https://pbs.twimg.com/amplify_video_thumb/2091490696037543936/img/QjeNhAorwjdtB79L.jpg",
+          "https://pbs.twimg.com/amplify_video_thumb/2091490795304148993/img/g_Ylp5xoyYgwKyDC.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大川はじめ　東大和市議会議員",
+          "classification": "registered_official_social",
+          "handle": "@hajime1826",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n令和８年８月２３日、芝中夏祭り二日目は阿波踊りで盛り上がり、玉川太鼓、盆踊り、子ども花火まで全て無事終了しました。一日目は、ゲリラ豪雨で途中で中止になりましたが、二日目は予定通り、無事最後まで大きなトラブルもなく終わりました。\n\n　大川はじめは、芝中夏祭りの本部テントで、会場案内係をしました。スマホや財布などの落とし物の対応もさせていただきました。\n\n　市民の皆様のご協力もあり、第５５回芝中夏祭りが無事、終わりました事にこころから感謝申し上げます。ご来場、ご協力いただけました皆様、本当にありがとうございました。\n\n#芝中夏祭り\n#無事終了\n#ありがとうございました",
+        "source_url": "https://x.com/hajime1826/status/2091490846252441759",
+        "source_urls": [
+          "https://x.com/hajime1826/status/2091490846252441759"
+        ],
+        "voice": {
+          "account": "@hajime1826",
+          "critique_post": false,
+          "date": "2026-08-23T11:40:50+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQZ3p-laUAAJ7hx.jpg",
+            "https://t.co/2hsag5cDk1",
+            "pic.x.com/2hsag5cDk1",
+            "https://pbs.twimg.com/media/HQZ3q0YaEAElJnM.jpg",
+            "https://pbs.twimg.com/amplify_video_thumb/2091490696037543936/img/QjeNhAorwjdtB79L.jpg",
+            "https://pbs.twimg.com/amplify_video_thumb/2091490795304148993/img/g_Ylp5xoyYgwKyDC.jpg"
+          ],
+          "name": "大川はじめ　東大和市議会議員",
+          "profile_description": "｢今日を踏ん張れなければ何の為に生きてきたのかわからない！｣年中無休、政党無所属２期目。明治大学日本史専攻卒。第100回国家試験合格の看護師。前蔵敷自治会副会長。明治大学校友会役員。東大和ライオンズクラブ役員。特別儀仗隊ＯＢ会員の元自衛官、自衛官募集相談員。尊敬する政治家は上田清司。高祖父松實英洋｢十津川郷士｣。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "令和８年８月２３日、芝中夏祭り二日目は阿波踊りで盛り上がり、玉川太鼓、盆踊り、子ども花火まで全て無事終了しました。一日目は、ゲリラ豪雨で途中で中止になりましたが、二日目は予定通り、無事最後まで大きなトラブルもなく終わりました。\n\n　大川はじめは、芝中夏祭りの本部テントで、会場案内係をしました。スマホや財布などの落とし物の対応もさせていただきました。\n\n　市民の皆様のご協力もあり、第５５回芝中夏祭りが無事、終わりました事にこころから感謝申し上げます。ご来場、ご協力いただけました皆様、本当にありがとうございました。\n\n#芝中夏祭り\n#無事終了\n#ありがとうございました",
+          "title": "",
+          "tweet_id": "2091490846252441759",
+          "url": "https://x.com/hajime1826/status/2091490846252441759"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_c6fe1fe3063c7ffc",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "たんぽぽ公園から朝10時に出発した野方二丁目町会の神輿を見学へ。\n\n昨日の盆踊りは、大雨のため中止になったと思いきや、なんと雨がやんだ20時頃から開催したそうで",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091522194241380379",
+      "source_url": "https://x.com/KoudaYuriko/status/2091522194241380379",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1fde1e33ab2533b8075e4f25894dea91ee97c300a25d6eda6caa6b3ef1a382b2",
+      "last_seen_at": "github-41310714810-1",
+      "created_at": "2026-11-01T13:32:32.010455+00:00",
+      "updated_at": "2026-11-01T13:32:32.010455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_598e7731dd59df52",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "10時",
+          "20時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "中野区野方2-61",
+          "region_hint": "中野区",
+          "source_url": "https://x.com/nakano_bonodori/status/2090134082953138538",
+          "venue": "たんぽぽ公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@KoudaYuriko",
+        "source_count": 1,
+        "source_key": "x:2091522194241380379",
+        "source_media_urls": [
+          "https://pbs.twimg.com/amplify_video_thumb/2091522159965573120/img/-WtRNsIphFK_SVLW.jpg",
+          "https://t.co/CimJwhhpXi",
+          "pic.x.com/CimJwhhpXi"
+        ],
+        "source_officiality": {
+          "account_name": "甲田ゆり子 中野区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@koudayuriko",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nたんぽぽ公園から朝10時に出発した野方二丁目町会の神輿を見学へ。\n\n昨日の盆踊りは、大雨のため中止になったと思いきや、なんと雨がやんだ20時頃から開催したそうです。\n\n久保りか都議、また大和町から担ぎ手として参加した平山英明区議と3人でパチリ。\n\nお疲れさまでした！\n\n#野二フェス\n#お祭り https://t.co/CimJwhhpXi",
+        "source_url": "https://x.com/KoudaYuriko/status/2091522194241380379",
+        "source_urls": [
+          "https://x.com/KoudaYuriko/status/2091522194241380379"
+        ],
+        "voice": {
+          "account": "@KoudaYuriko",
+          "critique_post": false,
+          "date": "2026-08-23T13:45:24+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2091522159965573120/img/-WtRNsIphFK_SVLW.jpg",
+            "https://t.co/CimJwhhpXi",
+            "pic.x.com/CimJwhhpXi"
+          ],
+          "name": "甲田ゆり子 中野区議会議員",
+          "profile_description": "生まれ育った中野を、誰もが笑顔輝くまちに。 中野で暮らし続けるために中野の良いところ、便利にする情報を発信中。 たまに身体に良い食べ物の話も。 公明党 中野区議会議員（4期）甲田ゆり子",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "たんぽぽ公園から朝10時に出発した野方二丁目町会の神輿を見学へ。\n\n昨日の盆踊りは、大雨のため中止になったと思いきや、なんと雨がやんだ20時頃から開催したそうです。\n\n久保りか都議、また大和町から担ぎ手として参加した平山英明区議と3人でパチリ。\n\nお疲れさまでした！\n\n#野二フェス\n#お祭り https://t.co/CimJwhhpXi",
+          "title": "",
+          "tweet_id": "2091522194241380379",
+          "url": "https://x.com/KoudaYuriko/status/2091522194241380379"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_d4709fde6e879ee4",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "この度、令和８年度高蔵寺分屯基地盆踊り大会を開催する運びとなりましたので、ご案内いたします。\n開催期日：令和８年８月２６日（水）\n開催時間：18:30～20:3",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091473231249342767",
+      "source_url": "https://x.com/JASDF_KOZOJI/status/2091473231249342767",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "7594e7974f7854cac485037c661eeebb589da1a60aad8fd73b6894c4aaa0c4e6",
+      "last_seen_at": "github-41310714810-1",
+      "created_at": "2026-11-01T13:32:32.010455+00:00",
+      "updated_at": "2026-11-01T13:32:32.010455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_91b740b4e9cacf12",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月２６日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@JASDF_KOZOJI",
+        "source_count": 1,
+        "source_key": "x:2091473231249342767",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQZnz0daQAAzTbV.jpg",
+          "https://t.co/VKBCJnuu7U",
+          "pic.x.com/VKBCJnuu7U",
+          "https://pbs.twimg.com/media/HQZnz0da4AAuOXM.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "航空自衛隊　高蔵寺分屯基地【公式】",
+          "classification": "registered_official_social",
+          "handle": "@jasdf_kozoji",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\nこの度、令和８年度高蔵寺分屯基地盆踊り大会を開催する運びとなりましたので、ご案内いたします。\n開催期日：令和８年８月２６日（水）\n開催時間：18:30～20:30（開場:17:00）\n※荒天時中止\n入場無料、飲食・物販売店あり\n当日は会場周辺図をご確認の上、お気を付けてお越しください。 https://t.co/VKBCJnuu7U",
+        "source_url": "https://x.com/JASDF_KOZOJI/status/2091473231249342767",
+        "source_urls": [
+          "https://x.com/JASDF_KOZOJI/status/2091473231249342767"
+        ],
+        "voice": {
+          "account": "@JASDF_KOZOJI",
+          "critique_post": false,
+          "date": "2026-08-23T10:30:50+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQZnz0daQAAzTbV.jpg",
+            "https://t.co/VKBCJnuu7U",
+            "pic.x.com/VKBCJnuu7U",
+            "https://pbs.twimg.com/media/HQZnz0da4AAuOXM.jpg"
+          ],
+          "name": "航空自衛隊　高蔵寺分屯基地【公式】",
+          "profile_description": "航空自衛隊高蔵寺分屯基地（第４補給処高蔵寺支処）の公式アカウントです。高蔵寺分屯基地の日々の活動やイベント情報をお届けします。なお、各アカウントへのコメント、DMなどへの個別対応、一般アカウントへのフォローなどは、原則行いませんのでご了承ください。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "この度、令和８年度高蔵寺分屯基地盆踊り大会を開催する運びとなりましたので、ご案内いたします。\n開催期日：令和８年８月２６日（水）\n開催時間：18:30～20:30（開場:17:00）\n※荒天時中止\n入場無料、飲食・物販売店あり\n当日は会場周辺図をご確認の上、お気を付けてお越しください。 https://t.co/VKBCJnuu7U",
+          "title": "",
+          "tweet_id": "2091473231249342767",
+          "url": "https://x.com/JASDF_KOZOJI/status/2091473231249342767"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_d4c37873d71b0f08",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "#立花四丁目町会納涼祭　#東吾嬬小学校校庭\n本日、18時より立花四丁目町会の納涼盆踊り大会を開催しています。皆さんお誘い合わせの上、参加をして下さい。お待ちして",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091453854416265522",
+      "source_url": "https://x.com/takahashi_0314/status/2091453854416265522",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d0dab2ad6ec6044f540c52564f09f782fa6bb2a883032d9941f733d6c4e50076",
+      "last_seen_at": "github-41310714810-1",
+      "created_at": "2026-11-01T13:32:32.010455+00:00",
+      "updated_at": "2026-11-01T13:32:32.010455+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_b80131a99635ec88",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@takahashi_0314",
+        "source_count": 1,
+        "source_key": "x:2091453854416265522",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQZWLl6bQAAx6FJ.jpg",
+          "https://t.co/RS12CdXTb2",
+          "pic.x.com/RS12CdXTb2",
+          "https://pbs.twimg.com/media/HQZWMSEbQAETy_Y.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "高橋まさとし｜墨田区議会議員｜公明党",
+          "classification": "registered_official_social",
+          "handle": "@takahashi_0314",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n#立花四丁目町会納涼祭　#東吾嬬小学校校庭\n本日、18時より立花四丁目町会の納涼盆踊り大会を開催しています。皆さんお誘い合わせの上、参加をして下さい。お待ちしております😊 https://t.co/RS12CdXTb2",
+        "source_url": "https://x.com/takahashi_0314/status/2091453854416265522",
+        "source_urls": [
+          "https://x.com/takahashi_0314/status/2091453854416265522"
+        ],
+        "voice": {
+          "account": "@takahashi_0314",
+          "critique_post": false,
+          "date": "2026-08-23T09:13:50+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQZWLl6bQAAx6FJ.jpg",
+            "https://t.co/RS12CdXTb2",
+            "pic.x.com/RS12CdXTb2",
+            "https://pbs.twimg.com/media/HQZWMSEbQAETy_Y.jpg"
+          ],
+          "name": "高橋まさとし｜墨田区議会議員｜公明党",
+          "profile_description": "#墨田区議会議員 5期目！｜任期中5200件超の #区民相談 ｜ #墨田区立花 地域 #墨田区文花 地域｜ #物価高対策 #子育て｜特にアニメ #リコリスリコイル #訪れてみたい日本のアニメ聖地88 選出実現 ｜ 明るく安心・安全な〝すみだのまちづくり〟を　LINE→  https://t.co/W4MtF7RhlW",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "#立花四丁目町会納涼祭　#東吾嬬小学校校庭\n本日、18時より立花四丁目町会の納涼盆踊り大会を開催しています。皆さんお誘い合わせの上、参加をして下さい。お待ちしております😊 https://t.co/RS12CdXTb2",
+          "title": "",
+          "tweet_id": "2091453854416265522",
+          "url": "https://x.com/takahashi_0314/status/2091453854416265522"
         }
       }
     },
