@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1801,
+  "count": 1802,
   "public_event_count": 844,
-  "review_count": 957,
+  "review_count": 958,
   "candidates": [
     {
       "id": "4fbaa26988db7546",
@@ -7421,7 +7421,7 @@
       "evidence_count": 1
     },
     {
-      "id": "aa601f21f8d41bc9",
+      "id": "d8c5e549c1c42466",
       "song_name": "ダンシングヒーロー",
       "event_name": "ハマサイトの夏祭り",
       "venue": "ハマサイト前広場・汐留ビルディング外構",
@@ -7432,6 +7432,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=x1tK2JpWrHA",
+          "date": "2026-10-31T13:35:59+00:00",
+          "text": "Urban Walk\n【天心祭 2026】「ダンシングヒーロー」那須川天心選手と踊るハロウィン仮装盆踊り 荻野目洋子 / 鳳蝶美成 盆踊り 松戸\n#那須川天心 #天心祭 #荻野目洋子 #盆踊り #那須川天心 #松戸 #bondance \n\n\n【天心祭 2026】\n開催日時：2026年10月31日(土)～11月1日(日) \n開催場所：松戸中央公園\nhttps://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeF"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Tf_0JNhT2Dw",
@@ -7458,7 +7464,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "76d92146903fa496",
@@ -17786,7 +17792,7 @@
       "evidence_count": 1
     },
     {
-      "id": "82c4e9d84157c495",
+      "id": "a611377a0ddd4f50",
       "song_name": "五月女会輪踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -17797,6 +17803,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Fav6QCnXa7k",
+          "date": "2026-11-01T10:30:21+00:00",
+          "text": "和太鼓お祭りCH\n美子の三味線ドンパン　飛鳥山公園盆踊り（五月女会輪踊り）18　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=U0EB0t2HGcs",
+          "date": "2026-11-01T10:00:14+00:00",
+          "text": "和太鼓お祭りCH\n元気音頭　飛鳥山公園盆踊り（五月女会輪踊り）17　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://you"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=_8MMJ0uvXRQ",
@@ -17895,7 +17913,29 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 16
+      "evidence_count": 18
+    },
+    {
+      "id": "a386e91e1d3d9dee",
+      "song_name": "元気音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=U0EB0t2HGcs",
+          "date": "2026-11-01T10:00:14+00:00",
+          "text": "和太鼓お祭りCH\n元気音頭　飛鳥山公園盆踊り（五月女会輪踊り）17　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://you"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "6da30728d1c9f711",
