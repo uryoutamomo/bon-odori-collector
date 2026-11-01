@@ -1,5 +1,6 @@
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 
@@ -79,12 +80,37 @@ def load_json(path):
         return json.load(f)
 
 
+def normalize_region(value):
+    """Compare explicit areas without inferring an area from a venue/address."""
+    if not isinstance(value, str):
+        return ""
+    value = re.sub(r"\s+", "", unicodedata.normalize("NFKC", value))
+    if value in {"不明", "未確認", "地域不明", "なし", "都内"}:
+        return ""
+    return value.removeprefix("東京都")
+
+
+def region_checked_match(matches, region):
+    area = normalize_region(region)
+    if not area:
+        return None, "ambiguous_match" if len(matches) > 1 else "region_unknown"
+    same_area = [row for row in matches if normalize_region(row.get("region")) == area]
+    unknown_area = [row for row in matches if not normalize_region(row.get("region"))]
+    if len(same_area) == 1 and not unknown_area:
+        return same_area[0]["venue"], ""
+    if len(same_area) > 1 or (same_area and unknown_area):
+        return None, "ambiguous_match"
+    return None, "region_unknown" if unknown_area else "region_mismatch"
+
+
 def main():
     candidates = load_json(CANDIDATES_FILE)
     master = load_json(VENUE_MASTER_FILE)
     source_urls = load_json(SOURCE_URLS_FILE) if SOURCE_URLS_FILE.exists() else {}
-    existing_by_norm = {normalize(row["venue"]): row for row in master}
-    existing_names = {row["venue"] for row in master}
+    existing_by_name, existing_by_norm = {}, {}
+    for row in master:
+        existing_by_name.setdefault(row["venue"], []).append(row)
+        existing_by_norm.setdefault(normalize(row["venue"]), []).append(row)
 
     rows = []
     counts = {}
@@ -93,30 +119,35 @@ def main():
         reason = ""
         status = "research"
         mapped = None
+        matches = []
         if name in NOISE_NAMES:
             status = "noise"
             reason = "generic_or_fragment"
-        elif name in existing_names:
+        elif name in existing_by_name:
             status = "registered"
             mapped = name
             reason = "exact_match"
+            matches = existing_by_name[name]
         elif name in KNOWN_ALIASES:
             status = "registered_alias"
             alias = KNOWN_ALIASES[name]
-            mapped = alias if alias in existing_names else None
-            if mapped is None:
+            matches = existing_by_name.get(alias, [])
+            if not matches:
                 alias_norm = normalize(alias)
-                for row in master:
-                    if alias_norm and alias_norm in normalize(row["venue"]):
-                        mapped = row["venue"]
-                        break
-            mapped = mapped or alias
+                matches = [row for row in master if alias_norm and alias_norm in normalize(row["venue"])]
+            # No master row means region cannot be checked. Preserve this
+            # legacy alias behavior as a separate unresolved identity issue.
+            mapped = matches[0]["venue"] if matches else alias
             reason = "known_alias"
         elif normalize(name) in existing_by_norm:
             status = "registered_alias"
-            mapped = existing_by_norm[normalize(name)]["venue"]
+            matches = existing_by_norm[normalize(name)]
             reason = "normalized_match"
         region = item.get("region_hint")
+        if matches:
+            mapped, review_reason = region_checked_match(matches, region)
+            if review_reason:
+                status, reason = "research", review_reason
         priority = "skip"
         if status == "research":
             priority = "high" if region in HIGH_PRIORITY_WARDS else "normal"

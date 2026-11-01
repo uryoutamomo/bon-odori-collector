@@ -27,11 +27,13 @@ invariants:
   - INV-VEN-002
   - INV-VEN-003
   - INV-VEN-004
+  - INV-VEN-005
 verified_by:
   - tests/test_apply_reviewed_missing_occurrence_venues.py
   - tests/test_apply_ph2_shinagawa_second_venue_review.py
   - tests/test_geocode_venues.py
-updated_for: e4a15037
+  - tests/test_triage_blog_venue_regions.py
+updated_for: 4ca9f5ccaffd5281ebcf172944ae461cf274d939
 ---
 
 # 会場サブシステム
@@ -109,6 +111,14 @@ updated_for: e4a15037
 
 会場の「同じものを再利用してよい条件」はこの仕様のINVではない。`report_apply/event_report_helpers.py` の `ensure_venue()` を変える場合は、必ず[INV-MST-007](04-master.md#inv-mst-007-会場は正規化名と住所の完全一致でのみ再利用する)を先に読む。似た名称の部分一致へ広げることは禁じられている。
 
+### INV-VEN-005 Blogspot仕分けの名前一致だけで別地域を登録済みにしない
+
+- **内容**: 完全名・正規化名・既知aliasから実際の旧master行が見つかった場合、明示地域が一致する一意の候補だけを従来のregistered系にする。地域不一致は `research/region_mismatch`、地域不明は `research/region_unknown`、複数一致または一致行と地域不明行の併存は `research/ambiguous_match` とし、`mapped_to=null` でレビューに残す。名前索引は複数行を上書きしない。
+- **なぜ**: 2026-10-29の保存入力では、杉並区の馬橋小学校が会場名だけで松戸市の同名masterに一致し、registered/skipとなった。
+- **破れたときの症状**: 抽出済みの別地域の催事がレビュー対象から外れる。辞書の入力順で別会場を選ぶ。
+- **守っているコード**: `triage_blog_venue_candidates.py::main()` / `normalize_region()` / `region_checked_match()`。空白・NFKC・東京都接頭辞だけを比較用に正規化し、地域・住所・日時を推定せず元入力と出力schemaを保持する。researchの既存優先度方針は変えない。masterに対応行が無い既知aliasは地域比較できないため、従来のregistered_aliasを今回に限り変更せず、別の未解決事項として扱う。これはRDBの会場同一性や自動適用条件の変更ではない。
+- **守っているテスト**: `tests/test_triage_blog_venue_regions.py`。各名前経路の地域不一致・同地域・不明/表記揺れ、複数master、未解決aliasの互換性、fixture feed抽出→仕分けと入力非変更を検証する。
+
 ## 主要な流れ
 
 ### 1. Blogspot から候補と構造化行を取る（稼働中）
@@ -117,7 +127,7 @@ updated_for: e4a15037
 
 1. `extract_venues_blog.py` は feed 本文から会場接尾辞を持つ文字列を拾い、区の推定付き `venues_seed_blog.json` を作る。`needs_review=True` は「候補であって事実ではない」という印である。
 2. `extract_blog_venue_rows.py` は同じHTMLの表を読み、会場、住所、日付文、詳細URLを残した `blog_venue_rows.json` を作る。本文の単語抽出より、住所と根拠を持てる入口である。
-3. `triage_blog_venue_candidates.py` は旧 `venue_master.json` に対し完全名、手書き別名、正規化名を使って `registered` / `registered_alias` / `research` / `noise` に仕分ける。これは候補キューの優先付けであり、現RDBの会場同一性判定ではない。
+3. `triage_blog_venue_candidates.py` は旧 `venue_master.json` に対し完全名、手書き別名、正規化名と明示地域を使って `registered` / `registered_alias` / `research` / `noise` に仕分ける。実master行の地域不一致・不明・曖昧な一致はresearchに残す（INV-VEN-005）。これは候補キューの優先付けであり、現RDBの会場同一性判定ではない。
 
 feed取得に失敗した `extract_venues_blog.py` は「スキップ」と出して終了する。
 そのためworkflow自体が緑でも候補が更新されない可能性がある。
