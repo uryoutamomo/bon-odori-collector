@@ -1,30 +1,30 @@
 {
   "schema_version": 1,
   "generated_by": "build_odottar_coverage_benchmark.py",
-  "fetched_at": "2026-09-14T00:08:55Z",
+  "fetched_at": "2026-11-02T01:29:41Z",
   "source": {
     "url": "https://odottar.com/events.json",
-    "raw_sha256": "77dd1843a66d280688e424551cd92f21a20104a94b461262fde5b340f0d81b9f",
-    "row_count": 2568
+    "raw_sha256": "480a1a651cd1947d753d9189ecb52de6cbfdc2763cff5638b1f2c06ffda4a4bd",
+    "row_count": 3500
   },
   "safety_boundary": "coverage_benchmark_only: no canonical import, no review-inbox candidate, and no odottar URL projection into event source_urls",
   "canonical_write_count": 0,
   "review_inbox_candidate_count": 0,
   "summary": {
-    "odottar_tokyo23": 785,
+    "odottar_tokyo23": 925,
     "bonsuke_tokyo23": 394,
-    "estimated_matched": 192,
-    "odottar_only": 593,
-    "bonsuke_only": 202
+    "estimated_matched": 206,
+    "odottar_only": 719,
+    "bonsuke_only": 188
   },
   "wards": [
     {
       "ward": "千代田区",
       "priority": false,
-      "odottar": 15,
+      "odottar": 17,
       "bonsuke": 8,
       "estimated_matched": 6,
-      "odottar_only": 9,
+      "odottar_only": 11,
       "bonsuke_only": 2
     },
     {
@@ -39,229 +39,292 @@
     {
       "ward": "港区",
       "priority": false,
-      "odottar": 39,
+      "odottar": 47,
       "bonsuke": 23,
-      "estimated_matched": 10,
-      "odottar_only": 29,
-      "bonsuke_only": 13
+      "estimated_matched": 11,
+      "odottar_only": 36,
+      "bonsuke_only": 12
     },
     {
       "ward": "新宿区",
       "priority": false,
-      "odottar": 34,
+      "odottar": 40,
       "bonsuke": 19,
-      "estimated_matched": 10,
-      "odottar_only": 24,
-      "bonsuke_only": 9
+      "estimated_matched": 11,
+      "odottar_only": 29,
+      "bonsuke_only": 8
     },
     {
       "ward": "文京区",
       "priority": false,
-      "odottar": 11,
+      "odottar": 13,
       "bonsuke": 3,
       "estimated_matched": 1,
-      "odottar_only": 10,
+      "odottar_only": 12,
       "bonsuke_only": 2
     },
     {
       "ward": "台東区",
       "priority": false,
-      "odottar": 30,
+      "odottar": 35,
       "bonsuke": 18,
-      "estimated_matched": 6,
-      "odottar_only": 24,
-      "bonsuke_only": 12
+      "estimated_matched": 8,
+      "odottar_only": 27,
+      "bonsuke_only": 10
     },
     {
       "ward": "墨田区",
       "priority": false,
-      "odottar": 27,
+      "odottar": 64,
       "bonsuke": 25,
-      "estimated_matched": 3,
-      "odottar_only": 24,
-      "bonsuke_only": 22
+      "estimated_matched": 4,
+      "odottar_only": 60,
+      "bonsuke_only": 21
     },
     {
       "ward": "江東区",
       "priority": false,
-      "odottar": 57,
+      "odottar": 58,
       "bonsuke": 38,
       "estimated_matched": 25,
-      "odottar_only": 32,
+      "odottar_only": 33,
       "bonsuke_only": 13
     },
     {
       "ward": "品川区",
       "priority": false,
-      "odottar": 34,
+      "odottar": 47,
       "bonsuke": 26,
-      "estimated_matched": 3,
-      "odottar_only": 31,
-      "bonsuke_only": 23
+      "estimated_matched": 4,
+      "odottar_only": 43,
+      "bonsuke_only": 22
     },
     {
       "ward": "目黒区",
       "priority": false,
-      "odottar": 8,
+      "odottar": 11,
       "bonsuke": 8,
-      "estimated_matched": 3,
-      "odottar_only": 5,
-      "bonsuke_only": 5
+      "estimated_matched": 4,
+      "odottar_only": 7,
+      "bonsuke_only": 4
     },
     {
       "ward": "大田区",
       "priority": true,
-      "odottar": 45,
+      "odottar": 49,
       "bonsuke": 18,
       "estimated_matched": 2,
-      "odottar_only": 43,
+      "odottar_only": 47,
       "bonsuke_only": 16
     },
     {
       "ward": "世田谷区",
       "priority": false,
-      "odottar": 46,
+      "odottar": 52,
       "bonsuke": 32,
-      "estimated_matched": 1,
-      "odottar_only": 45,
-      "bonsuke_only": 31
+      "estimated_matched": 2,
+      "odottar_only": 50,
+      "bonsuke_only": 30
     },
     {
       "ward": "渋谷区",
       "priority": false,
-      "odottar": 12,
+      "odottar": 14,
       "bonsuke": 8,
       "estimated_matched": 5,
-      "odottar_only": 7,
+      "odottar_only": 9,
       "bonsuke_only": 3
     },
     {
       "ward": "中野区",
       "priority": false,
-      "odottar": 16,
+      "odottar": 20,
       "bonsuke": 3,
-      "estimated_matched": 2,
-      "odottar_only": 14,
-      "bonsuke_only": 1
+      "estimated_matched": 3,
+      "odottar_only": 17,
+      "bonsuke_only": 0
     },
     {
       "ward": "杉並区",
       "priority": false,
-      "odottar": 13,
+      "odottar": 14,
       "bonsuke": 4,
       "estimated_matched": 2,
-      "odottar_only": 11,
+      "odottar_only": 12,
       "bonsuke_only": 2
     },
     {
       "ward": "豊島区",
       "priority": true,
-      "odottar": 22,
+      "odottar": 31,
       "bonsuke": 6,
-      "estimated_matched": 2,
-      "odottar_only": 20,
-      "bonsuke_only": 4
+      "estimated_matched": 4,
+      "odottar_only": 27,
+      "bonsuke_only": 2
     },
     {
       "ward": "北区",
       "priority": false,
-      "odottar": 10,
+      "odottar": 16,
       "bonsuke": 4,
       "estimated_matched": 0,
-      "odottar_only": 10,
+      "odottar_only": 16,
       "bonsuke_only": 4
     },
     {
       "ward": "荒川区",
       "priority": true,
-      "odottar": 21,
+      "odottar": 23,
       "bonsuke": 3,
-      "estimated_matched": 0,
+      "estimated_matched": 2,
       "odottar_only": 21,
-      "bonsuke_only": 3
+      "bonsuke_only": 1
     },
     {
       "ward": "板橋区",
       "priority": true,
-      "odottar": 61,
+      "odottar": 62,
       "bonsuke": 20,
       "estimated_matched": 15,
-      "odottar_only": 46,
+      "odottar_only": 47,
       "bonsuke_only": 5
     },
     {
       "ward": "練馬区",
       "priority": true,
-      "odottar": 25,
+      "odottar": 27,
       "bonsuke": 12,
       "estimated_matched": 9,
-      "odottar_only": 16,
+      "odottar_only": 18,
       "bonsuke_only": 3
     },
     {
       "ward": "足立区",
       "priority": true,
-      "odottar": 78,
+      "odottar": 79,
       "bonsuke": 28,
       "estimated_matched": 26,
-      "odottar_only": 52,
+      "odottar_only": 53,
       "bonsuke_only": 2
     },
     {
       "ward": "葛飾区",
       "priority": true,
-      "odottar": 38,
+      "odottar": 57,
       "bonsuke": 9,
-      "estimated_matched": 3,
-      "odottar_only": 35,
-      "bonsuke_only": 6
+      "estimated_matched": 4,
+      "odottar_only": 53,
+      "bonsuke_only": 5
     },
     {
       "ward": "江戸川区",
       "priority": true,
-      "odottar": 115,
+      "odottar": 121,
       "bonsuke": 62,
       "estimated_matched": 51,
-      "odottar_only": 64,
+      "odottar_only": 70,
       "bonsuke_only": 11
     }
   ],
   "samples": {
     "odottar_only": [
       {
-        "stable_key": "9d64543398",
-        "name": "両国町会 夏祭り盆踊り大会",
-        "venue": "両国駅前大通り(国技館通り)",
+        "stable_key": "2438ec09ca",
+        "name": "第十一回 すみだ輪おどり 区民感謝デー 新春踊り尽くし2026",
+        "venue": "ひがしんアリーナ メインアリーナ(墨田区総合体育館)",
         "area": "墨田区",
-        "date": ""
+        "date": "2026-01-04"
       },
       {
-        "stable_key": "caf4d86d16",
-        "name": "京橋盆踊り(京橋エドグラン)",
-        "venue": "京橋エドグラン(KYOBASHI EDOGRAND)",
-        "area": "中央区",
-        "date": ""
+        "stable_key": "7d87c00796",
+        "name": "羽田フェスティバル盆踊り",
+        "venue": "羽田エアポートガーデン1F グランドホワイエ",
+        "area": "大田区",
+        "date": "2026-01-16"
       },
       {
-        "stable_key": "6b34c8db62",
-        "name": "巣鴨納涼盆踊り",
-        "venue": "とげぬき地蔵尊（高岩寺）境内",
-        "area": "豊島区",
-        "date": ""
+        "stable_key": "20e4a81b32",
+        "name": "第35回 伝統の技と味「しながわ展」晴盆盆踊り",
+        "venue": "きゅりあん（品川区立総合区民会館）",
+        "area": "品川区",
+        "date": "2026-01-24"
       },
       {
-        "stable_key": "72f2f42011",
-        "name": "江東区立深川第五中学校",
-        "venue": "江東区立深川第五中学校",
-        "area": "江東区",
-        "date": ""
+        "stable_key": "2b2e877c8c",
+        "name": "第八回 冬の盆踊り",
+        "venue": "東京芸術センター天空劇場",
+        "area": "足立区",
+        "date": "2026-02-15"
       },
       {
-        "stable_key": "74f08feb6e",
-        "name": "隅田川おどりフェスタ",
-        "venue": "墨田区役所うるおい広場",
-        "area": "墨田区",
-        "date": ""
+        "stable_key": "6d9acd8043",
+        "name": "街とつながる戸越公園Party みんなで踊ろう！盆踊りタイム",
+        "venue": "戸越公園駅前",
+        "area": "品川区",
+        "date": "2026-02-28"
+      },
+      {
+        "stable_key": "27adb49432",
+        "name": "赤坂茜彩 江戸盆踊り",
+        "venue": "TBS赤坂サカス広場",
+        "area": "港区",
+        "date": "2026-03-08"
+      },
+      {
+        "stable_key": "94d82b4554",
+        "name": "アイリッシュ盆踊り（グリーン アイルランド フェスティバル2026）",
+        "venue": "代々木公園イベント広場",
+        "area": "渋谷区",
+        "date": "2026-03-14"
+      },
+      {
+        "stable_key": "27cc74a899",
+        "name": "飛鳥山公園盆踊り Vol.22",
+        "venue": "飛鳥山公園",
+        "area": "北区",
+        "date": "2026-03-14"
+      },
+      {
+        "stable_key": "23c17d06f0",
+        "name": "アキバ盆踊り〜浅草夜祭〜（3月）",
+        "venue": "浅草六区ブロードウェイ（ドン・キホーテ浅草店前）",
+        "area": "台東区",
+        "date": "2026-03-21"
+      },
+      {
+        "stable_key": "13d714d8d0",
+        "name": "早稲田さくらまつり",
+        "venue": "都電早稲田〜面影橋停留場周辺（西早稲田地域交流館・甘泉園公園）",
+        "area": "新宿区",
+        "date": "2026-03-29"
+      },
+      {
+        "stable_key": "3566ea9247",
+        "name": "しながわ運河まつり",
+        "venue": "東品川海上公園",
+        "area": "品川区",
+        "date": "2026-04-11"
+      },
+      {
+        "stable_key": "a1a139214a",
+        "name": "飛鳥山公園 五月女会盆踊り",
+        "venue": "飛鳥山公園",
+        "area": "北区",
+        "date": "2026-04-19"
+      },
+      {
+        "stable_key": "ce06444c98",
+        "name": "くろねこルドルフの町の盆踊り",
+        "venue": "江戸川区立上小岩小学校",
+        "area": "江戸川区",
+        "date": "2026-04-26"
+      },
+      {
+        "stable_key": "9938623aa0",
+        "name": "飛鳥山公園 輪踊り 舞ことり盆踊り",
+        "venue": "飛鳥山公園",
+        "area": "北区",
+        "date": "2026-05-24"
       },
       {
         "stable_key": "23edf5d557",
@@ -292,10 +355,10 @@
         "date": "2026-06-07"
       },
       {
-        "stable_key": "575f439428",
-        "name": "第69回 民踊大会（第二回盆踊りコンクール）",
-        "venue": "銀座ブロッサム 中央会館ホール",
-        "area": "中央区",
+        "stable_key": "8e376312d0",
+        "name": "亀参まつり スマイル盆踊り",
+        "venue": "亀有学び交流館",
+        "area": "葛飾区",
         "date": "2026-06-07"
       },
       {
@@ -303,6 +366,13 @@
         "name": "第五回 ゆるっと徹夜で盆踊りの集い2026",
         "venue": "乃木坂駅近郊",
         "area": "港区",
+        "date": "2026-06-13"
+      },
+      {
+        "stable_key": "80d1b2b7d1",
+        "name": "下町ハイボールフェス2026 アニソン盆踊り",
+        "venue": "上野恩賜公園 竹の台広場(噴水広場)",
+        "area": "台東区",
         "date": "2026-06-13"
       },
       {
@@ -362,81 +432,11 @@
         "date": "2026-06-27"
       },
       {
-        "stable_key": "c7c2f7b5a0",
-        "name": "上野恩賜公園 竹の台広場(噴水広場)",
-        "venue": "上野恩賜公園 竹の台広場(噴水広場)",
-        "area": "台東区",
-        "date": "2026-07-03"
-      },
-      {
         "stable_key": "533e218ab6",
         "name": "下町七夕まつり",
         "venue": "かっぱ橋本通り",
         "area": "台東区",
         "date": "2026-07-04"
-      },
-      {
-        "stable_key": "d533d22f8c",
-        "name": "品川区立第一日野小学校",
-        "venue": "品川区立第一日野小学校",
-        "area": "品川区",
-        "date": "2026-07-04"
-      },
-      {
-        "stable_key": "231b83f10e",
-        "name": "小山八幡神社",
-        "venue": "小山八幡神社",
-        "area": "品川区",
-        "date": "2026-07-05"
-      },
-      {
-        "stable_key": "543ae1a8b9",
-        "name": "あさがお祭り盆踊り(入谷南公園)",
-        "venue": "あさがお祭り盆踊り(入谷南公園)",
-        "area": "台東区",
-        "date": "2026-07-06"
-      },
-      {
-        "stable_key": "8a651fdc7f",
-        "name": "田町駅前夏まつり",
-        "venue": "田町駅西口ロータリー（ピアタ前広場）",
-        "area": "港区",
-        "date": "2026-07-09"
-      },
-      {
-        "stable_key": "b9af28bb93",
-        "name": "上池袋さくら公園",
-        "venue": "上池袋さくら公園",
-        "area": "豊島区",
-        "date": "2026-07-10"
-      },
-      {
-        "stable_key": "2c3634c0c6",
-        "name": "大正大学 鴨台(おうだい)盆踊り",
-        "venue": "大正大学 鴨台(おうだい)盆踊り",
-        "area": "豊島区",
-        "date": "2026-07-10"
-      },
-      {
-        "stable_key": "413965babf",
-        "name": "萩中神社",
-        "venue": "萩中神社",
-        "area": "大田区",
-        "date": "2026-07-10"
-      },
-      {
-        "stable_key": "8a95452896",
-        "name": "サマーファミリーフェスティバル＆盆踊り大会",
-        "venue": "文京区立柳町小学校 校庭",
-        "area": "文京区",
-        "date": "2026-07-11"
-      },
-      {
-        "stable_key": "71c1632ca3",
-        "name": "世田谷区立三軒茶屋小学校",
-        "venue": "世田谷区立三軒茶屋小学校",
-        "area": "世田谷区",
-        "date": "2026-07-11"
       }
     ],
     "bonsuke_only": [
@@ -567,13 +567,6 @@
         "date": ""
       },
       {
-        "stable_key": "みなと区民まつり 盆踊り|芝公園|2026-10-10",
-        "name": "みなと区民まつり 盆踊り",
-        "venue": "芝公園",
-        "area": "港区",
-        "date": "2026-10-10"
-      },
-      {
         "stable_key": "芝大神宮 大祭 奉納輪踊り|芝新堀町児童遊園|",
         "name": "芝大神宮 大祭 奉納輪踊り",
         "venue": "芝新堀町児童遊園",
@@ -649,6 +642,13 @@
         "venue": "北柏木公園",
         "area": "新宿区",
         "date": "2025-07-25"
+      },
+      {
+        "stable_key": "原町一丁目町会 天祖神社例大祭 盆踊り|原町天祖神社|2025-09-15",
+        "name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+        "venue": "原町天祖神社",
+        "area": "新宿区",
+        "date": "2025-09-15"
       }
     ]
   }
