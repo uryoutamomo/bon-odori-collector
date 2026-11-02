@@ -3515,6 +3515,18 @@
         "basis_label": "実測"
       },
       {
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "LOVEマシーン",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "Runner",
         "confidence": "hint",
         "basis": "current_observed",

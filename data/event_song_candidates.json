@@ -1,7 +1,7 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1802,
-  "public_event_count": 844,
+  "count": 1804,
+  "public_event_count": 846,
   "review_count": 958,
   "candidates": [
     {
@@ -17792,7 +17792,7 @@
       "evidence_count": 1
     },
     {
-      "id": "a611377a0ddd4f50",
+      "id": "7e21c483e14cee94",
       "song_name": "五月女会輪踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -17803,6 +17803,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=pCZsYnXS5dE",
+          "date": "2026-11-02T10:30:09+00:00",
+          "text": "和太鼓お祭りCH\n「日本晴れだよ」　飛鳥山公園盆踊り（五月女会輪踊り）20　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https:/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w0fwJSJ3inw",
+          "date": "2026-11-02T10:00:16+00:00",
+          "text": "和太鼓お祭りCH\n椿音頭　飛鳥山公園盆踊り（五月女会輪踊り）19　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://yout"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Fav6QCnXa7k",
@@ -17913,7 +17925,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 18
+      "evidence_count": 20
     },
     {
       "id": "a386e91e1d3d9dee",
@@ -48433,6 +48445,36 @@
       "evidence_count": 0
     },
     {
+      "id": "eac3d3ec47241b24",
+      "song_name": "EZ DO DANCE",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "a777dfe4497be3b5",
+      "song_name": "LOVEマシーン",
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "5d91fb34a0be0f2f",
       "song_name": "Runner",
       "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
@@ -50738,6 +50780,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BlHRp11SxvA",
+          "date": "2026-11-02T08:00:17+00:00",
+          "text": "和太鼓お祭りCH\n「オブ・ラ・ディ、オブ・ラ・ダ」（The Beatles）　旗の台稲荷通り商店会盆踊り（盆ROCK）７　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　htt"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=2ZPWEA5GjWY",
           "date": "2026-10-31T11:30:33+00:00",
           "text": "和太鼓お祭りCH\nドンパン節　旗の台稲荷通り商店会盆踊り（盆ROCK）６　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://youtu.be/9oLLc0WaFq"
@@ -50888,7 +50936,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 25
+      "evidence_count": 26
     },
     {
       "id": "5435202dea967a34",

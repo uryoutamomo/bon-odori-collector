@@ -1,22 +1,22 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-11-01T13:31:27.002931+00:00",
+  "generated_at": "2026-11-02T15:58:47.660425+00:00",
   "source": "data/voices.json",
-  "voice_count": 45722,
-  "classified_event_evidence_count": 11231,
-  "candidate_count": 9499,
+  "voice_count": 45737,
+  "classified_event_evidence_count": 11241,
+  "candidate_count": 9502,
   "counts": {
     "by_kind": {
-      "event": 5229,
-      "song": 2824,
+      "event": 5231,
+      "song": 2825,
       "venue": 1446
     },
     "by_tier": {
       "hold": 2361,
-      "promote": 900,
-      "review": 6238
+      "promote": 901,
+      "review": 6240
     },
-    "suppressed_event_hint_count": 1092,
+    "suppressed_event_hint_count": 1093,
     "venue_month_grouped_count": 1518
   },
   "candidates": [
@@ -54573,10 +54573,44 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 6,
+      "evidence_count": 7,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:93c8c6125102a9f6d2f26fa38c0cb00ae3181a74b3c0a90fa4a3b2f853456daa",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=BlHRp11SxvA",
+          "text": "2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://youtu.be/9oLLc0WaFq4\n３東京音頭　https://youtu.be/T59KOlZ45rM\n４大東京音頭　https://youtu.be/AJwmZOSn6dc\n５東京ばやし　https://youtu.be/QzKtVf4q8vA\n６ドンパン節　https://youtu.be/2",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T08:00:17+00:00",
+          "observed_at": "2026-11-02T08:00:17+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "会場全体が一体となって盛り上がった盆踊り",
+          "normalized_event": "会場全体が一体となって盛り上がった",
+          "estimated_venue": "旗の台稲荷通り商店街",
+          "time_hints": [
+            "2026年10月18日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:d37d777742b2c707e36526b3586dea37197b558778c6cc646fb7330b7afb1588",
           "tweet_id": "",
@@ -67900,10 +67934,76 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 33,
+      "evidence_count": 35,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:cc0dc9bff642ebffd96455b21b97dd4a01671403e3f05e1f7f7cbad93e979a8c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=veFMAFvpApY",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された\n『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。\n\n「踊月夜」と「雅」による息の合った華やかなステージと、\n秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。\n\n\n【イベント概要】\n ・イベント名：第3回女将no郡上おどりdeマルシェ \n・出演：踊月夜 / 雅 / ジュニアクラブ\n・開催日：2026年10月25日 \n・開催地：岐阜県郡上八幡\n\nチャンネル登録・高評価もよろしくお願いいたします！\n\n#古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り\n\n\n女将の郡上おどりマルシェ\n１古調かわさき　https://youtu.be/0srFYCdkuiA\n２かわさき　https://youtu.be/_ZUmbl3HWRI\n３三百　https://youtu.be/DlGv6Vav99s\n４源助さん　https://youtu.be/Hs132tuSZOk\n５神代　https://youtu.be/thrhneF71iM",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T11:30:38+00:00",
+          "observed_at": "2026-11-02T11:30:38+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:1f5ad09a66d87bf6a3132ac49a245d3c04e7128e7892e81afb6536e8d26c9a9e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=pRDMMaRE6oc",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された\n『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。\n\n「踊月夜」と「雅」による息の合った華やかなステージと、\n秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。\n\n\n【イベント概要】\n ・イベント名：第3回女将no郡上おどりdeマルシェ \n・出演：踊月夜 / 雅 / ジュニアクラブ\n・開催日：2026年10月25日 \n・開催地：岐阜県郡上八幡\n\nチャンネル登録・高評価もよろしくお願いいたします！\n\n#古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り\n\n\n女将の郡上おどりマルシェ\n１古調かわさき　https://youtu.be/0srFYCdkuiA\n２かわさき　https://youtu.be/_ZUmbl3HWRI\n３三百　https://youtu.be/DlGv6Vav99s\n４源助さん　https://youtu.be/Hs132tuSZOk\n５神代　https://youtu.be/thrhneF71iM",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T11:00:13+00:00",
+          "observed_at": "2026-11-02T11:00:13+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:fc129d68449a93d90875936d3cd4ac4df782a6628c952429b80f31d4a63b9401",
           "tweet_id": "",
@@ -75386,6 +75486,196 @@
           "estimated_venue": "",
           "time_hints": [
             "2026年8月8日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:ad90926311872a629e94a40ddadb752dcdb500172aa81ab15763851eabe285f2",
+      "display_name": "楽しい盆踊り",
+      "normalized_event": "楽しい",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "2026年10月31日",
+      "year": 2026,
+      "hashtags": [
+        "品川音頭",
+        "キャラ盆",
+        "しながわ盆フェス",
+        "盆踊り",
+        "大井競馬場"
+      ],
+      "score": 40,
+      "tier": "review",
+      "evidence_count": 5,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:bf5b1fc81a10ab53da26a5dc84b379378b1644a1f67724f54d007296f3079da2",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=zOqFNILvvDA",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T12:30:13+00:00",
+          "observed_at": "2026-11-02T12:30:13+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:966001bc43814fb6803d47a329140092bd85578ee0a2d0b8f9309f57d3d003a2",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fAwySUMLkvA",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T12:00:09+00:00",
+          "observed_at": "2026-11-02T12:00:09+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:0193052456faa64d506a3deb7c468ee0305c4bf8c40ddb7cefc18ac9b6f41b95",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Ddin_HYTlyc",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T07:00:17+00:00",
+          "observed_at": "2026-11-02T07:00:17+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:360dbbf4dd9d7ad1ad4057eab3cd45d7ed5266e9ad1597bc90034de1527d4de3",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=qvzdYBgyufY",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T06:00:07+00:00",
+          "observed_at": "2026-11-02T06:00:07+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:ed54a9106cbd5f81f0295c6ec2d8e0c0e676e112c976ebeb9fe8acaab844b94e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2QgsflO46tY",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T05:00:20+00:00",
+          "observed_at": "2026-11-02T05:00:20+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
           ],
           "year_signals": [],
           "year": 2026
@@ -148235,6 +148525,67 @@
           "estimated_venue": "",
           "time_hints": [
             "本日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:a8a046b33ae1e866b87bec181d9fc7fc2d9213032042bdb40ef7bd7e3327ffc1",
+      "display_name": "日本の祭り",
+      "normalized_event": "日本の",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "2026年10月31日",
+      "year": 2026,
+      "hashtags": [
+        "品川音頭",
+        "キャラ盆",
+        "しながわ盆フェス",
+        "盆踊り",
+        "大井競馬場"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [
+        "ラクターたちと一緒に会場全体が一体となって盛り上がった楽しい盆踊り"
+      ],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:ea7fade8cec28dc1ff5729c04c9c4f1a69d41c8987536fba02b3f131e0322e41",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZcJp0dBUV40",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\nご当地キャラクターたちと一緒に会場全体が一体となって盛り上がった楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T04:00:14+00:00",
+          "observed_at": "2026-11-02T04:00:14+00:00",
+          "patterns": [
+            "C",
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本の祭り",
+          "normalized_event": "日本の",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
           ],
           "year_signals": [],
           "year": 2026
@@ -330117,6 +330468,89 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:cd45d1dfe07f06973023b27acd010dc373e4b2dee8eb51fe50fce22ae09903a8",
+      "display_name": "第53回日本橋京橋まつり",
+      "normalized_event": "日本橋京橋",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "海上自衛隊",
+        "東京音楽隊",
+        "軍艦マーチ",
+        "日本橋京橋まつり",
+        "大江戸活粋パレード"
+      ],
+      "score": 5,
+      "tier": "hold",
+      "evidence_count": 2,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:b800ec1b1872a496f39239524abae163ce291ea5eb765881bbb1c0b63292ed96",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=dbvbvGxNAaE",
+          "text": "東京都中央区の中央通りで開催された\n「第53回日本橋京橋まつり」大江戸活粋パレードより、\n海上自衛隊東京音楽隊によるパレード行進の様子です。\n\n演奏曲は、力強い響きと堂々たる行進が印象的な名曲\n「軍艦マーチ（行進曲『軍艦』）」。 \n活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。\n\n【イベント概要】\n ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」\n ・開催場所：東京都中央区 中央通り（京橋～日本橋）\n ・出演：海上自衛隊東京音楽隊 \n・演奏曲：行進曲「軍艦」（軍艦マーチ）他\n\nご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。\n\n#海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区\n\n\n海上自衛隊東京音楽隊パレード\n１ダイジェスト１　https://youtu.be/Mo-CkBJzimA\n２日本橋通過　https://youtu.be/dbvbvGxNAaE",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-02T03:00:12+00:00",
+          "observed_at": "2026-11-02T03:00:12+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 11,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "第53回日本橋京橋まつり",
+          "normalized_event": "日本橋京橋",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:b581de68209be31f6ceae77d474478a7f01692139d8c503e15ccf49e38033b58",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Mo-CkBJzimA",
+          "text": "東京都中央区の中央通りで開催された\n「第53回日本橋京橋まつり」大江戸活粋パレードより、\n海上自衛隊東京音楽隊によるパレード行進の様子です。\n\n演奏曲は、力強い響きと堂々たる行進が印象的な名曲\n「軍艦マーチ（行進曲『軍艦』）」。 \n活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。\n\n【イベント概要】\n ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」\n ・開催場所：東京都中央区 中央通り（京橋～日本橋）\n ・出演：海上自衛隊東京音楽隊 \n・演奏曲：行進曲「軍艦」（軍艦マーチ）他\n\nご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。\n\n#海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-01T06:15:14+00:00",
+          "observed_at": "2026-11-01T06:15:14+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 11,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "第53回日本橋京橋まつり",
+          "normalized_event": "日本橋京橋",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:122b09645fada0f479175df112432b2d92795162131ce273ed5f134930bd9e6c",
       "display_name": "素戔雄神社の盆踊り（名称未確定）",
       "normalized_event": "",
@@ -338358,60 +338792,6 @@
           ],
           "estimated_event": "笠岡港まつり",
           "normalized_event": "笠岡港",
-          "estimated_venue": "",
-          "time_hints": [],
-          "year_signals": [],
-          "year": 2026
-        }
-      ]
-    },
-    {
-      "kind": "event",
-      "candidate_key": "event:cd45d1dfe07f06973023b27acd010dc373e4b2dee8eb51fe50fce22ae09903a8",
-      "display_name": "第53回日本橋京橋まつり",
-      "normalized_event": "日本橋京橋",
-      "venue": "",
-      "venue_key": "",
-      "month": "",
-      "estimated_date": "",
-      "year": 2026,
-      "hashtags": [
-        "海上自衛隊",
-        "東京音楽隊",
-        "軍艦マーチ",
-        "日本橋京橋まつり",
-        "大江戸活粋パレード"
-      ],
-      "score": 0,
-      "tier": "hold",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "suppressed_event_hints": [],
-      "evidence": [
-        {
-          "identity": "evidence:sha256:b581de68209be31f6ceae77d474478a7f01692139d8c503e15ccf49e38033b58",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=Mo-CkBJzimA",
-          "text": "東京都中央区の中央通りで開催された\n「第53回日本橋京橋まつり」大江戸活粋パレードより、\n海上自衛隊東京音楽隊によるパレード行進の様子です。\n\n演奏曲は、力強い響きと堂々たる行進が印象的な名曲\n「軍艦マーチ（行進曲『軍艦』）」。 \n活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。\n\n【イベント概要】\n ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」\n ・開催場所：東京都中央区 中央通り（京橋～日本橋）\n ・出演：海上自衛隊東京音楽隊 \n・演奏曲：行進曲「軍艦」（軍艦マーチ）他\n\nご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。\n\n#海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区",
-          "account": "@wadaikoCH",
-          "dancer_key": "@wadaikoch",
-          "spoken_at": "2026-11-01T06:15:14+00:00",
-          "observed_at": "2026-11-01T06:15:14+00:00",
-          "patterns": [
-            "C"
-          ],
-          "bon_context_hits": [],
-          "source_score": 11,
-          "score_reasons": [
-            "place_or_venue:+3",
-            "event_name:+4",
-            "song_or_group:+2",
-            "plan_or_announcement:+3",
-            "question_recommend_invite:+2",
-            "weak_bon_context:-3"
-          ],
-          "estimated_event": "第53回日本橋京橋まつり",
-          "normalized_event": "日本橋京橋",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -372886,6 +373266,25 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:93c8c6125102a9f6d2f26fa38c0cb00ae3181a74b3c0a90fa4a3b2f853456daa",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=BlHRp11SxvA",
+          "text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T08:00:17+00:00",
+          "score": 15,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "会場全体が一体となって盛り上がった盆踊り",
+          "estimated_venue": "旗の台稲荷通り商店街",
+          "time_hints": [
+            "2026年10月18日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d37d777742b2c707e36526b3586dea37197b558778c6cc646fb7330b7afb1588",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2ZPWEA5GjWY",
@@ -373004,7 +373403,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 6,
+      "evidence_count": 7,
       "speaker_count": 1
     },
     {
@@ -490247,6 +490646,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:cc0dc9bff642ebffd96455b21b97dd4a01671403e3f05e1f7f7cbad93e979a8c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=veFMAFvpApY",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:30:38+00:00",
+          "score": 15,
+          "song_name": "での演奏・踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:1f5ad09a66d87bf6a3132ac49a245d3c04e7128e7892e81afb6536e8d26c9a9e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=pRDMMaRE6oc",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:00:13+00:00",
+          "score": 15,
+          "song_name": "での演奏・踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:fc129d68449a93d90875936d3cd4ac4df782a6628c952429b80f31d4a63b9401",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=sopNASXV0lM",
@@ -490878,7 +491315,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 33,
+      "evidence_count": 35,
       "speaker_count": 1
     },
     {
@@ -499012,6 +499449,142 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:5da230c63344828404c899adf0cebca5a9e5a87e8d894d03ef1061bad1392606",
+      "display_name": "品川音頭",
+      "normalized_event": "楽しい",
+      "venue": "",
+      "venue_key": "",
+      "month": "10",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:bf5b1fc81a10ab53da26a5dc84b379378b1644a1f67724f54d007296f3079da2",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=zOqFNILvvDA",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T12:30:13+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:966001bc43814fb6803d47a329140092bd85578ee0a2d0b8f9309f57d3d003a2",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fAwySUMLkvA",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T12:00:09+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:0193052456faa64d506a3deb7c468ee0305c4bf8c40ddb7cefc18ac9b6f41b95",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Ddin_HYTlyc",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T07:00:17+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:360dbbf4dd9d7ad1ad4057eab3cd45d7ed5266e9ad1597bc90034de1527d4de3",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=qvzdYBgyufY",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T06:00:07+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:ed54a9106cbd5f81f0295c6ec2d8e0c0e676e112c976ebeb9fe8acaab844b94e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2QgsflO46tY",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T05:00:20+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:ea7fade8cec28dc1ff5729c04c9c4f1a69d41c8987536fba02b3f131e0322e41",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ZcJp0dBUV40",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ ご当地キャラクターたちと一緒に会場全体が一体となって盛り上がった楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T04:00:14+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 6,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:c68df20e6d7ec89c0bf75fa3a245f5fc4fe0d8b232eb4cbf6d1a227d922285f7",
       "display_name": "四季の花踊り",
       "normalized_event": "浅草雷連",
@@ -501207,6 +501780,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:cc0dc9bff642ebffd96455b21b97dd4a01671403e3f05e1f7f7cbad93e979a8c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=veFMAFvpApY",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:30:38+00:00",
+          "score": 15,
+          "song_name": "女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:1f5ad09a66d87bf6a3132ac49a245d3c04e7128e7892e81afb6536e8d26c9a9e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=pRDMMaRE6oc",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:00:13+00:00",
+          "score": 15,
+          "song_name": "女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:fc129d68449a93d90875936d3cd4ac4df782a6628c952429b80f31d4a63b9401",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=sopNASXV0lM",
@@ -501838,7 +502449,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 33,
+      "evidence_count": 35,
       "speaker_count": 1
     },
     {
@@ -501856,6 +502467,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:cc0dc9bff642ebffd96455b21b97dd4a01671403e3f05e1f7f7cbad93e979a8c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=veFMAFvpApY",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:30:38+00:00",
+          "score": 15,
+          "song_name": "女将の郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:1f5ad09a66d87bf6a3132ac49a245d3c04e7128e7892e81afb6536e8d26c9a9e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=pRDMMaRE6oc",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:00:13+00:00",
+          "score": 15,
+          "song_name": "女将の郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:fc129d68449a93d90875936d3cd4ac4df782a6628c952429b80f31d4a63b9401",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=sopNASXV0lM",
@@ -502487,7 +503136,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 33,
+      "evidence_count": 35,
       "speaker_count": 1
     },
     {
@@ -513065,6 +513714,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:cc0dc9bff642ebffd96455b21b97dd4a01671403e3f05e1f7f7cbad93e979a8c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=veFMAFvpApY",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:30:38+00:00",
+          "score": 15,
+          "song_name": "第3回女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:1f5ad09a66d87bf6a3132ac49a245d3c04e7128e7892e81afb6536e8d26c9a9e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=pRDMMaRE6oc",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:00:13+00:00",
+          "score": 15,
+          "song_name": "第3回女将no郡上おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:fc129d68449a93d90875936d3cd4ac4df782a6628c952429b80f31d4a63b9401",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=sopNASXV0lM",
@@ -513696,7 +514383,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 33,
+      "evidence_count": 35,
       "speaker_count": 1
     },
     {
@@ -516399,6 +517086,46 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:cc0dc9bff642ebffd96455b21b97dd4a01671403e3f05e1f7f7cbad93e979a8c",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=veFMAFvpApY",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:30:38+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:1f5ad09a66d87bf6a3132ac49a245d3c04e7128e7892e81afb6536e8d26c9a9e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=pRDMMaRE6oc",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T11:00:13+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本の祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月25日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:fc129d68449a93d90875936d3cd4ac4df782a6628c952429b80f31d4a63b9401",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=sopNASXV0lM",
@@ -517064,7 +517791,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 33,
+      "evidence_count": 35,
       "speaker_count": 1
     },
     {
@@ -624436,6 +625163,21 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:93c8c6125102a9f6d2f26fa38c0cb00ae3181a74b3c0a90fa4a3b2f853456daa",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=BlHRp11SxvA",
+          "text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-02T08:00:17+00:00",
+          "score": 15,
+          "estimated_event": "会場全体が一体となって盛り上がった盆踊り",
+          "estimated_venue": "旗の台稲荷通り商店街",
+          "time_hints": [
+            "2026年10月18日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d37d777742b2c707e36526b3586dea37197b558778c6cc646fb7330b7afb1588",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2ZPWEA5GjWY",
@@ -624527,7 +625269,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 6,
+      "evidence_count": 7,
       "speaker_count": 1
     },
     {
