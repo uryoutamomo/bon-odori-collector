@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-01T13:43:21.731270+00:00",
+  "generated_at": "2026-11-02T16:00:25.359906+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -2837,6 +2837,359 @@
           "title": "",
           "tweet_id": "2084967015425679844",
           "url": "https://x.com/travelroad5/status/2084967015425679844"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_2d875715a5abd033",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7/25（土）　大田文化の森夏祭り2026　昼は大田文化の森運営協議会、夜は新井宿自治会連合会が担当　ステージ、ワークショップなど楽しむ　実行委員として盆踊りを",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081378504961343527",
+      "source_url": "https://x.com/TakahiroShojima/status/2081378504961343527",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a0f2c91f7e218a247af2ca1c81c0c6b6e63c35a0c4fb221b8ec25e4a00c9a4a6",
+      "last_seen_at": "github-41474947381-1",
+      "created_at": "2026-11-02T15:59:49.623372+00:00",
+      "updated_at": "2026-11-02T15:59:49.623372+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_b612cef2d76c8d31",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/25"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区中央2-10-1",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/140595",
+          "venue": "大田文化の森"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@TakahiroShojima",
+        "source_count": 1,
+        "source_key": "x:2081378504961343527",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "庄嶋たかひろ 大田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@takahiroshojima",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7/25（土）　大田文化の森夏祭り2026　昼は大田文化の森運営協議会、夜は新井宿自治会連合会が担当　ステージ、ワークショップなど楽しむ　実行委員として盆踊りを運営｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/MLuPYvPuwN",
+        "source_url": "https://x.com/TakahiroShojima/status/2081378504961343527",
+        "source_urls": [
+          "https://x.com/TakahiroShojima/status/2081378504961343527"
+        ],
+        "voice": {
+          "account": "@TakahiroShojima",
+          "date": "2026-07-26T13:58:00+00:00",
+          "name": "庄嶋たかひろ 大田区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-poster-flyer"
+          ],
+          "text": "7/25（土）　大田文化の森夏祭り2026　昼は大田文化の森運営協議会、夜は新井宿自治会連合会が担当　ステージ、ワークショップなど楽しむ　実行委員として盆踊りを運営｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/MLuPYvPuwN",
+          "title": "",
+          "tweet_id": "2081378504961343527",
+          "url": "https://x.com/TakahiroShojima/status/2081378504961343527"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3bc5eae548c555ef",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "【成田山みたま祭り盆踊り大会】\n8月23日、弘恵会田町駐車場を会場に「成田山みたま祭り盆踊り大会」が開催されました。\n1933年から続くこの伝統ある祭りでは、初",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091664873793142832",
+      "source_url": "https://x.com/narita_fudou/status/2091664873793142832",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6c5149304226bc3cd5f619632cf7886727b85649aa1450bf4bbda361868f01b8",
+      "last_seen_at": "github-41474947381-1",
+      "created_at": "2026-11-02T15:59:49.623372+00:00",
+      "updated_at": "2026-11-02T15:59:49.623372+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_e754d41cb7fc3f48",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月23日",
+          "18時",
+          "18時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@narita_fudou",
+        "source_count": 1,
+        "source_key": "x:2091664873793142832",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQcWHWiaAAAl1MW.jpg",
+          "https://t.co/WH9MwMVE4L",
+          "pic.x.com/WH9MwMVE4L",
+          "https://pbs.twimg.com/media/HQcWHjkaIAA94A8.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "大本山成田山新勝寺【公式】",
+          "classification": "registered_official_social",
+          "handle": "@narita_fudou",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n【成田山みたま祭り盆踊り大会】\n8月23日、弘恵会田町駐車場を会場に「成田山みたま祭り盆踊り大会」が開催されました。\n1933年から続くこの伝統ある祭りでは、初日の18時30分から田中照広寺務長導師のもと、亡き人の御霊に供養の誠を捧げる法要が厳かに執り行われました。その後、地元女人講の皆さまをはじめ、大勢の参加者によって華やかな踊りの輪が広がりました。\n\n本日（24日）も18時30分から引き続き開催いたします。皆さまのお越しをお待ちしております。",
+        "source_url": "https://x.com/narita_fudou/status/2091664873793142832",
+        "source_urls": [
+          "https://x.com/narita_fudou/status/2091664873793142832"
+        ],
+        "voice": {
+          "account": "@narita_fudou",
+          "critique_post": false,
+          "date": "2026-08-23T23:12:21+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQcWHWiaAAAl1MW.jpg",
+            "https://t.co/WH9MwMVE4L",
+            "pic.x.com/WH9MwMVE4L",
+            "https://pbs.twimg.com/media/HQcWHjkaIAA94A8.jpg"
+          ],
+          "name": "大本山成田山新勝寺【公式】",
+          "profile_description": "真言宗智山派 大本山成田山新勝寺の公式アカウントです。 御本尊は不動明王で、古くから「成田のお不動さま」として親しまれ多くの人々に信仰されています。 このアカウントでは、日々行われる御護摩祈祷、年間行事等の最新情報をお届けします。 本アカウントに対するコメント、DMの返信はできませんのでご了承ください。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-imminent"
+          ],
+          "text": "【成田山みたま祭り盆踊り大会】\n8月23日、弘恵会田町駐車場を会場に「成田山みたま祭り盆踊り大会」が開催されました。\n1933年から続くこの伝統ある祭りでは、初日の18時30分から田中照広寺務長導師のもと、亡き人の御霊に供養の誠を捧げる法要が厳かに執り行われました。その後、地元女人講の皆さまをはじめ、大勢の参加者によって華やかな踊りの輪が広がりました。\n\n本日（24日）も18時30分から引き続き開催いたします。皆さまのお越しをお待ちしております。",
+          "title": "",
+          "tweet_id": "2091664873793142832",
+          "url": "https://x.com/narita_fudou/status/2091664873793142832"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b05b596b594c1e38",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "7/17（金）　大田文化の森夏祭り盆踊り練習会　実行委員として盆踊り担当　今年はアンパンマン音頭も　本番は7/25（土）18:30-20:00＠大田文化の森多目",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2078281510256300422",
+      "source_url": "https://x.com/TakahiroShojima/status/2078281510256300422",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e95e48dac8cdb4676148fa07fde270173c4d1be6ef2deb78295182367124348c",
+      "last_seen_at": "github-41474947381-1",
+      "created_at": "2026-11-02T15:59:49.623372+00:00",
+      "updated_at": "2026-11-02T15:59:49.623372+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_9610c54a27ddcdcc",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/17",
+          "7/25"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "大田区中央2-10-1",
+          "region_hint": "大田区",
+          "source_url": "https://otakushoren.com/event/140595",
+          "venue": "大田文化の森"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@TakahiroShojima",
+        "source_count": 1,
+        "source_key": "x:2078281510256300422",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "庄嶋たかひろ 大田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@takahiroshojima",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n7/17（金）　大田文化の森夏祭り盆踊り練習会　実行委員として盆踊り担当　今年はアンパンマン音頭も　本番は7/25（土）18:30-20:00＠大田文化の森多目的室　日本一涼しい盆踊り｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/qvAwznh9ae",
+        "source_url": "https://x.com/TakahiroShojima/status/2078281510256300422",
+        "source_urls": [
+          "https://x.com/TakahiroShojima/status/2078281510256300422"
+        ],
+        "voice": {
+          "account": "@TakahiroShojima",
+          "date": "2026-07-18T00:51:39+00:00",
+          "name": "庄嶋たかひろ 大田区議会議員",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-program-songs-wide"
+          ],
+          "text": "7/17（金）　大田文化の森夏祭り盆踊り練習会　実行委員として盆踊り担当　今年はアンパンマン音頭も　本番は7/25（土）18:30-20:00＠大田文化の森多目的室　日本一涼しい盆踊り｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/qvAwznh9ae",
+          "title": "",
+          "tweet_id": "2078281510256300422",
+          "url": "https://x.com/TakahiroShojima/status/2078281510256300422"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_fb0d35e56680fb40",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P0",
+      "priority_score": 125.0,
+      "title": "今週もラジオ体操から元気にスタート！\n毎週月曜日は、グローバルキッズ飯田橋前からご挨拶☺️午前中は、週末にいただいた区民相談の対応です！\n\n■先週末22日（土）",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2091740278088716711",
+      "source_url": "https://x.com/egoshi_yuuichi/status/2091740278088716711",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "7b9a45386d7ed7769a76ae2383f2ee043355623bd6b246d1a4b944cd5011f9df",
+      "last_seen_at": "github-41474947381-1",
+      "created_at": "2026-11-02T15:59:49.623372+00:00",
+      "updated_at": "2026-11-02T15:59:49.623372+00:00",
+      "payload": {
+        "archive_reason": "official_new_event_daily_cap",
+        "candidate_id": "xgap_d04f269f3fad4d0c",
+        "candidate_kind": "official_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/24"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [],
+        "priority_score": 125,
+        "source_author": "@egoshi_yuuichi",
+        "source_count": 1,
+        "source_key": "x:2091740278088716711",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQdasZuaMAAG0Ew.jpg",
+          "https://t.co/gDHfNCuRBV",
+          "pic.x.com/gDHfNCuRBV",
+          "https://pbs.twimg.com/media/HQdasZwaAAAC45n.jpg",
+          "https://pbs.twimg.com/media/HQdasZubYAApbuc.jpg",
+          "https://pbs.twimg.com/media/HQdasZubcAAsMG-.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "えごし雄一🌾千代田区議会議員",
+          "classification": "registered_official_social",
+          "handle": "@egoshi_yuuichi",
+          "reasons": [
+            "registered_official_source_account"
+          ],
+          "recommended_action": "use_as_confirmed_source_after_post_review",
+          "score": 100,
+          "source_type": "official",
+          "trust_level": "organizer_official"
+        },
+        "source_text": "\n今週もラジオ体操から元気にスタート！\n毎週月曜日は、グローバルキッズ飯田橋前からご挨拶☺️午前中は、週末にいただいた区民相談の対応です！\n\n■先週末22日（土）は、麹町小学校で開催された「麹町納涼こども会」に参加しました！\n\n途中から激しい雨となり、警報も出る天候に。校庭の隅では排水が間に合わず雨水がたまってしまったり、テントが一つ雨で耐えられなくなったりと大変な状況もあったようですが、子どもたちに大きな事故がなく、本当によかったです。\n\n朝から準備をしてくださった各町会をはじめ、関係者・スタッフの皆さま、本当にありがとうございました🙇‍♂️\n\n■本日8/24付 公明新聞より\n「ヤングケアラー支援を強化」\n「進学・学業継続、就職・就労――18歳以上の対応充実」\n「自治体の取り組み底上げを」\n\n#千代田区 #麹町 #麹町小学校 #公明党 #区議会議員 #えごし雄一",
+        "source_url": "https://x.com/egoshi_yuuichi/status/2091740278088716711",
+        "source_urls": [
+          "https://x.com/egoshi_yuuichi/status/2091740278088716711"
+        ],
+        "voice": {
+          "account": "@egoshi_yuuichi",
+          "critique_post": false,
+          "date": "2026-08-24T04:11:59+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQdasZuaMAAG0Ew.jpg",
+            "https://t.co/gDHfNCuRBV",
+            "pic.x.com/gDHfNCuRBV",
+            "https://pbs.twimg.com/media/HQdasZwaAAAC45n.jpg",
+            "https://pbs.twimg.com/media/HQdasZubYAApbuc.jpg",
+            "https://pbs.twimg.com/media/HQdasZubcAAsMG-.jpg"
+          ],
+          "name": "えごし雄一🌾千代田区議会議員",
+          "profile_description": "▶︎昭和57年生まれ 40歳 ▶︎千代田区富士見在住 ▶︎千代田区議会議員 ▶︎平成13年 大阪府立八尾高校卒業 ▶︎平成18年 立命館大学卒業 ▶︎元公明新聞記者 ▶︎信条：誠実一路、現場主義 ▶︎趣味：音楽を聞くこと、写真を撮ること ▶︎好きなスポーツ：柔道、サッカー ▶︎党千代田総支部青年部長",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟢一次レポ"
+          ],
+          "text": "今週もラジオ体操から元気にスタート！\n毎週月曜日は、グローバルキッズ飯田橋前からご挨拶☺️午前中は、週末にいただいた区民相談の対応です！\n\n■先週末22日（土）は、麹町小学校で開催された「麹町納涼こども会」に参加しました！\n\n途中から激しい雨となり、警報も出る天候に。校庭の隅では排水が間に合わず雨水がたまってしまったり、テントが一つ雨で耐えられなくなったりと大変な状況もあったようですが、子どもたちに大きな事故がなく、本当によかったです。\n\n朝から準備をしてくださった各町会をはじめ、関係者・スタッフの皆さま、本当にありがとうございました🙇‍♂️\n\n■本日8/24付 公明新聞より\n「ヤングケアラー支援を強化」\n「進学・学業継続、就職・就労――18歳以上の対応充実」\n「自治体の取り組み底上げを」\n\n#千代田区 #麹町 #麹町小学校 #公明党 #区議会議員 #えごし雄一",
+          "title": "",
+          "tweet_id": "2091740278088716711",
+          "url": "https://x.com/egoshi_yuuichi/status/2091740278088716711",
+          "value_score": 18.0
         }
       }
     },
@@ -32487,6 +32840,85 @@
           "title": "",
           "tweet_id": "2056637018248229108",
           "url": "https://x.com/8_chokai/status/2056637018248229108"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_0c2bfc5aa951be98",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "7/19(日)\n緊急で身内の件で1日出払う事になりこの日は盆踊りは行けないかなと思ってたがギリ行けたので、すぐ行けてお勧めされてた会場、板橋中台サンシティへ１時",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2079454576525431254",
+      "source_url": "https://x.com/bakushin339711/status/2079454576525431254",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "42dda3cf48a7ca12014b5f6ff493e44b9d55a01f441f4917fc15a896abbe1ea2",
+      "last_seen_at": "github-41474947381-1",
+      "created_at": "2026-11-02T15:59:49.623372+00:00",
+      "updated_at": "2026-11-02T15:59:49.623372+00:00",
+      "payload": {
+        "candidate_id": "xgap_aa67afb2d29928e9",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/19",
+          "１時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-07-19"
+        ],
+        "priority_score": 95,
+        "source_author": "@bakushin339711",
+        "source_count": 1,
+        "source_key": "x:2079454576525431254",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "バクシン",
+          "classification": "unknown_or_personal_social",
+          "handle": "@bakushin339711",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n7/19(日)\n緊急で身内の件で1日出払う事になりこの日は盆踊りは行けないかなと思ってたがギリ行けたので、すぐ行けてお勧めされてた会場、板橋中台サンシティへ１時間程行って来ました！\n\n東京BONﾏｸﾄﾞﾅﾙﾄﾞ等面白い曲満載♪サンシティ音頭の御当地もあり💃短い時間でしたが楽しかった😄✨",
+        "source_url": "https://x.com/bakushin339711/status/2079454576525431254",
+        "source_urls": [
+          "https://x.com/bakushin339711/status/2079454576525431254"
+        ],
+        "voice": {
+          "account": "@bakushin339711",
+          "date": "2026-07-21T06:33:00+00:00",
+          "name": "バクシン",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-report"
+          ],
+          "text": "7/19(日)\n緊急で身内の件で1日出払う事になりこの日は盆踊りは行けないかなと思ってたがギリ行けたので、すぐ行けてお勧めされてた会場、板橋中台サンシティへ１時間程行って来ました！\n\n東京BONﾏｸﾄﾞﾅﾙﾄﾞ等面白い曲満載♪サンシティ音頭の御当地もあり💃短い時間でしたが楽しかった😄✨",
+          "title": "",
+          "tweet_id": "2079454576525431254",
+          "url": "https://x.com/bakushin339711/status/2079454576525431254"
         }
       }
     },
