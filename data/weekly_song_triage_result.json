@@ -1,11 +1,11 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 6,
-  "direct_count": 3,
-  "created_count": 2,
+  "song_candidate_count": 9,
+  "direct_count": 5,
+  "created_count": 4,
   "updated_count": 1,
-  "rejected_noise_count": 2,
+  "rejected_noise_count": 3,
   "review_count": 1,
   "created": [
     {
@@ -19,6 +19,22 @@
     {
       "song_name": "女将の郡上おどり",
       "source_term": "女将の郡上おどり",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "息の合った華やかな踊り",
+      "source_term": "息の合った華やかな踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "木曽節",
+      "source_term": "木曽節",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -43,14 +59,18 @@
     {
       "term": "第3回女将no郡上おどり",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "の演奏と踊り",
+      "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 11,
+      "evidence_count": 6,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=veFMAFvpApY"
+      "evidence_url": "https://www.youtube.com/watch?v=XL3XDAmDNGc"
     }
   ]
 }
