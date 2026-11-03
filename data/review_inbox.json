@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-02T16:10:34.757222+00:00",
+  "generated_at": "2026-11-03T14:22:19.308795+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -32840,6 +32840,470 @@
           "title": "",
           "tweet_id": "2056637018248229108",
           "url": "https://x.com/8_chokai/status/2056637018248229108"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_8deb451473a86952",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "７月２６日\n南小岩二丁目公園\n昭栄自治会盆踊り🏮\n巣鴨地蔵盆踊りからハシゴ\n⭐地域の盆踊りの普及活動も\n行なっている歌手の\n美濃屋マチコさんは子供達に\n盆踊りを",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081386011142307988",
+      "source_url": "https://x.com/gPVEQeAD9U10257/status/2081386011142307988",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "0e8a09ce1a9453810e9d26922a746331f2490d1beb56f03a42c5cbba5086b6a0",
+      "last_seen_at": "github-41651001973-1",
+      "created_at": "2026-11-03T14:21:45.749030+00:00",
+      "updated_at": "2026-11-03T14:21:45.749030+00:00",
+      "payload": {
+        "candidate_id": "xgap_2276f6430a7977d5",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "７月２６日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-07-26"
+        ],
+        "priority_score": 95,
+        "source_author": "@gPVEQeAD9U10257",
+        "source_count": 1,
+        "source_key": "x:2081386011142307988",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOKRcrUboAEumxr.jpg",
+          "https://t.co/7vdRAtjIYS",
+          "pic.x.com/7vdRAtjIYS",
+          "https://pbs.twimg.com/amplify_video_thumb/2081385936244588545/img/tv_EiednWtFWCuES.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "卯ケン",
+          "classification": "unknown_or_personal_social",
+          "handle": "@gpveqead9u10257",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n７月２６日\n南小岩二丁目公園\n昭栄自治会盆踊り🏮\n巣鴨地蔵盆踊りからハシゴ\n⭐地域の盆踊りの普及活動も\n行なっている歌手の\n美濃屋マチコさんは子供達に\n盆踊りを教えて区内を回って\nいます👏偉いです✨\n⭐ダンヒロ　365の紙飛行機\n　盆ギリ　アンパンマン等\n　楽しかった👏\n#盆踊り\n#江戸川区 https://t.co/7vdRAtjIYS",
+        "source_url": "https://x.com/gPVEQeAD9U10257/status/2081386011142307988",
+        "source_urls": [
+          "https://x.com/gPVEQeAD9U10257/status/2081386011142307988"
+        ],
+        "voice": {
+          "account": "@gPVEQeAD9U10257",
+          "date": "2026-07-26T14:27:49+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOKRcrUboAEumxr.jpg",
+            "https://t.co/7vdRAtjIYS",
+            "pic.x.com/7vdRAtjIYS",
+            "https://pbs.twimg.com/amplify_video_thumb/2081385936244588545/img/tv_EiednWtFWCuES.jpg"
+          ],
+          "name": "卯ケン",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "７月２６日\n南小岩二丁目公園\n昭栄自治会盆踊り🏮\n巣鴨地蔵盆踊りからハシゴ\n⭐地域の盆踊りの普及活動も\n行なっている歌手の\n美濃屋マチコさんは子供達に\n盆踊りを教えて区内を回って\nいます👏偉いです✨\n⭐ダンヒロ　365の紙飛行機\n　盆ギリ　アンパンマン等\n　楽しかった👏\n#盆踊り\n#江戸川区 https://t.co/7vdRAtjIYS",
+          "title": "",
+          "tweet_id": "2081386011142307988",
+          "url": "https://x.com/gPVEQeAD9U10257/status/2081386011142307988"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9ff3ae6165663647",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "8月2日（日）\n我が板橋区\n北野小学校校庭in盆踊り大会🏫\n板橋区の盆おどらさんが\n運営に関わっているとの話を\n中田出世稲荷盆踊りの時にしたので\n遊びに行くw\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082792423563075679",
+      "source_url": "https://x.com/rollingasahi/status/2082792423563075679",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "6c0d88ee9800af60292be4a504a53b60c8f6bca753a20651978edd6eb186daec",
+      "last_seen_at": "github-41651001973-1",
+      "created_at": "2026-11-03T14:21:45.749030+00:00",
+      "updated_at": "2026-11-03T14:21:45.749030+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_24264132f821a351",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月2日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "板橋区赤塚6-19-14",
+          "region_hint": "板橋区",
+          "source_url": "https://www.itabashi-life.com/2026natumaturi.pdf",
+          "venue": "中田出世稲荷"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-02"
+        ],
+        "priority_score": 95,
+        "source_author": "@rollingasahi",
+        "source_count": 1,
+        "source_key": "x:2082792423563075679",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOeQqyna4AEzwmJ.jpg",
+          "https://t.co/XxExrT6Mdx",
+          "pic.x.com/XxExrT6Mdx"
+        ],
+        "source_officiality": {
+          "account_name": "ローリングあさひ",
+          "classification": "unknown_or_personal_social",
+          "handle": "@rollingasahi",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8月2日（日）\n我が板橋区\n北野小学校校庭in盆踊り大会🏫\n板橋区の盆おどらさんが\n運営に関わっているとの話を\n中田出世稲荷盆踊りの時にしたので\n遊びに行くw\nやっぱ過去ツイ出て来ないけど\n北野小盆踊り、行った気がするんだけどなあ\n🤔\nまあいいやw\n楽しみましょ😉\n#板橋区\n#盆踊り https://t.co/XxExrT6Mdx",
+        "source_url": "https://x.com/rollingasahi/status/2082792423563075679",
+        "source_urls": [
+          "https://x.com/rollingasahi/status/2082792423563075679"
+        ],
+        "voice": {
+          "account": "@rollingasahi",
+          "date": "2026-07-30T11:36:24+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOeQqyna4AEzwmJ.jpg",
+            "https://t.co/XxExrT6Mdx",
+            "pic.x.com/XxExrT6Mdx"
+          ],
+          "name": "ローリングあさひ",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "8月2日（日）\n我が板橋区\n北野小学校校庭in盆踊り大会🏫\n板橋区の盆おどらさんが\n運営に関わっているとの話を\n中田出世稲荷盆踊りの時にしたので\n遊びに行くw\nやっぱ過去ツイ出て来ないけど\n北野小盆踊り、行った気がするんだけどなあ\n🤔\nまあいいやw\n楽しみましょ😉\n#板橋区\n#盆踊り https://t.co/XxExrT6Mdx",
+          "title": "",
+          "tweet_id": "2082792423563075679",
+          "url": "https://x.com/rollingasahi/status/2082792423563075679"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b339f50d134e6099",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "#傳通院納涼盆踊り大会 (2026/7/26)\n初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。\n振帳",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2081507393268269352",
+      "source_url": "https://x.com/blue_sky_blue_j/status/2081507393268269352",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "4f6e35e91bfa6bbf796418b2f73751eebe1c4edc07c2c42610519ab706003bf4",
+      "last_seen_at": "github-41651001973-1",
+      "created_at": "2026-11-03T14:21:45.749030+00:00",
+      "updated_at": "2026-11-03T14:21:45.749030+00:00",
+      "payload": {
+        "candidate_id": "xgap_42ed9afa1ae5f55b",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/7/26"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-07-26"
+        ],
+        "priority_score": 95,
+        "source_author": "@blue_sky_blue_j",
+        "source_count": 1,
+        "source_key": "x:2081507393268269352",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOL_2nAaIAAI7D_.jpg",
+          "https://t.co/Bu6RWRAI53",
+          "pic.x.com/Bu6RWRAI53",
+          "https://pbs.twimg.com/amplify_video_thumb/2081507346359218176/img/yua6v-JpcrIp2Hx-.jpg",
+          "https://pbs.twimg.com/media/HOL_7dFb0AA-wlS.jpg",
+          "https://pbs.twimg.com/media/HOL_8JDbAAAlKB5.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "star_joo (秋山 星司/ Akiyama Joji)",
+          "classification": "unknown_or_personal_social",
+          "handle": "@blue_sky_blue_j",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n#傳通院納涼盆踊り大会 (2026/7/26)\n初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。\n振帳をベースにした橋幸夫の盆ダンスが目玉でした✨ 一休さんかかったのか…間に合わず残念。\n地域のランドマークで催された楽しいフェスでした♪ https://t.co/Bu6RWRAI53",
+        "source_url": "https://x.com/blue_sky_blue_j/status/2081507393268269352",
+        "source_urls": [
+          "https://x.com/blue_sky_blue_j/status/2081507393268269352"
+        ],
+        "voice": {
+          "account": "@blue_sky_blue_j",
+          "date": "2026-07-26T22:30:09+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOL_2nAaIAAI7D_.jpg",
+            "https://t.co/Bu6RWRAI53",
+            "pic.x.com/Bu6RWRAI53",
+            "https://pbs.twimg.com/amplify_video_thumb/2081507346359218176/img/yua6v-JpcrIp2Hx-.jpg",
+            "https://pbs.twimg.com/media/HOL_7dFb0AA-wlS.jpg",
+            "https://pbs.twimg.com/media/HOL_8JDbAAAlKB5.jpg"
+          ],
+          "name": "star_joo (秋山 星司/ Akiyama Joji)",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📌予定候補",
+            "🟡関心"
+          ],
+          "text": "#傳通院納涼盆踊り大会 (2026/7/26)\n初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。\n振帳をベースにした橋幸夫の盆ダンスが目玉でした✨ 一休さんかかったのか…間に合わず残念。\n地域のランドマークで催された楽しいフェスでした♪ https://t.co/Bu6RWRAI53",
+          "title": "",
+          "tweet_id": "2081507393268269352",
+          "url": "https://x.com/blue_sky_blue_j/status/2081507393268269352",
+          "value_score": 16.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_dba330910be745d1",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "7/26(日)\nオススメされた板橋区の松月院の盆踊りへお伺い。\n１時間前倒しで開催の報せが入り準備し会場へ！\n無事20時まで雨の様子見ながら中断しつつ、開催して",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2082355203135930443",
+      "source_url": "https://x.com/bakushin339711/status/2082355203135930443",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "eacd5efb47e651a8d9eca6a9dcedef3b503f8a5108fa7ef15d6c8b77cd857cff",
+      "last_seen_at": "github-41651001973-1",
+      "created_at": "2026-11-03T14:21:45.749030+00:00",
+      "updated_at": "2026-11-03T14:21:45.749030+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_bb07788793fa3966",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7/26",
+          "１時",
+          "20時"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-07-26"
+        ],
+        "priority_score": 95,
+        "source_author": "@bakushin339711",
+        "source_count": 1,
+        "source_key": "x:2082355203135930443",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOYDArybMAAoU1_.jpg",
+          "https://t.co/wnx6NqHSxv",
+          "pic.x.com/wnx6NqHSxv",
+          "https://pbs.twimg.com/media/HOYDBMGacAAioG-.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "バクシン",
+          "classification": "unknown_or_personal_social",
+          "handle": "@bakushin339711",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n7/26(日)\nオススメされた板橋区の松月院の盆踊りへお伺い。\n１時間前倒しで開催の報せが入り準備し会場へ！\n無事20時まで雨の様子見ながら中断しつつ、開催して頂けた事に本当に感謝😭選曲も聞いた所豊富にあり開始から行きたかった💦\n多少の雨でもお構い無しに踊った舞い上がれ板橋は楽しかった💃 https://t.co/wnx6NqHSxv",
+        "source_url": "https://x.com/bakushin339711/status/2082355203135930443",
+        "source_urls": [
+          "https://x.com/bakushin339711/status/2082355203135930443"
+        ],
+        "voice": {
+          "account": "@bakushin339711",
+          "date": "2026-07-29T06:39:03+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOYDArybMAAoU1_.jpg",
+            "https://t.co/wnx6NqHSxv",
+            "pic.x.com/wnx6NqHSxv",
+            "https://pbs.twimg.com/media/HOYDBMGacAAioG-.jpg"
+          ],
+          "name": "バクシン",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-report"
+          ],
+          "text": "7/26(日)\nオススメされた板橋区の松月院の盆踊りへお伺い。\n１時間前倒しで開催の報せが入り準備し会場へ！\n無事20時まで雨の様子見ながら中断しつつ、開催して頂けた事に本当に感謝😭選曲も聞いた所豊富にあり開始から行きたかった💦\n多少の雨でもお構い無しに踊った舞い上がれ板橋は楽しかった💃 https://t.co/wnx6NqHSxv",
+          "title": "",
+          "tweet_id": "2082355203135930443",
+          "url": "https://x.com/bakushin339711/status/2082355203135930443"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ffd6a851513b21ee",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "2026年盆踊り18 足立区　7月31日\n綾瀬東町会　蛭沼公園\n月末の為会社に近いこちらへ。綾瀬駅から徒歩7分位。子供タイムが30分あり、大人は1915頃スター",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2083185264651092077",
+      "source_url": "https://x.com/uja31/status/2083185264651092077",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1d39d695838a08e94b49356dd026c25c93c6ff8b07a118dddd9606f6eaf336f3",
+      "last_seen_at": "github-41651001973-1",
+      "created_at": "2026-11-03T14:21:45.749030+00:00",
+      "updated_at": "2026-11-03T14:21:45.749030+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_a11f3f91d36808dd",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "7月31日"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "足立区綾瀬4-26-5",
+          "region_hint": "足立区",
+          "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html",
+          "venue": "蛭沼公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-07-31"
+        ],
+        "priority_score": 95,
+        "source_author": "@uja31",
+        "source_count": 1,
+        "source_key": "x:2083185264651092077",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOj19NLa4AA5L8m.jpg",
+          "https://t.co/5b8yNnC59J",
+          "pic.x.com/5b8yNnC59J",
+          "https://pbs.twimg.com/media/HOj19NLbkAAunhY.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "うじゃ。",
+          "classification": "unknown_or_personal_social",
+          "handle": "@uja31",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n2026年盆踊り18 足立区　7月31日\n綾瀬東町会　蛭沼公園\n月末の為会社に近いこちらへ。綾瀬駅から徒歩7分位。子供タイムが30分あり、大人は1915頃スタート。ご当地曲らしい高田屋喜兵衛まつり音頭が難解で楽しかった✨ねぶた、まつり、手拭い八木節等楽しく踊りました😄 https://t.co/5b8yNnC59J",
+        "source_url": "https://x.com/uja31/status/2083185264651092077",
+        "source_urls": [
+          "https://x.com/uja31/status/2083185264651092077"
+        ],
+        "voice": {
+          "account": "@uja31",
+          "date": "2026-07-31T13:37:25+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOj19NLa4AA5L8m.jpg",
+            "https://t.co/5b8yNnC59J",
+            "pic.x.com/5b8yNnC59J",
+            "https://pbs.twimg.com/media/HOj19NLbkAAunhY.jpg"
+          ],
+          "name": "うじゃ。",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "2026年盆踊り18 足立区　7月31日\n綾瀬東町会　蛭沼公園\n月末の為会社に近いこちらへ。綾瀬駅から徒歩7分位。子供タイムが30分あり、大人は1915頃スタート。ご当地曲らしい高田屋喜兵衛まつり音頭が難解で楽しかった✨ねぶた、まつり、手拭い八木節等楽しく踊りました😄 https://t.co/5b8yNnC59J",
+          "title": "",
+          "tweet_id": "2083185264651092077",
+          "url": "https://x.com/uja31/status/2083185264651092077"
         }
       }
     },
