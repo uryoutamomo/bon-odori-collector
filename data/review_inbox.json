@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-03T14:30:26.126652+00:00",
+  "generated_at": "2026-11-04T14:38:35.260458+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -32840,6 +32840,477 @@
           "title": "",
           "tweet_id": "2056637018248229108",
           "url": "https://x.com/8_chokai/status/2056637018248229108"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_1ff4fe15f204542c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "8/14金  15:00〜16:30\n豊洲千客万来 盆踊り\n2階 時の鐘広場\n\nとにかく暑い\n\n和太鼓と笛のグループ「鼓皷笛々」の演奏が迫力満点で良かった\n\n可",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088385316478656779",
+      "source_url": "https://x.com/_masakari/status/2088385316478656779",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "db2476b9b629d58f9bd6c9b046da8a05e86d2b653d875ddc2eed5cb85907d17b",
+      "last_seen_at": "github-41847997071-1",
+      "created_at": "2026-11-04T14:38:05.212307+00:00",
+      "updated_at": "2026-11-04T14:38:05.212307+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_fc0e9da6b593fcb4",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/14"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-14"
+        ],
+        "priority_score": 95,
+        "source_author": "@_masakari",
+        "source_count": 1,
+        "source_key": "x:2088385316478656779",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPtvXiYbkAAQHMZ.jpg",
+          "https://t.co/ghtnz47nd6",
+          "pic.x.com/ghtnz47nd6",
+          "https://pbs.twimg.com/media/HPtvXiNa0AA5YS8.jpg",
+          "https://pbs.twimg.com/media/HPtvXiNa8AAAN5A.jpg",
+          "https://pbs.twimg.com/media/HPtvXiaaEAAd_af.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+          "classification": "unknown_or_personal_social",
+          "handle": "@_masakari",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/14金  15:00〜16:30\n豊洲千客万来 盆踊り\n2階 時の鐘広場\n\nとにかく暑い\n\n和太鼓と笛のグループ「鼓皷笛々」の演奏が迫力満点で良かった\n\n可愛いだけじゃダメですか\n好きすぎて滅\n大江戸東京音頭\n江州音頭\nおどるポンポコリン\n\nが楽しかったです https://t.co/ghtnz47nd6",
+        "source_url": "https://x.com/_masakari/status/2088385316478656779",
+        "source_urls": [
+          "https://x.com/_masakari/status/2088385316478656779"
+        ],
+        "voice": {
+          "account": "@_masakari",
+          "critique_post": false,
+          "date": "2026-08-14T22:00:34+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPtvXiYbkAAQHMZ.jpg",
+            "https://t.co/ghtnz47nd6",
+            "pic.x.com/ghtnz47nd6",
+            "https://pbs.twimg.com/media/HPtvXiNa0AA5YS8.jpg",
+            "https://pbs.twimg.com/media/HPtvXiNa8AAAN5A.jpg",
+            "https://pbs.twimg.com/media/HPtvXiaaEAAd_af.jpg"
+          ],
+          "name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+          "profile_description": "_masakari",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "🟢一次レポ"
+          ],
+          "text": "8/14金  15:00〜16:30\n豊洲千客万来 盆踊り\n2階 時の鐘広場\n\nとにかく暑い\n\n和太鼓と笛のグループ「鼓皷笛々」の演奏が迫力満点で良かった\n\n可愛いだけじゃダメですか\n好きすぎて滅\n大江戸東京音頭\n江州音頭\nおどるポンポコリン\n\nが楽しかったです https://t.co/ghtnz47nd6",
+          "title": "",
+          "tweet_id": "2088385316478656779",
+          "url": "https://x.com/_masakari/status/2088385316478656779",
+          "value_score": 14.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_34ec6b1c26dddc76",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "8/21(金)\n本日は芝公園2丁目盆踊りにお邪魔しました✨\n知り合いなんて殆どいないだろうと思っていましたが、何名かいらっしゃって会えて一緒に踊れて嬉しい〜❤️",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090764815593799745",
+      "source_url": "https://x.com/mimi33yuyu26na/status/2090764815593799745",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "5e39d10d8e6aec695312bbe8c89a285b4ffbfa314e73947a18da7ae90d4080a9",
+      "last_seen_at": "github-41847997071-1",
+      "created_at": "2026-11-04T14:38:05.212307+00:00",
+      "updated_at": "2026-11-04T14:38:05.212307+00:00",
+      "payload": {
+        "archive_reason": "past_event_report_daily_cap",
+        "candidate_id": "xgap_6f8621cc44156e21",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/21"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-21"
+        ],
+        "priority_score": 95,
+        "source_author": "@mimi33yuyu26na",
+        "source_count": 1,
+        "source_key": "x:2090764815593799745",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQPjf30aMAAZMWA.jpg",
+          "https://t.co/W3EqhlNYnz",
+          "pic.x.com/W3EqhlNYnz",
+          "https://pbs.twimg.com/media/HQPjf3vbQAAyVXs.jpg",
+          "https://pbs.twimg.com/media/HQPjf3xb0AAHJFT.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "みみ&ゆゆ",
+          "classification": "unknown_or_personal_social",
+          "handle": "@mimi33yuyu26na",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/21(金)\n本日は芝公園2丁目盆踊りにお邪魔しました✨\n知り合いなんて殆どいないだろうと思っていましたが、何名かいらっしゃって会えて一緒に踊れて嬉しい〜❤️\n微妙に振りが知ってるものとは違って新しい発見！\n素敵な太鼓演奏中に雨が降り始め、最後は短縮。。\nでも楽しいセトリで大満足🫶🏻\n↓セトリ https://t.co/W3EqhlNYnz",
+        "source_url": "https://x.com/mimi33yuyu26na/status/2090764815593799745",
+        "source_urls": [
+          "https://x.com/mimi33yuyu26na/status/2090764815593799745"
+        ],
+        "voice": {
+          "account": "@mimi33yuyu26na",
+          "critique_post": false,
+          "date": "2026-08-21T11:35:51+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQPjf30aMAAZMWA.jpg",
+            "https://t.co/W3EqhlNYnz",
+            "pic.x.com/W3EqhlNYnz",
+            "https://pbs.twimg.com/media/HQPjf3vbQAAyVXs.jpg",
+            "https://pbs.twimg.com/media/HQPjf3xb0AAHJFT.jpg"
+          ],
+          "name": "みみ&ゆゆ",
+          "profile_description": "またまた乗っ取りにあってしまいました。。 (２度目🥹)セキュリティ強くします！ 盆踊り大好き姉妹🦊🦊(時々末っ子)地元川崎〜23区内、横浜あたりに踊りに行きます♪ (今年は遠征もしてみたい✨)フォローありがとうございます！母の盆踊り記録用アカ。 みなさまよろしくお願いします🫶🏻",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "text": "8/21(金)\n本日は芝公園2丁目盆踊りにお邪魔しました✨\n知り合いなんて殆どいないだろうと思っていましたが、何名かいらっしゃって会えて一緒に踊れて嬉しい〜❤️\n微妙に振りが知ってるものとは違って新しい発見！\n素敵な太鼓演奏中に雨が降り始め、最後は短縮。。\nでも楽しいセトリで大満足🫶🏻\n↓セトリ https://t.co/W3EqhlNYnz",
+          "title": "",
+          "tweet_id": "2090764815593799745",
+          "url": "https://x.com/mimi33yuyu26na/status/2090764815593799745",
+          "value_score": 25.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_5a05406d33ef41b8",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "2026年盆踊り24.25  江戸川区　8/8\n四南自治会　上小岩六東自治会\n四南は初、1830開始でした。1➕1は片山公園と一緒⁉️久しぶりの振りで楽しめまし",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2086110286935990458",
+      "source_url": "https://x.com/uja31/status/2086110286935990458",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "fd03278b35ef39489cfe03129fe36b36532bdd3d348aaf1748699ecd1a4aa215",
+      "last_seen_at": "github-41847997071-1",
+      "created_at": "2026-11-04T14:38:05.212307+00:00",
+      "updated_at": "2026-11-04T14:38:05.212307+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_da2d164cc0de3686",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/8"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "江戸川区南小岩8-8-1",
+          "region_hint": "江戸川区",
+          "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+          "venue": "片山公園"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-08"
+        ],
+        "priority_score": 95,
+        "source_author": "@uja31",
+        "source_count": 1,
+        "source_key": "x:2086110286935990458",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPNaP6kb0AATlqf.jpg",
+          "https://t.co/XRSyUSXvw8",
+          "pic.x.com/XRSyUSXvw8",
+          "https://pbs.twimg.com/media/HPNaP6Sa0AEhLSW.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "うじゃ。",
+          "classification": "unknown_or_personal_social",
+          "handle": "@uja31",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n2026年盆踊り24.25  江戸川区　8/8\n四南自治会　上小岩六東自治会\n四南は初、1830開始でした。1➕1は片山公園と一緒⁉️久しぶりの振りで楽しめました。二カ所はバスで10分も離れてませんが、きよズンは全く別物。六東のきよしコールは私も大声で😆えどちゃん、江戸川盆唄等両方とても楽しかった✨ https://t.co/XRSyUSXvw8",
+        "source_url": "https://x.com/uja31/status/2086110286935990458",
+        "source_urls": [
+          "https://x.com/uja31/status/2086110286935990458"
+        ],
+        "voice": {
+          "account": "@uja31",
+          "date": "2026-08-08T15:20:25+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPNaP6kb0AATlqf.jpg",
+            "https://t.co/XRSyUSXvw8",
+            "pic.x.com/XRSyUSXvw8",
+            "https://pbs.twimg.com/media/HPNaP6Sa0AEhLSW.jpg"
+          ],
+          "name": "うじゃ。",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-flyer"
+          ],
+          "text": "2026年盆踊り24.25  江戸川区　8/8\n四南自治会　上小岩六東自治会\n四南は初、1830開始でした。1➕1は片山公園と一緒⁉️久しぶりの振りで楽しめました。二カ所はバスで10分も離れてませんが、きよズンは全く別物。六東のきよしコールは私も大声で😆えどちゃん、江戸川盆唄等両方とても楽しかった✨ https://t.co/XRSyUSXvw8",
+          "title": "",
+          "tweet_id": "2086110286935990458",
+          "url": "https://x.com/uja31/status/2086110286935990458"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_9cdfd5611f4be7d3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "【台東区　お手伝いに参加してきました！】\n\n昨日(8/21)は、浅草・東本願寺の盆踊りにボランティアスタッフとして参加しました。\n\nきっかけは、台東区で子ども食",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2090626945876951124",
+      "source_url": "https://x.com/nakakita_ore/status/2090626945876951124",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2079941c6174fc99f58bf4590954f898c69903139f9cbee2ad40311819766a2c",
+      "last_seen_at": "github-41847997071-1",
+      "created_at": "2026-11-04T14:38:05.212307+00:00",
+      "updated_at": "2026-11-04T14:38:05.212307+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_784c6061329926e5",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/21"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-21"
+        ],
+        "priority_score": 95,
+        "source_author": "@nakakita_ore",
+        "source_count": 1,
+        "source_key": "x:2090626945876951124",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQNmH_8akAASxaC.jpg",
+          "https://t.co/6nrdRFP82j",
+          "pic.x.com/6nrdRFP82j"
+        ],
+        "source_officiality": {
+          "account_name": "中北ともひろ/区政改革員（目黒区担当）都民ファーストの会",
+          "classification": "unknown_or_personal_social",
+          "handle": "@nakakita_ore",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n【台東区　お手伝いに参加してきました！】\n\n昨日(8/21)は、浅草・東本願寺の盆踊りにボランティアスタッフとして参加しました。\n\nきっかけは、台東区で子ども食堂をされている方とのご縁。\n「手伝ってほしい」と声をかけていただき、参加させていただきました。\n\n当日は盆踊りを楽しみながら、スピーカーや音響機材の片付けなど、運営のお手伝い、最後のゴミ拾いまで。\n\n実際に地域のお祭りの中に入ってみると、表からは見えないところで、本当に多くの方が準備をし、汗をかき、地域の時間をつくっていることを改めて実感します。\n\nそして今回、目黒区で地域活動に関わる中で学んできたことを、早速別の地域でも活かすことができました。\n\n「なぜ目黒区の活動をしているのに、台東区で？」\n\nそう思われる方もいるかもしれません。\n\nでも私は、地域を良くしたいという想いや、人と人とのご縁に区境はないと思っています。\n\n他の地域に足を運ぶからこそ見えること、学べることもあります。\nそこで得た経験を、また目黒区での活動に持ち帰っていきたい。\n\nお声がけいただいた皆さま、そして一緒に盆踊りをつくったスタッフの皆さま、本当にありが",
+        "source_url": "https://x.com/nakakita_ore/status/2090626945876951124",
+        "source_urls": [
+          "https://x.com/nakakita_ore/status/2090626945876951124"
+        ],
+        "voice": {
+          "account": "@nakakita_ore",
+          "critique_post": false,
+          "date": "2026-08-21T02:28:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQNmH_8akAASxaC.jpg",
+            "https://t.co/6nrdRFP82j",
+            "pic.x.com/6nrdRFP82j"
+          ],
+          "name": "中北ともひろ/区政改革員（目黒区担当）都民ファーストの会",
+          "profile_description": "区政改革委員(目黒区担当) 都民ファーストの会/株式会社俺 代表取締役/1984年10月9日(41歳)/目黒区在住/一児の父です/母は介護福祉士・父は公務員・兄は看護師/“お笑い芸人”の転職支援/セカンドキャリアの支援/笑の力で組織を変える“コメディケーション”／元芸人の社長/書籍出版　神雑談力　他2冊/",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-poster-images"
+          ],
+          "text": "【台東区　お手伝いに参加してきました！】\n\n昨日(8/21)は、浅草・東本願寺の盆踊りにボランティアスタッフとして参加しました。\n\nきっかけは、台東区で子ども食堂をされている方とのご縁。\n「手伝ってほしい」と声をかけていただき、参加させていただきました。\n\n当日は盆踊りを楽しみながら、スピーカーや音響機材の片付けなど、運営のお手伝い、最後のゴミ拾いまで。\n\n実際に地域のお祭りの中に入ってみると、表からは見えないところで、本当に多くの方が準備をし、汗をかき、地域の時間をつくっていることを改めて実感します。\n\nそして今回、目黒区で地域活動に関わる中で学んできたことを、早速別の地域でも活かすことができました。\n\n「なぜ目黒区の活動をしているのに、台東区で？」\n\nそう思われる方もいるかもしれません。\n\nでも私は、地域を良くしたいという想いや、人と人とのご縁に区境はないと思っています。\n\n他の地域に足を運ぶからこそ見えること、学べることもあります。\nそこで得た経験を、また目黒区での活動に持ち帰っていきたい。\n\nお声がけいただいた皆さま、そして一緒に盆踊りをつくったスタッフの皆さま、本当にありがと",
+          "title": "",
+          "tweet_id": "2090626945876951124",
+          "url": "https://x.com/nakakita_ore/status/2090626945876951124"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_d2946c0341574851",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 95.0,
+      "title": "8/2は板橋区北野小学校盆踊り大会にお邪魔しました。日曜に初めて踊った曲が気になっていたところ、ここでかかりました！「おどりの輪」でしたね。\n最後に子供たちが櫓",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2084144299776868613",
+      "source_url": "https://x.com/TodaBon/status/2084144299776868613",
+      "recommended_action": "review_historical_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "149b324eb4ff35f4f760eaf39d9889836e1a1a070d025bdff04d06f855364980",
+      "last_seen_at": "github-41847997071-1",
+      "created_at": "2026-11-04T14:38:05.212307+00:00",
+      "updated_at": "2026-11-04T14:38:05.212307+00:00",
+      "payload": {
+        "archive_reason": "daily_candidate_cap",
+        "candidate_id": "xgap_4bf7523f81863f9e",
+        "candidate_kind": "past_event_report",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/2"
+        ],
+        "event_group_key": "",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "板橋区徳丸3-23-1",
+          "region_hint": "板橋区",
+          "source_url": "https://www.itabashi-life.com/2026natumaturi.pdf",
+          "venue": "北野小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-02"
+        ],
+        "priority_score": 95,
+        "source_author": "@TodaBon",
+        "source_count": 1,
+        "source_key": "x:2084144299776868613",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HOxeMaPbYAAT5y0.jpg",
+          "https://t.co/yOm8LMG7R4",
+          "pic.x.com/yOm8LMG7R4"
+        ],
+        "source_officiality": {
+          "account_name": "りょう♫戸田盆踊ラー",
+          "classification": "unknown_or_personal_social",
+          "handle": "@todabon",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/2は板橋区北野小学校盆踊り大会にお邪魔しました。日曜に初めて踊った曲が気になっていたところ、ここでかかりました！「おどりの輪」でしたね。\n最後に子供たちが櫓でリードしてくれたのが印象的です。素晴らしい👏\n楽しかったです。ありがとうございました。 https://t.co/yOm8LMG7R4",
+        "source_url": "https://x.com/TodaBon/status/2084144299776868613",
+        "source_urls": [
+          "https://x.com/TodaBon/status/2084144299776868613"
+        ],
+        "voice": {
+          "account": "@TodaBon",
+          "date": "2026-08-03T05:08:17+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOxeMaPbYAAT5y0.jpg",
+            "https://t.co/yOm8LMG7R4",
+            "pic.x.com/yOm8LMG7R4"
+          ],
+          "name": "りょう♫戸田盆踊ラー",
+          "source": "x",
+          "tags": [
+            "🟢一次レポ",
+            "q-report"
+          ],
+          "text": "8/2は板橋区北野小学校盆踊り大会にお邪魔しました。日曜に初めて踊った曲が気になっていたところ、ここでかかりました！「おどりの輪」でしたね。\n最後に子供たちが櫓でリードしてくれたのが印象的です。素晴らしい👏\n楽しかったです。ありがとうございました。 https://t.co/yOm8LMG7R4",
+          "title": "",
+          "tweet_id": "2084144299776868613",
+          "url": "https://x.com/TodaBon/status/2084144299776868613"
         }
       }
     },
