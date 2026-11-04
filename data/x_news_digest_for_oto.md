@@ -1,6 +1,6 @@
 # X News Digest For Oto
 
-- generated_at: 2026-11-03T14:14:03+00:00
+- generated_at: 2026-11-04T14:32:34+00:00
 - digest_count: 20742
 - status: machine prefilter; Oto interpretation pending
 
