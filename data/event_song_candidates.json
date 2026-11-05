@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1807,
+  "count": 1808,
   "public_event_count": 846,
-  "review_count": 961,
+  "review_count": 962,
   "candidates": [
     {
       "id": "4fbaa26988db7546",
@@ -7421,7 +7421,7 @@
       "evidence_count": 1
     },
     {
-      "id": "3d488e4ced1673f7",
+      "id": "fe75e65da0732f79",
       "song_name": "ダンシングヒーロー",
       "event_name": "ハマサイトの夏祭り",
       "venue": "ハマサイト前広場・汐留ビルディング外構",
@@ -7432,6 +7432,18 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=oty6flkgVJk",
+          "date": "2026-11-05T09:22:34+00:00",
+          "text": "Urban Walk\n那須川天心 × 粗品 二人仲良くペア盆踊り!!  【天心祭 2026】「君の瞳に恋してる」Can't Take My Eyes Off You  / 鳳蝶美成  盆踊り Tenshin Fes 26\n#那須川天心 #天心祭 #君の瞳に恋してる #盆踊り #粗品 #松戸 #bondance \n\n\n【天心祭 2026】\n開催日時：2026年10月31日(土)～11月1日(日) \n開催場所：松戸中央公園\nhttps://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqk"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=h7ik_gm6iJI",
+          "date": "2026-11-05T07:30:20+00:00",
+          "text": "Urban Walk\n【天心祭 2026】「WOW WAR TONIGHT 」で盆踊り H Jungle with t / 那須川天心 × 粗品 / 鳳蝶美成  盆踊り 浜田雅功 Tenshin Festival 2026\n#那須川天心 #天心祭 #WOWWARTONIGHT #盆踊り #粗品 #HJunglewitht #松戸 #bondance \n\n\n【天心祭 2026】\n開催日時：2026年10月31日(土)～11月1日(日) \n開催場所：松戸中央公園\nhttps://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=XCtm99IDe7k",
@@ -7482,7 +7494,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 8
+      "evidence_count": 10
     },
     {
       "id": "76d92146903fa496",
@@ -17810,7 +17822,7 @@
       "evidence_count": 1
     },
     {
-      "id": "9a7dccd0aae03c69",
+      "id": "f5257b77a97da509",
       "song_name": "五月女会輪踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -17821,6 +17833,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=y0myjOoe5cg",
+          "date": "2026-11-05T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n新目黒音頭　飛鳥山公園盆踊り（五月女会輪踊り）26　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=FF4K7olNlfA",
+          "date": "2026-11-05T10:00:07+00:00",
+          "text": "和太鼓お祭りCH\n柏おどり　飛鳥山公園盆踊り（五月女会輪踊り）25　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://you"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=BJn2cKE7B3k",
@@ -17967,7 +17991,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 24
+      "evidence_count": 26
     },
     {
       "id": "a386e91e1d3d9dee",
@@ -18124,6 +18148,28 @@
           "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
           "date": "2026-05-31T03:00:37+00:00",
           "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "db27da9cf2c98b99",
+      "song_name": "新目黒音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=y0myjOoe5cg",
+          "date": "2026-11-05T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n新目黒音頭　飛鳥山公園盆踊り（五月女会輪踊り）26　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://yo"
         }
       ],
       "already_public": false,
@@ -50888,6 +50934,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=bnWp1q2keA4",
+          "date": "2026-11-05T08:00:29+00:00",
+          "text": "和太鼓お祭りCH\nJohnny B. Goode～集合写真　旗の台稲荷通り商店会盆踊り（盆ROCK）10終　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://yo"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Kw25IZRy_xA",
           "date": "2026-11-04T08:00:28+00:00",
           "text": "和太鼓お祭りCH\n旗の台音頭　旗の台稲荷通り商店会盆踊り（盆ROCK）９　2026年10月18日　#盆踊り\n2026年10月18日に東京都品川区で開催された、\n旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。\n\n商店街の熱気あふれる生歌・生演奏とともに、\n会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！\n\n【イベント情報】 \n・イベント名：旗の台稲荷通り商店会 盆ROCK \n・開催日：2026年10月18日 \n・場所：東京都品川区 旗の台稲荷通り商店街 \n\n\n地域の熱気をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏\n\n\n旗の台稲荷通り商店会盆踊り（盆ROCK）\n１品川音頭　https://youtu.be/RQc5R77b73s\n２品川甚句　https://youtu.be/9oLLc0WaFq"
@@ -51056,7 +51108,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 28
+      "evidence_count": 29
     },
     {
       "id": "5435202dea967a34",
