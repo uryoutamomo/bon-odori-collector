@@ -1800,6 +1800,15 @@
     "needs_review": true
   },
   {
+    "venue": "妙法寺",
+    "region_hint": "世田谷区",
+    "in_tsukiji_30min_guess": false,
+    "source": "blogspot",
+    "source_title": "世田谷区の盆おどり情報 2026年1月より [Setagaya-q]",
+    "method": "blog_body",
+    "needs_review": true
+  },
+  {
     "venue": "宇奈根氷川神社",
     "region_hint": "世田谷区",
     "in_tsukiji_30min_guess": false,
@@ -3061,15 +3070,6 @@
   },
   {
     "venue": "大圓寺",
-    "region_hint": "杉並区",
-    "in_tsukiji_30min_guess": false,
-    "source": "blogspot",
-    "source_title": "杉並区の盆おどり情報 2026年1月より [Suginami-q]",
-    "method": "blog_body",
-    "needs_review": true
-  },
-  {
-    "venue": "妙法寺",
     "region_hint": "杉並区",
     "in_tsukiji_30min_guess": false,
     "source": "blogspot",
