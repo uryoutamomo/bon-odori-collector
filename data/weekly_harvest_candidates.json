@@ -1,10 +1,10 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-11-05T14:43:54.841407+00:00",
-  "since": "2026-11-02T14:43:54.841407+00:00",
+  "generated_at": "2026-11-06T14:23:30.324053+00:00",
+  "since": "2026-11-03T14:23:30.324053+00:00",
   "days": 3,
-  "voice_count": 46,
-  "candidate_count": 15,
+  "voice_count": 47,
+  "candidate_count": 14,
   "rows": [
     {
       "category": "曲×会場共起",
@@ -16,7 +16,7 @@
       "interpretation": "旗の台稲荷通り商店街で品川音頭が言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 3,
+      "evidence_count": 2,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=bnWp1q2keA4",
@@ -29,15 +29,9 @@
           "date": "2026-11-04T08:00:28+00:00",
           "account": "@wadaikoCH",
           "text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Tsl3k2qB6rw",
-          "date": "2026-11-03T08:00:01+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７"
         }
       ],
-      "evidence_text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７\n---\n2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７\n---\n2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７",
+      "evidence_text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７\n---\n2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７",
       "evidence_url": "https://www.youtube.com/watch?v=bnWp1q2keA4"
     },
     {
@@ -47,8 +41,26 @@
       "interpretation": "品川音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 16,
+      "evidence_count": 13,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=QxIJTVKqYQc",
+          "date": "2026-11-06T12:30:30+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CFFeYhuBgik",
+          "date": "2026-11-06T12:00:22+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hs72xqRVJfs",
+          "date": "2026-11-05T22:00:16+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl"
+        },
         {
           "url": "https://www.youtube.com/watch?v=SJ81X5cxIL0",
           "date": "2026-11-05T12:30:17+00:00",
@@ -60,28 +72,10 @@
           "date": "2026-11-05T12:00:19+00:00",
           "account": "@wadaikoCH",
           "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=bnWp1q2keA4",
-          "date": "2026-11-05T08:00:29+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=2BQE7fgEnQQ",
-          "date": "2026-11-04T22:00:17+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=k2DAzs4-PmY",
-          "date": "2026-11-04T12:30:11+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl"
         }
       ],
-      "evidence_text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl\n---\n2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl\n---\n2026年10月18日に東京都品川区で開催された、 旗の台稲荷通り商店会「旗の台盆ROCK」の盆踊りの様子です。 商店街の熱気あふれる生歌・生演奏とともに、 会場全体が一体となって盛り上がった盆踊りの様子をぜひお楽しみください！ 【イベント情報】 ・イベント名：旗の台稲荷通り商店会 盆ROCK ・開催日：2026年10月18日 ・場所：東京都品川区 旗の台稲荷通り商店街 地域の熱気をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #旗の台 #盆ROCK #和太鼓 #日本の祭り #生演奏 旗の台稲荷通り商店会盆踊り（盆ROCK） １品川音頭 https://youtu.be/RQc5R77b73s ２品川甚句 https://youtu.be/9oLLc0WaFq4 ３東京音頭 https://youtu.be/T59KOlZ45rM ４大東京音頭 https://youtu.be/AJwmZOSn6dc ５東京ばやし https://youtu.be/QzKtVf4q8vA ６ドンパン節 https://youtu.be/2ZPWEA5GjWY ７",
-      "evidence_url": "https://www.youtube.com/watch?v=SJ81X5cxIL0"
+      "evidence_text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl\n---\n2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl\n---\n2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+      "evidence_url": "https://www.youtube.com/watch?v=QxIJTVKqYQc"
     },
     {
       "category": "曲候補",
@@ -90,41 +84,41 @@
       "interpretation": "郡上おどり",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context, split_context",
-      "evidence_count": 8,
+      "evidence_count": 10,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=3_yn9sMhLVU",
+          "date": "2026-11-06T13:00:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vdQdCVg5WtY",
+          "date": "2026-11-06T11:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VdFRYAK4JMg",
+          "date": "2026-11-06T11:00:09+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NzZrYeuUI_g",
+          "date": "2026-11-06T06:00:28+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
+        },
         {
           "url": "https://www.youtube.com/watch?v=uQVb9pXc7To",
           "date": "2026-11-05T13:00:08+00:00",
           "account": "@wadaikoCH",
           "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
-          "date": "2026-11-05T11:30:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
-          "date": "2026-11-05T11:00:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Z2f8-e2LFAM",
-          "date": "2026-11-05T09:15:17+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
-          "date": "2026-11-04T11:30:03+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
         }
       ],
-      "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-      "evidence_url": "https://www.youtube.com/watch?v=uQVb9pXc7To"
+      "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU \n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+      "evidence_url": "https://www.youtube.com/watch?v=3_yn9sMhLVU"
     },
     {
       "category": "曲候補",
@@ -136,48 +130,17 @@
       "evidence_count": 6,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
-          "date": "2026-11-05T11:30:25+00:00",
+          "url": "https://www.youtube.com/watch?v=vdQdCVg5WtY",
+          "date": "2026-11-06T11:30:07+00:00",
           "account": "@wadaikoCH",
           "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
         },
         {
-          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
-          "date": "2026-11-05T11:00:25+00:00",
+          "url": "https://www.youtube.com/watch?v=VdFRYAK4JMg",
+          "date": "2026-11-06T11:00:09+00:00",
           "account": "@wadaikoCH",
           "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
         },
-        {
-          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
-          "date": "2026-11-04T11:30:03+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=JWVkxOKv3BQ",
-          "date": "2026-11-04T11:00:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=XL3XDAmDNGc",
-          "date": "2026-11-03T11:30:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        }
-      ],
-      "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-      "evidence_url": "https://www.youtube.com/watch?v=CGr1rccnGWo"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "女将no郡上おどり",
-      "interpretation": "女将no郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 6,
-      "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
           "date": "2026-11-05T11:30:25+00:00",
@@ -195,108 +158,10 @@
           "date": "2026-11-04T11:30:03+00:00",
           "account": "@wadaikoCH",
           "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=JWVkxOKv3BQ",
-          "date": "2026-11-04T11:00:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=XL3XDAmDNGc",
-          "date": "2026-11-03T11:30:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
         }
       ],
       "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-      "evidence_url": "https://www.youtube.com/watch?v=CGr1rccnGWo"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "女将の郡上おどり",
-      "interpretation": "女将の郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 6,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
-          "date": "2026-11-05T11:30:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
-          "date": "2026-11-05T11:00:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
-          "date": "2026-11-04T11:30:03+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=JWVkxOKv3BQ",
-          "date": "2026-11-04T11:00:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=XL3XDAmDNGc",
-          "date": "2026-11-03T11:30:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        }
-      ],
-      "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-      "evidence_url": "https://www.youtube.com/watch?v=CGr1rccnGWo"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "第3回女将no郡上おどり",
-      "interpretation": "第3回女将no郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 6,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
-          "date": "2026-11-05T11:30:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
-          "date": "2026-11-05T11:00:25+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
-          "date": "2026-11-04T11:30:03+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=JWVkxOKv3BQ",
-          "date": "2026-11-04T11:00:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=XL3XDAmDNGc",
-          "date": "2026-11-03T11:30:19+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
-        }
-      ],
-      "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-      "evidence_url": "https://www.youtube.com/watch?v=CGr1rccnGWo"
+      "evidence_url": "https://www.youtube.com/watch?v=vdQdCVg5WtY"
     },
     {
       "category": "曲候補",
@@ -305,8 +170,14 @@
       "interpretation": "ダンシングヒーロー",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 5,
+      "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=KyQ5gn6GCSI",
+          "date": "2026-11-06T05:20:15+00:00",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "text": "#那須川天心 #天心祭 #ダンシングヒーロー #盆踊り #粗品 #ultrasoul #松戸 #bondance 00:00 止まらないHa〜Ha / 矢沢永吉 04:57 学園天国 / フィンガー5 07:32 恋愛レボリューション21 / モーニング娘。 11:07 YOUNG MAN / 西城秀樹 16:08 September / Earth, Wind & Fire 18:31 君の瞳に恋してる 22:09 WOW WAR TONIGHT 24:13 ダンシングヒーロー 27:00 残酷な天使のテーゼ 29:18 ultra soul / B'z 33:11 那須川天心 × 粗品 トーク 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%"
+        },
         {
           "url": "https://www.youtube.com/watch?v=oty6flkgVJk",
           "date": "2026-11-05T09:22:34+00:00",
@@ -330,16 +201,213 @@
           "date": "2026-11-04T12:45:16+00:00",
           "account": "UCWz2tM7PAFGT7xSL5OAEllg",
           "text": "#那須川天心 #天心祭 #学園天国 #盆踊り #粗品 #フィンガー５ #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXzyya2Zn3uiTdRPTu"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=KEC4k9HMI8I",
-          "date": "2026-11-04T08:29:40+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "#那須川天心 #天心祭 #恋愛レボリューション21 #盆踊り #粗品 #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXzyya2Zn3uiTdRPTu"
         }
       ],
-      "evidence_text": "#那須川天心 #天心祭 #君の瞳に恋してる #盆踊り #粗品 #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXzyya2Zn3uiTdRPTuXW4F\n---\n#那須川天心 #天心祭 #WOWWARTONIGHT #盆踊り #粗品 #HJunglewitht #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXz\n---\n#那須川天心 #天心祭 #YOUNGMAN #盆踊り #粗品 #西城秀樹 #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXzyya2Zn3uiTdRP",
-      "evidence_url": "https://www.youtube.com/watch?v=oty6flkgVJk"
+      "evidence_text": "#那須川天心 #天心祭 #ダンシングヒーロー #盆踊り #粗品 #ultrasoul #松戸 #bondance 00:00 止まらないHa〜Ha / 矢沢永吉 04:57 学園天国 / フィンガー5 07:32 恋愛レボリューション21 / モーニング娘。 11:07 YOUNG MAN / 西城秀樹 16:08 September / Earth, Wind & Fire 18:31 君の瞳に恋してる 22:09 WOW WAR TONIGHT 24:13 ダンシングヒーロー 27:00 残酷な天使のテーゼ 29:18 ultra soul / B'z 33:11 那須川天心 × 粗品 トーク 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%\n---\n#那須川天心 #天心祭 #君の瞳に恋してる #盆踊り #粗品 #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXzyya2Zn3uiTdRPTuXW4F\n---\n#那須川天心 #天心祭 #WOWWARTONIGHT #盆踊り #粗品 #HJunglewitht #松戸 #bondance 【天心祭 2026】 開催日時：2026年10月31日(土)～11月1日(日) 開催場所：松戸中央公園 https://www.google.com/maps?sca_esv=10ed558e96e78276&rlz=1C1AAOU_enJP1225JP1225&output=search&q=%E6%9D%BE%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92&source=lnms&fbs=ACAhTvwgxsCoI-HSoMO11Bqf83tqPMA4qN6tCcsqkeHoNFSwXUPAT4FrhhGsmt0BFzEI8WuK9DOsKeFhIc1pDGlgAPFJMrRhBmcoY1GI2XDBASIhBq782e2HmaT1RgYZ1quNlcDezYGefQSbZ6tPPEV7wqVlaxBUbWn6pZY3ytVetmk4H_78Pop28vJ3yD_czdzNsrtu9-hhp4k6zbZo7AIXz",
+      "evidence_url": "https://www.youtube.com/watch?v=KyQ5gn6GCSI"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "女将no郡上おどり",
+      "interpretation": "女将no郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 6,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=vdQdCVg5WtY",
+          "date": "2026-11-06T11:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VdFRYAK4JMg",
+          "date": "2026-11-06T11:00:09+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
+          "date": "2026-11-05T11:30:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
+          "date": "2026-11-05T11:00:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
+          "date": "2026-11-04T11:30:03+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        }
+      ],
+      "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+      "evidence_url": "https://www.youtube.com/watch?v=vdQdCVg5WtY"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "女将の郡上おどり",
+      "interpretation": "女将の郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 6,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=vdQdCVg5WtY",
+          "date": "2026-11-06T11:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VdFRYAK4JMg",
+          "date": "2026-11-06T11:00:09+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
+          "date": "2026-11-05T11:30:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
+          "date": "2026-11-05T11:00:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
+          "date": "2026-11-04T11:30:03+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        }
+      ],
+      "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+      "evidence_url": "https://www.youtube.com/watch?v=vdQdCVg5WtY"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "第3回女将no郡上おどり",
+      "interpretation": "第3回女将no郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 6,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=vdQdCVg5WtY",
+          "date": "2026-11-06T11:30:07+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VdFRYAK4JMg",
+          "date": "2026-11-06T11:00:09+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CGr1rccnGWo",
+          "date": "2026-11-05T11:30:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Eiu4iremCqc",
+          "date": "2026-11-05T11:00:25+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wo1vWCOn99w",
+          "date": "2026-11-04T11:30:03+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http"
+        }
+      ],
+      "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+      "evidence_url": "https://www.youtube.com/watch?v=vdQdCVg5WtY"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "白鳥おどり",
+      "interpretation": "白鳥おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context, split_context",
+      "evidence_count": 4,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=3_yn9sMhLVU",
+          "date": "2026-11-06T13:00:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NzZrYeuUI_g",
+          "date": "2026-11-06T06:00:28+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uQVb9pXc7To",
+          "date": "2026-11-05T13:00:08+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z2f8-e2LFAM",
+          "date": "2026-11-05T09:15:17+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To"
+        }
+      ],
+      "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU \n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU\n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU",
+      "evidence_url": "https://www.youtube.com/watch?v=3_yn9sMhLVU"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "白鳥おどり・郡上おどり",
+      "interpretation": "白鳥おどり・郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_in_context, song_suffix_near_context",
+      "evidence_count": 4,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=3_yn9sMhLVU",
+          "date": "2026-11-06T13:00:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NzZrYeuUI_g",
+          "date": "2026-11-06T06:00:28+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uQVb9pXc7To",
+          "date": "2026-11-05T13:00:08+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z2f8-e2LFAM",
+          "date": "2026-11-05T09:15:17+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To"
+        }
+      ],
+      "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU \n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU\n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU",
+      "evidence_url": "https://www.youtube.com/watch?v=3_yn9sMhLVU"
     },
     {
       "category": "曲候補",
@@ -348,7 +416,7 @@
       "interpretation": "の演奏と踊り",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 3,
+      "evidence_count": 2,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=gmOkOPomXLg",
@@ -361,46 +429,9 @@
           "date": "2026-11-04T00:00:36+00:00",
           "account": "@wadaikoCH",
           "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Murl6r-rjxY",
-          "date": "2026-11-03T06:30:24+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル"
         }
       ],
-      "evidence_text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu\n---\n2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu\n---\n2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル",
-      "evidence_url": "https://www.youtube.com/watch?v=gmOkOPomXLg"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "木曽節",
-      "interpretation": "木曽節",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_in_context, song_suffix_near_context, split_context",
-      "evidence_count": 3,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=gmOkOPomXLg",
-          "date": "2026-11-05T00:00:15+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=7bmKCkkoe2k",
-          "date": "2026-11-04T00:00:36+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Murl6r-rjxY",
-          "date": "2026-11-03T06:30:24+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル"
-        }
-      ],
-      "evidence_text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu\n---\n2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu\n---\n2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル",
+      "evidence_text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu\n---\n2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu",
       "evidence_url": "https://www.youtube.com/watch?v=gmOkOPomXLg"
     },
     {
@@ -431,71 +462,27 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "白鳥おどり",
-      "interpretation": "白鳥おどり",
+      "term": "木曽節",
+      "interpretation": "木曽節",
       "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context, split_context",
+      "reason": "曲名抽出器で検出: song_suffix_in_context, song_suffix_near_context, split_context",
       "evidence_count": 2,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=uQVb9pXc7To",
-          "date": "2026-11-05T13:00:08+00:00",
+          "url": "https://www.youtube.com/watch?v=gmOkOPomXLg",
+          "date": "2026-11-05T00:00:15+00:00",
           "account": "@wadaikoCH",
-          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
+          "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu"
         },
         {
-          "url": "https://www.youtube.com/watch?v=Z2f8-e2LFAM",
-          "date": "2026-11-05T09:15:17+00:00",
+          "url": "https://www.youtube.com/watch?v=7bmKCkkoe2k",
+          "date": "2026-11-04T00:00:36+00:00",
           "account": "@wadaikoCH",
-          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To"
+          "text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu"
         }
       ],
-      "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU\n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To",
-      "evidence_url": "https://www.youtube.com/watch?v=uQVb9pXc7To"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "白鳥おどり・郡上おどり",
-      "interpretation": "白鳥おどり・郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_in_context, song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=uQVb9pXc7To",
-          "date": "2026-11-05T13:00:08+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Z2f8-e2LFAM",
-          "date": "2026-11-05T09:15:17+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To"
-        }
-      ],
-      "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU\n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To",
-      "evidence_url": "https://www.youtube.com/watch?v=uQVb9pXc7To"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "息の合った華やかな踊り",
-      "interpretation": "息の合った華やかな踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=Jnd6ONQ9OmE",
-          "date": "2026-11-03T05:45:38+00:00",
-          "account": "@wadaikoCH",
-          "text": "「第53回日本橋京橋まつり」の大江戸活粋パレードにて披露された、中央区民踊連盟の皆様による 「これがお江戸の盆ダンス」の演舞の様子です。 中央通りを舞台に、息の合った華やかな踊りと江戸情緒あふれる軽快なリズムでパレードを盛り上げる圧巻のパフォーマンスをぜひお楽しみください！ 【イベント詳細】 ・イベント名：第53回日本橋京橋まつり 大江戸活粋パレード ・出演団体：中央区民踊連盟 ・演目：これがお江戸の盆ダンス ・場所：東京都中央区 日本橋・京橋（中央通り） 【チャンネル紹介・ご案内】 和太鼓やお祭り、各地の伝統芸能の熱気をお届けしています。 気に入っていただけましたら、ぜひ高評価・チャンネル登録をお願いいたします！ #日本橋京橋まつり #大江戸活粋パレード #中央区民踊連盟 #これがお江戸の盆ダンス #盆踊り #日本の祭り #パレード"
-        }
-      ],
-      "evidence_text": "「第53回日本橋京橋まつり」の大江戸活粋パレードにて披露された、中央区民踊連盟の皆様による 「これがお江戸の盆ダンス」の演舞の様子です。 中央通りを舞台に、息の合った華やかな踊りと江戸情緒あふれる軽快なリズムでパレードを盛り上げる圧巻のパフォーマンスをぜひお楽しみください！ 【イベント詳細】 ・イベント名：第53回日本橋京橋まつり 大江戸活粋パレード ・出演団体：中央区民踊連盟 ・演目：これがお江戸の盆ダンス ・場所：東京都中央区 日本橋・京橋（中央通り） 【チャンネル紹介・ご案内】 和太鼓やお祭り、各地の伝統芸能の熱気をお届けしています。 気に入っていただけましたら、ぜひ高評価・チャンネル登録をお願いいたします！ #日本橋京橋まつり #大江戸活粋パレード #中央区民踊連盟 #これがお江戸の盆ダンス #盆踊り #日本の祭り #パレード",
-      "evidence_url": "https://www.youtube.com/watch?v=Jnd6ONQ9OmE"
+      "evidence_text": "2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu\n---\n2026年10月31日に開催された「寅さんサミット」文化交流ステージより、長野県木曽町の伝統民謡「木曽節」の模様をお届けします。 映画『男はつらいよ』ゆかりの地が集う寅さんサミットにて、長野県木曽町の皆様による情緒あふれる「木曽節」の演奏と踊りが披露されました。木曽の豊かな自然と風情を感じさせる名曲の演舞をぜひお楽しみください。 ━━━━━━━━━━━━━━━━━━━━ 【開催概要】 ・イベント：寅さんサミット（文化交流ステージ） ・演目：木曽節 ・参加地域：長野県木曽町 ・開催日：2026年10月31日（土） ━━━━━━━━━━━━━━━━━━━━ ◆ チャンネル登録・高評価よろしくお願いします！ 全国各地のお祭り、盆踊り、和太鼓の演奏動画をお届けしています。 #木曽節 #寅さんサミット #盆踊り #民謡 #長野県木曽町 #男はつらいよ #和太鼓お祭りチャンネル 寅さんサミット「長野県木曽町 」 １木曽節 https://youtu.be/Murl6r-rjxY ２木曽節レクチャー https://youtu.be/7bmKCkkoe2k ３終 木曽甚句 https://youtu",
+      "evidence_url": "https://www.youtube.com/watch?v=gmOkOPomXLg"
     },
     {
       "category": "用語候補",
@@ -506,6 +493,18 @@
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=AGpqqRxPvH4",
+          "date": "2026-11-06T10:30:20+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4xKaYwtEZys",
+          "date": "2026-11-06T10:00:36+00:00",
+          "account": "@wadaikoCH",
+          "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭"
+        },
         {
           "url": "https://www.youtube.com/watch?v=y0myjOoe5cg",
           "date": "2026-11-05T10:30:15+00:00",
@@ -523,22 +522,10 @@
           "date": "2026-11-04T10:30:19+00:00",
           "account": "@wadaikoCH",
           "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=-07rj_1J-kc",
-          "date": "2026-11-04T10:00:12+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=85QgWUU9nLw",
-          "date": "2026-11-03T10:30:18+00:00",
-          "account": "@wadaikoCH",
-          "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭"
         }
       ],
       "evidence_text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-      "evidence_url": "https://www.youtube.com/watch?v=y0myjOoe5cg"
+      "evidence_url": "https://www.youtube.com/watch?v=AGpqqRxPvH4"
     }
   ]
 }

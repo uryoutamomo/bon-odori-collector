@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 13,
-  "direct_count": 8,
-  "created_count": 5,
+  "song_candidate_count": 12,
+  "direct_count": 7,
+  "created_count": 4,
   "updated_count": 3,
   "rejected_noise_count": 4,
   "review_count": 1,
@@ -25,14 +25,6 @@
       "dry_run": true
     },
     {
-      "song_name": "木曽節",
-      "source_term": "木曽節",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "木曽甚句",
       "source_term": "木曽甚句",
       "target": "create",
@@ -41,8 +33,8 @@
       "dry_run": true
     },
     {
-      "song_name": "息の合った華やかな踊り",
-      "source_term": "息の合った華やかな踊り",
+      "song_name": "木曽節",
+      "source_term": "木曽節",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -54,7 +46,7 @@
       "song_name": "品川音頭",
       "source_term": "品川音頭",
       "target": "update",
-      "venue_relations": 1,
+      "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
@@ -85,20 +77,20 @@
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "の演奏と踊り",
+      "term": "白鳥おどり・郡上おどり",
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "白鳥おどり・郡上おどり",
+      "term": "の演奏と踊り",
       "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 8,
+      "evidence_count": 10,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=uQVb9pXc7To"
+      "evidence_url": "https://www.youtube.com/watch?v=3_yn9sMhLVU"
     }
   ]
 }

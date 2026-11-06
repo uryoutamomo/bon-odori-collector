@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1808,
+  "count": 1810,
   "public_event_count": 846,
-  "review_count": 962,
+  "review_count": 964,
   "candidates": [
     {
       "id": "4fbaa26988db7546",
@@ -7421,7 +7421,7 @@
       "evidence_count": 1
     },
     {
-      "id": "fe75e65da0732f79",
+      "id": "fe7e965797a6650b",
       "song_name": "ダンシングヒーロー",
       "event_name": "ハマサイトの夏祭り",
       "venue": "ハマサイト前広場・汐留ビルディング外構",
@@ -7432,6 +7432,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KyQ5gn6GCSI",
+          "date": "2026-11-06T05:20:15+00:00",
+          "text": "Urban Walk\n【4K】 天心祭 盆踊り 2026 \"最終日だけで1.5万人来場!! 松戸に最大級のモンスターイベントが爆誕!! / 那須川天心 × 粗品 / 鳳蝶美成  Tenshin Festival 2026\n#那須川天心 #天心祭 #ダンシングヒーロー #盆踊り #粗品 #ultrasoul #松戸 #bondance \n\n\n00:00　止まらないHa〜Ha / 矢沢永吉\n04:57　学園天国 / フィンガー5\n07:32　恋愛レボリューション21 / モーニング娘。\n11:07　YOUNG MAN / 西城秀樹\n16:08　September / Earth, Wind & Fire\n18:31　君の瞳に恋してる\n22:09　WOW WAR TONIGHT\n24:13　ダンシングヒーロー\n27:00　残酷な天使のテーゼ\n29:18　ultra soul / B'z\n33:11　那須川天心 × 粗品 トーク\n\n\n【"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=oty6flkgVJk",
@@ -7494,7 +7500,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 10
+      "evidence_count": 11
     },
     {
       "id": "76d92146903fa496",
@@ -17772,6 +17778,28 @@
       "evidence_count": 1
     },
     {
+      "id": "34e479139b213587",
+      "song_name": "ド根性節",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=AGpqqRxPvH4",
+          "date": "2026-11-06T10:30:20+00:00",
+          "text": "和太鼓お祭りCH\n「ド根性節」　飛鳥山公園盆踊り（五月女会輪踊り）28　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://y"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "e1bb8f1d63e297f7",
       "song_name": "七夕おどり",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -17822,7 +17850,7 @@
       "evidence_count": 1
     },
     {
-      "id": "f5257b77a97da509",
+      "id": "8af764f0ed11e6f6",
       "song_name": "五月女会輪踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -17833,6 +17861,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=AGpqqRxPvH4",
+          "date": "2026-11-06T10:30:20+00:00",
+          "text": "和太鼓お祭りCH\n「ド根性節」　飛鳥山公園盆踊り（五月女会輪踊り）28　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4xKaYwtEZys",
+          "date": "2026-11-06T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n堀船音頭　飛鳥山公園盆踊り（五月女会輪踊り）27　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://you"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=y0myjOoe5cg",
@@ -17991,7 +18031,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 26
+      "evidence_count": 28
     },
     {
       "id": "a386e91e1d3d9dee",
@@ -18032,6 +18072,28 @@
           "url": "https://www.youtube.com/watch?v=BKTSINLZdMs",
           "date": "2026-11-03T10:00:25+00:00",
           "text": "和太鼓お祭りCH\n四季の花踊り　飛鳥山公園盆踊り（五月女会輪踊り）21　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://y"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "662bd5949521b1cc",
+      "song_name": "堀船音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4xKaYwtEZys",
+          "date": "2026-11-06T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n堀船音頭　飛鳥山公園盆踊り（五月女会輪踊り）27　2026年9月27日　東京都北区\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。\n\n秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。\n\n【撮影情報】\n・日時：2026年9月27日\n・場所：東京都北区 飛鳥山公園\n・踊り：五月女会\n\nご視聴ありがとうございます。\nよろしければチャンネル登録・高評価をよろしくお願いいたします！\n\n#盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り\n\n飛鳥山五月女会盆踊り\n１燃えろ日本の夏祭り　https://youtu.be/8fHpj6N-4vc\n２銭形平次　https://youtu.be/aj93eLhn370\n３お江戸チョイチョイ節　https://youtu.be/wEdbGQa7t1Q\n４バサラ　https://you"
         }
       ],
       "already_public": false,
