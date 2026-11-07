@@ -51,18 +51,18 @@
       "dry_run": true
     },
     {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 1,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "白鳥おどり",
       "source_term": "白鳥おどり",
       "target": "update",
       "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "ダンシングヒーロー",
+      "source_term": "ダンシングヒーロー",
+      "target": "update",
+      "venue_relations": 1,
       "event_relations": 0,
       "dry_run": true
     }
@@ -88,9 +88,9 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 10,
+      "evidence_count": 11,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=3_yn9sMhLVU"
+      "evidence_url": "https://www.youtube.com/watch?v=ZUwCgknlYAo"
     }
   ]
 }

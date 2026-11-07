@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "82c7e20ca82654fdd370650bdc8bafc671ece33cd7cf38395f9181c4809603cf",
-  "input_size_bytes": 2219684,
+  "input_sha256": "e2d3a6d616a5c5642e714f19175f4051a1ab9efdd2fb3c8b0e1eb86bd161bdff",
+  "input_size_bytes": 2220059,
   "item_count": 5,
   "items": [
     {
@@ -11,29 +11,29 @@
       "time_scope": "future",
       "priority_label": "P1",
       "priority_score": 85,
-      "title": "🏮新宿区公式 8月盆踊り情報🏮\n\n8/1-2 柏木地区六町会\n8/1-2 中落合二丁目町会\n8/15 下落合東町会\n8/22-23 新宿中央公園夏まつり納涼盆踊",
+      "title": "🔔都内野外LIVE🔔\n\n🟠8/11(火祝)\n『上野ゐの市盆踊り』\n@上野恩賜公園 袴腰広場\n\nあきいちこ出演時間／13:00〜\n\n【イベント開催期間】\n2026",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2079441657993613335",
-      "source_url": "https://x.com/natsutr_bon/status/2079441657993613335",
+      "source_key": "x:2082674971940409499",
+      "source_url": "https://x.com/akiichiko/status/2082674971940409499",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_4b41ed87b99804f5",
-        "source_key": "x:2079441657993613335",
+        "candidate_id": "xgap_575fea8f856ac55c",
+        "source_key": "x:2082674971940409499",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
         "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/natsutr_bon/status/2079441657993613335",
-        "source_text": "\n🏮新宿区公式 8月盆踊り情報🏮\n\n8/1-2 柏木地区六町会\n8/1-2 中落合二丁目町会\n8/15 下落合東町会\n8/22-23 新宿中央公園夏まつり納涼盆踊り\n8/22-23 四谷 大京町会\n8/27-28 四谷 花園町会\n\n★詳細は新宿区公式\nhttps://t.co/zASmuT2vzB",
-        "source_author": "@natsutr_bon",
+        "source_url": "https://x.com/akiichiko/status/2082674971940409499",
+        "source_text": "\n🔔都内野外LIVE🔔\n\n🟠8/11(火祝)\n『上野ゐの市盆踊り』\n@上野恩賜公園 袴腰広場\n\nあきいちこ出演時間／13:00〜\n\n【イベント開催期間】\n2026年8月7日(金)〜8月16日(日)\n開催時間　全日 12:00〜21:00 https://t.co/Lq12X3pEqp",
+        "source_author": "@akiichiko",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@natsutr_bon",
-          "account_name": "奈津大郎〘ナツタロ〙",
+          "handle": "@akiichiko",
+          "account_name": "あきいちこ",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -42,123 +42,43 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "8/1",
-          "8/1",
-          "8/15",
-          "8/22",
-          "8/22",
-          "8/27"
+          "8/11",
+          "8月7日",
+          "8月16日"
         ],
         "observed_dates": [
-          "2026-08-27"
+          "2026-08-16"
         ],
-        "event_group_key": "informal:dc0535cd0aff7b91",
-        "known_venue_evidence": null,
+        "event_group_key": "informal:b8a9fe05314da01a",
         "voice": {
           "source": "x",
-          "account": "@natsutr_bon",
-          "name": "奈津大郎〘ナツタロ〙",
+          "account": "@akiichiko",
+          "name": "あきいちこ",
           "title": "",
-          "text": "🏮新宿区公式 8月盆踊り情報🏮\n\n8/1-2 柏木地区六町会\n8/1-2 中落合二丁目町会\n8/15 下落合東町会\n8/22-23 新宿中央公園夏まつり納涼盆踊り\n8/22-23 四谷 大京町会\n8/27-28 四谷 花園町会\n\n★詳細は新宿区公式\nhttps://t.co/zASmuT2vzB",
-          "url": "https://x.com/natsutr_bon/status/2079441657993613335",
-          "date": "2026-07-21T05:41:40+00:00",
-          "tweet_id": "2079441657993613335",
-          "tags": [
-            "🟡関心",
-            "q-poster-flyer"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/natsutr_bon/status/2079441657993613335"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "daily_candidate_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_35c5e53e4c158b58"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
-      "title": "本町の夏の風物詩🎐北御堂盆おどり開催！河内音頭や屋台、縁日で夏祭り気分を満喫✨家族で楽しもう😊\n\n第54回北御堂盆踊り\n🗓️8/19(水)・8/20(木) 17",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2082613391282045394",
-      "source_url": "https://x.com/osakachushin/status/2082613391282045394",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_6f209bf3aaddf219",
-        "source_key": "x:2082613391282045394",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/osakachushin/status/2082613391282045394",
-        "source_text": "\n本町の夏の風物詩🎐北御堂盆おどり開催！河内音頭や屋台、縁日で夏祭り気分を満喫✨家族で楽しもう😊\n\n第54回北御堂盆踊り\n🗓️8/19(水)・8/20(木) 17:00〜20:00\n📍北御堂（本願寺津村別院）（大阪市中央区本町4丁目1-3）\n\nhttps://t.co/0qRo0KLV45 #osakachushin #event https://t.co/R3mdnKhEuX",
-        "source_author": "@osakachushin",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@osakachushin",
-          "account_name": "大阪中心 / The Heart of Osaka 🌸",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/19",
-          "8/20"
-        ],
-        "observed_dates": [
-          "2026-08-20"
-        ],
-        "event_group_key": "informal:d58bf5a34eb4b6f4",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@osakachushin",
-          "name": "大阪中心 / The Heart of Osaka 🌸",
-          "title": "",
-          "text": "本町の夏の風物詩🎐北御堂盆おどり開催！河内音頭や屋台、縁日で夏祭り気分を満喫✨家族で楽しもう😊\n\n第54回北御堂盆踊り\n🗓️8/19(水)・8/20(木) 17:00〜20:00\n📍北御堂（本願寺津村別院）（大阪市中央区本町4丁目1-3）\n\nhttps://t.co/0qRo0KLV45 #osakachushin #event https://t.co/R3mdnKhEuX",
-          "url": "https://x.com/osakachushin/status/2082613391282045394",
-          "date": "2026-07-29T23:45:00+00:00",
-          "tweet_id": "2082613391282045394",
+          "text": "🔔都内野外LIVE🔔\n\n🟠8/11(火祝)\n『上野ゐの市盆踊り』\n@上野恩賜公園 袴腰広場\n\nあきいちこ出演時間／13:00〜\n\n【イベント開催期間】\n2026年8月7日(金)〜8月16日(日)\n開催時間　全日 12:00〜21:00 https://t.co/Lq12X3pEqp",
+          "url": "https://x.com/akiichiko/status/2082674971940409499",
+          "date": "2026-07-30T03:49:42+00:00",
+          "tweet_id": "2082674971940409499",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOYgbW8bMAAr7Hy.jpg",
-            "https://t.co/R3mdnKhEuX",
-            "pic.x.com/R3mdnKhEuX",
-            "https://pbs.twimg.com/media/HOYgbW2a4AA9h47.jpg"
+            "https://pbs.twimg.com/media/HOcl2KCagAApIvB.jpg",
+            "https://t.co/Lq12X3pEqp",
+            "pic.x.com/Lq12X3pEqp",
+            "https://pbs.twimg.com/media/HOcl2KBbgAEcicT.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/osakachushin/status/2082613391282045394"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HOYgbW8bMAAr7Hy.jpg",
-          "https://t.co/R3mdnKhEuX",
-          "pic.x.com/R3mdnKhEuX",
-          "https://pbs.twimg.com/media/HOYgbW2a4AA9h47.jpg"
+          "https://x.com/akiichiko/status/2082674971940409499"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_ba694bf833e9c9cf"
+      "inbox_id": "inbox_c3644ca656997d0a"
     },
     {
       "kind": "x_gap",
@@ -166,29 +86,180 @@
       "time_scope": "future",
       "priority_label": "P1",
       "priority_score": 85,
-      "title": "／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-",
+      "title": "＼ 出演情報 ／\n\n上野ゐの市 盆踊り🏮✨\n【日付】2026年8月16日(日)\n【会場】上野恩賜公園 袴腰広場\n【料金】観覧無料\n【小野亜里沙出演】\n18:30",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2082662969792688156",
-      "source_url": "https://x.com/ebisawa_akane/status/2082662969792688156",
+      "source_key": "x:2082678931405291714",
+      "source_url": "https://x.com/onoarisastaff/status/2082678931405291714",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_fedfffde02ed8d2e",
-        "source_key": "x:2082662969792688156",
+        "candidate_id": "xgap_71dc794c9ebee65e",
+        "source_key": "x:2082678931405291714",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
         "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/ebisawa_akane/status/2082662969792688156",
-        "source_text": "\n／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻",
-        "source_author": "@ebisawa_akane",
+        "source_url": "https://x.com/onoarisastaff/status/2082678931405291714",
+        "source_text": "\n＼ 出演情報 ／\n\n上野ゐの市 盆踊り🏮✨\n【日付】2026年8月16日(日)\n【会場】上野恩賜公園 袴腰広場\n【料金】観覧無料\n【小野亜里沙出演】\n18:30〜\n\n＜開催期間＞\n2026年8月7日(金)〜8月16日(日)\n12:00〜21:00\n\n夏の上野でお会いできるのを楽しみにしています。\nぜひお越しください🌻✨ https://t.co/tiubYEpmRC",
+        "source_author": "@onoarisastaff",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@ebisawa_akane",
-          "account_name": "海老沢茜✊🏻",
+          "handle": "@onoarisastaff",
+          "account_name": "【公式】小野亜里沙スタッフ🐹",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月16日",
+          "8月7日",
+          "8月16日"
+        ],
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "event_group_key": "informal:197570927f3e8b63",
+        "voice": {
+          "source": "x",
+          "account": "@onoarisastaff",
+          "name": "【公式】小野亜里沙スタッフ🐹",
+          "title": "",
+          "text": "＼ 出演情報 ／\n\n上野ゐの市 盆踊り🏮✨\n【日付】2026年8月16日(日)\n【会場】上野恩賜公園 袴腰広場\n【料金】観覧無料\n【小野亜里沙出演】\n18:30〜\n\n＜開催期間＞\n2026年8月7日(金)〜8月16日(日)\n12:00〜21:00\n\n夏の上野でお会いできるのを楽しみにしています。\nぜひお越しください🌻✨ https://t.co/tiubYEpmRC",
+          "url": "https://x.com/onoarisastaff/status/2082678931405291714",
+          "date": "2026-07-30T04:05:26+00:00",
+          "tweet_id": "2082678931405291714",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOcpbthbEAA2772.jpg",
+            "https://t.co/tiubYEpmRC",
+            "pic.x.com/tiubYEpmRC",
+            "https://pbs.twimg.com/media/HOcpbtlbwAAOOzV.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/onoarisastaff/status/2082678931405291714"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "informal_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_5103b83e2c672515"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "🍉出演決定🍉\n\n👘上野ゐの市盆踊り\n・期間\n2026年8月7日(金)〜8月16日(日)\n開催時間　全日 12:00〜21:00\n【会場】上野恩賜公園 袴腰広場\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2082706517447618923",
+      "source_url": "https://x.com/harunomai/status/2082706517447618923",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_c9a381b4a5ee09e4",
+        "source_key": "x:2082706517447618923",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/harunomai/status/2082706517447618923",
+        "source_text": "\n🍉出演決定🍉\n\n👘上野ゐの市盆踊り\n・期間\n2026年8月7日(金)〜8月16日(日)\n開催時間　全日 12:00〜21:00\n【会場】上野恩賜公園 袴腰広場\n\n・はるのまい出演時間\n8月11日(火祝)　16:00〜\n8月13日(木)　13:00〜\n\n夏といえば✨盆踊り✨\nそんな夏を感じられるイベントに出演が決定しました！\n是非一緒にお楽しみください♪",
+        "source_author": "@harunomai",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@harunomai",
+          "account_name": "はるのまい",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月7日",
+          "8月16日",
+          "8月11日",
+          "8月13日"
+        ],
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "event_group_key": "informal:8be735ebcbe0aef5",
+        "voice": {
+          "source": "x",
+          "account": "@harunomai",
+          "name": "はるのまい",
+          "title": "",
+          "text": "🍉出演決定🍉\n\n👘上野ゐの市盆踊り\n・期間\n2026年8月7日(金)〜8月16日(日)\n開催時間　全日 12:00〜21:00\n【会場】上野恩賜公園 袴腰広場\n\n・はるのまい出演時間\n8月11日(火祝)　16:00〜\n8月13日(木)　13:00〜\n\n夏といえば✨盆踊り✨\nそんな夏を感じられるイベントに出演が決定しました！\n是非一緒にお楽しみください♪",
+          "url": "https://x.com/harunomai/status/2082706517447618923",
+          "date": "2026-07-30T05:55:03+00:00",
+          "tweet_id": "2082706517447618923",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOdCiZabgAELE0p.jpg",
+            "https://t.co/rn1r0MlU0g",
+            "pic.x.com/rn1r0MlU0g",
+            "https://pbs.twimg.com/media/HOdCiZbaEAAbzh9.jpg"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/harunomai/status/2082706517447618923"
+        ],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "informal_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_aa84a73b8494ef58"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "こちらの出演が決まりました🎉✨\n\n上野ゐの市盆踊りに出演させていただきます！\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2082709210240819616",
+      "source_url": "https://x.com/yukarimaeda/status/2082709210240819616",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_b829c5ab593059cb",
+        "source_key": "x:2082709210240819616",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/yukarimaeda/status/2082709210240819616",
+        "source_text": "\nこちらの出演が決まりました🎉✨\n\n上野ゐの市盆踊りに出演させていただきます！\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜21:00（全日）\n📍会場\n上野恩賜公園 袴腰広場\n\n🎤前田有加里出演\n8月12日(水) 17:00〜\n8月14日(金) 13:00〜\n\n夏の上野でお会いできるのを楽しみにしています🥰\nぜひ遊びに来てください🫶",
+        "source_author": "@yukarimaeda",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@yukarimaeda",
+          "account_name": "前田有加里@261123シアターマーキュリー新宿BDワンマン昼夜2公演",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -200,41 +271,41 @@
           "8月7日",
           "8月16日",
           "8月12日",
-          "8月15日"
+          "8月14日"
         ],
         "observed_dates": [
           "2026-08-16"
         ],
-        "event_group_key": "informal:2b20330d19cd9742",
+        "event_group_key": "informal:0d1d5a5b2cc684d0",
         "voice": {
           "source": "x",
-          "account": "@ebisawa_akane",
-          "name": "海老沢茜✊🏻",
+          "account": "@yukarimaeda",
+          "name": "前田有加里@261123シアターマーキュリー新宿BDワンマン昼夜2公演",
           "title": "",
-          "text": "／\n【LIVE】お知らせ📢\nお盆休みは上野恩賜公園に集合🪅\n＼\n\n『上野ゐの市盆踊り』\n🎪上野恩賜公園 袴腰広場\n\n《 開催期間 》\n2026年8月7日(金)-8月16日(日)\n全日 12:00-21:00\n\n■海老沢茜出演時間■\n8月12日(水) 16:00-\n8月15日(土) 16:00- (衣装は浴衣)\n※同日15:00-はおかちまちパンダ広場に出演します.ᐟ.ᐟ\n\n素敵な夏の思い出つくりましょう🌻",
-          "url": "https://x.com/ebisawa_akane/status/2082662969792688156",
-          "date": "2026-07-30T03:02:00+00:00",
-          "tweet_id": "2082662969792688156",
+          "text": "こちらの出演が決まりました🎉✨\n\n上野ゐの市盆踊りに出演させていただきます！\n\n📍開催期間\n2026年8月7日(金)〜8月16日(日)\n🕛開催時間\n12:00〜21:00（全日）\n📍会場\n上野恩賜公園 袴腰広場\n\n🎤前田有加里出演\n8月12日(水) 17:00〜\n8月14日(金) 13:00〜\n\n夏の上野でお会いできるのを楽しみにしています🥰\nぜひ遊びに来てください🫶",
+          "url": "https://x.com/yukarimaeda/status/2082709210240819616",
+          "date": "2026-07-30T06:05:45+00:00",
+          "tweet_id": "2082709210240819616",
           "tags": [
             "🟡関心",
             "q-future-schedule"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOcarr1bUAAaf-y.jpg",
-            "https://t.co/yhS1nHIVaK",
-            "pic.x.com/yhS1nHIVaK",
-            "https://pbs.twimg.com/media/HOcarr1aEAAdQl5.jpg"
+            "https://pbs.twimg.com/media/HOdEs8FaYAA06Z5.jpg",
+            "https://t.co/TCaOVXYtt6",
+            "pic.x.com/TCaOVXYtt6",
+            "https://pbs.twimg.com/media/HOdE-72acAA7lN7.jpg"
           ]
         },
         "source_urls": [
-          "https://x.com/ebisawa_akane/status/2082662969792688156"
+          "https://x.com/yukarimaeda/status/2082709210240819616"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_e3d71b6a7b549739"
+      "inbox_id": "inbox_428de20f4ffcb6a4"
     },
     {
       "kind": "x_gap",
@@ -242,29 +313,29 @@
       "time_scope": "future",
       "priority_label": "P1",
       "priority_score": 85,
-      "title": "【情報解禁】\n上野ゐの市盆踊り\n上野恩賜公園 袴腰広場\n【開催期間】8/7(金)〜8/16(日)\n【開催時間】12:00〜21:00\nひいらぎ繭出演時間\n8/1",
+      "title": "🏮上野ゐの市盆踊り\nLAST FIRST出演決定✨\n\n🗓️8/7(金)〜8/16(日)\n上野恩賜公園 袴腰広場\n12:00〜21:00\n\n🎤LAST FIRST",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2082667576501686746",
-      "source_url": "https://x.com/mayu_singer/status/2082667576501686746",
+      "source_key": "x:2082722979365179681",
+      "source_url": "https://x.com/StaffLast/status/2082722979365179681",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_e4dcbdbe1d587286",
-        "source_key": "x:2082667576501686746",
+        "candidate_id": "xgap_0e5731e0d6e081e5",
+        "source_key": "x:2082722979365179681",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
         "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/mayu_singer/status/2082667576501686746",
-        "source_text": "\n【情報解禁】\n上野ゐの市盆踊り\n上野恩賜公園 袴腰広場\n【開催期間】8/7(金)〜8/16(日)\n【開催時間】12:00〜21:00\nひいらぎ繭出演時間\n8/11(火祝)17:00\n8/14(金)17:00\n約30分程度の演奏予定です。\n※観覧無料です。\n素敵な夏イベントに参加させていただきます😌櫓の上下で唄う予定です🤭 https://t.co/sUhpHJuaQS",
-        "source_author": "@mayu_singer",
+        "source_url": "https://x.com/StaffLast/status/2082722979365179681",
+        "source_text": "\n🏮上野ゐの市盆踊り\nLAST FIRST出演決定✨\n\n🗓️8/7(金)〜8/16(日)\n上野恩賜公園 袴腰広場\n12:00〜21:00\n\n🎤LAST FIRST出演\n8/10(月) 16:00〜\n8/13(木) 17:00〜\n\n観覧無料✨\n夏の思い出に🎐\nぜひ遊びに来てください🌻\n\n皆さまのお越しをお待ちしています!! https://t.co/1lNoRdPMaN",
+        "source_author": "@StaffLast",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@mayu_singer",
-          "account_name": "ひいらぎ繭",
+          "handle": "@stafflast",
+          "account_name": "LAST FIRST STAFF",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -275,118 +346,41 @@
         "date_hints": [
           "8/7",
           "8/16",
-          "8/11",
-          "8/14"
+          "8/10",
+          "8/13"
         ],
         "observed_dates": [
           "2026-08-16"
         ],
-        "event_group_key": "informal:63901e1edec3826e",
+        "event_group_key": "informal:321b1b963b9831e5",
         "voice": {
           "source": "x",
-          "account": "@mayu_singer",
-          "name": "ひいらぎ繭",
+          "account": "@StaffLast",
+          "name": "LAST FIRST STAFF",
           "title": "",
-          "text": "【情報解禁】\n上野ゐの市盆踊り\n上野恩賜公園 袴腰広場\n【開催期間】8/7(金)〜8/16(日)\n【開催時間】12:00〜21:00\nひいらぎ繭出演時間\n8/11(火祝)17:00\n8/14(金)17:00\n約30分程度の演奏予定です。\n※観覧無料です。\n素敵な夏イベントに参加させていただきます😌櫓の上下で唄う予定です🤭 https://t.co/sUhpHJuaQS",
-          "url": "https://x.com/mayu_singer/status/2082667576501686746",
-          "date": "2026-07-30T03:20:18+00:00",
-          "tweet_id": "2082667576501686746",
+          "text": "🏮上野ゐの市盆踊り\nLAST FIRST出演決定✨\n\n🗓️8/7(金)〜8/16(日)\n上野恩賜公園 袴腰広場\n12:00〜21:00\n\n🎤LAST FIRST出演\n8/10(月) 16:00〜\n8/13(木) 17:00〜\n\n観覧無料✨\n夏の思い出に🎐\nぜひ遊びに来てください🌻\n\n皆さまのお越しをお待ちしています!! https://t.co/1lNoRdPMaN",
+          "url": "https://x.com/StaffLast/status/2082722979365179681",
+          "date": "2026-07-30T07:00:28+00:00",
+          "tweet_id": "2082722979365179681",
           "tags": [
             "🟡関心",
-            "q-future-schedule"
+            "q-base"
           ],
           "media_urls": [
-            "https://pbs.twimg.com/media/HOcfHm1aEAAAEMu.jpg",
-            "https://t.co/sUhpHJuaQS",
-            "pic.x.com/sUhpHJuaQS",
-            "https://pbs.twimg.com/media/HOcfH3PbUAAZILn.jpg"
+            "https://pbs.twimg.com/media/HOdRgaHbkAA0ADw.jpg",
+            "https://t.co/1lNoRdPMaN",
+            "pic.x.com/1lNoRdPMaN"
           ]
         },
         "source_urls": [
-          "https://x.com/mayu_singer/status/2082667576501686746"
+          "https://x.com/StaffLast/status/2082722979365179681"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_ac61fdd28c01bc5a"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
-      "title": "【情報解禁】\n\n上野ゐの市盆踊り\n2026年8月7日(金)〜8月16日(日)\n\n開催時間　全日 12:00〜21:00\n場所 上野恩賜公園 袴腰広場\n料金 無料",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2082671853307596975",
-      "source_url": "https://x.com/hitonyan_info/status/2082671853307596975",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_56d45d0e637adfe4",
-        "source_key": "x:2082671853307596975",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/hitonyan_info/status/2082671853307596975",
-        "source_text": "\n【情報解禁】\n\n上野ゐの市盆踊り\n2026年8月7日(金)〜8月16日(日)\n\n開催時間　全日 12:00〜21:00\n場所 上野恩賜公園 袴腰広場\n料金 無料\n\n鈴音ひとみ出演時間\n8月10日(月)　12:00〜\n8月15日(土)　12:00〜\n\n持ち時間は各30分間\n出演後特典会あり✨ https://t.co/veHmExWorx",
-        "source_author": "@hitonyan_info",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@hitonyan_info",
-          "account_name": "鈴音ひとみinfo【スタッフ管理】",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8月7日",
-          "8月16日",
-          "8月10日",
-          "8月15日"
-        ],
-        "observed_dates": [
-          "2026-08-16"
-        ],
-        "event_group_key": "informal:63ebc0fe500d5e38",
-        "voice": {
-          "source": "x",
-          "account": "@hitonyan_info",
-          "name": "鈴音ひとみinfo【スタッフ管理】",
-          "title": "",
-          "text": "【情報解禁】\n\n上野ゐの市盆踊り\n2026年8月7日(金)〜8月16日(日)\n\n開催時間　全日 12:00〜21:00\n場所 上野恩賜公園 袴腰広場\n料金 無料\n\n鈴音ひとみ出演時間\n8月10日(月)　12:00〜\n8月15日(土)　12:00〜\n\n持ち時間は各30分間\n出演後特典会あり✨ https://t.co/veHmExWorx",
-          "url": "https://x.com/hitonyan_info/status/2082671853307596975",
-          "date": "2026-07-30T03:37:18+00:00",
-          "tweet_id": "2082671853307596975",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "media_urls": [
-            "https://pbs.twimg.com/media/HOcjAp0aMAAiJJw.jpg",
-            "https://t.co/veHmExWorx",
-            "pic.x.com/veHmExWorx",
-            "https://pbs.twimg.com/media/HOcjAp6aYAA4wTY.jpg"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/hitonyan_info/status/2082671853307596975"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "informal_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_36b86a23ab095192"
+      "inbox_id": "inbox_675c09781a03e66d"
     }
   ],
   "selection": {
@@ -394,11 +388,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2079441657993613335",
-      "x:2082613391282045394",
-      "x:2082662969792688156",
-      "x:2082667576501686746",
-      "x:2082671853307596975"
+      "x:2082674971940409499",
+      "x:2082678931405291714",
+      "x:2082706517447618923",
+      "x:2082709210240819616",
+      "x:2082722979365179681"
     ]
   },
   "write_mode": "snapshot_only_default_off",
