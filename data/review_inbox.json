@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-08T13:37:45.840600+00:00",
+  "generated_at": "2026-11-08T13:40:15.287464+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -38564,6 +38564,146 @@
       }
     },
     {
+      "inbox_id": "inbox_575ed41367b2de92",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "輪踊り",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:輪踊り",
+      "source_url": "https://www.youtube.com/watch?v=g8sSx9FTuxs",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "905addf100d3a0abd0be38d2142756098cf9616787e6a48df664d8599bccbcd6",
+      "last_seen_at": "github-42484591856-1-daily_term_candidate",
+      "created_at": "2026-07-27T10:22:18.965554+00:00",
+      "updated_at": "2026-11-08T13:38:42.968600+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-08T10:00:23+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=g8sSx9FTuxs"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-07T10:30:21+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=prk3Xp3_L4M"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-07T10:00:33+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=LViE5-r1oto"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-06T10:30:20+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=AGpqqRxPvH4"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-06T10:00:36+00:00",
+            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+            "url": "https://www.youtube.com/watch?v=4xKaYwtEZys"
+          }
+        ],
+        "evidence_count": 5,
+        "evidence_text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
+        "evidence_url": "https://www.youtube.com/watch?v=g8sSx9FTuxs",
+        "interpretation": "櫓や中心を囲んで輪になって踊る形式",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "輪踊り",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_01bb7cc038021f36",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "郡上おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:郡上おどり",
+      "source_url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "e0561f569b2cbefe46beaf931b8ba1e4d5bbda4c9229841f51eade1506d8bf9c",
+      "last_seen_at": "github-42484591856-1-daily_song_candidate",
+      "created_at": "2026-07-25T15:31:52.165690+00:00",
+      "updated_at": "2026-11-08T13:38:00.892619+00:00",
+      "payload": {
+        "canonical_song_name": "郡上おどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-08T12:00:34+00:00",
+            "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+            "url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-08T11:30:30+00:00",
+            "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+            "url": "https://www.youtube.com/watch?v=C4hgcAxSpEA"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-08T06:00:17+00:00",
+            "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+            "url": "https://www.youtube.com/watch?v=IoFqHyBUf6o"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-07T13:00:32+00:00",
+            "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+            "url": "https://www.youtube.com/watch?v=xhwV6D5HNd8"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-07T11:30:17+00:00",
+            "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
+            "url": "https://www.youtube.com/watch?v=ZUwCgknlYAo"
+          }
+        ],
+        "evidence_count": 11,
+        "evidence_text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU \n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU \n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+        "evidence_url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo",
+        "interpretation": "郡上おどり",
+        "reason": "曲名抽出器で検出: known_song_context, song_suffix_in_context, song_suffix_near_context, split_context",
+        "term": "郡上おどり",
+        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_24af539345978fee",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -39132,146 +39272,6 @@
         "term": "品川音頭 × 旗の台稲荷通り商店街",
         "type": "共起",
         "venue": "旗の台稲荷通り商店街"
-      }
-    },
-    {
-      "inbox_id": "inbox_575ed41367b2de92",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "輪踊り",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:輪踊り",
-      "source_url": "https://www.youtube.com/watch?v=prk3Xp3_L4M",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "ae5d946352bbb49311a5bdfec6f5cf9adb416d7d54819236c5dcdc93fcfbae82",
-      "last_seen_at": "github-42374750437-1-daily_term_candidate",
-      "created_at": "2026-07-27T10:22:18.965554+00:00",
-      "updated_at": "2026-11-07T13:19:55.569914+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-07T10:30:21+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=prk3Xp3_L4M"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-07T10:00:33+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=LViE5-r1oto"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-06T10:30:20+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=AGpqqRxPvH4"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-06T10:00:36+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=4xKaYwtEZys"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-05T10:30:15+00:00",
-            "text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-            "url": "https://www.youtube.com/watch?v=y0myjOoe5cg"
-          }
-        ],
-        "evidence_count": 6,
-        "evidence_text": "東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭\n---\n東京都北区・飛鳥山公園で行われた「五月女会 輪踊り（盆踊り）」の映像です（2026年9月27日撮影）。 秋空の下、太鼓の響きとともに皆さんで輪になって踊る賑やかな様子をお届けします。 【撮影情報】 ・日時：2026年9月27日 ・場所：東京都北区 飛鳥山公園 ・踊り：五月女会 ご視聴ありがとうございます。 よろしければチャンネル登録・高評価をよろしくお願いいたします！ #盆踊り #五月女会 #飛鳥山公園 #和太鼓 #日本の祭り #輪踊り 飛鳥山五月女会盆踊り １燃えろ日本の夏祭り https://youtu.be/8fHpj6N-4vc ２銭形平次 https://youtu.be/aj93eLhn370 ３お江戸チョイチョイ節 https://youtu.be/wEdbGQa7t1Q ４バサラ https://youtu.be/kq6cV8NLzik ５大江戸助六音頭 https://youtu.be/463XWbgHDfo ６千恵っ子よされ https://youtu.be/r68Cd7HzDIo ７佐渡の恋唄 https://youtu.be/3FQeIY7Ce-c ８飛鳥山音頭",
-        "evidence_url": "https://www.youtube.com/watch?v=prk3Xp3_L4M",
-        "interpretation": "櫓や中心を囲んで輪になって踊る形式",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "輪踊り",
-        "type": "準公式用語"
-      }
-    },
-    {
-      "inbox_id": "inbox_01bb7cc038021f36",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "郡上おどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:郡上おどり",
-      "source_url": "https://www.youtube.com/watch?v=ZUwCgknlYAo",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "e6c1c88c3cd57bdde459f88ff03cfe05276c3f6bfc4ae2551e7b9cdc20942413",
-      "last_seen_at": "github-42374750437-1-daily_song_candidate",
-      "created_at": "2026-07-25T15:31:52.165690+00:00",
-      "updated_at": "2026-11-07T13:19:00.893085+00:00",
-      "payload": {
-        "canonical_song_name": "郡上おどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-07T11:30:17+00:00",
-            "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-            "url": "https://www.youtube.com/watch?v=ZUwCgknlYAo"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-07T11:00:25+00:00",
-            "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-            "url": "https://www.youtube.com/watch?v=iSgIozKTSI8"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-07T06:00:01+00:00",
-            "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
-            "url": "https://www.youtube.com/watch?v=IzmdyaSmXIk"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-06T13:00:05+00:00",
-            "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
-            "url": "https://www.youtube.com/watch?v=3_yn9sMhLVU"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-06T11:30:07+00:00",
-            "text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http",
-            "url": "https://www.youtube.com/watch?v=vdQdCVg5WtY"
-          }
-        ],
-        "evidence_count": 11,
-        "evidence_text": "2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年10月25日に岐阜県郡上八幡で開催された 『第3回女将no郡上おどりdeマルシェ』での演奏・踊りの様子です。 「踊月夜」と「雅」による息の合った華やかなステージと、 秋の郡上八幡に響く風情ある「郡上おどり」と「白鳥おどり」をぜひお楽しみください。 【イベント概要】 ・イベント名：第3回女将no郡上おどりdeマルシェ ・出演：踊月夜 / 雅 / ジュニアクラブ ・開催日：2026年10月25日 ・開催地：岐阜県郡上八幡 チャンネル登録・高評価もよろしくお願いいたします！ #古調かわさき #郡上おどり #女将no郡上おどりdeマルシェ #踊月夜 #雅 #盆踊り #郡上八幡 #岐阜県 #日本の祭り 女将の郡上おどりマルシェ １古調かわさき https://youtu.be/0srFYCdkuiA ２かわさき https://youtu.be/_ZUmbl3HWRI ３三百 https://youtu.be/DlGv6Vav99s ４源助さん https://youtu.be/Hs132tuSZOk ５神代 https://youtu.be/thrhneF71iM ６さわぎ http\n---\n2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
-        "evidence_url": "https://www.youtube.com/watch?v=ZUwCgknlYAo",
-        "interpretation": "郡上おどり",
-        "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-        "term": "郡上おどり",
-        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
-        "type": "曲名"
       }
     },
     {
