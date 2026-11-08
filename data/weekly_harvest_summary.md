@@ -1,20 +1,19 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-11-07T13:10:09.400329+00:00
+- 生成時刻: 2026-11-08T13:31:22.931187+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 47件
-- 候補総数: 14件
+- 対象voices: 49件
+- 候補総数: 12件
 
 ## 内訳
-- 曲×会場共起: 1件
-- 曲候補: 12件
+- 曲候補: 11件
 - 用語候補: 1件
 
 ## レビュー対象
-- 用語・共起レビュー: 2件
+- 用語・共起レビュー: 1件
 - 曲候補レビュー: 1件
 - 曲の明白候補 dry-run: 7件
-- 曲ノイズ除外: 4件
+- 曲ノイズ除外: 3件
 
 ## 生成物
 - non_song_json: `data/weekly_harvest_review_candidates.json`
@@ -27,7 +26,6 @@
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
 
 ## 用語・共起レビュー例
-- 品川音頭 × 旗の台稲荷通り商店街
 - 輪踊り
 
 ## 曲レビュー例

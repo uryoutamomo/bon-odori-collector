@@ -1,20 +1,20 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-11-07T13:09:45.335453+00:00",
+  "generated_at": "2026-11-08T13:31:03.689124+00:00",
   "source": "data/voices.json",
-  "voice_count": 45813,
-  "classified_event_evidence_count": 11284,
-  "candidate_count": 9514,
+  "voice_count": 45831,
+  "classified_event_evidence_count": 11298,
+  "candidate_count": 9519,
   "counts": {
     "by_kind": {
-      "event": 5235,
-      "song": 2832,
-      "venue": 1447
+      "event": 5238,
+      "song": 2833,
+      "venue": 1448
     },
     "by_tier": {
-      "hold": 2363,
-      "promote": 906,
-      "review": 6245
+      "hold": 2365,
+      "promote": 907,
+      "review": 6247
     },
     "suppressed_event_hint_count": 1093,
     "venue_month_grouped_count": 1520
@@ -50752,6 +50752,99 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:060af90faeaa6d11a019ba94d4fc643e0c4a13ef08577fe29cdee40daf2ae9e9",
+      "display_name": "オボンズによる生唄・生演奏盆踊り",
+      "normalized_event": "オボンズによる生唄生演奏",
+      "venue": "",
+      "venue_key": "",
+      "month": "11",
+      "estimated_date": "2026年11月7日",
+      "year": 2026,
+      "hashtags": [
+        "盆踊り",
+        "オボンズ",
+        "押上",
+        "生演奏",
+        "お祭り"
+      ],
+      "score": 40,
+      "tier": "review",
+      "evidence_count": 2,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:034be0319b96a8b3a59bd3b71a56d85a9b49ecb8ca676901fe06d07e6ae07ad6",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=gUsonuyxFrI",
+          "text": "押上もちつき交流会にて行われた、\nオボンズによる生唄・生演奏盆踊りの様子です！ \n会場の活気ある熱気と、\n心地よい生演奏のリズムをぜひお楽しみください。\n\n【開催情報】 \n・イベント：押上もちつき交流会\n ・演奏 / 出演：オボンズ（生唄・生演奏） \n・撮影日：2026年11月7日\n・場所：東京都墨田区 押上\n\n\n\n和太鼓お祭りチャンネルでは、\n全国各地の盆踊りやお祭り、\n伝統芸能の熱気をお届けしています。 \nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n#盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓\n\n\n押上もちつき交流会盆踊り\n１炭坑節　https://youtu.be/K15FOerpW1k\n２東京音頭　https://youtu.be/gUsonuyxFrI",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T09:00:02+00:00",
+          "observed_at": "2026-11-08T09:00:02+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "normalized_event": "オボンズによる生唄生演奏",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:b0957ee984a1f08ffe3b637178920fbf1fa38a36e05d96455ea378d3523c1404",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=K15FOerpW1k",
+          "text": "押上もちつき交流会にて行われた、\nオボンズによる生唄・生演奏盆踊りの様子です！ \n会場の活気ある熱気と、\n心地よい生演奏のリズムをぜひお楽しみください。\n\n【開催情報】 \n・イベント：押上もちつき交流会\n ・演奏 / 出演：オボンズ（生唄・生演奏） \n・撮影日：2026年11月7日\n・場所：東京都墨田区 押上\n\n\n\n和太鼓お祭りチャンネルでは、\n全国各地の盆踊りやお祭り、\n伝統芸能の熱気をお届けしています。 \nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n#盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓\n\n\n押上もちつき交流会盆踊り\n１炭坑節　https://youtu.be/K15FOerpW1k\n２東京音頭　https://youtu.be/gUsonuyxFrI",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T08:45:26+00:00",
+          "observed_at": "2026-11-08T08:45:26+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "normalized_event": "オボンズによる生唄生演奏",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:552b3bddcb849d7ab1d701479b5442ec2714c645491f1b3dc84a6fa47db8489c",
       "display_name": "キタコス盆踊り",
       "normalized_event": "キタコス",
@@ -51339,10 +51432,142 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 5,
+      "evidence_count": 9,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:a94039faf35bfbed4d7dfbc0306f1350c8ba7b598eb855424a0a11f00a8b569f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、\nマーゴの秋祭り「雅な月夜 vol.2」の様子です。\n\n秋の夜空の下、\n下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。\n\n■ 演目\n ・白鳥おどり・郡上おどり\n ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」\n\n■ 撮影日\n・日時：2026年11月3日（火・祝）\n ・会場：サンサンシティマーゴ（岐阜県関市）\n\n■ 関連動画\n 和太鼓お祭りチャンネルでは、\n各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n\n#源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅\n\n\nマーゴの秋祭り\n白鳥おどり\n１源助さん　https://youtu.be/Z2f8-e2LFAM\n２シッチョイ　https://youtu.be/uQVb9pXc7To\n３猫の子　https://youtu.be/NzZrYeuUI_g\n４神代　https://youtu.be",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T12:00:34+00:00",
+          "observed_at": "2026-11-08T12:00:34+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "normalized_event": "マーゴの秋",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:9612e8f2ccb962ea422236bff14fad9ab7db54606f5653b26d9bfc8ff4e82fd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=C4hgcAxSpEA",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、\nマーゴの秋祭り「雅な月夜 vol.2」の様子です。\n\n秋の夜空の下、\n下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。\n\n■ 演目\n ・白鳥おどり・郡上おどり\n ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」\n\n■ 撮影日\n・日時：2026年11月3日（火・祝）\n ・会場：サンサンシティマーゴ（岐阜県関市）\n\n■ 関連動画\n 和太鼓お祭りチャンネルでは、\n各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n\n#源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅\n\n\nマーゴの秋祭り\n白鳥おどり\n１源助さん　https://youtu.be/Z2f8-e2LFAM\n２シッチョイ　https://youtu.be/uQVb9pXc7To\n３猫の子　https://youtu.be/NzZrYeuUI_g\n４神代　https://youtu.be",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T11:30:30+00:00",
+          "observed_at": "2026-11-08T11:30:30+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "normalized_event": "マーゴの秋",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:8e4796a5daa0d5563d6031c02b6c9fef783594911dbf420459181f591af17924",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=IoFqHyBUf6o",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、\nマーゴの秋祭り「雅な月夜 vol.2」の様子です。\n\n秋の夜空の下、\n下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。\n\n■ 演目\n ・白鳥おどり・郡上おどり\n ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」\n\n■ 撮影日\n・日時：2026年11月3日（火・祝）\n ・会場：サンサンシティマーゴ（岐阜県関市）\n\n■ 関連動画\n 和太鼓お祭りチャンネルでは、\n各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n\n#源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅\n\n\nマーゴの秋祭り\n白鳥おどり\n１源助さん　https://youtu.be/Z2f8-e2LFAM\n２シッチョイ　https://youtu.be/uQVb9pXc7To\n３猫の子　https://youtu.be/NzZrYeuUI_g\n４神代　https://youtu.be",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T06:00:17+00:00",
+          "observed_at": "2026-11-08T06:00:17+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "normalized_event": "マーゴの秋",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:56f08a817af7bcc7aa03dee5756a656d31d9bee2af9c4b30214810ce7498b615",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=xhwV6D5HNd8",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、\nマーゴの秋祭り「雅な月夜 vol.2」の様子です。\n\n秋の夜空の下、\n下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。\n\n■ 演目\n ・白鳥おどり・郡上おどり\n ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」\n\n■ 撮影日\n・日時：2026年11月3日（火・祝）\n ・会場：サンサンシティマーゴ（岐阜県関市）\n\n■ 関連動画\n 和太鼓お祭りチャンネルでは、\n各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 \nぜひチャンネル登録・高評価をよろしくお願いいたします！\n\n\n#源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅\n\n\nマーゴの秋祭り\n白鳥おどり\n１源助さん　https://youtu.be/Z2f8-e2LFAM\n２シッチョイ　https://youtu.be/uQVb9pXc7To\n３猫の子　https://youtu.be/NzZrYeuUI_g\n４神代　https://youtu.be",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-07T13:00:32+00:00",
+          "observed_at": "2026-11-07T13:00:32+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "normalized_event": "マーゴの秋",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:9329692f154fba5c6a775dec3ff368ba94b269f9248998113fe8b06aac6549d3",
           "tweet_id": "",
@@ -76260,10 +76485,142 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 25,
+      "evidence_count": 29,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:07a89d929d3a9fde1b591981bb8cbea855efeda057e8e1c181457472671e580b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=4saLm0xi4T4",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T11:00:36+00:00",
+          "observed_at": "2026-11-08T11:00:36+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:3872c25a3ff7c9bdb3e6711c3932db936910eb72a51db84ba34fcdbcb943e0dd",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Rpz-GFypW_Q",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T10:30:22+00:00",
+          "observed_at": "2026-11-08T10:30:22+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:44a9d83507430400704937d98f099a85e1e165de748a070a29ddcd5ddbb1e206",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=iKLPZQFO4sc",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T03:00:19+00:00",
+          "observed_at": "2026-11-08T03:00:19+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:57981f7597c07c49885d0a62702895846ed9dd10a949bbe70c455e1fc87b36de",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=MxkL4Aj5Hy0",
+          "text": "2026年10月31日、大井競馬場で開催された\n「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年10月31日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り1日目\n１品川音頭（キャラ盆）　https://youtu.be/ZcJp0dBUV40\n２東京みなと音頭　https://youtu.be/2QgsflO46tY\n３竹芝絵巻　https://youtu.be/qvzdYBgyufY\n４高輪Gateway夢拍子　https://youtu.be/Ddin_HYTlyc\n５東京どんたく　https://youtu.be/fAwySUMLkvA\n６負けないで　https://youtu.be/zOqFNILvvDA\n７ファンファーレ　https://you",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-07T22:00:09+00:00",
+          "observed_at": "2026-11-07T22:00:09+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:09f99639f9fb1165b225aa75a3be4b30c53f171e6c7242144ee47823c79166eb",
           "tweet_id": "",
@@ -331989,6 +332346,89 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:b3f87b832fc7250a7e7b2d95c4c252a086a06bc6cecf0bbc42fea02075629ac7",
+      "display_name": "第53回日本橋京橋まつり",
+      "normalized_event": "日本橋京橋",
+      "venue": "日本橋中学校",
+      "venue_key": "0e1568f936cb9af087d34bd8a8a2ba001ceee669bb7e277d9dc2a7a855a899ce",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "海上自衛隊",
+        "東京音楽隊",
+        "軍艦マーチ",
+        "日本橋京橋まつり",
+        "大江戸活粋パレード"
+      ],
+      "score": 5,
+      "tier": "hold",
+      "evidence_count": 2,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:91ec60f98acc735000aa9a9f19d22c50701d4313b1e7b1bffa6a2d6011e50917",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=OZ-JxUnMKnY",
+          "text": "東京都中央区の中央通りで開催された\n「第53回日本橋京橋まつり」大江戸活粋パレードより、\n海上自衛隊東京音楽隊によるパレード行進の様子です。\n\n演奏曲は、力強い響きと堂々たる行進が印象的な名曲\n「軍艦マーチ（行進曲『軍艦』）」。 \n活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。\n\n【イベント概要】\n ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」\n ・開催場所：東京都中央区 中央通り（京橋～日本橋）\n ・出演：海上自衛隊東京音楽隊 \n・演奏曲：行進曲「軍艦」（軍艦マーチ）他\n\nご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。\n\n#海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区\n\n\n日本橋京橋まつり\n大江戸活粋パレード\n１チアダンス　https://youtu.be/jocuszUJRII\n２警視庁音楽隊　https://youtu.be/OZ-JxUnMKnY\n３日本橋中学校吹奏楽部　htt",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T13:00:36+00:00",
+          "observed_at": "2026-11-08T13:00:36+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 11,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "第53回日本橋京橋まつり",
+          "normalized_event": "日本橋京橋",
+          "estimated_venue": "日本橋中学校",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:b4ec1aa4132fe348778fcac09ba03adde59b031ab0ce57a610ca5d176c5a5eba",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=jocuszUJRII",
+          "text": "東京都中央区の中央通りで開催された\n「第53回日本橋京橋まつり」大江戸活粋パレードより、\n海上自衛隊東京音楽隊によるパレード行進の様子です。\n\n演奏曲は、力強い響きと堂々たる行進が印象的な名曲\n「軍艦マーチ（行進曲『軍艦』）」。 \n活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。\n\n【イベント概要】\n ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」\n ・開催場所：東京都中央区 中央通り（京橋～日本橋）\n ・出演：海上自衛隊東京音楽隊 \n・演奏曲：行進曲「軍艦」（軍艦マーチ）他\n\nご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。\n\n#海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区\n\n\n日本橋京橋まつり\n大江戸活粋パレード\n１チアダンス　https://youtu.be/jocuszUJRII\n２警視庁音楽隊　https://youtu.be/OZ-JxUnMKnY\n３日本橋中学校吹奏楽部　htt",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T12:30:29+00:00",
+          "observed_at": "2026-11-08T12:30:29+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 11,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "第53回日本橋京橋まつり",
+          "normalized_event": "日本橋京橋",
+          "estimated_venue": "日本橋中学校",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:cd45d1dfe07f06973023b27acd010dc373e4b2dee8eb51fe50fce22ae09903a8",
       "display_name": "第53回日本橋京橋まつり",
       "normalized_event": "日本橋京橋",
@@ -335458,6 +335898,58 @@
           "estimated_event": "",
           "normalized_event": "",
           "estimated_venue": "三条市中央商店街",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:c5930bb766e1dc986df6c887af6f572a86b1b238ff2a734b1471bd554c6e26b3",
+      "display_name": "上野恩賜公園の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "上野恩賜公園",
+      "venue_key": "64774dad5076095656bd59e411a02ec1b8651806f33d67247112b99c420ab47b",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "上野ドローンショー",
+        "UENOPeaceofLight",
+        "上野恩賜公園",
+        "不忍池",
+        "ドローンショー"
+      ],
+      "score": 0,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:899fe9c146425ff1cd4f39815cfb8c98fad7f4c93d78fa81458a6227d529eaf4",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=kBDnWm-S12Y",
+          "text": "東京・上野の不忍池（しのばずのいけ）上空で開催されたドローンショー\n『UENO Peace of Light』の様子をお届けします。\n\n夜空に浮かび上がる光のアートと、\n池の水面に反射する幻想的な光景が美しく響き合いました。\n現地の澄んだ空気と迫力ある光の演出をぜひお楽しみください。\n\n【イベント概要】 \n・イベント名：UENO Peace of Light \n・開催場所：上野恩賜公園 不忍池 上空\n\nご視聴ありがとうございます！ \nチャンネル登録・高評価をよろしくお願いいたします。\n\n#上野ドローンショー #UENOPeaceofLight #上野恩賜公園 #不忍池 #ドローンショー #東京夜景",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-08T07:15:23+00:00",
+          "observed_at": "2026-11-08T07:15:23+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 5,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "",
+          "normalized_event": "",
+          "estimated_venue": "上野恩賜公園",
           "time_hints": [],
           "year_signals": [],
           "year": 2026
@@ -471520,6 +472012,164 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:de98c569cd6aa5860aba379d5e254e019518f7abc6e7389b940217bc01b63070",
+      "display_name": "炭坑節",
+      "normalized_event": "オボンズによる生唄生演奏",
+      "venue": "",
+      "venue_key": "",
+      "month": "11",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 60,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:034be0319b96a8b3a59bd3b71a56d85a9b49ecb8ca676901fe06d07e6ae07ad6",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=gUsonuyxFrI",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T09:00:02+00:00",
+          "score": 15,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:b0957ee984a1f08ffe3b637178920fbf1fa38a36e05d96455ea378d3523c1404",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=K15FOerpW1k",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T08:45:26+00:00",
+          "score": 15,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:335fbaee6927b88e05fd4ec1fe5561a0893b2b4edc2548584d0210227ef99816",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=UnYzzkTOpw0",
+          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
+          "account": "UCNF_5e3ZvziJueTWvTPATGw",
+          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
+          "observed_at": "2025-05-12T10:00:51Z",
+          "score": 12,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "浅草雷連流し踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2024年11月17日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:39ef24326329e2f02ff2bdacb982e5075ba0b4e9b0402458f33eab318c3a9766",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=YMbmapEAig4",
+          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
+          "account": "UCNF_5e3ZvziJueTWvTPATGw",
+          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
+          "observed_at": "2025-05-11T10:00:58Z",
+          "score": 12,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "浅草雷連流し踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2024年11月17日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:2614b7cb50a90885c216fc8231f02e395bcb6c85578265854f208ac80f0563d4",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=V9_zflK5c2w",
+          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
+          "account": "UCNF_5e3ZvziJueTWvTPATGw",
+          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
+          "observed_at": "2025-05-10T10:00:46Z",
+          "score": 12,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "浅草雷連流し踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2024年11月17日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f3ed8a94766a8b280939f5509f6b85c004a0cc2a2669a1a9fa8a914e1de9b678",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=npx7CmK44wY",
+          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
+          "account": "UCNF_5e3ZvziJueTWvTPATGw",
+          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
+          "observed_at": "2025-05-09T10:01:32Z",
+          "score": 12,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "浅草雷連流し踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2024年11月17日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:09e4cb72180a69be72d4fde41e7355d54da5c282ceaeae73b748485cfc058c69",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=I8uF5EV-0Fc",
+          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
+          "account": "UCNF_5e3ZvziJueTWvTPATGw",
+          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
+          "observed_at": "2025-05-08T10:30:16Z",
+          "score": 12,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "浅草雷連流し踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2024年11月17日"
+          ]
+        }
+      ],
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 7,
+      "speaker_count": 2
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:f040361fab4436f751a10ff6dee712b0f05e909c5cfdb725bb37623f58d87bea",
       "display_name": "牛深ハイヤ節",
       "normalized_event": "",
@@ -501411,6 +502061,82 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:07a89d929d3a9fde1b591981bb8cbea855efeda057e8e1c181457472671e580b",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=4saLm0xi4T4",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T11:00:36+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:3872c25a3ff7c9bdb3e6711c3932db936910eb72a51db84ba34fcdbcb943e0dd",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Rpz-GFypW_Q",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T10:30:22+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:44a9d83507430400704937d98f099a85e1e165de748a070a29ddcd5ddbb1e206",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=iKLPZQFO4sc",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T03:00:19+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:57981f7597c07c49885d0a62702895846ed9dd10a949bbe70c455e1fc87b36de",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=MxkL4Aj5Hy0",
+          "text": "2026年10月31日、大井競馬場で開催された 「しながわ盆フェス」での『品川音頭（踊れ！キャラ盆）』の様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年10月31日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り1日目 １品川音頭（キャラ盆） https://youtu.be/ZcJp0dBUV40 ２東京みなと音頭 https://youtu.be/2QgsflO46tY ３竹芝絵巻 https://youtu.be/qvzdYBgyufY ４高輪Gateway夢拍子 https://youtu.be/Ddin_HYTlyc ５東京どんたく https://youtu.be/fAwySUMLkvA ６負けないで https://youtu.be/zOqFNILvvDA ７ファンファーレ https://youtu.be/1Nl",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-07T22:00:09+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年10月31日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:09f99639f9fb1165b225aa75a3be4b30c53f171e6c7242144ee47823c79166eb",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=GNzaOg9t0dQ",
@@ -501909,7 +502635,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 26,
+      "evidence_count": 30,
       "speaker_count": 1
     },
     {
@@ -515472,123 +516198,6 @@
     },
     {
       "kind": "song",
-      "candidate_key": "song:de98c569cd6aa5860aba379d5e254e019518f7abc6e7389b940217bc01b63070",
-      "display_name": "炭坑節",
-      "normalized_event": "浅草雷連",
-      "venue": "",
-      "venue_key": "",
-      "month": "11",
-      "estimated_date": "",
-      "year": 2024,
-      "hashtags": [],
-      "score": 50,
-      "tier": "promote",
-      "evidence": [
-        {
-          "identity": "evidence:sha256:335fbaee6927b88e05fd4ec1fe5561a0893b2b4edc2548584d0210227ef99816",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=UnYzzkTOpw0",
-          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
-          "account": "UCNF_5e3ZvziJueTWvTPATGw",
-          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
-          "observed_at": "2025-05-12T10:00:51Z",
-          "score": 12,
-          "song_name": "炭坑節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "浅草雷連流し踊り",
-          "estimated_venue": "",
-          "time_hints": [
-            "2024年11月17日"
-          ]
-        },
-        {
-          "identity": "evidence:sha256:39ef24326329e2f02ff2bdacb982e5075ba0b4e9b0402458f33eab318c3a9766",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=YMbmapEAig4",
-          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
-          "account": "UCNF_5e3ZvziJueTWvTPATGw",
-          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
-          "observed_at": "2025-05-11T10:00:58Z",
-          "score": 12,
-          "song_name": "炭坑節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "浅草雷連流し踊り",
-          "estimated_venue": "",
-          "time_hints": [
-            "2024年11月17日"
-          ]
-        },
-        {
-          "identity": "evidence:sha256:2614b7cb50a90885c216fc8231f02e395bcb6c85578265854f208ac80f0563d4",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=V9_zflK5c2w",
-          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
-          "account": "UCNF_5e3ZvziJueTWvTPATGw",
-          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
-          "observed_at": "2025-05-10T10:00:46Z",
-          "score": 12,
-          "song_name": "炭坑節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "浅草雷連流し踊り",
-          "estimated_venue": "",
-          "time_hints": [
-            "2024年11月17日"
-          ]
-        },
-        {
-          "identity": "evidence:sha256:f3ed8a94766a8b280939f5509f6b85c004a0cc2a2669a1a9fa8a914e1de9b678",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=npx7CmK44wY",
-          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
-          "account": "UCNF_5e3ZvziJueTWvTPATGw",
-          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
-          "observed_at": "2025-05-09T10:01:32Z",
-          "score": 12,
-          "song_name": "炭坑節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "浅草雷連流し踊り",
-          "estimated_venue": "",
-          "time_hints": [
-            "2024年11月17日"
-          ]
-        },
-        {
-          "identity": "evidence:sha256:09e4cb72180a69be72d4fde41e7355d54da5c282ceaeae73b748485cfc058c69",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=I8uF5EV-0Fc",
-          "text": "2024年11月17日に行われました、 「第27回曳舟お宝市」阿波おどりの様子です。 2024年曳舟お宝市阿波踊り １浅草雷連組踊り https://youtu.be/I8uF5EV-0Fc ２浅草雷連流し踊り https://youtu.be/npx7CmK44wY ３江戸歌舞伎連流し踊り https://youtu.be/V9_zflK5c2w ４華純連流し踊り https://youtu.be/YMbmapEAig4 ５終 堀切あやめ連流し踊り https://youtu.be/UnYzzkTOpw0 その他おすすめ動画 2022年曳舟お宝市盆踊り １桜橋おどり https://youtu.be/coZn0xsjTTM ２炭坑節 https://youtu.be/0ZpXNel14Gs ３東京音頭 https://youtu.be/M7AKw_HHD04 ４大東京音頭 https://youtu.be/dWbGHTGW2l0 ５少年八木節 https://youtu.be/wjkWx1gdDsQ ６令和おどり https://youtu.be/fZt00Ojq89A ７ﾄﾞﾝﾊﾟ",
-          "account": "UCNF_5e3ZvziJueTWvTPATGw",
-          "dancer_key": "@ucnf_5e3zvzijuetwvtpatgw",
-          "observed_at": "2025-05-08T10:30:16Z",
-          "score": 12,
-          "song_name": "炭坑節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "浅草雷連流し踊り",
-          "estimated_venue": "",
-          "time_hints": [
-            "2024年11月17日"
-          ]
-        }
-      ],
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "suppressed_event_hints": [],
-      "evidence_count": 5,
-      "speaker_count": 1
-    },
-    {
-      "kind": "song",
       "candidate_key": "song:8eab302af8bfbfde19c7123e75aa14c3ed65cc4a7e9e9430e19c11d076f1c384",
       "display_name": "炭鉱節",
       "normalized_event": "町あかりさん",
@@ -515836,6 +516445,86 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:a94039faf35bfbed4d7dfbc0306f1350c8ba7b598eb855424a0a11f00a8b569f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T12:00:34+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり",
+          "reasons": [
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:9612e8f2ccb962ea422236bff14fad9ab7db54606f5653b26d9bfc8ff4e82fd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=C4hgcAxSpEA",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T11:30:30+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり",
+          "reasons": [
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:8e4796a5daa0d5563d6031c02b6c9fef783594911dbf420459181f591af17924",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=IoFqHyBUf6o",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T06:00:17+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり",
+          "reasons": [
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:56f08a817af7bcc7aa03dee5756a656d31d9bee2af9c4b30214810ce7498b615",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=xhwV6D5HNd8",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-07T13:00:32+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり",
+          "reasons": [
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:9329692f154fba5c6a775dec3ff368ba94b269f9248998113fe8b06aac6549d3",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=IzmdyaSmXIk",
@@ -515941,7 +516630,7 @@
         "split_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 9,
       "speaker_count": 1
     },
     {
@@ -515958,6 +516647,86 @@
       "score": 50,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "evidence:sha256:a94039faf35bfbed4d7dfbc0306f1350c8ba7b598eb855424a0a11f00a8b569f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T12:00:34+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり・郡上おどり",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:9612e8f2ccb962ea422236bff14fad9ab7db54606f5653b26d9bfc8ff4e82fd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=C4hgcAxSpEA",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T11:30:30+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり・郡上おどり",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:8e4796a5daa0d5563d6031c02b6c9fef783594911dbf420459181f591af17924",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=IoFqHyBUf6o",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T06:00:17+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり・郡上おどり",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:56f08a817af7bcc7aa03dee5756a656d31d9bee2af9c4b30214810ce7498b615",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=xhwV6D5HNd8",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-07T13:00:32+00:00",
+          "score": 15,
+          "song_name": "白鳥おどり・郡上おどり",
+          "reasons": [
+            "song_suffix_in_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
         {
           "identity": "evidence:sha256:9329692f154fba5c6a775dec3ff368ba94b269f9248998113fe8b06aac6549d3",
           "tweet_id": "",
@@ -516064,7 +516833,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 9,
       "speaker_count": 1
     },
     {
@@ -520318,6 +521087,94 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:a94039faf35bfbed4d7dfbc0306f1350c8ba7b598eb855424a0a11f00a8b569f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T12:00:34+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_in_context",
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:9612e8f2ccb962ea422236bff14fad9ab7db54606f5653b26d9bfc8ff4e82fd5",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=C4hgcAxSpEA",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T11:30:30+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_in_context",
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:8e4796a5daa0d5563d6031c02b6c9fef783594911dbf420459181f591af17924",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=IoFqHyBUf6o",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T06:00:17+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_in_context",
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:56f08a817af7bcc7aa03dee5756a656d31d9bee2af9c4b30214810ce7498b615",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=xhwV6D5HNd8",
+          "text": "2026年11月3日に岐阜県関市、サンサンシティマーゴにて開催された、 マーゴの秋祭り「雅な月夜 vol.2」の様子です。 秋の夜空の下、 下駄の音と軽快なお囃子に合わせて踊り手たちが一つになって盛り上がった熱気あふれる演舞をお届けします。 ■ 演目 ・白鳥おどり・郡上おどり ・演奏：踊月夜（よづきよ）・郡上おどり愛好会「雅（みやび）」 ■ 撮影日 ・日時：2026年11月3日（火・祝） ・会場：サンサンシティマーゴ（岐阜県関市） ■ 関連動画 和太鼓お祭りチャンネルでは、 各地のお祭りや盆踊り、郷土芸能の様子をお届けしています。 ぜひチャンネル登録・高評価をよろしくお願いいたします！ #源助さん #白鳥おどり #郡上おどり #踊月夜 #雅な月夜 #マーゴ #盆踊り #日本の祭り #雅 マーゴの秋祭り 白鳥おどり １源助さん https://youtu.be/Z2f8-e2LFAM ２シッチョイ https://youtu.be/uQVb9pXc7To ３猫の子 https://youtu.be/NzZrYeuUI_g ４神代 https://youtu.be/3_yn9sMhLVU ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-07T13:00:32+00:00",
+          "score": 15,
+          "song_name": "郡上おどり",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_in_context",
+            "song_suffix_near_context",
+            "split_context"
+          ],
+          "estimated_event": "マーゴの秋祭り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月3日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:9329692f154fba5c6a775dec3ff368ba94b269f9248998113fe8b06aac6549d3",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=IzmdyaSmXIk",
@@ -520435,7 +521292,7 @@
         "split_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 9,
       "speaker_count": 1
     },
     {
@@ -534652,6 +535509,66 @@
           "estimated_event": "",
           "estimated_venue": "",
           "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 2,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:954c273aa96d575c21d069538e7d82d3322e722308f3df56eb40f51a5881a812",
+      "display_name": "東京音頭",
+      "normalized_event": "オボンズによる生唄生演奏",
+      "venue": "",
+      "venue_key": "",
+      "month": "11",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 40,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:034be0319b96a8b3a59bd3b71a56d85a9b49ecb8ca676901fe06d07e6ae07ad6",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=gUsonuyxFrI",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T09:00:02+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:b0957ee984a1f08ffe3b637178920fbf1fa38a36e05d96455ea378d3523c1404",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=K15FOerpW1k",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T08:45:26+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
         }
       ],
       "reasons": [
@@ -617487,6 +618404,68 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:fe425c54f0e65209e5529e64f0a9f4c6495895d7624014e8f7948f48bc85b4da",
+      "display_name": "上野恩賜公園",
+      "normalized_event": "",
+      "venue": "上野恩賜公園",
+      "venue_key": "64774dad5076095656bd59e411a02ec1b8651806f33d67247112b99c420ab47b",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 63,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:899fe9c146425ff1cd4f39815cfb8c98fad7f4c93d78fa81458a6227d529eaf4",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=kBDnWm-S12Y",
+          "text": "東京・上野の不忍池（しのばずのいけ）上空で開催されたドローンショー 『UENO Peace of Light』の様子をお届けします。 夜空に浮かび上がる光のアートと、 池の水面に反射する幻想的な光景が美しく響き合いました。 現地の澄んだ空気と迫力ある光の演出をぜひお楽しみください。 【イベント概要】 ・イベント名：UENO Peace of Light ・開催場所：上野恩賜公園 不忍池 上空 ご視聴ありがとうございます！ チャンネル登録・高評価をよろしくお願いいたします。 #上野ドローンショー #UENOPeaceofLight #上野恩賜公園 #不忍池 #ドローンショー #東京夜景",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T07:15:23+00:00",
+          "score": 5,
+          "estimated_event": "",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": []
+        },
+        {
+          "identity": "evidence:2087114329015619614",
+          "tweet_id": "2087114329015619614",
+          "url": "https://x.com/tomoG_24/status/2087114329015619614",
+          "text": "#ひいらぎ繭@上野恩賜公園 『上野ゐの市盆踊り』 みんなの願いが通じて雨も耐えてくれた🙏 「花月」 通りすがりの方々も一緒に踊ってくれました🎶 「さよなら、今、逢いたい人」 気付くと沢山の方が足をとめてくれています。 想いよ届け✨️ 盆踊りの中止は残念でしたが今日も聴けて良かったです😌 https://t.co/hVNGJaoMHz",
+          "account": "@tomoG_24",
+          "dancer_key": "@tomog_24",
+          "observed_at": "2026-08-11T09:50:07+00:00",
+          "score": 15,
+          "estimated_event": "上野ゐの市盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "今日"
+          ]
+        },
+        {
+          "identity": "evidence:2087049111703064999",
+          "tweet_id": "2087049111703064999",
+          "url": "https://x.com/akiichiko/status/2087049111703064999",
+          "text": "『上野ゐの市盆踊り』 @上野恩賜公園 袴腰広場 ありがとうございました🙇‍♀️❤️‍🔥 台風が近づく中 雨風ももってくれて 無事に歌わせて頂けたことに感謝🥹✨ 今日の100%で お届けしました💐 聴いてくださった皆様に 心から感謝😭🕊️ 皆様この後も お気をつけながらお楽しみください🎶 会場に出店中の 『麺恋屋』さんがお声がけくださって NEWデジタルsingleのチラシを 貼ってくださっています😍 皆様ぜひ『麺恋屋』で お腹いっぱいに食べてくださいな🫶 めっちゃんこ美味しいよ😋",
+          "account": "@akiichiko",
+          "dancer_key": "@akiichiko",
+          "observed_at": "2026-08-11T05:30:58+00:00",
+          "score": 15,
+          "estimated_event": "上野ゐの市盆踊り",
+          "estimated_venue": "上野恩賜公園",
+          "time_hints": [
+            "今日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 3,
+      "speaker_count": 3
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:ccc4b430a9cac76d4bea166be348907110457efb31f9a58dbc23d9b8a5833382",
       "display_name": "中野駅前",
       "normalized_event": "",
@@ -635126,55 +636105,6 @@
     },
     {
       "kind": "venue",
-      "candidate_key": "venue:fe425c54f0e65209e5529e64f0a9f4c6495895d7624014e8f7948f48bc85b4da",
-      "display_name": "上野恩賜公園",
-      "normalized_event": "",
-      "venue": "上野恩賜公園",
-      "venue_key": "64774dad5076095656bd59e411a02ec1b8651806f33d67247112b99c420ab47b",
-      "month": "",
-      "estimated_date": "",
-      "year": 2026,
-      "hashtags": [],
-      "score": 48,
-      "tier": "review",
-      "evidence": [
-        {
-          "identity": "evidence:2087114329015619614",
-          "tweet_id": "2087114329015619614",
-          "url": "https://x.com/tomoG_24/status/2087114329015619614",
-          "text": "#ひいらぎ繭@上野恩賜公園 『上野ゐの市盆踊り』 みんなの願いが通じて雨も耐えてくれた🙏 「花月」 通りすがりの方々も一緒に踊ってくれました🎶 「さよなら、今、逢いたい人」 気付くと沢山の方が足をとめてくれています。 想いよ届け✨️ 盆踊りの中止は残念でしたが今日も聴けて良かったです😌 https://t.co/hVNGJaoMHz",
-          "account": "@tomoG_24",
-          "dancer_key": "@tomog_24",
-          "observed_at": "2026-08-11T09:50:07+00:00",
-          "score": 15,
-          "estimated_event": "上野ゐの市盆踊り",
-          "estimated_venue": "上野恩賜公園",
-          "time_hints": [
-            "今日"
-          ]
-        },
-        {
-          "identity": "evidence:2087049111703064999",
-          "tweet_id": "2087049111703064999",
-          "url": "https://x.com/akiichiko/status/2087049111703064999",
-          "text": "『上野ゐの市盆踊り』 @上野恩賜公園 袴腰広場 ありがとうございました🙇‍♀️❤️‍🔥 台風が近づく中 雨風ももってくれて 無事に歌わせて頂けたことに感謝🥹✨ 今日の100%で お届けしました💐 聴いてくださった皆様に 心から感謝😭🕊️ 皆様この後も お気をつけながらお楽しみください🎶 会場に出店中の 『麺恋屋』さんがお声がけくださって NEWデジタルsingleのチラシを 貼ってくださっています😍 皆様ぜひ『麺恋屋』で お腹いっぱいに食べてくださいな🫶 めっちゃんこ美味しいよ😋",
-          "account": "@akiichiko",
-          "dancer_key": "@akiichiko",
-          "observed_at": "2026-08-11T05:30:58+00:00",
-          "score": 15,
-          "estimated_event": "上野ゐの市盆踊り",
-          "estimated_venue": "上野恩賜公園",
-          "time_hints": [
-            "今日"
-          ]
-        }
-      ],
-      "suppressed_event_hints": [],
-      "evidence_count": 2,
-      "speaker_count": 2
-    },
-    {
-      "kind": "venue",
       "candidate_key": "venue:d50abd8e04885331bf0f209a7ce5d603e85dfdf63c387e8c13f1e2762a3b9add",
       "display_name": "上野恩賜公園袴腰広場",
       "normalized_event": "",
@@ -640297,6 +641227,51 @@
           "score": 5,
           "estimated_event": "",
           "estimated_venue": "日本人は欧米の公園",
+          "time_hints": []
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 2,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:25d52a232ae4fac4c8e16587ec606ebc3fec5a09fedd2bbcc6a204c1c6c8558a",
+      "display_name": "日本橋中学校",
+      "normalized_event": "",
+      "venue": "日本橋中学校",
+      "venue_key": "0e1568f936cb9af087d34bd8a8a2ba001ceee669bb7e277d9dc2a7a855a899ce",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 38,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:91ec60f98acc735000aa9a9f19d22c50701d4313b1e7b1bffa6a2d6011e50917",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=OZ-JxUnMKnY",
+          "text": "東京都中央区の中央通りで開催された 「第53回日本橋京橋まつり」大江戸活粋パレードより、 海上自衛隊東京音楽隊によるパレード行進の様子です。 演奏曲は、力強い響きと堂々たる行進が印象的な名曲 「軍艦マーチ（行進曲『軍艦』）」。 活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。 【イベント概要】 ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」 ・開催場所：東京都中央区 中央通り（京橋～日本橋） ・出演：海上自衛隊東京音楽隊 ・演奏曲：行進曲「軍艦」（軍艦マーチ）他 ご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。 #海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区 日本橋京橋まつり 大江戸活粋パレード １チアダンス https://youtu.be/jocuszUJRII ２警視庁音楽隊 https://youtu.be/OZ-JxUnMKnY ３日本橋中学校吹奏楽部 https://youtu.",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T13:00:36+00:00",
+          "score": 11,
+          "estimated_event": "第53回日本橋京橋まつり",
+          "estimated_venue": "日本橋中学校",
+          "time_hints": []
+        },
+        {
+          "identity": "evidence:sha256:b4ec1aa4132fe348778fcac09ba03adde59b031ab0ce57a610ca5d176c5a5eba",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=jocuszUJRII",
+          "text": "東京都中央区の中央通りで開催された 「第53回日本橋京橋まつり」大江戸活粋パレードより、 海上自衛隊東京音楽隊によるパレード行進の様子です。 演奏曲は、力強い響きと堂々たる行進が印象的な名曲 「軍艦マーチ（行進曲『軍艦』）」。 活気あふれる日本橋・京橋の街並みをバックに響き渡る、迫力ある演奏と一糸乱れぬ隊列美をぜひお楽しみください。 【イベント概要】 ・イベント名：第53回 日本橋京橋まつり「大江戸活粋パレード」 ・開催場所：東京都中央区 中央通り（京橋～日本橋） ・出演：海上自衛隊東京音楽隊 ・演奏曲：行進曲「軍艦」（軍艦マーチ）他 ご視聴ありがとうございます！ よろしければ高評価・チャンネル登録もよろしくお願いします。 #海上自衛隊 #東京音楽隊 #軍艦マーチ #日本橋京橋まつり #大江戸活粋パレード #自衛隊音楽隊 #吹奏楽 #パレード #中央区 日本橋京橋まつり 大江戸活粋パレード １チアダンス https://youtu.be/jocuszUJRII ２警視庁音楽隊 https://youtu.be/OZ-JxUnMKnY ３日本橋中学校吹奏楽部 https://youtu.",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-08T12:30:29+00:00",
+          "score": 11,
+          "estimated_event": "第53回日本橋京橋まつり",
+          "estimated_venue": "日本橋中学校",
           "time_hints": []
         }
       ],

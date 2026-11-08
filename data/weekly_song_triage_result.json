@@ -1,11 +1,11 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 12,
+  "song_candidate_count": 11,
   "direct_count": 7,
-  "created_count": 4,
-  "updated_count": 3,
-  "rejected_noise_count": 4,
+  "created_count": 2,
+  "updated_count": 5,
+  "rejected_noise_count": 3,
   "review_count": 1,
   "created": [
     {
@@ -19,22 +19,6 @@
     {
       "song_name": "女将の郡上おどり",
       "source_term": "女将の郡上おどり",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "木曽甚句",
-      "source_term": "木曽甚句",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "木曽節",
-      "source_term": "木曽節",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -59,6 +43,22 @@
       "dry_run": true
     },
     {
+      "song_name": "東京音頭",
+      "source_term": "東京音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "炭坑節",
+      "source_term": "炭坑節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "ダンシングヒーロー",
       "source_term": "ダンシングヒーロー",
       "target": "update",
@@ -69,19 +69,15 @@
   ],
   "rejected_noise": [
     {
+      "term": "白鳥おどり・郡上おどり",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "での演奏・踊り",
       "reason": "曲名としての形が弱い"
     },
     {
       "term": "第3回女将no郡上おどり",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "白鳥おどり・郡上おどり",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "の演奏と踊り",
       "reason": "曲名としての形が弱い"
     }
   ],
@@ -90,7 +86,7 @@
       "term": "郡上おどり",
       "evidence_count": 11,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=ZUwCgknlYAo"
+      "evidence_url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo"
     }
   ]
 }
