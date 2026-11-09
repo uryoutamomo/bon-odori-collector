@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 11,
-  "direct_count": 7,
+  "song_candidate_count": 10,
+  "direct_count": 6,
   "created_count": 2,
-  "updated_count": 5,
+  "updated_count": 4,
   "rejected_noise_count": 3,
   "review_count": 1,
   "created": [
@@ -57,14 +57,6 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
-    },
-    {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 1,
-      "event_relations": 0,
-      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -84,9 +76,9 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 11,
+      "evidence_count": 10,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=Aa2ZCpVgeoo"
+      "evidence_url": "https://www.youtube.com/watch?v=Ou6_LD6VlTU"
     }
   ]
 }
