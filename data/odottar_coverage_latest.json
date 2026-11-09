@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "generated_by": "build_odottar_coverage_benchmark.py",
-  "fetched_at": "2026-11-02T01:29:41Z",
+  "fetched_at": "2026-11-09T01:42:40Z",
   "source": {
     "url": "https://odottar.com/events.json",
-    "raw_sha256": "480a1a651cd1947d753d9189ecb52de6cbfdc2763cff5638b1f2c06ffda4a4bd",
-    "row_count": 3500
+    "raw_sha256": "ce774d4236746e3d7f1a547214d98cd31c57a7e6e0394457a08193d32ba8963c",
+    "row_count": 3523
   },
   "safety_boundary": "coverage_benchmark_only: no canonical import, no review-inbox candidate, and no odottar URL projection into event source_urls",
   "canonical_write_count": 0,
   "review_inbox_candidate_count": 0,
   "summary": {
-    "odottar_tokyo23": 925,
+    "odottar_tokyo23": 926,
     "bonsuke_tokyo23": 394,
     "estimated_matched": 206,
-    "odottar_only": 719,
+    "odottar_only": 720,
     "bonsuke_only": 188
   },
   "wards": [
@@ -174,10 +174,10 @@
     {
       "ward": "荒川区",
       "priority": true,
-      "odottar": 23,
+      "odottar": 24,
       "bonsuke": 3,
       "estimated_matched": 2,
-      "odottar_only": 21,
+      "odottar_only": 22,
       "bonsuke_only": 1
     },
     {

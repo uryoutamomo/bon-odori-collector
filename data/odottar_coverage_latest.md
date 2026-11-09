@@ -1,11 +1,11 @@
 # odottar coverage benchmark
 
 - source: おどったー（https://odottar.com/events.json）
-- fetched_at: 2026-11-02T01:29:41Z
-- raw_sha256: `480a1a651cd1947d753d9189ecb52de6cbfdc2763cff5638b1f2c06ffda4a4bd`
+- fetched_at: 2026-11-09T01:42:40Z
+- raw_sha256: `ce774d4236746e3d7f1a547214d98cd31c57a7e6e0394457a08193d32ba8963c`
 - safety: coverage_benchmark_only: no canonical import, no review-inbox candidate, and no odottar URL projection into event source_urls
-- 23区: odottar 925 / 盆助 394
-- 推定一致 206 / odottarのみ 719 / 盆助のみ 188
+- 23区: odottar 926 / 盆助 394
+- 推定一致 206 / odottarのみ 720 / 盆助のみ 188
 
 ## 区別
 
@@ -28,7 +28,7 @@
 | 杉並区 |  | 14 | 4 | 2 | 12 | 2 |
 | 豊島区 | yes | 31 | 6 | 4 | 27 | 2 |
 | 北区 |  | 16 | 4 | 0 | 16 | 4 |
-| 荒川区 | yes | 23 | 3 | 2 | 21 | 1 |
+| 荒川区 | yes | 24 | 3 | 2 | 22 | 1 |
 | 板橋区 | yes | 62 | 20 | 15 | 47 | 5 |
 | 練馬区 | yes | 27 | 12 | 9 | 18 | 3 |
 | 足立区 | yes | 79 | 28 | 26 | 53 | 2 |
