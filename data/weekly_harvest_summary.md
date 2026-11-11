@@ -1,17 +1,16 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-11-10T15:00:23.034789+00:00
+- 生成時刻: 2026-11-11T14:25:43.185967+00:00
 - 対象期間: 直近 3 日
-- 対象voices: 39件
+- 対象voices: 33件
 - 候補総数: 7件
 
 ## 内訳
-- 曲候補: 6件
-- 用語候補: 1件
+- 曲候補: 7件
 
 ## レビュー対象
-- 用語・共起レビュー: 1件
-- 曲候補レビュー: 1件
+- 用語・共起レビュー: 0件
+- 曲候補レビュー: 2件
 - 曲の明白候補 dry-run: 4件
 - 曲ノイズ除外: 1件
 
@@ -25,8 +24,6 @@
 - `python apply_weekly_song_review_decisions.py --dry-run`
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
 
-## 用語・共起レビュー例
-- 輪踊り
-
 ## 曲レビュー例
 - 郡上おどり
+- 東京みなと音頭

@@ -1,25 +1,17 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 6,
+  "song_candidate_count": 7,
   "direct_count": 4,
   "created_count": 0,
   "updated_count": 4,
   "rejected_noise_count": 1,
-  "review_count": 1,
+  "review_count": 2,
   "created": [],
   "updated": [
     {
       "song_name": "白鳥おどり",
       "source_term": "白鳥おどり",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "品川音頭",
-      "source_term": "品川音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -40,6 +32,14 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
@@ -53,7 +53,13 @@
       "term": "郡上おどり",
       "evidence_count": 9,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=i-uq6zLFDmI"
+      "evidence_url": "https://www.youtube.com/watch?v=peA6Is5veWU"
+    },
+    {
+      "term": "東京みなと音頭",
+      "evidence_count": 1,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=wALyekoCwcM"
     }
   ]
 }
