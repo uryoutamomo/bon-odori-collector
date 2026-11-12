@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-11T14:31:44.683277+00:00",
+  "generated_at": "2026-11-12T15:19:54.658896+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -34317,6 +34317,437 @@
           "title": "",
           "tweet_id": "2067765707643949227",
           "url": "https://x.com/natsutr_bon/status/2067765707643949227"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_0792f969e3265d71",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "2026年8月15日-16日 世田谷区瀬田中学校で【 瀬田納涼盆踊り大会 】（用賀と二子玉川の中間）8月16日は千歳船橋駅前で船橋会盆踊り。ふりつけをおぼえてい",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088472870934708728",
+      "source_url": "https://x.com/yoga_junchan/status/2088472870934708728",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "42af8e122319fc1155f97a5cb76feeff2c7d53909223485dfcf5f7bf22bba6fc",
+      "last_seen_at": "github-43245024441-1",
+      "created_at": "2026-11-12T15:19:29.785181+00:00",
+      "updated_at": "2026-11-12T15:19:29.785181+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_cf251625f4594b6c",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月15日",
+          "8月16日"
+        ],
+        "event_group_key": "informal:b7f6882880208082",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@yoga_junchan",
+        "source_count": 1,
+        "source_key": "x:2088472870934708728",
+        "source_officiality": {
+          "account_name": "用賀じゅんちゃんおじさん（すずきじゅんじ）",
+          "classification": "unknown_or_personal_social",
+          "handle": "@yoga_junchan",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n2026年8月15日-16日 世田谷区瀬田中学校で【 瀬田納涼盆踊り大会 】（用賀と二子玉川の中間）8月16日は千歳船橋駅前で船橋会盆踊り。ふりつけをおぼえていなくても、その場で見よう見まねでうごきをあわせていっしょにおどるとそれだけでたのしいですよ〜\n#盆踊り #世田谷区\nhttps://t.co/BmXnjoHUyR",
+        "source_url": "https://x.com/yoga_junchan/status/2088472870934708728",
+        "source_urls": [
+          "https://x.com/yoga_junchan/status/2088472870934708728"
+        ],
+        "voice": {
+          "account": "@yoga_junchan",
+          "critique_post": false,
+          "date": "2026-08-15T03:48:29+00:00",
+          "name": "用賀じゅんちゃんおじさん（すずきじゅんじ）",
+          "profile_description": "東京都世田谷区で、個人で自主的に「交通安全・みまもり・ゴミ拾い」活動している、じゅんちゃんおじさん です。公式サイト https://t.co/CAwyDC0TPY",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "2026年8月15日-16日 世田谷区瀬田中学校で【 瀬田納涼盆踊り大会 】（用賀と二子玉川の中間）8月16日は千歳船橋駅前で船橋会盆踊り。ふりつけをおぼえていなくても、その場で見よう見まねでうごきをあわせていっしょにおどるとそれだけでたのしいですよ〜\n#盆踊り #世田谷区\nhttps://t.co/BmXnjoHUyR",
+          "title": "",
+          "tweet_id": "2088472870934708728",
+          "url": "https://x.com/yoga_junchan/status/2088472870934708728"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_32c5f2f8d4594bb6",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "8/16まで、JR御徒町駅前のおかちまちパンダ広場を舞台に、昭和の夏祭り風情が楽しめる人気イベント「シタマチ.ふるさと盆踊り大会」開催中！多彩なゲストによるステ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088521533069414655",
+      "source_url": "https://x.com/tokyofree23/status/2088521533069414655",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c5dc647616be6f040faa86f2d64f393a2312a6777dff8d9fa05dd9abe1e2e488",
+      "last_seen_at": "github-43245024441-1",
+      "created_at": "2026-11-12T15:19:29.785181+00:00",
+      "updated_at": "2026-11-12T15:19:29.785181+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_75119dfcd53faa7a",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/16"
+        ],
+        "event_group_key": "informal:574f411627f83db4",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@tokyofree23",
+        "source_count": 1,
+        "source_key": "x:2088521533069414655",
+        "source_officiality": {
+          "account_name": "東京無料23",
+          "classification": "unknown_or_personal_social",
+          "handle": "@tokyofree23",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/16まで、JR御徒町駅前のおかちまちパンダ広場を舞台に、昭和の夏祭り風情が楽しめる人気イベント「シタマチ.ふるさと盆踊り大会」開催中！多彩なゲストによるステージも見逃せません。\n#盆踊り #祭 #フェス #上野 #御徒町 #レトロ #屋台 #イベント #入場無料\nhttps://t.co/usU6lVpFQj\n@tokyofree23 https://t.co/KMDghxxCfd",
+        "source_url": "https://x.com/tokyofree23/status/2088521533069414655",
+        "source_urls": [
+          "https://x.com/tokyofree23/status/2088521533069414655"
+        ],
+        "voice": {
+          "account": "@tokyofree23",
+          "critique_post": false,
+          "date": "2026-08-15T07:01:50+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPvrMzRbsAALadW.jpg",
+            "https://t.co/KMDghxxCfd",
+            "pic.x.com/KMDghxxCfd"
+          ],
+          "name": "東京無料23",
+          "profile_description": "情報サイト「東京無料23」(@tokyofree23)です。東京23区内での無料イベント情報、無料スポットの情報とともに、トイレの場所や喫煙所の情報をお届けしています。\n(facebook)https://t.co/6PEgUgjyLj",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-imminent"
+          ],
+          "text": "8/16まで、JR御徒町駅前のおかちまちパンダ広場を舞台に、昭和の夏祭り風情が楽しめる人気イベント「シタマチ.ふるさと盆踊り大会」開催中！多彩なゲストによるステージも見逃せません。\n#盆踊り #祭 #フェス #上野 #御徒町 #レトロ #屋台 #イベント #入場無料\nhttps://t.co/usU6lVpFQj\n@tokyofree23 https://t.co/KMDghxxCfd",
+          "title": "",
+          "tweet_id": "2088521533069414655",
+          "url": "https://x.com/tokyofree23/status/2088521533069414655"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_49baf02599ed75a1",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "2026年8月16日（日）お祭り・イベント・花火大会の有名どころまとめ👺たくさんありますねーーー！\n\n【東京都】\n・富岡八幡宮例大祭（深川八幡祭り最終日） / ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088566944974721244",
+      "source_url": "https://x.com/2019Varekai/status/2088566944974721244",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "2cec910e650870ef6986cbfc7ef8d9cf06b388cafe1f1792bf8a1fc2fddd12cf",
+      "last_seen_at": "github-43245024441-1",
+      "created_at": "2026-11-12T15:19:29.785181+00:00",
+      "updated_at": "2026-11-12T15:19:29.785181+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_781a18bf674133e9",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月16日"
+        ],
+        "event_group_key": "informal:bca206056c510074",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@2019Varekai",
+        "source_count": 1,
+        "source_key": "x:2088566944974721244",
+        "source_officiality": {
+          "account_name": "ににょ。👻考える。遊ぶ。雑。",
+          "classification": "unknown_or_personal_social",
+          "handle": "@2019varekai",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n2026年8月16日（日）お祭り・イベント・花火大会の有名どころまとめ👺たくさんありますねーーー！\n\n【東京都】\n・富岡八幡宮例大祭（深川八幡祭り最終日） / 江東区\n・いたばしプロレスリング 小豆沢商友会納涼盆踊り大会 / 板橋区\n・わくわく夏色こどもフェス2026 / 西東京市\n・あそビバ！まなビバ！FUN FUNスクール / 港区\n・TOKYO レインボー夏祭り / 港区（お台場・屋内）\n\n【神奈川県】\n・箱根強羅温泉 大文字焼・打ち上げ花火 / 箱根町\n・座間市ひまわりまつり（最終日・55万本） / 座間市\n・わくわく！こども夏まつり（最終日） / 横浜市役所\n・馬車道エキナカフリマ / 横浜市中区\n・アニヴェルセル大開放祭 / 横浜市中区\n・宮ヶ瀬ふるさとまつり花火 / 清川村\n\n【千葉県】\n・連夜の花火 IN 天津小湊 / 鴨川市\n・マザー牧場 サマーナイトファーム（打ち上げ花火） / 富津市\n・ちくらBONフェスタ2026 / 南房総市\n・超！わんぱくらんど / 成田市（屋内）\n\n【埼玉県】\n・竹寺夜祭り（秩父音頭＆打ち上げ花火） / 飯能市\n・秩父あんどん祭 / 秩父",
+        "source_url": "https://x.com/2019Varekai/status/2088566944974721244",
+        "source_urls": [
+          "https://x.com/2019Varekai/status/2088566944974721244"
+        ],
+        "voice": {
+          "account": "@2019Varekai",
+          "critique_post": false,
+          "date": "2026-08-15T10:02:18+00:00",
+          "name": "ににょ。👻考える。遊ぶ。雑。",
+          "profile_description": "朝7時と昼12時と夜19時付近に猫を頭に載せた女の子と変なポーズしてます。仏像と彫像も登場します。フォロー気軽に、すぐわかる。頭おかしいくらいがちょうどいい。なんでも楽しくいこう。世の中の変と恐怖と愛を探してます。恩は返す派。enjoy🔥天気と自然好き。投資。AI絵。ご飯。世界は広い！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "2026年8月16日（日）お祭り・イベント・花火大会の有名どころまとめ👺たくさんありますねーーー！\n\n【東京都】\n・富岡八幡宮例大祭（深川八幡祭り最終日） / 江東区\n・いたばしプロレスリング 小豆沢商友会納涼盆踊り大会 / 板橋区\n・わくわく夏色こどもフェス2026 / 西東京市\n・あそビバ！まなビバ！FUN FUNスクール / 港区\n・TOKYO レインボー夏祭り / 港区（お台場・屋内）\n\n【神奈川県】\n・箱根強羅温泉 大文字焼・打ち上げ花火 / 箱根町\n・座間市ひまわりまつり（最終日・55万本） / 座間市\n・わくわく！こども夏まつり（最終日） / 横浜市役所\n・馬車道エキナカフリマ / 横浜市中区\n・アニヴェルセル大開放祭 / 横浜市中区\n・宮ヶ瀬ふるさとまつり花火 / 清川村\n\n【千葉県】\n・連夜の花火 IN 天津小湊 / 鴨川市\n・マザー牧場 サマーナイトファーム（打ち上げ花火） / 富津市\n・ちくらBONフェスタ2026 / 南房総市\n・超！わんぱくらんど / 成田市（屋内）\n\n【埼玉県】\n・竹寺夜祭り（秩父音頭＆打ち上げ花火） / 飯能市\n・秩父あんどん祭 / 秩父市",
+          "title": "",
+          "tweet_id": "2088566944974721244",
+          "url": "https://x.com/2019Varekai/status/2088566944974721244"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_562189be9527cc67",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "8/21(金)・22(土)の2日間は、えど遊からも近い\n浜町駅前の浜町公園で\n「中央区大江戸祭り盆踊り大会」があります！\n\n盆踊りなどの様々なイベントや縁日屋台",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088460671763525885",
+      "source_url": "https://x.com/HAMANOYUedoyu/status/2088460671763525885",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c50020b0c2409e1e76a486224a24a19091fad2617e847775375907fc9695c954",
+      "last_seen_at": "github-43245024441-1",
+      "created_at": "2026-11-12T15:19:29.785181+00:00",
+      "updated_at": "2026-11-12T15:19:29.785181+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_e50e1c6f588655e1",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/21"
+        ],
+        "event_group_key": "informal:2aab855356bc8866",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-21"
+        ],
+        "priority_score": 85,
+        "source_author": "@HAMANOYUedoyu",
+        "source_count": 1,
+        "source_key": "x:2088460671763525885",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPqJvaabQAARuDx.jpg",
+          "https://t.co/B8Jsv7aMZ2",
+          "pic.x.com/B8Jsv7aMZ2"
+        ],
+        "source_officiality": {
+          "account_name": "HAMANOYU えど遊",
+          "classification": "unknown_or_personal_social",
+          "handle": "@hamanoyuedoyu",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/21(金)・22(土)の2日間は、えど遊からも近い\n浜町駅前の浜町公園で\n「中央区大江戸祭り盆踊り大会」があります！\n\n盆踊りなどの様々なイベントや縁日屋台など\n楽しそうなイベントが盛りだくさんです🙌\n\nみんなで盛り上がりましょう！\nhttps://t.co/I7FDtJx1rX https://t.co/B8Jsv7aMZ2",
+        "source_url": "https://x.com/HAMANOYUedoyu/status/2088460671763525885",
+        "source_urls": [
+          "https://x.com/HAMANOYUedoyu/status/2088460671763525885"
+        ],
+        "voice": {
+          "account": "@HAMANOYUedoyu",
+          "critique_post": false,
+          "date": "2026-08-15T03:00:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPqJvaabQAARuDx.jpg",
+            "https://t.co/B8Jsv7aMZ2",
+            "pic.x.com/B8Jsv7aMZ2"
+          ],
+          "name": "HAMANOYU えど遊",
+          "profile_description": "浜町駅、水天宮前駅徒歩7分。安価で気軽、短時間の利用も可能な新しい形の「小型温浴施設」。3つのお風呂♨︎・2つのサウナ・湯Cafeがあります☕️🍻🥛\n1F｜湯Cafe☕︎ 10:00-22:00\n2F・3F｜温浴施設♨︎ 9:00-23:00(最終入場 22:30)\n#えど遊　#湯カフェ",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue"
+          ],
+          "text": "8/21(金)・22(土)の2日間は、えど遊からも近い\n浜町駅前の浜町公園で\n「中央区大江戸祭り盆踊り大会」があります！\n\n盆踊りなどの様々なイベントや縁日屋台など\n楽しそうなイベントが盛りだくさんです🙌\n\nみんなで盛り上がりましょう！\nhttps://t.co/I7FDtJx1rX https://t.co/B8Jsv7aMZ2",
+          "title": "",
+          "tweet_id": "2088460671763525885",
+          "url": "https://x.com/HAMANOYUedoyu/status/2088460671763525885"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_afcc4aea1da45707",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "京成小岩駅前で発見👀\n\n🏮六中納涼盆踊り大会2026\n8/22（土）19時から\n北小岩小学校校庭\n\nメインの可愛らしいお兄さまなイラストは。。盆みやさん？？😂 ",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088513508833104362",
+      "source_url": "https://x.com/masako0327/status/2088513508833104362",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d990c56ce0e5a8fce47fb33cf0b29e5f6378b3c046a999f0c3e33269bf5635bb",
+      "last_seen_at": "github-43245024441-1",
+      "created_at": "2026-11-12T15:19:29.785181+00:00",
+      "updated_at": "2026-11-12T15:19:29.785181+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_da3e00aa2c9d670c",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22",
+          "19時"
+        ],
+        "event_group_key": "informal-venue:1bc1ed73414fca5f",
+        "event_year": 2026,
+        "known_venue_evidence": {
+          "address": "江戸川区北小岩2-15-1",
+          "region_hint": "江戸川区",
+          "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html",
+          "venue": "北小岩小学校"
+        },
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-22"
+        ],
+        "priority_score": 85,
+        "source_author": "@masako0327",
+        "source_count": 1,
+        "source_key": "x:2088513508833104362",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HPvj8neaQAANh_1.jpg",
+          "https://t.co/7C2af8SrtS",
+          "pic.x.com/7C2af8SrtS",
+          "https://pbs.twimg.com/media/HPvj9cYaYAEpJ_H.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "masako",
+          "classification": "unknown_or_personal_social",
+          "handle": "@masako0327",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n京成小岩駅前で発見👀\n\n🏮六中納涼盆踊り大会2026\n8/22（土）19時から\n北小岩小学校校庭\n\nメインの可愛らしいお兄さまなイラストは。。盆みやさん？？😂 https://t.co/7C2af8SrtS",
+        "source_url": "https://x.com/masako0327/status/2088513508833104362",
+        "source_urls": [
+          "https://x.com/masako0327/status/2088513508833104362"
+        ],
+        "voice": {
+          "account": "@masako0327",
+          "critique_post": false,
+          "date": "2026-08-15T06:29:57+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HPvj8neaQAANh_1.jpg",
+            "https://t.co/7C2af8SrtS",
+            "pic.x.com/7C2af8SrtS",
+            "https://pbs.twimg.com/media/HPvj9cYaYAEpJ_H.jpg"
+          ],
+          "name": "masako",
+          "profile_description": "2016年から黒猫くろちゃんをお迎えする(ФωФ)。Salsa・Son・江戸囃子・郡上おどり・白鳥おどり・阿波おどり・西馬音内盆踊り・亀有ゆうろーど🏮SnowMan・IMP.・ニッキ・BUCK-TICK󾠔",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "京成小岩駅前で発見👀\n\n🏮六中納涼盆踊り大会2026\n8/22（土）19時から\n北小岩小学校校庭\n\nメインの可愛らしいお兄さまなイラストは。。盆みやさん？？😂 https://t.co/7C2af8SrtS",
+          "title": "",
+          "tweet_id": "2088513508833104362",
+          "url": "https://x.com/masako0327/status/2088513508833104362"
         }
       }
     },
