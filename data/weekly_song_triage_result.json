@@ -10,14 +10,6 @@
   "created": [],
   "updated": [
     {
-      "song_name": "白鳥おどり",
-      "source_term": "白鳥おどり",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "東京音頭",
       "source_term": "東京音頭",
       "target": "update",
@@ -28,6 +20,14 @@
     {
       "song_name": "炭坑節",
       "source_term": "炭坑節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "白鳥おどり",
+      "source_term": "白鳥おどり",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -53,13 +53,13 @@
       "term": "郡上おどり",
       "evidence_count": 9,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=peA6Is5veWU"
+      "evidence_url": "https://www.youtube.com/watch?v=iiYkW8x48LQ"
     },
     {
       "term": "東京みなと音頭",
-      "evidence_count": 1,
+      "evidence_count": 2,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=wALyekoCwcM"
+      "evidence_url": "https://www.youtube.com/watch?v=dapOTiu1_DU"
     }
   ]
 }
