@@ -51,15 +51,15 @@
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 9,
+      "evidence_count": 8,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://www.youtube.com/watch?v=iiYkW8x48LQ"
+      "evidence_url": "https://www.youtube.com/watch?v=gd5uo2CinfE"
     },
     {
       "term": "東京みなと音頭",
-      "evidence_count": 2,
+      "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=dapOTiu1_DU"
+      "evidence_url": "https://www.youtube.com/watch?v=Lq_36ZbBojs"
     }
   ]
 }

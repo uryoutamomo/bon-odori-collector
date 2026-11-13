@@ -1,12 +1,12 @@
 {
   "generated_by": "build_x_gap_candidates.py",
-  "generated_at": "2026-11-12T15:18:39.376795+00:00",
+  "generated_at": "2026-11-13T14:40:44.335002+00:00",
   "limit": 30,
   "official_new_event_limit": 5,
   "informal_new_event_limit": 10,
   "past_event_report_limit": 10,
   "candidate_count": 30,
-  "archived_count": 351,
+  "archived_count": 348,
   "candidates": [
     {
       "candidate_id": "xgap_6a0a76b4c02f91f9",
@@ -131,12 +131,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大井町駅前中央通り",
-        "region_hint": "品川区",
-        "address": "品川区大井1丁目付近",
-        "source_url": "https://www.enjoytokyo.jp/event/356760/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@2019Varekai",
@@ -1443,12 +1438,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大井町駅前中央通り",
-        "region_hint": "品川区",
-        "address": "品川区大井1丁目付近",
-        "source_url": "https://www.enjoytokyo.jp/event/356760/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@2019Varekai",
@@ -1514,12 +1504,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大井町駅前中央通り",
-        "region_hint": "品川区",
-        "address": "品川区大井1丁目付近",
-        "source_url": "https://www.enjoytokyo.jp/event/356760/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@2019Varekai",
@@ -1667,12 +1652,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大井町駅前中央通り",
-        "region_hint": "品川区",
-        "address": "品川区大井1丁目付近",
-        "source_url": "https://www.enjoytokyo.jp/event/356760/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@2019Varekai",
@@ -2420,12 +2400,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "祖師谷観世音堂",
-        "region_hint": "世田谷区",
-        "address": "世田谷区成城9-1-6",
-        "source_url": "https://setagaya.guide/events/noryo-bonodori-taikai-soshigaya-soshigaya-kanzenondo/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@SOSHIGAYASHOTEN",
@@ -3258,12 +3233,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "羽田神社",
-        "region_hint": "大田区",
-        "address": "大田区本羽田3-9-12",
-        "source_url": "https://otakushoren.com/event/152253"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -3606,12 +3576,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "羽田神社",
-        "region_hint": "大田区",
-        "address": "大田区本羽田3-9-12",
-        "source_url": "https://otakushoren.com/event/152253"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x_proactive",
         "account": "@otafull",
@@ -3673,12 +3638,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "第四日野小学校",
-        "region_hint": "品川区",
-        "address": "品川区西五反田4-29-9",
-        "source_url": "https://shinagawa-kanko.or.jp/featured/kuminmatsuri2026/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x_proactive",
         "account": "@shinagawakanko",
@@ -4175,12 +4135,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "羽田神社",
-        "region_hint": "大田区",
-        "address": "大田区本羽田3-9-12",
-        "source_url": "https://otakushoren.com/event/152253"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -4231,12 +4186,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "鉄砲洲児童公園",
-        "region_hint": "中央区",
-        "address": "中央区湊1-5-1",
-        "source_url": "https://voyvoi.com/event/teppo_zu_noryo_bon_odori/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@iri2choukai",
@@ -4598,12 +4548,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "駒澤大学 駒沢キャンパス",
-        "region_hint": "世田谷区",
-        "address": "世田谷区駒沢1-23-1",
-        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@mana_setagaya",
@@ -4667,12 +4612,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大田文化の森",
-        "region_hint": "大田区",
-        "address": "大田区中央2-10-1",
-        "source_url": "https://otakushoren.com/event/140595"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -5060,12 +5000,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@yamarie0324",
@@ -5272,63 +5207,6 @@
         "https://t.co/77DQz3x0Wi",
         "pic.x.com/77DQz3x0Wi"
       ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "official_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_9610c54a27ddcdcc",
-      "source_key": "x:2078281510256300422",
-      "lane_hint": "lane2",
-      "candidate_kind": "official_new_event",
-      "priority_score": 125,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/TakahiroShojima/status/2078281510256300422",
-      "source_text": "\n7/17（金）　大田文化の森夏祭り盆踊り練習会　実行委員として盆踊り担当　今年はアンパンマン音頭も　本番は7/25（土）18:30-20:00＠大田文化の森多目的室　日本一涼しい盆踊り｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/qvAwznh9ae",
-      "source_author": "@TakahiroShojima",
-      "source_officiality": {
-        "classification": "registered_official_social",
-        "score": 100,
-        "handle": "@takahiroshojima",
-        "account_name": "庄嶋たかひろ 大田区議会議員",
-        "source_type": "official",
-        "trust_level": "organizer_official",
-        "reasons": [
-          "registered_official_source_account"
-        ],
-        "recommended_action": "use_as_confirmed_source_after_post_review"
-      },
-      "date_hints": [
-        "7/17",
-        "7/25"
-      ],
-      "observed_dates": [],
-      "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大田文化の森",
-        "region_hint": "大田区",
-        "address": "大田区中央2-10-1",
-        "source_url": "https://otakushoren.com/event/140595"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@TakahiroShojima",
-        "name": "庄嶋たかひろ 大田区議会議員",
-        "title": "",
-        "text": "7/17（金）　大田文化の森夏祭り盆踊り練習会　実行委員として盆踊り担当　今年はアンパンマン音頭も　本番は7/25（土）18:30-20:00＠大田文化の森多目的室　日本一涼しい盆踊り｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/qvAwznh9ae",
-        "url": "https://x.com/TakahiroShojima/status/2078281510256300422",
-        "date": "2026-07-18T00:51:39+00:00",
-        "tweet_id": "2078281510256300422",
-        "tags": [
-          "🟡関心",
-          "q-program-songs-wide"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/TakahiroShojima/status/2078281510256300422"
-      ],
-      "source_media_urls": [],
       "corroboration_count": 1,
       "source_count": 1,
       "archive_reason": "official_new_event_daily_cap"
@@ -6151,12 +6029,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浦守稲荷神社",
-        "region_hint": "大田区",
-        "address": "大田区大森南3-27-8",
-        "source_url": "https://otakushoren.com/event/152793"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -6730,12 +6603,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "道塚小学校",
-        "region_hint": "大田区",
-        "address": "大田区新蒲田3-3-18",
-        "source_url": "https://otakushoren.com/event/152970"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -6787,12 +6655,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@c_kankokyokai",
@@ -6853,12 +6716,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "第六天公園",
-        "region_hint": "足立区",
-        "address": "足立区東和4-3-18",
-        "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -6918,12 +6776,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浦守稲荷神社",
-        "region_hint": "大田区",
-        "address": "大田区大森南3-27-8",
-        "source_url": "https://otakushoren.com/event/152793"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@TakahiroShojima",
@@ -7034,12 +6887,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "下鎌田小学校",
-        "region_hint": "江戸川区",
-        "address": "江戸川区東瑞江3-11-1",
-        "source_url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/toubutikubonnodori.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@ryoichiezoe",
@@ -7946,62 +7794,6 @@
       "archive_reason": "official_new_event_daily_cap"
     },
     {
-      "candidate_id": "xgap_b612cef2d76c8d31",
-      "source_key": "x:2081378504961343527",
-      "lane_hint": "lane2",
-      "candidate_kind": "official_new_event",
-      "priority_score": 125,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/TakahiroShojima/status/2081378504961343527",
-      "source_text": "\n7/25（土）　大田文化の森夏祭り2026　昼は大田文化の森運営協議会、夜は新井宿自治会連合会が担当　ステージ、ワークショップなど楽しむ　実行委員として盆踊りを運営｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/MLuPYvPuwN",
-      "source_author": "@TakahiroShojima",
-      "source_officiality": {
-        "classification": "registered_official_social",
-        "score": 100,
-        "handle": "@takahiroshojima",
-        "account_name": "庄嶋たかひろ 大田区議会議員",
-        "source_type": "official",
-        "trust_level": "organizer_official",
-        "reasons": [
-          "registered_official_source_account"
-        ],
-        "recommended_action": "use_as_confirmed_source_after_post_review"
-      },
-      "date_hints": [
-        "7/25"
-      ],
-      "observed_dates": [],
-      "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大田文化の森",
-        "region_hint": "大田区",
-        "address": "大田区中央2-10-1",
-        "source_url": "https://otakushoren.com/event/140595"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@TakahiroShojima",
-        "name": "庄嶋たかひろ 大田区議会議員",
-        "title": "",
-        "text": "7/25（土）　大田文化の森夏祭り2026　昼は大田文化の森運営協議会、夜は新井宿自治会連合会が担当　ステージ、ワークショップなど楽しむ　実行委員として盆踊りを運営｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima  https://t.co/MLuPYvPuwN",
-        "url": "https://x.com/TakahiroShojima/status/2081378504961343527",
-        "date": "2026-07-26T13:58:00+00:00",
-        "tweet_id": "2081378504961343527",
-        "tags": [
-          "🟡関心",
-          "q-poster-flyer"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/TakahiroShojima/status/2081378504961343527"
-      ],
-      "source_media_urls": [],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "official_new_event_daily_cap"
-    },
-    {
       "candidate_id": "xgap_0f29251cd57c1888",
       "source_key": "x:2081496803502108861",
       "lane_hint": "lane2",
@@ -8030,12 +7822,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "烏山区民センター前広場",
-        "region_hint": "世田谷区",
-        "address": "世田谷区南烏山6-2-19",
-        "source_url": "https://www.elmall.or.jp/news/2026/260715_02/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@midori_kawamura",
@@ -8508,12 +8295,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@Shisui_Tsukiji",
@@ -8953,12 +8735,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "花畑公園",
-        "region_hint": "足立区",
-        "address": "足立区花畑4-40-1",
-        "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -9261,12 +9038,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "道塚小学校",
-        "region_hint": "大田区",
-        "address": "大田区新蒲田3-3-18",
-        "source_url": "https://otakushoren.com/event/152970"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -9671,12 +9443,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@yamarie0324",
@@ -9736,12 +9503,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@ishijimahideki",
@@ -10133,12 +9895,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "新田稲荷公園",
-        "region_hint": "足立区",
-        "address": "足立区新田1-18-5",
-        "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -10419,12 +10176,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "花畑公園",
-        "region_hint": "足立区",
-        "address": "足立区花畑4-40-1",
-        "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -10925,12 +10677,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "熊野神社",
-        "region_hint": "大田区",
-        "address": "大田区西蒲田6-13",
-        "source_url": "https://otakushoren.com/event/165965"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@teraya_info",
@@ -10992,12 +10739,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "新小川公園",
-        "region_hint": "新宿区",
-        "address": "新宿区新小川町3-31",
-        "source_url": "https://www.city.shinjuku.lg.jp/kusei/kashiwagi01_000001_00037.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@Naxako75",
@@ -11059,12 +10801,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@Rocky3full3",
@@ -11547,12 +11284,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "第三日暮里小学校",
-        "region_hint": "荒川区",
-        "address": "荒川区東日暮里3-10-5",
-        "source_url": "https://www.city.arakawa.tokyo.jp/documents/45496/20260721_00.pdf"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@gohhog1",
@@ -12416,12 +12148,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "西坂公園",
-        "region_hint": "新宿区",
-        "address": "新宿区中落合2-17-1",
-        "source_url": "https://www.city.shinjuku.lg.jp/kusei/kashiwagi01_000001_00039.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@tokimitsu5223",
@@ -12607,12 +12334,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "上平井中学校",
-        "region_hint": "葛飾区",
-        "address": "葛飾区東新小岩4-2",
-        "source_url": "https://shinkoiwa-magazine.com/kamihirai-bonodori/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@toshiaki_____",
@@ -12736,12 +12458,7 @@
         "2026-11-22"
       ],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "花畑公園",
-        "region_hint": "足立区",
-        "address": "足立区花畑4-40-1",
-        "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@nozawatetsuya_",
@@ -13541,12 +13258,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "駒澤大学 駒沢キャンパス",
-        "region_hint": "世田谷区",
-        "address": "世田谷区駒沢1-23-1",
-        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@ShinHatake1008",
@@ -13786,12 +13498,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "池上本門寺",
-        "region_hint": "大田区",
-        "address": "大田区池上1-1-1",
-        "source_url": "https://honmonji.jp/news/schedule.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -14443,12 +14150,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "道玄坂・文化村通り",
-        "region_hint": "渋谷区",
-        "address": "渋谷区道玄坂2丁目辺り一帯",
-        "source_url": "https://www.shibuyadeohara.jp/about-ohara-matsuri/29-shibuya-kagoshima-ohara-matsuri.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@playshibuya",
@@ -14685,12 +14387,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "東八幡神社",
-        "region_hint": "大田区",
-        "address": "大田区矢口3-17-3",
-        "source_url": "https://note.com/common_news/n/n4a3de6b9a249"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -14856,12 +14553,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "明石小学校",
-        "region_hint": "中央区",
-        "address": "中央区明石町1-15",
-        "source_url": "https://odottar.com/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@yamarie0324",
@@ -15516,12 +15208,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "上北沢小学校",
-        "region_hint": "世田谷区",
-        "address": "世田谷区上北沢4-22-29",
-        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@kamikitachuo",
@@ -15963,12 +15650,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "池上本門寺",
-        "region_hint": "大田区",
-        "address": "大田区池上1-1-1",
-        "source_url": "https://honmonji.jp/news/schedule.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@TakahiroShojima",
@@ -16213,12 +15895,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "駒澤大学 駒沢キャンパス",
-        "region_hint": "世田谷区",
-        "address": "世田谷区駒沢1-23-1",
-        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@mana_setagaya",
@@ -16278,12 +15955,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "池上本門寺",
-        "region_hint": "大田区",
-        "address": "大田区池上1-1-1",
-        "source_url": "https://honmonji.jp/news/schedule.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@TakahiroShojima",
@@ -16519,12 +16191,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "北新宿公園",
-        "region_hint": "新宿区",
-        "address": "新宿区北新宿3-20",
-        "source_url": "https://www.city.shinjuku.lg.jp/kusei/kashiwagi01_000001_00039.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@Naxako75",
@@ -16584,12 +16251,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "西坂公園",
-        "region_hint": "新宿区",
-        "address": "新宿区中落合2-17-1",
-        "source_url": "https://www.city.shinjuku.lg.jp/kusei/kashiwagi01_000001_00039.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@Naxako75",
@@ -16771,12 +16433,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "熊野神社",
-        "region_hint": "大田区",
-        "address": "大田区西蒲田6-13",
-        "source_url": "https://otakushoren.com/event/165965"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -17104,62 +16761,6 @@
         "https://pbs.twimg.com/media/HPWvvBuaoAAeFzs.jpg",
         "https://pbs.twimg.com/media/HPWvvB1bgAAVJz3.jpg"
       ],
-      "corroboration_count": 1,
-      "source_count": 1,
-      "archive_reason": "official_new_event_daily_cap"
-    },
-    {
-      "candidate_id": "xgap_a716c050fb6cf94a",
-      "source_key": "x:2086938743840338138",
-      "lane_hint": "lane2",
-      "candidate_kind": "official_new_event",
-      "priority_score": 125,
-      "event_year": 2026,
-      "matched_occurrence": null,
-      "source_url": "https://x.com/uchikoshichokai/status/2086938743840338138",
-      "source_text": "\n8/15(土)の #納涼盆踊り 一部の\n#おジャ魔女カーニバル は\n神田明神アニソン盆踊り でも\n大騒ぎの定番楽曲！\nこんな風に盛り上がると嬉しいです😊\n【神田明神 アニソン盆踊り 2026】「おジャ魔女カーニバル」 / Kanda Myojin Bon Dance 2026 盆踊り 秋葉原 https://t.co/BcqlBKhznE @YouTubeより",
-      "source_author": "@uchikoshichokai",
-      "source_officiality": {
-        "classification": "registered_official_social",
-        "score": 100,
-        "handle": "@uchikoshichokai",
-        "account_name": "打越町会事務局",
-        "source_type": "official",
-        "trust_level": "organizer_official",
-        "reasons": [
-          "registered_official_source_account"
-        ],
-        "recommended_action": "use_as_confirmed_source_after_post_review"
-      },
-      "date_hints": [
-        "8/15"
-      ],
-      "observed_dates": [],
-      "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "神田明神",
-        "region_hint": "千代田区",
-        "address": "千代田区外神田2-16-2",
-        "source_url": "https://www.kandamyoujin.or.jp/event/detail/?id=138"
-      },
-      "voice": {
-        "source": "x",
-        "account": "@uchikoshichokai",
-        "name": "打越町会事務局",
-        "title": "",
-        "text": "8/15(土)の #納涼盆踊り 一部の\n#おジャ魔女カーニバル は\n神田明神アニソン盆踊り でも\n大騒ぎの定番楽曲！\nこんな風に盛り上がると嬉しいです😊\n【神田明神 アニソン盆踊り 2026】「おジャ魔女カーニバル」 / Kanda Myojin Bon Dance 2026 盆踊り 秋葉原 https://t.co/BcqlBKhznE @YouTubeより",
-        "url": "https://x.com/uchikoshichokai/status/2086938743840338138",
-        "date": "2026-08-10T22:12:24+00:00",
-        "tweet_id": "2086938743840338138",
-        "tags": [
-          "🟡関心",
-          "q-poster-flyer"
-        ]
-      },
-      "source_urls": [
-        "https://x.com/uchikoshichokai/status/2086938743840338138"
-      ],
-      "source_media_urls": [],
       "corroboration_count": 1,
       "source_count": 1,
       "archive_reason": "official_new_event_daily_cap"
@@ -18040,12 +17641,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "湯殿公園",
-        "region_hint": "大田区",
-        "address": "大田区南馬込5-18",
-        "source_url": "https://otakushoren.com/event/153377"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -19164,12 +18760,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "熊野神社",
-        "region_hint": "大田区",
-        "address": "大田区西蒲田6-13",
-        "source_url": "https://otakushoren.com/event/165965"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@otafull",
@@ -19773,12 +19364,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浜町公園",
-        "region_hint": "中央区",
-        "address": "中央区日本橋浜町2-59",
-        "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@chuo_machi_info",
@@ -19974,12 +19560,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "一ツ家二丁目こどもの広場",
-        "region_hint": "足立区",
-        "address": "足立区一ツ家2-21",
-        "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -20285,12 +19866,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "一ツ家二丁目こどもの広場",
-        "region_hint": "足立区",
-        "address": "足立区一ツ家2-21",
-        "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -20860,12 +20436,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浜町公園",
-        "region_hint": "中央区",
-        "address": "中央区日本橋浜町2-59",
-        "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@genki_takahashi",
@@ -21049,12 +20620,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "大井町駅前中央通り",
-        "region_hint": "品川区",
-        "address": "品川区大井1丁目付近",
-        "source_url": "https://www.enjoytokyo.jp/event/356760/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@shinagawakanko",
@@ -21109,12 +20675,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "一ツ家二丁目こどもの広場",
-        "region_hint": "足立区",
-        "address": "足立区一ツ家2-21",
-        "source_url": "https://www.city.adachi.tokyo.jp/kuminjimu/chiikibunka/kuminsanka/hotuka201607.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@adachi_city",
@@ -21548,12 +21109,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浜町公園",
-        "region_hint": "中央区",
-        "address": "中央区日本橋浜町2-59",
-        "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@genki_takahashi",
@@ -21687,12 +21243,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浜町公園",
-        "region_hint": "中央区",
-        "address": "中央区日本橋浜町2-59",
-        "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@Chuo_Futoshi",
@@ -22251,12 +21802,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "上北沢小学校",
-        "region_hint": "世田谷区",
-        "address": "世田谷区上北沢4-22-29",
-        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/wakuwakusama-purann.pdf"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@miki_setagaya",
@@ -22515,12 +22061,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "たんぽぽ公園",
-        "region_hint": "中野区",
-        "address": "中野区野方2-61",
-        "source_url": "https://x.com/nakano_bonodori/status/2090134082953138538"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@KoudaYuriko",
@@ -22910,12 +22451,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "鮫洲入江広場公園",
-        "region_hint": "品川区",
-        "address": "品川区東大井1-13-1",
-        "source_url": "https://shinagawa-kanko.or.jp/event/lily-samezu2026/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@mizu516AforReal",
@@ -22966,12 +22502,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "浜町公園",
-        "region_hint": "中央区",
-        "address": "中央区日本橋浜町2-59",
-        "source_url": "https://www.city.chuo.lg.jp/a0013/bunkakankou/kankoujouhou/event/ooedomaturi.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@yamarie0324",
@@ -23022,12 +22553,7 @@
       ],
       "observed_dates": [],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "築地本願寺",
-        "region_hint": "中央区",
-        "address": "中央区築地3-15-1",
-        "source_url": "https://tsukijihongwanji.jp/news/11529/"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@tadashi_isono",
@@ -23212,12 +22738,7 @@
         "2026-07-31"
       ],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "蛭沼公園",
-        "region_hint": "足立区",
-        "address": "足立区綾瀬4-26-5",
-        "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2026.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@uja31",
@@ -23348,12 +22869,7 @@
         "2026-08-08"
       ],
       "event_group_key": "",
-      "known_venue_evidence": {
-        "venue": "片山公園",
-        "region_hint": "江戸川区",
-        "address": "江戸川区南小岩8-8-1",
-        "source_url": "https://www.city.edogawa.tokyo.jp/e035/kurashi/chiikicommunity/johokyoku/koiwa/omatsuri/bonodori26.html"
-      },
+      "known_venue_evidence": null,
       "voice": {
         "source": "x",
         "account": "@uja31",
