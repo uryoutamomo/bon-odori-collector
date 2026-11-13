@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-12T15:25:19.438841+00:00",
+  "generated_at": "2026-11-13T14:42:06.356047+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -34317,6 +34317,419 @@
           "title": "",
           "tweet_id": "2067765707643949227",
           "url": "https://x.com/natsutr_bon/status/2067765707643949227"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_20e9e42d60d3bd6c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "本日🌸\n\n上野ゐの市盆踊り🏮\nイベントの最後に出演させて頂きます！\n\n8/16(日)上野恩賜公園 袴腰広場\n【無料／出演18:30〜】\n\n皆さんと過ごせる時間を",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088877551498531080",
+      "source_url": "https://x.com/Hamukoman/status/2088877551498531080",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "903141250c471a83596efd286e09a44ce796363fa2b32d36efdfa2f4c20d3c95",
+      "last_seen_at": "github-43443575800-1",
+      "created_at": "2026-11-13T14:41:37.944426+00:00",
+      "updated_at": "2026-11-13T14:41:37.944426+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_f12cc98785b9b4e6",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/16"
+        ],
+        "event_group_key": "informal:61bb15b09aadafa5",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@Hamukoman",
+        "source_count": 1,
+        "source_key": "x:2088877551498531080",
+        "source_officiality": {
+          "account_name": "小野亜里沙🐹大阪9/27・東京10/18🎂",
+          "classification": "unknown_or_personal_social",
+          "handle": "@hamukoman",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n本日🌸\n\n上野ゐの市盆踊り🏮\nイベントの最後に出演させて頂きます！\n\n8/16(日)上野恩賜公園 袴腰広場\n【無料／出演18:30〜】\n\n皆さんと過ごせる時間を大切に\n想いを歌に込めてお届けします🌻\n\nビジョンも最終日！！\n沢山のご報告本当にありがとう😢\n是非チェックしてみてね✨",
+        "source_url": "https://x.com/Hamukoman/status/2088877551498531080",
+        "source_urls": [
+          "https://x.com/Hamukoman/status/2088877551498531080"
+        ],
+        "voice": {
+          "account": "@Hamukoman",
+          "critique_post": false,
+          "date": "2026-08-16T06:36:32+00:00",
+          "name": "小野亜里沙🐹大阪9/27・東京10/18🎂",
+          "profile_description": "歌で世界に希望を。心を開く歌を🪽🌈✨\nピアノ弾き語りSSW🎹｜カテキンボイス🍵\n📻ラジオ関西×HBCラジオ「#ありラジ」\n🎂BDワンマンツアー2026 大阪9/27・東京10/18\n🌏全国各地&タイでライブ活動中\n📩info@onoarisa.jp",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "本日🌸\n\n上野ゐの市盆踊り🏮\nイベントの最後に出演させて頂きます！\n\n8/16(日)上野恩賜公園 袴腰広場\n【無料／出演18:30〜】\n\n皆さんと過ごせる時間を大切に\n想いを歌に込めてお届けします🌻\n\nビジョンも最終日！！\n沢山のご報告本当にありがとう😢\n是非チェックしてみてね✨",
+          "title": "",
+          "tweet_id": "2088877551498531080",
+          "url": "https://x.com/Hamukoman/status/2088877551498531080"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_7b58ff94c7c8a4b2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "きょう8月16日（日曜）用賀の西側、環八ちかくの瀬田中学校で瀬田納涼盆踊り大会開催。15:00現在小雨ですが開始時間に雨あがる予報なのでたぶん開催されると思いま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088875822728069534",
+      "source_url": "https://x.com/yoga_junchan/status/2088875822728069534",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "987fe503a631b907eb4d6d5c6cafd41bfa8e09a539e55528eb9d44374f19f5f1",
+      "last_seen_at": "github-43443575800-1",
+      "created_at": "2026-11-13T14:41:37.944426+00:00",
+      "updated_at": "2026-11-13T14:41:37.944426+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_57d8e9e7d22092f1",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月16日"
+        ],
+        "event_group_key": "informal:b165e5ccfdf34bcf",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@yoga_junchan",
+        "source_count": 1,
+        "source_key": "x:2088875822728069534",
+        "source_officiality": {
+          "account_name": "用賀じゅんちゃんおじさん（すずきじゅんじ）",
+          "classification": "unknown_or_personal_social",
+          "handle": "@yoga_junchan",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\nきょう8月16日（日曜）用賀の西側、環八ちかくの瀬田中学校で瀬田納涼盆踊り大会開催。15:00現在小雨ですが開始時間に雨あがる予報なのでたぶん開催されると思います（未確定ですが模擬店や盆踊り櫓などそのまま設置されてます） 17:00-20:00 レジャーシート敷物持参するとよいかも #用賀 #世田谷区",
+        "source_url": "https://x.com/yoga_junchan/status/2088875822728069534",
+        "source_urls": [
+          "https://x.com/yoga_junchan/status/2088875822728069534"
+        ],
+        "voice": {
+          "account": "@yoga_junchan",
+          "critique_post": false,
+          "date": "2026-08-16T06:29:40+00:00",
+          "name": "用賀じゅんちゃんおじさん（すずきじゅんじ）",
+          "profile_description": "東京都世田谷区で、個人で自主的に「交通安全・みまもり・ゴミ拾い」活動している、じゅんちゃんおじさん です。公式サイト https://t.co/CAwyDC0TPY",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "きょう8月16日（日曜）用賀の西側、環八ちかくの瀬田中学校で瀬田納涼盆踊り大会開催。15:00現在小雨ですが開始時間に雨あがる予報なのでたぶん開催されると思います（未確定ですが模擬店や盆踊り櫓などそのまま設置されてます） 17:00-20:00 レジャーシート敷物持参するとよいかも #用賀 #世田谷区",
+          "title": "",
+          "tweet_id": "2088875822728069534",
+          "url": "https://x.com/yoga_junchan/status/2088875822728069534"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_ae168bfc37f8cb77",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "#ゐの市盆踊り(2026/8/16)\n#上野恩賜公園袴腰広場 \n#彩之會 \n上野へ。正午のスタートからお邪魔しました。\nゐの市盆踊りは今日が楽日。時間倍増で3時",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088882617727021496",
+      "source_url": "https://x.com/blue_sky_blue_j/status/2088882617727021496",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "9758d86f8c43701ba4178344f384ebbc82b19283e73ab101906783893f69008d",
+      "last_seen_at": "github-43443575800-1",
+      "created_at": "2026-11-13T14:41:37.944426+00:00",
+      "updated_at": "2026-11-13T14:41:37.944426+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_974ce12ec1e17cd2",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "2026/8/16",
+          "3時"
+        ],
+        "event_group_key": "informal:1a0ccf7b4678729b",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@blue_sky_blue_j",
+        "source_count": 1,
+        "source_key": "x:2088882617727021496",
+        "source_officiality": {
+          "account_name": "star_joo (秋山 星司/ Akiyama Joji)",
+          "classification": "unknown_or_personal_social",
+          "handle": "@blue_sky_blue_j",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n#ゐの市盆踊り(2026/8/16)\n#上野恩賜公園袴腰広場 \n#彩之會 \n上野へ。正午のスタートからお邪魔しました。\nゐの市盆踊りは今日が楽日。時間倍増で3時間。途中、雨が何度か襲来も最後までご開催いただいたのは嬉しい限り。\nにっぽんチャチャチャ当て振りのアルプスの少女ハイジがリズミカルでイチ推し✨ https://t.co/a7JdPc2RJ8",
+        "source_url": "https://x.com/blue_sky_blue_j/status/2088882617727021496",
+        "source_urls": [
+          "https://x.com/blue_sky_blue_j/status/2088882617727021496"
+        ],
+        "voice": {
+          "account": "@blue_sky_blue_j",
+          "critique_post": false,
+          "date": "2026-08-16T06:56:40+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2088882224934653952/img/sQU8PSPWWfVnEJ3T.jpg",
+            "https://t.co/a7JdPc2RJ8",
+            "pic.x.com/a7JdPc2RJ8",
+            "https://pbs.twimg.com/media/HP0zh1absAAnHak.jpg",
+            "https://pbs.twimg.com/media/HP0zkIvaEAAsFTQ.jpg",
+            "https://pbs.twimg.com/media/HP0znfIaEAAhurQ.jpg"
+          ],
+          "name": "star_joo (秋山 星司/ Akiyama Joji)",
+          "profile_description": "盆踊り、スキー。中野区在住、港区在勤。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "#ゐの市盆踊り(2026/8/16)\n#上野恩賜公園袴腰広場 \n#彩之會 \n上野へ。正午のスタートからお邪魔しました。\nゐの市盆踊りは今日が楽日。時間倍増で3時間。途中、雨が何度か襲来も最後までご開催いただいたのは嬉しい限り。\nにっぽんチャチャチャ当て振りのアルプスの少女ハイジがリズミカルでイチ推し✨ https://t.co/a7JdPc2RJ8",
+          "title": "",
+          "tweet_id": "2088882617727021496",
+          "url": "https://x.com/blue_sky_blue_j/status/2088882617727021496"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_b1824b79ad463f20",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "2026年8月16日（日）主要お祭り・花火・イベント一覧\nお盆休み最終日！？夏休み楽しみましょー！\n\n【東京都】\n・富岡八幡宮例大祭（最終日） \n・星空と光の夏",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088570142087094555",
+      "source_url": "https://x.com/2019Varekai/status/2088570142087094555",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "59ec64734d5218eb73361d28b59008fd0efb337264fb8c2dd7a8554aed53126a",
+      "last_seen_at": "github-43443575800-1",
+      "created_at": "2026-11-13T14:41:37.944426+00:00",
+      "updated_at": "2026-11-13T14:41:37.944426+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_1e2f86c7eddb4072",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月16日"
+        ],
+        "event_group_key": "informal:9ebe3ae002b489d9",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@2019Varekai",
+        "source_count": 1,
+        "source_key": "x:2088570142087094555",
+        "source_officiality": {
+          "account_name": "ににょ。👻考える。遊ぶ。雑。",
+          "classification": "unknown_or_personal_social",
+          "handle": "@2019varekai",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n2026年8月16日（日）主要お祭り・花火・イベント一覧\nお盆休み最終日！？夏休み楽しみましょー！\n\n【東京都】\n・富岡八幡宮例大祭（最終日） \n・星空と光の夏祭り（最終日・ドローンショー等） / 立川市（昭和記念公園）\n・とよす夏祭り 2026（最終日） / ららぽーと豊洲\n・お台場竹ランタン祭り / シンボルプロムナード公園\n・小豆沢商友会 納涼盆踊り大会 / 板橋区\n\n【神奈川県】\n・2026 箱根強羅温泉 大文字焼・打ち上げ花火 / 箱根町\n・座間市ひまわりまつり（最終日・55万本） / 座間市\n・横浜市役所 わくわく！こども夏まつり（最終日） / 横浜市中区\n・清川村制70周年記念 第40回 宮ヶ瀬ふるさとまつり花火 / 愛甲郡清川村\n\n【千葉県】\n・連夜の花火 IN 天津小湊 / 鴨川市\n・マザー牧場 サマーナイトファーム（打ち上げ花火） / 富津市\n・超！わんぱくらんど / 成田市（屋内）\n\n【埼玉県】\n・竹寺夜祭り（秩父音頭＆打ち上げ花火） / 飯能市\n・秩父あんどん祭（花火大会） / 秩父市\n・第5回 おがの花火大会 / 小鹿野町\n・ムーミン谷の湖上花火大会 / 飯",
+        "source_url": "https://x.com/2019Varekai/status/2088570142087094555",
+        "source_urls": [
+          "https://x.com/2019Varekai/status/2088570142087094555"
+        ],
+        "voice": {
+          "account": "@2019Varekai",
+          "critique_post": false,
+          "date": "2026-08-15T10:15:00+00:00",
+          "name": "ににょ。👻考える。遊ぶ。雑。",
+          "profile_description": "朝7時と昼12時と夜19時付近に猫を頭に載せた女の子と変なポーズしてます。仏像と彫像も登場します。フォロー気軽に、すぐわかる。頭おかしいくらいがちょうどいい。なんでも楽しくいこう。世の中の変と恐怖と愛を探してます。恩は返す派。enjoy🔥天気と自然好き。投資。AI絵。ご飯。世界は広い！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "2026年8月16日（日）主要お祭り・花火・イベント一覧\nお盆休み最終日！？夏休み楽しみましょー！\n\n【東京都】\n・富岡八幡宮例大祭（最終日） \n・星空と光の夏祭り（最終日・ドローンショー等） / 立川市（昭和記念公園）\n・とよす夏祭り 2026（最終日） / ららぽーと豊洲\n・お台場竹ランタン祭り / シンボルプロムナード公園\n・小豆沢商友会 納涼盆踊り大会 / 板橋区\n\n【神奈川県】\n・2026 箱根強羅温泉 大文字焼・打ち上げ花火 / 箱根町\n・座間市ひまわりまつり（最終日・55万本） / 座間市\n・横浜市役所 わくわく！こども夏まつり（最終日） / 横浜市中区\n・清川村制70周年記念 第40回 宮ヶ瀬ふるさとまつり花火 / 愛甲郡清川村\n\n【千葉県】\n・連夜の花火 IN 天津小湊 / 鴨川市\n・マザー牧場 サマーナイトファーム（打ち上げ花火） / 富津市\n・超！わんぱくらんど / 成田市（屋内）\n\n【埼玉県】\n・竹寺夜祭り（秩父音頭＆打ち上げ花火） / 飯能市\n・秩父あんどん祭（花火大会） / 秩父市\n・第5回 おがの花火大会 / 小鹿野町\n・ムーミン谷の湖上花火大会 / 飯能",
+          "title": "",
+          "tweet_id": "2088570142087094555",
+          "url": "https://x.com/2019Varekai/status/2088570142087094555"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_f4d198dc3006aa19",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "８月１６日\n上野公園亥の市盆踊り🏮最終日\n\n⭐１２時から１５時迄雨が降る中\n盆踊りが続けられた👏\n　\n⭐同じ彩之會リードにより\n１６時から御徒町駅南口\nパンダ広",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2088873553269608783",
+      "source_url": "https://x.com/gPVEQeAD9U10257/status/2088873553269608783",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "60221c834ebd58bdf6092079c479871e0c7bbc9e7a97441f703a63f1beab0644",
+      "last_seen_at": "github-43443575800-1",
+      "created_at": "2026-11-13T14:41:37.944426+00:00",
+      "updated_at": "2026-11-13T14:41:37.944426+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_fa452d45bf2c09ca",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "８月１６日",
+          "１２時",
+          "１５時",
+          "１６時"
+        ],
+        "event_group_key": "informal:81cb2e92760c51de",
+        "event_year": 2026,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-16"
+        ],
+        "priority_score": 85,
+        "source_author": "@gPVEQeAD9U10257",
+        "source_count": 1,
+        "source_key": "x:2088873553269608783",
+        "source_officiality": {
+          "account_name": "卯ケン",
+          "classification": "unknown_or_personal_social",
+          "handle": "@gpveqead9u10257",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n８月１６日\n上野公園亥の市盆踊り🏮最終日\n\n⭐１２時から１５時迄雨が降る中\n盆踊りが続けられた👏\n　\n⭐同じ彩之會リードにより\n１６時から御徒町駅南口\nパンダ広場で行なわれる盆踊り\nとは曲を変えているとの事😊\n\n⭐上野音頭　たいとう音頭　花火音頭 等\n#盆踊り\n#東京都台東区上野公園\n#亥の市 https://t.co/tVSAyl4jB6",
+        "source_url": "https://x.com/gPVEQeAD9U10257/status/2088873553269608783",
+        "source_urls": [
+          "https://x.com/gPVEQeAD9U10257/status/2088873553269608783"
+        ],
+        "voice": {
+          "account": "@gPVEQeAD9U10257",
+          "critique_post": true,
+          "date": "2026-08-16T06:20:39+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/amplify_video_thumb/2088873417512726529/img/FaZd7w9us7iUPNJj.jpg",
+            "https://t.co/tVSAyl4jB6",
+            "pic.x.com/tVSAyl4jB6",
+            "https://pbs.twimg.com/amplify_video_thumb/2088873496596422656/img/U6n-B1hwhHnOtroJ.jpg"
+          ],
+          "name": "卯ケン",
+          "profile_description": "盆踊りを始めたのは２０２３年８月からできっかけは①退職②新舞踊と盆踊りを３０年位踊っていた亡き母の影響がかなり大きいです😊\n　２０２５年はシーズン（７月〜９月)で１か月の平均が２０日間の参加で踊りにハマっています🕺",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "８月１６日\n上野公園亥の市盆踊り🏮最終日\n\n⭐１２時から１５時迄雨が降る中\n盆踊りが続けられた👏\n　\n⭐同じ彩之會リードにより\n１６時から御徒町駅南口\nパンダ広場で行なわれる盆踊り\nとは曲を変えているとの事😊\n\n⭐上野音頭　たいとう音頭　花火音頭 等\n#盆踊り\n#東京都台東区上野公園\n#亥の市 https://t.co/tVSAyl4jB6",
+          "title": "",
+          "tweet_id": "2088873553269608783",
+          "url": "https://x.com/gPVEQeAD9U10257/status/2088873553269608783"
         }
       }
     },
