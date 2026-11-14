@@ -1,13 +1,22 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 7,
-  "direct_count": 4,
-  "created_count": 0,
-  "updated_count": 4,
-  "rejected_noise_count": 1,
+  "song_candidate_count": 10,
+  "direct_count": 6,
+  "created_count": 1,
+  "updated_count": 5,
+  "rejected_noise_count": 2,
   "review_count": 2,
-  "created": [],
+  "created": [
+    {
+      "song_name": "津軽小原節",
+      "source_term": "津軽小原節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    }
+  ],
   "updated": [
     {
       "song_name": "東京音頭",
@@ -40,18 +49,30 @@
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
+    },
+    {
+      "song_name": "鯵ヶ沢甚句",
+      "source_term": "鯵ヶ沢甚句",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
     }
   ],
   "rejected_noise": [
     {
       "term": "白鳥おどり・郡上おどり",
       "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "津軽じょんがら節",
+      "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
     {
       "term": "郡上おどり",
-      "evidence_count": 8,
+      "evidence_count": 5,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://www.youtube.com/watch?v=gd5uo2CinfE"
     },
@@ -59,7 +80,7 @@
       "term": "東京みなと音頭",
       "evidence_count": 3,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=Lq_36ZbBojs"
+      "evidence_url": "https://www.youtube.com/watch?v=S62H8q3gj8U"
     }
   ]
 }

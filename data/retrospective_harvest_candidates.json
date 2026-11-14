@@ -1,20 +1,20 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-11-13T14:40:48.860165+00:00",
+  "generated_at": "2026-11-14T13:39:40.580710+00:00",
   "source": "data/voices.json",
-  "voice_count": 45889,
-  "classified_event_evidence_count": 11339,
-  "candidate_count": 9526,
+  "voice_count": 45900,
+  "classified_event_evidence_count": 11344,
+  "candidate_count": 9528,
   "counts": {
     "by_kind": {
       "event": 5240,
-      "song": 2837,
+      "song": 2839,
       "venue": 1449
     },
     "by_tier": {
       "hold": 2365,
       "promote": 913,
-      "review": 6248
+      "review": 6250
     },
     "suppressed_event_hint_count": 1093,
     "venue_month_grouped_count": 1522
@@ -50769,10 +50769,78 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 13,
+      "evidence_count": 15,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:b1eb19e33b47efd0fc85050d860d90a7286a09bd0f67c537ef07593ed7511774",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=5_Moe82sQF4",
+          "text": "押上もちつき交流会にて行われた、\nオボンズによる生唄・生演奏盆踊りの様子です！ \n会場の活気ある熱気と、\n心地よい生演奏のリズムをぜひお楽しみください。\n\n【開催情報】 \n・イベント：押上もちつき交流会\n ・演奏 / 出演：オボンズ（生唄・生演奏） \n・撮影日：2026年11月7日\n・場所：東京都墨田区 押上\n\n\n\n和太鼓お祭りチャンネルでは、\n全国各地の盆踊りやお祭り、\n伝統芸能の熱気をお届けしています。 \nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n#盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓\n\n\n押上もちつき交流会盆踊り\n１炭坑節　https://youtu.be/K15FOerpW1k\n２東京音頭　https://youtu.be/gUsonuyxFrI\n３ドンパン節　https://youtu.be/tsuNRN7rSBU\n４津軽甚句　https://youtu.be/8Edz6zdOZSI\n５真室川音頭　https://youtu.be/vDGYkyJLuro\n６桐生八木節　https://youtu.be/ygD_PRSe8bI\n７江州音頭（宇",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-14T11:30:03+00:00",
+          "observed_at": "2026-11-14T11:30:03+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "normalized_event": "オボンズによる生唄生演奏",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:f70d109a600fb82a79d2e279638f9d89e7f7005a9727f7cdb671650369efe275",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u3x2uaYmX44",
+          "text": "押上もちつき交流会にて行われた、\nオボンズによる生唄・生演奏盆踊りの様子です！ \n会場の活気ある熱気と、\n心地よい生演奏のリズムをぜひお楽しみください。\n\n【開催情報】 \n・イベント：押上もちつき交流会\n ・演奏 / 出演：オボンズ（生唄・生演奏） \n・撮影日：2026年11月7日\n・場所：東京都墨田区 押上\n\n\n\n和太鼓お祭りチャンネルでは、\n全国各地の盆踊りやお祭り、\n伝統芸能の熱気をお届けしています。 \nぜひ高評価・チャンネル登録をよろしくお願いいたします！\n\n#盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓\n\n\n押上もちつき交流会盆踊り\n１炭坑節　https://youtu.be/K15FOerpW1k\n２東京音頭　https://youtu.be/gUsonuyxFrI\n３ドンパン節　https://youtu.be/tsuNRN7rSBU\n４津軽甚句　https://youtu.be/8Edz6zdOZSI\n５真室川音頭　https://youtu.be/vDGYkyJLuro\n６桐生八木節　https://youtu.be/ygD_PRSe8bI\n７江州音頭（宇",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-14T11:00:05+00:00",
+          "observed_at": "2026-11-14T11:00:05+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "normalized_event": "オボンズによる生唄生演奏",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:d0aa2ddee12b93e1eab358ec24781a3c443921c658172b05f030284105eec6e7",
           "tweet_id": "",
@@ -77321,10 +77389,43 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:0b7d9714e02f0cc636402a548c9dd76bb362419076aeeb73cd946a2dc0cc41ba",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=S62H8q3gj8U",
+          "text": "2026年11月1日、大井競馬場で開催された\n「しながわ盆フェス」盆踊りの様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年11月1日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り２日目\n１東京みなと音頭　https://youtu.be/wALyekoCwcM\n２竹芝絵巻　https://youtu.be/dapOTiu1_DU\n３高輪Gateway夢拍子　https://youtu.be/Lq_36ZbBojs\n４東京タワー音頭　https://youtu.be/S62H8q3gj8U\n５負けないで　https://youtu.be/WKEK_hu0Pm0\n６ファンファーレ　https://youtu.be/oznOfvoqQ94\n７盛れ！ミ・アモーレ　https://youtu.be/2ugmqXjS6v",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-14T12:00:06+00:00",
+          "observed_at": "2026-11-14T12:00:06+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:7ba7553dcb68c648b381921240918ee644429d08041ceac2aa813606d638bc7f",
           "tweet_id": "",
@@ -87431,10 +87532,80 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 5,
+      "evidence_count": 7,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:db2aa4f3b556237a6c96d4797db240af0c205a62167b35beac8c2627b37d222f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=lbEcKIOqytQ",
+          "text": "2026年10月10日、\n東京都新宿区の荒木公園で開催された\n「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！\n\n秋風が心地よい荒木公園に響き渡る和太鼓の音色と、\n地域の皆様の活気あふれる踊りをぜひお楽しみください。\n\n【イベント情報】\n ・イベント名：踊ろう！in荒木町の秋 盆踊り \n・開催日：2026年10月10日 \n・開催場所：荒木公園（東京都新宿区荒木町）\n・主催：荒木町青年会\n\n\n動画が気に入っていただけたら、\nぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ \n感想や「この曲が好き！」などのコメントもお待ちしています。\n\n#盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能\n\n\n荒木町盆踊り\n１東京音頭　https://youtu.be/6jN1TiQYM-M\n２炭坑節　https://youtu.be/RN3tXQVOzBk\n３大東京音頭　https://youtu.be/bDOPvPVAKEA\n４八木節　https://youtu.be/hoSPCqWx7qc\n５オバＱ音頭　https://youtu.be/2LU",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-14T10:30:31+00:00",
+          "observed_at": "2026-11-14T10:30:31+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "normalized_event": "荒木町",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:42b0a7e38dd65bd3919ef1976b5c1bec58cb27bef9d958c5eca5937d5bc5c636",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=kzIaVugO4GA",
+          "text": "2026年10月10日、\n東京都新宿区の荒木公園で開催された\n「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！\n\n秋風が心地よい荒木公園に響き渡る和太鼓の音色と、\n地域の皆様の活気あふれる踊りをぜひお楽しみください。\n\n【イベント情報】\n ・イベント名：踊ろう！in荒木町の秋 盆踊り \n・開催日：2026年10月10日 \n・開催場所：荒木公園（東京都新宿区荒木町）\n・主催：荒木町青年会\n\n\n動画が気に入っていただけたら、\nぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ \n感想や「この曲が好き！」などのコメントもお待ちしています。\n\n#盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能\n\n\n荒木町盆踊り\n１東京音頭　https://youtu.be/6jN1TiQYM-M\n２炭坑節　https://youtu.be/RN3tXQVOzBk\n３大東京音頭　https://youtu.be/bDOPvPVAKEA\n４八木節　https://youtu.be/hoSPCqWx7qc\n５オバＱ音頭　https://youtu.be/2LU",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-14T10:00:31+00:00",
+          "observed_at": "2026-11-14T10:00:31+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "normalized_event": "荒木町",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:f429017ef8a3464336e9ec04bccae70aafa24443e42e326392ec9e1b6ee1db9f",
           "tweet_id": "",
@@ -402628,6 +402799,46 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:db2aa4f3b556237a6c96d4797db240af0c205a62167b35beac8c2627b37d222f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=lbEcKIOqytQ",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T10:30:31+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:42b0a7e38dd65bd3919ef1976b5c1bec58cb27bef9d958c5eca5937d5bc5c636",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=kzIaVugO4GA",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T10:00:31+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:f429017ef8a3464336e9ec04bccae70aafa24443e42e326392ec9e1b6ee1db9f",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2LU7L2renQE",
@@ -402733,7 +402944,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 7,
       "speaker_count": 1
     },
     {
@@ -450340,6 +450551,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:db2aa4f3b556237a6c96d4797db240af0c205a62167b35beac8c2627b37d222f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=lbEcKIOqytQ",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T10:30:31+00:00",
+          "score": 17,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:42b0a7e38dd65bd3919ef1976b5c1bec58cb27bef9d958c5eca5937d5bc5c636",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=kzIaVugO4GA",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T10:00:31+00:00",
+          "score": 17,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:f429017ef8a3464336e9ec04bccae70aafa24443e42e326392ec9e1b6ee1db9f",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2LU7L2renQE",
@@ -450439,7 +450688,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 7,
       "speaker_count": 1
     },
     {
@@ -473381,6 +473630,79 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:42a05dbd7de769dbc6e0a2303480dacfbf560ae459673bf3c4ce4805d0ae9a03",
+      "display_name": "津軽じょんがら節",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 60,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ciGzzqGAPP8",
+          "text": "＃津軽三味線 #青森 #青森県民謡 #民舞 #津軽あいや節 #津軽よされ節 #津軽じょんがら節 #青森民謡協会 #津軽小原節 00:00 津軽三味線 08:59 りんご節 11:52 南部馬方三下り 17:02 津軽小原節 21:48 「津軽じょんがら」手踊り 24:26 鯵ヶ沢甚句 27:22 三下り 35:21 津軽じょんがら節 新節 38:28 青森子守歌 39:09 津軽あいや節 44:43 津軽よされ節 【関連動画】 【青森人の祭典 in 上野公園 2024 】津軽三味線 / 青森県民謡 / 民舞 https://youtu.be/ibKiO-X2nV8 【青森人の祭典 in 上野公園 2025 】「青森民謡協会」津軽三味線 / 青森県民謡 / 民舞 https://youtu.be/koiudYyNUo0 開催日時：2026年11月14日(土)～15日(日) 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%A",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-11-14T06:18:17+00:00",
+          "score": 0,
+          "song_name": "津軽じょんがら節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "2079835254089826393",
+          "url": "https://x.com/shamimaster/status/2079835254089826393",
+          "text": "生まれの愛媛県西条市の 交流フェスティバルで 音楽家であった祖父の作品を演奏します。 8月23日（日）13時〜 西条総合文化会館大ホール 演奏予定 津軽じょんがら節 天正陣の懐古 玉津音頭 ひうち踊り 西条史跡めぐりの歌 校歌メドレー 西条小学校～飯岡小学校～玉津小学校～(大保木中学校)～丹原小学校 瀬戸大橋の歌 西条ボーイスカウトの歌 地元で既に定番の盆おどり歌、既に絶えてしまった 盆踊り唄などの 復活にも関わりました。",
+          "account": "@shamimaster",
+          "dancer_key": "@shamimaster",
+          "observed_at": "2026-07-22T07:45:40+00:00",
+          "score": 0,
+          "song_name": "津軽じょんがら節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=KULCSMozfSM",
+          "text": "開催日時：2025年11月8日(土)～9日(日) 10時～17時 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%AB%B9%E3%81%AE%E5%8F%B0%E5%BA%83%E5%A0%B4/@35.7169935,139.7733286,17.8z/data=!3m1!5s0x60188e9ee7ed7ea7:0x3257cebc08ffd60!4m6!3m5!1s0x60188e9d6ac69933:0xa52c6521e2e73186!8m2!3d35.7163325!4d139.7746761!16s%2Fg%2F11c3n_b9vt?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D 00:00 津軽じょんがら節 03:29 津軽じょんがら節 独演 07:10 オリジナル曲 15:17 津軽甚句 17:06 津軽じょんがら節 19:19 津軽あいや節 ＃",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2025-11-08T05:58:06Z",
+          "score": 0,
+          "song_name": "津軽じょんがら節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 3,
+      "speaker_count": 2
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:0f0c7bdc3f2536b8defc26232d07b1bc7b534e06edac645b8a96cdc3aa8bb661",
       "display_name": "炭坑節",
       "normalized_event": "活気あふれる初夏",
@@ -473676,6 +473998,46 @@
       "score": 60,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "evidence:sha256:b1eb19e33b47efd0fc85050d860d90a7286a09bd0f67c537ef07593ed7511774",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=5_Moe82sQF4",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI ３ドンパン節 https://youtu.be/tsuNRN7rSBU ４津軽甚句 https://youtu.be/8Edz6zdOZSI ５真室川音頭 https://youtu.be/vDGYkyJLuro ６桐生八木節 https://youtu.be/ygD_PRSe8bI ７江州音頭（宇宙軒梅ぼし） https",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T11:30:03+00:00",
+          "score": 15,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f70d109a600fb82a79d2e279638f9d89e7f7005a9727f7cdb671650369efe275",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u3x2uaYmX44",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI ３ドンパン節 https://youtu.be/tsuNRN7rSBU ４津軽甚句 https://youtu.be/8Edz6zdOZSI ５真室川音頭 https://youtu.be/vDGYkyJLuro ６桐生八木節 https://youtu.be/ygD_PRSe8bI ７江州音頭（宇宙軒梅ぼし） https",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T11:00:05+00:00",
+          "score": 15,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
         {
           "identity": "evidence:sha256:d0aa2ddee12b93e1eab358ec24781a3c443921c658172b05f030284105eec6e7",
           "tweet_id": "",
@@ -474037,7 +474399,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 18,
+      "evidence_count": 20,
       "speaker_count": 2
     },
     {
@@ -504620,6 +504982,25 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:0b7d9714e02f0cc636402a548c9dd76bb362419076aeeb73cd946a2dc0cc41ba",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=S62H8q3gj8U",
+          "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T12:00:06+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:7ba7553dcb68c648b381921240918ee644429d08041ceac2aa813606d638bc7f",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=Lq_36ZbBojs",
@@ -504681,7 +505062,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1
     },
     {
@@ -513004,6 +513385,25 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:0b7d9714e02f0cc636402a548c9dd76bb362419076aeeb73cd946a2dc0cc41ba",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=S62H8q3gj8U",
+          "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T12:00:06+00:00",
+          "score": 12,
+          "song_name": "東京みなと音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:7ba7553dcb68c648b381921240918ee644429d08041ceac2aa813606d638bc7f",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=Lq_36ZbBojs",
@@ -513065,7 +513465,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
+      "evidence_count": 4,
       "speaker_count": 1
     },
     {
@@ -513426,6 +513826,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:b1eb19e33b47efd0fc85050d860d90a7286a09bd0f67c537ef07593ed7511774",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=5_Moe82sQF4",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI ３ドンパン節 https://youtu.be/tsuNRN7rSBU ４津軽甚句 https://youtu.be/8Edz6zdOZSI ５真室川音頭 https://youtu.be/vDGYkyJLuro ６桐生八木節 https://youtu.be/ygD_PRSe8bI ７江州音頭（宇宙軒梅ぼし） https",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T11:30:03+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:f70d109a600fb82a79d2e279638f9d89e7f7005a9727f7cdb671650369efe275",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=u3x2uaYmX44",
+          "text": "押上もちつき交流会にて行われた、 オボンズによる生唄・生演奏盆踊りの様子です！ 会場の活気ある熱気と、 心地よい生演奏のリズムをぜひお楽しみください。 【開催情報】 ・イベント：押上もちつき交流会 ・演奏 / 出演：オボンズ（生唄・生演奏） ・撮影日：2026年11月7日 ・場所：東京都墨田区 押上 和太鼓お祭りチャンネルでは、 全国各地の盆踊りやお祭り、 伝統芸能の熱気をお届けしています。 ぜひ高評価・チャンネル登録をよろしくお願いいたします！ #盆踊り #オボンズ #押上 #生演奏 #お祭り #和太鼓 押上もちつき交流会盆踊り １炭坑節 https://youtu.be/K15FOerpW1k ２東京音頭 https://youtu.be/gUsonuyxFrI ３ドンパン節 https://youtu.be/tsuNRN7rSBU ４津軽甚句 https://youtu.be/8Edz6zdOZSI ５真室川音頭 https://youtu.be/vDGYkyJLuro ６桐生八木節 https://youtu.be/ygD_PRSe8bI ７江州音頭（宇宙軒梅ぼし） https",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T11:00:05+00:00",
+          "score": 15,
+          "song_name": "東京音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "オボンズによる生唄・生演奏盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月7日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:d0aa2ddee12b93e1eab358ec24781a3c443921c658172b05f030284105eec6e7",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=NOxMAavgNt4",
@@ -513677,7 +514115,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 13,
+      "evidence_count": 15,
       "speaker_count": 1
     },
     {
@@ -516574,62 +517012,6 @@
           "observed_at": "2025-08-01T08:00:16Z",
           "score": 0,
           "song_name": "法輪音頭",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "",
-          "estimated_venue": "",
-          "time_hints": []
-        }
-      ],
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "suppressed_event_hints": [],
-      "evidence_count": 2,
-      "speaker_count": 2
-    },
-    {
-      "kind": "song",
-      "candidate_key": "song:42a05dbd7de769dbc6e0a2303480dacfbf560ae459673bf3c4ce4805d0ae9a03",
-      "display_name": "津軽じょんがら節",
-      "normalized_event": "",
-      "venue": "",
-      "venue_key": "",
-      "month": "",
-      "estimated_date": "",
-      "year": "",
-      "hashtags": [],
-      "score": 50,
-      "tier": "promote",
-      "evidence": [
-        {
-          "identity": "",
-          "tweet_id": "2079835254089826393",
-          "url": "https://x.com/shamimaster/status/2079835254089826393",
-          "text": "生まれの愛媛県西条市の 交流フェスティバルで 音楽家であった祖父の作品を演奏します。 8月23日（日）13時〜 西条総合文化会館大ホール 演奏予定 津軽じょんがら節 天正陣の懐古 玉津音頭 ひうち踊り 西条史跡めぐりの歌 校歌メドレー 西条小学校～飯岡小学校～玉津小学校～(大保木中学校)～丹原小学校 瀬戸大橋の歌 西条ボーイスカウトの歌 地元で既に定番の盆おどり歌、既に絶えてしまった 盆踊り唄などの 復活にも関わりました。",
-          "account": "@shamimaster",
-          "dancer_key": "@shamimaster",
-          "observed_at": "2026-07-22T07:45:40+00:00",
-          "score": 0,
-          "song_name": "津軽じょんがら節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "",
-          "estimated_venue": "",
-          "time_hints": []
-        },
-        {
-          "identity": "",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=KULCSMozfSM",
-          "text": "開催日時：2025年11月8日(土)～9日(日) 10時～17時 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%AB%B9%E3%81%AE%E5%8F%B0%E5%BA%83%E5%A0%B4/@35.7169935,139.7733286,17.8z/data=!3m1!5s0x60188e9ee7ed7ea7:0x3257cebc08ffd60!4m6!3m5!1s0x60188e9d6ac69933:0xa52c6521e2e73186!8m2!3d35.7163325!4d139.7746761!16s%2Fg%2F11c3n_b9vt?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D 00:00 津軽じょんがら節 03:29 津軽じょんがら節 独演 07:10 オリジナル曲 15:17 津軽甚句 17:06 津軽じょんがら節 19:19 津軽あいや節 ＃",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
-          "observed_at": "2025-11-08T05:58:06Z",
-          "score": 0,
-          "song_name": "津軽じょんがら節",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -601354,6 +601736,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:6c9c9bd66cc0e1088bbc7629a853adb6fdeaaf392eb41099b345331d19e96983",
+      "display_name": "津軽小原節",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ciGzzqGAPP8",
+          "text": "＃津軽三味線 #青森 #青森県民謡 #民舞 #津軽あいや節 #津軽よされ節 #津軽じょんがら節 #青森民謡協会 #津軽小原節 00:00 津軽三味線 08:59 りんご節 11:52 南部馬方三下り 17:02 津軽小原節 21:48 「津軽じょんがら」手踊り 24:26 鯵ヶ沢甚句 27:22 三下り 35:21 津軽じょんがら節 新節 38:28 青森子守歌 39:09 津軽あいや節 44:43 津軽よされ節 【関連動画】 【青森人の祭典 in 上野公園 2024 】津軽三味線 / 青森県民謡 / 民舞 https://youtu.be/ibKiO-X2nV8 【青森人の祭典 in 上野公園 2025 】「青森民謡協会」津軽三味線 / 青森県民謡 / 民舞 https://youtu.be/koiudYyNUo0 開催日時：2026年11月14日(土)～15日(日) 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%A",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-11-14T06:18:17+00:00",
+          "score": 0,
+          "song_name": "津軽小原節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:4ff4c62f85307e392c1faa7ce0eaabcca80a0de0483c25fbbcb332a39e6f6dfd",
       "display_name": "津軽手踊り",
       "normalized_event": "",
@@ -615715,6 +616136,45 @@
           "observed_at": "2026-08-10T05:10:11+00:00",
           "score": 0,
           "song_name": "魅力的な踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:1078cf1a5a589d253d9639b34e5f37ca8888657db12486fae29b5634d6f6d7cc",
+      "display_name": "鯵ヶ沢甚句",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ciGzzqGAPP8",
+          "text": "＃津軽三味線 #青森 #青森県民謡 #民舞 #津軽あいや節 #津軽よされ節 #津軽じょんがら節 #青森民謡協会 #津軽小原節 00:00 津軽三味線 08:59 りんご節 11:52 南部馬方三下り 17:02 津軽小原節 21:48 「津軽じょんがら」手踊り 24:26 鯵ヶ沢甚句 27:22 三下り 35:21 津軽じょんがら節 新節 38:28 青森子守歌 39:09 津軽あいや節 44:43 津軽よされ節 【関連動画】 【青森人の祭典 in 上野公園 2024 】津軽三味線 / 青森県民謡 / 民舞 https://youtu.be/ibKiO-X2nV8 【青森人の祭典 in 上野公園 2025 】「青森民謡協会」津軽三味線 / 青森県民謡 / 民舞 https://youtu.be/koiudYyNUo0 開催日時：2026年11月14日(土)～15日(日) 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%A",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-11-14T06:18:17+00:00",
+          "score": 0,
+          "song_name": "鯵ヶ沢甚句",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -637610,6 +638070,36 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:db2aa4f3b556237a6c96d4797db240af0c205a62167b35beac8c2627b37d222f",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=lbEcKIOqytQ",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T10:30:31+00:00",
+          "score": 17,
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:42b0a7e38dd65bd3919ef1976b5c1bec58cb27bef9d958c5eca5937d5bc5c636",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=kzIaVugO4GA",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-14T10:00:31+00:00",
+          "score": 17,
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:f429017ef8a3464336e9ec04bccae70aafa24443e42e326392ec9e1b6ee1db9f",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2LU7L2renQE",
@@ -637686,7 +638176,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
+      "evidence_count": 7,
       "speaker_count": 1
     },
     {
