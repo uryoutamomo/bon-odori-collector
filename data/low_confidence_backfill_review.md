@@ -1,7 +1,7 @@
 # 低信頼バックフィル候補レビュー
 
 - source: data/youtube_year_backfill_candidates.json
-- rows: 19
+- rows: 20
 - decided_in_rows: 12
 - decisions_total: 16
 
@@ -22,6 +22,7 @@
 | reject | hold | 2024 | 2024-10-11 | 丸の内de盆踊り | 行幸通り | 1 | 1 | 3 | 4K60【日比谷シネマフェスティバル】丸の内仲通り 2024 東京 Japan https://www.youtube.com/watch?v=dlY5xSYgUow | 日比谷シネマフェスティバル動画で、丸の内de盆踊りの開催回ではない |
 |  | hold | 2024 | 2024-08-03 | 大銀座盆踊り | 中央通り（銀座1丁目〜8丁目） | 1 | 1 | 0 | 4K60【大銀座盆踊り】銀座通り 夜の歩行者天国 2024 東京 Japan https://www.youtube.com/watch?v=cSYyXjUtnFk |  |
 | hold | hold | 2024 | 2024-11-17 | 旗の台稲荷通り商店会盆踊り 盆ROCK | 旗の台稲荷通り商店街 | 1 | 1 | 1 | てくてくTV　旗の台　稲荷通り商店会　盆踊り『盆ROCK』（ぼんロック）に行く　2024.11.17 https://www.youtube.com/watch?v=u6-qkx30GLw | 単一動画のみ。11月開催の特殊企画で、通常の夏季開催回とは分けて確認する |
+|  | hold | 2024 | 2024-07-17 | 第90回 祐天寺み魂まつり こども盆踊り大会 | 祐天寺境内 | 1 | 1 | 10 | 盆踊り　意外！東京 中目黒界隈でこの地元感 !?　祐天寺み魂まつり https://www.youtube.com/watch?v=FWsat3BEBTs |  |
 |  | hold | 2024 | 2024-08-14 | 納涼盆踊り大会 | 駒沢緑泉公園 | 1 | 1 | 1 | 【浦安 納涼盆踊り大会 2024】「花火音頭」- 橋幸夫 / 浦安小学校 盆踊り 新二十一世紀音頭 https://www.youtube.com/watch?v=TUpDtzeudLE |  |
 |  | hold | 2024 | 2024-09-21 | 納涼盆踊り大会 | 駒沢緑泉公園 | 1 | 1 | 0 | サザエさんの街でサザエさんのねぶた！桜新町 ねぶたまつり 2024 ねぷた Tokyo,Sakura-shinmachi Nebuta Festival https://www.youtube.com/watch?v=M7yLsNcqLbc |  |
 | reject | hold | 2024 | 2024-07-24 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 1 | 1 | 1 | 自由が丘納涼 盆踊り大会【地モトNEWS】2024/7/24放送 https://www.youtube.com/watch?v=qNhz2yoaBL0 | 地モトNEWSの放送日が検出されており、自由が丘2024開催日は既に2024-07-13〜15として高めの証拠で整理済み |

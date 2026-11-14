@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-10-19T23:20:41.898080+00:00",
+  "generated_at": "2026-11-14T23:39:21.830917+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
     "observation_count": 39,
@@ -11,8 +11,8 @@
     },
     "observations_with_songs": 35,
     "manual_accepted_low_observation_count": 4,
-    "excluded_low_observation_count": 19,
-    "excluded_low_source_video_count": 23
+    "excluded_low_observation_count": 20,
+    "excluded_low_source_video_count": 24
   },
   "observations": [
     {
@@ -5571,6 +5571,129 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=yPirt13uxo4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "a94c7502a12b07df",
+      "series_key": "ffabb09f44db",
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "venue": "祐天寺境内",
+      "area": "目黒区",
+      "year": 2024,
+      "date_start": "2024-07-17",
+      "date_end": "2024-07-17",
+      "observed_dates": [
+        "2024-07-17"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 1,
+      "source_channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=FWsat3BEBTs",
+          "video_id": "FWsat3BEBTs",
+          "title": "盆踊り　意外！東京 中目黒界隈でこの地元感 !?　祐天寺み魂まつり",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2024-07-18T01:02:17Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "おかげさま音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "にこにこ音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "少年ソーランしぶき",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "パプリカ音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "祐天寺み魂まつり音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "相馬盆唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ソーラン節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "大東京音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FWsat3BEBTs"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"

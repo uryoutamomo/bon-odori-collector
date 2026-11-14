@@ -1,19 +1,19 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-10-19T23:20:41.696186+00:00",
+  "generated_at": "2026-11-14T23:39:21.614209+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 3,
+  "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 972,
+    "candidate_count": 1002,
     "status_counts": {
       "review": 74,
-      "strong": 245,
-      "weak": 653
+      "strong": 246,
+      "weak": 682
     },
-    "strong_count": 245,
+    "strong_count": 246,
     "review_count": 74
   },
   "selected_queue_rows": [
@@ -12388,6 +12388,95 @@
       "status": "strong",
       "score": 100,
       "reasons": [
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:f025dad9f2e0fde4",
+      "target_year": 2024,
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "venue": "祐天寺境内",
+      "area": "目黒区",
+      "detected_event_date": "2024-07-17",
+      "video_id": "FWsat3BEBTs",
+      "video_url": "https://www.youtube.com/watch?v=FWsat3BEBTs",
+      "title": "盆踊り　意外！東京 中目黒界隈でこの地元感 !?　祐天寺み魂まつり",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2024-07-18T01:02:17Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/FWsat3BEBTs/maxresdefault.jpg",
+      "query": "第90回 祐天寺み魂まつり こども盆踊り大会 祐天寺境内 目黒区 2024 盆踊り",
+      "setlist_count": 10,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "おかげさま音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "にこにこ音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "少年ソーランしぶき",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "パプリカ音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "東京音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "祐天寺み魂まつり音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "炭坑節",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "相馬盆唄",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 9,
+          "title": "ソーラン節",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 10,
+          "title": "大東京音頭",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "祐天寺み魂まつり 子ども盆踊り 2024年7月17日（水） 00:00 02:20 祐天寺境内 03:35 式典 11:16 おかげさま音頭 14:22 輪になって 18:20 にこにこ音頭 21:21 少年ソーランしぶき 24:49 にこにこ音頭 28:03 パプリカ音頭 31:28 東京音頭 34:42 おかげさま音頭 37:57 輪になって 42:52 東京音頭 46:42 祐天寺み魂まつり音頭 50:21 東京音頭 53:35 炭坑節 57:08 相馬盆唄 01:01:06 祐天寺み魂まつり音頭 01:05:11 ソーラン節 01:09:30 大東京音頭 01:12:43 炭坑節 01:16:00 東京音頭 01:19:18 祐天寺み魂まつり音頭 01:23:17 炭坑節 01:26:37 大東京音頭 01:29:45 相馬盆唄 01:33:26 東京音頭 01:36:38 締め太鼓"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
         "event_name_in_video",
         "venue_in_video",
         "target_year_in_video",
@@ -21308,6 +21397,358 @@
       "status": "weak",
       "score": 49,
       "reasons": [
+        "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2024-08-18",
+      "video_id": "foodQBwhk4w",
+      "video_url": "https://www.youtube.com/watch?v=foodQBwhk4w",
+      "title": "「花笠音頭」　2024年第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり21　御徒町パンダ広場　東京都台東区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-08-23T11:00:49Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/foodQBwhk4w/sddefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 おかちまちパンダ広場（御徒町駅南口駅前広場） 台東区 2023 盆踊り",
+      "setlist_count": 14,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=T70vayMKaWE",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=xDogK-Zg34Y",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "東京百年おどり",
+          "url": "https://www.youtube.com/watch?v=awazqlvvRhM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=S_RaiSlFEq8",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "新台東音頭",
+          "url": "https://www.youtube.com/watch?v=nMcvURz6Xhg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "上野音頭",
+          "url": "https://www.youtube.com/watch?v=1LSSeXxcEeM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "日本一音頭",
+          "url": "https://www.youtube.com/watch?v=HjLrCrSr4K0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "三春盆唄",
+          "url": "https://www.youtube.com/watch?v=I2eByYJ53Dg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 9,
+          "title": "河内音頭",
+          "url": "https://www.youtube.com/watch?v=SgH64dGMISg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 10,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=kM4thbZZDbU",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年8月18日に行われました、 「第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり」 盆踊りの様子です。 パンダ広場盆踊り １東京音頭 https://youtu.be/T70vayMKaWE ２大東京音頭 https://youtu.be/xDogK-Zg34Y ３東京百年おどり https://youtu.be/awazqlvvRhM ４たいとう音頭 https://youtu.be/S_RaiSlFEq8 ５新台東音頭 https://youtu.be/nMcvURz6Xhg ６上野音頭 https://youtu.be/1LSSeXxcEeM ７日本一音頭 https://youtu.be/HjLrCrSr4K0 ８三春盆唄 https://youtu.be/I2eByYJ53Dg ９河内音頭 https://youtu.be/SgH64dGMISg 10相馬盆唄 https://youtu.be/kM4thbZZDbU 11ゆかたばやし https://youtu.be/pBJO3qE6GcM 12どんとこいブギ https://youtu.be/T-…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2024-08-18",
+      "video_id": "SgH64dGMISg",
+      "video_url": "https://www.youtube.com/watch?v=SgH64dGMISg",
+      "title": "【河内音頭】　2024年第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり９　御徒町パンダ広場　東京都台東区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-08-21T09:00:23Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/SgH64dGMISg/sddefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 おかちまちパンダ広場（御徒町駅南口駅前広場） 台東区 2023 盆踊り",
+      "setlist_count": 10,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=T70vayMKaWE",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=xDogK-Zg34Y",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "東京百年おどり",
+          "url": "https://www.youtube.com/watch?v=awazqlvvRhM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=S_RaiSlFEq8",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "新台東音頭",
+          "url": "https://www.youtube.com/watch?v=nMcvURz6Xhg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "上野音頭",
+          "url": "https://www.youtube.com/watch?v=1LSSeXxcEeM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "日本一音頭",
+          "url": "https://www.youtube.com/watch?v=HjLrCrSr4K0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "三春盆唄",
+          "url": "https://www.youtube.com/watch?v=I2eByYJ53Dg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 9,
+          "title": "河内音頭",
+          "url": "https://www.youtube.com/watch?v=SgH64dGMISg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 10,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=kM4thbZZDbU",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年8月18日に行われました、 「第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり」 盆踊りの様子です。 パンダ広場盆踊り １東京音頭 https://youtu.be/T70vayMKaWE ２大東京音頭 https://youtu.be/xDogK-Zg34Y ３東京百年おどり https://youtu.be/awazqlvvRhM ４たいとう音頭 https://youtu.be/S_RaiSlFEq8 ５新台東音頭 https://youtu.be/nMcvURz6Xhg ６上野音頭 https://youtu.be/1LSSeXxcEeM ７日本一音頭 https://youtu.be/HjLrCrSr4K0 ８三春盆唄 https://youtu.be/I2eByYJ53Dg ９河内音頭 https://youtu.be/SgH64dGMISg 10相馬盆唄 https://youtu.be/kM4thbZZDbU 11ゆかたばやし https://youtu.be/pBJO3qE6GcM 12どんとこいブギ https://youtu.be/T-…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2024-08-18",
+      "video_id": "I2eByYJ53Dg",
+      "video_url": "https://www.youtube.com/watch?v=I2eByYJ53Dg",
+      "title": "三春盆唄　2024年第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり８　御徒町パンダ広場　東京都台東区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-08-20T12:30:16Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/I2eByYJ53Dg/sddefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 10,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=T70vayMKaWE",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=xDogK-Zg34Y",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "東京百年おどり",
+          "url": "https://www.youtube.com/watch?v=awazqlvvRhM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=S_RaiSlFEq8",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "新台東音頭",
+          "url": "https://www.youtube.com/watch?v=nMcvURz6Xhg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "上野音頭",
+          "url": "https://www.youtube.com/watch?v=1LSSeXxcEeM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "日本一音頭",
+          "url": "https://www.youtube.com/watch?v=HjLrCrSr4K0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "三春盆唄",
+          "url": "https://www.youtube.com/watch?v=I2eByYJ53Dg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 9,
+          "title": "河内音頭",
+          "url": "https://www.youtube.com/watch?v=SgH64dGMISg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 10,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=kM4thbZZDbU",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年8月18日に行われました、 「第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり」 盆踊りの様子です。 パンダ広場盆踊り １東京音頭 https://youtu.be/T70vayMKaWE ２大東京音頭 https://youtu.be/xDogK-Zg34Y ３東京百年おどり https://youtu.be/awazqlvvRhM ４たいとう音頭 https://youtu.be/S_RaiSlFEq8 ５新台東音頭 https://youtu.be/nMcvURz6Xhg ６上野音頭 https://youtu.be/1LSSeXxcEeM ７日本一音頭 https://youtu.be/HjLrCrSr4K0 ８三春盆唄 https://youtu.be/I2eByYJ53Dg ９河内音頭 https://youtu.be/SgH64dGMISg 10相馬盆唄 https://youtu.be/kM4thbZZDbU 11ゆかたばやし https://youtu.be/pBJO3qE6GcM 12どんとこいブギ https://youtu.be/T-…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2024-08-18",
+      "video_id": "9ngT0LuajP4",
+      "video_url": "https://www.youtube.com/watch?v=9ngT0LuajP4",
+      "title": "津軽甚句　ドダレバチ　2024年第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり20　御徒町パンダ広場　東京都台東区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-08-22T14:00:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/9ngT0LuajP4/sddefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 おかちまちパンダ広場（御徒町駅南口駅前広場） 台東区 2023 盆踊り",
+      "setlist_count": 14,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=T70vayMKaWE",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=xDogK-Zg34Y",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "東京百年おどり",
+          "url": "https://www.youtube.com/watch?v=awazqlvvRhM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=S_RaiSlFEq8",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "新台東音頭",
+          "url": "https://www.youtube.com/watch?v=nMcvURz6Xhg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "上野音頭",
+          "url": "https://www.youtube.com/watch?v=1LSSeXxcEeM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "日本一音頭",
+          "url": "https://www.youtube.com/watch?v=HjLrCrSr4K0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "三春盆唄",
+          "url": "https://www.youtube.com/watch?v=I2eByYJ53Dg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 9,
+          "title": "河内音頭",
+          "url": "https://www.youtube.com/watch?v=SgH64dGMISg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 10,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=kM4thbZZDbU",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年8月18日に行われました、 「第6回シタマチ ふるさと盆踊り大会with発見！ふくしま夏まつり」 盆踊りの様子です。 パンダ広場盆踊り １東京音頭 https://youtu.be/T70vayMKaWE ２大東京音頭 https://youtu.be/xDogK-Zg34Y ３東京百年おどり https://youtu.be/awazqlvvRhM ４たいとう音頭 https://youtu.be/S_RaiSlFEq8 ５新台東音頭 https://youtu.be/nMcvURz6Xhg ６上野音頭 https://youtu.be/1LSSeXxcEeM ７日本一音頭 https://youtu.be/HjLrCrSr4K0 ８三春盆唄 https://youtu.be/I2eByYJ53Dg ９河内音頭 https://youtu.be/SgH64dGMISg 10相馬盆唄 https://youtu.be/kM4thbZZDbU 11ゆかたばやし https://youtu.be/pBJO3qE6GcM 12どんとこいブギ https://youtu.be/T-…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
         "venue_in_video",
         "other_year_date_detected",
         "bon_context",
@@ -23397,6 +23838,32 @@
       "score": 49,
       "reasons": [
         "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:6a444090c6dab475",
+      "target_year": 2024,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2025-08-22",
+      "video_id": "toOOPEi5K9g",
+      "video_url": "https://www.youtube.com/watch?v=toOOPEi5K9g",
+      "title": "【DJ KOO × 相川七瀬 × 鳳蝶美成 ほかLIVE】「第16回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2025.8.22 @浜松町駅北口駅前広場",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2025-08-22T14:48:20Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/toOOPEi5K9g/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "「第16回ハマサイトの夏祭り」 【DJ KOO × 相川七瀬 × 鳳蝶美成 ほか】 ■唄：相川七瀬 ■DJ：DJ KOO ■踊り：鳳蝶美成（日本民踊鳳蝶流 家元師範・日本盆踊り協会特別顧問） 日本民踊鳳蝶流 鳳蝶美成社中 ほか ■日時：2025.08.22 ■場所：浜松町駅北口駅前広場・汐留ビルディング外構 #ハマサイトの夏祭り #相川七瀬 #djkoo #鳳蝶美成"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
         "target_year_in_video",
         "other_year_date_detected",
         "bon_context"
@@ -24345,6 +24812,84 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "target_year": 2023,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2023-09-02",
+      "video_id": "ONX9lSRnQbg",
+      "video_url": "https://www.youtube.com/watch?v=ONX9lSRnQbg",
+      "title": "にっぽんチャチャチャ　2023年竹芝夏フェス　竹芝盆踊り４６",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2023-09-19T11:00:16Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/ONX9lSRnQbg/sddefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023年9月2日に行われました「竹芝夏フェス」竹芝盆踊りの様子です。 おすすめ動画 竹芝盆踊り １ぷしゅぷしゅ音頭 https://youtu.be/Nxaq-KoPqJ4 ２秘伝ラーメンたいそう https://youtu.be/BGQhpmo2PC0 ３ジャンボリミッキー https://youtu.be/UaxRAM8w8xc ４サザエさん https://youtu.be/Oyrkr86zXJE ５ポケモン音頭 https://youtu.be/tvsUd1Od8oA ６となりのトトロ https://youtu.be/mz88WzPjy14 ７跳べ！ガンダム https://youtu.be/7UoGhzHLBVs ８ドラえもん https://youtu.be/ywCG1cgzAYo ９ジャンボリミッキー https://youtu.be/nzhTtI6EsqY １０芝商業高校校歌 https://youtu.be/Ii6k3OHud-M １１東京みなと音頭 https://youtu.be/ZnyP-sx724w １２東京音頭 https://youtu.be/bl_…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "target_year": 2023,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2023-08-25",
+      "video_id": "9-o3lMXCRPo",
+      "video_url": "https://www.youtube.com/watch?v=9-o3lMXCRPo",
+      "title": "河内おとこ節 ② 　東綾瀬公園ハト広場 納涼盆踊り大会 20230825",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-25T14:04:09Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/9-o3lMXCRPo/sddefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "当チャンネル地元の盆踊りです。 https://youtu.be/rj-WN1DUnmo https://youtu.be/Z84CRSmbdXI https://youtu.be/4InftQ_y_KM https://youtu.be/ANbB3DlGOhc https://youtu.be/QrQ8vjW-j_Q https://youtu.be/nPswMYL5rD0 https://youtu.be/l6U2BDPOLy0 https://youtu.be/YvaaGitE-p0 https://youtu.be/LM-FQB0DGMw https://youtu.be/ztC2R_Y5qNs https://youtu.be/3CAZf-iXal8 https://youtu.be/9-o3lMXCRPo https://youtu.be/TFVMAZcmDbw https://youtu.be/saKRxJFeMO4 https://youtu.be/N3X6GrT9ZZ8 https://youtu.be/AKlS0QQ2viU https://youtu.be/mm…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "target_year": 2023,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2023-09-16",
+      "video_id": "dxERzWmqs18",
+      "video_url": "https://www.youtube.com/watch?v=dxERzWmqs18",
+      "title": "河内おとこ節　加古川かわまちづくり盆踊り大会　　2023.9.16 加古川河川敷公園",
+      "channel_id": "UC28iGkWsegLJiNNqcIY0Ieg",
+      "channel_title": "TOKUBUNE",
+      "published_at": "2023-09-17T04:00:24Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/dxERzWmqs18/sddefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected"
       ],
       "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
@@ -24523,6 +25068,32 @@
       "published_at": "2023-08-20T01:32:00Z",
       "thumbnail_url": "https://i.ytimg.com/vi/SirmBcooj_Y/maxresdefault.jpg",
       "query": "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/k-dh2TFoWvU https://youtu.be/e27sr80c3vk https://youtu.be/91r8xVXtTw4 https://youtu.be/_kUxwUArDcY https://youtu.be/tyBPSflHmSI https://youtu.be/FVCx9bQ2kbs https://youtu.be/JSMmMEpD_ug https://youtu.be/mmFeEGwPfGw https://youtu.be/9pbsluEPWiU https://youtu.be/ux9whrcNfCw https://youtu.be/LQKTgvrYmQ0 ー https://youtu.be/cx_pCZ39aos https://youtu.be/cynWafUtD8w ー https://youtu.be/bdGvKVPKF-Y https://youtu.be/QZoa3ULoJ-8 https://youtu.be/AWLFMmHwYsM ー https://youtu.be/re4b1YzPbJY …"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "2023-08-19",
+      "video_id": "b1Yg8Ov9lL4",
+      "video_url": "https://www.youtube.com/watch?v=b1Yg8Ov9lL4",
+      "title": "ジョイフル 　下町上野ふるさと盆踊り大会（御徒町 駅前 パンダ広場）20230819",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-20T01:32:00Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/b1Yg8Ov9lL4/maxresdefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 おかちまちパンダ広場（御徒町駅南口駅前広場） 台東区 2023 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "https://youtu.be/k-dh2TFoWvU https://youtu.be/e27sr80c3vk https://youtu.be/91r8xVXtTw4 https://youtu.be/_kUxwUArDcY https://youtu.be/tyBPSflHmSI https://youtu.be/FVCx9bQ2kbs https://youtu.be/JSMmMEpD_ug https://youtu.be/mmFeEGwPfGw https://youtu.be/9pbsluEPWiU https://youtu.be/ux9whrcNfCw https://youtu.be/LQKTgvrYmQ0 ー https://youtu.be/cx_pCZ39aos https://youtu.be/cynWafUtD8w ー https://youtu.be/bdGvKVPKF-Y https://youtu.be/QZoa3ULoJ-8 https://youtu.be/AWLFMmHwYsM ー https://youtu.be/re4b1YzPbJY …"
@@ -30998,6 +31569,58 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-06-28",
+      "video_id": "ngtahYP-VBc",
+      "video_url": "https://www.youtube.com/watch?v=ngtahYP-VBc",
+      "title": "奥浅草盆踊り 浅草 波乗りジョニー/東京音頭/LOVE AFFAIR～秘密のデート/燃えろ日本の夏祭り Tokyo,Asakusa Bon Dance. Bon Odori 2025",
+      "channel_id": "UCM7nHERAih74J-yXy8iNyLw",
+      "channel_title": "Very JAPAN",
+      "published_at": "2025-06-29T09:01:08Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/ngtahYP-VBc/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2024 盆踊り",
+      "setlist_count": 4,
+      "setlist_sample": [
+        {
+          "number": 5,
+          "title": "年ぶり!ねぷたと東京スカイツリーのレアなコラボ! 北斎祭り 2024 弘前ねぷた ねぶた 北斎通り Tokyo,Nebuta Parade",
+          "url": "https://www.youtube.com/watch?v=lyF8BMAB-QM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 20,
+          "title": "24 Tokyo,Aoyama Bon Dance. 郡上踊り",
+          "url": "https://www.youtube.com/watch?v=3uOCgqTaTG4",
+          "source": "numbered_url"
+        },
+        {
+          "number": 20,
+          "title": "24.11 浅草 Tokyo,Asakusa Sensoji Temple Shirasagi-no-Mai/White Heron Dance",
+          "url": "https://www.youtube.com/watch?v=Yvxo_9kKVBc",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "2025年6月28日(土)、「第3回 奥浅草盆踊り大会」が隅田川沿いの隅田公園内 山谷堀広場で開催。 浅草からも近いため外国人観光客も多く、東京スカイツリーを背景に盆踊りが踊れる貴重な機会です。 他にもイベントやお祭りの動画も含めて概要欄下部↓などからぜひご覧ください。 === \"Oku-Asakusa Bon Odori\" at Asakusa ,Tokyo. 0:00 燃えろ日本の夏祭り 4:45 LOVE AFFAIR～秘密のデート 10:24 東京音頭 13:51 波乗りジョニー ■東京スカイツリー目の前！外国人観光客も多い！奥浅草盆踊り 浅草 Tokyo,Asakusa Bon Dance. Bon Odori 2025 ■https://youtu.be/b10Nyx3QkbQ ご視聴いただきありがとうございました。 ぜひチャンネル登録・高評価、お願いいたします。 コメントもぜひ。 Thank you for watching. Please subscribe to the channel and give it a high rating. ＝＝＝ ●チャンネルページ…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected",
         "bon_context"
       ],
@@ -32645,6 +33268,76 @@
       "venue": "ハマサイト前広場・汐留ビルディング外構",
       "area": "港区",
       "detected_event_date": "2024-08-30",
+      "video_id": "Ny9a4xPm8v4",
+      "video_url": "https://www.youtube.com/watch?v=Ny9a4xPm8v4",
+      "title": "[4K]🇯🇵 DJ KOO 早見優 島谷ひとみ 鳳蝶美成 ハマサイトの夏祭り LIVE ＆ 盆踊り / Concert and Bon dance in Hamamatsucho, Tokyo.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-08-31T08:00:16Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ny9a4xPm8v4/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2024 YouTube 盆踊り",
+      "setlist_count": 7,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "鳳蝶美成 登場 〜 東京音頭【盆踊り】 / Tokyo Ondo 【Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "ダンシングヒーロー 振付説明 / Explaining how to dance Eat You Up",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "荻野目洋子 - ダンシングヒーロー【盆踊り】 / Yoko Oginome - Eat You Up 【Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "Earth, Wind & Fire - September 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "Village People - Y.M.C.A 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "Bon Jovi - Livin' On A Prayer 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "Boys Town Gang - Can't Take My Eyes Off You（君の瞳に恋してる） 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "東京の浜松町にあるハマサイトグルメで「第15回ハマサイトの夏祭り」が開催されました。 当初は台風の接近で開催も危ぶまれましたが、無事開催されました。 途中、多少雨が降る時間もありましたが、パフォーマンスが始まると雨が上がるということを繰り返し、多くの人が集まりました。 この動画では、鳳蝶美成さんの「盆踊り 第2部」とイベントラストに行われたDJ KOOさんのDJ TIMEを紹介。DJ TIMEでは、島谷ひとみさん、早見優さんのライブも行われました。 音楽を聴いてノる人と盆踊りを踊る人に分かれ、最後まで大いに盛り上がりました！ The 15th Hamamatsucho Summer Festival was held in Hamamatsucho, Tokyo. We had a lot of fun at various corners, including a Bon dance corner and DJ performances! 2024.8.30 Fri 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Please Sub…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:6a444090c6dab475",
+      "target_year": 2024,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2024-08-30",
       "video_id": "78lIYpiYKUk",
       "video_url": "https://www.youtube.com/watch?v=78lIYpiYKUk",
       "title": "【DJ KOO × 早見優 × 島谷ひとみ × 鳳蝶美成 ほか】「第15回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2024.8.30 @浜松町駅北口駅前広場",
@@ -34035,6 +34728,52 @@
         "bon_context",
         "setlist_detected"
       ],
+      "queue_id": "youtube-year-backfill:f025dad9f2e0fde4",
+      "target_year": 2024,
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "venue": "祐天寺境内",
+      "area": "目黒区",
+      "detected_event_date": "2024-07-17",
+      "video_id": "iH_U1aTa3-c",
+      "video_url": "https://www.youtube.com/watch?v=iH_U1aTa3-c",
+      "title": "東京音頭　20240717第89回祐天寺み魂まつりこども盆踊り大会　大人の部１　東京都目黒区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-07-17T14:30:14Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/iH_U1aTa3-c/maxresdefault.jpg",
+      "query": "第90回 祐天寺み魂まつり こども盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 3,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=iH_U1aTa3-c",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "祐天寺みたままつり音頭",
+          "url": "https://www.youtube.com/watch?v=ShZMQL29MaA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "ソーラン節",
+          "url": "https://www.youtube.com/watch?v=Vyy4zsti8hI",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年7月17日に行われました、 祐天寺みたままつりこども盆踊り大会・大人の部の様子です！ 祐天寺盆踊り １東京音頭 https://youtu.be/iH_U1aTa3-c ２祐天寺みたままつり音頭 https://youtu.be/ShZMQL29MaA ３ソーラン節 https://youtu.be/Vyy4zsti8hI"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
       "queue_id": "youtube-year-backfill:218e00e0f9088eb1",
       "target_year": 2024,
       "event_name": "納涼盆踊り大会",
@@ -34483,6 +35222,58 @@
       "score": 40,
       "reasons": [
         "venue_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-07-04",
+      "video_id": "wPqdC1xiC2w",
+      "video_url": "https://www.youtube.com/watch?v=wPqdC1xiC2w",
+      "title": "「APT. 」ROSÉ & Bruno Mars で盆踊り【ふるさと応援祭 ビールと浴衣de盆踊り】 #盆踊り 上野公園　Bon Dance アパツ 로제",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2025-07-08T10:13:18Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/wPqdC1xiC2w/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#APT #盆踊り#ビールと浴衣de盆踊り #上野 #로제 開催日時：2025年7月4日(金)～6日(日) 開催場所：上野恩賜公園 竹の台広場（噴水広場） 1ステージ目 17:00～17:35 2ステージ目 18:00～18:35 3ステージ目 19:15～19:50 【肉フェス 2025】昭和歌謡編（昭和の日） 「Get Wild」- TM NETWORK https://youtu.be/klwE87DLB1I 「異邦人」- 久保田早紀 https://youtu.be/70c7rAE6PkI バルス!!!「君をのせて」 https://youtu.be/tVDZVpyyUuQ 「上を向いて歩こう」 https://youtu.be/LxidraNKPt8 「プレイバック Part2」- 山口百恵 https://youtu.be/idAUaFShjXk 「2億4千万の瞳 -エキゾチック・ジャパン-」 https://youtu.be/ht9t0oJlhLg"
+    },
+    {
+      "status": "weak",
+      "score": 40,
+      "reasons": [
+        "venue_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-07-04",
+      "video_id": "UqKEzzPmWS4",
+      "video_url": "https://www.youtube.com/watch?v=UqKEzzPmWS4",
+      "title": "ビールと浴衣de盆踊りでAPT.#ビールと浴衣de盆踊り#apt #アパツ #盆踊り#上野恩賜公園#2025盆踊り",
+      "channel_id": "UCk2846M94LxD_FJ3FU3jMAA",
+      "channel_title": "かよこの心の魔法ch",
+      "published_at": "2025-07-04T13:40:50Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/UqKEzzPmWS4/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "ビールと浴衣de盆踊りでAPT.#ビールと浴衣de盆踊り#apt #盆踊り#上野恩賜公園#2025盆踊り https://www.furusatotokyofes.com ふるさと東京応援祭 第二回ビールと浴衣de盆踊り 開催日時 2025年7月4日(金) ～ 7月6日(日) 計3日間 開催時間 11：00 ～ 21：00 予定 最終日のみ20：00 終了予定 会場 上野恩賜公園 竹の台広場（噴水広場） 〒110-0007 東京都台東区上野公園 楽曲ロゼ&ブルーノ・マーズ ♪「APT.」"
+    },
+    {
+      "status": "weak",
+      "score": 40,
+      "reasons": [
+        "venue_in_video",
         "bon_context"
       ],
       "queue_id": "youtube-year-backfill:67bdf28c77e2e7f1",
@@ -34577,6 +35368,56 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "東京都千代田区の日比谷公園へ、丸の内音頭大盆踊り大会に行ってきました。 丸の内音頭大盆踊り大会２０２３ 音頭・花火音頭・大東京音頭 です。 そのほかの演目は、こちらから 「スターウォーズ盆踊り」の動画（メインチャンネル）→https://youtu.be/FiEyo16s-dQ １部 丸の内音頭・花火音頭・大東京音頭 →https://youtu.be/4XlJdAulf9Q 炭坑節・日本ちゃちゃちゃ・お江戸日本橋 →https://youtu.be/sKjweu8XkG4 銀座カンカン娘・東京音頭 →https://youtu.be/pD1ry2TNy3s ２部 丸の内音頭・ドンパン節・牛深ハイヤ節 →https://youtu.be/PsFGy79wE-o お江戸日本橋・おこさ節・炭坑節 →https://youtu.be/VJIomlfC578 「皇居千鳥ヶ淵 灯ろう流し２０２３」の動画（メインチャンネル）→https://youtu.be/icNJZq6WZuk 「文京シビックセンター」の動画（メインチャンネル）→https://youtu.be/pJIi3hQyys4 おす…"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "RgB04dCZNw8",
+      "video_url": "https://www.youtube.com/watch?v=RgB04dCZNw8",
+      "title": "【大大阪音頭】　2023年パンダ広場盆踊り2日目４　東京都台東区　下町上野ふるさと盆踊り大会with発見ふくしま夏まつり",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-02-11T11:30:10Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/RgB04dCZNw8/sddefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023年、東京都台東区にありますパンダ広場で行われました、 「下町上野ふるさと盆踊り大会with発見ふくしま夏まつり」 2日目の盆踊りの様子です。 パンダ広場盆踊り2日目 https://www.youtube.com/playlist?list=PLykeSsDm2WtxR-6nEOqHVpKYHFrbYCemL"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:6db0ecf647ca99c3",
+      "target_year": 2023,
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "swbJSE_4ujM",
+      "video_url": "https://www.youtube.com/watch?v=swbJSE_4ujM",
+      "title": "お月見おどり　2023年パンダ広場盆踊り2日目６　東京都台東区　下町上野ふるさと盆踊り大会with発見ふくしま夏まつり",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-02-12T11:30:23Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/swbJSE_4ujM/sddefault.jpg",
+      "query": "シタマチ.ふるさと盆踊り大会 おかちまちパンダ広場（御徒町駅南口駅前広場） 台東区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023年、東京都台東区にありますパンダ広場で行われました、 「下町上野ふるさと盆踊り大会with発見ふくしま夏まつり」 2日目の盆踊りの様子です。 パンダ広場盆踊り2日目 https://www.youtube.com/playlist?list=PLykeSsDm2WtxR-6nEOqHVpKYHFrbYCemL"
     },
     {
       "status": "weak",
@@ -36300,6 +37141,107 @@
       "status": "weak",
       "score": 30,
       "reasons": [
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "target_year": 2023,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "s04XeTi6DhM",
+      "video_url": "https://www.youtube.com/watch?v=s04XeTi6DhM",
+      "title": "「ビューティフルサンデー」（Beautiful Sunday）　2024年第43回横浜開港祭盆踊り９",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-06-04T06:00:20Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/s04XeTi6DhM/sddefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2023 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=zqCg_I3GXq0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "踊れ・どれ・ドラ ドラえもん音頭",
+          "url": "https://www.youtube.com/watch?v=gWyMaOOyqiI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "よこはまアラメヤ音頭",
+          "url": "https://www.youtube.com/watch?v=hTQI7ozSRAg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "浜っ娘音頭",
+          "url": "https://www.youtube.com/watch?v=e-0QpC4qZb8",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "エビカニクス音頭",
+          "url": "https://www.youtube.com/watch?v=Odwcc9NkUSU",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年、「第43回横浜開港祭」 「トヨタモビリティ神奈川プレゼンツ横浜開港祭BON-ODORI」1日目の盆踊りの様子です。 横浜開港祭盆踊り １ｼﾞｬﾝﾎﾞﾘﾐｯｷｰ https://youtu.be/zF3XNHzjCs8 ２炭坑節 https://youtu.be/zqCg_I3GXq0 ３ｱﾝﾊﾟﾝﾏﾝのﾏｰﾁ https://youtu.be/3bvMRB8QCMo ４踊れ・どれ・ドラ ドラえもん音頭 https://youtu.be/gWyMaOOyqiI ５よこはまアラメヤ音頭 https://youtu.be/hTQI7ozSRAg ６浜っ娘音頭 https://youtu.be/e-0QpC4qZb8 ７エビカニクス音頭 https://youtu.be/Odwcc9NkUSU ８キャッツアイ https://youtu.be/hEr24bBJ9Js ９ﾋﾞｭｰﾃｨﾌﾙｻﾝﾃﾞｰ https://youtu.be/s04XeTi6DhM 10盆ギリ恋歌 https://youtu.be/j2VV-u4km9M"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "target_year": 2023,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2024-07-24",
+      "video_id": "TCi33ngTDFw",
+      "video_url": "https://www.youtube.com/watch?v=TCi33ngTDFw",
+      "title": "【Y.M.C.A.】　（ビレッジピープルVillage People）　2024年神楽坂夏祭り　盆踊りin神楽坂３",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-07-25T05:30:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/TCi33ngTDFw/sddefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2023 YouTube 盆踊り",
+      "setlist_count": 3,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=Gjkmy0Aqj4g",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=EPjgEAvCypE",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "ダンシング・ヒーロー",
+          "url": "https://www.youtube.com/watch?v=tt85cAcKtiE",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年7月24日に、神楽坂周辺で行われました、 「2024年神楽坂夏祭り 盆踊りin神楽坂」 盆踊りの様子です。 日本盆踊り協会・東京おとめ太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/Gjkmy0Aqj4g ２炭坑節 https://youtu.be/EPjgEAvCypE ３YMCA https://youtu.be/TCi33ngTDFw ４キャッツ・アイ https://youtu.be/TR0kQVvEamI ５恋するフォーチュンクッキー https://youtu.be/1cWqr1sNjYQ ６おどるポンポコリン https://youtu.be/HwZNMyYorx8 ７ｼﾞｬﾝﾎﾞﾘﾐｯｷｰ https://youtu.be/bf5R-bqI7qU ８ﾀﾞﾝｼﾝｸﾞ･ﾋｰﾛｰ https://youtu.be/tt85cAcKtiE"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
         "other_year_date_detected",
         "bon_context",
         "setlist_detected"
@@ -36466,6 +37408,114 @@
         }
       ],
       "description_excerpt": "2022年7月8日・9日に東京都豊島区にあります大正大学で行われました「鴨台盆踊り」２日目の様子です。 おすすめ動画 大正大学盆踊り2日目 １大正大学校歌 https://youtu.be/EbDap13DPxI ２東京音頭 https://youtu.be/AqyrVFPXB_4 ３365日の紙飛行機 https://youtu.be/bAQmvpN9pIM ４ﾁｬﾝﾁｷおけさ https://youtu.be/QCIfrZ8JEt8 ５USA https://youtu.be/nHa1gjciWD4 ６恋するﾌｫｰﾁｭﾝｸｯｷｰ https://youtu.be/SQdLtfF5n8M ７炭坑節 https://youtu.be/hST2SBT2Ihg ８大江戸東京音頭 https://youtu.be/7W8WvH8deg4 ９ﾀﾞﾝｼﾝｸﾞﾋｰﾛｰ https://youtu.be/bPiJWb7SJ1A １０巣鴨音頭 https://youtu.be/W78X-kNWrd8 １１東京音頭 https://youtu.be/UexZJm00eeU １２365日の紙飛行機 ht…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "target_year": 2023,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2024-08-30",
+      "video_id": "Ny9a4xPm8v4",
+      "video_url": "https://www.youtube.com/watch?v=Ny9a4xPm8v4",
+      "title": "[4K]🇯🇵 DJ KOO 早見優 島谷ひとみ 鳳蝶美成 ハマサイトの夏祭り LIVE ＆ 盆踊り / Concert and Bon dance in Hamamatsucho, Tokyo.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-08-31T08:00:16Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ny9a4xPm8v4/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
+      "setlist_count": 7,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "鳳蝶美成 登場 〜 東京音頭【盆踊り】 / Tokyo Ondo 【Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "ダンシングヒーロー 振付説明 / Explaining how to dance Eat You Up",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "荻野目洋子 - ダンシングヒーロー【盆踊り】 / Yoko Oginome - Eat You Up 【Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "Earth, Wind & Fire - September 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "Village People - Y.M.C.A 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "Bon Jovi - Livin' On A Prayer 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "Boys Town Gang - Can't Take My Eyes Off You（君の瞳に恋してる） 【盆踊り/Bon Dance】",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "東京の浜松町にあるハマサイトグルメで「第15回ハマサイトの夏祭り」が開催されました。 当初は台風の接近で開催も危ぶまれましたが、無事開催されました。 途中、多少雨が降る時間もありましたが、パフォーマンスが始まると雨が上がるということを繰り返し、多くの人が集まりました。 この動画では、鳳蝶美成さんの「盆踊り 第2部」とイベントラストに行われたDJ KOOさんのDJ TIMEを紹介。DJ TIMEでは、島谷ひとみさん、早見優さんのライブも行われました。 音楽を聴いてノる人と盆踊りを踊る人に分かれ、最後まで大いに盛り上がりました！ The 15th Hamamatsucho Summer Festival was held in Hamamatsucho, Tokyo. We had a lot of fun at various corners, including a Bon dance corner and DJ performances! 2024.8.30 Fri 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Please Sub…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "target_year": 2023,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2024-08-30",
+      "video_id": "78lIYpiYKUk",
+      "video_url": "https://www.youtube.com/watch?v=78lIYpiYKUk",
+      "title": "【DJ KOO × 早見優 × 島谷ひとみ × 鳳蝶美成 ほか】「第15回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2024.8.30 @浜松町駅北口駅前広場",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-08-30T17:54:09Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/78lIYpiYKUk/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
+      "setlist_count": 2,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "鳳蝶美成（鳳蝶流家元師範・日本盆踊り協会特別顧問）先生👘登場",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "DJ KOO（日本盆踊り協会特別芸術顧問）さん🎧登場",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "00:00 オープニング🎤MC:久保朱莉（文化放送）さん 02:01 鳳蝶美成（鳳蝶流家元師範・日本盆踊り協会特別顧問）先生👘登場 03:06 DJ KOO（日本盆踊り協会特別芸術顧問）さん🎧登場 03:59 島谷ひとみさん🎤登場 04:24 YUME日和 - 島谷ひとみ 06:10 亜麻色の髪の乙女 - 島谷ひとみ 09:01 早見優さん🎤登場 09:41 夏色のナンシー - 早見優 13:32 Happy Birthday🎂早見優 - Stevie Wonder 15:56 BOY MEETS GIRL - TRF 16:54 Livin' On A Prayer (Radio Edit) - Bon Jovi 18:21 Bounce Generation (Radio Edit) - TJR, VINAI 21:25 Good Time (Wideboys Remix [Club]) - Owl City, Carly Rae Jepsen 21:46 Y.M.C.A. - GENERATIONS from EXILE TRIBE 23:19 気分上々↑↑ - Mihimar…"
     },
     {
       "status": "weak",
@@ -37203,6 +38253,144 @@
         "bon_context",
         "setlist_detected"
       ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-07-06",
+      "video_id": "dT8lPxX5MEM",
+      "video_url": "https://www.youtube.com/watch?v=dT8lPxX5MEM",
+      "title": "【河内おとこ節】（中村美律子）　2025年入谷朝顔音頭踊り大会2日目７　入谷朝顔まつり盆踊り　東京都台東区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2025-07-14T10:30:33Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/dT8lPxX5MEM/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2024 盆踊り",
+      "setlist_count": 10,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "朝顔音頭",
+          "url": "https://www.youtube.com/watch?v=YlxzJt4ljpI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=ExjcvAaq-YY",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "台東区の唄",
+          "url": "https://www.youtube.com/watch?v=iwmP45pfOYA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "旧 台東音頭",
+          "url": "https://www.youtube.com/watch?v=d41U3NEm8Vk",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=Q4FLdn0uJNw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=4SBSQLob0fo",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "少年八木節",
+          "url": "https://www.youtube.com/watch?v=FqQ31RJb1TE",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "河内おとこ節",
+          "url": "https://www.youtube.com/watch?v=dT8lPxX5MEM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=BceIcLxUBMU",
+          "source": "numbered_url"
+        },
+        {
+          "number": 13,
+          "title": "終 炭坑節 〆太鼓",
+          "url": "https://www.youtube.com/watch?v=RIwo2gFQUQc",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2025年7月6日に行われました、 「入谷朝顔音頭踊り大会」 入谷朝顔まつり盆踊り２日目の様子です。 入谷朝顔盆踊り 2日目 １朝顔音頭 https://youtu.be/YlxzJt4ljpI ２東京音頭 https://youtu.be/ExjcvAaq-YY ３台東区の唄 https://youtu.be/iwmP45pfOYA ４たいとう音頭 https://youtu.be/Q4FLdn0uJNw ５炭坑節 https://youtu.be/4SBSQLob0fo ６少年八木節 https://youtu.be/FqQ31RJb1TE ７河内おとこ節 https://youtu.be/dT8lPxX5MEM ８大東京音頭 https://youtu.be/BceIcLxUBMU 1日目 １朝顔音頭 https://youtu.be/9iOSn4GPqB0 ２東京音頭 https://youtu.be/mTJkylq1x_Q ３旧 台東音頭 https://youtu.be/d41U3NEm8Vk ４たいとう音頭 https://youtu.be/xw0qgPfU-5o ５炭…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-07-04",
+      "video_id": "1TdtmHl0M6Q",
+      "video_url": "https://www.youtube.com/watch?v=1TdtmHl0M6Q",
+      "title": "外国人も踊る踊る！上野公園でPOPな盆踊り !!!　APT. アパトゥ ダンシング・ヒーロー おジャ魔女カーニバル!! 盆ギリ恋歌　ビールと浴衣de盆踊り 2025 ～ふるさと東京応援祭～",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2025-07-04T15:29:51Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/1TdtmHl0M6Q/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2024 YouTube 盆踊り",
+      "setlist_count": 4,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "ダンシング・ヒーロー",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "炭坑節",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "すみっコぐらし音頭",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "ビールと浴衣de盆踊り ～ふるさと東京応援祭～ 2025年7月4日(金) 0:00 東京音頭 4:08 ゆるキャラ・ジャムム 5:09 ダンシング・ヒーロー 8:53 MC： 10:11 おジャ魔女カーニバル!! 13:51 盆ギリ恋歌 18:06 炭坑節 21:17 MC：YMCA or アパトゥ 投票 22:33 APT.（アパトゥ） 26:11 すみっコぐらし音頭 28:11 世界でいちばん熱い夏 30:36 ライオン（マクロスF） さんぽ ご視聴ありがとうございます。ぜひチャンネル登録と高評価よろしくお願いします！ Thank you for watching. Please subscribe and like our channel. https://www.youtube.com/@MatsuriNoKiseki #日本文化 #お祭り #祭 #盆踊り #伝統芸能 #東京 #インバウンド #matsuri #bonodori #bondance #traditionalarts #tokyo #tokyobonodori #japan #travel #traveljap…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
       "queue_id": "youtube-year-backfill:11103cae5c109fc8",
       "target_year": 2024,
       "event_name": "中目黒盆踊り大会",
@@ -37296,6 +38484,31 @@
         }
       ],
       "description_excerpt": "#雷門盆踊り #桑田佳祐#雷門 #盆踊り #浅草 #観光 【浅草 雷門盆踊り -夢灯篭- 2025】 開催日時：2025年9月6日(土) 17時30分～20時00分 開催場所：並木通り界隈（浅草雷門前） 00:00 たいとう音頭 03:50 輝け日本富士山踊り 08:17 東京スカイツリー音頭 13:06 Got To Be Real 17:04 波乗りジョニー"
+    },
+    {
+      "status": "weak",
+      "score": 28,
+      "reasons": [
+        "venue_in_video",
+        "other_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:dc700f89d251499c",
+      "target_year": 2024,
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
+      "venue": "萩中神社",
+      "area": "大田区",
+      "detected_event_date": "2025-08-24",
+      "video_id": "o82b4pjZhbI",
+      "video_url": "https://www.youtube.com/watch?v=o82b4pjZhbI",
+      "title": "萩中神社例大祭_2の2・宮出し～渡御（ヨコタ）～宮入り 2025/08/24",
+      "channel_id": "UCo-Ll06M5r_Gisrg9Bn167g",
+      "channel_title": "MrMikoshidako",
+      "published_at": "2025-08-26T06:58:00Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/o82b4pjZhbI/maxresdefault.jpg",
+      "query": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 萩中神社 大田区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "チャプターで観たいところへジャンプできます パソコンでは下方の（もっと見る）をクリックする スマホではタイトルをタップ後、下方の（もっと見る）をタップする 説明欄が展開するので、希望の時間表示（青い文字）を パソコンはクリック、スマホはタップします 収録箇所は次の通りです 境内の様子 0:00 祭事執行 1:39 集合写真・宮出し 5:59 宮神輿渡御 11:02 萩中二部 15:28 萩中四部 20:31 さわやか信用金庫 24:23 糀谷商店街振興組合 27:45 オーベルグランディオ萩中自治会 29:53 萩中八部・十六部 33:13 新宿東町会 38:13 萩中十四部 43:26 萩中十七部 46:45 萩中六部・七部・十八部 54:14 萩中十三部 1:00:54 萩中十一部 1:07:41 萩中十五部 1:09:58 マルエツ新糀谷店 1:15:23 萩中商店街 1:22:40 宮入道中 1:25:21 宮入り 1:43:33 挨拶・三本締め 1:51:51 編集後記 東京の最高気温３７．３度が出ました。 スマホのセーフティ機能が作動するほどの暑さで精密機器は動きません。…"
     },
     {
       "status": "weak",
@@ -37897,6 +39110,30 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "【2024年 盆踊りの記録】 日時：2024年8月25日(金) イベント名：下北沢盆踊り ▼下北沢盆踊り ダンシングヒーロー｜マツケンサンバⅡ｜他 https://youtu.be/37bU4IHu1bU #盆踊り"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0f55ad07c1d5f92a",
+      "target_year": 2023,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "RxpH7FprMRg",
+      "video_url": "https://www.youtube.com/watch?v=RxpH7FprMRg",
+      "title": "365日の紙飛行機【春の盆踊りフェスタinららぽーと名古屋みなとアクルス】",
+      "channel_id": "UC8XT2GRlZekSMkUNfgrx14A",
+      "channel_title": "IID",
+      "published_at": "2023-04-29T01:27:02Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/RxpH7FprMRg/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "２０２３年４月１６日（日）に開催いたしました「春の盆踊りフェスタ in ららぽーと名古屋みなとアクルス」の動画となります。 当日は沢山の方にご参加いただき盛況のうちに終えることができました。 その時の様子を一部ですが動画で公開させていただきます。 12番目の動画は総踊り後半のJ-POP盆踊りシリーズから365日の紙飛行機となります。 こちらは２０１６年に名古屋の新曲として踊られた振付で、名古屋の一部会場ではまだ踊られている定番の人気曲となります。 ゆっくりとしたシンプルな振付ですので盆踊りが初めてという方にもお楽しみいただけるのでは無いかと思っております。 なお、太鼓は前回有名曲盆踊りの平成～令和パートで叩いていただいた西尾さんにお願いしております。"
     },
     {
       "status": "weak",
@@ -39082,6 +40319,31 @@
       "status": "weak",
       "score": 15,
       "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
+      "target_year": 2023,
+      "event_name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "detected_event_date": "2024-08-30",
+      "video_id": "ORysHCkReBo",
+      "video_url": "https://www.youtube.com/watch?v=ORysHCkReBo",
+      "title": "【ハマサイトの夏祭り 2024】DJ KOO “BON DANCE”DJ with 早見優・鳳蝶美成 / 早見優と踊る盆ダンス",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2024-08-31T02:44:44Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/ORysHCkReBo/maxresdefault.jpg",
+      "query": "第16回ハマサイトの夏祭り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【第15回ハマサイトの夏祭り】 開催日時：2024年8月30日（金）16:00～21:00 ※ステージは18:00～20:45 開催場所：浜松町駅北口駅前広場・汐留ビルディング外構 https://www.google.com/maps/place/%E6%B1%90%E7%95%99%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0/@35.6565502,139.7579176,18.8z/data=!3m1!5s0x60188bc43e0cf08f:0xd0e1c28d953e4337!4m10!1m2!2m1!1z5rGQ55WZ44OT44Or44OH44Kj44Oz44Kw5aSW5qeL!3m6!1s0x60188bc5980c2059:0x2cd73cbae48a58e0!8m2!3d35.6566906!4d139.7593867!15sCh7msZDnlZnjg5Pjg6vjg4fjgqPjg7PjgrDlpJbmp4taIyIh5rGQ55WZIOODk-ODq-ODh-OCo-ODs-OCsCDlpJY…"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
         "bon_context"
       ],
       "queue_id": "youtube-year-backfill:3e4ee38c87feffbe",
@@ -39878,6 +41140,105 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-08-02",
+      "video_id": "nmRxnht55sk",
+      "video_url": "https://www.youtube.com/watch?v=nmRxnht55sk",
+      "title": "【渋谷盆踊り 2025】「河内おとこ節」盆踊り /  Shibuya Bon Dance Festival",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2025-08-13T10:01:15Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/nmRxnht55sk/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#渋谷盆踊り #渋谷 #河内おとこ節 #盆踊り 【渋谷盆踊り 2025】 開催日程：2025年8月2日(土) 開催場所：渋谷109前 https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "",
+      "video_id": "9bFltNPYD4s",
+      "video_url": "https://www.youtube.com/watch?v=9bFltNPYD4s",
+      "title": "【隅田川おどりフェスタ2025】ビューティフル・サンデー #盆踊り #bonodori #隅田川 #asakusa #japaneseculture",
+      "channel_id": "UC4BklGboDompzF5Yw4x6dXw",
+      "channel_title": "ニッポンを楽しむ",
+      "published_at": "2025-08-23T13:01:33Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/9bFltNPYD4s/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 上野恩賜公園 台東区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-07-04",
+      "video_id": "YXUgqyxC1LE",
+      "video_url": "https://www.youtube.com/watch?v=YXUgqyxC1LE",
+      "title": "盆踊り APT.（アパトゥ）　上野公園　ふるさと東京応援祭 ビールと浴衣de盆踊り2025",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2025-07-09T10:01:02Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/YXUgqyxC1LE/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "ふるさと東京応援祭 ビールと浴衣de盆踊 2025年7月4日(金) 2部 ジャンボリミッキー EZ DO DANCE おジャ魔女カーニバル!! 炭坑節 APT.（アパトゥ） LOVEマシーン すみっコぐらし音頭 世界でいちばん熱い夏 ライオン（マクロスF）"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:c915a52297989336",
+      "target_year": 2024,
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "detected_event_date": "2025-07-04",
+      "video_id": "leAohTXmzUw",
+      "video_url": "https://www.youtube.com/watch?v=leAohTXmzUw",
+      "title": "盆踊り LOVEマシーン　上野公園　ふるさと東京応援祭 ビールと浴衣de盆踊り2025",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2025-07-10T11:01:26Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/leAohTXmzUw/maxresdefault.jpg",
+      "query": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "ふるさと東京応援祭 ビールと浴衣de盆踊 2025年7月4日(金) 2部 ジャンボリミッキー EZ DO DANCE おジャ魔女カーニバル!! 炭坑節 APT.（アパトゥ） LOVEマシーン すみっコぐらし音頭 世界でいちばん熱い夏 ライオン（マクロスF）"
     },
     {
       "status": "weak",
@@ -42764,5 +44125,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-10-19T23:20:40.990998+00:00"
+  "merged_from": "2026-11-14T23:39:20.999003+00:00"
 }
