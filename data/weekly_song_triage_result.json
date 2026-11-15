@@ -1,16 +1,24 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 10,
-  "direct_count": 6,
-  "created_count": 1,
+  "song_candidate_count": 13,
+  "direct_count": 7,
+  "created_count": 2,
   "updated_count": 5,
-  "rejected_noise_count": 2,
-  "review_count": 2,
+  "rejected_noise_count": 3,
+  "review_count": 3,
   "created": [
     {
       "song_name": "津軽小原節",
       "source_term": "津軽小原節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "よされ節",
+      "source_term": "よされ節",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -35,16 +43,16 @@
       "dry_run": true
     },
     {
-      "song_name": "白鳥おどり",
-      "source_term": "白鳥おどり",
+      "song_name": "品川音頭",
+      "source_term": "品川音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "品川音頭",
-      "source_term": "品川音頭",
+      "song_name": "白鳥おどり",
+      "source_term": "白鳥おどり",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -61,26 +69,36 @@
   ],
   "rejected_noise": [
     {
+      "term": "津軽じょんがら節",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "白鳥おどり・郡上おどり",
       "reason": "曲名としての形が弱い"
     },
     {
-      "term": "津軽じょんがら節",
+      "term": "津軽じょんから節",
       "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
     {
+      "term": "東京みなと音頭",
+      "evidence_count": 3,
+      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+      "evidence_url": "https://www.youtube.com/watch?v=WKEK_hu0Pm0"
+    },
+    {
       "term": "郡上おどり",
-      "evidence_count": 5,
+      "evidence_count": 2,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://www.youtube.com/watch?v=gd5uo2CinfE"
     },
     {
-      "term": "東京みなと音頭",
-      "evidence_count": 3,
+      "term": "津軽甚句",
+      "evidence_count": 1,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=S62H8q3gj8U"
+      "evidence_url": "https://www.youtube.com/watch?v=8xqDpkJN7NM"
     }
   ]
 }

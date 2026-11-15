@@ -1,18 +1,18 @@
 # 日次X収穫サマリ
 
-- 生成時刻: 2026-11-14T13:40:05.524353+00:00
+- 生成時刻: 2026-11-15T14:06:06.160398+00:00
 - 対象期間: 直近 3 日
 - 対象voices: 36件
-- 候補総数: 10件
+- 候補総数: 13件
 
 ## 内訳
-- 曲候補: 10件
+- 曲候補: 13件
 
 ## レビュー対象
 - 用語・共起レビュー: 0件
-- 曲候補レビュー: 2件
-- 曲の明白候補 dry-run: 6件
-- 曲ノイズ除外: 2件
+- 曲候補レビュー: 3件
+- 曲の明白候補 dry-run: 7件
+- 曲ノイズ除外: 3件
 
 ## 生成物
 - non_song_json: `data/weekly_harvest_review_candidates.json`
@@ -25,5 +25,6 @@
 - `python apply_weekly_harvest_human13_decisions.py --candidates data/weekly_harvest_review_candidates.json --decisions data/weekly_harvest_review_decisions.json --out data/weekly_harvest_apply_result.json --dry-run`
 
 ## 曲レビュー例
-- 郡上おどり
 - 東京みなと音頭
+- 郡上おどり
+- 津軽甚句
