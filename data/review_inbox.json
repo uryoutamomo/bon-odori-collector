@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-14T13:51:32.314940+00:00",
+  "generated_at": "2026-11-15T14:07:26.200202+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -34317,6 +34317,452 @@
           "title": "",
           "tweet_id": "2067765707643949227",
           "url": "https://x.com/natsutr_bon/status/2067765707643949227"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_36a00f55294ea09c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "🏮🎶👘🏮🎶👘🏮🎶👘🏮🎶\n🏮御町内の盆踊り大会🎶\n㊗️港区政80周年記念👐🙌‼️\n🏮👘高輪盆踊り大会‼️\n(日時)　8月22日(土)\n　午後5時30分~午後8時3",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089589679775690813",
+      "source_url": "https://x.com/Protami610K9MAI/status/2089589679775690813",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "1724ce64fd917e5f7558ac208a64f65e9fd80cd2fda41db72e6f8aa93bca6ddd",
+      "last_seen_at": "github-43721423407-1",
+      "created_at": "2026-11-15T14:06:45.779706+00:00",
+      "updated_at": "2026-11-15T14:06:45.779706+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_14b50bc625509579",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月22日",
+          "5時",
+          "8時",
+          "8/23"
+        ],
+        "event_group_key": "informal:695a1b4be9bdc801",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-23"
+        ],
+        "priority_score": 85,
+        "source_author": "@Protami610K9MAI",
+        "source_count": 1,
+        "source_key": "x:2089589679775690813",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP-2ujNbAAANBFa.jpg",
+          "https://t.co/J9RoGMaqPk",
+          "pic.x.com/J9RoGMaqPk"
+        ],
+        "source_officiality": {
+          "account_name": "しｮう和5934",
+          "classification": "unknown_or_personal_social",
+          "handle": "@protami610k9mai",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n🏮🎶👘🏮🎶👘🏮🎶👘🏮🎶\n🏮御町内の盆踊り大会🎶\n㊗️港区政80周年記念👐🙌‼️\n🏮👘高輪盆踊り大会‼️\n(日時)　8月22日(土)\n　午後5時30分~午後8時30分\n🌦️雨天の場合8/23(日)に順延\n(場所)高野山東京別院境内\n　　〈港区高輪3~15~18〉\n#東京都港区\n#高輪ゲートウエイ駅\n#高輪台駅\n#泉岳寺駅\n#盆踊り大会 https://t.co/J9RoGMaqPk",
+        "source_url": "https://x.com/Protami610K9MAI/status/2089589679775690813",
+        "source_urls": [
+          "https://x.com/Protami610K9MAI/status/2089589679775690813"
+        ],
+        "voice": {
+          "account": "@Protami610K9MAI",
+          "critique_post": false,
+          "date": "2026-08-18T05:46:17+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP-2ujNbAAANBFa.jpg",
+            "https://t.co/J9RoGMaqPk",
+            "pic.x.com/J9RoGMaqPk"
+          ],
+          "name": "しｮう和5934",
+          "profile_description": "東京の銭湯､名画座を守れ！\n立ち呑み屋､角打ち探訪！\n盆踊り大会参加、研究中！\nX利用方法研究中！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "🏮🎶👘🏮🎶👘🏮🎶👘🏮🎶\n🏮御町内の盆踊り大会🎶\n㊗️港区政80周年記念👐🙌‼️\n🏮👘高輪盆踊り大会‼️\n(日時)　8月22日(土)\n　午後5時30分~午後8時30分\n🌦️雨天の場合8/23(日)に順延\n(場所)高野山東京別院境内\n　　〈港区高輪3~15~18〉\n#東京都港区\n#高輪ゲートウエイ駅\n#高輪台駅\n#泉岳寺駅\n#盆踊り大会 https://t.co/J9RoGMaqPk",
+          "title": "",
+          "tweet_id": "2089589679775690813",
+          "url": "https://x.com/Protami610K9MAI/status/2089589679775690813"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_3cb4e1f8fb294d3c",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "8月19日（水曜日）、当タトゥースタジオは本日10：00～終了時間未定でオープンしてます！！\n\n本日、大阪市中央区　本願寺津村別院（北御堂）にて「北御堂盆おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089853288799949162",
+      "source_url": "https://x.com/LuckyRoundTat/status/2089853288799949162",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a895e0e785ff763019b32b2a23e1ab5d62ad796703b2b621cda3a73845450eb4",
+      "last_seen_at": "github-43721423407-1",
+      "created_at": "2026-11-15T14:06:45.779706+00:00",
+      "updated_at": "2026-11-15T14:06:45.779706+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_d94605f2d067564c",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月19日"
+        ],
+        "event_group_key": "informal:ce92616913ab8e07",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-19"
+        ],
+        "priority_score": 85,
+        "source_author": "@LuckyRoundTat",
+        "source_count": 1,
+        "source_key": "x:2089853288799949162",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "Lucky Round Tattoo",
+          "classification": "unknown_or_personal_social",
+          "handle": "@luckyroundtat",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8月19日（水曜日）、当タトゥースタジオは本日10：00～終了時間未定でオープンしてます！！\n\n本日、大阪市中央区　本願寺津村別院（北御堂）にて「北御堂盆おどり」が行われます。提灯で彩られた境内に櫓が設けられ音頭にあわせて踊りの輪が広がる。夜店も並び大阪御堂筋の夏を代表する風物詩の一つ！",
+        "source_url": "https://x.com/LuckyRoundTat/status/2089853288799949162",
+        "source_urls": [
+          "https://x.com/LuckyRoundTat/status/2089853288799949162"
+        ],
+        "voice": {
+          "account": "@LuckyRoundTat",
+          "critique_post": false,
+          "date": "2026-08-18T23:13:46+00:00",
+          "name": "Lucky Round Tattoo",
+          "profile_description": "大阪の心斎橋、アメリカ村・三角公園前のタトゥースタジオ「Lucky Round Tattoo」です。https://t.co/tFmCkOmOkI トライバルや和彫り等、オールジャンルのタトゥーデザインに対応しています。 ブログはhttps://t.co/C02RpPUW0xにて。営業時間 10:00-17:00 (早く閉める場合もございます)",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-imminent"
+          ],
+          "text": "8月19日（水曜日）、当タトゥースタジオは本日10：00～終了時間未定でオープンしてます！！\n\n本日、大阪市中央区　本願寺津村別院（北御堂）にて「北御堂盆おどり」が行われます。提灯で彩られた境内に櫓が設けられ音頭にあわせて踊りの輪が広がる。夜店も並び大阪御堂筋の夏を代表する風物詩の一つ！",
+          "title": "",
+          "tweet_id": "2089853288799949162",
+          "url": "https://x.com/LuckyRoundTat/status/2089853288799949162"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_4d364ab62d5b643b",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "8/18火\n駒場東大前商店街 盆踊り\n19:00～21:00\n\n好きすぎて滅 は早くて難しいけど楽しい振り付け\n\n花まつり は石井ビューティー(米米CLUBの石",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089704870865707072",
+      "source_url": "https://x.com/_masakari/status/2089704870865707072",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a8a371243abe31fe10557d77876ea07699a11304dc5e12b8c45d9abb672a16dd",
+      "last_seen_at": "github-43721423407-1",
+      "created_at": "2026-11-15T14:06:45.779706+00:00",
+      "updated_at": "2026-11-15T14:06:45.779706+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_9c5658b4afe30adb",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/18"
+        ],
+        "event_group_key": "informal:c986b495ad6bd0e9",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-18"
+        ],
+        "priority_score": 85,
+        "source_author": "@_masakari",
+        "source_count": 1,
+        "source_key": "x:2089704870865707072",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQAfgAxawAAl_Dp.jpg",
+          "https://t.co/blGnHAkxUN",
+          "pic.x.com/blGnHAkxUN",
+          "https://pbs.twimg.com/media/HQAfgBBbUAAw7EA.jpg",
+          "https://pbs.twimg.com/media/HQAfgAzbUAA34IE.jpg",
+          "https://pbs.twimg.com/media/HQAfgA2bYAAha60.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+          "classification": "unknown_or_personal_social",
+          "handle": "@_masakari",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/18火\n駒場東大前商店街 盆踊り\n19:00～21:00\n\n好きすぎて滅 は早くて難しいけど楽しい振り付け\n\n花まつり は石井ビューティー(米米CLUBの石井竜也)の、ポンキッキーズの挿入歌。難しい\n\nドラえもん音頭の新旧2曲も細い所が難しいけど楽しく盛り上った\n\nおこさ節と新目黒音頭は簡単\n\n盛況でした https://t.co/blGnHAkxUN",
+        "source_url": "https://x.com/_masakari/status/2089704870865707072",
+        "source_urls": [
+          "https://x.com/_masakari/status/2089704870865707072"
+        ],
+        "voice": {
+          "account": "@_masakari",
+          "critique_post": false,
+          "date": "2026-08-18T13:24:00+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQAfgAxawAAl_Dp.jpg",
+            "https://t.co/blGnHAkxUN",
+            "pic.x.com/blGnHAkxUN",
+            "https://pbs.twimg.com/media/HQAfgBBbUAAw7EA.jpg",
+            "https://pbs.twimg.com/media/HQAfgAzbUAA34IE.jpg",
+            "https://pbs.twimg.com/media/HQAfgA2bYAAha60.jpg"
+          ],
+          "name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+          "profile_description": "_masakari",
+          "source": "x_whitelist",
+          "tags": [
+            "⭐盆踊ラー",
+            "🟡関心"
+          ],
+          "text": "8/18火\n駒場東大前商店街 盆踊り\n19:00～21:00\n\n好きすぎて滅 は早くて難しいけど楽しい振り付け\n\n花まつり は石井ビューティー(米米CLUBの石井竜也)の、ポンキッキーズの挿入歌。難しい\n\nドラえもん音頭の新旧2曲も細い所が難しいけど楽しく盛り上った\n\nおこさ節と新目黒音頭は簡単\n\n盛況でした https://t.co/blGnHAkxUN",
+          "title": "",
+          "tweet_id": "2089704870865707072",
+          "url": "https://x.com/_masakari/status/2089704870865707072",
+          "value_score": 11.0
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_97656d0b85160051",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "希望ヶ丘サマーデイズ 夏祭り 盆踊り\n📅8/29土-30日 18:00-21:00\n📍#石川台希望ヶ丘商店街(大田区)\n🚃石川台駅\n\n・お茶又はアイスを配布🎁(",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089739361457983573",
+      "source_url": "https://x.com/naka16655114/status/2089739361457983573",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "84cbc54a20440a8a70ac82b40ac98a085a530cdaff54947bc02b6f2f8dcbfb26",
+      "last_seen_at": "github-43721423407-1",
+      "created_at": "2026-11-15T14:06:45.779706+00:00",
+      "updated_at": "2026-11-15T14:06:45.779706+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_0ea1bec18ded49de",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/29"
+        ],
+        "event_group_key": "informal:51b47d34b7e05e10",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "priority_score": 85,
+        "source_author": "@naka16655114",
+        "source_count": 1,
+        "source_key": "x:2089739361457983573",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "東京イベント開拓戦士ゆっきー",
+          "classification": "unknown_or_personal_social",
+          "handle": "@naka16655114",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n希望ヶ丘サマーデイズ 夏祭り 盆踊り\n📅8/29土-30日 18:00-21:00\n📍#石川台希望ヶ丘商店街(大田区)\n🚃石川台駅\n\n・お茶又はアイスを配布🎁(それぞれ各日200点)\n\nhttps://t.co/I7by5HePP8",
+        "source_url": "https://x.com/naka16655114/status/2089739361457983573",
+        "source_urls": [
+          "https://x.com/naka16655114/status/2089739361457983573"
+        ],
+        "voice": {
+          "account": "@naka16655114",
+          "critique_post": false,
+          "date": "2026-08-18T15:41:03+00:00",
+          "name": "東京イベント開拓戦士ゆっきー",
+          "profile_description": "東京在住の私が東京神奈川エリアの無料イベントを開拓します。もともと趣味で無料イベント巡りをしていましたが、把握しきれないほどのイベントがあるので備忘録として投稿してみます。",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "希望ヶ丘サマーデイズ 夏祭り 盆踊り\n📅8/29土-30日 18:00-21:00\n📍#石川台希望ヶ丘商店街(大田区)\n🚃石川台駅\n\n・お茶又はアイスを配布🎁(それぞれ各日200点)\n\nhttps://t.co/I7by5HePP8",
+          "title": "",
+          "tweet_id": "2089739361457983573",
+          "url": "https://x.com/naka16655114/status/2089739361457983573"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_cb186c8d11def4c2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "🏮🎶👘🏮🎶👘🏮🎶👘🏮🎶\n㊗️御町内の盆踊り大会‼️\n🏮あやせ納涼盆踊り🎶　　\n2026(令和8)8/21金~8/22土\n午後7時~🉐午後９時３０分\n🉐🌦️雨天の",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089579064118124944",
+      "source_url": "https://x.com/Protami610K9MAI/status/2089579064118124944",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "477c4f1eec4d32db5d3b73f38e9cd32d8fbaca8640ba2c3ea146ea097783bc25",
+      "last_seen_at": "github-43721423407-1",
+      "created_at": "2026-11-15T14:06:45.779706+00:00",
+      "updated_at": "2026-11-15T14:06:45.779706+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_778c0b339d077082",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/21",
+          "8/22",
+          "7時",
+          "９時",
+          "8/23"
+        ],
+        "event_group_key": "informal:2899e8866cab78ec",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-23"
+        ],
+        "priority_score": 85,
+        "source_author": "@Protami610K9MAI",
+        "source_count": 1,
+        "source_key": "x:2089579064118124944",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HP-tEc-bUAAD6Bu.jpg",
+          "https://t.co/i74qTbvZYB",
+          "pic.x.com/i74qTbvZYB"
+        ],
+        "source_officiality": {
+          "account_name": "しｮう和5934",
+          "classification": "unknown_or_personal_social",
+          "handle": "@protami610k9mai",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n🏮🎶👘🏮🎶👘🏮🎶👘🏮🎶\n㊗️御町内の盆踊り大会‼️\n🏮あやせ納涼盆踊り🎶　　\n2026(令和8)8/21金~8/22土\n午後7時~🉐午後９時３０分\n🉐🌦️雨天の場合8/23(日)に\n　順延有り‼️\n(場所)　あやせ駅前ハト広場\n#東京都足立区\n#綾瀬駅前\n#ハト広場\n#盆踊り大会\n#盆おどり\n#盆おどらー\n#盆踊り道楽 https://t.co/i74qTbvZYB",
+        "source_url": "https://x.com/Protami610K9MAI/status/2089579064118124944",
+        "source_urls": [
+          "https://x.com/Protami610K9MAI/status/2089579064118124944"
+        ],
+        "voice": {
+          "account": "@Protami610K9MAI",
+          "critique_post": false,
+          "date": "2026-08-18T05:04:06+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HP-tEc-bUAAD6Bu.jpg",
+            "https://t.co/i74qTbvZYB",
+            "pic.x.com/i74qTbvZYB"
+          ],
+          "name": "しｮう和5934",
+          "profile_description": "東京の銭湯､名画座を守れ！\n立ち呑み屋､角打ち探訪！\n盆踊り大会参加、研究中！\nX利用方法研究中！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-cancel-change"
+          ],
+          "text": "🏮🎶👘🏮🎶👘🏮🎶👘🏮🎶\n㊗️御町内の盆踊り大会‼️\n🏮あやせ納涼盆踊り🎶　　\n2026(令和8)8/21金~8/22土\n午後7時~🉐午後９時３０分\n🉐🌦️雨天の場合8/23(日)に\n　順延有り‼️\n(場所)　あやせ駅前ハト広場\n#東京都足立区\n#綾瀬駅前\n#ハト広場\n#盆踊り大会\n#盆おどり\n#盆おどらー\n#盆踊り道楽 https://t.co/i74qTbvZYB",
+          "title": "",
+          "tweet_id": "2089579064118124944",
+          "url": "https://x.com/Protami610K9MAI/status/2089579064118124944"
         }
       }
     },
