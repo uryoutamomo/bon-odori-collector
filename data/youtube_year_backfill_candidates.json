@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-11-14T23:39:21.614209+00:00",
+  "generated_at": "2026-11-15T23:45:49.738041+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 1002,
+    "candidate_count": 1003,
     "status_counts": {
       "review": 74,
       "strong": 246,
-      "weak": 682
+      "weak": 683
     },
     "strong_count": 246,
     "review_count": 74
@@ -43732,6 +43732,28 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:458c0bf1425b5a71",
+      "target_year": 2024,
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "iD_LBOARCEs",
+      "video_url": "https://www.youtube.com/watch?v=iD_LBOARCEs",
+      "title": "【六親會】令和７年度 小山両社祭 連合渡御（2025 Ryousha Festival）",
+      "channel_id": "UCMHHzbpbGdU0wD5tw78hpBQ",
+      "channel_title": "rikushinkai",
+      "published_at": "2025-09-27T11:42:42Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/iD_LBOARCEs/maxresdefault.jpg",
+      "query": "瀬田商店会 瀬田納涼盆踊り 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "品川区小山6丁目町会 六親會（りくしんかい） http://www.rikushinkai.net/ ※撮影時の状況により一部音声に乱れがあります。"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:e79f8c730bbc5386",
       "target_year": 2024,
       "event_name": "盆踊り(池尻地区)",
@@ -44125,5 +44147,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-11-14T23:39:20.999003+00:00"
+  "merged_from": "2026-11-15T23:45:49.176618+00:00"
 }
