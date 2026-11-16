@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "generated_by": "build_odottar_coverage_benchmark.py",
-  "fetched_at": "2026-11-09T01:42:40Z",
+  "fetched_at": "2026-11-16T01:58:53Z",
   "source": {
     "url": "https://odottar.com/events.json",
-    "raw_sha256": "ce774d4236746e3d7f1a547214d98cd31c57a7e6e0394457a08193d32ba8963c",
-    "row_count": 3523
+    "raw_sha256": "13aed4803e59f86097956bc4ffaca77d1edb09d53f2ba40cda0a0949c450641e",
+    "row_count": 3562
   },
   "safety_boundary": "coverage_benchmark_only: no canonical import, no review-inbox candidate, and no odottar URL projection into event source_urls",
   "canonical_write_count": 0,
   "review_inbox_candidate_count": 0,
   "summary": {
-    "odottar_tokyo23": 926,
+    "odottar_tokyo23": 931,
     "bonsuke_tokyo23": 394,
     "estimated_matched": 206,
-    "odottar_only": 720,
+    "odottar_only": 725,
     "bonsuke_only": 188
   },
   "wards": [
@@ -66,19 +66,19 @@
     {
       "ward": "台東区",
       "priority": false,
-      "odottar": 35,
+      "odottar": 36,
       "bonsuke": 18,
       "estimated_matched": 8,
-      "odottar_only": 27,
+      "odottar_only": 28,
       "bonsuke_only": 10
     },
     {
       "ward": "墨田区",
       "priority": false,
-      "odottar": 64,
+      "odottar": 65,
       "bonsuke": 25,
       "estimated_matched": 4,
-      "odottar_only": 60,
+      "odottar_only": 61,
       "bonsuke_only": 21
     },
     {
@@ -183,10 +183,10 @@
     {
       "ward": "板橋区",
       "priority": true,
-      "odottar": 62,
+      "odottar": 63,
       "bonsuke": 20,
       "estimated_matched": 15,
-      "odottar_only": 47,
+      "odottar_only": 48,
       "bonsuke_only": 5
     },
     {
@@ -201,10 +201,10 @@
     {
       "ward": "足立区",
       "priority": true,
-      "odottar": 79,
+      "odottar": 80,
       "bonsuke": 28,
       "estimated_matched": 26,
-      "odottar_only": 53,
+      "odottar_only": 54,
       "bonsuke_only": 2
     },
     {
@@ -219,10 +219,10 @@
     {
       "ward": "江戸川区",
       "priority": true,
-      "odottar": 121,
+      "odottar": 122,
       "bonsuke": 62,
       "estimated_matched": 51,
-      "odottar_only": 70,
+      "odottar_only": 71,
       "bonsuke_only": 11
     }
   ],

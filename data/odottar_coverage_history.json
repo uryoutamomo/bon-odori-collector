@@ -45,6 +45,15 @@
       "estimated_matched": 206,
       "odottar_only": 720,
       "bonsuke_only": 188
+    },
+    {
+      "fetched_at": "2026-11-16T01:58:53Z",
+      "raw_sha256": "13aed4803e59f86097956bc4ffaca77d1edb09d53f2ba40cda0a0949c450641e",
+      "odottar_tokyo23": 931,
+      "bonsuke_tokyo23": 394,
+      "estimated_matched": 206,
+      "odottar_only": 725,
+      "bonsuke_only": 188
     }
   ]
 }
