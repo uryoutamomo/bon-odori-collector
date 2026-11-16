@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-15T14:17:44.613784+00:00",
+  "generated_at": "2026-11-16T15:51:35.985854+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -34317,6 +34317,442 @@
           "title": "",
           "tweet_id": "2067765707643949227",
           "url": "https://x.com/natsutr_bon/status/2067765707643949227"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_19f7c3953b89624e",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "8/21（金）第17回ハマサイトの夏祭り 〜オトナもコドモもLet's ボンダンス！！〜\n\n日時: 2026年8月21日（金）16:00～21:00（ステージは",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089953521101902262",
+      "source_url": "https://x.com/DJKOO_official/status/2089953521101902262",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "8ad89f95d4f2bfec1174f00ea6215d53a90e0855e19bcffdf51189bfb7cde5ae",
+      "last_seen_at": "github-43899144508-1",
+      "created_at": "2026-11-16T15:51:07.499059+00:00",
+      "updated_at": "2026-11-16T15:51:07.499059+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_5d153d911debf531",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/21",
+          "8月21日"
+        ],
+        "event_group_key": "informal:57f4bfe586cbdec6",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-21"
+        ],
+        "priority_score": 85,
+        "source_author": "@DJKOO_official",
+        "source_count": 1,
+        "source_key": "x:2089953521101902262",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQEBEWyacAAHdfF.jpg",
+          "https://t.co/3naXrHzFTq",
+          "pic.x.com/3naXrHzFTq"
+        ],
+        "source_officiality": {
+          "account_name": "D J K O O",
+          "classification": "unknown_or_personal_social",
+          "handle": "@djkoo_official",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8/21（金）第17回ハマサイトの夏祭り 〜オトナもコドモもLet's ボンダンス！！〜\n\n日時: 2026年8月21日（金）16:00～21:00（ステージは18:00～20:45）\n※荒天・雨天中止（順延なし）\n\n場所: 浜松町駅北口駅前広場・汐留ビルディング外構\n入場料: 無料（フリー観覧）\n\n出演： #DJKOO #サンプラザ中野くん（爆風スランプ） #新浜レオン #陽真 #Rainy。、#鳳蝶美成　　\n\n司会： #前田恵里花（文化放送アナウンサー）　\n\nサァ！夏の終わり！ブチ上がりDO DANCE！！\n\nhttps://t.co/68yYO9IDuR\n\n#ハマサイト \n#夏祭り \n#盆踊り",
+        "source_url": "https://x.com/DJKOO_official/status/2089953521101902262",
+        "source_urls": [
+          "https://x.com/DJKOO_official/status/2089953521101902262"
+        ],
+        "voice": {
+          "account": "@DJKOO_official",
+          "critique_post": false,
+          "date": "2026-08-19T05:52:03+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQEBEWyacAAHdfF.jpg",
+            "https://t.co/3naXrHzFTq",
+            "pic.x.com/3naXrHzFTq"
+          ],
+          "name": "D J K O O",
+          "profile_description": "DJ45周年『DO DANCE！45』始動！ 「最KOO DE DANCE」リリース！  TikTok→https://t.co/YKQxiRPTda  KOOTUBEで配信中！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "8/21（金）第17回ハマサイトの夏祭り 〜オトナもコドモもLet's ボンダンス！！〜\n\n日時: 2026年8月21日（金）16:00～21:00（ステージは18:00～20:45）\n※荒天・雨天中止（順延なし）\n\n場所: 浜松町駅北口駅前広場・汐留ビルディング外構\n入場料: 無料（フリー観覧）\n\n出演： #DJKOO #サンプラザ中野くん（爆風スランプ） #新浜レオン #陽真 #Rainy。、#鳳蝶美成　　\n\n司会： #前田恵里花（文化放送アナウンサー）　\n\nサァ！夏の終わり！ブチ上がりDO DANCE！！\n\nhttps://t.co/68yYO9IDuR\n\n#ハマサイト \n#夏祭り \n#盆踊り",
+          "title": "",
+          "tweet_id": "2089953521101902262",
+          "url": "https://x.com/DJKOO_official/status/2089953521101902262"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_5fb478441371fa12",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "🏮今週末開催！🏮\n🎆 綾瀬三丁目盆踊り 🎆\n8月21日（金）・22日（土）\n🕖 19:00〜21:30頃\n📍 綾瀬駅前はと広場\nみんなで踊って、夏の夜を楽しみま",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089877881602412935",
+      "source_url": "https://x.com/Kimono_S_Ryu_09/status/2089877881602412935",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "3f8de19ddf9eb389017320db1ef6e298d2f65a07e8d2cef53b80611801a3d3e7",
+      "last_seen_at": "github-43899144508-1",
+      "created_at": "2026-11-16T15:51:07.499059+00:00",
+      "updated_at": "2026-11-16T15:51:07.499059+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_ce1e57051ce73997",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月21日"
+        ],
+        "event_group_key": "informal:05595e38f1551e52",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-21"
+        ],
+        "priority_score": 85,
+        "source_author": "@Kimono_S_Ryu_09",
+        "source_count": 1,
+        "source_key": "x:2089877881602412935",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQC82wTaIAAWjuS.jpg",
+          "https://t.co/UytRbJiuM1",
+          "pic.x.com/UytRbJiuM1"
+        ],
+        "source_officiality": {
+          "account_name": "貞方龍",
+          "classification": "unknown_or_personal_social",
+          "handle": "@kimono_s_ryu_09",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n🏮今週末開催！🏮\n🎆 綾瀬三丁目盆踊り 🎆\n8月21日（金）・22日（土）\n🕖 19:00〜21:30頃\n📍 綾瀬駅前はと広場\nみんなで踊って、夏の夜を楽しみましょう！✨\nぜひご参加ください！\n\n会場:\nhttps://t.co/GbzO4fxGX8 https://t.co/UytRbJiuM1",
+        "source_url": "https://x.com/Kimono_S_Ryu_09/status/2089877881602412935",
+        "source_urls": [
+          "https://x.com/Kimono_S_Ryu_09/status/2089877881602412935"
+        ],
+        "voice": {
+          "account": "@Kimono_S_Ryu_09",
+          "critique_post": false,
+          "date": "2026-08-19T00:51:29+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQC82wTaIAAWjuS.jpg",
+            "https://t.co/UytRbJiuM1",
+            "pic.x.com/UytRbJiuM1"
+          ],
+          "name": "貞方龍",
+          "profile_description": "",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "🏮今週末開催！🏮\n🎆 綾瀬三丁目盆踊り 🎆\n8月21日（金）・22日（土）\n🕖 19:00〜21:30頃\n📍 綾瀬駅前はと広場\nみんなで踊って、夏の夜を楽しみましょう！✨\nぜひご参加ください！\n\n会場:\nhttps://t.co/GbzO4fxGX8 https://t.co/UytRbJiuM1",
+          "title": "",
+          "tweet_id": "2089877881602412935",
+          "url": "https://x.com/Kimono_S_Ryu_09/status/2089877881602412935"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_7f0bd97aa6cd4ac2",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "8月22、23日、大門小学校、尾久宮前小学校で盆踊り大会開催！\nhttps://t.co/9ce7ppIRjr \n\n#荒川区 #盆踊り https://t.co",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089911599561896332",
+      "source_url": "https://x.com/ARAKAWA_102/status/2089911599561896332",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "763dd0b9c541d64e550fd37d504b53e8ec7f3a0abd88a93583a1b2dfcaace8bc",
+      "last_seen_at": "github-43899144508-1",
+      "created_at": "2026-11-16T15:51:07.499059+00:00",
+      "updated_at": "2026-11-16T15:51:07.499059+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_540dce4c724a7d9a",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月22"
+        ],
+        "event_group_key": "informal:5d7c2a5af660da8a",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-22"
+        ],
+        "priority_score": 85,
+        "source_author": "@ARAKAWA_102",
+        "source_count": 1,
+        "source_key": "x:2089911599561896332",
+        "source_media_urls": [
+          "https://pbs.twimg.com/media/HQDbcRya4AAQINz.jpg",
+          "https://t.co/PzMKzA4ltE",
+          "pic.x.com/PzMKzA4ltE",
+          "https://pbs.twimg.com/media/HQDbcRzaIAATNug.jpg"
+        ],
+        "source_officiality": {
+          "account_name": "荒川区の地域メディア 荒川102",
+          "classification": "unknown_or_personal_social",
+          "handle": "@arakawa_102",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n8月22、23日、大門小学校、尾久宮前小学校で盆踊り大会開催！\nhttps://t.co/9ce7ppIRjr \n\n#荒川区 #盆踊り https://t.co/PzMKzA4ltE",
+        "source_url": "https://x.com/ARAKAWA_102/status/2089911599561896332",
+        "source_urls": [
+          "https://x.com/ARAKAWA_102/status/2089911599561896332"
+        ],
+        "voice": {
+          "account": "@ARAKAWA_102",
+          "critique_post": false,
+          "date": "2026-08-19T03:05:28+00:00",
+          "media_urls": [
+            "https://pbs.twimg.com/media/HQDbcRya4AAQINz.jpg",
+            "https://t.co/PzMKzA4ltE",
+            "pic.x.com/PzMKzA4ltE",
+            "https://pbs.twimg.com/media/HQDbcRzaIAATNug.jpg"
+          ],
+          "name": "荒川区の地域メディア 荒川102",
+          "profile_description": "2013年創刊。荒川区の住民が自ら取材したリアル情報満載の、荒川区の地域情報サイト荒川102の公式Twitterアカウントです。 取材依頼、広告出稿、カレンダー掲載、その他ホームページの運用やインターネット活用全般についてのご相談等、お気軽にご連絡ください♪ メール: contact@arakawa102.com",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "text": "8月22、23日、大門小学校、尾久宮前小学校で盆踊り大会開催！\nhttps://t.co/9ce7ppIRjr \n\n#荒川区 #盆踊り https://t.co/PzMKzA4ltE",
+          "title": "",
+          "tweet_id": "2089911599561896332",
+          "url": "https://x.com/ARAKAWA_102/status/2089911599561896332"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_89e36095e3060ab3",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "@rollingasahi \n8/22(土) 板橋区盆踊り\nこうま幼稚園\n高島平第六小学校\n前野小学校\n小茂根二丁目公園\n志村公園\n徳丸(イルカ)公園\n赤塚七丁",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089915742527647994",
+      "source_url": "https://x.com/takasho06130613/status/2089915742527647994",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "08f14752ab18ffbb0df391aa883d60c626fdf5ad0885f1722757d8dc82430504",
+      "last_seen_at": "github-43899144508-1",
+      "created_at": "2026-11-16T15:51:07.499059+00:00",
+      "updated_at": "2026-11-16T15:51:07.499059+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_50989694b6dee728",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8/22"
+        ],
+        "event_group_key": "informal:fd831430ab640e1e",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-22"
+        ],
+        "priority_score": 85,
+        "source_author": "@takasho06130613",
+        "source_count": 1,
+        "source_key": "x:2089915742527647994",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "たかし🍜",
+          "classification": "unknown_or_personal_social",
+          "handle": "@takasho06130613",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n@rollingasahi \n8/22(土) 板橋区盆踊り\nこうま幼稚園\n高島平第六小学校\n前野小学校\n小茂根二丁目公園\n志村公園\n徳丸(イルカ)公園\n赤塚七丁目児童遊園",
+        "source_url": "https://x.com/takasho06130613/status/2089915742527647994",
+        "source_urls": [
+          "https://x.com/takasho06130613/status/2089915742527647994"
+        ],
+        "voice": {
+          "account": "@takasho06130613",
+          "critique_post": false,
+          "date": "2026-08-19T03:21:56+00:00",
+          "name": "たかし🍜",
+          "profile_description": "カープとUVERworldと盆踊りが好き\n\nメノニューイヤー・仮面女子・ジュリアナの祟り🥰",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-venue-tokyo-wards"
+          ],
+          "text": "@rollingasahi \n8/22(土) 板橋区盆踊り\nこうま幼稚園\n高島平第六小学校\n前野小学校\n小茂根二丁目公園\n志村公園\n徳丸(イルカ)公園\n赤塚七丁目児童遊園",
+          "title": "",
+          "tweet_id": "2089915742527647994",
+          "url": "https://x.com/takasho06130613/status/2089915742527647994"
+        }
+      }
+    },
+    {
+      "inbox_id": "inbox_eab0a37d2c00d03a",
+      "kind": "x_gap",
+      "domain": "X",
+      "priority_label": "P1",
+      "priority_score": 85.0,
+      "title": "今週末、盆踊りに参加させていたきます🥁\n▶︎8月21-23日\n@あらかわ遊園運動場  \n▶︎8月22日\n@北区立堀船公園  \nまだまだ暑い日が続きますが、東京太",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_id": "x_gap",
+      "source_key": "x:2089970496700141928",
+      "source_url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+      "recommended_action": "review_new_event",
+      "status": "pending",
+      "time_scope": "future",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ec8a9e131d9ce66c86f677ebad4a57e44df8332bb51d89383644f2cc06a4ab32",
+      "last_seen_at": "github-43899144508-1",
+      "created_at": "2026-11-16T15:51:07.499059+00:00",
+      "updated_at": "2026-11-16T15:51:07.499059+00:00",
+      "payload": {
+        "archive_reason": "informal_new_event_daily_cap",
+        "candidate_id": "xgap_b27302bf1a15b1da",
+        "candidate_kind": "informal_new_event",
+        "corroboration_count": 1,
+        "date_hints": [
+          "8月21",
+          "8月22日"
+        ],
+        "event_group_key": "informal:eabddf78ddf948e6",
+        "event_year": 2026,
+        "known_venue_evidence": null,
+        "lane_hint": "lane2",
+        "matched_occurrence": null,
+        "observed_dates": [
+          "2026-08-23"
+        ],
+        "priority_score": 85,
+        "source_author": "@Tokyo_Daiko_J",
+        "source_count": 1,
+        "source_key": "x:2089970496700141928",
+        "source_media_urls": [],
+        "source_officiality": {
+          "account_name": "城北流_東京太鼓",
+          "classification": "unknown_or_personal_social",
+          "handle": "@tokyo_daiko_j",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation",
+          "score": 2,
+          "source_type": "",
+          "trust_level": "candidate"
+        },
+        "source_text": "\n今週末、盆踊りに参加させていたきます🥁\n▶︎8月21-23日\n@あらかわ遊園運動場  \n▶︎8月22日\n@北区立堀船公園  \nまだまだ暑い日が続きますが、東京太鼓皆んなで力を合わせて頑張ります！お近くの方は是非遊びにいらしてくださいね♪\n#和太鼓教室 #和太鼓 #東京太鼓 #北区 #荒川区",
+        "source_url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928",
+        "source_urls": [
+          "https://x.com/Tokyo_Daiko_J/status/2089970496700141928"
+        ],
+        "voice": {
+          "account": "@Tokyo_Daiko_J",
+          "critique_post": false,
+          "date": "2026-08-19T06:59:30+00:00",
+          "name": "城北流_東京太鼓",
+          "profile_description": "東京都北区•荒川区•文京区を中心とした和太鼓教室\"東京太鼓\"です。和太鼓奏者 やす•ゆうじを講師に、子どもから大人まで楽しく練習しています✨練習生募集中です、以下ホームページよりご連絡ください。 ＊広報担当にて更新中！",
+          "source": "x",
+          "tags": [
+            "🟡関心",
+            "q-base"
+          ],
+          "text": "今週末、盆踊りに参加させていたきます🥁\n▶︎8月21-23日\n@あらかわ遊園運動場  \n▶︎8月22日\n@北区立堀船公園  \nまだまだ暑い日が続きますが、東京太鼓皆んなで力を合わせて頑張ります！お近くの方は是非遊びにいらしてくださいね♪\n#和太鼓教室 #和太鼓 #東京太鼓 #北区 #荒川区",
+          "title": "",
+          "tweet_id": "2089970496700141928",
+          "url": "https://x.com/Tokyo_Daiko_J/status/2089970496700141928"
         }
       }
     },
