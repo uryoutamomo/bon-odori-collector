@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-11-17T16:10:21.641950+00:00",
+  "generated_at": "2026-11-17T16:12:07.002746+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -42460,6 +42460,65 @@
       }
     },
     {
+      "inbox_id": "inbox_31f8cd1878993ca5",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "東京みなと音頭",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:東京みなと音頭",
+      "source_url": "https://www.youtube.com/watch?v=2ugmqXjS6vU",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "b1b79062393ce527629c30a321405f54838a3faa82eac6b515a6d04f9ff22930",
+      "last_seen_at": "github-44120238099-1-daily_song_candidate",
+      "created_at": "2026-11-11T14:30:25.948682+00:00",
+      "updated_at": "2026-11-17T16:10:35.435406+00:00",
+      "payload": {
+        "canonical_song_name": "東京みなと音頭",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-17T11:30:33+00:00",
+            "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+            "url": "https://www.youtube.com/watch?v=2ugmqXjS6vU"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-16T12:00:18+00:00",
+            "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+            "url": "https://www.youtube.com/watch?v=oznOfvoqQ94"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-11-15T12:00:29+00:00",
+            "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+            "url": "https://www.youtube.com/watch?v=WKEK_hu0Pm0"
+          }
+        ],
+        "evidence_count": 3,
+        "evidence_text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー \n---\n2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー \n---\n2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+        "evidence_url": "https://www.youtube.com/watch?v=2ugmqXjS6vU",
+        "interpretation": "東京みなと音頭",
+        "reason": "曲名抽出器で検出: song_suffix_near_context",
+        "term": "東京みなと音頭",
+        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_b94d87ab01b0f80e",
       "kind": "youtube_evidence",
       "domain": "YouTube",
@@ -42555,65 +42614,6 @@
         ],
         "video_id": "dvUZD6AFn9k",
         "video_url": "https://www.youtube.com/watch?v=dvUZD6AFn9k"
-      }
-    },
-    {
-      "inbox_id": "inbox_31f8cd1878993ca5",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "東京みなと音頭",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:東京みなと音頭",
-      "source_url": "https://www.youtube.com/watch?v=oznOfvoqQ94",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "90d99af6235eab9066bd6b5fc8d047556a18d2dea5c25776aabd07dfd410598b",
-      "last_seen_at": "github-43899144508-1-daily_song_candidate",
-      "created_at": "2026-11-11T14:30:25.948682+00:00",
-      "updated_at": "2026-11-16T15:56:54.579519+00:00",
-      "payload": {
-        "canonical_song_name": "東京みなと音頭",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-16T12:00:18+00:00",
-            "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
-            "url": "https://www.youtube.com/watch?v=oznOfvoqQ94"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-15T12:00:29+00:00",
-            "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
-            "url": "https://www.youtube.com/watch?v=WKEK_hu0Pm0"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-11-14T12:00:06+00:00",
-            "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
-            "url": "https://www.youtube.com/watch?v=S62H8q3gj8U"
-          }
-        ],
-        "evidence_count": 3,
-        "evidence_text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー \n---\n2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー \n---\n2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
-        "evidence_url": "https://www.youtube.com/watch?v=oznOfvoqQ94",
-        "interpretation": "東京みなと音頭",
-        "reason": "曲名抽出器で検出: song_suffix_near_context",
-        "term": "東京みなと音頭",
-        "triage_reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-        "type": "曲名"
       }
     },
     {
