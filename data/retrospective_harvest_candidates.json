@@ -1,9 +1,9 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-11-17T16:04:58.796114+00:00",
+  "generated_at": "2026-11-18T15:47:05.436749+00:00",
   "source": "data/voices.json",
-  "voice_count": 45924,
-  "classified_event_evidence_count": 11358,
+  "voice_count": 45933,
+  "classified_event_evidence_count": 11363,
   "candidate_count": 9528,
   "counts": {
     "by_kind": {
@@ -77559,10 +77559,76 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 7,
+      "evidence_count": 9,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:74402375bee3207f5dbea882b53f494ac41854a039c07ac2b5566637daf4a506",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=5GAQ34cWqtc",
+          "text": "2026年11月1日、大井競馬場で開催された\n「しながわ盆フェス」盆踊りの様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年11月1日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り２日目\n１東京みなと音頭　https://youtu.be/wALyekoCwcM\n２竹芝絵巻　https://youtu.be/dapOTiu1_DU\n３高輪Gateway夢拍子　https://youtu.be/Lq_36ZbBojs\n４東京タワー音頭　https://youtu.be/S62H8q3gj8U\n５負けないで　https://youtu.be/WKEK_hu0Pm0\n６ファンファーレ　https://youtu.be/oznOfvoqQ94\n７盛れ！ミ・アモーレ　https://youtu.be/2ugmqXjS6v",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-18T11:30:34+00:00",
+          "observed_at": "2026-11-18T11:30:34+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:008cc5c18efcaa2ce46d2a03eca3e21e3eb6940c5254fa71256c8615d04c503d",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2MLNdyB_VpI",
+          "text": "2026年11月1日、大井競馬場で開催された\n「しながわ盆フェス」盆踊りの様子です！\n\n楽しい盆踊りの熱気をぜひお楽しみください。\n\n■ 開催情報\n ・イベント名：しながわ盆フェス \n・開催日：2026年11月1日\n ・会場：大井競馬場（TCK） \n\n動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！\n\n#品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り\n\nしながわ盆フェス盆踊り２日目\n１東京みなと音頭　https://youtu.be/wALyekoCwcM\n２竹芝絵巻　https://youtu.be/dapOTiu1_DU\n３高輪Gateway夢拍子　https://youtu.be/Lq_36ZbBojs\n４東京タワー音頭　https://youtu.be/S62H8q3gj8U\n５負けないで　https://youtu.be/WKEK_hu0Pm0\n６ファンファーレ　https://youtu.be/oznOfvoqQ94\n７盛れ！ミ・アモーレ　https://youtu.be/2ugmqXjS6v",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-18T11:00:17+00:00",
+          "observed_at": "2026-11-18T11:00:17+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "normalized_event": "楽しい",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:3d4c97a1131aa1197993aa2d3f1c706a79e683596182bf37fef6a2ba72095639",
           "tweet_id": "",
@@ -87801,10 +87867,80 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 13,
+      "evidence_count": 15,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:dc235d3cbd59aec4b3ad3ed6e6274247f6da8bf6c9888f0d62a3d59179c690ea",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ng9CuMqXXgE",
+          "text": "2026年10月10日、\n東京都新宿区の荒木公園で開催された\n「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！\n\n秋風が心地よい荒木公園に響き渡る和太鼓の音色と、\n地域の皆様の活気あふれる踊りをぜひお楽しみください。\n\n【イベント情報】\n ・イベント名：踊ろう！in荒木町の秋 盆踊り \n・開催日：2026年10月10日 \n・開催場所：荒木公園（東京都新宿区荒木町）\n・主催：荒木町青年会\n\n\n動画が気に入っていただけたら、\nぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ \n感想や「この曲が好き！」などのコメントもお待ちしています。\n\n#盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能\n\n\n荒木町盆踊り\n１東京音頭　https://youtu.be/6jN1TiQYM-M\n２炭坑節　https://youtu.be/RN3tXQVOzBk\n３大東京音頭　https://youtu.be/bDOPvPVAKEA\n４八木節　https://youtu.be/hoSPCqWx7qc\n５オバＱ音頭　https://youtu.be/2LU",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-18T10:30:35+00:00",
+          "observed_at": "2026-11-18T10:30:35+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "normalized_event": "荒木町",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:sha256:e0c73d22ef5c25f585d1f92d92f065f5767553383f7b60e7da58d6c9b2215753",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fYaG3bYr5ZU",
+          "text": "2026年10月10日、\n東京都新宿区の荒木公園で開催された\n「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！\n\n秋風が心地よい荒木公園に響き渡る和太鼓の音色と、\n地域の皆様の活気あふれる踊りをぜひお楽しみください。\n\n【イベント情報】\n ・イベント名：踊ろう！in荒木町の秋 盆踊り \n・開催日：2026年10月10日 \n・開催場所：荒木公園（東京都新宿区荒木町）\n・主催：荒木町青年会\n\n\n動画が気に入っていただけたら、\nぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ \n感想や「この曲が好き！」などのコメントもお待ちしています。\n\n#盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能\n\n\n荒木町盆踊り\n１東京音頭　https://youtu.be/6jN1TiQYM-M\n２炭坑節　https://youtu.be/RN3tXQVOzBk\n３大東京音頭　https://youtu.be/bDOPvPVAKEA\n４八木節　https://youtu.be/hoSPCqWx7qc\n５オバＱ音頭　https://youtu.be/2LU",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-11-18T10:00:25+00:00",
+          "observed_at": "2026-11-18T10:00:25+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "normalized_event": "荒木町",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:1dcadb50a3a6ea1b393e8d9926b07b8dea7db39eff78d7a8d5d74b7f43dd32b5",
           "tweet_id": "",
@@ -403278,6 +403414,46 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:dc235d3cbd59aec4b3ad3ed6e6274247f6da8bf6c9888f0d62a3d59179c690ea",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ng9CuMqXXgE",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T10:30:35+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e0c73d22ef5c25f585d1f92d92f065f5767553383f7b60e7da58d6c9b2215753",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fYaG3bYr5ZU",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T10:00:25+00:00",
+          "score": 17,
+          "song_name": "東京音頭",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:1dcadb50a3a6ea1b393e8d9926b07b8dea7db39eff78d7a8d5d74b7f43dd32b5",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=ni6gMhK-Lxc",
@@ -403543,7 +403719,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 13,
+      "evidence_count": 15,
       "speaker_count": 1
     },
     {
@@ -451167,6 +451343,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:dc235d3cbd59aec4b3ad3ed6e6274247f6da8bf6c9888f0d62a3d59179c690ea",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ng9CuMqXXgE",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T10:30:35+00:00",
+          "score": 17,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e0c73d22ef5c25f585d1f92d92f065f5767553383f7b60e7da58d6c9b2215753",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fYaG3bYr5ZU",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T10:00:25+00:00",
+          "score": 17,
+          "song_name": "炭坑節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:1dcadb50a3a6ea1b393e8d9926b07b8dea7db39eff78d7a8d5d74b7f43dd32b5",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=ni6gMhK-Lxc",
@@ -451418,7 +451632,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 13,
+      "evidence_count": 15,
       "speaker_count": 1
     },
     {
@@ -505829,6 +506043,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:74402375bee3207f5dbea882b53f494ac41854a039c07ac2b5566637daf4a506",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=5GAQ34cWqtc",
+          "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T11:30:34+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:008cc5c18efcaa2ce46d2a03eca3e21e3eb6940c5254fa71256c8615d04c503d",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2MLNdyB_VpI",
+          "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T11:00:17+00:00",
+          "score": 12,
+          "song_name": "品川音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:3d4c97a1131aa1197993aa2d3f1c706a79e683596182bf37fef6a2ba72095639",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2ugmqXjS6vU",
@@ -505966,7 +506218,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 7,
+      "evidence_count": 9,
       "speaker_count": 1
     },
     {
@@ -514289,6 +514541,44 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:74402375bee3207f5dbea882b53f494ac41854a039c07ac2b5566637daf4a506",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=5GAQ34cWqtc",
+          "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T11:30:34+00:00",
+          "score": 12,
+          "song_name": "東京みなと音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:008cc5c18efcaa2ce46d2a03eca3e21e3eb6940c5254fa71256c8615d04c503d",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=2MLNdyB_VpI",
+          "text": "2026年11月1日、大井競馬場で開催された 「しながわ盆フェス」盆踊りの様子です！ 楽しい盆踊りの熱気をぜひお楽しみください。 ■ 開催情報 ・イベント名：しながわ盆フェス ・開催日：2026年11月1日 ・会場：大井競馬場（TCK） 動画が気に入っていただけましたら、ぜひ高評価やチャンネル登録をよろしくお願いいたします！ #品川音頭 #キャラ盆 #しながわ盆フェス #盆踊り #大井競馬場 #和太鼓 #日本の祭り しながわ盆フェス盆踊り２日目 １東京みなと音頭 https://youtu.be/wALyekoCwcM ２竹芝絵巻 https://youtu.be/dapOTiu1_DU ３高輪Gateway夢拍子 https://youtu.be/Lq_36ZbBojs ４東京タワー音頭 https://youtu.be/S62H8q3gj8U ５負けないで https://youtu.be/WKEK_hu0Pm0 ６ファンファーレ https://youtu.be/oznOfvoqQ94 ７盛れ！ミ・アモーレ https://youtu.be/2ugmqXjS6vU ８東京タワー ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T11:00:17+00:00",
+          "score": 12,
+          "song_name": "東京みなと音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "楽しい盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "2026年11月1日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:3d4c97a1131aa1197993aa2d3f1c706a79e683596182bf37fef6a2ba72095639",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=2ugmqXjS6vU",
@@ -514426,7 +514716,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 7,
+      "evidence_count": 9,
       "speaker_count": 1
     },
     {
@@ -639177,6 +639467,36 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:dc235d3cbd59aec4b3ad3ed6e6274247f6da8bf6c9888f0d62a3d59179c690ea",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=ng9CuMqXXgE",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T10:30:35+00:00",
+          "score": 17,
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
+          "identity": "evidence:sha256:e0c73d22ef5c25f585d1f92d92f065f5767553383f7b60e7da58d6c9b2215753",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=fYaG3bYr5ZU",
+          "text": "2026年10月10日、 東京都新宿区の荒木公園で開催された 「踊ろう！in荒木町の秋」盆踊り（荒木町青年会主催）の様子をお届けします！ 秋風が心地よい荒木公園に響き渡る和太鼓の音色と、 地域の皆様の活気あふれる踊りをぜひお楽しみください。 【イベント情報】 ・イベント名：踊ろう！in荒木町の秋 盆踊り ・開催日：2026年10月10日 ・開催場所：荒木公園（東京都新宿区荒木町） ・主催：荒木町青年会 動画が気に入っていただけたら、 ぜひ【高評価】と【チャンネル登録】をよろしくお願いします！ 感想や「この曲が好き！」などのコメントもお待ちしています。 #盆踊り #荒木町 #和太鼓 #お祭り #新宿区 #荒木公園 #伝統芸能 荒木町盆踊り １東京音頭 https://youtu.be/6jN1TiQYM-M ２炭坑節 https://youtu.be/RN3tXQVOzBk ３大東京音頭 https://youtu.be/bDOPvPVAKEA ４八木節 https://youtu.be/hoSPCqWx7qc ５オバＱ音頭 https://youtu.be/2LU7L2renQE ６ド",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-11-18T10:00:25+00:00",
+          "score": 17,
+          "estimated_event": "荒木町盆踊り",
+          "estimated_venue": "荒木公園",
+          "time_hints": [
+            "2026年10月10日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:1dcadb50a3a6ea1b393e8d9926b07b8dea7db39eff78d7a8d5d74b7f43dd32b5",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=ni6gMhK-Lxc",
@@ -639373,7 +639693,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 13,
+      "evidence_count": 15,
       "speaker_count": 1
     },
     {

@@ -1,8 +1,8 @@
 {
   "source_id": "x_gap",
   "input_path": "data/x_candidate_backlog.json",
-  "input_sha256": "1cc8afc1db770379063fb448191915a5a375a758363ca5a7b0e6086a4baf8b79",
-  "input_size_bytes": 2210041,
+  "input_sha256": "e9baca27cec4fb2743167e108aa83a9ea32c623df6b2905fd79ee89622bd6419",
+  "input_size_bytes": 2210381,
   "item_count": 5,
   "items": [
     {
@@ -11,257 +11,23 @@
       "time_scope": "future",
       "priority_label": "P1",
       "priority_score": 85,
-      "title": "おはようございます、文吉です。\n今日（2026年08月19日（水））の浅草のイベントをお知らせします。\n◆大昆虫展 in 東京スカイツリータウン（押上）\n◆東本",
+      "title": "【再掲】今日のおまつりじゃーーーーい！\n\n2026年8月20日(木曜日)のイベント・お祭り・花火！\n\nニューシティが・・・・いきやすいか・・・・\n\n【東京都】\n",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2089892965762425054",
-      "source_url": "https://x.com/Wander_Asakusa/status/2089892965762425054",
+      "source_key": "x:2090218240664588780",
+      "source_url": "https://x.com/2019Varekai/status/2090218240664588780",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_dde6fedc6a4de6cd",
-        "source_key": "x:2089892965762425054",
+        "candidate_id": "xgap_5fbccf29da03da4c",
+        "source_key": "x:2090218240664588780",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
         "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/Wander_Asakusa/status/2089892965762425054",
-        "source_text": "\nおはようございます、文吉です。\n今日（2026年08月19日（水））の浅草のイベントをお知らせします。\n◆大昆虫展 in 東京スカイツリータウン（押上）\n◆東本願寺盆踊り（田原町）\n　和太鼓パフォーマンス、盆踊り第１部、麻生恋次郎バンドライブ、盆踊り第２部\n◆東京スカイツリー特別ライティング　向日葵（ひまわり）　金魚遊泳（およぐよきんぎょ）\n\n2026年08月第3週（08/14（金）～08/20（木））の浅草のイベント https://t.co/dDOeYhlo7E",
-        "source_author": "@Wander_Asakusa",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@wander_asakusa",
-          "account_name": "ふらり浅草",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "08月19日",
-          "08/14",
-          "08/20"
-        ],
-        "observed_dates": [
-          "2026-08-20"
-        ],
-        "event_group_key": "informal:54001833e8c75f6c",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@Wander_Asakusa",
-          "name": "ふらり浅草",
-          "profile_description": "「ふらり浅草」管理人の文吉です。浅草のイベント情報と東京スカイツリーのライティング情報をお伝えいたします。皆様の浅草観光にお役立ていただけましたら幸いです。どうぞよろしくお願いいたします。無言フォロー失礼します。 Asakusa Events and Tokyo Skytree Lighting.",
-          "title": "",
-          "text": "おはようございます、文吉です。\n今日（2026年08月19日（水））の浅草のイベントをお知らせします。\n◆大昆虫展 in 東京スカイツリータウン（押上）\n◆東本願寺盆踊り（田原町）\n　和太鼓パフォーマンス、盆踊り第１部、麻生恋次郎バンドライブ、盆踊り第２部\n◆東京スカイツリー特別ライティング　向日葵（ひまわり）　金魚遊泳（およぐよきんぎょ）\n\n2026年08月第3週（08/14（金）～08/20（木））の浅草のイベント https://t.co/dDOeYhlo7E",
-          "url": "https://x.com/Wander_Asakusa/status/2089892965762425054",
-          "date": "2026-08-19T01:51:26+00:00",
-          "tweet_id": "2089892965762425054",
-          "tags": [
-            "🟡関心",
-            "q-future-schedule"
-          ],
-          "critique_post": false
-        },
-        "source_urls": [
-          "https://x.com/Wander_Asakusa/status/2089892965762425054"
-        ],
-        "source_media_urls": [],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "informal_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_704425e51b27e193"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
-      "title": "【新小岩銀座 夏まつり 和楽器DEナイト！】\n🏮8/22(土)⏰18:40〜20:00📍新小岩駅南口 駅前広場(葛飾区)\n\n民謡歌手木津かおりをはじめ津軽三味線",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2089973977318064232",
-      "source_url": "https://x.com/natsutr_bon/status/2089973977318064232",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_fa137c519ae8af37",
-        "source_key": "x:2089973977318064232",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/natsutr_bon/status/2089973977318064232",
-        "source_text": "\n【新小岩銀座 夏まつり 和楽器DEナイト！】\n🏮8/22(土)⏰18:40〜20:00📍新小岩駅南口 駅前広場(葛飾区)\n\n民謡歌手木津かおりをはじめ津軽三味線、尺八、和太鼓など豪華メンバーで、熊本復興の想いを込めた民謡や生演奏で盆踊り♪\n\n🔔23日(日)は唄花座民謡SHOW(17:00-18:30)🎤\nhttps://t.co/16Vhz5n6v6 https://t.co/t3IqgRUlMO",
-        "source_author": "@natsutr_bon",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@natsutr_bon",
-          "account_name": "奈津大郎〘ナツタロ〙",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8/22"
-        ],
-        "observed_dates": [
-          "2026-08-22"
-        ],
-        "event_group_key": "informal:ec3e26095fe26411",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@natsutr_bon",
-          "name": "奈津大郎〘ナツタロ〙",
-          "profile_description": "およそ30年ぶりの炭坑節が楽しすぎて気がついたときには「盆踊りコ」| 基本構成ナツタロ・ナツジロのツーマンセル | 江東区盆踊連合(自称) | 馬鹿盆会 | 🍆寺島茄子之介音頭 | 祭り | 神輿 | 民謡 | 旅 | ヘッダーイラスト @nyantokonyan 様/ @M125M8qgyhWueHS 様",
-          "title": "",
-          "text": "【新小岩銀座 夏まつり 和楽器DEナイト！】\n🏮8/22(土)⏰18:40〜20:00📍新小岩駅南口 駅前広場(葛飾区)\n\n民謡歌手木津かおりをはじめ津軽三味線、尺八、和太鼓など豪華メンバーで、熊本復興の想いを込めた民謡や生演奏で盆踊り♪\n\n🔔23日(日)は唄花座民謡SHOW(17:00-18:30)🎤\nhttps://t.co/16Vhz5n6v6 https://t.co/t3IqgRUlMO",
-          "url": "https://x.com/natsutr_bon/status/2089973977318064232",
-          "date": "2026-08-19T07:13:20+00:00",
-          "tweet_id": "2089973977318064232",
-          "tags": [
-            "🟡関心",
-            "q-venue-tokyo-wards"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/media/HQEUQSqagAAFug9.jpg",
-            "https://t.co/t3IqgRUlMO",
-            "pic.x.com/t3IqgRUlMO"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/natsutr_bon/status/2089973977318064232"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/media/HQEUQSqagAAFug9.jpg",
-          "https://t.co/t3IqgRUlMO",
-          "pic.x.com/t3IqgRUlMO"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "informal_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_2a821dcaeb363ea8"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
-      "title": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日（土）～2026年8月23日（日）\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090028969823518733",
-      "source_url": "https://x.com/web_camera/status/2090028969823518733",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_ee2d96e7b77c03a8",
-        "source_key": "x:2090028969823518733",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/web_camera/status/2090028969823518733",
-        "source_text": "\n多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日（土）～2026年8月23日（日）\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https://t.co/SY1EDVKUWn",
-        "source_author": "@web_camera",
-        "source_officiality": {
-          "classification": "unknown_or_personal_social",
-          "score": 2,
-          "handle": "@web_camera",
-          "account_name": "ライブカメラ検索マップ",
-          "source_type": "",
-          "trust_level": "candidate",
-          "reasons": [
-            "schedule_post_with_bon_context"
-          ],
-          "recommended_action": "find_independent_confirmation"
-        },
-        "date_hints": [
-          "8月22日",
-          "8月23日"
-        ],
-        "observed_dates": [
-          "2026-08-23"
-        ],
-        "event_group_key": "informal:e6e9dec3bd2d02c5",
-        "known_venue_evidence": null,
-        "voice": {
-          "source": "x",
-          "account": "@web_camera",
-          "name": "ライブカメラ検索マップ",
-          "profile_description": "全国のライブカメラを紹介｜道路の渋滞・積雪、山・河川・海・神社・お寺・駅・空港・お城など、全国各地の「今」を発信。ライブカメラを防災にも活用。フォローしておくと、河川の増水・氾濫や大雪など、いざという時に役立つ情報をいち早くチェックできます。",
-          "title": "",
-          "text": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日（土）～2026年8月23日（日）\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https://t.co/SY1EDVKUWn",
-          "url": "https://x.com/web_camera/status/2090028969823518733",
-          "date": "2026-08-19T10:51:51+00:00",
-          "tweet_id": "2090028969823518733",
-          "tags": [
-            "🟡関心",
-            "q-venue-tokyo-wards"
-          ],
-          "critique_post": false,
-          "media_urls": [
-            "https://pbs.twimg.com/amplify_video_thumb/2090028931269414912/img/REdq-n03mWPclpM7.jpg",
-            "https://t.co/SY1EDVKUWn",
-            "pic.x.com/SY1EDVKUWn"
-          ]
-        },
-        "source_urls": [
-          "https://x.com/web_camera/status/2090028969823518733"
-        ],
-        "source_media_urls": [
-          "https://pbs.twimg.com/amplify_video_thumb/2090028931269414912/img/REdq-n03mWPclpM7.jpg",
-          "https://t.co/SY1EDVKUWn",
-          "pic.x.com/SY1EDVKUWn"
-        ],
-        "corroboration_count": 1,
-        "source_count": 1,
-        "archive_reason": "informal_new_event_daily_cap"
-      },
-      "source_id": "x_gap",
-      "inbox_id": "inbox_077206fdc74151bc"
-    },
-    {
-      "kind": "x_gap",
-      "domain": "X",
-      "time_scope": "future",
-      "priority_label": "P1",
-      "priority_score": 85,
-      "title": "2026年8月20日(木曜日)のイベント・お祭り・花火！\n平日はもうかなり少なくなったけどまだやってるよよよ\n\n【東京都】\n・大崎ニューシティ盆踊り大会（初日）",
-      "event_name": "",
-      "venue": "",
-      "event_year": 2026,
-      "source_key": "x:2090030035701010773",
-      "source_url": "https://x.com/2019Varekai/status/2090030035701010773",
-      "recommended_action": "review_new_event",
-      "payload": {
-        "candidate_id": "xgap_caed1df265926122",
-        "source_key": "x:2090030035701010773",
-        "lane_hint": "lane2",
-        "candidate_kind": "informal_new_event",
-        "priority_score": 85,
-        "event_year": 2026,
-        "matched_occurrence": null,
-        "source_url": "https://x.com/2019Varekai/status/2090030035701010773",
-        "source_text": "\n2026年8月20日(木曜日)のイベント・お祭り・花火！\n平日はもうかなり少なくなったけどまだやってるよよよ\n\n【東京都】\n・大崎ニューシティ盆踊り大会（初日） / 品川区（大崎ニューシティ3F O-歩道橋）\n・東本願寺盆踊り（2日目） / 台東区（浅草・東本願寺）\n・お台場竹ランタン祭り / 江東区（シンボルプロムナード公園）\n\n【埼玉県】\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【静岡県】\n・土肥サマーフェスティバル海上花火大会（中日・約2,000発＆大空中ナイアガラ） / 伊豆市（松原公園特設会場）\n\n【長野県】\n・諏訪湖サマーナイト花火 2026 / 諏訪市（諏訪湖畔）\n\n【三重県】\n・夏の鳥羽湾 毎夜連続花火（小浜湾） / 鳥羽市\n・志摩スペイン村 ムーンライトフィナーレ（ナイトパレード＆花火） / 志摩市\n\n【石川県】\n・加賀温泉郷 納涼花火まつり in 片山津温泉 / 加賀市（柴山潟湖畔）\n\n【北海道】\n・第45回 洞爺湖ロングラン花火大会 / 壮瞥町・洞爺湖町（洞爺湖畔）\n\n#夏祭り #明日のイベント",
+        "source_url": "https://x.com/2019Varekai/status/2090218240664588780",
+        "source_text": "\n【再掲】今日のおまつりじゃーーーーい！\n\n2026年8月20日(木曜日)のイベント・お祭り・花火！\n\nニューシティが・・・・いきやすいか・・・・\n\n【東京都】\n・大崎ニューシティ盆踊り大会（初日） / 品川区（大崎ニューシティ3F O-歩道橋）\n・東本願寺盆踊り（2日目） / 台東区（浅草・東本願寺）\n・お台場竹ランタン祭り / 江東区（シンボルプロムナード公園）\n\n【埼玉県】\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【静岡県】\n・土肥サマーフェスティバル海上花火大会（中日・約2,000発＆大空中ナイアガラ） / 伊豆市（松原公園特設会場）\n\n【長野県】\n・諏訪湖サマーナイト花火 2026 / 諏訪市（諏訪湖畔）\n\n【三重県】\n・夏の鳥羽湾 毎夜連続花火（小浜湾） / 鳥羽市\n・志摩スペイン村 ムーンライトフィナーレ（ナイトパレード＆花火） / 志摩市\n\n【石川県】\n・加賀温泉郷 納涼花火まつり in 片山津温泉 / 加賀市（柴山潟湖畔）\n\n【北海道】\n・第45回 洞爺湖ロングラン花火大会 / 壮瞥町・洞爺湖町（洞爺湖畔）\n\n#夏祭り　#今日の",
         "source_author": "@2019Varekai",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
@@ -281,7 +47,7 @@
         "observed_dates": [
           "2026-08-20"
         ],
-        "event_group_key": "informal:4ee877945f75ba93",
+        "event_group_key": "informal:16e9a349d43103ab",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
@@ -289,10 +55,10 @@
           "name": "ににょ。👻考える。遊ぶ。雑。",
           "profile_description": "朝5時30分と昼12時と夜19時付近に猫を頭に載せた女の子と変なポーズしてます。#変なポーズnn 仏像と彫像も登場。恩は返す派。\n不定期でお手紙シリーズもやり始めました。世の中の変と恐怖とenjoyを探してます。enjoy🔥天気と自然好き。投資。AI絵。ご飯。",
           "title": "",
-          "text": "2026年8月20日(木曜日)のイベント・お祭り・花火！\n平日はもうかなり少なくなったけどまだやってるよよよ\n\n【東京都】\n・大崎ニューシティ盆踊り大会（初日） / 品川区（大崎ニューシティ3F O-歩道橋）\n・東本願寺盆踊り（2日目） / 台東区（浅草・東本願寺）\n・お台場竹ランタン祭り / 江東区（シンボルプロムナード公園）\n\n【埼玉県】\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【静岡県】\n・土肥サマーフェスティバル海上花火大会（中日・約2,000発＆大空中ナイアガラ） / 伊豆市（松原公園特設会場）\n\n【長野県】\n・諏訪湖サマーナイト花火 2026 / 諏訪市（諏訪湖畔）\n\n【三重県】\n・夏の鳥羽湾 毎夜連続花火（小浜湾） / 鳥羽市\n・志摩スペイン村 ムーンライトフィナーレ（ナイトパレード＆花火） / 志摩市\n\n【石川県】\n・加賀温泉郷 納涼花火まつり in 片山津温泉 / 加賀市（柴山潟湖畔）\n\n【北海道】\n・第45回 洞爺湖ロングラン花火大会 / 壮瞥町・洞爺湖町（洞爺湖畔）\n\n#夏祭り #明日のイベント",
-          "url": "https://x.com/2019Varekai/status/2090030035701010773",
-          "date": "2026-08-19T10:56:06+00:00",
-          "tweet_id": "2090030035701010773",
+          "text": "【再掲】今日のおまつりじゃーーーーい！\n\n2026年8月20日(木曜日)のイベント・お祭り・花火！\n\nニューシティが・・・・いきやすいか・・・・\n\n【東京都】\n・大崎ニューシティ盆踊り大会（初日） / 品川区（大崎ニューシティ3F O-歩道橋）\n・東本願寺盆踊り（2日目） / 台東区（浅草・東本願寺）\n・お台場竹ランタン祭り / 江東区（シンボルプロムナード公園）\n\n【埼玉県】\n・ムーミン谷の湖上花火大会～夏2026～ / 飯能市（ムーミンバレーパーク）\n\n【静岡県】\n・土肥サマーフェスティバル海上花火大会（中日・約2,000発＆大空中ナイアガラ） / 伊豆市（松原公園特設会場）\n\n【長野県】\n・諏訪湖サマーナイト花火 2026 / 諏訪市（諏訪湖畔）\n\n【三重県】\n・夏の鳥羽湾 毎夜連続花火（小浜湾） / 鳥羽市\n・志摩スペイン村 ムーンライトフィナーレ（ナイトパレード＆花火） / 志摩市\n\n【石川県】\n・加賀温泉郷 納涼花火まつり in 片山津温泉 / 加賀市（柴山潟湖畔）\n\n【北海道】\n・第45回 洞爺湖ロングラン花火大会 / 壮瞥町・洞爺湖町（洞爺湖畔）\n\n#夏祭り　#今日のイ",
+          "url": "https://x.com/2019Varekai/status/2090218240664588780",
+          "date": "2026-08-19T23:23:57+00:00",
+          "tweet_id": "2090218240664588780",
           "tags": [
             "🟡関心",
             "q-venue-tokyo-wards"
@@ -300,7 +66,7 @@
           "critique_post": false
         },
         "source_urls": [
-          "https://x.com/2019Varekai/status/2090030035701010773"
+          "https://x.com/2019Varekai/status/2090218240664588780"
         ],
         "source_media_urls": [],
         "corroboration_count": 1,
@@ -308,7 +74,7 @@
         "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_dd6a47f5103e1c5d"
+      "inbox_id": "inbox_bf554e3c1b34929d"
     },
     {
       "kind": "x_gap",
@@ -316,29 +82,29 @@
       "time_scope": "future",
       "priority_label": "P1",
       "priority_score": 85,
-      "title": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https",
+      "title": "ちなみに今年の芝公園二丁目町会盆踊りは8月21〜22日\n#芝公園二丁目町会盆踊り",
       "event_name": "",
       "venue": "",
       "event_year": 2026,
-      "source_key": "x:2090040633230848484",
-      "source_url": "https://x.com/WBElectric0521/status/2090040633230848484",
+      "source_key": "x:2090247152090103813",
+      "source_url": "https://x.com/mu4324/status/2090247152090103813",
       "recommended_action": "review_new_event",
       "payload": {
-        "candidate_id": "xgap_056a89d913a64e90",
-        "source_key": "x:2090040633230848484",
+        "candidate_id": "xgap_fa11732fbbe9233f",
+        "source_key": "x:2090247152090103813",
         "lane_hint": "lane2",
         "candidate_kind": "informal_new_event",
         "priority_score": 85,
         "event_year": 2026,
         "matched_occurrence": null,
-        "source_url": "https://x.com/WBElectric0521/status/2090040633230848484",
-        "source_text": "\n多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https://t.co/qveQuvni4D",
-        "source_author": "@WBElectric0521",
+        "source_url": "https://x.com/mu4324/status/2090247152090103813",
+        "source_text": "\nちなみに今年の芝公園二丁目町会盆踊りは8月21〜22日\n#芝公園二丁目町会盆踊り",
+        "source_author": "@mu4324",
         "source_officiality": {
           "classification": "unknown_or_personal_social",
           "score": 2,
-          "handle": "@wbelectric0521",
-          "account_name": "WBご安全にゆっくり【公式】",
+          "handle": "@mu4324",
+          "account_name": "宇佐美",
           "source_type": "",
           "trust_level": "candidate",
           "reasons": [
@@ -347,49 +113,268 @@
           "recommended_action": "find_independent_confirmation"
         },
         "date_hints": [
-          "8月22日",
-          "8月23日"
+          "8月21"
         ],
         "observed_dates": [
-          "2026-08-23"
+          "2026-08-22"
         ],
-        "event_group_key": "informal:83096090aa9855a9",
+        "event_group_key": "informal:0c2deb13a7180f47",
         "known_venue_evidence": null,
         "voice": {
           "source": "x",
-          "account": "@WBElectric0521",
-          "name": "WBご安全にゆっくり【公式】",
-          "profile_description": "🧢✨WBご安全にゆっくりです🍀✨ 【公式ゆっくり】泉州、和歌山県、交通機関、映画館、天体観測などの情報を発信、RTします。#オークワ #マイカルグループ 中の人→ @Haruto_Ozu8610 #安全は全てに優先する #ご安全に！作成日2022年3月30日 2500人のフォロワー目指しています。DMは緊急のみ。",
+          "account": "@mu4324",
+          "name": "宇佐美",
+          "profile_description": "プロレス/野球/相撲/ディスコミュージック/歌謡曲/盆踊り/散歩/中卒/16歳から身寄りなし1人で何とか生きてきた。",
           "title": "",
-          "text": "多摩川辺り商店会 盆踊り大会\n日程：2026年8月22日土曜日～2026年8月23日日曜日\n住所：東京都大田区鵜の木2丁目12-4（鵜の木児童公園） https://t.co/qveQuvni4D",
-          "url": "https://x.com/WBElectric0521/status/2090040633230848484",
-          "date": "2026-08-19T11:38:12+00:00",
-          "tweet_id": "2090040633230848484",
+          "text": "ちなみに今年の芝公園二丁目町会盆踊りは8月21〜22日\n#芝公園二丁目町会盆踊り",
+          "url": "https://x.com/mu4324/status/2090247152090103813",
+          "date": "2026-08-20T01:18:50+00:00",
+          "tweet_id": "2090247152090103813",
           "tags": [
             "🟡関心",
-            "q-venue-tokyo-wards"
+            "q-poster-flyer"
+          ],
+          "critique_post": false
+        },
+        "source_urls": [
+          "https://x.com/mu4324/status/2090247152090103813"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "informal_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_8287287e88f472a2"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "明日8/21(金)の神輿御霊入れを皮切りに、亀戸天神社 例大祭開催！\n\n🔻その他の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjIcZDVu\n",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090257514373726337",
+      "source_url": "https://x.com/kotokeizai/status/2090257514373726337",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_01c3b8a1b31a86f2",
+        "source_key": "x:2090257514373726337",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/kotokeizai/status/2090257514373726337",
+        "source_text": "\n明日8/21(金)の神輿御霊入れを皮切りに、亀戸天神社 例大祭開催！\n\n🔻その他の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjIcZDVu\n\n▽ 亀戸天神社 例大祭\n8/21(金) 神輿御霊入れ\n8/22(土) 御鳳輦渡御祭\n8/23(日) 氏子神輿連合宮入\n8/25(火) 例大祭・献灯明",
+        "source_author": "@kotokeizai",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 0,
+          "handle": "@kotokeizai",
+          "account_name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/21",
+          "8/21",
+          "8/22",
+          "8/23",
+          "8/25"
+        ],
+        "observed_dates": [
+          "2026-08-25"
+        ],
+        "event_group_key": "informal:385d5d5026d987cd",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x_whitelist",
+          "account": "@kotokeizai",
+          "name": "江東経済新聞 | 江東区の\"今\"を届けるWebメディア",
+          "profile_description": "“江東区がもっと好きになる”ハッピーニュースを配信する《こと経》の中の人です。新店やイベントなどの情報提供はDMやリプライでも大歓迎！イベント情報中心のポストですが、時に江東区グルメも。リプいただけると小躍りして喜びます！ Instagram→ https://t.co/IIpE2CMlNp",
+          "title": "",
+          "text": "明日8/21(金)の神輿御霊入れを皮切りに、亀戸天神社 例大祭開催！\n\n🔻その他の夏祭り＆花火大会情報はこちら\nhttps://t.co/6UUjIcZDVu\n\n▽ 亀戸天神社 例大祭\n8/21(金) 神輿御霊入れ\n8/22(土) 御鳳輦渡御祭\n8/23(日) 氏子神輿連合宮入\n8/25(火) 例大祭・献灯明",
+          "url": "https://x.com/kotokeizai/status/2090257514373726337",
+          "date": "2026-08-20T02:00:01+00:00",
+          "tweet_id": "2090257514373726337",
+          "tags": [
+            "⭐盆踊ラー",
+            "📅未来予定",
+            "🟡関心"
+          ],
+          "critique_post": false,
+          "value_score": 16.0
+        },
+        "source_urls": [
+          "https://x.com/kotokeizai/status/2090257514373726337"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "informal_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_42cb811f76777185"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "【盆踊りライブ配信 】8/20(木) 18:00 〜 21:00\n浅草東本願寺盆踊り 洋楽DAY ＠ 浅草東本願寺\nhttps://t.co/VABXat6Yp",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2090333027775975730",
+      "source_url": "https://x.com/MatsuriNoKiseki/status/2090333027775975730",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_5c9f24fa4403635c",
+        "source_key": "x:2090333027775975730",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/MatsuriNoKiseki/status/2090333027775975730",
+        "source_text": "\n【盆踊りライブ配信 】8/20(木) 18:00 〜 21:00\n浅草東本願寺盆踊り 洋楽DAY ＠ 浅草東本願寺\nhttps://t.co/VABXat6YpT https://t.co/1Qe4JctdTE",
+        "source_author": "@MatsuriNoKiseki",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@matsurinokiseki",
+          "account_name": "祭のきせき",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8/20"
+        ],
+        "observed_dates": [
+          "2026-08-20"
+        ],
+        "event_group_key": "informal:77c61f88af1c3bb1",
+        "known_venue_evidence": null,
+        "voice": {
+          "source": "x",
+          "account": "@MatsuriNoKiseki",
+          "name": "祭のきせき",
+          "profile_description": "さまざまなお祭りや盆踊りの動画を YouTube にUPしています。日常そばにある伝統芸能だったりを紹介していきます！\n\nYouTube channel『祭のきせき』MatsuriNoKiseki\nhttps://t.co/y0qRaiEJln",
+          "title": "",
+          "text": "【盆踊りライブ配信 】8/20(木) 18:00 〜 21:00\n浅草東本願寺盆踊り 洋楽DAY ＠ 浅草東本願寺\nhttps://t.co/VABXat6YpT https://t.co/1Qe4JctdTE",
+          "url": "https://x.com/MatsuriNoKiseki/status/2090333027775975730",
+          "date": "2026-08-20T07:00:04+00:00",
+          "tweet_id": "2090333027775975730",
+          "tags": [
+            "🟡関心",
+            "q-base"
           ],
           "critique_post": false,
           "media_urls": [
-            "https://pbs.twimg.com/amplify_video_thumb/2090028931269414912/img/REdq-n03mWPclpM7.jpg",
-            "https://t.co/qveQuvni4D",
-            "pic.x.com/qveQuvni4D"
+            "https://pbs.twimg.com/media/HQJaxoBaMAAIUoE.png",
+            "https://t.co/1Qe4JctdTE",
+            "pic.x.com/1Qe4JctdTE"
           ]
         },
         "source_urls": [
-          "https://x.com/WBElectric0521/status/2090040633230848484"
+          "https://x.com/MatsuriNoKiseki/status/2090333027775975730"
         ],
         "source_media_urls": [
-          "https://pbs.twimg.com/amplify_video_thumb/2090028931269414912/img/REdq-n03mWPclpM7.jpg",
-          "https://t.co/qveQuvni4D",
-          "pic.x.com/qveQuvni4D"
+          "https://pbs.twimg.com/media/HQJaxoBaMAAIUoE.png",
+          "https://t.co/1Qe4JctdTE",
+          "pic.x.com/1Qe4JctdTE"
         ],
         "corroboration_count": 1,
         "source_count": 1,
         "archive_reason": "informal_new_event_daily_cap"
       },
       "source_id": "x_gap",
-      "inbox_id": "inbox_b0a6599f10343430"
+      "inbox_id": "inbox_2549292f1a033b44"
+    },
+    {
+      "kind": "x_gap",
+      "domain": "X",
+      "time_scope": "future",
+      "priority_label": "P1",
+      "priority_score": 85,
+      "title": "下高井戸の夏祭り「第56回しもたかサマーフェスティバル」が2026年8月29日(土)30日(日)の2日間、松沢小学校校庭にて開催されます。縁日、ビンゴ大会、しも",
+      "event_name": "",
+      "venue": "",
+      "event_year": 2026,
+      "source_key": "x:2086291719717609890",
+      "source_url": "https://x.com/BoniBullTerrier/status/2086291719717609890",
+      "recommended_action": "review_new_event",
+      "payload": {
+        "candidate_id": "xgap_d8c657edcbca9d77",
+        "source_key": "x:2086291719717609890",
+        "lane_hint": "lane2",
+        "candidate_kind": "informal_new_event",
+        "priority_score": 85,
+        "event_year": 2026,
+        "matched_occurrence": null,
+        "source_url": "https://x.com/BoniBullTerrier/status/2086291719717609890",
+        "source_text": "\n下高井戸の夏祭り「第56回しもたかサマーフェスティバル」が2026年8月29日(土)30日(日)の2日間、松沢小学校校庭にて開催されます。縁日、ビンゴ大会、しもたか盆踊りなど今年の見どころを紹介。今年の開催場所は「ひまわり広場駐車場」じゃないですよ！\nhttps://t.co/1C2KG1PSRQ",
+        "source_author": "@BoniBullTerrier",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@bonibullterrier",
+          "account_name": "今日の下高井戸🍴坂津田圭",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月29日"
+        ],
+        "observed_dates": [
+          "2026-08-29"
+        ],
+        "event_group_key": "informal-venue:6ac017e01ec78eaf",
+        "known_venue_evidence": {
+          "venue": "松沢小学校",
+          "region_hint": "世田谷区",
+          "address": "世田谷区赤堤4-44-22",
+          "source_url": "https://www.shimotaka.or.jp/summer2025-3"
+        },
+        "voice": {
+          "source": "x",
+          "account": "@BoniBullTerrier",
+          "name": "今日の下高井戸🍴坂津田圭",
+          "title": "",
+          "text": "下高井戸の夏祭り「第56回しもたかサマーフェスティバル」が2026年8月29日(土)30日(日)の2日間、松沢小学校校庭にて開催されます。縁日、ビンゴ大会、しもたか盆踊りなど今年の見どころを紹介。今年の開催場所は「ひまわり広場駐車場」じゃないですよ！\nhttps://t.co/1C2KG1PSRQ",
+          "url": "https://x.com/BoniBullTerrier/status/2086291719717609890",
+          "date": "2026-08-09T03:21:22+00:00",
+          "tweet_id": "2086291719717609890",
+          "tags": [
+            "🟡関心",
+            "q-imminent"
+          ]
+        },
+        "source_urls": [
+          "https://x.com/BoniBullTerrier/status/2086291719717609890"
+        ],
+        "source_media_urls": [],
+        "corroboration_count": 1,
+        "source_count": 1,
+        "archive_reason": "informal_new_event_daily_cap"
+      },
+      "source_id": "x_gap",
+      "inbox_id": "inbox_3f8d027cc4308b55"
     }
   ],
   "selection": {
@@ -397,11 +382,11 @@
     "cohort": "daily_canary",
     "max_items": 5,
     "source_keys": [
-      "x:2089892965762425054",
-      "x:2089973977318064232",
-      "x:2090028969823518733",
-      "x:2090030035701010773",
-      "x:2090040633230848484"
+      "x:2090218240664588780",
+      "x:2090247152090103813",
+      "x:2090257514373726337",
+      "x:2090333027775975730",
+      "x:2086291719717609890"
     ]
   },
   "write_mode": "snapshot_only_default_off",

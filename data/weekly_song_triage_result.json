@@ -1,30 +1,13 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 9,
-  "direct_count": 5,
-  "created_count": 2,
+  "song_candidate_count": 4,
+  "direct_count": 3,
+  "created_count": 0,
   "updated_count": 3,
-  "rejected_noise_count": 2,
-  "review_count": 2,
-  "created": [
-    {
-      "song_name": "よされ節",
-      "source_term": "よされ節",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "津軽小原節",
-      "source_term": "津軽小原節",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    }
-  ],
+  "rejected_noise_count": 0,
+  "review_count": 1,
+  "created": [],
   "updated": [
     {
       "song_name": "東京音頭",
@@ -51,28 +34,13 @@
       "dry_run": true
     }
   ],
-  "rejected_noise": [
-    {
-      "term": "津軽じょんから節",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "津軽じょんがら節",
-      "reason": "曲名としての形が弱い"
-    }
-  ],
+  "rejected_noise": [],
   "review": [
     {
       "term": "東京みなと音頭",
-      "evidence_count": 3,
+      "evidence_count": 4,
       "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=2ugmqXjS6vU"
-    },
-    {
-      "term": "津軽甚句",
-      "evidence_count": 1,
-      "reason": "SongCatalog: RDB未レビュー候補のためレビューへ",
-      "evidence_url": "https://www.youtube.com/watch?v=8xqDpkJN7NM"
+      "evidence_url": "https://www.youtube.com/watch?v=5GAQ34cWqtc"
     }
   ]
 }

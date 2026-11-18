@@ -1,19 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-11-17T16:05:14.926090+00:00",
+  "generated_at": "2026-11-18T15:47:24.667687+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-11-17T16:05:08.662907+00:00",
+  "source_generated_at": "2026-11-18T15:47:18.744944+00:00",
   "days": 3,
-  "voice_count": 24,
-  "candidate_count": 9,
+  "voice_count": 23,
+  "candidate_count": 4,
   "category_counts": {
-    "曲候補": 9
+    "曲候補": 4
   },
   "non_song_review_count": 0,
-  "song_candidate_count": 9,
-  "song_direct_dry_run_count": 5,
-  "song_review_count": 2,
-  "song_rejected_noise_count": 2,
+  "song_candidate_count": 4,
+  "song_direct_dry_run_count": 3,
+  "song_review_count": 1,
+  "song_rejected_noise_count": 0,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -27,8 +27,7 @@
   "samples": {
     "non_song_review": [],
     "song_review": [
-      "東京みなと音頭",
-      "津軽甚句"
+      "東京みなと音頭"
     ]
   }
 }
