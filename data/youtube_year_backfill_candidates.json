@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-11-17T02:47:32.851634+00:00",
+  "generated_at": "2026-11-18T02:08:28.925456+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 210,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 2,
+  "api_request_count_estimate": 3,
   "summary": {
-    "candidate_count": 1033,
+    "candidate_count": 1047,
     "status_counts": {
       "review": 74,
       "strong": 246,
-      "weak": 713
+      "weak": 727
     },
     "strong_count": 246,
     "review_count": 74
@@ -24288,6 +24288,32 @@
       "score": 49,
       "reasons": [
         "event_name_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "target_year": 2024,
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "detected_event_date": "2025-07-17",
+      "video_id": "KrWCPUfeMmQ",
+      "video_url": "https://www.youtube.com/watch?v=KrWCPUfeMmQ",
+      "title": "好きになった人　西糀谷三丁目町会 納涼盆踊り大会　濱竹天祖神社",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2025-08-07T14:00:36Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/KrWCPUfeMmQ/maxresdefault.jpg",
+      "query": "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "20250717 西糀谷三丁目盆踊り 15"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
         "venue_in_video",
         "target_year_in_video",
         "other_year_date_detected",
@@ -33598,6 +33624,182 @@
       "event_name": "第25回 四谷納涼踊り大会",
       "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
       "area": "新宿区",
+      "detected_event_date": "2024-06-29",
+      "video_id": "Bun2O56igYo",
+      "video_url": "https://www.youtube.com/watch?v=Bun2O56igYo",
+      "title": "[4K]🇯🇵 奥浅草盆踊り大会 『波乗りジョニー』『エロティカセブン』全14曲 / Traditional Japanese Bon dance in Asakusa, Tokyo. 2024",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-06-30T09:00:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Bun2O56igYo/maxresdefault.jpg",
+      "query": "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 19,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭 1部 / Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節 1部 / Tanko Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "防災音頭 1部 / Bousai Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "旧 台東音頭 1部 / Kyu Taito Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "新 台東音頭 1部 / Shin Taito Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "たいとう音頭 1部 / Taito Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "外山節 1部 / Sotoyama Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "ふるさと音頭 1部 / Furusato Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 9,
+          "title": "さくら音頭 1部 / Sakura Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 10,
+          "title": "押せ押せ音頭 1部 / Ose Ose Ondo",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "スカイツリーが見える浅草の隅田公園で行われた第2回奥浅草盆踊り大会。 1部と2部の全曲を公開させていただきます。 昨年行われた第1回には1万5千人の来場者があったとのことで、 今年も数多くの方で賑わいました‼︎ 本当に雰囲気の良い会場で素晴らしい盆踊り大会でした‼︎ 盆踊りを主導されたのは「下町台東盆踊り協議会」 太鼓演奏は「浅草たいこばん」とのこと。 素敵な時間をありがとうございました‼️ Bon dance festival was held at a park in Asakusa where Tokyo Skytree can be seen. ‼︎ so many people were dancing with smiles on their faces. 2024.6.29 Sat 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Please Subscribe to my channe / よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODm…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:d43527b17167e51e",
+      "target_year": 2024,
+      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "detected_event_date": "2024-07-21",
+      "video_id": "kuw5OcOSdPo",
+      "video_url": "https://www.youtube.com/watch?v=kuw5OcOSdPo",
+      "title": "[4K]🇯🇵 巣鴨盆踊り大会 『恋するフォーチュンクッキー』『ダンシング・ヒーロー』最終日 / Traditional Japanese Bon dance in Sugamo, Tokyo.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2024-07-24T09:00:40Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/kuw5OcOSdPo/maxresdefault.jpg",
+      "query": "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 10,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "花の盆踊り/ Hanano Bon Odori",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "押せ押せ音頭 / Ose Ose Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "大東京音頭 / Dai Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "巣鴨花咲き音頭 / Sugamo Hanasaki Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "ドラえもん音頭 / Doraemon Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 7,
+          "title": "少年八木節 / Shounen Yagibushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 8,
+          "title": "大江戸東京音頭 / Ooedo Tokyo Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 9,
+          "title": "さわやか音頭 / Sawayaka Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 10,
+          "title": "河内おとこ節 / Kawachi Otoko Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 11,
+          "title": "ダンシング・ヒーロー / Eat You Up",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "巣鴨駅前のロータリーで『第44回 巣鴨盆踊り大会』が行われていました。 ご当地曲の『巣鴨花咲き音頭』や荻野目洋子『ダンシング・ヒーロー』AKB48『恋するフォーチュンクッキー』など幅広い楽曲で盛り上がっていました!! 東京おとめ太鼓の桜りりぃさんも太鼓で参加され素晴らしいパフォーマンスをされていました。 The “44th Sugamo Bon Dance Festival” was held in front of Sugamo Station in Tokyo. 2024.7.21 Sun 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Please Subscribe to my channe / よろしければ登録お願いします https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA ▽MY MAPS【Map of where I walked】 https://goo.gl/maps/kSAEbnkyHSchcccY6 ーーー ▽MAP https://maps.app.g…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:d43527b17167e51e",
+      "target_year": 2024,
+      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
       "detected_event_date": "2024-06-13",
       "video_id": "BtFT5s9DVtw",
       "video_url": "https://www.youtube.com/watch?v=BtFT5s9DVtw",
@@ -35328,6 +35530,157 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "【郡上おどりin青山】2024 熱気で盛り上がる郡上踊「風流踊」ユネスコ無形文化遺産、踊って楽しむ盆踊りで時間に連れて輪が膨れ上がる。秩父宮ラグビー場で開催。夕日の最初の部分。足元の下駄を鳴らす。 【撮影日】2024年6月15日 00:00:00 1 かわさき 00:10:30 2 春駒 00:18:08 3 さわぎ 00:27:37 4 00:39:22 5 かわさき 00:52:05 6 げんげんばらばら 01:01:02 7 春駒 コメントも歓迎します。 高評価とチャンネル登録もよろしくね。 https://www.youtube.com/channel/UCrebin59oT02Nl8Ytbjycqg?sub_confirmation=1 #郡上踊り青山 #郡上踊り #郡上踊 #郡上踊青山 #郡上踊りin青山 #郡上青山 #駅弁屋 #青山郡上踊り #郡上おどり #郡上おどり青山 #東京おさんぽワンコ"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:dce3f3c7662e7c96",
+      "target_year": 2024,
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "detected_event_date": "2025-11-24",
+      "video_id": "wvTA0x0jkIU",
+      "video_url": "https://www.youtube.com/watch?v=wvTA0x0jkIU",
+      "title": "[4K]🇯🇵 熱狂再び！晴盆踊り2025 今年も人で溢れる戸越八幡神社 盆踊り / HarebonOdori, a Japanese Bon Dance Festival 2025.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2025-11-24T09:01:27Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/wvTA0x0jkIU/maxresdefault.jpg",
+      "query": "野毛町会 納涼盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 6,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "ドンパン節 / Donpan Bushi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "東京ばやし / Tokyo Bayashi",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "さくら音頭 / Sakura Ondo",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "エビカニクス音頭 / EBI & KANI",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "柏おどり / Kashiwa Odori",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 6,
+          "title": "川崎踊り / Kawasaki Odori",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "品川区にある戸越八幡神社で「第二回晴盆踊り2025」が開催されました。 品川区を中心に活躍されている盆踊りサークル「晴盆」の名を冠したこのお祭りは、 戸越八幡神社の新嘗祭後に開催され、昨年に引き続き会場いっぱいの人で大いに盛り上がりました！更なる広がりを見せる「晴盆踊り」の今後もとても楽しみです！！ The Second Hare Bon Odori 2025 was held at Togoshi Hachiman Shrine in Shinagawa Ward, Tokyo. Following last year's success, the venue was packed with people and the event was a huge hit! We are very excited about the future of the Hare Bon Odori, which continues to grow in popularity!! 2025.11.24 Sun 4K60fps virtual walking tour Osmo Pocket 3 ーーー…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:dce3f3c7662e7c96",
+      "target_year": 2024,
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "rMMnVo_heNA",
+      "video_url": "https://www.youtube.com/watch?v=rMMnVo_heNA",
+      "title": "【北海盆唄】　2024年外神田納涼盆踊り大会17　秋葉原芳林公園　東京都千代田区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2024-12-31T10:01:02Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/rMMnVo_heNA/sddefault.jpg",
+      "query": "野毛町会 納涼盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 16,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=oR1q3BIhGjY",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=-St_HK6rbI4",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=8qVP3O_H2i0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "常磐炭坑節",
+          "url": "https://www.youtube.com/watch?v=_XztM_84LSU",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "ゆかた音頭",
+          "url": "https://www.youtube.com/watch?v=ymp2FEpMclI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "千代田おどり",
+          "url": "https://www.youtube.com/watch?v=lPmB1-n5EiU",
+          "source": "numbered_url"
+        },
+        {
+          "number": 8,
+          "title": "花笠音頭",
+          "url": "https://www.youtube.com/watch?v=RNkAArRaUFA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 9,
+          "title": "オバQ音頭",
+          "url": "https://www.youtube.com/watch?v=_j7DtnbvHCY",
+          "source": "numbered_url"
+        },
+        {
+          "number": 10,
+          "title": "ドンパン節",
+          "url": "https://www.youtube.com/watch?v=9bAobfrcUaQ",
+          "source": "numbered_url"
+        },
+        {
+          "number": 12,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=K3MrnpWs890",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2024年東京都千代田区にあります芳林公園で行われました、 「外神田納涼盆踊り大会」の様子です。 芳林公園盆踊り １東京音頭 https://youtu.be/oR1q3BIhGjY ２炭坑節 https://youtu.be/-St_HK6rbI4 ３相馬盆唄 https://youtu.be/8qVP3O_H2i0 ４常磐炭坑節 https://youtu.be/_XztM_84LSU ５恋するフォーチュンクッキー https://youtu.be/9JB-jpLYJ4c ６ゆかた音頭 https://youtu.be/ymp2FEpMclI ７千代田おどり https://youtu.be/lPmB1-n5EiU ８花笠音頭 https://youtu.be/RNkAArRaUFA ９オバQ音頭 https://youtu.be/_j7DtnbvHCY 10ドンパン節 https://youtu.be/9bAobfrcUaQ 11銀座カンカン娘 https://youtu.be/iHWlivKkaPo 12大東京音頭 https://youtu.be/K3MrnpWs890 1…"
     },
     {
       "status": "weak",
@@ -37450,6 +37803,32 @@
     },
     {
       "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:dce3f3c7662e7c96",
+      "target_year": 2024,
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "detected_event_date": "2025-08-03",
+      "video_id": "bYz7fDE8g0Y",
+      "video_url": "https://www.youtube.com/watch?v=bYz7fDE8g0Y",
+      "title": "[4K] 盆踊り 夢みる少女じゃいられない 中野駅前大盆踊り大会2025 ナカボン【夏の記憶】 もー Nanase Aikawa performs at Nakano Bon Dance.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2025-12-18T10:01:03Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/bYz7fDE8g0Y/maxresdefault.jpg",
+      "query": "野毛町会 納涼盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "【2025年の夏の記憶】 8月2日3日に東京中野で開催された「中野駅前大盆踊り大会2025」 盆ジョヴィ発祥で、今年は合計9万人が来場した夏の大イベントです。 3日には、スペシャルゲストで相川七瀬さんが登場しライブを披露し、数多くの客を盛り上げました！ 【Memories of Summer 2025】 The “Nakano Ekimae Grand Bon Odori Festival 2025” held in Nakano, Tokyo on August 2nd and 3rd was a major summer event attracting a total of 90,000 visitors this year. On the final day, special guest Nanase Aikawa made an appearance and performed live, thrilling the large crowd! 2025.8.3 Sun 4K60fps virtual walking tour Osmo Pocket 3 ーーー ▽Pleas…"
+    },
+    {
+      "status": "weak",
       "score": 30,
       "reasons": [
         "bon_context",
@@ -38920,6 +39299,207 @@
         }
       ],
       "description_excerpt": "2025年11月28日に行われました、 大井競馬場【東京メガイルミ盆踊り】晴盆盆踊りの様子です。 東京メガイルミ盆踊り １品川音頭 https://youtu.be/kKEPkc49MRs ２Azonto https://youtu.be/IGjFkLQh-BI ３東京音頭 https://youtu.be/2O9PvFai0Lc ４品川甚句 https://youtu.be/XXP6N_Zfh7w ５ドンパン節 https://youtu.be/yU4mlI_baWY ６わわわしながわ社協音頭 https://youtu.be/US8Yd9rn14M ７大阪ラプソディー https://youtu.be/twsBrUu1ga4 ８炭坑節 https://youtu.be/lvUsVioa-Zk ９東京ばやし https://youtu.be/S9cOD3tz1Nc 10３６５日の紙飛行機 https://youtu.be/FLm7Hc4S1OQ 11千恵っ子よされ https://youtu.be/T1_o4jYUnr8 12さくら音頭 https://youtu.be/jXbIl…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:d43527b17167e51e",
+      "target_year": 2024,
+      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "detected_event_date": "2025-07-22",
+      "video_id": "X1wrA9SwUFA",
+      "video_url": "https://www.youtube.com/watch?v=X1wrA9SwUFA",
+      "title": "篠崎音頭　上篠崎自治会納涼盆踊り大会16　2025年7月22日　江戸川区　篠崎浅間神社境内",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2025-12-11T10:01:04Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/X1wrA9SwUFA/maxresdefault.jpg",
+      "query": "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 21,
+      "setlist_sample": [
+        {
+          "number": 3,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=kkIQT-c9ZM0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "令和音頭",
+          "url": "https://www.youtube.com/watch?v=FXaTaZwhJgc",
+          "source": "numbered_url"
+        },
+        {
+          "number": 5,
+          "title": "河内おとこ節",
+          "url": "https://www.youtube.com/watch?v=9aPQKaDGXrM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 6,
+          "title": "おとぼけ音頭どどんがどん",
+          "url": "https://www.youtube.com/watch?v=ia0csimdw0A",
+          "source": "numbered_url"
+        },
+        {
+          "number": 7,
+          "title": "まつのき小唄",
+          "url": "https://www.youtube.com/watch?v=S03OkuA8W7Q",
+          "source": "numbered_url"
+        },
+        {
+          "number": 9,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=MPfFhRQn1fw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 10,
+          "title": "きよしのズンドコ節",
+          "url": "https://www.youtube.com/watch?v=K14VqOy-KRA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 11,
+          "title": "八木節",
+          "url": "https://www.youtube.com/watch?v=DeYWgU1fH90",
+          "source": "numbered_url"
+        },
+        {
+          "number": 12,
+          "title": "富士山音頭",
+          "url": "https://www.youtube.com/watch?v=7xQvWcNfsnc",
+          "source": "numbered_url"
+        },
+        {
+          "number": 14,
+          "title": "花火音頭",
+          "url": "https://www.youtube.com/watch?v=KzUue4WdoIw",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2025年7月22日に行われました、 「上篠崎自治会納涼盆踊り大会」の様子です。 上篠崎盆踊り １365日の紙飛行機 https://youtu.be/6IUqwF7o7Fw ２Ultra Soul https://youtu.be/DHfKejSr5_U ３東京音頭 https://youtu.be/kkIQT-c9ZM0 ４令和音頭 https://youtu.be/FXaTaZwhJgc ５河内おとこ節 https://youtu.be/9aPQKaDGXrM ６おとぼけ音頭どどんがどん https://youtu.be/ia0csimdw0A ７まつのき小唄 https://youtu.be/S03OkuA8W7Q ８祝い酒 https://youtu.be/sTwI2j-QB2I ９大東京音頭 https://youtu.be/MPfFhRQn1fw 10きよしのズンドコ節 https://youtu.be/K14VqOy-KRA 11八木節 https://youtu.be/DeYWgU1fH90 12富士山音頭 https://youtu.be/7xQvWcNfsnc …"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "target_year": 2024,
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "detected_event_date": "2025-12-12",
+      "video_id": "mqME18zayH0",
+      "video_url": "https://www.youtube.com/watch?v=mqME18zayH0",
+      "title": "【 赤坂冬おどり 】盆踊り × クリスマス･イルミネーション!!!　TBS 赤坂サカス",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2025-12-13T00:00:00Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/mqME18zayH0/maxresdefault.jpg",
+      "query": "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "赤坂音頭",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "赤坂小唄",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "真室川音頭（山形） 水前寺清子",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 4,
+          "title": "大東京音頭 - 金沢明子 橋幸夫",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 5,
+          "title": "赤坂豊川音頭",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "赤坂冬おどり 赤坂サカス広場 2025年12月12日（金） TBSの足元、赤坂サカス広場で昨年からスタートしたクリスマス･イルミネーション × 盆踊り大会。港区の人と地域を元気にする盆踊り実行委員会と地元赤坂のあかね会のお手本で開催！寒さが堪える北風を跳ね返す踊り場でした！ ※恋人がサンタクローズのみ著作権の都合カットしています。 Xに3回分をあげました。 https://x.com/MatsuriNoKiseki/status/2000174936900645245 ご当地音頭：赤坂豊川音頭 赤坂音頭 赤坂小唄 0:00 MY HOME TOWN（赤坂青山イメージソング） 3:30 赤坂冬おどり 2025 スタート 4:52 Hedwig's Theme - John Williams 10:25 Last Christmas - Wham! 13:03 Jingle Bell Rock - Carnie And Wendy Wilson 15:18 あわてんぼうのサンタクロース - 神崎ゆう子 坂田おさむ 17:53 シンデレラガール - King & Prince 22:0…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "target_year": 2024,
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "detected_event_date": "2025-12-12",
+      "video_id": "df1ZLNBKBTQ",
+      "video_url": "https://www.youtube.com/watch?v=df1ZLNBKBTQ",
+      "title": "【チャンカパーナ】（NEWS）　赤坂冬おどり36　2025年12月12日　ＴＢＳ赤坂サカス広場盆踊り",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2025-12-20T10:30:30Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/df1ZLNBKBTQ/maxresdefault.jpg",
+      "query": "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 14,
+          "title": "赤坂音頭",
+          "url": "https://www.youtube.com/watch?v=mx-ZdAbwNQg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 17,
+          "title": "赤坂小唄",
+          "url": "https://www.youtube.com/watch?v=d5JI5ZOHCbU",
+          "source": "numbered_url"
+        },
+        {
+          "number": 19,
+          "title": "真室川音頭",
+          "url": "https://www.youtube.com/watch?v=oZOV-S3PIzk",
+          "source": "numbered_url"
+        },
+        {
+          "number": 21,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=joO7M51d7b0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 25,
+          "title": "赤坂豊川音頭",
+          "url": "https://www.youtube.com/watch?v=ILJMD2upujY",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2025年12月12日に、 赤坂TBS・赤坂サカス広場で行われました、 「赤坂冬おどり」の様子です。 赤坂サカス冬盆踊り １MY HOME TOWN https://youtu.be/DYqiq377d1I ２ヘドウィグノテーマ https://youtu.be/epiM5HPmXSs ３ラスト・クリスマス https://youtu.be/XclOMvohXwg ４Jingle Bell Rock https://youtu.be/ZRLOD2Ld3wA ５あわてんぼうのサンタクロース https://youtu.be/QQw3agbKwFQ ６シンデレラガール https://youtu.be/zWiqorNdkMI ７Happiness https://youtu.be/R1OyCfQGssg ８さくらんぼ https://youtu.be/cpcJdxr_2Yg ９恋人がサンタクロース https://youtu.be/_IoIbiAvciw 10ＡＰＴ． https://youtu.be/cxpfcK05iaQ 11 Love so sweet https://youtu.…"
     },
     {
       "status": "weak",
@@ -42298,6 +42878,56 @@
         "other_year_date_detected",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:d43527b17167e51e",
+      "target_year": 2024,
+      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "detected_event_date": "2025-07-20",
+      "video_id": "a5L5x03lv4c",
+      "video_url": "https://www.youtube.com/watch?v=a5L5x03lv4c",
+      "title": "【四谷名物ズンパ音頭】#盆踊り",
+      "channel_id": "UCh8wZPAQuoQHCdrpFbsyy1A",
+      "channel_title": "オールデイズGOGO",
+      "published_at": "2025-07-20T22:42:11Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/a5L5x03lv4c/maxresdefault.jpg",
+      "query": "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2025/7/20 四谷納涼おどり大会 #四谷納涼おどり大会#ズンパ音頭#サイクロンズンパ"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:d43527b17167e51e",
+      "target_year": 2024,
+      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "detected_event_date": "2025-07-19",
+      "video_id": "qYMrGH-rKJ4",
+      "video_url": "https://www.youtube.com/watch?v=qYMrGH-rKJ4",
+      "title": "盆踊り　 ズンパ音頭　サイクロンあり 　四谷納涼踊り大会　四谷ひろば",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2025-07-19T23:00:49Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/qYMrGH-rKJ4/maxresdefault.jpg",
+      "query": "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "四谷納涼踊り大会 四谷ひろば 2025年7月19日（日）"
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "other_year_date_detected",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:66a129c62c50de39",
       "target_year": 2024,
       "event_name": "第51回 神楽坂まつり 盆踊り",
@@ -42599,6 +43229,54 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:dce3f3c7662e7c96",
+      "target_year": 2024,
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "4hiGmpca5Pg",
+      "video_url": "https://www.youtube.com/watch?v=4hiGmpca5Pg",
+      "title": "【東別院盆踊り】盆踊り 炭坑節🏮👘✨Japanese Bon dance in Higashibetsuin-Temple #shorts #祭り #dance",
+      "channel_id": "UCugKczOlsNq3hFJPTtyJX0A",
+      "channel_title": "お祭りNagoya【お祭りと神事のチャンネル】",
+      "published_at": "2025-10-01T08:08:01Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/4hiGmpca5Pg/maxresdefault.jpg",
+      "query": "野毛町会 納涼盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 15,
+      "reasons": [
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:dce3f3c7662e7c96",
+      "target_year": 2024,
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "e2kEFVhRYyc",
+      "video_url": "https://www.youtube.com/watch?v=e2kEFVhRYyc",
+      "title": "🏮笠間 納涼盆踊花火大会 #盆踊り #夏祭り #笠間 ",
+      "channel_id": "UCa0Nilqqbdtiapt9s5pju_w",
+      "channel_title": "ShoKチャンネル",
+      "published_at": "2025-08-11T23:00:44Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/e2kEFVhRYyc/maxresdefault.jpg",
+      "query": "野毛町会 納涼盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "かつて30年続いた「笠間のねぶた祭」の灯を絶やすまいと、市民有志と笠間特別観光大使の安達勇人さんの熱い想いから生まれた市民発祥の夏祭りです。 この祭りは、行政主導ではなく、運営資金の多くは、協賛金・出店料・寄付でまかなわれているとの事で、皆様のご支援をお願いしますとの事です。 BGM：会場音声及びSUNOによるAI生成音楽「夏の花火」です。 #茨城県 #笠間 #祭り #納涼 #盆踊り"
     },
     {
       "status": "weak",
@@ -44857,6 +45535,30 @@
     {
       "status": "weak",
       "score": 3,
+      "reasons": [
+        "other_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "target_year": 2024,
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "detected_event_date": "2025-07-27",
+      "video_id": "SJXV2w3rD84",
+      "video_url": "https://www.youtube.com/watch?v=SJXV2w3rD84",
+      "title": "羽田神社　夏季例大祭　弁天橋通り14基町内神輿連合渡御　中村（祭友会）　2025/07/27  d16",
+      "channel_id": "UCGC5a12VzBi3VbtA_kDeMaQ",
+      "channel_title": "yoshian yoshi",
+      "published_at": "2025-07-30T14:19:13Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/SJXV2w3rD84/maxresdefault.jpg",
+      "query": "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "羽田神社 夏季例大祭 弁天橋通り14基町内神輿連合渡御 中村（祭友会） 2025/07/27 d16"
+    },
+    {
+      "status": "weak",
+      "score": 3,
       "reasons": [],
       "queue_id": "youtube-year-backfill:5bb0e328527d5408",
       "target_year": 2024,
@@ -45031,5 +45733,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-11-17T02:47:32.397544+00:00"
+  "merged_from": "2026-11-18T02:08:28.234423+00:00"
 }
